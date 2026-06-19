@@ -33,7 +33,9 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => {
   return [k, v ?? true];
 }));
 const status = args.status || 'draft';
-const dryRun = !process.env.LLM_API_KEY; // real mode only if a key is present
+const apiKey = process.env.ANTHROPIC_API_KEY;
+const dryRun = !apiKey; // real mode only when an API key is present
+const MODEL = process.env.SQWOD_MODEL || 'claude-sonnet-4-6';
 
 // ---- load sources -------------------------------------------------------
 function loadSources() {
@@ -50,13 +52,27 @@ function loadSources() {
 // ---- the LLM seam -------------------------------------------------------
 // In production this calls the model with prompts/cascade.md + source.facts.
 async function generate(step, source, lang) {
-  if (!dryRun) {
-    // TODO: call LLM here using prompts/cascade.md[step], source.facts, lang.
-    // Must return { headline, dek, readMore? } authored natively in `lang`.
-    throw new Error('LLM mode not wired yet — set up the model call in generate().');
+  if (apiKey) {
+    // Real authoring: the model writes natively in `lang` from the source facts.
+    const facts = (source.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('; ');
+    const langName = lang === 'de' ? 'German' : 'English';
+    const prompt = `You are Sqwod's editor — rebel, operator-first, plain-spoken with edge, never corporate, a little cheeky. Write ONE Sqwod Daily news item in ${langName} from these facts about "${source.entity}" (${source.topic}).
+Facts: ${facts}
+Source: ${source.provenance || 'n/a'}
+Rules: headline <= 70 chars, lead with the number where possible; dek = 1–2 sentences ending in the "so what" for a coach/operator/founder; never invent numbers beyond the facts. Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
+    });
+    if (!r.ok) throw new Error(`LLM HTTP ${r.status}: ${await r.text()}`);
+    const data = await r.json();
+    let txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
+    const obj = JSON.parse(txt);
+    return { headline: obj.headline, dek: obj.dek, readMore: (source[lang] || {}).readMore };
   }
-  // dry-run: use the source's pre-authored editorial block (the angle a
-  // human/LLM would set), so the pipeline yields valid, real-looking output.
+  // dry-run: use the source's pre-authored editorial block so the pipeline
+  // yields valid output without a key.
   const block = source[lang] || source.en;
   return { headline: block.headline, dek: block.dek, readMore: block.readMore };
 }

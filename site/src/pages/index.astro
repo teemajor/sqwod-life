@@ -1,5 +1,17 @@
 ---
-// Root → detect later; for now redirect to English. (Astro i18n can do
-// Accept-Language detection at the edge in production.)
-return Astro.redirect('/en/');
+// Root → default locale. Static hosts can't do a real server redirect, so we
+// do an instant, invisible client redirect (dark bg, no flash of text).
 ---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="0; url=/en/" />
+  <link rel="canonical" href="https://sqwod.life/en/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>sqwod.life — your edge in the business of fitness</title>
+  <script is:inline>location.replace('/en/' + location.search + location.hash);</script>
+  <style>html,body{margin:0;background:#0e0e10}</style>
+</head>
+<body></body>
+</html>

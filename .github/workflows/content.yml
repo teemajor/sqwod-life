@@ -1,0 +1,35 @@
+name: Generate content (Sqwod cascade)
+
+# Manual for now (Actions tab → "Run workflow"). Once the news-ingest step is
+# added, uncomment the schedule to make Sqwod Daily fully self-publishing.
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: '0 5 * * 1-5'   # ~06:00–07:00 Berlin, weekdays
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run the cascade
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node automation/cascade.mjs
+      - name: Commit & push drafts (if any changed)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add site/src/content
+          if git diff --staged --quiet; then
+            echo "No content changes."
+          else
+            git commit -m "content: cascade draft $(date +%F)"
+            git push
+          fi
