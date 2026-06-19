@@ -56,10 +56,19 @@ async function generate(step, source, lang) {
     // Real authoring: the model writes natively in `lang` from the source facts.
     const facts = (source.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('; ');
     const langName = lang === 'de' ? 'German' : 'English';
-    const prompt = `You are Sqwod's editor — rebel, operator-first, plain-spoken with edge, never corporate, a little cheeky. Write ONE Sqwod Daily news item in ${langName} from these facts about "${source.entity}" (${source.topic}).
+    const prompt = `You are Sqwod's editor. Write ONE Sqwod Daily news item in ${langName} from these facts about "${source.entity}" (${source.topic}).
+
+VOICE — think Morning Brew for the business of fitness: smart, witty, conversational, a little cheeky. Facts are airtight; the delivery is fun. We talk to coaches, trainers, studio founders and operators — a fun audience, so we have a bit of fun. Never corporate, never dry, never try-hard. One light joke, pun, or wink is plenty; clarity and the fact always win over the bit.
+
 Facts: ${facts}
 Source: ${source.provenance || 'n/a'}
-Rules: headline <= 70 chars, lead with the number where possible; dek = 1–2 sentences ending in the "so what" for a coach/operator/founder; never invent numbers beyond the facts. Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
+
+Rules:
+- headline <= 70 chars: punchy and a touch playful, lead with the number where possible. A clever hook beats a clever pun.
+- dek = 1–2 sentences. Open with the fact, land on the "so what" for a coach/operator/founder. You can be funny on the setup, but the payoff is real and useful.
+- Never invent numbers or facts beyond what's given. The humor is in the framing, not in made-up details.
+- In German: write native, idiomatic German wit — do NOT translate English jokes; German is first-class.
+Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
@@ -91,8 +100,8 @@ function issueFrontmatter(date, lang, items) {
     `title: ${q('Sqwod Daily')}`,
     `status: ${q(status)}`,
     `intro: ${q(lang === 'de'
-      ? 'Drei Reps für heute: was sich in der Branche bewegt — und was es für dich bedeutet.'
-      : "Three reps for today: what moved in the industry — and what it means for you.")}`,
+      ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
+      : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care.")}`,
     'items:',
   ];
   for (const it of items) {

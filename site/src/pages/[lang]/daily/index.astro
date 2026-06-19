@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
+import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../../config/podcast';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -16,19 +17,20 @@ const epLine = (iss: typeof issues[number]) => iss.data.summary || iss.data.item
 const blurb = lang === 'de'
   ? 'Dein 5-Minuten-Audio-Rundown der Wellness-Branche — jeden Werktag, auf EN & DE.'
   : 'Your 5-minute audio rundown of the wellness industry — every weekday, in EN & DE.';
+const RSS_URL = rssFor(lang);
 ---
 <Base lang={lang} title={lang==='de'?'Sqwod Daily — täglicher Audio-Brief':'Sqwod Daily — daily audio brief'} description={blurb} active="daily">
   <div class="crumb">Sqwod Daily</div>
 
   <div class="audio-hero">
-    <button class="audio-play" aria-label="Play episode"><span class="ring"></span><span class="tri"></span></button>
     <div class="audio-meta">
       <h1 style="margin:0 0 6px">Sqwod Daily</h1>
-      <p class="sub" style="margin:0 0 12px">{blurb}</p>
+      <p class="sub" style="margin:0 0 14px">{blurb}</p>
       <div class="listen">
         <span class="ll">{lang==='de'?'Hören auf':'Listen on'}:</span>
-        <a class="lp" href="#">Apple&nbsp;Podcasts</a>
-        <a class="lp" href="#">Spotify</a>
+        <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>
+        <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>
+        <a class="lp" href={RSS_URL} target="_blank" rel="noopener">RSS</a>
         <a class="lp sub-cta" href={`/${lang}/subscribe`}>{lang==='de'?'Per E-Mail':'By email'}</a>
       </div>
     </div>

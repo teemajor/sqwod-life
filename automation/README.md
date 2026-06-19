@@ -1,31 +1,42 @@
 # automation/ — the content cascade
 
-Turns one source document into many formats, in both languages:
+Turns current industry news into a bilingual, self-publishing Sqwod Daily — text **and** audio:
 
 ```
-source → (report → article →) DAILY ITEM → newsletter → social
+ingest (real headlines) → cascade (rewrite in Sqwod voice, EN+DE) → audio (TTS + podcast feed) → commit → deploy
 ```
 
-## Run it (no API key needed)
+## The pieces
+- **`ingest.mjs`** — pulls current fitness/wellness-industry headlines (free, Google News RSS — no key), classifies each into an Articles pillar, and writes `sources/<date>.json`.
+- **`cascade.mjs`** — reads that source and writes a bilingual Sqwod Daily issue into `../site/src/content/daily/<date>.{en,de}.md`. `generate()` calls Claude to author each item natively per language; without a key it falls back to the raw headline (dry-run).
+- **`audio.mjs`** — reads the day's issue, builds a spoken script (EN + DE), synthesizes an MP3 per language via ElevenLabs into `../site/public/audio/<date>-<lang>.mp3`, then rebuilds the podcast RSS feeds (`site/public/podcast.xml` EN, `site/public/podcast.de.xml` DE). Without a key it skips synthesis and just rebuilds the feeds (dry-run safe).
+- **`prompts/cascade.md`** — the instructions the model follows (voice, rules, citation).
+- **`.github/workflows/content.yml`** — runs the whole chain in the cloud on a schedule (weekday mornings) + on demand, commits, and the deploy workflow ships it.
+
+## Run it locally
 ```bash
-node automation/cascade.mjs                 # dry-run, newest source
-node automation/cascade.mjs --date=2026-06-17
-node automation/cascade.mjs --status=review # change the draft status
+node automation/ingest.mjs            # writes today's source from live news
+node automation/cascade.mjs           # rewrites it into the Daily (dry-run without a key)
+node automation/audio.mjs             # synth MP3s + rebuild podcast feeds (dry-run without a key)
+node automation/audio.mjs --feeds-only   # just rebuild the RSS feeds from existing MP3s
 ```
-This reads `sources/<date>.json` and writes a **bilingual Sqwod Daily issue** into `../site/src/content/daily/<date>.{en,de}.md` (status `draft`), which the Astro build renders at `/{en,de}/daily/`.
 
-## How it works
-- **`sources/`** — each file is the neutral, sourced input for an issue (facts + provenance + the editorial angle). In production these come from the living wiki / Statista ingest.
-- **`cascade.mjs`** — the runner. `generate(step, source, lang)` is the single LLM seam.
-- **`prompts/cascade.md`** — the instructions the model follows for each step.
+## Go fully live
+1. Add **GitHub secrets** (repo → Settings → Secrets and variables → Actions → New secret):
+   - `ANTHROPIC_API_KEY` — turns on the Sqwod-voice rewrite (EN + DE text).
+   - `ELEVENLABS_API_KEY` — turns on audio synthesis. Optional: `ELEVENLABS_VOICE_EN` / `ELEVENLABS_VOICE_DE` to pick specific voices (defaults to one multilingual voice for both).
+2. The scheduled Action now ingests → rewrites → voices → commits → deploys every weekday morning. Trigger any time from **Actions → "Generate content" → Run workflow**.
 
-## Going live (swap dry-run → LLM)
-1. Set `LLM_API_KEY` in the environment → the runner switches out of dry-run.
-2. Wire the model call inside `generate()` using `prompts/cascade.md` + `source.facts`, returning content authored natively per language.
-3. Schedule it (3×/week at MVP, per the roadmap) via a scheduled task → it drafts each issue; Tee approves; publish.
+## Get the show on Apple & Spotify (one-time)
+The feeds live at `https://sqwod.life/podcast.xml` (EN) and `https://sqwod.life/podcast.de.xml` (DE). After the first run produces real episodes:
+1. **Apple:** [Apple Podcasts Connect](https://podcastsconnect.apple.com) → add a show → paste the feed URL.
+2. **Spotify:** [Spotify for Creators](https://creators.spotify.com) → add your podcast → paste the feed URL.
+3. Both platforms auto-pull every new episode after that — no re-submission needed.
+4. Once approved, paste the resulting show URLs into `APPLE_URL` / `SPOTIFY_URL` at the top of `site/src/pages/[lang]/daily/index.astro` so the "Listen on" buttons point to the real show.
 
-## Principles baked in
-- **Bilingual parity** — every run emits EN + DE as first-class output.
-- **Provenance** — every item keeps its `sourceId` → the living wiki.
-- **Human-in-the-loop** — output is `draft`; nothing publishes without approval.
-- **One pipeline** — the same issue powers the email and the on-site feed.
+A square cover lives at `site/public/podcast-cover.png` (swap it for final art any time).
+
+## Controls
+- **Draft vs. publish:** issues are created as `draft` by default (they show with a "Draft" tag for you to review, then flip to `published`). For fully hands-off auto-publishing, add `--status=published` to the cascade step in `content.yml`.
+- **Volume / quality:** tune the queries and `--max` in `ingest.mjs`. Everything keeps its `sourceId` + source link for provenance.
+- **Guardrail:** the model rewrites tone only and never invents numbers beyond the source; every item links back to the original.

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sqwod Daily</title>
+    <link>https://sqwod.life/en/daily</link>
+    <language>en</language>
+    <description>Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.</description>
+    <itunes:author>Sqwod</itunes:author>
+    <itunes:summary>Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Health &amp; Fitness"/>
+    <itunes:category text="Business"/>
+    <itunes:owner><itunes:name>Sqwod</itunes:name><itunes:email>hello@sqwod.life</itunes:email></itunes:owner>
+    <itunes:image href="https://sqwod.life/podcast-cover.png"/>
+    <image><url>https://sqwod.life/podcast-cover.png</url><title>Sqwod Daily</title><link>https://sqwod.life/en/daily</link></image>
+
+  </channel>
+</rss>

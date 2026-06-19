@@ -1,8 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import DailyItem from '../../../components/DailyItem.astro';
 import { getCollection } from 'astro:content';
-import { t, type Lang } from '../../../i18n/ui';
+import { type Lang } from '../../../i18n/ui';
+import { pillarMeta } from '../../../i18n/pillars';
+import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/podcast';
+import { existsSync } from 'node:fs';
 
 export async function getStaticPaths() {
   const issues = await getCollection('daily');
@@ -15,22 +17,114 @@ const { entry } = Astro.props;
 const lang = Astro.params.lang as Lang;
 const d = entry.data;
 const fmt = d.date.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
+
+// Show the player only if the episode's audio actually exists in the build.
+const audioPath = episodeAudio(d.urlSlug, lang);
+const hasAudio = existsSync(new URL(`../../../../public${audioPath}`, import.meta.url));
+
+const pillarLabel = (p: string) => pillarMeta[p as keyof typeof pillarMeta]?.label[lang] ?? p;
+// Quiet provenance: items that carry a source link become numbered sources.
+const sources = d.items.filter((i) => i.readMore);
+const tx = {
+  inToday: lang === 'de' ? 'In dieser Folge' : "In today's episode",
+  listen: lang === 'de' ? 'Hören auf' : 'Listen on',
+  byEmail: lang === 'de' ? 'Per E-Mail' : 'By email',
+  subH: lang === 'de' ? 'Bekomm Sqwod Daily in dein Postfach' : 'Get Sqwod Daily in your inbox',
+  subP: lang === 'de' ? 'Fünf Minuten, jeden Werktag. Was sich in der Branche bewegt — und was es für dich heißt. Kostenlos.' : 'Five minutes, every weekday. What moved in the industry — and what it means for you. Free.',
+  subBtn: lang === 'de' ? 'Kostenlos abonnieren' : 'Subscribe free',
+  sources: lang === 'de' ? 'Quellen' : 'Sources',
+  draft: lang === 'de' ? 'Entwurf — Freigabe ausstehend' : 'Draft — pending approval',
+};
 ---
 <Base lang={lang} title={`${d.title} — ${fmt}`} description={d.intro}>
-  <div class="crumb">Sqwod Daily · {fmt}</div>
-  <h1>Sqwod Daily</h1>
-  <p class="sub">{fmt} · {d.edition}</p>
-  {d.status !== 'published' && <p class="dealnote">⚑ {lang==='de'?'Entwurf — Freigabe ausstehend':'Draft — pending approval'}</p>}
+  <div class="crumb"><a href={`/${lang}/daily`}>Sqwod Daily</a> · {fmt}</div>
+  <h1 style="margin:0 0 6px">Sqwod Daily</h1>
+  <p class="sub" style="margin:0 0 16px">{fmt} · {d.edition}</p>
+  {d.status !== 'published' && <p class="dealnote">⚑ {tx.draft}</p>}
 
-  {d.intro && <p class="verdict">{d.intro}</p>}
+  {d.intro && <p class="verdict" style="margin-bottom:20px">{d.intro}</p>}
 
-  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
-    {d.items.map((item) => <DailyItem lang={lang} item={item} />)}
+  <!-- LISTEN: embedded player + link-outs to the podcast apps -->
+  <section class="player">
+    {hasAudio && <audio controls preload="none" src={audioPath} style="width:100%"></audio>}
+    <div class="listen">
+      <span class="ll">{tx.listen}:</span>
+      <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>
+      <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>
+      <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
+    </div>
   </section>
 
+  <!-- THE BRIEF: readable digest, no per-item click-outs -->
+  <section class="block" style="margin-top:8px">
+    <p class="kick">{tx.inToday}</p>
+    <ol class="digest">
+      {d.items.map((item, i) => (
+        <li>
+          <span class="dn">{String(i + 1).padStart(2, '0')}</span>
+          <div>
+            <span class="pillar-chip">{pillarLabel(item.pillar)}</span>
+            <h3>{item.headline}</h3>
+            <p class="dek">{item.dek}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <!-- SPONSOR -->
   {d.sponsor && <div class="note"><b>{lang==='de'?'Präsentiert von':'Presented by'}</b> {d.sponsor} · {lang==='de'?'Anzeige':'Sponsored'}</div>}
 
-  <section class="block" style="border-bottom:none">
-    <a class="cta" href={`/${lang}/subscribe`}>{lang==='de'?'Sqwod Daily abonnieren':'Subscribe to Sqwod Daily'}</a>
+  <!-- THE ONE ASK: subscribe -->
+  <section class="subcard">
+    <h2>{tx.subH}</h2>
+    <p>{tx.subP}</p>
+    <a class="cta" href={`/${lang}/subscribe`}>{tx.subBtn}</a>
   </section>
+
+  <!-- QUIET PROVENANCE -->
+  {sources.length > 0 && (
+    <section class="srcblock">
+      <p class="kick">{tx.sources}</p>
+      <ol>
+        {sources.map((item) => (
+          <li><a href={item.readMore} target="_blank" rel="noopener">{item.headline}</a></li>
+        ))}
+      </ol>
+    </section>
+  )}
 </Base>
+
+<style>
+  .crumb a{color:inherit;text-decoration:none}
+  .player{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--panel);display:flex;flex-direction:column;gap:12px}
+  audio{filter:invert(1) hue-rotate(180deg)}
+  .listen{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+  .ll{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:6px 13px;transition:border-color .15s ease,background .15s ease}
+  .lp:hover{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
+
+  .digest{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--line)}
+  .digest li{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
+  .dn{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--g4);padding-top:6px}
+  .pillar-chip{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .digest h3{font-size:21px;line-height:1.2;letter-spacing:-.02em;margin:7px 0 6px;font-weight:800}
+  .digest .dek{color:var(--g2);font-size:15.5px;line-height:1.6;margin:0}
+
+  .subcard{margin-top:26px;border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center;background:linear-gradient(180deg,var(--panel),transparent)}
+  .subcard h2{font-size:24px;letter-spacing:-.02em;margin:0 0 8px}
+  .subcard p{color:var(--g2);max-width:46ch;margin:0 auto 18px;line-height:1.55}
+  .subcard .cta{display:inline-block}
+
+  .srcblock{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
+  .srcblock ol{margin:10px 0 0;padding-left:20px;color:var(--g3)}
+  .srcblock li{font-size:13px;line-height:1.7}
+  .srcblock a{color:var(--g3);text-decoration:none;border-bottom:1px solid var(--line)}
+  .srcblock a:hover{color:var(--chalk);border-color:var(--chalk)}
+
+  @media(max-width:520px){
+    .digest li{grid-template-columns:26px 1fr;gap:10px}
+    .digest h3{font-size:19px}
+    .subcard{padding:22px 16px}
+  }
+</style>
