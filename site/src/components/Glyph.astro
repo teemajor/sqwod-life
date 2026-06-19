@@ -1,0 +1,26 @@
+---
+// Topical animated monochrome glyph. kind: ring|seed|watch|band|tracker|line|bars
+interface Props { kind?: string; size?: number; framed?: boolean }
+const { kind = 'seed', size = 64, framed = true } = Astro.props;
+const s = (f: number) => `${Math.round(size * f)}px`;
+const boxStyle = `width:${size}px;height:${size}px` + (framed ? '' : ';background:none;border:none');
+---
+<div class={`glyphbox${framed ? '' : ' bare'}`} style={boxStyle} aria-hidden="true">
+  {kind === 'ring' && <span class="g-ring" style={`width:${s(0.58)};height:${s(0.58)}`}></span>}
+  {kind === 'seed' && <span class="g-seed" style={`width:${s(0.62)};height:${s(0.62)}`}></span>}
+  {kind === 'watch' && <span class="g-watch" style={`width:${s(0.44)};height:${s(0.54)}`}><i></i></span>}
+  {kind === 'band' && <span class="g-band" style={`width:${s(0.6)};height:${s(0.6)}`}><i></i></span>}
+  {kind === 'tracker' && <span class="g-tracker" style={`width:${s(0.3)};height:${s(0.6)}`}><i></i></span>}
+  {kind === 'bars' && (
+    <span class="g-bars"><i></i><i></i><i></i><i></i><i></i></span>
+  )}
+  {kind === 'line' && (
+    <span class="g-line">
+      <svg viewBox="0 0 280 118" preserveAspectRatio="none">
+        <line class="gl" x1="0" y1="40" x2="280" y2="40"></line>
+        <line class="gl" x1="0" y1="80" x2="280" y2="80"></line>
+        <path class="ln" d="M4 96 L52 78 L98 86 L146 54 L196 60 L256 20"></path>
+      </svg>
+    </span>
+  )}
+</div>

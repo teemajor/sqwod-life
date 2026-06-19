@@ -1,0 +1,41 @@
+---
+import Glyph from './Glyph.astro';
+import { pillarGlyph } from '../i18n/pillars';
+import { type Lang } from '../i18n/ui';
+const pillarLabels: Record<string, { en: string; de: string }> = {
+  'industry-intelligence': { en: 'Industry Intelligence', de: 'Industry Intelligence' },
+  'coaching-business': { en: 'Coaching & Studio', de: 'Coaching & Studio' },
+  'method-programming': { en: 'Method & Programming', de: 'Methode & Programming' },
+  'tech-tools': { en: 'Tech & Tools', de: 'Tech & Tools' },
+  'wellness-culture': { en: 'Wellness Culture', de: 'Wellness-Kultur' },
+};
+interface Item { headline: string; dek: string; pillar: string; conversion: string; sourceId?: string; readMore?: string }
+interface Props { lang: Lang; item: Item }
+const { lang, item } = Astro.props;
+const pillar = pillarLabels[item.pillar]?.[lang] ?? item.pillar;
+---
+<article class="daily-item">
+  <div class="di-thumb"><Glyph kind={pillarGlyph(item.pillar)} size={72} /></div>
+  <div class="di-body">
+    <span class="pillar-chip">{pillar}</span>
+    <h3>{item.headline}</h3>
+    <p class="dek">{item.dek}</p>
+    <div class="item-foot">
+      {item.readMore && <a href={item.readMore}>{lang==='de'?'Mehr lesen →':'Read more →'}</a>}
+      {item.sourceId && <span class="srcref">{lang==='de'?'Quelle':'Source'}: {item.sourceId}</span>}
+    </div>
+  </div>
+</article>
+
+<style>
+  .daily-item{display:grid;grid-template-columns:72px 1fr;gap:14px;padding:20px 0;border-top:1px solid var(--line);align-items:start}
+  .daily-item:first-child{border-top:none}
+  .pillar-chip{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .daily-item h3{font-size:20px;line-height:1.2;letter-spacing:-.02em;margin:7px 0 6px;font-weight:800}
+  .dek{color:var(--g2);font-size:15px;line-height:1.55;margin:0 0 10px}
+  .item-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:12px}
+  .item-foot a{font-weight:700;text-decoration:none;color:var(--chalk);border-bottom:1px solid var(--g3);padding-bottom:2px;transition:border-color .15s ease}
+  .item-foot a:hover{border-color:var(--chalk)}
+  .srcref{color:var(--g4);letter-spacing:.03em}
+  @media(max-width:520px){.daily-item{grid-template-columns:56px 1fr}.di-thumb :global(.glyphbox){width:56px !important;height:56px !important}}
+</style>

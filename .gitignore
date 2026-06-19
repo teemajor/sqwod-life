@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+site/node_modules/
+
+# build output
+site/dist/
+.astro/
+site/.astro/
+
+# preview snapshots (generated)
+site-preview/
+
+# secrets
+.env
+infrastructure/.env
+
+# build artifacts / temp
+sqwod-site.zip
+zilTa9dB
+
+# os / editor
+.DS_Store
+*.log

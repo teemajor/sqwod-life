@@ -1,0 +1,27 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const comps = [
+  { n: 'Crowd Signal', w: '45%', d: { en: 'Real-user feedback across retailers, app stores, review platforms, Reddit & YouTube — normalized, volume- & recency-weighted, fake-review filtered.', de: 'Echtes Nutzer-Feedback über Händler, App-Stores, Bewertungsplattformen, Reddit & YouTube — normalisiert, mengen- & aktualitätsgewichtet, Fake-Reviews gefiltert.' } },
+  { n: 'Sqwod Assessment', w: '40%', d: { en: 'Our weighted scorecard: performance, value, build, experience, coach/operator fit, support.', de: 'Unsere gewichtete Scorecard: Leistung, Preis-Leistung, Verarbeitung, Bedienung, Coach-Eignung, Support.' } },
+  { n: 'Value / Deal', w: '15%', d: { en: 'Best live price vs. category benchmark + real price history. Subscriptions weigh against the score.', de: 'Bester Live-Preis vs. Kategorie-Benchmark + echte Preis-Historie. Abos zählen negativ.' } },
+];
+---
+<Base lang={lang} title="Methodology — Sqwod Verified" active="verified">
+  <div class="measure">
+    <div class="crumb">Sqwod Verified / {lang==='de'?'Methodik':'Methodology'}</div>
+    <h1>{lang==='de'?'Wie wir bewerten':'How we score'}</h1>
+    <p class="sub">{lang==='de'?'Jeder Sqwod Score (0–100) verbindet drei transparente Komponenten. Alle Sub-Scores sind sichtbar.':'Every Sqwod Score (0–100) blends three transparent components. All sub-scores are shown.'}</p>
+    <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+      {comps.map((c) => (
+        <div class="card" style="grid-template-columns:64px 1fr;cursor:default">
+          <div class="cnum">{c.w}</div>
+          <div class="info"><h3>{c.n}</h3><div class="meta">{c.d[lang]}</div></div>
+        </div>
+      ))}
+    </section>
+    <div class="note"><b>{lang==='de'?'Editorielle Firewall':'Editorial firewall'}.</b> {lang==='de'?'Provisionen beeinflussen den Score nie. Wir veröffentlichen auch schlechte Bewertungen.':'Commission never affects the score. We publish low scores too.'}</div>
+  </div>
+</Base>

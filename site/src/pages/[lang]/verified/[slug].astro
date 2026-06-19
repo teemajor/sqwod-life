@@ -1,0 +1,74 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ScoreBadge from '../../../components/ScoreBadge.astro';
+import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
+import ProductViewer from '../../../components/ProductViewer.astro';
+import { getCollection } from 'astro:content';
+import { t, type Lang } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const reviews = await getCollection('reviews');
+  return reviews.map((r) => ({
+    params: { lang: r.data.lang, slug: r.data.urlSlug },
+    props: { entry: r },
+  }));
+}
+const { entry } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const d = entry.data;
+const { Content } = await entry.render();
+const updated = d.updatedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day:'2-digit', month:'short', year:'numeric' });
+---
+<Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified">
+  <div class="crumb">Verified / {d.category}</div>
+  <span class="verified-tag">◈ Sqwod Verified</span>
+  <h1 style="margin-bottom:2px">{d.productName}</h1>
+  <p class="sub">{d.category}</p>
+
+  <div class="review-layout" style="margin-top:18px">
+    <!-- sticky rail: 3D + score + deal -->
+    <aside class="review-aside">
+      <ProductViewer lang={lang} glb={d.asset.type==='glb' ? d.asset.glb : undefined} />
+      <div class="scorebox" style="margin-top:12px">
+        <ScoreBadge score={d.sqwodScore} size={120} />
+        <div class="scoreLabel">Sqwod Score</div>
+        <span class="conf">{t(lang,'verified.confidence')}: {d.confidence}</span>
+        <div class="meta">{lang==='de'?'aus':'from'} <b>{d.crowd.reviews.toLocaleString()}+</b> {t(lang,'verified.reviews')} · <b>{d.crowd.platforms}</b> {t(lang,'verified.platforms')} · {t(lang,'verified.updated')} <b>{updated}</b></div>
+        <a class="deal" href={`/go/${d.urlSlug}`} rel="sponsored nofollow">{t(lang,'verified.bestDeal')} · €{d.value.bestPrice} →</a>
+        <div class="dealnote">Anzeige / Affiliate · {lang==='de'?'Preis Stand':'price as of'} {updated}</div>
+      </div>
+    </aside>
+
+    <!-- main column -->
+    <div>
+      <p class="verdict" style="margin-top:0">{d.verdict}</p>
+      <ScoreBreakdown lang={lang} crowd={d.crowd} assessment={d.assessment} value={d.value} />
+
+      <section class="block">
+        <div class="pc">
+          <div class="pros"><h4>{t(lang,'verified.pros')}</h4><ul>{d.pros.map(p => <li>{p}</li>)}</ul></div>
+          <div class="cons"><h4>{t(lang,'verified.cons')}</h4><ul>{d.cons.map(c => <li>{c}</li>)}</ul></div>
+        </div>
+      </section>
+
+      <section class="block">
+        <p class="kick">{lang==='de'?'Für wen':'Who it\'s for'}</p>
+        <div class="who">
+          <div><h4>{t(lang,'verified.buyIf')}</h4><p>{d.whoFor.buy}</p></div>
+          <div><h4>{t(lang,'verified.skipIf')}</h4><p>{d.whoFor.skip}</p></div>
+        </div>
+      </section>
+
+      <section class="block prose"><Content /></section>
+
+      <section class="block" style="border-bottom:none">
+        <p class="kick">{lang==='de'?'Transparenz':'Transparency'}</p>
+        <div class="disc">{t(lang,'disclosure')}</div>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  @media(min-width:900px){ .who{display:grid;grid-template-columns:1fr 1fr;gap:16px} }
+</style>

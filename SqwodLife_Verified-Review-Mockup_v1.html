@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sqwod Verified — Oura Ring Gen3 (sample)</title>
+<style>
+  :root{
+    --ink:#111113; --chalk:#FAFAFA;
+    --g1:#1c1c1f; --g2:#3a3a3f; --g3:#76767e; --g4:#c7c7cc; --g5:#e7e7ea;
+    --line:#e2e2e6; --mark:var(--ink);
+    --sans:"Helvetica Neue",Helvetica,Arial,"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--chalk);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+  /* sample banner */
+  .sample{background:var(--ink);color:var(--chalk);font-size:11px;letter-spacing:.14em;text-transform:uppercase;text-align:center;padding:7px 12px}
+
+  /* header */
+  header{border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-weight:800;font-size:20px;letter-spacing:-.02em}
+  .logo span{color:var(--g3)}
+  nav{display:flex;gap:22px;font-size:13px;color:var(--g2);font-weight:600}
+  nav .on{border-bottom:2px solid var(--ink);padding-bottom:2px}
+  .lang{font-size:12px;color:var(--g3);font-weight:700;letter-spacing:.06em}
+  .lang b{color:var(--ink)}
+
+  /* breadcrumb */
+  .crumb{font-size:12px;color:var(--g3);letter-spacing:.04em;text-transform:uppercase;margin:26px 0 6px;font-weight:700}
+  .verified-tag{display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--ink);border-radius:999px;padding:5px 11px}
+
+  /* hero */
+  h1{font-size:40px;line-height:1.05;letter-spacing:-.025em;margin:14px 0 6px;font-weight:800}
+  .sub{color:var(--g2);font-size:16px;margin:0 0 4px}
+  .verdict{font-size:18px;line-height:1.45;color:var(--g1);margin:18px 0 0;max-width:60ch}
+
+  .hero{display:grid;grid-template-columns:1fr 240px;gap:34px;align-items:start;padding:8px 0 30px;border-bottom:1px solid var(--line)}
+
+  /* score badge */
+  .scorebox{text-align:center;border:1px solid var(--line);border-radius:18px;padding:22px 18px;background:#fff}
+  .seedwrap{position:relative;width:128px;height:128px;margin:0 auto}
+  .seedwrap svg{position:absolute;inset:0}
+  .scoreNum{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .scoreNum b{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .scoreNum i{font-style:normal;font-size:11px;color:var(--g3);letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
+  .scoreLabel{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-top:12px}
+  .meta{font-size:12px;color:var(--g3);margin-top:8px;line-height:1.7}
+  .meta b{color:var(--ink)}
+  .conf{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--ink);border-radius:999px;padding:3px 9px;margin-top:6px}
+  .deal{display:block;margin-top:14px;background:var(--ink);color:var(--chalk);text-decoration:none;font-weight:800;font-size:14px;letter-spacing:.02em;padding:13px;border-radius:11px}
+  .dealnote{font-size:10px;color:var(--g3);margin-top:7px;letter-spacing:.04em}
+
+  /* components */
+  section{padding:30px 0;border-bottom:1px solid var(--line)}
+  .kick{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--g3);margin:0 0 18px}
+  .comp{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--g5)}
+  .comp:first-of-type{border-top:none}
+  .cnum{font-size:30px;font-weight:800;letter-spacing:-.02em}
+  .cnum small{font-size:13px;color:var(--g3);font-weight:700}
+  .cwt{font-size:11px;color:var(--g3);font-weight:700;letter-spacing:.06em;margin-top:2px}
+  .ctitle{font-weight:800;font-size:16px;margin:0 0 3px}
+  .cdesc{color:var(--g2);font-size:14px;margin:0 0 12px;line-height:1.5}
+  .bars{display:flex;flex-direction:column;gap:7px;max-width:430px}
+  .row{display:grid;grid-template-columns:130px 1fr 34px;align-items:center;gap:10px;font-size:12.5px;color:var(--g2)}
+  .track{height:6px;background:var(--g5);border-radius:99px;overflow:hidden}
+  .fill{height:100%;background:var(--ink);border-radius:99px}
+  .row b{text-align:right;color:var(--ink);font-weight:700}
+  .src{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+  .chip{font-size:11.5px;color:var(--g2);border:1px solid var(--line);border-radius:8px;padding:6px 9px;background:#fff}
+  .chip b{color:var(--ink)}
+
+  /* price spark */
+  .spark{display:flex;align-items:flex-end;gap:3px;height:42px;margin-top:6px}
+  .spark i{flex:1;background:var(--g4);border-radius:2px 2px 0 0}
+  .spark i.low{background:var(--ink)}
+
+  /* pros cons */
+  .pc{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .pc h4{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 10px}
+  .pc ul{margin:0;padding:0;list-style:none;font-size:14px;color:var(--g1);line-height:1.7}
+  .pc li{padding-left:20px;position:relative}
+  .pc li:before{position:absolute;left:0;font-weight:800}
+  .pros li:before{content:"+"}
+  .cons li:before{content:"–"}
+  .who{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:6px}
+  .who div{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}
+  .who h4{margin:0 0 8px;font-size:14px}
+  .who p{margin:0;color:var(--g2);font-size:14px;line-height:1.55}
+
+  /* disclosure */
+  .disc{font-size:12px;color:var(--g3);line-height:1.6;background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-top:8px}
+  .disc b{color:var(--ink)}
+  footer{padding:28px 0 60px;color:var(--g3);font-size:12px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  footer a{font-weight:700;color:var(--g2);text-decoration:none}
+  @media(max-width:720px){.hero{grid-template-columns:1fr}.pc,.who{grid-template-columns:1fr}h1{font-size:32px}}
+</style>
+</head>
+<body>
+  <div class="sample">Sample mockup · illustrative data · sqwod.life design system</div>
+
+  <header>
+    <div class="wrap bar">
+      <div class="logo">sqwod<span>.life</span></div>
+      <nav>
+        <span>Sqwod Daily</span><span>Intelligence</span><span>Topics</span>
+        <span class="on">Sqwod Verified</span>
+      </nav>
+      <div class="lang"><b>EN</b> · DE</div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="crumb">Sqwod Verified / Wearables / Recovery</div>
+    <span class="verified-tag">◈ Sqwod Verified</span>
+
+    <div class="hero">
+      <div>
+        <h1>Oura Ring Gen3</h1>
+        <p class="sub">Recovery &amp; sleep tracker · Smart ring · €299–€349</p>
+        <p class="verdict">The most coach-trusted sleep and readiness tracker — discreet, accurate where it counts, and now the recovery benchmark. The subscription is the catch.</p>
+      </div>
+
+      <div class="scorebox">
+        <div class="seedwrap">
+          <!-- diamond-seed mark -->
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <path d="M50 4 C70 22 78 30 96 50 C78 70 70 78 50 96 C30 78 22 70 4 50 C22 30 30 22 50 4 Z"
+                  fill="none" stroke="var(--mark)" stroke-width="2.5"/>
+          </svg>
+          <div class="scoreNum"><b>89</b><i>/ 100</i></div>
+        </div>
+        <div class="scoreLabel">Sqwod Score</div>
+        <span class="conf">Confidence: High</span>
+        <div class="meta">from <b>24,800+</b> reviews<br>across <b>7</b> platforms<br>Updated <b>14 Jun 2026</b></div>
+        <a class="deal" href="#">Best deal · €299 →</a>
+        <div class="dealnote">Anzeige / Affiliate · price as of 14 Jun 2026</div>
+      </div>
+    </div>
+
+    <!-- COMPONENTS -->
+    <section>
+      <p class="kick">How the 89 breaks down</p>
+
+      <div class="comp">
+        <div><div class="cnum">91</div><div class="cwt">CROWD · 45%</div></div>
+        <div>
+          <p class="ctitle">Crowd Signal</p>
+          <p class="cdesc">Real-user feedback, normalized and volume- and recency-weighted, with fake-review filtering. Every source linked on the methodology page.</p>
+          <div class="src">
+            <span class="chip">Amazon <b>4.4★</b> · 11.2k</span>
+            <span class="chip">App Store <b>4.6★</b> · 8.9k</span>
+            <span class="chip">Trustpilot <b>3.9★</b> · 2.1k</span>
+            <span class="chip">Reddit <b>+72%</b> positive</span>
+            <span class="chip">YouTube <b>+68%</b> positive</span>
+            <span class="chip">Expert avg <b>8.7/10</b></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="comp">
+        <div><div class="cnum">86</div><div class="cwt">SQWOD · 40%</div></div>
+        <div>
+          <p class="ctitle">Sqwod Assessment</p>
+          <p class="cdesc">Our weighted scorecard — the professional lens, with a criterion no aggregator has: how useful it is to a coach or operator.</p>
+          <div class="bars">
+            <div class="row"><span>Performance / accuracy</span><div class="track"><div class="fill" style="width:90%"></div></div><b>9.0</b></div>
+            <div class="row"><span>Value for money</span><div class="track"><div class="fill" style="width:72%"></div></div><b>7.2</b></div>
+            <div class="row"><span>Build / durability</span><div class="track"><div class="fill" style="width:91%"></div></div><b>9.1</b></div>
+            <div class="row"><span>Experience / ease</span><div class="track"><div class="fill" style="width:88%"></div></div><b>8.8</b></div>
+            <div class="row"><span>Coach / operator fit</span><div class="track"><div class="fill" style="width:85%"></div></div><b>8.5</b></div>
+            <div class="row"><span>Support / warranty</span><div class="track"><div class="fill" style="width:80%"></div></div><b>8.0</b></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="comp">
+        <div><div class="cnum">78</div><div class="cwt">VALUE · 15%</div></div>
+        <div>
+          <p class="ctitle">Value / Deal</p>
+          <p class="cdesc">Best live price vs. category benchmark, plus a real price history so a "deal" means an actual low. The €70/yr subscription weighs on the score.</p>
+          <div class="src" style="margin-bottom:6px">
+            <span class="chip">Best now <b>€299</b></span>
+            <span class="chip">90-day low <b>€289</b></span>
+            <span class="chip">Subscription <b>€70/yr</b></span>
+          </div>
+          <div class="spark" title="90-day price history">
+            <i style="height:80%"></i><i style="height:78%"></i><i style="height:85%"></i><i style="height:70%"></i>
+            <i style="height:72%"></i><i class="low" style="height:62%"></i><i style="height:66%"></i><i style="height:64%"></i>
+            <i style="height:75%"></i><i style="height:68%"></i><i style="height:64%"></i><i style="height:66%"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROS / CONS -->
+    <section>
+      <div class="pc">
+        <div class="pros"><h4>Pros</h4>
+          <ul>
+            <li>Best-in-class sleep &amp; readiness accuracy</li>
+            <li>Discreet — clients won't clock it mid-session</li>
+            <li>7-day battery, painless daily wear</li>
+            <li>Clean data export for coaching workflows</li>
+          </ul>
+        </div>
+        <div class="cons"><h4>Cons</h4>
+          <ul>
+            <li>Mandatory €70/yr subscription</li>
+            <li>No real-time workout HR (not its job)</li>
+            <li>Sizing kit + lead time before you start</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO -->
+    <section>
+      <p class="kick">Who it's for</p>
+      <div class="who">
+        <div><h4>Buy it if…</h4><p>You're a coach who programs around recovery and sleep, or you want the calmest, most wearable readiness data to guide client load.</p></div>
+        <div><h4>Skip it if…</h4><p>You need live training heart-rate and GPS — pair a chest strap or pick a sports watch. Or you won't pay a subscription on principle.</p></div>
+      </div>
+    </section>
+
+    <!-- DISCLOSURE -->
+    <section style="border-bottom:none">
+      <p class="kick">Transparency</p>
+      <div class="disc">
+        <b>Anzeige / Affiliate disclosure.</b> sqwod.life may earn a commission from links on this page. <b>It never affects the Sqwod Score</b> — scores are set by the methodology, not by commission. See the full <b>weighted formula, every data source, and our controls</b> on the <b>Sqwod Verified methodology</b> page. Prices shown incl. VAT where applicable, accurate as of the stated date.
+      </div>
+    </section>
+
+    <footer>
+      <span>◈ Sqwod Verified · The Sqwod Score is recomputed as new reviews &amp; prices arrive.</span>
+      <span><a href="#">Methodology</a> · <a href="#">Disclosure</a> · <a href="#">Impressum</a></span>
+    </footer>
+  </div>
+</body>
+</html>

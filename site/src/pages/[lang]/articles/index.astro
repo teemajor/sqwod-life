@@ -1,0 +1,63 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PillarIcon from '../../../components/PillarIcon.astro';
+import Glyph from '../../../components/Glyph.astro';
+import { getCollection } from 'astro:content';
+import { languages, t, type Lang } from '../../../i18n/ui';
+import { PILLARS, pillarMeta, pillarGlyph } from '../../../i18n/pillars';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const title = lang === 'de' ? 'Artikel — für Coaches, Gründer:innen & Investor:innen' : 'Articles — for coaches, founders & investors';
+
+const articleHref = (a: any) =>
+  (a.data.format === 'report' || a.data.format === 'index')
+    ? `/${lang}/intelligence/${a.data.urlSlug}`
+    : `/${lang}/analysis/${a.data.urlSlug}`;
+const recent = (await getCollection('articles', (a) => a.data.lang === lang && a.data.format !== 'report' && a.data.format !== 'index'))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime()).slice(0, 4);
+---
+<Base lang={lang} title={title} active="articles">
+  <div class="pagehead">
+    <div class="crumb">{t(lang,'nav.articles')}</div>
+    <h1>{lang==='de'?'Artikel':'Articles'}</h1>
+    <p class="sub">{lang==='de'?'Playbooks und Analysen für Coaches, Gründer:innen und Investor:innen.':'Playbooks and analysis for coaches, founders, and investors.'}</p>
+  </div>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
+    <p class="kick">{lang==='de'?'Themen':'Browse by topic'}</p>
+    <div class="grid cols3">
+    {PILLARS.map((p, i) => (
+      <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr" href={`/${lang}/articles/${p}`}>
+        <PillarIcon pillar={p} size={52} />
+        <div class="info">
+          <h3>{pillarMeta[p].label[lang]}</h3>
+          <div class="meta">{pillarMeta[p].desc[lang]}</div>
+          <span class="cardcta">{lang==='de'?'Entdecken':'Explore'} →</span>
+        </div>
+      </a>
+    ))}
+    </div>
+  </section>
+
+  {recent.length > 0 && (
+    <section class="block">
+      <p class="kick">{lang==='de'?'Neueste Artikel':'Latest articles'}</p>
+      <div class="grid cols2">
+      {recent.map((a) => (
+        <a class="card" style="grid-template-columns:52px 1fr" href={articleHref(a)}>
+          <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
+          <div class="info">
+            <span class="bestfor">{pillarMeta[a.data.pillar as keyof typeof pillarMeta].label[lang]}</span>
+            <h3>{a.data.title}</h3>
+            <div class="meta">{a.data.description}</div>
+            <span class="cardcta">{lang==='de'?'Lesen':'Read'} →</span>
+          </div>
+        </a>
+      ))}
+      </div>
+    </section>
+  )}
+</Base>

@@ -1,0 +1,70 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Glyph from '../../../components/Glyph.astro';
+import PillarIcon from '../../../components/PillarIcon.astro';
+import { getCollection } from 'astro:content';
+import { languages, t, type Lang } from '../../../i18n/ui';
+import { PILLARS, pillarMeta, pillarGlyph, type Pillar } from '../../../i18n/pillars';
+
+export function getStaticPaths() {
+  return languages.flatMap((lang) => PILLARS.map((pillar) => ({ params: { lang, pillar } })));
+}
+const lang = Astro.params.lang as Lang;
+const pillar = Astro.params.pillar as Pillar;
+const meta = pillarMeta[pillar];
+
+const articles = (await getCollection('articles', (a) => a.data.lang === lang && a.data.pillar === pillar))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const reviews = await getCollection('reviews', (r) => r.data.lang === lang && r.data.pillar === pillar);
+
+const articleHref = (a: typeof articles[number]) =>
+  (a.data.format === 'report' || a.data.format === 'index')
+    ? `/${lang}/intelligence/${a.data.urlSlug}`
+    : `/${lang}/analysis/${a.data.urlSlug}`;
+const fmtLabel = (f: string) => f === 'report' ? 'Report' : f === 'index' ? 'Index' : f === 'field-note' ? 'Field Note' : 'Analysis';
+---
+<Base lang={lang} title={`${meta.label[lang]} — sqwod.life`} description={meta.desc[lang]} active="articles">
+  <div class="crumb">{t(lang,'nav.articles')} / {meta.label[lang]}</div>
+  <div style="display:flex;gap:16px;align-items:center;margin-top:6px">
+    <PillarIcon pillar={pillar} size={60} />
+    <h1 style="margin:0">{meta.label[lang]}</h1>
+  </div>
+  <p class="sub" style="margin-top:10px">{meta.desc[lang]}</p>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+    <p class="kick">{lang==='de'?'Artikel & Reports':'Articles & reports'}</p>
+    {articles.length === 0 && <p class="sub">{lang==='de'?'Bald verfügbar.':'Coming soon.'}</p>}
+    <div class="grid cols2">
+    {articles.map((a) => (
+      <a class="card" style="grid-template-columns:52px 1fr" href={articleHref(a)}>
+        <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
+        <div class="info">
+          <span class="bestfor">{fmtLabel(a.data.format)}</span>
+          <h3>{a.data.title}</h3>
+          <div class="meta">{a.data.description}</div>
+          <span class="cardcta">{lang==='de'?'Lesen':'Read'} →</span>
+        </div>
+      </a>
+    ))}
+    </div>
+  </section>
+
+  {reviews.length > 0 && (
+    <section class="block">
+      <p class="kick">Sqwod Verified</p>
+      <div class="grid cols2">
+      {reviews.map((r) => (
+        <a class="card" style="grid-template-columns:52px 1fr" href={`/${lang}/verified/${r.data.urlSlug}`}>
+          <Glyph kind={r.data.glyph} size={52} />
+          <div class="info">
+            <span class="bestfor">{lang==='de'?'Produkt':'Product'} · {r.data.sqwodScore}</span>
+            <h3>{r.data.productName}</h3>
+            <div class="meta">{r.data.verdict}</div>
+            <span class="cardcta">{t(lang,'verified.readReview')} →</span>
+          </div>
+        </a>
+      ))}
+      </div>
+    </section>
+  )}
+</Base>

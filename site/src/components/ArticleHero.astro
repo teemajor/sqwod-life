@@ -1,0 +1,26 @@
+---
+// Per-article animated hero. Same monochrome discipline, unique per article.
+// In production this renders to an optimized GIF via the same pipeline.
+interface Props { kind?: string; tag?: string; stat?: string; statLabel?: string }
+const { kind = 'line', tag, stat, statLabel } = Astro.props;
+---
+<div class="arthero">
+  <div class="ah-viz">
+    {kind === 'line' && (
+      <div class="ah-line">
+        <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+          <line class="gl" x1="0" y1="55" x2="800" y2="55"/><line class="gl" x1="0" y1="110" x2="800" y2="110"/>
+          <path class="ln" d="M10 120 L150 98 L280 112 L420 66 L560 82 L700 34 L790 48"/>
+        </svg>
+      </div>
+    )}
+    {kind === 'bars' && (<div class="ah-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>)}
+    {kind === 'orbit' && (
+      <div class="ah-orbit"><span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="od"><b></b></span></div>
+    )}
+  </div>
+
+  <div class="scrim"></div>
+  {tag && <span class="ah-tag">{tag}</span>}
+  {stat && <div class="ah-stat">{stat}{statLabel && <small>{statLabel}</small>}</div>}
+</div>

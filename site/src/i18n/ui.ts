@@ -1,0 +1,67 @@
+// Minimal i18n string table. Section labels (brand terms) stay constant;
+// surrounding UI localizes. Extend as the site grows.
+export const languages = ['en', 'de'] as const;
+export type Lang = (typeof languages)[number];
+
+export const ui = {
+  en: {
+    'nav.daily': 'Sqwod Daily',
+    'nav.intelligence': 'Intelligence',
+    'nav.topics': 'Articles',
+    'nav.articles': 'Articles',
+    'nav.verified': 'Sqwod Verified',
+    'nav.about': 'About',
+    'nav.subscribe': 'Subscribe',
+    'nav.app': 'Get the App',
+    'verified.rankedBy': 'Ranked by the Sqwod Score — real-user feedback + our testing + live price.',
+    'verified.howWeRank': 'How we rank',
+    'verified.bestDeal': 'Best deal',
+    'verified.readReview': 'Read review',
+    'verified.breakdown': 'How the score breaks down',
+    'verified.crowd': 'Crowd Signal',
+    'verified.assessment': 'Sqwod Assessment',
+    'verified.value': 'Value / Deal',
+    'verified.confidence': 'Confidence',
+    'verified.updated': 'Updated',
+    'verified.reviews': 'reviews',
+    'verified.platforms': 'platforms',
+    'verified.pros': 'Pros',
+    'verified.cons': 'Cons',
+    'verified.buyIf': 'Buy it if…',
+    'verified.skipIf': 'Skip it if…',
+    'disclosure': 'Affiliate disclosure. We may earn a commission from links on this page. It never affects the Sqwod Score — scores are set by the methodology, not commission.',
+    'spin': 'drag to spin · pinch / scroll to zoom',
+  },
+  de: {
+    'nav.daily': 'Sqwod Daily',
+    'nav.intelligence': 'Intelligence',
+    'nav.topics': 'Artikel',
+    'nav.articles': 'Artikel',
+    'nav.verified': 'Sqwod Verified',
+    'nav.about': 'Über uns',
+    'nav.subscribe': 'Abonnieren',
+    'nav.app': 'Zur App',
+    'verified.rankedBy': 'Sortiert nach dem Sqwod Score — echtes Nutzer-Feedback + unsere Tests + Live-Preis.',
+    'verified.howWeRank': 'So bewerten wir',
+    'verified.bestDeal': 'Bester Preis',
+    'verified.readReview': 'Test lesen',
+    'verified.breakdown': 'So setzt sich der Score zusammen',
+    'verified.crowd': 'Crowd-Signal',
+    'verified.assessment': 'Sqwod-Bewertung',
+    'verified.value': 'Preis-Leistung',
+    'verified.confidence': 'Verlässlichkeit',
+    'verified.updated': 'Aktualisiert',
+    'verified.reviews': 'Bewertungen',
+    'verified.platforms': 'Plattformen',
+    'verified.pros': 'Pro',
+    'verified.cons': 'Kontra',
+    'verified.buyIf': 'Kauf es, wenn…',
+    'verified.skipIf': 'Lass es, wenn…',
+    'disclosure': 'Affiliate-Hinweis (Anzeige). Wir erhalten ggf. eine Provision über Links auf dieser Seite. Das beeinflusst den Sqwod Score nie — Scores folgen der Methodik, nicht der Provision.',
+    'spin': 'ziehen zum Drehen · zum Zoomen pinchen / scrollen',
+  },
+} as const;
+
+export function t(lang: Lang, key: keyof (typeof ui)['en']): string {
+  return (ui[lang] as Record<string, string>)[key] ?? (ui.en as Record<string, string>)[key];
+}

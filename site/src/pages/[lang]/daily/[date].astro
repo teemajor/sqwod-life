@@ -1,0 +1,36 @@
+---
+import Base from '../../../layouts/Base.astro';
+import DailyItem from '../../../components/DailyItem.astro';
+import { getCollection } from 'astro:content';
+import { t, type Lang } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const issues = await getCollection('daily');
+  return issues.map((iss) => ({
+    params: { lang: iss.data.lang, date: iss.data.urlSlug },
+    props: { entry: iss },
+  }));
+}
+const { entry } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const d = entry.data;
+const fmt = d.date.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
+---
+<Base lang={lang} title={`${d.title} — ${fmt}`} description={d.intro}>
+  <div class="crumb">Sqwod Daily · {fmt}</div>
+  <h1>Sqwod Daily</h1>
+  <p class="sub">{fmt} · {d.edition}</p>
+  {d.status !== 'published' && <p class="dealnote">⚑ {lang==='de'?'Entwurf — Freigabe ausstehend':'Draft — pending approval'}</p>}
+
+  {d.intro && <p class="verdict">{d.intro}</p>}
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+    {d.items.map((item) => <DailyItem lang={lang} item={item} />)}
+  </section>
+
+  {d.sponsor && <div class="note"><b>{lang==='de'?'Präsentiert von':'Presented by'}</b> {d.sponsor} · {lang==='de'?'Anzeige':'Sponsored'}</div>}
+
+  <section class="block" style="border-bottom:none">
+    <a class="cta" href={`/${lang}/subscribe`}>{lang==='de'?'Sqwod Daily abonnieren':'Subscribe to Sqwod Daily'}</a>
+  </section>
+</Base>

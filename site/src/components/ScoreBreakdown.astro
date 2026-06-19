@@ -1,0 +1,54 @@
+---
+import { t, type Lang } from '../i18n/ui';
+interface Crowd { score:number; reviews:number; platforms:number; sources:{name:string;value:string}[] }
+interface Assessment { score:number; criteria:{name:string;score:number}[] }
+interface Value { score:number; bestPrice:number; currency:string; low?:number; subscription?:string; history:number[] }
+interface Props { lang: Lang; crowd: Crowd; assessment: Assessment; value: Value }
+const { lang, crowd, assessment, value } = Astro.props;
+const max = Math.max(...value.history, 1);
+---
+<section class="block">
+  <p class="kick">{t(lang,'verified.breakdown')}</p>
+
+  <div class="comp">
+    <div><div class="cnum">{crowd.score}</div><div class="cwt">CROWD · 45%</div></div>
+    <div>
+      <p class="ctitle">{t(lang,'verified.crowd')}</p>
+      <p class="cdesc">{crowd.reviews.toLocaleString()} {t(lang,'verified.reviews')} · {crowd.platforms} {t(lang,'verified.platforms')}</p>
+      <div class="src">
+        {crowd.sources.map(s => <span class="chip">{s.name} <b>{s.value}</b></span>)}
+      </div>
+    </div>
+  </div>
+
+  <div class="comp">
+    <div><div class="cnum">{assessment.score}</div><div class="cwt">SQWOD · 40%</div></div>
+    <div>
+      <p class="ctitle">{t(lang,'verified.assessment')}</p>
+      <div class="bars">
+        {assessment.criteria.map(c => (
+          <div class="row">
+            <span>{c.name}</span>
+            <div class="track"><div class="fill" style={`width:${c.score*10}%`}></div></div>
+            <b>{c.score.toFixed(1)}</b>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="comp">
+    <div><div class="cnum">{value.score}</div><div class="cwt">VALUE · 15%</div></div>
+    <div>
+      <p class="ctitle">{t(lang,'verified.value')}</p>
+      <div class="src" style="margin-bottom:6px">
+        <span class="chip">{lang==='de'?'Bester':'Best'} <b>{value.currency==='EUR'?'€':''}{value.bestPrice}</b></span>
+        {value.low && <span class="chip">90-day low <b>€{value.low}</b></span>}
+        {value.subscription && <span class="chip">{lang==='de'?'Abo':'Sub'} <b>{value.subscription}</b></span>}
+      </div>
+      <div class="spark">
+        {value.history.map((h,i) => <i class={h===Math.min(...value.history)?'low':''} style={`height:${Math.round(h/max*100)}%`}></i>)}
+      </div>
+    </div>
+  </div>
+</section>

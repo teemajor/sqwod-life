@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sqwod Pod — Your Gym. Your rules. Your hour.</title>
+<meta name="description" content="Book your private training room in Berlin. Fully equipped, digitally accessible, and reserved only for you.">
+<style>
+:root{
+  --ink:#0e0e10;--chalk:#FAFAFA;
+  --g1:#ededf0;--g2:#b8b8c0;--g3:#85858e;--g4:#52525a;
+  --panel:#161619;--panel2:#1d1d21;--line:#2a2a30;
+  --sans:"Helvetica Neue",Helvetica,Arial,"Inter",system-ui,sans-serif;
+  --maxw:1120px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--ink);color:var(--chalk);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+body{background:radial-gradient(120% 80% at 50% -8%,#17171c,#0b0b0d 58%) fixed}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- header ---------- */
+header.site{border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30;background:rgba(11,11,13,.82);backdrop-filter:blur(10px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:60px;gap:14px}
+.logo{font-weight:800;font-size:18px;letter-spacing:.06em;text-transform:uppercase;display:inline-flex;align-items:center}
+.logo span{color:var(--g3)}
+.logo img{height:22px;width:auto;display:block}
+nav.main{display:flex;gap:20px;font-size:13px;color:var(--g2);font-weight:600;flex-wrap:wrap}
+nav.main a.on{color:var(--chalk)}
+nav.main a:hover{color:var(--chalk)}
+.utils{display:flex;align-items:center;gap:14px}
+.lang{font-size:11px;color:var(--g3);font-weight:700;letter-spacing:.06em}
+.lang b{color:var(--chalk)}
+.cta{font-size:12px;font-weight:800;background:var(--chalk);color:var(--ink);padding:9px 15px;border-radius:9px;border:1px solid var(--chalk);transition:transform .18s ease}
+.cta:hover{transform:translateY(-1px)}
+.ghost{font-size:12px;font-weight:800;background:transparent;color:var(--chalk);padding:9px 15px;border-radius:9px;border:1px solid var(--g4);transition:border-color .18s ease}
+.ghost:hover{border-color:var(--chalk)}
+@media (max-width:760px){nav.main{display:none}}
+
+/* ---------- type ---------- */
+h1{font-size:44px;line-height:1.0;letter-spacing:-.03em;margin:0 0 14px;font-weight:800;text-transform:uppercase}
+h2{font-size:28px;letter-spacing:-.02em;margin:0 0 12px;font-weight:800;line-height:1.1}
+h3{font-size:18px;font-weight:800;letter-spacing:-.01em;margin:0 0 6px}
+.sub{color:var(--g2);font-size:16px;line-height:1.5;margin:0 0 6px}
+.kick{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--g3);margin:0 0 18px}
+section.block{padding:48px 0;border-bottom:1px solid var(--line)}
+@media (min-width:900px){
+  h1{font-size:74px;letter-spacing:-.035em}
+  h2{font-size:36px}
+  .sub{font-size:19px}
+  section.block{padding:72px 0}
+  .kick{font-size:12px}
+}
+
+/* ---------- photo holder (graceful fallback) ---------- */
+.ph{position:relative;overflow:hidden;background:
+    radial-gradient(130% 110% at 30% 18%,#1f1f26,#0c0c0e 72%);
+  border:1px solid var(--line)}
+.ph::after{content:attr(data-label);position:absolute;left:14px;bottom:12px;right:14px;
+  font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g4);z-index:1}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2;
+  filter:grayscale(.18) contrast(1.04)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;border-bottom:1px solid var(--line);overflow:hidden;min-height:560px;display:flex;align-items:flex-end}
+.hero .bg{position:absolute;inset:0;z-index:0;background:radial-gradient(130% 110% at 70% 30%,#1f1f26,#0c0c0e 72%)}
+.hero .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.15) contrast(1.05) brightness(.92)}
+.hero .slide{opacity:0;transition:opacity 1.8s ease-in-out}
+.hero .slide.on{opacity:1}
+@media (prefers-reduced-motion:reduce){.hero .slide{transition:none}.hero .slide.on{opacity:1}}
+.hero .scrim{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(8,8,10,.94) 0%,rgba(8,8,10,.78) 38%,rgba(8,8,10,.30) 70%,rgba(8,8,10,.55) 100%),
+             linear-gradient(0deg,rgba(8,8,10,.85) 0%,transparent 45%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:54px;padding-bottom:48px}
+.hero .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g1);border:1px solid var(--g4);border-radius:999px;padding:6px 12px;margin-bottom:22px}
+.hero .dot{width:7px;height:7px;border-radius:50%;background:var(--chalk);box-shadow:0 0 0 4px rgba(250,250,250,.18)}
+.hero .ctarow{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0 0}
+.hero .meta-strip{display:flex;gap:22px;flex-wrap:wrap;margin-top:26px;font-size:12px;color:var(--g2);letter-spacing:.02em}
+.hero .meta-strip b{color:var(--chalk);font-weight:800}
+@media (min-width:900px){.hero{min-height:660px}.hero .wrap{padding-top:70px;padding-bottom:64px}.hero h1{max-width:13ch}.hero .sub{max-width:44ch}}
+
+/* ---------- pill row / why ---------- */
+.pills{display:flex;gap:10px;flex-wrap:wrap}
+.pill{font-size:12px;font-weight:700;color:var(--g2);border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:9px 15px}
+
+/* ---------- cards / grid ---------- */
+.grid{display:grid;gap:16px}
+@media (min-width:700px){.cols2{grid-template-columns:1fr 1fr}.cols3{grid-template-columns:1fr 1fr}}
+@media (min-width:1000px){.cols3{grid-template-columns:repeat(3,1fr)}}
+.card{border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:24px;transition:transform .18s ease,border-color .18s ease}
+.card:hover{transform:translateY(-3px);border-color:#3a3a42}
+.card .meta{color:var(--g2);font-size:14px;line-height:1.55;margin:0}
+.stepnum{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--g3);margin-bottom:14px}
+.glyphbox{position:relative;display:flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:13px;
+  background:radial-gradient(120% 120% at 35% 18%,#26262d,#0e0e10);border:1px solid var(--line);overflow:hidden;margin-bottom:16px}
+
+/* ---------- gallery ---------- */
+.gallery{display:grid;gap:14px;grid-template-columns:repeat(2,1fr);grid-auto-rows:160px;grid-auto-flow:dense}
+.gallery .ph{border-radius:16px}
+.gallery .ph img{transition:transform .5s ease,filter .4s ease}
+.gallery .ph:hover img{transform:scale(1.05);filter:grayscale(0) contrast(1.05)}
+.gallery .tall{grid-row:span 2}
+.gallery .wide{grid-column:span 2}
+@media (min-width:760px){.gallery{grid-template-columns:repeat(4,1fr);grid-auto-rows:180px}}
+
+/* ---------- pricing ---------- */
+.price-card{display:flex;flex-direction:column;height:100%}
+.price-card.feat{border-color:var(--chalk);background:var(--panel2)}
+.tag{font-size:9px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--chalk);border-radius:999px;padding:4px 10px;align-self:flex-start;margin-bottom:14px}
+.tag.muted{color:var(--g1);background:transparent;border:1px solid var(--g4)}
+.amt{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:6px 0 2px}
+.amt small{font-size:13px;color:var(--g3);font-weight:700;letter-spacing:0}
+.price-card .meta{flex:1;margin-bottom:20px}
+.price-card .cta,.price-card .ghost{text-align:center}
+
+/* ---------- founder ---------- */
+.founder{display:grid;gap:30px;align-items:center}
+@media (min-width:860px){.founder{grid-template-columns:1.05fr .9fr;gap:52px}}
+.founder-portrait{position:relative;margin:0;justify-self:center;width:100%;max-width:400px}
+.founder-portrait .ph{border-radius:20px;aspect-ratio:4/5;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.founder-portrait .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%;filter:contrast(1.06)}
+.founder-portrait .ph::before{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;
+  background:linear-gradient(0deg,rgba(8,8,10,.6),transparent 52%)}
+.founder-portrait .badge{position:absolute;left:16px;bottom:14px;z-index:4;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g1);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:rgba(14,14,16,.6)}
+.pull{font-size:22px;line-height:1.35;font-weight:800;letter-spacing:-.01em;margin:18px 0 0;color:var(--chalk)}
+.pull span{color:var(--g3)}
+
+/* ---------- locations ---------- */
+.loc{display:flex;flex-direction:column;height:100%;padding:0;overflow:hidden}
+.loc .ph{height:220px}
+.loc .body{padding:22px 24px 24px}
+.loc .addr{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--g3);margin:0 0 10px;font-weight:700}
+.loc .hours{font-size:13px;color:var(--g2);line-height:1.6;margin:0 0 18px}
+.loc .ctarow{display:flex;gap:10px;margin-top:auto}
+
+/* ---------- brand strip ---------- */
+.brands{display:flex;gap:34px;flex-wrap:wrap;align-items:center;justify-content:center;opacity:.75}
+.brands span{font-size:15px;font-weight:800;letter-spacing:.04em;color:var(--g2)}
+
+/* ---------- final cta ---------- */
+.final{text-align:center;padding:64px 0}
+.final .ctarow{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+
+/* ---------- newsletter ---------- */
+.signup{display:flex;gap:10px;max-width:420px;margin-top:18px;flex-wrap:wrap}
+.signup input{flex:1;min-width:180px;background:var(--panel);border:1px solid var(--line);border-radius:10px;color:var(--chalk);padding:12px 14px;font-size:14px;font-family:inherit}
+.signup input::placeholder{color:var(--g4)}
+.signup button{background:var(--chalk);color:var(--ink);border:none;border-radius:10px;font-weight:800;font-size:13px;padding:0 20px;cursor:pointer}
+
+/* ---------- footer ---------- */
+footer.site{padding:40px 0 60px;color:var(--g3);font-size:12px;line-height:1.9}
+footer.site .fgrid{display:grid;gap:26px;grid-template-columns:1fr 1fr;margin-bottom:30px}
+@media (min-width:760px){footer.site .fgrid{grid-template-columns:1.6fr 1fr 1fr 1fr}}
+footer.site h4{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--g2);margin:0 0 12px}
+footer.site a{color:var(--g3);font-weight:600;display:block;margin-bottom:7px}
+footer.site a:hover{color:var(--chalk)}
+.fbottom{border-top:1px solid var(--line);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* ---------- anims ---------- */
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes rise{0%{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;animation:rise .7s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.06s}.d2{animation-delay:.14s}.d3{animation-delay:.22s}.d4{animation-delay:.3s}.d5{animation-delay:.38s}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1}}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#" aria-label="Sqwod Pod"><img src="SqwodPod_assets/sqwod-logo-white.png" alt="Sqwod Pod"></a>
+    <nav class="main">
+      <a href="#book" class="on">Book a Pod</a>
+      <a href="#pricing">Packages &amp; Memberships</a>
+      <a href="#locations">Locations</a>
+      <a href="#inside">Inside the Pod</a>
+    </nav>
+    <div class="utils">
+      <span class="lang"><b>EN</b> · DE</span>
+      <a class="cta" href="#book">Book Now</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO (photo) ============ -->
+<section class="hero">
+  <div class="bg">
+    <img class="slide on" src="SqwodPod_assets/kollwitzkiez-hero.jpg" alt="Sqwod Pod private training room, Berlin" onerror="this.remove()">
+    <img class="slide" src="SqwodPod_assets/weissensee-card.jpg" alt="Weißensee Pod" loading="lazy" onerror="this.remove()">
+    <img class="slide" src="SqwodPod_assets/kollwitzkiez-wide.jpg" alt="Kollwitzkiez Pod" loading="lazy" onerror="this.remove()">
+  </div>
+  <div class="scrim"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal"><span class="dot"></span> Private training rooms · Berlin</span>
+    <h1 class="reveal d1">Your gym.<br>Your rules.<br>Your hour.</h1>
+    <p class="sub reveal d2">Book your private training room in Berlin. Fully equipped, digitally accessible, and reserved only for you.</p>
+    <div class="ctarow reveal d3">
+      <a class="cta" href="#book">Book Now →</a>
+      <a class="ghost" href="#pricing">View Memberships</a>
+    </div>
+    <div class="meta-strip reveal d4">
+      <span><b>2</b> Berlin locations</span>
+      <span><b>24/7</b> access at Kollwitzkiez</span>
+      <span><b>Rogue · NOHRD · Hyperice</b> equipped</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY PRIVATE ============ -->
+<section class="block">
+  <div class="wrap">
+    <p class="kick reveal">Why members train privately</p>
+    <h2 class="reveal" style="max-width:18ch">Gyms were built for volume. You deserve focus.</h2>
+    <p class="sub reveal" style="max-width:60ch;margin-bottom:28px">A private room, clear time, and full control over your training. Professional equipment on a compact floor — everything you need for strength, functional training, mobility, and focused sessions.</p>
+    <div class="grid cols3">
+      <div class="card reveal d1">
+        <div class="glyphbox" aria-hidden="true"><span style="width:26px;height:26px;border:2px solid var(--chalk);transform:rotate(45deg);border-radius:6px;display:block"></span></div>
+        <h3>Total privacy</h3>
+        <p class="meta">The room is reserved only for you. Train solo, with a friend, or with your coach — never with strangers.</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="glyphbox" aria-hidden="true"><span style="width:26px;height:26px;border-radius:50%;border:6px solid #dcdce2;box-shadow:inset 0 0 0 1px #000;display:block;animation:spin 8s linear infinite"></span></div>
+        <h3>Pro equipment</h3>
+        <p class="meta">Rogue, NOHRD, WaterRower &amp; Hyperice on a compact, focused floor. Clean, ready, and yours.</p>
+      </div>
+      <div class="card reveal d3">
+        <div class="glyphbox" aria-hidden="true"><span style="width:30px;height:18px;border-radius:6px;background:#15151a;border:2px solid #dcdce2;display:block"></span></div>
+        <h3>Digital access</h3>
+        <p class="meta">Book in a minute. Your code activates for your session — unlock, train, and leave on time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSIDE THE POD (gallery) ============ -->
+<section class="block" id="inside">
+  <div class="wrap">
+    <p class="kick reveal">Inside the Pod</p>
+    <h2 class="reveal">Premium kit. No crowd. No compromise.</h2>
+    <p class="sub reveal" style="max-width:58ch;margin-bottom:28px">Curated wood-and-steel equipment from the brands serious trainers trust — laid out so the whole floor is yours for the hour.</p>
+    <div class="gallery reveal d1">
+      <div class="ph wide" data-label="Weißensee training room"><img src="SqwodPod_assets/weissensee-card.jpg" alt="Weißensee Pod interior" onerror="this.remove()"></div>
+      <div class="ph tall" data-label="Sprintbok curved treadmill"><img src="SqwodPod_assets/g-sprintbok.jpg" alt="NOHRD Sprintbok curved wooden treadmill" onerror="this.remove()"></div>
+      <div class="ph" data-label="NOHRD wood dumbbells"><img src="SqwodPod_assets/g-nohrd.jpg" alt="NOHRD wooden dumbbells" onerror="this.remove()"></div>
+      <div class="ph" data-label="Colour-fleck bumper plates"><img src="SqwodPod_assets/g-plates.jpg" alt="Rogue bumper plates" onerror="this.remove()"></div>
+      <div class="ph wide" data-label="Kollwitzkiez · bright floor"><img src="SqwodPod_assets/kollwitzkiez-wide.jpg" alt="Kollwitzkiez Pod interior" onerror="this.remove()"></div>
+      <div class="ph tall" data-label="Rogue rack &amp; rig"><img src="SqwodPod_assets/g-rack.jpg" alt="Rogue squat rack" onerror="this.remove()"></div>
+      <div class="ph" data-label="Recovery &amp; mobility tools"><img src="SqwodPod_assets/g-recovery.jpg" alt="Rogue recovery tools wall" onerror="this.remove()"></div>
+      <div class="ph" data-label="Leather heavy bag"><img src="SqwodPod_assets/g-bag.jpg" alt="Leather punching bag" onerror="this.remove()"></div>
+      <div class="ph" data-label="Kollwitzkiez training floor"><img src="SqwodPod_assets/kollwitzkiez-card.jpg" alt="Kollwitzkiez Pod interior" onerror="this.remove()"></div>
+      <div class="ph wide" data-label="Kollwitzstrasse 20 · street entrance"><img src="SqwodPod_assets/g-storefront.jpg" alt="Sqwod Pod storefront" onerror="this.remove()"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THREE STEPS ============ -->
+<section class="block" id="book">
+  <div class="wrap">
+    <p class="kick reveal">See how your first visit works</p>
+    <h2 class="reveal">Three steps. That's it.</h2>
+    <div class="grid cols3" style="margin-top:28px">
+      <div class="card reveal d1"><div class="stepnum">Step 01</div><h3>Book</h3><p class="meta">Pick your Pod, pick your time. Takes 1 minute.</p></div>
+      <div class="card reveal d2"><div class="stepnum">Step 02</div><h3>Unlock</h3><p class="meta">Arrive, enter your code, and step in.</p></div>
+      <div class="card reveal d3"><div class="stepnum">Step 03</div><h3>Train</h3><p class="meta">Train solo, with a friend, or with a coach.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="block" id="pricing">
+  <div class="wrap">
+    <p class="kick reveal">Choose how you train</p>
+    <h2 class="reveal">Pay once, or train for the best price.</h2>
+    <div class="grid cols3" style="margin-top:28px">
+      <div class="card price-card reveal d1">
+        <span class="tag muted">Single Session</span>
+        <div class="amt">€25 <small>/ session</small></div>
+        <p class="meta">Best if you want to try Sqwod Pod or train flexibly with no commitment.</p>
+        <a class="ghost" href="#">Book Now</a>
+      </div>
+      <div class="card price-card feat reveal d2">
+        <span class="tag">Most popular · Packages</span>
+        <div class="amt">€89,90 <small>/ from</small></div>
+        <p class="meta">Several sessions without a monthly commitment. 4, 8, or 12 packs — down to €19,99 per session at the top tier.</p>
+        <a class="cta" href="#">View Packages</a>
+      </div>
+      <div class="card price-card reveal d3">
+        <span class="tag muted">Membership</span>
+        <div class="amt">Best <small>per session</small></div>
+        <p class="meta">Best if you train regularly and want the lowest price per session, every week.</p>
+        <a class="ghost" href="#">View Memberships</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND STRIP ============ -->
+<section class="block">
+  <div class="wrap">
+    <p class="kick reveal" style="text-align:center">Equipped with the gear pros trust</p>
+    <div class="brands reveal d1">
+      <span>ROGUE</span><span>NOHRD</span><span>WATERROWER</span><span>HYPERICE</span><span>SPRINTBOK</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section class="block">
+  <div class="wrap founder">
+    <div class="founder-copy reveal">
+      <p class="kick">They took my sanctuary away. So I built it.</p>
+      <h2>Built for focus.</h2>
+      <p class="sub" style="max-width:54ch">Sqwod Pod was founded by Tee Major — a performance coach who has trained soldiers, Olympians, and high-performers across three continents. When the pandemic closed gyms, he didn't wait. He started building the health infrastructure for future cities.</p>
+      <p class="pull">"When you control your environment, <span>you control your results."</span></p>
+    </div>
+    <figure class="founder-portrait reveal d2">
+      <div class="ph"><img src="SqwodPod_assets/tee-major-portrait.jpg" alt="Tee Major, founder of Sqwod Pod" onerror="this.parentElement.parentElement.remove()"></div>
+      <span class="badge">Founder · Tee Major</span>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ LOCATIONS ============ -->
+<section class="block" id="locations">
+  <div class="wrap">
+    <p class="kick reveal">Choose your Pod in Berlin</p>
+    <h2 class="reveal">Two locations. Both yours by the hour.</h2>
+    <div class="grid cols2" style="margin-top:28px">
+      <div class="card loc reveal d1">
+        <div class="ph" data-label="Weißensee training room"><img src="SqwodPod_assets/weissensee-card.jpg" alt="Weißensee Pod" onerror="this.remove()"></div>
+        <div class="body">
+          <h3>Weißensee</h3>
+          <p class="addr">Jacobsohnstrasse 27 · 13086</p>
+          <p class="hours">A calm private room for strength, functional training, partner workouts, and regular weekly sessions.<br><br>Sunday: 9am–5pm · Mon–Sat: 7am–9pm</p>
+          <div class="ctarow"><a class="cta" href="#">Book Now</a><a class="ghost" href="#">Learn More</a></div>
+        </div>
+      </div>
+      <div class="card loc reveal d2">
+        <div class="ph" data-label="Kollwitzkiez training room"><img src="SqwodPod_assets/kollwitzkiez-card.jpg" alt="Kollwitzkiez Pod" onerror="this.remove()"></div>
+        <div class="body">
+          <h3>Kollwitzkiez</h3>
+          <p class="addr">Kollwitzstrasse 20 · 10405</p>
+          <p class="hours">A private 24/7 Pod in Prenzlauer Berg for flexible schedules, personal training, and focused sessions.<br><br>Open 24/7</p>
+          <div class="ctarow"><a class="cta" href="#">Book Now</a><a class="ghost" href="#">Learn More</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="block">
+  <div class="wrap final">
+    <h2 class="reveal" style="font-size:clamp(28px,5vw,46px)">Ready for your private training hour?</h2>
+    <p class="sub reveal d1" style="max-width:46ch;margin:0 auto">Book a single session, choose a package, or start with a membership.</p>
+    <div class="ctarow reveal d2">
+      <a class="cta" href="#">Book Now →</a>
+      <a class="ghost" href="#pricing">Compare options</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+/* Subtle hero crossfade — slow, no controls, honors reduced-motion */
+(function(){
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var slides = document.querySelectorAll('.hero .slide');
+  if (slides.length < 2) return;
+  var i = 0;
+  setInterval(function(){
+    slides[i].classList.remove('on');
+    i = (i + 1) % slides.length;
+    slides[i].classList.add('on');
+  }, 6000);
+})();
+</script>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#" aria-label="Sqwod Pod"><img src="SqwodPod_assets/sqwod-logo-white.png" alt="Sqwod Pod" style="height:20px"></a>
+        <p style="max-width:34ch;margin:14px 0 0;color:var(--g3)">Private training rooms in Berlin — like a workout in your house. Reserved only for you.</p>
+        <h4 style="margin-top:22px">Get updates from Sqwod</h4>
+        <div class="signup">
+          <input type="email" placeholder="Your email">
+          <button>Sign up</button>
+        </div>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="#">The Sqwod Journal</a>
+        <a href="#">For Trainers</a>
+        <a href="#">Company Wellness</a>
+      </div>
+      <div>
+        <h4>Train</h4>
+        <a href="#book">Book a Pod</a>
+        <a href="#pricing">Packages</a>
+        <a href="#pricing">Memberships</a>
+        <a href="#locations">Locations</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Refund policy</a>
+        <a href="#">Privacy policy</a>
+        <a href="#">Terms of service</a>
+        <a href="#">Legal notice</a>
+      </div>
+    </div>
+    <div class="fbottom">
+      <span>© 2026 Sqwod Pod</span>
+      <span>EN · DE · Berlin</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

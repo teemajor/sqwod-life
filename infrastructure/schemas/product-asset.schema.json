@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://sqwod.life/schemas/product-asset.schema.json",
+  "title": "Sqwod Verified Product Asset",
+  "description": "Visual assets for a product. The viewer loads the richest available type, falling back down the chain so there is never a broken state: glb -> spin360 -> images -> fallback mesh.",
+  "type": "object",
+  "required": ["productId", "tier", "primaryType"],
+  "properties": {
+    "productId": { "type": "string" },
+    "tier": {
+      "type": "string",
+      "enum": ["hero", "standard"],
+      "description": "hero = gets 3D/360 capture pipeline; standard = 2D auto-pull only"
+    },
+    "primaryType": {
+      "type": "string",
+      "enum": ["glb", "spin360", "images", "fallback"],
+      "description": "Which asset the viewer renders first"
+    },
+    "glb": {
+      "type": ["object", "null"],
+      "properties": {
+        "url":     { "type": "string", "format": "uri" },
+        "poster":  { "type": "string", "format": "uri", "description": "Static fallback image" },
+        "draco":   { "type": "boolean", "default": true, "description": "Compressed" },
+        "origin":  { "type": "string", "enum": ["manufacturer", "ai-generated", "commissioned"] }
+      }
+    },
+    "spin360": {
+      "type": ["object", "null"],
+      "properties": {
+        "frames":   { "type": "array", "items": { "type": "string", "format": "uri" } },
+        "frameCount": { "type": "integer", "minimum": 12 }
+      }
+    },
+    "images": {
+      "type": "array",
+      "description": "Auto-pulled from affiliate product feeds",
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "properties": {
+          "url":    { "type": "string", "format": "uri" },
+          "alt":    { "type": "string" },
+          "source": { "type": "string", "description": "feed/network it came from" }
+        }
+      }
+    },
+    "fallback": {
+      "type": "object",
+      "description": "Generic monochrome mesh when nothing else exists",
+      "properties": {
+        "mesh": { "type": "string", "enum": ["ring", "seed", "box"], "default": "seed" }
+      }
+    },
+    "queue": {
+      "type": ["object", "null"],
+      "description": "Set by Claude when a hero product needs a richer asset generated",
+      "properties": {
+        "needs":   { "type": "string", "enum": ["glb", "spin360"] },
+        "status":  { "type": "string", "enum": ["queued", "generating", "review", "done"] },
+        "method":  { "type": "string", "enum": ["ai-3d", "turntable", "manufacturer"] }
+      }
+    },
+    "lastUpdated": { "type": "string", "format": "date-time" }
+  }
+}

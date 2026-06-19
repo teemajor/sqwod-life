@@ -1,0 +1,48 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Glyph from '../../../components/Glyph.astro';
+import { getCollection } from 'astro:content';
+import { languages, type Lang } from '../../../i18n/ui';
+import { pillarGlyph } from '../../../i18n/pillars';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+
+const reports = (await getCollection('articles', (a) => a.data.lang === lang && (a.data.format === 'report' || a.data.format === 'index')))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const title = lang === 'de' ? 'Sqwod Intelligence — Reports & Daten' : 'Sqwod Intelligence — reports & data';
+const blurb = lang === 'de'
+  ? 'Tiefgehende Reports und Daten zum Business der Wellness-Branche.'
+  : 'In-depth reports and data on the business of wellness.';
+const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+---
+<Base lang={lang} title={title} description={blurb} active="intelligence">
+  <div class="crumb">Sqwod Intelligence</div>
+  <h1>Sqwod Intelligence</h1>
+  <p class="sub">{blurb}</p>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+    {reports.length === 0 && <p class="sub">{lang==='de'?'Bald verfügbar.':'Coming soon.'}</p>}
+    <div class="grid cols2">
+    {reports.map((r, i) => (
+      <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr auto" href={`/${lang}/intelligence/${r.data.urlSlug}`}>
+        <Glyph kind={r.data.hero ? (r.data.hero.kind === 'orbit' ? 'ring' : r.data.hero.kind) : pillarGlyph(r.data.pillar)} size={52} />
+        <div class="info">
+          <span class="bestfor">{r.data.format === 'index' ? 'Index' : 'Report'}{r.data.gated ? ' · ' + (lang==='de'?'Gegated':'Gated') : ''}</span>
+          <h3>{r.data.title}</h3>
+          <div class="meta">{r.data.description}</div>
+          <div class="meta" style="margin-top:6px;color:var(--g4)">{fmt(r.data.publishedAt)}</div>
+          <span class="cardcta">{r.data.gated ? (lang==='de'?'Report holen':'Get the report') : (lang==='de'?'Lesen':'Read')} →</span>
+        </div>
+        <div class="rank" style="font-size:13px">→</div>
+      </a>
+    ))}
+    </div>
+  </section>
+
+  <div class="note">{lang==='de'
+    ? 'Reports sind kostenlos — wir schicken dir die Vollversion per E-Mail. Schnelle Daten-Drops sind für alle offen.'
+    : 'Reports are free — we\'ll email you the full version. Quick data drops are open to everyone.'}</div>
+</Base>

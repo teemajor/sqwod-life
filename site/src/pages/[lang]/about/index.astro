@@ -1,0 +1,55 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+
+const ecosystem = [
+  { name: 'Sqwod Pods', en: 'Private, fully-equipped training studios for coaches & creators.', de: 'Private, voll ausgestattete Trainingsstudios für Coaches & Creator.' },
+  { name: 'Sqwod OS', en: 'Software to build, manage, and grow a fitness business.', de: 'Software zum Aufbauen, Verwalten und Wachsen eines Fitness-Business.' },
+  { name: 'Sqwod AI', en: 'The AI coach and intelligence layer.', de: 'Der KI-Coach und die Intelligence-Ebene.' },
+  { name: 'Sqwod Products', en: 'Coffee, protein, and gear built for the work.', de: 'Kaffee, Protein und Equipment für die Arbeit.' },
+];
+const title = lang === 'de' ? 'Über uns — sqwod.life' : 'About — sqwod.life';
+---
+<Base lang={lang} title={title} active="about">
+  <div class="crumb">{lang==='de'?'Über uns':'About'}</div>
+  <h1>{lang==='de'?'Wir bewaffnen die Rebellen.':'We arm the rebels.'}</h1>
+  <p class="sub" style="max-width:54ch">{lang==='de'
+    ? 'sqwod.life ist die strategische Intelligenz für die, die Wellness betreiben — Coaches, Trainer:innen, Studio-Gründer:innen und Creator. Wir lesen die ganze Branche und geben dir die Version, die ändert, was du am Montag tust.'
+    : 'sqwod.life is strategic intelligence for the people who run wellness — coaches, trainers, studio founders, and creators. We read the whole industry and hand you the version that changes what you do on Monday.'}</p>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+    <p class="kick">{lang==='de'?'Die Mission':'The mission'}</p>
+    <p class="prose measure" style="margin-left:0">{lang==='de'
+      ? 'Großartiges Coaching und gute Technologie sind die Zutaten für Spitzenleistung. Wir bauen digitale und physische Räume, in denen Creator, Coaches und Trainer:innen einfache, bezahlbare Werkzeuge bekommen, um ihre Communities aufzubauen, zu verwalten und wachsen zu lassen.'
+      : 'Great coaching and good technology are the ingredients of peak performance. We build digital and physical spaces where creators, coaches, and trainers get simple, affordable tools to build, manage, and grow their communities.'}</p>
+  </section>
+
+  <section class="block">
+    <p class="kick">{lang==='de'?'Der Gründer':'The founder'}</p>
+    <p class="prose measure" style="margin-left:0">{lang==='de'
+      ? 'Tee Major — 24+ Jahre in der Fitnessbranche, Militär-Fitnesstrainer (USMC, Army, Navy, Air Force), TRX-, ACE- und Sporternährungs-zertifiziert, selbst Creator. Sqwod ist aus dem Bedarf eines Creators entstanden: Content drehen, Kund:innen trainieren, in Topform bleiben.'
+      : 'Tee Major — 24+ years in the fitness industry, military fitness trainer (USMC, Army, Navy, Air Force), TRX / ACE / sports-nutrition certified, and a creator himself. Sqwod was born from a creator\'s need: shoot content, train clients, stay in peak shape.'}</p>
+  </section>
+
+  <section class="block">
+    <p class="kick">{lang==='de'?'Die Sqwod-Familie':'The Sqwod family'}</p>
+    <p class="sub" style="margin-bottom:12px">{lang==='de'?'sqwod.life ist Teil eines größeren Ganzen:':'sqwod.life is part of something bigger:'}</p>
+    <div class="grid cols2">
+    {ecosystem.map((e) => (
+      <div class="card" style="grid-template-columns:1fr;cursor:default">
+        <div class="info"><h3>{e.name}</h3><div class="meta">{lang==='de'?e.de:e.en}</div></div>
+      </div>
+    ))}
+    </div>
+  </section>
+
+  <section class="block" style="border-bottom:none">
+    <p class="kick">{lang==='de'?'Kontakt':'Contact'}</p>
+    <p class="prose">tee@sqwod.life · Berlin<br><a href={`/${lang}/impressum`} style="color:var(--g2)">Impressum</a></p>
+  </section>
+</Base>

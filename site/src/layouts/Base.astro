@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { type Lang } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  active?: string;
+  altPath?: string; // same page in the other language → hreflang
+}
+const { lang, title, description = '', active, altPath } = Astro.props;
+const other = lang === 'en' ? 'de' : 'en';
+const path = Astro.url.pathname;
+const otherPath = altPath ?? path.replace(`/${lang}`, `/${other}`);
+const canonical = new URL(path, Astro.site).toString();
+---
+<!doctype html>
+<html lang={lang}>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>{title}</title>
+  {description && <meta name="description" content={description} />}
+  <link rel="canonical" href={canonical} />
+  <link rel="alternate" hreflang={lang} href={canonical} />
+  <link rel="alternate" hreflang={other} href={new URL(otherPath, Astro.site).toString()} />
+  <link rel="alternate" hreflang="x-default" href={new URL(path.replace(`/${lang}`, '/en'), Astro.site).toString()} />
+</head>
+<body>
+  <Header lang={lang} active={active} altPath={otherPath} />
+  <main class="wrap">
+    <slot />
+  </main>
+  <Footer lang={lang} />
+</body>
+</html>

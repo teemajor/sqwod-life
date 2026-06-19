@@ -1,0 +1,88 @@
+# Sqwod Verified — Affiliate Network Registry (example)
+# Copy to affiliate-networks.yaml and flip `status: active` once credentials
+# are in .env. Secrets NEVER live here — only in .env (git-ignored).
+#
+# adapter   = which integration module handles this network
+# markets   = which storefronts/locales it serves
+# status    = active | pending | disabled  (only `active` is polled)
+# settings  = non-secret per-network options
+
+networks:
+  amazon:
+    label: "Amazon Associates"
+    adapter: amazon-paapi
+    status: pending          # set active after PA-API access granted
+    markets: [de, com]
+    settings:
+      partner_tags:
+        de: "REPLACE_DE_TAG-21"
+        com: "REPLACE_COM_TAG-20"
+      paapi_host:
+        de: "webservices.amazon.de"
+        com: "webservices.amazon.com"
+      throttle_rps: 1        # PA-API is rate-limited; keep low
+    # credentials in .env: AMAZON_PAAPI_ACCESS_KEY / _SECRET_KEY
+
+  awin:
+    label: "Awin"
+    adapter: awin
+    status: pending
+    markets: [de, eu, uk]
+    settings:
+      publisher_id: "REPLACE_AWIN_PUBLISHER_ID"
+      region: "eu"
+      feed_refresh_cron: "0 */6 * * *"   # every 6h
+    # credentials in .env: AWIN_API_TOKEN
+
+  impact:
+    label: "Impact.com"
+    adapter: impact
+    status: disabled
+    markets: [com, eu]
+    settings:
+      account_sid: "REPLACE_IMPACT_ACCOUNT_SID"
+    # credentials in .env: IMPACT_AUTH_TOKEN
+
+  cj:
+    label: "CJ (Commission Junction)"
+    adapter: cj
+    status: disabled
+    markets: [com, eu]
+    settings:
+      website_id: "REPLACE_CJ_WEBSITE_ID"
+    # credentials in .env: CJ_API_KEY
+
+  rakuten:
+    label: "Rakuten Advertising"
+    adapter: rakuten
+    status: disabled
+    markets: [com, eu]
+    # credentials in .env: RAKUTEN_CLIENT_ID / _CLIENT_SECRET
+
+  sovrn:
+    label: "Sovrn Commerce (Skimlinks)"
+    adapter: sovrn
+    status: disabled
+    markets: [global]
+    settings:
+      role: "gap-fill"       # auto-affiliatize merchants not joined directly
+    # credentials in .env: SOVRN_API_KEY
+
+# ---- global best-deal rules (override per category if needed) ----
+deal_rules:
+  require_in_stock: true
+  include_shipping_when_known: true
+  tie_breakers: [merchant_reliability, return_policy, commission]  # commission last, never primary
+  show_subscriptions_separately: true
+
+# ---- attribution ----
+attribution:
+  redirect_path: "/go/{offerId}"
+  subid_format: "{contentId}:{pillar}:{lang}"
+  link_rel: "sponsored nofollow"
+  consent_required: true     # no click tracking before CMP consent
+
+# ---- price refresh ----
+refresh:
+  default_cron: "0 */6 * * *"
+  on_refresh: [update_price_history, recompute_value_score, bump_last_updated, demote_out_of_stock]

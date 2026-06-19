@@ -1,0 +1,18 @@
+---
+// The diamond-seed Sqwod Score badge. Replace the path with the exact
+// app seed path once provided for a pixel-true mark.
+interface Props { score: number; size?: number; stroke?: string }
+const { score, size = 120, stroke = 'var(--mark)' } = Astro.props;
+const numSize = Math.round(size * 0.36);
+const subSize = Math.max(9, Math.round(size * 0.085));
+---
+<div class="seedwrap" style={`width:${size}px;height:${size}px`}>
+  <svg viewBox="0 0 100 100" aria-hidden="true">
+    <path d="M50 4 C70 22 78 30 96 50 C78 70 70 78 50 96 C30 78 22 70 4 50 C22 30 30 22 50 4 Z"
+          fill="none" stroke={stroke} stroke-width="2.5" />
+  </svg>
+  <div class="num">
+    <b style={`font-size:${numSize}px`}>{score}</b>
+    <i style={`font-size:${subSize}px`}>/ 100</i>
+  </div>
+</div>

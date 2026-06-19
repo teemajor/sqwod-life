@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import PillarIcon from '../../components/PillarIcon.astro';
+import { languages, t, type Lang } from '../../i18n/ui';
+import { PILLARS, pillarMeta } from '../../i18n/pillars';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const title = lang === 'de'
+  ? 'sqwod.life — strategische Intelligenz für die Wellness-Branche'
+  : 'sqwod.life — strategic intelligence for the people who run wellness';
+const tagline = lang === 'de'
+  ? 'Wir lesen die ganze Branche und geben dir die Version, die ändert, was du am Montag tust.'
+  : 'We read the whole industry and hand you the version that changes what you do on Monday.';
+---
+<Base lang={lang} title={title} description={tagline} active="">
+  <div class="hero-split">
+    <div class="ht reveal">
+      <h1>{lang==='de'?'Strategische Intelligenz für die, die Wellness betreiben.':'Strategic intelligence for the people who run wellness.'}</h1>
+      <p class="sub">{tagline}</p>
+      <div class="ctarow">
+        <a class="cta" href={`/${lang}/verified`}>{t(lang,'nav.verified')} →</a>
+        <a class="f" href={`/${lang}/daily`}>{t(lang,'nav.daily')}</a>
+        <a class="f" href={`/${lang}/intelligence`}>{t(lang,'nav.intelligence')}</a>
+      </div>
+    </div>
+    <div class="hm reveal d2">
+      <div class="heromotif"><div class="ring"></div><div class="glint"></div><div class="seedmark"></div></div>
+    </div>
+  </div>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
+    <p class="kick reveal">{lang==='de'?'Was wir abdecken':'What we cover'}</p>
+    <div class="grid cols3">
+      {PILLARS.map((p, i) => (
+        <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr" href={`/${lang}/articles/${p}`}>
+          <PillarIcon pillar={p} size={52} />
+          <div class="info">
+            <h3>{pillarMeta[p].label[lang]}</h3>
+            <div class="meta">{pillarMeta[p].desc[lang]}</div>
+            <span class="cardcta">{lang==='de'?'Entdecken':'Explore'} →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

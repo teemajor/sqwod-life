@@ -1,0 +1,20 @@
+---
+import Base from '../../layouts/Base.astro';
+import { languages, type Lang } from '../../i18n/ui';
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+---
+<Base lang={lang} title="Subscribe — sqwod.life" active="">
+  <div class="measure" style="text-align:center;padding:36px 0">
+    <div class="heromotif" style="margin:0 auto 18px"><div class="ring"></div><div class="glint"></div><div class="seedmark"></div></div>
+    <h1>{lang==='de'?'Werde Teil des Sqwod.':'Join the Sqwod.'}</h1>
+    <p class="sub" style="max-width:44ch;margin:8px auto 20px">{lang==='de'
+      ? 'Sqwod Daily plus die wichtigsten Reports — kostenlos, auf EN & DE. Ein Rep pro Tag.'
+      : 'Sqwod Daily plus the reports that matter — free, in EN & DE. One rep a day.'}</p>
+    <div style="display:flex;gap:8px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+      <input type="email" placeholder={lang==='de'?'deine@email.de':'you@email.com'} style="flex:1;min-width:200px;background:var(--panel);border:1px solid var(--line);color:var(--chalk);border-radius:10px;padding:13px 14px;font-size:15px" />
+      <button class="cta" style="border:none;cursor:pointer">{lang==='de'?'Abonnieren':'Subscribe'}</button>
+    </div>
+    <p class="dealnote" style="margin-top:12px">{lang==='de'?'Double-Opt-in · jederzeit abbestellbar · DSGVO-konform':'Double opt-in · unsubscribe anytime · GDPR-compliant'}</p>
+  </div>
+</Base>

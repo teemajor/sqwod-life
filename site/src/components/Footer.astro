@@ -1,0 +1,14 @@
+---
+import { type Lang } from '../i18n/ui';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+---
+<footer class="site">
+  <div class="wrap">
+    ◈ Sqwod Verified · {lang === 'de' ? 'Score wird mit neuen Bewertungen & Preisen neu berechnet.' : 'Score recomputed as new reviews & prices arrive.'}<br>
+    <a href={`/${lang}/verified/methodology`}>{lang==='de'?'Methodik':'Methodology'}</a> ·
+    <a href={`/${lang}/verified/disclosure`}>{lang==='de'?'Transparenz':'Disclosure'}</a> ·
+    <a href={`/${lang}/impressum`}>Impressum</a> ·
+    <a href={`/${lang}/datenschutz`}>{lang==='de'?'Datenschutz':'Privacy'}</a>
+  </div>
+</footer>

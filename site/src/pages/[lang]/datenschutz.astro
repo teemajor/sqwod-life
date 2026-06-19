@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import { languages, type Lang } from '../../i18n/ui';
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+---
+<Base lang={lang} title={lang==='de'?'Datenschutz — sqwod.life':'Privacy — sqwod.life'} active="">
+  <div class="measure">
+    <div class="crumb">{lang==='de'?'Datenschutz':'Privacy'}</div>
+    <h1>{lang==='de'?'Datenschutzerklärung':'Privacy policy'}</h1>
+    <p class="prose" style="margin-top:14px">{lang==='de'
+      ? 'Platzhalter — vollständige, DSGVO-konforme Datenschutzerklärung vor dem Launch ergänzen (Verantwortliche:r, Verarbeitungszwecke, Rechtsgrundlagen, Consent-Management, Drittanbieter, Betroffenenrechte).'
+      : 'Placeholder — add the full, GDPR-compliant privacy policy before launch (controller, purposes, legal bases, consent management, third parties, data-subject rights).'}</p>
+    <p class="prose">Sqwod · Berlin · tee@sqwod.life</p>
+  </div>
+</Base>

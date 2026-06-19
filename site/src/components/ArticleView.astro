@@ -1,0 +1,37 @@
+---
+import { type Lang } from '../i18n/ui';
+import { pillarMeta, type Pillar } from '../i18n/pillars';
+import ArticleHero from './ArticleHero.astro';
+import type { CollectionEntry } from 'astro:content';
+interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string }
+const { lang, entry, sectionLabel } = Astro.props;
+const d = entry.data;
+const { Content } = await entry.render();
+const pillar = pillarMeta[d.pillar as Pillar];
+const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+---
+<div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
+<h1>{d.title}</h1>
+<p class="sub">{d.description}</p>
+
+{d.hero && <ArticleHero kind={d.hero.kind} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} />}
+<div class="meta" style="margin:8px 0 0;color:var(--g3);font-size:12px">
+  {d.author} · {fmt}
+  {d.gated && <span class="conf" style="margin-left:8px">{lang==='de'?'Gegated':'Gated'}</span>}
+</div>
+
+{d.gated && (
+  <div class="note" style="margin-top:16px">
+    <b>{lang==='de'?'Vollständigen Report freischalten':'Unlock the full report'}.</b>
+    {lang==='de'?' Trag dich ein und wir schicken dir die komplette Version.':' Drop your email and we\'ll send you the full version.'}
+    <div style="margin-top:10px"><a class="cta" href={`/${lang}/subscribe`}>{lang==='de'?'Report holen':'Get the report'} →</a></div>
+  </div>
+)}
+
+<section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
+  <Content />
+</section>
+
+<section class="block" style="border-bottom:none">
+  <a class="cta" href={`/${lang}/articles/${d.pillar}`}>{lang==='de'?'Mehr aus':'More in'} {pillar.label[lang]} →</a>
+</section>

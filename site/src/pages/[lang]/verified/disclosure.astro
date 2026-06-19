@@ -1,0 +1,16 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+---
+<Base lang={lang} title="Affiliate disclosure — Sqwod Verified" active="verified">
+  <div class="measure">
+    <div class="crumb">Sqwod Verified / {lang==='de'?'Transparenz':'Disclosure'}</div>
+    <h1>{lang==='de'?'Affiliate-Hinweis':'Affiliate disclosure'}</h1>
+    <p class="prose" style="margin-top:14px">{lang==='de'
+      ? 'sqwod.life erhält ggf. eine Provision über Links auf Sqwod-Verified-Seiten (Anzeige/Werbung). Das beeinflusst den Sqwod Score oder das Ranking nie — Scores folgen ausschließlich der Methodik. Affiliate-Links sind als solche gekennzeichnet (rel="sponsored").'
+      : 'sqwod.life may earn a commission from links on Sqwod Verified pages (advertising). It never affects the Sqwod Score or the ranking — scores follow the methodology only. Affiliate links are labeled and marked rel="sponsored".'}</p>
+    <p class="prose"><a href={`/${lang}/verified/methodology`} style="color:var(--g2)">→ {lang==='de'?'Unsere Methodik':'Our methodology'}</a></p>
+  </div>
+</Base>

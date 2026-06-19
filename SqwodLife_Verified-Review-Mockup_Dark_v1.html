@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Sqwod Verified — Oura Ring Gen3 (dark, 3D)</title>
+<style>
+  :root{
+    --ink:#0e0e10; --chalk:#FAFAFA;
+    --g1:#ededf0; --g2:#b8b8c0; --g3:#85858e; --g4:#52525a;
+    --panel:#161619; --panel2:#1d1d21; --line:#2a2a30; --mark:var(--chalk);
+    --sans:"Helvetica Neue",Helvetica,Arial,"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--ink);color:var(--chalk);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:480px;margin:0 auto;padding:0 18px}
+
+  .sample{background:var(--chalk);color:var(--ink);font-size:10px;letter-spacing:.16em;text-transform:uppercase;text-align:center;padding:6px}
+
+  header{border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:54px}
+  .logo{font-weight:800;font-size:18px;letter-spacing:-.02em}
+  .logo span{color:var(--g3)}
+  .menu{font-size:12px;color:var(--g2);font-weight:700;letter-spacing:.05em}
+  .lang{font-size:11px;color:var(--g3);font-weight:700;letter-spacing:.06em}
+  .lang b{color:var(--chalk)}
+
+  .crumb{font-size:11px;color:var(--g3);letter-spacing:.05em;text-transform:uppercase;margin:20px 0 8px;font-weight:700}
+  .verified-tag{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--g4);border-radius:999px;padding:5px 10px;color:var(--g1)}
+
+  h1{font-size:34px;line-height:1.05;letter-spacing:-.025em;margin:12px 0 4px;font-weight:800}
+  .sub{color:var(--g2);font-size:14px;margin:0}
+
+  /* 3D viewer */
+  .viewer{position:relative;width:100%;height:300px;margin:6px 0 4px;border:1px solid var(--line);border-radius:18px;
+          background:radial-gradient(120% 90% at 50% 30%, #1a1a1f 0%, #101013 70%);overflow:hidden;touch-action:none;cursor:grab}
+  .viewer.drag{cursor:grabbing}
+  .viewer canvas{display:block}
+  .hint{position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:11px;color:var(--g3);letter-spacing:.08em;text-transform:uppercase;pointer-events:none;transition:opacity .4s}
+  .dots{position:absolute;top:12px;right:14px;font-size:10px;color:var(--g4);letter-spacing:.1em}
+
+  /* score */
+  .scorebox{text-align:center;border:1px solid var(--line);border-radius:18px;padding:20px 16px;background:var(--panel);margin-top:8px}
+  .seedwrap{position:relative;width:120px;height:120px;margin:0 auto}
+  .seedwrap svg{position:absolute;inset:0}
+  .scoreNum{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .scoreNum b{font-size:42px;font-weight:800;letter-spacing:-.03em;line-height:1}
+  .scoreNum i{font-style:normal;font-size:10px;color:var(--g3);letter-spacing:.14em;text-transform:uppercase;margin-top:2px}
+  .scoreLabel{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-top:10px}
+  .conf{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--g4);border-radius:999px;padding:3px 9px;margin-top:8px;color:var(--g1)}
+  .meta{font-size:11px;color:var(--g3);margin-top:8px;line-height:1.7}
+  .meta b{color:var(--chalk)}
+  .deal{display:block;margin-top:14px;background:var(--chalk);color:var(--ink);text-decoration:none;font-weight:800;font-size:15px;padding:14px;border-radius:12px}
+  .dealnote{font-size:10px;color:var(--g3);margin-top:7px;letter-spacing:.04em}
+
+  .verdict{font-size:16px;line-height:1.5;color:var(--g1);margin:20px 0 0}
+
+  section{padding:24px 0;border-bottom:1px solid var(--line)}
+  .kick{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--g3);margin:0 0 16px}
+  .comp{display:grid;grid-template-columns:54px 1fr;gap:14px;padding:16px 0;border-top:1px solid var(--line)}
+  .comp:first-of-type{border-top:none}
+  .cnum{font-size:26px;font-weight:800;letter-spacing:-.02em}
+  .cwt{font-size:10px;color:var(--g3);font-weight:700;letter-spacing:.06em;margin-top:2px}
+  .ctitle{font-weight:800;font-size:15px;margin:0 0 3px}
+  .cdesc{color:var(--g2);font-size:13px;margin:0 0 11px;line-height:1.5}
+  .bars{display:flex;flex-direction:column;gap:7px}
+  .row{display:grid;grid-template-columns:120px 1fr 30px;align-items:center;gap:9px;font-size:12px;color:var(--g2)}
+  .track{height:6px;background:var(--panel2);border-radius:99px;overflow:hidden}
+  .fill{height:100%;background:var(--chalk);border-radius:99px}
+  .row b{text-align:right;color:var(--chalk);font-weight:700}
+  .src{display:flex;flex-wrap:wrap;gap:7px;margin-top:2px}
+  .chip{font-size:11px;color:var(--g2);border:1px solid var(--line);border-radius:8px;padding:6px 9px;background:var(--panel)}
+  .chip b{color:var(--chalk)}
+  .spark{display:flex;align-items:flex-end;gap:3px;height:40px;margin-top:8px}
+  .spark i{flex:1;background:var(--g4);border-radius:2px 2px 0 0}
+  .spark i.low{background:var(--chalk)}
+
+  .pc{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .pc h4{font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin:0 0 9px;color:var(--g2)}
+  .pc ul{margin:0;padding:0;list-style:none;font-size:13px;color:var(--g1);line-height:1.7}
+  .pc li{padding-left:18px;position:relative}
+  .pc li:before{position:absolute;left:0;font-weight:800}
+  .pros li:before{content:"+"}.cons li:before{content:"–";color:var(--g3)}
+
+  .who div{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--panel);margin-bottom:12px}
+  .who h4{margin:0 0 7px;font-size:14px}
+  .who p{margin:0;color:var(--g2);font-size:13px;line-height:1.55}
+
+  .disc{font-size:12px;color:var(--g3);line-height:1.6;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px}
+  .disc b{color:var(--chalk)}
+  footer{padding:22px 0 50px;color:var(--g3);font-size:11px;line-height:1.8}
+  footer a{font-weight:700;color:var(--g2);text-decoration:none}
+</style>
+</head>
+<body>
+  <div class="sample">Sample mockup · dark mode · drag the ring to spin</div>
+
+  <header>
+    <div class="wrap bar">
+      <div class="logo">sqwod<span>.life</span></div>
+      <div class="menu">☰ Sqwod Verified</div>
+      <div class="lang"><b>EN</b> · DE</div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="crumb">Verified / Wearables / Recovery</div>
+    <span class="verified-tag">◈ Sqwod Verified</span>
+    <h1>Oura Ring Gen3</h1>
+    <p class="sub">Recovery &amp; sleep tracker · Smart ring · €299–€349</p>
+
+    <!-- 3D PRODUCT VIEWER -->
+    <div class="viewer" id="viewer">
+      <span class="dots">◈ 360°</span>
+      <span class="hint" id="hint">drag to spin · pinch / scroll to zoom</span>
+    </div>
+
+    <!-- SCORE -->
+    <div class="scorebox">
+      <div class="seedwrap">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <path d="M50 4 C70 22 78 30 96 50 C78 70 70 78 50 96 C30 78 22 70 4 50 C22 30 30 22 50 4 Z"
+                fill="none" stroke="var(--mark)" stroke-width="2.5"/>
+        </svg>
+        <div class="scoreNum"><b>89</b><i>/ 100</i></div>
+      </div>
+      <div class="scoreLabel">Sqwod Score</div>
+      <span class="conf">Confidence: High</span>
+      <div class="meta">from <b>24,800+</b> reviews across <b>7</b> platforms · Updated <b>14 Jun 2026</b></div>
+      <a class="deal" href="#">Best deal · €299 →</a>
+      <div class="dealnote">Anzeige / Affiliate · price as of 14 Jun 2026</div>
+    </div>
+
+    <p class="verdict">The most coach-trusted sleep and readiness tracker — discreet, accurate where it counts, and the recovery benchmark. The subscription is the catch.</p>
+
+    <section>
+      <p class="kick">How the 89 breaks down</p>
+      <div class="comp">
+        <div><div class="cnum">91</div><div class="cwt">CROWD · 45%</div></div>
+        <div>
+          <p class="ctitle">Crowd Signal</p>
+          <p class="cdesc">Real-user feedback, normalized, volume- &amp; recency-weighted, fake-review filtered.</p>
+          <div class="src">
+            <span class="chip">Amazon <b>4.4★</b></span><span class="chip">App Store <b>4.6★</b></span>
+            <span class="chip">Trustpilot <b>3.9★</b></span><span class="chip">Reddit <b>+72%</b></span>
+            <span class="chip">YouTube <b>+68%</b></span><span class="chip">Expert <b>8.7</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="comp">
+        <div><div class="cnum">86</div><div class="cwt">SQWOD · 40%</div></div>
+        <div>
+          <p class="ctitle">Sqwod Assessment</p>
+          <p class="cdesc">Our weighted scorecard — including how useful it is to a coach.</p>
+          <div class="bars">
+            <div class="row"><span>Accuracy</span><div class="track"><div class="fill" style="width:90%"></div></div><b>9.0</b></div>
+            <div class="row"><span>Value</span><div class="track"><div class="fill" style="width:72%"></div></div><b>7.2</b></div>
+            <div class="row"><span>Build</span><div class="track"><div class="fill" style="width:91%"></div></div><b>9.1</b></div>
+            <div class="row"><span>Experience</span><div class="track"><div class="fill" style="width:88%"></div></div><b>8.8</b></div>
+            <div class="row"><span>Coach fit</span><div class="track"><div class="fill" style="width:85%"></div></div><b>8.5</b></div>
+            <div class="row"><span>Support</span><div class="track"><div class="fill" style="width:80%"></div></div><b>8.0</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="comp">
+        <div><div class="cnum">78</div><div class="cwt">VALUE · 15%</div></div>
+        <div>
+          <p class="ctitle">Value / Deal</p>
+          <p class="cdesc">Best live price vs. benchmark + real price history. The €70/yr subscription weighs on it.</p>
+          <div class="src" style="margin-bottom:4px">
+            <span class="chip">Best <b>€299</b></span><span class="chip">90-day low <b>€289</b></span><span class="chip">Sub <b>€70/yr</b></span>
+          </div>
+          <div class="spark">
+            <i style="height:80%"></i><i style="height:78%"></i><i style="height:85%"></i><i style="height:70%"></i>
+            <i style="height:72%"></i><i class="low" style="height:62%"></i><i style="height:66%"></i><i style="height:64%"></i>
+            <i style="height:75%"></i><i style="height:68%"></i><i style="height:64%"></i><i style="height:66%"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="pc">
+        <div class="pros"><h4>Pros</h4><ul>
+          <li>Best-in-class sleep accuracy</li><li>Discreet on clients</li><li>7-day battery</li><li>Clean data export</li>
+        </ul></div>
+        <div class="cons"><h4>Cons</h4><ul>
+          <li>€70/yr subscription</li><li>No live workout HR</li><li>Sizing lead time</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section>
+      <p class="kick">Who it's for</p>
+      <div class="who">
+        <div><h4>Buy it if…</h4><p>You're a coach who programs around recovery and sleep, or you want the calmest readiness data to guide client load.</p></div>
+        <div><h4>Skip it if…</h4><p>You need live training HR and GPS — pair a chest strap or pick a sports watch. Or you won't pay a subscription.</p></div>
+      </div>
+    </section>
+
+    <section style="border-bottom:none">
+      <p class="kick">Transparency</p>
+      <div class="disc"><b>Anzeige / Affiliate.</b> We may earn a commission from links here. <b>It never affects the Sqwod Score</b> — scores are set by the methodology, not commission. See the full formula &amp; every source on the <b>methodology</b> page.</div>
+    </section>
+
+    <footer>
+      ◈ Sqwod Verified · Score recomputed as new reviews &amp; prices arrive.<br>
+      <a href="#">Methodology</a> · <a href="#">Disclosure</a> · <a href="#">Impressum</a>
+    </footer>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  var mount = document.getElementById('viewer');
+  if(!window.THREE){ mount.innerHTML += '<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#85858e;font-size:12px">3D preview needs an internet connection</div>'; return; }
+
+  var W = mount.clientWidth, H = mount.clientHeight;
+  var scene = new THREE.Scene();
+  var camera = new THREE.PerspectiveCamera(40, W/H, 0.1, 100);
+  camera.position.set(0, 0, 6);
+
+  var renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(W, H);
+  mount.appendChild(renderer.domElement);
+
+  // Ring = torus (chunky, like a smart ring)
+  var group = new THREE.Group();
+  var geo = new THREE.TorusGeometry(1.5, 0.55, 64, 160);
+  var mat = new THREE.MeshStandardMaterial({ color:0xf2f2f4, metalness:0.95, roughness:0.28 });
+  var ring = new THREE.Mesh(geo, mat);
+  group.add(ring);
+
+  // subtle inner sensor band (matte) to read as a real device
+  var bandGeo = new THREE.TorusGeometry(1.5, 0.40, 48, 160);
+  var bandMat = new THREE.MeshStandardMaterial({ color:0x0e0e10, metalness:0.4, roughness:0.7 });
+  var band = new THREE.Mesh(bandGeo, bandMat);
+  band.scale.set(1,1,0.55);
+  group.add(band);
+  scene.add(group);
+  group.rotation.x = 0.6;
+
+  // lights — monochrome metallic highlights
+  scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+  var key = new THREE.DirectionalLight(0xffffff, 1.1); key.position.set(3,4,5); scene.add(key);
+  var rim = new THREE.DirectionalLight(0xffffff, 0.6); rim.position.set(-4,-2,-3); scene.add(rim);
+  var top = new THREE.PointLight(0xffffff, 0.5); top.position.set(0,5,2); scene.add(top);
+
+  // interaction: drag to spin (mouse + touch via pointer events), auto-rotate when idle
+  var dragging=false, lastX=0, lastY=0, autoV=0.006, idle=true, hideHint=false;
+  var hint=document.getElementById('hint');
+  function down(e){ dragging=true; idle=false; mount.classList.add('drag'); var p=pt(e); lastX=p.x; lastY=p.y;
+    if(!hideHint){ hint.style.opacity=0; hideHint=true; } }
+  function move(e){ if(!dragging) return; var p=pt(e);
+    group.rotation.y += (p.x-lastX)*0.01; group.rotation.x += (p.y-lastY)*0.01; lastX=p.x; lastY=p.y; }
+  function up(){ dragging=false; mount.classList.remove('drag'); setTimeout(function(){idle=true;}, 1500); }
+  function pt(e){ if(e.touches&&e.touches[0]) return {x:e.touches[0].clientX,y:e.touches[0].clientY}; return {x:e.clientX,y:e.clientY}; }
+
+  mount.addEventListener('pointerdown', down);
+  window.addEventListener('pointermove', move);
+  window.addEventListener('pointerup', up);
+  // zoom
+  mount.addEventListener('wheel', function(e){ e.preventDefault(); camera.position.z = Math.max(4, Math.min(9, camera.position.z + (e.deltaY>0?0.4:-0.4))); }, {passive:false});
+  // pinch
+  var pinchD=0;
+  mount.addEventListener('touchmove', function(e){ if(e.touches.length===2){ e.preventDefault();
+    var dx=e.touches[0].clientX-e.touches[1].clientX, dy=e.touches[0].clientY-e.touches[1].clientY, d=Math.hypot(dx,dy);
+    if(pinchD){ camera.position.z = Math.max(4, Math.min(9, camera.position.z + (pinchD-d)*0.01)); } pinchD=d; } }, {passive:false});
+  mount.addEventListener('touchend', function(){ pinchD=0; });
+
+  function resize(){ W=mount.clientWidth; H=mount.clientHeight; camera.aspect=W/H; camera.updateProjectionMatrix(); renderer.setSize(W,H); }
+  window.addEventListener('resize', resize);
+
+  (function loop(){ requestAnimationFrame(loop); if(idle && !dragging){ group.rotation.y += autoV; } renderer.render(scene,camera); })();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sqwod Daily — motion email mockup (v3, topical imagery)</title>
+<style>
+  body{margin:0;background:#000;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .frame{max-width:680px;margin:0 auto}
+  .note{background:#FAFAFA;color:#0e0e10;font-size:11px;line-height:1.5;letter-spacing:.02em;text-align:center;padding:9px 14px}
+  .note b{font-weight:800}
+  a{text-decoration:none}
+
+  /* hero — the product (wearables → ring) */
+  .hero{background:radial-gradient(120% 120% at 50% 0%, #21242a 0%, #0e0e10 70%);padding:30px 26px 34px;text-align:center;border-radius:20px 20px 0 0}
+  .masthead{display:flex;justify-content:space-between;align-items:center}
+  .logo{font-size:20px;font-weight:800;letter-spacing:-.02em;color:#FAFAFA}
+  .logo span{color:#85858e}
+  .tagchip{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#85858e;border:1px solid #3a3a40;border-radius:999px;padding:5px 10px}
+  .date{margin-top:18px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#85858e}
+  .ringstage{position:relative;width:190px;height:190px;margin:14px auto 6px}
+  .ring{position:absolute;inset:0;border-radius:50%;
+    background:conic-gradient(from 0deg,#3a3a40,#e9e9ee,#9a9aa2,#fafafa,#6a6a72,#e9e9ee,#3a3a40);
+    -webkit-mask:radial-gradient(circle,transparent 38%,#000 39%);mask:radial-gradient(circle,transparent 38%,#000 39%);
+    box-shadow:0 18px 50px rgba(0,0,0,.6);animation:spin 5.5s linear infinite}
+  .ring::after{content:"";position:absolute;inset:14%;border-radius:50%;
+    background:conic-gradient(from 180deg,#26262c,#0e0e10,#2c2c34,#0e0e10);
+    -webkit-mask:radial-gradient(circle,transparent 44%,#000 45%);mask:radial-gradient(circle,transparent 44%,#000 45%)}
+  .glint{position:absolute;inset:0;border-radius:50%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);animation:glint 3.2s ease-in-out infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes glint{0%,100%{opacity:0;transform:translateX(-30%)}50%{opacity:.9;transform:translateX(30%)}}
+  .spinlabel{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#6a6a72}
+  .heroh{margin:8px 0 6px;font-size:30px;line-height:1.12;letter-spacing:-.025em;color:#FAFAFA;font-weight:800}
+  .herod{font-size:15px;line-height:1.55;color:#b8b8c0;max-width:40ch;margin:0 auto 18px}
+  .btn{display:inline-block;background:#FAFAFA;color:#0e0e10;font-weight:800;font-size:14px;padding:13px 22px;border-radius:100px}
+  .intro{font-size:15px;line-height:1.55;color:#ededf0;padding:22px 26px 4px;text-align:center}
+  .card{background:#0e0e10;border:1px solid #2a2a30}
+
+  /* tiles */
+  .tiles{padding:14px 16px 4px}
+  .tile{display:block;border:1px solid #2a2a30;border-radius:16px;overflow:hidden;margin:12px 0;background:#121216}
+  .thumb{position:relative;height:160px;overflow:hidden;background:radial-gradient(130% 130% at 30% 15%,#23232a,#0e0e10);display:flex;align-items:center;justify-content:center}
+  .imgtag{position:absolute;left:12px;top:12px;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#6a6a72;border:1px solid #2a2a30;border-radius:6px;padding:3px 7px}
+
+  /* product ring (small) */
+  .seedring{width:96px;height:96px;border-radius:50%;
+    background:conic-gradient(from 0deg,#3a3a40,#e9e9ee,#7a7a82,#fafafa,#3a3a40);
+    -webkit-mask:radial-gradient(circle,transparent 40%,#000 41%);mask:radial-gradient(circle,transparent 40%,#000 41%);
+    animation:spin 7s linear infinite}
+  .badge{position:absolute;right:12px;bottom:12px;width:52px;height:52px}
+  .badge svg{width:100%;height:100%}
+  .badge b{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#FAFAFA;font-weight:800;font-size:17px}
+
+  /* topical chart: churn line that draws itself */
+  .chart{width:86%;height:118px}
+  .chart .bignum{position:absolute;right:16px;top:8px;font-size:46px;font-weight:800;color:#ffffff;opacity:.08;letter-spacing:-.03em}
+  .chart svg{width:100%;height:100%;overflow:visible}
+  .chart .grid{stroke:#23232a;stroke-width:1}
+  .chart .line{fill:none;stroke:#FAFAFA;stroke-width:2.5;stroke-linecap:round;
+    stroke-dasharray:600;stroke-dashoffset:600;animation:draw 4s ease-in-out infinite alternate}
+  .chart .dot{fill:#FAFAFA;opacity:0;animation:pop 4s ease-in-out infinite alternate}
+  @keyframes draw{to{stroke-dashoffset:0}}
+  @keyframes pop{0%,60%{opacity:0}80%,100%{opacity:1}}
+
+  /* topical bars: recovery spend rising */
+  .bars{display:flex;align-items:flex-end;gap:9px;height:120px;width:78%}
+  .bars i{flex:1;background:linear-gradient(180deg,#fafafa,#5a5a62);border-radius:3px 3px 0 0;transform-origin:bottom;animation:grow 3.2s ease-in-out infinite}
+  .bars i:nth-child(1){animation-delay:0s}.bars i:nth-child(2){animation-delay:.12s}
+  .bars i:nth-child(3){animation-delay:.24s}.bars i:nth-child(4){animation-delay:.36s}
+  .bars i:nth-child(5){animation-delay:.48s}.bars i:nth-child(6){animation-delay:.6s}
+  @keyframes grow{0%{transform:scaleY(.15)}50%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+  .barnum{position:absolute;left:16px;bottom:12px;font-size:13px;font-weight:800;color:#FAFAFA}
+
+  .tilebody{padding:16px 18px 18px}
+  .pill{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#85858e}
+  .tileh{margin:7px 0 5px;font-size:19px;line-height:1.22;letter-spacing:-.02em;color:#FAFAFA;font-weight:800}
+  .tiled{font-size:14px;line-height:1.5;color:#b8b8c0;margin:0 0 10px}
+  .link{font-size:13px;font-weight:700;color:#FAFAFA;border-bottom:1px solid #52525a;padding-bottom:2px}
+  .price{color:#FAFAFA;font-weight:800}
+
+  .sponsor{margin:14px 16px;border:1px solid #2a2a30;border-radius:12px;background:#161619;padding:16px 18px}
+  .sponsor .pill{color:#85858e}
+  .sponsor p{margin:6px 0 0;font-size:14px;line-height:1.5;color:#ededf0}
+  .sponsor a{color:#FAFAFA;text-decoration:underline}
+
+  .foot{background:#000;padding:26px 26px 40px;text-align:center}
+  .foot .sub{font-size:18px;font-weight:600;color:#FAFAFA;margin-bottom:14px}
+  .socials a{display:inline-block;width:34px;height:34px;line-height:34px;border:1px solid #2a2a30;border-radius:50%;color:#b8b8c0;font-size:12px;font-weight:700;margin:0 4px}
+  .legal{margin-top:18px;font-size:11px;line-height:1.7;color:#6a6a72}
+  .legal a{color:#85858e;font-weight:700}
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="note"><b>Browser preview — motion is live via CSS.</b> Each image is now topical: <b>the product</b> for reviews, <b>the story's own chart</b> for data. In inboxes these ship as optimized GIFs auto-rendered per item. Sample data.</div>
+
+    <!-- HERO: wearables → the product -->
+    <div class="hero">
+      <div class="masthead">
+        <div class="logo">sqwod<span>.life</span></div>
+        <div class="tagchip">Sqwod Daily</div>
+      </div>
+      <div class="date">Wednesday · 17 June 2026</div>
+      <div class="ringstage"><div class="ring"></div><div class="glint"></div></div>
+      <div class="spinlabel">◈ Oura Ring · 360° · ships as GIF</div>
+      <h1 class="heroh">Wearables cross €84bn</h1>
+      <p class="herod">Rings are the fastest-growing slice, up 31% YoY. Recovery data just went mainstream — your clients already wear it.</p>
+      <a class="btn" href="#">Read the breakdown →</a>
+    </div>
+
+    <div class="card">
+      <p class="intro">Three reps for today — and where to go deeper.</p>
+
+      <div class="tiles">
+
+        <!-- PRODUCT → the product itself -->
+        <a class="tile" href="#">
+          <div class="thumb">
+            <span class="imgtag">Product · 360°</span>
+            <div class="seedring"></div>
+            <div class="badge">
+              <svg viewBox="0 0 100 100"><path d="M50 5 C70 23 77 30 95 50 C77 70 70 77 50 95 C30 77 23 70 5 50 C23 30 30 23 50 5 Z" fill="none" stroke="#FAFAFA" stroke-width="3"/></svg>
+              <b>89</b>
+            </div>
+          </div>
+          <div class="tilebody">
+            <span class="pill">Sqwod Verified · Product</span>
+            <div class="tileh">Oura Ring Gen3 — the recovery benchmark</div>
+            <p class="tiled">Best-in-class sleep accuracy, discreet on clients. Best deal <span class="price">€299</span>.</p>
+            <span class="link">See the Sqwod Score →</span>
+          </div>
+        </a>
+
+        <!-- ARTICLE → its own chart (retention/churn curve) -->
+        <a class="tile" href="#">
+          <div class="thumb">
+            <span class="imgtag">Chart · Retention</span>
+            <div class="bignum">8.5%</div>
+            <div class="chart">
+              <svg viewBox="0 0 280 118" preserveAspectRatio="none">
+                <line class="grid" x1="0" y1="30" x2="280" y2="30"></line>
+                <line class="grid" x1="0" y1="60" x2="280" y2="60"></line>
+                <line class="grid" x1="0" y1="90" x2="280" y2="90"></line>
+                <!-- cohort decay then recovery after the 'first 30 days' fix -->
+                <path class="line" d="M4 24 L50 40 L96 64 L142 86 L170 80 L210 54 L256 30"></path>
+                <circle class="dot" cx="142" cy="86" r="4"></circle>
+                <circle class="dot" cx="256" cy="30" r="4"></circle>
+              </svg>
+            </div>
+          </div>
+          <div class="tilebody">
+            <span class="pill">Coaching &amp; Studio · Analysis</span>
+            <div class="tileh">The 8.5% that decides if your studio survives</div>
+            <p class="tiled">Boutique churn runs ~8.5%/month and acquiring costs 6x retaining. The fix is the first 30 days.</p>
+            <span class="link">Read the playbook →</span>
+          </div>
+        </a>
+
+        <!-- TREND → its own chart (rising recovery spend) -->
+        <a class="tile" href="#">
+          <div class="thumb">
+            <span class="imgtag">Chart · Trend</span>
+            <span class="barnum">Recovery spend ↑ 22%</span>
+            <div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="tilebody">
+            <span class="pill">Wellness Culture · Trend</span>
+            <div class="tileh">Recovery is eating the supplement aisle</div>
+            <p class="tiled">Recovery spend up 22%; 41% now track sleep. 2026 is the business of resting better.</p>
+            <span class="link">See the trend →</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="sponsor">
+        <span class="pill">Presented by · Anzeige</span>
+        <p><b style="color:#FAFAFA">Your brand here.</b> One native slot per issue, in front of wellness operators who buy. <a href="#">Sponsor Sqwod Daily →</a></p>
+      </div>
+    </div>
+
+    <div class="foot">
+      <div class="sub">One rep a day. ◈</div>
+      <div class="socials"><a href="#">IG</a><a href="#">YT</a><a href="#">X</a><a href="#">TT</a></div>
+      <div class="legal">
+        ◈ Sqwod Daily — strategic intelligence for the people who run wellness.<br>
+        You subscribed at sqwod.life · <a href="#">Unsubscribe</a> · <a href="#">Preferences</a> · <a href="#">Deutsch</a><br>
+        Sqwod · [street address], Berlin, Germany · <a href="#">Impressum</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

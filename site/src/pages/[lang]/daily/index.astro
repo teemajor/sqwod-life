@@ -1,0 +1,71 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { languages, t, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+
+const issues = (await getCollection('daily', (i) => i.data.lang === lang))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const latest = issues[0];
+const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+const epLine = (iss: typeof issues[number]) => iss.data.summary || iss.data.items.map((i) => i.headline).join(' · ');
+const blurb = lang === 'de'
+  ? 'Dein 5-Minuten-Audio-Rundown der Wellness-Branche — jeden Werktag, auf EN & DE.'
+  : 'Your 5-minute audio rundown of the wellness industry — every weekday, in EN & DE.';
+---
+<Base lang={lang} title={lang==='de'?'Sqwod Daily — täglicher Audio-Brief':'Sqwod Daily — daily audio brief'} description={blurb} active="daily">
+  <div class="crumb">Sqwod Daily</div>
+
+  <div class="audio-hero">
+    <button class="audio-play" aria-label="Play episode"><span class="ring"></span><span class="tri"></span></button>
+    <div class="audio-meta">
+      <h1 style="margin:0 0 6px">Sqwod Daily</h1>
+      <p class="sub" style="margin:0 0 12px">{blurb}</p>
+      <div class="listen">
+        <span class="ll">{lang==='de'?'Hören auf':'Listen on'}:</span>
+        <a class="lp" href="#">Apple&nbsp;Podcasts</a>
+        <a class="lp" href="#">Spotify</a>
+        <a class="lp sub-cta" href={`/${lang}/subscribe`}>{lang==='de'?'Per E-Mail':'By email'}</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+    <p class="kick">{lang==='de'?'Alle Folgen':'All episodes'}</p>
+    <div class="ep-list">
+      {issues.map((iss) => (
+        <a class="ep-row" href={`/${lang}/daily/${iss.data.urlSlug}`}>
+          <span class="ep-date">{fmt(iss.data.date)}</span>
+          <span class="ep-title">
+            {epLine(iss)}
+            {iss.data.status !== 'published' && <span class="ep-draft">{lang==='de'?'Entwurf':'Draft'}</span>}
+          </span>
+          <span class="ep-dur"><span class="ep-play">▶</span>{iss.data.duration ?? '—'}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {!latest && <p class="sub">{lang==='de'?'Noch keine Folge.':'No episodes yet.'}</p>}
+</Base>
+
+<style>
+  .ep-list{border-top:1px solid var(--line)}
+  .ep-row{display:grid;grid-template-columns:130px 1fr auto;gap:18px;align-items:center;
+    padding:18px 6px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s ease}
+  .ep-row:hover{background:var(--panel)}
+  .ep-date{font-size:12px;letter-spacing:.04em;color:var(--g3);font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
+  .ep-title{font-size:16px;font-weight:700;color:var(--chalk);line-height:1.3}
+  .ep-draft{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--g3);border-radius:4px;padding:2px 6px;margin-left:8px;vertical-align:middle}
+  .ep-dur{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--g2);font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
+  .ep-play{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--line);border-radius:50%;font-size:9px;color:var(--chalk);padding-left:2px}
+  .ep-row:hover .ep-play{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
+  @media(max-width:600px){
+    .ep-row{grid-template-columns:1fr auto;gap:6px 12px}
+    .ep-date{grid-column:1 / -1;order:-1}
+  }
+</style>
