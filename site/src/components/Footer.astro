@@ -5,10 +5,24 @@ const { lang } = Astro.props;
 ---
 <footer class="site">
   <div class="wrap">
-    ◈ Sqwod Verified · {lang === 'de' ? 'Score wird mit neuen Bewertungen & Preisen neu berechnet.' : 'Score recomputed as new reviews & prices arrive.'}<br>
-    <a href={`/${lang}/verified/methodology`}>{lang==='de'?'Methodik':'Methodology'}</a> ·
-    <a href={`/${lang}/verified/disclosure`}>{lang==='de'?'Transparenz':'Disclosure'}</a> ·
-    <a href={`/${lang}/impressum`}>Impressum</a> ·
-    <a href={`/${lang}/datenschutz`}>{lang==='de'?'Datenschutz':'Privacy'}</a>
+    <a href={`/${lang}/`} class="foot-logo"><img src="/sqwod-white.png" alt="Sqwod" width="84" height="22" /><span>.life</span></a>
+    <p class="foot-tag">{lang === 'de' ? 'Dein Vorsprung im Fitness-Business.' : 'Your edge in the business of fitness.'}</p>
+    <p class="foot-links">
+      <a href={`/${lang}/verified/methodology`}>{lang==='de'?'Methodik':'Methodology'}</a> ·
+      <a href={`/${lang}/verified/disclosure`}>{lang==='de'?'Transparenz':'Disclosure'}</a> ·
+      <a href={`/${lang}/about`}>{lang==='de'?'Über uns':'About'}</a> ·
+      <a href={`/${lang}/impressum`}>Impressum</a> ·
+      <a href={`/${lang}/datenschutz`}>{lang==='de'?'Datenschutz':'Privacy'}</a>
+    </p>
   </div>
 </footer>
+
+<style>
+  .foot-logo{display:inline-flex;align-items:center;gap:1px;font-weight:800;font-size:20px;letter-spacing:-.02em;text-decoration:none;color:var(--chalk)}
+  .foot-logo img{height:18px;width:auto;display:block;opacity:.9}
+  .foot-logo span{color:var(--g3)}
+  .foot-tag{margin:10px 0 0;color:var(--g2);font-size:13px}
+  .foot-links{margin:14px 0 0}
+  .foot-links a{color:var(--g3);font-weight:700;text-decoration:none}
+  .foot-links a:hover{color:var(--g1)}
+</style>
