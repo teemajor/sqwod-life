@@ -18,6 +18,12 @@ infrastructure/.env
 sqwod-site.zip
 zilTa9dB
 
+# internal working material — keep OUT of the public repo
+SqwodLife_*.md
+SqwodLife_*.html
+SqwodPod_*
+site-preview/
+
 # os / editor
 .DS_Store
 *.log
