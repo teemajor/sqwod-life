@@ -12,6 +12,6 @@ const { entry } = Astro.props;
 const lang = Astro.params.lang as Lang;
 const label = entry.data.format === 'field-note' ? 'Field Notes' : 'Analysis';
 ---
-<Base lang={lang} title={`${entry.data.title} — sqwod.life`} description={entry.data.description} active="articles">
+<Base lang={lang} title={`${entry.data.title} — Sqwod`} description={entry.data.description} active="articles">
   <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel={label} /></div>
 </Base>

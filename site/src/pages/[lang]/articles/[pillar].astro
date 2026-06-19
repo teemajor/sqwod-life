@@ -23,7 +23,7 @@ const articleHref = (a: typeof articles[number]) =>
     : `/${lang}/analysis/${a.data.urlSlug}`;
 const fmtLabel = (f: string) => f === 'report' ? 'Report' : f === 'index' ? 'Index' : f === 'field-note' ? 'Field Note' : 'Analysis';
 ---
-<Base lang={lang} title={`${meta.label[lang]} — sqwod.life`} description={meta.desc[lang]} active="articles">
+<Base lang={lang} title={`${meta.label[lang]} — Sqwod`} description={meta.desc[lang]} active="articles">
   <div class="crumb">{t(lang,'nav.articles')} / {meta.label[lang]}</div>
   <div style="display:flex;gap:16px;align-items:center;margin-top:6px">
     <PillarIcon pillar={pillar} size={60} />
