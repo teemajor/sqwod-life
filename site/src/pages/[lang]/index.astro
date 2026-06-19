@@ -9,16 +9,16 @@ export function getStaticPaths() {
 }
 const lang = Astro.params.lang as Lang;
 const title = lang === 'de'
-  ? 'sqwod.life — strategische Intelligenz für die Wellness-Branche'
-  : 'sqwod.life — strategic intelligence for the people who run wellness';
+  ? 'sqwod.life — dein Vorsprung im Fitness-Business'
+  : 'sqwod.life — your edge in the business of fitness';
 const tagline = lang === 'de'
-  ? 'Wir lesen die ganze Branche und geben dir die Version, die ändert, was du am Montag tust.'
-  : 'We read the whole industry and hand you the version that changes what you do on Monday.';
+  ? 'Insider-Wissen, ehrliche Gear-Tests und Wachstums-Playbooks für die Coaches, Creator und Gründer:innen, die die großen Plattformen übersehen.'
+  : 'Insider intelligence, honest gear reviews, and growth playbooks for the coaches, creators, and founders the big platforms overlook.';
 ---
 <Base lang={lang} title={title} description={tagline} active="">
   <div class="hero-split">
     <div class="ht reveal">
-      <h1>{lang==='de'?'Strategische Intelligenz für die, die Wellness betreiben.':'Strategic intelligence for the people who run wellness.'}</h1>
+      <h1>{lang==='de'?'Dein Vorsprung im Fitness-Business.':'Your edge in the business of fitness.'}</h1>
       <p class="sub">{tagline}</p>
       <div class="ctarow">
         <a class="cta" href={`/${lang}/verified`}>{t(lang,'nav.verified')} →</a>

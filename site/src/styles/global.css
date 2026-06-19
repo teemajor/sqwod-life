@@ -17,7 +17,8 @@ img{max-width:100%}
 /* header */
 header.site{border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:58px;gap:14px}
-.logo{font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none}
+.logo{display:inline-flex;align-items:center;gap:1px;font-weight:800;font-size:19px;letter-spacing:-.02em;text-decoration:none;color:var(--chalk)}
+.logo .logo-mark{height:17px;width:auto;display:block}
 .logo span{color:var(--g3)}
 nav.main{display:flex;gap:18px;font-size:13px;color:var(--g2);font-weight:600;flex-wrap:wrap}
 nav.main a{text-decoration:none}
