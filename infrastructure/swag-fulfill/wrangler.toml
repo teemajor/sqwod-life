@@ -1,0 +1,13 @@
+name = "sqwod-swag-fulfill"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+[vars]
+SHOPIFY_STORE = "sqwodpod.myshopify.com"
+# milestone (referral count) → Shopify variant id (defaults: sticker / tee-M / hoodie-M).
+# Created as DRAFT products — link them in Printful, then set live + adjust size handling.
+REWARDS_JSON = "{\"3\":\"54136504811853\",\"10\":\"54136503763277\",\"25\":\"54136503894349\"}"
+
+# Secrets (not stored here):
+#   wrangler secret put SHOPIFY_ADMIN_TOKEN
+#   wrangler secret put BEEHIIV_WEBHOOK_SECRET

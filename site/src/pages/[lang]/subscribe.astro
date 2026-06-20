@@ -1,20 +1,62 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { languages, type Lang } from '../../i18n/ui';
-export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+import { BEEHIIV } from '../../config/beehiiv';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
 const lang = Astro.params.lang as Lang;
+const c = lang === 'de' ? {
+  title: 'Werde schärfer — in 5 Minuten am Tag',
+  blurb: 'Sqwod Daily: das Business von Fitness und Wellness, werktäglich aufbereitet — Geldbewegungen, die Lektion hinter den News, ein To-do, etwas Unterhaltung. Kostenlos.',
+  perks: ['Werktäglich, zweisprachig (EN & DE)', 'Geldbewegungen, Politik-Radar & Stats', 'Ein umsetzbarer Tipp pro Ausgabe', 'Empfiehl uns weiter, hol dir Sqwod-Swag'],
+  email: 'E-Mail-Adresse', cta: 'Kostenlos abonnieren', soon: 'Anmeldung wird in Kürze aktiviert.',
+  fine: 'Mit der Anmeldung akzeptierst du unsere Datenschutzbestimmungen. Double-Opt-in, jederzeit abbestellbar.',
+} : {
+  title: 'Get sharper in 5 minutes a day',
+  blurb: 'Sqwod Daily: the business of fitness and wellness, decoded every weekday — money movement, the lesson behind the news, one thing to do, a little fun. Free.',
+  perks: ['Every weekday, bilingual (EN & DE)', 'Money movement, policy watch & stats', 'One actionable takeaway per issue', 'Refer friends, earn Sqwod swag'],
+  email: 'Email address', cta: 'Subscribe free', soon: 'Sign-up goes live shortly.',
+  fine: 'By subscribing you accept our privacy policy. Double opt-in, unsubscribe anytime.',
+};
 ---
-<Base lang={lang} title="Subscribe — Sqwod" active="">
-  <div class="measure" style="text-align:center;padding:36px 0">
-    <div class="heromotif" style="margin:0 auto 18px"><div class="ring"></div><div class="glint"></div><div class="seedmark"></div></div>
-    <h1>{lang==='de'?'Werde Teil des Sqwod.':'Join the Sqwod.'}</h1>
-    <p class="sub" style="max-width:44ch;margin:8px auto 20px">{lang==='de'
-      ? 'Sqwod Daily plus die wichtigsten Reports — kostenlos, auf EN & DE. Ein Rep pro Tag.'
-      : 'Sqwod Daily plus the reports that matter — free, in EN & DE. One rep a day.'}</p>
-    <div style="display:flex;gap:8px;max-width:420px;margin:0 auto;flex-wrap:wrap;justify-content:center">
-      <input type="email" placeholder={lang==='de'?'deine@email.de':'you@email.com'} style="flex:1;min-width:200px;background:var(--panel);border:1px solid var(--line);color:var(--chalk);border-radius:10px;padding:13px 14px;font-size:15px" />
-      <button class="cta" style="border:none;cursor:pointer">{lang==='de'?'Abonnieren':'Subscribe'}</button>
+<Base lang={lang} title={c.title + ' — Sqwod'} description={c.blurb} active="">
+  <div class="sub-hero">
+    <div class="sh-copy">
+      <h1>{c.title}</h1>
+      <p class="sub">{c.blurb}</p>
+      <ul class="perks">{c.perks.map((p) => <li>{p}</li>)}</ul>
     </div>
-    <p class="dealnote" style="margin-top:12px">{lang==='de'?'Double-Opt-in · jederzeit abbestellbar · DSGVO-konform':'Double opt-in · unsubscribe anytime · GDPR-compliant'}</p>
+    <div class="sh-form">
+      {BEEHIIV.embedUrl ? (
+        <iframe src={BEEHIIV.embedUrl} title="Subscribe to Sqwod Daily" scrolling="no"
+          style="width:100%;height:340px;border:0;border-radius:14px;background:transparent"></iframe>
+      ) : (
+        <form class="bform" method="get" action={BEEHIIV.subscribeUrl || '#'}>
+          <label>{c.email}<input type="email" name="email" required placeholder="you@studio.com" /></label>
+          <button class="cta" type="submit" disabled={!BEEHIIV.subscribeUrl}>{c.cta}</button>
+          {!BEEHIIV.subscribeUrl && <p class="note">{c.soon}</p>}
+          <p class="fine">{c.fine}</p>
+        </form>
+      )}
+    </div>
   </div>
 </Base>
+
+<style>
+  .sub-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:10px 0 8px}
+  .sh-copy h1{font-size:clamp(28px,4.5vw,40px);letter-spacing:-.02em;line-height:1.05;margin:0 0 12px}
+  .perks{list-style:none;margin:18px 0 0;padding:0}
+  .perks li{position:relative;padding-left:24px;margin:0 0 10px;color:var(--g1);font-size:15px}
+  .perks li::before{content:"✓";position:absolute;left:0;color:var(--chalk);font-weight:800}
+  .sh-form{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,var(--panel),transparent)}
+  .bform{display:flex;flex-direction:column;gap:14px}
+  .bform label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--g3)}
+  .bform input{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 14px;color:var(--chalk);font:inherit;text-transform:none;letter-spacing:0}
+  .bform input:focus{outline:none;border-color:var(--chalk)}
+  .bform .cta[disabled]{opacity:.5;cursor:not-allowed}
+  .note{font-size:13px;color:var(--g2);margin:0}
+  .fine{font-size:11.5px;color:var(--g4);line-height:1.5;margin:4px 0 0}
+  @media(max-width:680px){.sub-hero{grid-template-columns:1fr;gap:22px}}
+</style>

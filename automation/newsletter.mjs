@@ -69,15 +69,24 @@ function render(iss, lang) {
   const niceDate = new Date(date + 'T06:00:00Z').toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
   const epUrl = `${SITE}/${lang}/daily/${date}`;
 
-  // MONEY MOVEMENT (table)
+  // MONEY MOVEMENT — bold, scannable callouts (colored badge + arrow + big amount)
+  const kindStyle = (k) => ({
+    raise: { bg: UP, ar: '▲' }, ipo: { bg: UP, ar: '▲' },
+    valuation: { bg: '#2f5fb0', ar: '▲' }, acquisition: { bg: INK, ar: '⇄' },
+    shutdown: { bg: DOWN, ar: '▼' },
+  }[k] || { bg: INK, ar: '•' });
   const money = (iss.moneyMoves || []).length ? card(label(tx.money, 'line-trend.gif') +
-    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">` +
-    iss.moneyMoves.map((m) => `<tr>
-        <td style="padding:11px 0;border-top:1px solid ${LINE};font:800 14px/1.3 ${F};color:${INK};width:42%;">${esc(m.entity)}</td>
-        <td style="padding:11px 0;border-top:1px solid ${LINE};font:700 11px/1 ${F};letter-spacing:.08em;text-transform:uppercase;color:${m.kind === 'shutdown' ? DOWN : UP};">${esc(tx.kinds[m.kind] || m.kind)}</td>
-        <td style="padding:11px 0;border-top:1px solid ${LINE};font:800 14px/1.3 ${F};color:${INK};text-align:right;">${esc(m.amount || '')}</td>
-      </tr>${m.note ? `<tr><td colspan="3" style="padding:0 0 8px;font:400 13px/1.5 ${F};color:${G2};">${esc(m.note)}${m.url ? ` <a href="${esc(m.url)}" style="color:${G4};">→</a>` : ''}</td></tr>` : ''}`).join('') +
-    `</table>`) : '';
+    iss.moneyMoves.map((m, i) => {
+      const ks = kindStyle(m.kind);
+      const pill = `<span style="display:inline-block;font:800 10px/1 ${F};letter-spacing:.1em;text-transform:uppercase;color:#fff;background:${ks.bg};border-radius:999px;padding:6px 11px;">${ks.ar}&nbsp; ${esc(tx.kinds[m.kind] || m.kind)}</span>`;
+      return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:15px 0;${i ? `border-top:1px solid ${LINE};` : ''}">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+          <td valign="top">${pill}<div style="font:800 17px/1.2 ${F};color:${INK};margin-top:9px;letter-spacing:-.01em;">${esc(m.entity)}</div></td>
+          <td align="right" valign="top" style="font:900 24px/1 ${F};letter-spacing:-.02em;color:${INK};white-space:nowrap;padding-left:10px;">${esc(m.amount || '—')}</td>
+        </tr></table>
+        ${m.note ? `<div style="font:400 13.5px/1.5 ${F};color:${G2};margin-top:8px;">${esc(m.note)}${m.url ? ` <a href="${esc(m.url)}" style="color:${G4};text-decoration:none;">&rarr;</a>` : ''}</div>` : ''}
+      </td></tr></table>`;
+    }).join('')) : '';
 
   // CONNECT THE DOTS (hero image + teach)
   const cd = iss.connectDots && iss.connectDots.title;
@@ -135,13 +144,22 @@ function render(iss, lang) {
     `<div style="font:400 15.5px/1.7 ${F};color:${G1};">${esc(iss.meanwhile)}${iss.meanwhileUrl ? ` <a href="${esc(iss.meanwhileUrl)}" style="color:${G4};">→</a>` : ''}</div>`) : '';
 
   // SHARE / referral
+  // beehiiv referral merge tags: {{rp_refer_url}} = personal link, {{rp_personalized_text}} = progress toward next reward.
   const share = card(label(tx.share, 'hero-bars.gif') +
-    `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:14px;">${tx.shareBody}</div>` +
-    `<div style="font:800 13px/1 ${F};color:${G4};margin-bottom:12px;">${tx.refcount}: <span style="color:${INK};">{{referral_count}}</span></div>` +
-    `<a href="{{referral_link}}" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.shareBtn} &rarr;</a>`);
+    `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:12px;">${tx.shareBody}</div>` +
+    `<div style="font:600 13px/1.5 ${F};color:${INK};margin-bottom:14px;">{{rp_personalized_text}}</div>` +
+    `<a href="{{rp_refer_url}}" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.shareBtn} &rarr;</a>`);
 
-  const presentedBar = iss.sponsor && iss.sponsor.name
-    ? `<div style="text-align:center;font:700 11px/1 ${F};letter-spacing:.12em;text-transform:uppercase;color:${G4};padding:14px 0 2px;">${tx.presented} ${esc(iss.sponsor.name)}</div>` : '';
+  // Top sponsor slot: a clearly-defined "Presented by" band UNDER the hero, before content.
+  const presentedBand = iss.sponsor && iss.sponsor.name ? `
+        <tr><td style="padding:18px 6px 0;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center" style="border-bottom:1px solid ${LINE};padding-bottom:18px;">
+            <div style="font:800 10px/1 ${F};letter-spacing:.18em;text-transform:uppercase;color:${G4};">${tx.presented}</div>
+            ${iss.sponsor.logo
+              ? `<img src="${esc(iss.sponsor.logo)}" alt="${esc(iss.sponsor.name)}" height="28" style="display:inline-block;margin-top:9px;max-height:28px;">`
+              : `<div style="font:800 19px/1.2 ${F};color:${INK};margin-top:8px;letter-spacing:-.01em;">${esc(iss.sponsor.name)}</div>`}
+          </td></tr></table>
+        </td></tr>` : '';
 
   return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sqwod Daily — ${esc(niceDate)}</title></head>
 <body style="margin:0;padding:0;background:#eeeef0;">
@@ -149,16 +167,19 @@ function render(iss, lang) {
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eeeef0;padding:20px 12px;">
     <tr><td align="center">
       <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
-        <!-- utility bar -->
-        <tr><td style="padding:0 6px 10px;font:600 11px/1 ${F};color:${G4};">
-          ${esc(niceDate)} &nbsp;·&nbsp; <a href="${epUrl}" style="color:${G4};text-decoration:none;">${tx.view}</a> &nbsp;·&nbsp; <a href="${SITE}/${lang}/subscribe" style="color:${G4};text-decoration:none;">${tx.sub}</a> &nbsp;·&nbsp; <a href="${SITE}/${lang}/verified" style="color:${G4};text-decoration:none;">${tx.shop}</a>
+        <!-- utility: date left, view-online right -->
+        <tr><td style="padding:0 10px 12px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
+            <td align="left" style="font:600 11px/1 ${F};letter-spacing:.04em;color:${G4};">${esc(niceDate)}</td>
+            <td align="right" style="font:600 11px/1 ${F};letter-spacing:.04em;"><a href="${epUrl}" style="color:${G4};text-decoration:none;">${tx.view} &rarr;</a></td>
+          </tr></table>
         </td></tr>
-        <!-- masthead + hero -->
+        <!-- masthead: wordmark + hero -->
         <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${INK};border-radius:16px;overflow:hidden;">
-          <tr><td style="padding:20px 26px 0;"><div style="font:900 22px/1 ${F};letter-spacing:.02em;color:${CHALK};">SQWOD <span style="font-weight:600;color:${G4};">DAILY</span></div></td></tr>
-          <tr><td style="padding:12px 0 0;"><img src="${asset('hero-bars.gif')}" width="600" alt="Sqwod Daily" style="display:block;width:100%;height:auto;"></td></tr>
+          <tr><td style="padding:22px 26px 16px;font:900 22px/1 ${F};letter-spacing:.02em;color:${CHALK};">SQWOD <span style="font-weight:600;color:${G4};">DAILY</span></td></tr>
+          <tr><td><img src="${asset('hero-bars.gif')}" width="600" alt="Sqwod Daily" style="display:block;width:100%;height:auto;"></td></tr>
         </table></td></tr>
-        ${presentedBar}
+        ${presentedBand}
         <!-- intro -->
         <tr><td style="padding:16px 6px 16px;">
           <div style="font:500 16px/1.6 ${F};color:${G1};">${esc(iss.intro || '')}</div>
