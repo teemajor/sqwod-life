@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
-          git add site/src/content automation/sources site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets
+          git add site/src/content automation/sources site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets site/public/daily-en.xml site/public/daily-de.xml
           if git diff --staged --quiet; then
             echo "No content changes."
           else

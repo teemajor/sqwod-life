@@ -10,12 +10,20 @@ site subscribe forms ─┐
 cascade → issue HTML ─┘            └─ {{rp_refer_url}} / {{rp_personalized_text}} render in the email
 ```
 
-## How the daily email gets sent (pick one)
-beehiiv's programmatic **Send/Create-Post API is Enterprise-only (beta)**, so unless you're on Enterprise, automate the send one of these ways:
-1. **RSS-to-send automation (recommended, no Enterprise):** beehiiv can auto-create/send a post from an RSS feed. We can publish a content RSS of each issue (full HTML in `content:encoded`) for beehiiv to pull. Layout is wrapped by beehiiv's template.
-2. **Paste (simplest):** drop our generated `site/public/email/<date>-<lang>.html` into a beehiiv **custom-HTML block** and send. Fully on-brand, ~1 min/day.
-3. **Send API (if Enterprise):** POST the HTML to beehiiv's Create-Post endpoint from a workflow — fully automated.
-The referral merge tags (`{{rp_refer_url}}`, `{{rp_personalized_text}}`) and `{{unsubscribe}}` are already in our HTML and resolve when beehiiv sends.
+## How the daily email gets sent — NOT on Enterprise (and not planning to be)
+beehiiv's programmatic Send/Create-Post API is Enterprise-only, and **RSS-to-Send needs the Max plan**. Two real paths, both now produced automatically by `automation/newsletter.mjs`:
+
+**Path A — Free / any plan: paste the snippet (pixel-perfect, ~60 sec/day).**
+Our email is built with **inline styles only** (no `<style>`/`<script>`), which is exactly what beehiiv's **HTML Snippet** block preserves. Each morning:
+1. New post in beehiiv → add an **HTML Snippet** block.
+2. Paste the contents of `site/public/email/<date>-<lang>.snippet.html` (body-only, ready to paste).
+3. Send. The referral tags (`{{rp_refer_url}}`, `{{rp_personalized_text}}`) + `{{unsubscribe}}` resolve on send.
+This keeps our exact design. It's the recommended path while free.
+
+**Path B — Max plan: RSS-to-Send (fully automated).**
+We publish a content feed at `https://sqwod.life/daily-en.xml` (+ `daily-de.xml`) with the full inline-styled email in `content:encoded`. In beehiiv → Automations → RSS-to-Send, point it at that URL, schedule weekday mornings, keep the beehiiv wrapper minimal. Zero-touch sends; fidelity is close (beehiiv adds its own header/footer around our content — test once).
+
+> Bottom line: stay free and paste the daily snippet (exact look, one minute), or pay for **Max** to fully automate via the RSS feed. You do **not** need Enterprise either way.
 
 ## Setup checklist
 1. **Create the publication** in beehiiv (Sqwod Daily). Set up EN/DE — beehiiv is one list; use a language custom field or two publications if you want fully separate sends.

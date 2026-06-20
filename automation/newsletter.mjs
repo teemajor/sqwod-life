@@ -9,7 +9,7 @@
  *   node automation/newsletter.mjs --date=2026-06-19 [--lang=en]
  * Output: site/public/email/<date>-<lang>.html
  */
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -161,12 +161,9 @@ function render(iss, lang) {
           </td></tr></table>
         </td></tr>` : '';
 
-  return `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sqwod Daily — ${esc(niceDate)}</title></head>
-<body style="margin:0;padding:0;background:#eeeef0;">
-  <span style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(iss.connectDots?.title || iss.intro || '')}</span>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eeeef0;padding:20px 12px;">
-    <tr><td align="center">
-      <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+  // inner = the email body only (inline styles, no <html>/<style>/<script>) →
+  // safe to paste into beehiiv's HTML Snippet block + used as RSS content:encoded.
+  const inner = `<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;margin:0 auto;">
         <!-- utility: date left, view-online right -->
         <tr><td style="padding:0 10px 12px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
@@ -208,10 +205,49 @@ function render(iss, lang) {
           <div style="font:400 11px/1.6 ${F};color:${G4};">${tx.disc}</div>
           <div style="font:400 11px/1.6 ${F};color:${G4};margin-top:8px;">Sqwod · Berlin · <a href="{{unsubscribe}}" style="color:${G4};">${tx.unsub}</a></div>
         </td></tr>
-      </table>
-    </td></tr>
+      </table>`;
+
+  const full = `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sqwod Daily — ${esc(niceDate)}</title></head>
+<body style="margin:0;padding:0;background:#eeeef0;">
+  <span style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(iss.connectDots?.title || iss.intro || '')}</span>
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eeeef0;padding:20px 12px;">
+    <tr><td align="center">${inner}</td></tr>
   </table>
 </body></html>`;
+  return { full, inner, title: `Sqwod Daily — ${niceDate}`, date, intro: iss.intro || '' };
+}
+
+// Content RSS feed (for beehiiv RSS-to-Send on Max+): full inline-styled HTML in content:encoded.
+const rfc822 = (d) => new Date(d + 'T06:00:00Z').toUTCString();
+const xesc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+function writeContentFeed(lang) {
+  if (!existsSync(DAILY)) return;
+  const files = readdirSync(DAILY).filter((f) => f.endsWith(`.${lang}.md`)).sort().reverse().slice(0, 12);
+  const items = files.map((f) => {
+    const out = render(parseIssue(join(DAILY, f)), lang);
+    const link = `${SITE}/${lang}/daily/${out.date}`;
+    return `    <item>
+      <title>${xesc(out.title)}</title>
+      <link>${link}</link>
+      <guid isPermaLink="true">${link}</guid>
+      <pubDate>${rfc822(out.date)}</pubDate>
+      <description>${xesc(out.intro)}</description>
+      <content:encoded><![CDATA[${out.inner}]]></content:encoded>
+    </item>`;
+  }).join('\n');
+  const feed = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sqwod Daily${lang === 'de' ? ' (DE)' : ''}</title>
+    <link>${SITE}/${lang}/daily</link>
+    <language>${lang}</language>
+    <description>${lang === 'de' ? 'Das Business von Fitness, werktäglich.' : 'The business of fitness, every weekday.'}</description>
+${items}
+  </channel>
+</rss>
+`;
+  writeFileSync(join(__dirname, '..', 'site', 'public', `daily-${lang}.xml`), feed);
+  console.log(`✓ content feed (${lang}) → site/public/daily-${lang}.xml`);
 }
 
 function run() {
@@ -222,10 +258,13 @@ function run() {
   for (const lang of langs) {
     const file = join(DAILY, `${date}.${lang}.md`);
     if (!existsSync(file)) { console.log(`· no issue for ${date} (${lang}) — skipping`); continue; }
-    writeFileSync(join(OUT, `${date}-${lang}.html`), render(parseIssue(file), lang));
-    console.log(`✓ email (${lang}) → site/public/email/${date}-${lang}.html`);
+    const out = render(parseIssue(file), lang);
+    writeFileSync(join(OUT, `${date}-${lang}.html`), out.full);                 // full doc (preview / hosted)
+    writeFileSync(join(OUT, `${date}-${lang}.snippet.html`), out.inner);        // paste into beehiiv HTML Snippet
+    console.log(`✓ email (${lang}) → email/${date}-${lang}.html  + .snippet.html`);
     n++;
   }
+  for (const lang of ['en', 'de']) writeContentFeed(lang);                       // RSS for beehiiv RSS-to-Send
   if (!n) console.log('No issues rendered.');
 }
 run();
