@@ -33,3 +33,6 @@ site/public/email/preview-*.html
 
 # stray ingest test files
 automation/sources/*-test.json
+
+# discovery leads (working research queue)
+automation/leads/

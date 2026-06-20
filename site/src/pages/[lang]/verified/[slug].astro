@@ -29,6 +29,20 @@ const updated = d.updatedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB'
     <!-- sticky rail: 3D + score + deal -->
     <aside class="review-aside">
       <ProductViewer lang={lang} glyph={d.glyph} glb={d.asset.type==='glb' ? d.asset.glb : undefined} />
+      {d.asset.images.length > 0 && (
+        <div class="gallery">
+          <div class="g-tabs"><span>{lang==='de'?'Fotos':'Photos'}</span></div>
+          <div class="g-main"><img id="g-main" src={d.asset.images[0]} alt={d.productName} loading="lazy" /></div>
+          {d.asset.images.length > 1 && (
+            <div class="g-thumbs">
+              {d.asset.images.map((src, i) => (
+                <button class="g-thumb" data-src={src} aria-label={`View ${i + 1}`}><img src={src} alt={`${d.productName} ${i + 1}`} loading="lazy" /></button>
+              ))}
+            </div>
+          )}
+          <div class="g-credit">{d.asset.credit ?? (lang==='de'?'Produktfotos vom Händler · Anzeige/Affiliate':'Product photos via retailer · ad/affiliate')}</div>
+        </div>
+      )}
       <div class="scorebox" style="margin-top:12px">
         <ScoreBadge score={d.sqwodScore} size={120} />
         <div class="scoreLabel">Sqwod Score</div>
@@ -71,4 +85,19 @@ const updated = d.updatedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB'
 
 <style>
   @media(min-width:900px){ .who{display:grid;grid-template-columns:1fr 1fr;gap:16px} }
+  .gallery{margin-top:12px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--panel)}
+  .g-tabs{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);margin:0 0 8px 2px}
+  .g-main{background:var(--bg);border-radius:10px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  .g-main img{width:100%;height:100%;object-fit:contain}
+  .g-thumbs{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+  .g-thumb{width:54px;height:54px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg);cursor:pointer;padding:0}
+  .g-thumb img{width:100%;height:100%;object-fit:contain}
+  .g-thumb:hover{border-color:var(--chalk)}
+  .g-credit{font-size:10.5px;color:var(--g4);margin-top:8px;letter-spacing:.02em}
 </style>
+
+<script is:inline>
+  document.querySelectorAll('.g-thumb').forEach(function(b){
+    b.addEventListener('click', function(){ var m=document.getElementById('g-main'); if(m) m.src=b.getAttribute('data-src'); });
+  });
+</script>
