@@ -112,9 +112,21 @@ const daily = defineCollection({
     duration: z.string().optional(),    // e.g. "2:51"
     status: z.enum(['draft', 'review', 'published']).default('draft'),
     // Richer "teaching" newsletter sections (optional; degrade gracefully):
-    connectDots: z.object({ title: z.string(), body: z.string() }).optional(), // the synthesis lead
-    doThis: z.string().optional(),       // one actionable takeaway
-    meanwhile: z.string().optional(),    // entertainment / oddity nugget
+    connectDots: z.object({ title: z.string(), body: z.string(), image: z.string().optional(), credit: z.string().optional() }).optional(), // the synthesis lead w/ hero image
+    moneyMoves: z.array(z.object({         // "Money Movement" — raises / acquisitions / valuations
+      entity: z.string(),
+      kind: z.enum(['raise', 'acquisition', 'valuation', 'ipo', 'shutdown']).default('raise'),
+      amount: z.string().optional(),
+      note: z.string().optional(),
+      url: z.string().optional(),
+    })).default([]),
+    policyWatch: z.object({ title: z.string(), body: z.string(), url: z.string().optional() }).optional(),
+    stat: z.object({ number: z.string(), label: z.string(), body: z.string().optional(), url: z.string().optional() }).optional(),
+    recs: z.array(z.object({ label: z.string(), text: z.string(), url: z.string().optional(), affiliate: z.boolean().default(false) })).default([]), // curated actionable; >=1 affiliate
+    play: z.object({ title: z.string(), prompt: z.string(), url: z.string().optional() }).optional(),
+    meanwhile: z.string().optional(),    // entertainment / viral nugget
+    meanwhileUrl: z.string().optional(),
+    doThis: z.string().optional(),       // kept for back-compat
     sponsor: z.object({                 // daily-brief ad unit (web + email + audio read)
       name: z.string(),
       blurb: z.string().optional(),     // one-line ad copy
@@ -128,6 +140,8 @@ const daily = defineCollection({
       conversion,
       sourceId: z.string().optional(),  // provenance → living wiki
       readMore: z.string().optional(),
+      source: z.string().optional(),    // outlet name for the source link
+      image: z.string().optional(),     // optional story image
     })),
   }),
 });

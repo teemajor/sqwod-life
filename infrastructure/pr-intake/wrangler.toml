@@ -1,0 +1,20 @@
+name = "sqwod-pr-intake"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+# Public vars (non-secret). Edit to match your repo + domain.
+[vars]
+GH_OWNER = "teemajor"
+GH_REPO = "sqwod-life"
+GH_BRANCH = "main"
+SITE_BASE = "https://sqwod.life"
+
+# Custom domain for the form endpoint (set after first deploy).
+# routes = [{ pattern = "pr.sqwod.life", custom_domain = true }]
+
+# Secrets are NOT stored here. Set them with:
+#   wrangler secret put GITHUB_TOKEN
+#   wrangler secret put STRIPE_SECRET
+#   wrangler secret put STRIPE_WEBHOOK_SECRET
+#   wrangler secret put STRIPE_PRICE_ID
+#   wrangler secret put TURNSTILE_SECRET

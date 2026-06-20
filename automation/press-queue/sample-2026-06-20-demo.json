@@ -1,0 +1,25 @@
+{
+  "id": "sample-2026-06-20-demo",
+  "company": "Northside Strength Co. (sample)",
+  "contactName": "Sample Submitter",
+  "contactEmail": "press@example.com",
+  "companyUrl": "https://example.com",
+  "headline": "Northside Strength opens its third Berlin location",
+  "dek": "The coaching-led studio brand expands to Prenzlauer Berg with a recovery-first floorplan.",
+  "body": "Northside Strength Co. today announced the opening of its third Berlin studio in Prenzlauer Berg. The new 400-square-meter location leads with a recovery zone — sauna, cold plunge, and mobility space — alongside its signature small-group strength floor.\n\nThe brand, founded by two former personal trainers, has grown to more than 1,200 members across the city since 2023.",
+  "logo": "",
+  "link": "https://example.com",
+  "tier": "standard",
+  "publishLang": "both",
+  "preferredDate": "2026-06-23",
+  "pillar": "business-strategy",
+  "lang": "en",
+  "status": "screened",
+  "paid": false,
+  "submittedAt": "2026-06-20",
+  "recommendation": {
+    "decision": "approve",
+    "score": 75,
+    "reasons": "Heuristic pass: no flagged terms. Confirm industry relevance."
+  }
+}

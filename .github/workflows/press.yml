@@ -1,0 +1,35 @@
+name: Press releases (screen + publish)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'   # hourly: screen new submissions + publish approved/paid ones
+
+permissions:
+  contents: write
+
+jobs:
+  press:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Screen + publish press releases
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node automation/press.mjs
+
+      - name: Commit & push (if anything changed)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/press-queue site/src/content/press
+          if git diff --staged --quiet; then
+            echo "No press changes."
+          else
+            git commit -m "press: screen/publish $(date +%F-%H%M)"
+            git push
+          fi

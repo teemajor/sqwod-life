@@ -1,0 +1,32 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const c = lang === 'de' ? {
+  title: 'Danke — wir haben deine Mitteilung erhalten',
+  body: 'Unser Team prüft die Einreichung auf Qualität und Richtlinie. Du bekommst eine E-Mail mit dem Status und einem Vorschau-Link. Bei Premium-Einreichungen erscheint die Mitteilung nach Zahlungseingang.',
+  back: 'Zurück zur Presse', another: 'Weitere einreichen',
+} : {
+  title: 'Thanks — we’ve got your release',
+  body: 'Our team reviews submissions for quality and policy. You’ll get an email with the status and a preview link. Premium releases publish once payment clears.',
+  back: 'Back to Press', another: 'Submit another',
+};
+---
+<Base lang={lang} title={c.title + ' — Sqwod'} description={c.body} active="press">
+  <div class="crumb"><a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a></div>
+  <h1 style="margin:0 0 10px">{c.title}</h1>
+  <p class="verdict" style="max-width:60ch">{c.body}</p>
+  <section class="block" style="border-bottom:none;display:flex;gap:14px;flex-wrap:wrap;margin-top:18px">
+    <a class="cta" href={`/${lang}/press`}>{c.back}</a>
+    <a class="lp" href={`/${lang}/press/submit`}>{c.another} →</a>
+  </section>
+</Base>
+<style>
+  .crumb a{color:inherit;text-decoration:none}
+  .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:11px 18px}
+  .lp:hover{border-color:var(--chalk)}
+</style>

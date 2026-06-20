@@ -1,0 +1,136 @@
+---
+import Base from '../../layouts/Base.astro';
+import { languages, type Lang } from '../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+
+const c = lang === 'de' ? {
+  title: 'Sqwod Readiness Tap',
+  blurb: 'Wie wach bist du heute? Der psychomotorische Vigilanztest (PVT) ist der Goldstandard, mit dem Schlafforscher Wachheit und Müdigkeit messen. Fünf Runden, 30 Sekunden, ein ehrlicher Wert.',
+  start: 'Test starten', wait: 'Warte auf das Signal …', tapNow: 'TAP!', tooSoon: 'Zu früh — warte aufs Signal.', tapToStart: 'Tippe, um zu starten',
+  round: 'Runde', of: 'von', avg: 'Ø Reaktionszeit', best: 'Bestwert', again: 'Nochmal', ms: 'ms',
+  sci: 'Wissenschaft: Der PVT misst die Reaktionszeit auf Zufallssignale — sensibel für Schlafmangel und Erschöpfung. Über ~500 ms gelten als „Lapse“.',
+  bands: ['Scharf', 'Solide', 'Neblig', 'Ausgelaugt'],
+  verdicts: ['Du bist wach. Geh trainieren.', 'Solide. Kaffee optional.', 'Etwas neblig — Pause oder Wasser.', 'Ausgelaugt. Erholung vor Intensität.'],
+} : {
+  title: 'Sqwod Readiness Tap',
+  blurb: "How sharp are you today? The Psychomotor Vigilance Task (PVT) is the gold standard sleep scientists use to measure alertness and fatigue. Five rounds, 30 seconds, one honest number.",
+  start: 'Start test', wait: 'Wait for the signal…', tapNow: 'TAP!', tooSoon: 'Too soon — wait for the signal.', tapToStart: 'Tap to start',
+  round: 'Round', of: 'of', avg: 'Avg reaction', best: 'Personal best', again: 'Go again', ms: 'ms',
+  sci: 'The science: the PVT measures reaction time to random signals — highly sensitive to sleep loss and fatigue. Anything over ~500 ms counts as a lapse.',
+  bands: ['Sharp', 'Solid', 'Foggy', 'Run-down'],
+  verdicts: ['You\'re wired. Go train.', 'Solid. Coffee optional.', 'A little foggy — pause or hydrate.', 'Run-down. Recover before intensity.'],
+};
+---
+<Base lang={lang} title={c.title + ' — Sqwod'} description={c.blurb} active="play">
+  <div class="crumb">Sqwod · Play</div>
+  <h1 style="margin:0 0 8px">{c.title}</h1>
+  <p class="sub" style="max-width:60ch;margin:0 0 18px">{c.blurb}</p>
+
+  <div id="pad" class="pad" data-state="idle">
+    <div class="pad-inner">
+      <div id="padmsg" class="padmsg">{c.tapToStart}</div>
+      <div id="padsub" class="padsub"></div>
+    </div>
+  </div>
+
+  <div class="meta">
+    <button id="startbtn" class="cta">{c.start}</button>
+    <span class="stat"><b id="best">—</b> <span>{c.best}</span></span>
+  </div>
+
+  <div id="result" class="result" hidden>
+    <div class="rbig"><span id="ravg">—</span><small>{c.ms}</small></div>
+    <div id="rband" class="rband"></div>
+    <div id="rverdict" class="rverdict"></div>
+    <button id="againbtn" class="lp">{c.again}</button>
+  </div>
+
+  <p class="sci">{c.sci}</p>
+
+  <script define:vars={{ c }}>
+    const pad = document.getElementById('pad');
+    const padmsg = document.getElementById('padmsg');
+    const padsub = document.getElementById('padsub');
+    const startbtn = document.getElementById('startbtn');
+    const againbtn = document.getElementById('againbtn');
+    const result = document.getElementById('result');
+    const ravg = document.getElementById('ravg');
+    const rband = document.getElementById('rband');
+    const rverdict = document.getElementById('rverdict');
+    const bestEl = document.getElementById('best');
+    const TRIALS = 5;
+    let trial = 0, times = [], state = 'idle', stimAt = 0, timer = null;
+
+    const KEY = 'sqwod_pvt_best';
+    function showBest() { const b = localStorage.getItem(KEY); bestEl.textContent = b ? b + ' ' + c.ms : '—'; }
+    showBest();
+
+    function setPad(s, msg, sub) { state = s; pad.dataset.state = s; padmsg.textContent = msg || ''; padsub.textContent = sub || ''; }
+
+    function begin() {
+      result.hidden = true; trial = 0; times = []; startbtn.disabled = true; next();
+    }
+    function next() {
+      if (trial >= TRIALS) return finish();
+      setPad('waiting', c.wait, c.round + ' ' + (trial + 1) + ' ' + c.of + ' ' + TRIALS);
+      const delay = 1000 + Math.random() * 3000;
+      timer = setTimeout(() => { stimAt = performance.now(); setPad('go', c.tapNow, ''); }, delay);
+    }
+    function hit() {
+      if (state === 'idle') { begin(); return; }
+      if (state === 'waiting') { clearTimeout(timer); setPad('tooSoon', c.tooSoon, ''); setTimeout(next, 900); return; }
+      if (state === 'go') {
+        const rt = Math.round(performance.now() - stimAt);
+        times.push(rt); trial++;
+        setPad('hit', rt + ' ' + c.ms, ''); setTimeout(next, 650);
+      }
+    }
+    function finish() {
+      const avg = Math.round(times.reduce((a, b) => a + b, 0) / times.length);
+      const idx = avg < 250 ? 0 : avg < 350 ? 1 : avg < 450 ? 2 : 3;
+      ravg.textContent = avg; rband.textContent = c.bands[idx]; rband.dataset.band = idx;
+      rverdict.textContent = c.verdicts[idx];
+      result.hidden = false; startbtn.disabled = false;
+      setPad('idle', c.tapToStart, '');
+      const prev = parseInt(localStorage.getItem(KEY) || '99999', 10);
+      if (avg < prev) localStorage.setItem(KEY, String(avg));
+      showBest();
+    }
+    pad.addEventListener('pointerdown', (e) => { e.preventDefault(); hit(); });
+    startbtn.addEventListener('click', begin);
+    againbtn.addEventListener('click', begin);
+  </script>
+</Base>
+
+<style>
+  .pad{user-select:none;touch-action:manipulation;border-radius:18px;border:1px solid var(--line);
+    min-height:300px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .08s ease}
+  .pad[data-state="idle"]{background:var(--panel)}
+  .pad[data-state="waiting"]{background:#2a1414;border-color:#5a2a2a}
+  .pad[data-state="tooSoon"]{background:#3a1d1d}
+  .pad[data-state="go"]{background:var(--chalk)}
+  .pad[data-state="hit"]{background:var(--panel)}
+  .pad-inner{text-align:center;padding:20px}
+  .padmsg{font-size:clamp(28px,7vw,52px);font-weight:900;letter-spacing:-.02em;line-height:1}
+  .pad[data-state="go"] .padmsg{color:var(--ink)}
+  .pad[data-state="waiting"] .padmsg,.pad[data-state="tooSoon"] .padmsg{color:#ff6b6b;font-size:clamp(18px,4vw,26px)}
+  .padsub{margin-top:12px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .meta{display:flex;align-items:center;gap:20px;margin-top:16px}
+  .stat{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--g3)}
+  .stat b{font-size:16px;color:var(--chalk);font-family:ui-monospace,Menlo,monospace}
+  .result{margin-top:24px;border-top:1px solid var(--line);padding-top:22px;text-align:center}
+  .rbig{font-size:64px;font-weight:900;letter-spacing:-.03em;line-height:1}
+  .rbig small{font-size:18px;color:var(--g3);font-weight:700;margin-left:6px}
+  .rband{display:inline-block;margin:12px 0 8px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:5px 12px;border-radius:999px;border:1px solid var(--line)}
+  .rband[data-band="0"]{color:var(--ink);background:var(--chalk)}
+  .rverdict{color:var(--g2);font-size:15px;margin:6px 0 16px}
+  .lp{font:inherit;font-size:13px;font-weight:700;background:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:9px 18px;cursor:pointer}
+  .lp:hover{border-color:var(--chalk)}
+  .sci{margin-top:26px;font-size:12.5px;line-height:1.6;color:var(--g3);max-width:62ch}
+  .cta{cursor:pointer}
+  .cta[disabled]{opacity:.5;cursor:default}
+</style>

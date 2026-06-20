@@ -1,13 +1,22 @@
 ---
 import Base from '../../layouts/Base.astro';
 import PillarIcon from '../../components/PillarIcon.astro';
+import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../i18n/ui';
 import { PILLARS, pillarMeta } from '../../i18n/pillars';
+import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../config/podcast';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
+const issues = (await getCollection('daily', (i) => i.data.lang === lang)).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const latestHref = issues[0] ? `/${lang}/daily/${issues[0].data.urlSlug}` : `/${lang}/daily`;
+const platforms = [
+  { name: 'Apple Podcasts', url: APPLE_URL }, { name: 'Spotify', url: SPOTIFY_URL },
+  { name: 'YouTube', url: '#' }, { name: 'Amazon Music', url: '#' },
+  { name: 'iHeartRadio', url: '#' }, { name: 'RSS', url: rssFor(lang) },
+];
 const title = lang === 'de'
   ? 'Sqwod — dein Vorsprung im Fitness-Business'
   : 'Sqwod — your edge in the business of fitness';
@@ -31,6 +40,18 @@ const tagline = lang === 'de'
     </div>
   </div>
 
+  <!-- Subscribe strip (above the fold) -->
+  <section class="subbar reveal">
+    <div class="sb-copy">
+      <strong>{lang==='de'?'In 5 Minuten schlauer':'Get smarter in 5 minutes'}</strong>
+      <span>{lang==='de'?'Sqwod Daily: das Fitness-Business, werktäglich. Kostenlos.':'Sqwod Daily: the business of fitness, every weekday. Free.'}</span>
+    </div>
+    <form class="sb-form" method="get" action={`/${lang}/subscribe`}>
+      <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
+      <button class="cta" type="submit">{lang==='de'?'Abonnieren':'Subscribe'}</button>
+    </form>
+  </section>
+
   <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
     <p class="kick reveal">{lang==='de'?'Was wir abdecken':'What we cover'}</p>
     <div class="grid cols3">
@@ -46,4 +67,68 @@ const tagline = lang === 'de'
       ))}
     </div>
   </section>
+
+  <!-- Listen: the Sqwod Daily show, all platforms -->
+  <section class="block listen-sec reveal" style="border-top:1px solid var(--line)">
+    <p class="kick">{lang==='de'?'Hör Sqwod Daily':'Listen to Sqwod Daily'}</p>
+    <div class="player-card">
+      <a class="pc-cover" href={latestHref} aria-label="Play latest episode">
+        <img src="/podcast-cover.png" alt="Sqwod Daily" width="150" height="150" />
+        <span class="pc-play">▶</span>
+      </a>
+      <div class="pc-body">
+        <h3>{lang==='de'?'Der tägliche 5-Minuten-Audio-Brief':'The daily 5-minute audio brief'}</h3>
+        <p>{lang==='de'?'Das Fitness-Business im Ohr — jeden Werktag, auf EN & DE. Folge uns auf deiner Plattform:':'The business of fitness in your ears — every weekday, in EN & DE. Follow on your platform:'}</p>
+        <div class="platforms">
+          {platforms.map((p) => <a class="plat" href={p.url} target="_blank" rel="noopener">{p.name}</a>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe (below the fold) -->
+  <section class="subbig reveal">
+    <h2>{lang==='de'?'Werde schärfer — in 5 Minuten am Tag':'Get sharper in 5 minutes a day'}</h2>
+    <p>{lang==='de'?'Schließ dich Coaches, Gründer:innen und Operatorn an, die Sqwod Daily lesen. Werktäglich, zweisprachig, kostenlos.':'Join the coaches, founders and operators who read Sqwod Daily. Every weekday, bilingual, free.'}</p>
+    <form class="sb-form center" method="get" action={`/${lang}/subscribe`}>
+      <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
+      <button class="cta" type="submit">{lang==='de'?'Kostenlos abonnieren':'Subscribe free'}</button>
+    </form>
+  </section>
 </Base>
+
+<style>
+  .subbar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+    border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-top:18px;background:var(--panel)}
+  .sb-copy strong{display:block;font-size:17px;letter-spacing:-.01em}
+  .sb-copy span{font-size:13.5px;color:var(--g2)}
+  .sb-form{display:flex;gap:8px;flex-wrap:wrap}
+  .sb-form input{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:11px 16px;color:var(--chalk);font:inherit;min-width:200px}
+  .sb-form input:focus{outline:none;border-color:var(--chalk)}
+  .sb-form.center{justify-content:center}
+
+  .listen-sec .player-card{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center;
+    border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--panel)}
+  .pc-cover{position:relative;display:block;width:150px;height:150px;border-radius:12px;overflow:hidden}
+  .pc-cover img{width:100%;height:100%;object-fit:cover;display:block}
+  .pc-play{position:absolute;inset:0;margin:auto;width:54px;height:54px;display:flex;align-items:center;justify-content:center;
+    background:rgba(14,14,16,.55);color:var(--chalk);border:1px solid rgba(255,255,255,.5);border-radius:50%;font-size:18px;padding-left:3px;transition:transform .15s ease,background .15s ease}
+  .pc-cover:hover .pc-play{transform:scale(1.08);background:var(--ink)}
+  .pc-body h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
+  .pc-body p{margin:0 0 14px;color:var(--g2);font-size:14.5px;line-height:1.5;max-width:52ch}
+  .platforms{display:flex;flex-wrap:wrap;gap:8px}
+  .plat{font-size:12.5px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:7px 13px;transition:border-color .15s ease,background .15s ease}
+  .plat:hover{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
+
+  .subbig{text-align:center;border:1px solid var(--line);border-radius:18px;padding:40px 24px;margin:26px 0 8px;
+    background:linear-gradient(180deg,var(--panel),transparent)}
+  .subbig h2{font-size:clamp(24px,4vw,32px);letter-spacing:-.02em;margin:0 0 10px}
+  .subbig p{color:var(--g2);max-width:52ch;margin:0 auto 20px;line-height:1.55}
+
+  @media(max-width:600px){
+    .listen-sec .player-card{grid-template-columns:1fr;justify-items:center;text-align:center}
+    .pc-body p{margin-left:auto;margin-right:auto}
+    .platforms{justify-content:center}
+    .subbar{flex-direction:column;align-items:flex-start}
+  }
+</style>

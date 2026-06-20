@@ -91,22 +91,27 @@ async function generateLead(items, lang) {
   if (!apiKey || !items.length) return null;
   const langName = lang === 'de' ? 'German' : 'English';
   const list = items.map((i, n) => `${n + 1}. ${i.headline} — ${i.dek}`).join('\n');
-  const prompt = `You are Sqwod's editor — Morning Brew for the business of fitness: witty, sharp, teaches the reader something, connects dots others miss. Audience: coaches, studio founders, operators. Write natively in ${langName}.
+  const prompt = `You are Sqwod's editor — Morning Brew for the business of fitness: witty, sharp, teaches, connects dots others miss. Audience: coaches, studio founders, operators. Write natively in ${langName}.
 
-Today's items:
+Today's items (these are the ONLY facts available):
 ${list}
 
-Produce JSON with four fields:
-{"connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
- "connectBody":"two short paragraphs separated by \\n; teach the underlying pattern and why it matters to an operator; specific, no fluff, a little wit",
+Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, deals, or statistics. Only use figures that appear verbatim above. If a section has no real basis, return null (or []) for it — do not fabricate.
+{
+ "connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
+ "connectBody":"two short paragraphs separated by \\n; teach the pattern and why it matters to an operator; specific, witty, no fluff",
  "doThis":"one concrete action the reader can take this week",
- "meanwhile":"one light, entertaining industry observation; no invented numbers"}
-Respond ONLY as minified JSON.`;
+ "meanwhile":"one light, entertaining industry observation; no invented numbers",
+ "moneyMoves":[{"entity":"name from the items","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one clause"}]  // ONLY for items that are actually raises/M&A/valuations; [] if none,
+ "policyWatch":{"title":"...","body":"1-2 sentences on a regulation/policy that affects coaches or studios"} or null if no item is policy/regulatory,
+ "stat":{"number":"the figure verbatim","label":"what it measures","body":"why it matters"} or null if no real number appears,
+ "recs":[{"label":"Read|Steal|Try|Watch","text":"a concrete, useful action or resource"}]  // 2-3 items
+}`;
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 700, messages: [{ role: 'user', content: prompt }] }),
+      body: JSON.stringify({ model: MODEL, max_tokens: 1100, messages: [{ role: 'user', content: prompt }] }),
     });
     if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
     const data = await r.json();
@@ -115,10 +120,41 @@ Respond ONLY as minified JSON.`;
   } catch (e) { console.error('lead generation failed:', e.message); return null; }
 }
 
+// Pick a Sqwod Verified review to feature as the affiliate rec (keeps recs monetized + factual).
+const REVIEWS_DIR = join(__dirname, '..', 'site', 'src', 'content', 'reviews');
+function pickAffiliateRec(lang) {
+  let files = [];
+  try { files = readdirSync(REVIEWS_DIR).filter((f) => f.endsWith(`.${lang}.md`)); } catch { return null; }
+  if (!files.length) return null;
+  const fm = readFileSync(join(REVIEWS_DIR, files[0]), 'utf8');
+  const get = (k) => (fm.match(new RegExp(`^${k}:\\s*(.+)$`, 'm')) || [])[1]?.replace(/^["']|["']$/g, '').trim();
+  const product = get('productName') || get('title') || 'our top pick';
+  const slug = get('urlSlug') || files[0].replace(`.${lang}.md`, '');
+  return {
+    label: 'Gear', affiliate: true, url: `/${lang}/verified/${slug}`,
+    text: lang === 'de' ? `${product} — unser Urteil + bester Preis.` : `${product} — our verdict + best price.`,
+  };
+}
+
+// Build the full section package (model output + programmatic affiliate rec + Play).
+function buildSections(lead, lang) {
+  const s = lead && lead.connectTitle ? { ...lead } : {};
+  const aff = pickAffiliateRec(lang);
+  s.recs = [...(Array.isArray(lead?.recs) ? lead.recs : []), ...(aff ? [aff] : [])];
+  s.play = {
+    title: 'Sqwod Readiness Tap',
+    prompt: lang === 'de'
+      ? 'Wie wach bist du heute? 30-Sekunden-Reaktionstest — derselbe PVT, mit dem Schlafforscher Wachheit messen.'
+      : 'How sharp are you today? 30-second reaction test — the same PVT sleep scientists use to measure alertness.',
+    url: `/${lang}/play`,
+  };
+  return s;
+}
+
 // ---- YAML helper (JSON strings are valid YAML double-quoted scalars) -----
 const q = (s) => JSON.stringify(s ?? '');
 
-function issueFrontmatter(date, lang, items, lead) {
+function issueFrontmatter(date, lang, items, sections) {
   const lines = [
     '---',
     `urlSlug: ${q(date)}`,
@@ -132,12 +168,50 @@ function issueFrontmatter(date, lang, items, lead) {
       ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
       : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care.")}`,
   ];
-  if (lead && lead.connectTitle) {
+  const s = sections || {};
+  if (s.connectTitle) {
     lines.push('connectDots:');
-    lines.push(`  title: ${q(lead.connectTitle)}`);
-    lines.push(`  body: ${q(lead.connectBody)}`);
-    if (lead.doThis) lines.push(`doThis: ${q(lead.doThis)}`);
-    if (lead.meanwhile) lines.push(`meanwhile: ${q(lead.meanwhile)}`);
+    lines.push(`  title: ${q(s.connectTitle)}`);
+    lines.push(`  body: ${q(s.connectBody)}`);
+  }
+  if (s.doThis) lines.push(`doThis: ${q(s.doThis)}`);
+  if (s.meanwhile) lines.push(`meanwhile: ${q(s.meanwhile)}`);
+  if (Array.isArray(s.moneyMoves) && s.moneyMoves.length) {
+    lines.push('moneyMoves:');
+    for (const m of s.moneyMoves) {
+      lines.push(`  - entity: ${q(m.entity)}`);
+      lines.push(`    kind: ${q(m.kind || 'raise')}`);
+      if (m.amount) lines.push(`    amount: ${q(m.amount)}`);
+      if (m.note) lines.push(`    note: ${q(m.note)}`);
+      if (m.url) lines.push(`    url: ${q(m.url)}`);
+    }
+  }
+  if (s.policyWatch && s.policyWatch.title) {
+    lines.push('policyWatch:');
+    lines.push(`  title: ${q(s.policyWatch.title)}`);
+    lines.push(`  body: ${q(s.policyWatch.body)}`);
+    if (s.policyWatch.url) lines.push(`  url: ${q(s.policyWatch.url)}`);
+  }
+  if (s.stat && s.stat.number) {
+    lines.push('stat:');
+    lines.push(`  number: ${q(s.stat.number)}`);
+    lines.push(`  label: ${q(s.stat.label)}`);
+    if (s.stat.body) lines.push(`  body: ${q(s.stat.body)}`);
+  }
+  if (Array.isArray(s.recs) && s.recs.length) {
+    lines.push('recs:');
+    for (const r of s.recs) {
+      lines.push(`  - label: ${q(r.label)}`);
+      lines.push(`    text: ${q(r.text)}`);
+      if (r.url) lines.push(`    url: ${q(r.url)}`);
+      if (r.affiliate) lines.push(`    affiliate: true`);
+    }
+  }
+  if (s.play && s.play.title) {
+    lines.push('play:');
+    lines.push(`  title: ${q(s.play.title)}`);
+    lines.push(`  prompt: ${q(s.play.prompt)}`);
+    if (s.play.url) lines.push(`  url: ${q(s.play.url)}`);
   }
   lines.push('items:');
   for (const it of items) {
@@ -146,6 +220,7 @@ function issueFrontmatter(date, lang, items, lead) {
     lines.push(`    pillar: ${q(it.pillar)}`);
     lines.push(`    conversion: ${q(it.conversion)}`);
     lines.push(`    sourceId: ${q(it.sourceId)}`);
+    if (it.source) lines.push(`    source: ${q(it.source)}`);
     if (it.readMore) lines.push(`    readMore: ${q(it.readMore)}`);
   }
   lines.push('---', '');
@@ -168,11 +243,12 @@ async function run() {
     const items = [];
     for (const src of sources) {
       const out = await generate('daily-item', src, lang);
-      items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id });
+      items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
     }
     const lead = await generateLead(items, lang);
+    const sections = buildSections(lead, lang);   // model output + affiliate rec + Play (even in dry-run)
     const file = join(DAILY_OUT, `${date}.${lang}.md`);
-    writeFileSync(file, issueFrontmatter(date, lang, items, lead));
+    writeFileSync(file, issueFrontmatter(date, lang, items, sections));
     console.log(`✓ ${lang.toUpperCase()} issue → site/src/content/daily/${date}.${lang}.md  (${items.length} items, status: ${status})`);
   }
 

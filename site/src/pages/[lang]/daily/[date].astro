@@ -27,6 +27,8 @@ const pillarLabel = (p: string) => pillarMeta[p as keyof typeof pillarMeta]?.lab
 const sources = d.items.filter((i) => i.readMore);
 const tx = {
   dots: lang === 'de' ? 'Punkte verbinden' : 'Connect the dots',
+  recs: lang === 'de' ? 'Sqwod-Tipps' : 'Sqwod recs',
+  ad: lang === 'de' ? 'Anzeige' : 'Sponsored',
   doThis: lang === 'de' ? 'Mach das heute' : 'Do this today',
   meanwhile: lang === 'de' ? 'Nebenbei in der Fitnesswelt' : 'Meanwhile in fitness',
   inToday: lang === 'de' ? 'In dieser Folge' : "In today's episode",
@@ -92,6 +94,24 @@ const tx = {
     </section>
   )}
 
+  <!-- SQWOD RECS: curated actionable (incl. affiliate) -->
+  {d.recs && d.recs.length > 0 && (
+    <section class="recs">
+      <p class="kick">{tx.recs}</p>
+      <ul class="reclist">
+        {d.recs.map((r) => (
+          <li>
+            <b>{r.label}:</b>{' '}
+            {r.url
+              ? <a href={r.affiliate && !r.url.startsWith('http') ? r.url : r.url} rel={r.affiliate ? 'sponsored nofollow' : undefined}>{r.text}</a>
+              : r.text}
+            {r.affiliate && <span class="recad">· {tx.ad}</span>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
   <!-- MEANWHILE: entertainment -->
   {d.meanwhile && (
     <section class="mw">
@@ -152,6 +172,13 @@ const tx = {
   .dothis-box{margin-top:8px;background:var(--chalk);color:var(--ink);border-radius:14px;padding:18px 20px;font-size:16px;line-height:1.6;font-weight:600}
   .mw{margin-top:24px}
   .mwbody{color:var(--g1);font-size:15.5px;line-height:1.7;margin:8px 0 0;max-width:62ch}
+  .recs{margin-top:24px}
+  .reclist{margin:10px 0 0;padding:0;list-style:none}
+  .reclist li{padding:10px 0;border-top:1px solid var(--line);color:var(--g1);font-size:15px;line-height:1.55}
+  .reclist b{color:var(--chalk)}
+  .reclist a{color:var(--chalk);text-decoration:none;border-bottom:1px solid var(--g3)}
+  .reclist a:hover{border-color:var(--chalk)}
+  .recad{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g4);margin-left:6px}
 
   .sponsor{margin-top:22px;border:1px dashed var(--line);border-radius:14px;padding:18px 20px;background:var(--panel)}
   .sponsor .adlabel{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g4)}
