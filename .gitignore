@@ -30,3 +30,6 @@ site/public/email/preview-*.html
 # os / editor
 .DS_Store
 *.log
+
+# stray ingest test files
+automation/sources/*-test.json

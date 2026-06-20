@@ -28,7 +28,7 @@ const updated = d.updatedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB'
   <div class="review-layout" style="margin-top:18px">
     <!-- sticky rail: 3D + score + deal -->
     <aside class="review-aside">
-      <ProductViewer lang={lang} glb={d.asset.type==='glb' ? d.asset.glb : undefined} />
+      <ProductViewer lang={lang} glyph={d.glyph} glb={d.asset.type==='glb' ? d.asset.glb : undefined} />
       <div class="scorebox" style="margin-top:12px">
         <ScoreBadge score={d.sqwodScore} size={120} />
         <div class="scoreLabel">Sqwod Score</div>
