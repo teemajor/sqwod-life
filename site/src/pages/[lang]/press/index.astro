@@ -1,0 +1,67 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { languages, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+
+const releases = (await getCollection('press', (p) => p.data.lang === lang && p.data.status === 'published'))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+const tx = {
+  title: lang === 'de' ? 'Pressemitteilungen' : 'Press releases',
+  blurb: lang === 'de'
+    ? 'Neuigkeiten direkt von Unternehmen der Fitness- und Wellness-Branche — Launches, Finanzierungen, Partnerschaften. Eingereicht von den Unternehmen, kuratiert von Sqwod.'
+    : 'News straight from fitness & wellness companies — launches, funding, partnerships. Submitted by the companies, curated by Sqwod.',
+  submit: lang === 'de' ? 'Mitteilung einreichen' : 'Submit a release',
+  none: lang === 'de' ? 'Noch keine Mitteilungen.' : 'No releases yet.',
+  label: lang === 'de' ? 'Unternehmensmitteilung' : 'Company submission',
+};
+---
+<Base lang={lang} title={tx.title + ' — Sqwod'} description={tx.blurb} active="press">
+  <div class="crumb">Sqwod · {tx.title}</div>
+  <div class="head">
+    <div>
+      <h1 style="margin:0 0 6px">{tx.title}</h1>
+      <p class="sub" style="margin:0;max-width:60ch">{tx.blurb}</p>
+    </div>
+    <a class="cta" href={`/${lang}/press/submit`}>{tx.submit} →</a>
+  </div>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:20px">
+    {releases.length === 0 && <p class="sub">{tx.none}</p>}
+    <div class="pr-list">
+      {releases.map((p) => (
+        <a class="pr-row" href={`/${lang}/press/${p.data.urlSlug}`}>
+          <span class="pr-date">{fmt(p.data.publishedAt)}</span>
+          <span class="pr-body">
+            <span class="pr-co">{p.data.company}{p.data.tier === 'premium' && <span class="pr-feat">★</span>}</span>
+            <span class="pr-head">{p.data.headline}</span>
+          </span>
+          <span class="pr-tag">{tx.label}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+  .pr-list{border-top:1px solid var(--line)}
+  .pr-row{display:grid;grid-template-columns:110px 1fr auto;gap:18px;align-items:center;padding:18px 6px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s ease}
+  .pr-row:hover{background:var(--panel)}
+  .pr-date{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--g3);white-space:nowrap}
+  .pr-co{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--g3)}
+  .pr-feat{color:var(--chalk);margin-left:6px}
+  .pr-head{display:block;font-size:17px;font-weight:800;color:var(--chalk);line-height:1.3;margin-top:3px;letter-spacing:-.01em}
+  .pr-tag{font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g4);white-space:nowrap}
+  @media(max-width:600px){
+    .pr-row{grid-template-columns:1fr;gap:4px}
+    .pr-date{order:-1}
+    .pr-tag{display:none}
+  }
+</style>

@@ -111,7 +111,16 @@ const daily = defineCollection({
     summary: z.string().optional(),     // one-line episode headline for the list
     duration: z.string().optional(),    // e.g. "2:51"
     status: z.enum(['draft', 'review', 'published']).default('draft'),
-    sponsor: z.string().optional(),     // daily-brief ad attribution
+    // Richer "teaching" newsletter sections (optional; degrade gracefully):
+    connectDots: z.object({ title: z.string(), body: z.string() }).optional(), // the synthesis lead
+    doThis: z.string().optional(),       // one actionable takeaway
+    meanwhile: z.string().optional(),    // entertainment / oddity nugget
+    sponsor: z.object({                 // daily-brief ad unit (web + email + audio read)
+      name: z.string(),
+      blurb: z.string().optional(),     // one-line ad copy
+      url: z.string().optional(),       // click-through (tracked)
+      cta: z.string().optional(),       // button label, e.g. "Try it free"
+    }).optional(),
     items: z.array(z.object({
       headline: z.string(),
       dek: z.string(),
@@ -123,4 +132,29 @@ const daily = defineCollection({
   }),
 });
 
-export const collections = { reviews, articles, daily };
+// Press releases — third-party submitted content (free + premium tiers).
+// Clearly labeled as company-submitted; NOT Sqwod editorial.
+const press = defineCollection({
+  type: 'content',
+  schema: z.object({
+    urlSlug: z.string(),
+    lang,
+    counterpart: z.string().optional(),
+    company: z.string(),
+    headline: z.string(),
+    dek: z.string().optional(),
+    tier: z.enum(['standard', 'premium']).default('standard'),
+    status: z.enum(['submitted', 'approved', 'paid', 'published', 'rejected']).default('published'),
+    submittedAt: z.coerce.date().optional(),
+    publishedAt: z.coerce.date(),
+    contactEmail: z.string().optional(),     // not rendered; provenance only
+    companyUrl: z.string().optional(),
+    logo: z.string().optional(),
+    pillar: pillar.default('industry-trends'),
+    links: z.array(z.object({ label: z.string(), url: z.string() })).default([]),
+    boilerplate: z.string().optional(),      // "About <company>"
+    translated: z.boolean().default(false),  // machine-produced counterpart
+  }),
+});
+
+export const collections = { reviews, articles, daily, press };

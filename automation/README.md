@@ -9,7 +9,8 @@ ingest (real headlines) → cascade (rewrite in Sqwod voice, EN+DE) → audio (T
 ## The pieces
 - **`ingest.mjs`** — pulls current fitness/wellness-industry headlines (free, Google News RSS — no key), classifies each into an Articles pillar, and writes `sources/<date>.json`.
 - **`cascade.mjs`** — reads that source and writes a bilingual Sqwod Daily issue into `../site/src/content/daily/<date>.{en,de}.md`. `generate()` calls Claude to author each item natively per language; without a key it falls back to the raw headline (dry-run).
-- **`audio.mjs`** — reads the day's issue, builds a spoken script (EN + DE), synthesizes an MP3 per language via ElevenLabs into `../site/public/audio/<date>-<lang>.mp3`, then rebuilds the podcast RSS feeds (`site/public/podcast.xml` EN, `site/public/podcast.de.xml` DE). Without a key it skips synthesis and just rebuilds the feeds (dry-run safe).
+- **`audio.mjs`** — reads the day's issue, builds a spoken script (EN + DE, with a mid-roll sponsor read when the issue has a sponsor), synthesizes an MP3 per language via ElevenLabs into `../site/public/audio/<date>-<lang>.mp3`, then rebuilds the podcast RSS feeds (`site/public/podcast.xml` EN, `site/public/podcast.de.xml` DE). Without a key it skips synthesis and just rebuilds the feeds (dry-run safe).
+- **`newsletter.mjs`** — renders each issue into an inbox-ready HTML email (EN + DE) at `../site/public/email/<date>-<lang>.html`, including the same sponsor slot. Paste into your ESP or wire the ESP to pull it. So ad inventory matches across **audio, web and inbox**.
 - **`prompts/cascade.md`** — the instructions the model follows (voice, rules, citation).
 - **`.github/workflows/content.yml`** — runs the whole chain in the cloud on a schedule (weekday mornings) + on demand, commits, and the deploy workflow ships it.
 
@@ -19,7 +20,19 @@ node automation/ingest.mjs            # writes today's source from live news
 node automation/cascade.mjs           # rewrites it into the Daily (dry-run without a key)
 node automation/audio.mjs             # synth MP3s + rebuild podcast feeds (dry-run without a key)
 node automation/audio.mjs --feeds-only   # just rebuild the RSS feeds from existing MP3s
+node automation/newsletter.mjs        # render the HTML email (EN + DE) with sponsor slot
 ```
+
+## Selling a sponsor (one ad, three surfaces)
+Add a `sponsor` block to the issue frontmatter and it appears on the web page, in the email, and as a mid-roll read in the audio:
+```yaml
+sponsor:
+  name: "Brand"
+  blurb: "One-line ad copy."
+  url: "https://brand.com/sqwod"   # tracked click-through
+  cta: "Try it free"
+```
+Sponsored content is always labeled (`Anzeige`/`Sponsored`) per UWG/FTC; editorial stays independent.
 
 ## Go fully live
 1. Add **GitHub secrets** (repo → Settings → Secrets and variables → Actions → New secret):

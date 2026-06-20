@@ -10,4 +10,7 @@ export default defineConfig({
     locales: ['en', 'de'],
     routing: { prefixDefaultLocale: true },
   },
+  // VITE_CACHE_DIR lets sandboxed/CI environments relocate Vite's dep cache
+  // off restricted mounts. Unset in normal dev → default behavior.
+  vite: { cacheDir: process.env.VITE_CACHE_DIR || undefined },
 });

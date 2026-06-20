@@ -32,11 +32,14 @@ jobs:
           ELEVENLABS_VOICE_DE: ${{ secrets.ELEVENLABS_VOICE_DE }}
         run: node automation/audio.mjs --date=$(date +%F)
 
+      - name: Render the email (EN + DE, with sponsor slot)
+        run: node automation/newsletter.mjs --date=$(date +%F)
+
       - name: Commit & push (if anything changed)
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
-          git add site/src/content automation/sources site/public/audio site/public/podcast.xml site/public/podcast.de.xml
+          git add site/src/content automation/sources site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets
           if git diff --staged --quiet; then
             echo "No content changes."
           else

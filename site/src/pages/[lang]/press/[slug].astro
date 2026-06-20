@@ -1,0 +1,82 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { type Lang } from '../../../i18n/ui';
+
+export async function getStaticPaths() {
+  const all = await getCollection('press', (p) => p.data.status === 'published');
+  return all.map((entry) => ({
+    params: { lang: entry.data.lang, slug: entry.data.urlSlug },
+    props: { entry },
+  }));
+}
+const { entry } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const d = entry.data;
+const { Content } = await entry.render();
+const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
+
+const tx = {
+  label: lang === 'de' ? 'Pressemitteilung' : 'Press release',
+  by: lang === 'de' ? 'Eingereicht von' : 'Submitted by',
+  notice: lang === 'de'
+    ? 'Diese Mitteilung wurde vom genannten Unternehmen eingereicht und veröffentlicht. Es handelt sich nicht um redaktionelle Inhalte von Sqwod; Aussagen und Zahlen stammen vom Absender.'
+    : 'This release was submitted and published by the company named above. It is not Sqwod editorial; claims and figures are the sender’s own.',
+  about: lang === 'de' ? 'Über' : 'About',
+  links: lang === 'de' ? 'Links' : 'Links',
+  more: lang === 'de' ? 'Alle Mitteilungen' : 'All releases',
+  submit: lang === 'de' ? 'Eigene Mitteilung einreichen' : 'Submit your own release',
+  translated: lang === 'de' ? 'Maschinell aus dem Original übersetzt.' : 'Machine-translated from the original.',
+};
+---
+<Base lang={lang} title={`${d.headline} — ${d.company}`} description={d.dek ?? d.headline}>
+  <div class="crumb"><a href={`/${lang}/press`}>{tx.label}</a> · {fmt}</div>
+
+  <span class="adlabel">{tx.label} · {tx.by} {d.company}</span>
+  <h1 style="margin:8px 0 8px">{d.headline}</h1>
+  {d.dek && <p class="verdict" style="margin-bottom:6px">{d.dek}</p>}
+  <p class="sub" style="margin:0 0 18px">{fmt}{d.translated && <> · <em>{tx.translated}</em></>}</p>
+
+  <article class="prose">
+    <Content />
+  </article>
+
+  {d.boilerplate && (
+    <section class="about">
+      <p class="kick">{tx.about} {d.company}</p>
+      <p>{d.boilerplate}</p>
+    </section>
+  )}
+
+  {d.links.length > 0 && (
+    <section class="about">
+      <p class="kick">{tx.links}</p>
+      <ul class="prlinks">
+        {d.links.map((l) => <li><a href={l.url} target="_blank" rel="nofollow noopener">{l.label} →</a></li>)}
+      </ul>
+    </section>
+  )}
+
+  <p class="prnotice">{tx.notice}</p>
+
+  <section class="block" style="border-bottom:none;display:flex;gap:14px;flex-wrap:wrap;margin-top:20px">
+    <a class="lp" href={`/${lang}/press`}>← {tx.more}</a>
+    <a class="cta" href={`/${lang}/press/submit`}>{tx.submit} →</a>
+  </section>
+</Base>
+
+<style>
+  .crumb a{color:inherit;text-decoration:none}
+  .adlabel{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g4)}
+  .prose :global(p){color:var(--g1);font-size:16.5px;line-height:1.7;margin:0 0 16px}
+  .prose :global(h2){font-size:22px;letter-spacing:-.02em;margin:26px 0 10px}
+  .prose :global(a){color:var(--chalk)}
+  .about{margin-top:26px;padding-top:16px;border-top:1px solid var(--line)}
+  .about p:not(.kick){color:var(--g2);font-size:15px;line-height:1.6;margin:8px 0 0}
+  .prlinks{margin:8px 0 0;padding-left:18px;color:var(--g2)}
+  .prlinks a{color:var(--g2);text-decoration:none;border-bottom:1px solid var(--line)}
+  .prlinks a:hover{color:var(--chalk)}
+  .prnotice{margin-top:26px;padding:14px 16px;border:1px dashed var(--line);border-radius:10px;font-size:12.5px;line-height:1.6;color:var(--g3)}
+  .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+  .lp:hover{border-color:var(--chalk)}
+</style>

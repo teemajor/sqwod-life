@@ -24,6 +24,9 @@ SqwodLife_*.html
 SqwodPod_*
 site-preview/
 
+# local email previews (relative-path copies; not for production)
+site/public/email/preview-*.html
+
 # os / editor
 .DS_Store
 *.log

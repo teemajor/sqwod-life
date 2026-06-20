@@ -26,6 +26,9 @@ const pillarLabel = (p: string) => pillarMeta[p as keyof typeof pillarMeta]?.lab
 // Quiet provenance: items that carry a source link become numbered sources.
 const sources = d.items.filter((i) => i.readMore);
 const tx = {
+  dots: lang === 'de' ? 'Punkte verbinden' : 'Connect the dots',
+  doThis: lang === 'de' ? 'Mach das heute' : 'Do this today',
+  meanwhile: lang === 'de' ? 'Nebenbei in der Fitnesswelt' : 'Meanwhile in fitness',
   inToday: lang === 'de' ? 'In dieser Folge' : "In today's episode",
   listen: lang === 'de' ? 'Hören auf' : 'Listen on',
   byEmail: lang === 'de' ? 'Per E-Mail' : 'By email',
@@ -55,6 +58,15 @@ const tx = {
     </div>
   </section>
 
+  <!-- CONNECT THE DOTS: the teaching lead -->
+  {d.connectDots && (
+    <section class="dots">
+      <p class="kick">{tx.dots}</p>
+      <h2>{d.connectDots.title}</h2>
+      {d.connectDots.body.split('\n').filter(Boolean).map((p) => <p class="dotbody">{p}</p>)}
+    </section>
+  )}
+
   <!-- THE BRIEF: readable digest, no per-item click-outs -->
   <section class="block" style="margin-top:8px">
     <p class="kick">{tx.inToday}</p>
@@ -72,8 +84,30 @@ const tx = {
     </ol>
   </section>
 
-  <!-- SPONSOR -->
-  {d.sponsor && <div class="note"><b>{lang==='de'?'Präsentiert von':'Presented by'}</b> {d.sponsor} · {lang==='de'?'Anzeige':'Sponsored'}</div>}
+  <!-- DO THIS: actionable -->
+  {d.doThis && (
+    <section class="dothis">
+      <p class="kick">{tx.doThis}</p>
+      <div class="dothis-box">{d.doThis}</div>
+    </section>
+  )}
+
+  <!-- MEANWHILE: entertainment -->
+  {d.meanwhile && (
+    <section class="mw">
+      <p class="kick">{tx.meanwhile}</p>
+      <p class="mwbody">{d.meanwhile}</p>
+    </section>
+  )}
+
+  <!-- SPONSOR (matches the audio read + email block) -->
+  {d.sponsor && (
+    <aside class="sponsor">
+      <span class="adlabel">{lang==='de'?'Anzeige':'Sponsored'} · {lang==='de'?'Präsentiert von':'Presented by'} {d.sponsor.name}</span>
+      {d.sponsor.blurb && <p>{d.sponsor.blurb}</p>}
+      {d.sponsor.url && <a class="lp" href={d.sponsor.url} rel="sponsored nofollow" target="_blank">{d.sponsor.cta ?? (lang==='de'?'Mehr erfahren':'Learn more')} →</a>}
+    </aside>
+  )}
 
   <!-- THE ONE ASK: subscribe -->
   <section class="subcard">
@@ -110,6 +144,19 @@ const tx = {
   .pillar-chip{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
   .digest h3{font-size:21px;line-height:1.2;letter-spacing:-.02em;margin:7px 0 6px;font-weight:800}
   .digest .dek{color:var(--g2);font-size:15.5px;line-height:1.6;margin:0}
+
+  .dots{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
+  .dots h2{font-size:25px;line-height:1.2;letter-spacing:-.02em;margin:8px 0 10px}
+  .dotbody{color:var(--g1);font-size:16.5px;line-height:1.7;margin:0 0 12px;max-width:62ch}
+  .dothis{margin-top:24px}
+  .dothis-box{margin-top:8px;background:var(--chalk);color:var(--ink);border-radius:14px;padding:18px 20px;font-size:16px;line-height:1.6;font-weight:600}
+  .mw{margin-top:24px}
+  .mwbody{color:var(--g1);font-size:15.5px;line-height:1.7;margin:8px 0 0;max-width:62ch}
+
+  .sponsor{margin-top:22px;border:1px dashed var(--line);border-radius:14px;padding:18px 20px;background:var(--panel)}
+  .sponsor .adlabel{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g4)}
+  .sponsor p{margin:8px 0 12px;color:var(--g1);font-size:15.5px;line-height:1.55}
+  .sponsor .lp{display:inline-block}
 
   .subcard{margin-top:26px;border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center;background:linear-gradient(180deg,var(--panel),transparent)}
   .subcard h2{font-size:24px;letter-spacing:-.02em;margin:0 0 8px}

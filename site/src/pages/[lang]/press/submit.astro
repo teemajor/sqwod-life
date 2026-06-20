@@ -1,0 +1,137 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+import { PR_INTAKE_URL, PREMIUM_PRICE } from '../../../config/press';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const live = !!PR_INTAKE_URL;
+
+const tx = lang === 'de' ? {
+  title: 'Pressemitteilung einreichen',
+  blurb: 'Bring deine Neuigkeit vor Entscheider, Gründer und Investoren der Fitness- & Wellness-Branche. Zwei Optionen — kostenlos oder Premium.',
+  free: 'Standard', premium: 'Premium', cost: 'Kosten', gratis: 'Kostenlos',
+  fIncl: ['Veröffentlichung auf sqwod.life (Presse-Feed)', 'Bilingual EN & DE', 'Dauerhaft archiviert'],
+  pIncl: ['Alles aus Standard', 'Verlinkt im Sqwod-Daily-Newsletter', 'Geteilt auf LinkedIn & Instagram', 'Platzierung oben im Feed'],
+  how: 'So läuft es', steps: [
+    'Einreichen: Formular unten ausfüllen.',
+    'Prüfung: Wir kuratieren nach Qualität & Inhalts-Richtlinie (KI-Vorprüfung + menschliche Freigabe).',
+    'Freigabe: Du bekommst eine E-Mail mit Vorschau-Link — bei Premium den Zahlungslink.',
+    'Veröffentlichung: Standard nach Freigabe, Premium nach Zahlung.',
+  ],
+  timing: 'Timing: Premium mind. 1 Werktag vorher, Standard mind. 48 h vorher einreichen.',
+  agency: 'Rabatte für mehrere Mitteilungen oder Agenturen: ',
+  policy: 'Inhalts-Richtlinie lesen',
+  form: 'Deine Mitteilung', soon: 'Einreichungen öffnen in Kürze. Schreib uns vorerst an pr@sqwod.life.',
+  f: { company: 'Unternehmen', contact: 'Ansprechpartner:in', email: 'E-Mail', url: 'Website', headline: 'Schlagzeile', dek: 'Kurzbeschreibung (1 Satz)', body: 'Mitteilung (Text)', logo: 'Logo-URL (optional)', link: 'Link (optional)', tier: 'Option', langlbl: 'Sprache', both: 'Beide (EN & DE)', date: 'Wunsch-Datum', consent: 'Ich bestätige, dass ich berechtigt bin, diese Mitteilung einzureichen, und die Inhalts-Richtlinie akzeptiere.', submit: 'Mitteilung einreichen' },
+} : {
+  title: 'Submit a press release',
+  blurb: 'Put your news in front of fitness & wellness decision-makers, founders and investors. Two options — free or premium.',
+  free: 'Standard', premium: 'Premium', cost: 'Cost', gratis: 'Free',
+  fIncl: ['Published on sqwod.life (press feed)', 'Bilingual EN & DE', 'Permanently archived'],
+  pIncl: ['Everything in Standard', 'Linked in the Sqwod Daily newsletter', 'Shared on LinkedIn & Instagram', 'Top-of-feed placement'],
+  how: 'How it works', steps: [
+    'Submit: fill in the form below.',
+    'Review: we curate for quality & content policy (AI pre-screen + human approval).',
+    'Approval: you get an email with a preview link — and, for premium, the payment link.',
+    'Publish: standard after approval, premium after payment.',
+  ],
+  timing: 'Timing: submit premium at least 1 business day ahead, standard at least 48 hours ahead.',
+  agency: 'Discounts for multiple releases or agencies: ',
+  policy: 'Read the content policy',
+  form: 'Your release', soon: 'Submissions open soon. For now, email us at pr@sqwod.life.',
+  f: { company: 'Company', contact: 'Contact name', email: 'Email', url: 'Website', headline: 'Headline', dek: 'One-line summary', body: 'Release (body)', logo: 'Logo URL (optional)', link: 'Link (optional)', tier: 'Option', langlbl: 'Language', both: 'Both (EN & DE)', date: 'Preferred date', consent: 'I confirm I’m authorized to submit this release and accept the content policy.', submit: 'Submit release' },
+};
+---
+<Base lang={lang} title={tx.title + ' — Sqwod'} description={tx.blurb} active="press">
+  <div class="crumb"><a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a> · {tx.title}</div>
+  <h1 style="margin:0 0 6px">{tx.title}</h1>
+  <p class="sub" style="margin:0 0 22px;max-width:62ch">{tx.blurb}</p>
+
+  <!-- Pricing -->
+  <div class="tiers">
+    <div class="tier">
+      <span class="tname">{tx.free}</span>
+      <span class="tprice">{tx.gratis}</span>
+      <ul>{tx.fIncl.map((x) => <li>{x}</li>)}</ul>
+    </div>
+    <div class="tier feat">
+      <span class="tname">{tx.premium} ★</span>
+      <span class="tprice">€{PREMIUM_PRICE.eur} <small>/ ${PREMIUM_PRICE.usd}</small></span>
+      <ul>{tx.pIncl.map((x) => <li>{x}</li>)}</ul>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <section class="block" style="border-top:1px solid var(--line);margin-top:24px">
+    <p class="kick">{tx.how}</p>
+    <ol class="steps">{tx.steps.map((s) => <li>{s}</li>)}</ol>
+    <p class="sub" style="font-size:13px">{tx.timing}</p>
+    <p class="sub" style="font-size:13px">{tx.agency}<a href="mailto:pr@sqwod.life">pr@sqwod.life</a> · <a href={`/${lang}/press/policy`}>{tx.policy} →</a></p>
+  </section>
+
+  <!-- Form -->
+  <section class="block" style="border-top:1px solid var(--line)">
+    <p class="kick">{tx.form}</p>
+    {!live && <p class="prnotice">{tx.soon}</p>}
+    <form class="prform" method="POST" action={PR_INTAKE_URL || '#'}>
+      <input type="hidden" name="lang" value={lang} />
+      <div class="grid2">
+        <label>{tx.f.company}<input name="company" required /></label>
+        <label>{tx.f.url}<input name="companyUrl" type="url" placeholder="https://" /></label>
+        <label>{tx.f.contact}<input name="contactName" required /></label>
+        <label>{tx.f.email}<input name="contactEmail" type="email" required /></label>
+      </div>
+      <label>{tx.f.headline}<input name="headline" maxlength="120" required /></label>
+      <label>{tx.f.dek}<input name="dek" maxlength="200" /></label>
+      <label>{tx.f.body}<textarea name="body" rows="9" required></textarea></label>
+      <div class="grid2">
+        <label>{tx.f.logo}<input name="logo" type="url" placeholder="https://" /></label>
+        <label>{tx.f.link}<input name="link" type="url" placeholder="https://" /></label>
+        <label>{tx.f.langlbl}
+          <select name="publishLang">
+            <option value={lang}>{lang.toUpperCase()}</option>
+            <option value="both">{tx.f.both}</option>
+          </select>
+        </label>
+        <label>{tx.f.date}<input name="preferredDate" type="date" /></label>
+      </div>
+      <fieldset class="tierpick">
+        <legend>{tx.f.tier}</legend>
+        <label class="radio"><input type="radio" name="tier" value="standard" checked /> {tx.free} — {tx.gratis}</label>
+        <label class="radio"><input type="radio" name="tier" value="premium" /> {tx.premium} — €{PREMIUM_PRICE.eur}</label>
+      </fieldset>
+      <!-- Cloudflare Turnstile (anti-spam) renders here once the site key is set on the Worker page -->
+      <div class="cf-turnstile" data-sitekey="TURNSTILE_SITE_KEY"></div>
+      <label class="radio consent"><input type="checkbox" name="consent" required /> {tx.f.consent}</label>
+      <button class="cta" type="submit" disabled={!live}>{tx.f.submit}</button>
+    </form>
+  </section>
+</Base>
+
+<style>
+  .crumb a{color:inherit;text-decoration:none}
+  .tiers{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .tier{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--panel)}
+  .tier.feat{border-color:var(--chalk)}
+  .tname{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .tprice{display:block;font-size:28px;font-weight:800;letter-spacing:-.02em;margin:8px 0 12px}
+  .tprice small{font-size:14px;color:var(--g3);font-weight:600}
+  .tier ul{margin:0;padding-left:18px;color:var(--g2);font-size:14px;line-height:1.7}
+  .steps{margin:10px 0 14px;padding-left:20px;color:var(--g1);line-height:1.7}
+  .prform{margin-top:8px;display:flex;flex-direction:column;gap:14px;max-width:680px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .prform label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--g3)}
+  .prform input,.prform textarea,.prform select{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 12px;color:var(--chalk);font:inherit;text-transform:none;letter-spacing:0}
+  .prform input:focus,.prform textarea:focus,.prform select:focus{outline:none;border-color:var(--chalk)}
+  .tierpick{border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;gap:20px;flex-wrap:wrap}
+  .tierpick legend{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);padding:0 6px}
+  .radio{flex-direction:row !important;align-items:center;gap:8px;text-transform:none !important;font-weight:600 !important;color:var(--g1) !important;font-size:14px !important;letter-spacing:0 !important}
+  .consent{font-size:13px !important;color:var(--g2) !important}
+  .prform .cta{align-self:flex-start}
+  .prform .cta[disabled]{opacity:.5;cursor:not-allowed}
+  .prnotice{padding:12px 14px;border:1px dashed var(--line);border-radius:10px;font-size:13px;color:var(--g2)}
+  @media(max-width:600px){.tiers,.grid2{grid-template-columns:1fr}}
+</style>

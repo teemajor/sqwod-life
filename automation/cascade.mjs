@@ -86,10 +86,39 @@ Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
   return { headline: block.headline, dek: block.dek, readMore: block.readMore };
 }
 
+// ---- issue-level "teaching" sections: connect-the-dots + action + entertainment
+async function generateLead(items, lang) {
+  if (!apiKey || !items.length) return null;
+  const langName = lang === 'de' ? 'German' : 'English';
+  const list = items.map((i, n) => `${n + 1}. ${i.headline} — ${i.dek}`).join('\n');
+  const prompt = `You are Sqwod's editor — Morning Brew for the business of fitness: witty, sharp, teaches the reader something, connects dots others miss. Audience: coaches, studio founders, operators. Write natively in ${langName}.
+
+Today's items:
+${list}
+
+Produce JSON with four fields:
+{"connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
+ "connectBody":"two short paragraphs separated by \\n; teach the underlying pattern and why it matters to an operator; specific, no fluff, a little wit",
+ "doThis":"one concrete action the reader can take this week",
+ "meanwhile":"one light, entertaining industry observation; no invented numbers"}
+Respond ONLY as minified JSON.`;
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: MODEL, max_tokens: 700, messages: [{ role: 'user', content: prompt }] }),
+    });
+    if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
+    const data = await r.json();
+    const txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
+    return JSON.parse(txt);
+  } catch (e) { console.error('lead generation failed:', e.message); return null; }
+}
+
 // ---- YAML helper (JSON strings are valid YAML double-quoted scalars) -----
 const q = (s) => JSON.stringify(s ?? '');
 
-function issueFrontmatter(date, lang, items) {
+function issueFrontmatter(date, lang, items, lead) {
   const lines = [
     '---',
     `urlSlug: ${q(date)}`,
@@ -102,8 +131,15 @@ function issueFrontmatter(date, lang, items) {
     `intro: ${q(lang === 'de'
       ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
       : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care.")}`,
-    'items:',
   ];
+  if (lead && lead.connectTitle) {
+    lines.push('connectDots:');
+    lines.push(`  title: ${q(lead.connectTitle)}`);
+    lines.push(`  body: ${q(lead.connectBody)}`);
+    if (lead.doThis) lines.push(`doThis: ${q(lead.doThis)}`);
+    if (lead.meanwhile) lines.push(`meanwhile: ${q(lead.meanwhile)}`);
+  }
+  lines.push('items:');
   for (const it of items) {
     lines.push(`  - headline: ${q(it.headline)}`);
     lines.push(`    dek: ${q(it.dek)}`);
@@ -134,8 +170,9 @@ async function run() {
       const out = await generate('daily-item', src, lang);
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id });
     }
+    const lead = await generateLead(items, lang);
     const file = join(DAILY_OUT, `${date}.${lang}.md`);
-    writeFileSync(file, issueFrontmatter(date, lang, items));
+    writeFileSync(file, issueFrontmatter(date, lang, items, lead));
     console.log(`✓ ${lang.toUpperCase()} issue → site/src/content/daily/${date}.${lang}.md  (${items.length} items, status: ${status})`);
   }
 

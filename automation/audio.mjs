@@ -45,9 +45,18 @@ const jstr = (line) => { const m = line.match(/"(?:[^"\\]|\\.)*"/); return m ? J
 function parseIssue(file) {
   const text = readFileSync(file, 'utf8');
   const fm = (text.match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
-  const out = { intro: '', summary: '', date: '', urlSlug: '', items: [] };
-  let cur = null;
+  const out = { intro: '', summary: '', date: '', urlSlug: '', items: [], sponsor: null };
+  let cur = null, inSponsor = false;
   for (const ln of fm.split('\n')) {
+    if (/^sponsor:/.test(ln)) { inSponsor = true; out.sponsor = {}; continue; }
+    if (inSponsor) {
+      if (/^\s+\w+:/.test(ln)) {
+        const k = ln.trim().split(':')[0];
+        out.sponsor[k] = jstr(ln);
+        continue;
+      }
+      inSponsor = false; // dedent → sponsor block ended
+    }
     if (/^intro:/.test(ln)) out.intro = jstr(ln);
     else if (/^summary:/.test(ln)) out.summary = jstr(ln);
     else if (/^date:/.test(ln)) out.date = jstr(ln);
@@ -58,12 +67,21 @@ function parseIssue(file) {
   return out;
 }
 
-const scriptFor = (iss, lang) => [
-  GREET[lang],
-  iss.intro || iss.summary,
-  ...iss.items.map((i) => `${i.headline}. ${i.dek}`),
-  OUTRO[lang],
-].filter(Boolean).join('\n\n');
+const sponsorRead = (sp, lang) => {
+  if (!sp || !sp.name) return '';
+  const lead = lang === 'de' ? `Kurze Werbepause — präsentiert von ${sp.name}.` : `Quick word from today's sponsor, ${sp.name}.`;
+  return [lead, sp.blurb].filter(Boolean).join(' ');
+};
+const scriptFor = (iss, lang) => {
+  const half = Math.ceil(iss.items.length / 2);
+  const itemLines = iss.items.map((i) => `${i.headline.replace(/[.!?]+$/, '')}. ${i.dek}`);
+  const sponsor = sponsorRead(iss.sponsor, lang);
+  // drop the sponsor read mid-roll (after the first half of items) when present
+  const body = sponsor
+    ? [...itemLines.slice(0, half), sponsor, ...itemLines.slice(half)]
+    : itemLines;
+  return [GREET[lang], iss.intro || iss.summary, ...body, OUTRO[lang]].filter(Boolean).join('\n\n');
+};
 
 // rough duration from word count (~150 wpm) when we can't probe the file
 const estDuration = (txt) => {

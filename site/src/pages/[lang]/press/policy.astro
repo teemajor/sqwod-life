@@ -1,0 +1,55 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+
+const c = lang === 'de' ? {
+  title: 'Inhalts-Richtlinie für Pressemitteilungen',
+  intro: 'Wir veröffentlichen Mitteilungen, die für die Fitness- & Wellness-Branche relevant und für unsere Leser:innen — Coaches, Studio-Gründer, Operator, Investoren — wertvoll sind. Einreichung bedeutet keine garantierte Veröffentlichung; wir kuratieren.',
+  okH: 'Was wir veröffentlichen',
+  ok: ['Branchenrelevante Neuigkeiten: Launches, Finanzierungen, Partnerschaften, Personalien, Studien.', 'Faktenbasierte, nachprüfbare Aussagen mit Quelle, wo nötig.', 'Klar erkennbarer Absender und Ansprechpartner.'],
+  noH: 'Was wir ablehnen',
+  no: ['Unbelegte oder irreführende Gesundheits-/Heilversprechen.', 'Hass, Diskriminierung, Diffamierung, Rechtswidriges.', 'Reiner Spam ohne Branchenbezug oder Nachrichtenwert.', 'Inhalte, die Minderjährige gefährden.'],
+  ruleH: 'Kennzeichnung & Unabhängigkeit',
+  rule: 'Alle Mitteilungen werden klar als Unternehmens-Einreichung gekennzeichnet (Anzeige/PR). Sie sind keine redaktionellen Inhalte von Sqwod und beeinflussen unsere Berichterstattung, Bewertungen oder den Sqwod Score nicht. Bezahlte (Premium-)Platzierung ändert nichts an der Prüfung.',
+  contact: 'Fragen? ',
+} : {
+  title: 'Press release content policy',
+  intro: 'We publish releases that are relevant to the fitness & wellness industry and valuable to our readers — coaches, studio founders, operators, investors. Submitting does not guarantee publication; we curate.',
+  okH: 'What we publish',
+  ok: ['Industry-relevant news: launches, funding, partnerships, key hires, studies.', 'Factual, verifiable claims, with a source where needed.', 'A clearly identified sender and contact.'],
+  noH: 'What we reject',
+  no: ['Unsubstantiated or misleading health / medical claims.', 'Hate, discrimination, defamation, anything unlawful.', 'Pure spam with no industry relevance or news value.', 'Anything that endangers minors.'],
+  ruleH: 'Labeling & independence',
+  rule: 'Every release is clearly labeled as a company submission (advertising / PR). It is not Sqwod editorial and does not influence our reporting, reviews, or the Sqwod Score. Paying for premium placement never changes the review.',
+  contact: 'Questions? ',
+};
+---
+<Base lang={lang} title={c.title + ' — Sqwod'} description={c.intro} active="press">
+  <div class="crumb"><a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a> · {c.title}</div>
+  <h1 style="margin:0 0 10px">{c.title}</h1>
+  <p class="verdict">{c.intro}</p>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:16px">
+    <p class="kick">{c.okH}</p>
+    <ul class="pol">{c.ok.map((x) => <li>{x}</li>)}</ul>
+  </section>
+  <section class="block">
+    <p class="kick">{c.noH}</p>
+    <ul class="pol">{c.no.map((x) => <li>{x}</li>)}</ul>
+  </section>
+  <section class="block" style="border-bottom:none">
+    <p class="kick">{c.ruleH}</p>
+    <p class="sub" style="max-width:64ch">{c.rule}</p>
+    <p class="sub">{c.contact}<a href="mailto:pr@sqwod.life">pr@sqwod.life</a> · <a href={`/${lang}/press/submit`}>{lang==='de'?'Einreichen':'Submit'} →</a></p>
+  </section>
+</Base>
+
+<style>
+  .crumb a{color:inherit;text-decoration:none}
+  .pol{margin:8px 0 0;padding-left:20px;color:var(--g1);line-height:1.75}
+</style>
