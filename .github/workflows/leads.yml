@@ -1,0 +1,33 @@
+name: Discovery leads (weekly idea queue)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * 1'   # Mondays ~06:00–07:00 Berlin — fresh idea/source queue for the week
+
+permissions:
+  contents: write
+
+jobs:
+  leads:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Pull industry leads (Athletech News, Outside)
+        run: node automation/leads.mjs --date=$(date +%F) --max=25
+
+      - name: Commit & push (if anything changed)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/leads
+          if git diff --staged --quiet; then
+            echo "No new leads."
+          else
+            git commit -m "leads: weekly idea queue $(date +%F)"
+            git push
+          fi
