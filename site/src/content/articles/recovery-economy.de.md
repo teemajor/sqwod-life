@@ -11,7 +11,6 @@ publishedAt: 2026-06-14
 updatedAt: 2026-06-14
 author: "sqwod.life"
 gated: false
-icon: recovery
 sourceIds: ["stat-recovery-spend-2026"]
 hero:
   kind: bars

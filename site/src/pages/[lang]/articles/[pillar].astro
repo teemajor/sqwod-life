@@ -1,11 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import Glyph from '../../../components/Glyph.astro';
-import ArticleGlyph from '../../../components/ArticleGlyph.astro';
 import PillarIcon from '../../../components/PillarIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
-import { PILLARS, pillarMeta, type Pillar } from '../../../i18n/pillars';
+import { PILLARS, pillarMeta, pillarGlyph, type Pillar } from '../../../i18n/pillars';
 
 export function getStaticPaths() {
   return languages.flatMap((lang) => PILLARS.map((pillar) => ({ params: { lang, pillar } })));
@@ -38,7 +37,7 @@ const fmtLabel = (f: string) => f === 'report' ? 'Report' : f === 'index' ? 'Ind
     <div class="grid cols2">
     {articles.map((a) => (
       <a class="card" style="grid-template-columns:52px 1fr" href={articleHref(a)}>
-        <ArticleGlyph icon={a.data.icon} pillar={a.data.pillar} size={52} />
+        <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
         <div class="info">
           <span class="bestfor">{fmtLabel(a.data.format)}</span>
           <h3>{a.data.title}</h3>

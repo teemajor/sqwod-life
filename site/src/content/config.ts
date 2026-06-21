@@ -88,9 +88,6 @@ const articles = defineCollection({
     updatedAt: z.coerce.date(),
     author: z.string().default('sqwod.life'),
     gated: z.boolean().default(false),
-    // topical per-article glyph (ArticleGlyph); falls back to a per-pillar default.
-    // e.g. smart-ring | recovery | retention | ai-prompt | growth | megaphone | automation | market | founder | ai-spark
-    icon: z.string().optional(),
     sourceIds: z.array(z.string()).default([]), // provenance → living wiki
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({

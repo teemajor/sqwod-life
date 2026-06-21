@@ -11,7 +11,6 @@ publishedAt: 2026-06-16
 updatedAt: 2026-06-16
 author: "sqwod.life"
 gated: false
-icon: ai-prompt
 sourceIds: []
 hero:
   kind: orbit
