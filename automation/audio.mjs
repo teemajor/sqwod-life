@@ -45,7 +45,7 @@ const jstr = (line) => { const m = line.match(/"(?:[^"\\]|\\.)*"/); return m ? J
 function parseIssue(file) {
   const text = readFileSync(file, 'utf8');
   const fm = (text.match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
-  const out = { intro: '', summary: '', date: '', urlSlug: '', items: [], sponsor: null };
+  const out = { intro: '', summary: '', date: '', urlSlug: '', audioScript: '', items: [], sponsor: null };
   let cur = null, inSponsor = false;
   for (const ln of fm.split('\n')) {
     if (/^sponsor:/.test(ln)) { inSponsor = true; out.sponsor = {}; continue; }
@@ -57,7 +57,8 @@ function parseIssue(file) {
       }
       inSponsor = false; // dedent → sponsor block ended
     }
-    if (/^intro:/.test(ln)) out.intro = jstr(ln);
+    if (/^audioScript:/.test(ln)) out.audioScript = jstr(ln);
+    else if (/^intro:/.test(ln)) out.intro = jstr(ln);
     else if (/^summary:/.test(ln)) out.summary = jstr(ln);
     else if (/^date:/.test(ln)) out.date = jstr(ln);
     else if (/^urlSlug:/.test(ln)) out.urlSlug = jstr(ln);
@@ -73,10 +74,18 @@ const sponsorRead = (sp, lang) => {
   return [lead, sp.blurb].filter(Boolean).join(' ');
 };
 const scriptFor = (iss, lang) => {
+  const sponsor = sponsorRead(iss.sponsor, lang);
+  // Preferred path: the cascade authored a real spoken brief (written for the ear).
+  // Use it verbatim; inject the sponsor read between paragraphs (roughly mid-roll).
+  if (iss.audioScript && iss.audioScript.trim()) {
+    if (!sponsor) return iss.audioScript.trim();
+    const paras = iss.audioScript.trim().split('\n').filter(Boolean);
+    const mid = Math.max(1, Math.floor(paras.length / 2));
+    return [...paras.slice(0, mid), sponsor, ...paras.slice(mid)].join('\n\n');
+  }
+  // Fallback (dry-run / legacy issues with no authored script): stitch from frontmatter.
   const half = Math.ceil(iss.items.length / 2);
   const itemLines = iss.items.map((i) => `${i.headline.replace(/[.!?]+$/, '')}. ${i.dek}`);
-  const sponsor = sponsorRead(iss.sponsor, lang);
-  // drop the sponsor read mid-roll (after the first half of items) when present
   const body = sponsor
     ? [...itemLines.slice(0, half), sponsor, ...itemLines.slice(half)]
     : itemLines;

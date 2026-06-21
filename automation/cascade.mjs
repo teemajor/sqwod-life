@@ -130,6 +130,43 @@ Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, dea
   } catch (e) { console.error('lead generation failed:', e.message); return null; }
 }
 
+// ---- SPOKEN BRIEF: a daily news brief written for the EAR, not the page ----
+// Distinct from the on-page copy: a host reading you the day's fitness-business
+// news — factual, fun, and you walk away knowing something new. Drives the TTS.
+async function generateAudioScript(items, sections, lang) {
+  if (!apiKey || !items.length) return '';
+  const langName = lang === 'de' ? 'German' : 'English';
+  const list = items.map((i, n) => `${n + 1}. ${i.headline} — ${i.dek}`).join('\n');
+  const thread = sections?.connectTitle ? `Today's through-line: ${sections.connectTitle} — ${sections.connectBody || ''}` : '';
+  const prompt = `You are the host of Sqwod Daily, a spoken news brief on the business of fitness and wellness. Write the FULL script for today's episode in ${langName}, to be read aloud by one host.
+
+This is AUDIO, not an article. It must sound like a smart, fun person telling you the day's news — NOT a list being read out. The listener should walk away having actually learned something: a number, a shift, a "huh, didn't know that." Factual first; the fun is in the delivery.
+
+Today's stories (these are the ONLY facts available — never invent numbers, companies, or deals):
+${list}
+${thread}
+
+Write the script with:
+- A short cold open (1–2 sentences) that hooks — a hook, a number, or a wry line. Do NOT start with "Welcome" or "Hello".
+- The stories woven into a flowing brief with spoken transitions ("First up...", "Meanwhile...", "And here's the part most people miss..."). Add the ONE useful insight or "so what" per story — that's the knowledge they walk away with.
+- A quick sign-off line in Sqwod's voice.
+- Length: 280–420 words. Conversational sentences, contractions, said-out-loud rhythm. No headers, no bullet points, no stage directions, no "[pause]". German must be native, idiomatic spoken German — never a translation.
+
+Respond ONLY as minified JSON: {"script":"the full spoken script as one string, paragraphs separated by \\n"}`;
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: MODEL, max_tokens: 1400, messages: [{ role: 'user', content: prompt }] }),
+    });
+    if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
+    const data = await r.json();
+    const txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
+    const obj = JSON.parse(txt);
+    return typeof obj.script === 'string' ? obj.script.trim() : '';
+  } catch (e) { console.error(`audio-script generation failed (${lang}):`, e.message); return ''; }
+}
+
 // Pick a Sqwod Verified review to feature as the affiliate rec (keeps recs monetized + factual).
 const REVIEWS_DIR = join(__dirname, '..', 'site', 'src', 'content', 'reviews');
 function pickAffiliateRec(lang) {
@@ -219,6 +256,7 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
       : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care.")}`,
   ];
   const s = sections || {};
+  if (s.audioScript) lines.push(`audioScript: ${q(s.audioScript)}`);  // spoken brief (ear, not page)
   if (s.connectTitle) {
     lines.push('connectDots:');
     lines.push(`  title: ${q(s.connectTitle)}`);
@@ -309,6 +347,8 @@ async function run() {
         blocking.forEach((i) => console.log(`   · ${i.claim} — ${i.problem}`));
       }
     }
+    sections.audioScript = await generateAudioScript(items, sections, lang);  // spoken brief for TTS (verified facts only)
+    if (sections.audioScript) console.log(`🎙  ${lang.toUpperCase()} audio brief authored (${sections.audioScript.split(/\s+/).length} words)`);
     const file = join(DAILY_OUT, `${date}.${lang}.md`);
     writeFileSync(file, issueFrontmatter(date, lang, items, sections, issueStatus));
     console.log(`✓ ${lang.toUpperCase()} issue → site/src/content/daily/${date}.${lang}.md  (${items.length} items, status: ${issueStatus})`);

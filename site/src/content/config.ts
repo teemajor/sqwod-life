@@ -120,6 +120,7 @@ const daily = defineCollection({
     intro: z.string().optional(),
     summary: z.string().optional(),     // one-line episode headline for the list
     duration: z.string().optional(),    // e.g. "2:51"
+    audioScript: z.string().optional(), // spoken-word brief written for the ear (NOT rendered on page) — drives TTS
     status: z.enum(['draft', 'review', 'published']).default('draft'),
     // Richer "teaching" newsletter sections (optional; degrade gracefully):
     connectDots: z.object({ title: z.string(), body: z.string(), image: z.string().optional(), credit: z.string().optional() }).optional(), // the synthesis lead w/ hero image
