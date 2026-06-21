@@ -1,0 +1,30 @@
+---
+// Category-aligned monochrome icons for Sqwod Verified. Reuses the .glyphbox frame.
+interface Props { cat: string; size?: number }
+const { cat, size = 46 } = Astro.props;
+const C = '#FAFAFA';
+const isz = Math.round(size * 0.56);
+
+const icons: Record<string, string> = {
+  // smartwatch
+  wearables: `<rect x="7" y="6" width="10" height="12" rx="3"/><path d="M9.5 6V3.6h5V6M9.5 18v2.4h5V18"/><circle cx="12" cy="12" r="2.4"/>`,
+  // heartbeat / pulse
+  recovery: `<path d="M3 12.5h3.5l1.8-4.5 3 9 2.2-6 1.4 1.5H21"/>`,
+  // crescent moon
+  sleep: `<path d="M20 13.6A7.6 7.6 0 1 1 10.4 4 6 6 0 0 0 20 13.6Z" fill="${C}" stroke="none"/>`,
+  // capsule / pill
+  supplements: `<rect x="8.4" y="3.2" width="7.2" height="17.6" rx="3.6"/><line x1="8.4" y1="12" x2="15.6" y2="12"/>`,
+  // dumbbell
+  'connected-fitness': `<path d="M5 8.5v7M3 10.5v3M19 8.5v7M21 10.5v3"/><line x1="7" y1="12" x2="17" y2="12"/>`,
+  // t-shirt
+  apparel: `<path d="M8.5 4 5 7.2l2 2 1.2-1.1V20h7.6V8.1l1.2 1.1 2-2L16.5 4l-2 1.6a3 3 0 0 1-4 0Z"/>`,
+  // phone / app
+  apps: `<rect x="7" y="3" width="10" height="18" rx="2.5"/><rect x="9.4" y="6" width="5.2" height="5.2" rx="1.2"/><circle cx="12" cy="17.6" r="0.9" fill="${C}" stroke="none"/>`,
+  // building / studio
+  'studio-tools': `<path d="M4 9.5 12 4l8 5.5"/><path d="M5.5 9.5V20h13V9.5"/><rect x="10" y="13.5" width="4" height="6.5"/>`,
+};
+const path = icons[cat] || icons.wearables;
+---
+<div class="glyphbox" style={`width:${size}px;height:${size}px`} aria-hidden="true">
+  <svg width={isz} height={isz} viewBox="0 0 24 24" fill="none" stroke={C} stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" set:html={path}></svg>
+</div>

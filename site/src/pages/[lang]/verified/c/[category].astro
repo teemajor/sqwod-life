@@ -1,6 +1,6 @@
 ---
 import Base from '../../../../layouts/Base.astro';
-import Glyph from '../../../../components/Glyph.astro';
+import CategoryIcon from '../../../../components/CategoryIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
 import { categories, byCategory } from '../../../../config/verified-categories';
@@ -41,7 +41,7 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
     {enriched.map(({ p, r }, i) => (
       <div class={`row${i===0 ? ' top' : ''}`}>
         <div class="rank">{i + 1}</div>
-        <div class="thumb"><Glyph kind={cat.glyph} size={52} /></div>
+        <div class="thumb"><CategoryIcon cat={cat.slug} size={52} /></div>
         <div class="main">
           <div class="tags">
             {r ? <span class="tag rev">{tx.reviewed}</span> : <span class="tag ed">{tx.editorial}</span>}

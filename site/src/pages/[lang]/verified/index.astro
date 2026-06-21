@@ -1,6 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import Glyph from '../../../components/Glyph.astro';
+import CategoryIcon from '../../../components/CategoryIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
 import { categories } from '../../../config/verified-categories';
@@ -38,7 +38,7 @@ const blurb = lang === 'de'
   <div class="cat-grid">
     {cards.map(({ c, reviewed, total, names }, i) => (
       <a class={`cat reveal d${(i % 6) + 1}`} href={`/${lang}/verified/c/${c.slug}`}>
-        <div class="cat-ic"><Glyph kind={c.glyph} size={46} /></div>
+        <div class="cat-ic"><CategoryIcon cat={c.slug} size={46} /></div>
         <div class="cat-body">
           <h3>{c.label[lang]}</h3>
           <p>{c.blurb[lang]}</p>
