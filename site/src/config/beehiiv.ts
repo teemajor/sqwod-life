@@ -3,6 +3,7 @@
 export const BEEHIIV = {
   // Embedded subscribe form (Settings → Subscribe Forms → Embed). Paste the iframe src.
   embedUrl: '', // e.g. 'https://embeds.beehiiv.com/xxxxxxxx'
-  // Hosted subscribe page fallback (your-pub.beehiiv.com). Accepts ?email=
-  subscribeUrl: '', // e.g. 'https://sqwod.beehiiv.com/subscribe'
+  // beehiiv magic link — one-click subscribe that accepts ?email=. The GET form
+  // appends the entered address, e.g. ...?email=you@studio.com
+  subscribeUrl: 'https://magic.beehiiv.com/v1/f9609349-0c10-4b6e-9ed4-61456d38ee05',
 };

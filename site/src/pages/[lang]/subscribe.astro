@@ -42,6 +42,16 @@ const c = lang === 'de' ? {
       )}
     </div>
   </div>
+
+  <script is:inline>
+    // Prefill the email from the ?email= handed off by the homepage quick-capture forms.
+    (function () {
+      try {
+        var e = new URLSearchParams(location.search).get('email');
+        if (e) { var i = document.querySelector('.bform input[name="email"]'); if (i) i.value = e; }
+      } catch (_) {}
+    })();
+  </script>
 </Base>
 
 <style>
