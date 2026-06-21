@@ -2,12 +2,14 @@
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
-import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../../config/podcast';
+import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/podcast';
+import { existsSync } from 'node:fs';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
+const hasAudio = (slug: string) => existsSync(new URL(`../../../../public${episodeAudio(slug, lang)}`, import.meta.url));
 
 const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
@@ -39,16 +41,21 @@ const RSS_URL = rssFor(lang);
   <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
     <p class="kick">{lang==='de'?'Alle Folgen':'All episodes'}</p>
     <div class="ep-list">
-      {issues.map((iss) => (
-        <a class="ep-row" href={`/${lang}/daily/${iss.data.urlSlug}`}>
-          <span class="ep-date">{fmt(iss.data.date)}</span>
-          <span class="ep-title">
-            {epLine(iss)}
-            {iss.data.status !== 'published' && <span class="ep-draft">{lang==='de'?'Entwurf':'Draft'}</span>}
-          </span>
-          <span class="ep-dur"><span class="ep-play">▶</span>{iss.data.duration ?? '—'}</span>
-        </a>
-      ))}
+      {issues.map((iss) => {
+        const ha = hasAudio(iss.data.urlSlug);
+        return (
+          <a class={`ep-row${ha ? '' : ' noaudio'}`} href={`/${lang}/daily/${iss.data.urlSlug}`}>
+            <span class="ep-date">{fmt(iss.data.date)}</span>
+            <span class="ep-title">
+              {epLine(iss)}
+              {iss.data.status !== 'published' && <span class="ep-draft">{lang==='de'?'Entwurf':'Draft'}</span>}
+            </span>
+            {ha
+              ? <span class="ep-dur"><span class="ep-play">▶</span>{iss.data.duration ?? '5 min'}</span>
+              : <span class="ep-read">{lang==='de'?'Lesen →':'Read →'}</span>}
+          </a>
+        );
+      })}
     </div>
   </section>
 
@@ -66,6 +73,8 @@ const RSS_URL = rssFor(lang);
   .ep-dur{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--g2);font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
   .ep-play{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--line);border-radius:50%;font-size:9px;color:var(--chalk);padding-left:2px}
   .ep-row:hover .ep-play{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
+  .ep-read{font-size:12px;font-weight:700;color:var(--g3);white-space:nowrap}
+  .ep-row:hover .ep-read{color:var(--chalk)}
   @media(max-width:600px){
     .ep-row{grid-template-columns:1fr auto;gap:6px 12px}
     .ep-date{grid-column:1 / -1;order:-1}
