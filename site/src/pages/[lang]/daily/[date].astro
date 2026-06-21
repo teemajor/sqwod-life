@@ -7,7 +7,8 @@ import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/po
 import { existsSync } from 'node:fs';
 
 export async function getStaticPaths() {
-  const issues = await getCollection('daily');
+  // Only build published editions — drafts stay off the live site.
+  const issues = (await getCollection('daily')).filter((iss) => iss.data.status === 'published');
   return issues.map((iss) => ({
     params: { lang: iss.data.lang, date: iss.data.urlSlug },
     props: { entry: iss },
@@ -54,8 +55,8 @@ const tx = {
     {hasAudio && <audio controls preload="none" src={audioPath} style="width:100%"></audio>}
     <div class="listen">
       <span class="ll">{tx.listen}:</span>
-      <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>
-      <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>
+      {APPLE_URL !== '#' && <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
+      {SPOTIFY_URL !== '#' && <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>}
       <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
     </div>
   </section>

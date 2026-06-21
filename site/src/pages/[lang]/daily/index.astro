@@ -9,7 +9,7 @@ export function getStaticPaths() {
 }
 const lang = Astro.params.lang as Lang;
 
-const issues = (await getCollection('daily', (i) => i.data.lang === lang))
+const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latest = issues[0];
 const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
@@ -28,8 +28,8 @@ const RSS_URL = rssFor(lang);
       <p class="sub" style="margin:0 0 14px">{blurb}</p>
       <div class="listen">
         <span class="ll">{lang==='de'?'Hören auf':'Listen on'}:</span>
-        <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>
-        <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>
+        {APPLE_URL !== '#' && <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
+        {SPOTIFY_URL !== '#' && <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>}
         <a class="lp" href={RSS_URL} target="_blank" rel="noopener">RSS</a>
         <a class="lp sub-cta" href={`/${lang}/subscribe`}>{lang==='de'?'Per E-Mail':'By email'}</a>
       </div>

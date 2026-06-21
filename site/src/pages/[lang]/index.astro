@@ -10,13 +10,14 @@ export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
-const issues = (await getCollection('daily', (i) => i.data.lang === lang)).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latestHref = issues[0] ? `/${lang}/daily/${issues[0].data.urlSlug}` : `/${lang}/daily`;
+// Only surface platforms that have a real URL (drops dead "#" links until configured).
 const platforms = [
   { name: 'Apple Podcasts', url: APPLE_URL }, { name: 'Spotify', url: SPOTIFY_URL },
   { name: 'YouTube', url: '#' }, { name: 'Amazon Music', url: '#' },
   { name: 'iHeartRadio', url: '#' }, { name: 'RSS', url: rssFor(lang) },
-];
+].filter((p) => p.url && p.url !== '#');
 const title = lang === 'de'
   ? 'Sqwod — dein Vorsprung im Fitness-Business'
   : 'Sqwod — your edge in the business of fitness';
