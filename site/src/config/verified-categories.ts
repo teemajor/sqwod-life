@@ -57,8 +57,8 @@ export const categories: Category[] = [
       de: 'Percussion-, Kompressions- und Wärme/Kälte-Tools, mit denen Kund:innen schneller wieder trainieren.',
     },
     picks: [
-      { product: 'Theragun (Prime/Pro)', brand: 'Therabody', url: 'https://www.therabody.com/', affiliate: true,
-        bestFor: { en: 'Percussion massage', de: 'Percussion-Massage' }, why: { en: 'The category-defining massage gun — quiet, well-built, deep app library. Review coming.', de: 'Die kategoriebestimmende Massage-Gun — leise, hochwertig, große App-Bibliothek. Test folgt.' } },
+      { product: 'Theragun Prime Plus', brand: 'Therabody', url: 'https://www.therabody.com/', affiliate: true, reviewSlug: 'theragun-prime-plus',
+        bestFor: { en: 'Percussion + heat', de: 'Percussion + Wärme' }, why: { en: 'Deep 16mm percussion plus fast heat in a grip you can hold all session.', de: 'Tiefe 16-mm-Percussion plus schnelle Wärme in einem Griff für die ganze Session.' } },
       { product: 'Hyperice Hypervolt / Normatec', brand: 'Hyperice', url: 'https://hyperice.com/', affiliate: true,
         bestFor: { en: 'Compression boots', de: 'Kompressions-Stiefel' }, why: { en: 'Normatec boots are the studio-recovery standard; Hypervolt rivals Theragun. Review coming.', de: 'Normatec-Stiefel sind der Studio-Recovery-Standard; Hypervolt fordert Theragun heraus. Test folgt.' } },
     ],
@@ -72,8 +72,8 @@ export const categories: Category[] = [
       de: 'Temperatur-, Licht- und Klang-Systeme für den meistunterschätzten Leistungs-Hebel.',
     },
     picks: [
-      { product: 'Eight Sleep Pod', brand: 'Eight Sleep', url: 'https://www.eightsleep.com/', affiliate: true,
-        bestFor: { en: 'Temperature control', de: 'Temperatur-Steuerung' }, why: { en: 'Active heating/cooling mattress cover with sleep tracking — premium, effective. Review coming.', de: 'Aktiv heizende/kühlende Matratzenauflage mit Schlaf-Tracking — premium, wirksam. Test folgt.' } },
+      { product: 'Eight Sleep Pod 4', brand: 'Eight Sleep', url: 'https://www.eightsleep.com/', affiliate: true, reviewSlug: 'eight-sleep-pod-4',
+        bestFor: { en: 'Temperature control', de: 'Temperatur-Steuerung' }, why: { en: 'The most effective sleep-temperature system — dual-zone heating/cooling that works.', de: 'Das wirksamste Schlaf-Temperatursystem — Zwei-Zonen-Heizen/Kühlen, das funktioniert.' } },
       { product: 'Hatch Restore', brand: 'Hatch', url: 'https://www.hatch.co/', affiliate: true,
         bestFor: { en: 'Wind-down & wake', de: 'Runterkommen & Aufwachen' }, why: { en: 'Sunrise alarm + sound for a screen-free wind-down routine. Review coming.', de: 'Sonnenaufgangs-Wecker + Sound für eine bildschirmfreie Abendroutine. Test folgt.' } },
     ],
@@ -87,8 +87,8 @@ export const categories: Category[] = [
       de: 'Laborgeprüfte Basics, die man empfehlen kann — Protein, Kreatin, tägliche Essentials.',
     },
     picks: [
-      { product: 'Momentous (Protein/Creatine)', brand: 'Momentous', url: 'https://www.livemomentous.com/', affiliate: true,
-        bestFor: { en: 'NSF-certified basics', de: 'NSF-zertifizierte Basics' }, why: { en: 'Sports-science supplements with NSF/Informed-Sport testing — safe to recommend to athletes. Review coming.', de: 'Sport-Supplements mit NSF/Informed-Sport-Prüfung — bedenkenlos für Athlet:innen. Test folgt.' } },
+      { product: 'Momentous (Creatine + Protein)', brand: 'Momentous', url: 'https://www.livemomentous.com/', affiliate: true, reviewSlug: 'momentous',
+        bestFor: { en: 'NSF-certified basics', de: 'NSF-zertifizierte Basics' }, why: { en: 'Sports-science supplements with NSF/Informed-Sport testing — safe to recommend to tested athletes.', de: 'Sport-Supplements mit NSF/Informed-Sport-Prüfung — bedenkenlos für getestete Athlet:innen.' } },
       { product: 'Ritual Essential', brand: 'Ritual', url: 'https://ritual.com/', affiliate: true,
         bestFor: { en: 'Daily multivitamin', de: 'Tägliches Multivitamin' }, why: { en: 'Transparent, traceable multivitamins — a clean default for general clients. Review coming.', de: 'Transparente, rückverfolgbare Multivitamine — saubere Standardwahl. Test folgt.' } },
       { product: 'Seed DS-01', brand: 'Seed', url: 'https://seed.com/', affiliate: true,

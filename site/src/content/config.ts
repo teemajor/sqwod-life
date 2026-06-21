@@ -22,7 +22,7 @@ const reviews = defineCollection({
     title: z.string(),
     productName: z.string(),
     category: z.string(),
-    glyph: z.enum(['ring', 'watch', 'band', 'tracker']).default('ring'),
+    glyph: z.enum(['ring', 'watch', 'band', 'tracker', 'massager', 'bed', 'supplement']).default('ring'),
     gallery: z.number().default(4), // how many gallery frames the quick-look shows
     pillar: pillar.default('operations-technology'),
     conversion: conversion.default('verified'),

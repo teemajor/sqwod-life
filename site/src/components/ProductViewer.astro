@@ -55,7 +55,30 @@ const { lang, glb, glyph = 'ring' } = Astro.props;
     var face=box(0.6,1.25,0.06,glass); face.position.z=0.69; g.add(face);
     g.rotation.x=0.5; return g;
   }
-  var model = glyph==='watch'?buildWatch() : glyph==='band'?buildBand() : glyph==='tracker'?buildTracker() : buildRing();
+  function buildMassager(){ // percussion gun: handle + angled head
+    var g=new THREE.Group();
+    var handle=new THREE.Mesh(new THREE.CylinderGeometry(0.34,0.40,2.1,32),ink); handle.position.y=-0.6; g.add(handle);
+    var neck=new THREE.Mesh(new THREE.CylinderGeometry(0.22,0.22,0.9,24),chrome); neck.position.set(0,0.7,0); g.add(neck);
+    var head=new THREE.Mesh(new THREE.SphereGeometry(0.5,32,24),chrome); head.position.set(0,1.25,0); g.add(head);
+    var tip=new THREE.Mesh(new THREE.SphereGeometry(0.26,24,18),ink); tip.position.set(0,1.7,0); g.add(tip);
+    g.rotation.z=0.25; return g;
+  }
+  function buildBed(){ // mattress / temp cover: flat rounded box
+    var g=new THREE.Group();
+    var base=new THREE.Mesh(new THREE.BoxGeometry(3.2,0.5,2.2),ink); g.add(base);
+    var top=new THREE.Mesh(new THREE.BoxGeometry(3.0,0.18,2.0),chrome); top.position.y=0.34; g.add(top);
+    var pillow=new THREE.Mesh(new THREE.BoxGeometry(1.1,0.3,0.7),chrome); pillow.position.set(-0.85,0.5,-0.5); g.add(pillow);
+    g.rotation.x=0.5; g.rotation.y=-0.4; return g;
+  }
+  function buildSupplement(){ // tub / bottle: cylinder + lid
+    var g=new THREE.Group();
+    var body=new THREE.Mesh(new THREE.CylinderGeometry(0.95,0.95,1.9,48),chrome); g.add(body);
+    var lid=new THREE.Mesh(new THREE.CylinderGeometry(1.0,1.0,0.45,48),ink); lid.position.y=1.15; g.add(lid);
+    var band=new THREE.Mesh(new THREE.CylinderGeometry(0.97,0.97,0.7,48),ink); band.position.y=-0.1; band.scale.set(1,1,1); g.add(band);
+    return g;
+  }
+  var model = glyph==='watch'?buildWatch() : glyph==='band'?buildBand() : glyph==='tracker'?buildTracker()
+    : glyph==='massager'?buildMassager() : glyph==='bed'?buildBed() : glyph==='supplement'?buildSupplement() : buildRing();
   group.add(model); scene.add(group);
 
   scene.add(new THREE.AmbientLight(0xffffff,0.35));
