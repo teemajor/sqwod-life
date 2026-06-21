@@ -3,14 +3,64 @@ import Base from '../../layouts/Base.astro';
 import { languages, type Lang } from '../../i18n/ui';
 export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
 const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
 ---
-<Base lang={lang} title={lang==='de'?'Datenschutz — Sqwod':'Privacy — Sqwod'} active="">
+<Base lang={lang} title={de ? 'Datenschutz — Sqwod' : 'Privacy — Sqwod'} active="">
   <div class="measure">
-    <div class="crumb">{lang==='de'?'Datenschutz':'Privacy'}</div>
-    <h1>{lang==='de'?'Datenschutzerklärung':'Privacy policy'}</h1>
-    <p class="prose" style="margin-top:14px">{lang==='de'
-      ? 'Platzhalter — vollständige, DSGVO-konforme Datenschutzerklärung vor dem Launch ergänzen (Verantwortliche:r, Verarbeitungszwecke, Rechtsgrundlagen, Consent-Management, Drittanbieter, Betroffenenrechte).'
-      : 'Placeholder — add the full, GDPR-compliant privacy policy before launch (controller, purposes, legal bases, consent management, third parties, data-subject rights).'}</p>
-    <p class="prose">Sqwod · Berlin · tee@sqwod.life</p>
+    <div class="crumb">{de ? 'Datenschutz' : 'Privacy'}</div>
+    <h1>{de ? 'Datenschutzerklärung' : 'Privacy policy'}</h1>
+    <div class="prose dsg">
+
+      <p class="lbl">{de ? '1. Verantwortlicher' : '1. Controller'}</p>
+      <p>
+        Thomas Major<br />
+        Wisbyer Str. 70, 10439 Berlin, {de ? 'Deutschland' : 'Germany'}<br />
+        {de ? 'E-Mail' : 'Email'}: <a href="mailto:tee@sqwod.life">tee@sqwod.life</a> · {de ? 'Telefon' : 'Phone'}: +49 176 43220085
+      </p>
+
+      <p class="lbl">{de ? '2. Hosting & Server-Logs' : '2. Hosting & server logs'}</p>
+      <p>{de
+        ? 'Diese Website wird auf GitHub Pages gehostet (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). Beim Aufruf verarbeitet der Hoster technisch notwendige Zugriffsdaten (u. a. IP-Adresse, Datum/Uhrzeit, abgerufene Datei, Browser-/Gerätedaten), um die Seite auszuliefern und ihre Sicherheit und Stabilität zu gewährleisten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einem sicheren, effizienten Betrieb). Dabei können Daten in die USA übermittelt werden.'
+        : 'This website is hosted on GitHub Pages (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA). When you visit, the host processes technically necessary access data (e.g. IP address, date/time, requested file, browser/device data) to deliver the site and ensure its security and stability. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in secure, efficient operation). Data may be transferred to the USA.'}</p>
+
+      <p class="lbl">{de ? '3. Newsletter (Sqwod Daily)' : '3. Newsletter (Sqwod Daily)'}</p>
+      <p>{de
+        ? 'Für den Versand des Newsletters nutzen wir den Dienst beehiiv (beehiiv, Inc., USA). Wenn du dich anmeldest, verarbeiten wir deine E-Mail-Adresse sowie zu Nachweiszwecken Zeitpunkt und IP-Adresse der Anmeldung (Double-Opt-in). Rechtsgrundlage ist deine Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO. Du kannst dich jederzeit über den Abmeldelink in jeder E-Mail abmelden und damit deine Einwilligung widerrufen. beehiiv verarbeitet die Daten in unserem Auftrag; eine Übermittlung in die USA findet statt.'
+        : 'To send the newsletter we use beehiiv (beehiiv, Inc., USA). When you subscribe we process your email address and, as proof of consent, the time and IP address of your sign-up (double opt-in). Legal basis: your consent under Art. 6(1)(a) GDPR. You can unsubscribe at any time via the link in every email, withdrawing your consent. beehiiv processes the data on our behalf; a transfer to the USA takes place.'}</p>
+
+      <p class="lbl">{de ? '4. Eingebundene Inhalte (CDN)' : '4. Embedded content (CDN)'}</p>
+      <p>{de
+        ? 'Auf einzelnen Produktseiten (Sqwod Verified) wird für die 3D-Produktansicht die JavaScript-Bibliothek „three.js" über das CDN cdnjs (Cloudflare, Inc., USA) geladen. Dabei wird deine IP-Adresse an Cloudflare übermittelt. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen Darstellung).'
+        : 'On individual product pages (Sqwod Verified), the JavaScript library “three.js” is loaded from the cdnjs CDN (Cloudflare, Inc., USA) for the 3D product viewer. This transmits your IP address to Cloudflare. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a functional presentation).'}</p>
+
+      <p class="lbl">{de ? '5. Kontakt & Formulare' : '5. Contact & forms'}</p>
+      <p>{de
+        ? 'Wenn du uns per E-Mail kontaktierst oder ein Formular (z. B. die Pressemitteilungs-Einreichung) absendest, verarbeiten wir die von dir angegebenen Daten, um deine Anfrage zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO. Die Daten werden gelöscht, sobald sie für den Zweck nicht mehr erforderlich sind.'
+        : 'If you contact us by email or submit a form (e.g. the press-release submission), we process the data you provide in order to handle your request. Legal basis: Art. 6(1)(b) or (f) GDPR. The data is deleted once it is no longer needed for that purpose.'}</p>
+
+      <p class="lbl">{de ? '6. Keine Cookies, kein Tracking' : '6. No cookies, no tracking'}</p>
+      <p>{de
+        ? 'Diese Website setzt keine Cookies und verwendet keine Analyse-, Tracking- oder Werbe-Tools.'
+        : 'This website sets no cookies and uses no analytics, tracking, or advertising tools.'}</p>
+
+      <p class="lbl">{de ? '7. Deine Rechte' : '7. Your rights'}</p>
+      <p>{de
+        ? 'Du hast das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen. Wende dich dazu an die oben genannten Kontaktdaten.'
+        : 'You have the right to access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20), and to object to processing (Art. 21 GDPR). You may withdraw any consent at any time with future effect. To exercise these rights, contact us using the details above.'}</p>
+
+      <p class="lbl">{de ? '8. Beschwerderecht' : '8. Right to complain'}</p>
+      <p>{de
+        ? 'Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO) — zuständig ist die Berliner Beauftragte für Datenschutz und Informationsfreiheit.'
+        : 'You have the right to lodge a complaint with a data-protection supervisory authority (Art. 77 GDPR) — the competent authority is the Berlin Commissioner for Data Protection and Freedom of Information (Berliner Beauftragte für Datenschutz und Informationsfreiheit).'}</p>
+
+      <p class="dsg-date">{de ? 'Stand: Juni 2026' : 'Last updated: June 2026'}</p>
+    </div>
   </div>
 </Base>
+
+<style>
+  .dsg .lbl{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin:24px 0 6px}
+  .dsg p{line-height:1.65;margin:0 0 6px;color:var(--g1)}
+  .dsg a{color:var(--chalk);text-decoration:underline}
+  .dsg-date{font-size:12px;color:var(--g4);margin-top:26px}
+</style>
