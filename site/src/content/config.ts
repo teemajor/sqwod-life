@@ -92,7 +92,6 @@ const articles = defineCollection({
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({
       kind: z.enum(['line', 'bars', 'orbit']).default('line'),
-      art: z.string().optional(),       // custom hand-drawn illustration, e.g. "/heroes/<slug>.svg" (in site/public/heroes/)
       stat: z.string().optional(),
       statLabel: z.string().optional(),
     }).optional(),

@@ -1,15 +1,9 @@
 ---
 // Per-article animated hero. Same monochrome discipline, unique per article.
-// When `art` is set, show that custom hand-drawn illustration full-bleed
-// (pure illustration, no overlay); otherwise fall back to the generated viz.
-interface Props { kind?: string; art?: string; tag?: string; stat?: string; statLabel?: string }
-const { kind = 'line', art, tag, stat, statLabel } = Astro.props;
+// In production this renders to an optimized GIF via the same pipeline.
+interface Props { kind?: string; tag?: string; stat?: string; statLabel?: string }
+const { kind = 'line', tag, stat, statLabel } = Astro.props;
 ---
-{art ? (
-  <div class="arthero has-art">
-    <img class="ah-art" src={art} alt="" loading="lazy" decoding="async" />
-  </div>
-) : (
 <div class="arthero">
   <div class="ah-viz">
     {kind === 'line' && (
@@ -30,4 +24,3 @@ const { kind = 'line', art, tag, stat, statLabel } = Astro.props;
   {tag && <span class="ah-tag">{tag}</span>}
   {stat && <div class="ah-stat">{stat}{statLabel && <small>{statLabel}</small>}</div>}
 </div>
-)}
