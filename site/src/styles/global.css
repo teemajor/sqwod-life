@@ -294,15 +294,12 @@ body{background:radial-gradient(120% 80% at 50% -8%, #17171c 0%, #0b0b0d 58%) fi
 /* consistent section/pillar wayfinding icons */
 .pillaricon{color:var(--chalk)}
 .pillaricon svg{animation:iconbob 4.5s ease-in-out infinite}
-/* per-article topical glyph: line base + one accent colour */
-.artglyph{color:#e9e9ee}
-.artglyph svg{animation:iconbob 4.5s ease-in-out infinite}
-.artglyph svg .ac{stroke:var(--ac)}
-.artglyph svg .fill{fill:var(--ac);stroke:none;filter:drop-shadow(0 0 2px color-mix(in srgb,var(--ac) 70%,transparent))}
-.artglyph svg .dot{filter:drop-shadow(0 0 2.5px var(--ac))}
-.artglyph svg .spark{animation:twinkle 2.6s ease-in-out infinite}
+/* per-article topical glyph: hand-drawn white line art on black, self-sketching */
+.artglyph{color:#fafafa;background:#050506}
+.artglyph svg{animation:iconbob 5s ease-in-out infinite}
+.artglyph svg path,.artglyph svg rect,.artglyph svg circle,.artglyph svg ellipse,.artglyph svg line,.artglyph svg polyline{
+  stroke-dasharray:220;stroke-dashoffset:220;animation:draw 4.8s ease-in-out infinite alternate}
 .card:hover .artglyph{color:#fff}
-@keyframes twinkle{0%,100%{opacity:.45}50%{opacity:1}}
 @keyframes iconbob{0%,100%{transform:translateY(-2px)}50%{transform:translateY(2px)}}
 .card:hover .pillaricon{color:#fff}
 
