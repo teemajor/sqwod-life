@@ -1,9 +1,8 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import Glyph from '../../../components/Glyph.astro';
+import ArticleGlyph from '../../../components/ArticleGlyph.astro';
 import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../../i18n/ui';
-import { pillarGlyph } from '../../../i18n/pillars';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -28,7 +27,7 @@ const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB',
     <div class="grid cols2">
     {reports.map((r, i) => (
       <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr auto" href={`/${lang}/intelligence/${r.data.urlSlug}`}>
-        <Glyph kind={r.data.hero ? (r.data.hero.kind === 'orbit' ? 'ring' : r.data.hero.kind) : pillarGlyph(r.data.pillar)} size={52} />
+        <ArticleGlyph icon={r.data.icon} pillar={r.data.pillar} size={52} />
         <div class="info">
           <span class="bestfor">{r.data.format === 'index' ? 'Index' : 'Report'}{r.data.gated ? ' · ' + (lang==='de'?'Gegated':'Gated') : ''}</span>
           <h3>{r.data.title}</h3>

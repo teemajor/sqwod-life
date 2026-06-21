@@ -11,6 +11,7 @@ publishedAt: 2026-06-12
 updatedAt: 2026-06-14
 author: "Sqwod Intelligence"
 gated: true
+icon: smart-ring
 sourceIds: ["stat-wearables-market-2026"]
 hero:
   kind: orbit

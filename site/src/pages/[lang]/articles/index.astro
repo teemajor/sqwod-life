@@ -1,10 +1,10 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import PillarIcon from '../../../components/PillarIcon.astro';
-import Glyph from '../../../components/Glyph.astro';
+import ArticleGlyph from '../../../components/ArticleGlyph.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
-import { PILLARS, pillarMeta, pillarGlyph } from '../../../i18n/pillars';
+import { PILLARS, pillarMeta } from '../../../i18n/pillars';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -48,7 +48,7 @@ const recent = (await getCollection('articles', (a) => a.data.lang === lang && a
       <div class="grid cols2">
       {recent.map((a) => (
         <a class="card" style="grid-template-columns:52px 1fr" href={articleHref(a)}>
-          <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
+          <ArticleGlyph icon={a.data.icon} pillar={a.data.pillar} size={52} />
           <div class="info">
             <span class="bestfor">{pillarMeta[a.data.pillar as keyof typeof pillarMeta].label[lang]}</span>
             <h3>{a.data.title}</h3>

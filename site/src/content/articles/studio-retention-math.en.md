@@ -11,6 +11,7 @@ publishedAt: 2026-06-13
 updatedAt: 2026-06-14
 author: "sqwod.life"
 gated: false
+icon: retention
 sourceIds: ["stat-studio-retention-2026"]
 hero:
   kind: line
