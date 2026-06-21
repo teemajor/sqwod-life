@@ -29,5 +29,6 @@ jobs:
             echo "No new leads."
           else
             git commit -m "leads: weekly idea queue $(date +%F)"
+            git pull --rebase --autostash origin main || true
             git push
           fi

@@ -31,5 +31,6 @@ jobs:
             echo "No press changes."
           else
             git commit -m "press: screen/publish $(date +%F-%H%M)"
+            git pull --rebase --autostash origin main || true
             git push
           fi
