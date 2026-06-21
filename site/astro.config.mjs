@@ -8,7 +8,9 @@ export default defineConfig({
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'de'],
-    routing: { prefixDefaultLocale: true },
+    // Let our own src/pages/index.astro handle the root → /en/ redirect (instant,
+    // invisible). Astro's built-in one shows a 2s "Redirecting…" interstitial.
+    routing: { prefixDefaultLocale: true, redirectToDefaultLocale: false },
   },
   // VITE_CACHE_DIR lets sandboxed/CI environments relocate Vite's dep cache
   // off restricted mounts. Unset in normal dev → default behavior.
