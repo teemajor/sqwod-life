@@ -89,6 +89,8 @@ const articles = defineCollection({
     author: z.string().default('sqwod.life'),
     gated: z.boolean().default(false),
     sourceIds: z.array(z.string()).default([]), // provenance → living wiki
+    sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]), // rendered citations
+    asOf: z.string().optional(),               // "as of" date for data-heavy pieces
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({
       kind: z.enum(['line', 'bars', 'orbit']).default('line'),

@@ -2,25 +2,30 @@
 urlSlug: studio-retention-math
 lang: de
 counterpart: studio-retention-math
-title: "Die Kundenbindungs-Rechnung, die über dein Studio entscheidet"
-description: "Die durchschnittliche Boutique-Churn liegt bei ~8,5%/Monat. Die Lösung ist nicht mehr Werbung — sondern die ersten 30 Tage."
+title: "Die Retention-Rechnung, die über dein Studio entscheidet"
+description: "Die Branche verliert 4–8% pro Monat, die Hälfte kündigt in 90 Tagen. Die Lösung ist nicht mehr Werbung — es sind die ersten 30."
 pillar: business-strategy
 format: analysis
 conversion: pods
 publishedAt: 2026-06-13
 updatedAt: 2026-06-14
+asOf: Juni 2026
 author: "sqwod.life"
 gated: false
 sourceIds: ["stat-studio-retention-2026"]
+sources:
+  - { label: "Smart Health Clubs — 100 Retention-Statistiken (2025)", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
+  - { label: "Glofox — Leitfaden gegen Churn", url: "https://www.glofox.com/blog/reducing-churn/" }
+  - { label: "CloudGym — Mitgliederbindung für Boutique-Studios", url: "https://www.cloudgymmanager.com/member-retention-for-boutique-fitness-studios-stop-the-30-annual-churn/" }
 hero:
   kind: line
-  stat: "8,5%"
-  statLabel: "Ø monatliche Churn"
+  stat: "4–8%"
+  statLabel: "Ø Churn pro Monat"
 tags: ["kundenbindung", "studio-ops", "wachstum"]
 ---
 
-Die durchschnittliche Boutique-Churn liegt bei rund 8,5% pro Monat, und ein neues Mitglied zu gewinnen kostet etwa 6x so viel wie eines zu halten. Rechnet man das hoch, ist die Schlussfolgerung hart: Die meisten Studios füllen einen löchrigen Eimer mit teurem Wasser.
+Der Branchen-Churn liegt bei rund 4–8% pro Monat (Top-Studios halten 2–3%), die Neugewinnung kostet etwa **5–7× mehr** als das Halten, und **~50% der neuen Mitglieder kündigen in den ersten 90 Tagen**. Rechnet man das hoch, ist die Schlussfolgerung hart: Die meisten Studios füllen einen löchrigen Eimer mit teurem Wasser.
 
-Der Hebel ist nicht mehr Werbebudget. Es sind die ersten 30 Tage — Onboarding, frühe Erfolge und die Gewohnheitsschleife, die aus einem Trial ein Mitglied macht. Wer das richtig macht, baut aus demselben Traffic ein völlig anderes Geschäft.
+Der Hebel ist nicht mehr Werbebudget. Es sind die ersten 30–90 Tage — Onboarding, frühe Erfolge und die Gewohnheitsschleife, die aus dem Probetraining ein Mitglied macht. Der Effekt ist überproportional: 5% mehr Bindung können den Gewinn um über 20% steigern, und wer die 90-Tage-Marke übersteht, bleibt etwa 3× wahrscheinlicher ein ganzes Jahr.
 
-Genau dieses Problem löst ein privater, ablenkungsfreier Trainingsraum — weniger Abbrüche, mehr abgeschlossene Sessions.
+Genau dafür ist ein privater, ablenkungsfreier Trainingsraum gebaut — weniger Abbrüche, mehr beendete Einheiten.

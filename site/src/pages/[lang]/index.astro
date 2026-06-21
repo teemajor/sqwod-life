@@ -76,31 +76,62 @@ const tagline = lang === 'de'
     </div>
   </section>
 
-  <!-- Listen: the Sqwod Daily show, all platforms -->
+  <!-- Listen: the Sqwod Daily show -->
   <section class="block listen-sec reveal" style="border-top:1px solid var(--line)">
-    <p class="kick">{lang==='de'?'Hör Sqwod Daily':'Listen to Sqwod Daily'}</p>
-    <div class="player-card">
-      <a class="pc-cover" href={latestHref} aria-label={lang==='de'?'Neueste Folge':'Latest episode'}>
-        <img src="/podcast-cover.png" alt="Sqwod Daily" width="150" height="150" />
-      </a>
-      <div class="pc-body">
-        <h3>{lang==='de'?'Der tägliche 5-Minuten-Audio-Brief':'The daily 5-minute audio brief'}</h3>
-        <p>{lang==='de'?'Das Fitness-Business im Ohr — jeden Werktag, auf EN & DE.':'The business of fitness in your ears — every weekday, in EN & DE.'}</p>
+    <div class="pod-head">
+      <p class="kick" style="margin:0">{lang==='de'?'Hör Sqwod Daily':'Listen to Sqwod Daily'}</p>
+      <a class="pod-all" href={`/${lang}/daily`}>{lang==='de'?'Alle Folgen':'All episodes'} →</a>
+    </div>
 
-        {hasLatestAudio ? (
-          <div class="pc-now">
-            <div class="pc-latest">{lang==='de'?'Neueste Folge':'Latest'} · {fmtDate(latest.data.date)}</div>
-            <audio controls preload="none" src={latestAudio} class="pc-audio"></audio>
-          </div>
-        ) : (
-          <p class="pc-soon">{lang==='de'?'Erste Folge bald — abonniere unten und sei zuerst dabei.':'First episode dropping soon — subscribe below to get it first.'}</p>
-        )}
-
-        <div class="platforms">
+    <div class="pod">
+      <!-- left: cover + follow -->
+      <div class="pod-left">
+        <a class="pod-art" href={latestHref} aria-label="Sqwod Daily"><img src="/podcast-cover.png" alt="Sqwod Daily" /></a>
+        <div class="pod-follow">
           {platforms.map((p) => <a class="plat" href={p.url} target="_blank" rel="noopener">{p.name}</a>)}
-          <a class="plat" href={latestHref}>{lang==='de'?'Alle Folgen':'All episodes'}</a>
           {!hasApple && <span class="plat-soon">{lang==='de'?'Apple & Spotify in Kürze':'Apple & Spotify soon'}</span>}
         </div>
+      </div>
+
+      <!-- right: pitch + player + episode list / what-you-get -->
+      <div class="pod-right">
+        <h3>{lang==='de'?'Der tägliche 5-Minuten-Audio-Brief':'The daily 5-minute audio brief'}</h3>
+        <p class="pod-desc">{lang==='de'
+          ? 'Geldbewegungen, die Lektion hinter den News und ein To-do — plus etwas Spaß. Fünf Minuten, jeden Werktag, auf EN & DE. Perfekt für Pendeln, Aufwärmen oder Hundespaziergang.'
+          : 'Money movement, the lesson behind the news, and one thing to do — plus a little fun. Five minutes, every weekday, in EN & DE. Built for the commute, the warm-up, or the dog walk.'}</p>
+
+        {hasLatestAudio && (
+          <div class="pod-now">
+            <div class="pod-now-lbl">{lang==='de'?'Neueste Folge':'Latest episode'} · {fmtDate(latest.data.date)}</div>
+            <audio controls preload="none" src={latestAudio} class="pod-audio"></audio>
+          </div>
+        )}
+
+        {issues.length > 0 ? (
+          <ol class="pod-eps">
+            {issues.slice(0, 5).map((ep) => (
+              <a class="pod-ep" href={`/${lang}/daily/${ep.data.urlSlug}`}>
+                <span class="ep-play">▶</span>
+                <span class="ep-meta">
+                  <span class="ep-date">{fmtDate(ep.data.date)}</span>
+                  <span class="ep-title">{ep.data.summary || 'Sqwod Daily'}</span>
+                </span>
+                <span class="ep-dur">{ep.data.duration ?? '5 min'}</span>
+              </a>
+            ))}
+          </ol>
+        ) : (
+          <div class="pod-expect">
+            <p class="pod-expect-lbl">{lang==='de'?'Das bekommst du':'What you get'}</p>
+            <ul>
+              <li>{lang==='de'?'💸 Geldbewegung — wer Geld geholt oder gekauft hat':'💸 Money movement — who raised, who got acquired'}</li>
+              <li>{lang==='de'?'🧠 Die Lektion hinter den News':'🧠 The lesson behind the news'}</li>
+              <li>{lang==='de'?'✅ Ein umsetzbarer Tipp pro Tag':'✅ One thing you can act on today'}</li>
+              <li>{lang==='de'?'⏱️ Fünf Minuten, EN & DE':'⏱️ Five minutes, EN & DE'}</li>
+            </ul>
+            <p class="pod-soon">{lang==='de'?'Erste Folge bald — abonniere unten und sei zuerst dabei.':'First episode drops soon — subscribe below to get it first.'}</p>
+          </div>
+        )}
       </div>
     </div>
   </section>
@@ -126,30 +157,48 @@ const tagline = lang === 'de'
   .sb-form input:focus{outline:none;border-color:var(--chalk)}
   .sb-form.center{justify-content:center}
 
-  .listen-sec .player-card{display:grid;grid-template-columns:140px 1fr;gap:22px;align-items:center;
-    border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--panel)}
-  .pc-cover{display:block;width:140px;height:140px;border-radius:12px;overflow:hidden}
-  .pc-cover img{width:100%;height:100%;object-fit:cover;display:block}
-  .pc-body h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
-  .pc-body p{margin:0 0 12px;color:var(--g2);font-size:14.5px;line-height:1.5;max-width:52ch}
-  .pc-now{margin:0 0 14px}
-  .pc-latest{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin-bottom:8px}
-  .pc-audio{width:100%;max-width:420px;height:38px;filter:invert(1) hue-rotate(180deg)}
-  .pc-soon{font-size:14px;color:var(--g2);margin:0 0 14px;font-style:italic}
-  .platforms{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .pod-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .pod-all{font-size:12.5px;font-weight:700;color:var(--g3);text-decoration:none}
+  .pod-all:hover{color:var(--chalk)}
+  .pod{display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:start;margin-top:14px;
+    border:1px solid var(--line);border-radius:18px;padding:24px;background:linear-gradient(180deg,var(--panel),transparent)}
+  .pod-left{display:flex;flex-direction:column;gap:14px}
+  .pod-art{display:block;width:220px;height:220px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+  .pod-art img{width:100%;height:100%;object-fit:cover;display:block}
+  .pod-follow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .plat{font-size:12.5px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:7px 13px;transition:border-color .15s ease,background .15s ease}
   .plat:hover{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
-  .plat-soon{font-size:11.5px;color:var(--g4);letter-spacing:.02em}
+  .plat-soon{font-size:11.5px;color:var(--g4)}
+  .pod-right h3{margin:0 0 8px;font-size:23px;letter-spacing:-.02em}
+  .pod-desc{margin:0 0 16px;color:var(--g2);font-size:15px;line-height:1.6;max-width:60ch}
+  .pod-now{margin:0 0 16px}
+  .pod-now-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin-bottom:8px}
+  .pod-audio{width:100%;height:40px;filter:invert(1) hue-rotate(180deg)}
+  .pod-eps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+  .pod-ep{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s ease}
+  .pod-ep:hover{background:var(--panel)}
+  .ep-play{width:26px;height:26px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;font-size:9px;color:var(--chalk);padding-left:2px}
+  .pod-ep:hover .ep-play{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .ep-date{display:block;font-size:11px;font-family:ui-monospace,Menlo,monospace;color:var(--g3)}
+  .ep-title{display:block;font-size:14px;font-weight:600;color:var(--chalk);line-height:1.3;margin-top:2px}
+  .ep-dur{font-size:12px;font-family:ui-monospace,Menlo,monospace;color:var(--g3);white-space:nowrap}
+  .pod-expect{border-top:1px solid var(--line);padding-top:14px}
+  .pod-expect-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin:0 0 10px}
+  .pod-expect ul{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
+  .pod-expect li{font-size:14px;color:var(--g1);line-height:1.4}
+  .pod-soon{font-size:13.5px;color:var(--g2);font-style:italic;margin:0}
 
   .subbig{text-align:center;border:1px solid var(--line);border-radius:18px;padding:40px 24px;margin:26px 0 8px;
     background:linear-gradient(180deg,var(--panel),transparent)}
   .subbig h2{font-size:clamp(24px,4vw,32px);letter-spacing:-.02em;margin:0 0 10px}
   .subbig p{color:var(--g2);max-width:52ch;margin:0 auto 20px;line-height:1.55}
 
+  @media(max-width:720px){
+    .pod{grid-template-columns:1fr;gap:18px}
+    .pod-art{width:150px;height:150px}
+    .pod-expect ul{grid-template-columns:1fr}
+  }
   @media(max-width:600px){
-    .listen-sec .player-card{grid-template-columns:1fr;justify-items:center;text-align:center}
-    .pc-body p{margin-left:auto;margin-right:auto}
-    .platforms{justify-content:center}
     .subbar{flex-direction:column;align-items:stretch}
     /* Email capture: stack input + button full-width so nothing overflows or sits off-center */
     .sb-form,.sb-form.center{flex-direction:column;flex-wrap:nowrap;align-items:stretch;width:100%}

@@ -32,6 +32,18 @@ const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', 
   <Content />
 </section>
 
+{d.sources && d.sources.length > 0 && (
+  <section class="block sources-block">
+    <p class="kick">{lang==='de'?'Quellen':'Sources'}</p>
+    <ol class="src-list">
+      {d.sources.map((s) => <li><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
+    </ol>
+    <p class="src-note">{lang==='de'
+      ? `Zahlen aus öffentlichen Quellen${d.asOf ? `, Stand ${d.asOf}` : ''}. Schätzungen verschiedener Häuser variieren; wir verlinken, damit du selbst prüfen kannst.`
+      : `Figures from public sources${d.asOf ? `, as of ${d.asOf}` : ''}. Estimates vary between firms; we link them so you can verify.`}</p>
+  </section>
+)}
+
 <section class="block" style="border-bottom:none">
   <a class="cta" href={`/${lang}/articles/${d.pillar}`}>{lang==='de'?'Mehr aus':'More in'} {pillar.label[lang]} →</a>
 </section>
