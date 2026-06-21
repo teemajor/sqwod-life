@@ -1,0 +1,105 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import Glyph from '../../../../components/Glyph.astro';
+import { getCollection } from 'astro:content';
+import { languages, t, type Lang } from '../../../../i18n/ui';
+import { categories, byCategory } from '../../../../config/verified-categories';
+
+export function getStaticPaths() {
+  return languages.flatMap((lang) => categories.map((c) => ({ params: { lang, category: c.slug }, props: { slug: c.slug } })));
+}
+const lang = Astro.params.lang as Lang;
+const cat = byCategory(Astro.props.slug)!;
+
+// pull real Sqwod Scores for reviewed picks
+const reviews = await getCollection('reviews', (r) => r.data.lang === lang);
+const scoreOf = (slug?: string) => slug ? reviews.find((r) => r.data.urlSlug === slug)?.data : undefined;
+
+// reviewed picks first (by score), then editorial picks
+const enriched = cat.picks.map((p) => ({ p, r: scoreOf(p.reviewSlug) }));
+enriched.sort((a, b) => (b.r?.sqwodScore ?? -1) - (a.r?.sqwodScore ?? -1));
+
+const tx = {
+  aff: lang === 'de' ? 'Affiliate' : 'Affiliate',
+  noaff: lang === 'de' ? 'Nicht affiliiert' : 'Not affiliated',
+  reviewed: lang === 'de' ? 'Getestet' : 'Reviewed',
+  editorial: lang === 'de' ? 'Redaktions-Tipp' : 'Editorial pick',
+  read: lang === 'de' ? 'Test lesen' : 'Read review',
+  visit: lang === 'de' ? 'Zur Website' : 'Visit site',
+  bestFor: lang === 'de' ? 'Am besten für' : 'Best for',
+  allCats: lang === 'de' ? 'Alle Kategorien' : 'All categories',
+};
+const title = `${cat.label[lang]} — Sqwod Verified`;
+---
+<Base lang={lang} title={title} description={cat.blurb[lang]} active="verified">
+  <div class="crumb"><a href={`/${lang}/verified`}>Sqwod Verified</a> / {cat.label[lang]}</div>
+  <span class="verified-tag">◈ Sqwod Verified</span>
+  <h1 style="margin:2px 0 6px">{cat.label[lang]}</h1>
+  <p class="sub" style="max-width:62ch">{cat.blurb[lang]}</p>
+
+  <div class="vlist">
+    {enriched.map(({ p, r }, i) => (
+      <div class={`row${i===0 ? ' top' : ''}`}>
+        <div class="rank">{i + 1}</div>
+        <div class="thumb"><Glyph kind={cat.glyph} size={52} /></div>
+        <div class="main">
+          <div class="tags">
+            {r ? <span class="tag rev">{tx.reviewed}</span> : <span class="tag ed">{tx.editorial}</span>}
+            <span class={`tag ${p.affiliate ? 'af' : 'na'}`}>{p.affiliate ? tx.aff : tx.noaff}</span>
+          </div>
+          <h3>{p.product}</h3>
+          <p class="bestfor"><b>{tx.bestFor}:</b> {p.bestFor[lang]}</p>
+          <p class="why">{p.why[lang]}</p>
+          <div class="acts">
+            {r && <a class="rev-link" href={`/${lang}/verified/${p.reviewSlug}`}>{tx.read} →</a>}
+            <a class="visit" href={p.url} target="_blank" rel={p.affiliate ? 'sponsored nofollow' : 'nofollow'}>{tx.visit} ↗</a>
+          </div>
+        </div>
+        {r && (
+          <a class="score" href={`/${lang}/verified/${p.reviewSlug}`} aria-label={`Sqwod Score ${r.sqwodScore}`}>
+            <svg viewBox="0 0 100 100"><path d="M50 5 C70 23 77 30 95 50 C77 70 70 77 50 95 C30 77 23 70 5 50 C23 30 30 23 50 5 Z" fill="none" stroke={i===0?'#FAFAFA':'#b8b8c0'} stroke-width="3.5"/></svg>
+            <b>{r.sqwodScore}</b><span class="lbl">Score</span>
+          </a>
+        )}
+      </div>
+    ))}
+  </div>
+
+  <div class="note" style="margin-top:16px"><b>{t(lang,'verified.howWeRank')}.</b> {lang==='de'
+    ? 'Getestete Produkte tragen einen Sqwod Score (Crowd 45% · unsere Bewertung 40% · Preis-Leistung 15%). Redaktions-Tipps sind kuratierte Marktführer, die wir noch testen — ohne Score. „Affiliate" heißt: wir verdienen ggf. über den Link. „Nicht affiliiert" heißt: rein auf Empfehlung gelistet.'
+    : 'Reviewed products carry a Sqwod Score (Crowd 45% · our assessment 40% · Value 15%). Editorial picks are curated category leaders we haven\'t scored yet — no score. "Affiliate" means we may earn from the link. "Not affiliated" means it\'s listed purely on merit.'}</div>
+  <p class="disc" style="margin-top:12px">{t(lang,'disclosure')}</p>
+  <p style="margin-top:16px"><a class="lp" href={`/${lang}/verified`}>← {tx.allCats}</a></p>
+</Base>
+
+<style>
+  .crumb a{color:inherit;text-decoration:none}
+  .vlist{margin-top:18px;border-top:1px solid var(--line)}
+  .row{display:grid;grid-template-columns:30px 52px 1fr auto;gap:14px;align-items:start;padding:20px 6px;border-bottom:1px solid var(--line)}
+  .row.top{background:var(--panel);border-radius:12px}
+  .rank{font-family:ui-monospace,Menlo,monospace;font-size:14px;color:var(--g3);padding-top:4px}
+  .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+  .tag{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:3px 7px;border-radius:999px;border:1px solid var(--line);color:var(--g3)}
+  .tag.rev{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .tag.ed{color:var(--g2)}
+  .tag.af{color:var(--g2)}
+  .tag.na{color:var(--g4)}
+  .main h3{font-size:19px;letter-spacing:-.01em;margin:2px 0 6px}
+  .bestfor{font-size:13px;color:var(--g2);margin:0 0 6px}
+  .bestfor b{color:var(--g1)}
+  .why{font-size:14.5px;color:var(--g2);line-height:1.55;margin:0 0 10px;max-width:60ch}
+  .acts{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;font-weight:700}
+  .rev-link{color:var(--chalk);text-decoration:none;border-bottom:1px solid var(--g3)}
+  .visit{color:var(--g3);text-decoration:none;border-bottom:1px solid var(--line)}
+  .acts a:hover{border-color:var(--chalk)}
+  .score{position:relative;width:74px;height:74px;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-direction:column}
+  .score svg{position:absolute;inset:0;width:100%;height:100%}
+  .score b{font-size:22px;color:var(--chalk);font-weight:800;line-height:1}
+  .score .lbl{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
+  .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+  .lp:hover{border-color:var(--chalk)}
+  @media(max-width:640px){
+    .row{grid-template-columns:24px 1fr;gap:10px}
+    .thumb,.score{display:none}
+  }
+</style>

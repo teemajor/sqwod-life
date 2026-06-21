@@ -59,7 +59,7 @@ const reviews = defineCollection({
     whoFor: z.object({ buy: z.string(), skip: z.string() }),
 
     // asset for the viewer fallback chain (see infrastructure/schemas/product-asset.schema.json)
-    // images MUST be licensed: affiliate API/feed (Amazon PA-API, Awin/Impact/CJ) or brand press kit — never scraped.
+    // images MUST be licensed: direct/network media first (Awin/Impact/CJ feeds, brand press kits); Amazon PA-API optional. Never scraped.
     asset: z.object({
       type: z.enum(['glb', 'spin360', 'images', 'fallback']).default('fallback'),
       glb: z.string().optional(),

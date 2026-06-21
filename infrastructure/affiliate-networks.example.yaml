@@ -5,48 +5,49 @@
 # adapter   = which integration module handles this network
 # markets   = which storefronts/locales it serves
 # status    = active | pending | disabled  (only `active` is polled)
+# tier      = preference order for the /go resolver (1 = try first)
+# role      = primary (Verified deals) | fallback | gap-fill
 # settings  = non-secret per-network options
+#
+# STRATEGY: direct brand programs + networks FIRST (best commissions + exclusive
+# deal codes that make "Sqwod Verified · best deal" real). Amazon is OPTIONAL —
+# a coverage/conversion fallback and for in-article product links, not a primary
+# earner. The resolver prefers lower tier numbers and only drops to Amazon when
+# no direct/network offer exists.
 
 networks:
-  amazon:
-    label: "Amazon Associates"
-    adapter: amazon-paapi
-    status: pending          # set active after PA-API access granted
-    markets: [de, com]
-    settings:
-      partner_tags:
-        de: "REPLACE_DE_TAG-21"
-        com: "REPLACE_COM_TAG-20"
-      paapi_host:
-        de: "webservices.amazon.de"
-        com: "webservices.amazon.com"
-      throttle_rps: 1        # PA-API is rate-limited; keep low
-    # credentials in .env: AMAZON_PAAPI_ACCESS_KEY / _SECRET_KEY
-
+  # ---- TIER 1: direct/network — the money + the deals ----
   awin:
     label: "Awin"
     adapter: awin
     status: pending
+    tier: 1
+    role: primary
     markets: [de, eu, uk]
     settings:
       publisher_id: "REPLACE_AWIN_PUBLISHER_ID"
       region: "eu"
-      feed_refresh_cron: "0 */6 * * *"   # every 6h
+      feed_refresh_cron: "0 */6 * * *"   # every 6h — pulls links, prices, IMAGES, coupon codes
     # credentials in .env: AWIN_API_TOKEN
 
   impact:
     label: "Impact.com"
     adapter: impact
-    status: disabled
+    status: pending
+    tier: 1
+    role: primary
     markets: [com, eu]
     settings:
       account_sid: "REPLACE_IMPACT_ACCOUNT_SID"
     # credentials in .env: IMPACT_AUTH_TOKEN
 
+  # ---- TIER 2: more direct/network coverage ----
   cj:
     label: "CJ (Commission Junction)"
     adapter: cj
     status: disabled
+    tier: 2
+    role: primary
     markets: [com, eu]
     settings:
       website_id: "REPLACE_CJ_WEBSITE_ID"
@@ -56,16 +57,40 @@ networks:
     label: "Rakuten Advertising"
     adapter: rakuten
     status: disabled
+    tier: 2
+    role: primary
     markets: [com, eu]
     # credentials in .env: RAKUTEN_CLIENT_ID / _CLIENT_SECRET
 
+  # ---- TIER 3: Amazon — OPTIONAL coverage/conversion fallback + article links + licensed images ----
+  amazon:
+    label: "Amazon Associates"
+    adapter: amazon-paapi
+    status: optional         # join only if you want fallback links / article links / PA-API images
+    tier: 3
+    role: fallback           # used only when no Tier 1–2 offer exists
+    markets: [de, com]
+    settings:
+      partner_tags:
+        de: "REPLACE_DE_TAG-21"
+        com: "REPLACE_COM_TAG-20"
+      paapi_host:
+        de: "webservices.amazon.de"
+        com: "webservices.amazon.com"
+      throttle_rps: 1
+      uses: [article-links, fallback-buy-link, product-images]   # NOT primary Verified deals
+    # credentials in .env: AMAZON_PAAPI_ACCESS_KEY / _SECRET_KEY
+
+  # ---- gap-fill: auto-affiliatize merchants you haven't joined directly ----
   sovrn:
     label: "Sovrn Commerce (Skimlinks)"
     adapter: sovrn
     status: disabled
+    tier: 4
+    role: gap-fill
     markets: [global]
     settings:
-      role: "gap-fill"       # auto-affiliatize merchants not joined directly
+      role: "gap-fill"
     # credentials in .env: SOVRN_API_KEY
 
 # ---- global best-deal rules (override per category if needed) ----

@@ -3,118 +3,69 @@ import Base from '../../../layouts/Base.astro';
 import Glyph from '../../../components/Glyph.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
+import { categories } from '../../../config/verified-categories';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
+const reviews = await getCollection('reviews', (r) => r.data.lang === lang);
+const reviewedSlugs = new Set(reviews.map((r) => r.data.urlSlug));
 
-const all = await getCollection('reviews', (r) => r.data.lang === lang);
-const ranked = all.sort((a, b) => b.data.sqwodScore - a.data.sqwodScore);
-const title = lang === 'de' ? 'Beste Recovery- & Schlaf-Tracker — Sqwod Verified' : 'Best Recovery & Sleep Trackers — Sqwod Verified';
+const cards = categories.map((c) => ({
+  c,
+  reviewed: c.picks.filter((p) => p.reviewSlug && reviewedSlugs.has(p.reviewSlug)).length,
+  total: c.picks.length,
+  names: c.picks.slice(0, 4).map((p) => p.brand),
+}));
+const totalReviewed = reviews.length;
+
+const title = lang === 'de' ? 'Sqwod Verified — Kaufberatung für Wellness & Fitness' : 'Sqwod Verified — Wellness & Fitness Buyer\'s Guides';
+const blurb = lang === 'de'
+  ? 'Ehrliche, methodische Kaufberatung für die Fitness- & Wellness-Branche. Getestete Produkte tragen einen Sqwod Score; Redaktions-Tipps sind kuratierte Marktführer. Affiliate-Links sind gekennzeichnet — die Wahrheit gewinnt.'
+  : 'Honest, methodology-driven buyer\'s guides for the fitness & wellness industry. Reviewed products carry a Sqwod Score; editorial picks are curated leaders. Affiliate links are labeled — truth wins.';
 ---
-<Base lang={lang} title={title} description={t(lang,'verified.rankedBy')} active="verified">
-  <div class="listwrap">
-  <div class="crumb">Verified / Wearables</div>
+<Base lang={lang} title={title} description={blurb} active="verified">
+  <div class="crumb">Sqwod Verified</div>
   <span class="verified-tag reveal">◈ Sqwod Verified</span>
-  <h1 class="reveal d1">{lang==='de'?'Beste Recovery- & Schlaf-Tracker':'Best Recovery & Sleep Trackers'}</h1>
-  <p class="sub reveal d2">{t(lang,'verified.rankedBy')}</p>
+  <h1 class="reveal d1" style="margin:2px 0 6px">{lang==='de'?'Kaufberatung, der man trauen kann':'Buyer\'s guides you can trust'}</h1>
+  <p class="sub reveal d2" style="max-width:64ch">{blurb}</p>
+  <p class="sub reveal d2" style="margin-top:6px">
+    <a href={`/${lang}/verified/methodology`} style="color:var(--chalk)">{t(lang,'verified.howWeRank')} →</a>
+    &nbsp;·&nbsp; <b>{totalReviewed}</b> {lang==='de'?'getestet':'reviewed'} &nbsp;·&nbsp; <b>{categories.length}</b> {lang==='de'?'Kategorien':'categories'}
+  </p>
 
-  <div class="filters reveal d2">
-    <span class="f on">{lang==='de'?'Top gesamt':'Best overall'}</span>
-    <span class="f">{lang==='de'?'Für Coaches':'For coaches'}</span>
-    <span class="f">{lang==='de'?'Preis-Leistung':'Best value'}</span>
-    <span class="f">{lang==='de'?'Ohne Abo':'No subscription'}</span>
-  </div>
-
-  <div style="margin-top:10px">
-    {ranked.map((r, i) => (
-      <div class={`vrow reveal d${(i % 6) + 1}${i===0?' top':''}`}>
-        {i===0 && <span class="crown">◈ {lang==='de'?'Top-Pick':'Top pick'}</span>}
-        <div class="vrow-rank">{i+1}</div>
-        <a class="vrow-thumb" href={`#ql-${r.data.urlSlug}`} aria-label="Quick look">
-          <Glyph kind={r.data.glyph} size={60} />
-        </a>
-        <div class="vrow-main">
-          <span class="bestfor">{r.data.category}</span>
-          <a href={`/${lang}/verified/${r.data.urlSlug}`} style="text-decoration:none"><h3>{r.data.productName}</h3></a>
-          <div class="meta">
-            <b style="color:var(--g1)">{(r.data.crowd.reviews/1000).toFixed(1)}k</b> {t(lang,'verified.reviews')} · {t(lang,'verified.bestDeal')} <span class="price">€{r.data.value.bestPrice}</span>
+  <div class="cat-grid">
+    {cards.map(({ c, reviewed, total, names }, i) => (
+      <a class={`cat reveal d${(i % 6) + 1}`} href={`/${lang}/verified/c/${c.slug}`}>
+        <div class="cat-ic"><Glyph kind={c.glyph} size={46} /></div>
+        <div class="cat-body">
+          <h3>{c.label[lang]}</h3>
+          <p>{c.blurb[lang]}</p>
+          <div class="cat-meta">
+            {reviewed > 0 && <span class="pill rev">{reviewed} {lang==='de'?'getestet':'reviewed'}</span>}
+            <span class="pill">{total} {lang==='de'?'Picks':'picks'}</span>
+            <span class="brands">{names.join(' · ')}</span>
           </div>
-          <div class="vrow-actions">
-            <a class="rev" href={`/${lang}/verified/${r.data.urlSlug}`}>{t(lang,'verified.readReview')} →</a>
-            <a class="ql" href={`#ql-${r.data.urlSlug}`}>⤢ {lang==='de'?'Schnellansicht':'Quick look'}</a>
-          </div>
+          <span class="cat-cta">{lang==='de'?'Guide ansehen':'See the guide'} →</span>
         </div>
-        <a class="vrow-score" href={`/${lang}/verified/${r.data.urlSlug}`} aria-label={`Sqwod Score ${r.data.sqwodScore}`}>
-          <svg viewBox="0 0 100 100"><path d="M50 5 C70 23 77 30 95 50 C77 70 70 77 50 95 C30 77 23 70 5 50 C23 30 30 23 50 5 Z" fill="none" stroke={i===0?'#FAFAFA':'#b8b8c0'} stroke-width="3.5"/></svg>
-          <b>{r.data.sqwodScore}</b><span class="lbl">Score</span>
-        </a>
-      </div>
+      </a>
     ))}
   </div>
 
-  <div class="note" style="margin-top:14px"><b>{t(lang,'verified.howWeRank')}.</b> {lang==='de'
-    ? 'Der Sqwod Score verbindet Crowd-Signal (45%), unsere Bewertung (40%) und Preis-Leistung (15%).'
-    : 'The Sqwod Score blends Crowd Signal (45%), our assessment (40%), and Value (15%).'}</div>
-  <p class="disc" style="margin-top:14px">{t(lang,'disclosure')}</p>
-  </div>
-
-  <!-- QUICK-LOOK MODALS (gallery + drag-to-spin 3D) -->
-  {ranked.map((r) => (
-    <div class="ql" id={`ql-${r.data.urlSlug}`}>
-      <div class="ql-panel">
-        <div class="ql-stage">
-          <a class="ql-close" href="#" aria-label="Close">✕</a>
-          <div class="ql-3d" data-kind={r.data.glyph} data-label={r.data.productName}></div>
-        </div>
-        <div class="ql-thumbs">
-          {Array.from({ length: r.data.gallery }).map(() => <span class="gt"><Glyph kind={r.data.glyph} size={32} framed={false} /></span>)}
-        </div>
-        <div class="ql-body">
-          <h3>{r.data.productName}</h3>
-          <div class="meta">Sqwod Score {r.data.sqwodScore} · {t(lang,'verified.bestDeal')} €{r.data.value.bestPrice}</div>
-          <div class="ql-open">{lang==='de'?'ziehen zum Drehen':'drag to spin'}</div>
-          <div style="margin-top:12px"><a class="cta" href={`/${lang}/verified/${r.data.urlSlug}`}>{t(lang,'verified.readReview')} →</a></div>
-        </div>
-      </div>
-    </div>
-  ))}
-
-  <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script is:inline>
-  (function(){
-    function build(el){
-      if(!window.THREE || el.dataset.init) return; el.dataset.init='1';
-      var W=el.clientWidth||200,H=el.clientHeight||200;
-      var scene=new THREE.Scene();
-      var cam=new THREE.PerspectiveCamera(40,W/H,0.1,100); cam.position.set(0,0,6);
-      var rnd=new THREE.WebGLRenderer({antialias:true,alpha:true});
-      rnd.setPixelRatio(Math.min(window.devicePixelRatio,2)); rnd.setSize(W,H); el.appendChild(rnd.domElement);
-      var g=new THREE.Group(), kind=el.dataset.kind, mesh;
-      if(kind==='watch'||kind==='tracker'){
-        mesh=new THREE.Mesh(new THREE.BoxGeometry(1.7,2.2,0.5), new THREE.MeshStandardMaterial({color:0xf2f2f4,metalness:0.9,roughness:0.3}));
-        // round-ish via scale; add a dark face
-        var face=new THREE.Mesh(new THREE.BoxGeometry(1.4,1.9,0.52), new THREE.MeshStandardMaterial({color:0x0e0e10,metalness:0.3,roughness:0.7}));
-        g.add(mesh); g.add(face);
-      } else {
-        mesh=new THREE.Mesh(new THREE.TorusGeometry(1.4,kind==='band'?0.32:0.52,48,140), new THREE.MeshStandardMaterial({color:0xf2f2f4,metalness:0.95,roughness:0.28}));
-        if(kind==='band') mesh.scale.set(1,1,0.6);
-        g.add(mesh);
-      }
-      scene.add(g); g.rotation.x=0.6;
-      scene.add(new THREE.AmbientLight(0xffffff,0.4));
-      var k=new THREE.DirectionalLight(0xffffff,1.1); k.position.set(3,4,5); scene.add(k);
-      var rim=new THREE.DirectionalLight(0xffffff,0.6); rim.position.set(-4,-2,-3); scene.add(rim);
-      var drag=false,lx=0,ly=0,idle=true;
-      function pt(e){return e.touches&&e.touches[0]?{x:e.touches[0].clientX,y:e.touches[0].clientY}:{x:e.clientX,y:e.clientY};}
-      el.addEventListener('pointerdown',function(e){drag=true;idle=false;var p=pt(e);lx=p.x;ly=p.y;});
-      window.addEventListener('pointermove',function(e){if(!drag)return;var p=pt(e);g.rotation.y+=(p.x-lx)*0.01;g.rotation.x+=(p.y-ly)*0.01;lx=p.x;ly=p.y;});
-      window.addEventListener('pointerup',function(){drag=false;setTimeout(function(){idle=true;},1500);});
-      (function loop(){requestAnimationFrame(loop); if(idle&&!drag) g.rotation.y+=0.01; rnd.render(scene,cam);})();
-    }
-    function check(){ var open=document.querySelector('.ql:target .ql-3d'); if(open) setTimeout(function(){build(open);},30); }
-    window.addEventListener('hashchange',check); window.addEventListener('load',check);
-  })();
-  </script>
+  <p class="disc" style="margin-top:18px">{t(lang,'disclosure')}</p>
 </Base>
+
+<style>
+  .cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+  .cat{display:grid;grid-template-columns:46px 1fr;gap:16px;align-items:start;border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;background:var(--panel);transition:border-color .15s ease,transform .15s ease}
+  .cat:hover{border-color:var(--chalk);transform:translateY(-2px)}
+  .cat-body h3{font-size:18px;letter-spacing:-.01em;margin:0 0 6px;color:var(--chalk)}
+  .cat-body p{font-size:13.5px;color:var(--g2);line-height:1.5;margin:0 0 12px}
+  .cat-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+  .pill{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--g3);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+  .pill.rev{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .brands{font-size:12px;color:var(--g4)}
+  .cat-cta{font-size:13px;font-weight:700;color:var(--chalk)}
+  @media(max-width:680px){.cat-grid{grid-template-columns:1fr}}
+</style>
