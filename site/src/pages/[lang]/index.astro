@@ -129,6 +129,10 @@ const tagline = lang === 'de'
     .listen-sec .player-card{grid-template-columns:1fr;justify-items:center;text-align:center}
     .pc-body p{margin-left:auto;margin-right:auto}
     .platforms{justify-content:center}
-    .subbar{flex-direction:column;align-items:flex-start}
+    .subbar{flex-direction:column;align-items:stretch}
+    /* Email capture: stack input + button full-width so nothing overflows or sits off-center */
+    .sb-form,.sb-form.center{flex-direction:column;flex-wrap:nowrap;align-items:stretch;width:100%}
+    .sb-form input{min-width:0;width:100%;box-sizing:border-box}
+    .sb-form .cta{width:100%}
   }
 </style>
