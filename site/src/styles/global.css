@@ -159,7 +159,7 @@ footer.site a{color:var(--g2);font-weight:700;text-decoration:none}
 .card:hover{transform:translateY(-2px);border-color:#3a3a42}
 
 /* ============ HERO MOTIF (big spinning ring) ============ */
-.heromotif{position:relative;width:200px;height:200px;margin:18px auto 8px}
+.heromotif{position:relative;width:112px;height:112px;margin:6px auto 6px}
 .heromotif .ring{position:absolute;inset:0;border-radius:50%;
   background:conic-gradient(from 0deg,#3a3a40,#e9e9ee,#9a9aa2,#fafafa,#6a6a72,#e9e9ee,#3a3a40);
   -webkit-mask:radial-gradient(circle,transparent 38%,#000 39%);mask:radial-gradient(circle,transparent 38%,#000 39%);
@@ -168,7 +168,7 @@ footer.site a{color:var(--g2);font-weight:700;text-decoration:none}
   background:conic-gradient(from 180deg,#1a1a20,#0e0e10,#26262e,#0e0e10);
   -webkit-mask:radial-gradient(circle,transparent 44%,#000 45%);mask:radial-gradient(circle,transparent 44%,#000 45%)}
 .heromotif .glint{position:absolute;inset:0;border-radius:50%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%);animation:glint 3.4s ease-in-out infinite}
-.heromotif .seedmark{position:absolute;top:50%;left:50%;width:30px;height:30px;margin:-15px 0 0 -15px;border:2px solid var(--chalk);transform:rotate(45deg);border-radius:6px;animation:pulse 3s ease-in-out infinite}
+.heromotif .seedmark{position:absolute;top:50%;left:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border:2px solid var(--chalk);transform:rotate(45deg);border-radius:5px;animation:pulse 3s ease-in-out infinite}
 
 /* ============ GLYPHS (topical animated thumbnails) ============ */
 .glyphbox{position:relative;display:flex;align-items:center;justify-content:center;border-radius:12px;
@@ -232,16 +232,18 @@ footer.site a{color:var(--g2);font-weight:700;text-decoration:none}
 }
 
 /* split hero (text left, motif right on desktop) */
-.hero-split{text-align:center;padding:14px 0 6px}
-.hero-split .ctarow{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin:20px 0 6px}
+.hero-split{text-align:center;padding:10px 0 4px}
+/* CTA chips duplicate the top nav; hidden on mobile (reachable via the menu), shown beside the motif on desktop */
+.hero-split .ctarow{display:none;gap:12px;flex-wrap:wrap;justify-content:center;margin:20px 0 6px}
 @media(min-width:880px){
   .hero-split{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px;text-align:left;padding:48px 0 30px}
   .hero-split .ht{order:1}
   .hero-split .hm{order:2}
   .hero-split h1{margin:0 0 10px}
   .hero-split .sub{margin-left:0;margin-right:0;max-width:42ch}
-  .hero-split .ctarow{justify-content:flex-start}
+  .hero-split .ctarow{display:flex;justify-content:flex-start}
   .hero-split .heromotif{margin:0;width:260px;height:260px}
+  .hero-split .heromotif .seedmark{width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:6px}
 }
 
 /* two-column review (sticky 3D + score rail) */
@@ -301,6 +303,10 @@ body{background:radial-gradient(120% 80% at 50% -8%, #17171c 0%, #0b0b0d 58%) fi
 .arthero .ah-tag{position:absolute;top:14px;left:16px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
 .arthero .ah-stat{position:absolute;left:16px;bottom:14px;font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--chalk)}
 .arthero .ah-stat small{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--g3);margin-top:2px}
+/* custom hand-drawn hero illustration (pure, full-bleed on black, draws in once) */
+.arthero.has-art{background:#050506}
+.arthero .ah-art{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;animation:wipe 1.6s ease-out both}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 /* viz: line */
 .ah-line{position:absolute;inset:0}
 .ah-line svg{width:100%;height:100%}
