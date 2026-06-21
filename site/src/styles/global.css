@@ -303,6 +303,10 @@ body{background:radial-gradient(120% 80% at 50% -8%, #17171c 0%, #0b0b0d 58%) fi
 .arthero .ah-tag{position:absolute;top:14px;left:16px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
 .arthero .ah-stat{position:absolute;left:16px;bottom:14px;font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--chalk)}
 .arthero .ah-stat small{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--g3);margin-top:2px}
+/* custom hand-drawn hero illustration (pure, full-bleed on black, draws in once) */
+.arthero.has-art{background:#050506}
+.arthero .ah-art{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;animation:wipe 1.6s ease-out both}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
 /* viz: line */
 .ah-line{position:absolute;inset:0}
 .ah-line svg{width:100%;height:100%}
