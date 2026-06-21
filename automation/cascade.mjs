@@ -69,20 +69,30 @@ Rules:
 - Never invent numbers or facts beyond what's given. The humor is in the framing, not in made-up details.
 - In German: write native, idiomatic German wit — do NOT translate English jokes; German is first-class.
 Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
-    });
-    if (!r.ok) throw new Error(`LLM HTTP ${r.status}: ${await r.text()}`);
-    const data = await r.json();
-    let txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
-    const obj = JSON.parse(txt);
-    return { headline: obj.headline, dek: obj.dek, readMore: (source[lang] || {}).readMore };
+    // retry transient API errors (429/5xx/overloaded); never let one item crash the run
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        const r = await fetch('https://api.anthropic.com/v1/messages', {
+          method: 'POST',
+          headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+          body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
+        });
+        if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
+        const data = await r.json();
+        const txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
+        const obj = JSON.parse(txt);
+        if (!obj.headline) throw new Error('empty result');
+        return { headline: obj.headline, dek: obj.dek, readMore: (source[lang] || {}).readMore };
+      } catch (e) {
+        console.error(`· generate retry ${attempt}/3 (${lang}, ${source.id}): ${e.message}`);
+        if (attempt < 3) await new Promise((res) => setTimeout(res, attempt * 2000));
+      }
+    }
+    console.error(`· generate fell back to source block for ${source.id} (${lang})`);
   }
   // dry-run: use the source's pre-authored editorial block so the pipeline
   // yields valid output without a key.
-  const block = source[lang] || source.en;
+  const block = source[lang] || source.en || { headline: source.topic || 'Industry update', dek: `Via ${source.entity || 'source'}.`, readMore: '' };
   return { headline: block.headline, dek: block.dek, readMore: block.readMore };
 }
 
@@ -270,8 +280,8 @@ async function run() {
   const dates = Object.keys(byDate).sort();
   const date = args.date || dates[dates.length - 1];
   if (!byDate[date]) {
-    console.error(`No source file for ${date}. Have: ${dates.join(', ')}`);
-    process.exit(1);
+    console.log(`No source file for ${date} (ingest found nothing today). Nothing to generate — exiting cleanly.`);
+    process.exit(0);   // no-op day, not a failure
   }
   const sources = byDate[date];
   mkdirSync(DAILY_OUT, { recursive: true });

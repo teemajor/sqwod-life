@@ -44,5 +44,6 @@ jobs:
             echo "No content changes."
           else
             git commit -m "content: Sqwod Daily $(date +%F)"
+            git pull --rebase --autostash origin main || true
             git push
           fi

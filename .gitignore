@@ -37,3 +37,7 @@ automation/sources/*-test.json
 # internal ops files (may hold credentials) — keep OUT of public repo
 SqwodLife_*.xlsx
 SqwodLife_*.csv
+
+# Statista / licensed source docs — PRIVATE, never publish (keep the README only)
+research/statista/*
+!research/statista/README.md
