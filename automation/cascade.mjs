@@ -181,7 +181,8 @@ Here is the drafted content (${lang}):
 ${JSON.stringify(draft)}
 
 Find every claim in the draft that is NOT directly supported by the source facts — invented numbers, a figure/deal attributed to the wrong company, events not in the sources, or stats with no basis. Be conservative: framing/opinion is fine; only flag factual claims that aren't supported.
-Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"..."}],"dropStat":true|false,"dropMoneyIndexes":[ints]}`;
+Classify each issue: set "blocking":true ONLY when the unsupported claim is baked into an item headline, an item dek, or the connectDots synthesis body (text we cannot auto-remove). Set "blocking":false when the claim lives in the standalone "stat" or a "moneyMoves" entry — those get auto-dropped, so they are NOT blocking.
+Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"...","blocking":true|false}],"dropStat":true|false,"dropMoneyIndexes":[ints]}`;
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST', headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
@@ -194,8 +195,10 @@ Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"..."}],"drop
     if (Array.isArray(v.dropMoneyIndexes) && v.dropMoneyIndexes.length && Array.isArray(sections.moneyMoves)) {
       sections.moneyMoves = sections.moneyMoves.filter((_, i) => !v.dropMoneyIndexes.includes(i));
     }
-    return { issues: Array.isArray(v.issues) ? v.issues : [], sections };
-  } catch (e) { return { issues: [{ claim: 'verification', problem: 'check failed: ' + e.message }], sections }; }
+    const issues = Array.isArray(v.issues) ? v.issues : [];
+    const blocking = issues.filter((i) => i.blocking === true);
+    return { issues, blocking, sections };
+  } catch (e) { return { issues: [{ claim: 'verification', problem: 'check failed: ' + e.message }], blocking: [], sections }; }
 }
 
 // ---- YAML helper (JSON strings are valid YAML double-quoted scalars) -----
@@ -296,10 +299,15 @@ async function run() {
     let sections = buildSections(lead, lang);     // model output + affiliate rec + Play (even in dry-run)
     const v = await verifyIssue(items, sections, sources, lang);  // fact-check vs source facts
     sections = v.sections;
-    const issueStatus = v.issues.length ? 'review' : status;      // flagged → hold for human
+    const blocking = v.blocking || [];
+    const issueStatus = blocking.length ? 'review' : status;      // only UN-remediable flags hold for human
     if (v.issues.length) {
-      console.log(`⚠ ${lang.toUpperCase()} verification flagged ${v.issues.length} claim(s) → status: review`);
-      v.issues.forEach((i) => console.log(`   · ${i.claim} — ${i.problem}`));
+      const dropped = v.issues.length - blocking.length;
+      if (dropped) console.log(`✓ ${lang.toUpperCase()} verification auto-removed ${dropped} unsupported stat/money claim(s) — publishing the rest`);
+      if (blocking.length) {
+        console.log(`⚠ ${lang.toUpperCase()} verification flagged ${blocking.length} embedded claim(s) → status: review`);
+        blocking.forEach((i) => console.log(`   · ${i.claim} — ${i.problem}`));
+      }
     }
     const file = join(DAILY_OUT, `${date}.${lang}.md`);
     writeFileSync(file, issueFrontmatter(date, lang, items, sections, issueStatus));

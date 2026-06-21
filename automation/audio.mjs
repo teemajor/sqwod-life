@@ -91,6 +91,29 @@ const estDuration = (txt) => {
 };
 const hms = (mmss) => { const [m, s] = mmss.split(':').map(Number); return `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}:${String(s).padStart(2, '0')}`; };
 
+// GitHub Actions–visible logging: ::error:: shows up red in the run + annotations.
+const CI = !!(process.env.GITHUB_ACTIONS || process.env.CI);
+const ghError = (msg) => { if (CI) console.log(`::error title=Sqwod audio::${msg}`); console.error(`✗ ${msg}`); };
+const summary = (line) => { try { if (process.env.GITHUB_STEP_SUMMARY) writeFileSync(process.env.GITHUB_STEP_SUMMARY, line + '\n', { flag: 'a' }); } catch {} };
+
+// Preflight: confirm the key works and each voice id is real BEFORE we try to synth.
+// Turns a silent green run into a clear, actionable error.
+async function preflight(langs) {
+  if (!KEY) { ghError('ELEVENLABS_API_KEY is empty in this job. Check the secret name/scope (repo Settings → Secrets → Actions → ELEVENLABS_API_KEY).'); return false; }
+  // Validate the key against the account.
+  const who = await fetch('https://api.elevenlabs.io/v1/user', { headers: { 'xi-api-key': KEY } });
+  if (!who.ok) { ghError(`ElevenLabs key rejected (${who.status}). ${(await who.text()).slice(0, 160)}`); return false; }
+  // Validate each voice id we'll use.
+  let ok = true;
+  for (const lang of langs) {
+    const id = VOICE[lang];
+    const v = await fetch(`https://api.elevenlabs.io/v1/voices/${id}`, { headers: { 'xi-api-key': KEY } });
+    if (!v.ok) { ghError(`Voice id for ${lang.toUpperCase()} ("${id}") is invalid (${v.status}). Check ELEVENLABS_VOICE_${lang.toUpperCase()}.`); ok = false; }
+    else { const j = await v.json().catch(() => ({})); console.log(`· voice ${lang}: "${j.name || id}" ✓`); }
+  }
+  return ok;
+}
+
 async function synth(script, lang, outPath) {
   const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE[lang]}`, {
     method: 'POST',
@@ -163,15 +186,27 @@ async function run() {
   const date = args.date || new Date().toISOString().slice(0, 10);
 
   if (!args['feeds-only']) {
-    for (const lang of langs) {
-      const file = join(DAILY, `${date}.${lang}.md`);
-      if (!existsSync(file)) { console.log(`· no issue for ${date} (${lang}) — skipping`); continue; }
-      const iss = parseIssue(file);
-      const script = scriptFor(iss, lang);
-      const out = join(AUDIO, `${date}-${lang}.mp3`);
-      if (!KEY) { console.log(`· dry-run (no ELEVENLABS_API_KEY): would synth ${script.split(/\s+/).length} words → audio/${date}-${lang}.mp3`); continue; }
-      try { await synth(script, lang, out); console.log(`✓ audio (${lang}): ${(statSync(out).size / 1024).toFixed(0)} KB → audio/${date}-${lang}.mp3`); }
-      catch (e) { console.error(`✗ TTS failed (${lang}): ${e.message}`); }
+    const ready = await preflight(langs);
+    if (!ready) {
+      summary('### 🔇 Sqwod Daily audio: SKIPPED — ElevenLabs preflight failed (see ::error:: above).');
+      if (!KEY && !CI) console.log('· local dry-run (no ELEVENLABS_API_KEY) — rebuilding feeds only');
+    } else {
+      let made = 0;
+      for (const lang of langs) {
+        const file = join(DAILY, `${date}.${lang}.md`);
+        if (!existsSync(file)) { console.log(`· no issue for ${date} (${lang}) — skipping`); continue; }
+        const iss = parseIssue(file);
+        const script = scriptFor(iss, lang);
+        const out = join(AUDIO, `${date}-${lang}.mp3`);
+        try {
+          await synth(script, lang, out);
+          const kb = (statSync(out).size / 1024).toFixed(0);
+          console.log(`✓ audio (${lang}): ${kb} KB → audio/${date}-${lang}.mp3`);
+          summary(`- ✅ Audio ${lang.toUpperCase()} — ${kb} KB → \`audio/${date}-${lang}.mp3\``);
+          made++;
+        } catch (e) { ghError(`TTS failed (${lang}): ${e.message}`); }
+      }
+      if (made === 0 && KEY) ghError(`No audio produced for ${date} (issue files missing or every synth call failed).`);
     }
   }
   for (const lang of ['en', 'de']) buildFeed(lang);

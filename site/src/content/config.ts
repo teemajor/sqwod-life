@@ -91,6 +91,10 @@ const articles = defineCollection({
     sourceIds: z.array(z.string()).default([]), // provenance → living wiki
     sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]), // rendered citations
     asOf: z.string().optional(),               // "as of" date for data-heavy pieces
+    // Living-report extras (Sqwod Intelligence):
+    figures: z.array(z.object({ label: z.string(), value: z.string(), note: z.string().optional(), source: z.string().optional() })).default([]),
+    series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional() }).optional(),
+    changelog: z.array(z.object({ date: z.string(), note: z.string() })).default([]),
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({
       kind: z.enum(['line', 'bars', 'orbit']).default('line'),
