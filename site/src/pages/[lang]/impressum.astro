@@ -5,13 +5,49 @@ export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
 ---
 <Base lang={lang} title="Impressum — Sqwod" active="">
   <h1 style="margin-top:36px">Impressum</h1>
-  <div class="prose">
-    <p>{lang==='de'
-      ? 'Angaben gemäß § 5 TMG. (Platzhalter — echte Anbieterkennzeichnung vor dem Launch ergänzen: Name, Anschrift, Kontakt, USt-IdNr., Verantwortliche:r i.S.d. § 18 Abs. 2 MStV.)'
-      : 'Information pursuant to § 5 TMG (German law). (Placeholder — add real provider details before launch: name, address, contact, VAT ID, responsible party.)'}</p>
-    <p>Sqwod · Berlin · tee@sqwod.life</p>
+  <div class="prose imp">
+    <p class="lbl">{de ? 'Angaben gemäß § 5 DDG' : 'Information pursuant to § 5 DDG (German Digital Services Act)'}</p>
+    <p>
+      Thomas Major<br />
+      Wisbyer Str. 70<br />
+      10439 Berlin<br />
+      {de ? 'Deutschland' : 'Germany'}
+    </p>
+
+    <p class="lbl">{de ? 'Kontakt' : 'Contact'}</p>
+    <p>
+      {de ? 'Telefon' : 'Phone'}: +49 176 43220085<br />
+      {de ? 'E-Mail' : 'Email'}: <a href="mailto:tee@sqwod.life">tee@sqwod.life</a>
+    </p>
+
+    <p class="lbl">{de ? 'Umsatzsteuer-ID' : 'VAT ID'}</p>
+    <p>
+      {de
+        ? 'Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:'
+        : 'VAT identification number pursuant to § 27 a German VAT Act:'}<br />
+      DE329421661
+    </p>
+
+    <p class="lbl">{de ? 'Redaktionell verantwortlich (§ 18 Abs. 2 MStV)' : 'Responsible for editorial content (§ 18 (2) MStV)'}</p>
+    <p>
+      Thomas Major<br />
+      Wisbyer Str. 70<br />
+      10439 Berlin
+    </p>
+
+    <p class="lbl">{de ? 'Verbraucherstreitbeilegung' : 'Consumer dispute resolution'}</p>
+    <p>{de
+      ? 'Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.'
+      : 'We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.'}</p>
   </div>
 </Base>
+
+<style>
+  .imp .lbl{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);margin:24px 0 4px}
+  .imp p{margin:0 0 6px;line-height:1.65}
+  .imp a{color:var(--chalk);text-decoration:underline}
+</style>
