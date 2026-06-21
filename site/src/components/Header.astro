@@ -8,7 +8,7 @@ const otherHref = altPath ?? `/${other}/`;
 <header class="site">
   <div class="wrap bar">
     <a class="logo" href={`/${lang}/`}><img class="logo-mark" src="/sqwod-white.png" alt="Sqwod" width="76" height="20" /><span>.life</span></a>
-    <nav class="main">
+    <nav class="main" id="mainnav">
       <a href={`/${lang}/daily`} class={active==='daily'?'on':''}>{t(lang,'nav.daily')}</a>
       <a href={`/${lang}/intelligence`} class={active==='intelligence'?'on':''}>{t(lang,'nav.intelligence')}</a>
       <a href={`/${lang}/articles`} class={active==='articles'?'on':''}>{t(lang,'nav.articles')}</a>
@@ -19,6 +19,21 @@ const otherHref = altPath ?? `/${other}/`;
     <div class="utils">
       <a class="lang" href={otherHref}><b>{lang.toUpperCase()}</b> · {other.toUpperCase()}</a>
       <a class="cta" href={`/${lang}/subscribe`}>{t(lang,'nav.subscribe')}</a>
+      <button class="nav-toggle" type="button" aria-label={lang==='de'?'Menü':'Menu'} aria-expanded="false" aria-controls="mainnav">
+        <span class="nt-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
     </div>
   </div>
 </header>
+
+<script is:inline>
+  (function () {
+    var bar = document.querySelector('header.site .bar');
+    var btn = bar && bar.querySelector('.nav-toggle');
+    if (!bar || !btn) return;
+    btn.addEventListener('click', function () {
+      var open = bar.classList.toggle('nav-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>

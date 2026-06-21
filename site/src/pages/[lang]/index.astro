@@ -5,18 +5,20 @@ import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../i18n/ui';
 import { PILLARS, pillarMeta } from '../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../config/podcast';
+import { BEEHIIV } from '../../config/beehiiv';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
-const issues = (await getCollection('daily', (i) => i.data.lang === lang)).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latestHref = issues[0] ? `/${lang}/daily/${issues[0].data.urlSlug}` : `/${lang}/daily`;
+// Only surface platforms that have a real URL (drops dead "#" links until configured).
 const platforms = [
   { name: 'Apple Podcasts', url: APPLE_URL }, { name: 'Spotify', url: SPOTIFY_URL },
   { name: 'YouTube', url: '#' }, { name: 'Amazon Music', url: '#' },
   { name: 'iHeartRadio', url: '#' }, { name: 'RSS', url: rssFor(lang) },
-];
+].filter((p) => p.url && p.url !== '#');
 const title = lang === 'de'
   ? 'Sqwod — dein Vorsprung im Fitness-Business'
   : 'Sqwod — your edge in the business of fitness';
@@ -46,7 +48,7 @@ const tagline = lang === 'de'
       <strong>{lang==='de'?'In 5 Minuten schlauer':'Get smarter in 5 minutes'}</strong>
       <span>{lang==='de'?'Sqwod Daily: das Fitness-Business, werktäglich. Kostenlos.':'Sqwod Daily: the business of fitness, every weekday. Free.'}</span>
     </div>
-    <form class="sb-form" method="get" action={`/${lang}/subscribe`}>
+    <form class="sb-form" method="get" action={BEEHIIV.subscribeUrl || `/${lang}/subscribe`}>
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
       <button class="cta" type="submit">{lang==='de'?'Abonnieren':'Subscribe'}</button>
     </form>
@@ -90,7 +92,7 @@ const tagline = lang === 'de'
   <section class="subbig reveal">
     <h2>{lang==='de'?'Werde schärfer — in 5 Minuten am Tag':'Get sharper in 5 minutes a day'}</h2>
     <p>{lang==='de'?'Schließ dich Coaches, Gründer:innen und Operatorn an, die Sqwod Daily lesen. Werktäglich, zweisprachig, kostenlos.':'Join the coaches, founders and operators who read Sqwod Daily. Every weekday, bilingual, free.'}</p>
-    <form class="sb-form center" method="get" action={`/${lang}/subscribe`}>
+    <form class="sb-form center" method="get" action={BEEHIIV.subscribeUrl || `/${lang}/subscribe`}>
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
       <button class="cta" type="submit">{lang==='de'?'Kostenlos abonnieren':'Subscribe free'}</button>
     </form>
@@ -129,6 +131,10 @@ const tagline = lang === 'de'
     .listen-sec .player-card{grid-template-columns:1fr;justify-items:center;text-align:center}
     .pc-body p{margin-left:auto;margin-right:auto}
     .platforms{justify-content:center}
-    .subbar{flex-direction:column;align-items:flex-start}
+    .subbar{flex-direction:column;align-items:stretch}
+    /* Email capture: stack input + button full-width so nothing overflows or sits off-center */
+    .sb-form,.sb-form.center{flex-direction:column;flex-wrap:nowrap;align-items:stretch;width:100%}
+    .sb-form input{min-width:0;width:100%;box-sizing:border-box}
+    .sb-form .cta{width:100%}
   }
 </style>
