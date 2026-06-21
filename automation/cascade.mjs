@@ -151,10 +151,47 @@ function buildSections(lead, lang) {
   return s;
 }
 
+// ---- VERIFICATION PASS: fact-check the draft against the source facts ----
+// Catches the model attributing a number/event to the wrong entity or inventing
+// figures. Strips unsupported stat/money claims and downgrades the issue to
+// `review` so a human looks before it can publish. No-op without an API key.
+async function verifyIssue(items, sections, sources, lang) {
+  if (!apiKey) return { issues: [], sections };
+  const facts = sources.map((s) => `- ${s.entity}: ${s.topic}${(s.facts || []).map((f) => ` | ${f.label}: ${f.value}${f.unit || ''}`).join('')}`).join('\n');
+  const draft = {
+    items: items.map((i) => ({ headline: i.headline, dek: i.dek })),
+    connectDots: sections.connectTitle ? { title: sections.connectTitle, body: sections.connectBody } : null,
+    stat: sections.stat || null,
+    moneyMoves: sections.moneyMoves || [],
+  };
+  const prompt = `You are a strict fact-checker for a fitness-industry newsletter. The ONLY facts available are these source items:
+${facts}
+
+Here is the drafted content (${lang}):
+${JSON.stringify(draft)}
+
+Find every claim in the draft that is NOT directly supported by the source facts — invented numbers, a figure/deal attributed to the wrong company, events not in the sources, or stats with no basis. Be conservative: framing/opinion is fine; only flag factual claims that aren't supported.
+Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"..."}],"dropStat":true|false,"dropMoneyIndexes":[ints]}`;
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST', headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: MODEL, max_tokens: 900, messages: [{ role: 'user', content: prompt }] }),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    const v = JSON.parse((data.content?.[0]?.text || '{}').trim().replace(/^```(?:json)?\s*|\s*```$/g, ''));
+    if (v.dropStat) delete sections.stat;
+    if (Array.isArray(v.dropMoneyIndexes) && v.dropMoneyIndexes.length && Array.isArray(sections.moneyMoves)) {
+      sections.moneyMoves = sections.moneyMoves.filter((_, i) => !v.dropMoneyIndexes.includes(i));
+    }
+    return { issues: Array.isArray(v.issues) ? v.issues : [], sections };
+  } catch (e) { return { issues: [{ claim: 'verification', problem: 'check failed: ' + e.message }], sections }; }
+}
+
 // ---- YAML helper (JSON strings are valid YAML double-quoted scalars) -----
 const q = (s) => JSON.stringify(s ?? '');
 
-function issueFrontmatter(date, lang, items, sections) {
+function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
   const lines = [
     '---',
     `urlSlug: ${q(date)}`,
@@ -163,7 +200,7 @@ function issueFrontmatter(date, lang, items, sections) {
     `date: ${q(date)}`,
     `edition: ${q('Weekday')}`,
     `title: ${q('Sqwod Daily')}`,
-    `status: ${q(status)}`,
+    `status: ${q(issueStatus)}`,
     `intro: ${q(lang === 'de'
       ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
       : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care.")}`,
@@ -246,10 +283,17 @@ async function run() {
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
     }
     const lead = await generateLead(items, lang);
-    const sections = buildSections(lead, lang);   // model output + affiliate rec + Play (even in dry-run)
+    let sections = buildSections(lead, lang);     // model output + affiliate rec + Play (even in dry-run)
+    const v = await verifyIssue(items, sections, sources, lang);  // fact-check vs source facts
+    sections = v.sections;
+    const issueStatus = v.issues.length ? 'review' : status;      // flagged → hold for human
+    if (v.issues.length) {
+      console.log(`⚠ ${lang.toUpperCase()} verification flagged ${v.issues.length} claim(s) → status: review`);
+      v.issues.forEach((i) => console.log(`   · ${i.claim} — ${i.problem}`));
+    }
     const file = join(DAILY_OUT, `${date}.${lang}.md`);
-    writeFileSync(file, issueFrontmatter(date, lang, items, sections));
-    console.log(`✓ ${lang.toUpperCase()} issue → site/src/content/daily/${date}.${lang}.md  (${items.length} items, status: ${status})`);
+    writeFileSync(file, issueFrontmatter(date, lang, items, sections, issueStatus));
+    console.log(`✓ ${lang.toUpperCase()} issue → site/src/content/daily/${date}.${lang}.md  (${items.length} items, status: ${issueStatus})`);
   }
 
   console.log(`\nMode: ${dryRun ? 'DRY-RUN (no LLM key)' : 'LLM'}  ·  Source: ${date}  ·  ${sources.length} sources → ${LANGS.length} bilingual issues`);

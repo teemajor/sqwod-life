@@ -4,21 +4,27 @@ import PillarIcon from '../../components/PillarIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../i18n/ui';
 import { PILLARS, pillarMeta } from '../../i18n/pillars';
-import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../config/podcast';
+import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../config/podcast';
 import { BEEHIIV } from '../../config/beehiiv';
+import { existsSync } from 'node:fs';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
 const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-const latestHref = issues[0] ? `/${lang}/daily/${issues[0].data.urlSlug}` : `/${lang}/daily`;
+const latest = issues[0];
+const latestHref = latest ? `/${lang}/daily/${latest.data.urlSlug}` : `/${lang}/daily`;
+const latestAudio = latest ? episodeAudio(latest.data.urlSlug, lang) : null;
+const hasLatestAudio = !!(latestAudio && existsSync(new URL(`../../../public${latestAudio}`, import.meta.url)));
+const fmtDate = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 // Only surface platforms that have a real URL (drops dead "#" links until configured).
 const platforms = [
   { name: 'Apple Podcasts', url: APPLE_URL }, { name: 'Spotify', url: SPOTIFY_URL },
   { name: 'YouTube', url: '#' }, { name: 'Amazon Music', url: '#' },
   { name: 'iHeartRadio', url: '#' }, { name: 'RSS', url: rssFor(lang) },
 ].filter((p) => p.url && p.url !== '#');
+const hasApple = platforms.some((p) => p.name === 'Apple Podcasts' || p.name === 'Spotify');
 const title = lang === 'de'
   ? 'Sqwod — dein Vorsprung im Fitness-Business'
   : 'Sqwod — your edge in the business of fitness';
@@ -74,15 +80,26 @@ const tagline = lang === 'de'
   <section class="block listen-sec reveal" style="border-top:1px solid var(--line)">
     <p class="kick">{lang==='de'?'Hör Sqwod Daily':'Listen to Sqwod Daily'}</p>
     <div class="player-card">
-      <a class="pc-cover" href={latestHref} aria-label="Play latest episode">
+      <a class="pc-cover" href={latestHref} aria-label={lang==='de'?'Neueste Folge':'Latest episode'}>
         <img src="/podcast-cover.png" alt="Sqwod Daily" width="150" height="150" />
-        <span class="pc-play">▶</span>
       </a>
       <div class="pc-body">
         <h3>{lang==='de'?'Der tägliche 5-Minuten-Audio-Brief':'The daily 5-minute audio brief'}</h3>
-        <p>{lang==='de'?'Das Fitness-Business im Ohr — jeden Werktag, auf EN & DE. Folge uns auf deiner Plattform:':'The business of fitness in your ears — every weekday, in EN & DE. Follow on your platform:'}</p>
+        <p>{lang==='de'?'Das Fitness-Business im Ohr — jeden Werktag, auf EN & DE.':'The business of fitness in your ears — every weekday, in EN & DE.'}</p>
+
+        {hasLatestAudio ? (
+          <div class="pc-now">
+            <div class="pc-latest">{lang==='de'?'Neueste Folge':'Latest'} · {fmtDate(latest.data.date)}</div>
+            <audio controls preload="none" src={latestAudio} class="pc-audio"></audio>
+          </div>
+        ) : (
+          <p class="pc-soon">{lang==='de'?'Erste Folge bald — abonniere unten und sei zuerst dabei.':'First episode dropping soon — subscribe below to get it first.'}</p>
+        )}
+
         <div class="platforms">
           {platforms.map((p) => <a class="plat" href={p.url} target="_blank" rel="noopener">{p.name}</a>)}
+          <a class="plat" href={latestHref}>{lang==='de'?'Alle Folgen':'All episodes'}</a>
+          {!hasApple && <span class="plat-soon">{lang==='de'?'Apple & Spotify in Kürze':'Apple & Spotify soon'}</span>}
         </div>
       </div>
     </div>
@@ -109,18 +126,20 @@ const tagline = lang === 'de'
   .sb-form input:focus{outline:none;border-color:var(--chalk)}
   .sb-form.center{justify-content:center}
 
-  .listen-sec .player-card{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:center;
+  .listen-sec .player-card{display:grid;grid-template-columns:140px 1fr;gap:22px;align-items:center;
     border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--panel)}
-  .pc-cover{position:relative;display:block;width:150px;height:150px;border-radius:12px;overflow:hidden}
+  .pc-cover{display:block;width:140px;height:140px;border-radius:12px;overflow:hidden}
   .pc-cover img{width:100%;height:100%;object-fit:cover;display:block}
-  .pc-play{position:absolute;inset:0;margin:auto;width:54px;height:54px;display:flex;align-items:center;justify-content:center;
-    background:rgba(14,14,16,.55);color:var(--chalk);border:1px solid rgba(255,255,255,.5);border-radius:50%;font-size:18px;padding-left:3px;transition:transform .15s ease,background .15s ease}
-  .pc-cover:hover .pc-play{transform:scale(1.08);background:var(--ink)}
   .pc-body h3{margin:0 0 6px;font-size:19px;letter-spacing:-.01em}
-  .pc-body p{margin:0 0 14px;color:var(--g2);font-size:14.5px;line-height:1.5;max-width:52ch}
-  .platforms{display:flex;flex-wrap:wrap;gap:8px}
+  .pc-body p{margin:0 0 12px;color:var(--g2);font-size:14.5px;line-height:1.5;max-width:52ch}
+  .pc-now{margin:0 0 14px}
+  .pc-latest{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin-bottom:8px}
+  .pc-audio{width:100%;max-width:420px;height:38px;filter:invert(1) hue-rotate(180deg)}
+  .pc-soon{font-size:14px;color:var(--g2);margin:0 0 14px;font-style:italic}
+  .platforms{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
   .plat{font-size:12.5px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:7px 13px;transition:border-color .15s ease,background .15s ease}
   .plat:hover{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
+  .plat-soon{font-size:11.5px;color:var(--g4);letter-spacing:.02em}
 
   .subbig{text-align:center;border:1px solid var(--line);border-radius:18px;padding:40px 24px;margin:26px 0 8px;
     background:linear-gradient(180deg,var(--panel),transparent)}

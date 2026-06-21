@@ -1,11 +1,14 @@
 ---
 import { t, type Lang } from '../i18n/ui';
-interface Crowd { score:number; reviews:number; platforms:number; sources:{name:string;value:string}[] }
+interface Crowd { score:number; reviews:number; platforms:number; sources:{name:string;value:string;url?:string}[] }
 interface Assessment { score:number; criteria:{name:string;score:number}[] }
 interface Value { score:number; bestPrice:number; currency:string; low?:number; subscription?:string; history:number[] }
-interface Props { lang: Lang; crowd: Crowd; assessment: Assessment; value: Value }
-const { lang, crowd, assessment, value } = Astro.props;
+interface Props { lang: Lang; crowd: Crowd; assessment: Assessment; value: Value; asOf?: string }
+const { lang, crowd, assessment, value, asOf } = Astro.props;
 const max = Math.max(...value.history, 1);
+const note = lang === 'de'
+  ? `Crowd- und Preisangaben aus öffentlichen Quellen${asOf ? `, Stand ${asOf}` : ''}. Live-Aggregation wird ausgerollt — Zahlen können sich ändern.`
+  : `Crowd & price figures from public sources${asOf ? `, as of ${asOf}` : ''}. Live aggregation is rolling out — figures may change.`;
 ---
 <section class="block">
   <p class="kick">{t(lang,'verified.breakdown')}</p>
@@ -16,7 +19,9 @@ const max = Math.max(...value.history, 1);
       <p class="ctitle">{t(lang,'verified.crowd')}</p>
       <p class="cdesc">{crowd.reviews.toLocaleString()} {t(lang,'verified.reviews')} · {crowd.platforms} {t(lang,'verified.platforms')}</p>
       <div class="src">
-        {crowd.sources.map(s => <span class="chip">{s.name} <b>{s.value}</b></span>)}
+        {crowd.sources.map(s => s.url
+          ? <a class="chip" href={s.url} target="_blank" rel="nofollow noopener">{s.name} <b>{s.value}</b> ↗</a>
+          : <span class="chip">{s.name} <b>{s.value}</b></span>)}
       </div>
     </div>
   </div>
@@ -51,4 +56,12 @@ const max = Math.max(...value.history, 1);
       </div>
     </div>
   </div>
+
+  <p class="sbnote">{note}</p>
 </section>
+
+<style>
+  .sbnote{margin-top:14px;font-size:11.5px;line-height:1.5;color:var(--g4)}
+  a.chip{text-decoration:none}
+  a.chip:hover{border-color:var(--chalk)}
+</style>

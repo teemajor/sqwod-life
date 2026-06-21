@@ -39,7 +39,7 @@ const reviews = defineCollection({
       score: z.number(),
       reviews: z.number(),
       platforms: z.number(),
-      sources: z.array(z.object({ name: z.string(), value: z.string() })),
+      sources: z.array(z.object({ name: z.string(), value: z.string(), url: z.string().optional() })),
     }),
     assessment: z.object({
       score: z.number(),
