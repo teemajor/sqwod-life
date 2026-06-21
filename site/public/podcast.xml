@@ -14,6 +14,20 @@
     <itunes:owner><itunes:name>Sqwod</itunes:name><itunes:email>hello@sqwod.life</itunes:email></itunes:owner>
     <itunes:image href="https://sqwod.life/podcast-cover.png"/>
     <image><url>https://sqwod.life/podcast-cover.png</url><title>Sqwod Daily</title><link>https://sqwod.life/en/daily</link></image>
-
+    <item>
+      <title>Sqwod Daily — 21 Jun 2026</title>
+      <description>Today's reps: what moved in the industry, minus the corporate snooze — and why you should care.
+• Peloton snaps up connected Pilates brand Skōp — Peloton has acquired Skōp, a connected Pilates innovator, as it looks to broaden its fitness portfolio beyond the bike. For studio operators eyeing the connected-equipment space, this signals Pilates is officially too big for anyone to ignore.
+• Rajnish Wellness: Big Revenue, Bigger Losses in Q4 FY26 — The wellness brand posted a revenue surge last quarter — but heavy losses mean growth alone isn't paying the bills. For studio operators, it's a timely reminder that top-line momentum means nothing if the bottom line is bleeding out.
+• Oura Ring 5 Is 40% Smaller and Now Tracks Blood Pressure — The latest Oura Ring just got a serious hardware upgrade — smaller form factor, plus blood pressure tracking that could make it a much easier sell to clients who hate wearing 'gear.' For coaches and studio operators, wearable buy-in just got a lower barrier.
+• This AI Pin Records Everything You Say—Hands-Free — The Plaud NotePin S is a wearable AI recorder that captures conversations without you touching your phone. For coaches drowning in session notes and client check-ins, that's a pretty compelling reason to pin something new to your kit bag.
+• Fitbod's founder: strength training still runs the show — From day one to today, Fitbod's CEO says resistance training has never lost its throne — and it's the same logic fueling the rise of AI coaching tools like Google's Health Coach. For operators, the message is clear: build your offering around the iron, and the tech will follow.</description>
+      <pubDate>Sun, 21 Jun 2026 06:00:00 GMT</pubDate>
+      <enclosure url="https://sqwod.life/audio/2026-06-21-en.mp3" length="2052641" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://sqwod.life/audio/2026-06-21-en.mp3</guid>
+      <itunes:duration>00:02:00</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://sqwod.life/en/daily/2026-06-21</link>
+    </item>
   </channel>
 </rss>
