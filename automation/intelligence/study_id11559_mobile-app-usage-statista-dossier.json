@@ -1,0 +1,2169 @@
+{
+  "study": "study_id11559_mobile-app-usage-statista-dossier",
+  "file": "research/statista/study_id11559_mobile-app-usage-statista-dossier.pdf",
+  "charts": [
+    {
+      "title": "Annual number of global mobile app downloads 2016-2023",
+      "unit": "Annual app downloads in billions",
+      "years": [
+        "2016",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        140.68,
+        192.45,
+        204.0,
+        218.0,
+        230.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          140.68,
+          192.45,
+          204.0,
+          218.0,
+          230.0
+        ]
+      ],
+      "source": "Data.ai",
+      "note": "Worldwide; iOS App Store, Google Play and third-party Android stores combined. Downloads are first time downloads only; re-installs and updates are excluded",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Number of iOS and Google Play app downloads as of Q1 2023",
+      "unit": "Number of downloads in billions",
+      "years": [],
+      "values": [
+        6.66,
+        6.0,
+        6.96,
+        9.0,
+        7.37,
+        3.0,
+        7.77,
+        7.0,
+        7.67,
+        6.0,
+        7.47,
+        4.0,
+        88.0,
+        9.29,
+        2.0,
+        8.28,
+        2.0,
+        8.48,
+        4.0,
+        7.97,
+        9.0,
+        8.58,
+        5.0,
+        8.28,
+        2.0,
+        8.18,
+        1.0
+      ],
+      "series_rows": [
+        [
+          6.66,
+          6.0,
+          6.96,
+          9.0,
+          7.37,
+          3.0,
+          7.77,
+          7.0,
+          7.67,
+          6.0,
+          7.47,
+          4.0,
+          88.0,
+          9.29,
+          2.0,
+          8.28,
+          2.0,
+          8.48,
+          4.0,
+          7.97,
+          9.0,
+          8.58,
+          5.0,
+          8.28,
+          2.0,
+          8.18,
+          1.0
+        ],
+        [
+          16.716,
+          7.0,
+          17.117,
+          1.0,
+          17.417,
+          4.0,
+          19.419,
+          4.0,
+          20.52,
+          5.0,
+          21.621,
+          6.0
+        ],
+        [
+          24.424,
+          4.0,
+          28.328,
+          3.0,
+          28.228,
+          2.0,
+          27.727,
+          7.0,
+          28.328,
+          3.0,
+          27.127,
+          1.0,
+          26.926,
+          9.0
+        ]
+      ],
+      "source": "MarketingCharts; Sensor Tower; Statista",
+      "note": "Worldwide; Q3 2016 to Q1 2023",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Global mobile app downloads 2019-2023",
+      "unit": "Downloads in billion",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        59.9
+      ],
+      "series_rows": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          59.9
+        ]
+      ],
+      "source": "Business of Apps; Data.ai",
+      "note": "Worldwide; H1 2019 to H1 2023; excluding third-party Android app stores",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Leading Android apps worldwide 2023, by downloads",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        68.92,
+        38.52,
+        29.57,
+        26.02,
+        24.76,
+        23.77,
+        23.73,
+        22.91,
+        21.55,
+        17.55,
+        16.22,
+        16.21,
+        16.11,
+        15.94,
+        15.47
+      ],
+      "series_rows": [
+        [
+          68.92,
+          38.52,
+          29.57,
+          26.02,
+          24.76,
+          23.77,
+          23.73,
+          22.91,
+          21.55,
+          17.55,
+          16.22,
+          16.21,
+          16.11,
+          15.94,
+          15.47
+        ]
+      ],
+      "source": "AppTweak",
+      "note": "Worldwide; June 2023; based on downloads to devices worldwide",
+      "needs_review": [],
+      "page": 8
+    },
+    {
+      "title": "Leading iPhone apps worldwide 2023, by downloads",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        6.36,
+        6.16,
+        5.23,
+        4.65,
+        4.12,
+        3.91,
+        3.66,
+        3.54,
+        2.69,
+        2.63,
+        2.42,
+        2.36,
+        2.29,
+        2.23,
+        2.06
+      ],
+      "series_rows": [
+        [
+          6.36,
+          6.16,
+          5.23,
+          4.65,
+          4.12,
+          3.91,
+          3.66,
+          3.54,
+          2.69,
+          2.63,
+          2.42,
+          2.36,
+          2.29,
+          2.23,
+          2.06
+        ]
+      ],
+      "source": "AppTweak",
+      "note": "Worldwide; June 2023; iPhone apps only, excluding iPad apps",
+      "needs_review": [],
+      "page": 9
+    },
+    {
+      "title": "Leading global markets for mobile app downloads 2022-2023",
+      "unit": "App downloads in billions",
+      "years": [],
+      "values": [
+        1.7,
+        0.39,
+        0.32,
+        0.25,
+        1.82,
+        1.63,
+        0.4
+      ],
+      "series_rows": [
+        [
+          1.7,
+          0.39,
+          0.32,
+          0.25,
+          1.82,
+          1.63,
+          0.4
+        ]
+      ],
+      "source": "Sensor Tower",
+      "note": "Worldwide; Q2 2022 and Q2 2023; *Forecast Read more",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Quarterly consumer spend on mobile apps per user 2019-2023",
+      "unit": "Average spend in U.S. dollars",
+      "years": [],
+      "values": [
+        1.0,
+        19.0,
+        2.0,
+        19.0,
+        3.0,
+        19.0,
+        1.0,
+        20.0,
+        2.0,
+        20.0,
+        3.0,
+        20.0,
+        1.0,
+        21.0,
+        2.0,
+        21.0,
+        3.0,
+        21.0,
+        1.0,
+        22.0,
+        2.0,
+        22.0,
+        3.0,
+        22.0,
+        1.0,
+        23.0,
+        2.0,
+        23.0,
+        3.0,
+        23.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          19.0,
+          2.0,
+          19.0,
+          3.0,
+          19.0,
+          1.0,
+          20.0,
+          2.0,
+          20.0,
+          3.0,
+          20.0,
+          1.0,
+          21.0,
+          2.0,
+          21.0,
+          3.0,
+          21.0,
+          1.0,
+          22.0,
+          2.0,
+          22.0,
+          3.0,
+          22.0,
+          1.0,
+          23.0,
+          2.0,
+          23.0,
+          3.0,
+          23.0
+        ],
+        [
+          4.17,
+          4.04,
+          4.11
+        ],
+        [
+          5.29,
+          5.31,
+          5.31
+        ],
+        [
+          5.03,
+          4.95,
+          4.86,
+          4.88,
+          5.03,
+          5.05
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Worldwide; Q1 2019 to Q3 2023; spend per handset, not per unique user; excluding apps downloaded from third-party Android stores",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Quarterly mobile app consumer spend on mobile apps Q1 2024",
+      "unit": "Consumer spend in billion U.S. dollars",
+      "years": [],
+      "values": [
+        1.0,
+        19.0,
+        2.0,
+        19.0,
+        3.0,
+        19.0,
+        1.0,
+        20.0,
+        2.0,
+        20.0,
+        3.0,
+        20.0,
+        4.0,
+        20.0,
+        1.0,
+        21.0,
+        2.0,
+        21.0,
+        3.0,
+        21.0,
+        4.0,
+        21.0,
+        1.0,
+        22.0,
+        2.0,
+        22.0,
+        3.0,
+        22.0,
+        4.0,
+        22.0,
+        1.0,
+        23.0,
+        2.0,
+        23.0,
+        3.0,
+        23.0,
+        4.0,
+        23.0,
+        1.0,
+        24.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          19.0,
+          2.0,
+          19.0,
+          3.0,
+          19.0,
+          1.0,
+          20.0,
+          2.0,
+          20.0,
+          3.0,
+          20.0,
+          4.0,
+          20.0,
+          1.0,
+          21.0,
+          2.0,
+          21.0,
+          3.0,
+          21.0,
+          4.0,
+          21.0,
+          1.0,
+          22.0,
+          2.0,
+          22.0,
+          3.0,
+          22.0,
+          4.0,
+          22.0,
+          1.0,
+          23.0,
+          2.0,
+          23.0,
+          3.0,
+          23.0,
+          4.0,
+          23.0,
+          1.0,
+          24.0
+        ],
+        [
+          22.0,
+          22.6,
+          23.0,
+          23.4
+        ],
+        [
+          32.0,
+          34.0,
+          34.0
+        ],
+        [
+          33.0,
+          33.0,
+          32.4
+        ],
+        [
+          33.7,
+          33.8,
+          33.9
+        ],
+        [
+          69.9,
+          35.28,
+          15.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Worldwide; Q1 2019 to Q1 2024; across all platforms",
+      "needs_review": true,
+      "page": 15
+    },
+    {
+      "title": "Global app consumer spending in first half 2019-2023",
+      "unit": "Consumer spend in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        44.8,
+        50.2
+      ],
+      "series_rows": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          44.8,
+          50.2
+        ]
+      ],
+      "source": "Business of Apps; Data.ai",
+      "note": "Worldwide; H1 2019 to H1 2023; excluding third-party Android app stores",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Leading Android apps worldwide 2023, by revenue",
+      "unit": "Note(s): Worldwide; June 2023; total revenue in Google Play Store",
+      "years": [],
+      "values": [
+        70.59,
+        50.73,
+        38.09,
+        27.34,
+        25.2,
+        25.08,
+        22.19,
+        19.08,
+        17.79,
+        15.22,
+        13.41,
+        9.87,
+        9.5,
+        8.03,
+        7.46
+      ],
+      "series_rows": [
+        [
+          70.6,
+          50.7,
+          38.0
+        ],
+        [
+          70.59,
+          50.73,
+          38.09,
+          27.34,
+          25.2,
+          25.08,
+          22.19,
+          19.08,
+          17.79,
+          15.22,
+          13.41,
+          9.87,
+          9.5,
+          8.03,
+          7.46
+        ]
+      ],
+      "source": "AppTweak",
+      "note": "Worldwide; June 2023; total revenue in Google Play Store",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Global mobile app consumer spending 2016-2023",
+      "unit": "Spending in billion U.S. dollars",
+      "years": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        1701.0,
+        70.0,
+        1671.0,
+        67.0,
+        1711.0,
+        71.0
+      ],
+      "series_rows": [
+        [
+          171.0,
+          170.0,
+          -19.0
+        ],
+        [
+          1701.0,
+          70.0,
+          1671.0,
+          67.0,
+          1711.0,
+          71.0
+        ]
+      ],
+      "source": "Data.ai; TechCrunch",
+      "note": "Worldwide; 2016 to 2023",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Global app & games reaching one billion U.S. dollars in cumulative revenues 2013-2023",
+      "unit": "",
+      "years": [
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        11.0,
+        33.0,
+        22.0,
+        22.0
+      ],
+      "series_rows": [
+        [
+          11.0,
+          33.0,
+          22.0,
+          22.0
+        ],
+        [
+          22.0,
+          11.0,
+          22.0,
+          22.0
+        ],
+        [
+          1111.0,
+          66.0,
+          77.0
+        ],
+        [
+          1010.0,
+          44.0,
+          77.0
+        ],
+        [
+          1919.0,
+          1818.0,
+          1919.0,
+          1919.0
+        ]
+      ],
+      "source": "Data.ai",
+      "note": "Worldwide; 2013 to 2023; spending includes iOS and Google Play combined",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "In-app advertising spending worldwide 2023, by industry",
+      "unit": "Spending in billion U.S. dollars",
+      "years": [],
+      "values": [
+        126.2,
+        91.34,
+        29.5,
+        21.35,
+        11.03,
+        8.15,
+        4.37,
+        3.21,
+        2.98,
+        2.06,
+        2.0,
+        1.76,
+        1.55,
+        1.48,
+        1.36
+      ],
+      "series_rows": [
+        [
+          126.2,
+          91.34,
+          29.5,
+          21.35,
+          11.03,
+          8.15,
+          4.37,
+          3.21,
+          2.98,
+          2.06,
+          2.0,
+          1.76,
+          1.55,
+          1.48,
+          1.36
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "Worldwide",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Smartphone activities in selected countries 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        54.0,
+        70.0,
+        84.0,
+        75.0,
+        67.0,
+        75.0,
+        75.0,
+        70.0,
+        67.0,
+        81.0,
+        87.0
+      ],
+      "series_rows": [
+        [
+          54.0,
+          70.0,
+          84.0,
+          75.0,
+          67.0,
+          75.0,
+          75.0,
+          70.0,
+          67.0,
+          81.0,
+          87.0
+        ],
+        [
+          73.0,
+          78.0,
+          72.0,
+          73.0,
+          35.0,
+          72.0,
+          86.0,
+          75.0,
+          65.0,
+          77.0,
+          71.0
+        ],
+        [
+          36.0,
+          65.0,
+          66.0,
+          63.0,
+          45.0,
+          60.0,
+          77.0,
+          56.0,
+          62.0,
+          53.0,
+          54.0
+        ],
+        [
+          66.0,
+          53.0,
+          71.0,
+          60.0,
+          60.0,
+          56.0,
+          62.0,
+          56.0,
+          66.0,
+          56.0,
+          77.0
+        ],
+        [
+          28.0,
+          52.0,
+          78.0,
+          60.0,
+          63.0,
+          56.0,
+          60.0,
+          52.0,
+          71.0,
+          64.0,
+          76.0
+        ],
+        [
+          24.0,
+          56.0,
+          68.0,
+          54.0,
+          49.0,
+          53.0,
+          60.0,
+          55.0,
+          56.0,
+          58.0,
+          56.0
+        ],
+        [
+          59.0,
+          53.0,
+          65.0,
+          49.0,
+          60.0,
+          53.0,
+          52.0,
+          55.0,
+          61.0,
+          56.0,
+          57.0
+        ],
+        [
+          26.0,
+          49.0,
+          58.0,
+          51.0,
+          57.0,
+          44.0,
+          52.0,
+          48.0,
+          60.0,
+          66.0,
+          63.0
+        ],
+        [
+          40.0,
+          56.0,
+          56.0,
+          39.0,
+          43.0,
+          44.0,
+          71.0,
+          54.0,
+          48.0,
+          66.0,
+          43.0
+        ],
+        [
+          66.0,
+          39.0,
+          71.0,
+          41.0,
+          45.0,
+          63.0,
+          36.0,
+          39.0,
+          60.0,
+          50.0,
+          62.0
+        ],
+        [
+          25.0,
+          39.0,
+          48.0,
+          47.0,
+          46.0,
+          29.0,
+          50.0,
+          36.0,
+          46.0,
+          52.0,
+          53.0
+        ],
+        [
+          38.0,
+          31.0,
+          60.0,
+          37.0,
+          60.0,
+          40.0,
+          40.0,
+          35.0,
+          65.0,
+          35.0,
+          57.0
+        ],
+        [
+          52.0,
+          42.0,
+          52.0,
+          39.0,
+          33.0,
+          42.0,
+          48.0,
+          46.0,
+          39.0,
+          49.0,
+          42.0
+        ],
+        [
+          21.0,
+          28.0,
+          49.0,
+          41.0,
+          50.0,
+          42.0,
+          32.0,
+          35.0,
+          50.0,
+          36.0,
+          51.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Worldwide; July 2022 to June 2023; 18-64 years; respondents who use a smartphone",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Global app retention rate Q1 2023, by category",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        26.0,
+        28.0,
+        22.0,
+        20.0,
+        25.0,
+        14.0,
+        17.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          26.0,
+          28.0,
+          22.0,
+          20.0,
+          25.0,
+          14.0,
+          17.0
+        ],
+        [
+          3.0,
+          17.0,
+          19.0,
+          17.0,
+          14.0,
+          18.0,
+          9.0,
+          12.0
+        ],
+        [
+          7.0,
+          13.0,
+          13.0,
+          14.0,
+          11.0,
+          15.0,
+          8.0,
+          9.0
+        ],
+        [
+          14.0,
+          10.0,
+          9.0,
+          11.0,
+          9.0,
+          12.0,
+          7.0,
+          7.0
+        ],
+        [
+          28.0,
+          7.0,
+          6.0,
+          9.0,
+          7.0,
+          11.0,
+          5.0,
+          5.0
+        ],
+        [
+          30.0,
+          6.0,
+          6.0,
+          9.0,
+          6.0,
+          10.0,
+          4.0,
+          5.0
+        ]
+      ],
+      "source": "adjust",
+      "note": "Worldwide; Q1 2022 and Q1 2023; comparison of average of daily installs",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Leading Android social media apps worldwide 2022, by downloads",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        23.96,
+        21.17,
+        14.22,
+        11.34,
+        6.86,
+        6.24,
+        5.6,
+        5.54,
+        5.52,
+        4.22
+      ],
+      "series_rows": [
+        [
+          23.96,
+          21.17,
+          14.22,
+          11.34,
+          6.86,
+          6.24,
+          5.6,
+          5.54,
+          5.52,
+          4.22
+        ]
+      ],
+      "source": "Airnow",
+      "note": "Worldwide; September 2022; based on downloads to devices worldwide",
+      "needs_review": [],
+      "page": 29
+    },
+    {
+      "title": "Most downloaded social media apps worldwide 2022",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        547.0,
+        424.0,
+        310.0,
+        298.0,
+        210.0,
+        159.0,
+        151.0,
+        105.0,
+        96.0,
+        91.0
+      ],
+      "series_rows": [
+        [
+          547.0,
+          424.0,
+          310.0,
+          298.0,
+          210.0,
+          159.0,
+          151.0,
+          105.0,
+          96.0,
+          91.0
+        ]
+      ],
+      "source": "Apptopia",
+      "note": "Worldwide; 2022",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Selected social video and photo app global downloads 2020-2023",
+      "unit": "Number of downloads in billion",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        0.09,
+        2.0,
+        2.7,
+        31.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          0.09,
+          2.0,
+          2.7,
+          31.0
+        ]
+      ],
+      "source": "Sensor Tower",
+      "note": "Worldwide; January 1, 2020 to April 20, 2023",
+      "needs_review": [],
+      "page": 31
+    },
+    {
+      "title": "U.S. users daily engagement with leading social media platforms 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        53.8,
+        48.7
+      ],
+      "series_rows": [
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          53.8,
+          48.7
+        ]
+      ],
+      "source": "eMarketer",
+      "note": "United States; 2023; 18 years and older; * Iincludes all time spent watching video on YouTube via any device Read more",
+      "needs_review": [],
+      "page": 33
+    },
+    {
+      "title": "Most popular messenger apps worldwide 2024, by downloads",
+      "unit": "Monthly downloads in millions",
+      "years": [],
+      "values": [
+        51.19,
+        41.6,
+        36.7,
+        27.86,
+        21.31,
+        6.66,
+        3.54,
+        3.28,
+        3.06,
+        2.92
+      ],
+      "series_rows": [
+        [
+          51.19,
+          41.6,
+          36.7,
+          27.86,
+          21.31,
+          6.66,
+          3.54,
+          3.28,
+          3.06,
+          2.92
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; January 2024; Apple App Store and Google Play Store",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Most popular global mobile messaging apps 2024",
+      "unit": "Monthly active users in millions",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ],
+        [
+          2.0,
+          1.343,
+          1.01,
+          900.0,
+          800.0,
+          554.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; Various sources (Company data); We Are Social",
+      "note": "Worldwide; April 2024; *Have not published updated users numbers in the past 12 months.  **Some Facebook Messenger ad platforms are unavailable in Australia, France, Canada, and the United States, so the figure shown here may [...] Read mor",
+      "needs_review": true,
+      "page": 37
+    },
+    {
+      "title": "Mobile video calls usage reach worldwide 2023, by region",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        14.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          14.0,
+          -64.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Q4 2023; 14-64 years",
+      "needs_review": [],
+      "page": 38
+    },
+    {
+      "title": "WhatsApp users worldwide 2020-2029",
+      "unit": "Number of users in millions",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029"
+      ],
+      "values": [
+        841.38,
+        868.17,
+        888.0,
+        904.83,
+        920.28,
+        935.32,
+        950.4,
+        965.62,
+        981.04,
+        996.58
+      ],
+      "series_rows": [
+        [
+          76.3,
+          8.29,
+          996.58
+        ],
+        [
+          841.38,
+          868.17,
+          888.0,
+          904.83,
+          920.28,
+          935.32,
+          950.4,
+          965.62,
+          981.04,
+          996.58
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2
+        ]
+      ],
+      "source": "Statista",
+      "note": "Worldwide; 2020 to 2029; all values are estimates",
+      "needs_review": true,
+      "page": 39
+    },
+    {
+      "title": "Instant messaging and communication apps global DAU 2022",
+      "unit": "DAU in millions",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.221,
+        404.6
+      ],
+      "series_rows": [
+        [
+          1.22,
+          404.0,
+          200.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.221,
+          404.6
+        ]
+      ],
+      "source": "SimilarWeb",
+      "note": "Worldwide; 2022; Android only",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Instant messaging and communication apps daily opens 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        22.97,
+        16.48,
+        9.94,
+        8.7,
+        6.82,
+        5.71,
+        41.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          22.97,
+          16.48,
+          9.94,
+          8.7,
+          6.82,
+          5.71,
+          41.0
+        ]
+      ],
+      "source": "SimilarWeb",
+      "note": "Worldwide; 2022; Android only",
+      "needs_review": [],
+      "page": 41
+    },
+    {
+      "title": "Downloads of selected mobile streaming apps worldwide 2023",
+      "unit": "Downloads in millions",
+      "years": [],
+      "values": [
+        13.9,
+        12.74,
+        10.2,
+        3.77,
+        3.53,
+        2.23,
+        2.15,
+        1.47,
+        1.42,
+        1.13,
+        0.71
+      ],
+      "series_rows": [
+        [
+          14.0,
+          12.7,
+          10.0
+        ],
+        [
+          13.9,
+          12.74,
+          10.2,
+          3.77,
+          3.53,
+          2.23,
+          2.15,
+          1.47,
+          1.42,
+          1.13,
+          0.71
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; September 2023; Google Play and Apple App Store combined",
+      "needs_review": true,
+      "page": 43
+    },
+    {
+      "title": "YouTube Shorts: daily views 2023",
+      "unit": "Daily views in billions",
+      "years": [],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        30.0,
+        50.0,
+        70.0,
+        44.0
+      ],
+      "series_rows": [
+        [
+          21.0,
+          22.0,
+          23.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          30.0,
+          50.0,
+          70.0,
+          44.0
+        ]
+      ],
+      "source": "Alphabet",
+      "note": "Worldwide; June 2021 and October 2023",
+      "needs_review": true,
+      "page": 44
+    },
+    {
+      "title": "TikTok global quarterly downloads 2018-2023",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        202.34,
+        177.53,
+        161.65,
+        196.86,
+        218.48,
+        243.01,
+        198.34,
+        238.93,
+        256.11,
+        273.31,
+        232.22,
+        45.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          113.87,
+          160.48,
+          183.73
+        ],
+        [
+          151.25,
+          167.02,
+          192.48,
+          313.53,
+          291.99,
+          197.04
+        ],
+        [
+          202.34,
+          177.53,
+          161.65,
+          196.86,
+          218.48,
+          243.01,
+          198.34,
+          238.93,
+          256.11,
+          273.31,
+          232.22,
+          45.0
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; Q1 2018 to Q4 2023; iOS and Android combined",
+      "needs_review": true,
+      "page": 45
+    },
+    {
+      "title": "Global TikTok downloads 2023, by country",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        5.62,
+        4.91,
+        3.95,
+        3.59,
+        3.53,
+        3.05,
+        2.3,
+        2.26,
+        2.13,
+        1.85,
+        1.82,
+        1.5,
+        1.32,
+        1.29,
+        1.24
+      ],
+      "series_rows": [
+        [
+          5.62,
+          4.91,
+          3.95,
+          3.59,
+          3.53,
+          3.05,
+          2.3,
+          2.26,
+          2.13,
+          1.85,
+          1.82,
+          1.5,
+          1.32,
+          1.29,
+          1.24
+        ]
+      ],
+      "source": "AppTweak",
+      "note": "Worldwide; June 2023; Apple App Store and Google Play Store downloads",
+      "needs_review": [],
+      "page": 46
+    },
+    {
+      "title": "Selected social video and photo app global downloads 2020-2023",
+      "unit": "Number of downloads in billion",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        0.09,
+        2.0,
+        2.7,
+        47.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          0.09,
+          2.0,
+          2.7,
+          47.0
+        ]
+      ],
+      "source": "Sensor Tower",
+      "note": "Worldwide; January 1, 2020 to April 20, 2023",
+      "needs_review": [],
+      "page": 47
+    },
+    {
+      "title": "Fastest apps based on days needed to reach 150 million downloads 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        193.0,
+        192.0,
+        190.0,
+        176.0,
+        174.0,
+        171.0,
+        153.0,
+        106.0,
+        33.0,
+        6.0
+      ],
+      "series_rows": [
+        [
+          6.0,
+          150.0,
+          12.0
+        ],
+        [
+          193.0,
+          192.0,
+          190.0,
+          176.0,
+          174.0,
+          171.0,
+          153.0,
+          106.0,
+          33.0,
+          6.0
+        ]
+      ],
+      "source": "Data.ai",
+      "note": "Worldwide; July 12, 2023; iOS and Google Play combined",
+      "needs_review": true,
+      "page": 50
+    },
+    {
+      "title": "Global app & games consumer spending monthly increase 2022-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        -1.0,
+        -2.0,
+        -3.0,
+        -4.0,
+        -5.0,
+        -6.0,
+        -7.0,
+        -8.0,
+        -9.0,
+        -10.0,
+        -11.0,
+        -12.0,
+        -1.0,
+        -2.0,
+        -3.0,
+        -4.0,
+        -5.0,
+        -6.0
+      ],
+      "series_rows": [
+        [
+          -1.0,
+          -2.0,
+          -3.0,
+          -4.0,
+          -5.0,
+          -6.0,
+          -7.0,
+          -8.0,
+          -9.0,
+          -10.0,
+          -11.0,
+          -12.0,
+          -1.0,
+          -2.0,
+          -3.0,
+          -4.0,
+          -5.0,
+          -6.0
+        ],
+        [
+          12.4,
+          12.6,
+          12.4
+        ],
+        [
+          3.0,
+          3.6,
+          3.0
+        ]
+      ],
+      "source": "Data.ai",
+      "note": "Worldwide; January 2022 to June 2023; excluding third-party Android app stores",
+      "needs_review": true,
+      "page": 51
+    },
+    {
+      "title": "Mobile games with highest IAP revenue worldwide 2023",
+      "unit": "Player spending in million U.S. dollars",
+      "years": [],
+      "values": [
+        983.8,
+        956.69,
+        888.49,
+        850.76,
+        748.69,
+        668.75,
+        643.57,
+        612.31,
+        567.62,
+        491.49,
+        450.32,
+        389.87,
+        382.57
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8
+        ],
+        [
+          983.8,
+          956.69,
+          888.49,
+          850.76,
+          748.69,
+          668.75,
+          643.57,
+          612.31,
+          567.62,
+          491.49,
+          450.32,
+          389.87,
+          382.57
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; 2023; App Store and Google Play; IAP revenue reduced by platform fees and inclusive taxes; Apple App Store includes iPhone and iPad devices",
+      "needs_review": true,
+      "page": 52
+    },
+    {
+      "title": "Leading Android gaming apps worldwide 2024, by downloads",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        16.05,
+        14.07,
+        13.96,
+        13.55,
+        13.05,
+        12.62,
+        12.1,
+        11.91,
+        11.03,
+        10.67,
+        10.61,
+        10.52,
+        9.56,
+        4.88,
+        4.84
+      ],
+      "series_rows": [
+        [
+          16.05,
+          14.07,
+          13.96,
+          13.55,
+          13.05,
+          12.62,
+          12.1,
+          11.91,
+          11.03,
+          10.67,
+          10.61,
+          10.52,
+          9.56,
+          4.88,
+          4.84
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; March 2024; free apps",
+      "needs_review": [],
+      "page": 53
+    },
+    {
+      "title": "Leading mobile eSports games 2023, by viewers",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.06,
+        980.0,
+        974.0,
+        570.0,
+        233.0
+      ],
+      "series_rows": [
+        [
+          5.06,
+          980.0,
+          974.0,
+          570.0,
+          233.0
+        ]
+      ],
+      "source": "ESC",
+      "note": "Worldwide; 2023",
+      "needs_review": [],
+      "page": 54
+    },
+    {
+      "title": "Threads and Twitter comparison 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        2.0,
+        20.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          2.0,
+          20.0
+        ]
+      ],
+      "source": "BBC; Meta Platforms; Twitter",
+      "note": "Worldwide; July 2023; *The paid-for Twitter Blue service offers verification, editing, and longer, posts and videos, and some organizations are also verified Read more",
+      "needs_review": [],
+      "page": 56
+    },
+    {
+      "title": "Twitter vs. Threads: mobile app daily engagement 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        105.8,
+        12.8,
+        57.0
+      ],
+      "series_rows": [
+        [
+          21.0,
+          106.0,
+          13.0
+        ],
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          105.8,
+          12.8,
+          57.0
+        ]
+      ],
+      "source": "Axios; SimilarWeb",
+      "note": "Worldwide; July 21, 2023; Android only",
+      "needs_review": true,
+      "page": 57
+    },
+    {
+      "title": "X/Twitter app user engagement in selected markets 2020-2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.3,
+        8.06,
+        7.06,
+        6.06,
+        6.0,
+        4.42,
+        5.1,
+        7.9,
+        7.0,
+        6.5,
+        6.1,
+        4.8,
+        8.5,
+        8.1,
+        7.8,
+        6.4,
+        5.8
+      ],
+      "series_rows": [
+        [
+          5.3,
+          8.06,
+          7.06,
+          6.06,
+          6.0,
+          4.42,
+          5.1,
+          7.9,
+          7.0,
+          6.5,
+          6.1,
+          4.8,
+          8.5,
+          8.1,
+          7.8,
+          6.4,
+          5.8
+        ]
+      ],
+      "source": "Data.ai",
+      "note": "Worldwide; 2020 to 2022; Android phones only; *Worldwide data available only for 2021 Read more",
+      "needs_review": [],
+      "page": 58
+    },
+    {
+      "title": "Threads app download share worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.0,
+        12.0,
+        33.0
+      ],
+      "series_rows": [
+        [
+          6.0,
+          12.0,
+          33.0
+        ]
+      ],
+      "source": "Data.ai; TechCrunch",
+      "note": "Worldwide; July 12, 2023; iOS and Google Play combined",
+      "needs_review": [],
+      "page": 59
+    },
+    {
+      "title": "Threads app: global online topic reach 2023, by sentiment",
+      "unit": "Reach (in millions)",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        378.63,
+        139.66,
+        84.22,
+        602.51,
+        60.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          10.0,
+          602.5,
+          85.0,
+          140.0
+        ],
+        [
+          3.0,
+          10.0,
+          49.0
+        ],
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          378.63,
+          139.66,
+          84.22,
+          602.51,
+          60.0
+        ]
+      ],
+      "source": "SentiOne",
+      "note": "Worldwide; 3 to 10 July, 2023; based on number of mentions in 49 languages",
+      "needs_review": true,
+      "page": 60
+    },
+    {
+      "title": "Daily active users (DAU) of Threads worldwide as of July 2023 (in millions)",
+      "unit": "Number of DAU (in millions)",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0,
+        44.0,
+        13.0,
+        61.0
+      ],
+      "series_rows": [
+        [
+          21.0,
+          13.0,
+          44.0,
+          7.0,
+          5.0,
+          100.0
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0,
+          44.0,
+          13.0,
+          61.0
+        ]
+      ],
+      "source": "Forbes; Sensor Tower",
+      "note": "Worldwide; July 7 and 21, 2023",
+      "needs_review": true,
+      "page": 61
+    },
+    {
+      "title": "Bluesky global downloads 2023, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0
+      ],
+      "series_rows": [
+        [
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0
+        ],
+        [
+          209.252209,
+          252.0,
+          253.766253,
+          766.0
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; February to December, 2023",
+      "needs_review": true,
+      "page": 63
+    }
+  ]
+}

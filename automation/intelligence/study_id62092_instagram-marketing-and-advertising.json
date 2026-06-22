@@ -1,0 +1,807 @@
+{
+  "study": "study_id62092_instagram-marketing-and-advertising",
+  "file": "research/statista/Fitness Marketing/study_id62092_instagram-marketing-and-advertising.pdf",
+  "charts": [
+    {
+      "title": "Largest social media advertising markets worldwide 2022",
+      "unit": "Spending in million U.S. dollars",
+      "years": [],
+      "values": [
+        20.0,
+        66.6,
+        64.6
+      ],
+      "series_rows": [
+        [
+          20.0,
+          66.6,
+          64.6
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "Worldwide; Jan 1st to Dec 31st 2022",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Instagram Stories ad revenue worldwide 2019-2023",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        4.32,
+        6.9,
+        11.43,
+        15.95,
+        20.03,
+        6.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          4.32,
+          6.9,
+          11.43,
+          15.95,
+          20.03,
+          6.0
+        ]
+      ],
+      "source": "eMarketer; Hootsuite",
+      "note": "Worldwide; 2019 and 2020; * Forecast. Includes advertising that appears on desktop and laptop computers as well as mobile phones, tablets, and other internet-connected devices, and includes all the various forms of advertising on those [...",
+      "needs_review": [],
+      "page": 6
+    },
+    {
+      "title": "Future use of social media among marketers worldwide 2023, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        66.0,
+        43.0,
+        45.0
+      ],
+      "series_rows": [
+        [
+          66.0,
+          43.0,
+          45.0
+        ]
+      ],
+      "source": "Social Media Examiner",
+      "note": "Worldwide; January 2023; 2,133 marketers",
+      "needs_review": [],
+      "page": 10
+    },
+    {
+      "title": "Instagram: brand value 2020-2023",
+      "unit": "Value in billion U.S. dollars",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        33.48,
+        47.4,
+        14.0
+      ],
+      "series_rows": [
+        [
+          33.48,
+          47.4,
+          14.0
+        ]
+      ],
+      "source": "Brand Finance",
+      "note": "Worldwide, United States; 2020 to 2023",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Total global visitor traffic to Instagram.com 2023",
+      "unit": "Number of visits in billions",
+      "years": [],
+      "values": [
+        -7.0,
+        -8.0,
+        -9.0,
+        -10.0,
+        -11.0,
+        -12.0
+      ],
+      "series_rows": [
+        [
+          -7.0,
+          -8.0,
+          -9.0,
+          -10.0,
+          -11.0,
+          -12.0
+        ]
+      ],
+      "source": "SimilarWeb",
+      "note": "Worldwide; July to December 2023; combined desktop & mobile web; excluding apps",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Average weekly Instagram brand posts 2023, by vertical",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        12.2,
+        6.8,
+        6.1,
+        5.7,
+        4.9,
+        4.9,
+        4.7,
+        4.0,
+        3.9,
+        3.8,
+        3.8,
+        3.7,
+        3.1,
+        2.7
+      ],
+      "series_rows": [
+        [
+          4.7,
+          18.0,
+          12.2
+        ],
+        [
+          18.0,
+          12.2,
+          6.8,
+          6.1,
+          5.7,
+          4.9,
+          4.9,
+          4.7,
+          4.0,
+          3.9,
+          3.8,
+          3.8,
+          3.7,
+          3.1,
+          2.7
+        ]
+      ],
+      "source": "Rival IQ",
+      "note": "Worldwide; 2023",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Average price per post of Instagram influencers worldwide 2023, by followers",
+      "unit": "number of followers (in U.S. dollars)",
+      "years": [],
+      "values": [
+        1.0,
+        -10.0,
+        25.0,
+        150.0
+      ],
+      "series_rows": [
+        [
+          1.21,
+          500.0,
+          370.0
+        ],
+        [
+          1.0,
+          -10.0,
+          25.0,
+          150.0
+        ],
+        [
+          10.0,
+          -50.0,
+          45.0,
+          350.0
+        ],
+        [
+          50.0,
+          -500.0,
+          160.0,
+          1800.0
+        ],
+        [
+          500.0,
+          -1.0,
+          370.0,
+          5000.0
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; 2023",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Average fraud rates of Instagram influencers 2019-2023",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        63.0,
+        45.0,
+        49.19
+      ],
+      "series_rows": [
+        [
+          63.0,
+          45.0,
+          49.19
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; 2019 to 2023",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Leading brands on Instagram worldwide 2022, by influencers",
+      "unit": "",
+      "years": [],
+      "values": [
+        85.5,
+        66.4,
+        57.2,
+        46.1,
+        40.5,
+        35.7,
+        35.0,
+        33.8,
+        31.6,
+        28.4
+      ],
+      "series_rows": [
+        [
+          85.5,
+          66.4,
+          57.2
+        ],
+        [
+          85.5,
+          66.4,
+          57.2,
+          46.1,
+          40.5,
+          35.7,
+          35.0,
+          33.8,
+          31.6,
+          28.4
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; 2022",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Leading brands on Instagram worldwide 2022, by number of likes",
+      "unit": "Number of likes in millions",
+      "years": [],
+      "values": [
+        142.74,
+        65.2,
+        62.98,
+        51.93,
+        49.78,
+        33.19,
+        33.15,
+        31.15,
+        16.44,
+        16.32,
+        15.88,
+        11.3,
+        11.2,
+        10.27,
+        8.58
+      ],
+      "series_rows": [
+        [
+          142.0,
+          65.0,
+          63.0
+        ],
+        [
+          142.74,
+          65.2,
+          62.98,
+          51.93,
+          49.78,
+          33.19,
+          33.15,
+          31.15,
+          16.44,
+          16.32,
+          15.88,
+          11.3,
+          11.2,
+          10.27,
+          8.58
+        ]
+      ],
+      "source": "influData by weCreate",
+      "note": "Worldwide; January to June 2022",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Global social networks ranked by number of users 2024",
+      "unit": "Number of active users in millions",
+      "years": [],
+      "values": [
+        3.065,
+        2.504,
+        2.0,
+        2.0,
+        1.582,
+        1.343,
+        1.01,
+        900.0,
+        800.0,
+        755.0,
+        700.0,
+        611.0,
+        598.0,
+        554.0,
+        498.0
+      ],
+      "series_rows": [
+        [
+          3.065,
+          2.504,
+          2.0,
+          2.0,
+          1.582,
+          1.343,
+          1.01,
+          900.0,
+          800.0,
+          755.0,
+          700.0,
+          611.0,
+          598.0,
+          554.0,
+          498.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Worldwide; April 2024; social networks and messenger/chat app/voip included; figures for TikTok does not include Douyin",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "Most valuable media & entertainment brands worldwide 2023",
+      "unit": "Brand value in billion U.S. dollars",
+      "years": [],
+      "values": [
+        537.19,
+        93.02,
+        58.95,
+        53.05,
+        53.01,
+        49.76,
+        48.53,
+        46.97,
+        44.35,
+        19.45
+      ],
+      "series_rows": [
+        [
+          537.19,
+          93.02,
+          58.95,
+          53.05,
+          53.01,
+          49.76,
+          48.53,
+          46.97,
+          44.35,
+          19.45
+        ]
+      ],
+      "source": "Kantar",
+      "note": "Worldwide; 2023",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Strongest media brands worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        93.2,
+        92.7,
+        91.6,
+        91.3,
+        90.7,
+        86.3,
+        86.2,
+        85.8,
+        85.1,
+        83.1
+      ],
+      "series_rows": [
+        [
+          93.2,
+          92.7,
+          91.6,
+          91.3,
+          90.7,
+          86.3,
+          86.2,
+          85.8,
+          85.1,
+          83.1
+        ]
+      ],
+      "source": "Brand Finance",
+      "note": "2023",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "Instagram accounts with the most followers worldwide 2024",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        672.0,
+        628.0,
+        502.0,
+        429.0,
+        400.0,
+        397.0,
+        380.0,
+        363.0,
+        319.0,
+        310.0,
+        306.0,
+        294.0,
+        292.0,
+        283.0,
+        283.0
+      ],
+      "series_rows": [
+        [
+          672.0,
+          628.0,
+          502.0,
+          429.0,
+          400.0,
+          397.0,
+          380.0,
+          363.0,
+          319.0,
+          310.0,
+          306.0,
+          294.0,
+          292.0,
+          283.0,
+          283.0
+        ]
+      ],
+      "source": "Social Blade",
+      "note": "April 2024; business / creator accounts",
+      "needs_review": [],
+      "page": 29
+    },
+    {
+      "title": "Most-followed virtual creators on Instagram worldwide 2022",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        6.0,
+        4.3
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          6.0,
+          4.3
+        ]
+      ],
+      "source": "NeoReach; Offbeat",
+      "note": "Worldwide; October 11, 2022",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Global distribution of Instagram influencers in 2023, by number of followers",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        10.0,
+        10.0,
+        50.0,
+        50.0,
+        500.0,
+        500.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          10.0,
+          76.86,
+          10.0,
+          50.0,
+          18.23
+        ],
+        [
+          50.0,
+          500.0,
+          4.56,
+          0.16
+        ],
+        [
+          1.0,
+          10.0,
+          10.0,
+          50.0,
+          50.0,
+          500.0,
+          500.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; 2023",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Share of fraudulent Instagram influencers worldwide 2022-2023, by number of followers",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        10.0,
+        10.0,
+        50.0,
+        50.0,
+        500.0,
+        500.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          10.0,
+          10.0,
+          50.0,
+          50.0,
+          500.0,
+          500.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; 2022 and 2023",
+      "needs_review": [],
+      "page": 35
+    },
+    {
+      "title": "EMV of Instagram influencer posts worldwide in 2022, by followers",
+      "unit": "worldwide in 2022, by number of followers (in U.S. dollars)",
+      "years": [],
+      "values": [
+        500.0,
+        1.0,
+        0.0,
+        450.0,
+        1435.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          10.0,
+          25.0,
+          200.0
+        ],
+        [
+          10.0,
+          50.0,
+          50.0,
+          800.0
+        ],
+        [
+          50.0,
+          500.0,
+          250.0,
+          7120.0
+        ],
+        [
+          500.0,
+          1.0,
+          0.0,
+          450.0,
+          1435.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          5000.0
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; 2022",
+      "needs_review": true,
+      "page": 36
+    },
+    {
+      "title": "Instagram: number of global users 2020-2025",
+      "unit": "Number of Instagram users in billions",
+      "years": [],
+      "values": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.04,
+        1.21,
+        1.28,
+        1.35
+      ],
+      "series_rows": [
+        [
+          1.21,
+          28.0,
+          1.44
+        ],
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.04,
+          1.21,
+          1.28,
+          1.35
+        ]
+      ],
+      "source": "eMarketer; Insider Intelligence",
+      "note": "Worldwide; 2020 to November 2021; * Forecast According to the source: \"Internet users of any age who access their Instagram account via any device at least once per month.\" Read more",
+      "needs_review": true,
+      "page": 38
+    },
+    {
+      "title": "Instagram: distribution of global audiences 2024, by age and gender",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        -24.0,
+        25.0,
+        -34.0,
+        35.0,
+        -44.0,
+        45.0,
+        -54.0,
+        55.0,
+        -64.0,
+        65.0
+      ],
+      "series_rows": [
+        [
+          16.5,
+          18.0,
+          24.0,
+          34.0
+        ],
+        [
+          18.0,
+          -24.0,
+          25.0,
+          -34.0,
+          35.0,
+          -44.0,
+          45.0,
+          -54.0,
+          55.0,
+          -64.0,
+          65.0
+        ]
+      ],
+      "source": "DataReportal; Instagram; Meltwater; Meta Platforms; We Are Social",
+      "note": "Worldwide; April 2024; 18 years and older; based on addressable ad audience",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Instagram: favorite types of posts for global users 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        37.0,
+        36.0,
+        36.0,
+        35.0,
+        34.0,
+        33.0
+      ],
+      "series_rows": [
+        [
+          7.206,
+          16.0,
+          -64.0
+        ],
+        [
+          37.0,
+          36.0,
+          36.0,
+          35.0,
+          34.0,
+          33.0
+        ]
+      ],
+      "source": "GWI",
+      "note": "Worldwide; April 2023; 7,206 respondents; 16-64 years; weekly Instagram users",
+      "needs_review": true,
+      "page": 41
+    }
+  ]
+}

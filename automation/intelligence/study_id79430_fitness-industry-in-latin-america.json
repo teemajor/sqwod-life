@@ -1,0 +1,1228 @@
+{
+  "study": "study_id79430_fitness-industry-in-latin-america",
+  "file": "research/statista/Health & Wellness/study_id79430_fitness-industry-in-latin-america.pdf",
+  "charts": [
+    {
+      "title": "Total revenue of the global health club industry 2009-2019",
+      "unit": "Industry revenue in billion U.S. dollars",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        67.19
+      ],
+      "series_rows": [
+        [
+          70.93,
+          72.75,
+          75.75,
+          78.17
+        ],
+        [
+          84.3,
+          81.2,
+          83.15
+        ],
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          67.19
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "Worldwide; 2009 to 2019",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Latin America: expenditure on recreational physical activities 2018, by segment",
+      "unit": "Expenditure in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        9.9,
+        5.9,
+        0.3,
+        4.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          9.9,
+          5.9,
+          0.3,
+          4.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "2018; Includes consumer expenditures on classes, memberships, entry fees, trainers, and related services and methods of participation",
+      "needs_review": [],
+      "page": 4
+    },
+    {
+      "title": "Latin America: main countries in recreational physical activities expenditure 2018",
+      "unit": "Expenditure in million U.S. dollars",
+      "years": [],
+      "values": [
+        991.5,
+        674.0,
+        609.9,
+        348.9,
+        222.3,
+        186.3,
+        177.8
+      ],
+      "series_rows": [
+        [
+          991.5,
+          674.0,
+          609.9,
+          348.9,
+          222.3,
+          186.3,
+          177.8
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "2018",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Latin America: eServices Fitness market revenue 2017-2024, by segment",
+      "unit": "Revenue in million U.S. dollars",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        932.41932,
+        41.0,
+        900.419,
+        41.0,
+        890.2189,
+        21.0,
+        899.7899,
+        7.0,
+        922.28922,
+        28.0
+      ],
+      "series_rows": [
+        [
+          592.7592,
+          7.0,
+          655.17655,
+          17.0,
+          718.77718,
+          77.0
+        ],
+        [
+          932.41932,
+          41.0,
+          900.419,
+          41.0,
+          890.2189,
+          21.0,
+          899.7899,
+          7.0,
+          922.28922,
+          28.0
+        ],
+        [
+          122.46122,
+          46.0,
+          152.34152,
+          34.0,
+          182.21182,
+          21.0,
+          209.69209,
+          69.0,
+          233.94233,
+          94.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "LAC; August 2020; forecast adjusted for the impact of COVID-19",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Latin America & the Caribbean: eServices Fitness market share 2022, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        20.0,
+        15.65,
+        13.92
+      ],
+      "series_rows": [
+        [
+          20.0,
+          15.65,
+          13.92
+        ],
+        [
+          1.0,
+          31.0,
+          -19.0
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "LAC; Jan 1st to Dec 31st 2022; forecast adjusted for the impact of COVID-19 / excludes Venezuela",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Brazil: gym membership cost in Rio de Janeiro 2014-2019",
+      "unit": "Monthly cost in U.S. dollars",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        71.6,
+        55.1,
+        45.8,
+        48.9,
+        43.3,
+        30.1,
+        11.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          71.6,
+          55.1,
+          45.8,
+          48.9,
+          43.3,
+          30.1,
+          11.0
+        ]
+      ],
+      "source": "Deutsche Bank Research",
+      "note": "Brazil; 2014 to 2019; In gyms located in the city's business district.",
+      "needs_review": true,
+      "page": 11
+    },
+    {
+      "title": "Brazil: gym membership cost in São Paulo 2014-2019",
+      "unit": "Monthly cost in U.S. dollars",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        114.9,
+        78.9,
+        55.4,
+        62.8,
+        51.9,
+        36.4,
+        12.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          114.9,
+          78.9,
+          55.4,
+          62.8,
+          51.9,
+          36.4,
+          12.0
+        ]
+      ],
+      "source": "Deutsche Bank Research",
+      "note": "Brazil; 2014 to 2019; In gyms located in the city's business district.",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Mexico: gym membership cost in Mexico City 2014-2019",
+      "unit": "Monthly cost in U.S. dollars",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        114.3,
+        72.0,
+        61.0,
+        66.5,
+        55.8,
+        67.2,
+        13.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          114.3,
+          72.0,
+          61.0,
+          66.5,
+          55.8,
+          67.2,
+          13.0
+        ]
+      ],
+      "source": "Deutsche Bank Research",
+      "note": "Mexico; 2014 to 2019; In gyms located in the city's business district.",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Sports World: active members 2011-2022",
+      "unit": "",
+      "years": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        28.49,
+        43.5,
+        51.4,
+        56.9,
+        67.26,
+        72.99
+      ],
+      "series_rows": [
+        [
+          75.6,
+          50.4,
+          -19.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          28.49,
+          43.5,
+          51.4,
+          56.9,
+          67.26,
+          72.99
+        ]
+      ],
+      "source": "Sports World",
+      "note": "Mexico",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Sports World: member visits to fitness centers 2010-2022",
+      "unit": "",
+      "years": [
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        271.9,
+        334.8,
+        398.2,
+        482.2,
+        555.4,
+        653.6,
+        759.9,
+        702.4,
+        117.5,
+        339.7,
+        444.4,
+        15.0
+      ],
+      "series_rows": [
+        [
+          271.9,
+          334.8,
+          398.2,
+          482.2,
+          555.4,
+          653.6,
+          759.9,
+          702.4,
+          117.5,
+          339.7,
+          444.4,
+          15.0
+        ]
+      ],
+      "source": "Sports World",
+      "note": "Mexico",
+      "needs_review": true,
+      "page": 15
+    },
+    {
+      "title": "Smart Fit: active members in Brazil 2017-2022",
+      "unit": "",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        1.047,
+        1.301,
+        1.628,
+        1.317,
+        1.407,
+        1.72,
+        16.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          2.0,
+          1.047,
+          1.301,
+          1.628,
+          1.317,
+          1.407,
+          1.72,
+          16.0
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "Brazil; as of year-end including members of own brand establishments, franchises as well as Bio Ritmo and O2 gyms",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Smart Fit: active members in Mexico 2017-2022",
+      "unit": "",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        258.0,
+        378.0,
+        490.0,
+        395.0,
+        449.0,
+        681.0,
+        17.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          258.0,
+          378.0,
+          490.0,
+          395.0,
+          449.0,
+          681.0,
+          17.0
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "Mexico; as of year-end including members of own brand establishments, franchises, and other gyms managed by SmartFit",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Sports World: annual revenue 2012-2022",
+      "unit": "Description: The revenue of the Mexican fitness club chain Sports World plunged in 2020 and 2021 to 17 percent of the value from 2019, after steady growth throughout most of the 2010s. In 2022, however, Grupo Sports World's revenue increased to around 1.3",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        697.3,
+        892.3
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          697.3,
+          892.3
+        ],
+        [
+          2.015,
+          907.1,
+          648.8
+        ]
+      ],
+      "source": "Sports World",
+      "note": "Mexico; consolidated figures",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Sports World: revenue by source 2019-2022",
+      "unit": "Revenue in million Mexican pesos",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ]
+      ],
+      "source": "Sports World",
+      "note": "Mexico",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Smart Fit: net operating revenue 2020-2022, by main market",
+      "unit": "Description: In 2022, Smart Fit generated more than 1.5 billion Brazilian reals in revenue in its home country, growing by 60 percent versus the previous year. Mexico is the second most important market for the Brazilian gym chain, with a revenue amounting to more",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        754.8,
+        944.1,
+        1.513,
+        291.7,
+        349.2,
+        635.1,
+        209.7,
+        413.5,
+        782.3
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          754.8,
+          944.1,
+          1.513,
+          291.7,
+          349.2,
+          635.1,
+          209.7,
+          413.5,
+          782.3
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "LAC; consolidated figures; *Including Bio Ritmo and other brands. Figures for 2020 were retrieved from a previous report. Read more",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Smart Fit: net operating revenue 2014-2022",
+      "unit": "Net revenue in million Brazilian reals",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        408.2
+      ],
+      "series_rows": [
+        [
+          535.7,
+          641.2,
+          745.6
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          408.2
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "LAC; consolidated figures including own brand establishments and franchises as well as Bio Ritmo and other brands acquired by the company",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Smart Fit: net operating revenue in Brazil 2020-2022, by brand",
+      "unit": "Description: The operating revenue generated by Smart Fit in Brazil grew by around 60 percent in 2022. In the previous year, the gym chain's revenue in the South American country amounted to more than 944 million Brazilian reals. Read more",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6
+      ],
+      "series_rows": [
+        [
+          1.224,
+          31.224,
+          354.254,
+          2.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "Brazil; consolidated figures",
+      "needs_review": true,
+      "page": 23
+    },
+    {
+      "title": "Smart Fit: clubs in Latin America 2022, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        634.0,
+        254.0,
+        335.0,
+        24.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          634.0,
+          254.0,
+          335.0,
+          24.0
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "Q4 2022; includes own brand establishments, franchises as well as Bio Ritmo and O₂ gyms",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "Smart Fit: clubs in Brazil 2017-2022",
+      "unit": "",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        326.0,
+        399.0,
+        488.0,
+        527.0,
+        602.0,
+        634.0,
+        25.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          326.0,
+          399.0,
+          488.0,
+          527.0,
+          602.0,
+          634.0,
+          25.0
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "Brazil; as of year-end including owned and franchised establishments as well as Bio Ritmo and O2 gyms",
+      "needs_review": true,
+      "page": 25
+    },
+    {
+      "title": "Smart Fit: clubs in Mexico 2017-2022",
+      "unit": "",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        92.0,
+        121.0,
+        162.0,
+        182.0,
+        201.0,
+        254.0,
+        26.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          92.0,
+          121.0,
+          162.0,
+          182.0,
+          201.0,
+          254.0,
+          26.0
+        ]
+      ],
+      "source": "Smart Fit",
+      "note": "Mexico; as of year-end including owned and franchised units as well as other brands managed by the company",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Latin America: funding amount of selected fitness startups 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.3,
+        1.0,
+        400.0,
+        300.0,
+        300.0,
+        100.0,
+        40.0,
+        30.0,
+        20.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4
+        ],
+        [
+          1.3,
+          1.0,
+          400.0,
+          300.0,
+          300.0,
+          100.0,
+          40.0,
+          30.0,
+          20.0
+        ]
+      ],
+      "source": "CrunchBase",
+      "note": "LAC; As of September 2020; Active companies with headquarters in the region; * Acquired by ClassPass in March 2020. Date of release was not provided by the source, the publication date is the date of access. Figures have been rounded. Read ",
+      "needs_review": true,
+      "page": 27
+    },
+    {
+      "title": "coronavirus (COVID-19) outbreak from February to June 2020, by install type",
+      "unit": "",
+      "years": [],
+      "values": [
+        14.0,
+        20.0,
+        8.16
+      ],
+      "series_rows": [
+        [
+          14.0,
+          20.0,
+          8.16
+        ],
+        [
+          3.0,
+          -9.0,
+          10.0
+        ],
+        [
+          7.0,
+          -13.0,
+          14.0
+        ],
+        [
+          5.0,
+          -11.0,
+          12.0
+        ],
+        [
+          2.0,
+          -8.0,
+          9.0
+        ]
+      ],
+      "source": "AppsFlyer",
+      "note": "Brazil; February 25 to June 22, 2020",
+      "needs_review": true,
+      "page": 30
+    },
+    {
+      "title": "coronavirus (COVID-19) outbreak from February to June 2020, by install type",
+      "unit": "",
+      "years": [],
+      "values": [
+        7.0,
+        13.0,
+        8.46
+      ],
+      "series_rows": [
+        [
+          7.0,
+          13.0,
+          8.46
+        ],
+        [
+          3.0,
+          -9.0,
+          10.0
+        ],
+        [
+          7.0,
+          -13.0,
+          14.0
+        ],
+        [
+          5.0,
+          -11.0,
+          12.0
+        ],
+        [
+          2.0,
+          -8.0,
+          9.0
+        ]
+      ],
+      "source": "AppsFlyer",
+      "note": "Mexico; February 25 to June 22, 2020",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Most popular fitness and gym influencers on Instagram worldwide 2020",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        184.46,
+        112.32,
+        36.65,
+        23.47,
+        20.78,
+        20.56,
+        20.43,
+        20.23,
+        17.91,
+        13.67,
+        13.67,
+        12.1,
+        11.68,
+        11.33,
+        11.33
+      ],
+      "series_rows": [
+        [
+          184.46,
+          112.32,
+          36.65,
+          23.47,
+          20.78,
+          20.56,
+          20.43,
+          20.23,
+          17.91,
+          13.67,
+          13.67,
+          12.1,
+          11.68,
+          11.33,
+          11.33
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; May 2020; based on HypeAuditor database, wider industry metrics may vary",
+      "needs_review": [],
+      "page": 32
+    },
+    {
+      "title": "Number of followers of Latinx fitness and gym Instagram influencers 2020",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        13.6,
+        2.7,
+        1.7,
+        1.0,
+        0.54,
+        0.19
+      ],
+      "series_rows": [
+        [
+          13.6,
+          2.7,
+          1.7,
+          1.0,
+          0.54,
+          0.19
+        ]
+      ],
+      "source": "Instagram; Statista",
+      "note": "Worldwide; September 7, 2020",
+      "needs_review": [],
+      "page": 33
+    },
+    {
+      "title": "Number of followers of Brazilian fitness and gym Instagram influencers 2020",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        10.3,
+        8.6,
+        5.8,
+        4.2,
+        4.0
+      ],
+      "series_rows": [
+        [
+          10.3,
+          8.6,
+          5.8,
+          4.2,
+          4.0
+        ]
+      ],
+      "source": "Instagram; Statista",
+      "note": "Brazil; September 9, 2020",
+      "needs_review": [],
+      "page": 34
+    },
+    {
+      "title": "Number of followers of Mexican fitness and gym Instagram influencers 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        7.6,
+        4.1,
+        1.0,
+        479.0,
+        303.0,
+        49.4,
+        10.0,
+        8.4
+      ],
+      "series_rows": [
+        [
+          7.6,
+          4.1,
+          1.0,
+          479.0,
+          303.0,
+          49.4,
+          10.0,
+          8.4
+        ]
+      ],
+      "source": "Instagram; Statista",
+      "note": "Mexico; September 8, 2020",
+      "needs_review": [],
+      "page": 35
+    }
+  ]
+}

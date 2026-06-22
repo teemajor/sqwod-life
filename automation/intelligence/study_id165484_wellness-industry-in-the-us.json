@@ -1,0 +1,1152 @@
+{
+  "study": "study_id165484_wellness-industry-in-the-us",
+  "file": "research/statista/Health & Wellness/study_id165484_wellness-industry-in-the-us.pdf",
+  "charts": [
+    {
+      "title": "Key information on the health and wellness spa industry in the U.S in 2023",
+      "unit": "Market size (in billion U.S. dollars) 23.2",
+      "years": [],
+      "values": [
+        23.0,
+        372.0,
+        20.0
+      ],
+      "series_rows": [
+        [
+          23.0,
+          372.0,
+          20.0
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2023",
+      "needs_review": [],
+      "page": 3
+    },
+    {
+      "title": "Wellness tourism industry market size in the U.S. 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        263.5,
+        147.3,
+        198.7,
+        255.9,
+        4.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          263.5,
+          147.3,
+          198.7,
+          255.9,
+          4.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United States; 2019 to 2022",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Thermal/mineral springs market size in the U.S. 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        0.87,
+        0.67,
+        0.92,
+        1.04,
+        5.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          0.87,
+          0.67,
+          0.92,
+          1.04,
+          5.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United States; 2019 to 2022",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Workplace wellness industry market size in the U.S. 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0,
+        17.13,
+        15.54,
+        17.49,
+        18.16,
+        6.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0,
+          17.13,
+          15.54,
+          17.49,
+          18.16,
+          6.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United States; 2019 to 2022",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "U.S. spa industry revenue 2008-2022",
+      "unit": "Total revenue in billion U.S. dollars",
+      "years": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        12.8,
+        12.3,
+        12.8,
+        13.4,
+        14.0,
+        14.7
+      ],
+      "series_rows": [
+        [
+          12.8,
+          12.3,
+          12.8,
+          13.4,
+          14.0,
+          14.7
+        ],
+        [
+          16.3,
+          16.8,
+          17.5
+        ],
+        [
+          18.3,
+          19.1,
+          12.1,
+          18.1,
+          20.1,
+          8.0
+        ]
+      ],
+      "source": "International Spa Association; Website (americanspa.com)",
+      "note": "United States; 2008 to 2022",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "Revenue per spa visit in the U.S. 2015-2022",
+      "unit": "Revenue per visit in U.S. dollars",
+      "years": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        90.7,
+        91.3,
+        93.7,
+        96.5,
+        99.5,
+        97.5
+      ],
+      "series_rows": [
+        [
+          90.7,
+          91.3,
+          93.7,
+          96.5,
+          99.5,
+          97.5
+        ],
+        [
+          104.5,
+          111.5,
+          9.0
+        ]
+      ],
+      "source": "International Spa Association; Website (beautymatter.com)",
+      "note": "United States; 2015 to 2022",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Number of spa locations in the U.S. 2003-2022",
+      "unit": "",
+      "years": [
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          10.0
+        ]
+      ],
+      "source": "International Spa Association; Website (beautymatter.com)",
+      "note": "United States; 2003 to 2022",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Number of employees in the U.S. spa industry 2023",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        304.8,
+        345.0,
+        360.7,
+        11.0
+      ],
+      "series_rows": [
+        [
+          383.0,
+          305.0,
+          -19.0
+        ],
+        [
+          304.8,
+          345.0,
+          360.7,
+          11.0
+        ]
+      ],
+      "source": "International Spa Association; Website (beautymatter.com)",
+      "note": "United States; 2019 to 2023",
+      "needs_review": true,
+      "page": 11
+    },
+    {
+      "title": "Number of spa visits in the U.S. 2008-2022",
+      "unit": "Total visits in millions",
+      "years": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        160.0
+      ],
+      "series_rows": [
+        [
+          143.0,
+          150.0,
+          156.0,
+          160.0,
+          164.0
+        ],
+        [
+          176.0,
+          179.0,
+          184.0,
+          187.0,
+          190.0,
+          192.0
+        ],
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          160.0
+        ],
+        [
+          124.0,
+          173.0,
+          181.0,
+          12.0
+        ]
+      ],
+      "source": "International Spa Association; Website (americanspa.com)",
+      "note": "United States; 2008 to 2022",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Revenue per spa visit in the U.S. in 2022, by type",
+      "unit": "Revenue in U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        100.0,
+        141.0,
+        162.0,
+        112.0,
+        13.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          100.0,
+          141.0,
+          162.0,
+          112.0,
+          13.0
+        ]
+      ],
+      "source": "International Spa Association",
+      "note": "United States; 2022",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Cost of spa treatments in the U.S. 2023, by type",
+      "unit": "Average price in U.S. dollars",
+      "years": [],
+      "values": [
+        152.0,
+        125.0,
+        116.0,
+        111.0,
+        85.0,
+        57.0
+      ],
+      "series_rows": [
+        [
+          152.0,
+          125.0,
+          116.0,
+          111.0,
+          85.0,
+          57.0
+        ]
+      ],
+      "source": "International Spa Association",
+      "note": "United States; January to March 2023; 2,829 respondents",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Popular services offered by spas in the U.S. in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        95.0,
+        10.0,
+        16.0
+      ],
+      "series_rows": [
+        [
+          95.0,
+          10.0,
+          16.0
+        ]
+      ],
+      "source": "International Spa Association",
+      "note": "United States; January to March 2023; 2,829 respondents",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Top domestic spa destinations in the United States 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        97.18,
+        93.7,
+        93.68,
+        92.5,
+        92.36,
+        92.0,
+        91.41,
+        90.7,
+        90.24,
+        90.14,
+        90.05,
+        89.93,
+        89.72,
+        87.86,
+        87.39
+      ],
+      "series_rows": [
+        [
+          97.18,
+          93.7,
+          93.68,
+          92.5,
+          92.36,
+          92.0,
+          91.41,
+          90.7,
+          90.24,
+          90.14,
+          90.05,
+          89.93,
+          89.72,
+          87.86,
+          87.39
+        ]
+      ],
+      "source": "PROOF Insights; Travel + Leisure",
+      "note": "North America, United States; 2023; 165,000 total survey",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Number of massage therapists in the U.S. 1998-2023",
+      "unit": "",
+      "years": [
+        "1998",
+        "2001",
+        "2004",
+        "2006",
+        "2008",
+        "2010",
+        "2012",
+        "2014",
+        "2016",
+        "2019",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        137.39,
+        172.56,
+        189.71,
+        241.06,
+        278.09,
+        293.53
+      ],
+      "series_rows": [
+        [
+          316.06,
+          321.98,
+          328.8,
+          334.22
+        ],
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          137.39,
+          172.56,
+          189.71,
+          241.06,
+          278.09,
+          293.53
+        ]
+      ],
+      "source": "Website (abmp.com)",
+      "note": "United States; 1998 to 2023",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "U.S. massage service industry market size 2012-2023",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        11.73
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          11.73
+        ],
+        [
+          15.39,
+          16.26,
+          17.31,
+          19.67,
+          21.5,
+          16.49
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2022",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Massage service industry business count in the U.S. 2011-2023",
+      "unit": "",
+      "years": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        234.96,
+        240.19,
+        241.36,
+        240.72
+      ],
+      "series_rows": [
+        [
+          234.96,
+          240.19,
+          241.36,
+          240.72
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2011 to 2022",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Share of massage consumers by household income U.S. 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        40.0,
+        100.0,
+        18.0,
+        50.0
+      ],
+      "series_rows": [
+        [
+          40.0,
+          100.0,
+          18.0,
+          50.0
+        ]
+      ],
+      "source": "American Massage Therapy Association",
+      "note": "United States; 2022",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Massage therapist average annual compensation in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        45.0,
+        40.0,
+        50.0
+      ],
+      "series_rows": [
+        [
+          45.0,
+          40.0,
+          50.0
+        ]
+      ],
+      "source": "International Spa Association",
+      "note": "United States; January to March 2023; 2,829 spa establishments",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Massage therapist average weekly working hours in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        33.0,
+        39.0,
+        13.0,
+        40.0
+      ],
+      "series_rows": [
+        [
+          33.0,
+          39.0,
+          13.0,
+          40.0
+        ],
+        [
+          28.0,
+          -32.0,
+          27.0
+        ],
+        [
+          33.0,
+          -39.0,
+          46.0
+        ]
+      ],
+      "source": "International Spa Association",
+      "note": "United States; January to March 2023; 2,829 spa establishments",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Most popular wellness product categories in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        69.0,
+        14.0,
+        13.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          69.0,
+          14.0,
+          13.0,
+          4.0
+        ],
+        [
+          48.0,
+          12.0,
+          18.0,
+          22.0
+        ],
+        [
+          36.0,
+          14.0,
+          24.0,
+          26.0
+        ],
+        [
+          28.0,
+          14.0,
+          25.0,
+          33.0
+        ],
+        [
+          22.0,
+          14.0,
+          27.0,
+          37.0
+        ],
+        [
+          10.0,
+          8.0,
+          13.0,
+          69.0
+        ],
+        [
+          8.0,
+          5.0,
+          7.0,
+          78.0
+        ],
+        [
+          9.0,
+          5.0,
+          7.0,
+          80.0
+        ]
+      ],
+      "source": "Euromonitor; McKinsey & Company",
+      "note": "United States; 2023; 2,096 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 28
+    },
+    {
+      "title": "Users in the digital fitness & well-being market United States 2018-2028",
+      "unit": "In million individuals",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        33.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          33.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United States; 2018 to 2028",
+      "needs_review": false,
+      "page": 33
+    },
+    {
+      "title": "Use of wearable fitness technologies in the U.S. in 2023, by age",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        -34.0,
+        35.0,
+        -44.0,
+        45.0,
+        -64.0,
+        65.0
+      ],
+      "series_rows": [
+        [
+          50.0,
+          35.0,
+          44.0
+        ],
+        [
+          23.0,
+          25.0,
+          2.201,
+          18.0
+        ],
+        [
+          18.0,
+          -34.0,
+          35.0,
+          -44.0,
+          45.0,
+          -64.0,
+          65.0
+        ]
+      ],
+      "source": "Morning Consult",
+      "note": "United States; January 23 to 25, 2023; 2,201 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 34
+    },
+    {
+      "title": "Use of wearable fitness technologies in the U.S. 2023, by gender",
+      "unit": "",
+      "years": [],
+      "values": [
+        23.0,
+        25.0,
+        2.201,
+        18.0
+      ],
+      "series_rows": [
+        [
+          23.0,
+          25.0,
+          2.201,
+          18.0
+        ]
+      ],
+      "source": "Morning Consult",
+      "note": "United States; January 23 to 25, 2023; 2,201 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 35
+    },
+    {
+      "title": "Use of wearable fitness technologies in the U.S. in 2023, by income",
+      "unit": "",
+      "years": [],
+      "values": [
+        23.0,
+        25.0,
+        2.201,
+        18.0
+      ],
+      "series_rows": [
+        [
+          23.0,
+          25.0,
+          2.201,
+          18.0
+        ],
+        [
+          50.0,
+          50.0,
+          -100.0,
+          100.0
+        ]
+      ],
+      "source": "Morning Consult",
+      "note": "United States; January 23 to 25, 2023; 2,201 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 36
+    },
+    {
+      "title": "U.S. users experience with meditation apps 2023. by age",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        18.0,
+        14.743,
+        18.0
+      ],
+      "series_rows": [
+        [
+          21.0,
+          18.0,
+          24.0
+        ],
+        [
+          1.0,
+          18.0,
+          14.743,
+          18.0
+        ]
+      ],
+      "source": "CivicScience",
+      "note": "United States; January 1 to 18, 2023; 14,743 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 37
+    },
+    {
+      "title": "Meditation and mindfulness apps market presence in the U.S. 2019-2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        19.0,
+        2.0,
+        19.0,
+        3.0,
+        19.0,
+        4.0,
+        19.0,
+        1.0,
+        20.0,
+        2.0,
+        20.0,
+        3.0,
+        20.0,
+        4.0,
+        20.0,
+        1.0,
+        21.0,
+        2.0,
+        21.0,
+        3.0,
+        21.0,
+        4.0,
+        21.0,
+        1.0,
+        22.0,
+        2.0,
+        22.0,
+        3.0,
+        22.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          3.0,
+          18.0
+        ],
+        [
+          1.0,
+          19.0,
+          2.0,
+          19.0,
+          3.0,
+          19.0,
+          4.0,
+          19.0,
+          1.0,
+          20.0,
+          2.0,
+          20.0,
+          3.0,
+          20.0,
+          4.0,
+          20.0,
+          1.0,
+          21.0,
+          2.0,
+          21.0,
+          3.0,
+          21.0,
+          4.0,
+          21.0,
+          1.0,
+          22.0,
+          2.0,
+          22.0,
+          3.0,
+          22.0
+        ],
+        [
+          8.0,
+          10.0,
+          11.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          14.0,
+          13.0,
+          13.0
+        ],
+        [
+          19.0,
+          19.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        [
+          5.0,
+          5.0,
+          6.0,
+          6.0,
+          6.0,
+          7.0,
+          6.0,
+          7.0,
+          6.0,
+          7.0
+        ],
+        [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ],
+        [
+          46.0,
+          48.0,
+          50.0,
+          48.0,
+          50.0
+        ],
+        [
+          55.0,
+          55.0,
+          56.0,
+          56.0,
+          56.0
+        ],
+        [
+          62.0,
+          62.0,
+          63.0,
+          64.0,
+          63.0
+        ]
+      ],
+      "source": "CivicScience",
+      "note": "United States; Q1 2019 to Q3 2022; 18 years and older",
+      "needs_review": true,
+      "page": 38
+    }
+  ]
+}

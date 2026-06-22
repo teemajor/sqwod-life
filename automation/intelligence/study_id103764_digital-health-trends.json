@@ -1,0 +1,219 @@
+{
+  "study": "study_id103764_digital-health-trends",
+  "file": "research/statista/study_id103764_digital-health-trends.pdf",
+  "charts": [
+    {
+      "title": "Projected global telemedicine market between 2019 and 2030 (in billion U.S. dollars)",
+      "unit": "Projected global telemedicine market between 2019 and 2030 (in billion U.S. dollars)",
+      "years": [],
+      "values": [
+        49.9,
+        194.1,
+        277.9,
+        459.8
+      ],
+      "series_rows": [
+        [
+          49.9,
+          194.1,
+          277.9,
+          459.8
+        ]
+      ],
+      "source": "BRC; ID 671374",
+      "note": "Worldwide; as of December 2020; *forecast",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "according to patients in the U.S. in 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        61.0,
+        -100.0,
+        21.0,
+        -60.0,
+        1.0,
+        -20.0
+      ],
+      "series_rows": [
+        [
+          61.0,
+          -100.0,
+          21.0,
+          -60.0,
+          1.0,
+          -20.0
+        ]
+      ],
+      "source": "Sykes; ID 1256466",
+      "note": "",
+      "needs_review": [],
+      "page": 6
+    },
+    {
+      "title": "(2) Note(s): Worldwide; 2021 and 2027; *forecast",
+      "unit": "Market value in billion U.S. dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "values": [
+        4.6,
+        7.6,
+        17.9,
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0
+      ],
+      "series_rows": [
+        [
+          4.6,
+          7.6,
+          17.9,
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0
+        ],
+        [
+          29.16,
+          47.25,
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0
+        ]
+      ],
+      "source": "Global Market Research; ID 1211885",
+      "note": "",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "that by 2030, the worldwide shortage of doctors, nurses, and midwives",
+      "unit": "",
+      "years": [],
+      "values": [
+        1202.0,
+        307.0,
+        3.0
+      ],
+      "series_rows": [
+        [
+          1202.0,
+          307.0,
+          3.0
+        ]
+      ],
+      "source": "MedTech Europe; ID 1202254",
+      "note": "",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Estimated number of smart wearable users in the United States from 2020 to 2024, by generation",
+      "unit": "Users in millions",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        20.5,
+        27.6,
+        17.5,
+        9.3,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0
+      ],
+      "series_rows": [
+        [
+          20.5,
+          27.6,
+          17.5,
+          9.3,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0
+        ]
+      ],
+      "source": "eMarketer; ID 1202075",
+      "note": "United States; 2020; 18 years and older; among individuals who wear accessories or clothing that have the ability to connect to the internet (via built-in connectivity or tethering) at least once per month.",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Market value of the internet of medical things worldwide in 2019 and 2027 (in billion U.S. dollars)",
+      "unit": "Market value of the internet of medical things worldwide in 2019 and 2027 (in billion U.S. dollars)",
+      "years": [],
+      "values": [
+        60.83,
+        260.75,
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0
+      ],
+      "series_rows": [
+        [
+          60.83,
+          260.75,
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0
+        ]
+      ],
+      "source": "Reports And Data; ID 1264333",
+      "note": "Worldwide; 2019 and 2027; *forecast",
+      "needs_review": [],
+      "page": 24
+    }
+  ]
+}

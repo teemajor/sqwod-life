@@ -1,0 +1,1286 @@
+{
+  "study": "study_id166600_wearables-in-the-united-states",
+  "file": "research/statista/Trackers Smartwatches Tech/study_id166600_wearables-in-the-united-states.pdf",
+  "charts": [
+    {
+      "title": "Digital fitness & well-being device market revenue worldwide 2019-2028, by segment",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        2.3,
+        2.51,
+        3.21,
+        3.21,
+        3.55,
+        3.89,
+        4.18,
+        4.48,
+        4.72,
+        4.97
+      ],
+      "series_rows": [
+        [
+          2.3,
+          2.51,
+          3.21,
+          3.21,
+          3.55,
+          3.89,
+          4.18,
+          4.48,
+          4.72,
+          4.97
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          23.74,
+          32.04
+        ],
+        [
+          44.15,
+          47.94,
+          51.58,
+          55.16,
+          58.74,
+          62.46,
+          8.61,
+          11.78
+        ],
+        [
+          19.52,
+          22.78,
+          26.08,
+          29.38,
+          32.6,
+          35.84
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "Worldwide; 2019 to 2028",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Total wearable device unit shipments worldwide 2014-2028",
+      "unit": "Unit shipments in millions",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        28.8
+      ],
+      "series_rows": [
+        [
+          81.9,
+          102.4,
+          115.4
+        ],
+        [
+          614.1,
+          632.3,
+          645.7
+        ],
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          28.8
+        ],
+        [
+          172.2,
+          346.4,
+          444.7,
+          533.6
+        ]
+      ],
+      "source": "IDC; Statista",
+      "note": "Worldwide; 2014 to 2028; *2023 figure was calculated by Statista based on the 2023-2024 growth rate (10.5%) provided by the source Read more",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Wearable device shipments worldwide 2021-2028, by product category",
+      "unit": "Shipment in million units",
+      "years": [],
+      "values": [
+        135.83135,
+        83.0,
+        151.87151,
+        87.0,
+        165.23165,
+        23.0,
+        176.7176,
+        7.0,
+        187.48187,
+        48.0,
+        196.66196,
+        66.0,
+        203.69203,
+        69.0,
+        208.63208,
+        6355.255,
+        2.0,
+        39.0239,
+        2.0,
+        33.7833,
+        78.0,
+        31.831,
+        8.0,
+        30.673,
+        67.0,
+        29.7929,
+        79.0,
+        29.129,
+        1.0,
+        28.6728,
+        67.0
+      ],
+      "series_rows": [
+        [
+          339.62339,
+          62.0,
+          322.74322,
+          74.0,
+          341.55341,
+          55.0,
+          347.28347,
+          28.0,
+          367.85367,
+          85.0,
+          382.4382,
+          4.0,
+          393.79393,
+          79.0,
+          402.25402,
+          25.0
+        ],
+        [
+          135.83135,
+          83.0,
+          151.87151,
+          87.0,
+          165.23165,
+          23.0,
+          176.7176,
+          7.0,
+          187.48187,
+          48.0,
+          196.66196,
+          66.0,
+          203.69203,
+          69.0,
+          208.63208,
+          6355.255,
+          2.0,
+          39.0239,
+          2.0,
+          33.7833,
+          78.0,
+          31.831,
+          8.0,
+          30.673,
+          67.0,
+          29.7929,
+          79.0,
+          29.129,
+          1.0,
+          28.6728,
+          67.0
+        ],
+        [
+          438.05438,
+          5.0,
+          343.8343,
+          8.0,
+          350.9735,
+          97.0,
+          358.46358,
+          46.0,
+          365.91365,
+          91.0,
+          374.28374,
+          28.0
+        ],
+        [
+          1.651,
+          65.0,
+          1.751,
+          75.0,
+          1.891,
+          89.0,
+          2.042,
+          4.0,
+          2.172,
+          17.0
+        ],
+        [
+          1.61,
+          6.0,
+          2.312,
+          31.0,
+          2.722,
+          72.0,
+          33.0,
+          3.233,
+          23.0
+        ],
+        [
+          2.782,
+          78.0,
+          1.961,
+          96.0
+        ],
+        [
+          0.27,
+          27.0,
+          0.29,
+          29.0,
+          0.31,
+          31.0,
+          0.32,
+          32.0,
+          0.33,
+          33.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2
+        ]
+      ],
+      "source": "IDC",
+      "note": "Worldwide; 2021 to 2024; *Forecast Read more",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Connected wearable devices worldwide 2019-2022",
+      "unit": "Connected wearables in millions",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        722.0,
+        835.0,
+        929.0,
+        1.11,
+        7.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          722.0,
+          835.0,
+          929.0,
+          1.11,
+          7.0
+        ]
+      ],
+      "source": "Research and Markets",
+      "note": "Worldwide; 2019 to 2022",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Revenue in the digital fitness & well-being market United States 2018-2028",
+      "unit": "In billion U.S. dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        8.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          8.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United States; 2018 to 2028",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "Per user revenue of digital and well-being device in the U.S. 2020-2028, by segment",
+      "unit": "Per user revenue in U.S. dollars",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        264.48,
+        276.76,
+        289.05,
+        301.33,
+        313.62,
+        325.9,
+        338.19,
+        350.47,
+        362.76
+      ],
+      "series_rows": [
+        [
+          99.1,
+          100.47,
+          101.87,
+          103.28,
+          104.71,
+          106.16,
+          107.63,
+          109.12,
+          110.64
+        ],
+        [
+          79.64,
+          82.41,
+          85.18,
+          87.94,
+          90.71,
+          93.47,
+          96.24,
+          99.01,
+          101.77
+        ],
+        [
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          264.48,
+          276.76,
+          289.05,
+          301.33,
+          313.62,
+          325.9,
+          338.19,
+          350.47,
+          362.76
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "United States; 2020 to 2028",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Smartwatch shipments 2020-2022, by region",
+      "unit": "",
+      "years": [],
+      "values": [
+        33.0,
+        33.0,
+        30.0,
+        30.0,
+        28.0,
+        28.0
+      ],
+      "series_rows": [
+        [
+          28.0,
+          21.0,
+          19.0
+        ],
+        [
+          33.0,
+          33.0,
+          30.0,
+          30.0,
+          28.0,
+          28.0
+        ],
+        [
+          3.0,
+          3.0,
+          10.0,
+          10.0,
+          21.0,
+          21.0
+        ],
+        [
+          37.0,
+          37.0,
+          31.0,
+          31.0
+        ]
+      ],
+      "source": "Counterpoint Research",
+      "note": "Worldwide, North America, China, India; 2020 to 2021",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Revenue in the headphones segment United States 2018-2028",
+      "unit": "Description: The revenue in the 'Headphones' segment of the consumer electronics market in the United States was forecast to continuously increase between 2024 and 2028 by in total 0.1 billion U.S. dollars (+4.15 percent). According to this forecast in 2028, the",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        15.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          15.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United States; 2018 to 2028",
+      "needs_review": true,
+      "page": 15
+    },
+    {
+      "title": "Headphone revenue growth in the U.S. 2019-2028",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        1.3,
+        1.2,
+        1.2,
+        1.2,
+        1.1
+      ],
+      "series_rows": [
+        [
+          1.3,
+          1.2,
+          1.2,
+          1.2,
+          1.1
+        ]
+      ],
+      "source": "Statista",
+      "note": "2019 to 2028",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Volume in the headphones segment United States 2018-2028",
+      "unit": "In million pieces",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        17.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          17.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United States; 2018 to 2028",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Most used eHealth tracker / smart watches by brand in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3240.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          3240.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 3240 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+      "needs_review": [],
+      "page": 20
+    },
+    {
+      "title": "Most well-known watch brands in the United States 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1248.0,
+        18.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          1248.0,
+          18.0,
+          64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; November 2023; 1248 respondents; 18 to 64 years",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Most used headphones by brand in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        5952.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          5952.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 5952 respondents; 18-64 years; respondents who use headphones (Housing & household equipment, Internet & devices)",
+      "needs_review": [],
+      "page": 22
+    },
+    {
+      "title": "Digital device ownership in the U.S. 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        97.6,
+        48.5,
+        26.7
+      ],
+      "series_rows": [
+        [
+          97.6,
+          48.5,
+          26.7
+        ]
+      ],
+      "source": "DataReportal; GWI; Hootsuite; We Are Social",
+      "note": "United States; as of January 2024; 16-64 years; Internet users that own each kind of device",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "Digital and well-being device users in the U.S. 2020-2028, by segment",
+      "unit": "Number of users in millions",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        39.92,
+        41.59,
+        42.14,
+        42.7,
+        43.09,
+        43.23,
+        43.32,
+        43.33,
+        43.41
+      ],
+      "series_rows": [
+        [
+          39.92,
+          41.59,
+          42.14,
+          42.7,
+          43.09,
+          43.23,
+          43.32,
+          43.33,
+          43.41
+        ],
+        [
+          26.23,
+          27.89,
+          29.23,
+          30.35,
+          31.25,
+          32.0
+        ],
+        [
+          5.43,
+          6.23,
+          6.15,
+          6.41,
+          6.68,
+          6.82,
+          7.0,
+          7.09,
+          7.17
+        ],
+        [
+          20.4,
+          22.57,
+          24.38
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "United States; 2020 to 2028",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Most common exercise technology in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        31.0,
+        13.0,
+        1013.0
+      ],
+      "series_rows": [
+        [
+          31.0,
+          13.0,
+          1013.0
+        ]
+      ],
+      "source": "Peloton",
+      "note": "United States; August 31 to September 13, 2023; 1013 respondents",
+      "needs_review": [],
+      "page": 32
+    },
+    {
+      "title": "VR headset market revenue in the U.S. 2018-2028",
+      "unit": "Description: The revenue in the 'VR Headsets' segment of the consumer electronics market in the United States was forecast to increase between 2024 and 2028 by in total 0.01 billion U.S. dollars (+0.54 percent). This overall increase does not happen continuously,",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        0.52,
+        0.66,
+        1.0,
+        1.62
+      ],
+      "series_rows": [
+        [
+          1.84,
+          1.88,
+          1.84,
+          1.88
+        ],
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          0.52,
+          0.66,
+          1.0,
+          1.62
+        ]
+      ],
+      "source": "Statista; Statista Consumer Market Insights",
+      "note": "United States; 2018 to 2028",
+      "needs_review": true,
+      "page": 34
+    },
+    {
+      "title": "VR headset sales volume in the U.S. 2018-2028",
+      "unit": "Volume in million pieces",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        1.34,
+        1.59,
+        2.27,
+        3.72
+      ],
+      "series_rows": [
+        [
+          4.31,
+          4.39,
+          4.3,
+          4.41
+        ],
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0,
+          1.34,
+          1.59,
+          2.27,
+          3.72
+        ]
+      ],
+      "source": "Statista; Statista Consumer Market Insights",
+      "note": "United States; 2018 to 2028",
+      "needs_review": true,
+      "page": 36
+    },
+    {
+      "title": "Revenue of the AR hardware industry in the U.S. 2020-2027",
+      "unit": "Description: The revenue in the 'AR Hardware' segment of the AR & VR market in the United States was forecast to continuously increase between 2023 and 2027 by in total 2.5 billion U.S. dollars (+287.36 percent). After the seventh consecutive increasing year, the",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        37.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          37.0
+        ]
+      ],
+      "source": "Statista; Statista Advertising & Media Insights",
+      "note": "United States; 2020 to 2027",
+      "needs_review": true,
+      "page": 37
+    },
+    {
+      "title": "XR headset vendor shipment share worldwide 2020-2023, by quarter",
+      "unit": "",
+      "years": [
+        "2020",
+        "2020",
+        "2020",
+        "2020",
+        "2021",
+        "2021",
+        "2021",
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        7.0,
+        7.0,
+        8.0,
+        8.0,
+        8.0,
+        8.0,
+        4.0,
+        4.0,
+        6.0,
+        6.0,
+        9.0,
+        9.0,
+        10.0,
+        10.0,
+        8.0,
+        8.0,
+        7.0,
+        7.0,
+        9.0,
+        9.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          34.0,
+          34.0,
+          32.0,
+          32.0,
+          29.0,
+          29.0
+        ],
+        [
+          74.0,
+          74.0,
+          75.0,
+          75.0
+        ],
+        [
+          67.0,
+          67.0,
+          73.0,
+          73.0,
+          80.0,
+          80.0,
+          77.0,
+          77.0
+        ],
+        [
+          66.0,
+          66.0,
+          72.0,
+          72.0
+        ],
+        [
+          51.0,
+          51.0,
+          51.0,
+          51.0,
+          46.0,
+          46.0
+        ],
+        [
+          33.0,
+          33.0,
+          29.0,
+          29.0
+        ],
+        [
+          6.0,
+          6.0,
+          10.0,
+          10.0,
+          11.0,
+          11.0
+        ],
+        [
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        [
+          5.0,
+          5.0,
+          8.0,
+          8.0
+        ],
+        [
+          7.0,
+          7.0,
+          7.0,
+          7.0
+        ],
+        [
+          6.0,
+          6.0,
+          8.0,
+          8.0
+        ],
+        [
+          53.0,
+          53.0,
+          50.0,
+          50.0,
+          52.0,
+          52.0
+        ],
+        [
+          19.0,
+          19.0,
+          15.0,
+          15.0,
+          18.0,
+          18.0,
+          11.0,
+          11.0,
+          7.0,
+          7.0,
+          8.0,
+          8.0
+        ],
+        [
+          10.0,
+          10.0,
+          9.0,
+          9.0,
+          14.0,
+          14.0,
+          16.0,
+          16.0,
+          9.0,
+          9.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        [
+          7.0,
+          7.0,
+          8.0,
+          8.0,
+          8.0,
+          8.0,
+          4.0,
+          4.0,
+          6.0,
+          6.0,
+          9.0,
+          9.0,
+          10.0,
+          10.0,
+          8.0,
+          8.0,
+          7.0,
+          7.0,
+          9.0,
+          9.0
+        ]
+      ],
+      "source": "Counterpoint Research",
+      "note": "Worldwide; Q1 2020 to Q4 2023",
+      "needs_review": true,
+      "page": 39
+    },
+    {
+      "title": "Apple Vision Pro accessories price list in the United States 2024",
+      "unit": "Price in U.S. dollars",
+      "years": [],
+      "values": [
+        99.0,
+        199.0,
+        29.0,
+        49.95
+      ],
+      "series_rows": [
+        [
+          99.0,
+          199.0,
+          29.0,
+          49.95
+        ]
+      ],
+      "source": "Apple",
+      "note": "United States; 2024",
+      "needs_review": [],
+      "page": 40
+    },
+    {
+      "title": "Meta Quest price list in the United States 2024",
+      "unit": "Price in U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        249.99,
+        499.99,
+        999.99,
+        41.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          249.99,
+          999.99
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          249.99,
+          499.99,
+          999.99,
+          41.0
+        ]
+      ],
+      "source": "Meta Platforms",
+      "note": "United States; March 2024",
+      "needs_review": true,
+      "page": 41
+    },
+    {
+      "title": "Number of users of AR hardware in the U.S. 2021-2028",
+      "unit": "Users in millions",
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0,
+        42.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0,
+          42.0
+        ]
+      ],
+      "source": "Statista; Statista Advertising & Media Insights",
+      "note": "United States; 2021 to 2028",
+      "needs_review": true,
+      "page": 42
+    }
+  ]
+}

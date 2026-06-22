@@ -1,0 +1,797 @@
+{
+  "study": "study_id166778_wellness-industry-in-the-uk",
+  "file": "research/statista/Health & Wellness/study_id166778_wellness-industry-in-the-uk.pdf",
+  "charts": [
+    {
+      "title": "Wellness industry market size in Europe in 2022, by country",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        268.65,
+        223.83,
+        171.9,
+        112.12,
+        94.52,
+        82.95,
+        52.3,
+        50.31,
+        44.95,
+        42.35
+      ],
+      "series_rows": [
+        [
+          268.65,
+          223.83,
+          171.9,
+          112.12,
+          94.52,
+          82.95,
+          52.3,
+          50.31,
+          44.95,
+          42.35
+        ]
+      ],
+      "source": "FTNnews; Global Wellness Institute",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 3
+    },
+    {
+      "title": "Spa industry market size in the UK 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        2.11,
+        2.87,
+        3.2,
+        4.0
+      ],
+      "series_rows": [
+        [
+          2.11,
+          2.87,
+          3.2,
+          4.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United Kingdom; 2019 to 2022",
+      "needs_review": false,
+      "page": 4
+    },
+    {
+      "title": "Workplace wellness industry market size in the UK 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        3.23,
+        2.96
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          3.23,
+          2.96
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United Kingdom; 2019 to 2022",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Wellness tourism industry market size in the UK 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        15.1,
+        4.9,
+        11.4,
+        15.6,
+        6.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          15.1,
+          4.9,
+          11.4,
+          15.6,
+          6.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United Kingdom; 2019 to 2022",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Number of fitness instructors in the UK 2021-2023",
+      "unit": "",
+      "years": [
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        67.2
+      ],
+      "series_rows": [
+        [
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          67.2
+        ],
+        [
+          71.9,
+          68.3,
+          60.9,
+          57.9,
+          7.0
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; Q4 2021 to Q2 2023",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Expenditure on health in the United Kingdom 2005-2022",
+      "unit": "Expenditure in million GBP",
+      "years": [
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        13.274,
+        11.619
+      ],
+      "series_rows": [
+        [
+          16.081,
+          16.103,
+          15.877
+        ],
+        [
+          24.032,
+          24.797,
+          25.407
+        ],
+        [
+          26.912,
+          27.785,
+          28.24,
+          28.609
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          13.274,
+          11.619
+        ],
+        [
+          24.308,
+          25.494,
+          27.339,
+          17.0
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; 2005 to 2022",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Annual spend on self-care in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        623.0,
+        610.0,
+        605.0,
+        581.0,
+        560.0,
+        560.0,
+        556.0,
+        524.0
+      ],
+      "series_rows": [
+        [
+          28.0,
+          30.0,
+          2.009
+        ],
+        [
+          623.0,
+          610.0,
+          605.0,
+          581.0,
+          560.0,
+          560.0,
+          556.0,
+          524.0
+        ]
+      ],
+      "source": "Professional Beauty; Website (aquacard.co.uk)",
+      "note": "Europe, United Kingdom; June 28 to 30, 2023; 2,009 respondents",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Annual spend on massages in the UK by gender 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        668.0,
+        457.0,
+        560.0,
+        19.0
+      ],
+      "series_rows": [
+        [
+          28.0,
+          30.0,
+          2.009
+        ],
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          668.0,
+          457.0,
+          560.0,
+          19.0
+        ]
+      ],
+      "source": "Professional Beauty; Website (aquacard.co.uk)",
+      "note": "Europe, United Kingdom; June 28 to 30, 2023; 2,009 respondents; only respondents who have massages",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Annual spend on spa days in the UK by gender 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        683.0,
+        563.0,
+        623.0,
+        20.0
+      ],
+      "series_rows": [
+        [
+          28.0,
+          30.0,
+          2.009
+        ],
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          683.0,
+          563.0,
+          623.0,
+          20.0
+        ]
+      ],
+      "source": "Professional Beauty; Website (aquacard.co.uk)",
+      "note": "Europe, United Kingdom; June 28 to 30, 2023; 2,009 respondents; only respondents who go on spa days",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Most popular wellness product categories in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        64.0,
+        14.0,
+        16.0,
+        6.0
+      ],
+      "series_rows": [
+        [
+          64.0,
+          14.0,
+          16.0,
+          6.0
+        ],
+        [
+          40.0,
+          13.0,
+          18.0,
+          30.0
+        ],
+        [
+          24.0,
+          11.0,
+          31.0,
+          34.0
+        ],
+        [
+          22.0,
+          13.0,
+          30.0,
+          35.0
+        ],
+        [
+          19.0,
+          13.0,
+          32.0,
+          37.0
+        ],
+        [
+          8.0,
+          6.0,
+          12.0,
+          74.0
+        ],
+        [
+          7.0,
+          5.0,
+          6.0,
+          82.0
+        ],
+        [
+          5.0,
+          4.0,
+          5.0,
+          86.0
+        ]
+      ],
+      "source": "Euromonitor; McKinsey & Company",
+      "note": "United Kingdom; 2023; 1,945 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 23
+    },
+    {
+      "title": "Mental health & wellbeing product buying plans in the U.S. & UK 2022, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.099,
+        1.051,
+        1.048
+      ],
+      "series_rows": [
+        [
+          2.099,
+          1.051,
+          1.048
+        ],
+        [
+          6.0,
+          5.0,
+          6.0
+        ]
+      ],
+      "source": "Latana",
+      "note": "United Kingdom, United States; January 2022; 2,099 respondents*; * 1,051 respondents in the U.S. and 1,048 respondents in the UK. Original question: 'How likely are you to purchase a product in 2022 that is focused on your mental [...] Read",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Share of UK shoppers purchasing health and beauty online or in-store 2019-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.974,
+        2.042,
+        18.0
+      ],
+      "series_rows": [
+        [
+          1.974,
+          2.042,
+          18.0
+        ]
+      ],
+      "source": "YouGov",
+      "note": "United Kingdom; July 2019 to December 2023; Between 1,974 and 2,042; 18 years and older; UK shoppers per wave",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Most well-known beauty and health online shops in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1243.0,
+        18.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          1243.0,
+          18.0,
+          64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; August to September 2023; 1243 respondents; 18 to 64 years",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "Revenue in the digital fitness & well-being devices segment UK 2018-2028",
+      "unit": "In million U.S. dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        28.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          28.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United Kingdom; 2018 to 2028",
+      "needs_review": true,
+      "page": 28
+    },
+    {
+      "title": "Users in the digital fitness & well-being devices segment UK 2018-2028",
+      "unit": "In million individuals",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        29.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          29.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United Kingdom; 2018 to 2028",
+      "needs_review": true,
+      "page": 29
+    },
+    {
+      "title": "Revenue in the digital fitness & well-being market UK 2018-2028",
+      "unit": "In million U.S. dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        30.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          30.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United Kingdom; 2018 to 2028",
+      "needs_review": true,
+      "page": 30
+    },
+    {
+      "title": "Users in the digital fitness & well-being market UK 2018-2028",
+      "unit": "In million individuals",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        31.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          31.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United Kingdom; 2018 to 2028",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Revenue in the health & fitness segment of the app market United Kingdom 2017-2027",
+      "unit": "In million U.S. dollars",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        450.0,
+        500.0,
+        32.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          450.0,
+          500.0,
+          32.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "United Kingdom; 2017 to 2027",
+      "needs_review": true,
+      "page": 32
+    },
+    {
+      "title": "Most well-known wearable brands in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1247.0,
+        18.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          1247.0,
+          18.0,
+          64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; October 2023; 1247 respondents; 18 to 64 years",
+      "needs_review": [],
+      "page": 33
+    }
+  ]
+}

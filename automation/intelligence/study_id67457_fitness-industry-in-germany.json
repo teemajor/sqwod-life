@@ -1,0 +1,956 @@
+{
+  "study": "study_id67457_fitness-industry-in-germany",
+  "file": "research/statista/Health & Wellness/study_id67457_fitness-industry-in-germany.pdf",
+  "charts": [
+    {
+      "title": "Value of the European health and fitness industry 2017-2022",
+      "unit": "Market value in billion euros",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        28.2,
+        18.9,
+        17.1,
+        28.0,
+        3.0
+      ],
+      "series_rows": [
+        [
+          28.2,
+          18.9,
+          17.1,
+          28.0,
+          3.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2017 to 2022",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Germany: revenue of the fitness market 2014-2022",
+      "unit": "Revenue in million euros",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        5.05,
+        5.2,
+        5.33,
+        5.51
+      ],
+      "series_rows": [
+        [
+          4.9,
+          100.0,
+          -19.0
+        ],
+        [
+          5.05,
+          5.2,
+          5.33,
+          5.51
+        ],
+        [
+          4.16,
+          2.2,
+          4.9,
+          4.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Germany; 2014 to 2022",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Fitness and health service online purchases in Germany 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        5987.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          5987.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Germany; January to December 2023; 5987 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Fitness and health service purchases in Germany 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        5987.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          5987.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Germany; January to December 2023; 5987 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 6
+    },
+    {
+      "title": "Number of health and fitness clubs in Europe 2009-2022",
+      "unit": "",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        63.644,
+        63.059,
+        63.173,
+        63.83
+      ],
+      "series_rows": [
+        [
+          48.087,
+          48.005,
+          47.701
+        ],
+        [
+          49.197,
+          51.299,
+          51.204
+        ],
+        [
+          63.644,
+          63.059,
+          63.173,
+          63.83
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2009 to 2022",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "Gym membership in European countries 2022",
+      "unit": "Membership in millions",
+      "years": [],
+      "values": [
+        5.4,
+        4.7,
+        9.0
+      ],
+      "series_rows": [
+        [
+          5.4,
+          4.7,
+          9.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 9
+    },
+    {
+      "title": "Number of gym members in Germany 2014-2022",
+      "unit": "Number of members in millions",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        10.08,
+        10.61,
+        11.09,
+        11.66,
+        10.31,
+        9.26,
+        10.3,
+        10.0
+      ],
+      "series_rows": [
+        [
+          10.08,
+          10.61,
+          11.09,
+          11.66,
+          10.31,
+          9.26,
+          10.3,
+          10.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Germany; 2014 to 2022",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Leading gym chains in Germany in 2022, by number of clubs",
+      "unit": "",
+      "years": [],
+      "values": [
+        450.0,
+        211.0,
+        170.0,
+        124.0,
+        119.0,
+        117.0,
+        102.0,
+        82.0
+      ],
+      "series_rows": [
+        [
+          450.0,
+          211.0,
+          170.0,
+          124.0,
+          119.0,
+          117.0,
+          102.0,
+          82.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Germany; 2022; * Fully or partly a franchise operation. Read more",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Sports popularity by members in Germany 2023",
+      "unit": "Members in millions",
+      "years": [],
+      "values": [
+        10.3,
+        7.36,
+        4.79,
+        1.48,
+        1.41,
+        1.32,
+        0.78,
+        0.74,
+        0.68,
+        0.66
+      ],
+      "series_rows": [
+        [
+          10.3,
+          7.36,
+          4.79,
+          1.48,
+          1.41,
+          1.32,
+          0.78,
+          0.74,
+          0.68,
+          0.66
+        ]
+      ],
+      "source": "Deloitte; Deutsche Hochschule für Prävention und Gesundheitsmanagement; Deutscher Olympischer Sportbund",
+      "note": "Germany; 2023",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Frequency of recreational exercising in Germany 2017-2021",
+      "unit": "Number of people in millions",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        14.2715,
+        7.0,
+        15.29,
+        15.27,
+        15.24,
+        15.17
+      ],
+      "series_rows": [
+        [
+          11.57,
+          11.81,
+          11.67,
+          12.84
+        ],
+        [
+          14.2715,
+          7.0,
+          15.29,
+          15.27,
+          15.24,
+          15.17
+        ],
+        [
+          3.79,
+          4.0,
+          4.02,
+          3.98,
+          3.94
+        ],
+        [
+          10.44,
+          10.29,
+          10.21
+        ],
+        [
+          29.3,
+          29.05,
+          29.43,
+          29.67
+        ]
+      ],
+      "source": "VuMA",
+      "note": "Germany; 2017 to 2021; 14 years and older; German-speaking population",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Young people exercising in Germany 2021, by frequency",
+      "unit": "",
+      "years": [],
+      "values": [
+        27.0,
+        14.0,
+        19.0,
+        20.0,
+        25.0,
+        25.5
+      ],
+      "series_rows": [
+        [
+          27.0,
+          14.0,
+          19.0,
+          20.0,
+          25.0,
+          25.5
+        ],
+        [
+          14.0,
+          -19.0,
+          20.0,
+          -25.0,
+          14.0,
+          -25.0
+        ]
+      ],
+      "source": "VuMA",
+      "note": "Germany; 14 years and older; German-speaking population",
+      "needs_review": true,
+      "page": 15
+    },
+    {
+      "title": "Germany: articles and equipment for sports import value 2016-2022",
+      "unit": "",
+      "years": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        1.558,
+        656.0,
+        1.575,
+        417.0,
+        1.582,
+        16.0
+      ],
+      "series_rows": [
+        [
+          1.558,
+          656.0,
+          1.575,
+          417.0,
+          1.582,
+          16.0
+        ]
+      ],
+      "source": "UN Comtrade",
+      "note": "Germany; 2016 to 2022",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Online fitness and health service purchases by brand in Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        22.0,
+        20.0,
+        17.0,
+        25.0,
+        142.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          22.0,
+          20.0,
+          17.0,
+          25.0,
+          142.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Germany; 22 Jul to 20 Aug 2020 and 17 Feb to 25 Mar 2020; 142 respondents; 18-64 years; respondents who spent money on online fitness & health services (websites and apps)",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Leading Android health apps in Germany 2022, by downloads",
+      "unit": "",
+      "years": [],
+      "values": [
+        113.808,
+        86.011,
+        84.584,
+        78.824,
+        55.925,
+        51.409,
+        42.269,
+        41.084,
+        39.524,
+        37.642
+      ],
+      "series_rows": [
+        [
+          113.808,
+          86.011,
+          84.584,
+          78.824,
+          55.925,
+          51.409,
+          42.269,
+          41.084,
+          39.524,
+          37.642
+        ]
+      ],
+      "source": "Airnow",
+      "note": "Germany; September 2022; based on downloads to devices in Germany.",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Revenue from wearable sales in Germany 2014-2023",
+      "unit": "Revenue in million euros",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        21.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          21.0
+        ]
+      ],
+      "source": "BVT; GfK; gfu",
+      "note": "Germany; 2014 to 2023; private demand; core wearables; * The source makes the following statement \"including Smart Watches (without SIM), Smart Glasses (without SIM), Health &amp; Fitness Trackers, Wrist Sport Computers, [...] Read more",
+      "needs_review": false,
+      "page": 21
+    },
+    {
+      "title": "Sales volume of wearables in Germany 2015-2023",
+      "unit": "Sales volume in millions",
+      "years": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        22.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          22.0
+        ]
+      ],
+      "source": "GfK; gfu",
+      "note": "Germany; 2015 to 2023; Core wearables, private demand",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Revenue forecast for the eServices market by segment in Germany until 2030",
+      "unit": "Online revenue in million U.S. dollars",
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030"
+      ],
+      "values": [
+        2.946,
+        532.946,
+        53.0,
+        3.091,
+        523.091,
+        52.0,
+        3.18,
+        623.18,
+        62.0,
+        3.239,
+        913.239,
+        91.0,
+        3.28,
+        623.28,
+        62.0,
+        3.482,
+        613.482,
+        61.0,
+        3.503,
+        123.503,
+        12.0,
+        3.517,
+        33.517,
+        3.0
+      ],
+      "series_rows": [
+        [
+          2.946,
+          532.946,
+          53.0,
+          3.091,
+          523.091,
+          52.0,
+          3.18,
+          623.18,
+          62.0,
+          3.239,
+          913.239,
+          91.0,
+          3.28,
+          623.28,
+          62.0,
+          3.482,
+          613.482,
+          61.0,
+          3.503,
+          123.503,
+          12.0,
+          3.517,
+          33.517,
+          3.0
+        ],
+        [
+          618.9618,
+          9.0,
+          640.9564,
+          95.0
+        ],
+        [
+          325.83325,
+          83.0,
+          330.2733,
+          27.0,
+          334.25334,
+          25.0
+        ],
+        [
+          300.953,
+          95.0,
+          303.43303,
+          43.0,
+          305.52305,
+          52.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5
+        ]
+      ],
+      "source": "Statista",
+      "note": "Germany; 2023 to 2030",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Online revenue forecast for the eServices Fitness market in Germany until 2024",
+      "unit": "Description: This statistic presents a forecast of the online revenue in the eServices Fitness market in Germany until the year 2024. According to the Digital Market Outlook, the online revenue of the eServices Fitness segment Apps in Germany is expected to be 171.2",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        536.2536,
+        2.0,
+        493.5493,
+        5.0,
+        471.3471,
+        3.0,
+        465.2465,
+        2.0,
+        469.7469,
+        7.0
+      ],
+      "series_rows": [
+        [
+          391.8391,
+          8.0,
+          408.1408,
+          1.0,
+          423.2423,
+          2.0
+        ],
+        [
+          536.2536,
+          2.0,
+          493.5493,
+          5.0,
+          471.3471,
+          3.0,
+          465.2465,
+          2.0,
+          469.7469,
+          7.0
+        ],
+        [
+          4040.0,
+          51.751,
+          7.0,
+          66.266,
+          2.0
+        ],
+        [
+          114.7114,
+          7.0,
+          134.6134,
+          6.0,
+          153.7153,
+          7.0,
+          171.2171,
+          2.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "Germany; 2019",
+      "needs_review": true,
+      "page": 25
+    },
+    {
+      "title": "Forecast for the number of users in the eServices market by segment in Germany until 2030",
+      "unit": "Number of online users in million",
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030"
+      ],
+      "values": [
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0,
+        21.0,
+        23.0,
+        19.17
+      ],
+      "series_rows": [
+        [
+          19.81,
+          19.96,
+          20.04,
+          20.07
+        ],
+        [
+          21.56,
+          21.57,
+          21.58
+        ],
+        [
+          9.91,
+          10.01,
+          10.11,
+          10.21,
+          10.38
+        ],
+        [
+          9.48,
+          9.52,
+          9.55
+        ],
+        [
+          5.0,
+          7.0,
+          9.0,
+          11.0,
+          13.0,
+          15.0,
+          17.0,
+          19.0,
+          21.0,
+          23.0,
+          19.17
+        ]
+      ],
+      "source": "Statista",
+      "note": "Germany; 2023 to 2030",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Number of users in the eServices Fitness market in Germany until 2024",
+      "unit": "Number of online users in million",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0,
+        9.7,
+        10.4,
+        11.2,
+        13.9,
+        15.0,
+        16.2,
+        17.3,
+        18.3
+      ],
+      "series_rows": [
+        [
+          6.0,
+          6.2,
+          6.4
+        ],
+        [
+          7.2,
+          6.8,
+          6.6,
+          6.7
+        ],
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0,
+          9.7,
+          10.4,
+          11.2,
+          13.9,
+          15.0,
+          16.2,
+          17.3,
+          18.3
+        ]
+      ],
+      "source": "Statista",
+      "note": "Germany; 2019",
+      "needs_review": true,
+      "page": 27
+    },
+    {
+      "title": "ARPU forecast for the eServices market by segment in Germany until 2028",
+      "unit": "Average revenue per online user in U.S. dollars",
+      "years": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        40.13,
+        37.24,
+        35.65,
+        34.853,
+        95.0,
+        31.0,
+        31.51,
+        31.92,
+        32.24,
+        32.35,
+        32.2,
+        32.04
+      ],
+      "series_rows": [
+        [
+          147.76,
+          153.44,
+          153.54,
+          156.24,
+          159.74,
+          162.22,
+          164.01,
+          165.81
+        ],
+        [
+          40.13,
+          37.24,
+          35.65,
+          34.853,
+          95.0,
+          31.0,
+          31.51,
+          31.92,
+          32.24,
+          32.35,
+          32.2,
+          32.04
+        ]
+      ],
+      "source": "Statista",
+      "note": "Germany; 2021 to 2028",
+      "needs_review": true,
+      "page": 28
+    }
+  ]
+}

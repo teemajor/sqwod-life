@@ -1,0 +1,648 @@
+{
+  "study": "study_id67456_the-rise-of-the-gig-economy-in-the-us",
+  "file": "research/statista/study_id67456_the-rise-of-the-gig-economy-in-the-us.pdf",
+  "charts": [
+    {
+      "title": "Number of people freelancing in the U.S. from 2014 to 2020",
+      "unit": "Number of people doing freelance work in millions",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "values": [
+        53.0,
+        53.7,
+        55.0,
+        57.3,
+        56.7,
+        57.0,
+        59.0,
+        52.0,
+        53.0,
+        54.0,
+        55.0,
+        56.0,
+        57.0,
+        58.0,
+        59.0,
+        60.0
+      ],
+      "series_rows": [
+        [
+          53.0,
+          53.7,
+          55.0,
+          57.3,
+          56.7,
+          57.0,
+          59.0,
+          52.0,
+          53.0,
+          54.0,
+          55.0,
+          56.0,
+          57.0,
+          58.0,
+          59.0,
+          60.0
+        ]
+      ],
+      "source": "Bureau of Labor Statistics; Edelman; Upwork; ID 685468",
+      "note": "United States; 2014 to 2020",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Number of people working independently in the U.S. from 2017 to 2021, by frequency (in millions)",
+      "unit": "Number of people in millions",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        38.2,
+        51.1,
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0
+      ],
+      "series_rows": [
+        [
+          12.9,
+          14.1,
+          15.0,
+          15.8
+        ],
+        [
+          11.8,
+          11.1,
+          10.8,
+          8.8
+        ],
+        [
+          16.2,
+          15.8,
+          15.3
+        ],
+        [
+          17.04,
+          9.0,
+          41.0,
+          41.1
+        ],
+        [
+          38.2,
+          51.1,
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0
+        ]
+      ],
+      "source": "MBO Partners; ID 918285",
+      "note": "United States; July 2021; 6,240 respondents; 18 years and older; *occasional independent workers are defined as people who work independently at least once a",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "2016 2017* 2018* 2019* 2020* 2021*",
+      "unit": "Number of users in millions",
+      "years": [],
+      "values": [
+        44.8,
+        56.5,
+        66.3,
+        73.7,
+        81.2,
+        86.5
+      ],
+      "series_rows": [
+        [
+          44.8,
+          56.5,
+          66.3,
+          73.7,
+          81.2,
+          86.5
+        ]
+      ],
+      "source": "eMarketer; Morning Consult; ID 289856",
+      "note": "United States; 2016; 18 years and older; persons who have used their account for a community-based online service that",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "The Great Recession in 2008 and 2009",
+      "unit": "",
+      "years": [],
+      "values": [
+        90.0,
+        91.0,
+        92.0,
+        93.0,
+        94.0,
+        95.0,
+        96.0,
+        97.0,
+        98.0,
+        99.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0
+      ],
+      "series_rows": [
+        [
+          90.0,
+          91.0,
+          92.0,
+          93.0,
+          94.0,
+          95.0,
+          96.0,
+          97.0,
+          98.0,
+          99.0,
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          16.0,
+          17.0,
+          18.0,
+          19.0,
+          20.0
+        ],
+        [
+          1881.0,
+          65.0,
+          1932.0,
+          20.0
+        ]
+      ],
+      "source": "BEA; Bureau of Labor Statistics; U.S. Department of Commerce; ID 188165; ID 193220",
+      "note": "United States; 1990 to 2020; 16 years and older",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Gig economy projected gross volume from 2018 to 2023",
+      "unit": "Gross volume transactions in billion U.S. dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        204.0,
+        248.3,
+        296.7,
+        347.8,
+        401.4,
+        455.2,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        450.0,
+        500.0
+      ],
+      "series_rows": [
+        [
+          204.0,
+          248.3,
+          296.7,
+          347.8,
+          401.4,
+          455.2,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          450.0,
+          500.0
+        ]
+      ],
+      "source": "MasterCard; ID 1034564",
+      "note": "United States; 2019",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Increase in freelancers finding work online in the U.S. in 2019",
+      "unit": "",
+      "years": [],
+      "values": [
+        7.0,
+        3.0,
+        6.001,
+        18.0
+      ],
+      "series_rows": [
+        [
+          7.0,
+          3.0,
+          6.001,
+          18.0
+        ]
+      ],
+      "source": "Edelman; Upwork; ID 685702",
+      "note": "United States; June 7 to July 3, 2019; 6,001 respondents; 18 years and older; skilled freelancing adults who have done",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Share of people freelancing in the U.S. in 2019, by industry",
+      "unit": "",
+      "years": [],
+      "values": [
+        7.0,
+        3.0,
+        6.001,
+        18.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          7.0,
+          3.0,
+          6.001,
+          18.0,
+          12.0
+        ]
+      ],
+      "source": "Edelman; Upwork; U.S. Bureau of Labor Statistics; ID 1128117",
+      "note": "United States; June 7 to July 3, 2019; 6,001 respondents; 18 years and older; adults who have done paid work in the past 12 months",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "Share of freelancers U.S. 2020, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        22.0,
+        23.0,
+        38.0,
+        39.0,
+        54.0,
+        55.0
+      ],
+      "series_rows": [
+        [
+          18.0,
+          22.0,
+          23.0,
+          38.0,
+          39.0,
+          54.0,
+          55.0
+        ],
+        [
+          15.0,
+          7.0,
+          6.001,
+          18.0,
+          12.0
+        ]
+      ],
+      "source": "Edelman; Upwork; ID 531012",
+      "note": "United States; June 15 to July 7, 2020; 6,001 respondents; 18 years and older; adults who have done paid work in the past 12 months",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Distribution of freelancers in the U.S. in 2019, by racial background",
+      "unit": "",
+      "years": [],
+      "values": [
+        7.0,
+        3.0,
+        6.001,
+        18.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          7.0,
+          3.0,
+          6.001,
+          18.0,
+          12.0
+        ]
+      ],
+      "source": "Edelman; Upwork; ID 531027",
+      "note": "United States; June 7 to July 3, 2019; 6,001 respondents; 18 years and older; adults who have done paid work in the past 12 months",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Total number of hours worked per week by gig economy workers in the U.S. in 2018",
+      "unit": "",
+      "years": [],
+      "values": [
+        10.0,
+        11.0,
+        20.0,
+        21.0,
+        30.0,
+        31.0,
+        40.0,
+        41.0,
+        50.0,
+        51.0,
+        60.0,
+        61.0
+      ],
+      "series_rows": [
+        [
+          10.0,
+          11.0,
+          20.0,
+          21.0,
+          30.0,
+          31.0,
+          40.0,
+          41.0,
+          50.0,
+          51.0,
+          60.0,
+          61.0
+        ],
+        [
+          16.0,
+          19.0,
+          498.0,
+          18.0
+        ]
+      ],
+      "source": "Morning Consult; ID 916508",
+      "note": "United States; August 16 to 19, 2018; 498 respondents; 18 years and older; gig economy workers self-identified as such",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Main reasons for freelance work in the U.S. in 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.0,
+        7.0,
+        6.001,
+        18.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          7.0,
+          6.001,
+          18.0,
+          12.0
+        ]
+      ],
+      "source": "Edelman; Upwork; ID 530887",
+      "note": "United States; June 15 to July 7, 2020; 6,001 respondents; 18 years and older; adults who have done paid work in the past 12 months",
+      "needs_review": [],
+      "page": 17
+    },
+    {
+      "title": "Highest paying gig economy jobs in the U.S. in 2020, by earnings per hour",
+      "unit": "Hourly salary in U.S. dollars",
+      "years": [],
+      "values": [
+        27.84,
+        25.33,
+        25.23,
+        20.81,
+        17.1,
+        16.71,
+        15.76,
+        14.36,
+        14.0,
+        13.17,
+        11.29
+      ],
+      "series_rows": [
+        [
+          27.84,
+          25.33,
+          25.23,
+          20.81,
+          17.1,
+          16.71,
+          15.76,
+          14.36,
+          14.0,
+          13.17,
+          11.29
+        ]
+      ],
+      "source": "App Jobs; Indeed; PayScale; ID 1035454",
+      "note": "United States; 2020; *includes editors, translators, photographers, artists, copywriters, designers, and consultants.",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Salary increase requirements of U.S. freelancers to return to a traditional job, as of 2019",
+      "unit": "",
+      "years": [],
+      "values": [
+        7.0,
+        3.0,
+        6.001,
+        18.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          7.0,
+          3.0,
+          6.001,
+          18.0,
+          12.0
+        ]
+      ],
+      "source": "Edelman; Upwork; ID 685772",
+      "note": "United States; June 7 to July 3, 2019; 6,001 respondents; 18 years and older; adults who have done paid work in the last 12 months",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Leading reasons companies work with freelancers in the U.S. in 2021, by department",
+      "unit": "",
+      "years": [],
+      "values": [
+        200.0,
+        500.0,
+        3.0
+      ],
+      "series_rows": [
+        [
+          200.0,
+          500.0,
+          3.0
+        ]
+      ],
+      "source": "Stoke Talent; ID 1269532",
+      "note": "United States; 2021; 200 respondents; senior hiring managers in tech companies of 500 to 3,000 employees; source does not indicate why IT responses do",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "Reasons for starting gig work in the U.S., as of 2018, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        18.0,
+        1.491,
+        18.0,
+        514.0,
+        256.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          18.0,
+          1.491,
+          18.0,
+          514.0,
+          256.0
+        ]
+      ],
+      "source": "Harris Poll; Prudential Financial; ID 917776",
+      "note": "United States; January 5 to February 18, 2017; 1,491 respondents; 18 years and older; 514 full-time, 256 part-",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Most concerning issues for freelancers in the U.S. in 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.0,
+        7.0,
+        2.132,
+        18.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          7.0,
+          2.132,
+          18.0
+        ]
+      ],
+      "source": "Edelman; Upwork; ID 685639",
+      "note": "United States; June 15 to July 7, 2020; 2,132 respondents; 18 years and older; adults who have done paid work",
+      "needs_review": [],
+      "page": 28
+    },
+    {
+      "title": "Access to employer-based benefits in the gig economy in the U.S. in 2018, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        18.0,
+        1.491,
+        18.0,
+        514.0,
+        256.0
+      ],
+      "series_rows": [
+        [
+          30.0,
+          29.0,
+          28.0
+        ],
+        [
+          5.0,
+          18.0,
+          1.491,
+          18.0,
+          514.0,
+          256.0
+        ]
+      ],
+      "source": "Harris Poll; Prudential Financial; ID 917653",
+      "note": "United States; January 5 to February 18, 2017; 1,491 respondents; 18 years and older; 514 full-time, 256 part-time traditional",
+      "needs_review": true,
+      "page": 30
+    },
+    {
+      "title": "companies. In 2016, companies that employed contingent workers",
+      "unit": "",
+      "years": [],
+      "values": [
+        20.0,
+        27.0,
+        214.0
+      ],
+      "series_rows": [
+        [
+          20.0,
+          27.0,
+          214.0
+        ]
+      ],
+      "source": "EY; ID 1034416",
+      "note": "United States; April 20 to June 27, 2016; 214 respondents; supervisors or above in",
+      "needs_review": [],
+      "page": 31
+    }
+  ]
+}

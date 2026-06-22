@@ -1,0 +1,1293 @@
+{
+  "study": "study_id136780_fitness-industry-in-the-united-states",
+  "file": "research/statista/Health & Wellness/study_id136780_fitness-industry-in-the-united-states.pdf",
+  "charts": [
+    {
+      "title": "U.S. health club industry revenue 2000-2020",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019",
+        "2020"
+      ],
+      "values": [
+        17.6,
+        18.7,
+        19.1,
+        19.5,
+        20.3,
+        21.4,
+        21.8,
+        22.4
+      ],
+      "series_rows": [
+        [
+          11.6,
+          12.2,
+          13.1,
+          14.1,
+          14.8,
+          15.9
+        ],
+        [
+          17.6,
+          18.7,
+          19.1,
+          19.5,
+          20.3,
+          21.4,
+          21.8,
+          22.4
+        ],
+        [
+          24.2,
+          25.8,
+          27.6,
+          30.01,
+          35.03,
+          14.63,
+          4.0
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "United States; 2000 to 2020",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Fitness club industry value added in the U.S. 2021",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        19.98,
+        15.87,
+        5.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          19.98,
+          15.87,
+          5.0
+        ]
+      ],
+      "source": "Deloitte; IHRSA; Website (healthclubnews.org)",
+      "note": "United States; 2021",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Health & fitness club companies by revenue in the United States 2021",
+      "unit": "Revenue in million U.S. dollars",
+      "years": [],
+      "values": [
+        2.1,
+        1.32,
+        587.0,
+        185.0,
+        178.5,
+        155.1,
+        134.0,
+        77.96,
+        72.0,
+        52.0,
+        48.1,
+        38.12,
+        32.6,
+        31.0,
+        31.0
+      ],
+      "series_rows": [
+        [
+          160.0,
+          1.32,
+          2.1
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ],
+        [
+          2.1,
+          1.32,
+          587.0,
+          185.0,
+          178.5,
+          155.1,
+          134.0,
+          77.96,
+          72.0,
+          52.0,
+          48.1,
+          38.12,
+          32.6,
+          31.0,
+          31.0
+        ]
+      ],
+      "source": "Club Industry",
+      "note": "United States; 2021",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Health clubs ranked by number of facilities in the U.S. 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ],
+        [
+          2.254,
+          1.262,
+          1.965,
+          1.749
+        ]
+      ],
+      "source": "Club Industry",
+      "note": "United States; 2021; only health clubs solely operating in North America",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Number of U.S. health clubs & fitness centers 2008-2022",
+      "unit": "",
+      "years": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        30.022,
+        29.75,
+        29.89,
+        29.96,
+        30.5
+      ],
+      "series_rows": [
+        [
+          30.022,
+          29.75,
+          29.89,
+          29.96,
+          30.5
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "United States; 2008 to 2022",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "U.S. states with the most fitness centers 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        5.123,
+        3.285,
+        2.809,
+        2.263,
+        10.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          5.123,
+          3.285,
+          2.809,
+          2.263,
+          10.0
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "United States; 2021",
+      "needs_review": [],
+      "page": 10
+    },
+    {
+      "title": "Most used gyms in the U.S. as of April 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        29.0,
+        5.0,
+        2.157,
+        18.0
+      ],
+      "series_rows": [
+        [
+          29.0,
+          5.0,
+          2.157,
+          18.0
+        ]
+      ],
+      "source": "Bespoke Intel",
+      "note": "United States; March 29 to April 5, 2022; 2,157 respondents; 18 years and older; respondents who exercise and are a member of a gym",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Number of LA Fitness locations in the U.S. 2023, by state",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        92.0
+      ],
+      "series_rows": [
+        [
+          1984.0,
+          550.0,
+          92.0
+        ],
+        [
+          31.0,
+          28.0,
+          28.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          92.0
+        ]
+      ],
+      "source": "ScrapeHero",
+      "note": "United States; as of April 2023",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Fitness industry enterprises in the United States 2023",
+      "unit": "",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        88.627,
+        88.921,
+        92.555,
+        94.603,
+        95.609,
+        98.642,
+        100.977
+      ],
+      "series_rows": [
+        [
+          88.627,
+          88.921,
+          92.555,
+          94.603,
+          95.609,
+          98.642,
+          100.977
+        ],
+        [
+          113.003,
+          112.912,
+          115.047
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2023; * Forecast Read more",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Fitness club employment in the United States 2012-2023",
+      "unit": "",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        703.257,
+        726.085,
+        753.042
+      ],
+      "series_rows": [
+        [
+          703.257,
+          726.085,
+          753.042
+        ],
+        [
+          795.848,
+          827.25,
+          854.969
+        ],
+        [
+          911.75,
+          887.638,
+          899.275
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2022; *Forecast. Read more",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Key figures on personal trainers in the U.S. 2023",
+      "unit": "Market size (in billion U.S. dollars) 14",
+      "years": [],
+      "values": [
+        14.0,
+        839.0,
+        834.0
+      ],
+      "series_rows": [
+        [
+          14.0,
+          839.0,
+          834.0
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2023",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Hours per day spent on leisure and sports in the U.S. by employment status 2022",
+      "unit": "",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        4.3,
+        4.21,
+        4.224,
+        8.0,
+        3.99,
+        3.95,
+        4.09,
+        4.02,
+        4.05,
+        4.05,
+        4.0,
+        3.92,
+        4.03,
+        3.84
+      ],
+      "series_rows": [
+        [
+          4.24,
+          4.22,
+          4.18,
+          4.34,
+          4.21,
+          4.26,
+          4.18,
+          4.16,
+          4.2,
+          4.22,
+          4.02
+        ],
+        [
+          4.3,
+          4.21,
+          4.224,
+          8.0,
+          3.99,
+          3.95,
+          4.09,
+          4.02,
+          4.05,
+          4.05,
+          4.0,
+          3.92,
+          4.03,
+          3.84
+        ],
+        [
+          4.16,
+          4.01,
+          4.05
+        ],
+        [
+          4.8,
+          4.97,
+          4.95,
+          5.11,
+          4.87,
+          5.03
+        ],
+        [
+          4.66,
+          4.78,
+          5.01,
+          4.89
+        ],
+        [
+          6.89,
+          6.68,
+          6.85,
+          6.97,
+          6.87,
+          6.93,
+          6.86,
+          6.75,
+          6.97,
+          7.06
+        ]
+      ],
+      "source": "Bureau of Labor Statistics",
+      "note": "United States; 2009 to 2022; Approx. 8,100 (2022); 25 years and older",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Most popular sports activities in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        2262.0,
+        6.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          2262.0,
+          6.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 22626 respondents; 18-64 years; respondents who do sports or exercise at least occasionally",
+      "needs_review": [],
+      "page": 22
+    },
+    {
+      "title": "Most popular outdoor activities in the U.S. 2022",
+      "unit": "Number of participants in millions",
+      "years": [],
+      "values": [
+        59.6,
+        56.9,
+        54.7,
+        54.5,
+        51.4
+      ],
+      "series_rows": [
+        [
+          59.6,
+          56.9,
+          54.7,
+          54.5,
+          51.4
+        ]
+      ],
+      "source": "Outdoor Foundation; Outdoor Industry Association; SFIA; Sports Marketing Surveys USA",
+      "note": "United States; 6 years and older",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Participation rate in outdoor sports 2021, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        1945.0,
+        -1964.0,
+        1965.0,
+        -1979.0,
+        1980.0,
+        -1999.0
+      ],
+      "series_rows": [
+        [
+          1945.0,
+          -1964.0,
+          1965.0,
+          -1979.0,
+          1980.0,
+          -1999.0
+        ]
+      ],
+      "source": "Physical Activity Council",
+      "note": "United States; 2021; 18,000 respondents; six years and older",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "(untitled chart)",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.0,
+        16.0,
+        7316.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          16.0,
+          7316.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; four waves from 03 January 2022 to 16 December 2022; 7316 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Revenue of the sports equipment industry in the U.S. 2014-2027",
+      "unit": "Description: The revenue in the sports equipment segment of the toys & hobby market in the United States was forecast to continuously increase between 2023 and 2027 by 3.6 billion U.S. dollars (+19.49 percent). The revenue is estimated to amount to 22.11 billion",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        12.88,
+        13.28,
+        13.74,
+        14.33,
+        14.97,
+        15.59,
+        15.55,
+        16.26
+      ],
+      "series_rows": [
+        [
+          3.6,
+          19.49,
+          22.11
+        ],
+        [
+          12.88,
+          13.28,
+          13.74,
+          14.33,
+          14.97,
+          15.59,
+          15.55,
+          16.26
+        ],
+        [
+          17.44,
+          18.47,
+          19.47,
+          20.35,
+          21.23,
+          22.11,
+          27.0
+        ]
+      ],
+      "source": "Statista; Statista Consumer Market Insights",
+      "note": "United States; 2014 to 2027",
+      "needs_review": true,
+      "page": 27
+    },
+    {
+      "title": "Wholesale sales (consumer segment) of home gyms in the U.S. 2007-2022",
+      "unit": "Sales in million U.S. dollars",
+      "years": [
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        450.0,
+        500.0,
+        286.0,
+        232.0
+      ],
+      "series_rows": [
+        [
+          199.0,
+          199.0,
+          194.0,
+          190.0,
+          178.0
+        ],
+        [
+          215.0,
+          211.0,
+          210.0,
+          204.0,
+          209.0,
+          221.0
+        ],
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          450.0,
+          500.0,
+          286.0,
+          232.0
+        ],
+        [
+          384.0,
+          466.0,
+          424.0,
+          28.0
+        ]
+      ],
+      "source": "SFIA",
+      "note": "United States; 2007 to 2022",
+      "needs_review": true,
+      "page": 28
+    },
+    {
+      "title": "Most common home fitness equipment in the U.S. as of April 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        29.0,
+        5.0,
+        9.706,
+        18.0
+      ],
+      "series_rows": [
+        [
+          29.0,
+          5.0,
+          9.706,
+          18.0
+        ]
+      ],
+      "source": "Bespoke Intel",
+      "note": "United States; March 29 to April 5, 2022; 9,706 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Most common brand of treadmill in the United States as of April 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        29.0,
+        5.0,
+        2.494,
+        18.0
+      ],
+      "series_rows": [
+        [
+          29.0,
+          5.0,
+          2.494,
+          18.0
+        ]
+      ],
+      "source": "Bespoke Intel",
+      "note": "United States; March 29 to April 5, 2022; 2,494 respondents; 18 years and older; respondents who own a treadmill",
+      "needs_review": [],
+      "page": 31
+    },
+    {
+      "title": "Most common reasons for not owning fitness gear at home in the U.S. as of April 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        29.0,
+        5.0,
+        3.578,
+        18.0
+      ],
+      "series_rows": [
+        [
+          29.0,
+          5.0,
+          3.578,
+          18.0
+        ]
+      ],
+      "source": "Bespoke Intel",
+      "note": "United States; March 29 to April 5, 2022; 3,578 respondents; 18 years and older; respondents who do not own fitness equipment in their home",
+      "needs_review": [],
+      "page": 32
+    },
+    {
+      "title": "Most downloaded health and fitness apps U.S. 2022",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        18.3,
+        8.84,
+        8.8,
+        7.9,
+        7.2,
+        6.64,
+        6.61,
+        6.2,
+        6.0,
+        5.9
+      ],
+      "series_rows": [
+        [
+          18.3,
+          8.84,
+          8.8,
+          7.9,
+          7.2,
+          6.64,
+          6.61,
+          6.2,
+          6.0,
+          5.9
+        ]
+      ],
+      "source": "Apptopia",
+      "note": "2022",
+      "needs_review": [],
+      "page": 34
+    },
+    {
+      "title": "U.S. leading health and fitness apps search keywords 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        63.0,
+        60.0,
+        47.0,
+        46.0,
+        43.0,
+        40.0,
+        39.0,
+        38.0,
+        35.0,
+        28.0
+      ],
+      "series_rows": [
+        [
+          63.0,
+          60.0,
+          47.0,
+          46.0,
+          43.0,
+          40.0,
+          39.0,
+          38.0,
+          35.0,
+          28.0
+        ]
+      ],
+      "source": "AppTweak",
+      "note": "United States; January to October 2022",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Wearables and connected fitness equipment market size in the U.S. 2026",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        5.25,
+        2.0,
+        5.55,
+        5.0
+      ],
+      "series_rows": [
+        [
+          17.2,
+          23.0,
+          300.0
+        ],
+        [
+          5.25,
+          2.0,
+          5.55,
+          5.0
+        ]
+      ],
+      "source": "Activate",
+      "note": "United States; 2019 to 2022",
+      "needs_review": true,
+      "page": 38
+    },
+    {
+      "title": "Revenue forecast for the eServices market by segment in United States until 2030",
+      "unit": "Online revenue in million U.S. dollars",
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030"
+      ],
+      "values": [
+        33.044,
+        1433.044,
+        14.0,
+        35.281,
+        8935.281,
+        89.0,
+        36.763,
+        4136.763,
+        41.0,
+        37.677,
+        2337.677,
+        23.0,
+        38.298,
+        1938.298,
+        19.0,
+        40.747,
+        2740.747,
+        27.0,
+        41.0,
+        8241.0,
+        82.0,
+        41.166,
+        1141.166,
+        11.0
+      ],
+      "series_rows": [
+        [
+          33.044,
+          1433.044,
+          14.0,
+          35.281,
+          8935.281,
+          89.0,
+          36.763,
+          4136.763,
+          41.0,
+          37.677,
+          2337.677,
+          23.0,
+          38.298,
+          1938.298,
+          19.0,
+          40.747,
+          2740.747,
+          27.0,
+          41.0,
+          8241.0,
+          82.0,
+          41.166,
+          1141.166,
+          11.0
+        ],
+        [
+          5.452,
+          315.452,
+          31.0
+        ],
+        [
+          5.642,
+          625.642,
+          622.476,
+          92.476,
+          9.0
+        ],
+        [
+          2.547,
+          232.547,
+          23.0
+        ],
+        [
+          2.602,
+          692.602,
+          69.0,
+          2.645,
+          852.645,
+          85.0,
+          2.68,
+          432.68,
+          43.0
+        ],
+        [
+          2.398,
+          832.398,
+          83.0,
+          2.416,
+          612.416,
+          61.0,
+          2.43,
+          372.43,
+          37.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "United States; 2023 to 2030",
+      "needs_review": true,
+      "page": 41
+    },
+    {
+      "title": "Online revenue forecast for the eServices Fitness market in United States until 2024",
+      "unit": "Description: This statistic presents a forecast of the online revenue in the eServices Fitness market in United States until the year 2024. According to the Digital Market Outlook, the online revenue of the eServices Fitness segment Apps in United States is expected to",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        4.056,
+        14.056,
+        1.0,
+        3.84,
+        93.84,
+        9.0,
+        3.757,
+        23.757,
+        2.0,
+        3.769,
+        83.769,
+        8.0,
+        3.843,
+        83.843,
+        8.0
+      ],
+      "series_rows": [
+        [
+          2.821,
+          42.821,
+          4.0,
+          2.939,
+          52.939,
+          5.0,
+          3.095,
+          73.095,
+          7.0
+        ],
+        [
+          4.056,
+          14.056,
+          1.0,
+          3.84,
+          93.84,
+          9.0,
+          3.757,
+          23.757,
+          2.0,
+          3.769,
+          83.769,
+          8.0,
+          3.843,
+          83.843,
+          8.0
+        ],
+        [
+          759.8759,
+          8.0,
+          861.6861,
+          6.0
+        ],
+        [
+          1.268,
+          91.268,
+          9.0,
+          1.413,
+          11.413,
+          1.0,
+          1.552,
+          71.552,
+          7.0,
+          1.682,
+          51.682,
+          5.0,
+          1.798,
+          91.798,
+          9.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "United States; 2019",
+      "needs_review": true,
+      "page": 42
+    },
+    {
+      "title": "Number of users in the eServices Fitness market in United States until 2024",
+      "unit": "Number of online users in million",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        25.0,
+        35.0,
+        45.0,
+        55.0,
+        65.0,
+        75.0,
+        85.0,
+        95.0,
+        105.0,
+        115.0,
+        125.0
+      ],
+      "series_rows": [
+        [
+          37.8,
+          38.4,
+          38.8
+        ],
+        [
+          43.4,
+          40.6,
+          39.6,
+          39.6
+        ],
+        [
+          25.0,
+          35.0,
+          45.0,
+          55.0,
+          65.0,
+          75.0,
+          85.0,
+          95.0,
+          105.0,
+          115.0,
+          125.0
+        ],
+        [
+          77.3,
+          95.3,
+          102.0,
+          108.5,
+          114.3,
+          119.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "United States; 2019",
+      "needs_review": true,
+      "page": 43
+    },
+    {
+      "title": "Penetration rate for the eServices Fitness market in United States until 2024",
+      "unit": "Online penetration rate in percent",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0
+      ],
+      "series_rows": [
+        [
+          11.6,
+          11.7,
+          11.8
+        ],
+        [
+          13.0,
+          12.1,
+          11.8,
+          11.7
+        ],
+        [
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0
+        ],
+        [
+          23.5,
+          28.8,
+          30.6,
+          32.4,
+          33.9,
+          35.1
+        ]
+      ],
+      "source": "Statista",
+      "note": "United States; 2019",
+      "needs_review": true,
+      "page": 44
+    }
+  ]
+}

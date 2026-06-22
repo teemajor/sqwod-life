@@ -1,0 +1,1219 @@
+{
+  "study": "study_id15449_social-media-marketing-worldwide",
+  "file": "research/statista/Fitness Marketing/study_id15449_social-media-marketing-worldwide.pdf",
+  "charts": [
+    {
+      "title": "Social media ad spend worldwide 2019-2029",
+      "unit": "Spending in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        97.5,
+        132.77
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          97.5,
+          132.77
+        ],
+        [
+          211.82,
+          234.14,
+          256.46,
+          278.78,
+          301.09,
+          323.41,
+          345.73,
+          4.0
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "2019 to 2029; Includes paid advertising appearing within social networks, social network games and social network applications; excludes spending by marketers that goes toward developing or maintaining a social network presence",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Social network ad spending per user worldwide 2020-2028, by device",
+      "unit": "Spending in U.S. dollars",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        27.756,
+        464.262,
+        334.855,
+        489.316,
+        4634.746,
+        773.963,
+        5936.783,
+        907.845,
+        4138.251,
+        567.808,
+        1439.512,
+        89.677,
+        240.675,
+        899.027,
+        4241.885,
+        433.266,
+        643.094,
+        967.504,
+        71.0
+      ],
+      "series_rows": [
+        [
+          212.684,
+          584.054,
+          29.0
+        ],
+        [
+          105.014,
+          358.683,
+          95.0
+        ],
+        [
+          146.064,
+          252.572,
+          24.0
+        ],
+        [
+          154.751,
+          447.047,
+          88.0
+        ],
+        [
+          170.296,
+          207.732,
+          51.0
+        ],
+        [
+          181.547,
+          357.55,
+          5.0
+        ],
+        [
+          190.536,
+          926.058,
+          9419.0,
+          8.172,
+          888.671,
+          5920.0,
+          5.428,
+          736.362,
+          9421.0,
+          2.684,
+          584.054,
+          29.0
+        ],
+        [
+          27.756,
+          464.262,
+          334.855,
+          489.316,
+          4634.746,
+          773.963,
+          5936.783,
+          907.845,
+          4138.251,
+          567.808,
+          1439.512,
+          89.677,
+          240.675,
+          899.027,
+          4241.885,
+          433.266,
+          643.094,
+          967.504,
+          71.0
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "2020 to 2028; Includes paid advertising appearing within social networks, social network games and social network applications; excludes spending by marketers that goes toward developing or maintaining a social network presence",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Largest social media advertising markets worldwide 2022",
+      "unit": "Spending in million U.S. dollars",
+      "years": [],
+      "values": [
+        20.0,
+        66.6,
+        64.6
+      ],
+      "series_rows": [
+        [
+          20.0,
+          66.6,
+          64.6
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "Worldwide; Jan 1st to Dec 31st 2022",
+      "needs_review": [],
+      "page": 6
+    },
+    {
+      "title": "Social media ad spend growth worldwide 2021-2022",
+      "unit": "",
+      "years": [
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.0,
+        1.17,
+        1.35,
+        1.01,
+        0.96,
+        7.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.0,
+          1.17,
+          1.35,
+          1.01,
+          0.96,
+          7.0
+        ]
+      ],
+      "source": "Skai",
+      "note": "Worldwide; Q2 2022 to Q2 2023",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Growth of digital media budgets worldwide 2024, by format",
+      "unit": "",
+      "years": [],
+      "values": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          10.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          -10.0,
+          -10.0
+        ]
+      ],
+      "source": "Ebiquity; Statista; World Federation of Advertisers",
+      "note": "Worldwide; as of November 2023",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "Growth of social media ad revenue worldwide 2023, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        17.0,
+        16.0,
+        15.0
+      ],
+      "series_rows": [
+        [
+          17.0,
+          16.0,
+          15.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "Worldwide; August 2023; forecast",
+      "needs_review": [],
+      "page": 9
+    },
+    {
+      "title": "Social media analytics market value worldwide 2021-2028",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        7.01,
+        8.46,
+        10.23,
+        12.35,
+        14.92,
+        18.02,
+        21.77,
+        26.3,
+        10.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          7.01,
+          8.46,
+          10.23,
+          12.35,
+          14.92,
+          18.02,
+          21.77,
+          26.3,
+          10.0
+        ]
+      ],
+      "source": "Statista; The Insight Partners",
+      "note": "Worldwide; 2021; * Forecast. An exponential development of the values was assumed to estimate the annual values between 2021 and 2028, which were provided by the source. Read more",
+      "needs_review": [],
+      "page": 10
+    },
+    {
+      "title": "Future use of social media among marketers worldwide 2023, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        66.0,
+        43.0,
+        45.0
+      ],
+      "series_rows": [
+        [
+          66.0,
+          43.0,
+          45.0
+        ]
+      ],
+      "source": "Social Media Examiner",
+      "note": "Worldwide; January 2023; 2,133 marketers",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Future use of video among social media marketers worldwide 2023, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        56.0,
+        12.0,
+        59.0
+      ],
+      "series_rows": [
+        [
+          56.0,
+          12.0,
+          59.0
+        ]
+      ],
+      "source": "Social Media Examiner",
+      "note": "Worldwide; January 2023; 2,133 respondents; among marketers",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Areas in which marketers used automation the most worldwide 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        58.0,
+        49.0,
+        33.0
+      ],
+      "series_rows": [
+        [
+          58.0,
+          49.0,
+          33.0
+        ]
+      ],
+      "source": "Ascend2",
+      "note": "Worldwide; February 2024; 387 respondents; among marketing decision-makers",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Leading digital consumer engagement tactics worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        30.0,
+        8.0,
+        6.0,
+        2.0,
+        2.0,
+        2.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          30.0,
+          8.0,
+          6.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "Salesforce Research",
+      "note": "Worldwide; June 30 to August 8, 2022; 6,000 respondents; among full-time marketing leaders from B2B, B2C, and B2B2C companies",
+      "needs_review": [],
+      "page": 17
+    },
+    {
+      "title": "Benefits of social media marketing worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.133,
+        55.0,
+        5.0,
+        5.0,
+        4.0,
+        3.0,
+        43.0,
+        63.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          2.133,
+          55.0,
+          5.0,
+          5.0,
+          4.0,
+          3.0,
+          43.0,
+          63.0,
+          2.0
+        ]
+      ],
+      "source": "Frankwatching; Social Media Examiner",
+      "note": "Worldwide; January 2022; 2,133 respondents; 55% of the participants live in the US, 5% in the UK, 5% in Canada, 4% in India and 3% in Australia. For 43% of marketers surveyed, social media is their primary responsibility. And 63% of markete",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Most effective ad formats for mobile app user acquisition worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        2.0,
+        142.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          2.0,
+          142.0
+        ]
+      ],
+      "source": "Digital Turbine",
+      "note": "Worldwide; Q1 and Q2 2022; 142 respondents; among app developers, publishers, and marketers",
+      "needs_review": [],
+      "page": 20
+    },
+    {
+      "title": "Volume of social media ad impressions worldwide 2022-2023",
+      "unit": "",
+      "years": [
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      ],
+      "source": "Skai",
+      "note": "Worldwide",
+      "needs_review": false,
+      "page": 21
+    },
+    {
+      "title": "Volume of social media ad clicks worldwide 2022-2023",
+      "unit": "",
+      "years": [
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        1.0,
+        1.28,
+        1.54,
+        1.26,
+        1.35,
+        22.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          1.0,
+          1.28,
+          1.54,
+          1.26,
+          1.35,
+          22.0
+        ]
+      ],
+      "source": "Skai",
+      "note": "Worldwide",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Social media ads CTR worldwide 2022-2023",
+      "unit": "",
+      "years": [
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      ],
+      "source": "Skai",
+      "note": "Worldwide; Q4 2022 to Q4 2023",
+      "needs_review": false,
+      "page": 23
+    },
+    {
+      "title": "Social media ads CPM worldwide 2022-2023",
+      "unit": "CPM in U.S. dollars",
+      "years": [
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          5.42,
+          5.34,
+          5.46
+        ]
+      ],
+      "source": "Skai",
+      "note": "Worldwide; Q4 2022 to Q4 2023",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Most valuable media & entertainment brands worldwide 2023",
+      "unit": "Brand value in billion U.S. dollars",
+      "years": [],
+      "values": [
+        537.19,
+        93.02,
+        58.95,
+        53.05,
+        53.01,
+        49.76,
+        48.53,
+        46.97,
+        44.35,
+        19.45
+      ],
+      "series_rows": [
+        [
+          537.19,
+          93.02,
+          58.95,
+          53.05,
+          53.01,
+          49.76,
+          48.53,
+          46.97,
+          44.35,
+          19.45
+        ]
+      ],
+      "source": "Kantar",
+      "note": "Worldwide; 2023",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "Digital advertising revenue for major internet companies 2023-2027",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        340.18,
+        127.27,
+        70.82,
+        53.95,
+        16.71,
+        16.33,
+        11.51,
+        16.25,
+        13.73,
+        10.35,
+        8.8,
+        2.7,
+        5.13,
+        2.24,
+        250.26,
+        118.96,
+        44.35,
+        18.04,
+        13.18,
+        12.54,
+        11.51,
+        10.99,
+        6.51,
+        5.91,
+        5.36,
+        3.31,
+        3.27,
+        1.77
+      ],
+      "series_rows": [
+        [
+          340.18,
+          127.27,
+          70.82,
+          53.95,
+          16.71,
+          16.33,
+          11.51,
+          16.25,
+          13.73,
+          10.35,
+          8.8,
+          2.7,
+          5.13,
+          2.24,
+          250.26,
+          118.96,
+          44.35,
+          18.04,
+          13.18,
+          12.54,
+          11.51,
+          10.99,
+          6.51,
+          5.91,
+          5.36,
+          3.31,
+          3.27,
+          1.77
+        ]
+      ],
+      "source": "Statista; Various sources",
+      "note": "Worldwide; August 2023; forecast",
+      "needs_review": [],
+      "page": 28
+    },
+    {
+      "title": "Social media platforms with highest ROI worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.0,
+        2.0,
+        29.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          2.0,
+          29.0
+        ],
+        [
+          1.46,
+          2.0,
+          2.0
+        ],
+        [
+          6.0,
+          6.0,
+          5.0
+        ]
+      ],
+      "source": "HubSpot",
+      "note": "Worldwide; as of September 2023; 1,460 respondents; among global marketers from across B2B and B2C companies",
+      "needs_review": true,
+      "page": 29
+    },
+    {
+      "title": "Social media revenue of selected companies 2022",
+      "unit": "Revenue in million U.S. dollars",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        116.0,
+        117.0,
+        13.0
+      ],
+      "series_rows": [
+        [
+          116.0,
+          117.0,
+          13.0
+        ]
+      ],
+      "source": "Facebook; LinkedIn; Snap Inc.; Twitter; Yelp",
+      "note": "Worldwide; 2014 to 2022; *In December 2016, Microsoft finalized its $26 billion acquisition of LinkedIn. LinkedIn results are now part of Microsoft's Product Revenue and Service and Other Revenue segment. **In 2021 Facebook Inc [...] Read m",
+      "needs_review": true,
+      "page": 30
+    },
+    {
+      "title": "Leading social commerce platforms worldwide 2023, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        60.0,
+        39.0,
+        42.0,
+        47.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          19.293,
+          18.0
+        ],
+        [
+          60.0,
+          39.0,
+          42.0,
+          47.0
+        ],
+        [
+          39.0,
+          42.0,
+          23.0,
+          27.0
+        ],
+        [
+          53.0,
+          44.0,
+          35.0,
+          36.0
+        ],
+        [
+          64.0,
+          32.0,
+          14.0,
+          32.0
+        ],
+        [
+          47.0,
+          41.0,
+          28.0,
+          30.0
+        ],
+        [
+          53.0,
+          43.0,
+          35.0,
+          52.0
+        ],
+        [
+          56.0,
+          48.0,
+          42.0,
+          56.0
+        ],
+        [
+          59.0,
+          41.0,
+          20.0,
+          38.0
+        ],
+        [
+          46.0,
+          47.0,
+          23.0,
+          35.0
+        ],
+        [
+          47.0,
+          48.0,
+          32.0,
+          37.0
+        ],
+        [
+          58.0,
+          42.0,
+          42.0,
+          37.0
+        ],
+        [
+          55.0,
+          47.0,
+          32.0,
+          30.0
+        ],
+        [
+          50.0,
+          37.0,
+          35.0,
+          31.0
+        ],
+        [
+          54.0,
+          57.0,
+          16.0,
+          29.0
+        ]
+      ],
+      "source": "Klarna; Nepa",
+      "note": "Worldwide; Q2 2023; 19,293 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Number of global social network users 2017-2027",
+      "unit": "Number of users in billions",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        2.73,
+        3.1,
+        3.51,
+        3.9,
+        4.26,
+        4.59,
+        4.89,
+        5.17,
+        5.42
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          2.73,
+          3.1,
+          3.51,
+          3.9,
+          4.26,
+          4.59,
+          4.89,
+          5.17,
+          5.42
+        ]
+      ],
+      "source": "Statista",
+      "note": "Worldwide; 2017 to 2022; *Forecast Internet users who use a social network site via any device at least once per month Read more",
+      "needs_review": true,
+      "page": 33
+    },
+    {
+      "title": "Number of worldwide social media users 2023, by region",
+      "unit": "Number of active social media users in millions",
+      "years": [],
+      "values": [
+        961.81,
+        819.29,
+        681.56,
+        527.23,
+        447.82,
+        427.05,
+        316.78,
+        271.29,
+        191.31,
+        189.28,
+        173.9,
+        166.18,
+        105.91
+      ],
+      "series_rows": [
+        [
+          1.2,
+          961.0,
+          819.0,
+          681.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        [
+          961.81,
+          819.29,
+          681.56,
+          527.23,
+          447.82,
+          427.05,
+          316.78,
+          271.29,
+          191.31,
+          189.28,
+          173.9,
+          166.18,
+          105.91
+        ]
+      ],
+      "source": "Statista",
+      "note": "Worldwide; January 2023",
+      "needs_review": true,
+      "page": 34
+    },
+    {
+      "title": "Global social networks ranked by number of users 2024",
+      "unit": "Number of active users in millions",
+      "years": [],
+      "values": [
+        3.065,
+        2.504,
+        2.0,
+        2.0,
+        1.582,
+        1.343,
+        1.01,
+        900.0,
+        800.0,
+        755.0,
+        700.0,
+        611.0,
+        598.0,
+        554.0,
+        498.0
+      ],
+      "series_rows": [
+        [
+          3.065,
+          2.504,
+          2.0,
+          2.0,
+          1.582,
+          1.343,
+          1.01,
+          900.0,
+          800.0,
+          755.0,
+          700.0,
+          611.0,
+          598.0,
+          554.0,
+          498.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Worldwide; April 2024; social networks and messenger/chat app/voip included; figures for TikTok does not include Douyin",
+      "needs_review": [],
+      "page": 35
+    },
+    {
+      "title": "Leading social media usage reasons worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.0,
+        16.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          16.0,
+          64.0
+        ]
+      ],
+      "source": "DataReportal; GWI; Meltwater; We Are Social",
+      "note": "Worldwide; Q3 2023; 16 to 64 years; internet users",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Main sources for online shopping inspiration worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.0,
+        20.0,
+        31.647
+      ],
+      "series_rows": [
+        [
+          6.0,
+          20.0,
+          31.647
+        ]
+      ],
+      "source": "Censuswide; Wunderman Thompson Commerce",
+      "note": "Worldwide; April 6 to 20, 2023; 31,647 respondents; consumers who shop online at least once a month",
+      "needs_review": [],
+      "page": 37
+    },
+    {
+      "title": "Leading channels for product search worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.0,
+        20.0,
+        31.647
+      ],
+      "series_rows": [
+        [
+          6.0,
+          20.0,
+          31.647
+        ]
+      ],
+      "source": "Censuswide; Wunderman Thompson Commerce",
+      "note": "Worldwide; April 6 to 20, 2023; 31,647 respondents; consumers who shop online at least once a month",
+      "needs_review": [],
+      "page": 38
+    },
+    {
+      "title": "Consumers who bought an item after seeing it on social media 2023, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        58.0,
+        44.0,
+        40.0
+      ],
+      "series_rows": [
+        [
+          58.0,
+          44.0,
+          40.0
+        ],
+        [
+          2.0,
+          19.293,
+          18.0
+        ]
+      ],
+      "source": "Klarna; Nepa",
+      "note": "Worldwide; Q2 2023; 19,293 respondents; 18 years and older; purchases made in the previous month",
+      "needs_review": true,
+      "page": 39
+    },
+    {
+      "title": "Millennials' trust on product/brand recommendation made by influencers worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.7,
+        27.0,
+        -40.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          50.0,
+          10.0,
+          36.0
+        ],
+        [
+          3.7,
+          27.0,
+          -40.0,
+          12.0
+        ]
+      ],
+      "source": "GWI",
+      "note": "Worldwide; March 2023; 3,700 respondents; 27-40 years; in 12 markets",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Social media as a fashion information source for luxury consumers worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        65.0,
+        24.0,
+        38.0
+      ],
+      "series_rows": [
+        [
+          65.0,
+          24.0,
+          38.0
+        ]
+      ],
+      "source": "Vogue Business",
+      "note": "Worldwide; April and May 2022; 5,647 respondents",
+      "needs_review": [],
+      "page": 41
+    }
+  ]
+}

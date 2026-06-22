@@ -1,0 +1,1739 @@
+{
+  "study": "study_id39583_fitness-industry-in-the-united-kingdom-uk-statista-dossier",
+  "file": "research/statista/Health & Wellness/study_id39583_fitness-industry-in-the-united-kingdom-uk-statista-dossier.pdf",
+  "charts": [
+    {
+      "title": "United Kingdom: revenue of the fitness market 2015-2021",
+      "unit": "of recovery, with revenue in the market reaching 3.56 billion euros. Read more",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        5.51,
+        2.65,
+        3.56,
+        5.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          5.51,
+          2.65,
+          3.56,
+          5.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "United Kingdom; 2019 to 2021",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Gym, health & fitness club industry market size in the United Kingdom (UK) 2012-2022",
+      "unit": "Market size in million GBP",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        1.494,
+        8.0,
+        1.553,
+        2.0,
+        1.607,
+        8.0
+      ],
+      "series_rows": [
+        [
+          1.494,
+          8.0,
+          1.553,
+          2.0,
+          1.607,
+          8.0
+        ],
+        [
+          1.923,
+          3.0,
+          1.886,
+          8.0
+        ],
+        [
+          2.2,
+          6.0,
+          2.251,
+          3.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United Kingdom; 2012 to 2022; * Forecast Read more",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Personal training market size in the United Kingdom (UK) 2011-2022",
+      "unit": "Market size in million British poinds",
+      "years": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        695.0,
+        701.5,
+        707.1,
+        707.6,
+        722.6
+      ],
+      "series_rows": [
+        [
+          583.8,
+          601.8,
+          606.5
+        ],
+        [
+          695.0,
+          701.5,
+          707.1,
+          707.6,
+          722.6
+        ],
+        [
+          538.6,
+          635.5,
+          7.0
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United Kingdom; 2011 to 2021; *Forecast Read more",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Gross value added (GVA) of fitness facilities in the United Kingdom (UK) 2008-2021",
+      "unit": "GVA in million GBP",
+      "years": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        350.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          350.0
+        ],
+        [
+          1.104,
+          1.166,
+          1.276,
+          634.0,
+          818.0,
+          8.0
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; 2008 to 2021",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "Number of gyms in the United Kingdom (UK) 2011-2022",
+      "unit": "",
+      "years": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        1.833,
+        2.024,
+        2.304,
+        2.642,
+        3.083,
+        3.419,
+        3.674,
+        3.06,
+        3.72,
+        10.0
+      ],
+      "series_rows": [
+        [
+          1.54,
+          1.642,
+          1.595
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0
+        ],
+        [
+          1.833,
+          2.024,
+          2.304,
+          2.642,
+          3.083,
+          3.419,
+          3.674,
+          3.06,
+          3.72,
+          10.0
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United Kingdom; 2011 to 2021; *Forecast Read more",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Number of gym members in the UK 2019-2021",
+      "unit": "Number of memberships in millions",
+      "years": [],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        10.39,
+        8.28,
+        9.57,
+        11.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          10.39,
+          8.28,
+          9.57,
+          11.0
+        ]
+      ],
+      "source": "Deloitte; IHRSA",
+      "note": "United Kingdom; 2019 to 2021",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "UK: number of gyms in the largest low-cost health and fitness groups 2013-2019",
+      "unit": "",
+      "years": [
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        196.0,
+        257.0,
+        319.0,
+        450.0,
+        515.0,
+        598.0,
+        727.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          196.0,
+          257.0,
+          319.0,
+          450.0,
+          515.0,
+          598.0,
+          727.0,
+          12.0
+        ]
+      ],
+      "source": "The Gym Group",
+      "note": "United Kingdom; 2013 to 2019",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Number of The Gym Group locations in the UK 2012-2023",
+      "unit": "",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        1751.0,
+        75.0,
+        1831.0,
+        83.0
+      ],
+      "series_rows": [
+        [
+          24.0,
+          7.0,
+          230.0
+        ],
+        [
+          3232.0,
+          4040.0,
+          5555.0
+        ],
+        [
+          1751.0,
+          75.0,
+          1831.0,
+          83.0
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "United Kingdom; 2012 to 2023",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Number of Fitness First locations in the UK 2023, by city",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          23.0
+        ]
+      ],
+      "source": "ScrapeHero",
+      "note": "United Kingdom; as of May 2023",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Number of Anytime Fitness locations in the UK 2023, by city",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        20.0,
+        3.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          20.0,
+          3.0
+        ]
+      ],
+      "source": "ScrapeHero",
+      "note": "United Kingdom; as of May 2023",
+      "needs_review": true,
+      "page": 15
+    },
+    {
+      "title": "Number of David Lloyd locations in the UK 2023, by city",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        7.0,
+        5.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          7.0,
+          5.0
+        ]
+      ],
+      "source": "ScrapeHero",
+      "note": "United Kingdom; as of April 2023",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Number of fitness facilities operating in the UK 2015-2020, by employees",
+      "unit": "",
+      "years": [
+        "2015",
+        "2016",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "values": [
+        0.0,
+        -4.0,
+        5.0,
+        -9.0,
+        10.0,
+        -19.0,
+        20.0,
+        -49.0,
+        50.0,
+        -99.0,
+        100.0,
+        -249.0,
+        250.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          -4.0,
+          5.0,
+          -9.0,
+          10.0,
+          -19.0,
+          20.0,
+          -49.0,
+          50.0,
+          -99.0,
+          100.0,
+          -249.0,
+          250.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; 2015 to 2020; VAT and/or PAYE based enterprises",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Number of people working in sports and fitness occupations in the UK 2021-2023",
+      "unit": "",
+      "years": [
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        200.0,
+        152.5,
+        165.9
+      ],
+      "series_rows": [
+        [
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          174.4,
+          169.9,
+          167.5
+        ],
+        [
+          155.9,
+          161.5,
+          165.3
+        ],
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          200.0,
+          152.5,
+          165.9
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; Q4 2021 to Q4 2023",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Number of fitness instructors in the UK 2021-2023",
+      "unit": "",
+      "years": [
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        67.2
+      ],
+      "series_rows": [
+        [
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          67.2
+        ],
+        [
+          71.9,
+          68.3,
+          60.9,
+          57.9,
+          20.0
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; Q4 2021 to Q2 2023",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Number of personal trainers in the United Kingdom (UK) 2011-2022",
+      "unit": "",
+      "years": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        15.197
+      ],
+      "series_rows": [
+        [
+          20.624,
+          21.304,
+          21.879,
+          22.361,
+          23.143,
+          22.91
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          15.197
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United Kingdom; 2011 to 2021; *Forecast Read more",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Gender distribution of sports and fitness occupations by employment status 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        87.8,
+        61.5,
+        26.3,
+        80.1,
+        32.3,
+        47.8,
+        168.1,
+        93.7,
+        74.3
+      ],
+      "series_rows": [
+        [
+          168.0,
+          80.0,
+          87.8
+        ],
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          87.8,
+          61.5,
+          26.3,
+          80.1,
+          32.3,
+          47.8,
+          168.1,
+          93.7,
+          74.3
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; October 2020 to September 2021; Currently in employment",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Fitness class participation England 2015-2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.336,
+        100.0,
+        6.51,
+        100.0,
+        6.345,
+        600.0,
+        6.131,
+        300.0
+      ],
+      "series_rows": [
+        [
+          6.336,
+          100.0,
+          6.51,
+          100.0,
+          6.345,
+          600.0,
+          6.131,
+          300.0
+        ]
+      ],
+      "source": "Sport England",
+      "note": "United Kingdom (England); 2015 to 2022; 177,551 respondents; 16 years and older; base varies",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "Generic fitness training participation England 2017-2022",
+      "unit": "",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        1.956,
+        500.0,
+        1.893,
+        400.0
+      ],
+      "series_rows": [
+        [
+          1.956,
+          500.0,
+          1.893,
+          400.0
+        ]
+      ],
+      "source": "Sport England",
+      "note": "United Kingdom (England); 2017 to 2022; 177,551 respondents; 16 years and older; base varies",
+      "needs_review": true,
+      "page": 25
+    },
+    {
+      "title": "England: number of fitness activity participants 2017-2021",
+      "unit": "Number of participants in millions",
+      "years": [],
+      "values": [
+        13.2,
+        13.2,
+        13.37,
+        13.48,
+        13.77
+      ],
+      "series_rows": [
+        [
+          13.2,
+          13.2,
+          13.37,
+          13.48,
+          13.77
+        ],
+        [
+          -17.0,
+          -17.0,
+          -18.0,
+          -18.0,
+          -19.0
+        ],
+        [
+          -19.0,
+          -20.0,
+          -20.0,
+          -21.0,
+          -21.0
+        ],
+        [
+          12.86,
+          13.83,
+          12.72
+        ]
+      ],
+      "source": "Sport England",
+      "note": "United Kingdom (England); November 2020 to November 2021; 16 years and older",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Scotland: share of adults sport participation 2014-2019",
+      "unit": "",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "values": [
+        9.78,
+        9.8,
+        9.41,
+        9.64,
+        9.81,
+        9.7
+      ],
+      "series_rows": [
+        [
+          9.78,
+          9.8,
+          9.41,
+          9.64,
+          9.81,
+          9.7
+        ]
+      ],
+      "source": "Scottish Government",
+      "note": "United Kingdom (Scotland); 2014 to 2019; 9,780*; adults.; * Base in (2014 - 9,800); (2015 - 9,410); (2016 - 9,640); (2017 - 9,810), (2018 - 9,700) This statistic using original data from the Scottish Government and includes copyright materi",
+      "needs_review": false,
+      "page": 27
+    },
+    {
+      "title": "Share of adults meeting activity guidelines in Scotland 2022, by gender and age",
+      "unit": "",
+      "years": [],
+      "values": [
+        16.0,
+        -24.0,
+        25.0,
+        -34.0,
+        35.0,
+        -44.0,
+        45.0,
+        -54.0,
+        55.0,
+        -64.0,
+        65.0,
+        -74.0,
+        75.0
+      ],
+      "series_rows": [
+        [
+          79.0,
+          80.0,
+          25.0,
+          34.0
+        ],
+        [
+          16.0,
+          -24.0,
+          25.0,
+          -34.0,
+          35.0,
+          -44.0,
+          45.0,
+          -54.0,
+          55.0,
+          -64.0,
+          65.0,
+          -74.0,
+          75.0
+        ]
+      ],
+      "source": "ScotCen",
+      "note": "United Kingdom (Scotland); March and April, 2022; 4,377*; 16 years and older",
+      "needs_review": true,
+      "page": 28
+    },
+    {
+      "title": "Fitness and health service purchases in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4030.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          4030.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; January to December 2023; 4030 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 31
+    },
+    {
+      "title": "Share of consumers that own a home fitness product in the UK 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        22.0,
+        29.0,
+        1.0,
+        16.0,
+        -50.0
+      ],
+      "series_rows": [
+        [
+          22.0,
+          29.0,
+          1.0,
+          16.0,
+          -50.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+      "needs_review": [],
+      "page": 32
+    },
+    {
+      "title": "Share of UK consumers that own a home fitness product 2021, by product category",
+      "unit": "",
+      "years": [],
+      "values": [
+        22.0,
+        29.0,
+        1.0,
+        16.0,
+        -50.0
+      ],
+      "series_rows": [
+        [
+          22.0,
+          29.0,
+          1.0,
+          16.0,
+          -50.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+      "needs_review": [],
+      "page": 33
+    },
+    {
+      "title": "Sport equipment consumer price index (CPI) annual average in the UK 2008-2022",
+      "unit": "",
+      "years": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        99.0,
+        100.4,
+        100.0,
+        100.3,
+        99.1,
+        99.8,
+        101.5,
+        100.0,
+        99.9,
+        99.4,
+        101.1,
+        102.0,
+        103.1
+      ],
+      "series_rows": [
+        [
+          99.0,
+          100.4,
+          100.0,
+          100.3,
+          99.1,
+          99.8,
+          101.5,
+          100.0,
+          99.9,
+          99.4,
+          101.1,
+          102.0,
+          103.1
+        ],
+        [
+          108.2,
+          116.9,
+          34.0
+        ]
+      ],
+      "source": "Office for National Statistics (UK)",
+      "note": "United Kingdom; 2008 to 2022; * Index value 2015 equals 100. The year 2015 is the base year used to calculate the index value. Consumer price indices are designed to measure changes in the price of everything consumers buy. More [...] Read ",
+      "needs_review": true,
+      "page": 34
+    },
+    {
+      "title": "Fitness and health service online purchases in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4030.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          4030.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; January to December 2023; 4030 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Online fitness and health service purchases by brand in the UK 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        14.0,
+        31.0,
+        7.0,
+        27.0,
+        147.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          14.0,
+          31.0,
+          7.0,
+          27.0,
+          147.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; 14 Jul to 31 Jul 2020 and 7 Feb to 27 Mar 2020; 147 respondents; 18-64 years; respondents who spent money on online fitness & health services (websites and apps)",
+      "needs_review": [],
+      "page": 37
+    },
+    {
+      "title": "Leading Android health apps in Great Britain 2022, by revenue",
+      "unit": "Note(s): United Kingdom (Great Britain); September 2022; based on total revenue in Google Play Store generated in Great Britain.",
+      "years": [],
+      "values": [
+        261.782,
+        260.945,
+        158.022,
+        100.455,
+        85.582,
+        79.878,
+        67.687,
+        42.564,
+        34.297,
+        31.37
+      ],
+      "series_rows": [
+        [
+          261.782,
+          260.945,
+          158.022,
+          100.455,
+          85.582,
+          79.878,
+          67.687,
+          42.564,
+          34.297,
+          31.37
+        ]
+      ],
+      "source": "Airnow",
+      "note": "United Kingdom (Great Britain); September 2022; based on total revenue in Google Play Store generated in Great Britain.",
+      "needs_review": [],
+      "page": 38
+    },
+    {
+      "title": "Leading health and fitness apps in Google Play in Great Britain 2022, by downloads",
+      "unit": "",
+      "years": [],
+      "values": [
+        72.756,
+        66.257,
+        62.832,
+        38.712,
+        33.785,
+        33.488,
+        27.007,
+        25.466,
+        24.472,
+        24.358
+      ],
+      "series_rows": [
+        [
+          72.756,
+          66.257,
+          62.832,
+          38.712,
+          33.785,
+          33.488,
+          27.007,
+          25.466,
+          24.472,
+          24.358
+        ]
+      ],
+      "source": "Airnow",
+      "note": "United Kingdom (Great Britain); September 2022; based on downloads to devices in Great Britain.",
+      "needs_review": [],
+      "page": 39
+    },
+    {
+      "title": "Wearable devices usage in selected countries 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        48.0,
+        48.0,
+        45.0,
+        45.0,
+        42.0,
+        42.0,
+        36.0,
+        36.0,
+        34.0,
+        34.0,
+        33.0,
+        33.0,
+        32.0,
+        32.0,
+        31.0,
+        31.0,
+        31.0,
+        31.0,
+        27.0,
+        27.0
+      ],
+      "series_rows": [
+        [
+          2.017,
+          10.045,
+          18.0,
+          -64.0
+        ],
+        [
+          48.0,
+          48.0,
+          45.0,
+          45.0,
+          42.0,
+          42.0,
+          36.0,
+          36.0,
+          34.0,
+          34.0,
+          33.0,
+          33.0,
+          32.0,
+          32.0,
+          31.0,
+          31.0,
+          31.0,
+          31.0,
+          27.0,
+          27.0
+        ],
+        [
+          52.0,
+          52.0,
+          55.0,
+          55.0,
+          58.0,
+          58.0,
+          64.0,
+          64.0,
+          66.0,
+          66.0,
+          67.0,
+          67.0,
+          68.0,
+          68.0,
+          69.0,
+          69.0,
+          69.0,
+          69.0,
+          73.0,
+          73.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Brazil, Canada, China, Germany, India, South Korea, Netherlands, Sweden, United Kingdom, United States; January to December 2023; 2,017 - 10,045 respondents, differs by country; 18-64 years",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Most used eHealth tracker / smart watches by brand in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1685.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          1685.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; January to December 2023; 1685 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+      "needs_review": [],
+      "page": 41
+    },
+    {
+      "title": "Forecast for the number of users in the eServices market by segment in the United Kingdom until 2030",
+      "unit": "Number of online users in million",
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030"
+      ],
+      "values": [
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0,
+        21.0
+      ],
+      "series_rows": [
+        [
+          17.94,
+          18.14,
+          18.23,
+          18.27,
+          18.28
+        ],
+        [
+          19.61,
+          19.61,
+          19.62
+        ],
+        [
+          13.1,
+          13.32,
+          13.53,
+          13.74,
+          13.94
+        ],
+        [
+          8.31,
+          8.34,
+          8.36
+        ],
+        [
+          5.0,
+          7.0,
+          9.0,
+          11.0,
+          13.0,
+          15.0,
+          17.0,
+          19.0,
+          21.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom; 2023 to 2030",
+      "needs_review": true,
+      "page": 43
+    },
+    {
+      "title": "ARPU forecast for the eServices market by segment in the United Kingdom until 2030",
+      "unit": "Average revenue per online user in U.S. dollars",
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030"
+      ],
+      "values": [
+        246.94,
+        255.25,
+        261.5,
+        265.95,
+        269.08,
+        264.06,
+        265.41,
+        266.29
+      ],
+      "series_rows": [
+        [
+          246.94,
+          255.25,
+          261.5,
+          265.95,
+          269.08,
+          264.06,
+          265.41,
+          266.29
+        ],
+        [
+          26.12,
+          26.44,
+          26.64,
+          26.68,
+          26.66
+        ],
+        [
+          40.03,
+          40.2,
+          40.32
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom; 2023 to 2030",
+      "needs_review": true,
+      "page": 44
+    },
+    {
+      "title": "Penetration rate for the eServices Fitness market in the UK until 2024",
+      "unit": "Online penetration rate in percent",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        19.0,
+        21.0,
+        23.0,
+        25.0,
+        13.3,
+        14.1,
+        15.0,
+        18.1,
+        19.4,
+        20.5,
+        21.6,
+        22.6
+      ],
+      "series_rows": [
+        [
+          9.0,
+          9.4,
+          9.8
+        ],
+        [
+          11.1,
+          10.5,
+          10.3,
+          10.3
+        ],
+        [
+          5.0,
+          7.0,
+          9.0,
+          11.0,
+          13.0,
+          15.0,
+          17.0,
+          19.0,
+          21.0,
+          23.0,
+          25.0,
+          13.3,
+          14.1,
+          15.0,
+          18.1,
+          19.4,
+          20.5,
+          21.6,
+          22.6
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom; 2019",
+      "needs_review": true,
+      "page": 45
+    },
+    {
+      "title": "ARPU forecast for the eServices Fitness market in the United Kingdom until 2024",
+      "unit": "Average revenue per online user in U.S. dollars",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        70.4,
+        71.6,
+        73.1,
+        74.6,
+        75.9,
+        76.9,
+        77.7,
+        78.2
+      ],
+      "series_rows": [
+        [
+          70.4,
+          71.6,
+          73.1,
+          74.6,
+          75.9,
+          76.9,
+          77.7,
+          78.2
+        ],
+        [
+          9.6,
+          10.3,
+          10.7,
+          11.1,
+          11.3,
+          11.4,
+          11.6,
+          11.8
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom; 2019",
+      "needs_review": true,
+      "page": 46
+    },
+    {
+      "title": "Number of users in the eServices Fitness market in the UK until 2024",
+      "unit": "Number of online users in million",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        5.0,
+        7.0,
+        9.0,
+        11.0,
+        13.0,
+        15.0,
+        17.0,
+        8.9,
+        9.4,
+        10.1,
+        12.3,
+        13.2,
+        14.1,
+        14.9,
+        15.6
+      ],
+      "series_rows": [
+        [
+          6.0,
+          6.3,
+          6.6
+        ],
+        [
+          7.6,
+          7.2,
+          7.1,
+          7.1
+        ],
+        [
+          5.0,
+          7.0,
+          9.0,
+          11.0,
+          13.0,
+          15.0,
+          17.0,
+          8.9,
+          9.4,
+          10.1,
+          12.3,
+          13.2,
+          14.1,
+          14.9,
+          15.6
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom; 2019",
+      "needs_review": true,
+      "page": 47
+    },
+    {
+      "title": "Online revenue forecast for the eServices Fitness market in the UK until 2024",
+      "unit": "Description: This statistic presents a forecast of the online revenue in the eServices Fitness market in the United Kingdom until the year 2024. According to the Digital Market Outlook, the online revenue of the eServices Fitness segment Apps in the United Kingdom is",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "values": [
+        616.7616,
+        7.0,
+        575.6575,
+        6.0,
+        554.4554,
+        4.0,
+        550.355,
+        3.0,
+        557.7557,
+        7.0
+      ],
+      "series_rows": [
+        [
+          422.3422,
+          3.0,
+          453.1453,
+          1.0,
+          481.5481,
+          5.0
+        ],
+        [
+          616.7616,
+          7.0,
+          575.6575,
+          6.0,
+          554.4554,
+          4.0,
+          550.355,
+          3.0,
+          557.7557,
+          7.0
+        ],
+        [
+          148.8148,
+          8.0,
+          160.816,
+          8.0,
+          172.4172,
+          4.0,
+          183.5183,
+          5.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom; 2019",
+      "needs_review": true,
+      "page": 48
+    }
+  ]
+}

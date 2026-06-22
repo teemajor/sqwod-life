@@ -1,0 +1,438 @@
+{
+  "study": "study_id16946_content-marketing",
+  "file": "research/statista/Fitness Marketing/study_id16946_content-marketing.pdf",
+  "charts": [
+    {
+      "title": "Content marketing revenue worldwide 2018-2026",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        36.9,
+        42.1,
+        48.2,
+        55.1,
+        63.0,
+        72.0,
+        82.3,
+        94.0,
+        107.5,
+        4.0
+      ],
+      "series_rows": [
+        [
+          63.0,
+          72.0,
+          107.0
+        ],
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          36.9,
+          42.1,
+          48.2,
+          55.1,
+          63.0,
+          72.0,
+          82.3,
+          94.0,
+          107.5,
+          4.0
+        ]
+      ],
+      "source": "Research Dive; Statista",
+      "note": "Worldwide; 2018; * Forecast. An exponential development of the values was assumed to estimate the annual values between 2018 and 2026, which were provided by the source. Read more",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Channels used for marketing content promotion worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        73.0,
+        53.0,
+        51.0
+      ],
+      "series_rows": [
+        [
+          73.0,
+          53.0,
+          51.0
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; 2022; among marketing agencies, B2B and B2C companies, non-profits, and other organizations",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Change of B2B content marketing budgets worldwide 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        9.0,
+        9.0,
+        1.0,
+        9.0,
+        9.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          43.0,
+          2.0,
+          12.0,
+          13.0
+        ],
+        [
+          1.0,
+          9.0,
+          9.0,
+          1.0,
+          9.0,
+          9.0
+        ]
+      ],
+      "source": "Content Marketing Institute; MarketingProfs",
+      "note": "Worldwide; July 2023; 1,080 respondents; among B2B marketers",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Leading content marketing investment areas for B2B marketers worldwide 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.0,
+        69.0,
+        21.0,
+        47.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          69.0,
+          21.0,
+          47.0
+        ]
+      ],
+      "source": "Content Marketing Institute; MarketingProfs",
+      "note": "July 2023; 1,080 respondents; among B2B marketers",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Goals achieved with use of B2C content marketing North America 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        -2022.0,
+        2.0,
+        81.0
+      ],
+      "series_rows": [
+        [
+          -2022.0,
+          2.0,
+          81.0
+        ],
+        [
+          434.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "Content Marketing Institute; MarketingProfs",
+      "note": "Worldwide, North America; July 2022; 434 respondents; among B2C and B2B marketers primarily from North America",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Content types used for marketing worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        45.0,
+        31.0,
+        28.0
+      ],
+      "series_rows": [
+        [
+          45.0,
+          31.0,
+          28.0
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; 2022; 1,700 respondents; marketers and business owners from 34 countries, with the majority working from the U.S., UK, Canada and Australia",
+      "needs_review": [],
+      "page": 20
+    },
+    {
+      "title": "Types of marketing content services outsourced most often worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.7,
+        2.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          1.7,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; 2022; 1,700 respondents; among marketing agencies, B2B and B2C companies, non-profits, and other organizations",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Top social media platforms used for B2B content marketing worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.0,
+        78.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          78.0,
+          12.0
+        ],
+        [
+          56.0,
+          13.0,
+          69.0
+        ]
+      ],
+      "source": "Content Marketing Institute; MarketingProfs",
+      "note": "Worldwide; July 2022; 925 respondents; among B2B marketers using social media platforms for paid content promotion",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Leading KPIs in content-led ad campaigns worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        23.0,
+        6.0,
+        23.0,
+        26.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          9.0,
+          262.0
+        ],
+        [
+          23.0,
+          6.0,
+          23.0,
+          26.0
+        ],
+        [
+          23.0,
+          43.0,
+          34.0,
+          12.0
+        ],
+        [
+          6.0,
+          0.0,
+          1.0,
+          18.0
+        ],
+        [
+          9.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          21.0,
+          30.0,
+          29.0,
+          23.0
+        ],
+        [
+          15.0,
+          21.0,
+          5.0,
+          15.0
+        ],
+        [
+          3.0,
+          0.0,
+          8.0,
+          6.0
+        ]
+      ],
+      "source": "WMG",
+      "note": "Worldwide; January 5 to February 9, 2022; 262 respondents; among marketing decision makers",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Content marketing strategy effectiveness worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        80.0,
+        73.0,
+        52.0
+      ],
+      "series_rows": [
+        [
+          80.0,
+          73.0,
+          52.0
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; 2022; 1,700 respondents",
+      "needs_review": [],
+      "page": 34
+    },
+    {
+      "title": "Leading approaches to content-led communications worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        9.0,
+        262.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          9.0,
+          262.0
+        ]
+      ],
+      "source": "WMG",
+      "note": "Worldwide; January 5 to February 9, 2022; 262 respondents; among marketing decision makers",
+      "needs_review": [],
+      "page": 35
+    },
+    {
+      "title": "Leading uses of content-led advertising worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        9.0,
+        262.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          9.0,
+          262.0
+        ]
+      ],
+      "source": "MarketingCharts; WMG",
+      "note": "Worldwide; January 5 to February 9, 2022; 262 respondents; among marketing decision makers",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Most effective social media platforms for B2B marketers worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.0,
+        49.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          49.0,
+          12.0
+        ]
+      ],
+      "source": "Content Marketing Institute; MarketingProfs",
+      "note": "Worldwide; July 2022; 925 respondents; among B2B marketers using social media platforms for paid content promotion",
+      "needs_review": [],
+      "page": 38
+    },
+    {
+      "title": "Size of content marketing teams worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.0,
+        -20.0,
+        21.0,
+        -35.0,
+        50.0
+      ],
+      "series_rows": [
+        [
+          36.0,
+          14.0,
+          11.0,
+          20.0
+        ],
+        [
+          1.0,
+          -3.0,
+          4.0,
+          -10.0
+        ],
+        [
+          11.0,
+          -20.0,
+          21.0,
+          -35.0,
+          50.0
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; 2022; 1,700 respondents; marketers and business owners from 34 countries, with the majority working from the U.S., UK, Canada and Australia",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Top types of in-house content marketing specialists employed worldwide 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.7,
+        2.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          1.7,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; 2022; 1,700 respondents; among marketing agencies, B2B and B2C companies, non-profits, and other organizations",
+      "needs_review": [],
+      "page": 41
+    }
+  ]
+}

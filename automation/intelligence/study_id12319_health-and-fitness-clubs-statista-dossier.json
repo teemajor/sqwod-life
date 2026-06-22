@@ -1,0 +1,1261 @@
+{
+  "study": "study_id12319_health-and-fitness-clubs-statista-dossier",
+  "file": "research/statista/Health & Wellness/study_id12319_health-and-fitness-clubs-statista-dossier.pdf",
+  "charts": [
+    {
+      "title": "Market share of global health and fitness club industry 2021-2030",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        180.0,
+        91.18,
+        169.7,
+        3.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          91.18,
+          169.7,
+          3.0
+        ]
+      ],
+      "source": "Verified Market Research",
+      "note": "Worldwide; 2021; * Forecast. Read more",
+      "needs_review": [],
+      "page": 3
+    },
+    {
+      "title": "Number of fitness and health clubs worldwide 2009-2019",
+      "unit": "",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019"
+      ],
+      "values": [
+        128.52,
+        133.56,
+        133.76
+      ],
+      "series_rows": [
+        [
+          128.52,
+          133.56,
+          133.76
+        ],
+        [
+          201.07,
+          201.25,
+          205.18
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "Worldwide; 2009 to 2019",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Health clubs - total number by region worldwide 2009-2019",
+      "unit": "",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019"
+      ],
+      "values": [
+        38.19238,
+        192.0,
+        38.33238,
+        332.0,
+        38.40238,
+        402.0,
+        36.74236,
+        742.0,
+        38.40038,
+        400.0,
+        40.7104,
+        710.0,
+        42.33642,
+        336.0,
+        42.69642,
+        696.0,
+        44.63344,
+        633.0,
+        47.95747,
+        9572.0,
+        1.44221,
+        442.0,
+        24.08624,
+        86.0,
+        24.08624,
+        86.0,
+        46.13046,
+        130.0,
+        53.61753,
+        617.0,
+        55.80955,
+        809.0,
+        55.80955,
+        809.0,
+        65.86365,
+        863.0,
+        65.86365,
+        863.0,
+        61.37461,
+        374.0
+      ],
+      "series_rows": [
+        [
+          48.08748,
+          87.0,
+          48.00548,
+          5.0,
+          47.70147,
+          701.0,
+          45.39645,
+          396.0,
+          49.19749,
+          197.0,
+          51.29951,
+          299.0,
+          51.20451,
+          204.0,
+          55.00355,
+          3.0,
+          59.05559,
+          55.0,
+          63.64463,
+          644.0
+        ],
+        [
+          38.19238,
+          192.0,
+          38.33238,
+          332.0,
+          38.40238,
+          402.0,
+          36.74236,
+          742.0,
+          38.40038,
+          400.0,
+          40.7104,
+          710.0,
+          42.33642,
+          336.0,
+          42.69642,
+          696.0,
+          44.63344,
+          633.0,
+          47.95747,
+          9572.0,
+          1.44221,
+          442.0,
+          24.08624,
+          86.0,
+          24.08624,
+          86.0,
+          46.13046,
+          130.0,
+          53.61753,
+          617.0,
+          55.80955,
+          809.0,
+          55.80955,
+          809.0,
+          65.86365,
+          863.0,
+          65.86365,
+          863.0,
+          61.37461,
+          374.0
+        ],
+        [
+          16.84016,
+          840.0,
+          18.14918,
+          149.0,
+          18.56118,
+          5613.2103,
+          210.0,
+          3.2103,
+          210.0,
+          3.2343,
+          234.0,
+          21.65821,
+          658.0
+        ],
+        [
+          31.01131,
+          11.0,
+          31.01131,
+          11.0
+        ],
+        [
+          31.01131,
+          11.0,
+          25.14025,
+          140.0,
+          25.14025,
+          140.0
+        ],
+        [
+          7507.0,
+          50.0,
+          1.7761,
+          776.0,
+          1.7761,
+          776.0
+        ],
+        [
+          5.0905,
+          90.0,
+          6.4346,
+          434.0
+        ],
+        [
+          6.4946,
+          494.0,
+          6.5546,
+          554.0,
+          5.9695,
+          9691.0921,
+          92.0
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "Worldwide; 2009 to 2019",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Health clubs ranked by number of facilities in the U.S. 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ],
+        [
+          2.254,
+          1.262,
+          1.965,
+          1.749
+        ]
+      ],
+      "source": "Club Industry",
+      "note": "United States; 2021; only health clubs solely operating in North America",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Number of Planet Fitness gyms worldwide 2023",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        2.0012,
+        1.0,
+        2.1242,
+        124.0,
+        2.2542,
+        254.0,
+        2.4102,
+        410.0
+      ],
+      "series_rows": [
+        [
+          2.0012,
+          1.0,
+          2.1242,
+          124.0,
+          2.2542,
+          254.0,
+          2.4102,
+          410.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "Worldwide; 2019 to 2023",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Corporate wellness market size worldwide 2033",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        70.12,
+        146.6,
+        8.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          70.12,
+          146.6,
+          8.0
+        ]
+      ],
+      "source": "Fact.MR",
+      "note": "Worldwide; 2022; * Forecast. Read more",
+      "needs_review": [],
+      "page": 8
+    },
+    {
+      "title": "Countries with the most health/fitness club memberships 2019",
+      "unit": "Club members in millions",
+      "years": [],
+      "values": [
+        64.19,
+        11.66,
+        10.39,
+        10.33,
+        6.19,
+        6.18,
+        5.51,
+        5.51,
+        4.52
+      ],
+      "series_rows": [
+        [
+          64.19,
+          11.66,
+          10.39,
+          10.33,
+          6.19,
+          6.18,
+          5.51,
+          5.51,
+          4.52
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "Worldwide; 2019",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Health & fitness club companies by membership in the U.S. 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.2,
+        1.8,
+        797.35,
+        649.37,
+        450.0,
+        290.93,
+        113.0,
+        90.0,
+        67.0,
+        44.0
+      ],
+      "series_rows": [
+        [
+          15.2,
+          1.8,
+          797.35,
+          649.37,
+          450.0,
+          290.93,
+          113.0,
+          90.0,
+          67.0,
+          44.0
+        ]
+      ],
+      "source": "Club Industry",
+      "note": "Worldwide; 2021",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "Health/fitness clubs members in Europe 2010-2022",
+      "unit": "Members of health clubs in millions",
+      "years": [
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        47.7,
+        44.87,
+        47.67,
+        52.44,
+        56.87,
+        59.98,
+        64.76
+      ],
+      "series_rows": [
+        [
+          47.7,
+          44.87,
+          47.67,
+          52.44,
+          56.87,
+          59.98,
+          64.76
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2010 to 2022",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Total number of members of health/fitness clubs in North America 2009-2019",
+      "unit": "Members of health clubs in millions",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        53.2
+      ],
+      "series_rows": [
+        [
+          58.6,
+          59.75,
+          60.86,
+          62.87
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          53.2
+        ],
+        [
+          66.48,
+          70.36,
+          14.0
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "North America; 2009 to 2019",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "U.S. fitness center / health club memberships 2000-2019",
+      "unit": "Memberships in millions",
+      "years": [
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "values": [
+        39.4,
+        41.3,
+        41.3,
+        42.7
+      ],
+      "series_rows": [
+        [
+          39.4,
+          41.3,
+          41.3,
+          42.7
+        ],
+        [
+          46.7,
+          45.6,
+          45.3
+        ],
+        [
+          50.2,
+          51.4,
+          50.2
+        ],
+        [
+          52.9,
+          54.1,
+          55.3,
+          57.3
+        ],
+        [
+          60.9,
+          62.5,
+          64.2
+        ]
+      ],
+      "source": "Baird; IHRSA",
+      "note": "United States; 2000 to 2019",
+      "needs_review": true,
+      "page": 15
+    },
+    {
+      "title": "Gym membership count in Spain 2019-2021",
+      "unit": "Number of memberships in millions",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        5.51,
+        4.32,
+        4.83,
+        16.0
+      ],
+      "series_rows": [
+        [
+          4.8,
+          12.0,
+          1.6
+        ],
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          5.51,
+          4.32,
+          4.83,
+          16.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Spain; 2019 to 2021",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Number of sports club members in Japan 2013-2022",
+      "unit": "Number of club members in millions",
+      "years": [
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        3.29,
+        3.36,
+        3.37,
+        3.36
+      ],
+      "series_rows": [
+        [
+          3.01,
+          3.0,
+          3.02
+        ],
+        [
+          3.29,
+          3.36,
+          3.37,
+          3.36
+        ],
+        [
+          2.69,
+          2.58,
+          2.65
+        ]
+      ],
+      "source": "METI (Japan)",
+      "note": "Japan; 2013 to 2022",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Gym membership cost worldwide in 2021, by country",
+      "unit": "Monthly cost in U.S. dollars",
+      "years": [],
+      "values": [
+        107.38,
+        105.72,
+        105.31,
+        99.19,
+        86.61,
+        82.86,
+        79.57,
+        77.08,
+        76.57,
+        73.04,
+        67.23,
+        62.58,
+        60.29,
+        57.96,
+        54.84
+      ],
+      "series_rows": [
+        [
+          107.38,
+          105.72,
+          105.31,
+          99.19,
+          86.61,
+          82.86,
+          79.57,
+          77.08,
+          76.57,
+          73.04,
+          67.23,
+          62.58,
+          60.29,
+          57.96,
+          54.84
+        ]
+      ],
+      "source": "CashNetUSA",
+      "note": "Worldwide; 2021",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Number of U.S. health clubs & fitness centers 2008-2022",
+      "unit": "",
+      "years": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        30.022,
+        29.75,
+        29.89,
+        29.96,
+        30.5
+      ],
+      "series_rows": [
+        [
+          30.022,
+          29.75,
+          29.89,
+          29.96,
+          30.5
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "United States; 2008 to 2022",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Fitness industry enterprises in the United States 2023",
+      "unit": "",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        88.627,
+        88.921,
+        92.555,
+        94.603,
+        95.609,
+        98.642,
+        100.977
+      ],
+      "series_rows": [
+        [
+          88.627,
+          88.921,
+          92.555,
+          94.603,
+          95.609,
+          98.642,
+          100.977
+        ],
+        [
+          113.003,
+          112.912,
+          115.047
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2023; * Forecast Read more",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Fitness club employment in the United States 2012-2023",
+      "unit": "",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        703.257,
+        726.085,
+        753.042
+      ],
+      "series_rows": [
+        [
+          703.257,
+          726.085,
+          753.042
+        ],
+        [
+          795.848,
+          827.25,
+          854.969
+        ],
+        [
+          911.75,
+          887.638,
+          899.275
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2022; *Forecast. Read more",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "U.S. health club industry revenue 2000-2020",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019",
+        "2020"
+      ],
+      "values": [
+        17.6,
+        18.7,
+        19.1,
+        19.5,
+        20.3,
+        21.4,
+        21.8,
+        22.4
+      ],
+      "series_rows": [
+        [
+          11.6,
+          12.2,
+          13.1,
+          14.1,
+          14.8,
+          15.9
+        ],
+        [
+          17.6,
+          18.7,
+          19.1,
+          19.5,
+          20.3,
+          21.4,
+          21.8,
+          22.4
+        ],
+        [
+          24.2,
+          25.8,
+          27.6,
+          30.01,
+          35.03,
+          14.63,
+          23.0
+        ]
+      ],
+      "source": "IHRSA",
+      "note": "United States; 2000 to 2020",
+      "needs_review": true,
+      "page": 23
+    },
+    {
+      "title": "Health & fitness club companies by revenue in the United States 2021",
+      "unit": "Revenue in million U.S. dollars",
+      "years": [],
+      "values": [
+        2.1,
+        1.32,
+        587.0,
+        185.0,
+        178.5,
+        155.1,
+        134.0,
+        77.96,
+        72.0,
+        52.0,
+        48.1,
+        38.12,
+        32.6,
+        31.0,
+        31.0
+      ],
+      "series_rows": [
+        [
+          160.0,
+          1.32,
+          2.1
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ],
+        [
+          2.1,
+          1.32,
+          587.0,
+          185.0,
+          178.5,
+          155.1,
+          134.0,
+          77.96,
+          72.0,
+          52.0,
+          48.1,
+          38.12,
+          32.6,
+          31.0,
+          31.0
+        ]
+      ],
+      "source": "Club Industry",
+      "note": "United States; 2021",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Gym membership cost in the U.S. in 2021, by state",
+      "unit": "Monthly cost in U.S. dollars",
+      "years": [],
+      "values": [
+        75.32,
+        75.28,
+        73.68,
+        68.81,
+        67.57,
+        67.55,
+        65.42,
+        65.42,
+        65.27,
+        64.96,
+        64.82,
+        64.11,
+        63.67,
+        63.0,
+        62.37
+      ],
+      "series_rows": [
+        [
+          75.32,
+          75.28,
+          73.68,
+          68.81,
+          67.57,
+          67.55,
+          65.42,
+          65.42,
+          65.27,
+          64.96,
+          64.82,
+          64.11,
+          63.67,
+          63.0,
+          62.37
+        ]
+      ],
+      "source": "CashNetUSA",
+      "note": "United States; 2021",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Fitness and health service purchases in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1004.0,
+        6.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          1004.0,
+          6.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Global physical activity industry market size 2017-2027",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6
+      ],
+      "series_rows": [
+        [
+          789.5,
+          830.4,
+          875.9
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6
+        ],
+        [
+          746.8,
+          927.1,
+          976.3
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "Worldwide; 2017 to 2022",
+      "needs_review": true,
+      "page": 29
+    },
+    {
+      "title": "Global physical activity industry market size 2022, by region",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        361.2,
+        283.7,
+        245.8,
+        43.5,
+        27.5,
+        14.5,
+        30.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          361.2,
+          283.7,
+          245.8,
+          43.5,
+          27.5,
+          14.5,
+          30.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "Worldwide; 2022",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Hours per day spent on sports, exercise, and recreation in the U.S. 2009-2022",
+      "unit": "",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        0.1,
+        0.1,
+        0.2,
+        0.2,
+        0.3,
+        0.3,
+        0.4,
+        0.4,
+        0.5,
+        0.5
+      ],
+      "series_rows": [
+        [
+          0.4,
+          0.33,
+          0.24,
+          0.25
+        ],
+        [
+          0.31,
+          0.31,
+          0.3
+        ],
+        [
+          0.38,
+          0.39,
+          0.39
+        ],
+        [
+          0.2,
+          0.21,
+          0.22
+        ],
+        [
+          0.23,
+          0.23,
+          0.23
+        ],
+        [
+          0.0,
+          0.1,
+          0.1,
+          0.2,
+          0.2,
+          0.3,
+          0.3,
+          0.4,
+          0.4,
+          0.5,
+          0.5
+        ],
+        [
+          0.32,
+          0.37,
+          0.32,
+          0.29
+        ],
+        [
+          0.42,
+          0.44,
+          0.4,
+          0.33
+        ]
+      ],
+      "source": "Bureau of Labor Statistics",
+      "note": "United States; 2009 to 2022; Approx. 8,100 (in 2022); 15 years and older",
+      "needs_review": true,
+      "page": 32
+    }
+  ]
+}

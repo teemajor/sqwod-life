@@ -1,0 +1,1593 @@
+{
+  "study": "study_id13668_wellness-and-spa-statista-dossier",
+  "file": "research/statista/Health & Wellness/study_id13668_wellness-and-spa-statista-dossier.pdf",
+  "charts": [
+    {
+      "title": "Wellness market value worldwide 2017-2027",
+      "unit": "",
+      "years": [
+        "2017",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        4.32,
+        4.93,
+        4.46,
+        5.19,
+        5.61,
+        6.26,
+        6.82,
+        7.36,
+        7.89,
+        8.47,
+        4.0
+      ],
+      "series_rows": [
+        [
+          5.61,
+          8.6,
+          8.47
+        ],
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          4.32,
+          4.93,
+          4.46,
+          5.19,
+          5.61,
+          6.26,
+          6.82,
+          7.36,
+          7.89,
+          8.47,
+          4.0
+        ]
+      ],
+      "source": "Cision; Global Wellness Institute",
+      "note": "Worldwide; 2017 to 2022",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Global wellness market size worldwide in 2022, by region",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8
+      ],
+      "series_rows": [
+        [
+          2.0,
+          1.901,
+          4.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "Worldwide; 2022",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Market size of the global wellness industry in 2022, by segment",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        927.1,
+        600.9,
+        502.4,
+        466.8,
+        341.2,
+        165.5,
+        82.1,
+        49.6,
+        45.4
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2
+        ],
+        [
+          927.1,
+          600.9,
+          502.4,
+          466.8,
+          341.2,
+          165.5,
+          82.1,
+          49.6,
+          45.4
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "Worldwide; 2022",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Global health and wellness food market value 2023-2022",
+      "unit": "Market value in billion U.S. dollars",
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030",
+        "2031",
+        "2032",
+        "2033"
+      ],
+      "values": [
+        27.44,
+        28.89,
+        30.42,
+        32.04,
+        33.73,
+        35.52
+      ],
+      "series_rows": [
+        [
+          23.5,
+          24.75,
+          26.06
+        ],
+        [
+          27.44,
+          28.89,
+          30.42,
+          32.04,
+          33.73,
+          35.52
+        ]
+      ],
+      "source": "Future Market Insights",
+      "note": "Worldwide; 2023; * Forecast. Read more",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "Market size of the thermal/mineral springs industry worldwide 2019-2027",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        65.7,
+        39.9
+      ],
+      "series_rows": [
+        [
+          14.0,
+          46.3,
+          90.0
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          65.7,
+          39.9
+        ],
+        [
+          57.9,
+          66.6,
+          74.5,
+          82.4,
+          90.5,
+          9.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "Worldwide; 2019 to 2022",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Key information on the health and wellness spa industry in the U.S in 2023",
+      "unit": "Market size (in billion U.S. dollars) 23.2",
+      "years": [],
+      "values": [
+        23.0,
+        372.0,
+        20.0
+      ],
+      "series_rows": [
+        [
+          23.0,
+          372.0,
+          20.0
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2023",
+      "needs_review": [],
+      "page": 10
+    },
+    {
+      "title": "Market size of the wellness tourism industry worldwide 2027",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        720.4,
+        350.6,
+        466.8,
+        650.7,
+        867.9
+      ],
+      "series_rows": [
+        [
+          1.4,
+          100.0,
+          650.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          720.4,
+          350.6,
+          466.8,
+          650.7,
+          867.9
+        ]
+      ],
+      "source": "Global Wellness Institute; PR Newswire",
+      "note": "Worldwide; 2019 to 2022",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Wellness tourism expenditure worldwide 2019-2022, by region",
+      "unit": "Expenditure in billion U.S. dollars",
+      "years": [],
+      "values": [
+        29.4,
+        13.6,
+        5.0
+      ],
+      "series_rows": [
+        [
+          29.4,
+          13.6,
+          5.0
+        ]
+      ],
+      "source": "Euromonitor; Global Wellness Institute",
+      "note": "Worldwide; 2022",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Number of wellness tourism trips worldwide 2019-2022, by region",
+      "unit": "(in millions)",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        333.5,
+        175.9,
+        232.2,
+        300.6
+      ],
+      "series_rows": [
+        [
+          333.5,
+          175.9,
+          232.2,
+          300.6
+        ],
+        [
+          309.9,
+          133.7,
+          148.1,
+          242.4
+        ],
+        [
+          221.9,
+          140.8,
+          184.1,
+          213.5
+        ],
+        [
+          51.7,
+          25.2,
+          34.7,
+          47.2
+        ],
+        [
+          11.9,
+          4.8,
+          6.2,
+          10.1
+        ],
+        [
+          7.5,
+          2.7,
+          2.9,
+          5.7
+        ],
+        [
+          936.4,
+          483.0,
+          608.2,
+          819.4
+        ]
+      ],
+      "source": "Euromonitor; Global Wellness Institute",
+      "note": "Worldwide; 2019 to 2022; figures combine international/inbound and domestic wellness tourism trips, also including primary and secondary wellness tourism trips",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Leading countries in wellness tourism expenditure worldwide 2022",
+      "unit": "Expenditure in billion U.S. dollars",
+      "years": [],
+      "values": [
+        255.9,
+        70.2,
+        35.5,
+        19.5,
+        17.7,
+        17.6,
+        15.7,
+        15.6,
+        14.4,
+        13.8,
+        11.4,
+        11.2,
+        11.0,
+        11.0,
+        7.8
+      ],
+      "series_rows": [
+        [
+          255.9,
+          70.2,
+          35.5,
+          19.5,
+          17.7,
+          17.6,
+          15.7,
+          15.6,
+          14.4,
+          13.8,
+          11.4,
+          11.2,
+          11.0,
+          11.0,
+          7.8
+        ]
+      ],
+      "source": "Euromonitor; Global Wellness Institute",
+      "note": "Worldwide; 2022; figures combine expenditures for international/inbound and domestic wellness tourism trips, also including primary and secondary wellness tourism trips; data refer to the destination markets recording the highest wellness t",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Corporate wellness market size worldwide 2033",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        70.12,
+        146.6,
+        18.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          70.12,
+          146.6,
+          18.0
+        ]
+      ],
+      "source": "Fact.MR",
+      "note": "Worldwide; 2022; * Forecast. Read more",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Global workplace wellness industry market size in 2022, by region",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        19.8,
+        18.7,
+        8.4
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          19.8,
+          18.7,
+          8.4
+        ]
+      ],
+      "source": "Global Wellness Institute; Website (healthylivingandtravel.com)",
+      "note": "Worldwide; 2022",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Workplace wellness industry market size in the U.S. 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0,
+        17.13,
+        15.54,
+        17.49,
+        18.16,
+        20.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0,
+          17.13,
+          15.54,
+          17.49,
+          18.16,
+          20.0
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United States; 2019 to 2022",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Workplace wellness industry market size in the UK 2019-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        3.23,
+        2.96
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          3.23,
+          2.96
+        ]
+      ],
+      "source": "Global Wellness Institute",
+      "note": "United Kingdom; 2019 to 2022",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Number of corporate wellness service companies in the U.S. 2007-2021",
+      "unit": "",
+      "years": [
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        438.0,
+        456.0,
+        463.0,
+        468.0,
+        477.0,
+        498.0,
+        509.0,
+        529.0,
+        544.0,
+        559.0,
+        574.0,
+        588.0,
+        603.0,
+        618.0,
+        633.0
+      ],
+      "series_rows": [
+        [
+          438.0,
+          456.0,
+          463.0,
+          468.0,
+          477.0,
+          498.0,
+          509.0,
+          529.0,
+          544.0,
+          559.0,
+          574.0,
+          588.0,
+          603.0,
+          618.0,
+          633.0
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2007 to 2016; * From 2016 on all values are projected. Read more",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Share of U.S. employers that offered select wellness programs in 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        28.0,
+        10.0,
+        2.504
+      ],
+      "series_rows": [
+        [
+          28.0,
+          10.0,
+          2.504
+        ]
+      ],
+      "source": "SHRM",
+      "note": "September 28 to November 10, 2020; 2,504 respondents; Members of SHRM: HR professionals",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Global consumer spend on selected mental wellness apps 2019-2021",
+      "unit": "Spending in million U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        94.52,
+        65.36
+      ],
+      "series_rows": [
+        [
+          4.77,
+          7.8,
+          5.6
+        ],
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          94.52,
+          65.36
+        ],
+        [
+          93.25,
+          65.21,
+          13.38
+        ],
+        [
+          119.19,
+          86.27,
+          13.89
+        ]
+      ],
+      "source": "Data.ai",
+      "note": "Worldwide; 2019 to 2021; gross spending across iOS and Google Play",
+      "needs_review": true,
+      "page": 29
+    },
+    {
+      "title": "Leading Android health apps worldwide 2023, by downloads",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        2.93,
+        2.09,
+        1.79,
+        1.56,
+        1.31,
+        1.31,
+        1.25,
+        1.22,
+        1.09,
+        1.08,
+        0.87,
+        0.82,
+        0.78,
+        0.78,
+        0.77
+      ],
+      "series_rows": [
+        [
+          2.93,
+          2.09,
+          1.79,
+          1.56,
+          1.31,
+          1.31,
+          1.25,
+          1.22,
+          1.09,
+          1.08,
+          0.87,
+          0.82,
+          0.78,
+          0.78,
+          0.77
+        ]
+      ],
+      "source": "AppTweak",
+      "note": "Worldwide; June 2023; downloads from the Google Play Store",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Leading Android health apps worldwide 2023, by revenue",
+      "unit": "Note(s): Worldwide; June 2023; IAP revenue in the Google Play Store",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        0.0,
+        2.0,
+        0.0,
+        3.0,
+        0.0,
+        4.0,
+        0.0,
+        5.0,
+        0.0,
+        6.0,
+        0.0,
+        7.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0,
+          0.0,
+          3.0,
+          0.0,
+          4.0,
+          0.0,
+          5.0,
+          0.0,
+          6.0,
+          0.0,
+          7.0,
+          0.0
+        ],
+        [
+          805.792,
+          721.217,
+          683.536,
+          559.625,
+          526.315,
+          452.747,
+          438.343,
+          390.392,
+          374.387,
+          367.335
+        ]
+      ],
+      "source": "AppTweak",
+      "note": "Worldwide; June 2023; IAP revenue in the Google Play Store",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Headspace: mobile app global quarterly downloads 2018-2023",
+      "unit": "Downloads in millions",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        3.53,
+        2.77,
+        3.63,
+        4.81,
+        4.3,
+        3.61,
+        2.66,
+        2.86,
+        3.64,
+        3.19,
+        1.99,
+        2.88,
+        3.47
+      ],
+      "series_rows": [
+        [
+          1.46,
+          1.36,
+          1.19,
+          1.31
+        ],
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          3.53,
+          2.77,
+          3.63,
+          4.81,
+          4.3,
+          3.61,
+          2.66,
+          2.86,
+          3.64,
+          3.19,
+          1.99,
+          2.88,
+          3.47
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; Q1 2018 to Q4 2023; Google Play and Apple App Store",
+      "needs_review": true,
+      "page": 32
+    },
+    {
+      "title": "Calm: mobile app global IAP revenues 2018-2023",
+      "unit": "IAP revenues in million U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        8.53,
+        9.62,
+        12.3,
+        13.36,
+        21.88,
+        17.24,
+        16.08,
+        14.96,
+        20.38
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          8.53,
+          9.62,
+          12.3,
+          13.36,
+          21.88,
+          17.24,
+          16.08,
+          14.96,
+          20.38
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; Q1 2018 to Q4 2023; Google Play and Apple App Store combined; IAP revenues reduced by platform fees and taxes",
+      "needs_review": [],
+      "page": 33
+    },
+    {
+      "title": "Fitness and health service online purchases in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1004.0,
+        6.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          1004.0,
+          6.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 34
+    },
+    {
+      "title": "Meditation and mindfulness apps market presence in the U.S. 2019-2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        19.0,
+        2.0,
+        19.0,
+        3.0,
+        19.0,
+        4.0,
+        19.0,
+        1.0,
+        20.0,
+        2.0,
+        20.0,
+        3.0,
+        20.0,
+        4.0,
+        20.0,
+        1.0,
+        21.0,
+        2.0,
+        21.0,
+        3.0,
+        21.0,
+        4.0,
+        21.0,
+        1.0,
+        22.0,
+        2.0,
+        22.0,
+        3.0,
+        22.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          3.0,
+          18.0
+        ],
+        [
+          1.0,
+          19.0,
+          2.0,
+          19.0,
+          3.0,
+          19.0,
+          4.0,
+          19.0,
+          1.0,
+          20.0,
+          2.0,
+          20.0,
+          3.0,
+          20.0,
+          4.0,
+          20.0,
+          1.0,
+          21.0,
+          2.0,
+          21.0,
+          3.0,
+          21.0,
+          4.0,
+          21.0,
+          1.0,
+          22.0,
+          2.0,
+          22.0,
+          3.0,
+          22.0
+        ],
+        [
+          8.0,
+          10.0,
+          11.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          14.0,
+          13.0,
+          13.0
+        ],
+        [
+          19.0,
+          19.0,
+          20.0,
+          20.0,
+          20.0
+        ],
+        [
+          5.0,
+          5.0,
+          6.0,
+          6.0,
+          6.0,
+          7.0,
+          6.0,
+          7.0,
+          6.0,
+          7.0
+        ],
+        [
+          11.0,
+          11.0,
+          11.0,
+          11.0,
+          11.0
+        ],
+        [
+          46.0,
+          48.0,
+          50.0,
+          48.0,
+          50.0
+        ],
+        [
+          55.0,
+          55.0,
+          56.0,
+          56.0,
+          56.0
+        ],
+        [
+          62.0,
+          62.0,
+          63.0,
+          64.0,
+          63.0
+        ]
+      ],
+      "source": "CivicScience",
+      "note": "United States; Q1 2019 to Q3 2022; 18 years and older",
+      "needs_review": true,
+      "page": 35
+    },
+    {
+      "title": "Leading Android health apps in the U.S. 2022, by downloads",
+      "unit": "",
+      "years": [],
+      "values": [
+        355.815,
+        334.92,
+        247.922,
+        198.435,
+        178.585,
+        142.539,
+        116.669,
+        99.741,
+        98.139,
+        95.271
+      ],
+      "series_rows": [
+        [
+          355.815,
+          334.92,
+          247.922,
+          198.435,
+          178.585,
+          142.539,
+          116.669,
+          99.741,
+          98.139,
+          95.271
+        ]
+      ],
+      "source": "Airnow",
+      "note": "United States; September 2022; based on downloads to devices in the United States",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Yoga participation in the U.S. 2010-2023",
+      "unit": "Number of participants in millions",
+      "years": [
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        21.0,
+        22.11,
+        23.25,
+        24.31,
+        25.26,
+        25.29,
+        26.27,
+        27.35
+      ],
+      "series_rows": [
+        [
+          21.0,
+          22.11,
+          23.25,
+          24.31,
+          25.26,
+          25.29,
+          26.27,
+          27.35
+        ],
+        [
+          34.35,
+          34.25,
+          33.64
+        ],
+        [
+          28.75,
+          30.46,
+          32.81
+        ]
+      ],
+      "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+      "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+      "needs_review": true,
+      "page": 38
+    },
+    {
+      "title": "Pilates and yoga studio industry business count in the U.S. 2012-2022",
+      "unit": "",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        22.34,
+        24.08,
+        27.97,
+        31.52
+      ],
+      "series_rows": [
+        [
+          35.5,
+          36.35,
+          36.92
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          22.34,
+          24.08,
+          27.97,
+          31.52
+        ],
+        [
+          39.02,
+          40.58,
+          39.0
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2020; *Forecast Source did not provide a publication date. Release date was date accessed. Figures have ben rounded. Read more",
+      "needs_review": true,
+      "page": 39
+    },
+    {
+      "title": "U.S. pilates and yoga studio market size 2012-2022",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        5.38,
+        5.89,
+        6.65,
+        7.48,
+        8.5,
+        9.08,
+        9.61,
+        10.33,
+        9.31
+      ],
+      "series_rows": [
+        [
+          9.31,
+          9.96,
+          10.34
+        ],
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          5.38,
+          5.89,
+          6.65,
+          7.48,
+          8.5,
+          9.08,
+          9.61,
+          10.33,
+          9.31
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2020; *Forecast Source did not provide a publication date. Release date was date accessed. Figures have ben rounded. Read more",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Yoga wear market value worldwide 2020-2028",
+      "unit": "Revenue in million U.S. dollars",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        19.24,
+        22.72,
+        24.624,
+        26.688,
+        28.925,
+        31.349,
+        33.976,
+        36.824,
+        39.91,
+        42.0
+      ],
+      "series_rows": [
+        [
+          22.7,
+          40.0,
+          8.4
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          19.24,
+          22.72,
+          24.624,
+          26.688,
+          28.925,
+          31.349,
+          33.976,
+          36.824,
+          39.91,
+          42.0
+        ]
+      ],
+      "source": "Fortune Business Insights; Statista",
+      "note": "Worldwide; 2020",
+      "needs_review": true,
+      "page": 42
+    },
+    {
+      "title": "Spa services market revenue worldwide 2023-2032",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        147.48,
+        243.23,
+        44.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          147.48,
+          243.23,
+          44.0
+        ]
+      ],
+      "source": "Industry Research Biz; LinkedIn",
+      "note": "Worldwide; 2023",
+      "needs_review": [],
+      "page": 44
+    },
+    {
+      "title": "U.S. massage service industry market size 2012-2023",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        11.73
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          11.73
+        ],
+        [
+          15.39,
+          16.26,
+          17.31,
+          19.67,
+          21.5,
+          16.49
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2012 to 2022",
+      "needs_review": true,
+      "page": 45
+    },
+    {
+      "title": "Massage service industry employee count in the U.S. 2011-2023",
+      "unit": "",
+      "years": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        357.43,
+        366.47,
+        357.55
+      ],
+      "series_rows": [
+        [
+          357.43,
+          366.47,
+          357.55
+        ],
+        [
+          365.36,
+          368.97,
+          368.72
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2011 to 2022",
+      "needs_review": true,
+      "page": 46
+    },
+    {
+      "title": "Massage service industry business count in the U.S. 2011-2023",
+      "unit": "",
+      "years": [
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        234.96,
+        240.19,
+        241.36,
+        240.72
+      ],
+      "series_rows": [
+        [
+          234.96,
+          240.19,
+          241.36,
+          240.72
+        ]
+      ],
+      "source": "IBISWorld",
+      "note": "United States; 2011 to 2022",
+      "needs_review": true,
+      "page": 47
+    }
+  ]
+}

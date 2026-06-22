@@ -1,0 +1,965 @@
+{
+  "study": "study_id108536_marketing-in-the-united-states",
+  "file": "research/statista/Fitness Marketing/study_id108536_marketing-in-the-united-states.pdf",
+  "charts": [
+    {
+      "title": "Marketing spending in the U.S. 2019-2023, by channel",
+      "unit": "Spending in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        183.8183,
+        8.0,
+        195.4195,
+        4.0,
+        202.8202,
+        8.0,
+        195.1195,
+        1.0
+      ],
+      "series_rows": [
+        [
+          515.0,
+          320.0,
+          62.0,
+          490.0
+        ],
+        [
+          183.8183,
+          8.0,
+          195.4195,
+          4.0,
+          202.8202,
+          8.0,
+          195.1195,
+          1.0
+        ],
+        [
+          287.4287,
+          4.0,
+          3203.0,
+          20.0
+        ]
+      ],
+      "source": "Winterberry Group",
+      "note": "United States; 2019 to 2023",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Marketing spend as a share of companies' total budgets in the U.S. 2023, by industry",
+      "unit": "",
+      "years": [],
+      "values": [
+        26.0,
+        17.0,
+        316.0
+      ],
+      "series_rows": [
+        [
+          26.0,
+          17.0,
+          316.0
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+      "note": "United States; July 26 to August 17, 2023; 316 respondents; among marketers from for-profit companies",
+      "needs_review": [],
+      "page": 6
+    },
+    {
+      "title": "Expected change in marketing spending according to CMOs in the U.S. 2012-2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        12.0,
+        14.0,
+        15.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        20.0,
+        21.0,
+        21.0,
+        22.0,
+        22.0,
+        23.0,
+        23.0,
+        24.0
+      ],
+      "series_rows": [
+        [
+          12.0,
+          14.0,
+          15.0,
+          17.0,
+          18.0,
+          19.0,
+          20.0,
+          20.0,
+          21.0,
+          21.0,
+          22.0,
+          22.0,
+          23.0,
+          23.0,
+          24.0
+        ],
+        [
+          6.4,
+          6.7,
+          6.7
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+      "note": "United States; February 2012 to August 2023; 316**; among marketers from for-profit companies; * Forecast. ** Sample size provided refers only to the 2023 survey. Data preceding 2020 was retrieved from earlier releases. Read more",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Change in digital vs. traditional marketing budgets as per U.S. CMOs 2012-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        -2.0,
+        -1.7,
+        -1.2,
+        -1.8,
+        -2.0
+      ],
+      "series_rows": [
+        [
+          7.9,
+          12.0,
+          0.6
+        ],
+        [
+          -0.8,
+          -1.9,
+          -2.7,
+          -2.1
+        ],
+        [
+          -1.1,
+          -2.1,
+          -3.2
+        ],
+        [
+          -2.0,
+          -1.7,
+          -1.2,
+          -1.8,
+          -2.0
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+      "note": "United States; 2012 to 2023; 316*; among marketers from for-profit companies; * Sample size provided refers only to the Fall 2023 survey. Read more",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "B2B marketing data spending and annual growth in the U.S. 2020-2025",
+      "unit": "Marketing data spending in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          2.5,
+          3.8
+        ],
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0
+        ]
+      ],
+      "source": "Expert(s) (Kelsey Voss); Insider Intelligence",
+      "note": "United States; 2020 to 2022; * Forecast. 2020 data comes from an earlier release. Read more",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Change in new business opportunities for agencies in the U.S. 2020-2023",
+      "unit": "",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        31.7,
+        31.7,
+        27.0,
+        27.0
+      ],
+      "series_rows": [
+        [
+          31.7,
+          31.7,
+          27.0,
+          27.0
+        ],
+        [
+          25.7,
+          25.7,
+          31.0,
+          31.0
+        ],
+        [
+          42.6,
+          42.6,
+          41.0,
+          41.0
+        ]
+      ],
+      "source": "MarketingProfs; RSW/US",
+      "note": "United States; 2020 to 2023; 250*; among agency executives; * Number of respondents in 2023. Data prior to 2023 was retrieved from an earlier release. Read more",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "U.S. businesses mobile marketing budget share 2023, by sector",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.0,
+        28.8,
+        2.0,
+        15.2
+      ],
+      "series_rows": [
+        [
+          2.0,
+          28.8,
+          2.0,
+          15.2
+        ],
+        [
+          10.0,
+          1.0,
+          314.0
+        ],
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey; Wall Street Journal",
+      "note": "United States; January 10 to February 1, 2023; 314 respondents; among marketers from for-profit companies",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Reasons for text marketing use in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        6.0,
+        400.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          6.0,
+          400.0
+        ]
+      ],
+      "source": "SimpleTexting",
+      "note": "United States; May 4 to 6, 2023; 400 respondents; among business owners and marketing managers",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Mobile internet users in the United States 2020-2029",
+      "unit": "Number of users in millions",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        250.45,
+        262.31,
+        279.04,
+        295.46
+      ],
+      "series_rows": [
+        [
+          311.36,
+          318.32,
+          322.53,
+          326.5,
+          330.25,
+          333.18
+        ],
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          250.45,
+          262.31,
+          279.04,
+          295.46
+        ]
+      ],
+      "source": "Statista",
+      "note": "United States; 2020 to 2029; users who access the internet via mobile broadband connection regardless of the device; * Forecast Read more",
+      "needs_review": true,
+      "page": 15
+    },
+    {
+      "title": "Reach of most popular U.S. smartphone apps 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        75.0,
+        65.0,
+        63.0
+      ],
+      "series_rows": [
+        [
+          75.0,
+          65.0,
+          63.0
+        ]
+      ],
+      "source": "comScore",
+      "note": "United States; November 2023; 18 years and older; iOS and Android platforms; smartphone only",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "U.S. businesses social media marketing budget share 2015-2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        9.9,
+        10.6,
+        10.5
+      ],
+      "series_rows": [
+        [
+          9.9,
+          10.6,
+          10.5
+        ],
+        [
+          14.9,
+          15.3,
+          15.4
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+      "note": "United States; 2015 to 2023; 314**; among marketers from for-profit companies; * Forecast. ** Sample size provided refers only to the 2023 survey. Read more",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Social media with highest ROAS in the U.S. & Canada 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        100.0,
+        2.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          100.0,
+          2.0,
+          10.0
+        ],
+        [
+          3.0,
+          2.0,
+          1.0
+        ]
+      ],
+      "source": "MarketingCharts; Smartly.io",
+      "note": "Canada, United States; as of February 2023; 100 respondents; among director-level respondents from B2C companies with revenue of one billion to 10 billion U.S. dollars annually",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Influencer marketing spending worldwide and in the U.S. 2022-2023",
+      "unit": "Influencer marketing spend in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        22.19,
+        26.09,
+        29.14,
+        34.08
+      ],
+      "series_rows": [
+        [
+          22.19,
+          7.0,
+          29.14
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          22.19,
+          26.09,
+          29.14,
+          34.08
+        ]
+      ],
+      "source": "MediaPost; PQ Media",
+      "note": "Worldwide, United States; 2022 and 2023",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Most used social media platforms by type in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6026.0,
+        7.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6026.0,
+          7.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Social media accounts users followed and bought from in the U.S. 2023, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        -26.0,
+        27.0,
+        -42.0,
+        43.0,
+        -58.0,
+        59.0,
+        -77.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          18.0,
+          -77.0
+        ],
+        [
+          18.0,
+          -26.0,
+          27.0,
+          -42.0,
+          43.0,
+          -58.0,
+          59.0,
+          -77.0
+        ]
+      ],
+      "source": "Klarna; Nepa",
+      "note": "United States; Q2 2023; 18-77 years",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Influencer marketing spend growth in the U.S. 2022-2023, by player type",
+      "unit": "",
+      "years": [],
+      "values": [
+        22.2,
+        17.6,
+        25.9,
+        20.6
+      ],
+      "series_rows": [
+        [
+          22.2,
+          17.6,
+          25.9,
+          20.6
+        ]
+      ],
+      "source": "MarketingCharts; PQ Media",
+      "note": "2022; * Forecast. Read more",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "Popularity of generative AI in marketing in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        2.0,
+        2.0,
+        100.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          2.0,
+          2.0,
+          100.0
+        ]
+      ],
+      "source": "Botco.ai; MarTech",
+      "note": "United States; March 2023; 1,000 respondents; B2B and B2C marketing professionals, three-quarters of them were from companies with 100 or more employees",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "Top ways in which B2B marketers use AI in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        30.0,
+        2.0,
+        30.0
+      ],
+      "series_rows": [
+        [
+          30.0,
+          2.0,
+          30.0
+        ]
+      ],
+      "source": "Sagefrog",
+      "note": "United States; 2023; >2,400; among professionals across B2B industries, including technology, healthcare, industrial, and business services",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Leading objectives of AI deployment according to marketers in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        17.0,
+        30.0,
+        300.0
+      ],
+      "series_rows": [
+        [
+          17.0,
+          30.0,
+          300.0
+        ]
+      ],
+      "source": "Sitecore",
+      "note": "United States; March 17 to 30, 2023; 300 respondents; among brand marketers who have deployed AI",
+      "needs_review": [],
+      "page": 29
+    },
+    {
+      "title": "Concerns about generative AI use among marketers in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        17.0,
+        30.0,
+        408.0
+      ],
+      "series_rows": [
+        [
+          17.0,
+          30.0,
+          408.0
+        ]
+      ],
+      "source": "Sitecore",
+      "note": "United States; March 17 to 30, 2023; 408 respondents; among brand marketers",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Top forms of regulation that should guide AI use in marketing in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        17.0,
+        30.0,
+        408.0
+      ],
+      "series_rows": [
+        [
+          17.0,
+          30.0,
+          408.0
+        ]
+      ],
+      "source": "Sitecore",
+      "note": "United States; March 17 to 30, 2023; 408 respondents; among brand marketers",
+      "needs_review": [],
+      "page": 31
+    },
+    {
+      "title": "Median annual wages of advertising, promotions, & marketing managers in the U.S. 2022",
+      "unit": "Median wages in U.S. dollars",
+      "years": [],
+      "values": [
+        140.04,
+        138.73,
+        132.82,
+        127.83,
+        46.31
+      ],
+      "series_rows": [
+        [
+          140.04,
+          138.73,
+          132.82,
+          127.83,
+          46.31
+        ]
+      ],
+      "source": "Bureau of Labor Statistics",
+      "note": "United States; May 2022; * Includes all occupations in the U.S. economy. Read more",
+      "needs_review": [],
+      "page": 35
+    },
+    {
+      "title": "Percentage of women among Fortune 500 CMOs in the U.S. 2021-2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        47.0,
+        500.0,
+        44.0,
+        500.0
+      ],
+      "series_rows": [
+        [
+          47.0,
+          500.0,
+          44.0,
+          500.0
+        ]
+      ],
+      "source": "Spencer Stuart",
+      "note": "United States; 2021 and 2022",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Share of underrepresented ethnic groups among Fortune 500 CMOs in the U.S. 2021-2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        14.0,
+        500.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          14.0,
+          500.0,
+          12.0
+        ]
+      ],
+      "source": "Spencer Stuart",
+      "note": "United States; 2021 and 2022",
+      "needs_review": [],
+      "page": 37
+    },
+    {
+      "title": "Average tenure of CMOs at the leading 100 advertisers in the U.S. 2004-2022",
+      "unit": "",
+      "years": [
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        44.0,
+        42.5,
+        41.1,
+        40.0,
+        40.0,
+        39.6
+      ],
+      "series_rows": [
+        [
+          100.0,
+          39.6,
+          3.3,
+          40.0
+        ],
+        [
+          23.6,
+          23.5,
+          23.2
+        ],
+        [
+          42.0,
+          43.3,
+          45.1,
+          45.4
+        ],
+        [
+          44.0,
+          42.5,
+          41.1,
+          40.0,
+          40.0,
+          39.6
+        ],
+        [
+          48.0,
+          44.1,
+          42.0
+        ]
+      ],
+      "source": "Spencer Stuart; Statista",
+      "note": "United States; 2004 to 2022; among the 100 most advertised brands at the end of each year; * Statista calculated the value based on the source's data. Data preceding 2022 comes from earlier releases. Read more",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Share of CEOs aware that CMOs had the C-suite's shortest tenure in the U.S. 2021-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        45.0,
+        45.0,
+        46.0,
+        46.0
+      ],
+      "series_rows": [
+        [
+          45.0,
+          45.0,
+          46.0,
+          46.0
+        ],
+        [
+          55.0,
+          55.0,
+          54.0,
+          54.0
+        ]
+      ],
+      "source": "Boathouse Group",
+      "note": "United States; June 2021, December 2021 to March 2022, and September to October 2023; 150*; among CEOs from top corporations in the U.S.; * Number of respondents in 2023. The source does not specify the survey type. Read more",
+      "needs_review": true,
+      "page": 41
+    },
+    {
+      "title": "CEOs' opinion on CMOs with short tenures in the U.S. 2021-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        20.0,
+        20.0,
+        19.0,
+        19.0
+      ],
+      "series_rows": [
+        [
+          20.0,
+          20.0,
+          19.0,
+          19.0
+        ],
+        [
+          80.0,
+          80.0,
+          81.0,
+          81.0
+        ]
+      ],
+      "source": "Boathouse Group",
+      "note": "United States; June 2021, December 2021 to March 2022, and September to October 2023; 150*; among CEOs from top corporations in the U.S.; * Number of respondents in 2023. The source does not specify the survey type. Read more",
+      "needs_review": true,
+      "page": 42
+    },
+    {
+      "title": "Leading problems CEOs wanted marketing to help them solve in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        9.0,
+        4.0,
+        75.0,
+        250.0
+      ],
+      "series_rows": [
+        [
+          9.0,
+          4.0,
+          75.0,
+          250.0
+        ]
+      ],
+      "source": "Boathouse Group; Gerson Lehrman Group",
+      "note": "United States; September 9 to October 4, 2023; 75 respondents; among CEOs from organizations with at least 250 million U.S. dollars in annual revenues",
+      "needs_review": [],
+      "page": 45
+    },
+    {
+      "title": "Top external challenges CMOs expected to face in Canada & the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        607.0,
+        206.0,
+        401.0
+      ],
+      "series_rows": [
+        [
+          607.0,
+          206.0,
+          401.0
+        ]
+      ],
+      "source": "B2B International; Dentsu",
+      "note": "Canada, United States; August 2023; 607*; * Number of responding CMOs in Canada: 206. Number of responding CMOs in the United States: 401. The source does not specify the survey type. Multiple answers were possible. Read more",
+      "needs_review": [],
+      "page": 47
+    },
+    {
+      "title": "Most challenging media transformations according to CMOs in Canada & the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        607.0,
+        206.0,
+        401.0
+      ],
+      "series_rows": [
+        [
+          607.0,
+          206.0,
+          401.0
+        ]
+      ],
+      "source": "B2B International; Dentsu",
+      "note": "Canada, United States; August 2023; 607*; * Number of responding CMOs in Canada: 206. Number of responding CMOs in the United States: 401. The source does not specify the survey type. Multiple answers were possible. Read more",
+      "needs_review": [],
+      "page": 48
+    },
+    {
+      "title": "Companies' top challenges in the next 12 months according to CMOs in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        10.0,
+        1.0,
+        314.0
+      ],
+      "series_rows": [
+        [
+          10.0,
+          1.0,
+          314.0
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+      "note": "United States; January 10 to February 1, 2023; 314 respondents; only respondents rating each response as a top challenge; among marketing leaders at for-profit companies",
+      "needs_review": [],
+      "page": 49
+    }
+  ]
+}

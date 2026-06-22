@@ -1,0 +1,603 @@
+{
+  "study": "study_id57641_health-foods-and-dietary-supplements-market-in-australia",
+  "file": "research/statista/Health & Wellness/study_id57641_health-foods-and-dietary-supplements-market-in-australia.pdf",
+  "charts": [
+    {
+      "title": "Revenue of the vitamins & minerals industry worldwide 2020-2029",
+      "unit": "Description: The global revenue in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously increase between 2024 and 2029 by in total 12.3 billion U.S. dollars (+38.52 percent). After the ninth consecutive increasing year, the",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        50.0,
+        23.56,
+        25.89,
+        27.5,
+        29.7,
+        31.93,
+        34.24,
+        36.7,
+        39.2,
+        41.69,
+        44.18,
+        3.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0,
+          23.56,
+          25.89,
+          27.5,
+          29.7,
+          31.93,
+          34.24,
+          36.7,
+          39.2,
+          41.69,
+          44.18,
+          3.0
+        ]
+      ],
+      "source": "Statista; Statista Consumer Market Insights",
+      "note": "Worldwide; 2020 to 2029",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Export value of vitamins worldwide in 2021, by country",
+      "unit": "Export value in million U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        3.702,
+        1.02
+      ],
+      "series_rows": [
+        [
+          460.0,
+          448.0,
+          423.0,
+          359.0,
+          398.0,
+          293.0,
+          212.0,
+          142.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          3.702,
+          1.02
+        ]
+      ],
+      "source": "UN Comtrade",
+      "note": "Worldwide; 2021",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Revenue of the complementary medicine sector Australia FY 2011-2021",
+      "unit": "Revenue in billion Australian dollars",
+      "years": [
+        "2011",
+        "2015",
+        "2018",
+        "2021"
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        1.9,
+        3.5,
+        4.6,
+        5.69,
+        5.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          1.9,
+          3.5,
+          4.6,
+          5.69,
+          5.0
+        ]
+      ],
+      "source": "Complementary Medicines Australia",
+      "note": "Australia; financial years 2011, 2015, 2018 and 2021",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Leading personal products companies on ASX Australia 2023, by market cap",
+      "unit": "Market cap in million Australian dollars",
+      "years": [],
+      "values": [
+        59.02,
+        40.0,
+        22.82,
+        21.93,
+        14.86,
+        9.14,
+        9.13,
+        4.42,
+        4.09,
+        3.52,
+        3.42,
+        2.79
+      ],
+      "series_rows": [
+        [
+          59.02,
+          40.0,
+          22.82,
+          21.93,
+          14.86,
+          9.14,
+          9.13,
+          4.42,
+          4.09,
+          3.52,
+          3.42,
+          2.79
+        ]
+      ],
+      "source": "ASX; Listcorp",
+      "note": "Australia; as of October 2023",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Revenue of the complementary medicine industry Australia FY 2021, by type",
+      "unit": "Revenue in billion Australian dollars",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        3.1,
+        1.4,
+        0.75,
+        0.44,
+        9.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          3.1,
+          1.4,
+          0.75,
+          0.44,
+          9.0
+        ]
+      ],
+      "source": "Complementary Medicines Australia",
+      "note": "Australia; Financial year 2021",
+      "needs_review": [],
+      "page": 9
+    },
+    {
+      "title": "Vitamins and dietary supplement sales in Australia FY 2018-2021",
+      "unit": "sales in billion Australian dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        2.0,
+        1.8,
+        10.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          1.8,
+          10.0
+        ]
+      ],
+      "source": "Blackmores; IQVIA",
+      "note": "Australia; financial years 2018 to 2021",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Revenue of Blackmores Group FY 2022, by region",
+      "unit": "Revenue in million Australian dollars",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        288.0,
+        216.0,
+        146.0,
+        13.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          288.0,
+          216.0,
+          146.0,
+          13.0
+        ]
+      ],
+      "source": "Blackmores",
+      "note": "Worldwide, Australia, China; FY 2022",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "ANZ segment revenue of Blackmores Group FY 2017-2022",
+      "unit": "Revenue in million Australian dollars",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        344.0,
+        354.0,
+        359.0
+      ],
+      "series_rows": [
+        [
+          344.0,
+          354.0,
+          359.0
+        ]
+      ],
+      "source": "Blackmores",
+      "note": "Australia; FY 2017 to FY 2022",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Average daily vitamin intake per capita in Australia FY 2021, by type",
+      "unit": "",
+      "years": [],
+      "values": [
+        382.9,
+        2.412,
+        878.5,
+        1.5,
+        1.8,
+        22.1,
+        37.5,
+        287.5,
+        170.3,
+        457.7,
+        571.9,
+        1.7,
+        4.3,
+        99.0,
+        13.8
+      ],
+      "series_rows": [
+        [
+          99.0,
+          9900.0,
+          0.0
+        ],
+        [
+          1.0,
+          30.0,
+          1.0,
+          30.0
+        ],
+        [
+          382.9,
+          2.412,
+          878.5,
+          1.5,
+          1.8,
+          22.1,
+          37.5,
+          287.5,
+          170.3,
+          457.7,
+          571.9,
+          1.7,
+          4.3,
+          99.0,
+          13.8
+        ]
+      ],
+      "source": "Australian Bureau of Statistics",
+      "note": "FY 2021; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Average daily mineral intake per capita in Australia FY 2021, by type",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5
+      ],
+      "series_rows": [
+        [
+          1.0,
+          30.0,
+          1.0,
+          30.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5
+        ],
+        [
+          785.0,
+          0.17,
+          10.3,
+          289.8,
+          1.367
+        ]
+      ],
+      "source": "Australian Bureau of Statistics",
+      "note": "FY 2021; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Yearly financial benefits from complementary medicine use in Australia 2015-2020",
+      "unit": "Amount in million Australian dollars",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        212.0,
+        922.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          2.0,
+          212.0,
+          922.0
+        ],
+        [
+          27.0,
+          187.0,
+          900.0,
+          68.0,
+          405.0,
+          27.0,
+          340.0,
+          249.0,
+          1.8,
+          176.0,
+          530.0,
+          36.0,
+          300.0
+        ]
+      ],
+      "source": "ASMI; Complementary Medicines Australia; Frost & Sullivan",
+      "note": "Australia; as of October 2014",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Leading complementary medicines purchased Australia 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        26.0,
+        25.0,
+        23.0
+      ],
+      "series_rows": [
+        [
+          26.0,
+          25.0,
+          23.0
+        ]
+      ],
+      "source": "Complementary Medicines Australia",
+      "note": "Australia; 2021; purchaced in the last 12 months",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Gender distribution of consumers that purchased vitamin products in Australia 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        25.0,
+        25.0,
+        -34.0,
+        35.0,
+        -49.0,
+        50.0,
+        -64.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          52.0,
+          50.0,
+          64.0,
+          38.0
+        ],
+        [
+          25.0,
+          25.0,
+          -34.0,
+          35.0,
+          -49.0,
+          50.0,
+          -64.0,
+          64.0
+        ]
+      ],
+      "source": "Roy Morgan",
+      "note": "Australia; April 2019 to March 2020; 13,208 respondents; 14 years and older; respondents had purchased vitamin products within the last six months",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Avoided hospitalizations through CAM medicine use by condition in Australia 2015-2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        7.815,
+        37.715,
+        4.905,
+        6.984,
+        1.095,
+        40.855,
+        26.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          7.815,
+          37.715,
+          4.905,
+          6.984,
+          1.095,
+          40.855,
+          26.0
+        ]
+      ],
+      "source": "ASMI; Complementary Medicines Australia; Frost & Sullivan",
+      "note": "Australia; as of October 2014",
+      "needs_review": [],
+      "page": 26
+    }
+  ]
+}

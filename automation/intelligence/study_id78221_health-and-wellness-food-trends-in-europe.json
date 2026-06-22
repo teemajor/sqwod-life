@@ -1,0 +1,1454 @@
+{
+  "study": "study_id78221_health-and-wellness-food-trends-in-europe",
+  "file": "research/statista/Health & Wellness/study_id78221_health-and-wellness-food-trends-in-europe.pdf",
+  "charts": [
+    {
+      "title": "Regularly consumed groceries in the EU-27 in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        31.604,
+        18.0,
+        -64.0,
+        27.0,
+        18.0
+      ],
+      "series_rows": [
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": [],
+      "page": 4
+    },
+    {
+      "title": "Consumers' attitudes towards food in the EU-27 in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        31.604,
+        18.0,
+        -64.0,
+        27.0,
+        18.0
+      ],
+      "series_rows": [
+        [
+          60.0,
+          18.0,
+          -27.0,
+          12.0
+        ],
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Consumers' purchase criteria for food in the EU-27 in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        31.604,
+        18.0,
+        -64.0,
+        27.0,
+        18.0
+      ],
+      "series_rows": [
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": [],
+      "page": 6
+    },
+    {
+      "title": "Share of consumers in the EU-27 trying to eat healthy in 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        19.0,
+        20.0,
+        29.0,
+        30.0,
+        39.0,
+        40.0,
+        49.0,
+        50.0,
+        59.0,
+        60.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          18.0,
+          19.0,
+          48.0
+        ],
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ],
+        [
+          18.0,
+          19.0,
+          20.0,
+          29.0,
+          30.0,
+          39.0,
+          40.0,
+          49.0,
+          50.0,
+          59.0,
+          60.0,
+          64.0
+        ],
+        [
+          55.0,
+          55.0,
+          59.0,
+          59.0,
+          61.0,
+          61.0,
+          63.0,
+          63.0,
+          65.0,
+          65.0
+        ]
+      ],
+      "source": "Statista Consumer Market Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Share of consumers in the EU-27 that cannot afford to eat healthy 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        19.0,
+        20.0,
+        29.0,
+        30.0,
+        39.0,
+        40.0,
+        49.0,
+        50.0,
+        59.0,
+        60.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          18.0,
+          19.0,
+          13.0
+        ],
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ],
+        [
+          18.0,
+          19.0,
+          20.0,
+          29.0,
+          30.0,
+          39.0,
+          40.0,
+          49.0,
+          50.0,
+          59.0,
+          60.0,
+          64.0
+        ],
+        [
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          12.0,
+          12.0,
+          10.0,
+          10.0,
+          9.0,
+          9.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "Share of consumers with food intolerances in the EU-27 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        19.0,
+        20.0,
+        29.0,
+        30.0,
+        39.0,
+        40.0,
+        49.0,
+        50.0,
+        59.0,
+        60.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          18.0,
+          19.0,
+          15.0,
+          60.0,
+          64.0
+        ],
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ],
+        [
+          18.0,
+          19.0,
+          20.0,
+          29.0,
+          30.0,
+          39.0,
+          40.0,
+          49.0,
+          50.0,
+          59.0,
+          60.0,
+          64.0
+        ],
+        [
+          15.0,
+          15.0,
+          16.0,
+          16.0,
+          13.0,
+          13.0,
+          11.0,
+          11.0,
+          9.0,
+          9.0,
+          6.0,
+          6.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Consumers in the EU-27 avoiding artificial flavors & preservatives 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        19.0,
+        20.0,
+        29.0,
+        30.0,
+        39.0,
+        40.0,
+        49.0,
+        50.0,
+        59.0,
+        60.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          18.0,
+          19.0,
+          60.0,
+          64.0
+        ],
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ],
+        [
+          18.0,
+          19.0,
+          20.0,
+          29.0,
+          30.0,
+          39.0,
+          40.0,
+          49.0,
+          50.0,
+          59.0,
+          60.0,
+          64.0
+        ],
+        [
+          25.0,
+          25.0,
+          30.0,
+          30.0,
+          36.0,
+          36.0,
+          40.0,
+          40.0,
+          44.0,
+          44.0,
+          47.0,
+          47.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Types of diets and nutritional habits followed in the EU-27 in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        56.0,
+        14.0,
+        14.0,
+        9.0,
+        7.0,
+        6.0,
+        4.0,
+        3.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          31.614,
+          18.0,
+          -64.0,
+          18.0,
+          27.0
+        ],
+        [
+          56.0,
+          14.0,
+          14.0,
+          9.0,
+          7.0,
+          6.0,
+          4.0,
+          3.0,
+          2.0
+        ]
+      ],
+      "source": "Statista; Statista Consumer Insights",
+      "note": "EU; July 2022 to June 2023; 31,614 respondents; 18-64 years; Results are an aggregation of four surveys carried out during the stated time period. Results cover 18 out of 27 countries and are weighted*",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Vegetarianism and veganism among young adults in selected European countries 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        5.0,
+        5.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          5.0,
+          5.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "France, Germany, Italy, Poland, Spain; April 2021 to March 2022*; 18-29 years; Resident online population, data aggregates four survey waves and shows its average",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Share of pescetarians in selected European countries in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          1.0,
+          18.0,
+          -64.0
+        ],
+        [
+          5.0,
+          5.0,
+          5.0
+        ],
+        [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        [
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0,
+          3.0
+        ],
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Europe; Q2 2022 to Q1 2023*; 18-64 years",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Share of people following a flexitarian diet in Europe 2023, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        14.0,
+        13.0,
+        13.0,
+        13.0,
+        13.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        12.0,
+        11.0,
+        10.0,
+        9.0,
+        8.0,
+        8.0,
+        8.0,
+        7.0,
+        6.0,
+        5.0
+      ],
+      "series_rows": [
+        [
+          14.0,
+          13.0,
+          13.0,
+          13.0,
+          13.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          12.0,
+          11.0,
+          10.0,
+          9.0,
+          8.0,
+          8.0,
+          8.0,
+          7.0,
+          6.0,
+          5.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Europe; 2022 and 2023*; 18-64 years",
+      "needs_review": [],
+      "page": 17
+    },
+    {
+      "title": "Share of consumers following a gluten-free diet in selected European countries 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.0,
+        25.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6.0,
+          25.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Europe; October 6, 2022, to September 25, 2023*; 18-64 years; Data aggregates fours survey waves and gives their average.",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Share of consumers following a lactose-free diet in selected European countries 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.0,
+        25.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6.0,
+          25.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Europe; October 6, 2022, to September 25, 2023; 18-64 years; The results aggregate four survey waves and shows the average result.",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "European Union and Europe: organic retail sales value from 2004 to 2022",
+      "unit": "Sales value in billion euros",
+      "years": [
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        15.2,
+        16.3,
+        16.9,
+        18.0,
+        19.6,
+        20.9,
+        22.1,
+        24.0
+      ],
+      "series_rows": [
+        [
+          16.1,
+          17.4,
+          18.1,
+          19.5,
+          21.3,
+          22.7,
+          24.2
+        ],
+        [
+          15.2,
+          16.3,
+          16.9,
+          18.0,
+          19.6,
+          20.9,
+          22.1,
+          24.0
+        ],
+        [
+          44.8,
+          46.7,
+          45.1
+        ],
+        [
+          5.0,
+          15.0,
+          25.0,
+          35.0,
+          45.0,
+          55.0,
+          65.0
+        ],
+        [
+          26.3,
+          30.1,
+          33.8,
+          37.3,
+          40.7,
+          45.0,
+          52.0
+        ],
+        [
+          27.4,
+          30.9,
+          34.3,
+          37.4,
+          41.5
+        ]
+      ],
+      "source": "AMI; European Commission; Forschungsinstitut für biologischen Landbau; OrganicDataNetwork",
+      "note": "Europe; 2007 to 2022",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Organic products: retail sales value in selected countries in Europe in 2022",
+      "unit": "Retail sales in million euros",
+      "years": [],
+      "values": [
+        15.31,
+        12.076,
+        3.855,
+        3.66,
+        3.413,
+        2.607,
+        2.532,
+        2.496,
+        2.167,
+        1.435,
+        955.0,
+        460.0,
+        375.0,
+        310.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          15.31,
+          12.076,
+          3.855,
+          3.66,
+          3.413,
+          2.607,
+          2.532,
+          2.496,
+          2.167,
+          1.435,
+          955.0,
+          460.0,
+          375.0,
+          310.0,
+          235.0
+        ]
+      ],
+      "source": "AMI; Forschungsinstitut für biologischen Landbau; IFOAM",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Per capita consumption of organic food in the European Union (EU-27) 2005-2022",
+      "unit": "",
+      "years": [
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2022"
+      ],
+      "values": [
+        26.4,
+        29.2,
+        31.9,
+        33.8,
+        36.1,
+        39.4,
+        42.7,
+        44.1
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          102.0,
+          80.0
+        ],
+        [
+          26.4,
+          29.2,
+          31.9,
+          33.8,
+          36.1,
+          39.4,
+          42.7,
+          44.1
+        ],
+        [
+          102.0,
+          104.0,
+          102.0
+        ],
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          22.4
+        ],
+        [
+          48.0,
+          54.2,
+          60.5,
+          67.2,
+          76.2,
+          84.0
+        ]
+      ],
+      "source": "AMI; Forschungsinstitut für biologischen Landbau; IFOAM",
+      "note": "Europe; 2005 to 2022; *Starting in 2021, the United Kingdom was no longer a part of the European Union and is no longer included in the data. Read more",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Organic food: per capita spending in selected countries in Europe 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        437.0,
+        365.0,
+        274.0,
+        259.0,
+        248.0,
+        181.0,
+        176.0,
+        85.0,
+        84.0,
+        81.0,
+        102.0
+      ],
+      "series_rows": [
+        [
+          437.0,
+          365.0,
+          274.0,
+          259.0,
+          248.0,
+          181.0,
+          176.0,
+          85.0,
+          84.0,
+          81.0,
+          102.0
+        ]
+      ],
+      "source": "AMI; Forschungsinstitut für biologischen Landbau; IFOAM",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Market share of organic bread in selected countries Europe 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.7,
+        0.8,
+        0.7,
+        0.2
+      ],
+      "series_rows": [
+        [
+          26.3,
+          7.1,
+          0.2
+        ],
+        [
+          1.7,
+          0.8,
+          0.7,
+          0.2
+        ]
+      ],
+      "source": "AMI; Forschungsinstitut für biologischen Landbau; IFOAM",
+      "note": "Europe; 2021 to 2022",
+      "needs_review": true,
+      "page": 29
+    },
+    {
+      "title": "Meat consumption volume in the European Union (EU-27) from 2020-2032",
+      "unit": "",
+      "years": [
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029",
+        "2030",
+        "2031",
+        "2032"
+      ],
+      "values": [
+        40.0,
+        37.937,
+        37.946,
+        37.786,
+        37.665,
+        37.353,
+        37.138,
+        37.003,
+        36.919,
+        36.851,
+        36.711,
+        36.578
+      ],
+      "series_rows": [
+        [
+          40.0,
+          37.937,
+          37.946,
+          37.786,
+          37.665,
+          37.353,
+          37.138,
+          37.003,
+          36.919,
+          36.851,
+          36.711,
+          36.578
+        ]
+      ],
+      "source": "European Commission",
+      "note": "Europe, EU; 2022; Values for 2023 onwards are forecast.; *C.w.e. stand for carcass weight equivalent. Read more",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Per capita consumption of meat in EU-27 2000-2032, by type",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.911,
+        9.0,
+        10.91,
+        9.0,
+        10.31,
+        3.0,
+        9.59,
+        5.0
+      ],
+      "series_rows": [
+        [
+          -2002.0,
+          -2012.0,
+          -2022.0
+        ],
+        [
+          11.911,
+          9.0,
+          10.91,
+          9.0,
+          10.31,
+          3.0,
+          9.59,
+          5.0
+        ],
+        [
+          3535.0,
+          34.134,
+          1.0,
+          32.432,
+          4.0,
+          31.131,
+          1.0
+        ],
+        [
+          17.617,
+          6.0,
+          19.919,
+          9.0,
+          23.423,
+          4.0,
+          24.124,
+          1.0
+        ],
+        [
+          2.22,
+          2.0,
+          1.61,
+          6.0,
+          1.31,
+          3.0,
+          1.31,
+          3.0
+        ]
+      ],
+      "source": "European Commission",
+      "note": "Europe, EU; 2023; *Forecast",
+      "needs_review": true,
+      "page": 32
+    },
+    {
+      "title": "Share of consumers in the EU-27 that eat meat in 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        19.0,
+        20.0,
+        29.0,
+        30.0,
+        39.0,
+        40.0,
+        49.0,
+        50.0,
+        59.0,
+        60.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          18.0,
+          19.0,
+          19.0
+        ],
+        [
+          31.604,
+          18.0,
+          -64.0,
+          27.0,
+          18.0
+        ],
+        [
+          18.0,
+          19.0,
+          20.0,
+          29.0,
+          30.0,
+          39.0,
+          40.0,
+          49.0,
+          50.0,
+          59.0,
+          60.0,
+          64.0
+        ],
+        [
+          81.0,
+          81.0,
+          85.0,
+          85.0,
+          88.0,
+          88.0,
+          92.0,
+          92.0,
+          94.0,
+          94.0,
+          96.0,
+          96.0
+        ],
+        [
+          19.0,
+          19.0,
+          15.0,
+          15.0,
+          12.0,
+          12.0,
+          8.0,
+          8.0,
+          6.0,
+          6.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "source": "Statista Consumer Market Insights",
+      "note": "EU; January 2023 to December 2023; 31,604 respondents; 18-64 years; The results are based on four survey waves, which have been aggregated. The average is shown. Out of the 27 EU countries, 18 are included in the coverage.",
+      "needs_review": true,
+      "page": 33
+    },
+    {
+      "title": "Revenue of the meat substitutes industry in the EU-27 2018-2028",
+      "unit": "Revenue in billion US dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        36.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          36.0
+        ]
+      ],
+      "source": "Statista; Statista Consumer Market Insights",
+      "note": "Europe, EU; 2018 to 2028",
+      "needs_review": true,
+      "page": 36
+    },
+    {
+      "title": "Meat substitutes market size in selected countries in Europe 2022",
+      "unit": "Sales value in million euros",
+      "years": [],
+      "values": [
+        643.0,
+        530.0,
+        221.0,
+        168.0,
+        113.0,
+        87.0,
+        85.0,
+        54.0,
+        38.0,
+        31.0,
+        25.0,
+        10.0,
+        8.0
+      ],
+      "series_rows": [
+        [
+          643.0,
+          530.0,
+          221.0,
+          168.0,
+          113.0,
+          87.0,
+          85.0,
+          54.0,
+          38.0,
+          31.0,
+          25.0,
+          10.0,
+          8.0
+        ]
+      ],
+      "source": "Nielsen; The Good Food Institute",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 37
+    },
+    {
+      "title": "Sales value of plant-based food in Europe in 2022, by category",
+      "unit": "Sales in million euros",
+      "years": [],
+      "values": [
+        2.2,
+        2.0,
+        515.0,
+        247.0,
+        181.0,
+        174.0,
+        165.0,
+        139.0,
+        88.0,
+        43.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ],
+        [
+          2.2,
+          2.0,
+          515.0,
+          247.0,
+          181.0,
+          174.0,
+          165.0,
+          139.0,
+          88.0,
+          43.0
+        ]
+      ],
+      "source": "NielsenIQ; The Good Food Institute",
+      "note": "Europe; 2022",
+      "needs_review": true,
+      "page": 38
+    },
+    {
+      "title": "Per-capita consumption of meat substitutes in the EU-27 2018-2028",
+      "unit": "",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.1,
+        0.2,
+        0.2,
+        0.3,
+        0.3,
+        0.4,
+        0.4,
+        0.5,
+        0.13,
+        0.15,
+        0.19,
+        0.22,
+        0.25,
+        0.27,
+        0.3,
+        0.33,
+        0.35,
+        0.38,
+        0.4,
+        39.0
+      ],
+      "series_rows": [
+        [
+          0.1,
+          0.2,
+          0.2,
+          0.3,
+          0.3,
+          0.4,
+          0.4,
+          0.5,
+          0.13,
+          0.15,
+          0.19,
+          0.22,
+          0.25,
+          0.27,
+          0.3,
+          0.33,
+          0.35,
+          0.38,
+          0.4,
+          39.0
+        ]
+      ],
+      "source": "Statista; Statista Consumer Market Insights",
+      "note": "Europe, EU; 2018 to 2028",
+      "needs_review": true,
+      "page": 39
+    },
+    {
+      "title": "Consumers who regularly consumed meat substitutes in Europe in 2023, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        21.0
+      ],
+      "series_rows": [
+        [
+          38.993,
+          18.0,
+          -64.0
+        ],
+        [
+          13.0,
+          13.0,
+          13.0
+        ],
+        [
+          12.0,
+          12.0,
+          12.0
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          21.0
+        ],
+        [
+          4.0,
+          15.0,
+          40.0
+        ]
+      ],
+      "source": "Statista; Statista Consumer Insights",
+      "note": "Europe; July 2022 to June 2023*; 38,993 respondents; 18-64 years",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "Revenue in the sweeteners segment of the food market EU-27 2018-2028",
+      "unit": "Description: The revenue in the sweeteners segment of the food market in the European Union-27 was forecast to continuously increase between 2024 and 2028 by in total 1.1 billion U.S. dollars (+17.19 percent). After the ninth consecutive increasing year, the",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        5.72
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          1.1,
+          17.19
+        ],
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          5.72
+        ],
+        [
+          5.6,
+          5.89,
+          6.15,
+          6.4,
+          6.67,
+          6.94,
+          7.21,
+          7.5,
+          42.0
+        ]
+      ],
+      "source": "Statista",
+      "note": "EU",
+      "needs_review": true,
+      "page": 42
+    },
+    {
+      "title": "Consumption volume in the sweeteners segment of the food market EU-27 2018-2028",
+      "unit": "In billion kilograms",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        2.53,
+        2.5,
+        2.49,
+        2.46,
+        2.43,
+        2.47,
+        2.52,
+        2.58,
+        2.64,
+        2.69,
+        2.75
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          0.2,
+          7.94
+        ],
+        [
+          2.53,
+          2.5,
+          2.49,
+          2.46,
+          2.43,
+          2.47,
+          2.52,
+          2.58,
+          2.64,
+          2.69,
+          2.75
+        ]
+      ],
+      "source": "Statista",
+      "note": "EU",
+      "needs_review": true,
+      "page": 43
+    },
+    {
+      "title": "Average per capita consumption of sweeteners in the EU-27 2018-2028",
+      "unit": "",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        5.7,
+        5.63,
+        5.6,
+        5.51,
+        5.47,
+        5.55,
+        5.68,
+        5.82,
+        5.96,
+        6.08,
+        6.2
+      ],
+      "series_rows": [
+        [
+          -27.0,
+          0.5,
+          8.8
+        ],
+        [
+          5.7,
+          5.63,
+          5.6,
+          5.51,
+          5.47,
+          5.55,
+          5.68,
+          5.82,
+          5.96,
+          6.08,
+          6.2
+        ]
+      ],
+      "source": "Statista",
+      "note": "EU",
+      "needs_review": true,
+      "page": 44
+    }
+  ]
+}

@@ -1,0 +1,803 @@
+{
+  "study": "study_id112786_influencer-marketing-in-china",
+  "file": "research/statista/Fitness Marketing/study_id112786_influencer-marketing-in-china.pdf",
+  "charts": [
+    {
+      "title": "Global influencer marketing value 2016-2024",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        1.7,
+        3.0,
+        4.6,
+        6.5,
+        9.7,
+        13.8,
+        16.4,
+        21.1,
+        24.0,
+        3.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          1.7,
+          3.0,
+          4.6,
+          6.5,
+          9.7,
+          13.8,
+          16.4,
+          21.1,
+          24.0,
+          3.0
+        ]
+      ],
+      "source": "Influencer Marketing Hub",
+      "note": "Worldwide; 2016 to 2023; * Forecast. Read more",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Influencer marketing value in China 2018-2023",
+      "unit": "Market size in billion yuan",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        30.0,
+        49.0,
+        67.0,
+        80.0,
+        86.0,
+        100.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          30.0,
+          49.0,
+          67.0,
+          80.0,
+          86.0,
+          100.0,
+          4.0
+        ]
+      ],
+      "source": "chinabaogao.com",
+      "note": "China; 2018 to 2022; * Estimate. KOL (aka key opinion leader) is more commonly used to refer to an influencer marketing practitioner in China. Read more",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Number of social media users in China 2018-2027",
+      "unit": "Users in millions",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        758.87,
+        828.48,
+        901.3,
+        961.02
+      ],
+      "series_rows": [
+        [
+          1.062,
+          99.0,
+          1.105,
+          3.0,
+          1.142,
+          72.0,
+          1.175,
+          82.0,
+          1.205,
+          6.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          758.87,
+          828.48,
+          901.3,
+          961.02
+        ]
+      ],
+      "source": "Statista",
+      "note": "China; 2018 to 2022; excluding Hong Kong; *Forecast. Read more",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Major brand information sources in China Q3 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.0,
+        16.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          16.0,
+          -64.0
+        ]
+      ],
+      "source": "DataReportal; GWI; Hootsuite; Meltwater; We Are Social",
+      "note": "China; Q3 2023; 16-64 years",
+      "needs_review": [],
+      "page": 6
+    },
+    {
+      "title": "Leading content types of recommendation-based marketing in China 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        70.0,
+        66.5,
+        66.3
+      ],
+      "series_rows": [
+        [
+          70.0,
+          66.5,
+          66.3
+        ]
+      ],
+      "source": "iiMedia Research",
+      "note": "China; as of March 2022; 1,702 respondents",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Major formats of social marketing in China 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.0,
+        15.0,
+        257.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          15.0,
+          257.0
+        ]
+      ],
+      "source": "Miaozhen Systems; Various sources (GDMS; M360; chinanews.com)",
+      "note": "China; September 15 to November 15, 2023; 257 respondents; among advertisers",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "Importance of influencer promotion in social marketing in China 2019-2024",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        15.0,
+        15.0,
+        257.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          15.0,
+          257.0
+        ],
+        [
+          63.0,
+          63.0,
+          62.0
+        ]
+      ],
+      "source": "Miaozhen Systems; Various sources (GDMS; M360; China News)",
+      "note": "China; September 15  to November 15, 2023; 257 respondents; among advertisers; *Estimate. The survey question was phrased by the source as: \" Where will your company's social marketing focus be in 2024? (Multiple answers allowed)\"  [...] Re",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Motivations to use influencer marketing in China 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.0,
+        15.0,
+        257.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          15.0,
+          257.0
+        ]
+      ],
+      "source": "China Advertising Association; Miaozhen Systems; Website (xueerxing.com)",
+      "note": "China; September 15 to November 15, 2023; 257 respondents; among advertisers",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Problems of influencer marketing among advertisers in China 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        8.0,
+        8.0,
+        270.0
+      ],
+      "series_rows": [
+        [
+          8.0,
+          8.0,
+          270.0
+        ]
+      ],
+      "source": "199IT; Miaozhen Systems; Various sources (China Advertising Association)",
+      "note": "China; October 8 to November 8, 2021; 270 respondents; among advertisers",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Activeness of top-tier influencers in China 2021, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.7,
+        4.3,
+        1.4,
+        1.4,
+        1.1,
+        1.0
+      ],
+      "series_rows": [
+        [
+          5.7,
+          4.3,
+          1.4,
+          1.4,
+          1.1,
+          1.0
+        ]
+      ],
+      "source": "QuestMobile",
+      "note": "China; January to April 2021",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Active userbase of influencers in China 2022, by platform",
+      "unit": "Number of active users in millions",
+      "years": [],
+      "values": [
+        810.0,
+        604.0,
+        394.0,
+        323.0,
+        160.0,
+        142.0
+      ],
+      "series_rows": [
+        [
+          810.0,
+          604.0,
+          394.0,
+          323.0,
+          160.0,
+          142.0
+        ]
+      ],
+      "source": "QuestMobile",
+      "note": "China; May 2022",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Impressions per post of top-tier influencers in China 2021, by channel",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.2,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        800.0,
+        600.0,
+        200.0,
+        75.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4
+        ],
+        [
+          1.2,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          800.0,
+          600.0,
+          200.0,
+          75.0
+        ]
+      ],
+      "source": "Parklu",
+      "note": "China; as of June 2021",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Influencer hierarchy on main social media platforms in China 2022, by fan base",
+      "unit": "",
+      "years": [],
+      "values": [
+        -2.0,
+        5000.0,
+        1000.0,
+        0.0,
+        60.0,
+        100.0,
+        500.0,
+        1000.0,
+        5000.0,
+        1000.0,
+        1500.0
+      ],
+      "series_rows": [
+        [
+          -1.0,
+          1000.0,
+          0.0,
+          100.0,
+          1000.0,
+          5000.0,
+          1500.0
+        ],
+        [
+          -2.0,
+          5000.0,
+          1000.0,
+          0.0,
+          60.0,
+          100.0,
+          500.0,
+          1000.0,
+          5000.0,
+          1000.0,
+          1500.0
+        ],
+        [
+          -3.0,
+          1000.0,
+          0.0,
+          5000.0,
+          20.0,
+          60.0,
+          200.0,
+          500.0,
+          500.0,
+          600.0,
+          1000.0
+        ],
+        [
+          -4.0,
+          100.0,
+          1000.0,
+          0.5,
+          20.0,
+          50.0,
+          200.0,
+          100.0,
+          500.0,
+          200.0,
+          600.0
+        ],
+        [
+          -5.0,
+          10.0,
+          100.0,
+          5.0,
+          50.0,
+          10.0,
+          100.0,
+          5.0,
+          200.0
+        ]
+      ],
+      "source": "China Advertising Association; Miaozhen Systems; Website (chinatradingdesk.com)",
+      "note": "China; 2022; *Due to the setting of WeChat, the levels were classified by number of viewership, instead of followers, and only were divided in four tiers. Figures were the lowest level to be classified into each tier. Read more",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Most successful fashion influencers on Wechat in China 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        893.6,
+        866.9,
+        859.0
+      ],
+      "series_rows": [
+        [
+          893.6,
+          866.9,
+          859.0
+        ]
+      ],
+      "source": "Newrank",
+      "note": "China; June 2023",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Most-followed influencers on Douyin in China 2023",
+      "unit": "Number of fans in millions",
+      "years": [],
+      "values": [
+        118.0,
+        69.45,
+        60.45,
+        52.81,
+        49.06,
+        45.65
+      ],
+      "series_rows": [
+        [
+          22.0,
+          118.0,
+          69.0
+        ],
+        [
+          118.0,
+          69.45,
+          60.45,
+          52.81,
+          49.06,
+          45.65
+        ]
+      ],
+      "source": "Website (relangdata.cn)",
+      "note": "China; as of August 22, 2023",
+      "needs_review": true,
+      "page": 28
+    },
+    {
+      "title": "Leading fashion influencers on Kuaishou in China 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        900.0,
+        1.0,
+        1.1
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          900.0,
+          1.0,
+          1.1
+        ],
+        [
+          1325.0,
+          8998.0,
+          62.0
+        ],
+        [
+          1351.0,
+          4511.0,
+          7.0
+        ],
+        [
+          1419.0,
+          2310.0,
+          7.0
+        ],
+        [
+          980.4,
+          979.5,
+          968.9,
+          966.9,
+          963.1
+        ]
+      ],
+      "source": "Newrank",
+      "note": "China; January 30 to February 6, 2023",
+      "needs_review": true,
+      "page": 29
+    },
+    {
+      "title": "Social media user base of major virtual celebrities in China 2023",
+      "unit": "Number of users in millions",
+      "years": [],
+      "values": [
+        57.57,
+        3.19,
+        14.61,
+        1.35,
+        8.39,
+        19.53,
+        2.39,
+        1.72,
+        0.76,
+        0.45
+      ],
+      "series_rows": [
+        [
+          57.57,
+          3.19,
+          14.61,
+          1.35,
+          8.39,
+          19.53,
+          2.39,
+          1.72,
+          0.76,
+          0.45
+        ]
+      ],
+      "source": "QuestMobile",
+      "note": "China; February 2023",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Impact of social media influencers on purchasing in China 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.0,
+        31.0,
+        6.979,
+        16.0
+      ],
+      "series_rows": [
+        [
+          11.0,
+          31.0,
+          6.979,
+          16.0
+        ]
+      ],
+      "source": "Rakuten Insight",
+      "note": "China; May 11 to 31, 2023; 6,979 respondents; 16 years and older; among respondents who followed at least one influencer on social media",
+      "needs_review": [],
+      "page": 32
+    },
+    {
+      "title": "Main reasons for buying a product endorsed by influencers in China 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.0,
+        31.0,
+        6.033,
+        16.0
+      ],
+      "series_rows": [
+        [
+          11.0,
+          31.0,
+          6.033,
+          16.0
+        ]
+      ],
+      "source": "Rakuten Insight",
+      "note": "China; May 11 to 31, 2023; 6,033 respondents; 16 years and older",
+      "needs_review": [],
+      "page": 33
+    },
+    {
+      "title": "Intention to buy an influencer collaboration product in China 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.0,
+        31.0,
+        6979.0,
+        16.0
+      ],
+      "series_rows": [
+        [
+          11.0,
+          31.0,
+          6979.0,
+          16.0
+        ]
+      ],
+      "source": "Rakuten Insight",
+      "note": "China; May 11 to 31, 2023; 6979 respondents; 16 years and older",
+      "needs_review": [],
+      "page": 34
+    },
+    {
+      "title": "Impact of influencer endorsements on buying in China 2023, by product type",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.0,
+        31.0,
+        6.033,
+        16.0
+      ],
+      "series_rows": [
+        [
+          11.0,
+          31.0,
+          6.033,
+          16.0
+        ]
+      ],
+      "source": "Rakuten Insight",
+      "note": "China; May 11 to 31, 2023; 6,033 respondents; 16 years and older",
+      "needs_review": [],
+      "page": 35
+    },
+    {
+      "title": "Acceptable price ranges for an influencer collaboration product in China 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.0,
+        31.0,
+        6.193,
+        16.0
+      ],
+      "series_rows": [
+        [
+          11.0,
+          31.0,
+          6.193,
+          16.0
+        ]
+      ],
+      "source": "Rakuten Insight",
+      "note": "China; May 11 to 31, 2023; 6,193 respondents; 16 years and older",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Reasons for not buying a product endorsed by influencers in China 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        11.0,
+        31.0,
+        912.0,
+        16.0
+      ],
+      "series_rows": [
+        [
+          11.0,
+          31.0,
+          912.0,
+          16.0
+        ]
+      ],
+      "source": "Rakuten Insight",
+      "note": "China; May 11 to 31, 2023; 912 respondents; 16 years and older",
+      "needs_review": [],
+      "page": 37
+    },
+    {
+      "title": "Consumer experience of recommendation-based marketing in China 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        2.0,
+        3.0,
+        5.0,
+        6.0,
+        10.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          2.0,
+          3.0,
+          5.0,
+          6.0,
+          10.0,
+          10.0
+        ]
+      ],
+      "source": "iiMedia Research",
+      "note": "China; as of March 2022; 1,702 respondents",
+      "needs_review": [],
+      "page": 38
+    }
+  ]
+}

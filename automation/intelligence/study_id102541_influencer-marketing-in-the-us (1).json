@@ -1,0 +1,925 @@
+{
+  "study": "study_id102541_influencer-marketing-in-the-us (1)",
+  "file": "research/statista/Fitness Marketing/study_id102541_influencer-marketing-in-the-us (1).pdf",
+  "charts": [
+    {
+      "title": "Influencer marketing spending worldwide and in the U.S. 2022-2023",
+      "unit": "Influencer marketing spend in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        22.19,
+        26.09,
+        29.14,
+        34.08
+      ],
+      "series_rows": [
+        [
+          22.19,
+          7.0,
+          29.14
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          22.19,
+          26.09,
+          29.14,
+          34.08
+        ]
+      ],
+      "source": "MediaPost; PQ Media",
+      "note": "Worldwide, United States; 2022 and 2023",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Influencer marketing expenditure in the U.S. 2019-2024",
+      "unit": "Spending in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        2.42,
+        2.9,
+        3.9,
+        4.99,
+        6.16,
+        7.14,
+        5.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          2.42,
+          2.9,
+          3.9,
+          4.99,
+          6.16,
+          7.14,
+          5.0
+        ]
+      ],
+      "source": "eMarketer; Insider Intelligence",
+      "note": "United States; 2019 to 2021; * Forecast. Read more",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Influencer marketing spending in the U.S. 2023-2024, by platform",
+      "unit": "Spending in million U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ]
+      ],
+      "source": "eMarketer; Insider Intelligence",
+      "note": "United States; as of July 2023; forecasts / selected platforms",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Influencer marketing penetration rate in the U.S. 2020-2025",
+      "unit": "",
+      "years": [],
+      "values": [
+        69.7,
+        100.0,
+        13.8
+      ],
+      "series_rows": [
+        [
+          69.7,
+          100.0,
+          13.8
+        ]
+      ],
+      "source": "eMarketer; Insider Intelligence",
+      "note": "United States; 2020 ; among companies with 100+ employees; including both paid and unpaid partnerships between brands and influencers; * Forecast. Read more",
+      "needs_review": [],
+      "page": 8
+    },
+    {
+      "title": "Influencer marketing spend and social ad spend growth in the U.S. 2023",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "values": [
+        14.0,
+        14.7,
+        14.3
+      ],
+      "series_rows": [
+        [
+          14.0,
+          14.7,
+          14.3
+        ]
+      ],
+      "source": "eMarketer; Insider Intelligence; X (Twitter)",
+      "note": "United States; 2019 to 2022",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Share of marketing budgets spent on influencer marketing worldwide 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        10.0,
+        10.0,
+        -20.0,
+        20.0,
+        -30.0,
+        30.0,
+        -40.0,
+        40.0
+      ],
+      "series_rows": [
+        [
+          22.4,
+          10.0,
+          20.0,
+          26.0,
+          40.0
+        ],
+        [
+          10.0,
+          10.0,
+          -20.0,
+          20.0,
+          -30.0,
+          30.0,
+          -40.0,
+          40.0
+        ]
+      ],
+      "source": "Influencer Marketing Hub",
+      "note": "Worldwide; 3,000 respondents; among PR agencies, marketing agencies, brands, and other relevant professionals",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Average amount paid per influencer marketing post in the U.S. 2022, by gender",
+      "unit": "Cost in U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        3.131,
+        2.652
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          3.131,
+          2.652
+        ]
+      ],
+      "source": "Izea",
+      "note": "United States; 2022; on IZEA platform only; broader industry metrics may vary",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Average amount paid per influencer marketing post in the U.S. 2022, by ethnicity",
+      "unit": "Cost in U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        2.453,
+        2.757
+      ],
+      "series_rows": [
+        [
+          3.6,
+          3.04,
+          2.45
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          2.453,
+          2.757
+        ]
+      ],
+      "source": "Izea; US Census Bureau",
+      "note": "United States; 2022; on IZEA platform only; broader industry metrics may vary",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Creators' annual incomes in the U.S. 2021-2023",
+      "unit": "Income in U.S. dollars",
+      "years": [],
+      "values": [
+        20.0,
+        20.0,
+        50.0,
+        50.0,
+        100.0,
+        100.0,
+        500.0,
+        500.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          25.0,
+          50.0,
+          100.0,
+          18.0
+        ],
+        [
+          20.0,
+          20.0,
+          50.0
+        ],
+        [
+          20.0,
+          20.0,
+          50.0,
+          50.0,
+          100.0,
+          100.0,
+          500.0,
+          500.0,
+          1.0,
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "source": "The Influencer Marketing Factory",
+      "note": "United States; April 2023; 660 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "Influencer marketing expenditure in the U.S. 2019-2024, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        43.1,
+        43.1,
+        43.6,
+        43.6,
+        45.0,
+        45.0,
+        44.7,
+        44.7,
+        44.6,
+        44.6,
+        44.5,
+        44.5
+      ],
+      "series_rows": [
+        [
+          43.1,
+          43.1,
+          43.6,
+          43.6,
+          45.0,
+          45.0,
+          44.7,
+          44.7,
+          44.6,
+          44.6,
+          44.5,
+          44.5
+        ],
+        [
+          25.2,
+          25.2,
+          23.7,
+          23.7,
+          21.0,
+          21.0,
+          19.0,
+          19.0,
+          17.7,
+          17.7,
+          17.2,
+          17.2
+        ],
+        [
+          20.8,
+          20.8,
+          19.3,
+          19.3,
+          16.5,
+          16.5
+        ],
+        [
+          14.8,
+          14.8,
+          13.6,
+          13.6,
+          13.3,
+          13.3
+        ],
+        [
+          2.3,
+          2.3,
+          5.4,
+          5.4,
+          10.2,
+          10.2,
+          15.5,
+          15.5,
+          17.1,
+          17.1,
+          18.5,
+          18.5
+        ]
+      ],
+      "source": "eMarketer; Insider Intelligence",
+      "note": "United States; 2019 to 2021; * Forecast. Read more",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Top YouTube influencer marketing spenders in the U.S. & Canada 2022",
+      "unit": "IMV in million U.S. dollars",
+      "years": [],
+      "values": [
+        4.12,
+        3.58,
+        3.21,
+        3.19,
+        2.96,
+        2.78,
+        2.33,
+        2.27,
+        2.23,
+        2.07,
+        2.06,
+        2.05,
+        2.02,
+        1.69,
+        1.69
+      ],
+      "series_rows": [
+        [
+          4.12,
+          3.58,
+          3.21,
+          3.19,
+          2.96,
+          2.78,
+          2.33,
+          2.27,
+          2.23,
+          2.07,
+          2.06,
+          2.05,
+          2.02,
+          1.69,
+          1.69
+        ]
+      ],
+      "source": "NeoReach",
+      "note": "Q4 2022",
+      "needs_review": [],
+      "page": 29
+    },
+    {
+      "title": "Most valued creators and channels on YouTube in the U.S. & Canada 2023",
+      "unit": "IMV in million U.S. dollars",
+      "years": [],
+      "values": [
+        4.42,
+        2.42,
+        2.39,
+        1.58,
+        1.56,
+        1.36,
+        1.34,
+        1.2,
+        1.14,
+        1.07,
+        1.06,
+        0.93,
+        0.88,
+        0.88,
+        0.85
+      ],
+      "series_rows": [
+        [
+          1.0,
+          4.0,
+          43.0
+        ],
+        [
+          4.42,
+          2.42,
+          2.39,
+          1.58,
+          1.56,
+          1.36,
+          1.34,
+          1.2,
+          1.14,
+          1.07,
+          1.06,
+          0.93,
+          0.88,
+          0.88,
+          0.85
+        ]
+      ],
+      "source": "NeoReach",
+      "note": "Canada, United States; Q1 2023",
+      "needs_review": true,
+      "page": 30
+    },
+    {
+      "title": "YouTube U.S. engagement rates of influencers 2023, by followers",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        -10.0,
+        10.0,
+        -50.0,
+        50.0,
+        -100.0,
+        100.0,
+        -250.0,
+        250.0,
+        -1.0,
+        1.0
+      ],
+      "series_rows": [
+        [
+          100.0,
+          250.0,
+          52.48
+        ],
+        [
+          1.0,
+          14.0,
+          1.83
+        ],
+        [
+          5.0,
+          -10.0,
+          10.0,
+          -50.0,
+          50.0,
+          -100.0,
+          100.0,
+          -250.0,
+          250.0,
+          -1.0,
+          1.0
+        ]
+      ],
+      "source": "Affable.ai",
+      "note": "United States; January 1 to June 14, 2023; 1.83 million YouTube accounts analyzed",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Engagement rate among U.S. influencers on Instagram 2021-2022, by profile size",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        5.0,
+        5.0,
+        20.0,
+        20.0,
+        100.0,
+        100.0,
+        1.0,
+        1.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          5.0,
+          5.0,
+          20.0,
+          20.0,
+          100.0,
+          100.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.8,
+          1.7,
+          1.7
+        ],
+        [
+          1.5,
+          1.4,
+          1.4
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "United States; 2021",
+      "needs_review": true,
+      "page": 32
+    },
+    {
+      "title": "TikTok U.S. engagement rates of influencers 2023, by followers",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        -10.0,
+        10.0,
+        -50.0,
+        50.0,
+        -100.0,
+        100.0,
+        -250.0,
+        250.0,
+        -1.0,
+        1.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          14.0,
+          953.611
+        ],
+        [
+          5.0,
+          -10.0,
+          10.0,
+          -50.0,
+          50.0,
+          -100.0,
+          100.0,
+          -250.0,
+          250.0,
+          -1.0,
+          1.0
+        ]
+      ],
+      "source": "Affable.ai",
+      "note": "United States; January 1 to June 14, 2023; 953.611 thousand TikTok accounts analyzed",
+      "needs_review": true,
+      "page": 36
+    },
+    {
+      "title": "Number of views of TikTok brand influencer campaign videos in the U.S. & Canada 2022",
+      "unit": "Views in millions",
+      "years": [],
+      "values": [
+        205.62,
+        118.29,
+        86.93,
+        78.18,
+        67.2,
+        61.9,
+        57.12,
+        51.33,
+        50.01,
+        47.48
+      ],
+      "series_rows": [
+        [
+          205.62,
+          118.29,
+          86.93,
+          78.18,
+          67.2,
+          61.9,
+          57.12,
+          51.33,
+          50.01,
+          47.48
+        ]
+      ],
+      "source": "NeoReach",
+      "note": "2022",
+      "needs_review": [],
+      "page": 39
+    },
+    {
+      "title": "TikTok influencer branding & awareness videos in the U.S. & Canada 2022, by views",
+      "unit": "Number of TikTok views in millions",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        981.3
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          981.3
+        ],
+        [
+          495.0,
+          405.3,
+          40.0
+        ]
+      ],
+      "source": "NeoReach",
+      "note": "2022",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "TikTok influencer download or install videos in the U.S. & Canada 2022, by views",
+      "unit": "Number of TikTok views in millions",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        9.2,
+        8.0,
+        1.9,
+        1.4,
+        0.25,
+        41.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          9.2,
+          8.0,
+          1.9,
+          1.4,
+          0.25,
+          41.0
+        ]
+      ],
+      "source": "NeoReach",
+      "note": "2022",
+      "needs_review": [],
+      "page": 41
+    },
+    {
+      "title": "TikTok influencer contest & giveaway videos in the U.S. & Canada 2022, by views",
+      "unit": "Number of TikTok views in millions",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        33.7,
+        14.1,
+        5.4,
+        2.3,
+        1.0,
+        42.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          33.7,
+          14.1,
+          5.4,
+          2.3,
+          1.0,
+          42.0
+        ]
+      ],
+      "source": "NeoReach",
+      "note": "2022",
+      "needs_review": [],
+      "page": 42
+    },
+    {
+      "title": "Main purchase recommendation sources in the U.S. 2022, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        23.0,
+        24.0,
+        1.116,
+        18.0
+      ],
+      "series_rows": [
+        [
+          23.0,
+          24.0,
+          1.116,
+          18.0
+        ]
+      ],
+      "source": "Ipsos; MarketingCharts",
+      "note": "United States; August 23 and 24, 2022; 1,116 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 46
+    },
+    {
+      "title": "Social media activities creating a positive brand perception U.S. 2022, by gender",
+      "unit": "",
+      "years": [],
+      "values": [
+        76.0,
+        70.0,
+        26.0
+      ],
+      "series_rows": [
+        [
+          76.0,
+          70.0,
+          26.0
+        ]
+      ],
+      "source": "Latana",
+      "note": "United States; June 2022; 1,059 respondents",
+      "needs_review": [],
+      "page": 48
+    },
+    {
+      "title": "Amounts of money consumers are willing to pay to support creators in the U.S. 2021-23",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        5.0,
+        10.0,
+        10.0,
+        20.0,
+        20.0,
+        50.0,
+        50.0
+      ],
+      "series_rows": [
+        [
+          20.0,
+          10.0,
+          20.0,
+          17.0
+        ],
+        [
+          5.0,
+          5.0,
+          10.0,
+          10.0,
+          20.0,
+          20.0,
+          50.0,
+          50.0
+        ]
+      ],
+      "source": "The Influencer Marketing Factory",
+      "note": "United States; April 2023; 1,000 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 51
+    },
+    {
+      "title": "Millennials' trust on product/brand recommendation made by influencers worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.7,
+        27.0,
+        -40.0,
+        12.0
+      ],
+      "series_rows": [
+        [
+          50.0,
+          10.0,
+          36.0
+        ],
+        [
+          3.7,
+          27.0,
+          -40.0,
+          12.0
+        ]
+      ],
+      "source": "GWI",
+      "note": "Worldwide; March 2023; 3,700 respondents; 27-40 years; in 12 markets",
+      "needs_review": true,
+      "page": 55
+    }
+  ]
+}

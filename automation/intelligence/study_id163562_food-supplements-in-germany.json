@@ -1,0 +1,957 @@
+{
+  "study": "study_id163562_food-supplements-in-germany",
+  "file": "research/statista/Health & Wellness/study_id163562_food-supplements-in-germany.pdf",
+  "charts": [
+    {
+      "title": "Size of the worldwide market for dietary supplements 2018-2028",
+      "unit": "Market size in billion U.S. dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        146.8,
+        158.0,
+        170.3,
+        185.1,
+        201.1,
+        218.4,
+        239.4,
+        3.0
+      ],
+      "series_rows": [
+        [
+          112.3,
+          119.7,
+          128.3,
+          137.0
+        ],
+        [
+          146.8,
+          158.0,
+          170.3,
+          185.1,
+          201.1,
+          218.4,
+          239.4,
+          3.0
+        ]
+      ],
+      "source": "Adroit Market Research; Statista",
+      "note": "Worldwide; 2018 to 2028; *Year of data release Read more",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Import value of vitamins worldwide in 2022, by country",
+      "unit": "Import value in million U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        1.556,
+        751.0,
+        518.0
+      ],
+      "series_rows": [
+        [
+          347.0,
+          315.0,
+          286.0,
+          284.0,
+          277.0,
+          243.0,
+          205.0,
+          199.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          1.556,
+          751.0,
+          518.0
+        ]
+      ],
+      "source": "UN Comtrade",
+      "note": "Worldwide; 2022",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Production volume of food supplements Germany 2019-2022",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        162.33,
+        180.17
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          162.33,
+          180.17
+        ]
+      ],
+      "source": "Statistisches Bundesamt",
+      "note": "Germany; 2019 to 2022",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Number of companies producing food supplements Germany 2019-2022",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        52.0,
+        56.0,
+        59.0,
+        62.0,
+        6.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          52.0,
+          56.0,
+          59.0,
+          62.0,
+          6.0
+        ]
+      ],
+      "source": "Statistisches Bundesamt",
+      "note": "Germany; 2019 to 2022",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Revenue from food supplements Germany 2018-2023",
+      "unit": "Revenue in billion euros²",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        2.3,
+        2.68
+      ],
+      "series_rows": [
+        [
+          2.83,
+          2.93,
+          2.96,
+          2.99
+        ],
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          2.3,
+          2.68
+        ]
+      ],
+      "source": "IQVIA",
+      "note": "Germany; 2018 bis 2023",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "Number of warnings issued for food products Germany 2022-2023, by product category",
+      "unit": "",
+      "years": [],
+      "values": [
+        38.0,
+        27.0,
+        27.0,
+        20.0,
+        19.0,
+        18.0,
+        16.0,
+        12.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        6.0,
+        3.0,
+        12.0,
+        29.0,
+        20.0,
+        34.0,
+        8.0,
+        19.0,
+        34.0,
+        14.0,
+        12.0,
+        10.0,
+        7.0,
+        4.0,
+        5.0,
+        8.0
+      ],
+      "series_rows": [
+        [
+          38.0,
+          27.0,
+          27.0,
+          20.0,
+          19.0,
+          18.0,
+          16.0,
+          12.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          6.0,
+          3.0,
+          12.0,
+          29.0,
+          20.0,
+          34.0,
+          8.0,
+          19.0,
+          34.0,
+          14.0,
+          12.0,
+          10.0,
+          7.0,
+          4.0,
+          5.0,
+          8.0
+        ]
+      ],
+      "source": "Bundesamt für Verbraucherschutz und Lebensmittelsicherheit",
+      "note": "Germany; 2022 and 2023",
+      "needs_review": [],
+      "page": 9
+    },
+    {
+      "title": "Orthomol Holding GmbH revenue Germany 2015-2021",
+      "unit": "Revenue in million euros",
+      "years": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        79.68,
+        85.8,
+        94.02,
+        100.38,
+        111.66,
+        129.15,
+        122.86,
+        10.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          79.68,
+          85.8,
+          94.02,
+          100.38,
+          111.66,
+          129.15,
+          122.86,
+          10.0
+        ]
+      ],
+      "source": "Orthomol",
+      "note": "Germany; 2015 to 2021",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Peripheral product range in pharmacies Germany 2022, by revenue",
+      "unit": "Revenue in billion euros",
+      "years": [],
+      "values": [
+        1.09,
+        1.0,
+        0.9,
+        0.74,
+        0.67,
+        0.29,
+        0.2,
+        0.19,
+        0.18,
+        0.13
+      ],
+      "series_rows": [
+        [
+          1.09,
+          1.0,
+          0.9,
+          0.74,
+          0.67,
+          0.29,
+          0.2,
+          0.19,
+          0.18,
+          0.13
+        ]
+      ],
+      "source": "ABDA",
+      "note": "Europe, Germany; 2022",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "Best-selling over the counter medicine Germany 2022, by type",
+      "unit": "Revenue in million euros",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        900.0,
+        1.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          900.0,
+          1.0
+        ],
+        [
+          897.0,
+          655.0,
+          522.0,
+          480.0,
+          387.0,
+          335.0,
+          286.0,
+          263.0,
+          240.0,
+          234.0
+        ]
+      ],
+      "source": "IQVIA",
+      "note": "Germany",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Best-selling over the counter medicine Germany 2022, by type and units sold",
+      "unit": "Sales in million packaging units",
+      "years": [],
+      "values": [
+        149.0,
+        130.0,
+        58.0,
+        32.0,
+        24.0,
+        24.0,
+        23.0,
+        23.0,
+        22.0,
+        21.0
+      ],
+      "series_rows": [
+        [
+          149.0,
+          130.0,
+          58.0,
+          32.0,
+          24.0,
+          24.0,
+          23.0,
+          23.0,
+          22.0,
+          21.0
+        ]
+      ],
+      "source": "IQVIA",
+      "note": "Germany",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Best-selling over the counter medicine prescribed by a doctor Germany 2022, by type",
+      "unit": "Revenue in million euros",
+      "years": [],
+      "values": [
+        131.0,
+        114.0,
+        89.0,
+        77.0,
+        59.0,
+        57.0,
+        56.0,
+        52.0,
+        41.0,
+        41.0
+      ],
+      "series_rows": [
+        [
+          131.0,
+          114.0,
+          89.0,
+          77.0,
+          59.0,
+          57.0,
+          56.0,
+          52.0,
+          41.0,
+          41.0
+        ]
+      ],
+      "source": "IQVIA",
+      "note": "Germany",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Over the counter prescribed medicine Germany 2022, by type and units sold",
+      "unit": "Sales in million packaging units",
+      "years": [],
+      "values": [
+        14.0,
+        11.0,
+        11.0,
+        9.0,
+        7.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          14.0,
+          11.0,
+          11.0,
+          9.0,
+          7.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ]
+      ],
+      "source": "IQVIA",
+      "note": "Germany; 2022",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Sales volume of vitamins Germany 2019-2022, by type",
+      "unit": "Sales in million packaging units",
+      "years": [],
+      "values": [
+        32.8,
+        18.4,
+        12.4,
+        8.2,
+        7.9,
+        6.3,
+        34.8,
+        20.0,
+        9.3,
+        7.8,
+        9.2,
+        6.7
+      ],
+      "series_rows": [
+        [
+          32.8,
+          18.4,
+          12.4,
+          8.2,
+          7.9,
+          6.3,
+          34.8,
+          20.0,
+          9.3,
+          7.8,
+          9.2,
+          6.7
+        ]
+      ],
+      "source": "Lebensmittelverband Deutschland",
+      "note": "Germany; 2019/20 and 2021/22; April to March of the following year",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Sales volume of mineral nutrients Germany 2019-2022, by type",
+      "unit": "Sales in million packaging units",
+      "years": [],
+      "values": [
+        33.5,
+        14.3,
+        3.6,
+        2.5,
+        2.1,
+        18.9,
+        37.1,
+        15.6,
+        3.9,
+        3.2,
+        2.0,
+        16.2
+      ],
+      "series_rows": [
+        [
+          33.5,
+          14.3,
+          3.6,
+          2.5,
+          2.1,
+          18.9,
+          37.1,
+          15.6,
+          3.9,
+          3.2,
+          2.0,
+          16.2
+        ]
+      ],
+      "source": "Lebensmittelverband Deutschland",
+      "note": "Germany; 2019/20 and 2021/22; April to March of the following year",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Consumer price index for vitamin tablets or similar Germany 2020-2023",
+      "unit": "",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        106.4,
+        113.1,
+        20.0
+      ],
+      "series_rows": [
+        [
+          106.4,
+          113.1,
+          20.0
+        ]
+      ],
+      "source": "Statistisches Bundesamt",
+      "note": "Germany; 2020 bis 2023",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "Production value of vitamins Germany 2009-2022",
+      "unit": "Production value in billion euros",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        1.86
+      ],
+      "series_rows": [
+        [
+          2.01,
+          2.08,
+          2.2,
+          2.26,
+          2.33
+        ],
+        [
+          3.53,
+          3.53,
+          3.6,
+          3.61,
+          3.72
+        ],
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          1.86
+        ],
+        [
+          2.55,
+          2.68,
+          3.06
+        ]
+      ],
+      "source": "Statistisches Bundesamt",
+      "note": "Germany; 2009 to 2022",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Number of vitamin production companies Germany 2009-2022",
+      "unit": "",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        52.0,
+        53.0,
+        52.0,
+        52.0,
+        51.0,
+        50.0
+      ],
+      "series_rows": [
+        [
+          52.0,
+          53.0,
+          52.0,
+          52.0,
+          51.0,
+          50.0
+        ]
+      ],
+      "source": "Statistisches Bundesamt",
+      "note": "Germany; 2009 to 2022",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Export and import volume of provitamins and vitamins Germany 2008-2023",
+      "unit": "",
+      "years": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        49.516,
+        8.0,
+        50.879,
+        6.0,
+        50.884,
+        2.0,
+        50.663,
+        7.0,
+        49.862,
+        51.328,
+        4.0
+      ],
+      "series_rows": [
+        [
+          5100.0,
+          0.0,
+          -5.0,
+          2936.0
+        ],
+        [
+          59.049,
+          4.0,
+          59.539,
+          1.0
+        ],
+        [
+          70.106,
+          69.859,
+          5.0
+        ],
+        [
+          67.175,
+          4.0,
+          68.625,
+          6.0
+        ],
+        [
+          73.274,
+          7.0,
+          74.161,
+          2.0
+        ],
+        [
+          76.78,
+          3.0,
+          75.931,
+          2.0
+        ],
+        [
+          45.547,
+          7.0,
+          44.327
+        ],
+        [
+          49.516,
+          8.0,
+          50.879,
+          6.0,
+          50.884,
+          2.0,
+          50.663,
+          7.0,
+          49.862,
+          51.328,
+          4.0
+        ],
+        [
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0
+        ]
+      ],
+      "source": "Statistisches Bundesamt",
+      "note": "Germany; 2008 to 2023; * Preliminary. To access this statistic, click the web link and type the code \"51000-005\" into the search bar. Figures (\"Provitamins, vitamins\") are filed under the label WA2936. Read more",
+      "needs_review": true,
+      "page": 23
+    },
+    {
+      "title": "Most popular food supplements in Germany 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.018,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6.018,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "Germany; April 2022 to March 2023; 6,018 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Number of vitamin consumers Germany 2022, by frequency",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.63,
+        63.0,
+        2.582,
+        18.0
+      ],
+      "series_rows": [
+        [
+          2.63,
+          63.0,
+          2.582,
+          18.0
+        ]
+      ],
+      "source": "Kantar",
+      "note": "Germany; 2022; 10,089 respondents; 15 years and older; Computer-assisted web interviews (CAWI)",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Locations for food supplement purchases in Germany in 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        31.0,
+        14.0,
+        677.0
+      ],
+      "series_rows": [
+        [
+          31.0,
+          14.0,
+          677.0
+        ]
+      ],
+      "source": "POSpulse",
+      "note": "Germany; October 31 to November 14, 2022; 677 respondents",
+      "needs_review": [],
+      "page": 29
+    },
+    {
+      "title": "Leading criteria when buying food supplements in Germany in 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        70.0,
+        61.0,
+        58.0
+      ],
+      "series_rows": [
+        [
+          70.0,
+          61.0,
+          58.0
+        ],
+        [
+          31.0,
+          14.0,
+          677.0
+        ]
+      ],
+      "source": "POSpulse",
+      "note": "Germany; October 31 to November 14, 2022; 677 respondents",
+      "needs_review": true,
+      "page": 30
+    }
+  ]
+}

@@ -1,0 +1,752 @@
+{
+  "study": "study_id86331_fitness-industry-in-france",
+  "file": "research/statista/Health & Wellness/study_id86331_fitness-industry-in-france.pdf",
+  "charts": [
+    {
+      "title": "Value of the European health and fitness industry 2017-2022",
+      "unit": "Market value in billion euros",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        28.2,
+        18.9,
+        17.1,
+        28.0,
+        3.0
+      ],
+      "series_rows": [
+        [
+          28.2,
+          18.9,
+          17.1,
+          28.0,
+          3.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2017 to 2022",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Revenue of leading fitness markets in Europe 2022",
+      "unit": "Revenue in billion euros",
+      "years": [],
+      "values": [
+        2.1,
+        1.6,
+        4.0
+      ],
+      "series_rows": [
+        [
+          2.1,
+          1.6,
+          4.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 4
+    },
+    {
+      "title": "Fitness club revenue in France 2015-2022",
+      "unit": "Revenue in million euros",
+      "years": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        100.0,
+        119.3,
+        140.0,
+        167.6,
+        196.5,
+        151.4,
+        117.0,
+        238.0,
+        5.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          100.0,
+          119.3,
+          140.0,
+          167.6,
+          196.5,
+          151.4,
+          117.0,
+          238.0,
+          5.0
+        ]
+      ],
+      "source": "Insee; Website (propulsebyca.fr)",
+      "note": "France; 2015 to 2022",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Number of health and fitness clubs in Europe 2009-2022",
+      "unit": "",
+      "years": [
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        63.644,
+        63.059,
+        63.173,
+        63.83
+      ],
+      "series_rows": [
+        [
+          48.087,
+          48.005,
+          47.701
+        ],
+        [
+          49.197,
+          51.299,
+          51.204
+        ],
+        [
+          63.644,
+          63.059,
+          63.173,
+          63.83
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2009 to 2022",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Gym membership in European countries 2022",
+      "unit": "Membership in millions",
+      "years": [],
+      "values": [
+        5.4,
+        4.7,
+        7.0
+      ],
+      "series_rows": [
+        [
+          5.4,
+          4.7,
+          7.0
+        ]
+      ],
+      "source": "Deloitte; EuropeActive",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Fitness club revenue in France 2015-2022",
+      "unit": "Revenue in million euros",
+      "years": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        100.0,
+        119.3,
+        140.0,
+        167.6,
+        196.5,
+        151.4,
+        117.0,
+        238.0,
+        9.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          100.0,
+          119.3,
+          140.0,
+          167.6,
+          196.5,
+          151.4,
+          117.0,
+          238.0,
+          9.0
+        ]
+      ],
+      "source": "Insee; Website (propulsebyca.fr)",
+      "note": "France; 2015 to 2022",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Number of gyms in selected cities in France as of May 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        275.0,
+        256.0,
+        180.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          275.0,
+          256.0,
+          180.0,
+          10.0
+        ]
+      ],
+      "source": "BODACC; BoldData; Insee",
+      "note": "France; May 2023",
+      "needs_review": [],
+      "page": 10
+    },
+    {
+      "title": "Number of clubs of Basic-Fit 2023, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        900.0,
+        780.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          900.0,
+          780.0
+        ]
+      ],
+      "source": "Basic-Fit",
+      "note": "Europe; Q4 2023",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Frequency of exercise in France 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        3.0,
+        4.0,
+        2.0,
+        3.0,
+        1.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          3.0,
+          4.0,
+          2.0,
+          3.0,
+          1.0,
+          2.0
+        ]
+      ],
+      "source": "CRÉDOC; INJEP",
+      "note": "France; July 2023; 4,258 respondents; 15 years and older",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "People practicing sports in France 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.0,
+        -24.0,
+        25.0,
+        -39.0,
+        40.0,
+        -59.0,
+        60.0,
+        -69.0,
+        70.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          24.0,
+          62.0,
+          70.0
+        ],
+        [
+          15.0,
+          -24.0,
+          25.0,
+          -39.0,
+          40.0,
+          -59.0,
+          60.0,
+          -69.0,
+          70.0
+        ]
+      ],
+      "source": "CRÉDOC; INJEP",
+      "note": "France; July 2023; 4,258 respondents; 15 years and older",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "CPI of sporting goods, camping and outdoor activities gear in France 2020-2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        95.0,
+        97.0,
+        99.0,
+        101.0,
+        103.0,
+        105.0,
+        107.0,
+        109.0,
+        111.0,
+        113.0,
+        115.0,
+        22.0
+      ],
+      "series_rows": [
+        [
+          95.0,
+          97.0,
+          99.0,
+          101.0,
+          103.0,
+          105.0,
+          107.0,
+          109.0,
+          111.0,
+          113.0,
+          115.0,
+          22.0
+        ]
+      ],
+      "source": "Insee",
+      "note": "France; May 2020 to January 2024",
+      "needs_review": [],
+      "page": 22
+    },
+    {
+      "title": "Revenue in the sports & swimwear for women segment France 2018-2028",
+      "unit": "Description: The revenue in the 'Sports & Swimwear for women' segment of the apparel market in France was forecast to continuously increase between 2024 and 2028 by in total 0.2 billion U.S. dollars (+12.99 percent). After the sixth consecutive increasing year, the",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8,
+        2.0,
+        23.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8,
+          2.0,
+          23.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "France; 2018 to 2028",
+      "needs_review": true,
+      "page": 23
+    },
+    {
+      "title": "France: articles and equipment for sports import value 2014-2022",
+      "unit": "",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        1.117,
+        435.0,
+        1.13,
+        51.0
+      ],
+      "series_rows": [
+        [
+          1.117,
+          435.0,
+          1.13,
+          51.0
+        ],
+        [
+          1.157,
+          700.0,
+          1.14,
+          169.0
+        ],
+        [
+          1.639,
+          218.0,
+          1.634,
+          678.0
+        ]
+      ],
+      "source": "UN Comtrade",
+      "note": "France; 2014 to 2022",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Turnover of food supplements in direct and distance selling in France 2022",
+      "unit": "Sales value in million euros",
+      "years": [],
+      "values": [
+        540.0,
+        266.0,
+        202.0,
+        72.0
+      ],
+      "series_rows": [
+        [
+          540.0,
+          266.0,
+          202.0,
+          72.0
+        ]
+      ],
+      "source": "FEVAD; Sources diverses (Manufacturers and retailers); SYNADIET",
+      "note": "France; 2022",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Revenue in the health & fitness segment of the app market France 2017-2027",
+      "unit": "In million U.S. dollars",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        28.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          28.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "France; 2017 to 2027",
+      "needs_review": true,
+      "page": 28
+    },
+    {
+      "title": "Revenue in the Digital Fitness & Well-Being market France 2018-2028",
+      "unit": "In million U.S. dollars",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        1.234,
+        28.0,
+        1.281,
+        33.0,
+        1.321,
+        35.0,
+        1.357,
+        82.0,
+        1.387,
+        49.0,
+        1.409,
+        43.0
+      ],
+      "series_rows": [
+        [
+          1.234,
+          28.0,
+          1.281,
+          33.0,
+          1.321,
+          35.0,
+          1.357,
+          82.0,
+          1.387,
+          49.0,
+          1.409,
+          43.0
+        ],
+        [
+          142.72,
+          184.49,
+          203.24
+        ],
+        [
+          329.07,
+          376.72,
+          408.3,
+          425.67,
+          433.56
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          676.39,
+          817.06
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "France",
+      "needs_review": true,
+      "page": 29
+    },
+    {
+      "title": "Users in the digital fitness & well-being devices segment France 2018-2028",
+      "unit": "In million individuals",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        30.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          30.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "France; 2018 to 2028",
+      "needs_review": false,
+      "page": 30
+    },
+    {
+      "title": "Users in the digital fitness & well-being apps segment France 2018-2028",
+      "unit": "In million individuals",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        31.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          31.0
+        ]
+      ],
+      "source": "Statista; Statista Market Insights",
+      "note": "France; 2018 to 2028",
+      "needs_review": true,
+      "page": 31
+    }
+  ]
+}

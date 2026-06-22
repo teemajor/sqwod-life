@@ -1,0 +1,649 @@
+{
+  "study": "study_id55327_influencer-marketing-in-the-united-kingdom-uk",
+  "file": "research/statista/Fitness Marketing/study_id55327_influencer-marketing-in-the-united-kingdom-uk.pdf",
+  "charts": [
+    {
+      "title": "Influencer advertising spending in the UK 2018-2029",
+      "unit": "Spending in million GBP",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        162.37,
+        263.01,
+        367.49,
+        564.2,
+        686.13,
+        791.09,
+        896.02
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          162.37,
+          263.01,
+          367.49,
+          564.2,
+          686.13,
+          791.09,
+          896.02
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Change in marketing spending at UK companies 2023, by medium",
+      "unit": "",
+      "years": [],
+      "values": [
+        10.0,
+        0.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          10.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          10.0,
+          10.0
+        ]
+      ],
+      "source": "Ebiquity; ISBA; Statista",
+      "note": "United Kingdom; as of November 2022; 59 respondents",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Areas of focus for expanding influencer marketing in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        54.0,
+        12.0,
+        31.0
+      ],
+      "series_rows": [
+        [
+          54.0,
+          12.0,
+          31.0
+        ],
+        [
+          12.0,
+          30.0,
+          102.0
+        ]
+      ],
+      "source": "Various sources (LTK); YouGov",
+      "note": "United Kingdom; April 12 to 30, 2023; 102 respondents; among senior decision-makers in marketing, working in the retail sector",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Benefits of influencer marketing in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        12.0,
+        30.0,
+        102.0
+      ],
+      "series_rows": [
+        [
+          12.0,
+          30.0,
+          102.0
+        ]
+      ],
+      "source": "LTK; YouGov",
+      "note": "United Kingdom; April 12 to 30, 2023; 102 respondents; among senior decision-makers in marketing, working in the retail sector",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Social media users in the United Kingdom 2020-2029",
+      "unit": "Number of users in millions",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028",
+        "2029"
+      ],
+      "values": [
+        57.87,
+        59.08,
+        60.12,
+        61.03,
+        61.83,
+        62.54,
+        63.18,
+        63.75,
+        64.27
+      ],
+      "series_rows": [
+        [
+          57.87,
+          59.08,
+          60.12,
+          61.03,
+          61.83,
+          62.54,
+          63.18,
+          63.75,
+          64.27
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          55.54
+        ]
+      ],
+      "source": "Statista",
+      "note": "United Kingdom; 2020 to 2029; all values are estimates",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Leading social networks in the United Kingdom (UK) 2023, by reach",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.0,
+        16.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          16.0,
+          -64.0
+        ]
+      ],
+      "source": "DataReportal; GWI; Meltwater; We Are Social",
+      "note": "United Kingdom; Q3 2023; 16-64 years; internet users who used each platform in the past month",
+      "needs_review": [],
+      "page": 10
+    },
+    {
+      "title": "Influencer / content creators follower in the UK in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        23.0,
+        1.007,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          23.0,
+          1.007,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; April 5, 2022 to March 23, 2023; 1,007 respondents; 18-64 years; residential online population",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Popularity of influencers in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        480.0,
+        18.0,
+        -65.0
+      ],
+      "series_rows": [
+        [
+          480.0,
+          18.0,
+          -65.0
+        ]
+      ],
+      "source": "Capterra",
+      "note": "Europe, United Kingdom; April 2023; 480 respondents; 18-65 years; among respondents who shop online at least every couple of months, use social media platforms at least a few times per month,",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "Influencer / content creators followed by type in the UK in 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        23.0,
+        1.007,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          23.0,
+          1.007,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United Kingdom; April 5, 2022 to March 23, 2023; 1,007 respondents; 18-64 years; residential online population",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Influencer categories most followed in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.013,
+        18.0,
+        -65.0
+      ],
+      "series_rows": [
+        [
+          1.013,
+          18.0,
+          -65.0
+        ]
+      ],
+      "source": "Capterra; Fashion Network",
+      "note": "Europe, United Kingdom; April 2023; 1,013 respondents; 18-65 years; among respondents who shop online at least every couple of months",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Where consumers go to find the best Black Friday deals in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        13.0,
+        18.0,
+        2.025,
+        1.369,
+        12.0,
+        29.0
+      ],
+      "series_rows": [
+        [
+          59.0,
+          32.0,
+          19.0
+        ],
+        [
+          13.0,
+          18.0,
+          2.025,
+          1.369,
+          12.0,
+          29.0
+        ]
+      ],
+      "source": "Censuswide; Wunderman Thompson Commerce",
+      "note": "United Kingdom; September 13  to 18, 2023; 2,025*; *Consumers that have shopped online in the UK. This includes 1,369 consumers that bought something over the Black Friday (12th November – 29th November)period in 2022. Multiple [...] Read m",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Consumers influenced by social media influencers in the UK 2022, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        28.0,
+        1.0,
+        18.0
+      ],
+      "series_rows": [
+        [
+          28.0,
+          1.0,
+          18.0
+        ]
+      ],
+      "source": "Deloitte",
+      "note": "United Kingdom; March 28, 2022; 1,000 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Reasons for distrusting influencers in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.013,
+        18.0,
+        -65.0
+      ],
+      "series_rows": [
+        [
+          1.013,
+          18.0,
+          -65.0
+        ]
+      ],
+      "source": "Capterra; Various sources (ChannelX)",
+      "note": "Europe, United Kingdom; April 2023; 1,013 respondents; 18-65 years; among respondents who shop online at least every couple of months",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Complaints about digital advertising in the UK 2023, by ad location",
+      "unit": "",
+      "years": [],
+      "values": [
+        8.345,
+        3.894,
+        4.185,
+        583.0,
+        407.0,
+        146.0,
+        162.0,
+        46.0,
+        21.0,
+        2.0,
+        1.0,
+        0.0,
+        9.77,
+        4.809,
+        4.185,
+        1.34,
+        425.0,
+        166.0,
+        173.0,
+        52.0,
+        21.0,
+        2.0,
+        1.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          8.345,
+          3.894,
+          4.185,
+          583.0,
+          407.0,
+          146.0,
+          162.0,
+          46.0,
+          21.0,
+          2.0,
+          1.0,
+          0.0,
+          9.77,
+          4.809,
+          4.185,
+          1.34,
+          425.0,
+          166.0,
+          173.0,
+          52.0,
+          21.0,
+          2.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "source": "Advertising Standards Authority (UK)",
+      "note": "United Kingdom; 2023",
+      "needs_review": [],
+      "page": 22
+    },
+    {
+      "title": "Social media audiences in the United Kingdom (UK) 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        29.0,
+        30.0,
+        39.0,
+        40.0,
+        49.0,
+        50.0,
+        64.0
+      ],
+      "series_rows": [
+        [
+          28.0,
+          30.0,
+          39.0,
+          22.0,
+          18.0,
+          29.0
+        ],
+        [
+          25.0,
+          34.0,
+          45.0,
+          54.0,
+          55.0
+        ],
+        [
+          4.0,
+          22.0,
+          24.183,
+          18.0,
+          -64.0
+        ],
+        [
+          18.0,
+          29.0,
+          30.0,
+          39.0,
+          40.0,
+          49.0,
+          50.0,
+          64.0
+        ]
+      ],
+      "source": "Statista; Statista Consumer Insights",
+      "note": "United Kingdom; July 4, 2022 to June 22, 2023; 24,183 respondents; 18-64 years; residential online population",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "Consumer trust in advertising in the UK 2022, by medium & age",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        -34.0,
+        35.0,
+        -54.0,
+        55.0,
+        -74.0,
+        75.0
+      ],
+      "series_rows": [
+        [
+          45.0,
+          18.0,
+          34.0
+        ],
+        [
+          18.0,
+          -34.0,
+          35.0,
+          -54.0,
+          55.0,
+          -74.0,
+          75.0
+        ]
+      ],
+      "source": "Craft; Credos; Hoc Marketing",
+      "note": "United Kingdom; 2022; 18 years and older",
+      "needs_review": true,
+      "page": 25
+    },
+    {
+      "title": "Social media usage among Gen Z users in the UK 2022, by reason",
+      "unit": "",
+      "years": [],
+      "values": [
+        22.0,
+        36.0,
+        43.0,
+        6.0
+      ],
+      "series_rows": [
+        [
+          16.0,
+          24.0,
+          62.0
+        ],
+        [
+          42.0,
+          20.0,
+          62.0
+        ],
+        [
+          2.191,
+          16.0,
+          -24.0
+        ],
+        [
+          22.0,
+          36.0,
+          43.0,
+          6.0
+        ],
+        [
+          36.0,
+          12.0,
+          6.0,
+          7.0
+        ],
+        [
+          40.0,
+          40.0,
+          14.0,
+          11.0
+        ],
+        [
+          26.0,
+          62.0,
+          26.0,
+          7.0
+        ],
+        [
+          63.0,
+          6.0,
+          4.0,
+          8.0
+        ],
+        [
+          27.0,
+          6.0,
+          5.0,
+          9.0
+        ],
+        [
+          11.0,
+          10.0,
+          8.0,
+          8.0
+        ],
+        [
+          25.0,
+          12.0,
+          9.0,
+          12.0
+        ],
+        [
+          59.0,
+          10.0,
+          5.0,
+          14.0
+        ],
+        [
+          26.0,
+          42.0,
+          13.0,
+          13.0
+        ]
+      ],
+      "source": "Ipsos MORI",
+      "note": "United Kingdom; October 2022; 2,191 respondents; 16-24 years; users of social media platforms",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "Influencer marketing effectiveness among Gen Z in the UK 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        24.0,
+        56.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          18.0,
+          24.0,
+          56.0,
+          10.0
+        ],
+        [
+          562.0,
+          18.0,
+          -24.0
+        ]
+      ],
+      "source": "Attention Exchange",
+      "note": "United Kingdom; 562 respondents; 18-24 years",
+      "needs_review": true,
+      "page": 27
+    }
+  ]
+}

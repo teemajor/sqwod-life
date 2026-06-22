@@ -1,0 +1,1528 @@
+{
+  "study": "study_id13996_text-based-user-generated-content-statista-dossier",
+  "file": "research/statista/Fitness Marketing/study_id13996_text-based-user-generated-content-statista-dossier.pdf",
+  "charts": [
+    {
+      "title": "Worldwide digital population 2024",
+      "unit": "Number of users in billions",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        5.35,
+        5.04,
+        4.0
+      ],
+      "series_rows": [
+        [
+          5.35,
+          66.2,
+          5.04,
+          62.3
+        ],
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          5.35,
+          5.04,
+          4.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Worldwide; January 2024; social media user identities may not represent unique individuals",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Number of global social network users 2017-2027",
+      "unit": "Number of users in billions",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        2.73,
+        3.1,
+        3.51,
+        3.9,
+        4.26,
+        4.59,
+        4.89,
+        5.17,
+        5.42
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          2.73,
+          3.1,
+          3.51,
+          3.9,
+          4.26,
+          4.59,
+          4.89,
+          5.17,
+          5.42
+        ]
+      ],
+      "source": "Statista",
+      "note": "Worldwide; 2017 to 2022; *Forecast Internet users who use a social network site via any device at least once per month Read more",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Global social network penetration 2019-2028",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        69.39,
+        71.66,
+        73.62,
+        75.31
+      ],
+      "series_rows": [
+        [
+          11.6,
+          18.19,
+          75.31
+        ],
+        [
+          69.39,
+          71.66,
+          73.62,
+          75.31
+        ]
+      ],
+      "source": "Statista",
+      "note": "Worldwide; 2019 to 2028; * Forecast. Internet users who use a social network site via any device at least once per month Read more",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Most used social media platforms by type in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6026.0,
+        7.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6026.0,
+          7.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Most common social media activities in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6026.0,
+        7.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6026.0,
+          7.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 8
+    },
+    {
+      "title": "Media usage in an online minute 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3980.0,
+        0.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          3980.0,
+          0.0,
+          0.0
+        ],
+        [
+          2410.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "source": "Domo",
+      "note": "Worldwide; 2023",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Highest trending global topics on social media 2022",
+      "unit": "Number of social media mentions in millions",
+      "years": [],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        160.0,
+        139.0,
+        50.3,
+        25.3,
+        16.2,
+        9.25,
+        11.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          139.0,
+          50.3,
+          25.3,
+          16.2,
+          9.25,
+          11.0
+        ]
+      ],
+      "source": "Meltwater",
+      "note": "Worldwide; January 1 to December 27, 2022; posts on Twitter, Reddit, YouTube, Pinterest, WeChat, TikTok, Twitch, Sina Weibo, Douyin, Facebook, Instagram, and LinkedIn",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Facebook and Instagram: global sustainability conversation trends 2022-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ],
+      "series_rows": [
+        [
+          2.143,
+          407.0,
+          1.132
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ]
+      ],
+      "source": "Meta Platforms",
+      "note": "Worldwide; 2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Facebook and Instagram: global internet and technology conversation trends 2022-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2
+        ]
+      ],
+      "source": "Meta Platforms",
+      "note": "2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Facebook and Instagram: cultural conversation trends 2022-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8
+        ]
+      ],
+      "source": "Meta Platforms; Mintel",
+      "note": "Worldwide; 2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Facebook and Instagram: beauty and body positive conversation trends 2022-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        258.0,
+        123.0,
+        47.0
+      ],
+      "series_rows": [
+        [
+          258.0,
+          123.0,
+          47.0
+        ]
+      ],
+      "source": "Meta Platforms",
+      "note": "Worldwide; 2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Discord: most popular servers for global users 2023, by number of members",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        2.0,
+        0.0,
+        4.0,
+        0.0,
+        6.0,
+        0.0,
+        8.0,
+        0.0,
+        10.0,
+        0.0,
+        12.0,
+        0.0,
+        14.0,
+        0.0,
+        16.0,
+        0.0,
+        18.0,
+        0.0,
+        20.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          0.0,
+          4.0,
+          0.0,
+          6.0,
+          0.0,
+          8.0,
+          0.0,
+          10.0,
+          0.0,
+          12.0,
+          0.0,
+          14.0,
+          0.0,
+          16.0,
+          0.0,
+          18.0,
+          0.0,
+          20.0,
+          0.0
+        ]
+      ],
+      "source": "Discord",
+      "note": "Worldwide; December 18, 2023",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Discord: most popular gaming servers for global users 2023, by number of members",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        0.0,
+        1.2,
+        0.0,
+        1.4,
+        0.0,
+        1.6,
+        0.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          0.0,
+          1.2,
+          0.0,
+          1.4,
+          0.0,
+          1.6,
+          0.0
+        ],
+        [
+          809.142,
+          799.773,
+          787.156,
+          784.563
+        ]
+      ],
+      "source": "Discord",
+      "note": "Worldwide; December 18, 2023",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "Discussions by influential accounts on alternative social media platforms 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.0,
+        64.0,
+        6.0
+      ],
+      "series_rows": [
+        [
+          6.0,
+          64.0,
+          6.0
+        ]
+      ],
+      "source": "Pew Research Center",
+      "note": "United States; June 2022; 1,147 prominent active accounts that posted at least once in June 2022; only accounts posting in English language",
+      "needs_review": [],
+      "page": 20
+    },
+    {
+      "title": "Most liked TikTok videos of all time 2023",
+      "unit": "Number of likes in millions",
+      "years": [],
+      "values": [
+        61.0,
+        51.8,
+        51.0,
+        49.7,
+        45.0,
+        41.4,
+        40.6,
+        40.5,
+        37.9,
+        37.4
+      ],
+      "series_rows": [
+        [
+          61.0,
+          51.8,
+          51.0,
+          49.7,
+          45.0,
+          41.4,
+          40.6,
+          40.5,
+          37.9,
+          37.4
+        ]
+      ],
+      "source": "TikTok; Yahoo Singapore",
+      "note": "Worldwide; February 2023",
+      "needs_review": [],
+      "page": 22
+    },
+    {
+      "title": "TikTok: number of views per video 2023, by account type",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        23.782,
+        32.108,
+        23.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          23.782,
+          32.108,
+          23.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; March 1, 2023 to August 31, 2023",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "TikTok: most viewed European cities 2023, by number of views per inhabitant",
+      "unit": "",
+      "years": [],
+      "values": [
+        65.46,
+        29.37,
+        18.39,
+        18.12,
+        14.54,
+        14.02,
+        12.05,
+        10.77,
+        10.61,
+        10.41
+      ],
+      "series_rows": [
+        [
+          65.46,
+          29.37,
+          18.39,
+          18.12,
+          14.54,
+          14.02,
+          12.05,
+          10.77,
+          10.61,
+          10.41
+        ]
+      ],
+      "source": "Holidu.uk",
+      "note": "Worldwide; April 2023; ranking based on the number of views of videos tagged with the city name on TikTok; views from more than 300 major cities were considered; the source investigated both the local spelling of a city, as well as the Engl",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "TikTok: most viewed European cities 2023, by number of views",
+      "unit": "TikTok views (in billions)",
+      "years": [],
+      "values": [
+        106.1,
+        68.6,
+        64.8,
+        53.1,
+        32.6,
+        26.1,
+        23.0,
+        13.6,
+        12.1,
+        10.1
+      ],
+      "series_rows": [
+        [
+          106.1,
+          68.6,
+          64.8,
+          53.1,
+          32.6,
+          26.1,
+          23.0,
+          13.6,
+          12.1,
+          10.1
+        ]
+      ],
+      "source": "Holidu.uk",
+      "note": "Worldwide; April 2023; ranking based on the number of views of videos tagged with the city name on TikTok; views from more than 300 major cities were considered; the source investigated both the local spelling of a city, as well as the Engl",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Hours of video uploaded to YouTube every minute 2007-2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        7.0,
+        9.0,
+        9.0,
+        10.0,
+        10.0,
+        11.0,
+        12.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        19.0,
+        20.0,
+        22.0
+      ],
+      "series_rows": [
+        [
+          7.0,
+          9.0,
+          9.0,
+          10.0,
+          10.0,
+          11.0,
+          12.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          19.0,
+          20.0,
+          22.0
+        ],
+        [
+          6.0,
+          15.0,
+          20.0,
+          24.0,
+          35.0,
+          48.0,
+          60.0,
+          72.0
+        ],
+        [
+          500.0,
+          500.0,
+          500.0
+        ],
+        [
+          100.0,
+          300.0,
+          400.0
+        ]
+      ],
+      "source": "Google; YouTube",
+      "note": "June 2007 to June 2022",
+      "needs_review": true,
+      "page": 27
+    },
+    {
+      "title": "YouTube Shorts: global logged in monthly users 2022-2023",
+      "unit": "Values in billions",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        1.5,
+        2.0,
+        28.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          1.5,
+          2.0,
+          28.0
+        ]
+      ],
+      "source": "TechCrunch; YouTube",
+      "note": "Worldwide; 2022 and 2023; *Monthly active logged-in users. Daily views number published on the YouTube official blog . Read more",
+      "needs_review": [],
+      "page": 28
+    },
+    {
+      "title": "Active streamers on Twitch worldwide 2024",
+      "unit": "Number of streamers in millions",
+      "years": [],
+      "values": [
+        -120.0,
+        18.0,
+        -320.0,
+        18.0,
+        -520.0,
+        18.0,
+        -720.0,
+        18.0,
+        -920.0,
+        18.0,
+        -1120.0,
+        19.0,
+        -120.0,
+        19.0,
+        -320.0,
+        19.0,
+        -520.0,
+        19.0,
+        -720.0,
+        19.0,
+        -920.0,
+        19.0,
+        -1120.0,
+        20.0,
+        -120.0,
+        20.0,
+        -320.0,
+        20.0,
+        -520.0,
+        20.0,
+        -720.0,
+        20.0,
+        -920.0,
+        20.0,
+        -1120.0,
+        21.0,
+        -120.0,
+        21.0,
+        -320.0,
+        21.0,
+        -520.0,
+        21.0,
+        -720.0,
+        21.0,
+        -920.0,
+        21.0,
+        -1120.0,
+        22.0,
+        -120.0,
+        22.0,
+        -320.0,
+        22.0,
+        -520.0,
+        22.0,
+        -720.0,
+        22.0,
+        -920.0,
+        22.0,
+        -1120.0,
+        23.0,
+        -120.0,
+        23.0,
+        -320.0,
+        23.0,
+        -520.0,
+        23.0,
+        -720.0,
+        23.0,
+        -920.0,
+        23.0,
+        -1120.0,
+        24.0,
+        -120.0,
+        24.0,
+        -3.0
+      ],
+      "series_rows": [
+        [
+          7.94,
+          9.89,
+          -19.0
+        ],
+        [
+          -120.0,
+          18.0,
+          -320.0,
+          18.0,
+          -520.0,
+          18.0,
+          -720.0,
+          18.0,
+          -920.0,
+          18.0,
+          -1120.0,
+          19.0,
+          -120.0,
+          19.0,
+          -320.0,
+          19.0,
+          -520.0,
+          19.0,
+          -720.0,
+          19.0,
+          -920.0,
+          19.0,
+          -1120.0,
+          20.0,
+          -120.0,
+          20.0,
+          -320.0,
+          20.0,
+          -520.0,
+          20.0,
+          -720.0,
+          20.0,
+          -920.0,
+          20.0,
+          -1120.0,
+          21.0,
+          -120.0,
+          21.0,
+          -320.0,
+          21.0,
+          -520.0,
+          21.0,
+          -720.0,
+          21.0,
+          -920.0,
+          21.0,
+          -1120.0,
+          22.0,
+          -120.0,
+          22.0,
+          -320.0,
+          22.0,
+          -520.0,
+          22.0,
+          -720.0,
+          22.0,
+          -920.0,
+          22.0,
+          -1120.0,
+          23.0,
+          -120.0,
+          23.0,
+          -320.0,
+          23.0,
+          -520.0,
+          23.0,
+          -720.0,
+          23.0,
+          -920.0,
+          23.0,
+          -1120.0,
+          24.0,
+          -120.0,
+          24.0,
+          -3.0
+        ],
+        [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          30.0
+        ]
+      ],
+      "source": "TwitchTracker",
+      "note": "Worldwide; January 2018 to March 2024",
+      "needs_review": true,
+      "page": 30
+    },
+    {
+      "title": "Total hours watched of most popular streamers on Twitch 2023",
+      "unit": "Hours watched in millions",
+      "years": [],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        12.6
+      ],
+      "series_rows": [
+        [
+          9.6,
+          9.28,
+          8.77
+        ],
+        [
+          7.7,
+          7.6,
+          7.07,
+          6.74,
+          6.26,
+          5.89
+        ],
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          12.6
+        ]
+      ],
+      "source": "TwitchTracker",
+      "note": "Worldwide; August 2023; total hours of streams watched by viewers in last 30 days",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Number of minutes spent watching Twitch content worldwide 2012-2023",
+      "unit": "Number of minutes in billions",
+      "years": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        72.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          72.0
+        ],
+        [
+          241.0,
+          292.0,
+          355.0,
+          560.0,
+          660.0,
+          1.116,
+          1.46,
+          1.346,
+          851.0,
+          32.0
+        ]
+      ],
+      "source": "TwitchTracker",
+      "note": "Worldwide; 2012 to 2023 YTD",
+      "needs_review": true,
+      "page": 32
+    },
+    {
+      "title": "YouTube: most subscribed gaming channels 2024",
+      "unit": "Number of subscribers in millions",
+      "years": [],
+      "values": [
+        49.5,
+        48.2,
+        47.0,
+        45.1,
+        42.4,
+        40.3,
+        40.0,
+        38.4,
+        37.8,
+        36.5
+      ],
+      "series_rows": [
+        [
+          49.5,
+          48.2,
+          47.0,
+          45.1,
+          42.4,
+          40.3,
+          40.0,
+          38.4,
+          37.8,
+          36.5
+        ]
+      ],
+      "source": "Google; Social Blade",
+      "note": "Worldwide; March 2024; channel category: games",
+      "needs_review": [],
+      "page": 33
+    },
+    {
+      "title": "Leading YouTube Gaming streamers 2024, based on hours watched",
+      "unit": "Hours watched in millions",
+      "years": [],
+      "values": [
+        4.72,
+        3.91,
+        3.66,
+        3.37,
+        2.54,
+        2.24,
+        2.19,
+        1.97,
+        1.97,
+        1.77
+      ],
+      "series_rows": [
+        [
+          4.72,
+          3.91,
+          3.66,
+          3.37,
+          2.54,
+          2.24,
+          2.19,
+          1.97,
+          1.97,
+          1.77
+        ]
+      ],
+      "source": "Streams Charts",
+      "note": "Worldwide; March 2024",
+      "needs_review": [],
+      "page": 34
+    },
+    {
+      "title": "Selected social video and photo app global downloads 2020-2023",
+      "unit": "Number of downloads in billion",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        0.09,
+        2.0,
+        2.7,
+        36.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          0.09,
+          2.0,
+          2.7,
+          36.0
+        ]
+      ],
+      "source": "Sensor Tower",
+      "note": "Worldwide; January 1, 2020 to April 20, 2023",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "Most downloaded photo and video editor apps in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        0.0,
+        1.5,
+        0.0,
+        2.0,
+        0.0,
+        2.5,
+        0.0,
+        3.0,
+        0.0,
+        3.5,
+        0.0,
+        4.0,
+        0.0,
+        4.5,
+        0.0,
+        5.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          0.0,
+          1.5,
+          0.0,
+          2.0,
+          0.0,
+          2.5,
+          0.0,
+          3.0,
+          0.0,
+          3.5,
+          0.0,
+          4.0,
+          0.0,
+          4.5,
+          0.0,
+          5.0,
+          0.0
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "United States; July 2023; Google Play and Apple App Store; free apps",
+      "needs_review": [],
+      "page": 37
+    },
+    {
+      "title": "Instagram accounts with the most followers worldwide 2024",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        672.0,
+        628.0,
+        502.0,
+        429.0,
+        400.0,
+        397.0,
+        380.0,
+        363.0,
+        319.0,
+        310.0,
+        306.0,
+        294.0,
+        292.0,
+        283.0,
+        283.0
+      ],
+      "series_rows": [
+        [
+          672.0,
+          628.0,
+          502.0,
+          429.0,
+          400.0,
+          397.0,
+          380.0,
+          363.0,
+          319.0,
+          310.0,
+          306.0,
+          294.0,
+          292.0,
+          283.0,
+          283.0
+        ]
+      ],
+      "source": "Social Blade",
+      "note": "April 2024; business / creator accounts",
+      "needs_review": [],
+      "page": 38
+    },
+    {
+      "title": "Instagram: favorite types of posts for global users 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        37.0,
+        36.0,
+        36.0,
+        35.0,
+        34.0,
+        33.0
+      ],
+      "series_rows": [
+        [
+          7.206,
+          16.0,
+          -64.0
+        ],
+        [
+          37.0,
+          36.0,
+          36.0,
+          35.0,
+          34.0,
+          33.0
+        ]
+      ],
+      "source": "GWI",
+      "note": "Worldwide; April 2023; 7,206 respondents; 16-64 years; weekly Instagram users",
+      "needs_review": true,
+      "page": 40
+    },
+    {
+      "title": "U.S. adults: number of photographs online 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        -10.0,
+        11.0,
+        -100.0,
+        101.0,
+        -500.0,
+        500.0
+      ],
+      "series_rows": [
+        [
+          25.0,
+          10.0,
+          11.0,
+          100.0
+        ],
+        [
+          14.0,
+          8.568,
+          18.0
+        ],
+        [
+          1.0,
+          -10.0,
+          11.0,
+          -100.0,
+          101.0,
+          -500.0,
+          500.0
+        ]
+      ],
+      "source": "YouGov",
+      "note": "United States; December 14, 2022; 8,568 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 42
+    },
+    {
+      "title": "UK: online footprint of social network users 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        10.811,
+        9.828,
+        126.0,
+        43.0
+      ],
+      "series_rows": [
+        [
+          9.828,
+          10.811,
+          126.0
+        ],
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          10.811,
+          9.828,
+          126.0,
+          43.0
+        ]
+      ],
+      "source": "Aloha Browser; Study Finds",
+      "note": "United Kingdom; July 2022; 2,000 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 43
+    },
+    {
+      "title": "(untitled chart)",
+      "unit": "",
+      "years": [],
+      "values": [
+        1004.0,
+        6.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          1004.0,
+          6.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 45
+    },
+    {
+      "title": "Attitudes towards online shopping in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1004.0,
+        6.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          1004.0,
+          6.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 46
+    },
+    {
+      "title": "(untitled chart)",
+      "unit": "",
+      "years": [],
+      "values": [
+        1004.0,
+        6.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          1004.0,
+          6.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 47
+    },
+    {
+      "title": "Number of user reviews and ratings on Tripadvisor worldwide 2014-2023",
+      "unit": "Number of reviews and ratings in millions",
+      "years": [
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020"
+      ],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        200.0,
+        320.0,
+        465.0,
+        600.0,
+        730.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          200.0,
+          320.0,
+          465.0,
+          600.0,
+          730.0
+        ]
+      ],
+      "source": "Tripadvisor",
+      "note": "Worldwide; 2014 to 2023; fiscal years ending December 31",
+      "needs_review": true,
+      "page": 49
+    },
+    {
+      "title": "Number of reviews of best-selling beauty & personal care products on Amazon 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        336.3,
+        127.1,
+        119.1,
+        107.9,
+        94.4,
+        48.9,
+        46.7,
+        37.0,
+        27.5,
+        5.2
+      ],
+      "series_rows": [
+        [
+          336.3,
+          127.1,
+          119.1,
+          107.9,
+          94.4,
+          48.9,
+          46.7,
+          37.0,
+          27.5,
+          5.2
+        ]
+      ],
+      "source": "BeautyMatter; Market defense",
+      "note": "Worldwide; Q2 2023; top ten best-selling beauty items on Amazon",
+      "needs_review": [],
+      "page": 50
+    },
+    {
+      "title": "Most helpful webpage product details when shopping for beauty online in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        16.0,
+        23.0,
+        3.0,
+        18.0
+      ],
+      "series_rows": [
+        [
+          16.0,
+          23.0,
+          3.0,
+          18.0
+        ]
+      ],
+      "source": "Tinuiti",
+      "note": "United States; February 16 to February 23, 2023 ; 3,000 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 52
+    }
+  ]
+}

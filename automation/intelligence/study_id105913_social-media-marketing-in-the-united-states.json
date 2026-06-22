@@ -1,0 +1,656 @@
+{
+  "study": "study_id105913_social-media-marketing-in-the-united-states",
+  "file": "research/statista/Fitness Marketing/study_id105913_social-media-marketing-in-the-united-states.pdf",
+  "charts": [
+    {
+      "title": "Revenue of the social media advertising industry in the U.S. 2019-2028",
+      "unit": "Spending in billion U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        100.0,
+        38.44,
+        49.13,
+        63.14,
+        66.65,
+        72.33,
+        76.4
+      ],
+      "series_rows": [
+        [
+          79.66,
+          82.53,
+          85.31,
+          88.08
+        ],
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0,
+          38.44,
+          49.13,
+          63.14,
+          66.65,
+          72.33,
+          76.4
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "United States; 2019 to 2028",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Revenue growth of social media advertising in the U.S. 2019-2028",
+      "unit": "",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        4.27,
+        3.6,
+        3.36,
+        3.25
+      ],
+      "series_rows": [
+        [
+          4.27,
+          3.6,
+          3.36,
+          3.25
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "United States; 2019 to 2028",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Ad spending per internet user of social media advertising in the U.S. 2019-2028",
+      "unit": "Average spending per internet user in U.S. dollars",
+      "years": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026",
+        "2027",
+        "2028"
+      ],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        132.33,
+        165.34
+      ],
+      "series_rows": [
+        [
+          241.34,
+          248.34,
+          254.13,
+          259.65,
+          265.17
+        ],
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          132.33,
+          165.34
+        ]
+      ],
+      "source": "Statista; Statista Digital Market Insights",
+      "note": "United States; 2019 to 2028",
+      "needs_review": true,
+      "page": 5
+    },
+    {
+      "title": "Share of digital in media budgets in the U.S. 2024, by format",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.8,
+        3.8,
+        3.6,
+        1.3
+      ],
+      "series_rows": [
+        [
+          20.0,
+          9.0,
+          203.0
+        ],
+        [
+          15.5,
+          15.3,
+          12.6
+        ],
+        [
+          3.8,
+          3.8,
+          3.6,
+          1.3
+        ]
+      ],
+      "source": "IAB (U.S.); Statista",
+      "note": "United States; October 20 to November 9, 2023; 203 respondents; among brand and agency media planners and buyers, as well as C-level employees, managers, and juniors; * Figure for \"total digital\" calculaed by Statista based on data [...] Re",
+      "needs_review": true,
+      "page": 7
+    },
+    {
+      "title": "U.S. businesses social media marketing budget share 2015-2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        9.9,
+        10.6,
+        10.5
+      ],
+      "series_rows": [
+        [
+          9.9,
+          10.6,
+          10.5
+        ],
+        [
+          14.9,
+          15.3,
+          15.4
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+      "note": "United States; 2015 to 2023; 314**; among marketers from for-profit companies; * Forecast. ** Sample size provided refers only to the 2023 survey. Read more",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "U.S. businesses social media marketing budget share 2023, by sector",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.0,
+        22.2,
+        2.0,
+        14.6
+      ],
+      "series_rows": [
+        [
+          2.0,
+          22.2,
+          2.0,
+          14.6
+        ],
+        [
+          10.0,
+          1.0,
+          314.0
+        ],
+        [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey; Wall Street Journal",
+      "note": "United States; January 10 to February 1, 2023; 314 respondents; among marketers from for-profit companies",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "Most used social media platforms by type in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6026.0,
+        7.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6026.0,
+          7.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 11
+    },
+    {
+      "title": "Investment changes in social commerce planned by U.S. creators 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        500.0,
+        186.0,
+        90.0,
+        18.0,
+        44.0
+      ],
+      "series_rows": [
+        [
+          500.0,
+          186.0,
+          90.0,
+          18.0,
+          44.0
+        ]
+      ],
+      "source": "The Influencer Marketing Factory",
+      "note": "United States; October 2023; 500 content creators; U.S. creators with an average of 186k followers on TikTok, YouTube, and Instagram, with 90 percent falling in the age range of 18 to 44",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Social commerce earnings of U.S. creators 2023",
+      "unit": "Earnings in U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        -100.0,
+        100.0,
+        -500.0,
+        500.0,
+        -1.0,
+        1.0,
+        -5.0,
+        5.0,
+        -10.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          500.0,
+          186.0,
+          90.0,
+          18.0,
+          44.0
+        ],
+        [
+          0.0,
+          -100.0,
+          100.0,
+          -500.0,
+          500.0,
+          -1.0,
+          1.0,
+          -5.0,
+          5.0,
+          -10.0,
+          10.0
+        ]
+      ],
+      "source": "The Influencer Marketing Factory",
+      "note": "United States; October 2023; 500 content creators; U.S. creators with an average of 186k followers on TikTok, YouTube, and Instagram, with 90 percent falling in the age range of 18 to 44",
+      "needs_review": true,
+      "page": 14
+    },
+    {
+      "title": "Reasons why U.S. creators do not sell products/services on social media 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        500.0,
+        186.0,
+        90.0,
+        18.0,
+        44.0
+      ],
+      "series_rows": [
+        [
+          500.0,
+          186.0,
+          90.0,
+          18.0,
+          44.0
+        ]
+      ],
+      "source": "The Influencer Marketing Factory",
+      "note": "United States; October 2023; 500 content creators; U.S. creators with an average of 186k followers on TikTok, YouTube, and Instagram, with 90 percent falling in the age range of 18 to 44",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Leading marketing purposes of generative AI in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        2.0,
+        2.0,
+        100.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          2.0,
+          2.0,
+          100.0
+        ]
+      ],
+      "source": "Botco.ai; MarTech",
+      "note": "United States; March 2023; 1,000 respondents; B2B and B2C marketing professionals, three-quarters of them were from companies with 100 or more employees",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Leading generative AI tools used for marketing purposes in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        2.0,
+        2.0,
+        100.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          2.0,
+          2.0,
+          100.0
+        ]
+      ],
+      "source": "Botco.ai",
+      "note": "United States; March 2023; 1,000 respondents; B2B and B2C marketing professionals, three-quarters of them were from companies with 100 or more employees",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "Consumer support to brands using AI for selected activities in the U.S. 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        24.0,
+        24.0,
+        24.0,
+        24.0,
+        29.0,
+        29.0,
+        32.0,
+        32.0
+      ],
+      "series_rows": [
+        [
+          6.0,
+          1.0,
+          18.0
+        ],
+        [
+          60.0,
+          60.0,
+          60.0,
+          60.0
+        ],
+        [
+          53.0,
+          53.0,
+          53.0,
+          53.0
+        ],
+        [
+          16.0,
+          16.0,
+          16.0,
+          16.0
+        ],
+        [
+          18.0,
+          18.0,
+          15.0,
+          15.0
+        ],
+        [
+          24.0,
+          24.0,
+          24.0,
+          24.0,
+          29.0,
+          29.0,
+          32.0,
+          32.0
+        ]
+      ],
+      "source": "Dentsu; Toluna Corporate",
+      "note": "United States; March 6, 2024; 1,000 respondents; 18 years and older",
+      "needs_review": true,
+      "page": 21
+    },
+    {
+      "title": "Support to brands using AI to create ads/content in the U.S. 2023-2024, by generation",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.0,
+        6.0,
+        1.0,
+        18.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          6.0,
+          1.0,
+          18.0
+        ]
+      ],
+      "source": "Dentsu; Toluna Corporate",
+      "note": "United States; March 15, 2023, and March 6, 2024; 1,000 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 22
+    },
+    {
+      "title": "Social media ad reach in the United States 2024, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        82.2,
+        77.4,
+        71.3
+      ],
+      "series_rows": [
+        [
+          82.2,
+          77.4,
+          71.3
+        ]
+      ],
+      "source": "DataReportal; Kepios; Meltwater; Various sources; We Are Social",
+      "note": "United States; as of January 2024; 18 years and older",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Social media ad reach in the United States 2024, by platform & gender",
+      "unit": "",
+      "years": [],
+      "values": [
+        77.7,
+        77.0,
+        77.4
+      ],
+      "series_rows": [
+        [
+          77.7,
+          77.0,
+          77.4
+        ]
+      ],
+      "source": "DataReportal; Kepios; Meltwater; Various sources; We Are Social",
+      "note": "United States; as of January 2024; 18 years and older",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "U.S. leading social media usage reasons 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.0,
+        16.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          16.0,
+          -64.0
+        ]
+      ],
+      "source": "DataReportal; GWI; Meltwater; We Are Social",
+      "note": "United States; Q3 2023; 16-64 years; Internet users",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Most common social media activities in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        6026.0,
+        7.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          6026.0,
+          7.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+      "needs_review": [],
+      "page": 28
+    },
+    {
+      "title": "Content types engaging for social media marketing in the U.S. 2022",
+      "unit": "",
+      "years": [],
+      "values": [
+        22.0,
+        1.0,
+        1.236
+      ],
+      "series_rows": [
+        [
+          22.0,
+          1.0,
+          1.236
+        ]
+      ],
+      "source": "Lucid; Sprout Social",
+      "note": "United States; February 22 and March 1, 2022; 1,236 respondents; U.S. consumers who use at least",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Gen Z: main online platforms for product research in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        8.0,
+        9.0,
+        212.0,
+        18.0,
+        -26.0
+      ],
+      "series_rows": [
+        [
+          18.0,
+          26.0,
+          43.0
+        ],
+        [
+          8.0,
+          9.0,
+          212.0,
+          18.0,
+          -26.0
+        ]
+      ],
+      "source": "Insider Intelligence; Jungle Scout",
+      "note": "United States; February 8 and 9, 2023; 212 respondents; 18-26 years",
+      "needs_review": true,
+      "page": 31
+    },
+    {
+      "title": "Media where adult Gen Zers were the most receptive to ads in the U.S. 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        9.0,
+        13.0,
+        1.093,
+        18.0
+      ],
+      "series_rows": [
+        [
+          9.0,
+          13.0,
+          1.093,
+          18.0
+        ]
+      ],
+      "source": "NCSolutions",
+      "note": "United States; February 9 to 13, 2023; 1.093; 18 years and older",
+      "needs_review": [],
+      "page": 32
+    }
+  ]
+}

@@ -1,0 +1,2129 @@
+{
+  "study": "study_id70013_tiktok",
+  "file": "research/statista/Fitness Marketing/study_id70013_tiktok.pdf",
+  "charts": [
+    {
+      "title": "Media usage in an online minute 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        3980.0,
+        0.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          3980.0,
+          0.0,
+          0.0
+        ],
+        [
+          2410.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "source": "Domo",
+      "note": "Worldwide; 2023",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Global social networks ranked by number of users 2024",
+      "unit": "Number of active users in millions",
+      "years": [],
+      "values": [
+        3.065,
+        2.504,
+        2.0,
+        2.0,
+        1.582,
+        1.343,
+        1.01,
+        900.0,
+        800.0,
+        755.0,
+        700.0,
+        611.0,
+        598.0,
+        554.0,
+        498.0
+      ],
+      "series_rows": [
+        [
+          3.065,
+          2.504,
+          2.0,
+          2.0,
+          1.582,
+          1.343,
+          1.01,
+          900.0,
+          800.0,
+          755.0,
+          700.0,
+          611.0,
+          598.0,
+          554.0,
+          498.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Worldwide; April 2024; social networks and messenger/chat app/voip included; figures for TikTok does not include Douyin",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Most downloaded mobile apps worldwide 2024",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        59.0,
+        58.0,
+        46.0,
+        42.0,
+        27.0,
+        24.0,
+        23.0,
+        23.0,
+        22.0,
+        21.0
+      ],
+      "series_rows": [
+        [
+          59.0,
+          58.0,
+          46.0
+        ],
+        [
+          59.0,
+          58.0,
+          46.0,
+          42.0,
+          27.0,
+          24.0,
+          23.0,
+          23.0,
+          22.0,
+          21.0
+        ]
+      ],
+      "source": "Appfigures",
+      "note": "Worldwide; March 2024; iOS Apple App Store and Google Play Store",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "U.S. TikTok users share of time spent on social media apps 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.0,
+        2.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          2.0,
+          2.0
+        ]
+      ],
+      "source": "Apptopia",
+      "note": "United States; February 2023; TikTok users",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "TikTok global quarterly downloads 2018-2023",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        202.34,
+        177.53,
+        161.65,
+        196.86,
+        218.48,
+        243.01,
+        198.34,
+        238.93,
+        256.11,
+        273.31,
+        232.22,
+        9.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          113.87,
+          160.48,
+          183.73
+        ],
+        [
+          151.25,
+          167.02,
+          192.48,
+          313.53,
+          291.99,
+          197.04
+        ],
+        [
+          202.34,
+          177.53,
+          161.65,
+          196.86,
+          218.48,
+          243.01,
+          198.34,
+          238.93,
+          256.11,
+          273.31,
+          232.22,
+          9.0
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; Q1 2018 to Q4 2023; iOS and Android combined",
+      "needs_review": true,
+      "page": 9
+    },
+    {
+      "title": "TikTok mobile app global IAP revenues 2018-2023",
+      "unit": "Number of downloads in millions",
+      "years": [],
+      "values": [
+        4.57,
+        3.79,
+        7.0,
+        10.5,
+        14.18,
+        22.67,
+        34.98
+      ],
+      "series_rows": [
+        [
+          4.57,
+          3.79,
+          7.0,
+          10.5,
+          14.18,
+          22.67,
+          34.98
+        ],
+        [
+          274.36286,
+          1628.0,
+          5.98
+        ],
+        [
+          606.34603,
+          2861.0,
+          6.66
+        ],
+        [
+          680.89687,
+          2770.0,
+          7.33
+        ],
+        [
+          73.39,
+          143.38,
+          230.34
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; Q1 2018 to Q4 2023; Google Play and Apple App Store combined; IAP revenues reduced by platform fees and taxes",
+      "needs_review": true,
+      "page": 12
+    },
+    {
+      "title": "Global TikTok annual consumer spending 2016-2023",
+      "unit": "Spending in million U.S. dollars",
+      "years": [
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5
+      ],
+      "series_rows": [
+        [
+          4.7,
+          17.0,
+          30.0,
+          160.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5
+        ],
+        [
+          910.0,
+          1.72,
+          3.32,
+          3.84,
+          13.0
+        ]
+      ],
+      "source": "Data.ai",
+      "note": "Worldwide; 2016 to 2023; across iOS, Google Play; China is iOS only; inclusive of any percent taken by the app stores",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "TikTok iOS revenue in leading markets Q4 2023",
+      "unit": "Revenue in million U.S. dollars",
+      "years": [],
+      "values": [
+        302.88,
+        65.02,
+        28.7,
+        8.87,
+        8.84,
+        8.56,
+        8.54,
+        6.44,
+        5.84,
+        5.4
+      ],
+      "series_rows": [
+        [
+          302.88,
+          65.02,
+          28.7,
+          8.87,
+          8.84,
+          8.56,
+          8.54,
+          6.44,
+          5.84,
+          5.4
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; Q4 2023; iOS only",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "TikTok Google Play revenue in leading markets Q4 2023",
+      "unit": "Revenue in million U.S. dollars",
+      "years": [],
+      "values": [
+        50.7,
+        19.6,
+        18.25,
+        12.73,
+        11.12,
+        9.73,
+        4.76,
+        4.27,
+        4.24,
+        4.23
+      ],
+      "series_rows": [
+        [
+          50.7,
+          19.6,
+          18.25,
+          12.73,
+          11.12,
+          9.73,
+          4.76,
+          4.27,
+          4.24,
+          4.23
+        ]
+      ],
+      "source": "AppMagic",
+      "note": "Worldwide; Q4 2023; Android only",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Global TikTok users 2018-2027",
+      "unit": "Number of users in millions",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        347.1,
+        653.5,
+        1.035,
+        1.407,
+        1.719,
+        1.922,
+        2.051
+      ],
+      "series_rows": [
+        [
+          2.136,
+          2.198,
+          2.249
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          347.1,
+          653.5,
+          1.035,
+          1.407,
+          1.719,
+          1.922,
+          2.051
+        ]
+      ],
+      "source": "Statista",
+      "note": "Worldwide; 2018 to 2022; *Forecast Read more",
+      "needs_review": true,
+      "page": 17
+    },
+    {
+      "title": "TikTok penetration in selected countries and territories 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        130.0,
+        18.0,
+        113.0
+      ],
+      "series_rows": [
+        [
+          130.0,
+          18.0,
+          113.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; TikTok; We Are Social",
+      "note": "Worldwide; January 2024; 18 years and older; Number of adult users* that avertisers can reach on TikTok compared to the adult population",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Countries with the most TikTok users 2024",
+      "unit": "Number of TikTok users in millions",
+      "years": [],
+      "values": [
+        148.92,
+        126.83,
+        98.59,
+        74.15,
+        67.72,
+        58.59,
+        54.38,
+        49.09,
+        44.38,
+        37.73,
+        37.36,
+        35.1,
+        32.94,
+        31.95,
+        28.68
+      ],
+      "series_rows": [
+        [
+          148.92,
+          126.83,
+          98.59,
+          74.15,
+          67.72,
+          58.59,
+          54.38,
+          49.09,
+          44.38,
+          37.73,
+          37.36,
+          35.1,
+          32.94,
+          31.95,
+          28.68
+        ]
+      ],
+      "source": "DataReportal; Meltwater; TikTok; We Are Social",
+      "note": "Worldwide; January 2024; 18 years and older; based on addressable advertising audience; does not inlcude Douyin",
+      "needs_review": [],
+      "page": 19
+    },
+    {
+      "title": "TikTok: distribution of global audiences 2024, by age and gender",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        -24.0,
+        25.0,
+        -34.0,
+        35.0,
+        -44.0,
+        45.0,
+        -54.0,
+        55.0
+      ],
+      "series_rows": [
+        [
+          18.0,
+          18.0,
+          24.0,
+          18.6
+        ],
+        [
+          15.0,
+          25.0,
+          34.0,
+          17.6
+        ],
+        [
+          18.0,
+          -24.0,
+          25.0,
+          -34.0,
+          35.0,
+          -44.0,
+          45.0,
+          -54.0,
+          55.0
+        ]
+      ],
+      "source": "DataReportal; Kepios; Meltwater; TikTok; We Are Social",
+      "note": "January 2024; 18 years and older; based on addressable ad audience",
+      "needs_review": true,
+      "page": 20
+    },
+    {
+      "title": "TikTok: distribution of global audiences 2024, by gender",
+      "unit": "",
+      "years": [],
+      "values": [
+        48.0,
+        52.0,
+        232.0
+      ],
+      "series_rows": [
+        [
+          48.0,
+          52.0,
+          232.0
+        ]
+      ],
+      "source": "DataReportal; Kepios; Meltwater; TikTok; We Are Social",
+      "note": "Worldwide; January 2024",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Most watched TikTok videos of all time 2023",
+      "unit": "Number of views in millions",
+      "years": [],
+      "values": [
+        2.3,
+        1.8,
+        1.1,
+        966.7,
+        690.7,
+        659.5,
+        421.3,
+        409.1,
+        392.4,
+        357.4
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5
+        ],
+        [
+          2.3,
+          1.8,
+          1.1,
+          966.7,
+          690.7,
+          659.5,
+          421.3,
+          409.1,
+          392.4,
+          357.4
+        ]
+      ],
+      "source": "TikTok; Yahoo! Finance",
+      "note": "Worldwide; July 2023",
+      "needs_review": true,
+      "page": 23
+    },
+    {
+      "title": "Most popular TikTok users worldwide 2024",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        161.4,
+        152.0,
+        93.9,
+        93.5,
+        88.6,
+        81.2,
+        80.9,
+        74.8,
+        73.2,
+        56.3
+      ],
+      "series_rows": [
+        [
+          161.4,
+          152.0,
+          93.9,
+          93.5,
+          88.6,
+          81.2,
+          80.9,
+          74.8,
+          73.2,
+          56.3
+        ]
+      ],
+      "source": "Social Blade",
+      "note": "Worldwide; March 2024",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "TikTok: number of monthly postings 2023, by account type",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        14.45,
+        16.59,
+        25.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          14.45,
+          16.59,
+          25.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; March 1, 2023 to August 31, 2023",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "TikTok: video views 2023, by length",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        45.0,
+        18.9,
+        23.9,
+        28.8,
+        30.7,
+        38.5,
+        26.0
+      ],
+      "series_rows": [
+        [
+          54.0,
+          38.0,
+          10.0
+        ],
+        [
+          19.0,
+          16.0,
+          53.0,
+          30.0
+        ],
+        [
+          0.0,
+          -9.0,
+          10.0,
+          -15.0,
+          16.0,
+          -29.0,
+          30.0,
+          -53.0,
+          54.0
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          18.9,
+          23.9,
+          28.8,
+          30.7,
+          38.5,
+          26.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; March 1, 2023 to August 31, 2023",
+      "needs_review": true,
+      "page": 26
+    },
+    {
+      "title": "TikTok: number of views per video 2023, by account type",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        23.782,
+        32.108,
+        27.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          23.782,
+          32.108,
+          27.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; March 1, 2023 to August 31, 2023",
+      "needs_review": [],
+      "page": 27
+    },
+    {
+      "title": "Pet influencers on TikTok 2023, by followers",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.1,
+        4.4,
+        224.0,
+        68.0,
+        51.0,
+        11.2,
+        8.0,
+        6.0
+      ],
+      "series_rows": [
+        [
+          6.1,
+          4.4,
+          224.0,
+          68.0,
+          51.0,
+          11.2,
+          8.0,
+          6.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; October 2023",
+      "needs_review": [],
+      "page": 28
+    },
+    {
+      "title": "TikTok: videos removed 2020-2023",
+      "unit": "Number of removed videos in millions",
+      "years": [
+        "2020",
+        "2020",
+        "2021",
+        "2021",
+        "2021",
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          106.48,
+          136.53,
+          176.46,
+          30.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Q3 2020 to Q4 2023",
+      "needs_review": true,
+      "page": 30
+    },
+    {
+      "title": "TikTok: videos removed by automation 2020-2023",
+      "unit": "Number of removed videos in millions",
+      "years": [
+        "2020",
+        "2020",
+        "2021",
+        "2021",
+        "2021",
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          3.37,
+          4.92,
+          8.83
+        ],
+        [
+          34.73,
+          48.01,
+          53.29,
+          46.9,
+          53.49,
+          66.44,
+          88.72,
+          128.3,
+          32.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Worldwide; Q3 2020 to Q4 2023",
+      "needs_review": true,
+      "page": 32
+    },
+    {
+      "title": "TikTok: accounts removed 2020-2023",
+      "unit": "2020 to 4th quarter 2023 (in millions)",
+      "years": [
+        "2020",
+        "2020",
+        "2021",
+        "2021",
+        "2021",
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          1.62,
+          4.49,
+          11.15,
+          14.95,
+          17.01,
+          24.11
+        ],
+        [
+          76.44,
+          76.17,
+          70.63,
+          64.78
+        ],
+        [
+          100.03,
+          204.82,
+          33.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Worldwide; Q3 2020 to Q4 2023",
+      "needs_review": true,
+      "page": 33
+    },
+    {
+      "title": "TikTok: account removed 2020-2023, by reason",
+      "unit": "",
+      "years": [
+        "2020",
+        "2020",
+        "2021",
+        "2021",
+        "2021",
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          20.0,
+          13.0,
+          146.0
+        ],
+        [
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Worldwide; Q3 2020 to Q4 2023",
+      "needs_review": true,
+      "page": 34
+    },
+    {
+      "title": "TikTok: live video sessions suspended 2023",
+      "unit": "Number of live sessions suspended in millions",
+      "years": [],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        8.07,
+        9.6,
+        8.01,
+        35.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          8.07,
+          9.6,
+          8.01,
+          35.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Q2 2023 to Q4 2023",
+      "needs_review": true,
+      "page": 35
+    },
+    {
+      "title": "TikTok: live video sessions restored 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        252.045,
+        375.137,
+        483.888,
+        36.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          252.045,
+          375.137,
+          483.888,
+          36.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Q2 2023 to Q4 2023",
+      "needs_review": true,
+      "page": 36
+    },
+    {
+      "title": "TikTok: ads removed 2021-2023",
+      "unit": "",
+      "years": [
+        "2021",
+        "2021",
+        "2021",
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          605.253605,
+          253.0,
+          516.006516,
+          6.0
+        ],
+        [
+          2.976,
+          252.976,
+          25.0,
+          2.938,
+          6212.938,
+          621.0
+        ],
+        [
+          8.715,
+          8998.715,
+          899.0
+        ],
+        [
+          5.148,
+          505.148,
+          50.0,
+          5.414,
+          4595.414,
+          459.0,
+          4.953,
+          8154.953,
+          815.0
+        ],
+        [
+          2.993,
+          5462.993,
+          546.0
+        ],
+        [
+          7.942,
+          87.942,
+          8.0
+        ],
+        [
+          6.496,
+          6656.496,
+          665.0
+        ],
+        [
+          4.92,
+          6214.92,
+          621.0
+        ],
+        [
+          1.921,
+          9001.921,
+          900.0,
+          1.829,
+          2191.829,
+          219.0
+        ],
+        [
+          3.181,
+          8583.181,
+          858.0
+        ],
+        [
+          5.845,
+          8275.845,
+          827.0
+        ],
+        [
+          4.221,
+          5624.221,
+          562.0
+        ],
+        [
+          2.294,
+          2622.294,
+          262.0
+        ],
+        [
+          1.635,
+          2961.635,
+          296.0
+        ],
+        [
+          1.306,
+          2491.306,
+          249.0
+        ],
+        [
+          1.487,
+          7371.487,
+          737.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Worldwide; Q1 2021 to Q4 2023",
+      "needs_review": true,
+      "page": 37
+    },
+    {
+      "title": "TikTok: fake engagement prevented 2021-2023",
+      "unit": "Number of fake interactions prevented in billions",
+      "years": [
+        "2021",
+        "2021",
+        "2021",
+        "2022",
+        "2022",
+        "2022",
+        "2022",
+        "2023",
+        "2023",
+        "2023",
+        "2023"
+      ],
+      "values": [
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0
+        ],
+        [
+          10.181,
+          18.0,
+          8.398,
+          39.0
+        ],
+        [
+          4.764,
+          76.0,
+          9.99,
+          9.0
+        ]
+      ],
+      "source": "TikTok",
+      "note": "Worldwide; Q2 2021 to Q4 2023",
+      "needs_review": true,
+      "page": 38
+    },
+    {
+      "title": "Monthly active users of leading short video apps in China 2023",
+      "unit": "Number of monthly active users in millions",
+      "years": [],
+      "values": [
+        751.58,
+        484.69,
+        92.22,
+        73.2,
+        72.21,
+        27.23,
+        19.01,
+        18.49,
+        18.38,
+        13.76
+      ],
+      "series_rows": [
+        [
+          751.58,
+          484.69,
+          92.22,
+          73.2,
+          72.21,
+          27.23,
+          19.01,
+          18.49,
+          18.38,
+          13.76
+        ]
+      ],
+      "source": "iiMedia Research",
+      "note": "China; November 2023",
+      "needs_review": [],
+      "page": 40
+    },
+    {
+      "title": "Monthly active users of Douyin in China 2022-2023",
+      "unit": "Number of monthly active users in millions",
+      "years": [],
+      "values": [
+        22.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0
+      ],
+      "series_rows": [
+        [
+          22.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0,
+          23.0
+        ],
+        [
+          759.66,
+          768.55,
+          747.56,
+          751.14,
+          749.0,
+          749.61,
+          760.96,
+          772.34,
+          769.51,
+          760.67,
+          758.27,
+          751.58
+        ]
+      ],
+      "source": "iiMedia Research",
+      "note": "China; December 2022 to November 2023",
+      "needs_review": true,
+      "page": 41
+    },
+    {
+      "title": "Most-followed influencers on Douyin in China 2023",
+      "unit": "Number of fans in millions",
+      "years": [],
+      "values": [
+        118.0,
+        69.45,
+        60.45,
+        52.81,
+        49.06,
+        45.65
+      ],
+      "series_rows": [
+        [
+          22.0,
+          118.0,
+          69.0
+        ],
+        [
+          118.0,
+          69.45,
+          60.45,
+          52.81,
+          49.06,
+          45.65
+        ]
+      ],
+      "source": "Website (relangdata.cn)",
+      "note": "China; as of August 22, 2023",
+      "needs_review": true,
+      "page": 42
+    },
+    {
+      "title": "Live streaming usage rate on Douyin (TikTok) in China 2020-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        20.0,
+        21.0,
+        21.0,
+        22.0,
+        22.0,
+        22.0,
+        23.0
+      ],
+      "series_rows": [
+        [
+          20.0,
+          21.0,
+          21.0,
+          22.0,
+          22.0,
+          22.0,
+          23.0
+        ],
+        [
+          85.4,
+          86.2,
+          86.8,
+          88.3,
+          88.7,
+          89.8
+        ]
+      ],
+      "source": "QuestMobile",
+      "note": "China; January 2020 to September 2023",
+      "needs_review": true,
+      "page": 44
+    },
+    {
+      "title": "Most successful luxury brands on Douyin in China 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        221.574,
+        217.065,
+        208.586,
+        208.256,
+        200.795,
+        197.206,
+        183.31,
+        178.13,
+        175.448,
+        174.909
+      ],
+      "series_rows": [
+        [
+          24.0,
+          30.0,
+          222.0
+        ],
+        [
+          221.574,
+          217.065,
+          208.586,
+          208.256,
+          200.795,
+          197.206,
+          183.31,
+          178.13,
+          175.448,
+          174.909
+        ]
+      ],
+      "source": "Ocean Engine",
+      "note": "China; March 24 to 30, 2024",
+      "needs_review": true,
+      "page": 45
+    },
+    {
+      "title": "Future use of social media among marketers worldwide 2023, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        66.0,
+        43.0,
+        45.0
+      ],
+      "series_rows": [
+        [
+          66.0,
+          43.0,
+          45.0
+        ]
+      ],
+      "source": "Social Media Examiner",
+      "note": "Worldwide; January 2023; 2,133 marketers",
+      "needs_review": [],
+      "page": 48
+    },
+    {
+      "title": "Future use of video among social media marketers worldwide 2023, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        56.0,
+        12.0,
+        59.0
+      ],
+      "series_rows": [
+        [
+          56.0,
+          12.0,
+          59.0
+        ]
+      ],
+      "source": "Social Media Examiner",
+      "note": "Worldwide; January 2023; 2,133 respondents; among marketers",
+      "needs_review": [],
+      "page": 49
+    },
+    {
+      "title": "Social media platforms with highest ROI for B2B marketers worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.2,
+        2.0,
+        2.0
+      ],
+      "series_rows": [
+        [
+          1.2,
+          2.0,
+          2.0
+        ],
+        [
+          16.0,
+          16.0,
+          16.0
+        ]
+      ],
+      "source": "HubSpot",
+      "note": "Worldwide; as of May 2023; > 1,200; among global B2B and B2C marketers",
+      "needs_review": true,
+      "page": 50
+    },
+    {
+      "title": "TikTok ad revenue worldwide 2020-2027",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        2.0,
+        4.0,
+        11.64,
+        18.04,
+        23.58,
+        33.12,
+        43.96,
+        53.95,
+        52.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          2.0,
+          4.0,
+          11.64,
+          18.04,
+          23.58,
+          33.12,
+          43.96,
+          53.95,
+          52.0
+        ]
+      ],
+      "source": "eMarketer; Statista",
+      "note": "Worldwide; 2020 to 2022; * Forecast. Read more",
+      "needs_review": [],
+      "page": 52
+    },
+    {
+      "title": "Highest valued unicorn companies worldwide 2023",
+      "unit": "Valuation in billion U.S. dollars",
+      "years": [],
+      "values": [
+        200.0,
+        137.0,
+        120.0,
+        65.0,
+        50.0,
+        33.0,
+        31.0,
+        30.0,
+        28.0,
+        27.0
+      ],
+      "series_rows": [
+        [
+          200.0,
+          137.0,
+          120.0,
+          65.0,
+          50.0,
+          33.0,
+          31.0,
+          30.0,
+          28.0,
+          27.0
+        ]
+      ],
+      "source": "Hurun Research Institute",
+      "note": "Worldwide; April 2023",
+      "needs_review": [],
+      "page": 54
+    },
+    {
+      "title": "Highest valued unicorn companies in China 2023",
+      "unit": "Valuation in billion U.S. dollars",
+      "years": [],
+      "values": [
+        200.0,
+        120.0,
+        65.0,
+        33.0,
+        27.0
+      ],
+      "series_rows": [
+        [
+          200.0,
+          120.0,
+          65.0,
+          33.0,
+          27.0
+        ]
+      ],
+      "source": "Hurun Research Institute",
+      "note": "China; April 2023",
+      "needs_review": [],
+      "page": 55
+    },
+    {
+      "title": "Most valuable brands worldwide 2024",
+      "unit": "Brand value in billion U.S. dollars",
+      "years": [],
+      "values": [
+        516.6,
+        340.4,
+        333.4,
+        308.9,
+        99.4,
+        96.8,
+        84.2,
+        75.7,
+        73.3,
+        71.8
+      ],
+      "series_rows": [
+        [
+          516.6,
+          340.4,
+          333.4,
+          308.9,
+          99.4,
+          96.8,
+          84.2,
+          75.7,
+          73.3,
+          71.8
+        ]
+      ],
+      "source": "Brand Finance; Visual Capitalist",
+      "note": "Worldwide; 2024",
+      "needs_review": [],
+      "page": 56
+    },
+    {
+      "title": "Digital advertising revenue for major internet companies 2023-2027",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        340.18,
+        127.27,
+        70.82,
+        53.95,
+        16.71,
+        16.33,
+        11.51,
+        16.25,
+        13.73,
+        10.35,
+        8.8,
+        2.7,
+        5.13,
+        2.24,
+        250.26,
+        118.96,
+        44.35,
+        18.04,
+        13.18,
+        12.54,
+        11.51,
+        10.99,
+        6.51,
+        5.91,
+        5.36,
+        3.31,
+        3.27,
+        1.77
+      ],
+      "series_rows": [
+        [
+          340.18,
+          127.27,
+          70.82,
+          53.95,
+          16.71,
+          16.33,
+          11.51,
+          16.25,
+          13.73,
+          10.35,
+          8.8,
+          2.7,
+          5.13,
+          2.24,
+          250.26,
+          118.96,
+          44.35,
+          18.04,
+          13.18,
+          12.54,
+          11.51,
+          10.99,
+          6.51,
+          5.91,
+          5.36,
+          3.31,
+          3.27,
+          1.77
+        ]
+      ],
+      "source": "Statista; Various sources",
+      "note": "Worldwide; August 2023; forecast",
+      "needs_review": [],
+      "page": 57
+    },
+    {
+      "title": "TikTok/Douyin: brand value 2020-2023",
+      "unit": "Value in billion U.S. dollars",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        10.0,
+        20.0,
+        30.0,
+        40.0,
+        50.0,
+        60.0,
+        70.0,
+        80.0,
+        90.0,
+        18.75,
+        58.98,
+        65.7,
+        84.2,
+        58.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          18.75,
+          58.98,
+          65.7,
+          84.2,
+          58.0
+        ]
+      ],
+      "source": "Brand Finance",
+      "note": "Worldwide, China; 2020 to 2023",
+      "needs_review": true,
+      "page": 58
+    },
+    {
+      "title": "ByteDance: annual revenue 2020-2023",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "values": [
+        0.0,
+        20.0,
+        40.0,
+        60.0,
+        80.0,
+        100.0,
+        120.0,
+        140.0,
+        34.3,
+        61.7,
+        80.0,
+        120.0,
+        59.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          34.3,
+          61.7,
+          80.0,
+          120.0,
+          59.0
+        ]
+      ],
+      "source": "Bloomberg",
+      "note": "Worldwide; 2020 to 2023",
+      "needs_review": true,
+      "page": 59
+    },
+    {
+      "title": "ByteDance: quarterly revenue 2022-2023",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        20.71,
+        29.0,
+        60.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          20.71,
+          29.0,
+          60.0
+        ]
+      ],
+      "source": "The Information",
+      "note": "Worldwide; Q2 2022 and Q2 2023; *Data calculated by Statista on the basis of values given by the source. Read more",
+      "needs_review": [],
+      "page": 60
+    },
+    {
+      "title": "TikTok brand profile in the United States 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        2149.0,
+        18.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          2149.0,
+          18.0,
+          -64.0
+        ]
+      ],
+      "source": "Statista Consumer Insights",
+      "note": "United States; May to June 2023; 2149 respondents; 18-64 years; respondents who use social media",
+      "needs_review": [],
+      "page": 63
+    },
+    {
+      "title": "U.S. TikTok ban approval 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        20.0,
+        22.0,
+        2.117,
+        18.0
+      ],
+      "series_rows": [
+        [
+          20.0,
+          22.0,
+          2.117,
+          18.0
+        ]
+      ],
+      "source": "CBS News; YouGov",
+      "note": "United States; March 20 to 22, 2023; 2,117 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 64
+    },
+    {
+      "title": "U.S. citizens approval rate of TikTok being sold or banned 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        26.0,
+        28.0,
+        1.5,
+        18.0
+      ],
+      "series_rows": [
+        [
+          26.0,
+          28.0,
+          1.5,
+          18.0
+        ]
+      ],
+      "source": "YouGov",
+      "note": "United States; March 26 to 28, 2023; 1,500 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 65
+    },
+    {
+      "title": "U.S. citizens approval rate of TikTok being sold or banned 2023, by party ID",
+      "unit": "",
+      "years": [],
+      "values": [
+        26.0,
+        28.0,
+        1.5,
+        18.0
+      ],
+      "series_rows": [
+        [
+          26.0,
+          28.0,
+          1.5,
+          18.0
+        ]
+      ],
+      "source": "YouGov",
+      "note": "United States; March 26 to 28, 2023; 1,500 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 66
+    },
+    {
+      "title": "U.S. adults believing TikTok to be a threat to the country 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        26.0,
+        28.0,
+        1.5,
+        18.0
+      ],
+      "series_rows": [
+        [
+          26.0,
+          28.0,
+          1.5,
+          18.0
+        ]
+      ],
+      "source": "YouGov",
+      "note": "United States; March 26 to 28, 2023; 1,500 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 67
+    },
+    {
+      "title": "U.S. adults who see TikTok ties to China as a national security risk 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        20.0,
+        22.0,
+        2.117,
+        18.0
+      ],
+      "series_rows": [
+        [
+          20.0,
+          22.0,
+          2.117,
+          18.0
+        ]
+      ],
+      "source": "CBS News; YouGov",
+      "note": "United States; March 20 to 22, 2023; 2,117 respondents; 18 years and older",
+      "needs_review": [],
+      "page": 68
+    }
+  ]
+}

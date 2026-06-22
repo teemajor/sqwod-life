@@ -1,0 +1,2227 @@
+{
+  "study": "study_id111527_online-video-content-creators",
+  "file": "research/statista/Fitness Marketing/study_id111527_online-video-content-creators.pdf",
+  "charts": [
+    {
+      "title": "Weekly time spent with online video worldwide 2018-2023",
+      "unit": "",
+      "years": [
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        2.0,
+        4.0,
+        6.0,
+        8.0,
+        10.0,
+        12.0,
+        14.0,
+        16.0,
+        18.0,
+        20.0,
+        10.5,
+        14.0,
+        16.0,
+        18.0,
+        19.0,
+        17.0,
+        4.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0,
+          10.5,
+          14.0,
+          16.0,
+          18.0,
+          19.0,
+          17.0,
+          4.0
+        ]
+      ],
+      "source": "Wyzowl",
+      "note": "Worldwide; 2018 to 2022; 528 respondents; average hours per person per week; *Forecast Read more",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "Global vlog viewership reach 2023, by region",
+      "unit": "",
+      "years": [],
+      "values": [
+        3.0,
+        16.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          3.0,
+          16.0,
+          -64.0
+        ]
+      ],
+      "source": "DataReportal; Meltwater; We Are Social",
+      "note": "Worldwide; Q3 2023; 16-64 years; among internet users",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Vlogs: global audience reach 2023, by age and gender",
+      "unit": "",
+      "years": [],
+      "values": [
+        36.0,
+        16.0,
+        24.0
+      ],
+      "series_rows": [
+        [
+          36.0,
+          16.0,
+          24.0
+        ],
+        [
+          3.0,
+          16.0,
+          -64.0
+        ]
+      ],
+      "source": "DataReportal; GWI; Meltwater; We Are Social",
+      "note": "Worldwide; Q3 2023; 16-64 years; among internet users",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Highest-earning content creators 2023",
+      "unit": "Annual earnings in million U.S. dollars",
+      "years": [],
+      "values": [
+        82.0,
+        35.0,
+        35.0,
+        35.0,
+        34.0,
+        30.0,
+        30.0,
+        27.0,
+        25.0,
+        24.0
+      ],
+      "series_rows": [
+        [
+          82.0,
+          35.0,
+          35.0,
+          35.0,
+          34.0,
+          30.0,
+          30.0,
+          27.0,
+          25.0,
+          24.0
+        ]
+      ],
+      "source": "Forbes; Influential",
+      "note": "Worldwide; as of September 2023",
+      "needs_review": [],
+      "page": 7
+    },
+    {
+      "title": "Global media and internet revenue 2023-2027, by segment",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "series_rows": [
+        [
+          729.0,
+          33.0,
+          918.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0
+        ]
+      ],
+      "source": "Activate; Statista",
+      "note": "Worldwide; 2023",
+      "needs_review": true,
+      "page": 8
+    },
+    {
+      "title": "U.S. daily social video consumption 2019-2027",
+      "unit": "",
+      "years": [],
+      "values": [
+        33.0,
+        43.0,
+        51.0,
+        57.0,
+        61.0,
+        68.0
+      ],
+      "series_rows": [
+        [
+          33.0,
+          43.0,
+          51.0,
+          57.0,
+          61.0,
+          68.0
+        ]
+      ],
+      "source": "Activate",
+      "note": "United States; 2019 to 2022; 18 years and older; *Forecast Read more",
+      "needs_review": [],
+      "page": 9
+    },
+    {
+      "title": "U.S. most used social video platform 2023",
+      "unit": "Number of users in millions",
+      "years": [],
+      "values": [
+        132.0,
+        114.0,
+        99.0,
+        48.0,
+        10.0
+      ],
+      "series_rows": [
+        [
+          2.0,
+          4.023,
+          18.0
+        ],
+        [
+          132.0,
+          114.0,
+          99.0,
+          48.0,
+          10.0
+        ]
+      ],
+      "source": "Activate",
+      "note": "United States; Q2 2023; 4,023 respondents; 18 years and older; monthly users; *Forecast Read more",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Leading VTubers 2024, by average viewers",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        30.7,
+        28.6
+      ],
+      "series_rows": [
+        [
+          21.4,
+          20.9,
+          20.2
+        ],
+        [
+          11.6,
+          11.2,
+          11.1
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          30.7,
+          28.6
+        ]
+      ],
+      "source": "Stream Hatchet",
+      "note": "Worldwide; March 2024; across all video platforms (YouTube, Twitch)",
+      "needs_review": true,
+      "page": 11
+    },
+    {
+      "title": "Live streaming content creators revenue share on selected global platforms 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        15.0,
+        350.0,
+        70.0
+      ],
+      "series_rows": [
+        [
+          15.0,
+          350.0,
+          70.0
+        ]
+      ],
+      "source": "DLive; GlobeNewswire; Google; New York Times; Rumble; TechCrunch; TikTok; Twitch",
+      "note": "Worldwide; as of June 2023",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "All-time most viewed YouTube channel owners 2024",
+      "unit": "All-time channel views in billions",
+      "years": [],
+      "values": [
+        248.89,
+        177.43,
+        159.89,
+        111.38,
+        100.94,
+        98.33,
+        86.76,
+        86.45,
+        82.22,
+        68.58
+      ],
+      "series_rows": [
+        [
+          248.89,
+          177.43,
+          159.89,
+          111.38,
+          100.94,
+          98.33,
+          86.76,
+          86.45,
+          82.22,
+          68.58
+        ]
+      ],
+      "source": "Social Blade; YouTube",
+      "note": "Worldwide; March 2024",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "YouTube: most subscribed channels 2024",
+      "unit": "Number of subscribers in millions",
+      "years": [],
+      "values": [
+        259.0,
+        237.0,
+        178.0,
+        171.0,
+        168.0,
+        120.0,
+        119.0,
+        112.0,
+        111.0,
+        110.0
+      ],
+      "series_rows": [
+        [
+          259.0,
+          237.0,
+          178.0,
+          171.0,
+          168.0,
+          120.0,
+          119.0,
+          112.0,
+          111.0,
+          110.0
+        ]
+      ],
+      "source": "Google; Social Blade",
+      "note": "Worldwide; February 2024; excluding YouTube category channels such as Music, Gaming, or YouTube Spotlight",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Highest-earning YouTube stars 2023",
+      "unit": "Annual earnings in million U.S. dollars",
+      "years": [],
+      "values": [
+        82.0,
+        35.0,
+        35.0,
+        35.0,
+        34.0,
+        30.0,
+        21.0,
+        17.5,
+        13.0,
+        8.5,
+        6.0
+      ],
+      "series_rows": [
+        [
+          82.0,
+          35.0,
+          35.0,
+          35.0,
+          34.0,
+          30.0,
+          21.0,
+          17.5,
+          13.0,
+          8.5,
+          6.0
+        ]
+      ],
+      "source": "Forbes; Influential",
+      "note": "Worldwide; as of September 2023",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Total YouTube advertising payout 2020-2022",
+      "unit": "Annual creators payout in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        5.5,
+        7.5,
+        9.0,
+        17.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          5.5,
+          7.5,
+          9.0,
+          17.0
+        ]
+      ],
+      "source": "Google; YouTube",
+      "note": "Worldwide; 2020 to 2022",
+      "needs_review": [],
+      "page": 17
+    },
+    {
+      "title": "Copyright claims to YouTube H1 2023, by detection method",
+      "unit": "Number of claims in millions",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        980.13
+      ],
+      "series_rows": [
+        [
+          3.14,
+          2.75,
+          1.98
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          980.13
+        ]
+      ],
+      "source": "YouTube",
+      "note": "Worldwide; H1 2023",
+      "needs_review": true,
+      "page": 18
+    },
+    {
+      "title": "Status of automatically detected copyright claims to YouTube H1 2023",
+      "unit": "Number of claims in millions",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        976.2
+      ],
+      "series_rows": [
+        [
+          0.4,
+          976.2,
+          99.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          976.2
+        ]
+      ],
+      "source": "YouTube",
+      "note": "Worldwide; H1 2023",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Disputed YouTube copyright claims H1 2023, by resolution",
+      "unit": "Number of disputed claims in millions",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        2.19,
+        1.5,
+        20.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          2.19,
+          1.5,
+          20.0
+        ]
+      ],
+      "source": "YouTube",
+      "note": "Worldwide; H1 2023",
+      "needs_review": [],
+      "page": 20
+    },
+    {
+      "title": "MrBeast monthly video views 2020-2024",
+      "unit": "Number of video views in millions",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        21.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          21.0
+        ]
+      ],
+      "source": "Social Blade",
+      "note": "Worldwide; January 2020 to February 2024",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Active streamers on Twitch worldwide 2024",
+      "unit": "Number of streamers in millions",
+      "years": [],
+      "values": [
+        -120.0,
+        18.0,
+        -320.0,
+        18.0,
+        -520.0,
+        18.0,
+        -720.0,
+        18.0,
+        -920.0,
+        18.0,
+        -1120.0,
+        19.0,
+        -120.0,
+        19.0,
+        -320.0,
+        19.0,
+        -520.0,
+        19.0,
+        -720.0,
+        19.0,
+        -920.0,
+        19.0,
+        -1120.0,
+        20.0,
+        -120.0,
+        20.0,
+        -320.0,
+        20.0,
+        -520.0,
+        20.0,
+        -720.0,
+        20.0,
+        -920.0,
+        20.0,
+        -1120.0,
+        21.0,
+        -120.0,
+        21.0,
+        -320.0,
+        21.0,
+        -520.0,
+        21.0,
+        -720.0,
+        21.0,
+        -920.0,
+        21.0,
+        -1120.0,
+        22.0,
+        -120.0,
+        22.0,
+        -320.0,
+        22.0,
+        -520.0,
+        22.0,
+        -720.0,
+        22.0,
+        -920.0,
+        22.0,
+        -1120.0,
+        23.0,
+        -120.0,
+        23.0,
+        -320.0,
+        23.0,
+        -520.0,
+        23.0,
+        -720.0,
+        23.0,
+        -920.0,
+        23.0,
+        -1120.0,
+        24.0,
+        -120.0,
+        24.0,
+        -3.0
+      ],
+      "series_rows": [
+        [
+          7.94,
+          9.89,
+          -19.0
+        ],
+        [
+          -120.0,
+          18.0,
+          -320.0,
+          18.0,
+          -520.0,
+          18.0,
+          -720.0,
+          18.0,
+          -920.0,
+          18.0,
+          -1120.0,
+          19.0,
+          -120.0,
+          19.0,
+          -320.0,
+          19.0,
+          -520.0,
+          19.0,
+          -720.0,
+          19.0,
+          -920.0,
+          19.0,
+          -1120.0,
+          20.0,
+          -120.0,
+          20.0,
+          -320.0,
+          20.0,
+          -520.0,
+          20.0,
+          -720.0,
+          20.0,
+          -920.0,
+          20.0,
+          -1120.0,
+          21.0,
+          -120.0,
+          21.0,
+          -320.0,
+          21.0,
+          -520.0,
+          21.0,
+          -720.0,
+          21.0,
+          -920.0,
+          21.0,
+          -1120.0,
+          22.0,
+          -120.0,
+          22.0,
+          -320.0,
+          22.0,
+          -520.0,
+          22.0,
+          -720.0,
+          22.0,
+          -920.0,
+          22.0,
+          -1120.0,
+          23.0,
+          -120.0,
+          23.0,
+          -320.0,
+          23.0,
+          -520.0,
+          23.0,
+          -720.0,
+          23.0,
+          -920.0,
+          23.0,
+          -1120.0,
+          24.0,
+          -120.0,
+          24.0,
+          -3.0
+        ],
+        [
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          8.0,
+          9.0,
+          10.0,
+          11.0,
+          23.0
+        ]
+      ],
+      "source": "TwitchTracker",
+      "note": "Worldwide; January 2018 to March 2024",
+      "needs_review": true,
+      "page": 23
+    },
+    {
+      "title": "Most popular Twitch streamers worldwide 2023, by average viewers",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        219.699,
+        92.881
+      ],
+      "series_rows": [
+        [
+          73.748,
+          68.955,
+          66.776,
+          64.953
+        ],
+        [
+          56.153,
+          55.814,
+          52.545,
+          51.397
+        ],
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          219.699,
+          92.881
+        ]
+      ],
+      "source": "TwitchTracker",
+      "note": "Worldwide; October 2023; all languages; average concurrent viewers for the last 30 days",
+      "needs_review": true,
+      "page": 24
+    },
+    {
+      "title": "PUBG Mobile top streamers on Twitch 2023, by viewership hours",
+      "unit": "",
+      "years": [],
+      "values": [
+        213.204,
+        61.175,
+        56.344,
+        35.961,
+        22.686,
+        17.726,
+        16.765,
+        12.954,
+        12.428,
+        10.891
+      ],
+      "series_rows": [
+        [
+          213.204,
+          61.175,
+          56.344,
+          35.961,
+          22.686,
+          17.726,
+          16.765,
+          12.954,
+          12.428,
+          10.891
+        ]
+      ],
+      "source": "Twitchmetrics",
+      "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+      "needs_review": [],
+      "page": 25
+    },
+    {
+      "title": "Garena Free Fire top streamers on Twitch 2023, by viewership hours",
+      "unit": "",
+      "years": [],
+      "values": [
+        60.925,
+        31.592,
+        23.627,
+        18.773,
+        18.031,
+        16.499,
+        15.4,
+        13.978,
+        13.718,
+        8.161
+      ],
+      "series_rows": [
+        [
+          60.925,
+          31.592,
+          23.627,
+          18.773,
+          18.031,
+          16.499,
+          15.4,
+          13.978,
+          13.718,
+          8.161
+        ]
+      ],
+      "source": "Twitchmetrics",
+      "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "Call of Duty: Warzone top streamers on Twitch 2023, by viewership hours",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        900.0,
+        1.0,
+        0.0,
+        1.1,
+        0.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          900.0,
+          1.0,
+          0.0,
+          1.1,
+          0.0
+        ],
+        [
+          980.178,
+          970.948,
+          632.796,
+          463.854,
+          411.498,
+          403.775,
+          334.27,
+          333.245,
+          331.499,
+          329.682
+        ]
+      ],
+      "source": "Twitchmetrics",
+      "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+      "needs_review": true,
+      "page": 27
+    },
+    {
+      "title": "Minecraft: top streamers on Twitch 2023, by viewership hours",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        0.0,
+        1.5,
+        0.0,
+        2.0,
+        0.0,
+        2.5,
+        0.0,
+        3.0,
+        0.0,
+        3.5,
+        0.0,
+        4.0,
+        0.0,
+        4.5,
+        0.0
+      ],
+      "series_rows": [
+        [
+          30.0,
+          3.8,
+          55.2
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          0.0,
+          1.5,
+          0.0,
+          2.0,
+          0.0,
+          2.5,
+          0.0,
+          3.0,
+          0.0,
+          3.5,
+          0.0,
+          4.0,
+          0.0,
+          4.5,
+          0.0
+        ]
+      ],
+      "source": "Twitchmetrics",
+      "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+      "needs_review": true,
+      "page": 28
+    },
+    {
+      "title": "GTA V: top streamers on Twitch 2023, by viewership hours",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        0.0,
+        1.5,
+        0.0,
+        2.0,
+        0.0,
+        2.5,
+        0.0,
+        3.0,
+        0.0,
+        3.5,
+        0.0,
+        4.0,
+        0.0,
+        4.5,
+        0.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          500.0,
+          1.0,
+          0.0,
+          1.5,
+          0.0,
+          2.0,
+          0.0,
+          2.5,
+          0.0,
+          3.0,
+          0.0,
+          3.5,
+          0.0,
+          4.0,
+          0.0,
+          4.5,
+          0.0
+        ]
+      ],
+      "source": "Twitchmetrics",
+      "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+      "needs_review": [],
+      "page": 29
+    },
+    {
+      "title": "Leading female Twitch streamers 2023, based on hours watched",
+      "unit": "Hours watched in millions",
+      "years": [],
+      "values": [
+        8.88,
+        7.58,
+        6.63,
+        6.44,
+        5.66,
+        4.84,
+        4.66,
+        4.51,
+        4.31,
+        4.22
+      ],
+      "series_rows": [
+        [
+          8.88,
+          7.58,
+          6.63,
+          6.44,
+          5.66,
+          4.84,
+          4.66,
+          4.51,
+          4.31,
+          4.22
+        ]
+      ],
+      "source": "Streams Charts",
+      "note": "Worldwide; January 1 to May 31, 2023",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Most liked TikTok videos of all time 2023",
+      "unit": "Number of likes in millions",
+      "years": [],
+      "values": [
+        61.0,
+        51.8,
+        51.0,
+        49.7,
+        45.0,
+        41.4,
+        40.6,
+        40.5,
+        37.9,
+        37.4
+      ],
+      "series_rows": [
+        [
+          61.0,
+          51.8,
+          51.0,
+          49.7,
+          45.0,
+          41.4,
+          40.6,
+          40.5,
+          37.9,
+          37.4
+        ]
+      ],
+      "source": "TikTok; Yahoo Singapore",
+      "note": "Worldwide; February 2023",
+      "needs_review": [],
+      "page": 32
+    },
+    {
+      "title": "Most popular TikTok users worldwide 2024",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        161.4,
+        152.0,
+        93.9,
+        93.5,
+        88.6,
+        81.2,
+        80.9,
+        74.8,
+        73.2,
+        56.3
+      ],
+      "series_rows": [
+        [
+          161.4,
+          152.0,
+          93.9,
+          93.5,
+          88.6,
+          81.2,
+          80.9,
+          74.8,
+          73.2,
+          56.3
+        ]
+      ],
+      "source": "Social Blade",
+      "note": "Worldwide; March 2024",
+      "needs_review": [],
+      "page": 33
+    },
+    {
+      "title": "Highest-paid TikTok stars 2023",
+      "unit": "Annual earnings in million U.S. dollars",
+      "years": [],
+      "values": [
+        23.0,
+        16.5,
+        13.0,
+        11.5,
+        7.0,
+        7.0,
+        6.0,
+        5.0,
+        4.4,
+        3.3
+      ],
+      "series_rows": [
+        [
+          23.0,
+          16.5,
+          13.0,
+          11.5,
+          7.0,
+          7.0,
+          6.0,
+          5.0,
+          4.4,
+          3.3
+        ]
+      ],
+      "source": "Forbes; Influential",
+      "note": "Worldwide; as of September 2023",
+      "needs_review": [],
+      "page": 34
+    },
+    {
+      "title": "TikTok: jobs supported and creators contribution to GDP selected EU markets 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.8,
+        1.5,
+        1.4
+      ],
+      "series_rows": [
+        [
+          4.8,
+          1.5,
+          1.4
+        ],
+        [
+          1250.0,
+          0.0,
+          1.4
+        ],
+        [
+          1860.0,
+          0.0,
+          1.5
+        ],
+        [
+          1130.0,
+          0.0,
+          1.0
+        ],
+        [
+          5110.0,
+          0.0,
+          4.8
+        ]
+      ],
+      "source": "Oxford Economics; TikTok",
+      "note": "Belgium, France, Germany, Italy, Netherlands; 2023",
+      "needs_review": true,
+      "page": 35
+    },
+    {
+      "title": "Elements found in global TikTok videos 2022-2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        1.42,
+        21.0,
+        6.7,
+        0.17,
+        1.96,
+        25.88,
+        6.69,
+        0.17
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          1.42,
+          21.0,
+          6.7,
+          0.17,
+          1.96,
+          25.88,
+          6.69,
+          0.17
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; 2022 and 2023; standard posting frequency is three videos weekly",
+      "needs_review": [],
+      "page": 36
+    },
+    {
+      "title": "TikTok: videos posted daily 2023, by account size",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        0.7,
+        0.9,
+        1.5,
+        1.6,
+        2.3,
+        37.0
+      ],
+      "series_rows": [
+        [
+          100.0,
+          500.0,
+          0.7,
+          1.001,
+          10.0,
+          1.001
+        ],
+        [
+          5.0,
+          1.5,
+          50.001,
+          25.001
+        ],
+        [
+          0.0,
+          0.5,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          0.7,
+          0.9,
+          1.5,
+          1.6,
+          2.3,
+          37.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; March 1, 2023 to August 31, 2023; based on followers and views",
+      "needs_review": true,
+      "page": 37
+    },
+    {
+      "title": "TikTok: number of views per video 2023, by account type",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        23.782,
+        32.108,
+        38.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          23.782,
+          32.108,
+          38.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; March 1, 2023 to August 31, 2023",
+      "needs_review": [],
+      "page": 38
+    },
+    {
+      "title": "TikTok influencer engagement rates worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        1.0,
+        -10.0,
+        10.0,
+        -50.0,
+        50.0,
+        -500.0,
+        500.0,
+        -1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          10.0,
+          11.97,
+          9.67,
+          15.5
+        ],
+        [
+          1.0,
+          -10.0,
+          10.0,
+          -50.0,
+          50.0,
+          -500.0,
+          500.0,
+          -1.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          9.48,
+          9.39,
+          9.67
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Worldwide; 2023",
+      "needs_review": true,
+      "page": 39
+    },
+    {
+      "title": "Pet influencers on TikTok 2023, by followers",
+      "unit": "",
+      "years": [],
+      "values": [
+        6.1,
+        4.4,
+        224.0,
+        68.0,
+        51.0,
+        11.2,
+        8.0,
+        6.0
+      ],
+      "series_rows": [
+        [
+          6.1,
+          4.4,
+          224.0,
+          68.0,
+          51.0,
+          11.2,
+          8.0,
+          6.0
+        ]
+      ],
+      "source": "Metricool",
+      "note": "Worldwide; October 2023",
+      "needs_review": [],
+      "page": 40
+    },
+    {
+      "title": "Most-followed influencers on Douyin in China 2023",
+      "unit": "Number of fans in millions",
+      "years": [],
+      "values": [
+        118.0,
+        69.45,
+        60.45,
+        52.81,
+        49.06,
+        45.65
+      ],
+      "series_rows": [
+        [
+          22.0,
+          118.0,
+          69.0
+        ],
+        [
+          118.0,
+          69.45,
+          60.45,
+          52.81,
+          49.06,
+          45.65
+        ]
+      ],
+      "source": "Website (relangdata.cn)",
+      "note": "China; as of August 22, 2023",
+      "needs_review": true,
+      "page": 41
+    },
+    {
+      "title": "OnlyFans.com monthly traffic volume 2023-2023",
+      "unit": "Monthly traffic in million visits",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2
+      ],
+      "series_rows": [
+        [
+          23.0,
+          23.0,
+          24.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; December 2022 to February 2023",
+      "needs_review": true,
+      "page": 43
+    },
+    {
+      "title": "Countries with the highest monthly traffic volume to OnlyFans.com 2024",
+      "unit": "Monthly traffic in million visits",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        350.0,
+        400.0,
+        450.0,
+        500.0,
+        455.61
+      ],
+      "series_rows": [
+        [
+          34.65,
+          33.57,
+          29.12,
+          28.48
+        ],
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          450.0,
+          500.0,
+          455.61
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; January 2024; organic traffic only",
+      "needs_review": true,
+      "page": 44
+    },
+    {
+      "title": "OnlyFans global net revenue 2021-2022, by region",
+      "unit": "Description: In 2022, the popular online video and user-generated content OnlyFans, owned and managed by the London-based Fenix International Limited, generated 67 percent of its annual net revenue in the United States market. The company generated almost",
+      "years": [],
+      "values": [
+        0.0,
+        100.0,
+        200.0,
+        300.0,
+        400.0,
+        500.0,
+        600.0,
+        700.0,
+        800.0,
+        648.6,
+        732.7,
+        126.02
+      ],
+      "series_rows": [
+        [
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          648.6,
+          732.7,
+          126.02
+        ]
+      ],
+      "source": "Companies House; Fenix International",
+      "note": "Worldwide; 2021 to 2022, year ending on November 30.",
+      "needs_review": [],
+      "page": 45
+    },
+    {
+      "title": "Number of OnlyFans posts 2022-2024",
+      "unit": "Number of posts in millions",
+      "years": [],
+      "values": [
+        -120.0,
+        22.0,
+        -220.0,
+        22.0,
+        -320.0,
+        22.0,
+        -420.0,
+        22.0,
+        -520.0,
+        22.0,
+        -620.0,
+        22.0,
+        -720.0,
+        22.0,
+        -820.0,
+        22.0,
+        -920.0,
+        22.0,
+        -1020.0,
+        22.0,
+        -1120.0,
+        22.0,
+        -1220.0,
+        23.0,
+        -120.0,
+        23.0,
+        -220.0,
+        23.0,
+        -320.0,
+        23.0,
+        -420.0,
+        23.0,
+        -520.0,
+        23.0,
+        -620.0,
+        23.0,
+        -720.0,
+        23.0,
+        -820.0,
+        23.0,
+        -920.0,
+        23.0,
+        -1020.0,
+        23.0,
+        -1120.0,
+        23.0,
+        -1220.0,
+        24.0,
+        -120.0,
+        24.0,
+        -220.0,
+        24.0,
+        -3.0
+      ],
+      "series_rows": [
+        [
+          -120.0,
+          22.0,
+          -220.0,
+          22.0,
+          -320.0,
+          22.0,
+          -420.0,
+          22.0,
+          -520.0,
+          22.0,
+          -620.0,
+          22.0,
+          -720.0,
+          22.0,
+          -820.0,
+          22.0,
+          -920.0,
+          22.0,
+          -1020.0,
+          22.0,
+          -1120.0,
+          22.0,
+          -1220.0,
+          23.0,
+          -120.0,
+          23.0,
+          -220.0,
+          23.0,
+          -320.0,
+          23.0,
+          -420.0,
+          23.0,
+          -520.0,
+          23.0,
+          -620.0,
+          23.0,
+          -720.0,
+          23.0,
+          -820.0,
+          23.0,
+          -920.0,
+          23.0,
+          -1020.0,
+          23.0,
+          -1120.0,
+          23.0,
+          -1220.0,
+          24.0,
+          -120.0,
+          24.0,
+          -220.0,
+          24.0,
+          -3.0
+        ],
+        [
+          17.24,
+          17.21,
+          18.47,
+          17.04,
+          17.46,
+          17.97
+        ],
+        [
+          22.23,
+          22.53,
+          22.91,
+          21.91,
+          20.52
+        ],
+        [
+          34.86,
+          34.89,
+          34.9
+        ],
+        [
+          44.25,
+          42.3,
+          44.12,
+          46.0
+        ]
+      ],
+      "source": "OnlyFans",
+      "note": "Worldwide; January 2022 to March 2024",
+      "needs_review": true,
+      "page": 46
+    },
+    {
+      "title": "Number of OnlyFans accounts 2021-2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        -720.0,
+        21.0,
+        -820.0,
+        21.0,
+        -920.0,
+        21.0,
+        -1020.0,
+        21.0,
+        -1120.0,
+        21.0,
+        -1220.0,
+        22.0,
+        -120.0,
+        22.0,
+        -220.0,
+        22.0,
+        -320.0,
+        22.0,
+        -420.0,
+        22.0,
+        -520.0,
+        22.0,
+        -620.0,
+        22.0,
+        -720.0,
+        22.0,
+        -820.0,
+        22.0,
+        -920.0,
+        22.0,
+        -1020.0,
+        22.0,
+        -1120.0,
+        22.0,
+        -1220.0,
+        23.0,
+        -120.0,
+        23.0,
+        -220.0,
+        23.0,
+        -320.0,
+        23.0,
+        -420.0,
+        23.0,
+        -520.0,
+        23.0,
+        -620.0,
+        23.0,
+        -720.0,
+        23.0,
+        -820.0,
+        23.0,
+        -920.0,
+        23.0,
+        -1020.0,
+        23.0,
+        -1120.0,
+        23.0,
+        -1220.0,
+        24.0,
+        -120.0,
+        24.0,
+        -220.0,
+        24.0,
+        -3.0
+      ],
+      "series_rows": [
+        [
+          -720.0,
+          21.0,
+          -820.0,
+          21.0,
+          -920.0,
+          21.0,
+          -1020.0,
+          21.0,
+          -1120.0,
+          21.0,
+          -1220.0,
+          22.0,
+          -120.0,
+          22.0,
+          -220.0,
+          22.0,
+          -320.0,
+          22.0,
+          -420.0,
+          22.0,
+          -520.0,
+          22.0,
+          -620.0,
+          22.0,
+          -720.0,
+          22.0,
+          -820.0,
+          22.0,
+          -920.0,
+          22.0,
+          -1020.0,
+          22.0,
+          -1120.0,
+          22.0,
+          -1220.0,
+          23.0,
+          -120.0,
+          23.0,
+          -220.0,
+          23.0,
+          -320.0,
+          23.0,
+          -420.0,
+          23.0,
+          -520.0,
+          23.0,
+          -620.0,
+          23.0,
+          -720.0,
+          23.0,
+          -820.0,
+          23.0,
+          -920.0,
+          23.0,
+          -1020.0,
+          23.0,
+          -1120.0,
+          23.0,
+          -1220.0,
+          24.0,
+          -120.0,
+          24.0,
+          -220.0,
+          24.0,
+          -3.0
+        ]
+      ],
+      "source": "OnlyFans",
+      "note": "Worldwide; July 2021 to March 2024",
+      "needs_review": [],
+      "page": 47
+    },
+    {
+      "title": "Most popular Kick streamers 2023, by hours watched",
+      "unit": "Hours watched in millions",
+      "years": [],
+      "values": [
+        6.25,
+        1.93,
+        1.91,
+        1.52,
+        1.27,
+        1.25,
+        0.87,
+        0.84,
+        0.56,
+        0.55
+      ],
+      "series_rows": [
+        [
+          6.25,
+          1.93,
+          1.91,
+          1.52,
+          1.27,
+          1.25,
+          0.87,
+          0.84,
+          0.56,
+          0.55
+        ]
+      ],
+      "source": "StreamElements; Streams Charts",
+      "note": "Worldwide; April 2023",
+      "needs_review": [],
+      "page": 49
+    },
+    {
+      "title": "Leading female Kick streamers 2023, based on hours watched",
+      "unit": "",
+      "years": [],
+      "values": [
+        496.0,
+        192.0,
+        176.0,
+        146.0,
+        97.0,
+        89.0,
+        88.0,
+        83.0,
+        82.0,
+        70.0
+      ],
+      "series_rows": [
+        [
+          496.0,
+          192.0,
+          176.0,
+          146.0,
+          97.0,
+          89.0,
+          88.0,
+          83.0,
+          82.0,
+          70.0
+        ]
+      ],
+      "source": "Streams Charts",
+      "note": "Worldwide; July 1 to 30, 2023",
+      "needs_review": [],
+      "page": 50
+    },
+    {
+      "title": "Emerging Kick streamers 2023, based on hours watched",
+      "unit": "",
+      "years": [],
+      "values": [
+        50.0,
+        45.0,
+        41.0,
+        38.0,
+        31.0,
+        20.0,
+        17.0,
+        17.0,
+        14.0,
+        13.0
+      ],
+      "series_rows": [
+        [
+          50.0,
+          45.0,
+          41.0,
+          38.0,
+          31.0,
+          20.0,
+          17.0,
+          17.0,
+          14.0,
+          13.0
+        ]
+      ],
+      "source": "Streams Charts",
+      "note": "August 1 to 14, 2023",
+      "needs_review": [],
+      "page": 51
+    },
+    {
+      "title": "Global Kick creators earnings based on number of subscribers 2023",
+      "unit": "number of subscribers as of April 2023 (in U.S. dollars)",
+      "years": [],
+      "values": [
+        100.0,
+        250.0,
+        500.0,
+        1000.0,
+        5000.0
+      ],
+      "series_rows": [
+        [
+          50.0,
+          30.0,
+          5.0
+        ],
+        [
+          100.0,
+          250.0,
+          500.0,
+          1000.0,
+          5000.0
+        ],
+        [
+          2.375,
+          4.75,
+          23.75,
+          52.0
+        ]
+      ],
+      "source": "Kick",
+      "note": "Worldwide; April 2023",
+      "needs_review": true,
+      "page": 52
+    },
+    {
+      "title": "Leading live streaming global gambling channels 2023, by hours watched",
+      "unit": "Hours watched in millions",
+      "years": [],
+      "values": [
+        13.77,
+        5.49,
+        4.82,
+        4.39,
+        4.3,
+        4.28,
+        2.56,
+        2.23,
+        2.16,
+        1.77
+      ],
+      "series_rows": [
+        [
+          13.77,
+          5.49,
+          4.82,
+          4.39,
+          4.3,
+          4.28,
+          2.56,
+          2.23,
+          2.16,
+          1.77
+        ]
+      ],
+      "source": "Streams Charts",
+      "note": "Worldwide; January 1 to June 30, 2023; casino jackpot, slots, virtual casino live streams. Channels hosted on Twitch and Kick",
+      "needs_review": [],
+      "page": 53
+    },
+    {
+      "title": "Vimeo: annual paid subscribers count 2021-2023, by division",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        200.0,
+        400.0,
+        600.0,
+        800.0,
+        1.0,
+        1.2,
+        1.4,
+        1.6,
+        1.8
+      ],
+      "series_rows": [
+        [
+          1.505,
+          1.554,
+          7.0
+        ],
+        [
+          1.6,
+          2.2,
+          3.3
+        ],
+        [
+          138.7,
+          93.3,
+          67.0
+        ],
+        [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1.0,
+          1.2,
+          1.4,
+          1.6,
+          1.8
+        ]
+      ],
+      "source": "IAC; Vimeo",
+      "note": "Worldwide; 2021 and 2023",
+      "needs_review": true,
+      "page": 55
+    },
+    {
+      "title": "Vimeo: average revenue per user 2020-2021",
+      "unit": "ARPU in U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        150.0,
+        200.0,
+        250.0,
+        300.0,
+        205.0,
+        243.0,
+        56.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          205.0,
+          243.0,
+          56.0
+        ]
+      ],
+      "source": "IAC; Vimeo",
+      "note": "Worldwide; 2020 and 2021",
+      "needs_review": [],
+      "page": 56
+    },
+    {
+      "title": "Cameo.com monthly traffic volume 2022-2023",
+      "unit": "Monthly traffic in million visits",
+      "years": [],
+      "values": [
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        6.2,
+        4.2,
+        4.7,
+        57.0
+      ],
+      "series_rows": [
+        [
+          22.0,
+          23.0,
+          23.0
+        ],
+        [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          6.2,
+          4.2,
+          4.7,
+          57.0
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; December 2022 to February 2023",
+      "needs_review": true,
+      "page": 57
+    },
+    {
+      "title": "Countries with the highest monthly traffic volume to Cameo.com 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        2.5
+      ],
+      "series_rows": [
+        [
+          383.3,
+          294.4,
+          248.3
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          2.5
+        ]
+      ],
+      "source": "Semrush",
+      "note": "Worldwide; February 2023",
+      "needs_review": true,
+      "page": 58
+    }
+  ]
+}

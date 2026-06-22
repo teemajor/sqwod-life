@@ -1,0 +1,583 @@
+{
+  "study": "study_id104136_influencer-marketing-in-germany",
+  "file": "research/statista/Fitness Marketing/study_id104136_influencer-marketing-in-germany.pdf",
+  "charts": [
+    {
+      "title": "Distribution of influencers Germany 2020, by number of Instagram followers",
+      "unit": "",
+      "years": [],
+      "values": [
+        35.4,
+        1.0,
+        5.0
+      ],
+      "series_rows": [
+        [
+          35.4,
+          1.0,
+          5.0
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Germany; January 2020; 146,226 influencers",
+      "needs_review": [],
+      "page": 3
+    },
+    {
+      "title": "Average daily follower growth on influencer accounts in Germany 2020, by topic",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        50.0,
+        100.0,
+        -50.0,
+        -100.0,
+        -150.0,
+        -200.0,
+        -250.0
+      ],
+      "series_rows": [
+        [
+          0.0,
+          50.0,
+          100.0,
+          -50.0,
+          -100.0,
+          -150.0,
+          -200.0,
+          -250.0
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Germany; March 2020",
+      "needs_review": [],
+      "page": 4
+    },
+    {
+      "title": "Share of influencer subscribers on social media Germany 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        21.0,
+        78.7,
+        1.0
+      ],
+      "series_rows": [
+        [
+          21.0,
+          78.7,
+          1.0
+        ]
+      ],
+      "source": "VuMA",
+      "note": "Germany; 2021; 22,563 respondents; 14 years and older; German-speaking population",
+      "needs_review": [],
+      "page": 5
+    },
+    {
+      "title": "Average market price for an influencer post in Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        100.0,
+        1.0,
+        1500.0,
+        1050.0,
+        0.0
+      ],
+      "series_rows": [
+        [
+          1.0,
+          -5.0,
+          10.0,
+          60.0
+        ],
+        [
+          5.0,
+          -20.0,
+          30.0,
+          270.0
+        ],
+        [
+          20.0,
+          -100.0,
+          200.0,
+          2300.0
+        ],
+        [
+          100.0,
+          1.0,
+          1500.0,
+          1050.0,
+          0.0
+        ],
+        [
+          1.0,
+          1500.0,
+          0.0
+        ]
+      ],
+      "source": "HypeAuditor",
+      "note": "Germany; January 2020",
+      "needs_review": true,
+      "page": 10
+    },
+    {
+      "title": "Planned annual company budget for influencer marketing Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        10.0,
+        10.0,
+        50.0,
+        50.001,
+        100.0,
+        100.001,
+        250.0,
+        250.0
+      ],
+      "series_rows": [
+        [
+          22.0,
+          10.0,
+          50.0,
+          11.0,
+          250.0
+        ],
+        [
+          1.0,
+          2.0,
+          5.0,
+          31.0,
+          53.0,
+          73.0
+        ],
+        [
+          10.0,
+          10.0,
+          50.0,
+          50.001,
+          100.0,
+          100.001,
+          250.0,
+          250.0
+        ]
+      ],
+      "source": "BVDW",
+      "note": "Germany; August 1 to October 2, 2018 and November 5, 2020 to January 31, 2021 ; 2018: 53; 2021: 73; Company employees responsible for social media and influencer marketing",
+      "needs_review": true,
+      "page": 11
+    },
+    {
+      "title": "Opinions on influencer marketing advantages Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        31.0,
+        85.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          31.0,
+          85.0
+        ]
+      ],
+      "source": "BVDW",
+      "note": "Germany; November 5, 2020 to January 31, 2021 ; 85 respondents; Company employees responsible for social media and influencer marketing",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "Opinions on importance of influencer marketing during COVID-19 Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        21.0,
+        -19.0,
+        35.0
+      ],
+      "series_rows": [
+        [
+          21.0,
+          -19.0,
+          35.0
+        ],
+        [
+          5.0,
+          31.0,
+          77.0
+        ]
+      ],
+      "source": "BVDW",
+      "note": "Germany; November 5, 2020 to January 31, 2021 ; 77 respondents; Company employees responsible for social media and influencer marketing",
+      "needs_review": true,
+      "page": 13
+    },
+    {
+      "title": "Opinions in companies on finding the right influencer Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        31.0,
+        70.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          31.0,
+          70.0
+        ]
+      ],
+      "source": "BVDW",
+      "note": "Germany; November 5, 2020 to January 31, 2021 ; 70 respondents; Company employees responsible for social media and influencer marketing",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Companies involving influencers in product or campaign development Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        31.0,
+        61.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          31.0,
+          61.0
+        ]
+      ],
+      "source": "BVDW",
+      "note": "Germany; November 5, 2020 to January 31, 2021 ; 61 respondents; Company employees responsible for social media and influencer marketing",
+      "needs_review": [],
+      "page": 15
+    },
+    {
+      "title": "Share of companies with influencer marketing departments Germany 2020",
+      "unit": "",
+      "years": [],
+      "values": [
+        5.0,
+        31.0,
+        104.0
+      ],
+      "series_rows": [
+        [
+          5.0,
+          31.0,
+          104.0
+        ]
+      ],
+      "source": "BVDW",
+      "note": "Germany; November 5, 2020 to January 31, 2021 ; 104 respondents; Company employees responsible for social media and influencer marketing",
+      "needs_review": [],
+      "page": 16
+    },
+    {
+      "title": "Leading 10 influencers on Instagram Germany 2020, by number of followers",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        8.6,
+        7.9,
+        7.2,
+        7.2,
+        7.0
+      ],
+      "series_rows": [
+        [
+          8.6,
+          7.9,
+          7.2,
+          7.2,
+          7.0
+        ]
+      ],
+      "source": "OnlineMarketing.de",
+      "note": "Germany; January 3, 2020",
+      "needs_review": [],
+      "page": 18
+    },
+    {
+      "title": "Leading food influencers on Instagram in Germany 2018",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        2.887,
+        1.051,
+        848.0
+      ],
+      "series_rows": [
+        [
+          692.0,
+          671.0,
+          603.0
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          2.887,
+          1.051,
+          848.0
+        ]
+      ],
+      "source": "Likeometer",
+      "note": "Germany; 2020; *Figures have been rounded to the nearest thousand. Read more",
+      "needs_review": true,
+      "page": 19
+    },
+    {
+      "title": "Leading 10 YouTube channels Germany 2023, by number of subscribers",
+      "unit": "Number of subscribers in millions",
+      "years": [],
+      "values": [
+        22.4,
+        20.9,
+        19.8,
+        14.3,
+        12.3,
+        8.63,
+        8.48,
+        8.39,
+        7.58,
+        5.84
+      ],
+      "series_rows": [
+        [
+          22.4,
+          20.9,
+          19.8,
+          14.3,
+          12.3,
+          8.63,
+          8.48,
+          8.39,
+          7.58,
+          5.84
+        ]
+      ],
+      "source": "HitchOn",
+      "note": "Germany; As of August 21, 2023",
+      "needs_review": [],
+      "page": 20
+    },
+    {
+      "title": "Leading 10 gaming influencers on YouTube in Germany 2023, by number of subscribers",
+      "unit": "Number of subscribers in millions",
+      "years": [],
+      "values": [
+        5.02,
+        4.94,
+        3.72,
+        3.35,
+        3.32,
+        3.3,
+        2.76,
+        2.63,
+        2.62,
+        2.54
+      ],
+      "series_rows": [
+        [
+          5.02,
+          4.94,
+          3.72,
+          3.35,
+          3.32,
+          3.3,
+          2.76,
+          2.63,
+          2.62,
+          2.54
+        ]
+      ],
+      "source": "HitchOn",
+      "note": "Germany; August 21, 2023",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Leading 10 vegan influencers on YouTube Germany 2023, by number of subscribers",
+      "unit": "",
+      "years": [],
+      "values": [
+        652.0,
+        554.0,
+        476.0,
+        353.0,
+        273.0,
+        258.0,
+        230.0,
+        206.0,
+        200.0,
+        196.0
+      ],
+      "series_rows": [
+        [
+          652.0,
+          554.0,
+          476.0,
+          353.0,
+          273.0,
+          258.0,
+          230.0,
+          206.0,
+          200.0,
+          196.0
+        ]
+      ],
+      "source": "HitchOn",
+      "note": "Germany; August 22, 2023",
+      "needs_review": [],
+      "page": 22
+    },
+    {
+      "title": "Leading TikTok accounts Germany 2023, by number of followers",
+      "unit": "Number of followers in millions",
+      "years": [],
+      "values": [
+        53.64,
+        36.26,
+        23.97,
+        19.51,
+        19.44,
+        18.27,
+        15.98,
+        15.62,
+        14.43,
+        13.92,
+        13.55,
+        13.47,
+        13.35,
+        13.06,
+        11.99
+      ],
+      "series_rows": [
+        [
+          53.64,
+          36.26,
+          23.97,
+          19.51,
+          19.44,
+          18.27,
+          15.98,
+          15.62,
+          14.43,
+          13.92,
+          13.55,
+          13.47,
+          13.35,
+          13.06,
+          11.99
+        ]
+      ],
+      "source": "OMR",
+      "note": "Austria, Germany, Switzerland; Creators with international content",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Most mentioned brands on German-language Instagram worldwide 2021",
+      "unit": "",
+      "years": [],
+      "values": [
+        2.7,
+        2.4,
+        2.0,
+        1.9,
+        1.4,
+        1.3,
+        1.2,
+        1.1,
+        1.1,
+        1.0,
+        1.0
+      ],
+      "series_rows": [
+        [
+          2.7,
+          2.4,
+          2.0,
+          1.9,
+          1.4,
+          1.3,
+          1.2,
+          1.1,
+          1.1,
+          1.0,
+          1.0
+        ]
+      ],
+      "source": "influData by weCreate",
+      "note": "Worldwide; July 2021",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "Consumers interacting with influencers 2020, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        47.0,
+        37.0,
+        14.0
+      ],
+      "series_rows": [
+        [
+          47.0,
+          37.0,
+          14.0
+        ]
+      ],
+      "source": "Business of Apps; Censuswide; Takumi",
+      "note": "Germany, United Kingdom, United States; August 2020; 3,010 respondents; 16 years and older",
+      "needs_review": [],
+      "page": 30
+    },
+    {
+      "title": "Influencer engagement rates worldwide 2020, by platform",
+      "unit": "",
+      "years": [],
+      "values": [
+        100.0,
+        94.0,
+        95.0,
+        95.0,
+        92.0
+      ],
+      "series_rows": [
+        [
+          100.0,
+          94.0,
+          95.0,
+          95.0,
+          92.0
+        ]
+      ],
+      "source": "Business of Apps; Censuswide; SurveyMonkey; Takumi",
+      "note": "Germany, United Kingdom, United States; August 2020; 3,010 respondents; 16 years and older",
+      "needs_review": [],
+      "page": 31
+    }
+  ]
+}

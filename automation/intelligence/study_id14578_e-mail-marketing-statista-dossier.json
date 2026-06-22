@@ -1,0 +1,536 @@
+{
+  "study": "study_id14578_e-mail-marketing-statista-dossier",
+  "file": "research/statista/Fitness Marketing/study_id14578_e-mail-marketing-statista-dossier.pdf",
+  "charts": [
+    {
+      "title": "Number of e-mail users worldwide 2017-2026",
+      "unit": "Number of users in millions",
+      "years": [
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022"
+      ],
+      "values": [
+        0.0,
+        500.0,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0
+      ],
+      "series_rows": [
+        [
+          3.718,
+          3.823,
+          3.93,
+          4.037,
+          4.147,
+          4.258,
+          4.371,
+          4.481,
+          4.594,
+          4.73
+        ],
+        [
+          0.0,
+          500.0,
+          1.0,
+          1.5,
+          2.0,
+          2.5,
+          3.0,
+          3.5,
+          4.0,
+          4.5,
+          5.0
+        ]
+      ],
+      "source": "The Radicati Group",
+      "note": "United States; 2017 to 2022; * Forecast 2017 to 2020 data from previous publications Read more",
+      "needs_review": true,
+      "page": 3
+    },
+    {
+      "title": "Countries with highest number of emails sent 2024",
+      "unit": "Emails sent in billions",
+      "years": [],
+      "values": [
+        9.7,
+        8.5,
+        8.4,
+        8.3,
+        8.3,
+        8.3,
+        8.2,
+        8.2,
+        8.2,
+        8.1
+      ],
+      "series_rows": [
+        [
+          18.0,
+          8.5,
+          8.4
+        ],
+        [
+          9.7,
+          8.5,
+          8.4,
+          8.3,
+          8.3,
+          8.3,
+          8.2,
+          8.2,
+          8.2,
+          8.1
+        ]
+      ],
+      "source": "Cisco Talos Intelligence Group",
+      "note": "Worldwide; April 18, 2024",
+      "needs_review": true,
+      "page": 4
+    },
+    {
+      "title": "E-mail marketing revenue worldwide 2022-2032",
+      "unit": "Revenue in billion U.S. dollars",
+      "years": [],
+      "values": [
+        0.0,
+        5.0,
+        10.0,
+        15.0,
+        20.0,
+        25.0,
+        30.0,
+        35.0,
+        40.0,
+        7.0,
+        8.3,
+        9.7,
+        12.0,
+        14.5,
+        16.9,
+        18.9,
+        22.4,
+        26.1,
+        31.0,
+        37.5,
+        6.0
+      ],
+      "series_rows": [
+        [
+          8.3,
+          18.9,
+          18.8
+        ],
+        [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          7.0,
+          8.3,
+          9.7,
+          12.0,
+          14.5,
+          16.9,
+          18.9,
+          22.4,
+          26.1,
+          31.0,
+          37.5,
+          6.0
+        ]
+      ],
+      "source": "Market.us",
+      "note": "Worldwide; 2022; * Forecast. Read more",
+      "needs_review": true,
+      "page": 6
+    },
+    {
+      "title": "Most used email marketing metrics worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        5.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": [],
+      "page": 8
+    },
+    {
+      "title": "Leading e-mail marketing campaign types worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        5.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": [],
+      "page": 9
+    },
+    {
+      "title": "Leading e-mail marketing campaign objectives worldwide 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        14.6,
+        14.6,
+        13.9,
+        13.3
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ],
+        [
+          14.6,
+          14.6,
+          13.9,
+          13.3
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": true,
+      "page": 11
+    },
+    {
+      "title": "Subject line personalization rates in e-mail marketing worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        5.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": [],
+      "page": 12
+    },
+    {
+      "title": "Most preferred week day for e-mail marketing campaigns worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        5.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": [],
+      "page": 13
+    },
+    {
+      "title": "Areas in which marketers used automation the most worldwide 2024",
+      "unit": "",
+      "years": [],
+      "values": [
+        58.0,
+        49.0,
+        33.0
+      ],
+      "series_rows": [
+        [
+          58.0,
+          49.0,
+          33.0
+        ]
+      ],
+      "source": "Ascend2",
+      "note": "Worldwide; February 2024; 387 respondents; among marketing decision-makers",
+      "needs_review": [],
+      "page": 14
+    },
+    {
+      "title": "Marketing e-mail open rates worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        30.0,
+        10.0,
+        20.0,
+        57.8,
+        20.0,
+        50.0
+      ],
+      "series_rows": [
+        [
+          30.0,
+          10.0,
+          20.0,
+          57.8,
+          20.0,
+          50.0
+        ],
+        [
+          4.0,
+          5.0,
+          235.0
+        ],
+        [
+          10.0,
+          20.0,
+          10.0,
+          50.0,
+          20.0,
+          50.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents",
+      "needs_review": true,
+      "page": 16
+    },
+    {
+      "title": "E-mail open rates change among marketers worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        5.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": [],
+      "page": 17
+    },
+    {
+      "title": "ROI improve rates in e-mail marketing campaigns worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        5.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": [],
+      "page": 20
+    },
+    {
+      "title": "Click-to-open rates of marketing e-mails worldwide 2022, by industry",
+      "unit": "",
+      "years": [],
+      "values": [
+        16.68,
+        14.47,
+        11.83
+      ],
+      "series_rows": [
+        [
+          16.68,
+          14.47,
+          11.83
+        ]
+      ],
+      "source": "GetResponse",
+      "note": "Worldwide; 2022",
+      "needs_review": [],
+      "page": 21
+    },
+    {
+      "title": "Likelihood to opt out of mailing lists in the U.S. 2023, by age group",
+      "unit": "",
+      "years": [],
+      "values": [
+        18.0,
+        -24.0,
+        25.0,
+        -34.0,
+        35.0,
+        -44.0,
+        45.0,
+        -54.0,
+        55.0,
+        -64.0
+      ],
+      "series_rows": [
+        [
+          64.3,
+          55.0,
+          64.0,
+          18.0,
+          24.0
+        ],
+        [
+          18.0,
+          -24.0,
+          25.0,
+          -34.0,
+          35.0,
+          -44.0,
+          45.0,
+          -54.0,
+          55.0,
+          -64.0
+        ]
+      ],
+      "source": "Attest",
+      "note": "December 2023; 1,500 respondents; among working-age consumers",
+      "needs_review": true,
+      "page": 22
+    },
+    {
+      "title": "Social media link rates in e-mail marketing campaigns sent worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        4.0,
+        5.0,
+        235.0
+      ],
+      "series_rows": [
+        [
+          4.0,
+          5.0,
+          235.0
+        ]
+      ],
+      "source": "Mailmodo",
+      "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+      "needs_review": [],
+      "page": 23
+    },
+    {
+      "title": "Click-to-open rates of marketing e-mails 2022, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        20.12,
+        12.98,
+        12.11,
+        10.41
+      ],
+      "series_rows": [
+        [
+          20.12,
+          12.98,
+          12.11,
+          10.41
+        ]
+      ],
+      "source": "GetResponse",
+      "note": "Worldwide; 2022",
+      "needs_review": [],
+      "page": 24
+    },
+    {
+      "title": "Unsubscribe rates of marketing e-mails worldwide 2022, by country",
+      "unit": "",
+      "years": [],
+      "values": [
+        0.0,
+        0.1,
+        0.1,
+        0.2,
+        0.2,
+        0.3,
+        0.3
+      ],
+      "series_rows": [
+        [
+          0.0,
+          0.1,
+          0.1,
+          0.2,
+          0.2,
+          0.3,
+          0.3
+        ]
+      ],
+      "source": "GetResponse",
+      "note": "Europe; 2022",
+      "needs_review": [],
+      "page": 26
+    },
+    {
+      "title": "Favorite types of brand messaging among consumers worldwide 2023",
+      "unit": "",
+      "years": [],
+      "values": [
+        10.394,
+        18.0,
+        -77.0
+      ],
+      "series_rows": [
+        [
+          10.394,
+          18.0,
+          -77.0
+        ]
+      ],
+      "source": "Econsultancy; Marigold",
+      "note": "Worldwide; September to November 2023; 10,394 respondents; 18-77 years",
+      "needs_review": [],
+      "page": 29
+    }
+  ]
+}
