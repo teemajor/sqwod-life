@@ -1,0 +1,16 @@
+name = "sqwod-subscribe"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+# Public vars (non-secret). Fill the segment IDs from Resend (Audiences/Segments).
+[vars]
+RESEND_SEGMENT_EN = ""              # English segment/audience ID
+RESEND_SEGMENT_DE = ""              # German segment/audience ID
+SITE_BASE = "https://sqwod.life"
+ALLOW_ORIGIN = "https://sqwod.life"
+
+# Custom domain for the endpoint (set after first deploy), e.g. join.sqwod.life
+# routes = [{ pattern = "join.sqwod.life", custom_domain = true }]
+
+# Secret is NOT stored here. Set it with:
+#   wrangler secret put RESEND_API_KEY

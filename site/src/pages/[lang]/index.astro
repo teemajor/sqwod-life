@@ -5,7 +5,7 @@ import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../i18n/ui';
 import { PILLARS, pillarMeta } from '../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../config/podcast';
-import { BEEHIIV } from '../../config/beehiiv';
+import { SUBSCRIBE } from '../../config/subscribe';
 import { existsSync } from 'node:fs';
 
 export function getStaticPaths() {
@@ -55,7 +55,9 @@ const tagline = lang === 'de'
       <strong>{lang==='de'?'In 5 Minuten schlauer':'Get smarter in 5 minutes'}</strong>
       <span>{lang==='de'?'Sqwod Daily: das Fitness-Business, werktäglich. Kostenlos.':'Sqwod Daily: the business of fitness, every weekday. Free.'}</span>
     </div>
-    <form class="sb-form" method="get" action={BEEHIIV.subscribeUrl || `/${lang}/subscribe`}>
+    <form class="sb-form" method={SUBSCRIBE.endpoint ? 'post' : 'get'} action={SUBSCRIBE.endpoint || `/${lang}/subscribe`}>
+      <input type="hidden" name="lang" value={lang} />
+      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
       <button class="cta" type="submit">{lang==='de'?'Abonnieren':'Subscribe'}</button>
     </form>
@@ -144,7 +146,9 @@ const tagline = lang === 'de'
   <section class="subbig reveal">
     <h2>{lang==='de'?'Werde schärfer — in 5 Minuten am Tag':'Get sharper in 5 minutes a day'}</h2>
     <p>{lang==='de'?'Schließ dich Coaches, Gründer:innen und Operatorn an, die Sqwod Daily lesen. Werktäglich, zweisprachig, kostenlos.':'Join the coaches, founders and operators who read Sqwod Daily. Every weekday, bilingual, free.'}</p>
-    <form class="sb-form center" method="get" action={BEEHIIV.subscribeUrl || `/${lang}/subscribe`}>
+    <form class="sb-form center" method={SUBSCRIBE.endpoint ? 'post' : 'get'} action={SUBSCRIBE.endpoint || `/${lang}/subscribe`}>
+      <input type="hidden" name="lang" value={lang} />
+      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
       <button class="cta" type="submit">{lang==='de'?'Kostenlos abonnieren':'Subscribe free'}</button>
     </form>

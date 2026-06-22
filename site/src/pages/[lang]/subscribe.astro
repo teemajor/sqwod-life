@@ -1,24 +1,29 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { languages, type Lang } from '../../i18n/ui';
-import { BEEHIIV } from '../../config/beehiiv';
+import { SUBSCRIBE } from '../../config/subscribe';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
+const status = Astro.url.searchParams.get('status'); // ok | error (set by the Worker redirect)
 const c = lang === 'de' ? {
   title: 'Werde schärfer — in 5 Minuten am Tag',
   blurb: 'Sqwod Daily: das Business von Fitness und Wellness, werktäglich aufbereitet — Geldbewegungen, die Lektion hinter den News, ein To-do, etwas Unterhaltung. Kostenlos.',
-  perks: ['Werktäglich, zweisprachig (EN & DE)', 'Geldbewegungen, Politik-Radar & Stats', 'Ein umsetzbarer Tipp pro Ausgabe', 'Empfiehl uns weiter, hol dir Sqwod-Swag'],
+  perks: ['Werktäglich, zweisprachig (EN & DE)', 'Geldbewegungen, Politik-Radar & Stats', 'Ein umsetzbarer Tipp pro Ausgabe', 'Lesen oder hören — Audio zu jeder Ausgabe'],
   email: 'E-Mail-Adresse', cta: 'Kostenlos abonnieren', soon: 'Anmeldung wird in Kürze aktiviert.',
-  fine: 'Mit der Anmeldung akzeptierst du unsere Datenschutzbestimmungen. Double-Opt-in, jederzeit abbestellbar.',
+  fine: 'Mit der Anmeldung akzeptierst du unsere Datenschutzbestimmungen. Abmeldung jederzeit.',
+  ok: 'Drin! Check dein Postfach — die nächste Ausgabe kommt am nächsten Werktag.',
+  err: 'Hmm, das hat nicht geklappt. Prüf die E-Mail-Adresse und versuch es nochmal.',
 } : {
   title: 'Get sharper in 5 minutes a day',
   blurb: 'Sqwod Daily: the business of fitness and wellness, decoded every weekday — money movement, the lesson behind the news, one thing to do, a little fun. Free.',
-  perks: ['Every weekday, bilingual (EN & DE)', 'Money movement, policy watch & stats', 'One actionable takeaway per issue', 'Refer friends, earn Sqwod swag'],
+  perks: ['Every weekday, bilingual (EN & DE)', 'Money movement, policy watch & stats', 'One actionable takeaway per issue', 'Read it or hear it — audio with every issue'],
   email: 'Email address', cta: 'Subscribe free', soon: 'Sign-up goes live shortly.',
-  fine: 'By subscribing you accept our privacy policy. Double opt-in, unsubscribe anytime.',
+  fine: 'By subscribing you accept our privacy policy. Unsubscribe anytime.',
+  ok: "You're in! Check your inbox — the next issue lands on the next weekday.",
+  err: "Hmm, that didn't go through. Check the email address and try again.",
 };
 ---
 <Base lang={lang} title={c.title + ' — Sqwod'} description={c.blurb} active="">
@@ -29,17 +34,16 @@ const c = lang === 'de' ? {
       <ul class="perks">{c.perks.map((p) => <li>{p}</li>)}</ul>
     </div>
     <div class="sh-form">
-      {BEEHIIV.embedUrl ? (
-        <iframe src={BEEHIIV.embedUrl} title="Subscribe to Sqwod Daily" scrolling="no"
-          style="width:100%;height:340px;border:0;border-radius:14px;background:transparent"></iframe>
-      ) : (
-        <form class="bform" method="get" action={BEEHIIV.subscribeUrl || '#'}>
-          <label>{c.email}<input type="email" name="email" required placeholder="you@studio.com" /></label>
-          <button class="cta" type="submit" disabled={!BEEHIIV.subscribeUrl}>{c.cta}</button>
-          {!BEEHIIV.subscribeUrl && <p class="note">{c.soon}</p>}
-          <p class="fine">{c.fine}</p>
-        </form>
-      )}
+      {status === 'ok' && <div class="banner ok">{c.ok}</div>}
+      {status === 'error' && <div class="banner err">{c.err}</div>}
+      <form class="bform" method="post" action={SUBSCRIBE.endpoint || '#'}>
+        <input type="hidden" name="lang" value={lang} />
+        <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+        <label>{c.email}<input type="email" name="email" required placeholder="you@studio.com" /></label>
+        <button class="cta" type="submit" disabled={!SUBSCRIBE.endpoint}>{c.cta}</button>
+        {!SUBSCRIBE.endpoint && <p class="note">{c.soon}</p>}
+        <p class="fine">{c.fine}</p>
+      </form>
     </div>
   </div>
 
@@ -66,6 +70,10 @@ const c = lang === 'de' ? {
   .bform input{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 14px;color:var(--chalk);font:inherit;text-transform:none;letter-spacing:0}
   .bform input:focus{outline:none;border-color:var(--chalk)}
   .bform .cta[disabled]{opacity:.5;cursor:not-allowed}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .banner{border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.5;margin:0 0 16px}
+  .banner.ok{background:rgba(31,125,77,.14);border:1px solid rgba(31,125,77,.45);color:var(--chalk)}
+  .banner.err{background:rgba(179,38,30,.14);border:1px solid rgba(179,38,30,.45);color:var(--chalk)}
   .note{font-size:13px;color:var(--g2);margin:0}
   .fine{font-size:11.5px;color:var(--g4);line-height:1.5;margin:4px 0 0}
   @media(max-width:680px){.sub-hero{grid-template-columns:1fr;gap:22px}}

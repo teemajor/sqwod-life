@@ -17,6 +17,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DAILY = join(__dirname, '..', 'site', 'src', 'content', 'daily');
 const OUT = join(__dirname, '..', 'site', 'public', 'email');
 const SITE = (process.env.SITE_URL || 'https://sqwod.life').replace(/\/$/, '');
+// Email links MUST be absolute (relative paths collapse to http:///… in inboxes).
+// External http(s) URLs pass through; "/en/play" → SITE+"/en/play"; "verified/x" → SITE+"/<lang>/verified/x".
+const abs = (u, lang) => { if (!u) return ''; if (/^https?:\/\//i.test(u)) return u; return SITE + (u.startsWith('/') ? u : `/${lang}/${u}`); };
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 
 // ---- generalized frontmatter reader for our controlled schema ----
@@ -128,7 +131,7 @@ function render(iss, lang) {
   const recsArr = (iss.recs && iss.recs.length) ? iss.recs : (iss.doThis ? [{ label: 'Do this', text: iss.doThis }] : []);
   const recs = recsArr.length ? card(label(tx.recs, 'pulse-ring.gif') +
     recsArr.map((r) => {
-      const link = r.url ? `<a href="${r.affiliate && !/^https?:/.test(r.url) ? SITE + '/' + lang + r.url : esc(r.url)}"${r.affiliate ? ' rel="sponsored nofollow"' : ''} style="color:${INK};">${esc(r.text)}</a>` : esc(r.text);
+      const link = r.url ? `<a href="${abs(r.url, lang)}"${r.affiliate ? ' rel="sponsored nofollow"' : ''} style="color:${INK};">${esc(r.text)}</a>` : esc(r.text);
       const tag = r.affiliate ? ` <span style="font:700 9px ${F};letter-spacing:.1em;text-transform:uppercase;color:${G4};">· ${tx.sponsored}</span>` : '';
       return `<div style="font:400 15px/1.6 ${F};color:${G1};margin:0 0 12px;"><b style="color:${INK};">✓ ${esc(r.label)}:</b> ${link}${tag}</div>`;
     }).join('')) : '';
@@ -137,7 +140,7 @@ function render(iss, lang) {
   const play = iss.play && iss.play.title ? card(label(tx.play, 'pulse-ring.gif') +
     `<div style="font:800 19px/1.3 ${F};color:${INK};margin-bottom:6px;">${esc(iss.play.title)}</div>` +
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:12px;">${esc(iss.play.prompt)}</div>` +
-    `<a href="${iss.play.url || (SITE + '/' + lang + '/play')}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
+    `<a href="${iss.play.url ? abs(iss.play.url, lang) : `${SITE}/${lang}/play`}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
 
   // MEANWHILE (entertainment)
   const meanwhile = iss.meanwhile ? card(label(tx.meanwhile, 'pulse-ring.gif') +
