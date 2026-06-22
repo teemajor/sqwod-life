@@ -51,7 +51,7 @@ const tx = {
   {d.intro && <p class="verdict" style="margin-bottom:20px">{d.intro}</p>}
 
   <!-- LISTEN: embedded player + link-outs to the podcast apps -->
-  <section class="player">
+  <section class="player" id="listen">
     {hasAudio && <audio controls preload="none" src={audioPath} style="width:100%"></audio>}
     <div class="listen">
       <span class="ll">{tx.listen}:</span>

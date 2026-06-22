@@ -47,3 +47,30 @@ jobs:
             git pull --rebase --autostash origin main || true
             git push
           fi
+
+      - name: Send the Daily (Resend Broadcasts API)
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_EN: ${{ secrets.RESEND_AUDIENCE_EN }}
+          RESEND_AUDIENCE_DE: ${{ secrets.RESEND_AUDIENCE_DE }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+          RESEND_REPLY_TO: ${{ vars.RESEND_REPLY_TO }}
+          RESEND_PRIMARY_LANG: ${{ vars.RESEND_PRIMARY_LANG }}
+        run: node automation/send.mjs --date=$(date +%F)
+
+      - name: Heartbeat — confirm today actually shipped
+        if: always()
+        run: |
+          D=$(date +%F)
+          EN="site/src/content/daily/$D.en.md"
+          if [ ! -f "$EN" ]; then
+            echo "::error title=Sqwod Daily::No issue generated for $D (ingest empty or cascade failed). Nothing shipped."
+            exit 0
+          fi
+          ST=$(grep -m1 '^status:' "$EN" | cut -d '"' -f2)
+          if [ -f "site/public/audio/$D-en.mp3" ]; then AU="audio OK"; else AU="NO AUDIO"; fi
+          if [ "$ST" != "published" ]; then
+            echo "::warning title=Sqwod Daily::Issue for $D is status=$ST (held by verification) — not live until promoted. $AU"
+          else
+            echo "Sqwod Daily $D shipped: status=$ST · $AU"
+          fi

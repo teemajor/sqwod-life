@@ -43,17 +43,25 @@ const RSS_URL = rssFor(lang);
     <div class="ep-list">
       {issues.map((iss) => {
         const ha = hasAudio(iss.data.urlSlug);
+        const url = `/${lang}/daily/${iss.data.urlSlug}`;
         return (
-          <a class={`ep-row${ha ? '' : ' noaudio'}`} href={`/${lang}/daily/${iss.data.urlSlug}`}>
-            <span class="ep-date">{fmt(iss.data.date)}</span>
-            <span class="ep-title">
-              {epLine(iss)}
-              {iss.data.status !== 'published' && <span class="ep-draft">{lang==='de'?'Entwurf':'Draft'}</span>}
+          <div class={`ep-row${ha ? '' : ' noaudio'}`}>
+            <a class="ep-main" href={url}>
+              <span class="ep-date">{fmt(iss.data.date)}</span>
+              <span class="ep-title">
+                {epLine(iss)}
+                {iss.data.status !== 'published' && <span class="ep-draft">{lang==='de'?'Entwurf':'Draft'}</span>}
+              </span>
+            </a>
+            <span class="ep-actions">
+              <a class="ep-btn read" href={url}>{lang==='de'?'Lesen':'Read'}</a>
+              {ha && (
+                <a class="ep-btn listen" href={`${url}#listen`}>
+                  <span class="ep-play">▶</span>{lang==='de'?'Hören':'Listen'}<span class="ep-dur">· {iss.data.duration ?? '5 min'}</span>
+                </a>
+              )}
             </span>
-            {ha
-              ? <span class="ep-dur"><span class="ep-play">▶</span>{iss.data.duration ?? '5 min'}</span>
-              : <span class="ep-read">{lang==='de'?'Lesen →':'Read →'}</span>}
-          </a>
+          </div>
         );
       })}
     </div>
@@ -64,19 +72,26 @@ const RSS_URL = rssFor(lang);
 
 <style>
   .ep-list{border-top:1px solid var(--line)}
-  .ep-row{display:grid;grid-template-columns:130px 1fr auto;gap:18px;align-items:center;
-    padding:18px 6px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s ease}
+  .ep-row{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;
+    padding:18px 6px;border-bottom:1px solid var(--line);transition:background .15s ease}
   .ep-row:hover{background:var(--panel)}
+  .ep-main{display:grid;grid-template-columns:130px 1fr;gap:18px;align-items:center;text-decoration:none;min-width:0}
   .ep-date{font-size:12px;letter-spacing:.04em;color:var(--g3);font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
   .ep-title{font-size:16px;font-weight:700;color:var(--chalk);line-height:1.3}
   .ep-draft{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--g3);border-radius:4px;padding:2px 6px;margin-left:8px;vertical-align:middle}
-  .ep-dur{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--g2);font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
-  .ep-play{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid var(--line);border-radius:50%;font-size:9px;color:var(--chalk);padding-left:2px}
-  .ep-row:hover .ep-play{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
-  .ep-read{font-size:12px;font-weight:700;color:var(--g3);white-space:nowrap}
-  .ep-row:hover .ep-read{color:var(--chalk)}
+  .ep-actions{display:flex;gap:8px;align-items:center;white-space:nowrap}
+  .ep-btn{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;letter-spacing:.02em;
+    border:1px solid var(--line);border-radius:999px;padding:7px 14px;text-decoration:none;color:var(--g2);transition:all .15s ease}
+  .ep-btn:hover{border-color:var(--chalk);color:var(--chalk)}
+  .ep-btn.listen{color:var(--chalk)}
+  .ep-btn.listen:hover{background:var(--chalk);color:var(--ink)}
+  .ep-play{font-size:8px}
+  .ep-dur{color:var(--g3);font-weight:600;font-family:ui-monospace,Menlo,monospace}
+  .ep-btn.listen:hover .ep-dur{color:var(--ink)}
   @media(max-width:600px){
-    .ep-row{grid-template-columns:1fr auto;gap:6px 12px}
-    .ep-date{grid-column:1 / -1;order:-1}
+    .ep-row{grid-template-columns:1fr;gap:12px}
+    .ep-main{grid-template-columns:1fr;gap:4px}
+    .ep-date{order:-1}
+    .ep-actions{justify-content:flex-start}
   }
 </style>

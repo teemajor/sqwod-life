@@ -117,6 +117,29 @@ async function run() {
       }
     } catch (e) { console.error('fetch failed', qo.q.slice(0, 40), e.message); }
   }
+  // Fallback: if the themed queries came back empty (dead feeds / a quiet day),
+  // do one broad catch-all pass over a wider window so the Daily still ships.
+  if (!picked.length) {
+    console.error('· primary queries empty — running broad fallback pass');
+    const fb = 'fitness OR wellness OR gym OR "personal trainer" OR "fitness studio" OR wearable OR longevity OR recovery when:10d';
+    try {
+      const r = await fetch(`https://news.google.com/rss/search?q=${encodeURIComponent(fb)}&hl=en-US&gl=US&ceid=US:en`, { headers: { 'user-agent': 'sqwod-ingest/1.0' } });
+      if (r.ok) {
+        for (const it of parseItems(await r.text())) {
+          const cut = it.title.lastIndexOf(' - ');
+          const headline = cut > 20 ? it.title.slice(0, cut) : it.title;
+          const outlet = it.source || (cut > 20 ? it.title.slice(cut + 3) : 'source');
+          if (!RELEVANT.test(headline) || JUNK.test(headline)) continue;
+          const key = headline.toLowerCase().slice(0, 60);
+          if (seen.has(key)) continue; seen.add(key);
+          const [pillar, conversion] = classify(headline, { pillar: 'industry-trends', conversion: 'list-growth' });
+          const kind = moneyKind(headline);
+          picked.push({ headline, outlet, link: it.link, pub: it.pub, pillar, conversion, money: kind ? { kind, amount: moneyAmount(headline) } : null });
+          if (picked.length >= MAX) break;
+        }
+      }
+    } catch (e) { console.error('fallback fetch failed', e.message); }
+  }
   console.error(`scanned ${scanned}, dropped ${dropped} off-topic, kept ${picked.length} unique`);
   // spread across pillars where possible, cap at MAX
   const byPillar = {}; const ordered = [];

@@ -143,12 +143,14 @@ function render(iss, lang) {
   const meanwhile = iss.meanwhile ? card(label(tx.meanwhile, 'pulse-ring.gif') +
     `<div style="font:400 15.5px/1.7 ${F};color:${G1};">${esc(iss.meanwhile)}${iss.meanwhileUrl ? ` <a href="${esc(iss.meanwhileUrl)}" style="color:${G4};">→</a>` : ''}</div>`) : '';
 
-  // SHARE / referral
-  // beehiiv referral merge tags: {{rp_refer_url}} = personal link, {{rp_personalized_text}} = progress toward next reward.
-  const share = card(label(tx.share, 'hero-bars.gif') +
-    `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:12px;">${tx.shareBody}</div>` +
-    `<div style="font:600 13px/1.5 ${F};color:${INK};margin-bottom:14px;">{{rp_personalized_text}}</div>` +
-    `<a href="{{rp_refer_url}}" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.shareBtn} &rarr;</a>`);
+  // SHARE — simple forward-to-a-friend ask (referral program deferred; no ESP lock-in)
+  const shareHead = lang === 'de' ? 'Teile Sqwod Daily' : 'Share Sqwod Daily';
+  const shareBody = lang === 'de'
+    ? 'Kennst du eine:n Coach, Trainer:in oder Studio-Gründer:in, der das lesen sollte? Leite diese Ausgabe weiter — so wächst Sqwod.'
+    : 'Know a coach, trainer, or studio founder who should read this? Forward this issue — that\'s how Sqwod grows.';
+  const share = card(label(shareHead, 'hero-bars.gif') +
+    `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:14px;">${shareBody}</div>` +
+    `<a href="${SITE}/${lang}/subscribe" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn} &rarr;</a>`);
 
   // Top sponsor slot: a clearly-defined "Presented by" band UNDER the hero, before content.
   const presentedBand = iss.sponsor && iss.sponsor.name ? `
@@ -203,7 +205,7 @@ function render(iss, lang) {
         <!-- footer -->
         <tr><td style="padding:8px 6px 30px;">
           <div style="font:400 11px/1.6 ${F};color:${G4};">${tx.disc}</div>
-          <div style="font:400 11px/1.6 ${F};color:${G4};margin-top:8px;">Sqwod · Berlin · <a href="{{unsubscribe}}" style="color:${G4};">${tx.unsub}</a></div>
+          <div style="font:400 11px/1.6 ${F};color:${G4};margin-top:8px;">Sqwod · Berlin · <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:${G4};">${tx.unsub}</a></div>
         </td></tr>
       </table>`;
 

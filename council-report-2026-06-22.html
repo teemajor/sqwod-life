@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLM Council — Sqwod Pod Build</title>
+<style>
+  :root{--ink:#15161a;--mut:#6b7280;--line:#e6e7ea;--bg:#fafafa;--card:#fff;--accent:#0e0e10;--green:#1f7a45;--red:#b4232a;--amber:#9a6b00;--blue:#1d4ed8}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:860px;margin:0 auto;padding:40px 22px 80px}
+  .tag{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mut)}
+  h1{font-size:26px;line-height:1.2;margin:8px 0 4px;letter-spacing:-.02em}
+  .q{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0 28px;color:#33353c;font-size:15px}
+  h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin:34px 0 12px;border-top:1px solid var(--line);padding-top:24px}
+  .verdict{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:6px 24px 22px;box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .verdict h3{font-size:15px;margin:22px 0 6px;letter-spacing:-.01em}
+  .verdict p,.verdict li{font-size:15px;color:#2a2c33}
+  .rec{background:#0e0e10;color:#fafafa;border-radius:14px;padding:20px 22px;margin:18px 0}
+  .rec h3{color:#fff;margin:0 0 8px;font-size:16px}
+  .rec p,.rec li{color:#e7e7ea;font-size:15px}
+  .first{border:2px solid #0e0e10;border-radius:14px;padding:18px 20px;margin:14px 0;background:#fff}
+  .first .lab{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#0e0e10}
+  .spectrum{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:6px 0 4px}
+  @media(max-width:620px){.spectrum{grid-template-columns:1fr}}
+  .col{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:14px 16px}
+  .col h4{margin:0 0 10px;font-size:13px;letter-spacing:.04em}
+  .pos{display:flex;gap:9px;align-items:flex-start;margin:9px 0;font-size:13.5px}
+  .dot{flex:none;width:9px;height:9px;border-radius:50%;margin-top:6px}
+  .who{font-weight:700}
+  .focus h4{color:var(--green)} .scale h4{color:var(--blue)}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:2px 16px}
+  summary{cursor:pointer;font-weight:700;padding:12px 0;font-size:14.5px;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"▸";color:var(--mut);margin-right:9px}
+  details[open] summary::before{content:"▾"}
+  details .body{padding:0 0 14px;font-size:14.5px;color:#2c2e35}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;margin-left:6px;vertical-align:middle}
+  .pill.cut{background:#eaf6ee;color:var(--green)} .pill.seq{background:#eaf0fe;color:var(--blue)}
+  .foot{margin-top:40px;color:var(--mut);font-size:12.5px;border-top:1px solid var(--line);padding-top:16px}
+  ul{margin:6px 0 6px 0;padding-left:20px}
+</style></head>
+<body><div class="wrap">
+  <div class="tag">LLM Council · Verdict</div>
+  <h1>Is the entire Sqwod Pod build the right strategy right now?</h1>
+  <div class="q">Pre-launch, on an unpublished draft theme: a dark bilingual rebrand of the Shopify store (Berlin self-serve hourly "Pod" gym, 2 locations) + a "Company Wellness" B2B offer + a two-sided trainer marketplace (seed hidden profiles → cold "claim your free profile" emails → e-signed claim page → manual Momence provisioning → live Book button; 25/75 split via Momence; client prepays then coordinates time with the trainer) + a deals/affiliate line + an SEO blog + an ambition to build "sqwod.life" as a wellness media brand. Solo founder + AI, limited time/money, every stream meant to "turn on at once and let performance decide."</div>
+
+  <h2>Advisor positions</h2>
+  <div class="spectrum">
+    <div class="col focus"><h4>▸ Cut to the core (4 of 5)</h4>
+      <div class="pos"><span class="dot" style="background:#b4232a"></span><span><span class="who">Contrarian:</span> "Let performance decide" is deferred prioritization. Marketplace is chicken-and-egg; cold claim emails = spam with extra steps; 25% is a disincentive for trainers who already have clients.</span></div>
+      <div class="pos"><span class="dot" style="background:#1d4ed8"></span><span><span class="who">First Principles:</span> The only number that matters is <b>Pod utilization</b>. Launch rebrand + marketplace; cut the rest; measure weekly.</span></div>
+      <div class="pos"><span class="dot" style="background:#9a6b00"></span><span><span class="who">Outsider:</span> Five businesses = you lose people at "but also." "Pods"/"Sqwod AI" confuse; say "trainers keep 75%." Launch one 8-second-clear thing.</span></div>
+      <div class="pos"><span class="dot" style="background:#0e0e10"></span><span><span class="who">Executor:</span> Only the rebrand (publish Monday) and the 8 invites (send this week) have real first steps. Cut Company Wellness, deals, media. Get Pods full.</span></div>
+    </div>
+    <div class="col scale"><h4>▸ Don't cut — sequence (1 of 5)</h4>
+      <div class="pos"><span class="dot" style="background:#1f7a45"></span><span><span class="who">Expansionist:</span> The marketplace is a Berlin fitness <b>infrastructure layer</b> / moat; the seeded-profile loop is the story; Company Wellness = B2B licensing; sqwod.life = long-leverage distribution. Risk is launching timidly, not overextension.</span></div>
+    </div>
+  </div>
+
+  <h2>Council verdict</h2>
+  <div class="verdict">
+    <h3>Where the council agrees</h3>
+    <ul>
+      <li><b>The build is over-extended.</b> Four of five independently called launching all streams at once "deferred prioritization dressed as diversification." Many simultaneous low-signal experiments = you can't tell what's working, and the solo founder burns out.</li>
+      <li><b>Two things belong in the launch:</b> the dark rebrand (built, table stakes) and the trainer marketplace (highest leverage — it fills Pod hours without the founder doing the marketing).</li>
+      <li><b>Cut/defer from launch:</b> Company Wellness, the deals line, and the sqwod.life media brand.</li>
+      <li><b>Clarity is weak:</b> "Pod" and "Sqwod AI" don't explain themselves; flip "25/75" to "trainers keep 75%."</li>
+    </ul>
+    <h3>Where the council clashes</h3>
+    <ul>
+      <li><b>The marketplace's value.</b> The Expansionist sees a defensible infrastructure moat; the Contrarian sees an unsolved chicken-and-egg with cold-email outreach that annoys more than it converts. The honest reconciliation: it's high-leverage <i>only if</i> the first trainers bring their own existing clients (so there's demand on day one) — exactly the Contrarian's condition.</li>
+      <li><b>Bold vs. focused.</b> "Launch everything, sequence the reveals" (Expansionist) vs. "ship three things, cut the rest" (everyone else). The majority is decisive: focus.</li>
+    </ul>
+    <h3>Blind spots the peer review caught</h3>
+    <ul>
+      <li><b>Momence is the untested critical path</b> (flagged in two reviews). It wasn't built for a two-sided rev-share marketplace; manual provisioning caps you at ~15 trainers; there's no fallback if pricing/API/refunds/disputes break. The council debated sequencing — nobody checked whether the plumbing holds.</li>
+      <li><b>The warm list is invisible.</b> Existing recurring Pod users are the highest-probability first clients (and first trainer-client pairs). Everyone debated cold acquisition while ignoring the people already in the building.</li>
+    </ul>
+  </div>
+
+  <div class="rec">
+    <h3>The recommendation</h3>
+    <p><b>Publish the rebrand and launch the marketplace — but narrow and de-risk it first.</b></p>
+    <ul>
+      <li>Cut Company Wellness, deals, and sqwod.life from the launch. (Leave the Company Wellness page live as quiet lead-capture; spend zero active effort on it.)</li>
+      <li>Re-aim recruitment: prioritize trainers who <b>bring their own clients</b> into a Pod — that gives day-one liquidity and sidesteps the chicken-and-egg. The 8 mobile trainers are fine; the explicit ask is "bring your current clients."</li>
+      <li>Fix plain-language clarity site-wide ("trainers keep 75%", an 8-second "what's a Pod").</li>
+      <li>Tap existing recurring Pod users as the warm first cohort.</li>
+      <li>Make <b>Pod utilization</b> the one north-star metric.</li>
+    </ul>
+  </div>
+
+  <div class="first">
+    <div class="lab">The one thing to do first</div>
+    <p style="margin:8px 0 0">Before publishing broadly or sending the cold invites: <b>run one real, end-to-end paid trainer session through Momence</b> — provision one trainer, take one prepaid booking (ideally from an existing Pod regular), confirm the 25/75 actually pays out, and hold the Pod slot. If the plumbing holds, you have a real product to launch. If it breaks, you just saved the launch from collapsing in public.</p>
+  </div>
+
+  <h2>Full advisor responses</h2>
+  <details><summary>The Contrarian <span class="pill cut">cut to core</span></summary><div class="body">"Let performance decide" is not a strategy when you have zero baseline traffic, zero marketplace liquidity, and zero B2B relationships — it's deferring the hard question of which of these is the business. The trainer marketplace has a chicken-and-egg problem with no solution: trainers won't bring clients to a platform with no members; members won't come to a directory with no proven trainers. Seeding hidden profiles and sending cold claim emails is not a growth loop — it's spam with extra steps. The 25/75 split needs a hard look: trainers who already have clients and want Pod access will realize they're paying Sqwod 25% to use a space they could book directly. Company Wellness is a completely different (enterprise) sales motion a lead form won't close. The media brand shouldn't exist yet (12–18 month payoff). The real risk: five simultaneous experiments give diffuse low-signal data, and the founder runs out of energy before any one thing gets traction. Cut Company Wellness entirely for now. Kill the media brand until the Pods are consistently full. The marketplace might work — but only if trainers bring their own existing clients through the door on day one. Make that the explicit requirement for the beta cohort.</div></details>
+  <details><summary>The First Principles Thinker <span class="pill cut">cut to core</span></summary><div class="body">The real question isn't "what to cut" — it's "what actually generates revenue this month?" Revenue comes from exactly three sources: Pod hourly bookings, coached sessions (the marketplace), and B2B. Everything else is a distribution mechanism or a future bet. The entire build is weighted toward acquisition infrastructure (SEO blog, media brand, deals line) while the primary bottleneck is almost certainly Pod utilization rate — what percentage of available Pod hours are booked? That number is the only one that matters before launch. The dangerous assumption: that you need all five channels simultaneously because you don't know which will work. That's not diversification — it's deferred prioritization dressed up as strategy. Launch exactly two things: the dark rebrand (table stakes, already built) and the trainer marketplace (highest leverage — trainers bring their own clients, filling Pod hours without you doing the marketing). Company Wellness is a full-time B2B sales job; the media brand is a 12-month investment before it moves any needle. Cut everything except the rebrand and marketplace at launch. Measure Pod utilization weekly. Let that number decide what to build next.</div></details>
+  <details><summary>The Expansionist <span class="pill seq">don't cut — sequence</span></summary><div class="body">The trainer marketplace is the sleeper. Everyone will tell you to cut it because it's complex — ignore them. If it works, it's not a marketplace, it's a Berlin fitness infrastructure layer. Trainers without a gym need Pods to operate; clients need trainers; you're the connective tissue and you own the physical space. That's a moat no SaaS can replicate. The seeded-profile growth loop is brilliant and should be the main story, not a footnote — you're building a cold-start network with manufactured social proof before a single trainer signs up, a playbook most two-sided marketplaces fail to execute. Company Wellness isn't a side product — it's the B2B licensing business hiding in plain sight; one enterprise contract = 12 months of guaranteed Pod occupancy, and the ROI estimator is a Trojan-horse sales tool. The media brand (sqwod.life) is the longest-leverage play in the stack; Fitt Insider was acquired for influence, not revenue. Don't cut — sequence the reveals. Launch the rebrand and marketplace together, let Company Wellness run quietly in the background, and let sqwod.life earn its way in as the content engine that makes the whole ecosystem searchable. The risk isn't overextension. The risk is launching timidly and letting competitors copy the playbook after you've proven it.</div></details>
+  <details><summary>The Outsider <span class="pill cut">cut to core</span></summary><div class="body">The curse of knowledge is everywhere. Coming in cold: "Pods" made me picture a sleep capsule or a podcast studio — not a private gym room. That word does zero work for a first-time visitor. "Sqwod AI running a corporate Pod" — what does it actually do day to day? Lock the door? Program workouts? It's explained nowhere, yet it's a B2B sales product. "25/75 rev-share (Sqwod keeps 25%)" took a full re-read — write it as "trainers keep 75%" and the value is instant. The real problem: five different businesses launching simultaneously. When I try to explain it to a friend — "a private gym you book by the hour, but also a corporate wellness company, but also a trainer directory, but also a deals shop" — I lose them at "but also." That's not a product, it's a pitch deck. The non-obvious risk: the marketplace only works if trainers can explain to their clients why they're booking through Sqwod instead of just meeting at a park — and that plain-language explanation doesn't exist yet. Launch one thing a normal Berliner can understand in 8 seconds. Right now that's Pod bookings. Complexity kills conversion before you even have traffic.</div></details>
+  <details><summary>The Executor <span class="pill cut">cut to core</span></summary><div class="body">The critical path is buried under six launches happening simultaneously. Here's what can actually be done Monday: publish the dark relaunch. One action, one day. The trainer marketplace has a working first step too — the 8 invite emails are drafted; send them this week, then stop and wait for responses before building anything else. Company Wellness? No Monday action because there's no product — "drop a Pod in an office" requires a sales conversation, a contract, and an operational process that don't exist yet. The ROI estimator is a landing page, not a business. Cut it from launch. Deals/affiliate: nothing ships without supplier setup, inventory, or margin validation — remove from launch scope. sqwod.life: zero Monday actions, a 6-month build minimum — don't touch it. Cut to three things: (1) publish the relaunch, (2) send the 8 trainer invites, (3) keep booking the existing Pods. Everything else has no executable first step, no demand signal, and no revenue in the next 30 days. The biggest risk isn't that the strategy is wrong — it's that nothing ships because everything is half-ready at once.</div></details>
+
+  <h2>Peer-review highlights</h2>
+  <details><summary>What the reviewers converged on</summary><div class="body">
+  <p><b>Strongest response:</b> the First Principles Thinker (named the real bottleneck — Pod utilization — and the precise diagnosis, "deferred prioritization dressed as diversification"); the Contrarian a close second for interrogating the actual mechanics.</p>
+  <p><b>Biggest blind spot:</b> the Expansionist — unanimously. It romanticizes complexity ("infrastructure layer," "moat"), treats the seeded-profile cold-email loop as proven social proof rather than unvalidated spam risk, and gives zero weight to founder bandwidth.</p>
+  <p><b>What all five missed:</b> (1) <b>The Momence dependency</b> — the marketplace runs entirely on a third-party platform not designed for two-sided rev-share; manual provisioning caps it at ~15 trainers with no fallback; the plumbing is untested. (2) <b>Existing Pod customers</b> — the warm list nobody used; convert current recurring users before cold-emailing strangers.</p>
+  </div></details>
+
+  <div class="foot">LLM Council · 5 advisors, peer-reviewed, chairman synthesis · Generated 2026-06-22 · Subject: the entire Sqwod Pod pre-launch build &amp; strategy.</div>
+</div></body></html>
