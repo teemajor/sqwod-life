@@ -44,22 +44,34 @@ const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', 
   </section>
 )}
 
-{d.series && d.series.points.length > 1 && (
-  <section class="block chart">
-    <p class="kick">{d.series.label}{d.series.unit ? ` · ${d.series.unit}` : ''}</p>
-    <div class="bars">
-      {d.series.points.map((p, i) => {
-        const mx = Math.max(...d.series!.points, 1);
-        return (
-          <div class="bar-col">
-            <div class="bar" style={`height:${Math.round((p / mx) * 100)}%`}><span class="bar-v">{p}</span></div>
-            {d.series!.years && <span class="bar-y">{d.series!.years[i]}</span>}
-          </div>
-        );
-      })}
-    </div>
-  </section>
-)}
+{d.series && d.series.points.length > 1 && (() => {
+  const pts = d.series.points;
+  const yrs = d.series.years || [];
+  const mx = Math.max(...pts, 1);
+  const W = 720, H = 250, top = 34, bot = 30, base = H - bot, chartH = base - top;
+  const slot = W / pts.length;
+  const barW = Math.min(48, slot * 0.55);
+  return (
+    <section class="block chart">
+      <p class="kick">{d.series.label}{d.series.unit ? ` · ${d.series.unit}` : ''}</p>
+      <svg class="bars-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label={d.series.label}>
+        <line x1="0" y1={base} x2={W} y2={base} stroke="var(--line)" stroke-width="1" />
+        {pts.map((p, i) => {
+          const h = Math.max(2, (p / mx) * chartH);
+          const x = i * slot + (slot - barW) / 2;
+          const cx = i * slot + slot / 2;
+          return (
+            <g>
+              <rect x={x} y={base - h} width={barW} height={h} rx="4" fill="var(--chalk)" />
+              <text x={cx} y={base - h - 9} text-anchor="middle" fill="var(--g2)" font-size="13" font-family="ui-monospace,Menlo,monospace">{p}</text>
+              {yrs[i] && <text x={cx} y={base + 20} text-anchor="middle" fill="var(--g4)" font-size="12" font-family="ui-monospace,Menlo,monospace">{yrs[i]}</text>}
+            </g>
+          );
+        })}
+      </svg>
+    </section>
+  );
+})()}
 
 <section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
   <Content />
@@ -98,6 +110,7 @@ const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', 
   .fig-lbl{font-size:13px;color:var(--g1);margin-top:6px;line-height:1.35}
   .fig-note{font-size:12px;color:var(--g3);margin-top:6px;line-height:1.4}
   .fig-src{font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--g4);margin-top:8px}
+  .bars-svg{width:100%;height:auto;display:block;margin-top:14px}
   .chart .bars{display:flex;align-items:flex-end;gap:8px;height:160px;margin-top:14px;border-bottom:1px solid var(--line);padding-bottom:0}
   .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
   .bar{width:100%;max-width:46px;background:var(--chalk);border-radius:4px 4px 0 0;position:relative;min-height:3px;display:flex;justify-content:center}
