@@ -2,6 +2,8 @@
 import { type Lang } from '../i18n/ui';
 import { pillarMeta, type Pillar } from '../i18n/pillars';
 import ArticleHero from './ArticleHero.astro';
+import ShareBar from './ShareBar.astro';
+import { SUBSCRIBE } from '../config/subscribe';
 import type { CollectionEntry } from 'astro:content';
 interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string }
 const { lang, entry, sectionLabel } = Astro.props;
@@ -9,6 +11,11 @@ const d = entry.data;
 const { Content } = await entry.render();
 const pillar = pillarMeta[d.pillar as Pillar];
 const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+const sharePath = `/${lang}/${sectionLabel.toLowerCase() === 'intelligence' ? 'intelligence' : 'articles'}/${d.urlSlug}`;
+const locked = d.gated;
+const U = lang === 'de'
+  ? { head: 'Vollständigen Report freischalten', body: 'Kostenlos. Trag deine E-Mail ein — du liest sofort weiter und bekommst den Daily.', ph: 'E-Mail-Adresse', cta: 'Freischalten', fine: 'Sqwod Daily, werktäglich. Jederzeit abbestellbar.' }
+  : { head: 'Unlock the full report', body: "Free. Drop your email — you'll keep reading instantly and get the Daily.", ph: 'Email address', cta: 'Unlock', fine: 'Sqwod Daily, every weekday. Unsubscribe anytime.' };
 ---
 <div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
 <h1>{d.title}</h1>
@@ -17,16 +24,10 @@ const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', 
 {d.hero && <ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} />}
 <div class="meta" style="margin:8px 0 0;color:var(--g3);font-size:12px">
   {d.author} · {fmt}
-  {d.gated && <span class="conf" style="margin-left:8px">{lang==='de'?'Gegated':'Gated'}</span>}
+  {locked && <span class="conf" style="margin-left:8px">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
 </div>
 
-{d.gated && (
-  <div class="note" style="margin-top:16px">
-    <b>{lang==='de'?'Vollständigen Report freischalten':'Unlock the full report'}.</b>
-    {lang==='de'?' Trag dich ein und wir schicken dir die komplette Version.':' Drop your email and we\'ll send you the full version.'}
-    <div style="margin-top:10px"><a class="cta" href={`/${lang}/subscribe`}>{lang==='de'?'Report holen':'Get the report'} →</a></div>
-  </div>
-)}
+<ShareBar path={sharePath} title={d.title} lang={lang} />
 
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
@@ -73,30 +74,46 @@ const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', 
   );
 })()}
 
-<section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
-  <Content />
-</section>
-
-{d.sources && d.sources.length > 0 && (
-  <section class="block sources-block">
-    <p class="kick">{lang==='de'?'Quellen':'Sources'}</p>
-    <ol class="src-list">
-      {d.sources.map((s) => <li><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
-    </ol>
-    <p class="src-note">{lang==='de'
-      ? `Zahlen aus öffentlichen Quellen${d.asOf ? `, Stand ${d.asOf}` : ''}. Schätzungen verschiedener Häuser variieren; wir verlinken, damit du selbst prüfen kannst.`
-      : `Figures from public sources${d.asOf ? `, as of ${d.asOf}` : ''}. Estimates vary between firms; we link them so you can verify.`}</p>
+<div class="report-body" data-gated={locked ? '' : undefined}>
+  <section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
+    <Content />
   </section>
-)}
 
-{d.changelog && d.changelog.length > 0 && (
-  <section class="block changelog">
-    <p class="kick">{lang==='de'?'Aktualisierungen':'Update log'}</p>
-    <ul class="cl-list">
-      {d.changelog.map((c) => <li><b>{c.date}</b> — {c.note}</li>)}
-    </ul>
-    <p class="src-note">{lang==='de'?'Lebender Report — wir aktualisieren die Zahlen regelmäßig.':'Living report — we refresh the figures on a regular cadence.'}</p>
-  </section>
+  {d.sources && d.sources.length > 0 && (
+    <section class="block sources-block">
+      <p class="kick">{lang==='de'?'Quellen':'Sources'}</p>
+      <ol class="src-list">
+        {d.sources.map((s) => <li><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
+      </ol>
+      <p class="src-note">{lang==='de'
+        ? `Zahlen aus öffentlichen Quellen${d.asOf ? `, Stand ${d.asOf}` : ''}. Schätzungen verschiedener Häuser variieren; wir verlinken, damit du selbst prüfen kannst.`
+        : `Figures from public sources${d.asOf ? `, as of ${d.asOf}` : ''}. Estimates vary between firms; we link them so you can verify.`}</p>
+    </section>
+  )}
+
+  {d.changelog && d.changelog.length > 0 && (
+    <section class="block changelog">
+      <p class="kick">{lang==='de'?'Aktualisierungen':'Update log'}</p>
+      <ul class="cl-list">
+        {d.changelog.map((c) => <li><b>{c.date}</b> — {c.note}</li>)}
+      </ul>
+      <p class="src-note">{lang==='de'?'Lebender Report — wir aktualisieren die Zahlen regelmäßig.':'Living report — we refresh the figures on a regular cadence.'}</p>
+    </section>
+  )}
+</div>
+
+{locked && (
+  <div class="unlock" id="unlock">
+    <div class="unlock-card">
+      <div class="unlock-head">{U.head}</div>
+      <p class="unlock-body">{U.body}</p>
+      <form class="unlock-form">
+        <input type="email" name="email" required placeholder={U.ph} aria-label={U.ph} />
+        <button class="cta" type="submit">{U.cta} →</button>
+      </form>
+      <p class="unlock-fine">{U.fine}</p>
+    </div>
+  </div>
 )}
 
 <section class="block" style="border-bottom:none">
@@ -119,4 +136,37 @@ const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', 
   .cl-list{list-style:none;margin:10px 0 0;padding:0}
   .cl-list li{font-size:13.5px;color:var(--g2);padding:6px 0;border-top:1px solid var(--line)}
   .cl-list b{color:var(--chalk);font-family:ui-monospace,Menlo,monospace;font-size:12px}
+  /* gated lead-magnet: figures + chart are the teaser; body fades behind the unlock */
+  .report-body[data-gated]{max-height:320px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 58%,transparent);mask-image:linear-gradient(180deg,#000 58%,transparent)}
+  .report-body.open{max-height:none;-webkit-mask-image:none;mask-image:none}
+  .unlock{margin:6px 0 8px}
+  .unlock-card{border:1px solid var(--line);border-radius:16px;padding:24px 22px;background:linear-gradient(180deg,var(--panel),transparent);text-align:center}
+  .unlock-head{font-size:20px;font-weight:900;letter-spacing:-.01em}
+  .unlock-body{font-size:14.5px;color:var(--g2);margin:8px 0 16px;line-height:1.55}
+  .unlock-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+  .unlock-form input{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--chalk);font:inherit}
+  .unlock-form input:focus{outline:none;border-color:var(--chalk)}
+  .unlock-fine{font-size:11.5px;color:var(--g4);margin:12px 0 0}
 </style>
+
+<script define:vars={{ endpoint: SUBSCRIBE.endpoint, lang, locked }}>
+  if (locked) {
+    const KEY = 'sqwod_unlocked';
+    const reveal = () => {
+      document.querySelectorAll('.report-body[data-gated]').forEach((el) => { el.removeAttribute('data-gated'); el.classList.add('open'); });
+      const u = document.getElementById('unlock'); if (u) u.style.display = 'none';
+    };
+    if (localStorage.getItem(KEY) === '1') reveal();
+    const form = document.querySelector('.unlock-form');
+    if (form) form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = (form.email.value || '').trim();
+      const btn = form.querySelector('button'); if (btn) { btn.disabled = true; btn.textContent = '…'; }
+      if (endpoint && email) {
+        try { await fetch(endpoint, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, lang }) }); } catch (_) {}
+      }
+      localStorage.setItem(KEY, '1');
+      reveal();
+    });
+  }
+</script>

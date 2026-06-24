@@ -1,0 +1,51 @@
+---
+// Reusable share row. Native share on mobile + network intents + copy-link.
+// IG has no web-share URL, so Copy link covers "paste into IG/anywhere".
+interface Props { path: string; title: string; lang: 'en' | 'de'; }
+const { path, title, lang } = Astro.props;
+const SITE = 'https://sqwod.life';
+const url = `${SITE}${path}`;
+const u = encodeURIComponent(url);
+const t = encodeURIComponent(title);
+const T = lang === 'de'
+  ? { label: 'Teilen', copy: 'Link kopieren', copied: 'Kopiert ✓' }
+  : { label: 'Share', copy: 'Copy link', copied: 'Copied ✓' };
+const nets = [
+  { name: 'X', href: `https://twitter.com/intent/tweet?text=${t}&url=${u}` },
+  { name: 'Facebook', href: `https://www.facebook.com/sharer/sharer.php?u=${u}` },
+  { name: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${u}` },
+  { name: 'WhatsApp', href: `https://wa.me/?text=${t}%20${u}` },
+];
+---
+<div class="sharebar" data-url={url} data-title={title}>
+  <span class="sh-label">{T.label}</span>
+  {nets.map((n) => <a class="sh-btn" href={n.href} target="_blank" rel="noopener" aria-label={`${T.label} — ${n.name}`}>{n.name}</a>)}
+  <button class="sh-btn sh-copy" type="button" data-copy={T.copy} data-copied={T.copied}>{T.copy}</button>
+  <button class="sh-btn sh-native" type="button" hidden>{T.label}…</button>
+</div>
+
+<style>
+  .sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
+  .sh-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);font-weight:700;margin-right:2px}
+  .sh-btn{font:600 12px/1 inherit;color:var(--g2);background:transparent;border:1px solid var(--line);
+    border-radius:999px;padding:7px 12px;text-decoration:none;cursor:pointer;transition:all .15s ease}
+  .sh-btn:hover{border-color:var(--chalk);color:var(--chalk)}
+</style>
+
+<script>
+  document.querySelectorAll('.sharebar').forEach((bar) => {
+    const url = bar.getAttribute('data-url') || location.href;
+    const title = bar.getAttribute('data-title') || document.title;
+    const copyBtn = bar.querySelector('.sh-copy');
+    if (copyBtn) copyBtn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(url); } catch (_) {}
+      const done = copyBtn.getAttribute('data-copied'); const idle = copyBtn.getAttribute('data-copy');
+      copyBtn.textContent = done; setTimeout(() => { copyBtn.textContent = idle; }, 1600);
+    });
+    const nativeBtn = bar.querySelector('.sh-native');
+    if (nativeBtn && navigator.share) {
+      nativeBtn.hidden = false;
+      nativeBtn.addEventListener('click', () => navigator.share({ title, url }).catch(() => {}));
+    }
+  });
+</script>

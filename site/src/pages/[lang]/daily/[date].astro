@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
 import { pillarMeta } from '../../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/podcast';
+import ShareBar from '../../../components/ShareBar.astro';
 import { existsSync } from 'node:fs';
 
 export async function getStaticPaths() {
@@ -48,7 +49,9 @@ const tx = {
   <p class="sub" style="margin:0 0 16px">{fmt} · {d.edition}</p>
   {d.status !== 'published' && <p class="dealnote">⚑ {tx.draft}</p>}
 
-  {d.intro && <p class="verdict" style="margin-bottom:20px">{d.intro}</p>}
+  {d.intro && <p class="verdict" style="margin-bottom:14px">{d.intro}</p>}
+
+  <ShareBar path={`/${lang}/daily/${d.urlSlug}`} title={d.connectDots?.title || d.summary || `Sqwod Daily — ${fmt}`} lang={lang} />
 
   <!-- LISTEN: embedded player + link-outs to the podcast apps -->
   <section class="player" id="listen">
