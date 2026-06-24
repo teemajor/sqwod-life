@@ -19,7 +19,10 @@ const OUT = join(__dirname, '..', 'site', 'public', 'email');
 const SITE = (process.env.SITE_URL || 'https://sqwod.life').replace(/\/$/, '');
 // Email links MUST be absolute (relative paths collapse to http:///… in inboxes).
 // External http(s) URLs pass through; "/en/play" → SITE+"/en/play"; "verified/x" → SITE+"/<lang>/verified/x".
-const abs = (u, lang) => { if (!u) return ''; if (/^https?:\/\//i.test(u)) return u; return SITE + (u.startsWith('/') ? u : `/${lang}/${u}`); };
+// Internal email links need a TRAILING SLASH — Astro's canonical is /en/play/, and the
+// no-slash form 301-redirects, which Gmail's link proxy can turn into a 404.
+const slashed = (path) => /\.[a-z0-9]+$/i.test(path) || /[?#]/.test(path) || path.endsWith('/') ? path : path + '/';
+const abs = (u, lang) => { if (!u) return ''; if (/^https?:\/\//i.test(u)) return u; const p = u.startsWith('/') ? u : `/${lang}/${u}`; return SITE + slashed(p); };
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 
 // ---- generalized frontmatter reader for our controlled schema ----
@@ -70,7 +73,7 @@ function render(iss, lang) {
   const tx = T[lang];
   const date = iss.date || iss.urlSlug;
   const niceDate = new Date(date + 'T06:00:00Z').toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
-  const epUrl = `${SITE}/${lang}/daily/${date}`;
+  const epUrl = `${SITE}/${lang}/daily/${date}/`;
 
   // MONEY MOVEMENT — bold, scannable callouts (colored badge + arrow + big amount)
   const kindStyle = (k) => ({
@@ -140,7 +143,7 @@ function render(iss, lang) {
   const play = iss.play && iss.play.title ? card(label(tx.play, 'pulse-ring.gif') +
     `<div style="font:800 19px/1.3 ${F};color:${INK};margin-bottom:6px;">${esc(iss.play.title)}</div>` +
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:12px;">${esc(iss.play.prompt)}</div>` +
-    `<a href="${iss.play.url ? abs(iss.play.url, lang) : `${SITE}/${lang}/play`}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
+    `<a href="${iss.play.url ? abs(iss.play.url, lang) : `${SITE}/${lang}/play/`}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
 
   // MEANWHILE (entertainment)
   const meanwhile = iss.meanwhile ? card(label(tx.meanwhile, 'pulse-ring.gif') +
@@ -153,7 +156,7 @@ function render(iss, lang) {
     : 'Know a coach, trainer, or studio founder who should read this? Forward this issue — that\'s how Sqwod grows.';
   const share = card(label(shareHead, 'hero-bars.gif') +
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:14px;">${shareBody}</div>` +
-    `<a href="${SITE}/${lang}/subscribe" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn} &rarr;</a>`);
+    `<a href="${SITE}/${lang}/subscribe/" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn} &rarr;</a>`);
 
   // Top sponsor slot: a clearly-defined "Presented by" band UNDER the hero, before content.
   const presentedBand = iss.sponsor && iss.sponsor.name ? `
@@ -203,7 +206,7 @@ function render(iss, lang) {
         ${card(`<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
           <div style="font:800 19px/1.2 ${F};color:${INK};margin-bottom:6px;">${tx.subH}</div>
           <div style="font:400 14px/1.5 ${F};color:${G2};margin-bottom:16px;">${tx.subP}</div>
-          <a href="${SITE}/${lang}/subscribe" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn}</a>
+          <a href="${SITE}/${lang}/subscribe/" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn}</a>
         </td></tr></table>`)}
         <!-- footer -->
         <tr><td style="padding:8px 6px 30px;">

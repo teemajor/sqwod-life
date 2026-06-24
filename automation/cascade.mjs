@@ -111,7 +111,7 @@ Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, dea
  "connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
  "connectBody":"two short paragraphs separated by \\n; teach the pattern and why it matters to an operator; specific, witty, no fluff",
  "doThis":"one concrete action the reader can take this week",
- "meanwhile":"one light, entertaining industry observation; no invented numbers",
+ "meanwhile":"a light, witty aside about a DIFFERENT story than connectTitle focuses on. Must NOT restate or recap anything already covered in connectBody or the items list — pick the most off-beat angle and make a wry one-liner. Return an empty string if there is no genuinely distinct, fun angle left. No invented numbers.",
  "moneyMoves":[{"entity":"name from the items","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one clause"}]  // ONLY for items that are actually raises/M&A/valuations; [] if none,
  "policyWatch":{"title":"...","body":"1-2 sentences on a regulation/policy that affects coaches or studios"} or null if no item is policy/regulatory,
  "stat":{"number":"the figure verbatim","label":"what it measures","body":"why it matters"} or null if no real number appears,
