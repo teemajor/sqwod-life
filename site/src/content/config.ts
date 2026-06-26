@@ -1,14 +1,9 @@
 import { defineCollection, z } from 'astro:content';
 
-// Shared taxonomy (Phase 3): every content object is tagged on 4 axes.
-const pillar = z.enum([
-  'business-strategy',
-  'marketing-visibility',
-  'operations-technology',
-  'industry-trends',
-  'founder-stories',
-  'ai-automation',
-]);
+// Reader-facing lanes (2026-06): the 4 top-level content streams.
+// The granular content type (founder-story, ai-automation, method, etc.) lives in
+// the per-item `type` tag — see i18n/pillars.ts typeMeta. Lane = nav; type = sub-tag.
+const pillar = z.enum(['move', 'build', 'gear', 'signal']);
 const conversion = z.enum(['pods', 'sqwod-os', 'products', 'sqwod-ai', 'verified', 'list-growth']);
 const lang = z.enum(['en', 'de']);
 
@@ -24,7 +19,8 @@ const reviews = defineCollection({
     category: z.string(),
     glyph: z.enum(['ring', 'watch', 'band', 'tracker', 'massager', 'bed', 'supplement']).default('ring'),
     gallery: z.number().default(4), // how many gallery frames the quick-look shows
-    pillar: pillar.default('operations-technology'),
+    pillar: pillar.default('gear'),
+    type: z.string().default('tool-review'),  // granular sub-type (e.g. wearables, buyers-guide)
     conversion: conversion.default('verified'),
     publishedAt: z.coerce.date(),
     updatedAt: z.coerce.date(),
@@ -81,7 +77,8 @@ const articles = defineCollection({
     counterpart: z.string().optional(),
     title: z.string(),
     description: z.string(),
-    pillar,
+    pillar,                              // lane: move | build | gear | signal
+    type: z.string().default('analysis'), // granular sub-type (founder-story, ai-automation, method, market-data…)
     format: z.enum(['analysis', 'field-note', 'report', 'index', 'press']).default('analysis'),
     conversion,
     publishedAt: z.coerce.date(),
@@ -147,7 +144,7 @@ const daily = defineCollection({
     items: z.array(z.object({
       headline: z.string(),
       dek: z.string(),
-      pillar,
+      pillar: z.string(),   // lane (new issues) — loose to keep historical issues valid
       conversion,
       sourceId: z.string().optional(),  // provenance → living wiki
       readMore: z.string().optional(),
@@ -175,7 +172,7 @@ const press = defineCollection({
     contactEmail: z.string().optional(),     // not rendered; provenance only
     companyUrl: z.string().optional(),
     logo: z.string().optional(),
-    pillar: pillar.default('industry-trends'),
+    pillar: z.string().default('signal'),   // loose: keeps historical press valid
     links: z.array(z.object({ label: z.string(), url: z.string() })).default([]),
     boilerplate: z.string().optional(),      // "About <company>"
     translated: z.boolean().default(false),  // machine-produced counterpart

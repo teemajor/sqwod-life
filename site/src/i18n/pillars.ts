@@ -1,14 +1,8 @@
 import { type Lang } from './ui';
 
-// Articles taxonomy (2026-06-19). Built for coaches, founders & investors.
-export const PILLARS = [
-  'business-strategy',
-  'marketing-visibility',
-  'operations-technology',
-  'industry-trends',
-  'founder-stories',
-  'ai-automation',
-] as const;
+// Reader-facing LANES (2026-06). Four top-level streams; the granular content
+// type (founder-story, ai-automation, method…) lives in each item's `type` tag.
+export const PILLARS = ['move', 'build', 'gear', 'signal'] as const;
 export type Pillar = (typeof PILLARS)[number];
 
 export const pillarMeta: Record<Pillar, {
@@ -16,47 +10,62 @@ export const pillarMeta: Record<Pillar, {
   desc: Record<Lang, string>;
   routesTo: string;
 }> = {
-  'business-strategy': {
-    label: { en: 'Business Strategy & Scaling', de: 'Business-Strategie & Skalierung' },
-    desc: { en: 'Profit models, pricing, expansion, hiring, SOPs — solo coach to multi-location.', de: 'Profitmodelle, Pricing, Expansion, Hiring, SOPs — vom Solo-Coach zum Multi-Standort.' },
+  move: {
+    label: { en: 'Move', de: 'Move' },
+    desc: { en: 'Technique, programming, recovery — solve the body problem.', de: 'Technik, Programming, Recovery — löse das Körperproblem.' },
+    routesTo: 'Sqwod products · Sqwod AI',
+  },
+  build: {
+    label: { en: 'Build', de: 'Build' },
+    desc: { en: 'Clients, retention, pricing, ops, founder stories, AI workflows — grow the business.', de: 'Kunden, Bindung, Preise, Betrieb, Gründer-Stories, KI-Workflows — bau das Business.' },
     routesTo: 'Sqwod Pods · Sqwod OS',
   },
-  'marketing-visibility': {
-    label: { en: 'Marketing & Visibility', de: 'Marketing & Sichtbarkeit' },
-    desc: { en: 'Client acquisition funnels, social, email, partnerships, PR — without burning out.', de: 'Akquise-Funnels, Social, E-Mail, Partnerschaften, PR — ohne auszubrennen.' },
-    routesTo: 'Sqwod OS',
+  gear: {
+    label: { en: 'Gear', de: 'Gear' },
+    desc: { en: 'What to buy and why — wearables, apps, tools, buyer’s guides.', de: 'Was kaufen — und warum. Wearables, Apps, Tools, Kaufberatung.' },
+    routesTo: 'Sqwod Verified · Deals',
   },
-  'operations-technology': {
-    label: { en: 'Operations & Technology', de: 'Betrieb & Technologie' },
-    desc: { en: 'Booking platforms, automation workflows, smart locks, API integrations.', de: 'Buchungsplattformen, Automatisierung, Smart Locks, API-Integrationen.' },
-    routesTo: 'Sqwod OS · Sqwod AI',
-  },
-  'industry-trends': {
-    label: { en: 'Industry Trends & Investment', de: 'Branchentrends & Investment' },
-    desc: { en: 'Market size, sector breakdowns, Berlin insights, M&A — what investors track.', de: 'Marktgröße, Sektor-Analysen, Berlin-Insights, M&A — was Investoren verfolgen.' },
+  signal: {
+    label: { en: 'Signal', de: 'Signal' },
+    desc: { en: 'Market data, trends, wellness culture, policy — the intelligence layer.', de: 'Marktdaten, Trends, Wellness-Kultur, Politik — die Intelligence-Ebene.' },
     routesTo: 'Intelligence · Ventures',
-  },
-  'founder-stories': {
-    label: { en: 'Founder Stories & Case Studies', de: 'Gründer-Stories & Case Studies' },
-    desc: { en: 'Coach-to-founder journeys, scaling stories, revenue breakdowns, lessons from failure.', de: 'Coach-zu-Gründer-Wege, Skalierungs-Stories, Umsatz-Breakdowns, Lehren aus dem Scheitern.' },
-    routesTo: 'Sqwod Pods',
-  },
-  'ai-automation': {
-    label: { en: 'AI & Automation', de: 'KI & Automatisierung' },
-    desc: { en: 'Prompts, playbooks and actionable how-tos to put AI to work in your practice.', de: 'Prompts, Playbooks und umsetzbare How-tos, um KI in deiner Praxis einzusetzen.' },
-    routesTo: 'Sqwod AI',
   },
 };
 
-// Topical glyph (animated content thumbnail) per pillar — Glyph-supported kinds.
+// Animated content thumbnail per lane (Glyph-supported kinds).
 export function pillarGlyph(pillar: string): string {
   switch (pillar) {
-    case 'business-strategy': return 'line';
-    case 'marketing-visibility': return 'bars';
-    case 'operations-technology': return 'ring';
-    case 'industry-trends': return 'bars';
-    case 'founder-stories': return 'seed';
-    case 'ai-automation': return 'ring';
+    case 'move': return 'seed';
+    case 'build': return 'line';
+    case 'gear': return 'ring';
+    case 'signal': return 'bars';
     default: return 'seed';
   }
+}
+
+// Granular sub-type labels (the content types nested under each lane). Falls back
+// to a title-cased slug for any type not listed, so nothing ever renders raw.
+const typeMeta: Record<string, Record<Lang, string>> = {
+  'analysis': { en: 'Analysis', de: 'Analyse' },
+  'coaching-business': { en: 'Coaching & Studio Business', de: 'Coaching & Studio-Business' },
+  'marketing': { en: 'Marketing & Visibility', de: 'Marketing & Sichtbarkeit' },
+  'founder-story': { en: 'Founder Story', de: 'Gründer-Story' },
+  'case-study': { en: 'Case Study', de: 'Case Study' },
+  'ai-automation': { en: 'AI & Automation', de: 'KI & Automatisierung' },
+  'method': { en: 'Method & Programming', de: 'Methode & Programming' },
+  'programming': { en: 'Programming', de: 'Programming' },
+  'recovery': { en: 'Recovery & Mobility', de: 'Recovery & Mobilität' },
+  'technique': { en: 'Technique', de: 'Technik' },
+  'wearables': { en: 'Wearables & Tech', de: 'Wearables & Tech' },
+  'buyers-guide': { en: 'Buyer’s Guide', de: 'Kaufberatung' },
+  'tool-review': { en: 'Tool Review', de: 'Tool-Test' },
+  'market-data': { en: 'Market Data', de: 'Marktdaten' },
+  'trends': { en: 'Trends & Culture', de: 'Trends & Kultur' },
+  'policy': { en: 'Policy Watch', de: 'Politik-Radar' },
+};
+export function typeLabel(type: string | undefined, lang: Lang): string {
+  if (!type) return '';
+  const m = typeMeta[type];
+  if (m) return m[lang];
+  return type.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 }

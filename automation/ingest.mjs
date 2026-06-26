@@ -83,15 +83,20 @@ function parseItems(xml) {
   return items;
 }
 
+// Map a headline to a reader-facing LANE (move | build | gear | signal) + conversion.
 function classify(t, prior) {
   const s = t.toLowerCase();
-  if (/\b(raise|raises|raised|funding|\$\d|€\d|million|billion|investment|valuation|ipo|m&a|merger|acqui)/.test(s)) return ['industry-trends', 'sqwod-os'];
-  if (/\b(ai|a\.i\.|automation|chatbot|gpt|model|algorithm)\b/.test(s)) return ['ai-automation', 'sqwod-ai'];
-  if (/\b(wearable|smart ring|tracker|oura|whoop|garmin|device|gadget)\b/.test(s)) return ['operations-technology', 'verified'];
-  if (/\b(marketing|brand|campaign|influencer|creator|tiktok|instagram|sponsor)\b/.test(s)) return ['marketing-visibility', 'sqwod-os'];
-  if (/\b(opens|expansion|franchise|membership|pricing|revenue|studio|gym|club|hires|hiring)\b/.test(s)) return ['business-strategy', 'pods'];
-  if (/\b(founder|ceo|journey)\b/.test(s)) return ['founder-stories', 'pods'];
-  return [prior.pillar, prior.conversion];
+  // GEAR — physical products / devices to buy
+  if (/\b(wearable|smart ring|tracker|oura|whoop|garmin|fitbit|apple watch|device|gadget|headphones|earbuds|treadmill|equipment|buyer'?s guide|best \w+ for)\b/.test(s)) return ['gear', 'verified'];
+  // MOVE — training, technique, programming, the body
+  if (/\b(workout|exercise|movement|mobility|stretch|technique|programming|reps|sets|muscle|hypertrophy|strength training|recovery|sleep|warm-?up|squat|deadlift|bench|pilates|yoga|run(ning)?)\b/.test(s)) return ['move', 'products'];
+  // BUILD — operators, business, AI/automation, marketing, founders
+  if (/\b(ai|a\.i\.|automation|chatbot|gpt|prompt|coach|coaching|personal train|studio|gym owner|franchise|membership|pricing|revenue|retention|client|marketing|brand|influencer|creator|founder|ceo|hiring|operations|saas|platform)\b/.test(s)) {
+    return ['build', /\b(ai|a\.i\.|automation|gpt|prompt|chatbot)\b/.test(s) ? 'sqwod-ai' : 'pods'];
+  }
+  // SIGNAL — market data, funding, trends, policy, the macro picture
+  if (/\b(raise|raises|raised|funding|\$\d|€\d|million|billion|valuation|ipo|m&a|merger|acqui|market|report|forecast|trend|growth|longevity|study|economy|regulation|policy|wellness economy)\b/.test(s)) return ['signal', 'sqwod-os'];
+  return ['signal', (prior && prior.conversion) || 'list-growth'];
 }
 
 function moneyKind(t) {

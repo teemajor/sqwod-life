@@ -4,7 +4,7 @@ import Glyph from '../../../components/Glyph.astro';
 import PillarIcon from '../../../components/PillarIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
-import { PILLARS, pillarMeta, pillarGlyph, type Pillar } from '../../../i18n/pillars';
+import { PILLARS, pillarMeta, pillarGlyph, typeLabel, type Pillar } from '../../../i18n/pillars';
 
 export function getStaticPaths() {
   return languages.flatMap((lang) => PILLARS.map((pillar) => ({ params: { lang, pillar } })));
@@ -33,7 +33,11 @@ const fmtLabel = (f: string) => f === 'report' ? 'Report' : f === 'index' ? 'Ind
 
   <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
     <p class="kick">{lang==='de'?'Artikel & Reports':'Articles & reports'}</p>
-    {articles.length === 0 && <p class="sub">{lang==='de'?'Bald verfügbar.':'Coming soon.'}</p>}
+    {articles.length === 0 && reviews.length === 0 && (
+      <p class="sub">{lang==='de'
+        ? 'Hier entstehen gerade die ersten Beiträge. Hol dir den Daily, dann verpasst du keinen.'
+        : "The first pieces in this lane are on the way. Get the Daily so you don't miss them."} <a class="cta" href={`/${lang}/subscribe`} style="margin-left:6px">{lang==='de'?'Abonnieren':'Subscribe'} →</a></p>
+    )}
     <div class="grid cols2">
     {articles.map((a) => (
       <a class="card" style="grid-template-columns:52px 1fr" href={articleHref(a)}>

@@ -18,6 +18,15 @@ const articleHref = (a: any) =>
     : `/${lang}/analysis/${a.data.urlSlug}`;
 const recent = (await getCollection('articles', (a) => a.data.lang === lang && a.data.format !== 'report' && a.data.format !== 'index'))
   .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime()).slice(0, 4);
+
+// Count content per lane so we only surface lanes that actually have something.
+const allArticles = await getCollection('articles', (a) => a.data.lang === lang);
+const allReviews = await getCollection('reviews', (r) => r.data.lang === lang);
+const laneCount: Record<string, number> = {};
+for (const a of allArticles) laneCount[a.data.pillar] = (laneCount[a.data.pillar] || 0) + 1;
+laneCount['gear'] = (laneCount['gear'] || 0) + allReviews.length;   // GEAR surfaces Verified reviews
+const lanes = PILLARS.filter((p) => (laneCount[p] || 0) > 0);
+const laneHref = (p: string) => p === 'gear' ? `/${lang}/verified` : `/${lang}/articles/${p}`;
 ---
 <Base lang={lang} title={title} active="articles">
   <div class="pagehead">
@@ -29,8 +38,8 @@ const recent = (await getCollection('articles', (a) => a.data.lang === lang && a
   <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
     <p class="kick">{lang==='de'?'Themen':'Browse by topic'}</p>
     <div class="grid cols3">
-    {PILLARS.map((p, i) => (
-      <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr" href={`/${lang}/articles/${p}`}>
+    {lanes.map((p, i) => (
+      <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr" href={laneHref(p)}>
         <PillarIcon pillar={p} size={52} />
         <div class="info">
           <h3>{pillarMeta[p].label[lang]}</h3>
