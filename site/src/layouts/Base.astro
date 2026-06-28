@@ -59,5 +59,21 @@ const ogLocale = lang === 'de' ? 'de_DE' : 'en_US';
     <slot />
   </main>
   <Footer lang={lang} />
+  <script is:inline>
+    // One-click copy on every prose code block (e.g. the AI prompts).
+    document.querySelectorAll('.prose pre').forEach(function (pre) {
+      if (pre.querySelector('.copy-code')) return;
+      var btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'copy-code'; btn.textContent = 'Copy';
+      btn.addEventListener('click', function () {
+        var code = pre.querySelector('code') || pre;
+        navigator.clipboard.writeText(code.innerText).then(function () {
+          btn.textContent = 'Copied ✓'; btn.classList.add('done');
+          setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+        }).catch(function () {});
+      });
+      pre.appendChild(btn);
+    });
+  </script>
 </body>
 </html>

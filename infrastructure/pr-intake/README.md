@@ -52,7 +52,7 @@ intel-apply.yml (every 4h / on demand) → --apply → update the figure (EN+DE)
    - Worker: `wrangler secret put INTEL_SIGNING_SECRET`
    - GitHub repo → Settings → Secrets → Actions → `INTEL_SIGNING_SECRET` (same value)
 2. **GitHub repo secrets:** `INTEL_REVIEWER_EMAIL` (where proposals go — you), plus the existing `ANTHROPIC_API_KEY` (source extraction) and `RESEND_API_KEY` (sending).
-3. **GitHub repo variables:** `INTEL_FROM` (a Resend-verified sender, e.g. `Sqwod Intelligence <intel@sqwod.life>`) and `INTEL_WORKER_URL` (e.g. `https://pr.sqwod.life`).
+3. **GitHub repo variables:** `INTEL_FROM` (a Resend-verified sender, e.g. `Sqwod Intelligence <intel@sqwod.life>`) and `INTEL_WORKER_URL` — the Worker's address. If you haven't set up the `pr.sqwod.life` custom domain, use the `workers.dev` URL that `wrangler deploy` prints (e.g. `https://sqwod-pr-intake.<account>.workers.dev`).
 4. **Resend:** verify the `intel@` sender (or reuse your existing `daily@`).
 5. **Deploy** — two options:
    - **Local:** `wrangler deploy` from this folder.
@@ -60,7 +60,7 @@ intel-apply.yml (every 4h / on demand) → --apply → update the figure (EN+DE)
      - `CLOUDFLARE_API_TOKEN` — Cloudflare dashboard → My Profile → API Tokens → Create Token → "Edit Cloudflare Workers" template → create. (Add `CLOUDFLARE_ACCOUNT_ID`, shown on the dashboard's right sidebar, only if a deploy errors about multiple accounts.)
      - `INTEL_SIGNING_SECRET` — the same signing value from step 1; the workflow pushes it to the Worker for you.
 
-   The `/intel` route ships with the existing Worker; its existing `GITHUB_TOKEN` (Contents: R/W) is all it needs — it only flips the queue JSON. Existing Stripe/Turnstile secrets are untouched.
+   The `/intel` route needs the Worker to have a **`GITHUB_TOKEN`** secret (a GitHub fine-grained PAT, **Contents: Read & write** on `sqwod-life`) — that's how a tap writes your decision back to the repo. If the Worker was created fresh by the auto-deploy (the log says *"Creating new Worker"*), add it once in the Cloudflare dashboard → Workers → `sqwod-pr-intake` → Settings → Variables and Secrets → **Secret** → `GITHUB_TOKEN`. It persists across future deploys (CI only manages `INTEL_SIGNING_SECRET`).
 
 ### Add a figure to track
 Edit `automation/intel-sources.json`: per report, add `{ index, label, value, sourceUrl, cadenceDays, lastChecked }`. `index` is the figure's position in the report's frontmatter `figures:` array. Quarterly (`90`) suits flagship figures; `30` for fast-movers. Without `ANTHROPIC_API_KEY` the scan still runs but sends "please verify" nudges instead of an extracted old→new.

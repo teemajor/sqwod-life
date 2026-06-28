@@ -151,7 +151,7 @@ async function scan() {
   for (const [slug, rep] of Object.entries(reg.reports)) {
     for (const fig of rep.figures) {
       const age = daysBetween(today, fig.lastChecked);
-      if (age < fig.cadenceDays) { console.log(`· ${slug}/${fig.label}: ${age}d old (< ${fig.cadenceDays}) — not due`); continue; }
+      if (!args.force && age < fig.cadenceDays) { console.log(`· ${slug}/${fig.label}: ${age}d old (< ${fig.cadenceDays}) — not due`); continue; }
       const c = await extract(fig);
       fig.lastChecked = today;
       if (c.kind === 'unchanged') { console.log(`· ${slug}/${fig.label}: unchanged (${c.value}) — bumped lastChecked`); continue; }
