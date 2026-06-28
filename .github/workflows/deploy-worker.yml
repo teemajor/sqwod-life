@@ -1,0 +1,30 @@
+name: Deploy Cloudflare Worker (pr-intake)
+
+# Ships infrastructure/pr-intake/worker.js to Cloudflare automatically — no local
+# terminal. Runs when the worker changes (or on demand). The worker's existing
+# secrets (GITHUB_TOKEN, STRIPE_*, TURNSTILE_SECRET) stay as they are in Cloudflare;
+# this also (re)pushes INTEL_SIGNING_SECRET so the email Approve/Reject links verify.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'infrastructure/pr-intake/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy worker + push signing secret
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: infrastructure/pr-intake
+          command: deploy
+          secrets: |
+            INTEL_SIGNING_SECRET
+        env:
+          INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
