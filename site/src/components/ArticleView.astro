@@ -16,6 +16,34 @@ const locked = d.gated;
 const U = lang === 'de'
   ? { head: 'Vollständigen Report freischalten', body: 'Kostenlos. Trag deine E-Mail ein — du liest sofort weiter und bekommst den Daily.', ph: 'E-Mail-Adresse', cta: 'Freischalten', fine: 'Sqwod Daily, werktäglich. Jederzeit abbestellbar.' }
   : { head: 'Unlock the full report', body: "Free. Drop your email — you'll keep reading instantly and get the Daily.", ph: 'Email address', cta: 'Unlock', fine: 'Sqwod Daily, every weekday. Unsubscribe anytime.' };
+
+// --- Download + cite (credibility / GEO / backlinks): build CSV + JSON of the
+// report's own facts, plus a copy-paste citation. All from real data — nothing made up. ---
+const reportUrl = new URL(Astro.url.pathname, Astro.site).toString();
+const csvCell = (s: unknown) => `"${String(s ?? '').replace(/"/g, '""')}"`;
+const csvRows: string[] = [];
+if (d.figures?.length) {
+  csvRows.push(['Figure', 'Value', 'Note', 'Source'].join(','));
+  for (const f of d.figures) csvRows.push([f.label, f.value, f.note, f.source].map(csvCell).join(','));
+}
+if (d.series && d.series.points.length) {
+  if (csvRows.length) csvRows.push('');
+  csvRows.push(`${d.series.label}${d.series.unit ? ` (${d.series.unit})` : ''}`);
+  const hasBand = !!(d.series.low && d.series.high);
+  csvRows.push((hasBand ? ['Year', 'Low', 'Value', 'High'] : ['Year', 'Value']).join(','));
+  d.series.points.forEach((p, i) => {
+    const yr = d.series!.years?.[i] ?? String(i);
+    csvRows.push((hasBand ? [yr, d.series!.low![i], p, d.series!.high![i]] : [yr, p]).map(csvCell).join(','));
+  });
+}
+const csv = csvRows.join('\n');
+const csvHref = csv ? `data:text/csv;charset=utf-8,${encodeURIComponent(csv)}` : '';
+const jsonHref = `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ title: d.title, asOf: d.asOf, url: reportUrl, figures: d.figures, series: d.series, sources: d.sources }, null, 2))}`;
+const citation = `${d.author}. "${d.title}." sqwod.life${d.asOf ? `, ${d.asOf}` : ''}. ${reportUrl}`;
+const hasData = !!(csv || (d.figures && d.figures.length));
+const TX = lang === 'de'
+  ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt' }
+  : { tldr: 'Key takeaways', means: 'What this means for you', data: 'Data & citation', dl: 'Data (CSV)', dlj: 'JSON', cite: 'Cite this report', copy: 'Copy', copied: 'Copied ✓', now: 'now' };
 ---
 <div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
 <h1>{d.title}</h1>
@@ -28,6 +56,15 @@ const U = lang === 'de'
 </div>
 
 <ShareBar path={sharePath} title={d.title} lang={lang} />
+
+{d.takeaways && d.takeaways.length > 0 && (
+  <section class="block tldr">
+    <p class="kick">{TX.tldr}</p>
+    <ul class="tldr-list">
+      {d.takeaways.map((t) => <li>{t}</li>)}
+    </ul>
+  </section>
+)}
 
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
@@ -46,33 +83,76 @@ const U = lang === 'de'
 )}
 
 {d.series && d.series.points.length > 1 && (() => {
-  const pts = d.series.points;
-  const yrs = d.series.years || [];
-  const mx = Math.max(...pts, 1);
-  const W = 720, H = 250, top = 34, bot = 30, base = H - bot, chartH = base - top;
+  const s = d.series;
+  const pts = s.points;
+  const yrs = s.years || [];
+  const hasBand = !!(s.low && s.high && s.low.length === pts.length && s.high.length === pts.length);
+  const mx = Math.max(...(hasBand ? s.high! : pts), 1);
+  const W = 720, H = 264, top = 42, bot = 30, base = H - bot, chartH = base - top;
   const slot = W / pts.length;
   const barW = Math.min(48, slot * 0.55);
+  const nowYear = String(new Date().getFullYear());
+  const yOf = (v: number) => base - Math.max(2, (v / mx) * chartH);
   return (
     <section class="block chart">
-      <p class="kick">{d.series.label}{d.series.unit ? ` · ${d.series.unit}` : ''}</p>
-      <svg class="bars-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label={d.series.label}>
-        <line x1="0" y1={base} x2={W} y2={base} stroke="var(--line)" stroke-width="1" />
-        {pts.map((p, i) => {
-          const h = Math.max(2, (p / mx) * chartH);
-          const x = i * slot + (slot - barW) / 2;
-          const cx = i * slot + slot / 2;
-          return (
-            <g>
-              <rect x={x} y={base - h} width={barW} height={h} rx="4" fill="var(--chalk)" />
-              <text x={cx} y={base - h - 9} text-anchor="middle" fill="var(--g2)" font-size="13" font-family="ui-monospace,Menlo,monospace">{p}</text>
-              {yrs[i] && <text x={cx} y={base + 20} text-anchor="middle" fill="var(--g4)" font-size="12" font-family="ui-monospace,Menlo,monospace">{yrs[i]}</text>}
-            </g>
-          );
-        })}
-      </svg>
+      <p class="kick">{s.label}{s.unit ? ` · ${s.unit}` : ''}</p>
+      <div class="chart-wrap">
+        <svg class="bars-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label={s.label}>
+          <line x1="0" y1={base} x2={W} y2={base} stroke="var(--line)" stroke-width="1" />
+          {pts.map((p, i) => {
+            const h = base - yOf(p);
+            const x = i * slot + (slot - barW) / 2;
+            const cx = i * slot + slot / 2;
+            const isNow = yrs[i] === nowYear;
+            const yoy = i > 0 && pts[i - 1] ? Math.round(((p - pts[i - 1]) / pts[i - 1]) * 1000) / 10 : '';
+            return (
+              <g class="bar-g" tabindex="0" role="button" aria-label={`${yrs[i] ?? ''}: ${p}${s.unit ? ' ' + s.unit : ''}`}
+                 data-year={yrs[i] ?? ''} data-val={p} data-unit={s.unit ?? ''} data-yoy={yoy} data-now={isNow ? '1' : ''}>
+                {hasBand && <rect x={cx - barW / 2 - 3} y={yOf(s.high![i])} width={barW + 6} height={Math.max(1, yOf(s.low![i]) - yOf(s.high![i]))} rx="4" fill="var(--chalk)" opacity="0.14" />}
+                <rect class="bar-r" x={x} y={base - h} width={barW} height={h} rx="4" fill="var(--chalk)" opacity={isNow ? '1' : '0.82'} />
+                {isNow && <rect x={x - 2} y={base - h - 2} width={barW + 4} height={h + 2} rx="5" fill="none" stroke="var(--chalk)" stroke-width="2" />}
+                <text x={cx} y={base - h - 9} text-anchor="middle" fill="var(--g2)" font-size="13" font-family="ui-monospace,Menlo,monospace">{p}</text>
+                {isNow && <text x={cx} y={top - 10} text-anchor="middle" fill="var(--chalk)" font-size="11" font-weight="700" font-family="ui-monospace,Menlo,monospace">▼ {TX.now}</text>}
+                {yrs[i] && <text x={cx} y={base + 20} text-anchor="middle" fill={isNow ? 'var(--chalk)' : 'var(--g4)'} font-size="12" font-family="ui-monospace,Menlo,monospace">{yrs[i]}</text>}
+              </g>
+            );
+          })}
+        </svg>
+        <div class="chart-tip" id="chartTip" hidden></div>
+      </div>
+      {hasBand && <p class="src-note" style="margin-top:8px">{lang === 'de' ? 'Schattierter Bereich = Spanne verschiedener Prognosehäuser (Low–High).' : 'Shaded band = range across forecasters (low–high).'}</p>}
     </section>
   );
 })()}
+
+{d.playbook && d.playbook.length > 0 && (
+  <section class="block playbook">
+    <p class="kick">◆ {TX.means}</p>
+    <div class="pb-grid">
+      {d.playbook.map((p) => (
+        <div class="pb">
+          <div class="pb-move">{p.move}</div>
+          <div class="pb-why">{p.why}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
+
+{hasData && (
+  <section class="block datacite">
+    <p class="kick">{TX.data}</p>
+    <div class="dc-row">
+      {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>↓ {TX.dl}</a>}
+      <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>↓ {TX.dlj}</a>
+    </div>
+    <div class="cite">
+      <div class="cite-head">{TX.cite}</div>
+      <code class="cite-text" id="citeText">{citation}</code>
+      <button class="dc-btn copy" id="citeCopy" type="button" data-copy={TX.copy} data-done={TX.copied}>{TX.copy}</button>
+    </div>
+  </section>
+)}
 
 <div class="report-body" data-gated={locked ? '' : undefined}>
   <section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
@@ -147,6 +227,32 @@ const U = lang === 'de'
   .unlock-form input{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--chalk);font:inherit}
   .unlock-form input:focus{outline:none;border-color:var(--chalk)}
   .unlock-fine{font-size:11.5px;color:var(--g4);margin:12px 0 0}
+
+  /* TL;DR */
+  .tldr-list{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
+  .tldr-list li{position:relative;padding:10px 14px 10px 34px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:14.5px;line-height:1.5;color:var(--g1)}
+  .tldr-list li::before{content:"→";position:absolute;left:13px;top:10px;color:var(--chalk);font-weight:800}
+  /* interactive chart */
+  .chart-wrap{position:relative}
+  .bar-g{cursor:default;transition:opacity .12s ease}
+  .bar-g:hover .bar-r,.bar-g:focus .bar-r{opacity:1}
+  .bar-g:focus{outline:none}
+  .bar-g:focus .bar-r{stroke:var(--chalk);stroke-width:2}
+  .chart-tip{position:absolute;pointer-events:none;z-index:5;background:var(--bg);border:1px solid var(--chalk);border-radius:8px;padding:7px 10px;font-size:12px;line-height:1.4;color:var(--chalk);transform:translate(-50%,-110%);white-space:nowrap;box-shadow:0 4px 18px rgba(0,0,0,.3)}
+  .chart-tip b{font-family:ui-monospace,Menlo,monospace}
+  .chart-tip .yoy-up{color:#4ade80}.chart-tip .yoy-dn{color:#f87171}
+  /* operator playbook */
+  .pb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+  .pb{border:1px solid var(--line);border-left:3px solid var(--chalk);border-radius:10px;padding:13px 15px;background:var(--panel)}
+  .pb-move{font-size:14.5px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
+  .pb-why{font-size:13px;color:var(--g2);margin-top:6px;line-height:1.5}
+  /* data + cite */
+  .dc-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .dc-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:8px 15px;text-decoration:none;color:var(--chalk);background:var(--panel);cursor:pointer;font-family:inherit}
+  .dc-btn:hover{border-color:var(--chalk)}
+  .cite{margin-top:14px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--panel)}
+  .cite-head{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--g4)}
+  .cite-text{display:block;font-size:12.5px;color:var(--g1);margin:8px 0 10px;line-height:1.5;font-family:ui-monospace,Menlo,monospace;word-break:break-word}
 </style>
 
 <script define:vars={{ endpoint: SUBSCRIBE.endpoint, lang, locked }}>
@@ -169,4 +275,43 @@ const U = lang === 'de'
       reveal();
     });
   }
+</script>
+
+<script define:vars={{ yoyLabel: lang === 'de' ? 'ggü. Vorjahr' : 'YoY' }}>
+  // Chart tooltips: year · value · YoY, shown on hover/focus of each bar.
+  (function () {
+    const tip = document.getElementById('chartTip');
+    const wrap = tip && tip.closest('.chart-wrap');
+    if (tip && wrap) {
+      const show = (g) => {
+        const yr = g.getAttribute('data-year'), val = g.getAttribute('data-val');
+        const unit = g.getAttribute('data-unit'), yoy = g.getAttribute('data-yoy');
+        const now = g.getAttribute('data-now');
+        let html = `<b>${val}</b>${unit ? ' ' + unit : ''}${yr ? ` · ${yr}` : ''}${now ? ' · ' + 'now' : ''}`;
+        if (yoy !== '' && yoy !== null) {
+          const up = parseFloat(yoy) >= 0;
+          html += `<br><span class="${up ? 'yoy-up' : 'yoy-dn'}">${up ? '▲' : '▼'} ${Math.abs(parseFloat(yoy))}% ${yoyLabel}</span>`;
+        }
+        tip.innerHTML = html;
+        const gb = g.getBoundingClientRect(), wb = wrap.getBoundingClientRect();
+        tip.style.left = (gb.left - wb.left + gb.width / 2) + 'px';
+        tip.style.top = (gb.top - wb.top) + 'px';
+        tip.hidden = false;
+      };
+      const hide = () => { tip.hidden = true; };
+      wrap.querySelectorAll('.bar-g').forEach((g) => {
+        g.addEventListener('mouseenter', () => show(g));
+        g.addEventListener('focus', () => show(g));
+        g.addEventListener('mouseleave', hide);
+        g.addEventListener('blur', hide);
+      });
+    }
+    // Copy-to-clipboard for the citation.
+    const btn = document.getElementById('citeCopy'), txt = document.getElementById('citeText');
+    if (btn && txt) btn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(txt.textContent || ''); } catch (_) {}
+      btn.textContent = btn.getAttribute('data-done');
+      setTimeout(() => { btn.textContent = btn.getAttribute('data-copy'); }, 1800);
+    });
+  })();
 </script>

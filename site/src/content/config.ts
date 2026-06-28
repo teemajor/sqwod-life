@@ -89,8 +89,11 @@ const articles = defineCollection({
     sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]), // rendered citations
     asOf: z.string().optional(),               // "as of" date for data-heavy pieces
     // Living-report extras (Sqwod Intelligence):
+    takeaways: z.array(z.string()).default([]),   // TL;DR — the scannable, citable punchlines up top
     figures: z.array(z.object({ label: z.string(), value: z.string(), note: z.string().optional(), source: z.string().optional() })).default([]),
-    series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional() }).optional(),
+    // series.low/high are OPTIONAL estimate bands (firms disagree) — only render when present; never fabricated.
+    series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional(), low: z.array(z.number()).optional(), high: z.array(z.number()).optional() }).optional(),
+    playbook: z.array(z.object({ move: z.string(), why: z.string() })).default([]),  // "what this means for you" — operator actions
     changelog: z.array(z.object({ date: z.string(), note: z.string() })).default([]),
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({
