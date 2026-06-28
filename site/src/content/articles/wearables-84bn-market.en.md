@@ -30,7 +30,7 @@ sources:
   - { label: "Omdia — Smart rings & the health/fitness ecosystem (2025)", url: "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings" }
   - { label: "Grand View Research — Smart Rings Market", url: "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report" }
 figures:
-  - { label: "Global wearables market", value: "$91.1bn", note: "2026 — up from $83.5bn in 2025; ~8% CAGR to 2035", source: "GMInsights", url: "https://www.gminsights.com/industry-analysis/wearables-market" }
+  - { label: "Global wearables market", value: "~$83.5bn", note: "2026 — up from $83.5bn in 2025; ~8% CAGR to 2035", source: "GMInsights", url: "https://www.gminsights.com/industry-analysis/wearables-market" }
   - { label: "Worldwide wearable shipments", value: "612.5M", note: "units by 2028 (IDC forecast) — from 537.9M in 2024", source: "IDC", url: "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories" }
   - { label: "Smartwatch market revenue", value: "$40.6bn", note: "by 2029 — up ~41% from $28.7bn in 2024", source: "Statista", url: "https://www.statista.com/forecasts/1314322/worldwide-revenue-of-smartwatch-market" }
   - { label: "Smart-ring shipments, 2024", value: "≈2×", note: "roughly doubled YoY — the fastest-growing wearable category", source: "Omdia", url: "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings" }
@@ -40,6 +40,7 @@ series:
   points: [537.9, 612.5]
   years: ["2024", "2028 (f)"]
 changelog:
+  - { date: "2026-06-28", note: "Refreshed \"Global wearables market\" ~$96bn → ~$83.5bn from GMInsights Â· MarketsandMarkets (approved)." }
   - { date: "28 Jun 2026", note: "Integrity pass: corrected the market topline to GMInsights' $91.1bn (2026) — the prior ~$96bn was not supported by a named source. Updated shipments to IDC's Sept-2024 forecast (612.5M by 2028) and replaced the smartwatch-revenue figure with Statista's current series. Every figure now cites one named source with its own number." }
   - { date: "21 Jun 2026", note: "Added the IDC shipment forecast and the smart-ring growth figure." }
 hero:

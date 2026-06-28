@@ -3,16 +3,64 @@
   "reports": {
     "member-retention-benchmark": {
       "figures": [
-        { "index": 0, "label": "Industry annual retention", "value": "66.4%", "sourceLabel": "HFA 2025", "sourceUrl": "https://www.healthandfitness.org/", "cadenceDays": 90, "lastChecked": "2026-06-28" },
-        { "index": 1, "label": "Strong boutique target", "value": "75–80%", "sourceLabel": "StudioPulse 2026", "sourceUrl": "https://getstudiopulse.com/blog/boutique-fitness-retention-rate", "cadenceDays": 90, "lastChecked": "2026-06-28" }
+        {
+          "index": 0,
+          "label": "Industry annual retention",
+          "value": "66.4%",
+          "sourceLabel": "HFA 2025",
+          "sourceUrl": "https://www.healthandfitness.org/",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 1,
+          "label": "Strong boutique target",
+          "value": "75–80%",
+          "sourceLabel": "StudioPulse 2026",
+          "sourceUrl": "https://getstudiopulse.com/blog/boutique-fitness-retention-rate",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        }
       ]
     },
     "wearables-84bn-market": {
       "figures": [
-        { "index": 0, "label": "Global wearables market", "value": "$91.1bn", "sourceLabel": "GMInsights", "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market", "cadenceDays": 90, "lastChecked": "2026-06-28" },
-        { "index": 1, "label": "Worldwide wearable shipments", "value": "612.5M", "sourceLabel": "IDC", "sourceUrl": "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories", "cadenceDays": 90, "lastChecked": "2026-06-28" },
-        { "index": 2, "label": "Smartwatch market revenue", "value": "$40.6bn", "sourceLabel": "Statista", "sourceUrl": "https://www.statista.com/forecasts/1314322/worldwide-revenue-of-smartwatch-market", "cadenceDays": 90, "lastChecked": "2026-06-28" },
-        { "index": 3, "label": "Smart-ring shipments, 2024", "value": "≈2×", "sourceLabel": "Omdia", "sourceUrl": "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings", "cadenceDays": 90, "lastChecked": "2026-06-28" }
+        {
+          "index": 0,
+          "label": "Global wearables market",
+          "value": "~$83.5bn",
+          "sourceLabel": "GMInsights",
+          "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 1,
+          "label": "Worldwide wearable shipments",
+          "value": "612.5M",
+          "sourceLabel": "IDC",
+          "sourceUrl": "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 2,
+          "label": "Smartwatch market revenue",
+          "value": "$40.6bn",
+          "sourceLabel": "Statista",
+          "sourceUrl": "https://www.statista.com/forecasts/1314322/worldwide-revenue-of-smartwatch-market",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 3,
+          "label": "Smart-ring shipments, 2024",
+          "value": "≈2×",
+          "sourceLabel": "Omdia",
+          "sourceUrl": "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        }
       ]
     }
   }

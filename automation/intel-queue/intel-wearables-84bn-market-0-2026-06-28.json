@@ -14,7 +14,8 @@
   "kind": "changed",
   "reliability": "Automated read of a single page â sanity-check the snippet.",
   "recommendation": "Open gminsights.com and confirm the snippet. If your figure is a blend of several firms, keep it unless this one source should replace the blend.",
-  "status": "approved",
+  "status": "applied",
   "createdAt": "2026-06-28",
-  "decidedAt": "2026-06-28T15:25:51.618Z"
+  "decidedAt": "2026-06-28T15:25:51.618Z",
+  "appliedAt": "2026-06-28"
 }
