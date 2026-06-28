@@ -12,6 +12,10 @@ to a credible source, we don't state it as fact.
   or operator in the space.
 - Fill the `sources:` array (rendered as clickable citations) and link figures to
   their source. Set `tags:` thoughtfully — they power the automatic Related links.
+- **Every figure cites ONE named source with that source's actual number.** No
+  "blended", composite, or rounded-to-feel-right figures — if no single source
+  states the number, it does not ship. (This rule exists because a flagship report
+  once carried a "~$96bn" market topline that traced to no source; never again.)
 - **Never invent numbers or medical claims.** Feed real data; keep medical guidance
   inside a coach's scope and flag anything that needs a professional.
 
