@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import ArticleView from '../../../components/ArticleView.astro';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
+import { getRelated } from '../../../lib/related';
 
 export async function getStaticPaths() {
   const arts = await getCollection('articles', (a) => a.data.format === 'report' || a.data.format === 'index');
@@ -43,5 +44,5 @@ const jsonLd = {
 ---
 <Base lang={lang} title={`${d.title} — Sqwod Intelligence`} description={d.description} active="intelligence" ogType="article" image="/podcast-cover.png">
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
-  <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel="Sqwod Intelligence" /></div>
+  <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel="Sqwod Intelligence" related={await getRelated(lang, entry)} /></div>
 </Base>

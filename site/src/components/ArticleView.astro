@@ -6,8 +6,9 @@ import ShareBar from './ShareBar.astro';
 import BenchmarkWidget from './BenchmarkWidget.astro';
 import { SUBSCRIBE } from '../config/subscribe';
 import type { CollectionEntry } from 'astro:content';
-interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string }
-const { lang, entry, sectionLabel } = Astro.props;
+import type { RelatedItem } from '../lib/related';
+interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string; related?: RelatedItem[] }
+const { lang, entry, sectionLabel, related = [] } = Astro.props;
 const d = entry.data;
 const { Content } = await entry.render();
 const pillar = pillarMeta[d.pillar as Pillar];
@@ -41,6 +42,15 @@ const csv = csvRows.join('\n');
 const csvHref = csv ? `data:text/csv;charset=utf-8,${encodeURIComponent(csv)}` : '';
 const jsonHref = `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ title: d.title, asOf: d.asOf, url: reportUrl, figures: d.figures, series: d.series, sources: d.sources }, null, 2))}`;
 const citation = `${d.author}. "${d.title}." sqwod.life${d.asOf ? `, ${d.asOf}` : ''}. ${reportUrl}`;
+// Link each figure to its source: explicit figure.url wins, else auto-match the
+// figure's `source` label to a citation in `sources[]` (by its leading token).
+const figSourceUrl = (f: { source?: string; url?: string }) => {
+  if (f.url) return f.url;
+  if (!f.source || !d.sources?.length) return null;
+  const key = f.source.split(/[·,/]/)[0].trim().toLowerCase();
+  if (!key) return null;
+  return d.sources.find((s) => s.label.toLowerCase().includes(key))?.url ?? null;
+};
 const hasData = !!(csv || (d.figures && d.figures.length));
 const TX = lang === 'de'
   ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt' }
@@ -76,7 +86,9 @@ const TX = lang === 'de'
           <div class="fig-val">{f.value}</div>
           <div class="fig-lbl">{f.label}</div>
           {f.note && <div class="fig-note">{f.note}</div>}
-          {f.source && <div class="fig-src">{f.source}</div>}
+          {f.source && (figSourceUrl(f)
+            ? <a class="fig-src fig-src-link" href={figSourceUrl(f)!} target="_blank" rel="nofollow noopener">{f.source} ↗</a>
+            : <div class="fig-src">{f.source}</div>)}
         </div>
       ))}
     </div>
@@ -199,6 +211,24 @@ const TX = lang === 'de'
   </div>
 )}
 
+{related && related.length > 0 && (
+  <section class="block related">
+    <p class="kick">{lang==='de'?'Weiterlesen':'Related'}</p>
+    <div class="grid cols2">
+      {related.map((r) => (
+        <a class="card rel-card" href={r.href}>
+          <div class="info">
+            <span class="bestfor">{r.kind}</span>
+            <h3>{r.title}</h3>
+            <div class="meta">{r.desc}</div>
+            <span class="cardcta">{lang==='de'?'Ansehen':'Read'} →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
+)}
+
 <section class="block" style="border-bottom:none">
   <a class="cta" href={`/${lang}/articles/${d.pillar}`}>{lang==='de'?'Mehr aus':'More in'} {pillar.label[lang]} →</a>
 </section>
@@ -256,6 +286,9 @@ const TX = lang === 'de'
   .cite{margin-top:14px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--panel)}
   .cite-head{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--g4)}
   .cite-text{display:block;font-size:12.5px;color:var(--g1);margin:8px 0 10px;line-height:1.5;font-family:ui-monospace,Menlo,monospace;word-break:break-word}
+  a.fig-src{text-decoration:none;display:block}
+  a.fig-src-link:hover{color:var(--chalk)}
+  .rel-card{grid-template-columns:1fr !important}
 </style>
 
 <script define:vars={{ endpoint: SUBSCRIBE.endpoint, lang, locked }}>
