@@ -18,6 +18,10 @@ sources:
   - { label: "Smart Health Clubs — 100 Retention-Statistiken (2025)", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
   - { label: "Glofox — Leitfaden gegen Churn", url: "https://www.glofox.com/blog/reducing-churn/" }
   - { label: "CloudGym — Mitgliederbindung für Boutique-Studios", url: "https://www.cloudgymmanager.com/member-retention-for-boutique-fitness-studios-stop-the-30-annual-churn/" }
+figures:
+  - { label: "Mitglieder-Churn pro Monat", value: "4–8%", note: "Boutique-Schnitt; Top-Studios halten 2–3%", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
+  - { label: "Kündigung in 90 Tagen", value: "~50%", note: "der neuen Mitglieder — das Onboarding-Fenster entscheidet", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
+  - { label: "Gewinnung vs. Halten", value: "5–7×", note: "teurer, ein Mitglied zu gewinnen als zu halten", source: "Glofox", url: "https://www.glofox.com/blog/reducing-churn/" }
 hero:
   kind: line
   stat: "4–8%"
