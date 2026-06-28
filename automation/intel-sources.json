@@ -3,13 +3,34 @@
   "reports": {
     "member-retention-benchmark": {
       "figures": [
-        { "index": 0, "label": "Industry annual retention", "value": "66.4%", "sourceUrl": "https://www.healthandfitness.org/", "cadenceDays": 90, "lastChecked": "2026-06-28" }
+        {
+          "index": 0,
+          "label": "Industry annual retention",
+          "value": "66.4%",
+          "sourceUrl": "https://www.healthandfitness.org/",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        }
       ]
     },
     "wearables-84bn-market": {
       "figures": [
-        { "index": 0, "label": "Global wearables market", "value": "~$96bn", "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market", "cadenceDays": 90, "lastChecked": "2026-06-21" },
-        { "index": 3, "label": "Smart-ring shipment growth, 2024", "value": "+88%", "sourceUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report", "cadenceDays": 90, "lastChecked": "2026-06-21" }
+        {
+          "index": 0,
+          "label": "Global wearables market",
+          "value": "~$96bn",
+          "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 3,
+          "label": "Smart-ring shipment growth, 2024",
+          "value": "+88%",
+          "sourceUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        }
       ]
     }
   }
