@@ -6,8 +6,9 @@ import ShareBar from './ShareBar.astro';
 import BenchmarkWidget from './BenchmarkWidget.astro';
 import { SUBSCRIBE } from '../config/subscribe';
 import type { CollectionEntry } from 'astro:content';
-interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string }
-const { lang, entry, sectionLabel } = Astro.props;
+import type { RelatedItem } from '../lib/related';
+interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string; related?: RelatedItem[] }
+const { lang, entry, sectionLabel, related = [] } = Astro.props;
 const d = entry.data;
 const { Content } = await entry.render();
 const pillar = pillarMeta[d.pillar as Pillar];
@@ -41,10 +42,24 @@ const csv = csvRows.join('\n');
 const csvHref = csv ? `data:text/csv;charset=utf-8,${encodeURIComponent(csv)}` : '';
 const jsonHref = `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ title: d.title, asOf: d.asOf, url: reportUrl, figures: d.figures, series: d.series, sources: d.sources }, null, 2))}`;
 const citation = `${d.author}. "${d.title}." sqwod.life${d.asOf ? `, ${d.asOf}` : ''}. ${reportUrl}`;
+// Link each figure to its source: explicit figure.url wins, else auto-match the
+// figure's `source` label to a citation in `sources[]` (by its leading token).
+const figSourceUrl = (f: { source?: string; url?: string }) => {
+  if (f.url) return f.url;
+  if (!f.source || !d.sources?.length) return null;
+  const key = f.source.split(/[·,/]/)[0].trim().toLowerCase();
+  if (!key) return null;
+  return d.sources.find((s) => s.label.toLowerCase().includes(key))?.url ?? null;
+};
 const hasData = !!(csv || (d.figures && d.figures.length));
 const TX = lang === 'de'
-  ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt' }
-  : { tldr: 'Key takeaways', means: 'What this means for you', data: 'Data & citation', dl: 'Data (CSV)', dlj: 'JSON', cite: 'Cite this report', copy: 'Copy', copied: 'Copied ✓', now: 'now' };
+  ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt', share: 'Als Bild teilen', tag: 'SQWOD INTELLIGENCE' }
+  : { tldr: 'Key takeaways', means: 'What this means for you', data: 'Data & citation', dl: 'Data (CSV)', dlj: 'JSON', cite: 'Cite this report', copy: 'Copy', copied: 'Copied ✓', now: 'now', share: 'Share as image', tag: 'SQWOD INTELLIGENCE' };
+// data the share-image script needs (brand strings + the chart series), passed to the client below
+const shareCfg = {
+  url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share,
+  series: d.series ? { label: d.series.label, unit: d.series.unit ?? '', points: d.series.points, years: d.series.years ?? [] } : null,
+};
 ---
 <div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
 <h1>{d.title}</h1>
@@ -76,7 +91,10 @@ const TX = lang === 'de'
           <div class="fig-val">{f.value}</div>
           <div class="fig-lbl">{f.label}</div>
           {f.note && <div class="fig-note">{f.note}</div>}
-          {f.source && <div class="fig-src">{f.source}</div>}
+          {f.source && (figSourceUrl(f)
+            ? <a class="fig-src fig-src-link" href={figSourceUrl(f)!} target="_blank" rel="nofollow noopener">{f.source} ↗</a>
+            : <div class="fig-src">{f.source}</div>)}
+          <button class="fig-share share-btn" type="button" data-kind="stat" data-v={f.value} data-l={f.label} data-n={f.note ?? ''} data-s={f.source ?? ''} aria-label={TX.share}>↗ {TX.share}</button>
         </div>
       ))}
     </div>
@@ -123,6 +141,7 @@ const TX = lang === 'de'
         </svg>
         <div class="chart-tip" id="chartTip" hidden></div>
       </div>
+      <button class="share-btn chart-share" type="button" data-kind="chart" aria-label={TX.share}>↗ {TX.share}</button>
       {hasBand && <p class="src-note" style="margin-top:8px">{lang === 'de' ? 'Schattierter Bereich = Spanne verschiedener Prognosehäuser (Low–High).' : 'Shaded band = range across forecasters (low–high).'}</p>}
     </section>
   );
@@ -138,21 +157,6 @@ const TX = lang === 'de'
           <div class="pb-why">{p.why}</div>
         </div>
       ))}
-    </div>
-  </section>
-)}
-
-{hasData && (
-  <section class="block datacite">
-    <p class="kick">{TX.data}</p>
-    <div class="dc-row">
-      {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>↓ {TX.dl}</a>}
-      <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>↓ {TX.dlj}</a>
-    </div>
-    <div class="cite">
-      <div class="cite-head">{TX.cite}</div>
-      <code class="cite-text" id="citeText">{citation}</code>
-      <button class="dc-btn copy" id="citeCopy" type="button" data-copy={TX.copy} data-done={TX.copied}>{TX.copy}</button>
     </div>
   </section>
 )}
@@ -197,6 +201,33 @@ const TX = lang === 'de'
       <p class="unlock-fine">{U.fine}</p>
     </div>
   </div>
+)}
+
+{hasData && (
+  <div class="report-tools">
+    {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>↓ {TX.dl}</a>}
+    <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>↓ {TX.dlj}</a>
+    <button class="dc-btn copy" id="citeCopy" type="button" data-copy={`⧉ ${TX.cite}`} data-done={TX.copied}>⧉ {TX.cite}</button>
+    <code class="cite-text" id="citeText" hidden>{citation}</code>
+  </div>
+)}
+
+{related && related.length > 0 && (
+  <section class="block related">
+    <p class="kick">{lang==='de'?'Weiterlesen':'Related'}</p>
+    <div class="grid cols2">
+      {related.map((r) => (
+        <a class="card rel-card" href={r.href}>
+          <div class="info">
+            <span class="bestfor">{r.kind}</span>
+            <h3>{r.title}</h3>
+            <div class="meta">{r.desc}</div>
+            <span class="cardcta">{lang==='de'?'Ansehen':'Read'} →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </section>
 )}
 
 <section class="block" style="border-bottom:none">
@@ -256,6 +287,16 @@ const TX = lang === 'de'
   .cite{margin-top:14px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--panel)}
   .cite-head{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--g4)}
   .cite-text{display:block;font-size:12.5px;color:var(--g1);margin:8px 0 10px;line-height:1.5;font-family:ui-monospace,Menlo,monospace;word-break:break-word}
+  a.fig-src{text-decoration:none;display:block}
+  a.fig-src-link:hover{color:var(--chalk)}
+  .rel-card{grid-template-columns:1fr !important}
+  /* share-as-image + bottom utility strip */
+  .share-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.02em;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--panel);color:var(--g3);cursor:pointer;font-family:inherit}
+  .share-btn:hover{border-color:var(--chalk);color:var(--chalk)}
+  .share-btn.busy{opacity:.55;pointer-events:none}
+  .fig-share{margin-top:12px}
+  .chart-share{margin-top:12px}
+  .report-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px 0;border-top:1px solid var(--line)}
 </style>
 
 <script define:vars={{ endpoint: SUBSCRIBE.endpoint, lang, locked }}>
@@ -315,6 +356,96 @@ const TX = lang === 'de'
       try { await navigator.clipboard.writeText(txt.textContent || ''); } catch (_) {}
       btn.textContent = btn.getAttribute('data-done');
       setTimeout(() => { btn.textContent = btn.getAttribute('data-copy'); }, 1800);
+    });
+  })();
+</script>
+
+<script define:vars={{ shareCfg }}>
+  // Share as image — render a figure or the chart into a self-contained, on-brand
+  // 1200×675 PNG (Sqwod wordmark + stat + source + URL). Literal hex colors only:
+  // CSS vars don't survive SVG→canvas rasterization. Pure SVG (no foreignObject)
+  // keeps the canvas untainted so toBlob works for Web Share / download.
+  (function () {
+    const C = { ink: '#0e0e10', chalk: '#FAFAFA', g1: '#ededf0', g2: '#b8b8c0', g3: '#85858e', g4: '#52525a', line: '#2a2a30', panel: '#161619' };
+    const SANS = "'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
+    const MONO = "ui-monospace,'SF Mono',Menlo,monospace";
+    const W = 1200, H = 675;
+    const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const prettyUrl = (u) => String(u || '').replace(/^https?:\/\//, '');
+    const wrap = (s, max) => { const ws = String(s || '').split(/\s+/); const out = []; let cur = ''; for (const w of ws) { if ((cur + ' ' + w).trim().length > max) { if (cur) out.push(cur); cur = w; } else cur = (cur ? cur + ' ' : '') + w; } if (cur) out.push(cur); return out; };
+    const lines = (arr, x, y, dy, attrs) => arr.map((t, i) => `<text x="${x}" y="${y + i * dy}" ${attrs}>${esc(t)}</text>`).join('');
+
+    const card = (inner, footerLeft) =>
+      `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">` +
+      `<rect width="${W}" height="${H}" fill="${C.ink}"/>` +
+      `<rect x="22" y="22" width="${W - 44}" height="${H - 44}" rx="22" fill="none" stroke="${C.line}" stroke-width="1.5"/>` +
+      `<text x="64" y="108" font-family="${SANS}" font-weight="800" font-size="30" letter-spacing="-0.5"><tspan fill="${C.chalk}">SQWOD</tspan><tspan fill="${C.g3}">.life</tspan></text>` +
+      `<text x="${W - 64}" y="106" text-anchor="end" font-family="${SANS}" font-weight="800" font-size="15" letter-spacing="3" fill="${C.g3}">◈ ${esc(shareCfg.tag)}</text>` +
+      inner +
+      `<line x1="64" y1="${H - 96}" x2="${W - 64}" y2="${H - 96}" stroke="${C.line}" stroke-width="1.5"/>` +
+      `<text x="64" y="${H - 54}" font-family="${SANS}" font-size="20" fill="${C.g3}">${esc(footerLeft)}</text>` +
+      `<text x="${W - 64}" y="${H - 54}" text-anchor="end" font-family="${MONO}" font-size="18" fill="${C.g3}">${esc(prettyUrl(shareCfg.url))}</text>` +
+      `</svg>`;
+
+    const statInner = (d) => {
+      const v = d.v || '', vs = v.length <= 4 ? 150 : v.length <= 7 ? 120 : v.length <= 12 ? 80 : 56;
+      let inner = `<text x="64" y="318" font-family="${SANS}" font-weight="800" font-size="${vs}" fill="${C.chalk}">${esc(v)}</text>`;
+      inner += lines(wrap(d.l, 40), 64, 392, 42, `font-family="${SANS}" font-weight="700" font-size="34" fill="${C.g1}"`);
+      const lblLines = wrap(d.l, 40).length;
+      if (d.n) inner += lines(wrap(d.n, 64), 64, 392 + lblLines * 42 + 12, 32, `font-family="${SANS}" font-size="24" fill="${C.g2}"`);
+      return inner;
+    };
+
+    const chartInner = () => {
+      const s = shareCfg.series; if (!s) return '';
+      const pts = s.points, yrs = s.years || [];
+      const x0 = 64, x1 = W - 80, top = 230, base = 540, mx = Math.max.apply(null, pts.concat([1]));
+      const slot = (x1 - x0) / pts.length, bw = Math.min(64, slot * 0.5), nowY = String(new Date().getFullYear());
+      let inner = `<text x="64" y="180" font-family="${SANS}" font-weight="700" font-size="32" fill="${C.g1}">${esc(s.label)}${s.unit ? ' · ' + esc(s.unit) : ''}</text>`;
+      inner += `<line x1="${x0}" y1="${base}" x2="${x1}" y2="${base}" stroke="${C.line}" stroke-width="1.5"/>`;
+      pts.forEach((p, i) => {
+        const h = Math.max(3, (p / mx) * (base - top)), x = x0 + i * slot + (slot - bw) / 2, cx = x0 + i * slot + slot / 2, now = yrs[i] === nowY;
+        inner += `<rect x="${x}" y="${base - h}" width="${bw}" height="${h}" rx="5" fill="${C.chalk}" opacity="${now ? 1 : 0.78}"/>`;
+        inner += `<text x="${cx}" y="${base - h - 12}" text-anchor="middle" font-family="${MONO}" font-size="20" fill="${C.g2}">${p}</text>`;
+        if (yrs[i]) inner += `<text x="${cx}" y="${base + 28}" text-anchor="middle" font-family="${MONO}" font-size="18" fill="${now ? C.chalk : C.g4}">${esc(yrs[i])}</text>`;
+      });
+      return inner;
+    };
+
+    const rasterize = (svg, filename) => {
+      const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml;charset=utf-8' }));
+      const img = new Image();
+      img.onload = () => {
+        const sc = 2, cv = document.createElement('canvas'); cv.width = W * sc; cv.height = H * sc;
+        const ctx = cv.getContext('2d'); ctx.scale(sc, sc); ctx.drawImage(img, 0, 0); URL.revokeObjectURL(url);
+        cv.toBlob(async (png) => {
+          if (!png) return;
+          const file = new File([png], filename, { type: 'image/png' });
+          if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            try { await navigator.share({ files: [file], title: 'Sqwod Intelligence' }); return; } catch (_) {}
+          }
+          const a = document.createElement('a'); a.href = URL.createObjectURL(png); a.download = filename; document.body.appendChild(a); a.click(); a.remove();
+        }, 'image/png');
+      };
+      img.onerror = () => URL.revokeObjectURL(url);
+      img.src = url;
+    };
+
+    document.querySelectorAll('.share-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        btn.classList.add('busy');
+        let svg, fn;
+        if (btn.dataset.kind === 'chart' && shareCfg.series) {
+          svg = card(chartInner(), shareCfg.asOf ? 'Sqwod Intelligence · as of ' + shareCfg.asOf : 'Sqwod Intelligence');
+          fn = 'sqwod-chart.png';
+        } else {
+          const d = { v: btn.dataset.v, l: btn.dataset.l, n: btn.dataset.n, s: btn.dataset.s };
+          svg = card(statInner(d), d.s ? 'Source: ' + d.s : 'Sqwod Intelligence');
+          fn = 'sqwod-figure.png';
+        }
+        rasterize(svg, fn);
+        setTimeout(() => btn.classList.remove('busy'), 1400);
+      });
     });
   })();
 </script>

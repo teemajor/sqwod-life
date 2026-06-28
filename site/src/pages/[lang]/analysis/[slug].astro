@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import ArticleView from '../../../components/ArticleView.astro';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
+import { getRelated } from '../../../lib/related';
 
 export async function getStaticPaths() {
   const arts = await getCollection('articles', (a) => a.data.format === 'analysis' || a.data.format === 'field-note');
@@ -13,5 +14,5 @@ const lang = Astro.params.lang as Lang;
 const label = entry.data.format === 'field-note' ? 'Field Notes' : 'Analysis';
 ---
 <Base lang={lang} title={`${entry.data.title} — Sqwod`} description={entry.data.description} active="articles">
-  <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel={label} /></div>
+  <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel={label} related={await getRelated(lang, entry)} /></div>
 </Base>
