@@ -45,6 +45,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { createHmac } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { fileCorrection } from './corrections.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REGISTRY = join(__dirname, 'intel-sources.json');
@@ -94,7 +95,8 @@ Currently cited source: ${fig.sourceLabel || '(none)'} ${fig.sourceUrl ? `(${fig
 Search for the most recent figure stated by a NAMED authority (the original research firm, trade body, company, or government body — never a blog that re-quotes them). Prefer the source we already cite if it has refreshed its number; otherwise use the most credible newer source you find. The value must be a single source's actual published number — never a blend, average, or your own estimate.
 
 Respond with ONLY minified JSON, no prose, no code fence:
-{"found":true|false,"value":"current value in the SAME units/format as our published value, or empty","sourceLabel":"named source e.g. 'GMInsights' or 'IDC'","sourceUrl":"exact URL the number is stated on","year":"year/edition the figure refers to, or empty","snippet":"<=160-char quote/sentence from the source stating it","sameSource":true|false}
+{"found":true|false,"value":"current value in the SAME units/format as our published value, or empty","sourceLabel":"named source e.g. 'GMInsights' or 'IDC'","sourceUrl":"exact URL the number is stated on","year":"year/edition the figure refers to, or empty","snippet":"<=160-char quote/sentence from the source stating it","sameSource":true|false,"priorSupported":true|false}
+"priorSupported": is our CURRENTLY PUBLISHED value ("${fig.value}") still stated by some named, credible source? true if it's merely outdated/superseded by a newer number; false only if no named source supports it (i.e. we likely published an error). If unsure, true.
 If you cannot find the metric clearly stated by a named source, set found=false. Never guess a number.`;
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
@@ -113,7 +115,7 @@ If you cannot find the metric clearly stated by a named source, set found=false.
     const o = JSON.parse(m[0]);
     if (!o.found || !o.value) return { kind: 'review-due', snippet: '(no authoritative figure found by search — please verify)', confidence: 'low' };
     let foundDomain = ''; try { foundDomain = new URL(o.sourceUrl).hostname.replace(/^www\./, ''); } catch {}
-    const base = { value: String(o.value), snippet: o.snippet || '', foundSource: o.sourceLabel || '', foundUrl: o.sourceUrl || '', foundDomain, year: o.year || '' };
+    const base = { value: String(o.value), snippet: o.snippet || '', foundSource: o.sourceLabel || '', foundUrl: o.sourceUrl || '', foundDomain, year: o.year || '', priorSupported: o.priorSupported !== false };
     if (norm(o.value) === norm(fig.value)) return { kind: 'unchanged', ...base };
     // Same source updated its number → "update". A different authority states it → "replace".
     const sameSource = o.sameSource === true
@@ -318,7 +320,11 @@ async function scan() {
         : replace
           ? `${foundWhere} now states this — different from your cited ${fig.sourceLabel || 'source'}. Replace swaps both the number and the citation.`
           : `${foundWhere} updated its number. Confirm the snippet, then Update.`;
-      const auto = autoEligible(fig, c);
+      // A "correction" = the figure we published is no longer supported by any
+      // named source (we likely published an error), not merely outdated. These
+      // are never auto-applied — they get a human tap AND a public ledger entry.
+      const isCorrection = changed && c.priorSupported === false;
+      const auto = autoEligible(fig, c) && !isCorrection;
       const prop = {
         id, report: slug, index: fig.index, label: fig.label,
         oldValue: fig.value, newValue: changed ? c.value : null,
@@ -328,7 +334,7 @@ async function scan() {
         foundSource: c.foundSource || '', foundUrl: c.foundUrl || '', foundDomain: c.foundDomain || '', foundYear: c.year || '',
         sourceUrl: fig.sourceUrl, snippet: c.snippet, confidence: c.confidence, kind: c.kind,
         reliability, recommendation,
-        status: auto ? 'auto-applied' : 'pending', autoApplied: auto, createdAt: today,
+        status: auto ? 'auto-applied' : 'pending', autoApplied: auto, isCorrection, createdAt: today,
       };
 
       if (auto) {
@@ -364,7 +370,17 @@ async function scan() {
 // ---- APPLY (only human-acted proposals) ----------------------------------
 const readReg = () => JSON.parse(readFileSync(REGISTRY, 'utf8'));
 const writeReg = (reg) => writeFileSync(REGISTRY, JSON.stringify(reg, null, 2) + '\n');
-function apply() {
+// File a public correction for an applied error-fix (never breaks the apply run).
+async function fileCorrectionSafe(p) {
+  try {
+    await fileCorrection({
+      report: p.report, kind: 'correction', source: p.foundSource || p.currentSource || '', sourceUrl: p.foundUrl || '', date: today,
+      en: { was: p.oldValue, now: p.newValue, reason: `The figure we published was no longer supported by a named source; corrected to ${p.foundSource || 'the current source'}'s number.` },
+      de: { was: deValue(p.oldValue), now: deValue(p.newValue), reason: `Die veröffentlichte Zahl war durch keine benannte Quelle mehr belegt; korrigiert auf die Zahl von ${p.foundSource || 'der aktuellen Quelle'}.` },
+    });
+  } catch (e) { console.log(`! correction-ledger write failed for ${p.id}: ${e.message}`); }
+}
+async function apply() {
   if (!existsSync(QUEUE)) { console.log('No queue.'); return; }
   const files = readdirSync(QUEUE).filter((f) => f.endsWith('.json'));
   let applied = 0;
@@ -384,6 +400,7 @@ function apply() {
       if (fig) { fig.value = p.newValue; writeReg(reg); }
       p.status = 'applied'; p.appliedAt = today; writeFileSync(path, JSON.stringify(p, null, 2));
       applied++; console.log(`✓ updated ${p.id}: ${p.oldValue} → ${p.newValue}`);
+      if (p.isCorrection) await fileCorrectionSafe(p);
 
     // Replace — value AND citation change to the source that now states it
     } else if (p.status === 'replace-approved' && p.newValue) {
@@ -401,6 +418,7 @@ function apply() {
       if (fig) { fig.value = p.newValue; if (p.foundSource) fig.sourceLabel = p.foundSource; if (p.foundUrl) fig.sourceUrl = p.foundUrl; writeReg(reg); }
       p.status = 'applied'; p.appliedAt = today; writeFileSync(path, JSON.stringify(p, null, 2));
       applied++; console.log(`✓ replaced ${p.id}: ${p.oldValue} → ${p.newValue} (${src})`);
+      if (p.isCorrection) await fileCorrectionSafe(p);
 
     // Remove — explicit two-tap only; deletes the figure and re-indexes the registry
     } else if (p.status === 'remove-approved') {
@@ -448,4 +466,4 @@ function apply() {
 
 const mode = args.apply ? 'apply' : 'scan';
 console.log(`Intelligence refresh · ${today} · mode=${mode}${apiKey ? '' : ' · no extractor key (review-due)'}${RESEND ? '' : ' · email log-only'}`);
-if (mode === 'apply') apply(); else await scan();
+if (mode === 'apply') await apply(); else await scan();

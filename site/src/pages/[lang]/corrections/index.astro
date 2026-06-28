@@ -1,0 +1,77 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { languages, type Lang } from '../../../i18n/ui';
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+
+const entries = (await getCollection('corrections', (c) => c.data.lang === lang))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+const T = lang === 'de' ? {
+  crumb: 'Standards / Korrekturen', h1: 'Korrekturen & Klarstellungen',
+  policy: 'Wir behandeln jede Zahl wie eine Quelle: belegt, verlinkt, überprüfbar. Wenn wir einen Fehler machen, korrigieren wir ihn sichtbar und führen ihn hier — wie eine seriöse Redaktion. Jede Korrektur nennt, was wir geschrieben hatten, was jetzt stimmt und warum.',
+  none: 'Noch keine Korrekturen. Wenn wir einen Fehler machen, steht er hier.',
+  was: 'Vorher', now: 'Jetzt', why: 'Grund', source: 'Quelle',
+  correction: 'Korrektur', clarification: 'Klarstellung', read: 'Zum Beitrag',
+} : {
+  crumb: 'Standards / Corrections', h1: 'Corrections & Clarifications',
+  policy: 'We treat every number like a source: cited, linked, checkable. When we get something wrong, we fix it in the open and log it here — the way a serious newsroom does. Each entry says what we published, what is correct now, and why.',
+  none: 'No corrections yet. If we get something wrong, it will appear here.',
+  was: 'We said', now: 'Now', why: 'Why', source: 'Source',
+  correction: 'Correction', clarification: 'Clarification', read: 'Read the piece',
+};
+---
+<Base lang={lang} title={`${T.h1} — sqwod.life`} active="about">
+  <div class="measure">
+    <div class="crumb">{T.crumb}</div>
+    <h1>{T.h1}</h1>
+    <p class="prose policy">{T.policy}</p>
+
+    {entries.length === 0 && <p class="prose none">{T.none}</p>}
+
+    <ol class="cx">
+      {entries.map((e) => (
+        <li class="cx-item">
+          <div class="cx-top">
+            <span class={`cx-tag ${e.data.kind}`}>{e.data.kind === 'clarification' ? T.clarification : T.correction}</span>
+            <time class="cx-date">{fmt(e.data.date)}</time>
+          </div>
+          <a class="cx-report" href={e.data.reportUrl}>{e.data.reportTitle}</a>
+          <div class="cx-row"><span class="cx-k">{T.was}</span><span class="cx-was">{e.data.was}</span></div>
+          <div class="cx-row"><span class="cx-k">{T.now}</span><span class="cx-now">{e.data.now}</span></div>
+          <div class="cx-row"><span class="cx-k">{T.why}</span><span class="cx-v">{e.data.reason}</span></div>
+          {e.data.source && (
+            <div class="cx-row"><span class="cx-k">{T.source}</span><span class="cx-v">
+              {e.data.sourceUrl ? <a href={e.data.sourceUrl} rel="nofollow noopener" target="_blank">{e.data.source}</a> : e.data.source}
+            </span></div>
+          )}
+          <a class="cx-link" href={e.data.reportUrl}>→ {T.read}</a>
+        </li>
+      ))}
+    </ol>
+  </div>
+</Base>
+
+<style>
+  .policy{margin-top:14px;color:var(--g1)}
+  .none{margin-top:20px;color:var(--g2)}
+  .cx{list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:16px}
+  .cx-item{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:18px 20px}
+  .cx-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .cx-tag{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;border-radius:5px;padding:3px 8px}
+  .cx-tag.correction{color:#0e0e10;background:#fbbf24}
+  .cx-tag.clarification{color:var(--chalk);border:1px solid var(--line)}
+  .cx-date{font-size:12px;color:var(--g3);font-weight:700}
+  .cx-report{display:inline-block;font-size:16px;font-weight:800;color:var(--chalk);text-decoration:none;margin-bottom:10px}
+  .cx-report:hover{text-decoration:underline}
+  .cx-row{display:flex;gap:10px;font-size:14px;line-height:1.55;margin:3px 0}
+  .cx-k{flex:0 0 64px;color:var(--g3);font-weight:700;font-size:11px;letter-spacing:.04em;text-transform:uppercase;padding-top:3px}
+  .cx-was{color:var(--g2);text-decoration:line-through;text-decoration-color:var(--g4)}
+  .cx-now{color:var(--chalk);font-weight:600}
+  .cx-v{color:var(--g1)}
+  .cx-v a,.cx-row a{color:var(--g2)}
+  .cx-link{display:inline-block;margin-top:10px;font-size:13px;font-weight:700;color:var(--g3);text-decoration:none}
+  .cx-link:hover{color:var(--g1)}
+</style>
