@@ -5,10 +5,10 @@ counterpart: oura-ring-gen3
 title: "Oura Ring Gen3 im Test"
 productName: "Oura Ring Gen3"
 category: "Recovery- & Schlaf-Tracker"
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-10
-updatedAt: 2026-06-14
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der von Coaches meistgeschätzte Schlaf- und Readiness-Tracker — diskret, da genau, wo es zählt, und der Recovery-Maßstab. Das Abo ist der Haken."
@@ -21,7 +21,7 @@ crowd:
   sources:
     - { name: "Amazon", value: "4.4★" }
     - { name: "App Store", value: "4.6★" }
-    - { name: "Trustpilot", value: "3.9★" }
+    - { name: "Trustpilot", value: "4.1★", url: "https://www.trustpilot.com/review/ouraring.com" }
     - { name: "Reddit", value: "+72%" }
     - { name: "YouTube", value: "+68%" }
     - { name: "Experten-Ø", value: "8.7/10" }

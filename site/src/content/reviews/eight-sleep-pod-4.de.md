@@ -7,10 +7,10 @@ productName: "Eight Sleep Pod 4"
 category: "Schlaf"
 glyph: bed
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-20
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Das wirksamste Schlaf-Temperatursystem auf dem Markt — Zwei-Zonen-Heizen/Kühlen, das den Schlaf wirklich verbessert. Preis und Pflicht-Abo sind real."
@@ -18,9 +18,10 @@ sqwodScore: 80
 confidence: High
 crowd:
   score: 83
-  reviews: 9000
-  platforms: 5
+  reviews: 9491
+  platforms: 6
   sources:
+    - { name: "Trustpilot", value: "2.5★", url: "https://www.trustpilot.com/review/eightsleep.com" }
     - { name: "Eight Sleep", value: "4.6★" }
     - { name: "Tom's Guide", value: "4/5" }
     - { name: "Experten-Ø", value: "8.0/10" }
