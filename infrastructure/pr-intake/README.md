@@ -31,3 +31,30 @@ Stripe webhook → Worker → mark paid           press.mjs: AI screen → you a
 ## Notes
 - The Worker holds no editorial logic — intake + payment only. All curation is AI-screen + your approval in the repo.
 - Test mode: use Stripe `sk_test_…` + test price and a Turnstile test key before going live.
+
+## Intelligence refresh approvals — the `/intel` route
+
+The same Worker powers one-tap Approve/Reject for living-report figure updates.
+
+```
+intel-scan.yml (weekly) → intelligence-refresh.mjs --scan
+   → fetch source, extract candidate, draft automation/intel-queue/<id>.json
+   → email YOU branded Approve/Reject buttons (signed, single-use, 14-day links)
+        ↓ you tap
+Worker GET /intel → verify HMAC + expiry → flip the proposal to approved/rejected
+        ↓
+intel-apply.yml (every 4h / on demand) → --apply → update the figure (EN+DE) +
+   changelog + date → push → deploy.   Nothing publishes until you approve.
+```
+
+### One-time setup
+1. **Pick a signing secret** (any long random string). It must match in two places:
+   - Worker: `wrangler secret put INTEL_SIGNING_SECRET`
+   - GitHub repo → Settings → Secrets → Actions → `INTEL_SIGNING_SECRET` (same value)
+2. **GitHub repo secrets:** `INTEL_REVIEWER_EMAIL` (where proposals go — you), plus the existing `ANTHROPIC_API_KEY` (source extraction) and `RESEND_API_KEY` (sending).
+3. **GitHub repo variables:** `INTEL_FROM` (a Resend-verified sender, e.g. `Sqwod Intelligence <intel@sqwod.life>`) and `INTEL_WORKER_URL` (e.g. `https://pr.sqwod.life`).
+4. **Resend:** verify the `intel@` sender (or reuse your existing `daily@`).
+5. **Deploy:** `wrangler deploy` — the `/intel` route ships with the existing Worker. The Worker's existing `GITHUB_TOKEN` (Contents: R/W) is all it needs; it only flips the queue JSON.
+
+### Add a figure to track
+Edit `automation/intel-sources.json`: per report, add `{ index, label, value, sourceUrl, cadenceDays, lastChecked }`. `index` is the figure's position in the report's frontmatter `figures:` array. Quarterly (`90`) suits flagship figures; `30` for fast-movers. Without `ANTHROPIC_API_KEY` the scan still runs but sends "please verify" nudges instead of an extracted old→new.

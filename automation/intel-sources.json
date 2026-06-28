@@ -1,0 +1,16 @@
+{
+  "_doc": "Control surface for the human-in-the-loop Intelligence refresh (automation/intelligence-refresh.mjs). Each tracked figure lists its source + cadence. The scanner checks figures that are due, drafts a PROPOSAL (old → new + source snippet), emails you Approve/Reject buttons, and applies ONLY what you approve. `index` is the figure's 0-based position in the report's frontmatter `figures:` array (used to apply the change to EN + DE in parity). Nothing here is auto-published — a human taps to apply.",
+  "reports": {
+    "member-retention-benchmark": {
+      "figures": [
+        { "index": 0, "label": "Industry annual retention", "value": "66.4%", "sourceUrl": "https://www.healthandfitness.org/", "cadenceDays": 90, "lastChecked": "2026-06-28" }
+      ]
+    },
+    "wearables-84bn-market": {
+      "figures": [
+        { "index": 0, "label": "Global wearables market", "value": "~$96bn", "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market", "cadenceDays": 90, "lastChecked": "2026-06-21" },
+        { "index": 3, "label": "Smart-ring shipment growth, 2024", "value": "+88%", "sourceUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report", "cadenceDays": 90, "lastChecked": "2026-06-21" }
+      ]
+    }
+  }
+}

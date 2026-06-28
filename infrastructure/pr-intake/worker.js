@@ -6,6 +6,10 @@
  *                    submission to the repo (automation/press-queue/<id>.json),
  *                    and for premium creates a Stripe Checkout and redirects.
  *   POST /webhook  ← Stripe checkout.session.completed → marks the submission paid.
+ *   GET  /intel    ← one-tap Approve/Reject for an Intelligence refresh proposal.
+ *                    Verifies a signed (HMAC) single-use, expiring link and flips
+ *                    automation/intel-queue/<id>.json to approved/rejected. The
+ *                    scheduled `intelligence-refresh.mjs --apply` then publishes it.
  *
  * Everything lives in the repo as the single source of truth; automation/press.mjs
  * (run by .github/workflows/press.yml) screens + publishes. The Worker holds NO
@@ -28,6 +32,7 @@ export default {
     const url = new URL(req.url);
     if (req.method === 'POST' && url.pathname === '/submit') return submit(req, env);
     if (req.method === 'POST' && url.pathname === '/webhook') return webhook(req, env);
+    if (req.method === 'GET' && url.pathname === '/intel') return intel(req, env);
     return new Response('Sqwod PR intake', { status: 200 });
   },
 };
@@ -120,6 +125,49 @@ async function verifyStripe(payload, header, secret) {
   const mac = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(`${parts.t}.${payload}`));
   const hex = [...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, '0')).join('');
   return hex === parts.v1;
+}
+
+// ---- Intelligence refresh: one-tap Approve / Reject ----
+const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+function page(title, bodyHtml) {
+  return new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} — Sqwod Intelligence</title>` +
+    `<div style="font-family:-apple-system,Segoe UI,Arial;background:#0e0e10;color:#FAFAFA;min-height:100vh;margin:0;display:flex;align-items:center;justify-content:center">` +
+    `<div style="max-width:460px;padding:32px;text-align:center">` +
+    `<div style="font:800 22px/1 -apple-system;letter-spacing:-.02em">SQWOD<span style="color:#85858e">.life</span></div>` +
+    `<div style="font:700 11px/1 -apple-system;letter-spacing:.16em;text-transform:uppercase;color:#85858e;margin:6px 0 24px">Intelligence</div>` +
+    `<h1 style="font-size:24px;margin:0 0 12px">${esc(title)}</h1>` +
+    `<p style="color:#b8b8c0;font-size:15px;line-height:1.6">${bodyHtml}</p>` +
+    `</div></div>`, { status: 200, headers: { 'content-type': 'text/html;charset=utf-8' } });
+}
+async function hmacOk(data, sig, secret) {
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(secret || ''), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const mac = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(data));
+  const hex = [...new Uint8Array(mac)].map((b) => b.toString(16).padStart(2, '0')).join('');
+  // constant-time-ish compare
+  if (!sig || sig.length !== hex.length) return false;
+  let diff = 0;
+  for (let i = 0; i < hex.length; i++) diff |= hex.charCodeAt(i) ^ sig.charCodeAt(i);
+  return diff === 0;
+}
+async function intel(req, env) {
+  const u = new URL(req.url);
+  const id = u.searchParams.get('id') || '', action = u.searchParams.get('action') || '';
+  const exp = u.searchParams.get('exp') || '', sig = u.searchParams.get('sig') || '';
+  if (!id || (action !== 'approve' && action !== 'reject')) return page('Invalid link', 'This approval link is malformed.');
+  if (!Number(exp) || Number(exp) * 1000 < Date.now()) return page('Link expired', 'This link has expired — the next refresh will send a fresh one.');
+  if (!(await hmacOk(`${id}.${action}.${exp}`, sig, env.INTEL_SIGNING_SECRET))) return page('Could not verify', 'This link failed signature verification.');
+  const path = `automation/intel-queue/${id}.json`;
+  const cur = await getFile(env, path);
+  if (!cur) return page('Not found', 'That proposal no longer exists.');
+  const p = JSON.parse(cur.content);
+  if (p.status !== 'pending') return page('Already handled', `This proposal was already <b>${esc(p.status)}</b>.`);
+  p.status = action === 'approve' ? 'approved' : 'rejected';
+  p.decidedAt = new Date().toISOString();
+  const ok = await putFile(env, path, JSON.stringify(p, null, 2), `intel: ${p.status} ${id}`, cur.sha);
+  if (!ok) return page('Try again', 'Could not record your decision — please tap the link again.');
+  return action === 'approve'
+    ? page('Approved ✓', `<b>${esc(p.label)}</b> will update ${esc(p.oldValue)} &rarr; <b>${esc(p.newValue || '(review)')}</b> on the next refresh (within a few hours), with a changelog entry and a fresh date.`)
+    : page('Rejected', `<b>${esc(p.label)}</b> was rejected. Nothing on the site changes.`);
 }
 
 // ---- GitHub contents API ----

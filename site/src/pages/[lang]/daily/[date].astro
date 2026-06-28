@@ -6,6 +6,7 @@ import { pillarMeta } from '../../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/podcast';
 import ShareBar from '../../../components/ShareBar.astro';
 import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 export async function getStaticPaths() {
   // Only build published editions — drafts stay off the live site.
@@ -22,7 +23,7 @@ const fmt = d.date.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekd
 
 // Show the player only if the episode's audio actually exists in the build.
 const audioPath = episodeAudio(d.urlSlug, lang);
-const hasAudio = existsSync(new URL(`../../../../public${audioPath}`, import.meta.url));
+const hasAudio = existsSync(join(process.cwd(), 'public', 'audio', `${d.urlSlug}-${lang}.mp3`));
 
 const pillarLabel = (p: string) => pillarMeta[p as keyof typeof pillarMeta]?.label[lang] ?? p;
 // Quiet provenance: items that carry a source link become numbered sources.
