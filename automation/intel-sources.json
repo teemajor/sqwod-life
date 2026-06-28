@@ -7,6 +7,7 @@
           "index": 0,
           "label": "Industry annual retention",
           "value": "66.4%",
+          "sourceLabel": "HFA 2025",
           "sourceUrl": "https://www.healthandfitness.org/",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
@@ -19,6 +20,7 @@
           "index": 0,
           "label": "Global wearables market",
           "value": "~$96bn",
+          "sourceLabel": "GMInsights · MarketsandMarkets",
           "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
@@ -27,6 +29,7 @@
           "index": 3,
           "label": "Smart-ring shipment growth, 2024",
           "value": "+88%",
+          "sourceLabel": "Grand View Research",
           "sourceUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
