@@ -7,7 +7,7 @@ productName: "Apple Watch Series 9"
 category: "All-round smartwatch"
 glyph: watch
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-08
 updatedAt: 2026-06-14

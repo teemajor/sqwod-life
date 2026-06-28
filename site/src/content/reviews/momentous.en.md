@@ -7,10 +7,10 @@ productName: "Momentous (Creatine + Protein)"
 category: "Supplements & nutrition"
 glyph: supplement
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-20
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The supplement line you can recommend to athletes without hedging — NSF Certified for Sport, Creapure creatine, obsessive purity testing. You pay a premium for that certainty."
@@ -18,9 +18,10 @@ sqwodScore: 85
 confidence: High
 crowd:
   score: 86
-  reviews: 5200
-  platforms: 5
+  reviews: 5225
+  platforms: 6
   sources:
+    - { name: "Trustpilot", value: "4.1★", url: "https://www.trustpilot.com/review/livemomentous.com" }
     - { name: "Amazon", value: "4.6★" }
     - { name: "Momentous", value: "4.8★" }
     - { name: "Expert avg", value: "8.6/10" }

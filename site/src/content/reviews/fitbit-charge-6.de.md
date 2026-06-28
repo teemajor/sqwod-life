@@ -7,10 +7,10 @@ productName: "Fitbit Charge 6"
 category: "Fitness-Tracker"
 glyph: tracker
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-20
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der beste Alltags-Tracker fürs Geld — genaue Sensoren, EKG und Google-Funktionen für ~130 €. Die besten Insights stecken aber hinter Fitbit Premium."
@@ -18,9 +18,10 @@ sqwodScore: 80
 confidence: High
 crowd:
   score: 82
-  reviews: 19000
-  platforms: 5
+  reviews: 24300
+  platforms: 6
   sources:
+    - { name: "Trustpilot", value: "1.3★", url: "https://www.trustpilot.com/review/www.fitbit.com" }
     - { name: "Amazon", value: "4.1★" }
     - { name: "Google Store", value: "4.3★" }
     - { name: "Women's Health", value: "Testsieger" }

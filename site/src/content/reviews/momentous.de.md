@@ -7,10 +7,10 @@ productName: "Momentous (Kreatin + Protein)"
 category: "Supplements & Ernährung"
 glyph: supplement
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-20
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Die Supplement-Linie, die du Athlet:innen ohne Wenn und Aber empfehlen kannst — NSF Certified for Sport, Creapure-Kreatin, kompromisslose Reinheitstests. Für diese Gewissheit zahlst du Aufpreis."
@@ -18,9 +18,10 @@ sqwodScore: 85
 confidence: High
 crowd:
   score: 86
-  reviews: 5200
-  platforms: 5
+  reviews: 5225
+  platforms: 6
   sources:
+    - { name: "Trustpilot", value: "4.1★", url: "https://www.trustpilot.com/review/livemomentous.com" }
     - { name: "Amazon", value: "4.6★" }
     - { name: "Momentous", value: "4.8★" }
     - { name: "Experten-Ø", value: "8.6/10" }

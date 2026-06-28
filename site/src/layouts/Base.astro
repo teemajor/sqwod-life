@@ -29,6 +29,7 @@ const canonical = new URL(path, Astro.site).toString();
   <link rel="alternate" hreflang={lang} href={canonical} />
   <link rel="alternate" hreflang={other} href={new URL(otherPath, Astro.site).toString()} />
   <link rel="alternate" hreflang="x-default" href={new URL(path.replace(`/${lang}`, '/en'), Astro.site).toString()} />
+  <slot name="head" />
 </head>
 <body>
   <Header lang={lang} active={active} altPath={otherPath} />

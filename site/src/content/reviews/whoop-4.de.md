@@ -7,10 +7,10 @@ productName: "Whoop 4.0"
 category: "Recovery- & Strain-Tracker"
 glyph: band
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: sqwod-ai
 publishedAt: 2026-06-09
-updatedAt: 2026-06-14
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Das Strain-und-Recovery-Band für Coaches — bildschirmlos, immer aktiv, gebaut für Athlet:innen, die nach Readiness trainieren. Das Abo-Modell ist die Verpflichtung."
@@ -22,7 +22,7 @@ crowd:
   platforms: 6
   sources:
     - { name: "App Store", value: "4.5★" }
-    - { name: "Trustpilot", value: "3.6★" }
+    - { name: "Trustpilot", value: "3.2★", url: "https://www.trustpilot.com/review/whoop.com" }
     - { name: "Reddit", value: "+64%" }
     - { name: "Experten-Ø", value: "8.4/10" }
 assessment:
