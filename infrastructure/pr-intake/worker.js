@@ -170,7 +170,7 @@ async function intel(req, env) {
   const u = new URL(req.url);
   const id = u.searchParams.get('id') || '', action = u.searchParams.get('action') || '';
   const exp = u.searchParams.get('exp') || '', sig = u.searchParams.get('sig') || '';
-  const known = action === 'remove' || Object.prototype.hasOwnProperty.call(INTEL_ACTIONS, action);
+  const known = action === 'remove' || action === 'revert' || Object.prototype.hasOwnProperty.call(INTEL_ACTIONS, action);
   if (!id || !known) return page('Invalid link', 'This action link is malformed.');
   if (!Number(exp) || Number(exp) * 1000 < Date.now()) return page('Link expired', 'This link has expired — the next refresh will send a fresh one.');
   if (!(await hmacOk(`${id}.${action}.${exp}`, sig, env.INTEL_SIGNING_SECRET))) return page('Could not verify', 'This link failed signature verification.');
@@ -179,6 +179,16 @@ async function intel(req, env) {
   const cur = await getFile(env, path);
   if (!cur) return page('Not found', 'That proposal no longer exists.');
   const p = JSON.parse(cur.content);
+
+  // Revert an auto-applied update (the figure is already live with the new value).
+  if (action === 'revert') {
+    if (p.status !== 'auto-applied') return page('Already handled', `This figure is <b>${esc(p.status)}</b> — nothing to revert.`);
+    p.status = 'revert-requested';
+    p.decidedAt = new Date().toISOString();
+    const ok = await putFile(env, path, JSON.stringify(p, null, 2), `intel: revert-requested ${id}`, cur.sha);
+    if (!ok) return page('Try again', 'Could not record the revert — please tap the link again.');
+    return page('Revert queued', `<b>${esc(p.label)}</b> will be set back to <b>${esc(p.oldValue)}</b> on the next refresh (within a few hours), with a changelog entry.`);
+  }
 
   // First tap of Remove never changes anything — it asks for an explicit confirm.
   if (action === 'remove') {

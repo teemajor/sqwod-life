@@ -10,11 +10,18 @@
  *                       and if it changed (or can't be auto-verified) draft a
  *                       PROPOSAL in automation/intel-queue/ and email you a set of
  *                       one-tap actions. Bumps lastChecked.
+ *   --auto              (with --scan) AUTO-APPLY tier: a same-source, high-
+ *                       confidence value update within a sane range (0.5×–2×,
+ *                       identical units, single number, sourced) is published
+ *                       immediately in EN+DE and listed in the email with a
+ *                       one-tap Revert. Replace + Remove + any unusual change
+ *                       still wait for your tap. INTEL_AUTO_APPLY=false disables.
  *   --apply             execute every proposal a human acted on (the Worker flips
- *                       the status on tap). Action set:
+ *                       the status on tap). Status → effect:
  *                         approved        → Update value (same source) in EN+DE
  *                         replace-approved→ Replace value AND source/url in EN+DE
  *                         remove-approved → Remove the figure (explicit 2-tap only)
+ *                         revert-requested→ Undo an auto-applied update
  *                         rejected        → Keep / dismiss (figure untouched)
  *                         flagged         → Review later (figure untouched)
  *                       Each writes a changelog entry + bumps updatedAt; the
@@ -54,6 +61,11 @@ const FROM = process.env.RESEND_FROM || 'Sqwod Intelligence <intel@sqwod.life>';
 const REVIEWER = process.env.INTEL_REVIEWER_EMAIL || '';
 const SECRET = process.env.INTEL_SIGNING_SECRET || 'dev-secret-change-me';
 const WORKER = (process.env.INTEL_WORKER_URL || 'https://pr.sqwod.life').replace(/\/$/, '');
+// Auto-apply tier: --auto (or INTEL_AUTO_APPLY=1) publishes high-confidence,
+// same-source value updates without a tap. INTEL_AUTO_APPLY=false force-disables
+// it (escape hatch) even when --auto is passed. Replace + remove never auto-apply.
+const _autoEnv = process.env.INTEL_AUTO_APPLY || '';
+const AUTO = (args.auto === true || /^(1|true|yes)$/i.test(_autoEnv)) && !/^(0|false|no)$/i.test(_autoEnv);
 
 const daysBetween = (a, b) => Math.floor((Date.parse(a) - Date.parse(b)) / 86400000);
 
@@ -118,8 +130,28 @@ const row = (l, v) => `<div style="font:400 13px/1.6 -apple-system,Arial;color:#
 const btnPrimary = (href, label) => `<a href="${esc(href)}" style="display:inline-block;background:#FAFAFA;color:#0e0e10;text-decoration:none;font:800 14px/1 -apple-system,Arial;padding:12px 18px;border-radius:9px;margin:0 8px 8px 0">${label}</a>`;
 const btnGhost = (href, label) => `<a href="${esc(href)}" style="display:inline-block;border:1px solid #2a2a30;color:#b8b8c0;text-decoration:none;font:700 13px/1 -apple-system,Arial;padding:11px 14px;border-radius:9px;margin:0 6px 8px 0">${label}</a>`;
 const btnDanger = (href, label) => `<a href="${esc(href)}" style="display:inline-block;border:1px solid #4a2530;color:#e0a0ac;text-decoration:none;font:700 13px/1 -apple-system,Arial;padding:11px 14px;border-radius:9px;margin:0 6px 8px 0">${label}</a>`;
+function autoCard(p) {
+  const foundLine = `Source ${esc(p.foundSource || p.checkedDomain)}${p.foundYear ? ` (${esc(p.foundYear)})` : ''}`;
+  return `<table width="100%" style="border:1px solid #234034;border-radius:12px;background:#10211a;margin:0 0 16px"><tr><td style="padding:18px 20px">
+    <div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.12em;text-transform:uppercase;color:#34d399">${esc(p.report)} · Updated automatically</div>
+    <div style="font:700 17px/1.4 -apple-system,Arial;color:#FAFAFA;margin:8px 0 10px">${esc(p.label)}</div>
+    ${row('On sqwod.life now', `<b style="color:#34d399">${esc(p.newValue)}</b> <span style="color:#85858e">(was ${esc(p.oldValue)})</span>`)}
+    ${row(foundLine, esc(p.foundSource || p.currentSource || '—'))}
+    <div style="font:400 12.5px/1.55 -apple-system,Arial;color:#85858e;margin:8px 0;padding:8px 12px;border-left:2px solid #234034">"${esc(p.snippet)}"</div>
+    <div style="font:400 13px/1.55 -apple-system,Arial;color:#b8b8c0;margin:2px 0">Applied automatically — same cited source, high confidence, within a sane range. The site is already updated with a changelog entry.</div>
+    <div style="margin-top:16px">${btnGhost(p.revert, `Revert to ${esc(p.oldValue)}`)}</div>
+  </td></tr></table>`;
+}
 function emailHtml(proposals) {
-  const cards = proposals.map((p) => {
+  const autos = proposals.filter((p) => p.autoApplied);
+  const pending = proposals.filter((p) => !p.autoApplied);
+  const autosHtml = autos.length
+    ? `<div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.14em;text-transform:uppercase;color:#34d399;margin:4px 0 12px">Applied automatically · ${autos.length}</div>${autos.map(autoCard).join('')}`
+    : '';
+  const pendingHeader = pending.length
+    ? `<div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.14em;text-transform:uppercase;color:#fbbf24;margin:${autos.length ? '20px' : '4px'} 0 12px">Need your decision · ${pending.length}</div>`
+    : '';
+  const cards = pending.map((p) => {
     const changed = p.kind === 'changed' && p.newValue;
     const replace = changed && p.changeType === 'replace';
     const tag = !changed ? 'Needs a manual look' : replace ? 'A newer source has this number' : 'A number changed — review';
@@ -156,22 +188,28 @@ function emailHtml(proposals) {
   return `<div style="background:#0e0e10;padding:28px 0"><div style="max-width:580px;margin:0 auto;padding:0 20px">
     <div style="font:800 22px/1 -apple-system,Arial;color:#FAFAFA;letter-spacing:-.02em;margin-bottom:4px">SQWOD<span style="color:#85858e">.life</span></div>
     <div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.16em;text-transform:uppercase;color:#85858e;margin-bottom:18px">Intelligence · figures to review</div>
-    <div style="font:400 14px/1.55 -apple-system,Arial;color:#b8b8c0;margin-bottom:20px">Each figure was re-checked against a live web search. Your options per figure:
-      <br><b style="color:#FAFAFA">Update</b> — change the number (same source). <b style="color:#FAFAFA">Replace</b> — change the number <i>and</i> swap to the source that now states it. <b style="color:#FAFAFA">Review later</b> — flag it for a manual look, nothing changes. <b style="color:#e0a0ac">Remove</b> — delete the figure (asks you to confirm). <b style="color:#FAFAFA">Keep</b> — leave it exactly as-is. Every change writes a changelog entry + fresh date.</div>
+    <div style="font:400 14px/1.55 -apple-system,Arial;color:#b8b8c0;margin-bottom:20px">Each figure was re-checked against a live web search. <b style="color:#34d399">Same-source, high-confidence updates within a sane range are applied automatically</b> — listed first, each with a one-tap Revert. Everything else needs your call: <b style="color:#FAFAFA">Update</b> (same source) · <b style="color:#FAFAFA">Replace</b> (number <i>and</i> source) · <b style="color:#FAFAFA">Review later</b> (flag, no change) · <b style="color:#e0a0ac">Remove</b> (delete, with confirm) · <b style="color:#FAFAFA">Keep</b> (leave as-is). Every change writes a changelog entry + fresh date.</div>
+    ${autosHtml}
+    ${pendingHeader}
     ${cards}
-    <div style="font:400 11px/1.5 -apple-system,Arial;color:#52525a;margin-top:8px">Buttons are single-use, signed, and expire in 14 days. Nothing publishes until you tap an action — and a figure is only ever removed by the explicit two-tap Remove.</div>
+    <div style="font:400 11px/1.5 -apple-system,Arial;color:#52525a;margin-top:8px">Buttons are single-use, signed, and expire in 14 days. Auto-updates only ever touch a same-source number; Replace, Remove, and any unusual change always wait for you — and a figure is only removed by the explicit two-tap Remove.</div>
   </div></div>`;
 }
 async function sendEmail(proposals) {
   const html = emailHtml(proposals);
+  const autos = proposals.filter((p) => p.autoApplied).length;
+  const pending = proposals.length - autos;
+  const subject = autos && pending ? `Sqwod Intelligence — ${autos} auto-updated, ${pending} to review`
+    : autos ? `Sqwod Intelligence — ${autos} figure(s) auto-updated`
+    : `Sqwod Intelligence — ${pending} figure(s) to review`;
   if (!RESEND || !REVIEWER) {
-    console.log(`\n[dry-run] would email ${REVIEWER || '(no INTEL_REVIEWER_EMAIL)'} — ${proposals.length} proposal(s). Approve links:`);
-    proposals.forEach((p) => console.log(`  · ${p.label}: ${p.approve}`));
+    console.log(`\n[dry-run] would email ${REVIEWER || '(no INTEL_REVIEWER_EMAIL)'} — ${autos} auto-applied, ${pending} pending. Links:`);
+    proposals.forEach((p) => console.log(`  · ${p.label}: ${p.autoApplied ? `[revert] ${p.revert}` : `[approve] ${p.approve}`}`));
     return;
   }
   const r = await fetch('https://api.resend.com/emails', {
     method: 'POST', headers: { authorization: `Bearer ${RESEND}`, 'content-type': 'application/json' },
-    body: JSON.stringify({ from: FROM, to: REVIEWER, subject: `Sqwod Intelligence — ${proposals.length} figure(s) to review`, html }),
+    body: JSON.stringify({ from: FROM, to: REVIEWER, subject, html }),
   });
   console.log(r.ok ? `✓ emailed ${proposals.length} proposal(s) to ${REVIEWER}` : `! email failed (${r.status}): ${(await r.text()).slice(0, 160)}`);
 }
@@ -235,6 +273,26 @@ function removeFigure(slug, index, note) {
   }
 }
 
+// ---- auto-apply eligibility (conservative; integrity is the priority) -----
+// Auto-publish ONLY a same-source value update we can trust: high confidence,
+// sourced (url + snippet), identical units/format, a single number (no ranges),
+// and a sane magnitude (0.5×–2×). Anything else falls back to a human tap.
+const numGroups = (s) => String(s).match(/\d[\d.,]*/g) || [];
+const shapeOf = (s) => String(s).replace(/\d[\d.,]*/g, '#');
+const parseNum = (s) => parseFloat(String(s).replace(/,/g, ''));
+function autoEligible(fig, c) {
+  if (!AUTO) return false;
+  if (c.kind !== 'changed' || c.changeType !== 'update' || c.confidence !== 'high') return false;
+  if (!c.foundUrl || !c.snippet) return false;
+  const og = numGroups(fig.value), ng = numGroups(c.value);
+  if (og.length !== 1 || ng.length !== 1) return false;          // ranges / multi-number → human
+  if (shapeOf(fig.value) !== shapeOf(c.value)) return false;     // units/format must match exactly
+  const a = parseNum(og[0]), b = parseNum(ng[0]);
+  if (!isFinite(a) || !isFinite(b) || a <= 0 || b <= 0) return false;
+  const r = b / a;
+  return r >= 0.5 && r <= 2;                                     // wild swing → human (guards bad parses/units)
+}
+
 // ---- SCAN ----------------------------------------------------------------
 async function scan() {
   const reg = JSON.parse(readFileSync(REGISTRY, 'utf8'));
@@ -260,6 +318,7 @@ async function scan() {
         : replace
           ? `${foundWhere} now states this — different from your cited ${fig.sourceLabel || 'source'}. Replace swaps both the number and the citation.`
           : `${foundWhere} updated its number. Confirm the snippet, then Update.`;
+      const auto = autoEligible(fig, c);
       const prop = {
         id, report: slug, index: fig.index, label: fig.label,
         oldValue: fig.value, newValue: changed ? c.value : null,
@@ -269,8 +328,24 @@ async function scan() {
         foundSource: c.foundSource || '', foundUrl: c.foundUrl || '', foundDomain: c.foundDomain || '', foundYear: c.year || '',
         sourceUrl: fig.sourceUrl, snippet: c.snippet, confidence: c.confidence, kind: c.kind,
         reliability, recommendation,
-        status: 'pending', createdAt: today,
+        status: auto ? 'auto-applied' : 'pending', autoApplied: auto, createdAt: today,
       };
+
+      if (auto) {
+        // Publish now (same source, high confidence, sourced, sane magnitude).
+        const note = {
+          en: `Auto-updated "${fig.label}" ${fig.value} → ${c.value} from ${c.foundSource || fig.sourceLabel || 'source'} (same source, high confidence). Revert from the email if wrong.`,
+          de: `"${fig.label}" automatisch aktualisiert: ${deValue(fig.value)} → ${deValue(c.value)} laut ${c.foundSource || fig.sourceLabel || 'Quelle'} (gleiche Quelle, hohe Konfidenz). Bei Bedarf per E-Mail zurücksetzen.`,
+        };
+        applyFigure(slug, fig.index, { value: c.value }, note);
+        fig.value = c.value; // registry sync (persisted after the loop)
+        prop.appliedAt = today; prop.decidedAt = today;
+        writeFileSync(join(QUEUE, `${id}.json`), JSON.stringify(prop, null, 2));
+        proposals.push({ ...prop, revert: signedLink(id, 'revert') });
+        console.log(`⚡ auto-applied ${id}: ${prop.oldValue} → ${c.value} (revert link emailed)`);
+        continue;
+      }
+
       writeFileSync(join(QUEUE, `${id}.json`), JSON.stringify(prop, null, 2));
       proposals.push({
         ...prop,
@@ -342,6 +417,21 @@ function apply() {
       }
       p.status = 'applied'; p.appliedAt = today; writeFileSync(path, JSON.stringify(p, null, 2));
       applied++; console.log(`✓ removed ${p.id}: ${p.label}`);
+
+    // Revert — undo an auto-applied update, back to the prior value + source
+    } else if (p.status === 'revert-requested') {
+      const fields = { value: p.oldValue };
+      if (p.changeType === 'replace') { if (p.currentSource) fields.source = p.currentSource; if (p.currentSourceUrl) fields.url = p.currentSourceUrl; }
+      const note = {
+        en: `Reverted "${p.label}" ${p.newValue} → ${p.oldValue} — auto-update undone by hand.`,
+        de: `"${p.label}" zurückgesetzt: ${deValue(p.newValue)} → ${deValue(p.oldValue)} — automatische Aktualisierung manuell rückgängig gemacht.`,
+      };
+      applyFigure(p.report, p.index, fields, note);
+      const reg = readReg();
+      const fig = reg.reports[p.report]?.figures.find((x) => x.index === p.index);
+      if (fig) { fig.value = p.oldValue; if (p.changeType === 'replace' && p.currentSource) { fig.sourceLabel = p.currentSource; fig.sourceUrl = p.currentSourceUrl; } writeReg(reg); }
+      p.status = 'reverted'; p.appliedAt = today; writeFileSync(path, JSON.stringify(p, null, 2));
+      applied++; console.log(`✓ reverted ${p.id}: ${p.newValue} → ${p.oldValue}`);
 
     // Keep / dismiss — figure untouched
     } else if (p.status === 'rejected') {
