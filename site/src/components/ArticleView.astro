@@ -3,6 +3,7 @@ import { type Lang } from '../i18n/ui';
 import { pillarMeta, type Pillar } from '../i18n/pillars';
 import ArticleHero from './ArticleHero.astro';
 import ShareBar from './ShareBar.astro';
+import BenchmarkWidget from './BenchmarkWidget.astro';
 import { SUBSCRIBE } from '../config/subscribe';
 import type { CollectionEntry } from 'astro:content';
 interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string }
@@ -81,6 +82,8 @@ const TX = lang === 'de'
     </div>
   </section>
 )}
+
+{d.benchmark && <BenchmarkWidget lang={lang} benchmark={d.benchmark} />}
 
 {d.series && d.series.points.length > 1 && (() => {
   const s = d.series;

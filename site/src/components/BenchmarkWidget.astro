@@ -1,0 +1,106 @@
+---
+// "Where do you stand" — reader enters their own number and sees which sourced
+// band they land in vs. the industry anchor. Bands/median are real, cited data
+// (passed in frontmatter); nothing is invented. Interactivity is client-side.
+import { type Lang } from '../i18n/ui';
+interface Band { to: number; label: string }
+interface Benchmark {
+  label: string; unit?: string; prompt?: string; betterIsHigh?: boolean;
+  min?: number; max?: number; median?: number; medianLabel?: string; bands: Band[]; source?: string;
+}
+interface Props { lang: Lang; benchmark: Benchmark }
+const { lang, benchmark: b } = Astro.props;
+const min = b.min ?? 0, max = b.max ?? 100;
+const span = Math.max(1, max - min);
+const pct = (v: number) => Math.max(0, Math.min(100, ((v - min) / span) * 100));
+const bands = [...b.bands].sort((x, y) => x.to - y.to);
+// segment widths from each band's lower edge to its `to`
+let prev = min;
+const segs = bands.map((bd, i) => { const w = pct(bd.to) - pct(prev); const left = pct(prev); prev = bd.to; return { ...bd, w, left, i }; });
+const T = lang === 'de'
+  ? { head: 'Wo stehst du?', cta: 'Vergleichen', ph: 'Deine Zahl', avg: 'Branchenschnitt', you: 'Du', above: 'über', below: 'unter', pts: 'Punkte', src: 'Quelle' }
+  : { head: 'Where do you stand?', cta: 'Compare', ph: 'Your number', avg: 'industry avg', you: 'You', above: 'above', below: 'below', pts: 'pts', src: 'Source' };
+const data = { min, max, median: b.median ?? null, betterIsHigh: b.betterIsHigh !== false, unit: b.unit ?? '', bands: segs.map((s) => ({ to: s.to, label: s.label })), L: T };
+---
+<section class="block bm">
+  <p class="kick">◎ {T.head}</p>
+  {b.prompt && <p class="sub" style="margin:2px 0 12px">{b.prompt}</p>}
+
+  <div class="bm-row">
+    <label class="bm-label" for="bmIn">{b.label}{b.unit ? ` (${b.unit})` : ''}</label>
+    <div class="bm-input"><input id="bmIn" type="number" inputmode="decimal" placeholder={T.ph} step="any" />{b.unit && <span class="bm-unit">{b.unit}</span>}</div>
+  </div>
+
+  <div class="bm-track" id="bmTrack">
+    {segs.map((s) => (
+      <div class="bm-seg" style={`width:${s.w}%`} data-to={s.to}>
+        <span class="bm-seg-l">{s.label}</span>
+      </div>
+    ))}
+    {b.median != null && (
+      <div class="bm-median" style={`left:${pct(b.median)}%`}>
+        <span class="bm-median-l">{b.medianLabel ?? T.avg}: {b.median}{b.unit}</span>
+      </div>
+    )}
+    <div class="bm-you" id="bmYou" hidden><span class="bm-you-bub" id="bmYouBub"></span></div>
+  </div>
+
+  <p class="bm-result" id="bmResult" hidden></p>
+  {b.source && <p class="src-note" style="margin-top:10px">{T.src}: {b.source}</p>}
+</section>
+
+<style>
+  .bm-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:16px}
+  .bm-label{font-size:13.5px;color:var(--g1);font-weight:600}
+  .bm-input{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:2px 10px}
+  .bm-input input{width:110px;background:transparent;border:0;color:var(--chalk);font:inherit;font-size:16px;padding:8px 0}
+  .bm-input input:focus{outline:none}
+  .bm-unit{color:var(--g4);font-size:13px}
+  .bm-track{position:relative;display:flex;height:46px;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin-top:30px}
+  .bm-seg{position:relative;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--bg);background:var(--panel)}
+  .bm-seg:last-child{border-right:0}
+  .bm-seg:nth-child(1){background:rgba(248,113,113,.16)}
+  .bm-seg:nth-child(2){background:rgba(251,191,36,.14)}
+  .bm-seg:nth-child(3){background:rgba(74,222,128,.12)}
+  .bm-seg:nth-child(4){background:rgba(74,222,128,.20)}
+  .bm-seg:nth-child(5){background:rgba(74,222,128,.30)}
+  .bm-seg-l{font-size:11px;font-weight:700;letter-spacing:.01em;color:var(--g1);text-align:center;padding:0 6px;line-height:1.25}
+  .bm-median{position:absolute;top:-1px;bottom:-1px;width:0;border-left:2px dashed var(--g3);z-index:2}
+  .bm-median-l{position:absolute;top:-24px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:10.5px;color:var(--g3);font-family:ui-monospace,Menlo,monospace}
+  .bm-you{position:absolute;top:0;bottom:0;width:0;border-left:2px solid var(--chalk);z-index:3;transition:left .35s cubic-bezier(.2,.8,.2,1)}
+  .bm-you-bub{position:absolute;top:-30px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--chalk);color:var(--ink);font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;font-family:ui-monospace,Menlo,monospace}
+  .bm-you-bub::after{content:"";position:absolute;left:50%;bottom:-4px;transform:translateX(-50%);border:4px solid transparent;border-top-color:var(--chalk)}
+  .bm-result{margin-top:16px;font-size:15px;line-height:1.5;color:var(--g1)}
+  .bm-result b{color:var(--chalk)}
+  .bm-result .up{color:#4ade80;font-weight:700}.bm-result .dn{color:#f87171;font-weight:700}
+</style>
+
+<script define:vars={{ data }}>
+  (function () {
+    const inp = document.getElementById('bmIn');
+    const track = document.getElementById('bmTrack');
+    const you = document.getElementById('bmYou'), bub = document.getElementById('bmYouBub'), res = document.getElementById('bmResult');
+    if (!inp || !track) return;
+    const { min, max, median, betterIsHigh, unit, bands, L } = data;
+    const clamp = (v) => Math.max(min, Math.min(max, v));
+    const update = () => {
+      const raw = parseFloat(inp.value);
+      if (!isFinite(raw)) { you.hidden = true; res.hidden = true; return; }
+      const v = clamp(raw);
+      const left = ((v - min) / Math.max(1, max - min)) * 100;
+      you.style.left = left + '%'; bub.textContent = `${L.you}: ${raw}${unit}`; you.hidden = false;
+      // which band?
+      let band = bands[bands.length - 1].label;
+      for (const b of bands) { if (v <= b.to) { band = b.label; break; } }
+      let html = `${L.you}: <b>${raw}${unit}</b> — <b>${band}</b>.`;
+      if (median != null) {
+        const diff = Math.round((raw - median) * 10) / 10;
+        const good = betterIsHigh ? diff >= 0 : diff <= 0;
+        const dir = diff >= 0 ? L.above : L.below;
+        html += ` ${Math.abs(diff)} ${L.pts} <span class="${good ? 'up' : 'dn'}">${dir}</span> the ${median}${unit} ${L.avg}.`;
+      }
+      res.innerHTML = html; res.hidden = false;
+    };
+    inp.addEventListener('input', update);
+  })();
+</script>
