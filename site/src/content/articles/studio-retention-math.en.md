@@ -18,6 +18,10 @@ sources:
   - { label: "Smart Health Clubs — 100 gym retention statistics (2025)", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
   - { label: "Glofox — The guide to reducing churn", url: "https://www.glofox.com/blog/reducing-churn/" }
   - { label: "CloudGym — Member retention for boutique studios", url: "https://www.cloudgymmanager.com/member-retention-for-boutique-fitness-studios-stop-the-30-annual-churn/" }
+figures:
+  - { label: "Monthly member churn", value: "4–8%", note: "boutique average; top studios hold 2–3%", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
+  - { label: "Quit within 90 days", value: "~50%", note: "of new members — the onboarding window decides retention", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
+  - { label: "Cost to acquire vs retain", value: "5–7×", note: "more expensive to win a member than to keep one", source: "Glofox", url: "https://www.glofox.com/blog/reducing-churn/" }
 hero:
   kind: line
   stat: "4–8%"

@@ -195,4 +195,26 @@ const press = defineCollection({
   }),
 });
 
-export const collections = { reviews, articles, daily, press };
+// Corrections & Clarifications — the public "retractions" ledger, one entry per
+// language. Filed by automation/corrections.mjs (by hand, or by the Intelligence
+// refresh when it corrects an error) and rendered at /[lang]/corrections.
+// A correction = we published something WRONG; a clarification = we sharpened a
+// loosely-worded claim. Either way it's logged in public and emailed to the desk.
+const corrections = defineCollection({
+  type: 'content',
+  schema: z.object({
+    lang,
+    date: z.coerce.date(),
+    report: z.string(),               // slug of the corrected article/report
+    reportTitle: z.string(),
+    reportUrl: z.string(),
+    kind: z.enum(['correction', 'clarification']).default('correction'),
+    was: z.string(),                  // what we previously published
+    now: z.string(),                  // what it says now
+    reason: z.string(),               // why the original was wrong/loose
+    source: z.string().optional(),    // named source for the corrected figure
+    sourceUrl: z.string().optional(),
+  }),
+});
+
+export const collections = { reviews, articles, daily, press, corrections };

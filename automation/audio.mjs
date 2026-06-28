@@ -11,10 +11,17 @@
  * audio synthesis and still rebuilds the feeds from whatever MP3s exist
  * (dry-run safe — never crashes the pipeline).
  *
+ * Voices are version-controlled below (VOICE_EN / VOICE_DE) so the accent is
+ * visible and reviewable — not buried in a secret. The EN edition is read by a
+ * named AMERICAN voice; the DE edition by a German-reading voice. The env vars
+ * still override per language IF set — so to use the repo voices, CLEAR the
+ * ELEVENLABS_VOICE_EN / ELEVENLABS_VOICE_DE secrets (a stale British voice id in
+ * ELEVENLABS_VOICE_EN was why the EN Daily had an English accent).
+ *
  * Env:
  *   ELEVENLABS_API_KEY     enable synthesis
- *   ELEVENLABS_VOICE_EN    voice id for English  (default: multilingual voice)
- *   ELEVENLABS_VOICE_DE    voice id for German   (default: same multilingual voice)
+ *   ELEVENLABS_VOICE_EN    optional override for English (else uses VOICE_EN below)
+ *   ELEVENLABS_VOICE_DE    optional override for German  (else uses VOICE_DE below)
  *   SITE_URL               public base, default https://sqwod.life
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs';
@@ -29,9 +36,15 @@ const PUBLIC = join(__dirname, '..', 'site', 'public');
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 const SITE = (process.env.SITE_URL || 'https://sqwod.life').replace(/\/$/, '');
 const KEY = process.env.ELEVENLABS_API_KEY || '';
-// ElevenLabs "multilingual v2" reads EN + DE from one voice; override per language if you like.
-const DEFAULT_VOICE = '21m00Tcm4TlvDq8ikWAM'; // Rachel — multilingual
-const VOICE = { en: process.env.ELEVENLABS_VOICE_EN || DEFAULT_VOICE, de: process.env.ELEVENLABS_VOICE_DE || DEFAULT_VOICE };
+// --- Version-controlled Daily voices (rendered by eleven_multilingual_v2) ---
+// EN: 'Adam' is an ElevenLabs premade voice (on every account). DE: 'Helmut' is a
+// native-German Voice-Library voice — it must be saved in the account behind
+// ELEVENLABS_API_KEY (it is). NOTE: env vars still win if set, so once these are
+// correct you can clear ELEVENLABS_VOICE_EN/DE to make the repo the source of truth.
+const VOICE_EN = 'pNInz6obpgDQGcFmaJgB'; // Adam — American male (dark, confident)
+const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1'; // Helmut — native German
+const VOICE = { en: process.env.ELEVENLABS_VOICE_EN || VOICE_EN, de: process.env.ELEVENLABS_VOICE_DE || VOICE_DE };
+if (KEY) console.log(`· Daily voices — EN: ${VOICE.en}${process.env.ELEVENLABS_VOICE_EN ? ' (env override)' : ' (repo)'} · DE: ${VOICE.de}${process.env.ELEVENLABS_VOICE_DE ? ' (env override)' : ' (repo)'}`);
 
 const SHOW = {
   en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
