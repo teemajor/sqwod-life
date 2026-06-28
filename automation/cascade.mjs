@@ -39,7 +39,9 @@ const MODEL = process.env.SQWOD_MODEL || 'claude-sonnet-4-6';
 
 // ---- load sources -------------------------------------------------------
 function loadSources() {
-  const files = readdirSync(SOURCES_DIR).filter((f) => f.endsWith('.json'));
+  // Only date-named source files (YYYY-MM-DD.json) — never stray config/registry
+  // JSON that happens to live alongside them.
+  const files = readdirSync(SOURCES_DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
   const byDate = {};
   for (const f of files) {
     const date = f.replace('.json', '');
@@ -108,6 +110,7 @@ ${list}
 
 Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, deals, or statistics. Only use figures that appear verbatim above. If a section has no real basis, return null (or []) for it — do not fabricate.
 {
+ "summary":"<=60 chars; ONE punchy episode title for the list, homepage & search results — the single most interesting thread of the day, NOT a dump of every headline. A real title, not a sentence with semicolons.",
  "connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
  "connectBody":"two short paragraphs separated by \\n; teach the pattern and why it matters to an operator; specific, witty, no fluff",
  "doThis":"one concrete action the reader can take this week",
@@ -250,6 +253,7 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
     `date: ${q(date)}`,
     `edition: ${q('Weekday')}`,
     `title: ${q('Sqwod Daily')}`,
+    `summary: ${q((sections && sections.summary) || (items[0] && items[0].headline) || 'Sqwod Daily')}`,
     `status: ${q(issueStatus)}`,
     `intro: ${q(lang === 'de'
       ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
@@ -337,6 +341,10 @@ async function run() {
     let sections = buildSections(lead, lang);     // model output + affiliate rec + Play (even in dry-run)
     const v = await verifyIssue(items, sections, sources, lang);  // fact-check vs source facts
     sections = v.sections;
+    // One-line episode title for the list / homepage / search snippet. Prefer the
+    // model's purpose-built summary, fall back to the day's through-line, then the
+    // lead headline — never the headline-dump that made list titles run on.
+    sections.summary = (lead && lead.summary) || sections.connectTitle || (items[0] && items[0].headline) || 'Sqwod Daily';
     const blocking = v.blocking || [];
     const issueStatus = blocking.length ? 'review' : status;      // only UN-remediable flags hold for human
     if (v.issues.length) {

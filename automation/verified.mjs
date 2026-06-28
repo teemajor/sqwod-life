@@ -9,7 +9,7 @@
  *
  * What it does, per review (EN + DE, kept in parity):
  *   - upserts a Trustpilot chip into `crowd.sources` from the registry
- *     (automation/sources/verified-sources.json):
+ *     (automation/verified-sources.json):
  *       · chip already present → refresh its TrustScore + link
  *       · chip missing         → insert it, count the new platform, and add
  *         its review volume to the crowd total (done once; idempotent after)
@@ -36,7 +36,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const REGISTRY = join(__dirname, 'sources', 'verified-sources.json');
+const REGISTRY = join(__dirname, 'verified-sources.json');
 const REVIEWS_DIR = join(__dirname, '..', 'site', 'src', 'content', 'reviews');
 const LANGS = ['en', 'de'];
 

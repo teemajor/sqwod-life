@@ -26,7 +26,7 @@ jobs:
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
-          git add site/src/content/reviews automation/sources/verified-sources.json
+          git add site/src/content/reviews automation/verified-sources.json
           if git diff --staged --quiet; then
             echo "No crowd changes today."
           else
