@@ -5,10 +5,15 @@
   "label": "Smart-ring shipment growth, 2024",
   "oldValue": "+88%",
   "newValue": null,
+  "currentSource": "Grand View Research",
+  "checkedUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
+  "checkedDomain": "grandviewresearch.com",
   "sourceUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
   "snippet": "(couldn't fetch source: HTTP 403)",
   "confidence": "n/a",
   "kind": "review-due",
+  "reliability": "Could not read the source automatically — verify by hand.",
+  "recommendation": "Reminder to check grandviewresearch.com yourself; your current figure stays either way.",
   "status": "pending",
   "createdAt": "2026-06-28"
 }
