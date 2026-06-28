@@ -1,7 +1,9 @@
 name: Intelligence refresh — scan
 
-# Weekly: check figures that are due, draft proposals, and email you Approve/Reject
-# buttons. Nothing is published here — approval happens in the email.
+# Weekly: web-search-check figures that are due. Same-source, high-confidence
+# updates auto-apply (--auto) and are emailed with a Revert; everything else is
+# drafted as a proposal and emailed for your tap. Set repo var INTEL_AUTO_APPLY
+# to "false" to turn the auto-apply tier off.
 
 on:
   workflow_dispatch:
@@ -33,13 +35,14 @@ jobs:
           INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
           INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
           INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
-        run: node automation/intelligence-refresh.mjs --scan ${{ inputs.force && '--force' || '' }} --date=$(date +%F)
+          INTEL_AUTO_APPLY: ${{ vars.INTEL_AUTO_APPLY }}   # set to "false" to disable the auto-apply tier
+        run: node automation/intelligence-refresh.mjs --scan --auto ${{ inputs.force && '--force' || '' }} --date=$(date +%F)
 
-      - name: Commit proposals + lastChecked (if any)
+      - name: Commit proposals, auto-applied edits + lastChecked (if any)
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
-          git add automation/intel-queue automation/intel-sources.json
+          git add automation/intel-queue automation/intel-sources.json site/src/content/articles
           if git diff --staged --quiet; then
             echo "No proposals this scan."
           else
