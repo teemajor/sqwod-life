@@ -109,16 +109,27 @@ const summary = (line) => { try { if (process.env.GITHUB_STEP_SUMMARY) writeFile
 // Turns a silent green run into a clear, actionable error.
 async function preflight(langs) {
   if (!KEY) { ghError('ELEVENLABS_API_KEY is empty in this job. Check the secret name/scope (repo Settings → Secrets → Actions → ELEVENLABS_API_KEY).'); return false; }
-  // Validate the key against the account.
+  // Validate the key against the account. A least-privilege key scoped to only
+  // Text-to-Speech legitimately lacks `user_read`/`voices_read` — that must NOT
+  // block synthesis. Only a genuinely invalid/expired key (a non-permission 401,
+  // or 403) should hard-fail here; "missing_permissions" means the key is fine,
+  // just narrowly scoped, so we proceed and let synth be the real test.
   const who = await fetch('https://api.elevenlabs.io/v1/user', { headers: { 'xi-api-key': KEY } });
-  if (!who.ok) { ghError(`ElevenLabs key rejected (${who.status}). ${(await who.text()).slice(0, 160)}`); return false; }
-  // Validate each voice id we'll use.
+  if (!who.ok) {
+    const body = await who.text();
+    if (!(who.status === 401 && /missing_permissions/.test(body))) {
+      ghError(`ElevenLabs key rejected (${who.status}). ${body.slice(0, 160)}`); return false;
+    }
+    console.log('· ElevenLabs key is scoped to TTS only (no user_read) — skipping account probe, proceeding.');
+  }
+  // Validate each voice id we'll use; tolerate a permission-scoped key (verify at synth).
   let ok = true;
   for (const lang of langs) {
     const id = VOICE[lang];
     const v = await fetch(`https://api.elevenlabs.io/v1/voices/${id}`, { headers: { 'xi-api-key': KEY } });
-    if (!v.ok) { ghError(`Voice id for ${lang.toUpperCase()} ("${id}") is invalid (${v.status}). Check ELEVENLABS_VOICE_${lang.toUpperCase()}.`); ok = false; }
-    else { const j = await v.json().catch(() => ({})); console.log(`· voice ${lang}: "${j.name || id}" ✓`); }
+    if (v.ok) { const j = await v.json().catch(() => ({})); console.log(`· voice ${lang}: "${j.name || id}" ✓`); }
+    else if (v.status === 401) { console.log(`· voice ${lang}: scoped key — skipping voice probe, will verify at synth.`); }
+    else { ghError(`Voice id for ${lang.toUpperCase()} ("${id}") is invalid (${v.status}). Check ELEVENLABS_VOICE_${lang.toUpperCase()}.`); ok = false; }
   }
   return ok;
 }

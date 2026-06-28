@@ -89,8 +89,24 @@ const articles = defineCollection({
     sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]), // rendered citations
     asOf: z.string().optional(),               // "as of" date for data-heavy pieces
     // Living-report extras (Sqwod Intelligence):
+    takeaways: z.array(z.string()).default([]),   // TL;DR — the scannable, citable punchlines up top
     figures: z.array(z.object({ label: z.string(), value: z.string(), note: z.string().optional(), source: z.string().optional() })).default([]),
-    series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional() }).optional(),
+    // series.low/high are OPTIONAL estimate bands (firms disagree) — only render when present; never fabricated.
+    series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional(), low: z.array(z.number()).optional(), high: z.array(z.number()).optional() }).optional(),
+    playbook: z.array(z.object({ move: z.string(), why: z.string() })).default([]),  // "what this means for you" — operator actions
+    // "Where do you stand" benchmark — reader compares their own number vs. sourced bands. Real data only.
+    benchmark: z.object({
+      label: z.string(),
+      unit: z.string().default('%'),
+      prompt: z.string().optional(),
+      betterIsHigh: z.boolean().default(true),
+      min: z.number().default(0),
+      max: z.number().default(100),
+      median: z.number().optional(),
+      medianLabel: z.string().optional(),
+      bands: z.array(z.object({ to: z.number(), label: z.string() })),
+      source: z.string().optional(),
+    }).optional(),
     changelog: z.array(z.object({ date: z.string(), note: z.string() })).default([]),
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({

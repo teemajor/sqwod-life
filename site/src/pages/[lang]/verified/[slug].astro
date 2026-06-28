@@ -58,7 +58,7 @@ const jsonLd = {
   },
 };
 ---
-<Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified">
+<Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified" ogType="article" image={d.asset.images[0] ?? '/podcast-cover.png'}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="crumb">Verified / {d.category}</div>
   <span class="verified-tag">◈ Sqwod Verified</span>

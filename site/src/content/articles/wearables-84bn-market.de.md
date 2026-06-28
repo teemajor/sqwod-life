@@ -12,6 +12,15 @@ publishedAt: 2026-06-12
 updatedAt: 2026-06-21
 asOf: Juni 2026
 author: "Sqwod Intelligence"
+takeaways:
+  - "Der Markt liegt bei ~96 Mrd. $ und wächst ~8%/Jahr — aber die Stückzahlen flachen ab, während der Wert steigt."
+  - "Smartwatch-Umsatz verdreifacht sich fast: 23,7 Mrd. $ (2019) → 62,5 Mrd. $ (2028)."
+  - "Smart Rings sind die am schnellsten wachsende Kategorie — Auslieferungen 2024 um ~88% gestiegen."
+  - "Der Vorteil ist nicht die Hardware, sondern die Deutungshoheit über die Daten, die Kund:innen ohnehin erzeugen."
+playbook:
+  - { move: "Verkaufe Interpretation, nicht Geräte.", why: "Wenn Tracking allgegenwärtig ist, verschiebt sich die Frage von 'soll ich tracken?' zu 'was machen wir mit den Daten?' — genau da verdient Coaching sein Geld." }
+  - { move: "Recovery-Daten ins Onboarding aufnehmen.", why: "Wearables sind Mainstream; bring die Daten, die Kund:innen ohnehin sammeln, in deine Programmierung und Bindung." }
+  - { move: "Eine Abo-Stufe um die Daten herum bauen.", why: "Wert wandert von einmaliger Hardware zu wiederkehrender Software und Insight — spiegle das in deiner Preisgestaltung." }
 gated: true
 sourceIds: ["stat-wearables-market-2026", "statista-166600-digital-fitness"]
 sources:

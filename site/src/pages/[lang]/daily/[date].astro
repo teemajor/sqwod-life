@@ -70,7 +70,7 @@ const jsonLd: Record<string, unknown> = {
 };
 if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl: new URL(audioPath, Astro.site).toString(), encodingFormat: 'audio/mpeg' };
 ---
-<Base lang={lang} title={metaTitle} description={metaDesc}>
+<Base lang={lang} title={metaTitle} description={metaDesc} ogType="article" image="/podcast-cover.png">
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="crumb"><a href={`/${lang}/daily`}>Sqwod Daily</a> · {fmt}</div>
   <h1 style="margin:0 0 6px">Sqwod Daily</h1>

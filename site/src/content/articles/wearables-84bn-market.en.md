@@ -12,6 +12,15 @@ publishedAt: 2026-06-12
 updatedAt: 2026-06-21
 asOf: Jun 2026
 author: "Sqwod Intelligence"
+takeaways:
+  - "The market is ~$96bn and growing ~8%/yr — but unit shipments are flattening while value keeps climbing."
+  - "Smartwatch revenue is set to nearly triple: $23.7B (2019) → $62.5B (2028)."
+  - "Smart rings are the fastest-growing category — shipments up ~88% in 2024."
+  - "The edge isn't the hardware; it's owning the interpretation layer for data clients already generate."
+playbook:
+  - { move: "Sell interpretation, not devices.", why: "When tracking is ambient, the client question flips from 'should I track?' to 'what do we do with the data?' — that's where coaching earns its keep." }
+  - { move: "Add a recovery-data step to onboarding.", why: "Rings and wearables are mainstream now; capture the data clients already collect and feed it into programming and retention." }
+  - { move: "Build a subscription tier around the data.", why: "Value is migrating from one-time hardware to recurring software and insight — mirror that in your pricing." }
 gated: true
 sourceIds: ["stat-wearables-market-2026", "statista-166600-digital-fitness"]
 sources:
