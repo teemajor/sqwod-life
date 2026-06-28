@@ -5,15 +5,16 @@
   "label": "Global wearables market",
   "oldValue": "~$96bn",
   "newValue": "~$83.5bn",
-  "currentSource": "GMInsights · MarketsandMarkets",
+  "currentSource": "GMInsights Â· MarketsandMarkets",
   "checkedUrl": "https://www.gminsights.com/industry-analysis/wearables-market",
   "checkedDomain": "gminsights.com",
   "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market",
   "snippet": "The wearable market was estimated at USD 83.5 billion in 2025.",
   "confidence": "high",
   "kind": "changed",
-  "reliability": "Automated read of a single page — sanity-check the snippet.",
+  "reliability": "Automated read of a single page â sanity-check the snippet.",
   "recommendation": "Open gminsights.com and confirm the snippet. If your figure is a blend of several firms, keep it unless this one source should replace the blend.",
-  "status": "pending",
-  "createdAt": "2026-06-28"
+  "status": "approved",
+  "createdAt": "2026-06-28",
+  "decidedAt": "2026-06-28T15:25:51.618Z"
 }
