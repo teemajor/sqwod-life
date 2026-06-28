@@ -37,13 +37,12 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] 
 const SITE = (process.env.SITE_URL || 'https://sqwod.life').replace(/\/$/, '');
 const KEY = process.env.ELEVENLABS_API_KEY || '';
 // --- Version-controlled Daily voices (rendered by eleven_multilingual_v2) ---
-// EN: American male. DE: German read. Both are ElevenLabs premade voices, so
-// they're available to every account (no Voice-Library add needed).
-// NOTE: env vars still win if set — clear ELEVENLABS_VOICE_EN/DE to use these.
+// EN: 'Adam' is an ElevenLabs premade voice (on every account). DE: 'Helmut' is a
+// native-German Voice-Library voice — it must be saved in the account behind
+// ELEVENLABS_API_KEY (it is). NOTE: env vars still win if set, so once these are
+// correct you can clear ELEVENLABS_VOICE_EN/DE to make the repo the source of truth.
 const VOICE_EN = 'pNInz6obpgDQGcFmaJgB'; // Adam — American male (dark, confident)
-// DE: 'Antoni' reads German cleanly via multilingual v2. For a fully native-German
-// read, drop a German Voice-Library voice id into ELEVENLABS_VOICE_DE (or here).
-const VOICE_DE = 'ErXwobaYiN019PkySvjV'; // Antoni — multilingual (German read)
+const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1'; // Helmut — native German
 const VOICE = { en: process.env.ELEVENLABS_VOICE_EN || VOICE_EN, de: process.env.ELEVENLABS_VOICE_DE || VOICE_DE };
 if (KEY) console.log(`· Daily voices — EN: ${VOICE.en}${process.env.ELEVENLABS_VOICE_EN ? ' (env override)' : ' (repo)'} · DE: ${VOICE.de}${process.env.ELEVENLABS_VOICE_DE ? ' (env override)' : ' (repo)'}`);
 
