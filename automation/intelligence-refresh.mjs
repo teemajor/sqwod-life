@@ -87,25 +87,41 @@ async function extract(fig) {
 
 // ---- email (Resend transactional; log-only without a key) ----------------
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const row = (l, v) => `<div style="font:400 13px/1.6 -apple-system,Arial;color:#b8b8c0;margin:2px 0"><span style="color:#85858e">${l}:</span> ${v}</div>`;
 function emailHtml(proposals) {
-  const cards = proposals.map((p) => `
-    <table width="100%" style="border:1px solid #2a2a30;border-radius:12px;background:#161619;margin:0 0 16px"><tr><td style="padding:18px 20px">
-      <div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.12em;text-transform:uppercase;color:#85858e">${esc(p.report)} · ${esc(p.kind === 'changed' ? 'figure changed' : 'review due')}</div>
-      <div style="font:700 17px/1.4 -apple-system,Arial;color:#FAFAFA;margin:8px 0 4px">${esc(p.label)}</div>
-      <div style="font:600 22px/1.3 ui-monospace,Menlo,monospace;color:#FAFAFA;margin:6px 0">${esc(p.oldValue)} ${p.newValue ? `&rarr; <span style="color:#4ade80">${esc(p.newValue)}</span>` : '<span style="color:#85858e">&rarr; (please verify)</span>'}</div>
-      <div style="font:400 13px/1.5 -apple-system,Arial;color:#b8b8c0;margin:8px 0 4px">${esc(p.snippet)}</div>
-      <a href="${esc(p.sourceUrl)}" style="font:600 12px/1 -apple-system,Arial;color:#85858e">source &#8599;</a>
-      <div style="margin-top:16px">
-        <a href="${esc(p.approve)}" style="display:inline-block;background:#FAFAFA;color:#0e0e10;text-decoration:none;font:800 14px/1 -apple-system,Arial;padding:12px 20px;border-radius:9px;margin-right:8px">&#10003; Approve</a>
-        <a href="${esc(p.reject)}" style="display:inline-block;border:1px solid #2a2a30;color:#b8b8c0;text-decoration:none;font:700 14px/1 -apple-system,Arial;padding:12px 20px;border-radius:9px">&#10007; Reject</a>
-      </div>
-    </td></tr></table>`).join('');
-  return `<div style="background:#0e0e10;padding:28px 0"><div style="max-width:560px;margin:0 auto;padding:0 20px">
+  const cards = proposals.map((p) => {
+    const changed = p.kind === 'changed' && p.newValue;
+    const tag = changed ? 'A number changed — review' : 'Needs a manual look';
+    const cur = `${row('On sqwod.life now', `<b style="color:#FAFAFA">${esc(p.oldValue)}</b>`)}${row('Your cited source', esc(p.currentSource || '—'))}`;
+    const body = changed
+      ? `${cur}
+         ${row(`Checked ${esc(p.checkedDomain)}`, `<b style="color:#fbbf24">${esc(p.newValue)}</b>`)}
+         <div style="font:400 12.5px/1.55 -apple-system,Arial;color:#85858e;margin:8px 0;padding:8px 12px;border-left:2px solid #2a2a30">"${esc(p.snippet)}"</div>
+         ${row('Reliability', esc(p.reliability))}
+         ${row('Suggestion', `<span style="color:#ededf0">${esc(p.recommendation)}</span>`)}
+         <div style="margin-top:16px">
+           <a href="${esc(p.approve)}" style="display:inline-block;background:#FAFAFA;color:#0e0e10;text-decoration:none;font:800 14px/1 -apple-system,Arial;padding:12px 18px;border-radius:9px;margin:0 8px 8px 0">Update to ${esc(p.newValue)}</a>
+           <a href="${esc(p.reject)}" style="display:inline-block;border:1px solid #2a2a30;color:#b8b8c0;text-decoration:none;font:700 14px/1 -apple-system,Arial;padding:12px 18px;border-radius:9px">Keep ${esc(p.oldValue)}</a>
+         </div>`
+      : `${cur}
+         <div style="font:400 13px/1.55 -apple-system,Arial;color:#b8b8c0;margin:10px 0 2px">Couldn't read ${esc(p.checkedDomain)} automatically (${esc(p.snippet)}).</div>
+         <div style="font:400 13px/1.55 -apple-system,Arial;color:#b8b8c0;margin:2px 0">Your <b style="color:#FAFAFA">${esc(p.oldValue)}</b> stays unless you change it — this is just a reminder to check.</div>
+         <div style="margin-top:16px">
+           <a href="${esc(p.checkedUrl)}" style="display:inline-block;background:#FAFAFA;color:#0e0e10;text-decoration:none;font:800 14px/1 -apple-system,Arial;padding:12px 18px;border-radius:9px;margin:0 8px 8px 0">Open source &#8599;</a>
+           <a href="${esc(p.reject)}" style="display:inline-block;border:1px solid #2a2a30;color:#b8b8c0;text-decoration:none;font:700 14px/1 -apple-system,Arial;padding:12px 18px;border-radius:9px">Dismiss reminder</a>
+         </div>`;
+    return `<table width="100%" style="border:1px solid #2a2a30;border-radius:12px;background:#161619;margin:0 0 16px"><tr><td style="padding:18px 20px">
+      <div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.12em;text-transform:uppercase;color:${changed ? '#fbbf24' : '#85858e'}">${esc(p.report)} · ${tag}</div>
+      <div style="font:700 17px/1.4 -apple-system,Arial;color:#FAFAFA;margin:8px 0 10px">${esc(p.label)}</div>
+      ${body}
+    </td></tr></table>`;
+  }).join('');
+  return `<div style="background:#0e0e10;padding:28px 0"><div style="max-width:580px;margin:0 auto;padding:0 20px">
     <div style="font:800 22px/1 -apple-system,Arial;color:#FAFAFA;letter-spacing:-.02em;margin-bottom:4px">SQWOD<span style="color:#85858e">.life</span></div>
-    <div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.16em;text-transform:uppercase;color:#85858e;margin-bottom:20px">Intelligence · refresh proposals</div>
-    <div style="font:400 14px/1.5 -apple-system,Arial;color:#b8b8c0;margin-bottom:20px">${proposals.length} figure(s) due. Approve to update the report (changelog + date auto-logged); reject to discard. Nothing changes until you tap.</div>
+    <div style="font:700 11px/1 -apple-system,Arial;letter-spacing:.16em;text-transform:uppercase;color:#85858e;margin-bottom:18px">Intelligence · figures to review</div>
+    <div style="font:400 14px/1.55 -apple-system,Arial;color:#b8b8c0;margin-bottom:20px"><b style="color:#FAFAFA">Update</b> changes the number on your site (with a changelog entry + fresh date). <b style="color:#FAFAFA">Keep / Dismiss</b> leaves your figure exactly as it is — a figure is <b>never removed</b>. Always sanity-check the source before updating.</div>
     ${cards}
-    <div style="font:400 11px/1.5 -apple-system,Arial;color:#52525a;margin-top:8px">Buttons are single-use, signed, and expire in 14 days.</div>
+    <div style="font:400 11px/1.5 -apple-system,Arial;color:#52525a;margin-top:8px">Buttons are single-use, signed, and expire in 14 days. Nothing publishes until you tap Update.</div>
   </div></div>`;
 }
 async function sendEmail(proposals) {
@@ -156,10 +172,19 @@ async function scan() {
       fig.lastChecked = today;
       if (c.kind === 'unchanged') { console.log(`· ${slug}/${fig.label}: unchanged (${c.value}) — bumped lastChecked`); continue; }
       const id = `intel-${slug}-${fig.index}-${today}`;
+      let domain = fig.sourceUrl; try { domain = new URL(fig.sourceUrl).hostname.replace(/^www\./, ''); } catch {}
+      const reliability = c.kind !== 'changed'
+        ? 'Could not read the source automatically — verify by hand.'
+        : (c.confidence === 'high' ? 'Automated read of a single page — sanity-check the snippet.' : 'Low confidence — open the source and confirm before trusting.');
+      const recommendation = c.kind !== 'changed'
+        ? `Reminder to check ${domain} yourself; your current figure stays either way.`
+        : `Open ${domain} and confirm the snippet. If your figure is a blend of several firms, keep it unless this one source should replace the blend.`;
       const prop = {
         id, report: slug, index: fig.index, label: fig.label,
         oldValue: fig.value, newValue: c.kind === 'changed' ? c.value : null,
+        currentSource: fig.sourceLabel || '', checkedUrl: fig.sourceUrl, checkedDomain: domain,
         sourceUrl: fig.sourceUrl, snippet: c.snippet, confidence: c.confidence, kind: c.kind,
+        reliability, recommendation,
         status: 'pending', createdAt: today,
       };
       writeFileSync(join(QUEUE, `${id}.json`), JSON.stringify(prop, null, 2));
