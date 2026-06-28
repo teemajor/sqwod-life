@@ -1,0 +1,39 @@
+name: Intelligence refresh — apply
+
+# Applies the proposals you APPROVED (your email tap flips the queue status via the
+# Worker). Updates the figure in EN + DE, appends a changelog entry, bumps the date,
+# and pushes — which deploys. Runs on a cadence so an approval lands within a few
+# hours; also runnable on demand. No-op (no commit) when nothing is approved.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */4 * * *'     # every 4 hours
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Apply approved proposals
+        run: node automation/intelligence-refresh.mjs --apply --date=$(date +%F)
+
+      - name: Commit applied changes (if any)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add site/src/content/articles automation/intel-queue automation/intel-sources.json
+          if git diff --staged --quiet; then
+            echo "Nothing approved to apply."
+          else
+            git commit -m "intel: apply approved $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
