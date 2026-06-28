@@ -23,7 +23,7 @@ jobs:
       - name: Rewrite in Sqwod voice (EN + DE)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node automation/cascade.mjs --date=$(date +%F) --status=published   # auto-publish; verification pass holds flagged issues at "review"
+        run: node automation/cascade.mjs --date=$(date +%F) --status=published   # auto-publish; guardrail repairs/drops unverifiable items, then publishes — no human review
 
       - name: Voice it — TTS audio + podcast feeds (EN + DE)
         env:
