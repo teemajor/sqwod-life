@@ -5,6 +5,11 @@ name: Intelligence refresh — scan
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Scan ALL tracked figures now, ignoring cadence (test run)"
+        type: boolean
+        default: false
   schedule:
     - cron: '0 6 * * 1'        # Mondays ~08:00 Berlin
 
@@ -28,7 +33,7 @@ jobs:
           INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
           INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
           INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
-        run: node automation/intelligence-refresh.mjs --scan --date=$(date +%F)
+        run: node automation/intelligence-refresh.mjs --scan ${{ inputs.force && '--force' || '' }} --date=$(date +%F)
 
       - name: Commit proposals + lastChecked (if any)
         run: |
