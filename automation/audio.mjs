@@ -40,9 +40,10 @@ const KEY = process.env.ELEVENLABS_API_KEY || '';
 // native-German Voice-Library voice — it must be saved in the account behind
 // ELEVENLABS_API_KEY (it is). NOTE: env vars still win if set, so once these are
 // correct you can clear ELEVENLABS_VOICE_EN/DE to make the repo the source of truth.
-// Repo fallbacks (used only when the matching secret is unset). EN: Adam; DE: Helmut.
-const VOICE_EN = 'pNInz6obpgDQGcFmaJgB';
-const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1';
+// Repo fallbacks (used only when the matching secret is unset). EN: Adam (the
+// operator's chosen Adam — NOT ElevenLabs' generic pNInz... Adam); DE: Helmut.
+const VOICE_EN = 'IRHApOXLvnW57QJPQH2P'; // Adam — operator's chosen EN voice
+const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1'; // Helmut — native German
 // YOUR secret WINS. If ELEVENLABS_VOICE_EN/DE is set, that's the voice — full stop.
 // (We don't ignore it: the operator's chosen voice is authoritative. The repo
 // values above are only a fallback for when no secret is set.)
