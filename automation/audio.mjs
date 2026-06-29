@@ -11,17 +11,14 @@
  * audio synthesis and still rebuilds the feeds from whatever MP3s exist
  * (dry-run safe — never crashes the pipeline).
  *
- * Voices are version-controlled below (VOICE_EN / VOICE_DE) so the accent is
- * visible and reviewable — not buried in a secret. The EN edition is read by a
- * named AMERICAN voice; the DE edition by a German-reading voice. The env vars
- * still override per language IF set — so to use the repo voices, CLEAR the
- * ELEVENLABS_VOICE_EN / ELEVENLABS_VOICE_DE secrets (a stale British voice id in
- * ELEVENLABS_VOICE_EN was why the EN Daily had an English accent).
+ * Voices are version-controlled below (VOICE_EN / VOICE_DE) and are the SINGLE
+ * source of truth — env vars are intentionally NOT consulted. EN is a named
+ * AMERICAN voice; DE a German voice. (A stale ELEVENLABS_VOICE_EN secret holding
+ * a British voice used to override this — that failure mode is now gone. The
+ * ELEVENLABS_VOICE_EN/DE secrets can be deleted; they no longer affect anything.)
  *
  * Env:
  *   ELEVENLABS_API_KEY     enable synthesis
- *   ELEVENLABS_VOICE_EN    optional override for English (else uses VOICE_EN below)
- *   ELEVENLABS_VOICE_DE    optional override for German  (else uses VOICE_DE below)
  *   SITE_URL               public base, default https://sqwod.life
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs';
@@ -43,8 +40,12 @@ const KEY = process.env.ELEVENLABS_API_KEY || '';
 // correct you can clear ELEVENLABS_VOICE_EN/DE to make the repo the source of truth.
 const VOICE_EN = 'pNInz6obpgDQGcFmaJgB'; // Adam — American male (dark, confident)
 const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1'; // Helmut — native German
-const VOICE = { en: process.env.ELEVENLABS_VOICE_EN || VOICE_EN, de: process.env.ELEVENLABS_VOICE_DE || VOICE_DE };
-if (KEY) console.log(`· Daily voices — EN: ${VOICE.en}${process.env.ELEVENLABS_VOICE_EN ? ' (env override)' : ' (repo)'} · DE: ${VOICE.de}${process.env.ELEVENLABS_VOICE_DE ? ' (env override)' : ' (repo)'}`);
+// The repo is the SINGLE source of truth — env vars are intentionally NOT
+// consulted. (A stale ELEVENLABS_VOICE_EN secret held a British voice and kept
+// overriding this; ignoring env removes that whole failure mode. The secrets can
+// be deleted; they no longer affect anything.)
+const VOICE = { en: VOICE_EN, de: VOICE_DE };
+if (KEY) console.log(`· Daily voices (repo) — EN: ${VOICE.en} · DE: ${VOICE.de}`);
 
 const SHOW = {
   en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
