@@ -11,16 +11,14 @@
  * audio synthesis and still rebuilds the feeds from whatever MP3s exist
  * (dry-run safe — never crashes the pipeline).
  *
- * Voice selection: the ELEVENLABS_VOICE_EN / ELEVENLABS_VOICE_DE secrets WIN —
- * the operator's chosen voice is authoritative. VOICE_EN / VOICE_DE below are only
- * fallbacks used when the matching secret is unset. The synth log prints which
- * voice id was used and whether it came from the secret or the repo; the preflight
- * also prints the voice NAME when the API key is allowed to read voices.
+ * Voice selection: VOICE_EN / VOICE_DE below are the AUTHORITATIVE, version-
+ * controlled voices. The ELEVENLABS_VOICE_EN/DE secrets are NOT consulted and the
+ * workflows no longer pass them, so the chosen voice id prints UNMASKED in the log
+ * and can't be silently overridden by a hidden secret. To change a voice, edit the
+ * id here (visible in the diff + the run log).
  *
  * Env:
  *   ELEVENLABS_API_KEY     enable synthesis
- *   ELEVENLABS_VOICE_EN    your chosen English voice id (wins over the repo fallback)
- *   ELEVENLABS_VOICE_DE    your chosen German voice id (wins over the repo fallback)
  *   SITE_URL               public base, default https://sqwod.life
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs';
@@ -40,16 +38,14 @@ const KEY = process.env.ELEVENLABS_API_KEY || '';
 // native-German Voice-Library voice — it must be saved in the account behind
 // ELEVENLABS_API_KEY (it is). NOTE: env vars still win if set, so once these are
 // correct you can clear ELEVENLABS_VOICE_EN/DE to make the repo the source of truth.
-// Repo fallbacks (used only when the matching secret is unset). EN: Adam (the
-// operator's chosen Adam — NOT ElevenLabs' generic pNInz... Adam); DE: Helmut.
+// These repo values are AUTHORITATIVE and version-controlled — the source of truth.
+// The ELEVENLABS_VOICE_EN/DE secrets are intentionally NOT consulted, and the
+// workflows no longer inject them, so this id prints UNMASKED in the run log and
+// can never be silently overridden by a hidden secret again.
 const VOICE_EN = 'IRHApOXLvnW57QJPQH2P'; // Adam — operator's chosen EN voice
 const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1'; // Helmut — native German
-// YOUR secret WINS. If ELEVENLABS_VOICE_EN/DE is set, that's the voice — full stop.
-// (We don't ignore it: the operator's chosen voice is authoritative. The repo
-// values above are only a fallback for when no secret is set.)
-const VOICE = { en: process.env.ELEVENLABS_VOICE_EN || VOICE_EN, de: process.env.ELEVENLABS_VOICE_DE || VOICE_DE };
-const VSRC = { en: process.env.ELEVENLABS_VOICE_EN ? 'secret' : 'repo', de: process.env.ELEVENLABS_VOICE_DE ? 'secret' : 'repo' };
-if (KEY) console.log(`· Daily voices — EN: ${VOICE.en} (${VSRC.en}) · DE: ${VOICE.de} (${VSRC.de})`);
+const VOICE = { en: VOICE_EN, de: VOICE_DE };
+if (KEY) console.log(`· Daily voices (repo, authoritative) — EN: ${VOICE.en} · DE: ${VOICE.de}`);
 
 const SHOW = {
   en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },

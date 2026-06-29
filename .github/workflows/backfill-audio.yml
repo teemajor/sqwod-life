@@ -25,8 +25,8 @@ jobs:
       - name: Synthesize audio for each date (EN + DE)
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVENLABS_VOICE_EN: ${{ secrets.ELEVENLABS_VOICE_EN }}
-          ELEVENLABS_VOICE_DE: ${{ secrets.ELEVENLABS_VOICE_DE }}
+          # Voice ids are version-controlled in automation/audio.mjs (authoritative);
+          # we no longer inject the VOICE_EN/DE secrets so the id logs unmasked.
         run: |
           IFS=',' read -ra DS <<< "${{ inputs.dates }}"
           for d in "${DS[@]}"; do

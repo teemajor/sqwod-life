@@ -28,8 +28,8 @@ jobs:
       - name: Voice it — TTS audio + podcast feeds (EN + DE)
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVENLABS_VOICE_EN: ${{ secrets.ELEVENLABS_VOICE_EN }}
-          ELEVENLABS_VOICE_DE: ${{ secrets.ELEVENLABS_VOICE_DE }}
+          # Voice ids are version-controlled in automation/audio.mjs (authoritative);
+          # we no longer inject the VOICE_EN/DE secrets so the id logs unmasked.
         run: node automation/audio.mjs --date=$(date +%F)
 
       - name: Render the email (EN + DE, with sponsor slot)
