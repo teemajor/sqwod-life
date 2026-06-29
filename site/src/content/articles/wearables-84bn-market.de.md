@@ -30,7 +30,7 @@ sources:
   - { label: "Omdia — Smart Rings & das Health-/Fitness-Ökosystem (2025)", url: "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings" }
   - { label: "Grand View Research — Smart Rings Market", url: "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report" }
 figures:
-  - { label: "Globaler Wearables-Markt", value: "~$83,5bn", note: "2026 — von 83,5 Mrd. $ (2025); ~8% CAGR bis 2035", source: "GMInsights", url: "https://www.gminsights.com/industry-analysis/wearables-market" }
+  - { label: "Globaler Wearables-Markt", value: "91,1 Mrd. $", note: "2026 — von 83,5 Mrd. $ (2025); ~8% CAGR bis 2035", source: "GMInsights", url: "https://www.gminsights.com/industry-analysis/wearables-market" }
   - { label: "Weltweite Wearable-Auslieferungen", value: "612,5 Mio.", note: "Stück bis 2028 (IDC-Prognose) — von 537,9 Mio. (2024)", source: "IDC", url: "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories" }
   - { label: "Smartwatch-Umsatz", value: "40,6 Mrd. $", note: "bis 2029 — +~41% von 28,7 Mrd. $ (2024)", source: "Statista", url: "https://www.statista.com/forecasts/1314322/worldwide-revenue-of-smartwatch-market" }
   - { label: "Smart-Ring-Auslieferungen, 2024", value: "≈2×", note: "rund verdoppelt ggü. Vorjahr — am schnellsten wachsend", source: "Omdia", url: "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings" }
@@ -40,7 +40,7 @@ series:
   points: [537.9, 612.5]
   years: ["2024", "2028 (P)"]
 changelog:
-  - { date: "2026-06-28", note: "\"Global wearables market\" aktualisiert: ~$96bn → ~$83,5bn laut GMInsights Â· MarketsandMarkets (freigegeben)." }
+  - { date: "29 Juni 2026", note: "Korrektur: Ein Refresh hatte die 2026er-Topline kurzzeitig auf GMInsights' 2025er-Wert (83,5 Mrd. $) gesetzt. Auf den 2026er-Wert (91,1 Mrd. $) zurückgesetzt, den der restliche Report nennt." }
   - { date: "28 Juni 2026", note: "Integritäts-Pass: Markt-Topline auf GMInsights' 91,1 Mrd. $ (2026) korrigiert — die vorherigen ~96 Mrd. $ waren durch keine benannte Quelle belegt. Auslieferungen auf die IDC-Prognose (Sept. 2024: 612,5 Mio. bis 2028) aktualisiert und die Smartwatch-Umsatzzahl durch Statistas aktuelle Reihe ersetzt. Jede Zahl nennt jetzt eine Quelle." }
   - { date: "21 Juni 2026", note: "IDC-Auslieferungsprognose und Smart-Ring-Wachstum ergänzt." }
 hero:

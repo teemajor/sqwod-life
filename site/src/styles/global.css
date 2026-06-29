@@ -4,6 +4,9 @@
   --ink:#0e0e10; --chalk:#FAFAFA;
   --g1:#ededf0; --g2:#b8b8c0; --g3:#85858e; --g4:#52525a;
   --panel:#161619; --panel2:#1d1d21; --line:#2a2a30; --mark:var(--chalk);
+  --bg:#0e0e10;
+  /* signature accent — the one pop of colour on the monochrome canvas */
+  --accent:#C6FF3A; --accent-ink:#0e0e10; --accent-soft:rgba(198,255,58,.16); --accent-line:rgba(198,255,58,.45);
   --sans:"Helvetica Neue",Helvetica,Arial,"Inter",system-ui,sans-serif;
   --maxw:760px;
 }
