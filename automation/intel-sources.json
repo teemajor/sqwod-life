@@ -1,5 +1,5 @@
 {
-  "_doc": "Control surface for the human-in-the-loop Intelligence refresh (automation/intelligence-refresh.mjs). Every numeric figure we publish is tracked here with the SINGLE named source it's cited to. The scanner re-checks each on its cadence, drafts a proposal (current value + your source → new value + where it came from), emails you Approve/Reject, and applies only what you approve. `index` is the figure's 0-based position in the report's frontmatter `figures:` array. `value`/`sourceLabel` MUST match what's published. Qualitative or by-design-historical figures (e.g. 'first 90 days', the legacy 71.4%) are intentionally not tracked — there's nothing to diff.",
+  "_doc": "Control surface for the human-in-the-loop Intelligence refresh (automation/intelligence-refresh.mjs). Every numeric figure we publish is tracked here with the SINGLE named source it's cited to. The scanner re-checks each on its cadence, drafts a proposal (current value + your source → new value + where it came from), emails you Approve/Reject, and applies only what you approve. `index` is the figure's 0-based position in the report's frontmatter `figures:` array. `value`/`sourceLabel` MUST match what's published. Optional `period` pins the figure to an edition year (e.g. '2026'): the verifier must only return a value the source states for that year and will NOT substitute a different year's number — it flags a mismatch for review instead. Qualitative or by-design-historical figures (e.g. 'first 90 days', the legacy 71.4%) are intentionally not tracked — there's nothing to diff.",
   "reports": {
     "member-retention-benchmark": {
       "figures": [
@@ -9,6 +9,7 @@
           "value": "66.4%",
           "sourceLabel": "HFA 2025",
           "sourceUrl": "https://www.healthandfitness.org/",
+          "period": "2025",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
         },
@@ -31,6 +32,7 @@
           "value": "$91.1bn",
           "sourceLabel": "GMInsights",
           "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market",
+          "period": "2026",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
         },
@@ -40,6 +42,7 @@
           "value": "612.5M",
           "sourceLabel": "IDC",
           "sourceUrl": "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories",
+          "period": "2028",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
         },
@@ -49,6 +52,7 @@
           "value": "$40.6bn",
           "sourceLabel": "Statista",
           "sourceUrl": "https://www.statista.com/forecasts/1314322/worldwide-revenue-of-smartwatch-market",
+          "period": "2029",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
         },
@@ -58,6 +62,7 @@
           "value": "≈2×",
           "sourceLabel": "Omdia",
           "sourceUrl": "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings",
+          "period": "2024",
           "cadenceDays": 90,
           "lastChecked": "2026-06-28"
         }

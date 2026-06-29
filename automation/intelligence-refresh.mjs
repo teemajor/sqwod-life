@@ -86,16 +86,20 @@ const firstWord = (s) => String(s || '').toLowerCase().split(/[\s—,(]/)[0];
 
 async function extract(fig) {
   if (!apiKey) return { kind: 'review-due', snippet: '(no extractor key — please verify manually)', confidence: 'n/a' };
+  const period = fig.period ? String(fig.period) : '';
+  const periodLine = period
+    ? `\nEDITION YEAR: this metric specifically refers to **${period}**. Only return a value that the source states FOR ${period}. A source often lists several years (e.g. a 2025 figure and a ${period} figure) — do NOT return a different year's number as if it were ${period}'s. If the source gives ${period} only as a forecast, that's fine; if it has no ${period} value at all, set found=false.`
+    : '';
   const prompt = `You verify ONE published statistic for a fitness-industry intelligence report. Use web search to find its CURRENT value from a named, authoritative source.
 
 Metric: "${fig.label}"
 Currently published value: "${fig.value}"
-Currently cited source: ${fig.sourceLabel || '(none)'} ${fig.sourceUrl ? `(${fig.sourceUrl})` : ''}
+Currently cited source: ${fig.sourceLabel || '(none)'} ${fig.sourceUrl ? `(${fig.sourceUrl})` : ''}${periodLine}
 
 Search for the most recent figure stated by a NAMED authority (the original research firm, trade body, company, or government body — never a blog that re-quotes them). Prefer the source we already cite if it has refreshed its number; otherwise use the most credible newer source you find. The value must be a single source's actual published number — never a blend, average, or your own estimate.
 
 Respond with ONLY minified JSON, no prose, no code fence:
-{"found":true|false,"value":"current value in the SAME units/format as our published value, or empty","sourceLabel":"named source e.g. 'GMInsights' or 'IDC'","sourceUrl":"exact URL the number is stated on","year":"year/edition the figure refers to, or empty","snippet":"<=160-char quote/sentence from the source stating it","sameSource":true|false,"priorSupported":true|false}
+{"found":true|false,"value":"current value in the SAME units/format as our published value, or empty","sourceLabel":"named source e.g. 'GMInsights' or 'IDC'","sourceUrl":"exact URL the number is stated on","year":"the exact year/edition THIS value is for (e.g. '${period || '2026'}'), or empty","snippet":"<=160-char quote/sentence from the source stating it","sameSource":true|false,"priorSupported":true|false}
 "priorSupported": is our CURRENTLY PUBLISHED value ("${fig.value}") still stated by some named, credible source? true if it's merely outdated/superseded by a newer number; false only if no named source supports it (i.e. we likely published an error). If unsure, true.
 If you cannot find the metric clearly stated by a named source, set found=false. Never guess a number.`;
   try {
@@ -115,7 +119,20 @@ If you cannot find the metric clearly stated by a named source, set found=false.
     const o = JSON.parse(m[0]);
     if (!o.found || !o.value) return { kind: 'review-due', snippet: '(no authoritative figure found by search — please verify)', confidence: 'low' };
     let foundDomain = ''; try { foundDomain = new URL(o.sourceUrl).hostname.replace(/^www\./, ''); } catch {}
-    const base = { value: String(o.value), snippet: o.snippet || '', foundSource: o.sourceLabel || '', foundUrl: o.sourceUrl || '', foundDomain, year: o.year || '', priorSupported: o.priorSupported !== false };
+    const foundYear = String(o.year || '');
+    // Edition-year guard: never swap in a different year's number. If the figure is
+    // pinned to a period and the source value is for another year, don't propose the
+    // change — flag for human review. If the year can't be confirmed, allow the
+    // proposal but block AUTO-apply (periodUnconfirmed).
+    let periodUnconfirmed = false;
+    if (period) {
+      if (foundYear && !foundYear.includes(period)) {
+        return { kind: 'review-due', confidence: 'low',
+          snippet: `Source value is for ${foundYear}, but this figure tracks ${period} — not substituting. ${o.snippet || ''}`.trim().slice(0, 180) };
+      }
+      if (!foundYear) periodUnconfirmed = true;
+    }
+    const base = { value: String(o.value), snippet: o.snippet || '', foundSource: o.sourceLabel || '', foundUrl: o.sourceUrl || '', foundDomain, year: foundYear, priorSupported: o.priorSupported !== false, periodUnconfirmed };
     if (norm(o.value) === norm(fig.value)) return { kind: 'unchanged', ...base };
     // Same source updated its number → "update". A different authority states it → "replace".
     const sameSource = o.sameSource === true
@@ -285,6 +302,7 @@ const parseNum = (s) => parseFloat(String(s).replace(/,/g, ''));
 function autoEligible(fig, c) {
   if (!AUTO) return false;
   if (c.kind !== 'changed' || c.changeType !== 'update' || c.confidence !== 'high') return false;
+  if (c.periodUnconfirmed) return false;                          // couldn't confirm the edition year → human checks it
   if (!c.foundUrl || !c.snippet) return false;
   const og = numGroups(fig.value), ng = numGroups(c.value);
   if (og.length !== 1 || ng.length !== 1) return false;          // ranges / multi-number → human
@@ -314,7 +332,9 @@ async function scan() {
       const foundWhere = c.foundSource || c.foundDomain || domain;
       const reliability = !changed
         ? 'Search could not confirm a figure — verify by hand.'
-        : 'Web-search read of a single named source — sanity-check the snippet before publishing.';
+        : (c.periodUnconfirmed
+          ? `Web-search read of a single source, but the edition year (${fig.period}) couldn't be confirmed — check the snippet is the ${fig.period} figure before publishing.`
+          : 'Web-search read of a single named source — sanity-check the snippet before publishing.');
       const recommendation = !changed
         ? `Open ${domain} (or search yourself) and decide; your current figure stays until you act.`
         : replace
@@ -332,6 +352,7 @@ async function scan() {
         currentSource: fig.sourceLabel || '', currentSourceUrl: fig.sourceUrl,
         checkedUrl: c.foundUrl || fig.sourceUrl, checkedDomain: c.foundDomain || domain,
         foundSource: c.foundSource || '', foundUrl: c.foundUrl || '', foundDomain: c.foundDomain || '', foundYear: c.year || '',
+        period: fig.period || '', periodUnconfirmed: !!c.periodUnconfirmed,
         sourceUrl: fig.sourceUrl, snippet: c.snippet, confidence: c.confidence, kind: c.kind,
         reliability, recommendation,
         status: auto ? 'auto-applied' : 'pending', autoApplied: auto, isCorrection, createdAt: today,
