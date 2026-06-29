@@ -80,6 +80,12 @@
       "figures": [
         { "index": 0, "label": "Prioritize wellness more YoY", "value": "~30%", "sourceLabel": "CivicScience", "sourceUrl": "https://civicscience.com/health-and-wellness-the-only-category-with-net-positive-spending-intent-in-2026/", "cadenceDays": 180, "lastChecked": "2026-06-28" }
       ]
+    },
+    "ghosted-members": {
+      "_note": "Headline figure is the Zenoti 2026 survey stat (pinned to 2026 so the verifier can't grab a different survey year). The 90-day / 5–7× / 66.4% figures are evergreen or tracked under other reports.",
+      "figures": [
+        { "index": 0, "label": "Lapsed members never contacted", "value": "49%", "sourceLabel": "Zenoti · Athletech News", "sourceUrl": "https://athletechnews.com/atn-insights-49-percent-of-lapsed-members-say-their-gym-never-reached-out-after-they-stopped-attending/", "period": "2026", "cadenceDays": 180, "lastChecked": "2026-06-29" }
+      ]
     }
   }
 }
