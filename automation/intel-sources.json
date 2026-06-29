@@ -71,28 +71,96 @@
     "studio-retention-math": {
       "_note": "Range/aggregator figures — the scanner surfaces these as review-due nudges (auto-apply skips ranges); tracked so they're never a blind spot.",
       "figures": [
-        { "index": 0, "label": "Monthly member churn", "value": "4–8%", "sourceLabel": "Smart Health Clubs", "sourceUrl": "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/", "cadenceDays": 180, "lastChecked": "2026-06-28" },
-        { "index": 1, "label": "Quit within 90 days", "value": "~50%", "sourceLabel": "Smart Health Clubs", "sourceUrl": "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/", "cadenceDays": 180, "lastChecked": "2026-06-28" },
-        { "index": 2, "label": "Cost to acquire vs retain", "value": "5–7×", "sourceLabel": "Glofox", "sourceUrl": "https://www.glofox.com/blog/reducing-churn/", "cadenceDays": 180, "lastChecked": "2026-06-28" }
+        {
+          "index": 0,
+          "label": "Monthly member churn",
+          "value": "4–8%",
+          "sourceLabel": "Smart Health Clubs",
+          "sourceUrl": "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 1,
+          "label": "Quit within 90 days",
+          "value": "~50%",
+          "sourceLabel": "Smart Health Clubs",
+          "sourceUrl": "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 2,
+          "label": "Cost to acquire vs retain",
+          "value": "5–7×",
+          "sourceLabel": "Glofox",
+          "sourceUrl": "https://www.glofox.com/blog/reducing-churn/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        }
       ]
     },
     "recovery-economy": {
       "figures": [
-        { "index": 0, "label": "Prioritize wellness more YoY", "value": "~30%", "sourceLabel": "CivicScience", "sourceUrl": "https://civicscience.com/health-and-wellness-the-only-category-with-net-positive-spending-intent-in-2026/", "cadenceDays": 180, "lastChecked": "2026-06-28" }
+        {
+          "index": 0,
+          "label": "Prioritize wellness more YoY",
+          "value": "~30%",
+          "sourceLabel": "CivicScience",
+          "sourceUrl": "https://civicscience.com/health-and-wellness-the-only-category-with-net-positive-spending-intent-in-2026/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        }
       ]
     },
     "ghosted-members": {
       "_note": "Headline figure is the Zenoti 2026 survey stat (pinned to 2026 so the verifier can't grab a different survey year). The 90-day / 5–7× / 66.4% figures are evergreen or tracked under other reports.",
       "figures": [
-        { "index": 0, "label": "Lapsed members never contacted", "value": "49%", "sourceLabel": "Zenoti · Athletech News", "sourceUrl": "https://athletechnews.com/atn-insights-49-percent-of-lapsed-members-say-their-gym-never-reached-out-after-they-stopped-attending/", "period": "2026", "cadenceDays": 180, "lastChecked": "2026-06-29" }
+        {
+          "index": 0,
+          "label": "Lapsed members never contacted",
+          "value": "49%",
+          "sourceLabel": "Zenoti · Athletech News",
+          "sourceUrl": "https://athletechnews.com/atn-insights-49-percent-of-lapsed-members-say-their-gym-never-reached-out-after-they-stopped-attending/",
+          "period": "2026",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-29"
+        }
       ]
     },
     "pilates-reformer-boom": {
       "_note": "Each figure pinned to its edition year. We deliberately do NOT track a 'global Pilates market' figure — the circulating $142bn–$614bn estimates are market-mill noise; the credible anchor is IBISWorld's US Pilates & Yoga studios figure.",
       "figures": [
-        { "index": 0, "label": "US Pilates & yoga studios", "value": "$19.2bn", "sourceLabel": "IBISWorld", "sourceUrl": "https://www.ibisworld.com/united-states/market-size/pilates-yoga-studios/4185/", "period": "2026", "cadenceDays": 90, "lastChecked": "2026-06-29" },
-        { "index": 1, "label": "Pilates reservations YoY", "value": "+66%", "sourceLabel": "ClassPass · Fitt Insider", "sourceUrl": "https://insider.fitt.co/pilates-tops-global-fitness-trends/", "period": "2026", "cadenceDays": 180, "lastChecked": "2026-06-29" },
-        { "index": 2, "label": "Peloton Pilates workouts", "value": "+48%", "sourceLabel": "Peloton Q3 FY2026", "sourceUrl": "https://investor.onepeloton.com/news-releases/news-release-details/peloton-announces-q3-fy2026-financial-results", "period": "2026", "cadenceDays": 90, "lastChecked": "2026-06-29" }
+        {
+          "index": 0,
+          "label": "US Pilates & yoga studios",
+          "value": "$19.2bn",
+          "sourceLabel": "IBISWorld",
+          "sourceUrl": "https://www.ibisworld.com/united-states/market-size/pilates-yoga-studios/4185/",
+          "period": "2026",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-29"
+        },
+        {
+          "index": 1,
+          "label": "Pilates reservations YoY",
+          "value": "+66%",
+          "sourceLabel": "ClassPass · Fitt Insider",
+          "sourceUrl": "https://insider.fitt.co/pilates-tops-global-fitness-trends/",
+          "period": "2026",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-29"
+        },
+        {
+          "index": 2,
+          "label": "Peloton Pilates workouts",
+          "value": "+48%",
+          "sourceLabel": "Peloton Q3 FY2026",
+          "sourceUrl": "https://investor.onepeloton.com/news-releases/news-release-details/peloton-announces-q3-fy2026-financial-results",
+          "period": "2026",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-29"
+        }
       ]
     }
   }
