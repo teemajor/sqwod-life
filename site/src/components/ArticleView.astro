@@ -52,12 +52,45 @@ const figSourceUrl = (f: { source?: string; url?: string }) => {
   return d.sources.find((s) => s.label.toLowerCase().includes(key))?.url ?? null;
 };
 const hasData = !!(csv || (d.figures && d.figures.length));
+// --- Figure micro-charts: classify a value string and draw an inline accent viz.
+// % → a meter (single fill or low–high band); × → a multiplier bar vs a 1× line;
+// anything else ($bn, M, counts) → a short accent keyline (no fabricated data). ---
+function vizOf(value: string) {
+  const v = String(value);
+  const nums = (v.match(/\d+(?:[.,]\d+)?/g) || []).map((n) => parseFloat(n.replace(',', '.')));
+  if (/%/.test(v) && nums.length) {
+    const [a, b] = nums.length >= 2 ? [nums[0], nums[1]] : [0, nums[0]];
+    return { type: 'meter', a, b, max: 100 } as const;
+  }
+  if (/[×x]/i.test(v) && nums.length) {
+    const hi = nums[nums.length - 1];
+    return { type: 'mult', hi, max: Math.max(hi * 1.18, 2) } as const;
+  }
+  return { type: 'rule' } as const;
+}
+function figVizSvg(z: ReturnType<typeof vizOf>) {
+  const W = 300;
+  if (z.type === 'meter') {
+    const xa = Math.max(0, (z.a / z.max) * W), bw = Math.max((z.b / z.max) * W - xa, 5);
+    return `<svg class="fviz" viewBox="0 0 ${W} 14" preserveAspectRatio="xMidYMid meet" aria-hidden="true">`
+      + `<rect x="0" y="4" width="${W}" height="6" rx="3" fill="var(--panel2)"/>`
+      + `<rect x="${xa.toFixed(1)}" y="2" width="${bw.toFixed(1)}" height="10" rx="5" fill="var(--accent)"/></svg>`;
+  }
+  if (z.type === 'mult') {
+    const wHi = (z.hi / z.max) * W, x1 = (1 / z.max) * W;
+    return `<svg class="fviz" viewBox="0 0 ${W} 14" preserveAspectRatio="xMidYMid meet" aria-hidden="true">`
+      + `<rect x="0" y="4" width="${W}" height="6" rx="3" fill="var(--panel2)"/>`
+      + `<rect x="0" y="2" width="${wHi.toFixed(1)}" height="10" rx="5" fill="var(--accent)"/>`
+      + `<line x1="${x1.toFixed(1)}" y1="0" x2="${x1.toFixed(1)}" y2="14" stroke="var(--g2)" stroke-width="1.5"/></svg>`;
+  }
+  return `<svg class="fviz fviz-rule" viewBox="0 0 ${W} 6" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><rect x="0" y="2" width="72" height="4" rx="2" fill="var(--accent)"/></svg>`;
+}
 const TX = lang === 'de'
   ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt', share: 'Als Bild teilen', tag: 'SQWOD INTELLIGENCE' }
   : { tldr: 'Key takeaways', means: 'What this means for you', data: 'Data & citation', dl: 'Data (CSV)', dlj: 'JSON', cite: 'Cite this report', copy: 'Copy', copied: 'Copied ✓', now: 'now', share: 'Share as image', tag: 'SQWOD INTELLIGENCE' };
 // data the share-image script needs (brand strings + the chart series), passed to the client below
 const shareCfg = {
-  url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share,
+  url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share, accent: '#C6FF3A',
   series: d.series ? { label: d.series.label, unit: d.series.unit ?? '', points: d.series.points, years: d.series.years ?? [] } : null,
 };
 ---
@@ -89,6 +122,7 @@ const shareCfg = {
       {d.figures.map((f) => (
         <div class="fig">
           <div class="fig-val">{f.value}</div>
+          <Fragment set:html={figVizSvg(vizOf(f.value))} />
           <div class="fig-lbl">{f.label}</div>
           {f.note && <div class="fig-note">{f.note}</div>}
           {f.source && (figSourceUrl(f)
@@ -113,6 +147,7 @@ const shareCfg = {
   const slot = W / pts.length;
   const barW = Math.min(48, slot * 0.55);
   const nowYear = String(new Date().getFullYear());
+  const anyNow = yrs.includes(nowYear); // if no bar is the current year, emphasise the latest/forecast bar instead
   const yOf = (v: number) => base - Math.max(2, (v / mx) * chartH);
   return (
     <section class="block chart">
@@ -125,16 +160,17 @@ const shareCfg = {
             const x = i * slot + (slot - barW) / 2;
             const cx = i * slot + slot / 2;
             const isNow = yrs[i] === nowYear;
+            const emph = isNow || (!anyNow && i === pts.length - 1);
             const yoy = i > 0 && pts[i - 1] ? Math.round(((p - pts[i - 1]) / pts[i - 1]) * 1000) / 10 : '';
             return (
               <g class="bar-g" tabindex="0" role="button" aria-label={`${yrs[i] ?? ''}: ${p}${s.unit ? ' ' + s.unit : ''}`}
                  data-year={yrs[i] ?? ''} data-val={p} data-unit={s.unit ?? ''} data-yoy={yoy} data-now={isNow ? '1' : ''}>
-                {hasBand && <rect x={cx - barW / 2 - 3} y={yOf(s.high![i])} width={barW + 6} height={Math.max(1, yOf(s.low![i]) - yOf(s.high![i]))} rx="4" fill="var(--chalk)" opacity="0.14" />}
-                <rect class="bar-r" x={x} y={base - h} width={barW} height={h} rx="4" fill="var(--chalk)" opacity={isNow ? '1' : '0.82'} />
-                {isNow && <rect x={x - 2} y={base - h - 2} width={barW + 4} height={h + 2} rx="5" fill="none" stroke="var(--chalk)" stroke-width="2" />}
-                <text x={cx} y={base - h - 9} text-anchor="middle" fill="var(--g2)" font-size="13" font-family="ui-monospace,Menlo,monospace">{p}</text>
-                {isNow && <text x={cx} y={top - 10} text-anchor="middle" fill="var(--chalk)" font-size="11" font-weight="700" font-family="ui-monospace,Menlo,monospace">▼ {TX.now}</text>}
-                {yrs[i] && <text x={cx} y={base + 20} text-anchor="middle" fill={isNow ? 'var(--chalk)' : 'var(--g4)'} font-size="12" font-family="ui-monospace,Menlo,monospace">{yrs[i]}</text>}
+                {hasBand && <rect x={cx - barW / 2 - 3} y={yOf(s.high![i])} width={barW + 6} height={Math.max(1, yOf(s.low![i]) - yOf(s.high![i]))} rx="4" fill="var(--accent)" opacity="0.16" />}
+                <rect class="bar-r" x={x} y={base - h} width={barW} height={h} rx="4" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.78'} />
+                {emph && <rect x={x - 2} y={base - h - 2} width={barW + 4} height={h + 2} rx="5" fill="none" stroke="var(--accent)" stroke-width="2" />}
+                <text x={cx} y={base - h - 9} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g2)'} font-size="13" font-family="ui-monospace,Menlo,monospace">{p}</text>
+                {isNow && <text x={cx} y={top - 10} text-anchor="middle" fill="var(--accent)" font-size="11" font-weight="700" font-family="ui-monospace,Menlo,monospace">▼ {TX.now}</text>}
+                {yrs[i] && <text x={cx} y={base + 20} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g4)'} font-size="12" font-family="ui-monospace,Menlo,monospace">{yrs[i]}</text>}
               </g>
             );
           })}
@@ -204,12 +240,18 @@ const shareCfg = {
 )}
 
 {hasData && (
-  <div class="report-tools">
-    {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>↓ {TX.dl}</a>}
-    <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>↓ {TX.dlj}</a>
-    <button class="dc-btn copy" id="citeCopy" type="button" data-copy={`⧉ ${TX.cite}`} data-done={TX.copied}>⧉ {TX.cite}</button>
-    <code class="cite-text" id="citeText" hidden>{citation}</code>
-  </div>
+  <section class="block data-cite">
+    <p class="kick">{TX.data}</p>
+    <div class="dc-row">
+      {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>↓ {TX.dl}</a>}
+      <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>↓ {TX.dlj}</a>
+      <button class="dc-btn copy" id="citeCopy" type="button" data-copy={`⧉ ${TX.cite}`} data-done={TX.copied}>⧉ {TX.cite}</button>
+    </div>
+    <figure class="cite-card">
+      <figcaption class="cite-cap">{TX.cite}</figcaption>
+      <blockquote class="cite-quote" id="citeText">{citation}</blockquote>
+    </figure>
+  </section>
 )}
 
 {related && related.length > 0 && (
@@ -235,12 +277,15 @@ const shareCfg = {
 </section>
 
 <style>
-  .fig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:12px}
-  .fig{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--panel)}
-  .fig-val{font-size:26px;font-weight:900;letter-spacing:-.02em;line-height:1}
-  .fig-lbl{font-size:13px;color:var(--g1);margin-top:6px;line-height:1.35}
-  .fig-note{font-size:12px;color:var(--g3);margin-top:6px;line-height:1.4}
-  .fig-src{font-size:10px;letter-spacing:.04em;text-transform:uppercase;color:var(--g4);margin-top:8px}
+  .fig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:14px;margin-top:14px}
+  .fig{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;background:linear-gradient(180deg,var(--panel),var(--bg));transition:border-color .15s ease,box-shadow .15s ease}
+  .fig:hover{border-color:var(--accent-line);box-shadow:0 0 0 1px var(--accent-line),0 8px 30px rgba(0,0,0,.35)}
+  .fig-val{font-size:30px;font-weight:900;letter-spacing:-.02em;line-height:1;color:var(--accent)}
+  .fviz{width:100%;height:14px;display:block;margin:13px 0 2px}
+  .fviz.fviz-rule{height:6px;margin:11px 0 2px}
+  .fig-lbl{font-size:13.5px;font-weight:600;color:var(--chalk);margin-top:9px;line-height:1.3}
+  .fig-note{font-size:12px;color:var(--g3);margin-top:6px;line-height:1.45}
+  .fig-src{font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--g4);margin-top:10px}
   .bars-svg{width:100%;height:auto;display:block;margin-top:14px}
   .chart .bars{display:flex;align-items:flex-end;gap:8px;height:160px;margin-top:14px;border-bottom:1px solid var(--line);padding-bottom:0}
   .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
@@ -265,7 +310,7 @@ const shareCfg = {
   /* TL;DR */
   .tldr-list{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
   .tldr-list li{position:relative;padding:10px 14px 10px 34px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:14.5px;line-height:1.5;color:var(--g1)}
-  .tldr-list li::before{content:"→";position:absolute;left:13px;top:10px;color:var(--chalk);font-weight:800}
+  .tldr-list li::before{content:"→";position:absolute;left:13px;top:10px;color:var(--accent);font-weight:800}
   /* interactive chart */
   .chart-wrap{position:relative}
   .bar-g{cursor:default;transition:opacity .12s ease}
@@ -277,26 +322,25 @@ const shareCfg = {
   .chart-tip .yoy-up{color:#4ade80}.chart-tip .yoy-dn{color:#f87171}
   /* operator playbook */
   .pb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
-  .pb{border:1px solid var(--line);border-left:3px solid var(--chalk);border-radius:10px;padding:13px 15px;background:var(--panel)}
+  .pb{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:13px 15px;background:var(--panel)}
   .pb-move{font-size:14.5px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
   .pb-why{font-size:13px;color:var(--g2);margin-top:6px;line-height:1.5}
   /* data + cite */
-  .dc-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-  .dc-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:8px 15px;text-decoration:none;color:var(--chalk);background:var(--panel);cursor:pointer;font-family:inherit}
-  .dc-btn:hover{border-color:var(--chalk)}
-  .cite{margin-top:14px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--panel)}
-  .cite-head{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--g4)}
-  .cite-text{display:block;font-size:12.5px;color:var(--g1);margin:8px 0 10px;line-height:1.5;font-family:ui-monospace,Menlo,monospace;word-break:break-word}
+  .dc-row{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 14px}
+  .dc-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:8px 15px;text-decoration:none;color:var(--chalk);background:var(--panel);cursor:pointer;font-family:inherit;transition:border-color .15s,color .15s}
+  .dc-btn:hover{border-color:var(--accent);color:var(--accent)}
+  .cite-card{margin:0;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:14px 16px;background:var(--panel)}
+  .cite-cap{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g4);margin:0 0 8px}
+  .cite-quote{margin:0;font-size:13.5px;line-height:1.6;color:var(--g1);word-break:break-word}
   a.fig-src{text-decoration:none;display:block}
   a.fig-src-link:hover{color:var(--chalk)}
   .rel-card{grid-template-columns:1fr !important}
   /* share-as-image + bottom utility strip */
-  .share-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.02em;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--panel);color:var(--g3);cursor:pointer;font-family:inherit}
-  .share-btn:hover{border-color:var(--chalk);color:var(--chalk)}
+  .share-btn{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.02em;border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--panel);color:var(--g2);cursor:pointer;font-family:inherit;transition:border-color .15s,color .15s,background .15s}
+  .share-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
   .share-btn.busy{opacity:.55;pointer-events:none}
-  .fig-share{margin-top:12px}
+  .fig-share{margin-top:auto;padding-top:14px;align-self:flex-start}   /* pin to card bottom so a row of cards lines up evenly */
   .chart-share{margin-top:12px}
-  .report-tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:18px 0;border-top:1px solid var(--line)}
 </style>
 
 <script define:vars={{ endpoint: SUBSCRIBE.endpoint, lang, locked }}>
@@ -366,7 +410,22 @@ const shareCfg = {
   // CSS vars don't survive SVG→canvas rasterization. Pure SVG (no foreignObject)
   // keeps the canvas untainted so toBlob works for Web Share / download.
   (function () {
-    const C = { ink: '#0e0e10', chalk: '#FAFAFA', g1: '#ededf0', g2: '#b8b8c0', g3: '#85858e', g4: '#52525a', line: '#2a2a30', panel: '#161619' };
+    const C = { ink: '#0e0e10', chalk: '#FAFAFA', g1: '#ededf0', g2: '#b8b8c0', g3: '#85858e', g4: '#52525a', line: '#2a2a30', panel: '#161619', accent: (shareCfg.accent || '#C6FF3A') };
+    // classify a value the same way the on-page cards do → meter / multiplier / keyline
+    const vizOf = (value) => {
+      const v = String(value || ''); const nums = (v.match(/\d+(?:[.,]\d+)?/g) || []).map((n) => parseFloat(n.replace(',', '.')));
+      if (/%/.test(v) && nums.length) { const a = nums.length >= 2 ? nums[0] : 0, b = nums.length >= 2 ? nums[1] : nums[0]; return { type: 'meter', a, b, max: 100 }; }
+      if (/[×x]/i.test(v) && nums.length) { const hi = nums[nums.length - 1]; return { type: 'mult', hi, max: Math.max(hi * 1.18, 2) }; }
+      return { type: 'rule' };
+    };
+    const vizSvg = (z, x, y, w) => {
+      const h = 20;
+      if (z.type === 'meter') { const xa = x + Math.max(0, (z.a / z.max) * w), bw = Math.max((z.b / z.max) * w - (xa - x), 8);
+        return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10" fill="${C.panel}"/><rect x="${xa}" y="${y}" width="${bw}" height="${h}" rx="10" fill="${C.accent}"/>`; }
+      if (z.type === 'mult') { const wHi = (z.hi / z.max) * w, x1 = x + (1 / z.max) * w;
+        return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10" fill="${C.panel}"/><rect x="${x}" y="${y}" width="${wHi}" height="${h}" rx="10" fill="${C.accent}"/><line x1="${x1}" y1="${y - 6}" x2="${x1}" y2="${y + h + 6}" stroke="${C.g2}" stroke-width="3"/><text x="${x1}" y="${y + h + 30}" text-anchor="middle" font-family="${MONO}" font-size="18" fill="${C.g3}">1×</text>`; }
+      return `<rect x="${x}" y="${y + 6}" width="120" height="8" rx="4" fill="${C.accent}"/>`;
+    };
     const SANS = "'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
     const MONO = "ui-monospace,'SF Mono',Menlo,monospace";
     const W = 1200, H = 675;
@@ -389,10 +448,12 @@ const shareCfg = {
 
     const statInner = (d) => {
       const v = d.v || '', vs = v.length <= 4 ? 150 : v.length <= 7 ? 120 : v.length <= 12 ? 80 : 56;
-      let inner = `<text x="64" y="318" font-family="${SANS}" font-weight="800" font-size="${vs}" fill="${C.chalk}">${esc(v)}</text>`;
-      inner += lines(wrap(d.l, 40), 64, 392, 42, `font-family="${SANS}" font-weight="700" font-size="34" fill="${C.g1}"`);
+      let inner = `<text x="64" y="300" font-family="${SANS}" font-weight="800" font-size="${vs}" fill="${C.accent}">${esc(v)}</text>`;
+      inner += lines(wrap(d.l, 40), 64, 372, 42, `font-family="${SANS}" font-weight="700" font-size="34" fill="${C.chalk}"`);
       const lblLines = wrap(d.l, 40).length;
-      if (d.n) inner += lines(wrap(d.n, 64), 64, 392 + lblLines * 42 + 12, 32, `font-family="${SANS}" font-size="24" fill="${C.g2}"`);
+      if (d.n) inner += lines(wrap(d.n, 64), 64, 372 + lblLines * 42 + 12, 32, `font-family="${SANS}" font-size="24" fill="${C.g2}"`);
+      // the same micro-chart the card shows, anchored above the footer
+      inner += vizSvg(vizOf(v), 64, 520, W - 128);
       return inner;
     };
 
@@ -401,13 +462,15 @@ const shareCfg = {
       const pts = s.points, yrs = s.years || [];
       const x0 = 64, x1 = W - 80, top = 230, base = 540, mx = Math.max.apply(null, pts.concat([1]));
       const slot = (x1 - x0) / pts.length, bw = Math.min(64, slot * 0.5), nowY = String(new Date().getFullYear());
+      const anyNow = yrs.indexOf(nowY) >= 0;
       let inner = `<text x="64" y="180" font-family="${SANS}" font-weight="700" font-size="32" fill="${C.g1}">${esc(s.label)}${s.unit ? ' · ' + esc(s.unit) : ''}</text>`;
       inner += `<line x1="${x0}" y1="${base}" x2="${x1}" y2="${base}" stroke="${C.line}" stroke-width="1.5"/>`;
       pts.forEach((p, i) => {
-        const h = Math.max(3, (p / mx) * (base - top)), x = x0 + i * slot + (slot - bw) / 2, cx = x0 + i * slot + slot / 2, now = yrs[i] === nowY;
-        inner += `<rect x="${x}" y="${base - h}" width="${bw}" height="${h}" rx="5" fill="${C.chalk}" opacity="${now ? 1 : 0.78}"/>`;
-        inner += `<text x="${cx}" y="${base - h - 12}" text-anchor="middle" font-family="${MONO}" font-size="20" fill="${C.g2}">${p}</text>`;
-        if (yrs[i]) inner += `<text x="${cx}" y="${base + 28}" text-anchor="middle" font-family="${MONO}" font-size="18" fill="${now ? C.chalk : C.g4}">${esc(yrs[i])}</text>`;
+        const h = Math.max(3, (p / mx) * (base - top)), x = x0 + i * slot + (slot - bw) / 2, cx = x0 + i * slot + slot / 2;
+        const emph = yrs[i] === nowY || (!anyNow && i === pts.length - 1);
+        inner += `<rect x="${x}" y="${base - h}" width="${bw}" height="${h}" rx="5" fill="${emph ? C.accent : C.chalk}" opacity="${emph ? 1 : 0.7}"/>`;
+        inner += `<text x="${cx}" y="${base - h - 12}" text-anchor="middle" font-family="${MONO}" font-size="20" fill="${emph ? C.accent : C.g2}">${p}</text>`;
+        if (yrs[i]) inner += `<text x="${cx}" y="${base + 28}" text-anchor="middle" font-family="${MONO}" font-size="18" fill="${emph ? C.accent : C.g4}">${esc(yrs[i])}</text>`;
       });
       return inner;
     };
