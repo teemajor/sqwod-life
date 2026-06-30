@@ -1,0 +1,39 @@
+name: Generate lane articles (Sqwod)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * 2,5'   # Tue + Fri ~08:00–09:00 Berlin — a couple of fresh articles a week
+
+permissions:
+  contents: write
+
+jobs:
+  articles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Author lane articles (BUILD · SIGNAL · MOVE)
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          node automation/articles.mjs --lane=build  --days=5 || true
+          node automation/articles.mjs --lane=signal --days=5 || true
+          node automation/articles.mjs --lane=move   --days=5 || true
+
+      - name: Commit & push (if anything changed)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add site/src/content/articles
+          if git diff --staged --quiet; then
+            echo "No new articles this run."
+          else
+            git commit -m "articles: lane drops $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
