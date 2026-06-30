@@ -134,7 +134,7 @@ Every new post gets an original cover in the **locked black-and-white manhwa sty
 - **Conversion pages:** `/pages/packages-and-memberships`, `/pages/workout-buchen` (DE booking), `/pages/memberships`, `/pages/company-wellness`, `/pages/fitness-trainers` (For Trainers), `/pages/find-a-trainer`, `/pages/claim`, `/pages/about-us`, `/pages/contact`, `/pages/sqwod-app`, `/pages/influencers-affiliates-collabs` (Community).
 - **Locations:** served as a collection page (per store ref); link Pod reviews from there.
 - **Live theme write rule:** theme file writes are blocked on the published theme — content posts are DATA (articles/metaobjects), so they publish fine; only *theme* edits need the duplicate-and-publish workflow.
-- **Image key:** read at runtime from `Sqwod.Life/.secrets/gemini.key` (single line). Never hard-code the key in the task prompt or memory.
+- **Image key:** read at runtime from `Sqwod.Life/.secrets/gemini.key` (single line). Never hard-code the key in the task prompt or memory. Current AI Studio keys use the **`AQ.` prefix** — this is the standard, permanent format (Google retired the old `AIza…` keys in 2026). An `AQ.` key is correct; do not treat it as temporary. Verified working 2026-06-30 (Imagen 4, billing + quota live).
 - **Backlog/calendar:** `Sqwod.Life/Sqwod-Content-Backlog_v1.md` — the agent picks the next topic from here and marks it done.
 
 ---

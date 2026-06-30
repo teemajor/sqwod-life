@@ -16,7 +16,7 @@ Everything is cookieless and low-PII, so **no consent banner is required** for a
 
 Moved off Umami Cloud because its free tier caps retention at 6 months and paywalls
 the API ($20/mo Pro). Self-hosting on Railway means **we own the Postgres database**:
-retention is unlimited and the API is free (it powers the Command Center).
+retention is unlimited and the API is free (it powers the private dashboard).
 
 - **Instance:** https://umami-production-5dc9.up.railway.app (Railway, US West region)
 - **Website:** sqwod.life · **Website ID:** `35fd123d-0a68-4295-a875-8947947b5d76`

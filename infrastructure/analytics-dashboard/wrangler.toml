@@ -12,12 +12,13 @@ RESEND_AUDIENCE_EN = ""
 RESEND_AUDIENCE_DE = ""
 # Comma-separated allow-list checked against the Cloudflare Access identity header
 # (defense in depth — Access itself is the real gate). Leave blank to rely on Access only.
-ALLOWED_EMAILS = "tee@teemajor.com"
+ALLOWED_EMAILS = "tee@teemajor.com,sqwodlife@gmail.com"
 
-# --- secrets (DO NOT put here — set via CLI) ---
+# --- secrets (DO NOT put here — set via CLI or the dashboard's Variables & Secrets) ---
 #   npx wrangler secret put UMAMI_USERNAME    # your Umami login (e.g. admin)
 #   npx wrangler secret put UMAMI_PASSWORD    # your Umami password
 #   npx wrangler secret put RESEND_API_KEY    # Resend API key
+#   npx wrangler secret put DIGEST_KEY        # any long random string; guards /digest for the weekly task
 
 # Optional custom route (otherwise it's served at the *.workers.dev URL):
 # [[routes]]
