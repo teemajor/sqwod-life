@@ -1,11 +1,8 @@
-// Umami analytics (self-hosted, cookieless). Fill these after you deploy Umami:
-//   src        = your Umami script URL, e.g. https://analytics.sqwod.life/script.js
-//   websiteId  = the Website ID Umami gives you (a UUID)
-// Until both are set, no tracking script loads (nothing breaks, zero requests).
+// Umami Cloud analytics (EU region, cookieless — no consent banner needed).
 // Custom events are emitted via data-umami-event attributes on key elements
 // (share buttons, subscribe CTAs, report unlock, Move-of-the-Day) — Umami captures
-// them automatically once the script is live.
+// them automatically. The beacon only loads when both values are set.
 export const ANALYTICS = {
-  src: '',          // e.g. 'https://analytics.sqwod.life/script.js'
-  websiteId: '',    // e.g. '00000000-0000-0000-0000-000000000000'
+  src: 'https://cloud.umami.is/script.js',
+  websiteId: 'c51f00ba-ea3d-48f5-bc23-860f852dca2a',
 };
