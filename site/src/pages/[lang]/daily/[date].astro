@@ -73,7 +73,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
 ---
 <Base lang={lang} title={metaTitle} description={metaDesc} ogType="article" image="/podcast-cover.png">
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
-  <div class="crumb"><a href={`/${lang}/daily`}>Sqwod Daily</a> · {fmt}</div>
+  <div class="crumb"><a href={`/${lang}/daily`}>← Sqwod Daily</a></div>
   <h1 style="margin:0 0 6px">Sqwod Daily</h1>
   <p class="sub" style="margin:0 0 16px">{fmt} · {d.edition}</p>
   {d.status !== 'published' && <p class="dealnote">⚑ {tx.draft}</p>}
