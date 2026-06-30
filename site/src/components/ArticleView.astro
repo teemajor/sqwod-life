@@ -232,7 +232,7 @@ const shareCfg = {
       <p class="unlock-body">{U.body}</p>
       <form class="unlock-form">
         <input type="email" name="email" required placeholder={U.ph} aria-label={U.ph} />
-        <button class="cta" type="submit">{U.cta} →</button>
+        <button class="cta" type="submit" data-umami-event="report-unlock" data-umami-event-report={d.urlSlug}>{U.cta} →</button>
       </form>
       <p class="unlock-fine">{U.fine}</p>
     </div>

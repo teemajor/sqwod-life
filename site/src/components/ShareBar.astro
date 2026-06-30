@@ -19,9 +19,9 @@ const nets = [
 ---
 <div class="sharebar" data-url={url} data-title={title}>
   <span class="sh-label">{T.label}</span>
-  {nets.map((n) => <a class="sh-btn" href={n.href} target="_blank" rel="noopener" aria-label={`${T.label} — ${n.name}`}>{n.name}</a>)}
-  <button class="sh-btn sh-copy" type="button" data-copy={T.copy} data-copied={T.copied}>{T.copy}</button>
-  <button class="sh-btn sh-native" type="button" hidden>{T.label}…</button>
+  {nets.map((n) => <a class="sh-btn" href={n.href} target="_blank" rel="noopener" aria-label={`${T.label} — ${n.name}`} data-umami-event="share" data-umami-event-network={n.name} data-umami-event-page={path}>{n.name}</a>)}
+  <button class="sh-btn sh-copy" type="button" data-copy={T.copy} data-copied={T.copied} data-umami-event="share" data-umami-event-network="copy" data-umami-event-page={path}>{T.copy}</button>
+  <button class="sh-btn sh-native" type="button" hidden data-umami-event="share" data-umami-event-network="native" data-umami-event-page={path}>{T.label}…</button>
 </div>
 
 <style>

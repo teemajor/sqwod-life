@@ -40,7 +40,7 @@ const c = lang === 'de' ? {
         <input type="hidden" name="lang" value={lang} />
         <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
         <label>{c.email}<input type="email" name="email" required placeholder="you@studio.com" /></label>
-        <button class="cta" type="submit" disabled={!SUBSCRIBE.endpoint}>{c.cta}</button>
+        <button class="cta" type="submit" disabled={!SUBSCRIBE.endpoint} data-umami-event="subscribe" data-umami-event-where="subscribe-page">{c.cta}</button>
         {!SUBSCRIBE.endpoint && <p class="note">{c.soon}</p>}
         <p class="fine">{c.fine}</p>
       </form>

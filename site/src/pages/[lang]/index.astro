@@ -59,7 +59,7 @@ const tagline = lang === 'de'
       <input type="hidden" name="lang" value={lang} />
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
-      <button class="cta" type="submit">{lang==='de'?'Abonnieren':'Subscribe'}</button>
+      <button class="cta" type="submit" data-umami-event="subscribe" data-umami-event-where="home-top">{lang==='de'?'Abonnieren':'Subscribe'}</button>
     </form>
   </section>
 
@@ -150,7 +150,7 @@ const tagline = lang === 'de'
       <input type="hidden" name="lang" value={lang} />
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
-      <button class="cta" type="submit">{lang==='de'?'Kostenlos abonnieren':'Subscribe free'}</button>
+      <button class="cta" type="submit" data-umami-event="subscribe" data-umami-event-where="home-bottom">{lang==='de'?'Kostenlos abonnieren':'Subscribe free'}</button>
     </form>
   </section>
 </Base>

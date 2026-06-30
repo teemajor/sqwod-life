@@ -97,7 +97,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
     <section class="movecard">
       <p class="kick">{lang==='de'?'Move des Tages':'Move of the Day'}</p>
       {d.move.note && <p class="move-note">{d.move.note}</p>}
-      <a class="move-link" href={d.move.url} target="_blank" rel="nofollow noopener">
+      <a class="move-link" href={d.move.url} target="_blank" rel="nofollow noopener" data-umami-event="move-watch" data-umami-event-platform={d.move.platform || 'social'}>
         {lang==='de'?'Ansehen auf':'Watch on'} {d.move.platform || 'social'} →
       </a>
       {d.move.handle && <span class="move-credit">{lang==='de'?'Coach:':'Coach:'} {d.move.handle}</span>}

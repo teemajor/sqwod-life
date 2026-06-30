@@ -75,6 +75,16 @@ function render(iss, lang) {
   const niceDate = new Date(date + 'T06:00:00Z').toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
   const epUrl = `${SITE}/${lang}/daily/${date}/`;
 
+  // UTM tagging — attributes each Daily email's clicks back to the issue in Umami,
+  // so Resend's "who clicked" joins to the site's "what they did next" (subscribe,
+  // share, play). Only INTERNAL (SITE) links get tagged; sponsor/affiliate/external
+  // links pass through clean — we never put our UTMs on a third party's URL.
+  const utmBase = `utm_source=sqwod-daily&utm_medium=email&utm_campaign=daily-${date}`;
+  const withUTM = (url, content) => {
+    if (!url || !url.startsWith(SITE)) return url || '';
+    return url + (url.includes('?') ? '&' : '?') + utmBase + (content ? `&utm_content=${content}` : '');
+  };
+
   // MONEY MOVEMENT — bold, scannable callouts (colored badge + arrow + big amount)
   const kindStyle = (k) => ({
     raise: { bg: UP, ar: '▲' }, ipo: { bg: UP, ar: '▲' },
@@ -134,7 +144,10 @@ function render(iss, lang) {
   const recsArr = (iss.recs && iss.recs.length) ? iss.recs : (iss.doThis ? [{ label: 'Do this', text: iss.doThis }] : []);
   const recs = recsArr.length ? card(label(tx.recs, 'pulse-ring.gif') +
     recsArr.map((r) => {
-      const link = r.url ? `<a href="${abs(r.url, lang)}"${r.affiliate ? ' rel="sponsored nofollow"' : ''} style="color:${INK};">${esc(r.text)}</a>` : esc(r.text);
+      // Affiliate recs keep their clean partner URL (no Sqwod UTMs on a third party);
+      // internal recs get tagged so we can see which rec drove the click.
+      const recHref = r.affiliate ? abs(r.url, lang) : withUTM(abs(r.url, lang), 'rec');
+      const link = r.url ? `<a href="${recHref}"${r.affiliate ? ' rel="sponsored nofollow"' : ''} style="color:${INK};">${esc(r.text)}</a>` : esc(r.text);
       const tag = r.affiliate ? ` <span style="font:700 9px ${F};letter-spacing:.1em;text-transform:uppercase;color:${G4};">· ${tx.sponsored}</span>` : '';
       return `<div style="font:400 15px/1.6 ${F};color:${G1};margin:0 0 12px;"><b style="color:${INK};">✓ ${esc(r.label)}:</b> ${link}${tag}</div>`;
     }).join('')) : '';
@@ -143,7 +156,7 @@ function render(iss, lang) {
   const play = iss.play && iss.play.title ? card(label(tx.play, 'pulse-ring.gif') +
     `<div style="font:800 19px/1.3 ${F};color:${INK};margin-bottom:6px;">${esc(iss.play.title)}</div>` +
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:12px;">${esc(iss.play.prompt)}</div>` +
-    `<a href="${iss.play.url ? abs(iss.play.url, lang) : `${SITE}/${lang}/play/`}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
+    `<a href="${withUTM(iss.play.url ? abs(iss.play.url, lang) : `${SITE}/${lang}/play/`, 'play')}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
 
   // MOVE OF THE DAY — curated coach clip (link + credit, never re-hosted)
   const move = (iss.move && iss.move.url) ? card(label(lang === 'de' ? 'Move des Tages' : 'Move of the Day', 'hero-bars.gif') +
@@ -162,7 +175,7 @@ function render(iss, lang) {
     : 'Know a coach, trainer, or studio founder who should read this? Forward this issue — that\'s how Sqwod grows.';
   const share = card(label(shareHead, 'hero-bars.gif') +
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:14px;">${shareBody}</div>` +
-    `<a href="${SITE}/${lang}/subscribe/" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn} &rarr;</a>`);
+    `<a href="${withUTM(`${SITE}/${lang}/subscribe/`, 'share-cta')}" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn} &rarr;</a>`);
 
   // Top sponsor slot: a clearly-defined "Presented by" band UNDER the hero, before content.
   const presentedBand = iss.sponsor && iss.sponsor.name ? `
@@ -182,7 +195,7 @@ function render(iss, lang) {
         <tr><td style="padding:0 10px 12px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
             <td align="left" style="font:600 11px/1 ${F};letter-spacing:.04em;color:${G4};">${esc(niceDate)}</td>
-            <td align="right" style="font:600 11px/1 ${F};letter-spacing:.04em;"><a href="${epUrl}" style="color:${G4};text-decoration:none;">${tx.view} &rarr;</a></td>
+            <td align="right" style="font:600 11px/1 ${F};letter-spacing:.04em;"><a href="${withUTM(epUrl, 'view-online')}" style="color:${G4};text-decoration:none;">${tx.view} &rarr;</a></td>
           </tr></table>
         </td></tr>
         <!-- masthead: wordmark + hero -->
@@ -208,12 +221,12 @@ function render(iss, lang) {
         ${meanwhile}
         ${share}
         <!-- audio secondary -->
-        <tr><td style="padding:6px 6px 18px;"><a href="${epUrl}" style="font:700 13px ${F};color:${G2};text-decoration:none;">&#9654;&nbsp; ${tx.listen} &rarr;</a></td></tr>
+        <tr><td style="padding:6px 6px 18px;"><a href="${withUTM(epUrl, 'listen')}" style="font:700 13px ${F};color:${G2};text-decoration:none;">&#9654;&nbsp; ${tx.listen} &rarr;</a></td></tr>
         <!-- subscribe -->
         ${card(`<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td align="center">
           <div style="font:800 19px/1.2 ${F};color:${INK};margin-bottom:6px;">${tx.subH}</div>
           <div style="font:400 14px/1.5 ${F};color:${G2};margin-bottom:16px;">${tx.subP}</div>
-          <a href="${SITE}/${lang}/subscribe/" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn}</a>
+          <a href="${withUTM(`${SITE}/${lang}/subscribe/`, 'subscribe-footer')}" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn}</a>
         </td></tr></table>`)}
         <!-- footer -->
         <tr><td style="padding:8px 6px 30px;">
