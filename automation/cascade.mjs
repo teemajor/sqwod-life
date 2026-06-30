@@ -39,7 +39,9 @@ const MODEL = process.env.SQWOD_MODEL || 'claude-sonnet-4-6';
 
 // ---- load sources -------------------------------------------------------
 function loadSources() {
-  const files = readdirSync(SOURCES_DIR).filter((f) => f.endsWith('.json'));
+  // Only date-named source files (YYYY-MM-DD.json) — never stray config/registry
+  // JSON that happens to live alongside them.
+  const files = readdirSync(SOURCES_DIR).filter((f) => /^\d{4}-\d{2}-\d{2}\.json$/.test(f));
   const byDate = {};
   for (const f of files) {
     const date = f.replace('.json', '');
@@ -108,6 +110,7 @@ ${list}
 
 Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, deals, or statistics. Only use figures that appear verbatim above. If a section has no real basis, return null (or []) for it — do not fabricate.
 {
+ "summary":"<=60 chars; ONE punchy episode title for the list, homepage & search results — the single most interesting thread of the day, NOT a dump of every headline. A real title, not a sentence with semicolons.",
  "connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
  "connectBody":"two short paragraphs separated by \\n; teach the pattern and why it matters to an operator; specific, witty, no fluff",
  "doThis":"one concrete action the reader can take this week",
@@ -198,6 +201,26 @@ function buildSections(lead, lang) {
   return s;
 }
 
+// ---- REPAIR: regenerate one flagged item strictly from its source facts ----
+// Used by the guardrail to fix an unsupported claim instead of holding the whole
+// issue for a human. One bounded attempt; null on any failure (caller then drops).
+async function repairItem(source, lang, critique) {
+  if (!apiKey || !source) return null;
+  const facts = (source.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('; ');
+  const langName = lang === 'de' ? 'German' : 'English';
+  const prompt = `Rewrite ONE Sqwod Daily news item in ${langName} about "${source.entity}". A fact-check flagged the previous draft: ${critique}. Use ONLY these facts and state nothing beyond them: ${facts}. Keep Sqwod's witty Morning-Brew voice; headline <= 70 chars; dek 1–2 sentences. Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST', headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    const obj = JSON.parse((data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, ''));
+    return obj.headline ? { headline: obj.headline, dek: obj.dek } : null;
+  } catch (e) { console.error(`· repair failed (${lang}): ${e.message}`); return null; }
+}
+
 // ---- VERIFICATION PASS: fact-check the draft against the source facts ----
 // Catches the model attributing a number/event to the wrong entity or inventing
 // figures. Strips unsupported stat/money claims and downgrades the issue to
@@ -219,7 +242,8 @@ ${JSON.stringify(draft)}
 
 Find every claim in the draft that is NOT directly supported by the source facts — invented numbers, a figure/deal attributed to the wrong company, events not in the sources, or stats with no basis. Be conservative: framing/opinion is fine; only flag factual claims that aren't supported.
 Classify each issue: set "blocking":true ONLY when the unsupported claim is baked into an item headline, an item dek, or the connectDots synthesis body (text we cannot auto-remove). Set "blocking":false when the claim lives in the standalone "stat" or a "moneyMoves" entry — those get auto-dropped, so they are NOT blocking.
-Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"...","blocking":true|false}],"dropStat":true|false,"dropMoneyIndexes":[ints]}`;
+For each issue also set "itemIndex": the 0-based position of the item (in the order listed) whose headline or dek contains the claim, or -1 if the claim is in connectDots / stat / moneyMoves rather than an item.
+Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"...","blocking":true|false,"itemIndex":int}],"dropStat":true|false,"dropMoneyIndexes":[ints]}`;
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST', headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
@@ -250,6 +274,7 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
     `date: ${q(date)}`,
     `edition: ${q('Weekday')}`,
     `title: ${q('Sqwod Daily')}`,
+    `summary: ${q((sections && sections.summary) || (items[0] && items[0].headline) || 'Sqwod Daily')}`,
     `status: ${q(issueStatus)}`,
     `intro: ${q(lang === 'de'
       ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
@@ -328,7 +353,7 @@ async function run() {
   mkdirSync(DAILY_OUT, { recursive: true });
 
   for (const lang of LANGS) {
-    const items = [];
+    let items = [];
     for (const src of sources) {
       const out = await generate('daily-item', src, lang);
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
@@ -337,16 +362,47 @@ async function run() {
     let sections = buildSections(lead, lang);     // model output + affiliate rec + Play (even in dry-run)
     const v = await verifyIssue(items, sections, sources, lang);  // fact-check vs source facts
     sections = v.sections;
-    const blocking = v.blocking || [];
-    const issueStatus = blocking.length ? 'review' : status;      // only UN-remediable flags hold for human
     if (v.issues.length) {
-      const dropped = v.issues.length - blocking.length;
-      if (dropped) console.log(`✓ ${lang.toUpperCase()} verification auto-removed ${dropped} unsupported stat/money claim(s) — publishing the rest`);
-      if (blocking.length) {
-        console.log(`⚠ ${lang.toUpperCase()} verification flagged ${blocking.length} embedded claim(s) → status: review`);
-        blocking.forEach((i) => console.log(`   · ${i.claim} — ${i.problem}`));
-      }
+      const auto = v.issues.length - (v.blocking || []).length;
+      if (auto) console.log(`✓ ${lang.toUpperCase()} auto-removed ${auto} unsupported stat/money claim(s)`);
     }
+
+    // GUARDRAIL (no human review): auto-remediate every embedded claim. Repair the
+    // flagged item once from its source facts, re-verify, then DROP whatever is still
+    // unsupported. A flagged synthesis (connectDots) is dropped, not held. We never
+    // publish a claim a human would have had to vet.
+    let blocking = v.blocking || [];
+    const itemLevel = (b) => Number.isInteger(b.itemIndex) && b.itemIndex >= 0;
+    if (blocking.length && apiKey) {
+      const bad = [...new Set(blocking.filter(itemLevel).map((b) => b.itemIndex))];
+      for (const i of bad) {
+        const critique = blocking.filter((b) => b.itemIndex === i).map((b) => b.problem).join('; ');
+        const fixed = await repairItem(sources[i], lang, critique);
+        if (fixed) { items[i] = { ...items[i], ...fixed }; console.log(`  ↻ ${lang.toUpperCase()} repaired item ${i + 1} (${items[i].source})`); }
+      }
+      if (blocking.some((b) => !itemLevel(b))) { delete sections.connectTitle; delete sections.connectBody; }
+      const v2 = await verifyIssue(items, sections, sources, lang);
+      sections = v2.sections;
+      if ((v2.blocking || []).some((b) => !itemLevel(b))) { delete sections.connectTitle; delete sections.connectBody; }
+      const stillBad = new Set((v2.blocking || []).filter(itemLevel).map((b) => b.itemIndex));
+      if (stillBad.size) {
+        console.log(`  ⛔ ${lang.toUpperCase()} dropped ${stillBad.size} item(s) still unsupported after repair`);
+        items = items.filter((_, i) => !stillBad.has(i));
+      }
+      blocking = [];
+    }
+
+    // SOURCE GUARDRAIL: a factual issue only ships items that trace to a live source link.
+    {
+      const before = items.length;
+      items = items.filter((it) => it.readMore && /^https?:\/\//.test(it.readMore));
+      if (items.length < before) console.log(`  ⛔ ${lang.toUpperCase()} dropped ${before - items.length} item(s) with no source link`);
+    }
+    if (!items.length) { console.log(`  ⚠ ${lang.toUpperCase()} no verifiable items left — NOT publishing ${date}.${lang}`); continue; }
+
+    const issueStatus = status;  // always publish; the guardrail already remediated everything
+    // One-line episode title — computed AFTER any drops so it never names a removed item.
+    sections.summary = (lead && lead.summary) || sections.connectTitle || (items[0] && items[0].headline) || 'Sqwod Daily';
     sections.audioScript = await generateAudioScript(items, sections, lang);  // spoken brief for TTS (verified facts only)
     if (sections.audioScript) console.log(`🎙  ${lang.toUpperCase()} audio brief authored (${sections.audioScript.split(/\s+/).length} words)`);
     const file = join(DAILY_OUT, `${date}.${lang}.md`);

@@ -7,10 +7,10 @@ productName: "Theragun Prime Plus"
 category: "Recovery & Massage"
 glyph: massager
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-20
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der klügste Kauf in Therabodys Sortiment — tiefe 16-mm-Percussion plus schnelle Wärme, in einem Griff, den man wirklich eine ganze Session halten kann. Der Preis ist der Haken."
@@ -18,9 +18,10 @@ sqwodScore: 86
 confidence: High
 crowd:
   score: 87
-  reviews: 2400
-  platforms: 5
+  reviews: 4400
+  platforms: 6
   sources:
+    - { name: "Trustpilot", value: "1.8★", url: "https://www.trustpilot.com/review/theragun.com" }
     - { name: "Therabody", value: "4.8★" }
     - { name: "Best Buy", value: "4.7★" }
     - { name: "MedGrade", value: "88/100" }

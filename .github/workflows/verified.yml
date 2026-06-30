@@ -1,0 +1,36 @@
+name: Refresh Sqwod Verified (crowd signal)
+
+on:
+  workflow_dispatch:            # manual run from the Actions tab
+  schedule:
+    - cron: '30 4 * * *'        # ~06:30 Berlin, every day — keep reviews & scores current
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Refresh Trustpilot crowd signal (live with key, registry without)
+        env:
+          TRUSTPILOT_API_KEY: ${{ secrets.TRUSTPILOT_API_KEY }}
+        run: node automation/verified.mjs --date=$(date +%F)
+
+      - name: Commit & push (only if a score actually changed)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add site/src/content/reviews automation/verified-sources.json
+          if git diff --staged --quiet; then
+            echo "No crowd changes today."
+          else
+            git commit -m "verified: refresh crowd signal $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi

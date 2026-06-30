@@ -1,0 +1,167 @@
+{
+  "_doc": "Control surface for the human-in-the-loop Intelligence refresh (automation/intelligence-refresh.mjs). Every numeric figure we publish is tracked here with the SINGLE named source it's cited to. The scanner re-checks each on its cadence, drafts a proposal (current value + your source → new value + where it came from), emails you Approve/Reject, and applies only what you approve. `index` is the figure's 0-based position in the report's frontmatter `figures:` array. `value`/`sourceLabel` MUST match what's published. Optional `period` pins the figure to an edition year (e.g. '2026'): the verifier must only return a value the source states for that year and will NOT substitute a different year's number — it flags a mismatch for review instead. Qualitative or by-design-historical figures (e.g. 'first 90 days', the legacy 71.4%) are intentionally not tracked — there's nothing to diff.",
+  "reports": {
+    "member-retention-benchmark": {
+      "figures": [
+        {
+          "index": 0,
+          "label": "Industry annual retention",
+          "value": "66.4%",
+          "sourceLabel": "HFA 2025",
+          "sourceUrl": "https://www.healthandfitness.org/",
+          "period": "2025",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 1,
+          "label": "Strong boutique target",
+          "value": "75–80%",
+          "sourceLabel": "StudioPulse 2026",
+          "sourceUrl": "https://getstudiopulse.com/blog/boutique-fitness-retention-rate",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        }
+      ]
+    },
+    "wearables-84bn-market": {
+      "figures": [
+        {
+          "index": 0,
+          "label": "Global wearables market",
+          "value": "$91.1bn",
+          "sourceLabel": "GMInsights",
+          "sourceUrl": "https://www.gminsights.com/industry-analysis/wearables-market",
+          "period": "2026",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 1,
+          "label": "Worldwide wearable shipments",
+          "value": "612.5M",
+          "sourceLabel": "IDC",
+          "sourceUrl": "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories",
+          "period": "2028",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 2,
+          "label": "Smartwatch market revenue",
+          "value": "$40.6bn",
+          "sourceLabel": "Statista",
+          "sourceUrl": "https://www.statista.com/forecasts/1314322/worldwide-revenue-of-smartwatch-market",
+          "period": "2029",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 3,
+          "label": "Smart-ring shipments, 2024",
+          "value": "≈2×",
+          "sourceLabel": "Omdia",
+          "sourceUrl": "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings",
+          "period": "2024",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-28"
+        }
+      ]
+    },
+    "studio-retention-math": {
+      "_note": "Range/aggregator figures — the scanner surfaces these as review-due nudges (auto-apply skips ranges); tracked so they're never a blind spot.",
+      "figures": [
+        {
+          "index": 0,
+          "label": "Monthly member churn",
+          "value": "4–8%",
+          "sourceLabel": "Smart Health Clubs",
+          "sourceUrl": "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 1,
+          "label": "Quit within 90 days",
+          "value": "~50%",
+          "sourceLabel": "Smart Health Clubs",
+          "sourceUrl": "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        },
+        {
+          "index": 2,
+          "label": "Cost to acquire vs retain",
+          "value": "5–7×",
+          "sourceLabel": "Glofox",
+          "sourceUrl": "https://www.glofox.com/blog/reducing-churn/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        }
+      ]
+    },
+    "recovery-economy": {
+      "figures": [
+        {
+          "index": 0,
+          "label": "Prioritize wellness more YoY",
+          "value": "~30%",
+          "sourceLabel": "CivicScience",
+          "sourceUrl": "https://civicscience.com/health-and-wellness-the-only-category-with-net-positive-spending-intent-in-2026/",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-28"
+        }
+      ]
+    },
+    "ghosted-members": {
+      "_note": "Headline figure is the Zenoti 2026 survey stat (pinned to 2026 so the verifier can't grab a different survey year). The 90-day / 5–7× / 66.4% figures are evergreen or tracked under other reports.",
+      "figures": [
+        {
+          "index": 0,
+          "label": "Lapsed members never contacted",
+          "value": "49%",
+          "sourceLabel": "Zenoti · Athletech News",
+          "sourceUrl": "https://athletechnews.com/atn-insights-49-percent-of-lapsed-members-say-their-gym-never-reached-out-after-they-stopped-attending/",
+          "period": "2026",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-29"
+        }
+      ]
+    },
+    "pilates-reformer-boom": {
+      "_note": "Each figure pinned to its edition year. We deliberately do NOT track a 'global Pilates market' figure — the circulating $142bn–$614bn estimates are market-mill noise; the credible anchor is IBISWorld's US Pilates & Yoga studios figure.",
+      "figures": [
+        {
+          "index": 0,
+          "label": "US Pilates & yoga studios",
+          "value": "$19.2bn",
+          "sourceLabel": "IBISWorld",
+          "sourceUrl": "https://www.ibisworld.com/united-states/market-size/pilates-yoga-studios/4185/",
+          "period": "2026",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-29"
+        },
+        {
+          "index": 1,
+          "label": "Pilates reservations YoY",
+          "value": "+66%",
+          "sourceLabel": "ClassPass · Fitt Insider",
+          "sourceUrl": "https://insider.fitt.co/pilates-tops-global-fitness-trends/",
+          "period": "2026",
+          "cadenceDays": 180,
+          "lastChecked": "2026-06-29"
+        },
+        {
+          "index": 2,
+          "label": "Peloton Pilates workouts",
+          "value": "+48%",
+          "sourceLabel": "Peloton Q3 FY2026",
+          "sourceUrl": "https://investor.onepeloton.com/news-releases/news-release-details/peloton-announces-q3-fy2026-financial-results",
+          "period": "2026",
+          "cadenceDays": 90,
+          "lastChecked": "2026-06-29"
+        }
+      ]
+    }
+  }
+}

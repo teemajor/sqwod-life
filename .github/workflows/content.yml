@@ -23,13 +23,13 @@ jobs:
       - name: Rewrite in Sqwod voice (EN + DE)
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node automation/cascade.mjs --date=$(date +%F) --status=published   # auto-publish; verification pass holds flagged issues at "review"
+        run: node automation/cascade.mjs --date=$(date +%F) --status=published   # auto-publish; guardrail repairs/drops unverifiable items, then publishes — no human review
 
       - name: Voice it — TTS audio + podcast feeds (EN + DE)
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
-          ELEVENLABS_VOICE_EN: ${{ secrets.ELEVENLABS_VOICE_EN }}
-          ELEVENLABS_VOICE_DE: ${{ secrets.ELEVENLABS_VOICE_DE }}
+          # Voice ids are version-controlled in automation/audio.mjs (authoritative);
+          # we no longer inject the VOICE_EN/DE secrets so the id logs unmasked.
         run: node automation/audio.mjs --date=$(date +%F)
 
       - name: Render the email (EN + DE, with sponsor slot)

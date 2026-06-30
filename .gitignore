@@ -41,3 +41,9 @@ SqwodLife_*.csv
 # Statista / licensed source docs — PRIVATE, never publish (keep the README only)
 research/statista/*
 !research/statista/README.md
+
+# Editor/FUSE temp + delete remnants
+.fuse_hidden*
+*.swp
+*~
+.DS_Store

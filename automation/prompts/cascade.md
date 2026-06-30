@@ -4,7 +4,7 @@ These are the instructions the model follows at each step. The runner's `generat
 
 Global rules for every step:
 - Voice: **Morning Brew for the business of fitness** — smart, witty, conversational, a little cheeky; rebel and operator-first; data-grounded but never dry. Facts airtight, delivery fun. We speak to a fun audience (coaches, trainers, studio founders, operators), so we have a bit of fun — one light joke/pun/wink per item max, and clarity always wins over the bit. Every stat ends in a "so what." German is authored native, never translated jokes.
-- Cite the source. Each fact maps to `source.provenance` / `source.id` → the living wiki.
+- Cite the source. Each fact maps to `source.provenance` / `source.id` → the living wiki. Follow `EDITORIAL.md`: source claims to authority/evidence; virality (LinkedIn/X) is a signal of what's relevant/actionable, never a citation — verify against an authoritative source.
 - Produce EN **and** DE as first-class outputs. German is authored, not post-processed.
 - Tag with `pillar` + `conversion` from the source.
 - Human-in-the-loop: output `status: draft`; Tee approves before publish.

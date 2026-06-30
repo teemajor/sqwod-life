@@ -4,6 +4,12 @@ on:
   push:
     branches: [main, master]
   workflow_dispatch:
+  # The audio/content workflows commit with GITHUB_TOKEN, which does NOT fire the
+  # push event above — so deploy when they finish too, or new audio (e.g. a voice
+  # change) gets committed to main but never published.
+  workflow_run:
+    workflows: ["Backfill Daily audio", "Generate content (Sqwod cascade)"]
+    types: [completed]
 
 permissions:
   contents: read

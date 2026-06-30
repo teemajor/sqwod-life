@@ -1,9 +1,14 @@
 import { type Lang } from './ui';
 
-// Reader-facing LANES (2026-06). Four top-level streams; the granular content
-// type (founder-story, ai-automation, method…) lives in each item's `type` tag.
+// Pillar values that may appear in content frontmatter (incl. legacy `gear`,
+// still used internally by Sqwod Verified reviews). Keep all four for typing/meta.
 export const PILLARS = ['move', 'build', 'gear', 'signal'] as const;
 export type Pillar = (typeof PILLARS)[number];
+
+// Reader-facing LANES that actually render in nav/hub/routes (2026-06). `gear`
+// is folded into Sqwod Verified — that IS the gear/buying destination — so it's
+// no longer a separate lane. Re-add 'gear' here to bring the lane back.
+export const LANES = ['move', 'build', 'signal'] as const;
 
 export const pillarMeta: Record<Pillar, {
   label: Record<Lang, string>;

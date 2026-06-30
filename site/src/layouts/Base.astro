@@ -10,12 +10,16 @@ interface Props {
   description?: string;
   active?: string;
   altPath?: string; // same page in the other language → hreflang
+  image?: string;   // social card image (path or absolute); defaults to the brand cover
+  ogType?: string;  // 'website' (default) | 'article'
 }
-const { lang, title, description = '', active, altPath } = Astro.props;
+const { lang, title, description = '', active, altPath, image = '/podcast-cover.png', ogType = 'website' } = Astro.props;
 const other = lang === 'en' ? 'de' : 'en';
 const path = Astro.url.pathname;
 const otherPath = altPath ?? path.replace(`/${lang}`, `/${other}`);
 const canonical = new URL(path, Astro.site).toString();
+const ogImage = new URL(image, Astro.site).toString();
+const ogLocale = lang === 'de' ? 'de_DE' : 'en_US';
 ---
 <!doctype html>
 <html lang={lang}>
@@ -29,6 +33,25 @@ const canonical = new URL(path, Astro.site).toString();
   <link rel="alternate" hreflang={lang} href={canonical} />
   <link rel="alternate" hreflang={other} href={new URL(otherPath, Astro.site).toString()} />
   <link rel="alternate" hreflang="x-default" href={new URL(path.replace(`/${lang}`, '/en'), Astro.site).toString()} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content={ogType} />
+  <meta property="og:site_name" content="sqwod.life" />
+  <meta property="og:locale" content={ogLocale} />
+  <meta property="og:locale:alternate" content={other === 'de' ? 'de_DE' : 'en_US'} />
+  <meta property="og:title" content={title} />
+  {description && <meta property="og:description" content={description} />}
+  <meta property="og:url" content={canonical} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:alt" content="Sqwod" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  {description && <meta name="twitter:description" content={description} />}
+  <meta name="twitter:image" content={ogImage} />
+
+  <slot name="head" />
 </head>
 <body>
   <Header lang={lang} active={active} altPath={otherPath} />
@@ -36,5 +59,21 @@ const canonical = new URL(path, Astro.site).toString();
     <slot />
   </main>
   <Footer lang={lang} />
+  <script is:inline>
+    // One-click copy on every prose code block (e.g. the AI prompts).
+    document.querySelectorAll('.prose pre').forEach(function (pre) {
+      if (pre.querySelector('.copy-code')) return;
+      var btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'copy-code'; btn.textContent = 'Copy';
+      btn.addEventListener('click', function () {
+        var code = pre.querySelector('code') || pre;
+        navigator.clipboard.writeText(code.innerText).then(function () {
+          btn.textContent = 'Copied ✓'; btn.classList.add('done');
+          setTimeout(function () { btn.textContent = 'Copy'; btn.classList.remove('done'); }, 1600);
+        }).catch(function () {});
+      });
+      pre.appendChild(btn);
+    });
+  </script>
 </body>
 </html>

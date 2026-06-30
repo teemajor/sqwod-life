@@ -1,0 +1,19 @@
+{
+  "id": "intel-member-retention-benchmark-0-2026-06-28",
+  "report": "member-retention-benchmark",
+  "index": 0,
+  "label": "Industry annual retention",
+  "oldValue": "66.4%",
+  "newValue": null,
+  "currentSource": "HFA 2025",
+  "checkedUrl": "https://www.healthandfitness.org/",
+  "checkedDomain": "healthandfitness.org",
+  "sourceUrl": "https://www.healthandfitness.org/",
+  "snippet": "(value not found on page — please verify)",
+  "confidence": "low",
+  "kind": "review-due",
+  "reliability": "Could not read the source automatically — verify by hand.",
+  "recommendation": "Reminder to check healthandfitness.org yourself; your current figure stays either way.",
+  "status": "pending",
+  "createdAt": "2026-06-28"
+}

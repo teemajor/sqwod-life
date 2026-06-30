@@ -89,8 +89,24 @@ const articles = defineCollection({
     sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]), // rendered citations
     asOf: z.string().optional(),               // "as of" date for data-heavy pieces
     // Living-report extras (Sqwod Intelligence):
-    figures: z.array(z.object({ label: z.string(), value: z.string(), note: z.string().optional(), source: z.string().optional() })).default([]),
-    series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional() }).optional(),
+    takeaways: z.array(z.string()).default([]),   // TL;DR — the scannable, citable punchlines up top
+    figures: z.array(z.object({ label: z.string(), value: z.string(), note: z.string().optional(), source: z.string().optional(), url: z.string().optional() })).default([]),
+    // series.low/high are OPTIONAL estimate bands (firms disagree) — only render when present; never fabricated.
+    series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional(), low: z.array(z.number()).optional(), high: z.array(z.number()).optional() }).optional(),
+    playbook: z.array(z.object({ move: z.string(), why: z.string() })).default([]),  // "what this means for you" — operator actions
+    // "Where do you stand" benchmark — reader compares their own number vs. sourced bands. Real data only.
+    benchmark: z.object({
+      label: z.string(),
+      unit: z.string().default('%'),
+      prompt: z.string().optional(),
+      betterIsHigh: z.boolean().default(true),
+      min: z.number().default(0),
+      max: z.number().default(100),
+      median: z.number().optional(),
+      medianLabel: z.string().optional(),
+      bands: z.array(z.object({ to: z.number(), label: z.string() })),
+      source: z.string().optional(),
+    }).optional(),
     changelog: z.array(z.object({ date: z.string(), note: z.string() })).default([]),
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({
@@ -179,4 +195,26 @@ const press = defineCollection({
   }),
 });
 
-export const collections = { reviews, articles, daily, press };
+// Corrections & Clarifications — the public "retractions" ledger, one entry per
+// language. Filed by automation/corrections.mjs (by hand, or by the Intelligence
+// refresh when it corrects an error) and rendered at /[lang]/corrections.
+// A correction = we published something WRONG; a clarification = we sharpened a
+// loosely-worded claim. Either way it's logged in public and emailed to the desk.
+const corrections = defineCollection({
+  type: 'content',
+  schema: z.object({
+    lang,
+    date: z.coerce.date(),
+    report: z.string(),               // slug of the corrected article/report
+    reportTitle: z.string(),
+    reportUrl: z.string(),
+    kind: z.enum(['correction', 'clarification']).default('correction'),
+    was: z.string(),                  // what we previously published
+    now: z.string(),                  // what it says now
+    reason: z.string(),               // why the original was wrong/loose
+    source: z.string().optional(),    // named source for the corrected figure
+    sourceUrl: z.string().optional(),
+  }),
+});
+
+export const collections = { reviews, articles, daily, press, corrections };

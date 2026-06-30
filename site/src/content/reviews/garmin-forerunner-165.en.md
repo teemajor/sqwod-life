@@ -7,10 +7,10 @@ productName: "Garmin Forerunner 165"
 category: "Running smartwatch"
 glyph: watch
 gallery: 4
-pillar: operations-technology
+pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-20
+updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The best-value entry into Garmin's training ecosystem — bright AMOLED, ~11-day battery, and the metrics that matter, without the €500 price."
@@ -18,9 +18,10 @@ sqwodScore: 84
 confidence: High
 crowd:
   score: 85
-  reviews: 6200
-  platforms: 5
+  reviews: 9244
+  platforms: 6
   sources:
+    - { name: "Trustpilot", value: "1.5★", url: "https://www.trustpilot.com/review/www.garmin.com" }
     - { name: "Amazon", value: "4.6★" }
     - { name: "Garmin", value: "4.5★" }
     - { name: "the5krunner", value: "8.5/10" }

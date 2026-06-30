@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import ArticleView from '../../../components/ArticleView.astro';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
+import { getRelated } from '../../../lib/related';
 
 export async function getStaticPaths() {
   const arts = await getCollection('articles', (a) => a.data.format === 'report' || a.data.format === 'index');
@@ -10,7 +11,38 @@ export async function getStaticPaths() {
 }
 const { entry } = Astro.props;
 const lang = Astro.params.lang as Lang;
+const d = entry.data;
+
+// Structured data → Article + Dataset. The Dataset node (figures as
+// variableMeasured + temporal coverage) makes the report citable by AI engines
+// and eligible for Google Dataset Search — the GEO payoff for "we have the data".
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const url = new URL(Astro.url.pathname, Astro.site).toString();
+const iso = (x: Date) => new Date(x).toISOString();
+const years = d.series?.years ?? [];
+const variableMeasured = (d.figures ?? []).map((f) => ({
+  '@type': 'PropertyValue', name: f.label, value: f.value, ...(f.source ? { description: `Source: ${f.source}` } : {}),
+}));
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Article', headline: d.title, description: d.description,
+      datePublished: iso(d.publishedAt), dateModified: iso(d.updatedAt), inLanguage: lang,
+      author: { '@type': 'Organization', name: d.author }, publisher: { '@type': 'Organization', name: 'sqwod.life' },
+      image: `${site}/podcast-cover.png`, mainEntityOfPage: url, isAccessibleForFree: !d.gated,
+    },
+    {
+      '@type': 'Dataset', name: d.title, description: d.description, url,
+      creator: { '@type': 'Organization', name: d.author }, dateModified: iso(d.updatedAt),
+      ...(years.length ? { temporalCoverage: `${years[0]}/${years[years.length - 1]}` } : {}),
+      ...(variableMeasured.length ? { variableMeasured } : {}),
+      ...(d.sources?.length ? { isBasedOn: d.sources.map((s) => s.url) } : {}),
+    },
+  ],
+};
 ---
-<Base lang={lang} title={`${entry.data.title} — Sqwod Intelligence`} description={entry.data.description} active="intelligence">
-  <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel="Sqwod Intelligence" /></div>
+<Base lang={lang} title={`${d.title} — Sqwod Intelligence`} description={d.description} active="intelligence" ogType="article" image="/podcast-cover.png">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel="Sqwod Intelligence" related={await getRelated(lang, entry)} /></div>
 </Base>

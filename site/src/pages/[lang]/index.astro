@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import PillarIcon from '../../components/PillarIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../i18n/ui';
-import { PILLARS, pillarMeta } from '../../i18n/pillars';
+import { LANES, pillarMeta } from '../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../config/podcast';
 import { SUBSCRIBE } from '../../config/subscribe';
 import { existsSync } from 'node:fs';
@@ -66,7 +66,7 @@ const tagline = lang === 'de'
   <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
     <p class="kick reveal">{lang==='de'?'Was wir abdecken':'What we cover'}</p>
     <div class="grid cols3">
-      {PILLARS.map((p, i) => (
+      {LANES.map((p, i) => (
         <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr" href={`/${lang}/articles/${p}`}>
           <PillarIcon pillar={p} size={52} />
           <div class="info">

@@ -11,10 +11,14 @@
  * audio synthesis and still rebuilds the feeds from whatever MP3s exist
  * (dry-run safe — never crashes the pipeline).
  *
+ * Voice selection: VOICE_EN / VOICE_DE below are the AUTHORITATIVE, version-
+ * controlled voices. The ELEVENLABS_VOICE_EN/DE secrets are NOT consulted and the
+ * workflows no longer pass them, so the chosen voice id prints UNMASKED in the log
+ * and can't be silently overridden by a hidden secret. To change a voice, edit the
+ * id here (visible in the diff + the run log).
+ *
  * Env:
  *   ELEVENLABS_API_KEY     enable synthesis
- *   ELEVENLABS_VOICE_EN    voice id for English  (default: multilingual voice)
- *   ELEVENLABS_VOICE_DE    voice id for German   (default: same multilingual voice)
  *   SITE_URL               public base, default https://sqwod.life
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs';
@@ -29,9 +33,19 @@ const PUBLIC = join(__dirname, '..', 'site', 'public');
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 const SITE = (process.env.SITE_URL || 'https://sqwod.life').replace(/\/$/, '');
 const KEY = process.env.ELEVENLABS_API_KEY || '';
-// ElevenLabs "multilingual v2" reads EN + DE from one voice; override per language if you like.
-const DEFAULT_VOICE = '21m00Tcm4TlvDq8ikWAM'; // Rachel — multilingual
-const VOICE = { en: process.env.ELEVENLABS_VOICE_EN || DEFAULT_VOICE, de: process.env.ELEVENLABS_VOICE_DE || DEFAULT_VOICE };
+// --- Version-controlled Daily voices (rendered by eleven_multilingual_v2) ---
+// EN: 'Adam' is an ElevenLabs premade voice (on every account). DE: 'Helmut' is a
+// native-German Voice-Library voice — it must be saved in the account behind
+// ELEVENLABS_API_KEY (it is). NOTE: env vars still win if set, so once these are
+// correct you can clear ELEVENLABS_VOICE_EN/DE to make the repo the source of truth.
+// These repo values are AUTHORITATIVE and version-controlled — the source of truth.
+// The ELEVENLABS_VOICE_EN/DE secrets are intentionally NOT consulted, and the
+// workflows no longer inject them, so this id prints UNMASKED in the run log and
+// can never be silently overridden by a hidden secret again.
+const VOICE_EN = 'IRHApOXLvnW57QJPQH2P'; // Adam — operator's chosen EN voice
+const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1'; // Helmut — native German
+const VOICE = { en: VOICE_EN, de: VOICE_DE };
+if (KEY) console.log(`· Daily voices (repo, authoritative) — EN: ${VOICE.en} · DE: ${VOICE.de}`);
 
 const SHOW = {
   en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
@@ -109,16 +123,27 @@ const summary = (line) => { try { if (process.env.GITHUB_STEP_SUMMARY) writeFile
 // Turns a silent green run into a clear, actionable error.
 async function preflight(langs) {
   if (!KEY) { ghError('ELEVENLABS_API_KEY is empty in this job. Check the secret name/scope (repo Settings → Secrets → Actions → ELEVENLABS_API_KEY).'); return false; }
-  // Validate the key against the account.
+  // Validate the key against the account. A least-privilege key scoped to only
+  // Text-to-Speech legitimately lacks `user_read`/`voices_read` — that must NOT
+  // block synthesis. Only a genuinely invalid/expired key (a non-permission 401,
+  // or 403) should hard-fail here; "missing_permissions" means the key is fine,
+  // just narrowly scoped, so we proceed and let synth be the real test.
   const who = await fetch('https://api.elevenlabs.io/v1/user', { headers: { 'xi-api-key': KEY } });
-  if (!who.ok) { ghError(`ElevenLabs key rejected (${who.status}). ${(await who.text()).slice(0, 160)}`); return false; }
-  // Validate each voice id we'll use.
+  if (!who.ok) {
+    const body = await who.text();
+    if (!(who.status === 401 && /missing_permissions/.test(body))) {
+      ghError(`ElevenLabs key rejected (${who.status}). ${body.slice(0, 160)}`); return false;
+    }
+    console.log('· ElevenLabs key is scoped to TTS only (no user_read) — skipping account probe, proceeding.');
+  }
+  // Validate each voice id we'll use; tolerate a permission-scoped key (verify at synth).
   let ok = true;
   for (const lang of langs) {
     const id = VOICE[lang];
     const v = await fetch(`https://api.elevenlabs.io/v1/voices/${id}`, { headers: { 'xi-api-key': KEY } });
-    if (!v.ok) { ghError(`Voice id for ${lang.toUpperCase()} ("${id}") is invalid (${v.status}). Check ELEVENLABS_VOICE_${lang.toUpperCase()}.`); ok = false; }
-    else { const j = await v.json().catch(() => ({})); console.log(`· voice ${lang}: "${j.name || id}" ✓`); }
+    if (v.ok) { const j = await v.json().catch(() => ({})); console.log(`· voice ${lang}: "${j.name || id}" ✓`); }
+    else if (v.status === 401) { console.log(`· voice ${lang}: scoped key — skipping voice probe, will verify at synth.`); }
+    else { ghError(`Voice id for ${lang.toUpperCase()} ("${id}") is invalid (${v.status}). Check ELEVENLABS_VOICE_${lang.toUpperCase()}.`); ok = false; }
   }
   return ok;
 }

@@ -1,0 +1,52 @@
+name: Intelligence refresh — scan
+
+# Weekly: web-search-check figures that are due. Same-source, high-confidence
+# updates auto-apply (--auto) and are emailed with a Revert; everything else is
+# drafted as a proposal and emailed for your tap. Set repo var INTEL_AUTO_APPLY
+# to "false" to turn the auto-apply tier off.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Scan ALL tracked figures now, ignoring cadence (test run)"
+        type: boolean
+        default: false
+  schedule:
+    - cron: '0 6 * * 1'        # Mondays ~08:00 Berlin
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Scan due figures + email proposals
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.INTEL_FROM }}
+          INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
+          INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
+          INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
+          INTEL_AUTO_APPLY: ${{ vars.INTEL_AUTO_APPLY }}   # set to "false" to disable the auto-apply tier
+        run: node automation/intelligence-refresh.mjs --scan --auto ${{ inputs.force && '--force' || '' }} --date=$(date +%F)
+
+      - name: Commit proposals, auto-applied edits + lastChecked (if any)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/intel-queue automation/intel-sources.json site/src/content/articles
+          if git diff --staged --quiet; then
+            echo "No proposals this scan."
+          else
+            git commit -m "intel: scan $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi

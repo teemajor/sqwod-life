@@ -1,0 +1,50 @@
+name: Backfill Daily audio
+
+# Voice past Sqwod Daily issues that were generated without a working ElevenLabs
+# key (e.g. before the TTS permission was fixed). Manual only.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dates:
+        description: "Comma-separated issue dates to voice, e.g. 2026-06-24,2026-06-25,2026-06-26"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Synthesize audio for each date (EN + DE)
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          # Voice ids are version-controlled in automation/audio.mjs (authoritative);
+          # we no longer inject the VOICE_EN/DE secrets so the id logs unmasked.
+        run: |
+          IFS=',' read -ra DS <<< "${{ inputs.dates }}"
+          for d in "${DS[@]}"; do
+            d=$(echo "$d" | xargs)   # trim whitespace
+            echo "::group::Voicing $d"
+            node automation/audio.mjs --date="$d"
+            echo "::endgroup::"
+          done
+
+      - name: Commit & push (if any audio was produced)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add site/public/audio site/public/podcast.xml site/public/podcast.de.xml
+          if git diff --staged --quiet; then
+            echo "No new audio produced (issues missing, or TTS still skipped)."
+          else
+            git commit -m "audio: backfill ${{ inputs.dates }}"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi

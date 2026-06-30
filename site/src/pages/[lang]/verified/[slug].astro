@@ -18,8 +18,48 @@ const lang = Astro.params.lang as Lang;
 const d = entry.data;
 const { Content } = await entry.render();
 const updated = d.updatedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day:'2-digit', month:'short', year:'numeric' });
+
+// Structured data → Google rich result. The crowd aggregate (real reviews
+// across Amazon, app stores, Trustpilot, …) powers AggregateRating; the Sqwod
+// Score is our own editorial Review. dateModified tracks updatedAt so the daily
+// crowd refresh (automation/verified.mjs) signals freshness to search engines.
+const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
+const iso = (x: Date) => x.toISOString().slice(0, 10);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: d.productName,
+  category: d.category,
+  description: d.verdict,
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: d.crowd.score,
+    bestRating: 100,
+    worstRating: 0,
+    ratingCount: d.crowd.reviews,
+    reviewCount: d.crowd.reviews,
+  },
+  review: {
+    '@type': 'Review',
+    name: d.title,
+    reviewBody: d.verdict,
+    datePublished: iso(d.publishedAt),
+    dateModified: iso(d.updatedAt),
+    author: { '@type': 'Organization', name: 'Sqwod Verified' },
+    publisher: { '@type': 'Organization', name: 'sqwod.life' },
+    reviewRating: { '@type': 'Rating', ratingValue: d.sqwodScore, bestRating: 100, worstRating: 0 },
+  },
+  offers: {
+    '@type': 'Offer',
+    price: d.value.bestPrice,
+    priceCurrency: d.value.currency,
+    availability: 'https://schema.org/InStock',
+    url: `${site}/go/${d.urlSlug}`,
+  },
+};
 ---
-<Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified">
+<Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified" ogType="article" image={d.asset.images[0] ?? '/podcast-cover.png'}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
   <div class="crumb">Verified / {d.category}</div>
   <span class="verified-tag">◈ Sqwod Verified</span>
   <h1 style="margin-bottom:2px">{d.productName}</h1>

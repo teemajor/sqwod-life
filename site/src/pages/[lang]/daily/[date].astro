@@ -6,6 +6,7 @@ import { pillarMeta } from '../../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/podcast';
 import ShareBar from '../../../components/ShareBar.astro';
 import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 export async function getStaticPaths() {
   // Only build published editions — drafts stay off the live site.
@@ -22,7 +23,7 @@ const fmt = d.date.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekd
 
 // Show the player only if the episode's audio actually exists in the build.
 const audioPath = episodeAudio(d.urlSlug, lang);
-const hasAudio = existsSync(new URL(`../../../../public${audioPath}`, import.meta.url));
+const hasAudio = existsSync(join(process.cwd(), 'public', 'audio', `${d.urlSlug}-${lang}.mp3`));
 
 const pillarLabel = (p: string) => pillarMeta[p as keyof typeof pillarMeta]?.label[lang] ?? p;
 // Quiet provenance: items that carry a source link become numbered sources.
@@ -42,9 +43,37 @@ const tx = {
   sources: lang === 'de' ? 'Quellen' : 'Sources',
   draft: lang === 'de' ? 'Entwurf — Freigabe ausstehend' : 'Draft — pending approval',
 };
+
+// --- SEO / GEO: a unique title + description per issue (not the boilerplate
+// intro), plus NewsArticle structured data so each episode is its own citable,
+// rich-result-eligible page. The one-line `summary` drives all of it. ---
+const epTitle = d.summary || d.title;
+const metaTitle = `${epTitle} — Sqwod Daily`;
+const dots = d.connectDots?.body?.replace(/\s+/g, ' ').trim();
+let metaDesc = [d.summary, dots || d.items.map((i) => i.headline).join(' · ')].filter(Boolean).join(' — ');
+if (metaDesc.length > 200) metaDesc = metaDesc.slice(0, 199).trimEnd() + '…';
+const canonical = new URL(`/${lang}/daily/${d.urlSlug}/`, Astro.site).toString();
+const jsonLd: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: epTitle,
+  description: metaDesc,
+  image: new URL('/podcast-cover.png', Astro.site).toString(),
+  datePublished: d.date.toISOString(),
+  dateModified: d.date.toISOString(),
+  inLanguage: lang,
+  isAccessibleForFree: true,
+  articleSection: 'Fitness & wellness business',
+  author: { '@type': 'Organization', name: 'Sqwod Daily', url: new URL(`/${lang}/daily`, Astro.site).toString() },
+  publisher: { '@type': 'Organization', name: 'sqwod.life', url: Astro.site?.toString() },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+  url: canonical,
+};
+if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl: new URL(audioPath, Astro.site).toString(), encodingFormat: 'audio/mpeg' };
 ---
-<Base lang={lang} title={`${d.title} — ${fmt}`} description={d.intro}>
-  <div class="crumb"><a href={`/${lang}/daily`}>Sqwod Daily</a> · {fmt}</div>
+<Base lang={lang} title={metaTitle} description={metaDesc} ogType="article" image="/podcast-cover.png">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <div class="crumb"><a href={`/${lang}/daily`}>← Sqwod Daily</a></div>
   <h1 style="margin:0 0 6px">Sqwod Daily</h1>
   <p class="sub" style="margin:0 0 16px">{fmt} · {d.edition}</p>
   {d.status !== 'published' && <p class="dealnote">⚑ {tx.draft}</p>}
