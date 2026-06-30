@@ -148,6 +148,12 @@ const daily = defineCollection({
     stat: z.object({ number: z.string(), label: z.string(), body: z.string().optional(), url: z.string().optional() }).optional(),
     recs: z.array(z.object({ label: z.string(), text: z.string(), url: z.string().optional(), affiliate: z.boolean().default(false) })).default([]), // curated actionable; >=1 affiliate
     play: z.object({ title: z.string(), prompt: z.string(), url: z.string().optional() }).optional(),
+    move: z.object({                     // "Move of the Day" — a curated coach clip (link + credit, never re-hosted)
+      url: z.string(),
+      note: z.string().optional(),       // the client problem it solves / why it made the cut
+      platform: z.string().optional(),   // Instagram | YouTube | TikTok | X
+      handle: z.string().optional(),     // @coach credit
+    }).optional(),
     meanwhile: z.string().optional(),    // entertainment / viral nugget
     meanwhileUrl: z.string().optional(),
     doThis: z.string().optional(),       // kept for back-compat

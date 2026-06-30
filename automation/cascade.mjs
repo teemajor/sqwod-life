@@ -19,14 +19,40 @@
  *   node automation/cascade.mjs --date=2026-06-17
  *   node automation/cascade.mjs --status=review
  */
-import { readFileSync, readdirSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SOURCES_DIR = join(__dirname, 'sources');
 const DAILY_OUT = join(__dirname, '..', 'site', 'src', 'content', 'daily');
+const MOVES_DIR = join(__dirname, 'moves');
 const LANGS = ['en', 'de'];
+
+// ---- Move of the Day: pull the oldest unused curated clip from the queue ----
+// Queue = automation/moves/<id>.json (written by the move-intake Worker).
+// used.json tracks IDs already featured, so each move runs once.
+function pickMove() {
+  if (!existsSync(MOVES_DIR)) return null;
+  const usedPath = join(MOVES_DIR, 'used.json');
+  let used = [];
+  try { used = JSON.parse(readFileSync(usedPath, 'utf8')); } catch {}
+  const files = readdirSync(MOVES_DIR).filter((f) => f.endsWith('.json') && f !== 'used.json');
+  const queue = [];
+  for (const f of files) {
+    try { const m = JSON.parse(readFileSync(join(MOVES_DIR, f), 'utf8')); if (m.url && !used.includes(m.id)) queue.push(m); } catch {}
+  }
+  if (!queue.length) return null;
+  queue.sort((a, b) => String(a.added).localeCompare(String(b.added)));  // oldest first
+  return queue[0];
+}
+function markMoveUsed(id) {
+  if (!id) return;
+  const usedPath = join(MOVES_DIR, 'used.json');
+  let used = [];
+  try { used = JSON.parse(readFileSync(usedPath, 'utf8')); } catch {}
+  if (!used.includes(id)) { used.push(id); writeFileSync(usedPath, JSON.stringify(used, null, 2)); }
+}
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => {
   const [k, v] = a.replace(/^--/, '').split('=');
@@ -326,6 +352,13 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
     lines.push(`  prompt: ${q(s.play.prompt)}`);
     if (s.play.url) lines.push(`  url: ${q(s.play.url)}`);
   }
+  if (s.move && s.move.url) {
+    lines.push('move:');
+    lines.push(`  url: ${q(s.move.url)}`);
+    if (s.move.note) lines.push(`  note: ${q(s.move.note)}`);
+    if (s.move.platform) lines.push(`  platform: ${q(s.move.platform)}`);
+    if (s.move.handle) lines.push(`  handle: ${q(s.move.handle)}`);
+  }
   lines.push('items:');
   for (const it of items) {
     lines.push(`  - headline: ${q(it.headline)}`);
@@ -352,6 +385,10 @@ async function run() {
   const sources = byDate[date];
   mkdirSync(DAILY_OUT, { recursive: true });
 
+  const move = pickMove();   // one curated clip for the day (same in EN + DE); null if queue empty
+  if (move) console.log(`🎬 Move of the Day: ${move.platform || 'clip'} ${move.handle || ''} ${move.url}`);
+  let published = false;
+
   for (const lang of LANGS) {
     let items = [];
     for (const src of sources) {
@@ -360,6 +397,7 @@ async function run() {
     }
     const lead = await generateLead(items, lang);
     let sections = buildSections(lead, lang);     // model output + affiliate rec + Play (even in dry-run)
+    if (move) sections.move = move;               // feature the curated clip at the top of the Daily
     const v = await verifyIssue(items, sections, sources, lang);  // fact-check vs source facts
     sections = v.sections;
     if (v.issues.length) {
@@ -405,10 +443,13 @@ async function run() {
     sections.summary = (lead && lead.summary) || sections.connectTitle || (items[0] && items[0].headline) || 'Sqwod Daily';
     sections.audioScript = await generateAudioScript(items, sections, lang);  // spoken brief for TTS (verified facts only)
     if (sections.audioScript) console.log(`🎙  ${lang.toUpperCase()} audio brief authored (${sections.audioScript.split(/\s+/).length} words)`);
+    if (move) sections.move = move;   // re-affirm (the verify pass rebuilds sections)
     const file = join(DAILY_OUT, `${date}.${lang}.md`);
     writeFileSync(file, issueFrontmatter(date, lang, items, sections, issueStatus));
+    published = true;
     console.log(`✓ ${lang.toUpperCase()} issue → site/src/content/daily/${date}.${lang}.md  (${items.length} items, status: ${issueStatus})`);
   }
+  if (move && published) markMoveUsed(move.id);   // each curated clip runs once
 
   console.log(`\nMode: ${dryRun ? 'DRY-RUN (no LLM key)' : 'LLM'}  ·  Source: ${date}  ·  ${sources.length} sources → ${LANGS.length} bilingual issues`);
   console.log('Cascade steps still available per source (see prompts/cascade.md): report · article · newsletter · social.');

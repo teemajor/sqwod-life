@@ -1,0 +1,12 @@
+name = "sqwod-move-intake"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+[vars]
+GH_OWNER = "teemajor"
+GH_REPO = "sqwod-life"
+GH_BRANCH = "main"
+
+# Secrets are NOT stored here. Set them with:
+#   wrangler secret put MOVE_KEY        # any random string; the Shortcut sends it
+#   wrangler secret put GITHUB_TOKEN    # fine-grained PAT, Contents: Read/Write on sqwod-life

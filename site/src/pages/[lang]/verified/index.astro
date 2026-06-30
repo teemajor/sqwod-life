@@ -27,8 +27,7 @@ const blurb = lang === 'de'
 ---
 <Base lang={lang} title={title} description={blurb} active="verified">
   <div class="crumb">Sqwod Verified</div>
-  <span class="verified-tag reveal">◈ Sqwod Verified</span>
-  <h1 class="reveal d1" style="margin:2px 0 6px">{lang==='de'?'Kaufberatung, der man trauen kann':'Buyer\'s guides you can trust'}</h1>
+  <h1 class="reveal d1" style="margin:0 0 6px">{lang==='de'?'Kaufberatung, der man trauen kann':'Buyer\'s guides you can trust'}</h1>
   <p class="sub reveal d2" style="max-width:64ch">{blurb}</p>
   <p class="sub reveal d2" style="margin-top:6px">
     <a href={`/${lang}/verified/methodology`} style="color:var(--chalk)">{t(lang,'verified.howWeRank')} →</a>

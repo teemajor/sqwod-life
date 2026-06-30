@@ -26,7 +26,7 @@ const abs = (u, lang) => { if (!u) return ''; if (/^https?:\/\//i.test(u)) retur
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 
 // ---- generalized frontmatter reader for our controlled schema ----
-const OBJ = new Set(['sponsor', 'connectDots', 'policyWatch', 'stat', 'play']);
+const OBJ = new Set(['sponsor', 'connectDots', 'policyWatch', 'stat', 'play', 'move']);
 const ARR = new Set(['moneyMoves', 'recs', 'items']);
 const jval = (s) => { const m = s.match(/"(?:[^"\\]|\\.)*"/); return m ? JSON.parse(m[0]) : (s.trim() || ''); };
 function parseIssue(file) {
@@ -145,6 +145,12 @@ function render(iss, lang) {
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:12px;">${esc(iss.play.prompt)}</div>` +
     `<a href="${iss.play.url ? abs(iss.play.url, lang) : `${SITE}/${lang}/play/`}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
 
+  // MOVE OF THE DAY — curated coach clip (link + credit, never re-hosted)
+  const move = (iss.move && iss.move.url) ? card(label(lang === 'de' ? 'Move des Tages' : 'Move of the Day', 'hero-bars.gif') +
+    (iss.move.note ? `<div style="font:800 19px/1.32 ${F};color:${INK};margin-bottom:13px;">${esc(iss.move.note)}</div>` : '') +
+    `<a href="${esc(iss.move.url)}" rel="nofollow noopener" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${lang === 'de' ? 'Ansehen auf' : 'Watch on'} ${esc(iss.move.platform || 'social')} &rarr;</a>` +
+    (iss.move.handle ? `<div style="font:400 12px/1.4 ${F};color:${G4};margin-top:10px;">Coach: ${esc(iss.move.handle)}</div>` : '')) : '';
+
   // MEANWHILE (entertainment)
   const meanwhile = iss.meanwhile ? card(label(tx.meanwhile, 'pulse-ring.gif') +
     `<div style="font:400 15.5px/1.7 ${F};color:${G1};">${esc(iss.meanwhile)}${iss.meanwhileUrl ? ` <a href="${esc(iss.meanwhileUrl)}" style="color:${G4};">→</a>` : ''}</div>`) : '';
@@ -190,6 +196,7 @@ function render(iss, lang) {
           <div style="font:500 16px/1.6 ${F};color:${G1};">${esc(iss.intro || '')}</div>
           <div style="font:600 12px/1 ${F};color:${G4};margin-top:12px;">— Sqwod</div>
         </td></tr>
+        ${move}
         ${money}
         ${dots}
         ${rundown}

@@ -93,6 +93,17 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
     </div>
   </section>
 
+  {d.move && d.move.url && (
+    <section class="movecard">
+      <p class="kick">{lang==='de'?'Move des Tages':'Move of the Day'}</p>
+      {d.move.note && <p class="move-note">{d.move.note}</p>}
+      <a class="move-link" href={d.move.url} target="_blank" rel="nofollow noopener">
+        {lang==='de'?'Ansehen auf':'Watch on'} {d.move.platform || 'social'} →
+      </a>
+      {d.move.handle && <span class="move-credit">{lang==='de'?'Coach:':'Coach:'} {d.move.handle}</span>}
+    </section>
+  )}
+
   <!-- CONNECT THE DOTS: the teaching lead -->
   {d.connectDots && (
     <section class="dots">
@@ -198,6 +209,11 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
   .digest h3{font-size:21px;line-height:1.2;letter-spacing:-.02em;margin:7px 0 6px;font-weight:800}
   .digest .dek{color:var(--g2);font-size:15.5px;line-height:1.6;margin:0}
 
+  .movecard{margin-top:16px;border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;background:var(--panel)}
+  .movecard .kick{margin:0 0 8px}
+  .move-note{font-size:18px;font-weight:700;line-height:1.35;color:var(--chalk);margin:0 0 12px;letter-spacing:-.01em}
+  .move-link{display:inline-block;font-size:13px;font-weight:800;color:var(--ink);background:var(--chalk);text-decoration:none;padding:9px 16px;border-radius:999px}
+  .move-credit{display:block;margin-top:10px;font-size:12px;color:var(--g3)}
   .dots{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
   .dots h2{font-size:25px;line-height:1.2;letter-spacing:-.02em;margin:8px 0 10px}
   .dotbody{color:var(--g1);font-size:16.5px;line-height:1.7;margin:0 0 12px;max-width:62ch}
