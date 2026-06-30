@@ -33,4 +33,4 @@ Industry monthly churn runs about 4–8% (top studios hold 2–3%), it costs rou
 
 The lever isn't a bigger ad budget. It's the first 30–90 days — onboarding, early wins, and the habit loop that turns a trial into a member. The payoff is outsized: a 5% lift in retention can raise profit more than 20%, and members who pass the 90-day mark are roughly 3× more likely to stay a full year.
 
-This is the exact problem a private, distraction-free training space is built to solve — fewer drop-offs, more finished sessions.
+The takeaway is operational, not promotional: win the first 30–90 days with structured onboarding and early wins, and the retention math stops working against you.

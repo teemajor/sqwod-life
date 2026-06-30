@@ -58,6 +58,6 @@ Der Wachstumsvorsprung liegt allerdings nicht am Handgelenk, sondern am Finger. 
 
 Wenn Recovery-Tracking allgegenwärtig und Mainstream ist, verschiebt sich das Kundengespräch von *„solltest du tracken?"* zu *„was machen wir mit den Daten?"* — und genau diese zweite Frage ist, wo gutes Coaching sein Geld verdient. Die Betreiber, die diese Welle gewinnen, verkaufen keine Hardware; sie verwandeln die Daten, die ihre Kund:innen ohnehin erzeugen, in Programmierung, Verbindlichkeit und Bindung. Sichere dir die Deutungshoheit, bevor eine Big-Tech-Marke die Beziehung besitzt.
 
-Das ist die Logik hinter jedem Sqwod-Produkt: das Wearable ist der Sensor, aber der Coach — und das System drumherum — ist der Wert. Nutz den Trend; lass dich nicht von ihm nutzen.
+Die Logik für Betreiber: Das Wearable ist nur der Sensor — der Coach und das System drumherum sind der Wert. Nutz den Trend; lass dich nicht von ihm nutzen.
 
 *Ein Flaggschiff-Report von Sqwod Intelligence und ein **lebendes Dokument** — jede Zahl nennt eine benannte Quelle, und wir aktualisieren sie, sobald neue Daten vorliegen (siehe Änderungslog). Die gegatete Vollversion ergänzt Segment-Aufschlüsselungen und das Operator-Playbook.*

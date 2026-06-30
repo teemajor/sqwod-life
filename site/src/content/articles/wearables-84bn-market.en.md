@@ -58,6 +58,6 @@ The growth edge isn't on the wrist, though — it's on the finger. **Smart-ring 
 
 When recovery tracking is ambient and mainstream, the client conversation flips from *"should you track?"* to *"what do we do with the data?"* — and that second question is exactly where good coaching earns its keep. The operators who win this wave won't be the ones who sell hardware; they'll be the ones who turn the data their clients already generate into programming, accountability, and retention. Own the interpretation layer before a big-tech brand owns the relationship.
 
-That's the through-line of every Sqwod product: the wearable is the sensor, but the coach — and the system around them — is the value. Use the trend; don't get used by it.
+The through-line for operators: the wearable is just the sensor — the coach, and the system around them, is the value. Use the trend; don't get used by it.
 
 *This is a flagship Sqwod Intelligence report and a **living document** — every figure cites one named source, and we refresh them as new data lands (see the update log). The gated full version adds segment-by-segment breakdowns and the operator playbook.*

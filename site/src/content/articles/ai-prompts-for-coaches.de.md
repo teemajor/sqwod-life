@@ -85,4 +85,4 @@ muss in meinem Transkript stehen — keine Stats erfinden. Triff meinen Ton: [ ]
 
 Diese fünf decken ~80% der Routinearbeit ab — Programming, Bindung, Content, Onboarding, Distribution. Du brauchst kein Deck mit 50; du brauchst fünf, die du jede Woche wirklich nutzt — mit deinem Urteil obendrauf.
 
-Genau diese Art umsetzbarer KI-How-tos führt natürlich zu Sqwod AI — dieselben Workflows, eingebaut in deine Praxis.
+Speichere sie, pass sie an deine Stimme an und bau die fünf in deinen Wochen-Workflow ein — der Hebel liegt darin, sie konsequent zu nutzen, nicht mehr zu sammeln.

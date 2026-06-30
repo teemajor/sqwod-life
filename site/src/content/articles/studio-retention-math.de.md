@@ -33,4 +33,4 @@ Der Branchen-Churn liegt bei rund 4–8% pro Monat (Top-Studios halten 2–3%), 
 
 Der Hebel ist nicht mehr Werbebudget. Es sind die ersten 30–90 Tage — Onboarding, frühe Erfolge und die Gewohnheitsschleife, die aus dem Probetraining ein Mitglied macht. Der Effekt ist überproportional: 5% mehr Bindung können den Gewinn um über 20% steigern, und wer die 90-Tage-Marke übersteht, bleibt etwa 3× wahrscheinlicher ein ganzes Jahr.
 
-Genau dafür ist ein privater, ablenkungsfreier Trainingsraum gebaut — weniger Abbrüche, mehr beendete Einheiten.
+Die Lehre ist operativ, nicht werblich: Gewinne die ersten 30–90 Tage mit strukturiertem Onboarding und frühen Erfolgen — dann arbeitet die Retention-Rechnung nicht mehr gegen dich.

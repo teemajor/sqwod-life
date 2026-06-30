@@ -49,6 +49,6 @@ Der deutlichste Hinweis ist, wer hinterherjagt. **Pelotons eigene Pilates-Workou
 
 Die Betreiber-Lesart: Reformer ist eine *Premium-Stufe*, kein Ersatz fürs Kerngeschäft — es erzielt einen Preisaufschlag und wird besser wiedergebucht als fast alles, steigert also den Umsatz pro Mitglied, ohne die Basis zu kannibalisieren. Und es ist der Einstieg: führe mit dem Format, das neue Mitglieder ohnehin wollen, und halte sie mit allem drumherum.
 
-Aber verwechsle die Maschine nicht mit dem Burggraben. Peloton kann einen sensorgespickten Reformer kaufen; was es nicht von der Stange kaufen kann, sind das Coaching, die Programmierung und die Recovery-Datenebene, die aus einer 7.995-$-Maschine einen Grund zum Bleiben machen. Das ist der Sqwod-Gedanke: Die Hardware ist der Haken, das System drumherum ist das Geschäft.
+Aber verwechsle die Maschine nicht mit dem Burggraben. Peloton kann einen sensorgespickten Reformer kaufen; was es nicht von der Stange kaufen kann, sind das Coaching, die Programmierung und die Datenebene, die aus einer 7.995-$-Maschine einen Grund zum Bleiben machen. Die Hardware ist der Haken; das System drumherum ist das Geschäft.
 
 *Ein lebender Sqwod-Intelligence-Report — jede Zahl nennt eine benannte Quelle (wir haben die kursierenden „globalen Pilates"-Schätzungen von 142–614 Mrd. $ bewusst ausgeschlossen, weil seriöse Häuser um das 4-Fache auseinanderliegen; die 19,2 Mrd. $ sind IBISWorlds US-Zahl). Wir aktualisieren die Zahlen, sobald neue Daten vorliegen — siehe Änderungslog.*

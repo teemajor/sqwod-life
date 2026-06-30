@@ -62,6 +62,6 @@ Jetzt halte das gegen die Ökonomie. Rund **50% der neuen Mitglieder kündigen i
 
 Die Lösung ist kein größeres Werbebudget und kein Win-back-Rabatt. Es ist ein Trigger: Sobald der Besuch eines Mitglieds abfällt, meldet sich etwas — oder jemand —, bevor aus dem Wegbleiben eine Kündigung wird. Die Betreiber, die bei der Bindung leise gewinnen, sind nicht charismatischer; sie **sehen das Wegdriften und handeln**, während der Branchenschnitt (66,4% Jahres-Retention, HFA 2025) Mitglieder verliert, denen er nicht einmal nachgewinkt hat.
 
-Das ist der ganze Gedanke hinter einem Sqwod-Studio-System: Das Wearable und das Buchungslog wissen längst, wer nachlässt. Der Vorsprung liegt darin, dieses Signal in ein rechtzeitiges, menschliches „Wir haben gemerkt, dass du länger nicht da warst" zu verwandeln — der billigste Wachstumshebel, den du hast, und der, den 49% der Studios liegen lassen.
+Das Signal liegt längst in deinen Daten: Das Check-in-Log weiß, wer nachlässt, bevor gekündigt wird. Dieses Signal in ein rechtzeitiges, menschliches „Wir haben gemerkt, dass du länger nicht da warst" zu verwandeln, ist der billigste Wachstumshebel, den du hast — und der, den 49% der Studios liegen lassen.
 
 *Ein lebender Sqwod-Intelligence-Report — jede Zahl nennt eine benannte Quelle, und wir aktualisieren sie, sobald neue Daten vorliegen (siehe Änderungslog). Trag oben deine eigene Retention ein und sieh, wohin dich das Leck bringt.*

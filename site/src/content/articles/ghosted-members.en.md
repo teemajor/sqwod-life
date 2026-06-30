@@ -62,6 +62,6 @@ Now put that next to the economics. Roughly **50% of new members quit within the
 
 The fix isn't a bigger ad budget or a win-back discount. It's a trigger: the day a member's attendance drops off, something — or someone — reaches out before the lapse hardens into a cancellation. The operators quietly winning retention aren't more charismatic; they just **see the drift and act on it** while the industry average (66.4% annual retention, HFA 2025) leaks members it never even waved goodbye to.
 
-That's the whole thesis behind a Sqwod studio system: the wearable and the booking log already know who's fading. The edge is turning that signal into a timely, human "we noticed you've been away" — the cheapest growth lever you own, and the one 49% of gyms are leaving on the table.
+The signal is already in your data: the check-in log knows who's fading before they cancel. Turning that into a timely, human "we noticed you've been away" is the cheapest growth lever you own — and the one 49% of gyms are leaving on the table.
 
 *A living Sqwod Intelligence report — every figure cites one named source, and we refresh them as new data lands (see the update log). Enter your own retention above to see where the leak puts you.*

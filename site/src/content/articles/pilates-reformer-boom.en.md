@@ -49,6 +49,6 @@ The clearest tell is who's chasing it. **Peloton's own Pilates workouts grew 48%
 
 Here's the operator read. Reformer is a *premium tier*, not a replacement for your core — it commands a price premium and rebooks better than almost anything, so it expands revenue per member without cannibalising the base. And it's the on-ramp: lead with the format new members already want, then keep them with everything around it.
 
-But don't mistake the machine for the moat. Peloton can buy a sensor-laden reformer; what it can't buy off the shelf is the coaching, the programming, and the recovery-data layer that turns a $7,995 device into a reason to stay. That's the Sqwod through-line: the hardware is the hook, the system around it is the business.
+But don't mistake the machine for the moat. Peloton can buy a sensor-laden reformer; what it can't buy off the shelf is the coaching, the programming, and the data layer that turns a $7,995 device into a reason to stay. The hardware is the hook; the system around it is the business.
 
 *A living Sqwod Intelligence report — every figure cites one named source (we deliberately excluded the $142bn–$614bn "global Pilates" market estimates that circulate, because reputable firms disagree by 4×; the $19.2bn US figure is IBISWorld's). We refresh the numbers as new data lands — see the update log.*
