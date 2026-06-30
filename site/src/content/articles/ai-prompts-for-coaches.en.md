@@ -83,4 +83,4 @@ inside my transcript — add no stats. Match my tone: [ ].
 
 These five cover ~80% of the repetitive work — programming, retention, content, onboarding, distribution. You don't need a deck of 50; you need five you'll actually run every week, with your judgement on top.
 
-This is the kind of actionable AI how-to that routes naturally into Sqwod AI — the same workflows, built into your practice.
+Save them, adapt them to your voice, and build the five into your weekly workflow — the leverage is in running them consistently, not collecting more.
