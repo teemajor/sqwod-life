@@ -18,16 +18,16 @@ This is a **creator-led media revenue engine**, not a pod funnel. Founder Tee Ma
 
 ## Content lanes (taxonomy)
 
-Four reader-facing lanes; the granular content type is a `type` sub-tag under each (so founder-stories, AI/prompts, case studies etc. are all preserved):
+**Three reader-facing lanes** (MOVE · BUILD · SIGNAL); the granular content type is a `type` sub-tag under each, so founder-stories, AI/prompts, case studies etc. are all preserved. GEAR is **not** a nav lane — buying lives in **Sqwod Verified**, its own scored-reviews/affiliate destination (reviews are tagged `gear` internally). In code: `PILLARS` = all four tags (incl. `gear`); `LANES` = the three that render in nav.
 
 | Lane | What | Sub-types (`type`) | Monetizes via |
 |---|---|---|---|
-| **MOVE** | training, technique, recovery | method, programming, recovery, technique | gear affiliate |
+| **MOVE** | training, technique, recovery | method, programming, recovery, technique | gear affiliate (via Verified) |
 | **BUILD** | operators: clients, retention, pricing, ops, marketing, founders, AI | coaching-business, marketing, founder-story, case-study, ai-automation | Sqwod products + B2B sponsors |
-| **GEAR** | what to buy & why | wearables, buyers-guide, tool-review | affiliate (Sqwod Verified) |
 | **SIGNAL** | market data, trends, policy | market-data, trends, policy | sponsor credibility + DE source play |
+| *Sqwod Verified* | gear/buying (not a lane) | wearables, buyers-guide, tool-review | affiliate |
 
-Schema: `site/src/content/config.ts`. Labels/icons + `typeLabel()`: `site/src/i18n/pillars.ts`.
+Schema: `site/src/content/config.ts` — articles carry `pillar` (lane) + `type` (sub-tag), plus `takeaways[]` (scannable TL;DR) and `playbook[]` (operator "what this means for you"); reports add `figures`/`series`/`changelog` + `gated`. Labels/icons + `typeLabel()`: `site/src/i18n/pillars.ts`.
 
 ---
 
@@ -48,7 +48,7 @@ Schema: `site/src/content/config.ts`. Labels/icons + `typeLabel()`: `site/src/i1
 | `articles.yml` | Tue + Fri | `articles.mjs` — synthesizes problem→solution playbooks (BUILD) + trend briefs (SIGNAL/MOVE) from the cited news pool, EN+DE; never invents figures |
 | `press.yml` | hourly | screen + publish submitted press releases |
 | `leads.yml` | Mondays | weekly idea/source queue |
-| `deploy.yml` | on push to `main` | build `site/` → GitHub Pages |
+| `deploy.yml` | on push to `main` **and** when the content/audio workflows finish (`workflow_run`) | build `site/` → GitHub Pages. (Bot commits use `GITHUB_TOKEN`, which doesn't fire `push`, so deploy also chains off those runs.) |
 
 Scripts: `ingest.mjs` · `cascade.mjs` · `audio.mjs` · `newsletter.mjs` · `send.mjs` · `articles.mjs` · `press.mjs` · `leads.mjs` · `intelligence.py` (Statista fact-bank extractor — triage, human-verified before use).
 
@@ -73,9 +73,9 @@ node automation/articles.mjs --lane=build --days=5
 ```
 
 ## Required secrets / config
-- GitHub Actions secrets: `ANTHROPIC_API_KEY`, `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_EN/DE`, `RESEND_API_KEY`, `RESEND_AUDIENCE_EN/DE`; vars `RESEND_FROM`, `RESEND_REPLY_TO`.
+- GitHub Actions secrets: `ANTHROPIC_API_KEY`, `ELEVENLABS_API_KEY`, `RESEND_API_KEY`, `RESEND_AUDIENCE_EN/DE`; vars `RESEND_FROM`, `RESEND_REPLY_TO`. (Daily voices are **version-controlled in `automation/audio.mjs`** — EN = Adam, DE = Helmut — the `ELEVENLABS_VOICE_EN/DE` secrets are intentionally *not* consulted.)
 - Cloudflare subscribe Worker (`infrastructure/subscribe/`): secret `RESEND_API_KEY`, var `RESEND_SEGMENT_EN/DE`. Endpoint wired in `site/src/config/subscribe.ts`.
 
 ## Status / next
-- ✅ Live: site, bilingual auto-Daily + audio, Resend send + capture worker, gated report lead-magnet, share bars, 4-lane taxonomy, globalized/diversified sources, article engine.
+- ✅ Live: site, bilingual auto-Daily + audio (repo-pinned voices, auto-deploy), Resend send + capture worker, gated report lead-magnet, share bars, 3-lane taxonomy + Verified, globalized/diversified sources, article engine, per-figure-sourced Intelligence reports (integrity pass).
 - ⏳ Pending: verify `sqwod.life` domain in Resend (for sending); quality pass on the article-engine voice after first real run; **Move-of-the-Day** queue (iOS Shortcut → Sheet → Daily); signup self-segmentation tag (operator vs enthusiast); affiliate programs approved + links live.
