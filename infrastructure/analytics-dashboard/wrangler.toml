@@ -1,0 +1,25 @@
+name = "sqwod-command-center"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+# --- non-secret config ---
+[vars]
+UMAMI_URL = "https://umami-production-5dc9.up.railway.app"
+UMAMI_WEBSITE_ID = "35fd123d-0a68-4295-a875-8947947b5d76"
+# Optional: Resend audience (list) IDs, to show EN/DE subscriber counts.
+# Find them in Resend → Audiences → click an audience → copy the ID.
+RESEND_AUDIENCE_EN = ""
+RESEND_AUDIENCE_DE = ""
+# Comma-separated allow-list checked against the Cloudflare Access identity header
+# (defense in depth — Access itself is the real gate). Leave blank to rely on Access only.
+ALLOWED_EMAILS = "tee@teemajor.com"
+
+# --- secrets (DO NOT put here — set via CLI) ---
+#   npx wrangler secret put UMAMI_USERNAME    # your Umami login (e.g. admin)
+#   npx wrangler secret put UMAMI_PASSWORD    # your Umami password
+#   npx wrangler secret put RESEND_API_KEY    # Resend API key
+
+# Optional custom route (otherwise it's served at the *.workers.dev URL):
+# [[routes]]
+# pattern = "dash.sqwod.life/*"
+# zone_name = "sqwod.life"
