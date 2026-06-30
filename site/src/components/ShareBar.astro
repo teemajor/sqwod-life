@@ -27,9 +27,15 @@ const nets = [
 <style>
   .sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
   .sh-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);font-weight:700;margin-right:2px}
-  .sh-btn{font:600 12px/1 inherit;color:var(--g2);background:transparent;border:1px solid var(--line);
-    border-radius:999px;padding:7px 12px;text-decoration:none;cursor:pointer;transition:all .15s ease}
-  .sh-btn:hover{border-color:var(--chalk);color:var(--chalk)}
+  /* All pills — anchors and buttons — share one explicit type ramp.
+     Buttons carry a UA-stylesheet font, so `inherit` alone left them in a
+     different face than the <a> pills; appearance:none + explicit family fixes it. */
+  .sh-btn{-webkit-appearance:none;appearance:none;display:inline-flex;align-items:center;
+    justify-content:center;font-family:var(--sans);font-size:12px;font-weight:700;line-height:1;
+    letter-spacing:.01em;color:var(--g2);background:transparent;border:1px solid var(--line);
+    border-radius:999px;padding:8px 14px;margin:0;text-decoration:none;white-space:nowrap;
+    cursor:pointer;transition:border-color .15s ease,color .15s ease,background .15s ease}
+  .sh-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
 </style>
 
 <script>
