@@ -36,7 +36,8 @@ export default {
       if (!env.DIGEST_KEY || url.searchParams.get('key') !== env.DIGEST_KEY) {
         return new Response('Forbidden', { status: 403 });
       }
-      const d = await gather(env, 7);
+      const endAt = Date.now();
+      const d = await gather(env, { startAt: endAt - 7 * 86400000, endAt, unit: 'day', label: 'last 7 days', activeKey: '7' });
       return new Response(digestText(d), { headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' } });
     }
 
@@ -47,18 +48,42 @@ export default {
       return new Response('Forbidden — this dashboard is private.', { status: 403 });
     }
 
-    const days = Math.max(1, Math.min(365, parseInt(url.searchParams.get('days') || '30', 10)));
-    const d = await gather(env, days);
+    const d = await gather(env, resolveWindow(url.searchParams));
     return new Response(renderPage(d, who), {
       headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
     });
   },
 };
 
+// Turn ?range=today|7|30|mtd|90|ytd  OR  ?from=YYYY-MM-DD&to=YYYY-MM-DD into a window.
+function resolveWindow(p) {
+  const DAY = 86400000;
+  const now = new Date();
+  const y = now.getUTCFullYear(), mo = now.getUTCMonth(), da = now.getUTCDate();
+  let endAt = Date.now(), startAt, label, activeKey, unit = 'day', fromVal = '', toVal = '';
+  const from = p.get('from'), to = p.get('to');
+  if (from && to && !isNaN(Date.parse(from)) && !isNaN(Date.parse(to))) {
+    startAt = Date.parse(`${from}T00:00:00Z`);
+    endAt = Math.min(Date.now(), Date.parse(`${to}T23:59:59Z`));
+    if (endAt < startAt) { const t = startAt; startAt = endAt - DAY; endAt = t; }
+    activeKey = 'custom'; fromVal = from; toVal = to; label = `${from} → ${to}`;
+    if (endAt - startAt <= 2 * DAY) unit = 'hour';
+  } else {
+    switch (p.get('range')) {
+      case 'today': startAt = Date.UTC(y, mo, da); label = 'Today'; activeKey = 'today'; unit = 'hour'; break;
+      case 'mtd':   startAt = Date.UTC(y, mo, 1);  label = 'Month to date'; activeKey = 'mtd'; break;
+      case 'ytd':   startAt = Date.UTC(y, 0, 1);   label = 'Year to date';  activeKey = 'ytd'; break;
+      case '7':     startAt = endAt - 7 * DAY;     label = 'Last 7 days';   activeKey = '7'; break;
+      case '90':    startAt = endAt - 90 * DAY;    label = 'Last 90 days';  activeKey = '90'; break;
+      default:      startAt = endAt - 30 * DAY;    label = 'Last 30 days';  activeKey = '30'; break;
+    }
+  }
+  return { startAt, endAt, unit, label, activeKey, fromVal, toVal };
+}
+
 // ---------- data ----------
-async function gather(env, days) {
-  const endAt = Date.now();
-  const startAt = endAt - days * 86400000;
+async function gather(env, win) {
+  const { startAt, endAt, unit = 'day' } = win;
   const start7 = endAt - 7 * 86400000;
 
   const umamiUrl = (env.UMAMI_URL || '').replace(/\/$/, '');
@@ -87,7 +112,7 @@ async function gather(env, days) {
     jget(`${uBase}/metrics?${qs}&type=url`, uHead),
     jget(`${uBase}/metrics?${qs}&type=referrer`, uHead),
     jget(`${uBase}/metrics?${qs}&type=event`, uHead),
-    jget(`${uBase}/pageviews?${qs}&unit=day&timezone=Europe/Berlin`, uHead),
+    jget(`${uBase}/pageviews?${qs}&unit=${unit}&timezone=Europe/Berlin`, uHead),
     jget(`${uBase}/metrics?startAt=${start7}&endAt=${endAt}&type=event`, uHead),
   ]);
 
@@ -105,7 +130,7 @@ async function gather(env, days) {
   const evVal = (arr, name) => { const a = Array.isArray(arr) ? arr : []; const f = a.find((e) => e.x === name); return f ? f.y : 0; };
 
   return {
-    days, stats, pages, sources, events, series, broadcasts,
+    win, stats, pages, sources, events, series, broadcasts,
     enSize, deSize,
     totalList: (enSize || 0) + (deSize || 0),
     weeklySubs: evVal(events7, 'subscribe'),
@@ -207,7 +232,16 @@ function renderPage(d, who) {
       <span style="flex:none;font:700 10px/1 ui-monospace,monospace;color:${(b.status === 'sent') ? UP : G2};text-transform:uppercase;">${esc(b.status || '—')}</span>
     </div>`).join('') || `<div style="padding:12px 0;color:${SUB};font:400 13px sans-serif;">No broadcasts yet — your sends will list here.</div>`;
 
-  const range = (n, lbl) => `<a href="?days=${n}" style="font:700 12px/1 ui-monospace,monospace;text-decoration:none;padding:7px 13px;border-radius:999px;border:1px solid ${LINE};color:${d.days === n ? INK : G2};background:${d.days === n ? CHALK : 'transparent'};">${lbl}</a>`;
+  const ak = d.win.activeKey;
+  const pill = (key, lbl) => `<a href="?range=${key}" style="font:700 11px/1 ui-monospace,monospace;text-decoration:none;padding:7px 11px;border-radius:999px;border:1px solid ${LINE};color:${ak === key ? INK : G2};background:${ak === key ? CHALK : 'transparent'};">${lbl}</a>`;
+  const rangeBar = `<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;">
+    ${[['today', 'Today'], ['7', '7D'], ['30', '30D'], ['mtd', 'MTD'], ['90', '90D'], ['ytd', 'YTD']].map(([k, l]) => pill(k, l)).join('')}
+    <form method="get" style="display:flex;gap:5px;align-items:center;margin-left:4px;">
+      <input type="date" name="from" value="${d.win.fromVal}" aria-label="From" style="background:${PANEL};border:1px solid ${LINE};border-radius:8px;color:${CHALK};font:600 11px ui-monospace,monospace;padding:5px 7px;color-scheme:dark;">
+      <input type="date" name="to" value="${d.win.toVal}" aria-label="To" style="background:${PANEL};border:1px solid ${LINE};border-radius:8px;color:${CHALK};font:600 11px ui-monospace,monospace;padding:5px 7px;color-scheme:dark;">
+      <button type="submit" style="font:700 11px/1 ui-monospace,monospace;padding:7px 11px;border-radius:999px;border:1px solid ${LINE};background:${ak === 'custom' ? CHALK : 'transparent'};color:${ak === 'custom' ? INK : G2};cursor:pointer;">Apply</button>
+    </form>
+  </div>`;
 
   const weekly = d.siteErr ? `<span style="color:${SUB};font:600 12px ui-monospace,monospace;">subscribers across EN + DE</span>`
     : `<span style="color:${UP};font:700 13px/1 ui-monospace,monospace;">▲ +${d.weeklySubs}</span> <span style="color:${SUB};font:600 12px ui-monospace,monospace;">new this week</span>`;
@@ -231,7 +265,7 @@ function renderPage(d, who) {
   </div>`;
 
   const funnel = d.siteErr ? '' : `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;">
-    ${funnelCard('Visitors', `${num(s.visitors?.value)} ${deltaTag(s.visitors?.value, s.visitors?.prev)}`, `${d.days}-day window`)}
+    ${funnelCard('Visitors', `${num(s.visitors?.value)} ${deltaTag(s.visitors?.value, s.visitors?.prev)}`, esc(d.win.label))}
     ${funnelCard('Subscribe rate', pct(d.subs, s.visitors?.value), `${num(d.subs)} subs ÷ visitors`)}
     ${funnelCard('Share rate', pct(d.shares, s.visitors?.value), `${num(d.shares)} shares ÷ visitors`)}
   </div>`;
@@ -243,9 +277,9 @@ function renderPage(d, who) {
   <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid ${LINE};padding-bottom:14px;margin-bottom:18px;">
     <div>
       <div style="font:900 19px/1 system-ui;letter-spacing:.04em;">SQWOD.LIFE <span style="color:${SUB};font-weight:600;">ANALYTICS</span></div>
-      <div style="font:600 11px/1 ui-monospace,monospace;color:${SUB};margin-top:7px;letter-spacing:.04em;text-transform:uppercase;">Last ${d.days} days · site + email${who ? ' · ' + esc(who) : ''}</div>
+      <div style="font:600 11px/1 ui-monospace,monospace;color:${SUB};margin-top:7px;letter-spacing:.04em;text-transform:uppercase;">${esc(d.win.label)} · site + email${who ? ' · ' + esc(who) : ''}</div>
     </div>
-    <div style="display:flex;gap:6px;">${range(7, '7D')}${range(30, '30D')}${range(90, '90D')}</div>
+    ${rangeBar}
   </div>
 
   ${hero}

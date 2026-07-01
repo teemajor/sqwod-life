@@ -18,14 +18,17 @@ jobs:
           node-version: 20
 
       - name: Ingest today's industry news (free, no key)
+        id: ingest
         run: node automation/ingest.mjs
 
       - name: Rewrite in Sqwod voice (EN + DE)
+        id: cascade
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node automation/cascade.mjs --date=$(date +%F) --status=published   # auto-publish; guardrail repairs/drops unverifiable items, then publishes — no human review
 
       - name: Voice it — TTS audio + podcast feeds (EN + DE)
+        id: audio
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           # Voice ids are version-controlled in automation/audio.mjs (authoritative);
@@ -33,9 +36,11 @@ jobs:
         run: node automation/audio.mjs --date=$(date +%F)
 
       - name: Render the email (EN + DE, with sponsor slot)
+        id: newsletter
         run: node automation/newsletter.mjs --date=$(date +%F)
 
       - name: Commit & push (if anything changed)
+        id: commit
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
@@ -54,6 +59,7 @@ jobs:
           fi
 
       - name: Send the Daily (Resend Broadcasts API)
+        id: send
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_AUDIENCE_EN: ${{ secrets.RESEND_AUDIENCE_EN }}
@@ -78,4 +84,33 @@ jobs:
             echo "::warning title=Sqwod Daily::Issue for $D is status=$ST (held by verification) — not live until promoted. $AU"
           else
             echo "Sqwod Daily $D shipped: status=$ST · $AU"
+          fi
+
+      - name: Report which step failed (named alert)
+        if: failure()
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+        run: |
+          URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if   [ "${{ steps.ingest.outcome }}"     = "failure" ]; then F="Ingest news (feeds down / network)";
+          elif [ "${{ steps.cascade.outcome }}"    = "failure" ]; then F="Rewrite in Sqwod voice — cascade (check ANTHROPIC_API_KEY credit/validity)";
+          elif [ "${{ steps.audio.outcome }}"      = "failure" ]; then F="Audio / TTS (check ELEVENLABS_API_KEY credit/validity)";
+          elif [ "${{ steps.newsletter.outcome }}" = "failure" ]; then F="Render email (newsletter.mjs)";
+          elif [ "${{ steps.commit.outcome }}"     = "failure" ]; then F="Commit & push (git)";
+          elif [ "${{ steps.send.outcome }}"       = "failure" ]; then F="Send the Daily (check RESEND_API_KEY / audience IDs)";
+          else F="Setup / checkout"; fi
+          {
+            echo "## ❌ Sqwod Daily failed"
+            echo ""
+            echo "**Failed step:** $F"
+            echo ""
+            echo "[Open the run and expand the red step]($URL)"
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "::error title=Sqwod Daily failed at: $F::$URL"
+          # Optional push alert via Resend (guarded — never fails the reporter)
+          if [ -n "$RESEND_API_KEY" ] && [ -n "$RESEND_FROM" ]; then
+            curl -s -X POST https://api.resend.com/emails \
+              -H "Authorization: Bearer $RESEND_API_KEY" -H "Content-Type: application/json" \
+              -d "{\"from\":\"$RESEND_FROM\",\"to\":\"tee@teemajor.com\",\"subject\":\"❌ Sqwod Daily failed: $F\",\"text\":\"The Daily workflow failed at step: $F\n\nOpen the run: $URL\"}" >/dev/null || true
           fi

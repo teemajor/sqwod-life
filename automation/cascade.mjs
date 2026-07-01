@@ -144,7 +144,7 @@ Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, dea
  "moneyMoves":[{"entity":"name from the items","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one clause"}]  // ONLY for items that are actually raises/M&A/valuations; [] if none,
  "policyWatch":{"title":"...","body":"1-2 sentences on a regulation/policy that affects coaches or studios"} or null if no item is policy/regulatory,
  "stat":{"number":"the figure verbatim","label":"what it measures","body":"why it matters"} or null if no real number appears,
- "recs":[{"label":"Read|Steal|Try|Watch","text":"a concrete, useful action or resource"}]  // 2-3 items
+ "recs":[{"label":"Steal|Try|Read|Watch|Track","text":"a concrete, EVERGREEN, operator-useful action or resource"}]  // exactly 2-3 items. HARD RULES so recs are NOT a recap of the news: (a) each rec must be a DIFFERENT type AND topic from the others and from doThis; (b) NONE may restate, summarize, or reference today's items, connectBody, doThis, moneyMoves or stat — recs are fresh, standalone value; (c) be specific and immediately usable — a tactic to implement, a tool/tool-category to try, a habit or metric to start tracking, or a genuinely worth-it read/watch — never vague platitudes; (d) no invented brand names, prices, or numbers.
 }`;
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
