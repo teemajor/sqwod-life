@@ -39,7 +39,12 @@ jobs:
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
-          git add site/src/content automation/sources automation/moves site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets site/public/daily-en.xml site/public/daily-de.xml
+          # Only stage paths that actually exist — a missing optional folder
+          # (e.g. automation/moves before any move is submitted) must never
+          # fail the whole Daily with a git pathspec error (exit 128).
+          for p in site/src/content automation/sources automation/moves site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets site/public/daily-en.xml site/public/daily-de.xml; do
+            [ -e "$p" ] && git add "$p"
+          done
           if git diff --staged --quiet; then
             echo "No content changes."
           else

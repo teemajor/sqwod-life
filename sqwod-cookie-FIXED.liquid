@@ -1,0 +1,72 @@
+{%- assign de = false -%}{%- if request.locale.iso_code == 'de' -%}{%- assign de = true -%}{%- endif -%}
+<style>
+  .sqcc,.sqcc *{box-sizing:border-box}
+  .sqcc{position:fixed;z-index:2147483000;left:16px;right:auto;bottom:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:min(420px,calc(100vw - 32px));background:#0e0e10;color:#FAFAFA;border:1px solid #2a2a30;border-radius:16px;padding:20px;box-shadow:0 24px 60px rgba(0,0,0,.55);font-family:"Helvetica Neue",Helvetica,Arial,Inter,system-ui,sans-serif;font-size:13.5px;line-height:1.55}
+  .sqcc[hidden]{display:none}
+  .sqcc h4{margin:0 0 8px;font-size:15px;font-weight:800;letter-spacing:-.01em}
+  .sqcc p{margin:0 0 14px;color:#b8b8c0}
+  .sqcc a{color:#FAFAFA;text-decoration:underline;text-underline-offset:2px}
+  .sqcc-btns{display:flex;gap:10px;flex-wrap:wrap}
+  .sqcc-btn{flex:1 1 130px;cursor:pointer;font-family:inherit;font-size:13px;font-weight:800;padding:12px 16px;border-radius:10px;text-align:center;border:1px solid #FAFAFA;line-height:1}
+  .sqcc-accept{background:#FAFAFA;color:#0e0e10}
+  .sqcc-reject{background:transparent;color:#FAFAFA;border-color:#52525a}
+  .sqcc-reject:hover{border-color:#FAFAFA}
+  .sqcc-reopen{position:fixed;z-index:2147482000;left:16px;bottom:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;background:#0e0e10;color:#FAFAFA;border:1px solid #2a2a30;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.4)}
+  .sqcc-reopen[hidden]{display:none}
+</style>
+<div id="sqcc" class="sqcc" hidden role="dialog" aria-modal="false" aria-label="{% if de %}Cookie-Einwilligung{% else %}Cookie consent{% endif %}" aria-live="polite">
+  <h4>{% if de %}Cookies &amp; Datenschutz{% else %}Cookies &amp; privacy{% endif %}</h4>
+  <p>{% if de %}Wir verwenden Cookies, um die Website zu betreiben, deine Einstellungen zu speichern und Zugriffe zu messen.{% else %}We use cookies to run this site, remember your preferences, and measure traffic.{% endif %} <a href="/policies/privacy-policy">{% if de %}Datenschutz{% else %}Privacy{% endif %}</a> &middot; <a href="/pages/gdpr-compliance">{% if de %}DSGVO{% else %}GDPR{% endif %}</a></p>
+  <div class="sqcc-btns">
+    <button type="button" class="sqcc-btn sqcc-accept" id="sqcc-accept">{% if de %}Alle akzeptieren{% else %}Accept all{% endif %}</button>
+    <button type="button" class="sqcc-btn sqcc-reject" id="sqcc-reject">{% if de %}Nicht notwendige ablehnen{% else %}Reject non-essential{% endif %}</button>
+  </div>
+</div>
+<button type="button" id="sqcc-reopen" class="sqcc-reopen" hidden aria-label="{% if de %}Cookie-Einstellungen{% else %}Cookie settings{% endif %}" title="{% if de %}Cookie-Einstellungen{% else %}Cookie settings{% endif %}">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10" r="1" fill="currentColor" stroke="none"/><circle cx="10" cy="14.5" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="14.5" r="1" fill="currentColor" stroke="none"/></svg>
+</button>
+<script>
+(function(){
+  var banner=document.getElementById('sqcc'), reopen=document.getElementById('sqcc-reopen');
+  if(!banner||!reopen) return;
+  var KEY='sqcc_consent_v1';
+  function get(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function save(v){try{localStorage.setItem(KEY,v);}catch(e){}}
+  function show(){banner.hidden=false; reopen.hidden=true;}
+  function collapse(){banner.hidden=true; reopen.hidden=false;}
+  function sendConsent(v){
+    try{
+      if(window.Shopify && Shopify.customerPrivacy && Shopify.customerPrivacy.setTrackingConsent){
+        Shopify.customerPrivacy.setTrackingConsent({analytics:v,marketing:v,preferences:v,sale_of_data:v}, function(){});
+      }
+    }catch(e){}
+  }
+  function choose(v){ save(v ? 'all' : 'essential'); sendConsent(v); collapse(); }
+  document.getElementById('sqcc-accept').addEventListener('click',function(){choose(true);});
+  document.getElementById('sqcc-reject').addEventListener('click',function(){choose(false);});
+  reopen.addEventListener('click',show);
+  function decide(){
+    // Our own stored choice is the source of truth: once the visitor has chosen
+    // on this browser, NEVER show the banner again (only the reopen pill).
+    var stored=get();
+    if(stored==='all' || stored==='essential'){
+      sendConsent(stored==='all'); // re-apply each load so Consent Mode stays correct
+      collapse();
+      return;
+    }
+    // No stored choice yet — defer to Shopify's region logic.
+    try{
+      var cp=window.Shopify && window.Shopify.customerPrivacy;
+      if(cp && typeof cp.shouldShowBanner==='function'){
+        if(cp.shouldShowBanner()){ show(); } else { collapse(); }
+      } else { collapse(); }
+    }catch(e){ collapse(); }
+  }
+  function boot(){
+    if(window.Shopify && Shopify.loadFeatures){
+      Shopify.loadFeatures([{name:'consent-tracking-api',version:'0.1'}], function(){ decide(); });
+    } else { setTimeout(boot,300); }
+  }
+  if(document.readyState!=='loading'){ boot(); } else { document.addEventListener('DOMContentLoaded', boot); }
+})();
+</script>

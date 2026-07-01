@@ -88,14 +88,17 @@ Increasingly, traffic starts in ChatGPT / Google AI Overviews / Perplexity. To b
 Every new post gets an original cover in the **locked black-and-white manhwa style** (chosen via LLM Council, 30 Jun 2026). This is now automatic — same pipeline that produced the 45-cover batch.
 
 **Style prompt template (Imagen 4 / `imagen-4.0-generate-001`):**
-> Black-and-white Korean webtoon manhwa comic-book illustration, monochrome, high-contrast bold black ink outlines, grayscale cel shading with subtle screentone, dramatic lighting, absolutely no colour, semi-realistic athletic proportions, cinematic, clean composition with negative space. Subject: {SCENE}. No text, no words, no letters, no logo, no numbers, no watermark, no signature, no vehicles.
+> Black-and-white Korean webtoon manhwa comic-book illustration, monochrome, high-contrast bold black ink outlines, grayscale cel shading with subtle screentone, dramatic lighting, absolutely no colour, semi-realistic athletic proportions, cinematic, clean composition with negative space. Subject: {SCENE}. No text, no words, no letters, no logo, no numbers, no watermark, no signature, no vehicles, no capsule, no pod cabin, no sci-fi chamber, no enclosed booth, no cryo-pod, no photorealism.
+
+**⚠️ CRITICAL — what a "Pod" is:** A Sqwod Pod is a **spacious private gym ROOM (~30–50 m²)** with equipment along the walls — NOT a capsule, cabin, sci-fi chamber, or person-sized unit. AI models draw "pod" as a capsule; they are WRONG. Never put the word "pod" in the image scene. Describe the setting as **"a spacious private gym room"** (large window, premium minimal interior). See [[ref-sqwod-pod-definition]].
 
 **Rules:**
 - **No baked-in text/headlines on the image** (Tee's call — the theme renders the title separately). The negative prompt above enforces this.
 - Compose one clear human subject + action/metaphor, weighted to one side, clean negative space.
 - **Alt text in English**, descriptive + keyword-aware (e.g. "Black and white illustration of a coach guiding a client through a deadlift in a private Berlin gym").
-- **QC before upload:** generate, eyeball for misfires (extra limbs, stray objects, accidental text, any colour). Regenerate up to 2× if wrong. Common misfires seen: vehicles, animals, baked text — reject and re-roll.
-- Pipeline: generate PNG → `stagedUploadsCreate` (httpMethod **PUT**, single presigned URL) → PUT bytes (Content-Type image/png) → `articleUpdate(image:{url:resourceUrl, altText})`.
+- **QC before upload:** generate, eyeball for misfires (extra limbs, stray objects, accidental text, any colour, capsules/pods, photorealism). Regenerate up to 2× if wrong. Common misfires seen: vehicles, animals, baked text, sci-fi capsules, stray stock photos — reject and re-roll.
+- Pipeline: generate PNG → `stagedUploadsCreate` (httpMethod **PUT**, single presigned URL) → PUT bytes (Content-Type image/png) → `articleUpdate(image:{url:resourceUrl, altText})`. Use a **unique filename** per upload (append a short random suffix) to avoid CDN dedup silently keeping an old image.
+- **MANDATORY post-upload verification:** after `articleUpdate`, re-query the article's `image.url`, download that live file, and confirm it visually matches the manhwa image you just generated (correct style, correct concept, not a stray/stock photo). If it doesn't match, the upload silently failed — re-upload. (This exact failure shipped a stock suit-man photo in the June batch because only the *generated* file was QC'd, never the *live* attached one.)
 - Cost ≈ $0.04/image. Budget-capped key (see §11).
 
 ---

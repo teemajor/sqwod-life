@@ -147,117 +147,143 @@ function moveLine(d) {
   return 'Quiet week. Your move: publish and share today’s Daily to start the flywheel.';
 }
 
-function kpi(label, value, sub = '', big = false) {
-  return `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:14px;padding:18px 20px;">
-    <div style="font:700 11px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:${LBL};">${label}</div>
-    <div style="font:800 ${big ? 40 : 28}px/1.05 -apple-system,system-ui,sans-serif;color:${CHALK};margin-top:10px;letter-spacing:-.02em;">${value}</div>
-    <div style="margin-top:8px;min-height:14px;color:${SUB};font:600 12px/1.3 ui-monospace,monospace;">${sub}</div>
+function barChart(series) {
+  const pts = Array.isArray(series?.pageviews) ? series.pageviews : [];
+  if (pts.length < 2) return `<div style="color:${SUB};font:400 12px sans-serif;padding:22px 0;">Activity chart appears once a few days of data land.</div>`;
+  const ys = pts.map((p) => p.y || 0); const max = Math.max(...ys, 1);
+  const H = 96, n = ys.length, gap = n > 24 ? 3 : 6, bw = (560 - (n - 1) * gap) / n;
+  const bars = ys.map((y, i) => {
+    const h = Math.max(2, (y / max) * (H - 4)); const x = i * (bw + gap);
+    return `<rect x="${x.toFixed(1)}" y="${(H - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" fill="${i === n - 1 ? '#fff' : '#e6e6ec'}"/>`;
+  }).join('');
+  return `<svg viewBox="0 0 560 ${H}" width="100%" height="${H}" preserveAspectRatio="none">${bars}</svg>`;
+}
+
+function funnelCard(label, value, sub) {
+  return `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:16px 18px;">
+    <div style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:${LBL};">${label}</div>
+    <div style="font:800 30px/1 ui-monospace,monospace;color:${CHALK};margin-top:9px;font-variant-numeric:tabular-nums;">${value}</div>
+    <div style="font:600 11px/1.2 ui-monospace,monospace;color:${SUB};margin-top:7px;">${sub}</div>
   </div>`;
 }
 
-function list(title, rows, empty) {
-  const body = (Array.isArray(rows) && rows.length)
-    ? rows.slice(0, 8).map((r) => `<tr>
-        <td style="padding:8px 0;border-top:1px solid ${LINE};font:500 14px/1.4 -apple-system,system-ui,sans-serif;color:${CHALK};max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(r.x)}</td>
-        <td style="padding:8px 0;border-top:1px solid ${LINE};text-align:right;font:700 14px/1 ui-monospace,monospace;color:${G2};">${num(r.y)}</td></tr>`).join('')
-    : `<tr><td style="padding:14px 0;color:${SUB};font:400 13px sans-serif;">${empty}</td></tr>`;
-  return `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:14px;padding:18px 20px;">
-    <div style="font:700 11px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:${LBL};margin-bottom:6px;">${title}</div>
-    <table width="100%" cellpadding="0" cellspacing="0">${body}</table></div>`;
+function rowStat(label, valueHtml) {
+  return `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:14px 16px;display:flex;justify-content:space-between;align-items:baseline;">
+    <span style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:${LBL};">${label}</span>
+    <span style="font:800 22px/1 ui-monospace,monospace;color:${CHALK};font-variant-numeric:tabular-nums;">${valueHtml}</span>
+  </div>`;
 }
 
-function sparkline(series) {
-  const pts = Array.isArray(series?.pageviews) ? series.pageviews : [];
-  if (pts.length < 2) return `<div style="color:${SUB};font:400 12px sans-serif;">Activity chart appears once a few days of data land.</div>`;
-  const ys = pts.map((p) => p.y || 0); const max = Math.max(...ys, 1);
-  const W = 520, H = 64, step = W / (ys.length - 1);
-  const dpath = ys.map((y, i) => `${i ? 'L' : 'M'}${(i * step).toFixed(1)},${(H - (y / max) * (H - 8) - 4).toFixed(1)}`).join(' ');
-  return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="${H}" preserveAspectRatio="none"><path d="${dpath}" fill="none" stroke="${ACCENT}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" opacity=".9"/></svg>`;
+function eventCell(label, value) {
+  return `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:13px 16px;">
+    <div style="font:700 9px/1 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:${LBL};">${label}</div>
+    <div style="font:800 24px/1 ui-monospace,monospace;color:${CHALK};margin-top:7px;">${value}</div>
+  </div>`;
+}
+
+function propList(title, rows, accent, empty) {
+  const arr = Array.isArray(rows) ? rows.slice(0, 5) : [];
+  const max = arr.length ? Math.max(...arr.map((r) => r.y || 0), 1) : 1;
+  const body = arr.length ? arr.map((r) => {
+    const w = Math.max(3, Math.round(((r.y || 0) / max) * 100));
+    return `<div style="margin-bottom:11px;">
+      <div style="display:flex;justify-content:space-between;gap:10px;font:600 13px/1.3 system-ui;color:${CHALK};">
+        <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(r.x)}</span>
+        <span style="flex:none;font:700 12px/1 ui-monospace,monospace;color:${G2};">${num(r.y)}</span>
+      </div>
+      <div style="height:3px;background:${LINE};border-radius:2px;margin-top:5px;"><div style="height:3px;width:${w}%;background:${accent};border-radius:2px;"></div></div>
+    </div>`;
+  }).join('') : `<div style="color:${SUB};font:400 13px sans-serif;padding:6px 0;">${empty}</div>`;
+  return `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:16px 18px;">
+    <div style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:${LBL};margin-bottom:12px;">${title}</div>${body}</div>`;
 }
 
 // ---------- render ----------
 function renderPage(d, who) {
   const s = d.stats || {};
-  const recent = (Array.isArray(d.broadcasts?.data) ? d.broadcasts.data : []).slice(0, 6).map((b) => `<tr>
-      <td style="padding:9px 0;border-top:1px solid ${LINE};font:500 13px/1.4 sans-serif;color:${CHALK};">${esc(b.name || b.id)}</td>
-      <td style="padding:9px 0;border-top:1px solid ${LINE};text-align:right;font:700 11px/1 ui-monospace,monospace;color:${G2};text-transform:uppercase;">${esc(b.status || '—')}</td>
-    </tr>`).join('') || `<tr><td style="padding:14px 0;color:${SUB};font:400 13px sans-serif;">No broadcasts yet — your sends will list here.</td></tr>`;
+  const bdata = Array.isArray(d.broadcasts?.data) ? d.broadcasts.data : [];
+  const recent = bdata.slice(0, 6).map((b) => `<div style="display:flex;justify-content:space-between;gap:10px;font:600 13px/1.4 system-ui;color:${CHALK};padding:9px 0;border-top:1px solid #1c1c20;">
+      <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(b.name || b.id)}</span>
+      <span style="flex:none;font:700 10px/1 ui-monospace,monospace;color:${(b.status === 'sent') ? UP : G2};text-transform:uppercase;">${esc(b.status || '—')}</span>
+    </div>`).join('') || `<div style="padding:12px 0;color:${SUB};font:400 13px sans-serif;">No broadcasts yet — your sends will list here.</div>`;
 
   const range = (n, lbl) => `<a href="?days=${n}" style="font:700 12px/1 ui-monospace,monospace;text-decoration:none;padding:7px 13px;border-radius:999px;border:1px solid ${LINE};color:${d.days === n ? INK : G2};background:${d.days === n ? CHALK : 'transparent'};">${lbl}</a>`;
 
-  const weekly = d.siteErr ? '' : (d.weeklySubs >= 0 ? `<span style="color:${UP};font:800 15px/1 ui-monospace,monospace;">+${d.weeklySubs}</span> <span style="color:${SUB};font:600 12px ui-monospace,monospace;">new this week</span>` : '');
+  const weekly = d.siteErr ? `<span style="color:${SUB};font:600 12px ui-monospace,monospace;">subscribers across EN + DE</span>`
+    : `<span style="color:${UP};font:700 13px/1 ui-monospace,monospace;">▲ +${d.weeklySubs}</span> <span style="color:${SUB};font:600 12px ui-monospace,monospace;">new this week</span>`;
 
-  const hero = `<div style="background:linear-gradient(135deg,${PANEL2},${PANEL});border:1px solid ${LINE};border-radius:18px;padding:26px 28px;display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:center;">
-    <div>
-      <div style="font:700 11px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:${LBL};">North star · Total list</div>
-      <div style="font:900 56px/1 -apple-system,system-ui,sans-serif;color:${CHALK};letter-spacing:-.03em;margin:12px 0 10px;">${num(d.totalList)}</div>
-      <div>${weekly || `<span style="color:${SUB};font:600 12px ui-monospace,monospace;">subscribers across EN + DE</span>`}</div>
+  // flat hero: left-ruled north-star + bar-chart activity panel
+  const hero = `<div style="display:grid;grid-template-columns:1fr 1.25fr;border:1px solid ${LINE};border-radius:14px;overflow:hidden;">
+    <div style="padding:20px 22px;border-left:4px solid ${CHALK};">
+      <div style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:${LBL};">North star · Total list</div>
+      <div style="font:800 56px/1 ui-monospace,monospace;color:${CHALK};letter-spacing:-.03em;margin:14px 0 9px;font-variant-numeric:tabular-nums;">${num(d.totalList)}</div>
+      <div>${weekly}</div>
     </div>
-    <div>
-      <div style="font:700 11px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:${LBL};margin-bottom:10px;">Site activity · pageviews/day</div>
-      ${sparkline(d.series)}
+    <div style="padding:20px 22px;background:${PANEL};">
+      <div style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:${LBL};margin-bottom:14px;">Site activity · pageviews / day</div>
+      ${barChart(d.series)}
     </div>
   </div>`;
 
-  const move = `<div style="background:${CHALK};color:${INK};border-radius:14px;padding:16px 20px;margin-top:16px;display:flex;gap:12px;align-items:baseline;">
-    <span style="font:800 11px/1.3 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;flex:none;">This week’s move →</span>
-    <span style="font:600 15px/1.45 -apple-system,system-ui,sans-serif;">${esc(moveLine(d))}</span>
+  const move = `<div style="background:${CHALK};color:${INK};border-radius:12px;padding:14px 18px;margin-top:14px;display:flex;gap:12px;align-items:baseline;">
+    <span style="font:800 10px/1.3 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;flex:none;">This week’s move →</span>
+    <span style="font:600 14px/1.45 -apple-system,system-ui,sans-serif;">${esc(moveLine(d))}</span>
   </div>`;
 
-  const funnel = d.siteErr ? '' : `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px;">
-    ${kpi('Visitors', num(s.visitors?.value), deltaTag(s.visitors?.value, s.visitors?.prev) || `${d.days}-day window`, true)}
-    ${kpi('Subscribe rate', pct(d.subs, s.visitors?.value), `${num(d.subs)} subs ÷ visitors`, true)}
-    ${kpi('Share rate', pct(d.shares, s.visitors?.value), `${num(d.shares)} shares ÷ visitors`, true)}
+  const funnel = d.siteErr ? '' : `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;">
+    ${funnelCard('Visitors', `${num(s.visitors?.value)} ${deltaTag(s.visitors?.value, s.visitors?.prev)}`, `${d.days}-day window`)}
+    ${funnelCard('Subscribe rate', pct(d.subs, s.visitors?.value), `${num(d.subs)} subs ÷ visitors`)}
+    ${funnelCard('Share rate', pct(d.shares, s.visitors?.value), `${num(d.shares)} shares ÷ visitors`)}
   </div>`;
 
   return `<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>Sqwod.Life Analytics</title>
 <style>*{box-sizing:border-box}body{margin:0;background:${INK};color:${CHALK};font-family:-apple-system,system-ui,Segoe UI,Roboto,sans-serif}</style></head>
-<body><div style="max-width:1040px;margin:0 auto;padding:30px 20px 60px;">
-  <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+<body><div style="max-width:1000px;margin:0 auto;padding:28px 20px 56px;">
+  <div style="display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px;border-bottom:1px solid ${LINE};padding-bottom:14px;margin-bottom:18px;">
     <div>
-      <div style="font:900 24px/1 sans-serif;letter-spacing:.02em;">SQWOD.LIFE <span style="color:${SUB};font-weight:600;">ANALYTICS</span></div>
-      <div style="font:500 12px/1.4 ui-monospace,monospace;color:${SUB};margin-top:8px;">Last ${d.days} days · site + email${who ? ' · ' + esc(who) : ''}</div>
+      <div style="font:900 19px/1 system-ui;letter-spacing:.04em;">SQWOD.LIFE <span style="color:${SUB};font-weight:600;">ANALYTICS</span></div>
+      <div style="font:600 11px/1 ui-monospace,monospace;color:${SUB};margin-top:7px;letter-spacing:.04em;text-transform:uppercase;">Last ${d.days} days · site + email${who ? ' · ' + esc(who) : ''}</div>
     </div>
-    <div style="display:flex;gap:8px;">${range(7, '7d')}${range(30, '30d')}${range(90, '90d')}</div>
+    <div style="display:flex;gap:6px;">${range(7, '7D')}${range(30, '30D')}${range(90, '90D')}</div>
   </div>
 
   ${hero}
   ${move}
   ${funnel}
 
-  <div style="font:700 11px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:${LBL};margin:30px 0 14px;">Site detail · Umami</div>
-  ${d.siteErr ? `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:14px;padding:16px 20px;color:${DOWN};font:500 13px sans-serif;">Umami unreachable (${esc(d.siteErr)}). Check UMAMI_USERNAME / UMAMI_PASSWORD / UMAMI_URL.</div>` : `
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
-    ${kpi('Pageviews', num(s.pageviews?.value), deltaTag(s.pageviews?.value, s.pageviews?.prev))}
-    ${kpi('Visits', num(s.visits?.value), deltaTag(s.visits?.value, s.visits?.prev))}
-    ${kpi('Bounces', num(s.bounces?.value), deltaTag(s.bounces?.value, s.bounces?.prev))}
+  <div style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:${SUB};margin:24px 0 12px;">Site detail · Umami</div>
+  ${d.siteErr ? `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:16px 20px;color:${DOWN};font:500 13px sans-serif;">Umami unreachable (${esc(d.siteErr)}). Check UMAMI_USERNAME / UMAMI_PASSWORD / UMAMI_URL.</div>` : `
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px;">
+    ${rowStat('Pageviews', `${num(s.pageviews?.value)} ${deltaTag(s.pageviews?.value, s.pageviews?.prev)}`)}
+    ${rowStat('Visits', `${num(s.visits?.value)} ${deltaTag(s.visits?.value, s.visits?.prev)}`)}
+    ${rowStat('Bounces', `${num(s.bounces?.value)} ${deltaTag(s.bounces?.value, s.bounces?.prev)}`)}
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px;">
-    ${list('Top pages', d.pages, 'No pageviews in this window yet.')}
-    ${list('Top sources', d.sources, 'No referrers yet — shares & search will show here.')}
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+    ${propList('Top pages', d.pages, CHALK, 'No pageviews in this window yet.')}
+    ${propList('Top sources', d.sources, UP, 'No referrers yet — shares & search show here.')}
   </div>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:14px;">
-    ${kpi('Subscribes', num(d.subs))}
-    ${kpi('Shares', num(d.shares))}
-    ${kpi('Report unlocks', num(d.unlocks))}
-    ${kpi('Move watches', num(d.moves))}
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px;">
+    ${eventCell('Subscribes', num(d.subs))}
+    ${eventCell('Shares', num(d.shares))}
+    ${eventCell('Report unlocks', num(d.unlocks))}
+    ${eventCell('Move watches', num(d.moves))}
   </div>`}
 
-  <div style="font:700 11px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:${LBL};margin:34px 0 14px;">Email · Resend</div>
-  ${d.emailErr ? `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:14px;padding:16px 20px;color:${DOWN};font:500 13px sans-serif;">Resend unreachable (${esc(d.emailErr)}). Check RESEND_API_KEY.</div>` : `
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
-    ${kpi('List · EN', num(d.enSize), 'subscribers')}
-    ${kpi('List · DE', num(d.deSize), 'subscribers')}
-    ${kpi('Total list', num(d.totalList), 'north-star')}
+  <div style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:${SUB};margin:26px 0 12px;">Email · Resend</div>
+  ${d.emailErr ? `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:16px 20px;color:${DOWN};font:500 13px sans-serif;">Resend unreachable (${esc(d.emailErr)}). Check RESEND_API_KEY.</div>` : `
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px;">
+    ${rowStat('List · EN', num(d.enSize))}
+    ${rowStat('List · DE', num(d.deSize))}
+    ${rowStat('Total', num(d.totalList))}
   </div>
-  <div style="background:${PANEL};border:1px solid ${LINE};border-radius:14px;padding:18px 20px;margin-top:14px;">
-    <div style="font:700 11px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:${LBL};margin-bottom:6px;">Recent broadcasts</div>
-    <table width="100%" cellpadding="0" cellspacing="0">${recent}</table>
+  <div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:16px 18px;">
+    <div style="display:flex;justify-content:space-between;font:700 9px/1 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:${SUB};padding-bottom:9px;border-bottom:1px solid ${LINE};"><span>Recent broadcasts</span><span>Status</span></div>
+    ${recent}
     <div style="font:400 11px/1.5 sans-serif;color:${SUB};margin-top:12px;">Open / click rates per send live in Resend → Broadcasts (enable Open + Click tracking on the domain). Email→site conversions are the Subscribe / Share events above, driven by the daily UTMs.</div>
   </div>`}
 
-  <div style="font:400 11px/1.6 sans-serif;color:${SUB};margin-top:34px;border-top:1px solid ${LINE};padding-top:16px;">
+  <div style="font:400 11px/1.6 sans-serif;color:${SUB};margin-top:30px;border-top:1px solid ${LINE};padding-top:16px;">
     Sqwod.Life Analytics · fresh on each load · private via Cloudflare Access. Site = self-hosted Umami · Email = Resend · joined by daily UTMs.
   </div>
 </div></body></html>`;
