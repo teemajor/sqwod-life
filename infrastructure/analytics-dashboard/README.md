@@ -22,11 +22,16 @@ sparkline) → ② "this week's move" auto-insight → ③ funnel (visitors → 
 optional `RESEND_AUDIENCE_EN` / `RESEND_AUDIENCE_DE`.
 **Secrets:** `UMAMI_USERNAME`, `UMAMI_PASSWORD`, `RESEND_API_KEY`, `DIGEST_KEY`.
 
-## Weekly digest
-`GET /digest?key=<DIGEST_KEY>` returns a plain-text weekly pulse (list +N, visitors,
-subscribe rate, top source/page, the move). It's keyed (not Access-gated) so it works on
-the `*.workers.dev` URL — a Monday scheduled task fetches it and relays the summary.
-Set a long random `DIGEST_KEY` secret to enable it.
+## Weekly digest (always-on, no runner)
+The Worker's `scheduled()` handler runs on a **Cloudflare cron** (`[triggers] crons`
+in wrangler.toml — Monday 07:00 UTC) and **emails the weekly pulse via Resend**. This
+runs on Cloudflare itself: no Claude runner, no git, works with your laptop closed.
+Needs `RESEND_API_KEY` + `RESEND_FROM` (a verified Resend sender); `DIGEST_TO`
+defaults to tee@teemajor.com. (This replaced the Cowork scheduled task that hit git
+exit-128 — that task can be deleted.)
+
+Also still available: `GET /digest?key=<DIGEST_KEY>` returns the same pulse as
+plain text (keyed, not Access-gated) if you ever want to fetch it manually.
 
 ## Notes
 - **Read-only.** Only GETs from the two APIs. No writes, no cookies, no storage.

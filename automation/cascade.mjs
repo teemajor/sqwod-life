@@ -212,11 +212,35 @@ function pickAffiliateRec(lang) {
   };
 }
 
+// Safety net on top of the prompt: drop any rec that just re-says a news
+// headline (the "rundown ≈ recs" bug) or duplicates another rec. Token-overlap
+// based; the affiliate rec is added AFTER this and always kept.
+const REC_STOP = new Set(['this','that','with','from','your','their','into','have','will','more','than','study','finds','launch','launches','launched','targets','target','plans','plan','after','about','could','would','should','being','they','them','what','when','where','which','while','because','over','under','first','sqwod','daily','fitness','wellness','coach','coaches','studio','studios']);
+function recTokens(str) {
+  return new Set(String(str || '').toLowerCase().replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !REC_STOP.has(w)));
+}
+function recOverlap(a, b) { let n = 0; for (const t of a) if (b.has(t)) n++; return n; }
+function dedupeRecs(recs, items) {
+  const heads = (items || []).map((i) => recTokens(`${i.headline || ''} ${i.dek || ''}`));
+  const kept = [], seen = [];
+  for (const r of recs) {
+    const t = recTokens(`${r.label || ''} ${r.text || ''}`);
+    if (t.size === 0) { kept.push(r); continue; }         // too short to judge — keep
+    const echoesNews = heads.some((h) => { const o = recOverlap(t, h); return o >= 3 || (o > 0 && o / Math.min(t.size, h.size) >= 0.5); });
+    if (echoesNews) continue;
+    const dupRec = seen.some((s2) => { const o = recOverlap(t, s2); return o >= 3 || (o > 0 && o / Math.min(t.size, s2.size) >= 0.6); });
+    if (dupRec) continue;
+    kept.push(r); seen.push(t);
+  }
+  return kept;
+}
+
 // Build the full section package (model output + programmatic affiliate rec + Play).
-function buildSections(lead, lang) {
+function buildSections(lead, lang, items) {
   const s = lead && lead.connectTitle ? { ...lead } : {};
   const aff = pickAffiliateRec(lang);
-  s.recs = [...(Array.isArray(lead?.recs) ? lead.recs : []), ...(aff ? [aff] : [])];
+  const modelRecs = dedupeRecs(Array.isArray(lead?.recs) ? lead.recs : [], items);
+  s.recs = [...modelRecs, ...(aff ? [aff] : [])];
   s.play = {
     title: 'Sqwod Readiness Tap',
     prompt: lang === 'de'
@@ -396,7 +420,7 @@ async function run() {
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
     }
     const lead = await generateLead(items, lang);
-    let sections = buildSections(lead, lang);     // model output + affiliate rec + Play (even in dry-run)
+    let sections = buildSections(lead, lang, items);     // model output + affiliate rec + Play (even in dry-run); items → rec dedup
     if (move) sections.move = move;               // feature the curated clip at the top of the Daily
     const v = await verifyIssue(items, sections, sources, lang);  // fact-check vs source facts
     sections = v.sections;

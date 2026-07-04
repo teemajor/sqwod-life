@@ -53,6 +53,27 @@ export default {
       headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
     });
   },
+
+  // Weekly digest — runs on the Cloudflare cron (see wrangler.toml [triggers]).
+  // Always-on: no Claude runner, no git, runs even with your laptop closed.
+  // Emails the weekly pulse via Resend. Needs RESEND_API_KEY + RESEND_FROM
+  // (a verified Resend sender); DIGEST_TO defaults to tee@teemajor.com.
+  async scheduled(event, env, ctx) {
+    const endAt = Date.now();
+    const d = await gather(env, { startAt: endAt - 7 * 86400000, endAt, unit: 'day', label: 'last 7 days', activeKey: '7' });
+    const text = digestText(d);
+    const from = env.RESEND_FROM, to = env.DIGEST_TO || 'tee@teemajor.com';
+    if (!env.RESEND_API_KEY || !from) { console.log('digest: RESEND_API_KEY/RESEND_FROM missing — skipped'); return; }
+    ctx.waitUntil(fetch(`${RESEND_API}/emails`, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+      body: JSON.stringify({
+        from, to, reply_to: to,
+        subject: `Sqwod.Life — Weekly Pulse · list ${num(d.totalList)} (+${d.weeklySubs})`,
+        text,
+      }),
+    }).then((r) => console.log(`digest email → ${r.status}`)).catch((e) => console.log(`digest email failed: ${e}`)));
+  },
 };
 
 // Turn ?range=today|7|30|mtd|90|ytd  OR  ?from=YYYY-MM-DD&to=YYYY-MM-DD into a window.
