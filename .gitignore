@@ -50,3 +50,6 @@ research/statista/*
 *.swp
 *~
 .DS_Store
+
+# scratch: planning, mockups, councils, Pod-venture staging — kept local, out of the repo
+_workspace/
