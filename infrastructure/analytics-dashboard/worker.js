@@ -196,13 +196,28 @@ function moveLine(d) {
 function barChart(series) {
   const pts = Array.isArray(series?.pageviews) ? series.pageviews : [];
   if (pts.length < 2) return `<div style="color:${SUB};font:400 12px sans-serif;padding:22px 0;">Activity chart appears once a few days of data land.</div>`;
-  const ys = pts.map((p) => p.y || 0); const max = Math.max(...ys, 1);
+  const ys = pts.map((p) => p.y || 0);
+  const max = Math.max(...ys, 1);
+  const total = ys.reduce((a, b) => a + b, 0);
+  const last = ys[ys.length - 1];
+  const fmtX = (x) => String(x || '').replace('T', ' ').replace(/:00.*$/, '').slice(5); // MM-DD (or MM-DD HH for hourly)
   const H = 96, n = ys.length, gap = n > 24 ? 3 : 6, bw = (560 - (n - 1) * gap) / n;
   const bars = ys.map((y, i) => {
     const h = Math.max(2, (y / max) * (H - 4)); const x = i * (bw + gap);
-    return `<rect x="${x.toFixed(1)}" y="${(H - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" fill="${i === n - 1 ? '#fff' : '#e6e6ec'}"/>`;
+    return `<rect x="${x.toFixed(1)}" y="${(H - h).toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" fill="${i === n - 1 ? '#fff' : '#e6e6ec'}"><title>${esc(fmtX(pts[i].x))}: ${num(y)}</title></rect>`;
   }).join('');
-  return `<svg viewBox="0 0 560 ${H}" width="100%" height="${H}" preserveAspectRatio="none">${bars}</svg>`;
+  // peak label pinned top-right of the plot, hover tooltips per bar, and a numeric caption
+  return `<div>
+    <div style="position:relative;">
+      <div style="position:absolute;top:-2px;right:0;font:700 10px/1 ui-monospace,monospace;color:${SUB};">peak ${num(max)}</div>
+      <svg viewBox="0 0 560 ${H}" width="100%" height="${H}" preserveAspectRatio="none" style="display:block;">${bars}</svg>
+    </div>
+    <div style="display:flex;justify-content:space-between;margin-top:10px;font:700 11px/1 ui-monospace,monospace;color:${G2};">
+      <span><span style="color:${SUB};font-weight:600;">TOTAL</span> ${num(total)}</span>
+      <span><span style="color:${SUB};font-weight:600;">PEAK</span> ${num(max)}/day</span>
+      <span><span style="color:${SUB};font-weight:600;">LATEST</span> ${num(last)}</span>
+    </div>
+  </div>`;
 }
 
 function funnelCard(label, value, sub) {
