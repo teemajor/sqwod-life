@@ -137,6 +137,7 @@ ${list}
 Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, deals, or statistics. Only use figures that appear verbatim above. If a section has no real basis, return null (or []) for it — do not fabricate.
 {
  "summary":"<=60 chars; ONE punchy episode title for the list, homepage & search results — the single most interesting thread of the day, NOT a dump of every headline. A real title, not a sentence with semicolons.",
+ "intro":"a FRESH 1-sentence opener written for THIS issue in Sqwod's Morning-Brew voice — a specific hook or wry line that sets up today's read. Must be different every issue (no template), must NOT just restate summary or connectTitle, <=150 chars.",
  "connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
  "connectBody":"two short paragraphs separated by \\n; teach the pattern and why it matters to an operator; specific, witty, no fluff",
  "doThis":"one concrete action the reader can take this week",
@@ -326,9 +327,9 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
     `title: ${q('Sqwod Daily')}`,
     `summary: ${q((sections && sections.summary) || (items[0] && items[0].headline) || 'Sqwod Daily')}`,
     `status: ${q(issueStatus)}`,
-    `intro: ${q(lang === 'de'
+    `intro: ${q((sections && sections.intro) || (lang === 'de'
       ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
-      : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care.")}`,
+      : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care."))}`,
   ];
   const s = sections || {};
   if (s.audioScript) lines.push(`audioScript: ${q(s.audioScript)}`);  // spoken brief (ear, not page)
