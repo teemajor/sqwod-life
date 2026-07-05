@@ -49,15 +49,21 @@ const summary = (line) => { try { if (process.env.GITHUB_STEP_SUMMARY) appendFil
 const jstr = (ln) => { const m = ln.match(/"(?:[^"\\]|\\.)*"/); return m ? JSON.parse(m[0]) : ''; };
 function meta(file) {
   const fm = (readFileSync(file, 'utf8').match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
-  const out = { intro: '', lead: '' };
-  let inDots = false;
+  const out = { intro: '', lead: '', summary: '', firstItem: '' };
+  let inDots = false, inItems = false;
   for (const ln of fm.split('\n')) {
-    if (/^connectDots:/.test(ln)) { inDots = true; continue; }
+    if (/^summary:/.test(ln)) { out.summary = jstr(ln); continue; }
+    if (/^intro:/.test(ln)) { out.intro = jstr(ln); continue; }
+    if (/^connectDots:/.test(ln)) { inDots = true; inItems = false; continue; }
+    if (/^items:/.test(ln)) { inItems = true; inDots = false; continue; }
     if (inDots) {
       const m = ln.match(/^\s+title:\s*(.+)$/); if (m) { out.lead = jstr(ln); inDots = false; continue; }
       if (!/^\s/.test(ln)) inDots = false;
     }
-    if (/^intro:/.test(ln)) out.intro = jstr(ln);
+    if (inItems && !out.firstItem) {
+      const m = ln.match(/^\s+-?\s*headline:\s*(.+)$/); if (m) { out.firstItem = jstr(ln); inItems = false; }
+      else if (!/^\s/.test(ln)) inItems = false;
+    }
   }
   return out;
 }
@@ -79,7 +85,11 @@ async function sendLang(lang) {
 
   const m = meta(issue);
   const html = resendify(readFileSync(snippet, 'utf8'), lang);
-  const subject = `${m.lead || 'Sqwod Daily'} — ${niceDate(date, lang)}`;
+  // Subject = the day's HOOK (no date — the inbox already shows it; the brand is in
+  // the "Sqwod Daily" from-name). Prefer the episode title/thread; fall back to the
+  // top story; never ship a bland "Sqwod Daily — <date>".
+  const hook = (m.summary || m.lead || m.firstItem || 'Sqwod Daily').trim();
+  const subject = hook.length > 88 ? hook.slice(0, 86).replace(/\s+\S*$/, '') + '…' : hook;
   const payload = {
     segment_id: AUD[lang],
     from: FROM,

@@ -219,8 +219,8 @@ async function sendEmail(proposals) {
   const autos = proposals.filter((p) => p.autoApplied).length;
   const pending = proposals.length - autos;
   const subject = autos && pending ? `Sqwod Intelligence — ${autos} auto-updated, ${pending} to review`
-    : autos ? `Sqwod Intelligence — ${autos} figure(s) auto-updated`
-    : `Sqwod Intelligence — ${pending} figure(s) to review`;
+    : autos ? `Sqwod Intelligence — ${autos} figure${autos === 1 ? '' : 's'} auto-updated`
+    : `Sqwod Intelligence — ${pending} figure${pending === 1 ? '' : 's'} to review`;
   if (!RESEND || !REVIEWER) {
     console.log(`\n[dry-run] would email ${REVIEWER || '(no INTEL_REVIEWER_EMAIL)'} — ${autos} auto-applied, ${pending} pending. Links:`);
     proposals.forEach((p) => console.log(`  · ${p.label}: ${p.autoApplied ? `[revert] ${p.revert}` : `[approve] ${p.approve}`}`));

@@ -237,7 +237,8 @@ function render(iss, lang) {
 
   const full = `<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sqwod Daily — ${esc(niceDate)}</title></head>
 <body style="margin:0;padding:0;background:#eeeef0;">
-  <span style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(iss.connectDots?.title || iss.intro || '')}</span>
+  <span style="display:none;max-height:0;overflow:hidden;opacity:0;mso-hide:all;">${esc(iss.connectDots?.title || iss.items?.[0]?.headline || iss.intro || iss.summary || (lang === 'de' ? 'Das Business von Fitness — in fünf Minuten entschlüsselt.' : 'The business of fitness, decoded — in five minutes.'))}</span>
+  <span style="display:none;max-height:0;overflow:hidden;opacity:0;mso-hide:all;">${'&#847;&zwnj;&nbsp;'.repeat(80)}</span>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#eeeef0;padding:20px 12px;">
     <tr><td align="center">${inner}</td></tr>
   </table>
