@@ -4,6 +4,8 @@ import CategoryIcon from '../../../../components/CategoryIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
 import { categories, byCategory } from '../../../../config/verified-categories';
+import { hasCompare } from '../../../../config/verified-compare';
+import ComparisonTable from '../../../../components/ComparisonTable.astro';
 
 export function getStaticPaths() {
   return languages.flatMap((lang) => categories.map((c) => ({ params: { lang, category: c.slug }, props: { slug: c.slug } })));
@@ -19,6 +21,20 @@ const scoreOf = (slug?: string) => slug ? reviews.find((r) => r.data.urlSlug ===
 const enriched = cat.picks.map((p) => ({ p, r: scoreOf(p.reviewSlug) }));
 enriched.sort((a, b) => (b.r?.sqwodScore ?? -1) - (a.r?.sqwodScore ?? -1));
 
+// reviewed picks → comparison table (Sqwod Score + price live from reviews; specs from verified-compare)
+const cmpItems = enriched.filter((e) => e.r).map(({ p, r }) => ({
+  name: p.product, slug: p.reviewSlug as string,
+  score: r!.sqwodScore, price: r!.value?.bestPrice, currency: r!.value?.currency,
+}));
+
+// head-to-head pairs (reviewed products in this category) → programmatic vs-pages
+const pairs: { url: string; label: string }[] = [];
+for (let i = 0; i < cmpItems.length; i++)
+  for (let j = i + 1; j < cmpItems.length; j++) {
+    const [x, y] = [cmpItems[i].slug, cmpItems[j].slug].sort();
+    pairs.push({ url: `/${lang}/verified/compare/${x}-vs-${y}`, label: `${cmpItems[i].name} vs ${cmpItems[j].name}` });
+  }
+
 const tx = {
   aff: lang === 'de' ? 'Affiliate' : 'Affiliate',
   noaff: lang === 'de' ? 'Nicht affiliiert' : 'Not affiliated',
@@ -28,6 +44,7 @@ const tx = {
   visit: lang === 'de' ? 'Zur Website' : 'Visit site',
   bestFor: lang === 'de' ? 'Am besten für' : 'Best for',
   allCats: lang === 'de' ? 'Alle Kategorien' : 'All categories',
+  headToHead: lang === 'de' ? 'Direktvergleiche' : 'Head-to-head',
 };
 const title = `${cat.label[lang]} — Sqwod Verified`;
 ---
@@ -65,6 +82,15 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
     ))}
   </div>
 
+  {hasCompare(cat.slug) && <ComparisonTable lang={lang} slug={cat.slug} items={cmpItems} />}
+
+  {pairs.length > 0 && (
+    <section class="hh2">
+      <h2>{tx.headToHead}</h2>
+      <div class="hhlinks">{pairs.map((pr) => <a href={pr.url}>{pr.label}</a>)}</div>
+    </section>
+  )}
+
   <div class="note" style="margin-top:16px"><b>{t(lang,'verified.howWeRank')}.</b> {lang==='de'
     ? 'Getestete Produkte tragen einen Sqwod Score (Crowd 45% · unsere Bewertung 40% · Preis-Leistung 15%). Redaktions-Tipps sind kuratierte Marktführer, die wir noch testen — ohne Score. „Affiliate" heißt: wir verdienen ggf. über den Link. „Nicht affiliiert" heißt: rein auf Empfehlung gelistet.'
     : 'Reviewed products carry a Sqwod Score (Crowd 45% · our assessment 40% · Value 15%). Editorial picks are curated category leaders we haven\'t scored yet — no score. "Affiliate" means we may earn from the link. "Not affiliated" means it\'s listed purely on merit.'}</div>
@@ -98,6 +124,11 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
   .score .lbl{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
   .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
   .lp:hover{border-color:var(--chalk)}
+  .hh2{margin:22px 0 6px}
+  .hh2 h2{font-size:15px;margin:0 0 10px}
+  .hhlinks{display:flex;flex-wrap:wrap;gap:8px}
+  .hhlinks a{font-size:13px;font-weight:600;color:var(--g1);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:8px 13px}
+  .hhlinks a:hover{border-color:var(--chalk);color:var(--chalk)}
   @media(max-width:640px){
     .row{grid-template-columns:24px 1fr;gap:10px}
     .thumb,.score{display:none}

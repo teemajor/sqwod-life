@@ -1,0 +1,121 @@
+---
+// Sqwod Verified — programmatic "X vs Y" head-to-head pages (SEO/GEO magnet).
+// One page per pair of REVIEWED products within the same category, so every
+// comparison is apples-to-apples. URL: /<lang>/verified/compare/<a>-vs-<b>.
+import Base from '../../../../layouts/Base.astro';
+import ComparisonTable from '../../../../components/ComparisonTable.astro';
+import { getCollection } from 'astro:content';
+import { languages, t, type Lang } from '../../../../i18n/ui';
+import { categories, byCategory } from '../../../../config/verified-categories';
+
+export async function getStaticPaths() {
+  const paths: any[] = [];
+  for (const lang of languages) {
+    const reviews = await getCollection('reviews', (r) => r.data.lang === lang);
+    const isReviewed = (slug?: string) => !!slug && reviews.some((r) => r.data.urlSlug === slug);
+    for (const cat of categories) {
+      const reviewed = cat.picks.filter((p) => isReviewed(p.reviewSlug)).map((p) => p.reviewSlug as string);
+      for (let i = 0; i < reviewed.length; i++) {
+        for (let j = i + 1; j < reviewed.length; j++) {
+          const [a, b] = [reviewed[i], reviewed[j]].sort(); // canonical order → one URL per pair
+          paths.push({ params: { lang, pair: `${a}-vs-${b}` }, props: { catSlug: cat.slug, aSlug: a, bSlug: b } });
+        }
+      }
+    }
+  }
+  return paths;
+}
+
+const lang = Astro.params.lang as Lang;
+const { catSlug, aSlug, bSlug } = Astro.props;
+const reviews = await getCollection('reviews', (r) => r.data.lang === lang);
+const A = reviews.find((r) => r.data.urlSlug === aSlug)!.data;
+const B = reviews.find((r) => r.data.urlSlug === bSlug)!.data;
+const cat = byCategory(catSlug)!;
+const pickOf = (slug: string) => cat.picks.find((p) => p.reviewSlug === slug);
+
+const winner = A.sqwodScore >= B.sqwodScore ? A : B;
+const cur = (c?: string) => (!c || c === 'EUR' ? '€' : c === 'USD' ? '$' : c + ' ');
+const items = [A, B].map((d) => ({ name: d.productName, slug: d.urlSlug, score: d.sqwodScore, price: d.value?.bestPrice, currency: d.value?.currency }));
+
+const T = lang === 'de' ? {
+  vs: 'vs', verdict: 'Sqwod-Urteil', pick: 'Unser Sieger', takes: 'gewinnt', choose: 'Wähle', ifb: 'wenn du',
+  score: 'Score', from: 'ab', read: 'Test lesen →', visit: 'Zur Website ↗', all: 'Alle', both: 'Beide sind stark — die Wahl hängt davon ab, was du priorisierst:',
+} : {
+  vs: 'vs', verdict: 'Sqwod verdict', pick: 'Our pick', takes: 'takes it', choose: 'Choose', ifb: 'if you',
+  score: 'Score', from: 'from', read: 'Read review →', visit: 'Visit site ↗', all: 'All', both: 'Both are strong — the call comes down to what you prioritise:',
+};
+
+const title = `${A.productName} ${T.vs} ${B.productName} — ${lang === 'de' ? 'welches gewinnt?' : 'which wins?'} | Sqwod Verified`;
+const desc = lang === 'de'
+  ? `${A.productName} (Sqwod Score ${A.sqwodScore}) im direkten Vergleich mit ${B.productName} (${B.sqwodScore}) — Specs, Preis und für wen sich welches lohnt.`
+  : `${A.productName} (Sqwod Score ${A.sqwodScore}) head-to-head with ${B.productName} (${B.sqwodScore}) — specs, price, and who each is for.`;
+
+const card = (d: typeof A, isWin: boolean) => ({ d, isWin, pick: pickOf(d.urlSlug) });
+const cards = [card(A, winner === A), card(B, winner === B)];
+---
+<Base lang={lang} title={title} description={desc} active="verified">
+  <div class="crumb"><a href={`/${lang}/verified`}>Sqwod Verified</a> / <a href={`/${lang}/verified/c/${cat.slug}`}>{cat.label[lang]}</a></div>
+  <h1>{A.productName} <span class="vs">{T.vs}</span> {B.productName}</h1>
+
+  <div class="verdict">
+    <div class="vlabel">{T.verdict}</div>
+    <p class="vhead"><b>{T.pick}: {winner.productName}</b> {T.takes} — {A.sqwodScore} {T.vs} {B.sqwodScore}.</p>
+    <p class="vbody">{T.both}</p>
+    <ul class="pick-if">
+      <li><b>{A.productName}</b> — {A.whoFor?.buy}</li>
+      <li><b>{B.productName}</b> — {B.whoFor?.buy}</li>
+    </ul>
+  </div>
+
+  <div class="hh">
+    {cards.map(({ d, isWin, pick }) => (
+      <div class={`hc${isWin ? ' win' : ''}`}>
+        {isWin && <span class="wtag">{T.pick}</span>}
+        <h2>{d.productName}</h2>
+        <div class="scr"><b>{d.sqwodScore}</b><span>{T.score} · {d.confidence}</span></div>
+        {typeof d.value?.bestPrice === 'number' && <div class="prc">{T.from} {cur(d.value.currency)}{d.value.bestPrice}</div>}
+        <p class="vd">{d.verdict}</p>
+        <div class="acts">
+          <a class="rev" href={`/${lang}/verified/${d.urlSlug}`}>{T.read}</a>
+          {pick && <a class="vis" href={pick.url} target="_blank" rel={pick.affiliate ? 'sponsored nofollow' : 'nofollow'}>{T.visit}</a>}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <ComparisonTable lang={lang} slug={cat.slug} items={items} />
+
+  <p class="disc" style="margin-top:14px">{t(lang, 'disclosure')}</p>
+  <p style="margin-top:14px"><a class="lp" href={`/${lang}/verified/c/${cat.slug}`}>← {T.all} {cat.label[lang]}</a></p>
+</Base>
+
+<style>
+  .crumb{font-size:13px;color:var(--g3);margin-bottom:6px}
+  .crumb a{color:inherit;text-decoration:none}
+  h1{font-size:clamp(24px,4vw,34px);letter-spacing:-.02em;margin:2px 0 16px}
+  h1 .vs{color:var(--g4);font-weight:400}
+  .verdict{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--panel)}
+  .vlabel{font:800 10px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--g4)}
+  .vhead{font-size:17px;margin:10px 0 8px;color:var(--chalk)}
+  .vbody{font-size:14px;color:var(--g2);margin:0 0 8px}
+  .pick-if{margin:0;padding-left:18px}
+  .pick-if li{font-size:14px;color:var(--g1);margin:5px 0}
+  .pick-if b{color:var(--chalk)}
+  .hh{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+  .hc{position:relative;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .hc.win{border-color:var(--chalk)}
+  .wtag{position:absolute;top:-9px;left:16px;font:800 9px/1 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;background:var(--chalk);color:var(--ink);padding:4px 8px;border-radius:999px}
+  .hc h2{font-size:18px;margin:2px 0 8px;letter-spacing:-.01em}
+  .scr{display:flex;align-items:baseline;gap:8px;margin-bottom:4px}
+  .scr b{font:800 30px/1 ui-monospace,Menlo,monospace;color:var(--chalk)}
+  .scr span{font:700 10px/1 ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--g3)}
+  .prc{font:700 13px/1 ui-monospace,monospace;color:var(--g2);margin-bottom:10px}
+  .vd{font-size:14px;color:var(--g2);line-height:1.55;margin:0 0 12px}
+  .acts{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;font-weight:700}
+  .rev{color:var(--chalk);text-decoration:none;border-bottom:1px solid var(--g3)}
+  .vis{color:var(--g3);text-decoration:none;border-bottom:1px solid var(--line)}
+  .acts a:hover{border-color:var(--chalk)}
+  .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+  @media(max-width:600px){.hh{grid-template-columns:1fr}}
+</style>

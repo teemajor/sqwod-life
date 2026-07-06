@@ -1,0 +1,74 @@
+---
+// Sqwod Verified — side-by-side comparison. Pulls Sqwod Score + price from the
+// reviewed products (passed in) and normalized feature specs from verified-compare.
+// Price is the reviewed best price today; live per-retailer price comes in Phase 1
+// (Awin feed). Renders nothing unless there are ≥2 products and ≥1 spec row.
+import { compareRows } from '../config/verified-compare';
+import type { Lang } from '../i18n/ui';
+
+interface Item { name: string; slug: string; score?: number; price?: number; currency?: string; }
+interface Props { lang: Lang; slug: string; items: Item[]; asOf?: string; }
+const { lang, slug, items, asOf } = Astro.props;
+const rows = compareRows(slug);
+const cur = (c?: string) => (!c || c === 'EUR' ? '€' : c === 'USD' ? '$' : c + ' ');
+const T = lang === 'de'
+  ? { compare: 'Direktvergleich', read: 'Test →', from: 'ab', score: 'Score', note: 'Preise sind unsere getesteten Richtwerte' }
+  : { compare: 'Compare side-by-side', read: 'Review →', from: 'from', score: 'Score', note: 'Prices are our reviewed reference points' };
+const show = rows.length >= 1 && items.length >= 2;
+---
+{show && (
+<section class="cmp" aria-label={T.compare}>
+  <h2>{T.compare}</h2>
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th class="corner" scope="col"></th>
+          {items.map((it) => (
+            <th scope="col">
+              <a href={`/${lang}/verified/${it.slug}`} class="ph">
+                <span class="pn">{it.name}</span>
+                {typeof it.score === 'number' && <span class="sc">{it.score}<i>{T.score}</i></span>}
+                {typeof it.price === 'number' && <span class="pr">{T.from} {cur(it.currency)}{it.price}</span>}
+                <span class="rl">{T.read}</span>
+              </a>
+            </th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {rows.map((r) => (
+          <tr>
+            <th class="attr" scope="row">{r.label[lang]}</th>
+            {items.map((it) => <td>{r.values[it.slug]?.[lang] ?? '—'}</td>)}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+  <p class="cnote">{T.note}{asOf ? ` · ${asOf}` : ''}.</p>
+</section>
+)}
+
+<style>
+  .cmp{margin:26px 0 6px}
+  .cmp h2{font-size:15px;letter-spacing:.02em;margin:0 0 12px}
+  .scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;min-width:560px;font-size:13.5px}
+  th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child th,tr:last-child td{border-bottom:none}
+  /* sticky first column (attribute names) */
+  .corner,.attr{position:sticky;left:0;z-index:2;background:var(--bg);min-width:132px}
+  .attr{font-weight:700;color:var(--g2);font-size:12px}
+  thead .corner,thead th{background:var(--panel);border-bottom:1px solid var(--line)}
+  thead th{vertical-align:bottom}
+  .ph{display:flex;flex-direction:column;gap:4px;text-decoration:none;color:inherit;min-width:120px}
+  .pn{font-weight:800;font-size:14px;color:var(--chalk);letter-spacing:-.01em;line-height:1.2}
+  .sc{font:800 20px/1 ui-monospace,Menlo,monospace;color:var(--chalk)}
+  .sc i{font:700 8px/1 ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--g3);font-style:normal;margin-left:4px}
+  .pr{font:700 12px/1 ui-monospace,monospace;color:var(--g2)}
+  .rl{font-weight:700;font-size:11px;color:var(--chalk);border-bottom:1px solid var(--g3);align-self:flex-start;margin-top:2px}
+  .ph:hover .rl{border-color:var(--chalk)}
+  tbody td{color:var(--g1)}
+  .cnote{font-size:11px;color:var(--g4);margin:8px 2px 0}
+</style>
