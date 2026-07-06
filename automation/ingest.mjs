@@ -120,14 +120,37 @@ async function getXml(url) {
   return r.text();
 }
 
-// Add a normalized candidate to the pool (with headline-level de-dupe).
+// Near-duplicate detection: two outlets covering the SAME event (e.g. the same
+// funding round) write different headlines + different URLs, so exact-match
+// de-dupe misses them and the same story lands twice in The Rundown. We compare
+// the salient tokens (company + number + verb) and collapse the pair, keeping the
+// first (curated/trade feeds are added first, so they win).
+const DUP_STOP = new Set(['the','a','an','to','of','for','and','in','on','with','its','is','as','at','by','new','now','says','said','after','into','from','more','than','that','this','will','how','why','amid','over','under','your','you','fitness','wellness','industry','report','plans','plan']);
+function dupTokens(h) {
+  return new Set(String(h).toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !DUP_STOP.has(w)));
+}
+function isNearDup(tok, pool) {
+  if (tok.size === 0) return false;
+  for (const p of pool) {
+    const b = p._tok || (p._tok = dupTokens(p.headline));
+    if (b.size === 0) continue;
+    let o = 0; for (const t of tok) if (b.has(t)) o++;
+    if (o >= 4 || (o >= 2 && o / Math.min(tok.size, b.size) >= 0.6)) return true;
+  }
+  return false;
+}
+
+// Add a normalized candidate to the pool (with headline-level + near-duplicate de-dupe).
 function add(pool, seen, { headline, outlet, link, pub, pillar, conversion, trade = false }) {
   if (!headline || !link) return;
   if (JUNK.test(headline)) return;
   const key = headline.toLowerCase().replace(/[^a-z0-9 ]/g, '').slice(0, 60);
-  if (seen.has(key)) return; seen.add(key);
+  if (seen.has(key)) return;
+  const tok = dupTokens(headline);
+  if (isNearDup(tok, pool)) return;   // same story, different outlet → skip
+  seen.add(key);
   const kind = moneyKind(headline);
-  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, money: kind ? { kind, amount: moneyAmount(headline) } : null });
+  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, money: kind ? { kind, amount: moneyAmount(headline) } : null, _tok: tok });
 }
 
 async function run() {

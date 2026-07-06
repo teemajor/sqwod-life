@@ -144,7 +144,7 @@ Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, dea
  "meanwhile":"a light, witty aside about a DIFFERENT story than connectTitle focuses on. Must NOT restate or recap anything already covered in connectBody or the items list — pick the most off-beat angle and make a wry one-liner. Return an empty string if there is no genuinely distinct, fun angle left. No invented numbers.",
  "moneyMoves":[{"entity":"name from the items","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one clause"}]  // ONLY for items that are actually raises/M&A/valuations; [] if none,
  "policyWatch":{"title":"...","body":"1-2 sentences on a regulation/policy that affects coaches or studios"} or null if no item is policy/regulatory,
- "stat":{"number":"the figure verbatim","label":"what it measures","body":"why it matters"} or null if no real number appears,
+ "stat":{"number":"the figure verbatim","label":"what it measures","body":"why it matters"} or null. The Stat MUST be a DIFFERENT figure than any amount in moneyMoves — prefer a market size, %, growth rate, adoption or count figure. If the only real number available is a funding/deal amount already surfaced in moneyMoves, return null rather than repeating it. Also skip small, hyper-local figures that a global coach/operator can't size (return null),
  "recs":[{"label":"Steal|Try|Read|Watch|Track","text":"a concrete, EVERGREEN, operator-useful action or resource"}]  // exactly 2-3 items. HARD RULES so recs are NOT a recap of the news: (a) each rec must be a DIFFERENT type AND topic from the others and from doThis; (b) NONE may restate, summarize, or reference today's items, connectBody, doThis, moneyMoves or stat — recs are fresh, standalone value; (c) be specific and immediately usable — a tactic to implement, a tool/tool-category to try, a habit or metric to start tracking, or a genuinely worth-it read/watch — never vague platitudes; (d) no invented brand names, prices, or numbers.
 }`;
   try {
@@ -239,6 +239,14 @@ function dedupeRecs(recs, items) {
 // Build the full section package (model output + programmatic affiliate rec + Play).
 function buildSections(lead, lang, items) {
   const s = lead && lead.connectTitle ? { ...lead } : {};
+  // Backstop: never let the Stat box merely repeat a Money Movement amount already
+  // shown above — that's the "one story, five mentions" bug. Deterministic, so it
+  // holds even when the model ignores the prompt rule.
+  if (s.stat && s.stat.number && Array.isArray(s.moneyMoves) && s.moneyMoves.length) {
+    const norm = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const sn = norm(s.stat.number);
+    if (sn && s.moneyMoves.some((m) => norm(m.amount) === sn)) delete s.stat;
+  }
   const aff = pickAffiliateRec(lang);
   const modelRecs = dedupeRecs(Array.isArray(lead?.recs) ? lead.recs : [], items);
   s.recs = [...modelRecs, ...(aff ? [aff] : [])];
