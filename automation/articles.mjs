@@ -113,7 +113,7 @@ function frontmatter(slug, lang, lane, type, art, cluster) {
     `conversion: ${conv}`,
     `publishedAt: ${date}`,
     `updatedAt: ${date}`,
-    `asOf: ${date}`,
+    `asOf: ${q(date)}`,
     `author: "Sqwod"`,
     `gated: false`,
     'sources:',

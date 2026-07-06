@@ -1,0 +1,17 @@
+name = "sqwod-move-email"
+main = "worker.js"
+compatibility_date = "2026-06-01"
+
+[vars]
+GH_OWNER = "teemajor"
+GH_REPO = "sqwod-life"
+GH_BRANCH = "main"
+# Only these addresses may add a Move by email; anything else is rejected.
+ALLOWED_SENDERS = "tee@teemajor.com,tee@sqwod.life"
+
+# --- secret (set via CLI or dashboard) ---
+#   npx wrangler secret put GITHUB_TOKEN     # fine-grained PAT, Contents: Read/Write on teemajor/sqwod-life
+
+# Inbound email is bound in the dashboard, not here:
+#   Cloudflare → your domain → Email → Email Routing → Routes →
+#   custom address moves@sqwod.life → Action: "Send to a Worker" → sqwod-move-email

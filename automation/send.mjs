@@ -13,7 +13,8 @@
  *   RESEND_API_KEY        required to send (no key → safe no-op)
  *   RESEND_AUDIENCE_EN    audience/segment ID for the English list
  *   RESEND_AUDIENCE_DE    audience/segment ID for the German list
- *   RESEND_FROM           verified sender, e.g. "Tee at Sqwod <daily@sqwod.life>"
+ *   RESEND_FROM           verified sender on the Resend-verified domain (send.sqwod.life),
+ *                         e.g. "Sqwod Daily <daily@send.sqwod.life>" — leave your current value as-is
  *   RESEND_REPLY_TO       optional, default hello@sqwod.life
  *   RESEND_PRIMARY_LANG   when only one audience is set, which lang to send; default en
  *   SITE_URL              default https://sqwod.life
@@ -37,7 +38,7 @@ const DRY = !!args.dry;
 
 const KEY = process.env.RESEND_API_KEY || '';
 const AUD = { en: process.env.RESEND_AUDIENCE_EN || '', de: process.env.RESEND_AUDIENCE_DE || '' };
-const FROM = process.env.RESEND_FROM || 'Tee at Sqwod <daily@sqwod.life>';
+const FROM = process.env.RESEND_FROM || 'Sqwod Daily <daily@send.sqwod.life>';
 const REPLY = process.env.RESEND_REPLY_TO || 'hello@sqwod.life';
 const PRIMARY = process.env.RESEND_PRIMARY_LANG || 'en';
 

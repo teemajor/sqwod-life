@@ -1,0 +1,53 @@
+name: Intelligence — draft new report
+
+on:
+  workflow_dispatch:            # manual run from the Actions tab
+  schedule:
+    - cron: '0 6 * * 3'         # Wednesdays ~08:00 Berlin — one fresh draft/week
+
+permissions:
+  contents: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Draft the most relevant report from the Statista fact bank
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node automation/intelligence-generate.mjs --date=$(date +%F)
+
+      - name: Commit the draft (if any)
+        id: commit
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          [ -e automation/intel-drafts ] && git add automation/intel-drafts || true
+          if git diff --staged --quiet; then
+            echo "No new draft this run."
+          else
+            git commit -m "intel: draft new Intelligence report $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+            echo "drafted=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Email Tee — a report is ready to verify
+        if: steps.commit.outputs.drafted == 'yes'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+        run: |
+          F=$(git log -1 --name-only --pretty=format: | grep -m1 'automation/intel-drafts/.*\.en\.md' || true)
+          URL="${{ github.server_url }}/${{ github.repository }}/blob/main/$F"
+          if [ -n "$RESEND_API_KEY" ] && [ -n "$RESEND_FROM" ] && [ -n "$F" ]; then
+            curl -s -X POST https://api.resend.com/emails \
+              -H "Authorization: Bearer $RESEND_API_KEY" -H "Content-Type: application/json" \
+              -d "{\"from\":\"$RESEND_FROM\",\"to\":\"tee@teemajor.com\",\"subject\":\"📊 New Intelligence report drafted — verify & publish\",\"text\":\"A new Sqwod Intelligence report was auto-drafted from the Statista fact bank.\n\nReview it (verify EVERY figure against the source): $URL\n\nTo publish: move the .en.md and .de.md out of automation/intel-drafts/ into site/src/content/articles/ and remove the 'draft: true' line.\"}" >/dev/null || true
+          fi

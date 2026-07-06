@@ -87,7 +87,9 @@ const articles = defineCollection({
     gated: z.boolean().default(false),
     sourceIds: z.array(z.string()).default([]), // provenance → living wiki
     sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]), // rendered citations
-    asOf: z.string().optional(),               // "as of" date for data-heavy pieces
+    // Accept a string OR a YAML-parsed date (an unquoted 2026-07-03 becomes a Date) and
+    // normalise a Date to a clean ISO day — so a stray unquoted date never fails the build.
+    asOf: z.union([z.string(), z.date()]).transform((v) => (v instanceof Date ? v.toISOString().slice(0, 10) : v)).optional(),
     // Living-report extras (Sqwod Intelligence):
     takeaways: z.array(z.string()).default([]),   // TL;DR — the scannable, citable punchlines up top
     figures: z.array(z.object({ label: z.string(), value: z.string(), note: z.string().optional(), source: z.string().optional(), url: z.string().optional() })).default([]),
