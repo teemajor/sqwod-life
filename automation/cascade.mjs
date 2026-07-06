@@ -136,10 +136,10 @@ ${list}
 
 Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, deals, or statistics. Only use figures that appear verbatim above. If a section has no real basis, return null (or []) for it — do not fabricate.
 {
- "summary":"<=60 chars; ONE punchy episode title for the list, homepage & search results — the single most interesting thread of the day, NOT a dump of every headline. A real title, not a sentence with semicolons.",
- "intro":"a FRESH 1-sentence opener written for THIS issue in Sqwod's Morning-Brew voice — a specific hook or wry line that sets up today's read. Must be different every issue (no template), must NOT just restate summary or connectTitle, <=150 chars.",
- "connectTitle":"<=60 chars; the one non-obvious thread tying these stories together",
- "connectBody":"two short paragraphs separated by \\n; teach the pattern and why it matters to an operator; specific, witty, no fluff",
+ "summary":"<=60 chars; the SUBJECT LINE / episode title. It must name the day's LEAD THREAD — the single story most relevant to a coach, PT or studio operator (something they can act on), NOT the flashiest, biggest-number, or most geographically foreign story. It is a promise the rest of the issue then keeps. A real title, not a semicolon list.",
+ "intro":"a FRESH 1-sentence opener for THIS issue in Sqwod's Morning-Brew voice — a specific hook that sets up the SAME lead thread as summary. Different every issue (no template), must NOT just restate summary or connectTitle, <=150 chars.",
+ "connectTitle":"<=60 chars; the SAME lead thread as summary, framed as its non-obvious angle. summary promises it; this proves it — they must be about the same story, never two different ones.",
+ "connectBody":"two short paragraphs separated by \\n that PAY OFF the summary/connectTitle promise: teach that exact pattern and land on the concrete 'so what' for an operator's business. Specific, witty, no fluff — do NOT pivot to an unrelated story.",
  "doThis":"one concrete action the reader can take this week",
  "meanwhile":"a light, witty aside about a DIFFERENT story than connectTitle focuses on. Must NOT restate or recap anything already covered in connectBody or the items list — pick the most off-beat angle and make a wry one-liner. Return an empty string if there is no genuinely distinct, fun angle left. No invented numbers.",
  "moneyMoves":[{"entity":"name from the items","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one clause"}]  // ONLY for items that are actually raises/M&A/valuations; [] if none,
@@ -246,6 +246,14 @@ function buildSections(lead, lang, items) {
     const norm = (x) => String(x || '').toLowerCase().replace(/[^a-z0-9]/g, '');
     const sn = norm(s.stat.number);
     if (sn && s.moneyMoves.some((m) => norm(m.amount) === sn)) delete s.stat;
+  }
+  // Marquee ordering: lead Money Movement with a globally-legible deal (our reader can
+  // size €/$/£/m/bn) so an illegible micro-raise (₹/crore/¥) never takes the top slot.
+  if (Array.isArray(s.moneyMoves) && s.moneyMoves.length > 1) {
+    const LEG = /([$€£]\s?\d|\bUSD\b|\bEUR\b|\bGBP\b|\d[\d.,]*\s?(?:k|m|bn|million|billion)\b)/i;
+    const ILL = /(crore|lakh|rs\.?\s?\d|₹|¥|rmb|yuan|₩|won|rupee|peso|baht|ringgit|rupiah|naira)/i;
+    const rank = (m) => { const a = String(m.amount || ''); return ILL.test(a) ? 2 : (LEG.test(a) ? 0 : 1); };
+    s.moneyMoves = s.moneyMoves.map((m, i) => [m, i]).sort((x, y) => (rank(x[0]) - rank(y[0])) || (x[1] - y[1])).map(([m]) => m);
   }
   const aff = pickAffiliateRec(lang);
   const modelRecs = dedupeRecs(Array.isArray(lead?.recs) ? lead.recs : [], items);

@@ -61,6 +61,22 @@ const INK = '#0e0e10', G1 = '#2c2c31', G2 = '#5b5b61', G4 = '#9a9aa1', LINE = '#
 const F = '-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif';
 const asset = (f) => `${SITE}/email-assets/${f}`;
 
+// Make a foreign number unit legible WITHOUT inventing an FX rate: expand the Indian
+// "crore"/"lakh" scale to international notation — pure arithmetic (1 crore = 10M,
+// 1 lakh = 100K), so it never goes stale. "Rs 1.8 crore" → "Rs 1.8 crore (₹18M)".
+function clarifyAmount(str) {
+  const s = String(str || '');
+  const m = s.match(/(\d[\d.,]*)\s*(crore|lakh)/i);
+  if (!m) return s;
+  const n = parseFloat(m[1].replace(/,/g, ''));
+  if (!isFinite(n)) return s;
+  const rupees = n * (/crore/i.test(m[2]) ? 1e7 : 1e5);
+  const intl = rupees >= 1e9 ? `₹${+(rupees / 1e9).toFixed(1)}B`
+    : rupees >= 1e6 ? `₹${+(rupees / 1e6).toFixed(1)}M`
+    : `₹${Math.round(rupees / 1e3)}K`;
+  return `${s} (${intl})`;
+}
+
 const T = {
   en: { view: 'View online', sub: 'Subscribe', shop: 'Shop', presented: 'Presented by', money: 'Money movement', dots: 'Connect the dots', rundown: 'The rundown', policy: 'Policy watch', stat: 'Stat', recs: 'Sqwod recs', play: 'Play', meanwhile: 'Meanwhile in fitness', sponsored: 'Sponsored', learn: 'Learn more', read: 'Read', share: 'Share Sqwod, get swag', shareBody: 'Forward your link. Hit milestones, earn Sqwod gear — stickers, tee, hoodie. We count the referrals for you.', refcount: 'Your referrals', shareBtn: 'Share your link', listen: 'Prefer to listen? Play the 5-min audio', subH: 'Forwarded this? Get it yourself', subP: 'Five minutes, every weekday. Free.', subBtn: 'Subscribe free', src: 'Source', disc: 'Sponsored content is clearly labeled. Sqwod editorial is independent of sponsors.', unsub: 'Unsubscribe', kinds: { raise: 'Raise', acquisition: 'Acquired', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown' } },
   de: { view: 'Im Browser', sub: 'Abonnieren', shop: 'Shop', presented: 'Präsentiert von', money: 'Geldbewegung', dots: 'Punkte verbinden', rundown: 'Der Rundown', policy: 'Politik-Radar', stat: 'Zahl des Tages', recs: 'Sqwod-Tipps', play: 'Spielen', meanwhile: 'Nebenbei in der Fitnesswelt', sponsored: 'Anzeige', learn: 'Mehr erfahren', read: 'Lesen', share: 'Teile Sqwod, hol dir Swag', shareBody: 'Leite deinen Link weiter. Erreiche Meilensteine, verdiene Sqwod-Gear — Sticker, Shirt, Hoodie. Wir zählen die Empfehlungen für dich.', refcount: 'Deine Empfehlungen', shareBtn: 'Link teilen', listen: 'Lieber hören? Spiel die 5-Min-Audio', subH: 'Weitergeleitet bekommen? Hol es dir selbst', subP: 'Fünf Minuten, jeden Werktag. Kostenlos.', subBtn: 'Kostenlos abonnieren', src: 'Quelle', disc: 'Werbung ist klar gekennzeichnet. Die Sqwod-Redaktion ist unabhängig.', unsub: 'Abmelden', kinds: { raise: 'Runde', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'IPO', shutdown: 'Aus' } },
@@ -98,7 +114,7 @@ function render(iss, lang) {
       return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr><td style="padding:15px 0;${i ? `border-top:1px solid ${LINE};` : ''}">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>
           <td valign="top">${pill}<div style="font:800 17px/1.2 ${F};color:${INK};margin-top:9px;letter-spacing:-.01em;">${esc(m.entity)}</div></td>
-          <td align="right" valign="top" style="font:900 24px/1 ${F};letter-spacing:-.02em;color:${INK};white-space:nowrap;padding-left:10px;">${esc(m.amount || '—')}</td>
+          <td align="right" valign="top" style="font:900 24px/1 ${F};letter-spacing:-.02em;color:${INK};white-space:nowrap;padding-left:10px;">${esc(clarifyAmount(m.amount) || '—')}</td>
         </tr></table>
         ${m.note ? `<div style="font:400 13.5px/1.5 ${F};color:${G2};margin-top:8px;">${esc(m.note)}${m.url ? ` <a href="${esc(m.url)}" style="color:${G4};text-decoration:none;">&rarr;</a>` : ''}</div>` : ''}
       </td></tr></table>`;

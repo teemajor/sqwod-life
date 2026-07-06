@@ -113,6 +113,28 @@ function moneyAmount(t) {
   return m ? m[1].replace(/\s+/g, '') : '';
 }
 
+// ---- editorial scoring: rank candidates so the issue serves OUR reader --------
+// Reader = DE/EN coaches, PTs, studio founders, operators. We up-rank stories they
+// can act on, native DACH/EU coverage, and globally-legible numbers; we down-rank
+// hyper-local micro-raises in currencies our reader can't size (₹/crore, ¥, etc.).
+const OPERATOR_RX = /\b(retention|churn|pricing|price|membership|revenue|profit|margin|clients?|acquisition|leads?|marketing|brand|franchise|studio|gym owner|operator|coach|coaching|personal train|onboarding|scheduling|booking|staff|hiring|payroll|programming|community|referral|loyalty|no-?show|upsell|class(es)?|boutique)\b/i;
+const DACH_EU_RX = /\b(german|germany|berlin|munich|münchen|hamburg|cologne|köln|frankfurt|dach|austria|vienna|wien|swiss|switzerland|zurich|zürich|europe|european|\beu\b|uk|britain|london|nordic|france|paris|spain|madrid|italy|milan|netherlands|amsterdam)\b/i;
+const LEGIBLE_MONEY_RX = /([$€£]\s?\d|\bUSD\b|\bEUR\b|\bGBP\b|\b\d[\d.,]*\s?(?:k|m|bn|million|billion)\b)/i;
+const ILLEGIBLE_MONEY_RX = /(\bcrore\b|\blakh\b|\brs\.?\s?\d|₹|¥|\brmb\b|\byuan\b|₩|\bwon\b|\brupees?\b|\bpesos?\b|\bbaht\b|\bringgit\b|\brupiah\b|\bnaira\b|\btaka\b|\bdirham\b)/i;
+
+function scoreCandidate({ headline, trade, lang, money }) {
+  const h = headline || '';
+  let s = 0;
+  if (trade) s += 3;                        // curated trade/global feeds = higher signal
+  if (lang === 'de') s += 3;                // native DACH content = core audience
+  if (OPERATOR_RX.test(h)) s += 4;          // directly useful to a coach/studio operator
+  if (DACH_EU_RX.test(h)) s += 2;           // EU/DACH geography
+  if (LEGIBLE_MONEY_RX.test(h)) s += 1;     // reader can size the number
+  if (ILLEGIBLE_MONEY_RX.test(h)) s -= 4;   // ₹/crore/¥/etc. — illegible to our reader
+  if (money && money.kind === 'raise' && ILLEGIBLE_MONEY_RX.test(h)) s -= 3;  // hyper-local micro-raise
+  return s;
+}
+
 const UA = { 'user-agent': 'Mozilla/5.0 (compatible; sqwod-ingest/2.0)' };
 async function getXml(url) {
   const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(15000) });
@@ -141,7 +163,7 @@ function isNearDup(tok, pool) {
 }
 
 // Add a normalized candidate to the pool (with headline-level + near-duplicate de-dupe).
-function add(pool, seen, { headline, outlet, link, pub, pillar, conversion, trade = false }) {
+function add(pool, seen, { headline, outlet, link, pub, pillar, conversion, trade = false, lang = '' }) {
   if (!headline || !link) return;
   if (JUNK.test(headline)) return;
   const key = headline.toLowerCase().replace(/[^a-z0-9 ]/g, '').slice(0, 60);
@@ -150,7 +172,8 @@ function add(pool, seen, { headline, outlet, link, pub, pillar, conversion, trad
   if (isNearDup(tok, pool)) return;   // same story, different outlet → skip
   seen.add(key);
   const kind = moneyKind(headline);
-  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, money: kind ? { kind, amount: moneyAmount(headline) } : null, _tok: tok });
+  const money = kind ? { kind, amount: moneyAmount(headline) } : null;
+  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, money, _tok: tok, _score: scoreCandidate({ headline, trade, lang, money }) });
 }
 
 async function run() {
@@ -183,7 +206,7 @@ async function run() {
         scanned++;
         const headline = it.title;
         const [pillar, conversion] = classify(headline, f);
-        add(pool, seen, { headline, outlet: f.outlet, link: it.link, pub: it.pub, pillar, conversion, trade: true });
+        add(pool, seen, { headline, outlet: f.outlet, link: it.link, pub: it.pub, pillar, conversion, trade: true, lang: f.lang || '' });
       }
     } catch (e) { console.error('feed', f.outlet, e.message); }
   }
@@ -194,8 +217,9 @@ async function run() {
   // (or topic) dominates. Raise the per-outlet cap only if we can't fill MAX.
   const byPillar = {};
   for (const p of pool) (byPillar[p.pillar] ||= []).push(p);
-  // Prefer curated global/trade feeds over Google News within each pillar.
-  for (const arr of Object.values(byPillar)) arr.sort((a, b) => (b.trade === true) - (a.trade === true));
+  // Rank within each pillar by editorial score (operator-relevance, DACH/EU, legible
+  // numbers; micro-raises in illegible currencies sink), tie-broken toward trade feeds.
+  for (const arr of Object.values(byPillar)) arr.sort((a, b) => (b._score - a._score) || ((b.trade === true) - (a.trade === true)));
   const ordered = [];
   const outletN = {};
   for (let cap = 1; cap <= 3 && ordered.length < MAX; cap++) {
