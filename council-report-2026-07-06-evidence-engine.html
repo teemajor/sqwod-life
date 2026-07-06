@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Council Verdict — sqwod.life Evidence Engine</title>
+<style>
+  :root{
+    --ink:#0a0a0a; --paper:#ffffff; --muted:#6b6b6b; --line:#e6e6e6;
+    --accent:#0a0a0a; --agree:#0f7b4f; --clash:#b4530a; --blind:#7a3ea8;
+    --chip:#f4f4f4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#fafafa;color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:48px 24px 80px}
+  .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  h1{font-size:30px;line-height:1.15;margin:8px 0 6px;letter-spacing:-.02em}
+  .q{font-size:15px;color:#333;background:var(--paper);border:1px solid var(--line);
+    border-left:3px solid var(--ink);padding:16px 18px;border-radius:8px;margin:22px 0 36px}
+  h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+    margin:40px 0 14px;font-weight:700}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px 22px;margin:14px 0}
+  .verdict{border:1px solid var(--ink);border-radius:12px;padding:26px 26px 10px;background:var(--paper);
+    box-shadow:0 1px 0 rgba(0,0,0,.03)}
+  .verdict h3{margin:0 0 4px;font-size:17px}
+  .verdict .rec{font-size:17px;font-weight:600;line-height:1.4}
+  .first{background:var(--ink);color:#fff;border-radius:12px;padding:22px 24px;margin:20px 0 8px}
+  .first .lbl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;font-weight:600}
+  .first p{margin:6px 0 0;font-size:16px;font-weight:500}
+  ul{margin:8px 0 0;padding-left:20px}
+  li{margin:7px 0}
+  .spectrum{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+  .row{display:grid;grid-template-columns:130px 1fr;gap:14px;align-items:start;
+    background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:12px 14px}
+  .adv{font-weight:700;font-size:14px}
+  .adv small{display:block;font-weight:500;color:var(--muted);font-size:12px;margin-top:2px}
+  .pos{font-size:14px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.04em;padding:2px 8px;
+    border-radius:20px;margin-bottom:6px;text-transform:uppercase}
+  .t-build{background:#eaf5ee;color:var(--agree)}
+  .t-reframe{background:#fdf0e6;color:var(--clash)}
+  .t-augment{background:#f0ebf7;color:var(--blind)}
+  details{background:var(--paper);border:1px solid var(--line);border-radius:9px;padding:2px 16px;margin:10px 0}
+  summary{cursor:pointer;font-weight:600;padding:12px 0;font-size:14px;list-style:none;
+    display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--muted);font-size:18px}
+  details[open] summary::after{content:"–"}
+  details p{margin:0 0 14px;font-size:14px;color:#2a2a2a}
+  .agree-list li::marker{color:var(--agree)}
+  .clash-list li::marker{color:var(--clash)}
+  .blind-list li::marker{color:var(--blind)}
+  footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:12px;color:var(--muted)}
+  .win{font-size:12px;color:var(--agree);font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">LLM Council · Verdict</div>
+  <h1>Should sqwod.life build an automated research "evidence engine"?</h1>
+  <div class="q">
+    Build an automated pipeline (PubMed + Consensus + ClinicalTrials.gov) that produces comprehensively-cited wellness articles — creatine, ashwagandha, zone 2, magnesium — for a bilingual DE/EN media brand serving coaches and studio owners, against an entrenched incumbent (Examine.com) and German health-claim liability (HWG/UWG)?
+  </div>
+
+  <div class="first">
+    <div class="lbl">The one thing to do first</div>
+    <p>Pick your next scheduled topic. Manually run it through Consensus + PubMed + ClinicalTrials.gov and write <em>one</em> coach-facing "what this means Monday" article — graded citations, German claims phrased to DE thresholds, a named human (you) accountable on the byline. Ship it. Repeat 4× before writing a single line of pipeline code.</p>
+  </div>
+
+  <h2>The Recommendation</h2>
+  <div class="verdict">
+    <p class="rec">Don't build the standalone autonomous engine. Reposition and augment instead: turn the existing weekly agent into an <strong>interpreter</strong>, not an encyclopedia.</p>
+    <p>You will lose a straight citation fight with Examine — their moat is 15 years of named-PhD trust, not API access, and you can't out-cite that solo. But Examine <em>structurally cannot</em> be bilingual-DACH-native, creator-voiced, or tied to a real PT community that road-tests advice. That's your wedge. The winning product isn't "the best-sourced article on creatine" — it's <strong>"what the evidence means for how a German coach programs and talks to clients Monday,"</strong> sourced, quality-graded, bilingual, and signed by a named human. Bolt a sourcing-and-grading pass onto the agent you already run; gate every health claim behind a named reviewer. Keep the Expansionist's big idea — a DACH-native evidence layer feeding Sqwod AI — as a V2 destination, not a V1 build.</p>
+  </div>
+
+  <h2>Where the Council Agrees (high-confidence)</h2>
+  <div class="card">
+    <ul class="agree-list">
+      <li><strong>Don't build the autonomous engine as framed.</strong> Four of five advisors independently said no; the peer round reinforced it.</li>
+      <li><strong>Examine's moat is trust and curation, not data access.</strong> Anyone can hit PubMed. Matching citation <em>density</em> ≠ matching citation <em>credibility</em>.</li>
+      <li><strong>The differentiated wedge is interpreter + bilingual + community.</strong> POV, DE/EN parity, and a coach audience that tests advice — none of which Examine has.</li>
+      <li><strong>A named human must own every health claim before it publishes.</strong> "Draft-for-approval" is not a safety control unless a specific accountable person signs off.</li>
+      <li><strong>HWG/UWG liability is real and asymmetric</strong> for a solo founder — cheap-to-file Abmahnung, expensive to defend.</li>
+    </ul>
+  </div>
+
+  <h2>Where the Council Clashes</h2>
+  <div class="card">
+    <ul class="clash-list">
+      <li><strong>Encyclopedia-as-infrastructure (Expansionist) vs. everyone else.</strong> The Expansionist sees a licensable knowledge graph, a paid "evidence-graded" badge, and a wide-open DACH wedge. The rest counter that a pay-to-be-evaluated badge <em>compounds</em> HWG/UWG exposure and assumes solo capacity that doesn't exist. Verdict: the monetization ideas are premature and legally risky, but the <em>DACH-native evidence position</em> and <em>feeding Sqwod AI</em> are genuinely valuable — bank those for later.</li>
+      <li><strong>"Just augment" (Executor) vs. "rethink the product" (First Principles / Contrarian).</strong> Reads as a conflict but isn't: do both. Reposition to interpreter, <em>then</em> implement it as a config change on the existing agent.</li>
+    </ul>
+  </div>
+
+  <h2>Blind Spots the Peer Round Caught</h2>
+  <div class="card">
+    <ul class="blind-list">
+      <li><strong>Nobody costed the review step.</strong> How many hours per article, who reviews, and what it does to your weekly cadence once every claim needs sign-off.</li>
+      <li><strong>Citations ≠ quality.</strong> Pulled references need conflict-of-interest and study-quality weighting (sample size, industry funding). An ungraded citation dump is <em>worse</em> than Examine's curated one.</li>
+      <li><strong>The risk is already live.</strong> Your existing weekly agent may already publish wellness claims unsourced — HWG/UWG exposure exists now, engine or not. Fix that first.</li>
+      <li><strong>German ≠ translated English.</strong> DE health claims can't be literal translations; different HWG thresholds apply.</li>
+      <li><strong>Unpriced downside + EU AI Act.</strong> No one costed an actual Abmahnung, and automated health-content generation may carry EU AI Act obligations. Verify with a real lawyer / real cases, not priors.</li>
+      <li><strong>Underexplored option:</strong> partnering with or licensing Examine's data rather than treating it purely as a competitor.</li>
+    </ul>
+  </div>
+
+  <h2>Advisor Positions at a Glance</h2>
+  <div class="spectrum">
+    <div class="row"><div class="adv">Executor <small>strongest — 4 of 5 votes <span class="win">★</span></small></div><div class="pos"><span class="tag t-augment">Augment</span><br>Don't build a 4th pipeline. Add a sourcing pass to the existing agent. Can you name the human reviewer this week? If no, there's no build — just risk.</div></div>
+    <div class="row"><div class="adv">First Principles <small>1 of 5 votes</small></div><div class="pos"><span class="tag t-reframe">Reframe</span><br>Wrong question. sqwod's job is the funnel, not the encyclopedia. Be the interpreter, not the record. Pick interpreter.</div></div>
+    <div class="row"><div class="adv">Contrarian</div><div class="pos"><span class="tag t-reframe">Reframe</span><br>Effort ≠ differentiation. Can't close the credibility gap with prompting. Real idea: localize evidence for DE coaches under an accountable byline.</div></div>
+    <div class="row"><div class="adv">Outsider</div><div class="pos"><span class="tag t-reframe">Reframe</span><br>It's a trust product, not a content product. Automating citations while not automating trust = a machine for confidently-wrong claims.</div></div>
+    <div class="row"><div class="adv">Expansionist <small>flagged blind spot — ignores liability</small></div><div class="pos"><span class="tag t-build">Go big</span><br>Build the evidence layer as infrastructure — knowledge graph, licensable API, DACH wedge, feed Sqwod AI. (Peers: compounds legal risk, over-scoped for solo.)</div></div>
+  </div>
+
+  <h2>Full Advisor Responses</h2>
+  <details><summary>The Executor — "Don't build it. Not this quarter, not solo."</summary>
+    <p>Monday morning: Tee has three connectors and a working DE/EN blog agent that publishes weekly with draft-for-approval. The fastest path to value is not a fourth pipeline — it's adding a "sourcing pass" to the existing agent: when a topic touches a health claim, query the three tools, pull 5–10 citations, insert them into the article it already produces. That's a config change, not a new system. Examine's moat isn't the API calls — anyone can hit PubMed. It's 15 years of PhD reviewers who stake their name on interpretation. Tee solo cannot out-review that. An automated pipeline generating "comprehensively cited" claims without expert review is a liability generator with extra steps; under HWG/UWG a wrong claim from an "AI research engine" brand promise is worse than from a normal blog. Test: can Tee name the human who reviews every health claim before it ships this week? If no, there's no build, just risk. First step: pick the next scheduled topic, manually run it through Consensus + PubMed, draft one article with real citations, review, publish. Do it four times before writing pipeline code.</p>
+  </details>
+  <details><summary>The First Principles Thinker — "You're solving the wrong problem."</summary>
+    <p>The question presupposes the bottleneck is content production. It isn't — the bottleneck is that Examine already spent 15 years converting aggregation into trust, and trust isn't automatable faster than the incumbent already banked it. (1) sqwod.life is a top-of-funnel hub that cascades into Pods/products/AI — its job is to move a coach down a funnel, not be the encyclopedia of record. (2) "Best-sourced article" buys nothing if it ranks page 3 behind Examine. (3) The real differentiated asset is Tee — a person with a POV, rebel voice, and a business (Pods) Examine doesn't have. Examine is deliberately neutral and faceless — that's its strength AND its ceiling; it will never say "here's what this means for how you program your gym." Reframe: don't build a science-aggregation engine, build a translation layer — take existing synthesis as input, produce the coach-facing implication. Fraction of the liability surface. The question isn't build vs. upgrade — it's "encyclopedia or interpreter?" Pick interpreter.</p>
+  </details>
+  <details><summary>The Contrarian — "Mistaking effort for differentiation."</summary>
+    <p>Examine's moat isn't ranking — it's a 15-year trust asset with named PhD reviewers, visible methodology, version history, and a business model that funds obsessive accuracy because accuracy IS the product. Tee's pipeline can match citation density but not citation credibility; a reader who cross-references notices "curated by our science team" vs. "PubMed API pull summarized by an LLM." That gap is the whole moat and isn't closable with better prompting. The liability math doesn't pencil: HWG/UWG enforcement includes competitor Abmahnung lawsuits — cheap to file, expensive to defend. One automated "reduces cortisol by X%" from a small trial and Tee is a defendant with no legal team. The unasked question: what's this FOR? Coaches don't need the best-sourced article on creatine — Examine gave them that free. They need synthesis-to-action. The real idea buried here: translate and localize Examine-tier evidence for German coaches with an accountable human byline — a research-assistant tool feeding a human writer, not an autonomous publisher.</p>
+  </details>
+  <details><summary>The Outsider — "It's a trust product, not a content product."</summary>
+    <p>Never heard of Fitt Insider, Examine, HWG, or sqwod.life. What jumps out: the plan describes a "research evidence engine" like a technical feature, but it's actually proposing that one person's automated software becomes the thing German and English readers trust to tell them whether a supplement is safe. Strange thing to automate first and worry about later. The tell: the goal is "best-sourced article" — a content-quality goal. But the actual product is a trust product. Nobody reads a creatine article for citations; they read it to know if it's safe. If citation-generation is automated and trust-verification isn't, you've built a convincing system for producing confidently-wrong things — worse than producing obviously-uncertain things. Second: "Examine dominates" reads like a moat problem, but from outside it's a gift — the opportunity isn't out-citing Examine, it's doing what Examine structurally can't: bilingual, creator-voice, tied to a real PT community that road-tests advice. Third: nobody parses "draft-for-approval" as safety unless a named human is accountable for each claim before it's public. Right now that's a vague promise, not a control.</p>
+  </details>
+  <details><summary>The Expansionist — "What if the dataset is the product?"</summary>
+    <p>Examine is 15 years of PDF-locked, human-curated summaries — a moat built for 2010. What they DON'T have: a live, queryable, bilingual DE/EN knowledge graph that auto-refreshes when new trials drop, cross-references ClinicalTrials.gov's live pipeline (what's about to be proven), and feeds a coach's workflow. Once built, it's infrastructure: (1) powers Sqwod AI as an in-session assistant, (2) a licensable API/data feed to other fitness media/supplement brands, (3) an "evidence-graded" badge/certification for Pod trainers and supplement brands seeking affiliate placement — flip liability into revenue: brands pay to be evaluated. (4) The DE-market wedge is wide open — Examine has zero German-native authority, and German claims law rewards rigor. Build the evidence layer once, monetize five ways, let the article be the free trailer for the dataset and trust position nobody in DACH has built.</p>
+  </details>
+
+  <details><summary>Peer Review Highlights</summary>
+    <p><strong>Strongest response:</strong> Executor (4 of 5 reviewers) — the only one with a falsifiable go/no-go test and a concrete Monday action tied to existing infrastructure. First Principles took the fifth vote for reframing the real decision variable.</p>
+    <p><strong>Biggest blind spot:</strong> Expansionist (unanimous) — never engages HWG/UWG; the "brands pay to be evaluated" badge compounds regulatory and conflict-of-interest exposure; over-scoped for a solo founder.</p>
+    <p><strong>What all five missed:</strong> the operational cost of the review step; study-quality/conflict-of-interest grading (not just citation count); that the existing agent likely already carries this liability today; DE-vs-EN claim-threshold differences; unpriced Abmahnung downside and EU AI Act obligations; and the option of partnering with / licensing Examine's data instead of out-building it.</p>
+  </details>
+
+  <footer>
+    Counciled 2026-07-06 · 5 advisors (Contrarian, First Principles, Expansionist, Outsider, Executor) · anonymized peer review · chairman synthesis.<br>
+    Question: whether to build an automated PubMed/Consensus/ClinicalTrials.gov evidence-engine for sqwod.life.
+  </footer>
+</div>
+</body>
+</html>
