@@ -58,6 +58,7 @@ const typeMeta: Record<string, Record<Lang, string>> = {
   'case-study': { en: 'Case Study', de: 'Case Study' },
   'ai-automation': { en: 'AI & Automation', de: 'KI & Automatisierung' },
   'method': { en: 'Method & Programming', de: 'Methode & Programming' },
+  'evidence': { en: 'Evidence', de: 'Evidenz' },
   'programming': { en: 'Programming', de: 'Programming' },
   'recovery': { en: 'Recovery & Mobility', de: 'Recovery & Mobilität' },
   'technique': { en: 'Technique', de: 'Technik' },

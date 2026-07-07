@@ -1,0 +1,38 @@
+---
+// /go/<slug> — outbound affiliate/deal redirect for every reviewed product.
+// GitHub Pages can't do server redirects, so this is a static, noindex,
+// instant client redirect. Keeping the /go/ indirection means review pages
+// never need to change when a plain brand URL is later swapped for a real
+// affiliate deep link — only the target in verified-categories.ts does.
+import { getCollection } from 'astro:content';
+import { categories } from '../../config/verified-categories';
+
+export async function getStaticPaths() {
+  const reviews = await getCollection('reviews');
+  const slugs = [...new Set(reviews.map((r) => r.data.urlSlug))];
+  const target = (slug: string) => {
+    for (const cat of categories) {
+      const p = cat.picks.find((p) => p.reviewSlug === slug);
+      if (p) return p.url;
+    }
+    return null;
+  };
+  return slugs
+    .map((slug) => ({ params: { slug }, props: { url: target(slug) } }))
+    .filter((p) => !!p.props.url);
+}
+const { url } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta http-equiv="refresh" content={`0; url=${url}`} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Sqwod Verified — redirecting</title>
+  <script is:inline define:vars={{ url }}>location.replace(url);</script>
+  <style>html,body{margin:0;background:#0e0e10;color:#85858e;font-family:system-ui}</style>
+</head>
+<body></body>
+</html>

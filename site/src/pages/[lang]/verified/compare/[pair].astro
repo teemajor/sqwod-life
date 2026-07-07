@@ -35,6 +35,8 @@ const cat = byCategory(catSlug)!;
 const pickOf = (slug: string) => cat.picks.find((p) => p.reviewSlug === slug);
 
 const winner = A.sqwodScore >= B.sqwodScore ? A : B;
+const loser = winner === A ? B : A;
+const tie = A.sqwodScore === B.sqwodScore;
 const cur = (c?: string) => (!c || c === 'EUR' ? '€' : c === 'USD' ? '$' : c + ' ');
 const items = [A, B].map((d) => ({ name: d.productName, slug: d.urlSlug, score: d.sqwodScore, price: d.value?.bestPrice, currency: d.value?.currency }));
 
@@ -52,7 +54,7 @@ const desc = lang === 'de'
   : `${A.productName} (Sqwod Score ${A.sqwodScore}) head-to-head with ${B.productName} (${B.sqwodScore}) — specs, price, and who each is for.`;
 
 const card = (d: typeof A, isWin: boolean) => ({ d, isWin, pick: pickOf(d.urlSlug) });
-const cards = [card(A, winner === A), card(B, winner === B)];
+const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
 ---
 <Base lang={lang} title={title} description={desc} active="verified">
   <div class="crumb"><a href={`/${lang}/verified`}>Sqwod Verified</a> / <a href={`/${lang}/verified/c/${cat.slug}`}>{cat.label[lang]}</a></div>
@@ -60,7 +62,9 @@ const cards = [card(A, winner === A), card(B, winner === B)];
 
   <div class="verdict">
     <div class="vlabel">{T.verdict}</div>
-    <p class="vhead"><b>{T.pick}: {winner.productName}</b> {T.takes} — {A.sqwodScore} {T.vs} {B.sqwodScore}.</p>
+    {tie
+      ? <p class="vhead"><b>{lang==='de'?'Gleichstand':'Dead heat'}</b> — {winner.sqwodScore} {T.vs} {loser.sqwodScore}. {lang==='de'?'Der Use-Case entscheidet.':'Your use case is the tiebreaker.'}</p>
+      : <p class="vhead"><b>{T.pick}: {winner.productName}</b> {T.takes} — {winner.sqwodScore} {T.vs} {loser.sqwodScore}.</p>}
     <p class="vbody">{T.both}</p>
     <ul class="pick-if">
       <li><b>{A.productName}</b> — {A.whoFor?.buy}</li>
@@ -91,7 +95,8 @@ const cards = [card(A, winner === A), card(B, winner === B)];
 </Base>
 
 <style>
-  .crumb{font-size:13px;color:var(--g3);margin-bottom:6px}
+  /* global.css hides .crumb site-wide; compare pages need the wayfinding */
+  .crumb{display:block;font-size:13px;color:var(--g3);margin-bottom:6px}
   .crumb a{color:inherit;text-decoration:none}
   h1{font-size:clamp(24px,4vw,34px);letter-spacing:-.02em;margin:2px 0 16px}
   h1 .vs{color:var(--g4);font-weight:400}

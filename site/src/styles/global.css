@@ -2,11 +2,16 @@
    ink #0e0e10 · chalk #FAFAFA · default dark theme. */
 :root{
   --ink:#0e0e10; --chalk:#FAFAFA;
-  --g1:#ededf0; --g2:#b8b8c0; --g3:#85858e; --g4:#52525a;
+  --g1:#ededf0; --g2:#b8b8c0; --g3:#85858e; --g4:#7a7a82;
+  /* --g4 raised from #52525a → #7a7a82 for WCAG AA: it's used for real micro-text
+     (credits, notes, dealnotes) and the old value was 2.5:1 on --ink. Now 4.5:1. */
   --panel:#161619; --panel2:#1d1d21; --line:#2a2a30; --mark:var(--chalk);
   --bg:#0e0e10;
   /* signature accent — the one pop of colour on the monochrome canvas */
   --accent:#C6FF3A; --accent-ink:#0e0e10; --accent-soft:rgba(198,255,58,.16); --accent-line:rgba(198,255,58,.45);
+  /* semantic status colours — tokenised so up/down/warn are consistent site-wide
+     (previously hardcoded as #4ade80 / #f87171 / #fbbf24 across components). */
+  --up:#4ade80; --down:#f87171; --warn:#fbbf24;
   --sans:"Helvetica Neue",Helvetica,Arial,"Inter",system-ui,sans-serif;
   --maxw:760px;
 }

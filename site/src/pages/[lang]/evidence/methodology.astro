@@ -1,0 +1,72 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+
+// How we grade a claim's evidence strength.
+const grades = [
+  { n: { en: 'Strong', de: 'Stark' }, d: {
+    en: 'Backed by multiple meta-analyses or randomised controlled trials pointing the same way. We state it plainly.',
+    de: 'Durch mehrere Meta-Analysen oder randomisierte kontrollierte Studien in dieselbe Richtung gestützt. Wir sagen es klar.' } },
+  { n: { en: 'Moderate', de: 'Moderat' }, d: {
+    en: 'Real evidence with caveats — a single meta-analysis, mixed effect sizes, or moderate GRADE certainty. We flag the limits.',
+    de: 'Echte Evidenz mit Einschränkungen — eine einzelne Meta-Analyse, gemischte Effektstärken oder moderate GRADE-Sicherheit. Wir benennen die Grenzen.' } },
+  { n: { en: 'Early', de: 'Früh' }, d: {
+    en: 'Promising but unsettled — small studies, animal or preclinical work, or open questions in the trial registry. Framed as “being studied,” never as a promise.',
+    de: 'Vielversprechend, aber ungeklärt — kleine Studien, Tier- oder präklinische Arbeit oder offene Fragen im Studienregister. Als „wird untersucht“ gerahmt, nie als Versprechen.' } },
+];
+
+// Which sources we trust, in order.
+const tiers = [
+  { n: { en: 'Tier 1 — cite freely', de: 'Stufe 1 — frei zitieren' }, d: {
+    en: 'Meta-analyses and systematic reviews of randomised controlled trials, and large RCTs. The strongest human evidence.',
+    de: 'Meta-Analysen und systematische Reviews randomisierter kontrollierter Studien sowie große RCTs. Die stärkste Evidenz am Menschen.' } },
+  { n: { en: 'Tier 2 — cite with context', de: 'Stufe 2 — mit Kontext zitieren' }, d: {
+    en: 'Individual RCTs, observational and cohort studies. Useful, but we name the study design and its limits.',
+    de: 'Einzelne RCTs, Beobachtungs- und Kohortenstudien. Nützlich, aber wir benennen Studiendesign und Grenzen.' } },
+  { n: { en: 'Tier 3 — signal, not proof', de: 'Stufe 3 — Signal, kein Beweis' }, d: {
+    en: 'Preprints, animal/in-vitro work, and the clinical trial registry (ClinicalTrials.gov). We use these to show what’s coming — clearly labelled as not yet proven.',
+    de: 'Preprints, Tier-/In-vitro-Arbeit und das klinische Studienregister (ClinicalTrials.gov). Damit zeigen wir, was kommt — klar als noch nicht bewiesen gekennzeichnet.' } },
+];
+---
+<Base lang={lang} title="Methodology — Sqwod Evidence" active="evidence">
+  <div class="measure">
+    <div class="crumb">Sqwod Evidence / {lang==='de'?'Methodik':'Methodology'}</div>
+    <h1>{lang==='de'?'Wie wir die Evidenz bewerten':'How we grade the evidence'}</h1>
+    <p class="sub">{lang==='de'
+      ? 'Jeder Sqwod-Evidence-Beitrag folgt derselben Regel: jede Aussage an eine benannte, verlinkte Studie geknüpft — und nach Stärke bewertet. Wo die Evidenz stark ist, sagen wir das; wo sie dünn ist, ebenfalls.'
+      : 'Every Sqwod Evidence briefing follows one rule: every claim tied to a named, linked study — and graded for strength. Where evidence is strong we say so; where it’s thin, we say that too.'}</p>
+
+    <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+      <p class="kick">{lang==='de'?'Evidenz-Grade':'Evidence grades'}</p>
+      {grades.map((c) => (
+        <div class="card" style="grid-template-columns:120px 1fr;cursor:default">
+          <div class="cnum" style="font-size:15px">{c.n[lang]}</div>
+          <div class="info"><div class="meta">{c.d[lang]}</div></div>
+        </div>
+      ))}
+    </section>
+
+    <section class="block">
+      <p class="kick">{lang==='de'?'Quellen-Stufen':'Source tiers'}</p>
+      {tiers.map((c) => (
+        <div class="card" style="grid-template-columns:1fr;cursor:default">
+          <div class="info"><h3>{c.n[lang]}</h3><div class="meta">{c.d[lang]}</div></div>
+        </div>
+      ))}
+    </section>
+
+    <div class="note"><b>{lang==='de'?'Ein echter Name steht dafür':'A real name stands behind it'}.</b> {lang==='de'
+      ? 'Jeder Beitrag wird vor Veröffentlichung auf Richtigkeit geprüft und trägt eine Autoren-Zeile. Bei Gesundheitsthemen ist eine Quelle, hinter der niemand steht, schlechter als gar keine.'
+      : 'Every briefing is reviewed for accuracy before publishing and carries a byline. On health topics, a source nobody stands behind is worse than none.'}</div>
+
+    <div class="note" style="margin-top:10px"><b>{lang==='de'?'Keine medizinische Beratung':'Not medical advice'}.</b> {lang==='de'
+      ? 'Sqwod Evidence liefert Coaching-Informationen, keine medizinische Beratung. Alles rund um Erkrankungen, Schwangerschaft oder Medikamente gehört zu einer qualifizierten Fachperson.'
+      : 'Sqwod Evidence is coaching information, not medical advice. Anything involving a medical condition, pregnancy, or medication belongs with a qualified professional.'}</div>
+
+    <div class="note" style="margin-top:10px"><b>{lang==='de'?'Wir korrigieren öffentlich':'We correct in public'}.</b> {lang==='de'
+      ? 'Evidenz verändert sich. Wenn neue Studien erscheinen, aktualisieren wir den Beitrag und vermerken es im Änderungsprotokoll. Fehler gefunden? '
+      : 'Evidence moves. When new studies land, we update the briefing and log it in the changelog. Spotted an error? '}<a class="cardcta" href={`/${lang}/corrections`}>{lang==='de'?'Korrekturen':'Corrections'} →</a></div>
+  </div>
+</Base>

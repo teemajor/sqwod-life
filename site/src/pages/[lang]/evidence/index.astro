@@ -1,0 +1,62 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Glyph from '../../../components/Glyph.astro';
+import { getCollection } from 'astro:content';
+import { languages, type Lang } from '../../../i18n/ui';
+import { pillarGlyph } from '../../../i18n/pillars';
+
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+
+const title = lang === 'de'
+  ? 'Sqwod Evidence — die Forschung, übersetzt für Coaches'
+  : 'Sqwod Evidence — the research, translated for coaches';
+
+// The series = any article marked type: evidence. Stays in its own lane for the
+// funnel; this hub unifies them by the evidence tag.
+const pieces = (await getCollection('articles', (a) =>
+  a.data.lang === lang && a.data.type === 'evidence'))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+
+const pieceHref = (a: any) => `/${lang}/analysis/${a.data.urlSlug}`;
+const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
+---
+<Base lang={lang} title={title} active="evidence">
+  <div class="pagehead">
+    <div class="crumb">Sqwod Evidence</div>
+    <h1>Sqwod Evidence</h1>
+    <p class="sub">{lang==='de'
+      ? 'Wir lesen die Forschung, damit deine Kunden es nicht müssen. Jede Aussage ist an eine benannte Studie geknüpft, nach Studienqualität bewertet und trägt einen echten Namen — plus, was gerade erst erforscht wird.'
+      : 'We read the research so your clients don’t have to. Every claim tied to a named study, graded by strength of evidence, signed by a real name — plus what’s still being tested.'}</p>
+    <p style="margin-top:10px">
+      <a class="cardcta" href={`/${lang}/evidence/methodology`}>{lang==='de'?'Wie wir bewerten':'How we grade the evidence'} →</a>
+    </p>
+  </div>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
+    <p class="kick">{lang==='de'?'Evidenz-Beiträge':'Evidence briefings'}</p>
+    {pieces.length > 0 ? (
+      <div class="grid cols2">
+      {pieces.map((a) => (
+        <a class="card" style="grid-template-columns:52px 1fr" href={pieceHref(a)}>
+          <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
+          <div class="info">
+            <span class="bestfor">{lang==='de'?'Evidenz':'Evidence'} · {fmtDate(a.data.updatedAt)}</span>
+            <h3>{a.data.title}</h3>
+            <div class="meta">{a.data.description}</div>
+            <span class="cardcta">{lang==='de'?'Lesen':'Read'} →</span>
+          </div>
+        </a>
+      ))}
+      </div>
+    ) : (
+      <p class="meta">{lang==='de'?'Bald mehr.':'More soon.'}</p>
+    )}
+  </section>
+
+  <section class="block">
+    <div class="note"><b>{lang==='de'?'Ein Supplement im Blick?':'Shopping a supplement?'}</b> {lang==='de'
+      ? 'Die Evidenz sagt dir, was wirkt — Sqwod Verified sagt dir, welches Produkt.'
+      : 'The evidence tells you what works — Sqwod Verified tells you which product to buy.'} <a class="cardcta" href={`/${lang}/verified`}>{lang==='de'?'Zu Sqwod Verified':'Browse Sqwod Verified'} →</a></div>
+  </section>
+</Base>

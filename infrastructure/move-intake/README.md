@@ -25,21 +25,26 @@ Note the URL, e.g. `https://sqwod-move-intake.<you>.workers.dev`.
 
 Shortcuts app → **+** → name it "Sqwod Move":
 1. Settings (ⓘ) → **Show in Share Sheet** → Accept **URLs**.
-2. Action **Text** → paste your note prompt? Skip — keep it 2-tap. (Optional: add **Ask for Input**, prompt "Client problem?", to capture the why. Skip it to stay 1-tap.)
+2. Action **Ask for Input** → prompt: "What does this move fix / who's it for?" — **required**.
+   The pipeline SKIPS moves without a note (a bare "Watch →" button gets no clicks);
+   one sentence of context is what makes the card work. Mention the coach's @handle
+   here too if the URL doesn't contain it (reel share links don't).
 3. Action **URL** → set to:
    `https://sqwod-move-intake.<you>.workers.dev/move?key=YOUR_MOVE_KEY`
 4. Action **Get Contents of URL** → Method **POST** → Request Body **JSON** → add fields:
    - `url` = **Shortcut Input** (the shared link)
-   - `note` = (the Ask-for-Input result, if you added step 2; else leave out)
+   - `note` = the Ask-for-Input result
 5. (Optional) Action **Show Notification** → "✓ Added to Sqwod".
 
 Now from Instagram (or anywhere): **Share → Sqwod Move**. Done — that's the 2 taps.
 
 ## How it appears
 
-The cascade picks the oldest unused move each weekday and renders it at the top of
-the Daily (web + email) as **Move of the Day** — your note as the headline, a
-"Watch on Instagram →" link, and the coach's @handle credited. One move runs once.
+The cascade picks the oldest unused move **that has a note** each weekday and
+renders it at the top of the Daily (web + email) as **Move of the Day** — your
+note as the headline, an on-brand play banner linking to the clip, and the
+coach's @handle credited. Moves without a note stay in the queue (a warning is
+logged) until you add one to their JSON. One move runs once.
 
 ## Test
 ```bash

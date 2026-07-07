@@ -78,8 +78,8 @@ function clarifyAmount(str) {
 }
 
 const T = {
-  en: { view: 'View online', sub: 'Subscribe', shop: 'Shop', presented: 'Presented by', money: 'Money movement', dots: 'Connect the dots', rundown: 'The rundown', policy: 'Policy watch', stat: 'Stat', recs: 'Sqwod recs', play: 'Play', meanwhile: 'Meanwhile in fitness', sponsored: 'Sponsored', learn: 'Learn more', read: 'Read', share: 'Share Sqwod, get swag', shareBody: 'Forward your link. Hit milestones, earn Sqwod gear — stickers, tee, hoodie. We count the referrals for you.', refcount: 'Your referrals', shareBtn: 'Share your link', listen: 'Prefer to listen? Play the 5-min audio', subH: 'Forwarded this? Get it yourself', subP: 'Five minutes, every weekday. Free.', subBtn: 'Subscribe free', src: 'Source', disc: 'Sponsored content is clearly labeled. Sqwod editorial is independent of sponsors.', unsub: 'Unsubscribe', kinds: { raise: 'Raise', acquisition: 'Acquired', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown' } },
-  de: { view: 'Im Browser', sub: 'Abonnieren', shop: 'Shop', presented: 'Präsentiert von', money: 'Geldbewegung', dots: 'Punkte verbinden', rundown: 'Der Rundown', policy: 'Politik-Radar', stat: 'Zahl des Tages', recs: 'Sqwod-Tipps', play: 'Spielen', meanwhile: 'Nebenbei in der Fitnesswelt', sponsored: 'Anzeige', learn: 'Mehr erfahren', read: 'Lesen', share: 'Teile Sqwod, hol dir Swag', shareBody: 'Leite deinen Link weiter. Erreiche Meilensteine, verdiene Sqwod-Gear — Sticker, Shirt, Hoodie. Wir zählen die Empfehlungen für dich.', refcount: 'Deine Empfehlungen', shareBtn: 'Link teilen', listen: 'Lieber hören? Spiel die 5-Min-Audio', subH: 'Weitergeleitet bekommen? Hol es dir selbst', subP: 'Fünf Minuten, jeden Werktag. Kostenlos.', subBtn: 'Kostenlos abonnieren', src: 'Quelle', disc: 'Werbung ist klar gekennzeichnet. Die Sqwod-Redaktion ist unabhängig.', unsub: 'Abmelden', kinds: { raise: 'Runde', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'IPO', shutdown: 'Aus' } },
+  en: { masthead: 'The business of fitness — in five minutes.', view: 'View online', sub: 'Subscribe', shop: 'Shop', presented: 'Presented by', money: 'Money movement', dots: 'Connect the dots', rundown: 'The rundown', policy: 'Policy watch', stat: 'Stat', recs: 'Sqwod recs', play: 'Play', meanwhile: 'Meanwhile in fitness', sponsored: 'Sponsored', learn: 'Learn more', read: 'Read', share: 'Share Sqwod, get swag', shareBody: 'Forward your link. Hit milestones, earn Sqwod gear — stickers, tee, hoodie. We count the referrals for you.', refcount: 'Your referrals', shareBtn: 'Share your link', listen: 'Prefer to listen? Play the 5-min audio', subH: 'Forwarded this? Get it yourself', subP: 'Five minutes, every weekday. Free.', subBtn: 'Subscribe free', src: 'Source', disc: 'Sponsored content is clearly labeled. Sqwod editorial is independent of sponsors.', unsub: 'Unsubscribe', kinds: { raise: 'Raise', acquisition: 'Acquired', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown' } },
+  de: { masthead: 'Das Business von Fitness — in fünf Minuten.', view: 'Im Browser', sub: 'Abonnieren', shop: 'Shop', presented: 'Präsentiert von', money: 'Geldbewegung', dots: 'Punkte verbinden', rundown: 'Der Rundown', policy: 'Politik-Radar', stat: 'Zahl des Tages', recs: 'Sqwod-Tipps', play: 'Spielen', meanwhile: 'Nebenbei in der Fitnesswelt', sponsored: 'Anzeige', learn: 'Mehr erfahren', read: 'Lesen', share: 'Teile Sqwod, hol dir Swag', shareBody: 'Leite deinen Link weiter. Erreiche Meilensteine, verdiene Sqwod-Gear — Sticker, Shirt, Hoodie. Wir zählen die Empfehlungen für dich.', refcount: 'Deine Empfehlungen', shareBtn: 'Link teilen', listen: 'Lieber hören? Spiel die 5-Min-Audio', subH: 'Weitergeleitet bekommen? Hol es dir selbst', subP: 'Fünf Minuten, jeden Werktag. Kostenlos.', subBtn: 'Kostenlos abonnieren', src: 'Quelle', disc: 'Werbung ist klar gekennzeichnet. Die Sqwod-Redaktion ist unabhängig.', unsub: 'Abmelden', kinds: { raise: 'Runde', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'IPO', shutdown: 'Aus' } },
 };
 
 const card = (inner) => `<tr><td style="padding:0 0 16px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${CHALK};border:1px solid ${LINE};border-radius:16px;"><tr><td style="padding:22px 26px;">${inner}</td></tr></table></td></tr>`;
@@ -174,24 +174,37 @@ function render(iss, lang) {
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:12px;">${esc(iss.play.prompt)}</div>` +
     `<a href="${withUTM(iss.play.url ? abs(iss.play.url, lang) : `${SITE}/${lang}/play/`, 'play')}" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${tx.play} &rarr;</a>`) : '';
 
-  // MOVE OF THE DAY — curated coach clip (link + credit, never re-hosted)
-  const move = (iss.move && iss.move.url) ? card(label(lang === 'de' ? 'Move des Tages' : 'Move of the Day', 'hero-bars.gif') +
-    (iss.move.note ? `<div style="font:800 19px/1.32 ${F};color:${INK};margin-bottom:13px;">${esc(iss.move.note)}</div>` : '') +
-    `<a href="${esc(iss.move.url)}" rel="nofollow noopener" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${lang === 'de' ? 'Ansehen auf' : 'Watch on'} ${esc(iss.move.platform || 'social')} &rarr;</a>` +
-    (iss.move.handle ? `<div style="font:400 12px/1.4 ${F};color:${G4};margin-top:10px;">Coach: ${esc(iss.move.handle)}</div>` : '')) : '';
+  // MOVE OF THE DAY — curated coach clip (link + credit, never re-hosted).
+  // The whole visual is one tap target: on-brand play banner (move.image override
+  // if we ever have a rights-safe thumbnail), note as the headline (WHY this move,
+  // WHO it's for), coach credit + platform folded into the credit line.
+  const move = (iss.move && iss.move.url) ? card(label(lang === 'de' ? 'Move des Tages' : 'Move of the Day', 'move-play.gif') +
+    (iss.move.note ? `<div style="font:800 19px/1.32 ${F};color:${INK};margin-bottom:12px;">${esc(iss.move.note)}</div>` : '') +
+    `<a href="${esc(iss.move.url)}" rel="nofollow noopener" style="display:block;text-decoration:none;"><img src="${esc(iss.move.image || asset('move-play.gif'))}" width="548" alt="${lang === 'de' ? 'Move abspielen' : 'Play the move'}" style="display:block;width:100%;height:auto;border-radius:12px;"></a>` +
+    `<table role="presentation" width="100%" cellpadding="0" cellspacing="0"><tr>` +
+    `<td style="padding-top:12px;font:400 13px/1.4 ${F};color:${G4};">${iss.move.handle ? `${lang === 'de' ? 'Coach' : 'Coach'}: <b style="color:${G1};">${esc(iss.move.handle)}</b> · ` : ''}${esc(iss.move.platform || 'social')}</td>` +
+    `<td align="right" style="padding-top:12px;"><a href="${esc(iss.move.url)}" rel="nofollow noopener" style="display:inline-block;font:800 13px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:10px 18px;border-radius:999px;">${lang === 'de' ? 'Ansehen' : 'Watch'} &rarr;</a></td>` +
+    `</tr></table>`) : '';
 
   // MEANWHILE (entertainment)
   const meanwhile = iss.meanwhile ? card(label(tx.meanwhile, 'pulse-ring.gif') +
     `<div style="font:400 15.5px/1.7 ${F};color:${G1};">${esc(iss.meanwhile)}${iss.meanwhileUrl ? ` <a href="${esc(iss.meanwhileUrl)}" style="color:${G4};">→</a>` : ''}</div>`) : '';
 
-  // SHARE — simple forward-to-a-friend ask (referral program deferred; no ESP lock-in)
+  // SHARE — a real FORWARD ask (mailto pre-filled with the issue link). Distinct
+  // job from the footer card: this converts the READER into a sender; the footer
+  // "Forwarded this? Subscribe free" converts the RECIPIENT. Never two identical
+  // subscribe buttons in one email.
   const shareHead = lang === 'de' ? 'Teile Sqwod Daily' : 'Share Sqwod Daily';
   const shareBody = lang === 'de'
     ? 'Kennst du eine:n Coach, Trainer:in oder Studio-Gründer:in, der das lesen sollte? Leite diese Ausgabe weiter — so wächst Sqwod.'
     : 'Know a coach, trainer, or studio founder who should read this? Forward this issue — that\'s how Sqwod grows.';
-  const share = card(label(shareHead, 'hero-bars.gif') +
+  const fwdSubject = encodeURIComponent(lang === 'de' ? 'Lesetipp: Sqwod Daily' : 'Worth a read: Sqwod Daily');
+  const fwdBody = encodeURIComponent((lang === 'de'
+    ? 'Dachte, das ist was für dich — das Business von Fitness in 5 Minuten:'
+    : 'Thought of you — the business of fitness in 5 minutes:') + '\n\n' + withUTM(epUrl, 'forward'));
+  const share = card(label(shareHead, 'pulse-ring.gif') +
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:14px;">${shareBody}</div>` +
-    `<a href="${withUTM(`${SITE}/${lang}/subscribe/`, 'share-cta')}" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${tx.subBtn} &rarr;</a>`);
+    `<a href="mailto:?subject=${fwdSubject}&amp;body=${fwdBody}" style="display:inline-block;font:800 14px ${F};color:${CHALK};background:${INK};text-decoration:none;padding:12px 22px;border-radius:999px;">${lang === 'de' ? 'An eine:n Coach weiterleiten' : 'Forward to a coach'} &rarr;</a>`);
 
   // Top sponsor slot: a clearly-defined "Presented by" band UNDER the hero, before content.
   const presentedBand = iss.sponsor && iss.sponsor.name ? `
@@ -214,10 +227,12 @@ function render(iss, lang) {
             <td align="right" style="font:600 11px/1 ${F};letter-spacing:.04em;"><a href="${withUTM(epUrl, 'view-online')}" style="color:${G4};text-decoration:none;">${tx.view} &rarr;</a></td>
           </tr></table>
         </td></tr>
-        <!-- masthead: wordmark + hero -->
+        <!-- masthead: wordmark + promise band (no decorative image — the biggest
+             element carries the actual value prop, not a meaningless chart GIF) -->
         <tr><td><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${INK};border-radius:16px;overflow:hidden;">
-          <tr><td style="padding:22px 26px 16px;font:900 22px/1 ${F};letter-spacing:.02em;color:${CHALK};">SQWOD <span style="font-weight:600;color:${G4};">DAILY</span></td></tr>
-          <tr><td><img src="${asset('hero-bars.gif')}" width="600" alt="Sqwod Daily" style="display:block;width:100%;height:auto;"></td></tr>
+          <tr><td style="padding:26px 26px 8px;font:900 26px/1 ${F};letter-spacing:.02em;color:${CHALK};">SQWOD <span style="font-weight:600;color:${G4};">DAILY</span></td></tr>
+          <tr><td style="padding:0 26px 12px;font:600 13px/1.4 ${F};letter-spacing:.01em;color:${G2};">${tx.masthead}</td></tr>
+          <tr><td style="padding:0 26px 22px;font:700 11px/1 ${F};letter-spacing:.14em;text-transform:uppercase;color:${G4};">${esc(niceDate)} · ${esc(iss.edition || 'Weekday')}</td></tr>
         </table></td></tr>
         ${presentedBand}
         <!-- intro -->

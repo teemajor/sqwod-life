@@ -1,2 +1,7 @@
 User-agent: *
 Allow: /
+# Email archive renders (duplicate content) + outbound redirect stubs
+Disallow: /email/
+Disallow: /go/
+
+Sitemap: https://sqwod.life/sitemap-index.xml

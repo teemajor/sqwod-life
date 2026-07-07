@@ -115,14 +115,14 @@ const tagline = lang === 'de'
             {issues.slice(0, 5).map((ep) => {
               const ha = hasEpAudio(ep.data.urlSlug);
               return (
-                <a class={`pod-ep${ha ? '' : ' noaudio'}`} href={`/${lang}/daily/${ep.data.urlSlug}`}>
+                <li><a class={`pod-ep${ha ? '' : ' noaudio'}`} href={`/${lang}/daily/${ep.data.urlSlug}`}>
                   {ha ? <span class="ep-play">▶</span> : <span class="ep-play-empty"></span>}
                   <span class="ep-meta">
                     <span class="ep-date">{fmtDate(ep.data.date)}</span>
                     <span class="ep-title">{ep.data.summary || 'Sqwod Daily'}</span>
                   </span>
                   <span class="ep-dur">{ha ? (ep.data.duration ?? '5 min') : (lang==='de'?'Lesen →':'Read →')}</span>
-                </a>
+                </a></li>
               );
             })}
           </ol>
@@ -183,6 +183,7 @@ const tagline = lang === 'de'
   .pod-now-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin-bottom:8px}
   .pod-audio{width:100%;height:40px;filter:invert(1) hue-rotate(180deg)}
   .pod-eps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+  .pod-eps li{margin:0;padding:0}
   .pod-ep{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s ease}
   .pod-ep:hover{background:var(--panel)}
   .ep-play{width:26px;height:26px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;font-size:9px;color:var(--chalk);padding-left:2px}

@@ -40,7 +40,17 @@ function pickMove() {
   const files = readdirSync(MOVES_DIR).filter((f) => f.endsWith('.json') && f !== 'used.json');
   const queue = [];
   for (const f of files) {
-    try { const m = JSON.parse(readFileSync(join(MOVES_DIR, f), 'utf8')); if (m.url && !used.includes(m.id)) queue.push(m); } catch {}
+    try {
+      const m = JSON.parse(readFileSync(join(MOVES_DIR, f), 'utf8'));
+      if (!m.url || used.includes(m.id)) continue;
+      // A move without a note has no story — it renders as a bare button nobody
+      // clicks. Skip it (stays in queue) and tell Tee to add context.
+      if (!String(m.note || '').trim()) {
+        console.log(`  ⚠ move ${m.id} has no note — skipped. Add a "note" (what it fixes / why it's good) to automation/moves/${f} to run it.`);
+        continue;
+      }
+      queue.push(m);
+    } catch {}
   }
   if (!queue.length) return null;
   queue.sort((a, b) => String(a.added).localeCompare(String(b.added)));  // oldest first
@@ -122,6 +132,53 @@ Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
   // yields valid output without a key.
   const block = source[lang] || source.en || { headline: source.topic || 'Industry update', dek: `Via ${source.entity || 'source'}.`, readMore: '' };
   return { headline: block.headline, dek: block.dek, readMore: block.readMore };
+}
+
+// ---- LANGUAGE GUARD: an EN issue never ships German copy (and vice versa) ----
+// The generate() fallback returns the source's pre-authored block, which for
+// DACH sources is German — that's how DE headlines leaked into the EN Daily.
+// Function-word scoring is deterministic and dependency-free; umlauts/ß weigh DE.
+const DE_HITS = /\b(der|die|das|und|für|mit|von|nicht|ein|eine|einen|sich|sind|wird|werden|hat|haben|bei|auf|aus|nach|über|sollte|dieser|diesen|jahr|neue|neuen|legt|bringt|lädt|wer|echtes|direkt)\b|[äöüß]/gi;
+const EN_HITS = /\b(the|and|for|with|from|not|has|have|are|will|its|this|that|who|should|new|your|their|about|brings|worth|look)\b/gi;
+function wrongLanguage(text, lang) {
+  const s = String(text || '');
+  const de = (s.match(DE_HITS) || []).length;
+  const en = (s.match(EN_HITS) || []).length;
+  return lang === 'en' ? de > en : en > de + 1; // DE copy tolerates English loanwords
+}
+// Rewrite a wrong-language item natively from its source facts; null on failure.
+async function rewriteInLanguage(source, lang) {
+  if (!apiKey || !source) return null;
+  const facts = (source.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('; ');
+  const langName = lang === 'de' ? 'German' : 'English';
+  const prompt = `The previous draft was written in the WRONG LANGUAGE. Write ONE Sqwod Daily news item NATIVELY in ${langName} — never a literal translation — about "${source.entity}" (${source.topic}). Use ONLY these facts: ${facts}. Sqwod's witty Morning-Brew voice; headline <= 70 chars; dek 1–2 sentences ending on the "so what" for a coach/operator. Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
+  try {
+    const r = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST', headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+      body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
+    });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const data = await r.json();
+    const obj = JSON.parse((data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, ''));
+    return obj.headline ? { headline: obj.headline, dek: obj.dek } : null;
+  } catch (e) { console.error(`· language rewrite failed (${lang}): ${e.message}`); return null; }
+}
+// Enforce per-item: rewrite once, then DROP anything still in the wrong language.
+// A missing item beats a bilingual mess in the reader's inbox.
+async function enforceLanguage(items, sources, lang) {
+  const kept = [];
+  for (const it of items) {
+    if (!wrongLanguage(`${it.headline} ${it.dek}`, lang)) { kept.push(it); continue; }
+    const src = sources.find((s) => s.id === it.sourceId);
+    const fixed = await rewriteInLanguage(src, lang);
+    if (fixed && !wrongLanguage(`${fixed.headline} ${fixed.dek}`, lang)) {
+      console.log(`  ↻ ${lang.toUpperCase()} rewrote wrong-language item (${it.source})`);
+      kept.push({ ...it, ...fixed });
+    } else {
+      console.log(`  ⛔ ${lang.toUpperCase()} dropped wrong-language item (${it.source})`);
+    }
+  }
+  return kept;
 }
 
 // ---- issue-level "teaching" sections: connect-the-dots + action + entertainment
@@ -254,6 +311,18 @@ function buildSections(lead, lang, items) {
     const ILL = /(crore|lakh|rs\.?\s?\d|₹|¥|rmb|yuan|₩|won|rupee|peso|baht|ringgit|rupiah|naira)/i;
     const rank = (m) => { const a = String(m.amount || ''); return ILL.test(a) ? 2 : (LEG.test(a) ? 0 : 1); };
     s.moneyMoves = s.moneyMoves.map((m, i) => [m, i]).sort((x, y) => (rank(x[0]) - rank(y[0])) || (x[1] - y[1])).map(([m]) => m);
+  }
+  // Backstop: "meanwhile" is an aside, never a re-run of a rundown item (the
+  // "Garmin twice in one email" bug). Same token-overlap test the recs use —
+  // deterministic, so it holds even when the model ignores the prompt rule.
+  if (s.meanwhile) {
+    const mt = recTokens(s.meanwhile);
+    const echoesItem = (items || []).some((i) => {
+      const h = recTokens(`${i.headline || ''} ${i.dek || ''}`);
+      const o = recOverlap(mt, h);
+      return o >= 3 || (o > 0 && o / Math.min(mt.size, h.size) >= 0.5);
+    });
+    if (echoesItem) { console.log('  ⛔ dropped "meanwhile" — it restated a rundown item'); delete s.meanwhile; }
   }
   const aff = pickAffiliateRec(lang);
   const modelRecs = dedupeRecs(Array.isArray(lead?.recs) ? lead.recs : [], items);
@@ -436,6 +505,7 @@ async function run() {
       const out = await generate('daily-item', src, lang);
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
     }
+    items = await enforceLanguage(items, sources, lang);   // an EN issue never ships German copy
     const lead = await generateLead(items, lang);
     let sections = buildSections(lead, lang, items);     // model output + affiliate rec + Play (even in dry-run); items → rec dedup
     if (move) sections.move = move;               // feature the curated clip at the top of the Daily
