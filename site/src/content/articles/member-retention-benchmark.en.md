@@ -12,7 +12,7 @@ publishedAt: 2026-06-28
 updatedAt: 2026-06-28
 asOf: Jun 2026
 author: "Sqwod Intelligence"
-gated: false
+gated: true
 sources:
   - { label: "Health & Fitness Association (HFA) — 2025 Retention Report (175 companies, 17,000+ facilities, 2024 data)", url: "https://www.healthandfitness.org/" }
   - { label: "StudioPulse — Boutique fitness retention benchmarks 2026", url: "https://getstudiopulse.com/blog/boutique-fitness-retention-rate" }

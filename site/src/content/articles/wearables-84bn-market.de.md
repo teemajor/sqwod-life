@@ -21,7 +21,7 @@ playbook:
   - { move: "Verkaufe Interpretation, nicht Geräte.", why: "Wenn Tracking allgegenwärtig ist, verschiebt sich die Frage von 'soll ich tracken?' zu 'was machen wir mit den Daten?' — genau da verdient Coaching sein Geld." }
   - { move: "Recovery-Daten ins Onboarding aufnehmen.", why: "Wearables sind Mainstream; bring die Daten, die Kund:innen ohnehin sammeln, in deine Programmierung und Bindung." }
   - { move: "Eine Abo-Stufe um die Daten herum bauen.", why: "Wert wandert von einmaliger Hardware zu wiederkehrender Software und Insight — spiegle das in deiner Preisgestaltung." }
-gated: true
+gated: false
 sourceIds: []
 sources:
   - { label: "GMInsights — Wearables Market, 2026–2035", url: "https://www.gminsights.com/industry-analysis/wearables-market" }

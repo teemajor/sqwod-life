@@ -12,7 +12,7 @@ publishedAt: 2026-06-29
 updatedAt: 2026-06-29
 asOf: Juni 2026
 author: "Sqwod Intelligence"
-gated: false
+gated: true
 sources:
   - { label: "IBISWorld — Pilates & Yoga Studios in den USA (Marktgröße, 2026)", url: "https://www.ibisworld.com/united-states/market-size/pilates-yoga-studios/4185/" }
   - { label: "Fitt Insider — 'Pilates Tops Global Fitness Trends' (ClassPass-Jahresdaten)", url: "https://insider.fitt.co/pilates-tops-global-fitness-trends/" }

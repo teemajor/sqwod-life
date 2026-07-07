@@ -30,7 +30,7 @@ const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB',
       <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr auto" href={`/${lang}/intelligence/${r.data.urlSlug}`}>
         <Glyph kind={r.data.hero ? (r.data.hero.kind === 'orbit' ? 'ring' : r.data.hero.kind) : pillarGlyph(r.data.pillar)} size={52} />
         <div class="info">
-          <span class="bestfor">{r.data.format === 'index' ? 'Index' : 'Report'}{r.data.gated ? ' · ' + (lang==='de'?'Gegated':'Gated') : ''}</span>
+          <span class="bestfor">{r.data.format === 'index' ? 'Index' : 'Report'}{r.data.gated ? ' · ' + (lang==='de'?'Gegated':'Gated') : ' · ' + (lang==='de'?'Frei lesbar':'Open access')}</span>
           <h3>{r.data.title}</h3>
           <div class="meta">{r.data.description}</div>
           <div class="meta" style="margin-top:6px;color:var(--g4)">{fmt(r.data.publishedAt)}</div>

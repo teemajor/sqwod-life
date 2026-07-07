@@ -12,7 +12,7 @@ publishedAt: 2026-06-29
 updatedAt: 2026-06-29
 asOf: Juni 2026
 author: "Sqwod Intelligence"
-gated: false
+gated: true
 sources:
   - { label: "Athletech News — '49% der abgewanderten Mitglieder sagen, ihr Studio habe sich nie gemeldet' (Zenoti-Verbraucherbefragung, Juni 2026)", url: "https://athletechnews.com/atn-insights-49-percent-of-lapsed-members-say-their-gym-never-reached-out-after-they-stopped-attending/" }
   - { label: "Smart Health Clubs — 100 Retention-Statistiken (2025)", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }

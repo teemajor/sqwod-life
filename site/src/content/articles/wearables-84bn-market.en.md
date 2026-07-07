@@ -21,7 +21,7 @@ playbook:
   - { move: "Sell interpretation, not devices.", why: "When tracking is ambient, the client question flips from 'should I track?' to 'what do we do with the data?' — that's where coaching earns its keep." }
   - { move: "Add a recovery-data step to onboarding.", why: "Rings and wearables are mainstream now; capture the data clients already collect and feed it into programming and retention." }
   - { move: "Build a subscription tier around the data.", why: "Value is migrating from one-time hardware to recurring software and insight — mirror that in your pricing." }
-gated: true
+gated: false
 sourceIds: []
 sources:
   - { label: "GMInsights — Wearables Market, 2026–2035", url: "https://www.gminsights.com/industry-analysis/wearables-market" }
