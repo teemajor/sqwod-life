@@ -86,9 +86,10 @@ async function sendLang(lang) {
 
   const m = meta(issue);
   const html = resendify(readFileSync(snippet, 'utf8'), lang);
-  // Subject = the day's HOOK (no date — the inbox already shows it; the brand is in
-  // the "Sqwod Daily" from-name). Prefer the episode title/thread; fall back to the
-  // top story; never ship a bland "Sqwod Daily — <date>".
+  // Subject = the day's TOPICS COMBINED (summary is authored as a 2-3-topic line,
+  // e.g. "DACH's 2026 numbers, a budget Whoop rival & community as marketing").
+  // No date — the inbox already shows it; the brand is in the from-name. Fall back
+  // to the lead/top story; never ship a bland "Sqwod Daily — <date>".
   const hook = (m.summary || m.lead || m.firstItem || 'Sqwod Daily').trim();
   const subject = hook.length > 88 ? hook.slice(0, 86).replace(/\s+\S*$/, '') + '…' : hook;
   const payload = {

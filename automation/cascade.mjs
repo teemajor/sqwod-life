@@ -22,6 +22,7 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { isOnBrand } from './onbrand.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SOURCES_DIR = join(__dirname, 'sources');
@@ -193,7 +194,7 @@ ${list}
 
 Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, deals, or statistics. Only use figures that appear verbatim above. If a section has no real basis, return null (or []) for it — do not fabricate.
 {
- "summary":"<=60 chars; the SUBJECT LINE / episode title. It must name the day's LEAD THREAD — the single story most relevant to a coach, PT or studio operator (something they can act on), NOT the flashiest, biggest-number, or most geographically foreign story. It is a promise the rest of the issue then keeps. A real title, not a semicolon list.",
+ "summary":"<=80 chars; the SUBJECT LINE. Stitch the day's 2-3 strongest topics into ONE line of short punchy fragments joined by commas and '&' — e.g. 'DACH's 2026 numbers, a budget Whoop rival & community as marketing'. The FIRST fragment must be the lead thread (the same story connectTitle covers — the one most actionable for a coach/PT/studio operator); the other fragment(s) tease different items. Never a single-story headline, never a semicolon list, never invented facts.",
  "intro":"a FRESH 1-sentence opener for THIS issue in Sqwod's Morning-Brew voice — a specific hook that sets up the SAME lead thread as summary. Different every issue (no template), must NOT just restate summary or connectTitle, <=150 chars.",
  "connectTitle":"<=60 chars; the SAME lead thread as summary, framed as its non-obvious angle. summary promises it; this proves it — they must be about the same story, never two different ones.",
  "connectBody":"two short paragraphs separated by \\n that PAY OFF the summary/connectTitle promise: teach that exact pattern and land on the concrete 'so what' for an operator's business. Specific, witty, no fluff — do NOT pivot to an unrelated story.",
@@ -506,6 +507,16 @@ async function run() {
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
     }
     items = await enforceLanguage(items, sources, lang);   // an EN issue never ships German copy
+    // ON-BRAND GUARDRAIL: nothing outside the fitness/wellness industry EVER ships
+    // (belt-and-braces on top of ingest — catches a polluted source file too).
+    {
+      const before = items.length;
+      items = items.filter((it) => {
+        const src = sources.find((s) => s.id === it.sourceId) || {};
+        return isOnBrand(`${src.topic || ''} ${it.headline || ''} ${it.dek || ''}`, src.entity || '');
+      });
+      if (items.length < before) console.log(`  ⛔ ${lang.toUpperCase()} dropped ${before - items.length} OFF-BRAND item(s) — not fitness/wellness industry`);
+    }
     const lead = await generateLead(items, lang);
     let sections = buildSections(lead, lang, items);     // model output + affiliate rec + Play (even in dry-run); items → rec dedup
     if (move) sections.move = move;               // feature the curated clip at the top of the Daily
@@ -550,8 +561,11 @@ async function run() {
     if (!items.length) { console.log(`  ⚠ ${lang.toUpperCase()} no verifiable items left — NOT publishing ${date}.${lang}`); continue; }
 
     const issueStatus = status;  // always publish; the guardrail already remediated everything
-    // One-line episode title — computed AFTER any drops so it never names a removed item.
-    sections.summary = (lead && lead.summary) || sections.connectTitle || (items[0] && items[0].headline) || 'Sqwod Daily';
+    // Subject line — a COMBINATION of the day's topics, computed AFTER any drops so it
+    // never names a removed item. Fallback stitches the top two headlines' lead fragments.
+    const frag = (h) => String(h || '').split(/\s+[—–:]\s+|,\s/)[0].trim();
+    const combo = items.slice(0, 2).map((i) => frag(i.headline)).filter(Boolean).join(' & ');
+    sections.summary = (lead && lead.summary) || combo || sections.connectTitle || 'Sqwod Daily';
     sections.audioScript = await generateAudioScript(items, sections, lang);  // spoken brief for TTS (verified facts only)
     if (sections.audioScript) console.log(`🎙  ${lang.toUpperCase()} audio brief authored (${sections.audioScript.split(/\s+/).length} words)`);
     if (move) sections.move = move;   // re-affirm (the verify pass rebuilds sections)

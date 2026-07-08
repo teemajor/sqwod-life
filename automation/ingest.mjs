@@ -14,6 +14,7 @@
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { isOnBrand, OFFTOPIC_RX, FINANCE_OUTLETS_RX } from './onbrand.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, 'sources');
@@ -52,7 +53,10 @@ const FEEDS = [
   { url: 'https://www.trainingsworld.com/feed/', outlet: 'Trainingsworld', pillar: 'operations-technology', conversion: 'products', lang: 'de' },
 ];
 
-const RELEVANT = /\b(fitness|wellness|gym|studio|coach|coaching|trainer|workout|exercise|wearable|tracker|smart ring|health club|boutique|membership|nutrition|supplement|recovery|longevity|sauna|cold plunge|pilates|crossfit|hyrox|peloton|oura|whoop|garmin|strength|athlete|sport|spa|wellbeing|well-being)\b/i;
+// Relevance is now decided by isOnBrand() (automation/onbrand.mjs): a story must
+// carry a STRONG industry term AND not match the finance/markets OFFTOPIC list.
+// The old RELEVANT regex accepted ambiguous words ("recovery", "strength") alone —
+// that's how a gold/XAU story slipped into the 2026-07-08 Daily. Never again.
 const JUNK = /(\bhoroscope\b|\bzodiac\b|\brecipe\b|\bkardashian\b|\broyal\b|^meet\s|\bquiz\b|\bweight loss pill\b|\bcelebrit|sponsored content|\bdeal of the day\b)/i;
 
 const decode = (s) => s
@@ -166,6 +170,8 @@ function isNearDup(tok, pool) {
 function add(pool, seen, { headline, outlet, link, pub, pillar, conversion, trade = false, lang = '' }) {
   if (!headline || !link) return;
   if (JUNK.test(headline)) return;
+  // Hard off-brand gate for EVERY candidate — including curated trade feeds.
+  if (OFFTOPIC_RX.test(headline) || FINANCE_OUTLETS_RX.test(String(outlet || '').trim())) return;
   const key = headline.toLowerCase().replace(/[^a-z0-9 ]/g, '').slice(0, 60);
   if (seen.has(key)) return;
   const tok = dupTokens(headline);
@@ -191,7 +197,7 @@ async function run() {
           const cut = it.title.lastIndexOf(' - ');
           const headline = cut > 20 ? it.title.slice(0, cut) : it.title;
           const outlet = it.source || (cut > 20 ? it.title.slice(cut + 3) : 'source');
-          if (!RELEVANT.test(headline)) continue;
+          if (!isOnBrand(headline, outlet)) continue;   // strong industry term required; finance/markets always out
           const [pillar, conversion] = classify(headline, qo);
           add(pool, seen, { headline, outlet, link: it.link, pub: it.pub, pillar, conversion });
         }
