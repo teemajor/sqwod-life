@@ -1,0 +1,23 @@
+{
+  "_comment": "Sqwod Evidence topic backlog. The weekly scheduled task pulls the first item with status 'pending', writes the EN+DE draft pair, then sets status 'drafted' with the slug + date. Add new topics to the end anytime. Keep ~8+ pending so the engine never runs dry.",
+  "series": "Sqwod Evidence",
+  "cadence": "weekly",
+  "byline": "Tee Major",
+  "done": [
+    { "topic": "Creatine", "slug": "creatine-evidence-coach-playbook", "pillar": "move", "status": "published", "date": "2026-07-06" },
+    { "topic": "Magnesium — sleep, cramps, and what it actually does", "slug": "magnesium-evidence-coach-playbook", "pillar": "signal", "status": "drafted", "date": "2026-07-07" }
+  ],
+  "queue": [
+    { "topic": "Zone 2 cardio — the evidence behind the trend", "pillar": "move", "conversion": "products", "angle": "method/programming; what zone 2 does, how to prescribe it, what's overclaimed", "status": "pending" },
+    { "topic": "Cold plunge & cold exposure — recovery or hype", "pillar": "signal", "conversion": "list-growth", "angle": "wellness culture; recovery, mood, and the blunting-hypertrophy nuance", "status": "pending" },
+    { "topic": "Ashwagandha — stress, sleep, and strength claims", "pillar": "signal", "conversion": "list-growth", "angle": "supplement; separate the stress/cortisol evidence from the performance hype", "status": "pending" },
+    { "topic": "Protein timing & the anabolic window myth", "pillar": "move", "conversion": "products", "angle": "method; total daily protein vs timing, what actually matters for clients", "status": "pending" },
+    { "topic": "Caffeine for performance — dose, timing, tolerance", "pillar": "move", "conversion": "products", "angle": "method; ergogenic dosing, when it helps, sleep trade-offs", "status": "pending" },
+    { "topic": "Sleep & athletic performance — the highest-leverage lever", "pillar": "signal", "conversion": "list-growth", "angle": "wellness culture; sleep's effect on strength, recovery, injury risk", "status": "pending" },
+    { "topic": "Vitamin D — who actually needs to supplement", "pillar": "signal", "conversion": "list-growth", "angle": "supplement; deficiency, performance, and the over-supplementation trap", "status": "pending" },
+    { "topic": "Omega-3 (fish oil) — joints, recovery, and dose", "pillar": "signal", "conversion": "verified", "angle": "supplement; EPA/DHA dose, what the evidence supports vs marketing", "status": "pending" },
+    { "topic": "BCAAs — worth it if you already eat enough protein?", "pillar": "move", "conversion": "products", "angle": "supplement myth-buster; the leucine story and why whole protein usually wins", "status": "pending" },
+    { "topic": "Beta-alanine — the tingling supplement, does it work?", "pillar": "move", "conversion": "products", "angle": "method/supplement; buffering, the rep ranges it helps, dosing", "status": "pending" },
+    { "topic": "Sauna & heat exposure — longevity and recovery evidence", "pillar": "signal", "conversion": "list-growth", "angle": "wellness culture; cardiovascular + recovery data, protocol basics", "status": "pending" }
+  ]
+}
