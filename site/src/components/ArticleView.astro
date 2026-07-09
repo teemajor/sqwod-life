@@ -7,6 +7,12 @@ import BenchmarkWidget from './BenchmarkWidget.astro';
 import { SUBSCRIBE } from '../config/subscribe';
 import type { CollectionEntry } from 'astro:content';
 import type { RelatedItem } from '../lib/related';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+// Real brand wordmark, embedded as a data URI so it rasterizes into the share PNG
+// (external/cross-origin images taint the canvas and break toBlob; a system font can't
+// reproduce the varsity mark). Same asset the header uses.
+const logoUri = 'data:image/png;base64,' + readFileSync(fileURLToPath(new URL('../../public/sqwod-white.png', import.meta.url))).toString('base64');
 interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string; related?: RelatedItem[] }
 const { lang, entry, sectionLabel, related = [] } = Astro.props;
 const d = entry.data;
@@ -92,6 +98,7 @@ const TX = lang === 'de'
 const V = d.verdict;
 const shareCfg = {
   url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share, accent: '#C7F24C',
+  logo: logoUri,
   section: (sectionLabel || '').toUpperCase(),
   boardEye: TX.boardEye, boardTitle: TX.boardTitle,
   figures: (d.figures ?? []).map((f) => ({ v: f.value, l: f.label, n: f.note ?? '', s: f.source ?? '' })),
@@ -447,14 +454,16 @@ const shareCfg = {
 
     // Shared chrome: ink canvas + radial lime glow (top-left), wordmark, section kicker, footer strip.
     const card = (inner, footL, footR) =>
-      `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">` +
+      `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">` +
       `<defs><radialGradient id="glow" cx="20%" cy="6%" r="62%">` +
         `<stop offset="0%" stop-color="${accent}" stop-opacity="0.14"/>` +
         `<stop offset="66%" stop-color="${accent}" stop-opacity="0"/>` +
       `</radialGradient></defs>` +
       `<rect width="${W}" height="${H}" fill="${C.ink}"/>` +
       `<rect width="${W}" height="${H}" fill="url(#glow)"/>` +
-      `<text x="${PADX}" y="118" font-family="${SANS}" font-weight="800" font-size="48" letter-spacing="1" fill="${C.chalk}">SQWOD</text>` +
+      (shareCfg.logo
+        ? `<image x="${PADX}" y="72" height="52" width="${Math.round(52 * 3.811)}" preserveAspectRatio="xMidYMid meet" href="${shareCfg.logo}" xlink:href="${shareCfg.logo}"/>`
+        : `<text x="${PADX}" y="118" font-family="${SANS}" font-weight="800" font-size="48" letter-spacing="1" fill="${C.chalk}">SQWOD</text>`) +
       `<text x="${W - PADX}" y="112" text-anchor="end" font-family="${MONO}" font-size="22" letter-spacing="5" fill="${C.g3}">${esc(section)}</text>` +
       inner +
       `<line x1="${PADX}" y1="${H - 120}" x2="${W - PADX}" y2="${H - 120}" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>` +
