@@ -47,6 +47,15 @@ hero:
   kind: bars
   stat: "31%"
   statLabel: "of people fall short on magnesium"
+verdict:
+  title: "Magnesium: what's real?"
+  real:
+    - { value: "−1.31s", text: "quicker to stand from a chair — older women, 12 weeks" }
+    - { value: "−17min", text: "faster to fall asleep vs. placebo (early, low-certainty)" }
+  hype:
+    - { value: "≈0", text: "effect on ordinary nighttime leg cramps — same as placebo" }
+    - { value: "oxide", text: "cheap but poorly absorbed — choose citrate or glycinate" }
+  note: "Cochrane · BMC · Am J Clin Nutr — see sources"
 tags: ["magnesium", "supplements", "sleep", "recovery", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-07", note: "First edition. Evidence current to July 2026; graded by strength of study design. We update when the pipeline delivers." }

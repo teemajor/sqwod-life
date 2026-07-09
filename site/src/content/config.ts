@@ -110,6 +110,15 @@ const articles = defineCollection({
       source: z.string().optional(),
     }).optional(),
     changelog: z.array(z.object({ date: z.string(), note: z.string() })).default([]),
+    // Optional "what's real vs. hype" verdict — powers the opinionated share card (1C).
+    // Editorial ✓/✕ split; only rendered when authored. Keep rows short (they're a social card).
+    verdict: z.object({
+      title: z.string().optional(),                                   // e.g. "MAGNESIUM: WHAT'S REAL?" — defaults from article
+      realLabel: z.string().optional(), hypeLabel: z.string().optional(),
+      real: z.array(z.object({ value: z.string(), text: z.string() })).default([]),
+      hype: z.array(z.object({ value: z.string(), text: z.string() })).default([]),
+      note: z.string().optional(),                                    // footer-left, e.g. "Cochrane · BMC — see sources"
+    }).optional(),
     // unique per-article animated hero (renders to GIF in production)
     hero: z.object({
       kind: z.enum(['line', 'bars', 'orbit']).default('line'),

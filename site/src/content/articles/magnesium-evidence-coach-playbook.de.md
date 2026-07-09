@@ -47,6 +47,15 @@ hero:
   kind: bars
   stat: "31%"
   statLabel: "erreichen die empfohlene Magnesiumzufuhr nicht"
+verdict:
+  title: "Magnesium: Was stimmt wirklich?"
+  real:
+    - { value: "−1,31s", text: "schneller vom Stuhl aufstehen — ältere Frauen, 12 Wochen" }
+    - { value: "−17min", text: "schneller einschlafen vs. Placebo (früh, geringe Sicherheit)" }
+  hype:
+    - { value: "≈0", text: "Wirkung auf normale nächtliche Wadenkrämpfe — wie Placebo" }
+    - { value: "Oxid", text: "billig, aber schlecht resorbiert — nimm Citrat oder Glycinat" }
+  note: "Cochrane · BMC · Am J Clin Nutr — siehe Quellen"
 tags: ["magnesium", "supplements", "sleep", "recovery", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-07", note: "Erste Ausgabe. Evidenz aktuell bis Juli 2026; nach Studienqualität bewertet. Wir aktualisieren, sobald die Pipeline liefert." }

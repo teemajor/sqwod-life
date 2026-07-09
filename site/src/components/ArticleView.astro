@@ -86,12 +86,21 @@ function figVizSvg(z: ReturnType<typeof vizOf>) {
   return `<svg class="fviz fviz-rule" viewBox="0 0 ${W} 6" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><rect x="0" y="2" width="72" height="4" rx="2" fill="var(--accent)"/></svg>`;
 }
 const TX = lang === 'de'
-  ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt', share: 'Als Bild teilen', tag: 'SQWOD INTELLIGENCE' }
-  : { tldr: 'Key takeaways', means: 'What this means for you', data: 'Data & citation', dl: 'Data (CSV)', dlj: 'JSON', cite: 'Cite this report', copy: 'Copy', copied: 'Copied ✓', now: 'now', share: 'Share as image', tag: 'SQWOD INTELLIGENCE' };
-// data the share-image script needs (brand strings + the chart series), passed to the client below
+  ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt', share: 'Als Bild teilen', tag: 'SQWOD INTELLIGENCE', board: 'Scoreboard teilen', boardEye: 'Zahlen, die zählen', boardTitle: 'IN ZAHLEN', verdict: 'Verdict teilen', real: 'Belegt durch Studien', hype: 'Glaub dem Hype nicht' }
+  : { tldr: 'Key takeaways', means: 'What this means for you', data: 'Data & citation', dl: 'Data (CSV)', dlj: 'JSON', cite: 'Cite this report', copy: 'Copy', copied: 'Copied ✓', now: 'now', share: 'Share as image', tag: 'SQWOD INTELLIGENCE', board: 'Share scoreboard', boardEye: 'Figures that matter', boardTitle: 'BY THE NUMBERS', verdict: 'Share verdict', real: 'Backed by trials', hype: "Don't buy the hype" };
+// data the share-image script needs (brand strings + the chart series + figures + verdict), passed to the client below
+const V = d.verdict;
 const shareCfg = {
-  url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share, accent: '#C6FF3A',
+  url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share, accent: '#C7F24C',
+  section: (sectionLabel || '').toUpperCase(),
+  boardEye: TX.boardEye, boardTitle: TX.boardTitle,
+  figures: (d.figures ?? []).map((f) => ({ v: f.value, l: f.label, n: f.note ?? '', s: f.source ?? '' })),
   series: d.series ? { label: d.series.label, unit: d.series.unit ?? '', points: d.series.points, years: d.series.years ?? [] } : null,
+  verdict: V ? {
+    title: V.title || (d.title || '').toUpperCase(),
+    realLabel: (V.realLabel || TX.real), hypeLabel: (V.hypeLabel || TX.hype),
+    real: V.real ?? [], hype: V.hype ?? [], note: V.note ?? '',
+  } : null,
 };
 ---
 <div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
@@ -117,7 +126,17 @@ const shareCfg = {
 
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
-    <p class="kick">{lang==='de'?'Zahlen, die zählen':'Figures that matter'}</p>
+    <div class="figs-head">
+      <p class="kick" style="margin:0">{lang==='de'?'Zahlen, die zählen':'Figures that matter'}</p>
+      <div class="figs-actions">
+        {d.verdict && ((d.verdict.real?.length ?? 0) + (d.verdict.hype?.length ?? 0) > 0) && (
+          <button class="share-btn" type="button" data-kind="verdict" aria-label={TX.verdict}>◐ {TX.verdict}</button>
+        )}
+        {d.figures.length > 1 && (
+          <button class="share-btn" type="button" data-kind="board" aria-label={TX.board}>▦ {TX.board}</button>
+        )}
+      </div>
+    </div>
     <div class="fig-grid">
       {d.figures.map((f) => (
         <div class="fig">
@@ -277,6 +296,8 @@ const shareCfg = {
 </section>
 
 <style>
+  .figs-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .figs-actions{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
   .fig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:14px;margin-top:14px}
   .fig{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;background:linear-gradient(180deg,var(--panel),var(--bg));transition:border-color .15s ease,box-shadow .15s ease}
   .fig:hover{border-color:var(--accent-line);box-shadow:0 0 0 1px var(--accent-line),0 8px 30px rgba(0,0,0,.35)}
@@ -405,72 +426,117 @@ const shareCfg = {
 </script>
 
 <script define:vars={{ shareCfg }}>
-  // Share as image — render a figure or the chart into a self-contained, on-brand
-  // 1200×675 PNG (Sqwod wordmark + stat + source + URL). Literal hex colors only:
-  // CSS vars don't survive SVG→canvas rasterization. Pure SVG (no foreignObject)
-  // keeps the canvas untainted so toBlob works for Web Share / download.
+  // Share as image — render a figure (hook), the full scoreboard, or the chart into a
+  // self-contained, on-brand 1600×900 PNG: near-black canvas, radial lime glow, giant
+  // stat, Sqwod wordmark + source + URL. Data-bound to the article's own figures.
+  // Literal hex colors only (CSS vars don't survive SVG→canvas rasterization); pure SVG
+  // (no foreignObject) keeps the canvas untainted so toBlob works for Web Share/download.
   (function () {
-    const C = { ink: '#0e0e10', chalk: '#FAFAFA', g1: '#ededf0', g2: '#b8b8c0', g3: '#85858e', g4: '#52525a', line: '#2a2a30', panel: '#161619', accent: (shareCfg.accent || '#C6FF3A') };
-    // classify a value the same way the on-page cards do → meter / multiplier / keyline
-    const vizOf = (value) => {
-      const v = String(value || ''); const nums = (v.match(/\d+(?:[.,]\d+)?/g) || []).map((n) => parseFloat(n.replace(',', '.')));
-      if (/%/.test(v) && nums.length) { const a = nums.length >= 2 ? nums[0] : 0, b = nums.length >= 2 ? nums[1] : nums[0]; return { type: 'meter', a, b, max: 100 }; }
-      if (/[×x]/i.test(v) && nums.length) { const hi = nums[nums.length - 1]; return { type: 'mult', hi, max: Math.max(hi * 1.18, 2) }; }
-      return { type: 'rule' };
-    };
-    const vizSvg = (z, x, y, w) => {
-      const h = 20;
-      if (z.type === 'meter') { const xa = x + Math.max(0, (z.a / z.max) * w), bw = Math.max((z.b / z.max) * w - (xa - x), 8);
-        return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10" fill="${C.panel}"/><rect x="${xa}" y="${y}" width="${bw}" height="${h}" rx="10" fill="${C.accent}"/>`; }
-      if (z.type === 'mult') { const wHi = (z.hi / z.max) * w, x1 = x + (1 / z.max) * w;
-        return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="10" fill="${C.panel}"/><rect x="${x}" y="${y}" width="${wHi}" height="${h}" rx="10" fill="${C.accent}"/><line x1="${x1}" y1="${y - 6}" x2="${x1}" y2="${y + h + 6}" stroke="${C.g2}" stroke-width="3"/><text x="${x1}" y="${y + h + 30}" text-anchor="middle" font-family="${MONO}" font-size="18" fill="${C.g3}">1×</text>`; }
-      return `<rect x="${x}" y="${y + 6}" width="120" height="8" rx="4" fill="${C.accent}"/>`;
-    };
-    const SANS = "'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif";
-    const MONO = "ui-monospace,'SF Mono',Menlo,monospace";
-    const W = 1200, H = 675;
+    const accent = shareCfg.accent || '#C7F24C';
+    const C = { ink: '#0A0B0A', chalk: '#F4F5F0', g1: '#C9CFC0', g2: '#9AA093', g3: '#8A8F86', g4: '#6B6F64', dim: '#5B5F55', accent };
+    // Heavy system stack (rasterization can't fetch page/Google fonts — approximate Archivo/Space Mono)
+    const SANS = "'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif";
+    const MONO = "ui-monospace,'SF Mono',Menlo,Consolas,monospace";
+    const W = 1600, H = 900, PADX = 96;
+    const section = shareCfg.section || shareCfg.tag || 'SQWOD';
     const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const prettyUrl = (u) => String(u || '').replace(/^https?:\/\//, '');
+    const prettyUrl = (u) => String(u || '').replace(/^https?:\/\//, '').replace(/\/$/, '');
     const wrap = (s, max) => { const ws = String(s || '').split(/\s+/); const out = []; let cur = ''; for (const w of ws) { if ((cur + ' ' + w).trim().length > max) { if (cur) out.push(cur); cur = w; } else cur = (cur ? cur + ' ' : '') + w; } if (cur) out.push(cur); return out; };
+    const clip = (s, n) => { s = String(s || ''); return s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s; };
     const lines = (arr, x, y, dy, attrs) => arr.map((t, i) => `<text x="${x}" y="${y + i * dy}" ${attrs}>${esc(t)}</text>`).join('');
 
-    const card = (inner, footerLeft) =>
+    // Shared chrome: ink canvas + radial lime glow (top-left), wordmark, section kicker, footer strip.
+    const card = (inner, footL, footR) =>
       `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">` +
+      `<defs><radialGradient id="glow" cx="20%" cy="6%" r="62%">` +
+        `<stop offset="0%" stop-color="${accent}" stop-opacity="0.14"/>` +
+        `<stop offset="66%" stop-color="${accent}" stop-opacity="0"/>` +
+      `</radialGradient></defs>` +
       `<rect width="${W}" height="${H}" fill="${C.ink}"/>` +
-      `<rect x="22" y="22" width="${W - 44}" height="${H - 44}" rx="22" fill="none" stroke="${C.line}" stroke-width="1.5"/>` +
-      `<text x="64" y="108" font-family="${SANS}" font-weight="800" font-size="30" letter-spacing="-0.5"><tspan fill="${C.chalk}">SQWOD</tspan><tspan fill="${C.g3}">.life</tspan></text>` +
-      `<text x="${W - 64}" y="106" text-anchor="end" font-family="${SANS}" font-weight="800" font-size="15" letter-spacing="3" fill="${C.g3}">◈ ${esc(shareCfg.tag)}</text>` +
+      `<rect width="${W}" height="${H}" fill="url(#glow)"/>` +
+      `<text x="${PADX}" y="118" font-family="${SANS}" font-weight="800" font-size="48" letter-spacing="1" fill="${C.chalk}">SQWOD</text>` +
+      `<text x="${W - PADX}" y="112" text-anchor="end" font-family="${MONO}" font-size="22" letter-spacing="5" fill="${C.g3}">${esc(section)}</text>` +
       inner +
-      `<line x1="64" y1="${H - 96}" x2="${W - 64}" y2="${H - 96}" stroke="${C.line}" stroke-width="1.5"/>` +
-      `<text x="64" y="${H - 54}" font-family="${SANS}" font-size="20" fill="${C.g3}">${esc(footerLeft)}</text>` +
-      `<text x="${W - 64}" y="${H - 54}" text-anchor="end" font-family="${MONO}" font-size="18" fill="${C.g3}">${esc(prettyUrl(shareCfg.url))}</text>` +
+      `<line x1="${PADX}" y1="${H - 120}" x2="${W - PADX}" y2="${H - 120}" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>` +
+      `<text x="${PADX}" y="${H - 66}" font-family="${MONO}" font-size="22" letter-spacing="1" fill="${C.g3}">${esc(clip(footL, 74))}</text>` +
+      `<text x="${W - PADX}" y="${H - 66}" text-anchor="end" font-family="${MONO}" font-size="22" letter-spacing="3" fill="${accent}">${esc(footR || 'SQWOD.LIFE')}</text>` +
       `</svg>`;
 
+    // Hook — one figure, giant lime stat over supporting label + note.
     const statInner = (d) => {
-      const v = d.v || '', vs = v.length <= 4 ? 150 : v.length <= 7 ? 120 : v.length <= 12 ? 80 : 56;
-      let inner = `<text x="64" y="300" font-family="${SANS}" font-weight="800" font-size="${vs}" fill="${C.accent}">${esc(v)}</text>`;
-      inner += lines(wrap(d.l, 40), 64, 372, 42, `font-family="${SANS}" font-weight="700" font-size="34" fill="${C.chalk}"`);
-      const lblLines = wrap(d.l, 40).length;
-      if (d.n) inner += lines(wrap(d.n, 64), 64, 372 + lblLines * 42 + 12, 32, `font-family="${SANS}" font-size="24" fill="${C.g2}"`);
-      // the same micro-chart the card shows, anchored above the footer
-      inner += vizSvg(vizOf(v), 64, 520, W - 128);
+      const v = String(d.v || ''), L = v.length;
+      const vs = L <= 4 ? 300 : L <= 7 ? 220 : L <= 12 ? 150 : L <= 20 ? 100 : 68;
+      const ls = vs >= 220 ? '-8' : vs >= 100 ? '-4' : '-2';
+      let inner = `<text x="${PADX}" y="380" font-family="${SANS}" font-weight="800" font-size="${vs}" letter-spacing="${ls}" fill="${accent}">${esc(v)}</text>`;
+      const lbl = wrap(d.l, 40).slice(0, 2);
+      inner += lines(lbl, PADX, 470, 62, `font-family="${SANS}" font-weight="800" font-size="52" letter-spacing="-1" fill="${C.chalk}"`);
+      if (d.n) inner += lines(wrap(d.n, 66).slice(0, 3), PADX, 470 + lbl.length * 62 + 30, 40, `font-family="${SANS}" font-size="30" fill="${C.g2}"`);
+      return inner;
+    };
+
+    // Scoreboard — up to 6 figures in a 3×2 hairline grid (all of the article's figures at once).
+    const boardInner = () => {
+      const figs = (shareCfg.figures || []).slice(0, 6);
+      if (!figs.length) return '';
+      let inner = `<text x="${PADX}" y="186" font-family="${MONO}" font-size="22" letter-spacing="5" fill="${accent}">${esc((shareCfg.boardEye || '').toUpperCase())}</text>`;
+      inner += `<text x="${PADX}" y="272" font-family="${SANS}" font-weight="800" font-size="76" letter-spacing="-2" fill="${C.chalk}">${esc(shareCfg.boardTitle || 'BY THE NUMBERS')}</text>`;
+      const cols = 3, rows = 2, gridTop = 330, gridBot = H - 150;
+      const colW = (W - PADX * 2) / cols, rowH = (gridBot - gridTop) / rows;
+      // hairline dividers
+      for (let c = 1; c < cols; c++) inner += `<line x1="${PADX + c * colW}" y1="${gridTop}" x2="${PADX + c * colW}" y2="${gridTop + rows * rowH}" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="1"/>`;
+      inner += `<line x1="${PADX}" y1="${gridTop + rowH}" x2="${W - PADX}" y2="${gridTop + rowH}" stroke="#FFFFFF" stroke-opacity="0.09" stroke-width="1"/>`;
+      figs.forEach((f, i) => {
+        const cx = PADX + (i % cols) * colW + 8, cy = gridTop + Math.floor(i / cols) * rowH;
+        const v = String(f.v || ''), L = v.length;
+        const vs = L <= 4 ? 88 : L <= 7 ? 72 : L <= 12 ? 52 : 38;
+        inner += `<text x="${cx}" y="${cy + 78}" font-family="${SANS}" font-weight="800" font-size="${vs}" letter-spacing="-1" fill="${accent}">${esc(v)}</text>`;
+        const lbl = wrap(f.l, 30); const lbl2 = lbl.length > 2 ? [lbl[0], lbl.slice(1).join(' ').slice(0, 28).trimEnd() + '…'] : lbl;
+        inner += lines(lbl2, cx, cy + 120, 28, `font-family="${SANS}" font-weight="700" font-size="22" fill="${C.chalk}"`);
+        if (f.s) inner += `<text x="${cx}" y="${cy + rowH - 14}" font-family="${MONO}" font-size="15" letter-spacing="1" fill="${C.g4}">${esc(clip(f.s, 38).toUpperCase())}</text>`;
+      });
+      return inner;
+    };
+
+    // Verdict — opinionated "what's real vs. hype" two-panel card (1C).
+    const verdictInner = () => {
+      const V = shareCfg.verdict; if (!V) return '';
+      const t = String(V.title || '').toUpperCase();
+      const tl = wrap(t, 30).slice(0, 2), tsz = t.length <= 18 ? 66 : t.length <= 30 ? 52 : 42;
+      let inner = lines(tl, PADX, 234, tsz + 8, `font-family="${SANS}" font-weight="800" font-size="${tsz}" letter-spacing="-1" fill="${C.chalk}"`);
+      const top = tl.length > 1 ? 330 : 300, bottom = H - 150, gap = 40, pw = (W - PADX * 2 - gap) / 2, ph = bottom - top;
+      const panel = (x, isReal, label, rows) => {
+        const col = isReal ? accent : '#FFFFFF', so = isReal ? 0.34 : 0.14, fo = isReal ? 0.05 : 0.0;
+        let g = `<rect x="${x}" y="${top}" width="${pw}" height="${ph}" rx="16" fill="${col}" fill-opacity="${fo}" stroke="${col}" stroke-opacity="${so}"/>`;
+        g += `<text x="${x + 40}" y="${top + 60}" font-family="${MONO}" font-size="19" letter-spacing="3" fill="${isReal ? accent : C.g2}">${esc(label)}</text>`;
+        const rr = rows.slice(0, 2), area = ph - 96, rowH = area / Math.max(rr.length, 1), ry0 = top + 96;
+        rr.forEach((r, i) => {
+          const cy = ry0 + i * rowH + rowH / 2, v = String(r.value || ''), vs = v.length <= 4 ? 60 : v.length <= 7 ? 46 : 34;
+          g += `<text x="${x + 40}" y="${cy + vs * 0.34}" font-family="${SANS}" font-weight="800" font-size="${vs}" letter-spacing="-1" fill="${isReal ? accent : C.dim}">${esc(v)}</text>`;
+          const tx = x + 40 + 200, txt = wrap(r.text, 37).slice(0, 3);
+          g += lines(txt, tx, cy - (txt.length - 1) * 13 + 7, 26, `font-family="${SANS}" font-weight="600" font-size="20" fill="${isReal ? C.chalk : C.g1}"`);
+        });
+        return g;
+      };
+      inner += panel(PADX, true, '✓ ' + (V.realLabel || ''), V.real || []);
+      inner += panel(PADX + pw + gap, false, '✕ ' + (V.hypeLabel || ''), V.hype || []);
       return inner;
     };
 
     const chartInner = () => {
       const s = shareCfg.series; if (!s) return '';
       const pts = s.points, yrs = s.years || [];
-      const x0 = 64, x1 = W - 80, top = 230, base = 540, mx = Math.max.apply(null, pts.concat([1]));
-      const slot = (x1 - x0) / pts.length, bw = Math.min(64, slot * 0.5), nowY = String(new Date().getFullYear());
+      const x0 = PADX, x1 = W - PADX, top = 320, base = 720, mx = Math.max.apply(null, pts.concat([1]));
+      const slot = (x1 - x0) / pts.length, bw = Math.min(90, slot * 0.5), nowY = String(new Date().getFullYear());
       const anyNow = yrs.indexOf(nowY) >= 0;
-      let inner = `<text x="64" y="180" font-family="${SANS}" font-weight="700" font-size="32" fill="${C.g1}">${esc(s.label)}${s.unit ? ' · ' + esc(s.unit) : ''}</text>`;
-      inner += `<line x1="${x0}" y1="${base}" x2="${x1}" y2="${base}" stroke="${C.line}" stroke-width="1.5"/>`;
+      let inner = `<text x="${PADX}" y="196" font-family="${MONO}" font-size="22" letter-spacing="5" fill="${accent}">${esc((shareCfg.boardEye || '').toUpperCase())}</text>`;
+      inner += `<text x="${PADX}" y="266" font-family="${SANS}" font-weight="800" font-size="52" letter-spacing="-1" fill="${C.chalk}">${esc(s.label)}${s.unit ? '  ·  ' + esc(s.unit) : ''}</text>`;
+      inner += `<line x1="${x0}" y1="${base}" x2="${x1}" y2="${base}" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>`;
       pts.forEach((p, i) => {
-        const h = Math.max(3, (p / mx) * (base - top)), x = x0 + i * slot + (slot - bw) / 2, cx = x0 + i * slot + slot / 2;
+        const h = Math.max(4, (p / mx) * (base - top)), x = x0 + i * slot + (slot - bw) / 2, cx = x0 + i * slot + slot / 2;
         const emph = yrs[i] === nowY || (!anyNow && i === pts.length - 1);
-        inner += `<rect x="${x}" y="${base - h}" width="${bw}" height="${h}" rx="5" fill="${emph ? C.accent : C.chalk}" opacity="${emph ? 1 : 0.7}"/>`;
-        inner += `<text x="${cx}" y="${base - h - 12}" text-anchor="middle" font-family="${MONO}" font-size="20" fill="${emph ? C.accent : C.g2}">${p}</text>`;
-        if (yrs[i]) inner += `<text x="${cx}" y="${base + 28}" text-anchor="middle" font-family="${MONO}" font-size="18" fill="${emph ? C.accent : C.g4}">${esc(yrs[i])}</text>`;
+        inner += `<rect x="${x}" y="${base - h}" width="${bw}" height="${h}" rx="6" fill="${emph ? accent : C.chalk}" opacity="${emph ? 1 : 0.72}"/>`;
+        inner += `<text x="${cx}" y="${base - h - 16}" text-anchor="middle" font-family="${MONO}" font-size="26" fill="${emph ? accent : C.g2}">${p}</text>`;
+        if (yrs[i]) inner += `<text x="${cx}" y="${base + 38}" text-anchor="middle" font-family="${MONO}" font-size="22" fill="${emph ? accent : C.g4}">${esc(yrs[i])}</text>`;
       });
       return inner;
     };
@@ -494,16 +560,23 @@ const shareCfg = {
       img.src = url;
     };
 
+    const asOfFoot = shareCfg.asOf ? 'As of ' + shareCfg.asOf : prettyUrl(shareCfg.url);
     document.querySelectorAll('.share-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         btn.classList.add('busy');
         let svg, fn;
-        if (btn.dataset.kind === 'chart' && shareCfg.series) {
-          svg = card(chartInner(), shareCfg.asOf ? 'Sqwod Intelligence · as of ' + shareCfg.asOf : 'Sqwod Intelligence');
+        if (btn.dataset.kind === 'verdict' && shareCfg.verdict) {
+          svg = card(verdictInner(), shareCfg.verdict.note || asOfFoot);
+          fn = 'sqwod-verdict.png';
+        } else if (btn.dataset.kind === 'board' && (shareCfg.figures || []).length) {
+          svg = card(boardInner(), asOfFoot);
+          fn = 'sqwod-scoreboard.png';
+        } else if (btn.dataset.kind === 'chart' && shareCfg.series) {
+          svg = card(chartInner(), asOfFoot);
           fn = 'sqwod-chart.png';
         } else {
           const d = { v: btn.dataset.v, l: btn.dataset.l, n: btn.dataset.n, s: btn.dataset.s };
-          svg = card(statInner(d), d.s ? 'Source: ' + d.s : 'Sqwod Intelligence');
+          svg = card(statInner(d), d.s ? 'Source: ' + d.s : asOfFoot);
           fn = 'sqwod-figure.png';
         }
         rasterize(svg, fn);
