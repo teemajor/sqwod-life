@@ -1,0 +1,170 @@
+[
+  {
+    "id": "news-2026-07-17-1",
+    "entity": "DSSV",
+    "topic": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "DSSV (Mon, 22 Jun 2026 12:03:51 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026"
+      },
+      {
+        "label": "Outlet",
+        "value": "DSSV"
+      }
+    ],
+    "en": {
+      "headline": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/eckdaten-dach-webinar-2026/"
+    },
+    "de": {
+      "headline": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/eckdaten-dach-webinar-2026/"
+    }
+  },
+  {
+    "id": "news-2026-07-17-2",
+    "entity": "body LIFE",
+    "topic": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar",
+    "pillar": "build",
+    "conversion": "pods",
+    "provenance": "body LIFE (Thu, 02 Jul 2026 14:17:34 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar"
+      },
+      {
+        "label": "Outlet",
+        "value": "body LIFE"
+      }
+    ],
+    "en": {
+      "headline": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar",
+      "dek": "Via body LIFE.",
+      "readMore": "https://www.bodylife.com/myline-b2b-webinare/"
+    },
+    "de": {
+      "headline": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar",
+      "dek": "Via body LIFE.",
+      "readMore": "https://www.bodylife.com/myline-b2b-webinare/"
+    }
+  },
+  {
+    "id": "news-2026-07-17-3",
+    "entity": "Trainingsworld",
+    "topic": "Movement is Therapy – Wolfgang Unsöld",
+    "pillar": "move",
+    "conversion": "products",
+    "provenance": "Trainingsworld (Tue, 27 Jan 2026 16:31:27 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Movement is Therapy – Wolfgang Unsöld"
+      },
+      {
+        "label": "Outlet",
+        "value": "Trainingsworld"
+      }
+    ],
+    "en": {
+      "headline": "Movement is Therapy – Wolfgang Unsöld",
+      "dek": "Via Trainingsworld.",
+      "readMore": "https://www.trainingsworld.com/movement-is-therapy-wolfgang-unsoeld/"
+    },
+    "de": {
+      "headline": "Movement is Therapy – Wolfgang Unsöld",
+      "dek": "Via Trainingsworld.",
+      "readMore": "https://www.trainingsworld.com/movement-is-therapy-wolfgang-unsoeld/"
+    }
+  },
+  {
+    "id": "news-2026-07-17-4",
+    "entity": "Engadget",
+    "topic": "Engadget Review Recap: Steam Machine, Samsung Music Studio 7, Oura Ring 5 And More",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "Engadget (Sat, 11 Jul 2026 14:00:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Engadget Review Recap: Steam Machine, Samsung Music Studio 7, Oura Ring 5 And More"
+      },
+      {
+        "label": "Outlet",
+        "value": "Engadget"
+      }
+    ],
+    "en": {
+      "headline": "Engadget Review Recap: Steam Machine, Samsung Music Studio 7, Oura Ring 5 And More",
+      "dek": "Via Engadget.",
+      "readMore": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOck5Nc0stQXVsUzFDV29iSV9YMUFWN2lSOUtvS1RsX2tTU0VPeW0xUGZfZ1lHS1ZMQy0yZ1B3ZmxmNFktdjBhQ3VjcEhiSlZSazJCbE1nSjZTZmNBS2l6V0RjVDNab2FXZzJmZjZhdUNQWktUeTB4ZXJ2dVFLWk9vT2dnVC0xTVlLMXc0dHFVRkR5amdYSUpF?oc=5"
+    },
+    "de": {
+      "headline": "Engadget Review Recap: Steam Machine, Samsung Music Studio 7, Oura Ring 5 And More",
+      "dek": "Via Engadget.",
+      "readMore": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOck5Nc0stQXVsUzFDV29iSV9YMUFWN2lSOUtvS1RsX2tTU0VPeW0xUGZfZ1lHS1ZMQy0yZ1B3ZmxmNFktdjBhQ3VjcEhiSlZSazJCbE1nSjZTZmNBS2l6V0RjVDNab2FXZzJmZjZhdUNQWktUeTB4ZXJ2dVFLWk9vT2dnVC0xTVlLMXc0dHFVRkR5amdYSUpF?oc=5"
+    }
+  },
+  {
+    "id": "news-2026-07-17-5",
+    "entity": "Athletech News",
+    "topic": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements",
+    "pillar": "build",
+    "conversion": "pods",
+    "provenance": "Athletech News (Thu, 16 Jul 2026 17:52:13 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements"
+      },
+      {
+        "label": "Outlet",
+        "value": "Athletech News"
+      }
+    ],
+    "en": {
+      "headline": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/pvolve-reaches-40-open-studios-signs-new-franchise-agreements/"
+    },
+    "de": {
+      "headline": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/pvolve-reaches-40-open-studios-signs-new-franchise-agreements/"
+    }
+  },
+  {
+    "id": "news-2026-07-17-6",
+    "entity": "The Scotsman",
+    "topic": "Bob MacIntyre's uses fitness coach to work out 50-yard run-outs at baked Birkdale",
+    "pillar": "move",
+    "conversion": "products",
+    "provenance": "The Scotsman (Wed, 15 Jul 2026 13:23:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Bob MacIntyre's uses fitness coach to work out 50-yard run-outs at baked Birkdale"
+      },
+      {
+        "label": "Outlet",
+        "value": "The Scotsman"
+      }
+    ],
+    "en": {
+      "headline": "Bob MacIntyre's uses fitness coach to work out 50-yard run-outs at baked Birkdale",
+      "dek": "Via The Scotsman.",
+      "readMore": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZFRZak92SWxXb1JUaXlEREw2ZXA3ZUZpcy11U2xsZFVwQ1VqTWl5NUFVbWIxTE9ZUTVoRHltMklaWDRjS05DcUVqc0laM295QnkwQ3VFLTFPSEhpTzYxOWxqNXBlWmwtanlscW90Z1JhVlAxci1UMndpbndaN3RDY1BVS2tIREZkUlFUN3JqNVBPVmpTcVlSSkpFXzFrT1VLWEpERFA1ZnpMNG4yWVlrQnhsYW0zN0dOR3ZJ?oc=5"
+    },
+    "de": {
+      "headline": "Bob MacIntyre's uses fitness coach to work out 50-yard run-outs at baked Birkdale",
+      "dek": "Via The Scotsman.",
+      "readMore": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZFRZak92SWxXb1JUaXlEREw2ZXA3ZUZpcy11U2xsZFVwQ1VqTWl5NUFVbWIxTE9ZUTVoRHltMklaWDRjS05DcUVqc0laM295QnkwQ3VFLTFPSEhpTzYxOWxqNXBlWmwtanlscW90Z1JhVlAxci1UMndpbndaN3RDY1BVS2tIREZkUlFUN3JqNVBPVmpTcVlSSkpFXzFrT1VLWEpERFA1ZnpMNG4yWVlrQnhsYW0zN0dOR3ZJ?oc=5"
+    }
+  }
+]
