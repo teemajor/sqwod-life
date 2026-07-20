@@ -1,0 +1,29 @@
+name: Deploy Cloudflare Worker (analytics-dashboard)
+
+# Ships infrastructure/analytics-dashboard/worker.js to Cloudflare automatically
+# whenever it changes on main — so the dashboard and the weekly digest can be
+# updated from GitHub Desktop alone, no terminal required.
+#
+# Existing Worker secrets (UMAMI_USERNAME, UMAMI_PASSWORD, RESEND_API_KEY,
+# DIGEST_KEY) stay as they are in Cloudflare; this only pushes the code and the
+# non-secret [vars] from wrangler.toml.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'infrastructure/analytics-dashboard/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy analytics dashboard worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: infrastructure/analytics-dashboard
+          command: deploy

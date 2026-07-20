@@ -8,8 +8,8 @@ UMAMI_URL = "https://umami-production-5dc9.up.railway.app"
 UMAMI_WEBSITE_ID = "35fd123d-0a68-4295-a875-8947947b5d76"
 # Optional: Resend audience (list) IDs, to show EN/DE subscriber counts.
 # Find them in Resend → Audiences → click an audience → copy the ID.
-RESEND_AUDIENCE_EN = ""
-RESEND_AUDIENCE_DE = ""
+RESEND_AUDIENCE_EN = "3fd872bd-b495-4636-bd27-55bbf5d05970"
+RESEND_AUDIENCE_DE = "2906253d-608f-4ec6-a2d6-1d3f593610c1"
 # Weekly digest email settings (needs RESEND_FROM = a verified Resend sender).
 RESEND_FROM = ""
 DIGEST_TO = "tee@teemajor.com"
