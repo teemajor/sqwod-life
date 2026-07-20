@@ -11,7 +11,7 @@ UMAMI_WEBSITE_ID = "35fd123d-0a68-4295-a875-8947947b5d76"
 RESEND_AUDIENCE_EN = "3fd872bd-b495-4636-bd27-55bbf5d05970"
 RESEND_AUDIENCE_DE = "2906253d-608f-4ec6-a2d6-1d3f593610c1"
 # Weekly digest email settings (needs RESEND_FROM = a verified Resend sender).
-RESEND_FROM = ""
+RESEND_FROM = "Sqwod.Life Analytics <daily@sqwod.life>"
 DIGEST_TO = "tee@teemajor.com"
 # Comma-separated allow-list checked against the Cloudflare Access identity header
 # (defense in depth — Access itself is the real gate). Leave blank to rely on Access only.
