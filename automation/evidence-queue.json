@@ -6,10 +6,10 @@
   "done": [
     { "topic": "Creatine", "slug": "creatine-evidence-coach-playbook", "pillar": "move", "status": "published", "date": "2026-07-06" },
     { "topic": "Magnesium — sleep, cramps, and what it actually does", "slug": "magnesium-evidence-coach-playbook", "pillar": "signal", "status": "drafted", "date": "2026-07-07" },
-    { "topic": "Zone 2 cardio — the evidence behind the trend", "slug": "zone-2-cardio-evidence-coach-playbook", "pillar": "move", "status": "approved", "date": "2026-07-14" }
+    { "topic": "Zone 2 cardio — the evidence behind the trend", "slug": "zone-2-cardio-evidence-coach-playbook", "pillar": "move", "status": "approved", "date": "2026-07-14" },
+    { "topic": "Cold plunge & cold exposure — recovery or hype", "slug": "cold-plunge-evidence-coach-playbook", "pillar": "signal", "status": "drafted", "date": "2026-07-20" }
   ],
   "queue": [
-    { "topic": "Cold plunge & cold exposure — recovery or hype", "pillar": "signal", "conversion": "list-growth", "angle": "wellness culture; recovery, mood, and the blunting-hypertrophy nuance", "status": "pending" },
     { "topic": "Ashwagandha — stress, sleep, and strength claims", "pillar": "signal", "conversion": "list-growth", "angle": "supplement; separate the stress/cortisol evidence from the performance hype", "status": "pending" },
     { "topic": "Protein timing & the anabolic window myth", "pillar": "move", "conversion": "products", "angle": "method; total daily protein vs timing, what actually matters for clients", "status": "pending" },
     { "topic": "Caffeine for performance — dose, timing, tolerance", "pillar": "move", "conversion": "products", "angle": "method; ergogenic dosing, when it helps, sleep trade-offs", "status": "pending" },

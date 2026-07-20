@@ -41,6 +41,34 @@ export default {
       return new Response(digestText(d), { headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' } });
     }
 
+    // --- /debug : key-authed raw upstream dump, so a "—" can be traced to the
+    //     actual Umami/Resend response instead of guessed at. Same key as /digest.
+    if (url.pathname === '/debug') {
+      if (!env.DIGEST_KEY || url.searchParams.get('key') !== env.DIGEST_KEY) {
+        return new Response('Forbidden', { status: 403 });
+      }
+      const endAt = Date.now();
+      const d = await gather(env, { startAt: endAt - 7 * 86400000, endAt, unit: 'day', label: 'last 7 days', activeKey: '7' });
+      const body = {
+        umami: {
+          url: env.UMAMI_URL, websiteId: env.UMAMI_WEBSITE_ID,
+          authFailed: d.umamiAuthFailed,
+          rawStats: d.stats, parsedKpi: d.kpi,
+          rawPages: d.pages, rawSources: d.sources, rawEvents: d.events,
+          seriesPoints: Array.isArray(d.series?.pageviews) ? d.series.pageviews.length : d.series,
+        },
+        resend: {
+          audienceEnId: env.RESEND_AUDIENCE_EN || null,
+          audienceDeId: env.RESEND_AUDIENCE_DE || null,
+          rawAudiences: d.audiences,
+          enSize: d.enSize, deSize: d.deSize, totalList: d.totalList, listNote: d.listNote,
+        },
+      };
+      return new Response(JSON.stringify(body, null, 2), {
+        headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
+      });
+    }
+
     // --- dashboard : gated by Access; re-check the identity header ---
     const who = request.headers.get('Cf-Access-Authenticated-User-Email') || '';
     const allow = (env.ALLOWED_EMAILS || '').split(',').map((s) => s.trim()).filter(Boolean);
@@ -144,18 +172,41 @@ async function gather(env, win) {
   const sizeOf = async (id) => {
     if (!id) return null;
     const r = await jget(`${RESEND_API}/audiences/${id}/contacts`, rHead);
-    return Array.isArray(r?.data) ? r.data.length : null;
+    return Array.isArray(r?.data) ? r.data.filter((c) => !c.unsubscribed).length : null;
   };
   const [enSize, deSize] = await Promise.all([sizeOf(env.RESEND_AUDIENCE_EN), sizeOf(env.RESEND_AUDIENCE_DE)]);
 
+  // Fallback: if RESEND_AUDIENCE_EN/DE aren't configured, sum every audience on the
+  // account so the north-star number is real instead of a silent 0.
+  let totalList = null, listNote = '';
+  if (enSize != null || deSize != null) {
+    totalList = (enSize || 0) + (deSize || 0);
+  } else if (Array.isArray(audiences?.data) && audiences.data.length) {
+    const sizes = await Promise.all(audiences.data.map((a) => sizeOf(a.id)));
+    const known = sizes.filter((n) => n != null);
+    if (known.length) {
+      totalList = known.reduce((a, b) => a + b, 0);
+      listNote = `summed ${known.length} audience(s) — set RESEND_AUDIENCE_EN/DE for the EN/DE split`;
+    }
+  } else {
+    listNote = 'no Resend audience configured (RESEND_AUDIENCE_EN / RESEND_AUDIENCE_DE are blank)';
+  }
+
   const evVal = (arr, name) => { const a = Array.isArray(arr) ? arr : []; const f = a.find((e) => e.x === name); return f ? f.y : 0; };
 
+  // Umami changed its /stats shape across versions: older returns {visitors:{value,prev}},
+  // newer returns a flat {visitors: 42}. Read both so KPIs never silently render "—".
+  const sv = (k) => { const v = stats?.[k]; if (v == null) return null; return typeof v === 'object' ? (v.value ?? null) : Number(v); };
+  const sp = (k) => { const v = stats?.[k]; return (v && typeof v === 'object') ? (v.prev ?? null) : null; };
+  const kpi = { visitors: sv('visitors'), pageviews: sv('pageviews'), visits: sv('visits'), bounces: sv('bounces') };
+  const prev = { visitors: sp('visitors'), pageviews: sp('pageviews'), visits: sp('visits'), bounces: sp('bounces') };
+
   return {
-    win, stats, pages, sources, events, series, broadcasts,
-    enSize, deSize,
-    totalList: (enSize || 0) + (deSize || 0),
+    win, stats, pages, sources, events, series, broadcasts, audiences,
+    enSize, deSize, totalList, listNote, kpi, prev,
     weeklySubs: evVal(events7, 'subscribe'),
     weeklyShares: evVal(events7, 'share'),
+    umamiAuthFailed: !token,
     subs: evVal(events, 'subscribe'),
     shares: evVal(events, 'share'),
     unlocks: evVal(events, 'report-unlock'),
@@ -181,7 +232,7 @@ function moveLine(d) {
   if (d.siteErr) return 'Connect Umami to unlock your weekly read (check the UMAMI_* values).';
   const topSource = (Array.isArray(d.sources) && d.sources[0]) ? d.sources[0].x : null;
   const topPage = (Array.isArray(d.pages) && d.pages[0]) ? d.pages[0].x : null;
-  const v = d.stats?.visitors?.value || 0;
+  const v = d.kpi?.visitors || 0;
   if (d.weeklySubs > 0) {
     let s = `List grew +${d.weeklySubs} this week.`;
     if (topSource) s += ` Top source: ${topSource}.`;
@@ -301,9 +352,9 @@ function renderPage(d, who) {
   </div>`;
 
   const funnel = d.siteErr ? '' : `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:14px;">
-    ${funnelCard('Visitors', `${num(s.visitors?.value)} ${deltaTag(s.visitors?.value, s.visitors?.prev)}`, esc(d.win.label))}
-    ${funnelCard('Subscribe rate', pct(d.subs, s.visitors?.value), `${num(d.subs)} subs ÷ visitors`)}
-    ${funnelCard('Share rate', pct(d.shares, s.visitors?.value), `${num(d.shares)} shares ÷ visitors`)}
+    ${funnelCard('Visitors', `${num(d.kpi.visitors)} ${deltaTag(d.kpi.visitors, d.prev.visitors)}`, esc(d.win.label))}
+    ${funnelCard('Subscribe rate', pct(d.subs, d.kpi.visitors), `${num(d.subs)} subs ÷ visitors`)}
+    ${funnelCard('Share rate', pct(d.shares, d.kpi.visitors), `${num(d.shares)} shares ÷ visitors`)}
   </div>`;
 
   return `<!doctype html><html lang="en"><head><meta charset="utf-8">
@@ -325,9 +376,9 @@ function renderPage(d, who) {
   <div style="font:700 10px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:${SUB};margin:24px 0 12px;">Site detail · Umami</div>
   ${d.siteErr ? `<div style="background:${PANEL};border:1px solid ${LINE};border-radius:13px;padding:16px 20px;color:${DOWN};font:500 13px sans-serif;">Umami unreachable (${esc(d.siteErr)}). Check UMAMI_USERNAME / UMAMI_PASSWORD / UMAMI_URL.</div>` : `
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:12px;">
-    ${rowStat('Pageviews', `${num(s.pageviews?.value)} ${deltaTag(s.pageviews?.value, s.pageviews?.prev)}`)}
-    ${rowStat('Visits', `${num(s.visits?.value)} ${deltaTag(s.visits?.value, s.visits?.prev)}`)}
-    ${rowStat('Bounces', `${num(s.bounces?.value)} ${deltaTag(s.bounces?.value, s.bounces?.prev)}`)}
+    ${rowStat('Pageviews', `${num(d.kpi.pageviews)} ${deltaTag(d.kpi.pageviews, d.prev.pageviews)}`)}
+    ${rowStat('Visits', `${num(d.kpi.visits)} ${deltaTag(d.kpi.visits, d.prev.visits)}`)}
+    ${rowStat('Bounces', `${num(d.kpi.bounces)} ${deltaTag(d.kpi.bounces, d.prev.bounces)}`)}
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
     ${propList('Top pages', d.pages, CHALK, 'No pageviews in this window yet.')}
@@ -364,8 +415,9 @@ function digestText(d) {
   lines.push('SQWOD.LIFE ANALYTICS — WEEKLY PULSE (last 7 days)');
   lines.push('');
   lines.push(`List (north star): ${num(d.totalList)}  (+${d.weeklySubs} this week)`);
+  if (d.listNote) lines.push(`  ⚠ list count: ${d.listNote}`);
   if (!d.siteErr) {
-    const v = d.stats?.visitors?.value;
+    const v = d.kpi?.visitors;
     lines.push(`Visitors: ${num(v)} · Subscribe rate: ${pct(d.subs, v)} · Shares: ${num(d.shares)}`);
     const topSource = (Array.isArray(d.sources) && d.sources[0]) ? `${d.sources[0].x} (${d.sources[0].y})` : '—';
     const topPage = (Array.isArray(d.pages) && d.pages[0]) ? `${d.pages[0].x} (${d.pages[0].y})` : '—';
