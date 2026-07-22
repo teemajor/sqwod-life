@@ -2,7 +2,6 @@
 import Base from '../../../layouts/Base.astro';
 import ScoreBadge from '../../../components/ScoreBadge.astro';
 import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
-import ProductViewer from '../../../components/ProductViewer.astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
@@ -84,8 +83,7 @@ const jsonLd = {
   <div class="review-layout" style="margin-top:18px">
     <!-- sticky rail: 3D + score + deal -->
     <aside class="review-aside">
-      <ProductViewer lang={lang} glyph={d.glyph} glb={d.asset.type==='glb' ? d.asset.glb : undefined} />
-      {d.asset.images.length > 0 && (
+      {d.asset.images.length > 0 ? (
         <div class="gallery">
           <div class="g-tabs"><span>{lang==='de'?'Fotos':'Photos'}</span></div>
           <div class="g-main"><img id="g-main" src={d.asset.images[0]} alt={d.productName} loading="lazy" /></div>
@@ -97,6 +95,16 @@ const jsonLd = {
             </div>
           )}
           <div class="g-credit">{d.asset.credit ?? (lang==='de'?'Produktfotos vom Händler · Anzeige/Affiliate':'Product photos via retailer · ad/affiliate')}</div>
+        </div>
+      ) : (
+        <div class="gallery">
+          <div class="g-main g-empty" role="img" aria-label={d.productName}>
+            <svg viewBox="0 0 100 100" aria-hidden="true" class="g-mark">
+              <path d="M50 4 C70 22 78 30 96 50 C78 70 70 78 50 96 C30 78 22 70 4 50 C22 30 30 22 50 4 Z" fill="none" stroke="var(--mark)" stroke-width="2.5" />
+            </svg>
+            <span class="g-empty-name">{d.productName}</span>
+          </div>
+          <div class="g-credit">{lang==='de'?'Produktfoto folgt':'Product photo coming soon'}</div>
         </div>
       )}
       <div class="scorebox" style="margin-top:12px">
@@ -150,6 +158,11 @@ const jsonLd = {
   .g-thumb img{width:100%;height:100%;object-fit:contain}
   .g-thumb:hover{border-color:var(--chalk)}
   .g-credit{font-size:10.5px;color:var(--g4);margin-top:8px;letter-spacing:.02em}
+  /* Empty state when a product has no photos yet (until the affiliate image
+     feed populates asset.images) — the brand diamond mark, not a broken box. */
+  .g-empty{flex-direction:column;gap:14px;border:1px dashed var(--line)}
+  .g-mark{width:44%;max-width:130px;opacity:.5}
+  .g-empty-name{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--g3)}
 </style>
 
 <script is:inline>
