@@ -156,9 +156,19 @@ async function gather(env, win) {
     catch (e) { return { __err: String(e) }; }
   };
 
+  // Umami renamed the page-path metric between versions ("url" → "path"); older
+  // builds 400 on one, newer on the other. Try both so Top pages never sits empty.
+  const topPages = async () => {
+    for (const t of ['path', 'url']) {
+      const r = await jget(`${uBase}/metrics?${qs}&type=${t}`, uHead);
+      if (Array.isArray(r)) return r;
+    }
+    return [];
+  };
+
   const [stats, pages, sources, events, series, events7] = await Promise.all([
     jget(`${uBase}/stats?${qs}`, uHead),
-    jget(`${uBase}/metrics?${qs}&type=url`, uHead),
+    topPages(),
     jget(`${uBase}/metrics?${qs}&type=referrer`, uHead),
     jget(`${uBase}/metrics?${qs}&type=event`, uHead),
     jget(`${uBase}/pageviews?${qs}&unit=${unit}&timezone=Europe/Berlin`, uHead),
@@ -197,7 +207,13 @@ async function gather(env, win) {
   // Umami changed its /stats shape across versions: older returns {visitors:{value,prev}},
   // newer returns a flat {visitors: 42}. Read both so KPIs never silently render "—".
   const sv = (k) => { const v = stats?.[k]; if (v == null) return null; return typeof v === 'object' ? (v.value ?? null) : Number(v); };
-  const sp = (k) => { const v = stats?.[k]; return (v && typeof v === 'object') ? (v.prev ?? null) : null; };
+  // Prior-period figures live at stats[k].prev on old Umami, stats.comparison[k] on new.
+  const sp = (k) => {
+    const v = stats?.[k];
+    if (v && typeof v === 'object' && v.prev != null) return v.prev;
+    const c = stats?.comparison?.[k];
+    return c == null ? null : Number(c);
+  };
   const kpi = { visitors: sv('visitors'), pageviews: sv('pageviews'), visits: sv('visits'), bounces: sv('bounces') };
   const prev = { visitors: sp('visitors'), pageviews: sp('pageviews'), visits: sp('visits'), bounces: sp('bounces') };
 
