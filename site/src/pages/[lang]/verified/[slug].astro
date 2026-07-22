@@ -4,10 +4,26 @@ import ScoreBadge from '../../../components/ScoreBadge.astro';
 import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
 import ProductViewer from '../../../components/ProductViewer.astro';
 import { getCollection } from 'astro:content';
+import { categories } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
 
 export async function getStaticPaths() {
   const reviews = await getCollection('reviews');
+  // Guard: every review page links its "best deal" button (and JSON-LD Offer.url)
+  // to /go/<urlSlug>, but that redirect stub is only built when the slug appears
+  // as a pick's reviewSlug in verified-categories.ts. A missing/typo'd wiring
+  // would ship a dead money link SILENTLY — so fail the build loudly instead.
+  const wired = new Set(
+    categories.flatMap((c) => c.picks.map((p) => p.reviewSlug).filter(Boolean)),
+  );
+  const unwired = [...new Set(reviews.map((r) => r.data.urlSlug))].filter((s) => !wired.has(s));
+  if (unwired.length) {
+    throw new Error(
+      `[verified] Review slug(s) with no /go/ target in src/config/verified-categories.ts: ` +
+        `${unwired.join(', ')}. Add a pick with reviewSlug (+ affiliate url) for each, ` +
+        `or the "Best deal" button on those review pages will 404.`,
+    );
+  }
   return reviews.map((r) => ({
     params: { lang: r.data.lang, slug: r.data.urlSlug },
     props: { entry: r },

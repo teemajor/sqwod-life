@@ -19,7 +19,10 @@ const d = entry.data;
 const { Content } = await entry.render();
 const pillar = pillarMeta[d.pillar as Pillar];
 const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
-const sharePath = `/${lang}/${sectionLabel.toLowerCase() === 'intelligence' ? 'intelligence' : 'articles'}/${d.urlSlug}`;
+// Derive the share URL from the entry's format (same rule as lib/related.ts) —
+// never from the display label: reports/indexes live under /intelligence,
+// everything else under /analysis. There is no /[lang]/articles/[slug] route.
+const sharePath = `/${lang}/${d.format === 'report' || d.format === 'index' ? 'intelligence' : 'analysis'}/${d.urlSlug}`;
 const locked = d.gated;
 const U = lang === 'de'
   ? { head: 'Vollständigen Report freischalten', body: 'Kostenlos. Trag deine E-Mail ein — du liest sofort weiter und bekommst den Daily.', ph: 'E-Mail-Adresse', cta: 'Freischalten', fine: 'Sqwod Daily, werktäglich. Jederzeit abbestellbar.' }

@@ -7,7 +7,9 @@ export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
-const status = Astro.url.searchParams.get('status'); // ok | error (set by the Worker redirect)
+// NOTE: this page is prerendered — query params like ?status= (set by the Worker
+// redirect) do NOT exist at build time. Both banners are rendered hidden and
+// toggled client-side by the inline script below.
 const c = lang === 'de' ? {
   title: 'Werde schärfer — in 5 Minuten am Tag',
   blurb: 'Sqwod Daily: das Business von Fitness und Wellness, werktäglich aufbereitet — Geldbewegungen, die Lektion hinter den News, ein To-do, etwas Unterhaltung. Kostenlos.',
@@ -34,8 +36,8 @@ const c = lang === 'de' ? {
       <ul class="perks">{c.perks.map((p) => <li>{p}</li>)}</ul>
     </div>
     <div class="sh-form">
-      {status === 'ok' && <div class="banner ok">{c.ok}</div>}
-      {status === 'error' && <div class="banner err">{c.err}</div>}
+      <div class="banner ok" id="banner-ok" hidden role="status">{c.ok}</div>
+      <div class="banner err" id="banner-err" hidden role="alert">{c.err}</div>
       <form class="bform" method="post" action={SUBSCRIBE.endpoint || '#'}>
         <input type="hidden" name="lang" value={lang} />
         <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
@@ -48,11 +50,20 @@ const c = lang === 'de' ? {
   </div>
 
   <script is:inline>
-    // Prefill the email from the ?email= handed off by the homepage quick-capture forms.
+    // Prefill the email from the ?email= handed off by the homepage quick-capture
+    // forms, and show the success/error banner from the Worker's ?status= redirect.
+    // (Must run client-side: the page is prerendered, so build-time code never
+    // sees query params.)
     (function () {
       try {
-        var e = new URLSearchParams(location.search).get('email');
+        var q = new URLSearchParams(location.search);
+        var e = q.get('email');
         if (e) { var i = document.querySelector('.bform input[name="email"]'); if (i) i.value = e; }
+        var s = q.get('status');
+        var el = s === 'ok' ? document.getElementById('banner-ok')
+               : s === 'error' ? document.getElementById('banner-err')
+               : null;
+        if (el) el.hidden = false;
       } catch (_) {}
     })();
   </script>
