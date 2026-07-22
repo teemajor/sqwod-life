@@ -8,10 +8,17 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check",
+    "check:links": "node scripts/check-links.mjs",
+    "verify": "astro check && astro build && npm run check:links"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.2.1",
     "astro": "^4.15.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "^5.6.3"
   }
 }

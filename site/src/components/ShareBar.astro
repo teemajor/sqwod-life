@@ -48,7 +48,7 @@ const nets = [
       const done = copyBtn.getAttribute('data-copied'); const idle = copyBtn.getAttribute('data-copy');
       copyBtn.textContent = done; setTimeout(() => { copyBtn.textContent = idle; }, 1600);
     });
-    const nativeBtn = bar.querySelector('.sh-native');
+    const nativeBtn = bar.querySelector<HTMLElement>('.sh-native');
     if (nativeBtn && navigator.share) {
       nativeBtn.hidden = false;
       nativeBtn.addEventListener('click', () => navigator.share({ title, url }).catch(() => {}));

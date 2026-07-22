@@ -21,13 +21,17 @@ const otherPath = altPath ?? path.replace(`/${lang}`, `/${other}`);
 const canonical = new URL(path, Astro.site).toString();
 const ogImage = new URL(image, Astro.site).toString();
 const ogLocale = lang === 'de' ? 'de_DE' : 'en_US';
+// Impact.com site verification uses a `value` attribute (not the standard
+// `content`); spread it through a loose record so `astro check` accepts the
+// non-standard attribute without altering the rendered output.
+const impactVerify: Record<string, string> = { value: '7dbbad87-cd73-480d-971c-71433cf944e6' };
 ---
 <!doctype html>
 <html lang={lang}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="impact-site-verification" value="7dbbad87-cd73-480d-971c-71433cf944e6" />
+  <meta name="impact-site-verification" {...impactVerify} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>{title}</title>
   {description && <meta name="description" content={description} />}

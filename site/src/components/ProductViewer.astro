@@ -1,6 +1,6 @@
 ---
 import { t, type Lang } from '../i18n/ui';
-interface Props { lang: Lang; glb?: string; glyph?: 'ring' | 'watch' | 'band' | 'tracker' }
+interface Props { lang: Lang; glb?: string; glyph?: 'ring' | 'watch' | 'band' | 'tracker' | 'massager' | 'bed' | 'supplement' }
 const { lang, glb, glyph = 'ring' } = Astro.props;
 ---
 <div class="viewer" id="viewer" data-glb={glb ?? ''} data-glyph={glyph}>

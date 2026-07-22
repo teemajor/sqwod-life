@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install
+        run: npm install
+        working-directory: site
+      - name: Type-check
+        run: npm run check
+        working-directory: site
+      - name: Build
+        run: npm run build
+        working-directory: site
+      - name: Link check
+        run: npm run check:links
+        working-directory: site
