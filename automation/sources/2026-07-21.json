@@ -1,0 +1,170 @@
+[
+  {
+    "id": "news-2026-07-21-1",
+    "entity": "DSSV",
+    "topic": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "DSSV (Mon, 22 Jun 2026 12:03:51 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026"
+      },
+      {
+        "label": "Outlet",
+        "value": "DSSV"
+      }
+    ],
+    "en": {
+      "headline": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/eckdaten-dach-webinar-2026/"
+    },
+    "de": {
+      "headline": "Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/eckdaten-dach-webinar-2026/"
+    }
+  },
+  {
+    "id": "news-2026-07-21-2",
+    "entity": "body LIFE",
+    "topic": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar",
+    "pillar": "build",
+    "conversion": "pods",
+    "provenance": "body LIFE (Thu, 02 Jul 2026 14:17:34 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar"
+      },
+      {
+        "label": "Outlet",
+        "value": "body LIFE"
+      }
+    ],
+    "en": {
+      "headline": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar",
+      "dek": "Via body LIFE.",
+      "readMore": "https://www.bodylife.com/myline-b2b-webinare/"
+    },
+    "de": {
+      "headline": "Geschützt: TOP Expertise für dein Studio – live im exklusiven Webinar",
+      "dek": "Via body LIFE.",
+      "readMore": "https://www.bodylife.com/myline-b2b-webinare/"
+    }
+  },
+  {
+    "id": "news-2026-07-21-3",
+    "entity": "t3.com",
+    "topic": "Garmin updates its newest Forerunner watches with 18 fixes for Garmin Coach, music and more",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "t3.com (Wed, 15 Jul 2026 08:59:49 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Garmin updates its newest Forerunner watches with 18 fixes for Garmin Coach, music and more"
+      },
+      {
+        "label": "Outlet",
+        "value": "t3.com"
+      }
+    ],
+    "en": {
+      "headline": "Garmin updates its newest Forerunner watches with 18 fixes for Garmin Coach, music and more",
+      "dek": "Via t3.com.",
+      "readMore": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5XVjJGT1ZPeDRUSHpqSnc0eDhuQUF3UHVuZlN6amgxcGk4M3dTdE1kMU1DdlJnVXZrTWNBZ1gyc1RmLUx1dmthZDFfUFR5S0xfNTlZbFBFUHRweVZuM3pMTzZhaHVQcnBpOEtCTHM3NVQzSlBiOVp3QUFpd3o?oc=5"
+    },
+    "de": {
+      "headline": "Garmin updates its newest Forerunner watches with 18 fixes for Garmin Coach, music and more",
+      "dek": "Via t3.com.",
+      "readMore": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5XVjJGT1ZPeDRUSHpqSnc0eDhuQUF3UHVuZlN6amgxcGk4M3dTdE1kMU1DdlJnVXZrTWNBZ1gyc1RmLUx1dmthZDFfUFR5S0xfNTlZbFBFUHRweVZuM3pMTzZhaHVQcnBpOEtCTHM3NVQzSlBiOVp3QUFpd3o?oc=5"
+    }
+  },
+  {
+    "id": "news-2026-07-21-4",
+    "entity": "Trainingsworld",
+    "topic": "Movement is Therapy – Wolfgang Unsöld",
+    "pillar": "move",
+    "conversion": "products",
+    "provenance": "Trainingsworld (Tue, 27 Jan 2026 16:31:27 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Movement is Therapy – Wolfgang Unsöld"
+      },
+      {
+        "label": "Outlet",
+        "value": "Trainingsworld"
+      }
+    ],
+    "en": {
+      "headline": "Movement is Therapy – Wolfgang Unsöld",
+      "dek": "Via Trainingsworld.",
+      "readMore": "https://www.trainingsworld.com/movement-is-therapy-wolfgang-unsoeld/"
+    },
+    "de": {
+      "headline": "Movement is Therapy – Wolfgang Unsöld",
+      "dek": "Via Trainingsworld.",
+      "readMore": "https://www.trainingsworld.com/movement-is-therapy-wolfgang-unsoeld/"
+    }
+  },
+  {
+    "id": "news-2026-07-21-5",
+    "entity": "Athletech News",
+    "topic": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements",
+    "pillar": "build",
+    "conversion": "pods",
+    "provenance": "Athletech News (Thu, 16 Jul 2026 17:52:13 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements"
+      },
+      {
+        "label": "Outlet",
+        "value": "Athletech News"
+      }
+    ],
+    "en": {
+      "headline": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/pvolve-reaches-40-open-studios-signs-new-franchise-agreements/"
+    },
+    "de": {
+      "headline": "Pvolve Reaches 40 Open Studios, Signs New Franchise Agreements",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/pvolve-reaches-40-open-studios-signs-new-franchise-agreements/"
+    }
+  },
+  {
+    "id": "news-2026-07-21-6",
+    "entity": "Notebookcheck",
+    "topic": "Garmin CIRQA to launch at a significantly lower price than expected, according to Garmin’s official database",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "Notebookcheck (Sun, 19 Jul 2026 11:50:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Garmin CIRQA to launch at a significantly lower price than expected, according to Garmin’s official database"
+      },
+      {
+        "label": "Outlet",
+        "value": "Notebookcheck"
+      }
+    ],
+    "en": {
+      "headline": "Garmin CIRQA to launch at a significantly lower price than expected, according to Garmin’s official database",
+      "dek": "Via Notebookcheck.",
+      "readMore": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbzBPeGhOeGYxSXNUOExJa2lvcFpUNk9mQ2RZXzBwelFNUlRnVG9UbG5aQk5NbkpkTWR0NVVKU21uTXVVNTE5TWhBQkZPb29FRHdfQWo1RWs0bC1iVzBpZDJVTGtnMjliT3lsZU5leDNleW9JRnpneDRpM29TbVZsZ2dRNDlpR0dxTkFIYXZ2LWktUjY4LUdCdHFEZzd6Vnd6QU9xX2xLSTV5cGZ0dDEtLTh4MG13Y1RjMHFYak5pUkwwcGNCbVNIOVB5T2ZoTEdqeG04ZjRBelpqcTh5QTcxVGMzN1JjLVU?oc=5"
+    },
+    "de": {
+      "headline": "Garmin CIRQA to launch at a significantly lower price than expected, according to Garmin’s official database",
+      "dek": "Via Notebookcheck.",
+      "readMore": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPbzBPeGhOeGYxSXNUOExJa2lvcFpUNk9mQ2RZXzBwelFNUlRnVG9UbG5aQk5NbkpkTWR0NVVKU21uTXVVNTE5TWhBQkZPb29FRHdfQWo1RWs0bC1iVzBpZDJVTGtnMjliT3lsZU5leDNleW9JRnpneDRpM29TbVZsZ2dRNDlpR0dxTkFIYXZ2LWktUjY4LUdCdHFEZzd6Vnd6QU9xX2xLSTV5cGZ0dDEtLTh4MG13Y1RjMHFYak5pUkwwcGNCbVNIOVB5T2ZoTEdqeG04ZjRBelpqcTh5QTcxVGMzN1JjLVU?oc=5"
+    }
+  }
+]
