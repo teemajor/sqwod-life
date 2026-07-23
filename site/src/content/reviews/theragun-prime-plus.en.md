@@ -52,6 +52,11 @@ whoFor:
   buy: "You're a coach or serious trainee who wants pro-grade percussion + heat in one tool."
   skip: "You only need occasional light massage — a budget gun will do."
 tags: ["recovery", "massage", "therabody"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61Q-z803lOL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 ---
 
 The Prime Plus is the value sweet spot of Therabody's range: a 16mm amplitude, 40-pound stall-force motor that actually reaches deep tissue, plus integrated heat that warms muscle fast — in a sub-2-pound body with a triangular grip you can hold for a full session. Reviewers consistently call it the smartest buy in the lineup.

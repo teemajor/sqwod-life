@@ -53,6 +53,11 @@ whoFor:
   buy: "Du willst einen günstigen, genauen Alltags-Tracker für dich oder Kund:innen."
   skip: "Du brauchst Profi-GPS oder lehnst ein Abo für volle Features ab."
 tags: ["wearables", "tracker", "fitbit"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61YXNim+iQL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 ---
 
 Die Charge 6 ist der Preis-Leistungs-Tipp unter den Alltags-Trackern: genaue Herzfrequenz- und Gesundheitssensoren, EKG, integriertes GPS und — neu in dieser Generation — Google Maps und Wallet am Handgelenk, für rund 130 €. Mehrere 2026er-Vergleiche küren sie zum besten Gesamt-Tracker.

@@ -52,6 +52,11 @@ whoFor:
   buy: "You coach runners or endurance clients and want Garmin's training data without the €500 tier."
   skip: "You need offline maps, multiband GPS, or a premium metal build."
 tags: ["wearables", "running", "garmin"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/612tehwGyoL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 ---
 
 The Forerunner 165 is the value sweet spot of Garmin's lineup: a bright AMOLED face, around 11 days of battery, and the training-load, recovery and VO2 metrics that actually inform programming — at roughly half the price of the 265/965.

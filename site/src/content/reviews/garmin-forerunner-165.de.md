@@ -52,6 +52,11 @@ whoFor:
   buy: "Du coachst Läufer:innen oder Ausdauer-Kund:innen und willst Garmins Trainingsdaten ohne 500-Euro-Stufe."
   skip: "Du brauchst Offline-Karten, Multiband-GPS oder ein Premium-Metallgehäuse."
 tags: ["wearables", "running", "garmin"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/612tehwGyoL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 ---
 
 Die Forerunner 165 ist der Preis-Leistungs-Sweetspot bei Garmin: helles AMOLED-Display, rund 11 Tage Akku und die Trainingslast-, Erholungs- und VO2-Werte, die das Programmieren wirklich steuern — zum halben Preis der 265/965.

@@ -52,6 +52,11 @@ whoFor:
   buy: "Du bist Coach oder ambitioniert und willst Profi-Percussion + Wärme in einem Gerät."
   skip: "Du brauchst nur gelegentlich leichte Massage — eine Budget-Gun reicht."
 tags: ["recovery", "massage", "therabody"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61Q-z803lOL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 ---
 
 Die Prime Plus ist der Preis-Leistungs-Sweetspot bei Therabody: ein Motor mit 16 mm Amplitude und 40 lb Stall Force, der tiefes Gewebe wirklich erreicht, plus integrierte Wärme, die Muskeln schnell aufwärmt — in einem Gehäuse unter 900 g mit Dreiecksgriff, den man eine ganze Session hält. Tester nennen sie durchweg den klügsten Kauf der Reihe.

@@ -1,0 +1,47 @@
+{
+  "_doc": "Image registry for automation/assets.mjs (Sqwod Verified product photos, EN+DE parity). TWO ways to fill each product: (1) MANUAL now \u2014 paste image URLs into `images` grabbed via Amazon SiteStripe (no API access needed); or (2) AUTO later \u2014 set `asin` and, once you have PA-API keys, the script pulls images from the Amazon Product Advertising API. Manual `images` always win when present. DTC products with no Amazon listing (e.g. Whoop, Eight Sleep): leave both empty \u2192 they keep the branded diamond placeholder. Editorial fields/scores are never touched.",
+  "marketplace": "www.amazon.de",
+  "maxImages": 5,
+  "products": {
+    "oura-ring-gen3": {
+      "asin": "",
+      "images": []
+    },
+    "whoop-4": {
+      "asin": "",
+      "images": []
+    },
+    "apple-watch-9": {
+      "asin": "B0CXF7ZMN9",
+      "images": [
+        "https://m.media-amazon.com/images/I/71HMrrqcbOL._AC_SL1500_.jpg"
+      ]
+    },
+    "garmin-forerunner-165": {
+      "asin": "B0CT3SGHXL",
+      "images": [
+        "https://m.media-amazon.com/images/I/612tehwGyoL._AC_SL1500_.jpg"
+      ]
+    },
+    "fitbit-charge-6": {
+      "asin": "B0CHN3W617",
+      "images": [
+        "https://m.media-amazon.com/images/I/61YXNim+iQL._AC_SL1500_.jpg"
+      ]
+    },
+    "theragun-prime-plus": {
+      "asin": "B0DDYWM7PV",
+      "images": [
+        "https://m.media-amazon.com/images/I/61Q-z803lOL._AC_SL1500_.jpg"
+      ]
+    },
+    "eight-sleep-pod-4": {
+      "asin": "",
+      "images": []
+    },
+    "momentous": {
+      "asin": "",
+      "images": []
+    }
+  }
+}

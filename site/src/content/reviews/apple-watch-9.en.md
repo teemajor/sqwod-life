@@ -52,6 +52,11 @@ whoFor:
   buy: "You want one device for training, daily life, and health basics."
   skip: "You want multi-day battery or specialist recovery depth."
 tags: ["wearables", "smartwatch", "fitness"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71HMrrqcbOL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 ---
 
 The Series 9 is the safe, do-everything pick: excellent workout tracking, ECG, notifications, and the deepest app ecosystem — with no subscription. For most readers it's the path of least regret.

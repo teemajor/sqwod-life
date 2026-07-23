@@ -52,6 +52,11 @@ whoFor:
   buy: "Du willst ein Gerät für Training, Alltag und Gesundheits-Basics."
   skip: "Du willst mehrtägigen Akku oder spezialisierte Recovery-Tiefe."
 tags: ["wearables", "smartwatch", "fitness"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71HMrrqcbOL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 ---
 
 Die Series 9 ist die sichere Alles-Könner-Wahl: exzellentes Workout-Tracking, EKG, Benachrichtigungen und das tiefste App-Ökosystem — ohne Abo. Für die meisten der Weg des geringsten Bedauerns.

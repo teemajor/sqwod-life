@@ -53,6 +53,11 @@ whoFor:
   buy: "You want an affordable, accurate everyday tracker for yourself or clients."
   skip: "You need pro-grade GPS or refuse a subscription for full features."
 tags: ["wearables", "tracker", "fitbit"]
+asset:
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61YXNim+iQL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 ---
 
 The Charge 6 is the everyday-tracker value pick: accurate heart-rate and health sensors, ECG, built-in GPS and — new for this generation — Google Maps and Wallet on the wrist, for around €130. Multiple 2026 round-ups name it the best overall tracker.
