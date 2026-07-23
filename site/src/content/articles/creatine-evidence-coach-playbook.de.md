@@ -43,7 +43,7 @@ playbook:
   - { move: "Empfiehl es weiblichen Kunden aktiv.", why: "Frauen haben 70–80% niedrigere Ausgangsspeicher und werden von der mythenlastigen Debatte schlechter versorgt. Die Evidenz stützt Kraftnutzen, und die Forschungslage zu Frauen wächst schnell (Smith-Ryan 2021)." }
   - { move: "Sei bei der GLP-1-Frage voraus.", why: "Kunden mit Abnehmspritzen verlieren neben Fett auch Muskeln. Mehrere Studien untersuchen aktuell Kreatin + Krafttraining zum Muskelerhalt während einer GLP-1-Therapie. Noch nicht bewiesen — aber du willst der Coach sein, der die Frage kommen sah." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "5 g"
   statLabel: "per day — the whole protocol"
 tags: ["creatine", "supplements", "method", "evidence", "coaching"]

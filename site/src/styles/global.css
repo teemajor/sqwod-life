@@ -344,6 +344,20 @@ body{background:radial-gradient(120% 80% at 50% -8%, #17171c 0%, #0b0b0d 58%) fi
 .ah-orbit .o3{inset:46px;border-bottom-color:#fafafa;animation:spin 3s linear infinite}
 .ah-orbit .od{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
 .ah-orbit .od b{width:14px;height:14px;border:2px solid #fafafa;transform:rotate(45deg);border-radius:3px;animation:pulse 3s ease-in-out infinite}
+/* viz: lattice (Sqwod Evidence — a compound coming to life; monochrome, brightness carries the accent) */
+.ah-lattice{width:300px;max-width:70%;display:flex;align-items:center;justify-content:center}
+.ah-lattice svg{width:100%;height:auto;display:block;overflow:visible}
+.ah-lattice .bond{stroke:#FAFAFA;stroke-width:1.6;opacity:.22;fill:none}
+.ah-lattice .current{stroke:#FFFFFF;stroke-width:2.4;fill:none;stroke-linecap:round;stroke-dasharray:16 154;filter:drop-shadow(0 0 6px rgba(255,255,255,.7));animation:ltflow 3.6s linear infinite}
+.ah-lattice .node{fill:#FAFAFA;transform-box:fill-box;transform-origin:center;opacity:.68;animation:ltpulse 3.4s ease-in-out infinite}
+.ah-lattice .n1{animation-delay:0s}.ah-lattice .n2{animation-delay:.34s}.ah-lattice .n3{animation-delay:.68s}
+.ah-lattice .n4{animation-delay:1.02s}.ah-lattice .n5{animation-delay:1.36s}.ah-lattice .n6{animation-delay:1.7s}
+.ah-lattice .hot{fill:#FFFFFF;transform-box:fill-box;transform-origin:center;filter:drop-shadow(0 0 10px rgba(255,255,255,.85));animation:lthot 3.4s ease-in-out infinite}
+.ah-lattice .ping{fill:none;stroke:#FFFFFF;stroke-width:1.4;transform-box:fill-box;transform-origin:center;animation:ltping 3.4s ease-out infinite}
+@keyframes ltflow{to{stroke-dashoffset:-340}}
+@keyframes ltpulse{0%,100%{transform:scale(1);opacity:.6}50%{transform:scale(1.26);opacity:.95}}
+@keyframes lthot{0%,100%{transform:scale(1)}50%{transform:scale(1.24)}}
+@keyframes ltping{0%{transform:scale(.6);opacity:.55}70%,100%{transform:scale(2.6);opacity:0}}
 /* scrim keeps the stat legible over the moving viz */
 .arthero{isolation:isolate}
 .arthero .ah-viz{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}

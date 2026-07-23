@@ -44,7 +44,7 @@ playbook:
   - { move: "Empfiehl es nicht mehr gegen gewöhnliche nächtliche Krämpfe.", why: "Der Cochrane-Review ist eindeutig: Bei den häufigen idiopathischen/nächtlichen Wadenkrämpfen Erwachsener wirkt Magnesium nicht besser als Placebo (Garrison 2020). Hier zu empfehlen kostet dich still Glaubwürdigkeit. Schwangerschaftskrämpfe sind ein anderer, ungeklärter Fall — und gehören ohnehin zum Arzt." }
   - { move: "Wenn supplementiert wird, lenke zu Citrat oder Glycinat statt Oxid.", why: "Organische Formen werden besser aufgenommen als billiges Magnesiumoxid (Kappeler 2017; Pardo 2021), und Glycinat ist meist magenschonender. Gleiche elementare Dosis, mehr kommt an. Ein einfacher Formwechsel ist der wertvollste Tipp." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "31%"
   statLabel: "erreichen die empfohlene Magnesiumzufuhr nicht"
 verdict:

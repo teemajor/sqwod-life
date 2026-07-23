@@ -43,7 +43,7 @@ playbook:
   - { move: "Kombiniere Zone 2 mit einer wöchentlichen höherintensiven Einheit für zeitknappe Kunden.", why: "Bei geringem Umfang treiben höhere Intensitäten mehr Anpassung pro Stunde (Storoschuk 2025; Mølmen 2024). Ein polarisiertes 80/20-Muster — überwiegend locker, ein wenig hart — gibt einen kleinen aeroben Leistungsvorteil und passt besser in eine volle Woche als tempolose Junk-Kilometer." }
   - { move: "Entkräfte den Mythos 'Fettverbrennungszone = Fettabbau' sofort.", why: "Einen höheren Fettanteil während einer langsamen Einheit zu verbrennen, heißt nicht, mehr Körperfett zu verlieren; das entscheidet die Gesamtenergiebilanz — und Intervalle oxidieren ohnehin etwas mehr Fett (Atakan 2022). Verweise Kunden auf Konsistenz und Kalorien und nutze Zone 2 für aerobe Basis und Erholung." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "80/20"
   statLabel: "überwiegend locker, ein wenig hart — die Ratio, die hält"
 tags: ["zone-2", "cardio", "conditioning", "method", "evidence", "coaching"]

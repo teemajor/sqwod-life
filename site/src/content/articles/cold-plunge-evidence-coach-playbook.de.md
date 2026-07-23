@@ -47,7 +47,7 @@ playbook:
   - { move: "Verkauf es nicht als Abnehm-Tool — und erkläre warum.", why: "Kälte aktiviert braunes Fettgewebe, aber ein Review über 47 Studien fand, dass die veränderte Energieverbrennung nicht zu relevantem Gewichtsverlust führte (Pérez 2022). Der Coach, der einen einfachen Verkauf ablehnt, gewinnt das Vertrauen für die nächste Empfehlung." }
   - { move: "Bei Herz-Kreislauf-Erkrankungen, Medikamenten, Schwangerschaft oder unklarem Gesundheitszustand: an eine Ärztin oder einen Arzt verweisen, bevor überhaupt gebadet wird.", why: "Kaltwasserimmersion ist bei einer Reihe von Erkrankungen kontraindiziert, und Screening schließt das Risiko nicht aus — es gibt Todesfälle unter fitten, medizinisch freigegebenen Sportlern (Massey 2025). Diese Einschätzung liegt außerhalb deines Aufgabenbereichs als Coach." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "10–15 Min"
   statLabel: "bei 11–15 °C — die Dosis, die die Daten stützen"
 verdict:

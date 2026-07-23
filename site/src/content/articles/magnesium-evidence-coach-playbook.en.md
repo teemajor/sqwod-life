@@ -44,7 +44,7 @@ playbook:
   - { move: "Stop recommending it for ordinary nighttime cramps.", why: "The Cochrane review is clear: for the common idiopathic/nocturnal leg cramps in adults, magnesium performs no better than placebo (Garrison 2020). Recommending it here quietly costs you credibility. Pregnancy-related cramps are a separate, unsettled case — and belong with their doctor anyway." }
   - { move: "When a client does supplement, steer them to citrate or glycinate, not oxide.", why: "Organic forms are better absorbed than cheap magnesium oxide (Kappeler 2017; Pardo 2021), and glycinate tends to be gentler on the gut. Same elemental dose, more of it actually lands. A simple form swap is the highest-value tip you can give." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "31%"
   statLabel: "of people fall short on magnesium"
 verdict:

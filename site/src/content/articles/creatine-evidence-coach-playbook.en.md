@@ -43,7 +43,7 @@ playbook:
   - { move: "Actively coach female clients toward it.", why: "Women carry 70–80% lower baseline creatine stores and are under-served by the myth-heavy discourse. Evidence supports strength benefits, and the research base for women is expanding fast (Smith-Ryan 2021)." }
   - { move: "Get ahead of the GLP-1 question now.", why: "Clients on weight-loss drugs are losing muscle alongside fat. Multiple trials are testing creatine + resistance training to protect lean mass during GLP-1 use. It's not proven yet — but you want to be the coach who knew the question was coming." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "5 g"
   statLabel: "per day — the whole protocol"
 tags: ["creatine", "supplements", "method", "evidence", "coaching"]

@@ -46,7 +46,7 @@ playbook:
   - { move: "Ease first-timers in over several sessions, and never let a client plunge alone.", why: "The cold shock response — gasp, hyperventilation, spiked heart rate — is the actual danger, and it habituates after about four exposures with heart rate dropping 14 bpm (Barwood 2023). Progressive exposure is a safety protocol, not a soft option." }
   - { move: "Refuse to sell it as a fat-loss tool, and say why.", why: "Cold activates brown fat, but a review of 47 trials found those energy-expenditure changes did not produce meaningful weight loss (Pérez 2022). Being the coach who declines an easy sell is how you earn the trust that makes the next recommendation land." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "10–15 min"
   statLabel: "at 11–15°C — the dose the data supports"
 verdict:

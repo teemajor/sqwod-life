@@ -43,7 +43,7 @@ playbook:
   - { move: "Pair Zone 2 with one weekly higher-intensity session for time-crunched clients.", why: "When volume is low, higher intensities drive more adaptation per hour (Storoschuk 2025; Mølmen 2024). A polarized 80/20 shape — mostly easy, a little hard — gives a small aerobic-power edge and fits a busy client's week better than junk-tempo miles." }
   - { move: "Kill the 'fat-burning zone = fat loss' myth on the spot.", why: "Burning a higher share of fat during a slow session doesn't mean losing more body fat; total energy balance decides that, and intervals slightly out-oxidise steady-state anyway (Atakan 2022). Point clients to consistency and calories, and keep Zone 2 for aerobic base and recovery." }
 hero:
-  kind: bars
+  kind: lattice
   stat: "80/20"
   statLabel: "mostly easy, a little hard — the ratio that holds up"
 tags: ["zone-2", "cardio", "conditioning", "method", "evidence", "coaching"]

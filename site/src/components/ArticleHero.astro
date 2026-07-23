@@ -24,6 +24,25 @@ const { kind = 'line', art, tag, stat, statLabel } = Astro.props;
     {kind === 'orbit' && (
       <div class="ah-orbit"><span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="od"><b></b></span></div>
     )}
+    {kind === 'lattice' && (
+      <div class="ah-lattice">
+        <svg viewBox="0 0 300 150" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <path class="bond" d="M172 75 L150 113 L106 113 L84 75 L106 37 L150 37 Z"/>
+          <line class="bond" x1="172" y1="75" x2="216" y2="75"/>
+          <line class="bond" x1="84" y1="75" x2="46" y2="75"/>
+          <path class="current" d="M172 75 L150 113 L106 113 L84 75 L106 37 L150 37 Z"/>
+          <circle class="node n1" cx="172" cy="75" r="5"/>
+          <circle class="node n2" cx="150" cy="113" r="5"/>
+          <circle class="node n3" cx="106" cy="113" r="5"/>
+          <circle class="node n4" cx="84" cy="75" r="5"/>
+          <circle class="node n5" cx="106" cy="37" r="5"/>
+          <circle class="node n6" cx="150" cy="37" r="5"/>
+          <circle class="node n2" cx="46" cy="75" r="4.5"/>
+          <circle class="ping" cx="216" cy="75" r="6"/>
+          <circle class="hot" cx="216" cy="75" r="6"/>
+        </svg>
+      </div>
+    )}
   </div>
 
   <div class="scrim"></div>
