@@ -7,7 +7,8 @@ import { categories } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
 
 export async function getStaticPaths() {
-  const reviews = await getCollection('reviews');
+  // Drafts (current-gen pages awaiting a real Sqwod Score) never build or publish.
+  const reviews = (await getCollection('reviews')).filter((r) => !r.data.draft);
   // Guard: every review page links its "best deal" button (and JSON-LD Offer.url)
   // to /go/<urlSlug>, but that redirect stub is only built when the slug appears
   // as a pick's reviewSlug in verified-categories.ts. A missing/typo'd wiring

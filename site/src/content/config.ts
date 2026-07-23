@@ -26,6 +26,7 @@ const reviews = defineCollection({
     updatedAt: z.coerce.date(),
     author: z.string().default('Sqwod Verified'),
     affiliate: z.boolean().default(true),
+    draft: z.boolean().default(false), // unpublished — excluded from pages, /go, and related links until a real Sqwod Score is set
     verdict: z.string(),
 
     // --- The Sqwod Score ---

@@ -11,7 +11,7 @@ export async function getRelated(lang: Lang, entry: CollectionEntry<'articles'>,
   if (tags.size === 0) return [];
 
   const arts = await getCollection('articles', (a) => a.data.lang === lang && a.data.urlSlug !== entry.data.urlSlug);
-  const reviews = await getCollection('reviews', (r) => r.data.lang === lang);
+  const reviews = await getCollection('reviews', (r) => r.data.lang === lang && !r.data.draft);
 
   const cand = [
     ...arts.map((a) => ({
