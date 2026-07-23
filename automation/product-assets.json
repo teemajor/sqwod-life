@@ -1,5 +1,5 @@
 {
-  "_doc": "Image registry for automation/assets.mjs (Sqwod Verified product photos, EN+DE parity). TWO ways to fill each product: (1) MANUAL now \u2014 paste image URLs into `images` grabbed via Amazon SiteStripe (no API access needed); or (2) AUTO later \u2014 set `asin` and, once you have PA-API keys, the script pulls images from the Amazon Product Advertising API. Manual `images` always win when present. DTC products with no Amazon listing (e.g. Whoop, Eight Sleep): leave both empty \u2192 they keep the branded diamond placeholder. Editorial fields/scores are never touched.",
+  "_doc": "Image registry for automation/assets.mjs (Sqwod Verified product photos, EN+DE parity). LINK/IMAGE INTEGRITY: only wire an ASIN that is (1) the NEW product (never a Renewed/Refurbished ASIN) and (2) sold by Amazon or the brand (not a 3rd-party marketplace reseller) — verify 'Sold by' + condition on the live listing before adding. Amazon's buy-box rotates, so re-verify periodically. TWO ways to fill each product: (1) MANUAL now — paste image URLs grabbed via Amazon SiteStripe; or (2) AUTO later — set `asin` and, with PA-API keys, the script pulls images. Manual `images` always win. DTC products with no clean Amazon listing (Whoop, Eight Sleep, Gymshark, Ten Thousand, Alo, Seed, Ritual, Momentous): leave empty → branded diamond placeholder. Editorial fields/scores are never touched.",
   "marketplace": "www.amazon.de",
   "maxImages": 5,
   "products": {
@@ -12,9 +12,16 @@
       "images": []
     },
     "apple-watch-9": {
-      "asin": "B0CXF7ZMN9",
+      "_note": "Series 9 discontinued; amazon.de buy-box was REFURBISHED/3rd-party (rejected). Deal link now points to the new Series 11 (see verified-categories.ts). Image below is a clean Apple render kept for the historical review.",
+      "asin": "",
       "images": [
         "https://m.media-amazon.com/images/I/71HMrrqcbOL._AC_SL1500_.jpg"
+      ]
+    },
+    "apple-watch-11": {
+      "asin": "B0FQFLMHSX",
+      "images": [
+        "https://m.media-amazon.com/images/I/71JPViO29PL._AC_SL1500_.jpg"
       ]
     },
     "garmin-forerunner-165": {
@@ -35,11 +42,45 @@
         "https://m.media-amazon.com/images/I/61Q-z803lOL._AC_SL1500_.jpg"
       ]
     },
+    "hyperice-hypervolt-2": {
+      "_note": "Verified 2026-07-23: NEW, sold by Hyperice on amazon.de. Deal on publish: amazon.de/dp/B0CVSD725F?tag=sqwod-21",
+      "asin": "B0CVSD725F",
+      "images": [
+        "https://m.media-amazon.com/images/I/516xEeWhqbL._AC_SL1500_.jpg"
+      ]
+    },
+    "muse-s-athena": {
+      "_note": "Verified 2026-07-23: NEW, sold by Amazon UK on amazon.de (~493 EUR); Muse EU store is cheaper (~450 EUR). Amazon deal: amazon.de/dp/B0F4F15WDD?tag=sqwod-21",
+      "asin": "B0F4F15WDD",
+      "images": [
+        "https://m.media-amazon.com/images/I/71-bOSH61sL._AC_SL1500_.jpg"
+      ]
+    },
     "eight-sleep-pod-4": {
       "asin": "",
       "images": []
     },
     "momentous": {
+      "asin": "",
+      "images": []
+    },
+    "gymshark-vital-seamless": {
+      "asin": "",
+      "images": []
+    },
+    "ten-thousand-interval-short": {
+      "asin": "",
+      "images": []
+    },
+    "alo-airlift-legging": {
+      "asin": "",
+      "images": []
+    },
+    "seed-ds-01": {
+      "asin": "",
+      "images": []
+    },
+    "ritual-essential-women": {
       "asin": "",
       "images": []
     }

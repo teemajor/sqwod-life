@@ -3,6 +3,15 @@
 // from the reviews collection) OR an editorial pick (named leader, NO fake score).
 // `affiliate: true` = we have / will have a partner program (link labeled + rel=sponsored);
 // `affiliate: false` = listed on merit only, plainly linked, clearly "not affiliated".
+//
+// LINK-INTEGRITY POLICY (2026-07-23) — every Amazon `url` MUST be verified before wiring:
+//   1. CONDITION = NEW. Never a "Renewed"/"Refurbished"/"Generalüberholt" ASIN.
+//   2. SELLER = Amazon or the brand's own store — NOT a 3rd-party marketplace reseller.
+//      (Amazon's buy-box rotates, so re-verify periodically; a plain /dp/<ASIN> can flip to a reseller.)
+//   3. PRICE is never hardcoded into the CTA button (see verified/[slug].astro) — it went stale and
+//      contradicted the live listing. Price shown on-site is the researched RRP in the value section, dated.
+//   4. If no clean NEW + first-party offer exists (e.g. discontinued models), link the brand's own page
+//      or the current-gen new listing — never a refurbished/reseller unit.
 import type { Lang } from '../i18n/ui';
 
 export interface Pick {
@@ -38,7 +47,10 @@ export const categories: Category[] = [
         bestFor: { en: 'Sleep & recovery', de: 'Schlaf & Erholung' }, why: { en: 'The most wearable recovery tracker — sleep and readiness without a screen on your wrist.', de: 'Der alltagstauglichste Recovery-Tracker — Schlaf und Readiness ohne Display am Handgelenk.' } },
       { product: 'Whoop 4.0', brand: 'Whoop', url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-4',
         bestFor: { en: 'Strain & performance', de: 'Belastung & Leistung' }, why: { en: 'The coach\'s strain-and-recovery band — screenless, built to program by readiness.', de: 'Das Belastungs- und Recovery-Band für Coaches — ohne Display, fürs Programmieren nach Readiness.' } },
-      { product: 'Apple Watch Series 9', brand: 'Apple', url: 'https://www.amazon.de/dp/B0CXF7ZMN9?tag=sqwod-21', affiliate: true, reviewSlug: 'apple-watch-9',
+      // NOTE (2026-07-23): Series 9 is discontinued — its only amazon.de buy-box was a REFURBISHED unit from a 3rd-party
+      // reseller (CarbonPhone / Amazon Renewed), which violates our "link the brand, not a reseller / new only" rule.
+      // Deal now points to the current, NEW, Apple-sold model (Series 11, ASIN B0FQFLMHSX, verified sold-by Apple 2026-07-23).
+      { product: 'Apple Watch Series 9', brand: 'Apple', url: 'https://www.amazon.de/dp/B0FQFLMHSX?tag=sqwod-21', affiliate: true, reviewSlug: 'apple-watch-9',
         bestFor: { en: 'Everyday smartwatch', de: 'Alltags-Smartwatch' }, why: { en: 'The best all-round smartwatch if your clients live in the Apple ecosystem.', de: 'Die beste Allround-Smartwatch, wenn deine Kund:innen im Apple-Ökosystem leben.' } },
       { product: 'Garmin Forerunner 165', brand: 'Garmin', url: 'https://www.amazon.de/dp/B0CT3SGHXL?tag=sqwod-21', affiliate: true, reviewSlug: 'garmin-forerunner-165',
         bestFor: { en: 'Runners, best value', de: 'Läufer:innen, Preis-Leistung' }, why: { en: 'Garmin\'s full training metrics at an entry price — the value pick for endurance.', de: 'Garmins volle Trainings-Metriken zum Einstiegspreis — der Preis-Leistungs-Tipp für Ausdauer.' } },

@@ -62,3 +62,5 @@ asset:
 Die Series 9 ist die sichere Alles-Könner-Wahl: exzellentes Workout-Tracking, EKG, Benachrichtigungen und das tiefste App-Ökosystem — ohne Abo. Für die meisten der Weg des geringsten Bedauerns.
 
 Boden verliert sie nur dort, wo die Spezialisten gewinnen: Akkulaufzeit und Recovery-Tiefe — deshalb liegt die Coach-Eignung hinter den dedizierten Recovery-Geräten.
+
+_Hinweis: Apple hat die Series 9 eingestellt. Das aktuelle Modell ist die Apple Watch Series 11 — und weil neue Series-9-Ware inzwischen knapp ist (und oft generalüberholt von Drittanbietern verkauft wird), verweist unser Deal-Button auf das aktuelle, neue, von Apple verkaufte Modell._

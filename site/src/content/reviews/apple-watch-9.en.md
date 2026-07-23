@@ -62,3 +62,5 @@ asset:
 The Series 9 is the safe, do-everything pick: excellent workout tracking, ECG, notifications, and the deepest app ecosystem — with no subscription. For most readers it's the path of least regret.
 
 It loses ground only where the specialists win: battery life and the depth of recovery analytics, which is why Coach fit trails the dedicated recovery devices.
+
+_Note: Apple has discontinued the Series 9. The current model is the Apple Watch Series 11 — and because new Series 9 stock is now limited (and often sold refurbished by third parties), our deal button points to the current, new, Apple-sold Apple Watch._

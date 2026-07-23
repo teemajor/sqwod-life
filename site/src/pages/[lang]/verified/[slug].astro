@@ -113,8 +113,8 @@ const jsonLd = {
         <div class="scoreLabel">Sqwod Score</div>
         <span class="conf">{t(lang,'verified.confidence')}: {d.confidence}</span>
         <div class="meta">{lang==='de'?'aus':'from'} <b>{d.crowd.reviews.toLocaleString()}+</b> {t(lang,'verified.reviews')} · <b>{d.crowd.platforms}</b> {t(lang,'verified.platforms')} · {t(lang,'verified.updated')} <b>{updated}</b></div>
-        <a class="deal" href={`/go/${d.urlSlug}`} rel="sponsored nofollow">{t(lang,'verified.bestDeal')} · €{d.value.bestPrice} →</a>
-        <div class="dealnote">Anzeige / Affiliate · {lang==='de'?'Preis Stand':'price as of'} {updated}</div>
+        <a class="deal" href={`/go/${d.urlSlug}`} rel="sponsored nofollow">{t(lang,'verified.bestDeal')} →</a>
+        <div class="dealnote">Anzeige / Affiliate · {lang==='de'?'Live-Preis beim Händler':'live price shown at the retailer'}</div>
       </div>
     </aside>
 

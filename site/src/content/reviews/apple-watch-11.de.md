@@ -55,8 +55,11 @@ whoFor:
   buy: "Du steigst von einer Series 6 oder älter um und willst die beste Allround-Apple-Watch — echte Akkulaufzeit, helleres Display und die neuen Gesundheits-Warnungen, ohne Abo."
   skip: "Du hast schon eine Series 9 oder 10 — watchOS 26 liefert dir die meisten Software-Neuerungen gratis, der Umstieg lohnt kaum."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71JPViO29PL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
+amazonAsin: B0FQFLMHSX
 tags: ["wearables", "smartwatch", "apple-watch"]
 ---
 

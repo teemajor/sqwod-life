@@ -55,8 +55,11 @@ whoFor:
   buy: "You're upgrading from a Series 6 or older and want the best all-round Apple Watch — real battery life, brighter screen, and the new health alerts, with no subscription."
   skip: "You already own a Series 9 or 10 — watchOS 26 gives you most of the software wins for free, so the upgrade case is thin."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71JPViO29PL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
+amazonAsin: B0FQFLMHSX
 tags: ["wearables", "smartwatch", "apple-watch"]
 ---
 
