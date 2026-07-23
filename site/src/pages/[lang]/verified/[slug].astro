@@ -39,7 +39,6 @@ const updated = d.updatedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB'
 // across Amazon, app stores, Trustpilot, …) powers AggregateRating; the Sqwod
 // Score is our own editorial Review. dateModified tracks updatedAt so the daily
 // crowd refresh (automation/verified.mjs) signals freshness to search engines.
-const site = Astro.site?.toString().replace(/\/$/, '') ?? '';
 const iso = (x: Date) => x.toISOString().slice(0, 10);
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -65,13 +64,9 @@ const jsonLd = {
     publisher: { '@type': 'Organization', name: 'sqwod.life' },
     reviewRating: { '@type': 'Rating', ratingValue: d.sqwodScore, bestRating: 100, worstRating: 0 },
   },
-  offers: {
-    '@type': 'Offer',
-    price: d.value.bestPrice,
-    priceCurrency: d.value.currency,
-    availability: 'https://schema.org/InStock',
-    url: `${site}/go/${d.urlSlug}`,
-  },
+  // NOTE: no `offers`/price in structured data — we have no live pricing (PA-API pending),
+  // so asserting a price to Google would drift from the live listing. Product + AggregateRating
+  // + Review still power the review-star rich result. Restore an Offer only with a live price feed.
 };
 ---
 <Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified" ogType="article" image={d.asset.images[0] ?? '/podcast-cover.png'}>
@@ -152,16 +147,18 @@ const jsonLd = {
   @media(min-width:900px){ .who{display:grid;grid-template-columns:1fr 1fr;gap:16px} }
   .gallery{margin-top:12px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--panel)}
   .g-tabs{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);margin:0 0 8px 2px}
-  .g-main{background:var(--bg);border-radius:10px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+  /* product photos sit on a clean white card (on-brand high-contrast B&W) — Amazon shots are on white,
+     so this reads as an intentional premium card instead of a stray white block on the dark theme. */
+  .g-main{background:#fff;border-radius:10px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:14px;box-sizing:border-box}
   .g-main img{width:100%;height:100%;object-fit:contain}
   .g-thumbs{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
-  .g-thumb{width:54px;height:54px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--bg);cursor:pointer;padding:0}
+  .g-thumb{width:54px;height:54px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;cursor:pointer;padding:4px;box-sizing:border-box}
   .g-thumb img{width:100%;height:100%;object-fit:contain}
   .g-thumb:hover{border-color:var(--chalk)}
   .g-credit{font-size:10.5px;color:var(--g4);margin-top:8px;letter-spacing:.02em}
   /* Empty state when a product has no photos yet (until the affiliate image
      feed populates asset.images) — the brand diamond mark, not a broken box. */
-  .g-empty{flex-direction:column;gap:14px;border:1px dashed var(--line)}
+  .g-empty{background:var(--panel);padding:0;flex-direction:column;gap:14px;border:1px dashed var(--line)}
   .g-mark{width:44%;max-width:130px;opacity:.5}
   .g-empty-name{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--g3)}
 </style>
