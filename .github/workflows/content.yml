@@ -47,7 +47,7 @@ jobs:
           # Only stage paths that actually exist — a missing optional folder
           # (e.g. automation/moves before any move is submitted) must never
           # fail the whole Daily with a git pathspec error (exit 128).
-          for p in site/src/content automation/sources automation/moves site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets site/public/daily-en.xml site/public/daily-de.xml; do
+          for p in site/src/content automation/sources automation/covered-ledger.json automation/moves site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets site/public/daily-en.xml site/public/daily-de.xml; do
             [ -e "$p" ] && git add "$p"
           done
           if git diff --staged --quiet; then
