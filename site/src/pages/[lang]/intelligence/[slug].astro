@@ -43,6 +43,6 @@ const jsonLd = {
 };
 ---
 <Base lang={lang} title={`${d.title} — Sqwod Intelligence`} description={d.description} active="intelligence" ogType="article" image="/podcast-cover.png">
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel="Sqwod Intelligence" related={await getRelated(lang, entry)} /></div>
 </Base>

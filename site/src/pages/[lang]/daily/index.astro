@@ -19,7 +19,7 @@ const hasAudio = (slug: string) => audioFiles.has(`${slug}-${lang}.mp3`);
 const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published'))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latest = issues[0];
-const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
 const epLine = (iss: typeof issues[number]) => iss.data.summary || iss.data.items.map((i) => i.headline).join(' · ');
 const blurb = lang === 'de'
   ? 'Dein 5-Minuten-Audio-Rundown der Wellness-Branche — jeden Werktag, auf EN & DE.'

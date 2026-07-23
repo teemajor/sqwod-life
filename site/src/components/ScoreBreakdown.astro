@@ -48,7 +48,7 @@ const note = lang === 'de'
       <p class="ctitle">{t(lang,'verified.value')}</p>
       <div class="src" style="margin-bottom:6px">
         <span class="chip">{lang==='de'?'Bester':'Best'} <b>{value.currency==='EUR'?'€':''}{value.bestPrice}</b></span>
-        {value.low && <span class="chip">90-day low <b>€{value.low}</b></span>}
+        {value.low && <span class="chip">{lang==='de'?'90-Tage-Tief':'90-day low'} <b>{value.currency==='EUR'?'€':''}{value.low}</b></span>}
         {value.subscription && <span class="chip">{lang==='de'?'Abo':'Sub'} <b>{value.subscription}</b></span>}
       </div>
       <div class="spark">

@@ -18,7 +18,7 @@ const latestHref = latest ? `/${lang}/daily/${latest.data.urlSlug}` : `/${lang}/
 const latestAudio = latest ? episodeAudio(latest.data.urlSlug, lang) : null;
 const hasLatestAudio = !!(latestAudio && existsSync(new URL(`../../../public${latestAudio}`, import.meta.url)));
 const hasEpAudio = (slug: string) => existsSync(new URL(`../../../public${episodeAudio(slug, lang)}`, import.meta.url));
-const fmtDate = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+const fmtDate = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
 // Only surface platforms that have a real URL (drops dead "#" links until configured).
 const platforms = [
   { name: 'Apple Podcasts', url: APPLE_URL }, { name: 'Spotify', url: SPOTIFY_URL },

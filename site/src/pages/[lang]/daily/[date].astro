@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const lang = Astro.params.lang as Lang;
 const d = entry.data;
-const fmt = d.date.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric' });
+const fmt = d.date.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: '2-digit', month: 'long', year: 'numeric', timeZone: 'UTC' });
 
 // Show the player only if the episode's audio actually exists in the build.
 const audioPath = episodeAudio(d.urlSlug, lang);
@@ -72,7 +72,7 @@ const jsonLd: Record<string, unknown> = {
 if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl: new URL(audioPath, Astro.site).toString(), encodingFormat: 'audio/mpeg' };
 ---
 <Base lang={lang} title={metaTitle} description={metaDesc} ogType="article" image="/podcast-cover.png">
-  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <div class="crumb"><a href={`/${lang}/daily`}>← Sqwod Daily</a></div>
   <h1 style="margin:0 0 6px">Sqwod Daily</h1>
   <p class="sub" style="margin:0 0 16px">{fmt} · {d.edition}</p>
@@ -147,7 +147,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
           <li>
             <b>{r.label}:</b>{' '}
             {r.url
-              ? <a href={r.affiliate && !r.url.startsWith('http') ? r.url : r.url} rel={r.affiliate ? 'sponsored nofollow' : undefined}>{r.text}</a>
+              ? <a href={r.url} rel={r.affiliate ? 'sponsored nofollow' : undefined}>{r.text}</a>
               : r.text}
             {r.affiliate && <span class="recad">· {tx.ad}</span>}
           </li>

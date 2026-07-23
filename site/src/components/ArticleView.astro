@@ -396,7 +396,7 @@ const shareCfg = {
   }
 </script>
 
-<script define:vars={{ yoyLabel: lang === 'de' ? 'ggü. Vorjahr' : 'YoY' }}>
+<script define:vars={{ yoyLabel: lang === 'de' ? 'ggü. Vorjahr' : 'YoY', nowLabel: lang === 'de' ? 'jetzt' : 'now' }}>
   // Chart tooltips: year · value · YoY, shown on hover/focus of each bar.
   (function () {
     const tip = document.getElementById('chartTip');
@@ -406,7 +406,7 @@ const shareCfg = {
         const yr = g.getAttribute('data-year'), val = g.getAttribute('data-val');
         const unit = g.getAttribute('data-unit'), yoy = g.getAttribute('data-yoy');
         const now = g.getAttribute('data-now');
-        let html = `<b>${val}</b>${unit ? ' ' + unit : ''}${yr ? ` · ${yr}` : ''}${now ? ' · ' + 'now' : ''}`;
+        let html = `<b>${val}</b>${unit ? ' ' + unit : ''}${yr ? ` · ${yr}` : ''}${now ? ' · ' + nowLabel : ''}`;
         if (yoy !== '' && yoy !== null) {
           const up = parseFloat(yoy) >= 0;
           html += `<br><span class="${up ? 'yoy-up' : 'yoy-dn'}">${up ? '▲' : '▼'} ${Math.abs(parseFloat(yoy))}% ${yoyLabel}</span>`;

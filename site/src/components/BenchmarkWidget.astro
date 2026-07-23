@@ -97,7 +97,7 @@ const data = { min, max, median: b.median ?? null, betterIsHigh: b.betterIsHigh 
         const diff = Math.round((raw - median) * 10) / 10;
         const good = betterIsHigh ? diff >= 0 : diff <= 0;
         const dir = diff >= 0 ? L.above : L.below;
-        html += ` ${Math.abs(diff)} ${L.pts} <span class="${good ? 'up' : 'dn'}">${dir}</span> the ${median}${unit} ${L.avg}.`;
+        html += ` ${Math.abs(diff)} ${L.pts} <span class="${good ? 'up' : 'dn'}">${dir}</span> ${median}${unit} ${L.avg}.`;
       }
       res.innerHTML = html; res.hidden = false;
     };
