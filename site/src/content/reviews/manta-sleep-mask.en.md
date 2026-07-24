@@ -53,8 +53,10 @@ whoFor:
   buy: "You coach recovery/sleep-focused clients who need total darkness (shift workers, nappers, light-sensitive sleepers) and will pay for a durable, adjustable mask."
   skip: "You want an ultra-thin, packable minimalist mask and don’t need lab-grade blackout."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/91j-EDBgLGL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["sleep", "sleep-mask", "recovery"]
 ---
 

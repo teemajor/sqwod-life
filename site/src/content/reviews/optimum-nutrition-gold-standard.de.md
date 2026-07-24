@@ -53,8 +53,10 @@ whoFor:
   buy: "Du willst ein bewährtes, laborgetestetes Allround-Whey mit verlässlichem Geschmack und guter Löslichkeit."
   skip: "Du jagst den niedrigsten kg-Preis oder brauchst ein reines, hochprozentiges Isolat — dann schau dich woanders um."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71gR9O4i6cL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["supplements", "whey", "protein"]
 ---
 

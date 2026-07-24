@@ -52,8 +52,10 @@ whoFor:
   buy: "You (or your clients) want a clean, doping-safe, well-priced creatine — the one foundational supplement worth recommending to almost everyone."
   skip: "You specifically require the branded Creapure raw material, or already dose 3–5 g creatine from another source."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61P66-IzK0L._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["supplements", "creatine", "protein"]
 ---
 

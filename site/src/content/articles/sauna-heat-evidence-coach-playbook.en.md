@@ -14,13 +14,13 @@ asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Laukkanen J.A. et al. 2018 — Cardiovascular & other health benefits of sauna bathing, review (Mayo Clinic Proceedings)", url: "https://consensus.app/papers/details/28c15f9184165bf79462d7d1cc428171/" }
-  - { label: "Laukkanen T. et al. 2015 — Sauna bathing & fatal cardiovascular and all-cause mortality, cohort (JAMA Internal Medicine)", url: "https://consensus.app/papers/details/2702c96f2ef852f09a2dc757829edd3e/" }
-  - { label: "Laukkanen T. et al. 2018 — Sauna & CVD mortality in men and women, cohort (BMC Medicine)", url: "https://consensus.app/papers/details/3f7ef4322493520884c24a3960d2ed94/" }
-  - { label: "Kunutsor et al. 2018 — Sauna bathing & cardiorespiratory fitness, joint mortality cohort (Annals of Medicine)", url: "https://consensus.app/papers/details/69c00a86b643549d9933869a202f8927/" }
-  - { label: "Debray et al. 2023 — Finnish sauna & vascular health in coronary artery disease, RCT (J Applied Physiology)", url: "https://consensus.app/papers/details/3f7138d893315352b1d70b5ba28b26c5/" }
+  - { label: "Laukkanen J.A. et al. 2018 — Cardiovascular & other health benefits of sauna bathing, review (Mayo Clinic Proceedings) · PMID 30077204", url: "https://consensus.app/papers/details/28c15f9184165bf79462d7d1cc428171/" }
+  - { label: "Laukkanen T. et al. 2015 — Sauna bathing & fatal cardiovascular and all-cause mortality, cohort (JAMA Internal Medicine) · PMID 25705824", url: "https://consensus.app/papers/details/2702c96f2ef852f09a2dc757829edd3e/" }
+  - { label: "Laukkanen T. et al. 2018 — Sauna & CVD mortality in men and women, cohort (BMC Medicine) · PMID 30486813", url: "https://consensus.app/papers/details/3f7ef4322493520884c24a3960d2ed94/" }
+  - { label: "Kunutsor et al. 2018 — Sauna bathing & cardiorespiratory fitness, joint mortality cohort (Annals of Medicine) · PMID 28972808", url: "https://consensus.app/papers/details/69c00a86b643549d9933869a202f8927/" }
+  - { label: "Debray et al. 2023 — Finnish sauna & vascular health in coronary artery disease, RCT (J Applied Physiology) · PMID 37650138", url: "https://consensus.app/papers/details/3f7138d893315352b1d70b5ba28b26c5/" }
   - { label: "Baranowska et al. 2026 — Sauna bathing, health outcomes & post-exercise recovery, narrative review (Int J Innov Tech Soc Sci)", url: "https://consensus.app/papers/details/c01223bcb26e576a94ef1e13d0d6002f/" }
-  - { label: "Kunutsor et al. 2023 — Sauna bathing combined with other lifestyle factors, review (Mayo Clinic Proceedings)", url: "https://consensus.app/papers/details/ec34bd87cd7459388f8477b6329c34e0/" }
+  - { label: "Kunutsor et al. 2023 — Sauna bathing combined with other lifestyle factors, review (Mayo Clinic Proceedings) · PMID 37270272", url: "https://consensus.app/papers/details/ec34bd87cd7459388f8477b6329c34e0/" }
   - { label: "ClinicalTrials.gov — sauna & whole-body hyperthermia, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=sauna&aggFilters=status:not%20rec" }
 takeaways:
   - "The headline number is real but observational: Finnish men who used a sauna 4–7×/week had a 63% lower rate of sudden cardiac death than once-a-week users (HR 0.37) over 20 years (Laukkanen 2015). Striking — but an association, not proof."

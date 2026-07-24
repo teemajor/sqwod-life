@@ -53,8 +53,10 @@ whoFor:
   buy: "Du willst eine leichte, genaue und ausdauernde Lauf-/Triathlon-Uhr mit echten Trainingsfunktionen zum kleinen Preis."
   skip: "Du willst eine Lifestyle-Smartwatch mit hellem Touchscreen, Offline-Karten oder App-Store."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61HE8zhwT7L._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["wearables", "running", "coros"]
 ---
 

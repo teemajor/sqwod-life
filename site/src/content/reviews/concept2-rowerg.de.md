@@ -53,8 +53,10 @@ whoFor:
   buy: "Kauf es, wenn du ein Rudergerät in Lebensdauer-Qualität mit felsenfesten, präzisen Daten willst, vom Einsteiger bis zum ambitionierten Ruderer oder CrossFit-Sportler."
   skip: "Überspring es, wenn du eine flüsterleise Maschine, einen immersiven Touchscreen mit geführten Kursen oder eine kompakte Stellfläche brauchst; schau dir dann eher Magnet- oder Wasserrudergeräte an."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/41kmOFvpQoS._AC_SL1000_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["rowing", "cardio", "equipment"]
 ---
 

@@ -14,14 +14,14 @@ asOf: 2026-07-13
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Mølmen et al. 2024 — Meta-Regression Mitochondrien & Kapillaren (Sports Medicine)", url: "https://consensus.app/papers/details/180c17490f715a468b6571ff9f13668b/" }
-  - { label: "Storoschuk et al. 2025 — 'Much Ado About Zone 2', Narrative Review (Sports Medicine)", url: "https://consensus.app/papers/details/512cb51f011b5c3bb03ae5afb79e9f59/" }
-  - { label: "Sitko et al. 2025 — Zone-2-Expertenkonsens zur Definition (Int J Sports Physiol Perform)", url: "https://consensus.app/papers/details/0edfec61339852f6bda00838615d49e6/" }
-  - { label: "Meixner et al. 2025 — Variabilität der Zone-2-Intensitätsmarker (Translational Sports Medicine)", url: "https://consensus.app/papers/details/ea8497c1a27156f38d9ef380706b641b/" }
-  - { label: "Silva Oliveira et al. 2024 — Polarisiert vs. andere TID, Meta-Analyse (Sports Medicine)", url: "https://consensus.app/papers/details/9521d72e38fc5933a5c1081d92cb7334/" }
-  - { label: "Atakan et al. 2022 — HIIT/SIT vs. MICT, Fettoxidation, Meta-Analyse (Br J Sports Med)", url: "https://consensus.app/papers/details/a77c1a634dc251c99398070b9718e4a7/" }
-  - { label: "Devries 2016 — Geschlechtsunterschiede im Substratstoffwechsel (Exp Physiol)", url: "https://consensus.app/papers/details/2903afc2dc7c52b5b6c66ecc172d35a8/" }
-  - { label: "Vabishchevich et al. 2026 — MICT und mitochondriale Anpassung, Meta-Analyse (PLOS One)", url: "https://consensus.app/papers/details/b863412cd31a5cf88fb6725a92733cbf/" }
+  - { label: "Mølmen et al. 2024 — Meta-Regression Mitochondrien & Kapillaren (Sports Medicine) · PMID 39390310", url: "https://consensus.app/papers/details/180c17490f715a468b6571ff9f13668b/" }
+  - { label: "Storoschuk et al. 2025 — 'Much Ado About Zone 2', Narrative Review (Sports Medicine) · PMID 40560504", url: "https://consensus.app/papers/details/512cb51f011b5c3bb03ae5afb79e9f59/" }
+  - { label: "Sitko et al. 2025 — Zone-2-Expertenkonsens zur Definition (Int J Sports Physiol Perform) · PMID 40010355", url: "https://consensus.app/papers/details/0edfec61339852f6bda00838615d49e6/" }
+  - { label: "Meixner et al. 2025 — Variabilität der Zone-2-Intensitätsmarker (Translational Sports Medicine) · PMID 40225831", url: "https://consensus.app/papers/details/ea8497c1a27156f38d9ef380706b641b/" }
+  - { label: "Silva Oliveira et al. 2024 — Polarisiert vs. andere TID, Meta-Analyse (Sports Medicine) · PMID 38717713", url: "https://consensus.app/papers/details/9521d72e38fc5933a5c1081d92cb7334/" }
+  - { label: "Atakan et al. 2022 — HIIT/SIT vs. MICT, Fettoxidation, Meta-Analyse (Br J Sports Med) · PMID 35859145", url: "https://consensus.app/papers/details/a77c1a634dc251c99398070b9718e4a7/" }
+  - { label: "Devries 2016 — Geschlechtsunterschiede im Substratstoffwechsel (Exp Physiol) · PMID 26459076", url: "https://consensus.app/papers/details/2903afc2dc7c52b5b6c66ecc172d35a8/" }
+  - { label: "Vabishchevich et al. 2026 — MICT und mitochondriale Anpassung, Meta-Analyse (PLOS One) · PMID 41481647", url: "https://consensus.app/papers/details/b863412cd31a5cf88fb6725a92733cbf/" }
   - { label: "ClinicalTrials.gov — zone 2 exercise training, rekrutierend + geplant", url: "https://clinicaltrials.gov/search?intr=zone%202%20exercise%20training&aggFilters=status:not%20rec" }
   - { label: "ClinicalTrials.gov — NCT07104539, Krafttraining bei GLP-1-Anwendern", url: "https://clinicaltrials.gov/study/NCT07104539" }
 takeaways:

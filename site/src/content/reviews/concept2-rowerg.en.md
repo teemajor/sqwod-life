@@ -53,8 +53,10 @@ whoFor:
   buy: "Buy if you want a lifetime-quality rower with rock-solid, accurate data, from first-timers to competitive rowers and CrossFit athletes."
   skip: "Skip it if you need a whisper-quiet machine, an immersive touchscreen with guided classes, or a compact footprint; look at magnetic or water rowers instead."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/41kmOFvpQoS._AC_SL1000_.jpg"
+  credit: "Product images via Amazon"
 tags: ["rowing", "cardio", "equipment"]
 ---
 

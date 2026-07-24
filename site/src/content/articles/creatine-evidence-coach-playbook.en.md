@@ -14,15 +14,15 @@ asOf: 2026-07-06
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Wang et al. 2024 — Strength meta-analysis (Nutrients)", url: "https://consensus.app/papers/details/6ff33354c09057cbafded17affbd503b/" }
-  - { label: "Desai et al. 2025 — Lean body mass RCT (Nutrients)", url: "https://consensus.app/papers/details/ead5333d14dc5ce096b20a7c56161c3e/" }
-  - { label: "Xu et al. 2024 — Cognition meta-analysis (Frontiers in Nutrition)", url: "https://consensus.app/papers/details/54813b2512da51388b5b582d3efdfa9d/" }
-  - { label: "Prokopidis et al. 2022 — Memory meta-analysis (Nutrition Reviews)", url: "https://consensus.app/papers/details/97bcbf6508b156eeb1bf044ef9511995/" }
-  - { label: "Smith-Ryan et al. 2021 — Creatine in women's health (Nutrients)", url: "https://consensus.app/papers/details/f77816eefe0e5585af43261750c0f28e/" }
+  - { label: "Wang et al. 2024 — Strength meta-analysis (Nutrients) · PMID 39519498", url: "https://consensus.app/papers/details/6ff33354c09057cbafded17affbd503b/" }
+  - { label: "Desai et al. 2025 — Lean body mass RCT (Nutrients) · PMID 40292479", url: "https://consensus.app/papers/details/ead5333d14dc5ce096b20a7c56161c3e/" }
+  - { label: "Xu et al. 2024 — Cognition meta-analysis (Frontiers in Nutrition) · PMID 39070254", url: "https://consensus.app/papers/details/54813b2512da51388b5b582d3efdfa9d/" }
+  - { label: "Prokopidis et al. 2022 — Memory meta-analysis (Nutrition Reviews) · PMID 35984306", url: "https://consensus.app/papers/details/97bcbf6508b156eeb1bf044ef9511995/" }
+  - { label: "Smith-Ryan et al. 2021 — Creatine in women's health (Nutrients) · PMID 33800439", url: "https://consensus.app/papers/details/f77816eefe0e5585af43261750c0f28e/" }
   - { label: "Candow et al. 2024 — Dosing review (Advanced Exercise & Health Science)", url: "https://consensus.app/papers/details/a21e5a65b6c05da79a9eca58809239aa/" }
-  - { label: "Longobardi et al. 2023 — Kidney narrative review (Nutrients)", url: "https://consensus.app/papers/details/6f38e20fc9ee54d3ba94805144fa2bb9/" }
-  - { label: "Lak et al. 2025 — Creatine & hair loss RCT (JISSN)", url: "https://consensus.app/papers/details/f1512181e38958baa713a6587cda267e/" }
-  - { label: "van der Merwe et al. 2009 — DHT in rugby players (Clin J Sport Med)", url: "https://consensus.app/papers/details/acb9f7b24a5155349bcf9e0a1d666868/" }
+  - { label: "Longobardi et al. 2023 — Kidney narrative review (Nutrients) · PMID 36986197", url: "https://consensus.app/papers/details/6f38e20fc9ee54d3ba94805144fa2bb9/" }
+  - { label: "Lak et al. 2025 — Creatine & hair loss RCT (JISSN) · PMID 40265319", url: "https://consensus.app/papers/details/f1512181e38958baa713a6587cda267e/" }
+  - { label: "van der Merwe et al. 2009 — DHT in rugby players (Clin J Sport Med) · PMID 19741313", url: "https://consensus.app/papers/details/acb9f7b24a5155349bcf9e0a1d666868/" }
   - { label: "ClinicalTrials.gov — creatine monohydrate, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=creatine%20monohydrate&aggFilters=status:not%20rec" }
 takeaways:
   - "For strength, the evidence is strong: creatine + resistance training adds meaningfully more upper- and lower-body strength than training alone (Wang 2024 meta-analysis, 23 studies)."

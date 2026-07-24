@@ -14,14 +14,14 @@ asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Zhang et al. 2025 — Global magnesium deficiency review (Int J Vitam Nutr Res)", url: "https://consensus.app/papers/details/06621026bcc75b378ba87cbf367a737e/" }
+  - { label: "Zhang et al. 2025 — Global magnesium deficiency review (Int J Vitam Nutr Res) · PMID 41504160", url: "https://consensus.app/papers/details/06621026bcc75b378ba87cbf367a737e/" }
   - { label: "Mah et al. 2021 — Magnesium for insomnia in older adults, meta-analysis (BMC Complement Med Ther) · PMID 33865376", url: "https://consensus.app/papers/details/02d708b5303158ea8215b133d8b7c6d0/" }
   - { label: "Arab et al. 2022 — Magnesium & sleep, systematic review (Biol Trace Elem Res) · PMID 35184264", url: "https://consensus.app/papers/details/b83fb763517a5064a1e332400a79ff3b/" }
   - { label: "Breus et al. 2024 — Magnesium, sleep & mood crossover pilot RCT (Medical Research Archives)", url: "https://consensus.app/papers/details/1e75a347306f5bdabe6882413f152711/" }
   - { label: "Garrison et al. 2020 — Magnesium for skeletal muscle cramps, Cochrane review · PMID 32956536", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
   - { label: "Kappeler et al. 2017 — Citrate vs oxide bioavailability RCT (BMC Nutrition)", url: "https://consensus.app/papers/details/bd1a83bd8d3f5169806497f75061880f/" }
   - { label: "Pardo et al. 2021 — Bioavailability of magnesium supplements, systematic review (Nutrition) · PMID 34111673", url: "https://consensus.app/papers/details/e22c76a6ced1508c8715f5533a4e02d3/" }
-  - { label: "Veronese et al. 2014 — Magnesium & physical performance in older women RCT (Am J Clin Nutr)", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
+  - { label: "Veronese et al. 2014 — Magnesium & physical performance in older women RCT (Am J Clin Nutr) · PMID 25008857", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
   - { label: "Zhang et al. 2017 — Magnesium & exercise performance review (Nutrients) · PMID 28846654", url: "https://consensus.app/papers/details/2bdd50197d2d5c1f8611cd3b219ce4d4/" }
   - { label: "Boyle et al. 2017 — Magnesium, anxiety & stress systematic review (Nutrients) · PMID 28445426", url: "https://consensus.app/papers/details/9e0febbbba955a81a827619e2c0cf81e/" }
   - { label: "ClinicalTrials.gov — magnesium, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }

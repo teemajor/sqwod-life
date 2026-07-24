@@ -85,10 +85,76 @@
       "asin": "",
       "images": []
     },
-    "ultrahuman-ring-air": { "_note": "Verified 2026-07-24: NEW, Amazon-sold. amazon.de/dp/B0CHF6BZ9H?tag=sqwod-21", "asin": "B0CHF6BZ9H", "images": ["https://m.media-amazon.com/images/I/71NkFZ0qYnL._AC_SL1500_.jpg"] },
-    "blackroll-standard": { "_note": "Verified 2026-07-24: NEW, sold by BLACKROLL. amazon.de/dp/B003BP5AGA?tag=sqwod-21", "asin": "B003BP5AGA", "images": ["https://m.media-amazon.com/images/I/81Fb99ebyaL._AC_SL1500_.jpg"] },
-    "withings-scanwatch-2": { "_note": "Verified 2026-07-24: NEW, sold by Withings DE. amazon.de/dp/B0CG6PJLY3?tag=sqwod-21", "asin": "B0CG6PJLY3", "images": ["https://m.media-amazon.com/images/I/616ip7HZ0wL._AC_SL1500_.jpg"] },
-    "esn-designer-whey": { "_note": "Verified 2026-07-24: NEW, Amazon-sold. amazon.de/dp/B004U4WUFU?tag=sqwod-21", "asin": "B004U4WUFU", "images": ["https://m.media-amazon.com/images/I/71bZonctv1L._AC_SL1500_.jpg"] },
-    "_batch3_brand_direct": "Kept brand-direct (no Amazon link/image) after 2026-07-24 sweep: myprotein-impact-whey (buy-box = 3rd-party reseller Special-Fitness); asics-gel-nimbus-27 / brooks-ghost-18 / nike-pegasus-42 (Amazon US size-locked imports, no clean single-ASIN deal)."
+    "ultrahuman-ring-air": {
+      "_note": "Verified 2026-07-24: NEW, Amazon-sold. amazon.de/dp/B0CHF6BZ9H?tag=sqwod-21",
+      "asin": "B0CHF6BZ9H",
+      "images": [
+        "https://m.media-amazon.com/images/I/71NkFZ0qYnL._AC_SL1500_.jpg"
+      ]
+    },
+    "blackroll-standard": {
+      "_note": "Verified 2026-07-24: NEW, sold by BLACKROLL. amazon.de/dp/B003BP5AGA?tag=sqwod-21",
+      "asin": "B003BP5AGA",
+      "images": [
+        "https://m.media-amazon.com/images/I/81Fb99ebyaL._AC_SL1500_.jpg"
+      ]
+    },
+    "withings-scanwatch-2": {
+      "_note": "Verified 2026-07-24: NEW, sold by Withings DE. amazon.de/dp/B0CG6PJLY3?tag=sqwod-21",
+      "asin": "B0CG6PJLY3",
+      "images": [
+        "https://m.media-amazon.com/images/I/616ip7HZ0wL._AC_SL1500_.jpg"
+      ]
+    },
+    "esn-designer-whey": {
+      "_note": "Verified 2026-07-24: NEW, Amazon-sold. amazon.de/dp/B004U4WUFU?tag=sqwod-21",
+      "asin": "B004U4WUFU",
+      "images": [
+        "https://m.media-amazon.com/images/I/71bZonctv1L._AC_SL1500_.jpg"
+      ]
+    },
+    "_batch3_brand_direct": "Kept brand-direct (no Amazon link/image) after 2026-07-24 sweep: myprotein-impact-whey (buy-box = 3rd-party reseller Special-Fitness); asics-gel-nimbus-27 / brooks-ghost-18 / nike-pegasus-42 (Amazon US size-locked imports, no clean single-ASIN deal).",
+    "esn-ultrapure-creatine": {
+      "_note": "2026-07-24 SiteStripe: NEW, Sold by Amazon (€29.90).",
+      "asin": "B0057ED9AM",
+      "images": [
+        "https://m.media-amazon.com/images/I/61P66-IzK0L._AC_SL1500_.jpg"
+      ]
+    },
+    "manta-sleep-mask": {
+      "_note": "2026-07-24 SiteStripe: NEW, sold by MantaSleep (brand) (€47.00).",
+      "asin": "B07PRG2CQY",
+      "images": [
+        "https://m.media-amazon.com/images/I/91j-EDBgLGL._AC_SL1500_.jpg"
+      ]
+    },
+    "loop-quiet-2": {
+      "_note": "2026-07-24 SiteStripe: NEW, sold by Loop Earplugs DE (brand) (€24.95).",
+      "asin": "B0D3V4V1KD",
+      "images": [
+        "https://m.media-amazon.com/images/I/41df34MCFrL._AC_SL1500_.jpg"
+      ]
+    },
+    "coros-pace-3": {
+      "_note": "2026-07-24 SiteStripe: NEW, sold by COROS Wearables EU (brand) (€229).",
+      "asin": "B0CFQQ9FDL",
+      "images": [
+        "https://m.media-amazon.com/images/I/61HE8zhwT7L._AC_SL1500_.jpg"
+      ]
+    },
+    "optimum-nutrition-gold-standard": {
+      "_note": "2026-07-24 SiteStripe: NEW, sold by Optimum Nutrition DE (brand) (€94.99, 2.27kg).",
+      "asin": "B000QSNYGI",
+      "images": [
+        "https://m.media-amazon.com/images/I/71gR9O4i6cL._AC_SL1500_.jpg"
+      ]
+    },
+    "concept2-rowerg": {
+      "_note": "2026-07-24 SiteStripe: NEW, Sold by Amazon (€1,184.99).",
+      "asin": "B0CMZJHPZK",
+      "images": [
+        "https://m.media-amazon.com/images/I/41kmOFvpQoS._AC_SL1000_.jpg"
+      ]
+    }
   }
 }

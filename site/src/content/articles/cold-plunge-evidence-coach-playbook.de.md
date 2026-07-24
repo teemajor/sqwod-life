@@ -14,16 +14,16 @@ asOf: 2026-07-20
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Wang et al. 2025 — Netzwerk-Meta-Analyse zur CWI-Dosis, 55 RCTs (Frontiers in Physiology)", url: "https://consensus.app/papers/details/100f6e26fe8456ff9cb09eabee03a57e/" }
+  - { label: "Wang et al. 2025 — Netzwerk-Meta-Analyse zur CWI-Dosis, 55 RCTs (Frontiers in Physiology) · PMID 40078372", url: "https://consensus.app/papers/details/100f6e26fe8456ff9cb09eabee03a57e/" }
   - { label: "Piñero et al. 2024 — Kaltwasser & Hypertrophie, Meta-Analyse (European Journal of Sport Science)", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
-  - { label: "Roberts et al. 2015 — Kaltwasser dämpft Anpassungen ans Krafttraining (The Journal of Physiology)", url: "https://consensus.app/papers/details/ee0dc836ec8c5c568f5c14d07010538f/" }
-  - { label: "Fyfe et al. 2019 — Faserhypertrophie gedämpft, Maximalkraft erhalten (Journal of Applied Physiology)", url: "https://consensus.app/papers/details/2318409f8493572e976b6a0a2b8b11ca/" }
-  - { label: "Veen et al. 2026 — Regeneration nach dem Spiel im Fußball (Scand J Med Sci Sports)", url: "https://consensus.app/papers/details/e688eea8adab59ce866260a36c581860/" }
-  - { label: "Cain et al. 2025 — Kaltwasser, Gesundheit & Wohlbefinden, Meta-Analyse (PLOS ONE)", url: "https://consensus.app/papers/details/471a9680e2a9539fb107d5fa262143f1/" }
+  - { label: "Roberts et al. 2015 — Kaltwasser dämpft Anpassungen ans Krafttraining (The Journal of Physiology) · PMID 26174323", url: "https://consensus.app/papers/details/ee0dc836ec8c5c568f5c14d07010538f/" }
+  - { label: "Fyfe et al. 2019 — Faserhypertrophie gedämpft, Maximalkraft erhalten (Journal of Applied Physiology) · PMID 31513450", url: "https://consensus.app/papers/details/2318409f8493572e976b6a0a2b8b11ca/" }
+  - { label: "Veen et al. 2026 — Regeneration nach dem Spiel im Fußball (Scand J Med Sci Sports) · PMID 41490103", url: "https://consensus.app/papers/details/e688eea8adab59ce866260a36c581860/" }
+  - { label: "Cain et al. 2025 — Kaltwasser, Gesundheit & Wohlbefinden, Meta-Analyse (PLOS ONE) · PMID 39879231", url: "https://consensus.app/papers/details/471a9680e2a9539fb107d5fa262143f1/" }
   - { label: "Kelly et al. 2021 — Stimmung nach einmaligem Kaltbad (Lifestyle Medicine)", url: "https://consensus.app/papers/details/d042d770c0425d6ba28469d87f9485d5/" }
-  - { label: "Barwood et al. 2023 — Habituation der Kälteschockreaktion, Meta-Analyse (J Thermal Biology)", url: "https://consensus.app/papers/details/83c83a4d75585c52a86345376c84338f/" }
+  - { label: "Barwood et al. 2023 — Habituation der Kälteschockreaktion, Meta-Analyse (J Thermal Biology) · PMID 38211547", url: "https://consensus.app/papers/details/83c83a4d75585c52a86345376c84338f/" }
   - { label: "Massey et al. 2025 — Wassersicherheit & therapeutische Behauptungen (Lifestyle Medicine)", url: "https://consensus.app/papers/details/0eea97b49bb650f0844df04ff47d5ed7/" }
-  - { label: "Pérez et al. 2022 — Braunes Fettgewebe & Gewichtsabnahme, Systematic Review (Frontiers in Endocrinology)", url: "https://consensus.app/papers/details/e8f2e3928e4b54a785130fba00baf5ef/" }
+  - { label: "Pérez et al. 2022 — Braunes Fettgewebe & Gewichtsabnahme, Systematic Review (Frontiers in Endocrinology) · PMID 36568070", url: "https://consensus.app/papers/details/e8f2e3928e4b54a785130fba00baf5ef/" }
   - { label: "ClinicalTrials.gov — Kaltwasserimmersion, rekrutierend + kurz vor Start", url: "https://clinicaltrials.gov/search?intr=%22cold+water+immersion%22&aggFilters=status:not%20rec" }
 takeaways:
   - "Für Muskelkater und kurzfristige Erholung ist die Datenlage solide: 10–15 Minuten bei 11–15 °C brachten über 55 randomisierte Studien hinweg die stärkste Reduktion des verzögerten Muskelkaters (Wang 2025)."

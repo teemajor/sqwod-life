@@ -53,8 +53,10 @@ whoFor:
   buy: "Du (oder deine Kund:innen) willst bequeme, wiederverwendbare, maximal-leise Ohrstöpsel für Schlaf, Seitenschlaf, Fokus oder Reisen zum kleinen Preis."
   skip: "Du musst sehr lauten, tieffrequenten Lärm blocken oder brauchst zertifizierten/medizinischen Gehörschutz."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/41df34MCFrL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["sleep", "earplugs", "recovery"]
 ---
 

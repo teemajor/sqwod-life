@@ -14,15 +14,15 @@ asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Grgic et al. 2019 — Caffeine & exercise performance, umbrella review of 21 meta-analyses (Br J Sports Med)", url: "https://consensus.app/papers/details/cc9038ff4851501baf8d0c4bf5d85d31/" }
-  - { label: "Guest et al. 2021 — ISSN position stand: caffeine and exercise performance (J Int Soc Sports Nutr)", url: "https://consensus.app/papers/details/eb622bb48b4457c9a1a89ee10b22fc28/" }
-  - { label: "Southward et al. 2018 — Caffeine & endurance time-trial performance, meta-analysis (Sports Medicine)", url: "https://consensus.app/papers/details/beb17bc16a5a5ec9a291e0b158cf183b/" }
-  - { label: "Taghizadeh Bilondi et al. 2024 — Caffeine, strength & muscular endurance, meta-analysis of meta-analyses (Heliyon)", url: "https://consensus.app/papers/details/990b3f7e197d52c7897136ffb62e7820/" }
-  - { label: "Grgic et al. 2021 — Caffeine, muscular endurance & strength in women, meta-analysis (Int J Environ Res Public Health)", url: "https://consensus.app/papers/details/151a92fc62d7538fbe55cf4cb62d01ea/" }
-  - { label: "Grgic 2021 — Effects of caffeine on resistance exercise, review (Sports Medicine)", url: "https://consensus.app/papers/details/920b7e5aea5f56a984dbd5a9be6ceb3a/" }
-  - { label: "Ruiz-Fernández et al. 2023 — Load & muscle-group size modulate caffeine's effect (Eur J Nutr)", url: "https://consensus.app/papers/details/8d35131c0dcb5dbf9935c16cb3827580/" }
-  - { label: "Grgic et al. 2018 — Caffeine & resistance exercise, review incl. safety/blood pressure (Sports Medicine)", url: "https://consensus.app/papers/details/18ce82e07e875e7c8b2ea23cc3310477/" }
-  - { label: "Montalvo-Alonso et al. 2026 — CYP1A2 genotype & caffeine's ergogenic effect, RCT (Scand J Med Sci Sports)", url: "https://consensus.app/papers/details/5f4e2358c1dd5dd29eb1ddacde518f6c/" }
+  - { label: "Grgic et al. 2019 — Caffeine & exercise performance, umbrella review of 21 meta-analyses (Br J Sports Med) · PMID 30926628", url: "https://consensus.app/papers/details/cc9038ff4851501baf8d0c4bf5d85d31/" }
+  - { label: "Guest et al. 2021 — ISSN position stand: caffeine and exercise performance (J Int Soc Sports Nutr) · PMID 33388079", url: "https://consensus.app/papers/details/eb622bb48b4457c9a1a89ee10b22fc28/" }
+  - { label: "Southward et al. 2018 — Caffeine & endurance time-trial performance, meta-analysis (Sports Medicine) · PMID 29876876", url: "https://consensus.app/papers/details/beb17bc16a5a5ec9a291e0b158cf183b/" }
+  - { label: "Taghizadeh Bilondi et al. 2024 — Caffeine, strength & muscular endurance, meta-analysis of meta-analyses (Heliyon) · PMID 39170391", url: "https://consensus.app/papers/details/990b3f7e197d52c7897136ffb62e7820/" }
+  - { label: "Grgic et al. 2021 — Caffeine, muscular endurance & strength in women, meta-analysis (Int J Environ Res Public Health) · PMID 34072182", url: "https://consensus.app/papers/details/151a92fc62d7538fbe55cf4cb62d01ea/" }
+  - { label: "Grgic 2021 — Effects of caffeine on resistance exercise, review (Sports Medicine) · PMID 34291426", url: "https://consensus.app/papers/details/920b7e5aea5f56a984dbd5a9be6ceb3a/" }
+  - { label: "Ruiz-Fernández et al. 2023 — Load & muscle-group size modulate caffeine's effect (Eur J Nutr) · PMID 36840816", url: "https://consensus.app/papers/details/8d35131c0dcb5dbf9935c16cb3827580/" }
+  - { label: "Grgic et al. 2018 — Caffeine & resistance exercise, review incl. safety/blood pressure (Sports Medicine) · PMID 30298476", url: "https://consensus.app/papers/details/18ce82e07e875e7c8b2ea23cc3310477/" }
+  - { label: "Montalvo-Alonso et al. 2026 — CYP1A2 genotype & caffeine's ergogenic effect, RCT (Scand J Med Sci Sports) · PMID 41627185", url: "https://consensus.app/papers/details/5f4e2358c1dd5dd29eb1ddacde518f6c/" }
   - { label: "ClinicalTrials.gov — caffeine & performance, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=caffeine&aggFilters=status:not%20rec" }
 takeaways:
   - "Caffeine is one of the best-evidenced supplements in sport: an umbrella review of 21 meta-analyses found it reliably improves endurance, strength, muscle endurance, power and jumping (Grgic 2019). The rare one that lives up to the hype."

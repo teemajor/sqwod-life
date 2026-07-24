@@ -14,14 +14,14 @@ asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Jäger et al. 2017 — ISSN Position Stand: protein and exercise (J Int Soc Sports Nutr)", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
-  - { label: "Tagawa et al. 2022 — Total protein & strength, dose-response meta-analysis (Sports Medicine - Open)", url: "https://consensus.app/papers/details/1cc44324a6fe5d85931fa107fcf4e774/" }
-  - { label: "Nunes et al. 2022 — Protein intake, muscle mass & function meta-analysis (J Cachexia Sarcopenia Muscle)", url: "https://consensus.app/papers/details/005a4aa8746d5323bc1d623cb7279c0b/" }
-  - { label: "Schoenfeld et al. 2013 — Protein timing & muscle adaptation meta-analysis (J Int Soc Sports Nutr)", url: "https://consensus.app/papers/details/37c22c79ee875823b12c85b6a365ffa0/" }
-  - { label: "Zhou et al. 2023 — Timing & types of protein, network meta-analysis (Int J Sport Nutr Exerc Metab)", url: "https://consensus.app/papers/details/3b708defa5695a789f98ab8765173295/" }
-  - { label: "Lak et al. 2024 — Immediate vs 3h protein timing RCT, trained males (Frontiers in Nutrition)", url: "https://consensus.app/papers/details/23d784f077185210ba5615befdf13c57/" }
-  - { label: "Yasuda et al. 2020 — Even protein distribution across meals RCT (The Journal of Nutrition)", url: "https://consensus.app/papers/details/9558dff264475b41920e3445d5532da8/" }
-  - { label: "Esmarck et al. 2001 — Post-exercise protein timing in elderly men RCT (The Journal of Physiology)", url: "https://consensus.app/papers/details/68c3012682f0574dae6a91dd2c3ce44a/" }
+  - { label: "Jäger et al. 2017 — ISSN Position Stand: protein and exercise (J Int Soc Sports Nutr) · PMID 28642676", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
+  - { label: "Tagawa et al. 2022 — Total protein & strength, dose-response meta-analysis (Sports Medicine - Open) · PMID 36057893", url: "https://consensus.app/papers/details/1cc44324a6fe5d85931fa107fcf4e774/" }
+  - { label: "Nunes et al. 2022 — Protein intake, muscle mass & function meta-analysis (J Cachexia Sarcopenia Muscle) · PMID 35187864", url: "https://consensus.app/papers/details/005a4aa8746d5323bc1d623cb7279c0b/" }
+  - { label: "Schoenfeld et al. 2013 — Protein timing & muscle adaptation meta-analysis (J Int Soc Sports Nutr) · PMID 24299050", url: "https://consensus.app/papers/details/37c22c79ee875823b12c85b6a365ffa0/" }
+  - { label: "Zhou et al. 2023 — Timing & types of protein, network meta-analysis (Int J Sport Nutr Exerc Metab) · PMID 38039960", url: "https://consensus.app/papers/details/3b708defa5695a789f98ab8765173295/" }
+  - { label: "Lak et al. 2024 — Immediate vs 3h protein timing RCT, trained males (Frontiers in Nutrition) · PMID 38846541", url: "https://consensus.app/papers/details/23d784f077185210ba5615befdf13c57/" }
+  - { label: "Yasuda et al. 2020 — Even protein distribution across meals RCT (The Journal of Nutrition) · PMID 32321161", url: "https://consensus.app/papers/details/9558dff264475b41920e3445d5532da8/" }
+  - { label: "Esmarck et al. 2001 — Post-exercise protein timing in elderly men RCT (The Journal of Physiology) · PMID 11507179", url: "https://consensus.app/papers/details/68c3012682f0574dae6a91dd2c3ce44a/" }
   - { label: "ClinicalTrials.gov — protein supplementation & resistance training, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=protein%20supplementation&aggFilters=status:not%20rec" }
 takeaways:
   - "The only number that really matters is your daily total: about 1.6–2.2 g/kg/day, paired with resistance training, maximises muscle and strength gains (Jäger 2017; Nunes 2022). Hit that and most other details are noise."

@@ -53,8 +53,10 @@ whoFor:
   buy: "You (or your clients) want comfortable, reusable, maximum-quiet earplugs for sleep, side-sleeping, focus or travel at a low price."
   skip: "You need to block very loud, low-frequency noise or require certified/medical-grade hearing protection."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/41df34MCFrL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["sleep", "earplugs", "recovery"]
 ---
 

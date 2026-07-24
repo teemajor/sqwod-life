@@ -53,8 +53,10 @@ whoFor:
   buy: "You want a light, accurate, long-lasting running/triathlon watch with serious training tools at a low price."
   skip: "You want a lifestyle smartwatch with a bright touchscreen, offline maps, or an app store."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61HE8zhwT7L._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["wearables", "running", "coros"]
 ---
 

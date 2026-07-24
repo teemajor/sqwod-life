@@ -14,14 +14,14 @@ asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Chinoy et al. 2020 — Seven consumer sleep-trackers vs polysomnography (Sleep)", url: "https://consensus.app/papers/details/d3ac6a3384875309b4b375d6c42aa980/" }
-  - { label: "Lee Y.J. et al. 2024 — Consumer wrist-worn sleep trackers vs PSG, meta-analysis of 24 studies (J Clinical Sleep Medicine)", url: "https://consensus.app/papers/details/0b872df24dee516a8cfe9bdef248ce7e/" }
-  - { label: "Lee T. et al. 2023 — 11 consumer sleep trackers, multicenter validation (JMIR mHealth uHealth)", url: "https://consensus.app/papers/details/9c4d0d84d0435538a44a8d419bbad41a/" }
-  - { label: "Robbins et al. 2024 — Oura Ring, Fitbit Sense, Apple Watch vs PSG (Sensors)", url: "https://consensus.app/papers/details/faaac21f95cc564081d8f39a0ec50dc9/" }
-  - { label: "Schyvens et al. 2023 — Fitbit Charge 4, Garmin Vivosmart 4, WHOOP vs PSG, systematic review (JMIR mHealth uHealth)", url: "https://consensus.app/papers/details/3298ea3c82715cd99c4684ff3e00e58f/" }
-  - { label: "Frija et al. 2024 — Sleep trackers in patients with sleep complaints (J Sleep Research)", url: "https://consensus.app/papers/details/867f533d70fa519bbe0759858fa6d36c/" }
-  - { label: "Kang et al. 2017 — Fitbit in insomnia patients vs good sleepers (J Psychosomatic Research)", url: "https://consensus.app/papers/details/0c5089e97e1d50028cd499d37595f878/" }
-  - { label: "Herberger et al. 2025 — Ring trackers in a clinical sleep-lab population (Scientific Reports)", url: "https://consensus.app/papers/details/78a48297b5be50c6b40a598d14786e7c/" }
+  - { label: "Chinoy et al. 2020 — Seven consumer sleep-trackers vs polysomnography (Sleep) · PMID 33378539", url: "https://consensus.app/papers/details/d3ac6a3384875309b4b375d6c42aa980/" }
+  - { label: "Lee Y.J. et al. 2024 — Consumer wrist-worn sleep trackers vs PSG, meta-analysis of 24 studies (J Clinical Sleep Medicine) · PMID 39484805", url: "https://consensus.app/papers/details/0b872df24dee516a8cfe9bdef248ce7e/" }
+  - { label: "Lee T. et al. 2023 — 11 consumer sleep trackers, multicenter validation (JMIR mHealth uHealth) · PMID 37917155", url: "https://consensus.app/papers/details/9c4d0d84d0435538a44a8d419bbad41a/" }
+  - { label: "Robbins et al. 2024 — Oura Ring, Fitbit Sense, Apple Watch vs PSG (Sensors) · PMID 39460013", url: "https://consensus.app/papers/details/faaac21f95cc564081d8f39a0ec50dc9/" }
+  - { label: "Schyvens et al. 2023 — Fitbit Charge 4, Garmin Vivosmart 4, WHOOP vs PSG, systematic review (JMIR mHealth uHealth) · PMID 38557808", url: "https://consensus.app/papers/details/3298ea3c82715cd99c4684ff3e00e58f/" }
+  - { label: "Frija et al. 2024 — Sleep trackers in patients with sleep complaints (J Sleep Research) · PMID 38873908", url: "https://consensus.app/papers/details/867f533d70fa519bbe0759858fa6d36c/" }
+  - { label: "Kang et al. 2017 — Fitbit in insomnia patients vs good sleepers (J Psychosomatic Research) · PMID 28606497", url: "https://consensus.app/papers/details/0c5089e97e1d50028cd499d37595f878/" }
+  - { label: "Herberger et al. 2025 — Ring trackers in a clinical sleep-lab population (Scientific Reports) · PMID 40108409", url: "https://consensus.app/papers/details/78a48297b5be50c6b40a598d14786e7c/" }
   - { label: "ClinicalTrials.gov — consumer sleep technology & wearable sleep tracking, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=wearable%20sleep%20tracker&aggFilters=status:not%20rec" }
 takeaways:
   - "The one thing they do well: detecting sleep versus wake. Across validation studies, devices catch that you're asleep with ≥95% sensitivity (Robbins 2024). Total sleep time and trends are broadly trustworthy."

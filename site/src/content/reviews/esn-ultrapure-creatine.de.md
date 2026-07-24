@@ -52,8 +52,10 @@ whoFor:
   buy: "Du (oder deine Kund:innen) willst ein sauberes, dopingsicheres, fair bepreistes Kreatin — das eine Basis-Supplement, das fast jedem zu empfehlen ist."
   skip: "Du brauchst gezielt Marken-Creapure oder dosierst bereits 3–5 g Kreatin aus anderer Quelle."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/61P66-IzK0L._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["supplements", "creatine", "protein"]
 ---
 

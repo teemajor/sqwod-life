@@ -53,8 +53,10 @@ whoFor:
   buy: "Du coachst Recovery-/Schlaf-Kund:innen, die totale Dunkelheit brauchen (Schichtarbeit, Mittagsschlaf, lichtempfindlich) und für eine langlebige, verstellbare Maske zahlen."
   skip: "Du willst eine ultradünne, packbare Minimalmaske und brauchst keine Labor-Verdunkelung."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/91j-EDBgLGL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["sleep", "sleep-mask", "recovery"]
 ---
 

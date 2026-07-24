@@ -53,8 +53,10 @@ whoFor:
   buy: "Anyone who wants a proven, lab-tested all-rounder whey with reliable taste and mixing."
   skip: "Bargain hunters chasing the lowest price per kg or anyone needing a pure high-percentage isolate."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71gR9O4i6cL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["supplements", "whey", "protein"]
 ---
 

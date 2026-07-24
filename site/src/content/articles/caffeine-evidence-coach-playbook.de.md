@@ -14,15 +14,15 @@ asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Grgic et al. 2019 — Koffein & Leistung, Umbrella-Review von 21 Meta-Analysen (Br J Sports Med)", url: "https://consensus.app/papers/details/cc9038ff4851501baf8d0c4bf5d85d31/" }
-  - { label: "Guest et al. 2021 — ISSN-Positionspapier: Koffein und Leistung (J Int Soc Sports Nutr)", url: "https://consensus.app/papers/details/eb622bb48b4457c9a1a89ee10b22fc28/" }
-  - { label: "Southward et al. 2018 — Koffein & Ausdauer-Zeitfahrleistung, Meta-Analyse (Sports Medicine)", url: "https://consensus.app/papers/details/beb17bc16a5a5ec9a291e0b158cf183b/" }
-  - { label: "Taghizadeh Bilondi et al. 2024 — Koffein, Kraft & Muskelausdauer, Meta-Analyse von Meta-Analysen (Heliyon)", url: "https://consensus.app/papers/details/990b3f7e197d52c7897136ffb62e7820/" }
-  - { label: "Grgic et al. 2021 — Koffein, Muskelausdauer & Kraft bei Frauen, Meta-Analyse (Int J Environ Res Public Health)", url: "https://consensus.app/papers/details/151a92fc62d7538fbe55cf4cb62d01ea/" }
-  - { label: "Grgic 2021 — Wirkung von Koffein auf Krafttraining, Review (Sports Medicine)", url: "https://consensus.app/papers/details/920b7e5aea5f56a984dbd5a9be6ceb3a/" }
-  - { label: "Ruiz-Fernández et al. 2023 — Last & Muskelgröße modulieren die Koffeinwirkung (Eur J Nutr)", url: "https://consensus.app/papers/details/8d35131c0dcb5dbf9935c16cb3827580/" }
-  - { label: "Grgic et al. 2018 — Koffein & Krafttraining, Review inkl. Sicherheit/Blutdruck (Sports Medicine)", url: "https://consensus.app/papers/details/18ce82e07e875e7c8b2ea23cc3310477/" }
-  - { label: "Montalvo-Alonso et al. 2026 — CYP1A2-Genotyp & ergogene Koffeinwirkung, RCT (Scand J Med Sci Sports)", url: "https://consensus.app/papers/details/5f4e2358c1dd5dd29eb1ddacde518f6c/" }
+  - { label: "Grgic et al. 2019 — Koffein & Leistung, Umbrella-Review von 21 Meta-Analysen (Br J Sports Med) · PMID 30926628", url: "https://consensus.app/papers/details/cc9038ff4851501baf8d0c4bf5d85d31/" }
+  - { label: "Guest et al. 2021 — ISSN-Positionspapier: Koffein und Leistung (J Int Soc Sports Nutr) · PMID 33388079", url: "https://consensus.app/papers/details/eb622bb48b4457c9a1a89ee10b22fc28/" }
+  - { label: "Southward et al. 2018 — Koffein & Ausdauer-Zeitfahrleistung, Meta-Analyse (Sports Medicine) · PMID 29876876", url: "https://consensus.app/papers/details/beb17bc16a5a5ec9a291e0b158cf183b/" }
+  - { label: "Taghizadeh Bilondi et al. 2024 — Koffein, Kraft & Muskelausdauer, Meta-Analyse von Meta-Analysen (Heliyon) · PMID 39170391", url: "https://consensus.app/papers/details/990b3f7e197d52c7897136ffb62e7820/" }
+  - { label: "Grgic et al. 2021 — Koffein, Muskelausdauer & Kraft bei Frauen, Meta-Analyse (Int J Environ Res Public Health) · PMID 34072182", url: "https://consensus.app/papers/details/151a92fc62d7538fbe55cf4cb62d01ea/" }
+  - { label: "Grgic 2021 — Wirkung von Koffein auf Krafttraining, Review (Sports Medicine) · PMID 34291426", url: "https://consensus.app/papers/details/920b7e5aea5f56a984dbd5a9be6ceb3a/" }
+  - { label: "Ruiz-Fernández et al. 2023 — Last & Muskelgröße modulieren die Koffeinwirkung (Eur J Nutr) · PMID 36840816", url: "https://consensus.app/papers/details/8d35131c0dcb5dbf9935c16cb3827580/" }
+  - { label: "Grgic et al. 2018 — Koffein & Krafttraining, Review inkl. Sicherheit/Blutdruck (Sports Medicine) · PMID 30298476", url: "https://consensus.app/papers/details/18ce82e07e875e7c8b2ea23cc3310477/" }
+  - { label: "Montalvo-Alonso et al. 2026 — CYP1A2-Genotyp & ergogene Koffeinwirkung, RCT (Scand J Med Sci Sports) · PMID 41627185", url: "https://consensus.app/papers/details/5f4e2358c1dd5dd29eb1ddacde518f6c/" }
   - { label: "ClinicalTrials.gov — Koffein & Leistung, rekrutierend + kurz vor Start", url: "https://clinicaltrials.gov/search?intr=caffeine&aggFilters=status:not%20rec" }
 takeaways:
   - "Koffein ist eines der am besten belegten Supplements im Sport: Ein Umbrella-Review von 21 Meta-Analysen fand, dass es Ausdauer, Kraft, Muskelausdauer, Power und Sprungkraft zuverlässig verbessert (Grgic 2019). Das seltene, das den Hype einlöst."
