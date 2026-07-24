@@ -9,35 +9,35 @@ type: evidence
 format: analysis
 conversion: list-growth
 publishedAt: 2026-07-07
-updatedAt: 2026-07-07
-asOf: 2026-07-07
+updatedAt: 2026-07-24
+asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
   - { label: "Zhang et al. 2025 — Global magnesium deficiency review (Int J Vitam Nutr Res)", url: "https://consensus.app/papers/details/06621026bcc75b378ba87cbf367a737e/" }
-  - { label: "Mah et al. 2021 — Magnesium for insomnia in older adults, meta-analysis (BMC Complement Med Ther)", url: "https://consensus.app/papers/details/02d708b5303158ea8215b133d8b7c6d0/" }
-  - { label: "Arab et al. 2022 — Magnesium & sleep, systematic review (Biol Trace Elem Res)", url: "https://consensus.app/papers/details/b83fb763517a5064a1e332400a79ff3b/" }
+  - { label: "Mah et al. 2021 — Magnesium for insomnia in older adults, meta-analysis (BMC Complement Med Ther) · PMID 33865376", url: "https://consensus.app/papers/details/02d708b5303158ea8215b133d8b7c6d0/" }
+  - { label: "Arab et al. 2022 — Magnesium & sleep, systematic review (Biol Trace Elem Res) · PMID 35184264", url: "https://consensus.app/papers/details/b83fb763517a5064a1e332400a79ff3b/" }
   - { label: "Breus et al. 2024 — Magnesium, sleep & mood crossover pilot RCT (Medical Research Archives)", url: "https://consensus.app/papers/details/1e75a347306f5bdabe6882413f152711/" }
-  - { label: "Garrison et al. 2020 — Magnesium for skeletal muscle cramps, Cochrane review", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
+  - { label: "Garrison et al. 2020 — Magnesium for skeletal muscle cramps, Cochrane review · PMID 32956536", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
   - { label: "Kappeler et al. 2017 — Citrate vs oxide bioavailability RCT (BMC Nutrition)", url: "https://consensus.app/papers/details/bd1a83bd8d3f5169806497f75061880f/" }
-  - { label: "Pardo et al. 2021 — Bioavailability of magnesium supplements, systematic review (Nutrition)", url: "https://consensus.app/papers/details/e22c76a6ced1508c8715f5533a4e02d3/" }
+  - { label: "Pardo et al. 2021 — Bioavailability of magnesium supplements, systematic review (Nutrition) · PMID 34111673", url: "https://consensus.app/papers/details/e22c76a6ced1508c8715f5533a4e02d3/" }
   - { label: "Veronese et al. 2014 — Magnesium & physical performance in older women RCT (Am J Clin Nutr)", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
-  - { label: "Zhang et al. 2017 — Magnesium & exercise performance review (Nutrients)", url: "https://consensus.app/papers/details/2bdd50197d2d5c1f8611cd3b219ce4d4/" }
-  - { label: "Boyle et al. 2017 — Magnesium, anxiety & stress systematic review (Nutrients)", url: "https://consensus.app/papers/details/9e0febbbba955a81a827619e2c0cf81e/" }
+  - { label: "Zhang et al. 2017 — Magnesium & exercise performance review (Nutrients) · PMID 28846654", url: "https://consensus.app/papers/details/2bdd50197d2d5c1f8611cd3b219ce4d4/" }
+  - { label: "Boyle et al. 2017 — Magnesium, anxiety & stress systematic review (Nutrients) · PMID 28445426", url: "https://consensus.app/papers/details/9e0febbbba955a81a827619e2c0cf81e/" }
   - { label: "ClinicalTrials.gov — magnesium, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
 takeaways:
   - "Deficiency is the real story: an estimated 31% of the global population — about 2.4 billion people — don't hit the recommended magnesium intake (Zhang 2025). Most of your clients are more likely low than optimal."
   - "For sleep, the honest verdict is 'modest and uncertain.' A meta-analysis in older adults found people fell asleep ~17 minutes faster on magnesium — but the evidence was low quality (Mah 2021). Worth a try, not a promise."
   - "The cramp myth needs retiring for most clients: the Cochrane review found no meaningful benefit for the common nighttime/idiopathic leg cramps in adults (Garrison 2020)."
   - "Form matters more than dose obsession: organic forms (citrate, glycinate) absorb better than cheap magnesium oxide (Kappeler 2017). Skip the oxide."
-  - "The frontier worth watching: 290 magnesium trials are recruiting or about to — including ones on perimenopause symptoms, sarcopenia strength, and micronutrient loss on GLP-1 weight-loss drugs (ClinicalTrials.gov)."
+  - "The frontier worth watching: 295 magnesium trials are recruiting or about to — including ones on perimenopause symptoms, sarcopenia strength, and micronutrient loss on GLP-1 weight-loss drugs (ClinicalTrials.gov)."
 figures:
   - { label: "Global adults not meeting recommended magnesium intake", value: "~31%", note: "≈2.4 billion people worldwide fall short of recommended intake", source: "Zhang et al. 2025, Int J Vitam Nutr Res", url: "https://consensus.app/papers/details/06621026bcc75b378ba87cbf367a737e/" }
   - { label: "Faster sleep onset vs. placebo (older adults)", value: "−17.4 min", note: "Pooled sleep-onset latency, 3 RCTs, 151 people; GRADE certainty: low to very low", source: "Mah et al. 2021, BMC Complement Med Ther", url: "https://consensus.app/papers/details/02d708b5303158ea8215b133d8b7c6d0/" }
   - { label: "Effect on common nighttime leg cramps at 4 weeks", value: "−0.18 cramps/wk", note: "Not statistically significant; moderate-certainty evidence — magnesium ≈ placebo for idiopathic cramps", source: "Garrison et al. 2020, Cochrane Review", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
   - { label: "Citrate vs. oxide — 24h absorbed magnesium", value: "+0.565 mmol", note: "Higher urinary magnesium after citrate than oxide; organic forms absorb better", source: "Kappeler et al. 2017, BMC Nutrition", url: "https://consensus.app/papers/details/bd1a83bd8d3f5169806497f75061880f/" }
   - { label: "Chair-stand time in older women (12 wk, 300 mg/day)", value: "−1.31 s", note: "Improved physical performance; effect strongest in those below the RDA. Strength (grip/torque) did not change", source: "Veronese et al. 2014, Am J Clin Nutr", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
-  - { label: "Magnesium trials recruiting or about to start", value: "290", note: "Live pipeline as of July 2026 — the questions science is answering next", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
+  - { label: "Magnesium trials recruiting or about to start", value: "295", note: "Live pipeline as of July 2026 — the questions science is answering next", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
 playbook:
   - { move: "Reframe the conversation from 'supplement' to 'are you even getting enough?'", why: "About a third of people globally fall short of recommended magnesium intake (Zhang 2025), and intake is lower in women and older adults. Food first — leafy greens, legumes, nuts, whole grains — then supplement the gap. That framing is more honest and more useful than pushing pills." }
   - { move: "If a client wants to try it for sleep, set expectations at 'modest, maybe.'", why: "The best pooled evidence shows a small, low-certainty benefit to falling asleep faster in older adults (Mah 2021); observational links are stronger than the trials (Arab 2022). It's cheap and low-risk, so a trial is reasonable — but sell it as an experiment, not a fix." }
@@ -59,6 +59,7 @@ verdict:
 tags: ["magnesium", "supplements", "sleep", "recovery", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-07", note: "First edition. Evidence current to July 2026; graded by strength of study design. We update when the pipeline delivers." }
+  - { date: "2026-07-24", note: "Sources verified against PubMed & ClinicalTrials; PMIDs added and the live trial count refreshed to 295." }
 ---
 
 > **How we sourced this.** Every claim below is tied to a named study — a meta-analysis, a Cochrane review, a randomised trial, or the live trial registry — and linked. We also graded the evidence: where it's strong, we say so; where it's early or contradictory, we say that too. This piece was reviewed for accuracy before publishing and carries a real byline, because on health topics a citation you can't stand behind is worse than no citation at all. Last updated 7 July 2026.
@@ -121,7 +122,7 @@ There's suggestive evidence that magnesium helps **subjective anxiety and stress
 
 ## What's about to be proven (the part nobody else shows you)
 
-Here's what a static supplement encyclopedia can't give you: the live edge of the field. Right now the clinical registry lists **290 magnesium trials recruiting or about to start**<sup class="fn"><a href="#source-11">11</a></sup> — and the pattern tells you where the puck is going.
+Here's what a static supplement encyclopedia can't give you: the live edge of the field. Right now the clinical registry lists **295 magnesium trials recruiting or about to start**<sup class="fn"><a href="#source-11">11</a></sup> — and the pattern tells you where the puck is going.
 
 Three threads worth watching, because your clients will ask about all of them:
 

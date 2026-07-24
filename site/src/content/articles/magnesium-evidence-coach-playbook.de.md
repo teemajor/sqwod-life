@@ -9,35 +9,35 @@ type: evidence
 format: analysis
 conversion: list-growth
 publishedAt: 2026-07-07
-updatedAt: 2026-07-07
-asOf: 2026-07-07
+updatedAt: 2026-07-24
+asOf: 2026-07-24
 author: "Tee Major"
 gated: false
 sources:
   - { label: "Zhang et al. 2025 — Globaler Magnesiummangel, Review (Int J Vitam Nutr Res)", url: "https://consensus.app/papers/details/06621026bcc75b378ba87cbf367a737e/" }
-  - { label: "Mah et al. 2021 — Magnesium bei Insomnie älterer Erwachsener, Meta-Analyse (BMC Complement Med Ther)", url: "https://consensus.app/papers/details/02d708b5303158ea8215b133d8b7c6d0/" }
-  - { label: "Arab et al. 2022 — Magnesium & Schlaf, systematischer Review (Biol Trace Elem Res)", url: "https://consensus.app/papers/details/b83fb763517a5064a1e332400a79ff3b/" }
+  - { label: "Mah et al. 2021 — Magnesium bei Insomnie älterer Erwachsener, Meta-Analyse (BMC Complement Med Ther) · PMID 33865376", url: "https://consensus.app/papers/details/02d708b5303158ea8215b133d8b7c6d0/" }
+  - { label: "Arab et al. 2022 — Magnesium & Schlaf, systematischer Review (Biol Trace Elem Res) · PMID 35184264", url: "https://consensus.app/papers/details/b83fb763517a5064a1e332400a79ff3b/" }
   - { label: "Breus et al. 2024 — Magnesium, Schlaf & Stimmung, Crossover-Pilot-RCT (Medical Research Archives)", url: "https://consensus.app/papers/details/1e75a347306f5bdabe6882413f152711/" }
-  - { label: "Garrison et al. 2020 — Magnesium bei Muskelkrämpfen, Cochrane-Review", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
+  - { label: "Garrison et al. 2020 — Magnesium bei Muskelkrämpfen, Cochrane-Review · PMID 32956536", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
   - { label: "Kappeler et al. 2017 — Bioverfügbarkeit Citrat vs. Oxid, RCT (BMC Nutrition)", url: "https://consensus.app/papers/details/bd1a83bd8d3f5169806497f75061880f/" }
-  - { label: "Pardo et al. 2021 — Bioverfügbarkeit von Magnesium-Supplementen, systematischer Review (Nutrition)", url: "https://consensus.app/papers/details/e22c76a6ced1508c8715f5533a4e02d3/" }
+  - { label: "Pardo et al. 2021 — Bioverfügbarkeit von Magnesium-Supplementen, systematischer Review (Nutrition) · PMID 34111673", url: "https://consensus.app/papers/details/e22c76a6ced1508c8715f5533a4e02d3/" }
   - { label: "Veronese et al. 2014 — Magnesium & körperliche Leistung bei älteren Frauen, RCT (Am J Clin Nutr)", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
-  - { label: "Zhang et al. 2017 — Magnesium & Leistungsfähigkeit, Review (Nutrients)", url: "https://consensus.app/papers/details/2bdd50197d2d5c1f8611cd3b219ce4d4/" }
-  - { label: "Boyle et al. 2017 — Magnesium, Angst & Stress, systematischer Review (Nutrients)", url: "https://consensus.app/papers/details/9e0febbbba955a81a827619e2c0cf81e/" }
+  - { label: "Zhang et al. 2017 — Magnesium & Leistungsfähigkeit, Review (Nutrients) · PMID 28846654", url: "https://consensus.app/papers/details/2bdd50197d2d5c1f8611cd3b219ce4d4/" }
+  - { label: "Boyle et al. 2017 — Magnesium, Angst & Stress, systematischer Review (Nutrients) · PMID 28445426", url: "https://consensus.app/papers/details/9e0febbbba955a81a827619e2c0cf81e/" }
   - { label: "ClinicalTrials.gov — Magnesium, rekrutierend + kurz vor Start", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
 takeaways:
   - "Die eigentliche Geschichte ist die Versorgung: Geschätzt 31% der Weltbevölkerung — rund 2,4 Milliarden Menschen — erreichen die empfohlene Magnesiumzufuhr nicht (Zhang 2025). Die meisten Kunden sind eher unterversorgt als optimal versorgt."
   - "Beim Schlaf lautet das ehrliche Urteil 'gering und unsicher'. Eine Meta-Analyse bei Älteren fand ~17 Minuten kürzere Einschlafzeit mit Magnesium — aber die Evidenz war von niedriger Qualität (Mah 2021). Einen Versuch wert, kein Versprechen."
   - "Der Krampf-Mythos gehört für die meisten Kunden weggeräumt: Der Cochrane-Review fand keinen relevanten Nutzen bei den häufigen nächtlichen/idiopathischen Wadenkrämpfen Erwachsener (Garrison 2020)."
   - "Die Form zählt mehr als die Dosis-Fixierung: Organische Formen (Citrat, Glycinat) werden besser aufgenommen als billiges Magnesiumoxid (Kappeler 2017). Oxid überspringen."
-  - "Der Blick nach vorn: 290 Magnesium-Studien rekrutieren oder starten bald — u. a. zu Perimenopause-Symptomen, Kraft bei Sarkopenie und Nährstoffverlust unter GLP-1-Abnehmspritzen (ClinicalTrials.gov)."
+  - "Der Blick nach vorn: 295 Magnesium-Studien rekrutieren oder starten bald — u. a. zu Perimenopause-Symptomen, Kraft bei Sarkopenie und Nährstoffverlust unter GLP-1-Abnehmspritzen (ClinicalTrials.gov)."
 figures:
   - { label: "Erwachsene weltweit unter der empfohlenen Magnesiumzufuhr", value: "~31%", note: "≈2,4 Milliarden Menschen erreichen die empfohlene Zufuhr nicht", source: "Zhang et al. 2025, Int J Vitam Nutr Res", url: "https://consensus.app/papers/details/06621026bcc75b378ba87cbf367a737e/" }
   - { label: "Kürzere Einschlafzeit vs. Placebo (ältere Erwachsene)", value: "−17.4 min", note: "Gepoolte Einschlaflatenz, 3 RCTs, 151 Personen; GRADE-Sicherheit: niedrig bis sehr niedrig", source: "Mah et al. 2021, BMC Complement Med Ther", url: "https://consensus.app/papers/details/02d708b5303158ea8215b133d8b7c6d0/" }
   - { label: "Effekt auf häufige nächtliche Wadenkrämpfe nach 4 Wochen", value: "−0.18 Krämpfe/Wo", note: "Nicht statistisch signifikant; moderate Evidenzsicherheit — Magnesium ≈ Placebo bei idiopathischen Krämpfen", source: "Garrison et al. 2020, Cochrane-Review", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
   - { label: "Citrat vs. Oxid — in 24 h aufgenommenes Magnesium", value: "+0.565 mmol", note: "Höhere Magnesiumausscheidung im Urin nach Citrat als nach Oxid; organische Formen werden besser aufgenommen", source: "Kappeler et al. 2017, BMC Nutrition", url: "https://consensus.app/papers/details/bd1a83bd8d3f5169806497f75061880f/" }
   - { label: "Aufsteh-Zeit vom Stuhl bei älteren Frauen (12 Wo, 300 mg/Tag)", value: "−1.31 s", note: "Bessere körperliche Leistung; Effekt am stärksten unterhalb der empfohlenen Zufuhr. Kraft (Griff/Drehmoment) blieb unverändert", source: "Veronese et al. 2014, Am J Clin Nutr", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
-  - { label: "Magnesium-Studien, die rekrutieren oder kurz davorstehen", value: "290", note: "Laufende Pipeline (Stand Juli 2026) — die Fragen, die die Forschung als Nächstes beantwortet", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
+  - { label: "Magnesium-Studien, die rekrutieren oder kurz davorstehen", value: "295", note: "Laufende Pipeline (Stand Juli 2026) — die Fragen, die die Forschung als Nächstes beantwortet", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
 playbook:
   - { move: "Verlagere das Gespräch von 'Supplement' zu 'bekommst du überhaupt genug?'", why: "Rund ein Drittel der Menschen weltweit erreicht die empfohlene Magnesiumzufuhr nicht (Zhang 2025), Frauen und Ältere häufiger. Erst Ernährung — Blattgemüse, Hülsenfrüchte, Nüsse, Vollkorn — dann die Lücke ergänzen. Das ist ehrlicher und nützlicher als Kapseln zu pushen." }
   - { move: "Wenn ein Kunde es fürs Schlafen probieren will, setz die Erwartung auf 'gering, vielleicht'.", why: "Die beste gepoolte Evidenz zeigt einen kleinen, unsicheren Nutzen beim schnelleren Einschlafen bei Älteren (Mah 2021); Beobachtungsdaten sind stärker als die Studien (Arab 2022). Günstig und risikoarm — also als Experiment framen, nicht als Lösung." }
@@ -59,6 +59,7 @@ verdict:
 tags: ["magnesium", "supplements", "sleep", "recovery", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-07", note: "Erste Ausgabe. Evidenz aktuell bis Juli 2026; nach Studienqualität bewertet. Wir aktualisieren, sobald die Pipeline liefert." }
+  - { date: "2026-07-24", note: "Quellen gegen PubMed & ClinicalTrials geprüft; PMIDs ergänzt und die laufende Studienzahl auf 295 aktualisiert." }
 ---
 
 > **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Studie geknüpft — eine Meta-Analyse, einen Cochrane-Review, eine randomisierte Studie oder das Studienregister — und verlinkt. Wir bewerten die Evidenz zusätzlich: Wo sie stark ist, sagen wir das; wo sie noch früh oder widersprüchlich ist, ebenfalls. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Bei Gesundheitsthemen ist eine Quelle, hinter der man nicht stehen kann, schlechter als gar keine. Zuletzt aktualisiert am 7. Juli 2026.
@@ -121,7 +122,7 @@ Es gibt andeutende Hinweise, dass Magnesium bei **subjektiver Angst und Stress**
 
 ## Was gerade bewiesen wird (der Teil, den dir sonst niemand zeigt)
 
-Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **290 Magnesium-Studien**<sup class="fn"><a href="#source-11">11</a></sup>, die rekrutieren oder bald starten — und das Muster zeigt, wohin die Reise geht.
+Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **295 Magnesium-Studien**<sup class="fn"><a href="#source-11">11</a></sup>, die rekrutieren oder bald starten — und das Muster zeigt, wohin die Reise geht.
 
 Drei Stränge lohnen den Blick, denn deine Kunden werden nach allen dreien fragen:
 
