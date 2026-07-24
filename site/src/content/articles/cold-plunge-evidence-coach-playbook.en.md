@@ -15,14 +15,14 @@ author: "Tee Major"
 gated: false
 sources:
   - { label: "Wang et al. 2025 — CWI dose network meta-analysis, 55 RCTs (Frontiers in Physiology) · PMID 40078372", url: "https://consensus.app/papers/details/100f6e26fe8456ff9cb09eabee03a57e/" }
-  - { label: "Piñero et al. 2024 — CWI & hypertrophy meta-analysis (European Journal of Sport Science)", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
+  - { label: "Piñero et al. 2024 — CWI & hypertrophy meta-analysis (European Journal of Sport Science) · DOI 10.1002/ejsc.12074", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
   - { label: "Roberts et al. 2015 — CWI attenuates strength-training adaptation (The Journal of Physiology) · PMID 26174323", url: "https://consensus.app/papers/details/ee0dc836ec8c5c568f5c14d07010538f/" }
   - { label: "Fyfe et al. 2019 — Fibre hypertrophy blunted, strength preserved (Journal of Applied Physiology) · PMID 31513450", url: "https://consensus.app/papers/details/2318409f8493572e976b6a0a2b8b11ca/" }
   - { label: "Veen et al. 2026 — CWI post-match recovery in soccer (Scand J Med Sci Sports) · PMID 41490103", url: "https://consensus.app/papers/details/e688eea8adab59ce866260a36c581860/" }
   - { label: "Cain et al. 2025 — CWI, health & wellbeing meta-analysis (PLOS ONE) · PMID 39879231", url: "https://consensus.app/papers/details/471a9680e2a9539fb107d5fa262143f1/" }
-  - { label: "Kelly et al. 2021 — Mood after a single cold immersion (Lifestyle Medicine)", url: "https://consensus.app/papers/details/d042d770c0425d6ba28469d87f9485d5/" }
+  - { label: "Kelly et al. 2021 — Mood after a single cold immersion (Lifestyle Medicine) · DOI 10.1002/lim2.53", url: "https://consensus.app/papers/details/d042d770c0425d6ba28469d87f9485d5/" }
   - { label: "Barwood et al. 2023 — Cold shock response habituation meta-analysis (J Thermal Biology) · PMID 38211547", url: "https://consensus.app/papers/details/83c83a4d75585c52a86345376c84338f/" }
-  - { label: "Massey et al. 2025 — Water safety & therapeutic claims (Lifestyle Medicine)", url: "https://consensus.app/papers/details/0eea97b49bb650f0844df04ff47d5ed7/" }
+  - { label: "Massey et al. 2025 — Water safety & therapeutic claims (Lifestyle Medicine) · DOI 10.1002/lim2.70046", url: "https://consensus.app/papers/details/0eea97b49bb650f0844df04ff47d5ed7/" }
   - { label: "Pérez et al. 2022 — Brown fat activation & weight loss systematic review (Frontiers in Endocrinology) · PMID 36568070", url: "https://consensus.app/papers/details/e8f2e3928e4b54a785130fba00baf5ef/" }
   - { label: "ClinicalTrials.gov — cold water immersion, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=%22cold+water+immersion%22&aggFilters=status:not%20rec" }
 takeaways:
@@ -34,7 +34,7 @@ takeaways:
   - "The frontier: only 7 cold-water-immersion trials are recruiting or about to start — the interesting ones test sleep quality, hamstring injury recovery, and thermography-guided individual dosing."
 figures:
   - { label: "Best protocol for reducing soreness", value: "SMD −1.45", note: "10–15 min at 11–15°C vs. control; largest DOMS reduction across 55 RCTs", source: "Wang et al. 2025, Frontiers in Physiology", url: "https://consensus.app/papers/details/100f6e26fe8456ff9cb09eabee03a57e/" }
-  - { label: "Hypertrophy cost of post-lift cold", value: "cSMD −0.22", note: "Comparative effect, resistance training + CWI vs. resistance training alone; 8 studies, authors flag fair-to-poor study quality", source: "Piñero et al. 2024, European Journal of Sport Science", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
+  - { label: "Hypertrophy cost of post-lift cold", value: "cSMD −0.22", note: "Comparative effect, resistance training + CWI vs. resistance training alone; 8 studies, authors flag fair-to-poor study quality", source: "Piñero et al. 2024, European Journal of Sport Science · DOI 10.1002/ejsc.12074", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
   - { label: "Strength recovery after a match", value: "SMD 1.02", note: "Maximal voluntary contraction recovery in trained soccer players; prediction interval crossed null, so treat as promising not proven", source: "Veen et al. 2026, Scand J Med Sci Sports", url: "https://consensus.app/papers/details/e688eea8adab59ce866260a36c581860/" }
   - { label: "Stress reduction, 12 hours post-immersion", value: "SMD −1.00", note: "No significant effect immediately, at 1h, 24h or 48h. Eleven studies total, 3,177 participants", source: "Cain et al. 2025, PLOS ONE", url: "https://consensus.app/papers/details/471a9680e2a9539fb107d5fa262143f1/" }
   - { label: "Immersions before cold shock calms down", value: "~4", note: "Heart rate response fell by 14 beats/min after repeated exposure — the safety argument for easing clients in", source: "Barwood et al. 2023, Journal of Thermal Biology", url: "https://consensus.app/papers/details/83c83a4d75585c52a86345376c84338f/" }

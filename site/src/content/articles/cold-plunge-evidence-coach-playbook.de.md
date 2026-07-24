@@ -15,14 +15,14 @@ author: "Tee Major"
 gated: false
 sources:
   - { label: "Wang et al. 2025 — Netzwerk-Meta-Analyse zur CWI-Dosis, 55 RCTs (Frontiers in Physiology) · PMID 40078372", url: "https://consensus.app/papers/details/100f6e26fe8456ff9cb09eabee03a57e/" }
-  - { label: "Piñero et al. 2024 — Kaltwasser & Hypertrophie, Meta-Analyse (European Journal of Sport Science)", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
+  - { label: "Piñero et al. 2024 — Kaltwasser & Hypertrophie, Meta-Analyse (European Journal of Sport Science) · DOI 10.1002/ejsc.12074", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
   - { label: "Roberts et al. 2015 — Kaltwasser dämpft Anpassungen ans Krafttraining (The Journal of Physiology) · PMID 26174323", url: "https://consensus.app/papers/details/ee0dc836ec8c5c568f5c14d07010538f/" }
   - { label: "Fyfe et al. 2019 — Faserhypertrophie gedämpft, Maximalkraft erhalten (Journal of Applied Physiology) · PMID 31513450", url: "https://consensus.app/papers/details/2318409f8493572e976b6a0a2b8b11ca/" }
   - { label: "Veen et al. 2026 — Regeneration nach dem Spiel im Fußball (Scand J Med Sci Sports) · PMID 41490103", url: "https://consensus.app/papers/details/e688eea8adab59ce866260a36c581860/" }
   - { label: "Cain et al. 2025 — Kaltwasser, Gesundheit & Wohlbefinden, Meta-Analyse (PLOS ONE) · PMID 39879231", url: "https://consensus.app/papers/details/471a9680e2a9539fb107d5fa262143f1/" }
-  - { label: "Kelly et al. 2021 — Stimmung nach einmaligem Kaltbad (Lifestyle Medicine)", url: "https://consensus.app/papers/details/d042d770c0425d6ba28469d87f9485d5/" }
+  - { label: "Kelly et al. 2021 — Stimmung nach einmaligem Kaltbad (Lifestyle Medicine) · DOI 10.1002/lim2.53", url: "https://consensus.app/papers/details/d042d770c0425d6ba28469d87f9485d5/" }
   - { label: "Barwood et al. 2023 — Habituation der Kälteschockreaktion, Meta-Analyse (J Thermal Biology) · PMID 38211547", url: "https://consensus.app/papers/details/83c83a4d75585c52a86345376c84338f/" }
-  - { label: "Massey et al. 2025 — Wassersicherheit & therapeutische Behauptungen (Lifestyle Medicine)", url: "https://consensus.app/papers/details/0eea97b49bb650f0844df04ff47d5ed7/" }
+  - { label: "Massey et al. 2025 — Wassersicherheit & therapeutische Behauptungen (Lifestyle Medicine) · DOI 10.1002/lim2.70046", url: "https://consensus.app/papers/details/0eea97b49bb650f0844df04ff47d5ed7/" }
   - { label: "Pérez et al. 2022 — Braunes Fettgewebe & Gewichtsabnahme, Systematic Review (Frontiers in Endocrinology) · PMID 36568070", url: "https://consensus.app/papers/details/e8f2e3928e4b54a785130fba00baf5ef/" }
   - { label: "ClinicalTrials.gov — Kaltwasserimmersion, rekrutierend + kurz vor Start", url: "https://clinicaltrials.gov/search?intr=%22cold+water+immersion%22&aggFilters=status:not%20rec" }
 takeaways:
@@ -34,7 +34,7 @@ takeaways:
   - "Sicherheit zuerst: Die Kälteschockreaktion gewöhnt sich erst nach etwa vier Bädern ab, die Herzfrequenzreaktion sank dabei um 14 Schläge/Minute (Barwood 2023). Deshalb: langsam heranführen, nie allein."
 figures:
   - { label: "Bestes Protokoll gegen Muskelkater", value: "SMD −1,45", note: "10–15 Min bei 11–15 °C vs. Kontrolle; stärkste DOMS-Reduktion über 55 RCTs", source: "Wang et al. 2025, Frontiers in Physiology", url: "https://consensus.app/papers/details/100f6e26fe8456ff9cb09eabee03a57e/" }
-  - { label: "Hypertrophie-Kosten nach dem Krafttraining", value: "cSMD −0,22", note: "Vergleichender Effekt, Krafttraining + Kaltwasser vs. Krafttraining allein; 8 Studien, Autoren weisen auf mäßige Studienqualität hin", source: "Piñero et al. 2024, European Journal of Sport Science", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
+  - { label: "Hypertrophie-Kosten nach dem Krafttraining", value: "cSMD −0,22", note: "Vergleichender Effekt, Krafttraining + Kaltwasser vs. Krafttraining allein; 8 Studien, Autoren weisen auf mäßige Studienqualität hin", source: "Piñero et al. 2024, European Journal of Sport Science · DOI 10.1002/ejsc.12074", url: "https://consensus.app/papers/details/9fee90ddbe5450959c46c715147d9ebb/" }
   - { label: "Krafterholung nach dem Spiel", value: "SMD 1,02", note: "Maximale willkürliche Kontraktion bei trainierten Fußballspielern; Prognoseintervall schloss den Nulleffekt ein — vielversprechend, nicht bewiesen", source: "Veen et al. 2026, Scand J Med Sci Sports", url: "https://consensus.app/papers/details/e688eea8adab59ce866260a36c581860/" }
   - { label: "Stressreduktion, 12 Stunden nach dem Bad", value: "SMD −1,00", note: "Kein signifikanter Effekt unmittelbar, nach 1 h, 24 h oder 48 h. Insgesamt 11 Studien, 3.177 Teilnehmende", source: "Cain et al. 2025, PLOS ONE", url: "https://consensus.app/papers/details/471a9680e2a9539fb107d5fa262143f1/" }
   - { label: "Bäder bis die Kälteschockreaktion nachlässt", value: "~4", note: "Die Herzfrequenzreaktion sank nach wiederholter Exposition um 14 Schläge/Minute", source: "Barwood et al. 2023, Journal of Thermal Biology", url: "https://consensus.app/papers/details/83c83a4d75585c52a86345376c84338f/" }
