@@ -73,7 +73,7 @@ Ein Hinweis vorweg, denn er ändert alles: Magnesiums stärkste Geschichte ist k
 
 ## Was wirklich gesichert ist: viele sind unterversorgt
 
-Das ist der Teil mit dem festesten Boden. Geschätzt **31% der Weltbevölkerung — rund 2,4 Milliarden Menschen — erreichen die empfohlene Magnesiumzufuhr nicht**, getrieben von modernen Ernährungsweisen mit wenig Vollkorn und Gemüse, von Lebensmittelverarbeitung und ausgelaugten Böden. Die Zufuhr fällt bei Frauen und älteren Erwachsenen tendenziell niedriger aus.
+Das ist der Teil mit dem festesten Boden. Geschätzt **31% der Weltbevölkerung — rund 2,4 Milliarden Menschen — erreichen die empfohlene Magnesiumzufuhr nicht**<sup class="fn"><a href="#source-1">1</a></sup>, getrieben von modernen Ernährungsweisen mit wenig Vollkorn und Gemüse, von Lebensmittelverarbeitung und ausgelaugten Böden. Die Zufuhr fällt bei Frauen und älteren Erwachsenen tendenziell niedriger aus.
 
 Das ist relevant fürs Coaching. Magnesium trägt zu einem normalen Energiestoffwechsel, zur normalen Muskelfunktion und zur normalen Funktion des Nervensystems bei — das ist keine Exotik, das ist Grundinstallation. Ist ein Kunde tatsächlich knapp versorgt, kann Auffüllen helfen, sich besser zu fühlen und zu funktionieren. Ist er bereits gut versorgt, bringt mehr keine Extra-Leistung. Die ganze Frage lautet: Bekommt er genug, und woher?
 
@@ -83,9 +83,9 @@ Erst die Ernährung ist die ehrliche Antwort — Blattgemüse, Hülsenfrüchte, 
 
 ## Schlaf: gering, halbwegs real, überverkauft
 
-Das ist die Behauptung hinter den meisten Gummi-Verkäufen — also sei präzise. Eine Meta-Analyse von 2021 bei älteren Erwachsenen mit Insomnie fand, dass Menschen mit Magnesium etwa **17 Minuten schneller** einschliefen als mit Placebo — eine echte Richtung, aber die Autoren stuften die zugrunde liegende Evidenz als *niedrig bis sehr niedrig* ein. Ein breiterer systematischer Review von 2022 fand genau die Spaltung, die du Kunden nennen solltest: **Beobachtungsstudien** verknüpfen bessere Magnesiumversorgung mit besserem Schlaf, während die **randomisierten Studien** widersprüchlich sind.
+Das ist die Behauptung hinter den meisten Gummi-Verkäufen — also sei präzise. Eine Meta-Analyse von 2021 bei älteren Erwachsenen mit Insomnie fand, dass Menschen mit Magnesium etwa **17 Minuten schneller** einschliefen als mit Placebo — eine echte Richtung, aber die Autoren stuften die zugrunde liegende Evidenz als *niedrig bis sehr niedrig* ein.<sup class="fn"><a href="#source-2">2</a></sup> Ein breiterer systematischer Review von 2022 fand genau die Spaltung, die du Kunden nennen solltest: **Beobachtungsstudien** verknüpfen bessere Magnesiumversorgung mit besserem Schlaf, während die **randomisierten Studien** widersprüchlich sind.<sup class="fn"><a href="#source-3">3</a></sup>
 
-Neuere Pilotarbeit ist mild ermutigend — eine Crossover-Studie von 2024 bei Erwachsenen mit schlechtem Schlaf berichtete Verbesserungen bei Schlafqualität und Stimmung — aber sie ist klein und vorläufig. Unterm Strich lautet das ehrliche Urteil: möglicherweise hilfreich, besonders wenn der Kunde ohnehin knapp versorgt ist, aber weit von einer sicheren Lösung entfernt. Ein Effekt auf den Schlaf ist kein zugelassener gesundheitsbezogener Vorteil — es **wird untersucht**, mehr nicht.
+Neuere Pilotarbeit ist mild ermutigend — eine Crossover-Studie von 2024 bei Erwachsenen mit schlechtem Schlaf berichtete Verbesserungen bei Schlafqualität und Stimmung<sup class="fn"><a href="#source-4">4</a></sup> — aber sie ist klein und vorläufig. Unterm Strich lautet das ehrliche Urteil: möglicherweise hilfreich, besonders wenn der Kunde ohnehin knapp versorgt ist, aber weit von einer sicheren Lösung entfernt. Ein Effekt auf den Schlaf ist kein zugelassener gesundheitsbezogener Vorteil — es **wird untersucht**, mehr nicht.
 
 Verkauf es also als Experiment. Günstig, risikoarm, und wenn es hilft, umso besser. Lass einen Kunden nur nicht glauben, ein Löffel Magnesium schlage das echte Aufräumen von Schlafhygiene, Koffein-Timing und Trainingslast.
 
@@ -93,7 +93,7 @@ Verkauf es also als Experiment. Günstig, risikoarm, und wenn es hilft, umso bes
 
 ## Krämpfe: der Mythos, den du für die meisten Kunden wegräumen solltest
 
-Hier widersprechen sich Volksglaube und Evidenz frontal. Für die Alltagsbeschwerde — nächtliche oder idiopathische Wadenkrämpfe bei ansonsten gesunden Erwachsenen — ist der **Cochrane-Review** so klar, wie es hier wird: Magnesium wirkt **nicht besser als Placebo**. Über fünf Studien gepoolt betrug der Unterschied **−0,18 Krämpfe pro Woche** nach vier Wochen, nicht statistisch signifikant, bei moderater Evidenzsicherheit. Auch Krampfintensität und -dauer bewegten sich nicht.
+Hier widersprechen sich Volksglaube und Evidenz frontal. Für die Alltagsbeschwerde — nächtliche oder idiopathische Wadenkrämpfe bei ansonsten gesunden Erwachsenen — ist der **Cochrane-Review** so klar, wie es hier wird: Magnesium wirkt **nicht besser als Placebo**. Über fünf Studien gepoolt betrug der Unterschied **−0,18 Krämpfe pro Woche** nach vier Wochen, nicht statistisch signifikant, bei moderater Evidenzsicherheit. Auch Krampfintensität und -dauer bewegten sich nicht.<sup class="fn"><a href="#source-5">5</a></sup>
 
 Wenn ein Kunde dir also sagt, er nehme Magnesium gegen seine nächtlichen Wadenkrämpfe, bist du nicht der Böse, wenn du sanft anmerkst, dass die Studien das nicht stützen. Vielleicht ist es ein Placebo, das ihm guttut — aber nicht die Lösung, die die Verpackung suggeriert.
 
@@ -103,9 +103,9 @@ Zwei ehrliche Einschränkungen. Bei schwangerschaftsbedingten Krämpfen ist die 
 
 ## Kraft und Leistung: eine Geschichte über Mangelausgleich
 
-Wenn du hoffst, Magnesium sei ein Leistungsverstärker wie Kreatin oder Koffein, dämpf das. Der meistzitierte Review kommt zu dem Schluss, dass Magnesiums Leistungsbezug vor allem dort real ist, wo Menschen von Anfang an **unterversorgt oder älter** waren — ein Defizit ausgleichen, nicht einen gesunden Sportler tunen.
+Wenn du hoffst, Magnesium sei ein Leistungsverstärker wie Kreatin oder Koffein, dämpf das. Der meistzitierte Review kommt zu dem Schluss, dass Magnesiums Leistungsbezug vor allem dort real ist, wo Menschen von Anfang an **unterversorgt oder älter** waren — ein Defizit ausgleichen, nicht einen gesunden Sportler tunen.<sup class="fn"><a href="#source-9">9</a></sup>
 
-Die sauberste Studie bringt es auf den Punkt: 12 Wochen mit 300 mg/Tag bei älteren Frauen verbesserten die *körperliche Leistung* — die Aufsteh-Zeit vom Stuhl sank um **1,31 Sekunden** und die Gehgeschwindigkeit stieg — und der Effekt war unterhalb der empfohlenen Zufuhr am stärksten. Aber beachte, was sich in derselben Studie *nicht* bewegte: Griffkraft und Kniedrehmoment, die direkten Kraftmaße, zeigten keine signifikante Veränderung.
+Die sauberste Studie bringt es auf den Punkt: 12 Wochen mit 300 mg/Tag bei älteren Frauen verbesserten die *körperliche Leistung* — die Aufsteh-Zeit vom Stuhl sank um **1,31 Sekunden** und die Gehgeschwindigkeit stieg — und der Effekt war unterhalb der empfohlenen Zufuhr am stärksten. Aber beachte, was sich in derselben Studie *nicht* bewegte: Griffkraft und Kniedrehmoment, die direkten Kraftmaße, zeigten keine signifikante Veränderung.<sup class="fn"><a href="#source-8">8</a></sup>
 
 Für den Coach heißt das: Magnesium ist kein Kraft-Supplement, sondern ein "sorg dafür, dass der Tank nicht leer ist"-Supplement. Behebe einen Mangel, und die Funktion verbessert sich; füll einen ohnehin gut versorgten Sportler auf, und daraus wird kein PR.
 
@@ -115,13 +115,13 @@ Für den Coach heißt das: Magnesium ist kein Kraft-Supplement, sondern ein "sor
 
 Hier verdient sich ein ehrlicher Coach Vertrauen: indem er die Grenze zwischen *gestützt* und *wird untersucht* kennt.
 
-Es gibt andeutende Hinweise, dass Magnesium bei **subjektiver Angst und Stress** hilft — ein systematischer Review fand Signale eines Nutzens, aber speziell in bereits belasteten Gruppen (leichte Angst, PMS), und bewertete die Gesamtqualität als schwach. Das ist ein "das wird untersucht", keine Aussage, die du einem Kunden zuschreibst. Alles, was Stimmung, Angst oder eine Erkrankung berührt, ist ein Satz für eine Fachperson, nicht für die Trainingsfläche. Wenn du dich je sagen hörst, Magnesium "behandle" etwas, halt inne.
+Es gibt andeutende Hinweise, dass Magnesium bei **subjektiver Angst und Stress** hilft — ein systematischer Review fand Signale eines Nutzens, aber speziell in bereits belasteten Gruppen (leichte Angst, PMS), und bewertete die Gesamtqualität als schwach.<sup class="fn"><a href="#source-10">10</a></sup> Das ist ein "das wird untersucht", keine Aussage, die du einem Kunden zuschreibst. Alles, was Stimmung, Angst oder eine Erkrankung berührt, ist ein Satz für eine Fachperson, nicht für die Trainingsfläche. Wenn du dich je sagen hörst, Magnesium "behandle" etwas, halt inne.
 
 **Evidenzgrad: früh. Stress/Stimmung als "wird erforscht" rahmen, nie als Versprechen, und alles Klinische weiterleiten.**
 
 ## Was gerade bewiesen wird (der Teil, den dir sonst niemand zeigt)
 
-Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **290 Magnesium-Studien**, die rekrutieren oder bald starten — und das Muster zeigt, wohin die Reise geht.
+Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **290 Magnesium-Studien**<sup class="fn"><a href="#source-11">11</a></sup>, die rekrutieren oder bald starten — und das Muster zeigt, wohin die Reise geht.
 
 Drei Stränge lohnen den Blick, denn deine Kunden werden nach allen dreien fragen:
 
@@ -137,7 +137,7 @@ Wir aktualisieren diesen Beitrag, sobald diese Studien Ergebnisse liefern — da
 
 Wenn der nächste Kunde fragt, hier das Ganze in Klartext:
 
-*"Magnesium ist ein echtes Thema — viele bekommen tatsächlich zu wenig, es lohnt sich also. Hol es zuerst aus dem Essen: Grünzeug, Hülsenfrüchte, Nüsse, Vollkorn. Wenn du supplementieren willst, nimm Citrat oder Glycinat statt billigem Oxid, eine Alltagsdosis reicht. Fürs Schlafen hilft es vielleicht ein bisschen, vor allem wenn du knapp versorgt bist — behandle es als Experiment, nicht als Kur. Bei deinen nächtlichen Krämpfen bin ich ehrlich: Die guten Studien zeigen keinen echten Effekt, verlass dich nicht drauf. Und wenn irgendetwas mit einer Erkrankung, einer Schwangerschaft oder Medikamenten zu tun hat, ist das ein Gespräch für deinen Arzt, nicht für mich."*
+*"Magnesium ist ein echtes Thema — viele bekommen tatsächlich zu wenig, es lohnt sich also. Hol es zuerst aus dem Essen: Grünzeug, Hülsenfrüchte, Nüsse, Vollkorn. Wenn du supplementieren willst, nimm Citrat oder Glycinat statt billigem Oxid,<sup class="fn"><a href="#source-6">6</a>,&#8202;<a href="#source-7">7</a></sup> eine Alltagsdosis reicht. Fürs Schlafen hilft es vielleicht ein bisschen, vor allem wenn du knapp versorgt bist — behandle es als Experiment, nicht als Kur. Bei deinen nächtlichen Krämpfen bin ich ehrlich: Die guten Studien zeigen keinen echten Effekt, verlass dich nicht drauf. Und wenn irgendetwas mit einer Erkrankung, einer Schwangerschaft oder Medikamenten zu tun hat, ist das ein Gespräch für deinen Arzt, nicht für mich."*
 
 Das war's. Kein Abgleiten in Hype, keine Bro-Science, keine Überversprechen. Nur die Evidenz, übersetzt in etwas, mit dem ein Mensch handeln kann — und genau das ist der ganze Job.
 

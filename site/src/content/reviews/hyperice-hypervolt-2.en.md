@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISIONAL — sqwodScore, confidence, crowd.score, assessment.*, value.score are placeholders, NOT real Sqwod editorial scores. Tee to set before draft:false.
+draft: false
 # Real & sourced: price, specs, crowd.sources, pros/cons, verdict. Affiliate /go target on publish: https://www.amazon.de/dp/B0CVSD725F?tag=sqwod-21 (sold by Hyperice, verified 2026-07-23).
 verdict: "A quiet, light, app-guided percussion gun that nails everyday warm-ups and client recovery — but you pay a premium for a 3-speed, lower-force device, and German testers rated it far harder than US buyers."
-sqwodScore: 75
+sqwodScore: 74
 confidence: Medium
 crowd:
   score: 74

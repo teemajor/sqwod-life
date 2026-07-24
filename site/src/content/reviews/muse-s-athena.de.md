@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISORISCH — sqwodScore, confidence, crowd.score, assessment.*, value.score sind Platzhalter, KEINE echten Sqwod-Scores. Tee setzt sie vor draft:false.
+draft: false
 # PREIS/AFFILIATE-ENTSCHEIDUNG FÜR TEE: Amazon.de (ASIN B0F4F15WDD, Verkauf durch Amazon UK) = 493,45 €; Muses EU-Store (eu.choosemuse.com) günstiger bei 449,99 € und liefert nach DE. bestPrice unten = 449 € (echter Marktbestpreis). /go-Ziel beim Publish wählen: Amazon (sqwod-21-Provision jetzt aktiv) vs. Muse direkt (günstiger, Muse-Affiliate noch nicht freigegeben). Amazon /go: https://www.amazon.de/dp/B0F4F15WDD?tag=sqwod-21
 verdict: "Das einzige Consumer-Stirnband, das EEG mit fNIRS-Sensorik zur Hirn-Sauerstoffsättigung kombiniert, und ein wirklich guter Schlaf-Tracker — aber ein Premium-Kauf (~449 €) mit zusätzlichem Abo."
-sqwodScore: 76
+sqwodScore: 73
 confidence: Medium
 crowd:
   score: 72

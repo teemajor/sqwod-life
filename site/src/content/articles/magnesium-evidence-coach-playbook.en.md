@@ -73,7 +73,7 @@ One framing up front, because it changes everything: magnesium's strongest story
 
 ## What's actually solid: a lot of people are low
 
-This is the part with the firmest ground under it. An estimated **31% of the global population — roughly 2.4 billion people — don't meet recommended magnesium intake**, driven by modern diets low in whole grains and vegetables, food processing, and soil depletion. Intake skews lower in women and older adults specifically.
+This is the part with the firmest ground under it. An estimated **31% of the global population — roughly 2.4 billion people — don't meet recommended magnesium intake**<sup class="fn"><a href="#source-1">1</a></sup>, driven by modern diets low in whole grains and vegetables, food processing, and soil depletion. Intake skews lower in women and older adults specifically.
 
 That matters for how you coach. Magnesium runs energy metabolism, muscle function, and the nervous system — it's not exotic, it's foundational plumbing. If a client is genuinely short on it, topping up can help them feel and function better. If they're already replete, piling on more doesn't buy extra performance. The whole game is: are they getting enough, and from where?
 
@@ -83,9 +83,9 @@ Food first is the honest answer — leafy greens, legumes, nuts, seeds, whole gr
 
 ## Sleep: modest, real-ish, and oversold
 
-This is the claim driving most of the gummy sales, so be precise. A 2021 meta-analysis of older adults with insomnia found people on magnesium fell asleep about **17 minutes faster** than on placebo — a real direction, but the authors rated the underlying evidence *low to very low quality*. A broader 2022 systematic review found the same split you should quote to clients: **observational** studies link better magnesium status to better sleep, while the **randomised trials** are contradictory.
+This is the claim driving most of the gummy sales, so be precise. A 2021 meta-analysis of older adults with insomnia found people on magnesium fell asleep about **17 minutes faster** than on placebo — a real direction, but the authors rated the underlying evidence *low to very low quality*.<sup class="fn"><a href="#source-2">2</a></sup> A broader 2022 systematic review found the same split you should quote to clients: **observational** studies link better magnesium status to better sleep, while the **randomised trials** are contradictory.<sup class="fn"><a href="#source-3">3</a></sup>
 
-Newer pilot work is mildly encouraging — a 2024 crossover trial in adults with poor sleep reported improvements in sleep quality and mood — but it's small and preliminary. Add it up and the honest verdict is: possibly helpful, especially if the client is low to begin with, but nowhere near a guaranteed fix.
+Newer pilot work is mildly encouraging — a 2024 crossover trial in adults with poor sleep reported improvements in sleep quality and mood<sup class="fn"><a href="#source-4">4</a></sup> — but it's small and preliminary. Add it up and the honest verdict is: possibly helpful, especially if the client is low to begin with, but nowhere near a guaranteed fix.
 
 So sell it as an experiment. It's cheap, low-risk, and if it helps, great. Just don't let a client believe a scoop of magnesium will out-perform actually fixing their sleep hygiene, caffeine timing, and training load.
 
@@ -93,7 +93,7 @@ So sell it as an experiment. It's cheap, low-risk, and if it helps, great. Just 
 
 ## Cramps: the myth to retire for most clients
 
-Here's where the popular belief and the evidence flatly disagree. For the everyday complaint — nighttime or idiopathic leg cramps in otherwise healthy adults — the **Cochrane review** is about as clear as these things get: magnesium works **no better than placebo**. Pooling five studies, the difference was **−0.18 cramps per week** at four weeks, not statistically significant, with moderate-certainty evidence. Cramp intensity and duration didn't budge either.
+Here's where the popular belief and the evidence flatly disagree. For the everyday complaint — nighttime or idiopathic leg cramps in otherwise healthy adults — the **Cochrane review** is about as clear as these things get: magnesium works **no better than placebo**. Pooling five studies, the difference was **−0.18 cramps per week** at four weeks, not statistically significant, with moderate-certainty evidence. Cramp intensity and duration didn't budge either.<sup class="fn"><a href="#source-5">5</a></sup>
 
 So when a client tells you they take magnesium for their nighttime calf cramps, you're not the bad guy for gently noting the trials don't back it. It might be a placebo they enjoy — but it's not the fix the bottle implies.
 
@@ -103,9 +103,9 @@ Two honest caveats. Pregnancy-associated cramps are a genuinely *conflicting* li
 
 ## Strength and performance: it's a deficiency-correction story
 
-If you're hoping magnesium is an ergogenic aid like creatine or caffeine, temper it. The most-cited review concludes magnesium's performance links are real mainly where people were **deficient or older** to begin with — correcting a shortfall, not supercharging a healthy athlete.
+If you're hoping magnesium is an ergogenic aid like creatine or caffeine, temper it. The most-cited review concludes magnesium's performance links are real mainly where people were **deficient or older** to begin with — correcting a shortfall, not supercharging a healthy athlete.<sup class="fn"><a href="#source-9">9</a></sup>
 
-The cleanest trial makes the point: 12 weeks of 300 mg/day in older women improved *physical performance* — chair-stand time dropped by **1.31 seconds** and walking speed rose — and the effect was strongest in those below the RDA. But notice what *didn't* move in that same trial: grip strength and knee torque, the direct strength measures, showed no significant change.
+The cleanest trial makes the point: 12 weeks of 300 mg/day in older women improved *physical performance* — chair-stand time dropped by **1.31 seconds** and walking speed rose — and the effect was strongest in those below the RDA. But notice what *didn't* move in that same trial: grip strength and knee torque, the direct strength measures, showed no significant change.<sup class="fn"><a href="#source-8">8</a></sup>
 
 The takeaway for a coach: magnesium isn't a strength supplement. It's a "make sure the tank isn't empty" supplement. Fix a deficiency and function improves; top up an already-replete lifter and you won't see a PR from it.
 
@@ -115,13 +115,13 @@ The takeaway for a coach: magnesium isn't a strength supplement. It's a "make su
 
 This is where an honest coach earns trust: knowing the line between *supported* and *being studied*.
 
-There's suggestive evidence that magnesium helps **subjective anxiety and stress** — a systematic review found signals of benefit, but specifically in already-vulnerable groups (mild anxiety, PMS), and rated the overall quality as poor. That's a "researchers are studying this," not a claim you attach to a client. Anything touching mood, anxiety, or a medical condition is a sentence for a professional, not the gym floor. If you ever hear yourself say magnesium "treats" something, stop.
+There's suggestive evidence that magnesium helps **subjective anxiety and stress** — a systematic review found signals of benefit, but specifically in already-vulnerable groups (mild anxiety, PMS), and rated the overall quality as poor.<sup class="fn"><a href="#source-10">10</a></sup> That's a "researchers are studying this," not a claim you attach to a client. Anything touching mood, anxiety, or a medical condition is a sentence for a professional, not the gym floor. If you ever hear yourself say magnesium "treats" something, stop.
 
 **Evidence grade: early. Frame stress/mood as "being researched," never as a promise, and refer anything clinical out.**
 
 ## What's about to be proven (the part nobody else shows you)
 
-Here's what a static supplement encyclopedia can't give you: the live edge of the field. Right now the clinical registry lists **290 magnesium trials recruiting or about to start** — and the pattern tells you where the puck is going.
+Here's what a static supplement encyclopedia can't give you: the live edge of the field. Right now the clinical registry lists **290 magnesium trials recruiting or about to start**<sup class="fn"><a href="#source-11">11</a></sup> — and the pattern tells you where the puck is going.
 
 Three threads worth watching, because your clients will ask about all of them:
 
@@ -137,7 +137,7 @@ We'll update this piece as those trials read out — that's the point of an evid
 
 When the next client asks, here's the whole thing in plain language:
 
-*"Magnesium's a real one — a lot of people genuinely don't get enough, so it's worth caring about. Get it from food first: greens, beans, nuts, whole grains. If you want to supplement, use citrate or glycinate, not the cheap oxide, and a everyday dose is fine. For sleep it might help a little, especially if you're low — treat it as an experiment, not a cure. For your nighttime cramps, I'll be honest: the good studies don't really show it working, so don't count on it. And if there's anything going on with a medical condition, pregnancy, or medication, that's a conversation for your doctor, not me."*
+*"Magnesium's a real one — a lot of people genuinely don't get enough, so it's worth caring about. Get it from food first: greens, beans, nuts, whole grains. If you want to supplement, use citrate or glycinate, not the cheap oxide,<sup class="fn"><a href="#source-6">6</a>,&#8202;<a href="#source-7">7</a></sup> and a everyday dose is fine. For sleep it might help a little, especially if you're low — treat it as an experiment, not a cure. For your nighttime cramps, I'll be honest: the good studies don't really show it working, so don't count on it. And if there's anything going on with a medical condition, pregnancy, or medication, that's a conversation for your doctor, not me."*
 
 That's it. No hedging into hype, no bro-science, no overpromising. Just the evidence, translated into something a human can act on — which is the entire job.
 

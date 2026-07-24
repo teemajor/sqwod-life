@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISORISCH — sqwodScore, confidence, crowd.score, assessment.*, value.score sind Platzhalter, KEINE echten Sqwod-Scores. Tee setzt sie vor draft:false.
+draft: false
 # DTC (offiziell nicht auf Amazon). Deutscher Store: aloyoga.com/en-de — /go beim Publish (Impact/CJ/direct offen). value.bestPrice = 128 $ (7/8) — Live-EUR-Preis auf der en-de-Produktseite PRÜFEN. Crowd = Produkt-Ebene (hoch) vs. Service-Ebene (niedrig) — getrennt gehalten.
 verdict: "Eine langlebige, kompressive, optisch hochwertige Legging, die auf Produktebene stark abschneidet — schwächer beim Service-Ruf, mit Premium-Preis und ohne Taschen."
-sqwodScore: 74
+sqwodScore: 70
 confidence: Medium
 crowd:
   score: 68

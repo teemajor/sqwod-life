@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISIONAL — sqwodScore, confidence, crowd.score, assessment.*, value.score are placeholders, NOT real Sqwod editorial scores. Tee to set before draft:false.
+draft: false
 # DTC (not on Amazon officially). Has a German store: aloyoga.com/en-de — /go on publish (pending Impact/CJ/direct). value.bestPrice = $128 (7/8) — CONFIRM live EUR price on the en-de product page. Crowd = product-level (high) vs service-level (low) — kept distinct.
 verdict: "A durable, compressive, aesthetically premium legging that rates strongly on product — weaker on brand-service reputation, and a premium price with no pockets."
-sqwodScore: 74
+sqwodScore: 70
 confidence: Medium
 crowd:
   score: 68

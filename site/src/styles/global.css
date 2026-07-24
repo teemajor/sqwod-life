@@ -66,6 +66,12 @@ h2{font-size:24px;letter-spacing:-.02em;margin:26px 0 10px}
 .verified-tag{display:inline-flex;align-items:center;gap:6px;font-size:10px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--g4);border-radius:999px;padding:5px 10px;color:var(--g1)}
 .prose{font-size:16px;line-height:1.6;color:var(--g1)}
 .prose p{margin:0 0 16px}
+/* footnote citation markers in article body — superscript numbers that jump to the Sources list */
+.prose sup.fn{line-height:0}
+.prose sup.fn a{color:var(--accent);text-decoration:none;font-weight:700;font-size:.72em;padding:0 1px}
+.prose sup.fn a:hover{text-decoration:underline}
+.src-list li{scroll-margin-top:90px}
+.src-list li:target{background:var(--accent-soft);border-radius:6px;outline:2px solid var(--accent-line);outline-offset:2px}
 /* code blocks: wrap (no left-right scroll), on-brand, with a one-click copy button */
 .prose pre{position:relative;white-space:pre-wrap!important;word-break:break-word;overflow-wrap:anywhere;
   background:var(--panel)!important;border:1px solid var(--line);border-radius:10px;

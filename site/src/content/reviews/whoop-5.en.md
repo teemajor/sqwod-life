@@ -12,12 +12,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# Current-gen page. Factual fields sourced & real. PROVISIONAL editorial numbers carried from the
-# Whoop 4.0 review — set the real Sqwod Score, confidence & assessment before publishing (draft:false).
+draft: false
 # NOTE: EUR membership pricing not officially confirmed at research time — verify before publish.
 verdict: "A 14-day battery, a 7% smaller band, on-demand ECG and daily blood-pressure insights — the biggest Whoop leap yet. It's still screenless, still subscription-only, and heart-rate accuracy still isn't quite elite."
-sqwodScore: 85
+sqwodScore: 83
 confidence: Medium
 crowd:
   score: 84
@@ -42,7 +40,7 @@ value:
   score: 72
   bestPrice: 199
   currency: EUR
-  subscription: "from ~€199/yr membership — hardware included (MG tier adds ECG)"
+  subscription: "One €199/yr · Peak €264/yr · Life (MG) €399/yr — hardware included"
 pros:
   - "14+ day battery (was ~4–5) — charges on the wrist"
   - "On-demand ECG + daily blood-pressure insights; Healthspan metrics"

@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISORISCH — sqwodScore, confidence, crowd.score, assessment.*, value.score sind Platzhalter, KEINE echten Sqwod-Scores. Tee setzt sie vor draft:false.
+draft: false
 # DTC-Abo. Versand nur USA/Kanada/UK — NICHT nach Deutschland/EU (Weiterleitung nötig). /go beim Publish: ritual.com (Impact/CJ/direct offen). Auch bei Amazon US / Walmart / iHerb (nicht DE). Kein offizieller EUR-Preis.
 verdict: "Ein transparentes, USP-verifiziertes veganes Multivitamin mit bewusst minimalistischer 9-Nährstoff-Formel und starken Crowd-Bewertungen — aber Premium-Abo-Preis und kein Direktversand nach Deutschland."
-sqwodScore: 77
+sqwodScore: 78
 confidence: Medium
 crowd:
   score: 82

@@ -14,8 +14,7 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISORISCH — sqwodScore, confidence, crowd.score, assessment.*, value.score sind Platzhalter, KEINE echten Sqwod-Scores. Tee setzt sie vor draft:false.
+draft: false
 # DTC-Abo, NICHT offiziell auf Amazon. Kein Direktversand nach DE/EU (Paketweiterleitung + 19% MwSt). /go beim Publish: seed.com (Impact/CJ/direct offen). On-site 4,6★/10k+ ist markeneigen. Klinische Evidenz ist herstellerfinanziert — Vorbehalt beibehalten.
 verdict: "Ein hochwertiges, gut formuliertes Synbiotikum mit echten (wenn auch herstellerfinanzierten) Studien und starken Kundenbewertungen — doch das ~50-$-Abo und kein Direktversand nach Deutschland machen es lokal schwer verkäuflich."
 sqwodScore: 76

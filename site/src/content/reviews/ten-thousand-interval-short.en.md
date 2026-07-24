@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISIONAL — sqwodScore, confidence, crowd.score, assessment.*, value.score are placeholders, NOT real Sqwod editorial scores. Tee to set before draft:false.
+draft: false
 # DTC, NOT on Amazon. Ten Thousand ships to US/Canada only — no direct DE/EU delivery (via Mr Porter or EU reseller WODgear.nl ~€68). /go on publish: tenthousand.cc (pending Impact/CJ/direct). On-site 4.9★ count is brand-hosted (non-independent).
 verdict: "A durable, highly mobile do-it-all training short that reviewers rate well — let down for German buyers by US-only direct shipping and mixed post-sale support."
-sqwodScore: 78
+sqwodScore: 79
 confidence: Medium
 crowd:
   score: 82

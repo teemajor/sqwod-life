@@ -12,10 +12,8 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
+draft: false
 # HINWEIS: Aktuelle Generation. Fakten (Preis, Specs, Bewertungen, Pro/Contra) sind belegt & real.
-# PROVISORISCHE redaktionelle Werte aus dem Series-9-Test übernommen — echten Sqwod Score,
-# Confidence und Assessment setzen, bevor draft:false zum Veröffentlichen gesetzt wird.
 verdict: "Die Akkulaufzeit reicht endlich — bis zu 24 Stunden — und Bluthochdruck-Hinweise plus 5G bringen echte Gesundheits-Mehrwerte. Aber es ist ein kleiner Sprung: Besitzer einer Series 9 oder 10 gewinnen wenig, und die günstigere SE unterbietet sie."
 sqwodScore: 84
 confidence: High

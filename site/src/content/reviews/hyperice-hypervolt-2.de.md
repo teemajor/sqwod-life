@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISORISCH — sqwodScore, confidence, crowd.score, assessment.*, value.score sind Platzhalter, KEINE echten Sqwod-Scores. Tee setzt sie vor draft:false.
+draft: false
 # Real & belegt: Preis, Specs, crowd.sources, Pro/Contra, Verdict. Affiliate-/go-Ziel beim Publish: https://www.amazon.de/dp/B0CVSD725F?tag=sqwod-21 (Verkauf durch Hyperice, geprüft 2026-07-23).
 verdict: "Eine leise, leichte, app-geführte Massagepistole für den Alltag — Warm-up und Kund:innen-Recovery. Aber man zahlt Premium für ein Gerät mit nur drei Stufen und wenig Kraft, und deutsche Tester bewerteten sie deutlich härter als US-Käufer."
-sqwodScore: 75
+sqwodScore: 74
 confidence: Medium
 crowd:
   score: 74

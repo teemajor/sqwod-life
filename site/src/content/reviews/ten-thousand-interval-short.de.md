@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISORISCH — sqwodScore, confidence, crowd.score, assessment.*, value.score sind Platzhalter, KEINE echten Sqwod-Scores. Tee setzt sie vor draft:false.
+draft: false
 # DTC, NICHT auf Amazon. Ten Thousand liefert nur in die USA/Kanada — kein Direktversand nach DE/EU (über Mr Porter oder EU-Händler WODgear.nl ~68 €). /go beim Publish: tenthousand.cc (Impact/CJ/direct offen). On-site-4,9★-Zahl ist markeneigen (nicht unabhängig).
 verdict: "Eine langlebige, extrem bewegliche Allround-Trainingshose, die von Testern gut bewertet wird — für deutsche Käufer getrübt durch US-only-Versand und durchwachsenen Support nach dem Kauf."
-sqwodScore: 78
+sqwodScore: 79
 confidence: Medium
 crowd:
   score: 82

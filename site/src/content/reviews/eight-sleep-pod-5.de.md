@@ -12,9 +12,7 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# Aktuelle Generation. Fakten belegt & real. PROVISORISCHE redaktionelle Werte aus dem Eight-Sleep-Pod-4-Test —
-# echten Sqwod Score, Confidence & Assessment setzen, bevor veröffentlicht wird (draft:false).
+draft: false
 verdict: "Das wirksamste Schlaf-Temperatursystem, jetzt mit hydro-betriebener Decke für Ganzkörper-Kühlung, integriertem Audio und Zero-Gravity-Basis. Es funktioniert — aber 3.299 €+ und ein Pflicht-Autopilot-Abo machen es zu einer echten Investition."
 sqwodScore: 80
 confidence: High

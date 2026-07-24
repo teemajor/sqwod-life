@@ -235,7 +235,7 @@ const shareCfg = {
     <section class="block sources-block">
       <p class="kick">{lang==='de'?'Quellen':'Sources'}</p>
       <ol class="src-list">
-        {d.sources.map((s) => <li><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
+        {d.sources.map((s, i) => <li id={`source-${i + 1}`}><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
       </ol>
       <p class="src-note">{lang==='de'
         ? `Zahlen aus öffentlichen Quellen${d.asOf ? `, Stand ${d.asOf}` : ''}. Schätzungen verschiedener Häuser variieren; wir verlinken, damit du selbst prüfen kannst.`

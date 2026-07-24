@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISIONAL — sqwodScore, confidence, crowd.score, assessment.*, value.score are placeholders, NOT real Sqwod editorial scores. Tee to set before draft:false.
+draft: false
 # PRICE/AFFILIATE DECISION FOR TEE: Amazon.de (ASIN B0F4F15WDD, sold by Amazon UK) is €493.45; Muse's own EU store (eu.choosemuse.com) is cheaper at €449.99 and ships to Germany. bestPrice below = €449 (true market best). Choose /go target on publish: Amazon (working sqwod-21 commission now) vs Muse direct (cheaper, but Muse affiliate not yet approved). Amazon /go: https://www.amazon.de/dp/B0F4F15WDD?tag=sqwod-21
 verdict: "The only consumer headband pairing EEG with fNIRS brain-blood-oxygen sensing, and a genuinely strong sleep tracker — but it's a premium buy (~€449) with a paid membership on top."
-sqwodScore: 76
+sqwodScore: 73
 confidence: Medium
 crowd:
   score: 72

@@ -12,10 +12,8 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
+draft: false
 # NOTE: current-gen page. Factual fields (price, specs, crowd ratings, pros/cons) are sourced & real.
-# PROVISIONAL editorial numbers carried from the Series 9 review — set the real Sqwod Score,
-# confidence and assessment before flipping draft:false to publish.
 verdict: "The battery finally goes the distance — up to 24 hours — and hypertension notifications plus 5G land real health wins. But it's an iterative jump: Series 9 and 10 owners gain little, and the cheaper SE undercuts it."
 sqwodScore: 84
 confidence: High

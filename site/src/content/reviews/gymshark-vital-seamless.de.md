@@ -14,8 +14,7 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISORISCH — sqwodScore, confidence, crowd.score, assessment.*, value.score sind Platzhalter, KEINE echten Sqwod-Scores. Tee setzt sie vor draft:false.
+draft: false
 # Nur DTC (nicht auf Amazon.de). /go-Ziel beim Publish = gymshark.com DE-Store (Impact/CJ/direct-Affiliate noch offen, siehe Tracker). value.bestPrice ≈ 50 € — Live-EUR-Preis im DE-Store PRÜFEN (Anker: 45 £ / 54 $).
 verdict: "Ein bezahlbarer, ikonischer Seamless-Klassiker fürs Training, der schnell nach Deutschland liefert — stark als Produkt und App, aber mit knappem Sitz und mittelmäßigen unabhängigen Service-Bewertungen."
 sqwodScore: 74

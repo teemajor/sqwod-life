@@ -14,8 +14,7 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISIONAL — sqwodScore, confidence, crowd.score, assessment.*, value.score are placeholders, NOT real Sqwod editorial scores. Tee to set before draft:false.
+draft: false
 # DTC subscription, NOT on Amazon officially. No direct DE/EU shipping (freight-forwarder + 19% VAT). /go on publish: seed.com (pending Impact/CJ/direct). On-site 4.6★/10k+ is first-party. Clinical evidence is manufacturer-sponsored — keep that caveat.
 verdict: "A premium, well-formulated synbiotic with real (if company-sponsored) clinical data and strong customer ratings — but the ~$50/month subscription and no direct German shipping make it a hard local sell."
 sqwodScore: 76

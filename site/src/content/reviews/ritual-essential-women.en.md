@@ -14,11 +14,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISIONAL — sqwodScore, confidence, crowd.score, assessment.*, value.score are placeholders, NOT real Sqwod editorial scores. Tee to set before draft:false.
+draft: false
 # DTC subscription. Ships US/Canada/UK only — NOT to Germany/EU (needs a forwarder). /go on publish: ritual.com (pending Impact/CJ/direct). Also sold Amazon US / Walmart / iHerb (not DE). No official EUR price.
 verdict: "A transparent, USP-verified vegan multivitamin with a deliberately minimalist 9-nutrient formula and strong crowd ratings — but premium subscription pricing and no direct shipping to Germany."
-sqwodScore: 77
+sqwodScore: 78
 confidence: Medium
 crowd:
   score: 82

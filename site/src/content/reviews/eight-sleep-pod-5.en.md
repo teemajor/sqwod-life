@@ -12,9 +12,7 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# Current-gen page. Factual fields sourced & real. PROVISIONAL editorial numbers carried from the
-# Eight Sleep Pod 4 review — set the real Sqwod Score, confidence & assessment before publishing (draft:false).
+draft: false
 verdict: "The most effective sleep-temperature system, now with a hydro-powered blanket for full-body cooling, built-in audio and a zero-gravity base. It works — but €3,299+ and a mandatory Autopilot subscription make it a serious commitment."
 sqwodScore: 80
 confidence: High

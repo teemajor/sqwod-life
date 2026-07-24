@@ -12,12 +12,10 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# Aktuelle Generation. Fakten belegt & real. PROVISORISCHE redaktionelle Werte aus dem Whoop-4.0-Test —
-# echten Sqwod Score, Confidence & Assessment setzen, bevor veröffentlicht wird (draft:false).
+draft: false
 # HINWEIS: EUR-Abopreise waren zum RechercheZeitpunkt nicht offiziell bestätigt — vor Veröffentlichung prüfen.
 verdict: "14 Tage Akku, ein 7 % kleineres Band, EKG auf Abruf und tägliche Blutdruck-Insights — der größte Whoop-Sprung bisher. Weiterhin ohne Display, weiterhin nur im Abo, und die Herzfrequenz-Genauigkeit ist noch nicht ganz Spitzenklasse."
-sqwodScore: 85
+sqwodScore: 83
 confidence: Medium
 crowd:
   score: 84
@@ -42,7 +40,7 @@ value:
   score: 72
   bestPrice: 199
   currency: EUR
-  subscription: "ab ~199 €/Jahr Mitgliedschaft — Hardware inklusive (MG-Stufe mit EKG)"
+  subscription: "One 199 €/Jahr · Peak 264 €/Jahr · Life (MG) 399 €/Jahr — Hardware inklusive"
 pros:
   - "14+ Tage Akku (vorher ~4–5) — lädt am Handgelenk"
   - "EKG auf Abruf + tägliche Blutdruck-Insights; Healthspan-Metriken"

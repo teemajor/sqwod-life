@@ -14,8 +14,7 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# PROVISIONAL — sqwodScore, confidence, crowd.score, assessment.*, value.score are placeholders, NOT real Sqwod editorial scores. Tee to set before draft:false.
+draft: false
 # DTC only (not on Amazon.de). /go target on publish = gymshark.com Germany store (pending Impact/CJ/direct affiliate approval per tracker). value.bestPrice ≈ €50 — CONFIRM live EUR price on the DE store (anchors: £45 / $54).
 verdict: "An affordable, iconic seamless-training staple that ships fast to Germany DTC — strong as product and app, but expect snug sizing and middling independent customer-service scores."
 sqwodScore: 74

@@ -12,11 +12,9 @@ publishedAt: 2026-07-23
 updatedAt: 2026-07-23
 author: "Sqwod Verified"
 affiliate: true
-draft: true
-# Current-gen page. Factual fields sourced & real. PROVISIONAL editorial numbers carried from the
-# Oura Ring Gen3 review — set the real Sqwod Score, confidence & assessment before publishing (draft:false).
+draft: false
 verdict: "The world's smallest smart ring — about 40% slimmer than before, sharper multi-wavelength sensors, and Health Radar. Best-in-class recovery and sleep data stays the pitch; the €429 price and €70/yr subscription stay the catch."
-sqwodScore: 89
+sqwodScore: 86
 confidence: High
 crowd:
   score: 90
