@@ -52,8 +52,10 @@ whoFor:
   buy: "You have health-focused clients who want discreet, long-battery cardiovascular and sleep monitoring in a classic-looking watch."
   skip: "You need on-wrist GPS, live workout metrics or full smartwatch apps — a Garmin or Apple Watch fits better."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/616ip7HZ0wL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["wearables", "smartwatch", "ecg", "sleep"]
 ---
 

@@ -52,8 +52,10 @@ whoFor:
   buy: "You are a DACH coach or client who wants a widely-trusted, lab-tested German whey with excellent mixability and broad flavour choice."
   skip: "Budget is the deciding factor and you can source a cheaper whey, or the client is outside the EU where ESN is hard to get."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71bZonctv1L._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["supplements", "protein", "whey"]
 ---
 

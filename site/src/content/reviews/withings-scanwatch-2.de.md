@@ -52,8 +52,10 @@ whoFor:
   buy: "Du hast gesundheitsbewusste Kund:innen, die diskretes Herz- und Schlaf-Monitoring mit langem Akku in einer klassisch aussehenden Uhr wollen."
   skip: "Du brauchst GPS am Handgelenk, Live-Workout-Metriken oder volle Smartwatch-Apps — Garmin oder Apple Watch passen besser."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/616ip7HZ0wL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["wearables", "smartwatch", "ecg", "sleep"]
 ---
 

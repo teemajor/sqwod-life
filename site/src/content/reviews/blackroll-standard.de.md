@@ -52,8 +52,10 @@ whoFor:
   buy: "Du coachst oder führst ein Studio und willst einen langlebigen, hygienischen, mittelfesten Allrounder für den täglichen Einsatz mit vielen Kund:innen."
   skip: "Du bist kompletter Anfänger oder sehr empfindlich — starte zuerst auf der softeren MED-Rolle."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/81Fb99ebyaL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["recovery", "faszienrolle", "mobility"]
 ---
 

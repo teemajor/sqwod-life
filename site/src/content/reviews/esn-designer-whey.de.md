@@ -52,8 +52,10 @@ whoFor:
   buy: "Du bist DACH-Coach oder -Kund:in und willst ein weithin vertrautes, laborgeprüftes deutsches Whey mit exzellenter Löslichkeit und großer Sortenwahl."
   skip: "Der Preis entscheidet und du kannst ein günstigeres Whey beziehen — oder die Kund:in ist außerhalb der EU, wo ESN schwer zu bekommen ist."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71bZonctv1L._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["supplements", "protein", "whey"]
 ---
 

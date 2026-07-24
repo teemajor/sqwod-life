@@ -52,8 +52,10 @@ whoFor:
   buy: "You want continuous sleep, recovery and HRV data — with an optional metabolic angle — without locking clients into a monthly subscription."
   skip: "You need precise gym/strength workout tracking or the most refined app experience."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71NkFZ0qYnL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 

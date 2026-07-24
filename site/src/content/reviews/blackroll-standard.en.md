@@ -52,8 +52,10 @@ whoFor:
   buy: "You coach or run a studio and want one durable, hygienic, medium-firm all-rounder that survives daily multi-client use."
   skip: "You’re a complete beginner or very sensitive — start on the softer MED roller first."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/81Fb99ebyaL._AC_SL1500_.jpg"
+  credit: "Product images via Amazon"
 tags: ["recovery", "faszienrolle", "mobility"]
 ---
 

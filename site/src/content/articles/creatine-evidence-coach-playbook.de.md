@@ -63,11 +63,11 @@ Ein Hinweis vorweg: Kreatin ist das am besten untersuchte Sport-Supplement über
 
 ## Was es wirklich bringt (dieser Teil ist gesichert)
 
-Für Kraft und fettfreie Masse bei Menschen, die trainieren, ist die Evidenz eindeutig. Eine Meta-Analyse aus 2024 mit 23 Studien fand für Kreatin plus Krafttraining deutlich größere Kraftzuwächse als für Training allein — eine gewichtete mittlere Differenz von **+4,43 kg** im Oberkörper und **+11,35 kg** im Unterkörper gegenüber Placebo. Das ist kein Rundungsfehler, sondern ein echter Vorsprung für einen Kunden, aus einem Supplement, das ein paar Cent am Tag kostet.
+Für Kraft und fettfreie Masse bei Menschen, die trainieren, ist die Evidenz eindeutig. Eine Meta-Analyse aus 2024 mit 23 Studien fand für Kreatin plus Krafttraining deutlich größere Kraftzuwächse als für Training allein — eine gewichtete mittlere Differenz von **+4,43 kg** im Oberkörper und **+11,35 kg** im Unterkörper gegenüber Placebo.<sup class="fn"><a href="#source-1">1</a></sup> Das ist kein Rundungsfehler, sondern ein echter Vorsprung für einen Kunden, aus einem Supplement, das ein paar Cent am Tag kostet.
 
 Der Mechanismus ist unglamourös und lohnt sich zu kennen: Kreatin hilft den Muskeln, ATP schnell zu regenerieren — die Energiewährung für kurze, harte Belastungen. Mehr verfügbare Energie für die fünfte Wiederholung, Satz für Satz, Woche für Woche. Kreatin baut nicht den Muskel. Es lässt deinen Kunden die Arbeit tun, die den Muskel baut.
 
-Eine ehrliche Nuance für die DEXA-Fixierten: Ein Teil des frühen "Zuwachses" ist Wasser, das in den Muskel gezogen wird, kein neues Gewebe — ein RCT von 2025 zeigte einen messbaren Sprung in den ersten sieben Tagen, der genau das widerspiegelt. Echte Kraft und Hypertrophie kommen aus dem Training, das Kreatin ermöglicht, über Monate. Setz diese Erwartung, und kein Kunde gerät in Woche eins wegen der Waage in Panik.
+Eine ehrliche Nuance für die DEXA-Fixierten: Ein Teil des frühen "Zuwachses" ist Wasser, das in den Muskel gezogen wird, kein neues Gewebe — ein RCT von 2025 zeigte einen messbaren Sprung in den ersten sieben Tagen, der genau das widerspiegelt.<sup class="fn"><a href="#source-2">2</a></sup> Echte Kraft und Hypertrophie kommen aus dem Training, das Kreatin ermöglicht, über Monate. Setz diese Erwartung, und kein Kunde gerät in Woche eins wegen der Waage in Panik.
 
 **Evidenzgrad: stark.** Mehrere Meta-Analysen, konsistente Richtung, jahrzehntelange Replikation.
 
@@ -75,7 +75,7 @@ Eine ehrliche Nuance für die DEXA-Fixierten: Ein Teil des frühen "Zuwachses" i
 
 Hier ist das ganze Protokoll: **5 Gramm Kreatin-Monohydrat pro Tag, jeden Tag.** Das ist alles.
 
-Die "Ladephase" — 20 g/Tag für etwa eine Woche — funktioniert und füllt die Speicher schneller. Aber ein Dosierungs-Review von 2024 ist eindeutig: Laden ändert, *wie schnell* du volle Speicher erreichst, nicht *ob*. Ohne Laden, mit 5 g/Tag, bist du in rund drei bis vier Wochen am selben Punkt. Für die meisten Kunden gewinnt das einfachere Protokoll, weil sie dranbleiben.
+Die "Ladephase" — 20 g/Tag für etwa eine Woche — funktioniert und füllt die Speicher schneller. Aber ein Dosierungs-Review von 2024 ist eindeutig: Laden ändert, *wie schnell* du volle Speicher erreichst, nicht *ob*.<sup class="fn"><a href="#source-6">6</a></sup> Ohne Laden, mit 5 g/Tag, bist du in rund drei bis vier Wochen am selben Punkt. Für die meisten Kunden gewinnt das einfachere Protokoll, weil sie dranbleiben.
 
 Der Zeitpunkt ist nebensächlich. Vor dem Training, danach oder zum Frühstück — es spielt keine relevante Rolle. Lass einen Kunden aus "wann nehme ich es" keinen Grund machen, es nicht zu nehmen. Konsistenz ist die einzige Variable, die zählt.
 
@@ -85,15 +85,15 @@ Der Zeitpunkt ist nebensächlich. Vor dem Training, danach oder zum Frühstück 
 
 ### "Kreatin ruiniert meine Nieren"
 
-Das ist der Einwand im Gewand der Vorsicht — und er wird von kontrollierter Forschung an gesunden Menschen nicht gestützt. Die Verwechslung ist fast poetisch: Kreatin wandelt sich spontan in ein Abfallprodukt namens *Kreatinin* um — genau das, was ein Standard-Nierentest misst. Supplementieren kann diesen Marker also anheben, ohne dass mit der Niere etwas nicht stimmt. Narrative Reviews der kontrollierten Evidenz kommen zu dem Schluss, dass Kreatin für die Nierenfunktion gesunder Menschen sicher ist. Die ehrliche Einschränkung: Menschen mit vorbestehender Nierenerkrankung und Schwangere waren nicht Gegenstand dieser Forschung — für sie lautet die Antwort "sprich mit deinem Arzt", nicht "leg los".
+Das ist der Einwand im Gewand der Vorsicht — und er wird von kontrollierter Forschung an gesunden Menschen nicht gestützt. Die Verwechslung ist fast poetisch: Kreatin wandelt sich spontan in ein Abfallprodukt namens *Kreatinin* um — genau das, was ein Standard-Nierentest misst. Supplementieren kann diesen Marker also anheben, ohne dass mit der Niere etwas nicht stimmt. Narrative Reviews der kontrollierten Evidenz kommen zu dem Schluss, dass Kreatin für die Nierenfunktion gesunder Menschen sicher ist.<sup class="fn"><a href="#source-7">7</a></sup> Die ehrliche Einschränkung: Menschen mit vorbestehender Nierenerkrankung und Schwangere waren nicht Gegenstand dieser Forschung — für sie lautet die Antwort "sprich mit deinem Arzt", nicht "leg los".
 
 **Evidenzgrad: stark für gesunde Erwachsene; für Nierenerkrankung und Schwangerschaft schlicht nicht untersucht — dort keine Empfehlung.**
 
 ### "Kreatin verursacht Haarausfall"
 
-Dieser Mythos hat eine echte Entstehungsgeschichte — ein Lehrstück dafür, wie so etwas entsteht. 2009 fand eine kleine Studie mit 20 Rugbyspielern, dass Kreatin **DHT** — ein mit erblichem Haarausfall verbundenes Hormon — um etwa 56% anhob. Was diese Studie *nicht* gemessen hat: irgendjemandes tatsächliche Haare. Sie maß einen Hormon-Marker und spekulierte.
+Dieser Mythos hat eine echte Entstehungsgeschichte — ein Lehrstück dafür, wie so etwas entsteht. 2009 fand eine kleine Studie mit 20 Rugbyspielern, dass Kreatin **DHT** — ein mit erblichem Haarausfall verbundenes Hormon — um etwa 56% anhob.<sup class="fn"><a href="#source-9">9</a></sup> Was diese Studie *nicht* gemessen hat: irgendjemandes tatsächliche Haare. Sie maß einen Hormon-Marker und spekulierte.
 
-Sechzehn Jahre lang war dieses eine Ergebnis die ganze Grundlage der Angst. 2025 führten Forscher endlich den direkten Test durch: ein randomisiertes kontrolliertes Design, das die Haarfollikel-Gesundheit — Dichte, Dicke, Follikelzahl — über 12 Wochen maß. Ergebnis: **kein Unterschied** bei DHT, beim DHT-zu-Testosteron-Verhältnis oder bei irgendeinem Haar-Parameter gegenüber Placebo. Die Autoren nannten es starke Evidenz gegen die Behauptung.
+Sechzehn Jahre lang war dieses eine Ergebnis die ganze Grundlage der Angst. 2025 führten Forscher endlich den direkten Test durch: ein randomisiertes kontrolliertes Design, das die Haarfollikel-Gesundheit — Dichte, Dicke, Follikelzahl — über 12 Wochen maß. Ergebnis: **kein Unterschied** bei DHT, beim DHT-zu-Testosteron-Verhältnis oder bei irgendeinem Haar-Parameter gegenüber Placebo.<sup class="fn"><a href="#source-8">8</a></sup> Die Autoren nannten es starke Evidenz gegen die Behauptung.
 
 Könnte eine einzelne Person anders reagieren? Möglich — keine Studie deckt alle ab. Aber wenn ein Kunde das anspricht, wählst du nicht mehr zwischen "beruhigen und hoffen" und "Schulterzucken". Du kannst sagen: Die eine zitierte Studie maß ein Hormon, keine Haare; die Studie, die Haare maß, fand nichts.
 
@@ -101,7 +101,7 @@ Könnte eine einzelne Person anders reagieren? Möglich — keine Studie deckt a
 
 ### "Das ist ein Männer-Supplement"
 
-Eher umgekehrt. Frauen haben **70–80% niedrigere** Ausgangsspeicher als Männer, und die historisch männerlastige Forschung weitet sich jetzt genau auf die Momente aus, die für weibliche Kunden zählen: Kraft über die Lebensspanne, den Übergang in die Menopause, Stimmung und Kognition. Prämenopausale Frauen zeigen Kraft- und Leistungsnutzen; höher dosierte Protokolle sind für Muskel und Knochen älterer Frauen in Kombination mit Krafttraining vielversprechend. Wenn überhaupt, wurden deinen weiblichen Kunden Kreatin *zu wenig* nahegebracht — ein Kulturproblem, kein Evidenzproblem.
+Eher umgekehrt. Frauen haben **70–80% niedrigere** Ausgangsspeicher als Männer, und die historisch männerlastige Forschung weitet sich jetzt genau auf die Momente aus, die für weibliche Kunden zählen: Kraft über die Lebensspanne, den Übergang in die Menopause, Stimmung und Kognition. Prämenopausale Frauen zeigen Kraft- und Leistungsnutzen; höher dosierte Protokolle sind für Muskel und Knochen älterer Frauen in Kombination mit Krafttraining vielversprechend.<sup class="fn"><a href="#source-5">5</a></sup> Wenn überhaupt, wurden deinen weiblichen Kunden Kreatin *zu wenig* nahegebracht — ein Kulturproblem, kein Evidenzproblem.
 
 **Evidenzgrad: wachsend und positiv; noch weniger frauenspezifische Studien als bei Männern, das ändert sich schnell.**
 
@@ -109,13 +109,13 @@ Eher umgekehrt. Frauen haben **70–80% niedrigere** Ausgangsspeicher als Männe
 
 Hier verdient sich ein ehrlicher Coach Vertrauen: indem er die Grenze zwischen *gestützt* und *wird untersucht* kennt.
 
-Es gibt durchaus interessante Hinweise, dass Kreatin das **Gedächtnis** unterstützt, mit moderater Evidenzsicherheit und einem deutlich größeren Effekt bei älteren Erwachsenen. Das ist real und fair zu erwähnen — als möglichen Bonus, nicht als Versprechen. Darüber hinaus untersuchen Forscher aktiv Kreatins Rolle in Bereichen wie Erholung nach Gehirnerschütterung, Stimmung und gesundem Altern. Das sind offene Forschungsfragen, keine gesicherten Coaching-Aussagen. Wenn du dich sagen hörst, Kreatin "behandle" irgendetwas, halt inne — das ist ein Satz für einen Arzt und eine abgeschlossene Studie, nicht für die Trainingsfläche.
+Es gibt durchaus interessante Hinweise, dass Kreatin das **Gedächtnis** unterstützt, mit moderater Evidenzsicherheit und einem deutlich größeren Effekt bei älteren Erwachsenen.<sup class="fn"><a href="#source-3">3</a>,&#8202;<a href="#source-4">4</a></sup> Das ist real und fair zu erwähnen — als möglichen Bonus, nicht als Versprechen. Darüber hinaus untersuchen Forscher aktiv Kreatins Rolle in Bereichen wie Erholung nach Gehirnerschütterung, Stimmung und gesundem Altern. Das sind offene Forschungsfragen, keine gesicherten Coaching-Aussagen. Wenn du dich sagen hörst, Kreatin "behandle" irgendetwas, halt inne — das ist ein Satz für einen Arzt und eine abgeschlossene Studie, nicht für die Trainingsfläche.
 
 **Evidenzgrad: Gedächtnis moderat; alles Weitere hier früh — als "wird untersucht" rahmen, nie als Versprechen.**
 
 ## Was gerade bewiesen wird (der Teil, den dir sonst niemand zeigt)
 
-Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **60+ Kreatin-Studien**, die rekrutieren oder bald starten — und das Muster darin zeigt, wohin die Reise geht.
+Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **60+ Kreatin-Studien**<sup class="fn"><a href="#source-10">10</a></sup>, die rekrutieren oder bald starten — und das Muster darin zeigt, wohin die Reise geht.
 
 Die wichtigste: **Kreatin während einer GLP-1-Therapie (Abnehmspritze).** Mehrere neue Studien testen, ob Kreatin plus Krafttraining Muskelmasse bei Menschen schützen kann, die mit diesen Medikamenten abnehmen — denn Muskelverlust ist einer der realen Nachteile dieses Fettverlusts. Deine Kunden nehmen diese Mittel bereits oder fragen danach. Niemand kann behaupten, Kreatin sei dafür bewiesen. Aber der Coach, der die Frage vor der Antwort versteht, ist der Coach, dem Kunden vertrauen, wenn die Antwort kommt.
 

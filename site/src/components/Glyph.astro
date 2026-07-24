@@ -1,5 +1,5 @@
 ---
-// Topical animated monochrome glyph. kind: ring|seed|watch|band|tracker|line|bars
+// Topical animated monochrome glyph. kind: ring|seed|watch|band|tracker|line|bars|lattice
 interface Props { kind?: string; size?: number; framed?: boolean }
 const { kind = 'seed', size = 64, framed = true } = Astro.props;
 const s = (f: number) => `${Math.round(size * f)}px`;
@@ -20,6 +20,24 @@ const boxStyle = `width:${size}px;height:${size}px` + (framed ? '' : ';backgroun
         <line class="gl" x1="0" y1="40" x2="280" y2="40"></line>
         <line class="gl" x1="0" y1="80" x2="280" y2="80"></line>
         <path class="ln" d="M4 96 L52 78 L98 86 L146 54 L196 60 L256 20"></path>
+      </svg>
+    </span>
+  )}
+  {kind === 'lattice' && (
+    <span class="g-lattice">
+      <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+        <polygon class="ring" points="72,50 61,31 39,31 28,50 39,69 61,69"></polygon>
+        <line class="bond" x1="72" y1="50" x2="88" y2="50"></line>
+        <line class="bond" x1="28" y1="50" x2="12" y2="50"></line>
+        <polygon class="current" points="72,50 61,31 39,31 28,50 39,69 61,69"></polygon>
+        <circle class="node" cx="72" cy="50" r="4"></circle>
+        <circle class="node" cx="61" cy="31" r="4"></circle>
+        <circle class="node" cx="39" cy="31" r="4"></circle>
+        <circle class="node" cx="28" cy="50" r="4"></circle>
+        <circle class="node" cx="39" cy="69" r="4"></circle>
+        <circle class="node" cx="61" cy="69" r="4"></circle>
+        <circle class="node sm" cx="12" cy="50" r="3.5"></circle>
+        <circle class="ping" cx="88" cy="50" r="4.5"></circle>
       </svg>
     </span>
   )}

@@ -52,8 +52,10 @@ whoFor:
   buy: "Du willst kontinuierliche Schlaf-, Recovery- und HRV-Daten — mit optionalem Stoffwechsel-Fokus — ohne Kund:innen in ein Monatsabo zu zwingen."
   skip: "Du brauchst präzises Gym-/Kraft-Tracking oder die ausgereifteste App."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://m.media-amazon.com/images/I/71NkFZ0qYnL._AC_SL1500_.jpg"
+  credit: "Produktbilder via Amazon"
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 
