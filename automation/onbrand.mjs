@@ -115,6 +115,37 @@ try {
 const esc = (x) => String(x).replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
 export const WATCHLIST_RX = new RegExp('\\b(' + WATCHLIST.map(esc).join('|') + ')\\b', 'i');
 
+// ---- primary-entity detection (for the daily's entity-diversity cooldown) ----------
+// Which named player is a headline chiefly ABOUT? ingest.mjs uses this to stop one
+// company (e.g. Garmin) leading the Daily several issues in a row. Longest match wins,
+// so "Eight Sleep" beats a stray "Sleep" and "Neko Health" beats a bare "Neko". A few
+// aliases collapse the same company's variants to one canonical label.
+const ENTITY_ALIASES = {
+  'neko': 'Neko Health',
+  'ag1': 'AG1', 'athletic greens': 'AG1',
+  'weight watchers': 'WeightWatchers',
+  'gympass': 'Wellhub',
+};
+const ENTITY_RX = [...WATCHLIST]
+  .sort((a, b) => b.length - a.length)
+  .map((name) => ({ name, rx: new RegExp('\\b' + esc(name) + '\\b', 'i') }));
+const canon = (name) => ENTITY_ALIASES[name.toLowerCase()] || name;
+/** Every canonical watchlist entity named in a headline (deduped). Used so a whole saga —
+ *  e.g. "Garmin swallows TrainingPeaks" → both Garmin AND TrainingPeaks — links across
+ *  issues, and a later "Garmin owns your coaching stack" still overlaps and cools down. */
+export function allEntities(text) {
+  const s = String(text || '');
+  const out = [];
+  for (const { name, rx } of ENTITY_RX) {
+    if (rx.test(s)) { const c = canon(name); if (!out.includes(c)) out.push(c); }
+  }
+  return out;
+}
+/** The single canonical entity a headline is primarily about (longest match), or null. */
+export function primaryEntity(text) {
+  return allEntities(text)[0] || null;
+}
+
 /** True when a story belongs in Sqwod media. `text` = headline (+ dek/topic). */
 export function isOnBrand(text, outlet = '') {
   const s = String(text || '');

@@ -14,7 +14,7 @@
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { isOnBrand, OFFTOPIC_RX, FINANCE_OUTLETS_RX } from './onbrand.mjs';
+import { isOnBrand, OFFTOPIC_RX, FINANCE_OUTLETS_RX, primaryEntity, allEntities } from './onbrand.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, 'sources');
@@ -29,6 +29,14 @@ const MAX_AGE_DAYS = parseInt(args['max-age'] || '10', 10);
 // Cross-day memory: how long a story we've already covered stays "seen" so it can't
 // lead the Daily again tomorrow. The single biggest fix for the repetition problem.
 const LEDGER_DAYS = parseInt(args['ledger-days'] || '21', 10);
+// Entity-diversity cooldown: dedupe stops the SAME story repeating, but not the same
+// COMPANY leading several issues in a row with fresh follow-on angles (Garmin buys
+// TrainingPeaks → "Garmin owns your coaching stack" → "Garmin AI marathon"). We look
+// back this many published issues and down-weight any candidate whose primary entity
+// already appeared, decaying with age (most-recent issue = full penalty). The story can
+// still land lower in the Rundown — it just stops hogging the lead. 0 disables.
+const ENTITY_COOLDOWN = parseInt(args['entity-cooldown'] || '3', 10);
+const ENTITY_PENALTY = parseFloat(args['entity-penalty'] || '5');
 const NOW = date ? new Date(`${date}T12:00:00Z`).getTime() : Date.now();
 
 // Google News editions — GB first to de-bias away from US-only results.
@@ -200,8 +208,8 @@ function seenBefore(tok, url, ledger) {
   return false;
 }
 function saveLedger(ledger, shipped) {
-  const out = ledger.map((e) => ({ date: e.date, key: e.key, url: e.url, tokens: [...(e._tok || e.tokens || [])] }));
-  for (const s of shipped) out.push({ date, key: s.key, url: s.url, tokens: [...s._tok] });
+  const out = ledger.map((e) => ({ date: e.date, key: e.key, url: e.url, tokens: [...(e._tok || e.tokens || [])], ...(e.entities ? { entities: e.entities } : {}) }));
+  for (const s of shipped) out.push({ date, key: s.key, url: s.url, tokens: [...s._tok], ...(s._ents && s._ents.length ? { entities: s._ents } : {}) });
   try { writeFileSync(LEDGER_PATH, JSON.stringify(out, null, 2)); }
   catch (e) { console.error('ledger write failed:', e.message); }
 }
@@ -294,6 +302,33 @@ async function run() {
 
   console.error(`scanned ${scanned}, kept ${pool.length} unique candidates (ledger: ${ledger.length} recent stories excluded from repeats)`);
 
+  // Entity-diversity cooldown: down-weight candidates whose primary entity led/appeared
+  // in the last ENTITY_COOLDOWN issues, decaying with age. This is what stops one company
+  // (Garmin, Whoop, …) headlining the Daily three days running on evolving coverage that
+  // the near-dup guard reads as separate stories.
+  for (const p of pool) { p._ents = allEntities(p.headline); p._ent = p._ents[0] || null; }
+  if (ENTITY_COOLDOWN > 0 && ENTITY_PENALTY > 0) {
+    const recentIssues = [...new Set(ledger.map((e) => e.date).filter(Boolean))].sort().reverse().slice(0, ENTITY_COOLDOWN);
+    const entByIssue = {};   // date → Set(all entities covered that day)
+    for (const e of ledger) {
+      if (!recentIssues.includes(e.date)) continue;
+      const ents = (Array.isArray(e.entities) && e.entities.length) ? e.entities : allEntities(e.key || (e.tokens || []).join(' '));
+      if (ents.length) (entByIssue[e.date] ||= new Set(), ents.forEach((x) => entByIssue[e.date].add(x)));
+    }
+    const penalized = {};
+    for (const p of pool) {
+      if (!p._ents.length) continue;
+      let pen = 0;
+      recentIssues.forEach((d, i) => {
+        const hit = entByIssue[d] && p._ents.some((x) => entByIssue[d].has(x));
+        if (hit) pen += ENTITY_PENALTY / (i + 1);
+      });
+      if (pen > 0) { p._score -= pen; const lbl = p._ents.join('/'); penalized[lbl] = Math.max(penalized[lbl] || 0, pen); }
+    }
+    const summary = Object.entries(penalized).map(([e, v]) => `${e} −${v.toFixed(1)}`).join(', ');
+    if (summary) console.error(`entity cooldown (last ${recentIssues.length} issues): ${summary}`);
+  }
+
   // Variety gate: spread across pillars AND cap per outlet so no single source
   // (or topic) dominates. Raise the per-outlet cap only if we can't fill MAX.
   const byPillar = {};
@@ -303,6 +338,7 @@ async function run() {
   for (const arr of Object.values(byPillar)) arr.sort((a, b) => (b._score - a._score) || ((b.trade === true) - (a.trade === true)));
   const ordered = [];
   const outletN = {};
+  const entN = {};   // in-issue cap: same subject entity can't fill multiple slots until we're forced to
   for (let cap = 1; cap <= 3 && ordered.length < MAX; cap++) {
     let round = 0, progress = true;
     while (ordered.length < MAX && progress) {
@@ -311,7 +347,10 @@ async function run() {
         const item = arr[round];
         if (!item || ordered.includes(item)) continue;
         if ((outletN[item.outlet] || 0) >= cap) continue;
+        const ents = item._ents || [];
+        if (ents.some((e) => (entN[e] || 0) >= cap)) continue;   // one company per slot-tier (any named entity)
         ordered.push(item); outletN[item.outlet] = (outletN[item.outlet] || 0) + 1;
+        ents.forEach((e) => { entN[e] = (entN[e] || 0) + 1; });
         progress = true;
         if (ordered.length >= MAX) break;
       }
