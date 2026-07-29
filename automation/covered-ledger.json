@@ -1062,5 +1062,101 @@
       "personal",
       "trainer"
     ]
+  },
+  {
+    "date": "2026-07-29",
+    "key": "that 1999 car wash membership isnt selling you clean paint i",
+    "tokens": [
+      "wash",
+      "membership",
+      "selling",
+      "clean",
+      "paint",
+      "wall",
+      "street",
+      "subscription"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "key": "fitactive eyes 100 more gyms in italy reaffirming plans reve",
+    "tokens": [
+      "fitactive",
+      "eyes",
+      "gyms",
+      "italy",
+      "reaffirming",
+      "revealed",
+      "summit"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "key": "exclusive cofounded by former whoop cto throne science raise",
+    "tokens": [
+      "exclusive",
+      "founded",
+      "former",
+      "whoop",
+      "throne",
+      "science",
+      "raises",
+      "track",
+      "health",
+      "toilet"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "key": "preston fitness firms launch womens wellness membership comb",
+    "tokens": [
+      "preston",
+      "firms",
+      "launch",
+      "women",
+      "membership",
+      "combining",
+      "pilates",
+      "recovery"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "key": "wheathampsteads community gym launches crowdfunder campaign ",
+    "tokens": [
+      "wheathampstead",
+      "community",
+      "launches",
+      "crowdfunder",
+      "campaign",
+      "stay",
+      "cool",
+      "summer",
+      "warm",
+      "winter"
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "key": "mojawa launches purra flow introducing aipowered bone conduc",
+    "tokens": [
+      "mojawa",
+      "launches",
+      "purra",
+      "flow",
+      "introducing",
+      "powered",
+      "bone",
+      "conduction",
+      "headphones",
+      "coach",
+      "users",
+      "through",
+      "every",
+      "workout"
+    ]
   }
 ]
