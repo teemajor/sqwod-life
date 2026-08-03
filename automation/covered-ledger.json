@@ -1,84 +1,5 @@
 [
   {
-    "date": "2026-07-10",
-    "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
-    "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
-    "tokens": [
-      "vorstellung",
-      "eckdaten",
-      "fitnesswirtschaft",
-      "dach",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "key": "geschtzt top expertise fr dein studio  live im exklusiven we",
-    "url": "https://www.bodylife.com/myline-b2b-webinare/",
-    "tokens": [
-      "gesch",
-      "expertise",
-      "dein",
-      "studio",
-      "live",
-      "exklusiven",
-      "webinar"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "key": "movement is therapy  wolfgang unsld",
-    "url": "https://www.trainingsworld.com/movement-is-therapy-wolfgang-unsoeld/",
-    "tokens": [
-      "movement",
-      "therapy",
-      "wolfgang"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "key": "garmin cirqa trademarks in europe and canada point to new se",
-    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNSkhFdEU4ZEZabW9RUjM1LWQxWGk5bVdSaDZJWGdXdHdCNjVWSnVGZUZibkJ2YTFlY2UxWWl2YkF3ZUxaWHV0QlFrTFRFUUZsMlVRaVhRZkFTbE1KUHI2V1FQVnB4NXByMHZxUjRURGJodWNKNTM5NUpnc2NneGxmRWhBRjFTMGpVTlpDaUhYSnlqaUpzX0lMSkZXR0dqLXMxN0dTZE5FcmhQRjNZM2c?oc=5",
-    "tokens": [
-      "garmin",
-      "cirqa",
-      "trademarks",
-      "europe",
-      "canada",
-      "point",
-      "sensor"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "key": "sebastien lagree alleges florida studio swapped megaformers ",
-    "url": "https://athletechnews.com/sebastien-lagree-florida-studio-lawsuit-megaformers-alibaba-knockoffs/",
-    "tokens": [
-      "sebastien",
-      "lagree",
-      "alleges",
-      "florida",
-      "studio",
-      "swapped",
-      "megaformers",
-      "alibaba",
-      "knockoffs"
-    ]
-  },
-  {
-    "date": "2026-07-10",
-    "key": "best fitness trackers for 2026 according to a running coach",
-    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWW1IYzNWMHdQMHRwQ2VlUVFYLXpkWVcyUVdUQkJEa2VqZ0ktT2JUTlhZdkhUaWQzdFJVNDdOYUNpckhuMmhZWHVXR1gzLXYtNmdtTlBqYjVWQWFHZGJQQ04tY1dyRWRnQWVJSUZ4c3AyV0dLZ3hTd1NlR0dnY0J6eTZjMFI2N1ktbE9oZHdn?oc=5",
-    "tokens": [
-      "best",
-      "trackers",
-      "2026",
-      "according",
-      "running",
-      "coach"
-    ]
-  },
-  {
     "date": "2026-07-13",
     "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
     "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
@@ -1252,6 +1173,101 @@
       "food",
       "supplements",
       "brand"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "key": "uk  savills advises aberdeen investments and lgps fund on 67",
+    "tokens": [
+      "savills",
+      "advises",
+      "aberdeen",
+      "investments",
+      "lgps",
+      "fund",
+      "million",
+      "acquisition",
+      "three",
+      "david",
+      "lloyd",
+      "health",
+      "leisure",
+      "clubs"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "key": "ahmedabad gym membership row turns violent businessman assau",
+    "tokens": [
+      "ahmedabad",
+      "membership",
+      "turns",
+      "violent",
+      "businessman",
+      "assaulted"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "key": "garmin sees fitness revenue surge with a 8216very rich8217 p",
+    "tokens": [
+      "garmin",
+      "sees",
+      "revenue",
+      "surge",
+      "8216",
+      "very",
+      "rich",
+      "8217",
+      "product",
+      "roadmap",
+      "ahead"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "key": "aceguardian technologies launches quintace an adaptive ai co",
+    "tokens": [
+      "aceguardian",
+      "technologies",
+      "launches",
+      "quintace",
+      "adaptive",
+      "coaching",
+      "analytics",
+      "poker",
+      "platform"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "key": "advertisement feature new iso guidance puts wearable hav mon",
+    "tokens": [
+      "advertisement",
+      "feature",
+      "guidance",
+      "puts",
+      "wearable",
+      "monitoring",
+      "spotlight"
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "key": "kse posts 1374m dinars firsthalf profit as market recovery g",
+    "tokens": [
+      "posts",
+      "dinars",
+      "first",
+      "half",
+      "profit",
+      "market",
+      "recovery",
+      "gains",
+      "momentum"
     ]
   }
 ]
