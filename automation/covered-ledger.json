@@ -1,82 +1,5 @@
 [
   {
-    "date": "2026-07-13",
-    "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
-    "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
-    "tokens": [
-      "vorstellung",
-      "eckdaten",
-      "fitnesswirtschaft",
-      "dach",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-07-13",
-    "key": "geschtzt top expertise fr dein studio  live im exklusiven we",
-    "url": "https://www.bodylife.com/myline-b2b-webinare/",
-    "tokens": [
-      "gesch",
-      "expertise",
-      "dein",
-      "studio",
-      "live",
-      "exklusiven",
-      "webinar"
-    ]
-  },
-  {
-    "date": "2026-07-13",
-    "key": "ideas garage gym with treadmill the pros of owning a garage ",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yelZwSTlibVo0eDVZZ2xHeFdiUjBlWlBscFZVQmZySGNOUUxHVHN6ZWZLWjNmQnQ0aFpKUDdEMEVPMzJxcFpSSEJad2pwbkF0ZzZ6dmxmc1NfOXJMUFJfLUNfS05HNlFOdERpZW9VbUVsRDhNeGZiYlVUeUdSZkE?oc=5",
-    "tokens": [
-      "ideas",
-      "garage",
-      "treadmill",
-      "pros",
-      "owning",
-      "having",
-      "membership",
-      "torque"
-    ]
-  },
-  {
-    "date": "2026-07-13",
-    "key": "atn insights driving revenue with movement assessments",
-    "url": "https://athletechnews.com/atn-insights-driving-revenue-with-movement-assessments/",
-    "tokens": [
-      "insights",
-      "driving",
-      "revenue",
-      "movement",
-      "assessments"
-    ]
-  },
-  {
-    "date": "2026-07-13",
-    "key": "european champion  lars springer",
-    "url": "https://www.trainingsworld.com/european-champion-lars-springer/",
-    "tokens": [
-      "european",
-      "champion",
-      "lars",
-      "springer"
-    ]
-  },
-  {
-    "date": "2026-07-13",
-    "key": "the best membership for your money ymca vs other gyms",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE14dkVfSjdaZ1lpM01wRmlKSGJaRVFZbUlVSEVQUnFKVWM2aV9sMkNreC00U3g0TjhWMDdPUEpPZHVEeHJEY1BoWU9rZ3p1bDJPb3Fabm1FbG11M0tQcUZ2OHpscEFtbnpYT3RkUHNRZW5NZw?oc=5",
-    "tokens": [
-      "best",
-      "membership",
-      "money",
-      "ymca",
-      "other",
-      "gyms"
-    ]
-  },
-  {
     "date": "2026-07-14",
     "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
     "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
@@ -1268,6 +1191,85 @@
       "recovery",
       "gains",
       "momentum"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "key": "fitness fanatics says us ipo price expected between 46 per s",
+    "tokens": [
+      "fanatics",
+      "price",
+      "expected",
+      "between",
+      "share"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "key": "basicfit swings back to profit revenue tops 800m",
+    "tokens": [
+      "basic",
+      "swings",
+      "back",
+      "profit",
+      "revenue",
+      "tops",
+      "800m"
+    ],
+    "entities": [
+      "Basic-Fit"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "key": "ringconn gen 3 is here now with vibration alerts heres what ",
+    "tokens": [
+      "ringconn",
+      "here",
+      "vibration",
+      "alerts",
+      "what",
+      "know",
+      "about",
+      "smart",
+      "ring"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "key": "wir begren unser neues frdermitglied",
+    "tokens": [
+      "begr",
+      "unser",
+      "neues",
+      "rdermitglied"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "key": "ai witness coaching derails uk rape trial lessons for austra",
+    "tokens": [
+      "witness",
+      "coaching",
+      "derails",
+      "rape",
+      "trial",
+      "lessons",
+      "australian",
+      "practitioners"
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "key": "spotifys new running mode puts an ai coach in your earheres ",
+    "tokens": [
+      "spotify",
+      "running",
+      "mode",
+      "puts",
+      "coach",
+      "here",
+      "works"
     ]
   }
 ]
