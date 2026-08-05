@@ -1,89 +1,5 @@
 [
   {
-    "date": "2026-07-14",
-    "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
-    "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
-    "tokens": [
-      "vorstellung",
-      "eckdaten",
-      "fitnesswirtschaft",
-      "dach",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "key": "geschtzt top expertise fr dein studio  live im exklusiven we",
-    "url": "https://www.bodylife.com/myline-b2b-webinare/",
-    "tokens": [
-      "gesch",
-      "expertise",
-      "dein",
-      "studio",
-      "live",
-      "exklusiven",
-      "webinar"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "key": "corepower yoga makes ceo change signals studio growth push",
-    "url": "https://athletechnews.com/corepower-yoga-ceo-change-dan-lynn-niki-leondakis/",
-    "tokens": [
-      "corepower",
-      "yoga",
-      "makes",
-      "change",
-      "signals",
-      "studio",
-      "growth",
-      "push"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "key": "ideas garage gym with treadmill the pros of owning a garage ",
-    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0yelZwSTlibVo0eDVZZ2xHeFdiUjBlWlBscFZVQmZySGNOUUxHVHN6ZWZLWjNmQnQ0aFpKUDdEMEVPMzJxcFpSSEJad2pwbkF0ZzZ6dmxmc1NfOXJMUFJfLUNfS05HNlFOdERpZW9VbUVsRDhNeGZiYlVUeUdSZkE?oc=5",
-    "tokens": [
-      "ideas",
-      "garage",
-      "treadmill",
-      "pros",
-      "owning",
-      "having",
-      "membership",
-      "torque"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "key": "european champion  lars springer",
-    "url": "https://www.trainingsworld.com/european-champion-lars-springer/",
-    "tokens": [
-      "european",
-      "champion",
-      "lars",
-      "springer"
-    ]
-  },
-  {
-    "date": "2026-07-14",
-    "key": "engadget review recap steam machine samsung music studio 7 o",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOck5Nc0stQXVsUzFDV29iSV9YMUFWN2lSOUtvS1RsX2tTU0VPeW0xUGZfZ1lHS1ZMQy0yZ1B3ZmxmNFktdjBhQ3VjcEhiSlZSazJCbE1nSjZTZmNBS2l6V0RjVDNab2FXZzJmZjZhdUNQWktUeTB4ZXJ2dVFLWk9vT2dnVC0xTVlLMXc0dHFVRkR5amdYSUpF?oc=5",
-    "tokens": [
-      "engadget",
-      "review",
-      "recap",
-      "steam",
-      "machine",
-      "samsung",
-      "music",
-      "studio",
-      "oura",
-      "ring"
-    ]
-  },
-  {
     "date": "2026-07-15",
     "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
     "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
@@ -1270,6 +1186,86 @@
       "coach",
       "here",
       "works"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "key": "anytime fitness extends apple fitness deal to uk ireland mem",
+    "tokens": [
+      "anytime",
+      "extends",
+      "apple",
+      "deal",
+      "ireland",
+      "members"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "key": "ive been wearing the new oura ring 5 for the last month to s",
+    "tokens": [
+      "been",
+      "wearing",
+      "oura",
+      "ring",
+      "last",
+      "month",
+      "actually",
+      "worth",
+      "spending"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "key": "gym operator raises the bar with third site",
+    "tokens": [
+      "operator",
+      "raises",
+      "third",
+      "site"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "key": "allday exercise session raises 15000 in kildare womans memor",
+    "tokens": [
+      "exercise",
+      "session",
+      "raises",
+      "kildare",
+      "woman",
+      "memory"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "key": "pg intensifies wellness push with latest acquisition",
+    "tokens": [
+      "intensifies",
+      "push",
+      "latest",
+      "acquisition"
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "key": "fitness apps market size to reach usd 3829 billion by 2035 a",
+    "tokens": [
+      "apps",
+      "market",
+      "size",
+      "reach",
+      "billion",
+      "2035",
+      "coaching",
+      "wearables",
+      "integration",
+      "drive",
+      "growth",
+      "insider"
     ]
   }
 ]
