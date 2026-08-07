@@ -1,86 +1,5 @@
 [
   {
-    "date": "2026-07-16",
-    "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
-    "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
-    "tokens": [
-      "vorstellung",
-      "eckdaten",
-      "fitnesswirtschaft",
-      "dach",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "key": "geschtzt top expertise fr dein studio  live im exklusiven we",
-    "url": "https://www.bodylife.com/myline-b2b-webinare/",
-    "tokens": [
-      "gesch",
-      "expertise",
-      "dein",
-      "studio",
-      "live",
-      "exklusiven",
-      "webinar"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "key": "movement is therapy  wolfgang unsld",
-    "url": "https://www.trainingsworld.com/movement-is-therapy-wolfgang-unsoeld/",
-    "tokens": [
-      "movement",
-      "therapy",
-      "wolfgang"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "key": "engadget review recap steam machine samsung music studio 7 o",
-    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOck5Nc0stQXVsUzFDV29iSV9YMUFWN2lSOUtvS1RsX2tTU0VPeW0xUGZfZ1lHS1ZMQy0yZ1B3ZmxmNFktdjBhQ3VjcEhiSlZSazJCbE1nSjZTZmNBS2l6V0RjVDNab2FXZzJmZjZhdUNQWktUeTB4ZXJ2dVFLWk9vT2dnVC0xTVlLMXc0dHFVRkR5amdYSUpF?oc=5",
-    "tokens": [
-      "engadget",
-      "review",
-      "recap",
-      "steam",
-      "machine",
-      "samsung",
-      "music",
-      "studio",
-      "oura",
-      "ring"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "key": "classpass adds new studiofriendly policies protections",
-    "url": "https://athletechnews.com/classpass-moves-to-ease-studios-complaints-new-partner-policies-protections/",
-    "tokens": [
-      "classpass",
-      "adds",
-      "studio",
-      "friendly",
-      "policies",
-      "protections"
-    ]
-  },
-  {
-    "date": "2026-07-16",
-    "key": "bob macintyres uses fitness coach to work out 50yard runouts",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNZFRZak92SWxXb1JUaXlEREw2ZXA3ZUZpcy11U2xsZFVwQ1VqTWl5NUFVbWIxTE9ZUTVoRHltMklaWDRjS05DcUVqc0laM295QnkwQ3VFLTFPSEhpTzYxOWxqNXBlWmwtanlscW90Z1JhVlAxci1UMndpbndaN3RDY1BVS2tIREZkUlFUN3JqNVBPVmpTcVlSSkpFXzFrT1VLWEpERFA1ZnpMNG4yWVlrQnhsYW0zN0dOR3ZJ?oc=5",
-    "tokens": [
-      "macintyre",
-      "uses",
-      "coach",
-      "work",
-      "yard",
-      "outs",
-      "baked",
-      "birkdale"
-    ]
-  },
-  {
     "date": "2026-07-17",
     "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
     "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
@@ -1263,6 +1182,101 @@
       "strength",
       "training",
       "class"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "key": "judge finds toronto drug squad officers likely stole 5000 fr",
+    "tokens": [
+      "judge",
+      "finds",
+      "toronto",
+      "drug",
+      "squad",
+      "officers",
+      "likely",
+      "stole",
+      "coach",
+      "stays",
+      "cocaine",
+      "charge"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "key": "pg strengthens wellness retail portfolio with 38bn thorne ac",
+    "tokens": [
+      "strengthens",
+      "retail",
+      "portfolio",
+      "thorne",
+      "acquisition"
+    ],
+    "entities": [
+      "Thorne"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "key": "62yearold woman inquires about a membership at crunch fitnes",
+    "tokens": [
+      "year",
+      "woman",
+      "inquires",
+      "about",
+      "membership",
+      "crunch",
+      "employee",
+      "tells",
+      "shape",
+      "first",
+      "just",
+      "want",
+      "walk",
+      "treadmill"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "key": "luxury yoga brand tulabala debuts on nordstromcom bringing d",
+    "tokens": [
+      "luxury",
+      "yoga",
+      "brand",
+      "tulabala",
+      "debuts",
+      "nordstrom",
+      "bringing",
+      "design",
+      "forward",
+      "homes"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "key": "kirin aims to build north american business platform with ja",
+    "tokens": [
+      "kirin",
+      "aims",
+      "build",
+      "north",
+      "american",
+      "business",
+      "platform",
+      "jamieson",
+      "acquisition"
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "key": "droitwichs pmf military fitness group raises 6000 for cancer",
+    "tokens": [
+      "droitwich",
+      "military",
+      "group",
+      "raises",
+      "cancer",
+      "charity"
     ]
   }
 ]
