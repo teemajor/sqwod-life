@@ -1,83 +1,5 @@
 [
   {
-    "date": "2026-07-22",
-    "key": "vorstellung der eckdaten der fitnesswirtschaft dach 2026",
-    "url": "https://www.dssv.de/eckdaten-dach-webinar-2026/",
-    "tokens": [
-      "vorstellung",
-      "eckdaten",
-      "fitnesswirtschaft",
-      "dach",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "key": "geschtzt top expertise fr dein studio  live im exklusiven we",
-    "url": "https://www.bodylife.com/myline-b2b-webinare/",
-    "tokens": [
-      "gesch",
-      "expertise",
-      "dein",
-      "studio",
-      "live",
-      "exklusiven",
-      "webinar"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "key": "garmin debuts 200 screenless fitness band in challenge to wh",
-    "url": "https://athletechnews.com/garmin-debuts-200-screenless-fitness-band-in-challenge-to-whoop/",
-    "tokens": [
-      "garmin",
-      "debuts",
-      "screenless",
-      "band",
-      "challenge",
-      "whoop"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "key": "movement is therapy  wolfgang unsld",
-    "url": "https://www.trainingsworld.com/movement-is-therapy-wolfgang-unsoeld/",
-    "tokens": [
-      "movement",
-      "therapy",
-      "wolfgang"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "key": "crunch franchise brings four stateoftheart crunch 30 gym to ",
-    "url": "https://www.healthandfitness.org/crunch-franchise-brings-four-state-of-the-art-crunch-3-0-gym-to-the-rocky-mountain-region/",
-    "tokens": [
-      "crunch",
-      "franchise",
-      "brings",
-      "four",
-      "state",
-      "rocky",
-      "mountain",
-      "region"
-    ]
-  },
-  {
-    "date": "2026-07-22",
-    "key": "garmin cirqa pricing and images leaked  could be genuine",
-    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5NMHlXLWFzcVA4c19YUTJSSnBIT2RCVGpBdzNNUE55cnVRc0lzTHFQUkJweGkwbzA4ODJRNXFWWUFpck5yZzNPYVBQamF5azdwYWg2aGZNajQtMjhRMWFoTDlib3FtdEViNGNxT2daNWNyZw?oc=5",
-    "tokens": [
-      "garmin",
-      "cirqa",
-      "pricing",
-      "images",
-      "leaked",
-      "could",
-      "genuine"
-    ]
-  },
-  {
     "date": "2026-07-24",
     "key": "how garmins acquisition of trainingpeaks might affect your f",
     "tokens": [
@@ -1298,6 +1220,93 @@
     ],
     "entities": [
       "Hims"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "key": "reebok signs on as official partner for xenom london",
+    "tokens": [
+      "reebok",
+      "signs",
+      "official",
+      "partner",
+      "xenom",
+      "london"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "key": "ozop energy solutions inc highlights varon usa equipment acq",
+    "tokens": [
+      "ozop",
+      "energy",
+      "solutions",
+      "highlights",
+      "varon",
+      "equipment",
+      "acquisition",
+      "product",
+      "development",
+      "initiative"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "key": "intel stock price forecast share placement attracts over 100",
+    "tokens": [
+      "intel",
+      "stock",
+      "price",
+      "forecast",
+      "share",
+      "placement",
+      "attracts",
+      "billion",
+      "demand",
+      "trend",
+      "recovery"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "key": "neu im dssvvorteilsclub firmenfitness",
+    "tokens": [
+      "dssv",
+      "vorteilsclub",
+      "firmenfitness"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "key": "ai asked to book pilates class hacks website",
+    "tokens": [
+      "asked",
+      "book",
+      "pilates",
+      "class",
+      "hacks",
+      "website"
+    ]
+  },
+  {
+    "date": "2026-08-13",
+    "key": "peloton adding ability to high five people taking a class wi",
+    "tokens": [
+      "peloton",
+      "adding",
+      "ability",
+      "high",
+      "five",
+      "people",
+      "taking",
+      "class",
+      "without",
+      "joining",
+      "drive",
+      "fives"
+    ],
+    "entities": [
+      "Peloton"
     ]
   }
 ]
