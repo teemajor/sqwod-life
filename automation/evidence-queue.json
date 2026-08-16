@@ -9,18 +9,21 @@
     { "topic": "Zone 2 cardio — the evidence behind the trend", "slug": "zone-2-cardio-evidence-coach-playbook", "pillar": "move", "status": "approved", "date": "2026-07-14" },
     { "topic": "Cold plunge & cold exposure — recovery or hype", "slug": "cold-plunge-evidence-coach-playbook", "pillar": "signal", "status": "drafted", "date": "2026-07-20" },
     { "topic": "Ashwagandha — stress, sleep, and strength claims", "slug": "ashwagandha-evidence-coach-playbook", "pillar": "signal", "conversion": "list-growth", "status": "drafted", "date": "2026-07-27" },
-    { "topic": "Protein timing & the anabolic window myth", "slug": "protein-timing-evidence-coach-playbook", "pillar": "move", "conversion": "products", "status": "drafted", "date": "2026-08-03" }
+    { "topic": "Protein timing & the anabolic window myth", "slug": "protein-timing-evidence-coach-playbook", "pillar": "move", "conversion": "products", "status": "drafted", "date": "2026-08-03" },
+    { "topic": "Caffeine for performance — dose, timing, tolerance", "slug": "caffeine-evidence-coach-playbook", "pillar": "move", "conversion": "products", "status": "drafted", "date": "2026-07-24" },
+    { "topic": "Sauna & heat exposure — longevity and recovery evidence", "slug": "sauna-heat-evidence-coach-playbook", "pillar": "signal", "conversion": "list-growth", "status": "drafted", "date": "2026-07-24" },
+    { "topic": "Protein & muscle on GLP-1 medications — what coaches can and can't say", "slug": "glp1-muscle-evidence-coach-playbook", "pillar": "move", "conversion": "list-growth", "status": "drafted", "date": "2026-07-24" },
+    { "topic": "Sleep & athletic performance — the highest-leverage lever", "slug": "sleep-performance-evidence-coach-playbook", "pillar": "signal", "conversion": "list-growth", "status": "drafted", "date": "2026-08-10" }
   ],
   "queue": [
-    { "topic": "Caffeine for performance — dose, timing, tolerance", "pillar": "move", "conversion": "products", "angle": "method; ergogenic dosing, when it helps, sleep trade-offs", "status": "pending" },
-    { "topic": "Sleep & athletic performance — the highest-leverage lever", "pillar": "signal", "conversion": "list-growth", "angle": "wellness culture; sleep's effect on strength, recovery, injury risk", "status": "pending" },
     { "topic": "Vitamin D — who actually needs to supplement", "pillar": "signal", "conversion": "list-growth", "angle": "supplement; deficiency, performance, and the over-supplementation trap", "status": "pending" },
     { "topic": "Omega-3 (fish oil) — joints, recovery, and dose", "pillar": "signal", "conversion": "verified", "angle": "supplement; EPA/DHA dose, what the evidence supports vs marketing", "status": "pending" },
     { "topic": "BCAAs — worth it if you already eat enough protein?", "pillar": "move", "conversion": "products", "angle": "supplement myth-buster; the leucine story and why whole protein usually wins", "status": "pending" },
     { "topic": "Beta-alanine — the tingling supplement, does it work?", "pillar": "move", "conversion": "products", "angle": "method/supplement; buffering, the rep ranges it helps, dosing", "status": "pending" },
-    { "topic": "Sauna & heat exposure — longevity and recovery evidence", "pillar": "signal", "conversion": "list-growth", "angle": "wellness culture; cardiovascular + recovery data, protocol basics", "status": "pending" },
-    { "topic": "Protein & muscle on GLP-1 medications — what coaches can and can't say", "pillar": "move", "conversion": "list-growth", "angle": "the question every coach is being asked; lean-mass loss during weight-loss drug use, resistance training + protein, strictly framed as 'being studied'", "status": "pending" },
     { "topic": "Creatine vs. protein vs. everything else — a supplement triage for coaches", "pillar": "move", "conversion": "verified", "angle": "meta piece; rank the supplement shelf by evidence grade so coaches can say no faster", "status": "pending" },
-    { "topic": "Training through perimenopause & menopause — what the evidence supports", "pillar": "move", "conversion": "pods", "angle": "women's health; strength, bone, protein needs and recovery; where research is thin and where it's solid", "status": "pending" }
+    { "topic": "Training through perimenopause & menopause — what the evidence supports", "pillar": "move", "conversion": "pods", "angle": "women's health; strength, bone, protein needs and recovery; where research is thin and where it's solid", "status": "pending" },
+    { "topic": "Training with the menstrual cycle — periodisation claims vs. the actual data", "pillar": "move", "conversion": "pods", "angle": "women's health; cycle-based programming is everywhere in apps — grade what the evidence actually supports and where it's thin", "status": "pending" },
+    { "topic": "Blood-flow restriction training — who it's really for", "pillar": "move", "conversion": "products", "angle": "method; hypertrophy at low loads, rehab use, safety and cuff-pressure basics, scope-of-practice limits for coaches", "status": "pending" },
+    { "topic": "Collagen & joint pain — does the supplement do anything for lifters", "pillar": "signal", "conversion": "verified", "angle": "supplement; tendon/ligament claims, dose and vitamin C timing, what's marketing vs. measured", "status": "pending" }
   ]
 }
