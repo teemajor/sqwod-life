@@ -1,93 +1,5 @@
 [
   {
-    "date": "2026-07-24",
-    "key": "how garmins acquisition of trainingpeaks might affect your f",
-    "tokens": [
-      "garmin",
-      "acquisition",
-      "trainingpeaks",
-      "might",
-      "affect",
-      "routine"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "key": "raw nutrition parent tops 850m in h1 revenue",
-    "tokens": [
-      "nutrition",
-      "parent",
-      "tops",
-      "850m",
-      "revenue"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "key": "planet fitness operator valued at 170m as pe swoops",
-    "tokens": [
-      "planet",
-      "operator",
-      "valued",
-      "170m",
-      "swoops"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "key": "brandnew gym opens with a focus on wellness and recovery fro",
-    "tokens": [
-      "brand",
-      "opens",
-      "focus",
-      "recovery",
-      "injury"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "key": "midtown athletic club launches the alan g schwartz community",
-    "tokens": [
-      "midtown",
-      "athletic",
-      "club",
-      "launches",
-      "alan",
-      "schwartz",
-      "community",
-      "tennis",
-      "program",
-      "partnership",
-      "united",
-      "states",
-      "association",
-      "expanding",
-      "access",
-      "underserved",
-      "communities",
-      "across",
-      "chicago"
-    ]
-  },
-  {
-    "date": "2026-07-24",
-    "key": "this exercise saved my lower back fitness coach dan go revea",
-    "tokens": [
-      "exercise",
-      "saved",
-      "lower",
-      "back",
-      "coach",
-      "reveals",
-      "movement",
-      "reverse",
-      "damage",
-      "years",
-      "sitting",
-      "health"
-    ]
-  },
-  {
     "date": "2026-07-27",
     "key": "sydney marathon offers ai coaching program valued at more th",
     "tokens": [
@@ -1389,6 +1301,88 @@
     ],
     "entities": [
       "Garmin"
+    ]
+  },
+  {
+    "date": "2026-08-17",
+    "key": "body20 unveils emspowered tone class",
+    "tokens": [
+      "body20",
+      "unveils",
+      "powered",
+      "tone",
+      "class"
+    ]
+  },
+  {
+    "date": "2026-08-17",
+    "key": "delightree raises 25 million to build agentic ai operating s",
+    "tokens": [
+      "delightree",
+      "raises",
+      "million",
+      "build",
+      "agentic",
+      "operating",
+      "system",
+      "franchise",
+      "multi",
+      "unit",
+      "brands"
+    ]
+  },
+  {
+    "date": "2026-08-17",
+    "key": "fitbit air features explained heart rate sleep tracking and ",
+    "tokens": [
+      "fitbit",
+      "features",
+      "explained",
+      "heart",
+      "rate",
+      "sleep",
+      "tracking",
+      "gemini",
+      "coaching"
+    ],
+    "entities": [
+      "Fitbit"
+    ]
+  },
+  {
+    "date": "2026-08-17",
+    "key": "pilates studio jetset to open in recently shuttered row hous",
+    "tokens": [
+      "pilates",
+      "studio",
+      "jetset",
+      "open",
+      "recently",
+      "shuttered",
+      "house",
+      "winterfield",
+      "crossing"
+    ]
+  },
+  {
+    "date": "2026-08-17",
+    "key": "jcpenney parodies offprice retailers with wellnessthemed cam",
+    "tokens": [
+      "jcpenney",
+      "parodies",
+      "price",
+      "retailers",
+      "themed",
+      "campaign"
+    ]
+  },
+  {
+    "date": "2026-08-17",
+    "key": "fit tracker  monthly checkin",
+    "tokens": [
+      "tracker",
+      "monthly",
+      "check"
     ]
   }
 ]
