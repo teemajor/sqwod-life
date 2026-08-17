@@ -40,6 +40,7 @@ value:
   score: 70
   bestPrice: 159
   currency: USD
+  priceType: monthly
   low: 0
   subscription: "0 $ gratis (bis 100 Mitglieder) · Pro 159 $/Monat · Max 229 $/Monat"
 pros:

@@ -39,6 +39,7 @@ value:
   score: 58
   bestPrice: 50
   currency: USD
+  priceType: monthly
   low: 45
   subscription: "49,99 $/Monat"
 pros:

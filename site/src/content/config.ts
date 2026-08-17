@@ -46,9 +46,36 @@ const reviews = defineCollection({
       score: z.number(),
       bestPrice: z.number(),
       currency: z.string().default('EUR'),
+      // Is bestPrice a one-off purchase or a recurring fee? DECLARED, never
+      // inferred. Several products store a recurring price here — Whoop 4.0's
+      // "30" is EUR 30 per month, TrainingPeaks' "19.95" is USD 19.95 per month,
+      // AG1's "87" is a monthly subscription. Rendered as a bare number beside a
+      // EUR 299 one-off purchase, the most expensive option in a category reads
+      // as the cheapest. The superRefine below makes forgetting this a build
+      // failure rather than a silently wrong price.
+      priceType: z.enum(['oneoff', 'monthly', 'yearly']).default('oneoff'),
       low: z.number().optional(),
       subscription: z.string().optional(),
       history: z.array(z.number()).default([]),
+    }).superRefine((v, ctx) => {
+      if (v.priceType !== 'oneoff' || !v.subscription) return;
+      // If the leading figure in the subscription string equals bestPrice, then
+      // bestPrice IS the subscription and priceType must say so.
+      const first = v.subscription.match(/(\d+(?:[.,]\d+)?)/);
+      if (!first) return;
+      const n = parseFloat(first[1].replace(',', '.'));
+      if (Math.abs(n - v.bestPrice) > Math.max(1, v.bestPrice * 0.03)) return;
+      const cadence = /\/\s*(mo|month|monat)/i.test(v.subscription) ? 'monthly'
+        : /\/\s*(yr|year|jahr)/i.test(v.subscription) ? 'yearly' : 'monthly';
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['priceType'],
+        message:
+          `bestPrice (${v.bestPrice}) matches the subscription "${v.subscription}", so this price is ` +
+          `recurring — but priceType is "oneoff". Set priceType: ${cadence}. ` +
+          `Leaving it as oneoff renders a recurring fee as a purchase price and makes this product ` +
+          `look far cheaper than it is.`,
+      });
     }),
 
     pros: z.array(z.string()),

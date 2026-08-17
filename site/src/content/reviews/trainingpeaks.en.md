@@ -39,6 +39,7 @@ value:
   score: 68
   bestPrice: 19.95
   currency: USD
+  priceType: monthly
   subscription: "$19.95/mo Premium (free Basic tier; Coach from $21.99/mo)"
 pros:
   - "Deep, customizable analytics (Performance Management Chart, TSS/CTL/ATL)"

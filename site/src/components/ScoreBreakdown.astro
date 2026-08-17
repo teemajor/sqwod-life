@@ -1,8 +1,9 @@
 ---
 import { t, type Lang } from '../i18n/ui';
+import { formatPrice, type PriceType } from '../lib/price';
 interface Crowd { score:number; reviews:number; platforms:number; sources:{name:string;value:string;url?:string}[] }
 interface Assessment { score:number; criteria:{name:string;score:number}[] }
-interface Value { score:number; bestPrice:number; currency:string; low?:number; subscription?:string; history:number[] }
+interface Value { score:number; bestPrice:number; currency:string; priceType?:PriceType; low?:number; subscription?:string; history:number[] }
 interface Props { lang: Lang; crowd: Crowd; assessment: Assessment; value: Value; asOf?: string }
 const { lang, crowd, assessment, value, asOf } = Astro.props;
 const max = Math.max(...value.history, 1);
@@ -47,7 +48,7 @@ const note = lang === 'de'
     <div>
       <p class="ctitle">{t(lang,'verified.value')}</p>
       <div class="src" style="margin-bottom:6px">
-        <span class="chip">{lang==='de'?'Bester':'Best'} <b>{value.currency==='EUR'?'€':''}{value.bestPrice}</b></span>
+        <span class="chip">{lang==='de'?'Bester':'Best'} <b>{formatPrice(value.bestPrice, value.currency, lang, value.priceType)}</b></span>
         {value.low && <span class="chip">{lang==='de'?'90-Tage-Tief':'90-day low'} <b>{value.currency==='EUR'?'€':''}{value.low}</b></span>}
         {value.subscription && <span class="chip">{lang==='de'?'Abo':'Sub'} <b>{value.subscription}</b></span>}
       </div>

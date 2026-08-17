@@ -4,6 +4,7 @@ import CategoryIcon from '../../../components/CategoryIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
 import { categories } from '../../../config/verified-categories';
+import { guides, GUIDE_PREFIX } from '../../../config/best';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -33,6 +34,21 @@ const blurb = lang === 'de'
     <a href={`/${lang}/verified/methodology`} style="color:var(--chalk)">{t(lang,'verified.howWeRank')} →</a>
     &nbsp;·&nbsp; <b>{totalReviewed}</b> {lang==='de'?'getestet':'reviewed'} &nbsp;·&nbsp; <b>{categories.length}</b> {lang==='de'?'Kategorien':'categories'}
   </p>
+
+  <!-- Buyer's guides: the "best X" layer. These answer the question people
+       actually type, and they are the strongest internal-link source into the
+       scored reviews — so they sit above the category grid, not below it. -->
+  <section class="guides">
+    <p class="kick">{lang === 'de' ? 'Kaufberatung nach Kategorie' : 'Buyer\'s guides by category'}</p>
+    <div class="glist">
+      {guides.map((g) => (
+        <a class="gcard" href={`/${lang}/${GUIDE_PREFIX[lang]}/${g.slug[lang]}/`}>
+          <span class="gc-h">{lang === 'de' ? `Beste ${g.title.de}` : `Best ${g.title.en}`}</span>
+          <span class="gc-y">{new Date().getFullYear()}</span>
+        </a>
+      ))}
+    </div>
+  </section>
 
   <div class="cat-grid">
     {cards.map(({ c, reviewed, total, names }, i) => (
@@ -67,4 +83,15 @@ const blurb = lang === 'de'
   .brands{font-size:12px;color:var(--g4)}
   .cat-cta{font-size:13px;font-weight:700;color:var(--chalk)}
   @media(max-width:680px){.cat-grid{grid-template-columns:1fr}}
+</style>
+
+<style>
+  .guides{margin:22px 0 6px}
+  .guides .kick{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);margin:0 0 10px}
+  .glist{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .gcard{display:flex;align-items:center;justify-content:space-between;gap:10px;
+    border:1px solid var(--line);border-radius:10px;padding:11px 13px;text-decoration:none;background:var(--panel)}
+  .gcard:hover{border-color:var(--chalk)}
+  .gc-h{font-size:13.5px;font-weight:700;line-height:1.35}
+  .gc-y{font-size:11px;color:var(--g4);font-family:ui-monospace,Menlo,monospace}
 </style>

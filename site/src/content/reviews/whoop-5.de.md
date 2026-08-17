@@ -40,6 +40,7 @@ value:
   score: 72
   bestPrice: 199
   currency: EUR
+  priceType: yearly
   subscription: "One 199 €/Jahr · Peak 264 €/Jahr · Life (MG) 399 €/Jahr — Hardware inklusive"
 pros:
   - "14+ Tage Akku (vorher ~4–5) — lädt am Handgelenk"

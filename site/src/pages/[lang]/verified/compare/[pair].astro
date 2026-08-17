@@ -6,6 +6,7 @@ import Base from '../../../../layouts/Base.astro';
 import ComparisonTable from '../../../../components/ComparisonTable.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
+import { formatPrice } from '../../../../lib/price';
 import { categories, byCategory } from '../../../../config/verified-categories';
 
 export async function getStaticPaths() {
@@ -38,7 +39,7 @@ const winner = A.sqwodScore >= B.sqwodScore ? A : B;
 const loser = winner === A ? B : A;
 const tie = A.sqwodScore === B.sqwodScore;
 const cur = (c?: string) => (!c || c === 'EUR' ? '€' : c === 'USD' ? '$' : c + ' ');
-const items = [A, B].map((d) => ({ name: d.productName, slug: d.urlSlug, score: d.sqwodScore, price: d.value?.bestPrice, currency: d.value?.currency }));
+const items = [A, B].map((d) => ({ name: d.productName, slug: d.urlSlug, score: d.sqwodScore, price: d.value?.bestPrice, currency: d.value?.currency, priceType: d.value?.priceType }));
 
 const T = lang === 'de' ? {
   vs: 'vs', verdict: 'Sqwod-Urteil', pick: 'Unser Sieger', takes: 'gewinnt', choose: 'Wähle', ifb: 'wenn du',
@@ -78,7 +79,7 @@ const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
         {isWin && <span class="wtag">{T.pick}</span>}
         <h2>{d.productName}</h2>
         <div class="scr"><b>{d.sqwodScore}</b><span>{T.score} · {d.confidence}</span></div>
-        {typeof d.value?.bestPrice === 'number' && <div class="prc">{T.from} {cur(d.value.currency)}{d.value.bestPrice}</div>}
+        {typeof d.value?.bestPrice === 'number' && <div class="prc">{T.from} {formatPrice(d.value.bestPrice, d.value.currency, lang, d.value.priceType)}</div>}
         <p class="vd">{d.verdict}</p>
         <div class="acts">
           <a class="rev" href={`/${lang}/verified/${d.urlSlug}`}>{T.read}</a>

@@ -40,6 +40,7 @@ value:
   score: 72
   bestPrice: 199
   currency: EUR
+  priceType: yearly
   subscription: "One €199/yr · Peak €264/yr · Life (MG) €399/yr — hardware included"
 pros:
   - "14+ day battery (was ~4–5) — charges on the wrist"

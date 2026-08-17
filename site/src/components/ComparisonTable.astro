@@ -5,12 +5,14 @@
 // (Awin feed). Renders nothing unless there are ≥2 products and ≥1 spec row.
 import { compareRows } from '../config/verified-compare';
 import type { Lang } from '../i18n/ui';
+import { formatPrice, type PriceType } from '../lib/price';
 
-interface Item { name: string; slug: string; score?: number; price?: number; currency?: string; }
+// priceType travels with the price so a monthly fee never renders as a purchase
+// price next to a one-off one (see lib/price.ts).
+interface Item { name: string; slug: string; score?: number; price?: number; currency?: string; priceType?: PriceType; }
 interface Props { lang: Lang; slug: string; items: Item[]; asOf?: string; }
 const { lang, slug, items, asOf } = Astro.props;
 const rows = compareRows(slug);
-const cur = (c?: string) => (!c || c === 'EUR' ? '€' : c === 'USD' ? '$' : c + ' ');
 const T = lang === 'de'
   ? { compare: 'Direktvergleich', read: 'Test →', from: 'ab', score: 'Score', note: 'Preise sind unsere getesteten Richtwerte' }
   : { compare: 'Compare side-by-side', read: 'Review →', from: 'from', score: 'Score', note: 'Prices are our reviewed reference points' };
@@ -29,7 +31,7 @@ const show = rows.length >= 1 && items.length >= 2;
               <a href={`/${lang}/verified/${it.slug}`} class="ph">
                 <span class="pn">{it.name}</span>
                 {typeof it.score === 'number' && <span class="sc">{it.score}<i>{T.score}</i></span>}
-                {typeof it.price === 'number' && <span class="pr">{T.from} {cur(it.currency)}{it.price}</span>}
+                {typeof it.price === 'number' && <span class="pr">{T.from} {formatPrice(it.price, it.currency, lang, it.priceType)}</span>}
                 <span class="rl">{T.read}</span>
               </a>
             </th>

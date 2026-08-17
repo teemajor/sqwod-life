@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
 import { categories, byCategory } from '../../../../config/verified-categories';
 import { hasCompare } from '../../../../config/verified-compare';
+import { byGuideCategory, GUIDE_PREFIX } from '../../../../config/best';
 import ComparisonTable from '../../../../components/ComparisonTable.astro';
 
 export function getStaticPaths() {
@@ -12,6 +13,8 @@ export function getStaticPaths() {
 }
 const lang = Astro.params.lang as Lang;
 const cat = byCategory(Astro.props.slug)!;
+// Roundup buyer's guide for this category, if one exists (config/best.ts).
+const guideFor = byGuideCategory(cat.slug);
 
 // pull real Sqwod Scores for reviewed picks
 const reviews = await getCollection('reviews', (r) => r.data.lang === lang);
@@ -25,6 +28,7 @@ enriched.sort((a, b) => (b.r?.sqwodScore ?? -1) - (a.r?.sqwodScore ?? -1));
 const cmpItems = enriched.filter((e) => e.r).map(({ p, r }) => ({
   name: p.product, slug: p.reviewSlug as string,
   score: r!.sqwodScore, price: r!.value?.bestPrice, currency: r!.value?.currency,
+  priceType: r!.value?.priceType,
 }));
 
 // head-to-head pairs (reviewed products in this category) → programmatic vs-pages
@@ -53,6 +57,16 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
   <span class="verified-tag">◈ Sqwod Verified</span>
   <h1 style="margin:2px 0 6px">{cat.label[lang]}</h1>
   <p class="sub" style="max-width:62ch">{cat.blurb[lang]}</p>
+
+  {guideFor && (
+    <a class="guide-cta" href={`/${lang}/${GUIDE_PREFIX[lang]}/${guideFor.slug[lang]}/`}>
+      <span class="gc-kick">{lang === 'de' ? 'Kaufberatung' : "Buyer's guide"}</span>
+      <span class="gc-title">{lang === 'de'
+        ? `Beste ${guideFor.title.de} ${new Date().getFullYear()} — bewertet und begründet`
+        : `Best ${guideFor.title.en} ${new Date().getFullYear()} — ranked and explained`}</span>
+      <span class="gc-go">→</span>
+    </a>
+  )}
 
   <div class="vlist">
     {enriched.map(({ p, r }, i) => (
@@ -118,10 +132,19 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
   .rev-link{color:var(--chalk);text-decoration:none;border-bottom:1px solid var(--g3)}
   .visit{color:var(--g3);text-decoration:none;border-bottom:1px solid var(--line)}
   .acts a:hover{border-color:var(--chalk)}
-  .score{position:relative;width:74px;height:74px;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-direction:column}
-  .score svg{position:absolute;inset:0;width:100%;height:100%}
-  .score b{font-size:22px;color:var(--chalk);font-weight:800;line-height:1}
-  .score .lbl{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
+  /* NOTE: global.css sets `.score b { position:absolute; inset:0 }` so the
+     number fills and centres itself over the whole badge. This block used to
+     rely on flex-column stacking, which absolute positioning takes the number
+     out of — leaving the number and the SCORE label centred on top of each
+     other. Both children are therefore positioned explicitly here: the diamond
+     and number occupy the top 74px, the label sits beneath it. */
+  .score{position:relative;width:74px;height:90px;display:block;text-decoration:none}
+  .score svg{position:absolute;top:0;left:0;width:74px;height:74px}
+  .score b{position:absolute;top:0;left:0;width:74px;height:74px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;color:var(--chalk);font-weight:800;line-height:1}
+  .score .lbl{position:absolute;top:78px;left:0;width:74px;text-align:center;
+    font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
   .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:9px 16px}
   .lp:hover{border-color:var(--chalk)}
   .hh2{margin:22px 0 6px}
@@ -133,4 +156,15 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
     .row{grid-template-columns:24px 1fr;gap:10px}
     .thumb,.score{display:none}
   }
+</style>
+
+<style>
+  /* Link from a category listing up to its "best of" buyer's guide. Categories
+     rank products; the guide answers the question people actually type. */
+  .guide-cta{display:flex;align-items:center;gap:12px;margin:16px 0 4px;padding:14px 16px;
+    border:1px solid var(--line);border-radius:12px;background:var(--panel);text-decoration:none}
+  .guide-cta:hover{border-color:var(--chalk)}
+  .gc-kick{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g4);white-space:nowrap}
+  .gc-title{font-weight:700;font-size:14.5px;flex:1;line-height:1.4}
+  .gc-go{color:var(--g4)}
 </style>

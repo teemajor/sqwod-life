@@ -40,6 +40,7 @@ value:
   score: 45
   bestPrice: 87
   currency: EUR
+  priceType: monthly
   low: 87
   subscription: "87 €/Monat Abo (30 Portionen, ~2,90 €/Portion)"
 pros:

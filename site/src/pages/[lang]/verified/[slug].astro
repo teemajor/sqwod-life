@@ -61,7 +61,10 @@ const jsonLd = {
     datePublished: iso(d.publishedAt),
     dateModified: iso(d.updatedAt),
     author: { '@type': 'Organization', name: 'Sqwod Verified' },
-    publisher: { '@type': 'Organization', name: 'sqwod.life' },
+    // Reference the sitewide Organization node (components/SiteSchema.astro)
+    // by @id rather than repeating a bare name string — that turns three
+    // disconnected blocks into one resolvable graph.
+    publisher: { '@id': 'https://sqwod.life/#organization' },
     reviewRating: { '@type': 'Rating', ratingValue: d.sqwodScore, bestRating: 100, worstRating: 0 },
   },
   // NOTE: no `offers`/price in structured data — we have no live pricing (PA-API pending),

@@ -38,6 +38,7 @@ value:
   score: 72
   bestPrice: 30
   currency: EUR
+  priceType: monthly
   low: 24
   subscription: "30 €/Monat Mitgliedschaft"
   history: [78, 74, 80, 70, 66, 60, 64, 62, 70, 66, 62, 64]

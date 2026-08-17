@@ -1,0 +1,385 @@
+---
+// Sqwod Verified — "best of" roundups.  /en/best/<slug>  ·  /de/beste/<slug>
+//
+// The route is [lang]/[guide]/[category] rather than [lang]/best/[category] so
+// the German prefix can be "beste" instead of "best". Astro ranks static path
+// segments above dynamic ones, so /en/articles/move still resolves to
+// [lang]/articles/[pillar] and /en/verified/x to [lang]/verified/[slug] — this
+// route only ever builds the exact paths returned by getStaticPaths below.
+//
+// Everything numeric (score, sub-scores, price, 90-day low, confidence) is read
+// live from the reviews collection at build time. Nothing is duplicated into
+// config/best.ts, so a score change in a review flows straight through to the
+// roundup, the table and the structured data with no second edit.
+import Base from '../../../layouts/Base.astro';
+import ScoreBadge from '../../../components/ScoreBadge.astro';
+import CategoryIcon from '../../../components/CategoryIcon.astro';
+import { getCollection } from 'astro:content';
+import { languages, type Lang } from '../../../i18n/ui';
+import { categories, byCategory } from '../../../config/verified-categories';
+import { guides, GUIDE_PREFIX } from '../../../config/best';
+import { priceOf, lowOf, hasSubscription } from '../../../lib/price';
+
+export async function getStaticPaths() {
+  return languages.flatMap((lang) =>
+    guides
+      // only build a guide if its category actually exists in Verified
+      .filter((g) => categories.some((c) => c.slug === g.category))
+      .map((g) => ({
+        params: { lang, guide: GUIDE_PREFIX[lang], category: g.slug[lang] },
+        props: { guideCategory: g.category },
+      })),
+  );
+}
+
+const lang = Astro.params.lang as Lang;
+const other: Lang = lang === 'en' ? 'de' : 'en';
+const guide = guides.find((g) => g.category === Astro.props.guideCategory)!;
+const cat = byCategory(guide.category)!;
+const de = lang === 'de';
+const year = new Date().getFullYear();
+
+// hreflang partner — localized on BOTH segments, driven by the same slug map.
+const altPath = `/${other}/${GUIDE_PREFIX[other]}/${guide.slug[other]}/`;
+
+// --- live data -------------------------------------------------------------
+const reviews = await getCollection('reviews', (r) => r.data.lang === lang && !r.data.draft);
+const dataFor = (slug?: string) => (slug ? reviews.find((r) => r.data.urlSlug === slug)?.data : undefined);
+
+const scored = cat.picks
+  .map((p) => ({ pick: p, r: dataFor(p.reviewSlug) }))
+  .filter((x) => x.r) // a roundup ranks scored products only; editorial picks stay on the category page
+  .sort((a, b) => b.r!.sqwodScore - a.r!.sqwodScore);
+
+const top = scored[0];
+const dateFmt = (d: Date) =>
+  d.toLocaleDateString(de ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+const lastUpdated = scored.length
+  ? new Date(Math.max(...scored.map((s) => s.r!.updatedAt.getTime())))
+  : new Date();
+
+const title = de
+  ? `Beste ${guide.title.de} ${year}: ${scored.length} Modelle im Test`
+  : `Best ${guide.title.en} ${year}: ${scored.length} Picks, Scored 0–100`;
+
+// --- structured data -------------------------------------------------------
+// ItemList carries the full ranked list — rank, product, brand, URL, price and
+// the Sqwod Score — so a single pass yields the whole answer. FAQPage mirrors
+// the visible accordion below verbatim.
+const base = 'https://sqwod.life';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${base}/${lang}/${GUIDE_PREFIX[lang]}/${guide.slug[lang]}/#itemlist`,
+    name: title,
+    description: guide.description[lang],
+    url: `${base}/${lang}/${GUIDE_PREFIX[lang]}/${guide.slug[lang]}/`,
+    numberOfItems: scored.length,
+    itemListOrder: 'https://schema.org/ItemListOrderDescending',
+    inLanguage: lang,
+    itemListElement: scored.map(({ pick, r }, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: pick.bestFor[lang],
+      item: {
+        '@type': 'Product',
+        name: r!.productName,
+        brand: { '@type': 'Brand', name: pick.brand },
+        url: `${base}/${lang}/verified/${r!.urlSlug}/`,
+        ...(r!.asset.images[0] ? { image: r!.asset.images[0] } : {}),
+        review: {
+          '@type': 'Review',
+          reviewRating: { '@type': 'Rating', ratingValue: r!.sqwodScore, bestRating: 100, worstRating: 0 },
+          author: { '@id': `${base}/#organization` },
+        },
+      },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${base}/${lang}/${GUIDE_PREFIX[lang]}/${guide.slug[lang]}/#faq`,
+    inLanguage: lang,
+    mainEntity: guide.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q[lang],
+      acceptedAnswer: { '@type': 'Answer', text: f.a[lang] },
+    })),
+  },
+];
+
+const tx = {
+  topPick: de ? 'Unsere Empfehlung' : 'Our top pick',
+  glance: de ? 'Auf einen Blick' : 'At a glance',
+  howScore: de ? 'Wie wir bewerten' : 'How we score',
+  before: de ? 'Was du vor dem Kauf wissen solltest' : 'What to know before buying',
+  picks: de ? 'Die Empfehlungen' : 'The picks',
+  operator: de ? 'Für Trainer:innen und Studiobetreiber' : 'For coaches and studio owners',
+  faq: de ? 'Häufige Fragen' : 'Frequently asked questions',
+  related: de ? 'Weiterlesen' : 'Related',
+  bestFor: de ? 'Am besten für' : 'Best for',
+  score: 'Sqwod Score',
+  price: de ? 'Bester Preis' : 'Best price',
+  low: de ? '90-Tage-Tief' : '90-day low',
+  readReview: de ? 'Test lesen' : 'Read review',
+  bestDeal: de ? 'Bester Deal' : 'Best deal',
+  updated: de ? 'Zuletzt geprüft' : 'Last verified',
+  allIn: de ? 'Alle bewerteten Produkte der Kategorie' : 'Every scored product in this category',
+  methodology: de ? 'Vollständige Methodik' : 'Full methodology',
+  sub: de ? 'Abo' : 'Subscription',
+  pros: de ? 'Dafür' : 'Pros',
+  cons: de ? 'Dagegen' : 'Cons',
+  buyIf: de ? 'Kaufen, wenn' : 'Buy it if',
+  skipIf: de ? 'Überspringen, wenn' : 'Skip it if',
+};
+---
+<Base
+  lang={lang}
+  title={title}
+  description={guide.description[lang]}
+  active="verified"
+  ogType="article"
+  altPath={altPath}
+  image={top?.r?.asset.images[0] ?? '/podcast-cover.png'}
+>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
+
+  <div class="crumb">Sqwod Verified / {cat.label[lang]}</div>
+
+  <div style="display:flex;gap:16px;align-items:center;margin-top:6px">
+    <CategoryIcon cat={cat.slug} size={56} />
+    <h1 style="margin:0">{title}</h1>
+  </div>
+
+  <p class="byline">
+    {de ? 'Bewertet von' : 'Scored by'} <a href={`/${lang}/about/`}>Tee Major</a>
+    · {tx.updated} <b>{dateFmt(lastUpdated)}</b>
+  </p>
+
+  {top && (
+    <p class="lede">
+      {de
+        ? <>Für die meisten ist <b>{top.r!.productName}</b> die richtige Wahl — <b>{top.r!.sqwodScore}/100</b>, der höchste Wert der Kategorie{top.r!.value?.bestPrice ? <>, bei <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.de}</>
+        : <>For most people the <b>{top.r!.productName}</b> is the right buy — <b>{top.r!.sqwodScore}/100</b>, the highest score in this category{top.r!.value?.bestPrice ? <>, at <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.en}</>}
+    </p>
+  )}
+
+  <div class="disc">{de
+    ? 'Wir erhalten unter Umständen eine Provision über Links auf dieser Seite. Der Sqwod Score und das Ranking bleiben davon unberührt.'
+    : 'We may earn a commission from links on this page. It never affects the Sqwod Score or the ranking.'}</div>
+
+  <!-- ---------------------------------------------------------- top pick -->
+  {top && (
+    <section class="block toppick">
+      <p class="kick">{tx.topPick}</p>
+      <div class="tp">
+        <ScoreBadge score={top.r!.sqwodScore} size={104} />
+        <div class="tp-body">
+          <h2 style="margin:0 0 4px">{top.r!.productName}</h2>
+          <div class="tp-meta">
+            <span class="tag">{top.pick.bestFor[lang]}</span>
+            {top.r!.value?.bestPrice ? <span>{tx.price} <b>{priceOf(top.r!.value, lang)}</b></span> : null}
+            {top.r!.value?.low ? <span>{tx.low} <b>{lowOf(top.r!.value, lang)}</b></span> : null}
+            {top.r!.value?.subscription ? <span>{tx.sub} <b>{top.r!.value.subscription}</b></span> : null}
+          </div>
+          <p class="verdict">{top.r!.verdict}</p>
+          <div class="tp-cta">
+            <a class="deal" href={`/go/${top.r!.urlSlug}`} rel="sponsored nofollow">{tx.bestDeal} →</a>
+            <a class="ghost" href={`/${lang}/verified/${top.r!.urlSlug}/`}>{tx.readReview}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- --------------------------------------------------------- at a glance -->
+  <section class="block">
+    <p class="kick">{tx.glance}</p>
+    <div class="tablewrap">
+      <table class="glance">
+        <thead>
+          <tr>
+            <th>#</th><th>{de ? 'Produkt' : 'Product'}</th><th>{tx.bestFor}</th>
+            <th>{tx.score}</th><th>{tx.price}</th><th>{tx.low}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {scored.map(({ pick, r }, i) => (
+            <tr>
+              <td class="rank">{i + 1}</td>
+              <td><a href={`/${lang}/verified/${r!.urlSlug}/`}>{r!.productName}</a></td>
+              <td>{pick.bestFor[lang]}</td>
+              <td class="sc"><b>{r!.sqwodScore}</b></td>
+              <td>
+                {r!.value?.bestPrice
+                  ? <><b>{priceOf(r!.value, lang)}</b>
+                      {hasSubscription(r!.value) ? <span class="subline">{r!.value.subscription}</span> : null}</>
+                  : '—'}
+              </td>
+              <td>{lowOf(r!.value, lang) ?? '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="note">
+      {de ? 'Preise recherchiert, Stand ' : 'Prices researched, as of '}{dateFmt(lastUpdated)}.
+      {' '}<a href={`/${lang}/verified/c/${cat.slug}/`}>{tx.allIn} →</a>
+    </p>
+  </section>
+
+  <!-- ------------------------------------------------------- how we score -->
+  <section class="block">
+    <p class="kick">{tx.howScore}</p>
+    <p>{de
+      ? 'Jeder Sqwod Score ist ein Gesamtwert von 0–100 aus drei veröffentlichten Komponenten:'
+      : 'Every Sqwod Score is a 0–100 composite of three published components:'}</p>
+    <ul class="weights">
+      <li><b>Crowd Signal — 45%.</b> {de
+        ? 'Echtes Nutzer-Feedback über Händler, App-Stores, Bewertungsplattformen, Reddit und YouTube. Normalisiert, nach Menge und Aktualität gewichtet, Fake-Reviews gefiltert.'
+        : 'Real-user feedback across retailers, app stores, review platforms, Reddit and YouTube. Normalised, volume- and recency-weighted, fake-review filtered.'}</li>
+      <li><b>Sqwod Assessment — 40%.</b> {de
+        ? 'Unsere gewichtete Scorecard: Leistung, Preis-Leistung, Verarbeitung, Nutzung, Coach-/Betreiber-Eignung, Support.'
+        : 'Our weighted scorecard: performance, value, build, experience, coach/operator fit, support.'}</li>
+      <li><b>Value / Deal — 15%.</b> {de
+        ? 'Bester Live-Preis gegen den Kategorie-Benchmark plus echte Preishistorie. Abos zählen gegen den Score.'
+        : 'Best live price against the category benchmark, plus real price history. Subscriptions weigh against the score.'}</li>
+    </ul>
+    <p class="note">{de
+      ? 'Alle Teilbewertungen stehen auf jeder Produktseite. Provisionen beeinflussen den Score nie — wir veröffentlichen auch schlechte Werte.'
+      : 'All sub-scores are shown on every product page. Commission never affects the score — we publish low scores too.'}
+      {' '}<a href={`/${lang}/verified/methodology/`}>{tx.methodology} →</a></p>
+  </section>
+
+  <!-- --------------------------------------------------- before you buy -->
+  <section class="block">
+    <p class="kick">{tx.before}</p>
+    <ul class="guidance">
+      {guide.before.map((b) => <li>{b[lang]}</li>)}
+    </ul>
+  </section>
+
+  <!-- --------------------------------------------------------- the picks -->
+  <section class="block">
+    <p class="kick">{tx.picks}</p>
+    {scored.map(({ pick, r }, i) => (
+      <article class="pick">
+        <div class="pick-head">
+          <span class="num">#{i + 1}</span>
+          <span class="tag">{pick.bestFor[lang]}</span>
+        </div>
+        <h3>{r!.productName}</h3>
+        <div class="pick-meta">
+          <b>{r!.sqwodScore}/100</b>
+          <span>Crowd {r!.crowd.score}</span>
+          <span>{de ? 'Assessment' : 'Assessment'} {r!.assessment.score}</span>
+          <span>Value {r!.value.score}</span>
+          {r!.value?.bestPrice ? <span>{priceOf(r!.value, lang)}</span> : null}
+          {r!.value?.subscription ? <span>{tx.sub}: {r!.value.subscription}</span> : null}
+        </div>
+        <p class="why">{pick.why[lang]}</p>
+        {r!.assessment.criteria?.length ? (
+          <ul class="crit">
+            {r!.assessment.criteria.map((c) => <li><span>{c.name}</span><b>{c.score}</b></li>)}
+          </ul>
+        ) : null}
+        <div class="pc">
+          <div><h4>{tx.pros}</h4><ul>{r!.pros.slice(0, 3).map((p) => <li>{p}</li>)}</ul></div>
+          <div><h4>{tx.cons}</h4><ul>{r!.cons.slice(0, 2).map((c) => <li>{c}</li>)}</ul></div>
+        </div>
+        <p class="who"><b>{tx.buyIf}</b> {r!.whoFor.buy} <b>{tx.skipIf}</b> {r!.whoFor.skip}</p>
+        <div class="tp-cta">
+          <a class="deal" href={`/go/${r!.urlSlug}`} rel="sponsored nofollow">{tx.bestDeal} →</a>
+          <a class="ghost" href={`/${lang}/verified/${r!.urlSlug}/`}>{tx.readReview}</a>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  <!-- ------------------------------------------------------ operator view -->
+  <section class="block operator">
+    <p class="kick">{tx.operator}</p>
+    <p>{guide.operator[lang]}</p>
+  </section>
+
+  <!-- ---------------------------------------------------------------- faq -->
+  <section class="block">
+    <p class="kick">{tx.faq}</p>
+    {guide.faq.map((f) => (
+      <details class="faq">
+        <summary>{f.q[lang]}</summary>
+        <p>{f.a[lang]}</p>
+      </details>
+    ))}
+  </section>
+
+  <!-- ------------------------------------------------------------ related -->
+  <section class="block" style="border-bottom:none">
+    <p class="kick">{tx.related}</p>
+    <ul class="rel">
+      <li><a href={`/${lang}/verified/c/${cat.slug}/`}>{tx.allIn} →</a></li>
+      <li><a href={`/${lang}/verified/methodology/`}>{tx.methodology} →</a></li>
+      <li><a href={`/${lang}/evidence/`}>Sqwod Evidence →</a></li>
+      {guides.filter((g) => g.category !== guide.category).slice(0, 3).map((g) => (
+        <li><a href={`/${lang}/${GUIDE_PREFIX[lang]}/${g.slug[lang]}/`}>
+          {de ? `Beste ${g.title.de}` : `Best ${g.title.en}`} →
+        </a></li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .byline{font-size:13px;color:var(--g4);margin:12px 0 0}
+  .byline a{color:var(--g3)}
+  .lede{font-size:17px;line-height:1.6;margin:14px 0 0}
+  .disc{font-size:12px;color:var(--g4);border-left:2px solid var(--line);padding-left:10px;margin-top:14px}
+  .toppick .tp{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+  /* global.css sets .seedwrap{margin:0 auto}; inside a flex row those auto
+     margins eat the free space and force the text block onto the next line. */
+  .toppick .tp :global(.seedwrap){margin:0;flex:0 0 auto}
+  .toppick .tp .tp-body{flex:1 1 320px;min-width:0}
+  .tp-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--g3);margin-bottom:8px}
+  .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+  .verdict{margin:6px 0 12px}
+  .tp-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .ghost{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:10px;font-size:13px;font-weight:600}
+  .tablewrap{overflow-x:auto}
+  table.glance{width:100%;min-width:560px;border-collapse:collapse;font-size:14px}
+  table.glance th{text-align:left;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--g4);border-bottom:1px solid var(--line);padding:8px 10px}
+  table.glance td{padding:10px;border-bottom:1px solid var(--line)}
+  table.glance td.rank{color:var(--g4);font-weight:800;width:34px}
+  table.glance td.sc b{font-size:15px}
+  .subline{display:block;font-size:10.5px;color:var(--g4);margin-top:2px;line-height:1.35;max-width:22ch}
+  .note{font-size:12.5px;color:var(--g4);margin-top:10px}
+  ul.weights{margin:10px 0 0;padding-left:18px}
+  ul.weights li{margin-bottom:8px;line-height:1.55}
+  ul.guidance{margin:0;padding-left:18px}
+  ul.guidance li{margin-bottom:12px;line-height:1.6}
+  .pick{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
+  .pick-head{display:flex;gap:10px;align-items:center;margin-bottom:6px}
+  .num{font-size:11px;font-weight:800;color:var(--g4);letter-spacing:.08em}
+  .pick h3{margin:0 0 6px}
+  .pick-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--g3);margin-bottom:10px}
+  .why{margin:0 0 10px}
+  ul.crit{list-style:none;padding:0;margin:0 0 12px;display:grid;gap:6px;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+  ul.crit li{display:flex;justify-content:space-between;font-size:12.5px;
+    border:1px solid var(--line);border-radius:8px;padding:6px 10px}
+  .pc{display:grid;gap:14px;margin-bottom:10px}
+  @media(min-width:760px){ .pc{grid-template-columns:1fr 1fr} }
+  .pc h4{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--g4)}
+  .pc ul{margin:0;padding-left:16px;font-size:13.5px}
+  .pc li{margin-bottom:4px}
+  .who{font-size:13.5px;color:var(--g3);margin:0 0 12px}
+  .operator{background:var(--panel);border-radius:14px;padding:18px;border:1px solid var(--line)}
+  details.faq{border-bottom:1px solid var(--line);padding:12px 0}
+  details.faq summary{cursor:pointer;font-weight:700;font-size:15px}
+  details.faq p{margin:10px 0 0;line-height:1.6;color:var(--g3)}
+  ul.rel{margin:0;padding-left:18px}
+  ul.rel li{margin-bottom:6px}
+</style>
