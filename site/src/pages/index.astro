@@ -1,23 +1,63 @@
 ---
-// Root → default locale. Static hosts can't do a real server redirect, so we
-// do an instant, invisible client redirect (dark bg, no flash of text).
-
-// Impact.com site verification uses a `value` attribute (not the standard
-// `content`); spread it through a loose record so `astro check` accepts the
-// non-standard attribute without altering the rendered output.
+// Root → default locale.
+//
+// WHY THIS PAGE HAS VISIBLE CONTENT (2026-08-16):
+// It used to be a bare redirect with an EMPTY <body>. Googlebot fetched
+// sqwod.life/, found no content and no links, and classified it a Soft 404.
+// Because the root was the only URL Google had ever been told about, and it
+// contained zero crawlable <a href> links, there was no path from it into
+// /en/ or /de/ — so the entire 940-page site was never discovered. Search
+// Console showed exactly 1 known page, 0 indexed, flat since 13 June 2026.
+//
+// The redirect was never the problem. A redirect page still has to be a real
+// page. Humans are moved instantly by the JS below and never see this markup;
+// crawlers get genuine content plus two real links into both language trees.
+//
+// Do NOT hide this block with display:none or zero opacity — cloaked text on
+// a redirect page is a worse problem than the soft 404 it replaces.
 const impactVerify: Record<string, string> = { value: '7dbbad87-cd73-480d-971c-71433cf944e6' };
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="impact-site-verification" {...impactVerify} />
   <meta http-equiv="refresh" content="0; url=/en/" />
   <link rel="canonical" href="https://sqwod.life/en/" />
+  <link rel="alternate" hreflang="en" href="https://sqwod.life/en/" />
+  <link rel="alternate" hreflang="de" href="https://sqwod.life/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://sqwod.life/en/" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <title>Sqwod — your edge in the business of fitness</title>
+  <title>sqwod.life — your edge in the business of fitness</title>
+  <meta name="description" content="Insider intelligence, honest gear reviews, and growth playbooks for the coaches, creators, and founders the big platforms overlook. Available in English and German." />
   <script is:inline>location.replace('/en/' + location.search + location.hash);</script>
-  <style>html,body{margin:0;background:#0e0e10}</style>
+  <style>
+    html,body{margin:0;background:#0e0e10;color:#e8e8ea;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+    .root-choice{min-height:100vh;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;gap:18px;padding:32px;
+      text-align:center;box-sizing:border-box}
+    .root-choice h1{font-size:20px;font-weight:700;margin:0;letter-spacing:.01em}
+    .root-choice p{margin:0;max-width:46ch;line-height:1.55;color:#a9a9b2;font-size:14px}
+    .root-links{display:flex;gap:12px;margin-top:6px;flex-wrap:wrap;justify-content:center}
+    .root-links a{display:inline-block;padding:11px 22px;border:1px solid #34343c;
+      border-radius:10px;color:#e8e8ea;text-decoration:none;font-weight:600;font-size:14px}
+    .root-links a:hover{border-color:#e8e8ea}
+  </style>
 </head>
-<body></body>
+<body>
+  <main class="root-choice">
+    <h1>sqwod.life — your edge in the business of fitness</h1>
+    <p>
+      Insider intelligence, honest gear reviews, and growth playbooks for the
+      coaches, creators, and founders the big platforms overlook. Published
+      daily in English and German.
+    </p>
+    <nav class="root-links">
+      <a href="/en/">Continue in English</a>
+      <a href="/de/">Weiter auf Deutsch</a>
+    </nav>
+  </main>
+</body>
 </html>
