@@ -14,8 +14,8 @@ interface Props { lang: Lang; slug: string; items: Item[]; asOf?: string; }
 const { lang, slug, items, asOf } = Astro.props;
 const rows = compareRows(slug);
 const T = lang === 'de'
-  ? { compare: 'Direktvergleich', read: 'Test →', from: 'ab', score: 'Score', note: 'Preise sind unsere getesteten Richtwerte' }
-  : { compare: 'Compare side-by-side', read: 'Review →', from: 'from', score: 'Score', note: 'Prices are our reviewed reference points' };
+  ? { compare: 'Direktvergleich', read: 'Test →', from: 'ab', score: 'Score', note: 'Preise sind unsere recherchierten Richtwerte' }
+  : { compare: 'Compare side-by-side', read: 'Review →', from: 'from', score: 'Score', note: 'Prices are our researched reference points' };
 const show = rows.length >= 1 && items.length >= 2;
 ---
 {show && (

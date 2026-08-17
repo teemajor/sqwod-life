@@ -42,7 +42,7 @@ for (let i = 0; i < cmpItems.length; i++)
 const tx = {
   aff: lang === 'de' ? 'Affiliate' : 'Affiliate',
   noaff: lang === 'de' ? 'Nicht affiliiert' : 'Not affiliated',
-  reviewed: lang === 'de' ? 'Getestet' : 'Reviewed',
+  reviewed: lang === 'de' ? 'Bewertet' : 'Reviewed',
   editorial: lang === 'de' ? 'Redaktions-Tipp' : 'Editorial pick',
   read: lang === 'de' ? 'Test lesen' : 'Read review',
   visit: lang === 'de' ? 'Zur Website' : 'Visit site',
@@ -106,7 +106,7 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
   )}
 
   <div class="note" style="margin-top:16px"><b>{t(lang,'verified.howWeRank')}.</b> {lang==='de'
-    ? 'Getestete Produkte tragen einen Sqwod Score (Crowd 45% · unsere Bewertung 40% · Preis-Leistung 15%). Redaktions-Tipps sind kuratierte Marktführer, die wir noch testen — ohne Score. „Affiliate" heißt: wir verdienen ggf. über den Link. „Nicht affiliiert" heißt: rein auf Empfehlung gelistet.'
+    ? 'Bewertete Produkte tragen einen Sqwod Score (Crowd 45% · unsere Bewertung 40% · Preis-Leistung 15%). Redaktions-Tipps sind kuratierte Marktführer, die wir noch nicht bewertet haben — ohne Score. „Affiliate" heißt: wir verdienen ggf. über den Link. „Nicht affiliiert" heißt: rein auf Empfehlung gelistet.'
     : 'Reviewed products carry a Sqwod Score (Crowd 45% · our assessment 40% · Value 15%). Editorial picks are curated category leaders we haven\'t scored yet — no score. "Affiliate" means we may earn from the link. "Not affiliated" means it\'s listed purely on merit.'}</div>
   <p class="disc" style="margin-top:12px">{t(lang,'disclosure')}</p>
   <p style="margin-top:16px"><a class="lp" href={`/${lang}/verified`}>← {tx.allCats}</a></p>

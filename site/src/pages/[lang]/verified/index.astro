@@ -23,7 +23,7 @@ const totalReviewed = reviews.length;
 
 const title = lang === 'de' ? 'Sqwod Verified — Kaufberatung für Wellness & Fitness' : 'Sqwod Verified — Wellness & Fitness Buyer\'s Guides';
 const blurb = lang === 'de'
-  ? 'Ehrliche, methodische Kaufberatung für die Fitness- & Wellness-Branche. Getestete Produkte tragen einen Sqwod Score; Redaktions-Tipps sind kuratierte Marktführer. Affiliate-Links sind gekennzeichnet — die Wahrheit gewinnt.'
+  ? 'Ehrliche, methodische Kaufberatung für die Fitness- & Wellness-Branche. Bewertete Produkte tragen einen Sqwod Score; Redaktions-Tipps sind kuratierte Marktführer. Affiliate-Links sind gekennzeichnet — die Wahrheit gewinnt.'
   : 'Honest, methodology-driven buyer\'s guides for the fitness & wellness industry. Reviewed products carry a Sqwod Score; editorial picks are curated leaders. Affiliate links are labeled — truth wins.';
 ---
 <Base lang={lang} title={title} description={blurb} active="verified">
@@ -32,7 +32,7 @@ const blurb = lang === 'de'
   <p class="sub reveal d2" style="max-width:64ch">{blurb}</p>
   <p class="sub reveal d2" style="margin-top:6px">
     <a href={`/${lang}/verified/methodology`} style="color:var(--chalk)">{t(lang,'verified.howWeRank')} →</a>
-    &nbsp;·&nbsp; <b>{totalReviewed}</b> {lang==='de'?'getestet':'reviewed'} &nbsp;·&nbsp; <b>{categories.length}</b> {lang==='de'?'Kategorien':'categories'}
+    &nbsp;·&nbsp; <b>{totalReviewed}</b> {lang==='de'?'bewertet':'reviewed'} &nbsp;·&nbsp; <b>{categories.length}</b> {lang==='de'?'Kategorien':'categories'}
   </p>
 
   <!-- Buyer's guides: the "best X" layer. These answer the question people
@@ -58,7 +58,7 @@ const blurb = lang === 'de'
           <h3>{c.label[lang]}</h3>
           <p>{c.blurb[lang]}</p>
           <div class="cat-meta">
-            {reviewed > 0 && <span class="pill rev">{reviewed} {lang==='de'?'getestet':'reviewed'}</span>}
+            {reviewed > 0 && <span class="pill rev">{reviewed} {lang==='de'?'bewertet':'reviewed'}</span>}
             <span class="pill">{total} {lang==='de'?'Picks':'picks'}</span>
             <span class="brands">{names.join(' · ')}</span>
           </div>
