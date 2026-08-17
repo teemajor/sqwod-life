@@ -2,15 +2,27 @@ name = "sqwod-subscribe"
 main = "worker.js"
 compatibility_date = "2025-06-01"
 
-# Public vars (non-secret). Fill the segment IDs from Resend (Audiences/Segments).
+# Public vars (non-secret).
 [vars]
-RESEND_SEGMENT_EN = ""              # English segment/audience ID
-RESEND_SEGMENT_DE = ""              # German segment/audience ID
-SITE_BASE = "https://sqwod.life"
-ALLOW_ORIGIN = "https://sqwod.life"
+RESEND_SEGMENT_EN = "3fd872bd-b495-4636-bd27-55bbf5d05970"   # English segment
+RESEND_SEGMENT_DE = "2906253d-608f-4ec6-a2d6-1d3f593610c1"   # German segment
+RESEND_FROM       = "Sqwod Daily <daily@sqwod.life>"         # must be on the verified domain
+SITE_BASE         = "https://sqwod.life"
+ALLOW_ORIGIN      = "https://sqwod.life"                     # also the origin gate — posts from anywhere else are refused
+CONFIRM_TTL_HOURS = "48"                                     # confirmation-link lifetime
+MIN_FILL_MS       = "2500"                                   # reject sub-2.5s form fills
+
+# Per-IP rate limiting. Create with:
+#   wrangler kv namespace create SUBS_KV
+# then paste the returned id below and uncomment. Without it the Worker still
+# runs — it just skips the rate-limit check.
+# [[kv_namespaces]]
+# binding = "SUBS_KV"
+# id = ""
 
 # Custom domain for the endpoint (set after first deploy), e.g. join.sqwod.life
 # routes = [{ pattern = "join.sqwod.life", custom_domain = true }]
 
-# Secret is NOT stored here. Set it with:
+# Secrets are NOT stored here. Set them with:
 #   wrangler secret put RESEND_API_KEY
+#   wrangler secret put CONFIRM_SECRET     # e.g. openssl rand -hex 32

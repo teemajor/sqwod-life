@@ -58,6 +58,8 @@ const tagline = lang === 'de'
     <form class="sb-form" method={SUBSCRIBE.endpoint ? 'post' : 'get'} action={SUBSCRIBE.endpoint || `/${lang}/subscribe`}>
       <input type="hidden" name="lang" value={lang} />
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
+      <input type="hidden" name="source" value="home-hero" />
+      <input type="hidden" name="ts" class="sb-ts" value="" />
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
       <button class="cta" type="submit" data-umami-event="subscribe" data-umami-event-where="home-top">{lang==='de'?'Abonnieren':'Subscribe'}</button>
     </form>
@@ -149,10 +151,19 @@ const tagline = lang === 'de'
     <form class="sb-form center" method={SUBSCRIBE.endpoint ? 'post' : 'get'} action={SUBSCRIBE.endpoint || `/${lang}/subscribe`}>
       <input type="hidden" name="lang" value={lang} />
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
+      <input type="hidden" name="source" value="home-footer" />
+      <input type="hidden" name="ts" class="sb-ts" value="" />
       <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
       <button class="cta" type="submit" data-umami-event="subscribe" data-umami-event-where="home-bottom">{lang==='de'?'Kostenlos abonnieren':'Subscribe free'}</button>
     </form>
   </section>
+
+  <script is:inline>
+    // Stamp each sign-up form with the time the page loaded. The Worker rejects
+    // fills that come back implausibly fast — a cheap bot filter that costs a
+    // real reader nothing. (Prerendered page, so this has to run client-side.)
+    document.querySelectorAll('.sb-ts').forEach(function (el) { el.value = String(Date.now()); });
+  </script>
 </Base>
 
 <style>

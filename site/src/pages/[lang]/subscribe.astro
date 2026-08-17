@@ -16,7 +16,9 @@ const c = lang === 'de' ? {
   perks: ['Werktäglich, zweisprachig (EN & DE)', 'Geldbewegungen, Politik-Radar & Stats', 'Ein umsetzbarer Tipp pro Ausgabe', 'Lesen oder hören — Audio zu jeder Ausgabe'],
   email: 'E-Mail-Adresse', cta: 'Kostenlos abonnieren', soon: 'Anmeldung wird in Kürze aktiviert.',
   fine: 'Mit der Anmeldung akzeptierst du unsere Datenschutzbestimmungen. Abmeldung jederzeit.',
-  ok: 'Drin! Check dein Postfach — die nächste Ausgabe kommt am nächsten Werktag.',
+  ok: 'Fast geschafft. Wir haben dir eine Bestätigungsmail geschickt — klick den Link darin, dann bist du dabei.',
+  done: 'Bestätigt. Du bist dabei — die nächste Ausgabe kommt am nächsten Werktag.',
+  expired: 'Dieser Bestätigungslink ist abgelaufen. Trag deine E-Mail nochmal ein, wir schicken dir einen neuen.',
   err: 'Hmm, das hat nicht geklappt. Prüf die E-Mail-Adresse und versuch es nochmal.',
 } : {
   title: 'Get sharper in 5 minutes a day',
@@ -24,7 +26,9 @@ const c = lang === 'de' ? {
   perks: ['Every weekday, bilingual (EN & DE)', 'Money movement, policy watch & stats', 'One actionable takeaway per issue', 'Read it or hear it — audio with every issue'],
   email: 'Email address', cta: 'Subscribe free', soon: 'Sign-up goes live shortly.',
   fine: 'By subscribing you accept our privacy policy. Unsubscribe anytime.',
-  ok: "You're in! Check your inbox — the next issue lands on the next weekday.",
+  ok: "Almost there. We've sent you a confirmation email — click the link inside and you're in.",
+  done: "Confirmed. You're in — the next issue lands on the next weekday.",
+  expired: "That confirmation link has expired. Enter your email again and we'll send a fresh one.",
   err: "Hmm, that didn't go through. Check the email address and try again.",
 };
 ---
@@ -37,10 +41,14 @@ const c = lang === 'de' ? {
     </div>
     <div class="sh-form">
       <div class="banner ok" id="banner-ok" hidden role="status">{c.ok}</div>
+      <div class="banner ok" id="banner-done" hidden role="status">{c.done}</div>
+      <div class="banner err" id="banner-expired" hidden role="alert">{c.expired}</div>
       <div class="banner err" id="banner-err" hidden role="alert">{c.err}</div>
       <form class="bform" method="post" action={SUBSCRIBE.endpoint || '#'}>
         <input type="hidden" name="lang" value={lang} />
         <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+        <input type="hidden" name="source" value="subscribe-page" />
+        <input type="hidden" name="ts" id="sb-ts" value="" />
         <label>{c.email}<input type="email" name="email" required placeholder="you@studio.com" /></label>
         <button class="cta" type="submit" disabled={!SUBSCRIBE.endpoint} data-umami-event="subscribe" data-umami-event-where="subscribe-page">{c.cta}</button>
         {!SUBSCRIBE.endpoint && <p class="note">{c.soon}</p>}
@@ -59,11 +67,21 @@ const c = lang === 'de' ? {
         var q = new URLSearchParams(location.search);
         var e = q.get('email');
         if (e) { var i = document.querySelector('.bform input[name="email"]'); if (i) i.value = e; }
+        // Worker redirect states: pending (confirmation mail sent), confirmed,
+        // expired / invalid (bad or stale token), error. 'ok' is kept so any
+        // link still pointing at the old state doesn't land on a blank page.
         var s = q.get('status');
-        var el = s === 'ok' ? document.getElementById('banner-ok')
-               : s === 'error' ? document.getElementById('banner-err')
-               : null;
+        var map = {
+          pending: 'banner-ok', ok: 'banner-ok',
+          confirmed: 'banner-done',
+          expired: 'banner-expired', invalid: 'banner-expired',
+          error: 'banner-err',
+        };
+        var el = map[s] ? document.getElementById(map[s]) : null;
         if (el) el.hidden = false;
+
+        // Stamp the form load time for the Worker's time-on-form check.
+        var t = document.getElementById('sb-ts'); if (t) t.value = String(Date.now());
       } catch (_) {}
     })();
   </script>

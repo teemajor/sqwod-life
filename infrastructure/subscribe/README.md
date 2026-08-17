@@ -1,47 +1,76 @@
-# Sqwod subscribe — capture Worker
+# sqwod-subscribe — Cloudflare Worker
 
-Adds newsletter sign-ups to a Resend **segment** (the same ID the Daily is
-broadcast to). Keeps the Resend API key server-side. Pairs with
-`automation/send.mjs` (which sends to that segment).
+Captures newsletter sign-ups from sqwod.life and adds them to the matching
+Resend segment. **Double opt-in:** a submit never writes to Resend — it sends a
+confirmation email with a signed, expiring link, and the contact is only created
+when that link is clicked.
 
-## How it fits
+## Flow
 
 ```
-subscribe form (site)  →  POST /subscribe (this Worker)  →  Resend contact (segment EN/DE)
-                                                                     │
-automation/send.mjs  →  Resend Broadcast → segment_id  ←────────────┘
+POST /subscribe          → bot checks → confirmation email → ?status=pending
+GET  /confirm?t=<token>  → verify signature + expiry → create contact → ?status=confirmed
 ```
 
-The form's `RESEND_AUDIENCE_EN/DE` (used by send.mjs) and this Worker's
-`RESEND_SEGMENT_EN/DE` must be the **same segment IDs**.
+The token is `base64url(payload).base64url(HMAC-SHA256(payload))`, signed with
+`CONFIRM_SECRET`. The payload carries email, locale, source and expiry, so there
+is no pending-signup table to maintain.
+
+## Bot defences, in order
+
+| # | Check | Behaviour when it trips |
+|---|-------|-------------------------|
+| 1 | Honeypot (`company` field) | Silent success — the bot sees a normal response |
+| 2 | Origin/Referer must match `ALLOW_ORIGIN` | 403 — blocks scripted POSTs straight at the endpoint |
+| 3 | Time-on-form (`ts` field) under `MIN_FILL_MS` | 429. Missing `ts` is tolerated for JS-off browsers |
+| 4 | Email shape + known disposable domains | 400 |
+| 5 | Per-IP rate limit (5 / hour, needs `SUBS_KV`) | 429 |
+| 6 | Confirmation click | Unconfirmed addresses never reach the list |
+
+Check 2 is the one that closes the hole the old worker had: the honeypot was
+already there, but it only helps against bots that fill hidden fields. Anything
+POSTing directly to the endpoint sailed through.
+
+## Contact properties written on confirm
+
+| Property | Value |
+|----------|-------|
+| `locale` | `de` or `en` |
+| `signup_source` | e.g. `home-hero`, `home-footer`, `subscribe-page`, `report-unlock` |
+| `confirmed_at` | ISO timestamp of the confirmation click |
+
+These must exist in Resend (Contacts → Properties) — they were created on
+2026-08-16.
 
 ## Deploy
 
 ```bash
 cd infrastructure/subscribe
-npm i -g wrangler          # if not installed
-wrangler login
-# fill RESEND_SEGMENT_EN / _DE in wrangler.toml
+wrangler kv namespace create SUBS_KV      # optional, for rate limiting
+# paste the id into wrangler.toml, uncomment the [[kv_namespaces]] block
 wrangler secret put RESEND_API_KEY
+wrangler secret put CONFIRM_SECRET        # openssl rand -hex 32
 wrangler deploy
 ```
 
-Note the deployed URL (e.g. `https://sqwod-subscribe.<you>.workers.dev`) or set a
-custom domain in `wrangler.toml` (e.g. `join.sqwod.life`). Then put that URL in
-`site/src/config/subscribe.ts` as `endpoint`.
+`RESEND_FROM` must be an address on the verified sqwod.life domain.
 
-## Endpoint
+## Site side
 
-`POST /subscribe` — accepts a posted form **or** JSON `{ email, lang, company? }`.
-`company` is a honeypot (bots that fill it get a silent success). Native form
-posts get a 303 redirect to `/{lang}/subscribe?status=ok|error`; `fetch` callers
-get JSON `{ ok }`.
+Every sign-up form posts `email`, `lang`, `company` (honeypot), `source` and
+`ts`. The `ts` field is stamped client-side on page load. Forms live in:
 
-## Test
+- `site/src/pages/[lang]/index.astro` — hero + footer capture
+- `site/src/pages/[lang]/subscribe.astro` — full page
+- `site/src/components/ArticleView.astro` — gated-report unlock (JSON fetch)
 
-```bash
-curl -X POST https://<worker-url>/subscribe \
-  -H 'content-type: application/json' \
-  -d '{"email":"you@example.com","lang":"en"}'
-# → {"ok":true}  and the contact appears in your EN segment
-```
+`site/src/pages/[lang]/subscribe.astro` renders the banner for each
+`?status=` the Worker redirects to: `pending`, `confirmed`, `expired`,
+`invalid`, `error`.
+
+## Known trade-off
+
+Resend click tracking rewrites the confirmation link. Corporate mail scanners
+that pre-fetch links can therefore auto-confirm an address. That is inherent to
+double opt-in with click tracking on, and it is a much smaller problem than
+unverified bot sign-ups.

@@ -55,3 +55,6 @@ research/statista/*
 _workspace/
 _to_delete/
 _workspace/
+
+# wrangler local cache (holds the Cloudflare account id) — never commit
+.wrangler/

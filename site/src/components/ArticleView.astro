@@ -382,13 +382,23 @@ const shareCfg = {
       const u = document.getElementById('unlock'); if (u) u.style.display = 'none';
     };
     if (localStorage.getItem(KEY) === '1') reveal();
+    const loadedAt = Date.now();
     const form = document.querySelector('.unlock-form');
     if (form) form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = (form.email.value || '').trim();
       const btn = form.querySelector('button'); if (btn) { btn.disabled = true; btn.textContent = '…'; }
       if (endpoint && email) {
-        try { await fetch(endpoint, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ email, lang }) }); } catch (_) {}
+        // ts + source feed the Worker's bot checks and the contact's
+        // signup_source property. The report unlocks either way — the address
+        // still has to clear double opt-in before it joins the list.
+        try {
+          await fetch(endpoint, {
+            method: 'POST',
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ email, lang, source: 'report-unlock', ts: loadedAt }),
+          });
+        } catch (_) {}
       }
       localStorage.setItem(KEY, '1');
       reveal();
