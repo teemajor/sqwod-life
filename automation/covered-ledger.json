@@ -1,101 +1,5 @@
 [
   {
-    "date": "2026-07-29",
-    "key": "that 1999 car wash membership isnt selling you clean paint i",
-    "tokens": [
-      "wash",
-      "membership",
-      "selling",
-      "clean",
-      "paint",
-      "wall",
-      "street",
-      "subscription"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "key": "fitactive eyes 100 more gyms in italy reaffirming plans reve",
-    "tokens": [
-      "fitactive",
-      "eyes",
-      "gyms",
-      "italy",
-      "reaffirming",
-      "revealed",
-      "summit"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "key": "exclusive cofounded by former whoop cto throne science raise",
-    "tokens": [
-      "exclusive",
-      "founded",
-      "former",
-      "whoop",
-      "throne",
-      "science",
-      "raises",
-      "track",
-      "health",
-      "toilet"
-    ],
-    "entities": [
-      "Whoop"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "key": "preston fitness firms launch womens wellness membership comb",
-    "tokens": [
-      "preston",
-      "firms",
-      "launch",
-      "women",
-      "membership",
-      "combining",
-      "pilates",
-      "recovery"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "key": "wheathampsteads community gym launches crowdfunder campaign ",
-    "tokens": [
-      "wheathampstead",
-      "community",
-      "launches",
-      "crowdfunder",
-      "campaign",
-      "stay",
-      "cool",
-      "summer",
-      "warm",
-      "winter"
-    ]
-  },
-  {
-    "date": "2026-07-29",
-    "key": "mojawa launches purra flow introducing aipowered bone conduc",
-    "tokens": [
-      "mojawa",
-      "launches",
-      "purra",
-      "flow",
-      "introducing",
-      "powered",
-      "bone",
-      "conduction",
-      "headphones",
-      "coach",
-      "users",
-      "through",
-      "every",
-      "workout"
-    ]
-  },
-  {
     "date": "2026-07-30",
     "key": "single dose of psilocybin caused positive anatomical brain c",
     "tokens": [
@@ -1401,6 +1305,96 @@
       "city",
       "high",
       "school"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "key": "inside the popup boom taking over boutique fitness",
+    "tokens": [
+      "inside",
+      "boom",
+      "taking",
+      "boutique"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "key": "oura taps examazons jessica makin to lead apac comms",
+    "tokens": [
+      "oura",
+      "taps",
+      "amazon",
+      "jessica",
+      "makin",
+      "lead",
+      "apac",
+      "comms"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "key": "kodeon acquires mental wellness app breethe in largest acqui",
+    "tokens": [
+      "kodeon",
+      "acquires",
+      "mental",
+      "breethe",
+      "largest",
+      "acquisition",
+      "date"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "key": "fitness coachs death during hyrox event raises heart concern",
+    "tokens": [
+      "coach",
+      "death",
+      "during",
+      "hyrox",
+      "event",
+      "raises",
+      "heart",
+      "concerns",
+      "know",
+      "inshorts"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "key": "celebrate wellness gala raises 230000 for free cancer suppor",
+    "tokens": [
+      "celebrate",
+      "gala",
+      "raises",
+      "free",
+      "cancer",
+      "support",
+      "programs",
+      "south"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "key": "whoop makes advanced labs available without a wearable membe",
+    "tokens": [
+      "whoop",
+      "makes",
+      "advanced",
+      "labs",
+      "available",
+      "without",
+      "wearable",
+      "membership"
+    ],
+    "entities": [
+      "Whoop"
     ]
   }
 ]
