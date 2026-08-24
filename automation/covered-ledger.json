@@ -1,101 +1,5 @@
 [
   {
-    "date": "2026-07-31",
-    "key": "grmn q2 2026 earnings call garmin lifts 2026 guidance as fit",
-    "tokens": [
-      "grmn",
-      "2026",
-      "earnings",
-      "call",
-      "garmin",
-      "lifts",
-      "guidance",
-      "revenue",
-      "surges",
-      "raises",
-      "target"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "key": "masaj raises 15m to expand london massage studio network",
-    "tokens": [
-      "masaj",
-      "raises",
-      "expand",
-      "london",
-      "massage",
-      "studio",
-      "network"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "key": "swiss preventive health startup ahead health raises 10m for ",
-    "tokens": [
-      "swiss",
-      "preventive",
-      "health",
-      "startup",
-      "ahead",
-      "raises",
-      "germany",
-      "netherlands",
-      "launch"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "key": "soundhealth raises 1225m to accelerate growth of its aienabl",
-    "tokens": [
-      "soundhealth",
-      "raises",
-      "accelerate",
-      "growth",
-      "enabled",
-      "invasive",
-      "devices",
-      "breathing",
-      "sleep",
-      "disorders"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "key": "how fitbit went from inc 5000 star to a 21 billion google ac",
-    "tokens": [
-      "fitbit",
-      "went",
-      "5000",
-      "star",
-      "billion",
-      "google",
-      "acquisition"
-    ],
-    "entities": [
-      "Fitbit"
-    ]
-  },
-  {
-    "date": "2026-07-31",
-    "key": "nazca invests in aldous spain leading digitalnative food sup",
-    "tokens": [
-      "nazca",
-      "invests",
-      "aldous",
-      "spain",
-      "leading",
-      "digital",
-      "native",
-      "food",
-      "supplements",
-      "brand"
-    ]
-  },
-  {
     "date": "2026-08-03",
     "key": "uk  savills advises aberdeen investments and lgps fund on 67",
     "tokens": [
@@ -1402,6 +1306,84 @@
     ],
     "entities": [
       "Garmin"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "key": "what your churn rate is telling you",
+    "tokens": [
+      "what",
+      "churn",
+      "rate",
+      "telling"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "key": "strava revenue 2025 500m arr 22b valuation",
+    "tokens": [
+      "strava",
+      "revenue",
+      "2025",
+      "500m",
+      "valuation"
+    ],
+    "entities": [
+      "Strava"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "key": "apple launches ai revolution with three wearable devices",
+    "tokens": [
+      "apple",
+      "launches",
+      "revolution",
+      "three",
+      "wearable",
+      "devices"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "key": "aienabled sleep breathing devices company raises 1225m to ac",
+    "tokens": [
+      "enabled",
+      "sleep",
+      "breathing",
+      "devices",
+      "company",
+      "raises",
+      "accelerate",
+      "growth"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "key": "apple screenfree wearable features design  launch",
+    "tokens": [
+      "apple",
+      "screen",
+      "free",
+      "wearable",
+      "features",
+      "design",
+      "launch"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "key": "wolf gyms expands national footprint with acquisition of red",
+    "tokens": [
+      "gyms",
+      "expands",
+      "national",
+      "footprint",
+      "acquisition",
+      "redcon1",
+      "north",
+      "boca",
+      "raton"
     ]
   }
 ]
