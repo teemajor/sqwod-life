@@ -1,100 +1,5 @@
 [
   {
-    "date": "2026-08-03",
-    "key": "uk  savills advises aberdeen investments and lgps fund on 67",
-    "tokens": [
-      "savills",
-      "advises",
-      "aberdeen",
-      "investments",
-      "lgps",
-      "fund",
-      "million",
-      "acquisition",
-      "three",
-      "david",
-      "lloyd",
-      "health",
-      "leisure",
-      "clubs"
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "key": "ahmedabad gym membership row turns violent businessman assau",
-    "tokens": [
-      "ahmedabad",
-      "membership",
-      "turns",
-      "violent",
-      "businessman",
-      "assaulted"
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "key": "garmin sees fitness revenue surge with a 8216very rich8217 p",
-    "tokens": [
-      "garmin",
-      "sees",
-      "revenue",
-      "surge",
-      "8216",
-      "very",
-      "rich",
-      "8217",
-      "product",
-      "roadmap",
-      "ahead"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "key": "aceguardian technologies launches quintace an adaptive ai co",
-    "tokens": [
-      "aceguardian",
-      "technologies",
-      "launches",
-      "quintace",
-      "adaptive",
-      "coaching",
-      "analytics",
-      "poker",
-      "platform"
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "key": "advertisement feature new iso guidance puts wearable hav mon",
-    "tokens": [
-      "advertisement",
-      "feature",
-      "guidance",
-      "puts",
-      "wearable",
-      "monitoring",
-      "spotlight"
-    ]
-  },
-  {
-    "date": "2026-08-03",
-    "key": "kse posts 1374m dinars firsthalf profit as market recovery g",
-    "tokens": [
-      "posts",
-      "dinars",
-      "first",
-      "half",
-      "profit",
-      "market",
-      "recovery",
-      "gains",
-      "momentum"
-    ]
-  },
-  {
     "date": "2026-08-04",
     "key": "fitness fanatics says us ipo price expected between 46 per s",
     "tokens": [
@@ -1384,6 +1289,80 @@
       "north",
       "boca",
       "raton"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "key": "ferrero group acquires purely elizabeth wellness brand",
+    "tokens": [
+      "ferrero",
+      "group",
+      "acquires",
+      "purely",
+      "elizabeth",
+      "brand"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "key": "exklusives onlineseminar fr dssvmitglieder",
+    "tokens": [
+      "exklusives",
+      "online",
+      "seminar",
+      "dssv",
+      "mitglieder"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "key": "smart ring maker oura seeks up to 3 billion in ipo",
+    "tokens": [
+      "smart",
+      "ring",
+      "maker",
+      "oura",
+      "seeks",
+      "billion"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "key": "longtime solidcore coach launches nyc pilates studio",
+    "tokens": [
+      "longtime",
+      "solidcore",
+      "coach",
+      "launches",
+      "pilates",
+      "studio"
+    ],
+    "entities": [
+      "Solidcore"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "key": "kettlebell fitness studio opens in clovis video",
+    "tokens": [
+      "kettlebell",
+      "studio",
+      "opens",
+      "clovis",
+      "video"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "key": "integrated wellness acquisition names binson lau coceo",
+    "tokens": [
+      "integrated",
+      "acquisition",
+      "names",
+      "binson"
     ]
   }
 ]
