@@ -1,84 +1,5 @@
 [
   {
-    "date": "2026-08-04",
-    "key": "fitness fanatics says us ipo price expected between 46 per s",
-    "tokens": [
-      "fanatics",
-      "price",
-      "expected",
-      "between",
-      "share"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "key": "basicfit swings back to profit revenue tops 800m",
-    "tokens": [
-      "basic",
-      "swings",
-      "back",
-      "profit",
-      "revenue",
-      "tops",
-      "800m"
-    ],
-    "entities": [
-      "Basic-Fit"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "key": "ringconn gen 3 is here now with vibration alerts heres what ",
-    "tokens": [
-      "ringconn",
-      "here",
-      "vibration",
-      "alerts",
-      "what",
-      "know",
-      "about",
-      "smart",
-      "ring"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "key": "wir begren unser neues frdermitglied",
-    "tokens": [
-      "begr",
-      "unser",
-      "neues",
-      "rdermitglied"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "key": "ai witness coaching derails uk rape trial lessons for austra",
-    "tokens": [
-      "witness",
-      "coaching",
-      "derails",
-      "rape",
-      "trial",
-      "lessons",
-      "australian",
-      "practitioners"
-    ]
-  },
-  {
-    "date": "2026-08-04",
-    "key": "spotifys new running mode puts an ai coach in your earheres ",
-    "tokens": [
-      "spotify",
-      "running",
-      "mode",
-      "puts",
-      "coach",
-      "here",
-      "works"
-    ]
-  },
-  {
     "date": "2026-08-05",
     "key": "anytime fitness extends apple fitness deal to uk ireland mem",
     "tokens": [
@@ -1363,6 +1284,105 @@
       "acquisition",
       "names",
       "binson"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "key": "kaplan fox continues to alert investors of planet fitness in",
+    "tokens": [
+      "kaplan",
+      "continues",
+      "alert",
+      "investors",
+      "planet",
+      "nyse",
+      "plnt",
+      "class",
+      "action",
+      "deadline",
+      "september",
+      "2026"
+    ],
+    "entities": [
+      "Planet Fitness"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "key": "adaptive fitness franchise special strong seeks strategic pa",
+    "tokens": [
+      "adaptive",
+      "franchise",
+      "special",
+      "strong",
+      "seeks",
+      "strategic",
+      "partner",
+      "drive",
+      "growth"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "key": "whoop expands commitment to womens health by including oneye",
+    "tokens": [
+      "whoop",
+      "expands",
+      "commitment",
+      "women",
+      "health",
+      "including",
+      "year",
+      "subscription",
+      "natural",
+      "cycles",
+      "membership"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "key": "nurse set to launch brandnew recovery and wellbeing clinic i",
+    "tokens": [
+      "nurse",
+      "launch",
+      "brand",
+      "recovery",
+      "wellbeing",
+      "clinic",
+      "bromsgrove"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "key": "basicfit stock builds strength as 2026 earnings return to pr",
+    "tokens": [
+      "basic",
+      "stock",
+      "builds",
+      "strength",
+      "2026",
+      "earnings",
+      "return",
+      "profit"
+    ],
+    "entities": [
+      "Basic-Fit"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "key": "flexit vs juice fitness revenue funding  team size compared",
+    "tokens": [
+      "flexit",
+      "juice",
+      "revenue",
+      "funding",
+      "team",
+      "size",
+      "compared"
     ]
   }
 ]
