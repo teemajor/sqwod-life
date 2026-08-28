@@ -14,7 +14,7 @@
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { isOnBrand, OFFTOPIC_RX, FINANCE_OUTLETS_RX, primaryEntity, allEntities } from './onbrand.mjs';
+import { isOnBrand, OFFTOPIC_RX, FINANCE_OUTLETS_RX, primaryEntity, allEntities, WATCHLIST_RX, DEAL_RX } from './onbrand.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, 'sources');
@@ -75,6 +75,68 @@ const FEEDS = [
   { url: 'https://www.dssv.de/feed/', outlet: 'DSSV', pillar: 'business-strategy', conversion: 'pods', lang: 'de' },
   { url: 'https://www.trainingsworld.com/feed/', outlet: 'Trainingsworld', pillar: 'operations-technology', conversion: 'products', lang: 'de' },
 ];
+
+// Newswire / PR-distribution feeds (added 2026-08-20).
+//
+// WHY THESE ARE NOT JUST MORE `FEEDS`: a wire's own topic tagging is close to
+// noise. Verified by fetching them before wiring them in —
+//   · PR Newswire "health"   → mostly pharma, plus pay-to-play vanity releases
+//                              ("The Inner Circle acknowledges … Preferred Psychiatrist")
+//                              and the same release posted twice a minute apart.
+//   · PR Newswire "sports"   → gold mining, dental practices, law-firm awards.
+//   · GlobeNewswire "health" → mining, WWI shipwreck preservation, 3 language variants.
+//   · PR Newswire "consumer" → one skincare release repeated in 5 languages.
+// Business Wire is excluded: its feed host disallows automated fetching in robots.txt.
+// openPR returns 403.
+//
+// So a wire item must clear MORE gates than a trade item, not fewer:
+//   isOnBrand() STRONG  AND  (a company on our watchlist OR a real deal/launch event)
+//   AND not wire-vanity boilerplate  AND not a translation of one we already took.
+// They are capped, score-penalised so they can never lead an issue, and labelled
+// as company announcements — a press release is the company's own claim, not reporting.
+const WIRES = [
+  { url: 'https://www.prnewswire.com/rss/health-latest-news/health-latest-news-list.rss',
+    outlet: 'PR Newswire', pillar: 'industry-trends', conversion: 'sqwod-os' },
+  { url: 'https://www.prnewswire.com/rss/consumer-products-retail-latest-news/consumer-products-retail-latest-news-list.rss',
+    outlet: 'PR Newswire', pillar: 'industry-trends', conversion: 'verified' },
+  { url: 'https://www.globenewswire.com/RssFeed/subjectcode/23-Health/feedTitle/GlobeNewswire-Health',
+    outlet: 'GlobeNewswire', pillar: 'industry-trends', conversion: 'sqwod-os' },
+];
+// Wire content reached through Google News rather than the wires' own category
+// feeds — Google does the topic matching the wires don't. Same strict wire gate
+// applies on the way in. `edge.prnewswire.com` is PR Newswire's paid content-
+// syndication subdomain (pure advertising: "Shokz Official", "Doctor's Best") and
+// is blocked outright below.
+const WIRE_SITES = 'site:prnewswire.com OR site:businesswire.com OR site:globenewswire.com OR site:einpresswire.com OR site:accesswire.com';
+const WIRE_QUERIES = [
+  { q: `(${WIRE_SITES}) (fitness OR gym OR "health club" OR "personal training" OR wearable OR "fitness tracker" OR supplement OR recovery OR longevity OR wellness) (launches OR raises OR acquires OR acquisition OR partnership OR expansion OR opens OR funding) when:5d`,
+    pillar: 'industry-trends', conversion: 'sqwod-os' },
+  { q: `(site:presseportal.de OR site:openpr.de OR ${WIRE_SITES}) (Fitness OR Fitnessstudio OR Gesundheit OR Wearable OR "Nahrungsergänzung" OR Wellness) (startet OR übernimmt OR Übernahme OR Finanzierung OR Kooperation OR eröffnet) when:6d`,
+    pillar: 'industry-trends', conversion: 'pods', lang: 'de', ed: { hl: 'de', gl: 'DE', ceid: 'DE:de' } },
+];
+// PR Newswire's advertising subdomain — never a story.
+const WIRE_HOST_BLOCK = /(^|\.)edge\.prnewswire\.com$|(^|\/\/)edge\.prnewswire\.com/i;
+
+// How many wire items may reach the issue at all. Wires are a supporting source
+// for the money beat, never the substance of the Daily.
+const MAX_WIRE = parseInt(args['max-wire'] || '2', 10);
+
+// Pay-to-play and vanity releases — the dominant failure mode on the health wires.
+const WIRE_VANITY = /(\binner circle\b|\bmarquis\b|who'?s who|\bbest lawyers\b|ones to watch|\bpreferred (?:psychiatrist|physician|dentist|provider|professional)\b|\btop (?:doctor|dentist|lawyer|100)\b|recognized (?:in|as|by)|named (?:to|one of) the\b|\baward winner\b|\bhonoree\b|proudly announces its recognition)/i;
+// Personnel announcements. A wire's single most common release type and never a
+// Daily story — "Ashleigh Barker Joins Stout's Consumer Investment Banking Team"
+// was outscoring a real EoS Fitness / HYROX partnership before this gate existed.
+const WIRE_PERSONNEL = /(\bjoins?\b.{0,40}\b(team|group|board|practice|firm|division|as\b)|\bappoints?\b|\bappointment of\b|\bnames?\b\s+[A-Z][a-z]+\s+[A-Z]|\bhires?\b|\bwelcomes?\b\s+[A-Z][a-z]+|promoted to\b|\bsteps down\b|\bto retire\b|\bnew (?:ceo|cfo|coo|cmo|cto|president|chair(?:man)?|managing director|vice president)\b|\b(?:ceo|cfo|coo|cmo|cto) transition\b)/i;
+
+// Wires publish one release in many languages within minutes ("MimiSilk …" in
+// EN/DE/ES/FR/SK). Near-dup token matching is English-shaped and misses these,
+// so collapse on the invariant part: the named subject plus the numbers.
+function wireDupKey(headline) {
+  const nums = (headline.match(/\d[\d.,]*/g) || []).slice(0, 3).join('-');
+  const ent = (primaryEntity(headline)
+    || (headline.match(/\b[A-Z][A-Za-z0-9&'\u2019-]{2,}\b/) || [''])[0] || '').toLowerCase();
+  return ent + '|' + nums;
+}
 
 // Relevance is now decided by isOnBrand() (automation/onbrand.mjs): a story must
 // carry a STRONG industry term AND not match the finance/markets OFFTOPIC list.
@@ -163,10 +225,16 @@ const LEGIBLE_MONEY_RX = /([$€£]\s?\d|\bUSD\b|\bEUR\b|\bGBP\b|\b\d[\d.,]*\s?(
 const ILLEGIBLE_MONEY_RX = /(\bcrore\b|\blakh\b|\brs\.?\s?\d|₹|¥|\brmb\b|\byuan\b|₩|\bwon\b|\brupees?\b|\bpesos?\b|\bbaht\b|\bringgit\b|\brupiah\b|\bnaira\b|\btaka\b|\bdirham\b)/i;
 
 const DEAL_KINDS = new Set(['raise', 'acquisition', 'ipo', 'valuation']);
-function scoreCandidate({ headline, trade, lang, money, age }) {
+function scoreCandidate({ headline, trade, wire, lang, money, age }) {
   const h = headline || '';
   let s = 0;
   if (trade) s += 3;                        // curated trade/global feeds = higher signal
+  if (wire) s -= 2;                         // press release = the company's own claim, so it
+                                            // loses ties to reported journalism. Kept mild:
+                                            // the lead slot is blocked deterministically below,
+                                            // so this only needs to break ties, not bury good
+                                            // wire stories (a -6 penalty sank "EoS Fitness and
+                                            // HYROX Join Forces" — exactly what we want to keep).
   if (lang === 'de') s += 2;                // native DACH content = core audience (was +3;
                                             // trimmed so fresh global money/M&A isn't buried
                                             // under a handful of low-velocity German feeds)
@@ -243,9 +311,21 @@ function isNearDup(tok, pool) {
 
 // Add a normalized candidate to the pool (with headline-level + near-duplicate de-dupe,
 // a freshness gate, and cross-day de-dupe against the covered ledger).
-function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversion, trade = false, lang = '' }) {
+function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversion, trade = false, wire = false, lang = '', wireSeen = null }) {
   if (!headline || !link) return;
   if (JUNK.test(headline) || PROMO.test(headline)) return;   // horoscopes, webinars, protected posts
+  if (wire) {
+    // A wire item earns its place or it doesn't get one. See the WIRES comment.
+    if (WIRE_HOST_BLOCK.test(link) || WIRE_HOST_BLOCK.test(String(outlet || ''))) return;
+    if (WIRE_VANITY.test(headline) || WIRE_PERSONNEL.test(headline)) return;
+    if (!isOnBrand(headline, outlet)) return;
+    if (!(WATCHLIST_RX.test(headline) || DEAL_RX.test(headline))) return;
+    if (wireSeen) {
+      const wk = wireDupKey(headline);
+      if (wireSeen.has(wk)) return;          // same release, another language
+      wireSeen.add(wk);
+    }
+  }
   // Hard off-brand gate for EVERY candidate — including curated trade feeds.
   if (OFFTOPIC_RX.test(headline) || FINANCE_OUTLETS_RX.test(String(outlet || '').trim())) return;
   // Freshness gate: drop anything older than MAX_AGE_DAYS by its own pubDate. This is
@@ -261,7 +341,7 @@ function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversi
   seen.add(key);
   const kind = moneyKind(headline);
   const money = kind ? { kind, amount: moneyAmount(headline) } : null;
-  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, money, key, _tok: tok, _score: scoreCandidate({ headline, trade, lang, money, age }) });
+  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, wire, pressRelease: wire || undefined, money, key, _tok: tok, _score: scoreCandidate({ headline, trade, wire, lang, money, age }) });
 }
 
 async function run() {
@@ -299,6 +379,55 @@ async function run() {
       }
     } catch (e) { console.error('feed', f.outlet, e.message); }
   }
+
+  // 3) Newswires / PR distribution — strictest gate, hard cap, never the lead.
+  const wireSeen = new Set();
+  const wireBefore = pool.length;
+  for (const w of WIRES) {
+    try {
+      for (const it of parseItems(await getXml(w.url))) {
+        scanned++;
+        const headline = it.title;
+        const [pillar, conversion] = classify(headline, w);
+        add(pool, seen, ledger, {
+          headline, outlet: `${w.outlet} (press release)`, link: it.link, pub: it.pub,
+          pillar, conversion, wire: true, lang: w.lang || '', wireSeen,
+        });
+      }
+    } catch (e) { console.error('wire', w.outlet, e.message); }
+  }
+  // 3b) Wire content via Google News — better topic matching than the wires' own feeds.
+  for (const wq of WIRE_QUERIES) {
+    const ed = wq.ed || EDITIONS[0];
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(wq.q)}&hl=${ed.hl}&gl=${ed.gl}&ceid=${ed.ceid}`;
+    try {
+      for (const it of parseItems(await getXml(url))) {
+        scanned++;
+        const headline = it.title.replace(/\s+-\s+[^-]+$/, '').trim();   // strip " - Outlet" suffix
+        const [pillar, conversion] = classify(headline, wq);
+        add(pool, seen, ledger, {
+          headline, outlet: `${(it.source || 'Newswire').trim()} (press release)`,
+          link: it.link, pub: it.pub, pillar, conversion,
+          wire: true, lang: wq.lang || '', wireSeen,
+        });
+      }
+    } catch (e) { console.error('wire-query', e.message); }
+  }
+
+  if (args['debug-wire']) {
+    console.error('--- wire candidates that passed the gate ---');
+    for (const p of pool.filter((x) => x.wire).sort((a, b) => b._score - a._score))
+      console.error(`   [${p._score.toFixed(1)}] ${p.outlet} — ${p.headline.slice(0, 95)}`);
+  }
+
+  // Cap: keep only the strongest MAX_WIRE wire candidates, drop the rest before
+  // they can crowd out reported journalism in the variety gate.
+  const wireCands = pool.filter((p) => p.wire).sort((a, b) => b._score - a._score);
+  if (wireCands.length > MAX_WIRE) {
+    const drop = new Set(wireCands.slice(MAX_WIRE));
+    for (let i = pool.length - 1; i >= 0; i--) if (drop.has(pool[i])) pool.splice(i, 1);
+  }
+  console.error(`wires: ${pool.length - wireBefore + Math.max(0, wireCands.length - MAX_WIRE)} passed the gate, ${Math.min(wireCands.length, MAX_WIRE)} kept`);
 
   console.error(`scanned ${scanned}, kept ${pool.length} unique candidates (ledger: ${ledger.length} recent stories excluded from repeats)`);
 
@@ -356,6 +485,18 @@ async function run() {
       }
       round++;
       if (round > 50) break;
+    }
+  }
+
+  // A press release never leads the Daily. The score penalty makes this unlikely;
+  // this makes it certain, because "unlikely" is how a vendor announcement ends up
+  // as the top story on a day the real news was thin.
+  if (ordered.length > 1 && ordered[0].wire) {
+    const firstReported = ordered.findIndex((p) => !p.wire);
+    if (firstReported > 0) {
+      const [w] = ordered.splice(0, 1);
+      ordered.splice(firstReported, 0, w);
+      console.error('wire demoted from lead:', w.headline.slice(0, 70));
     }
   }
 
