@@ -32,7 +32,7 @@ const { url } = Astro.props;
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>Sqwod Verified — redirecting</title>
   <script is:inline define:vars={{ url }}>location.replace(url);</script>
-  <style>html,body{margin:0;background:#0e0e10;color:#85858e;font-family:system-ui}</style>
+  <style>html{color-scheme:dark light}html,body{margin:0;background:#0e0e10;color:#85858e;font-family:system-ui}@media(prefers-color-scheme:light){html,body{background:#fafafa;color:#6b6b76}}</style>
 </head>
 <body></body>
 </html>

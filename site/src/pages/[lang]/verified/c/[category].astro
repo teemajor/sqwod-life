@@ -1,5 +1,6 @@
 ---
 import Base from '../../../../layouts/Base.astro';
+import TestStatus from '../../../../components/TestStatus.astro';
 import CategoryIcon from '../../../../components/CategoryIcon.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
@@ -44,7 +45,7 @@ const tx = {
   noaff: lang === 'de' ? 'Nicht affiliiert' : 'Not affiliated',
   reviewed: lang === 'de' ? 'Bewertet' : 'Reviewed',
   editorial: lang === 'de' ? 'Redaktions-Tipp' : 'Editorial pick',
-  read: lang === 'de' ? 'Test lesen' : 'Read review',
+  read: lang === 'de' ? 'Bewertung lesen' : 'Read review',
   visit: lang === 'de' ? 'Zur Website' : 'Visit site',
   bestFor: lang === 'de' ? 'Am besten für' : 'Best for',
   allCats: lang === 'de' ? 'Alle Kategorien' : 'All categories',
@@ -77,6 +78,7 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
           <div class="tags">
             {r ? <span class="tag rev">{tx.reviewed}</span> : <span class="tag ed">{tx.editorial}</span>}
             <span class={`tag ${p.affiliate ? 'af' : 'na'}`}>{p.affiliate ? tx.aff : tx.noaff}</span>
+            <TestStatus status={r ? r.testStatus : 'editorial-pick'} lang={lang} />
           </div>
           <h3>{p.product}</h3>
           <p class="bestfor"><b>{tx.bestFor}:</b> {p.bestFor[lang]}</p>
@@ -88,7 +90,7 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
         </div>
         {r && (
           <a class="score" href={`/${lang}/verified/${p.reviewSlug}`} aria-label={`Sqwod Score ${r.sqwodScore}`}>
-            <svg viewBox="0 0 100 100"><path d="M50 5 C70 23 77 30 95 50 C77 70 70 77 50 95 C30 77 23 70 5 50 C23 30 30 23 50 5 Z" fill="none" stroke={i===0?'#FAFAFA':'#b8b8c0'} stroke-width="3.5"/></svg>
+            <svg viewBox="0 0 100 100"><path d="M50 5 C70 23 77 30 95 50 C77 70 70 77 50 95 C30 77 23 70 5 50 C23 30 30 23 50 5 Z" fill="none" stroke={i===0?'var(--chalk)':'var(--g2)'} stroke-width="3.5"/></svg>
             <b>{r.sqwodScore}</b><span class="lbl">Score</span>
           </a>
         )}

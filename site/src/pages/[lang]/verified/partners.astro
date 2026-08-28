@@ -1,0 +1,194 @@
+---
+// Sqwod Verified — the partner one-pager.
+//
+// This page exists so brand outreach never has to carry an attachment. A cold email from a
+// young sending domain with a PDF stapled to it lands in spam; a short email with one link
+// does not. Everything a partnerships lead needs to say yes lives here, and it can be
+// updated without re-sending anything.
+//
+// Hard rule for this page: no number appears here that cannot be checked. No newsletter
+// size, no traffic figures, no booking volumes. The review counts below are read from the
+// content collection at build time, so they cannot drift out of date.
+import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { languages, type Lang } from '../../../i18n/ui';
+import { categories } from '../../../config/verified-categories';
+
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+
+// Counted, never asserted.
+const all = await getCollection('reviews', (r) => !r.data.draft);
+const en = all.filter((r) => r.data.lang === 'en');
+const scores = en.map((r) => r.data.sqwodScore).sort((a, b) => a - b);
+const stats = {
+  reviews: en.length,
+  categories: categories.length,
+  low: scores[0],
+  high: scores[scores.length - 1],
+  median: scores[Math.floor(scores.length / 2)],
+};
+
+// Confirmed from the connected-accounts panel in Sqwod's impact.com partner account.
+// Newsletter size and site traffic are deliberately absent — no verified figure exists.
+const social = [
+  { platform: 'Facebook', handle: 'TeeMajorFitness', n: '315k' },
+  { platform: 'YouTube', handle: 'teemajor', n: '152k' },
+  { platform: 'Instagram', handle: 'teemajor', n: '9.9k' },
+  { platform: 'X', handle: 'Tee_Major', n: '3.8k' },
+];
+
+const pods = [
+  { name: 'Weißensee', addr: 'Jacobsohnstraße 27, 13086 Berlin' },
+  { name: 'Prenzlauer Berg', addr: 'Kollwitzstraße 20, 10405 Berlin' },
+];
+const kit = ['Rogue', 'NOHRD', 'WaterRower', 'Hyperice', 'Sprintbok'];
+
+const T = {
+  en: {
+    crumb: 'Partners',
+    h1: 'Work with Sqwod Verified',
+    lede: `We publish scored, bilingual reviews of fitness, recovery, sleep and nutrition products for the coaches, trainers and operators who recommend them for a living. This page is what we can offer a brand, and what we will not.`,
+    s1: 'What Sqwod Verified is',
+    s1a: `${stats.reviews} published reviews in English and ${stats.reviews} in German, across ${stats.categories} categories, each carrying a Sqwod Score.`,
+    s1b: `The score is Crowd Signal 45%, Sqwod Assessment 40%, Value 15%, with every sub-score shown on the page. Scores currently run ${stats.low} to ${stats.high}, median ${stats.median} — we publish the low ones.`,
+    s1c: 'Commission never affects a score. That is published policy, not a promise in an email, and there is a public corrections log.',
+    s2: 'Most of our reviews have never been touched',
+    s2a: `Every review carries a testing-status badge. The default is Desk-researched: the score is built from aggregated public data and our own scorecard, without a unit in hand. We say so on the page.`,
+    s2b: 'That is the whole offer. Send us the product and the badge changes to Hands-on or Pod-tested, and the verdict is built from use instead of from public signal. The number moves to accurate — which may mean down.',
+    s3: 'The Pod is a real testing environment',
+    s3a: 'Sqwod Pod runs two private, fully-equipped training rooms in Berlin. Product gets used in them, on camera, over weeks rather than in an unboxing.',
+    s4: 'Where the coverage goes',
+    s4a: 'sqwod.life in English and German, the Sqwod Daily newsletter and podcast, and Tee Major\'s channels:',
+    s4b: 'Tee is a 24-year fitness-industry veteran and former military fitness trainer. His audience is largely US consumer and prosumer; sqwod.life reaches the DACH trade.',
+    s5: 'What we ask for',
+    s5items: [
+      'One unit of the product, kept or returned — your call, stated up front.',
+      'A contact who can answer specification questions.',
+      'Long enough to actually use it. Weeks, not a weekend.',
+    ],
+    s6: 'What we will not do',
+    s6items: [
+      'Guarantee a score, a verdict, or that the number goes up.',
+      'Guarantee a publication date.',
+      'Give copy approval, pre-publication review, or an embargo on an unflattering result.',
+      'Remove or soften the disclosure that a unit was supplied.',
+    ],
+    s6end: 'A supplied unit is always disclosed on the page. If that is a problem, we are the wrong partner — and it is better for both of us to find that out now.',
+    cta: 'Talk to us',
+    ctaBody: 'Reply to the email that brought you here, or write to',
+  },
+  de: {
+    crumb: 'Partner',
+    h1: 'Mit Sqwod Verified arbeiten',
+    lede: `Wir veröffentlichen bewertete, zweisprachige Reviews zu Fitness-, Recovery-, Schlaf- und Ernährungsprodukten — für Coaches, Trainer:innen und Betreiber:innen, die diese Produkte beruflich empfehlen. Diese Seite sagt, was wir einer Marke bieten können und was nicht.`,
+    s1: 'Was Sqwod Verified ist',
+    s1a: `${stats.reviews} veröffentlichte Reviews auf Englisch und ${stats.reviews} auf Deutsch, in ${stats.categories} Kategorien, jede mit einem Sqwod Score.`,
+    s1b: `Der Score besteht aus Crowd Signal 45 %, Sqwod-Bewertung 40 % und Value 15 %, jede Teilnote ist auf der Seite sichtbar. Aktuell reichen die Scores von ${stats.low} bis ${stats.high}, Median ${stats.median} — die niedrigen veröffentlichen wir auch.`,
+    s1c: 'Provision beeinflusst einen Score nie. Das ist veröffentlichte Richtlinie, kein Versprechen in einer E-Mail, und es gibt ein öffentliches Korrekturen-Log.',
+    s2: 'Die meisten unserer Reviews hatten wir nie in der Hand',
+    s2a: `Jede Review trägt einen Testing-Status. Standard ist „Ohne Testgerät bewertet": Der Score entsteht aus öffentlichen Daten und unserer eigenen Scorecard — ohne Gerät. Das steht so auf der Seite.`,
+    s2b: 'Genau das ist das Angebot. Schickt uns das Produkt, und der Status wird zu „In der Hand gehabt" oder „Im Pod getestet" — das Urteil entsteht dann aus Nutzung statt aus öffentlichem Signal. Die Zahl wird korrekt, was auch heißen kann: niedriger.',
+    s3: 'Der Pod ist eine echte Testumgebung',
+    s3a: 'Sqwod Pod betreibt zwei private, voll ausgestattete Trainingsräume in Berlin. Produkte werden dort genutzt, gefilmt, über Wochen statt in einem Unboxing.',
+    s4: 'Wohin die Inhalte gehen',
+    s4a: 'sqwod.life auf Deutsch und Englisch, der Sqwod-Daily-Newsletter und -Podcast sowie Tee Majors Kanäle:',
+    s4b: 'Tee ist seit 24 Jahren in der Fitnessbranche und war Militär-Fitnesstrainer. Seine Reichweite ist überwiegend US-Consumer; sqwod.life erreicht die DACH-Branche.',
+    s5: 'Worum wir bitten',
+    s5items: [
+      'Ein Exemplar des Produkts — behalten oder zurückschicken, ihr entscheidet, vorab geklärt.',
+      'Eine Ansprechperson für technische Rückfragen.',
+      'Genug Zeit, es wirklich zu nutzen. Wochen, kein Wochenende.',
+    ],
+    s6: 'Was wir nicht tun',
+    s6items: [
+      'Einen Score, ein Urteil oder eine bessere Zahl garantieren.',
+      'Ein Veröffentlichungsdatum garantieren.',
+      'Textfreigabe, Vorab-Review oder ein Embargo auf ein unvorteilhaftes Ergebnis geben.',
+      'Den Hinweis entfernen oder abschwächen, dass ein Gerät gestellt wurde.',
+    ],
+    s6end: 'Ein gestelltes Gerät wird immer auf der Seite offengelegt. Wenn das ein Problem ist, sind wir die falschen Partner — und es ist für beide Seiten besser, das jetzt zu wissen.',
+    cta: 'Sprecht uns an',
+    ctaBody: 'Antwortet einfach auf die E-Mail, die euch hierher geführt hat, oder schreibt an',
+  },
+}[lang];
+---
+<Base lang={lang} title={`${T.h1} — Sqwod Verified`} description={T.lede} active="verified">
+  <div class="measure">
+    <div class="crumb">Sqwod Verified / {T.crumb}</div>
+    <h1>{T.h1}</h1>
+    <p class="prose" style="margin-top:14px">{T.lede}</p>
+
+    <h2>{T.s1}</h2>
+    <div class="pt-stats">
+      <div><b>{stats.reviews}×2</b><span>{lang === 'de' ? 'Reviews, DE + EN' : 'reviews, EN + DE'}</span></div>
+      <div><b>{stats.categories}</b><span>{lang === 'de' ? 'Kategorien' : 'categories'}</span></div>
+      <div><b>{stats.low}–{stats.high}</b><span>{lang === 'de' ? 'Score-Spanne' : 'score range'}</span></div>
+      <div><b>45/40/15</b><span>{lang === 'de' ? 'Crowd / Sqwod / Value' : 'crowd / Sqwod / value'}</span></div>
+    </div>
+    <p class="prose">{T.s1b}</p>
+    <p class="prose">{T.s1c} <a href={`/${lang}/corrections`}>{lang === 'de' ? 'Korrekturen' : 'Corrections log'}</a> · <a href={`/${lang}/verified/methodology`}>{lang === 'de' ? 'Methodik' : 'Methodology'}</a> · <a href={`/${lang}/verified/disclosure`}>{lang === 'de' ? 'Affiliate-Hinweis' : 'Affiliate disclosure'}</a></p>
+
+    <h2>{T.s2}</h2>
+    <p class="prose">{T.s2a}</p>
+    <p class="prose"><b>{T.s2b}</b></p>
+
+    <h2>{T.s3}</h2>
+    <p class="prose">{T.s3a}</p>
+    <div class="pt-pods">
+      {pods.map((p) => <div class="pt-pod"><b>{p.name}</b><span>{p.addr}</span></div>)}
+    </div>
+    <p class="pt-kit">{lang === 'de' ? 'Ausstattung' : 'Equipment'}: {kit.join(' · ')}</p>
+
+    <h2>{T.s4}</h2>
+    <p class="prose">{T.s4a}</p>
+    <div class="pt-social">
+      {social.map((s) => <div><b>{s.n}</b><span>{s.platform}</span></div>)}
+    </div>
+    <p class="prose">{T.s4b}</p>
+
+    <h2>{T.s5}</h2>
+    <ul class="prose pt-list">{T.s5items.map((i) => <li>{i}</li>)}</ul>
+
+    <h2>{T.s6}</h2>
+    <ul class="prose pt-list pt-no">{T.s6items.map((i) => <li>{i}</li>)}</ul>
+    <p class="prose">{T.s6end}</p>
+
+    <div class="pt-cta">
+      <b>{T.cta}</b>
+      <p>{T.ctaBody} <a href="mailto:tee@sqwod.life">tee@sqwod.life</a>.</p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .pt-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 16px}
+  .pt-stats>div{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:13px 15px}
+  .pt-stats b{display:block;font-size:22px;font-weight:800;letter-spacing:-.02em}
+  .pt-stats span{display:block;font-size:11px;color:var(--g3);letter-spacing:.06em;text-transform:uppercase;margin-top:3px}
+
+  .pt-pods{display:grid;gap:10px;margin:0 0 10px}
+  .pt-pod{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:13px 15px}
+  .pt-pod b{display:block;font-size:14px}
+  .pt-pod span{display:block;font-size:13px;color:var(--g2);margin-top:2px}
+  .pt-kit{font-size:12px;color:var(--g3);letter-spacing:.03em;margin:0 0 8px}
+
+  .pt-social{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:0 0 14px}
+  .pt-social>div{border:1px solid var(--line);background:var(--panel);border-radius:11px;padding:11px;text-align:center}
+  .pt-social b{display:block;font-size:17px;font-weight:800;letter-spacing:-.02em}
+  .pt-social span{display:block;font-size:10px;color:var(--g3);letter-spacing:.07em;text-transform:uppercase;margin-top:2px}
+
+  .pt-list{margin:0 0 14px;padding-left:0;list-style:none}
+  .pt-list li{position:relative;padding-left:19px;margin-bottom:7px}
+  .pt-list li:before{content:"+";position:absolute;left:0;font-weight:800;color:var(--g2)}
+  .pt-no li:before{content:"\2013";color:var(--g3)}
+
+  .pt-cta{border:1px solid var(--line);background:var(--panel);border-radius:14px;padding:17px 19px;margin-top:24px}
+  .pt-cta b{font-size:15px}
+  .pt-cta p{margin:5px 0 0;font-size:14px;color:var(--g2);line-height:1.55}
+
+  @media(min-width:620px){
+    .pt-stats{grid-template-columns:repeat(4,1fr)}
+    .pt-pods{grid-template-columns:repeat(2,1fr)}
+  }
+</style>

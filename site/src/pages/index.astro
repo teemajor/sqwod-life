@@ -33,17 +33,22 @@ const impactVerify: Record<string, string> = { value: '7dbbad87-cd73-480d-971c-7
   <meta name="description" content="Insider intelligence, honest gear reviews, and growth playbooks for the coaches, creators, and founders the big platforms overlook. Available in English and German." />
   <script is:inline>location.replace('/en/' + location.search + location.hash);</script>
   <style>
-    html,body{margin:0;background:#0e0e10;color:#e8e8ea;
+    html{color-scheme:dark light}
+    :root{--rc-bg:#0e0e10;--rc-fg:#e8e8ea;--rc-dim:#a9a9b2;--rc-line:#34343c}
+    @media(prefers-color-scheme:light){
+      :root{--rc-bg:#fafafa;--rc-fg:#111114;--rc-dim:#5b5b66;--rc-line:#d8d8e0}
+    }
+    html,body{margin:0;background:var(--rc-bg);color:var(--rc-fg);
       font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
     .root-choice{min-height:100vh;display:flex;flex-direction:column;
       align-items:center;justify-content:center;gap:18px;padding:32px;
       text-align:center;box-sizing:border-box}
     .root-choice h1{font-size:20px;font-weight:700;margin:0;letter-spacing:.01em}
-    .root-choice p{margin:0;max-width:46ch;line-height:1.55;color:#a9a9b2;font-size:14px}
+    .root-choice p{margin:0;max-width:46ch;line-height:1.55;color:var(--rc-dim);font-size:14px}
     .root-links{display:flex;gap:12px;margin-top:6px;flex-wrap:wrap;justify-content:center}
-    .root-links a{display:inline-block;padding:11px 22px;border:1px solid #34343c;
-      border-radius:10px;color:#e8e8ea;text-decoration:none;font-weight:600;font-size:14px}
-    .root-links a:hover{border-color:#e8e8ea}
+    .root-links a{display:inline-block;padding:11px 22px;border:1px solid var(--rc-line);
+      border-radius:10px;color:var(--rc-fg);text-decoration:none;font-weight:600;font-size:14px}
+    .root-links a:hover{border-color:var(--rc-fg)}
   </style>
 </head>
 <body>

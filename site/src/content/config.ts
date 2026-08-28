@@ -26,6 +26,17 @@ const reviews = defineCollection({
     updatedAt: z.coerce.date(),
     author: z.string().default('Sqwod Verified'),
     affiliate: z.boolean().default(true),
+    // How much of this verdict came from a unit in our hands. Declared, never inferred.
+    // Sqwod's reviews are desk-researched by default: the score is built from aggregated
+    // public signal plus our own scorecard, without handling the product. Saying so on the
+    // page is what lets us honestly offer brands an upgrade to a tested review — and what
+    // keeps `bewertet` from ever being read as `getestet` under UWG §5.
+    //   pod-tested      — used in a Berlin Sqwod Pod, on camera, over time
+    //   hands-on        — handled and used, but not a full Pod protocol
+    //   desk-researched — scored from public data; no unit handled  (DEFAULT)
+    //   editorial-pick  — named on merit, deliberately unscored
+    testStatus: z.enum(['pod-tested', 'hands-on', 'desk-researched', 'editorial-pick'])
+      .default('desk-researched'),
     draft: z.boolean().default(false), // unpublished — excluded from pages, /go, and related links until a real Sqwod Score is set
     verdict: z.string(),
 

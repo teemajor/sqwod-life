@@ -4,6 +4,13 @@
 // `affiliate: true` = we have / will have a partner program (link labeled + rel=sponsored);
 // `affiliate: false` = listed on merit only, plainly linked, clearly "not affiliated".
 //
+// AFFILIATE LINK CONVENTION (2026-08-28) — `url` may now be a network tracking link:
+//   * Impact  https://<vanity>/c/2210087/<adId>/<campaignId>   (2210087 = Sqwod's Impact partner ID)
+//     Deep-link to a specific page by appending ?u=<urlencoded destination>.
+//   * Awin    https://www.awin1.com/cread.php?awinmid=<MID>&awinaffid=245789&ued=<encoded url>
+//   * Amazon  plain amazon.de /dp/<ASIN> URL with ?tag=sqwod-21
+//   Only brands with a LIVE, accepted program get a tracking link. A declined or pending
+//   program keeps its plain brand URL — see project memory ref-affiliate-programs.
 // LINK-INTEGRITY POLICY (2026-07-23) — every Amazon `url` MUST be verified before wiring:
 //   1. CONDITION = NEW. Never a "Renewed"/"Refurbished"/"Generalüberholt" ASIN.
 //   2. SELLER = Amazon or the brand's own store — NOT a 3rd-party marketplace reseller.
@@ -63,7 +70,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Current-gen smartwatch', de: 'Smartwatch, aktuelle Gen' }, why: { en: 'The current Apple Watch — 24h battery, hypertension alerts, 5G. New, Apple-sold.', de: 'Die aktuelle Apple Watch — 24 h Akku, Bluthochdruck-Hinweise, 5G. Neu, von Apple verkauft.' } },
       { product: 'WHOOP 5.0', brand: 'Whoop', url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-5',
         bestFor: { en: 'Current-gen strain band', de: 'Strain-Band, aktuelle Gen' }, why: { en: '14-day battery, ECG + BP on the MG tier — the current screenless recovery band.', de: '14 Tage Akku, EKG + Blutdruck (MG-Tier) — das aktuelle Recovery-Band ohne Display.' } },
-      { product: 'Ultrahuman Ring AIR', brand: 'Ultrahuman', url: 'https://www.amazon.de/dp/B0CHF6BZ9H?tag=sqwod-21', affiliate: true, reviewSlug: 'ultrahuman-ring-air',
+      { product: 'Ultrahuman Ring AIR', brand: 'Ultrahuman', url: 'https://ultrahumanhealthcare.pxf.io/c/2210087/3981492/38784', affiliate: true, reviewSlug: 'ultrahuman-ring-air',
         bestFor: { en: 'Subscription-free ring', de: 'Abofreier Ring' }, why: { en: 'Oura-class recovery accuracy with no subscription, plus an optional metabolic angle.', de: 'Recovery-Genauigkeit auf Oura-Niveau ohne Abo, plus optionaler Stoffwechsel-Fokus.' } },
       { product: 'Withings ScanWatch 2', brand: 'Withings', url: 'https://www.amazon.de/dp/B0CG6PJLY3?tag=sqwod-21', affiliate: true, reviewSlug: 'withings-scanwatch-2',
         bestFor: { en: 'Hybrid health watch', de: 'Hybrid-Health-Uhr' }, why: { en: 'ECG, SpO2 and ~30-day battery in a classic-looking hybrid — health-first, no GPS.', de: 'EKG, SpO2 und ~30 Tage Akku in einer klassischen Hybrid-Uhr — Gesundheit zuerst, kein GPS.' } },
@@ -75,7 +82,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Multisport sensors', de: 'Multisport-Sensoren' }, why: { en: 'Deep sensor suite (ECG, SpO2) and week-long battery for data-hungry endurance athletes.', de: 'Umfangreiche Sensoren (EKG, SpO2) und Wochen-Akku für datenhungrige Ausdauersportler.' } },
       { product: 'RingConn Gen 2', brand: 'RingConn', url: 'https://de.ringconn.com/', affiliate: true, reviewSlug: 'ringconn-gen-2',
         bestFor: { en: 'Subscription-free smart ring', de: 'Smart Ring ohne Abo' }, why: { en: 'Every metric free forever, 10–12 day battery and a ~150-day charging case — the no-subscription pick.', de: 'Alle Werte für immer gratis, 10–12 Tage Akku und ~150-Tage-Case — die Wahl ohne Abo.' } },
-      { product: 'Suunto Race', brand: 'Suunto', url: 'https://www.suunto.com/de-de/', affiliate: true, reviewSlug: 'suunto-race',
+      { product: 'Suunto Race', brand: 'Suunto', url: 'https://suunto.pxf.io/c/2210087/3998915/35454', affiliate: true, reviewSlug: 'suunto-race',
         bestFor: { en: 'Value dual-band GPS watch', de: 'Preis-Leistungs-GPS-Uhr' }, why: { en: 'Dual-band GPS, AMOLED and offline maps with ~26-day battery — Garmin features for far less.', de: 'Dual-Band-GPS, AMOLED und Offline-Karten mit ~26 Tagen Akku — Garmin-Features für deutlich weniger.' } },
     ],
   },
@@ -120,8 +127,8 @@ export const categories: Category[] = [
       { product: 'Muse S Athena', brand: 'Muse', url: 'https://www.amazon.de/dp/B0F4F15WDD?tag=sqwod-21', affiliate: true, reviewSlug: 'muse-s-athena',
         bestFor: { en: 'Meditation & sleep EEG', de: 'Meditation & Schlaf-EEG' }, why: { en: 'EEG + fNIRS headband for objective meditation, focus and sleep biofeedback.', de: 'EEG-+-fNIRS-Stirnband für objektives Biofeedback bei Meditation, Fokus und Schlaf.' } },
       { product: 'Hatch Restore', brand: 'Hatch', url: 'https://www.hatch.co/', affiliate: true,
-        bestFor: { en: 'Wind-down & wake', de: 'Runterkommen & Aufwachen' }, why: { en: 'Sunrise alarm + sound for a screen-free wind-down routine. Review coming.', de: 'Sonnenaufgangs-Wecker + Sound für eine bildschirmfreie Abendroutine. Test folgt.' } },
-      { product: 'Manta Sleep Mask', brand: 'Manta Sleep', url: 'https://www.amazon.de/dp/B07PRG2CQY?tag=sqwod-21', affiliate: true, reviewSlug: 'manta-sleep-mask',
+        bestFor: { en: 'Wind-down & wake', de: 'Runterkommen & Aufwachen' }, why: { en: 'Sunrise alarm + sound for a screen-free wind-down routine. Review coming.', de: 'Sonnenaufgangs-Wecker + Sound für eine bildschirmfreie Abendroutine. Bewertung folgt.' } },
+      { product: 'Manta Sleep Mask', brand: 'Manta Sleep', url: 'https://mantasleep.pxf.io/c/2210087/4019676/41195', affiliate: true, reviewSlug: 'manta-sleep-mask',
         bestFor: { en: 'Total blackout', de: 'Komplette Dunkelheit' }, why: { en: 'Genuinely blackout, pressure-free mask that serious sleepers swear by.', de: 'Wirklich lichtdichte, druckfreie Maske, auf die anspruchsvolle Schläfer schwören.' } },
       { product: 'Loop Quiet 2', brand: 'Loop', url: 'https://www.amazon.de/dp/B0D3V4V1KD?tag=sqwod-21', affiliate: true, reviewSlug: 'loop-quiet-2',
         bestFor: { en: 'Reusable earplugs', de: 'Wiederverwendbare Ohrstöpsel' }, why: { en: 'Comfortable 24 dB silicone earplugs — a strong side-sleeper pick.', de: 'Bequeme 24-dB-Silikon-Ohrstöpsel — top für Seitenschläfer.' } },
@@ -145,7 +152,7 @@ export const categories: Category[] = [
       { product: 'Seed DS-01', brand: 'Seed', url: 'https://seed.com/', affiliate: true, reviewSlug: 'seed-ds-01',
         bestFor: { en: 'Gut health', de: 'Darmgesundheit' }, why: { en: 'Broad 24-strain synbiotic with an acid-protective capsule and real (if brand-funded) trials.', de: 'Breites 24-Stämme-Synbiotikum mit säureschützender Kapsel und echten (wenn markenfinanzierten) Studien.' } },
       { product: 'David Protein', brand: 'David', url: 'https://davidprotein.com/', affiliate: true,
-        bestFor: { en: 'High-protein bar', de: 'High-Protein-Riegel' }, why: { en: '28g protein, near-zero sugar — the buzziest performance bar right now. Review coming.', de: '28 g Protein, fast null Zucker — aktuell der meistdiskutierte Performance-Riegel. Test folgt.' } },
+        bestFor: { en: 'High-protein bar', de: 'High-Protein-Riegel' }, why: { en: '28g protein, near-zero sugar — the buzziest performance bar right now. Review coming.', de: '28 g Protein, fast null Zucker — aktuell der meistdiskutierte Performance-Riegel. Bewertung folgt.' } },
       { product: 'Myprotein Impact Whey', brand: 'Myprotein', url: 'https://www.myprotein.de/', affiliate: true, reviewSlug: 'myprotein-impact-whey',
         bestFor: { en: 'Value whey', de: 'Preis-Leistungs-Whey' }, why: { en: 'The certified ~€30/kg value benchmark — buy it on a discount code.', de: 'Der zertifizierte ~30-€/kg-Preis-Leistungs-Maßstab — mit Rabattcode kaufen.' } },
       { product: 'ESN Designer Whey', brand: 'ESN', url: 'https://www.amazon.de/dp/B004U4WUFU?tag=sqwod-21', affiliate: true, reviewSlug: 'esn-designer-whey',
@@ -156,7 +163,7 @@ export const categories: Category[] = [
         bestFor: { en: 'All-round whey', de: 'Allround-Whey' }, why: { en: 'The genre-defining whey — great mixability and Informed-Choice tested.', de: 'Der Whey-Klassiker — top Löslichkeit und Informed-Choice-getestet.' } },
       { product: 'Maurten GEL 100', brand: 'Maurten', url: 'https://www.maurten.com/', affiliate: true, reviewSlug: 'maurten-gel-100',
         bestFor: { en: 'Race-day fuel', de: 'Wettkampf-Verpflegung' }, why: { en: 'Superbly gut-friendly endurance gel elites swear by (at a premium).', de: 'Extrem magenfreundliches Ausdauer-Gel, auf das Top-Athleten schwören (zum Premiumpreis).' } },
-      { product: 'AG1 (Athletic Greens)', brand: 'AG1', url: 'https://drinkag1.com/', affiliate: true, reviewSlug: 'ag1-athletic-greens',
+      { product: 'AG1 (Athletic Greens)', brand: 'AG1', url: 'https://drinkag1nordic.pxf.io/c/2210087/3862778/23569', affiliate: true, reviewSlug: 'ag1-athletic-greens',
         bestFor: { en: 'Convenience greens', de: 'Greens für unterwegs' }, why: { en: 'Exhaustively tested greens powder — convenient, but premium-priced with thin evidence.', de: 'Ausführlich getestetes Greens-Pulver — praktisch, aber teuer und dünn belegt.' } },
       { product: 'waterdrop Microdrink', brand: 'waterdrop', url: 'https://www.waterdrop.com/', affiliate: true, reviewSlug: 'waterdrop-microdrink',
         bestFor: { en: 'Functional hydration', de: 'Funktionale Hydration' }, why: { en: 'Sugar-light flavor cubes that make drinking more water genuinely easy and sustainable.', de: 'Zuckerarme Geschmackswürfel, die mehr Trinken wirklich leicht und nachhaltig machen.' } },
@@ -164,6 +171,8 @@ export const categories: Category[] = [
         bestFor: { en: 'Complete-meal drink', de: 'Trinkmahlzeit' }, why: { en: 'Germany\'s category leader: 500 kcal, 33 g protein and 26 vitamins with genuinely good taste.', de: 'Deutschlands Kategorieführer: 500 kcal, 33 g Protein und 26 Vitamine bei wirklich gutem Geschmack.' } },
       { product: 'Barebells Protein Bar', brand: 'Barebells', url: 'https://barebells.de/', affiliate: true, reviewSlug: 'barebells-protein-bar',
         bestFor: { en: 'Protein snack', de: 'Protein-Snack' }, why: { en: 'The best-tasting mainstream protein bar — 20 g protein, no sugar alcohols, candy-bar texture.', de: 'Der bestschmeckende Mainstream-Proteinriegel — 20 g Protein, ohne Zuckeralkohole, Schoko-Riegel-Feeling.' } },
+      { product: 'Performance Lab Core Series', brand: 'Performance Lab', url: 'https://performancelabltd.pxf.io/c/2210087/3977490/48739', affiliate: true,
+        bestFor: { en: 'Clean-label stacks', de: 'Clean-Label-Stacks' }, why: { en: 'Minimal-additive, single-purpose formulas that are easy to defend to a client. Review coming.', de: 'Zusatzstoffarme Einzweck-Formeln, die sich Kund:innen gut erkl\u00e4ren lassen. Bewertung folgt.' } },
     ],
   },
   {
@@ -178,7 +187,7 @@ export const categories: Category[] = [
       { product: 'Peloton Bike', brand: 'Peloton', url: 'https://www.onepeloton.com/', affiliate: true, reviewSlug: 'peloton-bike',
         bestFor: { en: 'Class experience', de: 'Kurs-Erlebnis' }, why: { en: 'The benchmark for connected cardio classes — worth it if you use the subscription.', de: 'Der Maßstab für vernetzte Cardio-Kurse — lohnt sich, wenn du das Abo nutzt.' } },
       { product: 'Tonal', brand: 'Tonal', url: 'https://www.tonal.com/', affiliate: true,
-        bestFor: { en: 'Strength at home', de: 'Kraft zuhause' }, why: { en: 'Digital cable machine with adaptive resistance — strength in a wall\'s footprint. Review coming.', de: 'Digitale Kabelzug-Maschine mit adaptivem Widerstand — Kraft auf Wandfläche. Test folgt.' } },
+        bestFor: { en: 'Strength at home', de: 'Kraft zuhause' }, why: { en: 'Digital cable machine with adaptive resistance — strength in a wall\'s footprint. Review coming.', de: 'Digitale Kabelzug-Maschine mit adaptivem Widerstand — Kraft auf Wandfläche. Bewertung folgt.' } },
       { product: 'Zwift', brand: 'Zwift', url: 'https://www.zwift.com/', affiliate: false,
         bestFor: { en: 'Indoor cycling/running', de: 'Indoor-Cycling/Laufen' }, why: { en: 'The social training platform for turbo trainers and treadmills. Listed on merit.', de: 'Die soziale Trainings-Plattform für Rollentrainer und Laufbänder. Auf Empfehlung gelistet.' } },
       { product: 'Wahoo KICKR CORE 2', brand: 'Wahoo', url: 'https://www.wahoofitness.com/', affiliate: true, reviewSlug: 'wahoo-kickr-core',
@@ -220,7 +229,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Do-it-all super-trainer', de: 'Allround-Super-Trainer' }, why: { en: 'Versatile nylon-plated trainer — easy days to race day, now a steal.', de: 'Vielseitiger Trainer mit Nylon-Platte — von locker bis Wettkampf, jetzt ein Schnäppchen.' } },
       { product: 'New Balance Fresh Foam X 1080v14', brand: 'New Balance', url: 'https://www.newbalance.de/', affiliate: true, reviewSlug: 'new-balance-1080-v14',
         bestFor: { en: 'Plush daily miles', de: 'Weiche Alltagskilometer' }, why: { en: 'Comfort-first max-cushion daily trainer for easy and recovery runs.', de: 'Komfortorientierter Max-Cushion-Trainer für lockere Läufe und Regeneration.' } },
-      { product: 'Vivobarefoot Primus Lite III', brand: 'Vivobarefoot', url: 'https://www.vivobarefoot.com/de', affiliate: true, reviewSlug: 'vivobarefoot-primus-lite',
+      { product: 'Vivobarefoot Primus Lite III', brand: 'Vivobarefoot', url: 'https://vivobarefootltd.pxf.io/c/2210087/3827543/48989?u=https%3A%2F%2Fwww.vivobarefoot.com%2Fde', affiliate: true, reviewSlug: 'vivobarefoot-primus-lite',
         bestFor: { en: 'Barefoot training shoe', de: 'Barfuß-Trainingsschuh' }, why: { en: 'Premium wide-toe barefoot trainer with real ground feel for natural movement.', de: 'Hochwertiger Barfuß-Trainer mit breiter Zehenbox und echtem Bodengefühl für natürliche Bewegung.' } },
       { product: 'Vuori Kore Short', brand: 'Vuori', url: 'https://vuoriclothing.de/', affiliate: true, reviewSlug: 'vuori-kore-short',
         bestFor: { en: 'Do-everything short', de: 'Allround-Short' }, why: { en: 'A cult-favorite short with buttery fabric that goes from gym to lounge effortlessly.', de: 'Kult-Short mit ultraweichem Stoff — vom Gym bis zur Couch mühelos vielseitig.' } },
@@ -238,9 +247,11 @@ export const categories: Category[] = [
       { product: 'TrainingPeaks', brand: 'TrainingPeaks', url: 'https://www.trainingpeaks.com/', affiliate: true, reviewSlug: 'trainingpeaks',
         bestFor: { en: 'Endurance coaching', de: 'Ausdauer-Coaching' }, why: { en: 'The standard for structured endurance programming and athlete management.', de: 'Der Standard für strukturiertes Ausdauer-Programmieren und Athleten-Management.' } },
       { product: 'Runna', brand: 'Runna', url: 'https://www.runna.com/', affiliate: true,
-        bestFor: { en: 'Guided run plans', de: 'Geführte Lauf-Pläne' }, why: { en: 'Personalized run plans that bridge solo runners and coaches. Review coming.', de: 'Personalisierte Lauf-Pläne als Brücke zwischen Solo-Läufer:innen und Coaches. Test folgt.' } },
+        bestFor: { en: 'Guided run plans', de: 'Geführte Lauf-Pläne' }, why: { en: 'Personalized run plans that bridge solo runners and coaches. Review coming.', de: 'Personalisierte Lauf-Pläne als Brücke zwischen Solo-Läufer:innen und Coaches. Bewertung folgt.' } },
       { product: 'MyFitnessPal', brand: 'MyFitnessPal', url: 'https://www.myfitnesspal.com/', affiliate: true,
         bestFor: { en: 'Nutrition logging', de: 'Ernährungs-Tracking' }, why: { en: 'The largest food database for clients who track intake. Listed on merit.', de: 'Die größte Lebensmittel-Datenbank fürs Tracking. Auf Empfehlung gelistet.' } },
+      { product: 'Pvolve', brand: 'Pvolve', url: 'https://pvolve.r7kg.net/c/2210087/1295530/8810', affiliate: true,
+        bestFor: { en: 'Low-impact strength', de: 'Gelenkschonendes Krafttraining' }, why: { en: 'Resistance-based method for clients who need joint-friendly progressive loading. Review coming.', de: 'Widerstandsbasierte Methode f\u00fcr Kund:innen, die gelenkschonende progressive Belastung brauchen. Bewertung folgt.' } },
     ],
   },
   {
@@ -256,8 +267,8 @@ export const categories: Category[] = [
         bestFor: { en: 'Gym management', de: 'Gym-Management' }, why: { en: 'All-in-one gym management with a real free tier — US-focused; routes to Sqwod OS.', de: 'All-in-one-Gym-Management mit echter Gratis-Stufe — US-fokussiert; führt zu Sqwod OS.' } },
       { product: 'Lenus', brand: 'Lenus', url: 'https://www.lenus.io/', affiliate: false,
         bestFor: { en: 'Coach platform', de: 'Coach-Plattform' }, why: { en: 'All-in-one platform for scaling an online coaching business. Listed on merit.', de: 'All-in-one-Plattform zum Skalieren eines Online-Coaching-Business. Auf Empfehlung gelistet.' } },
-      { product: 'ISSA Certification', brand: 'ISSA', url: 'https://www.issaonline.com/', affiliate: true,
-        bestFor: { en: 'Trainer certification', de: 'Trainer-Zertifizierung' }, why: { en: 'Widely recognized PT + wellness coaching certifications. Review coming.', de: 'Weit anerkannte PT- + Wellness-Coaching-Zertifizierungen. Test folgt.' } },
+      { product: 'ISSA Certification', brand: 'ISSA', url: 'https://issa.sjv.io/c/2210087/3921138/12162', affiliate: true,
+        bestFor: { en: 'Trainer certification', de: 'Trainer-Zertifizierung' }, why: { en: 'Widely recognized PT + wellness coaching certifications. Review coming.', de: 'Weit anerkannte PT- + Wellness-Coaching-Zertifizierungen. Bewertung folgt.' } },
     ],
   },
 ];

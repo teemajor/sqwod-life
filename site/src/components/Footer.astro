@@ -5,13 +5,14 @@ const { lang } = Astro.props;
 ---
 <footer class="site">
   <div class="wrap">
-    <a href={`/${lang}/`} class="foot-logo"><img src="/sqwod-white.png" alt="Sqwod" width="84" height="22" /><span>.life</span></a>
+    <a href={`/${lang}/`} class="foot-logo"><picture><source media="(prefers-color-scheme: light)" srcset="/sqwod-black.png" /><img src="/sqwod-white.png" alt="Sqwod" width="84" height="22" /></picture><span>.life</span></a>
     <p class="foot-tag">{lang === 'de' ? 'Dein Vorsprung im Fitness-Business.' : 'Your edge in the business of fitness.'}</p>
     <p class="foot-links">
       <a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a> ·
       <a href={`/${lang}/play`}>Play</a> ·
       <a href={`/${lang}/verified/methodology`}>{lang==='de'?'Methodik':'Methodology'}</a> ·
       <a href={`/${lang}/verified/disclosure`}>{lang==='de'?'Transparenz':'Disclosure'}</a> ·
+      <a href={`/${lang}/verified/partners`}>{lang==='de'?'Partner':'Partners'}</a> ·
       <a href={`/${lang}/corrections`}>{lang==='de'?'Korrekturen':'Corrections'}</a> ·
       <a href={`/${lang}/about`}>{lang==='de'?'Über uns':'About'}</a> ·
       <a href={`/${lang}/impressum`}>Impressum</a> ·

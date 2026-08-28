@@ -1,0 +1,51 @@
+---
+// Testing-status badge — says what we actually did with the product.
+//
+// Sqwod's reviews are desk-researched by default: a score built from aggregated public
+// signal plus our own scorecard, with no unit in hand. That has to be visible on the page,
+// for two reasons. Legally, German „bewertet" and „getestet" are not interchangeable and a
+// score presented as a test is a misleading statement under UWG §5. Commercially, the whole
+// brand-seeding offer is "send us the product and we'll replace a desk verdict with a tested
+// one" — a distinction the site has to actually show before we can sell it.
+//
+// `tone` picks how loud the badge is: `full` on a review page (label + explanation),
+// `chip` in a list row (label only).
+import { t, type Lang } from '../i18n/ui';
+
+export type TestStatus = 'pod-tested' | 'hands-on' | 'desk-researched' | 'editorial-pick';
+interface Props { status: TestStatus; lang: Lang; tone?: 'full' | 'chip' }
+const { status, lang, tone = 'chip' } = Astro.props;
+
+const label = t(lang, `ts.${status}` as any);
+const note = t(lang, `ts.${status}.note` as any);
+// Only a real test earns the filled treatment. Everything else stays visibly quieter —
+// the hierarchy is the honesty.
+const tested = status === 'pod-tested' || status === 'hands-on';
+---
+{tone === 'chip' ? (
+  <span class:list={['ts-chip', tested && 'ts-tested']} title={note}>{label}</span>
+) : (
+  <div class:list={['ts-full', tested && 'ts-tested']}>
+    <span class="ts-label">{label}</span>
+    <span class="ts-note">{note}</span>
+  </div>
+)}
+
+<style>
+  .ts-chip{
+    display:inline-block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+    border:1px solid var(--line);background:var(--panel2);color:var(--g2);
+    border-radius:5px;padding:2px 6px;white-space:nowrap;
+  }
+  .ts-chip.ts-tested{border-color:var(--chalk);color:var(--chalk)}
+
+  .ts-full{
+    display:flex;flex-direction:column;gap:3px;
+    border:1px solid var(--line);border-left:3px solid var(--g4);
+    background:var(--panel);border-radius:10px;padding:11px 14px;margin:0 0 14px;
+  }
+  .ts-full.ts-tested{border-left-color:var(--chalk)}
+  .ts-label{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g1)}
+  .ts-full.ts-tested .ts-label{color:var(--chalk)}
+  .ts-note{font-size:12px;line-height:1.5;color:var(--g3)}
+</style>

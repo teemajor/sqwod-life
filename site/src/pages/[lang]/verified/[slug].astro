@@ -1,5 +1,6 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import TestStatus from '../../../components/TestStatus.astro';
 import ScoreBadge from '../../../components/ScoreBadge.astro';
 import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
 import { getCollection } from 'astro:content';
@@ -78,6 +79,7 @@ const jsonLd = {
   <span class="verified-tag">◈ Sqwod Verified</span>
   <h1 style="margin-bottom:2px">{d.productName}</h1>
   <p class="sub">{d.category}</p>
+  <div style="margin-top:12px"><TestStatus status={d.testStatus} lang={lang} tone="full" /></div>
 
   <div class="review-layout" style="margin-top:18px">
     <!-- sticky rail: 3D + score + deal -->
