@@ -1,0 +1,178 @@
+[
+  {
+    "id": "news-2026-08-28-1",
+    "entity": "DSSV",
+    "topic": "Pressemitteilung des DSSV zur Zuckergetränkesteuer",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "DSSV (Thu, 27 Aug 2026 13:00:00 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Pressemitteilung des DSSV zur Zuckergetränkesteuer"
+      },
+      {
+        "label": "Outlet",
+        "value": "DSSV"
+      }
+    ],
+    "en": {
+      "headline": "Pressemitteilung des DSSV zur Zuckergetränkesteuer",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/pressemitteilung-des-dssv-zur-zuckerfreisteuer/"
+    },
+    "de": {
+      "headline": "Pressemitteilung des DSSV zur Zuckergetränkesteuer",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/pressemitteilung-des-dssv-zur-zuckerfreisteuer/"
+    }
+  },
+  {
+    "id": "news-2026-08-28-2",
+    "entity": "observer.com",
+    "topic": "Tom Hale’s Oura Heads to the U.S. Open With a $16B IPO in Sight",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "observer.com (Thu, 27 Aug 2026 21:13:41 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Tom Hale’s Oura Heads to the U.S. Open With a $16B IPO in Sight"
+      },
+      {
+        "label": "Outlet",
+        "value": "observer.com"
+      },
+      {
+        "label": "Deal",
+        "value": "ipo $16B"
+      }
+    ],
+    "en": {
+      "headline": "Tom Hale’s Oura Heads to the U.S. Open With a $16B IPO in Sight",
+      "dek": "Via observer.com.",
+      "readMore": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWHpWNWZpbzRIM1ZGbFFKelEwaXVtZ05IeWlGNkRpMXh2YnV1M3J6LUZEWU5scTVrc25KREhIOW5DQWt5Um90dDZIWlR6OE95MTJ5c1d1LXgzNGdXWWVsUlBjcTVpRW9zMkdFWHhvMWxVNlFEQlNmelBxQnoySGs2WG9sTTQyQnNiYTMtSG5hc0tZVFN5?oc=5"
+    },
+    "de": {
+      "headline": "Tom Hale’s Oura Heads to the U.S. Open With a $16B IPO in Sight",
+      "dek": "Via observer.com.",
+      "readMore": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWHpWNWZpbzRIM1ZGbFFKelEwaXVtZ05IeWlGNkRpMXh2YnV1M3J6LUZEWU5scTVrc25KREhIOW5DQWt5Um90dDZIWlR6OE95MTJ5c1d1LXgzNGdXWWVsUlBjcTVpRW9zMkdFWHhvMWxVNlFEQlNmelBxQnoySGs2WG9sTTQyQnNiYTMtSG5hc0tZVFN5?oc=5"
+    }
+  },
+  {
+    "id": "news-2026-08-28-3",
+    "entity": "spabusiness.com",
+    "topic": "Excalibur Group expands spa booking platform portfolio with SpaSeekers acquisition",
+    "pillar": "build",
+    "conversion": "pods",
+    "provenance": "spabusiness.com (Fri, 28 Aug 2026 06:07:11 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Excalibur Group expands spa booking platform portfolio with SpaSeekers acquisition"
+      },
+      {
+        "label": "Outlet",
+        "value": "spabusiness.com"
+      },
+      {
+        "label": "Deal",
+        "value": "acquisition"
+      }
+    ],
+    "en": {
+      "headline": "Excalibur Group expands spa booking platform portfolio with SpaSeekers acquisition",
+      "dek": "Via spabusiness.com.",
+      "readMore": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQTNyY0pKRVFGYkl2RG9hVXdLME1VLTB6Z1RQeWg5SkJqS3lqbGVLVVBuNWNzWHVmUTBfQ2tvcGtRUDg0ZS1Yb0dFb2ZWanBBc3NVQTRySzM2dURhenZwVHNaejBNanBPRXE1SXBBZjN5QnhLMHBKVFlqYWJGUEVKbVJjZlN4UkVUd1NCcERCQVpZR0NRUkRJbjREUk9hLTlhTmhwcGpxQmxBTTdoVXUzNVRWUGhiZkZvUDlicFlfbVJESVp2WXc?oc=5"
+    },
+    "de": {
+      "headline": "Excalibur Group expands spa booking platform portfolio with SpaSeekers acquisition",
+      "dek": "Via spabusiness.com.",
+      "readMore": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQTNyY0pKRVFGYkl2RG9hVXdLME1VLTB6Z1RQeWg5SkJqS3lqbGVLVVBuNWNzWHVmUTBfQ2tvcGtRUDg0ZS1Yb0dFb2ZWanBBc3NVQTRySzM2dURhenZwVHNaejBNanBPRXE1SXBBZjN5QnhLMHBKVFlqYWJGUEVKbVJjZlN4UkVUd1NCcERCQVpZR0NRUkRJbjREUk9hLTlhTmhwcGpxQmxBTTdoVXUzNVRWUGhiZkZvUDlicFlfbVJESVp2WXc?oc=5"
+    }
+  },
+  {
+    "id": "news-2026-08-28-4",
+    "entity": "Athletech News",
+    "topic": "US Pilates Participation Surges to 13.8 Million, With 2 Demographics Leading",
+    "pillar": "move",
+    "conversion": "products",
+    "provenance": "Athletech News (Thu, 27 Aug 2026 21:07:50 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "US Pilates Participation Surges to 13.8 Million, With 2 Demographics Leading"
+      },
+      {
+        "label": "Outlet",
+        "value": "Athletech News"
+      }
+    ],
+    "en": {
+      "headline": "US Pilates Participation Surges to 13.8 Million, With 2 Demographics Leading",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/us-pilates-market-size-13-8-million-participants-sfia/"
+    },
+    "de": {
+      "headline": "US Pilates Participation Surges to 13.8 Million, With 2 Demographics Leading",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/us-pilates-market-size-13-8-million-participants-sfia/"
+    }
+  },
+  {
+    "id": "news-2026-08-28-5",
+    "entity": "TechRadar",
+    "topic": "Forget the Garmin Fenix 9, Casio has a new surf adventure watch that sells for a fraction of the Garmin’s price",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "TechRadar (Mon, 24 Aug 2026 17:45:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Forget the Garmin Fenix 9, Casio has a new surf adventure watch that sells for a fraction of the Garmin’s price"
+      },
+      {
+        "label": "Outlet",
+        "value": "TechRadar"
+      }
+    ],
+    "en": {
+      "headline": "Forget the Garmin Fenix 9, Casio has a new surf adventure watch that sells for a fraction of the Garmin’s price",
+      "dek": "Via TechRadar.",
+      "readMore": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPLXlGVDlnc1RUMEVNXzhfZkJ0TzlSck1ReVFyTk0wQXFvV3pTR3pBeXI1Zk00WUdlckRBdzRoNl9nWjBQMkZNQ1pwWHZRZU9RdjJHWkFtV05LcUVHdVRmd2s5RGx4WncwOFFrcFNEYWgtMERuMVV2OExIZzgwd1JJX0RMc3hRZ2hqOGM4R19YY0Y0NGhfZG9QYnpEMWR2REQ1NTR5M2pHTW9kc3pPM2hFSDF0WWVzNGNucDB4SDRXSlc4MlRQenBNbGcxNExhTzZMRURGNjZ6SmZ3cEQ4eGhyZERxUG5rY0pOZ3BLVTM1dTRYVWZFLVR0Sm1XOVBoUzVl?oc=5"
+    },
+    "de": {
+      "headline": "Forget the Garmin Fenix 9, Casio has a new surf adventure watch that sells for a fraction of the Garmin’s price",
+      "dek": "Via TechRadar.",
+      "readMore": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPLXlGVDlnc1RUMEVNXzhfZkJ0TzlSck1ReVFyTk0wQXFvV3pTR3pBeXI1Zk00WUdlckRBdzRoNl9nWjBQMkZNQ1pwWHZRZU9RdjJHWkFtV05LcUVHdVRmd2s5RGx4WncwOFFrcFNEYWgtMERuMVV2OExIZzgwd1JJX0RMc3hRZ2hqOGM4R19YY0Y0NGhfZG9QYnpEMWR2REQ1NTR5M2pHTW9kc3pPM2hFSDF0WWVzNGNucDB4SDRXSlc4MlRQenBNbGcxNExhTzZMRURGNjZ6SmZ3cEQ4eGhyZERxUG5rY0pOZ3BLVTM1dTRYVWZFLVR0Sm1XOVBoUzVl?oc=5"
+    }
+  },
+  {
+    "id": "news-2026-08-28-6",
+    "entity": "citybiz",
+    "topic": "VASA Fitness Names Liz Crisafi CMO to Lead Marketing and Member Growth",
+    "pillar": "build",
+    "conversion": "pods",
+    "provenance": "citybiz (Wed, 26 Aug 2026 21:27:59 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "VASA Fitness Names Liz Crisafi CMO to Lead Marketing and Member Growth"
+      },
+      {
+        "label": "Outlet",
+        "value": "citybiz"
+      }
+    ],
+    "en": {
+      "headline": "VASA Fitness Names Liz Crisafi CMO to Lead Marketing and Member Growth",
+      "dek": "Via citybiz.",
+      "readMore": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQLW9RU05MOUJlMFZ6MzJkMFhHazhCYkpZVVcxWWJBRDlrNDdudXREUFBtcWpaaU8zMF9oeFNzenNQWUQ5MzVXb0RGY2t4QmJJNXRrOGE4aURnazNHMzBXd1I0am9qcHZyVHZZakNEek4xUlB0THo4d1d4c2E4clF5UUhYOGhwVVduLVd5bmp1ZExMTXdKeWRISnRCZFpPRWlLcVB6Z3hiekZvRkJGalE?oc=5"
+    },
+    "de": {
+      "headline": "VASA Fitness Names Liz Crisafi CMO to Lead Marketing and Member Growth",
+      "dek": "Via citybiz.",
+      "readMore": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQLW9RU05MOUJlMFZ6MzJkMFhHazhCYkpZVVcxWWJBRDlrNDdudXREUFBtcWpaaU8zMF9oeFNzenNQWUQ5MzVXb0RGY2t4QmJJNXRrOGE4aURnazNHMzBXd1I0am9qcHZyVHZZakNEek4xUlB0THo4d1d4c2E4clF5UUhYOGhwVVduLVd5bmp1ZExMTXdKeWRISnRCZFpPRWlLcVB6Z3hiekZvRkJGalE?oc=5"
+    }
+  }
+]

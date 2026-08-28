@@ -1,86 +1,5 @@
 [
   {
-    "date": "2026-08-06",
-    "key": "raus aus dem studioalltag  rein ins unternehmerleben",
-    "tokens": [
-      "raus",
-      "studioalltag",
-      "rein",
-      "unternehmerleben"
-    ]
-  },
-  {
-    "date": "2026-08-06",
-    "key": "ai sales coaching startup othello raises 685m seed",
-    "tokens": [
-      "sales",
-      "coaching",
-      "startup",
-      "othello",
-      "raises",
-      "seed"
-    ]
-  },
-  {
-    "date": "2026-08-06",
-    "key": "the redhot pilates market still has a lot of room to grow br",
-    "tokens": [
-      "pilates",
-      "market",
-      "still",
-      "room",
-      "grow",
-      "brand",
-      "leaders"
-    ]
-  },
-  {
-    "date": "2026-08-06",
-    "key": "he ditched 90 of his gym equipment and kept just 5 tools tha",
-    "tokens": [
-      "ditched",
-      "equipment",
-      "kept",
-      "just",
-      "tools",
-      "cost",
-      "less",
-      "months",
-      "membership",
-      "best",
-      "shape",
-      "life"
-    ]
-  },
-  {
-    "date": "2026-08-06",
-    "key": "whoops 101b valuation relies on refurbished trials and a sti",
-    "tokens": [
-      "whoop",
-      "valuation",
-      "relies",
-      "refurbished",
-      "trials",
-      "sticky",
-      "subscription",
-      "model"
-    ],
-    "entities": [
-      "Whoop"
-    ]
-  },
-  {
-    "date": "2026-08-06",
-    "key": "devizes gym launches new strength training class for over55s",
-    "tokens": [
-      "devizes",
-      "launches",
-      "strength",
-      "training",
-      "class"
-    ]
-  },
-  {
     "date": "2026-08-07",
     "key": "judge finds toronto drug squad officers likely stole 5000 fr",
     "tokens": [
@@ -1385,6 +1304,88 @@
       "better",
       "schafft",
       "trainingswelten"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "key": "pressemitteilung des dssv zur zuckergetrnkesteuer",
+    "tokens": [
+      "pressemitteilung",
+      "dssv",
+      "zuckergetr",
+      "nkesteuer"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "key": "tom hales oura heads to the us open with a 16b ipo in sight",
+    "tokens": [
+      "hale",
+      "oura",
+      "heads",
+      "open",
+      "sight"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "key": "excalibur group expands spa booking platform portfolio with ",
+    "tokens": [
+      "excalibur",
+      "group",
+      "expands",
+      "booking",
+      "platform",
+      "portfolio",
+      "spaseekers",
+      "acquisition"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "key": "us pilates participation surges to 138 million with 2 demogr",
+    "tokens": [
+      "pilates",
+      "participation",
+      "surges",
+      "million",
+      "demographics",
+      "leading"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "key": "forget the garmin fenix 9 casio has a new surf adventure wat",
+    "tokens": [
+      "forget",
+      "garmin",
+      "fenix",
+      "casio",
+      "surf",
+      "adventure",
+      "watch",
+      "sells",
+      "fraction",
+      "price"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "key": "vasa fitness names liz crisafi cmo to lead marketing and mem",
+    "tokens": [
+      "vasa",
+      "names",
+      "crisafi",
+      "lead",
+      "marketing",
+      "member",
+      "growth"
     ]
   }
 ]
