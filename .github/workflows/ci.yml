@@ -3,6 +3,10 @@ name: CI
 on:
   pull_request:
     branches: [main, master]
+  # Tee commits straight to main via GitHub Desktop, so a PR-only gate never runs
+  # for the commits that actually ship. Gate the push too.
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -27,4 +31,7 @@ jobs:
         working-directory: site
       - name: Link check
         run: npm run check:links
+        working-directory: site
+      - name: Sqwod Score integrity
+        run: npm run check:scores
         working-directory: site

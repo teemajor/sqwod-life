@@ -51,18 +51,27 @@ const apiKey = process.env.TRUSTPILOT_API_KEY;
 // Best-effort: refresh a registry entry's TrustScore + review count from the
 // Trustpilot Business API. Any failure leaves the researched value in place —
 // we never blank or invent a score.
+//
+// The key goes in the `apikey` HEADER, never the query string. Trustpilot's own
+// docs: "You should avoid passing your API key as a query parameter, as this can
+// expose your API key." A key in a URL leaks into server logs, proxy logs and
+// referrer headers — and this runs on every scheduled CI job.
+// Only the PUBLIC Business Units API is used here, which needs the key alone:
+// no OAuth, no secret, no token refresh. https://developers.trustpilot.com/authentication
 async function refreshLive(tp) {
   if (!apiKey || !tp?.domain) return tp;
   try {
     const find = await fetch(
-      `https://api.trustpilot.com/v1/business-units/find?name=${encodeURIComponent(tp.domain)}&apikey=${apiKey}`,
+      `https://api.trustpilot.com/v1/business-units/find?name=${encodeURIComponent(tp.domain)}`,
+      { headers: { apikey: apiKey } },
     );
     if (!find.ok) throw new Error(`find ${find.status}`);
     const unit = await find.json();
     const id = unit?.id;
     if (!id) throw new Error('no business unit id');
     const detail = await fetch(
-      `https://api.trustpilot.com/v1/business-units/${id}?apikey=${apiKey}`,
+      `https://api.trustpilot.com/v1/business-units/${id}`,
+      { headers: { apikey: apiKey } },
     );
     if (!detail.ok) throw new Error(`detail ${detail.status}`);
     const d = await detail.json();
