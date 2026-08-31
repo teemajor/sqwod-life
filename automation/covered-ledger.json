@@ -1,100 +1,5 @@
 [
   {
-    "date": "2026-08-07",
-    "key": "judge finds toronto drug squad officers likely stole 5000 fr",
-    "tokens": [
-      "judge",
-      "finds",
-      "toronto",
-      "drug",
-      "squad",
-      "officers",
-      "likely",
-      "stole",
-      "coach",
-      "stays",
-      "cocaine",
-      "charge"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "key": "pg strengthens wellness retail portfolio with 38bn thorne ac",
-    "tokens": [
-      "strengthens",
-      "retail",
-      "portfolio",
-      "thorne",
-      "acquisition"
-    ],
-    "entities": [
-      "Thorne"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "key": "62yearold woman inquires about a membership at crunch fitnes",
-    "tokens": [
-      "year",
-      "woman",
-      "inquires",
-      "about",
-      "membership",
-      "crunch",
-      "employee",
-      "tells",
-      "shape",
-      "first",
-      "just",
-      "want",
-      "walk",
-      "treadmill"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "key": "luxury yoga brand tulabala debuts on nordstromcom bringing d",
-    "tokens": [
-      "luxury",
-      "yoga",
-      "brand",
-      "tulabala",
-      "debuts",
-      "nordstrom",
-      "bringing",
-      "design",
-      "forward",
-      "homes"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "key": "kirin aims to build north american business platform with ja",
-    "tokens": [
-      "kirin",
-      "aims",
-      "build",
-      "north",
-      "american",
-      "business",
-      "platform",
-      "jamieson",
-      "acquisition"
-    ]
-  },
-  {
-    "date": "2026-08-07",
-    "key": "droitwichs pmf military fitness group raises 6000 for cancer",
-    "tokens": [
-      "droitwich",
-      "military",
-      "group",
-      "raises",
-      "cancer",
-      "charity"
-    ]
-  },
-  {
     "date": "2026-08-10",
     "key": "us wellness tourism surges as bend leads new age retreat boo",
     "tokens": [
@@ -1386,6 +1291,79 @@
       "marketing",
       "member",
       "growth"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "key": "7 rules for pricing your boutique gym membership",
+    "tokens": [
+      "rules",
+      "pricing",
+      "boutique",
+      "membership"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "key": "world gym posts us69 million quarterly profit as expansion s",
+    "tokens": [
+      "world",
+      "posts",
+      "million",
+      "quarterly",
+      "profit",
+      "expansion",
+      "strategy",
+      "gains",
+      "momentum"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "key": "park city gym raises over 10000 for youth boxers",
+    "tokens": [
+      "park",
+      "city",
+      "raises",
+      "youth",
+      "boxers"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "key": "master class towel abduction exercise can decrease injuries",
+    "tokens": [
+      "master",
+      "class",
+      "towel",
+      "abduction",
+      "exercise",
+      "decrease",
+      "injuries"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "key": "forget the gym membership spend your wellbeing bonus at the ",
+    "tokens": [
+      "forget",
+      "membership",
+      "spend",
+      "wellbeing",
+      "bonus",
+      "movies"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "key": "the boutique fitness boom is ending what comes next",
+    "tokens": [
+      "boutique",
+      "boom",
+      "ending",
+      "what",
+      "comes",
+      "next"
     ]
   }
 ]
