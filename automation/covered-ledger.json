@@ -1,92 +1,5 @@
 [
   {
-    "date": "2026-08-10",
-    "key": "us wellness tourism surges as bend leads new age retreat boo",
-    "tokens": [
-      "tourism",
-      "surges",
-      "bend",
-      "leads",
-      "retreat",
-      "boom"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "integrated wellness acquisition corp revenue breakdown  otcw",
-    "tokens": [
-      "integrated",
-      "acquisition",
-      "corp",
-      "revenue",
-      "breakdown",
-      "weluf"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "how fit is your body fitness coach shares 5 simple tests to ",
-    "tokens": [
-      "body",
-      "coach",
-      "shares",
-      "simple",
-      "tests",
-      "check",
-      "strength",
-      "mobility",
-      "balance",
-      "flexibility",
-      "health"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "garmin fenix 9 pro official launch date pricing  shocking ne",
-    "tokens": [
-      "garmin",
-      "fenix",
-      "official",
-      "launch",
-      "date",
-      "pricing",
-      "shocking",
-      "news",
-      "spotify",
-      "down",
-      "doi2fsynsh"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "ian mullane and alistair brownlee to keynote the 2026 hfa eu",
-    "tokens": [
-      "mullane",
-      "alistair",
-      "brownlee",
-      "keynote",
-      "2026",
-      "european",
-      "congress"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "how a simple request for ai to book a gym class exposed a ma",
-    "tokens": [
-      "simple",
-      "request",
-      "book",
-      "class",
-      "exposed",
-      "major",
-      "threat"
-    ]
-  },
-  {
     "date": "2026-08-11",
     "key": "these are the uks most fitnessobsessed cities",
     "tokens": [
@@ -1364,6 +1277,93 @@
       "what",
       "comes",
       "next"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "one in two studios isn8217t profitable it8217s not a marketi",
+    "tokens": [
+      "studios",
+      "8217",
+      "profitable",
+      "marketing",
+      "problem",
+      "math"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "semcap beauty  wellness leads funding round for healf",
+    "tokens": [
+      "semcap",
+      "beauty",
+      "leads",
+      "funding",
+      "round",
+      "healf"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "huawei watch d3 price specs and all three colors of this wea",
+    "tokens": [
+      "huawei",
+      "watch",
+      "price",
+      "specs",
+      "three",
+      "colors",
+      "wearable",
+      "blood",
+      "pressure",
+      "monitor",
+      "leaked"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "londons hitai acquires ycbacked fitness gaming studio quell ",
+    "tokens": [
+      "london",
+      "hitai",
+      "acquires",
+      "backed",
+      "gaming",
+      "studio",
+      "quell",
+      "boost",
+      "sports",
+      "motion",
+      "tracking",
+      "platform"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "see inside the new familyfriendly community gym housed in fo",
+    "tokens": [
+      "inside",
+      "family",
+      "friendly",
+      "community",
+      "housed",
+      "former",
+      "barn"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "inside the marketing powering whoops pivotal next act",
+    "tokens": [
+      "inside",
+      "marketing",
+      "powering",
+      "whoop",
+      "pivotal",
+      "next"
+    ],
+    "entities": [
+      "Whoop"
     ]
   }
 ]
