@@ -15,10 +15,10 @@
     { "topic": "Protein & muscle on GLP-1 medications — what coaches can and can't say", "slug": "glp1-muscle-evidence-coach-playbook", "pillar": "move", "conversion": "list-growth", "status": "drafted", "date": "2026-07-24" },
     { "topic": "Sleep & athletic performance — the highest-leverage lever", "slug": "sleep-performance-evidence-coach-playbook", "pillar": "signal", "conversion": "list-growth", "status": "drafted", "date": "2026-08-10" },
     { "topic": "Vitamin D — who actually needs to supplement", "slug": "vitamin-d-evidence-coach-playbook", "pillar": "signal", "conversion": "list-growth", "status": "drafted", "date": "2026-08-17" },
-    { "topic": "Omega-3 (fish oil) — joints, recovery, and dose", "slug": "omega-3-evidence-coach-playbook", "pillar": "signal", "conversion": "verified", "status": "drafted", "date": "2026-08-24" }
+    { "topic": "Omega-3 (fish oil) — joints, recovery, and dose", "slug": "omega-3-evidence-coach-playbook", "pillar": "signal", "conversion": "verified", "status": "drafted", "date": "2026-08-24" },
+    { "topic": "BCAAs — worth it if you already eat enough protein?", "slug": "bcaa-evidence-coach-playbook", "pillar": "move", "conversion": "products", "status": "drafted", "date": "2026-08-31" }
   ],
   "queue": [
-    { "topic": "BCAAs — worth it if you already eat enough protein?", "pillar": "move", "conversion": "products", "angle": "supplement myth-buster; the leucine story and why whole protein usually wins", "status": "pending" },
     { "topic": "Beta-alanine — the tingling supplement, does it work?", "pillar": "move", "conversion": "products", "angle": "method/supplement; buffering, the rep ranges it helps, dosing", "status": "pending" },
     { "topic": "Creatine vs. protein vs. everything else — a supplement triage for coaches", "pillar": "move", "conversion": "verified", "angle": "meta piece; rank the supplement shelf by evidence grade so coaches can say no faster", "status": "pending" },
     { "topic": "Training through perimenopause & menopause — what the evidence supports", "pillar": "move", "conversion": "pods", "angle": "women's health; strength, bone, protein needs and recovery; where research is thin and where it's solid", "status": "pending" },
