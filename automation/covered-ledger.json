@@ -1,85 +1,5 @@
 [
   {
-    "date": "2026-08-11",
-    "key": "these are the uks most fitnessobsessed cities",
-    "tokens": [
-      "these",
-      "most",
-      "obsessed",
-      "cities"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "slimfast invests 5m as brand expands into wellness",
-    "tokens": [
-      "slimfast",
-      "invests",
-      "brand",
-      "expands"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "gesundheitsprogramme einweisung am 10092026",
-    "tokens": [
-      "gesundheitsprogramme",
-      "einweisung",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "image studios launches beauty services acquisition platform ",
-    "tokens": [
-      "image",
-      "studios",
-      "launches",
-      "beauty",
-      "services",
-      "acquisition",
-      "platform",
-      "starting",
-      "clean",
-      "dirty",
-      "face"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "fitness coach reveals why his 3day split beats most 5day pro",
-    "tokens": [
-      "coach",
-      "reveals",
-      "split",
-      "beats",
-      "most",
-      "programs",
-      "secret",
-      "training",
-      "every",
-      "muscle",
-      "twice",
-      "week"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "ouras new ring 5 is smaller and lighter  and adds an ai heal",
-    "tokens": [
-      "oura",
-      "ring",
-      "smaller",
-      "lighter",
-      "adds",
-      "health",
-      "coach"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
     "date": "2026-08-12",
     "key": "raymond james maintains planet fitnessplntus with buy rating",
     "tokens": [
@@ -1364,6 +1284,83 @@
     ],
     "entities": [
       "Whoop"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "nestle to divest mainstream supplements business for 1 billi",
+    "tokens": [
+      "nestle",
+      "divest",
+      "mainstream",
+      "supplements",
+      "business",
+      "billion"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "phil lowe getting jacked with 22000 gym membership",
+    "tokens": [
+      "phil",
+      "lowe",
+      "getting",
+      "jacked",
+      "membership"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "oura ring 4 launches in india  price specifications and wher",
+    "tokens": [
+      "oura",
+      "ring",
+      "launches",
+      "india",
+      "price",
+      "specifications",
+      "where"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "enhance raises 182m to take gym training software into the u",
+    "tokens": [
+      "enhance",
+      "raises",
+      "take",
+      "training",
+      "software"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "dsg consumer partners acquires singapore wellness brand bbac",
+    "tokens": [
+      "consumer",
+      "partners",
+      "acquires",
+      "singapore",
+      "brand",
+      "bback"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "fitness tracker mi smart band mi band global version price x",
+    "tokens": [
+      "tracker",
+      "smart",
+      "band",
+      "global",
+      "version",
+      "price",
+      "xiaomi",
+      "review",
+      "budget"
     ]
   }
 ]
