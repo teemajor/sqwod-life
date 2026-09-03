@@ -1,0 +1,22 @@
+{
+  "lang": "en",
+  "site": "https://sqwod.life",
+  "podFeed": "https://sqwodpod.com/en/blogs/the-sqwod-journal.atom",
+  "unitsPerWeek": 4,
+  "dailyWindowDays": 10,
+  "cooldownDays": 120,
+  "formats": [
+    { "name": "post", "w": 1080, "h": 1350, "note": "4:5 — native to both IG feed and LinkedIn" },
+    { "name": "story", "w": 1080, "h": 1920, "note": "9:16 — Instagram stories only" }
+  ],
+  "slots": [
+    { "slot": 1, "prefer": ["verified"] },
+    { "slot": 2, "prefer": ["daily", "report"] },
+    { "slot": 3, "prefer": ["intel", "report"] },
+    { "slot": 4, "prefer": ["pod"] }
+  ],
+  "drive": {
+    "rootFolderId": "1Iy6Zb2ZodAGt4rRu5jrjHFATVvqgMwPQ",
+    "rootFolderName": "Sqwod Social"
+  }
+}
