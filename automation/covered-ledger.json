@@ -1,272 +1,5 @@
 [
   {
-    "date": "2026-08-10",
-    "key": "us wellness tourism surges as bend leads new age retreat boo",
-    "tokens": [
-      "tourism",
-      "surges",
-      "bend",
-      "leads",
-      "retreat",
-      "boom"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "integrated wellness acquisition corp revenue breakdown  otcw",
-    "tokens": [
-      "integrated",
-      "acquisition",
-      "corp",
-      "revenue",
-      "breakdown",
-      "weluf"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "how fit is your body fitness coach shares 5 simple tests to ",
-    "tokens": [
-      "body",
-      "coach",
-      "shares",
-      "simple",
-      "tests",
-      "check",
-      "strength",
-      "mobility",
-      "balance",
-      "flexibility",
-      "health"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "garmin fenix 9 pro official launch date pricing  shocking ne",
-    "tokens": [
-      "garmin",
-      "fenix",
-      "official",
-      "launch",
-      "date",
-      "pricing",
-      "shocking",
-      "news",
-      "spotify",
-      "down",
-      "doi2fsynsh"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "ian mullane and alistair brownlee to keynote the 2026 hfa eu",
-    "tokens": [
-      "mullane",
-      "alistair",
-      "brownlee",
-      "keynote",
-      "2026",
-      "european",
-      "congress"
-    ]
-  },
-  {
-    "date": "2026-08-10",
-    "key": "how a simple request for ai to book a gym class exposed a ma",
-    "tokens": [
-      "simple",
-      "request",
-      "book",
-      "class",
-      "exposed",
-      "major",
-      "threat"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "these are the uks most fitnessobsessed cities",
-    "tokens": [
-      "these",
-      "most",
-      "obsessed",
-      "cities"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "slimfast invests 5m as brand expands into wellness",
-    "tokens": [
-      "slimfast",
-      "invests",
-      "brand",
-      "expands"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "gesundheitsprogramme einweisung am 10092026",
-    "tokens": [
-      "gesundheitsprogramme",
-      "einweisung",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "image studios launches beauty services acquisition platform ",
-    "tokens": [
-      "image",
-      "studios",
-      "launches",
-      "beauty",
-      "services",
-      "acquisition",
-      "platform",
-      "starting",
-      "clean",
-      "dirty",
-      "face"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "fitness coach reveals why his 3day split beats most 5day pro",
-    "tokens": [
-      "coach",
-      "reveals",
-      "split",
-      "beats",
-      "most",
-      "programs",
-      "secret",
-      "training",
-      "every",
-      "muscle",
-      "twice",
-      "week"
-    ]
-  },
-  {
-    "date": "2026-08-11",
-    "key": "ouras new ring 5 is smaller and lighter  and adds an ai heal",
-    "tokens": [
-      "oura",
-      "ring",
-      "smaller",
-      "lighter",
-      "adds",
-      "health",
-      "coach"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "key": "raymond james maintains planet fitnessplntus with buy rating",
-    "tokens": [
-      "raymond",
-      "james",
-      "maintains",
-      "planet",
-      "plnt",
-      "rating",
-      "raises",
-      "target",
-      "price"
-    ],
-    "entities": [
-      "Planet Fitness"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "key": "les mills names jason paris ceo as phillip mills moves to di",
-    "tokens": [
-      "mills",
-      "names",
-      "jason",
-      "paris",
-      "phillip",
-      "moves",
-      "director",
-      "role"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "key": "a study of 7752 members across three us health clubs found t",
-    "tokens": [
-      "study",
-      "members",
-      "across",
-      "three",
-      "health",
-      "clubs",
-      "found",
-      "people",
-      "flat",
-      "monthly",
-      "contracts",
-      "paid",
-      "visit",
-      "average",
-      "when",
-      "pass",
-      "same",
-      "cost",
-      "only",
-      "forgo",
-      "about",
-      "savings",
-      "their",
-      "membership"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "key": "ai agent hacks gym to get its owner spot in pilates class",
-    "tokens": [
-      "agent",
-      "hacks",
-      "owner",
-      "spot",
-      "pilates",
-      "class"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "key": "neurodivergenz verstehen",
-    "tokens": [
-      "neurodivergenz",
-      "verstehen"
-    ]
-  },
-  {
-    "date": "2026-08-12",
-    "key": "hims  hers posts 753m in q2 revenue as it preps for push int",
-    "tokens": [
-      "hims",
-      "hers",
-      "posts",
-      "753m",
-      "revenue",
-      "preps",
-      "push",
-      "peptide",
-      "market"
-    ],
-    "entities": [
-      "Hims"
-    ]
-  },
-  {
     "date": "2026-08-13",
     "key": "reebok signs on as official partner for xenom london",
     "tokens": [
@@ -1364,6 +1097,249 @@
       "what",
       "comes",
       "next"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "one in two studios isn8217t profitable it8217s not a marketi",
+    "tokens": [
+      "studios",
+      "8217",
+      "profitable",
+      "marketing",
+      "problem",
+      "math"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "semcap beauty  wellness leads funding round for healf",
+    "tokens": [
+      "semcap",
+      "beauty",
+      "leads",
+      "funding",
+      "round",
+      "healf"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "huawei watch d3 price specs and all three colors of this wea",
+    "tokens": [
+      "huawei",
+      "watch",
+      "price",
+      "specs",
+      "three",
+      "colors",
+      "wearable",
+      "blood",
+      "pressure",
+      "monitor",
+      "leaked"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "londons hitai acquires ycbacked fitness gaming studio quell ",
+    "tokens": [
+      "london",
+      "hitai",
+      "acquires",
+      "backed",
+      "gaming",
+      "studio",
+      "quell",
+      "boost",
+      "sports",
+      "motion",
+      "tracking",
+      "platform"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "see inside the new familyfriendly community gym housed in fo",
+    "tokens": [
+      "inside",
+      "family",
+      "friendly",
+      "community",
+      "housed",
+      "former",
+      "barn"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "key": "inside the marketing powering whoops pivotal next act",
+    "tokens": [
+      "inside",
+      "marketing",
+      "powering",
+      "whoop",
+      "pivotal",
+      "next"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "nestle to divest mainstream supplements business for 1 billi",
+    "tokens": [
+      "nestle",
+      "divest",
+      "mainstream",
+      "supplements",
+      "business",
+      "billion"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "phil lowe getting jacked with 22000 gym membership",
+    "tokens": [
+      "phil",
+      "lowe",
+      "getting",
+      "jacked",
+      "membership"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "oura ring 4 launches in india  price specifications and wher",
+    "tokens": [
+      "oura",
+      "ring",
+      "launches",
+      "india",
+      "price",
+      "specifications",
+      "where"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "enhance raises 182m to take gym training software into the u",
+    "tokens": [
+      "enhance",
+      "raises",
+      "take",
+      "training",
+      "software"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "dsg consumer partners acquires singapore wellness brand bbac",
+    "tokens": [
+      "consumer",
+      "partners",
+      "acquires",
+      "singapore",
+      "brand",
+      "bback"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "key": "fitness tracker mi smart band mi band global version price x",
+    "tokens": [
+      "tracker",
+      "smart",
+      "band",
+      "global",
+      "version",
+      "price",
+      "xiaomi",
+      "review",
+      "budget"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "key": "wir begren unser neues frdermitglied",
+    "tokens": [
+      "begr",
+      "unser",
+      "neues",
+      "rdermitglied"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "key": "are group classes the bulk of revenue it might be time to re",
+    "tokens": [
+      "group",
+      "classes",
+      "bulk",
+      "revenue",
+      "might",
+      "time",
+      "rethink",
+      "business",
+      "model"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "key": "gymnation turns out the lights with dans le noir class in th",
+    "tokens": [
+      "gymnation",
+      "turns",
+      "lights",
+      "dans",
+      "noir",
+      "class",
+      "dark"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "key": "cbdmds acquisition of supplement legacy brand twinlab create",
+    "tokens": [
+      "cbdmd",
+      "acquisition",
+      "supplement",
+      "legacy",
+      "brand",
+      "twinlab",
+      "creates",
+      "unique",
+      "synergy"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "key": "garmin fenix 9 series launches with a 999 starting price",
+    "tokens": [
+      "garmin",
+      "fenix",
+      "series",
+      "launches",
+      "starting",
+      "price"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "key": "informa buys into 68t wellness economy with global wellness ",
+    "tokens": [
+      "informa",
+      "buys",
+      "economy",
+      "global",
+      "deal"
     ]
   }
 ]
