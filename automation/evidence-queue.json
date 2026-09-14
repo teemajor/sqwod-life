@@ -16,11 +16,11 @@
     { "topic": "Sleep & athletic performance — the highest-leverage lever", "slug": "sleep-performance-evidence-coach-playbook", "pillar": "signal", "conversion": "list-growth", "status": "drafted", "date": "2026-08-10" },
     { "topic": "Vitamin D — who actually needs to supplement", "slug": "vitamin-d-evidence-coach-playbook", "pillar": "signal", "conversion": "list-growth", "status": "drafted", "date": "2026-08-17" },
     { "topic": "Omega-3 (fish oil) — joints, recovery, and dose", "slug": "omega-3-evidence-coach-playbook", "pillar": "signal", "conversion": "verified", "status": "drafted", "date": "2026-08-24" },
-    { "topic": "BCAAs — worth it if you already eat enough protein?", "slug": "bcaa-evidence-coach-playbook", "pillar": "move", "conversion": "products", "status": "drafted", "date": "2026-08-31" }
+    { "topic": "BCAAs — worth it if you already eat enough protein?", "slug": "bcaa-evidence-coach-playbook", "pillar": "move", "conversion": "products", "status": "drafted", "date": "2026-08-31" },
+    { "topic": "Beta-alanine — the tingling supplement, does it work?", "slug": "beta-alanine-evidence-coach-playbook", "pillar": "move", "conversion": "products", "status": "drafted", "date": "2026-09-07" },
+    { "topic": "Creatine vs. protein vs. everything else — a supplement triage for coaches", "slug": "supplement-triage-evidence-coach-playbook", "pillar": "move", "conversion": "verified", "status": "drafted", "date": "2026-09-14" }
   ],
   "queue": [
-    { "topic": "Beta-alanine — the tingling supplement, does it work?", "pillar": "move", "conversion": "products", "angle": "method/supplement; buffering, the rep ranges it helps, dosing", "status": "pending" },
-    { "topic": "Creatine vs. protein vs. everything else — a supplement triage for coaches", "pillar": "move", "conversion": "verified", "angle": "meta piece; rank the supplement shelf by evidence grade so coaches can say no faster", "status": "pending" },
     { "topic": "Training through perimenopause & menopause — what the evidence supports", "pillar": "move", "conversion": "pods", "angle": "women's health; strength, bone, protein needs and recovery; where research is thin and where it's solid", "status": "pending" },
     { "topic": "Training with the menstrual cycle — periodisation claims vs. the actual data", "pillar": "move", "conversion": "pods", "angle": "women's health; cycle-based programming is everywhere in apps — grade what the evidence actually supports and where it's thin", "status": "pending" },
     { "topic": "Blood-flow restriction training — who it's really for", "pillar": "move", "conversion": "products", "angle": "method; hypertrophy at low loads, rehab use, safety and cuff-pressure basics, scope-of-practice limits for coaches", "status": "pending" },

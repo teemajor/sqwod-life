@@ -15,7 +15,7 @@ updatedAt: 2026-07-24
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-# DTC only (drinkag1.com/de-eu), ships DE. NOT on Amazon. Evidence-critical review: NSF Certified for Sport is real, but proprietary blend + thin INDEPENDENT evidence + high price. Trustpilot exact score UNVERIFIED.
+# Link = DTC drinkag1.com (Impact 23569, 15%, EUR, ships DE) — verified tracking 2026-09-11. ALSO on amazon.de now (B0FDD89ZTZ, ~EUR 107, sold by AG1 EU), but Impact's AG1 Amazon Seller programme (56343, 20%) resolves to amazon.COM only, so it is unusable for DACH readers. Keep the DTC link. Evidence-critical review: NSF Certified for Sport is real, but proprietary blend + thin INDEPENDENT evidence + high price. Trustpilot exact score UNVERIFIED.
 verdict: "A well-made, exhaustively tested convenience greens — but a premium price, undisclosed blend doses and thin independent evidence make it hard to justify over a solid diet."
 sqwodScore: 66
 confidence: Low

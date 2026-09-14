@@ -15,7 +15,7 @@ updatedAt: 2026-07-24
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-# Nur DTC (drinkag1.com/de-eu), liefert DE. NICHT auf Amazon. Evidenzkritisch: NSF-Sport-Zertifikat real, aber Proprietary Blend + dünne UNABHÄNGIGE Evidenz + hoher Preis. Trustpilot-Score UNVERIFIED.
+# Link = DTC drinkag1.com (Impact 23569, 15%, EUR, liefert DE) — Tracking geprueft 2026-09-11. Inzwischen AUCH auf amazon.de (B0FDD89ZTZ, ca. EUR 107, Verkauf durch AG1 EU), aber Impacts AG1-Amazon-Seller-Programm (56343, 20%) fuehrt nur auf amazon.COM und ist damit fuer DACH-Leser unbrauchbar. DTC-Link beibehalten. Evidenzkritisch: NSF-Sport-Zertifikat real, aber Proprietary Blend + dünne UNABHÄNGIGE Evidenz + hoher Preis. Trustpilot-Score UNVERIFIED.
 verdict: "Ein gut gemachtes, umfassend getestetes Convenience-Greens — aber Premium-Preis, versteckte Blend-Dosen und dünne unabhängige Evidenz machen es gegenüber guter Ernährung schwer zu rechtfertigen."
 sqwodScore: 66
 confidence: Low

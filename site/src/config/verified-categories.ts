@@ -11,6 +11,10 @@
 //   * Amazon  plain amazon.de /dp/<ASIN> URL with ?tag=sqwod-21
 //   Only brands with a LIVE, accepted program get a tracking link. A declined or pending
 //   program keeps its plain brand URL — see project memory ref-affiliate-programs.
+// AMAZON TAG GAP — TESTED 2026-09-11, mostly NOT worth closing. Shoe ASINs are variant-level
+//   (one colour, one size); sports-nutrition buy-boxes are reseller-won; flavour ranges split
+//   per ASIN; some picks aren't on amazon.de at all. Leave these on the brand URL and pursue a
+//   brand programme instead. Details: project memory ref-amazon-shoe-asins.
 // LINK-INTEGRITY POLICY (2026-07-23) — every Amazon `url` MUST be verified before wiring:
 //   1. CONDITION = NEW. Never a "Renewed"/"Refurbished"/"Generalüberholt" ASIN.
 //   2. SELLER = Amazon or the brand's own store — NOT a 3rd-party marketplace reseller.
