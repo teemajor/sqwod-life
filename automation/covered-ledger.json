@@ -1,93 +1,5 @@
 [
   {
-    "date": "2026-08-21",
-    "key": "crosscourt raises 2m to turn basketball into the next big bo",
-    "tokens": [
-      "crosscourt",
-      "raises",
-      "turn",
-      "basketball",
-      "next",
-      "boutique",
-      "category"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "indias rousing 148 billion coaching industry story gets vidy",
-    "tokens": [
-      "india",
-      "rousing",
-      "billion",
-      "coaching",
-      "story",
-      "gets",
-      "vidyapeeth",
-      "partner"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "thurston county celebrates community organizations during na",
-    "tokens": [
-      "thurston",
-      "county",
-      "celebrates",
-      "community",
-      "organizations",
-      "during",
-      "national",
-      "recovery",
-      "month"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "the google pixel watch 5 is a more refined version of an and",
-    "tokens": [
-      "google",
-      "pixel",
-      "watch",
-      "refined",
-      "version",
-      "android",
-      "wearable",
-      "favourite",
-      "only",
-      "smallest",
-      "margin"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "boutique fitness studio torque opens in north platte",
-    "tokens": [
-      "boutique",
-      "studio",
-      "torque",
-      "opens",
-      "north",
-      "platte"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "featurepacked garmin vvoactive 5 drops to a bargain price wi",
-    "tokens": [
-      "feature",
-      "packed",
-      "garmin",
-      "voactive",
-      "drops",
-      "bargain",
-      "price",
-      "discount"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
     "date": "2026-08-24",
     "key": "what your churn rate is telling you",
     "tokens": [
@@ -1303,6 +1215,102 @@
       "gyms",
       "toward",
       "stores"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "exclusive switzerlands aeon acquires aware health as total s",
+    "tokens": [
+      "exclusive",
+      "switzerland",
+      "aeon",
+      "acquires",
+      "aware",
+      "health",
+      "total",
+      "seed",
+      "funding",
+      "surpasses",
+      "million"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "fitness chain with 23m revenue to shut down all singapore ou",
+    "tokens": [
+      "chain",
+      "revenue",
+      "shut",
+      "down",
+      "singapore",
+      "outlets"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "jetset pilates leans into strength training with new class f",
+    "tokens": [
+      "jetset",
+      "pilates",
+      "leans",
+      "strength",
+      "training",
+      "class",
+      "formats"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "i wore garmins cirqa fitness band 247 for 4 weeks to see how",
+    "tokens": [
+      "wore",
+      "garmin",
+      "cirqa",
+      "band",
+      "weeks",
+      "stacks",
+      "other",
+      "screenless",
+      "wearables"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "dirk van vlaanderen  hyrox padel and ice baths how virgin ac",
+    "tokens": [
+      "dirk",
+      "vlaanderen",
+      "hyrox",
+      "padel",
+      "baths",
+      "virgin",
+      "active",
+      "tackling",
+      "churn",
+      "problem"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "patrick and brittany mahomes 30 million fitness deal with 10",
+    "tokens": [
+      "patrick",
+      "brittany",
+      "mahomes",
+      "million",
+      "deal",
+      "billion",
+      "brand",
+      "marks",
+      "latest",
+      "step",
+      "growin"
     ]
   }
 ]
