@@ -20,7 +20,6 @@ import { loadAll } from './sources.mjs';
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, '..', '..');
 const OUT = path.join(HERE, 'out');
-const LEDGER = path.join(HERE, 'ledger.json');
 
 const args = process.argv.slice(2);
 const flag = (n) => {
@@ -28,6 +27,12 @@ const flag = (n) => {
   return i === -1 ? undefined : args[i + 1];
 };
 const dry = args.includes('--dry');
+
+// The scheduled run happens in a throwaway container that can clone but not
+// push, so the repo copy of the ledger would reset to empty every week and the
+// run would re-ship the same four units forever. --ledger points at a copy
+// fetched from Drive instead; that copy is the one that persists.
+const LEDGER = flag('ledger') ? path.resolve(flag('ledger')) : path.join(HERE, 'ledger.json');
 
 const cfg = JSON.parse(fs.readFileSync(path.join(HERE, 'config.json'), 'utf8'));
 

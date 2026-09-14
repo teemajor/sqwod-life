@@ -11,7 +11,15 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { splitFrontmatter, scalar, num, bool, nested, list, flowMaps } from './lib/frontmatter.mjs';
+import { splitFrontmatter, scalar, num, bool, block, nested, list, flowMaps } from './lib/frontmatter.mjs';
+
+// A nested mapping block, shifted left so the top-level helpers can read it.
+const dedent = (s) => {
+  const lines = String(s || '').split(/\r?\n/).filter((l) => l.trim());
+  if (!lines.length) return '';
+  const pad = Math.min(...lines.map((l) => l.match(/^\s*/)[0].length));
+  return lines.map((l) => l.slice(pad)).join('\n');
+};
 
 const CONTENT = (root) => path.join(root, 'site', 'src', 'content');
 
@@ -61,6 +69,11 @@ export function loadVerified(root, { lang = 'en', site }) {
         score: { value: Math.round(score), confidence: scalar(fm, 'confidence') || 'Medium' },
         price: price ? `${currency === 'EUR' ? '€' : currency + ' '}${price}${cadence}` : null,
         testStatus: scalar(fm, 'testStatus') || 'desk-researched',
+        criteria: flowMaps(dedent(block(fm, 'assessment')), 'criteria')
+          .map((c) => ({ name: c.name, score: c.score }))
+          .filter((c) => c.name)
+          .sort((a, b) => parseFloat(b.score) - parseFloat(a.score))
+          .slice(0, 3),
         pros: list(fm, 'pros').slice(0, 3),
         cons: list(fm, 'cons').slice(0, 2),
         affiliate: bool(fm, 'affiliate') !== false,
@@ -116,6 +129,15 @@ export function loadDaily(root, { lang = 'en', site, days = 10 }) {
         subtitle: slug,
         headline: firstSentence(scalar(fm, 'intro')),
         stat: { value: number, label, note: nested(fm, 'stat', 'body') || null },
+        // The summary is written as three comma-separated beats — exactly the
+        // three lines the Daily board wants. Fall back to one line if not.
+        // Beats are separated by ", " or " & ". A comma between digits is a
+        // thousands separator ("Japan's 1,000-gym bet"), not a beat boundary.
+        lines: (scalar(fm, 'summary') || '')
+          .split(/,\s+(?!\d)|\s+&\s+/)
+          .map((s) => s.replace(/^\s*(and|&)\s+/i, '').trim())
+          .filter(Boolean)
+          .slice(0, 3),
         doThis: scalar(fm, 'doThis') || null,
         date: iso(scalar(fm, 'date') || slug),
         url: `${site}/${lang}/daily/${slug}`,

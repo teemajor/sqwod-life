@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" />
+<style>
+html,body{margin:0;padding:0;background:#18181B}
+a{color:#C6F04A;text-decoration:none}
+a:hover{color:#DCF97E}
+</style>
+</helmet>
+
+<div style="background:#18181B;padding:96px 96px 160px;font-family:Geist,system-ui,sans-serif;letter-spacing:-0.005em;color:#FAFAFA;display:flex;flex-direction:column;gap:150px;width:max-content">
+
+<div style="display:flex;flex-direction:column;gap:24px;max-width:1400px">
+<div style="display:flex;align-items:baseline;gap:16px"><span style="font-size:40px;font-weight:600;letter-spacing:-0.03em">sqwod<span style="color:#C6F04A">.life</span></span><span style="font-size:24px;text-transform:uppercase;letter-spacing:0.24em;color:#8A8A92">social set · en</span></div>
+<div style="font-size:58px;font-weight:600;letter-spacing:-0.03em;line-height:1.04">Your edge in the business of fitness</div>
+<div style="font-size:26px;line-height:1.5;color:#A1A1AA;max-width:1000px;text-wrap:pretty">Six units for a publication rather than a place. There is no article photography, so every board is type and data — the Sqwod Score, the review count, the headline itself. Same Geist family as Sqwod Pod so the two read as siblings, with acid #C6F04A in place of the terracotta so nobody confuses the media brand for the gym.</div>
+<div style="font-size:26px;line-height:1.5;color:#A1A1AA;max-width:1000px;text-wrap:pretty">Each unit is a 4:5 post (1080×1350), a 9:16 story (1080×1920) and a caption pair. 4:5 runs natively on Instagram and LinkedIn, so nothing on the image names a platform: Instagram carries the URL in bio and on the story sticker, LinkedIn carries it in the post where it is clickable. Unit 06 is a refillable template for the weekday brief.</div>
+<div style="display:flex;gap:56px;font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92;border-top:2px solid #26262A;padding-top:24px;flex-wrap:wrap">
+<span>DESTINATION SQWOD.LIFE/EN</span><span>PLATFORMS INSTAGRAM · LINKEDIN</span><span>TYPE GEIST · GEIST MONO</span><span>ACCENT #C6F04A</span>
+</div>
+</div>
+
+<section id="l01" data-screen-label="L01 Verified hub" style="display:flex;flex-direction:column;gap:30px">
+<sc-if value="{{ showLabels }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#8A8A92">01</span><span style="font-size:34px;font-weight:600;letter-spacing:-0.02em">Sqwod Verified · the hub</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92;letter-spacing:0.08em">EVERGREEN · SCALE PROOF</span></div></sc-if>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="l01-post" style="width:1080px;height:1350px;background:#0A0A0B;padding:64px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;flex:none">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:32px;font-weight:600;letter-spacing:-0.02em;color:#F4EFE6">sqwod<span style="color:#C6F04A">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.16em;color:#8A8A92">SQWOD VERIFIED</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:34px">
+<div style="font-size:78px;font-weight:600;letter-spacing:-0.038em;line-height:1.02;color:#F4EFE6;text-wrap:pretty">Buyer's guides you can trust</div>
+<div style="display:flex;gap:70px;align-items:baseline">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;font-size:140px;line-height:0.84;letter-spacing:-0.05em;color:#C6F04A">58</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.14em;color:#8A8A92">REVIEWED</span></div>
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;font-size:140px;line-height:0.84;letter-spacing:-0.05em;color:#F4EFE6">8</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.14em;color:#8A8A92">CATEGORIES</span></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;font-family:'Geist Mono',ui-monospace,monospace;font-size:25px">
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A"><span style="color:#8A8A92">WEARABLES &amp; TRACKERS</span><span style="color:#F4EFE6">15</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A"><span style="color:#8A8A92">SUPPLEMENTS &amp; NUTRITION</span><span style="color:#F4EFE6">12</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A"><span style="color:#8A8A92">APPAREL &amp; FOOTWEAR</span><span style="color:#F4EFE6">12</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A;border-bottom:2px solid #26262A"><span style="color:#8A8A92">RECOVERY · SLEEP · CONNECTED · APPS · STUDIO</span><span style="color:#F4EFE6">19</span></div>
+</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:30px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:16px;padding:22px 38px;font-size:29px;font-weight:600">See the guides</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92;text-align:right;line-height:1.4;max-width:420px">AFFILIATE LINKS ARE LABELLED.<br />SCORES ARE SET BY THE METHODOLOGY.</span>
+</div>
+</div>
+
+<div id="l01-story" style="width:1080px;height:1920px;background:#0A0A0B;padding:64px 64px 150px;box-sizing:border-box;display:flex;flex-direction:column;flex:none">
+<div style="flex:none;display:flex;gap:12px"><span style="flex:1;height:8px;border-radius:4px;background:#C6F04A"></span><span style="flex:1;height:8px;border-radius:4px;background:#2A2A2E"></span><span style="flex:1;height:8px;border-radius:4px;background:#2A2A2E"></span></div>
+<div style="flex:none;padding-top:44px;display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:30px;font-weight:600;letter-spacing:-0.02em;color:#F4EFE6">sqwod<span style="color:#C6F04A">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.16em;color:#8A8A92">VERIFIED</span>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:46px">
+<div style="font-family:'Geist Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums;font-size:300px;line-height:0.82;letter-spacing:-0.055em;color:#C6F04A">58</div>
+<div style="font-size:64px;font-weight:600;letter-spacing:-0.032em;line-height:1.06;color:#F4EFE6;text-wrap:pretty">products reviewed against one published methodology.</div>
+<div style="font-size:32px;line-height:1.4;color:#A1A1AA;text-wrap:pretty">Wearables, recovery, sleep, supplements, connected fitness, apparel, apps and studio tools. Eight categories, one standard.</div>
+</div>
+<div style="flex:none;display:flex;flex-direction:column;gap:18px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:999px;padding:30px;font-size:34px;font-weight:600;text-align:center">See the guides</span>
+<sc-if value="{{ showStoryUrl }}" hint-placeholder-val="{{ true }}"><span style="display:block;font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92;text-align:center;letter-spacing:0.04em">SQWOD.LIFE/EN/VERIFIED</span></sc-if>
+</div>
+</div>
+
+<sc-if value="{{ showCaptions }}" hint-placeholder-val="{{ true }}"><div style="width:900px;flex:none;border:2px solid #26262A;border-radius:24px;background:#111113;padding:44px;display:flex;flex-direction:column;gap:32px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · INSTAGRAM</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">58 products reviewed. 8 categories. One methodology, published before the scores.<br /><br />Wearables, recovery tools, sleep tech, supplements, connected fitness, apparel, training apps, studio software. Every reviewed product carries a Sqwod Score, and affiliate links are labelled where they exist.<br /><br />Link in bio.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #26262A;padding-top:32px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · LINKEDIN</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">Most gear coverage in fitness is a commission arrangement with a headline on top.<br /><br />Sqwod Verified works the other way round: the ranking methodology is published first, the score follows from it, and affiliate links are labelled wherever they appear. Commission does not move a Sqwod Score. That is a constraint we wrote down so it can be checked.<br /><br />58 products across eight categories so far — wearables, recovery, sleep, supplements, connected fitness, apparel, training apps and studio tools. Useful if you recommend kit to clients and would rather not stake your reputation on someone else's affiliate feed.<br /><br />https://sqwod.life/en/verified</div>
+<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92"><span>#fitnessindustry</span><span>#wearabletech</span><span>#personaltraining</span></div>
+</div>
+<div style="border-top:2px solid #26262A;padding-top:28px;display:flex;flex-direction:column;gap:12px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">LINK · IG BIO + STORY STICKER · LINKEDIN IN POST</span>
+<a href="https://sqwod.life/en/verified" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;line-height:1.5;word-break:break-all">sqwod.life/en/verified</a>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92;line-height:1.6;padding-top:8px">NOTE · REVIEW AND CATEGORY COUNTS ARE LIVE FIGURES. RE-CHECK BEFORE EACH RUN.</span>
+</div>
+</div></sc-if>
+
+</div>
+</section>
+
+<section id="l02" data-screen-label="L02 Wearables guide" style="display:flex;flex-direction:column;gap:30px">
+<sc-if value="{{ showLabels }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#8A8A92">02</span><span style="font-size:34px;font-weight:600;letter-spacing:-0.02em">Best wearables 2026</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92;letter-spacing:0.08em">SEARCH INTENT · BIGGEST CATEGORY</span></div></sc-if>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="l02-post" style="width:1080px;height:1350px;background:#F4EFE6;color:#0A0A0B;padding:64px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;flex:none">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:32px;font-weight:600;letter-spacing:-0.02em">sqwod<span style="color:#6B8A16">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.16em;color:#52525B">BUYER'S GUIDE 2026</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:26px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.14em;color:#6B8A16">WEARABLES &amp; TRACKERS</span>
+<div style="font-size:76px;font-weight:600;letter-spacing:-0.038em;line-height:1.02;text-wrap:pretty">Rings, watches and bands that turn training into data you can coach with</div>
+</div>
+<div style="display:flex;flex-direction:column;font-family:'Geist Mono',ui-monospace,monospace;font-size:27px">
+<div style="display:flex;justify-content:space-between;gap:30px;padding:22px 0;border-top:2px solid rgba(10,10,11,0.16)"><span style="color:#52525B">REVIEWED</span><span>15</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:22px 0;border-top:2px solid rgba(10,10,11,0.16)"><span style="color:#52525B">PICKS</span><span>15</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:22px 0;border-top:2px solid rgba(10,10,11,0.16);border-bottom:2px solid rgba(10,10,11,0.16)"><span style="color:#52525B">TESTED</span><span>Oura · Whoop · Apple · Garmin</span></div>
+</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:30px">
+<span style="background:#0A0A0B;color:#F4EFE6;border-radius:16px;padding:22px 38px;font-size:29px;font-weight:500">See the guide</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#71717A;text-align:right;line-height:1.4">SQWOD SCORE PER PRODUCT<br />AFFILIATE LINKS LABELLED</span>
+</div>
+</div>
+
+<div id="l02-story" style="width:1080px;height:1920px;background:#F4EFE6;color:#0A0A0B;padding:64px 64px 150px;box-sizing:border-box;display:flex;flex-direction:column;flex:none">
+<div style="flex:none;display:flex;gap:12px"><span style="flex:1;height:8px;border-radius:4px;background:rgba(10,10,11,0.2)"></span><span style="flex:1;height:8px;border-radius:4px;background:#0A0A0B"></span><span style="flex:1;height:8px;border-radius:4px;background:rgba(10,10,11,0.2)"></span></div>
+<div style="flex:none;padding-top:44px;display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:30px;font-weight:600;letter-spacing:-0.02em">sqwod<span style="color:#6B8A16">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.16em;color:#52525B">VERIFIED</span>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.14em;color:#6B8A16">15 REVIEWED · WEARABLES 2026</span>
+<div style="font-size:88px;font-weight:600;letter-spacing:-0.04em;line-height:1.0;text-wrap:pretty">Which ring, watch or band is actually worth coaching from</div>
+<div style="display:flex;flex-direction:column;font-family:'Geist Mono',ui-monospace,monospace;font-size:30px;padding-top:10px">
+<div style="padding:24px 0;border-top:2px solid rgba(10,10,11,0.16)">OURA</div>
+<div style="padding:24px 0;border-top:2px solid rgba(10,10,11,0.16)">WHOOP</div>
+<div style="padding:24px 0;border-top:2px solid rgba(10,10,11,0.16)">APPLE</div>
+<div style="padding:24px 0;border-top:2px solid rgba(10,10,11,0.16);border-bottom:2px solid rgba(10,10,11,0.16)">GARMIN</div>
+</div>
+</div>
+<div style="flex:none;display:flex;flex-direction:column;gap:18px">
+<span style="background:#0A0A0B;color:#F4EFE6;border-radius:999px;padding:30px;font-size:34px;font-weight:500;text-align:center">See the guide</span>
+<sc-if value="{{ showStoryUrl }}" hint-placeholder-val="{{ true }}"><span style="display:block;font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#52525B;text-align:center;letter-spacing:0.04em">SQWOD.LIFE/EN/BEST/WEARABLES</span></sc-if>
+</div>
+</div>
+
+<sc-if value="{{ showCaptions }}" hint-placeholder-val="{{ true }}"><div style="width:900px;flex:none;border:2px solid #26262A;border-radius:24px;background:#111113;padding:44px;display:flex;flex-direction:column;gap:32px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · INSTAGRAM</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">Fifteen wearables reviewed, and the honest answer is that most of them measure the same things.<br /><br />What separates them is what you can actually do with the data: whether it survives a heavy training block, whether recovery scores hold up, whether the subscription is worth it. Oura, Whoop, Apple and Garmin all in.<br /><br />Full guide, link in bio.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #26262A;padding-top:32px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · LINKEDIN</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">If you coach, you get asked which tracker to buy roughly once a week, and the honest answer has changed.<br /><br />We reviewed fifteen — Oura, Whoop, Apple, Garmin and the rest — against a published methodology rather than a spec sheet. The differences that matter are not sensor counts. They are whether the recovery score survives a real training block, what the subscription costs over two years, and whether the data leaves the app in a form you can coach from.<br /><br />Guide is free, scores are set by the methodology, and affiliate links are labelled.<br /><br />https://sqwod.life/en/best/wearables/</div>
+<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92"><span>#wearabletech</span><span>#coaching</span><span>#fitnessindustry</span></div>
+</div>
+<div style="border-top:2px solid #26262A;padding-top:28px;display:flex;flex-direction:column;gap:12px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">LINK · IG BIO + STORY STICKER · LINKEDIN IN POST</span>
+<a href="https://sqwod.life/en/best/wearables/" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;line-height:1.5;word-break:break-all">sqwod.life/en/best/wearables/</a>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92;line-height:1.6;padding-top:8px">NOTE · AFFILIATE DISCLOSURE BELONGS IN THE FIRST COMMENT ON BOTH PLATFORMS.</span>
+</div>
+</div></sc-if>
+
+</div>
+</section>
+
+<section id="l03" data-screen-label="L03 Methodology" style="display:flex;flex-direction:column;gap:30px">
+<sc-if value="{{ showLabels }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#8A8A92">03</span><span style="font-size:34px;font-weight:600;letter-spacing:-0.02em">The Sqwod Score</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92;letter-spacing:0.08em">TRUST · CATEGORY DIFFERENTIATOR</span></div></sc-if>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="l03-post" style="width:1080px;height:1350px;background:#0A0A0B;padding:64px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;flex:none">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:32px;font-weight:600;letter-spacing:-0.02em;color:#F4EFE6">sqwod<span style="color:#C6F04A">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.16em;color:#8A8A92">HOW WE RANK</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:38px">
+<div style="font-size:86px;font-weight:600;letter-spacing:-0.042em;line-height:1.0;color:#F4EFE6;text-wrap:pretty">Commission does not move a score</div>
+<div style="border-left:6px solid #C6F04A;padding-left:38px;font-size:34px;line-height:1.4;color:#D4D4D8;text-wrap:pretty">Affiliate links are labelled. We may earn a commission from them. It never affects the Sqwod Score — scores are set by the methodology, not commission.</div>
+</div>
+<div style="display:flex;flex-direction:column;font-family:'Geist Mono',ui-monospace,monospace;font-size:25px">
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A"><span style="color:#8A8A92">METHODOLOGY</span><span style="color:#F4EFE6">Published</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A"><span style="color:#8A8A92">DISCLOSURE</span><span style="color:#F4EFE6">Published</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A;border-bottom:2px solid #26262A"><span style="color:#8A8A92">CORRECTIONS</span><span style="color:#F4EFE6">Published</span></div>
+</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:30px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:16px;padding:22px 38px;font-size:29px;font-weight:600">Read how we rank</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">SQWOD VERIFIED</span>
+</div>
+</div>
+
+<div id="l03-story" style="width:1080px;height:1920px;background:#0A0A0B;padding:64px 64px 150px;box-sizing:border-box;display:flex;flex-direction:column;flex:none">
+<div style="flex:none;display:flex;gap:12px"><span style="flex:1;height:8px;border-radius:4px;background:#2A2A2E"></span><span style="flex:1;height:8px;border-radius:4px;background:#C6F04A"></span><span style="flex:1;height:8px;border-radius:4px;background:#2A2A2E"></span></div>
+<div style="flex:none;padding-top:44px;display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:30px;font-weight:600;letter-spacing:-0.02em;color:#F4EFE6">sqwod<span style="color:#C6F04A">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.16em;color:#8A8A92">HOW WE RANK</span>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:44px">
+<div style="font-size:104px;font-weight:600;letter-spacing:-0.044em;line-height:0.98;color:#F4EFE6;text-wrap:pretty">Truth wins</div>
+<div style="border-left:6px solid #C6F04A;padding-left:40px;font-size:40px;line-height:1.34;color:#D4D4D8;text-wrap:pretty">Affiliate links never affect the Sqwod Score. Scores are set by the methodology, not commission.</div>
+<div style="font-size:32px;line-height:1.4;color:#8A8A92;text-wrap:pretty">Methodology, disclosure and corrections are all published pages. Check them before you trust the number.</div>
+</div>
+<div style="flex:none;display:flex;flex-direction:column;gap:18px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:999px;padding:30px;font-size:34px;font-weight:600;text-align:center">Read how we rank</span>
+<sc-if value="{{ showStoryUrl }}" hint-placeholder-val="{{ true }}"><span style="display:block;font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92;text-align:center;letter-spacing:0.04em">SQWOD.LIFE/EN/VERIFIED/METHODOLOGY</span></sc-if>
+</div>
+</div>
+
+<sc-if value="{{ showCaptions }}" hint-placeholder-val="{{ true }}"><div style="width:900px;flex:none;border:2px solid #26262A;border-radius:24px;background:#111113;padding:44px;display:flex;flex-direction:column;gap:32px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · INSTAGRAM</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">Fair question to ask any review site: what happens to the score when the commission goes up?<br /><br />Ours is written down. Affiliate links are labelled, we may earn from them, and they never affect the Sqwod Score. The methodology, the disclosure and the corrections log are all published pages you can read before you trust a number.<br /><br />Link in bio.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #26262A;padding-top:32px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · LINKEDIN</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">The uncomfortable question for anyone publishing gear reviews: what happens to your ranking when a brand's commission rate goes up?<br /><br />If the answer is not written down somewhere a reader can check, it is not a policy. So ours is. Affiliate links are labelled, we may earn a commission from them, and commission does not move a Sqwod Score — scores come from the published methodology. Alongside it sit the disclosure page and a corrections log, because a review operation without a corrections page is telling you something.<br /><br />None of this is unusual in journalism. It is unusual in fitness.<br /><br />https://sqwod.life/en/verified/methodology</div>
+<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92"><span>#mediaethics</span><span>#fitnessindustry</span><span>#affiliatemarketing</span></div>
+</div>
+<div style="border-top:2px solid #26262A;padding-top:28px;display:flex;flex-direction:column;gap:12px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">LINK · IG BIO + STORY STICKER · LINKEDIN IN POST</span>
+<a href="https://sqwod.life/en/verified/methodology" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;line-height:1.5;word-break:break-all">sqwod.life/en/verified/methodology</a>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92;line-height:1.6;padding-top:8px">NOTE · QUOTED LINE IS VERBATIM FROM THE VERIFIED DISCLOSURE. DO NOT PARAPHRASE.</span>
+</div>
+</div></sc-if>
+
+</div>
+</section>
+
+<section id="l04" data-screen-label="L04 Build consolidation" style="display:flex;flex-direction:column;gap:30px">
+<sc-if value="{{ showLabels }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#8A8A92">04</span><span style="font-size:34px;font-weight:600;letter-spacing:-0.02em">Build · consolidation</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92;letter-spacing:0.08em">ARTICLE · OPERATORS</span></div></sc-if>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="l04-post" style="width:1080px;height:1350px;background:#0A0A0B;padding:64px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;flex:none">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:32px;font-weight:600;letter-spacing:-0.02em;color:#F4EFE6">sqwod<span style="color:#C6F04A">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.16em;color:#C6F04A">BUILD</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:32px">
+<div style="font-size:74px;font-weight:600;letter-spacing:-0.038em;line-height:1.03;color:#F4EFE6;text-wrap:pretty">Big money is reshaping fitness. Here's how to not get left behind.</div>
+<div style="font-size:31px;line-height:1.42;color:#A1A1AA;text-wrap:pretty">From SlimFast to Kirin, consolidation is accelerating — and independent operators who aren't paying attention are about to feel it.</div>
+</div>
+<div style="display:flex;flex-direction:column;font-family:'Geist Mono',ui-monospace,monospace;font-size:25px">
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A"><span style="color:#8A8A92">TOPIC</span><span style="color:#F4EFE6">Build</span></div>
+<div style="display:flex;justify-content:space-between;gap:30px;padding:20px 0;border-top:2px solid #26262A;border-bottom:2px solid #26262A"><span style="color:#8A8A92">FOR</span><span style="color:#F4EFE6">Coaches · founders · investors</span></div>
+</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:30px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:16px;padding:22px 38px;font-size:29px;font-weight:600">Read the analysis</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">SQWOD.LIFE</span>
+</div>
+</div>
+
+<div id="l04-story" style="width:1080px;height:1920px;background:#0A0A0B;padding:64px 64px 150px;box-sizing:border-box;display:flex;flex-direction:column;flex:none">
+<div style="flex:none;display:flex;gap:12px"><span style="flex:1;height:8px;border-radius:4px;background:#C6F04A"></span><span style="flex:1;height:8px;border-radius:4px;background:#2A2A2E"></span></div>
+<div style="flex:none;padding-top:44px;display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:30px;font-weight:600;letter-spacing:-0.02em;color:#F4EFE6">sqwod<span style="color:#C6F04A">.life</span></span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.16em;color:#C6F04A">BUILD</span>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:42px">
+<div style="font-size:92px;font-weight:600;letter-spacing:-0.042em;line-height:1.0;color:#F4EFE6;text-wrap:pretty">Big money is reshaping fitness</div>
+<div style="border-left:6px solid #C6F04A;padding-left:40px;font-size:36px;line-height:1.36;color:#D4D4D8;text-wrap:pretty">Consolidation is accelerating — and independent operators who aren't paying attention are about to feel it.</div>
+</div>
+<div style="flex:none;display:flex;flex-direction:column;gap:18px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:999px;padding:30px;font-size:34px;font-weight:600;text-align:center">Read the analysis</span>
+<sc-if value="{{ showStoryUrl }}" hint-placeholder-val="{{ true }}"><span style="display:block;font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92;text-align:center;letter-spacing:0.04em">SQWOD.LIFE/EN/ARTICLES/BUILD</span></sc-if>
+</div>
+</div>
+
+<sc-if value="{{ showCaptions }}" hint-placeholder-val="{{ true }}"><div style="width:900px;flex:none;border:2px solid #26262A;border-radius:24px;background:#111113;padding:44px;display:flex;flex-direction:column;gap:32px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · INSTAGRAM</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">SlimFast. Kirin. The names buying into fitness this year are not fitness names.<br /><br />Consolidation at that level does not stay in the boardroom — it changes supplier terms, ad costs and what your members expect for their money. The piece breaks down what is moving and what independents should do about it now rather than in eighteen months.<br /><br />Link in bio.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #26262A;padding-top:32px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · LINKEDIN</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">The most consequential deals in fitness this year were not made by fitness companies.<br /><br />From SlimFast to Kirin, capital is consolidating across supplements, recovery and equipment, and it is doing so faster than most independent operators are tracking. That shows up in unglamorous places first: supplier terms, acquisition costs, what a member thinks is normal to get for their money.<br /><br />New analysis on what is actually moving and where the leverage still sits for operators without a balance sheet to match.<br /><br />https://sqwod.life/en/analysis/big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811</div>
+<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92"><span>#fitnessindustry</span><span>#mergersandacquisitions</span><span>#gymowners</span></div>
+</div>
+<div style="border-top:2px solid #26262A;padding-top:28px;display:flex;flex-direction:column;gap:12px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">LINK · IG BIO + STORY STICKER · LINKEDIN IN POST</span>
+<a href="https://sqwod.life/en/analysis/big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;line-height:1.5;word-break:break-all">sqwod.life/en/analysis/big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811</a>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92;line-height:1.6;padding-top:8px">NOTE · HEADLINE AND STANDFIRST ARE VERBATIM FROM THE ARTICLE.</span>
+</div>
+</div></sc-if>
+
+</div>
+</section>
+
+<section id="l05" data-screen-label="L05 Signal revenue model" style="display:flex;flex-direction:column;gap:30px">
+<sc-if value="{{ showLabels }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#8A8A92">05</span><span style="font-size:34px;font-weight:600;letter-spacing:-0.02em">Signal · revenue model</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92;letter-spacing:0.08em">ARTICLE · SHARPEST HEADLINE</span></div></sc-if>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="l05-post" style="width:1080px;height:1350px;background:#C6F04A;color:#0A0A0B;padding:64px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between;flex:none">
+<div style="display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:32px;font-weight:600;letter-spacing:-0.02em">sqwod.life</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;letter-spacing:0.16em">SIGNAL</span>
+</div>
+<div style="display:flex;flex-direction:column;gap:32px">
+<div style="font-size:88px;font-weight:600;letter-spacing:-0.042em;line-height:0.99;text-wrap:pretty">Fitness Is Booming Everywhere Except Your Revenue Model</div>
+<div style="font-size:31px;line-height:1.42;color:rgba(10,10,11,0.72);text-wrap:pretty">Wellness money is moving fast, and most operators are watching from the sidelines.</div>
+</div>
+<div style="display:flex;align-items:center;justify-content:space-between;gap:30px;border-top:2px solid rgba(10,10,11,0.24);padding-top:34px">
+<span style="background:#0A0A0B;color:#C6F04A;border-radius:16px;padding:22px 38px;font-size:29px;font-weight:600">Read the signal</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:rgba(10,10,11,0.6)">MARKET DATA · TRENDS · POLICY</span>
+</div>
+</div>
+
+<div id="l05-story" style="width:1080px;height:1920px;background:#C6F04A;color:#0A0A0B;padding:64px 64px 150px;box-sizing:border-box;display:flex;flex-direction:column;flex:none">
+<div style="flex:none;display:flex;gap:12px"><span style="flex:1;height:8px;border-radius:4px;background:rgba(10,10,11,0.28)"></span><span style="flex:1;height:8px;border-radius:4px;background:#0A0A0B"></span></div>
+<div style="flex:none;padding-top:44px;display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-size:30px;font-weight:600;letter-spacing:-0.02em">sqwod.life</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.16em">SIGNAL</span>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:42px">
+<div style="font-size:100px;font-weight:600;letter-spacing:-0.044em;line-height:0.98;text-wrap:pretty">Booming everywhere except your revenue model</div>
+<div style="font-size:36px;line-height:1.36;color:rgba(10,10,11,0.74);text-wrap:pretty">Wellness money is moving fast. Most operators are watching from the sidelines.</div>
+</div>
+<div style="flex:none;display:flex;flex-direction:column;gap:18px">
+<span style="background:#0A0A0B;color:#C6F04A;border-radius:999px;padding:30px;font-size:34px;font-weight:600;text-align:center">Read the signal</span>
+<sc-if value="{{ showStoryUrl }}" hint-placeholder-val="{{ true }}"><span style="display:block;font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:rgba(10,10,11,0.62);text-align:center;letter-spacing:0.04em">SQWOD.LIFE/EN/ARTICLES/SIGNAL</span></sc-if>
+</div>
+</div>
+
+<sc-if value="{{ showCaptions }}" hint-placeholder-val="{{ true }}"><div style="width:900px;flex:none;border:2px solid #26262A;border-radius:24px;background:#111113;padding:44px;display:flex;flex-direction:column;gap:32px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · INSTAGRAM</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">Every headline says fitness is booming. Most operators cannot find it in their own numbers.<br /><br />Both things are true at once, and the gap between them is a revenue model problem rather than a demand problem. This week's signals — UK city rankings, P&amp;G's $3.8bn bet — all point the same way.<br /><br />Link in bio.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #26262A;padding-top:32px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · LINKEDIN</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">Two things are true at the same time: the wellness market is growing quickly, and a lot of operators cannot find that growth anywhere in their own P&amp;L.<br /><br />That gap is rarely a demand problem. It is a revenue model problem — where the money enters the business, how many times a member can spend, and who captures the value when a category gets hot. From UK city rankings to P&amp;G's $3.8bn bet, this week's signals converge on it.<br /><br />Worth reading if your top line is flat in a market everyone else is calling a boom.<br /><br />https://sqwod.life/en/analysis/fitness-is-booming-everywhere-except-your-revenue-model-0811</div>
+<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92"><span>#fitnessbusiness</span><span>#wellnessindustry</span><span>#revenuegrowth</span></div>
+</div>
+<div style="border-top:2px solid #26262A;padding-top:28px;display:flex;flex-direction:column;gap:12px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">LINK · IG BIO + STORY STICKER · LINKEDIN IN POST</span>
+<a href="https://sqwod.life/en/analysis/fitness-is-booming-everywhere-except-your-revenue-model-0811" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;line-height:1.5;word-break:break-all">sqwod.life/en/analysis/fitness-is-booming-everywhere-except-your-revenue-model-0811</a>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92;line-height:1.6;padding-top:8px">NOTE · HEADLINE IS VERBATIM, INCLUDING CAPITALISATION.</span>
+</div>
+</div></sc-if>
+
+</div>
+</section>
+
+<section id="l06" data-screen-label="L06 Daily template" style="display:flex;flex-direction:column;gap:30px">
+<sc-if value="{{ showLabels }}" hint-placeholder-val="{{ true }}"><div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#8A8A92">06</span><span style="font-size:34px;font-weight:600;letter-spacing:-0.02em">Sqwod Daily · refillable template</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92;letter-spacing:0.08em">EVERY WEEKDAY · SWAP THE THREE LINES</span></div></sc-if>
+<div style="font-size:26px;line-height:1.5;color:#A1A1AA;max-width:1100px;text-wrap:pretty">Filled with the 03 Sept brief as an example. To reuse it, change the date, the three story lines and the one thing to do. Everything else stays fixed, so the daily post is recognisable at thumbnail size.</div>
+<div style="display:flex;gap:64px;align-items:flex-start">
+
+<div id="l06-post" style="width:1080px;height:1350px;background:#111113;padding:0;box-sizing:border-box;display:flex;flex-direction:column;flex:none">
+<div style="flex:none;background:#C6F04A;color:#0A0A0B;padding:38px 64px;display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:28px;font-weight:500;letter-spacing:0.14em">SQWOD DAILY</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:28px;letter-spacing:0.06em">03 SEPT 2026</span>
+</div>
+<div style="flex:none;padding:56px 64px 0;display:flex;flex-direction:column;gap:18px">
+<div style="font-size:60px;font-weight:600;letter-spacing:-0.032em;line-height:1.06;color:#F4EFE6;text-wrap:pretty">The business of fitness, in five minutes</div>
+<div style="font-family:'Geist Mono',ui-monospace,monospace;font-size:25px;color:#8A8A92;letter-spacing:0.08em">MONEY MOVEMENT · THE LESSON · ONE THING TO DO</div>
+</div>
+<div style="flex:1;padding:48px 64px 0;display:flex;flex-direction:column;justify-content:center;gap:0">
+<div style="display:flex;gap:34px;padding:34px 0;border-top:2px solid #26262A"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#C6F04A;flex:none;width:52px">01</span><span style="font-size:38px;font-weight:500;letter-spacing:-0.02em;line-height:1.22;color:#F4EFE6;text-wrap:pretty">Group revenue risk &amp; the fix</span></div>
+<div style="display:flex;gap:34px;padding:34px 0;border-top:2px solid #26262A"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#C6F04A;flex:none;width:52px">02</span><span style="font-size:38px;font-weight:500;letter-spacing:-0.02em;line-height:1.22;color:#F4EFE6;text-wrap:pretty">$6.8T gets institutional</span></div>
+<div style="display:flex;gap:34px;padding:34px 0;border-top:2px solid #26262A;border-bottom:2px solid #26262A"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#C6F04A;flex:none;width:52px">03</span><span style="font-size:38px;font-weight:500;letter-spacing:-0.02em;line-height:1.22;color:#F4EFE6;text-wrap:pretty">Lights-out differentiation</span></div>
+</div>
+<div style="flex:none;padding:48px 64px 56px;display:flex;align-items:center;justify-content:space-between;gap:30px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:16px;padding:22px 38px;font-size:29px;font-weight:600">Listen · 5 min</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:23px;color:#8A8A92;text-align:right;line-height:1.4">EVERY WEEKDAY · EN &amp; DE<br />FREE</span>
+</div>
+</div>
+
+<div id="l06-story" style="width:1080px;height:1920px;background:#111113;padding:0 0 150px;box-sizing:border-box;display:flex;flex-direction:column;flex:none">
+<div style="flex:none;padding:64px 64px 0;display:flex;gap:12px"><span style="flex:1;height:8px;border-radius:4px;background:#C6F04A"></span><span style="flex:1;height:8px;border-radius:4px;background:#2A2A2E"></span><span style="flex:1;height:8px;border-radius:4px;background:#2A2A2E"></span></div>
+<div style="flex:none;margin-top:44px;background:#C6F04A;color:#0A0A0B;padding:34px 64px;display:flex;align-items:baseline;justify-content:space-between">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;font-weight:500;letter-spacing:0.14em">SQWOD DAILY</span>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;letter-spacing:0.06em">03 SEPT 2026</span>
+</div>
+<div style="flex:1;padding:64px;display:flex;flex-direction:column;justify-content:center;gap:44px">
+<div style="font-size:72px;font-weight:600;letter-spacing:-0.036em;line-height:1.04;color:#F4EFE6;text-wrap:pretty">Get smarter in five minutes</div>
+<div style="display:flex;flex-direction:column">
+<div style="display:flex;gap:32px;padding:32px 0;border-top:2px solid #26262A"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#C6F04A;flex:none;width:52px">01</span><span style="font-size:40px;font-weight:500;letter-spacing:-0.02em;line-height:1.2;color:#F4EFE6;text-wrap:pretty">Group revenue risk &amp; the fix</span></div>
+<div style="display:flex;gap:32px;padding:32px 0;border-top:2px solid #26262A"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#C6F04A;flex:none;width:52px">02</span><span style="font-size:40px;font-weight:500;letter-spacing:-0.02em;line-height:1.2;color:#F4EFE6;text-wrap:pretty">$6.8T gets institutional</span></div>
+<div style="display:flex;gap:32px;padding:32px 0;border-top:2px solid #26262A;border-bottom:2px solid #26262A"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#C6F04A;flex:none;width:52px">03</span><span style="font-size:40px;font-weight:500;letter-spacing:-0.02em;line-height:1.2;color:#F4EFE6;text-wrap:pretty">Lights-out differentiation</span></div>
+</div>
+<div style="font-size:30px;line-height:1.4;color:#8A8A92;text-wrap:pretty">Built for the commute, the warm-up, or the dog walk.</div>
+</div>
+<div style="flex:none;padding:0 64px;display:flex;flex-direction:column;gap:18px">
+<span style="background:#C6F04A;color:#0A0A0B;border-radius:999px;padding:30px;font-size:34px;font-weight:600;text-align:center">Listen free</span>
+<sc-if value="{{ showStoryUrl }}" hint-placeholder-val="{{ true }}"><span style="display:block;font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92;text-align:center;letter-spacing:0.04em">SQWOD.LIFE/EN/DAILY</span></sc-if>
+</div>
+</div>
+
+<sc-if value="{{ showCaptions }}" hint-placeholder-val="{{ true }}"><div style="width:900px;flex:none;border:2px solid #26262A;border-radius:24px;background:#111113;padding:44px;display:flex;flex-direction:column;gap:32px;box-sizing:border-box">
+<div style="display:flex;flex-direction:column;gap:20px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · INSTAGRAM</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">Today's brief: group revenue risk and the fix, $6.8T gets institutional, lights-out differentiation.<br /><br />Five minutes, every weekday, in English and German. Money movement, the lesson behind the news, and one thing to do — plus a little fun. Free.<br /><br />Link in bio.</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #26262A;padding-top:32px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;letter-spacing:0.14em;color:#8A8A92">CAPTION · LINKEDIN</span>
+<div style="font-size:26px;line-height:1.5;color:#FAFAFA;text-wrap:pretty">Today in Sqwod Daily: where group revenue quietly becomes a risk and how to fix it, the $6.8T wellness market going institutional, and differentiating when the lights are off.<br /><br />Five minutes, every weekday, bilingual, free. Money movement, the lesson behind the news, and one thing to do today. Built for the commute rather than the desk.<br /><br />https://sqwod.life/en/daily</div>
+<div style="display:flex;gap:16px;flex-wrap:wrap;font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92"><span>#fitnessindustry</span><span>#dailybrief</span><span>#wellnessbusiness</span></div>
+</div>
+<div style="border-top:2px solid #26262A;padding-top:28px;display:flex;flex-direction:column;gap:12px">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">LINK · IG BIO + STORY STICKER · LINKEDIN IN POST</span>
+<a href="https://sqwod.life/en/daily" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;line-height:1.5;word-break:break-all">sqwod.life/en/daily</a>
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:21px;color:#8A8A92;line-height:1.6;padding-top:8px">NOTE · REFILL DATE, THREE LINES AND CAPTION EACH MORNING. LINK TO THE DATED EPISODE, NOT THE INDEX, ONCE LIVE.</span>
+</div>
+</div></sc-if>
+
+</div>
+</section>
+
+<section id="lindex" data-screen-label="Link index" style="display:flex;flex-direction:column;gap:30px;max-width:1900px">
+<div style="display:flex;align-items:baseline;gap:22px"><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:26px;color:#8A8A92">07</span><span style="font-size:34px;font-weight:600;letter-spacing:-0.02em">Where each unit points</span></div>
+<div style="font-size:26px;line-height:1.5;color:#A1A1AA;max-width:1100px;text-wrap:pretty">Units 01–03 are evergreen and can run in any order. Units 04–05 are dated analysis, so post them while the pieces are current. Unit 06 refills every weekday.</div>
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:100px 400px 300px 1fr;gap:30px;padding:22px 0;border-top:2px solid #26262A;align-items:baseline">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">L01</span><span style="font-size:26px;color:#FAFAFA">Verified hub</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">EVERGREEN</span>
+<a href="https://sqwod.life/en/verified" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:23px;word-break:break-all">/en/verified</a>
+</div>
+<div style="display:grid;grid-template-columns:100px 400px 300px 1fr;gap:30px;padding:22px 0;border-top:2px solid #26262A;align-items:baseline">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">L02</span><span style="font-size:26px;color:#FAFAFA">Best wearables 2026</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">SEARCH INTENT</span>
+<a href="https://sqwod.life/en/best/wearables/" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:23px;word-break:break-all">/en/best/wearables/</a>
+</div>
+<div style="display:grid;grid-template-columns:100px 400px 300px 1fr;gap:30px;padding:22px 0;border-top:2px solid #26262A;align-items:baseline">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">L03</span><span style="font-size:26px;color:#FAFAFA">The Sqwod Score</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">TRUST</span>
+<a href="https://sqwod.life/en/verified/methodology" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:23px;word-break:break-all">/en/verified/methodology</a>
+</div>
+<div style="display:grid;grid-template-columns:100px 400px 300px 1fr;gap:30px;padding:22px 0;border-top:2px solid #26262A;align-items:baseline">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">L04</span><span style="font-size:26px;color:#FAFAFA">Big money is reshaping fitness</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">BUILD · DATED</span>
+<a href="https://sqwod.life/en/analysis/big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:23px;word-break:break-all">/en/analysis/big-money-is-reshaping-fitness…-0811</a>
+</div>
+<div style="display:grid;grid-template-columns:100px 400px 300px 1fr;gap:30px;padding:22px 0;border-top:2px solid #26262A;align-items:baseline">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">L05</span><span style="font-size:26px;color:#FAFAFA">Booming except your revenue model</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">SIGNAL · DATED</span>
+<a href="https://sqwod.life/en/analysis/fitness-is-booming-everywhere-except-your-revenue-model-0811" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:23px;word-break:break-all">/en/analysis/fitness-is-booming…-0811</a>
+</div>
+<div style="display:grid;grid-template-columns:100px 400px 300px 1fr;gap:30px;padding:22px 0;border-top:2px solid #26262A;border-bottom:2px solid #26262A;align-items:baseline">
+<span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:24px;color:#8A8A92">L06</span><span style="font-size:26px;color:#FAFAFA">Sqwod Daily template</span><span style="font-family:'Geist Mono',ui-monospace,monospace;font-size:22px;color:#8A8A92">WEEKDAY REFILL</span>
+<a href="https://sqwod.life/en/daily" style="font-family:'Geist Mono',ui-monospace,monospace;font-size:23px;word-break:break-all">/en/daily</a>
+</div>
+</div>
+</section>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showLabels&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sheet&quot;},&quot;showCaptions&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sheet&quot;},&quot;showStoryUrl&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sheet&quot;}}"></script>
+</body>
+</html>

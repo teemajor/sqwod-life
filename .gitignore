@@ -58,3 +58,10 @@ _workspace/
 
 # wrangler local cache (holds the Cloudflare account id) — never commit
 .wrangler/
+
+# files delivered into the chat land here via the desktop app — never source
+"Claude outputs"/
+Claude outputs/
+
+# weekly social run output: PNGs + week.json are regenerated every Monday
+automation/social/out/
