@@ -1,83 +1,5 @@
 [
   {
-    "date": "2026-08-24",
-    "key": "what your churn rate is telling you",
-    "tokens": [
-      "what",
-      "churn",
-      "rate",
-      "telling"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "strava revenue 2025 500m arr 22b valuation",
-    "tokens": [
-      "strava",
-      "revenue",
-      "2025",
-      "500m",
-      "valuation"
-    ],
-    "entities": [
-      "Strava"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "apple launches ai revolution with three wearable devices",
-    "tokens": [
-      "apple",
-      "launches",
-      "revolution",
-      "three",
-      "wearable",
-      "devices"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "aienabled sleep breathing devices company raises 1225m to ac",
-    "tokens": [
-      "enabled",
-      "sleep",
-      "breathing",
-      "devices",
-      "company",
-      "raises",
-      "accelerate",
-      "growth"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "apple screenfree wearable features design  launch",
-    "tokens": [
-      "apple",
-      "screen",
-      "free",
-      "wearable",
-      "features",
-      "design",
-      "launch"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "wolf gyms expands national footprint with acquisition of red",
-    "tokens": [
-      "gyms",
-      "expands",
-      "national",
-      "footprint",
-      "acquisition",
-      "redcon1",
-      "north",
-      "boca",
-      "raton"
-    ]
-  },
-  {
     "date": "2026-08-25",
     "key": "ferrero group acquires purely elizabeth wellness brand",
     "tokens": [
@@ -1311,6 +1233,105 @@
       "latest",
       "step",
       "growin"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "wizard wellness raises 1 million expands to more than 4000 r",
+    "tokens": [
+      "wizard",
+      "raises",
+      "million",
+      "expands",
+      "retail",
+      "stores"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "the 2026 hfa global report shows the fitness industry delive",
+    "tokens": [
+      "2026",
+      "global",
+      "shows",
+      "delivered",
+      "landmark",
+      "2025",
+      "double",
+      "digit",
+      "operator",
+      "revenue",
+      "growth"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "from running to postmeal walks fitness coach ranks different",
+    "tokens": [
+      "running",
+      "post",
+      "meal",
+      "walks",
+      "coach",
+      "ranks",
+      "different",
+      "forms",
+      "cardio",
+      "their",
+      "benefits",
+      "worst",
+      "best",
+      "health"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "why oura chose wall street over helsinki for its 16b ipo and",
+    "tokens": [
+      "oura",
+      "chose",
+      "wall",
+      "street",
+      "helsinki",
+      "what",
+      "early",
+      "backers",
+      "think"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "wizard wellness completes national mass retail rollout in fo",
+    "tokens": [
+      "wizard",
+      "completes",
+      "national",
+      "mass",
+      "retail",
+      "rollout",
+      "four",
+      "weeks",
+      "closing",
+      "million",
+      "funding",
+      "round"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "zurichs aeon passes 14m raised with seed extension for ai pr",
+    "tokens": [
+      "zurich",
+      "aeon",
+      "passes",
+      "raised",
+      "seed",
+      "extension",
+      "preventive",
+      "health"
     ]
   }
 ]
