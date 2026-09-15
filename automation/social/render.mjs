@@ -15,10 +15,21 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
-import { board, variantFor } from './templates.mjs';
+import { board, variantFor, setLogos } from './templates.mjs';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(HERE, 'out');
+const PUBLIC = path.resolve(HERE, '..', '..', 'site', 'public');
+
+// The official wordmark, taken from the same two files the site header serves,
+// embedded as data URIs. The renderer sets page content directly rather than
+// serving a directory, so a relative <img src> would never resolve.
+const dataUri = (file) => {
+  const p = path.join(PUBLIC, file);
+  if (!fs.existsSync(p)) throw new Error(`Missing brand asset ${p} — the boards cannot ship without the wordmark.`);
+  return `data:image/png;base64,${fs.readFileSync(p).toString('base64')}`;
+};
+setLogos({ black: dataUri('sqwod-black.png'), white: dataUri('sqwod-white.png') });
 
 const args = process.argv.slice(2);
 const flagWeek = args[args.indexOf('--week') + 1];

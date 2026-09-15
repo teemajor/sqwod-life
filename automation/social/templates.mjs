@@ -98,9 +98,37 @@ const urlLabel = (url) => {
 
 // --- shared pieces -----------------------------------------------------------
 
-// No accent colour, so the wordmark separates on weight and tone instead.
-const wordmark = (t, size) =>
-  `<span style="font-size:${size}px;font-weight:600;letter-spacing:-0.03em;color:${t.fg}">sqwod<span style="color:${t.faint}">.life</span></span>`;
+// The official chamfered SQWOD wordmark, as data URIs, injected by render.mjs
+// from site/public/sqwod-black.png and sqwod-white.png — the same two files the
+// site header serves. Set before any board is built.
+let LOGO = { black: '', white: '' };
+export function setLogos(logos) {
+  LOGO = { ...LOGO, ...logos };
+}
+
+// The lockup is the wordmark image plus ".life" set in Geist, exactly as the
+// site header pairs them. `onDark` picks the file by the colour BEHIND the mark,
+// not by the board's theme — the Daily masthead is a filled bar, so it flips.
+const lockup = (t, height, { onDark = true, suffix = t.faint } = {}) => {
+  const src = onDark ? LOGO.white : LOGO.black;
+  const w = Math.round(height * (423 / 111));
+  return `<span style="display:inline-flex;align-items:baseline;gap:3px">
+    <img src="${src}" alt="Sqwod" width="${w}" height="${height}" style="display:block;width:${w}px;height:${height}px;transform:translateY(${Math.round(height * 0.06)}px)" />
+    <span style="font-size:${Math.round(height * 1.12)}px;font-weight:600;letter-spacing:-0.03em;color:${suffix}">.life</span>
+  </span>`;
+};
+
+const wordmark = (t, size) => lockup(t, Math.round(size * 0.74), { onDark: t.bg === '#0B0B0C' });
+
+// The Daily masthead sits on a bar filled with t.fg, so the mark flips against
+// the board: a dark board gets a chalk bar and therefore the black wordmark.
+const mastheadMark = (t, height, label) =>
+  `<span style="display:inline-flex;align-items:baseline;gap:14px">
+    <img src="${t.bg === '#0B0B0C' ? LOGO.black : LOGO.white}" alt="Sqwod" style="display:block;width:${Math.round(
+      height * (423 / 111)
+    )}px;height:${height}px;transform:translateY(${Math.round(height * 0.08)}px)" />
+    <span style="font-family:${MONO};font-size:${Math.round(height * 1.05)}px;font-weight:500;letter-spacing:0.14em">${esc(label)}</span>
+  </span>`;
 
 const kicker = (text, color, size = 24) =>
   `<span style="font-family:${MONO};font-size:${size}px;letter-spacing:0.16em;color:${color}">${esc(text)}</span>`;
@@ -272,7 +300,7 @@ function dailyPost(u, t) {
   const lines = (u.lines || []).slice(0, 3);
   return `
 <div style="flex:none;background:${t.fg};color:${t.bg};padding:38px 64px;display:flex;align-items:baseline;justify-content:space-between">
-  <span style="font-family:${MONO};font-size:28px;font-weight:500;letter-spacing:0.14em">SQWOD DAILY</span>
+  ${mastheadMark(t, 26, 'DAILY')}
   <span style="font-family:${MONO};font-size:28px;letter-spacing:0.06em">${esc(dateLabel(u.date))}</span>
 </div>
 <div style="flex:1;padding:56px 64px 0;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
@@ -304,7 +332,7 @@ function dailyStory(u, t) {
   return `
 <div style="flex:none;padding:64px 64px 0">${progress(t, 0, 3)}</div>
 <div style="flex:none;margin-top:40px;background:${t.fg};color:${t.bg};padding:34px 64px;display:flex;align-items:baseline;justify-content:space-between">
-  <span style="font-family:${MONO};font-size:26px;font-weight:500;letter-spacing:0.14em">SQWOD DAILY</span>
+  ${mastheadMark(t, 24, 'DAILY')}
   <span style="font-family:${MONO};font-size:26px;letter-spacing:0.06em">${esc(dateLabel(u.date))}</span>
 </div>
 <div style="flex:1;padding:0 64px 64px;display:flex;flex-direction:column;justify-content:flex-end;gap:44px">
