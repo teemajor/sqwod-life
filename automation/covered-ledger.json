@@ -1,171 +1,5 @@
 [
   {
-    "date": "2026-08-21",
-    "key": "crosscourt raises 2m to turn basketball into the next big bo",
-    "tokens": [
-      "crosscourt",
-      "raises",
-      "turn",
-      "basketball",
-      "next",
-      "boutique",
-      "category"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "indias rousing 148 billion coaching industry story gets vidy",
-    "tokens": [
-      "india",
-      "rousing",
-      "billion",
-      "coaching",
-      "story",
-      "gets",
-      "vidyapeeth",
-      "partner"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "thurston county celebrates community organizations during na",
-    "tokens": [
-      "thurston",
-      "county",
-      "celebrates",
-      "community",
-      "organizations",
-      "during",
-      "national",
-      "recovery",
-      "month"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "the google pixel watch 5 is a more refined version of an and",
-    "tokens": [
-      "google",
-      "pixel",
-      "watch",
-      "refined",
-      "version",
-      "android",
-      "wearable",
-      "favourite",
-      "only",
-      "smallest",
-      "margin"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "boutique fitness studio torque opens in north platte",
-    "tokens": [
-      "boutique",
-      "studio",
-      "torque",
-      "opens",
-      "north",
-      "platte"
-    ]
-  },
-  {
-    "date": "2026-08-21",
-    "key": "featurepacked garmin vvoactive 5 drops to a bargain price wi",
-    "tokens": [
-      "feature",
-      "packed",
-      "garmin",
-      "voactive",
-      "drops",
-      "bargain",
-      "price",
-      "discount"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "what your churn rate is telling you",
-    "tokens": [
-      "what",
-      "churn",
-      "rate",
-      "telling"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "strava revenue 2025 500m arr 22b valuation",
-    "tokens": [
-      "strava",
-      "revenue",
-      "2025",
-      "500m",
-      "valuation"
-    ],
-    "entities": [
-      "Strava"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "apple launches ai revolution with three wearable devices",
-    "tokens": [
-      "apple",
-      "launches",
-      "revolution",
-      "three",
-      "wearable",
-      "devices"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "aienabled sleep breathing devices company raises 1225m to ac",
-    "tokens": [
-      "enabled",
-      "sleep",
-      "breathing",
-      "devices",
-      "company",
-      "raises",
-      "accelerate",
-      "growth"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "apple screenfree wearable features design  launch",
-    "tokens": [
-      "apple",
-      "screen",
-      "free",
-      "wearable",
-      "features",
-      "design",
-      "launch"
-    ]
-  },
-  {
-    "date": "2026-08-24",
-    "key": "wolf gyms expands national footprint with acquisition of red",
-    "tokens": [
-      "gyms",
-      "expands",
-      "national",
-      "footprint",
-      "acquisition",
-      "redcon1",
-      "north",
-      "boca",
-      "raton"
-    ]
-  },
-  {
     "date": "2026-08-25",
     "key": "ferrero group acquires purely elizabeth wellness brand",
     "tokens": [
@@ -1303,6 +1137,201 @@
       "gyms",
       "toward",
       "stores"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "exclusive switzerlands aeon acquires aware health as total s",
+    "tokens": [
+      "exclusive",
+      "switzerland",
+      "aeon",
+      "acquires",
+      "aware",
+      "health",
+      "total",
+      "seed",
+      "funding",
+      "surpasses",
+      "million"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "fitness chain with 23m revenue to shut down all singapore ou",
+    "tokens": [
+      "chain",
+      "revenue",
+      "shut",
+      "down",
+      "singapore",
+      "outlets"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "jetset pilates leans into strength training with new class f",
+    "tokens": [
+      "jetset",
+      "pilates",
+      "leans",
+      "strength",
+      "training",
+      "class",
+      "formats"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "i wore garmins cirqa fitness band 247 for 4 weeks to see how",
+    "tokens": [
+      "wore",
+      "garmin",
+      "cirqa",
+      "band",
+      "weeks",
+      "stacks",
+      "other",
+      "screenless",
+      "wearables"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "dirk van vlaanderen  hyrox padel and ice baths how virgin ac",
+    "tokens": [
+      "dirk",
+      "vlaanderen",
+      "hyrox",
+      "padel",
+      "baths",
+      "virgin",
+      "active",
+      "tackling",
+      "churn",
+      "problem"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "key": "patrick and brittany mahomes 30 million fitness deal with 10",
+    "tokens": [
+      "patrick",
+      "brittany",
+      "mahomes",
+      "million",
+      "deal",
+      "billion",
+      "brand",
+      "marks",
+      "latest",
+      "step",
+      "growin"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "wizard wellness raises 1 million expands to more than 4000 r",
+    "tokens": [
+      "wizard",
+      "raises",
+      "million",
+      "expands",
+      "retail",
+      "stores"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "the 2026 hfa global report shows the fitness industry delive",
+    "tokens": [
+      "2026",
+      "global",
+      "shows",
+      "delivered",
+      "landmark",
+      "2025",
+      "double",
+      "digit",
+      "operator",
+      "revenue",
+      "growth"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "from running to postmeal walks fitness coach ranks different",
+    "tokens": [
+      "running",
+      "post",
+      "meal",
+      "walks",
+      "coach",
+      "ranks",
+      "different",
+      "forms",
+      "cardio",
+      "their",
+      "benefits",
+      "worst",
+      "best",
+      "health"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "why oura chose wall street over helsinki for its 16b ipo and",
+    "tokens": [
+      "oura",
+      "chose",
+      "wall",
+      "street",
+      "helsinki",
+      "what",
+      "early",
+      "backers",
+      "think"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "wizard wellness completes national mass retail rollout in fo",
+    "tokens": [
+      "wizard",
+      "completes",
+      "national",
+      "mass",
+      "retail",
+      "rollout",
+      "four",
+      "weeks",
+      "closing",
+      "million",
+      "funding",
+      "round"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "key": "zurichs aeon passes 14m raised with seed extension for ai pr",
+    "tokens": [
+      "zurich",
+      "aeon",
+      "passes",
+      "raised",
+      "seed",
+      "extension",
+      "preventive",
+      "health"
     ]
   }
 ]
