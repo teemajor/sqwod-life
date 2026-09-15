@@ -62,7 +62,7 @@ const RSS_URL = rssFor(lang);
               <a class="ep-btn read" href={url}>{lang==='de'?'Lesen':'Read'}</a>
               {ha && (
                 <a class="ep-btn listen" href={`${url}#listen`}>
-                  <span class="ep-play">▶</span>{lang==='de'?'Hören':'Listen'}<span class="ep-dur">· {iss.data.duration ?? '5 min'}</span>
+                  <span class="ep-play"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>{lang==='de'?'Hören':'Listen'}<span class="ep-dur">· {iss.data.duration ?? '5 min'}</span>
                 </a>
               )}
             </span>
@@ -90,7 +90,8 @@ const RSS_URL = rssFor(lang);
   .ep-btn:hover{border-color:var(--chalk);color:var(--chalk)}
   .ep-btn.listen{color:var(--chalk)}
   .ep-btn.listen:hover{background:var(--chalk);color:var(--ink)}
-  .ep-play{font-size:8px}
+  .ep-play{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;border:1px solid currentColor}
+  .ep-play svg{display:block;margin-left:1px}
   .ep-dur{color:var(--g3);font-weight:600;font-family:ui-monospace,Menlo,monospace}
   .ep-btn.listen:hover .ep-dur{color:var(--ink)}
   @media(max-width:600px){

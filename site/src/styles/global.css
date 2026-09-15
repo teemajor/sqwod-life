@@ -446,8 +446,15 @@ body{background:var(--page-wash) fixed}
   }
   /* the footnote markers sit in running text, where the raw lime is too pale */
   .prose sup.fn a{color:#5d7f0d}
-  /* keep the artwork plates dark: they carry white line art */
-  .glyphbox,.heromotif,.viewer,.ql-stage,.arthero,.g-lattice,.ah-lattice{color-scheme:dark}
+  /* keep the artwork plates dark: they carry white line art. The palette tokens are
+     re-pointed to their dark values INSIDE each plate, so line art drawn with
+     currentColor or var(--chalk) stays chalk-on-dark. Without this the icons invert
+     to ink-on-dark and the plate reads as a solid black box. */
+  .glyphbox,.heromotif,.viewer,.ql-stage,.arthero,.g-lattice,.ah-lattice{
+    color-scheme:dark; color:#FAFAFA;
+    --chalk:#FAFAFA; --ink:#0e0e10; --mark:#FAFAFA;
+    --g1:#ededf0; --g2:#b8b8c0; --g3:#85858e; --g4:#7a7a82;
+  }
   .glyphbox,.viewer{border-color:#2a2a30}
   /* product shots already sit on white tiles — give them an edge so they don't float */
   .g-main,.g-thumb{border:1px solid var(--line)}

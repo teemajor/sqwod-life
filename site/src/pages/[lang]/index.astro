@@ -6,7 +6,8 @@ import { languages, t, type Lang } from '../../i18n/ui';
 import { LANES, pillarMeta } from '../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../config/podcast';
 import { SUBSCRIBE } from '../../config/subscribe';
-import { existsSync } from 'node:fs';
+import { readdirSync } from 'node:fs';
+import { join } from 'node:path';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -16,8 +17,13 @@ const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.da
 const latest = issues[0];
 const latestHref = latest ? `/${lang}/daily/${latest.data.urlSlug}` : `/${lang}/daily`;
 const latestAudio = latest ? episodeAudio(latest.data.urlSlug, lang) : null;
-const hasLatestAudio = !!(latestAudio && existsSync(new URL(`../../../public${latestAudio}`, import.meta.url)));
-const hasEpAudio = (slug: string) => existsSync(new URL(`../../../public${episodeAudio(slug, lang)}`, import.meta.url));
+// List the built audio dir once (cwd is the site/ root during astro build). A per-file
+// import.meta.url lookup silently resolved to the wrong place through the build pipeline,
+// so every episode rendered as text-only even though the MP3s were published.
+let audioFiles = new Set<string>();
+try { audioFiles = new Set(readdirSync(join(process.cwd(), 'public', 'audio'))); } catch { /* none yet */ }
+const hasEpAudio = (slug: string) => audioFiles.has(`${slug}-${lang}.mp3`);
+const hasLatestAudio = !!(latest && hasEpAudio(latest.data.urlSlug));
 const fmtDate = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
 // Only surface platforms that have a real URL (drops dead "#" links until configured).
 const platforms = [
@@ -117,13 +123,20 @@ const tagline = lang === 'de'
             {issues.slice(0, 5).map((ep) => {
               const ha = hasEpAudio(ep.data.urlSlug);
               return (
-                <li><a class={`pod-ep${ha ? '' : ' noaudio'}`} href={`/${lang}/daily/${ep.data.urlSlug}`}>
-                  {ha ? <span class="ep-play">▶</span> : <span class="ep-play-empty"></span>}
+                <li><a class={`pod-ep${ha ? '' : ' noaudio'}`} href={ha ? `/${lang}/daily/${ep.data.urlSlug}#listen` : `/${lang}/daily/${ep.data.urlSlug}`}
+                  aria-label={ha ? `${lang==='de'?'Hören':'Listen'}: ${ep.data.summary || 'Sqwod Daily'}` : undefined}>
+                  {ha ? (
+                    <span class="ep-play">
+                      <svg viewBox="0 0 24 24" width="11" height="11" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+                    </span>
+                  ) : <span class="ep-play-empty"></span>}
                   <span class="ep-meta">
                     <span class="ep-date">{fmtDate(ep.data.date)}</span>
                     <span class="ep-title">{ep.data.summary || 'Sqwod Daily'}</span>
                   </span>
-                  <span class="ep-dur">{ha ? (ep.data.duration ?? '5 min') : (lang==='de'?'Lesen →':'Read →')}</span>
+                  <span class="ep-dur">{ha
+                    ? <span class="ep-dur-audio"><span class="ep-dur-lbl">{lang==='de'?'Hören':'Listen'}</span>{ep.data.duration ?? '5 min'}</span>
+                    : (lang==='de'?'Lesen →':'Read →')}</span>
                 </a></li>
               );
             })}
@@ -197,7 +210,10 @@ const tagline = lang === 'de'
   .pod-eps li{margin:0;padding:0}
   .pod-ep{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s ease}
   .pod-ep:hover{background:var(--panel)}
-  .ep-play{width:26px;height:26px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;font-size:9px;color:var(--chalk);padding-left:2px}
+  .ep-play{width:26px;height:26px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;color:var(--chalk);flex:none}
+  .ep-play svg{display:block;margin-left:1px}
+  .ep-dur-audio{display:inline-flex;align-items:center;gap:7px}
+  .ep-dur-lbl{font-family:var(--sans);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--chalk)}
   .pod-ep:hover .ep-play{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
   .ep-play-empty{display:block;width:26px;height:26px}
   .ep-date{display:block;font-size:11px;font-family:ui-monospace,Menlo,monospace;color:var(--g3)}
