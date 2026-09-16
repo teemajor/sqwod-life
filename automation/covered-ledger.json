@@ -1,79 +1,5 @@
 [
   {
-    "date": "2026-08-25",
-    "key": "ferrero group acquires purely elizabeth wellness brand",
-    "tokens": [
-      "ferrero",
-      "group",
-      "acquires",
-      "purely",
-      "elizabeth",
-      "brand"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "key": "exklusives onlineseminar fr dssvmitglieder",
-    "tokens": [
-      "exklusives",
-      "online",
-      "seminar",
-      "dssv",
-      "mitglieder"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "key": "smart ring maker oura seeks up to 3 billion in ipo",
-    "tokens": [
-      "smart",
-      "ring",
-      "maker",
-      "oura",
-      "seeks",
-      "billion"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "key": "longtime solidcore coach launches nyc pilates studio",
-    "tokens": [
-      "longtime",
-      "solidcore",
-      "coach",
-      "launches",
-      "pilates",
-      "studio"
-    ],
-    "entities": [
-      "Solidcore"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "key": "kettlebell fitness studio opens in clovis video",
-    "tokens": [
-      "kettlebell",
-      "studio",
-      "opens",
-      "clovis",
-      "video"
-    ]
-  },
-  {
-    "date": "2026-08-25",
-    "key": "integrated wellness acquisition names binson lau coceo",
-    "tokens": [
-      "integrated",
-      "acquisition",
-      "names",
-      "binson"
-    ]
-  },
-  {
     "date": "2026-08-26",
     "key": "kaplan fox continues to alert investors of planet fitness in",
     "tokens": [
@@ -1332,6 +1258,87 @@
       "extension",
       "preventive",
       "health"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "key": "dssvnews digitale ausgabe 052026 online",
+    "tokens": [
+      "dssv",
+      "news",
+      "digitale",
+      "ausgabe",
+      "2026",
+      "online"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "key": "i am a fitness coach and these are the 10 essential tools yo",
+    "tokens": [
+      "coach",
+      "these",
+      "essential",
+      "tools",
+      "need",
+      "full",
+      "body",
+      "home",
+      "workout"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "key": "burn boot camp adds ilona maher to growing roster of brand p",
+    "tokens": [
+      "burn",
+      "boot",
+      "camp",
+      "adds",
+      "ilona",
+      "maher",
+      "growing",
+      "roster",
+      "brand",
+      "partners"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "key": "wizard wellness raises 1m for allergy care push",
+    "tokens": [
+      "wizard",
+      "raises",
+      "allergy",
+      "care",
+      "push"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "key": "how george kruis went from prorugby to running fourfive a fa",
+    "tokens": [
+      "george",
+      "kruis",
+      "went",
+      "rugby",
+      "running",
+      "fourfive",
+      "fast",
+      "growth",
+      "supplements",
+      "brand"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "key": "wearable sensor research secures 13m arc funding",
+    "tokens": [
+      "wearable",
+      "sensor",
+      "research",
+      "secures",
+      "funding"
     ]
   }
 ]
