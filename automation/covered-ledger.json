@@ -1,104 +1,5 @@
 [
   {
-    "date": "2026-08-26",
-    "key": "kaplan fox continues to alert investors of planet fitness in",
-    "tokens": [
-      "kaplan",
-      "continues",
-      "alert",
-      "investors",
-      "planet",
-      "nyse",
-      "plnt",
-      "class",
-      "action",
-      "deadline",
-      "september",
-      "2026"
-    ],
-    "entities": [
-      "Planet Fitness"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "key": "adaptive fitness franchise special strong seeks strategic pa",
-    "tokens": [
-      "adaptive",
-      "franchise",
-      "special",
-      "strong",
-      "seeks",
-      "strategic",
-      "partner",
-      "drive",
-      "growth"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "key": "whoop expands commitment to womens health by including oneye",
-    "tokens": [
-      "whoop",
-      "expands",
-      "commitment",
-      "women",
-      "health",
-      "including",
-      "year",
-      "subscription",
-      "natural",
-      "cycles",
-      "membership"
-    ],
-    "entities": [
-      "Whoop"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "key": "nurse set to launch brandnew recovery and wellbeing clinic i",
-    "tokens": [
-      "nurse",
-      "launch",
-      "brand",
-      "recovery",
-      "wellbeing",
-      "clinic",
-      "bromsgrove"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "key": "basicfit stock builds strength as 2026 earnings return to pr",
-    "tokens": [
-      "basic",
-      "stock",
-      "builds",
-      "strength",
-      "2026",
-      "earnings",
-      "return",
-      "profit"
-    ],
-    "entities": [
-      "Basic-Fit"
-    ]
-  },
-  {
-    "date": "2026-08-26",
-    "key": "flexit vs juice fitness revenue funding  team size compared",
-    "tokens": [
-      "flexit",
-      "juice",
-      "revenue",
-      "funding",
-      "team",
-      "size",
-      "compared"
-    ]
-  },
-  {
     "date": "2026-08-27",
     "key": "online astrology and spiritual wellness platform instaastro ",
     "tokens": [
@@ -1339,6 +1240,100 @@
       "research",
       "secures",
       "funding"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "key": "la kings 5k raises over 120000 and unites southern californi",
+    "tokens": [
+      "kings",
+      "raises",
+      "unites",
+      "southern",
+      "california",
+      "community",
+      "support",
+      "youth",
+      "inclusion",
+      "social",
+      "impact",
+      "programs"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "key": "chuze fitness adds reformer pilates through ifitfreemotion",
+    "tokens": [
+      "chuze",
+      "adds",
+      "reformer",
+      "pilates",
+      "through",
+      "ifit",
+      "freemotion"
+    ],
+    "entities": [
+      "iFit"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "key": "membershipbased longevity business raises 5m in seed funding",
+    "tokens": [
+      "membership",
+      "based",
+      "longevity",
+      "business",
+      "raises",
+      "seed",
+      "funding"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "key": "ouras 11b ipo runs into a sleeptracking lawsuit  and a wider",
+    "tokens": [
+      "oura",
+      "runs",
+      "sleep",
+      "tracking",
+      "lawsuit",
+      "wider",
+      "between",
+      "hype",
+      "proof"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "key": "bodylife club des monats balance fitness 038 wellnessclub",
+    "tokens": [
+      "bodylife",
+      "club",
+      "monats",
+      "balance"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "key": "garmin instinct 3 solar now delivers unlimited battery life ",
+    "tokens": [
+      "garmin",
+      "instinct",
+      "solar",
+      "delivers",
+      "unlimited",
+      "battery",
+      "life",
+      "lower",
+      "price",
+      "amazon"
+    ],
+    "entities": [
+      "Garmin"
     ]
   }
 ]
