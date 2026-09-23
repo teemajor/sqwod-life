@@ -1,92 +1,5 @@
 [
   {
-    "date": "2026-09-01",
-    "key": "one in two studios isn8217t profitable it8217s not a marketi",
-    "tokens": [
-      "studios",
-      "8217",
-      "profitable",
-      "marketing",
-      "problem",
-      "math"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "key": "semcap beauty  wellness leads funding round for healf",
-    "tokens": [
-      "semcap",
-      "beauty",
-      "leads",
-      "funding",
-      "round",
-      "healf"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "key": "huawei watch d3 price specs and all three colors of this wea",
-    "tokens": [
-      "huawei",
-      "watch",
-      "price",
-      "specs",
-      "three",
-      "colors",
-      "wearable",
-      "blood",
-      "pressure",
-      "monitor",
-      "leaked"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "key": "londons hitai acquires ycbacked fitness gaming studio quell ",
-    "tokens": [
-      "london",
-      "hitai",
-      "acquires",
-      "backed",
-      "gaming",
-      "studio",
-      "quell",
-      "boost",
-      "sports",
-      "motion",
-      "tracking",
-      "platform"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "key": "see inside the new familyfriendly community gym housed in fo",
-    "tokens": [
-      "inside",
-      "family",
-      "friendly",
-      "community",
-      "housed",
-      "former",
-      "barn"
-    ]
-  },
-  {
-    "date": "2026-09-01",
-    "key": "inside the marketing powering whoops pivotal next act",
-    "tokens": [
-      "inside",
-      "marketing",
-      "powering",
-      "whoop",
-      "pivotal",
-      "next"
-    ],
-    "entities": [
-      "Whoop"
-    ]
-  },
-  {
     "date": "2026-09-02",
     "key": "nestle to divest mainstream supplements business for 1 billi",
     "tokens": [
@@ -1351,6 +1264,91 @@
       "acquisition",
       "nevada",
       "dispensary"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "key": "united lets move dssv e v bringt politik mit workout am reic",
+    "tokens": [
+      "united",
+      "move",
+      "dssv",
+      "bringt",
+      "politik",
+      "workout",
+      "reichstag",
+      "schwitzen"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "key": "bird038be raises 13m to shift conversation around male ferti",
+    "tokens": [
+      "bird",
+      "raises",
+      "shift",
+      "conversation",
+      "around",
+      "male",
+      "fertility"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "key": "bengaluru cult fitness member hurls 20kg equipment on indira",
+    "tokens": [
+      "bengaluru",
+      "cult",
+      "member",
+      "hurls",
+      "equipment",
+      "indiranagar",
+      "floor",
+      "membership",
+      "cancelled",
+      "trending"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "key": "discover strength taps greater boston for growth announces f",
+    "tokens": [
+      "discover",
+      "strength",
+      "taps",
+      "greater",
+      "boston",
+      "growth",
+      "announces",
+      "first",
+      "massachusetts",
+      "studio",
+      "wellesley"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "key": "magic ai fitness mirror raises 8m to flex muscle in us",
+    "tokens": [
+      "magic",
+      "mirror",
+      "raises",
+      "flex",
+      "muscle"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "key": "yuen lee gofundme raises more than 80000 after kpmg manager ",
+    "tokens": [
+      "yuen",
+      "gofundme",
+      "raises",
+      "kpmg",
+      "manager",
+      "fired",
+      "altercation",
+      "video"
     ]
   }
 ]
