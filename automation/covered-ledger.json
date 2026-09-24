@@ -1,82 +1,5 @@
 [
   {
-    "date": "2026-09-02",
-    "key": "nestle to divest mainstream supplements business for 1 billi",
-    "tokens": [
-      "nestle",
-      "divest",
-      "mainstream",
-      "supplements",
-      "business",
-      "billion"
-    ]
-  },
-  {
-    "date": "2026-09-02",
-    "key": "phil lowe getting jacked with 22000 gym membership",
-    "tokens": [
-      "phil",
-      "lowe",
-      "getting",
-      "jacked",
-      "membership"
-    ]
-  },
-  {
-    "date": "2026-09-02",
-    "key": "oura ring 4 launches in india  price specifications and wher",
-    "tokens": [
-      "oura",
-      "ring",
-      "launches",
-      "india",
-      "price",
-      "specifications",
-      "where"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-09-02",
-    "key": "enhance raises 182m to take gym training software into the u",
-    "tokens": [
-      "enhance",
-      "raises",
-      "take",
-      "training",
-      "software"
-    ]
-  },
-  {
-    "date": "2026-09-02",
-    "key": "dsg consumer partners acquires singapore wellness brand bbac",
-    "tokens": [
-      "consumer",
-      "partners",
-      "acquires",
-      "singapore",
-      "brand",
-      "bback"
-    ]
-  },
-  {
-    "date": "2026-09-02",
-    "key": "fitness tracker mi smart band mi band global version price x",
-    "tokens": [
-      "tracker",
-      "smart",
-      "band",
-      "global",
-      "version",
-      "price",
-      "xiaomi",
-      "review",
-      "budget"
-    ]
-  },
-  {
     "date": "2026-09-03",
     "key": "wir begren unser neues frdermitglied",
     "tokens": [
@@ -1349,6 +1272,91 @@
       "fired",
       "altercation",
       "video"
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "key": "uk fitness startup magic ai raises 11m for us expansion adds",
+    "tokens": [
+      "startup",
+      "magic",
+      "raises",
+      "expansion",
+      "adds",
+      "soho",
+      "house",
+      "backer"
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "key": "price to sales forward of integrated wellness acquisition co",
+    "tokens": [
+      "price",
+      "sales",
+      "forward",
+      "integrated",
+      "acquisition",
+      "corp",
+      "welwf"
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "key": "is peloton interactive pton undervalued following its new tr",
+    "tokens": [
+      "peloton",
+      "interactive",
+      "pton",
+      "undervalued",
+      "following",
+      "treadmill",
+      "coaching",
+      "launch"
+    ],
+    "entities": [
+      "Peloton"
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "key": "fitness coach ate 10000 calories daily for a month to promot",
+    "tokens": [
+      "coach",
+      "calories",
+      "daily",
+      "month",
+      "promote",
+      "weight",
+      "loss",
+      "course",
+      "died",
+      "sleep"
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "key": "website closers brokers acquisition of smoothie brand tusol ",
+    "tokens": [
+      "website",
+      "closers",
+      "brokers",
+      "acquisition",
+      "smoothie",
+      "brand",
+      "tusol"
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "key": "elixinol wellness expands product offering with vitable acqu",
+    "tokens": [
+      "elixinol",
+      "expands",
+      "product",
+      "offering",
+      "vitable",
+      "acquisition"
     ]
   }
 ]
