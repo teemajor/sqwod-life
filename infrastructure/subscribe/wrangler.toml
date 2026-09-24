@@ -7,6 +7,7 @@ compatibility_date = "2025-06-01"
 RESEND_SEGMENT_EN = "3fd872bd-b495-4636-bd27-55bbf5d05970"   # English segment
 RESEND_SEGMENT_DE = "2906253d-608f-4ec6-a2d6-1d3f593610c1"   # German segment
 RESEND_FROM       = "Sqwod Daily <daily@sqwod.life>"         # must be on the verified domain
+CONFIRM_FROM      = "Sqwod Daily <confirm@notify.sqwod.life>"  # untracked domain — keeps the confirm link intact
 SITE_BASE         = "https://sqwod.life"
 ALLOW_ORIGIN      = "https://sqwod.life"                     # also the origin gate — posts from anywhere else are refused
 CONFIRM_TTL_HOURS = "48"                                     # confirmation-link lifetime

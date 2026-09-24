@@ -19,7 +19,7 @@ sparkline) → ② "this week's move" auto-insight → ③ funnel (visitors → 
 
 ## Variables & Secrets (Worker → Settings → Variables and Secrets)
 **Variables:** `UMAMI_URL`, `UMAMI_WEBSITE_ID`, `ALLOWED_EMAILS` (comma list),
-optional `RESEND_AUDIENCE_EN` / `RESEND_AUDIENCE_DE`.
+optional `RESEND_SEGMENT_EN` / `RESEND_SEGMENT_DE` (the older `RESEND_AUDIENCE_*` names still work).
 **Secrets:** `UMAMI_USERNAME`, `UMAMI_PASSWORD`, `RESEND_API_KEY`, `DIGEST_KEY`.
 
 ## Weekly digest (always-on, no runner)

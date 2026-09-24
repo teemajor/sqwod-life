@@ -8,6 +8,9 @@ UMAMI_URL = "https://umami-production-5dc9.up.railway.app"
 UMAMI_WEBSITE_ID = "35fd123d-0a68-4295-a875-8947947b5d76"
 # Optional: Resend audience (list) IDs, to show EN/DE subscriber counts.
 # Find them in Resend → Audiences → click an audience → copy the ID.
+RESEND_SEGMENT_EN  = "3fd872bd-b495-4636-bd27-55bbf5d05970"
+RESEND_SEGMENT_DE  = "2906253d-608f-4ec6-a2d6-1d3f593610c1"
+# Legacy names, still read as a fallback (Resend renamed audiences to segments).
 RESEND_AUDIENCE_EN = "3fd872bd-b495-4636-bd27-55bbf5d05970"
 RESEND_AUDIENCE_DE = "2906253d-608f-4ec6-a2d6-1d3f593610c1"
 # Weekly digest email settings (needs RESEND_FROM = a verified Resend sender).
@@ -17,10 +20,11 @@ DIGEST_TO = "tee@teemajor.com"
 # (defense in depth — Access itself is the real gate). Leave blank to rely on Access only.
 ALLOWED_EMAILS = "tee@teemajor.com,sqwodlife@gmail.com"
 
-# Weekly digest — Cloudflare cron fires the Worker's scheduled() handler.
-# Monday 07:00 UTC. Always-on; emails the pulse via Resend (no Claude runner needed).
+# Daily check — Cloudflare cron fires the Worker's scheduled() handler at 07:00 UTC.
+# Monday sends the weekly pulse. Every other day it sends NOTHING unless the
+# "needs you" queue has something in it, so a quiet inbox means a healthy pipeline.
 [triggers]
-crons = ["0 7 * * 1"]
+crons = ["0 7 * * *"]
 
 # --- secrets (DO NOT put here — set via CLI or the dashboard's Variables & Secrets) ---
 #   npx wrangler secret put UMAMI_USERNAME    # your Umami login (e.g. admin)

@@ -21,7 +21,9 @@
  *
  * Bilingual safety: each language sends ONLY to its own audience, so nobody is
  * double-emailed in two languages. A language with no audience configured is
- * skipped (you can't broadcast without a list).
+ * skipped (you can't broadcast without a list). A configured but EMPTY list is
+ * skipped too: Resend would create the broadcast and never send it, leaving a
+ * draft behind every single day.
  */
 import { readFileSync, existsSync, appendFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
@@ -78,11 +80,35 @@ function resendify(html, lang) {
     .replace(/\{\{\s*rp_personalized_text\s*\}\}/g, '');
 }
 
+// How many people are actually on a list. Returns null when we cannot tell, and
+// callers treat null as "carry on" so an API hiccup never blocks a real send.
+async function segmentSize(id) {
+  if (!KEY || !id) return null;
+  try {
+    const r = await fetch(`https://api.resend.com/segments/${id}/contacts?limit=100`, {
+      headers: { Authorization: `Bearer ${KEY}` },
+    });
+    if (!r.ok) return null;
+    const j = await r.json();
+    return Array.isArray(j?.data) ? j.data.filter((c) => !c.unsubscribed).length : null;
+  } catch { return null; }
+}
+
 async function sendLang(lang) {
   const issue = join(DAILY, `${date}.${lang}.md`);
   const snippet = join(EMAIL, `${date}-${lang}.snippet.html`);
   if (!existsSync(issue) || !existsSync(snippet)) { console.log(`· ${lang.toUpperCase()}: no issue/snippet for ${date} — skipping`); return false; }
   if (!AUD[lang]) { console.log(`· ${lang.toUpperCase()}: no RESEND_AUDIENCE_${lang.toUpperCase()} configured — skipping`); return false; }
+
+  // A broadcast aimed at an empty list is created and then cannot send, so it sits
+  // in Resend as a draft for ever. 35 German issues piled up that way between June
+  // and August 2026 before anyone noticed. Now we simply do not build it.
+  const listSize = await segmentSize(AUD[lang]);
+  if (listSize === 0) {
+    console.log(`· ${lang.toUpperCase()}: list is empty — skipping, no broadcast created`);
+    summary(`- ⏭️ Skipped ${lang.toUpperCase()} — nobody is subscribed in that language`);
+    return false;
+  }
 
   const m = meta(issue);
   const html = resendify(readFileSync(snippet, 'utf8'), lang);

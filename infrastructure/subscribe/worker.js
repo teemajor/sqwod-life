@@ -20,6 +20,10 @@
  *   RESEND_SEGMENT_EN  segment ID for the English list
  *   RESEND_SEGMENT_DE  segment ID for the German list
  *   RESEND_FROM        e.g. "Sqwod Daily <daily@sqwod.life>"
+ *   CONFIRM_FROM       sender for the confirmation mail only. Must sit on a domain
+ *                      with click tracking OFF (notify.sqwod.life), otherwise the
+ *                      confirm link is rewritten and link-prefetching mail scanners
+ *                      auto-confirm sign-ups. Falls back to RESEND_FROM.
  *   SITE_BASE          e.g. https://sqwod.life
  *   ALLOW_ORIGIN       e.g. https://sqwod.life (CORS + origin gate)
  *   CONFIRM_TTL_HOURS  token lifetime, default 48
@@ -247,7 +251,7 @@ async function sendConfirmation(env, email, lang, confirmUrl, ttlHours) {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
     body: JSON.stringify({
-      from: env.RESEND_FROM || 'Sqwod Daily <daily@sqwod.life>',
+      from: env.CONFIRM_FROM || env.RESEND_FROM || 'Sqwod Daily <confirm@notify.sqwod.life>',
       to: [email],
       subject: t.subject,
       html,
