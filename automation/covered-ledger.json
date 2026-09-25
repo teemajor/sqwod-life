@@ -1,84 +1,5 @@
 [
   {
-    "date": "2026-09-03",
-    "key": "wir begren unser neues frdermitglied",
-    "tokens": [
-      "begr",
-      "unser",
-      "neues",
-      "rdermitglied"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "key": "are group classes the bulk of revenue it might be time to re",
-    "tokens": [
-      "group",
-      "classes",
-      "bulk",
-      "revenue",
-      "might",
-      "time",
-      "rethink",
-      "business",
-      "model"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "key": "gymnation turns out the lights with dans le noir class in th",
-    "tokens": [
-      "gymnation",
-      "turns",
-      "lights",
-      "dans",
-      "noir",
-      "class",
-      "dark"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "key": "cbdmds acquisition of supplement legacy brand twinlab create",
-    "tokens": [
-      "cbdmd",
-      "acquisition",
-      "supplement",
-      "legacy",
-      "brand",
-      "twinlab",
-      "creates",
-      "unique",
-      "synergy"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "key": "garmin fenix 9 series launches with a 999 starting price",
-    "tokens": [
-      "garmin",
-      "fenix",
-      "series",
-      "launches",
-      "starting",
-      "price"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-09-03",
-    "key": "informa buys into 68t wellness economy with global wellness ",
-    "tokens": [
-      "informa",
-      "buys",
-      "economy",
-      "global",
-      "deal"
-    ]
-  },
-  {
     "date": "2026-09-04",
     "key": "new 30m super gym with 1000aweek membership to open at queen",
     "tokens": [
@@ -1357,6 +1278,85 @@
       "offering",
       "vitable",
       "acquisition"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "key": "atn insights the churn problem hiding in failed payments",
+    "tokens": [
+      "insights",
+      "churn",
+      "problem",
+      "hiding",
+      "failed",
+      "payments"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "key": "jamieson wellness inc jwel sets vote on c4575share cash acqu",
+    "tokens": [
+      "jamieson",
+      "jwel",
+      "sets",
+      "vote",
+      "share",
+      "cash",
+      "acquisition"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "key": "google fitbit air expected india price launch date key featu",
+    "tokens": [
+      "google",
+      "fitbit",
+      "expected",
+      "india",
+      "price",
+      "launch",
+      "date",
+      "features"
+    ],
+    "entities": [
+      "Fitbit"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "key": "australian fitness industry revenue forecast to approach 38 ",
+    "tokens": [
+      "australian",
+      "revenue",
+      "forecast",
+      "approach",
+      "billion"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "key": "dssv untersttzt deutsche olympiabewerbung spiele als impuls ",
+    "tokens": [
+      "dssv",
+      "unterst",
+      "deutsche",
+      "olympiabewerbung",
+      "spiele",
+      "impuls",
+      "bewegteres",
+      "deutschland"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "key": "men turn to pilates as uk market reaches 11 billion valuatio",
+    "tokens": [
+      "turn",
+      "pilates",
+      "market",
+      "reaches",
+      "billion",
+      "valuation"
     ]
   }
 ]
