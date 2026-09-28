@@ -1,86 +1,5 @@
 [
   {
-    "date": "2026-09-04",
-    "key": "new 30m super gym with 1000aweek membership to open at queen",
-    "tokens": [
-      "super",
-      "1000",
-      "week",
-      "membership",
-      "open",
-      "queen",
-      "wharf"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "key": "masterclass just launched a new class on glp1s 038 metabolic",
-    "tokens": [
-      "masterclass",
-      "just",
-      "launched",
-      "class",
-      "metabolic",
-      "health",
-      "here",
-      "8217",
-      "save",
-      "half"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "key": "the wellness company raises 16m cad seed to build ai health ",
-    "tokens": [
-      "company",
-      "raises",
-      "seed",
-      "build",
-      "health",
-      "companion",
-      "tempo"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "key": "gantner  vernetzte prozesse fr das fitnessstudio der zukunft",
-    "tokens": [
-      "gantner",
-      "vernetzte",
-      "prozesse",
-      "fitnessstudio",
-      "zukunft"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "key": "no mirrors no lights dubai gym launches workout class in com",
-    "tokens": [
-      "mirrors",
-      "lights",
-      "dubai",
-      "launches",
-      "workout",
-      "class",
-      "complete",
-      "darkness"
-    ]
-  },
-  {
-    "date": "2026-09-04",
-    "key": "aifirst consumer health and wellness startup cradlewise rais",
-    "tokens": [
-      "first",
-      "consumer",
-      "health",
-      "startup",
-      "cradlewise",
-      "raises",
-      "million",
-      "funding"
-    ]
-  },
-  {
     "date": "2026-09-07",
     "key": "womens wellness brand nua raises 50 mn led by peak xv filter",
     "tokens": [
@@ -1357,6 +1276,98 @@
       "reaches",
       "billion",
       "valuation"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "key": "beauty and wellness startup amaani raises 5 mn led by beco c",
+    "tokens": [
+      "beauty",
+      "startup",
+      "amaani",
+      "raises",
+      "beco",
+      "capital"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "key": "cristiano ronaldo on multimillion dollar investment in whoop",
+    "tokens": [
+      "cristiano",
+      "ronaldo",
+      "multi",
+      "million",
+      "dollar",
+      "investment",
+      "whoop",
+      "sports",
+      "tech",
+      "brand",
+      "reaches",
+      "billion",
+      "valuation"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "key": "pickleball franchise the picklr cuts staff is evaluating a n",
+    "tokens": [
+      "pickleball",
+      "franchise",
+      "picklr",
+      "cuts",
+      "staff",
+      "evaluating",
+      "number",
+      "options"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "key": "fitness coach shares 5 exercises to add to your home workout",
+    "tokens": [
+      "coach",
+      "shares",
+      "exercises",
+      "home",
+      "workout",
+      "routine",
+      "burn",
+      "build",
+      "muscle",
+      "health"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "key": "welwyn garden city fitness fundraiser raises more than 500 f",
+    "tokens": [
+      "welwyn",
+      "garden",
+      "city",
+      "fundraiser",
+      "raises",
+      "willow"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "key": "oura ring 5 review is oura still the best fitness ring brand",
+    "tokens": [
+      "oura",
+      "ring",
+      "review",
+      "still",
+      "best",
+      "brand",
+      "there"
+    ],
+    "entities": [
+      "Oura"
     ]
   }
 ]
