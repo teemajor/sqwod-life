@@ -1,88 +1,5 @@
 [
   {
-    "date": "2026-09-07",
-    "key": "womens wellness brand nua raises 50 mn led by peak xv filter",
-    "tokens": [
-      "women",
-      "brand",
-      "raises",
-      "peak",
-      "filter",
-      "capital"
-    ]
-  },
-  {
-    "date": "2026-09-07",
-    "key": "atn week in review boutique fitness takes on hyrox",
-    "tokens": [
-      "week",
-      "review",
-      "boutique",
-      "takes",
-      "hyrox"
-    ],
-    "entities": [
-      "Hyrox"
-    ]
-  },
-  {
-    "date": "2026-09-07",
-    "key": "informa acquisition marks push into wellness sector",
-    "tokens": [
-      "informa",
-      "acquisition",
-      "marks",
-      "push",
-      "sector"
-    ]
-  },
-  {
-    "date": "2026-09-07",
-    "key": "oura ipo revenue declared up 74",
-    "tokens": [
-      "oura",
-      "revenue",
-      "declared"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-09-07",
-    "key": "peloton adds movement preferences to flag exercises you want",
-    "tokens": [
-      "peloton",
-      "adds",
-      "movement",
-      "preferences",
-      "flag",
-      "exercises",
-      "want",
-      "avoid",
-      "classes",
-      "recommendations"
-    ],
-    "entities": [
-      "Peloton"
-    ]
-  },
-  {
-    "date": "2026-09-07",
-    "key": "ayrshire boxing coach opens gym just months after launching ",
-    "tokens": [
-      "ayrshire",
-      "boxing",
-      "coach",
-      "opens",
-      "just",
-      "months",
-      "launching",
-      "business",
-      "garage"
-    ]
-  },
-  {
     "date": "2026-09-08",
     "key": "why rhone is betting on pickleball to build its brand beyond",
     "tokens": [
@@ -1368,6 +1285,98 @@
     ],
     "entities": [
       "Oura"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "key": "swedish machine fitness tracker ipercept raises 165m",
+    "tokens": [
+      "swedish",
+      "machine",
+      "tracker",
+      "ipercept",
+      "raises"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "key": "2026 hfa european congress spotlights new industry research",
+    "tokens": [
+      "2026",
+      "european",
+      "congress",
+      "spotlights",
+      "research"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "key": "mona raises 35m to expand its ai platform for small business",
+    "tokens": [
+      "mona",
+      "raises",
+      "expand",
+      "platform",
+      "small",
+      "business",
+      "capital",
+      "access",
+      "financial",
+      "coaching"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "key": "media company hardscope launches with studio built around cr",
+    "tokens": [
+      "media",
+      "company",
+      "hardscope",
+      "launches",
+      "studio",
+      "built",
+      "around",
+      "creator",
+      "sets",
+      "digital",
+      "series",
+      "slate",
+      "exclusive"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "key": "garmin confirms moxy monitor acquisitionand muscle battery c",
+    "tokens": [
+      "garmin",
+      "confirms",
+      "moxy",
+      "monitor",
+      "acquisition",
+      "muscle",
+      "battery",
+      "could",
+      "arrive",
+      "next"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "key": "puregym taps highyield bond market for 14b refinancing",
+    "tokens": [
+      "puregym",
+      "taps",
+      "high",
+      "yield",
+      "bond",
+      "market",
+      "refinancing"
+    ],
+    "entities": [
+      "PureGym"
     ]
   }
 ]
