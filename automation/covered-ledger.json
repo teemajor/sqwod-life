@@ -1,91 +1,5 @@
 [
   {
-    "date": "2026-09-08",
-    "key": "why rhone is betting on pickleball to build its brand beyond",
-    "tokens": [
-      "rhone",
-      "betting",
-      "pickleball",
-      "build",
-      "brand",
-      "beyond",
-      "apparel"
-    ]
-  },
-  {
-    "date": "2026-09-08",
-    "key": "fredun forays into pet wellness with acquisition of furlicks",
-    "tokens": [
-      "fredun",
-      "forays",
-      "acquisition",
-      "furlicks"
-    ]
-  },
-  {
-    "date": "2026-09-08",
-    "key": "montre running rental cars garmin quelle montre choisir garm",
-    "tokens": [
-      "montre",
-      "running",
-      "rental",
-      "cars",
-      "garmin",
-      "quelle",
-      "choisir",
-      "fenix",
-      "review",
-      "coach"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-09-08",
-    "key": "kendall jenner buys stake in uk drink and supplements brand ",
-    "tokens": [
-      "kendall",
-      "jenner",
-      "buys",
-      "stake",
-      "drink",
-      "supplements",
-      "brand",
-      "trip"
-    ]
-  },
-  {
-    "date": "2026-09-08",
-    "key": "nua raises 50 mn to expand womens wellness portfolio distrib",
-    "tokens": [
-      "raises",
-      "expand",
-      "women",
-      "portfolio",
-      "distribution"
-    ]
-  },
-  {
-    "date": "2026-09-08",
-    "key": "gildan activewear tsx gil advances as brand integration marg",
-    "tokens": [
-      "gildan",
-      "activewear",
-      "advances",
-      "brand",
-      "integration",
-      "margin",
-      "improvement",
-      "apparel",
-      "market",
-      "recovery",
-      "support",
-      "investor",
-      "confidence"
-    ]
-  },
-  {
     "date": "2026-09-09",
     "key": "there8217s one metric most gym owner8217s overlook",
     "tokens": [
@@ -1377,6 +1291,92 @@
     ],
     "entities": [
       "PureGym"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "key": "golds gym rebuilds in southern california with 15location fr",
+    "tokens": [
+      "gold",
+      "rebuilds",
+      "southern",
+      "california",
+      "location",
+      "franchise",
+      "deal"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "key": "gym operator plots sevensite expansion after 187m funding de",
+    "tokens": [
+      "operator",
+      "plots",
+      "seven",
+      "site",
+      "expansion",
+      "funding",
+      "deal"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "key": "86 of gym and studio owners grew membership this year even a",
+    "tokens": [
+      "studio",
+      "owners",
+      "grew",
+      "membership",
+      "year",
+      "even",
+      "costs",
+      "competition",
+      "rise"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "key": "wellness future driver surge in middle and upper classes in ",
+    "tokens": [
+      "future",
+      "driver",
+      "surge",
+      "middle",
+      "upper",
+      "classes",
+      "western",
+      "world",
+      "especially",
+      "asia"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "key": "oura puts 22 billion ipo on hold as us listing market turns ",
+    "tokens": [
+      "oura",
+      "puts",
+      "billion",
+      "hold",
+      "listing",
+      "market",
+      "turns",
+      "uncertain"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "key": "workplace wellness providing fitness operators with opportun",
+    "tokens": [
+      "workplace",
+      "providing",
+      "operators",
+      "opportunities",
+      "revenue",
+      "growth"
     ]
   }
 ]
