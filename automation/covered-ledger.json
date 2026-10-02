@@ -1,82 +1,5 @@
 [
   {
-    "date": "2026-09-10",
-    "key": "fitness software provider arketa to open brickandmortar stud",
-    "tokens": [
-      "software",
-      "provider",
-      "arketa",
-      "open",
-      "brick",
-      "mortar",
-      "studio"
-    ]
-  },
-  {
-    "date": "2026-09-10",
-    "key": "guardians cup golf tournament raises 58k for officer wellnes",
-    "tokens": [
-      "guardians",
-      "golf",
-      "tournament",
-      "raises",
-      "officer",
-      "albemarle",
-      "county"
-    ]
-  },
-  {
-    "date": "2026-09-10",
-    "key": "fivestar rated padel power in northampton to open new gym an",
-    "tokens": [
-      "five",
-      "star",
-      "rated",
-      "padel",
-      "power",
-      "northampton",
-      "open",
-      "pilates",
-      "studio",
-      "weekend",
-      "soft",
-      "play",
-      "follow"
-    ]
-  },
-  {
-    "date": "2026-09-10",
-    "key": "fitness coach onthego exercise equipment",
-    "tokens": [
-      "coach",
-      "exercise",
-      "equipment"
-    ]
-  },
-  {
-    "date": "2026-09-10",
-    "key": "belle brands acquires hair wellness brand vegamour",
-    "tokens": [
-      "belle",
-      "brands",
-      "acquires",
-      "hair",
-      "brand",
-      "vegamour"
-    ]
-  },
-  {
-    "date": "2026-09-10",
-    "key": "all inclusive fitness  dr jobst mllertrimbusch wird cfo",
-    "tokens": [
-      "inclusive",
-      "jobst",
-      "ller",
-      "trimbusch",
-      "wird"
-    ]
-  },
-  {
     "date": "2026-09-11",
     "key": "planet fitness rebrands as lowprice gym competitors gain gro",
     "tokens": [
@@ -1388,6 +1311,103 @@
       "aren",
       "loving",
       "price"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "key": "garmin acquires muscle oxygen sensor maker moxy price undisc",
+    "tokens": [
+      "garmin",
+      "acquires",
+      "muscle",
+      "oxygen",
+      "sensor",
+      "maker",
+      "moxy",
+      "price",
+      "undisclosed"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "key": "wir begren unser neues frdermitglied",
+    "tokens": [
+      "begr",
+      "unser",
+      "neues",
+      "rdermitglied"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "key": "orangetheory beachbody vets launch 8216intentional rest8217 ",
+    "tokens": [
+      "orangetheory",
+      "beachbody",
+      "vets",
+      "launch",
+      "8216",
+      "intentional",
+      "rest",
+      "8217",
+      "studio"
+    ],
+    "entities": [
+      "Orangetheory"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "key": "andrea maier md worldrenowned pioneer in healthy aging will ",
+    "tokens": [
+      "andrea",
+      "maier",
+      "world",
+      "renowned",
+      "pioneer",
+      "healthy",
+      "aging",
+      "lead",
+      "discussions",
+      "future",
+      "longevity",
+      "healthspan",
+      "2026",
+      "global",
+      "summit"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "key": "the london massage brand that says something bigger about th",
+    "tokens": [
+      "london",
+      "massage",
+      "brand",
+      "something",
+      "bigger",
+      "about",
+      "global",
+      "economy"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "key": "tresalis acquires wellbeing fragrance brand vyrao in debut b",
+    "tokens": [
+      "tresalis",
+      "acquires",
+      "well",
+      "being",
+      "fragrance",
+      "brand",
+      "vyrao",
+      "debut",
+      "beauty",
+      "acquisition"
     ]
   }
 ]
