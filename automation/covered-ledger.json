@@ -1,101 +1,5 @@
 [
   {
-    "date": "2026-09-14",
-    "key": "exclusive switzerlands aeon acquires aware health as total s",
-    "tokens": [
-      "exclusive",
-      "switzerland",
-      "aeon",
-      "acquires",
-      "aware",
-      "health",
-      "total",
-      "seed",
-      "funding",
-      "surpasses",
-      "million"
-    ]
-  },
-  {
-    "date": "2026-09-14",
-    "key": "fitness chain with 23m revenue to shut down all singapore ou",
-    "tokens": [
-      "chain",
-      "revenue",
-      "shut",
-      "down",
-      "singapore",
-      "outlets"
-    ]
-  },
-  {
-    "date": "2026-09-14",
-    "key": "jetset pilates leans into strength training with new class f",
-    "tokens": [
-      "jetset",
-      "pilates",
-      "leans",
-      "strength",
-      "training",
-      "class",
-      "formats"
-    ]
-  },
-  {
-    "date": "2026-09-14",
-    "key": "i wore garmins cirqa fitness band 247 for 4 weeks to see how",
-    "tokens": [
-      "wore",
-      "garmin",
-      "cirqa",
-      "band",
-      "weeks",
-      "stacks",
-      "other",
-      "screenless",
-      "wearables"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-09-14",
-    "key": "dirk van vlaanderen  hyrox padel and ice baths how virgin ac",
-    "tokens": [
-      "dirk",
-      "vlaanderen",
-      "hyrox",
-      "padel",
-      "baths",
-      "virgin",
-      "active",
-      "tackling",
-      "churn",
-      "problem"
-    ],
-    "entities": [
-      "Hyrox"
-    ]
-  },
-  {
-    "date": "2026-09-14",
-    "key": "patrick and brittany mahomes 30 million fitness deal with 10",
-    "tokens": [
-      "patrick",
-      "brittany",
-      "mahomes",
-      "million",
-      "deal",
-      "billion",
-      "brand",
-      "marks",
-      "latest",
-      "step",
-      "growin"
-    ]
-  },
-  {
     "date": "2026-09-15",
     "key": "wizard wellness raises 1 million expands to more than 4000 r",
     "tokens": [
@@ -1412,6 +1316,88 @@
       "brand",
       "replies",
       "tracker"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "key": "greenock womens gym raises 850 for children in poverty inver",
+    "tokens": [
+      "greenock",
+      "women",
+      "raises",
+      "children",
+      "poverty",
+      "inverclyde"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "key": "indias ndude labs leads 3 mn series a in us wellness brand s",
+    "tokens": [
+      "india",
+      "ndude",
+      "labs",
+      "leads",
+      "series",
+      "brand",
+      "supermush"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "key": "is oura really a subscription company its s1 shows 80 of rev",
+    "tokens": [
+      "oura",
+      "really",
+      "subscription",
+      "company",
+      "shows",
+      "revenue",
+      "still",
+      "comes",
+      "ring"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "key": "whats next for vuori after a 55 billion valuation a threeway",
+    "tokens": [
+      "what",
+      "next",
+      "vuori",
+      "billion",
+      "valuation",
+      "three",
+      "stretch"
+    ],
+    "entities": [
+      "Vuori"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "key": "osu center for health sciences raises more than 800k for wel",
+    "tokens": [
+      "center",
+      "health",
+      "sciences",
+      "raises",
+      "800k",
+      "scholarships"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "key": "the antigym membership comes with a golden retriever",
+    "tokens": [
+      "anti",
+      "membership",
+      "comes",
+      "golden",
+      "retriever"
     ]
   }
 ]
