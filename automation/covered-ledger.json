@@ -1,104 +1,5 @@
 [
   {
-    "date": "2026-09-15",
-    "key": "wizard wellness raises 1 million expands to more than 4000 r",
-    "tokens": [
-      "wizard",
-      "raises",
-      "million",
-      "expands",
-      "retail",
-      "stores"
-    ]
-  },
-  {
-    "date": "2026-09-15",
-    "key": "the 2026 hfa global report shows the fitness industry delive",
-    "tokens": [
-      "2026",
-      "global",
-      "shows",
-      "delivered",
-      "landmark",
-      "2025",
-      "double",
-      "digit",
-      "operator",
-      "revenue",
-      "growth"
-    ]
-  },
-  {
-    "date": "2026-09-15",
-    "key": "from running to postmeal walks fitness coach ranks different",
-    "tokens": [
-      "running",
-      "post",
-      "meal",
-      "walks",
-      "coach",
-      "ranks",
-      "different",
-      "forms",
-      "cardio",
-      "their",
-      "benefits",
-      "worst",
-      "best",
-      "health"
-    ]
-  },
-  {
-    "date": "2026-09-15",
-    "key": "why oura chose wall street over helsinki for its 16b ipo and",
-    "tokens": [
-      "oura",
-      "chose",
-      "wall",
-      "street",
-      "helsinki",
-      "what",
-      "early",
-      "backers",
-      "think"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-09-15",
-    "key": "wizard wellness completes national mass retail rollout in fo",
-    "tokens": [
-      "wizard",
-      "completes",
-      "national",
-      "mass",
-      "retail",
-      "rollout",
-      "four",
-      "weeks",
-      "closing",
-      "million",
-      "funding",
-      "round"
-    ]
-  },
-  {
-    "date": "2026-09-15",
-    "key": "zurichs aeon passes 14m raised with seed extension for ai pr",
-    "tokens": [
-      "zurich",
-      "aeon",
-      "passes",
-      "raised",
-      "seed",
-      "extension",
-      "preventive",
-      "health"
-    ]
-  },
-  {
     "date": "2026-09-16",
     "key": "dssvnews digitale ausgabe 052026 online",
     "tokens": [
@@ -1398,6 +1299,89 @@
       "comes",
       "golden",
       "retriever"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "key": "world spa awards 2026 italy takes the lead spas take on a ne",
+    "tokens": [
+      "world",
+      "awards",
+      "2026",
+      "italy",
+      "takes",
+      "lead",
+      "spas",
+      "take",
+      "dimension"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "key": "gloriah raises 600k to scale intimate wellness brand",
+    "tokens": [
+      "gloriah",
+      "raises",
+      "600k",
+      "scale",
+      "intimate",
+      "brand"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "key": "cambridge heartwear lands 184m nhs contract for worlds first",
+    "tokens": [
+      "cambridge",
+      "heartwear",
+      "lands",
+      "184m",
+      "contract",
+      "world",
+      "first",
+      "reusable",
+      "wearable"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "key": "hyperice8217s fall prime day sale promises up to 250 off pro",
+    "tokens": [
+      "hyperice",
+      "8217",
+      "fall",
+      "prime",
+      "sale",
+      "promises",
+      "athlete",
+      "loved",
+      "recovery",
+      "tools"
+    ],
+    "entities": [
+      "Hyperice"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "key": "supermush raises 3m series a to expand functional wellness l",
+    "tokens": [
+      "supermush",
+      "raises",
+      "series",
+      "expand",
+      "functional",
+      "line"
+    ]
+  },
+  {
+    "date": "2026-10-07",
+    "key": "gym franchise weighs in with 100m expansion plans",
+    "tokens": [
+      "franchise",
+      "weighs",
+      "100m",
+      "expansion"
     ]
   }
 ]
