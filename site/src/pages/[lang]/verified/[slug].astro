@@ -72,9 +72,27 @@ const jsonLd = {
   // so asserting a price to Google would drift from the live listing. Product + AggregateRating
   // + Review still power the review-star rich result. Restore an Offer only with a live price feed.
 };
+// GEO: FAQPage built ONLY from text already visible on this page (verdict,
+// buy-if / skip-if, cons) so the Q&A mirrors the content, nothing invented.
+// Google no longer shows FAQ rich results for sites like ours, but AI answer
+// engines parse Q&A pairs far more reliably than prose — that's the target.
+const faqQ = lang === 'de'
+  ? { worth: `Lohnt sich ${d.productName}?`, buy: `Für wen ist ${d.productName} geeignet?`, skip: `Wer sollte ${d.productName} nicht kaufen?`, cons: `Was sind die Nachteile von ${d.productName}?`, score: `Sqwod Score ${d.sqwodScore}/100.` }
+  : { worth: `Is ${d.productName} worth it?`, buy: `Who should buy ${d.productName}?`, skip: `Who should skip ${d.productName}?`, cons: `What are the downsides of ${d.productName}?`, score: `Sqwod Score ${d.sqwodScore}/100.` };
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    { '@type': 'Question', name: faqQ.worth, acceptedAnswer: { '@type': 'Answer', text: `${faqQ.score} ${d.verdict}` } },
+    { '@type': 'Question', name: faqQ.buy, acceptedAnswer: { '@type': 'Answer', text: d.whoFor.buy } },
+    { '@type': 'Question', name: faqQ.skip, acceptedAnswer: { '@type': 'Answer', text: d.whoFor.skip } },
+    ...(d.cons.length ? [{ '@type': 'Question', name: faqQ.cons, acceptedAnswer: { '@type': 'Answer', text: d.cons.join(' ') } }] : []),
+  ],
+};
 ---
 <Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified" ogType="article" image={d.asset.images[0] ?? '/podcast-cover.png'}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd).replace(/</g, '\\u003c')} />
   <div class="crumb">Verified / {d.category}</div>
   <span class="verified-tag">◈ Sqwod Verified</span>
   <h1 style="margin-bottom:2px">{d.productName}</h1>

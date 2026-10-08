@@ -8,6 +8,7 @@ import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
 import { formatPrice } from '../../../../lib/price';
 import { categories, byCategory } from '../../../../config/verified-categories';
+import { INDEX_COMPARE_PAGES } from '../../../../config/seo.mjs';
 
 export async function getStaticPaths() {
   const paths: any[] = [];
@@ -57,7 +58,7 @@ const desc = lang === 'de'
 const card = (d: typeof A, isWin: boolean) => ({ d, isWin, pick: pickOf(d.urlSlug) });
 const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
 ---
-<Base lang={lang} title={title} description={desc} active="verified">
+<Base lang={lang} title={title} description={desc} active="verified" noindex={!INDEX_COMPARE_PAGES}>
   <div class="crumb"><a href={`/${lang}/verified`}>Sqwod Verified</a> / <a href={`/${lang}/verified/c/${cat.slug}`}>{cat.label[lang]}</a></div>
   <h1>{A.productName} <span class="vs">{T.vs}</span> {B.productName}</h1>
 

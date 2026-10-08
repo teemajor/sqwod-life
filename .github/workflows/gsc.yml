@@ -1,0 +1,38 @@
+name: Search Console — weekly demand pulse
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 6 * * 1'        # Mondays ~08:20 Berlin, after the weekend's data settles
+
+permissions:
+  contents: write
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Pull 28 days of queries + pages, write automation/gsc/, email the digest
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+        run: node automation/gsc.mjs --days=28
+
+      - name: Commit the snapshot
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/gsc
+          if git diff --staged --quiet; then
+            echo "No change."
+          else
+            git commit -m "gsc: weekly search pulse $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi

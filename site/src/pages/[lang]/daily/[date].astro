@@ -6,6 +6,7 @@ import { pillarMeta } from '../../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/podcast';
 import ShareBar from '../../../components/ShareBar.astro';
 import { existsSync } from 'node:fs';
+import { dailyIsFresh } from '../../../config/seo.mjs';
 import { join } from 'node:path';
 
 export async function getStaticPaths() {
@@ -23,6 +24,9 @@ const fmt = d.date.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekd
 
 // Show the player only if the episode's audio actually exists in the build.
 const audioPath = episodeAudio(d.urlSlug, lang);
+// Index budget: episodes older than DAILY_INDEX_DAYS stay readable + crawlable
+// but leave Google's index (see src/config/seo.mjs).
+const noindex = !dailyIsFresh(d.urlSlug);
 const hasAudio = existsSync(join(process.cwd(), 'public', 'audio', `${d.urlSlug}-${lang}.mp3`));
 
 const pillarLabel = (p: string) => pillarMeta[p as keyof typeof pillarMeta]?.label[lang] ?? p;
@@ -71,7 +75,7 @@ const jsonLd: Record<string, unknown> = {
 };
 if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl: new URL(audioPath, Astro.site).toString(), encodingFormat: 'audio/mpeg' };
 ---
-<Base lang={lang} title={metaTitle} description={metaDesc} ogType="article" image="/podcast-cover.png">
+<Base lang={lang} title={metaTitle} description={metaDesc} ogType="article" image="/podcast-cover.png" noindex={noindex}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <div class="crumb"><a href={`/${lang}/daily`}>← Sqwod Daily</a></div>
   <h1 style="margin:0 0 6px">Sqwod Daily</h1>

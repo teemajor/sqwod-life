@@ -14,8 +14,9 @@ interface Props {
   altPath?: string; // same page in the other language → hreflang
   image?: string;   // social card image (path or absolute); defaults to the brand cover
   ogType?: string;  // 'website' (default) | 'article'
+  noindex?: boolean; // true → <meta robots noindex,follow> (page stays crawlable, leaves the index)
 }
-const { lang, title, description = '', active, altPath, image = '/podcast-cover.png', ogType = 'website' } = Astro.props;
+const { lang, title, description = '', active, altPath, image = '/podcast-cover.png', ogType = 'website', noindex = false } = Astro.props;
 const other = lang === 'en' ? 'de' : 'en';
 const path = Astro.url.pathname;
 const otherPath = altPath ?? path.replace(`/${lang}`, `/${other}`);
@@ -42,6 +43,7 @@ const impactVerify: Record<string, string> = { value: '7dbbad87-cd73-480d-971c-7
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>{title}</title>
   {description && <meta name="description" content={description} />}
+  {noindex && <meta name="robots" content="noindex,follow" />}
   {ANALYTICS.src && ANALYTICS.websiteId && (
     <script defer src={ANALYTICS.src} data-website-id={ANALYTICS.websiteId}></script>
   )}
