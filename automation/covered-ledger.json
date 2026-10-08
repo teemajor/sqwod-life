@@ -1,86 +1,5 @@
 [
   {
-    "date": "2026-09-16",
-    "key": "dssvnews digitale ausgabe 052026 online",
-    "tokens": [
-      "dssv",
-      "news",
-      "digitale",
-      "ausgabe",
-      "2026",
-      "online"
-    ]
-  },
-  {
-    "date": "2026-09-16",
-    "key": "i am a fitness coach and these are the 10 essential tools yo",
-    "tokens": [
-      "coach",
-      "these",
-      "essential",
-      "tools",
-      "need",
-      "full",
-      "body",
-      "home",
-      "workout"
-    ]
-  },
-  {
-    "date": "2026-09-16",
-    "key": "burn boot camp adds ilona maher to growing roster of brand p",
-    "tokens": [
-      "burn",
-      "boot",
-      "camp",
-      "adds",
-      "ilona",
-      "maher",
-      "growing",
-      "roster",
-      "brand",
-      "partners"
-    ]
-  },
-  {
-    "date": "2026-09-16",
-    "key": "wizard wellness raises 1m for allergy care push",
-    "tokens": [
-      "wizard",
-      "raises",
-      "allergy",
-      "care",
-      "push"
-    ]
-  },
-  {
-    "date": "2026-09-16",
-    "key": "how george kruis went from prorugby to running fourfive a fa",
-    "tokens": [
-      "george",
-      "kruis",
-      "went",
-      "rugby",
-      "running",
-      "fourfive",
-      "fast",
-      "growth",
-      "supplements",
-      "brand"
-    ]
-  },
-  {
-    "date": "2026-09-16",
-    "key": "wearable sensor research secures 13m arc funding",
-    "tokens": [
-      "wearable",
-      "sensor",
-      "research",
-      "secures",
-      "funding"
-    ]
-  },
-  {
     "date": "2026-09-17",
     "key": "la kings 5k raises over 120000 and unites southern californi",
     "tokens": [
@@ -1382,6 +1301,94 @@
       "weighs",
       "100m",
       "expansion"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "key": "all inclusive fitness  expansion im fitnessmarkt was studiob",
+    "tokens": [
+      "inclusive",
+      "expansion",
+      "fitnessmarkt",
+      "studiobetreiber",
+      "jetzt",
+      "wissen",
+      "sollten"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "key": "wellness brand supermush raises 3 million in funding from nd",
+    "tokens": [
+      "brand",
+      "supermush",
+      "raises",
+      "million",
+      "funding",
+      "ndude",
+      "product",
+      "expansion"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "key": "the longevity movement is leaving women behind experts say",
+    "tokens": [
+      "longevity",
+      "movement",
+      "leaving",
+      "women",
+      "behind",
+      "experts"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "key": "promising everything players would want in a golf watch and ",
+    "tokens": [
+      "promising",
+      "everything",
+      "players",
+      "would",
+      "want",
+      "golf",
+      "watch",
+      "everyday",
+      "smartwatch",
+      "garmin",
+      "approach",
+      "looks",
+      "smart",
+      "craved",
+      "brand"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "key": "smart glasses im fitnessstudio",
+    "tokens": [
+      "smart",
+      "glasses",
+      "fitnessstudio"
+    ]
+  },
+  {
+    "date": "2026-10-08",
+    "key": "hfa american cancer society announce 10 grants that will exp",
+    "tokens": [
+      "american",
+      "cancer",
+      "society",
+      "announce",
+      "grants",
+      "expand",
+      "exercise",
+      "programs",
+      "people",
+      "affected"
     ]
   }
 ]
