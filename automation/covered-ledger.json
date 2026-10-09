@@ -1,99 +1,5 @@
 [
   {
-    "date": "2026-09-17",
-    "key": "la kings 5k raises over 120000 and unites southern californi",
-    "tokens": [
-      "kings",
-      "raises",
-      "unites",
-      "southern",
-      "california",
-      "community",
-      "support",
-      "youth",
-      "inclusion",
-      "social",
-      "impact",
-      "programs"
-    ]
-  },
-  {
-    "date": "2026-09-17",
-    "key": "chuze fitness adds reformer pilates through ifitfreemotion",
-    "tokens": [
-      "chuze",
-      "adds",
-      "reformer",
-      "pilates",
-      "through",
-      "ifit",
-      "freemotion"
-    ],
-    "entities": [
-      "iFit"
-    ]
-  },
-  {
-    "date": "2026-09-17",
-    "key": "membershipbased longevity business raises 5m in seed funding",
-    "tokens": [
-      "membership",
-      "based",
-      "longevity",
-      "business",
-      "raises",
-      "seed",
-      "funding"
-    ]
-  },
-  {
-    "date": "2026-09-17",
-    "key": "ouras 11b ipo runs into a sleeptracking lawsuit  and a wider",
-    "tokens": [
-      "oura",
-      "runs",
-      "sleep",
-      "tracking",
-      "lawsuit",
-      "wider",
-      "between",
-      "hype",
-      "proof"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-09-17",
-    "key": "bodylife club des monats balance fitness 038 wellnessclub",
-    "tokens": [
-      "bodylife",
-      "club",
-      "monats",
-      "balance"
-    ]
-  },
-  {
-    "date": "2026-09-17",
-    "key": "garmin instinct 3 solar now delivers unlimited battery life ",
-    "tokens": [
-      "garmin",
-      "instinct",
-      "solar",
-      "delivers",
-      "unlimited",
-      "battery",
-      "life",
-      "lower",
-      "price",
-      "amazon"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
     "date": "2026-09-18",
     "key": "hyrox orangetheory to stage joint classes at eudemonia summi",
     "tokens": [
@@ -1389,6 +1295,87 @@
       "programs",
       "people",
       "affected"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "key": "atn insights 88 of leads receive no followup within 72 hours",
+    "tokens": [
+      "insights",
+      "leads",
+      "receive",
+      "follow",
+      "within",
+      "hours"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "key": "new yoga pilates and fitness studio opens in toms river as t",
+    "tokens": [
+      "yoga",
+      "pilates",
+      "studio",
+      "opens",
+      "toms",
+      "river",
+      "township",
+      "welcomes",
+      "shine",
+      "studios"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "key": "building the handmade world of ouras latest brand campaign",
+    "tokens": [
+      "building",
+      "handmade",
+      "world",
+      "oura",
+      "latest",
+      "brand",
+      "campaign"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "key": "mahopac fitness coach is running for a reason",
+    "tokens": [
+      "mahopac",
+      "coach",
+      "running",
+      "reason"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "key": "cal ai cofounder zach yadegari secures 10m for persona an ai",
+    "tokens": [
+      "founder",
+      "zach",
+      "yadegari",
+      "secures",
+      "persona",
+      "assistant",
+      "wearable",
+      "band"
+    ]
+  },
+  {
+    "date": "2026-10-09",
+    "key": "bellevue wellness company viome expands health offerings wit",
+    "tokens": [
+      "bellevue",
+      "company",
+      "viome",
+      "expands",
+      "health",
+      "offerings",
+      "acquisition"
     ]
   }
 ]
