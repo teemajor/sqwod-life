@@ -9,8 +9,8 @@ type: evidence
 format: analysis
 conversion: list-growth
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
-asOf: 2026-07-24
+updatedAt: 2026-10-09
+asOf: 2026-10-09
 author: "Tee Major"
 gated: false
 sources:
@@ -23,13 +23,19 @@ sources:
   - { label: "Ruiz-Fernández et al. 2023 — Last & Muskelgröße modulieren die Koffeinwirkung (Eur J Nutr) · PMID 36840816", url: "https://consensus.app/papers/details/8d35131c0dcb5dbf9935c16cb3827580/" }
   - { label: "Grgic et al. 2018 — Koffein & Krafttraining, Review inkl. Sicherheit/Blutdruck (Sports Medicine) · PMID 30298476", url: "https://consensus.app/papers/details/18ce82e07e875e7c8b2ea23cc3310477/" }
   - { label: "Montalvo-Alonso et al. 2026 — CYP1A2-Genotyp & ergogene Koffeinwirkung, RCT (Scand J Med Sci Sports) · PMID 41627185", url: "https://consensus.app/papers/details/5f4e2358c1dd5dd29eb1ddacde518f6c/" }
+  - { label: "Guest et al. 2018 — Koffein, CYP1A2-Genotyp & 10-km-Zeitfahren bei 101 Athleten, RCT (Med Sci Sports Exerc) · PMID 29509641", url: "https://pubmed.ncbi.nlm.nih.gov/29509641/" }
+  - { label: "Gonçalves et al. 2017 — Gewohnheitskonsum dämpft die akute Leistungsantwort auf Koffein nicht, Crossover-Studie an 40 Radfahrern (J Applied Physiology) · PMID 28495846", url: "https://pubmed.ncbi.nlm.nih.gov/28495846/" }
+  - { label: "Grgic et al. 2019 — 2, 4 und 6 mg/kg Koffein auf Kraft & Kraftausdauer bei krafttrainierten Männern (Int J Sports Physiol Perform) · PMID 31575825", url: "https://pubmed.ncbi.nlm.nih.gov/31575825/" }
+  - { label: "Pickering & Kiely 2018 — Interindividuelle Variation der ergogenen Koffeinwirkung, Review (Sports Medicine) · PMID 28853006", url: "https://pubmed.ncbi.nlm.nih.gov/28853006/" }
+  - { label: "Gardiner et al. 2023 — Wirkung von Koffein auf den folgenden Schlaf, Meta-Analyse von 24 Studien (Sleep Medicine Reviews) · PMID 36870101", url: "https://pubmed.ncbi.nlm.nih.gov/36870101/" }
+  - { label: "Wikoff et al. 2017 — Unerwünschte Wirkungen von Koffein bei gesunden Erwachsenen, Schwangeren, Jugendlichen & Kindern, systematischer Review von 381 Studien (Food Chem Toxicol) · PMID 28438661", url: "https://pubmed.ncbi.nlm.nih.gov/28438661/" }
   - { label: "ClinicalTrials.gov — Koffein & Leistung, rekrutierend + kurz vor Start", url: "https://clinicaltrials.gov/search?intr=caffeine&aggFilters=status:not%20rec" }
 takeaways:
   - "Koffein ist eines der am besten belegten Supplements im Sport: Ein Umbrella-Review von 21 Meta-Analysen fand, dass es Ausdauer, Kraft, Muskelausdauer, Power und Sprungkraft zuverlässig verbessert (Grgic 2019). Das seltene, das den Hype einlöst."
   - "In der Ausdauer glänzt es: rund 2–4% schnellere Zeitfahrten bei 3–6 mg/kg (Southward 2018). In einem Sport der kleinen Margen ist das real."
   - "Bei der Kraft ist der Effekt kleiner, aber echt (SMD ~0,18) und wirkt — entscheidend — bei Frauen etwa so gut wie bei Männern (Grgic 2021), einer Gruppe, die die älteren Studien ignorierten."
   - "Klug dosieren, nicht viel: 3–6 mg/kg etwa 60 Minuten vorher ist das Fenster; 9 mg/kg bringen nur Zittrigkeit, schlechten Schlaf und höheren Blutdruck ohne Mehrleistung (Guest 2021)."
-  - "Die ehrlichen Einschränkungen: Zu spät genommen ruiniert es den Schlaf, es hebt den systolischen Blutdruck, und die 'personalisiere es über dein CYP1A2-Gen'-Geschichte ist noch umstritten, nicht geklärt (Grgic 2018; Montalvo-Alonso 2026)."
+  - "Die ehrlichen Einschränkungen: Es kostet rund 45 Minuten Schlaf, wenn es in den letzten ~9 Stunden vor dem Schlafen genommen wird (Gardiner 2023), es hebt den systolischen Blutdruck (Grgic 2018), und die 'personalisiere es über dein CYP1A2-Gen'-Geschichte ist umstritten — die zwei größten Studien widersprechen sich darin, ob Langsam-Metabolisierer schlechter werden (Guest 2018; Montalvo-Alonso 2026)."
 figures:
   - { label: "Meta-Analysen, die Koffein als ergogen bestätigen", value: "21", note: "Umbrella-Review über Ausdauer, Kraft, Muskelausdauer, Power & Sprungkraft; moderate Sicherheit", source: "Grgic et al. 2019, Br J Sports Med", url: "https://consensus.app/papers/details/cc9038ff4851501baf8d0c4bf5d85d31/" }
   - { label: "Verbesserung im Ausdauer-Zeitfahren vs. Placebo", value: "~2–4%", note: "Mittlere Leistung +3,0%, Zielzeit −2,2%; 46 RCTs, Dosis 3–6 mg/kg", source: "Southward et al. 2018, Sports Medicine", url: "https://consensus.app/papers/details/beb17bc16a5a5ec9a291e0b158cf183b/" }
@@ -39,9 +45,9 @@ figures:
   - { label: "Der Haken: systolischer Blutdruck", value: "steigt", note: "Koffein hebt den systolischen Blutdruck akut — echte Vorsicht bei Bluthochdruck oder Herzproblemen", source: "Grgic et al. 2018, Sports Medicine", url: "https://consensus.app/papers/details/18ce82e07e875e7c8b2ea23cc3310477/" }
 playbook:
   - { move: "Setz es dort ein, wo es sich lohnt: Ausdauer und harte, schwere Einheiten — nicht als magische Kraftpille.", why: "Der Effekt ist am größten und zuverlässigsten für die aerobe Ausdauer (~2–4% im Zeitfahren) und relevant für die Muskelausdauer; reine 1RM-Kraftzuwächse sind klein (Southward 2018; Bilondi 2024). Lenke Kunden zu den Einheiten, in denen ein paar Prozent das Ergebnis verändern." }
-  - { move: "Setz die Dosis auf 3–6 mg/kg, ~60 Minuten vorher — und dann Schluss.", why: "Das ist das evidenzbasierte Fenster; minimale wirksame Dosen liegen evtl. schon bei 2 mg/kg, und 9 mg/kg bringen Nebenwirkungen ohne Mehrnutzen (Guest 2021; Grgic 2021). Ein 70-kg-Kunde braucht ~210–420 mg — keine Pre-Workout-Ladung plus zwei Kaffees." }
-  - { move: "Achte auf die Uhr und den Blutdruck.", why: "Koffein hat eine lange Halbwertszeit und hebt den systolischen Blutdruck akut (Grgic 2018). Halte Dosen aus dem Nachmittag raus, wenn jemand auf Schlaf und Regeneration abzielt, und schick Kunden mit Bluthochdruck oder Herzproblemen zuerst zum Arzt." }
-  - { move: "Verkauf 'personalisiertes Koffein' noch nicht.", why: "Genotyp (CYP1A2) und Gewohnheitskonsum werden als entscheidend vermarktet, aber die Evidenz ist umstritten — manche Studien zeigen größere Effekte bei Schnell-Metabolisierern (AA), andere finden, dass der Genotyp den Gesamteffekt nicht ändert (Montalvo-Alonso 2026; Grgic 2021). Behandle es als Experiment zur individuellen Reaktion, nicht als DNA-Auslesung." }
+  - { move: "Setz die Dosis auf 3–6 mg/kg, ~60 Minuten vorher — und dann Schluss.", why: "Das ist das evidenzbasierte Fenster; 2 mg/kg reichten bei trainierten Männern für mehr Unterkörperkraft (Grgic 2019), und 9 mg/kg bringen Nebenwirkungen ohne Mehrnutzen (Guest 2021; Grgic 2021). Ein 70-kg-Kunde braucht ~210–420 mg — keine Pre-Workout-Ladung plus zwei Kaffees — und die Sicherheitsgrenze für den ganzen Tag liegt bei gesunden Erwachsenen bei etwa 400 mg (Wikoff 2017)." }
+  - { move: "Achte auf die Uhr und den Blutdruck.", why: "Koffein hat eine lange Halbwertszeit und hebt den systolischen Blutdruck akut (Grgic 2018). Halte Dosen aus dem Nachmittag raus, wenn jemand auf Schlaf und Regeneration abzielt — die meta-analytische Schlusszeit liegt bei rund 9 Stunden vor dem Schlafen für einen Kaffee und 13 für einen ~220-mg-Pre-Workout (Gardiner 2023) —, und schick Kunden mit Bluthochdruck oder Herzproblemen zuerst zum Arzt." }
+  - { move: "Verkauf 'personalisiertes Koffein' noch nicht.", why: "Genotyp (CYP1A2) und Gewohnheitskonsum werden als entscheidend vermarktet, aber die Evidenz ist umstritten — die größte Studie fand, dass CC-Träger (Langsam-Metabolisierer) mit 4 mg/kg 14% langsamer wurden (Guest 2018), die neueste fand, dass niemand schlechter wurde (Montalvo-Alonso 2026), und der Gewohnheitskonsum dämpft die Antwort gar nicht (Gonçalves 2017). Behandle es als Experiment zur individuellen Reaktion, nicht als DNA-Auslesung — und starte neue Kunden bei 2–3 mg/kg, damit ein schlechter Responder es günstig herausfindet." }
 hero:
   kind: lattice
   stat: "21"
@@ -54,13 +60,14 @@ verdict:
   hype:
     - { value: "9mg/kg", text: "mehr ist nicht besser — nur Zittern, schlechter Schlaf, höherer Blutdruck" }
     - { value: "DNA-Test", text: "'personalisiere über dein CYP1A2-Gen' ist umstritten, nicht geklärt" }
-  note: "BJSM-Umbrella-Review · ISSN · Sports Medicine — siehe Quellen"
+  note: "BJSM-Umbrella-Review · ISSN · MSSE · Sleep Med Rev — siehe Quellen"
 tags: ["caffeine", "supplements", "endurance", "performance", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-24", note: "Erste Ausgabe. Evidenz aktuell bis Juli 2026; nach Studienqualität bewertet. Wir aktualisieren, sobald die Pipeline liefert." }
+  - { date: "2026-10-09", note: "Zweite Ausgabe. Sechs Quellen ergänzt: die CYP1A2-Studie von Guest 2018 (die, in der Langsam-Metabolisierer langsamer wurden), Gonçalves 2017 zum Gewohnheitskonsum, die Dosisstudie von Grgic 2019, der Review von Pickering & Kiely zur individuellen Variation, die Koffein-Schlaf-Meta-Analyse von Gardiner 2023 und der Sicherheitsreview von Wikoff 2017. Abschnitt zur individuellen Reaktion neu geschrieben, um den Widerspruch der zwei großen Genotyp-Studien zu zeigen; 400-mg-Tagesgrenze und 9-Stunden-Schlaf-Schlusszeit ergänzt." }
 ---
 
-> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Studie geknüpft — einen Umbrella-Review, eine Meta-Analyse, ein Positionspapier, eine randomisierte Studie oder das Studienregister — und verlinkt. Wir bewerten die Evidenz zusätzlich: Wo sie stark ist, sagen wir das; wo sie noch früh oder umstritten ist, ebenfalls. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Bei Gesundheitsthemen ist eine Quelle, hinter der man nicht stehen kann, schlechter als gar keine. Zuletzt aktualisiert am 24. Juli 2026.
+> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Studie geknüpft — einen Umbrella-Review, eine Meta-Analyse, ein Positionspapier, eine randomisierte Studie oder das Studienregister — und verlinkt. Wir bewerten die Evidenz zusätzlich: Wo sie stark ist, sagen wir das; wo sie noch früh oder umstritten ist, ebenfalls. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Bei Gesundheitsthemen ist eine Quelle, hinter der man nicht stehen kann, schlechter als gar keine. Zuletzt aktualisiert am 9. Oktober 2026.
 
 ## Das Supplement, das den Hype tatsächlich einlöst
 
@@ -98,21 +105,27 @@ Das ist wichtig fürs Coaching eines gemischten Kaders — auf der Leistungsseit
 
 Hier verdient sich ein Coach sein Geld, denn die meisten unter- oder maßlos überdosieren. Das evidenzbasierte Fenster liegt bei **3–6 mg/kg Körpermasse, etwa 60 Minuten vor dem Training**.<sup class="fn"><a href="#source-2">2</a></sup> Für einen 70-kg-Kunden sind das rund 210–420 mg — keine Pre-Workout-Ladung obendrauf auf zwei Kaffees.
 
-Zwei Details lohnen die Weitergabe. Minimale wirksame Dosen liegen evtl. schon bei ~2 mg/kg, kleiner reicht also oft. Und der Sprung auf 9 mg/kg bringt keine Mehrleistung — nur mehr Zittrigkeit, Magenprobleme und ruinierten Schlaf.<sup class="fn"><a href="#source-2">2</a></sup><sup class="fn"><a href="#source-6">6</a></sup> Auch die Quelle ändert das Timing: Kapseln brauchen die vollen ~60 Minuten, aber Koffein-Kaugummi oder Kaffee können schon in 10–15 Minuten wirken.<sup class="fn"><a href="#source-6">6</a></sup>
+Zwei Details lohnen die Weitergabe. Minimale wirksame Dosen liegen evtl. schon bei ~2 mg/kg, kleiner reicht also oft — in einer Studie mit fünf Bedingungen an krafttrainierten Männern war **2 mg/kg** die einzige Dosis, die die Unterkörperkraft verbesserte, alle drei Dosen brachten mehr Unterkörper-Wiederholungen bei 60% des 1RM, und die Oberkörperkraft stieg leicht mit der Dosis.<sup class="fn"><a href="#source-12">12</a></sup> Der Punkt ist nicht, dass 2 besser ist als 6; sondern dass der Boden niedrig ist und der Großteil des Nutzens schon bei der kleinsten Dosis da ist, es also wenig bringt, nachzulegen. Und der Sprung auf 9 mg/kg bringt keine Mehrleistung — nur mehr Zittrigkeit, Magenprobleme und ruinierten Schlaf.<sup class="fn"><a href="#source-2">2</a></sup><sup class="fn"><a href="#source-6">6</a></sup> Auch die Quelle ändert das Timing: Kapseln brauchen die vollen ~60 Minuten, aber Koffein-Kaugummi oder Kaffee können schon in 10–15 Minuten wirken.<sup class="fn"><a href="#source-6">6</a></sup>
 
-**Evidenzgrad: stark** beim Dosisbereich; das ist gesichert genug, um mit Selbstvertrauen zu coachen.
+Für die Tagesobergrenze statt der Pre-Workout-Dosis stützt der gründlichste Sicherheitsreview — 381 Studien über fünf Endpunktbereiche — **bis zu 400 mg/Tag** bei gesunden Erwachsenen als nicht mit unerwünschten kardiovaskulären, Verhaltens-, Knochen- oder Fortpflanzungseffekten verbunden, **300 mg/Tag** in der Schwangerschaft und etwa **2,5 mg/kg/Tag** für Jugendliche.<sup class="fn"><a href="#source-15">15</a></sup> Ein 6-mg/kg-Pre-Workout bei einem 80-kg-Kunden sind allein 480 mg — schon vor dem Morgenkaffee über der Tageslinie. Das ist die Rechnung, die du einem stapelnden Kunden zeigst.
+
+**Evidenzgrad: stark** beim Dosisbereich und bei der Tagesobergrenze; das ist gesichert genug, um mit Selbstvertrauen zu coachen.
 
 ## Individuelle Reaktion: die umstrittene Front
 
 Hier trennt sich der ehrliche Coach vom Supplement-Verkäufer. Es ist in Mode, Koffein über das **CYP1A2**-Gen zu "personalisieren", das steuert, wie schnell man es verstoffwechselt. Eine randomisierte Studie von 2026 fand, dass der ergogene Effekt bei Schnell-Metabolisierern (AA) am größten und bei CC-Trägern minimal war — *und trotzdem* fand dieselbe Studie, dass der Genotyp den Gesamteffekt nicht änderte und niemand "ergolytisch" wurde, also schlechter als Placebo.<sup class="fn"><a href="#source-9">9</a></sup>
 
-Tritt man einen Schritt zurück, wird es noch unklarer: Andere Reviews kommen zu dem Schluss, dass CYP1A2-Genotyp und sogar der Gewohnheitskonsum die Reaktion gar nicht relevant beeinflussen.<sup class="fn"><a href="#source-6">6</a></sup> Übersetzt für die Trainingsfläche: Individuelle Variation ist real — manche Kunden sind aufgedreht, manche merken kaum etwas —, aber der als Orakel verkaufte Gentest ist noch nicht gedeckt.
+Die Studie, die die Gen-Story losgetreten hat, zeigt in die andere Richtung, und das solltest du kennen. Bei 101 Wettkampfathleten im 10-km-Zeitfahren machten 4 mg/kg Koffein Schnell-Metabolisierer (**AA**) **6,8% schneller**, brachten AC-Trägern nichts — und machten Langsam-Metabolisierer (**CC**) **13,7% langsamer** als Placebo, ein echter ergolytischer Effekt bei rund einem von zehn Athleten.<sup class="fn"><a href="#source-10">10</a></sup> Die zwei größten Genotyp-Studien widersprechen sich also genau in dem Punkt, der für einen Coach zählt: ob jemand *schlechter* wird. Reviews zur interindividuellen Variation ergänzen, dass der Genotyp nur ein Treiber ist — Umfeld, frühere Koffein-Exposition und deren epigenetisches Erbe formen die Antwort mit, weshalb ein Genbefund allein ein schwacher Prädiktor bleibt.<sup class="fn"><a href="#source-13">13</a></sup>
 
-**Evidenzgrad: früh / umstritten.** Coache es als individuelles Experiment ("schauen wir, wie du reagierst"), nie als DNA-Auslesung.
+Ein Teil davon ist geklärt, und zwar der, nach dem Kunden am häufigsten fragen: Gewohnheitsmäßiges Kaffeetrinken dämpft den Effekt **nicht**. Als 40 trainierte Radfahrer nach Tageskonsum geteilt (rund 60, 140 und 350 mg/Tag) und mit 6 mg/kg versorgt wurden, verbesserten alle drei Gruppen ihr Zeitfahren um denselben Betrag.<sup class="fn"><a href="#source-11">11</a></sup> Dein Drei-Espresso-Kunde muss vor dem Renntag nicht "entwöhnen".
+
+Tritt man einen Schritt zurück, wird es noch unklarer: Andere Reviews kommen zu dem Schluss, dass der CYP1A2-Genotyp die durchschnittliche Reaktion gar nicht relevant beeinflusst.<sup class="fn"><a href="#source-6">6</a></sup> Übersetzt für die Trainingsfläche: Individuelle Variation ist real — manche Kunden sind aufgedreht, manche merken kaum etwas —, aber der als Orakel verkaufte Gentest ist noch nicht gedeckt.
+
+**Evidenzgrad: umstritten beim Genotyp, stark dafür, dass Gewohnheitskonsum keine Rolle spielt.** Coache es als individuelles Experiment ("schauen wir, wie du reagierst"), nie als DNA-Auslesung — und starte neue Kunden bei 2–3 mg/kg, damit die seltenen schlechten Responder es an einem Trainingstag merken, nicht am Renntag.
 
 ## Die ehrlichen Schattenseiten
 
-Koffeins echte Risiken sind nicht exotisch — es sind Schlaf und Blutdruck. Es hat eine lange Halbwertszeit, eine Nachmittagsdosis kann also leise die Regeneration zerlegen, die du in dieser Nacht aufbauen willst. Und es hebt den systolischen Blutdruck kurzfristig zuverlässig, was echte Vorsicht bei allen mit Bluthochdruck oder Herzproblemen bedeutet — das ist ein Arztgespräch, kein Pre-Workout-Tipp.<sup class="fn"><a href="#source-8">8</a></sup>
+Koffeins echte Risiken sind nicht exotisch — es sind Schlaf und Blutdruck. Es hat eine lange Halbwertszeit, eine Nachmittagsdosis kann also leise die Regeneration zerlegen, die du in dieser Nacht aufbauen willst. Der Schlafpreis hat jetzt Zahlen: Über 24 Studien kürzte Koffein den **Gesamtschlaf um 45 Minuten** und die Schlafeffizienz um 7%, fügte 9 Minuten Einschlafzeit und 12 Minuten nächtliches Wachliegen hinzu und beschnitt den Tiefschlaf — mit modellierten Schlusszeiten von rund **8,8 Stunden vor dem Schlafen für einen Kaffee** und **13,2 Stunden für einen ~220-mg-Pre-Workout**.<sup class="fn"><a href="#source-14">14</a></sup> Eine Trainingseinheit um 18 Uhr mit einem Scoop Pre-Workout ist nach dieser Rechnung ein Mitternachtsproblem. Und es hebt den systolischen Blutdruck kurzfristig zuverlässig, was echte Vorsicht bei allen mit Bluthochdruck oder Herzproblemen bedeutet — das ist ein Arztgespräch, kein Pre-Workout-Tipp.<sup class="fn"><a href="#source-8">8</a></sup>
 
 Angst, Zittrigkeit und Magenprobleme steigen ebenfalls mit der Dosis, ein weiterer Grund, warum der Megadosis-Ansatz nach hinten losgeht.<sup class="fn"><a href="#source-6">6</a></sup> Die Leistungsdecke ist niedrig, und der Nebenwirkungs-Boden fällt schnell weg.
 
@@ -120,7 +133,7 @@ Angst, Zittrigkeit und Magenprobleme steigen ebenfalls mit der Dosis, ein weiter
 
 ## Was als Nächstes untersucht wird
 
-Das laufende Register zeigt, wohin das Feld steuert — und es ist aufschlussreich. Rekrutierende und kurz vor dem Start stehende Studien testen die Koffeindosierung gegen **CYP1A2- und ADORA2A-Genotyp** in der Radausdauer, **Taurin-Koffein**-Mischungen bei Profifußballern und Koffeins Wirkung auf die **Fettoxidation** während der Belastung.<sup class="fn"><a href="#source-10">10</a></sup>
+Das laufende Register zeigt, wohin das Feld steuert — und es ist aufschlussreich. Rekrutierende und kurz vor dem Start stehende Studien testen die Koffeindosierung gegen **CYP1A2- und ADORA2A-Genotyp** in der Radausdauer, **Taurin-Koffein**-Mischungen bei Profifußballern und Koffeins Wirkung auf die **Fettoxidation** während der Belastung.<sup class="fn"><a href="#source-16">16</a></sup>
 
 Beachte die Verschiebung: Kaum jemand fragt noch "wirkt es" — das ist geklärt. Die offenen Fragen sind *für wen*, *in welcher Kombination* und *lässt es sich wirklich personalisieren*. Wir aktualisieren diesen Beitrag, sobald diese Studien Ergebnisse liefern — das ist der Sinn einer Evidenzseite, die lebt statt einzufrieren.
 
@@ -128,7 +141,7 @@ Beachte die Verschiebung: Kaum jemand fragt noch "wirkt es" — das ist geklärt
 
 Wenn der nächste Kunde fragt, hier das Ganze in Klartext:
 
-*"Koffein ist das seltene Supplement, das den Hype größtenteils einlöst. Wenn du eine Ausdauereinheit oder einen harten Hebe-Tag hast, helfen etwa 3 bis 6 Milligramm pro Kilo — für die meisten ein bis drei starke Kaffees — eine Stunde vorher ein echtes, wenn auch kleines Stück. Mehr ist nicht besser: Megadosing macht dich nur zittrig und ruiniert den Schlaf. Halt es aus dem Nachmittag raus, wenn du wirklich regenerieren willst, und wenn du Blutdruck- oder Herzsachen hast, frag zuerst deinen Arzt. Und ignorier den 'lass dein Koffein-Gen testen'-Hype vorerst — wir schauen einfach, wie du reagierst."*
+*"Koffein ist das seltene Supplement, das den Hype größtenteils einlöst. Wenn du eine Ausdauereinheit oder einen harten Hebe-Tag hast, helfen etwa 3 bis 6 Milligramm pro Kilo — für die meisten ein bis drei starke Kaffees — eine Stunde vorher ein echtes, wenn auch kleines Stück. Mehr ist nicht besser: Megadosing macht dich nur zittrig und ruiniert den Schlaf. Halt es aus den letzten neun Stunden vor dem Schlafen raus, wenn du wirklich regenerieren willst, bleib über den ganzen Tag unter etwa 400 Milligramm, und mach dir keine Sorgen um 'Toleranz' durch deinen täglichen Kaffee, die dämpft den Effekt nicht. Wenn du Blutdruck- oder Herzsachen hast, frag zuerst deinen Arzt. Und ignorier den 'lass dein Koffein-Gen testen'-Hype vorerst — wir schauen einfach, wie du reagierst."*
 
 Das war's. Keine Überversprechen, keine Bro-Science, kein Megadosing. Nur die Evidenz, übersetzt in etwas, mit dem ein Mensch handeln kann — und genau das ist der ganze Job.
 

@@ -9,8 +9,8 @@ type: evidence
 format: analysis
 conversion: products
 publishedAt: 2026-07-06
-updatedAt: 2026-07-06
-asOf: 2026-07-06
+updatedAt: 2026-10-09
+asOf: 2026-10-09
 author: "Tee Major"
 gated: false
 sources:
@@ -23,12 +23,18 @@ sources:
   - { label: "Longobardi et al. 2023 — Kidney narrative review (Nutrients) · PMID 36986197", url: "https://consensus.app/papers/details/6f38e20fc9ee54d3ba94805144fa2bb9/" }
   - { label: "Lak et al. 2025 — Creatine & hair loss RCT (JISSN) · PMID 40265319", url: "https://consensus.app/papers/details/f1512181e38958baa713a6587cda267e/" }
   - { label: "van der Merwe et al. 2009 — DHT in rugby players (Clin J Sport Med) · PMID 19741313", url: "https://consensus.app/papers/details/acb9f7b24a5155349bcf9e0a1d666868/" }
+  - { label: "Kreider et al. 2017 — ISSN position stand: safety & efficacy of creatine supplementation (J Int Soc Sports Nutr) · PMID 28615996", url: "https://pubmed.ncbi.nlm.nih.gov/28615996/" }
+  - { label: "Antonio et al. 2021 — Common questions & misconceptions about creatine, expert evidence review (J Int Soc Sports Nutr) · PMID 33557850", url: "https://pubmed.ncbi.nlm.nih.gov/33557850/" }
+  - { label: "Lanhers et al. 2017 — Creatine & upper-limb strength, meta-analysis of 53 RCTs / 1,138 people (Sports Medicine) · PMID 27328852", url: "https://pubmed.ncbi.nlm.nih.gov/27328852/" }
+  - { label: "Chilibeck et al. 2017 — Creatine + resistance training in older adults, meta-analysis of 22 RCTs / 721 people (Open Access J Sports Med) · PMID 29138605", url: "https://pubmed.ncbi.nlm.nih.gov/29138605/" }
+  - { label: "de Souza e Silva et al. 2019 — Creatine & renal function, systematic review + meta-analysis (J Renal Nutrition) · PMID 31375416", url: "https://pubmed.ncbi.nlm.nih.gov/31375416/" }
+  - { label: "Gordji-Nejad et al. 2024 — Single high dose of creatine & cognition during sleep deprivation, crossover trial with brain MRS (Scientific Reports) · PMID 38418482", url: "https://pubmed.ncbi.nlm.nih.gov/38418482/" }
   - { label: "ClinicalTrials.gov — creatine monohydrate, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=creatine%20monohydrate&aggFilters=status:not%20rec" }
 takeaways:
-  - "For strength, the evidence is strong: creatine + resistance training adds meaningfully more upper- and lower-body strength than training alone (Wang 2024 meta-analysis, 23 studies)."
+  - "For strength, the evidence is strong: creatine + resistance training adds meaningfully more upper- and lower-body strength than training alone (Wang 2024, 23 studies; Lanhers 2017, 53 studies) — and in older adults it adds about 1.4 kg of lean tissue on top of training (Chilibeck 2017)."
   - "5 g/day works. Loading (20 g/day for ~7 days) fills your stores faster but isn't required — it only changes how quickly you get there, not the destination (Candow 2024)."
   - "The hair-loss fear traces to ONE small 2009 study on a proxy marker. A 2025 RCT measured hair directly and found nothing (Lak 2025). Retire the myth."
-  - "Kidney harm in healthy people is not supported by controlled trials — serum creatinine can rise slightly because creatine converts to it, not because kidneys are failing (Longobardi 2023)."
+  - "Kidney harm in healthy people is not supported by controlled trials — a meta-analysis found no renal damage at the doses and durations studied, and serum creatinine can rise slightly because creatine converts to it, not because kidneys are failing (de Souza e Silva 2019; Longobardi 2023)."
   - "The frontier worth watching: 60+ trials are recruiting now, several testing creatine to protect muscle during GLP-1 (weight-loss drug) use — a question your clients will ask within a year."
 figures:
   - { label: "Upper-body strength gain vs. placebo", value: "+4.43 kg", note: "Weighted mean difference, creatine + resistance training, adults under 50", source: "Wang et al. 2024, Nutrients (23 studies)", url: "https://consensus.app/papers/details/6ff33354c09057cbafded17affbd503b/" }
@@ -38,9 +44,9 @@ figures:
   - { label: "Effect on DHT & hair over 12 weeks", value: "No difference", note: "First RCT to measure hair follicle health directly; no change vs. placebo", source: "Lak et al. 2025, JISSN", url: "https://consensus.app/papers/details/f1512181e38958baa713a6587cda267e/" }
   - { label: "Creatine trials recruiting or about to", value: "60+", note: "Live pipeline as of July 2026 — the questions science is answering next", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=creatine%20monohydrate&aggFilters=status:not%20rec" }
 playbook:
-  - { move: "Default the recommendation to 5 g/day of plain creatine monohydrate, every day, timing irrelevant.", why: "It's the only form with deep evidence, and maintenance dosing reaches full stores within ~3–4 weeks without a loading phase (Candow 2024). Simpler = higher adherence." }
+  - { move: "Default the recommendation to 5 g/day of plain creatine monohydrate, every day, timing irrelevant.", why: "It's the only form with deep evidence — the expert review finds no other form superior to monohydrate (Antonio 2021) — and maintenance dosing reaches full stores within ~3–4 weeks without a loading phase (Candow 2024). Simpler = higher adherence." }
   - { move: "Kill the hair-loss objection on the spot with the 2025 RCT.", why: "It's the #1 reason male clients quietly skip creatine. One small 2009 study on a hormone proxy started it; a 2025 trial measured hair directly and found no effect (Lak 2025). You can now answer it with evidence, not vibes." }
-  - { move: "Actively coach female clients toward it.", why: "Women carry 70–80% lower baseline creatine stores and are under-served by the myth-heavy discourse. Evidence supports strength benefits, and the research base for women is expanding fast (Smith-Ryan 2021)." }
+  - { move: "Actively coach female clients toward it.", why: "Women carry 70–80% lower baseline creatine stores and are under-served by the myth-heavy discourse. Evidence supports strength benefits, and the research base for women is expanding fast (Smith-Ryan 2021). Same for your older clients: across 22 trials, creatine plus lifting added ~1.4 kg of lean tissue and more chest- and leg-press strength than lifting alone (Chilibeck 2017)." }
   - { move: "Get ahead of the GLP-1 question now.", why: "Clients on weight-loss drugs are losing muscle alongside fat. Multiple trials are testing creatine + resistance training to protect lean mass during GLP-1 use. It's not proven yet — but you want to be the coach who knew the question was coming." }
 hero:
   kind: lattice
@@ -49,9 +55,10 @@ hero:
 tags: ["creatine", "supplements", "method", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-06", note: "First edition. Evidence current to July 2026; graded by strength of study design. We update when the pipeline delivers." }
+  - { date: "2026-10-09", note: "Second edition. Six sources added: the ISSN position stand (Kreider 2017), the Antonio 2021 expert review, the Lanhers 2017 upper-limb meta-analysis, the Chilibeck 2017 older-adults meta-analysis, the de Souza e Silva 2019 renal meta-analysis and the Gordji-Nejad 2024 sleep-deprivation trial. New section on older clients; monohydrate-vs-other-forms and the 30 g/day five-year safety record added." }
 ---
 
-> **How we sourced this.** Every claim below is tied to a named study — a meta-analysis, a randomised trial, or the live trial registry — and linked. We also graded the evidence: where it's strong, we say so; where it's early or thin, we say that too. This piece was reviewed for accuracy before publishing and carries a real byline, because on health topics a citation you can't stand behind is worse than no citation at all. Last updated 6 July 2026.
+> **How we sourced this.** Every claim below is tied to a named study — a meta-analysis, a randomised trial, or the live trial registry — and linked. We also graded the evidence: where it's strong, we say so; where it's early or thin, we say that too. This piece was reviewed for accuracy before publishing and carries a real byline, because on health topics a citation you can't stand behind is worse than no citation at all. Last updated 9 October 2026.
 
 ## The most-asked question in your gym, answered properly
 
@@ -63,7 +70,7 @@ One framing up front: creatine is the most-studied sports supplement in existenc
 
 ## What it actually does (this part is settled)
 
-For strength and lean mass in people who lift, the evidence isn't ambiguous. A 2024 meta-analysis of 23 studies found creatine combined with resistance training produced meaningfully greater strength gains than training alone — a weighted mean difference of **+4.43 kg** on upper-body and **+11.35 kg** on lower-body strength versus placebo.<sup class="fn"><a href="#source-1">1</a></sup> That's not a rounding error; that's a real edge for a client, from a supplement that costs a few cents a day.
+For strength and lean mass in people who lift, the evidence isn't ambiguous. A 2024 meta-analysis of 23 studies found creatine combined with resistance training produced meaningfully greater strength gains than training alone — a weighted mean difference of **+4.43 kg** on upper-body and **+11.35 kg** on lower-body strength versus placebo.<sup class="fn"><a href="#source-1">1</a></sup> That's not a rounding error; that's a real edge for a client, from a supplement that costs a few cents a day. An older, larger meta-analysis of 53 trials and 1,138 people found the same thing for the upper body specifically — a pooled effect of about **0.32** on upper-limb strength, with bench press at 0.27 — and, usefully, the effect held **regardless of age, sex, training status, loading or not, dose or duration**.<sup class="fn"><a href="#source-12">12</a></sup> The International Society of Sports Nutrition's position stand sums up the field: creatine reliably raises muscle creatine stores and high-intensity performance, and short- and long-term use is safe in healthy people.<sup class="fn"><a href="#source-10">10</a></sup>
 
 The mechanism is unglamorous and worth knowing: creatine helps your muscles rapidly regenerate ATP, the currency of short, hard efforts. More available energy for that fifth rep, set after set, week after week — and those extra reps are where adaptation actually comes from. Creatine doesn't build the muscle. It lets your client do the work that builds the muscle.
 
@@ -77,6 +84,8 @@ Here's the whole protocol: **5 grams of creatine monohydrate a day, every day.**
 
 The "loading phase" you've heard about — 20 g/day for about a week — genuinely works, and it fills your muscle stores faster. But a 2024 dosing review is clear that loading changes *how fast* you get to full stores, not *whether* you get there.<sup class="fn"><a href="#source-6">6</a></sup> Skip loading and take 5 g/day, and you reach the same place in roughly three to four weeks. For most clients, the simpler protocol wins because they'll actually stick to it.
 
+The form is settled too: plain **monohydrate**. A 2021 expert review walked through the twelve most common creatine questions — water retention, "is it a steroid," kidneys, hair, cramping, loading, older adults, women, other forms — and on the form question concluded that no alternative form (HCl, buffered, ethyl ester) has shown superiority to monohydrate, which is also the cheapest and most stable.<sup class="fn"><a href="#source-11">11</a></sup> The fancy tub is paying for marketing, not creatine.
+
 Timing is a non-issue. Before training, after, or with breakfast — it doesn't meaningfully matter. Don't let a client turn "when do I take it" into a reason to not take it. Consistency is the only variable that counts.
 
 **Evidence grade: strong** for the dose; the small extra benefit of taking it with carbs post-workout is real but minor.
@@ -85,7 +94,7 @@ Timing is a non-issue. Before training, after, or with breakfast — it doesn't 
 
 ### "Creatine will ruin my kidneys"
 
-This is the objection dressed up as caution, and it's not supported by controlled research in healthy people. The confusion is almost poetic: creatine spontaneously converts into a waste product called *creatinine* — which is exactly what a standard kidney test measures. So supplementing can nudge that marker up without anything being wrong with the kidney at all. Narrative reviews of the controlled evidence conclude creatine is safe for renal function in healthy individuals.<sup class="fn"><a href="#source-7">7</a></sup> The honest caveat: people with pre-existing kidney disease, and pregnant clients, weren't the subjects of this research — so for them, the answer is "talk to your doctor," not "go ahead."
+This is the objection dressed up as caution, and it's not supported by controlled research in healthy people. The confusion is almost poetic: creatine spontaneously converts into a waste product called *creatinine* — which is exactly what a standard kidney test measures. So supplementing can nudge that marker up without anything being wrong with the kidney at all. Narrative reviews of the controlled evidence conclude creatine is safe for renal function in healthy individuals.<sup class="fn"><a href="#source-7">7</a></sup> The pooled data say the same: a systematic review and meta-analysis of the controlled trials found **no renal damage** at the doses and durations studied, with serum creatinine and urea changes that stayed within normal function.<sup class="fn"><a href="#source-14">14</a></sup> And the ISSN's safety summary goes further than most coaches realise — supplementation of **up to 30 g/day for five years** has been well tolerated in healthy people and in patient groups from infants to the elderly.<sup class="fn"><a href="#source-10">10</a></sup> The honest caveat: people with pre-existing kidney disease, and pregnant clients, weren't the subjects of this research — so for them, the answer is "talk to your doctor," not "go ahead."
 
 **Evidence grade: strong for healthy adults; genuinely unstudied in kidney-disease and pregnancy — don't advise there.**
 
@@ -105,17 +114,23 @@ Backwards, if anything. Women carry **70–80% lower** baseline creatine stores 
 
 **Evidence grade: growing and positive; still fewer female-specific trials than male, which is changing fast.**
 
+## Your older clients: the strongest under-used case
+
+If there's one group that gets talked *out* of creatine by the myths above, it's the 55-plus client — and they're the ones with the clearest evidence of benefit. A meta-analysis of 22 randomised trials in 721 older adults (mean ages 57–70) found that adding creatine to a resistance-training programme produced **1.37 kg more lean tissue** than training with placebo, plus greater chest-press (SMD 0.35) and leg-press (SMD 0.24) strength gains.<sup class="fn"><a href="#source-13">13</a></sup> Those are the exact outcomes that keep someone independent in their seventies. A kilo and a half of muscle is not a bodybuilding vanity number for a 65-year-old; it's balance, stairs and carrying groceries.
+
+**Evidence grade: strong.** Twenty-two trials, consistent direction, outcomes that matter. Lead with this for masters clients, not with the hair question.
+
 ## The "maybe" pile — promising, not proven
 
 This is where an honest coach earns trust: knowing the line between *supported* and *being studied*.
 
-There's genuinely interesting evidence that creatine supports **memory**, with a moderate-certainty effect and a notably larger benefit in older adults.<sup class="fn"><a href="#source-3">3</a>,&#8202;<a href="#source-4">4</a></sup> That's real, and it's a fair thing to mention — as a possible bonus, not a headline promise. Beyond that, researchers are actively investigating creatine's role in areas like concussion recovery, mood, and healthy ageing. Those are open research questions, not established coaching claims. If you find yourself telling a client creatine "treats" anything, stop — that's a sentence for a doctor and a finished trial, not a gym floor.
+There's genuinely interesting evidence that creatine supports **memory**, with a moderate-certainty effect and a notably larger benefit in older adults.<sup class="fn"><a href="#source-3">3</a>,&#8202;<a href="#source-4">4</a></sup> That's real, and it's a fair thing to mention — as a possible bonus, not a headline promise. A 2024 brain-imaging study added an intriguing wrinkle: a single large dose (0.35 g/kg, about 25 g for a 70-kg adult) during 21 hours of sleep deprivation measurably shifted brain energy metabolites and improved processing speed over the following hours — a one-off "rescue" effect, in 15 people, that nobody should turn into a protocol yet.<sup class="fn"><a href="#source-15">15</a></sup> Beyond that, researchers are actively investigating creatine's role in areas like concussion recovery, mood, and healthy ageing. Those are open research questions, not established coaching claims. If you find yourself telling a client creatine "treats" anything, stop — that's a sentence for a doctor and a finished trial, not a gym floor.
 
-**Evidence grade: memory, moderate; everything else here, early — frame as "researchers are studying," never as a promise.**
+**Evidence grade: memory, moderate; the sleep-deprivation result, a single small trial; everything else here, early — frame as "researchers are studying," never as a promise.**
 
 ## What's about to be proven (the part nobody else shows you)
 
-Here's what a static supplement encyclopedia can't give you: the live edge of the field. Right now the clinical registry lists **60+ creatine trials recruiting or about to start**<sup class="fn"><a href="#source-10">10</a></sup> — and the pattern in them tells you where the puck is going.
+Here's what a static supplement encyclopedia can't give you: the live edge of the field. Right now the clinical registry lists **60+ creatine trials recruiting or about to start**<sup class="fn"><a href="#source-16">16</a></sup> — and the pattern in them tells you where the puck is going.
 
 The one to watch: **creatine during GLP-1 (weight-loss drug) use.** Several new trials are testing whether creatine plus resistance training can protect lean muscle in people losing weight on these medications — because muscle loss is one of the real downsides of that fat loss. Your clients are already on these drugs, or asking about them. Nobody can claim creatine is proven for this yet. But the coach who understands the question before the answer arrives is the coach clients trust when it does.
 
@@ -125,7 +140,7 @@ Other live threads: dosing strategies specific to older adults, creatine through
 
 When the next client asks, here's the whole thing in plain language:
 
-*"Take five grams of creatine monohydrate a day, any time, every day. It's the most-researched supplement there is — it'll help you get more out of your training over the next few months. You don't need to 'load' it and you don't need the fancy versions. The kidney and hair-loss worries aren't supported by the studies that actually measured them. If you're pregnant or have a kidney condition, check with your doctor first. Otherwise, it's about as safe and proven as supplements get."*
+*"Take five grams of creatine monohydrate a day, any time, every day. It's the most-researched supplement there is — it'll help you get more out of your training over the next few months. You don't need to 'load' it and you don't need the fancy versions — plain monohydrate is the one all the research used. If you're over 55 it's arguably even more worth it, because it helps you hold onto muscle. The kidney and hair-loss worries aren't supported by the studies that actually measured them. If you're pregnant or have a kidney condition, check with your doctor first. Otherwise, it's about as safe and proven as supplements get."*
 
 That's it. No hedging, no bro-science, no overpromising. Just the evidence, translated into something a human can act on — which is the entire job.
 

@@ -9,8 +9,8 @@ type: evidence
 format: analysis
 conversion: products
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
-asOf: 2026-07-24
+updatedAt: 2026-10-09
+asOf: 2026-10-09
 author: "Tee Major"
 gated: false
 sources:
@@ -22,25 +22,32 @@ sources:
   - { label: "Lak et al. 2024 — Timing sofort vs. 3 h, RCT bei trainierten Männern (Frontiers in Nutrition) · PMID 38846541", url: "https://consensus.app/papers/details/23d784f077185210ba5615befdf13c57/" }
   - { label: "Yasuda et al. 2020 — Gleichmäßige Proteinverteilung über die Mahlzeiten, RCT (The Journal of Nutrition) · PMID 32321161", url: "https://consensus.app/papers/details/9558dff264475b41920e3445d5532da8/" }
   - { label: "Esmarck et al. 2001 — Protein-Timing nach dem Training bei älteren Männern, RCT (The Journal of Physiology) · PMID 11507179", url: "https://consensus.app/papers/details/68c3012682f0574dae6a91dd2c3ce44a/" }
+  - { label: "Morton et al. 2018 — Proteinsupplementation & Zuwächse durch Krafttraining, Meta-Analyse + Meta-Regression von 49 RCTs / 1.863 Personen (Br J Sports Med) · PMID 28698222", url: "https://pubmed.ncbi.nlm.nih.gov/28698222/" }
+  - { label: "Tagawa et al. 2021 — Proteinzufuhr & Zuwachs fettfreier Masse, Dosis-Wirkungs-Meta-Analyse von 105 RCTs / 5.402 Personen (Nutrition Reviews) · PMID 33300582", url: "https://pubmed.ncbi.nlm.nih.gov/33300582/" }
+  - { label: "Moore et al. 2015 — Proteindosis pro Mahlzeit für maximale Muskelproteinsynthese bei älteren vs. jüngeren Männern (J Gerontol A Biol Sci Med Sci) · PMID 25056502", url: "https://pubmed.ncbi.nlm.nih.gov/25056502/" }
+  - { label: "Trommelen et al. 2023 — 100 g vs. 25 g Protein nach dem Training, Vierfach-Tracer-Studie: keine Obergrenze der anabolen Antwort (Cell Reports Medicine) · PMID 38118410", url: "https://pubmed.ncbi.nlm.nih.gov/38118410/" }
+  - { label: "Bauer et al. 2013 — PROT-AGE-Positionspapier: Proteinzufuhr für ältere Menschen (J Am Med Dir Assoc) · PMID 23867520", url: "https://pubmed.ncbi.nlm.nih.gov/23867520/" }
+  - { label: "Devries et al. 2018 — Proteinreiche Ernährung & Nierenfunktion bei gesunden Erwachsenen, Meta-Analyse von 28 RCTs / 1.358 Personen (The Journal of Nutrition) · PMID 30383278", url: "https://pubmed.ncbi.nlm.nih.gov/30383278/" }
+  - { label: "Hevia-Larraín et al. 2021 — Rein pflanzliches vs. omnivores Protein bei 1,6 g/kg/Tag über 12 Wochen Krafttraining (Sports Medicine) · PMID 33599941", url: "https://pubmed.ncbi.nlm.nih.gov/33599941/" }
   - { label: "ClinicalTrials.gov — Proteinsupplementierung & Krafttraining, rekrutierend + kurz vor Start", url: "https://clinicaltrials.gov/search?intr=protein%20supplementation&aggFilters=status:not%20rec" }
 takeaways:
   - "Die einzige Zahl, die wirklich zählt, ist der Tagesgesamtwert: etwa 1,6–2,2 g/kg/Tag, kombiniert mit Krafttraining, maximiert Muskel- und Kraftzuwächse (Jäger 2017; Nunes 2022). Triffst du den, ist der Rest großteils Rauschen."
   - "Protein baut nur Kraft auf, wenn es Training gibt, auf dem es aufbauen kann: Eine Dosis-Wirkungs-Meta-Analyse fand Kraftzuwachs durch Protein nur zusammen mit Krafttraining, nicht ohne (Tagawa 2022)."
   - "Das 30-Minuten-'anabole Fenster' ist für deine normalen Kunden großteils ein Mythos: Berücksichtigt man das Tagesgesamtprotein, zeigt das Timing keinen eigenständigen Effekt (Schoenfeld 2013; Lak 2024)."
   - "Wo Timing wirklich zählt, sind ältere Kunden: Bei älteren Männern baute Protein direkt nach dem Training Muskeln auf, dasselbe Protein 2 Stunden später nicht (Esmarck 2001)."
-  - "Praktische Dosis: rund 0,25 g/kg (20–40 g) pro Mahlzeit, alle 3–4 Stunden verteilt, aus vollständigen, leucinreichen Quellen (Jäger 2017)."
+  - "Praktische Dosis: rund 0,25 g/kg (20–40 g) pro Mahlzeit, alle 3–4 Stunden verteilt, aus vollständigen, leucinreichen Quellen (Jäger 2017) — und etwa 0,40 g/kg pro Mahlzeit für ältere Kunden, die pro Portion mehr brauchen, um dieselbe Antwort zu bekommen (Moore 2015)."
 figures:
-  - { label: "Tagesprotein, das die Gewinne maximiert", value: "1,6–2,2 g/kg", note: "Mit Krafttraining; ISSN-Basis 1,4–2,0 g/kg, kaum Zusatznutzen über ~2,2", source: "Jäger et al. 2017, ISSN-Positionspapier", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
+  - { label: "Tagesprotein, das die Gewinne maximiert", value: "1,6–2,2 g/kg", note: "Mit Krafttraining; ISSN-Basis 1,4–2,0 g/kg, und eine Meta-Regression aus 49 Studien setzt das Plateau für Supplementation bei ~1,62 g/kg (Morton 2018)", source: "Jäger et al. 2017, ISSN-Positionspapier", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
   - { label: "Kraftzuwachs pro +0,1 g/kg/Tag", value: "+0,72%", note: "Dosisabhängig bis ~1,5 g/kg/Tag, dann Plateau — und nur MIT Krafttraining", source: "Tagawa et al. 2022, Sports Medicine - Open (82 RCTs)", url: "https://consensus.app/papers/details/1cc44324a6fe5d85931fa107fcf4e774/" }
   - { label: "Effekt von mehr Protein auf die fettfreie Masse", value: "SMD +0,22", note: "Moderate Evidenz, mit Krafttraining; signifikant ab ≥1,6 g/kg (unter 65) und ≥1,2 g/kg (65+)", source: "Nunes et al. 2022, J Cachexia Sarcopenia Muscle (74 RCTs)", url: "https://consensus.app/papers/details/005a4aa8746d5323bc1d623cb7279c0b/" }
   - { label: "Das 'anabole Fenster'", value: "≈ Mythos", note: "Für die meisten Trainierenden: kein eigenständiger Timing-Effekt, sobald das Tagesgesamtprotein berücksichtigt ist", source: "Schoenfeld et al. 2013, J Int Soc Sports Nutr", url: "https://consensus.app/papers/details/37c22c79ee875823b12c85b6a365ffa0/" }
-  - { label: "Dosis pro Mahlzeit", value: "0,25 g/kg", note: "~20–40 g pro Mahlzeit, alle 3–4 h, je mit ~700–3000 mg Leucin", source: "Jäger et al. 2017, ISSN-Positionspapier", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
+  - { label: "Dosis pro Mahlzeit", value: "0,25 g/kg", note: "~20–40 g pro Mahlzeit, alle 3–4 h, je mit ~700–3000 mg Leucin; ältere Männer brauchten ~0,40 g/kg pro Mahlzeit für dasselbe Synthese-Plateau (Moore 2015)", source: "Jäger et al. 2017, ISSN-Positionspapier", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
   - { label: "Wo Timing DOCH zählt", value: "Ältere", note: "Protein direkt nach dem Training baute Muskeln auf; dieselbe Dosis 2 h später nicht — bei älteren Männern", source: "Esmarck et al. 2001, The Journal of Physiology", url: "https://consensus.app/papers/details/68c3012682f0574dae6a91dd2c3ce44a/" }
 playbook:
-  - { move: "Coache zuerst den Tagesgesamtwert, alles andere danach: ~1,6–2,2 g/kg/Tag.", why: "Das Gesamtprotein ist der stärkste Prädiktor der Gewinne; die Dosis-Wirkung steigt bis rund 1,5–1,6 g/kg und flacht dann ab (Tagawa 2022; Nunes 2022). Sitzt die Tageszahl, hast du ~90% des Nutzens, bevor du Timing oder Art anfasst." }
+  - { move: "Coache zuerst den Tagesgesamtwert, alles andere danach: ~1,6–2,2 g/kg/Tag.", why: "Das Gesamtprotein ist der stärkste Prädiktor der Gewinne; die Dosis-Wirkung steigt bis rund 1,5–1,6 g/kg und flacht dann ab (Tagawa 2022; Nunes 2022; Morton 2018). Sitzt die Tageszahl, hast du ~90% des Nutzens, bevor du Timing oder Art anfasst." }
   - { move: "Verkauf normalen Kunden nicht das 'Fenster' nach dem Training — verkauf Konsistenz.", why: "Bei gleichem Gesamtprotein zeigt das Timing bei Trainierten keinen eigenständigen Effekt auf Kraft oder Größe (Schoenfeld 2013; Lak 2024). Einem Kunden zu sagen, er habe sein 'Fenster verpasst', erfindet ein Problem; ihm zu sagen, er solle seine Tageszahl treffen, löst ein echtes." }
-  - { move: "Bei älteren Kunden das Timing schon straffen.", why: "Das anabole Fenster ist real, wo anabole Resistenz ist: Bei älteren Männern baute Protein direkt nach dem Training Muskeln auf, eine 2-Stunden-Verzögerung nicht (Esmarck 2001), und Protein nach dem Training oder vor dem Schlaf hilft dieser Gruppe am meisten (Zhou 2023). Bei Senioren zählt das Wann mehr." }
-  - { move: "Verteil es: ~0,25 g/kg (20–40 g) pro Mahlzeit, 3–4 Mahlzeiten, vollständige Quellen.", why: "Gleichmäßige Verteilung über den Tag schlägt ein abendlastiges Muster leicht (Yasuda 2020), und jede Dosis braucht genug Leucin (~700–3000 mg) aus Milch, Whey, Fleisch oder einer Mischquelle, um die Muskelproteinsynthese voll auszulösen (Jäger 2017)." }
+  - { move: "Bei älteren Kunden das Timing schon straffen.", why: "Das anabole Fenster ist real, wo anabole Resistenz ist: Bei älteren Männern baute Protein direkt nach dem Training Muskeln auf, eine 2-Stunden-Verzögerung nicht (Esmarck 2001), und Protein nach dem Training oder vor dem Schlaf hilft dieser Gruppe am meisten (Zhou 2023). Sie brauchen auch mehr pro Mahlzeit — etwa 0,40 g/kg statt 0,24 g/kg bei jungen Männern — für dieselbe Antwort (Moore 2015), und mindestens 1,2 g/kg/Tag, wenn sie trainieren (Bauer 2013). Bei Senioren zählen das Wann und das Wie-viel-pro-Portion mehr." }
+  - { move: "Verteil es: ~0,25 g/kg (20–40 g) pro Mahlzeit, 3–4 Mahlzeiten, vollständige Quellen.", why: "Gleichmäßige Verteilung über den Tag schlägt ein abendlastiges Muster leicht (Yasuda 2020), und jede Dosis braucht genug Leucin (~700–3000 mg) aus Milch, Whey, Fleisch oder einer Mischquelle, um die Muskelproteinsynthese voll auszulösen (Jäger 2017). Aber mach aus der Zahl pro Mahlzeit keine Obergrenze: Eine 100-g-Dosis hielt die anabole Antwort über 12 Stunden am Laufen, eine große Proteinmahlzeit ist also nicht 'verschwendet' (Trommelen 2023)." }
 hero:
   kind: lattice
   stat: "1,6 g/kg"
@@ -53,13 +60,14 @@ verdict:
   hype:
     - { value: "das Fenster", text: "das 30-Minuten-'anabole Fenster' nach dem Training für die meisten" }
     - { value: ">2,2g/kg", text: "Protein-Megadosing für extra Muskeln — es plateaut" }
-  note: "ISSN · Sports Medicine · J Physiol — siehe Quellen"
+  note: "ISSN · Br J Sports Med · Sports Medicine · J Physiol — siehe Quellen"
 tags: ["protein", "nutrition", "muscle", "method", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-24", note: "Erste Ausgabe. Evidenz aktuell bis Juli 2026; nach Studienqualität bewertet. Wir aktualisieren, sobald die Pipeline liefert." }
+  - { date: "2026-10-09", note: "Zweite Ausgabe. Sieben Quellen ergänzt: die Dosis-Wirkungs-Meta-Analysen von Morton 2018 und Tagawa 2021, Moore 2015 zur Dosis pro Mahlzeit bei älteren Männern, Trommelen 2023 zur 100-g-anabolen Antwort, das PROT-AGE-Positionspapier, die Nieren-Meta-Analyse von Devries 2018 und die Vegan-vs-Omnivor-Studie von Hevia-Larraín 2021. Neue Abschnitte zu Dosierung bei Älteren, pflanzlichem Protein und Nierensicherheit; Empfehlung pro Mahlzeit für ältere Kunden auf ~0,40 g/kg angehoben." }
 ---
 
-> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Studie geknüpft — ein Positionspapier, eine Dosis-Wirkungs-Meta-Analyse, eine randomisierte Studie oder das Studienregister — und verlinkt. Wir bewerten die Evidenz zusätzlich: Wo sie stark ist, sagen wir das; wo sie noch früh oder umstritten ist, ebenfalls. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Bei Gesundheitsthemen ist eine Quelle, hinter der man nicht stehen kann, schlechter als gar keine. Zuletzt aktualisiert am 24. Juli 2026.
+> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Studie geknüpft — ein Positionspapier, eine Dosis-Wirkungs-Meta-Analyse, eine randomisierte Studie oder das Studienregister — und verlinkt. Wir bewerten die Evidenz zusätzlich: Wo sie stark ist, sagen wir das; wo sie noch früh oder umstritten ist, ebenfalls. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Bei Gesundheitsthemen ist eine Quelle, hinter der man nicht stehen kann, schlechter als gar keine. Zuletzt aktualisiert am 9. Oktober 2026.
 
 ## Das, was deine Kunden am meisten zerdenken
 
@@ -75,6 +83,8 @@ Wenn ein Kunde eine Sache richtig macht, dann diese. Über die kontrollierte Evi
 
 Es gibt eine Obergrenze, und sie zu kennen spart deinen Kunden Geld. Eine Dosis-Wirkungs-Meta-Analyse aus 82 Studien fand, dass die Kraft um etwa **0,72% pro zusätzlichen 0,1 g/kg/Tag stieg — aber nur bis rund 1,5 g/kg/Tag**, danach brachte mehr Protein keine weiteren Gewinne.<sup class="fn"><a href="#source-2">2</a></sup> Das ehrliche Ziel heißt also "genug", nicht "so viel wie möglich": Lande irgendwo im Bereich 1,6–2,2 g/kg, und du hast praktisch den gesamten Nutzen.
 
+Zwei weitere Meta-Analysen beziffern dieses Plateau aus unterschiedlichen Blickwinkeln. Über 49 Studien und 1.863 Personen brachte zusätzliches Protein zum Krafttraining rund **0,3 kg fettfreie Masse** und **2,5 kg beim Einer-Maximum** — und die Bruchpunkt-Analyse fand keinen weiteren Magermasse-Zuwachs, sobald die Gesamtzufuhr **1,62 g/kg/Tag** überschritt. Der Effekt war bei trainierten Kraftsportlern größer und schrumpfte mit dem Alter.<sup class="fn"><a href="#source-9">9</a></sup> Die bislang größte Dosis-Wirkungs-Analyse (105 Studien, 5.402 Personen) fand, dass die fettfreie Masse um etwa **0,39 kg pro zusätzlichen 0,1 g/kg/Tag unterhalb von 1,3 g/kg/Tag** stieg, aber nur um **0,12 kg** pro Schritt darüber — der Ertrag fällt nicht auf null, er schrumpft um zwei Drittel.<sup class="fn"><a href="#source-10">10</a></sup> Dieselbe Form, drei Datensätze.
+
 **Evidenzgrad: stark.** Mehrere große Meta-Analysen, konsistente Richtung, klare Dosis-Wirkung mit Plateau.
 
 ## Protein ohne Training baut keine Kraft
@@ -89,7 +99,7 @@ Das ist ein nützlicher Satz für einen Kunden, der drei Shakes am Tag trinkt un
 
 Das ist der Glaube, der die meiste vergeudete Mühe antreibt, also präzise: Das "anabole Fenster" — die Idee, man müsse binnen 30–60 Minuten nach dem Training Protein reinkippen, sonst seien die Gewinne weg — hält nicht stand, sobald man berücksichtigt, wie viel Protein jemand insgesamt isst. Eine Meta-Regression der Timing-Studien fand, dass das Timing nach Berücksichtigung des Tagesgesamtproteins **keinen eigenständigen Effekt** auf Kraft oder Hypertrophie hatte; die Gesamtzufuhr war der stärkste Prädiktor.<sup class="fn"><a href="#source-4">4</a></sup>
 
-Neuere Arbeiten stimmen zu. Eine 8-Wochen-Studie an trainierten Männern verglich Protein direkt ums Training herum mit Protein drei Stunden davon entfernt, bei gleichen 2 g/kg/Tag, und fand **keinen Unterschied** bei Muskelmasse, Kraft oder Leistung.<sup class="fn"><a href="#source-6">6</a></sup> Die anabole Antwort auf eine Trainingseinheit hält einen Tag, keine halbe Stunde.
+Neuere Arbeiten stimmen zu. Eine 8-Wochen-Studie an trainierten Männern verglich Protein direkt ums Training herum mit Protein drei Stunden davon entfernt, bei gleichen 2 g/kg/Tag, und fand **keinen Unterschied** bei Muskelmasse, Kraft oder Leistung.<sup class="fn"><a href="#source-6">6</a></sup> Die anabole Antwort auf eine Trainingseinheit hält einen Tag, keine halbe Stunde. Und die Antwort auf eine Mahlzeit ist größer und länger, als die alte Regel "du kannst nur 20–30 g verwerten" behauptete: In einer Tracer-Studie, die nach einer Einheit 100 g gegenüber 25 g Protein gab, erzeugte die größere Dosis eine **stärkere anabole Antwort, die nach 12 Stunden noch lief**, ohne zusätzliche Aminosäure-Oxidation — in den Worten der Autoren: keine Obergrenze in Ausmaß oder Dauer.<sup class="fn"><a href="#source-12">12</a></sup> Das Protein eines großen Abendessens ist nicht verschwendet; es arbeitet nur länger.
 
 Räum also "du hast dein Fenster verpasst" weg. Es erfindet ein Versagen, wo keines ist, und lenkt vom Entscheidenden ab — dem Tagesgesamtwert. Für den normalen Kunden ist Protein-Timing ein Rundungsfehler.
 
@@ -101,7 +111,9 @@ Jetzt die ehrliche Ausnahme, denn ein guter Coach weiß, wann die Regel kippt. B
 
 Eine große Netzwerk-Meta-Analyse stützt den breiteren Punkt: Für ältere und gemischte Populationen war Protein **nach dem Training** am wirksamsten für die Muskelmasse und eine **Dosis vor dem Schlaf** am wirksamsten für die Kraft.<sup class="fn"><a href="#source-5">5</a></sup> Für deine Masters-Kunden lohnt sich das Fenster also — ein Shake direkt nach der Einheit oder Casein vor dem Schlaf ist ein echter Hebel, kein Aberglaube.
 
-**Evidenzgrad: moderat.** Konsistentes Signal, dass Timing speziell dort hilft, wo anabole Resistenz vorliegt, aus einer Mischung von Studien und Netzwerk-Evidenz.
+Auch die Dosis pro Mahlzeit verschiebt sich. Zusammengeführte Dosis-Wirkungs-Daten von jungen (~22) und älteren (~71) Männern zeigten, dass die Muskelproteinsynthese bei den Jungen bei etwa **0,24 g/kg pro Mahlzeit, bei den Älteren erst bei 0,40 g/kg** plateaute — ein 70-kg-Kunde im Alter braucht grob 28 g pro Mahlzeit, nicht 17 g, für dasselbe Signal.<sup class="fn"><a href="#source-11">11</a></sup> Und der geriatrische Konsens setzt auch den Boden höher: Die PROT-AGE-Gruppe empfiehlt **1,0–1,2 g/kg/Tag** für gesunde Ältere, **mindestens 1,2 g/kg** für Trainierende und 1,2–1,5 g/kg bei Erkrankung — deutlich über den 0,8 g/kg, die vielen als "genug" verkauft werden.<sup class="fn"><a href="#source-13">13</a></sup>
+
+**Evidenzgrad: moderat** beim Timing, **stark** beim höheren Bedarf pro Mahlzeit und pro Tag. Konsistentes Signal, dass Timing speziell dort hilft, wo anabole Resistenz vorliegt; der höhere Dosisbedarf ist durch Dosis-Wirkungs-Daten und eine Konsensposition gestützt.
 
 ## Dosis und Verteilung: 0,25 g/kg, verteilt
 
@@ -113,15 +125,21 @@ Eine 12-Wochen-Studie zeigte es direkt: Protein gleichmäßig über den Tag zu v
 
 ## Art — und der eine wirklich nützliche "Hack"
 
-Proteinqualität zählt an den Rändern. Vollständige, schnell verdauliche, leucinreiche Quellen — Milchproteine wie Whey und Casein, dazu Fleisch und Mischquellen — stimulieren die Muskelproteinsynthese am stärksten, und die Netzwerk-Meta-Analyse bewertete Milchproteine als bevorzugte Supplement-Art für Masse wie Kraft.<sup class="fn"><a href="#source-5">5</a></sup> Für die meisten erledigt echtes Essen den Job; ein Shake ist nur ein bequemer Weg, die Zahl zu treffen.
+Proteinqualität zählt an den Rändern. Vollständige, schnell verdauliche, leucinreiche Quellen — Milchproteine wie Whey und Casein, dazu Fleisch und Mischquellen — stimulieren die Muskelproteinsynthese am stärksten, und die Netzwerk-Meta-Analyse bewertete Milchproteine als bevorzugte Supplement-Art für Masse wie Kraft.<sup class="fn"><a href="#source-5">5</a></sup> Für die meisten erledigt echtes Essen den Job; ein Shake ist nur ein bequemer Weg, die Zahl zu treffen. Das gilt auch für rein pflanzliche Ernährung, solange der Gesamtwert stimmt: In einer 12-Wochen-Studie erreichten Veganer und Omnivoren, beide auf **1,6 g/kg/Tag** gebracht (Soja bzw. Whey zum Auffüllen), denselben Zuwachs an Bein-Magermasse, dieselbe Fasergröße und vergleichbare Beinpresse-Kraft.<sup class="fn"><a href="#source-15">15</a></sup> Die Quelle zählt bei niedriger Zufuhr und in Einzelmahlzeit-Laborstudien; bei einem soliden Tagesgesamtwert mit etwas mehr Menge spielt sie keine Rolle mehr.
 
 Der eine Timing-Hack mit echter Stützung ist **Casein vor dem Schlaf**: 30–40 g vor dem Zubettgehen erhöhen die nächtliche Muskelproteinsynthese, ohne den Fettstoffwechsel zu beeinträchtigen.<sup class="fn"><a href="#source-1">1</a></sup> Keine Magie, aber für einen Kunden, der seinen Tagesgesamtwert kaum unterbringt, ist es ein legitimer Slot statt einer Marketing-Geschichte.
 
 **Evidenzgrad: moderat** bei der Art; die Dosis vor dem Schlaf ist gestützt, aber eine kleine Optimierung, kein Fundament.
 
+## Die Nieren-Sorge, kurz
+
+Der Einwand, den du vom Partner oder Hausarzt eines Kunden am häufigsten hörst: "All das Protein schadet den Nieren." Für gesunde Nieren hält das nicht stand. Eine Meta-Analyse aus 28 kontrollierten Studien mit 1.358 Erwachsenen ohne Nierenerkrankung verglich proteinreiche Ernährung (≥1,5 g/kg/Tag oder ≥20% der Energie) mit normaler oder niedrigerer Zufuhr und fand **keinen Unterschied in der Veränderung der Nierenfiltrationsrate** — mehr Protein hebt die Filtration leicht an, eine normale Arbeitsantwort, kein Schaden.<sup class="fn"><a href="#source-14">14</a></sup> Der Vorbehalt ist real, wo bereits eine Nierenerkrankung besteht: Die PROT-AGE-Gruppe nimmt Menschen mit schwerer chronischer Nierenerkrankung ausdrücklich aus, sie müssen Protein unter Umständen begrenzen.<sup class="fn"><a href="#source-13">13</a></sup> Also: gesunder Kunde, kein Thema; bekannte Nierenerkrankung, zuerst zum Arzt.
+
+**Evidenzgrad: stark** für die Sicherheit bei gesunden Erwachsenen; die Ausnahme bei bestehender Nierenerkrankung ist eine medizinische Grenze, keine Coaching-Grenze.
+
 ## Was als Nächstes untersucht wird
 
-Hier ist die lebendige Front, die keine statische Makro-Tabelle liefern kann. Die Protein-und-Training-Pipeline des klinischen Registers zielt genau auf die Fragen, die deine Kunden gleich stellen werden.<sup class="fn"><a href="#source-9">9</a></sup>
+Hier ist die lebendige Front, die keine statische Makro-Tabelle liefern kann. Die Protein-und-Training-Pipeline des klinischen Registers zielt genau auf die Fragen, die deine Kunden gleich stellen werden.<sup class="fn"><a href="#source-16">16</a></sup>
 
 Die große: **Protein plus Krafttraining während einer GLP-1-Therapie (Abnehmspritze).** Menschen, die mit diesen Medikamenten schnell abnehmen, verlieren neben Fett auch Muskeln, und Studien testen jetzt, ob mehr Protein und Training die Magermasse dabei schützen können — derselbe Faden, der durch die Kreatin- und Zone-2-Forschung läuft. Daneben: **Sarkopenie und Dosierung bei Älteren** — wie viel, wie verteilt und wie getimt, um die anabole Resistenz zu überwinden — sowie direkte **Verteilungs- und Timing-Studien**, um die kleineren Fragen zu klären. Wir aktualisieren diesen Beitrag, sobald Ergebnisse vorliegen — das ist der Sinn einer Evidenzseite, die lebt statt einzufrieren.
 
@@ -129,7 +147,7 @@ Die große: **Protein plus Krafttraining während einer GLP-1-Therapie (Abnehmsp
 
 Wenn der nächste Kunde nach Protein fragt, hier das Ganze in Klartext:
 
-*"Bring deinen Tagesgesamtwert in Ordnung, dann hast du im Grunde gewonnen: ziel auf etwa 1,6 bis 2,2 Gramm pro Kilo Körpergewicht, jeden Tag, und trainier auch wirklich mit Gewichten — Protein baut Kraft nur oben auf dem Training auf. Verteil es über deine Mahlzeiten, grob 20 bis 40 Gramm je, statt nichts zum Frühstück und ein Berg abends. Mach dir keinen Stress um ein magisches Fenster nach dem Training; der anabole Effekt hält den ganzen Tag, solange du deinen Gesamtwert triffst, passt es. Die eine Ausnahme ist, wenn du älter bist — dann hilft Protein bald nach dem Training oder vor dem Schlaf wirklich mehr. Und du brauchst keinen teuren Blend; Milch, Whey, Fleisch oder ein normaler Shake tun es alle."*
+*"Bring deinen Tagesgesamtwert in Ordnung, dann hast du im Grunde gewonnen: ziel auf etwa 1,6 bis 2,2 Gramm pro Kilo Körpergewicht, jeden Tag, und trainier auch wirklich mit Gewichten — Protein baut Kraft nur oben auf dem Training auf. Verteil es über deine Mahlzeiten, grob 20 bis 40 Gramm je, statt nichts zum Frühstück und ein Berg abends. Mach dir keinen Stress um ein magisches Fenster nach dem Training; der anabole Effekt hält den ganzen Tag, solange du deinen Gesamtwert triffst, passt es. Die eine Ausnahme ist, wenn du älter bist — dann hilft Protein bald nach dem Training oder vor dem Schlaf wirklich mehr. Und du brauchst keinen teuren Blend; Milch, Whey, Fleisch, Soja oder ein normaler Shake tun es alle — vegan funktioniert gut, wenn der Gesamtwert stimmt. Eine große Proteinmahlzeit ist auch nicht verschwendet, dein Körper nutzt sie nur länger. Und nein, es schadet deinen Nieren nicht, außer du hast schon ein Nierenproblem — dann frag deinen Arzt."*
 
 Das war's. Kein Fenster-Starren, keine Bro-Science, keine überteuerten Blends. Nur die Evidenz, übersetzt in etwas, mit dem ein Mensch handeln kann — und genau das ist der ganze Job.
 
