@@ -1,88 +1,5 @@
 [
   {
-    "date": "2026-09-21",
-    "key": "vivagym owner leads 685m race for fitness park report says",
-    "tokens": [
-      "vivagym",
-      "owner",
-      "leads",
-      "685m",
-      "race",
-      "park"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "key": "disha secures 596m series a led by general catalyst to scale",
-    "tokens": [
-      "disha",
-      "secures",
-      "series",
-      "general",
-      "catalyst",
-      "scale",
-      "health",
-      "coaching"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "key": "master class a simple exercise can preserve overhead strengt",
-    "tokens": [
-      "master",
-      "class",
-      "simple",
-      "exercise",
-      "preserve",
-      "overhead",
-      "strength"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "key": "fitbit air vs garmin cirqa weighing the steep 201 price gap",
-    "tokens": [
-      "fitbit",
-      "garmin",
-      "cirqa",
-      "weighing",
-      "steep",
-      "price"
-    ],
-    "entities": [
-      "Garmin",
-      "Fitbit"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "key": "cci clears 165 billion acquisition of rajasthan royals  two ",
-    "tokens": [
-      "clears",
-      "billion",
-      "acquisition",
-      "rajasthan",
-      "royals",
-      "overseas",
-      "franchises"
-    ]
-  },
-  {
-    "date": "2026-09-21",
-    "key": "strong pilates launches new connected training technology as",
-    "tokens": [
-      "strong",
-      "pilates",
-      "launches",
-      "connected",
-      "training",
-      "technology",
-      "franchise",
-      "expands",
-      "globally"
-    ]
-  },
-  {
     "date": "2026-09-22",
     "key": "fitness operators rethink how they target 50 clients",
     "tokens": [
@@ -1375,6 +1292,99 @@
       "through",
       "community",
       "showcase"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "key": "google launches 180 fitness tracker bringing ai coaching and",
+    "tokens": [
+      "google",
+      "launches",
+      "tracker",
+      "bringing",
+      "coaching",
+      "health",
+      "monitoring",
+      "daily",
+      "life"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "key": "aufstiegskongress 2026 in mannheim",
+    "tokens": [
+      "aufstiegskongress",
+      "2026",
+      "mannheim"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "key": "a california member who bought a membership card worth 20 mi",
+    "tokens": [
+      "california",
+      "member",
+      "bought",
+      "membership",
+      "card",
+      "worth",
+      "million",
+      "hasn",
+      "finished",
+      "paying",
+      "installments",
+      "worried",
+      "about",
+      "possibility",
+      "club",
+      "closing"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "key": "studiogrowth launches ai receptionist that books classes sel",
+    "tokens": [
+      "studiogrowth",
+      "launches",
+      "receptionist",
+      "books",
+      "classes",
+      "sells",
+      "memberships",
+      "manages",
+      "member",
+      "requests",
+      "pilates",
+      "yoga",
+      "studios"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "key": "whoop steps up middle east investment as gcc membership grow",
+    "tokens": [
+      "whoop",
+      "steps",
+      "middle",
+      "east",
+      "investment",
+      "membership",
+      "grows"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-10-13",
+    "key": "macobs technologies dhanta wellness acquisition and grooming",
+    "tokens": [
+      "macobs",
+      "technologies",
+      "dhanta",
+      "acquisition",
+      "grooming",
+      "strategy"
     ]
   }
 ]
