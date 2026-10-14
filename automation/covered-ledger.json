@@ -1,91 +1,5 @@
 [
   {
-    "date": "2026-09-22",
-    "key": "fitness operators rethink how they target 50 clients",
-    "tokens": [
-      "operators",
-      "rethink",
-      "they",
-      "target",
-      "clients"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "key": "smart ring maker oura backers seek 22 billion in us ipo",
-    "tokens": [
-      "smart",
-      "ring",
-      "maker",
-      "oura",
-      "backers",
-      "seek",
-      "billion"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "key": "coaching with context zensai to unveil the only agentic ai c",
-    "tokens": [
-      "coaching",
-      "context",
-      "zensai",
-      "unveil",
-      "only",
-      "agentic",
-      "platform",
-      "built",
-      "exclusively",
-      "microsoft",
-      "humanx",
-      "amsterdam"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "key": "after modern split capitol hill corner home to oldtime cante",
-    "tokens": [
-      "modern",
-      "split",
-      "capitol",
-      "hill",
-      "corner",
-      "home",
-      "time",
-      "canterbury",
-      "tavern",
-      "readied",
-      "moov",
-      "movement",
-      "studio"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "key": "dssv beim 10 brl forum in hamburg",
-    "tokens": [
-      "dssv",
-      "beim",
-      "forum",
-      "hamburg"
-    ]
-  },
-  {
-    "date": "2026-09-22",
-    "key": "vireo growth inc completes acquisition of m3 wellness a neva",
-    "tokens": [
-      "vireo",
-      "growth",
-      "completes",
-      "acquisition",
-      "nevada",
-      "dispensary"
-    ]
-  },
-  {
     "date": "2026-09-23",
     "key": "united lets move dssv e v bringt politik mit workout am reic",
     "tokens": [
@@ -1385,6 +1299,89 @@
       "acquisition",
       "grooming",
       "strategy"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "key": "pulse fitness eyes 134m in revenue targets us market with in",
+    "tokens": [
+      "pulse",
+      "eyes",
+      "134m",
+      "revenue",
+      "targets",
+      "market",
+      "inclusive",
+      "equipment"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "key": "indias the stack raises 227m to expand supplements line",
+    "tokens": [
+      "india",
+      "stack",
+      "raises",
+      "expand",
+      "supplements",
+      "line"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "key": "fitness coach identifies home gym equipment waste risks",
+    "tokens": [
+      "coach",
+      "identifies",
+      "home",
+      "equipment",
+      "waste",
+      "risks"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "key": "olympian andrew steeles stride raises 46m for preventive hea",
+    "tokens": [
+      "olympian",
+      "andrew",
+      "steele",
+      "stride",
+      "raises",
+      "preventive",
+      "health"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "key": "is planet fitness plnt a bargain on its revenue beat and mem",
+    "tokens": [
+      "planet",
+      "plnt",
+      "bargain",
+      "revenue",
+      "beat",
+      "member",
+      "growth",
+      "update"
+    ],
+    "entities": [
+      "Planet Fitness"
+    ]
+  },
+  {
+    "date": "2026-10-14",
+    "key": "nihr funds 19 projects to embed preventive health technology",
+    "tokens": [
+      "nihr",
+      "funds",
+      "projects",
+      "embed",
+      "preventive",
+      "health",
+      "technology",
+      "community",
+      "care"
     ]
   }
 ]
