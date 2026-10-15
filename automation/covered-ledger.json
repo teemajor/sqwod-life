@@ -1,90 +1,5 @@
 [
   {
-    "date": "2026-09-23",
-    "key": "united lets move dssv e v bringt politik mit workout am reic",
-    "tokens": [
-      "united",
-      "move",
-      "dssv",
-      "bringt",
-      "politik",
-      "workout",
-      "reichstag",
-      "schwitzen"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "key": "bird038be raises 13m to shift conversation around male ferti",
-    "tokens": [
-      "bird",
-      "raises",
-      "shift",
-      "conversation",
-      "around",
-      "male",
-      "fertility"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "key": "bengaluru cult fitness member hurls 20kg equipment on indira",
-    "tokens": [
-      "bengaluru",
-      "cult",
-      "member",
-      "hurls",
-      "equipment",
-      "indiranagar",
-      "floor",
-      "membership",
-      "cancelled",
-      "trending"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "key": "discover strength taps greater boston for growth announces f",
-    "tokens": [
-      "discover",
-      "strength",
-      "taps",
-      "greater",
-      "boston",
-      "growth",
-      "announces",
-      "first",
-      "massachusetts",
-      "studio",
-      "wellesley"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "key": "magic ai fitness mirror raises 8m to flex muscle in us",
-    "tokens": [
-      "magic",
-      "mirror",
-      "raises",
-      "flex",
-      "muscle"
-    ]
-  },
-  {
-    "date": "2026-09-23",
-    "key": "yuen lee gofundme raises more than 80000 after kpmg manager ",
-    "tokens": [
-      "yuen",
-      "gofundme",
-      "raises",
-      "kpmg",
-      "manager",
-      "fired",
-      "altercation",
-      "video"
-    ]
-  },
-  {
     "date": "2026-09-24",
     "key": "uk fitness startup magic ai raises 11m for us expansion adds",
     "tokens": [
@@ -1382,6 +1297,94 @@
       "technology",
       "community",
       "care"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "key": "puregym acquires nonstop and becomes largest lowcost gym ope",
+    "tokens": [
+      "puregym",
+      "acquires",
+      "nonstop",
+      "becomes",
+      "largest",
+      "cost",
+      "operator",
+      "switzerland"
+    ],
+    "entities": [
+      "PureGym"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "key": "inside the reformer gold rush where equipment makers are rac",
+    "tokens": [
+      "inside",
+      "reformer",
+      "gold",
+      "rush",
+      "where",
+      "equipment",
+      "makers",
+      "racing",
+      "supply",
+      "pilates",
+      "next",
+      "phase"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "key": "othello raises 8 million for realtime ai sales coaching duri",
+    "tokens": [
+      "othello",
+      "raises",
+      "million",
+      "real",
+      "time",
+      "sales",
+      "coaching",
+      "during",
+      "live",
+      "calls"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "key": "erfolgsmaschine fitbox markengruppe  von 1 auf 1000 standort",
+    "tokens": [
+      "erfolgsmaschine",
+      "fitbox",
+      "markengruppe",
+      "1000",
+      "standorte"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "key": "awardwinning cheshire gym owner plans new facilities and per",
+    "tokens": [
+      "award",
+      "winning",
+      "cheshire",
+      "owner",
+      "facilities",
+      "personal",
+      "training",
+      "academy"
+    ]
+  },
+  {
+    "date": "2026-10-15",
+    "key": "flint gym raises more than 3700 for prostate cancer after me",
+    "tokens": [
+      "flint",
+      "raises",
+      "prostate",
+      "cancer",
+      "member",
+      "diagnosis"
     ]
   }
 ]
