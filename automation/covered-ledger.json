@@ -1,90 +1,5 @@
 [
   {
-    "date": "2026-09-24",
-    "key": "uk fitness startup magic ai raises 11m for us expansion adds",
-    "tokens": [
-      "startup",
-      "magic",
-      "raises",
-      "expansion",
-      "adds",
-      "soho",
-      "house",
-      "backer"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "key": "price to sales forward of integrated wellness acquisition co",
-    "tokens": [
-      "price",
-      "sales",
-      "forward",
-      "integrated",
-      "acquisition",
-      "corp",
-      "welwf"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "key": "is peloton interactive pton undervalued following its new tr",
-    "tokens": [
-      "peloton",
-      "interactive",
-      "pton",
-      "undervalued",
-      "following",
-      "treadmill",
-      "coaching",
-      "launch"
-    ],
-    "entities": [
-      "Peloton"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "key": "fitness coach ate 10000 calories daily for a month to promot",
-    "tokens": [
-      "coach",
-      "calories",
-      "daily",
-      "month",
-      "promote",
-      "weight",
-      "loss",
-      "course",
-      "died",
-      "sleep"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "key": "website closers brokers acquisition of smoothie brand tusol ",
-    "tokens": [
-      "website",
-      "closers",
-      "brokers",
-      "acquisition",
-      "smoothie",
-      "brand",
-      "tusol"
-    ]
-  },
-  {
-    "date": "2026-09-24",
-    "key": "elixinol wellness expands product offering with vitable acqu",
-    "tokens": [
-      "elixinol",
-      "expands",
-      "product",
-      "offering",
-      "vitable",
-      "acquisition"
-    ]
-  },
-  {
     "date": "2026-09-25",
     "key": "atn insights the churn problem hiding in failed payments",
     "tokens": [
@@ -1385,6 +1300,97 @@
       "cancer",
       "member",
       "diagnosis"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "key": "dssv beim deutschen arbeitgebertag 2026",
+    "tokens": [
+      "dssv",
+      "beim",
+      "deutschen",
+      "arbeitgebertag",
+      "2026"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "key": "garmin should pay attention to suuntos new titanium sports w",
+    "tokens": [
+      "garmin",
+      "should",
+      "attention",
+      "suunto",
+      "titanium",
+      "sports",
+      "watch",
+      "delivers",
+      "longer",
+      "battery",
+      "life",
+      "clever",
+      "coaching",
+      "upgrade"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "key": "eric von frohlich remembered as fitness innovator beloved co",
+    "tokens": [
+      "eric",
+      "frohlich",
+      "remembered",
+      "innovator",
+      "beloved",
+      "coach",
+      "friend"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "key": "gym membership trends 10 numbers shaping fitness",
+    "tokens": [
+      "membership",
+      "trends",
+      "numbers",
+      "shaping"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "key": "world class romania opens at one high district its first clu",
+    "tokens": [
+      "world",
+      "class",
+      "romania",
+      "opens",
+      "high",
+      "district",
+      "first",
+      "club",
+      "developed",
+      "longevity",
+      "recovery",
+      "concept",
+      "following",
+      "million",
+      "investment"
+    ]
+  },
+  {
+    "date": "2026-10-16",
+    "key": "martin  co huddersfield franchisee completes fourth agency a",
+    "tokens": [
+      "martin",
+      "huddersfield",
+      "franchisee",
+      "completes",
+      "fourth",
+      "agency",
+      "acquisition"
     ]
   }
 ]
