@@ -8,6 +8,8 @@ const { lang } = Astro.props;
     <a href={`/${lang}/`} class="foot-logo"><picture><source media="(prefers-color-scheme: light)" srcset="/sqwod-black.png" /><img src="/sqwod-white.png" alt="Sqwod" width="84" height="22" /></picture><span>.life</span></a>
     <p class="foot-tag">{lang === 'de' ? 'Dein Vorsprung im Fitness-Business.' : 'Your edge in the business of fitness.'}</p>
     <p class="foot-links">
+      <a href={`/${lang}/evidence`}>Sqwod Evidence</a> ·
+      <a href={`/${lang}/advertise`}>{lang==='de'?'Werben':'Advertise'}</a> ·
       <a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a> ·
       <a href={`/${lang}/play`}>Play</a> ·
       <a href={`/${lang}/verified/methodology`}>{lang==='de'?'Methodik':'Methodology'}</a> ·

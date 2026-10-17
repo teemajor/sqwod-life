@@ -1,0 +1,85 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+const mail = `mailto:tee@sqwod.life?subject=${encodeURIComponent(de ? 'Werben mit Sqwod' : 'Advertising with Sqwod')}`;
+
+const T = de
+  ? {
+      title: 'Werben mit Sqwod',
+      crumb: 'Werben',
+      h1: 'Erreiche die Menschen, die Fitness machen.',
+      sub: 'Sqwod erreicht Coaches, Personal Trainer:innen, Studio-Inhaber:innen und Fitness-Gründer:innen auf Englisch und Deutsch: über Sqwod Daily, den Podcast und sqwod.life.',
+      kick: 'So arbeiten wir zusammen',
+      ways: [
+        ['Sqwod Daily präsentieren', 'Ein Präsentations-Platz pro Ausgabe, im E-Mail-Brief und in der Audio-Folge.'],
+        ['Platzierungen auf sqwod.life', 'Gekennzeichnete Plätze neben Intelligence-Reports und Artikeln für Coaches und Studio-Betreiber:innen.'],
+        ['Sqwod Verified Reviews', 'Unabhängige Bewertungen nach unserer veröffentlichten Methodik. Eine Partnerschaft ändert nie einen Score.'],
+        ['Platzierung in Sqwod Pods', 'Dein Produkt im Einsatz in Sqwod Pods: private Trainingsräume in Berlin, in denen Coaches trainieren und Content drehen.'],
+      ],
+      rates: 'Zahlen zur Zielgruppe und Preise auf Anfrage.',
+      cta: 'Schreib uns',
+      rules: 'Bezahlte Inhalte sind immer als Anzeige gekennzeichnet.',
+      method: 'Methodik',
+      disc: 'Transparenz',
+    }
+  : {
+      title: 'Advertise with Sqwod',
+      crumb: 'Advertise',
+      h1: 'Reach the people who run fitness.',
+      sub: 'Sqwod reaches coaches, personal trainers, studio owners and fitness founders in English and German, through Sqwod Daily, the podcast and sqwod.life.',
+      kick: 'Ways to work with us',
+      ways: [
+        ['Present Sqwod Daily', 'One presenting slot per issue, in the email brief and the audio episode.'],
+        ['Placements on sqwod.life', 'Labelled slots beside Intelligence reports and articles written for coaches and studio operators.'],
+        ['Sqwod Verified reviews', 'Independent reviews under our published methodology. A partnership never changes a score.'],
+        ['Placement in Sqwod Pods', 'Your product in use in Sqwod Pods: private training rooms in Berlin where coaches train clients and create content.'],
+      ],
+      rates: 'Audience numbers and rates on request.',
+      cta: 'Email us',
+      rules: 'Paid content is always labelled as an ad.',
+      method: 'Methodology',
+      disc: 'Disclosure',
+    };
+---
+<Base lang={lang} title={`${T.title} — Sqwod`} description={T.sub} active="advertise">
+  <div class="crumb">{T.crumb}</div>
+  <h1>{T.h1}</h1>
+  <p class="sub" style="max-width:56ch">{T.sub}</p>
+
+  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
+    <p class="kick">{T.kick}</p>
+    <div class="adv-grid">
+      {T.ways.map(([h, p]) => (
+        <div class="adv-card">
+          <h2>{h}</h2>
+          <p>{p}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="block adv-contact">
+    <p class="adv-rates">{T.rates}</p>
+    <a class="cta adv-cta" href={mail}>{T.cta}: tee@sqwod.life</a>
+    <p class="adv-fine">{T.rules} <a href={`/${lang}/verified/methodology`}>{T.method}</a> · <a href={`/${lang}/verified/disclosure`}>{T.disc}</a></p>
+  </section>
+</Base>
+
+<style>
+  .adv-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .adv-card{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:18px}
+  .adv-card h2{font-size:17px;margin:0 0 6px;letter-spacing:-.01em}
+  .adv-card p{margin:0;color:var(--g2);font-size:14px;line-height:1.55}
+  .adv-contact{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+  .adv-rates{margin:0;font-size:16px}
+  .adv-cta{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;font-size:15px}
+  .adv-fine{margin:0;font-size:12.5px;color:var(--g3)}
+  .adv-fine a{color:var(--g2)}
+  @media(max-width:560px){ .adv-grid{grid-template-columns:1fr} }
+</style>

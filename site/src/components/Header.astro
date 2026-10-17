@@ -4,28 +4,44 @@ interface Props { lang: Lang; active?: string; altPath?: string }
 const { lang, active = '', altPath } = Astro.props;
 const other = lang === 'en' ? 'de' : 'en';
 const otherHref = altPath ?? `/${other}/`;
+const de = lang === 'de';
+// Four doors, operator-first. Evidence lives inside Read; Press and About sit in the footer.
+const L = de
+  ? { daily: 'Daily', read: 'Lesen', intel: 'Intelligence', verified: 'Verified', adv: 'Werben' }
+  : { daily: 'Daily', read: 'Read', intel: 'Intelligence', verified: 'Verified', adv: 'Advertise' };
+const readOn = active === 'articles' || active === 'evidence';
 ---
 <header class="site">
   <div class="wrap bar">
     <a class="logo" href={`/${lang}/`}><picture><source media="(prefers-color-scheme: light)" srcset="/sqwod-black.png" /><img class="logo-mark" src="/sqwod-white.png" alt="Sqwod" width="76" height="20" /></picture><span>.life</span></a>
     <nav class="main" id="mainnav">
-      <a href={`/${lang}/daily`} class={active==='daily'?'on':''}>{t(lang,'nav.daily')}</a>
-      <a href={`/${lang}/intelligence`} class={active==='intelligence'?'on':''}>{t(lang,'nav.intelligence')}</a>
-      <a href={`/${lang}/articles`} class={active==='articles'?'on':''}>{t(lang,'nav.articles')}</a>
-      <a href={`/${lang}/evidence`} class={active==='evidence'?'on':''}>{t(lang,'nav.evidence')}</a>
-      <a href={`/${lang}/verified`} class={active==='verified'?'on':''}>{t(lang,'nav.verified')}</a>
-      <a href={`/${lang}/press`} class={active==='press'?'on':''}>{t(lang,'nav.press')}</a>
-      <a href={`/${lang}/about`} class={active==='about'?'on':''}>{t(lang,'nav.about')}</a>
+      <a href={`/${lang}/daily`} class={active==='daily'?'on':''}>{L.daily}</a>
+      <a href={`/${lang}/articles`} class={readOn?'on':''}>{L.read}</a>
+      <a href={`/${lang}/intelligence`} class={active==='intelligence'?'on':''}>{L.intel}</a>
+      <a href={`/${lang}/verified`} class={active==='verified'?'on':''}>{L.verified}</a>
+      <a href={`/${lang}/advertise`} class={`nav-adv ${active==='advertise'?'on':''}`}>{L.adv}</a>
     </nav>
     <div class="utils">
+      <a class="adv-link" href={`/${lang}/advertise`}>{L.adv}</a>
       <a class="lang" href={otherHref}><b>{lang.toUpperCase()}</b> · {other.toUpperCase()}</a>
       <a class="cta" href={`/${lang}/subscribe`}>{t(lang,'nav.subscribe')}</a>
-      <button class="nav-toggle" type="button" aria-label={lang==='de'?'Menü':'Menu'} aria-expanded="false" aria-controls="mainnav">
+      <button class="nav-toggle" type="button" aria-label={de?'Menü':'Menu'} aria-expanded="false" aria-controls="mainnav">
         <span class="nt-bars" aria-hidden="true"><i></i><i></i><i></i></span>
       </button>
     </div>
   </div>
 </header>
+
+<style>
+  /* Advertise sits beside EN/DE on desktop and inside the menu on phones */
+  .adv-link{font-size:13px;font-weight:600;color:var(--g2);text-decoration:none}
+  .adv-link:hover{color:var(--chalk)}
+  .nav-adv{display:none}
+  @media(max-width:640px){
+    .adv-link{display:none}
+    .nav-adv{display:block}
+  }
+</style>
 
 <script is:inline>
   (function () {

@@ -103,7 +103,7 @@ const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
   h1{font-size:clamp(24px,4vw,34px);letter-spacing:-.02em;margin:2px 0 16px}
   h1 .vs{color:var(--g4);font-weight:400}
   .verdict{border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--panel)}
-  .vlabel{font:800 10px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--g4)}
+  .vlabel{font:800 10px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--g4)}
   .vhead{font-size:17px;margin:10px 0 8px;color:var(--chalk)}
   .vbody{font-size:14px;color:var(--g2);margin:0 0 8px}
   .pick-if{margin:0;padding-left:18px}
@@ -112,12 +112,12 @@ const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
   .hh{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
   .hc{position:relative;border:1px solid var(--line);border-radius:14px;padding:18px 20px}
   .hc.win{border-color:var(--chalk)}
-  .wtag{position:absolute;top:-9px;left:16px;font:800 9px/1 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;background:var(--chalk);color:var(--ink);padding:4px 8px;border-radius:999px}
+  .wtag{position:absolute;top:-9px;left:16px;font:800 9px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;background:var(--chalk);color:var(--ink);padding:4px 8px;border-radius:999px}
   .hc h2{font-size:18px;margin:2px 0 8px;letter-spacing:-.01em}
   .scr{display:flex;align-items:baseline;gap:8px;margin-bottom:4px}
-  .scr b{font:800 30px/1 ui-monospace,Menlo,monospace;color:var(--chalk)}
-  .scr span{font:700 10px/1 ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--g3)}
-  .prc{font:700 13px/1 ui-monospace,monospace;color:var(--g2);margin-bottom:10px}
+  .scr b{font:800 30px/1 var(--mono);color:var(--chalk)}
+  .scr span{font:700 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--g3)}
+  .prc{font:700 13px/1 var(--mono);color:var(--g2);margin-bottom:10px}
   .vd{font-size:14px;color:var(--g2);line-height:1.55;margin:0 0 12px}
   .acts{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;font-weight:700}
   .rev{color:var(--chalk);text-decoration:none;border-bottom:1px solid var(--g3)}

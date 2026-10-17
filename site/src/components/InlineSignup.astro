@@ -7,17 +7,19 @@
 import { SUBSCRIBE } from '../config/subscribe';
 import type { Lang } from '../i18n/ui';
 
-interface Props { lang: Lang; source: string; variant?: 'default' | 'daily'; id?: string }
-const { lang, source, variant = 'default', id } = Astro.props;
+interface Props { lang: Lang; source: string; variant?: 'default' | 'daily'; id?: string; head?: string; body?: string }
+const { lang, source, variant = 'default', id, head, body } = Astro.props;
 const de = lang === 'de';
 
-const copy = variant === 'daily'
+const base = variant === 'daily'
   ? (de
     ? { head: 'Bekomm Sqwod Daily in dein Postfach', body: 'Fünf Minuten, jeden Werktag. Was sich in der Branche bewegt hat und was es für dich heißt. Kostenlos.' }
     : { head: 'Get Sqwod Daily in your inbox', body: 'Five minutes, every weekday. What moved in the industry, and what it means for you. Free.' })
   : (de
     ? { head: 'In 5 Minuten am Tag schärfer', body: 'Sqwod Daily: was sich im Fitness-Business bewegt hat und was du daraus machst. Werktäglich, kostenlos.' }
     : { head: 'Get sharper in 5 minutes a day', body: 'Sqwod Daily: what moved in the business of fitness, and what to do about it. Every weekday, free.' });
+// Callers may override the copy; an empty body string hides the paragraph.
+const copy = { head: head ?? base.head, body: body ?? base.body };
 
 const roles = de
   ? [['coach', 'Coach oder PT'], ['studio', 'Studio- oder Gym-Inhaber:in'], ['brand', 'Marke oder Gründer:in'], ['creator', 'Creator']]
@@ -31,7 +33,7 @@ const groupId = `role-${source}`;
 ---
 <section class="isu" id={id} aria-labelledby={`${groupId}-h`}>
   <h2 class="isu-h" id={`${groupId}-h`}>{copy.head}</h2>
-  <p class="isu-p">{copy.body}</p>
+  {copy.body && <p class="isu-p">{copy.body}</p>}
   {SUBSCRIBE.endpoint ? (
     <form class="isu-form" method="post" action={SUBSCRIBE.endpoint}>
       <input type="hidden" name="lang" value={lang} />
@@ -79,9 +81,9 @@ const groupId = `role-${source}`;
   .isu-pill input:checked + span{background:var(--chalk);color:var(--ink);border-color:var(--chalk);font-weight:700}
   .isu-pill input:focus-visible + span{outline:2px solid var(--chalk);outline-offset:2px}
   .isu-row{display:flex;gap:8px;flex-wrap:wrap}
-  .isu-row input{flex:1 1 240px;min-width:0;min-height:48px;box-sizing:border-box;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:0 18px;color:var(--chalk);font:inherit;font-size:16px}
+  .isu-row input{flex:1 1 240px;min-width:0;min-height:48px;box-sizing:border-box;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:0 18px;color:var(--chalk);font:inherit;font-size:16px}
   .isu-row input:focus{outline:none;border-color:var(--chalk)}
-  .isu-btn{min-height:48px;padding:0 22px;font-size:14px;border:0;cursor:pointer;border-radius:999px}
+  .isu-btn{min-height:48px;padding:0 22px;font-size:14px;border:0;cursor:pointer;border-radius:14px}
   .isu-fine{font-size:12.5px;color:var(--g3);margin:0;line-height:1.5}
   .isu-fine a{color:var(--g2)}
   @media (max-width:560px){

@@ -1,11 +1,14 @@
 ---
+// Homepage, operator-first (approved mockup, Oct 2026): hero + signup with role
+// picker, today's Daily, operator playbooks, one report, Verified top picks,
+// and the two "work with Sqwod" doors (brands, Berlin coaches).
 import Base from '../../layouts/Base.astro';
-import PillarIcon from '../../components/PillarIcon.astro';
+import Glyph from '../../components/Glyph.astro';
+import ScoreBadge from '../../components/ScoreBadge.astro';
+import InlineSignup from '../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
-import { languages, t, type Lang } from '../../i18n/ui';
-import { LANES, pillarMeta } from '../../i18n/pillars';
-import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../config/podcast';
-import { SUBSCRIBE } from '../../config/subscribe';
+import { languages, type Lang } from '../../i18n/ui';
+import { pillarMeta, type Pillar } from '../../i18n/pillars';
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -13,233 +16,266 @@ export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
-const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const de = lang === 'de';
+const fmtDate = (d: Date) => d.toLocaleDateString(de ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
+
+// --- Today's Daily
+const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latest = issues[0];
-const latestHref = latest ? `/${lang}/daily/${latest.data.urlSlug}` : `/${lang}/daily`;
-const latestAudio = latest ? episodeAudio(latest.data.urlSlug, lang) : null;
-// List the built audio dir once (cwd is the site/ root during astro build). A per-file
-// import.meta.url lookup silently resolved to the wrong place through the build pipeline,
-// so every episode rendered as text-only even though the MP3s were published.
 let audioFiles = new Set<string>();
 try { audioFiles = new Set(readdirSync(join(process.cwd(), 'public', 'audio'))); } catch { /* none yet */ }
-const hasEpAudio = (slug: string) => audioFiles.has(`${slug}-${lang}.mp3`);
-const hasLatestAudio = !!(latest && hasEpAudio(latest.data.urlSlug));
-const fmtDate = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
-// Only surface platforms that have a real URL (drops dead "#" links until configured).
-const platforms = [
-  { name: 'Apple Podcasts', url: APPLE_URL }, { name: 'Spotify', url: SPOTIFY_URL },
-  { name: 'YouTube', url: '#' }, { name: 'Amazon Music', url: '#' },
-  { name: 'iHeartRadio', url: '#' }, { name: 'RSS', url: rssFor(lang) },
-].filter((p) => p.url && p.url !== '#');
-const hasApple = platforms.some((p) => p.name === 'Apple Podcasts' || p.name === 'Spotify');
-const title = lang === 'de'
-  ? 'Sqwod — dein Vorsprung im Fitness-Business'
-  : 'Sqwod — your edge in the business of fitness';
-const tagline = lang === 'de'
-  ? 'Insider-Wissen, ehrliche Gear-Tests und Wachstums-Playbooks für die Coaches, Creator und Gründer:innen, die die großen Plattformen übersehen.'
-  : 'Insider intelligence, honest gear reviews, and growth playbooks for the coaches, creators, and founders the big platforms overlook.';
+const latestHasAudio = !!(latest && audioFiles.has(`${latest.data.urlSlug}-${lang}.mp3`));
+const latestHeads = latest ? latest.data.items.slice(0, 3).map((i) => i.headline) : [];
+
+// --- Articles: operator playbooks + one report
+const articles = (await getCollection('articles', (a) => a.data.lang === lang))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const hrefFor = (a: (typeof articles)[number]) =>
+  `/${lang}/${a.data.format === 'report' || a.data.format === 'index' ? 'intelligence' : 'analysis'}/${a.data.urlSlug}`;
+const isReport = (a: (typeof articles)[number]) => a.data.format === 'report' || a.data.format === 'index';
+const builds = articles.filter((a) => !isReport(a) && a.data.pillar === 'build').slice(0, 2);
+const evidence = articles.find((a) => a.data.type === 'evidence');
+const playbooks = [...builds, ...(evidence ? [evidence] : [])];
+const report = articles.find((a) => isReport(a) && a.data.gated && (a.data.hero?.stat || a.data.figures.length))
+  ?? articles.find((a) => isReport(a));
+const reportStat = report ? (report.data.hero?.stat ?? report.data.figures[0]?.value) : undefined;
+const reportStatLabel = report ? (report.data.hero?.statLabel ?? report.data.figures[0]?.label) : undefined;
+const laneTag = (a: (typeof articles)[number]) =>
+  a.data.type === 'evidence' ? 'Evidence' : (pillarMeta[a.data.pillar as Pillar]?.label[lang] ?? a.data.pillar);
+
+// --- Verified top picks: the best B2B tool, then the two best-scored other products
+const reviews = (await getCollection('reviews', (r) => r.data.lang === lang && !r.data.draft))
+  .sort((a, b) => b.data.sqwodScore - a.data.sqwodScore);
+const isTool = (r: (typeof reviews)[number]) => /coaching|studio|software|apps/i.test(r.data.category);
+const tool = reviews.find(isTool);
+const picks: typeof reviews = [];
+const seenCat = new Set<string>();
+for (const r of reviews) {
+  if (picks.length >= 2) break;
+  if (isTool(r) || seenCat.has(r.data.category)) continue;
+  seenCat.add(r.data.category); picks.push(r);
+}
+const topPicks = tool ? [picks[0], picks[1], tool].filter(Boolean) : picks;
+const cur = (c: string) => (c === 'EUR' ? '€' : c === 'USD' ? '$' : c === 'GBP' ? '£' : `${c} `);
+const per = (t: string) => (t === 'monthly' ? (de ? '/Monat' : '/mo') : t === 'yearly' ? (de ? '/Jahr' : '/yr') : '');
+const price = (r: (typeof reviews)[number]) => `${de ? 'ab' : 'from'} ${cur(r.data.value.currency)}${r.data.value.bestPrice}${per(r.data.value.priceType)}`;
+
+const title = de ? 'Sqwod — dein Vorsprung im Fitness-Business' : 'Sqwod — your edge in the business of fitness';
+const tagline = de
+  ? 'Insider-Wissen, ehrliche Gear-Bewertungen und Wachstums-Playbooks für die Coaches, Creator und Gründer:innen, die die großen Plattformen übersehen.'
+  : 'Insider intelligence, honest gear reviews and growth playbooks for the coaches, creators and founders the big platforms overlook.';
+const T = de
+  ? { kicker: 'Sqwod Daily · werktäglich · EN & DE', h1: 'Dein Vorsprung im Fitness-Business.', signup: 'Hol dir den 5-Minuten-Brief',
+      today: 'Heutiger Daily', listen: 'Anhören', read: 'Ausgabe lesen', presented: 'Präsentiert von',
+      pbH: 'Playbooks für Operator', pbP: 'Kundenbindung, Preise, Leads und die Wissenschaft, nach der deine Kund:innen fragen.', allReads: 'Alle Artikel',
+      repKick: 'Sqwod Intelligence · Report', repCta: 'Report holen',
+      vH: 'Sqwod Verified: Gear und Tools mit Score', vP: 'Studio-Equipment, Coaching-Software und die Wearables, nach denen Kund:innen fragen. Sqwod Score 0–100, Affiliate-Links immer gekennzeichnet.', allGuides: 'Alle Kaufberater', review: 'Review lesen', ad: 'Anzeige / Affiliate',
+      workH: 'Mit Sqwod arbeiten', brandK: 'Für Marken', brandH: 'Erreiche die Menschen, die Fitness machen.', brandP: 'Präsentiere Sqwod Daily, den Podcast oder Plätze auf der Seite. Oder lass dein Produkt bewerten und in Sqwod Pods einsetzen, wo Coaches trainieren und Content drehen.', brandCta: 'Werben',
+      podK: 'Für Coaches in Berlin', podH: 'Trainiere Kund:innen in einem privaten Sqwod Pod.', podP: 'Voll ausgestattete private Trainingsräume in Prenzlauer Berg und Weißensee.', podCta: 'Pod buchen' }
+  : { kicker: 'Sqwod Daily · every weekday · EN & DE', h1: 'Your edge in the business of fitness.', signup: 'Get the 5-minute brief',
+      today: "Today's Daily", listen: 'Listen', read: "Read today's issue", presented: 'Presented by',
+      pbH: 'Operator playbooks', pbP: 'Retention, pricing, leads and the science your clients ask about.', allReads: 'All reads',
+      repKick: 'Sqwod Intelligence · Report', repCta: 'Get the report',
+      vH: 'Sqwod Verified: gear and tools, scored', vP: 'Studio equipment, coaching software and the wearables your clients ask about. Sqwod Score 0–100, affiliate links always labelled.', allGuides: "All buyer's guides", review: 'Read the review', ad: 'Ad / Affiliate',
+      workH: 'Work with Sqwod', brandK: 'For brands', brandH: 'Reach the people who run fitness.', brandP: 'Present Sqwod Daily, the podcast or site placements. Or get your product reviewed and used in Sqwod Pods, where coaches train clients and film content.', brandCta: 'Advertise',
+      podK: 'For coaches in Berlin', podH: 'Train clients in a private Sqwod Pod.', podP: 'Fully equipped private training rooms in Prenzlauer Berg and Weißensee.', podCta: 'Book a Pod' };
 ---
 <Base lang={lang} title={title} description={tagline} active="">
-  <div class="hero-split">
-    <div class="ht reveal">
-      <h1>{lang==='de'?'Dein Vorsprung im Fitness-Business.':'Your edge in the business of fitness.'}</h1>
-      <p class="sub">{tagline}</p>
-      <div class="ctarow">
-        <a class="cta" href={`/${lang}/verified`}>{t(lang,'nav.verified')} →</a>
-        <a class="f" href={`/${lang}/daily`}>{t(lang,'nav.daily')}</a>
-        <a class="f" href={`/${lang}/intelligence`}>{t(lang,'nav.intelligence')}</a>
-      </div>
-    </div>
-    <div class="hm reveal d2">
-      <div class="heromotif"><div class="ring"></div><div class="glint"></div><div class="seedmark"></div></div>
-    </div>
-  </div>
-
-  <!-- Subscribe strip (above the fold) -->
-  <section class="subbar reveal">
-    <div class="sb-copy">
-      <strong>{lang==='de'?'In 5 Minuten schlauer':'Get smarter in 5 minutes'}</strong>
-      <span>{lang==='de'?'Sqwod Daily: das Fitness-Business, werktäglich. Kostenlos.':'Sqwod Daily: the business of fitness, every weekday. Free.'}</span>
-    </div>
-    <form class="sb-form" method={SUBSCRIBE.endpoint ? 'post' : 'get'} action={SUBSCRIBE.endpoint || `/${lang}/subscribe`}>
-      <input type="hidden" name="lang" value={lang} />
-      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
-      <input type="hidden" name="source" value="home-hero" />
-      <input type="hidden" name="ts" class="sb-ts" value="" />
-      <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
-      <button class="cta" type="submit" data-umami-event="subscribe" data-umami-event-where="home-top">{lang==='de'?'Abonnieren':'Subscribe'}</button>
-    </form>
-  </section>
-
-  <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
-    <p class="kick reveal">{lang==='de'?'Was wir abdecken':'What we cover'}</p>
-    <div class="grid cols3">
-      {LANES.map((p, i) => (
-        <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr" href={`/${lang}/articles/${p}`}>
-          <PillarIcon pillar={p} size={52} />
-          <div class="info">
-            <h3>{pillarMeta[p].label[lang]}</h3>
-            <div class="meta">{pillarMeta[p].desc[lang]}</div>
-            <span class="cardcta">{lang==='de'?'Entdecken':'Explore'} →</span>
-          </div>
-        </a>
-      ))}
-    </div>
-  </section>
-
-  <!-- Listen: the Sqwod Daily show -->
-  <section class="block listen-sec reveal" style="border-top:1px solid var(--line)">
-    <div class="pod-head">
-      <p class="kick" style="margin:0">{lang==='de'?'Hör Sqwod Daily':'Listen to Sqwod Daily'}</p>
-      <a class="pod-all" href={`/${lang}/daily`}>{lang==='de'?'Alle Folgen':'All episodes'} →</a>
+  <!-- Hero: headline + signup on the left, today's Daily on the right -->
+  <section class="hp-hero">
+    <div class="hp-lead reveal">
+      <p class="hp-kick">{T.kicker}</p>
+      <h1 class="hp-h1">{T.h1}</h1>
+      <p class="hp-sub">{tagline}</p>
+      <InlineSignup lang={lang} source="home-hero" head={T.signup} body="" />
     </div>
 
-    <div class="pod">
-      <!-- left: cover + follow -->
-      <div class="pod-left">
-        <a class="pod-art" href={latestHref} aria-label="Sqwod Daily"><img src="/podcast-cover.png" alt="Sqwod Daily" /></a>
-        <div class="pod-follow">
-          {platforms.map((p) => <a class="plat" href={p.url} target="_blank" rel="noopener">{p.name}</a>)}
-          {!hasApple && <span class="plat-soon">{lang==='de'?'Apple & Spotify in Kürze':'Apple & Spotify soon'}</span>}
+    {latest && (
+      <aside class="hp-today reveal d2" aria-label={T.today}>
+        <div class="hp-row">
+          <span class="hp-label"><span class="hp-live" aria-hidden="true"></span>{T.today}</span>
+          <span class="hp-date">{fmtDate(latest.data.date)}</span>
         </div>
+        <a class="hp-today-title" href={`/${lang}/daily/${latest.data.urlSlug}`}>{latest.data.summary || latest.data.title}</a>
+        {latestHasAudio && (
+          <a class="hp-listen" href={`/${lang}/daily/${latest.data.urlSlug}#listen`}>
+            <span class="hp-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+            <span>{T.listen}</span><span class="hp-dur">{latest.data.duration ?? '5 min'}</span>
+          </a>
+        )}
+        {latest.data.sponsor && (
+          <div class="hp-sponsor"><span>{T.presented}</span><b>{latest.data.sponsor.name}</b></div>
+        )}
+        {latestHeads.length > 0 && (
+          <ol class="hp-heads">{latestHeads.map((h) => <li>{h}</li>)}</ol>
+        )}
+        <a class="hp-more" href={`/${lang}/daily/${latest.data.urlSlug}`}>{T.read} →</a>
+      </aside>
+    )}
+  </section>
+
+  <!-- Operator playbooks -->
+  {playbooks.length > 0 && (
+    <section class="block hp-sec">
+      <div class="hp-sechead">
+        <div><h2>{T.pbH}</h2><p>{T.pbP}</p></div>
+        <a class="hp-all" href={`/${lang}/articles`}>{T.allReads} →</a>
       </div>
+      <div class="hp-grid3">
+        {playbooks.map((a) => (
+          <a class="hp-card" href={hrefFor(a)}>
+            <span class="hp-tag">{laneTag(a)}</span>
+            <span class="hp-card-h">{a.data.title}</span>
+            <span class="hp-card-p">{a.data.description}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
-      <!-- right: pitch + player + episode list / what-you-get -->
-      <div class="pod-right">
-        <h3>{lang==='de'?'Der tägliche 5-Minuten-Audio-Brief':'The daily 5-minute audio brief'}</h3>
-        <p class="pod-desc">{lang==='de'
-          ? 'Geldbewegungen, die Lektion hinter den News und ein To-do — plus etwas Spaß. Fünf Minuten, jeden Werktag, auf EN & DE. Perfekt für Pendeln, Aufwärmen oder Hundespaziergang.'
-          : 'Money movement, the lesson behind the news, and one thing to do — plus a little fun. Five minutes, every weekday, in EN & DE. Built for the commute, the warm-up, or the dog walk.'}</p>
-
-        {hasLatestAudio && (
-          <div class="pod-now">
-            <div class="pod-now-lbl">{lang==='de'?'Neueste Folge':'Latest episode'} · {fmtDate(latest.data.date)}</div>
-            <audio controls preload="none" src={latestAudio} class="pod-audio"></audio>
+  <!-- One report -->
+  {report && (
+    <section class="block hp-sec">
+      <a class="hp-report" href={hrefFor(report)}>
+        {reportStat && (
+          <div class="hp-stat">
+            <span class="hp-stat-n">{reportStat}</span>
+            {reportStatLabel && <span class="hp-stat-l">{reportStatLabel}</span>}
           </div>
         )}
+        <div class="hp-rep-body">
+          <span class="hp-label">{T.repKick}</span>
+          <span class="hp-rep-h">{report.data.title}</span>
+          <span class="hp-card-p">{report.data.description}</span>
+          <span class="cta hp-rep-cta">{T.repCta} →</span>
+        </div>
+      </a>
+    </section>
+  )}
 
-        {issues.length > 0 ? (
-          <ol class="pod-eps">
-            {issues.slice(0, 5).map((ep) => {
-              const ha = hasEpAudio(ep.data.urlSlug);
-              return (
-                <li><a class={`pod-ep${ha ? '' : ' noaudio'}`} href={ha ? `/${lang}/daily/${ep.data.urlSlug}#listen` : `/${lang}/daily/${ep.data.urlSlug}`}
-                  aria-label={ha ? `${lang==='de'?'Hören':'Listen'}: ${ep.data.summary || 'Sqwod Daily'}` : undefined}>
-                  {ha ? (
-                    <span class="ep-play">
-                      <svg viewBox="0 0 24 24" width="11" height="11" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
-                    </span>
-                  ) : <span class="ep-play-empty"></span>}
-                  <span class="ep-meta">
-                    <span class="ep-date">{fmtDate(ep.data.date)}</span>
-                    <span class="ep-title">{ep.data.summary || 'Sqwod Daily'}</span>
-                  </span>
-                  <span class="ep-dur">{ha
-                    ? <span class="ep-dur-audio"><span class="ep-dur-lbl">{lang==='de'?'Hören':'Listen'}</span>{ep.data.duration ?? '5 min'}</span>
-                    : (lang==='de'?'Lesen →':'Read →')}</span>
-                </a></li>
-              );
-            })}
-          </ol>
-        ) : (
-          <div class="pod-expect">
-            <p class="pod-expect-lbl">{lang==='de'?'Das bekommst du':'What you get'}</p>
-            <ul>
-              <li>{lang==='de'?'💸 Geldbewegung — wer Geld geholt oder gekauft hat':'💸 Money movement — who raised, who got acquired'}</li>
-              <li>{lang==='de'?'🧠 Die Lektion hinter den News':'🧠 The lesson behind the news'}</li>
-              <li>{lang==='de'?'✅ Ein umsetzbarer Tipp pro Tag':'✅ One thing you can act on today'}</li>
-              <li>{lang==='de'?'⏱️ Fünf Minuten, EN & DE':'⏱️ Five minutes, EN & DE'}</li>
-            </ul>
-            <p class="pod-soon">{lang==='de'?'Erste Folge bald — abonniere unten und sei zuerst dabei.':'First episode drops soon — subscribe below to get it first.'}</p>
-          </div>
-        )}
+  <!-- Verified top picks -->
+  {topPicks.length > 0 && (
+    <section class="block hp-sec">
+      <div class="hp-sechead">
+        <div><h2>{T.vH}</h2><p>{T.vP}</p></div>
+        <a class="hp-all" href={`/${lang}/verified`}>{T.allGuides} →</a>
+      </div>
+      <div class="hp-grid3">
+        {topPicks.map((r) => (
+          <a class="hp-pick" href={`/${lang}/verified/${r.data.urlSlug}`}>
+            <div class="hp-pick-img">
+              {r.data.asset.images[0]
+                ? <img src={r.data.asset.images[0]} alt={r.data.productName} loading="lazy" />
+                : <Glyph kind={r.data.glyph} size={96} framed={false} />}
+            </div>
+            <div class="hp-pick-body">
+              <div class="hp-pick-top">
+                <div>
+                  <span class="hp-label">{r.data.category}</span>
+                  <span class="hp-pick-h">{r.data.productName}</span>
+                </div>
+                <ScoreBadge score={r.data.sqwodScore} size={64} />
+              </div>
+              <span class="hp-card-p">{r.data.verdict}</span>
+              <span class="hp-pick-foot"><span class="hp-price">{price(r)}</span>{r.data.affiliate && <span class="hp-ad">{T.ad}</span>}</span>
+              <span class="hp-more">{T.review} →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Work with Sqwod -->
+  <section class="block hp-sec">
+    <h2 class="hp-work-h">{T.workH}</h2>
+    <div class="hp-grid2">
+      <div class="hp-door hp-door-main">
+        <span class="hp-label">{T.brandK}</span>
+        <span class="hp-door-h">{T.brandH}</span>
+        <p>{T.brandP}</p>
+        <a class="cta hp-door-cta" href={`/${lang}/advertise`}>{T.brandCta} →</a>
+      </div>
+      <div class="hp-door">
+        <span class="hp-label">{T.podK}</span>
+        <span class="hp-door-h">{T.podH}</span>
+        <p>{T.podP}</p>
+        <a class="hp-door-ghost" href="https://sqwodpod.com" target="_blank" rel="noopener">{T.podCta} →</a>
       </div>
     </div>
   </section>
-
-  <!-- Subscribe (below the fold) -->
-  <section class="subbig reveal">
-    <h2>{lang==='de'?'Werde schärfer — in 5 Minuten am Tag':'Get sharper in 5 minutes a day'}</h2>
-    <p>{lang==='de'?'Schließ dich Coaches, Gründer:innen und Operatorn an, die Sqwod Daily lesen. Werktäglich, zweisprachig, kostenlos.':'Join the coaches, founders and operators who read Sqwod Daily. Every weekday, bilingual, free.'}</p>
-    <form class="sb-form center" method={SUBSCRIBE.endpoint ? 'post' : 'get'} action={SUBSCRIBE.endpoint || `/${lang}/subscribe`}>
-      <input type="hidden" name="lang" value={lang} />
-      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
-      <input type="hidden" name="source" value="home-footer" />
-      <input type="hidden" name="ts" class="sb-ts" value="" />
-      <input type="email" name="email" placeholder={lang==='de'?'E-Mail':'Email'} aria-label="Email" />
-      <button class="cta" type="submit" data-umami-event="subscribe" data-umami-event-where="home-bottom">{lang==='de'?'Kostenlos abonnieren':'Subscribe free'}</button>
-    </form>
-  </section>
-
-  <script is:inline>
-    // Stamp each sign-up form with the time the page loaded. The Worker rejects
-    // fills that come back implausibly fast — a cheap bot filter that costs a
-    // real reader nothing. (Prerendered page, so this has to run client-side.)
-    document.querySelectorAll('.sb-ts').forEach(function (el) { el.value = String(Date.now()); });
-  </script>
 </Base>
 
 <style>
-  .subbar{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
-    border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-top:18px;background:var(--panel)}
-  .sb-copy strong{display:block;font-size:17px;letter-spacing:-.01em}
-  .sb-copy span{font-size:13.5px;color:var(--g2)}
-  .sb-form{display:flex;gap:8px;flex-wrap:wrap}
-  .sb-form input{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:11px 16px;color:var(--chalk);font:inherit;min-width:200px}
-  .sb-form input:focus{outline:none;border-color:var(--chalk)}
-  .sb-form.center{justify-content:center}
+  .hp-hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;align-items:start;padding:28px 0 12px}
+  .hp-kick,.hp-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--g2)}
+  .hp-kick{margin:0 0 14px}
+  .hp-h1{font-size:clamp(38px,6vw,64px);line-height:1.02;letter-spacing:-.035em;margin:0 0 16px;font-weight:700}
+  .hp-sub{font-size:18px;line-height:1.5;color:var(--g2);margin:0;max-width:56ch}
+  .hp-lead :global(.isu){margin:24px 0 0}
 
-  .pod-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-  .pod-all{font-size:12.5px;font-weight:700;color:var(--g3);text-decoration:none}
-  .pod-all:hover{color:var(--chalk)}
-  .pod{display:grid;grid-template-columns:220px 1fr;gap:28px;align-items:start;margin-top:14px;
-    border:1px solid var(--line);border-radius:18px;padding:24px;background:linear-gradient(180deg,var(--panel),transparent)}
-  .pod-left{display:flex;flex-direction:column;gap:14px}
-  .pod-art{display:block;width:220px;height:220px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-  .pod-art img{width:100%;height:100%;object-fit:cover;display:block}
-  .pod-follow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
-  .plat{font-size:12.5px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:7px 13px;transition:border-color .15s ease,background .15s ease}
-  .plat:hover{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
-  .plat-soon{font-size:11.5px;color:var(--g4)}
-  .pod-right h3{margin:0 0 8px;font-size:23px;letter-spacing:-.02em}
-  .pod-desc{margin:0 0 16px;color:var(--g2);font-size:15px;line-height:1.6;max-width:60ch}
-  .pod-now{margin:0 0 16px}
-  .pod-now-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin-bottom:8px}
-  .pod-audio{width:100%;height:40px;filter:invert(1) hue-rotate(180deg)}
-  .pod-eps{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-  .pod-eps li{margin:0;padding:0}
-  .pod-ep{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;padding:12px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:background .15s ease}
-  .pod-ep:hover{background:var(--panel)}
-  .ep-play{width:26px;height:26px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;color:var(--chalk);flex:none}
-  .ep-play svg{display:block;margin-left:1px}
-  .ep-dur-audio{display:inline-flex;align-items:center;gap:7px}
-  .ep-dur-lbl{font-family:var(--sans);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--chalk)}
-  .pod-ep:hover .ep-play{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
-  .ep-play-empty{display:block;width:26px;height:26px}
-  .ep-date{display:block;font-size:11px;font-family:ui-monospace,Menlo,monospace;color:var(--g3)}
-  .ep-title{display:block;font-size:14px;font-weight:600;color:var(--chalk);line-height:1.3;margin-top:2px}
-  .ep-dur{font-size:12px;font-family:ui-monospace,Menlo,monospace;color:var(--g3);white-space:nowrap}
-  .pod-expect{border-top:1px solid var(--line);padding-top:14px}
-  .pod-expect-lbl{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);margin:0 0 10px}
-  .pod-expect ul{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px}
-  .pod-expect li{font-size:14px;color:var(--g1);line-height:1.4}
-  .pod-soon{font-size:13.5px;color:var(--g2);font-style:italic;margin:0}
+  .hp-today{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px;display:flex;flex-direction:column;gap:14px}
+  .hp-row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+  .hp-label{display:inline-flex;align-items:center;gap:8px}
+  .hp-live{width:8px;height:8px;border-radius:50%;background:var(--accent)}
+  .hp-date,.hp-dur,.hp-price{font-family:var(--mono);font-size:12px;color:var(--g3)}
+  .hp-today-title{font-size:20px;font-weight:700;line-height:1.3;letter-spacing:-.01em;text-decoration:none}
+  .hp-listen{display:flex;align-items:center;gap:12px;min-height:56px;padding:6px 14px 6px 6px;border-radius:16px;background:var(--panel2);text-decoration:none;font-weight:600;font-size:14px}
+  .hp-play{width:44px;height:44px;flex:none;border-radius:12px;background:var(--chalk);color:var(--ink);display:flex;align-items:center;justify-content:center}
+  .hp-dur{margin-left:auto}
+  .hp-sponsor{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;border:1px dashed var(--edge);border-radius:12px;font-size:12px;color:var(--g2)}
+  .hp-heads{list-style:none;margin:0;padding:0}
+  .hp-heads li{padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.4}
+  .hp-more{font-size:14px;font-weight:600;text-decoration:none;color:var(--chalk)}
 
-  .subbig{text-align:center;border:1px solid var(--line);border-radius:18px;padding:40px 24px;margin:26px 0 8px;
-    background:linear-gradient(180deg,var(--panel),transparent)}
-  .subbig h2{font-size:clamp(24px,4vw,32px);letter-spacing:-.02em;margin:0 0 10px}
-  .subbig p{color:var(--g2);max-width:52ch;margin:0 auto 20px;line-height:1.55}
+  /* section.block already draws a bottom rule; the hero gets one top rule here */
+  .hp-hero{border-bottom:1px solid var(--line)}
+  .hp-sec:last-of-type{border-bottom:0}
+  .hp-sechead{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+  .hp-sechead h2,.hp-work-h{font-size:clamp(24px,3.2vw,32px);letter-spacing:-.02em;margin:0 0 6px}
+  .hp-sechead p{margin:0;color:var(--g2);font-size:15px;max-width:60ch}
+  .hp-all{font-size:14px;font-weight:600;text-decoration:none;color:var(--chalk);padding:10px 0}
+  .hp-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .hp-grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .hp-card{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px;text-decoration:none;transition:border-color .15s}
+  .hp-card:hover,.hp-pick:hover,.hp-report:hover{border-color:var(--edge)}
+  .hp-tag{align-self:flex-start;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--edge);border-radius:6px;color:var(--g1)}
+  .hp-card-h{font-size:18px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+  .hp-card-p{font-size:14px;line-height:1.5;color:var(--g2)}
 
-  @media(max-width:720px){
-    .pod{grid-template-columns:1fr;gap:18px}
-    .pod-art{width:150px;height:150px}
-    .pod-expect ul{grid-template-columns:1fr}
+  .hp-report{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;align-items:center;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:32px;text-decoration:none}
+  .hp-stat{display:flex;flex-direction:column;gap:8px}
+  .hp-stat-n{font-family:var(--mono);font-size:clamp(56px,8vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:500}
+  .hp-stat-l{font-size:14px;line-height:1.45;color:var(--g2);max-width:32ch}
+  .hp-rep-body{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+  .hp-rep-h{font-size:clamp(22px,2.6vw,28px);font-weight:700;line-height:1.2;letter-spacing:-.02em}
+  .hp-rep-cta{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;font-size:14px}
+
+  .hp-pick{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden;text-decoration:none}
+  .hp-pick-img{height:180px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;border-bottom:1px solid var(--line)}
+  .hp-pick-img img{max-height:150px;max-width:80%;object-fit:contain}
+  .hp-pick-body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .hp-pick-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+  .hp-pick-top > div{display:flex;flex-direction:column;gap:6px}
+  .hp-pick-h{font-size:19px;font-weight:700;letter-spacing:-.01em}
+  .hp-pick-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto}
+  .hp-ad{font-size:11px;color:var(--g3)}
+
+  .hp-door{display:flex;flex-direction:column;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:20px;padding:28px}
+  .hp-door-main{background:var(--panel)}
+  .hp-door-h{font-size:22px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
+  .hp-door p{margin:0;color:var(--g2);font-size:15px;line-height:1.55}
+  .hp-door-cta,.hp-door-ghost{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;font-size:14px;margin-top:4px}
+  .hp-door-ghost{border:1px solid var(--chalk);border-radius:12px;font-weight:600;text-decoration:none;color:var(--chalk)}
+
+  @media(max-width:860px){
+    .hp-hero{grid-template-columns:1fr;gap:24px}
+    .hp-grid3{grid-template-columns:1fr}
+    .hp-report{grid-template-columns:1fr;gap:18px;padding:24px}
   }
   @media(max-width:600px){
-    .subbar{flex-direction:column;align-items:stretch}
-    /* Email capture: stack input + button full-width so nothing overflows or sits off-center */
-    .sb-form,.sb-form.center{flex-direction:column;flex-wrap:nowrap;align-items:stretch;width:100%}
-    .sb-form input{min-width:0;width:100%;box-sizing:border-box}
-    .sb-form .cta{width:100%}
+    .hp-grid2{grid-template-columns:1fr}
+    .hp-door{padding:22px}
   }
 </style>

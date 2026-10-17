@@ -201,9 +201,9 @@ const shareCfg = {
                 {hasBand && <rect x={cx - barW / 2 - 3} y={yOf(s.high![i])} width={barW + 6} height={Math.max(1, yOf(s.low![i]) - yOf(s.high![i]))} rx="4" fill="var(--accent)" opacity="0.16" />}
                 <rect class="bar-r" x={x} y={base - h} width={barW} height={h} rx="4" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.78'} />
                 {emph && <rect x={x - 2} y={base - h - 2} width={barW + 4} height={h + 2} rx="5" fill="none" stroke="var(--accent)" stroke-width="2" />}
-                <text x={cx} y={base - h - 9} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g2)'} font-size="13" font-family="ui-monospace,Menlo,monospace">{p}</text>
-                {isNow && <text x={cx} y={top - 10} text-anchor="middle" fill="var(--accent)" font-size="11" font-weight="700" font-family="ui-monospace,Menlo,monospace">▼ {TX.now}</text>}
-                {yrs[i] && <text x={cx} y={base + 20} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g4)'} font-size="12" font-family="ui-monospace,Menlo,monospace">{yrs[i]}</text>}
+                <text x={cx} y={base - h - 9} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g2)'} font-size="13" font-family="var(--mono)">{p}</text>
+                {isNow && <text x={cx} y={top - 10} text-anchor="middle" fill="var(--accent)" font-size="11" font-weight="700" font-family="var(--mono)">▼ {TX.now}</text>}
+                {yrs[i] && <text x={cx} y={base + 20} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g4)'} font-size="12" font-family="var(--mono)">{yrs[i]}</text>}
               </g>
             );
           })}
@@ -331,11 +331,11 @@ const shareCfg = {
   .chart .bars{display:flex;align-items:flex-end;gap:8px;height:160px;margin-top:14px;border-bottom:1px solid var(--line);padding-bottom:0}
   .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
   .bar{width:100%;max-width:46px;background:var(--chalk);border-radius:4px 4px 0 0;position:relative;min-height:3px;display:flex;justify-content:center}
-  .bar-v{position:absolute;top:-18px;font-size:10px;color:var(--g2);font-family:ui-monospace,Menlo,monospace}
-  .bar-y{font-size:10px;color:var(--g4);margin-top:6px;font-family:ui-monospace,Menlo,monospace}
+  .bar-v{position:absolute;top:-18px;font-size:10px;color:var(--g2);font-family:var(--mono)}
+  .bar-y{font-size:10px;color:var(--g4);margin-top:6px;font-family:var(--mono)}
   .cl-list{list-style:none;margin:10px 0 0;padding:0}
   .cl-list li{font-size:13.5px;color:var(--g2);padding:6px 0;border-top:1px solid var(--line)}
-  .cl-list b{color:var(--chalk);font-family:ui-monospace,Menlo,monospace;font-size:12px}
+  .cl-list b{color:var(--chalk);font-family:var(--mono);font-size:12px}
   /* gated lead-magnet: figures + chart are the teaser; body fades behind the unlock */
   .report-body[data-gated]{max-height:320px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 58%,transparent);mask-image:linear-gradient(180deg,#000 58%,transparent)}
   .report-body.open{max-height:none;-webkit-mask-image:none;mask-image:none}
@@ -359,7 +359,7 @@ const shareCfg = {
   .bar-g:focus{outline:none}
   .bar-g:focus .bar-r{stroke:var(--chalk);stroke-width:2}
   .chart-tip{position:absolute;pointer-events:none;z-index:5;background:var(--bg);border:1px solid var(--chalk);border-radius:8px;padding:7px 10px;font-size:12px;line-height:1.4;color:var(--chalk);transform:translate(-50%,-110%);white-space:nowrap;box-shadow:0 4px 18px rgba(0,0,0,.3)}
-  .chart-tip b{font-family:ui-monospace,Menlo,monospace}
+  .chart-tip b{font-family:var(--mono)}
   .chart-tip .yoy-up{color:var(--up)}.chart-tip .yoy-dn{color:var(--down)}
   /* operator playbook */
   .pb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
@@ -465,8 +465,8 @@ const shareCfg = {
     const accent = shareCfg.accent || '#C7F24C';
     const C = { ink: '#0A0B0A', chalk: '#F4F5F0', g1: '#C9CFC0', g2: '#9AA093', g3: '#8A8F86', g4: '#6B6F64', dim: '#5B5F55', accent };
     // Heavy system stack (rasterization can't fetch page/Google fonts — approximate Archivo/Space Mono)
-    const SANS = "'Helvetica Neue',Helvetica,Arial,system-ui,sans-serif";
-    const MONO = "ui-monospace,'SF Mono',Menlo,Consolas,monospace";
+    const SANS = "'Geist Variable','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif";
+    const MONO = "'Geist Mono Variable',ui-monospace,'SF Mono',Menlo,Consolas,monospace";
     const W = 1600, H = 900, PADX = 96;
     const section = shareCfg.section || shareCfg.tag || 'SQWOD';
     const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
