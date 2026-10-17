@@ -9,6 +9,7 @@ import Base from '../../../../layouts/Base.astro';
 import InlineSignup from '../../../../components/InlineSignup.astro';
 import bls from '../../../../data/pricing-index/bls.json';
 import { PRICING_INDEX, loadIndexStats } from '../../../../config/pricing-index';
+import { SUBSCRIBE } from '../../../../config/subscribe';
 
 export function getStaticPaths() {
   return [{ params: { lang: 'en' } }];
@@ -76,9 +77,13 @@ const ld = {
   ],
 };
 
+// Employed-trainer pay by state, highest first (open table: the citable part).
+const statePay = Object.entries(bls.states).map(([code, s]) => ({ code, ...s })).sort((a, b) => b.medianAnnual - a.medianAnnual);
+
 // Only what the browser needs.
 const clientData = {
   endpoint: PRICING_INDEX.endpoint,
+  subscribe: SUBSCRIBE.endpoint,
   minPercentile: PRICING_INDEX.minPercentile,
   early,
   stats: { n: stats.n, session: stats.session, online: stats.online },
@@ -224,6 +229,78 @@ const clientData = {
     {hasMedian
       ? <p class="sub">Median 60-minute 1:1 session: <b>{usd(stats.session.p50!)}</b>. Middle half of coaches: {usd(stats.session.p25!)} to {usd(stats.session.p75!)} (n = {stats.session.n}).</p>
       : <p class="sub">Medians publish once a group reaches {PRICING_INDEX.minCell} rates. Percentiles in the calculator switch on at {PRICING_INDEX.minPercentile}.</p>}
+  </section>
+
+  <section class="block" id="state-pay">
+    <h2>Employed trainer pay by state</h2>
+    <p class="sub pi-narrow">Median pay for employed fitness trainers and instructors, {bls.period}, from the U.S. Bureau of Labor Statistics. This is what employers pay trainers, not what clients pay a coach. It is still a useful reference point: an independent rate has to cover costs an employer would otherwise carry.</p>
+    <div class="pi-table-wrap">
+      <table class="pi-table">
+        <thead><tr><th>#</th><th>State</th><th>Median hourly</th><th>Median yearly</th></tr></thead>
+        <tbody>
+          {statePay.map((st, i) => (
+            <tr><td class="pi-rank">{i + 1}</td><td>{st.name}</td><td>{usd(st.medianHourly)}</td><td>{usd(st.medianAnnual)}</td></tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="pi-fine pi-tnote">National median: {usd(nat.medianHourly)} an hour, {usd(nat.medianAnnual)} a year. Hourly figures for states are yearly medians divided by 2,080 hours.</p>
+  </section>
+
+  <section class="block pi-play" id="playbook">
+    <p class="kick">Free for subscribers and for coaches who add their rate</p>
+    <h2>The Coach Pricing Playbook</h2>
+    <p class="sub pi-narrow">Four moves that turn your floor into prices clients say yes to. Every number below is a worked example built on the calculator's logic, not a market average.</p>
+
+    <div class="pi-play-body prose" data-gated>
+      <h3>1. Set a price, not just a floor</h3>
+      <p>Your floor pays your costs and your income goal only if every booked hour happens. Real calendars have cancellations, quiet months and admin time. Add a buffer on top, for example 15 to 25 percent, and make the result your standard rate.</p>
+      <p class="pi-ex"><b>Example:</b> floor $74, plus a 20 percent buffer is about $89, so a standard 60-minute rate of $90.</p>
+
+      <h3>2. Package it in three tiers</h3>
+      <p>Clients compare packages, not single sessions. Offer three, and keep every per-session price inside them above your floor.</p>
+      <ul>
+        <li><b>Single session:</b> $90. The reference price that makes the others look good.</li>
+        <li><b>10-session pack</b>, paid upfront, valid for 12 weeks: $810, which is $81 a session and 10 percent off.</li>
+        <li><b>Monthly plan</b>, 8 sessions a month, renews automatically, 30 days' notice to cancel: $680 a month, which is $85 a session.</li>
+      </ul>
+      <p>The pack and the plan book your calendar in advance. Steer most clients toward them.</p>
+
+      <h3>3. Price online coaching by your time</h3>
+      <p>Count the hours one online client takes you each month: check-ins, programme updates, messages. Multiply by your floor. That is your minimum monthly price.</p>
+      <p class="pi-ex"><b>Example:</b> 3 hours a month × $74 floor = $222 minimum, so a monthly price of $249. If that is more than clients in your niche will pay, cut the hours (fewer check-ins, reusable programme templates), not the floor.</p>
+
+      <h3>4. Raise your rates once a year</h3>
+      <p>Good moments: your calendar is mostly full, your floor went up, or you added a qualification. Give existing clients 30 days' notice, let anything already paid for keep today's price, and charge new clients the new rate from day one.</p>
+      <p><b>Email script</b> (copy and edit):</p>
+<pre><code>Subject: My rates from [date]
+
+Hi [name],
+
+Thank you for training with me. Seeing your progress on [specific win] is the best part of my week.
+
+From [date], my rate for a 60-minute session goes from $[old] to $[new]. Packs and monthly plans change by the same amount. Anything you have already paid for stays at today's price.
+
+This lets me keep investing in [education / equipment / your programme] and keep my schedule small enough to give you real attention.
+
+If you would like to lock in a pack at today's rate before [date], just reply and I will set it up.
+
+See you [next session],
+[your name]</code></pre>
+      <p><b>Text message version:</b></p>
+<pre><code>Hi [name], quick heads-up: from [date] my session rate goes from $[old] to $[new]. Anything you have prepaid stays at today's price, and you can grab a pack at the current rate until [date]. Thanks for training with me!</code></pre>
+      <p>Want the numbers behind your price? The first Sqwod Coach Pricing Report goes to subscribers first, as soon as the index has enough rates.</p>
+    </div>
+
+    <div class="pi-unlock" id="pi-unlock">
+      <p class="pi-unlock-h">Unlock the playbook</p>
+      <p class="pi-unlock-p">Free with Sqwod Daily, five minutes on the business of fitness every weekday. Or add your rate in the calculator above and it unlocks right away.</p>
+      <form class="pi-unlock-form">
+        <input type="email" name="email" required autocomplete="email" placeholder="Email address" aria-label="Email address" />
+        <button class="cta" type="submit" data-umami-event="pricing-index-unlock">Unlock free</button>
+      </form>
+      <p class="pi-fine">We email you once to confirm. Unsubscribe anytime in one click. <a href="/en/datenschutz">Privacy</a></p>
+    </div>
   </section>
 
   <section class="block">
@@ -408,12 +485,36 @@ const clientData = {
         if (res.ok && res.d.ok) {
           msg.textContent = res.d.dup ? 'You already added a rate today. Thanks.' : 'Added. Thank you: your rate is now part of the index.';
           send.hidden = true; track('pricing-index-contribute');
+          unlock(); msg.textContent += ' Your playbook is unlocked below.';
         } else { msg.textContent = 'That did not go through. Please try again later.'; send.disabled = false; }
       })
       .catch(function () { msg.textContent = 'That did not go through. Please try again later.'; send.disabled = false; });
   });
 
   show(1);
+})();
+
+// Playbook gate: same soft gate as Sqwod Intelligence reports (shared key), so
+// anyone who unlocked a report already sees it. Contributors unlock it too.
+function unlock() {
+  try { localStorage.setItem('sqwod_unlocked', '1'); } catch (e) {}
+  var b = document.querySelector('.pi-play-body'); if (b) b.removeAttribute('data-gated');
+  var u = document.getElementById('pi-unlock'); if (u) u.hidden = true;
+}
+(function () {
+  try { if (localStorage.getItem('sqwod_unlocked') === '1') unlock(); } catch (e) {}
+  var form = document.querySelector('.pi-unlock-form'); if (!form) return;
+  var loadedAt = Date.now();
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = (form.email.value || '').trim(); if (!email) return;
+    var btn = form.querySelector('button'); btn.disabled = true; btn.textContent = '…';
+    var done = function () { try { if (window.umami) window.umami.track('pricing-index-unlocked'); } catch (e) {} unlock(); };
+    if (!PI.subscribe) { done(); return; }
+    fetch(PI.subscribe, { method: 'POST', headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ email: email, lang: 'en', source: 'pricing-index', role: 'coach', ts: loadedAt }) })
+      .catch(function () {}).then(done);
+  });
 })();
 </script>
 
@@ -480,6 +581,28 @@ const clientData = {
   .pi-faq summary::after{content:'+';font-family:var(--mono);color:var(--g3)}
   .pi-faq details[open] summary::after{content:'–'}
   .pi-faq p{color:var(--g1);line-height:1.6;margin:10px 0 0}
+  .pi-narrow{max-width:68ch}
+  .pi-table-wrap{max-height:440px;overflow:auto;border:1px solid var(--line);border-radius:14px;margin:14px 0 8px;background:var(--panel)}
+  .pi-table{width:100%;border-collapse:collapse;font-size:14px}
+  .pi-table th{position:sticky;top:0;background:var(--panel2);text-align:left;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g3);padding:10px 14px;border-bottom:1px solid var(--line)}
+  .pi-table td{padding:9px 14px;border-bottom:1px solid var(--line);color:var(--g1)}
+  .pi-table td:nth-child(3),.pi-table td:nth-child(4){font-family:var(--mono)}
+  .pi-table tr:last-child td{border-bottom:0}
+  .pi-rank{color:var(--g3);font-family:var(--mono);width:36px}
+  .pi-tnote{margin-top:6px}
+  .pi-play-body{max-width:68ch;margin-top:16px}
+  .pi-play-body h3{font-size:18px;margin:22px 0 8px}
+  .pi-play-body .pi-ex{padding:12px 14px;border-left:2px solid var(--accent);background:var(--accent-soft);border-radius:0 10px 10px 0}
+  .pi-play-body pre{white-space:pre-wrap}
+  .pi-play-body[data-gated]{max-height:300px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 50%,transparent);mask-image:linear-gradient(180deg,#000 50%,transparent)}
+  .pi-unlock{max-width:560px;margin:8px 0 0;padding:20px;border:1px solid var(--line);border-radius:16px;background:var(--panel)}
+  .pi-unlock[hidden]{display:none}
+  .pi-unlock-h{font-size:19px;font-weight:700;margin:0 0 6px}
+  .pi-unlock-p{color:var(--g2);margin:0 0 14px;line-height:1.5}
+  .pi-unlock-form{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+  .pi-unlock-form input{flex:1 1 220px;min-height:48px;box-sizing:border-box;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:0 14px;color:var(--chalk);font:inherit;font-size:16px}
+  .pi-unlock-form input:focus{outline:none;border-color:var(--accent)}
+  .pi-unlock-form .cta{min-height:48px;padding:0 20px;border:0;cursor:pointer;border-radius:12px}
   .pi-cite{font-size:12px;color:var(--g3);margin:22px 0 8px;line-height:1.6;max-width:90ch}
 
   @media (max-width:600px){
