@@ -53,8 +53,10 @@ whoFor:
   buy: "Du willst einen Schuh für Alltag, Tempo und Wettkampf, und das gerade zum reduzierten Preis? Dann ist der Speed 4 perfekt."
   skip: "Finger weg, wenn du einen maximal steifen Carbon-Racer brauchst oder breite Füße mit viel Platz in der Zehenbox hast."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://thekit.wolverineworldwide.com/match/media_lookup/S20940-220_1/?preset=dw-large"
+  credit: "Produktbild: Saucony"
 tags: ["footwear", "running", "super-trainer"]
 ---
 

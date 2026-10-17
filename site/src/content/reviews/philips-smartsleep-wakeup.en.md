@@ -53,8 +53,10 @@ whoFor:
   buy: "Buy it if you struggle with dark winter mornings and want a proven, gentle light-based wake-up with wind-down and sunset features, and you don't mind paying a premium."
   skip: "Skip it if you want app control, high-quality audio, or just a budget wake-up light, since cheaper Philips models cover the basics for much less."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.philips.com/is/image/philipsconsumer/51cd2062020741ccb332adb900a3a864?$png$&wid=1200&hei=1200"
+  credit: "Product image: Philips"
 tags: ["sleep", "wake-up-light", "recovery"]
 ---
 

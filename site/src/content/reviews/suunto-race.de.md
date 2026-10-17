@@ -55,8 +55,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du eine grosse, helle AMOLED-Multisportuhr mit starkem Dualband-GPS, Karten und mehrtaegigem Akku willst - fuer deutlich weniger als eine Garmin Forerunner 965."
   skip: "Finger weg, wenn du auf praezise Handgelenks-Herzfrequenz, kontaktloses Bezahlen oder Garmins tiefes App- und Drittanbieter-Oekosystem angewiesen bist - oder lieber auf die Race 2 wartest."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.suunto.com/globalassets/productimages/suunto-race/suunto-race-titanium-charcoal/suuntorace-all-black-front2-1280x1280px-2.png?width=900"
+  credit: "Produktbild: Suunto"
 tags: ["wearables", "running", "multisport", "suunto"]
 ---
 

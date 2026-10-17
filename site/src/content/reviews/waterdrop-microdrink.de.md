@@ -53,8 +53,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du zu wenig pures Wasser trinkst und einen portablen, zuckerfreien Geschmacks-Boost mit Vitamin-Extra willst."
   skip: "Lass die Finger davon, wenn du echte Elektrolyt-Zufuhr für hartes Training brauchst (dann eher Microlyte) oder preissensibel bist."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.waterdrop.com/cdn/shop/files/cm_raspberry-us.jpg?v=1787228376"
+  credit: "Produktbild: waterdrop"
 tags: ["hydration", "electrolytes", "nutrition"]
 ---
 

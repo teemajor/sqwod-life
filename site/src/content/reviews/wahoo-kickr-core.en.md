@@ -53,8 +53,10 @@ whoFor:
   buy: "You coach or ride indoors and want accurate, near-premium power training on Zwift/TrainerRoad without paying flagship money."
   skip: "You need built-in incline motion or steering, a carrying handle, or the cheapest possible wheel-on entry trainer."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://de-eu.wahoofitness.com/media/catalog/product/k/i/kickr_core_2.jpg"
+  credit: "Product image: Wahoo"
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 

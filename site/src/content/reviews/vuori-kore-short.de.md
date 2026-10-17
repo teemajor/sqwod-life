@@ -55,8 +55,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du eine hochwertige Short willst, die Krafttraining, funktionelles Training und Alltag gleichermaßen meistert und dir Komfort wichtiger ist als Lauf-Tempo."
   skip: "Lass sie stehen, wenn du vor allem bei Hitze läufst oder intensives Cardio machst und eine leichte, schnell trocknende Short mit sicheren Reißverschlusstaschen brauchst."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://cdn.shopify.com/s/files/1/0022/4008/6074/files/V302CCL_FA24_M_ECOMM_SHORTS_PINUP_7.jpg"
+  credit: "Produktbild: Vuori"
 tags: ["apparel", "training", "shorts"]
 ---
 

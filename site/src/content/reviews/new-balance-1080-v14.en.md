@@ -53,8 +53,10 @@ whoFor:
   buy: "Buy if you want a max-cushion, comfort-first daily trainer for easy runs, recovery days and long slow miles."
   skip: "Skip it if you want a lightweight, snappy shoe for tempo work or races, or if you have wide feet and can't get the 2E width."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://nb.scene7.com/is/image/NB/m1080k14_nb_02_i?$pdpflexf2$&wid=880&hei=880"
+  credit: "Product image: New Balance"
 tags: ["footwear", "running", "daily-trainer"]
 ---
 

@@ -52,6 +52,11 @@ cons:
 whoFor:
   buy: "You coach tested athletes (or are cautious) and want certainty over price."
   skip: "You're on a tight budget — a Creapure/NSF generic is most of the way there."
+asset:
+  type: images
+  images:
+    - "https://www.livemomentous.com/cdn/shop/files/New_Creatine_90serv_Unflavored_0426fd0a-f018-4468-a50d-9821d2c074a3.jpg?v=1781125600&width=1200"
+  credit: "Product image: Momentous"
 tags: ["supplements", "creatine", "protein", "momentous"]
 ---
 

@@ -54,8 +54,10 @@ whoFor:
   buy: "Buy if you want maximum ground feel for lifting and functional training and you are ready to transition to barefoot gradually."
   skip: "Skip if you are new to barefoot shoes and want one do-everything trainer, or if outdoor/trail grip and cushioning matter to you."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.vivobarefoot.com/media/catalog/product/3/0/309092-01_side_new.jpg"
+  credit: "Product image: Vivobarefoot"
 tags: ["footwear", "barefoot", "training"]
 ---
 

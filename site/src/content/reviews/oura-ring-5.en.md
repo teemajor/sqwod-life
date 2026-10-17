@@ -51,8 +51,10 @@ whoFor:
   buy: "You program around recovery and sleep and want the most accurate, most discreet wearable there is — now so small clients won't clock it."
   skip: "You need live workout heart rate and GPS, or you won't pay an ongoing subscription."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://ourahealth.imgix.net/cooper-pdp/or5-brushed-alt.png?ixlib=js-3.8.0&auto=format&fit=max&fm=png&q=70&w=1920&s=5a7fdd27be8b0f617c20dd453b0b3885"
+  credit: "Product image: Oura"
 tags: ["wearables", "recovery", "sleep", "smart-ring"]
 ---
 

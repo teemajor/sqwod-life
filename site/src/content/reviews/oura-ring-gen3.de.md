@@ -54,8 +54,10 @@ whoFor:
   buy: "Du bist Coach und programmierst rund um Recovery und Schlaf — oder willst die ruhigsten Readiness-Daten zur Steuerung der Belastung."
   skip: "Du brauchst Echtzeit-Herzfrequenz und GPS — nimm einen Brustgurt oder eine Sportuhr. Oder du zahlst kein Abo."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://ouraring.com/blog/wp-content/uploads/2022/09/Oura-Gen3-Horizon-Intro.jpg"
+  credit: "Produktbild: Oura"
 tags: ["wearables", "recovery", "schlaf", "smart-ring"]
 ---
 

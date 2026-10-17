@@ -53,8 +53,10 @@ whoFor:
   buy: "Du bist Ausdauer-Coach oder datengetriebene:r Athlet:in und willst Belastungssteuerung und strukturierte Pläne über viele Athlet:innen."
   skip: "Du bist Freizeitsportler:in oder Kraftnutzer:in und willst nur einfaches Logging — Tiefe und Preis sind überzogen."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://wpassets.trainingpeaks.com/wp-content/uploads/2025/08/29101857/Metrics_AthleteFeaturePage_1147x645.png"
+  credit: "Produktbild: TrainingPeaks"
 tags: ["apps", "coaching", "endurance"]
 ---
 

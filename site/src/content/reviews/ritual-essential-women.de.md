@@ -55,8 +55,10 @@ whoFor:
   buy: "Du ernährst dich grundsätzlich ausgewogen und willst ein sauberes, unabhängig verifiziertes veganes 'Lücken-füllen'-Supplement."
   skip: "Du willst ein umfassendes All-in-one-Multi, eine günstige Option — oder bist in Deutschland/EU ohne Weiterleitungsdienst."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://ritual.com/cdn/shop/files/PDP_EFW18_Bottle.jpg?v=1770263110"
+  credit: "Produktbild: Ritual"
 tags: ["supplements", "multivitamin", "ernährung"]
 ---
 

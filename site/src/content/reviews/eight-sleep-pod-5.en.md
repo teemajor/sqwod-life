@@ -51,8 +51,10 @@ whoFor:
   buy: "You'll invest in sleep quality and want automatic, dual-zone temperature that genuinely improves recovery — no wearable required."
   skip: "You want a one-time purchase, or you can't justify €3,299+ plus a yearly subscription."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://res.cloudinary.com/eightsleep/image/upload/f_auto,q_auto,c_limit,w_1200/pod-5-core_z7yla2.png"
+  credit: "Product image: Eight Sleep"
 tags: ["sleep", "recovery", "sleep-tech"]
 ---
 

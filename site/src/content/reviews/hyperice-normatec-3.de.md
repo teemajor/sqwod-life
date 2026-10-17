@@ -53,8 +53,10 @@ whoFor:
   buy: "Du bist Läufer, Radfahrer oder trainierst sehr oft und nutzt das Gerät wirklich regelmäßig — dann fühlen sich deine Beine am nächsten Tag frischer an."
   skip: "Du trainierst nur gelegentlich oder achtest aufs Budget und erwartest einen belegten, messbaren Leistungsschub — dann lass es."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://hyperice.com/cdn/shop/files/Normatec3Legs1.png?v=1781803460&width=1200"
+  credit: "Produktbild: Hyperice"
 tags: ["recovery", "compression", "hyperice"]
 ---
 

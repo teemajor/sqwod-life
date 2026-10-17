@@ -54,8 +54,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du maximales Bodengefuehl fuers Heben und Functional Training willst und bereit bist, dich schrittweise ans Barfuss-Gefuehl zu gewoehnen."
   skip: "Lass die Finger davon, wenn du neu bei Barfussschuhen bist und einen Alleskoenner willst, oder wenn dir Outdoor-/Trail-Grip und Daempfung wichtig sind."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.vivobarefoot.com/media/catalog/product/3/0/309092-01_side_new.jpg"
+  credit: "Produktbild: Vivobarefoot"
 tags: ["footwear", "barefoot", "training"]
 ---
 

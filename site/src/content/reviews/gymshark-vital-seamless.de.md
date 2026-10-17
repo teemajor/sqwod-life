@@ -54,8 +54,10 @@ whoFor:
   buy: "Deine Kund:innen wollen eine bezahlbare, wiedererkennbare Seamless-Legging oder -Kit für den Alltag und bestellen problemlos DTC."
   skip: "Du brauchst Anprobe im Laden, garantiert exakte Größen oder unkomplizierte lokale Retouren."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://cdn.shopify.com/s/files/1/0156/6146/files/images-VitalSeamless2_0LeggingsGsCoralRedMarlB1A2B_RB0Z_0655_V2.jpg?v=1768996275"
+  credit: "Produktbild: Gymshark"
 tags: ["apparel", "training", "gymshark"]
 ---
 

@@ -53,8 +53,10 @@ whoFor:
   buy: "Du bist ambitioniert und nutzt EMS neben echtem Training für ergänzende Kraft, gezielte TENS-Schmerzlinderung und Recovery — und kannst den Preis tragen."
   skip: "Du willst einen günstigen Standalone-Shortcut für Fitness oder Recovery — ein kleineres Compex (Sport Elite) oder Kabelgerät liefert den Großteil des belegten Nutzens günstiger."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.compex.com/cdn/shop/files/SP_8.0.jpg?v=1786701369&width=1300"
+  credit: "Produktbild: Compex"
 tags: ["recovery", "ems", "muscle-stimulation"]
 ---
 

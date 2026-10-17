@@ -54,8 +54,10 @@ whoFor:
   buy: "Du willst eine hochwertige, formende, edel schimmernde Kompressions-Legging für Kraft oder Studio-to-Street und akzeptierst den Preis."
   skip: "Du brauchst Taschen, hohe Atmungsaktivität für Hot Yoga oder eine günstige Option."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.aloyoga.com/cdn/shop/files/W5561R_01_b2_s1_a1_dFA26_m191_d1dfefba-ea5a-416d-93e0-b05b85234953.jpg?v=1790135113&width=1200"
+  credit: "Produktbild: Alo Yoga"
 tags: ["apparel", "yoga", "leggings"]
 ---
 

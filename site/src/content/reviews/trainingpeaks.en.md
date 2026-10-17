@@ -53,8 +53,10 @@ whoFor:
   buy: "You are an endurance coach or data-driven athlete who wants load management and structured plans across many athletes."
   skip: "You are a casual exerciser or strength user who just wants simple logging — the depth and price are overkill."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://wpassets.trainingpeaks.com/wp-content/uploads/2025/08/29101857/Metrics_AthleteFeaturePage_1147x645.png"
+  credit: "Product image: TrainingPeaks"
 tags: ["apps", "coaching", "endurance"]
 ---
 

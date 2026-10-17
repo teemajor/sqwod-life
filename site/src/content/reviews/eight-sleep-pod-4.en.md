@@ -52,6 +52,11 @@ cons:
 whoFor:
   buy: "You treat sleep as a performance lever and will pay for the best temperature control."
   skip: "You won't commit to the subscription, or you sleep cool already."
+asset:
+  type: images
+  images:
+    - "https://pages.eightsleep.com/cdn/shop/files/pod4-regular_1920x.png?v=1732906392"
+  credit: "Product image: Eight Sleep"
 tags: ["sleep", "recovery", "eight-sleep"]
 ---
 

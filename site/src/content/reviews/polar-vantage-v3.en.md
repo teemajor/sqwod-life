@@ -53,8 +53,10 @@ whoFor:
   buy: "Serious triathletes and multisport/endurance athletes who want deep training and recovery data plus long battery life."
   skip: "People who want a full smartwatch (contactless pay, apps, music) or a budget-friendly tracker."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.polar.com/img/cms/043be56c5f07fd8515d25012b3cf9dbdbd88bcd4-2000x2000-600.png"
+  credit: "Product image: Polar"
 tags: ["wearables", "multisport", "polar"]
 ---
 

@@ -53,8 +53,10 @@ whoFor:
   buy: "You want one durable, high-mobility do-everything short and don't mind ~$68 (or a reseller route into the EU)."
   skip: "You want max breathability, a budget option, or cheap, hassle-free delivery inside Germany."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.tenthousand.cc/cdn/shop/files/IntervalShort_7in_Black_Front_84731_PDP_v03_91424cc5-23fe-46b7-9f07-a919291e6739.jpg"
+  credit: "Product image: Ten Thousand"
 tags: ["apparel", "training", "shorts"]
 ---
 

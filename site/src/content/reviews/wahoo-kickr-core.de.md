@@ -53,8 +53,10 @@ whoFor:
   buy: "Du coachst oder fährst indoor und willst genaues, Beinahe-Premium-Leistungstraining auf Zwift/TrainerRoad ohne Flaggschiff-Preis."
   skip: "Du brauchst integrierte Steigungsbewegung/Lenkung, einen Tragegriff oder den günstigsten Wheel-on-Einsteiger."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://de-eu.wahoofitness.com/media/catalog/product/k/i/kickr_core_2.jpg"
+  credit: "Produktbild: Wahoo"
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 

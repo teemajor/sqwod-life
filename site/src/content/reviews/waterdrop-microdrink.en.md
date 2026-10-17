@@ -53,8 +53,10 @@ whoFor:
   buy: "Buy it if you struggle to drink enough plain water and want a portable, sugar-free flavour boost with a vitamin top-up."
   skip: "Skip it if you need serious electrolyte replenishment for hard training (choose Microlyte instead) or you're price-sensitive."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.waterdrop.com/cdn/shop/files/cm_raspberry-us.jpg?v=1787228376"
+  credit: "Product image: waterdrop"
 tags: ["hydration", "electrolytes", "nutrition"]
 ---
 

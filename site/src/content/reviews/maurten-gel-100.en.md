@@ -53,8 +53,10 @@ whoFor:
   buy: "Serious marathoners, triathletes and ultra runners with a sensitive stomach who want maximum reliability on race day and don't mind paying for it."
   skip: "Budget-conscious athletes or anyone whose gut already tolerates cheaper standard gels just fine — you're mostly paying for the brand and format."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://maurten.imgix.net/photos/Products/Entry-Card-Maurten-Gel-100-1.png?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=800&q=80&w=800&s=48c317b0ca10c4b45aa03659d57a05ee"
+  credit: "Product image: Maurten"
 tags: ["nutrition", "endurance", "fuel"]
 ---
 

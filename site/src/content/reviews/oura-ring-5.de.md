@@ -51,8 +51,10 @@ whoFor:
   buy: "Du planst rund um Recovery und Schlaf und willst das genaueste, dezenteste Wearable — jetzt so klein, dass Kund:innen es nicht bemerken."
   skip: "Du brauchst Live-Herzfrequenz im Training und GPS, oder du zahlst kein laufendes Abo."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://ourahealth.imgix.net/cooper-pdp/or5-brushed-alt.png?ixlib=js-3.8.0&auto=format&fit=max&fm=png&q=70&w=1920&s=5a7fdd27be8b0f617c20dd453b0b3885"
+  credit: "Produktbild: Oura"
 tags: ["wearables", "recovery", "sleep", "smart-ring"]
 ---
 

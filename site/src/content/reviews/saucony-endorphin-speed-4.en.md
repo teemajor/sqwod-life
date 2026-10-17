@@ -53,8 +53,10 @@ whoFor:
   buy: "Runners who want one shoe for daily miles, tempo and race day, especially at today's discounted prices."
   skip: "Skip if you need a maximally stiff carbon racer or have wide feet that need a roomy toe box."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://thekit.wolverineworldwide.com/match/media_lookup/S20940-220_1/?preset=dw-large"
+  credit: "Product image: Saucony"
 tags: ["footwear", "running", "super-trainer"]
 ---
 

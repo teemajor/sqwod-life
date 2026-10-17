@@ -54,8 +54,10 @@ whoFor:
   buy: "Du coachst lockere und Recovery-Tage und willst maximale, schützende Dämpfung in einem stabilen Neutralschuh."
   skip: "Du willst einen leichten, spritzigen Schuh fürs Tempo — fester EVA und Gewicht machen ihn träge."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://dms.deckers.com/hoka/image/upload/t_product-xlarge-wp/v1748379285/1162030-GYST_1.png?_s=RAABAB0"
+  credit: "Produktbild: HOKA"
 tags: ["apparel", "running", "shoes"]
 ---
 

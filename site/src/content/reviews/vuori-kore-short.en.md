@@ -55,8 +55,10 @@ whoFor:
   buy: "Buy if you want one premium short that handles strength training, functional workouts and casual wear equally well and you value comfort over race-day speed."
   skip: "Skip if you mainly do hot-weather runs or high-intensity cardio and need a light, fast-drying short with secure zip pockets."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://cdn.shopify.com/s/files/1/0022/4008/6074/files/V302CCL_FA24_M_ECOMM_SHORTS_PINUP_7.jpg"
+  credit: "Product image: Vuori"
 tags: ["apparel", "training", "shorts"]
 ---
 

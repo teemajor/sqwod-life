@@ -53,8 +53,10 @@ whoFor:
   buy: "Du bist ambitionierter Triathlet oder Multisport-/Ausdauersportler und willst tiefe Trainings- und Erholungsdaten plus lange Akkulaufzeit."
   skip: "Du willst eine vollwertige Smartwatch (Bezahlen, Apps, Musik) oder einen günstigen Tracker."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.polar.com/img/cms/043be56c5f07fd8515d25012b3cf9dbdbd88bcd4-2000x2000-600.png"
+  credit: "Produktbild: Polar"
 tags: ["wearables", "multisport", "polar"]
 ---
 

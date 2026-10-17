@@ -51,8 +51,10 @@ whoFor:
   buy: "Du investierst in Schlafqualität und willst automatische Zwei-Zonen-Temperatur, die die Regeneration wirklich verbessert — ohne Wearable."
   skip: "Du willst einen Einmalkauf, oder 3.299 €+ plus Jahresabo sind nicht zu rechtfertigen."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://res.cloudinary.com/eightsleep/image/upload/f_auto,q_auto,c_limit,w_1200/pod-5-core_z7yla2.png"
+  credit: "Produktbild: Eight Sleep"
 tags: ["sleep", "recovery", "sleep-tech"]
 ---
 

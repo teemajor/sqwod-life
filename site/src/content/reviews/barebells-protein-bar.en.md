@@ -56,8 +56,10 @@ whoFor:
   buy: "Buy it if you want a high-protein, low-sugar snack that actually tastes like a treat and you can find it in nearly every supermarket."
   skip: "Skip it if you're sensitive to sugar alcohols like maltitol or want a minimal, clean-label ingredient list."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://shop.barebells.com/cdn/shop/files/US--barebells-cookies-cream-hero-f3639d538d.png?v=1788438965&width=1200"
+  credit: "Product image: Barebells"
 tags: ["nutrition", "protein-bar", "snack"]
 ---
 

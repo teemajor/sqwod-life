@@ -56,8 +56,10 @@ whoFor:
   buy: "Buy it if you regularly skip meals and need a fast, balanced, genuinely tasty option that beats a fast-food grab."
   skip: "Skip it if you want to replace most meals long-term, watch every euro, or prefer minimally processed whole-food nutrition."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://yfood.com/cdn/shop/files/PRODUCT_RTD_classic_Classic-Choco_standing_shadow-on_drops-on_DE_2500x2500px.png?v=1758191646&width=1200"
+  credit: "Product image: yfood"
 tags: ["nutrition", "meal-replacement", "convenience"]
 ---
 

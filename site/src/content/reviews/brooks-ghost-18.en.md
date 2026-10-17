@@ -52,8 +52,10 @@ whoFor:
   buy: "You coach beginners or neutral heel-strikers who need a stable, durable, foolproof shoe for daily easy miles."
   skip: "You want lightweight pop for tempo work, or you have wide feet needing more room."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dw00832828/original/110493/110493-069-l-ghost-18-mens-neutral-cushion-running-shoe.jpg?sw=1200&sh=1200&sm=fit&sfrm=png&strip=false&bgcolor=F8F8F8"
+  credit: "Product image: Brooks"
 tags: ["apparel", "running", "shoes"]
 ---
 

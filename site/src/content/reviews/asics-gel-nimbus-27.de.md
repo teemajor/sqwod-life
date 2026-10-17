@@ -52,8 +52,10 @@ whoFor:
   buy: "Du coachst Läufer:innen, die maximalen Schutz für lockere Tage, lange langsame Distanzen oder mehr Kilometer und schwerere Läufer:innen wollen."
   skip: "Du willst einen spritzigen Allrounder mit Tempo-Pop — schau dir den Novablast oder einen Carbon-Schuh an."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.asics.com/is/image/asics/1011B958_001_SR_RT_GLB?$zoom$"
+  credit: "Produktbild: ASICS"
 tags: ["apparel", "running", "shoes"]
 ---
 

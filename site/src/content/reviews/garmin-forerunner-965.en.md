@@ -54,8 +54,10 @@ whoFor:
   buy: "You coach or run endurance/triathlon and want race-grade GPS, full maps and the complete readiness/load suite in a light premium AMOLED watch."
   skip: "You have a small wrist or tight budget and mainly want basic run tracking — a Forerunner 265 or 165 delivers most metrics for less."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://res.garmin.com/en/products/010-02809-12/v/cf-lg.jpg"
+  credit: "Product image: Garmin"
 tags: ["wearables", "running", "garmin", "triathlon"]
 ---
 

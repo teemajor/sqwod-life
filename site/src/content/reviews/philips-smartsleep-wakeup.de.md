@@ -53,8 +53,10 @@ whoFor:
   buy: "Du solltest ihn kaufen, wenn du dich an dunklen Wintermorgen schwer aus dem Bett quälst und einen bewährten, sanften Lichtwecker mit Einschlaf- und Sonnenuntergangs-Funktion willst und der hohe Preis dich nicht abschreckt."
   skip: "Lass ihn stehen, wenn du App-Steuerung, guten Sound oder einfach einen günstigen Lichtwecker willst, denn preiswertere Philips-Modelle decken die Grundfunktionen für deutlich weniger ab."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.philips.com/is/image/philipsconsumer/51cd2062020741ccb332adb900a3a864?$png$&wid=1200&hei=1200"
+  credit: "Produktbild: Philips"
 tags: ["sleep", "wake-up-light", "recovery"]
 ---
 

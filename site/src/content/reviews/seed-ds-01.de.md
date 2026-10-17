@@ -55,8 +55,10 @@ whoFor:
   buy: "Du willst ein wissenschaftsnahes, breit aufgestelltes tägliches Synbiotikum und bist mit einem wiederkehrenden ~50-$-Abo einverstanden."
   skip: "Du bist in Deutschland/EU und willst einfache lokale Lieferung, eine günstige Option oder erst unabhängige (nicht markenfinanzierte) Belege."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://res.cloudinary.com/dljz0lko8/image/upload/f_auto,q_auto/v1759517363/structured-data/og-ds.png"
+  credit: "Produktbild: Seed"
 tags: ["supplements", "darmgesundheit", "probiotikum"]
 ---
 

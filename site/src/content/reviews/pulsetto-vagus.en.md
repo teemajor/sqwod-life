@@ -54,8 +54,10 @@ whoFor:
   buy: "Buy it if you want a low-commitment, low-cost gadget to add to a stress and sleep routine and you're comfortable that the effect may be subtle."
   skip: "Skip it if you expect clinically proven results or a fix for a diagnosed condition — the evidence isn't there yet."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://pulsetto.tech/cdn/shop/files/LITE1.png?v=1768302177&width=1200"
+  credit: "Product image: Pulsetto"
 tags: ["recovery", "vagus-nerve", "stress", "hrv"]
 ---
 

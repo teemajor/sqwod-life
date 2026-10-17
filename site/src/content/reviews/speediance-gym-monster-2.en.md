@@ -56,8 +56,10 @@ whoFor:
   buy: "Buy it if you want a Tonal-style all-in-one that fits a small space, hate recurring subscriptions, and train in a hypertrophy/general-fitness rep range where 100 kg is plenty."
   skip: "Skip it if you routinely lift heavy compounds beyond 100 kg, need a wide stance for flyes and pulldowns, or can't justify a €3k spend over adjustable dumbbells and a bench."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.speediance.com/cdn/shop/files/gm2_9240b7f7-b9c3-4a1c-b80e-c777e7b7e407.png?v=1775548952&width=1024"
+  credit: "Product image: Speediance"
 tags: ["connected-fitness", "home-gym", "strength"]
 ---
 

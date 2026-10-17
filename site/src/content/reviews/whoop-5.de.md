@@ -54,8 +54,10 @@ whoFor:
   buy: "Du trainierst nach Readiness und willst die tiefsten Recovery- und Strain-Analysen in einem Band ohne Display — jetzt mit medizinischem EKG und Blutdruck-Metriken."
   skip: "Du willst ein Display, integriertes GPS oder einen Einmalkauf statt einer Mitgliedschaft."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.ctfassets.net/rbzqg6pelgqa/5zNKZVJ7hwz2EXhfUR5O5X/e27764215d7fcec962fd96503060af10/Instrisic_Size_1250x694.png"
+  credit: "Produktbild: WHOOP"
 tags: ["wearables", "recovery", "strain", "smart-band"]
 ---
 

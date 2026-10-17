@@ -52,8 +52,10 @@ whoFor:
   buy: "Du coachst Anfänger:innen oder Neutral-Fersenläufer:innen, die einen stabilen, langlebigen, narrensicheren Schuh für lockere Kilometer wollen."
   skip: "Du willst leichten Tempo-Pop oder hast breite Füße mit mehr Platzbedarf."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.brooksrunning.com/dw/image/v2/BGPF_PRD/on/demandware.static/-/Sites-brooks-master-catalog/default/dw00832828/original/110493/110493-069-l-ghost-18-mens-neutral-cushion-running-shoe.jpg?sw=1200&sh=1200&sm=fit&sfrm=png&strip=false&bgcolor=F8F8F8"
+  credit: "Produktbild: Brooks"
 tags: ["apparel", "running", "shoes"]
 ---
 

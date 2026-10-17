@@ -54,8 +54,10 @@ whoFor:
   buy: "You coach neutral runners who want a firm-but-cushioned, durable max-stack daily trainer and like On’s rockered ride."
   skip: "You want a soft superfoam feel, a light tempo shoe, or a snug/precise fit — size down or look elsewhere."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.ctfassets.net/hnk2vsx53n6l/7ahqe7wf1jsp0hvIfoAkyD/11ed40e10b0170d79bfc17bd7df09491/53b691cab028ee07f882dc7f6f5fa201b14b3303.png?w=1200&fm=jpg&bg=rgb:ffffff"
+  credit: "Product image: On"
 tags: ["apparel", "running", "shoes"]
 ---
 

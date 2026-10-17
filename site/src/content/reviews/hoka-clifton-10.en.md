@@ -54,8 +54,10 @@ whoFor:
   buy: "You coach easy-day and recovery clients who want maximum, protective cushioning in a stable neutral daily trainer."
   skip: "You want a lightweight, springy shoe for tempo or faster paces — the firm EVA and weight make it dull."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://dms.deckers.com/hoka/image/upload/t_product-xlarge-wp/v1748379285/1162030-GYST_1.png?_s=RAABAB0"
+  credit: "Product image: HOKA"
 tags: ["apparel", "running", "shoes"]
 ---
 

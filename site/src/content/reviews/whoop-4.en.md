@@ -52,6 +52,11 @@ cons:
 whoFor:
   buy: "You coach performance and program by daily readiness and strain."
   skip: "You want a one-time purchase or an on-wrist display."
+asset:
+  type: images
+  images:
+    - "https://images.ctfassets.net/rbzqg6pelgqa/7GaVbPmBRXRVQayT8SJMue/bd06c81369c196f7c481192eafe00d72/WHOOP-Fast-Link-technology-band-768x781.png"
+  credit: "Product image: WHOOP"
 tags: ["wearables", "recovery", "strain"]
 ---
 

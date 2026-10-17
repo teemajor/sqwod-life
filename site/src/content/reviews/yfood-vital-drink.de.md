@@ -56,8 +56,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du regelmäßig Mahlzeiten auslässt und eine schnelle, ausgewogene und wirklich leckere Alternative zum Fast-Food-Griff brauchst."
   skip: "Lass die Finger davon, wenn du dauerhaft die meisten Mahlzeiten ersetzen willst, auf jeden Euro achtest oder unverarbeitete, vollwertige Ernährung bevorzugst."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://yfood.com/cdn/shop/files/PRODUCT_RTD_classic_Classic-Choco_standing_shadow-on_drops-on_DE_2500x2500px.png?v=1758191646&width=1200"
+  credit: "Produktbild: yfood"
 tags: ["nutrition", "meal-replacement", "convenience"]
 ---
 

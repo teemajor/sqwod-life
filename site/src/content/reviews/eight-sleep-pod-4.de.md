@@ -52,6 +52,11 @@ cons:
 whoFor:
   buy: "Du behandelst Schlaf als Leistungs-Hebel und zahlst für die beste Temperatursteuerung."
   skip: "Du willst kein Abo, oder du schläfst ohnehin kühl."
+asset:
+  type: images
+  images:
+    - "https://pages.eightsleep.com/cdn/shop/files/pod4-regular_1920x.png?v=1732906392"
+  credit: "Produktbild: Eight Sleep"
 tags: ["sleep", "recovery", "eight-sleep"]
 ---
 

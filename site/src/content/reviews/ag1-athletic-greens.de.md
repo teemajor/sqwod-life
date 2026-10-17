@@ -56,8 +56,10 @@ whoFor:
   buy: "Du bist busy, isst nicht zuverlässig abwechslungsreiches Gemüse, willst ein dopinggetestetes All-in-one — und der Preis ist kein Hindernis."
   skip: "Du hast ein Budget oder isst bereits ausgewogen — gute Ernährung plus ein günstiges NSF-Multivitamin deckt das meiste ab."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://cdn.shopify.com/s/files/1/1523/4600/files/pouch_original_93756922-8c4b-4999-82c6-cef94f8b9d55.png?v=1780948459&width=1200"
+  credit: "Produktbild: AG1"
 tags: ["supplements", "greens", "nutrition"]
 ---
 

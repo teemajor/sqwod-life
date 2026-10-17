@@ -53,8 +53,10 @@ whoFor:
   buy: "You are a committed athlete who’ll use EMS alongside real training for supplementary strength, targeted TENS pain relief and recovery — and can absorb the price."
   skip: "You want a cheap, standalone shortcut to fitness or recovery — a lower Compex (Sport Elite) or wired unit delivers most of the science-backed benefit for less."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.compex.com/cdn/shop/files/SP_8.0.jpg?v=1786701369&width=1300"
+  credit: "Product image: Compex"
 tags: ["recovery", "ems", "muscle-stimulation"]
 ---
 

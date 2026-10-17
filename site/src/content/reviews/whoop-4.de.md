@@ -52,6 +52,11 @@ cons:
 whoFor:
   buy: "Du coachst Performance und programmierst nach Readiness und Strain."
   skip: "Du willst einen Einmalkauf oder ein Display am Handgelenk."
+asset:
+  type: images
+  images:
+    - "https://images.ctfassets.net/rbzqg6pelgqa/7GaVbPmBRXRVQayT8SJMue/bd06c81369c196f7c481192eafe00d72/WHOOP-Fast-Link-technology-band-768x781.png"
+  credit: "Produktbild: WHOOP"
 tags: ["wearables", "recovery", "strain"]
 ---
 

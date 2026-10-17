@@ -56,8 +56,10 @@ whoFor:
   buy: "Du solltest ihn kaufen, wenn du einen proteinreichen, zuckerarmen Snack willst, der wirklich wie eine Süßigkeit schmeckt - und du ihn in fast jedem Supermarkt findest."
   skip: "Lass ihn stehen, wenn du empfindlich auf Zuckeralkohole wie Maltit reagierst oder eine minimalistische Clean-Label-Zutatenliste willst."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://shop.barebells.com/cdn/shop/files/US--barebells-cookies-cream-hero-f3639d538d.png?v=1788438965&width=1200"
+  credit: "Produktbild: Barebells"
 tags: ["nutrition", "protein-bar", "snack"]
 ---
 

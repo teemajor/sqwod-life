@@ -56,8 +56,10 @@ whoFor:
   buy: "You are a US (or Canadian) gym/studio founder wanting an all-in-one platform with a real free tier to start and scale."
   skip: "You are a German/EU operator needing EUR billing, SEPA and a native German-language member experience."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://cdn.prod.website-files.com/69467ea1a3ad4a6a4f1a8644/69c6a981728dbe9a53f85559_Scheduling%201.webp"
+  credit: "Product image: PushPress"
 tags: ["studio-tools", "gym-management", "software"]
 ---
 

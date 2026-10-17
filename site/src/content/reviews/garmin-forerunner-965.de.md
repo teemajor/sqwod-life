@@ -54,8 +54,10 @@ whoFor:
   buy: "Du coachst oder läufst Ausdauer/Triathlon und willst Race-GPS, volle Karten und die komplette Readiness-/Load-Suite in einer leichten Premium-AMOLED-Uhr."
   skip: "Du hast ein kleines Handgelenk oder knappes Budget und willst v.a. Basis-Lauftracking — eine Forerunner 265 oder 165 liefert die meisten Metriken günstiger."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://res.garmin.com/en/products/010-02809-12/v/cf-lg.jpg"
+  credit: "Produktbild: Garmin"
 tags: ["wearables", "running", "garmin", "triathlon"]
 ---
 

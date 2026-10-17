@@ -56,8 +56,10 @@ whoFor:
   buy: "Du bist US-(oder kanadische:r) Gym-/Studio-Gründer:in und willst eine All-in-one-Plattform mit echter Gratis-Stufe zum Starten und Skalieren."
   skip: "Du bist DE-/EU-Betreiber:in und brauchst EUR-Abrechnung, SEPA und ein natives deutschsprachiges Mitglieder-Erlebnis."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://cdn.prod.website-files.com/69467ea1a3ad4a6a4f1a8644/69c6a981728dbe9a53f85559_Scheduling%201.webp"
+  credit: "Produktbild: PushPress"
 tags: ["studio-tools", "gym-management", "software"]
 ---
 

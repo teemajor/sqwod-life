@@ -56,8 +56,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du ein Tonal-artiges All-in-One für wenig Platz willst, keine laufenden Abos magst und im Hypertrophie-/Fitnessbereich trainierst, wo 100 kg locker reichen."
   skip: "Finger weg, wenn du regelmäßig schwere Grundübungen über 100 kg fährst, breite Züge und Flys brauchst oder 3.000 € gegenüber verstellbaren Kurzhanteln plus Bank nicht rechtfertigen kannst."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.speediance.com/cdn/shop/files/gm2_9240b7f7-b9c3-4a1c-b80e-c777e7b7e407.png?v=1775548952&width=1024"
+  credit: "Produktbild: Speediance"
 tags: ["connected-fitness", "home-gym", "strength"]
 ---
 

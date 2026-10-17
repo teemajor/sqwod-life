@@ -53,8 +53,10 @@ whoFor:
   buy: "Du willst eine langlebige, sehr bewegliche Allround-Short und störst dich nicht an ~68 $ (oder dem Umweg über einen Händler in die EU)."
   skip: "Du willst maximale Atmungsaktivität, eine günstige Option oder günstige, unkomplizierte Lieferung innerhalb Deutschlands."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.tenthousand.cc/cdn/shop/files/IntervalShort_7in_Black_Front_84731_PDP_v03_91424cc5-23fe-46b7-9f07-a919291e6739.jpg"
+  credit: "Produktbild: Ten Thousand"
 tags: ["apparel", "training", "shorts"]
 ---
 

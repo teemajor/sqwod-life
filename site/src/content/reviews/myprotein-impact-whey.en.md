@@ -52,8 +52,10 @@ whoFor:
   buy: "You (or your clients) want a certified, high-protein daily whey at the lowest reliable cost-per-kg."
   skip: "You are lactose-sensitive or chasing the leanest macros — choose the Impact Whey Isolate instead."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://main.thgimages.com?url=https://static.thcdn.com/productimg/original/17712277-1795347408134393.png&format=webp&width=1000&height=1000&fit=cover"
+  credit: "Product image: Myprotein"
 tags: ["supplements", "protein", "whey"]
 ---
 

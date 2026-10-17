@@ -55,8 +55,10 @@ whoFor:
   buy: "You want motivating, instructor-led studio classes at home and will use the monthly subscription regularly."
   skip: "You are a budget or self-guided rider who resents a recurring fee and just wants a simple bike to pedal offline."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.ctfassets.net/7vk8puwnesgc/5CEzcKls5slkb9VVJi4Aca/93ec5835f281aca20c030e03b46f4167/bike-side-02.jpg"
+  credit: "Product image: Peloton"
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 

@@ -55,8 +55,10 @@ whoFor:
   buy: "Du willst motivierende Instructor-Kurse zuhause und nutzt das Monatsabo regelmäßig."
   skip: "Du bist Budget- oder Selbst-Fahrer:in, die kein Abo will und einfach offline treten möchte."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.ctfassets.net/7vk8puwnesgc/5CEzcKls5slkb9VVJi4Aca/93ec5835f281aca20c030e03b46f4167/bike-side-02.jpg"
+  credit: "Produktbild: Peloton"
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 

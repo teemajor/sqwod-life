@@ -56,8 +56,10 @@ whoFor:
   buy: "Buy it if you want the fastest, most natural-feeling adjustable dumbbell for a compact home gym and will treat the plastic parts with care."
   skip: "Skip it if you train rough, drop your weights, or need more than 40kg per hand - an all-steel adjustable or fixed dumbbells will serve you better."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://nuoathletics.com/cdn/shop/files/NUOBELL_580_black_1.webp?v=1747741343&width=1200"
+  credit: "Product image: NÜOBELL"
 tags: ["home-gym", "strength", "dumbbell"]
 ---
 

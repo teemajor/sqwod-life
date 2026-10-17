@@ -54,8 +54,10 @@ whoFor:
   buy: "Du kaufst es, wenn du ein günstiges Gadget für deine Stress- und Schlafroutine willst und damit klarkommst, dass die Wirkung subtil sein kann."
   skip: "Lass die Finger davon, wenn du klinisch belegte Ergebnisse oder eine Behandlung für eine diagnostizierte Erkrankung erwartest — die Belege fehlen noch."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://pulsetto.tech/cdn/shop/files/LITE1.png?v=1768302177&width=1200"
+  credit: "Produktbild: Pulsetto"
 tags: ["recovery", "vagus-nerve", "stress", "hrv"]
 ---
 

@@ -52,8 +52,10 @@ whoFor:
   buy: "You coach runners who want maximum underfoot protection for easy days, long slow distance, or higher-mileage and heavier runners."
   skip: "You want one lively do-it-all trainer with pop for tempo work — look at the Novablast or a plated shoe."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://images.asics.com/is/image/asics/1011B958_001_SR_RT_GLB?$zoom$"
+  credit: "Product image: ASICS"
 tags: ["apparel", "running", "shoes"]
 ---
 

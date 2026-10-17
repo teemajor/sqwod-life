@@ -53,8 +53,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du einen maximal gedämpften, komfortorientierten Daily-Trainer für lockere Läufe, Regenerationstage und lange, ruhige Kilometer suchst."
   skip: "Lass die Finger davon, wenn du einen leichten, spritzigen Schuh fürs Tempotraining oder Wettkämpfe willst — oder wenn du breite Füße hast und nicht an die 2E-Weite kommst."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://nb.scene7.com/is/image/NB/m1080k14_nb_02_i?$pdpflexf2$&wid=880&hei=880"
+  credit: "Produktbild: New Balance"
 tags: ["footwear", "running", "daily-trainer"]
 ---
 

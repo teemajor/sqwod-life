@@ -52,8 +52,10 @@ whoFor:
   buy: "You coach beginner-to-intermediate athletes who need one dependable, cushioned neutral trainer for daily easy mileage."
   skip: "You have heavier runners needing rearfoot stability, or athletes wanting a lively single-shoe rotation."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/acded880-5c9d-4681-bda5-487928c4affc/AIR+ZOOM+PEGASUS+42.png"
+  credit: "Product image: Nike"
 tags: ["apparel", "running", "shoes"]
 ---
 

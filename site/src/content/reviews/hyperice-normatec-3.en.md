@@ -53,8 +53,10 @@ whoFor:
   buy: "Runners, cyclists and high-frequency trainers who will use it consistently and want legs that feel fresher the next day."
   skip: "Casual exercisers or budget-conscious buyers expecting a proven, measurable performance boost."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://hyperice.com/cdn/shop/files/Normatec3Legs1.png?v=1781803460&width=1200"
+  credit: "Product image: Hyperice"
 tags: ["recovery", "compression", "hyperice"]
 ---
 

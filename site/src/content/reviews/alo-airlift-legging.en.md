@@ -54,8 +54,10 @@ whoFor:
   buy: "You want a premium, sculpting, sheeny compression legging for strength or studio-to-street wear and accept the price."
   skip: "You need pockets, high breathability for hot yoga, or a budget option."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://www.aloyoga.com/cdn/shop/files/W5561R_01_b2_s1_a1_dFA26_m191_d1dfefba-ea5a-416d-93e0-b05b85234953.jpg?v=1790135113&width=1200"
+  credit: "Product image: Alo Yoga"
 tags: ["apparel", "yoga", "leggings"]
 ---
 

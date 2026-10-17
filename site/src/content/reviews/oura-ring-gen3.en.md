@@ -54,8 +54,10 @@ whoFor:
   buy: "You're a coach who programs around recovery and sleep, or you want the calmest readiness data to guide client load."
   skip: "You need live training heart-rate and GPS — pair a chest strap or pick a sports watch. Or you won't pay a subscription."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://ouraring.com/blog/wp-content/uploads/2022/09/Oura-Gen3-Horizon-Intro.jpg"
+  credit: "Product image: Oura"
 tags: ["wearables", "recovery", "sleep", "smart-ring"]
 ---
 

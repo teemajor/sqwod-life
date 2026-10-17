@@ -52,8 +52,10 @@ whoFor:
   buy: "Du (oder deine Kund:innen) willst ein zertifiziertes, proteinreiches Alltags-Whey zum zuverlässig niedrigsten Preis pro kg."
   skip: "Du bist laktoseempfindlich oder willst die schlanksten Makros — nimm das Impact Whey Isolate."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://main.thgimages.com?url=https://static.thcdn.com/productimg/original/17712277-1795347408134393.png&format=webp&width=1000&height=1000&fit=cover"
+  credit: "Produktbild: Myprotein"
 tags: ["supplements", "protein", "whey"]
 ---
 

@@ -55,8 +55,10 @@ whoFor:
   buy: "You have a generally balanced diet and want a clean, third-party-verified vegan 'fill-the-gaps' supplement."
   skip: "You want a comprehensive all-in-one multi, a budget option, or you're in Germany/EU without a forwarding service."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://ritual.com/cdn/shop/files/PDP_EFW18_Bottle.jpg?v=1770263110"
+  credit: "Product image: Ritual"
 tags: ["supplements", "multivitamin", "nutrition"]
 ---
 

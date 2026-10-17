@@ -53,8 +53,10 @@ whoFor:
   buy: "Du bist ambitionierter Marathoni, Triathlet oder Ultraläufer mit empfindlichem Magen, willst am Wettkampftag maximale Verlässlichkeit und zahlst dafür auch gern mehr."
   skip: "Du achtest aufs Budget oder dein Magen verträgt günstigere Standard-Gels ohnehin problemlos — dann zahlst du hier vor allem für Marke und Format."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://maurten.imgix.net/photos/Products/Entry-Card-Maurten-Gel-100-1.png?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=800&q=80&w=800&s=48c317b0ca10c4b45aa03659d57a05ee"
+  credit: "Produktbild: Maurten"
 tags: ["nutrition", "endurance", "fuel"]
 ---
 

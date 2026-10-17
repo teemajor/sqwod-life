@@ -52,8 +52,10 @@ whoFor:
   buy: "Du coachst Anfänger:innen bis Fortgeschrittene, die einen zuverlässigen, gedämpften Neutralschuh für lockere Kilometer wollen."
   skip: "Du hast schwerere Läufer:innen mit Bedarf an Fersenstabilität oder Athlet:innen, die eine spritzige Ein-Schuh-Rotation wollen."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/acded880-5c9d-4681-bda5-487928c4affc/AIR+ZOOM+PEGASUS+42.png"
+  credit: "Produktbild: Nike"
 tags: ["apparel", "running", "shoes"]
 ---
 

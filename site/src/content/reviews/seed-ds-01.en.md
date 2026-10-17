@@ -55,8 +55,10 @@ whoFor:
   buy: "You want a science-forward, broad-spectrum daily synbiotic and are fine with a recurring ~$50/month subscription."
   skip: "You're in Germany/EU wanting easy local delivery, a budget option, or independent (non-brand-funded) proof first."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://res.cloudinary.com/dljz0lko8/image/upload/f_auto,q_auto/v1759517363/structured-data/og-ds.png"
+  credit: "Product image: Seed"
 tags: ["supplements", "gut-health", "probiotic"]
 ---
 

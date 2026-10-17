@@ -56,8 +56,10 @@ whoFor:
   buy: "Du solltest sie kaufen, wenn du die schnellste, natürlichste Verstell-Kurzhantel für ein kompaktes Home-Gym willst und die Kunststoffteile pfleglich behandelst."
   skip: "Lass sie stehen, wenn du hart trainierst, Gewichte fallen lässt oder mehr als 40 kg pro Hand brauchst - eine Voll-Stahl-Verstellhantel oder feste Kurzhanteln passen dann besser."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://nuoathletics.com/cdn/shop/files/NUOBELL_580_black_1.webp?v=1747741343&width=1200"
+  credit: "Produktbild: NÜOBELL"
 tags: ["home-gym", "strength", "dumbbell"]
 ---
 

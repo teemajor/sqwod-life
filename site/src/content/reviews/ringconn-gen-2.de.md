@@ -55,8 +55,10 @@ whoFor:
   buy: "Du solltest zugreifen, wenn du Oura-ähnliches Schlaf- und Recovery-Tracking ohne monatliche Gebühr willst und Wert auf die beste Akkulaufzeit am Markt legst."
   skip: "Lass die Finger davon, wenn du tiefe, polierte App-Auswertungen oder ernsthaftes Aktivitäts-/Workout-Tracking brauchst — da führen Oura und Ultrahuman weiterhin."
 asset:
-  type: fallback
-  images: []
+  type: images
+  images:
+    - "https://ringconn.com/cdn/shop/files/RingConn_Smart_Ring_Gen_2-Royal_Gold.png?v=1780302336&width=1024"
+  credit: "Produktbild: RingConn"
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 
