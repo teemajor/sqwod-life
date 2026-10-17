@@ -2,7 +2,7 @@
 urlSlug: polar-vantage-v3
 lang: de
 counterpart: polar-vantage-v3
-title: "Polar Vantage V3 im Test"
+title: "Polar Vantage V3: unsere Bewertung"
 productName: "Polar Vantage V3"
 category: "Wearables & Tracker"
 glyph: watch

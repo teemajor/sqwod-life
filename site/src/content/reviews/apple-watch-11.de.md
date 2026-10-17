@@ -2,7 +2,7 @@
 urlSlug: apple-watch-11
 lang: de
 counterpart: apple-watch-11
-title: "Apple Watch Series 11 im Test"
+title: "Apple Watch Series 11: unsere Bewertung"
 productName: "Apple Watch Series 11"
 category: "Allround-Smartwatch"
 glyph: watch
@@ -58,6 +58,9 @@ asset:
     - "https://m.media-amazon.com/images/I/71JPViO29PL._AC_SL1500_.jpg"
   credit: "Produktbilder via Amazon"
 amazonAsin: B0FQFLMHSX
+successor:
+  name: "Apple Watch Series 12"
+  since: "2026-09"
 tags: ["wearables", "smartwatch", "apple-watch"]
 ---
 

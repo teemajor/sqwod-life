@@ -2,7 +2,7 @@
 urlSlug: speediance-gym-monster-2
 lang: de
 counterpart: speediance-gym-monster-2
-title: "Speediance Gym Monster 2 im Test"
+title: "Speediance Gym Monster 2: unsere Bewertung"
 productName: "Speediance Gym Monster 2"
 category: "Connected Fitness"
 glyph: watch
@@ -60,6 +60,9 @@ asset:
   images:
     - "https://www.speediance.com/cdn/shop/files/gm2_9240b7f7-b9c3-4a1c-b80e-c777e7b7e407.png?v=1775548952&width=1024"
   credit: "Produktbild: Speediance"
+successor:
+  name: "Speediance Gym Monster 3"
+  since: "2026-09"
 tags: ["connected-fitness", "home-gym", "strength"]
 ---
 

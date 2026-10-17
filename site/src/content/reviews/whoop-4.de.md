@@ -2,7 +2,7 @@
 urlSlug: whoop-4
 lang: de
 counterpart: whoop-4
-title: "Whoop 4.0 im Test"
+title: "Whoop 4.0: unsere Bewertung"
 productName: "Whoop 4.0"
 category: "Recovery- & Strain-Tracker"
 glyph: band
@@ -57,6 +57,10 @@ asset:
   images:
     - "https://images.ctfassets.net/rbzqg6pelgqa/7GaVbPmBRXRVQayT8SJMue/bd06c81369c196f7c481192eafe00d72/WHOOP-Fast-Link-technology-band-768x781.png"
   credit: "Produktbild: WHOOP"
+successor:
+  name: "WHOOP 5.0"
+  since: "2025-05"
+  reviewSlug: "whoop-5"
 tags: ["wearables", "recovery", "strain"]
 ---
 

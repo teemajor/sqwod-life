@@ -52,6 +52,9 @@ cons:
 whoFor:
   buy: "You want an affordable, accurate everyday tracker for yourself or clients."
   skip: "You need pro-grade GPS or refuse a subscription for full features."
+successor:
+  name: "Google Fitbit Edge"
+  since: "2026-10"
 tags: ["wearables", "tracker", "fitbit"]
 asset:
   type: images

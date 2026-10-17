@@ -2,7 +2,7 @@
 urlSlug: on-cloudmonster-2
 lang: de
 counterpart: on-cloudmonster-2
-title: "On Cloudmonster 2 im Test"
+title: "On Cloudmonster 2: unsere Bewertung"
 productName: "On Cloudmonster 2"
 category: "Trainings-Bekleidung"
 glyph: band
@@ -58,6 +58,9 @@ asset:
   images:
     - "https://images.ctfassets.net/hnk2vsx53n6l/7ahqe7wf1jsp0hvIfoAkyD/11ed40e10b0170d79bfc17bd7df09491/53b691cab028ee07f882dc7f6f5fa201b14b3303.png?w=1200&fm=jpg&bg=rgb:ffffff"
   credit: "Produktbild: On"
+successor:
+  name: "On Cloudmonster 3"
+  since: "2026-03"
 tags: ["apparel", "running", "shoes"]
 ---
 

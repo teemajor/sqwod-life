@@ -57,6 +57,9 @@ asset:
   images:
     - "https://thekit.wolverineworldwide.com/match/media_lookup/S20940-220_1/?preset=dw-large"
   credit: "Product image: Saucony"
+successor:
+  name: "Saucony Endorphin Speed 5"
+  since: "2025-06"
 tags: ["footwear", "running", "super-trainer"]
 ---
 

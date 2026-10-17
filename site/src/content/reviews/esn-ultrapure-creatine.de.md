@@ -2,7 +2,7 @@
 urlSlug: esn-ultrapure-creatine
 lang: de
 counterpart: esn-ultrapure-creatine
-title: "ESN Ultrapure Creatine Monohydrate im Test"
+title: "ESN Ultrapure Creatine Monohydrate: unsere Bewertung"
 productName: "ESN Ultrapure Creatine Monohydrate"
 category: "Supplements & Ernährung"
 glyph: supplement

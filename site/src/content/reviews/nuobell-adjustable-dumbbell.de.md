@@ -2,7 +2,7 @@
 urlSlug: nuobell-adjustable-dumbbell
 lang: de
 counterpart: nuobell-adjustable-dumbbell
-title: "NÜOBELL Adjustable Dumbbell im Test"
+title: "NÜOBELL Adjustable Dumbbell: unsere Bewertung"
 productName: "NÜOBELL Adjustable Dumbbell"
 category: "Connected Fitness"
 glyph: band

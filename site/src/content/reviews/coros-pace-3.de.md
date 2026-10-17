@@ -2,7 +2,7 @@
 urlSlug: coros-pace-3
 lang: de
 counterpart: coros-pace-3
-title: "COROS PACE 3 im Test"
+title: "COROS PACE 3: unsere Bewertung"
 productName: "COROS PACE 3"
 category: "Wearables & Tracker"
 glyph: watch
@@ -57,6 +57,9 @@ asset:
   images:
     - "https://m.media-amazon.com/images/I/61HE8zhwT7L._AC_SL1500_.jpg"
   credit: "Produktbilder via Amazon"
+successor:
+  name: "COROS PACE 4"
+  since: "2025-11"
 tags: ["wearables", "running", "coros"]
 ---
 

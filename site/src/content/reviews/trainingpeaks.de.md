@@ -2,7 +2,7 @@
 urlSlug: trainingpeaks
 lang: de
 counterpart: trainingpeaks
-title: "TrainingPeaks im Test"
+title: "TrainingPeaks: unsere Bewertung"
 productName: "TrainingPeaks"
 category: "Trainings-Apps & Software"
 glyph: tracker

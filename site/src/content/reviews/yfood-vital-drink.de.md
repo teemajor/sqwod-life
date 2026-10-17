@@ -2,7 +2,7 @@
 urlSlug: yfood-vital-drink
 lang: de
 counterpart: yfood-vital-drink
-title: "yfood Trinkmahlzeit im Test"
+title: "yfood Trinkmahlzeit: unsere Bewertung"
 productName: "yfood Trinkmahlzeit"
 category: "Supplements & Ernährung"
 glyph: supplement

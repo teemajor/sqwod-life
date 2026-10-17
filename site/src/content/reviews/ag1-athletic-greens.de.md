@@ -2,7 +2,7 @@
 urlSlug: ag1-athletic-greens
 lang: de
 counterpart: ag1-athletic-greens
-title: "AG1 (Athletic Greens) im Test"
+title: "AG1 (Athletic Greens): unsere Bewertung"
 productName: "AG1 (Athletic Greens)"
 category: "Supplements & Ernährung"
 glyph: supplement

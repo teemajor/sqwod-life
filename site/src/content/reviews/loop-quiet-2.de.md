@@ -2,7 +2,7 @@
 urlSlug: loop-quiet-2
 lang: de
 counterpart: loop-quiet-2
-title: "Loop Quiet 2 im Test"
+title: "Loop Quiet 2: unsere Bewertung"
 productName: "Loop Quiet 2"
 category: "Schlaf"
 glyph: band

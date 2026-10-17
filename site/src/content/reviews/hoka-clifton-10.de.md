@@ -2,7 +2,7 @@
 urlSlug: hoka-clifton-10
 lang: de
 counterpart: hoka-clifton-10
-title: "HOKA Clifton 10 im Test"
+title: "HOKA Clifton 10: unsere Bewertung"
 productName: "HOKA Clifton 10"
 category: "Trainings-Bekleidung"
 glyph: band
@@ -58,6 +58,9 @@ asset:
   images:
     - "https://dms.deckers.com/hoka/image/upload/t_product-xlarge-wp/v1748379285/1162030-GYST_1.png?_s=RAABAB0"
   credit: "Produktbild: HOKA"
+successor:
+  name: "HOKA Clifton 11"
+  since: "2026-07"
 tags: ["apparel", "running", "shoes"]
 ---
 

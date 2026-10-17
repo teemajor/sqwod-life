@@ -2,7 +2,7 @@
 urlSlug: withings-scanwatch-2
 lang: de
 counterpart: withings-scanwatch-2
-title: "Withings ScanWatch 2 im Test"
+title: "Withings ScanWatch 2: unsere Bewertung"
 productName: "Withings ScanWatch 2"
 category: "Wearables & Tracker"
 glyph: watch

@@ -2,7 +2,7 @@
 urlSlug: new-balance-1080-v14
 lang: de
 counterpart: new-balance-1080-v14
-title: "New Balance Fresh Foam X 1080v14 im Test"
+title: "New Balance Fresh Foam X 1080v14: unsere Bewertung"
 productName: "New Balance Fresh Foam X 1080v14"
 category: "Trainings-Bekleidung"
 glyph: band
@@ -57,6 +57,9 @@ asset:
   images:
     - "https://nb.scene7.com/is/image/NB/m1080k14_nb_02_i?$pdpflexf2$&wid=880&hei=880"
   credit: "Produktbild: New Balance"
+successor:
+  name: "New Balance 1080v15"
+  since: "2026-01"
 tags: ["footwear", "running", "daily-trainer"]
 ---
 

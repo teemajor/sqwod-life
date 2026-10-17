@@ -2,7 +2,7 @@
 urlSlug: oura-ring-gen3
 lang: de
 counterpart: oura-ring-gen3
-title: "Oura Ring Gen3 im Test"
+title: "Oura Ring Gen3: unsere Bewertung"
 productName: "Oura Ring Gen3"
 category: "Recovery- & Schlaf-Tracker"
 pillar: gear
@@ -58,6 +58,10 @@ asset:
   images:
     - "https://ouraring.com/blog/wp-content/uploads/2022/09/Oura-Gen3-Horizon-Intro.jpg"
   credit: "Produktbild: Oura"
+successor:
+  name: "Oura Ring 5"
+  since: "2026-05"
+  reviewSlug: "oura-ring-5"
 tags: ["wearables", "recovery", "schlaf", "smart-ring"]
 ---
 

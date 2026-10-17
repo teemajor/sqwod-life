@@ -42,6 +42,16 @@ export interface Category {
   picks: Pick[];
 }
 
+// A pick only "earns" when its URL is a real tracking link. `affiliate: true` on a
+// plain brand homepage meant readers saw "Affiliate" on 43 links that paid nothing
+// (audit 17 Oct 2026). Labels and rel="sponsored" now follow the link itself, so
+// swapping in a network link flips the label with no other edit.
+export const TRACKED_RX = /pxf\.io|sjv\.io|r7kg\.net|awin1\.com|[?&]tag=sqwod|prf\.hn|tradedoubler|partnerize|impact\.com|clk\./i;
+export const earns = (p?: Pick | null) => !!p && p.affiliate && TRACKED_RX.test(p.url);
+// The pick behind a review (its /go/ target), and whether that link earns.
+export const pickForReview = (slug: string) => { for (const c of categories) { const p = c.picks.find((x) => x.reviewSlug === slug); if (p) return p; } return null; };
+export const reviewEarns = (slug: string) => earns(pickForReview(slug));
+
 const en = (s: string) => s; // readability helper
 
 export const categories: Category[] = [
@@ -71,7 +81,7 @@ export const categories: Category[] = [
       { product: 'Oura Ring 5', brand: 'Oura', url: 'https://ouraring.com/', affiliate: true, reviewSlug: 'oura-ring-5',
         bestFor: { en: 'Current-gen recovery ring', de: 'Recovery-Ring, aktuelle Gen' }, why: { en: 'The newest, smallest Oura — the recovery benchmark, now current-gen.', de: 'Der neueste, kleinste Oura — der Recovery-Maßstab, jetzt aktuelle Generation.' } },
       { product: 'Apple Watch Series 11', brand: 'Apple', url: 'https://www.amazon.de/dp/B0FQFLMHSX?tag=sqwod-21', affiliate: true, reviewSlug: 'apple-watch-11',
-        bestFor: { en: 'Current-gen smartwatch', de: 'Smartwatch, aktuelle Gen' }, why: { en: 'The current Apple Watch — 24h battery, hypertension alerts, 5G. New, Apple-sold.', de: 'Die aktuelle Apple Watch — 24 h Akku, Bluthochdruck-Hinweise, 5G. Neu, von Apple verkauft.' } },
+        bestFor: { en: 'Latest Apple Watch we scored', de: 'Neueste von uns bewertete Apple Watch' }, why: { en: '24h battery, hypertension alerts, 5G. Series 12 is now out; we have not scored it yet.', de: '24 h Akku, Bluthochdruck-Hinweise, 5G. Die Series 12 ist inzwischen da; sie ist noch nicht bewertet.' } },
       { product: 'WHOOP 5.0', brand: 'Whoop', url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-5',
         bestFor: { en: 'Current-gen strain band', de: 'Strain-Band, aktuelle Gen' }, why: { en: '14-day battery, ECG + BP on the MG tier — the current screenless recovery band.', de: '14 Tage Akku, EKG + Blutdruck (MG-Tier) — das aktuelle Recovery-Band ohne Display.' } },
       { product: 'Ultrahuman Ring AIR', brand: 'Ultrahuman', url: 'https://ultrahumanhealthcare.pxf.io/c/2210087/3981492/38784', affiliate: true, reviewSlug: 'ultrahuman-ring-air',
@@ -127,7 +137,7 @@ export const categories: Category[] = [
       { product: 'Eight Sleep Pod 4', brand: 'Eight Sleep', url: 'https://www.eightsleep.com/', affiliate: true, reviewSlug: 'eight-sleep-pod-4',
         bestFor: { en: 'Temperature control', de: 'Temperatur-Steuerung' }, why: { en: 'The most effective sleep-temperature system — dual-zone heating/cooling that works.', de: 'Das wirksamste Schlaf-Temperatursystem — Zwei-Zonen-Heizen/Kühlen, das funktioniert.' } },
       { product: 'Eight Sleep Pod 5', brand: 'Eight Sleep', url: 'https://www.eightsleep.com/', affiliate: true, reviewSlug: 'eight-sleep-pod-5',
-        bestFor: { en: 'Current-gen temp control', de: 'Temp-Steuerung, aktuelle Gen' }, why: { en: 'The newest Pod — dual-zone heating/cooling plus the hydro blanket.', de: 'Der neueste Pod — Zwei-Zonen-Heizen/Kühlen plus Hydro-Decke.' } },
+        bestFor: { en: 'Latest Pod we scored', de: 'Neuester von uns bewerteter Pod' }, why: { en: 'Dual-zone heating and cooling plus the hydro blanket. Pod 6 is now out; we have not scored it yet.', de: 'Zwei-Zonen-Heizen und -Kühlen plus Hydro-Decke. Pod 6 ist inzwischen da; er ist noch nicht bewertet.' } },
       { product: 'Muse S Athena', brand: 'Muse', url: 'https://www.amazon.de/dp/B0F4F15WDD?tag=sqwod-21', affiliate: true, reviewSlug: 'muse-s-athena',
         bestFor: { en: 'Meditation & sleep EEG', de: 'Meditation & Schlaf-EEG' }, why: { en: 'EEG + fNIRS headband for objective meditation, focus and sleep biofeedback.', de: 'EEG-+-fNIRS-Stirnband für objektives Biofeedback bei Meditation, Fokus und Schlaf.' } },
       { product: 'Hatch Restore', brand: 'Hatch', url: 'https://www.hatch.co/', affiliate: true,
@@ -136,7 +146,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Total blackout', de: 'Komplette Dunkelheit' }, why: { en: 'Genuinely blackout, pressure-free mask that serious sleepers swear by.', de: 'Wirklich lichtdichte, druckfreie Maske, auf die anspruchsvolle Schläfer schwören.' } },
       { product: 'Loop Quiet 2', brand: 'Loop', url: 'https://www.amazon.de/dp/B0D3V4V1KD?tag=sqwod-21', affiliate: true, reviewSlug: 'loop-quiet-2',
         bestFor: { en: 'Reusable earplugs', de: 'Wiederverwendbare Ohrstöpsel' }, why: { en: 'Comfortable 24 dB silicone earplugs — a strong side-sleeper pick.', de: 'Bequeme 24-dB-Silikon-Ohrstöpsel — top für Seitenschläfer.' } },
-      { product: 'Philips Somneo HF3650', brand: 'Philips', url: 'https://www.philips.de/', affiliate: true, reviewSlug: 'philips-smartsleep-wakeup',
+      { product: 'Philips SmartSleep (Somneo) HF3650', brand: 'Philips', url: 'https://www.philips.de/', affiliate: true, reviewSlug: 'philips-smartsleep-wakeup',
         bestFor: { en: 'Sunrise wake-up', de: 'Sonnenaufgangs-Wecker' }, why: { en: 'Flagship sunrise-simulation alarm for dark winter mornings.', de: 'Flaggschiff-Lichtwecker mit Sonnenaufgangs-Simulation für dunkle Wintermorgen.' } },
     ],
   },

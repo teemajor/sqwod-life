@@ -2,7 +2,7 @@
 urlSlug: barebells-protein-bar
 lang: de
 counterpart: barebells-protein-bar
-title: "Barebells Protein Bar im Test"
+title: "Barebells Protein Bar: unsere Bewertung"
 productName: "Barebells Protein Bar"
 category: "Supplements & Ernährung"
 glyph: supplement

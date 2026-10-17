@@ -2,7 +2,7 @@
 urlSlug: garmin-forerunner-965
 lang: de
 counterpart: garmin-forerunner-965
-title: "Garmin Forerunner 965 im Test"
+title: "Garmin Forerunner 965: unsere Bewertung"
 productName: "Garmin Forerunner 965"
 category: "Wearables & Tracker"
 glyph: watch
@@ -58,6 +58,9 @@ asset:
   images:
     - "https://res.garmin.com/en/products/010-02809-12/v/cf-lg.jpg"
   credit: "Produktbild: Garmin"
+successor:
+  name: "Garmin Forerunner 970"
+  since: "2025-05"
 tags: ["wearables", "running", "garmin", "triathlon"]
 ---
 

@@ -64,7 +64,7 @@ const typeMeta: Record<string, Record<Lang, string>> = {
   'technique': { en: 'Technique', de: 'Technik' },
   'wearables': { en: 'Wearables & Tech', de: 'Wearables & Tech' },
   'buyers-guide': { en: 'Buyer’s Guide', de: 'Kaufberatung' },
-  'tool-review': { en: 'Tool Review', de: 'Tool-Test' },
+  'tool-review': { en: 'Tool Review', de: 'Tool-Bewertung' },
   'market-data': { en: 'Market Data', de: 'Marktdaten' },
   'trends': { en: 'Trends & Culture', de: 'Trends & Kultur' },
   'policy': { en: 'Policy Watch', de: 'Politik-Radar' },

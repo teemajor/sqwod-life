@@ -58,6 +58,8 @@ asset:
   images:
     - "https://www.vivobarefoot.com/media/catalog/product/3/0/309092-01_side_new.jpg"
   credit: "Product image: Vivobarefoot"
+successor:
+  name: "Vivobarefoot Primus Lite IV"
 tags: ["footwear", "barefoot", "training"]
 ---
 

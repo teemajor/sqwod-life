@@ -2,7 +2,7 @@
 urlSlug: myprotein-impact-whey
 lang: de
 counterpart: myprotein-impact-whey
-title: "Myprotein Impact Whey Protein im Test"
+title: "Myprotein Impact Whey Protein: unsere Bewertung"
 productName: "Myprotein Impact Whey Protein"
 category: "Supplements & Ernährung"
 glyph: supplement

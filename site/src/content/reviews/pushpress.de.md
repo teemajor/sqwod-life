@@ -2,7 +2,7 @@
 urlSlug: pushpress
 lang: de
 counterpart: pushpress
-title: "PushPress im Test"
+title: "PushPress: unsere Bewertung"
 productName: "PushPress"
 category: "Coaching- & Studio-Tools"
 glyph: watch

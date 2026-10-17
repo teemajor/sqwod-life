@@ -56,6 +56,9 @@ asset:
   images:
     - "https://images.asics.com/is/image/asics/1011B958_001_SR_RT_GLB?$zoom$"
   credit: "Product image: ASICS"
+successor:
+  name: "ASICS Gel-Nimbus 28"
+  since: "2026-01"
 tags: ["apparel", "running", "shoes"]
 ---
 

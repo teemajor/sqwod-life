@@ -51,6 +51,9 @@ cons:
 whoFor:
   buy: "You coach runners or endurance clients and want Garmin's training data without the €500 tier."
   skip: "You need offline maps, multiband GPS, or a premium metal build."
+successor:
+  name: "Garmin Forerunner 170"
+  since: "2026-05"
 tags: ["wearables", "running", "garmin"]
 asset:
   type: images

@@ -2,7 +2,7 @@
 urlSlug: muse-s-athena
 lang: de
 counterpart: muse-s-athena
-title: "Muse S Athena im Test"
+title: "Muse S Athena: unsere Bewertung"
 productName: "Muse S Athena"
 category: "Meditation & Schlaf-Tech"
 glyph: band

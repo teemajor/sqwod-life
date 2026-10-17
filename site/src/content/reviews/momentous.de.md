@@ -2,7 +2,7 @@
 urlSlug: momentous
 lang: de
 counterpart: momentous
-title: "Momentous Supplements im Test"
+title: "Momentous Supplements: unsere Bewertung"
 productName: "Momentous (Kreatin + Protein)"
 category: "Supplements & Ernährung"
 glyph: supplement

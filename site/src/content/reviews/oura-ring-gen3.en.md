@@ -58,6 +58,10 @@ asset:
   images:
     - "https://ouraring.com/blog/wp-content/uploads/2022/09/Oura-Gen3-Horizon-Intro.jpg"
   credit: "Product image: Oura"
+successor:
+  name: "Oura Ring 5"
+  since: "2026-05"
+  reviewSlug: "oura-ring-5"
 tags: ["wearables", "recovery", "sleep", "smart-ring"]
 ---
 

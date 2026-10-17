@@ -102,6 +102,14 @@ const reviews = defineCollection({
       credit: z.string().optional(),     // e.g. "Images via Amazon" (attribution for licensed photos)
     }).default({ type: 'fallback', images: [] }),
     amazonAsin: z.string().optional(),   // for the licensed-image pull (automation/assets.mjs)
+    // A newer generation is on sale. Drives the "Newer model available" notice so an
+    // older review never reads as current (audit 17 Oct 2026). reviewSlug links our
+    // own review of the newer model when one exists.
+    successor: z.object({
+      name: z.string(),
+      since: z.string().optional(),     // YYYY-MM
+      reviewSlug: z.string().optional(),
+    }).optional(),
 
     tags: z.array(z.string()).default([]),
   }),

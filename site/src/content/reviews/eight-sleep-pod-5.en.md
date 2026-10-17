@@ -55,6 +55,9 @@ asset:
   images:
     - "https://res.cloudinary.com/eightsleep/image/upload/f_auto,q_auto,c_limit,w_1200/pod-5-core_z7yla2.png"
   credit: "Product image: Eight Sleep"
+successor:
+  name: "Eight Sleep Pod 6"
+  since: "2026-09"
 tags: ["sleep", "recovery", "sleep-tech"]
 ---
 

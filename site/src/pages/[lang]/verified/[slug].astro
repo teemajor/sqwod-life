@@ -5,7 +5,7 @@ import ScoreBadge from '../../../components/ScoreBadge.astro';
 import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
-import { categories } from '../../../config/verified-categories';
+import { categories, reviewEarns } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
 
 export async function getStaticPaths() {
@@ -99,6 +99,18 @@ const faqLd = {
   <h1 style="margin-bottom:2px">{d.productName}</h1>
   <p class="sub">{d.category}</p>
   <div style="margin-top:12px"><TestStatus status={d.testStatus} lang={lang} tone="full" /></div>
+  {d.successor && (() => {
+    const s = d.successor!;
+    const when = s.since ? new Date(`${s.since}-01T12:00:00Z`).toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { month: 'long', year: 'numeric' }) : '';
+    const name = s.reviewSlug ? <a href={`/${lang}/verified/${s.reviewSlug}`}>{s.name}</a> : <b>{s.name}</b>;
+    return (
+      <p class="successor" role="note">
+        {lang === 'de'
+          ? <>Neueres Modell erhältlich: {name}{when ? ` (seit ${when})` : ''}. Diese Bewertung gilt für das Vorgängermodell{s.reviewSlug ? '.' : '; das neue Modell ist noch nicht bewertet.'}</>
+          : <>Newer model available: {name}{when ? ` (since ${when})` : ''}. This review covers the previous model{s.reviewSlug ? '.' : '; we have not scored the new one yet.'}</>}
+      </p>
+    );
+  })()}
 
   <div class="review-layout" style="margin-top:18px">
     <!-- sticky rail: 3D + score + deal -->
@@ -132,8 +144,10 @@ const faqLd = {
         <div class="scoreLabel">Sqwod Score</div>
         <span class="conf">{t(lang,'verified.confidence')}: {d.confidence}</span>
         <div class="meta">{lang==='de'?'aus':'from'} <b>{d.crowd.reviews.toLocaleString()}+</b> {t(lang,'verified.reviews')} · <b>{d.crowd.platforms}</b> {t(lang,'verified.platforms')} · {t(lang,'verified.updated')} <b>{updated}</b></div>
-        <a class="deal" href={`/go/${d.urlSlug}`} rel="sponsored nofollow">{t(lang,'verified.bestDeal')} →</a>
-        <div class="dealnote">Anzeige / Affiliate · {lang==='de'?'Live-Preis beim Händler':'live price shown at the retailer'}</div>
+        <a class="deal" href={`/go/${d.urlSlug}`} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'}>{t(lang,'verified.bestDeal')} →</a>
+        <div class="dealnote">{reviewEarns(d.urlSlug)
+          ? <>Anzeige / Affiliate · {lang==='de'?'Live-Preis beim Händler':'live price shown at the retailer'}</>
+          : <>{lang==='de'?'Kein Affiliate-Link · Live-Preis beim Händler':'Not an affiliate link · live price shown at the retailer'}</>}</div>
       </div>
     </aside>
 
@@ -181,6 +195,8 @@ const faqLd = {
   .g-thumb{width:54px;height:54px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;cursor:pointer;padding:4px;box-sizing:border-box}
   .g-thumb img{width:100%;height:100%;object-fit:contain}
   .g-thumb:hover{border-color:var(--chalk)}
+  .successor{margin:12px 0 0;padding:10px 14px;border:1px solid var(--line);border-left:3px solid var(--chalk);border-radius:10px;background:var(--panel);font-size:14px;line-height:1.5;color:var(--g1);max-width:70ch}
+  .successor a{color:var(--chalk)}
   .g-credit{font-size:10.5px;color:var(--g4);margin-top:8px;letter-spacing:.02em}
   /* Empty state when a product has no photos yet (until the affiliate image
      feed populates asset.images) — the brand diamond mark, not a broken box. */

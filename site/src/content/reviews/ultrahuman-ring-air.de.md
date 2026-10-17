@@ -2,7 +2,7 @@
 urlSlug: ultrahuman-ring-air
 lang: de
 counterpart: ultrahuman-ring-air
-title: "Ultrahuman Ring AIR im Test"
+title: "Ultrahuman Ring AIR: unsere Bewertung"
 productName: "Ultrahuman Ring AIR"
 category: "Wearables & Tracker"
 glyph: ring

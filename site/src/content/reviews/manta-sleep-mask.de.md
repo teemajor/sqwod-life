@@ -2,7 +2,7 @@
 urlSlug: manta-sleep-mask
 lang: de
 counterpart: manta-sleep-mask
-title: "Manta Sleep Mask im Test"
+title: "Manta Sleep Mask: unsere Bewertung"
 productName: "Manta Sleep Mask"
 category: "Schlaf"
 glyph: band

@@ -61,6 +61,9 @@ asset:
     - "https://m.media-amazon.com/images/I/516xEeWhqbL._AC_SL1500_.jpg"
   credit: "Product images via Amazon"
 amazonAsin: B0CVSD725F
+successor:
+  name: "Hyperice Hypervolt 3"
+  since: "2026-03"
 tags: ["recovery", "massage", "percussion"]
 ---
 

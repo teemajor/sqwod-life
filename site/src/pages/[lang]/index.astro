@@ -10,6 +10,7 @@ import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../i18n/ui';
 import { pillarMeta, type Pillar } from '../../i18n/pillars';
 import { readdirSync } from 'node:fs';
+import { reviewEarns } from '../../config/verified-categories';
 import { join } from 'node:path';
 
 export function getStaticPaths() {
@@ -178,7 +179,7 @@ const T = de
                 <ScoreBadge score={r.data.sqwodScore} size={64} />
               </div>
               <span class="hp-card-p">{r.data.verdict}</span>
-              <span class="hp-pick-foot"><span class="hp-price">{price(r)}</span>{r.data.affiliate && <span class="hp-ad">{T.ad}</span>}</span>
+              <span class="hp-pick-foot"><span class="hp-price">{price(r)}</span>{reviewEarns(r.data.urlSlug) && <span class="hp-ad">{T.ad}</span>}</span>
               <span class="hp-more">{T.review} →</span>
             </div>
           </a>

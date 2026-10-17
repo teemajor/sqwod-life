@@ -2,7 +2,7 @@
 urlSlug: hyperice-hypervolt-2
 lang: de
 counterpart: hyperice-hypervolt-2
-title: "Hyperice Hypervolt 2 im Test"
+title: "Hyperice Hypervolt 2: unsere Bewertung"
 productName: "Hyperice Hypervolt 2"
 category: "Recovery & Massage"
 glyph: massager
@@ -61,6 +61,9 @@ asset:
     - "https://m.media-amazon.com/images/I/516xEeWhqbL._AC_SL1500_.jpg"
   credit: "Produktbilder via Amazon"
 amazonAsin: B0CVSD725F
+successor:
+  name: "Hyperice Hypervolt 3"
+  since: "2026-03"
 tags: ["recovery", "massage", "percussion"]
 ---
 

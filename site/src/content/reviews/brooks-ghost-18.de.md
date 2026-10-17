@@ -2,7 +2,7 @@
 urlSlug: brooks-ghost-18
 lang: de
 counterpart: brooks-ghost-18
-title: "Brooks Ghost 18 im Test"
+title: "Brooks Ghost 18: unsere Bewertung"
 productName: "Brooks Ghost 18"
 category: "Trainings-Bekleidung"
 glyph: band

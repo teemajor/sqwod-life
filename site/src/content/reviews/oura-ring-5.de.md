@@ -2,7 +2,7 @@
 urlSlug: oura-ring-5
 lang: de
 counterpart: oura-ring-5
-title: "Oura Ring 5 im Test"
+title: "Oura Ring 5: unsere Bewertung"
 productName: "Oura Ring 5"
 category: "Recovery- & Schlaf-Tracker"
 glyph: ring

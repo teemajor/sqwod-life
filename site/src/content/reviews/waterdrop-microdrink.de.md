@@ -2,7 +2,7 @@
 urlSlug: waterdrop-microdrink
 lang: de
 counterpart: waterdrop-microdrink
-title: "Waterdrop Microdrink im Test"
+title: "Waterdrop Microdrink: unsere Bewertung"
 productName: "Waterdrop Microdrink"
 category: "Supplements & Ernährung"
 glyph: supplement

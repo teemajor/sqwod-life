@@ -2,7 +2,7 @@
 urlSlug: ritual-essential-women
 lang: de
 counterpart: ritual-essential-women
-title: "Ritual Essential for Women 18+ im Test"
+title: "Ritual Essential for Women 18+: unsere Bewertung"
 productName: "Ritual Essential for Women 18+"
 category: "Supplements & Ernährung"
 glyph: supplement

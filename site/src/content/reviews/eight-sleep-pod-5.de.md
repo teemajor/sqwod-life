@@ -2,7 +2,7 @@
 urlSlug: eight-sleep-pod-5
 lang: de
 counterpart: eight-sleep-pod-5
-title: "Eight Sleep Pod 5 im Test"
+title: "Eight Sleep Pod 5: unsere Bewertung"
 productName: "Eight Sleep Pod 5"
 category: "Schlaf"
 glyph: bed
@@ -55,6 +55,9 @@ asset:
   images:
     - "https://res.cloudinary.com/eightsleep/image/upload/f_auto,q_auto,c_limit,w_1200/pod-5-core_z7yla2.png"
   credit: "Produktbild: Eight Sleep"
+successor:
+  name: "Eight Sleep Pod 6"
+  since: "2026-09"
 tags: ["sleep", "recovery", "sleep-tech"]
 ---
 

@@ -2,7 +2,7 @@
 urlSlug: gymshark-vital-seamless
 lang: de
 counterpart: gymshark-vital-seamless
-title: "Gymshark Vital Seamless 2.0 im Test"
+title: "Gymshark Vital Seamless 2.0: unsere Bewertung"
 productName: "Gymshark Vital Seamless 2.0"
 category: "Trainings-Bekleidung"
 glyph: band

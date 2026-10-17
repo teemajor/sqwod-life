@@ -57,6 +57,10 @@ asset:
   images:
     - "https://pages.eightsleep.com/cdn/shop/files/pod4-regular_1920x.png?v=1732906392"
   credit: "Product image: Eight Sleep"
+successor:
+  name: "Eight Sleep Pod 5"
+  since: "2025-05"
+  reviewSlug: "eight-sleep-pod-5"
 tags: ["sleep", "recovery", "eight-sleep"]
 ---
 

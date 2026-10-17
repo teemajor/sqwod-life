@@ -2,7 +2,7 @@
 urlSlug: apple-watch-9
 lang: de
 counterpart: apple-watch-9
-title: "Apple Watch Series 9 im Test"
+title: "Apple Watch Series 9: unsere Bewertung"
 productName: "Apple Watch Series 9"
 category: "Allround-Smartwatch"
 glyph: watch
@@ -51,6 +51,10 @@ cons:
 whoFor:
   buy: "Du willst ein Gerät für Training, Alltag und Gesundheits-Basics."
   skip: "Du willst mehrtägigen Akku oder spezialisierte Recovery-Tiefe."
+successor:
+  name: "Apple Watch Series 11"
+  since: "2025-09"
+  reviewSlug: "apple-watch-11"
 tags: ["wearables", "smartwatch", "fitness"]
 asset:
   type: images

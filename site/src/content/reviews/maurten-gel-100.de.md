@@ -2,7 +2,7 @@
 urlSlug: maurten-gel-100
 lang: de
 counterpart: maurten-gel-100
-title: "Maurten GEL 100 im Test"
+title: "Maurten GEL 100: unsere Bewertung"
 productName: "Maurten GEL 100"
 category: "Supplements & Ernährung"
 glyph: supplement

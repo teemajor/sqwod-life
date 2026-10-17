@@ -58,6 +58,9 @@ asset:
   images:
     - "https://res.garmin.com/en/products/010-02809-12/v/cf-lg.jpg"
   credit: "Product image: Garmin"
+successor:
+  name: "Garmin Forerunner 970"
+  since: "2025-05"
 tags: ["wearables", "running", "garmin", "triathlon"]
 ---
 

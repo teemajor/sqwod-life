@@ -2,7 +2,7 @@
 urlSlug: blackroll-standard
 lang: de
 counterpart: blackroll-standard
-title: "BLACKROLL Standard Faszienrolle im Test"
+title: "BLACKROLL Standard Faszienrolle: unsere Bewertung"
 productName: "BLACKROLL Standard"
 category: "Recovery & Massage"
 glyph: massager

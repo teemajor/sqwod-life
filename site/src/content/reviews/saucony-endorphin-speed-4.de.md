@@ -2,7 +2,7 @@
 urlSlug: saucony-endorphin-speed-4
 lang: de
 counterpart: saucony-endorphin-speed-4
-title: "Saucony Endorphin Speed 4 im Test"
+title: "Saucony Endorphin Speed 4: unsere Bewertung"
 productName: "Saucony Endorphin Speed 4"
 category: "Trainings-Bekleidung"
 glyph: band
@@ -57,6 +57,9 @@ asset:
   images:
     - "https://thekit.wolverineworldwide.com/match/media_lookup/S20940-220_1/?preset=dw-large"
   credit: "Produktbild: Saucony"
+successor:
+  name: "Saucony Endorphin Speed 5"
+  since: "2025-06"
 tags: ["footwear", "running", "super-trainer"]
 ---
 

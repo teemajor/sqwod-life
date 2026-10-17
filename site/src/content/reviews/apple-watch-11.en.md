@@ -58,6 +58,9 @@ asset:
     - "https://m.media-amazon.com/images/I/71JPViO29PL._AC_SL1500_.jpg"
   credit: "Product images via Amazon"
 amazonAsin: B0FQFLMHSX
+successor:
+  name: "Apple Watch Series 12"
+  since: "2026-09"
 tags: ["wearables", "smartwatch", "apple-watch"]
 ---
 

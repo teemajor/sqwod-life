@@ -2,7 +2,7 @@
 urlSlug: vuori-kore-short
 lang: de
 counterpart: vuori-kore-short
-title: "Vuori Kore Short im Test"
+title: "Vuori Kore Short: unsere Bewertung"
 productName: "Vuori Kore Short"
 category: "Trainings-Bekleidung"
 glyph: band
@@ -48,7 +48,7 @@ pros:
   - "Eigener DE-Shop mit kostenlosem Expressversand"
 cons:
   - "Premium-Preis (85 €)"
-  - "Schwerste im Test, saugt Wasser und trocknet langsam"
+  - "Schwerste im Vergleich, saugt Wasser und trocknet langsam"
   - "Innenhose kann bei tiefen Kniebeugen verrutschen"
   - "Offene Taschen ohne Reißverschluss beim Laufen unsicher"
 whoFor:
@@ -64,4 +64,4 @@ tags: ["apparel", "training", "shorts"]
 
 Vuori hat sich einen Namen damit gemacht, die Grenze zwischen Performance und Lifestyle verschwimmen zu lassen – und die Kore Short ist dafür das beste Beispiel in der Herren-Linie. Der Stoff ist ein weicher, formstabiler 4-Wege-Stretch, den Tester immer wieder als den bequemsten bezeichnen, den sie getragen haben, und dank integrierter Boxer-Brief-Innenhose brauchst du keine separate Unterwäsche. Es gibt sie mit 5"-, 7"- und 9"-Innennaht sowie gefüttert und ungefüttert, sodass du die Beinlänge selbst wählst. Die Nutzerbewertungen sind durchweg stark – 4,8/5 aus über 26.000 Bewertungen im Vuori-Shop und 4,6/5 bei REI – und fallen normal aus (true to size).
 
-Der Haken: Dieses komfortorientierte Design ist keine spezialisierte Laufshort. OutdoorGearLab kürt sie zwar zur vielseitigsten, aber auch zur schwersten Short im Test, saugt Wasser und trocknet langsam, und die offenen Taschen haben keinen Reißverschluss. Bei tiefen Kniebeugen kann die Innenhose verrutschen. Für dich als Kunde in Deutschland ist die Verfügbarkeit die gute Nachricht: Vuori betreibt einen lokalen Shop unter vuoriclothing.de mit Preisen in Euro (85 €) und kostenlosem Expressversand – keine US-Importzölle. Vuoris Partnerprogramm läuft über Impact/Impact Radius; melde dich dort an und ersetze vor der Veröffentlichung den Platzhalter-Link durch einen getrackten Deep-Link zum DE-Shop.
+Der Haken: Dieses komfortorientierte Design ist keine spezialisierte Laufshort. OutdoorGearLab kürt sie zwar zur vielseitigsten, aber auch zur schwersten Short im Vergleich, saugt Wasser und trocknet langsam, und die offenen Taschen haben keinen Reißverschluss. Bei tiefen Kniebeugen kann die Innenhose verrutschen. Für dich als Kunde in Deutschland ist die Verfügbarkeit die gute Nachricht: Vuori betreibt einen lokalen Shop unter vuoriclothing.de mit Preisen in Euro (85 €) und kostenlosem Expressversand – keine US-Importzölle. Vuoris Partnerprogramm läuft über Impact/Impact Radius; melde dich dort an und ersetze vor der Veröffentlichung den Platzhalter-Link durch einen getrackten Deep-Link zum DE-Shop.

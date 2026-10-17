@@ -4,7 +4,7 @@ import TestStatus from '../../../../components/TestStatus.astro';
 import ProductThumb from '../../../../components/ProductThumb.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
-import { categories, byCategory } from '../../../../config/verified-categories';
+import { categories, byCategory, earns } from '../../../../config/verified-categories';
 import { hasCompare } from '../../../../config/verified-compare';
 import { byGuideCategory, GUIDE_PREFIX } from '../../../../config/best';
 import ComparisonTable from '../../../../components/ComparisonTable.astro';
@@ -81,15 +81,16 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
         <div class="main">
           <div class="tags">
             {r ? <span class="tag rev">{tx.reviewed}</span> : <span class="tag ed">{tx.editorial}</span>}
-            <span class={`tag ${p.affiliate ? 'af' : 'na'}`}>{p.affiliate ? tx.aff : tx.noaff}</span>
+            <span class={`tag ${earns(p) ? 'af' : 'na'}`}>{earns(p) ? tx.aff : tx.noaff}</span>
             <TestStatus status={r ? r.testStatus : 'editorial-pick'} lang={lang} />
+            {r?.successor && <span class="tag na" title={r.successor.name}>{lang === 'de' ? 'Nachfolger da' : 'Newer model out'}</span>}
           </div>
           <h3>{p.product}</h3>
           <p class="bestfor"><b>{tx.bestFor}:</b> {p.bestFor[lang]}</p>
           <p class="why">{p.why[lang]}</p>
           <div class="acts">
             {r && <a class="rev-link" href={`/${lang}/verified/${p.reviewSlug}`}>{tx.read} →</a>}
-            <a class="visit" href={p.url} target="_blank" rel={p.affiliate ? 'sponsored nofollow' : 'nofollow'}>{tx.visit} ↗</a>
+            <a class="visit" href={p.url} target="_blank" rel={earns(p) ? 'sponsored nofollow' : 'nofollow'}>{tx.visit} ↗</a>
           </div>
         </div>
         {r && (

@@ -2,7 +2,7 @@
 urlSlug: concept2-rowerg
 lang: de
 counterpart: concept2-rowerg
-title: "Concept2 RowErg im Test"
+title: "Concept2 RowErg: unsere Bewertung"
 productName: "Concept2 RowErg"
 category: "Connected Fitness"
 glyph: band

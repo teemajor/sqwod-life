@@ -2,8 +2,8 @@
 urlSlug: philips-smartsleep-wakeup
 lang: de
 counterpart: philips-smartsleep-wakeup
-title: "Philips Somneo Sleep & Wake-up Light HF3650 im Test"
-productName: "Philips Somneo Sleep & Wake-up Light HF3650"
+title: "Philips SmartSleep (Somneo) HF3650 Lichtwecker: unsere Bewertung"
+productName: "Philips SmartSleep Wake-up Light HF3650 (ehemals Somneo)"
 category: "Schlaf"
 glyph: bed
 gallery: 4

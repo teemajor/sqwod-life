@@ -2,7 +2,7 @@
 urlSlug: compex-sp-80
 lang: de
 counterpart: compex-sp-80
-title: "Compex SP 8.0 Wireless im Test"
+title: "Compex SP 8.0 Wireless: unsere Bewertung"
 productName: "Compex SP 8.0 Wireless"
 category: "Recovery & Massage"
 glyph: massager

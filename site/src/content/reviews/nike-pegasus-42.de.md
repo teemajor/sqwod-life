@@ -2,7 +2,7 @@
 urlSlug: nike-pegasus-42
 lang: de
 counterpart: nike-pegasus-42
-title: "Nike Pegasus 42 im Test"
+title: "Nike Pegasus 42: unsere Bewertung"
 productName: "Nike Pegasus 42"
 category: "Trainings-Bekleidung"
 glyph: band

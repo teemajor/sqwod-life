@@ -2,7 +2,7 @@
 urlSlug: theragun-prime-plus
 lang: de
 counterpart: theragun-prime-plus
-title: "Theragun Prime Plus im Test"
+title: "Theragun Prime Plus: unsere Bewertung"
 productName: "Theragun Prime Plus"
 category: "Recovery & Massage"
 glyph: massager

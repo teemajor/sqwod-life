@@ -51,6 +51,10 @@ cons:
 whoFor:
   buy: "You want one device for training, daily life, and health basics."
   skip: "You want multi-day battery or specialist recovery depth."
+successor:
+  name: "Apple Watch Series 11"
+  since: "2025-09"
+  reviewSlug: "apple-watch-11"
 tags: ["wearables", "smartwatch", "fitness"]
 asset:
   type: images

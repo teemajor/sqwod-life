@@ -2,7 +2,7 @@
 urlSlug: suunto-race
 lang: de
 counterpart: suunto-race
-title: "Suunto Race im Test"
+title: "Suunto Race: unsere Bewertung"
 productName: "Suunto Race"
 category: "Wearables & Tracker"
 glyph: watch
@@ -59,6 +59,9 @@ asset:
   images:
     - "https://www.suunto.com/globalassets/productimages/suunto-race/suunto-race-titanium-charcoal/suuntorace-all-black-front2-1280x1280px-2.png?width=900"
   credit: "Produktbild: Suunto"
+successor:
+  name: "Suunto Race 2"
+  since: "2025-08"
 tags: ["wearables", "running", "multisport", "suunto"]
 ---
 

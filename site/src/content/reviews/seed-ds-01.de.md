@@ -2,7 +2,7 @@
 urlSlug: seed-ds-01
 lang: de
 counterpart: seed-ds-01
-title: "Seed DS-01 Daily Synbiotic im Test"
+title: "Seed DS-01 Daily Synbiotic: unsere Bewertung"
 productName: "Seed DS-01 Daily Synbiotic"
 category: "Darmgesundheit & Supplements"
 glyph: supplement

@@ -2,7 +2,7 @@
 urlSlug: wahoo-kickr-core
 lang: de
 counterpart: wahoo-kickr-core
-title: "Wahoo KICKR CORE 2 im Test"
+title: "Wahoo KICKR CORE 2: unsere Bewertung"
 productName: "Wahoo KICKR CORE 2"
 category: "Connected Fitness"
 glyph: watch

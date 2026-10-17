@@ -8,7 +8,7 @@ import ComparisonTable from '../../../../components/ComparisonTable.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../../i18n/ui';
 import { formatPrice } from '../../../../lib/price';
-import { categories, byCategory } from '../../../../config/verified-categories';
+import { categories, byCategory, earns } from '../../../../config/verified-categories';
 import { INDEX_COMPARE_PAGES } from '../../../../config/seo.mjs';
 
 export async function getStaticPaths() {
@@ -86,7 +86,7 @@ const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
         <p class="vd">{d.verdict}</p>
         <div class="acts">
           <a class="rev" href={`/${lang}/verified/${d.urlSlug}`}>{T.read}</a>
-          {pick && <a class="vis" href={pick.url} target="_blank" rel={pick.affiliate ? 'sponsored nofollow' : 'nofollow'}>{T.visit}</a>}
+          {pick && <a class="vis" href={pick.url} target="_blank" rel={earns(pick) ? 'sponsored nofollow' : 'nofollow'}>{T.visit}</a>}
         </div>
       </div>
     ))}

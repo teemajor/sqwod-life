@@ -26,7 +26,7 @@ crowd:
   sources:
     - { name: "iHerb", value: "4.7★ (33,349)", url: "https://www.iherb.com/pr/optimum-nutrition-gold-standard-100-whey-protein-double-rich-chocolate-5-05-lb-2-29-kg/27509" }
     - { name: "Walmart", value: "4.5★ (4,822)", url: "https://www.walmart.com/reviews/product/8038553295" }
-    - { name: "Body-Attack.de", value: "4.6★ (20)", url: "https://www.body-attack.de/en/optimum-nutrition-100-whey-gold-standard" }
+    - { name: "Body-Attack.de (Jul 2026, listing since removed)", value: "4.6★ (20)" }
 assessment:
   score: 82
   criteria:

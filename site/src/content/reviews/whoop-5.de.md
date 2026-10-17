@@ -2,7 +2,7 @@
 urlSlug: whoop-5
 lang: de
 counterpart: whoop-5
-title: "Whoop 5.0 im Test"
+title: "Whoop 5.0: unsere Bewertung"
 productName: "Whoop 5.0"
 category: "Recovery- & Strain-Tracker"
 glyph: band

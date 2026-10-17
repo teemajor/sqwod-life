@@ -2,7 +2,7 @@
 urlSlug: esn-designer-whey
 lang: de
 counterpart: esn-designer-whey
-title: "ESN Designer Whey Protein im Test"
+title: "ESN Designer Whey Protein: unsere Bewertung"
 productName: "ESN Designer Whey Protein"
 category: "Supplements & Ernährung"
 glyph: supplement

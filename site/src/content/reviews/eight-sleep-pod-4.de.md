@@ -2,7 +2,7 @@
 urlSlug: eight-sleep-pod-4
 lang: de
 counterpart: eight-sleep-pod-4
-title: "Eight Sleep Pod 4 im Test"
+title: "Eight Sleep Pod 4: unsere Bewertung"
 productName: "Eight Sleep Pod 4"
 category: "Schlaf"
 glyph: bed
@@ -57,6 +57,10 @@ asset:
   images:
     - "https://pages.eightsleep.com/cdn/shop/files/pod4-regular_1920x.png?v=1732906392"
   credit: "Produktbild: Eight Sleep"
+successor:
+  name: "Eight Sleep Pod 5"
+  since: "2025-05"
+  reviewSlug: "eight-sleep-pod-5"
 tags: ["sleep", "recovery", "eight-sleep"]
 ---
 

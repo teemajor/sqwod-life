@@ -57,6 +57,9 @@ asset:
   images:
     - "https://m.media-amazon.com/images/I/61HE8zhwT7L._AC_SL1500_.jpg"
   credit: "Product images via Amazon"
+successor:
+  name: "COROS PACE 4"
+  since: "2025-11"
 tags: ["wearables", "running", "coros"]
 ---
 

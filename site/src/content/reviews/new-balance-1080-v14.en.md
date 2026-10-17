@@ -57,6 +57,9 @@ asset:
   images:
     - "https://nb.scene7.com/is/image/NB/m1080k14_nb_02_i?$pdpflexf2$&wid=880&hei=880"
   credit: "Product image: New Balance"
+successor:
+  name: "New Balance 1080v15"
+  since: "2026-01"
 tags: ["footwear", "running", "daily-trainer"]
 ---
 

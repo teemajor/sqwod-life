@@ -2,7 +2,7 @@
 urlSlug: alo-airlift-legging
 lang: de
 counterpart: alo-airlift-legging
-title: "Alo High-Waist Airlift Legging im Test"
+title: "Alo High-Waist Airlift Legging: unsere Bewertung"
 productName: "Alo High-Waist Airlift Legging"
 category: "Trainings-Bekleidung"
 glyph: band

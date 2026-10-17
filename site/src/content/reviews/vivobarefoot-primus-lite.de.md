@@ -2,7 +2,7 @@
 urlSlug: vivobarefoot-primus-lite
 lang: de
 counterpart: vivobarefoot-primus-lite
-title: "Vivobarefoot Primus Lite III im Test"
+title: "Vivobarefoot Primus Lite III: unsere Bewertung"
 productName: "Vivobarefoot Primus Lite III"
 category: "Trainings-Bekleidung"
 glyph: band
@@ -58,6 +58,8 @@ asset:
   images:
     - "https://www.vivobarefoot.com/media/catalog/product/3/0/309092-01_side_new.jpg"
   credit: "Produktbild: Vivobarefoot"
+successor:
+  name: "Vivobarefoot Primus Lite IV"
 tags: ["footwear", "barefoot", "training"]
 ---
 

@@ -2,7 +2,7 @@
 urlSlug: ringconn-gen-2
 lang: de
 counterpart: ringconn-gen-2
-title: "RingConn Gen 2 im Test"
+title: "RingConn Gen 2: unsere Bewertung"
 productName: "RingConn Gen 2"
 category: "Wearables & Tracker"
 glyph: ring
@@ -59,6 +59,9 @@ asset:
   images:
     - "https://ringconn.com/cdn/shop/files/RingConn_Smart_Ring_Gen_2-Royal_Gold.png?v=1780302336&width=1024"
   credit: "Produktbild: RingConn"
+successor:
+  name: "RingConn Gen 3"
+  since: "2026-05"
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 

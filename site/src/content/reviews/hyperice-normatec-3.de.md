@@ -2,7 +2,7 @@
 urlSlug: hyperice-normatec-3
 lang: de
 counterpart: hyperice-normatec-3
-title: "Hyperice Normatec 3 im Test"
+title: "Hyperice Normatec 3: unsere Bewertung"
 productName: "Hyperice Normatec 3"
 category: "Recovery & Massage"
 glyph: massager

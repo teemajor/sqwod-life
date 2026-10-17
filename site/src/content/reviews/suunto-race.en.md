@@ -59,6 +59,9 @@ asset:
   images:
     - "https://www.suunto.com/globalassets/productimages/suunto-race/suunto-race-titanium-charcoal/suuntorace-all-black-front2-1280x1280px-2.png?width=900"
   credit: "Product image: Suunto"
+successor:
+  name: "Suunto Race 2"
+  since: "2025-08"
 tags: ["wearables", "running", "multisport", "suunto"]
 ---
 

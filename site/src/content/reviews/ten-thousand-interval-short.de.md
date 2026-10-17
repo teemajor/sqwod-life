@@ -2,7 +2,7 @@
 urlSlug: ten-thousand-interval-short
 lang: de
 counterpart: ten-thousand-interval-short
-title: "Ten Thousand Interval Short im Test"
+title: "Ten Thousand Interval Short: unsere Bewertung"
 productName: "Ten Thousand Interval Short"
 category: "Trainings-Bekleidung"
 glyph: band

@@ -2,7 +2,7 @@
 urlSlug: garmin-forerunner-165
 lang: de
 counterpart: garmin-forerunner-165
-title: "Garmin Forerunner 165 im Test"
+title: "Garmin Forerunner 165: unsere Bewertung"
 productName: "Garmin Forerunner 165"
 category: "Lauf-Smartwatch"
 glyph: watch
@@ -51,6 +51,9 @@ cons:
 whoFor:
   buy: "Du coachst Läufer:innen oder Ausdauer-Kund:innen und willst Garmins Trainingsdaten ohne 500-Euro-Stufe."
   skip: "Du brauchst Offline-Karten, Multiband-GPS oder ein Premium-Metallgehäuse."
+successor:
+  name: "Garmin Forerunner 170"
+  since: "2026-05"
 tags: ["wearables", "running", "garmin"]
 asset:
   type: images

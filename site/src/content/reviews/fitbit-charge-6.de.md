@@ -2,7 +2,7 @@
 urlSlug: fitbit-charge-6
 lang: de
 counterpart: fitbit-charge-6
-title: "Fitbit Charge 6 im Test"
+title: "Fitbit Charge 6: unsere Bewertung"
 productName: "Fitbit Charge 6"
 category: "Fitness-Tracker"
 glyph: tracker
@@ -52,6 +52,9 @@ cons:
 whoFor:
   buy: "Du willst einen günstigen, genauen Alltags-Tracker für dich oder Kund:innen."
   skip: "Du brauchst Profi-GPS oder lehnst ein Abo für volle Features ab."
+successor:
+  name: "Google Fitbit Edge"
+  since: "2026-10"
 tags: ["wearables", "tracker", "fitbit"]
 asset:
   type: images

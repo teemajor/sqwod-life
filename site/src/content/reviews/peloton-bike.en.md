@@ -59,6 +59,9 @@ asset:
   images:
     - "https://images.ctfassets.net/7vk8puwnesgc/5CEzcKls5slkb9VVJi4Aca/93ec5835f281aca20c030e03b46f4167/bike-side-02.jpg"
   credit: "Product image: Peloton"
+successor:
+  name: "Peloton Cross Training Bike"
+  since: "2025-10"
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 

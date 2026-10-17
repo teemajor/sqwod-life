@@ -58,6 +58,9 @@ asset:
   images:
     - "https://pulsetto.tech/cdn/shop/files/LITE1.png?v=1768302177&width=1200"
   credit: "Product image: Pulsetto"
+successor:
+  name: "Pulsetto Fit"
+  since: "2025-07"
 tags: ["recovery", "vagus-nerve", "stress", "hrv"]
 ---
 
