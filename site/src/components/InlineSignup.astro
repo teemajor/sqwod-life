@@ -17,7 +17,7 @@ const base = variant === 'daily'
     : { head: 'Get Sqwod Daily in your inbox', body: 'Five minutes, every weekday. What moved in the industry, and what it means for you. Free.' })
   : (de
     ? { head: 'In 5 Minuten am Tag schärfer', body: 'Sqwod Daily: was sich im Fitness-Business bewegt hat und was du daraus machst. Werktäglich, kostenlos.' }
-    : { head: 'Get sharper in 5 minutes a day', body: 'Sqwod Daily: what moved in the business of fitness, and what to do about it. Every weekday, free.' });
+    : { head: 'Get sharper in 5 minutes a day', body: 'Sqwod Daily: what moved in the fitness industry, and what to do about it. Every weekday, free.' });
 // Callers may override the copy; an empty body string hides the paragraph.
 const copy = { head: head ?? base.head, body: body ?? base.body };
 

@@ -305,7 +305,7 @@ function dailyPost(u, t) {
 </div>
 <div style="flex:1;padding:56px 64px 0;display:flex;flex-direction:column;justify-content:space-between;gap:40px">
 <div style="display:flex;flex-direction:column;gap:18px">
-  <div style="font-size:60px;font-weight:600;letter-spacing:-0.034em;line-height:1.06;color:${t.fg};text-wrap:pretty">The business of fitness, in five minutes</div>
+  <div style="font-size:60px;font-weight:600;letter-spacing:-0.034em;line-height:1.06;color:${t.fg};text-wrap:pretty">The fitness industry, in five minutes</div>
   <div style="font-family:${MONO};font-size:25px;color:${t.muted};letter-spacing:0.08em">MONEY MOVEMENT · THE LESSON · ONE THING TO DO</div>
 </div>
 <div style="display:flex;flex-direction:column">

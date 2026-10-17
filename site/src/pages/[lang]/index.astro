@@ -61,7 +61,7 @@ const cur = (c: string) => (c === 'EUR' ? '€' : c === 'USD' ? '$' : c === 'GBP
 const per = (t: string) => (t === 'monthly' ? (de ? '/Monat' : '/mo') : t === 'yearly' ? (de ? '/Jahr' : '/yr') : '');
 const price = (r: (typeof reviews)[number]) => `${de ? 'ab' : 'from'} ${cur(r.data.value.currency)}${r.data.value.bestPrice}${per(r.data.value.priceType)}`;
 
-const title = de ? 'Sqwod — dein Vorsprung im Fitness-Business' : 'Sqwod — your edge in the business of fitness';
+const title = de ? 'Sqwod — dein Vorsprung im Fitness-Business' : 'Sqwod: your edge in the fitness industry';
 const tagline = de
   ? 'Insider-Wissen, ehrliche Gear-Bewertungen und Wachstums-Playbooks für die Coaches, Creator und Gründer:innen, die die großen Plattformen übersehen.'
   : 'Insider intelligence, honest gear reviews and growth playbooks for the coaches, creators and founders the big platforms overlook.';
@@ -73,7 +73,7 @@ const T = de
       vH: 'Sqwod Verified: Gear und Tools mit Score', vP: 'Studio-Equipment, Coaching-Software und die Wearables, nach denen Kund:innen fragen. Sqwod Score 0–100, Affiliate-Links immer gekennzeichnet.', allGuides: 'Alle Kaufberater', review: 'Review lesen', ad: 'Anzeige / Affiliate',
       workH: 'Mit Sqwod arbeiten', brandK: 'Für Marken', brandH: 'Erreiche die Menschen, die Fitness machen.', brandP: 'Präsentiere Sqwod Daily, den Podcast oder Plätze auf der Seite. Oder lass dein Produkt bewerten und in Sqwod Pods einsetzen, wo Coaches trainieren und Content drehen.', brandCta: 'Werben',
       podK: 'Für Coaches in Berlin', podH: 'Trainiere Kund:innen in einem privaten Sqwod Pod.', podP: 'Voll ausgestattete private Trainingsräume in Prenzlauer Berg und Weißensee.', podCta: 'Pod buchen' }
-  : { kicker: 'Sqwod Daily · every weekday · EN & DE', h1: 'Your edge in the business of fitness.', signup: 'Get the 5-minute brief',
+  : { kicker: 'Sqwod Daily · every weekday · EN & DE', h1: 'Your edge in the fitness industry.', signup: 'Get the 5-minute brief',
       today: "Today's Daily", listen: 'Listen', read: "Read today's issue", presented: 'Presented by',
       pbH: 'Operator playbooks', pbP: 'Retention, pricing, leads and the science your clients ask about.', allReads: 'All reads',
       repKick: 'Sqwod Intelligence · Report', repCta: 'Get the report',

@@ -3,7 +3,7 @@ urlSlug: "sqwod-life-launch"
 lang: "en"
 counterpart: "sqwod-life-launch"
 company: "Sqwod"
-headline: "Sqwod launches sqwod.life, a bilingual intelligence brand for the business of fitness"
+headline: "Sqwod launches sqwod.life, a bilingual intelligence brand for the fitness industry"
 dek: "A daily brief, gated reports, and a verified deals engine — built for coaches, studio founders and operators, in English and German."
 tier: "premium"
 status: "published"
@@ -16,7 +16,7 @@ links:
 boilerplate: "Sqwod builds tools and spaces for the next generation of fitness operators — from Sqwod Pods to Sqwod OS and Sqwod AI. sqwod.life is its media and intelligence hub."
 ---
 
-**Berlin —** Sqwod today announced the launch of **sqwod.life**, a bilingual (English and German) intelligence-and-media brand covering the business of fitness and wellness.
+**Berlin —** Sqwod today announced the launch of **sqwod.life**, a bilingual (English and German) intelligence-and-media brand covering the fitness and wellness industry.
 
 The platform ships with three pillars at launch: **Sqwod Daily**, a five-minute weekday brief in text and audio; **Sqwod Intelligence**, data-grounded reports for operators and investors; and **Sqwod Verified**, a methodology-driven product-review engine built around the transparent Sqwod Score.
 

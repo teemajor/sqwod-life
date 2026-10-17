@@ -22,7 +22,9 @@ import { readFileSync } from 'node:fs';
 export const STRONG_RX = new RegExp('\\b(' + [
   // places & businesses
   'fitness', 'gym\\w*', 'fitnessstudio\\w*', 'health club\\w*', 'boutique (?:fitness|studio)', 'studio\\w*',
-  'franchise\\w*', 'classpass', 'wellness', 'wellbeing', 'well-being', 'spa\\b', 'sauna\\w*',
+  // 'franchise' alone was dropped (Oct 2026): it let an estate-agency franchise story
+  // in. Fitness franchise news always carries fitness/gym/studio as well.
+  'fitness franchise\\w*', 'gym franchise\\w*', 'classpass', 'wellness', 'wellbeing', 'well-being', 'spa\\b', 'sauna\\w*',
   // people
   'coach\\w*', 'trainer\\w*', 'personal train\\w*', 'athlet\\w*', 'physio\\w*', 'influencer\\w*',
   // training & body

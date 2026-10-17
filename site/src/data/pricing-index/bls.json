@@ -3,7 +3,7 @@
  "sourceUrl": "https://www.bls.gov/oes/current/oes399031.htm",
  "period": "May 2025",
  "published": "2026-05-15",
- "note": "Pay of employed trainers, not the rate clients pay. State medians copied via wagedex.com from the same release; replace with a direct BLS API pull once a BLS key is set. State hourly = annual / 2080.",
+ "note": "Pay of employed trainers, not the rate clients pay. All figures pulled from the BLS Public Data API (OEWS series 39-9031: 13 = annual median, 08 = hourly median) on 2026-10-17.",
  "national": {
   "employment": 322930,
   "medianHourly": 22.67,
@@ -78,12 +78,12 @@
   "IA": {
    "name": "Iowa",
    "medianAnnual": 36160,
-   "medianHourly": 17.38
+   "medianHourly": 17.39
   },
   "ID": {
    "name": "Idaho",
    "medianAnnual": 49780,
-   "medianHourly": 23.93
+   "medianHourly": 23.94
   },
   "IL": {
    "name": "Illinois",
@@ -123,7 +123,7 @@
   "ME": {
    "name": "Maine",
    "medianAnnual": 47060,
-   "medianHourly": 22.62
+   "medianHourly": 22.63
   },
   "MI": {
    "name": "Michigan",
@@ -148,7 +148,7 @@
   "MT": {
    "name": "Montana",
    "medianAnnual": 43940,
-   "medianHourly": 21.12
+   "medianHourly": 21.13
   },
   "NC": {
    "name": "North Carolina",
@@ -163,7 +163,7 @@
   "NE": {
    "name": "Nebraska",
    "medianAnnual": 31440,
-   "medianHourly": 15.12
+   "medianHourly": 15.11
   },
   "NH": {
    "name": "New Hampshire",
@@ -173,7 +173,7 @@
   "NJ": {
    "name": "New Jersey",
    "medianAnnual": 59870,
-   "medianHourly": 28.78
+   "medianHourly": 28.79
   },
   "NM": {
    "name": "New Mexico",
@@ -243,7 +243,7 @@
   "VA": {
    "name": "Virginia",
    "medianAnnual": 40820,
-   "medianHourly": 19.62
+   "medianHourly": 19.63
   },
   "VT": {
    "name": "Vermont",
@@ -270,5 +270,6 @@
    "medianAnnual": 50250,
    "medianHourly": 24.16
   }
- }
+ },
+ "verified": "2026-10-17"
 }

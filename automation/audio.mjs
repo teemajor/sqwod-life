@@ -48,10 +48,10 @@ const VOICE = { en: VOICE_EN, de: VOICE_DE };
 if (KEY) console.log(`· Daily voices (repo, authoritative) — EN: ${VOICE.en} · DE: ${VOICE.de}`);
 
 const SHOW = {
-  en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
+  en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the fitness and wellness industry, every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
   de: { title: 'Sqwod Daily', desc: 'Dein 5-Minuten-Audio-Rundown zum Business von Fitness und Wellness — jeden Werktag. Von Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
 };
-const GREET = { en: "It's Sqwod Daily — the business of fitness in five minutes, minus the boring parts. Let's get into it.", de: 'Hier ist Sqwod Daily — das Business von Fitness in fünf Minuten, ohne den langweiligen Teil. Los geht’s.' };
+const GREET = { en: "It's Sqwod Daily: the fitness industry in five minutes, minus the boring parts. Let's get into it.", de: 'Hier ist Sqwod Daily: die Fitnessbranche in fünf Minuten, ohne den langweiligen Teil. Los geht’s.' };
 const OUTRO = { en: "And that's your Sqwod Daily. Go get one rep better — see you tomorrow.", de: 'Und das war dein Sqwod Daily. Werd eine Rep besser — bis morgen.' };
 
 // --- tiny frontmatter reader (no deps; cascade writes JSON-quoted values) ---

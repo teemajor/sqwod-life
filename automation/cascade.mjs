@@ -23,6 +23,7 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { isOnBrand } from './onbrand.mjs';
+import { isGoogleNews, resolveAll, phraseProblems, isObituary, stripPhrases, noEmDash, pickGearRec } from './quality.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SOURCES_DIR = join(__dirname, 'sources');
@@ -97,7 +98,7 @@ async function generate(step, source, lang) {
     const langName = lang === 'de' ? 'German' : 'English';
     const prompt = `You are Sqwod's editor. Write ONE Sqwod Daily news item in ${langName} from these facts about "${source.entity}" (${source.topic}).
 
-VOICE — think Morning Brew for the business of fitness: smart, witty, conversational, a little cheeky. Facts are airtight; the delivery is fun. We talk to coaches, trainers, studio founders and operators — a fun audience, so we have a bit of fun. Never corporate, never dry, never try-hard. One light joke, pun, or wink is plenty; clarity and the fact always win over the bit.
+VOICE: think Morning Brew for the fitness industry: smart, witty, conversational, a little cheeky. Facts are airtight; the delivery is fun. We talk to coaches, trainers, studio founders and operators — a fun audience, so we have a bit of fun. Never corporate, never dry, never try-hard. One light joke, pun, or wink is plenty; clarity and the fact always win over the bit.
 
 Facts: ${facts}
 Source: ${source.provenance || 'n/a'}
@@ -107,6 +108,8 @@ Rules:
 - dek = 1–2 sentences. Open with the fact, land on the "so what" for a coach/operator/founder. You can be funny on the setup, but the payoff is real and useful.
 - Never invent numbers or facts beyond what's given. The humor is in the framing, not in made-up details.
 - In German: write native, idiomatic German wit — do NOT translate English jokes; German is first-class.
+- House style: no em dashes (use a colon, comma or full stop). No clickbait or hype ("has X sweating", "cheat sheet", "game-changer", "moving the needle"). Never write "the business of fitness": it is another publication's tagline.
+- If the story is about someone's death: write it respectfully and factually. No business lesson, no advice, no joke.
 Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
     // retry transient API errors (429/5xx/overloaded); never let one item crash the run
     for (let attempt = 1; attempt <= 3; attempt++) {
@@ -187,7 +190,7 @@ async function generateLead(items, lang) {
   if (!apiKey || !items.length) return null;
   const langName = lang === 'de' ? 'German' : 'English';
   const list = items.map((i, n) => `${n + 1}. ${i.headline} — ${i.dek}`).join('\n');
-  const prompt = `You are Sqwod's editor — Morning Brew for the business of fitness: witty, sharp, teaches, connects dots others miss. Audience: coaches, studio founders, operators. Write natively in ${langName}.
+  const prompt = `You are Sqwod's editor, Morning Brew for the fitness industry: witty, sharp, teaches, connects dots others miss. Audience: coaches, studio founders, operators. Write natively in ${langName}.
 
 Today's items (these are the ONLY facts available):
 ${list}
@@ -226,7 +229,7 @@ async function generateAudioScript(items, sections, lang) {
   const langName = lang === 'de' ? 'German' : 'English';
   const list = items.map((i, n) => `${n + 1}. ${i.headline} — ${i.dek}`).join('\n');
   const thread = sections?.connectTitle ? `Today's through-line: ${sections.connectTitle} — ${sections.connectBody || ''}` : '';
-  const prompt = `You are the host of Sqwod Daily, a spoken news brief on the business of fitness and wellness. Write the FULL script for today's episode in ${langName}, to be read aloud by one host.
+  const prompt = `You are the host of Sqwod Daily, a spoken news brief on the fitness and wellness industry. Write the FULL script for today's episode in ${langName}, to be read aloud by one host.
 
 This is AUDIO, not an article. It must sound like a smart, fun person telling you the day's news — NOT a list being read out. The listener should walk away having actually learned something: a number, a shift, a "huh, didn't know that." Factual first; the fun is in the delivery.
 
@@ -325,7 +328,8 @@ function buildSections(lead, lang, items) {
     });
     if (echoesItem) { console.log('  ⛔ dropped "meanwhile" — it restated a rundown item'); delete s.meanwhile; }
   }
-  const aff = pickAffiliateRec(lang);
+  // Topical, rotating Gear rec (quality.mjs); falls back to the old first-review pick.
+  const aff = pickGearRec({ reviewsDir: REVIEWS_DIR, dailyDir: DAILY_OUT, lang, items, date: args.date || new Date().toISOString().slice(0, 10) }) || pickAffiliateRec(lang);
   const modelRecs = dedupeRecs(Array.isArray(lead?.recs) ? lead.recs : [], items);
   s.recs = [...modelRecs, ...(aff ? [aff] : [])];
   s.play = {
@@ -400,7 +404,9 @@ Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"...","blocki
 }
 
 // ---- YAML helper (JSON strings are valid YAML double-quoted scalars) -----
-const q = (s) => JSON.stringify(s ?? '');
+// Every string written to an issue passes the house-style scrub (quality.mjs):
+// no em dashes, never Fitt Insider's tagline. URLs are left untouched.
+const q = (s) => JSON.stringify(typeof s === 'string' ? noEmDash(stripPhrases(s)) : (s ?? ''));
 
 function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
   const lines = [
@@ -517,6 +523,23 @@ async function run() {
       });
       if (items.length < before) console.log(`  ⛔ ${lang.toUpperCase()} dropped ${before - items.length} OFF-BRAND item(s) — not fitness/wellness industry`);
     }
+    // QUALITY GUARD (quality.mjs): clickbait, Fitt's tagline and obituary spin get
+    // one rewrite from the source facts; if that fails, deterministic clean-up.
+    for (let i = 0; i < items.length; i++) {
+      const it = items[i];
+      const txt = `${it.headline || ''} ${it.dek || ''}`;
+      const src = sources.find((s2) => s2.id === it.sourceId);
+      const obit = isObituary(`${src?.topic || ''} ${txt}`);
+      const probs = phraseProblems(txt);
+      if (obit) items[i].conversion = 'list-growth';   // never tag a death with a product path
+      if (!probs.length && !obit) continue;
+      const critique = [...probs, ...(obit ? ['this is about a death: respectful and factual only, no business lesson, no advice, no joke'] : [])].join('; ');
+      const fixed = apiKey ? await repairItem(src, lang, critique) : null;
+      const next = fixed ? { ...items[i], ...fixed } : items[i];
+      next.headline = stripPhrases(next.headline); next.dek = stripPhrases(next.dek);
+      items[i] = next;
+      console.log(`  ✎ ${lang.toUpperCase()} quality rewrite item ${i + 1}: ${critique}`);
+    }
     const lead = await generateLead(items, lang);
     let sections = buildSections(lead, lang, items);     // model output + affiliate rec + Play (even in dry-run); items → rec dedup
     if (move) sections.move = move;               // feature the curated clip at the top of the Daily
@@ -552,6 +575,15 @@ async function run() {
       blocking = [];
     }
 
+    // LINK GUARD: replace Google News redirect links with the publisher's own URL.
+    {
+      const idx = items.map((it, k) => (isGoogleNews(it.readMore) ? k : -1)).filter((k) => k >= 0);
+      if (idx.length) {
+        const fixed = await resolveAll(idx.map((k) => items[k].readMore));
+        let n = 0; idx.forEach((k, j) => { if (fixed[j] !== items[k].readMore) { items[k].readMore = fixed[j]; n++; } });
+        console.log(`  🔗 ${lang.toUpperCase()} resolved ${n}/${idx.length} Google News link(s) to the publisher`);
+      }
+    }
     // SOURCE GUARDRAIL: a factual issue only ships items that trace to a live source link.
     {
       const before = items.length;

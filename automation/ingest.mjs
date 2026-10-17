@@ -14,6 +14,7 @@
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { resolveAll } from './quality.mjs';
 import { isOnBrand, OFFTOPIC_RX, FINANCE_OUTLETS_RX, primaryEntity, allEntities, WATCHLIST_RX, DEAL_RX } from './onbrand.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -520,6 +521,13 @@ async function run() {
     }
   }
 
+  // Readers get the publisher's URL, not a Google News redirect (EU readers hit a
+  // consent wall on those). The ledger keeps its own url field for dedupe.
+  {
+    const links = await resolveAll(ordered.map((p) => p.link));
+    let n = 0; ordered.forEach((p, i) => { if (links[i] && links[i] !== p.link) { p.link = links[i]; n++; } });
+    if (n) console.log(`🔗 resolved ${n} Google News link(s) to the publisher`);
+  }
   const sources = ordered.map((p, i) => ({
     id: `news-${date}-${i + 1}`,
     entity: p.outlet,

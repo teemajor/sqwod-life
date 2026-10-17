@@ -109,7 +109,7 @@ async function draft(topic, lang) {
   const langName = lang === 'de' ? 'German' : 'English';
   const data = topic.charts.slice(0, 6).map((c, i) =>
     `${i + 1}. "${c.title}" (${c.unit})\n   ${c.years.map((y, k) => `${y}: ${c.values[k]}`).join(' · ')}`).join('\n');
-  const prompt = `You are Sqwod Intelligence — strategic data journalism for the business of fitness & wellness, in ${langName}. Audience: coaches, studio founders, operators.
+  const prompt = `You are Sqwod Intelligence — strategic data journalism for the fitness & wellness industry, in ${langName}. Audience: coaches, studio founders, operators.
 
 Topic dataset (Statista, "${topic.name}"). These chart figures are the ONLY numbers you may use:
 ${data}

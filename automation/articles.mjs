@@ -67,7 +67,7 @@ async function authour(cluster, lang) {
   const list = cluster.map((c, i) => `${i + 1}. ${c.headline} (${c.outlet})`).join('\n');
   const prompt = `You are Sqwod's editor writing ${LANE_BRIEF[LANE]} in ${langName}.
 
-VOICE: emotion creates motion. Lead with the reader's problem, then the solution. Witty, specific, useful — Morning Brew for the business of fitness. Never corporate.
+VOICE: emotion creates motion. Lead with the reader's problem, then the solution. Witty, specific, useful — Morning Brew for the fitness industry. Never corporate.
 
 These are today's real, cited stories (the ONLY facts you may rely on):
 ${list}
