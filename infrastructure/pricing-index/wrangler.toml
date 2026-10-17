@@ -15,4 +15,4 @@ THROTTLE_SALT = "sqwod-pi-2026"        # salts the daily one-row-per-device hash
 [[d1_databases]]
 binding = "DB"
 database_name = "sqwod-pricing-index"
-database_id = "PASTE_D1_DATABASE_ID"
+database_id = "df585605-20e2-47bb-9ad4-e4ed8a423082"
