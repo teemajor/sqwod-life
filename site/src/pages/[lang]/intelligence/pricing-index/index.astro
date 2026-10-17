@@ -1,0 +1,490 @@
+---
+// Sqwod Coach Pricing Index: hub page + 5-step rate calculator.
+// US first, English only (plan: Sqwod Coach Pricing Index, 17 Oct 2026).
+// Numbers on this page come from two places only:
+//   1. BLS OEWS May 2025 (src/data/pricing-index/bls.json): employed trainer PAY.
+//   2. The index Worker (/stats), read at build time: what coaches CHARGE.
+// Never mix the two up in copy: BLS is pay, not a client rate.
+import Base from '../../../../layouts/Base.astro';
+import InlineSignup from '../../../../components/InlineSignup.astro';
+import bls from '../../../../data/pricing-index/bls.json';
+import { PRICING_INDEX, loadIndexStats } from '../../../../config/pricing-index';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }];
+}
+const lang = 'en' as const;
+const stats = await loadIndexStats();
+const nat = bls.national;
+const usd = (n: number) => '$' + n.toLocaleString('en-US', { maximumFractionDigits: n % 1 ? 2 : 0, minimumFractionDigits: n % 1 ? 2 : 0 });
+const built = new Date();
+const monthYear = built.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const stateList = Object.entries(bls.states).map(([code, s]) => ({ code, name: s.name })).sort((a, b) => a.name.localeCompare(b.name));
+const hasMedian = (stats.session.n ?? 0) >= PRICING_INDEX.minCell && stats.session.p50;
+const early = stats.n < 10; // launch phase: don't headline a tiny count
+const statesLive = Object.entries(stats.states).filter(([, s]) => (s.n ?? 0) >= PRICING_INDEX.minCell).length;
+
+const title = 'How Much Should You Charge? Personal Trainer Rates 2026 · Sqwod Coach Pricing Index';
+const description = 'Free personal trainer rate calculator. Find your floor rate, compare it with trainer pay in your state, and add your rate to the anonymous Sqwod Coach Pricing Index.';
+const url = 'https://sqwod.life/en/intelligence/pricing-index/';
+
+const faqs = [
+  { q: 'How much should I charge as a personal trainer?',
+    a: 'Start from your floor: the hourly rate that covers your business costs and your income goal at the hours you can really coach. The calculator above works it out in five steps. Then compare it with what other coaches charge, which is what the Sqwod Coach Pricing Index collects.' },
+  { q: 'How much do personal trainers make in the US?',
+    a: `Employed fitness trainers earned a median of ${usd(nat.medianAnnual)} a year (${usd(nat.medianHourly)} an hour) in May 2025, according to the U.S. Bureau of Labor Statistics. That is pay from an employer. Independent coaches set their own rates, and the BLS does not track those.` },
+  { q: 'Is the data I add anonymous?',
+    a: 'Yes. Saving is off unless you tick the box. We keep your state, how you coach, your setting, your rates, and your years and weekly hours as ranges. We never store your name, email, income goal or costs.' },
+  { q: 'When will rates for my state appear?',
+    a: `When ${PRICING_INDEX.minCell} coaches in your state have added their rates. Until then you see the national picture and BLS pay for your state. Every number we publish shows its sample size.` },
+  { q: 'Who runs the Sqwod Coach Pricing Index?',
+    a: 'Sqwod, the team behind sqwod.life and Sqwod Pod private training rooms in Berlin. We publish the index so coaches can price from real numbers instead of guesses.' },
+];
+
+const ORG_ID = 'https://sqwod.life/#organization';
+const ld = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Dataset',
+      '@id': url + '#dataset',
+      name: 'Sqwod Coach Pricing Index (US)',
+      description: 'Anonymous, self-reported rates from US personal trainers and fitness coaches: price of a 60-minute 1:1 session and monthly online coaching price, by state, coaching format and experience. Published as medians with sample sizes; a group publishes once it reaches 30 responses.',
+      url,
+      creator: { '@id': ORG_ID },
+      publisher: { '@id': ORG_ID },
+      isAccessibleForFree: true,
+      spatialCoverage: { '@type': 'Place', name: 'United States' },
+      temporalCoverage: '2026-10/..',
+      dateModified: built.toISOString().slice(0, 10),
+      variableMeasured: ['Price of a 60-minute 1:1 personal training session (USD)', 'Monthly online coaching price per client (USD)'],
+      isBasedOn: bls.sourceUrl,
+    },
+    {
+      '@type': 'WebApplication',
+      name: 'Personal trainer rate calculator',
+      url: url + '#calculator',
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Any',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@id': ORG_ID },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    },
+  ],
+};
+
+// Only what the browser needs.
+const clientData = {
+  endpoint: PRICING_INDEX.endpoint,
+  minPercentile: PRICING_INDEX.minPercentile,
+  early,
+  stats: { n: stats.n, session: stats.session, online: stats.online },
+  bls: Object.fromEntries(Object.entries(bls.states).map(([k, s]) => [k, [s.medianHourly, s.medianAnnual]])),
+};
+---
+<Base lang={lang} title={title} description={description} active="intelligence" altPath="/de/intelligence" monolingual>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(ld).replace(/</g, '\\u003c')} />
+
+  <header class="pi-head">
+    <p class="kick">Sqwod Coach Pricing Index · US · {monthYear}</p>
+    <h1>How much should you charge as a personal trainer?</h1>
+    <p class="pi-answer">
+      As of {monthYear}, employed US fitness trainers earn a median <b>{usd(nat.medianHourly)} an hour</b> ({usd(nat.medianAnnual)} a year, BLS May 2025).
+      {hasMedian
+        ? <>Independent coaches in the index charge a median <b>{usd(stats.session.p50!)}</b> for a 60-minute 1:1 session (n = {stats.session.n}).</>
+        : early
+          ? <>What independent coaches charge is what this index collects. It opened in October 2026: work out your floor below, then add your rate.</>
+          : <>What independent coaches charge is what this index collects: <b>{stats.n} rates so far</b>. Work out your floor below, then add yours.</>}
+    </p>
+  </header>
+
+  <section class="pi-calc" id="calculator" aria-label="Rate calculator">
+    <noscript><p class="sub">The calculator needs JavaScript. Everything else on this page works without it.</p></noscript>
+    <div class="pi-progress" aria-hidden="true"><i></i></div>
+    <p class="pi-step-label" aria-live="polite">Step <span class="pi-n">1</span> of 5</p>
+
+    <form class="pi-form" novalidate>
+      <!-- Step 1 -->
+      <fieldset class="pi-step" data-step="1">
+        <legend class="pi-h">Where and how you coach</legend>
+        <label class="pi-field"><span>State</span>
+          <select name="state" required>
+            <option value="">Choose your state</option>
+            {stateList.map((s) => <option value={s.code}>{s.name}</option>)}
+          </select>
+        </label>
+        <div class="pi-field"><span>How you coach</span>
+          <div class="pi-pills" role="radiogroup">
+            <label class="pi-pill"><input type="radio" name="format" value="in_person" required /><span>In person</span></label>
+            <label class="pi-pill"><input type="radio" name="format" value="online" /><span>Online</span></label>
+            <label class="pi-pill"><input type="radio" name="format" value="hybrid" /><span>Both</span></label>
+          </div>
+        </div>
+        <div class="pi-field"><span>Where you work</span>
+          <div class="pi-pills" role="radiogroup">
+            <label class="pi-pill"><input type="radio" name="setting" value="independent" required /><span>For myself</span></label>
+            <label class="pi-pill"><input type="radio" name="setting" value="gym" /><span>For a gym or studio</span></label>
+            <label class="pi-pill"><input type="radio" name="setting" value="both" /><span>Both</span></label>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Step 2 -->
+      <fieldset class="pi-step" data-step="2" hidden>
+        <legend class="pi-h">What you charge today</legend>
+        <label class="pi-field" data-show="session"><span>What a client pays for one 60-minute 1:1 session</span>
+          <div class="pi-money"><i>$</i><input type="number" name="session_rate" inputmode="decimal" min="1" max="1000" placeholder="80" /></div>
+        </label>
+        <label class="pi-field" data-show="online"><span>Your monthly price per online client</span>
+          <div class="pi-money"><i>$</i><input type="number" name="online_monthly" inputmode="decimal" min="1" max="5000" placeholder="200" /><b>/ month</b></div>
+        </label>
+      </fieldset>
+
+      <!-- Step 3 -->
+      <fieldset class="pi-step" data-step="3" hidden>
+        <legend class="pi-h">Your time</legend>
+        <div class="pi-field"><span>Years coaching</span>
+          <div class="pi-pills" role="radiogroup">
+            <label class="pi-pill"><input type="radio" name="years" value="lt1" required /><span>Under 1</span></label>
+            <label class="pi-pill"><input type="radio" name="years" value="1-2" /><span>1 to 2</span></label>
+            <label class="pi-pill"><input type="radio" name="years" value="3-5" /><span>3 to 5</span></label>
+            <label class="pi-pill"><input type="radio" name="years" value="6-10" /><span>6 to 10</span></label>
+            <label class="pi-pill"><input type="radio" name="years" value="10+" /><span>Over 10</span></label>
+          </div>
+        </div>
+        <label class="pi-field"><span>Hours a week you spend coaching or on client work</span>
+          <input type="number" name="hours" inputmode="numeric" min="1" max="80" placeholder="20" required />
+        </label>
+        <label class="pi-field"><span>Weeks off a year (holidays, sick days)</span>
+          <input type="number" name="weeks_off" inputmode="numeric" min="0" max="26" value="4" required />
+        </label>
+      </fieldset>
+
+      <!-- Step 4 -->
+      <fieldset class="pi-step" data-step="4" hidden>
+        <legend class="pi-h">Your goal</legend>
+        <label class="pi-field"><span>Income you want a year, before tax</span>
+          <div class="pi-money"><i>$</i><input type="number" name="goal" inputmode="numeric" min="1000" max="1000000" placeholder="60000" required /></div>
+        </label>
+        <label class="pi-field"><span>Business costs a month (gym fees or rent, insurance, software, education)</span>
+          <div class="pi-money"><i>$</i><input type="number" name="costs" inputmode="numeric" min="0" max="100000" placeholder="400" value="" /></div>
+        </label>
+        <p class="pi-fine">Your goal and costs stay in your browser. They are never sent anywhere.</p>
+      </fieldset>
+
+      <!-- Step 5: result -->
+      <div class="pi-step pi-result" data-step="5" hidden>
+        <p class="pi-h">Your numbers</p>
+        <div class="pi-floor">
+          <span class="pi-floor-label">Your floor</span>
+          <span class="pi-floor-num" data-out="floor">$0</span>
+          <span class="pi-floor-unit">per client hour, before tax</span>
+        </div>
+        <ul class="pi-lines">
+          <li data-out="compare" hidden></li>
+          <li data-out="clients" hidden></li>
+          <li data-out="bls"></li>
+          <li data-out="pct"></li>
+        </ul>
+
+        <div class="pi-contrib">
+          <label class="pi-check"><input type="checkbox" name="contribute" /><span><b>Add my numbers to the index, anonymously.</b> We save your state, format, setting, rates, and years and hours as ranges. Never your name, email, goal or costs.</span></label>
+          <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="pi-hp" />
+          <button type="button" class="cta pi-send" disabled>Add my rate</button>
+          <p class="pi-fine pi-send-msg" aria-live="polite"></p>
+        </div>
+
+        <InlineSignup lang={lang} source="pricing-index" role="coach" id="pi-signup"
+          head="Get the US pricing report free"
+          body="The first Sqwod Coach Pricing Report goes to subscribers first. You also get Sqwod Daily: five minutes on the business of fitness, every weekday." />
+
+        <button type="button" class="pi-restart">Start over</button>
+      </div>
+
+      <p class="pi-err" aria-live="assertive"></p>
+      <div class="pi-nav">
+        <button type="button" class="pi-back" hidden>Back</button>
+        <button type="button" class="cta pi-next">Next</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="block pi-sofar">
+    <h2>The index so far</h2>
+    <div class="pi-tiles">
+      {early
+        ? <div class="pi-tile"><b>New</b><span>opened October 2026, collecting rates now</span></div>
+        : <div class="pi-tile"><b>{stats.n}</b><span>coach rates collected</span></div>}
+      <div class="pi-tile"><b>{statesLive}</b><span>states with {PRICING_INDEX.minCell}+ rates</span></div>
+      <div class="pi-tile"><b>{usd(nat.medianHourly)}</b><span>median hourly pay, employed trainers (BLS)</span></div>
+    </div>
+    {hasMedian
+      ? <p class="sub">Median 60-minute 1:1 session: <b>{usd(stats.session.p50!)}</b>. Middle half of coaches: {usd(stats.session.p25!)} to {usd(stats.session.p75!)} (n = {stats.session.n}).</p>
+      : <p class="sub">Medians publish once a group reaches {PRICING_INDEX.minCell} rates. Percentiles in the calculator switch on at {PRICING_INDEX.minPercentile}.</p>}
+  </section>
+
+  <section class="block">
+    <h2>How the index works</h2>
+    <div class="prose pi-method">
+      <p><b>Your floor</b> is your yearly income goal plus your yearly business costs, divided by the hours you can really bill: weekly client hours times the weeks you work. It is the lowest rate that still pays you what you set out to earn.</p>
+      <p><b>Coach rates</b> come from coaches who use the calculator and tick the box. We publish medians, never averages, so a few very high rates can't pull the number up. Every number shows how many rates it is based on, and a group publishes only once it reaches {PRICING_INDEX.minCell}.</p>
+      <p><b>Trainer pay</b> comes from the U.S. Bureau of Labor Statistics (OEWS, {bls.period}, occupation 39-9031). It measures what employers pay trainers, not what clients pay coaches, so we show it next to the rates and never as a rate.</p>
+      <p><b>Who answers:</b> coaches who find this page choose to take part, so the sample leans toward engaged coaches. Read the numbers as a guide, not a census.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Questions</h2>
+    <div class="pi-faq">
+      {faqs.map((f) => (
+        <details>
+          <summary>{f.q}</summary>
+          <p>{f.a}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <p class="pi-cite">Cite as: Sqwod Coach Pricing Index, sqwod.life, {monthYear}. Trainer pay: {bls.source}.</p>
+</Base>
+
+<script is:inline define:vars={{ PI: clientData }}>
+(function () {
+  var root = document.getElementById('calculator');
+  if (!root) return;
+  var form = root.querySelector('.pi-form');
+  var steps = [].slice.call(root.querySelectorAll('.pi-step'));
+  var bar = root.querySelector('.pi-progress i');
+  var label = root.querySelector('.pi-n');
+  var next = root.querySelector('.pi-next');
+  var back = root.querySelector('.pi-back');
+  var err = root.querySelector('.pi-err');
+  var started = Date.now();
+  var cur = 1;
+  var usd = function (n) { return '$' + Math.round(n).toLocaleString('en-US'); };
+  var usd2 = function (n) { return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); };
+  var val = function (name) { var el = form.elements[name]; return el ? (el.value || '').trim() : ''; };
+  var num = function (name) { var v = parseFloat(val(name)); return isFinite(v) ? v : NaN; };
+  var track = function (ev) { try { if (window.umami) window.umami.track(ev); } catch (e) {} };
+
+  function format() { return val('format'); }
+
+  function show(n) {
+    cur = n;
+    steps.forEach(function (s) { s.hidden = Number(s.dataset.step) !== n; });
+    bar.style.width = (n / 5 * 100) + '%';
+    label.textContent = n;
+    back.hidden = n === 1 || n === 5;
+    next.hidden = n === 5;
+    next.textContent = n === 4 ? 'See my numbers' : 'Next';
+    err.textContent = '';
+    if (n === 2) {
+      var f = format();
+      root.querySelector('[data-show="session"]').hidden = f === 'online';
+      root.querySelector('[data-show="online"]').hidden = f === 'in_person';
+    }
+    var first = steps[n - 1].querySelector('input:not([type=hidden]):not([tabindex="-1"]), select');
+    if (n > 1 && first) first.focus({ preventScroll: true });
+    if (n > 1) root.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function check(n) {
+    if (n === 1) {
+      if (!val('state')) return 'Choose your state.';
+      if (!val('format')) return 'Choose how you coach.';
+      if (!val('setting')) return 'Choose where you work.';
+    }
+    if (n === 2) {
+      var f = format();
+      if (f !== 'online' && !(num('session_rate') > 0)) return 'Add what a client pays for one session.';
+      if (f !== 'in_person' && !(num('online_monthly') > 0)) return 'Add your monthly online price.';
+    }
+    if (n === 3) {
+      if (!val('years')) return 'Choose how long you have been coaching.';
+      var h = num('hours'); if (!(h >= 1 && h <= 80)) return 'Hours a week should be between 1 and 80.';
+      var w = num('weeks_off'); if (!(w >= 0 && w <= 26)) return 'Weeks off should be between 0 and 26.';
+    }
+    if (n === 4) {
+      if (!(num('goal') >= 1000)) return 'Add the income you want a year.';
+      var c = num('costs'); if (val('costs') && !(c >= 0)) return 'Costs should be a number.';
+    }
+    return '';
+  }
+
+  // Percentile from published breakpoints, by straight-line interpolation.
+  function percentile(x, d) {
+    var pts = [[10, d.p10], [25, d.p25], [50, d.p50], [75, d.p75], [90, d.p90]];
+    if (x <= pts[0][1]) return { below: true };
+    if (x >= pts[4][1]) return { above: true };
+    for (var i = 0; i < 4; i++) {
+      var a = pts[i], b = pts[i + 1];
+      if (x <= b[1]) return { p: Math.round(a[0] + (b[0] - a[0]) * ((x - a[1]) / ((b[1] - a[1]) || 1))) };
+    }
+    return { above: true };
+  }
+
+  function result() {
+    var f = format();
+    var goal = num('goal');
+    var costs = num('costs'); if (!isFinite(costs)) costs = 0;
+    var target = goal + costs * 12;
+    var hours = num('hours') * (52 - num('weeks_off'));
+    var floor = target / hours;
+    root.querySelector('[data-out="floor"]').textContent = usd(floor);
+
+    var cmp = root.querySelector('[data-out="compare"]');
+    var rate = num('session_rate');
+    if (f !== 'online' && rate > 0) {
+      var diff = rate - floor;
+      cmp.hidden = false;
+      cmp.className = diff >= 0 ? 'ok' : 'low';
+      cmp.textContent = diff >= 0
+        ? 'You charge ' + usd(rate) + ' a session: ' + usd(diff) + ' above your floor.'
+        : 'You charge ' + usd(rate) + ' a session: ' + usd(-diff) + ' below your floor. At these hours, 1:1 sessions alone will not reach your goal.';
+    } else cmp.hidden = true;
+
+    var cl = root.querySelector('[data-out="clients"]');
+    var mo = num('online_monthly');
+    if (f !== 'in_person' && mo > 0) {
+      cl.hidden = false;
+      cl.textContent = 'At ' + usd(mo) + ' a month per online client, you need ' + Math.ceil(target / (mo * 12)) + ' clients to hit your goal' + (f === 'hybrid' ? ' if all your income came from online coaching.' : '.');
+    } else cl.hidden = true;
+
+    var st = form.elements.state;
+    var b = PI.bls[val('state')];
+    root.querySelector('[data-out="bls"]').textContent = b
+      ? 'Employed trainers in ' + st.options[st.selectedIndex].text + ' earn a median ' + usd2(b[0]) + ' an hour (' + usd(b[1]) + ' a year, BLS May 2025). That is pay from an employer, not a client rate.'
+      : '';
+
+    var pc = root.querySelector('[data-out="pct"]');
+    var s = PI.stats.session, o = PI.stats.online;
+    var useOnline = f === 'online';
+    var d = useOnline ? o : s, x = useOnline ? mo : rate;
+    if (d && d.n >= PI.minPercentile && d.p50 && x > 0) {
+      var r = percentile(x, d);
+      var what = useOnline ? 'monthly online price' : 'session rate';
+      pc.textContent = r.below ? 'Your ' + what + ' is below 9 in 10 coaches in the index (n = ' + d.n + ').'
+        : r.above ? 'Your ' + what + ' is above 9 in 10 coaches in the index (n = ' + d.n + ').'
+        : 'Your ' + what + ' sits around the ' + r.p + 'th percentile of coaches in the index (n = ' + d.n + ').';
+    } else {
+      pc.textContent = 'Your percentile switches on at ' + PI.minPercentile + ' rates. ' + (PI.early ? 'The index opened this month.' : 'The index has ' + PI.stats.n + ' so far.') + ' Add yours below.';
+    }
+    track('pricing-index-complete');
+  }
+
+  next.addEventListener('click', function () {
+    var m = check(cur);
+    if (m) { err.textContent = m; return; }
+    if (cur === 4) { result(); }
+    show(cur + 1);
+  });
+  back.addEventListener('click', function () { show(cur - 1); });
+  root.querySelector('.pi-restart').addEventListener('click', function () { form.reset(); send.disabled = true; msg.textContent = ''; send.hidden = false; show(1); });
+  form.addEventListener('submit', function (e) { e.preventDefault(); next.click(); });
+  form.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && e.target.tagName === 'INPUT' && e.target.type !== 'checkbox' && !e.target.closest('.isu')) { e.preventDefault(); next.click(); }
+  });
+
+  // Contribute: only when the box is ticked, only these fields.
+  var box = form.elements.contribute, send = root.querySelector('.pi-send'), msg = root.querySelector('.pi-send-msg');
+  box.addEventListener('change', function () { send.disabled = !box.checked; });
+  function band(h) { return h < 10 ? 'lt10' : h < 20 ? '10-19' : h < 30 ? '20-29' : '30+'; }
+  send.addEventListener('click', function () {
+    if (!box.checked) return;
+    send.disabled = true; msg.textContent = 'Sending…';
+    var f = format();
+    var body = {
+      state: val('state'), format: f, setting: val('setting'), years: val('years'), hours: band(num('hours')),
+      session_rate: f === 'online' ? null : num('session_rate'),
+      online_monthly: f === 'in_person' ? null : num('online_monthly'),
+      company: val('company'), ts: started,
+    };
+    fetch(PI.endpoint + '/contribute', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) })
+      .then(function (r) { return r.json().catch(function () { return {}; }).then(function (d) { return { ok: r.ok, d: d }; }); })
+      .then(function (res) {
+        if (res.ok && res.d.ok) {
+          msg.textContent = res.d.dup ? 'You already added a rate today. Thanks.' : 'Added. Thank you: your rate is now part of the index.';
+          send.hidden = true; track('pricing-index-contribute');
+        } else { msg.textContent = 'That did not go through. Please try again later.'; send.disabled = false; }
+      })
+      .catch(function () { msg.textContent = 'That did not go through. Please try again later.'; send.disabled = false; });
+  });
+
+  show(1);
+})();
+</script>
+
+<style>
+  .pi-head{padding:28px 0 8px;max-width:760px}
+  .pi-head h1{font-size:clamp(30px,5vw,46px);margin:0 0 14px}
+  .pi-answer{font-size:17px;line-height:1.55;color:var(--g1);margin:0;max-width:62ch}
+  .pi-answer b{color:var(--chalk)}
+
+  .pi-calc{margin:24px 0 8px;border:1px solid var(--line);border-radius:18px;background:var(--panel);padding:24px;max-width:760px;scroll-margin-top:16px}
+  .pi-progress{height:4px;border-radius:99px;background:var(--line);overflow:hidden}
+  .pi-progress i{display:block;height:100%;width:20%;background:var(--accent);border-radius:99px;transition:width .3s ease}
+  .pi-step-label{font-family:var(--mono);font-size:12px;color:var(--g3);margin:10px 0 4px;letter-spacing:.04em}
+  .pi-step{border:0;margin:0;padding:0;min-width:0}
+  .pi-h{font-size:22px;font-weight:700;letter-spacing:-.01em;margin:0 0 18px;padding:0}
+  .pi-field{display:flex;flex-direction:column;gap:8px;margin:0 0 18px}
+  .pi-field>span{font-size:14px;color:var(--g2)}
+  .pi-field[hidden]{display:none}
+  .pi-calc select,.pi-calc input[type=number]{min-height:48px;box-sizing:border-box;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:0 14px;color:var(--chalk);font:inherit;font-size:16px;width:100%;max-width:360px}
+  .pi-calc select:focus,.pi-calc input[type=number]:focus{outline:none;border-color:var(--accent)}
+  .pi-money{display:flex;align-items:center;gap:8px;max-width:360px}
+  .pi-money i{font-style:normal;font-family:var(--mono);color:var(--g3)}
+  .pi-money b{font-weight:400;font-size:14px;color:var(--g3);white-space:nowrap}
+  .pi-pills{display:flex;flex-wrap:wrap;gap:8px}
+  .pi-pill{position:relative;cursor:pointer}
+  .pi-pill input{position:absolute;opacity:0;width:1px;height:1px}
+  .pi-pill span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--chalk);background:var(--bg)}
+  .pi-pill:hover span{border-color:var(--g3)}
+  .pi-pill input:checked+span{background:var(--chalk);color:var(--ink);border-color:var(--chalk);font-weight:700}
+  .pi-pill input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+  .pi-fine{font-size:12.5px;color:var(--g3);margin:0;line-height:1.5}
+  .pi-err{color:var(--chalk);font-size:14px;margin:0;min-height:1em}
+  .pi-err:not(:empty){margin:4px 0 8px;padding-left:10px;border-left:2px solid var(--chalk)}
+  .pi-nav{display:flex;gap:10px;justify-content:flex-end;margin-top:8px}
+  .pi-nav .cta,.pi-back{min-height:48px;padding:0 22px;font-size:14px;border-radius:12px;cursor:pointer}
+  .pi-next{border:0}
+  .pi-back,.pi-restart{background:none;border:1px solid var(--line);color:var(--chalk);font:inherit;font-size:14px;font-weight:600}
+  .pi-restart{margin-top:6px;min-height:44px;padding:0 18px;border-radius:12px;cursor:pointer}
+
+  .pi-floor{display:flex;flex-direction:column;gap:4px;padding:20px;border-radius:14px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+  .pi-floor-label{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g2)}
+  .pi-floor-num{font-family:var(--mono);font-size:clamp(40px,8vw,56px);font-weight:600;letter-spacing:-.03em;line-height:1.05;color:var(--chalk)}
+  .pi-floor-unit{font-size:14px;color:var(--g2)}
+  .pi-lines{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .pi-lines li{font-size:15px;line-height:1.5;color:var(--g1);padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+  .pi-lines li[hidden]{display:none}
+  .pi-lines li.ok{border-color:var(--accent-line)}
+  .pi-lines li.low{border-color:var(--chalk)}
+  .pi-contrib{margin:18px 0 0;padding:16px;border:1px dashed var(--g4);border-radius:14px;display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+  .pi-check{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.5;color:var(--g1);cursor:pointer}
+  .pi-check input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--accent);flex:none}
+  .pi-send{border:0;min-height:44px;padding:0 18px;cursor:pointer}
+  .pi-send:disabled{opacity:.45;cursor:not-allowed}
+  .pi-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+
+  .pi-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 14px}
+  .pi-tile{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:16px;display:flex;flex-direction:column;gap:4px}
+  .pi-tile b{font-family:var(--mono);font-size:28px;font-weight:600;letter-spacing:-.02em}
+  .pi-tile span{font-size:13px;color:var(--g2);line-height:1.4}
+  .pi-method{max-width:68ch}
+  .pi-faq{max-width:760px}
+  .pi-faq details{border-bottom:1px solid var(--line);padding:14px 0}
+  .pi-faq summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+  .pi-faq summary::after{content:'+';font-family:var(--mono);color:var(--g3)}
+  .pi-faq details[open] summary::after{content:'–'}
+  .pi-faq p{color:var(--g1);line-height:1.6;margin:10px 0 0}
+  .pi-cite{font-size:12px;color:var(--g3);margin:22px 0 8px;line-height:1.6;max-width:90ch}
+
+  @media (max-width:600px){
+    .pi-calc{padding:18px 14px;border-radius:16px}
+    .pi-tiles{grid-template-columns:1fr}
+    .pi-nav .cta{flex:1}
+  }
+</style>

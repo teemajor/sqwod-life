@@ -7,8 +7,8 @@
 import { SUBSCRIBE } from '../config/subscribe';
 import type { Lang } from '../i18n/ui';
 
-interface Props { lang: Lang; source: string; variant?: 'default' | 'daily'; id?: string; head?: string; body?: string }
-const { lang, source, variant = 'default', id, head, body } = Astro.props;
+interface Props { lang: Lang; source: string; variant?: 'default' | 'daily'; id?: string; head?: string; body?: string; role?: string }
+const { lang, source, variant = 'default', id, head, body, role } = Astro.props;
 const de = lang === 'de';
 
 const base = variant === 'daily'
@@ -44,7 +44,7 @@ const groupId = `role-${source}`;
         <legend class="isu-legend">{T.iam}</legend>
         <div class="isu-pills">
           {roles.map(([v, label]) => (
-            <label class="isu-pill"><input type="radio" name="role" value={v} /><span>{label}</span></label>
+            <label class="isu-pill"><input type="radio" name="role" value={v} checked={v === role} /><span>{label}</span></label>
           ))}
         </div>
       </fieldset>

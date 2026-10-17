@@ -1,0 +1,274 @@
+{
+ "source": "U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics (OEWS), May 2025, SOC 39-9031 Exercise Trainers and Group Fitness Instructors",
+ "sourceUrl": "https://www.bls.gov/oes/current/oes399031.htm",
+ "period": "May 2025",
+ "published": "2026-05-15",
+ "note": "Pay of employed trainers, not the rate clients pay. State medians copied via wagedex.com from the same release; replace with a direct BLS API pull once a BLS key is set. State hourly = annual / 2080.",
+ "national": {
+  "employment": 322930,
+  "medianHourly": 22.67,
+  "medianAnnual": 47160,
+  "meanAnnual": 52420,
+  "p10Annual": 28800,
+  "p25Annual": 35280,
+  "p75Annual": 61730,
+  "p90Annual": 83100
+ },
+ "states": {
+  "AK": {
+   "name": "Alaska",
+   "medianAnnual": 46210,
+   "medianHourly": 22.22
+  },
+  "AL": {
+   "name": "Alabama",
+   "medianAnnual": 39180,
+   "medianHourly": 18.84
+  },
+  "AR": {
+   "name": "Arkansas",
+   "medianAnnual": 42140,
+   "medianHourly": 20.26
+  },
+  "AZ": {
+   "name": "Arizona",
+   "medianAnnual": 47980,
+   "medianHourly": 23.07
+  },
+  "CA": {
+   "name": "California",
+   "medianAnnual": 57990,
+   "medianHourly": 27.88
+  },
+  "CO": {
+   "name": "Colorado",
+   "medianAnnual": 49900,
+   "medianHourly": 23.99
+  },
+  "CT": {
+   "name": "Connecticut",
+   "medianAnnual": 61580,
+   "medianHourly": 29.61
+  },
+  "DC": {
+   "name": "District of Columbia",
+   "medianAnnual": 39210,
+   "medianHourly": 18.85
+  },
+  "DE": {
+   "name": "Delaware",
+   "medianAnnual": 44340,
+   "medianHourly": 21.32
+  },
+  "FL": {
+   "name": "Florida",
+   "medianAnnual": 38800,
+   "medianHourly": 18.65
+  },
+  "GA": {
+   "name": "Georgia",
+   "medianAnnual": 47150,
+   "medianHourly": 22.67
+  },
+  "HI": {
+   "name": "Hawaii",
+   "medianAnnual": 48290,
+   "medianHourly": 23.22
+  },
+  "IA": {
+   "name": "Iowa",
+   "medianAnnual": 36160,
+   "medianHourly": 17.38
+  },
+  "ID": {
+   "name": "Idaho",
+   "medianAnnual": 49780,
+   "medianHourly": 23.93
+  },
+  "IL": {
+   "name": "Illinois",
+   "medianAnnual": 46800,
+   "medianHourly": 22.5
+  },
+  "IN": {
+   "name": "Indiana",
+   "medianAnnual": 34960,
+   "medianHourly": 16.81
+  },
+  "KS": {
+   "name": "Kansas",
+   "medianAnnual": 35900,
+   "medianHourly": 17.26
+  },
+  "KY": {
+   "name": "Kentucky",
+   "medianAnnual": 45280,
+   "medianHourly": 21.77
+  },
+  "LA": {
+   "name": "Louisiana",
+   "medianAnnual": 44410,
+   "medianHourly": 21.35
+  },
+  "MA": {
+   "name": "Massachusetts",
+   "medianAnnual": 64620,
+   "medianHourly": 31.07
+  },
+  "MD": {
+   "name": "Maryland",
+   "medianAnnual": 47420,
+   "medianHourly": 22.8
+  },
+  "ME": {
+   "name": "Maine",
+   "medianAnnual": 47060,
+   "medianHourly": 22.62
+  },
+  "MI": {
+   "name": "Michigan",
+   "medianAnnual": 45520,
+   "medianHourly": 21.88
+  },
+  "MN": {
+   "name": "Minnesota",
+   "medianAnnual": 43620,
+   "medianHourly": 20.97
+  },
+  "MO": {
+   "name": "Missouri",
+   "medianAnnual": 36450,
+   "medianHourly": 17.52
+  },
+  "MS": {
+   "name": "Mississippi",
+   "medianAnnual": 30540,
+   "medianHourly": 14.68
+  },
+  "MT": {
+   "name": "Montana",
+   "medianAnnual": 43940,
+   "medianHourly": 21.12
+  },
+  "NC": {
+   "name": "North Carolina",
+   "medianAnnual": 46450,
+   "medianHourly": 22.33
+  },
+  "ND": {
+   "name": "North Dakota",
+   "medianAnnual": 37760,
+   "medianHourly": 18.15
+  },
+  "NE": {
+   "name": "Nebraska",
+   "medianAnnual": 31440,
+   "medianHourly": 15.12
+  },
+  "NH": {
+   "name": "New Hampshire",
+   "medianAnnual": 49360,
+   "medianHourly": 23.73
+  },
+  "NJ": {
+   "name": "New Jersey",
+   "medianAnnual": 59870,
+   "medianHourly": 28.78
+  },
+  "NM": {
+   "name": "New Mexico",
+   "medianAnnual": 44680,
+   "medianHourly": 21.48
+  },
+  "NV": {
+   "name": "Nevada",
+   "medianAnnual": 57960,
+   "medianHourly": 27.87
+  },
+  "NY": {
+   "name": "New York",
+   "medianAnnual": 47090,
+   "medianHourly": 22.64
+  },
+  "OH": {
+   "name": "Ohio",
+   "medianAnnual": 36370,
+   "medianHourly": 17.49
+  },
+  "OK": {
+   "name": "Oklahoma",
+   "medianAnnual": 44520,
+   "medianHourly": 21.4
+  },
+  "OR": {
+   "name": "Oregon",
+   "medianAnnual": 58510,
+   "medianHourly": 28.13
+  },
+  "PA": {
+   "name": "Pennsylvania",
+   "medianAnnual": 45250,
+   "medianHourly": 21.75
+  },
+  "RI": {
+   "name": "Rhode Island",
+   "medianAnnual": 45640,
+   "medianHourly": 21.94
+  },
+  "SC": {
+   "name": "South Carolina",
+   "medianAnnual": 43630,
+   "medianHourly": 20.98
+  },
+  "SD": {
+   "name": "South Dakota",
+   "medianAnnual": 40070,
+   "medianHourly": 19.26
+  },
+  "TN": {
+   "name": "Tennessee",
+   "medianAnnual": 47380,
+   "medianHourly": 22.78
+  },
+  "TX": {
+   "name": "Texas",
+   "medianAnnual": 40880,
+   "medianHourly": 19.65
+  },
+  "UT": {
+   "name": "Utah",
+   "medianAnnual": 44800,
+   "medianHourly": 21.54
+  },
+  "VA": {
+   "name": "Virginia",
+   "medianAnnual": 40820,
+   "medianHourly": 19.62
+  },
+  "VT": {
+   "name": "Vermont",
+   "medianAnnual": 57300,
+   "medianHourly": 27.55
+  },
+  "WA": {
+   "name": "Washington",
+   "medianAnnual": 50830,
+   "medianHourly": 24.44
+  },
+  "WI": {
+   "name": "Wisconsin",
+   "medianAnnual": 44200,
+   "medianHourly": 21.25
+  },
+  "WV": {
+   "name": "West Virginia",
+   "medianAnnual": 38120,
+   "medianHourly": 18.33
+  },
+  "WY": {
+   "name": "Wyoming",
+   "medianAnnual": 50250,
+   "medianHourly": 24.16
+  }
+ }
+}

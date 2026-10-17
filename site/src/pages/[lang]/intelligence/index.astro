@@ -23,6 +23,17 @@ const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB',
   <h1>Sqwod Intelligence</h1>
   <p class="sub">{blurb}</p>
 
+  {lang === 'en' && (
+    <a class="card pi-promo" style="grid-template-columns:1fr;margin-top:18px;border-color:var(--accent-line)" href="/en/intelligence/pricing-index/" data-umami-event="pricing-index-promo">
+      <div class="info">
+        <span class="bestfor">New · Free tool · US</span>
+        <h3>Sqwod Coach Pricing Index</h3>
+        <div class="meta">How much should you charge? Work out your floor rate in five steps, see trainer pay in your state, and add your rate anonymously.</div>
+        <span class="cardcta">Open the calculator →</span>
+      </div>
+    </a>
+  )}
+
   <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
     {reports.length === 0 && <p class="sub">{lang==='de'?'Bald verfügbar.':'Coming soon.'}</p>}
     <div class="grid cols2">

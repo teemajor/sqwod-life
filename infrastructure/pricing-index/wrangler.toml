@@ -1,0 +1,18 @@
+name = "sqwod-pricing-index"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+# Public vars (non-secret).
+[vars]
+ALLOW_ORIGIN  = "https://sqwod.life"   # only the live site may post rates
+MIN_FILL_MS   = "8000"                 # reject calculator runs faster than 8s
+MIN_CELL      = "30"                   # medians publish only for groups of 30+
+THROTTLE_SALT = "sqwod-pi-2026"        # salts the daily one-row-per-device hash
+
+# Anonymous rate rows. Create once in the Cloudflare dashboard:
+#   Storage & Databases > D1 > Create > name "sqwod-pricing-index"
+# then paste its Database ID below. Tables are created by the Worker itself.
+[[d1_databases]]
+binding = "DB"
+database_name = "sqwod-pricing-index"
+database_id = "PASTE_D1_DATABASE_ID"
