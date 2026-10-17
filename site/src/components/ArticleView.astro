@@ -4,6 +4,7 @@ import { LANES, pillarMeta, type Pillar } from '../i18n/pillars';
 import ArticleHero from './ArticleHero.astro';
 import ShareBar from './ShareBar.astro';
 import BenchmarkWidget from './BenchmarkWidget.astro';
+import InlineSignup from './InlineSignup.astro';
 import { SUBSCRIBE } from '../config/subscribe';
 import type { CollectionEntry } from 'astro:content';
 import type { RelatedItem } from '../lib/related';
@@ -135,6 +136,8 @@ const shareCfg = {
   </section>
 )}
 
+{!locked && <InlineSignup lang={lang} source="article-top" />}
+
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
     <div class="figs-head">
@@ -254,6 +257,8 @@ const shareCfg = {
     </section>
   )}
 </div>
+
+{!locked && <InlineSignup lang={lang} source="article-end" />}
 
 {locked && (
   <div class="unlock" id="unlock">

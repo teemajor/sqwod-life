@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
 import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../../config/podcast';
+import InlineSignup from '../../../components/InlineSignup.astro';
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
 
@@ -38,10 +39,12 @@ const RSS_URL = rssFor(lang);
         {APPLE_URL !== '#' && <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
         {SPOTIFY_URL !== '#' && <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>}
         <a class="lp" href={RSS_URL} target="_blank" rel="noopener">RSS</a>
-        <a class="lp sub-cta" href={`/${lang}/subscribe`}>{lang==='de'?'Per E-Mail':'By email'}</a>
+        <a class="lp sub-cta" href="#daily-signup">{lang==='de'?'Per E-Mail':'By email'}</a>
       </div>
     </div>
   </div>
+
+  <InlineSignup lang={lang} source="daily-hub" variant="daily" id="daily-signup" />
 
   <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
     <p class="kick">{lang==='de'?'Alle Folgen':'All episodes'}</p>

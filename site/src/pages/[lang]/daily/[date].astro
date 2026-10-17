@@ -5,6 +5,7 @@ import { type Lang } from '../../../i18n/ui';
 import { pillarMeta } from '../../../i18n/pillars';
 import { APPLE_URL, SPOTIFY_URL, rssFor, episodeAudio } from '../../../config/podcast';
 import ShareBar from '../../../components/ShareBar.astro';
+import InlineSignup from '../../../components/InlineSignup.astro';
 import { existsSync } from 'node:fs';
 import { dailyIsFresh } from '../../../config/seo.mjs';
 import { join } from 'node:path';
@@ -177,12 +178,8 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
     </aside>
   )}
 
-  <!-- THE ONE ASK: subscribe -->
-  <section class="subcard">
-    <h2>{tx.subH}</h2>
-    <p>{tx.subP}</p>
-    <a class="cta" href={`/${lang}/subscribe`}>{tx.subBtn}</a>
-  </section>
+  <!-- THE ONE ASK: subscribe, inline (no extra click to /subscribe) -->
+  <InlineSignup lang={lang} source="daily-issue" variant="daily" />
 
   <!-- QUIET PROVENANCE -->
   {sources.length > 0 && (

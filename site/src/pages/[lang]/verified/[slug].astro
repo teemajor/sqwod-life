@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import TestStatus from '../../../components/TestStatus.astro';
 import ScoreBadge from '../../../components/ScoreBadge.astro';
 import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
+import InlineSignup from '../../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
 import { categories } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
@@ -157,6 +158,8 @@ const faqLd = {
       </section>
 
       <section class="block prose"><Content /></section>
+
+      <InlineSignup lang={lang} source="review-end" />
 
       <section class="block" style="border-bottom:none">
         <p class="kick">{lang==='de'?'Transparenz':'Transparency'}</p>

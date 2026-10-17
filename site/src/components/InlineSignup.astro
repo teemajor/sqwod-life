@@ -1,0 +1,91 @@
+---
+// Inline newsletter sign-up with a role picker. Posts straight to the subscribe
+// Worker (double opt-in), so it works with JS off; the Worker redirects to
+// /[lang]/subscribe?status=pending. `source` becomes the contact's
+// signup_source and `role` its role property, which is how sponsors can later
+// buy a segment (coaches vs studio owners vs brands).
+import { SUBSCRIBE } from '../config/subscribe';
+import type { Lang } from '../i18n/ui';
+
+interface Props { lang: Lang; source: string; variant?: 'default' | 'daily'; id?: string }
+const { lang, source, variant = 'default', id } = Astro.props;
+const de = lang === 'de';
+
+const copy = variant === 'daily'
+  ? (de
+    ? { head: 'Bekomm Sqwod Daily in dein Postfach', body: 'Fünf Minuten, jeden Werktag. Was sich in der Branche bewegt hat und was es für dich heißt. Kostenlos.' }
+    : { head: 'Get Sqwod Daily in your inbox', body: 'Five minutes, every weekday. What moved in the industry, and what it means for you. Free.' })
+  : (de
+    ? { head: 'In 5 Minuten am Tag schärfer', body: 'Sqwod Daily: was sich im Fitness-Business bewegt hat und was du daraus machst. Werktäglich, kostenlos.' }
+    : { head: 'Get sharper in 5 minutes a day', body: 'Sqwod Daily: what moved in the business of fitness, and what to do about it. Every weekday, free.' });
+
+const roles = de
+  ? [['coach', 'Coach oder PT'], ['studio', 'Studio- oder Gym-Inhaber:in'], ['brand', 'Marke oder Gründer:in'], ['creator', 'Creator']]
+  : [['coach', 'Coach or PT'], ['studio', 'Studio or gym owner'], ['brand', 'Brand or founder'], ['creator', 'Creator']];
+
+const T = de
+  ? { iam: 'Ich bin', ph: 'E-Mail-Adresse', btn: 'Kostenlos abonnieren', fine: 'Wir schicken dir einmal eine Bestätigungs-Mail. Abmeldung jederzeit mit einem Klick.', privacy: 'Datenschutz', soon: 'Anmeldung bald verfügbar.' }
+  : { iam: 'I am a', ph: 'Email address', btn: 'Subscribe free', fine: 'We email you once to confirm. Unsubscribe anytime in one click.', privacy: 'Privacy', soon: 'Sign-up opens soon.' };
+
+const groupId = `role-${source}`;
+---
+<section class="isu" id={id} aria-labelledby={`${groupId}-h`}>
+  <h2 class="isu-h" id={`${groupId}-h`}>{copy.head}</h2>
+  <p class="isu-p">{copy.body}</p>
+  {SUBSCRIBE.endpoint ? (
+    <form class="isu-form" method="post" action={SUBSCRIBE.endpoint}>
+      <input type="hidden" name="lang" value={lang} />
+      <input type="hidden" name="source" value={source} />
+      <input type="hidden" name="ts" class="sb-ts" value="" />
+      <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="isu-hp" />
+      <fieldset class="isu-roles">
+        <legend class="isu-legend">{T.iam}</legend>
+        <div class="isu-pills">
+          {roles.map(([v, label]) => (
+            <label class="isu-pill"><input type="radio" name="role" value={v} /><span>{label}</span></label>
+          ))}
+        </div>
+      </fieldset>
+      <div class="isu-row">
+        <input type="email" name="email" required autocomplete="email" placeholder={T.ph} aria-label={T.ph} />
+        <button class="cta isu-btn" type="submit" data-umami-event="subscribe" data-umami-event-where={source}>{T.btn}</button>
+      </div>
+      <p class="isu-fine">{T.fine} <a href={`/${lang}/datenschutz`}>{T.privacy}</a></p>
+    </form>
+  ) : (
+    <p class="isu-fine">{T.soon}</p>
+  )}
+</section>
+
+<script is:inline>
+  // Time-on-form stamp for the Worker's bot check (prerendered page, so it runs
+  // client-side). Safe to run more than once per page.
+  document.querySelectorAll('.sb-ts').forEach(function (el) { if (!el.value) el.value = String(Date.now()); });
+</script>
+
+<style>
+  .isu{margin:28px 0;border:1px solid var(--line);border-radius:16px;padding:24px;background:var(--panel)}
+  .isu-h{font-size:21px;letter-spacing:-.01em;margin:0 0 6px;line-height:1.25}
+  .isu-p{color:var(--g2);margin:0 0 16px;line-height:1.55;max-width:56ch}
+  .isu-form{display:flex;flex-direction:column;gap:14px}
+  .isu-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .isu-roles{border:0;margin:0;padding:0;min-width:0}
+  .isu-legend{font-size:13px;color:var(--g2);padding:0;margin:0 0 8px}
+  .isu-pills{display:flex;flex-wrap:wrap;gap:8px}
+  .isu-pill{position:relative;cursor:pointer}
+  .isu-pill input{position:absolute;opacity:0;width:1px;height:1px}
+  .isu-pill span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--line);border-radius:999px;font-size:14px;color:var(--chalk)}
+  .isu-pill:hover span{border-color:var(--g3)}
+  .isu-pill input:checked + span{background:var(--chalk);color:var(--ink);border-color:var(--chalk);font-weight:700}
+  .isu-pill input:focus-visible + span{outline:2px solid var(--chalk);outline-offset:2px}
+  .isu-row{display:flex;gap:8px;flex-wrap:wrap}
+  .isu-row input{flex:1 1 240px;min-width:0;min-height:48px;box-sizing:border-box;background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:0 18px;color:var(--chalk);font:inherit;font-size:16px}
+  .isu-row input:focus{outline:none;border-color:var(--chalk)}
+  .isu-btn{min-height:48px;padding:0 22px;font-size:14px;border:0;cursor:pointer;border-radius:999px}
+  .isu-fine{font-size:12.5px;color:var(--g3);margin:0;line-height:1.5}
+  .isu-fine a{color:var(--g2)}
+  @media (max-width:560px){
+    .isu{padding:20px 16px}
+    .isu-btn{width:100%}
+  }
+</style>

@@ -7,7 +7,8 @@
  * it doesn't own never lands on the list.
  *
  * Routes:
- *   POST /subscribe   ← email + lang (form-encoded OR JSON). Runs bot checks,
+ *   POST /subscribe   ← email + lang (+ optional role: coach|studio|brand|creator)
+ *                       (form-encoded OR JSON). Runs bot checks,
  *                       emails a confirmation link, redirects to ?status=pending.
  *   GET  /confirm?t=… ← verifies the token, creates the contact in the matching
  *                       segment with locale/signup_source/confirmed_at, then
@@ -35,6 +36,11 @@ const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 const MAX_EMAIL = 254;
 const RATE_MAX = 5;            // sign-ups allowed per IP…
 const RATE_WINDOW = 3600;      // …per this many seconds
+
+// Self-reported audience segment from the role picker. Anything else is stored
+// as 'unknown' so a crafted POST can't write arbitrary values to Resend.
+const ROLES = new Set(['coach', 'studio', 'brand', 'creator']);
+const cleanRole = (v) => { const r = (v || '').toString().trim().toLowerCase(); return ROLES.has(r) ? r : ''; };
 
 // Throwaway-inbox domains. Not exhaustive by design — the confirmation step is
 // the real gate; this just avoids burning sends on known junk.
@@ -103,7 +109,7 @@ async function subscribe(req, env) {
   const ct = req.headers.get('content-type') || '';
   const wantsJson = ct.includes('application/json');
 
-  let email = '', lang = 'en', hp = '', source = '', ts = 0;
+  let email = '', lang = 'en', hp = '', source = '', ts = 0, role = '';
   if (wantsJson) {
     const b = await req.json().catch(() => ({}));
     email = (b.email || '').toString().trim().toLowerCase();
@@ -111,6 +117,7 @@ async function subscribe(req, env) {
     hp = (b.company || '').toString();
     source = (b.source || '').toString().slice(0, 60);
     ts = parseInt(b.ts, 10) || 0;
+    role = cleanRole(b.role);
   } else {
     const form = await req.formData();
     email = (form.get('email') || '').toString().trim().toLowerCase();
@@ -118,6 +125,7 @@ async function subscribe(req, env) {
     hp = (form.get('company') || '').toString();
     source = (form.get('source') || '').toString().slice(0, 60);
     ts = parseInt(form.get('ts'), 10) || 0;
+    role = cleanRole(form.get('role'));
   }
 
   const base = env.SITE_BASE || 'https://sqwod.life';
@@ -168,6 +176,7 @@ async function subscribe(req, env) {
     e: email,
     l: lang,
     s: source || 'site',
+    r: role,
     x: Date.now() + ttlHours * 3600 * 1000,
   }, env.CONFIRM_SECRET);
 
@@ -194,6 +203,7 @@ async function confirm(req, env, url) {
     properties: {
       locale: lang,
       signup_source: data.s || 'site',
+      role: cleanRole(data.r) || 'unknown',
       confirmed_at: new Date().toISOString(),
     },
   };
