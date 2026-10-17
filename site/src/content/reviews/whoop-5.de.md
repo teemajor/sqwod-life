@@ -57,7 +57,7 @@ asset:
   type: images
   images:
     - "https://images.ctfassets.net/rbzqg6pelgqa/5zNKZVJ7hwz2EXhfUR5O5X/e27764215d7fcec962fd96503060af10/Instrisic_Size_1250x694.png"
-  credit: "Produktbild: WHOOP"
+  credit: "Produktbild: WHOOP (aus dem gemeinsamen Launch von WHOOP 5.0 und MG; beide teilen dasselbe Gerätedesign)"
 tags: ["wearables", "recovery", "strain", "smart-band"]
 ---
 

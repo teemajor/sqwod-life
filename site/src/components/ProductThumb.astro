@@ -1,0 +1,23 @@
+---
+// Product photo tile for list views (category rankings, buyer's guides,
+// head-to-head pages). Shows the review's first product image on a white card,
+// the same treatment as the review page gallery, so brand pack shots read
+// cleanly in both themes. Editorial picks without a review fall back to the
+// category icon.
+import CategoryIcon from './CategoryIcon.astro';
+interface Props { src?: string; alt: string; size?: number; cat: string; eager?: boolean }
+const { src, alt, size = 96, cat, eager = false } = Astro.props;
+---
+{src ? (
+  <span class="pthumb" style={`--pt:${size}px`}>
+    <img src={src} alt={alt} loading={eager ? 'eager' : 'lazy'} decoding="async" referrerpolicy="no-referrer-when-downgrade" />
+  </span>
+) : (
+  <CategoryIcon cat={cat} size={Math.min(size, 56)} />
+)}
+
+<style>
+  .pthumb{display:inline-flex;align-items:center;justify-content:center;flex:none;width:var(--pt);height:var(--pt);
+    background:#fff;border-radius:12px;padding:6px;box-sizing:border-box;overflow:hidden}
+  .pthumb img{width:100%;height:100%;object-fit:contain;display:block}
+</style>

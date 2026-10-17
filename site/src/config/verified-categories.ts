@@ -171,7 +171,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Convenience greens', de: 'Greens für unterwegs' }, why: { en: 'Exhaustively tested greens powder — convenient, but premium-priced with thin evidence.', de: 'Ausführlich getestetes Greens-Pulver — praktisch, aber teuer und dünn belegt.' } },
       { product: 'waterdrop Microdrink', brand: 'waterdrop', url: 'https://www.waterdrop.com/', affiliate: true, reviewSlug: 'waterdrop-microdrink',
         bestFor: { en: 'Functional hydration', de: 'Funktionale Hydration' }, why: { en: 'Sugar-light flavor cubes that make drinking more water genuinely easy and sustainable.', de: 'Zuckerarme Geschmackswürfel, die mehr Trinken wirklich leicht und nachhaltig machen.' } },
-      { product: 'yfood Vital Drink', brand: 'yfood', url: 'https://www.yfood.eu/', affiliate: true, reviewSlug: 'yfood-vital-drink',
+      { product: 'yfood Ready-to-Drink Meal', brand: 'yfood', url: 'https://www.yfood.eu/', affiliate: true, reviewSlug: 'yfood-vital-drink',
         bestFor: { en: 'Complete-meal drink', de: 'Trinkmahlzeit' }, why: { en: 'Germany\'s category leader: 500 kcal, 33 g protein and 26 vitamins with genuinely good taste.', de: 'Deutschlands Kategorieführer: 500 kcal, 33 g Protein und 26 Vitamine bei wirklich gutem Geschmack.' } },
       { product: 'Barebells Protein Bar', brand: 'Barebells', url: 'https://barebells.de/', affiliate: true, reviewSlug: 'barebells-protein-bar',
         bestFor: { en: 'Protein snack', de: 'Protein-Snack' }, why: { en: 'The best-tasting mainstream protein bar — 20 g protein, no sugar alcohols, candy-bar texture.', de: 'Der bestschmeckende Mainstream-Proteinriegel — 20 g Protein, ohne Zuckeralkohole, Schoko-Riegel-Feeling.' } },

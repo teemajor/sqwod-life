@@ -58,7 +58,7 @@ whoFor:
 asset:
   type: images
   images:
-    - "https://nuoathletics.com/cdn/shop/files/NUOBELL_580_black_1.webp?v=1747741343&width=1200"
+    - "https://eu.nuoathletics.com/cdn/shop/files/Nuo_232_classic_1.webp?v=1747649999&width=1200"
   credit: "Product image: NÜOBELL"
 tags: ["home-gym", "strength", "dumbbell"]
 ---

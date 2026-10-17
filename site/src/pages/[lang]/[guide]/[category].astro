@@ -14,6 +14,7 @@
 import Base from '../../../layouts/Base.astro';
 import ScoreBadge from '../../../components/ScoreBadge.astro';
 import CategoryIcon from '../../../components/CategoryIcon.astro';
+import ProductThumb from '../../../components/ProductThumb.astro';
 import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../../i18n/ui';
 import { categories, byCategory } from '../../../config/verified-categories';
@@ -175,6 +176,7 @@ const tx = {
     <section class="block toppick">
       <p class="kick">{tx.topPick}</p>
       <div class="tp">
+        <ProductThumb src={top.r!.asset.images[0]} alt={top.r!.productName} cat={cat.slug} size={168} eager />
         <ScoreBadge score={top.r!.sqwodScore} size={104} />
         <div class="tp-body">
           <h2 style="margin:0 0 4px">{top.r!.productName}</h2>
@@ -209,7 +211,7 @@ const tx = {
           {scored.map(({ pick, r }, i) => (
             <tr>
               <td class="rank">{i + 1}</td>
-              <td><a href={`/${lang}/verified/${r!.urlSlug}/`}>{r!.productName}</a></td>
+              <td><a class="gl-prod" href={`/${lang}/verified/${r!.urlSlug}/`}><ProductThumb src={r!.asset.images[0]} alt="" cat={cat.slug} size={44} />{r!.productName}</a></td>
               <td>{pick.bestFor[lang]}</td>
               <td class="sc"><b>{r!.sqwodScore}</b></td>
               <td>
@@ -270,7 +272,10 @@ const tx = {
           <span class="num">#{i + 1}</span>
           <span class="tag">{pick.bestFor[lang]}</span>
         </div>
-        <h3>{r!.productName}</h3>
+        <div class="pick-title">
+          <ProductThumb src={r!.asset.images[0]} alt={r!.productName} cat={cat.slug} size={96} />
+          <h3>{r!.productName}</h3>
+        </div>
         <div class="pick-meta">
           <b>{r!.sqwodScore}/100</b>
           <span>Crowd {r!.crowd.score}</span>
@@ -346,6 +351,8 @@ const tx = {
     border:1px solid var(--line);border-radius:999px;padding:3px 9px}
   .verdict{margin:6px 0 12px}
   .tp-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+  .tp-cta{align-items:center}
+  .tp-cta a{display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box;padding-top:0;padding-bottom:0}
   .ghost{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:10px;font-size:13px;font-weight:600}
   .tablewrap{overflow-x:auto}
   table.glance{width:100%;min-width:560px;border-collapse:collapse;font-size:14px}
@@ -364,6 +371,9 @@ const tx = {
   .pick-head{display:flex;gap:10px;align-items:center;margin-bottom:6px}
   .num{font-size:11px;font-weight:800;color:var(--g4);letter-spacing:.08em}
   .pick h3{margin:0 0 6px}
+  .pick-title{display:flex;gap:14px;align-items:center;margin-bottom:6px}
+  .pick-title h3{margin:0}
+  .gl-prod{display:inline-flex;align-items:center;gap:10px}
   .pick-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--g3);margin-bottom:10px}
   .why{margin:0 0 10px}
   ul.crit{list-style:none;padding:0;margin:0 0 12px;display:grid;gap:6px;

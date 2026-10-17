@@ -2,8 +2,8 @@
 urlSlug: yfood-vital-drink
 lang: en
 counterpart: yfood-vital-drink
-title: "yfood Vital Drink review"
-productName: "yfood Vital Drink"
+title: "yfood Ready-to-Drink Meal review"
+productName: "yfood Ready-to-Drink Meal"
 category: "Supplements & nutrition"
 glyph: supplement
 gallery: 4
@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Brand-direct yfood.eu; also Amazon.de (~€4/bottle) — verify NEW + first-party via SiteStripe before wiring Amazon. No affiliate network confirmed yet.
-verdict: "yfood Vital Drink is Germany's most polished ready-to-drink meal replacement: a balanced ~500 kcal per 500ml bottle with 26 vitamins and minerals, high protein from milk, and genuinely good taste. It excels at convenience but is processed and pricey — a smart occasional stand-in, not a whole-food replacement."
+verdict: "The yfood ready-to-drink meal is Germany's most polished meal replacement: a balanced ~500 kcal per 500ml bottle with 26 vitamins and minerals, high protein from milk, and genuinely good taste. It excels at convenience but is processed and pricey — a smart occasional stand-in, not a whole-food replacement."
 sqwodScore: 77
 confidence: High
 crowd:
@@ -63,4 +63,4 @@ asset:
 tags: ["nutrition", "meal-replacement", "convenience"]
 ---
 
-yfood, founded in Munich in 2017 and majority-owned by Nestlé since 2022, is the clear category leader for complete-meal drinks in Germany. The ready-to-drink Vital Drink delivers roughly 500 kcal in a 500ml bottle (a 330ml version has ~330 kcal), with around 33g protein from milk, a full spread of 26 vitamins and minerals, and fibre. Independent testing rates it 77.5/100 — praised for excellent, consistent taste and a thick, clump-free consistency, with satiety lasting around three hours. Amazon.de ratings sit near 4.5/5 across hundreds of reviews per flavor, confirming strong real-world satisfaction.
+yfood, founded in Munich in 2017 and majority-owned by Nestlé since 2022, is the clear category leader for complete-meal drinks in Germany. The ready-to-drink meal (sold as "THIS IS FOOD" Classic) delivers roughly 500 kcal in a 500ml bottle (a 330ml version has ~330 kcal), with around 33g protein from milk, a full spread of 26 vitamins and minerals, and fibre. Independent testing rates it 77.5/100 — praised for excellent, consistent taste and a thick, clump-free consistency, with satiety lasting around three hours. Amazon.de ratings sit near 4.5/5 across hundreds of reviews per flavor, confirming strong real-world satisfaction.
