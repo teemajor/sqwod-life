@@ -14,10 +14,9 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # DRAFT 2026-10-17. Announced 15 May 2025 (Garmin press release). RRP 749.99 EUR. bestPrice = Sportscheck 624.00 (+4.50 shipping; JACOB 626.84 free shipping) per billiger.de 17.10.2026; low = Sportler 599.99 (Black Friday Nov 2025, Notebookcheck).
-verdict: "The most complete Forerunner yet: a brighter AMOLED under sapphire, a flashlight, speaker and mic, ECG, a Gen 5 heart-rate sensor and new load tools such as Running Tolerance. It also costs about 125 EUR more than the 965 we reviewed, and smartwatch battery drops from 23 to 15 days."
+verdict: "The most complete Forerunner yet: a brighter AMOLED under sapphire, a flashlight, speaker and mic, ECG, a Gen 5 heart-rate sensor and new load tools such as Running Tolerance. It also costs about 135 EUR more than the 965 we reviewed, and smartwatch battery drops from 23 to 15 days."
 sqwodScore: 84
 confidence: Medium
 crowd:

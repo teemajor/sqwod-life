@@ -12,7 +12,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # DRAFT 2026-10-17. Announced 9 Sep 2026 (Apple Newsroom), on sale 18 Sep 2026. bestPrice = Jacob Elektronik, 42 mm GPS aluminium MJEA4ZR/A (geizhals.de/3936910); low = Berlet.de 425. RRP 449 EUR. No owner ratings yet; crowd is expert-led.
 verdict: "The new Health Sensing System is the real upgrade: heart rate every five seconds, far more frequent HRV and a daily Readiness score, with testers finding it close to a chest strap. Battery is still rated at 24 hours and the design is unchanged, so Series 11 owners can skip it."

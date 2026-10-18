@@ -60,6 +60,7 @@ asset:
 successor:
   name: "Garmin Forerunner 970"
   since: "2025-05"
+  reviewSlug: "garmin-forerunner-970"
 tags: ["wearables", "running", "garmin", "triathlon"]
 ---
 

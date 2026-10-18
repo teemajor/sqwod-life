@@ -14,10 +14,9 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # ENTWURF 17.10.2026. Vorgestellt und verfügbar ab 27.8.2025 (Notebookcheck; Vorbestellung 27.8., Handel 16.9. laut smartwatchlife.jp). Startpreis 499 EUR Stahl / 599 EUR Titan. bestPrice = Sportler 449,10 Stahl, versandkostenfrei (testbericht.de, 16.10.2026); low = 428,99 Tiefstpreis (testbericht.de, Händler nicht genannt). Gleicher Affiliate-Hinweis wie bei der Race: Impact (Suunto) ist ein US-Shop.
-verdict: "Die Race 2 behält, was die Race zu unserem Preis-Leistungs-Tipp gemacht hat (Dualband-GPS, kostenlose Offline-Karten, riesiger Akku), und behebt ihre größte Schwäche: Der Puls am Handgelenk ist deutlich besser. Das Display ist größer und heller, das Gehäuse leichter, aber sie kostet rund 150 Euro mehr als die Race heute, und die Smart-Funktionen bleiben einfach."
+verdict: "Die Race 2 behält, was die Race zu unserem Preis-Leistungs-Tipp gemacht hat (Dualband-GPS, kostenlose Offline-Karten, riesiger Akku), und behebt ihre größte Schwäche: Der Puls am Handgelenk ist deutlich besser. Das Display ist größer und heller, das Gehäuse leichter, aber sie kostet rund 130 Euro mehr als die Race heute, und die Smart-Funktionen bleiben einfach."
 sqwodScore: 84
 confidence: Medium
 crowd:
@@ -52,7 +51,7 @@ cons:
   - "Einfache Smart-Funktionen, kein Musikspeicher; Puls kann bei manchen Läufen noch danebenliegen"
 whoFor:
   buy: "Du willst eine große, helle Multisportuhr mit Karten, Dualband-GPS und mehrtägigem Akku für deutlich weniger als eine Forerunner 970, mit einem Handgelenkspuls, dem du meistens trauen kannst."
-  skip: "Du willst Musik oder Garmins Ökosystem, oder der Preis entscheidet: Die erste Race kann das meiste davon inzwischen für rund 150 Euro weniger."
+  skip: "Du willst Musik oder Garmins Ökosystem, oder der Preis entscheidet: Die erste Race kann das meiste davon inzwischen für rund 130 Euro weniger."
 asset:
   type: images
   images:

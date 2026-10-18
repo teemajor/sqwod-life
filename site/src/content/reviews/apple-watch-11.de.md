@@ -15,7 +15,7 @@ affiliate: true
 draft: false
 # HINWEIS: Aktuelle Generation. Fakten (Preis, Specs, Bewertungen, Pro/Contra) sind belegt & real.
 verdict: "Die Akkulaufzeit reicht endlich — bis zu 24 Stunden — und Bluthochdruck-Hinweise plus 5G bringen echte Gesundheits-Mehrwerte. Aber es ist ein kleiner Sprung: Besitzer einer Series 9 oder 10 gewinnen wenig, und die günstigere SE unterbietet sie."
-sqwodScore: 85
+sqwodScore: 86
 confidence: High
 crowd:
   score: 88
@@ -36,7 +36,7 @@ assessment:
     - { name: "Coach-Fit", score: 7.4 }
     - { name: "Support", score: 8.8 }
 value:
-  score: 80
+  score: 83
   bestPrice: 380.99
   currency: EUR
   subscription: "keine"
@@ -60,6 +60,7 @@ amazonAsin: B0FQFLMHSX
 successor:
   name: "Apple Watch Series 12"
   since: "2026-09"
+  reviewSlug: "apple-watch-12"
 tags: ["wearables", "smartwatch", "apple-watch"]
 ---
 

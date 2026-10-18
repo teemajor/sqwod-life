@@ -13,7 +13,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # ENTWURF 17.10.2026. Vorgestellt 12./13.5.2026 (Garmin-Pressemitteilung), im Handel ab 15.5.2026. UVP 299,99 EUR. bestPrice = Galaxus.de 250,56 inkl. Versand (billiger.de); low = Joybuy 234,90 (testbericht.de, 17.10.2026). Modell ohne Music.
 verdict: "Ein Software-Upgrade der 165: Training Readiness, Trainingszustand, Laufleistung und Laufeffizienz-Werte sowie Garmin Pay kommen zum Einstiegspreis, auf demselben AMOLED und Sensor. Der Straßenpreis liegt inzwischen etwa dort, wo die 165 lag, der Akku hält aber etwas kürzer und das GPS bleibt Single-Band."

@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # ENTWURF 17.10.2026. Vorbestellung 5.5.2026, Marktstart 29.5.2026 (RingConn-Pressemitteilung, PR Newswire). bestPrice 369 EUR (Zukunftssilber / Königsgold / Mattschwarz; gebürstete Varianten 389) laut netzwelt.de und dealdoktor.de (Amazon.de, Stand 17.09.2026). CHIP 1,0 "sehr gut" wird auf ringconn.com behauptet, die chip.de-Seite ließ sich aber nicht öffnen, daher nicht verwendet.
 verdict: "RingConns abofreies Konzept, verfeinert: bis zu 14 Tage pro Ladung, ein universelles Ladecase, neue Vibrationshinweise und Gefäß-Trends. Er ist etwas dicker als der Gen 2, der Puls beim Sport hinkt weiter hinterher und der Preis steigt auf 369 Euro, trotzdem bleibt er die stärkste abofreie Alternative zu Oura."

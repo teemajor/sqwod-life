@@ -37,7 +37,7 @@ assessment:
     - { name: "Passform", score: 7.6 }
     - { name: "Weichheit", score: 6.8 }
 value:
-  score: 78
+  score: 82
   bestPrice: 122
   currency: EUR
   low: 99.95
@@ -61,6 +61,7 @@ asset:
 successor:
   name: "On Cloudmonster 3"
   since: "2026-03"
+  reviewSlug: "on-cloudmonster-3"
 tags: ["apparel", "running", "shoes"]
 ---
 

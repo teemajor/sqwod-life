@@ -15,7 +15,7 @@ affiliate: true
 draft: false
 # NOTE: current-gen page. Factual fields (price, specs, crowd ratings, pros/cons) are sourced & real.
 verdict: "The battery finally goes the distance — up to 24 hours — and hypertension notifications plus 5G land real health wins. But it's an iterative jump: Series 9 and 10 owners gain little, and the cheaper SE undercuts it."
-sqwodScore: 85
+sqwodScore: 86
 confidence: High
 crowd:
   score: 88
@@ -36,7 +36,7 @@ assessment:
     - { name: "Coach fit", score: 7.4 }
     - { name: "Support", score: 8.8 }
 value:
-  score: 80
+  score: 83
   bestPrice: 380.99
   currency: EUR
   subscription: "none"
@@ -60,6 +60,7 @@ amazonAsin: B0FQFLMHSX
 successor:
   name: "Apple Watch Series 12"
   since: "2026-09"
+  reviewSlug: "apple-watch-12"
 tags: ["wearables", "smartwatch", "apple-watch"]
 ---
 

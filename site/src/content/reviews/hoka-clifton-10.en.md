@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # Footwear = size/colour-locked ASINs, often 3rd-party/imports — kept brand-direct (hoka.com DE). Amazon rep ASIN B0DMTKRN13 if a clean brand/Amazon-sold listing appears. Street ~€110.
 verdict: "A plusher, more protective but heavier Clifton — an excellent max-cushion easy-day cruiser, not a fast shoe."
-sqwodScore: 82
+sqwodScore: 83
 confidence: Medium
 crowd:
   score: 84
@@ -37,7 +37,7 @@ assessment:
     - { name: "Fit", score: 8 }
     - { name: "Liveliness", score: 6.5 }
 value:
-  score: 82
+  score: 86
   bestPrice: 127.99
   currency: EUR
 pros:
@@ -60,6 +60,7 @@ asset:
 successor:
   name: "HOKA Clifton 11"
   since: "2026-07"
+  reviewSlug: "hoka-clifton-11"
 tags: ["apparel", "running", "shoes"]
 ---
 

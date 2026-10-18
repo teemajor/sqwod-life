@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Launched Jan 2026 (RunRepeat; RoadTrailRun gives 15 Jan 2026). RRP ~EUR 180 DE. Street EUR 118 at Sport Bittl (men's, free shipping) per testbericht.de; historical low EUR 89.95 there. Keep brand-direct newbalance.de / specialist retailers, do NOT wire a reseller ASIN.
 verdict: "The biggest 1080 update in years: a new supercritical foam makes it lighter, softer and livelier. The forefoot is still narrow and stability is limited."

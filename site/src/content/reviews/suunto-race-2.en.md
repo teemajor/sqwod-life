@@ -14,10 +14,9 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # DRAFT 2026-10-17. Announced and available 27 Aug 2025 (Notebookcheck; pre-orders 27 Aug, retail 16 Sep per smartwatchlife.jp). Launch 499 EUR steel / 599 EUR titanium. bestPrice = Sportler 449.10 steel, free shipping (testbericht.de, 16.10.2026); low = 428.99 historical low (testbericht.de, retailer not named). Same affiliate caveat as the Race: Impact (Suunto) is a US storefront.
-verdict: "The Race 2 keeps what made the Race our value pick (dual-band GPS, free offline maps, huge battery) and fixes its biggest flaw: wrist heart rate is much improved. The screen is larger and brighter and the case lighter, but it costs about 150 EUR more than the Race does now, and smart features stay basic."
+verdict: "The Race 2 keeps what made the Race our value pick (dual-band GPS, free offline maps, huge battery) and fixes its biggest flaw: wrist heart rate is much improved. The screen is larger and brighter and the case lighter, but it costs about 130 EUR more than the Race does now, and smart features stay basic."
 sqwodScore: 84
 confidence: Medium
 crowd:
@@ -52,7 +51,7 @@ cons:
   - "Basic smart features, no music storage; HR can still slip on some runs"
 whoFor:
   buy: "You want a big, bright multisport watch with maps, dual-band GPS and multi-day battery for well under a Forerunner 970, with wrist heart rate you can mostly trust."
-  skip: "You want music or Garmin's ecosystem, or you're price-led: the original Race now does most of this for about 150 EUR less."
+  skip: "You want music or Garmin's ecosystem, or you're price-led: the original Race now does most of this for about 130 EUR less."
 asset:
   type: images
   images:

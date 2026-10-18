@@ -14,7 +14,7 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The best-value everyday tracker — accurate sensors, ECG and Google smarts for under €100. Just know the best insights sit behind Fitbit Premium."
-sqwodScore: 81
+sqwodScore: 82
 confidence: High
 crowd:
   score: 82
@@ -36,7 +36,7 @@ assessment:
     - { name: "Coach fit", score: 7.0 }
     - { name: "Battery", score: 8.2 }
 value:
-  score: 84
+  score: 90
   bestPrice: 89
   currency: EUR
   low: 71.04

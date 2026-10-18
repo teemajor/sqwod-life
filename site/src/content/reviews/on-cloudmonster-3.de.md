@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Marktstart März 2026 (RunRepeat). on.com/de-de Listenpreis 200 EUR; zwei Herren-Farben (Rock|Silver, Twilight|White) am 17.10.2026 für 140 EUR. Sport Bittl 118 EUR laut testbericht.de (Farbe eclipse/frost, Geschlecht nicht bestätigt). Marke direkt (on.com/de).
 verdict: "Ein verfeinerter Cloudmonster mit besserem Obermaterial und runderem Abrollen, aber demselben schweren, festen Helion-Laufgefühl. Kauf ihn für Ons Rocker und die Verarbeitung, nicht für Federung."

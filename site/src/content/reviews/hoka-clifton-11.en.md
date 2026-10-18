@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Launched 16 Jul 2026 (HOKA press release, RRP EUR 160 DE). Street ~EUR 119 (SportScheck 118.99, Laufbursche 118.90) per preissuchmaschine.de; About You 103.55 in one size. Style 1176572. Keep brand-direct (hoka.com DE) until a clean listing is wired.
 verdict: "A lighter, softer and better-fitting Clifton for easy miles. The foam is unchanged, so it is still protective rather than lively, and outsole wear is an open question."

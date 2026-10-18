@@ -61,6 +61,7 @@ asset:
 successor:
   name: "Suunto Race 2"
   since: "2025-08"
+  reviewSlug: "suunto-race-2"
 tags: ["wearables", "running", "multisport", "suunto"]
 ---
 

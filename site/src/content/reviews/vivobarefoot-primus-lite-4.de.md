@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Awin DE (Vivobarefoot), auf Tees Awin-Konto beitreten. Marktstart ca. Jan. 2026 (Listing im Vivobarefoot-AU-Shop veröffentlicht 29.1.2026). Artikel 309253. Straßenpreis 96,95 EUR bei Sportwerk (Herren) laut preissuchmaschine.de. Deutsche UVP nicht bestätigt (vivobarefoot.com/de hat unseren Check blockiert). Marke direkt vivobarefoot.com/de, bis der Awin-Link verknüpft ist.
 verdict: "Der Primus Lite IV behält das erstklassige Bodengefühl des III, ist aber leichter und ressourcenschonender gebaut. Erste Tests bemängeln Haltbarkeit und Grip, und es gibt noch wenige Bewertungen."

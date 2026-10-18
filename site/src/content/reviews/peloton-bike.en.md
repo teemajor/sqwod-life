@@ -62,6 +62,7 @@ asset:
 successor:
   name: "Peloton Cross Training Bike"
   since: "2025-10"
+  reviewSlug: "peloton-cross-training-bike"
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 

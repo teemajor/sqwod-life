@@ -14,10 +14,9 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # ENTWURF 17.10.2026. Marktstart 10.11.2025 zu 269 EUR (Pressemitteilung coros.com/de). bestPrice = r2-bike 267,50 (+2,75 Versand) laut testbericht.de am 17.10.2026; low = 239,99 Tiefstpreis laut testbericht.de (Händler nicht genannt). Offline-Karten seit dem Update im September 2026 als Beta.
-verdict: "Das Erfolgsrezept der PACE 3, jetzt mit hellem AMOLED: weiterhin ultraleicht, genau beim GPS und bis zu 19 Tage ausdauernd, dazu Mikrofon, Action-Taste und seit dem Update im September 2026 Offline-Karten als Beta. Sie kostet rund 70 Euro mehr als die PACE 3, das ist der einzige echte Haken."
+verdict: "Das Erfolgsrezept der PACE 3, jetzt mit hellem AMOLED: weiterhin ultraleicht, genau beim GPS und bis zu 19 Tage ausdauernd, dazu Mikrofon, Action-Taste und seit dem Update im September 2026 Offline-Karten als Beta. Sie kostet rund 40 Euro mehr als die PACE 3 heute, das ist der einzige echte Haken."
 sqwodScore: 84
 confidence: Medium
 crowd:

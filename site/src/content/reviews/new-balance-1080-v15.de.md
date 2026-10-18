@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Marktstart Jan. 2026 (RunRepeat; RoadTrailRun nennt den 15.1.2026). UVP ca. 180 EUR in DE. Straßenpreis 118 EUR bei Sport Bittl (Herren, versandkostenfrei) laut testbericht.de; historischer Bestpreis dort 89,95 EUR. Marke direkt newbalance.de / Fachhandel, KEINE Reseller-ASIN verknüpfen.
 verdict: "Das größte 1080-Update seit Jahren: Ein neuer superkritischer Schaum macht ihn leichter, weicher und spritziger. Vorne bleibt er schmal, und die Stabilität ist begrenzt."

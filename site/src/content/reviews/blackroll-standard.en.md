@@ -36,7 +36,7 @@ assessment:
     - { name: "Value", score: 7 }
     - { name: "Versatility", score: 8.3 }
 value:
-  score: 74
+  score: 77
   bestPrice: 25.45
   currency: EUR
 pros:

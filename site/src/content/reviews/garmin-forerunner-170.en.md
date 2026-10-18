@@ -13,7 +13,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # DRAFT 2026-10-17. Announced 12-13 May 2026 (Garmin press release), on sale 15 May 2026. RRP 299.99 EUR. bestPrice = Galaxus.de 250.56 incl. shipping (billiger.de); low = Joybuy 234.90 (testbericht.de, 17.10.2026). Non-Music model.
 verdict: "A software-led upgrade on the 165: Training Readiness, Training Status, running power and dynamics and Garmin Pay arrive at the entry price, on the same AMOLED and sensor. Street prices have settled near where the 165 was, but battery is a touch shorter and GPS is still single-band."

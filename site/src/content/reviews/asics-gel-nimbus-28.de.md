@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Marktstart Jan. 2026 (ASICS-Pressemitteilung 7.1.2026). UVP ca. 200 EUR. Straßenpreis 139,99 EUR bei Decathlon.de (Verkauf durch Decathlon); 119,95 EUR bei Sporthaus Schuster via billiger.de (eine Größe/Farbe). Marke direkt + Fallback, bis ein sauberes Listing verknüpft ist.
 verdict: "Ein leichterer, etwas agilerer Nimbus, der das weiche, stabile Laufgefühl für lockere Kilometer behält. Tempo-Pop gibt es weiterhin nicht, und mit rund 140 € Straßenpreis kostet er jetzt so viel wie der 27 im Angebot."

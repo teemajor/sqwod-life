@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # Amazon.de ASIN B000QSNYGI (2.27kg Double Rich Chocolate); ON runs an official Amazon.de brand store (~€32-35/kg). Buy-box seller/condition NOT auto-verified (robots-blocked) — verify NEW + first-party via SiteStripe before wiring Amazon.
 verdict: "Der Klassiker unter den Wheys. Durchweg starke Bewertungen, top Löslichkeit und Informed-Choice-/Doping-Kontrolle machen es zur sicheren Standardwahl — du zahlst nur einen Aufpreis gegenüber No-Name-Whey."
-sqwodScore: 85
+sqwodScore: 84
 confidence: Medium
 crowd:
   score: 92
@@ -36,7 +36,7 @@ assessment:
     - { name: "Prüfung/Reinheit", score: 9 }
     - { name: "Preis-Leistung", score: 6 }
 value:
-  score: 70
+  score: 62
   bestPrice: 109.99
   currency: EUR
 pros:

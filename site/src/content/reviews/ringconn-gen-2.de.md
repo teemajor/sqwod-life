@@ -61,6 +61,7 @@ asset:
 successor:
   name: "RingConn Gen 3"
   since: "2026-05"
+  reviewSlug: "ringconn-gen-3"
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 

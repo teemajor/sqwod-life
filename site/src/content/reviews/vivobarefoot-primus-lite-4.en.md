@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Awin DE (Vivobarefoot), join on Tee's Awin account. Launched ~Jan 2026 (Vivobarefoot AU store listing published 29 Jan 2026). Style 309253. Street EUR 96.95 at Sportwerk (men's) per preissuchmaschine.de. German RRP not confirmed (vivobarefoot.com/de blocked our check). Brand-direct vivobarefoot.com/de until Awin link wired.
 verdict: "The Primus Lite IV keeps the class-leading ground feel of the III in a lighter, more resource-efficient build. Early reviews flag weaker durability and grip, and crowd data is still thin."

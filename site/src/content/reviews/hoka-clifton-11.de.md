@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Marktstart 16.7.2026 (HOKA-Pressemitteilung, UVP 160 EUR in DE). Straßenpreis ca. 119 EUR (SportScheck 118,99, Laufbursche 118,90) laut preissuchmaschine.de; About You 103,55 in einer Größe. Artikel 1176572. Marke direkt (hoka.com DE), bis ein sauberes Listing verknüpft ist.
 verdict: "Ein leichterer, weicherer und besser sitzender Clifton für lockere Kilometer. Der Schaum ist derselbe, also eher schützend als spritzig, und wie lange die Außensohle hält, ist noch offen."

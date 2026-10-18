@@ -15,7 +15,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 # ENTWURF 2026-10-17. Marktstart 2025-10 (T3; onepeloton.com-Shop führt das Cross Training Bike neu, das alte Bike nur refurbished). DE-Preis 1.899 € bei Fitshop (Lieferung DE); onepeloton.de nicht geladen, DTC-Preis vor Publish prüfen. All-Access 45 €/Monat seit 2025-10-02 laut Fitshop.
 verdict: "Pelotons Kursbibliothek auf einem Bike, dessen 21,5-Zoll-Screen sich jetzt um 360° dreht, für Training neben dem Rad. Es kostet mehr als das Vorgängermodell (1.899 € plus 45 €/Monat Pflicht-Mitgliedschaft) und lohnt sich nur, wenn du die Kurse jede Woche nutzt."
 sqwodScore: 75

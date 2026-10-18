@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # Impact (Vuori) — DE store vuoriclothing.de, €85. Wire Impact tracking link once available.
 verdict: "The Vuori Kore Short is a do-everything short that wins on comfort and versatility rather than pure performance. Ultra-soft four-way stretch fabric and a supportive boxer-brief liner make it excellent for lifting, functional training and all-day casual wear, though it is heavy and slow to dry for hard running. At €60 to €85 (by length and liner) it is a premium buy, but a dedicated German store with free express shipping makes it genuinely easy to get in Germany."
-sqwodScore: 83
+sqwodScore: 84
 confidence: High
 crowd:
   score: 91
@@ -36,7 +36,7 @@ assessment:
     - { name: "Fit", score: 8 }
     - { name: "Value", score: 6 }
 value:
-  score: 70
+  score: 76
   bestPrice: 59.80
   currency: EUR
 pros:

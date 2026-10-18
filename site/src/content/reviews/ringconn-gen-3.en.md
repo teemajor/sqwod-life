@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # DRAFT 2026-10-17. Pre-order 5 May 2026, launch 29 May 2026 (RingConn press release, PR Newswire). bestPrice 369 EUR (Future Silver / Royal Gold / Matte Black; brushed finishes 389) per netzwelt.de and dealdoktor.de (Amazon.de, updated 17.09.2026). CHIP 1.0 "sehr gut" is claimed on ringconn.com but the chip.de page could not be opened, so it is not used.
 verdict: "RingConn's subscription-free formula, refined: up to 14 days per charge, a universal charging case, new haptic alerts and vascular trend insights. It is slightly thicker than the Gen 2, exercise heart rate still lags and the price climbs to 369 EUR, but it remains the strongest no-subscription alternative to Oura."

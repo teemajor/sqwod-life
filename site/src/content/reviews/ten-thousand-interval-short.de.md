@@ -15,9 +15,9 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-# DTC, NICHT auf Amazon. Ten Thousand liefert nur in die USA/Kanada — kein Direktversand nach DE/EU (über Mr Porter oder EU-Händler WODgear.nl ~68 €). /go beim Publish: tenthousand.cc (Impact/CJ/direct offen). On-site-4,9★-Zahl ist markeneigen (nicht unabhängig).
-verdict: "Eine langlebige, extrem bewegliche Allround-Trainingshose, die von Testern gut bewertet wird — für deutsche Käufer getrübt durch US-only-Versand und durchwachsenen Support nach dem Kauf."
-sqwodScore: 78
+# DTC, NICHT auf Amazon. Seit Herbst 2026 liefert tenthousand.cc nach Deutschland mit EUR-Preisen (geprüft 18.10.2026: Store-Meta listet DE/AT/CH unter 139 Lieferländern; Interval Short 7" ohne Liner 79,95 EUR). Zoll-/Retourenbedingungen für die EU nicht angegeben. /go beim Publish: tenthousand.cc (Impact/CJ/direct offen). On-site-4,9★-Zahl ist markeneigen (nicht unabhängig).
+verdict: "Eine langlebige, extrem bewegliche Allround-Trainingshose, die von Testern gut bewertet wird — jetzt direkt nach Deutschland in Euro erhältlich, aber teurer und mit durchwachsenem Support nach dem Kauf."
+sqwodScore: 77
 confidence: Medium
 crowd:
   score: 82
@@ -36,22 +36,21 @@ assessment:
     - { name: "Preis-Leistung", score: 7.0 }
     - { name: "Service", score: 6.0 }
 value:
-  score: 68
-  bestPrice: 68
-  currency: USD
-  low: 64
+  score: 62
+  bestPrice: 79.95
+  currency: EUR
 pros:
   - "Exzellenter Vier-Wege-Stretch und Bewegungsfreiheit — vielseitig über Trainingsstile hinweg"
   - "Nicht kneifender, flach liegender Bund, der sitzt"
   - "Abriebfest; hält über Jahre"
   - "Wahl aus Liner und drei Beinlängen (5\", 7\", 9\")"
 cons:
-  - "Direktversand nur in die USA — keine Direktlieferung nach Deutschland/EU"
+  - "Preis auf rund 80 € gestiegen (7\" ohne Liner); Zoll- und Retourenbedingungen für die EU nicht klar angegeben"
   - "Premium-Preis für eine Polyester-Hose; unlined wirkt dünn für den Preis"
   - "Uneinheitlicher Kundenservice / Garantie-Handhabung (BBB 'F')"
 whoFor:
-  buy: "Du willst eine langlebige, sehr bewegliche Allround-Short und störst dich nicht an ~68 $ (oder dem Umweg über einen Händler in die EU)."
-  skip: "Du willst maximale Atmungsaktivität, eine günstige Option oder günstige, unkomplizierte Lieferung innerhalb Deutschlands."
+  buy: "Du willst eine langlebige, sehr bewegliche Allround-Short und störst dich nicht an rund 80 €."
+  skip: "Du willst maximale Atmungsaktivität, eine günstige Option oder einen deutschen Händler mit Retoure vor Ort."
 asset:
   type: images
   images:
@@ -62,4 +61,4 @@ tags: ["apparel", "training", "shorts"]
 
 Die Interval Short ist Ten Thousands Allround-Klassiker, und der Ruf ist verdient: Vier-Wege-Stretch-Popeline mit wirklich exzellenter Bewegungsfreiheit, ein nicht kneifender, flach liegender Bund und eine Abriebfestigkeit, die über Jahre hält. Unabhängige Tester geben 4,6/5, und im direkten Vergleich schlägt sie Lululemon fürs Krafttraining — mit Liner-Wahl und drei Beinlängen ist sie die Eine-Short-für-alles.
 
-Für ein deutsches Publikum liegt die Reibung in der Verfügbarkeit, nicht der Qualität. Ten Thousand liefert direkt nur in die USA und Kanada und verweist alle anderen an Mr Porter oder EU-Händler (WODgear.nl führt sie ab ~68 €) — es gibt also keinen sauberen lokalen Liefer- oder Retourenweg, und der Support nach dem Kauf zieht Beschwerden an (ein BBB-„F"). Zu beachten: Die glänzende 4,9★-Zahl ist markeneigen, nicht unabhängig. Tolle Short; aus Berlin umständlich zu kaufen.
+Für deutsche Käufer:innen ist es 2026 einfacher geworden: tenthousand.cc liefert jetzt nach Deutschland und zeigt Euro-Preise (79,95 € für die 7" ohne Liner). Der Preis liegt über den früheren 68 $, und der Shop nennt keine Zoll- oder Retourenbedingungen für EU-Bestellungen, also an der Kasse prüfen. Der Support nach dem Kauf zieht weiter Beschwerden an (ein BBB-„F"), und die glänzende 4,9★-Zahl ist markeneigen, nicht unabhängig. Tolle Short; jetzt einfach zu bestellen, aber nicht günstig.

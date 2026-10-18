@@ -59,6 +59,7 @@ asset:
 successor:
   name: "Saucony Endorphin Speed 5"
   since: "2025-06"
+  reviewSlug: "saucony-endorphin-speed-5"
 tags: ["footwear", "running", "super-trainer"]
 ---
 

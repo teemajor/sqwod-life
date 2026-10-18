@@ -14,7 +14,7 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der beste Einstieg in Garmins Trainings-Ökosystem — helles AMOLED, ~11 Tage Akku und die Metriken, die zählen, ohne 500-Euro-Preis."
-sqwodScore: 85
+sqwodScore: 86
 confidence: High
 crowd:
   score: 85
@@ -36,7 +36,7 @@ assessment:
     - { name: "Coach-Fit", score: 7.8 }
     - { name: "Akku", score: 8.2 }
 value:
-  score: 88
+  score: 94
   bestPrice: 175
   currency: EUR
   history: [259, 259, 249, 249, 239, 229, 249, 249, 239, 249, 219, 249]
@@ -53,6 +53,7 @@ whoFor:
 successor:
   name: "Garmin Forerunner 170"
   since: "2026-05"
+  reviewSlug: "garmin-forerunner-170"
 tags: ["wearables", "running", "garmin"]
 asset:
   type: images

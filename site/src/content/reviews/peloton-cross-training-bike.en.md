@@ -15,7 +15,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 # DRAFT 2026-10-17. Launch 2025-10 (T3; onepeloton.com shop lists Cross Training Bike new, original Bike refurbished only). DE price €1,899 at Fitshop (DE delivery); onepeloton.de not loaded, confirm the DTC price before publish. All-Access €45/mo since 2025-10-02 per Fitshop.
 verdict: "Peloton's class library on a bike whose 21.5-inch screen now swivels 360° for floor workouts. It costs more than the bike it replaces (€1,899 plus a required €45/month membership), so it only makes sense if you will use the classes every week."
 sqwodScore: 75

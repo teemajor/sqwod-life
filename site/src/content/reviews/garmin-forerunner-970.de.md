@@ -14,10 +14,9 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # ENTWURF 17.10.2026. Vorgestellt 15.5.2025 (Garmin-Pressemitteilung). UVP 749,99 EUR. bestPrice = Sportscheck 624,00 (+4,50 Versand; JACOB 626,84 versandkostenfrei) laut billiger.de am 17.10.2026; low = Sportler 599,99 (Black Friday Nov. 2025, Notebookcheck).
-verdict: "Die bisher kompletteste Forerunner: helleres AMOLED unter Saphirglas, Taschenlampe, Lautsprecher und Mikrofon, EKG, Gen-5-Pulssensor und neue Belastungs-Tools wie Running Tolerance. Sie kostet aber rund 125 Euro mehr als die bewertete 965, und der Smartwatch-Akku sinkt von 23 auf 15 Tage."
+verdict: "Die bisher kompletteste Forerunner: helleres AMOLED unter Saphirglas, Taschenlampe, Lautsprecher und Mikrofon, EKG, Gen-5-Pulssensor und neue Belastungs-Tools wie Running Tolerance. Sie kostet aber rund 135 Euro mehr als die bewertete 965, und der Smartwatch-Akku sinkt von 23 auf 15 Tage."
 sqwodScore: 84
 confidence: Medium
 crowd:

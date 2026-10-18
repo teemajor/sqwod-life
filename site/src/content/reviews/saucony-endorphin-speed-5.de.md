@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Marktstart 15.6.2025 (21run). saucony.com/DE Herren 60307M: 160 EUR, reduziert von 200 EUR (17.10.2026). Kein günstigeres deutsches Angebot bestätigt. Marke direkt / Lauf-Fachhandel, KEINE Reseller-ASIN verknüpfen.
 verdict: "Weiterhin einer der vielseitigsten Trainer mit Platte, jetzt weicher, federnder und mit mehr Platz. Er kostet mehr als der reduzierte Speed 4, und die Haltbarkeit hat nachgelassen."

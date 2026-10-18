@@ -59,6 +59,7 @@ asset:
 successor:
   name: "New Balance 1080v15"
   since: "2026-01"
+  reviewSlug: "new-balance-1080-v15"
 tags: ["footwear", "running", "daily-trainer"]
 ---
 

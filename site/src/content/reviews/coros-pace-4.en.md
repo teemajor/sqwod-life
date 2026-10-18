@@ -14,10 +14,9 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # DRAFT 2026-10-17. Launched 10 Nov 2025 at 269 EUR (coros.com/de press release). bestPrice = r2-bike 267.50 (+2.75 shipping) per testbericht.de 17.10.2026; low = 239.99 historical low per testbericht.de (retailer not named). Offline maps added in beta via the Sept 2026 update.
-verdict: "The PACE 3 formula with a bright AMOLED: still ultralight, accurate on GPS and good for up to 19 days, now with a microphone, an action button and, since the September 2026 update, offline maps in beta. It costs about 70 EUR more than the PACE 3 does, which is the only real catch."
+verdict: "The PACE 3 formula with a bright AMOLED: still ultralight, accurate on GPS and good for up to 19 days, now with a microphone, an action button and, since the September 2026 update, offline maps in beta. It costs about 40 EUR more than the PACE 3 does now, which is the only real catch."
 sqwodScore: 84
 confidence: Medium
 crowd:

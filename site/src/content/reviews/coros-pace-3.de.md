@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # Amazon.de ASIN B0CFQQ9FDL (black silicone). Buy-box seller/condition NOT auto-verified (robots-blocked) — verify NEW + first-party via SiteStripe before wiring Amazon; else brand-direct coros.com. Superseded by AMOLED PACE 4 (Nov 2025), hence the value.
 verdict: "Eine ultraleichte, unkomplizierte Laufuhr mit genauem Dual-Frequency-GPS und riesiger Akkulaufzeit fürs Geld — auch nach dem Preisrutsch unter die neuere PACE 4 eine der besten Preis-Leistungs-Uhren überhaupt."
-sqwodScore: 86
+sqwodScore: 85
 confidence: Medium
 crowd:
   score: 88
@@ -36,7 +36,7 @@ assessment:
     - { name: "App/Ökosystem", score: 8 }
     - { name: "Preis-Leistung", score: 9 }
 value:
-  score: 90
+  score: 87
   bestPrice: 228.95
   currency: EUR
 pros:
@@ -59,6 +59,7 @@ asset:
 successor:
   name: "COROS PACE 4"
   since: "2025-11"
+  reviewSlug: "coros-pace-4"
 tags: ["wearables", "running", "coros"]
 ---
 

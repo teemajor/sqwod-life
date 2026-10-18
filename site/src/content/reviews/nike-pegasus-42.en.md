@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # Current model (Pegasus 42, €139.99; Peg 41 discounted). Amazon.de ASIN B0GF685C7R (men). Verify seller+image via SiteStripe. For now: brand-direct + fallback.
 verdict: "A dependable, well-built neutral daily trainer that nails comfort and durability but rides average — a safe workhorse, not an exciting one."
-sqwodScore: 80
+sqwodScore: 81
 confidence: Medium
 crowd:
   score: 80
@@ -36,7 +36,7 @@ assessment:
     - { name: "Fit", score: 8.2 }
     - { name: "Value", score: 8 }
 value:
-  score: 80
+  score: 86
   bestPrice: 94.90
   currency: EUR
 pros:

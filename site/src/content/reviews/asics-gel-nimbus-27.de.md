@@ -58,6 +58,7 @@ asset:
 successor:
   name: "ASICS Gel-Nimbus 28"
   since: "2026-01"
+  reviewSlug: "asics-gel-nimbus-28"
 tags: ["apparel", "running", "shoes"]
 ---
 

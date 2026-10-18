@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Released Mar 2026 (RunRepeat). on.com/de-de list price EUR 200; two men's colours (Rock|Silver, Twilight|White) at EUR 140 on 17 Oct 2026. Sport Bittl EUR 118 per testbericht.de (colour eclipse/frost, gender not confirmed). Keep brand-direct (on.com/de).
 verdict: "A refined Cloudmonster with a better upper and a smoother roll, but the same heavy, firm Helion ride. Buy it for On's rocker and build quality, not for bounce."

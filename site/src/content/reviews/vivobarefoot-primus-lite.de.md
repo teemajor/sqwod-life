@@ -60,6 +60,7 @@ asset:
   credit: "Produktbild: Vivobarefoot"
 successor:
   name: "Vivobarefoot Primus Lite IV"
+  reviewSlug: "vivobarefoot-primus-lite-4"
 tags: ["footwear", "barefoot", "training"]
 ---
 

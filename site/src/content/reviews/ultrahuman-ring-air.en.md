@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # DTC/Amazon.de. Verify Amazon seller+image via SiteStripe before wiring Amazon link (ASIN B0CHF6BZ9H, avoid renewed B0FKT4FMQM). For now: brand-direct + fallback.
 verdict: "An accurate, feather-light recovery ring with a standout metabolic-health angle — and, unlike Oura, no subscription. Softer workout tracking is the trade."
-sqwodScore: 81
+sqwodScore: 82
 confidence: Medium
 crowd:
   score: 80
@@ -36,7 +36,7 @@ assessment:
     - { name: "App", score: 7.5 }
     - { name: "Value", score: 8.6 }
 value:
-  score: 82
+  score: 86
   bestPrice: 234.53
   currency: EUR
 pros:

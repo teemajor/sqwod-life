@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # DTC/Amazon.de. Amazon-Verkäufer+Bild per SiteStripe prüfen vor dem Verlinken (ASIN B0CHF6BZ9H, generalüberholte B0FKT4FMQM meiden). Vorerst: Marke direkt + Fallback.
 verdict: "Ein genauer, federleichter Recovery-Ring mit starkem Stoffwechsel-Fokus — und, anders als Oura, ohne Abo. Der Preis dafür: schwächeres Workout-Tracking."
-sqwodScore: 81
+sqwodScore: 82
 confidence: Medium
 crowd:
   score: 80
@@ -36,7 +36,7 @@ assessment:
     - { name: "App", score: 7.5 }
     - { name: "Preis-Leistung", score: 8.6 }
 value:
-  score: 82
+  score: 86
   bestPrice: 234.53
   currency: EUR
 pros:

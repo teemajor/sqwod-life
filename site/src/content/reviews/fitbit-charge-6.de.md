@@ -14,7 +14,7 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der beste Alltags-Tracker fürs Geld — genaue Sensoren, EKG und Google-Funktionen für unter 100 €. Die besten Insights stecken aber hinter Fitbit Premium."
-sqwodScore: 81
+sqwodScore: 82
 confidence: High
 crowd:
   score: 82
@@ -36,7 +36,7 @@ assessment:
     - { name: "Coach-Fit", score: 7.0 }
     - { name: "Akku", score: 8.2 }
 value:
-  score: 84
+  score: 90
   bestPrice: 89
   currency: EUR
   low: 71.04

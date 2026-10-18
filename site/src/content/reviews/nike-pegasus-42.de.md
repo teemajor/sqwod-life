@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # Aktuelles Modell (Pegasus 42, 139,99 €; Peg 41 reduziert). Amazon.de ASIN B0GF685C7R (Herren). Verkäufer+Bild per SiteStripe prüfen. Vorerst: Marke direkt + Fallback.
 verdict: "Ein zuverlässiger, gut verarbeiteter Neutral-Alltagsschuh, der Komfort und Haltbarkeit trifft, aber durchschnittlich läuft — ein sicheres Arbeitstier, kein aufregendes."
-sqwodScore: 80
+sqwodScore: 81
 confidence: Medium
 crowd:
   score: 80
@@ -36,7 +36,7 @@ assessment:
     - { name: "Passform", score: 8.2 }
     - { name: "Preis-Leistung", score: 8 }
 value:
-  score: 80
+  score: 86
   bestPrice: 94.90
   currency: EUR
 pros:

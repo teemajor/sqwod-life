@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Launched Jan 2026 (ASICS press release 7 Jan 2026). RRP ~EUR 200. Street EUR 139.99 at Decathlon.de (sold by Decathlon); EUR 119.95 seen at Sporthaus Schuster via billiger.de (one size/colour). Brand-direct + fallback until a clean listing is wired.
 verdict: "A lighter, slightly more agile Nimbus that keeps the plush, stable ride for easy miles. There is still no pop for faster running, and at about €140 street it now costs what the 27 did on discount."

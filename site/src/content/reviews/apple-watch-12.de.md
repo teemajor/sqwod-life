@@ -12,7 +12,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # ENTWURF 17.10.2026. Vorgestellt 9.9.2026 (Apple Newsroom), im Handel seit 18.9.2026. bestPrice = Jacob Elektronik, 42 mm GPS Aluminium MJEA4ZR/A (geizhals.de/3936910); low = Berlet.de 425. UVP 449 EUR. Noch keine Nutzerbewertungen; Crowd-Wert basiert auf Fachtests.
 verdict: "Das neue Health Sensing System ist das eigentliche Upgrade: Puls alle fünf Sekunden, deutlich häufigere HRV-Messungen und ein täglicher Readiness-Wert, laut Testern nah am Brustgurt. Der Akku bleibt bei 24 Stunden und das Design ist unverändert, Besitzer:innen einer Series 11 können also aussetzen."

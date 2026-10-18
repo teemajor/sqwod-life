@@ -36,7 +36,7 @@ assessment:
     - { name: "Preis-Leistung", score: 7 }
     - { name: "Vielseitigkeit", score: 8.3 }
 value:
-  score: 74
+  score: 77
   bestPrice: 25.45
   currency: EUR
 pros:

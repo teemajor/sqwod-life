@@ -17,7 +17,7 @@ affiliate: true
 draft: false
 # Schuhe = größen-/farbgebundene ASINs, oft 3rd-party/Import — Marke direkt (hoka.com DE). Amazon-Bsp. B0DMTKRN13 falls sauber. Straße ~110 €.
 verdict: "Ein weicherer, schützenderer, aber schwererer Clifton — ein exzellenter Max-Cushion-Cruiser für lockere Tage, kein schneller Schuh."
-sqwodScore: 82
+sqwodScore: 83
 confidence: Medium
 crowd:
   score: 84
@@ -37,7 +37,7 @@ assessment:
     - { name: "Passform", score: 8 }
     - { name: "Lebendigkeit", score: 6.5 }
 value:
-  score: 82
+  score: 86
   bestPrice: 127.99
   currency: EUR
 pros:
@@ -60,6 +60,7 @@ asset:
 successor:
   name: "HOKA Clifton 11"
   since: "2026-07"
+  reviewSlug: "hoka-clifton-11"
 tags: ["apparel", "running", "shoes"]
 ---
 

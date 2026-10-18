@@ -14,7 +14,6 @@ publishedAt: 2026-10-17
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-draft: true
 testStatus: desk-researched
 # Released 15 Jun 2025 (21run). saucony.com/DE men's 60307M: EUR 160, reduced from EUR 200 (17 Oct 2026). No lower German offer confirmed. Keep brand-direct / specialist running retailers, do NOT wire a reseller ASIN.
 verdict: "Still one of the most versatile plated trainers you can buy, now softer, bouncier and roomier. It costs more than the discounted Speed 4, and durability has slipped."

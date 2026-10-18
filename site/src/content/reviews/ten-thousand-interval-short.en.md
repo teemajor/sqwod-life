@@ -15,9 +15,9 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-# DTC, NOT on Amazon. Ten Thousand ships to US/Canada only — no direct DE/EU delivery (via Mr Porter or EU reseller WODgear.nl ~€68). /go on publish: tenthousand.cc (pending Impact/CJ/direct). On-site 4.9★ count is brand-hosted (non-independent).
-verdict: "A durable, highly mobile do-it-all training short that reviewers rate well — let down for German buyers by US-only direct shipping and mixed post-sale support."
-sqwodScore: 78
+# DTC, NOT on Amazon. Since autumn 2026 tenthousand.cc ships to Germany and prices in EUR (verified 2026-10-18: store meta lists DE/AT/CH among 139 ship-to countries; Interval Short 7" unlined EUR 79.95). EU duties/returns terms not stated. /go on publish: tenthousand.cc (pending Impact/CJ/direct). On-site 4.9★ count is brand-hosted (non-independent).
+verdict: "A durable, highly mobile do-it-all training short that reviewers rate well — now sold direct to Germany in euros, but at a higher price and with mixed post-sale support."
+sqwodScore: 77
 confidence: Medium
 crowd:
   score: 82
@@ -36,22 +36,21 @@ assessment:
     - { name: "Value", score: 7.0 }
     - { name: "Service", score: 6.0 }
 value:
-  score: 68
-  bestPrice: 68
-  currency: USD
-  low: 64
+  score: 62
+  bestPrice: 79.95
+  currency: EUR
 pros:
   - "Excellent four-way stretch and mobility — versatile across training styles"
   - "No-pinch, lay-flat waistband that stays put"
   - "Abrasion-resistant; holds up over years of use"
   - "Choice of liner and three inseams (5\", 7\", 9\")"
 cons:
-  - "US-only direct shipping — no direct delivery to Germany/EU"
+  - "Price rose to about €80 (unlined 7\"); EU duty and return terms are not spelled out"
   - "Premium price for a polyester short; unlined feels thin for the cost"
   - "Inconsistent customer service / guarantee enforcement (BBB 'F')"
 whoFor:
-  buy: "You want one durable, high-mobility do-everything short and don't mind ~$68 (or a reseller route into the EU)."
-  skip: "You want max breathability, a budget option, or cheap, hassle-free delivery inside Germany."
+  buy: "You want one durable, high-mobility do-everything short and don't mind paying about €80."
+  skip: "You want max breathability, a budget option, or a German retailer with local returns."
 asset:
   type: images
   images:
@@ -62,4 +61,4 @@ tags: ["apparel", "training", "shorts"]
 
 The Interval Short is Ten Thousand's do-everything staple, and the reputation is earned: four-way stretch poplin with genuinely excellent mobility, a no-pinch lay-flat waistband, and abrasion resistance that holds up over years. Independent testers rate it 4.6/5, and it beats Lululemon head-to-head for strength work — with your choice of liner and three inseam lengths, it's a one-short-does-all pick.
 
-For a German audience, the friction is availability, not quality. Ten Thousand ships direct only to the US and Canada, routing everyone else to Mr Porter or EU resellers (WODgear.nl carries it from ~€68), so there's no clean local delivery or returns path — and post-sale support draws complaints (a BBB "F"). Note too that the glowing 4.9★ count is brand-hosted, not independent. Great short; awkward to buy from Berlin.
+For German buyers this got easier in 2026: tenthousand.cc now ships to Germany and shows euro prices (€79.95 for the unlined 7"). The price is up on the old $68, and the store does not spell out duty or return terms for EU orders, so check them at checkout. Post-sale support still draws complaints (a BBB "F"), and the glowing 4.9★ count is brand-hosted, not independent. Great short; now simple to order, but not cheap.
