@@ -11,13 +11,13 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # No clean single-ASIN NEW Amazon.de listing (fragmented size/colour 3rd-party imports). Keep brand-direct newbalance.de / specialist retailers — do NOT wire a reseller ASIN.
 verdict: "A plush, dependable premium daily trainer that shines on easy and recovery runs — comfort-first, not speed-first."
-sqwodScore: 81
+sqwodScore: 80
 confidence: High
 crowd:
   score: 83
@@ -28,7 +28,7 @@ crowd:
     - { name: "Running Shoes Guru", value: "8.3/10", url: "https://www.runningshoesguru.com/reviews/road/new-balance-fresh-foam-x-1080-v14-review/" }
     - { name: "Believe in the Run", value: "B tier (Value A)", url: "https://believeintherun.com/shoe-reviews/new-balance-1080-v14-review/" }
 assessment:
-  score: 80
+  score: 78
   criteria:
     - { name: "Ride", score: 8 }
     - { name: "Cushioning", score: 9 }
@@ -37,14 +37,13 @@ assessment:
     - { name: "Value", score: 7 }
 value:
   score: 78
-  bestPrice: 120
+  bestPrice: 136.90
   currency: EUR
-  low: 110
 pros:
   - "Outstanding, plush Fresh Foam X cushioning for long easy miles"
   - "Improved stability and breathable engineered-mesh upper vs. v13"
   - "Solid outsole durability holds up past 300+ km"
-  - "Big discounts already available (street ~€110-120 vs €170 RRP)"
+  - "Big discounts already available (street ~€135 vs €170 RRP)"
 cons:
   - "Narrow toe box can feel restrictive — consider a wide (2E) width"
   - "Heavier than v13 (~295 g / 10.4 oz men's), not built for fast running"
@@ -65,4 +64,4 @@ tags: ["footwear", "running", "daily-trainer"]
 
 The Fresh Foam X 1080v14 is New Balance's flagship max-cushion neutral trainer, and v14 doubles down on plush comfort. Experts consistently praise the soft, forgiving Fresh Foam X midsole (RunRepeat 83/100, Running Shoes Guru 8.0/10 expert with a perfect 10 for comfort), calling it one of the best cruisers for easy and recovery running. The engineered-mesh upper is more breathable and the ride slightly more stable than the v13.
 
-The trade-offs are weight and shape: at roughly 295 g it's noticeably heavier than before and not meant for speed, and the tapered toe box feels narrow for many runners — the 2E wide width solves this. At full €170 RRP the value is only okay, but German street prices already sit near €110-120, which pushes it into strong-buy territory for comfort-focused daily mileage.
+The trade-offs are weight and shape: at roughly 295 g it's noticeably heavier than before and not meant for speed, and the tapered toe box feels narrow for many runners — the 2E wide width solves this. At full €170 RRP the value is only okay, but German street prices sit near €135, which pushes it into strong-buy territory for comfort-focused daily mileage.

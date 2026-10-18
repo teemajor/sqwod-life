@@ -11,13 +11,13 @@ pillar: gear
 type: recovery
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Real & sourced: price, specs, crowd.sources, pros/cons, verdict. Affiliate /go target on publish: https://www.amazon.de/dp/B0CVSD725F?tag=sqwod-21 (sold by Hyperice, verified 2026-07-23).
 verdict: "A quiet, light, app-guided percussion gun that nails everyday warm-ups and client recovery — but you pay a premium for a 3-speed, lower-force device, and German testers rated it far harder than US buyers."
-sqwodScore: 74
+sqwodScore: 75
 confidence: Medium
 crowd:
   score: 74
@@ -30,7 +30,7 @@ crowd:
     - { name: "Stiftung Warentest", value: "37/100", url: "https://www.testbericht.de/produkte/hyperice-hypervolt-2" }
     - { name: "MassageGunAdvice", value: "3.5/5", url: "https://massagegunadvice.com/hyperice-hypervolt-2-review/" }
 assessment:
-  score: 76
+  score: 78
   criteria:
     - { name: "Power", score: 7.5 }
     - { name: "Noise", score: 8.5 }

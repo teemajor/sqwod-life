@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 9 }
 value:
   score: 90
-  bestPrice: 199
+  bestPrice: 228.95
   currency: EUR
-  low: 187
 pros:
   - "Überragendes Preis-Leistungs-Verhältnis — günstiger als vergleichbare Garmins"
   - "Federleicht (~30 g) und bequem im Alltag wie im Wettkampf"
@@ -63,6 +62,6 @@ successor:
 tags: ["wearables", "running", "coros"]
 ---
 
-Die COROS PACE 3 bleibt eine der besten Preis-Leistungs-Laufuhren überhaupt. Für rund 199 € unterbietet sie vergleichbare Garmins und liefert trotzdem Dual-Frequency-GPS, ein federleichtes ~30-g-Gehäuse und bis zu 17 Tage Akku. Als Läufer oder Triathlet bekommst du echte Trainingsfunktionen — strukturierte Workouts, EvoLab-Belastungstracking und zuverlässige Datenaufzeichnung — ohne Flaggschiff-Preis. Genau deshalb loben Tester von TechRadar bis 220 Triathlon vor allem das Preis-Leistungs-Verhältnis.
+Die COROS PACE 3 bleibt eine der besten Preis-Leistungs-Laufuhren überhaupt. Für rund 229 € unterbietet sie vergleichbare Garmins und liefert trotzdem Dual-Frequency-GPS, ein federleichtes ~30-g-Gehäuse und bis zu 17 Tage Akku. Als Läufer oder Triathlet bekommst du echte Trainingsfunktionen — strukturierte Workouts, EvoLab-Belastungstracking und zuverlässige Datenaufzeichnung — ohne Flaggschiff-Preis. Genau deshalb loben Tester von TechRadar bis 220 Triathlon vor allem das Preis-Leistungs-Verhältnis.
 
 Eine Lifestyle-Smartwatch ist sie nicht: kein Touchscreen, keine Offline-Karten, nur einfache Benachrichtigungen. Seit COROS Ende 2025 die AMOLED-PACE-4 gebracht und den Preis der PACE 3 gesenkt hat, ist die PACE 3 die Budget-Wahl statt des neuesten Modells — und gerade das macht sie so stark, wenn dir reine Lauf-Performance, geringes Gewicht und Akkulaufzeit wichtiger sind als Extras.

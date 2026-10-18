@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -28,7 +28,7 @@ crowd:
     - { name: "OutdoorGearLab", value: "74/100 – Best Barefoot Gym Shoe", url: "https://www.outdoorgearlab.com/reviews/shoes-and-boots/barefoot-shoes-men/vivobarefoot-primus-lite-iii" }
     - { name: "RunRepeat (user rating)", value: "83/100", url: "https://runrepeat.com/vivobarefoot-primus-lite-knit" }
 assessment:
-  score: 74
+  score: 72
   criteria:
     - { name: "Ground feel", score: 9 }
     - { name: "Versatility", score: 6 }

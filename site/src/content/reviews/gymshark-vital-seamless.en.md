@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -38,9 +38,8 @@ assessment:
     - { name: "Service", score: 6.0 }
 value:
   score: 80
-  bestPrice: 50
+  bestPrice: 55
   currency: EUR
-  low: 45
 pros:
   - "Squat-proof seamless fabric and a consistent, recognizable silhouette"
   - "Ships to Germany cheaply and fast (€4.40 standard, free over €55)"

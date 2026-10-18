@@ -11,7 +11,7 @@ pillar: gear
 type: equipment
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -39,7 +39,6 @@ value:
   score: 70
   bestPrice: 769
   currency: EUR
-  low: 769
 pros:
   - "Verstellung in unter 2 Sekunden, ideal für Drop-Sätze"
   - "Klassische Hantelform, gerader 32-mm-Griff mit Rändelung"

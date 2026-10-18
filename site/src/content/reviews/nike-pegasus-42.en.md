@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -28,7 +28,7 @@ crowd:
     - { name: "Running Shoes Guru", value: "7.0/10", url: "https://www.runningshoesguru.com/reviews/road/nike-pegasus-42-review/" }
     - { name: "Believe in the Run", value: "B tier", url: "https://believeintherun.com/shoe-reviews/nike-pegasus-42-review/" }
 assessment:
-  score: 78
+  score: 80
   criteria:
     - { name: "Cushioning", score: 7.8 }
     - { name: "Ride", score: 7.5 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 8 }
 value:
   score: 80
-  bestPrice: 140
+  bestPrice: 94.90
   currency: EUR
-  low: 110
 pros:
   - "Reliable, durable, stable everyday ride"
   - "Roomier, improved toe box and comfortable fit"

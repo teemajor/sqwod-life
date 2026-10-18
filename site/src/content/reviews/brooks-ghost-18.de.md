@@ -11,13 +11,13 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Aktuelles Modell (Ghost 18, 150 €; Ghost 17 reduziert ~105 €). Amazon.de ASIN B0GRT4KJV6 (Herren). Verkäufer+Bild per SiteStripe prüfen. Vorerst: Marke direkt + Fallback.
 verdict: "Ein zuverlässiger, langlebiger Neutral-Alltagsschuh, der alles kompetent und nichts aufregend macht — sicher statt spektakulär."
-sqwodScore: 80
+sqwodScore: 81
 confidence: Medium
 crowd:
   score: 82
@@ -37,9 +37,9 @@ assessment:
     - { name: "Preis-Leistung", score: 7.8 }
 value:
   score: 78
-  bestPrice: 150
+  bestPrice: 127.99
   currency: EUR
-  low: 135
+  low: 124.99
 pros:
   - "Zuverlässiges Allround-Arbeitstier mit stabilem Neutral-Laufgefühl"
   - "Bequemes, gut gepolstertes Obermaterial mit sicherem Halt"

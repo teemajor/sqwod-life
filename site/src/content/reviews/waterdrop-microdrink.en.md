@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 6 }
 value:
   score: 60
-  bestPrice: 8
+  bestPrice: 8.99
   currency: EUR
-  low: 7
 pros:
   - "Tiny, portable cubes make flavoured water effortless anywhere"
   - "Sugar-free, low-calorie, sweetened with stevia and packed with vitamins (C, B-vitamins, zinc)"

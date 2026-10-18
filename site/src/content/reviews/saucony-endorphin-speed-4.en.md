@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 8 }
 value:
   score: 85
-  bestPrice: 119
+  bestPrice: 125.99
   currency: EUR
-  low: 106
 pros:
   - "Versatile: easy runs, tempo, intervals and long runs"
   - "Bouncy, responsive PWRRUN PB midsole with nylon plate"

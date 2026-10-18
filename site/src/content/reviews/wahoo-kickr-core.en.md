@@ -11,13 +11,13 @@ pillar: gear
 type: equipment
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Current model = KICKR CORE 2 (2025). Amazon.de ASIN B0CGH8CRST (CORE 2) / B07J16C4WL (original). Verify seller+image via SiteStripe. CORE 2 ships with cassette OR Zwift Cog; ~€419–549.
 verdict: "A reliable, ±2%-accurate, quiet smart trainer that delivers near-flagship performance for mid-tier money — one of the best-value picks for coached indoor cycling."
-sqwodScore: 81
+sqwodScore: 82
 confidence: Medium
 crowd:
   score: 80
@@ -28,7 +28,7 @@ crowd:
     - { name: "OutdoorGearLab", value: "73/100", url: "https://www.outdoorgearlab.com/reviews/biking/bike-trainer/wahoo-fitness-kickr-core" }
     - { name: "DC Rainmaker", value: "Recommends", url: "https://www.dcrainmaker.com/2025/11/wahoo-kickr-core-2-in-depth-review.html" }
 assessment:
-  score: 84
+  score: 86
   criteria:
     - { name: "Power accuracy", score: 9 }
     - { name: "Ride feel", score: 8.6 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 8 }
 value:
   score: 78
-  bestPrice: 549
+  bestPrice: 497.50
   currency: EUR
-  low: 419
 pros:
   - "Power accuracy that matches dedicated power meters (±2%)"
   - "Excellent build quality and ride feel"

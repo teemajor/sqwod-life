@@ -10,11 +10,11 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-08
-updatedAt: 2026-06-14
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The best all-rounder — workouts, notifications, sleep, ECG — no subscription. Battery and depth-of-recovery data are the compromises."
-sqwodScore: 84
+sqwodScore: 85
 confidence: High
 crowd:
   score: 88
@@ -26,7 +26,7 @@ crowd:
     - { name: "Reddit", value: "+70%" }
     - { name: "Expert avg", value: "8.6/10" }
 assessment:
-  score: 82
+  score: 84
   criteria:
     - { name: "Accuracy", score: 8.5 }
     - { name: "Value", score: 7.6 }

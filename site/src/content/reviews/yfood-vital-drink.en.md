@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,9 @@ assessment:
     - { name: "Value", score: 6 }
 value:
   score: 62
-  bestPrice: 4
+  bestPrice: 3.99
   currency: EUR
-  low: 3
+  low: 3.19
 pros:
   - "Complete macro/micro profile: ~33g protein, 26 vitamins & minerals per 500ml"
   - "Consistently praised taste across flavors (Cold Brew Coffee, Vanilla, Choco)"

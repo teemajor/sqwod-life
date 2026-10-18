@@ -11,13 +11,13 @@ pillar: gear
 type: recovery
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de: SP 8.0 variant ASINs (e.g. B09GFDGJT9) + cheaper Sport Elite B00A2O44CY. Verify seller+image via SiteStripe. €999–1200. EMS evidence is MIXED — works as a training ADJUNCT, not a standalone shortcut (kept honest).
-verdict: "The most capable wireless EMS unit Compex makes and users love it — but at ~€1,000+ it’s a premium training adjunct, not a proven performance or recovery shortcut."
-sqwodScore: 75
+verdict: "The most capable wireless EMS unit Compex makes and users love it — but at ~€900+ it’s a premium training adjunct, not a proven performance or recovery shortcut."
+sqwodScore: 73
 confidence: Medium
 crowd:
   score: 80
@@ -28,7 +28,7 @@ crowd:
     - { name: "testberichte.de", value: "1.7 Gut", url: "https://www.testberichte.de/p/compex-muskelstimulation-tests/sp-8-0-testbericht.html" }
     - { name: "BarBend (Compex Wireless)", value: "7.4/10", url: "https://barbend.com/compex-wireless-review/" }
 assessment:
-  score: 76
+  score: 71
   criteria:
     - { name: "Versatility", score: 8.8 }
     - { name: "Wireless build", score: 8.5 }
@@ -37,16 +37,15 @@ assessment:
     - { name: "Value", score: 5.5 }
 value:
   score: 55
-  bestPrice: 999
+  bestPrice: 890.39
   currency: EUR
-  low: 999
 pros:
   - "Truly wireless with 4 independent modules — freedom of movement"
   - "Broadest program library in the range (40 programs: strength, recovery, TENS, rehab)"
   - "Mi-sensor auto-calibration tailors intensity per user"
   - "Strong crowd sentiment (4.3/5, ~480 Amazon.de reviews)"
 cons:
-  - "Expensive — €999–1,200"
+  - "Expensive — €890–1,200"
   - "Consumable self-adhesive electrodes are a recurring cost"
   - "Mixed evidence: EMS helps strength as an ADJUNCT to real training, not standalone; recovery evidence is thinner"
 whoFor:
@@ -62,4 +61,4 @@ tags: ["recovery", "ems", "muscle-stimulation"]
 
 The SP 8.0 Wireless is the top of Compex’s muscle-stim range: four cable-free modules, 40 programs across strength, TENS pain and recovery, and Mi-sensor auto-calibration. Users rate it highly (4.3/5 across ~480 reviews), and as a versatile, genuinely wireless unit it’s the most capable Compex makes.
 
-Be honest about the science and the price, though. Peer-reviewed reviews find EMS builds strength as an adjunct superimposed on voluntary training — not as a standalone shortcut — and the recovery evidence is thinner still. At ~€1,000+ plus consumable electrodes, buy it for convenience and versatility next to your training, not for miracles.
+Be honest about the science and the price, though. Peer-reviewed reviews find EMS builds strength as an adjunct superimposed on voluntary training — not as a standalone shortcut — and the recovery evidence is thinner still. At ~€900+ plus consumable electrodes, buy it for convenience and versatility next to your training, not for miracles.

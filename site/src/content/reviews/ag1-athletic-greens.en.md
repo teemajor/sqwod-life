@@ -11,13 +11,13 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Link = DTC drinkag1.com (Impact 23569, 15%, EUR, ships DE) — verified tracking 2026-09-11. ALSO on amazon.de now (B0FDD89ZTZ, ~EUR 107, sold by AG1 EU), but Impact's AG1 Amazon Seller programme (56343, 20%) resolves to amazon.COM only, so it is unusable for DACH readers. Keep the DTC link. Evidence-critical review: NSF Certified for Sport is real, but proprietary blend + thin INDEPENDENT evidence + high price. Trustpilot exact score UNVERIFIED.
 verdict: "A well-made, exhaustively tested convenience greens — but a premium price, undisclosed blend doses and thin independent evidence make it hard to justify over a solid diet."
-sqwodScore: 66
+sqwodScore: 61
 confidence: Low
 crowd:
   score: 68
@@ -29,7 +29,7 @@ crowd:
     - { name: "Trustpilot", value: "~4.0★ (1,000+)", url: "https://www.trustpilot.com/review/drinkag1.com" }
     - { name: "Healthline", value: "No score / cautious", url: "https://www.healthline.com/nutrition/athletic-greens-review" }
 assessment:
-  score: 72
+  score: 59
   criteria:
     - { name: "Third-party testing", score: 9 }
     - { name: "Ingredients", score: 7 }
@@ -41,7 +41,6 @@ value:
   bestPrice: 87
   currency: EUR
   priceType: monthly
-  low: 87
   subscription: "€87/mo subscription (30 servings, ~€2.90/serving)"
 pros:
   - "Broad all-in-one micronutrient, probiotic and adaptogen profile"

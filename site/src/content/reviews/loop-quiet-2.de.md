@@ -11,13 +11,13 @@ pillar: gear
 type: sleep
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de ASIN B0D3V4V1KD (Loop ist großer Amazon-Verkäufer). Verkäufer+Bild per SiteStripe prüfen. 19,95 € (auch loopearplugs.com). 24 dB SNR Marketing vs ~21 dB unabhängiges Labor-NRR — Standard-Unterschied erklären.
 verdict: "Ein bequemer, gut bewerteter, wiederverwendbarer Silikon-Ohrstöpsel (24 dB SNR, Labor-„B“) — eine wirklich starke Seitenschläfer-Wahl, nur keine totale Stille oder medizinische Lösung."
-sqwodScore: 82
+sqwodScore: 85
 confidence: Medium
 crowd:
   score: 82
@@ -28,7 +28,7 @@ crowd:
     - { name: "HearAdvisor (Labor)", value: "„B“ SoundGrade", url: "https://www.hearingtracker.com/de/earplugs/loop-earplugs-review-lab-and-real-life-test-of-engage-experience-quiet-switch-2" }
     - { name: "HearingTracker (Experte)", value: "Positiv", url: "https://www.hearingtracker.com/de/earplugs/loop-earplugs-review-lab-and-real-life-test-of-engage-experience-quiet-switch-2" }
 assessment:
-  score: 80
+  score: 86
   criteria:
     - { name: "Lärmreduktion", score: 8 }
     - { name: "Komfort (Seitenschlaf)", score: 8.8 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 9 }
 value:
   score: 88
-  bestPrice: 20
+  bestPrice: 19.95
   currency: EUR
-  low: 17
 pros:
   - "Starke passive Dämpfung für einen wiederverwendbaren Stöpsel — 24 dB SNR, Loop-Spitze"
   - "Vier Ohr-Tip-Größen für hohe Passform-Erfolgsrate"

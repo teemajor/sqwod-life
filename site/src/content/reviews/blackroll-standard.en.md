@@ -11,13 +11,13 @@ pillar: gear
 type: recovery
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # German brand, Amazon.de. Roller ASIN B07DLPFJBP (NOT B09HV3329D — that is the Fascia GUN). Verify seller+image via SiteStripe before wiring Amazon. For now: brand-direct + fallback.
 verdict: "The German original that set the foam-roller standard — durable, medium-firm and physio-trusted, if priced above generic rollers."
-sqwodScore: 83
+sqwodScore: 84
 confidence: High
 crowd:
   score: 88
@@ -28,7 +28,7 @@ crowd:
     - { name: "testbericht.de", value: "4.6★ (58)", url: "https://www.testbericht.de/produkte/blackroll-faszienrolle-standard-45-brstabk45c" }
     - { name: "fitzuhause.net", value: "4.5/5", url: "https://fitzuhause.net/blackroll-standard-faszienrolle-test/" }
 assessment:
-  score: 80
+  score: 83
   criteria:
     - { name: "Effectiveness", score: 8.4 }
     - { name: "Durability", score: 9.2 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Versatility", score: 8.3 }
 value:
   score: 74
-  bestPrice: 30
+  bestPrice: 25.45
   currency: EUR
-  low: 20
 pros:
   - "Effective medium firmness for muscle and fascia release"
   - "High-quality, recyclable EPP foam — made in Germany"

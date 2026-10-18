@@ -8,11 +8,11 @@ category: "Recovery- & Schlaf-Tracker"
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-10
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der von Coaches meistgeschätzte Schlaf- und Readiness-Tracker — diskret, da genau, wo es zählt, und der Recovery-Maßstab. Das Abo ist der Haken."
-sqwodScore: 89
+sqwodScore: 86
 confidence: High
 crowd:
   score: 91
@@ -26,7 +26,7 @@ crowd:
     - { name: "YouTube", value: "+68%" }
     - { name: "Experten-Ø", value: "8.7/10" }
 assessment:
-  score: 86
+  score: 84
   criteria:
     - { name: "Genauigkeit", score: 9.0 }
     - { name: "Preis-Leistung", score: 7.2 }

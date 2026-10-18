@@ -11,13 +11,13 @@ pillar: gear
 type: studio-tools
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: false
 draft: false
 # US SaaS (pushpress.com). Listed on merit (affiliate:false), routes to Sqwod OS. Payments = Stripe/USD; EU/DE fit (SEPA, German UI, GDPR) UNVERIFIED/likely poor — flagged honestly.
 verdict: "A top-rated, all-in-one gym platform with a genuinely useful free tier — excellent for US operators, but built around US/Stripe payments rather than the European market."
-sqwodScore: 76
+sqwodScore: 77
 confidence: Medium
 crowd:
   score: 82
@@ -29,7 +29,7 @@ crowd:
     - { name: "App Store (members)", value: "4.8★ (6.7k)", url: "https://apps.apple.com/us/app/pushpress-members/id1309909578" }
     - { name: "Google Play (members)", value: "3.4★ (1.5k)", url: "https://play.google.com/store/apps/details?id=com.pushpress.memberportal" }
 assessment:
-  score: 80
+  score: 74
   criteria:
     - { name: "Features", score: 8.4 }
     - { name: "Billing", score: 8 }

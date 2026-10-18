@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,16 +37,15 @@ assessment:
     - { name: "Preis-Leistung", score: 7 }
 value:
   score: 74
-  bestPrice: 45
+  bestPrice: 47.90
   currency: EUR
-  low: 42
 pros:
   - "Deutscher Marktführer — das vertraute Standard-Whey im DACH-Raum"
   - "Konzentrat-plus-Isolat-Komplex, bis zu ~25 g Protein pro Portion"
   - "Streng laborgeprüft (>80k Tests/Jahr, FSSC 22000 / HACCP)"
   - "Gelobt für Löslichkeit, cremige Textur und Sortenvielfalt"
 cons:
-  - "Preisaufschlag — 44–50 €/kg liegt über rabattierten Rivalen wie Myprotein"
+  - "Preisaufschlag — 48–53 €/kg liegt über rabattierten Rivalen wie Myprotein"
   - "Polarisierendes Geschmacks-Feedback; außerhalb DACH/EU begrenzt verfügbar"
 whoFor:
   buy: "Du bist DACH-Coach oder -Kund:in und willst ein weithin vertrautes, laborgeprüftes deutsches Whey mit exzellenter Löslichkeit und großer Sortenwahl."
@@ -61,4 +60,4 @@ tags: ["supplements", "protein", "whey"]
 
 ESN ist laut Umfrage Deutschlands beliebtestes Whey, und Designer Whey zeigt warum: ein Konzentrat-plus-Isolat-Komplex mit bis zu ~25 g Protein pro Portion, strenge hauseigene Laborprüfung und durchweg gelobte Löslichkeit und Geschmack. Für DACH-Coaches, die Markensicherheit schätzen, ist es der vertraute Standard.
 
-Der Preis ist der Kompromiss. Mit 44–50 €/kg liegt es klar über einem rabattierten Myprotein, der Geschmack polarisiert über die Range etwas, und außerhalb Deutschlands und der EU wird die Verfügbarkeit schnell dünn. Man zahlt für deutsche laborgeprüfte Sicherheit — lohnend, wenn diese Gewissheit wichtiger ist als die letzten Euro pro Kilo.
+Der Preis ist der Kompromiss. Mit 48–53 €/kg liegt es klar über einem rabattierten Myprotein, der Geschmack polarisiert über die Range etwas, und außerhalb Deutschlands und der EU wird die Verfügbarkeit schnell dünn. Man zahlt für deutsche laborgeprüfte Sicherheit — lohnend, wenn diese Gewissheit wichtiger ist als die letzten Euro pro Kilo.

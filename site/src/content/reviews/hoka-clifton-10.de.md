@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -38,9 +38,8 @@ assessment:
     - { name: "Lebendigkeit", score: 6.5 }
 value:
   score: 82
-  bestPrice: 160
+  bestPrice: 127.99
   currency: EUR
-  low: 110
 pros:
   - "Hervorragender Gelenk-/Aufprallschutz, stabil trotz hoher Sohle"
   - "Geräumigeres Vorfuß, weiches, bequemes Strick-Obermaterial"

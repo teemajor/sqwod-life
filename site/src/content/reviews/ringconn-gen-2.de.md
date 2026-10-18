@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung (kein Abo)", score: 9 }
 value:
   score: 86
-  bestPrice: 269
+  bestPrice: 279
   currency: EUR
-  low: 234
 pros:
   - "Erstklassiger Akku: ~12 Tage plus Ladecase mit ~150 Tagen"
   - "Kein Abo — alle Werte inklusive (Oura verlangt 5,99 €/Monat)"

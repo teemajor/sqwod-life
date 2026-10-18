@@ -10,11 +10,11 @@ gallery: 4
 pillar: gear
 conversion: sqwod-ai
 publishedAt: 2026-06-09
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The coach's strain-and-recovery band — screenless, always-on, built for athletes who train by readiness. The subscription model is the commitment."
-sqwodScore: 85
+sqwodScore: 82
 confidence: High
 crowd:
   score: 84
@@ -26,7 +26,7 @@ crowd:
     - { name: "Reddit", value: "+64%" }
     - { name: "Expert avg", value: "8.4/10" }
 assessment:
-  score: 86
+  score: 84
   criteria:
     - { name: "Accuracy", score: 8.8 }
     - { name: "Value", score: 7.0 }

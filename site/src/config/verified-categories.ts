@@ -46,6 +46,10 @@ export interface Category {
 // plain brand homepage meant readers saw "Affiliate" on 43 links that paid nothing
 // (audit 17 Oct 2026). Labels and rel="sponsored" now follow the link itself, so
 // swapping in a network link flips the label with no other edit.
+// 2026-10-17 programme check: no affiliate programme covers Germany for Brooks, Vuori,
+// Gymshark, Compex, Ten Thousand, Tonal, Hatch, Ritual, David, Maurten or NÜOBELL, and
+// TrainingPeaks, Runna and MyFitnessPal are software (no SaaS partnerships, Tee's rule
+// 2026-07-24). Those picks are `affiliate: false` until a DE programme exists.
 export const TRACKED_RX = /pxf\.io|sjv\.io|r7kg\.net|awin1\.com|[?&]tag=sqwod|prf\.hn|tradedoubler|partnerize|impact\.com|clk\./i;
 export const earns = (p?: Pick | null) => !!p && p.affiliate && TRACKED_RX.test(p.url);
 // The pick behind a review (its /go/ target), and whether that link earns.
@@ -119,7 +123,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Foam rolling', de: 'Faszienrolle' }, why: { en: 'The German original — durable, medium-firm, physio-trusted foam roller.', de: 'Das deutsche Original — langlebige, mittelfeste, physio-erprobte Faszienrolle.' } },
       { product: 'Hyperice Normatec 3', brand: 'Hyperice', url: 'https://hyperice.com/', affiliate: true, reviewSlug: 'hyperice-normatec-3',
         bestFor: { en: 'Compression recovery', de: 'Kompressions-Recovery' }, why: { en: 'Premium, user-loved pneumatic compression boots — cordless with app control.', de: 'Hochwertige, beliebte Kompressionsstiefel — kabellos mit App-Steuerung.' } },
-      { product: 'Compex SP 8.0 Wireless', brand: 'Compex', url: 'https://www.compex.com/de/', affiliate: true, reviewSlug: 'compex-sp-80',
+      { product: 'Compex SP 8.0 Wireless', brand: 'Compex', url: 'https://www.compex.com/de/', affiliate: false, reviewSlug: 'compex-sp-80',
         bestFor: { en: 'Wireless EMS', de: 'Kabelloses EMS' }, why: { en: 'Compex\'s most capable wireless EMS unit — a premium training adjunct.', de: 'Compex\' leistungsstärkstes kabelloses EMS-Gerät — ein Premium-Trainings-Add-on.' } },
       { product: 'Pulsetto', brand: 'Pulsetto', url: 'https://eu.pulsetto.tech/', affiliate: true, reviewSlug: 'pulsetto-vagus',
         bestFor: { en: 'Vagus-nerve relaxation', de: 'Vagusnerv-Entspannung' }, why: { en: 'A hands-free, well-loved relaxation aid at half the price of rivals — a low-risk try (see our honest evidence note).', de: 'Freihändige, beliebte Entspannungshilfe zum halben Preis der Rivalen — ein risikoarmer Versuch (siehe ehrliche Studien-Einordnung).' } },
@@ -140,7 +144,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Latest Pod we scored', de: 'Neuester von uns bewerteter Pod' }, why: { en: 'Dual-zone heating and cooling plus the hydro blanket. Pod 6 is now out; we have not scored it yet.', de: 'Zwei-Zonen-Heizen und -Kühlen plus Hydro-Decke. Pod 6 ist inzwischen da; er ist noch nicht bewertet.' } },
       { product: 'Muse S Athena', brand: 'Muse', url: 'https://www.amazon.de/dp/B0F4F15WDD?tag=sqwod-21', affiliate: true, reviewSlug: 'muse-s-athena',
         bestFor: { en: 'Meditation & sleep EEG', de: 'Meditation & Schlaf-EEG' }, why: { en: 'EEG + fNIRS headband for objective meditation, focus and sleep biofeedback.', de: 'EEG-+-fNIRS-Stirnband für objektives Biofeedback bei Meditation, Fokus und Schlaf.' } },
-      { product: 'Hatch Restore', brand: 'Hatch', url: 'https://www.hatch.co/', affiliate: true,
+      { product: 'Hatch Restore', brand: 'Hatch', url: 'https://www.hatch.co/', affiliate: false,
         bestFor: { en: 'Wind-down & wake', de: 'Runterkommen & Aufwachen' }, why: { en: 'Sunrise alarm + sound for a screen-free wind-down routine. Review coming.', de: 'Sonnenaufgangs-Wecker + Sound für eine bildschirmfreie Abendroutine. Bewertung folgt.' } },
       { product: 'Manta Sleep Mask', brand: 'Manta Sleep', url: 'https://mantasleep.pxf.io/c/2210087/4019676/41195', affiliate: true, reviewSlug: 'manta-sleep-mask',
         bestFor: { en: 'Total blackout', de: 'Komplette Dunkelheit' }, why: { en: 'Genuinely blackout, pressure-free mask that serious sleepers swear by.', de: 'Wirklich lichtdichte, druckfreie Maske, auf die anspruchsvolle Schläfer schwören.' } },
@@ -161,11 +165,11 @@ export const categories: Category[] = [
     picks: [
       { product: 'Momentous (Creatine + Protein)', brand: 'Momentous', url: 'https://www.livemomentous.com/', affiliate: true, reviewSlug: 'momentous',
         bestFor: { en: 'NSF-certified basics', de: 'NSF-zertifizierte Basics' }, why: { en: 'Sports-science supplements with NSF/Informed-Sport testing — safe to recommend to tested athletes.', de: 'Sport-Supplements mit NSF/Informed-Sport-Prüfung — bedenkenlos für getestete Athlet:innen.' } },
-      { product: 'Ritual Essential for Women 18+', brand: 'Ritual', url: 'https://ritual.com/', affiliate: true, reviewSlug: 'ritual-essential-women',
+      { product: 'Ritual Essential for Women 18+', brand: 'Ritual', url: 'https://ritual.com/', affiliate: false, reviewSlug: 'ritual-essential-women',
         bestFor: { en: 'Daily multivitamin', de: 'Tägliches Multivitamin' }, why: { en: 'Transparent, USP-verified vegan multivitamin — a clean fill-the-gaps default.', de: 'Transparentes, USP-verifiziertes veganes Multivitamin — saubere Lücken-füllen-Wahl.' } },
       { product: 'Seed DS-01', brand: 'Seed', url: 'https://seed.com/', affiliate: true, reviewSlug: 'seed-ds-01',
         bestFor: { en: 'Gut health', de: 'Darmgesundheit' }, why: { en: 'Broad 24-strain synbiotic with an acid-protective capsule and real (if brand-funded) trials.', de: 'Breites 24-Stämme-Synbiotikum mit säureschützender Kapsel und echten (wenn markenfinanzierten) Studien.' } },
-      { product: 'David Protein', brand: 'David', url: 'https://davidprotein.com/', affiliate: true,
+      { product: 'David Protein', brand: 'David', url: 'https://davidprotein.com/', affiliate: false,
         bestFor: { en: 'High-protein bar', de: 'High-Protein-Riegel' }, why: { en: '28g protein, near-zero sugar — the buzziest performance bar right now. Review coming.', de: '28 g Protein, fast null Zucker — aktuell der meistdiskutierte Performance-Riegel. Bewertung folgt.' } },
       { product: 'Myprotein Impact Whey', brand: 'Myprotein', url: 'https://www.myprotein.de/', affiliate: true, reviewSlug: 'myprotein-impact-whey',
         bestFor: { en: 'Value whey', de: 'Preis-Leistungs-Whey' }, why: { en: 'The certified ~€30/kg value benchmark — buy it on a discount code.', de: 'Der zertifizierte ~30-€/kg-Preis-Leistungs-Maßstab — mit Rabattcode kaufen.' } },
@@ -175,7 +179,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Creatine', de: 'Kreatin' }, why: { en: 'Clean, vegan, lab-tested creatine — the most evidence-backed supplement, done right.', de: 'Cleanes, veganes, laborgetestetes Kreatin — das bestbelegte Supplement, richtig gemacht.' } },
       { product: 'Optimum Nutrition Gold Standard', brand: 'Optimum Nutrition', url: 'https://www.amazon.de/dp/B000QSNYGI?tag=sqwod-21', affiliate: true, reviewSlug: 'optimum-nutrition-gold-standard',
         bestFor: { en: 'All-round whey', de: 'Allround-Whey' }, why: { en: 'The genre-defining whey — great mixability and Informed-Choice tested.', de: 'Der Whey-Klassiker — top Löslichkeit und Informed-Choice-getestet.' } },
-      { product: 'Maurten GEL 100', brand: 'Maurten', url: 'https://www.maurten.com/', affiliate: true, reviewSlug: 'maurten-gel-100',
+      { product: 'Maurten GEL 100', brand: 'Maurten', url: 'https://www.maurten.com/', affiliate: false, reviewSlug: 'maurten-gel-100',
         bestFor: { en: 'Race-day fuel', de: 'Wettkampf-Verpflegung' }, why: { en: 'Superbly gut-friendly endurance gel elites swear by (at a premium).', de: 'Extrem magenfreundliches Ausdauer-Gel, auf das Top-Athleten schwören (zum Premiumpreis).' } },
       { product: 'AG1 (Athletic Greens)', brand: 'AG1', url: 'https://drinkag1nordic.pxf.io/c/2210087/3862778/23569', affiliate: true, reviewSlug: 'ag1-athletic-greens',
         bestFor: { en: 'Convenience greens', de: 'Greens für unterwegs' }, why: { en: 'Exhaustively tested greens powder — convenient, but premium-priced with thin evidence.', de: 'Ausführlich getestetes Greens-Pulver — praktisch, aber teuer und dünn belegt.' } },
@@ -200,7 +204,7 @@ export const categories: Category[] = [
     picks: [
       { product: 'Peloton Bike', brand: 'Peloton', url: 'https://www.onepeloton.com/', affiliate: true, reviewSlug: 'peloton-bike',
         bestFor: { en: 'Class experience', de: 'Kurs-Erlebnis' }, why: { en: 'The benchmark for connected cardio classes — worth it if you use the subscription.', de: 'Der Maßstab für vernetzte Cardio-Kurse — lohnt sich, wenn du das Abo nutzt.' } },
-      { product: 'Tonal', brand: 'Tonal', url: 'https://www.tonal.com/', affiliate: true,
+      { product: 'Tonal', brand: 'Tonal', url: 'https://www.tonal.com/', affiliate: false,
         bestFor: { en: 'Strength at home', de: 'Kraft zuhause' }, why: { en: 'Digital cable machine with adaptive resistance — strength in a wall\'s footprint. Review coming.', de: 'Digitale Kabelzug-Maschine mit adaptivem Widerstand — Kraft auf Wandfläche. Bewertung folgt.' } },
       { product: 'Zwift', brand: 'Zwift', url: 'https://www.zwift.com/', affiliate: false,
         bestFor: { en: 'Indoor cycling/running', de: 'Indoor-Cycling/Laufen' }, why: { en: 'The social training platform for turbo trainers and treadmills. Listed on merit.', de: 'Die soziale Trainings-Plattform für Rollentrainer und Laufbänder. Auf Empfehlung gelistet.' } },
@@ -210,7 +214,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Indoor rowing', de: 'Indoor-Rudern' }, why: { en: 'The gold-standard erg — near-indestructible with accurate PM5 data.', de: 'Der Goldstandard unter den Ergos — nahezu unkaputtbar mit präzisen PM5-Daten.' } },
       { product: 'Speediance Gym Monster 2', brand: 'Speediance', url: 'https://eu.speediance.com/', affiliate: true, reviewSlug: 'speediance-gym-monster-2',
         bestFor: { en: 'All-in-one smart gym', de: 'All-in-one Smart-Gym' }, why: { en: 'A compact digital cable machine with a strong app — a whole gym in one footprint.', de: 'Kompakte digitale Kabelmaschine mit starker App — ein ganzes Gym auf einer Stellfläche.' } },
-      { product: 'NÜOBELL Adjustable Dumbbell', brand: 'NÜOBELL', url: 'https://eu.nuoathletics.com/', affiliate: true, reviewSlug: 'nuobell-adjustable-dumbbell',
+      { product: 'NÜOBELL Adjustable Dumbbell', brand: 'NÜOBELL', url: 'https://eu.nuoathletics.com/', affiliate: false, reviewSlug: 'nuobell-adjustable-dumbbell',
         bestFor: { en: 'Adjustable dumbbells', de: 'Verstellbare Kurzhanteln' }, why: { en: 'Gym-grade 5–24 kg dial dumbbells that replace a whole rack in seconds.', de: 'Gym-taugliche 5–24-kg-Dreh-Kurzhanteln, die ein ganzes Rack in Sekunden ersetzen.' } },
     ],
   },
@@ -223,15 +227,15 @@ export const categories: Category[] = [
       de: 'Trainings-Kleidung und Schuhe, die halten — für Coaches, Mitglieder und Geschenk-Guides.',
     },
     picks: [
-      { product: 'Gymshark Vital Seamless 2.0', brand: 'Gymshark', url: 'https://www.gymshark.com/', affiliate: true, reviewSlug: 'gymshark-vital-seamless',
+      { product: 'Gymshark Vital Seamless 2.0', brand: 'Gymshark', url: 'https://www.gymshark.com/', affiliate: false, reviewSlug: 'gymshark-vital-seamless',
         bestFor: { en: 'Gym apparel', de: 'Gym-Bekleidung' }, why: { en: 'Affordable, iconic seamless training staple that ships fast to Germany.', de: 'Bezahlbarer, ikonischer Seamless-Klassiker fürs Training, schnell nach Deutschland geliefert.' } },
-      { product: 'Ten Thousand Interval Short', brand: 'Ten Thousand', url: 'https://www.tenthousand.cc/', affiliate: true, reviewSlug: 'ten-thousand-interval-short',
+      { product: 'Ten Thousand Interval Short', brand: 'Ten Thousand', url: 'https://www.tenthousand.cc/', affiliate: false, reviewSlug: 'ten-thousand-interval-short',
         bestFor: { en: 'Training shorts', de: 'Trainings-Shorts' }, why: { en: 'Durable, high-mobility do-everything short (US-only shipping — see review).', de: 'Langlebige, sehr bewegliche Allround-Short (nur US-Versand — siehe Test).' } },
       { product: 'Alo High-Waist Airlift Legging', brand: 'Alo Yoga', url: 'https://www.aloyoga.com/en-de/', affiliate: true, reviewSlug: 'alo-airlift-legging',
         bestFor: { en: 'Yoga & studio', de: 'Yoga & Studio' }, why: { en: 'Premium, sculpting compression legging with a localized German store.', de: 'Hochwertige, formende Kompressions-Legging mit lokalisiertem deutschen Store.' } },
       { product: 'ASICS Gel-Nimbus 27', brand: 'ASICS', url: 'https://www.asics.com/de/de-de/', affiliate: true, reviewSlug: 'asics-gel-nimbus-27',
         bestFor: { en: 'Max-cushion easy miles', de: 'Max-Cushion für lockere Läufe' }, why: { en: 'Plush, stable max-cushion daily trainer — the value pick on discount.', de: 'Weicher, stabiler Max-Cushion-Alltagsschuh — der Preis-Tipp im Angebot.' } },
-      { product: 'Brooks Ghost 18', brand: 'Brooks', url: 'https://www.brooksrunning.com/de_de/', affiliate: true, reviewSlug: 'brooks-ghost-18',
+      { product: 'Brooks Ghost 18', brand: 'Brooks', url: 'https://www.brooksrunning.com/de_de/', affiliate: false, reviewSlug: 'brooks-ghost-18',
         bestFor: { en: 'Foolproof daily trainer', de: 'Narrensicherer Alltagsschuh' }, why: { en: 'Dependable, durable neutral trainer — safe over spectacular.', de: 'Zuverlässiger, langlebiger Neutralschuh — sicher statt spektakulär.' } },
       { product: 'Nike Pegasus 42', brand: 'Nike', url: 'https://www.nike.com/de/', affiliate: true, reviewSlug: 'nike-pegasus-42',
         bestFor: { en: 'Everyday workhorse', de: 'Alltags-Arbeitstier' }, why: { en: 'Reliable, durable neutral trainer that nails comfort — an average but safe ride.', de: 'Zuverlässiger, langlebiger Neutralschuh mit top Komfort — durchschnittliches, aber sicheres Laufgefühl.' } },
@@ -245,7 +249,7 @@ export const categories: Category[] = [
         bestFor: { en: 'Plush daily miles', de: 'Weiche Alltagskilometer' }, why: { en: 'Comfort-first max-cushion daily trainer for easy and recovery runs.', de: 'Komfortorientierter Max-Cushion-Trainer für lockere Läufe und Regeneration.' } },
       { product: 'Vivobarefoot Primus Lite III', brand: 'Vivobarefoot', url: 'https://vivobarefootltd.pxf.io/c/2210087/3827543/48989?u=https%3A%2F%2Fwww.vivobarefoot.com%2Fde', affiliate: true, reviewSlug: 'vivobarefoot-primus-lite',
         bestFor: { en: 'Barefoot training shoe', de: 'Barfuß-Trainingsschuh' }, why: { en: 'Premium wide-toe barefoot trainer with real ground feel for natural movement.', de: 'Hochwertiger Barfuß-Trainer mit breiter Zehenbox und echtem Bodengefühl für natürliche Bewegung.' } },
-      { product: 'Vuori Kore Short', brand: 'Vuori', url: 'https://vuoriclothing.de/', affiliate: true, reviewSlug: 'vuori-kore-short',
+      { product: 'Vuori Kore Short', brand: 'Vuori', url: 'https://vuoriclothing.de/', affiliate: false, reviewSlug: 'vuori-kore-short',
         bestFor: { en: 'Do-everything short', de: 'Allround-Short' }, why: { en: 'A cult-favorite short with buttery fabric that goes from gym to lounge effortlessly.', de: 'Kult-Short mit ultraweichem Stoff — vom Gym bis zur Couch mühelos vielseitig.' } },
     ],
   },
@@ -258,11 +262,11 @@ export const categories: Category[] = [
       de: 'Apps fürs Tracking, Programmieren und Coaching — für Athlet:innen und ihre Coaches.',
     },
     picks: [
-      { product: 'TrainingPeaks', brand: 'TrainingPeaks', url: 'https://www.trainingpeaks.com/', affiliate: true, reviewSlug: 'trainingpeaks',
+      { product: 'TrainingPeaks', brand: 'TrainingPeaks', url: 'https://www.trainingpeaks.com/', affiliate: false, reviewSlug: 'trainingpeaks',
         bestFor: { en: 'Endurance coaching', de: 'Ausdauer-Coaching' }, why: { en: 'The standard for structured endurance programming and athlete management.', de: 'Der Standard für strukturiertes Ausdauer-Programmieren und Athleten-Management.' } },
-      { product: 'Runna', brand: 'Runna', url: 'https://www.runna.com/', affiliate: true,
+      { product: 'Runna', brand: 'Runna', url: 'https://www.runna.com/', affiliate: false,
         bestFor: { en: 'Guided run plans', de: 'Geführte Lauf-Pläne' }, why: { en: 'Personalized run plans that bridge solo runners and coaches. Review coming.', de: 'Personalisierte Lauf-Pläne als Brücke zwischen Solo-Läufer:innen und Coaches. Bewertung folgt.' } },
-      { product: 'MyFitnessPal', brand: 'MyFitnessPal', url: 'https://www.myfitnesspal.com/', affiliate: true,
+      { product: 'MyFitnessPal', brand: 'MyFitnessPal', url: 'https://www.myfitnesspal.com/', affiliate: false,
         bestFor: { en: 'Nutrition logging', de: 'Ernährungs-Tracking' }, why: { en: 'The largest food database for clients who track intake. Listed on merit.', de: 'Die größte Lebensmittel-Datenbank fürs Tracking. Auf Empfehlung gelistet.' } },
       { product: 'Pvolve', brand: 'Pvolve', url: 'https://pvolve.r7kg.net/c/2210087/1295530/8810', affiliate: true,
         bestFor: { en: 'Low-impact strength', de: 'Gelenkschonendes Krafttraining' }, why: { en: 'Resistance-based method for clients who need joint-friendly progressive loading. Review coming.', de: 'Widerstandsbasierte Methode f\u00fcr Kund:innen, die gelenkschonende progressive Belastung brauchen. Bewertung folgt.' } },

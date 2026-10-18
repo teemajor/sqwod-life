@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,9 @@ assessment:
     - { name: "Preis-Leistung", score: 6 }
 value:
   score: 65
-  bestPrice: 25
+  bestPrice: 24.99
   currency: EUR
-  low: 22
+  low: 21.99
 pros:
   - "Hervorragender Schokoriegel-Geschmack und Textur bei fast allen Sorten"
   - "20g Protein und nur ~1,5g Zucker pro Riegel (0g zugesetzter Zucker)"

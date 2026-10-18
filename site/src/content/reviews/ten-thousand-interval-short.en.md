@@ -11,13 +11,13 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC, NOT on Amazon. Ten Thousand ships to US/Canada only — no direct DE/EU delivery (via Mr Porter or EU reseller WODgear.nl ~€68). /go on publish: tenthousand.cc (pending Impact/CJ/direct). On-site 4.9★ count is brand-hosted (non-independent).
 verdict: "A durable, highly mobile do-it-all training short that reviewers rate well — let down for German buyers by US-only direct shipping and mixed post-sale support."
-sqwodScore: 79
+sqwodScore: 78
 confidence: Medium
 crowd:
   score: 82
@@ -28,7 +28,7 @@ crowd:
     - { name: "ThatFitFriend", value: "4.6/5", url: "https://thatfitfriend.com/ten-thousand-interval-short-review/" }
     - { name: "Gear Patrol", value: "Winner vs Lululemon", url: "https://www.gearpatrol.com/fitness/a40782324/ten-thousand-vs-lululemon-workout-shorts/" }
 assessment:
-  score: 80
+  score: 77
   criteria:
     - { name: "Mobility", score: 8.8 }
     - { name: "Durability", score: 8.5 }

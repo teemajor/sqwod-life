@@ -8,11 +8,11 @@ category: "Recovery & sleep trackers"
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-10
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The most coach-trusted sleep and readiness tracker — discreet, accurate where it counts, and the recovery benchmark. The subscription is the catch."
-sqwodScore: 89
+sqwodScore: 86
 confidence: High
 crowd:
   score: 91
@@ -26,7 +26,7 @@ crowd:
     - { name: "YouTube", value: "+68%" }
     - { name: "Expert avg", value: "8.7/10" }
 assessment:
-  score: 86
+  score: 84
   criteria:
     - { name: "Accuracy", score: 9.0 }
     - { name: "Value", score: 7.2 }

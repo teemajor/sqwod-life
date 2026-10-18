@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value (no subscription)", score: 9 }
 value:
   score: 86
-  bestPrice: 269
+  bestPrice: 279
   currency: EUR
-  low: 234
 pros:
   - "Class-leading battery: ~12 days plus ~150-day charging case"
   - "No subscription — all metrics included (Oura charges €5.99/mo)"

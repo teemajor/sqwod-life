@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 6 }
 value:
   score: 70
-  bestPrice: 399
+  bestPrice: 390.59
   currency: EUR
-  low: 396
 pros:
   - "Hervorragende Akkulaufzeit (bis zu ~8 Tage, lange GPS-Laufzeit)"
   - "Umfangreiche Sensoren: Zweifrequenz-GPS, EKG, SpO2, Hauttemperatur"

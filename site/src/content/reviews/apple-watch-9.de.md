@@ -10,11 +10,11 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-08
-updatedAt: 2026-06-14
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der beste Allrounder — Workouts, Benachrichtigungen, Schlaf, EKG — ohne Abo. Akku und Recovery-Tiefe sind die Kompromisse."
-sqwodScore: 84
+sqwodScore: 85
 confidence: High
 crowd:
   score: 88
@@ -26,7 +26,7 @@ crowd:
     - { name: "Reddit", value: "+70%" }
     - { name: "Experten-Ø", value: "8.6/10" }
 assessment:
-  score: 82
+  score: 84
   criteria:
     - { name: "Genauigkeit", score: 8.5 }
     - { name: "Preis-Leistung", score: 7.6 }

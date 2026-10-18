@@ -11,13 +11,13 @@ pillar: gear
 type: sleep
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de ASIN B07PRG2CQY; Manta runs an official Amazon.de brand store. Verify seller+image via SiteStripe. €47 (also mantasleep.de direct). On-site 4.7–4.8 is vendor-hosted; Trustpilot/Amazon 4.0–4.1 more independent.
 verdict: "A premium, genuinely-blackout, pressure-free mask that earns its crowd love for serious sleepers — worth the ~€47 if total darkness matters, overkill if it doesn’t."
-sqwodScore: 82
+sqwodScore: 83
 confidence: High
 crowd:
   score: 84
@@ -28,7 +28,7 @@ crowd:
     - { name: "Amazon.de", value: "4.1★ (~14,583)", url: "https://www.amazon.de/Manta-Schlafmaske-Verdunkelungsmaske-Augenmuscheln-Mittagsschlaf/dp/B07PRG2CQY" }
     - { name: "Trustpilot", value: "4.0★ (406)", url: "https://ca.trustpilot.com/review/mantasleep.com" }
 assessment:
-  score: 82
+  score: 84
   criteria:
     - { name: "Blackout", score: 9.2 }
     - { name: "Comfort", score: 8.6 }

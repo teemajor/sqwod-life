@@ -11,7 +11,7 @@ pillar: gear
 type: recovery
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,7 +37,7 @@ assessment:
     - { name: "Value", score: 6 }
 value:
   score: 62
-  bestPrice: 879
+  bestPrice: 899
   currency: EUR
   low: 719
 pros:

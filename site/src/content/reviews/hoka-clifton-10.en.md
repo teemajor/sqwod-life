@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -38,9 +38,8 @@ assessment:
     - { name: "Liveliness", score: 6.5 }
 value:
   score: 82
-  bestPrice: 160
+  bestPrice: 127.99
   currency: EUR
-  low: 110
 pros:
   - "Superb joint/impact protection, stable despite a tall stack"
   - "Roomier, wider forefoot with a plush, comfortable knit upper"

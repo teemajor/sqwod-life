@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -38,9 +38,9 @@ assessment:
     - { name: "Softness", score: 6.8 }
 value:
   score: 78
-  bestPrice: 150
+  bestPrice: 122
   currency: EUR
-  low: 105
+  low: 99.95
 pros:
   - "Huge, protective max cushioning on a wide, stable platform"
   - "Smooth CloudTec/rocker transition through the stride"

@@ -11,13 +11,13 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # PREIS/AFFILIATE-ENTSCHEIDUNG FÜR TEE: Amazon.de (ASIN B0F4F15WDD, Verkauf durch Amazon UK) = 493,45 €; Muses EU-Store (eu.choosemuse.com) günstiger bei 449,99 € und liefert nach DE. bestPrice unten = 449 € (echter Marktbestpreis). /go-Ziel beim Publish wählen: Amazon (sqwod-21-Provision jetzt aktiv) vs. Muse direkt (günstiger, Muse-Affiliate noch nicht freigegeben). Amazon /go: https://www.amazon.de/dp/B0F4F15WDD?tag=sqwod-21
 verdict: "Das einzige Consumer-Stirnband, das EEG mit fNIRS-Sensorik zur Hirn-Sauerstoffsättigung kombiniert, und ein wirklich guter Schlaf-Tracker — aber ein Premium-Kauf (~449 €) mit zusätzlichem Abo."
-sqwodScore: 73
+sqwodScore: 72
 confidence: Medium
 crowd:
   score: 72
@@ -29,7 +29,7 @@ crowd:
     - { name: "Trustpilot", value: "4.0★ (2.107)", url: "https://ca.trustpilot.com/review/choosemuse.com" }
     - { name: "Sleep Foundation", value: "~86% Genauigkeit", url: "https://www.sleepfoundation.org/best-sleep-trackers/muse-s-headband-review" }
 assessment:
-  score: 78
+  score: 76
   criteria:
     - { name: "Genauigkeit", score: 8.0 }
     - { name: "Innovation", score: 8.8 }
@@ -39,9 +39,8 @@ assessment:
     - { name: "Akku", score: 6.5 }
 value:
   score: 62
-  bestPrice: 449
+  bestPrice: 449.99
   currency: EUR
-  low: 449
   subscription: "45 €/Jahr (Muse Premium)"
 pros:
   - "Einziges Consumer-Stirnband mit EEG plus fNIRS-Sensorik (Hirn-Sauerstoff)"

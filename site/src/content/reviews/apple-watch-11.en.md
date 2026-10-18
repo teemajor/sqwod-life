@@ -9,13 +9,13 @@ glyph: watch
 type: wearables
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # NOTE: current-gen page. Factual fields (price, specs, crowd ratings, pros/cons) are sourced & real.
 verdict: "The battery finally goes the distance — up to 24 hours — and hypertension notifications plus 5G land real health wins. But it's an iterative jump: Series 9 and 10 owners gain little, and the cheaper SE undercuts it."
-sqwodScore: 84
+sqwodScore: 85
 confidence: High
 crowd:
   score: 88
@@ -27,7 +27,7 @@ crowd:
     - { name: "Engadget", value: "90/100" }
     - { name: "TechRadar", value: "4.2/5" }
 assessment:
-  score: 82
+  score: 84
   criteria:
     - { name: "Accuracy", score: 8.5 }
     - { name: "Value", score: 7.4 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Support", score: 8.8 }
 value:
   score: 80
-  bestPrice: 449
+  bestPrice: 380.99
   currency: EUR
-  low: 379
   subscription: "none"
 pros:
   - "Up to 24h battery — finally a full day-plus of use"

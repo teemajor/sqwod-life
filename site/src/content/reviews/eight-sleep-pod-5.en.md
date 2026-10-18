@@ -9,12 +9,12 @@ glyph: bed
 type: sleep-tech
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 verdict: "The most effective sleep-temperature system, now with a hydro-powered blanket for full-body cooling, built-in audio and a zero-gravity base. It works — but €3,299+ and a mandatory Autopilot subscription make it a serious commitment."
-sqwodScore: 80
+sqwodScore: 79
 confidence: High
 crowd:
   score: 83
@@ -26,7 +26,7 @@ crowd:
     - { name: "Sleep Foundation", value: "8.9/10" }
     - { name: "Cybernews", value: "4.2/5" }
 assessment:
-  score: 84
+  score: 81
   criteria:
     - { name: "Effectiveness", score: 9.3 }
     - { name: "Tracking", score: 8.5 }

@@ -11,13 +11,13 @@ pillar: gear
 type: equipment
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC (onepeloton.de). Live-DE-Preis + aktuellen SKU-Namen (Rebranding zu Cross Training Bike) vor Publish prüfen. Bike ~1.200 €; Bike+ bis 2.699 €.
 verdict: "Der Goldstandard fürs vernetzte Indoor-Cycling — nur lohnend, wenn du dich auf die 39-€/Monat-Kurse einlässt, die es glänzen lassen."
-sqwodScore: 78
+sqwodScore: 79
 confidence: Medium
 crowd:
   score: 84
@@ -29,7 +29,7 @@ crowd:
     - { name: "Trustpilot", value: "3.5★ (6.737)", url: "https://ca.trustpilot.com/review/onepeloton.com" }
     - { name: "Fitshop.de (Käufer)", value: "4.94★ (18)", url: "https://www.fitshop.de/peloton-bike-pl-ba01-0007" }
 assessment:
-  score: 84
+  score: 80
   criteria:
     - { name: "Kurse", score: 9.2 }
     - { name: "Verarbeitung", score: 8.6 }

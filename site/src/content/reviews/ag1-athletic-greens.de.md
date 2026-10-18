@@ -11,13 +11,13 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Link = DTC drinkag1.com (Impact 23569, 15%, EUR, liefert DE) — Tracking geprueft 2026-09-11. Inzwischen AUCH auf amazon.de (B0FDD89ZTZ, ca. EUR 107, Verkauf durch AG1 EU), aber Impacts AG1-Amazon-Seller-Programm (56343, 20%) fuehrt nur auf amazon.COM und ist damit fuer DACH-Leser unbrauchbar. DTC-Link beibehalten. Evidenzkritisch: NSF-Sport-Zertifikat real, aber Proprietary Blend + dünne UNABHÄNGIGE Evidenz + hoher Preis. Trustpilot-Score UNVERIFIED.
 verdict: "Ein gut gemachtes, umfassend getestetes Convenience-Greens — aber Premium-Preis, versteckte Blend-Dosen und dünne unabhängige Evidenz machen es gegenüber guter Ernährung schwer zu rechtfertigen."
-sqwodScore: 66
+sqwodScore: 61
 confidence: Low
 crowd:
   score: 68
@@ -29,7 +29,7 @@ crowd:
     - { name: "Trustpilot", value: "~4,0★ (1.000+)", url: "https://www.trustpilot.com/review/drinkag1.com" }
     - { name: "Healthline", value: "Kein Score / vorsichtig", url: "https://www.healthline.com/nutrition/athletic-greens-review" }
 assessment:
-  score: 72
+  score: 59
   criteria:
     - { name: "Labor-Prüfung", score: 9 }
     - { name: "Zutaten", score: 7 }
@@ -41,7 +41,6 @@ value:
   bestPrice: 87
   currency: EUR
   priceType: monthly
-  low: 87
   subscription: "87 €/Monat Abo (30 Portionen, ~2,90 €/Portion)"
 pros:
   - "Breites All-in-one-Profil aus Mikronährstoffen, Probiotika und Adaptogenen"

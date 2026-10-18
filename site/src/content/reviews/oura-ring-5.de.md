@@ -9,7 +9,7 @@ glyph: ring
 type: wearables
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -26,7 +26,7 @@ crowd:
     - { name: "TechRadar", value: "Design 5/5" }
     - { name: "testberichte.de", value: "2,0 gut" }
 assessment:
-  score: 86
+  score: 85
   criteria:
     - { name: "Genauigkeit", score: 9.0 }
     - { name: "Preis-Leistung", score: 7.0 }
@@ -36,7 +36,7 @@ assessment:
     - { name: "Support", score: 8.0 }
 value:
   score: 76
-  bestPrice: 429
+  bestPrice: 393.90
   currency: EUR
   subscription: "69,99 €/Jahr"
 pros:

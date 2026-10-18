@@ -10,7 +10,7 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Der klügste Kauf in Therabodys Sortiment — tiefe 16-mm-Percussion plus schnelle Wärme, in einem Griff, den man wirklich eine ganze Session halten kann. Der Preis ist der Haken."
@@ -37,9 +37,8 @@ assessment:
     - { name: "Coach-Fit", score: 8.8 }
 value:
   score: 78
-  bestPrice: 399
+  bestPrice: 348.99
   currency: EUR
-  low: 359
   history: [429, 429, 399, 399, 379, 359, 399, 399, 379, 399, 359, 399]
 pros:
   - "16 mm Amplitude + 40 lb Stall Force — wirklich tief"

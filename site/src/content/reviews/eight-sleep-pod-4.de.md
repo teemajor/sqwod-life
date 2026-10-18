@@ -10,11 +10,11 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "Das wirksamste Schlaf-Temperatursystem auf dem Markt — Zwei-Zonen-Heizen/Kühlen, das den Schlaf wirklich verbessert. Preis und Pflicht-Abo sind real."
-sqwodScore: 80
+sqwodScore: 79
 confidence: High
 crowd:
   score: 83
@@ -27,7 +27,7 @@ crowd:
     - { name: "Experten-Ø", value: "8.0/10" }
     - { name: "Reddit", value: "+68%" }
 assessment:
-  score: 84
+  score: 81
   criteria:
     - { name: "Wirksamkeit", score: 9.2 }
     - { name: "Tracking", score: 8.4 }

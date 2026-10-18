@@ -9,13 +9,13 @@ glyph: watch
 type: wearables
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # HINWEIS: Aktuelle Generation. Fakten (Preis, Specs, Bewertungen, Pro/Contra) sind belegt & real.
 verdict: "Die Akkulaufzeit reicht endlich — bis zu 24 Stunden — und Bluthochdruck-Hinweise plus 5G bringen echte Gesundheits-Mehrwerte. Aber es ist ein kleiner Sprung: Besitzer einer Series 9 oder 10 gewinnen wenig, und die günstigere SE unterbietet sie."
-sqwodScore: 84
+sqwodScore: 85
 confidence: High
 crowd:
   score: 88
@@ -27,7 +27,7 @@ crowd:
     - { name: "Engadget", value: "90/100" }
     - { name: "TechRadar", value: "4.2/5" }
 assessment:
-  score: 82
+  score: 84
   criteria:
     - { name: "Genauigkeit", score: 8.5 }
     - { name: "Preis-Leistung", score: 7.4 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Support", score: 8.8 }
 value:
   score: 80
-  bestPrice: 449
+  bestPrice: 380.99
   currency: EUR
-  low: 379
   subscription: "keine"
 pros:
   - "Bis zu 24 Std. Akku — endlich mehr als ein voller Tag"

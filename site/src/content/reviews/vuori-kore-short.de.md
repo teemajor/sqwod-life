@@ -11,12 +11,12 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Impact (Vuori) — DE store vuoriclothing.de, €85. Wire Impact tracking link once available.
-verdict: "Die Vuori Kore Short ist eine Allrounder-Short, die mit Komfort und Vielseitigkeit punktet, nicht mit reiner Performance. Der ultraweiche 4-Wege-Stretch-Stoff und die stützende Boxer-Brief-Innenhose machen sie ideal fürs Training und den ganzen Tag im Alltag – zum harten Laufen ist sie aber schwer und trocknet langsam. Mit 85 € ist sie Premium, dank eigenem deutschen Shop mit kostenlosem Expressversand aber problemlos in Deutschland zu bekommen."
+verdict: "Die Vuori Kore Short ist eine Allrounder-Short, die mit Komfort und Vielseitigkeit punktet, nicht mit reiner Performance. Der ultraweiche 4-Wege-Stretch-Stoff und die stützende Boxer-Brief-Innenhose machen sie ideal fürs Training und den ganzen Tag im Alltag – zum harten Laufen ist sie aber schwer und trocknet langsam. Mit 60 bis 85 € (je nach Länge und Innenhose) ist sie Premium, dank eigenem deutschen Shop mit kostenlosem Expressversand aber problemlos in Deutschland zu bekommen."
 sqwodScore: 83
 confidence: High
 crowd:
@@ -28,7 +28,7 @@ crowd:
     - { name: "REI Co-op", value: "4.6/5 (383 reviews)", url: "https://www.rei.com/product/145576/vuori-kore-lined-shorts-mens-7-inseam" }
     - { name: "OutdoorGearLab", value: "66/100 – 'Most Versatile Shorts'", url: "https://www.outdoorgearlab.com/reviews/clothing-mens/running-shorts-men/vuori-kore-short" }
 assessment:
-  score: 78
+  score: 80
   criteria:
     - { name: "Komfort", score: 9 }
     - { name: "Vielseitigkeit", score: 9 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 6 }
 value:
   score: 70
-  bestPrice: 85
+  bestPrice: 59.80
   currency: EUR
-  low: 72
 pros:
   - "Besonders weicher 4-Wege-Stretch-Stoff, sehr bequem"
   - "Extrem vielseitig: vom Gym direkt auf die Straße"
@@ -47,7 +46,7 @@ pros:
   - "Mehrere Innennähte (5\"/7\"/9\") und Liner-Optionen"
   - "Eigener DE-Shop mit kostenlosem Expressversand"
 cons:
-  - "Premium-Preis (85 €)"
+  - "Premium-Preis (60-85 €)"
   - "Schwerste im Vergleich, saugt Wasser und trocknet langsam"
   - "Innenhose kann bei tiefen Kniebeugen verrutschen"
   - "Offene Taschen ohne Reißverschluss beim Laufen unsicher"

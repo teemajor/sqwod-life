@@ -10,11 +10,11 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The most effective sleep-temperature system you can buy — dual-zone heating/cooling that genuinely improves sleep. The price and mandatory subscription are real."
-sqwodScore: 80
+sqwodScore: 79
 confidence: High
 crowd:
   score: 83
@@ -27,7 +27,7 @@ crowd:
     - { name: "Expert avg", value: "8.0/10" }
     - { name: "Reddit", value: "+68%" }
 assessment:
-  score: 84
+  score: 81
   criteria:
     - { name: "Effectiveness", score: 9.2 }
     - { name: "Tracking", score: 8.4 }

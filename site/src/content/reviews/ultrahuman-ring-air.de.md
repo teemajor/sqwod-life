@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 8.6 }
 value:
   score: 82
-  bestPrice: 289
+  bestPrice: 234.53
   currency: EUR
-  low: 289
 pros:
   - "Abofrei — Einmalkauf schaltet alle Daten frei (vs. Ouras Paywall)"
   - "Exzellentes, genaues Schlaf- und Recovery-Tracking"

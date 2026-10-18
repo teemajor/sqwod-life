@@ -11,12 +11,12 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Impact (Suunto) available but US storefront / US tracking — DE conversions may not attribute. €299 (RRP €449, low ~€298). Brand-direct suunto.com/de until a DE-tracking link exists.
-verdict: "The Suunto Race is the best watch Suunto has made in years: a bright 1.43-inch AMOLED, accurate dual-band GPS and genuinely huge battery life, all launched well below Garmin. Now selling around 299 EUR (down from a 449 EUR RRP), it is one of the best-value AMOLED multisport watches you can buy. The catch is software: the Suunto app and on-watch OS feel slower and thinner than Garmin Connect, the wrist heart-rate sensor is only so-so, and recovery/sleep metrics are noisy. For runners and outdoor athletes who want a big screen, maps and long battery without paying Garmin money, it is an easy recommendation."
+verdict: "The Suunto Race is the best watch Suunto has made in years: a bright 1.43-inch AMOLED, accurate dual-band GPS and genuinely huge battery life, all launched well below Garmin. Now selling around 320 EUR (down from a 449 EUR RRP), it is one of the best-value AMOLED multisport watches you can buy. The catch is software: the Suunto app and on-watch OS feel slower and thinner than Garmin Connect, the wrist heart-rate sensor is only so-so, and recovery/sleep metrics are noisy. For runners and outdoor athletes who want a big screen, maps and long battery without paying Garmin money, it is an easy recommendation."
 sqwodScore: 87
 confidence: Medium
 crowd:
@@ -37,15 +37,14 @@ assessment:
     - { name: "Value", score: 9 }
 value:
   score: 88
-  bestPrice: 299
+  bestPrice: 319.16
   currency: EUR
-  low: 298
 pros:
   - "Bright, sharp 1.43\" AMOLED (1000 nits) that's excellent in sunlight"
   - "Accurate dual-band GPS on land, matching Garmin/Apple"
   - "Outstanding battery life for AMOLED (up to ~40h dual-band, 12 days smartwatch)"
   - "Onboard offline maps and a handy digital crown"
-  - "Excellent value - around 299 EUR street, well under Garmin rivals"
+  - "Excellent value - around 320 EUR street, well under Garmin rivals"
 cons:
   - "Suunto app and OS lag behind Garmin's ecosystem and third-party support"
   - "Optical wrist heart rate is inconsistent during intervals"
@@ -67,4 +66,4 @@ tags: ["wearables", "running", "multisport", "suunto"]
 
 Suunto's Race arrived as the brand's first AMOLED sports watch and immediately reset expectations: a gorgeous 1.43-inch 466x466 panel at 1000 nits, a stainless-steel-and-sapphire (or titanium) build, a digital crown, and dual-band (L1/L5) GPS. In testing by DC Rainmaker and the5krunner the GPS held its own against Garmin and Apple on land, and the battery is a standout - a 12.5-hour mountain outing drained only about a quarter of the pack, backing up Suunto's ~40-hour dual-band and 12-day smartwatch claims. Onboard offline maps, HRV, structured workouts and TrainingPeaks integration round out a genuinely capable training package.
 
-Where it trails Garmin is the ecosystem. The Suunto app is clean but shallower than Garmin Connect, the on-watch software can feel sluggish, and there is no contactless payment, no ANT+ and no broadcast HR for Zwift. The optical heart-rate sensor is the weakest link, drifting during intervals, so a chest strap is worth it. Reviewers still landed firmly positive - the5krunner scored it 89%, Trusted Reviews 4.5/5, and DC Rainmaker called it 'the best Suunto yet.' With EU street prices now around 299 EUR versus the 449 EUR launch RRP, the value case is stronger than ever.
+Where it trails Garmin is the ecosystem. The Suunto app is clean but shallower than Garmin Connect, the on-watch software can feel sluggish, and there is no contactless payment, no ANT+ and no broadcast HR for Zwift. The optical heart-rate sensor is the weakest link, drifting during intervals, so a chest strap is worth it. Reviewers still landed firmly positive - the5krunner scored it 89%, Trusted Reviews 4.5/5, and DC Rainmaker called it 'the best Suunto yet.' With EU street prices now around 320 EUR versus the 449 EUR launch RRP, the value case is stronger than ever.

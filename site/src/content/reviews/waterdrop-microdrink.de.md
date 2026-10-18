@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 6 }
 value:
   score: 60
-  bestPrice: 8
+  bestPrice: 8.99
   currency: EUR
-  low: 7
 pros:
   - "Winzige, portable Würfel machen aromatisiertes Wasser überall mühelos"
   - "Zuckerfrei, kalorienarm, mit Stevia gesüßt und voller Vitamine (C, B-Vitamine, Zink)"

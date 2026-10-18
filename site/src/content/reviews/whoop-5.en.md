@@ -9,13 +9,13 @@ glyph: band
 type: wearables
 conversion: sqwod-ai
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # NOTE: EUR membership pricing not officially confirmed at research time — verify before publish.
 verdict: "A 14-day battery, a 7% smaller band, on-demand ECG and daily blood-pressure insights — the biggest Whoop leap yet. It's still screenless, still subscription-only, and heart-rate accuracy still isn't quite elite."
-sqwodScore: 83
+sqwodScore: 82
 confidence: Medium
 crowd:
   score: 84
@@ -28,7 +28,7 @@ crowd:
     - { name: "Wareable", value: "4.5/5" }
     - { name: "TechGearLab", value: "73/100" }
 assessment:
-  score: 86
+  score: 84
   criteria:
     - { name: "Accuracy", score: 8.6 }
     - { name: "Value", score: 7.0 }

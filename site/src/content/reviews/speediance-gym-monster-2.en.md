@@ -11,12 +11,12 @@ pillar: gear
 type: equipment
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-# Brand-direct eu.speediance.com (€2,999, RRP €3,495, low ~€2,699). No affiliate network confirmed yet.
-verdict: "The Gym Monster 2 is one of the most convincing Tonal alternatives you can actually buy in the EU: dual direct-drive motors deliver up to 100 kg of adjustable digital resistance (eccentric, chain, fixed-speed modes), 400+ guided workouts are built in, and crucially there is no mandatory subscription. It folds to a 27 cm-deep footprint and rolls through a standard doorway. The catch is the €2,999 price and a 100 kg ceiling that serious lifters will outgrow."
+# Brand-direct eu.speediance.com (€3,443, RRP €4,199, low ~€2,699). No affiliate network confirmed yet.
+verdict: "The Gym Monster 2 is one of the most convincing Tonal alternatives you can actually buy in the EU: dual direct-drive motors deliver up to 100 kg of adjustable digital resistance (eccentric, chain, fixed-speed modes), 400+ guided workouts are built in, and crucially there is no mandatory subscription. It folds to a 27 cm-deep footprint and rolls through a standard doorway. The catch is the €3,443 price and a 100 kg ceiling that serious lifters will outgrow."
 sqwodScore: 81
 confidence: High
 crowd:
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 6 }
 value:
   score: 65
-  bestPrice: 2999
+  bestPrice: 3443
   currency: EUR
-  low: 2699
 pros:
   - "No mandatory subscription — 400+ workouts included"
   - "Very compact: folds to ~2.75 sq ft and fits through doorways"
@@ -47,7 +46,7 @@ pros:
   - "Large 21.5\" responsive touchscreen, easy setup"
   - "Genuine EU store with ex-VAT pricing and 2-year warranty"
 cons:
-  - "High-ticket: €2,999 (RRP €3,495) is a big outlay"
+  - "High-ticket: €3,443 (RRP €4,199) is a big outlay"
   - "100 kg cap limits heavy compound lifts"
   - "Narrow 27\" width compromises flyes and lat pulldowns; bench sits awkwardly near motor housing"
   - "Software can be finicky and programs get repetitive; optional Wellness+ AI coaching is a paid add-on"
@@ -68,4 +67,4 @@ tags: ["connected-fitness", "home-gym", "strength"]
 
 The Speediance Gym Monster 2 is a motorised digital-weight home gym built to do what a rack full of plates does, in the space of a folded ironing board. Two direct-drive motors generate electromagnetic resistance in 0.5 kg increments up to 100 kg total (roughly 50 kg per arm), with eccentric-overload, chain and fixed-speed modes that free weights simply can't replicate. A 21.5-inch touchscreen drives 400+ guided classes and free-lift tracking, and unlike Tonal there is no compulsory membership — the workouts are included, with only the Wellness+ AI health-coaching layer sitting behind a paid tier (~€18/month). Reviewers from Trusted Reviews (4.5/5) to T3 praise the engineering, responsiveness and how genuinely small it is: it folds to about 27 cm deep, wheels around, and clears a standard doorway.
 
-The honest cons are consistent across every independent review. The 100 kg ceiling is fine for hypertrophy and conditioning but caps serious barbell-strength lifters, and the narrow 27-inch chassis makes wide movements like flyes and lat pulldowns feel cramped, with the bench sitting awkwardly close to the motor housing. Software can be occasionally finicky and long-term programming gets repetitive, and there's a mild cable thump plus some floor-vibration transmission to be aware of in apartments. At €2,999 (RRP €3,495, occasional flash-sale lows near €2,699 ex-VAT) it is firmly high-ticket — but for space-limited EU buyers who want subscription-free versatility, it's one of the strongest connected-strength options on the market.
+The honest cons are consistent across every independent review. The 100 kg ceiling is fine for hypertrophy and conditioning but caps serious barbell-strength lifters, and the narrow 27-inch chassis makes wide movements like flyes and lat pulldowns feel cramped, with the bench sitting awkwardly close to the motor housing. Software can be occasionally finicky and long-term programming gets repetitive, and there's a mild cable thump plus some floor-vibration transmission to be aware of in apartments. At €3,443 (RRP €4,199, occasional flash-sale lows near €2,699 ex-VAT) it is firmly high-ticket — but for space-limited EU buyers who want subscription-free versatility, it's one of the strongest connected-strength options on the market.

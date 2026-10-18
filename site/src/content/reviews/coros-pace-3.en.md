@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 9 }
 value:
   score: 90
-  bestPrice: 199
+  bestPrice: 228.95
   currency: EUR
-  low: 187
 pros:
   - "Outstanding value — undercuts comparable Garmins"
   - "Featherweight (~30 g) and comfortable for all-day and racing"
@@ -63,6 +62,6 @@ successor:
 tags: ["wearables", "running", "coros"]
 ---
 
-The COROS PACE 3 remains one of the best value running watches you can buy. At around €199 it undercuts comparable Garmins while delivering dual-frequency GPS, a featherweight ~30 g build and up to 17 days of battery. Runners and triathletes get proper training tools — structured workouts, EvoLab load tracking and reliable data logging — without paying flagship money, which is why reviewers from TechRadar to 220 Triathlon rate it so highly on value.
+The COROS PACE 3 remains one of the best value running watches you can buy. At around €229 it undercuts comparable Garmins while delivering dual-frequency GPS, a featherweight ~30 g build and up to 17 days of battery. Runners and triathletes get proper training tools — structured workouts, EvoLab load tracking and reliable data logging — without paying flagship money, which is why reviewers from TechRadar to 220 Triathlon rate it so highly on value.
 
 It is not a lifestyle smartwatch: there is no touchscreen, no offline maps and notifications are basic. Since COROS launched the AMOLED PACE 4 in late 2025 and cut the PACE 3's price, the PACE 3 is now the budget pick rather than the newest option — which is exactly why it is such strong value if pure running performance, low weight and battery life are what you care about.

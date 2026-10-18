@@ -11,13 +11,13 @@ pillar: gear
 type: apps
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # SaaS (trainingpeaks.com). USD-Preise (EUR UNVERIFIED). Deutsche UI unterstützt. HINWEIS: laut Berichten Juli 2026 von Garmin übernommen — vor Publish prüfen. Führt zur Sqwod-OS-Zielgruppe.
 verdict: "Die Branchenstandard-Plattform für Ausdauertraining und Coaching — unerreichte Analytik und Coach-Tools, aber im Preis und Tempo auf ernsthafte, datenaffine Nutzer:innen ausgelegt."
-sqwodScore: 81
+sqwodScore: 80
 confidence: Medium
 crowd:
   score: 84
@@ -28,7 +28,7 @@ crowd:
     - { name: "Google Play", value: "4.4★ (33,1k)", url: "https://play.google.com/store/apps/details?id=com.peaksware.trainingpeaks" }
     - { name: "road.cc", value: "9/10", url: "https://road.cc/content/review/trainingpeaks-premium-subscription-287375" }
 assessment:
-  score: 84
+  score: 79
   criteria:
     - { name: "Analytik", score: 9.2 }
     - { name: "Funktionen", score: 8.6 }

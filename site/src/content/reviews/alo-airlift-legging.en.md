@@ -11,7 +11,7 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -38,9 +38,8 @@ assessment:
     - { name: "Breathability", score: 6.5 }
 value:
   score: 60
-  bestPrice: 128
+  bestPrice: 134
   currency: USD
-  low: 128
 pros:
   - "Compressive, structured double-layered waistband with a sculpting fit"
   - "Durable double-lined fabric with an elevated, subtle-sheen look"

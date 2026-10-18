@@ -10,7 +10,7 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The smartest buy in Therabody's lineup — deep 16mm percussion plus fast heat, in a grip you can actually hold for a full session. The price is the catch."
@@ -37,9 +37,8 @@ assessment:
     - { name: "Coach fit", score: 8.8 }
 value:
   score: 78
-  bestPrice: 399
+  bestPrice: 348.99
   currency: EUR
-  low: 359
   history: [429, 429, 399, 399, 379, 359, 399, 399, 379, 399, 359, 399]
 pros:
   - "16mm amplitude + 40 lb stall force — genuinely deep"

@@ -11,13 +11,13 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC, NICHT auf Amazon. Ten Thousand liefert nur in die USA/Kanada — kein Direktversand nach DE/EU (über Mr Porter oder EU-Händler WODgear.nl ~68 €). /go beim Publish: tenthousand.cc (Impact/CJ/direct offen). On-site-4,9★-Zahl ist markeneigen (nicht unabhängig).
 verdict: "Eine langlebige, extrem bewegliche Allround-Trainingshose, die von Testern gut bewertet wird — für deutsche Käufer getrübt durch US-only-Versand und durchwachsenen Support nach dem Kauf."
-sqwodScore: 79
+sqwodScore: 78
 confidence: Medium
 crowd:
   score: 82
@@ -28,7 +28,7 @@ crowd:
     - { name: "ThatFitFriend", value: "4.6/5", url: "https://thatfitfriend.com/ten-thousand-interval-short-review/" }
     - { name: "Gear Patrol", value: "Sieger vs. Lululemon", url: "https://www.gearpatrol.com/fitness/a40782324/ten-thousand-vs-lululemon-workout-shorts/" }
 assessment:
-  score: 80
+  score: 77
   criteria:
     - { name: "Beweglichkeit", score: 8.8 }
     - { name: "Haltbarkeit", score: 8.5 }

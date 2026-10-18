@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 6 }
 value:
   score: 70
-  bestPrice: 78
+  bestPrice: 109.99
   currency: EUR
-  low: 72
 pros:
   - "Whey-Isolat als Hauptquelle mit starken ~24 g Protein pro Portion"
   - "Bekannt für sehr gute Löslichkeit ohne Klümpchen"
@@ -62,4 +61,4 @@ tags: ["supplements", "whey", "protein"]
 
 Gold Standard 100% Whey ist der Maßstab, an dem sich die meisten anderen Proteine messen lassen müssen. Es setzt auf Whey-Isolat als Hauptquelle, liefert rund 24 g Protein pro Portion und löst sich in Wasser oder Milch fast mühelos auf — genau das loben zehntausende Bewertungen am meisten. Dazu ist es Informed-Choice-/Doping-getestet, was für dich zählt, wenn du im Wettkampf stehst.
 
-Der Haken ist der Preis: Mit rund €32-35 pro Kilo liegst du deutlich über No-Name-Whey aus Deutschland, und der Proteingehalt pro 100 g ist niedriger als bei reinem Isolat. Für die meisten bekommst du dafür Konstanz, Laborprüfung und einen Geschmack, den du wirklich weitertrinkst — deshalb bleibt es eine sichere Standardempfehlung.
+Der Haken ist der Preis: Mit rund 48 € pro Kilo (2,27-kg-Dose im deutschen ON-Store) liegst du deutlich über No-Name-Whey aus Deutschland, und der Proteingehalt pro 100 g ist niedriger als bei reinem Isolat. Für die meisten bekommst du dafür Konstanz, Laborprüfung und einen Geschmack, den du wirklich weitertrinkst — deshalb bleibt es eine sichere Standardempfehlung.

@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -29,7 +29,7 @@ crowd:
     - { name: "Walmart", value: "4.6★ (922)", url: "https://www.walmart.com/reviews/product/2322659760" }
     - { name: "Wareable", value: "Positive", url: "https://www.wareable.com/garmin/garmin-forerunner-965-review" }
 assessment:
-  score: 88
+  score: 87
   criteria:
     - { name: "GPS accuracy", score: 9.2 }
     - { name: "Battery", score: 8.8 }
@@ -38,9 +38,8 @@ assessment:
     - { name: "Value", score: 6.8 }
 value:
   score: 74
-  bestPrice: 499
+  bestPrice: 489
   currency: EUR
-  low: 499
 pros:
   - "Bright 1.4\" AMOLED in a light 53 g case — an expert-praised standout"
   - "Long battery for AMOLED: up to 23 days smartwatch / ~31 h GPS"

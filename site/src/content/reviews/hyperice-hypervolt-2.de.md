@@ -11,13 +11,13 @@ pillar: gear
 type: recovery
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Real & belegt: Preis, Specs, crowd.sources, Pro/Contra, Verdict. Affiliate-/go-Ziel beim Publish: https://www.amazon.de/dp/B0CVSD725F?tag=sqwod-21 (Verkauf durch Hyperice, geprüft 2026-07-23).
 verdict: "Eine leise, leichte, app-geführte Massagepistole für den Alltag — Warm-up und Kund:innen-Recovery. Aber man zahlt Premium für ein Gerät mit nur drei Stufen und wenig Kraft, und deutsche Tester bewerteten sie deutlich härter als US-Käufer."
-sqwodScore: 74
+sqwodScore: 75
 confidence: Medium
 crowd:
   score: 74
@@ -30,7 +30,7 @@ crowd:
     - { name: "Stiftung Warentest", value: "37/100", url: "https://www.testbericht.de/produkte/hyperice-hypervolt-2" }
     - { name: "MassageGunAdvice", value: "3.5/5", url: "https://massagegunadvice.com/hyperice-hypervolt-2-review/" }
 assessment:
-  score: 76
+  score: 78
   criteria:
     - { name: "Kraft", score: 7.5 }
     - { name: "Lautstärke", score: 8.5 }

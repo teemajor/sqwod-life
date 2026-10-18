@@ -11,13 +11,13 @@ pillar: gear
 type: recovery
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Deutsche Marke, Amazon.de. Rollen-ASIN B07DLPFJBP (NICHT B09HV3329D — das ist die FASCIA GUN). Verkäufer+Bild per SiteStripe prüfen. Vorerst: Marke direkt + Fallback.
 verdict: "Das deutsche Original, das den Faszienrollen-Standard gesetzt hat — langlebig, mittelfest und physio-erprobt, wenn auch teurer als No-Name-Rollen."
-sqwodScore: 83
+sqwodScore: 84
 confidence: High
 crowd:
   score: 88
@@ -28,7 +28,7 @@ crowd:
     - { name: "testbericht.de", value: "4.6★ (58)", url: "https://www.testbericht.de/produkte/blackroll-faszienrolle-standard-45-brstabk45c" }
     - { name: "fitzuhause.net", value: "4.5/5", url: "https://fitzuhause.net/blackroll-standard-faszienrolle-test/" }
 assessment:
-  score: 80
+  score: 83
   criteria:
     - { name: "Wirksamkeit", score: 8.4 }
     - { name: "Haltbarkeit", score: 9.2 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Vielseitigkeit", score: 8.3 }
 value:
   score: 74
-  bestPrice: 30
+  bestPrice: 25.45
   currency: EUR
-  low: 20
 pros:
   - "Wirksame mittlere Festigkeit für Muskel- und Faszien-Release"
   - "Hochwertiger, recycelbarer EPP-Schaum — Made in Germany"

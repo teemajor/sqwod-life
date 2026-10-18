@@ -11,13 +11,13 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Vorgänger als Preis-Tipp (aktuell = Nimbus 28, 200 €). Amazon.de ASIN B0D79V2KV9 (Herren, eine Farbe). Verkäufer+Bild per SiteStripe prüfen. Schuhe: viele ASINs — Marke/Amazon bevorzugen. Vorerst: Marke direkt + Fallback.
 verdict: "Ein extrem bequemer, stabiler Max-Cushion-Alltagsschuh für lockere Kilometer — am besten als Auslaufmodell im Angebot."
-sqwodScore: 82
+sqwodScore: 83
 confidence: Medium
 crowd:
   score: 84
@@ -37,9 +37,8 @@ assessment:
     - { name: "Vielseitigkeit", score: 6.5 }
 value:
   score: 82
-  bestPrice: 140
+  bestPrice: 129.90
   currency: EUR
-  low: 120
 pros:
   - "Weiches, dämpfendes Laufgefühl — top für lockere und Recovery-Läufe"
   - "Überraschend stabil für einen Max-Stack-Neutralschuh"

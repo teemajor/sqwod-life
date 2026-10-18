@@ -11,7 +11,7 @@ pillar: gear
 type: wearables
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -28,7 +28,7 @@ crowd:
     - { name: "Trusted Reviews", value: "4/5", url: "https://www.trustedreviews.com/reviews/withings-scanwatch-2" }
     - { name: "TechRadar", value: "Design 5 · Features 4", url: "https://www.techradar.com/health-fitness/smartwatches/withings-scanwatch-2-review-probably-the-best-looking-hybrid-smartwatch" }
 assessment:
-  score: 82
+  score: 81
   criteria:
     - { name: "Health suite", score: 8.8 }
     - { name: "Battery", score: 9 }
@@ -37,9 +37,9 @@ assessment:
     - { name: "Value", score: 7.6 }
 value:
   score: 78
-  bestPrice: 260
+  bestPrice: 275.13
   currency: EUR
-  low: 260
+  low: 264
 pros:
   - "Standout hybrid analog design that reads as a real watch"
   - "Deep, clinically-oriented health suite — ECG/AFib, SpO2, temperature"

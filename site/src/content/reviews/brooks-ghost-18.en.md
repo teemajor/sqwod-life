@@ -11,13 +11,13 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Current model (Ghost 18, €150; Ghost 17 discounted ~€105). Amazon.de ASIN B0GRT4KJV6 (men). Verify seller+image via SiteStripe. For now: brand-direct + fallback.
 verdict: "A dependable, durable neutral daily trainer that does everything competently and nothing excitingly — safe over spectacular."
-sqwodScore: 80
+sqwodScore: 81
 confidence: Medium
 crowd:
   score: 82
@@ -37,9 +37,9 @@ assessment:
     - { name: "Value", score: 7.8 }
 value:
   score: 78
-  bestPrice: 150
+  bestPrice: 127.99
   currency: EUR
-  low: 135
+  low: 124.99
 pros:
   - "Reliable, do-everything daily workhorse with a stable neutral ride"
   - "Comfortable, well-padded upper with secure lockdown"

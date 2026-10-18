@@ -11,13 +11,13 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Prior-gen value pick (current = Nimbus 28, €200). Amazon.de ASIN B0D79V2KV9 (men, one colour). Verify seller+image via SiteStripe. Shoes: many size/colour ASINs — prefer brand/Amazon-sold. For now: brand-direct + fallback.
 verdict: "A supremely comfortable, stable max-cushion daily trainer for easy miles — best bought on discount as the outgoing model."
-sqwodScore: 82
+sqwodScore: 83
 confidence: Medium
 crowd:
   score: 84
@@ -37,9 +37,8 @@ assessment:
     - { name: "Versatility", score: 6.5 }
 value:
   score: 82
-  bestPrice: 140
+  bestPrice: 129.90
   currency: EUR
-  low: 120
 pros:
   - "Plush, shock-absorbing ride — excellent for easy and recovery miles"
   - "Surprisingly stable for a max-stack neutral shoe"

@@ -10,11 +10,11 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 verdict: "The best-value entry into Garmin's training ecosystem — bright AMOLED, ~11-day battery, and the metrics that matter, without the €500 price."
-sqwodScore: 84
+sqwodScore: 85
 confidence: High
 crowd:
   score: 85
@@ -37,9 +37,8 @@ assessment:
     - { name: "Battery", score: 8.2 }
 value:
   score: 88
-  bestPrice: 249
+  bestPrice: 175
   currency: EUR
-  low: 219
   history: [259, 259, 249, 249, 239, 229, 249, 249, 239, 249, 219, 249]
 pros:
   - "Garmin's full training metrics at an entry price"

@@ -11,13 +11,13 @@ pillar: gear
 type: sleep
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de ASIN B0D3V4V1KD (Loop is a major Amazon seller). Verify seller+image via SiteStripe. €19.95 (also loopearplugs.com). 24 dB SNR marketing vs ~21 dB independent lab NRR — explain the standards difference.
 verdict: "A comfortable, well-reviewed reusable silicone earplug (24 dB SNR, lab “B” grade) that’s a genuinely strong side-sleeper pick — just not a total-silence or medical-grade solution."
-sqwodScore: 82
+sqwodScore: 85
 confidence: Medium
 crowd:
   score: 82
@@ -28,7 +28,7 @@ crowd:
     - { name: "HearAdvisor (lab)", value: "“B” SoundGrade", url: "https://www.hearingtracker.com/de/earplugs/loop-earplugs-review-lab-and-real-life-test-of-engage-experience-quiet-switch-2" }
     - { name: "HearingTracker (expert)", value: "Positive", url: "https://www.hearingtracker.com/de/earplugs/loop-earplugs-review-lab-and-real-life-test-of-engage-experience-quiet-switch-2" }
 assessment:
-  score: 80
+  score: 86
   criteria:
     - { name: "Noise reduction", score: 8 }
     - { name: "Comfort (side-sleep)", score: 8.8 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 9 }
 value:
   score: 88
-  bestPrice: 20
+  bestPrice: 19.95
   currency: EUR
-  low: 17
 pros:
   - "Strong passive attenuation for a reusable plug — 24 dB SNR, top of Loop’s range"
   - "Four ear-tip sizes for a high fit-success rate"

@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -40,7 +40,7 @@ value:
   bestPrice: 33
   currency: USD
   priceType: monthly
-  low: 26
+  low: 26.40
   subscription: "$33/mo"
 pros:
   - "USP Verified plus Clean Label Project tested — genuine third-party assurance"

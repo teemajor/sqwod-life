@@ -10,11 +10,11 @@ gallery: 4
 pillar: gear
 conversion: verified
 publishedAt: 2026-06-20
-updatedAt: 2026-06-28
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-verdict: "The best-value everyday tracker — accurate sensors, ECG and Google smarts for ~€130. Just know the best insights sit behind Fitbit Premium."
-sqwodScore: 80
+verdict: "The best-value everyday tracker — accurate sensors, ECG and Google smarts for under €100. Just know the best insights sit behind Fitbit Premium."
+sqwodScore: 81
 confidence: High
 crowd:
   score: 82
@@ -37,9 +37,9 @@ assessment:
     - { name: "Battery", score: 8.2 }
 value:
   score: 84
-  bestPrice: 130
+  bestPrice: 89
   currency: EUR
-  low: 120
+  low: 71.04
   subscription: "Fitbit Premium €9/mo (optional)"
   history: [159, 159, 149, 139, 130, 120, 130, 139, 130, 125, 120, 130]
 pros:

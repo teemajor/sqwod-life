@@ -11,13 +11,13 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC (myprotein.de) + Amazon.de ASIN B008BH7KKM (1kg Vanilla). ~€30/kg, heavily discount-code-driven. Verify Amazon seller+image via SiteStripe before wiring. For now: brand-direct + fallback.
 verdict: "The value benchmark: a certified, ~€30/kg whey concentrate with 50+ flavours and broadly strong ratings — buy it on a discount code."
-sqwodScore: 84
+sqwodScore: 85
 confidence: High
 crowd:
   score: 86
@@ -28,7 +28,7 @@ crowd:
     - { name: "testberichte.de", value: "4.3★ (6,256)", url: "https://www.testberichte.de/p/my-protein-tests/impact-whey-protein-testbericht.html" }
     - { name: "Trustpilot", value: "~4.2★", url: "https://www.trustpilot.com/review/myprotein.com" }
 assessment:
-  score: 80
+  score: 82
   criteria:
     - { name: "Protein/quality", score: 8.2 }
     - { name: "Testing", score: 8.6 }

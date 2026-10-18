@@ -1,51 +1,36 @@
 #!/usr/bin/env node
-// Sqwod Score integrity check — does the headline match the bars underneath it?
+// Sqwod Score integrity check. Two invariants, both visible to readers:
 //
-// A review page shows a big "Sqwod Assessment" number and, directly below it, the
-// per-criterion bars it is supposed to summarise. A reader — or a brand's marketing
-// team — will average those bars and expect the headline back. On 2026-08-28 that
-// held for 30 of 58 reviews. 28 drift by more than a point — 15 read HIGHER than
-// their own bars and 13 read lower — the worst being AG1 at 72 over bars averaging 59.
+//  1. HEADLINE vs BARS. A review page shows a big "Sqwod Assessment" number and,
+//     directly below it, the per-criterion bars it summarises. A reader (or a
+//     brand's marketing team) will average those bars and expect the headline back.
+//     assessment.score must equal mean(criteria) x 10, within TOLERANCE.
 //
-// `assessment.score` is authored by hand, so nothing stopped it drifting from the
-// criteria list beside it. This check is what stops it drifting again.
+//  2. TOTAL vs PARTS. The methodology page says the Sqwod Score is 45% crowd,
+//     40% assessment and 15% value. sqwodScore must equal that blend, within
+//     TOLERANCE.
 //
-// It is deliberately NOT a clean pass/fail over the whole corpus. The 28 reviews
-// that already drifted are listed in GRANDFATHERED below: they warn, they do not
-// fail, because rescoring a published number is an editorial act that needs a
-// corrections-log entry, not a silent code change. Everything else fails hard at
-// the first tenth of a point.
+// History: on 2026-08-28, 28 of 58 reviews broke rule 1 (worst: AG1, 72 over bars
+// averaging 59) and were grandfathered as warnings. All 28 were rescored on
+// 2026-10-17 (corrections log entry of that date) and the amnesty list was
+// removed. Rule 2 was added the same day after 5 reviews were found off their own
+// blend. Both rules now fail the build. There is no exception list: if a score
+// is wrong, fix the score.
 //
-// The list only ever shrinks. Rescore a review, drop its slug, and the build tells
-// you if you were wrong. When GRANDFATHERED is empty the debt is paid and this
-// becomes an ordinary invariant.
-//
-//   node scripts/check-assessment.mjs           # fail on new drift, warn on known
-//   node scripts/check-assessment.mjs --strict  # fail on ALL drift, ignore the list
+//   node scripts/check-assessment.mjs
 //
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const DIR = 'src/content/reviews';
-// Rounding in the source files is coarse (bars are one decimal, headlines whole
-// numbers), so a hair of slack keeps honest entries from tripping the build.
+// Bars are one decimal and headlines whole numbers, so a hair of slack keeps
+// honest entries from tripping the build.
 const TOLERANCE = 1.0;
-const STRICT = process.argv.includes('--strict');
-
-// Known drift as of 2026-08-28. DO NOT ADD TO THIS LIST — that is what the check
-// exists to prevent. Removing entries is the only intended edit.
-const GRANDFATHERED = new Set([
-  'ag1-athletic-greens', 'apple-watch-11', 'apple-watch-9', 'blackroll-standard',
-  'compex-sp-80', 'eight-sleep-pod-4', 'eight-sleep-pod-5', 'esn-ultrapure-creatine',
-  'garmin-forerunner-965', 'hyperice-hypervolt-2', 'loop-quiet-2', 'manta-sleep-mask',
-  'muse-s-athena', 'myprotein-impact-whey', 'new-balance-1080-v14', 'nike-pegasus-42',
-  'oura-ring-5', 'oura-ring-gen3', 'peloton-bike', 'pushpress',
-  'ten-thousand-interval-short', 'trainingpeaks', 'vivobarefoot-primus-lite',
-  'vuori-kore-short', 'wahoo-kickr-core', 'whoop-4', 'whoop-5', 'withings-scanwatch-2',
-]);
+const W = { crowd: 0.45, assessment: 0.40, value: 0.15 };
 
 const frontmatter = (t) => t.split('---')[1] ?? '';
 const num = (fm, re) => { const m = fm.match(re); return m ? Number(m[1]) : null; };
+const r1 = (x) => Math.round(x * 10) / 10;
 
 const rows = [];
 for (const file of readdirSync(DIR).sort()) {
@@ -54,60 +39,45 @@ for (const file of readdirSync(DIR).sort()) {
   if (/^draft:\s*true/m.test(fm)) continue;
 
   const stated = num(fm, /^assessment:\s*\n\s*score:\s*([\d.]+)/m);
+  const crowd = num(fm, /^crowd:\s*\n\s*score:\s*([\d.]+)/m);
+  const value = num(fm, /^value:\s*\n\s*score:\s*([\d.]+)/m);
+  const total = num(fm, /^sqwodScore:\s*([\d.]+)/m);
   // criteria live between `assessment:` and the next top-level key (`value:`)
   const block = fm.match(/^assessment:[\s\S]*?(?=^value:)/m)?.[0] ?? '';
   const criteria = [...block.matchAll(/score:\s*([\d.]+)\s*\}/g)].map((m) => Number(m[1]));
-
   if (stated === null || criteria.length === 0) continue;
+
   const derived = (criteria.reduce((a, b) => a + b, 0) / criteria.length) * 10;
+  const blend = crowd !== null && value !== null ? W.crowd * crowd + W.assessment * stated + W.value * value : null;
   rows.push({
-    slug: file.replace(/\.(en|de)\.md$/, ''),
-    file,
-    stated,
-    derived: Math.round(derived * 10) / 10,
-    gap: Math.round((stated - derived) * 10) / 10,
+    file, stated, total,
+    derived: r1(derived), gap: r1(stated - derived),
+    blend: blend === null ? null : r1(blend), blendGap: blend === null || total === null ? 0 : r1(total - blend),
   });
 }
 
-const drifted = rows.filter((r) => Math.abs(r.gap) > TOLERANCE);
-const fresh = drifted.filter((r) => STRICT || !GRANDFATHERED.has(r.slug));
-const known = drifted.filter((r) => !STRICT && GRANDFATHERED.has(r.slug));
-// A slug that no longer drifts should come off the list, or the list stops meaning
-// anything — it would quietly start granting amnesty to future regressions.
-const healed = [...GRANDFATHERED].filter(
-  (s) => rows.some((r) => r.slug === s) && !drifted.some((r) => r.slug === s),
-);
+const bars = rows.filter((r) => Math.abs(r.gap) > TOLERANCE);
+const blends = rows.filter((r) => Math.abs(r.blendGap) > TOLERANCE);
 
 console.log(`Sqwod Score integrity · ${rows.length} review files · tolerance ±${TOLERANCE}`);
 
-if (known.length) {
-  console.log(`\n  ${known.length} known drift (grandfathered 2026-08-28, pending rescore):`);
-  for (const r of known.sort((a, b) => Math.abs(b.gap) - Math.abs(a.gap)).slice(0, 5)) {
-    console.log(`    ~ ${r.file}: shows ${r.stated}, bars average ${r.derived} (${r.gap > 0 ? '+' : ''}${r.gap})`);
+if (bars.length) {
+  console.error(`\n✗ ${bars.length} review(s) where the Assessment headline contradicts its own bars:\n`);
+  for (const r of bars.sort((a, b) => Math.abs(b.gap) - Math.abs(a.gap))) {
+    console.error(`  ${r.file}: assessment.score is ${r.stated}, criteria average ${r.derived} (${r.gap > 0 ? '+' : ''}${r.gap})`);
   }
-  if (known.length > 5) console.log(`    ~ …and ${known.length - 5} more`);
+  console.error(`\n  Set assessment.score to the criteria average, or fix the criteria.`);
 }
-
-if (healed.length) {
-  console.log(`\n  ${healed.length} slug(s) no longer drift — remove them from GRANDFATHERED:`);
-  for (const s of healed) console.log(`    ✓ ${s}`);
-}
-
-if (fresh.length) {
-  console.error(`\n✗ ${fresh.length} review(s) where the headline contradicts its own bars:\n`);
-  for (const r of fresh.sort((a, b) => Math.abs(b.gap) - Math.abs(a.gap))) {
-    console.error(`  ${r.file}`);
-    console.error(`    assessment.score is ${r.stated}, but its criteria average ${r.derived} (${r.gap > 0 ? '+' : ''}${r.gap})`);
+if (blends.length) {
+  console.error(`\n✗ ${blends.length} review(s) where sqwodScore is not 45% crowd + 40% assessment + 15% value:\n`);
+  for (const r of blends.sort((a, b) => Math.abs(b.blendGap) - Math.abs(a.blendGap))) {
+    console.error(`  ${r.file}: sqwodScore is ${r.total}, the blend is ${r.blend} (${r.blendGap > 0 ? '+' : ''}${r.blendGap})`);
   }
-  console.error(
-    `\n  The page prints those bars directly under that number, so a reader who averages\n` +
-    `  them expects it back. Either set assessment.score to the criteria average, or fix\n` +
-    `  the criteria — do not add the slug to GRANDFATHERED.\n`,
-  );
+  console.error(`\n  Set sqwodScore to the rounded blend. The methodology page promises these weights.`);
+}
+if (bars.length || blends.length) {
+  console.error(`\n  A changed published score is an editorial act: add a corrections-log entry.\n`);
   process.exit(1);
 }
 
-console.log(
-  `\n✓ No new drift.` +
-  (known.length ? ` ${known.length} known case(s) still awaiting rescore.` : ' Corpus is clean.'),
-);
+console.log('\n✓ Every headline matches its bars and every Sqwod Score matches its blend.');

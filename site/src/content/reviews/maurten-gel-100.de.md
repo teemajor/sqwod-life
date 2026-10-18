@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Preis-Leistung", score: 4 }
 value:
   score: 40
-  bestPrice: 37
+  bestPrice: 40.50
   currency: EUR
-  low: 36
 pros:
   - "Außergewöhnlich magenschonend, auch bei hoher Kohlenhydrataufnahme auf langen Einheiten"
   - "Cleane, minimalistische Formel (Kohlenhydrate, Wasser, keine Farb- oder Konservierungsstoffe), der Top-Marathonis vertrauen"
@@ -62,4 +61,4 @@ tags: ["nutrition", "endurance", "fuel"]
 
 Maurtens GEL 100 hat seinen Ruf auf der Hydrogel-Technologie aufgebaut: eine Pektin-Alginat-Matrix, die 25 g Kohlenhydrate mit minimalen Magenproblemen durch den Magen transportieren soll. In der Praxis ist das Feedback überwältigend positiv — Sportler loben durchweg, wie gut es liegt, und die Crowd-Wertung spiegelt das wider (4,8/5 aus 1.340 Bewertungen allein bei The Feed). Die Formel ist wirklich clean: nur Kohlenhydrate und Wasser, keine Farb- oder Konservierungsstoffe.
 
-Der Haken ist die Lücke zwischen Marketing und Studienlage sowie der Preis. Unabhängige Forschung stellt infrage, ob das Hydrogel gegenüber einem gut formulierten Standard-Gel wirklich einen messbaren Vorteil bei Kohlenhydrataufnahme oder Magenkomfort bringt — nimm die „smarte Hydrogel"-Story also mit gesunder Skepsis. Bei rund 37 € für eine 12er-Box (UVP nahe 40 €, Tiefstpreis um 36 €) zahlst du etwa 3 € pro Gel. Ein starkes, verlässliches Produkt — aber du zahlst einen Markenaufpreis für einen Nutzen, der nicht vollständig belegt ist.
+Der Haken ist die Lücke zwischen Marketing und Studienlage sowie der Preis. Unabhängige Forschung stellt infrage, ob das Hydrogel gegenüber einem gut formulierten Standard-Gel wirklich einen messbaren Vorteil bei Kohlenhydrataufnahme oder Magenkomfort bringt — nimm die „smarte Hydrogel"-Story also mit gesunder Skepsis. Bei rund 40,50 € für eine 12er-Box zahlst du etwa 3,40 € pro Gel. Ein starkes, verlässliches Produkt — aber du zahlst einen Markenaufpreis für einen Nutzen, der nicht vollständig belegt ist.

@@ -11,13 +11,13 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Deutsche Marke. Amazon.de ASIN B0057ED9AM (500 g). Verkäufer+Bild per SiteStripe prüfen. HINWEIS: ESN Ultrapure ist NICHT das Creapure-SKU (separates ESN-Produkt, B01J5HMMQS). ~30 €/500g, Straße ab ~22 €.
 verdict: "Ein sauberes, veganes, laborgeprüftes und fair bepreistes Kreatin-Monohydrat — das am besten belegte Supplement im Sport, richtig gemacht."
-sqwodScore: 85
+sqwodScore: 87
 confidence: High
 crowd:
   score: 84
@@ -28,7 +28,7 @@ crowd:
     - { name: "testberichte.de", value: "1,6 Gut", url: "https://www.testberichte.de/gesundheit-schoenheit/esn-ultrapure-creatine-monohydrate.html" }
     - { name: "ISSN Position Stand", value: "Wirksamstes Ergogen", url: "https://link.springer.com/article/10.1186/s12970-017-0173-z" }
 assessment:
-  score: 84
+  score: 89
   criteria:
     - { name: "Evidenzbasis", score: 9.5 }
     - { name: "Reinheit/Prüfung", score: 8.6 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Einfachheit", score: 9 }
 value:
   score: 88
-  bestPrice: 30
+  bestPrice: 29.90
   currency: EUR
-  low: 22
 pros:
   - "Die Zutatenklasse mit der stärksten Evidenzbasis aller Sport-Supplements"
   - "Laborgeprüft und auf der Kölner Liste — sicher für getestete Athlet:innen"

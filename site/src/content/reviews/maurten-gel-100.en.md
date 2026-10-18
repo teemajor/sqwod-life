@@ -11,7 +11,7 @@ pillar: gear
 type: supplement
 conversion: verified
 publishedAt: 2026-07-24
-updatedAt: 2026-07-24
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 4 }
 value:
   score: 40
-  bestPrice: 37
+  bestPrice: 40.50
   currency: EUR
-  low: 36
 pros:
   - "Exceptionally gentle on the stomach, even at high carb intake during long efforts"
   - "Clean, minimalist formula (carbs, water, no colours or preservatives) trusted by elite marathoners"
@@ -62,4 +61,4 @@ tags: ["nutrition", "endurance", "fuel"]
 
 Maurten's GEL 100 built its reputation on 'hydrogel' technology: a pectin-and-alginate matrix meant to carry 25 g of carbohydrate through the stomach with minimal GI distress. Real-world feedback is overwhelmingly positive — athletes consistently praise how easy it sits, and the crowd score reflects that (4.8/5 across 1,340 reviews on The Feed alone). The formula is genuinely clean: just carbs and water, no colours or preservatives, which is a big part of the appeal for elite runners.
 
-The catch is the marketing-versus-evidence gap and the price. Independent research has questioned whether the hydrogel actually delivers a measurable advantage in carbohydrate oxidation or gut comfort over a well-formulated standard gel, so treat the 'smart hydrogel' story with healthy scepticism. At roughly €37 for a box of twelve (RRP near €40, lows around €36), you're looking at about €3 per gel — premium territory. An excellent, reliable product; just know you're paying a brand premium for a benefit that isn't fully settled.
+The catch is the marketing-versus-evidence gap and the price. Independent research has questioned whether the hydrogel actually delivers a measurable advantage in carbohydrate oxidation or gut comfort over a well-formulated standard gel, so treat the 'smart hydrogel' story with healthy scepticism. At about €40.50 for a box of twelve, you're looking at roughly €3.40 per gel — premium territory. An excellent, reliable product; just know you're paying a brand premium for a benefit that isn't fully settled.

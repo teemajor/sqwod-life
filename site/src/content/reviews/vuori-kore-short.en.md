@@ -11,12 +11,12 @@ pillar: gear
 type: apparel
 conversion: verified
 publishedAt: 2026-07-30
-updatedAt: 2026-07-30
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Impact (Vuori) — DE store vuoriclothing.de, €85. Wire Impact tracking link once available.
-verdict: "The Vuori Kore Short is a do-everything short that wins on comfort and versatility rather than pure performance. Ultra-soft four-way stretch fabric and a supportive boxer-brief liner make it excellent for lifting, functional training and all-day casual wear, though it is heavy and slow to dry for hard running. At €85 it is a premium buy, but a dedicated German store with free express shipping makes it genuinely easy to get in Germany."
+verdict: "The Vuori Kore Short is a do-everything short that wins on comfort and versatility rather than pure performance. Ultra-soft four-way stretch fabric and a supportive boxer-brief liner make it excellent for lifting, functional training and all-day casual wear, though it is heavy and slow to dry for hard running. At €60 to €85 (by length and liner) it is a premium buy, but a dedicated German store with free express shipping makes it genuinely easy to get in Germany."
 sqwodScore: 83
 confidence: High
 crowd:
@@ -28,7 +28,7 @@ crowd:
     - { name: "REI Co-op", value: "4.6/5 (383 reviews)", url: "https://www.rei.com/product/145576/vuori-kore-lined-shorts-mens-7-inseam" }
     - { name: "OutdoorGearLab", value: "66/100 – 'Most Versatile Shorts'", url: "https://www.outdoorgearlab.com/reviews/clothing-mens/running-shorts-men/vuori-kore-short" }
 assessment:
-  score: 78
+  score: 80
   criteria:
     - { name: "Comfort", score: 9 }
     - { name: "Versatility", score: 9 }
@@ -37,9 +37,8 @@ assessment:
     - { name: "Value", score: 6 }
 value:
   score: 70
-  bestPrice: 85
+  bestPrice: 59.80
   currency: EUR
-  low: 72
 pros:
   - "Softest-in-class four-way stretch fabric, very comfortable"
   - "Extremely versatile: gym to street in one short"
@@ -47,7 +46,7 @@ pros:
   - "Multiple inseam (5\"/7\"/9\") and liner options"
   - "Dedicated DE store with free express shipping"
 cons:
-  - "Premium price (€85)"
+  - "Premium price (€60-85)"
   - "Heaviest in test, absorbs water and dries slowly"
   - "Liner can ride up during deep squats/heavy lifting"
   - "Open pockets without zips feel insecure when running"

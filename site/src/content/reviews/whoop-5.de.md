@@ -9,13 +9,13 @@ glyph: band
 type: wearables
 conversion: sqwod-ai
 publishedAt: 2026-07-23
-updatedAt: 2026-07-23
+updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
 # HINWEIS: EUR-Abopreise waren zum RechercheZeitpunkt nicht offiziell bestätigt — vor Veröffentlichung prüfen.
 verdict: "14 Tage Akku, ein 7 % kleineres Band, EKG auf Abruf und tägliche Blutdruck-Insights — der größte Whoop-Sprung bisher. Weiterhin ohne Display, weiterhin nur im Abo, und die Herzfrequenz-Genauigkeit ist noch nicht ganz Spitzenklasse."
-sqwodScore: 83
+sqwodScore: 82
 confidence: Medium
 crowd:
   score: 84
@@ -28,7 +28,7 @@ crowd:
     - { name: "Wareable", value: "4.5/5" }
     - { name: "TechGearLab", value: "73/100" }
 assessment:
-  score: 86
+  score: 84
   criteria:
     - { name: "Genauigkeit", score: 8.6 }
     - { name: "Preis-Leistung", score: 7.0 }
