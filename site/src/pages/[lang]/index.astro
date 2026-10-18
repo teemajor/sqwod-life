@@ -11,6 +11,7 @@ import { languages, type Lang } from '../../i18n/ui';
 import { pillarMeta, type Pillar } from '../../i18n/pillars';
 import { readdirSync } from 'node:fs';
 import { reviewEarns } from '../../config/verified-categories';
+import { priceOf } from '../../lib/price';
 import { join } from 'node:path';
 
 export function getStaticPaths() {
@@ -58,9 +59,7 @@ for (const r of reviews) {
   seenCat.add(r.data.category); picks.push(r);
 }
 const topPicks = tool ? [picks[0], picks[1], tool].filter(Boolean) : picks;
-const cur = (c: string) => (c === 'EUR' ? '€' : c === 'USD' ? '$' : c === 'GBP' ? '£' : `${c} `);
-const per = (t: string) => (t === 'monthly' ? (de ? '/Monat' : '/mo') : t === 'yearly' ? (de ? '/Jahr' : '/yr') : '');
-const price = (r: (typeof reviews)[number]) => `${de ? 'ab' : 'from'} ${cur(r.data.value.currency)}${r.data.value.bestPrice}${per(r.data.value.priceType)}`;
+const price = (r: (typeof reviews)[number]) => `${de ? 'ab' : 'from'} ${priceOf(r.data.value, de ? 'de' : 'en')}`;
 
 const title = de ? 'Sqwod — dein Vorsprung im Fitness-Business' : 'Sqwod: your edge in the fitness industry';
 const tagline = de
