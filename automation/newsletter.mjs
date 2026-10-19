@@ -12,6 +12,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { isLiveIssue } from '../site/src/config/daily.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DAILY = join(__dirname, '..', 'site', 'src', 'content', 'daily');
@@ -285,7 +286,12 @@ const rfc822 = (d) => new Date(d + 'T06:00:00Z').toUTCString();
 const xesc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 function writeContentFeed(lang) {
   if (!existsSync(DAILY)) return;
-  const files = readdirSync(DAILY).filter((f) => f.endsWith(`.${lang}.md`)).sort().reverse().slice(0, 12);
+  // Only live issues (published, from the relaunch date on). See site/src/config/daily.mjs.
+  const isLive = (f) => {
+    const fm = (readFileSync(join(DAILY, f), 'utf8').match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
+    return isLiveIssue((fm.match(/^status:\s*"?([\w-]+)"?/m) || [])[1], (fm.match(/^date:\s*"?([\d-]+)"?/m) || [])[1]);
+  };
+  const files = readdirSync(DAILY).filter((f) => f.endsWith(`.${lang}.md`) && isLive(f)).sort().reverse().slice(0, 12);
   const items = files.map((f) => {
     const out = render(parseIssue(join(DAILY, f)), lang);
     const link = `${SITE}/${lang}/daily/${out.date}`;

@@ -11,6 +11,7 @@ import { languages, type Lang } from '../../i18n/ui';
 import { pillarMeta, type Pillar } from '../../i18n/pillars';
 import { readdirSync } from 'node:fs';
 import { reviewEarns } from '../../config/verified-categories';
+import { isLiveIssue } from '../../config/daily.mjs';
 import { priceOf } from '../../lib/price';
 import { join } from 'node:path';
 
@@ -22,7 +23,7 @@ const de = lang === 'de';
 const fmtDate = (d: Date) => d.toLocaleDateString(de ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
 
 // --- Today's Daily
-const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published'))
+const issues = (await getCollection('daily', (i) => i.data.lang === lang && isLiveIssue(i.data.status, i.data.date)))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latest = issues[0];
 let audioFiles = new Set<string>();

@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
 import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../../config/podcast';
+import { isLiveIssue } from '../../../config/daily.mjs';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { readdirSync } from 'node:fs';
 import { join } from 'node:path';
@@ -17,7 +18,7 @@ let audioFiles = new Set<string>();
 try { audioFiles = new Set(readdirSync(join(process.cwd(), 'public', 'audio'))); } catch { /* none yet */ }
 const hasAudio = (slug: string) => audioFiles.has(`${slug}-${lang}.mp3`);
 
-const issues = (await getCollection('daily', (i) => i.data.lang === lang && i.data.status === 'published'))
+const issues = (await getCollection('daily', (i) => i.data.lang === lang && isLiveIssue(i.data.status, i.data.date)))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latest = issues[0];
 const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });

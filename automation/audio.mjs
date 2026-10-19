@@ -24,6 +24,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { isLiveIssue } from '../site/src/config/daily.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DAILY = join(__dirname, '..', 'site', 'src', 'content', 'daily');
@@ -56,6 +57,13 @@ const OUTRO = { en: "And that's your Sqwod Daily. Go get one rep better — see 
 
 // --- tiny frontmatter reader (no deps; cascade writes JSON-quoted values) ---
 const jstr = (line) => { const m = line.match(/"(?:[^"\\]|\\.)*"/); return m ? JSON.parse(m[0]) : ''; };
+const isLive = (file) => {
+  const fm = (readFileSync(file, 'utf8').match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
+  const status = (fm.match(/^status:\s*"?([\w-]+)"?/m) || [])[1];
+  const date = (fm.match(/^date:\s*"?([\d-]+)"?/m) || [])[1];
+  return isLiveIssue(status, date);
+};
+
 function parseIssue(file) {
   const text = readFileSync(file, 'utf8');
   const fm = (text.match(/^---\n([\s\S]*?)\n---/) || [])[1] || '';
@@ -163,7 +171,9 @@ const xml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 
 function buildFeed(lang) {
   if (!existsSync(DAILY)) return;
-  const files = readdirSync(DAILY).filter((f) => f.endsWith(`.${lang}.md`)).sort().reverse();
+  // Only live issues (published, from the relaunch date on). A retired issue has no
+  // page, so its episode would link to a 404. See site/src/config/daily.mjs.
+  const files = readdirSync(DAILY).filter((f) => f.endsWith(`.${lang}.md`) && isLive(join(DAILY, f))).sort().reverse();
   const items = [];
   for (const f of files) {
     const iss = parseIssue(join(DAILY, f));

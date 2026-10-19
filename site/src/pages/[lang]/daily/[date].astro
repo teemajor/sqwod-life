@@ -8,11 +8,12 @@ import ShareBar from '../../../components/ShareBar.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { existsSync } from 'node:fs';
 import { dailyIsFresh } from '../../../config/seo.mjs';
+import { isLiveIssue } from '../../../config/daily.mjs';
 import { join } from 'node:path';
 
 export async function getStaticPaths() {
-  // Only build published editions — drafts stay off the live site.
-  const issues = (await getCollection('daily')).filter((iss) => iss.data.status === 'published');
+  // Only build live editions: published, and from the relaunch date on (src/config/daily.mjs).
+  const issues = (await getCollection('daily')).filter((iss) => isLiveIssue(iss.data.status, iss.data.date));
   return issues.map((iss) => ({
     params: { lang: iss.data.lang, date: iss.data.urlSlug },
     props: { entry: iss },

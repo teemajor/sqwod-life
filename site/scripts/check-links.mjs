@@ -24,6 +24,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { DAILY_START } from '../src/config/daily.mjs';
 
 const SITE_ORIGIN = 'https://sqwod.life';
 const ENC_ORIGIN = encodeURIComponent(SITE_ORIGIN); // https%3A%2F%2Fsqwod.life
@@ -73,7 +74,15 @@ function pathsIn(html) {
   return paths;
 }
 
-const files = await htmlFiles(DIST);
+// Retired email renders: dist/email/<date>-<lang>.html from before the Daily relaunch
+// (src/config/daily.mjs). They are not linked anywhere and robots.txt blocks /email/;
+// they point at issues that were retired on purpose, so their links are expected to
+// be dead. Every email from the relaunch date on is still checked.
+const retiredEmail = (f) => {
+  const m = f.match(/[\\/]email[\\/](\d{4}-\d{2}-\d{2})-/);
+  return !!m && m[1] < DAILY_START;
+};
+const files = (await htmlFiles(DIST)).filter((f) => !retiredEmail(f));
 const broken = [];
 for (const file of files) {
   const html = await readFile(file, 'utf8');
