@@ -1,84 +1,5 @@
 [
   {
-    "date": "2026-09-25",
-    "key": "atn insights the churn problem hiding in failed payments",
-    "tokens": [
-      "insights",
-      "churn",
-      "problem",
-      "hiding",
-      "failed",
-      "payments"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "key": "jamieson wellness inc jwel sets vote on c4575share cash acqu",
-    "tokens": [
-      "jamieson",
-      "jwel",
-      "sets",
-      "vote",
-      "share",
-      "cash",
-      "acquisition"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "key": "google fitbit air expected india price launch date key featu",
-    "tokens": [
-      "google",
-      "fitbit",
-      "expected",
-      "india",
-      "price",
-      "launch",
-      "date",
-      "features"
-    ],
-    "entities": [
-      "Fitbit"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "key": "australian fitness industry revenue forecast to approach 38 ",
-    "tokens": [
-      "australian",
-      "revenue",
-      "forecast",
-      "approach",
-      "billion"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "key": "dssv untersttzt deutsche olympiabewerbung spiele als impuls ",
-    "tokens": [
-      "dssv",
-      "unterst",
-      "deutsche",
-      "olympiabewerbung",
-      "spiele",
-      "impuls",
-      "bewegteres",
-      "deutschland"
-    ]
-  },
-  {
-    "date": "2026-09-25",
-    "key": "men turn to pilates as uk market reaches 11 billion valuatio",
-    "tokens": [
-      "turn",
-      "pilates",
-      "market",
-      "reaches",
-      "billion",
-      "valuation"
-    ]
-  },
-  {
     "date": "2026-09-28",
     "key": "beauty and wellness startup amaani raises 5 mn led by beco c",
     "tokens": [
@@ -1391,6 +1312,93 @@
       "fourth",
       "agency",
       "acquisition"
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "key": "amsterdams huppa raises 1 million to build an operating syst",
+    "tokens": [
+      "amsterdam",
+      "huppa",
+      "raises",
+      "million",
+      "build",
+      "operating",
+      "system",
+      "class",
+      "based",
+      "gyms",
+      "studios"
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "key": "toronto8217s reformd to enter us plans world8217s largest la",
+    "tokens": [
+      "toronto",
+      "8217",
+      "reformd",
+      "enter",
+      "world",
+      "largest",
+      "lagree",
+      "studio"
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "key": "christies auctions in london raise 289 million boosting the ",
+    "tokens": [
+      "christie",
+      "auctions",
+      "london",
+      "raise",
+      "million",
+      "boosting",
+      "recovery",
+      "global",
+      "market"
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "key": "scarlet rae review wearable heat pad and pocket period brief",
+    "tokens": [
+      "scarlet",
+      "review",
+      "wearable",
+      "heat",
+      "pocket",
+      "period",
+      "briefs"
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "key": "onlineeinweisung am 19 november 2026",
+    "tokens": [
+      "online",
+      "einweisung",
+      "november",
+      "2026"
+    ]
+  },
+  {
+    "date": "2026-10-19",
+    "key": "mind gym plc mind reports 15 revenue drop in h1 fy27 amid co",
+    "tokens": [
+      "mind",
+      "reports",
+      "revenue",
+      "drop",
+      "fy27",
+      "corporate",
+      "budget",
+      "cuts",
+      "revises",
+      "full",
+      "year",
+      "forecast"
     ]
   }
 ]

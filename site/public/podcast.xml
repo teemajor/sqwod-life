@@ -4,9 +4,9 @@
     <title>Sqwod Daily</title>
     <link>https://sqwod.life/en/daily</link>
     <language>en</language>
-    <description>Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.</description>
+    <description>Your 5-minute audio rundown of the fitness and wellness industry, every weekday. From Sqwod.</description>
     <itunes:author>Sqwod</itunes:author>
-    <itunes:summary>Your 5-minute audio rundown of the business of fitness and wellness — every weekday. From Sqwod.</itunes:summary>
+    <itunes:summary>Your 5-minute audio rundown of the fitness and wellness industry, every weekday. From Sqwod.</itunes:summary>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Health &amp; Fitness"/>
@@ -14,6 +14,21 @@
     <itunes:owner><itunes:name>Sqwod</itunes:name><itunes:email>hello@sqwod.life</itunes:email></itunes:owner>
     <itunes:image href="https://sqwod.life/podcast-cover.png"/>
     <image><url>https://sqwod.life/podcast-cover.png</url><title>Sqwod Daily</title><link>https://sqwod.life/en/daily</link></image>
+    <item>
+      <title>Sqwod Daily — 19 Oct 2026</title>
+      <description>Corporate wellness is a trap &amp; Lagree goes global, €1M OS bet
+• €1M bet: Huppa wants to be the OS for class-based gyms — Amsterdam startup Huppa has raised €1 million to build an all-in-one operating system for class-based gyms and studios. If it delivers, operators could spend less time duct-taping software together and more time actually running a gym.
+• Reformd Is Taking Lagree South of the Border — Toronto's Reformd studio is expanding into the US and plans to open what would be the world's largest Lagree studio. For operators watching the Lagree format grow, this is a signal that the category has serious cross-border legs.
+• $289M at Christie's: the art market just had a serious flex — Christie's London sales hauled in $289 million, signalling that big-ticket discretionary spend is back on the table. If collectors are dropping that kind of money on canvas, your premium memberships and high-ticket offers are sitting in a very friendly climate.
+• Scarlet Rae's Heat Pad Briefs Put Period Gear to the Test — Luxurious Magazine reviewed Scarlet Rae's wearable heat pad and pocket period briefs, so now you have a real answer when a client asks whether period-friendly activewear is actually worth it.
+• DSSV Online-Einweisung: Save the date for 19 November — The DSSV is running an online induction session on 19 November 2026, a straightforward way for studio operators and coaches to get up to speed without leaving the building.</description>
+      <pubDate>Mon, 19 Oct 2026 06:00:00 GMT</pubDate>
+      <enclosure url="https://sqwod.life/audio/2026-10-19-en.mp3" length="2745198" type="audio/mpeg"/>
+      <guid isPermaLink="true">https://sqwod.life/audio/2026-10-19-en.mp3</guid>
+      <itunes:duration>00:02:35</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+      <link>https://sqwod.life/en/daily/2026-10-19</link>
+    </item>
     <item>
       <title>Sqwod Daily — 16 Oct 2026</title>
       <description>10 numbers every gym owner needs, €3M recovery club &amp; Suunto challenges Garmin
@@ -42,7 +57,7 @@
       <pubDate>Thu, 15 Oct 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-10-15-en.mp3" length="2416683" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-10-15-en.mp3</guid>
-      <itunes:duration>00:02:16</itunes:duration>
+      <itunes:duration>00:02:15</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-10-15</link>
     </item>
@@ -520,7 +535,7 @@
       <pubDate>Wed, 02 Sep 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-09-02-en.mp3" length="2157967" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-09-02-en.mp3</guid>
-      <itunes:duration>00:02:06</itunes:duration>
+      <itunes:duration>00:02:05</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-09-02</link>
     </item>
@@ -640,7 +655,7 @@
       <pubDate>Fri, 21 Aug 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-08-21-en.mp3" length="1858708" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-08-21-en.mp3</guid>
-      <itunes:duration>00:01:42</itunes:duration>
+      <itunes:duration>00:01:41</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-08-21</link>
     </item>
@@ -672,7 +687,7 @@
       <pubDate>Wed, 19 Aug 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-08-19-en.mp3" length="2344795" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-08-19-en.mp3</guid>
-      <itunes:duration>00:02:11</itunes:duration>
+      <itunes:duration>00:02:10</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-08-19</link>
     </item>
@@ -1304,7 +1319,7 @@
       <pubDate>Sun, 21 Jun 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-06-21-en.mp3" length="2096527" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-06-21-en.mp3</guid>
-      <itunes:duration>00:02:00</itunes:duration>
+      <itunes:duration>00:01:59</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-06-21</link>
     </item>
@@ -1317,7 +1332,7 @@
       <pubDate>Tue, 16 Jun 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-06-16-en.mp3" length="984755" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-06-16-en.mp3</guid>
-      <itunes:duration>00:00:52</itunes:duration>
+      <itunes:duration>00:00:51</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-06-16</link>
     </item>
@@ -1343,7 +1358,7 @@
       <pubDate>Thu, 11 Jun 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-06-11-en.mp3" length="1023626" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-06-11-en.mp3</guid>
-      <itunes:duration>00:00:55</itunes:duration>
+      <itunes:duration>00:00:54</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-06-11</link>
     </item>
@@ -1356,7 +1371,7 @@
       <pubDate>Wed, 10 Jun 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-06-10-en.mp3" length="943377" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-06-10-en.mp3</guid>
-      <itunes:duration>00:00:47</itunes:duration>
+      <itunes:duration>00:00:46</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-06-10</link>
     </item>
@@ -1382,7 +1397,7 @@
       <pubDate>Fri, 05 Jun 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-06-05-en.mp3" length="1003564" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-06-05-en.mp3</guid>
-      <itunes:duration>00:00:49</itunes:duration>
+      <itunes:duration>00:00:48</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-06-05</link>
     </item>
@@ -1395,7 +1410,7 @@
       <pubDate>Thu, 04 Jun 2026 06:00:00 GMT</pubDate>
       <enclosure url="https://sqwod.life/audio/2026-06-04-en.mp3" length="1004817" type="audio/mpeg"/>
       <guid isPermaLink="true">https://sqwod.life/audio/2026-06-04-en.mp3</guid>
-      <itunes:duration>00:00:54</itunes:duration>
+      <itunes:duration>00:00:53</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
       <link>https://sqwod.life/en/daily/2026-06-04</link>
     </item>
