@@ -13,7 +13,7 @@ const readOn = active === 'articles' || active === 'evidence';
 ---
 <header class="site">
   <div class="wrap bar">
-    <a class="logo" href={`/${lang}/`}><picture><source media="(prefers-color-scheme: light)" srcset="/sqwod-black.png" /><img class="logo-mark" src="/sqwod-white.png" alt="Sqwod" width="76" height="20" /></picture><span>.life</span></a>
+    <a class="logo" href={`/${lang}/`}><img class="logo-mark lm-dark" src="/sqwod-white.png" alt="Sqwod" width="76" height="20" /><img class="logo-mark lm-light" src="/sqwod-black.png" alt="Sqwod" width="76" height="20" /><span>.life</span></a>
     <nav class="main" id="mainnav">
       <a href={`/${lang}/daily`} class={active==='daily'?'on':''}>{L.daily}</a>
       <a href={`/${lang}/articles`} class={readOn?'on':''}>{L.read}</a>
@@ -23,6 +23,10 @@ const readOn = active === 'articles' || active === 'evidence';
     </nav>
     <div class="utils">
       <a class="adv-link" href={`/${lang}/advertise`}>{L.adv}</a>
+      <button class="theme-toggle" type="button" data-label-light={de?'Helles Design':'Light mode'} data-label-dark={de?'Dunkles Design':'Dark mode'} aria-label={de?'Design wechseln':'Switch theme'} title={de?'Design wechseln':'Switch theme'}>
+        <svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        <svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
       <a class="lang" href={otherHref}><b>{lang.toUpperCase()}</b> · {other.toUpperCase()}</a>
       <a class="cta" href={`/${lang}/subscribe`}>{t(lang,'nav.subscribe')}</a>
       <button class="nav-toggle" type="button" aria-label={de?'Menü':'Menu'} aria-expanded="false" aria-controls="mainnav">
@@ -45,6 +49,26 @@ const readOn = active === 'articles' || active === 'evidence';
 
 <script is:inline>
   (function () {
+    // Theme toggle: flips between light and dark and remembers the choice.
+    // The saved choice is applied before first paint by the script in Base.astro.
+    var tt = document.querySelector('header.site .theme-toggle');
+    if (tt) {
+      var root = document.documentElement;
+      var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: light)') : null;
+      var current = function () { return root.getAttribute('data-theme') || (mq && mq.matches ? 'light' : 'dark'); };
+      var label = function () {
+        var next = current() === 'light' ? 'dark' : 'light';
+        tt.setAttribute('aria-label', tt.getAttribute('data-label-' + next));
+        tt.setAttribute('title', tt.getAttribute('data-label-' + next));
+      };
+      label();
+      tt.addEventListener('click', function () {
+        var next = current() === 'light' ? 'dark' : 'light';
+        root.setAttribute('data-theme', next);
+        try { localStorage.setItem('sqwod_theme', next); } catch (e) {}
+        label();
+      });
+    }
     var bar = document.querySelector('header.site .bar');
     var btn = bar && bar.querySelector('.nav-toggle');
     if (!bar || !btn) return;

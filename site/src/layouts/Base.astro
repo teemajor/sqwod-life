@@ -44,6 +44,8 @@ const impactVerify: Record<string, string> = { value: '7dbbad87-cd73-480d-971c-7
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Apply a saved light/dark choice before first paint (no flash). See Header.astro. -->
+  <script is:inline>try{var s=localStorage.getItem('sqwod_theme');if(s==='light'||s==='dark')document.documentElement.setAttribute('data-theme',s)}catch(e){}</script>
   <meta name="impact-site-verification" {...impactVerify} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>{title}</title>

@@ -25,6 +25,8 @@
   --maxw:760px;
 }
 html{color-scheme:dark light}
+:root[data-theme="dark"]{color-scheme:dark}
+:root[data-theme="light"]{color-scheme:light}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--ink);color:var(--chalk);font-family:var(--sans);-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -427,7 +429,7 @@ body{background:var(--page-wash) fixed}
    * --accent stays the same signature lime. It is the one pop of colour in the system;
      on white it needs a darker ink pairing, which is all that changes here. */
 @media (prefers-color-scheme: light){
-  :root{
+  :root:not([data-theme="dark"]){
     --ink:#F3F0EA; --chalk:#1B1917;
     --g1:#2E2B28; --g2:#5C5850; --g3:#6B665E; --g4:#6B665E;
     --panel:#FFFFFF; --panel2:#FAF8F4; --line:#E2DED6;
@@ -444,18 +446,75 @@ body{background:var(--page-wash) fixed}
     --up:#2F5A3A; --down:#B3261E; --warn:#7A5A14;
   }
   /* footnote markers sit in running text: use the app's moss-ink */
-  .prose sup.fn a{color:#2F5A3A}
+  :where(:root:not([data-theme="dark"])) .prose sup.fn a{color:#2F5A3A}
   /* keep the artwork plates dark: they carry white line art. The palette tokens are
      re-pointed to their dark values INSIDE each plate, so line art drawn with
      currentColor or var(--chalk) stays chalk-on-dark. Without this the icons invert
      to ink-on-dark and the plate reads as a solid black box. */
-  .glyphbox,.heromotif,.viewer,.ql-stage,.arthero,.g-lattice,.ah-lattice{
+  :where(:root:not([data-theme="dark"])) .glyphbox,:where(:root:not([data-theme="dark"])) .heromotif,:where(:root:not([data-theme="dark"])) .viewer,:where(:root:not([data-theme="dark"])) .ql-stage,:where(:root:not([data-theme="dark"])) .arthero,:where(:root:not([data-theme="dark"])) .g-lattice,:where(:root:not([data-theme="dark"])) .ah-lattice{
     color-scheme:dark; color:#F4F0EA;
     --chalk:#F4F0EA; --ink:#0E0E0F; --mark:#F4F0EA;
     --g1:#E4E0D9; --g2:#A3A3A0; --g3:#8E8E8A; --g4:#84847F;
   }
-  .glyphbox,.viewer{border-color:#28282B}
+  :where(:root:not([data-theme="dark"])) .glyphbox,:where(:root:not([data-theme="dark"])) .viewer{border-color:#28282B}
   /* product shots already sit on white tiles — give them an edge so they don't float */
-  .g-main,.g-thumb{border:1px solid var(--line)}
+  :where(:root:not([data-theme="dark"])) .g-main,:where(:root:not([data-theme="dark"])) .g-thumb{border:1px solid var(--line)}
   /* the header swaps in the real sqwod-black.png via <picture>; nothing to invert */
 }
+/* Manual choice from the header toggle (stored in localStorage "sqwod_theme").
+   Same rules as the block above; data-theme="dark" opts out of it, data-theme="light"
+   applies it regardless of the device setting. Keep the two blocks in sync. */
+:root[data-theme="light"]{
+  --ink:#F3F0EA; --chalk:#1B1917;
+  --g1:#2E2B28; --g2:#5C5850; --g3:#6B665E; --g4:#6B665E;
+  --panel:#FFFFFF; --panel2:#FAF8F4; --line:#E2DED6;
+  --bg:#FAF8F4;
+  --edge:#CFCAC1;
+  --page-wash:#F3F0EA;
+  --overlay:rgba(27,25,23,.55);
+  --shadow-sm:0 4px 18px rgba(27,25,23,.08);
+  --shadow-md:0 12px 24px rgba(27,25,23,.10);
+  --shadow-lg:0 14px 34px -18px rgba(27,25,23,.3);
+  /* Ledger moss for light: dark enough to read as text on paper; on-accent ink is bone */
+  --accent:#4F7A5A; --accent-ink:#F4EFE6;
+  --accent-soft:#E1EDE3; --accent-line:rgba(79,122,90,.55);
+  --up:#2F5A3A; --down:#B3261E; --warn:#7A5A14;
+}
+/* footnote markers sit in running text: use the app's moss-ink */
+:where(:root[data-theme="light"]) .prose sup.fn a{color:#2F5A3A}
+/* keep the artwork plates dark: they carry white line art. The palette tokens are
+   re-pointed to their dark values INSIDE each plate, so line art drawn with
+   currentColor or var(--chalk) stays chalk-on-dark. Without this the icons invert
+   to ink-on-dark and the plate reads as a solid black box. */
+:where(:root[data-theme="light"]) .glyphbox,:where(:root[data-theme="light"]) .heromotif,:where(:root[data-theme="light"]) .viewer,:where(:root[data-theme="light"]) .ql-stage,:where(:root[data-theme="light"]) .arthero,:where(:root[data-theme="light"]) .g-lattice,:where(:root[data-theme="light"]) .ah-lattice{
+  color-scheme:dark; color:#F4F0EA;
+  --chalk:#F4F0EA; --ink:#0E0E0F; --mark:#F4F0EA;
+  --g1:#E4E0D9; --g2:#A3A3A0; --g3:#8E8E8A; --g4:#84847F;
+}
+:where(:root[data-theme="light"]) .glyphbox,:where(:root[data-theme="light"]) .viewer{border-color:#28282B}
+/* product shots already sit on white tiles — give them an edge so they don't float */
+:where(:root[data-theme="light"]) .g-main,:where(:root[data-theme="light"]) .g-thumb{border:1px solid var(--line)}
+/* the header swaps in the real sqwod-black.png via <picture>; nothing to invert */
+
+
+/* ---- Theme toggle + wordmark swap (2026-10-19) ----
+   The wordmark used <picture media="(prefers-color-scheme)">, which cannot see a
+   manual choice. Both PNGs now ship and CSS shows the right one. The toggle shows
+   the theme you will switch TO: a sun on dark, a moon on light. !important because
+   .logo .logo-mark and .foot-logo img set display:block with higher specificity. */
+.lm-light,.tt-moon{display:none!important}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]) .lm-dark,:root:not([data-theme="dark"]) .tt-sun{display:none!important}
+  :root:not([data-theme="dark"]) .lm-light,:root:not([data-theme="dark"]) .tt-moon{display:block!important}
+}
+:root[data-theme="light"] .lm-dark,:root[data-theme="light"] .tt-sun{display:none!important}
+:root[data-theme="light"] .lm-light,:root[data-theme="light"] .tt-moon{display:block!important}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;padding:0;
+  border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--g2);cursor:pointer}
+.theme-toggle:hover{color:var(--chalk);border-color:var(--edge)}
+.theme-toggle svg{width:16px;height:16px}
+.lang{white-space:nowrap}
+@media(max-width:640px){ .utils{gap:8px} .theme-toggle{width:30px;height:30px} }
+@media(max-width:380px){ .utils{gap:6px} .cta{padding:8px 11px;font-size:12px} }
+/* under 340px (first-gen iPhone SE) there is no room: hide the toggle; the device setting still applies */
+@media(max-width:340px){ .theme-toggle{display:none} }
