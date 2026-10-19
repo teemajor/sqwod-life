@@ -1,0 +1,39 @@
+{
+  "site": "sc-domain:sqwod.life",
+  "window": {
+    "start": "2026-09-18",
+    "end": "2026-10-16",
+    "days": 28
+  },
+  "generatedAt": "2026-10-19T13:32:48.789Z",
+  "totals": {
+    "clicks": 0,
+    "impressions": 0,
+    "ctr": 0,
+    "queries": 0,
+    "pages": 1
+  },
+  "topQueries": [],
+  "topPages": [
+    {
+      "page": "https://sqwod.life/en/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    }
+  ],
+  "striking": [],
+  "questions": [],
+  "gaps": [],
+  "countries": [
+    {
+      "country": "usa",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 5.5
+    }
+  ]
+}
