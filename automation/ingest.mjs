@@ -11,11 +11,12 @@
  *   node automation/ingest.mjs                 # writes sources/<today>.json
  *   node automation/ingest.mjs --date=2026-06-19 --max=6
  */
+import { feedSummary, fetchArticle, bestText, decodeEntities, stripTags } from './article.mjs';
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { resolveAll } from './quality.mjs';
-import { isOnBrand, OFFTOPIC_RX, FINANCE_OUTLETS_RX, primaryEntity, allEntities, WATCHLIST_RX, DEAL_RX } from './onbrand.mjs';
+import { isOnBrand, isProductReview, OFFTOPIC_RX, FINANCE_OUTLETS_RX, primaryEntity, allEntities, WATCHLIST_RX, DEAL_RX } from './onbrand.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, 'sources');
@@ -68,8 +69,10 @@ const QUERIES = [
 // Items from these curated feeds skip the keyword RELEVANT gate (already on-topic).
 const FEEDS = [
   { url: 'https://globalwellnessinstitute.org/feed/', outlet: 'Global Wellness Institute', pillar: 'industry-trends', conversion: 'list-growth' },
-  { url: 'https://www.welltodoglobal.com/feed/', outlet: 'Welltodo', pillar: 'business-strategy', conversion: 'sqwod-os' },
-  { url: 'https://insider.fitt.co/feed/', outlet: 'Fitt Insider', pillar: 'industry-trends', conversion: 'sqwod-os' },
+  // Removed 2026-10-19 after a live check: Welltodo stopped publishing in Aug 2024, and
+  // Fitt Insider's RSS returns zero items (Fitt is read from its news sitemap below).
+  { url: 'https://www.clubsolutionsmagazine.com/feed/', outlet: 'Club Solutions', pillar: 'business-strategy', conversion: 'pods' },
+  { url: 'https://www.healthclubmanagement.co.uk/feed/news-feed.xml', outlet: 'Health Club Management', pillar: 'business-strategy', conversion: 'pods' },
   { url: 'https://athletechnews.com/feed/', outlet: 'Athletech News', pillar: 'operations-technology', conversion: 'verified' },
   { url: 'https://www.healthandfitness.org/feed/', outlet: 'Health & Fitness Association', pillar: 'business-strategy', conversion: 'pods' },
   { url: 'https://www.bodylife.com/feed/', outlet: 'body LIFE', pillar: 'business-strategy', conversion: 'pods', lang: 'de' },
@@ -96,6 +99,8 @@ const FEEDS = [
 // They are capped, score-penalised so they can never lead an issue, and labelled
 // as company announcements — a press release is the company's own claim, not reporting.
 const WIRES = [
+  { url: 'https://www.healthclubmanagement.co.uk/feed/press-release-feed.xml',
+    outlet: 'Health Club Management', pillar: 'industry-trends', conversion: 'verified' },
   { url: 'https://www.prnewswire.com/rss/health-latest-news/health-latest-news-list.rss',
     outlet: 'PR Newswire', pillar: 'industry-trends', conversion: 'sqwod-os' },
   { url: 'https://www.prnewswire.com/rss/consumer-products-retail-latest-news/consumer-products-retail-latest-news-list.rss',
@@ -115,6 +120,28 @@ const WIRE_QUERIES = [
   { q: `(site:presseportal.de OR site:openpr.de OR ${WIRE_SITES}) (Fitness OR Fitnessstudio OR Gesundheit OR Wearable OR "Nahrungsergänzung" OR Wellness) (startet OR übernimmt OR Übernahme OR Finanzierung OR Kooperation OR eröffnet) when:6d`,
     pillar: 'industry-trends', conversion: 'pods', lang: 'de', ed: { hl: 'de', gl: 'DE', ceid: 'DE:de' } },
 ];
+// Trade outlets without a usable RSS feed (checked live 2026-10-19). Read from their
+// Google News sitemaps instead: every story of the last ~48h with its publish time,
+// and (Fitt) its title. Press releases a site hosts are flagged as press releases.
+const SITEMAPS = [
+  { url: 'https://insider.fitt.co/yoast-news-sitemap.xml', outlet: 'Fitt Insider',
+    pillar: 'industry-trends', conversion: 'sqwod-os', pressPath: /\/press-release\// },
+  // fitness MANAGEMENT numbers its news sitemaps; the index says which one is current.
+  { index: 'https://www.fitnessmanagement.de/sitemap.xml', child: /news-sitemap\d*\.xml/, outlet: 'fitness MANAGEMENT',
+    pillar: 'business-strategy', conversion: 'pods', lang: 'de', skipPath: /podcast|flash-news|rueckblick/ },
+];
+// Fitt Insider's curated Daily Brief (weekdays, US time): 3 to 5 news items, each an
+// <h2> headline with a few paragraphs of facts. Every item becomes its own candidate,
+// credited to Fitt, with the brief's text as its facts. Tee, 19 Oct 2026: "they curate
+// daily news as well", not just the press releases in their sitemap.
+const FITT_BRIEF = { base: 'https://insider.fitt.co/daily-brief-', outlet: 'Fitt Insider', pillar: 'industry-trends', conversion: 'sqwod-os', days: 4, take: 2 };
+
+// Trade outlets that block automated readers outright (Club Industry: 403 on every
+// page and feed). Google News still indexes them, so search that one site.
+const TRADE_QUERIES = [
+  { q: 'site:clubindustry.com when:4d', outlet: 'Club Industry', pillar: 'business-strategy', conversion: 'pods' },
+];
+
 // PR Newswire's advertising subdomain — never a story.
 const WIRE_HOST_BLOCK = /(^|\.)edge\.prnewswire\.com$|(^|\/\/)edge\.prnewswire\.com/i;
 
@@ -143,16 +170,24 @@ function wireDupKey(headline) {
 // carry a STRONG industry term AND not match the finance/markets OFFTOPIC list.
 // The old RELEVANT regex accepted ambiguous words ("recovery", "strength") alone —
 // that's how a gold/XAU story slipped into the 2026-07-08 Daily. Never again.
-const JUNK = /(\bhoroscope\b|\bzodiac\b|\brecipe\b|\bkardashian\b|\broyal\b|^meet\s|\bquiz\b|\bweight loss pill\b|\bcelebrit|sponsored content|\bdeal of the day\b)/i;
+// Same deal reported by two outlets ("PureGym buys NonStop Gym for £235m" and "Gym
+// operator beefs up with £235m acquisition") reads differently, so the word-overlap
+// dedupe misses it. The amount does not change: one amount, one slot.
+const normAmount = (a) => String(a || '').toLowerCase().replace(/\s+/g, '').replace(/million/g, 'm').replace(/billion/g, 'bn');
+function sameDeal(item, picked) {
+  const a = normAmount(item.money?.amount);
+  return !!a && picked.some((p) => normAmount(p.money?.amount) === a);
+}
+// Viral and human-interest sites: entertaining, but not industry news.
+const VIRAL_OUTLETS = /(twisted ?sifter|bored ?panda|buzzfeed|upworthy|distractify|someecards|unilad|ladbible|the ?list\b|ranker|cracked|scary ?mommy|yahoo life)/i;
+const JUNK = /(\bhoroscope\b|\bzodiac\b|\brecipe\b|\bkardashian\b|\broyal\b|^meet\s|\bquiz\b|\bweight loss pill\b|\bcelebrit|sponsored content|\bdeal of the day\b|fundrais\w*|\bcharity\b|\bdonat\w*|\w+-a-thon\b|\bbest .{1,40} platforms?\b|\b\d+ (?:best|top) |^#\d+\s*:|\bpodcast\b|\bmust-see\b|\bepisode \d+)/i;   // + charity fundraisers, listicles, podcast episodes (Oct 2026)
 // Advertorial / non-story noise. WordPress "Geschützt:"/"Protected:" posts are
 // password-gated (no readable story), and webinar/whitepaper promos are ads, not news
 // — these are exactly the body LIFE / DSSV items that kept leading the Daily. Drop them.
 const PROMO = /(^\s*(?:geschützt|protected)\s*:|password[-\s]?protected|\bwebinar\b|\bwhite\s?paper\b|jetzt anmelden|kostenlos(?:es)?\s+(?:webinar|e-?book|whitepaper)|\badvertorial\b|présentée? par|präsentiert von)/i;
 
-const decode = (s) => s
-  .replace(/<!\[CDATA\[|\]\]>/g, '')
-  .replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"')
-  .replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&nbsp;/g, ' ').trim();
+// Full entity decoding (numeric too): "Toronto&#8217;s" used to reach the reader raw.
+const decode = (s) => decodeEntities(decodeEntities(s)).trim();
 
 // Handles RSS (<item>) AND Atom (<entry>) feeds.
 function parseItems(xml) {
@@ -163,7 +198,7 @@ function parseItems(xml) {
     const link = decode((b.match(/<link>([\s\S]*?)<\/link>/) || [])[1] || '');
     const pub = decode((b.match(/<pubDate>([\s\S]*?)<\/pubDate>/) || [])[1] || '');
     const source = decode((b.match(/<source[^>]*>([\s\S]*?)<\/source>/) || [])[1] || '');
-    if (title && link) items.push({ title, link, pub, source });
+    if (title && link) items.push({ title, link, pub, source, summary: feedSummary(b) });
   }
   for (const m of xml.matchAll(/<entry[\s>]([\s\S]*?)<\/entry>/g)) {
     const b = m[1];
@@ -172,7 +207,7 @@ function parseItems(xml) {
     const links = [...b.matchAll(/<link[^>]*href="([^"]+)"[^>]*>/g)];
     if (links.length) { const alt = links.find((x) => /rel="alternate"/.test(x[0])) || links[0]; link = decode(alt[1]); }
     const pub = decode((b.match(/<(?:published|updated)>([\s\S]*?)<\/(?:published|updated)>/) || [])[1] || '');
-    if (title && link) items.push({ title, link, pub, source: '' });
+    if (title && link) items.push({ title, link, pub, source: '', summary: feedSummary(b) });
   }
   return items;
 }
@@ -226,10 +261,14 @@ const LEGIBLE_MONEY_RX = /([$€£]\s?\d|\bUSD\b|\bEUR\b|\bGBP\b|\b\d[\d.,]*\s?(
 const ILLEGIBLE_MONEY_RX = /(\bcrore\b|\blakh\b|\brs\.?\s?\d|₹|¥|\brmb\b|\byuan\b|₩|\bwon\b|\brupees?\b|\bpesos?\b|\bbaht\b|\bringgit\b|\brupiah\b|\bnaira\b|\btaka\b|\bdirham\b)/i;
 
 const DEAL_KINDS = new Set(['raise', 'acquisition', 'ipo', 'valuation']);
-function scoreCandidate({ headline, trade, wire, lang, money, age }) {
+function scoreCandidate({ headline, trade, wire, lang, money, age, curated = false }) {
   const h = headline || '';
   let s = 0;
-  if (trade) s += 3;                        // curated trade/global feeds = higher signal
+  if (curated) s += 2;                      // an editor already chose it (Fitt's Daily Brief)
+  if (trade) s += 6;                        // trade press = the outlets that break fitness news
+                                            // (was +3: on 19 Oct 2026 a charity bike ride and an
+                                            // AI-sales-coaching listicle outranked Club Solutions)
+  if (!trade && !wire && !WATCHLIST_RX.test(h)) s -= 2;   // general outlet, no known player: must earn it
   if (wire) s -= 2;                         // press release = the company's own claim, so it
                                             // loses ties to reported journalism. Kept mild:
                                             // the lead slot is blocked deterministically below,
@@ -268,22 +307,108 @@ function loadLedger() {
   } catch { return []; }
 }
 const normUrl = (u) => String(u || '').toLowerCase().replace(/^https?:\/\/(www\.)?/, '').replace(/[?#].*$/, '').replace(/\/+$/, '');
-function seenBefore(tok, url, ledger) {
+// Words every deal headline shares; a match on these alone says nothing.
+const DEAL_GENERIC = new Set(['raises', 'raised', 'million', 'billion', 'funding', 'round', 'acquires', 'acquisition', 'deal', 'investment', 'seed', 'series', 'startup', 'gyms', 'studios', 'software', 'platform', 'build', 'operating', 'system']);
+function seenBefore(tok, url, ledger, money = null) {
   const nu = normUrl(url);
+  const amt = normAmount(money?.amount);
   for (const e of ledger) {
     if (nu && e.url && normUrl(e.url) === nu) return true;   // exact same link
     if (isNearDup(tok, [e])) return true;                    // same event, different headline
+    // Same deal, reworded ("Huppa raises €1 million to build…" / "Huppa raises €1M to
+    // overhaul…"): same amount plus one shared distinctive word = already covered.
+    if (amt && e.deal === amt) {
+      const et = new Set(e._tok || e.tokens || []);
+      for (const w of tok) if (!DEAL_GENERIC.has(w) && et.has(w)) return true;
+    }
   }
   return false;
 }
 function saveLedger(ledger, shipped) {
-  const out = ledger.map((e) => ({ date: e.date, key: e.key, url: e.url, tokens: [...(e._tok || e.tokens || [])], ...(e.entities ? { entities: e.entities } : {}) }));
-  for (const s of shipped) out.push({ date, key: s.key, url: s.url, tokens: [...s._tok], ...(s._ents && s._ents.length ? { entities: s._ents } : {}) });
+  const out = ledger.map((e) => ({ date: e.date, key: e.key, url: e.url, tokens: [...(e._tok || e.tokens || [])], ...(e.entities ? { entities: e.entities } : {}), ...(e.deal ? { deal: e.deal } : {}) }));
+  for (const s of shipped) out.push({ date, key: s.key, url: s.url, tokens: [...s._tok], ...(s._ents && s._ents.length ? { entities: s._ents } : {}), ...(s.money?.amount ? { deal: normAmount(s.money.amount) } : {}) });
   try { writeFileSync(LEDGER_PATH, JSON.stringify(out, null, 2)); }
   catch (e) { console.error('ledger write failed:', e.message); }
 }
 
 const UA = { 'user-agent': 'Mozilla/5.0 (compatible; sqwod-ingest/2.0)' };
+// Some publishers serve article pages only to browser-like clients.
+const UA_BROWSER = { 'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36' };
+// Stories from a Google News sitemap: [{ title, link, pub }] from the last MAX_AGE_DAYS,
+// newest first. Sites whose sitemap has no titles get them from the page itself.
+async function sitemapItems(sm) {
+  let urls = [sm.url];
+  if (sm.index) {
+    const idx = await getXml(sm.index);
+    const kids = [...idx.matchAll(/<sitemap>([\s\S]*?)<\/sitemap>/g)].map((m) => ({
+      loc: decode((m[1].match(/<loc>([\s\S]*?)<\/loc>/) || [])[1] || ''),
+      mod: (m[1].match(/<lastmod>([\s\S]*?)<\/lastmod>/) || [])[1] || '',
+    })).filter((k) => sm.child.test(k.loc)).sort((a, b) => b.mod.localeCompare(a.mod));
+    // Every recently updated part, not just the first: several parts can share the
+    // newest lastmod, and the first is often the oldest archive (fitness MANAGEMENT).
+    urls = kids.filter((k) => { const a = ageDays(k.mod); return a == null || a <= MAX_AGE_DAYS; }).slice(0, 4).map((k) => k.loc);
+    if (!urls.length) return [];
+  }
+  let xml = '';
+  for (const u of urls) { try { xml += await getXml(u); } catch { /* one bad part is not fatal */ } }
+  const rows = [...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)].map((m) => {
+    const b = m[1];
+    const get = (re) => decode((b.match(re) || [])[1] || '');
+    return {
+      link: get(/<loc>([\s\S]*?)<\/loc>/),
+      pub: get(/<news:publication_date>([\s\S]*?)<\/news:publication_date>/) || get(/<lastmod>([\s\S]*?)<\/lastmod>/),
+      title: get(/<news:title>([\s\S]*?)<\/news:title>/),
+    };
+  }).filter((r) => r.link && !(sm.skipPath && sm.skipPath.test(r.link)))
+    .filter((r) => { const a = ageDays(r.pub); return a == null || a <= MAX_AGE_DAYS; })
+    .sort((a, b) => String(b.pub).localeCompare(String(a.pub)))
+    .slice(0, 15);
+  for (const r of rows) {
+    if (r.title) continue;
+    try {
+      const html = await fetch(r.link, { headers: UA_BROWSER, signal: AbortSignal.timeout(12000) }).then((x) => x.text());
+      const og = (html.match(/<meta[^>]+property=["']og:title["'][^>]+content=["']([^"']+)["']/i) || [])[1]
+        || (html.match(/<title>([\s\S]*?)<\/title>/i) || [])[1] || '';
+      r.title = decode(og).replace(/\s+[|–-]\s+[^|–-]*$/, '').trim();   // drop " | Site name" (needs spaces: keeps "HYROX-Saison")
+    } catch { /* no title, no story */ }
+  }
+  return rows.filter((r) => r.title);
+}
+
+// Items of the most recent Fitt Daily Briefs: [{ title, link, pub, summary }].
+async function fittBriefItems(fb) {
+  const out = [];
+  let found = 0;
+  for (let back = 0; back <= fb.days && found < fb.take; back++) {
+    const d = new Date(Date.now() - back * 864e5);
+    const mm = String(d.getUTCMonth() + 1).padStart(2, '0'), dd = String(d.getUTCDate()).padStart(2, '0');
+    const url = `${fb.base}${mm}-${dd}-${d.getUTCFullYear()}/`;
+    let html = '';
+    try {
+      const r = await fetch(url, { headers: UA_BROWSER, signal: AbortSignal.timeout(15000) });
+      if (!r.ok) continue;
+      html = await r.text();
+    } catch { continue; }
+    const start = html.indexOf('<h1'), end = html.search(/<h2[^>]*>\s*Up Next/i);
+    if (start < 0) continue;
+    const body = html.slice(start, end > start ? end : undefined);
+    const parts = body.split(/<h2[^>]*>/i).slice(1);
+    if (!parts.length) continue;
+    found++;
+    parts.forEach((part, i) => {
+      const [head, rest = ''] = part.split(/<\/h2>/i);
+      const title = stripTags(head);
+      if (title.length < 8 || /^(up next|presented by|sponsored)/i.test(title)) return;
+      const text = stripTags(rest);
+      // Link the item's own source page when it has one (keeps each item unique for the
+      // covered-stories record); otherwise the brief itself.
+      const own = (rest.match(/href="(https:\/\/insider\.fitt\.co\/[^"#]+)"/i) || [])[1];
+      out.push({ title, link: own || `${url}#item-${i + 1}`, pub: d.toUTCString(), summary: text.slice(0, 1400) });
+    });
+  }
+  return out;
+}
+
 async function getXml(url) {
   const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(15000) });
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -299,22 +424,25 @@ const DUP_STOP = new Set(['the','a','an','to','of','for','and','in','on','with',
 function dupTokens(h) {
   return new Set(String(h).toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !DUP_STOP.has(w)));
 }
-function isNearDup(tok, pool) {
-  if (tok.size === 0) return false;
+function findNearDup(tok, pool) {
+  if (tok.size === 0) return null;
   for (const p of pool) {
     const b = p._tok || (p._tok = dupTokens(p.headline));
     if (b.size === 0) continue;
     let o = 0; for (const t of tok) if (b.has(t)) o++;
-    if (o >= 4 || (o >= 2 && o / Math.min(tok.size, b.size) >= 0.6)) return true;
+    if (o >= 4 || (o >= 2 && o / Math.min(tok.size, b.size) >= 0.6)) return p;
   }
-  return false;
+  return null;
 }
+const isNearDup = (tok, pool) => !!findNearDup(tok, pool);
 
 // Add a normalized candidate to the pool (with headline-level + near-duplicate de-dupe,
 // a freshness gate, and cross-day de-dupe against the covered ledger).
-function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversion, trade = false, wire = false, lang = '', wireSeen = null }) {
+const SOURCE_COUNT = {};   // candidates kept per outlet, printed each run (finds dead sources fast)
+function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversion, trade = false, wire = false, lang = '', wireSeen = null, summary = '', curated = false }) {
   if (!headline || !link) return;
   if (JUNK.test(headline) || PROMO.test(headline)) return;   // horoscopes, webinars, protected posts
+  if (VIRAL_OUTLETS.test(String(outlet || ''))) return;            // viral/human-interest sites are not news
   if (wire) {
     // A wire item earns its place or it doesn't get one. See the WIRES comment.
     if (WIRE_HOST_BLOCK.test(link) || WIRE_HOST_BLOCK.test(String(outlet || ''))) return;
@@ -329,6 +457,8 @@ function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversi
   }
   // Hard off-brand gate for EVERY candidate — including curated trade feeds.
   if (OFFTOPIC_RX.test(headline) || FINANCE_OUTLETS_RX.test(String(outlet || '').trim())) return;
+  // The Daily is news: consumer product reviews and gift guides are not (Oct 2026).
+  if (isProductReview(headline)) return;
   // Freshness gate: drop anything older than MAX_AGE_DAYS by its own pubDate. This is
   // what kills the evergreen-feed repeat (a Jan Trainingsworld / Jun DSSV post leading
   // "today's" issue). Undated items pass (rare) but never earn the freshness boost.
@@ -337,12 +467,29 @@ function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversi
   const key = headline.toLowerCase().replace(/[^a-z0-9 ]/g, '').slice(0, 60);
   if (seen.has(key)) return;
   const tok = dupTokens(headline);
-  if (isNearDup(tok, pool)) return;               // same story, different outlet → skip
-  if (seenBefore(tok, link, ledger)) return;      // already covered in the last LEDGER_DAYS → skip
-  seen.add(key);
   const kind = moneyKind(headline);
   const money = kind ? { kind, amount: moneyAmount(headline) } : null;
-  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, wire, pressRelease: wire || undefined, money, key, _tok: tok, _score: scoreCandidate({ headline, trade, wire, lang, money, age }) });
+  // SAME STORY, ANOTHER OUTLET (Oct 2026). Not just skipped any more:
+  //  · corroboration: each extra outlet covering it adds +2 (up to +4). A story several
+  //    outlets report is more likely to matter than one only its own company announced;
+  //  · reporting beats announcement: if the copy we hold is a press release and this
+  //    one is reported journalism, the reported version takes its place.
+  const twin = findNearDup(tok, pool) || (money?.amount ? pool.find((p) => sameDeal({ money }, [p])) : null);
+  if (twin) {
+    twin._outlets = (twin._outlets || 1) + 1;
+    if (twin._outlets <= 3) twin._boost = (twin._boost || 0) + 2;
+    if (((twin.wire && !wire) || (!twin.trade && trade && !wire)) && !seenBefore(tok, link, ledger, money)) {   // reporting beats announcement; trade press beats a general outlet
+      Object.assign(twin, { headline, outlet, link, pub, pillar, conversion, trade, wire: false, pressRelease: undefined, summary: summary || twin.summary, key, _tok: tok, _upgradedFrom: twin.outlet });
+      twin._baseScore = scoreCandidate({ headline, trade, wire: false, lang, money: twin.money, age: ageDays(pub) });
+    }
+    if (twin._baseScore == null) twin._baseScore = twin._score;
+    twin._score = twin._baseScore + (twin._boost || 0);
+    return;
+  }
+  if (seenBefore(tok, link, ledger, money)) return;      // already covered in the last LEDGER_DAYS → skip
+  seen.add(key);
+  SOURCE_COUNT[outlet] = (SOURCE_COUNT[outlet] || 0) + 1;
+  pool.push({ headline, outlet, link, pub, pillar, conversion, trade, wire, pressRelease: wire || undefined, money, key, summary, curated, _tok: tok, _score: scoreCandidate({ headline, trade, wire, lang, money, age, curated }) });
 }
 
 async function run() {
@@ -363,7 +510,7 @@ async function run() {
           const outlet = it.source || (cut > 20 ? it.title.slice(cut + 3) : 'source');
           if (!isOnBrand(headline, outlet)) continue;   // strong industry term required; finance/markets always out
           const [pillar, conversion] = classify(headline, qo);
-          add(pool, seen, ledger, { headline, outlet, link: it.link, pub: it.pub, pillar, conversion });
+          add(pool, seen, ledger, { headline, outlet, link: it.link, pub: it.pub, pillar, conversion, summary: it.summary });
         }
       } catch (e) { console.error('google', ed.ceid, qo.q.slice(0, 30), e.message); }
     }
@@ -376,9 +523,49 @@ async function run() {
         scanned++;
         const headline = it.title;
         const [pillar, conversion] = classify(headline, f);
-        add(pool, seen, ledger, { headline, outlet: f.outlet, link: it.link, pub: it.pub, pillar, conversion, trade: true, lang: f.lang || '' });
+        add(pool, seen, ledger, { headline, outlet: f.outlet, link: it.link, pub: it.pub, pillar, conversion, trade: true, lang: f.lang || '', summary: it.summary });
       }
     } catch (e) { console.error('feed', f.outlet, e.message); }
+  }
+
+  // 2b) Trade outlets read from their news sitemaps (no usable RSS). Press releases a
+  //     site hosts go through the strict wire gate like any other press release.
+  const sitemapWireSeen = new Set();
+  for (const sm of SITEMAPS) {
+    try {
+      for (const it of await sitemapItems(sm)) {
+        scanned++;
+        const press = sm.pressPath && sm.pressPath.test(it.link);
+        const [pillar, conversion] = classify(it.title, sm);
+        add(pool, seen, ledger, {
+          headline: it.title, outlet: press ? `${sm.outlet} (press release)` : sm.outlet, link: it.link, pub: it.pub,
+          pillar, conversion, trade: !press, wire: !!press, lang: sm.lang || '', wireSeen: press ? sitemapWireSeen : null,
+        });
+      }
+    } catch (e) { console.error('sitemap', sm.outlet, e.message); }
+  }
+  // 2b') Fitt Insider's curated Daily Brief, item by item.
+  try {
+    for (const it of await fittBriefItems(FITT_BRIEF)) {
+      scanned++;
+      const [pillar, conversion] = classify(it.title, FITT_BRIEF);
+      add(pool, seen, ledger, { headline: it.title, outlet: FITT_BRIEF.outlet, link: it.link, pub: it.pub, pillar, conversion, trade: true, summary: it.summary, curated: true });
+    }
+  } catch (e) { console.error('fitt brief', e.message); }
+
+  // 2c) Trade outlets that block readers: Google News search limited to their site.
+  for (const tq of TRADE_QUERIES) {
+    const ed = tq.ed || EDITIONS[0];
+    const url = `https://news.google.com/rss/search?q=${encodeURIComponent(tq.q)}&hl=${ed.hl}&gl=${ed.gl}&ceid=${ed.ceid}`;
+    try {
+      for (const it of parseItems(await getXml(url))) {
+        scanned++;
+        const headline = it.title.replace(/\s+-\s+[^-]+$/, '').trim();   // strip " - Outlet"
+        const [pillar, conversion] = classify(headline, tq);
+        if (!isOnBrand(headline, tq.outlet)) continue;   // a site search can return syndicated off-topic pieces
+        add(pool, seen, ledger, { headline, outlet: tq.outlet, link: it.link, pub: it.pub, pillar, conversion, trade: true, lang: tq.lang || '', summary: it.summary });
+      }
+    } catch (e) { console.error('trade-query', tq.outlet, e.message); }
   }
 
   // 3) Newswires / PR distribution — strictest gate, hard cap, never the lead.
@@ -392,7 +579,7 @@ async function run() {
         const [pillar, conversion] = classify(headline, w);
         add(pool, seen, ledger, {
           headline, outlet: `${w.outlet} (press release)`, link: it.link, pub: it.pub,
-          pillar, conversion, wire: true, lang: w.lang || '', wireSeen,
+          pillar, conversion, wire: true, lang: w.lang || '', wireSeen, summary: it.summary,
         });
       }
     } catch (e) { console.error('wire', w.outlet, e.message); }
@@ -409,12 +596,20 @@ async function run() {
         add(pool, seen, ledger, {
           headline, outlet: `${(it.source || 'Newswire').trim()} (press release)`,
           link: it.link, pub: it.pub, pillar, conversion,
-          wire: true, lang: wq.lang || '', wireSeen,
+          wire: true, lang: wq.lang || '', wireSeen, summary: it.summary,
         });
       }
     } catch (e) { console.error('wire-query', e.message); }
   }
 
+  {
+    const trade = ['Fitt Insider', 'Athletech News', 'Club Industry', 'Club Solutions', 'Health Club Management', 'fitness MANAGEMENT', 'body LIFE', 'DSSV', 'Trainingsworld', 'Health & Fitness Association', 'Global Wellness Institute'];
+    console.error('trade sources (fresh candidates): ' + trade.map((o) => `${o} ${SOURCE_COUNT[o] || 0}`).join(', '));
+  }
+  if (args['debug-pool']) {
+    console.error('--- top 25 candidates ---');
+    [...pool].sort((a, b) => b._score - a._score).slice(0, 25).forEach((p) => console.error(`${String(p._score).padStart(3)} ${p.trade ? 'T' : p.wire ? 'W' : '-'}${p._outlets > 1 ? '×' + p._outlets : '  '} ${p.headline.slice(0, 70)}  (${p.outlet})`));
+  }
   if (args['debug-wire']) {
     console.error('--- wire candidates that passed the gate ---');
     for (const p of pool.filter((x) => x.wire).sort((a, b) => b._score - a._score))
@@ -469,13 +664,24 @@ async function run() {
   const ordered = [];
   const outletN = {};
   const entN = {};   // in-issue cap: same subject entity can't fill multiple slots until we're forced to
+  // QUALITY FLOOR (Oct 2026): the lanes take turns, so a thin lane used to hand its weak
+  // best story a slot (a celebrity piece in "gear"). First pass: only stories within 5
+  // points of the day's best. Only if that can't fill the issue do weaker ones get in.
+  const top = pool.reduce((m, p) => Math.max(m, p._score), -Infinity);
+  const FLOOR = top - 5;
+  for (const useFloor of [true, false])
   for (let cap = 1; cap <= 3 && ordered.length < MAX; cap++) {
+    // Walk every round, not just until one round adds nothing: a round of skipped
+    // stories (floor, outlet cap, same deal) must not end the search early.
+    const maxLen = Math.max(0, ...Object.values(byPillar).map((a) => a.length));
     let round = 0, progress = true;
-    while (ordered.length < MAX && progress) {
+    while (ordered.length < MAX && round < maxLen) {
       progress = false;
       for (const arr of Object.values(byPillar)) {
         const item = arr[round];
         if (!item || ordered.includes(item)) continue;
+        if (useFloor && item._score < FLOOR) continue;
+        if (sameDeal(item, ordered)) continue;   // one deal, one slot (Oct 2026: PureGym £235m ran twice)
         if ((outletN[item.outlet] || 0) >= cap) continue;
         const ents = item._ents || [];
         if (ents.some((e) => (entN[e] || 0) >= cap)) continue;   // one company per slot-tier (any named entity)
@@ -528,6 +734,24 @@ async function run() {
     let n = 0; ordered.forEach((p, i) => { if (links[i] && links[i] !== p.link) { p.link = links[i]; n++; } });
     if (n) console.log(`🔗 resolved ${n} Google News link(s) to the publisher`);
   }
+  // ARTICLE TEXT (Oct 2026): the writer used to see headlines only, and padded the gap
+  // with spin. Keep the opening of each chosen article (publisher page, or the feed's
+  // own summary when the page is blocked) so the Daily reports real facts.
+  {
+    let i = 0, got = 0;
+    const worker = async () => {
+      while (i < ordered.length) {
+        const p = ordered[i++];
+        // Fitt's own brief text is curated reporting; the page it links is often the
+        // company's press release. Prefer the brief for those items.
+        const page = p.curated && bestText(p.summary) ? '' : await fetchArticle(p.link);
+        p.text = p.curated ? (bestText(p.summary) || bestText(page)) : bestText(page, p.summary);
+        if (p.text) got++;
+      }
+    };
+    await Promise.all(Array.from({ length: Math.min(4, ordered.length) }, worker));
+    console.log(`📰 article text for ${got}/${ordered.length} stories`);
+  }
   const sources = ordered.map((p, i) => ({
     id: `news-${date}-${i + 1}`,
     entity: p.outlet,
@@ -539,7 +763,9 @@ async function run() {
       { label: 'Story', value: p.headline },
       { label: 'Outlet', value: p.outlet },
       ...(p.money ? [{ label: 'Deal', value: `${p.money.kind}${p.money.amount ? ' ' + p.money.amount : ''}` }] : []),
+      ...(p.text ? [{ label: 'Article', value: p.text }] : []),
     ],
+    thin: !p.text,   // headline only: the writer keeps this item short and adds nothing
     en: { headline: p.headline, dek: `Via ${p.outlet}.`, readMore: p.link },
     de: { headline: p.headline, dek: `Via ${p.outlet}.`, readMore: p.link },
   }));
@@ -550,6 +776,6 @@ async function run() {
   // Record what we shipped so tomorrow's run can't repeat it (rolling LEDGER_DAYS window).
   saveLedger(ledger, ordered);
   console.log(`✓ ingested ${sources.length} stories (from ${Object.keys(outletN).length} outlets) → automation/sources/${date}.json`);
-  sources.forEach((s) => console.log(`  · [${s.pillar}] ${s.topic}  (${s.entity})`));
+  sources.forEach((s, i) => console.log(`  · [${s.pillar}] ${s.topic}  (${s.entity}, score ${ordered[i]?._score ?? '?'})`));
 }
 run();

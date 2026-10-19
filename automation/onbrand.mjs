@@ -58,6 +58,13 @@ export const OFFTOPIC_RX = new RegExp('\\b(' + [
   'opec', 'crude oil', 'natural gas', 'rohöl',
   'mortgage\\w*', 'housing market', 'immobilienmarkt', 'real estate',
   'earnings per share', 'dividend\\w*', 'zinsentscheid\\w*', 'interest rate decision', 'central bank', 'fed rate',
+  // Oct 2026: a Christie's art sale ("raise $289M ... recovery of the art market") passed
+  // the deal + "recovery" test, and Mind Gym (a corporate HR-training firm) passed on "gym".
+  'auction\\w*', 'auktion\\w*', 'art market', 'kunstmarkt', "christie'?s", "sotheby'?s", 'mind ?gym',
+  // 'coach' is our word, but sales coaching and hospitals are not our beat (Oct 2026).
+  'sales coach\\w*', 'hospital\\w*', 'krankenhaus\\w*', 'klinikum',
+  // beauty is not our beat: 'training' let a lash-and-brow school story in (Oct 2026)
+  'lash\\w*', 'brow lamination', 'lash\\+brow', 'salon\\w*', 'cosmetolog\\w*', 'beauty school\\w*', 'nail salon\\w*', 'paul mitchell',
 ].join('|') + ')\\b', 'i');
 
 // Outlets whose beat is markets/finance — drop on name alone.
@@ -146,6 +153,16 @@ export function allEntities(text) {
 /** The single canonical entity a headline is primarily about (longest match), or null. */
 export function primaryEntity(text) {
   return allEntities(text)[0] || null;
+}
+
+// The Daily is news. A consumer product review or gift guide is not, even when the
+// product is fitness gear (Oct 2026: a lifestyle magazine's period-underwear review
+// shipped as a story). Research reviews are news, so those are kept.
+const REVIEW_RX = /(\breview\b|\breviewed\b|\bim test\b|\btestbericht\b|\bhands-on\b|\bunboxing\b|\bgift guide\b|\bgeschenkideen\b|\bbest .{1,40} (?:to buy|of 20\d\d)\b)/i;
+const RESEARCH_REVIEW_RX = /\b(systematic|scoping|umbrella|literature|narrative) review\b|\bmeta-?analys/i;
+export function isProductReview(text) {
+  const s = String(text || '');
+  return REVIEW_RX.test(s) && !RESEARCH_REVIEW_RX.test(s);
 }
 
 /** True when a story belongs in Sqwod media. `text` = headline (+ dek/topic). */

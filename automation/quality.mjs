@@ -10,6 +10,8 @@
 //  5. Em dashes (Tee's house style: none).
 //  6. The Gear rec was always the alphabetically first review (AG1, 12 days
 //     running). pickGearRec() picks a topical, recently unused, published review.
+//  7. Slang and clever jargon ("gravy train", "serious flex"): the Daily is news,
+//     told in plain words (Tee, 19 Oct 2026).
 //
 // Rule from July: prompt rules alone are not enough; every guard here is code.
 
@@ -66,7 +68,15 @@ const OBIT = /\b(remembered as|dies at|died|passed away|obituary|in memoriam|mou
 export const hasBanned = (t) => BANNED.test(String(t || ''));
 export const hasClickbait = (t) => CLICKBAIT.test(String(t || ''));
 export const isObituary = (t) => OBIT.test(String(t || ''));
-export const phraseProblems = (t) => [hasBanned(t) && 'uses Fitt Insider\'s tagline "the business of fitness"', hasClickbait(t) && `clickbait phrase "${String(t).match(CLICKBAIT)[0]}"`].filter(Boolean);
+// Slang, idioms and clever jargon (Oct 2026, Tee: "it's news, so a real update with
+// facts"). Each was in a shipped issue. Plain words only.
+const SLANG = /\b(gravy train|sleeping on|serious flex|\bflex\b|duct[- ]?tap\w*|stickiness|secret sauce|no[- ]brainer|low[- ]hanging fruit|double down|doubling down|hot take|vibe\w*|go move something|cross-border legs|has legs|crush(?:es|ed)? it|level up|10x|deep dive|needle[- ]mover|unlock(?:s|ed)? (?:growth|value)|lean in|on fire|killing it|big swing|move fast|table stakes|playbook|north star|tailwinds?|headwinds?|bottom line is|here's the kicker|plot twist|spoiler|buckle up|let that sink in|mic drop)\b/i;
+export const hasSlang = (t) => SLANG.test(String(t || ''));
+export const phraseProblems = (t) => [
+  hasBanned(t) && 'uses Fitt Insider\'s tagline "the business of fitness"',
+  hasClickbait(t) && `clickbait phrase "${String(t).match(CLICKBAIT)[0]}"`,
+  hasSlang(t) && `slang or jargon "${String(t).match(SLANG)[0]}": say it in plain words`,
+].filter(Boolean);
 
 // Last-resort deterministic fix if an LLM rewrite is unavailable.
 export function stripPhrases(t) {
@@ -74,6 +84,28 @@ export function stripPhrases(t) {
     .replace(/\bthe business of fitness\b/gi, 'the fitness industry')
     .replace(/\bbusiness of fitness\b/gi, 'fitness industry')
     .replace(/\bBusiness der Fitness\b/g, 'Fitnessbranche');
+}
+
+// ------------------------------------------------- 8. language (EN never ships German)
+const DE_HITS = /\b(der|die|das|und|für|mit|von|nicht|ein|eine|einen|sich|sind|wird|werden|hat|haben|bei|auf|aus|nach|über|sollte|dieser|diesen|jahr|neue|neuen|legt|bringt|lädt|wer|echtes|direkt|am|im|zum|zur|den|dem|des|ist|auch|noch|nur|wie|oder|ohne|gute|zu|bis|uhr|anmelden)\b|[äöüß]/gi;
+const EN_HITS = /\b(the|and|for|with|from|not|has|have|are|will|its|this|that|who|should|new|your|their|about|brings|worth|look)\b/gi;
+export function wrongLanguage(text, lang) {
+  const s = String(text || '');
+  const de = (s.match(DE_HITS) || []).length;
+  const en = (s.match(EN_HITS) || []).length;
+  return lang === 'en' ? de > en : en > de + 1; // DE copy tolerates English loanwords
+}
+// Sentence-level check for longer text (audio script, framing sections). One German
+// sentence inside an English script is exactly what the voice read out on 19 Oct 2026.
+// Function words only here: umlauts in place names (Düsseldorf, München) must not make
+// an English sentence look German.
+const DE_WORDS = new RegExp(DE_HITS.source.replace('|[äöüß]', ''), 'gi');
+export function foreignSentences(text, lang) {
+  return String(text || '').split(/\n+|(?<=[.!?])\s+(?=[A-ZÄÖÜ"„])/).filter((s) => {
+    const de = (s.match(DE_WORDS) || []).length;
+    const en = (s.match(EN_HITS) || []).length;
+    return lang === 'en' ? de >= 2 && de > en : en >= 3 && en > de + 1;
+  });
 }
 
 // ----------------------------------------------------------- 5. em dashes

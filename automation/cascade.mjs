@@ -22,8 +22,8 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { isOnBrand } from './onbrand.mjs';
-import { isGoogleNews, resolveAll, phraseProblems, isObituary, stripPhrases, noEmDash, pickGearRec } from './quality.mjs';
+import { isOnBrand, isProductReview } from './onbrand.mjs';
+import { isGoogleNews, resolveAll, phraseProblems, isObituary, stripPhrases, noEmDash, pickGearRec, wrongLanguage, foreignSentences } from './quality.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SOURCES_DIR = join(__dirname, 'sources');
@@ -91,33 +91,65 @@ function loadSources() {
 
 // ---- the LLM seam -------------------------------------------------------
 // In production this calls the model with prompts/cascade.md + source.facts.
+// ---- HOUSE VOICE (rewritten 2026-10-19) ----------------------------------------
+// The old brief ("Morning Brew for the fitness industry: witty, cheeky, a joke per
+// item") produced clever jargon and spin on top of headline-only facts ("the corporate
+// wellness gravy train", "go move something"). Tee's call: it's news, so a real update
+// with facts, told plainly, as a story the reader can follow. One definition, used by
+// every prompt below, so the voice cannot drift between steps.
+const LANG_NAME = { en: 'English', de: 'German' };
+function voice(lang) {
+  const de = lang === 'de';
+  return `VOICE: Sqwod Daily is a trusted news brief for people who run fitness businesses: coaches, personal trainers, studio and gym owners. Write like a good trade reporter explaining the news to a smart friend.
+- Report first: who did what, where, when, and how much. Use the names, numbers and dates in the source.
+- Then, where the facts support it, one plain sentence on what it means for coaches or studio owners. If the facts do not support a lesson, just report the news.
+- Plain words, short sentences, active voice. Explain any term a coach might not know in a few words.
+- No slang, idioms, puns, jokes, wordplay, hype or clever phrasing. No unexplained abbreviations.
+- Never invent anything. If a detail is not in the source, leave it out.
+- LANGUAGE: write ONLY in ${LANG_NAME[lang]}. Every sentence, including names of events and programmes and any quotes, must be in ${LANG_NAME[lang]}: translate them, keeping only proper names (companies, people, product names) as they are.${de ? ' Address the reader as "du". Use normal German words, not English buzzwords, where a German word exists.' : ' When a German organisation appears, say briefly what it is (e.g. "the DSSV, Germany\'s association of fitness and health club operators").'}
+- House style: no em dashes (use a colon, comma or full stop). Never write "the business of fitness".`;
+}
+// The facts we may use for one source: headline, outlet, deal, and the article text.
+const factsOf = (source) => (source?.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('\n');
+async function askJSON(prompt, maxTokens = 600) {
+  const r = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+    body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: 'user', content: prompt }] }),
+  });
+  if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
+  const data = await r.json();
+  return JSON.parse((data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, ''));
+}
+// The news-item brief, shared by first draft, language rewrite and fact repair.
+function itemPrompt(source, lang, note = '') {
+  const thin = source?.thin || !(source?.facts || []).some((f) => f.label === 'Article');
+  return `You are the editor of Sqwod Daily. Write ONE news item in ${LANG_NAME[lang]} about this story.
+${note ? `\nIMPORTANT: ${note}\n` : ''}
+${voice(lang)}
+
+Source facts (the ONLY facts you may use):
+${factsOf(source)}
+Source: ${source?.provenance || 'n/a'}
+
+Write:
+- "headline": a plain news headline, <= 80 characters, that states what happened (who did what). Lead with the key number when there is one.
+- "dek": ${thin ? 'ONE sentence that restates the headline in plain words. Only the headline is available, so add nothing else.' : '2 to 3 sentences: what happened with the key details (where, when, how much, who is involved), then, if the facts support it, one sentence on what it means for coaches or studio owners.'}
+- If the story is about someone's death: respectful and factual only. No lesson, no advice.
+Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
+}
+
 async function generate(step, source, lang) {
   if (apiKey) {
     // Real authoring: the model writes natively in `lang` from the source facts.
-    const facts = (source.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('; ');
-    const langName = lang === 'de' ? 'German' : 'English';
-    const prompt = `You are Sqwod's editor. Write ONE Sqwod Daily news item in ${langName} from these facts about "${source.entity}" (${source.topic}).
-
-VOICE: think Morning Brew for the fitness industry: smart, witty, conversational, a little cheeky. Facts are airtight; the delivery is fun. We talk to coaches, trainers, studio founders and operators — a fun audience, so we have a bit of fun. Never corporate, never dry, never try-hard. One light joke, pun, or wink is plenty; clarity and the fact always win over the bit.
-
-Facts: ${facts}
-Source: ${source.provenance || 'n/a'}
-
-Rules:
-- headline <= 70 chars: punchy and a touch playful, lead with the number where possible. A clever hook beats a clever pun.
-- dek = 1–2 sentences. Open with the fact, land on the "so what" for a coach/operator/founder. You can be funny on the setup, but the payoff is real and useful.
-- Never invent numbers or facts beyond what's given. The humor is in the framing, not in made-up details.
-- In German: write native, idiomatic German wit — do NOT translate English jokes; German is first-class.
-- House style: no em dashes (use a colon, comma or full stop). No clickbait or hype ("has X sweating", "cheat sheet", "game-changer", "moving the needle"). Never write "the business of fitness": it is another publication's tagline.
-- If the story is about someone's death: write it respectfully and factually. No business lesson, no advice, no joke.
-Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
+    const prompt = itemPrompt(source, lang);
     // retry transient API errors (429/5xx/overloaded); never let one item crash the run
     for (let attempt = 1; attempt <= 3; attempt++) {
       try {
         const r = await fetch('https://api.anthropic.com/v1/messages', {
           method: 'POST',
           headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-          body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
+          body: JSON.stringify({ model: MODEL, max_tokens: 500, messages: [{ role: 'user', content: prompt }] }),
         });
         if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
         const data = await r.json();
@@ -142,28 +174,42 @@ Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
 // The generate() fallback returns the source's pre-authored block, which for
 // DACH sources is German — that's how DE headlines leaked into the EN Daily.
 // Function-word scoring is deterministic and dependency-free; umlauts/ß weigh DE.
-const DE_HITS = /\b(der|die|das|und|für|mit|von|nicht|ein|eine|einen|sich|sind|wird|werden|hat|haben|bei|auf|aus|nach|über|sollte|dieser|diesen|jahr|neue|neuen|legt|bringt|lädt|wer|echtes|direkt)\b|[äöüß]/gi;
-const EN_HITS = /\b(the|and|for|with|from|not|has|have|are|will|its|this|that|who|should|new|your|their|about|brings|worth|look)\b/gi;
-function wrongLanguage(text, lang) {
-  const s = String(text || '');
-  const de = (s.match(DE_HITS) || []).length;
-  const en = (s.match(EN_HITS) || []).length;
-  return lang === 'en' ? de > en : en > de + 1; // DE copy tolerates English loanwords
+// Every problem in a block of finished text: wrong language, clickbait, slang, tagline.
+function textProblems(text, lang) {
+  const out = foreignSentences(text, lang).map((s) => `this sentence is not in ${LANG_NAME[lang]}: "${s.slice(0, 120)}"`);
+  return [...out, ...phraseProblems(text)];
+}
+// The strings inside the framing sections, with a path so a bad one can be removed.
+function sectionStrings(s) {
+  const out = [];
+  for (const k of ['summary', 'intro', 'connectTitle', 'connectBody', 'doThis', 'meanwhile']) if (typeof s?.[k] === 'string' && s[k]) out.push([k, s[k]]);
+  if (s?.stat) out.push(['stat', `${s.stat.label || ''}. ${s.stat.body || ''}`]);
+  if (s?.policyWatch) out.push(['policyWatch', `${s.policyWatch.title || ''}. ${s.policyWatch.body || ''}`]);
+  (s?.recs || []).forEach((r, i) => { if (!r.affiliate) out.push([`recs.${i}`, r.text || '']); });
+  (s?.moneyMoves || []).forEach((m, i) => out.push([`moneyMoves.${i}`, m.note || '']));
+  return out;
+}
+const sectionProblems = (s, lang) => sectionStrings(s).flatMap(([k, v]) => textProblems(v, lang).map((p) => `${k}: ${p}`));
+// Last resort: drop whatever still fails. A missing box beats a wrong one.
+function stripBadSections(s, lang) {
+  const bad = new Set(sectionStrings(s).filter(([, v]) => textProblems(v, lang).length).map(([k]) => k));
+  if (!bad.size) return s;
+  console.log(`  ⛔ ${lang.toUpperCase()} removed section(s) that failed the language/style check: ${[...bad].join(', ')}`);
+  for (const k of bad) {
+    if (k === 'connectTitle' || k === 'connectBody') { delete s.connectTitle; delete s.connectBody; }
+    else if (k.startsWith('recs.')) s.recs[+k.split('.')[1]] = null;
+    else if (k.startsWith('moneyMoves.')) s.moneyMoves[+k.split('.')[1]] = null;
+    else delete s[k];
+  }
+  if (s.recs) s.recs = s.recs.filter(Boolean);
+  if (s.moneyMoves) s.moneyMoves = s.moneyMoves.filter(Boolean);
+  return s;
 }
 // Rewrite a wrong-language item natively from its source facts; null on failure.
 async function rewriteInLanguage(source, lang) {
   if (!apiKey || !source) return null;
-  const facts = (source.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('; ');
-  const langName = lang === 'de' ? 'German' : 'English';
-  const prompt = `The previous draft was written in the WRONG LANGUAGE. Write ONE Sqwod Daily news item NATIVELY in ${langName} — never a literal translation — about "${source.entity}" (${source.topic}). Use ONLY these facts: ${facts}. Sqwod's witty Morning-Brew voice; headline <= 70 chars; dek 1–2 sentences ending on the "so what" for a coach/operator. Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
   try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST', headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
-    });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const data = await r.json();
-    const obj = JSON.parse((data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, ''));
+    const obj = await askJSON(itemPrompt(source, lang, `The previous draft was written in the WRONG LANGUAGE. Write it natively in ${LANG_NAME[lang]}, never as a word-for-word translation.`), 500);
     return obj.headline ? { headline: obj.headline, dek: obj.dek } : null;
   } catch (e) { console.error(`· language rewrite failed (${lang}): ${e.message}`); return null; }
 }
@@ -185,77 +231,76 @@ async function enforceLanguage(items, sources, lang) {
   return kept;
 }
 
-// ---- issue-level "teaching" sections: connect-the-dots + action + entertainment
-async function generateLead(items, lang) {
+// ---- issue-level sections: the through-line, one action, the boxes ----------------
+// Built from the FINAL item list (after every drop), so it can never be about a story
+// the reader doesn't see (Oct 2026: the whole 19 Oct issue hung on a dropped item).
+function storyList(items, sources, withText = true) {
+  return items.map((it, n) => {
+    const src = sources.find((s) => s.id === it.sourceId);
+    const art = withText ? ((src?.facts || []).find((f) => f.label === 'Article')?.value || '') : '';
+    return `${n + 1}. ${it.headline}\n   ${it.dek}${art ? `\n   Article: ${art.slice(0, 900)}` : ''}`;
+  }).join('\n');
+}
+async function generateLead(items, sources, lang, note = '') {
   if (!apiKey || !items.length) return null;
-  const langName = lang === 'de' ? 'German' : 'English';
-  const list = items.map((i, n) => `${n + 1}. ${i.headline} — ${i.dek}`).join('\n');
-  const prompt = `You are Sqwod's editor, Morning Brew for the fitness industry: witty, sharp, teaches, connects dots others miss. Audience: coaches, studio founders, operators. Write natively in ${langName}.
+  const prompt = `You are the editor of Sqwod Daily. Today's stories are below. Write the issue's framing sections in ${LANG_NAME[lang]}.
+${note ? `\nIMPORTANT: ${note}\n` : ''}
+${voice(lang)}
 
-Today's items (these are the ONLY facts available):
-${list}
+Today's stories (the ONLY facts available):
+${storyList(items, sources)}
 
-Produce ONE minified JSON object. CRITICAL: never invent numbers, companies, deals, or statistics. Only use figures that appear verbatim above. If a section has no real basis, return null (or []) for it — do not fabricate.
+Produce ONE minified JSON object. Never invent numbers, companies, deals, dates or statistics: only use what appears above. If a section has no real basis, return null (or [] or "") for it.
 {
- "summary":"<=80 chars; the SUBJECT LINE. Stitch the day's 2-3 strongest topics into ONE line of short punchy fragments joined by commas and '&' — e.g. 'DACH's 2026 numbers, a budget Whoop rival & community as marketing'. The FIRST fragment must be the lead thread (the same story connectTitle covers — the one most actionable for a coach/PT/studio operator); the other fragment(s) tease different items. Never a single-story headline, never a semicolon list, never invented facts.",
- "intro":"a FRESH 1-sentence opener for THIS issue in Sqwod's Morning-Brew voice — a specific hook that sets up the SAME lead thread as summary. Different every issue (no template), must NOT just restate summary or connectTitle, <=150 chars.",
- "connectTitle":"<=60 chars; the SAME lead thread as summary, framed as its non-obvious angle. summary promises it; this proves it — they must be about the same story, never two different ones.",
- "connectBody":"two short paragraphs separated by \\n that PAY OFF the summary/connectTitle promise: teach that exact pattern and land on the concrete 'so what' for an operator's business. Specific, witty, no fluff — do NOT pivot to an unrelated story.",
- "doThis":"one concrete action the reader can take this week",
- "meanwhile":"a light, witty aside about a DIFFERENT story than connectTitle focuses on. Must NOT restate or recap anything already covered in connectBody or the items list — pick the most off-beat angle and make a wry one-liner. Return an empty string if there is no genuinely distinct, fun angle left. No invented numbers.",
- "moneyMoves":[{"entity":"name from the items","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one clause"}]  // ONLY for items that are actually raises/M&A/valuations; [] if none,
- "policyWatch":{"title":"...","body":"1-2 sentences on a regulation/policy that affects coaches or studios"} or null if no item is policy/regulatory,
- "stat":{"number":"the figure verbatim","label":"what it measures","body":"why it matters"} or null. The Stat MUST be a DIFFERENT figure than any amount in moneyMoves — prefer a market size, %, growth rate, adoption or count figure. If the only real number available is a funding/deal amount already surfaced in moneyMoves, return null rather than repeating it. Also skip small, hyper-local figures that a global coach/operator can't size (return null),
- "recs":[{"label":"Steal|Try|Read|Watch|Track","text":"a concrete, EVERGREEN, operator-useful action or resource"}]  // exactly 2-3 items. HARD RULES so recs are NOT a recap of the news: (a) each rec must be a DIFFERENT type AND topic from the others and from doThis; (b) NONE may restate, summarize, or reference today's items, connectBody, doThis, moneyMoves or stat — recs are fresh, standalone value; (c) be specific and immediately usable — a tactic to implement, a tool/tool-category to try, a habit or metric to start tracking, or a genuinely worth-it read/watch — never vague platitudes; (d) no invented brand names, prices, or numbers.
+ "summary":"<=90 chars; the email SUBJECT LINE. Name the day's 2 or 3 most important stories in plain words, joined with commas and '&', most important first, e.g. 'Huppa raises €1M for studio software, Reformd plans a US Lagree flagship & DSSV prevention training'.",
+ "intro":"ONE plain sentence (<=160 chars) telling the reader what today's issue covers, starting with the most important story.",
+ "connectTitle":"<=70 chars; a plain title for the most useful story for coaches and studio owners (the same story the summary leads with).",
+ "connectBody":"two short paragraphs separated by \\n. Paragraph 1: the facts of that story, told as a short story (what happened, the details, the context given). Paragraph 2: what it means in practice for a coach or studio owner, grounded in those facts. No speculation beyond the facts.",
+ "doThis":"one concrete thing a coach or studio owner can do this week, linked to today's news",
+ "meanwhile":"",
+ "moneyMoves":[{"entity":"company name from the stories","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one plain clause"}]  // ONLY real raises/M&A/valuations; [] if none,
+ "policyWatch":{"title":"...","body":"1-2 plain sentences"} or null. Only for a law, regulation, health-insurance rule, association programme or official requirement that affects coaches or studios,
+ "stat":{"number":"a figure verbatim from the stories","label":"what it measures","body":"one plain sentence on why it matters"} or null. Must be a different figure than any moneyMoves amount,
+ "recs":[{"label":"Try|Read|Track","text":"a concrete, evergreen, useful tip or resource for a coach or studio owner"}]  // exactly 2. Each a different type and topic; NOT a recap of today's stories; no invented brand names, prices or numbers.
 }`;
-  try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 1100, messages: [{ role: 'user', content: prompt }] }),
-    });
-    if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
-    const data = await r.json();
-    const txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
-    return JSON.parse(txt);
-  } catch (e) { console.error('lead generation failed:', e.message); return null; }
+  try { return await askJSON(prompt, 1300); } catch (e) { console.error('lead generation failed:', e.message); return null; }
 }
 
-// ---- SPOKEN BRIEF: a daily news brief written for the EAR, not the page ----
-// Distinct from the on-page copy: a host reading you the day's fitness-business
-// news — factual, fun, and you walk away knowing something new. Drives the TTS.
-async function generateAudioScript(items, sections, lang) {
+// ---- SPOKEN BRIEF: the day's news, told for the ear --------------------------------
+const WEEKDAY = { en: ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'], de: ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'] };
+async function generateAudioScript(items, sections, sources, lang, date, note = '') {
   if (!apiKey || !items.length) return '';
-  const langName = lang === 'de' ? 'German' : 'English';
-  const list = items.map((i, n) => `${n + 1}. ${i.headline} — ${i.dek}`).join('\n');
-  const thread = sections?.connectTitle ? `Today's through-line: ${sections.connectTitle} — ${sections.connectBody || ''}` : '';
-  const prompt = `You are the host of Sqwod Daily, a spoken news brief on the fitness and wellness industry. Write the FULL script for today's episode in ${langName}, to be read aloud by one host.
+  const day = WEEKDAY[lang][new Date(`${date}T12:00:00Z`).getUTCDay()];
+  const close = lang === 'de' ? `Das war Sqwod Daily am ${day}. Danke fürs Zuhören.` : `That's Sqwod Daily for ${day}. Thanks for listening.`;
+  const prompt = `You are the host of Sqwod Daily, a spoken news bulletin for people who run fitness businesses. Write the full script for today's episode in ${LANG_NAME[lang]}, read aloud by one host.
+${note ? `\nIMPORTANT: ${note}\n` : ''}
+${voice(lang)}
 
-This is AUDIO, not an article. It must sound like a smart, fun person telling you the day's news — NOT a list being read out. The listener should walk away having actually learned something: a number, a shift, a "huh, didn't know that." Factual first; the fun is in the delivery.
+Today's stories, most important first (the ONLY facts available):
+${storyList(items, sources)}
 
-Today's stories (these are the ONLY facts available — never invent numbers, companies, or deals):
-${list}
-${thread}
+How to tell it:
+- Open with the most important story in one or two sentences: what happened, in plain words. No "Welcome", no teaser, no riddle.
+- Then take each story in turn. For each: what happened, the key details (names, places, numbers, dates), and, where the facts support it, one sentence on what it means for coaches or studio owners.
+- Simple spoken links between stories ("Next, ...", "In Germany, ...", "And finally, ...").
+- Say numbers the way a person would say them. Explain unfamiliar terms in a few words.
+- Every single sentence must be in ${LANG_NAME[lang]}: translate event names, programme names and quotes.
+- End with exactly: "${close}"
+- 250 to 420 words. No headers, bullet points, stage directions or "[pause]".
 
-Write the script with:
-- A short cold open (1–2 sentences) that hooks — a hook, a number, or a wry line. Do NOT start with "Welcome" or "Hello".
-- The stories woven into a flowing brief with spoken transitions ("First up...", "Meanwhile...", "And here's the part most people miss..."). Add the ONE useful insight or "so what" per story — that's the knowledge they walk away with.
-- A quick sign-off line in Sqwod's voice.
-- Length: 280–420 words. Conversational sentences, contractions, said-out-loud rhythm. No headers, no bullet points, no stage directions, no "[pause]". German must be native, idiomatic spoken German — never a translation.
-
-Respond ONLY as minified JSON: {"script":"the full spoken script as one string, paragraphs separated by \\n"}`;
+Respond ONLY as minified JSON: {"script":"the full script as one string, paragraphs separated by \\n"}`;
   try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 1400, messages: [{ role: 'user', content: prompt }] }),
-    });
-    if (!r.ok) throw new Error(`LLM HTTP ${r.status}`);
-    const data = await r.json();
-    const txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
-    const obj = JSON.parse(txt);
+    const obj = await askJSON(prompt, 1600);
     return typeof obj.script === 'string' ? obj.script.trim() : '';
   } catch (e) { console.error(`audio-script generation failed (${lang}):`, e.message); return ''; }
+}
+// Deterministic fallback when the model script fails a guard twice: headlines + deks,
+// read in order. Plain, correct, in the right language.
+function fallbackScript(items, lang, date) {
+  const day = WEEKDAY[lang][new Date(`${date}T12:00:00Z`).getUTCDay()];
+  const open = lang === 'de' ? `Das ist Sqwod Daily am ${day}.` : `This is Sqwod Daily for ${day}.`;
+  const close = lang === 'de' ? `Das war Sqwod Daily am ${day}. Danke fürs Zuhören.` : `That's Sqwod Daily for ${day}. Thanks for listening.`;
+  return [open, ...items.map((i) => `${i.headline}. ${i.dek}`), close].join('\n');
 }
 
 // Pick a Sqwod Verified review to feature as the affiliate rec (keeps recs monetized + factual).
@@ -299,7 +344,7 @@ function dedupeRecs(recs, items) {
 
 // Build the full section package (model output + programmatic affiliate rec + Play).
 function buildSections(lead, lang, items) {
-  const s = lead && lead.connectTitle ? { ...lead } : {};
+  const s = lead ? { ...lead } : {};   // keep summary/intro/boxes even when the through-line was dropped
   // Backstop: never let the Stat box merely repeat a Money Movement amount already
   // shown above — that's the "one story, five mentions" bug. Deterministic, so it
   // holds even when the model ignores the prompt rule.
@@ -347,17 +392,8 @@ function buildSections(lead, lang, items) {
 // issue for a human. One bounded attempt; null on any failure (caller then drops).
 async function repairItem(source, lang, critique) {
   if (!apiKey || !source) return null;
-  const facts = (source.facts || []).map((f) => `${f.label}: ${f.value}${f.unit || ''}`).join('; ');
-  const langName = lang === 'de' ? 'German' : 'English';
-  const prompt = `Rewrite ONE Sqwod Daily news item in ${langName} about "${source.entity}". A fact-check flagged the previous draft: ${critique}. Use ONLY these facts and state nothing beyond them: ${facts}. Keep Sqwod's witty Morning-Brew voice; headline <= 70 chars; dek 1–2 sentences. Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
   try {
-    const r = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST', headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-      body: JSON.stringify({ model: MODEL, max_tokens: 400, messages: [{ role: 'user', content: prompt }] }),
-    });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const data = await r.json();
-    const obj = JSON.parse((data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, ''));
+    const obj = await askJSON(itemPrompt(source, lang, `A check flagged the previous draft: ${critique}. Fix that, and state nothing beyond the source facts.`), 500);
     return obj.headline ? { headline: obj.headline, dek: obj.dek } : null;
   } catch (e) { console.error(`· repair failed (${lang}): ${e.message}`); return null; }
 }
@@ -420,8 +456,8 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
     `summary: ${q((sections && sections.summary) || (items[0] && items[0].headline) || 'Sqwod Daily')}`,
     `status: ${q(issueStatus)}`,
     `intro: ${q((sections && sections.intro) || (lang === 'de'
-      ? 'Heutige Reps: was sich in der Branche bewegt hat, ohne Fachchinesisch — und warum es dich interessieren sollte.'
-      : "Today's reps: what moved in the industry, minus the corporate snooze — and why you should care."))}`,
+      ? 'Die wichtigsten Nachrichten aus der Fitnessbranche von heute, kurz und klar erklärt.'
+      : "Today's most important fitness industry news, explained in plain words."))}`,
   ];
   const s = sections || {};
   if (s.audioScript) lines.push(`audioScript: ${q(s.audioScript)}`);  // spoken brief (ear, not page)
@@ -513,22 +549,24 @@ async function run() {
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
     }
     items = await enforceLanguage(items, sources, lang);   // an EN issue never ships German copy
+    const srcOf = (it) => sources.find((s) => s.id === it.sourceId) || {};
     // ON-BRAND GUARDRAIL: nothing outside the fitness/wellness industry EVER ships
     // (belt-and-braces on top of ingest — catches a polluted source file too).
     {
       const before = items.length;
       items = items.filter((it) => {
-        const src = sources.find((s) => s.id === it.sourceId) || {};
+        const src = srcOf(it);
+        if (isProductReview(src.topic || '')) return false;   // the Daily is news, not product reviews
         return isOnBrand(`${src.topic || ''} ${it.headline || ''} ${it.dek || ''}`, src.entity || '');
       });
-      if (items.length < before) console.log(`  ⛔ ${lang.toUpperCase()} dropped ${before - items.length} OFF-BRAND item(s) — not fitness/wellness industry`);
+      if (items.length < before) console.log(`  ⛔ ${lang.toUpperCase()} dropped ${before - items.length} OFF-BRAND item(s) — not fitness/wellness industry news`);
     }
-    // QUALITY GUARD (quality.mjs): clickbait, Fitt's tagline and obituary spin get
+    // QUALITY GUARD (quality.mjs): clickbait, slang, Fitt's tagline and obituary spin get
     // one rewrite from the source facts; if that fails, deterministic clean-up.
     for (let i = 0; i < items.length; i++) {
       const it = items[i];
       const txt = `${it.headline || ''} ${it.dek || ''}`;
-      const src = sources.find((s2) => s2.id === it.sourceId);
+      const src = srcOf(it);
       const obit = isObituary(`${src?.topic || ''} ${txt}`);
       const probs = phraseProblems(txt);
       if (obit) items[i].conversion = 'list-growth';   // never tag a death with a product path
@@ -540,39 +578,28 @@ async function run() {
       items[i] = next;
       console.log(`  ✎ ${lang.toUpperCase()} quality rewrite item ${i + 1}: ${critique}`);
     }
-    const lead = await generateLead(items, lang);
-    let sections = buildSections(lead, lang, items);     // model output + affiliate rec + Play (even in dry-run); items → rec dedup
-    if (move) sections.move = move;               // feature the curated clip at the top of the Daily
-    const v = await verifyIssue(items, sections, sources, lang);  // fact-check vs source facts
-    sections = v.sections;
-    if (v.issues.length) {
-      const auto = v.issues.length - (v.blocking || []).length;
-      if (auto) console.log(`✓ ${lang.toUpperCase()} auto-removed ${auto} unsupported stat/money claim(s)`);
-    }
 
-    // GUARDRAIL (no human review): auto-remediate every embedded claim. Repair the
-    // flagged item once from its source facts, re-verify, then DROP whatever is still
-    // unsupported. A flagged synthesis (connectDots) is dropped, not held. We never
-    // publish a claim a human would have had to vet.
-    let blocking = v.blocking || [];
-    const itemLevel = (b) => Number.isInteger(b.itemIndex) && b.itemIndex >= 0;
-    if (blocking.length && apiKey) {
-      const bad = [...new Set(blocking.filter(itemLevel).map((b) => b.itemIndex))];
+    // ITEM FACT-CHECK first, so the issue's framing is written from the FINAL story
+    // list. (19 Oct 2026: the lead, stat, intro and audio all hung on a story that was
+    // dropped after they were written.) Repair once from the item's OWN source, re-check,
+    // then drop what is still unsupported.
+    if (apiKey && items.length) {
+      const v = await verifyIssue(items, {}, sources, lang);
+      const bad = [...new Set((v.blocking || []).filter((b) => Number.isInteger(b.itemIndex) && b.itemIndex >= 0).map((b) => b.itemIndex))];
       for (const i of bad) {
-        const critique = blocking.filter((b) => b.itemIndex === i).map((b) => b.problem).join('; ');
-        const fixed = await repairItem(sources[i], lang, critique);
+        if (!items[i]) continue;
+        const critique = v.blocking.filter((b) => b.itemIndex === i).map((b) => b.problem).join('; ');
+        const fixed = await repairItem(srcOf(items[i]), lang, critique);
         if (fixed) { items[i] = { ...items[i], ...fixed }; console.log(`  ↻ ${lang.toUpperCase()} repaired item ${i + 1} (${items[i].source})`); }
       }
-      if (blocking.some((b) => !itemLevel(b))) { delete sections.connectTitle; delete sections.connectBody; }
-      const v2 = await verifyIssue(items, sections, sources, lang);
-      sections = v2.sections;
-      if ((v2.blocking || []).some((b) => !itemLevel(b))) { delete sections.connectTitle; delete sections.connectBody; }
-      const stillBad = new Set((v2.blocking || []).filter(itemLevel).map((b) => b.itemIndex));
-      if (stillBad.size) {
-        console.log(`  ⛔ ${lang.toUpperCase()} dropped ${stillBad.size} item(s) still unsupported after repair`);
-        items = items.filter((_, i) => !stillBad.has(i));
+      if (bad.length) {
+        const v2 = await verifyIssue(items, {}, sources, lang);
+        const stillBad = new Set((v2.blocking || []).filter((b) => Number.isInteger(b.itemIndex) && b.itemIndex >= 0).map((b) => b.itemIndex));
+        if (stillBad.size) {
+          console.log(`  ⛔ ${lang.toUpperCase()} dropped ${stillBad.size} item(s) still unsupported after repair`);
+          items = items.filter((_, i) => !stillBad.has(i));
+        }
       }
-      blocking = [];
     }
 
     // LINK GUARD: replace Google News redirect links with the publisher's own URL.
@@ -592,14 +619,50 @@ async function run() {
     }
     if (!items.length) { console.log(`  ⚠ ${lang.toUpperCase()} no verifiable items left — NOT publishing ${date}.${lang}`); continue; }
 
+    // FRAMING from the final list: lead, boxes, recs. Language/style checked; one
+    // rewrite with the problems named, then anything still failing is removed.
+    let lead = await generateLead(items, sources, lang);
+    if (lead) {
+      const probs = sectionProblems(lead, lang);
+      if (probs.length) {
+        console.log(`  ✎ ${lang.toUpperCase()} rewriting framing: ${probs.slice(0, 3).join(' | ')}`);
+        lead = (await generateLead(items, sources, lang, `A check flagged the previous draft: ${probs.slice(0, 6).join('; ')}. Fix every one.`)) || lead;
+      }
+    }
+    let sections = buildSections(lead, lang, items);
+    if (move) sections.move = move;               // feature the curated clip at the top of the Daily
+    const v = await verifyIssue(items, sections, sources, lang);  // fact-check the framing vs source facts
+    sections = v.sections;
+    if ((v.blocking || []).length) {
+      console.log(`  ⛔ ${lang.toUpperCase()} removed unsupported framing (${v.blocking.length} claim(s))`);
+      delete sections.connectTitle; delete sections.connectBody;
+    }
+    sections = stripBadSections(sections, lang);
+
     const issueStatus = status;  // always publish; the guardrail already remediated everything
-    // Subject line — a COMBINATION of the day's topics, computed AFTER any drops so it
-    // never names a removed item. Fallback stitches the top two headlines' lead fragments.
+    // Subject line — a COMBINATION of the day's topics. Fallback stitches the top two headlines.
     const frag = (h) => String(h || '').split(/\s+[—–:]\s+|,\s/)[0].trim();
     const combo = items.slice(0, 2).map((i) => frag(i.headline)).filter(Boolean).join(' & ');
-    sections.summary = (lead && lead.summary) || combo || sections.connectTitle || 'Sqwod Daily';
-    sections.audioScript = await generateAudioScript(items, sections, lang);  // spoken brief for TTS (verified facts only)
-    if (sections.audioScript) console.log(`🎙  ${lang.toUpperCase()} audio brief authored (${sections.audioScript.split(/\s+/).length} words)`);
+    sections.summary = sections.summary || combo || sections.connectTitle || 'Sqwod Daily';
+
+    // AUDIO: written from the final stories, then checked sentence by sentence. A
+    // foreign-language or slang sentence gets one rewrite; failing that, the plain
+    // fallback script (headlines + deks) is used. The voice reads whatever we write.
+    {
+      let script = await generateAudioScript(items, sections, sources, lang, date);
+      let probs = script ? textProblems(script, lang) : [];
+      if (script && probs.length) {
+        console.log(`  ✎ ${lang.toUpperCase()} rewriting audio script: ${probs.slice(0, 3).join(' | ')}`);
+        script = await generateAudioScript(items, sections, sources, lang, date, `A check flagged the previous script: ${probs.slice(0, 6).join('; ')}. Fix every one.`);
+        probs = script ? textProblems(script, lang) : [];
+      }
+      if (!script || probs.length) {
+        if (apiKey) console.log(`  ⛔ ${lang.toUpperCase()} audio script still failing checks — using the plain fallback script`);
+        script = apiKey ? fallbackScript(items, lang, date) : '';
+      }
+      sections.audioScript = script;
+      if (script) console.log(`🎙  ${lang.toUpperCase()} audio brief authored (${script.split(/\s+/).length} words)`);
+    }
     if (move) sections.move = move;   // re-affirm (the verify pass rebuilds sections)
     const file = join(DAILY_OUT, `${date}.${lang}.md`);
     writeFileSync(file, issueFrontmatter(date, lang, items, sections, issueStatus));
