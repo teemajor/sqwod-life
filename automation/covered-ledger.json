@@ -1,97 +1,5 @@
 [
   {
-    "date": "2026-09-28",
-    "key": "beauty and wellness startup amaani raises 5 mn led by beco c",
-    "tokens": [
-      "beauty",
-      "startup",
-      "amaani",
-      "raises",
-      "beco",
-      "capital"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "key": "cristiano ronaldo on multimillion dollar investment in whoop",
-    "tokens": [
-      "cristiano",
-      "ronaldo",
-      "multi",
-      "million",
-      "dollar",
-      "investment",
-      "whoop",
-      "sports",
-      "tech",
-      "brand",
-      "reaches",
-      "billion",
-      "valuation"
-    ],
-    "entities": [
-      "Whoop"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "key": "pickleball franchise the picklr cuts staff is evaluating a n",
-    "tokens": [
-      "pickleball",
-      "franchise",
-      "picklr",
-      "cuts",
-      "staff",
-      "evaluating",
-      "number",
-      "options"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "key": "fitness coach shares 5 exercises to add to your home workout",
-    "tokens": [
-      "coach",
-      "shares",
-      "exercises",
-      "home",
-      "workout",
-      "routine",
-      "burn",
-      "build",
-      "muscle",
-      "health"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "key": "welwyn garden city fitness fundraiser raises more than 500 f",
-    "tokens": [
-      "welwyn",
-      "garden",
-      "city",
-      "fundraiser",
-      "raises",
-      "willow"
-    ]
-  },
-  {
-    "date": "2026-09-28",
-    "key": "oura ring 5 review is oura still the best fitness ring brand",
-    "tokens": [
-      "oura",
-      "ring",
-      "review",
-      "still",
-      "best",
-      "brand",
-      "there"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
     "date": "2026-09-29",
     "key": "swedish machine fitness tracker ipercept raises 165m",
     "tokens": [
@@ -1400,6 +1308,85 @@
       "full",
       "year",
       "forecast"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "key": "browne jacobson advises puregym on 235m swiss fitness busine",
+    "tokens": [
+      "browne",
+      "jacobson",
+      "advises",
+      "puregym",
+      "235m",
+      "swiss",
+      "business",
+      "acquisition"
+    ],
+    "entities": [
+      "PureGym"
+    ],
+    "deal": "£235m"
+  },
+  {
+    "date": "2026-10-20",
+    "key": "thelivmethodto expandnyc footprint open largest studio yet",
+    "tokens": [
+      "method",
+      "expand",
+      "footprint",
+      "open",
+      "largest",
+      "studio"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "key": "sports club poppenbttel 20 standort erffnet",
+    "tokens": [
+      "sports",
+      "club",
+      "poppenb",
+      "ttel",
+      "standort",
+      "ffnet"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "key": "jazzercise founder judi sheppard missett to be inducted into",
+    "tokens": [
+      "jazzercise",
+      "founder",
+      "judi",
+      "sheppard",
+      "missett",
+      "inducted",
+      "2027",
+      "hall",
+      "fame"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "key": "neu im vorteilsclub 100  bonus bei wattline",
+    "tokens": [
+      "vorteilsclub",
+      "bonus",
+      "wattline"
+    ]
+  },
+  {
+    "date": "2026-10-20",
+    "key": "with new coo musicdriven rocksalt pilates gears up for franc",
+    "tokens": [
+      "music",
+      "driven",
+      "rocksalt",
+      "pilates",
+      "gears",
+      "franchise",
+      "expansion"
     ]
   }
 ]
