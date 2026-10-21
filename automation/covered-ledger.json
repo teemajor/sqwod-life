@@ -1,97 +1,5 @@
 [
   {
-    "date": "2026-09-29",
-    "key": "swedish machine fitness tracker ipercept raises 165m",
-    "tokens": [
-      "swedish",
-      "machine",
-      "tracker",
-      "ipercept",
-      "raises"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "key": "2026 hfa european congress spotlights new industry research",
-    "tokens": [
-      "2026",
-      "european",
-      "congress",
-      "spotlights",
-      "research"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "key": "mona raises 35m to expand its ai platform for small business",
-    "tokens": [
-      "mona",
-      "raises",
-      "expand",
-      "platform",
-      "small",
-      "business",
-      "capital",
-      "access",
-      "financial",
-      "coaching"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "key": "media company hardscope launches with studio built around cr",
-    "tokens": [
-      "media",
-      "company",
-      "hardscope",
-      "launches",
-      "studio",
-      "built",
-      "around",
-      "creator",
-      "sets",
-      "digital",
-      "series",
-      "slate",
-      "exclusive"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "key": "garmin confirms moxy monitor acquisitionand muscle battery c",
-    "tokens": [
-      "garmin",
-      "confirms",
-      "moxy",
-      "monitor",
-      "acquisition",
-      "muscle",
-      "battery",
-      "could",
-      "arrive",
-      "next"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-09-29",
-    "key": "puregym taps highyield bond market for 14b refinancing",
-    "tokens": [
-      "puregym",
-      "taps",
-      "high",
-      "yield",
-      "bond",
-      "market",
-      "refinancing"
-    ],
-    "entities": [
-      "PureGym"
-    ]
-  },
-  {
     "date": "2026-09-30",
     "key": "golds gym rebuilds in southern california with 15location fr",
     "tokens": [
@@ -1388,5 +1296,84 @@
       "franchise",
       "expansion"
     ]
+  },
+  {
+    "date": "2026-10-21",
+    "key": "the hidden revenue leaks costing fitness clubs",
+    "tokens": [
+      "hidden",
+      "revenue",
+      "leaks",
+      "costing",
+      "clubs"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "key": "acsm fitnesstrends 2027 wearabletechnologie auf platz 1 im g",
+    "tokens": [
+      "acsm",
+      "fitnesstrends",
+      "2027",
+      "wearable",
+      "technologie",
+      "platz",
+      "globalen",
+      "trendranking"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "key": "fitness on demand adds 99 mvmnt workouts to expand digital p",
+    "tokens": [
+      "demand",
+      "adds",
+      "mvmnt",
+      "workouts",
+      "expand",
+      "digital",
+      "programming"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "key": "the boutique cycling industry is evolving and local ownershi",
+    "tokens": [
+      "boutique",
+      "cycling",
+      "evolving",
+      "local",
+      "ownership",
+      "lead",
+      "next",
+      "chapter"
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "key": "athlone fitness studio raises over 1000 in support of breast",
+    "tokens": [
+      "athlone",
+      "studio",
+      "raises",
+      "support",
+      "breast",
+      "cancer",
+      "awareness"
+    ],
+    "deal": "€1,000"
+  },
+  {
+    "date": "2026-10-21",
+    "key": "unravel health raises 25m for athome hormone testing",
+    "tokens": [
+      "unravel",
+      "health",
+      "raises",
+      "home",
+      "hormone",
+      "testing"
+    ],
+    "deal": "€2.5m"
   }
 ]
