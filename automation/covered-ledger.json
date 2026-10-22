@@ -1,91 +1,5 @@
 [
   {
-    "date": "2026-09-30",
-    "key": "golds gym rebuilds in southern california with 15location fr",
-    "tokens": [
-      "gold",
-      "rebuilds",
-      "southern",
-      "california",
-      "location",
-      "franchise",
-      "deal"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "key": "gym operator plots sevensite expansion after 187m funding de",
-    "tokens": [
-      "operator",
-      "plots",
-      "seven",
-      "site",
-      "expansion",
-      "funding",
-      "deal"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "key": "86 of gym and studio owners grew membership this year even a",
-    "tokens": [
-      "studio",
-      "owners",
-      "grew",
-      "membership",
-      "year",
-      "even",
-      "costs",
-      "competition",
-      "rise"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "key": "wellness future driver surge in middle and upper classes in ",
-    "tokens": [
-      "future",
-      "driver",
-      "surge",
-      "middle",
-      "upper",
-      "classes",
-      "western",
-      "world",
-      "especially",
-      "asia"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "key": "oura puts 22 billion ipo on hold as us listing market turns ",
-    "tokens": [
-      "oura",
-      "puts",
-      "billion",
-      "hold",
-      "listing",
-      "market",
-      "turns",
-      "uncertain"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-09-30",
-    "key": "workplace wellness providing fitness operators with opportun",
-    "tokens": [
-      "workplace",
-      "providing",
-      "operators",
-      "opportunities",
-      "revenue",
-      "growth"
-    ]
-  },
-  {
     "date": "2026-10-01",
     "key": "whoops marketing shift drives hypergrowth and demand plannin",
     "tokens": [
@@ -1375,5 +1289,85 @@
       "testing"
     ],
     "deal": "€2.5m"
+  },
+  {
+    "date": "2026-10-22",
+    "key": "mark wahlbergs municipal gym eyes affordable longevity ahead",
+    "tokens": [
+      "mark",
+      "wahlberg",
+      "municipal",
+      "eyes",
+      "affordable",
+      "longevity",
+      "ahead",
+      "launch"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "key": "aciso consulting vier neue mitarbeitende fr beratung und mar",
+    "tokens": [
+      "aciso",
+      "consulting",
+      "vier",
+      "neue",
+      "mitarbeitende",
+      "beratung",
+      "marketing"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "key": "the road to 1500 locations with tianna strateman of club pil",
+    "tokens": [
+      "road",
+      "1500",
+      "locations",
+      "tianna",
+      "strateman",
+      "club",
+      "pilates"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "key": "hcm invest brings investors and fitness businesses together ",
+    "tokens": [
+      "invest",
+      "brings",
+      "investors",
+      "businesses",
+      "together",
+      "london"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "key": "careerz group launches careerz coach ai connecting workforce",
+    "tokens": [
+      "careerz",
+      "group",
+      "launches",
+      "coach",
+      "connecting",
+      "workforce",
+      "assessment",
+      "data",
+      "demand",
+      "people",
+      "guidance"
+    ]
+  },
+  {
+    "date": "2026-10-22",
+    "key": "what belonging has to do with mental wellbeing at work",
+    "tokens": [
+      "what",
+      "belonging",
+      "mental",
+      "wellbeing",
+      "work"
+    ]
   }
 ]
