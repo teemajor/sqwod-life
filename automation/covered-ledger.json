@@ -1,88 +1,5 @@
 [
   {
-    "date": "2026-10-01",
-    "key": "whoops marketing shift drives hypergrowth and demand plannin",
-    "tokens": [
-      "whoop",
-      "marketing",
-      "shift",
-      "drives",
-      "hypergrowth",
-      "demand",
-      "planning",
-      "woes"
-    ],
-    "entities": [
-      "Whoop"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "key": "the business case for taking your fitness community on the r",
-    "tokens": [
-      "business",
-      "case",
-      "taking",
-      "community",
-      "road"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "key": "san diego gym raises 24k in 24 hours for woman injured by fl",
-    "tokens": [
-      "diego",
-      "raises",
-      "hours",
-      "woman",
-      "injured",
-      "fleeing",
-      "tesla"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "key": "dssvonlinerechtsseminar 8222urheber und markenrecht im fitne",
-    "tokens": [
-      "dssv",
-      "online",
-      "rechtsseminar",
-      "8222",
-      "urheber",
-      "markenrecht",
-      "fitnessstudio",
-      "8220"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "key": "fit easy extends gym footprint as membership climbs to 311 m",
-    "tokens": [
-      "easy",
-      "extends",
-      "footprint",
-      "membership",
-      "climbs",
-      "million"
-    ]
-  },
-  {
-    "date": "2026-10-01",
-    "key": "mcdonalds is spending 85 billion to reinvent itself for the ",
-    "tokens": [
-      "mcdonald",
-      "spending",
-      "billion",
-      "reinvent",
-      "itself",
-      "ozempic",
-      "investors",
-      "aren",
-      "loving",
-      "price"
-    ]
-  },
-  {
     "date": "2026-10-02",
     "key": "garmin acquires muscle oxygen sensor maker moxy price undisc",
     "tokens": [
@@ -1368,6 +1285,83 @@
       "mental",
       "wellbeing",
       "work"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "key": "everyone actives duncan jefford reveals chemists 4u referral",
+    "tokens": [
+      "everyone",
+      "active",
+      "duncan",
+      "jefford",
+      "reveals",
+      "chemists",
+      "referral",
+      "partnership",
+      "summit"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "key": "orangetheory fitness launches otconnect for apple watch",
+    "tokens": [
+      "orangetheory",
+      "launches",
+      "otconnect",
+      "apple",
+      "watch"
+    ],
+    "entities": [
+      "Orangetheory"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "key": "fitness internationals club studio expands in la",
+    "tokens": [
+      "international",
+      "club",
+      "studio",
+      "expands"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "key": "nirva raises 33 million to launch ai pendant in wearable mar",
+    "tokens": [
+      "nirva",
+      "raises",
+      "million",
+      "launch",
+      "pendant",
+      "wearable",
+      "market"
+    ],
+    "deal": "$33m"
+  },
+  {
+    "date": "2026-10-23",
+    "key": "john reed stuttgart neuer fitness music club erffnet",
+    "tokens": [
+      "john",
+      "reed",
+      "stuttgart",
+      "neuer",
+      "music",
+      "club",
+      "ffnet"
+    ]
+  },
+  {
+    "date": "2026-10-23",
+    "key": "wilde lands 40m to scale protein snacks",
+    "tokens": [
+      "wilde",
+      "lands",
+      "scale",
+      "protein",
+      "snacks"
     ]
   }
 ]
