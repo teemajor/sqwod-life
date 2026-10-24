@@ -22,14 +22,16 @@ const T = lang === 'de'
   : { head: 'Where do you stand?', cta: 'Compare', ph: 'Your number', avg: 'industry avg', you: 'You', above: 'above', below: 'below', pts: 'pts', src: 'Source' };
 const data = { min, max, median: b.median ?? null, betterIsHigh: b.betterIsHigh !== false, unit: b.unit ?? '', bands: segs.map((s) => ({ to: s.to, label: s.label })), L: T };
 ---
-<section class="block bm">
-  <p class="kick">◎ {T.head}</p>
-  {b.prompt && <p class="sub" style="margin:2px 0 12px">{b.prompt}</p>}
+<section class="block bm rv">
+  <p class="kick m">{T.head}</p>
+  <h2 class="bm-h">{b.label}</h2>
+  {b.prompt && <p class="sub" style="margin:8px 0 14px">{b.prompt}</p>}
 
   <div class="bm-row">
-    <label class="bm-label" for="bmIn">{b.label}{b.unit ? ` (${b.unit})` : ''}</label>
+    <label class="bm-label" for="bmIn">{lang === 'de' ? 'Deine Zahl' : 'Your number'}{b.unit ? ` (${b.unit})` : ''}</label>
     <div class="bm-input"><input id="bmIn" type="number" inputmode="decimal" placeholder={T.ph} step="any" />{b.unit && <span class="bm-unit">{b.unit}</span>}</div>
   </div>
+  <input class="bm-range" id="bmRange" type="range" min={min} max={max} step={span > 20 ? 1 : 0.1} value={b.median ?? min + span / 2} aria-label={b.label} />
 
   <div class="bm-track" id="bmTrack">
     {segs.map((s) => (
@@ -50,7 +52,11 @@ const data = { min, max, median: b.median ?? null, betterIsHigh: b.betterIsHigh 
 </section>
 
 <style>
-  .bm-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:16px}
+  .bm{margin-top:24px;padding:28px;border:1px solid var(--line);border-radius:20px;background:var(--bg)}
+  .bm-h{font-size:clamp(28px,3.4vw,38px);margin:0}
+  .bm :global(.src-note){font-size:12px;line-height:1.55;color:var(--g3);font-family:var(--mono)}
+  .bm-range{width:100%;accent-color:var(--accent);height:28px;cursor:pointer;margin:0 0 4px}
+  .bm-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:12px}
   .bm-label{font-size:13.5px;color:var(--g1);font-weight:600}
   .bm-input{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:2px 10px}
   .bm-input input{width:110px;background:transparent;border:0;color:var(--chalk);font:inherit;font-size:16px;padding:8px 0}
@@ -59,15 +65,15 @@ const data = { min, max, median: b.median ?? null, betterIsHigh: b.betterIsHigh 
   .bm-track{position:relative;display:flex;height:46px;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin-top:30px}
   .bm-seg{position:relative;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--bg);background:var(--panel)}
   .bm-seg:last-child{border-right:0}
-  .bm-seg:nth-child(1){background:rgba(248,113,113,.16)}
-  .bm-seg:nth-child(2){background:rgba(251,191,36,.14)}
-  .bm-seg:nth-child(3){background:rgba(74,222,128,.12)}
-  .bm-seg:nth-child(4){background:rgba(74,222,128,.20)}
-  .bm-seg:nth-child(5){background:rgba(74,222,128,.30)}
+  .bm-seg:nth-child(1){background:var(--panel2)}
+  .bm-seg:nth-child(2){background:color-mix(in srgb,var(--accent) 14%,var(--panel))}
+  .bm-seg:nth-child(3){background:color-mix(in srgb,var(--accent) 26%,var(--panel))}
+  .bm-seg:nth-child(4){background:color-mix(in srgb,var(--accent) 36%,var(--panel))}
+  .bm-seg:nth-child(5){background:color-mix(in srgb,var(--accent) 46%,var(--panel))}
   .bm-seg-l{font-size:11px;font-weight:700;letter-spacing:.01em;color:var(--g1);text-align:center;padding:0 6px;line-height:1.25}
   .bm-median{position:absolute;top:-1px;bottom:-1px;width:0;border-left:2px dashed var(--g3);z-index:2}
   .bm-median-l{position:absolute;top:-24px;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:10.5px;color:var(--g3);font-family:var(--mono)}
-  .bm-you{position:absolute;top:0;bottom:0;width:0;border-left:2px solid var(--chalk);z-index:3;transition:left .35s cubic-bezier(.2,.8,.2,1)}
+  .bm-you{position:absolute;top:0;bottom:0;width:0;border-left:3px solid var(--accent);z-index:3;transition:left .25s cubic-bezier(.2,.8,.2,1)}
   .bm-you-bub{position:absolute;top:-30px;left:50%;transform:translateX(-50%);white-space:nowrap;background:var(--chalk);color:var(--ink);font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;font-family:var(--mono)}
   .bm-you-bub::after{content:"";position:absolute;left:50%;bottom:-4px;transform:translateX(-50%);border:4px solid transparent;border-top-color:var(--chalk)}
   .bm-result{margin-top:16px;font-size:15px;line-height:1.5;color:var(--g1)}
@@ -102,5 +108,8 @@ const data = { min, max, median: b.median ?? null, betterIsHigh: b.betterIsHigh 
       res.innerHTML = html; res.hidden = false;
     };
     inp.addEventListener('input', update);
+    const rng = document.getElementById('bmRange');
+    if (rng) rng.addEventListener('input', () => { inp.value = rng.value; update(); });
+    inp.addEventListener('input', () => { if (rng && isFinite(parseFloat(inp.value))) rng.value = inp.value; });
   })();
 </script>

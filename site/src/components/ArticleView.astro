@@ -15,10 +15,10 @@ import { fileURLToPath } from 'node:url';
 // (external/cross-origin images taint the canvas and break toBlob; a system font can't
 // reproduce the varsity mark). Same asset the header uses.
 const logoUri = 'data:image/png;base64,' + readFileSync(fileURLToPath(new URL('../../public/sqwod-white.png', import.meta.url))).toString('base64');
-interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string; related?: RelatedItem[] }
-const { lang, entry, sectionLabel, related = [] } = Astro.props;
+interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string; related?: RelatedItem[]; wide?: boolean }
+const { lang, entry, sectionLabel, related = [], wide = false } = Astro.props;
 const d = entry.data;
-const { Content } = await entry.render();
+const { Content, headings } = await entry.render();
 const pillar = pillarMeta[d.pillar as Pillar];
 const isLane = (LANES as readonly string[]).includes(d.pillar);
 const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
@@ -28,8 +28,36 @@ const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', 
 const sharePath = `/${lang}/${d.format === 'report' || d.format === 'index' ? 'intelligence' : 'analysis'}/${d.urlSlug}`;
 const locked = d.gated;
 const U = lang === 'de'
-  ? { head: 'Vollständigen Report freischalten', body: 'Kostenlos. Trag deine E-Mail ein — du liest sofort weiter und bekommst den Daily.', ph: 'E-Mail-Adresse', cta: 'Freischalten', fine: 'Sqwod Daily, werktäglich. Jederzeit abbestellbar.' }
-  : { head: 'Unlock the full report', body: "Free. Drop your email — you'll keep reading instantly and get the Daily.", ph: 'Email address', cta: 'Unlock', fine: 'Sqwod Daily, every weekday. Unsubscribe anytime.' };
+  ? { kick: 'Kostenlos mit Sqwod Daily', head: 'Lies den Rest kostenlos.', body: 'Trag deine E-Mail ein, lies sofort weiter und bekomm jeden Werktag den Daily.', ph: 'E-Mail-Adresse', cta: 'Report freischalten', fine: 'Eine Bestätigungs-Mail. Abmeldung jederzeit mit einem Klick.' }
+  : { kick: 'Free with Sqwod Daily', head: 'Read the rest free.', body: 'Drop your email, keep reading instantly and get the Daily every weekday.', ph: 'Email address', cta: 'Unlock the report', fine: 'One confirm email. Unsubscribe anytime in one click.' };
+// --- Report layout (Oct 2026 redesign): display hero with the headline stat + mini bars,
+// a sticky contents rail, and the body column. Only for reports with a headline stat.
+const heroStat = d.hero?.stat ?? d.figures?.[0]?.value;
+const heroStatLabel = d.hero?.statLabel ?? d.figures?.[0]?.label;
+const reportHero = wide && !!heroStat;
+const heroChart = d.hero?.chart != null ? d.charts?.[d.hero.chart] : undefined;
+const heroSrc = heroChart
+  ? { pts: heroChart.series[0].points.map((p) => p ?? 0), cats: heroChart.categories }
+  : d.series && d.series.points.length > 2
+    ? { pts: d.series.points, cats: d.series.years ?? [] }
+    : d.charts?.[0] ? { pts: d.charts[0].series[0].points.map((p) => p ?? 0), cats: d.charts[0].categories } : null;
+const heroBars = heroSrc ? (() => {
+  const mx = Math.max(...heroSrc.pts, 1e-9);
+  const last = heroSrc.pts.length - 1;
+  return heroSrc.pts.map((p, i) => ({ h: Math.max(3, (p / mx) * 100), hi: i === last, d: (0.25 + i * 0.04).toFixed(2) }));
+})() : [];
+const heroCats = heroSrc?.cats ?? [];
+const words = d.title.split(' ');
+const TOC = lang === 'de'
+  ? { toc: 'In diesem Report', data: 'Die Daten', pb: 'Was du tun kannst', src: 'Quellen und Methode', take: 'Daten mitnehmen', takeP: 'Jede Grafik mit Tabelle und Quelle. Frei zitierbar mit Link.', min: 'Min. Lesezeit', charts: 'Grafiken', sources: 'Quellen', read30: 'In 30 Sekunden' }
+  : { toc: 'In this report', data: 'The data', pb: 'What to do', src: 'Sources and method', take: 'Take the data', takeP: 'Every chart ships with its table and source. Free to quote with a link.', min: 'min read', charts: 'charts', sources: 'sources', read30: 'The 30-second read' };
+const tocItems = [
+  ...((d.charts?.length ?? 0) > 0 ? [{ id: 'data', t: TOC.data }] : []),
+  ...((d.playbook?.length ?? 0) > 0 ? [{ id: 'playbook', t: TOC.pb }] : []),
+  ...headings.filter((h) => h.depth === 2).map((h) => ({ id: h.slug, t: h.text })),
+  ...((d.sources?.length ?? 0) > 0 ? [{ id: 'sources', t: TOC.src }] : []),
+];
+const readMin = Math.max(3, Math.round((entry.body?.split(/\s+/).length ?? 0) / 220) + (d.charts?.length ?? 0));
 
 // --- Download + cite (credibility / GEO / backlinks): build CSV + JSON of the
 // report's own facts, plus a copy-paste citation. All from real data — nothing made up. ---
@@ -109,7 +137,7 @@ const TX = lang === 'de'
 // data the share-image script needs (brand strings + the chart series + figures + verdict), passed to the client below
 const V = d.verdict;
 const shareCfg = {
-  url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share, accent: '#C7F24C',
+  url: reportUrl, asOf: d.asOf ?? '', tag: TX.tag, share: TX.share, accent: '#7FB58C',
   logo: logoUri,
   section: (sectionLabel || '').toUpperCase(),
   boardEye: TX.boardEye, boardTitle: TX.boardTitle,
@@ -122,28 +150,56 @@ const shareCfg = {
   } : null,
 };
 ---
-<div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
-<h1>{d.title}</h1>
-<p class="sub">{d.description}</p>
-
-{d.hero && <ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} />}
-<div class="meta" style="margin:8px 0 0;color:var(--g3);font-size:12px">
-  {d.author} · {fmt}
-  {locked && <span class="conf" style="margin-left:8px">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
-</div>
+{reportHero ? (
+  <section class="rh">
+    <p class="rh-crumb"><a href={`/${lang}/intelligence`}>{sectionLabel}</a> / {pillar.label[lang]}{d.changelog?.length ? <span class="rh-live"> · <span class="pulse" aria-hidden="true"></span> {lang === 'de' ? 'Lebender Report' : 'Living report'}</span> : null}</p>
+    <div class="rh-grid">
+      <div>
+        <h1 class="rh-h1">{words.map((w, i) => <Fragment><span class="hw" style={`animation-delay:${Math.min(i, 12) * 0.06}s`}>{w}</span>{' '}</Fragment>)}</h1>
+        <p class="rh-sub">{d.description}</p>
+        <p class="rh-meta">
+          <span>{d.author}</span><span>{fmt}</span><span>{`${readMin} ${TOC.min}`}</span>
+          {(d.charts?.length ?? 0) > 0 && <span>{`${d.charts.length} ${TOC.charts}`}</span>}
+          {(d.sources?.length ?? 0) > 0 && <span>{`${d.sources.length} ${TOC.sources}`}</span>}
+        </p>
+      </div>
+      <div class="rh-card">
+        {heroStatLabel && <p class="kick" style="margin:0 0 6px">{heroStatLabel}</p>}
+        <div class="dnum rh-stat" data-count>{heroStat}</div>
+        {heroBars.length > 2 && (
+          <Fragment>
+            <div class="growbars rh-bars" aria-hidden="true">{heroBars.map((b) => <i class={b.hi ? 'hi' : ''} style={`height:${b.h}%;animation-delay:${b.d}s`}></i>)}</div>
+            {heroCats.length > 1 && <div class="rh-axis" aria-hidden="true"><span>{heroCats[0]}</span><span>{heroCats[heroCats.length - 1]}</span></div>}
+          </Fragment>
+        )}
+      </div>
+    </div>
+  </section>
+) : (
+  <Fragment>
+    <div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
+    <h1>{d.title}</h1>
+    <p class="sub">{d.description}</p>
+    {d.hero && <ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} />}
+    <div class="meta" style="margin:8px 0 0;color:var(--g3);font-size:12px">
+      {d.author} · {fmt}
+      {locked && <span class="conf" style="margin-left:8px">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
+    </div>
+  </Fragment>
+)}
 
 <ShareBar path={sharePath} title={d.title} lang={lang} />
 
 {d.takeaways && d.takeaways.length > 0 && (
   <section class="block tldr">
-    <p class="kick">{TX.tldr}</p>
-    <ul class="tldr-list">
-      {d.takeaways.map((t) => <li>{t}</li>)}
-    </ul>
+    <p class="kick">{reportHero ? TOC.read30 : TX.tldr}</p>
+    <ol class={wide ? 'tldr-list tl-wide' : 'tldr-list'}>
+      {d.takeaways.map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}
+    </ol>
   </section>
 )}
 
-{!locked && <InlineSignup lang={lang} source="article-top" />}
+{!locked && !wide && <InlineSignup lang={lang} source="article-top" />}
 
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
@@ -161,7 +217,7 @@ const shareCfg = {
     <div class="fig-grid">
       {d.figures.map((f) => (
         <div class="fig">
-          <div class="fig-val">{f.value}</div>
+          <div class="fig-val dnum" data-count>{f.value}</div>
           <Fragment set:html={figVizSvg(vizOf(f.value))} />
           <div class="fig-lbl">{f.label}</div>
           {f.note && <div class="fig-note">{f.note}</div>}
@@ -175,9 +231,35 @@ const shareCfg = {
   </section>
 )}
 
+<div class={wide ? 'rp-grid' : 'rp-plain'}>
+{wide && (
+  <aside class="rp-rail">
+    <div class="rp-stick">
+      {tocItems.length > 1 && (
+        <Fragment>
+          <p class="kick">{TOC.toc}</p>
+          <nav class="rp-toc" aria-label={TOC.toc}>{tocItems.map((x) => <a href={`#${x.id}`} data-toc={x.id}>{x.t}</a>)}</nav>
+        </Fragment>
+      )}
+      {hasData && (
+        <Fragment>
+          <p class="kick" style="margin-top:26px">{TOC.take}</p>
+          <div class="rp-dl">
+            {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>CSV ↓</a>}
+            <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>JSON ↓</a>
+            <a class="dc-btn" href="#cite">{lang === 'de' ? 'Zitieren' : 'Cite'}</a>
+          </div>
+          <p class="rp-note">{TOC.takeP}</p>
+        </Fragment>
+      )}
+    </div>
+  </aside>
+)}
+<div class="rp-main">
+{!locked && wide && <InlineSignup lang={lang} source="article-top" />}
 {d.benchmark && <BenchmarkWidget lang={lang} benchmark={d.benchmark} />}
 
-{d.series && d.series.points.length > 1 && (() => {
+{d.series && d.series.points.length > 1 && !(d.charts?.length) && (() => {
   const s = d.series;
   const pts = s.points;
   const yrs = s.years || [];
@@ -224,21 +306,21 @@ const shareCfg = {
 })()}
 
 {d.charts && d.charts.length > 0 && (
-  <section class="block charts-block">
-    <p class="kick">{lang === 'de' ? `▦ Die Daten · ${d.charts.length} Grafiken` : `▦ The data · ${d.charts.length} charts`}</p>
-    <p class="src-note" style="margin:4px 0 0">{lang === 'de' ? 'Fahre über einen Balken für den exakten Wert. Jede Grafik hat darunter eine Tabelle.' : 'Hover any bar for the exact value. Every chart has a table underneath.'}</p>
-    {d.charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} />)}
+  <section class="block charts-block" id="data">
+    <p class="kick">{lang === 'de' ? `Die Daten · ${d.charts.length} Grafiken` : `The data · ${d.charts.length} charts`}</p>
+    <p class="src-note" style="margin:4px 0 0">{lang === 'de' ? 'Fahre über die Grafik für exakte Werte. Unter jeder Grafik liegt die Tabelle.' : 'Hover any chart for exact values. Every chart has its table underneath.'}</p>
+    {d.charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} total={d.charts.length} />)}
   </section>
 )}
 
 {d.playbook && d.playbook.length > 0 && (
-  <section class="block playbook">
-    <p class="kick">◆ {TX.means}</p>
+  <section class="block playbook" id="playbook">
+    <p class="kick">{TX.means}</p>
     <div class="pb-grid">
-      {d.playbook.map((p) => (
-        <div class="pb">
-          <div class="pb-move">{p.move}</div>
-          <div class="pb-why">{p.why}</div>
+      {d.playbook.map((p, i) => (
+        <div class="pb rv">
+          <span class="dnum pb-n">{String(i + 1).padStart(2, '0')}</span>
+          <div><div class="pb-move">{p.move}</div><div class="pb-why">{p.why}</div></div>
         </div>
       ))}
     </div>
@@ -251,7 +333,7 @@ const shareCfg = {
   </section>
 
   {d.sources && d.sources.length > 0 && (
-    <section class="block sources-block">
+    <section class="block sources-block" id="sources">
       <p class="kick">{lang==='de'?'Quellen':'Sources'}</p>
       <ol class="src-list">
         {d.sources.map((s, i) => <li id={`source-${i + 1}`}><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
@@ -278,7 +360,8 @@ const shareCfg = {
 {locked && (
   <div class="unlock" id="unlock">
     <div class="unlock-card">
-      <div class="unlock-head">{U.head}</div>
+      <p class="kick m" style="margin:0 0 8px">{U.kick}</p>
+      <h2 class="unlock-head">{U.head}</h2>
       <p class="unlock-body">{U.body}</p>
       <form class="unlock-form">
         <input type="email" name="email" required placeholder={U.ph} aria-label={U.ph} />
@@ -290,7 +373,7 @@ const shareCfg = {
 )}
 
 {hasData && (
-  <section class="block data-cite">
+  <section class="block data-cite" id="cite">
     <p class="kick">{TX.data}</p>
     <div class="dc-row">
       {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>↓ {TX.dl}</a>}
@@ -303,6 +386,9 @@ const shareCfg = {
     </figure>
   </section>
 )}
+
+</div>
+</div>
 
 {related && related.length > 0 && (
   <section class="block related">
@@ -334,9 +420,9 @@ const shareCfg = {
   .figs-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
   .figs-actions{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
   .fig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:14px;margin-top:14px}
-  .fig{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;padding:16px 16px 14px;background:linear-gradient(180deg,var(--panel),var(--bg));transition:border-color .15s ease,box-shadow .15s ease}
-  .fig:hover{border-color:var(--accent-line);box-shadow:0 0 0 1px var(--accent-line),0 8px 30px rgba(0,0,0,.35)}
-  .fig-val{font-size:30px;font-weight:900;letter-spacing:-.02em;line-height:1;color:var(--accent)}
+  .fig{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:18px 18px 14px;background:var(--panel);transition:border-color .15s ease,box-shadow .15s ease}
+  .fig:hover{border-color:var(--accent-line);box-shadow:var(--shadow-lg)}
+  .fig-val{font-size:40px;color:var(--chalk)}
   .fviz{width:100%;height:14px;display:block;margin:13px 0 2px}
   .fviz.fviz-rule{height:6px;margin:11px 0 2px}
   .fig-lbl{font-size:13.5px;font-weight:600;color:var(--chalk);margin-top:9px;line-height:1.3}
@@ -355,8 +441,8 @@ const shareCfg = {
   .report-body[data-gated]{max-height:320px;overflow:hidden;-webkit-mask-image:linear-gradient(180deg,#000 58%,transparent);mask-image:linear-gradient(180deg,#000 58%,transparent)}
   .report-body.open{max-height:none;-webkit-mask-image:none;mask-image:none}
   .unlock{margin:6px 0 8px}
-  .unlock-card{border:1px solid var(--line);border-radius:16px;padding:24px 22px;background:linear-gradient(180deg,var(--panel),transparent);text-align:center}
-  .unlock-head{font-size:20px;font-weight:900;letter-spacing:-.01em}
+  .unlock-card{position:relative;border:1px solid var(--edge);border-radius:20px;padding:30px 28px;background:var(--panel);text-align:center;box-shadow:var(--shadow-lg);margin-top:-60px}
+  .unlock-head{font-size:clamp(32px,4vw,44px);margin:0}
   .unlock-body{font-size:14.5px;color:var(--g2);margin:8px 0 16px;line-height:1.55}
   .unlock-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
   .unlock-form input{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--chalk);font:inherit}
@@ -364,9 +450,11 @@ const shareCfg = {
   .unlock-fine{font-size:11.5px;color:var(--g4);margin:12px 0 0}
 
   /* TL;DR */
-  .tldr-list{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:8px}
-  .tldr-list li{position:relative;padding:10px 14px 10px 34px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:14.5px;line-height:1.5;color:var(--g1)}
-  .tldr-list li::before{content:"→";position:absolute;left:13px;top:10px;color:var(--accent);font-weight:800}
+  .tldr-list{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:10px}
+  .tldr-list li{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--panel);font-size:15px;line-height:1.5;color:var(--g1)}
+  .tl-n{font-size:26px;color:var(--accent);flex:none;min-width:30px}
+  .tl-wide{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .tl-wide li{flex-direction:column;gap:10px;padding:22px}
   /* interactive chart */
   .chart-wrap{position:relative}
   .bar-g{cursor:default;transition:opacity .12s ease}
@@ -377,10 +465,43 @@ const shareCfg = {
   .chart-tip b{font-family:var(--mono)}
   .chart-tip .yoy-up{color:var(--up)}.chart-tip .yoy-dn{color:var(--down)}
   /* operator playbook */
-  .pb-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
-  .pb{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:13px 15px;background:var(--panel)}
-  .pb-move{font-size:14.5px;font-weight:800;letter-spacing:-.01em;line-height:1.3}
-  .pb-why{font-size:13px;color:var(--g2);margin-top:6px;line-height:1.5}
+  .pb-grid{display:grid;gap:12px;margin-top:12px}
+  .pb{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:start;border:1px solid var(--line);border-radius:18px;padding:20px 22px;background:var(--panel);transition:border-color .2s}
+  .pb:hover{border-color:var(--accent-line)}
+  .pb-n{font-size:52px;color:var(--accent)}
+  .pb-move{font-size:18px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
+  .pb-why{font-size:14.5px;color:var(--g2);margin-top:6px;line-height:1.55}
+  @media(max-width:560px){ .pb{grid-template-columns:1fr;gap:6px} .pb-n{font-size:40px} }
+
+  /* report hero (Oct 2026) */
+  .rh{padding:18px 0 34px;border-bottom:1px solid var(--line)}
+  .rh-crumb{font-family:var(--mono);font-size:12px;color:var(--g3);margin:0 0 22px;display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+  .rh-crumb a{color:var(--g3);text-decoration:none}
+  .rh-live{display:inline-flex;align-items:center;gap:6px;color:var(--accent)}
+  .rh-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:44px;align-items:end}
+  .rh-h1{font-size:clamp(44px,5.6vw,76px);line-height:.92;margin:0}
+  .rh-sub{margin:22px 0 0;max-width:620px;font-size:18px;line-height:1.55;color:var(--g2)}
+  .rh-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin:20px 0 0;font-family:var(--mono);font-size:12.5px;color:var(--g3)}
+  .rh-card{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:24px 24px 16px}
+  .rh-stat{font-size:clamp(80px,9vw,128px);color:var(--accent)}
+  .rh-bars{height:150px;margin-top:16px}
+  .rh-axis{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--g4)}
+  /* report grid: sticky contents rail + body */
+  .rp-grid{display:grid;grid-template-columns:220px minmax(0,1fr);gap:56px;align-items:start}
+  .rp-main{min-width:0}
+  .rp-grid .rp-main{max-width:780px}
+  .rp-stick{position:sticky;top:24px;padding-top:26px}
+  .rp-toc a{display:block;padding:7px 0 7px 12px;border-left:2px solid var(--line);font-size:13.5px;line-height:1.35;color:var(--g2);text-decoration:none;transition:border-color .2s,color .2s}
+  .rp-toc a:hover,.rp-toc a.on{border-left-color:var(--accent);color:var(--chalk)}
+  .rp-dl{display:flex;gap:8px;flex-wrap:wrap}
+  .rp-note{font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--g4);margin:12px 0 0}
+  :global(.prose h2){scroll-margin-top:24px}
+  #data,#playbook,#sources,#cite{scroll-margin-top:24px}
+  @media(max-width:960px){
+    .rh-grid{grid-template-columns:1fr;gap:28px}
+    .rp-grid{grid-template-columns:1fr;gap:0}
+    .rp-rail{display:none}
+  }
   /* data + cite */
   .dc-row{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 14px}
   .dc-btn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:8px 15px;text-decoration:none;color:var(--chalk);background:var(--panel);cursor:pointer;font-family:inherit;transition:border-color .15s,color .15s}
@@ -398,6 +519,23 @@ const shareCfg = {
   .fig-share{margin-top:auto;padding-top:14px;align-self:flex-start}   /* pin to card bottom so a row of cards lines up evenly */
   .chart-share{margin-top:12px}
 </style>
+
+<script is:inline>
+  // Contents rail: highlight the section in view.
+  (function () {
+    var links = document.querySelectorAll('.rp-toc a[data-toc]');
+    if (!links.length || !('IntersectionObserver' in window)) return;
+    var map = {}; links.forEach(function (a) { map[a.getAttribute('data-toc')] = a; });
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (a) { a.classList.remove('on'); });
+        var a = map[e.target.id]; if (a) a.classList.add('on');
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+    Object.keys(map).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+  })();
+</script>
 
 <script define:vars={{ endpoint: SUBSCRIBE.endpoint, lang, locked }}>
   if (locked) {
@@ -477,7 +615,7 @@ const shareCfg = {
   // Literal hex colors only (CSS vars don't survive SVG→canvas rasterization); pure SVG
   // (no foreignObject) keeps the canvas untainted so toBlob works for Web Share/download.
   (function () {
-    const accent = shareCfg.accent || '#C7F24C';
+    const accent = shareCfg.accent || '#7FB58C';
     const C = { ink: '#0A0B0A', chalk: '#F4F5F0', g1: '#C9CFC0', g2: '#9AA093', g3: '#8A8F86', g4: '#6B6F64', dim: '#5B5F55', accent };
     // Heavy system stack (rasterization can't fetch page/Google fonts — approximate Archivo/Space Mono)
     const SANS = "'Geist Variable','Helvetica Neue',Helvetica,Arial,system-ui,sans-serif";

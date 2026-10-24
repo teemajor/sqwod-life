@@ -45,7 +45,8 @@ const impactVerify: Record<string, string> = { value: '7dbbad87-cd73-480d-971c-7
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Apply a saved light/dark choice before first paint (no flash). See Header.astro. -->
-  <script is:inline>try{var s=localStorage.getItem('sqwod_theme');if(s==='light'||s==='dark')document.documentElement.setAttribute('data-theme',s)}catch(e){}</script>
+  <script is:inline>document.documentElement.classList.add('js');try{var s=localStorage.getItem('sqwod_theme');if(s==='light'||s==='dark')document.documentElement.setAttribute('data-theme',s)}catch(e){}</script>
+  <link rel="preload" href="/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <meta name="impact-site-verification" {...impactVerify} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>{title}</title>
@@ -89,6 +90,46 @@ const impactVerify: Record<string, string> = { value: '7dbbad87-cd73-480d-971c-7
   </main>
   <Footer lang={lang} />
   <script is:inline>
+    // Motion (Oct 2026 redesign): reveal .rv blocks as they scroll in, count up [data-count]
+    // numbers once. Reduced-motion readers get the final state at once.
+    (function () {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var count = function (el) {
+        if (el.dataset.counted) return; el.dataset.counted = '1';
+        var txt = el.textContent, m = txt.match(/^(\D*?)(\d[\d.,]*)(.*)$/);
+        if (!m || reduce) return;
+        var raw = m[2], dec = 0, sep = '';
+        var dm = raw.match(/[.,](\d{1,2})$/);
+        if (dm && !(raw.length > 4 && dm[1].length === 3)) { dec = dm[1].length; sep = raw.charAt(raw.length - dec - 1); }
+        var thou = dec ? (sep === ',' ? '.' : ',') : ((raw.match(/[.,]/) || [''])[0]);
+        var target = dec ? parseFloat(raw.split(thou).join('').replace(sep, '.')) : parseFloat(raw.replace(/[.,]/g, ''));
+        if (!isFinite(target)) return;
+        var t0 = null, dur = 1100;
+        var fmt = function (v) {
+          var s = v.toFixed(dec), parts = s.split('.');
+          if (thou && raw.indexOf(thou) >= 0) parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, thou);
+          return parts.join(sep || '.');
+        };
+        var step = function (ts) {
+          if (!t0) t0 = ts; var k = Math.min(1, (ts - t0) / dur), e = 1 - Math.pow(1 - k, 3);
+          el.textContent = m[1] + fmt(target * e) + m[3];
+          if (k < 1) requestAnimationFrame(step); else el.textContent = txt;
+        };
+        requestAnimationFrame(step);
+      };
+      var els = document.querySelectorAll('.rv, [data-count]');
+      if (!('IntersectionObserver' in window) || reduce) { els.forEach(function (el) { el.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (es) {
+        es.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          e.target.classList.add('in');
+          if (e.target.hasAttribute('data-count')) count(e.target);
+          e.target.querySelectorAll && e.target.querySelectorAll('[data-count]').forEach(count);
+          io.unobserve(e.target);
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    })();
     // One-click copy on every prose code block (e.g. the AI prompts).
     document.querySelectorAll('.prose pre').forEach(function (pre) {
       if (pre.querySelector('.copy-code')) return;

@@ -1,53 +1,93 @@
 ---
-// DataChart — one interactive chart from the article's `charts` frontmatter (flagship reports).
-// Pure SVG, monochrome + lime accent, zero dependencies. Hover/focus any point for the exact
-// value; multi-series charts get toggle chips; long series (>16 points) render as a line.
+// DataChart: one interactive chart from the article's `charts` frontmatter (flagship reports).
+// Pure SVG, zero dependencies. Oct 2026 redesign:
+//  * single series: bars (or a line past 16 points), the latest/current point in moss
+//  * several time series: all lines at once in the validated series colours (--s1..--s4),
+//    direct labels at the line ends, chips to hide/show a line, one tooltip per year
+//  * categorical with several series: chips switch between them (one ranking at a time)
+//  * bars grow and lines draw in when the chart scrolls into view
 // A plain <table> sits in a <details> under every chart so the numbers are crawlable/copyable.
 import { type Lang } from '../i18n/ui';
 interface Series { name: string; points: (number | null)[] }
 interface Chart { label: string; unit?: string; kind?: 'timeseries' | 'categorical'; categories: string[]; series: Series[]; note?: string; source?: string; url?: string }
-interface Props { lang: Lang; chart: Chart; index: number }
-const { lang, chart: c, index } = Astro.props;
+interface Props { lang: Lang; chart: Chart; index: number; total?: number }
+const { lang, chart: c, index, total } = Astro.props;
 const T = lang === 'de'
-  ? { table: 'Als Tabelle anzeigen', src: 'Quelle', now: 'jetzt', yoy: 'ggü. Vorjahr', chart: 'Grafik' }
-  : { table: 'Show as table', src: 'Source', now: 'now', yoy: 'vs prior', chart: 'Chart' };
+  ? { table: 'Als Tabelle anzeigen', src: 'Quelle', now: 'jetzt', chart: 'Grafik', of: 'von', hint: 'Fahre über ein Jahr für die Werte. Tippe auf eine Linie, um sie auszublenden.' }
+  : { table: 'Show as table', src: 'Source', now: 'now', chart: 'Chart', of: 'of', hint: 'Hover a year for values. Tap a line to hide it.' };
 const cats = c.categories;
-const series = c.series.filter((s) => s.points.length === cats.length && s.points.some((p) => p != null));
-const multi = series.length > 1;
+const series = c.series.filter((s) => s.points.length === cats.length && s.points.some((p) => p != null)).slice(0, 4);
+const categorical = c.kind === 'categorical';
+const multiLine = !categorical && series.length > 1;
+const switcher = categorical && series.length > 1;
 const all = series.flatMap((s) => s.points.filter((p): p is number => p != null));
 const mx = Math.max(...all, 1e-9), mn = Math.min(...all, 0);
-const categorical = c.kind === 'categorical';
-const asLine = !categorical && cats.length > 16;
-const dense = cats.length > 14; // too many bars for per-bar value labels
+const asLine = multiLine || (!categorical && cats.length > 16);
+const dense = cats.length > 14;
 const lblStep = Math.ceil(cats.length / 12);
 const nowYear = String(new Date().getFullYear());
-const fmt = (v: number) => (Math.abs(v) >= 1000 ? v.toLocaleString('en-US', { maximumFractionDigits: 1 }) : String(Math.round(v * 100) / 100));
+const fmt = (v: number) => (Math.abs(v) >= 1000 ? v.toLocaleString(lang === 'de' ? 'de-DE' : 'en-US', { maximumFractionDigits: 1 }) : String(Math.round(v * 100) / 100).replace('.', lang === 'de' ? ',' : '.'));
+const COL = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
 // layout
 const W = 720;
-const H = categorical ? Math.max(120, 22 + cats.length * 28) : asLine ? 260 : 264;
+const H = categorical ? Math.max(120, 22 + cats.length * 28) : asLine ? 280 : 264;
 const top = 40, bot = categorical ? 8 : 30, left = categorical ? 150 : 0;
-const base = H - bot, chartH = base - top, plotW = W - left;
+const right = multiLine ? 150 : 0;
+const base = H - bot, chartH = base - top, plotW = W - left - right;
 const yOf = (v: number) => base - Math.max(2, ((v - mn) / (mx - mn || 1)) * chartH);
 const slot = plotW / Math.max(1, cats.length);
 const barW = Math.min(44, slot * 0.58);
+const xOf = (i: number) => left + i * slot + slot / 2;
 const id = `dc${index}`;
 const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i] != null ? Math.round((((pts[i] as number) - (pts[i - 1] as number)) / Math.abs(pts[i - 1] as number)) * 1000) / 10 : '');
+const pathOf = (s: Series) => s.points.map((v, i) => (v == null ? '' : `${i === 0 || s.points[i - 1] == null ? 'M' : 'L'}${xOf(i).toFixed(1)},${yOf(v).toFixed(1)}`)).join(' ');
+// direct labels at the line ends, pushed apart so they never overlap
+const ends = multiLine ? (() => {
+  const e = series.map((s, si) => {
+    let li = s.points.length - 1; while (li > 0 && s.points[li] == null) li--;
+    return { si, y: yOf(s.points[li] as number), v: s.points[li] as number, name: s.name || `#${si + 1}` };
+  }).sort((a, b) => a.y - b.y);
+  for (let i = 1; i < e.length; i++) if (e[i].y - e[i - 1].y < 18) e[i].y = e[i - 1].y + 18;
+  return e;
+})() : [];
+const gridVals = asLine ? [0.25, 0.5, 0.75, 1].map((k) => mn + (mx - mn) * k) : [];
 ---
-<figure class="dc" id={id} data-multi={multi ? '' : undefined}>
+<figure class="dc rv" id={id} data-multi={multiLine ? 'lines' : switcher ? 'switch' : undefined}>
   <figcaption class="dc-head">
-    <span class="dc-n">{T.chart} {index + 1}</span>
+    <span class="dc-n">{T.chart} {index + 1}{total ? ` ${T.of} ${total}` : ''}</span>
     <span class="dc-title">{c.label}{c.unit ? <span class="dc-unit"> · {c.unit}</span> : null}</span>
   </figcaption>
-  {multi && (
-    <div class="dc-chips" role="tablist">
-      {series.map((s, si) => <button type="button" role="tab" class="dc-chip" aria-selected={si === 0 ? 'true' : 'false'} data-s={si}>{s.name || `#${si + 1}`}</button>)}
+  {(multiLine || switcher) && (
+    <div class="dc-chips" role={switcher ? 'tablist' : 'group'}>
+      {series.map((s, si) => switcher
+        ? <button type="button" role="tab" class="dc-chip" aria-selected={si === 0 ? 'true' : 'false'} data-s={si}>{s.name || `#${si + 1}`}</button>
+        : <button type="button" class="dc-chip dc-tog" aria-pressed="true" data-s={si}><span class="dc-sw" style={`background:${COL[si]}`}></span>{s.name || `#${si + 1}`}</button>)}
     </div>
   )}
   <div class="dcw">
     <svg class="dc-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label={c.label}>
-      {!categorical && <line x1={left} y1={base} x2={W} y2={base} stroke="var(--line)" stroke-width="1" />}
-      {series.map((s, si) => (
-        <g class="dc-s" data-s={si} style={multi && si !== 0 ? 'display:none' : undefined}>
+      {gridVals.map((g) => <Fragment><line x1={left} x2={W - right} y1={yOf(g)} y2={yOf(g)} stroke="var(--line)" stroke-width="1" stroke-dasharray="2 4" /><text x={left} y={yOf(g) - 5} fill="var(--g4)" font-size="10.5" font-family="var(--mono)">{fmt(Math.round(g * 10) / 10)}</text></Fragment>)}
+      {!categorical && <line x1={left} y1={base} x2={W - right} y2={base} stroke="var(--edge)" stroke-width="1" />}
+      {multiLine ? (
+        <Fragment>
+          {series.map((s, si) => <path class="dc-ln dc-s" data-s={si} d={pathOf(s)} fill="none" stroke={COL[si]} stroke-width={si === 0 ? 3 : 2.25} stroke-linejoin="round" stroke-linecap="round" pathLength="1" />)}
+          {ends.map((e) => (
+            <g class="dc-s" data-s={e.si}>
+              <circle cx={W - right} cy={yOf(e.v)} r="4" fill={COL[e.si]} stroke="var(--panel)" stroke-width="2" />
+              <text x={W - right + 12} y={e.y + 4} fill="var(--chalk)" font-size="12" font-weight="600" font-family="var(--sans)">{e.name.length > 16 ? `${e.name.slice(0, 15)}…` : e.name} <tspan fill="var(--g2)" font-family="var(--mono)" font-weight="400">{fmt(e.v)}</tspan></text>
+            </g>
+          ))}
+          {cats.map((cat, i) => (
+            <g class="dc-col" tabindex="0" data-cat={cat} data-vals={series.map((s, si) => `${si}|${s.name || '#' + (si + 1)}|${s.points[i] == null ? '' : fmt(s.points[i] as number)}`).join(';')} data-unit={c.unit ?? ''}>
+              <rect x={xOf(i) - slot / 2} y={top - 10} width={slot} height={chartH + 10} fill="transparent" />
+              <line class="dc-guide" x1={xOf(i)} x2={xOf(i)} y1={top - 6} y2={base} stroke="var(--edge)" stroke-width="1" />
+              {series.map((s, si) => s.points[i] != null && <circle class="dc-dot dc-s" data-s={si} cx={xOf(i)} cy={yOf(s.points[i] as number)} r="4.5" fill={COL[si]} stroke="var(--panel)" stroke-width="2" />)}
+              {(i % lblStep === 0 || i === cats.length - 1) && <text x={xOf(i)} y={base + 20} text-anchor="middle" fill="var(--g4)" font-size="11" font-family="var(--mono)">{cat}</text>}
+            </g>
+          ))}
+        </Fragment>
+      ) : series.map((s, si) => (
+        <g class="dc-s" data-s={si} style={switcher && si !== 0 ? 'display:none' : undefined}>
           {categorical ? cats.map((cat, i) => {
             const v = s.points[i]; if (v == null) return null;
             const y = i * (H / cats.length) + 4, h = Math.max(12, H / cats.length - 10);
@@ -56,21 +96,20 @@ const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i
             return (
               <g class="dc-pt" tabindex="0" data-cat={cat} data-val={fmt(v)} data-unit={c.unit ?? ''}>
                 <text x={left - 10} y={y + h / 2 + 4} text-anchor="end" fill="var(--g2)" font-size="12" font-family="var(--mono)">{cat.length > 22 ? `${cat.slice(0, 21)}…` : cat}</text>
-                <rect class="dc-r" x={left} y={y} width={w} height={h} rx="3" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.72'} />
-                <text x={left + w + 8} y={y + h / 2 + 4} fill={emph ? 'var(--accent)' : 'var(--g2)'} font-size="12" font-family="var(--mono)">{fmt(v)}</text>
+                <rect class="dc-r dc-hbar" x={left} y={y} width={w} height={h} rx="3" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.72'} style={`transition-delay:${(i * 0.04).toFixed(2)}s`} />
+                <text x={left + w + 8} y={y + h / 2 + 4} fill="var(--g2)" font-size="12" font-family="var(--mono)">{fmt(v)}</text>
               </g>
             );
           }) : asLine ? (() => {
-            const pts = s.points.map((v, i) => (v == null ? null : [left + i * slot + slot / 2, yOf(v)] as const));
-            const d = pts.map((p, i) => (p ? `${i === 0 || !pts[i - 1] ? 'M' : 'L'}${p[0].toFixed(1)},${p[1].toFixed(1)}` : '')).join(' ');
+            const pts = s.points.map((v, i) => (v == null ? null : [xOf(i), yOf(v)] as const));
             const step = Math.ceil(cats.length / 8);
             return (
               <Fragment>
-                <path d={d} fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+                <path class="dc-ln" d={pathOf(s)} fill="none" stroke="var(--accent)" stroke-width="2.75" stroke-linejoin="round" stroke-linecap="round" pathLength="1" />
                 {pts.map((p, i) => p && (
                   <g class="dc-pt" tabindex="0" data-cat={cats[i]} data-val={fmt(s.points[i] as number)} data-unit={c.unit ?? ''} data-yoy={yoy(s.points, i)}>
                     <circle cx={p[0]} cy={p[1]} r="9" fill="transparent" />
-                    <circle class="dc-dot" cx={p[0]} cy={p[1]} r={i === pts.length - 1 ? 4 : 2.5} fill={i === pts.length - 1 ? 'var(--accent)' : 'var(--chalk)'} />
+                    <circle class="dc-dot" cx={p[0]} cy={p[1]} r={i === pts.length - 1 ? 4.5 : 2.5} fill={i === pts.length - 1 ? 'var(--accent)' : 'var(--chalk)'} />
                     {i % step === 0 && <text x={p[0]} y={base + 20} text-anchor="middle" fill="var(--g4)" font-size="11" font-family="var(--mono)">{cats[i]}</text>}
                   </g>
                 ))}
@@ -78,15 +117,15 @@ const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i
             );
           })() : cats.map((cat, i) => {
             const v = s.points[i]; if (v == null) return null;
-            const h = base - yOf(v), x = left + i * slot + (slot - barW) / 2, cx = left + i * slot + slot / 2;
+            const h = base - yOf(v), x = left + i * slot + (slot - barW) / 2, cx = xOf(i);
             const isNow = cat === nowYear, emph = isNow || (!cats.includes(nowYear) && i === cats.length - 1);
             const showLbl = !dense || i % lblStep === 0;
             return (
               <g class="dc-pt" tabindex="0" data-cat={cat} data-val={fmt(v)} data-unit={c.unit ?? ''} data-yoy={yoy(s.points, i)} data-now={isNow ? '1' : ''}>
-                <rect class="dc-r" x={x} y={base - h} width={barW} height={h} rx="4" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.78'} />
-                {!dense && <text x={cx} y={base - h - 8} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g2)'} font-size="12" font-family="var(--mono)">{fmt(v)}</text>}
+                <rect class="dc-r dc-vbar" x={x} y={base - h} width={barW} height={h} rx="4" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.7'} style={`transition-delay:${(i * 0.035).toFixed(2)}s`} />
+                {!dense && <text class="dc-vl" x={cx} y={base - h - 8} text-anchor="middle" fill={emph ? 'var(--chalk)' : 'var(--g2)'} font-size="12" font-weight={emph ? '700' : '400'} font-family="var(--mono)">{fmt(v)}</text>}
                 {isNow && <text x={cx} y={top - 10} text-anchor="middle" fill="var(--accent)" font-size="11" font-weight="700" font-family="var(--mono)">▼ {T.now}</text>}
-                {showLbl && <text x={cx} y={base + 20} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g4)'} font-size="11.5" font-family="var(--mono)">{cat}</text>}
+                {showLbl && <text x={cx} y={base + 20} text-anchor="middle" fill={emph ? 'var(--chalk)' : 'var(--g4)'} font-size="11.5" font-family="var(--mono)">{cat}</text>}
               </g>
             );
           })}
@@ -95,10 +134,11 @@ const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i
     </svg>
     <div class="dc-tip" hidden></div>
   </div>
+  {multiLine && <p class="dc-hint">{T.hint}</p>}
   <details class="dc-table">
     <summary>{T.table}</summary>
     <table>
-      <thead><tr><th></th>{series.map((s, si) => <th>{s.name || c.unit || ''}</th>)}</tr></thead>
+      <thead><tr><th></th>{series.map((s) => <th>{s.name || c.unit || ''}</th>)}</tr></thead>
       <tbody>{cats.map((cat, i) => <tr><th scope="row">{cat}</th>{series.map((s) => <td>{s.points[i] == null ? '' : fmt(s.points[i] as number)}</td>)}</tr>)}</tbody>
     </table>
   </details>
@@ -106,24 +146,41 @@ const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i
 </figure>
 
 <style>
-  .dc{margin:22px 0 0;padding:0}
-  .dc-head{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
-  .dc-n{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-  .dc-title{font-size:14.5px;font-weight:700;letter-spacing:-.01em;line-height:1.35}
-  .dc-unit{color:var(--g4);font-weight:500}
-  .dc-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
-  .dc-chip{font:inherit;font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--panel);color:var(--g2);cursor:pointer}
-  .dc-chip[aria-selected="true"]{border-color:var(--accent);color:var(--accent)}
+  .dc{margin:20px 0 0;padding:22px 22px 16px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+  .dc-head{display:flex;flex-direction:column;gap:6px}
+  .dc-n{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
+  .dc-title{font-size:18px;font-weight:600;letter-spacing:-.015em;line-height:1.3}
+  .dc-unit{color:var(--g3);font-weight:400}
+  .dc-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .dc-chip{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13px;font-weight:500;border:1px solid var(--line);border-radius:999px;padding:7px 12px;min-height:36px;background:var(--panel);color:var(--g2);cursor:pointer;transition:border-color .15s,color .15s}
+  .dc-chip:hover{border-color:var(--chalk);color:var(--chalk)}
+  .dc-chip[aria-selected="true"],.dc-chip[aria-pressed="true"]{border-color:var(--chalk);color:var(--chalk)}
+  .dc-sw{display:inline-block;width:10px;height:10px;border-radius:3px;transition:opacity .15s}
+  .dc-chip[aria-pressed="false"] .dc-sw{opacity:.25}
   .dcw{position:relative}
-  .dc-svg{width:100%;height:auto;display:block;margin-top:12px}
-  .dc-pt{cursor:default}.dc-pt:focus{outline:none}
-  .dc-pt:hover .dc-r,.dc-pt:focus .dc-r{opacity:1;stroke:var(--chalk);stroke-width:1.5}
+  .dc-svg{width:100%;height:auto;display:block;margin-top:12px;overflow:visible}
+  .dc-pt,.dc-col{cursor:default}.dc-pt:focus,.dc-col:focus{outline:none}
+  .dc-pt:hover .dc-r,.dc-pt:focus .dc-r{opacity:1}
   .dc-pt:hover .dc-dot,.dc-pt:focus .dc-dot{r:5}
-  .dc-tip{position:absolute;pointer-events:none;z-index:5;background:var(--bg);border:1px solid var(--chalk);border-radius:8px;padding:7px 10px;font-size:12px;line-height:1.4;color:var(--chalk);transform:translate(-50%,-110%);white-space:nowrap;box-shadow:0 4px 18px rgba(0,0,0,.3)}
+  .dc-col .dc-guide,.dc-col .dc-dot{opacity:0;transition:opacity .12s}
+  .dc-col:hover .dc-guide,.dc-col:hover .dc-dot,.dc-col:focus .dc-guide,.dc-col:focus .dc-dot{opacity:1}
+  .dc-s.off{display:none}
+  /* draw-in: runs when the figure gets .in from the page's scroll observer */
+  :global(.js) .dc .dc-ln{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 1.4s cubic-bezier(.65,0,.35,1) .2s}
+  :global(.js) .dc.in .dc-ln{stroke-dashoffset:0}
+  :global(.js) .dc .dc-vbar{transform-box:fill-box;transform-origin:bottom;transform:scaleY(0);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+  :global(.js) .dc.in .dc-vbar{transform:scaleY(1)}
+  :global(.js) .dc .dc-hbar{transform-box:fill-box;transform-origin:left;transform:scaleX(0);transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+  :global(.js) .dc.in .dc-hbar{transform:scaleX(1)}
+  .dc-tip{position:absolute;pointer-events:none;z-index:5;background:var(--panel);border:1px solid var(--edge);border-radius:12px;padding:9px 12px;font-size:12.5px;line-height:1.5;color:var(--chalk);transform:translate(-50%,-110%);white-space:nowrap;box-shadow:var(--shadow-lg)}
   .dc-tip b{font-family:var(--mono)}
   .dc-tip .up{color:var(--up)}.dc-tip .dn{color:var(--down)}
-  .dc-table{margin-top:8px}
-  .dc-table summary{font-size:12px;color:var(--g4);cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px}
+  .dc-tip .r{display:flex;align-items:center;gap:8px;color:var(--g2)}
+  .dc-tip .r i{width:9px;height:9px;border-radius:3px;display:inline-block}
+  .dc-tip .r em{margin-left:auto;padding-left:14px;font-style:normal;font-family:var(--mono);color:var(--chalk)}
+  .dc-hint{font-size:12px;color:var(--g4);margin:6px 0 0}
+  .dc-table{margin-top:10px}
+  .dc-table summary{font-size:12.5px;font-weight:600;color:var(--g3);cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px}
   .dc-table summary::before{content:"▸";transition:transform .15s}
   .dc-table[open] summary::before{transform:rotate(90deg)}
   .dc-table table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12.5px;font-family:var(--mono)}
@@ -132,37 +189,67 @@ const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i
   .dc-table thead th{color:var(--g4);font-weight:600}
   .dc-src{font-size:11.5px;color:var(--g4);margin:8px 0 0}
   .dc-src a{color:inherit}
+  @media(max-width:560px){ .dc{padding:18px 14px 14px} }
+  @media (prefers-reduced-motion: reduce){ :global(.js) .dc .dc-ln{stroke-dashoffset:0} :global(.js) .dc .dc-vbar,:global(.js) .dc .dc-hbar{transform:none} }
 </style>
 
 <script>
-  // Hover/focus tooltips + series toggle. Scoped per figure so any number of charts coexist.
+  // Tooltips + series toggles. Scoped per figure so any number of charts coexist.
+  const COLS = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
   document.querySelectorAll<HTMLElement>('.dc').forEach((fig) => {
     const wrap = fig.querySelector<HTMLElement>('.dcw'), tip = fig.querySelector<HTMLElement>('.dc-tip');
     const lang = document.documentElement.lang || 'en';
     const nowL = lang.startsWith('de') ? 'jetzt' : 'now', yoyL = lang.startsWith('de') ? 'ggü. Vorjahr' : 'vs prior';
-    if (wrap && tip) {
-      const show = (g: Element) => {
+    const hidden = new Set<string>();
+    const esc = (s: string) => s.replace(/[&<>"]/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch] as string));
+    const place = (g: Element, html: string) => {
+      if (!wrap || !tip) return;
+      tip.innerHTML = html;
+      const gb = (g as SVGGraphicsElement).getBoundingClientRect(), wb = wrap.getBoundingClientRect();
+      const x = gb.left - wb.left + gb.width / 2;
+      tip.style.left = Math.max(80, Math.min(wb.width - 80, x)) + 'px';
+      tip.style.top = (g.classList.contains('dc-col') ? 40 : gb.top - wb.top) + 'px';
+      tip.hidden = false;
+    };
+    const hide = () => { if (tip) tip.hidden = true; };
+    fig.querySelectorAll('.dc-pt').forEach((g) => {
+      const show = () => {
         const cat = g.getAttribute('data-cat') || '', val = g.getAttribute('data-val') || '', unit = g.getAttribute('data-unit') || '';
         const yoy = g.getAttribute('data-yoy'), now = g.getAttribute('data-now');
-        let html = `<b>${val}</b>${unit ? ' ' + unit : ''}${cat ? ` · ${cat}` : ''}${now ? ' · ' + nowL : ''}`;
+        let html = `<b>${esc(val)}</b>${unit ? ' ' + esc(unit) : ''}${cat ? ` · ${esc(cat)}` : ''}${now ? ' · ' + nowL : ''}`;
         if (yoy) { const up = parseFloat(yoy) >= 0; html += `<br><span class="${up ? 'up' : 'dn'}">${up ? '▲' : '▼'} ${Math.abs(parseFloat(yoy))}% ${yoyL}</span>`; }
-        tip.innerHTML = html;
-        const gb = (g as SVGGraphicsElement).getBoundingClientRect(), wb = wrap.getBoundingClientRect();
-        tip.style.left = (gb.left - wb.left + gb.width / 2) + 'px';
-        tip.style.top = (gb.top - wb.top) + 'px';
-        tip.hidden = false;
+        place(g, html);
       };
-      const hide = () => { tip.hidden = true; };
-      fig.querySelectorAll('.dc-pt').forEach((g) => {
-        g.addEventListener('mouseenter', () => show(g)); g.addEventListener('focus', () => show(g));
-        g.addEventListener('mouseleave', hide); g.addEventListener('blur', hide);
-      });
-    }
-    fig.querySelectorAll<HTMLButtonElement>('.dc-chip').forEach((chip) => chip.addEventListener('click', () => {
+      g.addEventListener('mouseenter', show); g.addEventListener('focus', show);
+      g.addEventListener('mouseleave', hide); g.addEventListener('blur', hide);
+    });
+    fig.querySelectorAll('.dc-col').forEach((g) => {
+      const show = () => {
+        const cat = g.getAttribute('data-cat') || '', unit = g.getAttribute('data-unit') || '';
+        const rows = (g.getAttribute('data-vals') || '').split(';').map((r) => r.split('|'))
+          .filter(([si, , v]) => v !== '' && !hidden.has(si))
+          .map(([si, n, v]) => `<div class="r"><i style="background:${COLS[+si]}"></i>${esc(n)}<em>${esc(v)}</em></div>`).join('');
+        place(g, `<b>${esc(cat)}</b>${unit ? ` · ${esc(unit)}` : ''}${rows}`);
+      };
+      g.addEventListener('mouseenter', show); g.addEventListener('focus', show);
+      g.addEventListener('mouseleave', hide); g.addEventListener('blur', hide);
+    });
+    // categorical: switch between series
+    fig.querySelectorAll<HTMLButtonElement>('.dc-chip:not(.dc-tog)').forEach((chip) => chip.addEventListener('click', () => {
       const si = chip.dataset.s;
       fig.querySelectorAll<HTMLButtonElement>('.dc-chip').forEach((c) => c.setAttribute('aria-selected', c === chip ? 'true' : 'false'));
       fig.querySelectorAll<SVGGElement>('.dc-s').forEach((g) => { g.style.display = g.dataset.s === si ? '' : 'none'; });
-      if (tip) tip.hidden = true;
+      hide();
+    }));
+    // time series: hide/show lines (at least one stays on)
+    fig.querySelectorAll<HTMLButtonElement>('.dc-tog').forEach((chip) => chip.addEventListener('click', () => {
+      const si = chip.dataset.s as string;
+      const on = !hidden.has(si);
+      if (on && hidden.size >= fig.querySelectorAll('.dc-tog').length - 1) return;
+      on ? hidden.add(si) : hidden.delete(si);
+      chip.setAttribute('aria-pressed', on ? 'false' : 'true');
+      fig.querySelectorAll<SVGElement>(`.dc-s[data-s="${si}"]`).forEach((el) => el.classList.toggle('off', on));
+      hide();
     }));
   });
 </script>

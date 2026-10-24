@@ -7,7 +7,7 @@
 import { SUBSCRIBE } from '../config/subscribe';
 import type { Lang } from '../i18n/ui';
 
-interface Props { lang: Lang; source: string; variant?: 'default' | 'daily'; id?: string; head?: string; body?: string; role?: string }
+interface Props { lang: Lang; source: string; variant?: 'default' | 'daily' | 'hero'; id?: string; head?: string; body?: string; role?: string }
 const { lang, source, variant = 'default', id, head, body, role } = Astro.props;
 const de = lang === 'de';
 
@@ -32,9 +32,9 @@ const T = de
 
 const groupId = `role-${source}`;
 ---
-<section class="isu" id={id} aria-labelledby={`${groupId}-h`}>
-  <h2 class="isu-h" id={`${groupId}-h`}>{copy.head}</h2>
-  {copy.body && <p class="isu-p">{copy.body}</p>}
+<section class={variant === 'hero' ? 'isu isu-hero' : 'isu'} id={id} aria-labelledby={`${groupId}-h`}>
+  <h2 class={variant === 'hero' ? 'isu-h isu-sr' : 'isu-h'} id={`${groupId}-h`}>{copy.head}</h2>
+  {copy.body && variant !== 'hero' && <p class="isu-p">{copy.body}</p>}
   {SUBSCRIBE.endpoint ? (
     <form class="isu-form" method="post" action={SUBSCRIBE.endpoint}>
       <input type="hidden" name="lang" value={lang} />
@@ -51,7 +51,7 @@ const groupId = `role-${source}`;
       </fieldset>
       <div class="isu-row">
         <input type="email" name="email" required autocomplete="email" placeholder={T.ph} aria-label={T.ph} />
-        <button class="cta isu-btn" type="submit" data-umami-event="subscribe" data-umami-event-where={source}>{T.btn}</button>
+        <button class="cta isu-btn" type="submit" data-umami-event="subscribe" data-umami-event-where={source}>{variant === 'hero' ? `${copy.head} →` : T.btn}</button>
       </div>
       <p class="isu-fine">{T.fine} <a href={`/${lang}/datenschutz`}>{T.privacy}</a></p>
     </form>
@@ -87,8 +87,18 @@ const groupId = `role-${source}`;
   .isu-btn{min-height:48px;padding:0 22px;font-size:14px;border:0;cursor:pointer;border-radius:14px}
   .isu-fine{font-size:12.5px;color:var(--g3);margin:0;line-height:1.5}
   .isu-fine a{color:var(--g2)}
+  .isu-btn{transition:background .15s,color .15s}
+  .isu-btn:hover{background:var(--accent);color:var(--accent-ink)}
+  /* hero variant (homepage, Oct 2026): no box, chips + one line, the heading stays for screen readers */
+  .isu-hero{border:0;background:none;padding:0;margin:24px 0 0;max-width:720px}
+  .isu-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .isu-hero .isu-legend{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  .isu-hero .isu-pill span{min-height:40px;padding:0 14px;font-size:13px;color:var(--g2);background:var(--panel)}
+  .isu-hero .isu-pill input:checked + span{color:var(--ink)}
+  .isu-hero .isu-form{gap:12px}
   @media (max-width:560px){
     .isu{padding:20px 16px}
+    .isu-hero{padding:0}
     .isu-btn{width:100%}
   }
 </style>

@@ -1,10 +1,10 @@
 ---
-// Homepage, operator-first (approved mockup, Oct 2026): hero + signup with role
-// picker, today's Daily, operator playbooks, one report, Verified top picks,
-// and the two "work with Sqwod" doors (brands, Berlin coaches).
+// Homepage, Oct 2026 redesign (approved mockup "sqwod.life redesign mockups", board
+// "Homepage · alive"): money ticker, display hero with a live bar field and the sign-up
+// above the fold, today's Daily strip, Intelligence cards, one inverted band, Verified
+// picks, operator playbooks and the three "work with Sqwod" doors.
 import Base from '../../layouts/Base.astro';
 import Glyph from '../../components/Glyph.astro';
-import ScoreBadge from '../../components/ScoreBadge.astro';
 import InlineSignup from '../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../i18n/ui';
@@ -22,166 +22,232 @@ const lang = Astro.params.lang as Lang;
 const de = lang === 'de';
 const fmtDate = (d: Date) => d.toLocaleDateString(de ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric', timeZone: 'UTC' });
 
-// --- Today's Daily
+// --- Daily
 const issues = (await getCollection('daily', (i) => i.data.lang === lang && isLiveIssue(i.data.status, i.data.date)))
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 const latest = issues[0];
 let audioFiles = new Set<string>();
 try { audioFiles = new Set(readdirSync(join(process.cwd(), 'public', 'audio'))); } catch { /* none yet */ }
 const latestHasAudio = !!(latest && audioFiles.has(`${latest.data.urlSlug}-${lang}.mp3`));
-const latestHeads = latest ? latest.data.items.slice(0, 3).map((i) => i.headline) : [];
+const moves = latest?.data.moneyMoves ?? [];
+const KIND: Record<string, string> = de
+  ? { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Aus', news: 'News', report: 'Report' }
+  : { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown', news: 'News', report: 'Report' };
 
-// --- Articles: operator playbooks + one report
+// --- Articles
 const articles = (await getCollection('articles', (a) => a.data.lang === lang))
   .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
-const hrefFor = (a: (typeof articles)[number]) =>
-  `/${lang}/${a.data.format === 'report' || a.data.format === 'index' ? 'intelligence' : 'analysis'}/${a.data.urlSlug}`;
-const isReport = (a: (typeof articles)[number]) => a.data.format === 'report' || a.data.format === 'index';
+type Art = (typeof articles)[number];
+const isReport = (a: Art) => a.data.format === 'report' || a.data.format === 'index';
+const hrefFor = (a: Art) => `/${lang}/${isReport(a) ? 'intelligence' : 'analysis'}/${a.data.urlSlug}`;
+const statOf = (a: Art) => a.data.hero?.stat ?? a.data.figures[0]?.value;
+const statLabelOf = (a: Art) => a.data.hero?.statLabel ?? a.data.figures[0]?.label;
+const reports = articles.filter((a) => isReport(a) && statOf(a)).slice(0, 3);
+const flagship = articles.find((a) => isReport(a) && !a.data.gated) ?? reports[0];
+const reportCount = articles.filter(isReport).length;
 const builds = articles.filter((a) => !isReport(a) && a.data.pillar === 'build').slice(0, 2);
 const evidence = articles.find((a) => a.data.type === 'evidence');
 const playbooks = [...builds, ...(evidence ? [evidence] : [])];
-const report = articles.find((a) => isReport(a) && a.data.gated && (a.data.hero?.stat || a.data.figures.length))
-  ?? articles.find((a) => isReport(a));
-const reportStat = report ? (report.data.hero?.stat ?? report.data.figures[0]?.value) : undefined;
-const reportStatLabel = report ? (report.data.hero?.statLabel ?? report.data.figures[0]?.label) : undefined;
-const laneTag = (a: (typeof articles)[number]) =>
-  a.data.type === 'evidence' ? 'Evidence' : (pillarMeta[a.data.pillar as Pillar]?.label[lang] ?? a.data.pillar);
+const laneTag = (a: Art) => a.data.type === 'evidence' ? 'Evidence' : (pillarMeta[a.data.pillar as Pillar]?.label[lang] ?? a.data.pillar);
 
-// --- Verified top picks: the best B2B tool, then the two best-scored other products
+// --- Ticker: today's money movement, then the latest headlines, then the newest report stat
+type Tick = { k: string; t: string; href: string };
+const ticks: Tick[] = [];
+for (const iss of issues.slice(0, 4)) {
+  for (const m of iss.data.moneyMoves ?? []) ticks.push({ k: KIND[m.kind] ?? m.kind, t: `${m.entity} · ${m.amount}${m.note ? `, ${m.note}` : ''}`, href: `/${lang}/daily/${iss.data.urlSlug}` });
+}
+for (const it of (latest?.data.items ?? []).slice(0, 4)) ticks.push({ k: KIND.news, t: it.headline, href: `/${lang}/daily/${latest!.data.urlSlug}` });
+if (reports[0]) ticks.push({ k: KIND.report, t: `${statLabelOf(reports[0]) ?? reports[0].data.title} · ${statOf(reports[0])}`, href: hrefFor(reports[0]) });
+const tickLine = ticks.slice(0, 10);
+
+// --- Verified
 const reviews = (await getCollection('reviews', (r) => r.data.lang === lang && !r.data.draft))
   .sort((a, b) => b.data.sqwodScore - a.data.sqwodScore);
-const isTool = (r: (typeof reviews)[number]) => /coaching|studio|software|apps/i.test(r.data.category);
+type Rev = (typeof reviews)[number];
+const isTool = (r: Rev) => /coaching|studio|software|apps/i.test(r.data.category);
 const tool = reviews.find(isTool);
-const picks: typeof reviews = [];
+const picks: Rev[] = [];
 const seenCat = new Set<string>();
 for (const r of reviews) {
   if (picks.length >= 2) break;
-  if (isTool(r) || seenCat.has(r.data.category)) continue;
+  if (isTool(r) || seenCat.has(r.data.category) || !r.data.asset.images[0]) continue;
   seenCat.add(r.data.category); picks.push(r);
 }
-const topPicks = tool ? [picks[0], picks[1], tool].filter(Boolean) : picks;
-const price = (r: (typeof reviews)[number]) => `${de ? 'ab' : 'from'} ${priceOf(r.data.value, de ? 'de' : 'en')}`;
+const topPicks = (tool ? [picks[0], picks[1], tool] : picks).filter(Boolean) as Rev[];
+const price = (r: Rev) => `${de ? 'ab' : 'from'} ${priceOf(r.data.value, de ? 'de' : 'en')}`;
 
-const title = de ? 'Sqwod — dein Vorsprung im Fitness-Business' : 'Sqwod: your edge in the fitness industry';
+// --- Hero bar field (deterministic, decorative)
+const bars = Array.from({ length: 44 }, (_, i) => `left:${(i / 44) * 100}%;height:${18 + ((i * 37) % 61)}%;animation-delay:-${(i % 7) * 0.45}s;animation-duration:${5 + (i % 5)}s`);
+
+const title = de ? 'Sqwod: dein Vorsprung im Fitness-Business' : 'Sqwod: your edge in the fitness industry';
 const tagline = de
-  ? 'Insider-Wissen, ehrliche Gear-Bewertungen und Wachstums-Playbooks für die Coaches, Creator und Gründer:innen, die die großen Plattformen übersehen.'
-  : 'Insider intelligence, honest gear reviews and growth playbooks for the coaches, creators and founders the big platforms overlook.';
+  ? 'Intelligence, Reviews und Playbooks für die Menschen, die Fitness aufbauen: Gründer:innen, Betreiber:innen, Coaches, Marken und Investor:innen.'
+  : 'Intelligence, reviews and playbooks for the people who build fitness: founders, operators, coaches, brands and investors.';
+// headline words; `a` marks the one moss word
+const h1 = de
+  ? [{ w: 'Dein' }, { w: 'Vorsprung' }, { w: 'im', br: true }, { w: 'Fitness-Business.', a: true }]
+  : [{ w: 'Your' }, { w: 'edge' }, { w: 'in' }, { w: 'the', br: true }, { w: 'fitness', a: true }, { w: 'industry.' }];
 const T = de
-  ? { kicker: 'Sqwod Daily · werktäglich · EN & DE', h1: 'Dein Vorsprung im Fitness-Business.', signup: 'Hol dir den 5-Minuten-Brief',
-      today: 'Heutiger Daily', listen: 'Anhören', read: 'Ausgabe lesen', presented: 'Präsentiert von',
-      pbH: 'Playbooks für Operator', pbP: 'Kundenbindung, Preise, Leads und die Wissenschaft, nach der deine Kund:innen fragen.', allReads: 'Alle Artikel',
-      repKick: 'Sqwod Intelligence · Report', repCta: 'Report holen',
-      vH: 'Sqwod Verified: Gear und Tools mit Score', vP: 'Studio-Equipment, Coaching-Software und die Wearables, nach denen Kund:innen fragen. Sqwod Score 0–100, Affiliate-Links immer gekennzeichnet.', allGuides: 'Alle Kaufberater', review: 'Review lesen', ad: 'Anzeige / Affiliate',
-      workH: 'Mit Sqwod arbeiten', brandK: 'Für Marken', brandH: 'Erreiche die Menschen, die Fitness machen.', brandP: 'Präsentiere Sqwod Daily, den Podcast oder Plätze auf der Seite. Oder lass dein Produkt bewerten und in Sqwod Pods einsetzen, wo Coaches trainieren und Content drehen.', brandCta: 'Werben',
+  ? { kicker: 'Sqwod Daily · werktäglich · EN & DE', signup: 'Hol dir den 5-Minuten-Brief',
+      today: 'Heutiger Daily', listen: 'Anhören', read: 'Ausgabe lesen', money: 'Geldbewegungen', invRead: 'Investor-Sicht', statDay: 'Zahl des Tages', heads: 'Heute im Daily',
+      repKick: 'Sqwod Intelligence', repH: 'Die Daten hinter dem Business.', repAll: 'Alle Reports',
+      invKick: 'Sqwod Intelligence · monatlicher Flagship-Report', invH: 'Ein großer Report im Monat. Gebaut auf 2.061 Statista-Grafiken.', invA: 'Reports live', invB: 'Sprachen, nativ geschrieben', invC: 'interaktive Grafiken pro Report', invCta: 'Flagship-Report lesen',
+      vKick: 'Sqwod Verified', vH: 'Produkte mit Score.', vP: 'Für deine Kund:innen, dein Studio und dein Regal.', allGuides: 'Alle Kaufberater', trade: 'Trade-Sicht', ad: 'Anzeige',
+      pbKick: 'Lesen', pbH: 'Playbooks für Operator', allReads: 'Alle Artikel',
+      workKick: 'Partner', workH: 'Mit Sqwod arbeiten',
+      brandK: 'Für Marken', brandH: 'Erreiche die Menschen, die Fitness machen.', brandP: 'Sqwod Daily, der Podcast, Plätze auf der Seite. Oder lass dein Produkt bewerten und in Sqwod Pods einsetzen.', brandCta: 'Werben',
+      investK: 'Für Investor:innen', investH: 'Dealflow, täglich eingeordnet.', investP: 'Jede Finanzierung, Übernahme und Eröffnung mit Investor-Sicht. Dazu jeden Monat ein Flagship-Report.', investCta: 'Als Investor:in abonnieren',
       podK: 'Für Coaches in Berlin', podH: 'Trainiere Kund:innen in einem privaten Sqwod Pod.', podP: 'Voll ausgestattete private Trainingsräume in Prenzlauer Berg und Weißensee.', podCta: 'Pod buchen' }
-  : { kicker: 'Sqwod Daily · every weekday · EN & DE', h1: 'Your edge in the fitness industry.', signup: 'Get the 5-minute brief',
-      today: "Today's Daily", listen: 'Listen', read: "Read today's issue", presented: 'Presented by',
-      pbH: 'Operator playbooks', pbP: 'Retention, pricing, leads and the science your clients ask about.', allReads: 'All reads',
-      repKick: 'Sqwod Intelligence · Report', repCta: 'Get the report',
-      vH: 'Sqwod Verified: gear and tools, scored', vP: 'Studio equipment, coaching software and the wearables your clients ask about. Sqwod Score 0–100, affiliate links always labelled.', allGuides: "All buyer's guides", review: 'Read the review', ad: 'Ad / Affiliate',
-      workH: 'Work with Sqwod', brandK: 'For brands', brandH: 'Reach the people who run fitness.', brandP: 'Present Sqwod Daily, the podcast or site placements. Or get your product reviewed and used in Sqwod Pods, where coaches train clients and film content.', brandCta: 'Advertise',
+  : { kicker: 'Sqwod Daily · every weekday · EN & DE', signup: 'Get the 5-minute brief',
+      today: "Today's Daily", listen: 'Listen', read: "Read today's issue", money: 'Money movement', invRead: 'Investor read', statDay: 'Stat of the day', heads: 'In today\'s Daily',
+      repKick: 'Sqwod Intelligence', repH: 'The data behind the business.', repAll: 'All reports',
+      invKick: 'Sqwod Intelligence · monthly flagship', invH: 'One deep report a month. Built on 2,061 Statista charts.', invA: 'reports live', invB: 'languages, written natively', invC: 'interactive charts per report', invCta: 'Read the flagship',
+      vKick: 'Sqwod Verified', vH: 'products scored.', vP: 'For your clients, your studio and your shelf.', allGuides: "All buyer's guides", trade: 'Trade read', ad: 'Ad',
+      pbKick: 'Read', pbH: 'Operator playbooks', allReads: 'All reads',
+      workKick: 'Partners', workH: 'Work with Sqwod',
+      brandK: 'For brands', brandH: 'Reach the people who run fitness.', brandP: 'Sqwod Daily, the podcast, site placements. Or get your product reviewed and used in Sqwod Pods.', brandCta: 'Advertise',
+      investK: 'For investors', investH: 'Deal flow, decoded daily.', investP: 'Every raise, acquisition and opening with an investor read. Plus one flagship report a month.', investCta: 'Join as an investor',
       podK: 'For coaches in Berlin', podH: 'Train clients in a private Sqwod Pod.', podP: 'Fully equipped private training rooms in Prenzlauer Berg and Weißensee.', podCta: 'Book a Pod' };
 ---
 <Base lang={lang} title={title} description={tagline} active="">
-  <!-- Hero: headline + signup on the left, today's Daily on the right -->
-  <section class="hp-hero">
-    <div class="hp-lead reveal">
-      <p class="hp-kick">{T.kicker}</p>
-      <h1 class="hp-h1">{T.h1}</h1>
-      <p class="hp-sub">{tagline}</p>
-      <InlineSignup lang={lang} source="home-hero" head={T.signup} body="" />
+  {tickLine.length > 2 && (
+    <div class="tick bleed" aria-label={T.money}>
+      <div class="tick-in">
+        {[0, 1].map((rep) => tickLine.map((t) => <a href={t.href} tabindex={rep ? -1 : undefined} aria-hidden={rep ? 'true' : undefined}><b>{t.k.toUpperCase()}</b>{t.t}</a>))}
+      </div>
     </div>
+  )}
 
-    {latest && (
-      <aside class="hp-today reveal d2" aria-label={T.today}>
-        <div class="hp-row">
-          <span class="hp-label"><span class="hp-live" aria-hidden="true"></span>{T.today}</span>
-          <span class="hp-date">{fmtDate(latest.data.date)}</span>
-        </div>
-        <a class="hp-today-title" href={`/${lang}/daily/${latest.data.urlSlug}`}>{latest.data.summary || latest.data.title}</a>
-        {latestHasAudio && (
-          <a class="hp-listen" href={`/${lang}/daily/${latest.data.urlSlug}#listen`}>
-            <span class="hp-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
-            <span>{T.listen}</span><span class="hp-dur">{latest.data.duration ?? '5 min'}</span>
-          </a>
-        )}
-        {latest.data.sponsor && (
-          <div class="hp-sponsor"><span>{T.presented}</span><b>{latest.data.sponsor.name}</b></div>
-        )}
-        {latestHeads.length > 0 && (
-          <ol class="hp-heads">{latestHeads.map((h) => <li>{h}</li>)}</ol>
-        )}
-        <a class="hp-more" href={`/${lang}/daily/${latest.data.urlSlug}`}>{T.read} →</a>
-      </aside>
-    )}
+  <!-- Hero -->
+  <section class="hx">
+    <div class="hx-field" aria-hidden="true">{bars.map((s) => <i style={s}></i>)}</div>
+    <div class="hx-in">
+      <p class="kick hx-kick"><span class="pulse" aria-hidden="true"></span>{T.kicker}</p>
+      <h1 class="hx-h1">
+        {h1.map((x, i) => <Fragment><span class={x.a ? 'hw hx-acc' : 'hw'} style={`animation-delay:${i * 0.08}s`}>{x.w}</span>{x.br ? <br /> : ' '}</Fragment>)}
+      </h1>
+      <p class="hx-sub">{tagline}</p>
+      <InlineSignup lang={lang} source="home-hero" head={T.signup} variant="hero" />
+    </div>
   </section>
 
-  <!-- Operator playbooks -->
-  {playbooks.length > 0 && (
-    <section class="block hp-sec">
-      <div class="hp-sechead">
-        <div><h2>{T.pbH}</h2><p>{T.pbP}</p></div>
-        <a class="hp-all" href={`/${lang}/articles`}>{T.allReads} →</a>
+  <!-- Today's Daily strip -->
+  {latest && (
+    <section class="ds rv" aria-label={T.today}>
+      <div class="ds-c">
+        <p class="kick"><span class="pulse" aria-hidden="true" style="margin-right:8px"></span>{T.today} · {fmtDate(latest.data.date)}</p>
+        <a class="ds-title" href={`/${lang}/daily/${latest.data.urlSlug}`}>{latest.data.summary || latest.data.title}</a>
+        <div class="ds-act">
+          {latestHasAudio && <a class="ds-listen" href={`/${lang}/daily/${latest.data.urlSlug}#listen`}><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>{T.listen} · {latest.data.duration ?? '5 min'}</a>}
+          <a class="ds-more" href={`/${lang}/daily/${latest.data.urlSlug}`}>{T.read} →</a>
+        </div>
       </div>
-      <div class="hp-grid3">
-        {playbooks.map((a) => (
-          <a class="hp-card" href={hrefFor(a)}>
-            <span class="hp-tag">{laneTag(a)}</span>
-            <span class="hp-card-h">{a.data.title}</span>
-            <span class="hp-card-p">{a.data.description}</span>
+      <div class="ds-c">
+        {moves.length > 0 ? (
+          <Fragment>
+            <p class="kick">{T.money}</p>
+            <ul class="ds-moves">
+              {moves.slice(0, 2).map((m) => <li><span class="ds-amt">{m.amount}</span><span><b>{m.entity}</b> {m.note}</span></li>)}
+            </ul>
+            {latest.data.dealRead && <p class="ds-inv"><b>{T.invRead}:</b> {latest.data.dealRead}</p>}
+          </Fragment>
+        ) : (
+          <Fragment>
+            <p class="kick">{T.heads}</p>
+            <ul class="ds-heads">{latest.data.items.slice(0, 3).map((i) => <li>{i.headline}</li>)}</ul>
+          </Fragment>
+        )}
+      </div>
+      {latest.data.stat && (
+        <div class="ds-c">
+          <p class="kick">{T.statDay}</p>
+          <div class="dnum ds-stat" data-count>{latest.data.stat.number}</div>
+          <p class="ds-statl">{latest.data.stat.label}</p>
+        </div>
+      )}
+    </section>
+  )}
+
+  <!-- Intelligence -->
+  {reports.length > 0 && (
+    <section class="sx">
+      <div class="sx-head rv">
+        <div><p class="kick">{T.repKick}</p><h2>{T.repH}</h2></div>
+        <a class="sx-all" href={`/${lang}/intelligence`}>{T.repAll} →</a>
+      </div>
+      <div class="g3">
+        {reports.map((r, i) => (
+          <a class={`rc lift rv d${i + 1}${i === 1 ? ' tilt' : ''}`} href={hrefFor(r)}>
+            <span class="dnum rc-n" data-count>{statOf(r)}</span>
+            <span class="rc-l">{statLabelOf(r)}</span>
+            <span class="rc-h">{r.data.title}</span>
+            <span class="rc-go">{de ? 'Report lesen' : 'Read the report'} →</span>
           </a>
         ))}
       </div>
     </section>
   )}
 
-  <!-- One report -->
-  {report && (
-    <section class="block hp-sec">
-      <a class="hp-report" href={hrefFor(report)}>
-        {reportStat && (
-          <div class="hp-stat">
-            <span class="hp-stat-n">{reportStat}</span>
-            {reportStatLabel && <span class="hp-stat-l">{reportStatLabel}</span>}
-          </div>
-        )}
-        <div class="hp-rep-body">
-          <span class="hp-label">{T.repKick}</span>
-          <span class="hp-rep-h">{report.data.title}</span>
-          <span class="hp-card-p">{report.data.description}</span>
-          <span class="cta hp-rep-cta">{T.repCta} →</span>
+  <!-- Inverted band -->
+  {flagship && (
+    <section class="inv bleed">
+      <div class="wrap inv-in">
+        <div class="rv">
+          <p class="kick">{T.invKick}</p>
+          <h2 class="inv-h">{T.invH}</h2>
         </div>
-      </a>
+        <div class="inv-side rv d1">
+          <div class="inv-stats">
+            <div><span class="dnum" data-count>{reportCount}</span><span>{T.invA}</span></div>
+            <div><span class="dnum">2</span><span>{T.invB}</span></div>
+            <div><span class="dnum">8–10</span><span>{T.invC}</span></div>
+          </div>
+          <a class="inv-btn" href={hrefFor(flagship)}>{T.invCta} →</a>
+        </div>
+      </div>
     </section>
   )}
 
-  <!-- Verified top picks -->
+  <!-- Verified -->
   {topPicks.length > 0 && (
-    <section class="block hp-sec">
-      <div class="hp-sechead">
-        <div><h2>{T.vH}</h2><p>{T.vP}</p></div>
-        <a class="hp-all" href={`/${lang}/verified`}>{T.allGuides} →</a>
+    <section class="sx">
+      <div class="sx-head rv">
+        <div><p class="kick">{T.vKick}</p><h2><span data-count>{reviews.length}</span> {T.vH}</h2><p>{T.vP}</p></div>
+        <a class="sx-all" href={`/${lang}/verified`}>{T.allGuides} →</a>
       </div>
-      <div class="hp-grid3">
-        {topPicks.map((r) => (
-          <a class="hp-pick" href={`/${lang}/verified/${r.data.urlSlug}`}>
-            <div class="hp-pick-img">
+      <div class="g3">
+        {topPicks.map((r, i) => (
+          <a class={`vc lift rv d${i + 1}`} href={`/${lang}/verified/${r.data.urlSlug}`}>
+            <div class="vc-img">
               {r.data.asset.images[0]
                 ? <img src={r.data.asset.images[0]} alt={r.data.productName} loading="lazy" />
                 : <Glyph kind={r.data.glyph} size={96} framed={false} />}
             </div>
-            <div class="hp-pick-body">
-              <div class="hp-pick-top">
-                <div>
-                  <span class="hp-label">{r.data.category}</span>
-                  <span class="hp-pick-h">{r.data.productName}</span>
-                </div>
-                <ScoreBadge score={r.data.sqwodScore} size={64} />
-              </div>
-              <span class="hp-card-p">{r.data.verdict}</span>
-              <span class="hp-pick-foot"><span class="hp-price">{price(r)}</span>{reviewEarns(r.data.urlSlug) && <span class="hp-ad">{T.ad}</span>}</span>
-              <span class="hp-more">{T.review} →</span>
+            <div class="vc-b">
+              <div class="vc-top"><span class="dnum vc-score">{r.data.sqwodScore}</span><span class="vc-sl">Sqwod Score</span></div>
+              <span class="vc-h">{r.data.productName}</span>
+              <span class="vc-p">{r.data.proRead?.trade ? <Fragment><b>{T.trade}:</b> {r.data.proRead.trade}</Fragment> : r.data.verdict}</span>
+              <span class="vc-foot"><span class="vc-price">{price(r)}</span>{reviewEarns(r.data.urlSlug) && <span class="vc-ad">{T.ad}</span>}</span>
             </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Operator playbooks -->
+  {playbooks.length > 0 && (
+    <section class="sx">
+      <div class="sx-head rv">
+        <div><p class="kick">{T.pbKick}</p><h2>{T.pbH}</h2></div>
+        <a class="sx-all" href={`/${lang}/articles`}>{T.allReads} →</a>
+      </div>
+      <div class="g3">
+        {playbooks.map((a, i) => (
+          <a class={`pc2 lift rv d${i + 1}`} href={hrefFor(a)}>
+            <span class="pc2-tag">{laneTag(a)}</span>
+            <span class="pc2-h">{a.data.title}</span>
+            <span class="pc2-p">{a.data.description}</span>
           </a>
         ))}
       </div>
@@ -189,94 +255,122 @@ const T = de
   )}
 
   <!-- Work with Sqwod -->
-  <section class="block hp-sec">
-    <h2 class="hp-work-h">{T.workH}</h2>
-    <div class="hp-grid2">
-      <div class="hp-door hp-door-main">
-        <span class="hp-label">{T.brandK}</span>
-        <span class="hp-door-h">{T.brandH}</span>
-        <p>{T.brandP}</p>
-        <a class="cta hp-door-cta" href={`/${lang}/advertise`}>{T.brandCta} →</a>
-      </div>
-      <div class="hp-door">
-        <span class="hp-label">{T.podK}</span>
-        <span class="hp-door-h">{T.podH}</span>
-        <p>{T.podP}</p>
-        <a class="hp-door-ghost" href="https://sqwodpod.com" target="_blank" rel="noopener">{T.podCta} →</a>
-      </div>
+  <section class="sx sx-last">
+    <div class="sx-head rv"><div><p class="kick">{T.workKick}</p><h2>{T.workH}</h2></div></div>
+    <div class="g3">
+      <div class="door lift rv d1"><p class="kick">{T.brandK}</p><span class="door-h">{T.brandH}</span><p>{T.brandP}</p><a class="cta door-cta" href={`/${lang}/advertise`}>{T.brandCta} →</a></div>
+      <div class="door lift rv d2 tilt"><p class="kick">{T.investK}</p><span class="door-h">{T.investH}</span><p>{T.investP}</p><a class="door-ghost" href={`/${lang}/subscribe`}>{T.investCta} →</a></div>
+      <div class="door lift rv d3"><p class="kick">{T.podK}</p><span class="door-h">{T.podH}</span><p>{T.podP}</p><a class="door-ghost" href="https://sqwodpod.com" target="_blank" rel="noopener">{T.podCta} →</a></div>
     </div>
   </section>
 </Base>
 
 <style>
-  .hp-hero{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:40px;align-items:start;padding:28px 0 12px}
-  .hp-kick,.hp-label{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--g2)}
-  .hp-kick{margin:0 0 14px}
-  .hp-h1{font-size:clamp(38px,6vw,64px);line-height:1.02;letter-spacing:-.035em;margin:0 0 16px;font-weight:700}
-  .hp-sub{font-size:18px;line-height:1.5;color:var(--g2);margin:0;max-width:56ch}
-  .hp-lead :global(.isu){margin:24px 0 0}
+  /* the page owns its top spacing (ticker sits flush under the nav) */
+  :global(main.wrap){padding-top:0}
+  .tick{margin-bottom:0}
 
-  .hp-today{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px;display:flex;flex-direction:column;gap:14px}
-  .hp-row{display:flex;justify-content:space-between;align-items:center;gap:10px}
-  .hp-label{display:inline-flex;align-items:center;gap:8px}
-  .hp-live{width:8px;height:8px;border-radius:50%;background:var(--accent)}
-  .hp-date,.hp-dur,.hp-price{font-family:var(--mono);font-size:12px;color:var(--g3)}
-  .hp-today-title{font-size:20px;font-weight:700;line-height:1.3;letter-spacing:-.01em;text-decoration:none}
-  .hp-listen{display:flex;align-items:center;gap:12px;min-height:56px;padding:6px 14px 6px 6px;border-radius:16px;background:var(--panel2);text-decoration:none;font-weight:600;font-size:14px}
-  .hp-play{width:44px;height:44px;flex:none;border-radius:12px;background:var(--chalk);color:var(--ink);display:flex;align-items:center;justify-content:center}
-  .hp-dur{margin-left:auto}
-  .hp-sponsor{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;border:1px dashed var(--edge);border-radius:12px;font-size:12px;color:var(--g2)}
-  .hp-heads{list-style:none;margin:0;padding:0}
-  .hp-heads li{padding:11px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.4}
-  .hp-more{font-size:14px;font-weight:600;text-decoration:none;color:var(--chalk)}
+  /* hero */
+  .hx{position:relative;padding:52px 0 52px;border-bottom:1px solid var(--line)}
+  .hx-field{position:absolute;inset:0 calc(50% - 50vw);overflow:hidden;pointer-events:none;opacity:.05}
+  .hx-field i{position:absolute;bottom:0;width:18px;background:var(--chalk);border-radius:4px 4px 0 0;transform-origin:bottom;animation:fieldgrow 6s ease-in-out infinite alternate}
+  @keyframes fieldgrow{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+  .hx-in{position:relative}
+  .hx-kick{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .hx-h1{font-size:clamp(54px,9.6vw,120px);line-height:.9;margin:0;max-width:1100px}
+  .hx-acc{color:var(--accent)}
+  .hx-sub{margin:20px 0 0;max-width:620px;font-size:18px;line-height:1.5;color:var(--g2)}
 
-  /* section.block already draws a bottom rule; the hero gets one top rule here */
-  .hp-hero{border-bottom:1px solid var(--line)}
-  .hp-sec:last-of-type{border-bottom:0}
-  .hp-sechead{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:18px}
-  .hp-sechead h2,.hp-work-h{font-size:clamp(24px,3.2vw,32px);letter-spacing:-.02em;margin:0 0 6px}
-  .hp-sechead p{margin:0;color:var(--g2);font-size:15px;max-width:60ch}
-  .hp-all{font-size:14px;font-weight:600;text-decoration:none;color:var(--chalk);padding:10px 0}
-  .hp-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-  .hp-grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-  .hp-card{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px;text-decoration:none;transition:border-color .15s}
-  .hp-card:hover,.hp-pick:hover,.hp-report:hover{border-color:var(--edge)}
-  .hp-tag{align-self:flex-start;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--edge);border-radius:6px;color:var(--g1)}
-  .hp-card-h{font-size:18px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
-  .hp-card-p{font-size:14px;line-height:1.5;color:var(--g2)}
+  /* daily strip */
+  .ds{display:grid;grid-template-columns:1.25fr 1fr 1fr;margin:40px 0 0;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden}
+  .ds-c{padding:24px 26px;border-right:1px solid var(--line);min-width:0}
+  .ds-c:last-child{border-right:0}
+  .ds .kick{display:flex;align-items:center;margin-bottom:12px}
+  .ds-title{display:block;font-size:21px;font-weight:600;line-height:1.3;letter-spacing:-.015em;text-decoration:none}
+  .ds-title:hover{color:var(--accent)}
+  .ds-act{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:16px}
+  .ds-listen{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 14px;border:1px solid var(--edge);border-radius:12px;font-size:14px;font-weight:600;text-decoration:none}
+  .ds-listen:hover{border-color:var(--accent);color:var(--accent)}
+  .ds-more{font-size:14px;font-weight:600;text-decoration:none}
+  .ds-moves{list-style:none;margin:0;padding:0}
+  .ds-moves li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.4;color:var(--g2)}
+  .ds-moves li:first-child{border-top:0;padding-top:0}
+  .ds-moves b{color:var(--chalk)}
+  .ds-amt{font-family:var(--mono);font-weight:600;color:var(--accent);white-space:nowrap}
+  .ds-inv{margin:12px 0 0;padding:10px 12px;border-radius:12px;background:var(--accent-soft);font-size:13px;line-height:1.45;color:var(--g1)}
+  .ds-heads{list-style:none;margin:0;padding:0}
+  .ds-heads li{padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.4}
+  .ds-heads li:first-child{border-top:0;padding-top:0}
+  .ds-stat{font-size:72px;color:var(--chalk)}
+  .ds-statl{margin:10px 0 0;font-size:14px;line-height:1.45;color:var(--g2)}
 
-  .hp-report{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;align-items:center;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:32px;text-decoration:none}
-  .hp-stat{display:flex;flex-direction:column;gap:8px}
-  .hp-stat-n{font-family:var(--mono);font-size:clamp(56px,8vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:500}
-  .hp-stat-l{font-size:14px;line-height:1.45;color:var(--g2);max-width:32ch}
-  .hp-rep-body{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
-  .hp-rep-h{font-size:clamp(22px,2.6vw,28px);font-weight:700;line-height:1.2;letter-spacing:-.02em}
-  .hp-rep-cta{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;font-size:14px}
+  /* sections */
+  .sx{padding:72px 0 0}
+  .sx-last{padding-bottom:72px}
+  .g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  .tilt{rotate:-.8deg}
+  .tilt:hover{rotate:0deg}
 
-  .hp-pick{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden;text-decoration:none}
-  .hp-pick-img{height:180px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;border-bottom:1px solid var(--line)}
-  .hp-pick-img img{max-height:150px;max-width:80%;object-fit:contain}
-  .hp-pick-body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
-  .hp-pick-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
-  .hp-pick-top > div{display:flex;flex-direction:column;gap:6px}
-  .hp-pick-h{font-size:19px;font-weight:700;letter-spacing:-.01em}
-  .hp-pick-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto}
-  .hp-ad{font-size:11px;color:var(--g3)}
+  /* report cards */
+  .rc{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:26px;text-decoration:none}
+  .rc-n{font-size:80px;color:var(--chalk)}
+  .rc-l{font-family:var(--mono);font-size:12px;color:var(--g3);line-height:1.5}
+  .rc-h{font-size:18px;font-weight:600;line-height:1.3;letter-spacing:-.01em;margin-top:6px}
+  .rc-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--accent)}
 
-  .hp-door{display:flex;flex-direction:column;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:20px;padding:28px}
-  .hp-door-main{background:var(--panel)}
-  .hp-door-h{font-size:22px;font-weight:700;line-height:1.25;letter-spacing:-.01em}
-  .hp-door p{margin:0;color:var(--g2);font-size:15px;line-height:1.55}
-  .hp-door-cta,.hp-door-ghost{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;font-size:14px;margin-top:4px}
-  .hp-door-ghost{border:1px solid var(--chalk);border-radius:12px;font-weight:600;text-decoration:none;color:var(--chalk)}
+  /* inverted band */
+  .inv{background:var(--chalk);color:var(--ink);margin-top:80px}
+  .inv-in{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:48px;align-items:center;padding-top:64px;padding-bottom:64px}
+  .inv .kick{color:var(--ink);opacity:.65}
+  .inv-h{font-size:clamp(40px,5vw,64px);line-height:.95;margin:0;color:var(--ink)}
+  .inv-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .inv-stats div{display:flex;flex-direction:column;gap:8px;padding:18px;border-radius:14px;border:1px solid color-mix(in srgb,var(--ink) 25%,transparent)}
+  .inv-stats .dnum{font-size:44px}
+  .inv-stats span:last-child{font-size:13px;line-height:1.35;opacity:.75}
+  .inv-btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;margin-top:18px;border-radius:14px;background:var(--ink);color:var(--chalk);font-weight:600;font-size:15px;text-decoration:none;transition:background .15s,color .15s}
+  .inv-btn:hover{background:var(--accent);color:var(--accent-ink)}
 
-  @media(max-width:860px){
-    .hp-hero{grid-template-columns:1fr;gap:24px}
-    .hp-grid3{grid-template-columns:1fr}
-    .hp-report{grid-template-columns:1fr;gap:18px;padding:24px}
+  /* verified cards */
+  .vc{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden;text-decoration:none}
+  .vc-img{height:210px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;border-bottom:1px solid var(--line)}
+  .vc-img img{max-height:170px;max-width:80%;object-fit:contain;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .vc:hover .vc-img img{transform:scale(1.05)}
+  .vc-b{display:flex;flex-direction:column;gap:8px;padding:20px;flex:1}
+  .vc-top{display:flex;align-items:baseline;gap:8px}
+  .vc-score{font-size:34px;color:var(--accent)}
+  .vc-sl{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--g3)}
+  .vc-h{font-size:18px;font-weight:600;letter-spacing:-.01em}
+  .vc-p{font-size:14px;line-height:1.5;color:var(--g2)}
+  .vc-p b{color:var(--chalk)}
+  .vc-foot{display:flex;justify-content:space-between;gap:8px;margin-top:auto;padding-top:6px}
+  .vc-price{font-family:var(--mono);font-size:12.5px;color:var(--chalk)}
+  .vc-ad{font-size:11px;color:var(--g3)}
+
+  /* playbooks */
+  .pc2{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:22px;text-decoration:none}
+  .pc2-tag{align-self:flex-start;font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:4px 8px;border:1px solid var(--edge);border-radius:6px;color:var(--g1)}
+  .pc2-h{font-size:18px;font-weight:600;line-height:1.3;letter-spacing:-.01em}
+  .pc2-p{font-size:14px;line-height:1.5;color:var(--g2)}
+
+  /* doors */
+  .door{display:flex;flex-direction:column;align-items:flex-start;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:26px}
+  .door-h{font-size:22px;font-weight:600;line-height:1.25;letter-spacing:-.02em;margin:0 0 10px}
+  .door p:not(.kick){margin:0 0 18px;font-size:14.5px;line-height:1.55;color:var(--g2)}
+  .door-cta,.door-ghost{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;font-size:14px;margin-top:auto}
+  .door-ghost{border:1px solid var(--edge);border-radius:12px;font-weight:600;text-decoration:none;color:var(--chalk)}
+  .door-ghost:hover{border-color:var(--accent);color:var(--accent)}
+
+  @media(max-width:900px){
+    .ds{grid-template-columns:1fr}
+    .ds-c{border-right:0;border-bottom:1px solid var(--line)}
+    .ds-c:last-child{border-bottom:0}
+    .g3{grid-template-columns:1fr}
+    .inv-in{grid-template-columns:1fr;gap:28px}
+    .tilt{rotate:0deg}
   }
-  @media(max-width:600px){
-    .hp-grid2{grid-template-columns:1fr}
-    .hp-door{padding:22px}
+  @media(max-width:560px){
+    .hx{padding:36px 0 40px}
+    .sx{padding-top:56px}
+    .inv-stats .dnum{font-size:34px}
   }
 </style>

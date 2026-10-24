@@ -34,6 +34,18 @@ series:
   points: [1349, 1406, 1419, 1509, 1566, 1302, 1464, 1515, 1693]
   years: ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
 charts:
+  - label: "Winners and losers in US home equipment, 2015 to 2023"
+    unit: "index, 2019 = 100"
+    kind: timeseries
+    categories: ["2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "Free weights", points: [91, 93, 95, 97, 100, 204, 240, 251, 279] }
+      - { name: "Exercise bikes", points: [84, 87, 88, 92, 100, 167, 212, 194, 218] }
+      - { name: "Home gyms", points: [95, 95, 92, 95, 100, 174, 211, 192, 210] }
+      - { name: "Ellipticals", points: [103, 101, 99, 100, 100, 103, 107, 93, 89] }
+    note: "Indexed from the SFIA wholesale series below (each category's 2019 sales = 100)"
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
   - label: "US home fitness equipment, wholesale sales 2007 to 2023"
     unit: "$bn"
     kind: timeseries
@@ -90,6 +102,20 @@ charts:
       - { name: "", points: [4.38,4.54,4.65,4.88,5.16,5.43,5.71,5.98,6.25,6.52,6.79] }
     source: "Statista via Statista"
     url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+benchmark:
+  label: "Strength share of your equipment budget or floor"
+  unit: "%"
+  prompt: "Racks, benches, free weights and rigs as a share of everything you own or plan to buy. Compare it with where US home buyers moved."
+  betterIsHigh: true
+  min: 0
+  max: 100
+  median: 36
+  medianLabel: "2023 home market"
+  bands:
+    - { to: 23, label: "Built for 2019" }
+    - { to: 36, label: "Catching up" }
+    - { to: 100, label: "Built for 2023" }
+  source: "Free weights + home gyms as a share of four US home categories (free weights, bikes, home gyms, ellipticals): 23% in 2019, 36% in 2023. SFIA wholesale via Statista. A directional benchmark, not a rule."
 playbook:
   - { move: "Program for the kit your clients already own.", why: "Home free weights nearly tripled and exercise bikes more than doubled since 2019. Many of your clients have a home setup. Hybrid programming that uses it keeps them paying you between sessions." }
   - { move: "Equip for strength, not rows of cardio machines.", why: "Free weights grew 179% while ellipticals shrank 11%. Floor space for racks, benches and dumbbells matches where demand went." }
@@ -99,6 +125,7 @@ changelog:
   - { date: "24 Oct 2026", note: "First publish. Figures rebuilt by hand from the SFIA series in Statista study 63282, plus SFIA's 2026 release for the 2025 trend (replaces an earlier auto-draft whose figures were misread)." }
 hero:
   kind: bars
+  chart: 3
   stat: "+179%"
   statLabel: "US free-weight sales · 2019 to 2023"
 tags: ["equipment", "strength", "market-data"]

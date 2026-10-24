@@ -34,6 +34,18 @@ series:
   points: [1349, 1406, 1419, 1509, 1566, 1302, 1464, 1515, 1693]
   years: ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
 charts:
+  - label: "Gewinner und Verlierer im US-Heimfitness-Markt, 2015 bis 2023"
+    unit: "Index, 2019 = 100"
+    kind: timeseries
+    categories: ["2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "Freihanteln", points: [91, 93, 95, 97, 100, 204, 240, 251, 279] }
+      - { name: "Heimtrainer-Bikes", points: [84, 87, 88, 92, 100, 167, 212, 194, 218] }
+      - { name: "Home-Gyms", points: [95, 95, 92, 95, 100, 174, 211, 192, 210] }
+      - { name: "Crosstrainer", points: [103, 101, 99, 100, 100, 103, 107, 93, 89] }
+    note: "Indexiert aus den SFIA-Großhandelsreihen unten (Umsatz 2019 je Kategorie = 100)"
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
   - label: "US-Heimfitnessgeräte, Großhandelsumsatz 2007 bis 2023"
     unit: "Mrd. $"
     kind: timeseries
@@ -90,6 +102,20 @@ charts:
       - { name: "", points: [4.38,4.54,4.65,4.88,5.16,5.43,5.71,5.98,6.25,6.52,6.79] }
     source: "Statista via Statista"
     url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+benchmark:
+  label: "Kraft-Anteil an deinem Equipment-Budget oder deiner Fläche"
+  unit: "%"
+  prompt: "Racks, Bänke, Freihanteln und Rigs als Anteil an allem, was du hast oder kaufen willst. Vergleich ihn damit, wohin US-Heimkäufer:innen gewandert sind."
+  betterIsHigh: true
+  min: 0
+  max: 100
+  median: 36
+  medianLabel: "Heimmarkt 2023"
+  bands:
+    - { to: 23, label: "Gebaut für 2019" }
+    - { to: 36, label: "Holt auf" }
+    - { to: 100, label: "Gebaut für 2023" }
+  source: "Freihanteln + Home-Gyms als Anteil an vier US-Heimkategorien (Freihanteln, Bikes, Home-Gyms, Crosstrainer): 23 % in 2019, 36 % in 2023. SFIA-Großhandel via Statista. Eine Richtung, keine Regel."
 playbook:
   - { move: "Plane mit dem Equipment, das deine Kund:innen schon besitzen.", why: "Freihanteln für zu Hause haben sich seit 2019 fast verdreifacht, Heimtrainer-Bikes mehr als verdoppelt. Viele deiner Kund:innen haben ein Setup zu Hause. Hybride Programme, die es nutzen, halten sie auch zwischen den Einheiten bei dir." }
   - { move: "Richte deine Fläche auf Kraft aus, nicht auf Reihen von Cardio-Geräten.", why: "Freihanteln wuchsen um 179 %, Crosstrainer schrumpften um 11 %. Platz für Racks, Bänke und Kurzhanteln passt dazu, wohin die Nachfrage gegangen ist." }
@@ -99,6 +125,7 @@ changelog:
   - { date: "24. Okt. 2026", note: "Erstveröffentlichung. Zahlen von Hand aus den SFIA-Reihen der Statista-Studie 63282 neu aufgebaut, ergänzt um die SFIA-Meldung 2026 für den Trend 2025 (ersetzt einen früheren automatischen Entwurf mit falsch ausgelesenen Werten)." }
 hero:
   kind: bars
+  chart: 3
   stat: "+179 %"
   statLabel: "US-Freihanteln · 2019 bis 2023"
 tags: ["equipment", "krafttraining", "marktdaten"]

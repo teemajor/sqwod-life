@@ -190,6 +190,7 @@ const articles = defineCollection({
       art: z.string().optional(),       // custom hand-drawn illustration, e.g. "/heroes/<slug>.svg" (in site/public/heroes/)
       stat: z.string().optional(),
       statLabel: z.string().optional(),
+      chart: z.number().int().optional(), // index into charts[] for the report hero's mini bars (Oct 2026); default: series, else charts[0]
     }).optional(),
     tags: z.array(z.string()).default([]),
   }),

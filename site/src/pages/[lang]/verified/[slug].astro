@@ -7,6 +7,7 @@ import InlineSignup from '../../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
 import { categories, reviewEarns } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
+import { priceOf, lowOf } from '../../../lib/price';
 
 export async function getStaticPaths() {
   // Drafts (current-gen pages awaiting a real Sqwod Score) never build or publish.
@@ -36,6 +37,18 @@ const lang = Astro.params.lang as Lang;
 const d = entry.data;
 const { Content } = await entry.render();
 const updated = d.updatedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day:'2-digit', month:'short', year:'numeric' });
+// Oct 2026 redesign: the score shown as its three weighted parts (methodology: 45 / 40 / 15)
+const parts = [
+  { name: 'Crowd', score: d.crowd.score, w: 0.45, c: 'var(--s1)' },
+  { name: 'Assessment', score: d.assessment.score, w: 0.40, c: 'var(--s2)' },
+  { name: lang === 'de' ? 'Preis' : 'Value', score: d.value.score, w: 0.15, c: 'var(--s3)' },
+];
+const priceText = priceOf(d.value, lang) ?? '';
+const low = lowOf(d.value, lang);
+const lowText = low ? (lang === 'de' ? `Tiefstpreis ${low}` : `Tracked low ${low}`) : '';
+const R = lang === 'de'
+  ? { proH: 'Für deine Kund:innen, dein Studio und dein Regal', buyH: 'Solltest du es kaufen?', pro: 'Für Profis', buy: 'Für Käufer:innen', as: 'Lesen als' }
+  : { proH: 'For your clients, studio and shelf', buyH: 'Should you buy it?', pro: 'For professionals', buy: 'For buyers', as: 'Read this as' };
 
 // Structured data → Google rich result. The crowd aggregate (real reviews
 // across Amazon, app stores, Trustpilot, …) powers AggregateRating; the Sqwod
@@ -94,108 +107,209 @@ const faqLd = {
 <Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified" ogType="article" image={d.asset.images[0] ?? '/podcast-cover.png'}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd).replace(/</g, '\\u003c')} />
-  <div class="crumb">Verified / {d.category}</div>
-  <span class="verified-tag">◈ Sqwod Verified</span>
-  <h1 style="margin-bottom:2px">{d.productName}</h1>
-  <p class="sub">{d.category}</p>
-  <div style="margin-top:12px"><TestStatus status={d.testStatus} lang={lang} tone="full" /></div>
-  {d.successor && (() => {
-    const s = d.successor!;
-    const when = s.since ? new Date(`${s.since}-01T12:00:00Z`).toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { month: 'long', year: 'numeric' }) : '';
-    const name = s.reviewSlug ? <a href={`/${lang}/verified/${s.reviewSlug}`}>{s.name}</a> : <b>{s.name}</b>;
-    return (
-      <p class="successor" role="note">
-        {lang === 'de'
-          ? <>Neueres Modell erhältlich: {name}{when ? ` (seit ${when})` : ''}. Diese Bewertung gilt für das Vorgängermodell{s.reviewSlug ? '.' : '; das neue Modell ist noch nicht bewertet.'}</>
-          : <>Newer model available: {name}{when ? ` (since ${when})` : ''}. This review covers the previous model{s.reviewSlug ? '.' : '; we have not scored the new one yet.'}</>}
-      </p>
-    );
-  })()}
-
-  <div class="review-layout" style="margin-top:18px">
-    <!-- sticky rail: 3D + score + deal -->
-    <aside class="review-aside">
-      {d.asset.images.length > 0 ? (
-        <div class="gallery">
-          <div class="g-tabs"><span>{lang==='de'?'Fotos':'Photos'}</span></div>
-          <div class="g-main"><img id="g-main" src={d.asset.images[0]} alt={d.productName} loading="lazy" /></div>
-          {d.asset.images.length > 1 && (
-            <div class="g-thumbs">
-              {d.asset.images.map((src, i) => (
-                <button class="g-thumb" data-src={src} aria-label={`View ${i + 1}`}><img src={src} alt={`${d.productName} ${i + 1}`} loading="lazy" /></button>
-              ))}
-            </div>
-          )}
-          <div class="g-credit">{d.asset.credit ?? (lang==='de'?'Produktfotos vom Händler · Anzeige/Affiliate':'Product photos via retailer · ad/affiliate')}</div>
-        </div>
-      ) : (
-        <div class="gallery">
-          <div class="g-main g-empty" role="img" aria-label={d.productName}>
-            <svg viewBox="0 0 100 100" aria-hidden="true" class="g-mark">
-              <path d="M50 4 C70 22 78 30 96 50 C78 70 70 78 50 96 C30 78 22 70 4 50 C22 30 30 22 50 4 Z" fill="none" stroke="var(--mark)" stroke-width="2.5" />
-            </svg>
-            <span class="g-empty-name">{d.productName}</span>
+  <section class="vh">
+    <p class="vh-crumb"><a href={`/${lang}/verified`}>Verified</a> / {d.category} · {t(lang,'verified.updated')} {updated}</p>
+    {d.successor && (() => {
+      const s = d.successor!;
+      const when = s.since ? new Date(`${s.since}-01T12:00:00Z`).toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { month: 'long', year: 'numeric' }) : '';
+      const name = s.reviewSlug ? <a href={`/${lang}/verified/${s.reviewSlug}`}>{s.name}</a> : <b>{s.name}</b>;
+      return (
+        <p class="successor" role="note">
+          {lang === 'de'
+            ? <Fragment>Neueres Modell erhältlich: {name}{when ? ` (seit ${when})` : ''}. Diese Bewertung gilt für das Vorgängermodell{s.reviewSlug ? '.' : '; das neue Modell ist noch nicht bewertet.'}</Fragment>
+            : <Fragment>Newer model available: {name}{when ? ` (since ${when})` : ''}. This review covers the previous model{s.reviewSlug ? '.' : '; we have not scored the new one yet.'}</Fragment>}
+        </p>
+      );
+    })()}
+    <div class="vh-grid">
+      <div class="vh-media">
+        {d.asset.images.length > 0 ? (
+          <div class="gallery">
+            <div class="g-main"><img id="g-main" src={d.asset.images[0]} alt={d.productName} /></div>
+            {d.asset.images.length > 1 && (
+              <div class="g-thumbs">
+                {d.asset.images.map((src, i) => (
+                  <button class="g-thumb" data-src={src} aria-label={`View ${i + 1}`}><img src={src} alt={`${d.productName} ${i + 1}`} loading="lazy" /></button>
+                ))}
+              </div>
+            )}
+            <div class="g-credit">{d.asset.credit ?? (lang==='de'?'Produktfotos vom Händler · Anzeige/Affiliate':'Product photos via retailer · ad/affiliate')}</div>
           </div>
-          <div class="g-credit">{lang==='de'?'Produktfoto folgt':'Product photo coming soon'}</div>
+        ) : (
+          <div class="gallery">
+            <div class="g-main g-empty" role="img" aria-label={d.productName}>
+              <svg viewBox="0 0 100 100" aria-hidden="true" class="g-mark">
+                <path d="M50 4 C70 22 78 30 96 50 C78 70 70 78 50 96 C30 78 22 70 4 50 C22 30 30 22 50 4 Z" fill="none" stroke="var(--mark)" stroke-width="2.5" />
+              </svg>
+              <span class="g-empty-name">{d.productName}</span>
+            </div>
+            <div class="g-credit">{lang==='de'?'Produktfoto folgt':'Product photo coming soon'}</div>
+          </div>
+        )}
+      </div>
+      <div class="vh-info">
+        <p class="kick m">Sqwod Verified · {d.category}</p>
+        <h1 class="vh-h1">{d.productName.split(' ').map((w, i) => <Fragment><span class="hw" style={`animation-delay:${i * 0.07}s`}>{w}</span>{' '}</Fragment>)}</h1>
+        <p class="vh-verdict">{d.verdict}</p>
+        <div style="margin-top:14px"><TestStatus status={d.testStatus} lang={lang} tone="full" /></div>
+
+        <div class="vs">
+          <div class="vs-num"><span class="dnum" data-count>{d.sqwodScore}</span><small>Sqwod Score / 100</small></div>
+          <div class="vs-body">
+            <div class="vs-tags"><span class="vs-tag vs-conf">● {t(lang,'verified.confidence')}: {d.confidence}</span><span class="vs-tag">{`${d.crowd.reviews.toLocaleString(lang === 'de' ? 'de-DE' : 'en-US')}+ ${t(lang,'verified.reviews')}`}</span><span class="vs-tag">{`${d.crowd.platforms} ${t(lang,'verified.platforms')}`}</span></div>
+            <div class="vs-bar" role="img" aria-label={`Crowd ${d.crowd.score} × 45%, Assessment ${d.assessment.score} × 40%, Value ${d.value.score} × 15%`}>
+              {parts.map((p, i) => <i style={`width:${p.score * p.w}%;background:${p.c};animation-delay:${0.35 + i * 0.15}s`}></i>)}
+            </div>
+            <div class="vs-legend">
+              {parts.map((p) => <div><span class="vs-sw" style={`background:${p.c}`}></span>{p.name} <b>{p.score}</b><span class="vs-calc">{`× ${Math.round(p.w * 100)}% = ${(p.score * p.w).toFixed(1).replace('.', lang === 'de' ? ',' : '.')}`}</span></div>)}
+            </div>
+          </div>
+        </div>
+
+        <div class="vbuy">
+          {priceText && <div><span class="dnum vbuy-p">{priceText}</span>{lowText && <p class="vbuy-n">{lowText}</p>}</div>}
+          <a class="vbuy-btn" href={`/go/${d.urlSlug}`} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'}>{t(lang,'verified.bestDeal')} →</a>
+        </div>
+        <p class="dealnote vbuy-note">{reviewEarns(d.urlSlug)
+          ? <Fragment>Anzeige / Affiliate · {lang==='de'?'Live-Preis beim Händler':'live price shown at the retailer'}</Fragment>
+          : <Fragment>{lang==='de'?'Kein Affiliate-Link · Live-Preis beim Händler':'Not an affiliate link · live price shown at the retailer'}</Fragment>}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The read: professionals first, buyers one tap away -->
+  <section class="vread rv">
+    <div class="vread-head">
+      <div><p class="kick">{lang === 'de' ? 'Die Einordnung' : 'The read'}</p><h2 class="vread-h" data-pro={R.proH} data-buy={R.buyH}>{d.proRead ? R.proH : R.buyH}</h2></div>
+      {d.proRead && (
+        <div class="seg" role="group" aria-label={R.as}>
+          <button type="button" aria-pressed="true" data-read="pro">{R.pro}</button><button type="button" aria-pressed="false" data-read="buy">{R.buy}</button>
         </div>
       )}
-      <div class="scorebox" style="margin-top:12px">
-        <ScoreBadge score={d.sqwodScore} size={120} />
-        <div class="scoreLabel">Sqwod Score</div>
-        <span class="conf">{t(lang,'verified.confidence')}: {d.confidence}</span>
-        <div class="meta">{lang==='de'?'aus':'from'} <b>{d.crowd.reviews.toLocaleString()}+</b> {t(lang,'verified.reviews')} · <b>{d.crowd.platforms}</b> {t(lang,'verified.platforms')} · {t(lang,'verified.updated')} <b>{updated}</b></div>
-        <a class="deal" href={`/go/${d.urlSlug}`} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'}>{t(lang,'verified.bestDeal')} →</a>
-        <div class="dealnote">{reviewEarns(d.urlSlug)
-          ? <>Anzeige / Affiliate · {lang==='de'?'Live-Preis beim Händler':'live price shown at the retailer'}</>
-          : <>{lang==='de'?'Kein Affiliate-Link · Live-Preis beim Händler':'Not an affiliate link · live price shown at the retailer'}</>}</div>
+    </div>
+    {d.proRead && (
+      <div class="vread-pro" data-pane="pro">
+        <div><p class="kick">{lang==='de'?'Deine Kund:innen':'Your clients'}</p><p>{d.proRead.clients}</p></div>
+        <div><p class="kick">{lang==='de'?'Dein Studio':'Your studio'}</p><p>{d.proRead.studio}</p></div>
+        <div><p class="kick">{lang==='de'?'Marken & Investor:innen':'Brands and investors'}</p><p>{d.proRead.brand}</p></div>
+        <div><p class="kick">{lang==='de'?'Trade-Fakten':'Trade facts'}</p><p class="vread-trade">{d.proRead.trade}</p></div>
+      </div>
+    )}
+    <div class="vread-buy" data-pane="buy" hidden={d.proRead ? true : undefined}>
+      <div><p class="kick m">{t(lang,'verified.buyIf')}</p><p>{d.whoFor.buy}</p></div>
+      <div><p class="kick">{t(lang,'verified.skipIf')}</p><p>{d.whoFor.skip}</p></div>
+    </div>
+  </section>
+
+  <div class="vbody">
+    <div class="vbody-main">
+      <ScoreBreakdown lang={lang} crowd={d.crowd} assessment={d.assessment} value={d.value} asOf={updated} />
+      <section class="block prose"><Content /></section>
+    </div>
+    <aside class="vbody-side">
+      <div class="vpc rv">
+        <div class="pros"><p class="kick m">{t(lang,'verified.pros')}</p><ul>{d.pros.map(p => <li>{p}</li>)}</ul></div>
+        <div class="cons"><p class="kick">{t(lang,'verified.cons')}</p><ul>{d.cons.map(c => <li>{c}</li>)}</ul></div>
       </div>
     </aside>
-
-    <!-- main column -->
-    <div>
-      <p class="verdict" style="margin-top:0">{d.verdict}</p>
-      <ScoreBreakdown lang={lang} crowd={d.crowd} assessment={d.assessment} value={d.value} asOf={updated} />
-
-      <section class="block">
-        <div class="pc">
-          <div class="pros"><h4>{t(lang,'verified.pros')}</h4><ul>{d.pros.map(p => <li>{p}</li>)}</ul></div>
-          <div class="cons"><h4>{t(lang,'verified.cons')}</h4><ul>{d.cons.map(c => <li>{c}</li>)}</ul></div>
-        </div>
-      </section>
-
-      {d.proRead && (
-        <section class="block pro">
-          <p class="kick">{lang==='de'?'◆ Für Profis':'◆ For professionals'}</p>
-          <div class="pro-grid">
-            <div><h4>{lang==='de'?'Für deine Kund:innen':'For your clients'}</h4><p>{d.proRead.clients}</p></div>
-            <div><h4>{lang==='de'?'Für dein Studio':'For your studio'}</h4><p>{d.proRead.studio}</p></div>
-            <div><h4>{lang==='de'?'Für Marken & Investoren':'For brands & investors'}</h4><p>{d.proRead.brand}</p></div>
-          </div>
-          <p class="trade"><b>{lang==='de'?'Trade-Read':'Trade read'}</b> {d.proRead.trade}</p>
-        </section>
-      )}
-
-      <section class="block">
-        <p class="kick">{lang==='de'?'Für wen':'Who it\'s for'}</p>
-        <div class="who">
-          <div><h4>{t(lang,'verified.buyIf')}</h4><p>{d.whoFor.buy}</p></div>
-          <div><h4>{t(lang,'verified.skipIf')}</h4><p>{d.whoFor.skip}</p></div>
-        </div>
-      </section>
-
-      <section class="block prose"><Content /></section>
-
-      <InlineSignup lang={lang} source="review-end" />
-
-      <section class="block" style="border-bottom:none">
-        <p class="kick">{lang==='de'?'Transparenz':'Transparency'}</p>
-        <div class="disc">{t(lang,'disclosure')}</div>
-      </section>
-    </div>
   </div>
+
+  <section class="vcards">
+    <a class="vcard lift rv d1" href={`/${lang}/verified`}><p class="kick">{lang==='de'?'Im Kaufberater':'In the guides'}</p><span class="vcard-h">{lang==='de'?'Alle Kaufberater 2026':"All buyer's guides 2026"}</span><span class="vcard-p">{lang==='de'?'Jedes Produkt der Kategorie, auf derselben Scorecard gerankt.':'Every product in the category, ranked on the same scorecard.'}</span><span class="vcard-go">{lang==='de'?'Zum Ranking':'See the rankings'} →</span></a>
+    <a class="vcard lift rv d2" href={`/${lang}/verified/methodology`}><p class="kick">{lang==='de'?'So bewerten wir':'How we score'}</p><span class="vcard-h">Crowd 45 · Assessment 40 · Value 15</span><span class="vcard-p">{lang==='de'?'Marken können keinen Score kaufen. Affiliate-Links sind gekennzeichnet und bewegen keine Zahl.':'Brands cannot pay for a score. Affiliate links are labelled and never move a number.'}</span><span class="vcard-go">{lang==='de'?'Zur Methodik':'Read the methodology'} →</span></a>
+    <a class="vcard vcard-moss lift rv d3" href="https://sqwodpod.com" target="_blank" rel="noopener"><p class="kick m">{lang==='de'?'Für Coaches in Berlin':'For coaches in Berlin'}</p><span class="vcard-h">{lang==='de'?'Trainiere Kund:innen in einem privaten Sqwod Pod.':'Train clients in a private Sqwod Pod.'}</span><span class="vcard-p">{lang==='de'?'Voll ausgestattete private Trainingsräume in Prenzlauer Berg und Weißensee.':'Fully equipped private training rooms in Prenzlauer Berg and Weißensee.'}</span><span class="vcard-go">{lang==='de'?'Pod buchen':'Book a Pod'} →</span></a>
+  </section>
+
+  <InlineSignup lang={lang} source="review-end" />
+
+  <section class="block" style="border-bottom:none">
+    <p class="kick">{lang==='de'?'Transparenz':'Transparency'}</p>
+    <div class="disc">{t(lang,'disclosure')}</div>
+  </section>
 </Base>
 
 <style>
+  /* review hero (Oct 2026) */
+  .vh{padding:14px 0 36px;border-bottom:1px solid var(--line)}
+  .vh-crumb{font-family:var(--mono);font-size:12px;color:var(--g3);margin:0 0 18px}
+  .vh-crumb a{color:var(--g3);text-decoration:none}
+  .vh-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:44px;align-items:start;margin-top:12px}
+  .vh-media .gallery{margin-top:0;padding:14px;border-radius:20px}
+  .vh-media .g-main{border-radius:14px;aspect-ratio:1/1;padding:30px}
+  .vh-media .g-main img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .vh-media .g-main:hover img{transform:scale(1.04)}
+  .vh-h1{font-size:clamp(44px,6vw,84px);line-height:.92;margin:0}
+  .vh-verdict{margin:16px 0 0;font-size:18px;line-height:1.55;color:var(--g1);max-width:62ch}
+  .vs{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:center;margin-top:22px;padding:22px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+  .vs-num{text-align:center}
+  .vs-num .dnum{display:block;font-size:clamp(96px,10vw,148px);color:var(--chalk);line-height:.82}
+  .vs-num small{display:block;margin-top:8px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--g3)}
+  .vs-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+  .vs-tag{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-family:var(--mono);font-size:11px;color:var(--g2)}
+  .vs-conf{color:var(--accent);border-color:var(--accent-line)}
+  .vs-bar{display:flex;gap:2px;height:14px;border-radius:999px;overflow:hidden;background:var(--panel2)}
+  .vs-bar i{display:block;height:100%;transform-origin:left;transform:scaleX(0);animation:vsgrow .9s cubic-bezier(.2,.7,.2,1) forwards}
+  @keyframes vsgrow{to{transform:scaleX(1)}}
+  .vs-legend{display:grid;gap:6px;margin-top:12px}
+  .vs-legend div{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--g2)}
+  .vs-legend b{color:var(--chalk);font-family:var(--mono)}
+  .vs-calc{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--g3)}
+  .vs-sw{width:10px;height:10px;border-radius:3px;flex:none}
+  .vbuy{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:18px}
+  .vbuy-p{font-size:44px;color:var(--chalk)}
+  .vbuy-n{margin:4px 0 0;font-family:var(--mono);font-size:12px;color:var(--g3)}
+  .vbuy-btn{margin-left:auto;display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:14px;background:var(--chalk);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;transition:background .15s,color .15s}
+  .vbuy-btn:hover{background:var(--accent);color:var(--accent-ink)}
+  .vbuy-note{text-align:right}
+  /* the read */
+  .vread{padding:44px 0 8px}
+  .vread-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+  .vread-h{margin:0;font-size:clamp(30px,4vw,48px)}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:12px;padding:3px;background:var(--panel)}
+  .seg button{border:0;background:transparent;color:var(--g2);font:600 13px var(--sans);padding:8px 14px;border-radius:9px;cursor:pointer;min-height:38px}
+  .seg button[aria-pressed="true"]{background:var(--chalk);color:var(--ink)}
+  .vread-pro{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden}
+  .vread-pro>div{padding:22px;border-right:1px solid var(--line)}
+  .vread-pro>div:last-child{border-right:0}
+  .vread-pro p:not(.kick),.vread-buy p:not(.kick){margin:0;font-size:15px;line-height:1.55;color:var(--g1)}
+  .vread-pro .kick,.vread-buy .kick{margin-bottom:10px}
+  .vread-trade{font-family:var(--mono);font-size:13px!important}
+  .vread-buy{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden}
+  .vread-buy>div{padding:24px}
+  .vread-buy>div:first-child{border-right:1px solid var(--line)}
+  .vread [hidden]{display:none}
+  /* body + pros/cons */
+  .vbody{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:40px;align-items:start}
+  .vbody-side{position:sticky;top:24px;padding-top:26px}
+  .vpc{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:20px}
+  .vpc ul{list-style:none;margin:0 0 18px;padding:0}
+  .vpc li{position:relative;padding:9px 0 9px 30px;border-top:1px solid var(--line);font-size:14px;line-height:1.5;color:var(--g1)}
+  .vpc li::before{position:absolute;left:0;top:9px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font:700 12px var(--sans)}
+  .vpc .pros li::before{content:'+';background:var(--accent-soft);color:var(--accent)}
+  .vpc .cons li::before{content:'–';background:var(--panel2);color:var(--g2)}
+  .vpc .cons ul{margin-bottom:0}
+  .vcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;padding:20px 0 8px}
+  .vcard{display:flex;flex-direction:column;gap:8px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:22px;text-decoration:none}
+  .vcard-moss{background:var(--accent-soft);border-color:transparent}
+  .vcard-h{font-size:18px;font-weight:600;line-height:1.3;letter-spacing:-.01em}
+  .vcard-p{font-size:14px;line-height:1.5;color:var(--g2)}
+  .vcard-go{margin-top:auto;padding-top:6px;font-size:14px;font-weight:600;color:var(--accent)}
+  @media(max-width:960px){
+    .vh-grid,.vbody{grid-template-columns:1fr;gap:24px}
+    .vbody-side{position:static;padding-top:0}
+    .vread-pro{grid-template-columns:1fr 1fr}
+    .vread-pro>div:nth-child(2){border-right:0}
+    .vread-pro>div{border-bottom:1px solid var(--line)}
+    .vcards{grid-template-columns:1fr}
+  }
+  @media(max-width:560px){
+    .vs{grid-template-columns:1fr;text-align:center}
+    .vread-pro,.vread-buy{grid-template-columns:1fr}
+    .vread-pro>div,.vread-buy>div:first-child{border-right:0}
+    .vbuy-btn{margin-left:0;width:100%;justify-content:center}
+    .vbuy-note{text-align:left}
+  }
+  @media (prefers-reduced-motion: reduce){ .vs-bar i{transform:none;animation:none} }
   @media(min-width:900px){ .who{display:grid;grid-template-columns:1fr 1fr;gap:16px} }
   .pro-grid{display:grid;gap:12px;margin-top:10px}
   @media(min-width:900px){ .pro-grid{grid-template-columns:1fr 1fr 1fr} }
@@ -225,6 +339,18 @@ const faqLd = {
 </style>
 
 <script is:inline>
+  // professional / buyer switch
+  (function () {
+    var btns = document.querySelectorAll('.vread [data-read]'), h = document.querySelector('.vread-h');
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var k = b.getAttribute('data-read');
+        btns.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+        document.querySelectorAll('.vread [data-pane]').forEach(function (p) { p.hidden = p.getAttribute('data-pane') !== k; });
+        if (h) h.textContent = h.getAttribute('data-' + k);
+      });
+    });
+  })();
   document.querySelectorAll('.g-thumb').forEach(function(b){
     b.addEventListener('click', function(){ var m=document.getElementById('g-main'); if(m) m.src=b.getAttribute('data-src'); });
   });

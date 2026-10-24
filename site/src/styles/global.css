@@ -518,3 +518,86 @@ body{background:var(--page-wash) fixed}
 @media(max-width:380px){ .utils{gap:6px} .cta{padding:8px 11px;font-size:12px} }
 /* under 340px (first-gen iPhone SE) there is no room: hide the toggle; the device setting still applies */
 @media(max-width:340px){ .theme-toggle{display:none} }
+
+
+/* ============ REDESIGN · OCT 2026 (approved mockup "sqwod.life redesign mockups") ============
+   1 Display face: Anton, self-hosted (no Google Fonts: GDPR). Hero, section headings and
+     headline numbers only. Body stays Geist, data stays Geist Mono.
+   2 Moss stays the one accent, used sparingly.
+   3 Motion: scroll reveals (.rv), word rise (.hw), count-up ([data-count]), bars that grow,
+     the money ticker. All of it switches off under prefers-reduced-motion.
+   4 Charts: a 4-colour series set checked for colour blindness in both themes (--s1..--s4). */
+@font-face{font-family:"Anton";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/fonts/anton-latin-400-normal.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Anton";font-style:normal;font-weight:400;font-display:swap;
+  src:url(/fonts/anton-latin-ext-400-normal.woff2) format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{
+  --display:"Anton","Geist Variable",Impact,"Arial Narrow",sans-serif;
+  /* chart series (dark). Validated: lightness band, chroma floor, CVD + normal-vision separation, contrast */
+  --s1:#3FA463; --s2:#4C8BDB; --s3:#DB7438; --s4:#A176D8;
+}
+@media (prefers-color-scheme: light){ :root:not([data-theme="dark"]){ --s1:#3E8A55; --s2:#2F6DB5; --s3:#C9672A; --s4:#8A5BB8; } }
+:root[data-theme="light"]{ --s1:#3E8A55; --s2:#2F6DB5; --s3:#C9672A; --s4:#8A5BB8; }
+
+/* display type */
+h1,h2:not(.plain),.dsp{font-family:var(--display);font-weight:400;text-transform:uppercase;letter-spacing:.005em}
+h1{line-height:.95;overflow-wrap:break-word;hyphens:auto}
+h2:not(.plain){line-height:1}
+.prose h2{font-size:30px;margin:44px 0 14px;color:var(--chalk)}
+@media(min-width:900px){ h1{font-size:64px} h2:not(.plain){font-size:40px} .prose h2{font-size:36px} }
+.dnum{font-family:var(--display);font-weight:400;line-height:.9;letter-spacing:.005em;font-variant-numeric:tabular-nums}
+.logo span{display:none}   /* wordmark only, no ".life" (Oct 2026) */
+
+/* full-bleed band inside .wrap */
+.bleed{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+
+/* money ticker */
+.tick{overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--line);background:var(--panel2)}
+.tick-in{display:inline-block;padding:9px 0;animation:tick 48s linear infinite}
+.tick:hover .tick-in{animation-play-state:paused}
+.tick-in a,.tick-in span{display:inline-block;margin:0 26px;font-size:12px;letter-spacing:.02em;color:var(--g2);text-decoration:none}
+.tick-in b{color:var(--accent);font-family:var(--mono);font-weight:600;margin-right:6px}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* live dot */
+.pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent-line);animation:pulsering 2s infinite;flex:none}
+@keyframes pulsering{70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+
+/* scroll reveal: only hides when JS is running (html.js), so no-JS readers always see content */
+.js .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.08s}.js .rv.d2{transition-delay:.16s}.js .rv.d3{transition-delay:.24s}
+/* word rise for display headlines */
+.hw{display:inline-block;opacity:0;transform:translateY(.25em);animation:hwrise .7s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes hwrise{to{opacity:1;transform:none}}
+/* grow-in bars (hero + cards) */
+.growbars{display:flex;align-items:flex-end;gap:5px}
+.growbars i{flex:1;border-radius:4px 4px 0 0;background:var(--chalk);opacity:.16;transform-origin:bottom;transform:scaleY(0);animation:barup .9s cubic-bezier(.2,.7,.2,1) forwards}
+.growbars i.hi{background:var(--accent);opacity:1}
+@keyframes barup{to{transform:scaleY(1)}}
+/* tilt on hover for feature cards */
+.lift{transition:translate .3s cubic-bezier(.2,.7,.2,1),rotate .3s,border-color .2s,box-shadow .2s}
+.lift:hover{translate:0 -3px;border-color:var(--accent-line)!important;box-shadow:var(--shadow-lg)}
+/* full-bleed bands use 100vw, which includes the scrollbar: clip the overflow (clip, not hidden, keeps sticky working) */
+html,body{overflow-x:clip}
+
+/* shared section head */
+.sx-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.sx-head h2{margin:0}
+.sx-head p{margin:8px 0 0;color:var(--g2);font-size:16px;max-width:60ch}
+.sx-all{font-size:14px;font-weight:600;text-decoration:none;color:var(--chalk);padding:10px 0}
+.sx-all:hover{color:var(--accent)}
+.kick.m{color:var(--accent)}
+
+@media (prefers-reduced-motion: reduce){
+  .js .rv,.hw,.growbars i{opacity:1!important;transform:none!important}
+  .growbars i:not(.hi){opacity:.16!important}
+  .tick-in{animation:none!important}
+}
+/* score breakdown numbers in the display face (Oct 2026) */
+.cnum{font-family:var(--display);font-weight:400;font-size:34px;letter-spacing:.005em}
+/* German caps carry umlauts (Ä Ö Ü) whose dots sit above the cap height: tight display
+   leading lets the line above swallow them ("GERÄTE" read as "GERATE"). Give DE room. */
+:lang(de) h1,:lang(de) h2:not(.plain),:lang(de) .dsp,:lang(de) .hx-h1,:lang(de) .rh-h1,:lang(de) .vh-h1,:lang(de) .inv-h{line-height:1.08!important}
