@@ -1,0 +1,2726 @@
+{
+ "studyId": "35598",
+ "study": "fitness and activity tracker",
+ "file": "research/statista/Fitness & Activity Tracking/study_id35598_fitness-and-activity-tracker (1).pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Wearables unit shipments worldwide from 2014 to 2028 (in millions)",
+   "short": "Total wearable device unit shipments worldwide 2014-2028",
+   "unit": "millions",
+   "description": "In 2024, global shipments of hearables, watches, wrist-bands, and other wearables were forecast to reach around 560 million units. This is a 10.5 prcent percent year-over-year decrease compared to the previous year.",
+   "note": "Worldwide; 2014 to 2028; *2023 figure was calculated by Statista based on the 2023-2024 growth rate (10.5%) provided by the source Read more",
+   "source": "IDC; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      28.8,
+      81.9,
+      102.4,
+      115.4,
+      172.2,
+      346.4,
+      444.7,
+      533.6,
+      492.1,
+      506.6,
+      559.7,
+      590.7,
+      614.1,
+      632.3,
+      645.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Global wearable device shipments from 2021 to 2028, by product category (in millions)",
+   "short": "Wearable device shipments worldwide 2021-2028, by product category",
+   "unit": "millions",
+   "description": "The highest shipment volume in the wearable devices segment was seen among earwears, with over 347 million units expected to be shipped in 2024. Smartwatches followed, with shipments forecast to reach over 208 million units by 2028.",
+   "note": "Worldwide; 2021 to 2024; *Forecast Read more",
+   "source": "IDC",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*"
+   ],
+   "series": [
+    {
+     "name": "Earwear",
+     "values": [
+      339.62,
+      322.74,
+      341.55,
+      347.28,
+      367.85,
+      382.4,
+      393.79,
+      402.25
+     ]
+    },
+    {
+     "name": "Smartwatch",
+     "values": [
+      135.83,
+      151.87,
+      165.23,
+      176.7,
+      187.48,
+      196.66,
+      203.69,
+      208.63
+     ]
+    },
+    {
+     "name": "Wristband",
+     "values": [
+      55.2,
+      39.02,
+      33.78,
+      31.8,
+      30.67,
+      29.79,
+      29.1,
+      28.67
+     ]
+    },
+    {
+     "name": "Clothing",
+     "values": [
+      438.05,
+      343.8,
+      350.97,
+      358.46,
+      365.91,
+      374.28
+     ]
+    },
+    {
+     "name": "Glasses",
+     "values": [
+      1.13,
+      1.65,
+      1.75,
+      1.89,
+      2.04,
+      2.17
+     ]
+    },
+    {
+     "name": "Rings",
+     "values": [
+      1.6,
+      2.31,
+      2.72,
+      3,
+      3.23
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      2.78,
+      1.96,
+      0.9,
+      0.27,
+      0.29,
+      0.31,
+      0.32,
+      0.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Revenue of the digital fitness & well-being device market worldwide from 2019 to 2028, by segment (in billion U.S. dollars)",
+   "short": "Digital fitness & well-being device market revenue worldwide 2019-2028, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. This reflects the overall trend throughout the entire forecast period from 2019 to 2028. It is estimated that the indicator is continuously rising in all segments. In this regard, the Smartwatches segment achieves the highest value of 62.46 billion U.S. dollars in 2028.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smartwatches",
+     "values": [
+      23.74,
+      32.04,
+      38.03,
+      40.19,
+      44.15,
+      47.94,
+      51.58,
+      55.16,
+      58.74,
+      62.46
+     ]
+    },
+    {
+     "name": "Smart bands",
+     "values": [
+      8.61,
+      11.78,
+      14.61,
+      16.47,
+      19.52,
+      22.78,
+      26.08,
+      29.38,
+      32.6,
+      35.84
+     ]
+    },
+    {
+     "name": "Smart Scales",
+     "values": [
+      2.3,
+      2.51,
+      3.21,
+      3.21,
+      3.55,
+      3.89,
+      4.18,
+      4.48,
+      4.72,
+      4.97
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Revenue of the fitness/activity tracking wristwear market worldwide from 2019 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the fitness/activity tracking wristwear industry worldwide 2019-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The global revenue in the 'Smart bands' segment of the digital health market was forecast to continuously increase between 2023 and 2028 by in total 16.3 billion U.S. dollars (+83.5 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 35.84 billion U.S. dollars and therefore a new peak in 2028. Notably, the revenue of the 'Smart bands' segment of the digital health market was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.61,
+      11.78,
+      14.61,
+      16.47,
+      19.52,
+      22.78,
+      26.08,
+      29.38,
+      32.6,
+      35.84
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Revenue growth of the fitness/activity tracking wristwear market worldwide from 2019 to 2028",
+   "short": "Revenue growth of fitness/activity tracking wristwear worldwide 2019-2028",
+   "unit": "",
+   "description": "The global revenue change in the 'Smart bands' segment of the digital health market was forecast to continuously decrease between 2023 and 2028 by in total 8.6 percentage points. After the fifth consecutive decreasing year, the indicator is estimated to reach 9.93 percent and therefore a new minimum in 2028.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2944,
+      0.3676,
+      0.2411,
+      0.1267,
+      0.1857,
+      0.1667,
+      0.145,
+      0.1264,
+      0.1098,
+      0.0993
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Wearables unit shipments worldwide from 2014 to 2022 (in millions), by vendor",
+   "short": "Wearables unit shipments worldwide 2014-2022, by vendor",
+   "unit": "",
+   "description": "In 2022, Apple was the leading wearable device vendors, with around 146.3 million global units shipped. Apple was followed by Samsung and Xiaomi, which shipped around 43.1 million and 34.7 shipments worldwide, respectively.",
+   "note": "Worldwide; 2014 to 2022",
+   "source": "IDC",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      11.6,
+      10.7,
+      33.1,
+      48,
+      111.5,
+      151.4,
+      161.8,
+      146.3
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      1.1,
+      12,
+      15.7,
+      16.1,
+      23.3,
+      41.7,
+      50.7,
+      54.4,
+      34.7
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      4.6,
+      11.2,
+      28.9,
+      43.5,
+      42.7,
+      33.3
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      2.7,
+      3.2,
+      4.4,
+      5.8,
+      12.2,
+      31.4,
+      40,
+      48.1,
+      43.1
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      10.9,
+      22,
+      22.5,
+      15.4,
+      13.8,
+      15.9,
+      12.9
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      2,
+      5.8,
+      6.1,
+      6.3
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      4.9
+     ]
+    },
+    {
+     "name": "Imagine Marketing",
+     "values": [
+      26.8,
+      29.3
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      12,
+      27.4,
+      43,
+      48.8,
+      69.4,
+      117.1,
+      146.1,
+      199.9,
+      205.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Wearables unit shipments worldwide by vendor from 1st quarter 2014 to 3rd quarter 2023 (in millions)",
+   "short": "Quarterly wearables shipments worldwide 2014-2023, by vendor",
+   "unit": "millions",
+   "description": "Apple is the leading vendor in terms of worldwide wearables unit shipments, with a total unit shipment of almost 30 million units in the third quarter of 2023.",
+   "note": "Worldwide; Q1 2014 to Q3 2023",
+   "source": "IDC",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '14",
+    "Q2 '14",
+    "Q3 '14",
+    "Q4 '14",
+    "Q1 '15",
+    "Q2 '15",
+    "Q3 '15",
+    "Q4 '15",
+    "Q1 '16",
+    "Q2 '16",
+    "Q3 '16",
+    "Q4 '16",
+    "Q1 '17",
+    "Q2 '17",
+    "Q3 '17",
+    "Q4 '17",
+    "Q1 '18",
+    "Q2 '18",
+    "Q3 '18",
+    "Q4 '18",
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2 '21",
+    "Q3 '21",
+    "Q4 '21",
+    "Q1 '22",
+    "Q3' 22",
+    "Q4 '22",
+    "Q3 '23"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      3.6,
+      3.9,
+      4.1,
+      2.2,
+      2.3,
+      1.1,
+      4.6,
+      3.6,
+      3.4,
+      2.7,
+      13.3,
+      4,
+      4.7,
+      4.2,
+      19.7,
+      13.3,
+      5.1,
+      29.5,
+      43.7,
+      21.2,
+      29.5,
+      41.4,
+      55.6,
+      30.1,
+      32.2,
+      39.8,
+      34.9,
+      32.1,
+      40.8,
+      46.6,
+      29.9
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.4,
+      0.7,
+      2.6,
+      3.1,
+      3.7,
+      2.6,
+      3.8,
+      3.1,
+      3.8,
+      5.2,
+      3.6,
+      3.5,
+      3.6,
+      5.2,
+      3.7,
+      4.2,
+      6.9,
+      7.5,
+      6.5,
+      5.9,
+      12.4,
+      12.8,
+      10.1,
+      10.2,
+      17,
+      13.5,
+      10.2,
+      14,
+      12.7,
+      8.6,
+      9.8,
+      8.5,
+      7.7,
+      11.6
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      1.6,
+      1.6,
+      1.3,
+      1.8,
+      1.9,
+      5.7,
+      5,
+      4.8,
+      7.1,
+      9.5,
+      9.1,
+      8.4,
+      13.7,
+      10.2,
+      8.6,
+      11.7,
+      10.9,
+      6.7,
+      7.7,
+      8.9,
+      8.3,
+      8.5
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.3,
+      0.8,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      1.4,
+      0.7,
+      1,
+      1.9,
+      1.4,
+      2,
+      1.8,
+      4.6,
+      5,
+      3.2,
+      8.3,
+      10.8,
+      8.6,
+      7.1,
+      11.2,
+      13,
+      11.8,
+      9.7,
+      12.7,
+      7.9,
+      10.9,
+      11.8,
+      11,
+      10.7
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      1.7,
+      1.7,
+      2.3,
+      5.3,
+      3.8,
+      4.4,
+      4.8,
+      8.4,
+      4.9,
+      5.7,
+      5.3,
+      6.5,
+      3,
+      3.4,
+      3.6,
+      5.4,
+      2.2,
+      2.7,
+      3.5,
+      5.5,
+      2.9,
+      3.5,
+      3.5,
+      6,
+      2.2,
+      2.5,
+      3.3
+     ]
+    },
+    {
+     "name": "BoAt",
+     "values": [
+      0.9,
+      3.3,
+      5.4,
+      3
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.3,
+      0.5,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      1.2,
+      2.2,
+      1.1,
+      1.5,
+      1.3,
+      2.1,
+      1.1,
+      1.4,
+      1.3,
+      2.5,
+      1.3,
+      1.5
+     ]
+    },
+    {
+     "name": "Jawbone",
+     "values": [
+      0.2,
+      0.5
+     ]
+    },
+    {
+     "name": "BBK",
+     "values": [
+      0.7,
+      0.7
+     ]
+    },
+    {
+     "name": "Lifesense",
+     "values": [
+      1
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      0.3,
+      1
+     ]
+    },
+    {
+     "name": "Imagine marketing",
+     "values": [
+      0.8,
+      4.6,
+      10,
+      5.4,
+      3.2,
+      11.9,
+      6,
+      14.3
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      1.3,
+      2.6,
+      3.9,
+      4.6,
+      3.5,
+      5.3,
+      7.5,
+      10.3,
+      7.3,
+      9.9,
+      10.4,
+      13.6,
+      11.9,
+      13.5,
+      13.5,
+      15.1,
+      12.6,
+      13,
+      13.7,
+      20.3,
+      23.3,
+      11.7,
+      23.8,
+      42.9,
+      22.3,
+      30.3,
+      35.3,
+      55.8,
+      40.9,
+      41.9,
+      52.2,
+      36.6,
+      41.7,
+      58.9,
+      59.1,
+      73.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Market share of wearables unit shipments worldwide from 1st quarter 2014 to 3rd quarter 2023, by vendor",
+   "short": "Wearables shipments worldwide market share 2014-2023, by vendor",
+   "unit": "",
+   "description": "Apple is establishing a solid hold on wearable device unit shipments with 20.2 percent in the third quarter of 2023, dominating the market.",
+   "note": "Worldwide; 2014 to 2023",
+   "source": "IDC",
+   "kind": "categorical",
+   "categories": [
+    "1Q '14",
+    "2Q '14",
+    "3Q '14",
+    "4Q '14",
+    "1Q '15",
+    "2Q '15",
+    "3Q '15",
+    "4Q '15",
+    "1Q '16",
+    "2Q '16",
+    "3Q '16",
+    "4Q '16",
+    "1Q '17",
+    "2Q '17",
+    "3Q '17",
+    "4Q '17",
+    "1Q '18",
+    "2Q '18",
+    "3Q '18",
+    "4Q '18",
+    "1Q '19",
+    "2Q '19",
+    "3Q '19",
+    "4Q '19",
+    "1Q '20",
+    "2Q '20",
+    "3Q '20",
+    "4Q '20",
+    "1Q '21",
+    "2Q '21",
+    "3Q '21",
+    "4Q '21",
+    "1Q'22",
+    "3Q'22",
+    "4Q'22",
+    "1Q'23",
+    "3Q '23"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      0.203,
+      0.175,
+      0.141,
+      0.075,
+      0.07,
+      0.049,
+      0.136,
+      0.146,
+      0.13,
+      0.103,
+      0.296,
+      0.087,
+      0.17,
+      0.131,
+      0.302,
+      0.237,
+      0.148,
+      0.35,
+      0.365,
+      0.293,
+      0.342,
+      0.331,
+      0.362,
+      0.288,
+      0.341,
+      0.288,
+      0.349,
+      0.305,
+      0.29,
+      0.336,
+      0.215,
+      0.202
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.057,
+      0.062,
+      0.224,
+      0.172,
+      0.164,
+      0.091,
+      0.19,
+      0.14,
+      0.165,
+      0.152,
+      0.147,
+      0.134,
+      0.137,
+      0.116,
+      0.161,
+      0.151,
+      0.215,
+      0.115,
+      0.116,
+      0.173,
+      0.146,
+      0.108,
+      0.14,
+      0.118,
+      0.136,
+      0.088,
+      0.097,
+      0.118,
+      0.092,
+      0.086,
+      0.093,
+      0.061,
+      0.055,
+      0.078,
+      0.078
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.06,
+      0.036,
+      0.052,
+      0.065,
+      0.059,
+      0.087,
+      0.089,
+      0.141,
+      0.084,
+      0.078,
+      0.111,
+      0.126,
+      0.11,
+      0.067,
+      0.082,
+      0.098,
+      0.079,
+      0.067,
+      0.073,
+      0.063,
+      0.06,
+      0.073,
+      0.057
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.079,
+      0.143,
+      0.067,
+      0.058,
+      0.034,
+      0.024,
+      0.047,
+      0.036,
+      0.045,
+      0.056,
+      0.055,
+      0.043,
+      0.056,
+      0.07,
+      0.09,
+      0.094,
+      0.098,
+      0.088,
+      0.119,
+      0.083,
+      0.09,
+      0.085,
+      0.113,
+      0.082,
+      0.092,
+      0.079,
+      0.103,
+      0.083,
+      0.079,
+      0.072,
+      0.072
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      0.447,
+      0.304,
+      0.328,
+      0.439,
+      0.326,
+      0.249,
+      0.214,
+      0.29,
+      0.245,
+      0.254,
+      0.23,
+      0.192,
+      0.123,
+      0.129,
+      0.137,
+      0.119,
+      0.148,
+      0.095,
+      0.109,
+      0.085,
+      0.052,
+      0.101,
+      0.041,
+      0.05,
+      0.03,
+      0.029,
+      0.026
+     ]
+    },
+    {
+     "name": "BoAt",
+     "values": [
+      0.026,
+      0.035,
+      0.029
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.079,
+      0.089,
+      0.07,
+      0.053,
+      0.061,
+      0.042,
+      0.053,
+      0.076,
+      0.046,
+      0.069,
+      0.057,
+      0.062,
+      0.046,
+      0.054,
+      0.049,
+      0.055,
+      0.05,
+      0.053
+     ]
+    },
+    {
+     "name": "Jawbone",
+     "values": [
+      0.053,
+      0.044
+     ]
+    },
+    {
+     "name": "BBK",
+     "values": [
+      0.031,
+      0.036
+     ]
+    },
+    {
+     "name": "Lifesense",
+     "values": [
+      0.046
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      0.04
+     ]
+    },
+    {
+     "name": "Imagine marketing",
+     "values": [
+      0.041,
+      0.009,
+      0.072,
+      0.054,
+      0.03,
+      0.085,
+      0.044,
+      0.075,
+      0.096
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      0.342,
+      0.464,
+      0.546,
+      0.38,
+      0.287,
+      0.3,
+      0.339,
+      0.355,
+      0.372,
+      0.421,
+      0.453,
+      0.401,
+      0.482,
+      0.513,
+      0.514,
+      0.335,
+      0.503,
+      0.466,
+      0.43,
+      0.343,
+      0.416,
+      0.343,
+      0.281,
+      0.311,
+      0.3008,
+      0.303,
+      0.282,
+      0.364,
+      0.391,
+      0.382,
+      0.377,
+      0.366,
+      0.396,
+      0.418,
+      0.426,
+      0.487,
+      0.494
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Quarterly smartwatch unit shipment share worldwide from 2018 to 2023, by vendor",
+   "short": "Smartwatch unit shipment share worldwide 2018-2023, by vendor",
+   "unit": "",
+   "description": "Apple is the leading company in the smartwatch industry in terms of shipment share, accounting for 31 percent of worldwide shipments as of the fourth quarter of 2023. This was followed by Huawei with nine percent of the market share.",
+   "note": "Worldwide; 2018 to 2023",
+   "source": "Counterpoint Research",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '18",
+    "Q2 '18",
+    "Q3 '18",
+    "Q4 '18",
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2 '21",
+    "Q3 '21",
+    "Q4' 21",
+    "Q1 '22",
+    "Q2 '22",
+    "Q3 '22",
+    "Q4 '22",
+    "Q1 '23",
+    "Q2' 23",
+    "Q3 '23",
+    "Q4 '23"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      0.26,
+      0.22,
+      0.21,
+      0.37,
+      0.26,
+      0.23,
+      0.26,
+      0.34,
+      0.3,
+      0.3,
+      0.28,
+      0.4,
+      0.36,
+      0.31,
+      0.23,
+      0.38,
+      0.32,
+      0.27,
+      0.22,
+      0.37,
+      0.26,
+      0.22,
+      0.22,
+      0.31
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.05,
+      0.05,
+      0.08,
+      0.08,
+      0.09,
+      0.1,
+      0.08,
+      0.09,
+      0.09,
+      0.07,
+      0.1,
+      0.1,
+      0.08,
+      0.07,
+      0.14,
+      0.1,
+      0.1,
+      0.09,
+      0.12,
+      0.09,
+      0.09
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.03,
+      0.05,
+      0.05,
+      0.05,
+      0.08,
+      0.08,
+      0.1,
+      0.1,
+      0.12,
+      0.14,
+      0.15,
+      0.08,
+      0.08,
+      0.09,
+      0.05,
+      0.08,
+      0.07,
+      0.07,
+      0.07,
+      0.1,
+      0.09,
+      0.1
+     ]
+    },
+    {
+     "name": "imoo",
+     "values": [
+      0.1,
+      0.09,
+      0.08,
+      0.06,
+      0.08,
+      0.08,
+      0.08,
+      0.06,
+      0.07,
+      0.07,
+      0.07,
+      0.06,
+      0.05,
+      0.06,
+      0.06,
+      0.04
+     ]
+    },
+    {
+     "name": "Amazfit",
+     "values": [
+      0.05,
+      0.05,
+      0.04
+     ]
+    },
+    {
+     "name": "Noise",
+     "values": [
+      0.01,
+      0.01,
+      0.04,
+      0.03,
+      0.09,
+      0.1
+     ]
+    },
+    {
+     "name": "Fire Boltt",
+     "values": [
+      0.09,
+      0.1,
+      0.08
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      0.56,
+      0.59,
+      0.58,
+      0.44,
+      0.49,
+      0.51,
+      0.48,
+      0.41,
+      0.42,
+      0.37,
+      0.35,
+      0.32,
+      0.42,
+      0.46,
+      0.48,
+      0.37,
+      0.5,
+      0.57,
+      0.56,
+      0.47,
+      0.56,
+      0.58,
+      0.59,
+      0.51
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Unit sales of Apple Watches worldwide from 2015 to 2023 (in million units)",
+   "short": "Apple Watch unit sales worldwide 2015-2023",
+   "unit": "million units",
+   "description": "First introduced in 2015, the unit sales of Apple Watches have grown until 2022 and then decreased in 2023. At the end of the given period, Apple sold over 38 million smartwatches, down from almost 54 million Apple Watch unit sales recorded in 2022.",
+   "note": "Worldwide; 2015 to 2023",
+   "source": "Business of Apps; Canalys; Strategy Analytics",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.3,
+      11.9,
+      12.8,
+      22.5,
+      30.7,
+      43.1,
+      46.1,
+      53.9,
+      38.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Fitbit Inc. revenue from 2010 to 2023 (in million U.S. dollars)",
+   "short": "Fitbit Inc. revenue 2010-2023",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, the year-end revenue of Fitbit, Inc. totaled just above one billion U.S. dollars, down from 1.16 billion U.S. dollars in the previous year.",
+   "note": "Worldwide; 2010 to 2023",
+   "source": "Business of Apps; Fitbit",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.18,
+      14.45,
+      76.37,
+      271.09,
+      745.43,
+      1857.99,
+      2169.46,
+      1615.52,
+      1511.98,
+      1434.79,
+      1130,
+      1210,
+      1160,
+      1040
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of Fitbit devices sold worldwide from 2010 to 2023 (in 1,000s)",
+   "short": "Fitbit unit sales worldwide 2010-2023",
+   "unit": "1,000s",
+   "description": "Fitbit sold about 6.6 million units of its smart fitness devices in the year 2023, down from 9.2 million units in the previous year.",
+   "note": "Worldwide; 2010 to 2023",
+   "source": "Business of Apps; Fitbit",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      58,
+      208,
+      1279,
+      4476,
+      10904,
+      21355,
+      22295,
+      15343,
+      13939,
+      15988,
+      10800,
+      10600,
+      9200,
+      6600
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of users of fitness/activity tracking wristwear worldwide from 2019 to 2028 (in millions)",
+   "short": "Number of users of fitness/activity tracking wristwear worldwide 2019-2028",
+   "unit": "millions",
+   "description": "The global indicator 'Users ' in the 'Smart bands' segment of the digital health market was forecast to continuously increase between 2023 and 2028 by in total 87.2 million users (+33.44 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 347.98 million users and therefore a new peak in 2028. Notably, the indicator 'Users ' of the 'Smart bands' segment of the digital health market was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      135.8,
+      179.8,
+      207.75,
+      232.28,
+      260.75,
+      286.87,
+      308.41,
+      325.57,
+      338.35,
+      347.98
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Penetration rate of the fitness/activity tracking wristwear market worldwide from 2019 to 2028",
+   "short": "Penetration rate of fitness/activity tracking wristwear worldwide 2019-2028",
+   "unit": "",
+   "description": "The global indicator 'Penetration Rate ' in the 'Smart bands' segment of the digital health market was forecast to continuously increase between 2023 and 2028 by in total one percentage points. After the ninth consecutive increasing year, the indicator is estimated to reach 4.34 percent and therefore a new peak in 2028. Notably, the indicator 'Penetration Rate ' of the 'Smart bands' segment of the digital health market was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0184,
+      0.0241,
+      0.0275,
+      0.0305,
+      0.0339,
+      0.037,
+      0.0395,
+      0.0413,
+      0.0426,
+      0.0434
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of fitness tracker users in the United States from 2017 to 2028, by segment (in millions)",
+   "short": "Fitness tracker users in the U.S. 2017-2028, by segment",
+   "unit": "millions",
+   "description": "In 2023, there were around 65 million fitness tracker users in the United States, most of whom were smartwatch owners. In the near future, the number of fitness tracker users is forecast to steadily increase, jumping to over 71 millions by 2028.",
+   "note": "United States; 2017 to 2023",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smart bands",
+     "values": [
+      10.63,
+      13.32,
+      16.12,
+      20.4,
+      22.57,
+      24.38,
+      26.23,
+      27.89,
+      29.23,
+      30.35,
+      31.25,
+      32
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      3.44,
+      4.47,
+      5.36,
+      5.43,
+      6.23,
+      6.15,
+      6.42,
+      6.68,
+      6.82,
+      7,
+      7.09,
+      7.17
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      21.19,
+      27.55,
+      32.49,
+      39.92,
+      41.59,
+      42.14,
+      42.7,
+      43.09,
+      43.23,
+      43.32,
+      43.33,
+      43.41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Most used eHealth tracker / smart watches by brand in the U.S. as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in the U.S. 2024",
+   "unit": "",
+   "description": "With 59 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among U.S. consumers. In second place follows Fitbit with 26 percent of respondents. These results are based on a representative online survey conducted in 2024 among 3,206 consumers in the United States.",
+   "note": "United States; April 2023 to March 2024; 3206 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Google",
+    "Amazfit",
+    "ASUS",
+    "Garmin",
+    "LG",
+    "Fossil",
+    "Huawei",
+    "Honor",
+    "Xiaomi/Mi",
+    "Misfit",
+    "Moov",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.59,
+      0.26,
+      0.21,
+      0.11,
+      0.08,
+      0.08,
+      0.08,
+      0.08,
+      0.06,
+      0.04,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Most used eHealth tracker / smart watches by brand in the UK as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in the UK 2024",
+   "unit": "",
+   "description": "With 46 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among UK consumers. In second place follows Fitbit with 28 percent of respondents. These results are based on a representative online survey conducted in 2024 among 1,696 consumers in the UK.",
+   "note": "United Kingdom; April 2023 to March 2024; 1696 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Garmin",
+    "Google",
+    "Amazfit",
+    "Huawei",
+    "ASUS",
+    "Fossil",
+    "LG",
+    "Honor",
+    "Misfit",
+    "Mobvoi",
+    "Motorola",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.46,
+      0.28,
+      0.15,
+      0.08,
+      0.05,
+      0.04,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Sales volume of wearables in Germany from 2015 to 2023 (in millions)",
+   "short": "Sales volume of wearables in Germany 2015-2023",
+   "unit": "millions",
+   "description": "In 2023, roughly 5.88 million wearable devices were sold in Germany. This was a significant decrease compared to 2022, the sale of wearable devices has rapidly increased since 2015 in which only 2.02 million devices were sold and peaked in 2021.",
+   "note": "Germany; 2015 to 2023; Core wearables, private demand",
+   "source": "GfK; gfu",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.02,
+      3.04,
+      3.58,
+      4.08,
+      5.56,
+      6.78,
+      7.36,
+      7.2,
+      5.88
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Most used eHealth tracker / smart watches by brand in Germany as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Germany 2024",
+   "unit": "",
+   "description": "With 35 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among German consumers. In second place follows Samsung with 22 percent of respondents. These results are based on a representative online survey conducted in 2024 among 2,070 consumers in Germany.",
+   "note": "Germany; April 2023 to March 2024; 2070 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Fitbit",
+    "Garmin",
+    "Amazfit",
+    "Huawei",
+    "Adidas",
+    "Xiaomi/Mi",
+    "ASUS",
+    "Fossil",
+    "Google",
+    "Denver",
+    "Honor",
+    "Misfit",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.22,
+      0.15,
+      0.08,
+      0.07,
+      0.07,
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Most used eHealth tracker / smart watches by brand in France as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in France 2024",
+   "unit": "",
+   "description": "With 33 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among French consumers. In second place follows Garmin with 18 percent of respondents. These results are based on a representative online survey conducted in 2024 among 567 consumers in France.",
+   "note": "France; April 2023 to March 2024; 567 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Garmin",
+    "Samsung",
+    "Fitbit",
+    "Huawei",
+    "Xiaomi/Mi",
+    "Google",
+    "ASUS",
+    "Amazfit",
+    "Honor",
+    "LG",
+    "Sony",
+    "Polar",
+    "TomTom",
+    "Wiko"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.33,
+      0.18,
+      0.18,
+      0.14,
+      0.09,
+      0.09,
+      0.08,
+      0.06,
+      0.04,
+      0.04,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Most used eHealth tracker / smart watches by brand in Spain as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Spain 2024",
+   "unit": "",
+   "description": "With 25 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Spanish consumers. In second place follows Xiaomi/Mi with 22 percent of respondents. These results are based on a representative online survey conducted in 2024 among 831 consumers in Spain.",
+   "note": "Spain; April 2023 to March 2024; 831 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Xiaomi/Mi",
+    "Samsung",
+    "Amazfit",
+    "Huawei",
+    "Fitbit",
+    "Garmin",
+    "Google",
+    "ASUS",
+    "Honor",
+    "LG",
+    "Polar",
+    "Sony",
+    "Other",
+    "Don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.25,
+      0.22,
+      0.16,
+      0.13,
+      0.12,
+      0.09,
+      0.07,
+      0.04,
+      0.02,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.07,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Most used eHealth tracker / smart watches by brand in Italy as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Italy 2024",
+   "unit": "",
+   "description": "With 27 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Italian consumers. In second place follows Samsung with 17 percent of respondents. These results are based on a representative online survey conducted in 2024 among 706 consumers in Italy.",
+   "note": "Italy; April 2023 to March 2024; 706 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Amazfit",
+    "Xiaomi/Mi",
+    "Fitbit",
+    "Huawei",
+    "Garmin",
+    "ASUS",
+    "Fossil",
+    "Google",
+    "Honor",
+    "OPPO",
+    "Blackview",
+    "LG",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.17,
+      0.15,
+      0.14,
+      0.1,
+      0.09,
+      0.08,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Revenue of mobile apps worldwide 2019-2027, by segment (in million U.S. dollars)",
+   "short": "Mobile app revenue worldwide 2019-2027, by segment",
+   "unit": "million U.S. dollars",
+   "description": "Over the last two observations, the indicator 'Revenue By Segment' is forecast to significantly increase in all segments. As part of the positive trend, the indicator reaches the maximum value for all 21 different segments at the end of the comparison period. Particularly noteworthy is the segment Games, which has the highest value of 249.9 billion U.S. dollars.",
+   "note": "Worldwide; 2019 to 2027",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Games",
+     "values": [
+      104807.74,
+      135545.88,
+      162675.28,
+      155051.19,
+      172360.16,
+      196147.13,
+      217183.98,
+      232235.84,
+      249860.78
+     ]
+    },
+    {
+     "name": "Social Networking",
+     "values": [
+      66422.8,
+      88035.03,
+      120205.29,
+      129560.67,
+      142988.26,
+      153412.23,
+      162978.22,
+      176948.4,
+      189526.97
+     ]
+    },
+    {
+     "name": "Entertainment",
+     "values": [
+      18395.52,
+      20918.12,
+      27608.02,
+      31225.94,
+      34448.41,
+      39226.31,
+      44097.48,
+      48798.24,
+      53133.18
+     ]
+    },
+    {
+     "name": "Shopping",
+     "values": [
+      14128.47,
+      15060.96,
+      20169.29,
+      24231,
+      29123.23,
+      33422.1,
+      37976.47,
+      42491.14,
+      46521.42
+     ]
+    },
+    {
+     "name": "Music",
+     "values": [
+      8136.3,
+      8033.89,
+      10336.02,
+      11454.98,
+      12601.86,
+      14342.28,
+      16127.62,
+      17728.49,
+      19239.42
+     ]
+    },
+    {
+     "name": "Photo & Video",
+     "values": [
+      6552.88,
+      8115.35,
+      10742.51,
+      11759.59,
+      12454.01,
+      14061.81,
+      15611.58,
+      17064.55,
+      18409.63
+     ]
+    },
+    {
+     "name": "News & Magazines",
+     "values": [
+      4669.04,
+      5535.07,
+      7669.89,
+      9144.53,
+      10866.49,
+      12675.4,
+      14549.18,
+      16117.04,
+      17621.41
+     ]
+    },
+    {
+     "name": "Books & Reference",
+     "values": [
+      3886.98,
+      4753.15,
+      6509.97,
+      7470.94,
+      8229.52,
+      9412.59,
+      10597.37,
+      11742.97,
+      12797.82
+     ]
+    },
+    {
+     "name": "Education",
+     "values": [
+      4031.51,
+      4791.5,
+      6550.51,
+      6315.09,
+      6886.97,
+      7934.54,
+      8973.7,
+      9858.93,
+      10713.32
+     ]
+    },
+    {
+     "name": "Lifestyle",
+     "values": [
+      5696.08,
+      5241.65,
+      6529.33,
+      6778.35,
+      6931.49,
+      7760.09,
+      8578.77,
+      9336.77,
+      10061.18
+     ]
+    },
+    {
+     "name": "Productivity",
+     "values": [
+      3836.4,
+      4183.51,
+      5306.36,
+      5632.57,
+      5791.61,
+      6505.67,
+      7210.54,
+      7871.73,
+      8495.63
+     ]
+    },
+    {
+     "name": "Health & Fitness",
+     "values": [
+      2792.22,
+      3142.94,
+      4061.59,
+      4283.3,
+      4520.66,
+      5110.69,
+      5691.61,
+      6226.34,
+      6733.02
+     ]
+    },
+    {
+     "name": "Utilities",
+     "values": [
+      2884.2,
+      3035.79,
+      3787.31,
+      4071.92,
+      4324,
+      4852.67,
+      5391.27,
+      5899.16,
+      6368.78
+     ]
+    },
+    {
+     "name": "Business",
+     "values": [
+      1118.72,
+      1557.5,
+      2247.54,
+      2595.69,
+      2902.34,
+      3363.84,
+      3821.15,
+      4236.71,
+      4622.99
+     ]
+    },
+    {
+     "name": "Sports",
+     "values": [
+      1917.53,
+      1923.61,
+      2451.5,
+      2646.95,
+      2808.07,
+      3169.84,
+      3531.18,
+      3864.46,
+      4174.89
+     ]
+    },
+    {
+     "name": "Food & Drink",
+     "values": [
+      1090.58,
+      1245.1,
+      1713.37,
+      2028.48,
+      2383.76,
+      2752.13,
+      3134.28,
+      3483.08,
+      3799.7
+     ]
+    },
+    {
+     "name": "Weather",
+     "values": [
+      911.6,
+      1010.5,
+      1361.08,
+      1583.8,
+      1832.15,
+      2108.1,
+      2394.58,
+      2652.81,
+      2889.42
+     ]
+    },
+    {
+     "name": "Finance",
+     "values": [
+      827.88,
+      910.33,
+      1215.3,
+      1398.75,
+      1594.24,
+      1829.88,
+      2072.89,
+      2292.91,
+      2494.68
+     ]
+    },
+    {
+     "name": "Medical",
+     "values": [
+      758.23,
+      801.59,
+      1103.29,
+      1250.56,
+      1385.68,
+      1594.17,
+      1801.68,
+      1984.69,
+      2157.12
+     ]
+    },
+    {
+     "name": "Navigation",
+     "values": [
+      736.19,
+      832.76,
+      1106.2,
+      1248.54,
+      1403,
+      1597.41,
+      1792.9,
+      1980.39,
+      2154.57
+     ]
+    },
+    {
+     "name": "Travel",
+     "values": [
+      599.25,
+      626.35,
+      879.68,
+      1047.36,
+      1247.77,
+      1448.63,
+      1654.75,
+      1835.86,
+      2002.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Number of mobile app downloads worldwide from 2019 to 2027, by segment (in million downloads)",
+   "short": "Mobile app downloads worldwide 2019-2027, by segment",
+   "unit": "million downloads",
+   "description": "The indicator 'Downloads' is forecast to experience significant growth in all segments in 2027. The trend observed from 2019 to 2027 remains consistent throughout the entire forecast period. There is a continuous increase in the indicator across all segments. Notably, the Games segment achieves the highest value of 176.1 billion downloads at 2027.",
+   "note": "Worldwide; 2019 to 2027",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Games",
+     "values": [
+      74236.74,
+      98164.3,
+      116044.09,
+      118700.64,
+      134938.67,
+      150366.05,
+      160539.72,
+      169010.76,
+      176071.67
+     ]
+    },
+    {
+     "name": "Photo & Video",
+     "values": [
+      13998.28,
+      19603.54,
+      23368.64,
+      26397.75,
+      29074.62,
+      31471.63,
+      33641.07,
+      35448.93,
+      36955.49
+     ]
+    },
+    {
+     "name": "Utilities",
+     "values": [
+      13701.23,
+      16026.25,
+      17108.62,
+      18179.13,
+      19262.94,
+      20304.81,
+      21289.86,
+      22110.74,
+      22794.81
+     ]
+    },
+    {
+     "name": "Entertainment",
+     "values": [
+      8062.3,
+      10016.34,
+      11187.84,
+      12208.75,
+      13151.78,
+      14012.77,
+      14798.36,
+      15453.02,
+      15998.56
+     ]
+    },
+    {
+     "name": "Social Networking",
+     "values": [
+      7278.91,
+      9262.91,
+      10288.52,
+      11190.77,
+      12039.42,
+      12825.27,
+      13551.32,
+      14156.35,
+      14660.55
+     ]
+    },
+    {
+     "name": "Music",
+     "values": [
+      5367.62,
+      6649.85,
+      7403.38,
+      8067.42,
+      8688.26,
+      9259.79,
+      9784.74,
+      10222.19,
+      10586.74
+     ]
+    },
+    {
+     "name": "Productivity",
+     "values": [
+      4323.84,
+      5827.78,
+      6808.87,
+      7616.06,
+      8334.08,
+      8976.84,
+      9556.47,
+      10039.49,
+      10442.01
+     ]
+    },
+    {
+     "name": "Education",
+     "values": [
+      2180.97,
+      3336.86,
+      4267.57,
+      4994.26,
+      5611.23,
+      6147.18,
+      6619.91,
+      7013.86,
+      7342.15
+     ]
+    },
+    {
+     "name": "Lifestyle",
+     "values": [
+      3077.05,
+      3635.92,
+      4341.61,
+      4911.12,
+      5410.83,
+      5854.81,
+      6253.32,
+      6585.42,
+      6862.16
+     ]
+    },
+    {
+     "name": "Business",
+     "values": [
+      1141.5,
+      2137.91,
+      2980.63,
+      3634.05,
+      4183.13,
+      4656.18,
+      5070.38,
+      5415.54,
+      5703.18
+     ]
+    },
+    {
+     "name": "Health & Fitness",
+     "values": [
+      1632.6,
+      2492.61,
+      3200.38,
+      3764.11,
+      4238.84,
+      4645.04,
+      4996.45,
+      5289.29,
+      5533.33
+     ]
+    },
+    {
+     "name": "Books & Reference",
+     "values": [
+      994.68,
+      1648.14,
+      2179.55,
+      2596.12,
+      2949.43,
+      3255.62,
+      3524.85,
+      3749.2,
+      3936.17
+     ]
+    },
+    {
+     "name": "Finance",
+     "values": [
+      1208.16,
+      1832.53,
+      2289.31,
+      2656.22,
+      2974.13,
+      3253.49,
+      3501.66,
+      3708.46,
+      3880.79
+     ]
+    },
+    {
+     "name": "Travel",
+     "values": [
+      951.16,
+      1320.22,
+      1883.31,
+      2308.2,
+      2663.36,
+      2970.55,
+      3241.96,
+      3468.13,
+      3656.61
+     ]
+    },
+    {
+     "name": "Sports",
+     "values": [
+      859.16,
+      1329.68,
+      1730.87,
+      2033.91,
+      2292.38,
+      2520.48,
+      2726.06,
+      2897.38,
+      3040.15
+     ]
+    },
+    {
+     "name": "Food & Drink",
+     "values": [
+      746.81,
+      1204.47,
+      1639.37,
+      1951.49,
+      2213.94,
+      2446.41,
+      2658.61,
+      2835.44,
+      2982.8
+     ]
+    },
+    {
+     "name": "News & Magazines",
+     "values": [
+      491.78,
+      779.16,
+      1019.66,
+      1206.21,
+      1364.59,
+      1502.47,
+      1624.49,
+      1726.17,
+      1810.91
+     ]
+    },
+    {
+     "name": "Shopping",
+     "values": [
+      530.5,
+      754.95,
+      956.96,
+      1124.62,
+      1268.79,
+      1393.21,
+      1501.1,
+      1591.02,
+      1665.94
+     ]
+    },
+    {
+     "name": "Weather",
+     "values": [
+      367.5,
+      509.82,
+      634.31,
+      734.12,
+      819.61,
+      893.9,
+      959.16,
+      1013.54,
+      1058.86
+     ]
+    },
+    {
+     "name": "Navigation",
+     "values": [
+      369.42,
+      490.04,
+      595.6,
+      681.54,
+      755.54,
+      819.86,
+      876.23,
+      923.22,
+      962.37
+     ]
+    },
+    {
+     "name": "Medical",
+     "values": [
+      148.75,
+      213.06,
+      264.48,
+      305.44,
+      340.78,
+      371.79,
+      399.34,
+      422.3,
+      441.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading fitness and sport apps worldwide in January 2024, by revenue (in million U.S. dollars)",
+   "short": "Most popular fitness and sport apps worldwide 2024, by revenue",
+   "unit": "million U.S. dollars",
+   "description": "In January 2024, MyFitnessPal was the leading fitness and sport mobile app, generating in-app revenues of more of 12 million U.S. dollars. Strava ranked second, with roughly 5.68 million U.S. dollars in combined revenues via Google Play and Apple App Store. Peloton accumulated around five million U.S. dollars in revenues, while Fitbit, the mobile app eponymous of popular wearable fitness and health tracking devices, generated 4.18 million U.S. dollars from its brand company, as well as [...]",
+   "note": "Worldwide; January 2024; IAP revenue reduced by platform fees and inclusive taxes, Google Play and Apple App Store",
+   "source": "AppMagic Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "MyFitnessPal: Calorie Counter",
+    "Strava: Run, Bike, Hike",
+    "Peloton: Fitness & Workouts",
+    "Lose It! – Calorie Counter",
+    "Fitbit",
+    "Fitbit: Health & Fitness",
+    "JustFit: Lazy Workout & Fit",
+    "YAZIO Calorie Counter & Diet",
+    "WeightWatchers: Weight Health",
+    "BetterMe: Health Coaching"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      12.25,
+      5.68,
+      5.18,
+      4.39,
+      4.18,
+      4.12,
+      3.75,
+      3.74,
+      3.41,
+      3.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Leading fitness and sport apps worldwide in January 2024, by downloads (in millions)",
+   "short": "Most popular fitness and sport apps worldwide 2024, by downloads",
+   "unit": "millions",
+   "description": "In January 2024, fitpro was the most downloaded fitness and sport app for global users worldwide, with over 4.6 million downloads. Several apps from the publisher Leap Fitness Group were among the top ranked titles, with Home Workout being the most popular fitness and sport app with 2.44 million downloads worldwide. In the same period, MyFitnessPal was the leading mobile fitness app based on in-app revenues, generating over 12 million U.S. dollars.",
+   "note": "Worldwide; January 2024; Google Play and Apple App Store",
+   "source": "AppMagic Monthly downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "fitpro",
+    "Da Fit",
+    "HryFine",
+    "Home Workout - No Equipment",
+    "Sweatcoin・Walking Step Counter",
+    "BetterMe: Health Coaching",
+    "Mi Fitness (Xiaomi Wear)",
+    "Step Counter - Pedometer",
+    "Weight Loss for Women: Workout",
+    "Strava: Run, Bike, Hike"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.6,
+      3.19,
+      2.51,
+      2.44,
+      2.37,
+      2.31,
+      2.31,
+      1.95,
+      1.85,
+      1.83
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Leading health and fitness apps in the Google Play Store worldwide in June 2023, by revenue (in U.S. dollars)",
+   "short": "Leading Android health apps worldwide 2023, by revenue",
+   "unit": "U.S. dollars",
+   "description": "In June 2023, Fitbit was the top-grossing health and fitness app in the Google Play Store worldwide. The platform generated over six million U.S. dollars in revenues from Android users. MyFitnessPal was the second highest-grossing health and fitness app with roughly 2.55 million U.S. dollars in revenues from global Android users in the examined month. Hiking and trail maps app AllTrails ranked third, having generated around 1.5 million U.S. dollars in revenues in the last examined month.",
+   "note": "Worldwide; June 2023; IAP revenue in the Google Play Store",
+   "source": "AppTweak Revenue in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Fitbit",
+    "MyFitnessPal: Calorie Counter",
+    "AllTrails: Hike, Bike & Run",
+    "komoot - hike, bike & run",
+    "Strava: Run, Bike, Hike",
+    "YAZIO Fasting & Food Tracker",
+    "Flo Ovulation & Period Tracker",
+    "Calm - Sleep, Meditate, Relax",
+    "WeightWatchers",
+    "Headspace: Mindful Meditation",
+    "Calorie Counter by Lose It!",
+    "Geocaching®",
+    "BetterMe: Health Coaching",
+    "Replika: My AI Friend",
+    "Peloton - Fitness & Workouts"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6019822,
+      2549626,
+      1498588,
+      1249701,
+      1130248,
+      805792,
+      721217,
+      683536,
+      559625,
+      526315,
+      452747,
+      438343,
+      390392,
+      374387,
+      367335
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Leading health and fitness apps in the Google Play Store worldwide in June 2023, by number of downloads (in millions)",
+   "short": "Leading Android health apps worldwide 2023, by downloads",
+   "unit": "millions",
+   "description": "In June 2023, the Blood Sugar app was the most-downloaded health and fitness app in the Google Play Store worldwide. The app generated approximately three million downloads from Android users. The Lose Weight App for Men, published by the Australian Leap Fitness Group was the second-most popular app with over two million downloads from global Android users. NoiseFit: Health & Fitness - which allows users to track their sleep and physical exercise ranked third with 1.79 million [...]",
+   "note": "Worldwide; June 2023; downloads from the Google Play Store",
+   "source": "AppTweak Number of downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "Blood Sugar",
+    "Lose Weight App for Men",
+    "NoiseFit: Health & Fitness",
+    "HryFine",
+    "Lose Weight App for Women",
+    "Lose Weight at Home in 30 Days",
+    "Home Workout - No Equipment",
+    "Flo Ovulation & Period Tracker",
+    "Google Fit: Activity Tracking",
+    "Splits Training in 30 Days",
+    "Blood Pressure App: BP Monitor",
+    "boAt Wearables",
+    "Blood Pressure App",
+    "Replika: My AI Friend",
+    "adidas Running: Sports Tracker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.93,
+      2.09,
+      1.79,
+      1.56,
+      1.31,
+      1.31,
+      1.25,
+      1.22,
+      1.09,
+      1.08,
+      0.87,
+      0.82,
+      0.78,
+      0.78,
+      0.77
+     ]
+    }
+   ]
+  }
+ ]
+}

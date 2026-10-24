@@ -1,0 +1,1470 @@
+{
+ "studyId": "15449",
+ "study": "social media marketing worldwide",
+ "file": "research/statista/Fitness Marketing/study_id15449_social-media-marketing-worldwide.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Social media advertising spending worldwide from 2019 to 2029 (in billion U.S. dollars)",
+   "short": "Social media ad spend worldwide 2019-2029",
+   "unit": "billion U.S. dollars",
+   "description": "The global ad spending in the 'Social Media Advertising' segment of the advertising market was forecast to continuously increase between 2024 and 2029 by in total 111.6 billion U.S. dollars (+47.66 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 345.73 billion U.S. dollars and therefore a new peak in 2029. Notably, the ad spending of the 'Social Media Advertising' segment of the advertising market was continuously increasing over the past years.",
+   "note": "2019 to 2029; Includes paid advertising appearing within social networks, social network games and social network applications; excludes spending by marketers that goes toward developing or maintaining a social network presence",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      97.5,
+      132.77,
+      180.92,
+      189.5,
+      211.82,
+      234.14,
+      256.46,
+      278.78,
+      301.09,
+      323.41,
+      345.73
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Social network advertising spending per user worldwide from 2020 to 2028, by device (in U.S. dollars)",
+   "short": "Social network ad spending per user worldwide 2020-2028, by device",
+   "unit": "U.S. dollars",
+   "description": "Over the last two observations, the ad spending is forecast to significantly increase in all segments. As part of the positive trend, the indicator reaches the maximum value for all two different segments at the end of the comparison period. Particularly noteworthy is the segment Social Media Advertising Mobile, which has the highest value of 212,684,584,054.29 U.S. dollars.",
+   "note": "2020 to 2028; Includes paid advertising appearing within social networks, social network games and social network applications; excludes spending by marketers that goes toward developing or maintaining a social network presence",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Social Media Advertising Mobile",
+     "values": [
+      105014358683.95,
+      146064252572.24,
+      154751447047.88,
+      170296207732.51,
+      181547357550.05,
+      190536926058.94,
+      198172888671.59,
+      205428736362.94,
+      212684584054.29
+     ]
+    },
+    {
+     "name": "Social Media Advertising Desktop",
+     "values": [
+      27756464262.3,
+      34855489316.46,
+      34746773963.59,
+      36783907845.41,
+      38251567808.14,
+      39512089677.2,
+      40675899027.42,
+      41885433266.06,
+      43094967504.71
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Leading markets worldwide in 2022, by social media advertising spending (in million U.S. dollars)",
+   "short": "Largest social media advertising markets worldwide 2022",
+   "unit": "million U.S. dollars",
+   "description": "Comparing the 20 selected regions regarding the ad spending in the 'Social Media Advertising' segment of the digital advertising market, the United States is leading the ranking (66.6 billion U.S. dollars) and is followed by China with 64.6 billion U.S. dollars. At the other end of the spectrum is Thailand with 457.91 million U.S. dollars, indicating a difference of 66.2 billion U.S. dollars to the United States.",
+   "note": "Worldwide; Jan 1st to Dec 31st 2022",
+   "source": "Statista; Statista Digital Market Insights Spending in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "China",
+    "United Kingdom",
+    "Japan",
+    "Australia",
+    "Germany",
+    "Canada",
+    "France",
+    "South Korea",
+    "Brazil",
+    "Italy",
+    "Mexico",
+    "Spain",
+    "India",
+    "Russia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      66647.55,
+      64630.08,
+      9045.4,
+      7026.05,
+      3514.36,
+      3494.58,
+      3230.88,
+      2771.29,
+      2514.12,
+      2108.01,
+      1933.83,
+      1663.73,
+      1604.95,
+      1211.68,
+      1079.96
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Volume of social media advertising spending worldwide from 2nd quarter 2022 to 3rd quarter 2023 (indexed to 2nd quarter 2022)",
+   "short": "Social media ad spend growth worldwide 2021-2022",
+   "unit": "indexed to 2nd quarter 2022",
+   "description": "In all three quarters between the third quarter of 2022 and the first quarter of 2023, social media advertising spending worldwide was higher than in the second quarter of 2022. In the second quarter of 2023, it was four percent lower than in the base quarter.",
+   "note": "Worldwide; Q2 2022 to Q2 2023",
+   "source": "Skai",
+   "kind": "timeseries",
+   "categories": [
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1,
+      1.17,
+      1.35,
+      1.01,
+      0.96
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Expected change in digital media budgets worldwide in 2024, by format",
+   "short": "Growth of digital media budgets worldwide 2024, by format",
+   "unit": "",
+   "description": "During a survey published in November 2023, 25 percent of responding global brands stated they were planning to significantly increase their retail media budgets in 2023. Another 35 percent said they were planning to slightly increase them.",
+   "note": "Worldwide; as of November 2023",
+   "source": "Ebiquity; Statista; World Federation of Advertisers Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Advanced TV / connected TV",
+    "Digital video",
+    "Paid social",
+    "Digital out-of-home (DOOH)",
+    "Digital audio",
+    "Retail media",
+    "Influencer marketing",
+    "Paid search",
+    "Digital display",
+    "Gaming / Metaverse / eSports",
+    "In-app"
+   ],
+   "series": [
+    {
+     "name": "Significant increase (<+10%)",
+     "values": [
+      0.22,
+      0.2,
+      0.14,
+      0.14,
+      0.03,
+      0.25,
+      0.14,
+      0.12,
+      0.04,
+      0.02,
+      0.05
+     ]
+    },
+    {
+     "name": "Slight increase (between 0 and +10%)",
+     "values": [
+      0.63,
+      0.63,
+      0.52,
+      0.51,
+      0.6,
+      0.35,
+      0.42,
+      0.44,
+      0.31,
+      0.33,
+      0.29
+     ]
+    },
+    {
+     "name": "Maintain 2023 budgets",
+     "values": [
+      0.14,
+      0.13,
+      0.27,
+      0.29,
+      0.31,
+      0.38,
+      0.32,
+      0.42,
+      0.5,
+      0.5,
+      0.57
+     ]
+    },
+    {
+     "name": "Slight decrease (between 0 and -10%)",
+     "values": [
+      0.01,
+      0.03,
+      0.07,
+      0.04,
+      0.06,
+      0.03,
+      0.11,
+      0.02,
+      0.13,
+      0.13,
+      0.09
+     ]
+    },
+    {
+     "name": "Significant decrease (<-10%)",
+     "values": [
+      0.02,
+      0.01,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Change in advertising revenue of selected social media platforms worldwide in 2023",
+   "short": "Growth of social media ad revenue worldwide 2023, by platform",
+   "unit": "",
+   "description": "Advertising revenue generated by TikTok was expected to increase by 55 percent in 2023. That would make it the fastest-growing social media platform among the seven market leaders presented in the data set. As of August 2023, X's (Twitter's) ad revenue was expected to shrink by 30 percent in that calendar year.",
+   "note": "Worldwide; August 2023; forecast",
+   "source": "Statista",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "Pinterest",
+    "Snapchat",
+    "LinkedIn",
+    "Tencent",
+    "Facebook",
+    "X (Twitter)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.55,
+      0.17,
+      0.16,
+      0.15,
+      0.07,
+      0.05,
+      -0.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Social media analytics market size worldwide from 2021 to 2028 (in billion U.S. dollars)",
+   "short": "Social media analytics market value worldwide 2021-2028",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the global social media analytics market was valued at roughly seven billion U.S. dollars. It was expected to grow to 8.5 billion in 2022 and surpass 26 billion dollars in 2028. Social media analytics tools are used, among others, to manage customer experience, as well as marketing management, and to gain competitive intelligence.",
+   "note": "Worldwide; 2021; * Forecast. An exponential development of the values was assumed to estimate the annual values between 2021 and 2028, which were provided by the source. Read more",
+   "source": "Statista; The Insight Partners",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.01,
+      8.46,
+      10.23,
+      12.35,
+      14.92,
+      18.02,
+      21.77,
+      26.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Leading social media platforms used by marketers worldwide as of January 2023",
+   "short": "Social media platforms used by marketers worldwide 2023",
+   "unit": "",
+   "description": "As of January 2023, Facebook was the most commonly used social media platform among marketers worldwide. According to a global survey, 89 percent of responding social media marketers used the network to promote their business, while another 80 percent did so via Instagram.",
+   "note": "Worldwide; January 2023; 2,133 respondents",
+   "source": "Frankwatching; Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "YouTube",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.89,
+      0.8,
+      0.64,
+      0.54,
+      0.44,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Frequency of social media ad use among marketers worldwide as of January 2023, by platform",
+   "short": "Use of social media ads among marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a 2023 survey, 67 percent of responding marketers from across the world stated they often or sometimes used Facebook ads in their work. According to the results of this survey, Facebook was the most used ad platform. Instagram ranked second, with 52 percent of respondents saying they often or sometimes used ads on this platform.",
+   "note": "Worldwide; January 2023; 2,133 marketers; most participants were based in the USA, Canada, the UK, India, and Australia",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "LinkedIn",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "Often",
+     "values": [
+      0.3,
+      0.24,
+      0.07,
+      0.07,
+      0.02,
+      0.03
+     ]
+    },
+    {
+     "name": "Sometimes",
+     "values": [
+      0.37,
+      0.28,
+      0.18,
+      0.18,
+      0.08,
+      0.09
+     ]
+    },
+    {
+     "name": "Never",
+     "values": [
+      0.33,
+      0.49,
+      0.75,
+      0.75,
+      0.9,
+      0.88
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Planned changes in use of selected social media for marketing purposes worldwide as of January 2023",
+   "short": "Future use of social media among marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a global 2023 survey, 66 percent of responding marketers stated they would increase their usage of Instagram in the near future; 43 percent said they would increase the usage of TikTok advertising, but as many as 45 percent were not planning to use the mobile video sharing app for marketing purposes.",
+   "note": "Worldwide; January 2023; 2,133 marketers",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "Youtube",
+    "LinkedIn",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "Increase",
+     "values": [
+      0.53,
+      0.66,
+      0.66,
+      0.48,
+      0.22,
+      0.43
+     ]
+    },
+    {
+     "name": "Stay the same",
+     "values": [
+      0.32,
+      0.21,
+      0.19,
+      0.28,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "name": "Decrease",
+     "values": [
+      0.05,
+      0.03,
+      0.01,
+      0.02,
+      0.08,
+      0.02
+     ]
+    },
+    {
+     "name": "No plans to utilize",
+     "values": [
+      0.1,
+      0.1,
+      0.14,
+      0.22,
+      0.4,
+      0.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Planned changes in use of selected video platforms for social media marketing purposes worldwide as of January 2023",
+   "short": "Future use of video among social media marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a global survey of social media marketers released in 2023, 56 percent of responding industry professionals stated they would increase their video activities on Instagram in the following 12 months, while 59 percent said they planned to do so on YouTube.",
+   "note": "Worldwide; January 2023; 2,133 respondents; among marketers",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "YouTube",
+    "Facebook",
+    "LinkedIn",
+    "TikTok",
+    "Twitter"
+   ],
+   "series": [
+    {
+     "name": "Planning to increase activity in next 12 months",
+     "values": [
+      0.56,
+      0.59,
+      0.37,
+      0.55,
+      0.38,
+      0.22
+     ]
+    },
+    {
+     "name": "Planning to decrease activity in next 12 months",
+     "values": [
+      0.05,
+      0.02,
+      0.14,
+      0.03,
+      0.03,
+      0.16
+     ]
+    },
+    {
+     "name": "No plans to use",
+     "values": [
+      0.08,
+      0.16,
+      0.06,
+      0.15,
+      0.48,
+      0.31
+     ]
+    },
+    {
+     "name": "Stay the same",
+     "values": [
+      0.31,
+      0.24,
+      0.43,
+      0.27,
+      0.11,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Areas in which marketers used automation the most worldwide as of February 2024",
+   "short": "Areas in which marketers used automation the most worldwide 2024",
+   "unit": "",
+   "description": "During a February 2024 global survey among marketing decision-makers, approximately 58 percent reported automating their email marketing efforts. Social media and content management followed, as respectively 49 and 33 percent of respondents said they used automation in those areas.",
+   "note": "Worldwide; February 2024; 387 respondents; among marketing decision-makers",
+   "source": "Ascend2 Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Email marketing",
+    "Social media management",
+    "Content management",
+    "Paid ads",
+    "SMS marketing",
+    "Campaign tracking",
+    "Landing pages",
+    "Live chat",
+    "SEO efforts",
+    "Account-based marketing",
+    "Workflows/visualization",
+    "Sales funnel communications",
+    "Push notifications",
+    "Dynamic web forms",
+    "Lead scoring"
+   ],
+   "series": [
+    {
+     "name": "2024",
+     "values": [
+      0.58,
+      0.49,
+      0.33,
+      0.32,
+      0.3,
+      0.28,
+      0.27,
+      0.24,
+      0.22,
+      0.2,
+      0.2,
+      0.19,
+      0.18,
+      0.18,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Leading digital consumer engagement tactics according to marketers worldwide as of June 2022",
+   "short": "Leading digital consumer engagement tactics worldwide 2022",
+   "unit": "",
+   "description": "During a 2022 survey carried out among marketing leaders worldwide, 89 percent of respondents stated they used pre-produced videos as a digital consumer engagement tactic. Another 89 percent were also relying on the livestream video format as a digital engagement technique. User-generated content (UGC) was used by 68 percent of global marketers in their online engagement efforts.",
+   "note": "Worldwide; June 30 to August 8, 2022; 6,000 respondents; among full-time marketing leaders from B2B, B2C, and B2B2C companies",
+   "source": "Salesforce Research Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Pre-produced video",
+    "Livestream video",
+    "Interactive content",
+    "Influencer marketing",
+    "User-generated content (UGC)"
+   ],
+   "series": [
+    {
+     "name": "Currently use",
+     "values": [
+      0.89,
+      0.89,
+      0.83,
+      0.72,
+      0.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Leading benefits of using social media for marketing purposes worldwide as of January 2023",
+   "short": "Benefits of social media marketing worldwide 2023",
+   "unit": "",
+   "description": "Increased exposure is the most commonly cited advantage of using social media for marketing purposes among global industry professionals. This is unsurprising given the huge appeal of having billions of active users as a potential advertising audience. Improved traffic, lead generation and growing fan loyalty are further reasons why marketers see value in employing social networks in their campaigns. Facebook, Instagram and LinkedIn are the top three most used social platforms [...]",
+   "note": "Worldwide; January 2022; 2,133 respondents; 55% of the participants live in the US, 5% in the UK, 5% in Canada, 4% in India and 3% in Australia. For 43% of marketers surveyed, social media is their primary responsibility. And 63% of marketers work in B2C, 37% in B2B.",
+   "source": "Frankwatching; Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Increased exposure",
+    "Increased traffic",
+    "Generated leads",
+    "Developed loyal fans",
+    "Improved sales"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.86,
+      0.76,
+      0.64,
+      0.56,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Most effective digital advertising formats for mobile app user acquisition according to app developers worldwide as of 2nd quarter 2022",
+   "short": "Most effective ad formats for mobile app user acquisition worldwide 2022",
+   "unit": "",
+   "description": "According to a 2022 survey of app developers worldwide, full-screen video ads were considered the most effective ads to acquire new app users, with 51 percent of respondents signaling this format. Social video ads ranked second, with 46 percent of respondents reporting them as the most effective ad formats for app user acquisition. In-feed video ads ranked third, with 41 percent of app developers finding them effective to gain new users.",
+   "note": "Worldwide; Q1 and Q2 2022; 142 respondents; among app developers, publishers, and marketers",
+   "source": "Digital Turbine Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Video - full-screen",
+    "Video - social",
+    "Video - in-feed",
+    "Network display (banner, ontersitial, rich media)",
+    "Display social",
+    "Apple search ads",
+    "Other search (Bing, Naver, Google, etc.)",
+    "Free app networks",
+    "On-device solutions",
+    "Cross promotion pplatforms/partners",
+    "Native ads",
+    "Podcasts",
+    "Offer walls (incentivized)",
+    "TV/CTV/OTT",
+    "Out-of-home"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.51,
+      0.46,
+      0.41,
+      0.37,
+      0.34,
+      0.33,
+      0.28,
+      0.25,
+      0.24,
+      0.23,
+      0.18,
+      0.17,
+      0.15,
+      0.09,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Volume of social media advertising impressions worldwide from 4th quarter 2022 to 4th quarter 2023 (indexed to 4th quarter 2022)",
+   "short": "Volume of social media ad impressions worldwide 2022-2023",
+   "unit": "indexed to 4th quarter 2022",
+   "description": "In the fourth quarter of 2023, the volume of social media ad impressions was 324 percent higher than in the fourth quarter of 2022. It was also the quarter with the highest difference compared to the fourth quarter of 2022 in the presented period.",
+   "note": "Worldwide",
+   "source": "Skai",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1,
+      1.03,
+      1.08,
+      1.08,
+      1.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Volume of social media advertising clicks worldwide from 2nd quarter 2022 to 2nd quarter 2023 (indexed to 2nd quarter 2022)",
+   "short": "Volume of social media ad clicks worldwide 2022-2023",
+   "unit": "indexed to 2nd quarter 2022",
+   "description": "In the fourth quarter of 2022, the volume of social media ad impressions was 54 percent higher than in the second quarter of 2022. In the last presented quarter, the volume was 35 percent higher than during the second quarter of 2022.",
+   "note": "Worldwide",
+   "source": "Skai",
+   "kind": "timeseries",
+   "categories": [
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1,
+      1.28,
+      1.54,
+      1.26,
+      1.35
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Social media advertising clickthrough rate (CTR) worldwide from 4th quarter 2022 to 4th quarter 2023",
+   "short": "Social media ads CTR worldwide 2022-2023",
+   "unit": "",
+   "description": "Recent evaluation of social media advertising metrics shows that the click-through rate (CTR) for social networks in the fourth quarter of 2023 reached 0.98 percent. A quarter earlier, it stood at 0.92 percent.",
+   "note": "Worldwide; Q4 2022 to Q4 2023",
+   "source": "Skai",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0118,
+      0.0094,
+      0.0088,
+      0.0092,
+      0.0098
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Social media advertising cost-per-mille (CPM) worldwide from 4th quarter 2022 to 4th quarter 2023 (in U.S. dollars)",
+   "short": "Social media ads CPM worldwide 2022-2023",
+   "unit": "U.S. dollars",
+   "description": "The cost-per-mille of advertising on social media was 6.06 U.S. dollars in the fourth quarter of 2023. In other words, advertisers had to pay this much to have their ads viewed by a thousand potential customers. Social media CPM is usually higher in the final quarters of each year. The surge in costs is prompted by increased demand for advertising space during that time, as brands compete to win over prospective clients.",
+   "note": "Worldwide; Q4 2022 to Q4 2023",
+   "source": "Skai",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6.52,
+      5.42,
+      5.34,
+      5.46,
+      6.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Leading media and entertainment brands worldwide in 2023, by brand value (in billion U.S. dollars)",
+   "short": "Most valuable media & entertainment brands worldwide 2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, Google ranked as the most valuable media and entertainment brand worldwide, with a brand value of nearly 537.2 billion U.S. dollars. Facebook ranked second, valued at around 93 billion dollars. Part of the Tencent Group, WeChat and v.qq.com (Tencent Video) had a brand value of 53.5 billion and 19.5 billion dollars, respectively.",
+   "note": "Worldwide; 2023",
+   "source": "Kantar Brand value in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Google",
+    "Facebook",
+    "Instagram",
+    "WeChat",
+    "Youtube",
+    "Netflix",
+    "LinkedIn",
+    "Disney",
+    "TikTok",
+    "v.qq.com (Tencent Video)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      537.19,
+      93.02,
+      58.95,
+      53.05,
+      53.01,
+      49.76,
+      48.53,
+      46.97,
+      44.35,
+      19.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Brands with the highest brand value change worldwide in 2023",
+   "short": "Fastest growing brands worldwide 2023",
+   "unit": "",
+   "description": "In 2023, Airtel was the fastest growing brand worldwide. The Indian telecom provider registered an annual brand value growth of 24 percent. Pepsi ranked second, with a growth rate of 17 percent.",
+   "note": "Worldwide; 2023",
+   "source": "Kantar Brand value change (2023 vs. 2022)",
+   "kind": "categorical",
+   "categories": [
+    "Airtel",
+    "Pepsi",
+    "Fanta",
+    "BCA",
+    "Sprite",
+    "Gatorade",
+    "United Healthcare",
+    "Dior",
+    "Coca-Cola",
+    "Johnnie Walker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.24,
+      0.17,
+      0.15,
+      0.12,
+      0.12,
+      0.11,
+      0.09,
+      0.09,
+      0.08,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Digital advertising revenues of major internet companies worldwide in 2023 and 2027 (in billion U.S. dollars)",
+   "short": "Digital advertising revenue for major internet companies 2023-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the forecast for Facebook digital advertising revenues saw the Meta company generating 119 billion U.S. dollars by the end of the fiscal year. TikTok was projected to see its online advertising revenues hit 18 billion U.S. dollars. By comparison, LinkedIn advertising revenues were forecasted to reach approximately a third of that amount for 2023.",
+   "note": "Worldwide; August 2023; forecast",
+   "source": "Statista; Various sources Revenue in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Google",
+    "Facebook",
+    "Amazon",
+    "TikTok",
+    "Tencent",
+    "Microsoft Search & News Advertising",
+    "Baidu",
+    "JD.com",
+    "Apple",
+    "LinkedIn",
+    "Snapchat",
+    "Twitter",
+    "Pinterest",
+    "Spotify"
+   ],
+   "series": [
+    {
+     "name": "2027",
+     "values": [
+      340.18,
+      127.27,
+      70.82,
+      53.95,
+      16.71,
+      16.33,
+      11.51,
+      16.25,
+      13.73,
+      10.35,
+      8.8,
+      2.7,
+      5.13,
+      2.24
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      250.26,
+      118.96,
+      44.35,
+      18.04,
+      13.18,
+      12.54,
+      11.51,
+      10.99,
+      6.51,
+      5.91,
+      5.36,
+      3.31,
+      3.27,
+      1.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Social media platforms with the largest return on investment (ROI) according to marketers worldwide as of September 2023",
+   "short": "Social media platforms with highest ROI worldwide 2023",
+   "unit": "",
+   "description": "According to a survey released in September 2023 and conducted among B2B and B2C marketers worldwide 29 percent of respondents said that Facebook was the social media platform with the highest return on investment (ROI) that year. The same share of respondents pointed towards Instagram for the same reason. YouTube ranked third with 26 percent of respondents, followed by TikTok with 24 percent.",
+   "note": "Worldwide; as of September 2023; 1,460 respondents; among global marketers from across B2B and B2C companies",
+   "source": "HubSpot",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "TikTok",
+    "LinkedIn",
+    "X (formerly Twitter)",
+    "Snapchat",
+    "Pinterest",
+    "Twitch",
+    "Tumblr"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.29,
+      0.29,
+      0.26,
+      0.24,
+      0.16,
+      0.16,
+      0.06,
+      0.06,
+      0.05,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Revenue of selected social media companies from 2014 to 2022 (in million U.S. dollars)",
+   "short": "Social media revenue of selected companies 2022",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, Meta Platforms, formerly Facebook Inc., had a total annual revenue of over 116 billion U.S. dollars, down from 117 billion in 2020. LinkedIn reported its highest annual revenue to date, generating over 13 billion USD, whilst Snapchat reported an annual revenue of 4.6 billion USD.",
+   "note": "Worldwide; 2014 to 2022; *In December 2016, Microsoft finalized its $26 billion acquisition of LinkedIn. LinkedIn results are now part of Microsoft's Product Revenue and Service and Other Revenue segment. **In 2021 Facebook Inc [...] Read more",
+   "source": "Facebook; LinkedIn; Snap Inc.; Twitter; Yelp",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Meta**",
+     "values": [
+      12466,
+      17928,
+      27638,
+      40653,
+      55838,
+      70697,
+      85965,
+      117929,
+      116609
+     ]
+    },
+    {
+     "name": "Twitter",
+     "values": [
+      1403,
+      2218.03,
+      2529.62,
+      2443.3,
+      3042.36,
+      3459.33,
+      3716.35,
+      5077.48
+     ]
+    },
+    {
+     "name": "Snapchat",
+     "values": [
+      404.48,
+      824.95,
+      1180.45,
+      1715.53,
+      2506.62,
+      4117.05,
+      4601.85
+     ]
+    },
+    {
+     "name": "Yelp",
+     "values": [
+      377.5,
+      549.71,
+      716,
+      850.85,
+      942.77,
+      1014.19,
+      872.93,
+      1031.84,
+      1193.51
+     ]
+    },
+    {
+     "name": "LinkedIn*",
+     "values": [
+      2219,
+      2991,
+      2271,
+      5259,
+      6754,
+      8050,
+      10289,
+      13816
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Number of social media users worldwide from 2017 to 2027 (in billions)",
+   "short": "Number of global social network users 2017-2027",
+   "unit": "billions",
+   "description": "Social media usage is one of the most popular online activities. In 2022, over 4.59 billion people were using social media worldwide, a number projected to increase to almost six billion in 2027.",
+   "note": "Worldwide; 2017 to 2022; *Forecast Internet users who use a social network site via any device at least once per month Read more",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.73,
+      3.1,
+      3.51,
+      3.9,
+      4.26,
+      4.59,
+      4.89,
+      5.17,
+      5.42,
+      5.64,
+      5.85
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Number of social network users worldwide as of January 2023, by region (in millions)",
+   "short": "Number of worldwide social media users 2023, by region",
+   "unit": "millions",
+   "description": "As of January 2023, Eastern Asia accounted for over 1.2 billion social media users, whilst Southern Asia had over 961 million social media users. Overall, around 819 million people were using online networks in the Americas. In addition, 681 million people were using social media platforms in Europe.",
+   "note": "Worldwide; January 2023",
+   "source": "Statista Number of active social media users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Asia",
+    "Eastern Asia",
+    "Southern Asia",
+    "Americas",
+    "Europe",
+    "Southeast Asia",
+    "North America",
+    "Africa",
+    "South America",
+    "Central & Western Europe",
+    "Eastern Europe",
+    "Southern Europe",
+    "Western Asia",
+    "Northern Africa",
+    "Western Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2941.01,
+      1246.98,
+      961.81,
+      819.29,
+      681.56,
+      527.23,
+      447.82,
+      427.05,
+      316.78,
+      271.29,
+      191.31,
+      189.28,
+      173.9,
+      166.18,
+      105.91
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Most popular social networks worldwide as of April 2024, ranked by number of monthly active users (in millions)",
+   "short": "Global social networks ranked by number of users 2024",
+   "unit": "millions",
+   "description": "Market leader Facebook was the first social network to surpass one billion registered accounts and currently sits at more than three billion monthly active users. Meta Platforms owns four of the biggest social media platforms, all with more than one billion monthly active users each: Facebook (core platform), WhatsApp, Facebook Messenger, and Instagram. In the third quarter of 2023, Facebook reported around four billion monthly core Family product users.",
+   "note": "Worldwide; April 2024; social networks and messenger/chat app/voip included; figures for TikTok does not include Douyin",
+   "source": "DataReportal; Meltwater; We Are Social Number of active users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "YouTube",
+    "Instagram",
+    "WhatsApp¹",
+    "TikTok",
+    "WeChat",
+    "Facebook Messenger",
+    "Telegram",
+    "Snapchat",
+    "Douyin",
+    "Kuaishou",
+    "X/Twitter",
+    "Weibo",
+    "QQ",
+    "Pinterest"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3065,
+      2504,
+      2000,
+      2000,
+      1582,
+      1343,
+      1010,
+      900,
+      800,
+      755,
+      700,
+      611,
+      598,
+      554,
+      498
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Most popular reasons for internet users worldwide to use social media as of 3rd quarter 2023",
+   "short": "Leading social media usage reasons worldwide 2023",
+   "unit": "",
+   "description": "A global survey conducted in the third quarter of 2023 found that the main reason for using social media was to keep in touch with friends and family, with over 49 percent of social media users saying this was their main reason for using online networks. Overall, 38.5 percent of social media users said that filling spare time was their main reason for using social media platforms, whilst a similar share of respondents said they used it to read news stories. One in five users were on social [...]",
+   "note": "Worldwide; Q3 2023; 16 to 64 years; internet users",
+   "source": "DataReportal; GWI; Meltwater; We Are Social Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Keeping in touch with friends and family",
+    "Filling spare time",
+    "Reading news stories",
+    "Finding content (E.g. articles, videos)",
+    "Seeing what's being talked about",
+    "Finding inspiration for things to do and buy",
+    "Finding products to purchase",
+    "Watching live streams",
+    "Sharing and discussing opinions with others",
+    "Making new contacts",
+    "Seeing content for your favorite brands",
+    "Watching or following sports",
+    "Work-related networking and research",
+    "Following celebrities or influencers",
+    "Posting about your life"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.495,
+      0.385,
+      0.342,
+      0.302,
+      0.287,
+      0.267,
+      0.261,
+      0.227,
+      0.227,
+      0.225,
+      0.221,
+      0.22,
+      0.213,
+      0.201,
+      0.197
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Leading sources of inspiration for online shoppers worldwide in 2023",
+   "short": "Main sources for online shopping inspiration worldwide 2023",
+   "unit": "",
+   "description": "In 2023, marketplaces were the primary source of inspiration for online shopping globally. According to a survey, 35 percent of online shoppers said they sought inspiration through searches on this channel. Browsing in-store ranked second, with almost one quarter of respondents using it for this purpose.The top in every categoryMarketplaces were the most popular places to get ideas for general online shopping, and this also applies to different types of shopping. When looking for [...]",
+   "note": "Worldwide; April 6 to 20, 2023; 31,647 respondents; consumers who shop online at least once a month",
+   "source": "Censuswide; Wunderman Thompson Commerce",
+   "kind": "categorical",
+   "categories": [
+    "Marketplaces",
+    "Browsing in-store",
+    "Search engines",
+    "Direct-to-consumer/branded sites (e.g. Nike, Apple, Dyson)",
+    "Retailer sites"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.24,
+      0.15,
+      0.15,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Leading channels for product search worldwide in 2023",
+   "short": "Leading channels for product search worldwide 2023",
+   "unit": "",
+   "description": "In 2023, marketplaces were the primary source for starting to search for products online worldwide. According to a survey, roughly three out of ten online shoppers searched for products through this channel. Browsing in-store ranked second, with 18 percent of respondents, followed by search engines and brand websites, each with 14 percent.",
+   "note": "Worldwide; April 6 to 20, 2023; 31,647 respondents; consumers who shop online at least once a month",
+   "source": "Censuswide; Wunderman Thompson Commerce Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Marketplaces",
+    "Browsing in-store",
+    "Search engines",
+    "Direct-to-consumer/branded sites (e.g. Nike, Apple, Dyson)",
+    "Retailer sites"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.31,
+      0.18,
+      0.14,
+      0.14,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Share of shoppers that purchased a product after seeing it on social media in selected countries worldwide in 2nd quarter 2023",
+   "short": "Consumers who bought an item after seeing it on social media 2023, by country",
+   "unit": "",
+   "description": "In a 2023 survey, approximately 58 percent of shoppers in the United States said they had at some point purchased a product after seeing it on a social media platform. On the other hand, in the United Kingdom and Germany, 44 percent and 40 percent of respondents, respectively, said they bought something after spotting it on social networks.",
+   "note": "Worldwide; Q2 2023; 19,293 respondents; 18 years and older; purchases made in the previous month",
+   "source": "Klarna; Nepa Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Australia",
+    "United Kingdom",
+    "Greece",
+    "Spain",
+    "Portugal",
+    "New Zealand",
+    "Germany",
+    "Italy",
+    "Norway",
+    "France",
+    "Sweden",
+    "Poland",
+    "Netherlands",
+    "Austria"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.54,
+      0.44,
+      0.43,
+      0.42,
+      0.41,
+      0.41,
+      0.4,
+      0.39,
+      0.38,
+      0.37,
+      0.35,
+      0.34,
+      0.32,
+      0.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Millennials' opinions on how much they trust product/brand recommendations made by social media influencers worldwide in 2023",
+   "short": "Millennials' trust on product/brand recommendation made by influencers worldwide 2023",
+   "unit": "",
+   "description": "As of March 2023, nearly 50 percent of 10 millennials worldwide found influencers' recommendations of a brand or product more engaging than regular advertisements. For 36 percent of the respondents, influencer recommendations were also considered more trustworthy than average ads. According to the same report, millennials ranked reliability as the most wanted quality in a brand.",
+   "note": "Worldwide; March 2023; 3,700 respondents; 27-40 years; in 12 markets",
+   "source": "GWI Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Influencer recommendations are more engaging than regular ads",
+    "I'm likely to purchase a product recommended by influencers",
+    "I follow influencers who regularly promote products/brands",
+    "I'm happy with the volume of promoted products/brands I see from influencers",
+    "Influencers are knowledgeable about the products they recommend",
+    "Recommendations from influencers are more informative than from celebrities",
+    "Influencer recommendations are more trustworthy than regular ads"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.49,
+      0.45,
+      0.44,
+      0.41,
+      0.4,
+      0.4,
+      0.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Importance of social media as a fashion information source for luxury consumers in selected countries/regions worldwide as of May 2022",
+   "short": "Social media as a fashion information source for luxury consumers worldwide 2022",
+   "unit": "",
+   "description": "During a 2022 survey carried out among luxury consumers, 65 percent of respondents from China stated that social media was an important source of fashion-related information. The same was true for 24 percent of respondents from Italy and 38 percent of respondents from the United States.",
+   "note": "Worldwide; April and May 2022; 5,647 respondents",
+   "source": "Vogue Business Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Japan",
+    "South Korea",
+    "Middle East",
+    "France",
+    "Global",
+    "United Kingdom",
+    "United States",
+    "Brazil",
+    "Spain",
+    "Germany",
+    "Italy"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.46,
+      0.42,
+      0.41,
+      0.4,
+      0.4,
+      0.38,
+      0.38,
+      0.36,
+      0.34,
+      0.32,
+      0.24
+     ]
+    }
+   ]
+  }
+ ]
+}

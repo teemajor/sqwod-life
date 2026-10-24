@@ -33,6 +33,63 @@ series:
   unit: "Mio. $"
   points: [1349, 1406, 1419, 1509, 1566, 1302, 1464, 1515, 1693]
   years: ["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
+charts:
+  - label: "US-Heimfitnessgeräte, Großhandelsumsatz 2007 bis 2023"
+    unit: "Mrd. $"
+    kind: timeseries
+    categories: ["2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "", points: [3.55,3.18,3.18,3.32,3.44,3.56,3.58,3.75,3.77,3.79,3.76,3.86,3.98,5.59,6.42,6.08,6.56] }
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+  - label: "US-Studiogeräte (institutionell), Großhandelsumsatz 2007 bis 2023"
+    unit: "Mio. $"
+    kind: timeseries
+    categories: ["2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "", points: [1149,1041,970,1023,1050,1139,1257,1308,1349,1406,1419,1509,1566,1302,1464,1515,1693] }
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+  - label: "US-Freihanteln für zu Hause, Großhandelsumsatz 2007 bis 2023"
+    unit: "Mio. $"
+    kind: timeseries
+    categories: ["2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "", points: [175,167,162,162,160.6,171.5,175.2,178.9,182.7,186.6,190.6,194.7,201,410.5,483.2,504.3,560.8] }
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+  - label: "US-Crosstrainer für zu Hause, Großhandelsumsatz 2007 bis 2023"
+    unit: "Mio. $"
+    kind: timeseries
+    categories: ["2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "", points: [763,687,721,786,842,884,904,925,934,913,896,900,904,927,969,838,807] }
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+  - label: "US-Heimtrainer-Bikes, Großhandelsumsatz 2007 bis 2023"
+    unit: "Mio. $"
+    kind: timeseries
+    categories: ["2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "", points: [393,344,344,358,377,368,369,394,397,409,415,436,472,789,1003,916,1028] }
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+  - label: "US-Home-Gyms, Großhandelsumsatz 2007 bis 2023"
+    unit: "Mio. $"
+    kind: timeseries
+    categories: ["2007","2008","2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
+    series:
+      - { name: "", points: [286,232,199,199,194,190,178,215,211,210,204,209,221,384,466,424,463] }
+    source: "SFIA via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
+  - label: "US-Umsatz mit Trainingsgeräten, 2018 bis 2028 Prognose"
+    unit: "Mrd. $"
+    kind: timeseries
+    categories: ["2018","2019","2020","2021","2022","2023","2024","2025","2026","2027","2028"]
+    series:
+      - { name: "", points: [4.38,4.54,4.65,4.88,5.16,5.43,5.71,5.98,6.25,6.52,6.79] }
+    source: "Statista via Statista"
+    url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
 playbook:
   - { move: "Plane mit dem Equipment, das deine Kund:innen schon besitzen.", why: "Freihanteln für zu Hause haben sich seit 2019 fast verdreifacht, Heimtrainer-Bikes mehr als verdoppelt. Viele deiner Kund:innen haben ein Setup zu Hause. Hybride Programme, die es nutzen, halten sie auch zwischen den Einheiten bei dir." }
   - { move: "Richte deine Fläche auf Kraft aus, nicht auf Reihen von Cardio-Geräten.", why: "Freihanteln wuchsen um 179 %, Crosstrainer schrumpften um 11 %. Platz für Racks, Bänke und Kurzhanteln passt dazu, wohin die Nachfrage gegangen ist." }

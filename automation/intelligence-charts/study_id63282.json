@@ -1,0 +1,2074 @@
+{
+ "studyId": "63282",
+ "study": "fitness equipment market in the united states",
+ "file": "research/statista/study_id63282_fitness-equipment-market-in-the-united-states (1).pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Revenue of the sports equipment market worldwide from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the sports equipment industry worldwide 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The global revenue in the 'Sports Equipment' segment of the toys & hobby market was forecast to continuously increase between 2024 and 2028 by in total 44 billion U.S. dollars (+25.65 percent). After the eighth consecutive increasing year, the indicator is estimated to reach 215.54 billion U.S. dollars and therefore a new peak in 2028.",
+   "note": "Worldwide; 2018 to 2028",
+   "source": "Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      123.31,
+      128.08,
+      127.65,
+      137.19,
+      149.51,
+      160.89,
+      171.57,
+      182.29,
+      193.48,
+      204.48,
+      215.54
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Revenue of the sports equipment market worldwide by country in 2023 (in million U.S. dollars)",
+   "short": "Revenue of the sports equipment market worldwide by country 2023",
+   "unit": "million U.S. dollars",
+   "description": "From the selected regions, the ranking by revenue in the 'Sports Equipment' segment of the toys & hobby market is lead by China with 37.3 billion U.S. dollars and is followed by the United States (18.5 billion U.S. dollars). In contrast, the ranking is trailed by Argentina with 972.68 million U.S. dollars, recording a difference of 36.3 billion U.S. dollars to China.",
+   "note": "Worldwide; Jan 1st to Dec 31st 2023",
+   "source": "Statista Consumer Market Insights Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "United States",
+    "India",
+    "Japan",
+    "Indonesia",
+    "United Kingdom",
+    "Brazil",
+    "Germany",
+    "Canada",
+    "Russia",
+    "France",
+    "South Korea",
+    "Vietnam",
+    "Mexico",
+    "Nigeria"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      37316.36,
+      18471.56,
+      17303.37,
+      7007.57,
+      5206.1,
+      3629.54,
+      3412.73,
+      3221.37,
+      3220.71,
+      3030.66,
+      2919.92,
+      2819.13,
+      2143.5,
+      2142.16,
+      2031.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Revenue in the Sports Equipment market for different segments Worldwide from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue in the Sports Equipment market Worldwide 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. As part of the positive trend, the indicator achieves the maximum value across all eight different segments by the end of the comparison period. Notably, the segment Exercise Equipment stands out with the highest value of 59.47 billion U.S. dollars.",
+   "note": "Worldwide",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Exercise Equipment",
+     "values": [
+      32.59,
+      33.83,
+      34.92,
+      37.68,
+      40.78,
+      43.72,
+      46.72,
+      49.81,
+      53.06,
+      56.25,
+      59.47
+     ]
+    },
+    {
+     "name": "Outdoor Equipment",
+     "values": [
+      18.59,
+      19.23,
+      19.76,
+      21.35,
+      23.04,
+      24.65,
+      26.29,
+      27.96,
+      29.71,
+      31.43,
+      33.17
+     ]
+    },
+    {
+     "name": "Golf Equipment",
+     "values": [
+      18.45,
+      19.32,
+      18.9,
+      19.98,
+      22.32,
+      23.89,
+      25.46,
+      26.99,
+      28.57,
+      30.13,
+      31.7
+     ]
+    },
+    {
+     "name": "Fishing Equipment",
+     "values": [
+      17.47,
+      18.4,
+      17.79,
+      19.06,
+      21.4,
+      23.04,
+      24.68,
+      26.31,
+      28,
+      29.66,
+      31.33
+     ]
+    },
+    {
+     "name": "Water Sports Equipment",
+     "values": [
+      10.71,
+      11.19,
+      10.48,
+      11.38,
+      12.71,
+      13.64,
+      14.55,
+      15.44,
+      16.37,
+      17.28,
+      18.2
+     ]
+    },
+    {
+     "name": "Winter Sports Equipment",
+     "values": [
+      12.35,
+      12.43,
+      11.58,
+      12.42,
+      12.63,
+      14.03,
+      14.68,
+      15.26,
+      15.85,
+      16.43,
+      16.99
+     ]
+    },
+    {
+     "name": "Racket Sports Equipment",
+     "values": [
+      6.64,
+      6.95,
+      7.31,
+      7.85,
+      8.54,
+      9.2,
+      9.86,
+      10.55,
+      11.26,
+      11.96,
+      12.67
+     ]
+    },
+    {
+     "name": "Team Sports Equipment",
+     "values": [
+      6.51,
+      6.74,
+      6.91,
+      7.49,
+      8.11,
+      8.71,
+      9.34,
+      9.98,
+      10.66,
+      11.33,
+      12.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Revenue of the exercise equipment market worldwide 2018 to 2023, with a forecast until 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the exercise equipment market worldwide 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The total revenue of the global exercise equipment market was forecast to continuously increase between 2024 and 2028 by in total 12.8 billion U.S. dollars (or just over 27 percent). Products within this segment include a variety of items and machines for physical activity and fitness, from treadmills to fitness balls.",
+   "note": "",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      32.59,
+      33.83,
+      34.92,
+      37.68,
+      40.78,
+      43.72,
+      46.72,
+      49.81,
+      53.06,
+      56.25,
+      59.47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Revenue of the sports equipment industry in the United States from 2018 to 2024, with a forecast to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the sports equipment industry in the U.S. 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The revenue in the 'Sports Equipment' segment of the toys & hobby market in the United States was forecast to continuously increase between 2024 and 2028 by in total 3.5 billion U.S. dollars (+17.98 percent). After the eighth consecutive increasing year, the indicator is estimated to reach 22.99 billion U.S. dollars and therefore a new peak in 2028.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      14.97,
+      15.59,
+      15.55,
+      16.26,
+      17.44,
+      18.47,
+      19.47,
+      20.35,
+      21.23,
+      22.11,
+      22.99
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Sports equipment market revenue in the United States from 2018 to 2028, by product type (in billion U.S. dollars)",
+   "short": "Sports equipment market revenue in the U.S. from 2018 to 2028, by product type",
+   "unit": "billion U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. Considering the nine different types presented in this statistics, 'Sports Equipment' leads the ranking with 22.99 billion U.S. dollars revenue. Contrastingly, 'Racket Sports Equipment' is ranked last, with 0.54 billion U.S. dollars. Their difference, compared to the Sports Equipment, lies at 22.45 billion U.S. dollars.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Exercise Equipment",
+     "values": [
+      4.38,
+      4.54,
+      4.65,
+      4.88,
+      5.16,
+      5.43,
+      5.71,
+      5.98,
+      6.25,
+      6.52,
+      6.79
+     ]
+    },
+    {
+     "name": "Outdoor Equipment",
+     "values": [
+      3.22,
+      3.34,
+      3.42,
+      3.59,
+      3.8,
+      4,
+      4.2,
+      4.4,
+      4.6,
+      4.8,
+      5
+     ]
+    },
+    {
+     "name": "Winter Sports Equipment",
+     "values": [
+      2.38,
+      2.49,
+      2.37,
+      2.45,
+      2.65,
+      2.85,
+      3,
+      3.11,
+      3.22,
+      3.33,
+      3.43
+     ]
+    },
+    {
+     "name": "Golf Equipment",
+     "values": [
+      1.92,
+      2.02,
+      1.96,
+      2.05,
+      2.27,
+      2.41,
+      2.56,
+      2.67,
+      2.79,
+      2.91,
+      3.03
+     ]
+    },
+    {
+     "name": "Fishing Equipment",
+     "values": [
+      1.26,
+      1.31,
+      1.26,
+      1.31,
+      1.44,
+      1.53,
+      1.63,
+      1.7,
+      1.77,
+      1.85,
+      1.92
+     ]
+    },
+    {
+     "name": "Water Sports Equipment",
+     "values": [
+      0.81,
+      0.85,
+      0.83,
+      0.87,
+      0.96,
+      1.02,
+      1.08,
+      1.13,
+      1.18,
+      1.23,
+      1.28
+     ]
+    },
+    {
+     "name": "Team Sports Equipment",
+     "values": [
+      0.65,
+      0.67,
+      0.69,
+      0.72,
+      0.77,
+      0.81,
+      0.85,
+      0.89,
+      0.93,
+      0.97,
+      1.01
+     ]
+    },
+    {
+     "name": "Racket Sports Equipment",
+     "values": [
+      0.35,
+      0.36,
+      0.37,
+      0.39,
+      0.41,
+      0.43,
+      0.45,
+      0.47,
+      0.49,
+      0.52,
+      0.54
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Revenue of the exercise equipment market in the United States 2018 to 2023, with a forecast until 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the exercise equipment market in the United States 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The exercise equipment market in the United States, which includes items such as treadmills, elliptical machines, free weights, and many other fitness goods, generated a total revenue of about five and a half billion U.S. dollars in 2023. Between 2024 and 2028, this specific market's revenue was expected to grow by about 20 percent.",
+   "note": "",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.38,
+      4.54,
+      4.65,
+      4.88,
+      5.16,
+      5.43,
+      5.71,
+      5.98,
+      6.25,
+      6.52,
+      6.79
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Sporting goods store sales in the United States from 1992 to 2022 (in billion U.S. dollars)",
+   "short": "Sporting goods store sales in the U.S. from 1992 to 2022",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, sporting goods store sales in the United States amounted to about 63.4 billion U.S. dollars; a considerable jump compared to previous years, but a slight drop compared to 2021.",
+   "note": "United States; 1992 to 2022",
+   "source": "US Census Bureau",
+   "kind": "timeseries",
+   "categories": [
+    "1992",
+    "1993",
+    "1994",
+    "1995",
+    "1996",
+    "1997",
+    "1998",
+    "1999",
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.58,
+      16.79,
+      18.83,
+      19.87,
+      20.81,
+      21.17,
+      22.28,
+      23.7,
+      25.31,
+      26.16,
+      26.22,
+      27,
+      28.64,
+      30.71,
+      33.87,
+      35.8,
+      36.78,
+      36.57,
+      37.41,
+      39,
+      42.14,
+      44.6,
+      45.14,
+      46.97,
+      48.13,
+      45.97,
+      43.91,
+      44.84,
+      52.28,
+      63.94,
+      63.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Monthly retail sales of sporting goods stores in the United States from January 2017 to December 2023 (in million U.S. dollars)",
+   "short": "Sporting goods store monthly sales in the U.S. from 2017 to 2023",
+   "unit": "million U.S. dollars",
+   "description": "In December 2023, U.S. sporting goods stores had sales amounting to an estimated 7.1 billion U.S. dollars. This was an increase of nearly 1.8 billion U.S. dollars compared to the previous month. Dick's Sporting Goods and Bass Pro are two of the leading companies in this sector in the United States.",
+   "note": "United States; January 2017 to December 2023; * Provisional estimate. Data is seasonally unadjusted. Read more",
+   "source": "US Census Bureau",
+   "kind": "timeseries",
+   "categories": [
+    "Jan 2017",
+    "Feb 2017",
+    "Mar 2017",
+    "Apr 2017",
+    "May 2017",
+    "Jun 2017",
+    "Jul 2017",
+    "Aug 2017",
+    "Sep 2017",
+    "Oct 2017",
+    "Nov 2017",
+    "Dec 2017",
+    "Jan 2018",
+    "Feb 2018",
+    "Mar 2018",
+    "Apr 2018",
+    "May 2018",
+    "Jun 2018",
+    "Jul 2018",
+    "Aug 2018",
+    "Sep 2018",
+    "Oct 2018",
+    "Nov 2018",
+    "Dec 2018",
+    "Jan 2019",
+    "Feb 2019",
+    "Mar 2019",
+    "Apr 2019",
+    "May 2019",
+    "Jun 2019",
+    "Jul 2019",
+    "Aug 2019",
+    "Sep 2019",
+    "Oct 2019",
+    "Nov 2019",
+    "Dec 2019",
+    "Jan 2020",
+    "Feb 2020",
+    "Mar 2020",
+    "Apr 2020",
+    "May 2020",
+    "Jun 2020",
+    "Jul 2020",
+    "Aug 2020",
+    "Sep 2020",
+    "Oct 2020",
+    "Nov 2020",
+    "Dec 2020",
+    "Jan 2021",
+    "Feb 2021",
+    "Mar 2021",
+    "Apr 2021",
+    "May 2021",
+    "Jun 2021",
+    "Jul 2021",
+    "Aug 2021",
+    "Sep 2021",
+    "Oct 2021",
+    "Nov 2021",
+    "Dec 2021",
+    "Jan 2022",
+    "Feb 2022",
+    "Mar 2022",
+    "Apr 2022",
+    "May 2022",
+    "Jun 2022",
+    "Jul 2022",
+    "Aug 2022",
+    "Sep 2022",
+    "Oct 2022",
+    "Nov 2022",
+    "Dec 2022",
+    "Jan 2023",
+    "Feb 2023",
+    "Mar 2023",
+    "Apr 2023",
+    "May 2023",
+    "Jun 2023",
+    "Jul 2023",
+    "Aug 2023",
+    "Sep 2023",
+    "Oct 2023",
+    "Nov 2023",
+    "Dec 2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2963,
+      3038,
+      3792,
+      3654,
+      3811,
+      4115,
+      3919,
+      4225,
+      3567,
+      3393,
+      3984,
+      5504,
+      2784,
+      3036,
+      3800,
+      3543,
+      3794,
+      4078,
+      3860,
+      4072,
+      3141,
+      3207,
+      3691,
+      5011,
+      2743,
+      2837,
+      3650,
+      3629,
+      3776,
+      4111,
+      4080,
+      4311,
+      3355,
+      3474,
+      3771,
+      5258,
+      2937,
+      3046,
+      3389,
+      2557,
+      4301,
+      5763,
+      5357,
+      5004,
+      4646,
+      4518,
+      4567,
+      6648,
+      4182,
+      3692,
+      5858,
+      5581,
+      5450,
+      5898,
+      5517,
+      5722,
+      4792,
+      4823,
+      5579,
+      7407,
+      3886,
+      4022,
+      5271,
+      5228,
+      5278,
+      5949,
+      5658,
+      5887,
+      4953,
+      4957,
+      5271,
+      7385,
+      4061,
+      4067,
+      5253,
+      5236,
+      5416,
+      5775,
+      5708,
+      5940,
+      4965,
+      4865,
+      5366,
+      7126
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Total mail-order and e-commerce sales of sporting goods in the United States from 2003 to 2022 (in million U.S. dollars)",
+   "short": "Mail-order and e-commerce sales of sporting goods in the U.S. 2003-2022",
+   "unit": "million U.S. dollars",
+   "description": "In the United States, the value of sporting goods e-commerce sales was 33.6 billion U.S. dollars in 2022, down from 37 billion U.S. dollars in 2021. In 2022, total mail-order and e-commerce sales of sporting goods added up to 39 billion U.S. dollars.",
+   "note": "United States; 2003 to 2022",
+   "source": "US Census Bureau",
+   "kind": "timeseries",
+   "categories": [
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Total",
+     "values": [
+      3053,
+      3579,
+      4179,
+      4502,
+      5567,
+      5824,
+      6058,
+      6430,
+      7133,
+      8837,
+      10398,
+      11624,
+      14144,
+      16725,
+      16547,
+      20738,
+      22679,
+      35918,
+      40515,
+      39083
+     ]
+    },
+    {
+     "name": "E-commerce",
+     "values": [
+      1155,
+      1430,
+      1912,
+      2402,
+      3178,
+      3535,
+      3945,
+      4408,
+      5199,
+      6568,
+      8207,
+      9728,
+      12317,
+      14487,
+      14543,
+      18253,
+      20420,
+      32800,
+      37040,
+      33642
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Value of athletics and gymnastics equipment imports and exports in the United States from 2015 to 2022 (in million U.S. dollars)",
+   "short": "U.S. athletic and gymnastic equipment import and export trade value from 2015 to 2022",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, the value of athletics and gymnastics equipment imported to the United States was approximately 2.37 billion U.S. dollars, which is a significant drop compared to the previous year. U.S. exports had also experienced a decline of approximately 80 million U.S. dollars from 2022 to 2023.",
+   "note": "United States; 2015 to 2022",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Import",
+     "values": [
+      2115.03,
+      2136.99,
+      2335.85,
+      2551.74,
+      2731.65,
+      4288.46,
+      6450.7,
+      3286.51,
+      2372.57
+     ]
+    },
+    {
+     "name": "Export",
+     "values": [
+      861.48,
+      827.99,
+      857.54,
+      877.87,
+      838.43,
+      720.28,
+      849.67,
+      746.59,
+      665.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Manufacturers (wholesale) sales sports products industry in the U.S. from 2008 to 2023 (in billion U.S. dollars)",
+   "short": "Wholesale sales of the U.S. sporting goods industry in the U.S. 2008-2023",
+   "unit": "billion U.S. dollars",
+   "description": "The statistic depicts the manufacturers' (wholesale) sales of sporting goods equipment, fitness equipment, sports apparel, athletic footwear, and sports licensed merchandise in the U.S. from 2008 to 2023. In 2023, wholesale sales amounted to about 121 billion U.S. dollars, which is a record for the industry.",
+   "note": "United States; 2008 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      75,
+      71.6,
+      74.19,
+      77.31,
+      81.4,
+      84.28,
+      85.98,
+      87.72,
+      90.22,
+      92.26,
+      95.87,
+      96.49,
+      111.74,
+      116.72,
+      121.66
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Sports products manufacturers' wholesale sales in the U.S. from 2008 to 2023, by category (in billion U.S. dollars)",
+   "short": "Wholesale sales of the sports products industry by category 2008-2023",
+   "unit": "billion U.S. dollars",
+   "description": "The statistic shows the wholesale sales of sporting goods equipment, sports apparel, fitness equipment, athletic footwear, and sports licensed merchandise in the United States from 2008 to 2023. In 2023, sales in the athletic footwear category amounted to approximately 21.5 billion U.S. dollars.",
+   "note": "United States; 2008 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Exercise equipment",
+     "values": [
+      4.2,
+      4.2,
+      4.34,
+      4.49,
+      4.7,
+      4.84,
+      5.06,
+      5.12,
+      5.2,
+      5.18,
+      5.37,
+      5.55,
+      6.9,
+      7.89,
+      7.59,
+      8.26
+     ]
+    },
+    {
+     "name": "Licensed merchandise",
+     "values": [
+      8.01,
+      6.9,
+      7.3,
+      7.39,
+      7.53,
+      7.67,
+      7.81,
+      7.96,
+      7.93,
+      8.21,
+      8.69,
+      9.1,
+      8.65,
+      10.78,
+      11.54,
+      12.56
+     ]
+    },
+    {
+     "name": "Athletic footwear",
+     "values": [
+      12.4,
+      12.3,
+      12.61,
+      13.18,
+      13.63,
+      13.88,
+      14.48,
+      14.99,
+      15.41,
+      15.82,
+      16.55,
+      17.26,
+      16.58,
+      19.98,
+      20.38,
+      21.55
+     ]
+    },
+    {
+     "name": "Sports equipment",
+     "values": [
+      21.8,
+      20.2,
+      20.37,
+      20.89,
+      21.48,
+      22.23,
+      22.83,
+      23.59,
+      24.17,
+      24.91,
+      25.06,
+      26.33,
+      28.01,
+      30.76,
+      32.18,
+      32.97
+     ]
+    },
+    {
+     "name": "Athletic apparel",
+     "values": [
+      29.64,
+      28.17,
+      29.58,
+      31.38,
+      31.85,
+      32.78,
+      34.1,
+      34.4,
+      35.05,
+      36.15,
+      36.6,
+      37.72,
+      36.36,
+      42.33,
+      45.02,
+      46.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "U.S. consumer fitness equipment wholesale sales from 2007 to 2023 (in billion U.S. dollars)",
+   "short": "U.S. consumer fitness equipment wholesale sales 2007-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, manufacturers' wholesale sales of home fitness equipment reached slightly over 6.5 billion U.S. dollars, reflecting an eight percent increase on-year. In contrast, institutional fitness equipment sales in the U.S. amounted to about 1.69 billion U.S. dollars in the same year.",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.55,
+      3.18,
+      3.18,
+      3.32,
+      3.44,
+      3.56,
+      3.58,
+      3.75,
+      3.77,
+      3.79,
+      3.76,
+      3.86,
+      3.98,
+      5.59,
+      6.42,
+      6.08,
+      6.56
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Fitness center equipment U.S. wholesale sales from 2007 to 2023 (in million U.S. dollars)",
+   "short": "Institutional fitness equipment wholesale sales in the U.S. 2007-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the commercial fitness equipment wholesale sales in the United States for use in fitness centers in the U.S. from 2007 to 2023. In 2023, institutional wholesale sales of fitness equipment reached approximately 1.69 billion U.S. dollars.",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1149,
+      1041,
+      970,
+      1023,
+      1050,
+      1139,
+      1257,
+      1308,
+      1349,
+      1406,
+      1419,
+      1509,
+      1566,
+      1302,
+      1464,
+      1515,
+      1693
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Wholesale sales of home gyms for consumers in the United States from 2007 to 2023 (in million U.S. dollars)",
+   "short": "Wholesale sales (consumer segment) of home gyms in the U.S. 2007-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the wholesale sales of home gyms in the United States from 2007 to 2023. In 2023, wholesale sales of these products reached an estimated 463 million U.S. dollars, falling slightly from the previous year. This figure nevertheless represented a 9.3 percent increase on-year..",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      286,
+      232,
+      199,
+      199,
+      194,
+      190,
+      178,
+      215,
+      211,
+      210,
+      204,
+      209,
+      221,
+      384,
+      466,
+      424,
+      463
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Wholesale sales of exercise cycles for consumers in the U.S. from 2007 to 2023 (in million U.S. dollars)",
+   "short": "Wholesale sales (consumer segment) of exercise cycles in the U.S. 2007-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the wholesale sales of exercise cycles for consumers in the United States from 2007 to 2023. In 2023, wholesale sales of these home use products reached slightly over one billion U.S. dollars, more than double the sales generated in 2019.",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      393,
+      344,
+      344,
+      358,
+      377,
+      368,
+      369,
+      394,
+      397,
+      409,
+      415,
+      436,
+      472,
+      789,
+      1003,
+      916,
+      1028
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Wholesale sales of elliptical machines for consumers in the U.S. from 2007 to 2023 (in million U.S. dollars)",
+   "short": "Wholesale sales (consumer segment) of elliptical machines in the U.S. 2007-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the wholesale sales of elliptical machines for consumers in the United States from 2007 to 2023. In 2023, sales of these consumer products reached approximately 807 million U.S. dollars.",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      763,
+      687,
+      721,
+      786,
+      842,
+      884,
+      904,
+      925,
+      934,
+      913,
+      896,
+      900,
+      904,
+      927,
+      969,
+      838,
+      807
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Wholesale sales of free weights for consumers in the U.S. from 2007 to 2023 (in million U.S. dollars)",
+   "short": "Wholesale sales (consumer segment) of free weights in the U.S. 2007-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the wholesale sales of home use free weights in the United States from 2007 to 2023. In 2023, wholesale sales of these consumer products reached over 560 million U.S. dollars, a 11.2 percent increase from the previous year.",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      175,
+      167,
+      162,
+      162,
+      160.6,
+      171.5,
+      175.2,
+      178.9,
+      182.7,
+      186.6,
+      190.6,
+      194.7,
+      201,
+      410.5,
+      483.2,
+      504.3,
+      560.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Wholesale sales of abdominal machines for consumers in the U.S. from 2007 to 2023 (in million U.S. dollars)",
+   "short": "Wholesale sales (consumer segment) of ab machines in the U.S. 2007-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the wholesale sales of abdominal machines for consumers in the United States from 2007 to 2023. In 2023, wholesale sales of these home use products reached approximately 255 million U.S. dollars.",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      230,
+      205,
+      195,
+      195,
+      198,
+      208,
+      210,
+      212,
+      212,
+      209,
+      211,
+      213,
+      210,
+      291,
+      290,
+      260,
+      255
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Net sales of Dick's Sporting Goods in the United States from fiscal 2006 to fiscal 2023 (in billion U.S. dollars)",
+   "short": "Net sales of Dick's Sporting Goods U.S. 2006-2023",
+   "unit": "billion U.S. dollars",
+   "description": "The timeline depicts the net sales of Dick's Sporting Goods from 2006 to 2023. In the fiscal year of 2023 ended February 3, 2024, Dick's generated approximately 13 billion U.S. dollars of net sales, which is an increase compared to the previous year.",
+   "note": "United States; 2006 to 2023*",
+   "source": "Dick's Sporting Goods",
+   "kind": "timeseries",
+   "categories": [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.11,
+      3.89,
+      4.13,
+      4.41,
+      4.87,
+      5.21,
+      5.84,
+      6.21,
+      6.81,
+      7.27,
+      7.92,
+      8.59,
+      8.44,
+      8.75,
+      9.58,
+      12.29,
+      12.37,
+      12.98
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Net sales of Dick's Sporting Goods in the United States from 2008 to 2023, by merchandise category (in million U.S. dollars)",
+   "short": "Net sales of Dick's Sporting Goods U.S. 2008-2023, by product type",
+   "unit": "million U.S. dollars",
+   "description": "Dick's Sporting Goods' apparel sales amounted to approximately 4.33 billion U.S. dollars in the fiscal year of 2023 ended February 3, 2024. The company's hardline segment, which includes sporting goods equipment, generated nearly five billion U.S. dollars that year.",
+   "note": "United States; 2008 to 2023***; * Includes items such as sporting goods equipment, fitness equipment, golf equipment and hunting and fishing gear. ** Includes the Company’s non-merchandise sales categories, including in-store [...] Read more",
+   "source": "Dick's Sporting Goods",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Hardlines*",
+     "values": [
+      2217,
+      2453,
+      2619,
+      2726,
+      2755,
+      2763,
+      2992,
+      3264,
+      3574,
+      3887,
+      3632,
+      3695,
+      4429,
+      5408,
+      4952.2,
+      4915.5
+     ]
+    },
+    {
+     "name": "Apparel",
+     "values": [
+      1254,
+      1251,
+      1382,
+      1504,
+      1929,
+      2184,
+      2461,
+      2553,
+      2756,
+      2920,
+      2962,
+      3109,
+      3180,
+      4131,
+      4218.1,
+      4329.8
+     ]
+    },
+    {
+     "name": "Footwear",
+     "values": [
+      659,
+      709,
+      870,
+      982,
+      1115,
+      1222,
+      1416,
+      1403,
+      1529,
+      1695,
+      1719,
+      1811,
+      1834,
+      2563,
+      2979.1,
+      3388.7
+     ]
+    },
+    {
+     "name": "Other**",
+     "values": [
+      37,
+      44,
+      45,
+      51,
+      63,
+      88,
+      123,
+      135,
+      141,
+      191,
+      218.8,
+      350.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Net sales of Hibbett Sports in the United States from fiscal year 2015 to 2024 (in million U.S. dollars)",
+   "short": "Hibbett Sports' net sales in the U.S. from 2015 to 2024",
+   "unit": "million U.S. dollars",
+   "description": "The timeline depicts the net sales of Hibbett Sports, Inc. from financial year of 2015 to 2024. In the fiscal year ended on February 3, 2024, net sales of Hibbett Sports amounted to around 1.73 billion U.S. dollars, which is an increase from last year's figure.",
+   "note": "United States; 2015 to 2024",
+   "source": "Hibbett Sports",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      913.49,
+      943.1,
+      972.96,
+      968.22,
+      1008.68,
+      1184.23,
+      1419.66,
+      1691.18,
+      1708.32,
+      1728.89
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Net sales of Hibbett Sports in the United States from fiscal year 2017 to 2024, by product category (in million U.S. dollars)",
+   "short": "Hibbett Sports' net sales in the U.S. from 2017 to 2024, by product category",
+   "unit": "million U.S. dollars",
+   "description": "In the fiscal year ended on February 3, 2024, Hibbett Sports' footwear sales accounted for more than 1.2 billion U.S. dollars of the company's total net sales. Footwear revenue continued growing across the reported time period, while sales of apparel declined in compared to the previous financial year.",
+   "note": "United States; 2017 to 2024",
+   "source": "Hibbett Sports",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Footwear",
+     "values": [
+      505.94,
+      531.55,
+      579.77,
+      735.61,
+      911.79,
+      1044.19,
+      1135.48,
+      1214.72
+     ]
+    },
+    {
+     "name": "Apparel",
+     "values": [
+      282.16,
+      269.51,
+      276.73,
+      307.6,
+      384.43,
+      483.24,
+      412.02,
+      329.41
+     ]
+    },
+    {
+     "name": "Equipment",
+     "values": [
+      184.86,
+      167.16,
+      152.19,
+      141.02,
+      123.44,
+      163.76,
+      160.82,
+      184.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Net sales of Big 5 Sporting Goods in the United States from 2017 to 2023 (in million U.S. dollars)",
+   "short": "Big 5 Sporting Goods' net sales in the U.S. from 2017 to 2023",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, net sales of Big 5 Sporting Goods stood at approximately 885 million U.S. dollars in the United States, a noticeable decrease from last year's numbers. Sales were at their highest in 2021, when the company generated a net revenue of more than 1.16 billion U.S. dollars.",
+   "note": "United States; 2017 to 2023",
+   "source": "Big 5 Sporting Goods",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      1009.64,
+      987.58,
+      996.5,
+      1041.21,
+      1161.82,
+      995.54,
+      884.75
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Dollar sales share of Big 5 Sporting Goods in the United States in 2023, by product category (in million U.S. dollars)",
+   "short": "Big 5 Sporting Goods' dollar sales share in the U.S. in 2023, by product category",
+   "unit": "million U.S. dollars",
+   "description": "This statistic depicts the dollar sales share of Big 5 Sporting Goods in the United States, by product category. In the fiscal year of 2023, Big 5 Sporting Goods' hard goods category sales amounted to some 475 million U.S. dollars.",
+   "note": "United States; 2023",
+   "source": "Big 5 Sporting Goods",
+   "kind": "categorical",
+   "categories": [
+    "Hard goods",
+    "Athletic and sport footwear",
+    "Athletic and sport apparel",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      475.35,
+      219.18,
+      185.06,
+      5.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Net sales of Nautilus Inc. worldwide from 2020 to 2023 (in million U.S. dollars)",
+   "short": "Global revenue of Nautilus Inc. from 2020 to 2023",
+   "unit": "million U.S. dollars",
+   "description": "In its financial year ended on March 31, 2023, Nautilus Inc., an American fitness goods manufacturer, had global net sales amounting to about some 287 million U.S. dollars, which is a significant decrease compared to the previous year. In the year ended March 31, 2022, the company's global net sales amounted to roughly 590 million U.S. dollars.",
+   "note": "Worldwide; 2020 to 2023",
+   "source": "Nautilus Inc.",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      318.61,
+      664.91,
+      589.53,
+      286.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Net sales of Nautilus Inc. worldwide in 2023, by region (in million U.S. dollars)",
+   "short": "Global revenue of Nautilus Inc. in 2023, by region",
+   "unit": "million U.S. dollars",
+   "description": "In the year ended March 31, 2022, Nautilus Inc., a U.S. fitness equipment manufacturer, had net sales amounting to roughly 232 million U.S. dollars in the United States, making it the company's main market by far. Nautilus Inc. generated just under four and a half million U.S. dollars in the EMEA region.",
+   "note": "Worldwide; 2023",
+   "source": "Nautilus Inc.",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Canada",
+    "Europe, the Middle East And Africa",
+    "All other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      232.14,
+      37.82,
+      4.37,
+      12.44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Net sales of Nautilus Inc. worldwide in 2023, by product line (in million U.S. dollars)",
+   "short": "Global revenue of Nautilus Inc. in 2023, by product line",
+   "unit": "million U.S. dollars",
+   "description": "In the fiscal year ended March 31, 2023, Nautilus Inc.'s cardio products segment generated approximately 156 million U.S. dollars. The company's strength products made a total of about 127 million dollars that year.",
+   "note": "Worldwide; 2023; Financial year ended on March 31, 2023",
+   "source": "Nautilus Inc.",
+   "kind": "categorical",
+   "categories": [
+    "Cardio products*",
+    "Strength products**"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      156.11,
+      127.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Share of Americans interested in health and fitness as of December 2023, by income",
+   "short": "Share of Americans interested in health and fitness 2023",
+   "unit": "",
+   "description": "The statistics shows the share of Americans who were interested in health and fitness in 2023. The results were sorted by income tier. As of December 2023, 42 percent of respondents who stated their income was high said they were interested in health and fitness. The survey was conducted in 2023, among 49,514 respondents.",
+   "note": "United States; January to December 2023; 49514 respondents; 18-64 years",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "High income",
+    "Medium income",
+    "Low income"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.42,
+      0.36,
+      0.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Consumers who purchased fitness gear in the past month and plan to purchase in the next three months in the United States in 2023",
+   "short": "Fitness gear buying behavior and plans among consumers in the United States 2023",
+   "unit": "",
+   "description": "In spring 2023, approximately 13 percent of consumers in the United States said they had purchased fitness gear in the last month. A slightly higher share of respondents said they planned to buy fitness equipment in the near future.",
+   "note": "United States; Spring 2023; 1,500 respondents; 21-64 years",
+   "source": "Provoke Insights",
+   "kind": "categorical",
+   "categories": [
+    "Purchased in the last month",
+    "Plan to purchase in the next three months"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Leading shopping habits among shoppers who bought fitness gear compared to shoppers who did not in the United States in 2023",
+   "short": "Shopping habits among fitness gear buyers in the United States 2023",
+   "unit": "",
+   "description": "In 2023, more than 40 percent of U.S. consumers that purchased fitness equipment said they would switch brands if the brand did not align with their own values. In contrast, just over a third of people who did not buy fitness gear said the same.",
+   "note": "United States; Fall 2023; 1,502*; 21-64 years",
+   "source": "Provoke Insights",
+   "kind": "categorical",
+   "categories": [
+    "Enjoy browsing through store aisles",
+    "Switch brands if they do not align with values",
+    "Stick with familiar brands"
+   ],
+   "series": [
+    {
+     "name": "Purchased fitness gear",
+     "values": [
+      0.62,
+      0.42,
+      0.31
+     ]
+    },
+    {
+     "name": "Did not purchase fitness gear",
+     "values": [
+      0.46,
+      0.34,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Consumers who purchased fitness equipment in the past month in the United States from 2021 to 2023, by season",
+   "short": "Consumers who bought fitness gear in the United States 2021-2023, by season",
+   "unit": "",
+   "description": "In the fall of 2023, approximately 14 percent of consumers in the United States said they had purchased fitness gear in the last month, a slight increase compared to previously studied seasons and especially compared to fall 2022.",
+   "note": "United States; Fall 2023; 1,502 respondents; 21-65 years",
+   "source": "Provoke Insights",
+   "kind": "categorical",
+   "categories": [
+    "Fall 2021",
+    "Spring 2022",
+    "Fall 2022",
+    "Spring 2023",
+    "Fall 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.12,
+      0.07,
+      0.13,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Leading channels used when buying fitness equipment among consumers in the United States in 2023",
+   "short": "Leading channels used when buying fitness gear in the United States 2023",
+   "unit": "",
+   "description": "In 2023, approximately half of U.S. consumers who bought fitness equipment goods in the past month specifically purchased them in-store. Online channels were a popular second choice among fitness enthusiasts in the United States.",
+   "note": "United States; Fall 2023; 1,502 respondents; 21-65 years",
+   "source": "Provoke Insights",
+   "kind": "categorical",
+   "categories": [
+    "In-person",
+    "Online (computer)",
+    "Mobile (smartphone)",
+    "Phone call"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.37,
+      0.13,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Share of fitness equipment purchasers who would pay more for sustainably sourced items in the United States in 2023",
+   "short": "Fitness gear buyers who would pay more for sustainable items in the U.S. 2023",
+   "unit": "",
+   "description": "In 2023, the vast majority (more than 80 percent) of consumers who bought fitness equipment in the last month said they would be willing to pay more for sustainably sourced items.",
+   "note": "United States; Fall 2023; 215*; 21-65 years; Consumers who bought fitness gear in the past month; * For the entire study, 1,502 consumers were surveyed. Read more",
+   "source": "Provoke Insights",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.85,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Extra amount fitness equipment shoppers would be willing to pay for sustainable items in the United States in 2023",
+   "short": "Premium fitness gear buyers would pay for sustainable items in the U.S. 2023",
+   "unit": "",
+   "description": "In 2023, the vast majority of surveyed fitness equipment shoppers in the United States said they would be willing to invest more money in sustainable products. Specifically, about 35 percent of respondents said they would be willing to pay a premium of five to nine percent for sustainably sourced options. Only about five percent was willing to pay an additional 25 percent or more.",
+   "note": "United States; Fall 2023; 182*; 21-65 years; Consumers who bought fitness gear in the past month and are willing to pay more for sustainable items; * For the entire study, 1,502 consumers were surveyed. This question was phrased by the [...] Read more",
+   "source": "Provoke Insights",
+   "kind": "categorical",
+   "categories": [
+    "1 to 4 percent premium",
+    "5 to 9 percent premium",
+    "10 to 24 percent premium",
+    "Premium of 25 percent or more"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3,
+      0.35,
+      0.3,
+      0.06
+     ]
+    }
+   ]
+  }
+ ]
+}

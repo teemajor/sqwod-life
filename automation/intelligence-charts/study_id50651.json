@@ -1,0 +1,998 @@
+{
+ "studyId": "50651",
+ "study": "diets and weight loss in the us",
+ "file": "research/statista/study_id50651_diets-and-weight-loss-in-the-us.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Prevalence of obesity among adults aged 18 and over in the U.S. from 2011 to 2022",
+   "short": "Obesity prevalence among U.S. adults aged 18 and over 2011-2022",
+   "unit": "",
+   "description": "The prevalence of obesity in the United States has risen gradually over the past decade. As of 2022, around 33 percent of the population aged 18 years and older was obese. Obesity is a growing problem in many parts of the world but is particularly troubling in the United States.",
+   "note": "United States; 18 years and older",
+   "source": "CDC (BRFSS)",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.274,
+      0.277,
+      0.283,
+      0.289,
+      0.289,
+      0.296,
+      0.301,
+      0.309,
+      0.314,
+      0.319,
+      0.33,
+      0.333
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Percentage of adults with obesity in the United States as of 2022, by state",
+   "short": "Percentage of obese U.S. adults by state 2022",
+   "unit": "",
+   "description": "West Virginia, Louisiana, and Oklahoma are the U.S. states with the highest percentage of their population who are obese. The states with the lowest percentage of their population who are obese include Colorado, Hawaii, and Vermont.",
+   "note": "United States",
+   "source": "CDC Percentage of adults",
+   "kind": "categorical",
+   "categories": [
+    "West Virginia",
+    "Louisiana",
+    "Oklahoma",
+    "Mississippi",
+    "Tennessee",
+    "Alabama",
+    "Ohio",
+    "Delaware",
+    "Indiana",
+    "Kentucky",
+    "Wisconsin",
+    "Arkansas",
+    "Iowa",
+    "Georgia",
+    "South Dakota"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.41,
+      0.401,
+      0.4,
+      0.395,
+      0.389,
+      0.383,
+      0.381,
+      0.379,
+      0.377,
+      0.377,
+      0.377,
+      0.374,
+      0.374,
+      0.37,
+      0.368
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Percentage of adults that were physically inactive in the United States from 2017-2020, by state",
+   "short": "Percentage of physically inactive U.S. adults by state 2017-2020",
+   "unit": "",
+   "description": "This statistic represents the percentage of adults in the United States that have done no physical activity or exercise within the preceding 30 days, from 2017 to 2020. During this time, Mississippi had the highest rate of physical inactivity among U.S. states with 33.2 percent of adults reporting no physical activity or exercise besides their job. The state of Colorado had the lowest rates of physical inactivity at this time.",
+   "note": "United States; 2017-2020; 18 years and older",
+   "source": "CDC (BRFSS) Percentage of adults",
+   "kind": "categorical",
+   "categories": [
+    "Puerto Rico",
+    "Mississippi",
+    "Kentucky",
+    "Arkansas",
+    "Louisiana",
+    "Alabama",
+    "Oklahoma",
+    "West Virginia",
+    "Guam",
+    "Tennessee",
+    "Indiana",
+    "Missouri",
+    "South Carolina",
+    "Texas",
+    "Georgia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.494,
+      0.332,
+      0.325,
+      0.311,
+      0.308,
+      0.307,
+      0.305,
+      0.301,
+      0.295,
+      0.289,
+      0.285,
+      0.278,
+      0.276,
+      0.275,
+      0.274
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Prevalence of severe obesity among U.S. adults from 2017 to March 2020, by age group",
+   "short": "Severe obesity prevalence among U.S. adults 2017-2020, by age group",
+   "unit": "",
+   "description": "From 2017 to March 2020, the prevalence of severe obesity in the United States was highest among those aged 40-59 years. This statistic shows the age-adjusted prevalence of severe obesity among U.S. adults aged 20 and over from 2017 to March 2020, by age group.",
+   "note": "United States; 20 years and older",
+   "source": "CDC (National Health and Nutrition Examination Survey (NHANES))",
+   "kind": "categorical",
+   "categories": [
+    "All",
+    "20-39",
+    "40-59",
+    "60 and over"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.092,
+      0.097,
+      0.107,
+      0.061
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Prevalence of severe obesity among U.S. adults aged 20 and older from 2017 to March 2020, by gender",
+   "short": "Prevalence of severe obesity among adults in the U.S. 2017-2020, by gender",
+   "unit": "",
+   "description": "From 2017 to March 2020, the prevalence of severe obesity in U.S. adults was 9.2 percent and was higher in women than men. This statistic shows the age-adjusted prevalence of severe obesity among adults aged 20 and over in the United States from 2017 to March 2020, by gender.",
+   "note": "United States; 2017 to March 2020; 20 years and older",
+   "source": "CDC (National Health and Nutrition Examination Survey (NHANES))",
+   "kind": "categorical",
+   "categories": [
+    "All",
+    "Men",
+    "Women"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.092,
+      0.066,
+      0.117
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Prevalence of severe obesity among U.S. adults from 2017 to March 2020, by race/ethnicity",
+   "short": "Severe obesity prevalence among U.S. adults 2017-2020, by race/ethnicity",
+   "unit": "",
+   "description": "From 2017 to March 2020, the prevalence of severe obesity in the U.S. was highest among non-Hispanic blacks. This statistic shows the age-adjusted prevalence of severe obesity among U.S. adults aged 20 and over from 2017 to March 2020, by race/ethnicity.",
+   "note": "United States; 20 years and older",
+   "source": "CDC (National Health and Nutrition Examination Survey (NHANES))",
+   "kind": "categorical",
+   "categories": [
+    "Non-Hispanic black",
+    "Non-Hispanic white",
+    "All",
+    "Hispanic",
+    "Non-hispanic Asian"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.14,
+      0.095,
+      0.092,
+      0.074,
+      0.018
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "U.S. population: What are the reasons for watching your diet?",
+   "short": "Reasons for watching diet in the U.S. 2020",
+   "unit": "",
+   "description": "This statistic shows the reasons for watching diet in the United States in 2020. The data has been calculated by Statista based on the U.S. Census data and Simmons National Consumer Survey (NHCS). According to this statistic, 100.2 million Americans watched their diet to lose weight in 2020.",
+   "note": "United States; 2020; among respondents watching diet; * The figures presented reflect the respective population in the United States. Statista calculated the figures based on the U.S. Census data and Simmons National Consumer Survey [...] Read more",
+   "source": "Statista (based on MRI-Simmons data) Number of consumers in millions",
+   "kind": "categorical",
+   "categories": [
+    "To lose weight",
+    "Cholesterol level",
+    "Blood sugar level",
+    "To maintain weight",
+    "Hypertension",
+    "Fat intake",
+    "Diabetes",
+    "Salt intake",
+    "Heart disease",
+    "Calcium intake",
+    "Lactose intolerance",
+    "Food allergy",
+    "Gluten intolerance",
+    "To gain weight",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      100.2,
+      60.19,
+      57.08,
+      45.71,
+      38.73,
+      34.51,
+      32.77,
+      28.16,
+      19.6,
+      10.41,
+      9.23,
+      7.79,
+      6.26,
+      4.39,
+      13.92
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Top reason for dietary supplement use among U.S. adults as of 2018, by gender",
+   "short": "Dietary supplement use top reason - U.S. adults by gender 2018",
+   "unit": "",
+   "description": "This statistic depicts the various reasons for dietary supplement usage among U.S. adults by gender, based on the CRN Consumer survey in 2018. Among female U.S. adults who used supplements, some 50 percent reported using dietary supplements to overall health and wellness.",
+   "note": "United States; August 24-28, 2018; 1,530 respondents; 18 years and older; supplement users",
+   "source": "CRN (Consumer Survey)",
+   "kind": "categorical",
+   "categories": [
+    "Overall health/wellness benefits"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.42
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Leading motivations to stick to diet-related New Year's resolutions in the United States in 2020*",
+   "short": "Main reasons for Americans to commit to New Year's diet changes in 2020",
+   "unit": "",
+   "description": "Motivation to improve long-term health was the leading motivation to stick to the dietary changes made as a New Year's resolution in 2020 for some 27 percent of survey respondents in the United States.",
+   "note": "United States; February 3-4, 2020; 410 respondents; 18 years and older; *Original survey question was the following: \"Why do you think you have been at least somewhat successful at sticking with the eating and drinking changes you [...] Read more",
+   "source": "Food Insight; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Motivated to improve long-term health",
+    "Very motivated",
+    "Changes make sense for lifestyle",
+    "Encouraged by the results",
+    "Enjoy the food",
+    "Increased energy/feeling good",
+    "Support of family and friends",
+    "Affordable changes",
+    "Motivated by financial incentives"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.23,
+      0.22,
+      0.21,
+      0.2,
+      0.17,
+      0.17,
+      0.13,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Leading changes in eating and drinking habits that consumers made at the start of the new year in the United States in 2020*",
+   "short": "Main diet-related New Year's resolutions made by Americans in 2020",
+   "unit": "",
+   "description": "Avoiding or limiting sugar was the most common dietary change made as a New Year's resolution in 2020 for some 23 percent of survey respondents in the United States. In addition, around 16 percent have started a weight loss plan or program at the beginning of the new year.",
+   "note": "United States; February 3 to 4, 2020; 419 respondents; 18 years and older; *Original survey question was the following: \"What eating or drinking change or changes did you start at the beginning of this year (January 2020)? Please select up [...] Read more",
+   "source": "Food Insight; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Avoiding or limiting sugar",
+    "Clean eating",
+    "Weight loss plan or program",
+    "Low-card diet",
+    "Mindful or intuitive eating",
+    "Avoiding or limiting alcohol",
+    "Intermittent fasting",
+    "Ketogenic diet",
+    "Vegan diet",
+    "Flexitarian diet",
+    "Mediterranean diet",
+    "DASH diet",
+    "Whole30",
+    "Paleo diet",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.23,
+      0.19,
+      0.16,
+      0.15,
+      0.13,
+      0.11,
+      0.08,
+      0.07,
+      0.07,
+      0.05,
+      0.05,
+      0.05,
+      0.04,
+      0.04,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Leading obstacles for consumers to stick to diet-related New Year's resolutions in the United States in 2020*",
+   "short": "Main reasons Americans find it hard to commit to New Year's diet changes in 2020",
+   "unit": "",
+   "description": "Stress was one of the biggest challenges for some 17 percent of survey respondents to stick to their diet-related New Year's resolutions in the United States in 2020. The fact that changes are expensive was also a demotivating factor for around 15 percent of respondents.",
+   "note": "United States; February 3 to 4, 2020; 410 respondents; 18 years and older; *Original survey question was the following: \"What, if anything, has been your biggest challenge in maintaining the eating and drinking changes you had planned? [...] Read more",
+   "source": "Food Insight; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Very stressed",
+    "The changes take time",
+    "The changes are very restrictive",
+    "The changes are expensive",
+    "Very busy",
+    "Very hungry",
+    "The changes are consuming thoughts",
+    "Not seeing results",
+    "Not sure how to stick with changes",
+    "Do not like the food",
+    "Not motivated",
+    "Do not have the support of family and friends",
+    "Other",
+    "Did not find it challenging"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.17,
+      0.17,
+      0.16,
+      0.15,
+      0.15,
+      0.14,
+      0.11,
+      0.09,
+      0.09,
+      0.06,
+      0.05,
+      0.04,
+      0.05,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Dollar sales share of the leading weight control/nutritionals liquid/powder in the United States as of 2019*",
+   "short": "U.S. sales share of leading weight control/nutritionals liquid/powder brands 2019",
+   "unit": "",
+   "description": "This statistic shows the dollar sales share of the leading weight control/nutritionals liquid and powders in the United States as if 2019. In that year, the Ensure weight control brand generated 10.9 percent of the sales in the United States.",
+   "note": "United States; 52 weeks ended June 16, 2019; * For total U.S. multi-outlet (supermarkets, drug stores, mass market retailers, military commissaries and select club and dollar retail chains) for the 52 weeks ended June 17, 2018. Read more",
+   "source": "Drug Store News; IRI Sales share Brand",
+   "kind": "categorical",
+   "categories": [
+    "Premier Protein",
+    "Ensure",
+    "Private label",
+    "PediaSure",
+    "Atkins",
+    "Slim Fast",
+    "Ensure Plus",
+    "Boost",
+    "Muscle Milk",
+    "Glucerna"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.117,
+      0.109,
+      0.076,
+      0.071,
+      0.057,
+      0.05,
+      0.041,
+      0.04,
+      0.039,
+      0.032
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Unit sales of the leading weight control/nutritional liquid and powder brands in the United States in 2019 (in millions)*",
+   "short": "U.S. unit sales of the leading weight control brands 2019",
+   "unit": "",
+   "description": "In 2019, the Premier Protein brand sold approximately 33.4 million units of weight control, nutrional liquids and powders in the United States. The Ensure brand sold approximately 35.4 million units of those products that year.",
+   "note": "United States; 52 weeks ended June 16, 2019; * For total U.S. multi-outlet (supermarkets, drug stores, mass market retailers, military commissaries and select club and dollar retail chains) for the 52 weeks ended June 16, 2019. Read more",
+   "source": "Drug Store News; IRI Unit sales in millions Brand",
+   "kind": "categorical",
+   "categories": [
+    "Premier Protein",
+    "Ensure",
+    "Private label",
+    "PediaSure",
+    "Atkins",
+    "Slim Fast",
+    "Ensure Plus",
+    "Boost",
+    "Muscle Milk",
+    "Glucerna"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      38.2,
+      35.4,
+      31.6,
+      18.7,
+      27.2,
+      19,
+      11.1,
+      10.7,
+      20.8,
+      8.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Sales growth of leading brands of weight control liquids and powders in the United States in 2019 and 2020 (change to prior sales year)*",
+   "short": "U.S.: Sales growth of leading weight control powder and liquid brands 2019-2020",
+   "unit": "",
+   "description": "In the 52 week period ending on May 17 2020, Premier Protein brand experienced a sales growth of 18.1 percent in the weight control powder and liquids market, compared to the previous year in the United States. PediaSure experienced a sales depreciation of 0.3 percent that year.",
+   "note": "United States; 52 weeks ended Junge 17, 2019 to 52 weeks ended May 17, 2020; * Total calculation for the 52 weeks ended June 16, 2019, February 23, 2020, and May 17 2020 across total U.S. multi-outlet (supermarkets, drug stores, mass [...] Read more",
+   "source": "Drug Store News; IRI Change to prior sales year Brand",
+   "kind": "categorical",
+   "categories": [
+    "Premier Protein",
+    "Private label",
+    "Ensure",
+    "PediaSure",
+    "Muscle Milk",
+    "Glucerna",
+    "Slim Fast",
+    "Boost",
+    "Ensure Plus",
+    "Atkins"
+   ],
+   "series": [
+    {
+     "name": "May 17, 2020",
+     "values": [
+      0.181,
+      0.131,
+      0.034,
+      -0.003,
+      -0.138
+     ]
+    },
+    {
+     "name": "Feb 23, 2020",
+     "values": [
+      0.211,
+      0.104,
+      -0.041,
+      -0.024,
+      -0.08
+     ]
+    },
+    {
+     "name": "Jun 16, 2019",
+     "values": [
+      0.13,
+      0.042,
+      0.043,
+      0.008,
+      0.073,
+      0.009,
+      0.139,
+      0.102,
+      -0.019,
+      0.241
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Dollar sales of the leading weight control/nutritional liquid brands in U.S. convenience stores (C-stores) in 2022 (in million U.S. dollars)",
+   "short": "Dollar sales of the leading weight control/nutritional brands in U.S. C-stores 2022",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the dollar sales of the leading weight control/nutritional liquid brands in U.S. convenience stores in 2022. In that year, Muscle Milk generated sales of about 156.3 million U.S. dollars from U.S. convenience stores.",
+   "note": "United States; 2022; C-store sales, 52 weeks ending Dec. 27, 2021",
+   "source": "CSP; IRI Sales in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Core Power",
+    "Evolve",
+    "Muscle Milk",
+    "Celsius",
+    "Gatorade"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      158.9,
+      156.3,
+      156.3,
+      125.8,
+      4.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Weight loss products launches worldwide from 2008 to 2018",
+   "short": "Weight loss products launches worldwide 2008-2018",
+   "unit": "",
+   "description": "As of July 2018, the number of launches for weight management related products worldwide amounted to about 11 thousand products. In 2017, almost fifteen thousand weight management related products were launched worldwide.",
+   "note": "Worldwide; January 2008 to July 2018",
+   "source": "Agriculture and Agri-Food Canada; Mintel",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      7895,
+      7920,
+      8118,
+      8220,
+      9609,
+      12256,
+      13846,
+      14018,
+      13458,
+      14912,
+      10915
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading health and fitness apps in the Google Play Store worldwide in June 2023, by number of downloads (in millions)",
+   "short": "Leading Android health apps worldwide 2023, by downloads",
+   "unit": "millions",
+   "description": "In June 2023, the Blood Sugar app was the most-downloaded health and fitness app in the Google Play Store worldwide. The app generated approximately three million downloads from Android users. The Lose Weight App for Men, published by the Australian Leap Fitness Group was the second-most popular app with over two million downloads from global Android users. NoiseFit: Health & Fitness - which allows users to track their sleep and physical exercise ranked third with 1.79 million [...]",
+   "note": "Worldwide; June 2023; downloads from the Google Play Store",
+   "source": "AppTweak Number of downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "Blood Sugar",
+    "Lose Weight App for Men",
+    "NoiseFit: Health & Fitness",
+    "HryFine",
+    "Lose Weight App for Women",
+    "Lose Weight at Home in 30 Days",
+    "Home Workout - No Equipment",
+    "Flo Ovulation & Period Tracker",
+    "Google Fit: Activity Tracking",
+    "Splits Training in 30 Days",
+    "Blood Pressure App: BP Monitor",
+    "boAt Wearables",
+    "Blood Pressure App",
+    "Replika: My AI Friend",
+    "adidas Running: Sports Tracker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.93,
+      2.09,
+      1.79,
+      1.56,
+      1.31,
+      1.31,
+      1.25,
+      1.22,
+      1.09,
+      1.08,
+      0.87,
+      0.82,
+      0.78,
+      0.78,
+      0.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Leading health and fitness apps in the Google Play Store in the United States in September 2022, by number of downloads",
+   "short": "Leading Android health apps in the U.S. 2022, by downloads",
+   "unit": "",
+   "description": "In September 2022, Feesly was the most-downloaded health and fitness app in the Google Play Store in the United States. The app generated over 355.8 thousand downloads from Android users. Planet Fitness Workouts app was the second-most popular app with approximately 335 thousand downloads from U.S. Android users during the examined month.",
+   "note": "United States; September 2022; based on downloads to devices in the United States",
+   "source": "Airnow Number of downloads in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Feelsy: Stress Anxiety Relief",
+    "Planet Fitness Workouts",
+    "AllTrails: Hike, Bike & Run",
+    "Home Workout - No Equipment",
+    "Sweatcoin",
+    "Blood Pressure Pro",
+    "Six Pack in 30 Days",
+    "FitGift: more health more earn",
+    "DreamApp — dream analyzer",
+    "Blood Pressure App Pro"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      355815,
+      334920,
+      247922,
+      198435,
+      178585,
+      142539,
+      116669,
+      99741,
+      98139,
+      95271
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Which of these fitness or health services (website or app) have you used as a paying customer in the past 12 months?",
+   "short": "Online fitness and health service purchases by brand in the U.S. 2020",
+   "unit": "",
+   "description": "The displayed data on online fitness and health service purchases by brand shows results of the Statista Global Consumer Survey conducted in the United States in 2020. Some 32 percent of respondents answered the question \"Which of these fitness or health services (website or app) have you used as a paying customer in the past 12 months?\" with \"Full Fitness : Exercise Workout Trainer\".",
+   "note": "United States; 13 Jul to 21 Aug 2020 and 5 Feb to 19 Mar 2020; 337 respondents; 18-64 years; respondents who spent money on online fitness & health services (websites and apps)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Full Fitness : Exercise Workout Trainer",
+    "Period Tracker",
+    "AutoSleep Tracker for Watch",
+    "HeartWatch. Heart & Activity",
+    "Pocket Yoga",
+    "Instant Heart Rate",
+    "White Noise",
+    "My Macros+ | Diet & Calories",
+    "Relax Melodies P: Sleep Sounds",
+    "Streaks Workout",
+    "WaterMinder",
+    "Hydro Coach PRO",
+    "The Wonder Weeks",
+    "WomanLog Pro Calendar",
+    "WeCroak"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.24,
+      0.2,
+      0.18,
+      0.18,
+      0.16,
+      0.16,
+      0.13,
+      0.13,
+      0.1,
+      0.09,
+      0.08,
+      0.05,
+      0.05,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Fitness and health service online purchases in the U.S. as of March 2024",
+   "short": "Fitness and health service online purchases in the U.S. 2024",
+   "unit": "",
+   "description": "7 percent of U.S. respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2024, among 10,054 consumers.",
+   "note": "United States; April 2023 to March 2024; 10054 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Health tracking",
+    "Weight loss / healthy eating",
+    "Meditation / mindfulness / sleeping apps",
+    "Medication checkers / reminders",
+    "Contraception or fertility tracking (only shown to women)",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.07,
+      0.07,
+      0.06,
+      0.05,
+      0.04,
+      0.02,
+      0.9,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "U.S. population: Which brands of energy / diet snacks and bars do you eat most often?",
+   "short": "Most eaten brands of energy / diet snacks and bars in the U.S. 2020",
+   "unit": "",
+   "description": "This statistic shows the brands of energy / diet snacks and bars eaten most often in the United States in 2020. The data has been calculated by Statista based on the U.S. Census data and Simmons National Consumer Survey (NHCS). According to this statistic, 10.53 million Americans consumed Clif in 2020.",
+   "note": "United States; 2020; among consumers of energy / diet snacks and bars; * The figures presented reflect the respective population in the United States. Statista calculated the figures based on the U.S. Census data and Simmons National [...] Read more",
+   "source": "Statista (based on MRI-Simmons data) Number of consumers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Clif",
+    "Atkins Bar",
+    "Pure Protein",
+    "PowerBar Bars",
+    "Luna",
+    "Slim-Fast Bars",
+    "Gatorade Bars & Chews",
+    "Balance Bar",
+    "Zone Perfect",
+    "Think Thin",
+    "Met-Rx Protein Bar",
+    "Glucerna Bar",
+    "Snickers Marathon",
+    "Tiger's Milk",
+    "South Beach Diet Bars"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.53,
+      6.38,
+      6.34,
+      4.53,
+      4.23,
+      3.34,
+      2.53,
+      2.22,
+      2.05,
+      2.03,
+      1.62,
+      1.36,
+      1.08,
+      0.92,
+      0.72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "U.S. population: What brands of liquid breakfast or liquid / powdered nutritional supplements do you use most often?",
+   "short": "Brands of liquid breakfast /powdered nutritional supplements used in the U.S. 2020",
+   "unit": "",
+   "description": "This statistic shows the brands of liquid breakfast or liquid / powdered nutritional supplements used most often in the United States in 2020. The data has been calculated by Statista based on the U.S. Census data and Simmons National Consumer Survey (NHCS). According to this statistic, 7.02 million Americans used Ensure in 2020.",
+   "note": "United States; 2020; among users of liquid breakfast or liquid / powdered nutritional supplements; * The figures presented reflect the respective population in the United States. Statista calculated the figures based on the U.S. Census data [...] Read more",
+   "source": "Statista (based on MRI-Simmons data) Number of consumers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Ensure",
+    "Boost",
+    "Muscle Milk",
+    "Carnation Breakfast Essentials",
+    "Store Brand",
+    "Slim-Fast",
+    "Glucerna",
+    "Sport Shake",
+    "Atkins",
+    "Advantedge (Eas)",
+    "Myoplex (Eas)",
+    "Other Brands"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.02,
+      6.45,
+      5.53,
+      5.48,
+      4.96,
+      4.83,
+      2.7,
+      2.46,
+      2.18,
+      0.92,
+      0.72,
+      26.67
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "U.S. population: What are some types of non-prescription products for a diet?",
+   "short": "Types of non-prescription products for a diet in the U.S. 2020",
+   "unit": "",
+   "description": "This statistic shows the types of non-prescription products used for a diet in the United States in 2020. The data has been calculated by Statista based on the U.S. Census data and Simmons National Consumer Survey (NHCS). According to this statistic, 114.14 million Americans did not use any non-prescription products/methods in 2020.",
+   "note": "United States; 2020; among respondents using non-prescription products for a diet; * The figures presented reflect the respective population in the United States. Statista calculated the figures based on the U.S. Census data and Simmons [...] Read more",
+   "source": "Statista (based on MRI-Simmons data) Number of consumers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Did not use any non-prescription products/methods",
+    "Weight watchers",
+    "Meal replacement",
+    "Reducing candies",
+    "Nutrisystem",
+    "Diet center",
+    "Jenny craig",
+    "Online diet club",
+    "Alli",
+    "Other pills",
+    "Other diet club/diet clinic",
+    "Other products or methods"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      114.14,
+      13.23,
+      11.87,
+      10.08,
+      3.8,
+      1.95,
+      1.65,
+      1.57,
+      1.49,
+      7.49,
+      1.94,
+      16.41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "U.S. population: What types of food do you buy when you are watching your diet?",
+   "short": "Types of food bought when watching diet in the U.S. 2020",
+   "unit": "",
+   "description": "This statistic shows the types of food bought when watching the diet in the United States in 2020. The data has been calculated by Statista based on the U.S. Census data and Simmons National Consumer Survey (NHCS). According to this statistic, 78.89 million Americans bought low fat food in 2020.",
+   "note": "United States; 2020; among respondents buying selected types of food when watching diet; * The figures presented reflect the respective population in the United States. Statista calculated the figures based on the U.S. Census data and [...] Read more",
+   "source": "Statista (based on MRI-Simmons data) Number of consumers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Low fat",
+    "High fiber",
+    "Sugar-free",
+    "High protein",
+    "Natural or organic",
+    "Low sodium",
+    "Low sugar",
+    "Low carb",
+    "Fat-free/ non-fat",
+    "Low calorie",
+    "Low cholesterol",
+    "Gluten-free",
+    "Lactose-free"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      78.89,
+      60.85,
+      59.2,
+      54.07,
+      53.11,
+      51.74,
+      50.36,
+      49.78,
+      48.39,
+      46.51,
+      37.68,
+      15.12,
+      14.82
+     ]
+    }
+   ]
+  }
+ ]
+}

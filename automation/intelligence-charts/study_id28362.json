@@ -1,0 +1,1208 @@
+{
+ "studyId": "28362",
+ "study": "influencer marketing statista dossier",
+ "file": "research/statista/Fitness Marketing/study_id28362_influencer-marketing-statista-dossier (1).pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Influencer marketing market size worldwide from 2016 to 2024 (in billion U.S. dollars)",
+   "short": "Global influencer marketing value 2016-2024",
+   "unit": "billion U.S. dollars",
+   "description": "The global influencer marketing market size has more than tripled since 2019. In 2024, the market was estimated to reach a record of 24 billion U.S. dollars.",
+   "note": "Worldwide; 2016 to 2023; * Forecast. Read more",
+   "source": "Influencer Marketing Hub",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.7,
+      3,
+      4.6,
+      6.5,
+      9.7,
+      13.8,
+      16.4,
+      21.1,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Influencer marketing platform market size worldwide from 2022 to 2025 (in billion U.S. dollars)",
+   "short": "Influencer marketing platform market size worldwide 2022-2025",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, the global influencer marketing platform market was valued at 15.2 billion U.S. dollars. It is expected to further grow to 17.4 billion in 2023 and surpass 22 billion dollars in 2025. The influencer marketing platforms are used in search and discovery of clients, campaign management, influencer relationship management, as well as analytics and reporting.",
+   "note": "Worldwide; 2022; * Forecast. Read more",
+   "source": "HypeAuditor",
+   "kind": "timeseries",
+   "categories": [
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.2,
+      17.4,
+      19.8,
+      22.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Share of marketing budgets spent on influencer marketing worldwide as of February 2024",
+   "short": "Share of marketing budgets spent on influencer marketing worldwide 2024",
+   "unit": "",
+   "description": "During a global 2024 survey among marketing agencies and brands, 22.4 percent of respondents stated they invested 10 to 20 percent of their marketing budget into influencer marketing. Another 26 percent devoted more than 40 percent to this type of digital marketing activity.",
+   "note": "Worldwide; 3,000 respondents; among PR agencies, marketing agencies, brands, and other relevant professionals",
+   "source": "Influencer Marketing Hub",
+   "kind": "categorical",
+   "categories": [
+    "<10%",
+    "10-20%",
+    "20-30%",
+    "30-40%",
+    ">40%"
+   ],
+   "series": [
+    {
+     "name": "Feb 2024",
+     "values": [
+      0.261,
+      0.224,
+      0.158,
+      0.115,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Number of influencers brands worked with worldwide as of February 2024",
+   "short": "Number of influencers brands worked with worldwide 2024",
+   "unit": "",
+   "description": "During a global 2024 survey carried out among PR agencies, marketing agencies, brands, and other relevant professionals, 37.6 percent of respondents stated that their organizations worked with up to 10 influencers, whereas 14.7 percent said they worked with over a thousand influencers.",
+   "note": "Worldwide; as of February 2024; 3,000 respondents; among PR agencies, marketing agencies, brands, and other relevant professionals",
+   "source": "Influencer Marketing Hub",
+   "kind": "categorical",
+   "categories": [
+    "0-10",
+    "10-50",
+    "50-100",
+    "100-1000",
+    "1000+"
+   ],
+   "series": [
+    {
+     "name": "February 2024",
+     "values": [
+      0.376,
+      0.19,
+      0.152,
+      0.135,
+      0.147
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Leading ways in which influencers can become more valuable to brands according to marketers worldwide as of August 2022",
+   "short": "Top ways in which influencers can become more valuable to brands worldwide 2022",
+   "unit": "",
+   "description": "According to a survey conducted among marketers worldwide and released in August 2022, 59 percent of respondents said influencers could become more valuable to brands by creating more interest and purchase intent. This was followed by 51 percent of respondents saying influencers could become more valuable by creating more suitable content for their brand.",
+   "note": "Worldwide; August 20, 2022; 400 respondents",
+   "source": "impact.com; MarketingCharts; WARC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "By building more interest and purchase intent",
+    "By creating more suitable content for our brand",
+    "By building a long-term, collaborative relationship with our brand",
+    "By introducing new audiences to a brand",
+    "By understanding the brand's requirement better",
+    "By allowing more flexibility for content usage rights",
+    "By being more professional in their interactions",
+    "By gaining more followers",
+    "By selling more product directly",
+    "By giving brands more creative control",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.59,
+      0.51,
+      0.5,
+      0.49,
+      0.43,
+      0.3,
+      0.25,
+      0.17,
+      0.13,
+      0.09,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Leading metrics successfully delivered by influencers according to marketers worldwide as of August 2022",
+   "short": "Top metrics delivered by influencers according to marketers worldwide 2022",
+   "unit": "",
+   "description": "According to a survey conducted among marketers in North America, Europe, Asia, and Australia and released in August 2022, 32 percent of respondents named increased engagement as the metric most effectively fulfilled by influencer marketing. Around 19 percent of marketers cited social media traffic increase as the best-performing metric delivered by influencers, while 11 percent mentioned a lifting of brand metrics being the most effectively delivered metric.",
+   "note": "Worldwide; August 20, 2022; <400; marketers in North America, Europe, Asia, and Australia",
+   "source": "impact.com; Net Influencer; WARC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Increased engagement",
+    "Social media traffic increase",
+    "Brand metrics lift",
+    "Conversions",
+    "Increased web traffic",
+    "Increased positive sentiment",
+    "Sales lift",
+    "More efficient ad spend",
+    "Lower content production cost",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.19,
+      0.11,
+      0.1,
+      0.09,
+      0.06,
+      0.05,
+      0.03,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Influencer marketing spending worldwide and in the United States in 2022 and 2023 (in billion U.S. dollars)",
+   "short": "Influencer marketing spending worldwide and in the U.S. 2022-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, influencer marketing spending in the United States equaled 22.19 billion U.S. dollars, which was less than global spending by close to 7 billion, which stood at around 29.14 billion in the given year. During 2023, global influencer marketing spending reached 34.08 billion, while in the U.S. it amounted to 26.09 billion dollars.",
+   "note": "Worldwide, United States; 2022 and 2023",
+   "source": "MediaPost; PQ Media",
+   "kind": "categorical",
+   "categories": [
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "U.S.",
+     "values": [
+      22.19,
+      26.09
+     ]
+    },
+    {
+     "name": "Worldwide",
+     "values": [
+      29.14,
+      34.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Leading challenges among influencer marketers worldwide as of January 2023",
+   "short": "Leading challenges among influencer marketers worldwide 2023",
+   "unit": "",
+   "description": "According to a global survey conducted among marketers in January 2023, 28 percent of responding social media marketers stated that keeping up with social media trends was one of the top challenges of influencer marketing. The cost of working with influencers came second with 26 percent of respondents listing it as a leading challenge.",
+   "note": "Worldwide; January 2023; 1,283 respondents; social media marketers",
+   "source": "HubSpot Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Keeping up with social media trends",
+    "The cost of working with influencers",
+    "Building a creative strategy",
+    "Measuring ROI of influencer campaigns",
+    "The time it takes to manage campaigns",
+    "Finding and vetting influencers to partner with",
+    "Brand safety/alignment"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.26,
+      0.26,
+      0.25,
+      0.24,
+      0.23,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Leading tools for measuring the effectiveness of influencer marketing campaigns worldwide as of January 2023",
+   "short": "Top tools for measuring the effectiveness of influencer marketing worldwide 2023",
+   "unit": "",
+   "description": "According to a global survey conducted among social media marketers in January 2023, 34 percent of respondents stated that brand awareness was one of the main tools for measuring the effectiveness of influencer marketing campaigns. Revenue and sales followed with 32 percent, while impressions and views obtained 29 percent of marketers' shares.",
+   "note": "Worldwide; January 2023; 1,283 respondents; social media marketers",
+   "source": "HubSpot Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Brand awareness",
+    "Revenue/sales",
+    "Impressions/views",
+    "Engagement",
+    "Clicks",
+    "Brand mentions/hashtag uses"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.34,
+      0.32,
+      0.29,
+      0.28,
+      0.25,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Millennials' opinions on how much they trust product/brand recommendations made by social media influencers worldwide in 2023",
+   "short": "Millennials' trust on product/brand recommendation made by influencers worldwide 2023",
+   "unit": "",
+   "description": "As of March 2023, nearly 50 percent of 10 millennials worldwide found influencers' recommendations of a brand or product more engaging than regular advertisements. For 36 percent of the respondents, influencer recommendations were also considered more trustworthy than average ads. According to the same report, millennials ranked reliability as the most wanted quality in a brand.",
+   "note": "Worldwide; March 2023; 3,700 respondents; 27-40 years; in 12 markets",
+   "source": "GWI Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Influencer recommendations are more engaging than regular ads",
+    "I'm likely to purchase a product recommended by influencers",
+    "I follow influencers who regularly promote products/brands",
+    "I'm happy with the volume of promoted products/brands I see from influencers",
+    "Influencers are knowledgeable about the products they recommend",
+    "Recommendations from influencers are more informative than from celebrities",
+    "Influencer recommendations are more trustworthy than regular ads"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.49,
+      0.45,
+      0.44,
+      0.41,
+      0.4,
+      0.4,
+      0.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Brand value of TikTok/Douyin worldwide from 2020 to 2023 (in billion U.S. dollars)",
+   "short": "TikTok/Douyin: brand value 2020-2023",
+   "unit": "billion U.S. dollars",
+   "description": "ByteDance’s triumphant TikTok/ Douyin is one of the most successful Chinese brands that have made its name beyond borders. The short video brand enjoyed immense popularity around the world, surpassing Instagram and WhatsApp to be the most downloaded mobile app. In 2023, the brand value of TikTok/Douyin amounted to 84 billion U.S. dollars. It was the most valuable unicorn worldwide in 2023 with a market cap of 200 billion U.S. dollars.",
+   "note": "Worldwide, China; 2020 to 2023",
+   "source": "Brand Finance",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      18.75,
+      58.98,
+      65.7,
+      84.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Average number of views per post of TikTok influencers in 2022, by number of followers",
+   "short": "Views per post of global TikTok influencers 2022, by profile size",
+   "unit": "",
+   "description": "The post of a TikTok mega-influencer with more than one million followers received an average of 329,382 views worldwide in 2022. The post of a macro-influencer with 100,000 to one million followers received an average of 38,517 views.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "Nano-influencers (1K-10K)",
+    "Micro-influencers (10k-50K)",
+    "Mid-influencers (50K-500K)",
+    "Macro-influencers (500K-1M)",
+    "Mega-influencers (over 1M)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5121,
+      7611,
+      10244,
+      38517,
+      329382
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Distribution of TikTok influencers worldwide in 2022, by number of followers",
+   "short": "Global distribution of TikTok influencers in 2022, by number of followers",
+   "unit": "",
+   "description": "In 2022, TikTok influencers with 1,000 to 10,000 followers made up 66.96 percent of TikTok influencer accounts worldwide. The second and third largest groups were micro-influencers with 10,000 to 50,000 followers and mid-tier influencers with 50,000 to 500,000 followers, accounting respectively for 23.06 percent and 9.04 percent.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1,000 to 10,000",
+    "10,000 to 50,000",
+    "50,000 to 500,000",
+    "500,000 to 1,000,000",
+    "1,000,000 and above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6696,
+      0.2306,
+      0.0904,
+      0.0053,
+      0.0041
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Engagement rate of TikTok influencers worldwide from 2021 to 2023, by number of followers",
+   "short": "Engagement rate among global TikTok influencers 2023, by profile size",
+   "unit": "",
+   "description": "TikTok nano-influencers with one to 10 thousand followers had the highest engagement rate (ER) compared to other TikTok profiles worldwide in 2023. Nano-influencers had an ER of 11.97 percent, while micro-influencers with 10,000 to 50,000 followers came second with 10.21 percent.",
+   "note": "Worldwide; 2021 to 2023",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "Nano-influencers (1K-10K)",
+    "Micro-influencers (10k-50K)",
+    "Mid-tier-influencers (50K-500K)",
+    "Macro-influencers (500K-1M)",
+    "Mega-influencers (over 1M)"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.157,
+      0.122,
+      0.108,
+      0.106,
+      0.111
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.152,
+      0.124,
+      0.109,
+      0.108,
+      0.113
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.1197,
+      0.1021,
+      0.0948,
+      0.0939,
+      0.0967
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of fake interactions removed on TikTok from 2nd quarter 2021 to 4th quarter 2023 (in millions)",
+   "short": "TikTok: fake engagement removed 2021-2023",
+   "unit": "millions",
+   "description": "During the fourth quarter of 2023, the social video platform TikTok removed around 720 million fake followers on the platform due to fake accounts. This represents a staggering increase from the previous quarter, when the number of fake followers removed was approximately 211 million. Additionally, the platform removed around 1.03 billion fake likes during the last measured quarter.",
+   "note": "Worldwide; Q2 2021 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "Fake likes",
+     "values": [
+      91.81,
+      203.71,
+      285.32,
+      248.62,
+      163.77,
+      146.36,
+      366.8,
+      536.88,
+      577.88,
+      348.7,
+      1037
+     ]
+    },
+    {
+     "name": "Fake followers",
+     "values": [
+      71.94,
+      231.15,
+      441.99,
+      623.71,
+      1444.82,
+      759.04,
+      1465.24,
+      1247.89,
+      252.94,
+      211.37,
+      720.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Fastest growing TikTok accounts worldwide in 2022, by annual follower growth",
+   "short": "Fastest growing global TikTok accounts 2022, by follower growth",
+   "unit": "",
+   "description": "The fastest-growing TikTok user worldwide in 2022 was Brazilian sports influencer Luva de Pedreiro, who grew his audience by 1,546 percent compared to the previous year. Online personality and pastry chef Amaury Guichon was the second fastest growing global TikTok creators in 2022, with a follower growth of almost 736 percent year-over-year.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor Year-on-year follower growth TikTok username",
+   "kind": "categorical",
+   "categories": [
+    "luvadepedreiro",
+    "amauryguichon",
+    "badbunny",
+    "rubentuestaok",
+    "bayashi.tiktok",
+    "mrbeast",
+    "therock",
+    "domelipa",
+    "khaby.lame",
+    "charlidamelio"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.46,
+      7.36,
+      6.27,
+      2.53,
+      1.48,
+      1.02,
+      0.44,
+      0.34,
+      0.23,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Most-followed creators on TikTok worldwide as of March 2024 (in millions)",
+   "short": "Most popular TikTok users worldwide 2024",
+   "unit": "millions",
+   "description": "As of March 2024, TikTok creator and comedian Khabane Lame was the most followed content creator on the platform. Lame, who is based in Italy, reached 161.4 million subscribers. Influencer Charlie D'Amelio followed closely in second position with 152 million followers and singer Bella Poarch ranked third, with a total of 93.9 million followers.",
+   "note": "Worldwide; March 2024",
+   "source": "Social Blade Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Khabane Lame",
+    "charli d’amelio",
+    "Bella Poarch",
+    "MrBeast",
+    "Addison Rae",
+    "Zach King",
+    "Kimberly Loaiza",
+    "cznburak",
+    "domelipa",
+    "dixie"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      161.4,
+      152,
+      93.9,
+      93.5,
+      88.6,
+      81.2,
+      80.9,
+      74.8,
+      73.2,
+      56.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Leading brands on TikTok worldwide in 2022, by number of influencers mentioning them (in 1,000s)",
+   "short": "Most mentioned brands on TikTok worldwide 2022, by influencers",
+   "unit": "1,000s",
+   "description": "The most talked-about brand on TikTok in 2022 was online fashion and sports retailer Shein, having been mentioned by 13.4 thousand influencers. Target followed with 11.2 thousand influencers, while Netflix rounded out the top three with 8.5 thousand.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor Number of influencers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Shein",
+    "Target",
+    "Netflix",
+    "Sephora",
+    "Amazon",
+    "Starbucks",
+    "Disney",
+    "SHEGLAM",
+    "PrettyLittleThing",
+    "Fashion Nova"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.4,
+      11.2,
+      8.5,
+      7.5,
+      6.9,
+      5.9,
+      5.7,
+      4.1,
+      3.9,
+      3.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Leading brands on TikTok worldwide in 2023, by number of influencers (in 1,000s)",
+   "short": "Most talked about brands on TikTok worldwide 2023",
+   "unit": "1,000s",
+   "description": "Target was the most talked about brand on TikTok in 2023, with 21 thousand influencers mentioning it. Netflix and Amazon followed with 18.8 thousand and 16.3 thousand influencers, respectively.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor Number of influencers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "target",
+    "Netflix",
+    "Amazon",
+    "sephora",
+    "Starbucks",
+    "Disney",
+    "SHEGLAM",
+    "CapCut",
+    "FashionNova",
+    "Revolve"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      21,
+      18.8,
+      16.3,
+      15.6,
+      13.3,
+      12.8,
+      9.8,
+      8.6,
+      8.4,
+      7.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Brand value of Instagram worldwide from 2020 to 2023 (in billion U.S. dollars)",
+   "short": "Instagram: brand value 2020-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the brand value of Instagram amounted to 47.4 billion U.S. dollars. A year earlier, the value stood at 33.48 billion dollars. Instagram was the sixth most valuable media brand worldwide in 2023.",
+   "note": "Worldwide, United States; 2020 to 2023",
+   "source": "Brand Finance",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26.44,
+      25.07,
+      33.48,
+      47.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Leading countries based on Instagram audience size as of January 2024 (in millions)",
+   "short": "Countries with the most Instagram users 2024",
+   "unit": "millions",
+   "description": "As of January 2024, India had a total of 362 million Instagram users, the largest Instagram audience in the world. The United States had 169 million users, and Brazil had 134 million. Indonesia, Turkey, and Japan ranked in fourth, fifth and sixth position, respectively. Brunei is the leading country for Instagram audience reach, with 92 percent of the population using the social media service. Guam came in second, with a penetration rate of 79.2 percent and the Cayman Islands ranked [...]",
+   "note": "Worldwide; January 2024; 13 years and older; based on addressable ad audience",
+   "source": "DataReportal; Meltwater; Meta Platforms; We Are Social Audience in millions",
+   "kind": "categorical",
+   "categories": [
+    "India",
+    "United States",
+    "Brazil",
+    "Indonesia",
+    "Turkey",
+    "Japan",
+    "Mexico",
+    "United Kingdom",
+    "Germany",
+    "Argentina",
+    "Italy",
+    "France",
+    "Spain",
+    "South Korea",
+    "Philippines"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      362.9,
+      169.65,
+      134.6,
+      100.9,
+      57.1,
+      55.45,
+      44.85,
+      33.1,
+      30.35,
+      27.85,
+      27,
+      25.9,
+      23.95,
+      23.4,
+      21.35
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Average number of weekly brand posts on Instagram in 2023, by vertical",
+   "short": "Average weekly Instagram brand posts 2023, by vertical",
+   "unit": "",
+   "description": "In 2023, the median weekly brand posts on social media app Instagram was 4.7 posts. Overall, sports teams added an average of 18 posts weekly to the social network, while media brands generated an average of 12.2 posts. Additionally, retail brands posted on average 5.7 times per week, whilst fashion brands posted 6.1 times per week.",
+   "note": "Worldwide; 2023",
+   "source": "Rival IQ Number of Instagram posts per week",
+   "kind": "categorical",
+   "categories": [
+    "Sports teams",
+    "Media",
+    "Health & beauty",
+    "Fashion",
+    "Retail",
+    "Home decor",
+    "Nonprofits",
+    "Total",
+    "Financial services",
+    "Higher ed",
+    "Influencers",
+    "Travel",
+    "Tech & software",
+    "Alcohol",
+    "Food & beverage"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      18,
+      12.2,
+      6.8,
+      6.1,
+      5.7,
+      4.9,
+      4.9,
+      4.7,
+      4,
+      3.9,
+      3.8,
+      3.8,
+      3.7,
+      3.1,
+      2.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Distribution of Instagram influencers worldwide in 2023, by category",
+   "short": "Share of Instagram influencers worldwide 2023, by category",
+   "unit": "",
+   "description": "According to the findings of a study examining the state of influencer marketing on Instagram, 8.35 percent of influencers on the platform were focused on the beauty topics, making it the third most popular category among global Instagram influencers in 2023. Lifestyle was the most popular category covered by Instagram influencers that year, with a share of 13.73 percent.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor Share of accounts",
+   "kind": "categorical",
+   "categories": [
+    "Lifestyle",
+    "Music",
+    "Beauty",
+    "Family",
+    "Photography",
+    "Art",
+    "Humor & Fun & Happiness",
+    "Fitness & Gym",
+    "Shows",
+    "Sports with a ball"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1373,
+      0.0987,
+      0.0835,
+      0.0646,
+      0.0641,
+      0.058,
+      0.0562,
+      0.0325,
+      0.0316,
+      0.028
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Distribution of Instagram influencers worldwide in 2023, by number of followers",
+   "short": "Global distribution of Instagram influencers in 2023, by number of followers",
+   "unit": "",
+   "description": "In 2023, Instagram influencers with 1,000 to 10,000 followers accounted for 76.86 percent of influencer accounts worldwide. The second most popular group was that of micro-influencers with 10,000 to 50,000 subscribers, accounting for 18.23 percent of all influencers. Mid-tier influencers with 50,000 to 500,000 followers represented 4.56 percent of the total, while mega-influencers and celebrities with more than one million subscribers accounted for 0.16 percent.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1,000 to 10,000",
+    "10,000 to 50,000",
+    "50,000 to 500,000",
+    "500,000 to 1,000,000",
+    "1,000,000 and above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7686,
+      0.1823,
+      0.0456,
+      0.002,
+      0.0016
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Engagement rates among Instagram influencers worldwide in 2022-2023, by number of followers",
+   "short": "Engagement rates among global IG influencers 2022-2023, by profile size",
+   "unit": "",
+   "description": "According to a study of Instagram (IG) influencer engagement rates (ER) worldwide, nano influencers have been seeing the highest popularity compared to other tier profiles. Influencers who had between one to ten thousand followers had tan engagement rate of 2.19 percent in 2023. On average the ER for all studied IG influencers stood at 1.85 percent in the same year.",
+   "note": "Worldwide; 2022 to 2023",
+   "source": "HypeAuditor Engagement rate",
+   "kind": "categorical",
+   "categories": [
+    "1K - 10K",
+    "10K - 50K",
+    "50K - 500K",
+    "500K - 1M",
+    "Over 1M",
+    "Average ER"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.0219,
+      0.0099,
+      0.0086,
+      0.0087,
+      0.0094,
+      0.0185
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.0253,
+      0.0106,
+      0.0091,
+      0.0086,
+      0.0092,
+      0.019
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Share of Instagram influencers involved in fraud worldwide from 2022-2023, by number of followers",
+   "short": "Share of fraudulent Instagram influencers worldwide 2022-2023, by number of followers",
+   "unit": "",
+   "description": "A majority of Instagram mega-influencers with more than one million followers worldwide were involved in fraudulent activities to inflate their engagement and follower figures in 2023. Mega-influencers and celebrities involved in fraud were 58.5 percent of the total in the same year. The average share of influencers involved in fraud went down with 2.15 percent and reached was of 43.17 percent.",
+   "note": "Worldwide; 2022 and 2023",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1,000 to 10,000",
+    "10,000 to 50,000",
+    "50,000 to 500,000",
+    "500,000 to 1,000,000",
+    "1,000,000 and above",
+    "Average"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.3526,
+      0.5017,
+      0.5474,
+      0.5819,
+      0.6123,
+      0.4532
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.341,
+      0.478,
+      0.493,
+      0.56,
+      0.585,
+      0.4317
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Leading brands on Instagram worldwide in 2022, by number of influencers mentioning them (in 1,000s)",
+   "short": "Leading brands on Instagram worldwide 2022, by influencers",
+   "unit": "1,000s",
+   "description": "Instagram was the most talked about brand on Instagram worldwide in 2022, with 85.5 thousand influencers mentioning it. Zara followed with 66.4 thousand influencers, while Shein rounded out the top three with 57.2 thousand.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor Number of influencers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "Zara",
+    "Shein",
+    "H&M",
+    "Nike",
+    "Spotify",
+    "Amazon",
+    "YouTube",
+    "Target",
+    "Netflix"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      85.5,
+      66.4,
+      57.2,
+      46.1,
+      40.5,
+      35.7,
+      35,
+      33.8,
+      31.6,
+      28.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Average ad fraud rates of Instagram influencers worldwide from 2019 to 2023",
+   "short": "Average fraud rates of Instagram influencers 2019-2023",
+   "unit": "",
+   "description": "Average influencer fraud rates (ER) worldwide had decreased gradually since 2019. The fraud rate was about 63 percent in 2019, only to drop to 45 percent four years later, in 2022 and then raised back again in 2023, to 49.19 percent on average. The influencer fraud rates are based on buying followers, likes and comments, stories views, and comment pods.",
+   "note": "Worldwide; 2019 to 2023",
+   "source": "HypeAuditor",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6353,
+      0.5539,
+      0.4923,
+      0.4532,
+      0.4919
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Brand value of YouTube worldwide from 2020 to 2023 (in billion U.S. dollars)",
+   "short": "YouTube: brand value 2020-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the brand value of YouTube stood at 29.71 billion U.S. dollars. A year earlier, the value was estimated at 23.89 billion dollars. YouTube is the eight most valuable media brand worldwide.",
+   "note": "Worldwide; 2020 to 2023",
+   "source": "Brand Finance",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      16.35,
+      17.29,
+      23.89,
+      29.71
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Distribution of YouTube influencers worldwide in 2023, by category",
+   "short": "Global distribution of YouTube influencers 2023, by category",
+   "unit": "",
+   "description": "People and blogs was the most popular category for YouTube influencers in 2023, with 28.5 percent of them posting videos related to this topic. Entertainment and video games followed with a respective influencer share of 14.54 and 12.95 percent.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor Share of influencer accounts",
+   "kind": "categorical",
+   "categories": [
+    "People & Blogs",
+    "Entertainment",
+    "Video Games",
+    "Music",
+    "Education",
+    "How to and style",
+    "Movies and TV",
+    "Sports",
+    "Technology & Science",
+    "Cars & Motorbikes"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.285,
+      0.1454,
+      0.1295,
+      0.1072,
+      0.0808,
+      0.0478,
+      0.0407,
+      0.0349,
+      0.0311,
+      0.0264
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "YouTube influencer engagement rates worldwide in 2023, by follower count",
+   "short": "YouTube influencer engagement rates worldwide 2023",
+   "unit": "",
+   "description": "In 2023, YouTube influencers with between 1,000 and 5,000 followers had an engagement rate, amounting to 1.9 percent. The rate for influencers with more 1,000,000 followers was higher - 3.4 percent.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor; Influencer Marketing Hub",
+   "kind": "categorical",
+   "categories": [
+    "1,000-5,000",
+    "100,000-1,000,000",
+    ">1,000,000"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.019,
+      0.0347,
+      0.034
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Fastest growing YouTube accounts worldwide in 2022, by annual follower growth",
+   "short": "Fastest growing YouTube accounts worldwide 2022",
+   "unit": "",
+   "description": "Indian YouTube channel Shorts Break was the fastest-growing video account on the platform in 2022, with an annual follower growth of 2,130 percent. Vlog and online creator NichLmao followed with 382 percent. In the last examined year, several channels creating children's entertainment content (Kids Diana Show, Like Nastya, checkgate) ranked among the fastest growing on YouTube.",
+   "note": "Worldwide; 2022; *AddictedA1 changed their YouTube account name to CarryMinati since the publication of the report. Read more",
+   "source": "HypeAuditor Year-on-year follower growth YouTube accounts",
+   "kind": "categorical",
+   "categories": [
+    "Shorts Break",
+    "NichLmao",
+    "BillionSurprise Toys",
+    "MrBeast",
+    "Like Nastya",
+    "Goldmines Telefilms",
+    "setindia",
+    "Kids Diana Show",
+    "checkgate",
+    "tseries"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      21.3,
+      3.82,
+      0.64,
+      0.38,
+      0.29,
+      0.27,
+      0.22,
+      0.21,
+      0.2,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Number of YouTube creators with more than 10 million followers worldwide in September 2022, by country",
+   "short": "Number of supernova creators on YouTube worldwide 2022",
+   "unit": "",
+   "description": "On September 15, 2022, the United States was home to 266 creators with more than 10 million followers, which made it the country with the highest number of supernova creators on YouTube worldwide. India ranked second, with 188 supernova creators, followed by Brazil with 80.",
+   "note": "Worldwide; September 15, 2022",
+   "source": "NeoReach Number of supernova creators",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "India",
+    "Brazil",
+    "Mexico",
+    "Indonesia",
+    "United Kingdom",
+    "Russia",
+    "Spain",
+    "Thailand",
+    "Argentina",
+    "Philippines",
+    "South Korea",
+    "Canada",
+    "Saudi Arabia",
+    "United Arab Emirates"
+   ],
+   "series": [
+    {
+     "name": "YouTube",
+     "values": [
+      266,
+      188,
+      80,
+      40,
+      30,
+      26,
+      24,
+      23,
+      12,
+      11,
+      11,
+      11,
+      9,
+      9,
+      8
+     ]
+    }
+   ]
+  }
+ ]
+}

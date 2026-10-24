@@ -4,6 +4,7 @@ import { LANES, pillarMeta, type Pillar } from '../i18n/pillars';
 import ArticleHero from './ArticleHero.astro';
 import ShareBar from './ShareBar.astro';
 import BenchmarkWidget from './BenchmarkWidget.astro';
+import DataChart from './DataChart.astro';
 import InlineSignup from './InlineSignup.astro';
 import { SUBSCRIBE } from '../config/subscribe';
 import type { CollectionEntry } from 'astro:content';
@@ -51,7 +52,13 @@ if (d.series && d.series.points.length) {
 }
 const csv = csvRows.join('\n');
 const csvHref = csv ? `data:text/csv;charset=utf-8,${encodeURIComponent(csv)}` : '';
-const jsonHref = `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ title: d.title, asOf: d.asOf, url: reportUrl, figures: d.figures, series: d.series, sources: d.sources }, null, 2))}`;
+for (const c of (d.charts ?? [])) {
+  csvRows.push('');
+  csvRows.push(`${c.label}${c.unit ? ` (${c.unit})` : ''}${c.source ? ` — ${c.source}` : ''}`);
+  csvRows.push(['', ...c.series.map((x) => x.name || c.unit || 'value')].map(csvCell).join(','));
+  c.categories.forEach((cat, i) => csvRows.push([cat, ...c.series.map((x) => x.points[i] ?? '')].map(csvCell).join(',')));
+}
+const jsonHref = `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ title: d.title, asOf: d.asOf, url: reportUrl, figures: d.figures, series: d.series, charts: d.charts, sources: d.sources }, null, 2))}`;
 const citation = `${d.author}. "${d.title}." sqwod.life${d.asOf ? `, ${d.asOf}` : ''}. ${reportUrl}`;
 // Link each figure to its source: explicit figure.url wins, else auto-match the
 // figure's `source` label to a citation in `sources[]` (by its leading token).
@@ -215,6 +222,14 @@ const shareCfg = {
     </section>
   );
 })()}
+
+{d.charts && d.charts.length > 0 && (
+  <section class="block charts-block">
+    <p class="kick">{lang === 'de' ? `▦ Die Daten · ${d.charts.length} Grafiken` : `▦ The data · ${d.charts.length} charts`}</p>
+    <p class="src-note" style="margin:4px 0 0">{lang === 'de' ? 'Fahre über einen Balken für den exakten Wert. Jede Grafik hat darunter eine Tabelle.' : 'Hover any bar for the exact value. Every chart has a table underneath.'}</p>
+    {d.charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} />)}
+  </section>
+)}
 
 {d.playbook && d.playbook.length > 0 && (
   <section class="block playbook">

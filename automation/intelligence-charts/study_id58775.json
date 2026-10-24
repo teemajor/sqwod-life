@@ -1,0 +1,1532 @@
+{
+ "studyId": "58775",
+ "study": "sports employment in the united kingdom uk",
+ "file": "research/statista/study_id58775_sports-employment-in-the-united-kingdom-uk.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Number of employees in the sport industry in the United Kingdom (UK) from 2011 to 2018 (in 1,000s)",
+   "short": "United Kingdom: number of employees in the sport industry 2011 to 2018",
+   "unit": "1,000s",
+   "description": "The statistic displays the development of the number of employees in the sport industry in the United Kingdom (UK) from 2011 to 2018. In 2018, approximately 4345,400 people were employed in the sports industry of the UK.",
+   "note": "United Kingdom; 2011 to 2018",
+   "source": "Eurostat",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      374.4,
+      395,
+      364.2,
+      395,
+      417.3,
+      431,
+      435.4,
+      445.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Estimated number of people working in sports and fitness occupations in the United Kingdom from 4th quarter 2021 to 4th quarter 2023",
+   "short": "Number of people working in sports and fitness occupations in the UK 2021-2023",
+   "unit": "",
+   "description": "There were estimated to be approximately 174,600 sport and fitness working in the United Kingdom as of the fourth quarter of 2023, compared with 165,300 in the previous quarter.",
+   "note": "United Kingdom; Q4 2021 to Q4 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      152500,
+      165900,
+      174400,
+      169900,
+      167500,
+      155900,
+      161500,
+      165300,
+      174600
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Number of people employed in sport in the United Kingdom (UK) in 2018, by age group (in 1,000)",
+   "short": "Employment in sport in UK 2018, by age group",
+   "unit": "1,000",
+   "description": "This statistic looks at the number of people employed in sport in the United Kingdom (UK) in 2019, by age group. The statistic shows that approximately 221.6 thousand people between the age of 30-64 were employed in sport.",
+   "note": "United Kingdom; 2019",
+   "source": "Eurostat",
+   "kind": "categorical",
+   "categories": [
+    "15-29",
+    "30-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "2019",
+     "values": [
+      188.6,
+      221.6,
+      14.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Number of people employed in sport in the United Kingdom (UK) in 2019, by education attainment level (in 1,000)",
+   "short": "Employment in sport UK 2019, by education level",
+   "unit": "1,000",
+   "description": "This statistic looks at the number of people employed in sport in the United Kingdom (UK) in 2019, by attained education level. The statistic shows that approximately 208.3 thousand people who were employed in the sport sector in the UK attained an upper secondary or post secondary non-tertiary education level.",
+   "note": "Europe, EU; 2019",
+   "source": "Eurostat",
+   "kind": "categorical",
+   "categories": [
+    "Less than primary, primary and lower secondary education",
+    "Upper secondary and post-secondary non-tertiary education",
+    "Tertiary education"
+   ],
+   "series": [
+    {
+     "name": "2019",
+     "values": [
+      56,
+      208.3,
+      159.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Estimated number of professional sports players in the United Kingdom from 4th quarter 2021 to 4th quarter 2023",
+   "short": "Number of professional sports players in the UK 2021-2023",
+   "unit": "",
+   "description": "In the fourth quarter of 2023 there were estimated to be around 11,000 professional sports players in the United Kingdom, compared with 12,300 in the previous quarter.",
+   "note": "United Kingdom; Q4 2021 to Q4 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      14800,
+      16000,
+      15200,
+      15000,
+      13800,
+      12400,
+      14600,
+      12300,
+      11000
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Estimated number of fitness and wellness instructors in the United Kingdom from 4th quarter 2021 to 2nd quarter 2023",
+   "short": "Number of fitness instructors in the UK 2021-2023",
+   "unit": "",
+   "description": "There were estimated to be approximately 57,900 fitness instructors working in the United Kingdom as of the second quarter of 2023, compared with 60,900 in the previous quarter.",
+   "note": "United Kingdom; Q4 2021 to Q2 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      67200,
+      73400,
+      75500,
+      71900,
+      68300,
+      60900,
+      57900
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of individuals employed in sports and fitness occupations in the United Kingdom (UK) in 2018, by employment type (1,000s)",
+   "short": "Individuals employed in sports occupations in the UK in 2018, by employment",
+   "unit": "1,000s",
+   "description": "This statistic shows the number of individuals employed in sports and fitness occupations in the United Kingdom (UK) in 2018, by employment type. In this year there were approximately 59 thousand individuals employed full-time in sports and fitness occupations in the UK. This was more than those who were employed part-time in sports and fitness occupations which amounted to roughly 54 thousand individuals.",
+   "note": "United Kingdom; April 1, 2018 to June 30, 2018; 16 years and older",
+   "source": "Office for National Statistics (UK)",
+   "kind": "categorical",
+   "categories": [
+    "Full-time employees",
+    "Part-time employees",
+    "Full-time self-employed",
+    "Part-time self-employed"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      59,
+      54,
+      34,
+      40
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Share of voluntary work in the sports sector in the last year in England from 2005/06 to 2018/19",
+   "short": "Sports volunteering in England 2005-2019",
+   "unit": "",
+   "description": "This statistic presents the results of a survey on the share of adults who volunteered in the sports sector in England from 2005/06 to 2018/19. In 2019 it was found that 20.7 percent of respondents stated that they volunteered in sports in some way within the past 12 months.",
+   "note": "United Kingdom (England); 2005 to 2019**; 2,361***; 16 years and older; adults who volunteered in last year.; * Break in time series. ** Years run April to March. The time spans of previous years were not specified. *** Base of most [...] Read more",
+   "source": "Department for Digital, Culture, Media and Sport (UK); Office for National Statistics (UK)",
+   "kind": "categorical",
+   "categories": [
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17*",
+    "2017/18",
+    "2018/19"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.192,
+      0.194,
+      0.196,
+      0.213,
+      0.207,
+      0.175,
+      0.219,
+      0.191,
+      0.209,
+      0.193,
+      0.2,
+      0.208,
+      0.207
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Number of people who volunteered to support sport and physical activity in England in 2019, by roles undertaken",
+   "short": "Volunteering participation in support of sport England 2019 by roles undertaken",
+   "unit": "",
+   "description": "This statistic shows the results of a survey on the number of people who volunteered to support sport and physical activity in England in 2019, by roles undertaken. The survey was conducted online and the latest update on it was conducted for the time period between May 2019 and November 2020 with a total of 66,196respondents. The data collected resulted in the conclusion that as of November 2019 approximately 1.3 million people volunteered to support sport and physical activities in [...]",
+   "note": "United Kingdom (England); May 2019 to November 2019; 66,196 respondents; 16 years and older; base varies",
+   "source": "Sport England",
+   "kind": "categorical",
+   "categories": [
+    "Provided transport",
+    "Coached or instructed",
+    "Refereed, umpired or officiated",
+    "Admin or committee role",
+    "Steward or marshalled",
+    "Provided any other help"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2360300,
+      2307500,
+      1329800,
+      2151300,
+      1435500,
+      2193800
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Average number of employees in specialized stores for the retail sale of sporting equipment in the United Kingdom (UK) from 2008 to 2019 (in 1,000s)",
+   "short": "Employment in sports equipment retail stores in the United Kingdom (UK) 2008-2019",
+   "unit": "1,000s",
+   "description": "This statistic shows the total employment average in retail stores specializing in the sale of sporting equipment in the United Kingdom (UK) from 2008 to 2019. Over the year 2019, an average of 75 thousand people were employed by sporting equipment retailers across the UK.",
+   "note": "United Kingdom; 2008 to 2019",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      73,
+      56,
+      74,
+      74,
+      76,
+      73,
+      74,
+      74,
+      86,
+      73,
+      71,
+      75
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Number of specialized stores for the retail sale of sporting equipment in the United Kingdom (UK) in 2023, by employment size band",
+   "short": "Number of sporting equipment retail stores in the UK 2023, by employees",
+   "unit": "",
+   "description": "This statistic shows the number of VAT and/or PAYE based store enterprises specializing in the retail sale of sporting equipment in the United Kingdom in 2023, by employment size band. As of September 2023, there were about 120 enterprises with 50 or more employees.",
+   "note": "United Kingdom; September 27, 2023; * VAT and/or PAYE based enterprises Standard Industrial Classification (UK SIC 2007) 4764: 'Retail sale of sporting equipment in specialised stores'. Read more",
+   "source": "Office for National Statistics (UK)",
+   "kind": "categorical",
+   "categories": [
+    "0-4",
+    "5-9",
+    "10-19",
+    "20-49",
+    "50-99",
+    "100-249",
+    "250+"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      4730,
+      1770,
+      1005,
+      645,
+      90,
+      25,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of enterprises manufacturing sports goods in the United Kingdom (UK) in 2023, by employment size band",
+   "short": "Number of sports goods manufacturing enterprises in the UK 2023, by employees",
+   "unit": "",
+   "description": "This statistic shows the number of VAT and/or PAYE based enterprises in the manufacture of sports goods in the United Kingdom in 2023, by employment size band. As of September 2023, there were 45 enterprises with between 20 and 49 employees.",
+   "note": "United Kingdom; September 27, 2023; * VAT and/or PAYE based enterprises Standard Industrial Classification (UK SIC 2007) Division 3230 - Manufacture of sports goods Read more",
+   "source": "Office for National Statistics (UK)",
+   "kind": "categorical",
+   "categories": [
+    "0-4",
+    "5-9",
+    "10-19",
+    "20-49",
+    "50-99",
+    "100-249"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      640,
+      125,
+      75,
+      45,
+      15,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of local units in VAT/PAYE based enterprises in the sports activities and recreation activities industry in the United Kingdom (UK) in 2020, by employment size band",
+   "short": "Sports sector local enterprise units in the UK in 2020, by employment size",
+   "unit": "",
+   "description": "Of the 41 thousand sports activities and amusement and recreation activities local enterprises operating in the United Kingdom in 2020, the majority were businesses that employed less than five people. Local sports enterprises that employed between five and nine people numbered at 6 thousand, while there were just 140 companies that employed 250 people or more.",
+   "note": "United Kingdom; 2020",
+   "source": "Office for National Statistics (UK) Number of local units",
+   "kind": "categorical",
+   "categories": [
+    "0-4",
+    "5-9",
+    "10-19",
+    "20-49",
+    "50-99",
+    "100-249",
+    "250+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      25125,
+      6140,
+      4560,
+      3405,
+      1205,
+      540,
+      140
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of enterprises in the operation of fitness facilities in the United Kingdom (UK) from 2015 to 2020, by employment size band",
+   "short": "Number of fitness facilities operating in the UK 2015-2020, by employees",
+   "unit": "",
+   "description": "This statistic shows the number of VAT and/or PAYE based enterprises in the operation of fitness facilities in the United Kingdom from 2015 to 2020, by employment size band. In March 2020, there were 15 fitness facility enterprises employing between 100 and 249 employees.",
+   "note": "United Kingdom; 2015 to 2020; VAT and/or PAYE based enterprises",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "0-4",
+     "values": [
+      1600,
+      1810,
+      2335,
+      2655,
+      2915
+     ]
+    },
+    {
+     "name": "5-9",
+     "values": [
+      420,
+      395,
+      495,
+      495,
+      540
+     ]
+    },
+    {
+     "name": "10-19",
+     "values": [
+      160,
+      170,
+      180,
+      185,
+      185
+     ]
+    },
+    {
+     "name": "20-49",
+     "values": [
+      35,
+      50,
+      55,
+      60,
+      65
+     ]
+    },
+    {
+     "name": "50-99",
+     "values": [
+      20,
+      15,
+      20,
+      30,
+      25
+     ]
+    },
+    {
+     "name": "100-249",
+     "values": [
+      15,
+      10,
+      15,
+      10,
+      15
+     ]
+    },
+    {
+     "name": "250+",
+     "values": [
+      15,
+      10,
+      10,
+      10,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Estimated number of sports coaches, instructors and officials in the United Kingdom from 4th quarter 2021 to 4th quarter 2023",
+   "short": "Number of sports coaches and officials in the UK 2021-2023",
+   "unit": "",
+   "description": "There were estimated to be approximately 98,300 sports coaches, instructors, and officials working in the United Kingdom as of the fourth quarter of 2023, compared with 89,000 in the second quarter.",
+   "note": "United Kingdom; Q4 2021 to Q4 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      70400,
+      76500,
+      83700,
+      83000,
+      85400,
+      82700,
+      89000,
+      98300,
+      98300
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Distribution of sports coaches in Scotland from 2015 to 2017, by age group",
+   "short": "Age of sports coaches in Scotland 2015-2017",
+   "unit": "",
+   "description": "The statistic shows the results of a survey on the age of sports coaches in Scotland from 2015 to 2017. During the survey period, it was found that in 2015, 14 percent of responding sports coaches were between the age of 25 and 34 and that in 2017 it was only 10 percent.",
+   "note": "United Kingdom (Scotland); 2015 to 2017; 540*; All ages; sports coaches.; * In 2015: 750 coaches. In 2017: 540 coaches. The source adds the following information: \"The coaches who completed this survey can be considered the core of the [...] Read more",
+   "source": "sportscotland",
+   "kind": "categorical",
+   "categories": [
+    "Under 18",
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "2015",
+     "values": [
+      0.04,
+      0.12,
+      0.14,
+      0.19,
+      0.23,
+      0.18,
+      0.1
+     ]
+    },
+    {
+     "name": "2017",
+     "values": [
+      0.06,
+      0.16,
+      0.1,
+      0.2,
+      0.22,
+      0.17,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Distribution of sports coaching roles in Scotland as of 2017, by category",
+   "short": "Scottish sports coaching roles breakdown as of 2017, by category",
+   "unit": "",
+   "description": "The Statistic displays the results of a survey on sports coaching roles in Scotland as of 2017, by category. During the survey period, it was found that 59 percent of sports coaches in Scotland volunteer to coach sports.",
+   "note": "United Kingdom (Scotland); 2017; 540 respondents; All ages; * The source adds the following information: \"The coaches who completed this survey can be considered the core of the coaching workforce.\" Read more",
+   "source": "sportscotland",
+   "kind": "categorical",
+   "categories": [
+    "Volunteer",
+    "Paid",
+    "Volunteer/paid mix"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.59,
+      0.27,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Reasons why people start coaching sports in Scotland as of 2017, by category",
+   "short": "Reasons why Scottish people start coaching sports as of 2017, by category",
+   "unit": "",
+   "description": "The Statistic displays the results of a survey on why people start coaching sports in Scotland as of 2017, by category. In 2017 it was found that, 20 percent of the responding coaches in Scotland started coaching sports because they wanted a career in coaching.",
+   "note": "United Kingdom (Scotland); 2017; 540 respondents; All ages",
+   "source": "sportscotland Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I love my sport/activity and want to help others enjoy it",
+    "I enjoy helping others",
+    "To help my old team/club",
+    "To stay involved in sport/physical",
+    "My children were playing and I wanted to help",
+    "I was asked",
+    "I wanted a career in coaching",
+    "I had already been coaching while playing",
+    "There was no one else to do it",
+    "I started at university",
+    "It was a way to meet new people"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.71,
+      0.39,
+      0.26,
+      0.24,
+      0.24,
+      0.21,
+      0.2,
+      0.14,
+      0.11,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of people coaching* in the previous 12 months in Wales in 2017, by region and gender",
+   "short": "Wales: share of people coaching sports in the past year in 2017, by region and gender",
+   "unit": "",
+   "description": "This statistic depicts the result of a survey on the share of people coaching in the previous 12 months in Wales in 2017, by region and gender. In 2017, it was found that five percent of male respondents from North Wales stated that they participated in coaching in the previous 12 months.",
+   "note": "United Kingdom (Wales); March 2016 to March 2017; 10,427**; 16 years and older; * Coaching in a voluntary capacity, as part of a job or for payment. **unweighted value the source does not provide information on missing values Read more",
+   "source": "Sport Wales",
+   "kind": "categorical",
+   "categories": [
+    "Central South Wales",
+    "Mid & West Wales",
+    "North Wales",
+    "South East Wales"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.08,
+      0.09,
+      0.05,
+      0.11
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.03,
+      0.03,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Number of affiliated coaches of Basketball England from 2005/2006 to 2017/2018",
+   "short": "Basketball England: number of affiliated coaches from 2005-2018",
+   "unit": "",
+   "description": "The statistic shows the total number of affiliated coaches of Basketball England from 2004/05 to 2017/18. As of 2018, there were 2,586 affiliated coaches. Basketball England is the governing body of the sport of basketball for England and operates the English Basketball League. The number of club members for Basketball in England has sharply declined in 2013, with a drop from 49,588 to 35,059 in the 2014/15 season. Basketball participation has shown a similar decline in recent years, [...]",
+   "note": "United Kingdom (England); 2018",
+   "source": "Basketball England",
+   "kind": "categorical",
+   "categories": [
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1151,
+      1516,
+      1806,
+      2317,
+      2353,
+      2616,
+      2762,
+      2805,
+      2428,
+      2243,
+      2300,
+      2245,
+      2586
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Number of registered volleyball coaches in England in 2017, by level",
+   "short": "England: number of volleyball coaches in 2017, by level",
+   "unit": "",
+   "description": "The statistic displays the number of registered volleyball coaches in England in 2017, by level. At the end of the 2016/17 season, there were 341 UKCC Level 1 volleyball coaches registered in England. More information about sport associations can be found in the Dossier: Sport associations in the United Kingdom.",
+   "note": "United Kingdom (England); 31st March 2017",
+   "source": "Volleyball England",
+   "kind": "categorical",
+   "categories": [
+    "Activator",
+    "UKCC Level 1",
+    "UKCC Level 2",
+    "Volleyball England Level 3"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2,
+      341,
+      268,
+      52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Number of coaches registered with the British Judo Association (BJA) in the United Kingdom (UK) from 2014 to 2019, by level",
+   "short": "UK: number of judo coaches 2014-2019, by level",
+   "unit": "",
+   "description": "This statistic displays the number of coaches registered with the British Judo Association (BJA) in the United Kingdom (UK) from 2014 to 2019, by level. As of 31st March 2019, there were 857 BJA Level 1 judo coaches in the UK.",
+   "note": "United Kingdom; 2014 to 2019",
+   "source": "British Judo Association",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "BJA Level 1",
+     "values": [
+      496,
+      399,
+      479,
+      680,
+      785,
+      857
+     ]
+    },
+    {
+     "name": "BJA Level 2",
+     "values": [
+      1959,
+      1296,
+      1301,
+      1411,
+      1428,
+      1297
+     ]
+    },
+    {
+     "name": "BJA Level 3",
+     "values": [
+      576,
+      418,
+      449,
+      445,
+      445,
+      411
+     ]
+    },
+    {
+     "name": "BJA Level 4",
+     "values": [
+      7,
+      13,
+      10,
+      27
+     ]
+    },
+    {
+     "name": "BJA Level 5",
+     "values": [
+      3,
+      5,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Average number of staff (full time equivalents) during the year of UK Sport in the United Kingdom (UK) from 2016/2017 to 2018/2019",
+   "short": "Average number of staff of UK Sport 2016-2019",
+   "unit": "",
+   "description": "This statistic depicts the average number of staff (full time equivalent) during the year of UK Sport in the United Kingdom (UK) from 2016/17 to 2018/19. In 2017/18, UK sport employed an average of 80 people.",
+   "note": "United Kingdom; April 1, 2016 to March 31 2019",
+   "source": "UK Sport",
+   "kind": "categorical",
+   "categories": [
+    "2016/17",
+    "2017/18",
+    "2018/19"
+   ],
+   "series": [
+    {
+     "name": "UK Sport*",
+     "values": [
+      77,
+      80,
+      85
+     ]
+    },
+    {
+     "name": "English Institute of Sport",
+     "values": [
+      355,
+      359,
+      381
+     ]
+    },
+    {
+     "name": "Yorkshire 2019 Limited",
+     "values": [
+      3,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Staff costs of UK Sport in the United Kingdom (UK) during financial year 2018/2019 (in 1,000 GBP)",
+   "short": "Staff costs of UK Sport in the United Kingdom 2019",
+   "unit": "1,000 GBP",
+   "description": "This statistic depicts the staff costs of UK Sport, the sports governing body in the United Kingdom (UK), during financial year 2018/19. That year, UK Sport spend approximately 827 thousand British pounds on social security.",
+   "note": "United Kingdom; March 31st 2019",
+   "source": "UK Sport",
+   "kind": "categorical",
+   "categories": [
+    "Wages and Salaries (including performance related pay)",
+    "Pension service costs",
+    "Social security costs",
+    "Other staff costs",
+    "Administration expense relating to pension scheme"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6856,
+      2146,
+      827,
+      339,
+      34
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Staff costs of Sport England in England from 2014/15 to 2020/21, by type of costs (in 1,000 GBP)",
+   "short": "Staff costs of Sport England in England from 2015 to 2021, by type",
+   "unit": "1,000 GBP",
+   "description": "This statistic displays the staff costs of Sport England in England from 2014/15 to 2020/21, by type of costs. In 2020/21, Sport England spend approximately 1.5 million British pounds on social security costs.",
+   "note": "United Kingdom (England); April 2014 to March 2021",
+   "source": "Sport England",
+   "kind": "categorical",
+   "categories": [
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21"
+   ],
+   "series": [
+    {
+     "name": "Wages and salaries",
+     "values": [
+      11036,
+      10811,
+      11176,
+      10714,
+      11823,
+      12888,
+      13226
+     ]
+    },
+    {
+     "name": "Social security costs",
+     "values": [
+      1138,
+      1142,
+      1183,
+      1228,
+      1345,
+      1453,
+      1500
+     ]
+    },
+    {
+     "name": "Pension costs",
+     "values": [
+      1543,
+      1752,
+      1665,
+      2477,
+      2118,
+      2663,
+      2597
+     ]
+    },
+    {
+     "name": "Agency staff",
+     "values": [
+      741,
+      996,
+      1047,
+      1135,
+      1430,
+      966,
+      988
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Number of employees of the Football Association (FA) on a monthly average in the United Kingdom (UK) from 2014 to 2021",
+   "short": "Number of employees of the FA on a monthly average in the UK 2014- 2021",
+   "unit": "",
+   "description": "The statistic displays the number of employees of the Football Association (FA) on monthly average in the United Kingdom (UK) from 2014 to 2021. In 2014, the FA employed 728 people for the category \"promotion of Association Football\". This number increased to 846 by 2020. The average monthly number of employees for hotel management increased from 190 in 2014 to 270 in 2020. In 2021, there was arather significant cutback on employees by the FA. More information about [...]",
+   "note": "United Kingdom; 2014 to 2021",
+   "source": "The Football Association (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "Promotion of Association Football",
+     "values": [
+      728,
+      759,
+      701,
+      701,
+      825,
+      825,
+      846,
+      801
+     ]
+    },
+    {
+     "name": "Stadium and event management",
+     "values": [
+      99,
+      90,
+      79,
+      112,
+      97,
+      89,
+      94,
+      76
+     ]
+    },
+    {
+     "name": "Hotel management",
+     "values": [
+      190,
+      201,
+      217,
+      249,
+      254,
+      272,
+      270,
+      186
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Cost of staff for the Football Association (FA) in the United Kingdom (UK) from 2014 to 2021, by category (in 1,000 GBP)",
+   "short": "Cost of staff for the FA in the United Kingdom (UK) 2014-2021, by category",
+   "unit": "1,000 GBP",
+   "description": "The statistic displays the cost of staff for the Football Association (FA) in the United Kingdom (UK) from 2014 to 2021, by category. In 2014, the FA paid approximately 43.6 million GBP in wages and salaries. The cost for wages and salaries stood at roughly 53 million British pounds by 2020. More information about football in the UK can be found in the Dossier: Football in the United Kingdom and further information about sport associations in the UK can be found in the Dossier: Sport [...]",
+   "note": "United Kingdom; 2014 to 2020",
+   "source": "The Football Association (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "Wages and salaries",
+     "values": [
+      43574,
+      40769,
+      40238,
+      40266,
+      53186,
+      54991,
+      52790,
+      53927
+     ]
+    },
+    {
+     "name": "Social security cost",
+     "values": [
+      5155,
+      4466,
+      4630,
+      4278,
+      6203,
+      6873,
+      6823,
+      6269
+     ]
+    },
+    {
+     "name": "Other pension costs",
+     "values": [
+      2037,
+      1911,
+      1698,
+      1880,
+      2270,
+      2646,
+      2808,
+      2795
+     ]
+    },
+    {
+     "name": "Severance costs",
+     "values": [
+      1781,
+      7141,
+      2241,
+      12691,
+      1229,
+      398,
+      2856,
+      1137
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Average monthly number of persons employed by the Scottish Rugby Union (SRU) in Scotland fin 2021/22 and 2022/23, by category",
+   "short": "Scotland: average monthly number of employees of the SRU 2021-2023, by category",
+   "unit": "",
+   "description": "In the 2022/23 financial year, the individual staff group of the Scottish Rugby Union (SRU) with the highest average monthly number of employees was for high performance rugby, totaling 97. In total that year, the Union, which is the governing body for rugby in Scotland, had a monthly average of 335 employees involved in the sport.",
+   "note": "United Kingdom (Scotland); June 1, 2021 to May 31, 2023",
+   "source": "Scottish Rugby Union",
+   "kind": "categorical",
+   "categories": [
+    "2021/22",
+    "2022/23"
+   ],
+   "series": [
+    {
+     "name": "Rugby Development",
+     "values": [
+      49,
+      52
+     ]
+    },
+    {
+     "name": "People & Engagement",
+     "values": [
+      25,
+      25
+     ]
+    },
+    {
+     "name": "Medical",
+     "values": [
+      18,
+      18
+     ]
+    },
+    {
+     "name": "Legal & Governance",
+     "values": [
+      7,
+      7
+     ]
+    },
+    {
+     "name": "High Performance Rugby",
+     "values": [
+      90,
+      97
+     ]
+    },
+    {
+     "name": "Financial Operations",
+     "values": [
+      49,
+      49
+     ]
+    },
+    {
+     "name": "Executive Office",
+     "values": [
+      7,
+      5
+     ]
+    },
+    {
+     "name": "Commercial Operations",
+     "values": [
+      77,
+      82
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Employment costs of the Scottish Rugby Union (SRU) in Scotland from 2013/14 to 2022/23, by type (in million GBP)",
+   "short": "Scotland: employment costs of the Scottish Rugby Union from 2013-2023, by type",
+   "unit": "million GBP",
+   "description": "Employment costs of Scotland's governing body of rugby, the Scottish Rugby Union, reached nearly 40 million British pounds in the 2022/23 financial year. Since 2013/14, the largest share of these expenses consistently came from wages and salaries.",
+   "note": "United Kingdom (Scotland); June 1, 2013 to May 31, 2023; * No figures were available for the 2021/22 financial year.  The Scottish Rugby Union (SRU) is the national governing body of rugby union in Scotland. Read more",
+   "source": "Scottish Rugby Union",
+   "kind": "categorical",
+   "categories": [
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2020/21*",
+    "2022/23"
+   ],
+   "series": [
+    {
+     "name": "Wages and salaries",
+     "values": [
+      19.87,
+      21.05,
+      21.83,
+      21.85,
+      24.36,
+      27.32,
+      29.66,
+      33.99
+     ]
+    },
+    {
+     "name": "Social security costs",
+     "values": [
+      2.13,
+      2.3,
+      2.38,
+      2.45,
+      2.89,
+      3.39,
+      2.81,
+      4.28
+     ]
+    },
+    {
+     "name": "Other pension costs",
+     "values": [
+      0.49,
+      0.57,
+      0.64,
+      0.63,
+      0.72,
+      0.78,
+      0.45,
+      0.96
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Monthly average number of employees of the Welsh Rugby Union (WRU) in Wales from 2013 to 2023, by type",
+   "short": "Wales: monthly average number of staff of the Welsh Rugby Union 2014-2023, by type",
+   "unit": "",
+   "description": "In 2023, the Welsh Rugby Union (WRU) group had a monthly average of 104 employees engaged in performance rugby, which accounted for the highest share of employees that year. In recent years, there has been a sharp growth in this category of employees, with the 2015 figure having been only a third of that in 2023. Meanwhile, the monthly average for employees in management and administration in the WRU group has been on a general trend of decline after having peaked in 2020.",
+   "note": "United Kingdom (Wales); 2014 to 2023",
+   "source": "Welsh Rugby Union",
+   "kind": "categorical",
+   "categories": [
+    "Group 2014",
+    "Company 2014",
+    "Group 2015",
+    "Company 2015",
+    "Group 2016",
+    "Company 2016",
+    "Group 2017",
+    "Company 2017",
+    "Group 2018",
+    "Company 2018",
+    "Group 2019",
+    "Company 2019",
+    "Group 2020",
+    "Company 2020",
+    "Group 2021",
+    "Company 2021",
+    "Group 2022",
+    "Company 2022",
+    "Group 2023",
+    "Company 2023"
+   ],
+   "series": [
+    {
+     "name": "Management and administration",
+     "values": [
+      60,
+      32,
+      69,
+      38,
+      70,
+      38,
+      77,
+      68,
+      85,
+      67,
+      87,
+      69,
+      91,
+      72,
+      88,
+      68,
+      76,
+      59,
+      76,
+      60
+     ]
+    },
+    {
+     "name": "Direct",
+     "values": [
+      23,
+      20,
+      24,
+      21,
+      22,
+      20,
+      24,
+      21,
+      23,
+      21,
+      24,
+      22,
+      27,
+      25,
+      26,
+      28,
+      16,
+      10,
+      16,
+      14
+     ]
+    },
+    {
+     "name": "Performance rugby",
+     "values": [
+      35,
+      35,
+      29,
+      29,
+      31,
+      31,
+      36,
+      36,
+      39,
+      39,
+      39,
+      39,
+      38,
+      38,
+      58,
+      58,
+      70,
+      70,
+      104,
+      101
+     ]
+    },
+    {
+     "name": "Community rugby",
+     "values": [
+      57,
+      57,
+      53,
+      53,
+      54,
+      54,
+      67,
+      67,
+      68,
+      66,
+      70,
+      68,
+      67,
+      65,
+      63,
+      66,
+      72,
+      69,
+      88,
+      83
+     ]
+    },
+    {
+     "name": "Stadium",
+     "values": [
+      36,
+      36,
+      35,
+      36,
+      46,
+      47,
+      62,
+      54,
+      51,
+      51
+     ]
+    },
+    {
+     "name": "Dragons",
+     "values": [
+      80,
+      91,
+      87,
+      93,
+      95,
+      94
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Group and company average staff costs of the Welsh Rugby Union (WRU) in Wales from 2014 to 2023, by type (in million GBP)",
+   "short": "Wales: group and company staff costs of Welsh Rugby Union in 2014-2023, by type",
+   "unit": "million GBP",
+   "description": "In 2023, the group average staff costs of the Welsh Rugby Union (WRU) for wages and salaries peaked at 19.3 million British pounds. Meanwhile, the company's average staff costs for that year reached 10 million British pounds.",
+   "note": "United Kingdom (Wales); 2014 to 2023",
+   "source": "Welsh Rugby Union",
+   "kind": "categorical",
+   "categories": [
+    "Company 2014",
+    "Group 2014",
+    "Company 2015",
+    "Group 2015",
+    "Company 2016",
+    "Group 2016",
+    "Company 2017",
+    "Group 2017",
+    "Company 2018",
+    "Group 2018",
+    "Company 2019",
+    "Group 2019",
+    "Company 2020",
+    "Group 2020",
+    "Company 2021",
+    "Group 2021",
+    "Company 2022",
+    "Group 2022",
+    "Company 2023",
+    "Group 2023"
+   ],
+   "series": [
+    {
+     "name": "Wages and salaries",
+     "values": [
+      5.93,
+      7.8,
+      5.84,
+      7.85,
+      5.8,
+      7.9,
+      7.5,
+      8.9,
+      8,
+      14.3,
+      8.2,
+      15.6,
+      8.5,
+      15.8,
+      7,
+      14.3,
+      9,
+      17.2,
+      10,
+      19.3
+     ]
+    },
+    {
+     "name": "Social security costs",
+     "values": [
+      0.62,
+      0.8,
+      0.65,
+      0.82,
+      0.7,
+      0.9,
+      0.8,
+      0.9,
+      0.9,
+      1.6,
+      0.9,
+      1.7,
+      0.9,
+      1.7,
+      0.8,
+      1.6,
+      1,
+      2,
+      1.2,
+      2.3
+     ]
+    },
+    {
+     "name": "Pension costs - defined contribution schemes",
+     "values": [
+      0.52,
+      0.69,
+      0.54,
+      0.72,
+      0.6,
+      0.7,
+      0.7,
+      0.9,
+      0.7,
+      0.9,
+      0.8,
+      1,
+      0.9,
+      1.1,
+      0.9,
+      1.1,
+      1,
+      1.3,
+      1.2,
+      1.5
+     ]
+    }
+   ]
+  }
+ ]
+}

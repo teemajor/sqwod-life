@@ -1,0 +1,1542 @@
+{
+ "studyId": "39785",
+ "study": "health and wellness food trends in the united kingdom statista dossier",
+ "file": "research/statista/study_id39785_health-and-wellness-food-trends-in-the-united-kingdom-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Attitudes towards food in the UK as of March 2024",
+   "short": "Attitudes towards food in the UK 2024",
+   "unit": "",
+   "description": "When asked about \"Attitudes towards food\", most UK respondents pick \"I actively try to eat healthy\" as an answer. 60 percent did so in our online survey in 2024.",
+   "note": "United Kingdom; April 2023 to March 2024; 4030 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I actively try to eat healthy",
+    "I try to avoid plastic packaging when buying food",
+    "I avoid artificial flavors and preservatives",
+    "I try to eat less meat",
+    "Food must be convenient and fast",
+    "I do not enjoy cooking",
+    "I am open to eating meat that was grown in a lab (cultured meat)",
+    "I can't afford to eat healthily",
+    "I have one or more food intolerances",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6,
+      0.3,
+      0.27,
+      0.27,
+      0.25,
+      0.17,
+      0.16,
+      0.14,
+      0.13,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Attitudes towards food in the UK as of September 2023, by gender",
+   "short": "Attitudes towards food in the UK 2023, by gender",
+   "unit": "",
+   "description": "When asked about \"Attitudes towards food\", most UK respondents picked \"I actively try to eat healthy\" as an answer. 61 percent did so in our online survey in 2023.",
+   "note": "United Kingdom; October 2022 to September 2023; 24,176 respondents; 18-64 years; Results aggregate four survey waves across the survey period.",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I actively try to eat healthy",
+    "I try to avoid plastic packaging when buying food",
+    "I try to eat less meat",
+    "I avoid artificial flavors and preservatives",
+    "Food must be convenient and fast",
+    "I do not enjoy cooking",
+    "I can't afford to eat healthily",
+    "I have one or more food intolerances",
+    "I am open to eating meat that was grown in a lab (cultured meat)",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.6,
+      0.3,
+      0.26,
+      0.29,
+      0.25,
+      0.15,
+      0.14,
+      0.12,
+      0.22,
+      0.08
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.62,
+      0.36,
+      0.33,
+      0.29,
+      0.23,
+      0.17,
+      0.15,
+      0.14,
+      0.13,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Labels considered when buying groceries in the United Kingdom (UK) in 2022",
+   "short": "Labels considered when buying groceries in the UK in 2022",
+   "unit": "",
+   "description": "In 2022, nearly a third of consumers in the United Kingdom answered that they take into consideration whether a product has a free range label when buying groceries. This was the label with highest share of consumer consideration. In second place were low sugar/no sugar labels.",
+   "note": "United Kingdom; July, 2022; 18 years and older; Profiles data is nationally representative and weighted by age, gender, education, region, and race.",
+   "source": "YouGov Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Free range",
+    "Low sugar/ no added sugar",
+    "Animal welfare",
+    "Environmentally friendly",
+    "Sustainable production / sustainable fishing",
+    "Low fat or fat free",
+    "Fair Trade",
+    "Local product",
+    "Country of origin",
+    "Organic"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.31,
+      0.27,
+      0.24,
+      0.21,
+      0.21,
+      0.21,
+      0.21,
+      0.2,
+      0.19,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Impact of the cost of living crisis on healthy eating in the United Kingdom in 2023",
+   "short": "Impact of the cost of living crisis on healthy eating in the United Kingdom 2023",
+   "unit": "",
+   "description": "In a survey carried out in August 2023, about 28 percent of respondents in the United Kingdom stated that they were eating less healthily to save money. More concretely, about 19 percent stated they were eating more ready meals and processed foods.",
+   "note": "United Kingdom; August 10 to 14, 2023; 2,013 respondents; 16 years and older",
+   "source": "BBC; Censuswide; The Guardian Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "No impact on healthy eating habits",
+    "Eating less healthily to save money",
+    "Eating more ready meals and processed foods",
+    "More aware of health as cannot afford to get sick",
+    "Cooking less because of the cost of ingredients",
+    "Eating less healthily due to stress",
+    "Taking more packed lunches to work",
+    "Working more hours so less time to cook healthily"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.31,
+      0.28,
+      0.19,
+      0.18,
+      0.17,
+      0.15,
+      0.15,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Most common food-related concerns among consumers in the United Kingdom (excluding Scotland) in 2023",
+   "short": "Leading food-related concerns among consumers in the UK in 2023",
+   "unit": "",
+   "description": "In 2023, approximately 65 percent of respondents in England, Wales, and Northern Ireland stated that they have concerns about food prices. This was the most common food-related concern among consumers. Moreover, the share of respondents who have concerns about food waste was about 62 percent.",
+   "note": "United Kingdom (England, Wales, Northern Ireland); October 12, 2022, to January 10, 2023; 5,991 respondents; 16 years and older; The surveyed region includes England, Wales, and Northern Ireland. Scotland is not included.",
+   "source": "Food Standards Agency; Ipsos",
+   "kind": "categorical",
+   "categories": [
+    "Food prices",
+    "Food waste",
+    "The quality of food",
+    "The amount of food packaging",
+    "The amount of sugar in food",
+    "Food poisoning",
+    "Animal welfare",
+    "The amount of salt in food",
+    "Food hygiene when eating out",
+    "Being able to eat healthily"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.62,
+      0.61,
+      0.56,
+      0.55,
+      0.51,
+      0.5,
+      0.47,
+      0.46,
+      0.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Diets and nutrition in the UK as of March 2024",
+   "short": "Diets and nutrition in the UK 2024",
+   "unit": "",
+   "description": "13 percent of UK respondents answer our survey on \"Diets and nutrition\" with \"Flexitarian (mostly plant-based foods while occasionally allowing meat and fish)\". The survey was conducted in 2024, among 4,030 consumers.",
+   "note": "United Kingdom; April 2023 to March 2024; 4030 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Flexitarian (mostly plant-based foods while occasionally allowing meat and fish)",
+    "Low-carb / no carb",
+    "Lactose-free (i.e., dairy products that do not contain lactose)",
+    "Gluten-free (i.e., no wheat products)",
+    "Vegetarian (not eating animal products, e.g., meat, poultry, fish, but eating animal-derived products, e.g., eggs, dairy products)",
+    "Pescetarian (eating fish, but not eating meat or poultry)",
+    "Vegan (not eating animal products or animal-derived products, e.g., meat, poultry, fish, eggs, or dairy products)",
+    "I don't follow any nutrition rules",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.12,
+      0.08,
+      0.07,
+      0.07,
+      0.04,
+      0.03,
+      0.57,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Share of adults who follow a flexitarian diet in Great Britain from 2019 to 2024",
+   "short": "Adults following flexitarian diet in Great Britain 2019-2024",
+   "unit": "",
+   "description": "In January 2024, about 13 percent of surveyed Brits stated that they follow a flexitarian diet. Substituting a vegetarian diet with meat or fish was similarly common in earlier surveys. If the numbers are broken down by gender, it is revealed that more women follow this type of diet than men.",
+   "note": "United Kingdom (Great Britain); July 2019 to January 2024; British population",
+   "source": "YouGov",
+   "kind": "timeseries",
+   "categories": [
+    "Jul 2019",
+    "Jan 2020",
+    "Jul 2020",
+    "Jan 2021",
+    "Jul 2021",
+    "Jan 2022",
+    "Jul 2022",
+    "Jan 2023",
+    "Jul 2023",
+    "Jan 2024"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.15,
+      0.13,
+      0.14,
+      0.14,
+      0.16,
+      0.16,
+      0.14,
+      0.14,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Do you follow vegetarian nutrition rules?",
+   "short": "Share of vegetarians in the United Kingdom 2023, by age group",
+   "unit": "",
+   "description": "In the United Kingdom, the share of those following a vegetarian diet was highest among the 18 to 19-year-olds at 11 percent. Among respondents 60 to 64 years of age, the share of vegetarians was only two percent. This data for 2023 aggregates the results of four survey waves carried out during 2023.",
+   "note": "United Kingdom; 05 January 2023 to 11 December 2023; 24,187 respondents; 18-64 years; Residential online population; data aggregates four survey waves.",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "18-19 years",
+    "20-29 years",
+    "30-39 years",
+    "40-49 years",
+    "50-59 years",
+    "60-64 years"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.11,
+      0.09,
+      0.07,
+      0.08,
+      0.06,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Do you follow vegan nutrition rules?",
+   "short": "Share of vegans in the United Kingdom 2023, by age group",
+   "unit": "",
+   "description": "In 2023, about four percent of responding 20 to 29-year-olds in the United Kingdom stated that they followed a vegan diet. Respondents under fifty were more likely to be vegans than those over. With small shares of the population, it is often difficult to track the number of actual vegans, as an error of only one percent in a survey can significantly change the size of the expected vegan population.",
+   "note": "United Kingdom; 06 October 2022 to 25 September 2023; beginning of first to end of last survey; 24,176 respondents; 18-64 years; Residential online population; data aggregates four surveys",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "18-19 years",
+    "20-29 years",
+    "30-39 years",
+    "40-49 years",
+    "50-59 years",
+    "60-64 years"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.04,
+      0.04,
+      0.06,
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Consumers who actively try to eat healthy in the UK in 2022/23, by generation",
+   "short": "Share of consumers who actively try to eat heathy in the UK 2022/23, by generation",
+   "unit": "",
+   "description": "According to the Statista Global Consumer Survey carried out between April 2022 and March 2023 in the United Kingdom, members of the baby boomer generational cohort were the most likely to agree with the statement that they actively try to healthy. The younger the respondent, the less likely they were to agree with the statement.",
+   "note": "United Kingdom; 5 April, 2022 to 23 March, 2023; 24,190*; 18-64 years; Covers the residential online population. This statistic combines four survey waves carried out in the stated time period; *Respondent number is for all four survey [...] Read more",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gen Z",
+    "Millennials",
+    "Generation X",
+    "Baby boomer"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.57,
+      0.62,
+      0.62,
+      0.65
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Prevalence of different types of food hypersensitivity among consumers in the United Kingdom (excluding Scotland) in 2023",
+   "short": "Prevalence of food hypersensitivities among consumers in the UK in 2023",
+   "unit": "",
+   "description": "In 2023, approximately 12 percent of survey respondents in England, Wales, and Northern Ireland reported that they had a food intolerance. Moreover, around five percent of respondents reported having a food allergy.",
+   "note": "United Kingdom (England, Wales, Northern Ireland); October 12, 2022, to January 10, 2023; 5,991 respondents; 16 years and older; The surveyed region includes England, Wales, and Northern Ireland. Scotland is not included.",
+   "source": "Food Standards Agency; Ipsos",
+   "kind": "categorical",
+   "categories": [
+    "No unpleasant reaction to food",
+    "Food intolerance",
+    "Food allergy",
+    "Coeliac disease"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.78,
+      0.12,
+      0.05,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Share of consumers with one or more food intolerances in the UK in 2022/23, by generation",
+   "short": "Consumers with food intolerances in the UK 2022/23, by generation",
+   "unit": "",
+   "description": "According to the Statista Global Consumer Survey carried out between April 2022 and March 2023 in the United Kingdom, members of the Gen Z cohort were the most likely to agree with the statement that they have one or more food intolerances. The older the respondent, the less likely they were to agree with the statement.",
+   "note": "United Kingdom; October 6, 2022, to September 25, 2023; 24,176 respondents; 18-64 years; Covers the residential online population. This statistic combines four survey waves carried out in the stated time period",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gen Z",
+    "Millennials",
+    "Generation X",
+    "Baby boomer"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.16,
+      0.14,
+      0.12,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Level of concern about genetically modified foods among consumers in the United Kingdom (excluding Scotland) in 2023",
+   "short": "Level of concern about genetically modified foods among consumers in the UK in 2023",
+   "unit": "",
+   "description": "In 2023, approximately 27 percent of survey respondents in England, Wales, and Northern Ireland stated that they were highly concerned about genetically modified foods. The share of respondents who were not very concerned about genetically modified foods stood at 22 percent.",
+   "note": "United Kingdom (England, Wales, Northern Ireland); October 12, 2022, to January 10, 2023; 5,991 respondents; 16 years and older; The surveyed region includes England, Wales, and Northern Ireland. Scotland is not included.",
+   "source": "Food Standards Agency; Ipsos",
+   "kind": "categorical",
+   "categories": [
+    "Highly concerned",
+    "Somewhat concerned",
+    "Not very concerned",
+    "Not concerned at all"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.34,
+      0.22,
+      0.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Recent changes in the consumption of hyper-processed foods among consumers in the United Kingdom in 2023",
+   "short": "Changes in the consumption of hyper-processed foods among consumers in the UK",
+   "unit": "",
+   "description": "According to a survey carried out in the United Kingdom in June 2023, a total of approximately 32 percent of respondents stated that they their consumption of hyper-processed foods* decreased or decreased drastically within the last six months. Moreover, a total of about 23 percent of respondents stated that their consumption of such products increased or increased drastically.",
+   "note": "United Kingdom; June 20 to 29, 2023; 4,000**; 18-65 years",
+   "source": "Appinio",
+   "kind": "categorical",
+   "categories": [
+    "Decreased drastically",
+    "Decreased",
+    "As much as before",
+    "Increased",
+    "Increased drastically"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.06,
+      0.25,
+      0.47,
+      0.19,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Sales value of plant-based meat substitutes in selected countries in Europe in 2022 (in million euros)",
+   "short": "Meat substitutes market size in selected countries in Europe 2022",
+   "unit": "million euros",
+   "description": "In 2022, Germany was Europe's leading plant-based meat substitutes market, with sales of over 640 million euros. The market size of the united Kingdom was roughly 530 million euros. By comparison, sales of meat substitutes in Romania reached around ten million euros.",
+   "note": "Europe; 2022",
+   "source": "Nielsen; The Good Food Institute Sales value in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Germany",
+    "United Kingdom",
+    "Netherlands",
+    "Italy",
+    "France",
+    "Sweden",
+    "Spain",
+    "Belgium",
+    "Poland",
+    "Denmark",
+    "Austria",
+    "Romania",
+    "Portugal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      643,
+      530,
+      221,
+      168,
+      113,
+      87,
+      85,
+      54,
+      38,
+      31,
+      25,
+      10,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Revenue of the milk substitutes market in the United Kingdom from 2019 to 2029 (in billion U.S. dollars)",
+   "short": "Revenue of the milk substitutes industry in the UK 2019-2029",
+   "unit": "billion U.S. dollars",
+   "description": "The revenue in the 'Milk Substitutes' segment of the food market in the United Kingdom was forecast to continuously increase between 2024 and 2029 by in total 0.5 billion U.S. dollars (+74.63 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 1.12 billion U.S. dollars and therefore a new peak in 2029. Notably, the revenue of the 'Milk Substitutes' segment of the food market was continuously increasing over the past years.",
+   "note": "United Kingdom; 2019 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.17,
+      0.25,
+      0.43,
+      0.54,
+      0.6,
+      0.67,
+      0.75,
+      0.83,
+      0.91,
+      1.02,
+      1.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Revenue of the meat substitutes market in the United Kingdom from 2019 to 2029 (in million U.S. dollars)",
+   "short": "Revenue of the meat substitutes industry in the UK 2019-2029",
+   "unit": "million U.S. dollars",
+   "description": "The revenue in the 'Meat Substitutes' segment of the food market in the United Kingdom was forecast to continuously increase between 2024 and 2029 by in total 97.3 million U.S. dollars (+13.38 percent). After the seventh consecutive increasing year, the indicator is estimated to reach 824.45 million U.S. dollars and therefore a new peak in 2029.",
+   "note": "United Kingdom; 2019 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      409.1,
+      568.8,
+      715.03,
+      691.2,
+      697.09,
+      727.19,
+      742.92,
+      759.49,
+      776.07,
+      796.06,
+      824.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Sales revenue of vegetarian food and drink products and plant-based alternatives in the United Kingdom from 2017 to 2022 (in million GBP)",
+   "short": "Sales revenue of vegetarian food and drink products in the United Kingdom, 2017-2022",
+   "unit": "million GBP",
+   "description": "The retail sales of vegetarian products and plant-based alternatives in the United Kingdom amounted to an estimated 1.16 billion British pounds in 2022. Sales peaked in 2020 during the pandemic and collapsed in 2021. The market seems to have returned to pre-pandemic levels and might continue the trend seen before it was majorly disrupted.",
+   "note": "United Kingdom; 2010 to 2022",
+   "source": "Ethical Consumer; The Co-operative Bank",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Vegetarian and plant-based alternatives",
+     "values": [
+      885,
+      1000,
+      1114,
+      1490,
+      1085,
+      1158
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Average plant-based meat substitute spending per capita in selected European countries in 2022 (in euros)",
+   "short": "Per capita spending on meat substitutes in selected European countries in 2022",
+   "unit": "euros",
+   "description": "In 2022, a few European countries consumer spending on meat substitutes was comparatively low. In five countries spending was under two euros per capita. This included not only smaller countries but large markets such as France, Spain, and Poland. The UK, the Netherlands, Germany, Sweden and Denmark were countries with spending of over five euros. Dutch consumers were spending the most money per capita on plant-based meat substitutes.",
+   "note": "Europe; 2022",
+   "source": "Nielsen; The Good Food Institute Average annual per capita spending in euros",
+   "kind": "categorical",
+   "categories": [
+    "Netherlands",
+    "Sweden",
+    "UK",
+    "Germany",
+    "Denmark",
+    "Belgium",
+    "Italy",
+    "Austria",
+    "Spain",
+    "France",
+    "Poland",
+    "Portugal",
+    "Romania"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      12.6,
+      8.3,
+      7.9,
+      7.7,
+      5.3,
+      4.7,
+      2.9,
+      2.8,
+      1.8,
+      1.7,
+      1,
+      0.7,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Volume of the milk substitutes market in the United Kingdom from 2018 to 2028 (in million kilograms)",
+   "short": "Volume of milk substitutes in the UK 2018-2028",
+   "unit": "million kilograms",
+   "description": "The volume in the 'Milk Substitutes' segment of the food market in the United Kingdom was forecast to continuously increase between 2024 and 2028 by in total 84.2 thousand tons (+35.84 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 319.17 thousand tons and therefore a new peak in 2028. Notably, the volume of the 'Milk Substitutes' segment of the food market was continuously increasing over the past years.",
+   "note": "United Kingdom; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      79,
+      104,
+      146,
+      172.31,
+      201.78,
+      213.9,
+      234.96,
+      256.01,
+      277.06,
+      298.12,
+      319.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Volume of the meat substitutes market in the United Kingdom from 2018 to 2028 (in million kilograms)",
+   "short": "Volume of meat substitutes in the UK 2018-2028",
+   "unit": "million kilograms",
+   "description": "The volume in the 'Meat Substitutes' segment of the food market in the United Kingdom was forecast to continuously increase between 2024 and 2028 by in total 34.8 thousand tons (+36.92 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 129.08 thousand tons and therefore a new peak in 2028. Notably, the volume of the 'Meat Substitutes' segment of the food market was continuously increasing over the past years.",
+   "note": "United Kingdom; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      42,
+      47,
+      57,
+      70.7,
+      76.46,
+      85.57,
+      94.27,
+      102.97,
+      111.67,
+      120.38,
+      129.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Per-capita consumption of milk substitutes in the United Kingdom from 2019 to 2029 (in litres)",
+   "short": "Per-capita consumption of milk substitutes in the UK 2019-2029",
+   "unit": "litres",
+   "description": "The average volume per capita in the 'Milk Substitutes' segment of the food market in the United Kingdom was forecast to continuously increase between 2024 and 2029 by in total 1.5 kilograms (+43.35 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 4.93 kilograms and therefore a new peak in 2029. Notably, the average volume per capita of the 'Milk Substitutes' segment of the food market was continuously increasing over the past years.",
+   "note": "United Kingdom; 2019 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.56,
+      2.18,
+      2.56,
+      2.99,
+      3.16,
+      3.46,
+      3.75,
+      4.05,
+      4.35,
+      4.64,
+      4.93
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Per-capita consumption of meat substitutes in the United Kingdom from 2019 to 2029 (in kilograms)",
+   "short": "Per-capita consumption of meat substitutes in the UK 2019-2029",
+   "unit": "kilograms",
+   "description": "The average volume per capita in the 'Meat Substitutes' segment of the food market in the United Kingdom was forecast to remain on a similar level in 2029 as compared to 2024 with 0.91 kilograms. According to this forecast, the indicator will stay nearly the same over the forecast period.",
+   "note": "United Kingdom; 2019 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7,
+      0.85,
+      1.05,
+      0.94,
+      0.9,
+      0.91,
+      0.91,
+      0.91,
+      0.91,
+      0.91,
+      0.91
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Revenue of the leading global markets for vitamins and minerals in 2023, by country (in million U.S. dollars)",
+   "short": "Revenue of vitamins & minerals worldwide 2023, by country",
+   "unit": "million U.S. dollars",
+   "description": "The revenue ranking in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market is lead by China with 4.8 billion U.S. dollars, while the United States is following with 4.4 billion U.S. dollars. In contrast, Sweden is at the bottom of the ranking with 5.36 million U.S. dollars, showing a difference of 4.8 billion U.S. dollars to China.",
+   "note": "Worldwide; Jan 1st to Dec 31st 2023",
+   "source": "Statista; Statista Consumer Market Insights Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "United States",
+    "India",
+    "Brazil",
+    "Japan",
+    "Poland",
+    "United Kingdom",
+    "Indonesia",
+    "South Korea",
+    "Philippines",
+    "Egypt",
+    "Russia",
+    "Nigeria",
+    "Israel",
+    "Iran"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4820.57,
+      4369.39,
+      2402.96,
+      1175.49,
+      1024.59,
+      804.08,
+      723.66,
+      677.32,
+      665.95,
+      515.86,
+      514.35,
+      512.94,
+      475.41,
+      360.52,
+      335.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Sales value of vitamins and minerals in Great Britain from 2009 to 2023 (in million GBP)",
+   "short": "Vitamins and minerals sales value in Great Britain 2009-2023",
+   "unit": "million GBP",
+   "description": "The sales value of over-the-counter vitamins and minerals in Great Britain was around 492 million British pounds in 2023. This represented a six percent increase compared to the previous year. The sales value of OTC vitamins and minerals has generally increased since 2009.",
+   "note": "United Kingdom (Great Britain); 2009 to 2023",
+   "source": "NielsenIQ; Proprietary Association of Great Britain",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      324.4,
+      320.5,
+      329.5,
+      345.9,
+      353.9,
+      350.1,
+      364,
+      372.9,
+      378,
+      427.1,
+      431.5,
+      495.2,
+      453.7,
+      461.5,
+      492
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Annual change in sales value of OTC vitamins and minerals in Great Britain from 2010 to 2023",
+   "short": "Vitamins and minerals sales growth in Great Britain 2010-2023",
+   "unit": "",
+   "description": "In 2023, the sales value of over-the-counter vitamins and minerals in Great Britain increased by six percent. This was one of the higher annual growth rates in the provided time interval.",
+   "note": "United Kingdom (Great Britain); 2010 to 2023",
+   "source": "NielsenIQ; Proprietary Association of Great Britain",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011*",
+    "2012",
+    "2013",
+    "2014",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      -0.012,
+      0.012,
+      0.05,
+      0.018,
+      -0.011,
+      0.0245,
+      0.005,
+      0.033,
+      0.022,
+      0.143,
+      -0.03,
+      0.016,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Leading 10 dispensed vitamins in England in 2023, by number of items",
+   "short": "Leading dispensed vitamins in England 2023, by item number",
+   "unit": "",
+   "description": "This statistic displays the leading ten vitamins dispensed in England in 2023, by number of prescription items. In that year, more than 26 million items of colecalciferol were dispensed in England.",
+   "note": "United Kingdom (England); 2023",
+   "source": "NHSBSA Number of items",
+   "kind": "categorical",
+   "categories": [
+    "Colecalciferol",
+    "Thiamine hydrochloride",
+    "Vitamin B compound",
+    "Other multivitamin preparations",
+    "Alfacalcidol",
+    "Vitamins caps",
+    "Pyridoxine hydrochloride",
+    "Ascorbic acid",
+    "Ergocalciferol",
+    "Calcitriol"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26507461,
+      3424858,
+      1017955,
+      1000887,
+      756381,
+      250698,
+      90612,
+      69181,
+      57709,
+      35550
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Revenue of the sweetener market in the United Kingdom from 2021 to 2029, by type (in million U.S. dollars)",
+   "short": "Sweetener market revenue in the United Kingdom 2021-2029, by type",
+   "unit": "million U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. This reflects the overall trend throughout the entire forecast period from 2021 to 2029. It is estimated that the indicator is continuously rising in all segments. In this regard, the Sugar segment achieves the highest value of 207.88 million U.S. dollars in 2029.",
+   "note": "United Kingdom; 2021 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "Sugar",
+     "values": [
+      158.34,
+      167.93,
+      178.46,
+      184.46,
+      189.04,
+      193.73,
+      198.35,
+      200.84,
+      207.88
+     ]
+    },
+    {
+     "name": "Honey",
+     "values": [
+      65.42,
+      71.56,
+      78.01,
+      82.78,
+      87.13,
+      91.72,
+      96.47,
+      101.93,
+      107.28
+     ]
+    },
+    {
+     "name": "Artificial Sweeteners",
+     "values": [
+      19.05,
+      20.77,
+      22.71,
+      24.18,
+      25.52,
+      26.94,
+      28.4,
+      30.12,
+      31.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Revenue growth of the sweetener market in the United Kingdom from 2022 to 2029, by type",
+   "short": "Sweetener market revenue growth in the United Kingdom 2022-2029, by type",
+   "unit": "",
+   "description": "Significant fluctuations are estimated for all segments over the forecast period for the revenue change. The indicator is forecast to follow mostly a negative trend. A closer examination reveals that the values decrease in more segments than they increase. For instance, the segment Artificial Sweeteners experiences an exceptionally strong decrease at 2029, with a value of 0.9 percent.",
+   "note": "United Kingdom; 2022 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "Honey",
+     "values": [
+      0.0939,
+      0.0901,
+      0.0611,
+      0.0525,
+      0.0527,
+      0.0517,
+      0.0566,
+      0.0525
+     ]
+    },
+    {
+     "name": "Artificial Sweeteners",
+     "values": [
+      0.0899,
+      0.0937,
+      0.0644,
+      0.0556,
+      0.0556,
+      0.0544,
+      0.0606,
+      0.052
+     ]
+    },
+    {
+     "name": "Sugar",
+     "values": [
+      0.0606,
+      0.0627,
+      0.0336,
+      0.0248,
+      0.0248,
+      0.0238,
+      0.0125,
+      0.035
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Consumption of sweeteners in the United Kingdom from 2018 to 2028, by type (in million kilograms)",
+   "short": "Sweetener market volume in the United Kingdom 2018-2028, by type",
+   "unit": "million kilograms",
+   "description": "Over the last two observations, the volume is forecast to significantly increase in all segments. Concerning the three selected segments, the segment Sugar has the largest volume with 123.82 thousand tons. Contrastingly, Artificial Sweeteners is ranked last, with 1.1 thousand tons. Their difference, compared to Sugar, lies at 122.72 thousand tons.",
+   "note": "United Kingdom; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Sugar",
+     "values": [
+      128.68,
+      124.62,
+      123.94,
+      121.18,
+      119.65,
+      120.78,
+      121.68,
+      122.41,
+      122.99,
+      123.45,
+      123.82
+     ]
+    },
+    {
+     "name": "Honey",
+     "values": [
+      4.57,
+      4.19,
+      4,
+      3.76,
+      3.83,
+      3.96,
+      4.1,
+      4.23,
+      4.37,
+      4.51,
+      4.64
+     ]
+    },
+    {
+     "name": "Artificial Sweeteners",
+     "values": [
+      1.19,
+      1.06,
+      0.97,
+      0.88,
+      0.89,
+      0.93,
+      0.96,
+      1,
+      1.03,
+      1.07,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Per-capita consumption of sugar in the United Kingdom from 2019 to 2029 (in kilograms)",
+   "short": "Per-capita consumption of sugar in the UK 2019-2029",
+   "unit": "kilograms",
+   "description": "The average volume per capita in the 'Sugar' segment of the food market in the United Kingdom was forecast to continuously increase between 2024 and 2029 by in total 0.01 kilograms (+0.56 percent). The indicator is estimated to amount to 1.8 kilograms in 2029.",
+   "note": "United Kingdom; 2019 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.87,
+      1.85,
+      1.8,
+      1.77,
+      1.78,
+      1.79,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Market share of regular, mid and low calorie variants of carbonated soft drinks in the United Kingdom in 2022",
+   "short": "Soft drinks: carbonates by regular, mid and no calorie in the United Kingdom 2022",
+   "unit": "",
+   "description": "This statistic shows the percentage market share of regular, mid and low calorie variants of carbonated soft drinks in the United Kingdom in 2022. Carbonates with low and no calories made up roughly 66 percent of the carbonated soft drink market in the UK.",
+   "note": "United Kingdom; 2022",
+   "source": "Canadean; Kantar Worldpanel",
+   "kind": "categorical",
+   "categories": [
+    "Low and no calorie",
+    "Regular",
+    "Mid calorie"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.663,
+      0.265,
+      0.072
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Market share of regular, mid and low calorie variants of dilutable soft drinks in the United Kingdom in 2022",
+   "short": "Soft drinks: low, mid and regular calorie dilutables market in the UK 2022",
+   "unit": "",
+   "description": "This statistic shows the market share of regular and low calorie varients of dilutable soft drinks in the United Kingdom in 2022. Regular dilutables represented approximately 4.4 percent of market volumes in 2022.",
+   "note": "United Kingdom; 2022",
+   "source": "Canadean; Kantar Worldpanel",
+   "kind": "categorical",
+   "categories": [
+    "Low and no calorie",
+    "Mid calorie",
+    "Regular"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.893,
+      0.064,
+      0.044
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Price per unit of sweeteners in the United Kingdom from 2019 to 2029, by type (in U.S. dollars)",
+   "short": "Average sweetener price per unit in the United Kingdom 2019-2029, by type",
+   "unit": "U.S. dollars",
+   "description": "The price per unit is forecast to experience significant growth in all segments in 2029. As part of the positive trend, the indicator achieves the maximum value across all three different segments by the end of the comparison period. Notably, the segment Artificial Sweeteners stands out with the highest value of 28.29 U.S. dollars.",
+   "note": "United Kingdom; 2019 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "Artificial Sweeteners",
+     "values": [
+      19.15,
+      19.55,
+      21.66,
+      23.26,
+      24.49,
+      25.12,
+      25.59,
+      26.11,
+      26.63,
+      27.35,
+      28.29
+     ]
+    },
+    {
+     "name": "Honey",
+     "values": [
+      15.54,
+      15.78,
+      17.41,
+      18.7,
+      19.69,
+      20.2,
+      20.57,
+      20.99,
+      21.41,
+      21.96,
+      22.71
+     ]
+    },
+    {
+     "name": "Sugar",
+     "values": [
+      1.27,
+      1.23,
+      1.31,
+      1.4,
+      1.48,
+      1.52,
+      1.54,
+      1.58,
+      1.61,
+      1.62,
+      1.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Sales value of protein concentrates manufactured in the United Kingdom (UK) from 2008 to 2022 (in 1,000 GBP)",
+   "short": "Protein concentrates: manufacturing sales value in the UK 2008-2022",
+   "unit": "1,000 GBP",
+   "description": "This statistic shows the total sales value for protein concentrates and flavored or colored sugar syrups manufactured in the United Kingdom (UK) from 2008 to 2022. In 2022 the sales value of protein concentrates surpassed 463 million British pounds.",
+   "note": "United Kingdom; 2008 to 2022",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009*",
+    "2010*",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015**",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      146687,
+      164769,
+      167394,
+      183624,
+      471816,
+      353749,
+      339157,
+      368073,
+      438513,
+      462280,
+      439914,
+      529028,
+      525899
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Sales volume of protein concentrates manufactured in the United Kingdom (UK) from 2008 to 2022 (in 1,000 kilograms)",
+   "short": "Protein concentrates: manufacturing sales volume in the UK 2008-2022",
+   "unit": "1,000 kilograms",
+   "description": "This statistic shows the total manufacturing sales volume for protein concentrates and flavored or colored sugar syrups in the United Kingdom (UK) from 2008 to 2022. In 2022, the sales volume of protein concentrates increased to approximately 106 thousand tons.",
+   "note": "United Kingdom; 2008 to 2022",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009*",
+    "2010*",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015**",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      36674,
+      49393,
+      45038,
+      47749,
+      132127,
+      93894,
+      88878,
+      93146,
+      100818,
+      118401,
+      102633,
+      105832,
+      106284
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Sales price of protein concentrates per kilogram manufactured in the United Kingdom (UK) from 2008 to 2022 (in GBP)",
+   "short": "Protein concentrates: manufacturing sales price in the UK 2008-2022",
+   "unit": "GBP",
+   "description": "This statistic shows the price per kilogram of protein concentrates and flavored or colored sugar syrups manufactured in the United Kingdom (UK) from 2008 to 2022. The price of protein concentrates reached approximately 4.95 British pounds per kilogram in 2022.",
+   "note": "United Kingdom; 2008 to 2022",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009*",
+    "2010*",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4,
+      3.34,
+      3.72,
+      3.85,
+      3.57,
+      3.77,
+      3.82,
+      3.95,
+      4.35,
+      3.9,
+      4.29,
+      5,
+      4.95
+     ]
+    }
+   ]
+  }
+ ]
+}

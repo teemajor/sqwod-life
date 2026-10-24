@@ -1,0 +1,1975 @@
+{
+ "studyId": "109838",
+ "study": "sports and fitness equipment in europe",
+ "file": "research/statista/study_id109838_sports-and-fitness-equipment-in-europe (1).pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Sales from the manufacture of sports goods in the United Kingdom (UK) from 2010 to 2022 (in million GBP)",
+   "short": "Sports goods manufacturers' sales in the United Kingdom (UK) 2010-2022",
+   "unit": "million GBP",
+   "description": "This statistic shows the total sales value of sports goods manufactured in the United Kingdom (UK) from 2010 to 2022. In 2022, manufacturers' sales of sports goods had a estimated value of 533 million British pounds (GBP).",
+   "note": "United Kingdom; 2010 to 2022",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      324,
+      369,
+      344,
+      348,
+      347,
+      316,
+      346,
+      360,
+      389,
+      602,
+      409,
+      583,
+      553
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Turnover from retail sale of equipment and accessories for sport, camping, recreation and musical instruments in the United Kingdom (UK) from 2008 to 2021 (in million GBP)",
+   "short": "Sports and recreation equipment retail sales turnover in the UK 2008-2021",
+   "unit": "million GBP",
+   "description": "This statistic shows the total annual turnover of the retail sale of equipment and accessories for sport, camping, recreation and musical instruments in the United Kingdom from 2008 to 2021. In 2021, turnover from the retail sale of such sports and leisure products amounted to nearly 7.1 billion British pounds.",
+   "note": "United Kingdom; 2008 to 2021",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4019,
+      4416,
+      4864,
+      5118,
+      4944,
+      4355,
+      5350,
+      4491,
+      5555,
+      6726,
+      5612,
+      9304,
+      6585,
+      7058
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Consumer spending on equipment for sport, camping and open-air recreation in the United Kingdom (UK) from 2000 to 2023 (in million GBP)",
+   "short": "Expenditure on sport and camping equipment in the United Kingdom (UK) 2000-2023",
+   "unit": "million GBP",
+   "description": "This statistic presents consumer spending on equipment for sport, camping and open-air recreation in the United Kingdom annually from 2000 to 2023. In 2023, over 10 billion British pounds was spent on sports and outdoor recreation equipment. Consumer spending on such recreational goods has nearly doubled since 2018.",
+   "note": "United Kingdom; 2000 to 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3562,
+      3793,
+      3698,
+      3488,
+      3307,
+      3112,
+      3815,
+      3756,
+      3706,
+      3838,
+      4396,
+      4361,
+      4362,
+      4166,
+      4488,
+      4356,
+      5314,
+      6378,
+      5530,
+      9161,
+      8948,
+      10652,
+      10396,
+      10129
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Number of specialized stores for the retail sales of sporting equipment in the United Kingdom (UK) from 2008 to 2022",
+   "short": "Number of retail stores for sporting equipment in the United Kingdom (UK) 2008-2022",
+   "unit": "",
+   "description": "This statistic shows the number of retail enterprises selling sporting equipment in the United Kingdom (UK) from 2008 to 2022. By 2022, this total of sport equipment specialist stores had reached about 5,540, which is a decrease compared to the previous year, but still considerably higher than the counts recorded in previous years.",
+   "note": "United Kingdom; 2008 to 2022",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4051,
+      4151,
+      4288,
+      4437,
+      4497,
+      4689,
+      4845,
+      5058,
+      5159,
+      5150,
+      5076,
+      4904,
+      5196,
+      5642,
+      5541
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Net revenues of the sporting goods retail sector in Germany from 2002 to 2022 (in billion euros)",
+   "short": "Revenue of sporting goods retail sector in Germany 2002-2022",
+   "unit": "billion euros",
+   "description": "This statistic shows the development of sporting goods retail net revenues in Germany from 2002 to 2022. In 2022, net revenues of the sporting goods retail sector amounted to around 6.43 billion euros.",
+   "note": "2002 to 2022; Deliveries and services",
+   "source": "Statistisches Bundesamt",
+   "kind": "timeseries",
+   "categories": [
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.92,
+      1.76,
+      1.91,
+      2.06,
+      2.2,
+      2.34,
+      2.27,
+      2.65,
+      3.15,
+      3.2,
+      3.73,
+      3.72,
+      4.09,
+      4.49,
+      4.88,
+      5.11,
+      5.23,
+      5.33,
+      5.37,
+      5.7,
+      6.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Sales value of the sporting goods sector in Spain between 2014 and 2022 (in million euros)",
+   "short": "Sporting goods sector revenue in Spain 2014-2022",
+   "unit": "million euros",
+   "description": "In 2022, the sporting goods sector in Spain generated a revenue of 8.9 billion euros, roughly 0.3 billion euros more than the previous year. Over the past years, the sales value of the sporting goods sector in Spain has increased steadily.",
+   "note": "Spain; 2014 to 2022",
+   "source": "AFYDAD; Interempresas Media; Sport Panel",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5886.62,
+      6233.74,
+      6554.59,
+      6983.01,
+      7228.81,
+      7630.06,
+      7722.71,
+      8578.61,
+      8993.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Turnover of sporting equipment retail stores in Italy from 2010 to 2021 (in million euros)",
+   "short": "Sporting equipment retail store sales in Italy 2010-2021",
+   "unit": "million euros",
+   "description": "In 2021, the turnover of the retail sale of sporting equipment in specialised stores in Italy increased by 922.2 million euros (+16.92 percent) since 2020. With 6.4 billion euros, the turnover thereby reached its highest value in the observed period.",
+   "note": "Italy; 2010 to 2021",
+   "source": "Eurostat",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017b",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5330.8,
+      4958.4,
+      4562.9,
+      4350.3,
+      4420.2,
+      4662.8,
+      4844,
+      5535.6,
+      5752.3,
+      5952.9,
+      5451.3,
+      6373.48
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Turnover from retail sale of sporting equipment in specialized stores in Norway from 2009 to 2023 (in million NOK)",
+   "short": "Sporting equipment retail sales in specialized stores in Norway 2009-2023",
+   "unit": "million NOK",
+   "description": "Between 2009 and 2023, the annual turnover from the retail sale of sporting equipment in specialized stores increased considerably in Norway. In 2023, sports equipment retailers generated a sales turnover of approximately 16.9 billion Norwegian kroner.",
+   "note": "Norway; 2009 to 2023",
+   "source": "Statistics Norway",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11698,
+      12458,
+      12565,
+      12948,
+      13386,
+      13826,
+      14675,
+      15305,
+      15606,
+      15905,
+      15372,
+      16571,
+      17343,
+      16808,
+      16857
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Annual household consumption expenditure on equipment for sport, camping and open-air recreation in Sweden from 2008 to 2021 (in million SEK)",
+   "short": "Household consumption expenditure on sport and camping equipment in Sweden 2008-2021",
+   "unit": "million SEK",
+   "description": "This statistic shows the annual household consumption expenditure on equipment for sport, camping and open-air recreation in Sweden from 2008 to 2021. Since 2012, expenses for these products have grown by more than five billion Swedish kronor. In 2021, household consumption spending on equipment for sport, camping and open-air recreation in Sweden reached over 15 billion Swedish kronor, a jump of more than two billion compared to the previous year.",
+   "note": "Sweden; 2008 to 2021; current prices",
+   "source": "Statistics Sweden",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8293,
+      8905,
+      9480,
+      9397,
+      10076,
+      10044,
+      10369,
+      11222,
+      11744,
+      11988,
+      12398,
+      12492,
+      13089,
+      15379
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to United Kingdom (UK) from 2014 to 2023 (in 1,000 British pounds)",
+   "short": "United Kingdom: articles and equipment for sports import value 2014-2023",
+   "unit": "1,000 British pounds",
+   "description": "The value generated from the import of articles and equipment for physical exercise, gymnastics, athletics and other sports in the United Kingdom declined to 1 billion British Pounds in 2023. Nevertheless, the last two years in this industry recorded a significant higher value than the preceding years.",
+   "note": "United Kingdom; 2014 to 2023",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      797610,
+      888907,
+      972018,
+      982467,
+      1004484,
+      1044711,
+      1094935,
+      1415574,
+      1349073,
+      1016017
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports exported from United Kingdom (UK) from 2014 to 2023 (in 1,000 British pounds)",
+   "short": "United Kingdom: articles and equipment for sports export value 2014-2023",
+   "unit": "1,000 British pounds",
+   "description": "The value generated from the export of articles and equipment for physical exercise, gymnastics, athletics and other sports in the United Kingdom declined to 357.9 million British Pounds in 2023. The value thereby reached its lowest value in recent years.",
+   "note": "United Kingdom; 2014 to 2023",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      361675,
+      386636,
+      431636,
+      476398,
+      527077,
+      529984,
+      472989,
+      376315,
+      367669,
+      357871
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to Germany from 2016 to 2022 (in 1,000 euros)",
+   "short": "Germany: articles and equipment for sports import value 2016-2022",
+   "unit": "1,000 euros",
+   "description": "This statistic presents the value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to Germany from 2016 to 2022. In 2022, imports of sports equipment and articles including swimming pools and paddling pools amounted to approximately 2.2 billion euros.",
+   "note": "Germany; 2016 to 2022",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1303459,
+      1380707,
+      1558656,
+      1575417,
+      1582016,
+      2315764,
+      2164864
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports exported from Germany from 2016 to 2022 (in 1,000 euros)",
+   "short": "Germany: articles and equipment for sports export value 2016-2022",
+   "unit": "1,000 euros",
+   "description": "In 2022, Germany exported over 1.22 billion euros' worth of athletic equipment and articles to other countries around the world. This was a slight decrease compared to the previous year. Germany's import value for sporting goods and physical exercise equipment is consistently higher than its export value.",
+   "note": "Germany; 2016 to 2022",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      945016,
+      982336,
+      1020868,
+      1030590,
+      990332,
+      1234661,
+      1223229
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to France from 2015 to 2023 (in 1,000 euros)",
+   "short": "France: articles and equipment for sports import value 2015-2023",
+   "unit": "1,000 euros",
+   "description": "In 2023, the value generated from the import of articles and equipment for physical exercise, gymnastics, athletics and other sports in France decreased by 284.5 million Euros (-17.37 percent) since 2022. Nevertheless, the last two years in this industry recorded a significant higher value than the preceding years.",
+   "note": "France; 2015 to 2023",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      970289,
+      1050948,
+      1117438,
+      1130052,
+      1158254,
+      1143495,
+      1639795,
+      1637907,
+      1353380
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports exported from France from 2014 to 2023 (in 1,000 euros)",
+   "short": "France: articles and equipment for sports export value 2014-2023",
+   "unit": "1,000 euros",
+   "description": "This statistic presents the value of articles and equipment for physical exercise, gymnastics, athletics, and other sports exported from France to other countries around the world from 2014 to 2023. In 2023, French exports of sports equipment and articles amounted to roughly 878 million euros, a decrease compared to last year's export value.",
+   "note": "France; 2014 to 2023",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      544499,
+      567087,
+      585381,
+      646386,
+      710378,
+      679849,
+      698385,
+      925007,
+      933511,
+      877589
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to the Netherlands from 2014 to 2022 (in 1,000s euros)",
+   "short": "Value of articles and equipment for sports imported in the Netherlands 2014-2022",
+   "unit": "1,000s euros",
+   "description": "This statistic presents the value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to the Netherlands from 2014 to 2022. In 2022, imports of sports equipment and articles including swimming pools and paddling pools amounted to nearly 1.4 billion euros.",
+   "note": "Netherlands; 2014 to 2022",
+   "source": "International Trade Centre; Trade Map; UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      502998,
+      592796,
+      644532,
+      686162,
+      755711,
+      827782,
+      957104,
+      1547889,
+      1385654
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports exported from the Netherlands from 2014 to 2022 (in 1,000s euros)",
+   "short": "Value of articles and equipment for sports exported from the Netherlands 2014-2022",
+   "unit": "1,000s euros",
+   "description": "In 2022, sports equipment and article exports from the Netherlands to other countries around the world were valued at a total of approximately 1.2 billion euros, which is a considerable drop compared to the previous year.",
+   "note": "Netherlands; 2014 to 2022",
+   "source": "International Trade Centre; Trade Map; UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      471918,
+      468770,
+      665093,
+      696213,
+      796863,
+      829391,
+      1061196,
+      1540121,
+      1209966
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to Italy from 2014 to 2022 (in 1,000 euros)",
+   "short": "Italy: articles and equipment for sports import value 2014-2022",
+   "unit": "1,000 euros",
+   "description": "In 2022, Italy imported roughly 797 million euros' worth of athletic equipment and articles from other countries. This was an increase compared to previous years. That same year, the Italian export value for physical exercise, gymnastics, athletics, and other sports equipment stood at approximately 946 million euros.",
+   "note": "Italy; 2014 to 2022",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      443765,
+      477969,
+      544179,
+      521521,
+      535912,
+      560241,
+      573707,
+      730285,
+      796911
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports exported from Italy from 2014 to 2022 (in 1,000 euros)",
+   "short": "Italy: articles and equipment for sports export value 2014-2022",
+   "unit": "1,000 euros",
+   "description": "In 2022, Italy exported approximately 946 million euros' worth of athletic equipment and articles to other countries around the world. This was a slight decrease compared to the previous year. Within the measured period, the value of articles and equipment for physical exercise, gymnastics, athletics, and other sports exported from Italy was highest back in 2021.",
+   "note": "Italy; 2014 to 2022",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      635825,
+      687556,
+      785807,
+      843863,
+      919751,
+      890472,
+      771963,
+      973916,
+      945752
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Import value of sporting goods and equipment in Spain between 2015 and 2022 (in million euros)",
+   "short": "Sporting equipment import volume to Spain 2015-2022",
+   "unit": "million euros",
+   "description": "The total import value of sports equipment in Spain amounted to approximately 1.3 billion euros in 2022. Spanish imports of such goods fluctuated somewhat over the years, but followed a positive trend overall and grew considerably in 2021.",
+   "note": "Spain; 2015 to 2022",
+   "source": "INE (Spain); The Ministry of Education, Culture and Sport",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      805.8,
+      861.2,
+      951.7,
+      1016.9,
+      1050.6,
+      991.9,
+      1426.7,
+      1336.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Export value of sporting goods and equipment in Spain between 2015 and 2022 (in million euros)",
+   "short": "Sporting equipment export value from Spain 2015-2022",
+   "unit": "million euros",
+   "description": "The total export value of sporting goods and equipment in Spain amounted to approximately 1.1 billion euros in 2022. Spanish exports of such goods increased in value each consecutive year since 2015.",
+   "note": "Spain; 2015 to 2022",
+   "source": "INE (Spain); The Ministry of Education, Culture and Sport",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      410.1,
+      497.9,
+      563.6,
+      633.9,
+      642.4,
+      646.7,
+      918.9,
+      1099.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Top online stores in the Sports & Outdoor segment in the UK in 2021, by e-commerce net sales (in million U.S. dollar)",
+   "short": "United Kingdom: Top 10 Sports & Outdoor online stores",
+   "unit": "million U.S. dollar",
+   "description": "Sportsdirect.com is leading the Sports & Outdoor e-commerce market in the UK, with e-commerce net sales of US$716 million in 2021 generated in the UK, followed by nike.com with US$581 million. Third place is taken by argos.co.uk with a revenue of US$519 million. Amazon.co.uk is the fourth biggest Sports & Outdoor online store in the UK with net sales of US$427 million in 2021.",
+   "note": "2021",
+   "source": "ecommerceDB.com; Statista E-commerce revenue in million U.S. dollar",
+   "kind": "categorical",
+   "categories": [
+    "sportsdirect.com",
+    "nike.com",
+    "argos.co.uk",
+    "amazon.co.uk",
+    "adidas.co.uk",
+    "very.co.uk",
+    "halfords.com",
+    "jdsports.co.uk",
+    "tesco.com",
+    "gooutdoors.co.uk"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      716,
+      581,
+      519,
+      427,
+      279,
+      226,
+      181,
+      180,
+      153,
+      116
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Fitness equipment retailer websites in the United Kingdom (UK) with the highest online review score as of March 2023",
+   "short": "Highest reviewed fitness equipment retailer websites in the UK 2023",
+   "unit": "",
+   "description": "As of March 2023, mirafit.co.uk and physicalcompany.co.uk each had a review score of 4.8 out of five, making them the best reviewed websites for buying fitness equipment in the United Kingdom (UK). decathlon.co.uk, which had a score of 4.4, accounted for the highest total number of reviews within this category.",
+   "note": "United Kingdom; March 2023",
+   "source": "Salience Search Marketing Review score out of 5",
+   "kind": "categorical",
+   "categories": [
+    "physicalcompany.co.uk",
+    "mirafit.co.uk",
+    "sweatband.com",
+    "fitness-superstore.co.uk",
+    "thesportshq.com",
+    "jtxfitness.com",
+    "onepeloton.co.uk",
+    "powerhouse-fitness.co.uk",
+    "physioroom.com",
+    "decathlon.co.uk"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.8,
+      4.8,
+      4.6,
+      4.6,
+      4.6,
+      4.6,
+      4.6,
+      4.4,
+      4.4,
+      4.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Leading fitness equipment retailers in the United Kingdom (UK) in 2023, by number of monthly brand searches",
+   "short": "UK fitness equipment retailers with the highest number of monthly brand searches 2023",
+   "unit": "",
+   "description": "With a monthly search volume of over 800 thousand per month in the United Kingdom (UK), Decathlon was by far the leading fitness equipment retailer in terms of brand recall as of 2023. exercise.co.uk and kettlebells.co.uk each accounted for roughly 74 thousand brand searches a month.",
+   "note": "United Kingdom; March 2023",
+   "source": "Salience Search Marketing Number of reviews",
+   "kind": "categorical",
+   "categories": [
+    "decathlon.co.uk",
+    "exercise.co.uk",
+    "kettlebells.co.uk",
+    "gymequipment.co.uk",
+    "fitness-superstore.co.uk"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      823000,
+      74000,
+      74000,
+      40500,
+      33100
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Top online stores in the Sports & Outdoor segment in Germany in 2021, by e-commerce net sales (in million U.S. dollar)",
+   "short": "Germany: Top 10 Sports & Outdoor online stores",
+   "unit": "million U.S. dollar",
+   "description": "Amazon.de is leading the Sports & Outdoor e-commerce market in Germany, with e-commerce net sales of US$464 million in 2021 generated in Germany, followed by otto.de with US$364 million. Third place is taken by zalando.de with a revenue of US$327 million. Nike.com is the fourth biggest Sports & Outdoor online store in Germany with net sales of US$263 million in 2021.",
+   "note": "2021",
+   "source": "ecommerceDB.com; Statista E-commerce revenue in million U.S. dollar",
+   "kind": "categorical",
+   "categories": [
+    "amazon.de",
+    "otto.de",
+    "zalando.de",
+    "nike.com",
+    "decathlon.de",
+    "canyon.com",
+    "adidas.de",
+    "mediamarkt.de",
+    "bonprix.de",
+    "rosebikes.de"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      464,
+      364,
+      327,
+      263,
+      254,
+      185,
+      175,
+      171,
+      153,
+      134
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Revenues of the leading companies in the sporting goods retail sector in Germany in 2021 (in million euros)",
+   "short": "Revenues of the leading companies in the sporting goods retail sector in Germany 2021",
+   "unit": "million euros",
+   "description": "The French chain Décathlon ranked second with a net revenue of roughly 700 million euros. This statistic presents data on the revenues of the leading companies in the sporting goods retail sector in Germany in 2021.",
+   "note": "Germany; 2021; * 2020. The ranking presents the leading sporting goods retailers and is not exhaustive. Read more",
+   "source": "EHI Retail Institute Net revenue in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Sport 2000",
+    "Decathlon",
+    "Intersport (inc. Sport Voswinkel)",
+    "Globetrotter",
+    "Foot Locker*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2770,
+      700,
+      541,
+      170,
+      97
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Leading companies in the retail sale of sporting equipment in specialized stores sector in Spain in 2021, based on sales value (in million euros)",
+   "short": "Leading Spanish sporting goods retailers 2021",
+   "unit": "million euros",
+   "description": "Decathlon España SAU was the leading retail company of sports equipment in Spain in 2021. Without question, the Spanish subsidiary of Decathlon captured the sporting goods market when it achieved a sales value of over 1.8 billion euros that year. Decimas SLU trailed far behind with approximately 191 million euros in revenue, and in third place was Deporvillage SL.",
+   "note": "Spain; 2021",
+   "source": "Boletín Oficial del E‌stado (España/Spain); elEconomista; Informa D&B Sales value in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Decathlon España Sau",
+    "Decimas SLU",
+    "Deporvillage SL",
+    "Forum Sport Sociedad Anonima",
+    "Barça Licensing & Merchandising S.L.",
+    "Barrabes SKI Montaña SLU",
+    "Trek Bicycle SL",
+    "Human Mobility Sa.",
+    "Importaciones Nauticas Sa",
+    "Agrupacio De Comerciants Esport Deval SL"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1804.78,
+      191.05,
+      161.25,
+      123.9,
+      50.94,
+      48.78,
+      43.15,
+      36.93,
+      28.17,
+      28.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Ranking of companies in the sports and leisure equipment industry in Denmark as of April 2024, by gross profit (in DKK)",
+   "short": "Ranking of sports companies in Denmark 2024, by gross profit",
+   "unit": "DKK",
+   "description": "This statistic shows the ranking of companies in the sports and leisure equipment industry in Denmark as of April 2024, by gross profit. Harald Nyborg A/S ranked first with a gross profit of approximately 545 thousand Danish kroner.",
+   "note": "Denmark; as of April 2024; excl. subsidiaries; gross profit based on the latest available financial statement",
+   "source": "Proff Gross profit in DKK",
+   "kind": "categorical",
+   "categories": [
+    "Harald Nyborg A/S",
+    "Parken Sport & Entertainment A/S",
+    "Sportmaster Danmark ApS",
+    "SPORT24 A/S",
+    "Dansk Avis Omdeling A/S",
+    "Oase Outdoors ApS",
+    "Sports Group Danmark A/S",
+    "Svendsen Sport A/S",
+    "Brøndbyernes I.F. Fodbold A/S",
+    "Witt Hvidevarer A/S",
+    "Outfit International A/S",
+    "Isabella A/S",
+    "Fairpoint Outdoors A/S",
+    "NY-Form, Kolding A/S",
+    "Select Sport A/S"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      545086,
+      447560,
+      316544,
+      304086,
+      281000,
+      149873,
+      134862,
+      122526,
+      101962,
+      101314,
+      81202,
+      80107,
+      66831,
+      63265,
+      61860
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Ranking of companies in the sports and leisure equipment industry in Norway in 2021, by operating income (in million NOK)",
+   "short": "Ranking of sports companies in Norway 2021, by operating income",
+   "unit": "million NOK",
+   "description": "This statistic shows the ranking of companies in the sports and leisure equipment industry in Norway in 2021, by turnover. Xxl Sport & Villmark AS ranked first with a turnover of approximately 5.1 billion Norwegian kroner. The turnover of Xxl Grossist Norge AS amounted to more than 3.4 billion Norwegian kroner.",
+   "note": "Norway; 2021; excl. subsidiaries; net sales, turnover based on the latest available financial statement",
+   "source": "Proff Turnover in million NOK",
+   "kind": "categorical",
+   "categories": [
+    "Xxl Sport & Villmark AS",
+    "Xxl Grossist Norge AS",
+    "Sport 1 Gruppen AS",
+    "Ino Drift AS",
+    "Mobo Sportsholding AS",
+    "Gjelsten Holding AS",
+    "Brav Norway AS",
+    "Response Nordic AS",
+    "Amer Sports Norge AS",
+    "Ultimate Nordic AS",
+    "Invent Sport Drift AS",
+    "Elements Production AS"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5104,
+      3422,
+      2344,
+      1648,
+      906,
+      771,
+      761,
+      590,
+      534,
+      521,
+      509,
+      503
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Percentage of consumers that have a home fitness product within their households in the United Kingdom (UK) in 2021",
+   "short": "Share of consumers that own a home fitness product in the UK 2021",
+   "unit": "",
+   "description": "This data on sports and fitness shows the results of the Statista Global Consumer Survey conducted in the United Kingdom (UK) in 2021. That year, approximately 74 percent of the survey respondents in the UK had at least one home fitness product in their home.",
+   "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "Owner",
+    "Non-owner"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.74,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Which of the following home fitness products does your household own?",
+   "short": "Share of UK consumers that own a home fitness product 2021, by product category",
+   "unit": "",
+   "description": "In 2021, about 28 percent of consumers in the United Kingdom (UK) had either weights or dumbbells at home, making them some of the most commonly owned home fitness products in UK households. Many consumers in the UK also owned (yoga) mats. Approximately 74 percent of survey respondents owned at least one fitness product.",
+   "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Weights or dumbbells",
+    "(Yoga) mat",
+    "Home cycling machine",
+    "Treadmill",
+    "Fitness bands, expanders, ropes or straps",
+    "Weight bench",
+    "Pull-up bar / wall bar",
+    "Hula Hoop",
+    "Work out or exercise machines",
+    "Cross trainer",
+    "Rowing machine",
+    "Fascia roll",
+    "Connected tread mill",
+    "Connected home cycling machine",
+    "Connected rowing machine"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.22,
+      0.17,
+      0.16,
+      0.16,
+      0.15,
+      0.12,
+      0.12,
+      0.11,
+      0.1,
+      0.09,
+      0.08,
+      0.05,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Where did you buy sporting goods in the past 24 months?",
+   "short": "Share of consumers in the UK that bought sporting goods 2021, by store type",
+   "unit": "",
+   "description": "When asked in 2021 where they had purchased sporting goods in the past two years, about 33 percent of surveyed consumers in the United Kingdom (UK) indicated that they bought from an online sporting goods store. Although online sporting goods stores were the most popular option, many shoppers also purchased from online marketplaces, online single brand stores, as well as offline single brand and outlet stores.",
+   "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online respondents who purchased sporting goods in the past 24 months",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Online sporting good stores (e.g., dickssportinggoods.com)",
+    "Online marketplace (e.g., Amazon)",
+    "Single brand online store (e.g., nike.com)",
+    "Single brand and outlet stores (e.g., Nike Store)",
+    "Sporting good stores (e.g., Dick's Sporting Goods)",
+    "Multi-brand online store (e.g., asos.com)",
+    "Grocery stores, supermarkets & discounters (e.g., Wal Mart)",
+    "Department store (e.g., Macy's)",
+    "Catalogs",
+    "Other stores",
+    "Other online stores",
+    "Don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.33,
+      0.31,
+      0.27,
+      0.26,
+      0.24,
+      0.21,
+      0.15,
+      0.15,
+      0.13,
+      0.07,
+      0.04,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Which types of sporting goods have you purchased in the past 24 months?",
+   "short": "Share of consumers in the UK that bought sporting goods 2021, by product type",
+   "unit": "",
+   "description": "When asked in 2021 what sporting goods they had purchased in the past 24 months, 61 percent of consumers in the United Kingdom (UK) indicated that they bought sports footwear, making it the most commonly purchased kind of sports item in the country. About 27 percent of surveyed consumers in the UK had bought sports equipment and/or gear in the last two years.",
+   "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Sports shoes",
+    "Sportswear",
+    "Sports equipment and gear",
+    "Other",
+    "I did not buy any sporting goods in the past 24 months"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.61,
+      0.53,
+      0.27,
+      0.04,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "What kind of sports equipment and gear have you purchased in the past 24 months?",
+   "short": "Leading sports gear bought by consumers in the UK in the past 24 months 2021",
+   "unit": "",
+   "description": "When asked in 2021 what types of sports equipment and gear they had bought in the past 24 months, 32 percent of consumers in the United Kingdom (UK) indicated that they had acquired work-out equipment such as weights, dumbbells, or exercise mats. About 24 percent of the country's survey respondents had purchased balls.",
+   "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online respondents who bought sports equipment and gear in the past 24 months",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Work-out equipment (weights, dumbbells, mats)",
+    "Balls",
+    "Bicycles & mountain bikes",
+    "Swimming & diving equipment",
+    "Hiking & outdoor equipment",
+    "Rackets & bats",
+    "Nets & goals",
+    "Winter sports equipment",
+    "Golf equipment",
+    "Fishing & hunting equipment",
+    "Horse riding equipment",
+    "(Inflatable) boats, kayaks, SUP-boards and boating equipment",
+    "Motorsport equipment",
+    "Skating equipment",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.24,
+      0.23,
+      0.21,
+      0.19,
+      0.16,
+      0.14,
+      0.12,
+      0.11,
+      0.1,
+      0.09,
+      0.09,
+      0.09,
+      0.08,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Percentage of consumers that have a home fitness product within their households in Germany in 2021",
+   "short": "Share of consumers that own a home fitness product in Germany 2021",
+   "unit": "",
+   "description": "This data on sports and fitness shows the results of the Statista Global Consumer Survey conducted in Germany in 2021. That year, approximately 81 percent of the survey respondents in Germany had at least one home fitness product in their home.",
+   "note": "Germany; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "Owner",
+    "Non-owner"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.81,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Which of the following home fitness products does your household own?",
+   "short": "Share of German consumers that own a home fitness product 2021, by product category",
+   "unit": "",
+   "description": "In 2021, about 32 percent of the consumers in Germany had either weights or dumbbells at home, making them some of the most commonly owned home fitness products in German households. Many consumers in Germany also owned (yoga) mats. Just above 80 percent of survey respondents owned at least one fitness product.",
+   "note": "Germany; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Weights or dumbbells",
+    "(Yoga) mat",
+    "Fitness bands, expanders, ropes or straps",
+    "Hula Hoop",
+    "Home cycling machine",
+    "Treadmill",
+    "Weight bench",
+    "Cross trainer",
+    "Fascia roll",
+    "Pull-up bar / wall bar",
+    "Work out or exercise machines",
+    "Rowing machine",
+    "Connected tread mill",
+    "Connected home cycling machine",
+    "Connected rowing machine"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.29,
+      0.21,
+      0.21,
+      0.18,
+      0.16,
+      0.15,
+      0.13,
+      0.12,
+      0.11,
+      0.09,
+      0.07,
+      0.03,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Where did you buy sporting goods in the past 24 months?",
+   "short": "Share of consumers in Germany that bought sporting goods 2021, by store type",
+   "unit": "",
+   "description": "When asked in 2021 where they had purchased sporting goods in the past two years, about 41 percent of surveyed consumers in Germany indicated that they bought from an online marketplace, such as Amazon. Although online marketplaces were the most popular option, many shoppers also purchased from online and offline sporting goods stores, single brand stores, as well as department stores.",
+   "note": "Germany; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online respondents who purchased sporting goods in the past 24 months",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Online marketplace (e.g., Amazon)",
+    "Sporting good stores (e.g., Dick's Sporting Goods)",
+    "Single brand online store (e.g., nike.com)",
+    "Single brand and outlet stores (e.g., Nike Store)",
+    "Online sporting good stores (e.g., dickssportinggoods.com)",
+    "Department store (e.g., Macy's)",
+    "Multi-brand online store (e.g., asos.com)",
+    "Grocery stores, supermarkets & discounters (e.g., Wal Mart)",
+    "Catalogs",
+    "Other stores",
+    "Other online stores",
+    "Don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.41,
+      0.31,
+      0.26,
+      0.24,
+      0.22,
+      0.22,
+      0.17,
+      0.15,
+      0.1,
+      0.09,
+      0.07,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Which types of sporting goods have you purchased in the past 24 months?",
+   "short": "Share of consumers in Germany that bought sporting goods 2021, by product type",
+   "unit": "",
+   "description": "When asked in 2021 what sporting goods they had purchased in the past 24 months, 69 percent of consumers in Germany indicated that they bought sports footwear, making it the most commonly purchased kind of sports item in the country. About a fifth of surveyed consumers in Germany had bought sports equipment and/or gear in the last two years.",
+   "note": "Germany; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Sports shoes",
+    "Sportswear",
+    "Sports equipment and gear",
+    "Other",
+    "I did not buy any sporting goods in the past 24 months"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.69,
+      0.54,
+      0.2,
+      0.06,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "What kind of sports equipment and gear have you purchased in the past 24 months?",
+   "short": "Leading sports gear bought by consumers in Germany in the past 24 months 2021",
+   "unit": "",
+   "description": "When asked in 2021 what types of sports equipment and gear they had bought in the past 24 months, 39 percent of consumers in Germany indicated that they had acquired work-out equipment such as weights, dumbbells, or exercise mats. About 23 percent of the country's survey respondents had purchased bicycles, mountain bikes, and balls.",
+   "note": "Germany; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online respondents who bought sports equipment and gear in the past 24 months",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Work-out equipment (weights, dumbbells, mats)",
+    "Bicycles & mountain bikes",
+    "Balls",
+    "Hiking & outdoor equipment",
+    "Swimming & diving equipment",
+    "Winter sports equipment",
+    "Rackets & bats",
+    "Nets & goals",
+    "Motorsport equipment",
+    "Horse riding equipment",
+    "Golf equipment",
+    "Fishing & hunting equipment",
+    "Skating equipment",
+    "(Inflatable) boats, kayaks, SUP-boards and boating equipment",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.39,
+      0.23,
+      0.23,
+      0.19,
+      0.15,
+      0.12,
+      0.11,
+      0.1,
+      0.08,
+      0.08,
+      0.08,
+      0.08,
+      0.07,
+      0.05,
+      0.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Share of respondents who owned sports equipment in Spain in 2022, by type of equipment",
+   "short": "Most popular sports supplies in Spain 2022",
+   "unit": "",
+   "description": "Bicycles were the most popular sports equipment owned by people in Spain in 2022, according to a survey. In that year, over half of respondents said to have at least one of those. Cycling was the second-most practiced sport in Spain in 2022.",
+   "note": "Spain; May 2022 to September 2022; 40,429 respondents; 15 years and older",
+   "source": "The Ministry of Education, Culture and Sport Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Bicycles",
+    "Sport balls",
+    "Rackets",
+    "Bodybuilding equipment",
+    "Mountain equipment",
+    "Chess",
+    "Roller/inline skates",
+    "Diving equipment",
+    "Fishing equipment",
+    "Skiing equipment",
+    "Sport motorbikes",
+    "Hunting equipment",
+    "Sailing equipment",
+    "Golf sticks",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.543,
+      0.473,
+      0.471,
+      0.438,
+      0.345,
+      0.313,
+      0.255,
+      0.165,
+      0.117,
+      0.085,
+      0.043,
+      0.039,
+      0.035,
+      0.029,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Most used eHealth tracker / smart watches by brand in the UK as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in the UK 2024",
+   "unit": "",
+   "description": "With 46 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among UK consumers. In second place follows Fitbit with 28 percent of respondents. These results are based on a representative online survey conducted in 2024 among 1,696 consumers in the UK.",
+   "note": "United Kingdom; April 2023 to March 2024; 1696 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Garmin",
+    "Google",
+    "Amazfit",
+    "Huawei",
+    "ASUS",
+    "Fossil",
+    "LG",
+    "Honor",
+    "Misfit",
+    "Mobvoi",
+    "Motorola",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.46,
+      0.28,
+      0.15,
+      0.08,
+      0.05,
+      0.04,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Most used eHealth tracker / smart watches by brand in Germany as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Germany 2024",
+   "unit": "",
+   "description": "With 35 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among German consumers. In second place follows Samsung with 22 percent of respondents. These results are based on a representative online survey conducted in 2024 among 2,070 consumers in Germany.",
+   "note": "Germany; April 2023 to March 2024; 2070 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Fitbit",
+    "Garmin",
+    "Amazfit",
+    "Huawei",
+    "Adidas",
+    "Xiaomi/Mi",
+    "ASUS",
+    "Fossil",
+    "Google",
+    "Denver",
+    "Honor",
+    "Misfit",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.22,
+      0.15,
+      0.08,
+      0.07,
+      0.07,
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 51,
+   "title": "Most used eHealth tracker / smart watches by brand in France as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in France 2024",
+   "unit": "",
+   "description": "With 33 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among French consumers. In second place follows Garmin with 18 percent of respondents. These results are based on a representative online survey conducted in 2024 among 567 consumers in France.",
+   "note": "France; April 2023 to March 2024; 567 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Garmin",
+    "Samsung",
+    "Fitbit",
+    "Huawei",
+    "Xiaomi/Mi",
+    "Google",
+    "ASUS",
+    "Amazfit",
+    "Honor",
+    "LG",
+    "Sony",
+    "Polar",
+    "TomTom",
+    "Wiko"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.33,
+      0.18,
+      0.18,
+      0.14,
+      0.09,
+      0.09,
+      0.08,
+      0.06,
+      0.04,
+      0.04,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 52,
+   "title": "Most used eHealth tracker / smart watches by brand in Italy as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Italy 2024",
+   "unit": "",
+   "description": "With 27 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Italian consumers. In second place follows Samsung with 17 percent of respondents. These results are based on a representative online survey conducted in 2024 among 706 consumers in Italy.",
+   "note": "Italy; April 2023 to March 2024; 706 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Amazfit",
+    "Xiaomi/Mi",
+    "Fitbit",
+    "Huawei",
+    "Garmin",
+    "ASUS",
+    "Fossil",
+    "Google",
+    "Honor",
+    "OPPO",
+    "Blackview",
+    "LG",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.17,
+      0.15,
+      0.14,
+      0.1,
+      0.09,
+      0.08,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 53,
+   "title": "Most used eHealth tracker / smart watches by brand in Spain as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Spain 2024",
+   "unit": "",
+   "description": "With 25 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Spanish consumers. In second place follows Xiaomi/Mi with 22 percent of respondents. These results are based on a representative online survey conducted in 2024 among 831 consumers in Spain.",
+   "note": "Spain; April 2023 to March 2024; 831 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Xiaomi/Mi",
+    "Samsung",
+    "Amazfit",
+    "Huawei",
+    "Fitbit",
+    "Garmin",
+    "Google",
+    "ASUS",
+    "Honor",
+    "LG",
+    "Polar",
+    "Sony",
+    "Other",
+    "Don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.25,
+      0.22,
+      0.16,
+      0.13,
+      0.12,
+      0.09,
+      0.07,
+      0.04,
+      0.02,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.07,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 54,
+   "title": "Most used eHealth tracker / smart watches by brand in the Netherlands as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in the Netherlands 2024",
+   "unit": "",
+   "description": "With 36 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Dutch consumers. In second place follows Samsung with 22 percent of respondents. These results are based on a representative online survey conducted in 2024 among 680 consumers in the Netherlands.",
+   "note": "Netherlands; April 2023 to March 2024; 680 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Fitbit",
+    "Garmin",
+    "Google",
+    "Huawei",
+    "Fossil",
+    "Denver",
+    "Garett",
+    "Honor",
+    "LG",
+    "Michael Kors",
+    "Xiaomi/Mi",
+    "Misfit",
+    "MyKronoz"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.36,
+      0.22,
+      0.16,
+      0.11,
+      0.05,
+      0.05,
+      0.03,
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 55,
+   "title": "Most used eHealth tracker / smart watches by brand in Sweden as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Sweden 2024",
+   "unit": "",
+   "description": "With 41 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Swedish consumers. In second place follows Fitbit with 17 percent of respondents. These results are based on a representative online survey conducted in 2024 among 746 consumers in Sweden.",
+   "note": "Sweden; April 2023 to March 2024; 746 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Garmin",
+    "Samsung",
+    "Huawei",
+    "Amazfit",
+    "Google",
+    "Polar",
+    "Xiaomi/Mi",
+    "Beurer",
+    "Denver",
+    "Fossil",
+    "Garett",
+    "Michael Kors",
+    "Suunto"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.41,
+      0.17,
+      0.15,
+      0.15,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.02,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  }
+ ]
+}

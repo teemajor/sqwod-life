@@ -1,0 +1,1656 @@
+{
+ "studyId": "13996",
+ "study": "text based user generated content statista dossier",
+ "file": "research/statista/Fitness Marketing/study_id13996_text-based-user-generated-content-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Number of internet and social media users worldwide as of January 2024 (in billions)",
+   "short": "Worldwide digital population 2024",
+   "unit": "billions",
+   "description": "As of January 2024, there were 5.35 billion internet users worldwide, which amounted to 66.2 percent of the global population. Of this total, 5.04 billion, or 62.3 percent of the world's population, were social media users.",
+   "note": "Worldwide; January 2024; social media user identities may not represent unique individuals",
+   "source": "DataReportal; Meltwater; We Are Social",
+   "kind": "categorical",
+   "categories": [
+    "Internet users",
+    "Social media users"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.35,
+      5.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Number of social media users worldwide from 2017 to 2027 (in billions)",
+   "short": "Number of global social network users 2017-2027",
+   "unit": "billions",
+   "description": "Social media usage is one of the most popular online activities. In 2022, over 4.59 billion people were using social media worldwide, a number projected to increase to almost six billion in 2027.",
+   "note": "Worldwide; 2017 to 2022; *Forecast Internet users who use a social network site via any device at least once per month Read more",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.73,
+      3.1,
+      3.51,
+      3.9,
+      4.26,
+      4.59,
+      4.89,
+      5.17,
+      5.42,
+      5.64,
+      5.85
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Social network penetration worldwide from 2019 to 2028",
+   "short": "Global social network penetration 2019-2028",
+   "unit": "",
+   "description": "The global social media penetration rate in was forecast to continuously increase between 2024 and 2028 by in total 11.6 (+18.19 percent). After the ninth consecutive increasing year, the penetration rate is estimated to reach 75.31 and therefore a new peak in 2028. Notably, the social media penetration rate of was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028; * Forecast. Internet users who use a social network site via any device at least once per month Read more",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4747,
+      0.5229,
+      0.565,
+      0.6034,
+      0.6376,
+      0.6676,
+      0.6939,
+      0.7166,
+      0.7362,
+      0.7531
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Most used social media platforms by type in the U.S. as of December 2023",
+   "short": "Most used social media platforms by type in the U.S. 2023",
+   "unit": "",
+   "description": "65 percent of U.S. respondents answer our survey on \"Most used social media platforms by type\" with \"Social networks (e.g., Facebook)\". The survey was conducted in 2023, among 60,267 consumers.",
+   "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Social networks (e.g., Facebook)",
+    "Media sharing (e.g., Snapchat, Instagram, YouTube, Pinterest)",
+    "Instant messengers (e.g., WhatsApp, Facebook Messenger, WeChat)",
+    "(Micro-)blogging (e.g., Twitter, Tumblr, WordPress)",
+    "Business networks (e.g., LinkedIn)",
+    "Discussion forums (e.g., Reddit, Quora)",
+    "Consumer review networks (e.g., Yelp, TripAdvisor)",
+    "I do not use social media regularly",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.58,
+      0.54,
+      0.24,
+      0.2,
+      0.18,
+      0.15,
+      0.08,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Most common social media activities in the U.S. as of December 2023",
+   "short": "Most common social media activities in the U.S. 2023",
+   "unit": "",
+   "description": "\"Liked posts by other users\" and \"Commented on posts\" are the top two answers among U.S. consumers in our survey on the subject of \"Most common social media activities\".",
+   "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Liked posts by other users",
+    "Commented on posts",
+    "Sent private messages",
+    "Followed people",
+    "Posted pictures / videos",
+    "Shared posts by other users",
+    "Posted texts / status updates",
+    "Liked company posts",
+    "Followed companies",
+    "Shared company posts",
+    "I have only used social media passively",
+    "I haven't used social media"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.53,
+      0.48,
+      0.48,
+      0.44,
+      0.42,
+      0.36,
+      0.33,
+      0.27,
+      0.23,
+      0.17,
+      0.08,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Most mentioned events across social media platforms worldwide in 2022 (in millions)",
+   "short": "Highest trending global topics on social media 2022",
+   "unit": "millions",
+   "description": "Throughout 2022, there were 139 million mentions of the war in Ukraine across social media platforms, making this topic of discussion the highest trending of the year. The FIFA World Cup held in Katar in 2022 amassed over 50 million social media mentions, whilst the 94th Academy Awards was mentioned 25 million times.",
+   "note": "Worldwide; January 1 to December 27, 2022; posts on Twitter, Reddit, YouTube, Pinterest, WeChat, TikTok, Twitch, Sina Weibo, Douyin, Facebook, Instagram, and LinkedIn",
+   "source": "Meltwater",
+   "kind": "categorical",
+   "categories": [
+    "War in Ukraine",
+    "FIFA World Cup",
+    "94th Academy Awards",
+    "Queen Elizabeth",
+    "Monkeypox outbreak"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      139,
+      50.3,
+      25.3,
+      16.2,
+      9.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Year-on-year growth of water, lifestyle, and energy related conversations on Facebook and Instagram worldwide from 2022 to 2023",
+   "short": "Facebook and Instagram: global sustainability conversation trends 2022-2023",
+   "unit": "",
+   "description": "Between 2022 and 2023, conversations about sustainable cities on Instagram increased by 2,143 percent, and discussions about electric potential rose by 407 percent. On Facebook, the topic of ecovillages saw increase of 1,132 percent, whilst agritourism conversations saw year-on-year growth of 627 percent on the platform.",
+   "note": "Worldwide; 2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+   "source": "Meta Platforms Growth",
+   "kind": "categorical",
+   "categories": [
+    "Sustainable city (Instagram)",
+    "Ecovilliage (Facebook)",
+    "Agritourism (Facebook)",
+    "Smart meter (Instagram)",
+    "Electric potential (Instagram)",
+    "Biodegradable waste (Instagram)",
+    "Green vehicle (Facebook)",
+    "Bicycle-sharing scheme (Facebook)",
+    "Energy transformation (Facebook)",
+    "Water (Instagram)",
+    "Water scarcity (Instagram)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      21.43,
+      11.32,
+      6.27,
+      5.17,
+      4.07,
+      2.9,
+      2.78,
+      2.73,
+      2.18,
+      0.8,
+      0.47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Year-on-year growth of internet and technology related conversations on Facebook and Instagram worldwide from 2022 to 2023",
+   "short": "Facebook and Instagram: global internet and technology conversation trends 2022-2023",
+   "unit": "",
+   "description": "Between 2022 and 2023, conversations about haptic communication rose by 1,083 percent on Facebook. Overall, generative art discussions on Instagram saw an increase of 676 percent in the same period. Furthermore, conversations on Instagram about artificial intelligence rose by 173 percent year-on-year, whilst #metaverse saw increases of 122 percent on the social media platform. Topics surrounding life simulation games and computer art also saw year-on-year growth on social media.",
+   "note": "2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+   "source": "Meta Platforms Growth",
+   "kind": "categorical",
+   "categories": [
+    "Haptic communication (Facebook)",
+    "Generative art (Instagram)",
+    "Fantasy world (Instagram)",
+    "Life simulation game (Facebook)",
+    "Computer simulation (Instagram)",
+    "Computer art (Instagram)",
+    "Smartglasses (Instagram)",
+    "Artificial intelligence (Instagram)",
+    "#metaverse (Instagram)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.83,
+      6.76,
+      5.34,
+      3.86,
+      3.67,
+      3.22,
+      2.33,
+      1.73,
+      1.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Year-on-year growth of culture related conversations on Facebook and Instagram worldwide from 2022 to 2023",
+   "short": "Facebook and Instagram: cultural conversation trends 2022-2023",
+   "unit": "",
+   "description": "Between 2022 and 2023, C-pop, or Chinese pop, conversations grew by almost 1600 percent on Instagram. Discussions about Jellabiya, a traditional one-piece Egyptian garment, saw year-on-year increases of 769 percent, and Latin American culture topics saw a 479 percent increase on Facebook.",
+   "note": "Worldwide; 2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+   "source": "Meta Platforms; Mintel Growth",
+   "kind": "categorical",
+   "categories": [
+    "C-pop (Instagram)",
+    "Jellabiya (Facebook)",
+    "Latin American culture (Facebook)",
+    "Chinese culture (Facebook)",
+    "Polynesian culture (Instagram)",
+    "Khata (Instagram)",
+    "Latin rock (Instagram)",
+    "Pinoy rock (Facebook)",
+    "Jewish culture (Facebook)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.99,
+      7.69,
+      4.79,
+      3.32,
+      2.25,
+      1.99,
+      1.43,
+      1.13,
+      0.79
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Year-on-year growth of beauty and body positive related conversations on Facebook and Instagram worldwide from 2022 to 2023",
+   "short": "Facebook and Instagram: beauty and body positive conversation trends 2022-2023",
+   "unit": "",
+   "description": "Between 2022 and 2023, Facebook and Instagram saw an increase in conversations around body positivity, autonomy, and self-expression. Overall, conversations about epilators saw a year-on-year increase of 512 percent, and body modification discussions saw a year-on-year increase of 258 percent. On Instagram, conversations over chemical depilatory rose by 123 percent. Additionally, discussions about body positivity increased by 47 percent, year-on-year.",
+   "note": "Worldwide; 2022 to 2023; analyzed using over four million global conversations on Facebook and Instagram",
+   "source": "Meta Platforms Year-over-year growth",
+   "kind": "categorical",
+   "categories": [
+    "Epilator (Facebook)",
+    "Body Modification (Facebook)",
+    "Underarm hair (Facebook)",
+    "Chemical depilatory (Instagram)",
+    "Avatar (Instagram)",
+    "Bodily integrity (Instagram)",
+    "Authenticity (Instagram)",
+    "Body positivity (Instagram)",
+    "Accessibility (Instagram)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.12,
+      2.58,
+      2.01,
+      1.23,
+      1.22,
+      0.9,
+      0.81,
+      0.47,
+      0.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Leading Discord servers among users worldwide as of December 2023, by number of members",
+   "short": "Discord: most popular servers for global users 2023, by number of members",
+   "unit": "",
+   "description": "Social and VoIP platform Discord was launched in 2015 as a gamers-friendly communication platform, but it also acquired popularity among non-gaming audiences in recent years. The platform allows users to create or join thematic communities called servers, and as of December 2023, the Midjourney server was the most popular community on Discord, with over 17.5 million members. Midjourney is an AI-powered text-to-image tool, which is accessible via a Discord bot on the official [...]",
+   "note": "Worldwide; December 18, 2023",
+   "source": "Discord Number of members",
+   "kind": "categorical",
+   "categories": [
+    "Midjourney",
+    "LimeWire",
+    "Leonardo.ai",
+    "Blox Fruits",
+    "Nova",
+    "Fusionist",
+    "Roblox",
+    "Genshin Impact Official",
+    "Valorant",
+    "All Stars",
+    "Anime Adventures",
+    "Lofi Girl",
+    "Stumble Guys"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      17540456,
+      2312464,
+      1826378,
+      1421647,
+      1369547,
+      1134103,
+      1119110,
+      1102041,
+      1016000,
+      1015455,
+      1000000,
+      893896,
+      809245
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Leading Discord gaming servers among users worldwide as of December 2023, by number of members",
+   "short": "Discord: most popular gaming servers for global users 2023, by number of members",
+   "unit": "",
+   "description": "Discord is a VoIP and communication platform that took off in 2015 among the gaming community first. As of December 2023, the most popular gaming community on the platform was the server for the popular Roblox game Blox Fruits with approximately 1.42 million members. The Discord server dedicated to first-person shooter Nova ranked second with 1.37 million members.",
+   "note": "Worldwide; December 18, 2023",
+   "source": "Discord Number of members",
+   "kind": "categorical",
+   "categories": [
+    "Blox Fruits",
+    "Nova",
+    "Fusionist",
+    "Roblox",
+    "Genshin Impact Official",
+    "Valorant",
+    "All Stars",
+    "Anime Adventures",
+    "Stumble Guys",
+    "King Legacy",
+    "Apex Legends",
+    "Geometry Dash"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1421647,
+      1369547,
+      1134103,
+      1119110,
+      1102041,
+      1016000,
+      1015455,
+      1000000,
+      809142,
+      799773,
+      787156,
+      784563
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Share of prominent active accounts on alternative social media platforms that posted about selected topics in June 2022",
+   "short": "Discussions by influential accounts on alternative social media platforms 2022",
+   "unit": "",
+   "description": "According to a June 2022 study, prominent accounts on Gab posted more about the topic of guns than any other selected subject of discussion, with 80 percent of influential accounts posting about the topic. Overall, prominent Gab accounts posted about guns, abortion, the LGBTQ community, vaccines, and the January 6th attack more than any other examined platform. For Truth social, firearms were also the most talked about topic with 64 percent, followed by the January 6th attack, with [...]",
+   "note": "United States; June 2022; 1,147 prominent active accounts that posted at least once in June 2022; only accounts posting in English language",
+   "source": "Pew Research Center Share of prominent accounts",
+   "kind": "categorical",
+   "categories": [
+    "Gab",
+    "Parler",
+    "Truth Social",
+    "Telegram",
+    "BitChute",
+    "Rumble",
+    "Gettr"
+   ],
+   "series": [
+    {
+     "name": "Jan. 6 attack",
+     "values": [
+      0.69,
+      0.54,
+      0.62,
+      0.3,
+      0.4,
+      0.42,
+      0.27
+     ]
+    },
+    {
+     "name": "Vaccines",
+     "values": [
+      0.7,
+      0.38,
+      0.55,
+      0.42,
+      0.44,
+      0.26,
+      0.37
+     ]
+    },
+    {
+     "name": "LGBTQ",
+     "values": [
+      0.73,
+      0.46,
+      0.55,
+      0.48,
+      0.47,
+      0.44,
+      0.25
+     ]
+    },
+    {
+     "name": "Abortion",
+     "values": [
+      0.74,
+      0.54,
+      0.54,
+      0.42,
+      0.55,
+      0.48,
+      0.36
+     ]
+    },
+    {
+     "name": "Guns",
+     "values": [
+      0.8,
+      0.64,
+      0.64,
+      0.57,
+      0.53,
+      0.49,
+      0.35
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Most popular TikTok videos based on total global likes as of March 2023 (in billions)",
+   "short": "Most liked TikTok videos of all time 2023",
+   "unit": "billions",
+   "description": "With barely 10 seconds and 61 million likes, Bella Poach's lip syncing \"M to the B\" by Millie B was the most engaging video on TikTok as of March 2023. Bella Poarch, who as of the beginning of 2023 was the third-most followed creator on the popular social video platform, rose to popularity as a singer and content creators since opening a TikTok account in January 2020. Second ranked \"dancing in front of the bathroom mirror,\" by user @jamie32bsh generated almost 52 million likes between [...]",
+   "note": "Worldwide; February 2023",
+   "source": "TikTok; Yahoo Singapore Number of likes in millions",
+   "kind": "categorical",
+   "categories": [
+    "@bellapoarch - Lip syncing",
+    "@jamie32bsh - Dancing in front of bathroom mirror",
+    "@fredziownik_art - Drawings of mouths",
+    "@thenickluciano - Lip syncing",
+    "@totouchanemu - Dancing filmed by a drone",
+    "@mngnzls - Sang \"Suave\" by El Alfa",
+    "@adrianchateau - Person barking at dog",
+    "@billieeilish - \"Time Warp Scan\" filter",
+    "@khaby.lame - Peeling a banana",
+    "@britishpromise.cats - Cat pawing at camera"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      61,
+      51.8,
+      51,
+      49.7,
+      45,
+      41.4,
+      40.6,
+      40.5,
+      37.9,
+      37.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Average number of views per video posted on social video app TikTok from March 2023 to August 2023, by account type",
+   "short": "TikTok: number of views per video 2023, by account type",
+   "unit": "",
+   "description": "As of September 2023, personal TikTok accounts tended to generate more views than business accounts. The average number of views for personal TikTok accounts was approximately 32,108. In comparison, business accounts generated on average 23,782 video views in the examined period.",
+   "note": "Worldwide; March 1, 2023 to August 31, 2023",
+   "source": "Metricool",
+   "kind": "categorical",
+   "categories": [
+    "Business",
+    "Personal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23782,
+      32108
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Most popular videos of European cities on TikTok as of April 2023, by number of views per inhabitant (in thousands)",
+   "short": "TikTok: most viewed European cities 2023, by number of views per inhabitant",
+   "unit": "thousands",
+   "description": "TikTok is a social video app that is very popular with younger audiences and widely used by influencers and travel bloggers. In April 2023, TikTok videos tagged in Barcelona amassed 65,461 TikTok views per inhabitant of the city. Additionally, there were 29 thousand videos per inhabitant tagged in Paris. Other popular cities included Manchester, Lyon, and Stuttgart.",
+   "note": "Worldwide; April 2023; ranking based on the number of views of videos tagged with the city name on TikTok; views from more than 300 major cities were considered; the source investigated both the local spelling of a city, as well as the English spelling",
+   "source": "Holidu.uk TikTok views per inhabitant (in thousands)",
+   "kind": "categorical",
+   "categories": [
+    "Barcelona, Spain",
+    "Paris, France",
+    "Manchester, United Kingdom",
+    "Lyon, France",
+    "Stuttgart, Germany",
+    "Porto, Portugal",
+    "Amsterdam, The Netherlands",
+    "Marseille, France",
+    "Dublin, Ireland",
+    "Bordeaux, France"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      65.46,
+      29.37,
+      18.39,
+      18.12,
+      14.54,
+      14.02,
+      12.05,
+      10.77,
+      10.61,
+      10.41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Most popular videos of European cities on TikTok as of April 2023, by number of views (in billions)",
+   "short": "TikTok: most viewed European cities 2023, by number of views",
+   "unit": "billions",
+   "description": "Younger audiences dominate TikTok, a social video app that is also used extensively by influencers and travel bloggers. In April 2023, Barcelona was the city in Europe with the most TikTok views, amassing over 106 billion views of videos tagged with the city's name. London was also extremely popular with TikTok users, totaling over 68.6 billion views in April 2023, making the UK capital one of the most danceable cities in Europe. Other popular European cities tagged on the app were Paris, [...]",
+   "note": "Worldwide; April 2023; ranking based on the number of views of videos tagged with the city name on TikTok; views from more than 300 major cities were considered; the source investigated both the local spelling of a city, as well as the English spelling",
+   "source": "Holidu.uk TikTok views (in billions)",
+   "kind": "categorical",
+   "categories": [
+    "Barcelona, Spain",
+    "London, UK",
+    "Paris, Fance",
+    "Istanbul, Turkey",
+    "Madrid, Spain",
+    "Berlin, Germany",
+    "Ankara, Turkey",
+    "Milan, Italy",
+    "Hamburg, Germany",
+    "Manchester, United Kingdom"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      106.1,
+      68.6,
+      64.8,
+      53.1,
+      32.6,
+      26.1,
+      23,
+      13.6,
+      12.1,
+      10.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Distribution of videos removed from TikTok worldwide in 1st quarter 2023, by reason",
+   "short": "TikTok: distribution of videos removed worldwide Q1 2023, by reason",
+   "unit": "",
+   "description": "In the first quarter of 2023, minor safety was the main reason to remove videos from TikTok, accounting for 31 percent of the removed content. Illegal activities and regulated goods ranked second at 27 percent, followed by adult nudity and sexual activities, at around 15 percent.",
+   "note": "Worldwide; Q1 2023",
+   "source": "TikTok Share of videos removed",
+   "kind": "categorical",
+   "categories": [
+    "Minor safety",
+    "Illegal activities and regulated goods",
+    "Adult nudity and sexual activities",
+    "Violent and graphic content",
+    "Harassment and bullying",
+    "Dangerous acts and challenges",
+    "Suicide, self-harm and disordered eating",
+    "Hateful behavior",
+    "Violent extremism",
+    "Integrity and authenticity"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.306,
+      0.272,
+      0.147,
+      0.091,
+      0.053,
+      0.052,
+      0.031,
+      0.025,
+      0.014,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Hours of video uploaded to YouTube every minute as of February 2022",
+   "short": "Hours of video uploaded to YouTube every minute 2007-2022",
+   "unit": "",
+   "description": "As of June 2022, more than 500 hours of video were uploaded to YouTube every minute. This equates to approximately 30,000 hours of newly uploaded content per hour. The amount of content on YouTube has increased dramatically as consumer`s appetites for online video has grown. In fact, the number of video content hours uploaded every 60 seconds grew by around 40 percent between 2014 and 2020.",
+   "note": "June 2007 to June 2022",
+   "source": "Google; YouTube",
+   "kind": "categorical",
+   "categories": [
+    "Jun '07",
+    "Jan '09",
+    "May '09",
+    "Mar '10",
+    "Nov '10",
+    "May '11",
+    "Jan '12",
+    "May '12",
+    "May '13",
+    "Nov '14",
+    "Jul '15",
+    "May '19",
+    "Feb '20",
+    "Jun '22"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6,
+      15,
+      20,
+      24,
+      35,
+      48,
+      60,
+      72,
+      100,
+      300,
+      400,
+      500,
+      500,
+      500
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "YouTube Shorts global monthly active usage in 2022 and 2023 (in billions)",
+   "short": "YouTube Shorts: global logged in monthly users 2022-2023",
+   "unit": "billions",
+   "description": "Launched first in India after the TikTok ban in August 2020, YouTube Shorts rolled out globally in June 2021. The feature, which is accessible via the YouTube app, reached two billion monthly logged-in users as of July 2023. YouTube has been heavily promoting its short-video format platform since its global launch, including redirecting users automatically to Shorts when the YouTube app is opened and launching the YouTube Shorts Funds to entice creators' participation. In 2022, user and [...]",
+   "note": "Worldwide; 2022 and 2023; *Monthly active logged-in users. Daily views number published on the YouTube official blog . Read more",
+   "source": "TechCrunch; YouTube",
+   "kind": "categorical",
+   "categories": [
+    "Jun '22",
+    "Jul' 23"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.5,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Number of active streamers on Twitch worldwide from January 2018 to March 2024 (in millions)",
+   "short": "Active streamers on Twitch worldwide 2024",
+   "unit": "millions",
+   "description": "In March 2024, video streaming platform Twitch had approximately 7.94 million active streamers, down from a peak of 9.89 million in January 2021. The platform experienced a boom during the COVID-19 pandemic when many new users used the platform to connect with friends or try their hand at livestreaming. However, this trend normalized again towards the end of the year, and the streaming space has also grown more competitive as platforms other than Twitch have evolved to [...]",
+   "note": "Worldwide; January 2018 to March 2024",
+   "source": "TwitchTracker",
+   "kind": "categorical",
+   "categories": [
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12",
+    "2019-01",
+    "2019-02",
+    "2019-03",
+    "2019-04",
+    "2019-05",
+    "2019-06",
+    "2019-07",
+    "2019-08",
+    "2019-09",
+    "2019-10",
+    "2019-11",
+    "2019-12",
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.97,
+      2.89,
+      3.7,
+      3.32,
+      3.06,
+      3.15,
+      2.96,
+      3.71,
+      3.67,
+      3.65,
+      3.74,
+      4.12,
+      4.54,
+      4.21,
+      4.39,
+      4.18,
+      3.93,
+      3.4,
+      3.36,
+      3.19,
+      2.94,
+      2.97,
+      3.2,
+      3.35,
+      3.94,
+      3.75,
+      5.08,
+      7.21,
+      7.4,
+      7.16,
+      7.46,
+      7.71,
+      7.46,
+      7.84,
+      8.55,
+      9.24,
+      9.89,
+      9.52,
+      9.6,
+      9.36,
+      9.02,
+      8.28,
+      8.34,
+      8.07,
+      7.45,
+      7.28,
+      7.13,
+      7.57,
+      8.56,
+      8.43,
+      8.07,
+      7.68,
+      7.25,
+      7.47,
+      8.04,
+      7.8,
+      7.12,
+      7.13,
+      6.94,
+      7.03,
+      7.55,
+      7.19,
+      7.4,
+      7.25,
+      6.82,
+      7.12,
+      7.59,
+      7.46,
+      7.13,
+      6.89,
+      7.36,
+      7.89,
+      8.36,
+      7.82,
+      7.94
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Most popular streamers on Twitch worldwide in August 2023, by total hours watched (in millions)",
+   "short": "Total hours watched of most popular streamers on Twitch 2023",
+   "unit": "millions",
+   "description": "Twitch is an online video streaming service which allows eSports and gaming fans to watch their favorite gamers play a variety of online video games. In August 2023, the most popular streaming channel on Twitch in terms of hours watched was Gaules - the channel had a combined 12.6 million hours watched in the preceding 30 days.",
+   "note": "Worldwide; August 2023; total hours of streams watched by viewers in last 30 days",
+   "source": "TwitchTracker",
+   "kind": "categorical",
+   "categories": [
+    "Gaules",
+    "fps_shaka",
+    "Gamers8GG",
+    "tarik",
+    "dota2_paragon_ru",
+    "ESLCS",
+    "RTAinJapan",
+    "kingsleague",
+    "k3soju",
+    "Cellbit"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      12.6,
+      9.6,
+      9.28,
+      8.77,
+      7.7,
+      7.6,
+      7.07,
+      6.74,
+      6.26,
+      5.89
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Number of minutes spent watching content on Twitch worldwide from 2012 to 2023 YTD (in billions)",
+   "short": "Number of minutes spent watching Twitch content worldwide 2012-2023",
+   "unit": "billions",
+   "description": "In 2022, Twitch audiences watched nearly 1.35 trillion minutes of video content on the streaming platform. This is more than double the amount of time spent in 2019, where viewers watched approximately 660 billion minutes with of content. In the first eight months of 2023, audiences watched about 851 billion minutes of Twitch content, a five percent decrease year-over-year at that point. Gaming content and streaming platforms surged in popularity in 2020, as people turned to video [...]",
+   "note": "Worldwide; 2012 to 2023 YTD",
+   "source": "TwitchTracker",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023 YTD"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      72,
+      144,
+      192,
+      241,
+      292,
+      355,
+      560,
+      660,
+      1116,
+      1460,
+      1346,
+      851
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Most popular YouTube gaming channels as of March 2024, ranked by number of subscribers (in millions)",
+   "short": "YouTube: most subscribed gaming channels 2024",
+   "unit": "millions",
+   "description": "As of March 2024, Chilean YouTuber Germán Alejandro Garmendia Aranis, known as JuegaGerman, was ranked first among the most popular YouTube gaming channels with 49 million subscribers. The creator's main channel, HolaSoyGerman, is also among the most popular YouTube channels worldwide. Spanish gaming YouTuber Miguel Bernal Montes, known as Mikecrack, was ranked second with 48.2 million subscribers.",
+   "note": "Worldwide; March 2024; channel category: games",
+   "source": "Google; Social Blade Number of subscribers in millions",
+   "kind": "categorical",
+   "categories": [
+    "JuegaGerman",
+    "Mikecrack",
+    "Fernanfloo",
+    "BETER BÖCÜK",
+    "MrBeast Gaming",
+    "Total Gaming",
+    "TheDonato",
+    "Techno Gamerz",
+    "PANDA BOI",
+    "Markiplier"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      49.5,
+      48.2,
+      47,
+      45.1,
+      42.4,
+      40.3,
+      40,
+      38.4,
+      37.8,
+      36.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Leading YouTube Gaming streamers during March 2024, based on hours watched (in millions)",
+   "short": "Leading YouTube Gaming streamers 2024, based on hours watched",
+   "unit": "millions",
+   "description": "In March 2024, R7 Tatsumaki was the most popular YouTube Gaming streamer, with approximately 4.72 million hours of watch time during the measured period. Usada Pekora (Pekora Ch. ), a Japanese content creator, was the second-most popular YouTube Gaming streamer, with about 3.91 million hours watched during that month.",
+   "note": "Worldwide; March 2024",
+   "source": "Streams Charts Hours watched in millions",
+   "kind": "categorical",
+   "categories": [
+    "R7 Tatsumaki",
+    "Pekora Ch.",
+    "Tonde Gamer",
+    "NOBRU",
+    "Gaules",
+    "Typical Gamer",
+    "LolzZz Gaming",
+    "BaianoTV",
+    "Windah Basudara",
+    "DrDisrespect"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.72,
+      3.91,
+      3.66,
+      3.37,
+      2.54,
+      2.24,
+      2.19,
+      1.97,
+      1.97,
+      1.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Selected social media apps downloads worldwide from January 2020 to April 2023 (in billions)",
+   "short": "Selected social video and photo app global downloads 2020-2023",
+   "unit": "billions",
+   "description": "Between January 2020 to April 2023, social video app TikTok generated approximately 2.7 billion downloads from users worldwide. In comparison, Meta-powered app Instagram generated around two billion downloads. Photo app BeReal, which launched in January 2020, generated less than 100 million downloads in the examined period.",
+   "note": "Worldwide; January 1, 2020 to April 20, 2023",
+   "source": "Sensor Tower",
+   "kind": "categorical",
+   "categories": [
+    "BeReal",
+    "Instagram",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.09,
+      2,
+      2.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Leading photo and video editor apps in the United States in July 2023, by downloads",
+   "short": "Most downloaded photo and video editor apps in the U.S. 2023",
+   "unit": "",
+   "description": "In July 2023, photo editor app Remini - AI Photo Enhancer generated over 4.5 million downloads among users in the United States across the Google Play Store and the Apple App Store. Launched in 2019, the app uses AI to enhance or improve old or pixelated photographs. Photo and video editor Canva ranked second, with 942 thousand downloads in the U.S. during the examined period, while the Florida-based Picsart ranked third with 810 thousand downloads.",
+   "note": "United States; July 2023; Google Play and Apple App Store; free apps",
+   "source": "AppMagic Number of downloads",
+   "kind": "categorical",
+   "categories": [
+    "Remini - AI Photo Enhancer",
+    "Canva: Design, Photo & Video",
+    "Picsart AI Photo Editor, Video",
+    "AI Mirror: AI Art Photo Editor",
+    "PhotoRoom AI Photo Editor",
+    "Lightroom Photo & Video Editor",
+    "Facetune AI Photo/Video Editor",
+    "Photoshop Express Photo Editor",
+    "Hypic - Photo Editor & AI Art",
+    "BeautyPlus-AI Photo/Video Edit"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4577379,
+      942591,
+      810517,
+      555962,
+      439366,
+      423106,
+      380735,
+      376483,
+      351540,
+      313155
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Instagram accounts with the most followers worldwide as of April 2024 (in millions)",
+   "short": "Instagram accounts with the most followers worldwide 2024",
+   "unit": "millions",
+   "description": "Cristiano Ronaldo has one of the most popular Instagram accounts as of April 2024. The Portuguese footballer is the most-followed person on the photo sharing app platform with 628 million followers. Instagram's own account was ranked first with roughly 672 million followers.",
+   "note": "April 2024; business / creator accounts",
+   "source": "Social Blade Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "cristiano",
+    "leomessi",
+    "selenagomez",
+    "kyliejenner",
+    "therock",
+    "arianagrande",
+    "kimkardashian",
+    "beyonce",
+    "khloekardashian",
+    "nike",
+    "kendalljenner",
+    "justinbieber",
+    "natgeo",
+    "taylorswift"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      672,
+      628,
+      502,
+      429,
+      400,
+      397,
+      380,
+      363,
+      319,
+      310,
+      306,
+      294,
+      292,
+      283,
+      283
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Preferred types of content on Instagram according to users worldwide as of April 2023",
+   "short": "Instagram: favorite types of posts for global users 2023",
+   "unit": "",
+   "description": "According to a global online survey conducted in 2022, 50 percent of weekly Instagram users said that they wanted to see funny content on the social media platform. Additionally, 46 percent of all respondents said that they wanted to see creative content, whilst 41 percent said they wanted to see informative content on Instagram. Over a third of users wanted to see engaging content on the photo and video sharing app.",
+   "note": "Worldwide; April 2023; 7,206 respondents; 16-64 years; weekly Instagram users",
+   "source": "GWI",
+   "kind": "categorical",
+   "categories": [
+    "Funny",
+    "Creative",
+    "Informative",
+    "Relaxing",
+    "Inspirational",
+    "Engaging",
+    "Trendy",
+    "Exciting",
+    "Relavant",
+    "Helpful/how-to"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5,
+      0.46,
+      0.41,
+      0.37,
+      0.36,
+      0.36,
+      0.35,
+      0.34,
+      0.33,
+      0.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Share of BeReal users in the United States who believe the app is an authentic social media as of July 2022",
+   "short": "U.S. BeReal users opinion on the app authenticity 2022",
+   "unit": "",
+   "description": "Users on BeReal are only allowed two minutes to take the perfect snapshot without filters or endless selfies sessions. According to a survey of users in the United States conducted in July 2022, 34 percent of BeReal users agree or strongly agree that the app is an 'authentic social media.' In comparison, around 30 percent of respondents reported disagreeing or strongly disagreeing with the app's authenticity statement.",
+   "note": "United States; July 2022; 689 respondents; 18 years and older; BeReal users",
+   "source": "CivicScience",
+   "kind": "categorical",
+   "categories": [
+    "Strongly agee",
+    "Agree",
+    "Neutral",
+    "Disagree",
+    "Strongly disagree"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.21,
+      0.36,
+      0.11,
+      0.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Adults in the United States on how many photographs of them are online as of December 2022",
+   "short": "U.S. adults: number of photographs online 2022",
+   "unit": "",
+   "description": "According to a survey conducted in 2022 in the United States, 25 percent of adults had between one and 10 photographs of themselves online. Additionally, one in five respondents reported they had between 11 and 100 photographs of themselves on online networks. A further 27 percent of users were not sure how many photos of themselves online, whilst 14 percent had no online photos.",
+   "note": "United States; December 14, 2022; 8,568 respondents; 18 years and older",
+   "source": "YouGov",
+   "kind": "categorical",
+   "categories": [
+    "None",
+    "1-10",
+    "11-100",
+    "101-500",
+    "More than 500",
+    "Not sure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.14,
+      0.25,
+      0.21,
+      0.08,
+      0.05,
+      0.27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Average lifetime online footprint of social media users in the United Kingdom as of July 2022",
+   "short": "UK: online footprint of social network users 2022",
+   "unit": "",
+   "description": "According to a study conducted in the United Kingdom in 2022, internet users post an average of 9,828 online photos in their lifetime, and 10,811 social media posts. Additionally, the average internet user leaves behind 126 email addresses in their online footprint.",
+   "note": "United Kingdom; July 2022; 2,000 respondents; 18 years and older",
+   "source": "Aloha Browser; Study Finds",
+   "kind": "categorical",
+   "categories": [
+    "Social media posts",
+    "Photos",
+    "Email addresses"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10811,
+      9828,
+      126
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Sources of information about products in the U.S. as of December 2023",
+   "short": "Sources of information about products in the U.S. 2023",
+   "unit": "",
+   "description": "53 percent of U.S. respondents answer our survey on \"Sources of information about products\" with \"Search engines (e.g., Google)\". The survey was conducted in 2023, among 10,046 consumers.",
+   "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Search engines (e.g., Google)",
+    "Online stores",
+    "Customer reviews",
+    "In the store",
+    "Brand websites and apps",
+    "Social media websites and apps",
+    "Friends and acquaintances",
+    "Video websites and apps (e.g., YouTube)",
+    "Online forums",
+    "Price comparison websites",
+    "Question and answer websites and apps",
+    "Coupon and deal websites and apps",
+    "Blogs and podcasts",
+    "Magazine and newspaper websites and apps",
+    "Magazines and newspapers"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.53,
+      0.34,
+      0.33,
+      0.31,
+      0.29,
+      0.28,
+      0.27,
+      0.26,
+      0.17,
+      0.16,
+      0.14,
+      0.13,
+      0.11,
+      0.11,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Attitudes towards online shopping in the U.S. as of December 2023",
+   "short": "Attitudes towards online shopping in the U.S. 2023",
+   "unit": "",
+   "description": "When asked about \"Attitudes towards online shopping\", most U.S. respondents pick \"When I plan a major purchase, I always do some research on the internet first\" as an answer. 44 percent did so in our online survey in 2023.",
+   "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "When I plan a major purchase, I always do some research on the internet first",
+    "Customer reviews on the internet are very helpful",
+    "I prefer to purchase goods from various sellers through the same online market place (e.g., Amazon)",
+    "I want to see and touch an item before I buy it",
+    "When I order an item, I prefer express shipping",
+    "I usually make major new purchases directly via my smartphone or tablet",
+    "When I buy an item, I want to hold it in my hand the same day",
+    "I usually manage habitual / recurrent orders directly via my smartphone or tablet",
+    "I am excited about using Augmented & Virtual Reality while shopping",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.44,
+      0.42,
+      0.32,
+      0.27,
+      0.24,
+      0.23,
+      0.22,
+      0.21,
+      0.17,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Sources of inspiration for new products in the U.S. as of December 2023",
+   "short": "Sources of inspiration for new products in the U.S. 2023",
+   "unit": "",
+   "description": "\"Social media websites and apps\" and \"Friends and acquaintances\" are the top two answers among U.S. consumers in our survey on the subject of \"Sources of inspiration for new products\".",
+   "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Social media websites and apps",
+    "Friends and acquaintances",
+    "In the store",
+    "Search engines (e.g., Google)",
+    "Online stores",
+    "Video websites and apps (e.g., YouTube)",
+    "Customer reviews",
+    "Brand websites and apps",
+    "Coupon and deal websites and apps",
+    "Magazines and newspapers",
+    "Celebrities",
+    "Magazine and newspaper websites and apps",
+    "Online forums",
+    "Blogs and podcasts",
+    "Price comparison websites"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.46,
+      0.44,
+      0.43,
+      0.42,
+      0.37,
+      0.35,
+      0.28,
+      0.26,
+      0.2,
+      0.17,
+      0.16,
+      0.16,
+      0.16,
+      0.15,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Frequency of reading online reviews of local businesses according to consumers in the United States as of January 2023",
+   "short": "Frequency of reading local businesses online reviews in the U.S. 2023",
+   "unit": "",
+   "description": "According to a survey conducted in January 2023, 33 percent of consumers in the United States reported to always read online reviews of local businesses. Over 43 percent said that they regularly read online reviews of local businesses and just two percent said that they never read online reviews.",
+   "note": "United States; January 2023; 1,117 respondents; in the last year",
+   "source": "BrightLocal; SurveyMonkey",
+   "kind": "categorical",
+   "categories": [
+    "Yes, always",
+    "Yes, regularly",
+    "Yes, occasionally",
+    "No, never"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.33,
+      0.43,
+      0.22,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Total number of user reviews and ratings on Tripadvisor worldwide from 2014 to 2023 (in millions)",
+   "short": "Number of user reviews and ratings on Tripadvisor worldwide 2014-2023",
+   "unit": "millions",
+   "description": "The total number of reviews and ratings on Tripadvisor worldwide has increased significantly since 2014, reaching the one billion mark in 2021. In the following years, the company mentioned that the number of reviews on the platform exceeded one billion. As of 2023, such reviews and ratings related to over eight million travel entries, including experiences, accommodation, restaurants, airlines, and cruises.",
+   "note": "Worldwide; 2014 to 2023; fiscal years ending December 31",
+   "source": "Tripadvisor",
+   "kind": "categorical",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021¹",
+    "2022¹",
+    "2023²"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      200,
+      320,
+      465,
+      600,
+      730,
+      859,
+      884,
+      1000,
+      1000,
+      1000
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 51,
+   "title": "Best-selling beauty and personal care products on Amazon in 2nd quarter 2023, by number of reviews",
+   "short": "Number of reviews of best-selling beauty & personal care products on Amazon 2023",
+   "unit": "",
+   "description": "In the second quarter of 2023, the most reviewed product among the top ten best-selling beauty and personal care items on Amazon was the Essence Lash Princess False Lash Effect Mascara. The mascara was clearly a crowd favorite, with over 336,300 Amazon reviews. The second-highest number of reviews belonged to the Mighty Patch Original Pimple Patch, with around 127,100 reviews.",
+   "note": "Worldwide; Q2 2023; top ten best-selling beauty items on Amazon",
+   "source": "BeautyMatter; Market defense Number of reviews",
+   "kind": "categorical",
+   "categories": [
+    "Essence Lash Princess False Lash Effect Mascara",
+    "Mighty Patch Original - Pimple Patch- 36 Count",
+    "Maybelline Lash sensational Sky High Washable Mascara",
+    "Loreal Paris Voluminous Makeup Lash Paradise Mascara",
+    "NYX PROFFESSIONAL Makeup Lash Paradise Mascara",
+    "Pronto 100% Pure Acetone",
+    "Mielle Organics Rosemary Mint Scalp & Hair Strengthening Oil",
+    "COSRX Snail Mucin 96% Power Repairing Essence, 100ml",
+    "Joomra Pillow Slippers for Women and Men Non Slip Quick Drying Shower Slides Bathroom Sandals",
+    "SOL DE JANEIRO Body Fragrance Mist"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      336300,
+      127100,
+      119100,
+      107900,
+      94400,
+      48900,
+      46700,
+      37000,
+      27500,
+      5200
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 52,
+   "title": "Share of beauty shoppers who read reviews while shopping online in the United States in 2023",
+   "short": "Online beauty shoppers who read reviews in the U.S. 2023",
+   "unit": "",
+   "description": "In 2023, more than six in ten consumers from the United States reported that they always read reviews when shopping for beauty products online. Additionally, 36.5 percent reported that they sometimes consult online reviews.",
+   "note": "United States; May 2023; 26,340 respondents",
+   "source": "PowerReviews",
+   "kind": "categorical",
+   "categories": [
+    "Always",
+    "Sometimes",
+    "Never"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.63,
+      0.365,
+      0.005
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 53,
+   "title": "Most important website product details when deciding to purchase beauty products online in the United States in 2023",
+   "short": "Most helpful webpage product details when shopping for beauty online in the U.S. 2023",
+   "unit": "",
+   "description": "In February 2023, a survey reported which webpage product details are the most helpful when purchasing beauty items online. In the United States, over half survey respondents considered written reviews the most important. Review stars and photos followed, with around two-fifths of shoppers.",
+   "note": "United States; February 16 to February 23, 2023 ; 3,000 respondents; 18 years and older",
+   "source": "Tinuiti Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Written reviews",
+    "Review stars",
+    "Photos",
+    "Comparisons to similar products",
+    "Ingredient or nutritional information",
+    "Videos",
+    "Product measurements"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.54,
+      0.43,
+      0.43,
+      0.39,
+      0.34,
+      0.33,
+      0.14
+     ]
+    }
+   ]
+  }
+ ]
+}

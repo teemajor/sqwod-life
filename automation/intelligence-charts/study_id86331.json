@@ -1,0 +1,998 @@
+{
+ "studyId": "86331",
+ "study": "fitness industry in france",
+ "file": "research/statista/study_id86331_fitness-industry-in-france.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the health and fitness market in Europe from 2017 to 2022 (in billion euros)",
+   "short": "Value of the European health and fitness industry 2017-2022",
+   "unit": "billion euros",
+   "description": "The health and fitness market in Europe was worth an estimated 28 billion U.S. dollars in 2022. This is a significant increase in the market size of just over 17 billion U.S. dollars in 2021. This can be attributed to the continued recovery of the industry following the impact of the coronavirus (COVID-19) pandemic, which forced the temporary closure of thousands of gyms and health clubs across Europe.",
+   "note": "Europe; 2017 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26.6,
+      27.2,
+      28.2,
+      18.9,
+      17.1,
+      28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Revenue of the fitness industry in Europe in 2022, by country (in billion euros)",
+   "short": "Revenue of leading fitness markets in Europe 2022",
+   "unit": "billion euros",
+   "description": "In 2022, the revenue of the fitness industry in Germany stood at 4.9 billion euros. Meanwhile, the health and fitness market in the United Kingdom was estimated to be worth five billion euros.",
+   "note": "Europe; 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "categorical",
+   "categories": [
+    "United Kingdom",
+    "Germany",
+    "Spain",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      5,
+      4.9,
+      2.1,
+      1.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Revenue of the gym industry in France from 2015 to 2022 (in million euros)",
+   "short": "Fitness club revenue in France 2015-2022",
+   "unit": "million euros",
+   "description": "The revenue of the gym industry in France more than doubled between 2015 and 2022. Latest estimates showed that the fitness club market in France was worth around 238 million euros in 2022.",
+   "note": "France; 2015 to 2022",
+   "source": "Insee; Website (propulsebyca.fr)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      100,
+      119.3,
+      140,
+      167.6,
+      196.5,
+      151.4,
+      117,
+      238
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Number of gyms and health clubs in Europe from 2009 to 2022",
+   "short": "Number of health and fitness clubs in Europe 2009-2022",
+   "unit": "",
+   "description": "The number of gyms and health clubs in Europe has generally been on the increase since 2009. While there was a slight dip in the number of establishments in 2020 as a result of the coronavirus (COVID-19) pandemic, the number of gyms in Europe increased again in 2022, reaching 63,830.",
+   "note": "Europe; 2009 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      48087,
+      48005,
+      47701,
+      45396,
+      49197,
+      51299,
+      51204,
+      55003,
+      59055,
+      63644,
+      63059,
+      63173,
+      63830
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Number of members at health and fitness clubs in Europe in 2022, by country (in millions)",
+   "short": "Gym membership in European countries 2022",
+   "unit": "millions",
+   "description": "In 2022, there were approximately 10.4 million gym members in the United Kingdom. Meanwhile, there were around 5.4 million members at health clubs and fitness establishments in Spain.",
+   "note": "Europe; 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "categorical",
+   "categories": [
+    "United Kingdom",
+    "Germany",
+    "Spain",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      10.4,
+      10.3,
+      5.4,
+      4.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Revenue of the gym industry in France from 2015 to 2022 (in million euros)",
+   "short": "Fitness club revenue in France 2015-2022",
+   "unit": "million euros",
+   "description": "The revenue of the gym industry in France more than doubled between 2015 and 2022. Latest estimates showed that the fitness club market in France was worth around 238 million euros in 2022.",
+   "note": "France; 2015 to 2022",
+   "source": "Insee; Website (propulsebyca.fr)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      100,
+      119.3,
+      140,
+      167.6,
+      196.5,
+      151.4,
+      117,
+      238
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of gyms in selected cities in France as of May 2023",
+   "short": "Gyms in France 2023",
+   "unit": "",
+   "description": "There were over 5.4 thousand gyms across France in 2023. The city with the most number of fitness centers in the country was Marseille. Meanwhile, there were over 250 gyms in France's capital city, Paris.",
+   "note": "France; May 2023",
+   "source": "BODACC; BoldData; Insee",
+   "kind": "categorical",
+   "categories": [
+    "Marseille",
+    "Paris",
+    "Toulouse"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      275,
+      256,
+      180
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Number of Basic-Fit gyms in 2023, by country",
+   "short": "Number of clubs of Basic-Fit 2023, by country",
+   "unit": "",
+   "description": "As of the end of 2023, there were over 220 Basic-Fit gyms in Belgium. France was the biggest market for the Dutch fitness company, with the country home to 780 Basic-Fit facilities.",
+   "note": "Europe; Q4 2023",
+   "source": "Basic-Fit",
+   "kind": "categorical",
+   "categories": [
+    "France",
+    "Netherlands",
+    "Belgium",
+    "Spain",
+    "Germany",
+    "Luxembourg"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      780,
+      238,
+      222,
+      140,
+      12,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of people who are members of a gym in Europe in 2022, by country",
+   "short": "Health club penetration rate in Europe 2022, by country",
+   "unit": "",
+   "description": "In 2022, around one fifth of the population of Norway were members of a gym or heath club. By contrast, the fitness club penetration rate in Italy was below 10 percent.",
+   "note": "Europe; 2022",
+   "source": "Basic-Fit; Deloitte; IHRSA Penetration rate",
+   "kind": "categorical",
+   "categories": [
+    "Sweden",
+    "Norway",
+    "Denmark",
+    "Finland",
+    "Netherlands",
+    "United Kingdom",
+    "Germany",
+    "Spain",
+    "Austria",
+    "Ireland",
+    "France",
+    "Italy",
+    "Poland",
+    "Belgium",
+    "Portugal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.21,
+      0.2,
+      0.19,
+      0.19,
+      0.17,
+      0.16,
+      0.12,
+      0.11,
+      0.11,
+      0.11,
+      0.1,
+      0.09,
+      0.08,
+      0.08,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Most popular sporting activities in France as of July 2023",
+   "short": "Leading sports activities in France 2023",
+   "unit": "",
+   "description": "A July 2023 survey in France revealed running and hiking to be the most popular sporting activity in the country. Meanwhile, one fifth of respondents stated that they took part in water sports.",
+   "note": "France; July 2023; 4,258 respondents; 15 years and older",
+   "source": "CRÉDOC; INJEP Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Running and hiking",
+    "Fitness and gymnastics activities",
+    "Water sports",
+    "Cycle or motor sports",
+    "Team sports",
+    "Racket sports",
+    "Winter or mountain sports",
+    "Precision or target sports",
+    "Street sports",
+    "Martial arts and combat sports",
+    "Athletics",
+    "Climbing sports",
+    "Equestrian sports",
+    "Combined sports",
+    "Air sports"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.47,
+      0.27,
+      0.2,
+      0.18,
+      0.13,
+      0.12,
+      0.09,
+      0.07,
+      0.06,
+      0.06,
+      0.06,
+      0.05,
+      0.04,
+      0.04,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Frequency of doing physical activity in France in 2023",
+   "short": "Frequency of exercise in France 2023",
+   "unit": "",
+   "description": "A July 2023 survey in France revealed that over one quarter of respondents took part in physical activity four times or more per week. By contrast, just under 20 percent of respondents stated that they exercised less than once a week.",
+   "note": "France; July 2023; 4,258 respondents; 15 years and older",
+   "source": "CRÉDOC; INJEP",
+   "kind": "categorical",
+   "categories": [
+    "4 times a week or more",
+    "3 or 4 times a week",
+    "2 or 3 times a week",
+    "1 or 2 times a week",
+    "Less than once a week"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.26,
+      0.14,
+      0.21,
+      0.2,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Share of people who regularly take part in sport in France in 2023, by age group",
+   "short": "People practicing sports in France 2023, by age group",
+   "unit": "",
+   "description": "A 2023 survey in France revealed that one fifth of respondents aged 15 to 24 did not take part in regular physical activity. Meanwhile, approximately 62 percent of respondents aged 70 or older stated that they regularly exercised.",
+   "note": "France; July 2023; 4,258 respondents; 15 years and older",
+   "source": "CRÉDOC; INJEP",
+   "kind": "categorical",
+   "categories": [
+    "15-24 years",
+    "25-39 years",
+    "40-59 years",
+    "60-69 years",
+    "70 years and older"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.8,
+      0.79,
+      0.69,
+      0.65,
+      0.62
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Most common reasons why people engage in physical activity and sports in France in 2023",
+   "short": "Leading reasons to engage in physical activity in France 2023",
+   "unit": "",
+   "description": "A July 2023 survey in France explored the reasons why people took part in physical activity. During the survey, over half of respondents stated that they exercised for health reasons. Meanwhile, 10 percent of respondents took part in physical activity to meet other people.",
+   "note": "France; July 2023; 4,258 respondents; 15 years and older",
+   "source": "CRÉDOC; INJEP; Ministère de la Jeunesse et des Sports Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Health",
+    "Relaxation",
+    "For enjoyment, fun",
+    "To improve appearance/body",
+    "Contact with nature",
+    "Meeting other people",
+    "Performance, competition",
+    "Risk, adventure, the sensation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.52,
+      0.35,
+      0.31,
+      0.28,
+      0.19,
+      0.1,
+      0.09,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Most common locations to take participate in sporting activities in France in 2023",
+   "short": "Fitness participation in France in 2023, by location",
+   "unit": "",
+   "description": "A July 2023 survey in France revealed the most common locations to take part in sporting activities. Over one third of respondents exercised outside in nature, while one quarter took part in activities at a sports facility.",
+   "note": "France; July 2023; 4,258 respondents; 15 years and older",
+   "source": "CRÉDOC; INJEP",
+   "kind": "categorical",
+   "categories": [
+    "Outdoors in nature",
+    "At a sports facility",
+    "At home",
+    "Outdoors in the city",
+    "At work or school",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.36,
+      0.25,
+      0.22,
+      0.11,
+      0.04,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Most common reasons for exercising at home in France in 2023",
+   "short": "Reasons to exercise at home in France 2023",
+   "unit": "",
+   "description": "A July 2023 survey in France revealed the main reasons why some fitness fans preferred exercising at home. Over 30 percent of respondents stated that they did sport at home because it allowed them to do it whenever they wanted, while just under 20 percent said that working out at home was less expensive.",
+   "note": "France; July 2023; 4,258 respondents; 15 years and older",
+   "source": "CRÉDOC; INJEP Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "To do it when I want",
+    "Independent of the weather",
+    "Less expensive",
+    "To save time",
+    "Other",
+    "Not specified"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.31,
+      0.2,
+      0.19,
+      0.15,
+      0.08,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Fitness and health service purchases in France as of March 2024",
+   "short": "Fitness and health service purchases in France 2024",
+   "unit": "",
+   "description": "7 percent of French respondents answer our survey on \"Fitness and health service purchases\" with \"Online services (website or apps)\". The survey was conducted in 2024, among 2,034 consumers.",
+   "note": "France; April 2023 to March 2024; 2034 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Online services (website or apps)",
+    "Sports club membership",
+    "Gym membership",
+    "Individual sports course / class",
+    "Wellness services (e.g., massage)",
+    "Personal trainer",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.07,
+      0.07,
+      0.06,
+      0.06,
+      0.06,
+      0.03,
+      0.82,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Consumer Price Index (CPI) of sporting goods, camping and outdoor activities gear in France between May 2020 and January 2024",
+   "short": "CPI of sporting goods, camping and outdoor activities gear in France 2020-2024",
+   "unit": "",
+   "description": "The consumer price index (CPI) is the instrument measuring inflation. It is used to estimate, between two given periods, the average variation in the prices of products consumed by households.This graph depicts the Consumer Price Index (CPI) of sporting goods, camping and outdoor activities gear in France between May 2020 and January 2024. In January 2024, the CPI reached 109.53.",
+   "note": "France; May 2020 to January 2024",
+   "source": "Insee",
+   "kind": "timeseries",
+   "categories": [
+    "May 2020",
+    "Jun 2020",
+    "Jul 2020",
+    "Aug 2020",
+    "Sep 2020",
+    "Oct 2020",
+    "Nov 2020",
+    "Dec 2020",
+    "Jan 2021",
+    "Feb 2021",
+    "Mar 2021",
+    "Apr 2021",
+    "May 2021",
+    "Jun 2021",
+    "Jul 2021",
+    "Aug 2021",
+    "Sep 2021",
+    "Oct 2021",
+    "Nov 2021",
+    "Dec 2021",
+    "Jan 2022",
+    "Feb 2022",
+    "Mar 2022",
+    "Apr 2022",
+    "May 2022",
+    "Jun 2022",
+    "Jul 2022",
+    "Aug 2022",
+    "Sep 2022",
+    "Oct 2022",
+    "Nov2022",
+    "Dec 2022",
+    "Jan 2023",
+    "Feb 2023",
+    "Mar 2023",
+    "Apr 2023",
+    "May 2023",
+    "Jun 2023",
+    "Jul 2023",
+    "Aug 2023",
+    "Sep 2023",
+    "Oct 2023",
+    "Nov 2023",
+    "Dec 2023",
+    "Jan 2024"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      100.24,
+      100.38,
+      101.22,
+      100.95,
+      100.89,
+      101.78,
+      99.6,
+      98.86,
+      99.62,
+      97.84,
+      101.36,
+      101.62,
+      102.46,
+      101.44,
+      101.71,
+      102.88,
+      103.98,
+      104.15,
+      103.71,
+      103.34,
+      101.98,
+      102.16,
+      104.61,
+      105.11,
+      106.56,
+      106.01,
+      105.81,
+      107.25,
+      107.36,
+      107.89,
+      108.23,
+      107.09,
+      106.33,
+      107.12,
+      109.67,
+      109.69,
+      110.54,
+      110.66,
+      109.87,
+      111.32,
+      110.82,
+      111.72,
+      112.46,
+      111.29,
+      109.53
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Revenue in the sports & swimwear for women segment of the apparel market France from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue in the sports & swimwear for women segment France 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The revenue in the 'Sports & Swimwear for women' segment of the apparel market in France was forecast to continuously increase between 2024 and 2028 by in total 0.2 billion U.S. dollars (+12.99 percent). After the sixth consecutive increasing year, the indicator is estimated to reach 1.74 billion U.S. dollars and therefore a new peak in 2028.",
+   "note": "France; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.28,
+      1.24,
+      1.1,
+      1.27,
+      1.19,
+      1.48,
+      1.54,
+      1.59,
+      1.64,
+      1.69,
+      1.74
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to France from 2015 to 2023 (in 1,000 euros)",
+   "short": "France: articles and equipment for sports import value 2015-2023",
+   "unit": "1,000 euros",
+   "description": "In 2023, the value generated from the import of articles and equipment for physical exercise, gymnastics, athletics and other sports in France decreased by 284.5 million Euros (-17.37 percent) since 2022. Nevertheless, the last two years in this industry recorded a significant higher value than the preceding years.",
+   "note": "France; 2015 to 2023",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      970289,
+      1050948,
+      1117438,
+      1130052,
+      1158254,
+      1143495,
+      1639795,
+      1637907,
+      1353380
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Sales revenue from nutritional supplements in direct and distance selling channels in France in 2022, by type of channel (in million euros)",
+   "short": "Turnover of food supplements in direct and distance selling in France 2022",
+   "unit": "million euros",
+   "description": "This bar chart displays the turnover of nutritional supplements in direct and distance selling channels in France in 2022, by type of selling. It shows that the sales of food supplements online amounted to 202 million euros in 2022.",
+   "note": "France; 2022",
+   "source": "FEVAD; Sources diverses (Manufacturers and retailers); SYNADIET Sales value in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Total",
+    "Direct at-home sales",
+    "E-commerce",
+    "Mail-order sales"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      540,
+      266,
+      202,
+      72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Breakdown of the sales value of the adult dietetics sector in France in 2022, by category",
+   "short": "Distribution of the sales value of the dietetics foods sector France 2022, by diet",
+   "unit": "",
+   "description": "While the previous year gluten-free products made up almost half of the sales value of the adult dietetics foods sector, in 2022, slimming products took their place on the first step of the podium. Indeed, weight-loss food products accounted for 46.2 percent of the sales value of the adult dietetics sector, while gluten-free products took up over 33 percent.",
+   "note": "France; 2022",
+   "source": "IRI; L’Alliance 7; Syndicat français de la nutrition spécialisée",
+   "kind": "categorical",
+   "categories": [
+    "Slimming products",
+    "Gluten-free products",
+    "Sugar-free products",
+    "Sports nutrition products"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.462,
+      0.331,
+      0.145,
+      0.062
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Revenue in the health & fitness segment of the app market France from 2017 to 2027 (in million U.S. dollars)",
+   "short": "Revenue in the health & fitness segment of the app market France 2017-2027",
+   "unit": "million U.S. dollars",
+   "description": "The indicator 'Revenue By Segment' in the 'Health & Fitness' segment of the app market in France was forecast to continuously increase between 2024 and 2027 by in total 38.9 million U.S. dollars (+38.22 percent). After the fifth consecutive increasing year, the indicator is estimated to reach 140.67 million U.S. dollars and therefore a new peak in 2027.",
+   "note": "France; 2017 to 2027",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.52,
+      24.85,
+      36.45,
+      55.8,
+      77.04,
+      76.84,
+      87.54,
+      101.77,
+      115.21,
+      128.16,
+      140.67
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Revenue in the Digital Fitness & Well-Being market for different segments France from 2018 to 2028 (in million U.S. dollars)",
+   "short": "Revenue in the Digital Fitness & Well-Being market France 2018-2028",
+   "unit": "million U.S. dollars",
+   "description": "Over the last two observations, the indicator 'Revenue by market' is forecast to significantly increase in all segments. As part of the positive trend, the indicator reaches the maximum value for all two different segments at the end of the comparison period. Particularly noteworthy is the segment Fitness Trackers, which has the highest value of 1.4 billion U.S. dollars.",
+   "note": "France",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Fitness Trackers",
+     "values": [
+      676.39,
+      817.06,
+      1058.1,
+      1224.61,
+      1156.21,
+      1234.28,
+      1281.33,
+      1321.35,
+      1357.82,
+      1387.49,
+      1409.43
+     ]
+    },
+    {
+     "name": "Health & wellness coaching",
+     "values": [
+      56.77,
+      80.69,
+      142.72,
+      184.49,
+      203.24,
+      269.14,
+      329.07,
+      376.72,
+      408.3,
+      425.67,
+      433.56
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Number of users in the digital fitness & well-being devices segment of the digital health market France from 2018 to 2028 (in million individuals)",
+   "short": "Users in the digital fitness & well-being devices segment France 2018-2028",
+   "unit": "million individuals",
+   "description": "The indicator 'Users by market' in the 'Fitness Trackers' segment of the digital health market in France was forecast to continuously increase between 2024 and 2028 by in total 0.3 million users (+3.79 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 8.21 million users and therefore a new peak in 2028. Notably, the indicator 'Users by market' of the 'Fitness Trackers' segment of the digital health market was continuously increasing over the past years.",
+   "note": "France; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.6,
+      5.61,
+      6.67,
+      7.29,
+      7.48,
+      7.73,
+      7.92,
+      8.03,
+      8.12,
+      8.17,
+      8.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Number of users in the digital fitness & well-being apps segment of the digital health market France from 2018 to 2028 (in million individuals)",
+   "short": "Users in the digital fitness & well-being apps segment France 2018-2028",
+   "unit": "million individuals",
+   "description": "The indicator 'Users by market' in the 'Health & wellness coaching' segment of the digital health market in France was forecast to continuously increase between 2024 and 2028 by in total 4.8 million users (+16.83 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 33.33 million users and therefore a new peak in 2028. Notably, the indicator 'Users by market' of the 'Health & wellness coaching' segment of the digital health market was continuously increasing [...]",
+   "note": "France; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6.52,
+      10.37,
+      16.81,
+      20.56,
+      23.43,
+      26.36,
+      28.52,
+      30.2,
+      31.6,
+      32.46,
+      33.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Share of respondents who use connected technology to track their physical activity in France as of July 2023",
+   "short": "Use of fitness tracking technology in France 2023",
+   "unit": "",
+   "description": "A July 2023 survey in France explored exercise habits and the use of fitness technology. During the survey 35 percent of respondents stated that they used connected technology to track their activity levels.",
+   "note": "France; July 2023; 4,258 respondents; 15 years and older",
+   "source": "CRÉDOC; INJEP",
+   "kind": "categorical",
+   "categories": [
+    "No",
+    "Yes, when exercising",
+    "Yes, all the time"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.18,
+      0.17
+     ]
+    }
+   ]
+  }
+ ]
+}

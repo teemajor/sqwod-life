@@ -1,0 +1,1118 @@
+{
+ "studyId": "87452",
+ "study": "coronavirus impact on gyms",
+ "file": "research/statista/study_id87452_coronavirus-impact-on-gyms.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Likelihood of going to the gym during the coronavirus (COVID-19) pandemic in the United States as of March 2020, by ethnicity",
+   "short": "COVID-19: U.S. public opinion on going to the gym as of April 2020, by ethnicity",
+   "unit": "",
+   "description": "The COVID-19 pandemic that spread across the world at the beginning of 2020 was not only a big threat to public health, but also to the entire sports industry. Many professional and amateur leagues and events were canceled and the public was advised to not spend time in large groups or in public areas. During an April 2020 survey in the United States, 69 percent of African American respondents stated that they were much less likely to go to the gym based on what they knew about the [...]",
+   "note": "United States; April 3-5, 2020; 2,200 respondents; 18 years and older",
+   "source": "Morning Consult",
+   "kind": "categorical",
+   "categories": [
+    "White",
+    "Hispanic",
+    "Aftrican American",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Much more likely",
+     "values": [
+      0.01,
+      0.02,
+      0.04
+     ]
+    },
+    {
+     "name": "Somewhat more likely",
+     "values": [
+      0.01,
+      0.07,
+      0.05,
+      0.03
+     ]
+    },
+    {
+     "name": "Neither more nor less likely",
+     "values": [
+      0.12,
+      0.09,
+      0.05,
+      0.12
+     ]
+    },
+    {
+     "name": "Somewhat less likely",
+     "values": [
+      0.09,
+      0.12,
+      0.07,
+      0.11
+     ]
+    },
+    {
+     "name": "Much less likely",
+     "values": [
+      0.68,
+      0.63,
+      0.69,
+      0.62
+     ]
+    },
+    {
+     "name": "Don't know/no opinion",
+     "values": [
+      0.09,
+      0.07,
+      0.09,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Share of respondents who would feel comfortable going to the gym or an exercise class during the coronavirus (COVID-19) pandemic in the United States as of October 2020",
+   "short": "COVID-19: Share of people who would return to gym/exercise classes in the U.S. 2020",
+   "unit": "",
+   "description": "The COVID-19 pandemic that spread across the world at the beginning of 2020 was not only a big threat to public health, but also to the entire sports industry. Many professional and amateur leagues and events were canceled and the public was advised to not spend time in large groups or in public areas, including gyms. During an October 2020 survey in the United States, just 11 percent of respondents stated that they would be very comfortable going back to the gym or exercise classes [...]",
+   "note": "United States; October 16 to 18, 2020; 2,200 respondents; 18 years and older",
+   "source": "Morning Consult",
+   "kind": "categorical",
+   "categories": [
+    "Very comfortable",
+    "Somewhat comfortable",
+    "Somewhat uncomfortable",
+    "Very uncomfortable",
+    "Don't know/ No opinion"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.11,
+      0.12,
+      0.18,
+      0.49,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Estimated time scale for being able to go to the gym or an exercise class due to the coronavirus (COVID-19) pandemic in the United States as of April 2020",
+   "short": "COVID-19: estimate time for return to gym/exercise classes in the U.S. 2020",
+   "unit": "",
+   "description": "The COVID-19 pandemic that spread across the world at the beginning of 2020 was not only a big threat to public health, but also to the entire sports industry. Many professional and amateur leagues and events were canceled and the public was advised to not spend time in large groups or in public areas, including gyms. During an April 2020 survey in the United States, 18 percent of respondents stated that they did not anticipate going back to the gym or exercise classes for the next six [...]",
+   "note": "United States; April 7-9, 2020; 2,200 respondents; 18 years and older",
+   "source": "Morning Consult; The Hollywood Reporter",
+   "kind": "categorical",
+   "categories": [
+    "In the next two weeks",
+    "In the next month",
+    "In the next two months",
+    "In the next three months",
+    "In the next six months",
+    "More than six months from now",
+    "Don't know/no opinion"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.01,
+      0.03,
+      0.07,
+      0.12,
+      0.1,
+      0.18,
+      0.48
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Share of spa-goers who would be happy to visit a spa once open after the coronavirus (COVID-19) pandemic in the United Kingdom (UK) in 2020",
+   "short": "Public opinion on returning to spas after COVID-19 in the UK 2020",
+   "unit": "",
+   "description": "The health and wellness industry was severely impacted during the coronavirus pandemic as gyms and spas were forced to close to avoid the general public mixing in large groups. Despite the close proximity to others that a spa visit requires, a survey of spa goers in the United Kingdom in 2020 suggested that many were eager to return to their health spas. Some 48 percent stated that they would go back straight away, while 36 percent stated that they would return within a couple of [...]",
+   "note": "United Kingdom; June 2020; 5,000 spa goers; 18 years and older",
+   "source": "SPA UK; Website (goodspaguide.co.uk)",
+   "kind": "categorical",
+   "categories": [
+    "More often",
+    "Yes",
+    "Maybe",
+    "In a couple of months",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.06,
+      0.48,
+      0.09,
+      0.36,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Impact of the coronavirus (COVID-19) pandemic on the spa industry in the United Kingdom (UK) in 2020",
+   "short": "COVID-19 impact on the wellness industry in the UK 2020",
+   "unit": "",
+   "description": "The coronavirus (COVID-19) pandemic had a significant impact on the spa and wellness industry worldwide as many establishments were forced to close to avoid gatherings of people in public areas. During a 2020 survey in the United Kingdom, 67.2 percent of respondents from the spa industry stated that the pandemic had a severe impact on their business.",
+   "note": "United Kingdom; June 2020",
+   "source": "SPA UK",
+   "kind": "categorical",
+   "categories": [
+    "None",
+    "Minimal",
+    "Noticeable",
+    "Severe",
+    "Significant"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.009,
+      0.006,
+      0.062,
+      0.672,
+      0.251
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Most common hygiene standards implemented by spas as a result of the coronavirus (COVID-19) pandemic worldwide as of March 2020",
+   "short": "COVID-19 hygiene standards implemented by spas worldwide 2020",
+   "unit": "",
+   "description": "The coronavirus (COVID-19) pandemic had a significant impact on the spa and wellness industry, as establishments were either forced to close, or to implement strict hygiene standards and regulations for their employees and guests. During a March 2020 survey among spa industry professionals worldwide, 92 percent stated that they made hand sanitizer available for guests, while 20 percent stated that they had enforced an employee travel ban.",
+   "note": "Worldwide; March 13 to March 23, 2020; 511 spa industry professionals; 18 years and older",
+   "source": "International Spa Association Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Hand sanitizer availability for guests",
+    "Visible employee hygiene standards displayed within the spa",
+    "No handshaking policy when greeting guests",
+    "Visible reminders/signs promoting hand washing within the spa",
+    "Verbal offering for guests to santize their hands before a treatment begins",
+    "Verbal confirmation from service provider to guest that hands have been sanitized",
+    "Employee travel ban",
+    "Temporary stoppage of facial applications (i.e. neck wraps, eye pillow, etc.)",
+    "Intake form asking about recent travel locations",
+    "Temporary stoppage of treatments that involve touching of the face",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.92,
+      0.68,
+      0.55,
+      0.51,
+      0.38,
+      0.35,
+      0.2,
+      0.19,
+      0.16,
+      0.08,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Hygiene measures that would reassure gym members during COVID-19 in China as of August 2020",
+   "short": "Measures to reassure gym members during coronavirus pandemic in China 2020",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight among gym members in China in 2020, nearly half of respondents replied that they would consider returning to their gyms during the COVID-19 pandemic if the number of people allowed inside was limited. Around 36 percent of respondents said they would like to return to their gym if mask-wearing became compulsory.",
+   "note": "China; August 6 to 30, 2020; 631 respondents; 16 years and older; among gym members",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Having additional cleaning staff to disinfect and sterilize the equipment after each use",
+    "Limiting the number of people training at a given time in the gym",
+    "Ensuring that all equipment have a minimum distance of 1.5 m between them",
+    "Temperature checks before entering the gym",
+    "Make it compulsory to wear masks in the gym",
+    "Provide ample hand sanitizers around the gym/in each sector of the gym",
+    "Introducing a signing in/out system to keep track of who has been using the gym for easier contact tracing",
+    "None of the above - I do not believe that anything can be done to make the gym safe as long as no vaccine has been found",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.57,
+      0.49,
+      0.45,
+      0.36,
+      0.36,
+      0.19,
+      0.19,
+      0.04,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Hygiene measures that would reassure gym members during COVID-19 in Hong Kong as of August2020",
+   "short": "Measures to reassure gym members during coronavirus pandemic in Hong Kong 2020",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight among gym members in Hong Kong in 2020, more than half of respondents replied that they would consider returning to their gyms during COVID-19 pandemic if they disinfect the workout area after each use. Around 42 percent of respondents said they would like to return to their gym if mask-wearing became compulsory.",
+   "note": "Hong Kong; August 6 to 30, 2020; 1,357 respondents; 16 years and older; among gym members",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Having additional cleaning staff to disinfect and sterilize the equipment after each use",
+    "Limiting the number of people training at a given time in the gym",
+    "Make it compulsory to wear masks in the gym",
+    "Ensuring that all equipment have a minimum distance of 1.5 m between them",
+    "Temperature checks before entering the gym",
+    "Introducing a signing in/out system to keep track of who has been using the gym for easier contact tracing",
+    "Provide ample hand sanitizers around the gym/ in each sector of the gym",
+    "None of the above - I do not believe that anything can be done to make the gym safe as long as no vaccine has been found",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.53,
+      0.52,
+      0.42,
+      0.41,
+      0.33,
+      0.14,
+      0.11,
+      0.07,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Measures that would reassure gym members during COVID-19 in South Korea in 2020, by gender",
+   "short": "Measures to reassure gym members COVID-19 South Korea 2020, by gender",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on gym membership in South Korea in 2020, around 59 percent of female respondents replied that compulsory masks would reassure them when considering returning to gyms during COVID-19. Overall, keeping in line with social distancing measures were sources of reassurance to gym members.",
+   "note": "South Korea; August 6 to 30, 2020; 2,213 respondents; 16 years and older",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Make it compulsory to wear masks",
+    "Temperature checks before entering",
+    "Ensuring that all equipment have a minimum distance of 1.5 m",
+    "Limiting the number of people training at a given time",
+    "Additional cleaning staff to disinfect and sterilize the equipment after each use",
+    "A signing in/out system for easier contact tracing",
+    "Provide ample hand sanitizers in the gym",
+    "I do not believe anything can be done without a vaccine",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.553,
+      0.3709,
+      0.3215,
+      0.3093,
+      0.2931,
+      0.2316,
+      0.2559,
+      0.0745,
+      0.0081
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.5859,
+      0.3282,
+      0.3221,
+      0.2873,
+      0.2853,
+      0.2239,
+      0.2229,
+      0.1002,
+      0.0041
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Leading hygiene measures that gyms should implement to reassure members to go back to the gym after COVID-19 lockdown restrictions were lifted in Singapore as of August 2020",
+   "short": "Leading COVID-19 hygiene measures that gyms must have for people in Singapore 2020",
+   "unit": "",
+   "description": "According to a survey on gym memberships conducted by Rakuten Insight, 54 percent of respondents in Singapore with gym memberships said that they would go back to the gym after COVID-19 restrictions were lifted if their gym limited the number of people training there at a given time. The same survey found that 81 percent of Singaporean respondents with gym memberships would go back to the gym once the lockdown measures were eased.",
+   "note": "Singapore; August 6 to 30, 2020; 1,428 respondents; 16 years and older; among respondents who had gym memberships",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Make it compulsory to wear masks in the gym",
+    "Ensuring that all equipment have a minimum distance of 1.5 m between them",
+    "Limiting the number of people training at a given time in the gym",
+    "Having additional cleaning staff to disinfect and sterilize the equipment after each use",
+    "Temperature checks before entering the gym",
+    "Provide ample hand sanitizers around the gym/ in each sector of the gym",
+    "Introducing a signing in/out system to keep track of who has been using the gym for easier contact tracing",
+    "Others",
+    "None of the above - I do not believe that anything can be done to make the gym safe as long as no vaccine has been found"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3081,
+      0.4475,
+      0.5427,
+      0.4419,
+      0.2738,
+      0.243,
+      0.1877,
+      0.0133,
+      0.0511
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Measures that would reassure gym members during COVID-19 in India in August 2020",
+   "short": "Measures to reassure gym members during COVID-19 India 2020",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on gym membership in India in August 2020, around 59 percent of the respondents felt that compulsory masks would reassure them into going back to gyms during COVID-19. Overall, keeping in line with social distancing measures was a source of reassurance to gym members.",
+   "note": "India; August 6 to 30, 2020; 10,949 respondents; 16 years and older",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Make it compulsory to wear masks in the gym",
+    "Limiting the number of people training at a given time in the gym",
+    "Ensuring that all equipment have a minimum distance of 1.5 m between them",
+    "Having additional cleaning staff to disinfect and sterlize the equipment after each use",
+    "Temperature checks before entering the gym",
+    "Provide ample hand sanitizers around the gym/in each sector of the gym",
+    "Introducing a signing in/out system to keep track of who has been using the gym for easier contact tracing",
+    "I do not believe anything can be done without a vaccine",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "Total",
+     "values": [
+      0.59,
+      0.42,
+      0.4,
+      0.26,
+      0.23,
+      0.18,
+      0.12,
+      0.05,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Labor measures taken by gyms during the coronavirus crisis in Spain in 2020",
+   "short": "COVID-19: labor measures taken by gyms in Spain in 2020",
+   "unit": "",
+   "description": "Due to the crisis caused by the COVID-19 pandemic in the spring of 2020, almost all Spanish gyms took the measure of furloughing their employees, with 98.3 percent of the surveyed cases as of the end of May 2020.",
+   "note": "Spain; May 8 to 24, 2020; 402 gym CEOs; *Remote work, reduction of working hours, dismissal. Read more",
+   "source": "Federación Nacional de Empresarios de Instalaciones Deportivas; Valgo",
+   "kind": "categorical",
+   "categories": [
+    "Furlough",
+    "Other*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.983,
+      0.017
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Most common actions taken by spas as a result of the coronavirus (COVID-19) pandemic worldwide as of March 2020",
+   "short": "COVID-19 actions taken by spas worldwide 2020",
+   "unit": "",
+   "description": "The coronavirus (COVID-19) pandemic had a significant impact on the spa and wellness industry, as establishments were either forced to close, or to implement strict hygiene standards and regulations for their employees and guests. During a March 2020 survey among spa industry professionals worldwide, 80 percent stated that they had to temporarily close their spa, while 25 percent were forced to lay of employees as a result of the pandemic.",
+   "note": "Worldwide; March 13 to March 23, 2020; 511 spa industry professionals; 18 years and older",
+   "source": "International Spa Association Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Temporarily closed the spa",
+    "Implemented a hiring freeze",
+    "Reduced the work hours/schedule for employees",
+    "Laid off employees",
+    "Reduced the hours of operation",
+    "Reduced the number of treatment offerings available",
+    "Reduced the number of active/utilized treatment rooms",
+    "Have a future date set to temporarily close the spa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.8,
+      0.35,
+      0.32,
+      0.25,
+      0.24,
+      0.13,
+      0.1,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Timescale for being comfortable going back the gym or an exercise class due to the coronavirus (COVID-19) pandemic in the United States as of October 2020",
+   "short": "COVID-19: estimate time for return to gym/exercise classes in the U.S. 2020",
+   "unit": "",
+   "description": "The COVID-19 pandemic that spread across the world at the beginning of 2020 was not only a big threat to public health, but also to the entire sports industry. Many professional and amateur leagues and events were canceled and the public was advised to not spend time in large groups or in public areas, including gyms. During an October 2020 survey in the United States, 38 percent of respondents stated that they would not feel comfortable going back to the gym or exercise classes for [...]",
+   "note": "United States; October 16 to 18, 2020; 2,200 respondents; 18 years and older",
+   "source": "Morning Consult; The Hollywood Reporter",
+   "kind": "categorical",
+   "categories": [
+    "In the next two weeks",
+    "In the next month",
+    "In the next two months",
+    "In the next three months",
+    "In the next six months",
+    "More than six months from now",
+    "Don't know/no opinion"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.04,
+      0.04,
+      0.06,
+      0.07,
+      0.38,
+      0.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Main solution options for gyms in the face of the coronavirus crisis in Spain in 2020",
+   "short": "COVID-19: solutions for gyms in Spain for their clients in 2020",
+   "unit": "",
+   "description": "Due to the crisis caused by the COVID-19 pandemic in the spring of 2020, companies in the fitness sector in Spain had to adapt to the situation by implementing measures to facilitate training from home. According to a survey conducted to more than 400 CEOs of Spanish fitness centers, in 71.1 percent of the cases training sessions were conducted through social networks.",
+   "note": "Spain; May 8 to 24, 2020; 402 fitness centers CEOs",
+   "source": "Federación Nacional de Empresarios de Instalaciones Deportivas; Valgo Percentage of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Online classes through social media",
+    "Web content offer",
+    "Use of own mobile application",
+    "YouTube channel",
+    "Live sessions by videoconference"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.711,
+      0.684,
+      0.539,
+      0.447,
+      0.408
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Online service models planned by gyms after the coronavirus crisis in Spain in 2020",
+   "short": "COVID-19: online service models expected by gyms in Spain in 2020",
+   "unit": "",
+   "description": "Due to the crisis caused by the COVID-19 pandemic in the spring of 2020, companies in the fitness sector in Spain had to resort to online services in order to continue with their activity. Among the companies surveyed with the intention of continuing to offer online services once the coronavirus crisis is over, 72.8% said they want to include them in the membership fee. On the other hand, only 0.5% declared that the online class service would be free for anyone.",
+   "note": "Spain; May 8 to 24, 2020; 402 fitness centers CEOs",
+   "source": "Federación Nacional de Empresarios de Instalaciones Deportivas; Valgo Percentage of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Service included in clients' fee",
+    "Subscription payment service for anyone",
+    "Subscription payment service for my clients",
+    "Pay-as-you-go service for anyone",
+    "Free service for anyone"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.728,
+      0.14,
+      0.075,
+      0.052,
+      0.005
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Share of people who work out at home worldwide as of January 2022",
+   "short": "Home exercise share worldwide 2022",
+   "unit": "",
+   "description": "A January 2022 survey worldwide revealed that a majority of respondents did exercise from the comfort of their own homes. By contrast, just under 44 percent of respondents stated that they did not take part in home workouts.",
+   "note": "Worldwide; January 15 to 24, 2022; 410 respondents; 18 years and older",
+   "source": "GoodFirms",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.561,
+      0.439
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of gym members with access to online fitness courses during COVID-19 in China in 2020",
+   "short": "Gym members with online fitness courses during COVID-19 in China 2020",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight among gym members in China in 2020, around 61 percent of respondents who held gym membership replied that they had access to online classes at their gym during the COVID-19 pandemic. Online fitness gained its popularity swiftly during the lockdown in China at the beginning of 2020.",
+   "note": "China; August 6 to 30, 2020; 631 respondents; 16 years and older; among gym members",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.61,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Gym members with access to online fitness courses during COVID-19 in South Korea in 2020, by gender",
+   "short": "Gym members with online fitness courses COVID-19 South Korea 2020, by gender",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on gym membership in South Korea in 2020, around 66 percent of respondents replied that they did not have access to online classes at their gym. Fitness centers were impacted by the social distancing measures implemented during the outbreak of COVID-19 in South Korea.",
+   "note": "South Korea; August 6 to 30, 2020; 2,213 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "Female",
+     "values": [
+      0.3282,
+      0.6718
+     ]
+    },
+    {
+     "name": "Male",
+     "values": [
+      0.3457,
+      0.6543
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Share of gyms that people had memberships for that offered online courses during the coronavirus (COVID-19) pandemic in Singapore as of August 2020",
+   "short": "Share of gyms that offered online courses during COVID-19 in Singapore 2020",
+   "unit": "",
+   "description": "According to a survey on gym memberships conducted by Rakuten Insight, 62 percent of respondents in Singapore stated that their gym offered online courses during the coronavirus (COVID-19) pandemic. The same survey found that 24 percent of Singaporean respondents stated that they had a gym membership.",
+   "note": "Singapore; August 6 to 30, 2020; 1,428 respondents; 16 years and older; among respondents who had gym memberships",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.62,
+      0.38
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Gym members with access to online fitness courses during COVID-19 in India in August 2020, by age group",
+   "short": "Gym members with online fitness courses during COVID-19 India 2020, by age group",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight in August 2020, the majority of respondents with access to online fitness courses by their gyms were between the ages of 25 to 34 years. The participants above the age of 55 had the least accessibility to the courses.",
+   "note": "India; August 6 to 30, 2020; 10,949 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "16 to 24 years",
+    "25 to 34 years",
+    "35 to 44 years",
+    "45 to 54 years",
+    "55 years and above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.53,
+      0.62,
+      0.58,
+      0.5,
+      0.41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Change in exercise habits during the coronavirus (COVID-19) pandemic in the United States as of April 2020, by age",
+   "short": "COVID-19: change in exercise habits in the U.S. April 2020, by age",
+   "unit": "",
+   "description": "The COVID-19 pandemic that spread across the world at the beginning of 2020 was not only a big threat to public health, but also to the entire sports industry. Many professional and amateur leagues and events were canceled and the public was advised to not spend time in large groups or in public areas. During an April 2020 survey in the United States, 33 percent of respondents aged 65 or over stated that they had been exercising less often than usual as a result of the crisis.",
+   "note": "United States; April 12-14, 2020; 1,486 respondents; 18 years and older",
+   "source": "The Economist; YouGov",
+   "kind": "categorical",
+   "categories": [
+    "18-29",
+    "30-44",
+    "45-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "More often than usual",
+     "values": [
+      0.26,
+      0.21,
+      0.13,
+      0.09
+     ]
+    },
+    {
+     "name": "About the same as usual",
+     "values": [
+      0.44,
+      0.5,
+      0.61,
+      0.56
+     ]
+    },
+    {
+     "name": "Less often than usual",
+     "values": [
+      0.26,
+      0.25,
+      0.24,
+      0.33
+     ]
+    },
+    {
+     "name": "Not sure",
+     "values": [
+      0.03,
+      0.05,
+      0.02,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Leading COVID-19 related aspects considered when exercising or doing sports in Japan as of February 2021",
+   "short": "Leading COVID-19 related aspects considered when doing sports in Japan 2021",
+   "unit": "",
+   "description": "According to a survey conducted in February 2021 in Japan, 64.5 percent of respondents stated that they were careful not to practice sports in areas where the three \"Cs\" (closed spaces, crowded places, close-contact settings) coincided.",
+   "note": "Japan; February 2 to 5, 2021; October 2020 survey n=2,238; February 2021 survey n=2,522; 18-79 years",
+   "source": "Sasakawa Sports Foundation Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Practice sports in areas where the three \"Cs\" (closed spaces, crowding, close-contact settings), do not coincide",
+    "Practice sports while wearing a mask and adhering to the coughing etiquette",
+    "Practice sports while being aware of the distance to people",
+    "Holding back from doing sports at the slightest feeling of physical unwellness",
+    "Mainly practice sports that can be done at home such as yoga or muscle training",
+    "Using parks and sports facilities at low traffic times",
+    "Don't take particular care"
+   ],
+   "series": [
+    {
+     "name": "February 2021 survey",
+     "values": [
+      0.645,
+      0.498,
+      0.454,
+      0.393,
+      0.299,
+      0.269,
+      0.115
+     ]
+    },
+    {
+     "name": "October 2020 survey",
+     "values": [
+      0.48,
+      0.354,
+      0.395,
+      0.328,
+      0.222,
+      0.206,
+      0.184
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Share of individuals exercising before and after the coronavirus outbreak in Denmark in 2020, by activity",
+   "short": "Exercising before and after the coronavirus outbreak in Denmark 2020, by activity",
+   "unit": "",
+   "description": "Exercising and sports habits among Danes have changed in light of the coronavirus outbreak. According to a survey from April 2020, the share of respondents doing fitness activities decreased from 27 percent to 13 percent. More Danes (54 percent), however, found time to go hiking or walking during the coronavirus crisis.",
+   "note": "Denmark; April 16-23, 2020 ; 1,022 respondents; 18 years and older",
+   "source": "Idrættens Analyseinstitut Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Hiking/walking (not as transportation)",
+    "Running",
+    "Fitness (e.g. crossfit, aerobic, spinning etc.)",
+    "Cycling (not as transportation)",
+    "Yoga, pilates, etc.",
+    "Hunting, fishing, horseback riding",
+    "Ball games (e.g. soccer, handball, basketball etc.)",
+    "E-sports",
+    "Gymnastics or dancing",
+    "Other water sports (e.g. sailing, rowing, kayaking etc.)",
+    "Roller skating, skateboarding, parkour, etc.",
+    "Swimming, water gymnastics"
+   ],
+   "series": [
+    {
+     "name": "After COVID-19",
+     "values": [
+      0.45,
+      0.14,
+      0.13,
+      0.12,
+      0.07,
+      0.04,
+      0.04,
+      0.04,
+      0.02,
+      0.02,
+      0.01,
+      0.01
+     ]
+    },
+    {
+     "name": "Before COVID-19",
+     "values": [
+      0.39,
+      0.13,
+      0.27,
+      0.12,
+      0.07,
+      0.06,
+      0.1,
+      0.04,
+      0.06,
+      0.02,
+      0.02,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Share of gym members willing to return as soon as the lockdown due to the coronavirus in Spain ends in 2020",
+   "short": "COVID-19: gym members willing to return to Spain in 2020",
+   "unit": "",
+   "description": "In April 2020, just over half of gym members in Spain were ready to return as soon as the lockdown as a consequence of the coronavirus was over. Only 11.9 percent said they wanted to wait until after the summer to return to their sports center. The undecided, on the other hand, represented practically 31 percent.",
+   "note": "Spain; 2020",
+   "source": "Palco23",
+   "kind": "categorical",
+   "categories": [
+    "I will be back",
+    "I am hesitating to go back",
+    "I will come back after summer"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.535,
+      0.309,
+      0.119
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Share of gym-goers that intended to return to the gym after the coronavirus lockdown in Spain as of May 2020",
+   "short": "COVID-19: gym members intending to return to Spain in 2020",
+   "unit": "",
+   "description": "This statistic illustrate the share of gym-goers that intended to return to the gym after the coronavirus lockdown in Spain as of May 2020. The vast majority of gym-goers wanted to return to their fitness centers, with over approximately 85 percent in all cases. However, in a situation where the price for the membership increased by 10 percent, the willingness to go to the gym drops by approximately 60 percent.",
+   "note": "Spain; 2020; 8,259 members*; * Users of 94 facilities. Read more",
+   "source": "Management Around Sports; Universidad de Alcalá",
+   "kind": "categorical",
+   "categories": [
+    "Concession",
+    "Private",
+    "Low cost"
+   ],
+   "series": [
+    {
+     "name": "Same price",
+     "values": [
+      0.892,
+      0.88,
+      0.846
+     ]
+    },
+    {
+     "name": "Up to 10% price increase",
+     "values": [
+      0.504,
+      0.561,
+      0.627
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Attitude towards sport activities before and after the coronavirus (COVID-19) epidemic in Poland in 2020",
+   "short": "Attitude towards sport activities during the COVID-19 epidemic in Poland in 2020",
+   "unit": "",
+   "description": "Due to the coronavirus outbreak in Poland in 2020, most of the respondents plan to exercise more when pandemic ends or return to sports activities as soon as the sports facilities are reopened. For those who reduced their physical activity after the epidemic, the main reasons were: closure of sports facilities, outdoor sports restrictions, and isolation.",
+   "note": "Poland; April 23 to 30, 2020; 1000 respondents; 18 years and older",
+   "source": "Benefit Systems; Kantar Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Want to exercise more after the pandemic",
+    "Plan to return to the sport classes as soon as the sports facilities open",
+    "Limited exercising during the pandemic",
+    "Limited exercising due to closing of sport facilities",
+    "Limited exercising due to restrictions regarding playing sport outside",
+    "Limited exercising due to isolation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.85,
+      0.75,
+      0.43,
+      0.35,
+      0.2,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Share of population who were physically active in Poland during the coronavirus (COVID-19) pandemic as compared to the period before the pandemic in 2020",
+   "short": "Share of physically active population during COVID-19 in Poland 2020",
+   "unit": "",
+   "description": "Polish people were most physically active during the period before the coronavirus pandemic, with 65 percent of the population participating in fitness activities in January 2020.",
+   "note": "Poland; September 2020; 1,200 respondents; 18 years and older; * January 2020 n=1,800 ** April 2020 n=1,000 Read more",
+   "source": "Benefit Systems; Kantar",
+   "kind": "categorical",
+   "categories": [
+    "Period before the pandemic*",
+    "First wave**",
+    "Second wave"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.61,
+      0.63
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Have you been training constantly at home since the gyms closed during the Coronavirus lockdown?",
+   "short": "COVID-19 impact on sports training in Italy 2020",
+   "unit": "",
+   "description": "According to a survey on gyms and fitness conducted in Italy in 2020, during COVID-19, when gyms closed, most Italians with a gym or sports club membership continued to train at home. In fact, the percentage of people doing home workouts was around 64 percent. On the other hand, roughly 36 percent of respondents did not use to work out at home.",
+   "note": "Italy; May 15 to 30, 2020; 687 respondents; people with a gym or sports clubs membership",
+   "source": "Gympass; International Fitness Observatory",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6447,
+      0.3596
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Share of Hungarians participating in online sports trainings before and after the COVID-19 lockdown in 2020",
+   "short": "Participation in online sports trainings before and during COVID-19 in Hungary 2020",
+   "unit": "",
+   "description": "The restrictive measures introduced to stop the spread of the coronavirus (COVID-19) pandemic motivated an increasing number of Hungarians to participate in online sports classes. As of May 2020, five percent of Hungary's adult population took part in online sports trainings during the lockdown.",
+   "note": "Hungary; May 25-30, 2020; 1,200 respondents; 18-69 years",
+   "source": "TÉT Platform Egyesület",
+   "kind": "categorical",
+   "categories": [
+    "Before lockdown",
+    "During lockdown"
+   ],
+   "series": [
+    {
+     "name": "Total population",
+     "values": [
+      0.0158,
+      0.05
+     ]
+    },
+    {
+     "name": "People doing sports regularly",
+     "values": [
+      0.0442,
+      0.1382
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Most anticipated health spa facilities once open after the coronavirus (COVID-19) pandemic in the United Kingdom (UK) in 2020",
+   "short": "Spa facilities most looked forward to after COVID-19 in the UK 2020",
+   "unit": "",
+   "description": "The health and wellness industry was severely impacted during the coronavirus pandemic as gyms and spas were forced to close to avoid the general public mixing in large groups. Despite the close proximity to others that a spa visit requires, a survey of spa goers in the United Kingdom in 2020 suggested that many were eager to return to their health spas. Some 65 percent that they were looking forward to relaxing in a spa environment, while 45 percent stated that getting a massage [...]",
+   "note": "United Kingdom; June 2020; 5,000 spa goers; 18 years and older",
+   "source": "SPA UK; Website (goodspaguide.co.uk)",
+   "kind": "categorical",
+   "categories": [
+    "Just relaxing in a spa environment",
+    "Body massage",
+    "Facial",
+    "Going for a swim",
+    "Beauty treatment",
+    "I'm apprehensive about visiting a spa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.45,
+      0.21,
+      0.2,
+      0.1,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Shift in physical exercise duration during coronavirus COVID-19 pandemic among residents in Hong Kong in 2020, by age group",
+   "short": "Change in sport activity during COVID-19 in Hong Kong 2020, by age group",
+   "unit": "",
+   "description": "According to a survey conducted in Hong Kong November and December in 2020, around 42 percent of respondents in the age group between 20 and 24 years increased their level of physical exercise during the COVID-19 pandemic. How to maintain physical health and fitness became one of the major concerns for people during the coronavirus outbreak.",
+   "note": "Hong Kong; November 2020 to December 2020; 1,500 respondents; 20 to 54 years*; Hong Kong residents; * The respondents were organized into four age groups that range from 20 to 24, 25 to 34, 35 to 44 and 45 to 54 years. For each of [...] Read more",
+   "source": "Prudential Hong Kong Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "20-24 years",
+    "25-34 years",
+    "35-44 years",
+    "45-54 years"
+   ],
+   "series": [
+    {
+     "name": "Increase",
+     "values": [
+      0.42,
+      0.32,
+      0.25,
+      0.29
+     ]
+    },
+    {
+     "name": "Unchange",
+     "values": [
+      0.31,
+      0.36,
+      0.41,
+      0.44
+     ]
+    },
+    {
+     "name": "Decrease",
+     "values": [
+      0.27,
+      0.32,
+      0.34,
+      0.27
+     ]
+    }
+   ]
+  }
+ ]
+}

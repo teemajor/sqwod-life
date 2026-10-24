@@ -1,0 +1,2217 @@
+{
+ "studyId": "18257",
+ "study": "physical activity statista dossier",
+ "file": "research/statista/Health & Wellness/study_id18257_physical-activity-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Average percentage of the population engaged in sports, exercise, and recreation per day in the United States from 2010 to 2022",
+   "short": "Percentage of U.S. population engaged in sports and exercise per day 2010-2022",
+   "unit": "",
+   "description": "In 2022, it was found that 21.2 percent of men in the United States participated in sports, exercise, and recreational activities daily, compared to only 19.1 percent of women. These statistics highlight a notable difference in the daily engagement of different genders in sporting activities. Other factors influencing this participation include socioeconomic status, age, disability, ethnicity, geography, personal interests, and societal expectations. These barriers can prevent individuals from having [...]",
+   "note": "United States; 2010 to 2022; Approx. 8,100 (2022); 15 years and older",
+   "source": "Bureau of Labor Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "All",
+     "values": [
+      0.185,
+      0.186,
+      0.193,
+      0.186,
+      0.191,
+      0.204,
+      0.209,
+      0.19,
+      0.191,
+      0.2,
+      0.234,
+      0.215,
+      0.201
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.215,
+      0.204,
+      0.217,
+      0.21,
+      0.215,
+      0.229,
+      0.227,
+      0.202,
+      0.211,
+      0.217,
+      0.242,
+      0.234,
+      0.212
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.156,
+      0.169,
+      0.17,
+      0.163,
+      0.168,
+      0.181,
+      0.192,
+      0.178,
+      0.172,
+      0.185,
+      0.226,
+      0.196,
+      0.191
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Average amount of time spent on leisure and sports by U.S. civilian population from 2009 to 2022 (in hours per day)",
+   "short": "Hours per day spent on leisure and sports by U.S. population 2009-2022",
+   "unit": "hours per day",
+   "description": "This graph depicts the average hours per day spent by the U.S. civilian population on sports and leisure activities from 2009 to 2022. Men spent an average of 5.58 hours per day on sports and leisure in 2022.",
+   "note": "United States; 2009 to 2022; aprox. 8,100 (2022); 15 years and older",
+   "source": "Bureau of Labor Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "All",
+     "values": [
+      5.25,
+      5.18,
+      5.21,
+      5.37,
+      5.26,
+      5.3,
+      5.21,
+      5.13,
+      5.24,
+      5.27,
+      4.99,
+      5.53,
+      5.27,
+      5.2
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      5.59,
+      5.57,
+      5.55,
+      5.79,
+      5.61,
+      5.71,
+      5.58,
+      5.51,
+      5.53,
+      5.69,
+      5.36,
+      5.98,
+      5.61,
+      5.58
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      4.93,
+      4.82,
+      4.89,
+      4.97,
+      4.94,
+      4.93,
+      4.86,
+      4.77,
+      4.98,
+      4.87,
+      4.65,
+      5.1,
+      4.94,
+      4.84
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Average amount of time spent on sports, exercise, and recreation in the United States from 2009 to 2022 (hours per day)",
+   "short": "Hours per day spent on sports, exercise, and recreation in the U.S. 2009-2022",
+   "unit": "hours per day",
+   "description": "When surveyed in 2022, it was found that the civilian population of the United States spent an average of 0.29 hours per day on sports, exercise, and recreation. In total, this was a decrease from the previous year owing to the drop off among men from 0.4 to 0.33 hours, however, among women the figure rose slightly in 2022 from 0.24 to 0.25 hours.",
+   "note": "United States; 2009 to 2022; Approx. 8,100 (in 2022); 15 years and older",
+   "source": "Bureau of Labor Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Total",
+     "values": [
+      0.31,
+      0.31,
+      0.3,
+      0.32,
+      0.3,
+      0.29,
+      0.31,
+      0.32,
+      0.29,
+      0.29,
+      0.32,
+      0.37,
+      0.32,
+      0.29
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.41,
+      0.42,
+      0.39,
+      0.41,
+      0.4,
+      0.38,
+      0.39,
+      0.39,
+      0.35,
+      0.36,
+      0.42,
+      0.44,
+      0.4,
+      0.33
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.21,
+      0.2,
+      0.22,
+      0.24,
+      0.2,
+      0.21,
+      0.22,
+      0.25,
+      0.23,
+      0.23,
+      0.23,
+      0.3,
+      0.24,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Percentage of adults that were physically inactive in the United States from 2017-2020, by state",
+   "short": "Percentage of physically inactive U.S. adults by state 2017-2020",
+   "unit": "",
+   "description": "This statistic represents the percentage of adults in the United States that have done no physical activity or exercise within the preceding 30 days, from 2017 to 2020. During this time, Mississippi had the highest rate of physical inactivity among U.S. states with 33.2 percent of adults reporting no physical activity or exercise besides their job. The state of Colorado had the lowest rates of physical inactivity at this time.",
+   "note": "United States; 2017-2020; 18 years and older",
+   "source": "CDC (BRFSS) Percentage of adults",
+   "kind": "categorical",
+   "categories": [
+    "Puerto Rico",
+    "Mississippi",
+    "Kentucky",
+    "Arkansas",
+    "Louisiana",
+    "Alabama",
+    "Oklahoma",
+    "West Virginia",
+    "Guam",
+    "Tennessee",
+    "Indiana",
+    "Missouri",
+    "South Carolina",
+    "Texas",
+    "Georgia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.494,
+      0.332,
+      0.325,
+      0.311,
+      0.308,
+      0.307,
+      0.305,
+      0.301,
+      0.295,
+      0.289,
+      0.285,
+      0.278,
+      0.276,
+      0.275,
+      0.274
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Leading outdoor activities in the United States in 2022, by number of participants (in millions)",
+   "short": "Most popular outdoor activities in the U.S. 2022",
+   "unit": "millions",
+   "description": "Hiking was the most popular outdoor activity amongst people in the United States in 2022, accounting for nearly 60 million participants. The second most popular outdoor sport in the North American country was running, jogging, and trail running with 56.9 million participants during the same year.",
+   "note": "United States; 6 years and older",
+   "source": "Outdoor Foundation; Outdoor Industry Association; SFIA; Sports Marketing Surveys USA Number of participants in millions",
+   "kind": "categorical",
+   "categories": [
+    "Hiking",
+    "Running, jogging and trail running",
+    "Road biking, mountain biking and BMX",
+    "Freshwater, saltwater and fly fishing",
+    "Car, backyard and RV camping"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      59.6,
+      56.9,
+      54.7,
+      54.5,
+      51.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Frequency of participation in outdoor activities in the United States from 2009 to 2017",
+   "short": "Frequency of participation in outdoor activities in the U.S. from 2009 to 2017",
+   "unit": "",
+   "description": "This statistic shows the frequency of participation in outdoor activities in the United States from 2009 to 2017. In 2017, 20 percent of outdoor activity participants went on four to 11 outings per year.",
+   "note": "United States; 2009 to 2017; 30,999 respondents; 6 years and older",
+   "source": "Outdoor Foundation",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017"
+   ],
+   "series": [
+    {
+     "name": "1-3 annual outings",
+     "values": [
+      0.1,
+      0.1,
+      0.06,
+      0.1,
+      0.1,
+      0.11,
+      0.12,
+      0.12,
+      0.11
+     ]
+    },
+    {
+     "name": "4-11 annual outings",
+     "values": [
+      0.19,
+      0.18,
+      0.13,
+      0.18,
+      0.18,
+      0.19,
+      0.21,
+      0.2,
+      0.2
+     ]
+    },
+    {
+     "name": "12-23 annual outings",
+     "values": [
+      0.13,
+      0.13,
+      0.13,
+      0.13,
+      0.13,
+      0.14,
+      0.15,
+      0.14,
+      0.14
+     ]
+    },
+    {
+     "name": "24-51 annual outings",
+     "values": [
+      0.2,
+      0.19,
+      0.2,
+      0.19,
+      0.19,
+      0.19,
+      0.18,
+      0.18,
+      0.19
+     ]
+    },
+    {
+     "name": "52-103 annual outings",
+     "values": [
+      0.16,
+      0.16,
+      0.19,
+      0.16,
+      0.16,
+      0.15,
+      0.14,
+      0.15,
+      0.15
+     ]
+    },
+    {
+     "name": "104-259 annual outings",
+     "values": [
+      0.15,
+      0.16,
+      0.18,
+      0.15,
+      0.15,
+      0.15,
+      0.14,
+      0.14,
+      0.14
+     ]
+    },
+    {
+     "name": "260+ annual outings",
+     "values": [
+      0.07,
+      0.08,
+      0.11,
+      0.09,
+      0.09,
+      0.08,
+      0.07,
+      0.07,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Share of participants in outdoor activities in the United States in 2023, by generation",
+   "short": "Outdoor participation rate in the U.S. 2023, by generation",
+   "unit": "",
+   "description": "According to a survey, about six out of ten U.S. Americans who were born from 1980 onwards participated in at least one outdoor activity in 2023. The outdoor participation rate was not as high in older generations that year, with 45.3 percent of individuals born between 1945 and 1964 from the U.S. participating in outdoor sports in 2023.",
+   "note": "United States; 2023; 18,000 respondents; 6 years and older;  including people who participated in the activity at least once in that year",
+   "source": "SFIA; Sports Marketing Surveys USA",
+   "kind": "categorical",
+   "categories": [
+    "Boomers (1945-1964)",
+    "Gen X (1965-1979)",
+    "Millenials (1980-1999)",
+    "Gen Z (2000-...)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.453,
+      0.542,
+      0.613,
+      0.616
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Participation rates in outdoor activities within ethnic groups in the United States from 2010 to 2021",
+   "short": "Outdoor participation in the U.S. 2010-2021, by ethnicity",
+   "unit": "",
+   "description": "Around 58 percent of Asian Americans surveyed in 2021 reported having participated in some type of outdoor activities. Since 2016, this ethnic group has registered the highest outdoor participation rates in the United States.",
+   "note": "United States; 18,000*; 6 years and older; including people who participated in such activities at least once in each given year; *Number of respondents in 2021. Figures for previous years were retrieved from earlier reports. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "Asian/Pacific Islander",
+     "values": [
+      0.5,
+      0.54,
+      0.53,
+      0.53,
+      0.53,
+      0.53,
+      0.51,
+      0.51,
+      0.67,
+      0.62,
+      0.59,
+      0.58
+     ]
+    },
+    {
+     "name": "Caucasian",
+     "values": [
+      0.58,
+      0.59,
+      0.58,
+      0.59,
+      0.56,
+      0.57,
+      0.5,
+      0.51,
+      0.53,
+      0.53,
+      0.55,
+      0.57
+     ]
+    },
+    {
+     "name": "Hispanic",
+     "values": [
+      0.48,
+      0.47,
+      0.5,
+      0.51,
+      0.5,
+      0.51,
+      0.48,
+      0.49,
+      0.44,
+      0.48,
+      0.48,
+      0.51
+     ]
+    },
+    {
+     "name": "African American",
+     "values": [
+      0.39,
+      0.35,
+      0.44,
+      0.41,
+      0.39,
+      0.39,
+      0.33,
+      0.34,
+      0.37,
+      0.4,
+      0.38,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Distribution of participants in outdoor activities in the United States in 2021, by household income (in U.S. dollars)",
+   "short": "Outdoor participation in the U.S. 2021, by household income",
+   "unit": "U.S. dollars",
+   "description": "Around one-third of outdoor participants surveyed in the United States in 2021 reported having a household income of at least 100,000 U.S. dollars per year. Asian Americans constituted the ethnic group with the highest outdoor participation in that year.",
+   "note": "United States; 2021; 18,000 respondents; 6 years and older; including people who participated in such activities at least once in that year",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "categorical",
+   "categories": [
+    "<25,000",
+    "25,000-49,999",
+    "50,000-74,999",
+    "75,000-99,999",
+    ">100,000"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.149,
+      0.204,
+      0.184,
+      0.141,
+      0.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Distribution of participants in outdoor activities in the United States in 2021, by level of education",
+   "short": "Outdoor participation in the U.S. 2021, by education",
+   "unit": "",
+   "description": "Around six out of ten U.S. participants in outdoor activities surveyed in 2021 had completed at least one year of college. In that same year, 16.7 percent of respondents reported being high-school graduates.",
+   "note": "United States; 2021; 18,000 respondents; 6 years and older; including people who participated in such activities at least once in each given year",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "categorical",
+   "categories": [
+    "8th grade or less",
+    "1-3 high-school years",
+    "High-school grad",
+    "1-3 college years",
+    "College grad",
+    "Post-grad"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.16,
+      0.074,
+      0.167,
+      0.198,
+      0.259,
+      0.142
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of people walking for fitness in the United States from 2010 to 2023 (in millions)",
+   "short": "Popularity of walking for fitness in the U.S. 2010-2023",
+   "unit": "millions",
+   "description": "The number of people who walked for fitness in the United States decreased for the second consecutive year in 2023, with the figure reportedly standing at 114.04 million that year. The year with the highest participation in this activity was 2013, at 117.4 million.",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      112.08,
+      112.72,
+      114.03,
+      117.35,
+      112.58,
+      109.83,
+      107.9,
+      110.81,
+      111,
+      111.44,
+      114.04,
+      115.81,
+      114.76,
+      114.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of running and jogging participants in the United States from 2010 to 2023 (in millions)",
+   "short": "Running and jogging participation in the U.S. 2010-2023",
+   "unit": "millions",
+   "description": "Around 48 million people in the United States went running or jogging at least once in 2023. Although this figure was higher than what was reported in the previous year, the number of individuals who were running or jogging in the United States was still marginally lower in 2023 than in 2019 and 2020.",
+   "note": "United States; 2010 to 2023; 18,000*; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      46.65,
+      50.06,
+      51.45,
+      54.19,
+      51.13,
+      48.5,
+      47.38,
+      50.77,
+      49.46,
+      50.05,
+      50.65,
+      48.98,
+      47.82,
+      48.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Number of bicycling participants in the United States from 2010 to 2022 (in millions)",
+   "short": "Bicycling participation in the U.S. 2010-2022",
+   "unit": "millions",
+   "description": "The number of people who rode bikes in the United States in 2022 reached 54.7 million, including those who took part in the activity at least once per year. This figure shows a slight increase compared to the previous year's total of 51.4 million.",
+   "note": "United States; including people who participated in the activity at least once in each given year",
+   "source": "Outdoor Foundation; Outdoor Industry Association; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      42.4,
+      43,
+      42.3,
+      46.6,
+      44,
+      43.1,
+      45.8,
+      47.5,
+      47.9,
+      48.9,
+      52.7,
+      51.4,
+      54.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of users of weight or resistance machines in the United States from 2010 to 2023 (in millions)",
+   "short": "Users of weight or resistance machines in the U.S. 2010-2023",
+   "unit": "millions",
+   "description": "In 2023, the annual number of users of weight or resistance machines in the United States continued a downward trend which began in 2018. In 2023, annual users of weight machines in the U.S. amounted to 29.43 million, which was about 19 percent lower than the figure reported in 2018.",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      39.19,
+      39.55,
+      39,
+      36.27,
+      35.84,
+      35.31,
+      35.77,
+      36.29,
+      36.37,
+      36.18,
+      30.65,
+      30.58,
+      30.01,
+      29.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of swimming participants in the United States from 2011 to 2023 (in millions)",
+   "short": "Swimming participation in the U.S. 2011-2023",
+   "unit": "millions",
+   "description": "More than 31 million people in the United States went swimming at least once in 2023. The majority of them did so for fitness purposes, with approximately 28.17 individuals indicating that they swam with this motivation in mind. Meanwhile, around 3.33 million U.S. Americans swam on a team that year.",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "For fitness",
+     "values": [
+      21.52,
+      23.22,
+      26.35,
+      25.3,
+      26.32,
+      26.6,
+      27.14,
+      27.58,
+      28.22,
+      25.67,
+      25.62,
+      26.27,
+      28.17
+     ]
+    },
+    {
+     "name": "On a team",
+     "values": [
+      2.36,
+      2.5,
+      2.64,
+      2.71,
+      2.89,
+      3.37,
+      3.01,
+      3.05,
+      2.82,
+      2.62,
+      2.82,
+      2.9,
+      3.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of yoga participants in the United States from 2010 to 2023 (in millions)",
+   "short": "Yoga participation in the U.S. 2010-2023",
+   "unit": "millions",
+   "description": "In 2023, the number of people doing yoga in the United States continued a downward trend which began in the previous year. In 2022, around 34 million U.S. Americans reported having done yoga at least once in that year. By 2023, that number had declined to roughly 33.64 million, denoting a 1.8 percent decrease in yoga participants in the North American country between 2022 and 2023.",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      21,
+      22.11,
+      23.25,
+      24.31,
+      25.26,
+      25.29,
+      26.27,
+      27.35,
+      28.75,
+      30.46,
+      32.81,
+      34.35,
+      34.25,
+      33.64
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Number of participants in calisthenics in the United States from 2006 to 2017 (in millions)*",
+   "short": "Participants in calisthenics in the U.S. from 2006 to 2017",
+   "unit": "",
+   "description": "This statistic shows the number of participants in calisthenics in the United States from 2006 to 2017. In 2017, the number of participants (aged six years and above) in calisthenics amounted to approximately 24.45 million.",
+   "note": "United States; 2006 to 2017; 30,999 respondents; 6 years and older; * A weighting technique was used to balance the data to reflect the total U.S. population ages six and above. A participant is defined as an individual who took part in the [...] Read more",
+   "source": "Outdoor Foundation",
+   "kind": "categorical",
+   "categories": [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013**",
+    "2014***",
+    "2015***",
+    "2016***",
+    "2017***"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.12,
+      7.56,
+      7.94,
+      9.11,
+      9.09,
+      8.49,
+      10.23,
+      10.67,
+      22.39,
+      22.15,
+      25.11,
+      24.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Number of skateboarding participants in the United States from 2010 to 2023 (in millions)",
+   "short": "Skateboarding participation in the U.S. 2010-2023",
+   "unit": "millions",
+   "description": "The number of individuals from the United States who went skateboarding dipped slightly in 2023, after reaching a peak of just over nine million in the previous year. In 2023, there were 8.92 million individuals who went skateboarding at least once during the year, denoting a decrease of",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.08,
+      6.32,
+      6.23,
+      6.35,
+      6.58,
+      6.44,
+      6.44,
+      6.38,
+      6.5,
+      6.61,
+      8.87,
+      8.75,
+      9.02,
+      8.92
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Number of members in health and fitness clubs worldwide from 2009 to 2019 (in millions)",
+   "short": "Total number of members of health/fitness clubs worldwide 2009-2019",
+   "unit": "millions",
+   "description": "This graph depicts the total number of members in health and fitness clubs worldwide from 2009 to 2019. In 2019, about 184.61 million people were members of a health/fitness club worldwide.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      119.53,
+      128.77,
+      129.4,
+      131.74,
+      138.75,
+      144.68,
+      151.47,
+      162.1,
+      174.05,
+      184.61
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Number of members in health and fitness clubs worldwide from 2009 to 2019, by region (in millions)",
+   "short": "Total number of members of health/fitness clubs worldwide 2009-2019, by region",
+   "unit": "millions",
+   "description": "This graph depicts the total number of members in health and fitness clubs worldwide by region from 2009 to 2019. In Europe, an estimated 64.76 million people were members of health and fitness clubs in 2019.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      53.2,
+      58.09,
+      59.55,
+      55.9,
+      58.6,
+      59.75,
+      60.86,
+      62.87,
+      66.48,
+      70.36
+     ]
+    },
+    {
+     "name": "Europe",
+     "values": [
+      42.56,
+      44.45,
+      43.45,
+      41.95,
+      44.87,
+      47.67,
+      52.44,
+      56.87,
+      59.98,
+      64.76
+     ]
+    },
+    {
+     "name": "Australia",
+     "values": [
+      3.03,
+      3.07,
+      3.07
+     ]
+    },
+    {
+     "name": "Asia",
+     "values": [
+      12.97,
+      13.98,
+      14.14
+     ]
+    },
+    {
+     "name": "Asia-Pacific",
+     "values": [
+      17.03,
+      17.4,
+      17.36,
+      17.36,
+      17.36,
+      22.48,
+      22.48
+     ]
+    },
+    {
+     "name": "South America",
+     "values": [
+      6.38,
+      7.17,
+      7.17
+     ]
+    },
+    {
+     "name": "Latin America",
+     "values": [
+      14.31,
+      15.26,
+      15.72,
+      15.72,
+      19.92,
+      19.92,
+      20.81
+     ]
+    },
+    {
+     "name": "Africa",
+     "values": [
+      1.38,
+      2.01,
+      2.01
+     ]
+    },
+    {
+     "name": "Africa & Middle East",
+     "values": [
+      2.55,
+      2.63,
+      4.18,
+      5.09,
+      5.09,
+      5.18
+     ]
+    },
+    {
+     "name": "Middle East & North Africa",
+     "values": [
+      3.92
+     ]
+    },
+    {
+     "name": "Southern Africa",
+     "values": [
+      2.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Number of members at health & fitness clubs in 2019, by country (in millions)",
+   "short": "Countries with the most health/fitness club memberships 2019",
+   "unit": "millions",
+   "description": "This statistic depicts the leading markets of the health club industry worldwide in regards to club membership in 2019. In that year, there were about 64.19 million health club members in the United States.",
+   "note": "Worldwide; 2019",
+   "source": "IHRSA Club members in millions",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Germany",
+    "United Kingdom",
+    "Brazil",
+    "France",
+    "Canada",
+    "Italy",
+    "Spain",
+    "China (Mainland - top 10 cities)"
+   ],
+   "series": [
+    {
+     "name": "2019",
+     "values": [
+      64.19,
+      11.66,
+      10.39,
+      10.33,
+      6.19,
+      6.18,
+      5.51,
+      5.51,
+      4.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Leading health club companies in the United States in 2021, by membership (in thousands)",
+   "short": "Health & fitness club companies by membership in the U.S. 2021",
+   "unit": "thousands",
+   "description": "In 2021, approximately 15.2 million people were members at Planet Fitness. Meanwhile, Orangetheory Fitness International had just under 800 thousand members in that year.",
+   "note": "Worldwide; 2021",
+   "source": "Club Industry Number of members in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Planet Fitness",
+    "Powerhouse Gyms",
+    "Orangetheory Fitness",
+    "Life Time",
+    "Xponential Fitness",
+    "Rachas Inc. dba Chuze Fitness",
+    "Mountainside Fitness",
+    "The Bay Club",
+    "Bailey's Gym",
+    "Active Wellness"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15200,
+      1800,
+      797.35,
+      649.37,
+      450,
+      290.93,
+      113,
+      90,
+      67,
+      44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Number of members in health and fitness clubs in North America from 2009 to 2019 (in millions)",
+   "short": "Total number of members of health/fitness clubs in North America 2009-2019",
+   "unit": "millions",
+   "description": "This graph depicts the total number of members in health and fitness clubs in North America from 2009 to 2019. In 2019, about 70.36 million people were members of a health/fitness club in North America.",
+   "note": "North America; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      53.2,
+      58.09,
+      59.55,
+      55.9,
+      58.6,
+      59.75,
+      60.86,
+      62.87,
+      66.48,
+      70.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Number of memberships at fitness centers / health clubs in the United States from 2000 to 2019 (in millions)",
+   "short": "U.S. fitness center / health club memberships 2000-2019",
+   "unit": "millions",
+   "description": "The number of members of fitness centers and health clubs within the United States has experienced a near continual increase between 2000 and 2019, with the exception of a slight decline during 2008, 2009 and 2012, possibly associated with the global financial crisis that took place during this period which resulted in a similar reduction in the Gross Domestic Product (GDP) in the United States over the first two of these periods. In 2019, there were found to be over 64 million members of [...]",
+   "note": "United States; 2000 to 2019",
+   "source": "Baird; IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      32.8,
+      33.8,
+      36.3,
+      39.4,
+      41.3,
+      41.3,
+      42.7,
+      46.7,
+      45.6,
+      45.3,
+      50.2,
+      51.4,
+      50.2,
+      52.9,
+      54.1,
+      55.3,
+      57.3,
+      60.9,
+      62.5,
+      64.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Number of high schools offering leading sports programs for boys in the United States from 2010/2011 to 2021/2022",
+   "short": "Main high school sports programs for boys in U.S. 2010-2022",
+   "unit": "",
+   "description": "During the school year 2021/2022, over 18 thousand schools in the United States had basketball programs for boys. This had been the most popular athletics program offered for male high-schoolers in the North American country for years.",
+   "note": "United States; 2010 to 2022*; *Data for 2019/2020 and 2020/2021 was not available due to COVID-19. Figures prior to 2021/2022 were retrieved from previous reports. Read more",
+   "source": "NFHS",
+   "kind": "categorical",
+   "categories": [
+    "2010/2011",
+    "2011/2012",
+    "2012/2013",
+    "2013/2014",
+    "2014/2015",
+    "2015/2016",
+    "2016/2017",
+    "2017/2018",
+    "2018/2019",
+    "2021/2022"
+   ],
+   "series": [
+    {
+     "name": "Basketball",
+     "values": [
+      18150,
+      18099,
+      17856,
+      18126,
+      18072,
+      18288,
+      18214,
+      18510,
+      18617,
+      18428
+     ]
+    },
+    {
+     "name": "Track and field - outdoor",
+     "values": [
+      15954,
+      16218,
+      16001,
+      16271,
+      16358,
+      16547,
+      16699,
+      16990,
+      17052,
+      17070
+     ]
+    },
+    {
+     "name": "Baseball",
+     "values": [
+      15863,
+      15838,
+      15632,
+      15789,
+      15899,
+      15956,
+      15979,
+      16196,
+      16170,
+      15925
+     ]
+    },
+    {
+     "name": "Cross country",
+     "values": [
+      14097,
+      14155,
+      14148,
+      14473,
+      14635,
+      14920,
+      15087,
+      15463,
+      15632,
+      15710
+     ]
+    },
+    {
+     "name": "11-player football",
+     "values": [
+      14279,
+      14241,
+      14048,
+      14262,
+      14154,
+      14047,
+      14099,
+      14079,
+      14247,
+      13733
+     ]
+    },
+    {
+     "name": "Golf",
+     "values": [
+      13681,
+      13624,
+      13415,
+      13493,
+      13528,
+      13503,
+      13223,
+      13524,
+      13590,
+      13631
+     ]
+    },
+    {
+     "name": "Soccer",
+     "values": [
+      11503,
+      11600,
+      11626,
+      11718,
+      11838,
+      12054,
+      12188,
+      12393,
+      12552,
+      12539
+     ]
+    },
+    {
+     "name": "Wrestling",
+     "values": [
+      10407,
+      10407,
+      10488,
+      10668,
+      10597,
+      10685,
+      10629,
+      10775,
+      10843,
+      10797
+     ]
+    },
+    {
+     "name": "Tennis",
+     "values": [
+      9839,
+      9841,
+      9730,
+      9849,
+      9725,
+      9723,
+      9725,
+      9793,
+      9809,
+      9632
+     ]
+    },
+    {
+     "name": "Swimming and diving",
+     "values": [
+      6899,
+      7001,
+      7001,
+      7101,
+      7156,
+      7220,
+      7342,
+      7595,
+      7704,
+      7831
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Number of boys who participated in high school sports in the United States from 1992/1993 to 2021/2022",
+   "short": "Male participation in U.S. high school sports 1992-2022",
+   "unit": "",
+   "description": "The participation of boys in high school sports decline due to the coronavirus (COVID-19) pandemic, amounting to less than 4.38 million in 2021/2022. This figure is similar to the one recorded in 2007/2008.",
+   "note": "United States",
+   "source": "NFHS",
+   "kind": "categorical",
+   "categories": [
+    "1992/93",
+    "1993/94",
+    "1994/95",
+    "1995/96",
+    "1996/97",
+    "1997/98",
+    "1998/99",
+    "1999/00",
+    "2000/01",
+    "2001/02",
+    "2002/03",
+    "2003/04",
+    "2004/05",
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2021/22"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3416389,
+      3472967,
+      3536359,
+      3634052,
+      3706225,
+      3763120,
+      3832352,
+      3861749,
+      3921069,
+      3960517,
+      3988738,
+      4038253,
+      4110319,
+      4206549,
+      4321103,
+      4372115,
+      4422662,
+      4455740,
+      4494406,
+      4484987,
+      4490854,
+      4527994,
+      4519312,
+      4541959,
+      4563238,
+      4565580,
+      4534758,
+      4376582
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Leading high school sports programs for boys in the United States from 2010/2011 to 2021/2022, by number of participants (in 1,000s)",
+   "short": "Most popular high school sports for boys in the U.S. 2010-2022",
+   "unit": "1,000s",
+   "description": "Traditional football is by far the most popular sport among male high schoolers in the United States. In 2021/2022, around 974 thousand boys played 11-player football. The second most popular high school sport for boys in the North American country was outdoor track and field, with 569.3 thousand players in that last period.",
+   "note": "United States; 2010 to 2022*; *Data for 2019/2020 and 2020/2021 was not available due to COVID-19. Figures prior to 2021/2022 were retrieved from previous reports. Numbers were rounded. Read more",
+   "source": "NFHS",
+   "kind": "categorical",
+   "categories": [
+    "2010/2011",
+    "2011/2012",
+    "2012/2013",
+    "2013/2014",
+    "2014/2015",
+    "2015/2016",
+    "2016/2017",
+    "2017/2018",
+    "2018/2019",
+    "2021/2022"
+   ],
+   "series": [
+    {
+     "name": "11-player football",
+     "values": [
+      1108.4,
+      1096,
+      1086.6,
+      1093.2,
+      1083.6,
+      1083.3,
+      1057.4,
+      1036.8,
+      1006,
+      973.8
+     ]
+    },
+    {
+     "name": "Track and field - outdoor",
+     "values": [
+      579.3,
+      575.6,
+      580.7,
+      580.3,
+      578.6,
+      591.1,
+      600.1,
+      600.1,
+      605.4,
+      569.3
+     ]
+    },
+    {
+     "name": "Basketball",
+     "values": [
+      545.8,
+      535.3,
+      538.7,
+      541.1,
+      541.5,
+      546.4,
+      550.3,
+      551.4,
+      540.8,
+      521.6
+     ]
+    },
+    {
+     "name": "Baseball",
+     "values": [
+      471,
+      474.2,
+      474.8,
+      482.6,
+      486.6,
+      488.8,
+      491.8,
+      487.1,
+      482.7,
+      481
+     ]
+    },
+    {
+     "name": "Soccer",
+     "values": [
+      398.4,
+      411.8,
+      411,
+      417.4,
+      432.6,
+      440.3,
+      450.2,
+      456.4,
+      459.1,
+      436.5
+     ]
+    },
+    {
+     "name": "Wrestling",
+     "values": [
+      273.7,
+      272.1,
+      270.2,
+      269.5,
+      258.2,
+      257.7,
+      266.3,
+      245.6,
+      247.4,
+      231.9
+     ]
+    },
+    {
+     "name": "Cross country",
+     "values": [
+      246.9,
+      248.5,
+      249.2,
+      252.5,
+      250,
+      250.6,
+      244.8,
+      270.1,
+      269.3,
+      231.4
+     ]
+    },
+    {
+     "name": "Golf",
+     "values": [
+      156.9,
+      152.7,
+      152.6,
+      152.6,
+      148.8,
+      146.7,
+      141.5,
+      144,
+      143.2,
+      148.6
+     ]
+    },
+    {
+     "name": "Tennis",
+     "values": [
+      161.4,
+      159.8,
+      157.2,
+      160.5,
+      157.2,
+      157.2,
+      158.2,
+      158.2,
+      159.3,
+      145.9
+     ]
+    },
+    {
+     "name": "Swimming and diving",
+     "values": [
+      133.9,
+      133.8,
+      138.2,
+      138.4,
+      137.1,
+      133.5,
+      138.4,
+      138.9,
+      136.6,
+      123.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Number of high schools offering leading sports programs for girls in the United States from 2010/2011 to 2021/2022",
+   "short": "Main high school sports programs for girls in U.S. 2010-2022",
+   "unit": "",
+   "description": "During the school year 2021/2022, over 17 thousand schools in the United States had basketball and track-and-field programs for girls. These had been the most popular athletics programs offered for female high-schoolers in the North American country for years.",
+   "note": "United States; 2010 to 2022*; *Data for 2019/2020 and 2020/2021 was not available due to COVID-19. Figures prior to 2021/2022 were retrieved from previous reports. Read more",
+   "source": "NFHS",
+   "kind": "categorical",
+   "categories": [
+    "2010/2011",
+    "2011/2012",
+    "2012/2013",
+    "2013/2014",
+    "2014/2015",
+    "2015/2016",
+    "2016/2017",
+    "2017/2018",
+    "2018/2019",
+    "2021/2022"
+   ],
+   "series": [
+    {
+     "name": "Basketball",
+     "values": [
+      17767,
+      17768,
+      17493,
+      17754,
+      17653,
+      17890,
+      17934,
+      18171,
+      18210,
+      17901
+     ]
+    },
+    {
+     "name": "Track and field - outdoor",
+     "values": [
+      16030,
+      16143,
+      15962,
+      16217,
+      16309,
+      16508,
+      16658,
+      16951,
+      17012,
+      17028
+     ]
+    },
+    {
+     "name": "Volleyball",
+     "values": [
+      15479,
+      15569,
+      15565,
+      15672,
+      15534,
+      15755,
+      15992,
+      16434,
+      16572,
+      16532
+     ]
+    },
+    {
+     "name": "Softball - fast pitch",
+     "values": [
+      15338,
+      14142,
+      15067,
+      15225,
+      15115,
+      15304,
+      15440,
+      15544,
+      15877,
+      15454
+     ]
+    },
+    {
+     "name": "Cross country",
+     "values": [
+      13839,
+      13970,
+      13918,
+      14267,
+      14287,
+      14698,
+      14880,
+      15216,
+      15435,
+      15448
+     ]
+    },
+    {
+     "name": "Soccer",
+     "values": [
+      11047,
+      11127,
+      11351,
+      11354,
+      11502,
+      11676,
+      11823,
+      12007,
+      12107,
+      12071
+     ]
+    },
+    {
+     "name": "Golf",
+     "values": [
+      9609,
+      9667,
+      9568,
+      9815,
+      9824,
+      10046,
+      10076,
+      10289,
+      10402,
+      10580
+     ]
+    },
+    {
+     "name": "Tennis",
+     "values": [
+      10181,
+      10058,
+      10005,
+      10117,
+      10099,
+      10122,
+      10121,
+      10289,
+      10290,
+      9987
+     ]
+    },
+    {
+     "name": "Swimming and diving",
+     "values": [
+      7164,
+      7221,
+      7249,
+      7429,
+      7526,
+      7559,
+      7721,
+      7961,
+      8007,
+      8079
+     ]
+    },
+    {
+     "name": "Competitive spirit squads",
+     "values": [
+      4266,
+      4916,
+      4847,
+      4919,
+      5358,
+      5432,
+      6541,
+      6877,
+      7214,
+      7236
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Number of girls who participated in high school sports in the United States from 1992/1993 to 2021/2022",
+   "short": "Female participation in U.S. high school sports 1992-2022",
+   "unit": "",
+   "description": "The number of girls involved in high school sports in the United States declined to 3.24 million in 2021/2022. In that same period, almost 4.4 million boys also participated U.S. high school athletics.",
+   "note": "United States",
+   "source": "NFHS",
+   "kind": "categorical",
+   "categories": [
+    "1992/93",
+    "1993/94",
+    "1994/95",
+    "1995/96",
+    "1996/97",
+    "1997/98",
+    "1998/99",
+    "1999/00",
+    "2000/01",
+    "2001/02",
+    "2002/03",
+    "2003/04",
+    "2004/05",
+    "2005/06",
+    "2006/07",
+    "2007/08",
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2021/22"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1997489,
+      2130315,
+      2240461,
+      2367936,
+      2474043,
+      2570333,
+      2652726,
+      2675874,
+      2784154,
+      2806998,
+      2856358,
+      2865299,
+      2908390,
+      2953355,
+      3021807,
+      3057266,
+      3114091,
+      3172637,
+      3173549,
+      3207533,
+      3222723,
+      3267664,
+      3287735,
+      3324306,
+      3400297,
+      3415306,
+      3402733,
+      3241472
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Leading high school sports programs for girls in the United States from 2010/2011 to 2021/2022, by number of participants (in 1,000s)",
+   "short": "Most popular high school sports for girls in the U.S. 2010-2022",
+   "unit": "1,000s",
+   "description": "Track and field has been the most popular high school sport for girls in the United States for several years. In the school year 2021/2022, around 456.7 thousand female high schoolers across the North American country were engaged in this sporting activity.",
+   "note": "United States; 2010 to 2022*; *Data for 2019/2020 and 2020/2021 was not available due to COVID-19. Figures prior to 2021/2022 were retrieved from previous reports. Numbers were rounded. Read more",
+   "source": "NFHS",
+   "kind": "categorical",
+   "categories": [
+    "2010/2011",
+    "2011/2012",
+    "2012/2013",
+    "2013/2014",
+    "2014/2015",
+    "2015/2016",
+    "2016/2017",
+    "2017/2018",
+    "2018/2019",
+    "2021/2022"
+   ],
+   "series": [
+    {
+     "name": "Track and field - outdoor",
+     "values": [
+      475.3,
+      468.7,
+      472.9,
+      479,
+      478.7,
+      486,
+      494.5,
+      488.6,
+      488.3,
+      456.7
+     ]
+    },
+    {
+     "name": "Volleyball",
+     "values": [
+      409.3,
+      418.9,
+      420.2,
+      429.6,
+      432.2,
+      436.3,
+      444.8,
+      446.6,
+      452.8,
+      454.2
+     ]
+    },
+    {
+     "name": "Soccer",
+     "values": [
+      361.6,
+      371,
+      371.5,
+      374.6,
+      375.7,
+      381.5,
+      388.3,
+      390.5,
+      394.1,
+      374.8
+     ]
+    },
+    {
+     "name": "Basketball",
+     "values": [
+      438.9,
+      435.9,
+      433.1,
+      433.3,
+      429.5,
+      429.4,
+      430.4,
+      412.4,
+      399.1,
+      370.5
+     ]
+    },
+    {
+     "name": "Softball - fast pitch",
+     "values": [
+      373.5,
+      367,
+      362.5,
+      364.3,
+      364.1,
+      366.7,
+      367.4,
+      367.9,
+      362,
+      340.9
+     ]
+    },
+    {
+     "name": "Cross country",
+     "values": [
+      204.7,
+      212.3,
+      214.4,
+      218.1,
+      221.6,
+      222.5,
+      226,
+      223.5,
+      219.3,
+      191.3
+     ]
+    },
+    {
+     "name": "Tennis",
+     "values": [
+      182.1,
+      180.9,
+      181.1,
+      184.1,
+      182.9,
+      183.8,
+      187.5,
+      190.8,
+      189.4,
+      176.2
+     ]
+    },
+    {
+     "name": "Swimming and diving",
+     "values": [
+      160.9,
+      160.5,
+      164,
+      165.8,
+      166.8,
+      166.7,
+      170.8,
+      175.6,
+      173.1,
+      149.8
+     ]
+    },
+    {
+     "name": "Competitive spirit squads",
+     "values": [
+      96.7,
+      108.3,
+      116.8,
+      120.6,
+      125.8,
+      125.5,
+      144.2,
+      162.7,
+      161.4,
+      140.6
+     ]
+    },
+    {
+     "name": "Lacrosse",
+     "values": [
+      74.9,
+      75,
+      77.3,
+      82,
+      85,
+      88.1,
+      93.5,
+      96.9,
+      99.8,
+      96.8
+     ]
+    }
+   ]
+  }
+ ]
+}

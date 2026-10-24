@@ -1,0 +1,1144 @@
+{
+ "studyId": "16946",
+ "study": "content marketing",
+ "file": "research/statista/Fitness Marketing/study_id16946_content-marketing.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Content marketing revenue worldwide from 2018 to 2026 (in billion U.S. dollars)",
+   "short": "Content marketing revenue worldwide 2018-2026",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, global content marketing industry revenue was estimated at roughly 63 billion U.S. dollars. The source projected that it would increase to 72 billion in 2023 and that it would continue growing over the further years to reach 107 billion in 2026.",
+   "note": "Worldwide; 2018; * Forecast. An exponential development of the values was assumed to estimate the annual values between 2018 and 2026, which were provided by the source. Read more",
+   "source": "Research Dive; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019*",
+    "2020*",
+    "2021*",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      36.9,
+      42.1,
+      48.2,
+      55.1,
+      63,
+      72,
+      82.3,
+      94,
+      107.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Share of organizations with a content marketing strategy in place worldwide from 2019 to 2022",
+   "short": "Companies with a content marketing strategy worldwide 2019-2022",
+   "unit": "",
+   "description": "During a survey carried out in 2022 among marketers from across the globe, 90 percent of respondents indicated that content marketing was part of their overall marketing strategies. The share increased by 20 percentage points compared to the value reported in 2019.",
+   "note": "Worldwide; 2019 to 2022; 1,500 respondents",
+   "source": "Semrush",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Yes",
+     "values": [
+      0.77,
+      0.84,
+      0.97,
+      0.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Share of B2B marketers with a documented content marketing strategy worldwide from 2017 to 2022",
+   "short": "Use of content marketing among B2B marketers worldwide 2017-2022",
+   "unit": "",
+   "description": "During a July 2022 survey among marketers worldwide, it was found that 40 percent stated that they already had a documented content marketing strategy. This figure remained the same compared to the previous year, but three percent lower in comparison to 2020.",
+   "note": "Worldwide; 2017 to 2022; 925 respondents; among B2B marketers",
+   "source": "Content Marketing Institute; MarketingProfs",
+   "kind": "timeseries",
+   "categories": [
+    "July 2017",
+    "July 2018",
+    "July 2019",
+    "July 2020",
+    "July 2021",
+    "July 2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.37,
+      0.39,
+      0.41,
+      0.43,
+      0.4,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Channels used for marketing content promotion worldwide in 2022",
+   "short": "Channels used for marketing content promotion worldwide 2022",
+   "unit": "",
+   "description": "During a 2022 survey, 73 percent of responding marketers from across the globe stated that they used social media (organic) to promote content; email marketing and paid ads on social media followed, named by 53 and 51 percent of respondents, respectively.",
+   "note": "Worldwide; 2022; among marketing agencies, B2B and B2C companies, non-profits, and other organizations",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Social media (organic)",
+    "Email marketing",
+    "Social media (paid ads)",
+    "Organic search",
+    "Sponsorships (e.g., events, webinars, podcasts)",
+    "PR/media outreach",
+    "Influencer marketing",
+    "PPC/paid advertising",
+    "Native advertising/sponsored content",
+    "Guest posts",
+    "Community platforms",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.73,
+      0.53,
+      0.51,
+      0.33,
+      0.29,
+      0.28,
+      0.25,
+      0.23,
+      0.11,
+      0.11,
+      0.1,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Technologies used to leverage content marketing efforts according to marketing professionals worldwide in 2022",
+   "short": "Content marketing technologies used worldwide 2022",
+   "unit": "",
+   "description": "During a survey conducted in 2022, 58 percent of responding marketing professionals said they used social media posting tools to leverage their content marketing efforts, while 30 percent said they utilized a content management system (CMS) for the same purpose.",
+   "note": "Worldwide; 2022; 1,700 respondents; marketers and business owners from 34 countries, with the majority working from the U.S., UK, Canada and Australia",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Social media posting tools",
+    "Website analytics tools",
+    "Email marketing software",
+    "SEO tools",
+    "Grammar checker",
+    "Content management system (CMS)",
+    "Content writing and editing tools",
+    "Visual content creation tools",
+    "Team collaboration tools",
+    "AI content tools",
+    "Editorial calendar",
+    "Competitor analysis tools",
+    "Marketing automation platform",
+    "Localization software"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.49,
+      0.48,
+      0.43,
+      0.33,
+      0.3,
+      0.25,
+      0.22,
+      0.2,
+      0.17,
+      0.16,
+      0.15,
+      0.14,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Most important content marketing areas for B2B marketers worldwide in 2022",
+   "short": "Leading areas of interest for B2B content marketers worldwide 2022",
+   "unit": "",
+   "description": "During a July 2021 survey among B2B marketers worldwide, 62 percent of respondents said changes to search engine optimization (SEO) and search algorithms were areas that would be most important between 2021 and 2022. Data management and analytics were cited as most important area by 50 percent of respondents, while 44 percent cited content marketing as a revenue center.",
+   "note": "Worldwide; July 2021; 810 respondents; among B2B marketers",
+   "source": "Content Marketing Institute; MarketingProfs Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Changes to SEO/search algorithms",
+    "Data management/analytics",
+    "Content marketing as a revenue center",
+    "Changes to social media algorithms",
+    "Data privacy/regulations",
+    "Voice/audio",
+    "Artificial intelligence",
+    "Content security",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.62,
+      0.5,
+      0.44,
+      0.42,
+      0.21,
+      0.21,
+      0.15,
+      0.09,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Monthly spending on content marketing according to industry professionals worldwide in 2022 (in U.S. dollars)",
+   "short": "Content marketing spending worldwide 2022",
+   "unit": "U.S. dollars",
+   "description": "During a global survey carried out in 2022, 27 percent of responding marketers said their company spent up to less than one thousand U.S. dollars each month on content marketing efforts. According to ten percent of surveyed industry professionals, their monthly content marketing budgets for 2022 ranged between ten thousand and 20 thousand U.S. dollars.",
+   "note": "Worldwide; 2022; 1,700 respondents; marketers and business owners from 34 countries, with the majority working from the U.S., UK, Canada and Australia",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Less than 1,000",
+    "3,000 to 5,000",
+    "1,000 to 3,000",
+    "5,000 to 10,000",
+    "10,000 to 20,000",
+    "Over 20,000"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.2,
+      0.19,
+      0.17,
+      0.1,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Expected year-over-year change to content marketing budget worldwide in 2023",
+   "short": "Change in content marketing budgets worldwide 2023",
+   "unit": "",
+   "description": "During a late 2022 survey carried out among professionals involved in content marketing, almost 50 percent of respondents stated that they expected their content budgets to increase over the next year; 26 percent expected them to stay the same, and 19 percent - to decrease.",
+   "note": "Worldwide; November 2022; 1,554 respondents; 84% of responding marketers were U.S.-based",
+   "source": "Parse.ly",
+   "kind": "categorical",
+   "categories": [
+    "Increase",
+    "Stay the same",
+    "Decrease",
+    "I don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.492,
+      0.262,
+      0.194,
+      0.051
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Share of B2B marketers planning changes to their content marketing budgets worldwide in 2024",
+   "short": "Change of B2B content marketing budgets worldwide 2024",
+   "unit": "",
+   "description": "During a July 2023 survey among B2B marketers worldwide, 43 percent of respondents stated that they were planning to increase their B2B content marketing spending in the following 12 months, out of which 13 percent planned to increase it by more than nine percent.",
+   "note": "Worldwide; July 2023; 1,080 respondents; among B2B marketers",
+   "source": "Content Marketing Institute; MarketingProfs",
+   "kind": "categorical",
+   "categories": [
+    "Increase 1% to 9%",
+    "Increase more than 9%",
+    "Stay the same",
+    "Decrease 1% to 9%",
+    "Decrease more than 9%",
+    "Unsure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.13,
+      0.42,
+      0.05,
+      0.01,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Leading content marketing areas of investment for B2B marketers worldwide in 2024",
+   "short": "Leading content marketing investment areas for B2B marketers worldwide 2024",
+   "unit": "",
+   "description": "During a July 2023 survey among B2B marketers worldwide, 69 percent of respondents projected they would invest in video content marketing in 2024. Events - digital and in-person - were cited as an area of investment by respectively 21 and 47 percent of respondents.",
+   "note": "July 2023; 1,080 respondents; among B2B marketers",
+   "source": "Content Marketing Institute; MarketingProfs Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Video",
+    "Thought leadership content",
+    "In-person events",
+    "Paid advertising",
+    "Social media management/community building",
+    "Webinars",
+    "Audio content",
+    "Digital events"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.69,
+      0.53,
+      0.47,
+      0.43,
+      0.33,
+      0.33,
+      0.25,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Leading goals of using content in marketing worldwide as of November 2022",
+   "short": "Goals of content marketing worldwide 2022",
+   "unit": "",
+   "description": "During a November 2022 survey carried out among professionals involved in content marketing, 41 percent stated that creating brand awareness was one of the goals they were pursuing with their content marketing activities. Building loyalty among existing customer was a target for 33 percent of respondents. An additional 38 percent of marketers were aiming to generate sales/revenue through that same marketing type.",
+   "note": "Worldwide; November 2022; 1,554 respondents; 84% of responding marketers were U.S.-based",
+   "source": "Parse.ly Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Create brand awareness",
+    "Generate demand/leads",
+    "Build credibility/trust",
+    "Generate sales/revenue",
+    "Build loyalty with existing customers",
+    "Support the launch of a new product",
+    "Educate audience",
+    "Build a subscriber audience",
+    "Nurture leads",
+    "Drive attendence to events"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.41,
+      0.38,
+      0.38,
+      0.38,
+      0.33,
+      0.3,
+      0.27,
+      0.26,
+      0.22,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Leading goals achieved with help of content marketing among B2C marketers in North America as of July 2022",
+   "short": "Goals achieved with use of B2C content marketing North America 2022",
+   "unit": "",
+   "description": "In a mid-2022 survey, B2C marketing professionals predominantly from North America were asked about what they thought were the main organizational goals they achieved owing to content marketing. According to 81 percent of respondents the use of content marketing helped their company create brand awareness, and an additional 77 percent said they were able to build credibility and/or trust as a result of content marketing efforts.",
+   "note": "Worldwide, North America; July 2022; 434 respondents; among B2C and B2B marketers primarily from North America",
+   "source": "Content Marketing Institute; MarketingProfs Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Create brand awareness",
+    "Build credibility/trust",
+    "Educate audience(s)",
+    "Build loyalty with existing clients/customers",
+    "Generate demand/leads",
+    "Nurture subscribers/audience/leads",
+    "Build a subscribed audience",
+    "Generate sales/revenue",
+    "Drive attendance to one or more in-person events",
+    "Support the launch of a new product",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.81,
+      0.77,
+      0.71,
+      0.63,
+      0.63,
+      0.51,
+      0.46,
+      0.42,
+      0.42,
+      0.38,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Leading goals achieved with help of content marketing among B2B marketers worldwide as of July 2023",
+   "short": "Organizational goals achieved with use of B2B content marketing worldwide 2023",
+   "unit": "",
+   "description": "During a July 2023 survey conducted among B2B marketers worldwide, 84 percent of respondents said the creation of brand awareness was a goal that their organization managed to achieve with the help of content marketing. Generating leads and demand was cited by 76 percent of respondents, while 50 percent mentioned the goal of growing loyalty with existing customers.",
+   "note": "Worldwide; July 2023; 1,080 respondents; among B2B content marketers",
+   "source": "Content Marketing Institute; MarketingProfs Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Create brand awareness",
+    "Generate demand/leads",
+    "Grow loyalty with existing clients/customers",
+    "Generate sales/revenue",
+    "Grow a subscribed audience",
+    "Reduce customer support costs"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.84,
+      0.76,
+      0.5,
+      0.58,
+      0.4,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Most commonly produced content marketing types worldwide in 2022",
+   "short": "Content types used for marketing worldwide 2022",
+   "unit": "",
+   "description": "During a survey conducted in 2022, 45 percent of responding marketing professionals stated that their most successfully performing type of content marketing was video. Short-form articles and success stories followed with 31 percent and 28 percent, respectively.",
+   "note": "Worldwide; 2022; 1,700 respondents; marketers and business owners from 34 countries, with the majority working from the U.S., UK, Canada and Australia",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Video",
+    "Short-form articles",
+    "Success stories",
+    "Long-form blog posts",
+    "Case studies",
+    "Webinars and online events",
+    "Gated content",
+    "Infographics",
+    "White Papers",
+    "Offline events",
+    "Product guides/manuals",
+    "Research reports",
+    "Data visualizations",
+    "Podcasts",
+    "Print and magazines"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.45,
+      0.31,
+      0.28,
+      0.24,
+      0.19,
+      0.18,
+      0.17,
+      0.17,
+      0.14,
+      0.12,
+      0.11,
+      0.11,
+      0.11,
+      0.11,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Types of content creation services outsourced by marketing professionals worldwide in 2022",
+   "short": "Types of marketing content services outsourced most often worldwide 2022",
+   "unit": "",
+   "description": "During a survey conducted in 2022, 47 percent of responding marketing professionals stated they outsourced the design of graphics. Video design was the second most-outsourced service, named by 43 percent of respondents. Copywriting scored third, with 37 percent of marketers outsourcing it as a content creation task.",
+   "note": "Worldwide; 2022; 1,700 respondents; among marketing agencies, B2B and B2C companies, non-profits, and other organizations",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Graphic design",
+    "Video design/animation",
+    "Copywriting",
+    "Editing/proofreading",
+    "SEO",
+    "Content marketing strategy",
+    "Analytics/audit",
+    "Localization",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.47,
+      0.43,
+      0.37,
+      0.31,
+      0.27,
+      0.25,
+      0.15,
+      0.15,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading tactics that help content marketers to boost their performance in search rankings worldwide in 2022",
+   "short": "Top tactics helping global content marketers boost position in search rankings 2022",
+   "unit": "",
+   "description": "During a survey conducted worldwide in 2022, 55 of responding marketing professionals stated that creating more content and posting more often was their leading tactic in content marketing to boost performance in search rankings. Another 53 percent said that improving the content's quality, making it more valuable, was a way to help their content get boosted and rank better.",
+   "note": "Worldwide; 2022; 1,700 respondents; among marketers and business owners from 34 countries",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Creating more content and posting more often",
+    "Improving the quality of our content, making it more valuable",
+    "Creating more research-driven content",
+    "Paying more attention to keyword research",
+    "Analyzing search intent for our content",
+    "Improving technical SEO on our website",
+    "Building topic clusters and content hubs",
+    "Link building and guest posting",
+    "Winning Featured Snippets",
+    "None"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.55,
+      0.53,
+      0.37,
+      0.36,
+      0.35,
+      0.3,
+      0.24,
+      0.21,
+      0.09,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Ways online content was used to drive revenues worldwide as of November 2022",
+   "short": "Ways online content is used to drive revenues worldwide 2022",
+   "unit": "",
+   "description": "During a November 2022 survey carried out among professionals involved in content marketing, 18 percent stated that they monetized their content by selling ad spaces within the content; 14 percent of respondents said they had created content paywalls and/or subscription models to generate revenue from the content their organizations created.",
+   "note": "Worldwide; November 2022; 1,554 respondents; 84% of responding marketers were U.S.-based",
+   "source": "Parse.ly Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Advertising placements",
+    "Selling content products",
+    "Drive traffic to products for sale",
+    "Content paywalls/subscriptions",
+    "Drive traffic to sales team",
+    "Sponsored content",
+    "Retain and expand existing customers",
+    "Donations",
+    "Affiliate sales"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.18,
+      0.17,
+      0.14,
+      0.14,
+      0.14,
+      0.11,
+      0.07,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Leading types of paid content distribution methods used by B2B marketers worldwide as of July 2023",
+   "short": "Paid methods used for content distribution by B2B marketers worldwide 2023",
+   "unit": "",
+   "description": "In July 2023 a survey conducted among marketers worldwide discovered that 78 percent of respondents said they had used social media advertising and promoted posts to distribute promotional content. Search engine marketing and pay-per-click methods were cited by 64 percent of respondents, while 59 percent said they used digital display advertising.",
+   "note": "Worldwide; July 2023; 1,080 respondents; among B2B content marketers that invest in paid content",
+   "source": "Content Marketing Institute; MarketingProfs",
+   "kind": "categorical",
+   "categories": [
+    "Social media advertising/promoted posts",
+    "Search engine marketing/pay-per-click",
+    "Digital dispaly advertising",
+    "Native advertising/sponsored content (not inlucing social media platforms)",
+    "Partner e-mails promoting your content",
+    "Print display ads"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.78,
+      0.64,
+      0.59,
+      0.35,
+      0.29,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Types of social media used by B2B marketers worldwide as of November 2022",
+   "short": "Social media types used by B2B marketers worldwide 2022",
+   "unit": "",
+   "description": "During a survey of business-to-business marketers conducted in November 2022, it was found that 22 percent of respondents used LinkedIn as their preferred type of social media for their content distribution, while 21 percent used Facebook for the same purpose.",
+   "note": "Worldwide; November 2022; 1,554 respondents; 84% of responding marketers were U.S.-based",
+   "source": "Parse.ly",
+   "kind": "categorical",
+   "categories": [
+    "LinkedIn",
+    "Facebook",
+    "Twitter",
+    "YouTube",
+    "Instagram",
+    "TikTok",
+    "Tumblr"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.22,
+      0.21,
+      0.22,
+      0.18,
+      0.11,
+      0.09,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Leading paid social media platforms used by B2B marketers to distribute content worldwide as of July 2022",
+   "short": "Top social media platforms used for B2B content marketing worldwide 2022",
+   "unit": "",
+   "description": "During a July 2022 survey among B2B marketers who used social media platforms for paid content promotion worldwide, 78 percent of respondents stated that they made use of LinkedIn over the previous 12 months. Facebook was ranked second with 56 percent of respondents, which was a drop of 13 percentage points, compared to 2021, when 69 percent stated using it.",
+   "note": "Worldwide; July 2022; 925 respondents; among B2B marketers using social media platforms for paid content promotion",
+   "source": "Content Marketing Institute; MarketingProfs",
+   "kind": "categorical",
+   "categories": [
+    "LinkedIn",
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "Twitter"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.78,
+      0.56,
+      0.29,
+      0.2,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Share of marketers who tracked content marketing metrics worldwide as of November 2022",
+   "short": "Marketers who track content marketing metrics worldwide 2022",
+   "unit": "",
+   "description": "During a November 2022 survey carried out among professionals involved in content marketing, 76 percent stated that they measured their content's performance and understood clearly what the analytics mean. The remaining 24 percent did not have a clear picture on their content's performance analytics.",
+   "note": "November 2022; 1,554 respondents; 84% of responding marketers were U.S.-based",
+   "source": "Parse.ly",
+   "kind": "categorical",
+   "categories": [
+    "Measure content performance and have a clear understanding of its performance",
+    "Measure content performance but still don't have a clear picture of its performance"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.76,
+      0.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Metrics tracked by content marketers worldwide as of November 2022",
+   "short": "Content marketing metrics tracked worldwide 2022",
+   "unit": "",
+   "description": "During a November 2022 survey carried out among professionals involved in content marketing worldwide, around 66 percent stated that they tracked page views to measure the success of their content marketing activities. Another 55 percent said they monitored email engagement (opens, clicks) in the same context.",
+   "note": "November 2022; 1,554 respondents; 84% of responding marketers were U.S.-based",
+   "source": "Parse.ly Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Page views",
+    "Email engagement",
+    "Social media engagement",
+    "Website engagement",
+    "Conversions",
+    "Search rankings",
+    "Email subscribers",
+    "Marketing qualified lead metrics",
+    "Cost to acquire a lead/customer",
+    "Media coverage"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.66,
+      0.55,
+      0.55,
+      0.51,
+      0.47,
+      0.44,
+      0.29,
+      0.31,
+      0.14,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading tools used by companies to measure their content marketing return-on-investment (ROI) worldwide in 2022",
+   "short": "Tools for measuring content marketing ROI worldwide 2022",
+   "unit": "",
+   "description": "During a global survey conducted in 2022, 64 percent of responding marketing professionals stated their organizations used Google Analytics to assess the return on investment (ROI) of content marketing activities. Another 44 percent used social media analytics tools for the same purpose.",
+   "note": "Worldwide; 2022; among marketers and businesses from 34 different countries",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "Google Analytics",
+    "Social media analytics tools",
+    "SEO tools",
+    "Salesforce",
+    "Specialized content marketing tools/platforms",
+    "Tableau dashboards",
+    "I'm not sure",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.64,
+      0.44,
+      0.34,
+      0.28,
+      0.27,
+      0.14,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Share of companies that measured content marketing return-on-investment (ROI) worldwide in 2022",
+   "short": "Popularity of measuring content marketing ROI worldwide 2022",
+   "unit": "",
+   "description": "During a survey conducted in 2022, 54 percent of responding marketing professionals stated their organizations measured the return on investment of content marketing activities. In the same survey, 20 percent of marketers stated that they spent between three and five thousand U.S. dollars on content marketing every month of 2022.",
+   "note": "Worldwide; 2022; among marketers and businesses from 34 different countries",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No",
+    "I'm not sure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.54,
+      0.33,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Perceived level of content marketing strategy effectiveness among marketers worldwide in 2022",
+   "short": "Content marketing strategy effectiveness worldwide 2022",
+   "unit": "",
+   "description": "During a survey carried out in 2022 among marketers from across the globe, 80 percent stated they thought their content marketing strategy was very successful; another 73 percent perceived their content marketing strategy was successful, and 52 percent said it was unsuccessful.",
+   "note": "Worldwide; 2022; 1,700 respondents",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "Very successful",
+    "Successful",
+    "Minimally successful",
+    "Unsuccessful"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.8,
+      0.73,
+      0.5,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Most effective approaches to implementing content-led communications according to marketing decision makers worldwide as of February 2022",
+   "short": "Leading approaches to content-led communications worldwide 2022",
+   "unit": "",
+   "description": "During a 2022 survey carried out among marketing decision-makers worldwide, 62 percent of respondents said they believed it was important to be \"always on\" for their customers, whereas 23 percent thought content-led communications were most effective for personalized targeting purposes.",
+   "note": "Worldwide; January 5 to February 9, 2022; 262 respondents; among marketing decision makers",
+   "source": "WMG",
+   "kind": "categorical",
+   "categories": [
+    "Being \"always on\"",
+    "Personalized targeting",
+    "Scheduling brand storytelling"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.62,
+      0.23,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Most effective uses of content-led advertising according to marketing decision makers worldwide as of February 2022, by stakeholder type",
+   "short": "Leading uses of content-led advertising worldwide 2022",
+   "unit": "",
+   "description": "During a 2022 survey carried out among marketing decision-makers worldwide, responding advertisers named brand engagement the most effective use of content-led advertising. According to media owners, the most effective use of this type of ad activity was thought leadership, whereas agency respondents thought it was changing perception.",
+   "note": "Worldwide; January 5 to February 9, 2022; 262 respondents; among marketing decision makers",
+   "source": "MarketingCharts; WMG",
+   "kind": "categorical",
+   "categories": [
+    "Brand engagement",
+    "Building awareness",
+    "Thought leadership",
+    "Increasing purchase intent",
+    "Lead generation",
+    "Changing perception",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Advertisers",
+     "values": [
+      0.41,
+      0.2,
+      0.15,
+      0.12,
+      0.06,
+      0.06,
+      0
+     ]
+    },
+    {
+     "name": "Media owners",
+     "values": [
+      0.3,
+      0.1,
+      0.34,
+      0.03,
+      0.03,
+      0.2,
+      0
+     ]
+    },
+    {
+     "name": "Agencies",
+     "values": [
+      0.23,
+      0.15,
+      0.15,
+      0.02,
+      0.02,
+      0.35,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Social media platforms that were most effective for content distribution according to marketers worldwide in 2022",
+   "short": "Top social media for marketing content distribution worldwide 2022",
+   "unit": "",
+   "description": "During a 2022 survey, 55 percent of responding marketers from across the globe stated that they believed Facebook was the most effective social media platform for content distribution. Instagram followed with 54 percent of respondents stating the same about the Meta-owned platform. LinkedIn came fourth, with 36 percent of marketers globally using it for their effective content distribution.",
+   "note": "Worldwide; 2022; 1,700 respondents; marketers and business owners from 34 countries, with the majority working from the U.S., UK, Canada and Australia",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "LinkedIn",
+    "TikTok",
+    "Twitter",
+    "Pinterest",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.55,
+      0.54,
+      0.38,
+      0.36,
+      0.35,
+      0.29,
+      0.13,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Most effective social media platforms for B2B content marketers worldwide as of July 2022",
+   "short": "Most effective social media platforms for B2B marketers worldwide 2022",
+   "unit": "",
+   "description": "During a July 2022 survey among B2B marketers who utilized social media platforms for paid content promotion worldwide, 49 percent of respondents stated that LinkedIn produced the best results over the previous 12 months. YouTube and Twitter followed both with 43 percent of respondents saying they gave them the best results when it came to advertising.",
+   "note": "Worldwide; July 2022; 925 respondents; among B2B marketers using social media platforms for paid content promotion",
+   "source": "Content Marketing Institute; MarketingProfs",
+   "kind": "categorical",
+   "categories": [
+    "LinkedIn",
+    "YouTube",
+    "Twitter",
+    "Instagram",
+    "Facebook"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.49,
+      0.43,
+      0.43,
+      0.39,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Number of people working in content marketing teams worldwide in 2022",
+   "short": "Size of content marketing teams worldwide 2022",
+   "unit": "",
+   "description": "During a survey conducted in 2022, 36 percent of responding marketing professionals stated their content marketing teams consisted of one, two, or three people; 14 percent said their teams had more between 11 and 20 content marketing specialists. On the other hand, 19 percent stated their organizations did not have a dedicated content team or person.",
+   "note": "Worldwide; 2022; 1,700 respondents; marketers and business owners from 34 countries, with the majority working from the U.S., UK, Canada and Australia",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "1-3 specialists",
+    "4-10 specialists",
+    "We do not have a dedicated content team or person",
+    "11-20 specialists",
+    "21-35 specialists",
+    "More than 50 specialists"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.36,
+      0.25,
+      0.19,
+      0.14,
+      0.04,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Leading types of in-house content marketing specialists employed worldwide in 2022",
+   "short": "Top types of in-house content marketing specialists employed worldwide 2022",
+   "unit": "",
+   "description": "During a survey conducted in 2022, 39 percent of responding marketing professionals stated a marketing manager was the most common type of in-house content marketing specialist in their organization. Another 39 percent stated that same for the position of writer/content creator. Third came social media manager, with 36 percent of respondents' shares.",
+   "note": "Worldwide; 2022; 1,700 respondents; among marketing agencies, B2B and B2C companies, non-profits, and other organizations",
+   "source": "Semrush Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Marketing manager",
+    "Writer/content creator",
+    "Social media manager",
+    "Content marketing manager",
+    "Content marketing strategist",
+    "SEO specialist",
+    "Head of content marketing",
+    "Designer",
+    "Web developer",
+    "Email marketing specialist",
+    "Project/campaign manager",
+    "Editor",
+    "None of the above",
+    "Data scientist",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.39,
+      0.39,
+      0.36,
+      0.35,
+      0.25,
+      0.25,
+      0.23,
+      0.22,
+      0.18,
+      0.15,
+      0.12,
+      0.12,
+      0.06,
+      0.06,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Leading in-demand skills for senior positions related to content marketing worldwide in 2022",
+   "short": "Most sought-after skillsets in content marketing worldwide 2022",
+   "unit": "",
+   "description": "According to a 2022 analysis of content marketing-related job postings for senior positions, the skills most in demand for such positions worldwide were writing, with 29 percent of respondents' shares, and analytics - with 25 percent. Interestingly, the demand of video skills preceded SEO skills by four percentage points.",
+   "note": "Worldwide; 2022; 1,700 respondents",
+   "source": "Semrush Share of ads",
+   "kind": "categorical",
+   "categories": [
+    "Writing",
+    "Analytics",
+    "Video",
+    "SEO",
+    "Content strategy",
+    "Content creation",
+    "Storytelling",
+    "Writing skills",
+    "Content management",
+    "Copywriting",
+    "Editing skills",
+    "Storyteller",
+    "CMS",
+    "Writing and editing",
+    "Proofreading"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.29,
+      0.25,
+      0.18,
+      0.14,
+      0.1,
+      0.09,
+      0.08,
+      0.07,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  }
+ ]
+}

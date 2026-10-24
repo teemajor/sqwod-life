@@ -1,0 +1,1838 @@
+{
+ "studyId": "166600",
+ "study": "wearables in the united states",
+ "file": "research/statista/Trackers Smartwatches Tech/study_id166600_wearables-in-the-united-states.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Revenue of the digital fitness & well-being device market worldwide from 2019 to 2028, by segment (in billion U.S. dollars)",
+   "short": "Digital fitness & well-being device market revenue worldwide 2019-2028, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. This reflects the overall trend throughout the entire forecast period from 2019 to 2028. It is estimated that the indicator is continuously rising in all segments. In this regard, the Smartwatches segment achieves the highest value of 62.46 billion U.S. dollars in 2028.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smartwatches",
+     "values": [
+      23.74,
+      32.04,
+      38.03,
+      40.19,
+      44.15,
+      47.94,
+      51.58,
+      55.16,
+      58.74,
+      62.46
+     ]
+    },
+    {
+     "name": "Smart bands",
+     "values": [
+      8.61,
+      11.78,
+      14.61,
+      16.47,
+      19.52,
+      22.78,
+      26.08,
+      29.38,
+      32.6,
+      35.84
+     ]
+    },
+    {
+     "name": "Smart Scales",
+     "values": [
+      2.3,
+      2.51,
+      3.21,
+      3.21,
+      3.55,
+      3.89,
+      4.18,
+      4.48,
+      4.72,
+      4.97
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Wearables unit shipments worldwide from 2014 to 2028 (in millions)",
+   "short": "Total wearable device unit shipments worldwide 2014-2028",
+   "unit": "millions",
+   "description": "In 2024, global shipments of hearables, watches, wrist-bands, and other wearables were forecast to reach around 560 million units. This is a 10.5 prcent percent year-over-year decrease compared to the previous year.",
+   "note": "Worldwide; 2014 to 2028; *2023 figure was calculated by Statista based on the 2023-2024 growth rate (10.5%) provided by the source Read more",
+   "source": "IDC; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      28.8,
+      81.9,
+      102.4,
+      115.4,
+      172.2,
+      346.4,
+      444.7,
+      533.6,
+      492.1,
+      506.6,
+      559.7,
+      590.7,
+      614.1,
+      632.3,
+      645.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Global wearable device shipments from 2021 to 2028, by product category (in millions)",
+   "short": "Wearable device shipments worldwide 2021-2028, by product category",
+   "unit": "millions",
+   "description": "The highest shipment volume in the wearable devices segment was seen among earwears, with over 347 million units expected to be shipped in 2024. Smartwatches followed, with shipments forecast to reach over 208 million units by 2028.",
+   "note": "Worldwide; 2021 to 2024; *Forecast Read more",
+   "source": "IDC",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*"
+   ],
+   "series": [
+    {
+     "name": "Earwear",
+     "values": [
+      339.62,
+      322.74,
+      341.55,
+      347.28,
+      367.85,
+      382.4,
+      393.79,
+      402.25
+     ]
+    },
+    {
+     "name": "Smartwatch",
+     "values": [
+      135.83,
+      151.87,
+      165.23,
+      176.7,
+      187.48,
+      196.66,
+      203.69,
+      208.63
+     ]
+    },
+    {
+     "name": "Wristband",
+     "values": [
+      55.2,
+      39.02,
+      33.78,
+      31.8,
+      30.67,
+      29.79,
+      29.1,
+      28.67
+     ]
+    },
+    {
+     "name": "Clothing",
+     "values": [
+      438.05,
+      343.8,
+      350.97,
+      358.46,
+      365.91,
+      374.28
+     ]
+    },
+    {
+     "name": "Glasses",
+     "values": [
+      1.13,
+      1.65,
+      1.75,
+      1.89,
+      2.04,
+      2.17
+     ]
+    },
+    {
+     "name": "Rings",
+     "values": [
+      1.6,
+      2.31,
+      2.72,
+      3,
+      3.23
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      2.78,
+      1.96,
+      0.9,
+      0.27,
+      0.29,
+      0.31,
+      0.32,
+      0.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Number of connected wearable devices worldwide from 2019 to 2022 (in millions)",
+   "short": "Connected wearable devices worldwide 2019-2022",
+   "unit": "millions",
+   "description": "Between 2019 and 2022, the number of connected wearable devices worlwide increased substantially. In 2022, this number reached around 1.1 billion, up from 929 million recorded one year before.",
+   "note": "Worldwide; 2019 to 2022",
+   "source": "Research and Markets",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      722,
+      835,
+      929,
+      1110
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Revenue in the digital fitness & well-being segment of the digital health market United States from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue in the digital fitness & well-being market United States 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The indicator 'Revenue by market' in the 'Digital Fitness & Well-Being' segment of the digital health market in the United States was forecast to continuously increase between 2024 and 2028 by in total 4.4 billion U.S. dollars (+21.08 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 25.22 billion U.S. dollars and therefore a new peak in 2028. Notably, the indicator 'Revenue by market' of the 'Digital Fitness & Well-Being' segment of the digital health market [...]",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.69,
+      10.98,
+      14.53,
+      16.24,
+      17.6,
+      19.27,
+      20.87,
+      22.22,
+      23.37,
+      24.32,
+      25.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Revenue of digital fitness and well-being devices in the United States from 2018 to 2028, by segment (in million U.S. dollars)",
+   "short": "Digital and well-being device revenue in the U.S. 2018-2028, by segment",
+   "unit": "million U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. This reflects the overall trend throughout the entire forecast period from 2018 to 2028. It is estimated that the indicator is continuously rising in all segments. In this regard, the Smartwatches segment achieves the highest value of 15.7 billion U.S. dollars in 2028.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smartwatches",
+     "values": [
+      6608.62,
+      8193.68,
+      10558.19,
+      11511.85,
+      12180.84,
+      12867.67,
+      13513.8,
+      14089.43,
+      14650.55,
+      15184.13,
+      15746.3
+     ]
+    },
+    {
+     "name": "Smart bands",
+     "values": [
+      1284.36,
+      1575.98,
+      2021.79,
+      2268.1,
+      2483.23,
+      2708.6,
+      2920.04,
+      3103.33,
+      3267.13,
+      3410.36,
+      3540.08
+     ]
+    },
+    {
+     "name": "Smart Scales",
+     "values": [
+      331.38,
+      412.23,
+      432.36,
+      513.16,
+      523.82,
+      564.12,
+      605.75,
+      637.56,
+      673.56,
+      701.73,
+      729.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Average revenue per user of digital fitness and well-being devices in the United States from 2020 to 2028, by segment (in U.S. dollars)",
+   "short": "Per user revenue of digital and well-being device in the U.S. 2020-2028, by segment",
+   "unit": "U.S. dollars",
+   "description": "The arpu is forecast to experience significant growth in all segments in 2028. The trend observed from 2020 to 2028 remains consistent throughout the entire forecast period. There is a continuous increase in the indicator across all segments. Notably, the Smartwatches segment achieves the highest value of 362.76 U.S. dollars at 2028.",
+   "note": "United States; 2020 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smartwatches",
+     "values": [
+      264.48,
+      276.76,
+      289.05,
+      301.33,
+      313.62,
+      325.9,
+      338.19,
+      350.47,
+      362.76
+     ]
+    },
+    {
+     "name": "Smart bands",
+     "values": [
+      99.1,
+      100.47,
+      101.87,
+      103.28,
+      104.71,
+      106.16,
+      107.63,
+      109.12,
+      110.64
+     ]
+    },
+    {
+     "name": "Smart Scales",
+     "values": [
+      79.64,
+      82.41,
+      85.18,
+      87.94,
+      90.71,
+      93.47,
+      96.24,
+      99.01,
+      101.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Revenue of the fitness tracker market in the United States from 2017 to 2028, by segment (in billion U.S. dollars)",
+   "short": "Fitness tracker market revenue in the U.S. 2017-2028, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "In recent years, the revenue of the U.S. fitness tracker market has increased and is forecast to keep growing in the near future, with revenues expected to exceed 20 billion U.S. dollars by 2028. Smartwatches were, are and will be the most profitable segment.",
+   "note": "United States; 2017 to 2023",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smart bands",
+     "values": [
+      1.01,
+      1.28,
+      1.58,
+      2.02,
+      2.27,
+      2.48,
+      2.71,
+      2.92,
+      3.1,
+      3.27,
+      3.41,
+      3.54
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      0.25,
+      0.33,
+      0.41,
+      0.43,
+      0.51,
+      0.52,
+      0.56,
+      0.61,
+      0.64,
+      0.67,
+      0.7,
+      0.73
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      4.82,
+      6.61,
+      8.19,
+      10.56,
+      11.51,
+      12.18,
+      12.87,
+      13.51,
+      14.09,
+      14.65,
+      15.18,
+      15.75
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Revenue change of the fitness tracker market in the United States from 2018 to 2028, by segment",
+   "short": "Fitness tracker revenue change in the U.S. 2018-2028, by segment",
+   "unit": "",
+   "description": "In the United States, the fitness tracker market has experienced growth over the past years, with its revenue increasing by over six percent in 2023. In the future, this market will keep increasing, and smart bands and smart scales will record growth greater than smartwatches.",
+   "note": "United States; 2018 to 2023",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smart bands",
+     "values": [
+      0.271,
+      0.227,
+      0.283,
+      0.122,
+      0.095,
+      0.091,
+      0.078,
+      0.063,
+      0.053,
+      0.044,
+      0.038
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      0.352,
+      0.244,
+      0.049,
+      0.187,
+      0.021,
+      0.077,
+      0.074,
+      0.053,
+      0.057,
+      0.042,
+      0.04
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      0.37,
+      0.24,
+      0.289,
+      0.09,
+      0.058,
+      0.056,
+      0.05,
+      0.043,
+      0.04,
+      0.036,
+      0.037
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Share of smartwatch shipments from 2020 to 2022, by region",
+   "short": "Smartwatch shipments 2020-2022, by region",
+   "unit": "",
+   "description": "In 2022, North America and India were the largest smartwatch markets, occupying 28 percent and 21 percent of the market, respectively. China followed in the third places, representing 19 percent of global smartwatch market India's share of shipments grew from 3 percent in 2020 to 21 percent in 2022, marking a significant growth of India's smartwatch market.",
+   "note": "Worldwide, North America, China, India; 2020 to 2021",
+   "source": "Counterpoint Research",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      0.33,
+      0.3,
+      0.28
+     ]
+    },
+    {
+     "name": "China",
+     "values": [
+      0.27,
+      0.24,
+      0.19
+     ]
+    },
+    {
+     "name": "India",
+     "values": [
+      0.03,
+      0.1,
+      0.21
+     ]
+    },
+    {
+     "name": "Rest of world",
+     "values": [
+      0.28,
+      0.37,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Revenue in the headphones segment of the consumer electronics market United States from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue in the headphones segment United States 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The revenue in the 'Headphones' segment of the consumer electronics market in the United States was forecast to continuously increase between 2024 and 2028 by in total 0.1 billion U.S. dollars (+4.15 percent). According to this forecast in 2028, the indicator will have increased for the sixth consecutive year to 2.52 billion U.S. dollars.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.15,
+      2.22,
+      2.64,
+      2.72,
+      2.31,
+      2.38,
+      2.41,
+      2.44,
+      2.47,
+      2.5,
+      2.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Headphone market revenue change in the United States from 2019 to 2028",
+   "short": "Headphone revenue growth in the U.S. 2019-2028",
+   "unit": "",
+   "description": "The revenue of the headphone market in the United States fluctuated between 2019 and 2028. In 2024, the size of this market was forecast to reach just under 2.5 billion U.S. dollars, increasing by around 1.3 percent compared to the previous year.",
+   "note": "2019 to 2028",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.033,
+      0.192,
+      0.032,
+      -0.153,
+      0.031,
+      0.013,
+      0.012,
+      0.012,
+      0.012,
+      0.011
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Volume in the headphones segment of the consumer electronics market United States from 2018 to 2028 (in million pieces)",
+   "short": "Volume in the headphones segment United States 2018-2028",
+   "unit": "million pieces",
+   "description": "The volume in the 'Headphones' segment of the consumer electronics market in the United States was forecast to continuously increase between 2024 and 2028 by in total 14.4 million pieces (+8 percent). According to this forecast in 2028, the indicator will have increased for the sixth consecutive year to 194.29 million pieces.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      149.45,
+      156.98,
+      189.74,
+      198.09,
+      169.52,
+      176.24,
+      179.92,
+      183.55,
+      187.15,
+      190.72,
+      194.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Market share of the leading fitness tracker vendors in the United States in 2023",
+   "short": "Fitness tracker vendor market share in the U.S. 2023",
+   "unit": "",
+   "description": "In the United States, Apple was the leading fitness tracker vendor as of 2023, accounting for 38 percent of the market. Fitbit ranked second, holding a market share of 16 percent. By contrast, Samsung only controlled seven percent of the American fitness tracker market.",
+   "note": "United States; 2017 to 2023",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Other",
+    "Garmin",
+    "Samsung",
+    "Amazfit",
+    "Fossil",
+    "Withings",
+    "AGPTEK"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.38,
+      0.16,
+      0.13,
+      0.11,
+      0.07,
+      0.05,
+      0.05,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Most used eHealth tracker / smart watches by brand in the U.S. as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in the U.S. 2023",
+   "unit": "",
+   "description": "With 58 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among U.S. consumers. In second place follows Fitbit with 27 percent of respondents. These results are based on a representative online survey conducted in 2023 among 3,240 consumers in the United States.",
+   "note": "United States; January to December 2023; 3240 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Google",
+    "Amazfit",
+    "ASUS",
+    "Garmin",
+    "LG",
+    "Fossil",
+    "Huawei",
+    "Honor",
+    "Polar",
+    "Xiaomi/Mi",
+    "Misfit",
+    "Moov"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.27,
+      0.21,
+      0.12,
+      0.09,
+      0.09,
+      0.09,
+      0.09,
+      0.07,
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Leading watch brands ranked by brand awareness in the United States in 2023",
+   "short": "Most well-known watch brands in the United States 2023",
+   "unit": "",
+   "description": "When it comes to the most well-known watch brands in the U.S., Apple Watch leads the charts. The American brand is recognized by 88 percent of online respondents, followed closely by Swiss watchmaker Rolex with 86 percent brand awareness. Coming in third on this list is Samsung Galaxy Watch with a brand awareness of 79 percent.",
+   "note": "United States; November 2023; 1248 respondents; 18 to 64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple Watch",
+    "Rolex",
+    "Samsung Galaxy Watch",
+    "Casio",
+    "Timex",
+    "Cartier",
+    "Google Pixel Watch",
+    "Seiko",
+    "Fossil",
+    "Citizen",
+    "Omega",
+    "TAG Heuer",
+    "Tissot",
+    "Longines",
+    "Patek Philippe"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.88,
+      0.86,
+      0.79,
+      0.69,
+      0.69,
+      0.6,
+      0.6,
+      0.6,
+      0.58,
+      0.55,
+      0.48,
+      0.33,
+      0.27,
+      0.24,
+      0.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Most used headphones by brand in the U.S. as of December 2023",
+   "short": "Most used headphones by brand in the U.S. 2023",
+   "unit": "",
+   "description": "We asked U.S. consumers about \"Most used headphones by brand\" and found that \"Apple\" takes the top spot, while \"Marshall\" is at the other end of the ranking.",
+   "note": "United States; January to December 2023; 5952 respondents; 18-64 years; respondents who use headphones (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Beats",
+    "Bose",
+    "JBL",
+    "Samsung",
+    "Sony",
+    "Skullcandy",
+    "LG",
+    "Anker",
+    "Audio Technica",
+    "Bowers & Wilkins",
+    "Panasonic",
+    "Philips",
+    "Grado",
+    "Jaybird"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.39,
+      0.19,
+      0.15,
+      0.15,
+      0.14,
+      0.11,
+      0.09,
+      0.08,
+      0.06,
+      0.05,
+      0.04,
+      0.04,
+      0.04,
+      0.03,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Share of digital device owners in the United States in 2024",
+   "short": "Digital device ownership in the U.S. 2024",
+   "unit": "",
+   "description": "A 2024 survey conducted in the United States revealed that 97.6 percent of respondents owned a smartphone, while around 48.5 percent of them claimed to have a tablet. By contrast, only 26.7 percent of respondents said to have a smart home device.",
+   "note": "United States; as of January 2024; 16-64 years; Internet users that own each kind of device",
+   "source": "DataReportal; GWI; Hootsuite; We Are Social Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Mobile phone (any type)",
+    "Smartphone",
+    "Laptop or desktop computer",
+    "Tablet",
+    "Games console",
+    "TV streaming device",
+    "Smart watch or wristband",
+    "Smart home device",
+    "Virtual reality device",
+    "Feature phone"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.978,
+      0.976,
+      0.683,
+      0.484,
+      0.412,
+      0.409,
+      0.372,
+      0.267,
+      0.092,
+      0.038
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Leading consumer electronics devices in the United States in 2023, by household penetration",
+   "short": "Most popular CE devices in the U.S. 2023, by household penetration",
+   "unit": "",
+   "description": "In 2023, the most owned consumer electronics device by households in the United States was the smartphone, recording a 98 percent ownership rate that year. Television followed, with 87 percent of households in the North American country owning such a device.",
+   "note": "United States; 2023",
+   "source": "Consumer Technology Association; Various sources (audioxpress.com)",
+   "kind": "categorical",
+   "categories": [
+    "Smartphone",
+    "Television (any)",
+    "Notebook or laptop",
+    "Headphones (any)",
+    "Earbdus (any)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.98,
+      0.87,
+      0.75,
+      0.68,
+      0.65
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Number of users of digital fitness and well-being devices in the United States from 2020 to 2028, by segment (in millions)",
+   "short": "Digital and well-being device users in the U.S. 2020-2028, by segment",
+   "unit": "millions",
+   "description": "The number of users is forecast to experience significant growth in all segments in 2028. As part of the positive trend, the indicator reaches the maximum value for all three different segments at the end of the comparison period. Particularly noteworthy is the segment Smartwatches, which has the highest value of 43.41 million users.",
+   "note": "United States; 2020 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smartwatches",
+     "values": [
+      39.92,
+      41.59,
+      42.14,
+      42.7,
+      43.09,
+      43.23,
+      43.32,
+      43.33,
+      43.41
+     ]
+    },
+    {
+     "name": "Smart bands",
+     "values": [
+      20.4,
+      22.57,
+      24.38,
+      26.23,
+      27.89,
+      29.23,
+      30.35,
+      31.25,
+      32
+     ]
+    },
+    {
+     "name": "Smart Scales",
+     "values": [
+      5.43,
+      6.23,
+      6.15,
+      6.41,
+      6.68,
+      6.82,
+      7,
+      7.09,
+      7.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Number of fitness tracker users in the United States from 2017 to 2028, by segment (in millions)",
+   "short": "Fitness tracker users in the U.S. 2017-2028, by segment",
+   "unit": "millions",
+   "description": "In 2023, there were around 65 million fitness tracker users in the United States, most of whom were smartwatch owners. In the near future, the number of fitness tracker users is forecast to steadily increase, jumping to over 71 millions by 2028.",
+   "note": "United States; 2017 to 2023",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smart bands",
+     "values": [
+      10.63,
+      13.32,
+      16.12,
+      20.4,
+      22.57,
+      24.38,
+      26.23,
+      27.89,
+      29.23,
+      30.35,
+      31.25,
+      32
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      3.44,
+      4.47,
+      5.36,
+      5.43,
+      6.23,
+      6.15,
+      6.42,
+      6.68,
+      6.82,
+      7,
+      7.09,
+      7.17
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      21.19,
+      27.55,
+      32.49,
+      39.92,
+      41.59,
+      42.14,
+      42.7,
+      43.09,
+      43.23,
+      43.32,
+      43.33,
+      43.41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Penetration rate of fitness trackers in the United States from 2017 to 2028, by segment",
+   "short": "Fitness tracker penetration rate in the U.S. 2017-2028, by segment",
+   "unit": "",
+   "description": "In the United States, the penetration rate of fitness trackers is forecast to increase between 2023 and 2028. In 2023, the total penetration rate amounted to over 22 percent, with smartwatches recording the highest out of the three segment, at around 12.7 percent.",
+   "note": "United States; 2017 to 2023",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smart bands",
+     "values": [
+      0.0327,
+      0.0407,
+      0.049,
+      0.0616,
+      0.0678,
+      0.0728,
+      0.0779,
+      0.0824,
+      0.0859,
+      0.0887,
+      0.0908,
+      0.0925
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      0.0106,
+      0.0137,
+      0.0163,
+      0.0164,
+      0.0187,
+      0.0184,
+      0.0191,
+      0.0197,
+      0.02,
+      0.0204,
+      0.0206,
+      0.0207
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      0.0652,
+      0.0842,
+      0.0987,
+      0.1206,
+      0.1249,
+      0.1259,
+      0.1268,
+      0.1273,
+      0.127,
+      0.1266,
+      0.1259,
+      0.1255
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Share of Americans owning a wearable device as of June 2023, by type of ownership",
+   "short": "Wearable ownership in the U.S. 2023, by type",
+   "unit": "",
+   "description": "During a 2023 survey conducted in the United States, it was found that almost half of respondents had never owned a wearable device. By contrast, 34 percent of interviewees claimed to have and use one.",
+   "note": "United States; as of June 2023; 1,015 respondents",
+   "source": "YouGov",
+   "kind": "categorical",
+   "categories": [
+    "I have never owned a wearable device",
+    "I currently own and use a wearable device",
+    "I currently own a wearable device but do not use it",
+    "I previously owned a wearable device but no longer have it"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.45,
+      0.34,
+      0.15,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Share of Americans owning a wearable device as of June 2023, by type of ownership and race",
+   "short": "Wearable ownership in the U.S. 2023, by type and race",
+   "unit": "",
+   "description": "A 2023 survey conducted in the United States revealed that 37 percent of black Americans own and use a wearable device, followed by 34 percent of white Americans claiming the same. By contrast, most Asian Americans have never owned a wearable device.",
+   "note": "United States; as of June 2023; 1,015 respondents",
+   "source": "YouGov Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "White",
+    "Black",
+    "Hispanic",
+    "Asian",
+    "Native American",
+    "Middle Eastern",
+    "Two or more races",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "I have never owned a wearable device",
+     "values": [
+      0.45,
+      0.46,
+      0.4,
+      0.41,
+      0.58,
+      0.49,
+      0.62,
+      0.46
+     ]
+    },
+    {
+     "name": "I currently own and use a wearable device",
+     "values": [
+      0.34,
+      0.37,
+      0.28,
+      0.29,
+      0.36,
+      0.51,
+      0.27,
+      0.47
+     ]
+    },
+    {
+     "name": "I currently own a wearable device but do not use it",
+     "values": [
+      0.12,
+      0.16,
+      0.26,
+      0.25,
+      0.11,
+      0,
+      0.06,
+      0
+     ]
+    },
+    {
+     "name": "I previously owned a wearable device but no longer have it",
+     "values": [
+      0.12,
+      0.1,
+      0.14,
+      0.09,
+      0,
+      0,
+      0.04,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Share of Americans owning a wearable device as of June 2023, by type of ownership and education",
+   "short": "Wearable ownership in the U.S. 2023, by type and education",
+   "unit": "",
+   "description": "According to a 2023 survey conducted in the United States, wearable devices are more popular among educated respondents. For instance, 46 percent of post-grad interviewees declared owning and using one at the moment of the survey.",
+   "note": "United States; as of June 2023; 1,015 respondents",
+   "source": "YouGov Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "No high school",
+    "High school graduate",
+    "Some college",
+    "2 years",
+    "4 years",
+    "Post-grad"
+   ],
+   "series": [
+    {
+     "name": "I have never owned a wearable device",
+     "values": [
+      0.6,
+      0.52,
+      0.52,
+      0.43,
+      0.26,
+      0.36
+     ]
+    },
+    {
+     "name": "I currently own and use a wearable device",
+     "values": [
+      0.14,
+      0.27,
+      0.23,
+      0.4,
+      0.51,
+      0.46
+     ]
+    },
+    {
+     "name": "I currently own a wearable device but do not use it",
+     "values": [
+      0.13,
+      0.14,
+      0.17,
+      0.1,
+      0.17,
+      0.18
+     ]
+    },
+    {
+     "name": "I previously owned a wearable device but no longer have it",
+     "values": [
+      0.13,
+      0.13,
+      0.11,
+      0.1,
+      0.12,
+      0.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Most common technological aids to enhance workouts in the United States as of September 2023",
+   "short": "Most common exercise technology in the U.S. 2023",
+   "unit": "",
+   "description": "A September 2023 survey on exercise habits in the United States revealed that around 43 percent of respondents used wearable fitness trackers to track their workouts. Moreover, 23 percent of respondents used online training platforms to enhance their exercise routines.",
+   "note": "United States; August 31 to September 13, 2023; 1013 respondents",
+   "source": "Peloton Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Wearable fitness trackers",
+    "Fitness apps",
+    "Nutrition apps",
+    "Recovery tools",
+    "Online training platforms",
+    "Next-gen biometric clothing"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.43,
+      0.35,
+      0.34,
+      0.29,
+      0.23,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Virtual reality (VR) headset market revenue in the United States from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "VR headset market revenue in the U.S. 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The revenue in the 'VR Headsets' segment of the consumer electronics market in the United States was forecast to increase between 2024 and 2028 by in total 0.01 billion U.S. dollars (+0.54 percent). This overall increase does not happen continuously, notably not in 2027 and 2028. The indicator is estimated to amount to 1.85 billion U.S. dollars in 2028.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.52,
+      0.66,
+      1,
+      1.62,
+      1.84,
+      1.88,
+      1.84,
+      1.88,
+      1.99,
+      1.89,
+      1.85
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Virtual reality (VR) headset market revenue growth in the United States from 2019 to 2028",
+   "short": "VR headset market revenue growth in the U.S. 2019-2028",
+   "unit": "",
+   "description": "The revenue change in the 'VR Headsets' segment of the consumer electronics market in the United States was forecast to increase between 2024 and 2028 by in total 0.5 percentage points. This overall increase does not happen continuously, notably not in 2027. The indicator is estimated to amount to -1.93 percent in 2028.",
+   "note": "United States; 2019 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2652,
+      0.504,
+      0.62,
+      0.1401,
+      0.0204,
+      -0.0239,
+      0.024,
+      0.0604,
+      -0.052,
+      -0.0193
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Virtual reality (VR) headset sales volume in the United States from 2018 to 2028 (in million pieces)",
+   "short": "VR headset sales volume in the U.S. 2018-2028",
+   "unit": "million pieces",
+   "description": "The volume in the 'VR Headsets' segment of the consumer electronics market in the United States was forecast to increase between 2024 and 2028 by in total 0.1 million pieces (+2.33 percent). This overall increase does not happen continuously, notably not in 2027 and 2028. The indicator is estimated to amount to 4.37 million pieces in 2028.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.34,
+      1.59,
+      2.27,
+      3.72,
+      4.31,
+      4.39,
+      4.3,
+      4.41,
+      4.68,
+      4.45,
+      4.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Revenue of the AR hardware industry in the U.S. 2020-2027 (in billion U.S. dollars)",
+   "short": "Revenue of the AR hardware industry in the U.S. 2020-2027",
+   "unit": "billion U.S. dollars",
+   "description": "The revenue in the 'AR Hardware' segment of the AR & VR market in the United States was forecast to continuously increase between 2023 and 2027 by in total 2.5 billion U.S. dollars (+287.36 percent). After the seventh consecutive increasing year, the indicator is estimated to reach 3.32 billion U.S. dollars and therefore a new peak in 2027. Notably, the revenue of the 'AR Hardware' segment of the AR & VR market was continuously increasing over the past years.",
+   "note": "United States; 2020 to 2027",
+   "source": "Statista; Statista Advertising & Media Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.12,
+      0.18,
+      0.38,
+      0.87,
+      1.61,
+      2.36,
+      2.84,
+      3.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Revenue growth of AR hardware in the U.S. 2021-2027 (AR) hardware B2C market revenue growth in the United States from 2021 to 2027",
+   "short": "Revenue growth of AR hardware in the U.S. 2021-2027",
+   "unit": "",
+   "description": "The revenue growth in the AR hardware segment of the AR & VR market in the United States was forecast to continuously decrease between 2023 and 2027 by in total 108.9 percentage points. The revenue growth is estimated to amount to 16.76 percent in 2027. Notably, the revenue growth of the AR hardware segment of the AR & VR market was continuously increasing over the past years. Find other key market indicators concerning the AR hardware segment of the AR & VR market in the [...]",
+   "note": "United States; 2021 to 2027",
+   "source": "Statista; Statista Advertising & Media Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5,
+      1.1858,
+      1.2562,
+      0.8591,
+      0.4621,
+      0.2048,
+      0.1676
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Extended reality (XR) headset vendor shipment share worldwide from 2020 to 2023, by quarter",
+   "short": "XR headset vendor shipment share worldwide 2020-2023, by quarter",
+   "unit": "",
+   "description": "Meta was the leading extended reality (XR) headset vendor in terms of shipments in 2023, occupying 72 percent of the market in the fourth quarter of the year. Meta's device range includes the Quest 3 and Quest Pro, with the latter released in 2023. Sony ranked second among vendors, accounting for around 15 percent of shipments.",
+   "note": "Worldwide; Q1 2020 to Q4 2023",
+   "source": "Counterpoint Research",
+   "kind": "timeseries",
+   "categories": [
+    "Q1 2020",
+    "Q2 2020",
+    "Q3 2020",
+    "Q4 2020",
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2024"
+   ],
+   "series": [
+    {
+     "name": "Meta",
+     "values": [
+      0.34,
+      0.32,
+      0.29,
+      0.74,
+      0.75,
+      0.67,
+      0.73,
+      0.8,
+      0.77,
+      0.66,
+      0.72,
+      0.83,
+      0.51,
+      0.51,
+      0.46,
+      0.72
+     ]
+    },
+    {
+     "name": "Sony",
+     "values": [
+      0.33,
+      0.29,
+      0.3,
+      0.15
+     ]
+    },
+    {
+     "name": "Pico",
+     "values": [
+      0.06,
+      0.1,
+      0.11,
+      0.03,
+      0.03,
+      0.06,
+      0.06,
+      0.05,
+      0.08,
+      0.11,
+      0.12,
+      0.07,
+      0.07,
+      0.06,
+      0.08,
+      0.04
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      0.53,
+      0.5,
+      0.52,
+      0.19,
+      0.15,
+      0.18,
+      0.11,
+      0.07,
+      0.08,
+      0.13,
+      0.13,
+      0.1,
+      0.09,
+      0.14,
+      0.16,
+      0.09
+     ]
+    },
+    {
+     "name": "HTC",
+     "values": [
+      0.03
+     ]
+    },
+    {
+     "name": "Xreal",
+     "values": [
+      0.03
+     ]
+    },
+    {
+     "name": "DPVR",
+     "values": [
+      0.07,
+      0.08,
+      0.08,
+      0.04,
+      0.06,
+      0.09,
+      0.1,
+      0.08,
+      0.07,
+      0.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Apple Vision Pro accessories price list in the United States as of January 2024 (in U.S. dollars)",
+   "short": "Apple Vision Pro accessories price list in the United States 2024",
+   "unit": "U.S. dollars",
+   "description": "Apple Vision Pro arrives in February 2024, a headset that has been termed as a spatial computing device by the company. As is the case with other Apple products, a range of accessories are available to buyers to complement the 3,500 U.S. dollar headset. Accessories available include travel cases, batteries, and headbands.",
+   "note": "United States; 2024",
+   "source": "Apple",
+   "kind": "categorical",
+   "categories": [
+    "Apple Vision Pro Travel Case",
+    "Apple Vision Pro Battery",
+    "ZEISS Optical Inserts",
+    "Apple Vision Pro Light Seal",
+    "Apple Vision Pro Light Seal Cushion",
+    "Belkin Battery Holder for Apple Vision Pro",
+    "Apple Vision Pro Solo Knit Band",
+    "Apple Vision Pro Dual Loop Band"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      199,
+      199,
+      99,
+      199,
+      29,
+      49.95,
+      99,
+      99
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Meta Quest price list in the United States as of March 2024 (in U.S. dollars)",
+   "short": "Meta Quest price list in the United States 2024",
+   "unit": "U.S. dollars",
+   "description": "Meta Quest is the branding assigned to a series of immersive headsets developed by Meta Platforms. In the United States, the company's Quest 2 device retails at 249.99 U.S. dollars, while at the other range of the spectrum, the Quest Pro retails at 999.99 U.S. dollars. The company's latest headset, Quest 3, was released in 2023.",
+   "note": "United States; March 2024",
+   "source": "Meta Platforms",
+   "kind": "categorical",
+   "categories": [
+    "Meta Quest 2",
+    "Meta Quest 3",
+    "Meta Quest Pro"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      249.99,
+      499.99,
+      999.99
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Number of users of AR hardware in the U.S. 2021-2028 (in millions)",
+   "short": "Number of users of AR hardware in the U.S. 2021-2028",
+   "unit": "millions",
+   "description": "The indicator 'Reach ' in the 'AR Hardware' segment of the AR & VR market in the United States was forecast to continuously increase between 2024 and 2028 by in total 28.4 million users (+171.39 percent). After the seventh consecutive increasing year, the indicator is estimated to reach 44.94 million users and therefore a new peak in 2028. Notably, the indicator 'Reach ' of the 'AR Hardware' segment of the AR & VR market was continuously increasing over the past years.",
+   "note": "United States; 2021 to 2028",
+   "source": "Statista; Statista Advertising & Media Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.61,
+      3.55,
+      8.34,
+      16.57,
+      26.01,
+      32.92,
+      38.93,
+      44.94
+     ]
+    }
+   ]
+  }
+ ]
+}

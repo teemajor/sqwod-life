@@ -1,0 +1,2257 @@
+{
+ "studyId": "27232",
+ "study": "digital health statista dossier",
+ "file": "research/statista/study_id27232_digital-health-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Total digital health industry funding worldwide from 2010 to 2022 (in billion U.S. dollars)",
+   "short": "Investor funding in digital health industry 2010-2022",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, funding by investors in the digital health industry amounted to almost 45 billion U.S. dollars, this was double the preceding year and by far the largest amount since 2010. In 2022, funding dropped to 23.3 billion U.S. dollars, although this was still the second-highest annual figure in the provided time interval.",
+   "note": "Worldwide; 2010 to 2022",
+   "source": "StartUp Health",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.1,
+      2.1,
+      2.3,
+      2.3,
+      7.2,
+      6.1,
+      8.4,
+      11.8,
+      15.4,
+      14.4,
+      22.9,
+      44.8,
+      23.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Top digital health deals worldwide based on invested funding in 2022, by receiving company (in million U.S. dollars)",
+   "short": "Funding in top deals in digital health industry 2022",
+   "unit": "million U.S. dollars",
+   "description": "In 2021, eight of the largest ten digital health investment deals were done in the United States. In this year, 600 million U.S. dollars were invested into the U.S. company Ultima Genomics making it the largest deal. The largest investment involving a company from outside the U.S. was concerning Doctolib which received a deal of 549 million U.S. dollars.",
+   "note": "Worldwide; 2022",
+   "source": "StartUp Health Amount raised in million U.S. dollars Company (country)",
+   "kind": "categorical",
+   "categories": [
+    "Ultima Genomics (United States)",
+    "Doctolib (France)",
+    "Somatus (United States)",
+    "Cera (United Kingdom)",
+    "TigerConnect (United States)",
+    "Biofourmis (United States)",
+    "Freenome (United States)",
+    "DispatchHealth (United States)",
+    "Lyra Health (United States)",
+    "Reify Health (United States)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      600,
+      549,
+      325,
+      320,
+      300,
+      300,
+      290,
+      259,
+      235,
+      220
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Annual number of mega deals in the digital health sector in the United States from 2017 to 2022",
+   "short": "Number of mega deals in the digital health sector in the U.S. 2017-2022",
+   "unit": "",
+   "description": "In 2021, there were 88 mega deals amounting to over 100 million US dollars in the digital health sector in the United States. This was the highest number of mega deals in the provided time interval. In 2022, the number of mega deals dropped to 35.",
+   "note": "United States; 2017 to 2022",
+   "source": "Rock Health",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7,
+      13,
+      12,
+      44,
+      88,
+      35
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Digital health mega deals as a share of total funding in the United States from 2017 to 2022",
+   "short": "Digital health mega deals as a share of total funding in the U.S. 2017-2022",
+   "unit": "",
+   "description": "In 2021, digital health mega deals in the United States accounted for a 56 percent share of the total funding received, the share of digital health mega deals have generally increased in the provided time interval. Although in 2022, digital health mega deals closed globally accounted for 39 percent of the total investment in the digital health sector.",
+   "note": "United States; 2017 to 2022",
+   "source": "Rock Health",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.31,
+      0.23,
+      0.44,
+      0.56,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Top funded digital health categories worldwide in the first half of 2021 (in billion U.S. dollars)",
+   "short": "Top funded global digital health categories 2021",
+   "unit": "billion U.S. dollars",
+   "description": "This statistic shows the top funded digital health categories worldwide during the first half of 2021. In this period, 4.2 billion U.S. dollars of funding was provided for telemedicine which made it by far the most funded category.",
+   "note": "Worldwide; 2021",
+   "source": "Mercom Capital Funding in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Telemedicine",
+    "Wellness",
+    "mHealth apps",
+    "Analytics",
+    "Clinical decision support"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.2,
+      1.7,
+      1.6,
+      1.5,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "U.S. metro areas most active in digital health based on invested funding in 2022 (in million U.S. dollars)",
+   "short": "Investments in most active U.S. metro area in digital health industry 2022",
+   "unit": "million U.S. dollars",
+   "description": "This statistic displays the total value of investments made in the most active U.S. metro areas in the digital health industry in 2022. During this year, the San Francisco metropolitan area accumulated over six billion U.S. dollars in investments in this industry, making it the largest in the United States.",
+   "note": "United States; 2022",
+   "source": "StartUp Health Invested funding in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "San Francisco",
+    "New York City",
+    "Boston",
+    "Los Angeles",
+    "Washington DC",
+    "Austin",
+    "Chicago",
+    "Seattle",
+    "San Diego",
+    "Miami"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6100,
+      3100,
+      2300,
+      784,
+      587,
+      491,
+      477,
+      469,
+      282,
+      256
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of digital health deals in U.S. metro areas most active based on invested funding in 2022",
+   "short": "Investment deal count in most active US metro area in digital health 2022",
+   "unit": "",
+   "description": "This statistic displays the number of investment deals made in the most active U.S. metro areas in the digital health industry in 2022. During that year, the San Francisco metropolitan area accumulated 154 investment deals. New York City followed with the second-highest at 125 deals.",
+   "note": "North America, United States; 2022",
+   "source": "StartUp Health Number of deals",
+   "kind": "categorical",
+   "categories": [
+    "San Francisco",
+    "New York City",
+    "Boston",
+    "Los Angeles",
+    "Seattle",
+    "Chicago",
+    "San Diego",
+    "Miami",
+    "Austin",
+    "Washington DC"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      154,
+      125,
+      64,
+      44,
+      19,
+      18,
+      16,
+      16,
+      16,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Metro areas outside of the U.S. most active in digital health based on invested funding in 2022 (in million U.S. dollars)",
+   "short": "Investments in most active global metro areas in digital health outside the U.S. 2022",
+   "unit": "million U.S. dollars",
+   "description": "This statistic displays the value of investments made in the most active metro areas in the digital health industry worldwide in 2022, excluding the United States. During this year, the London metropolitan area accumulated around 1.1 billion U.S. dollars in investments in this industry.",
+   "note": "Worldwide; 2022; Excluding the United States",
+   "source": "StartUp Health Invested funding in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "London",
+    "Paris",
+    "Tel Aviv",
+    "Berlin",
+    "Toronto",
+    "Bengaluru",
+    "Barcelona",
+    "Singapore",
+    "Durham",
+    "Montreal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1100,
+      936,
+      667,
+      249,
+      198,
+      144,
+      144,
+      88,
+      81,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "How important is a digital health strategy to the following?",
+   "short": "Opinions of healthcare executives on importance of digital health in the U.S. 2022",
+   "unit": "",
+   "description": "In 2022, 98 percent of hospital executives surveyed in the United States indicated that having digital health strategy is very important for improving patient outcomes. While digital health strategies that help to improve workflow and operational productivity, patient satisfaction, and clinician satisfaction were each considered important to 96 percent of respondents.",
+   "note": "United States; February 2022; 100 respondents; 18 years and older; Hospital executives",
+   "source": "Panda Health; Sage Growth Partners Share of respondents who think it is important or very important",
+   "kind": "categorical",
+   "categories": [
+    "Improving patient outcomes",
+    "Improving workflow and operational productivity",
+    "Improving patient satisfaction",
+    "Improving clinician satisfaction/reducing burnout",
+    "Reducing patient leakage",
+    "Attracting new patients",
+    "Reducing technology costs and complexity"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.98,
+      0.96,
+      0.96,
+      0.96,
+      0.91,
+      0.9,
+      0.89
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Share of satisfaction with digital health tools in the United States as 2021, by type of activity",
+   "short": "Satisfaction of digital health technology users in the U.S. in 2021, by activity",
+   "unit": "",
+   "description": "In June 2021, 70 percent of people surveyed in the United States reported being satisfied with their experience of using a smart watch to monitor their health with only 5 percent reported to be dissatisfied. Furthermore, 67 percent of patients were satisfied with their experience of telemedicine appointments.",
+   "note": "United States; June 2021; 994 respondents; 18 years and older",
+   "source": "Mobiquity Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Using a smart watch to monitor my health",
+    "Utilizing a patient portal to engage with my healthcare provider",
+    "Telemedicine appointments",
+    "Utilizing a mobile app to manage my health",
+    "Using smart devices, such as connected blood pressure cuff or scale, to manage my health",
+    "Using a mobile app to find the lowest price for a prescription",
+    "Utilizing email to engage with my healthcare provider",
+    "Visiting the website of a prescribed drug for offers or information",
+    "Using a hands-free device or voice assistant like Alexa to manage a health condition",
+    "Searching the internet to diagnose ailments"
+   ],
+   "series": [
+    {
+     "name": "Dissatisfied",
+     "values": [
+      0.05,
+      0.06,
+      0.12,
+      0.05,
+      0.05,
+      0.08,
+      0.07,
+      0.07,
+      0.07,
+      0.09
+     ]
+    },
+    {
+     "name": "Satisfied",
+     "values": [
+      0.7,
+      0.68,
+      0.67,
+      0.64,
+      0.64,
+      0.63,
+      0.62,
+      0.57,
+      0.52,
+      0.51
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Share of clinicians who agree with the following statements regarding digital health in the U.S. and the UK in 2021",
+   "short": "Digital health impact on clinicians' work in the U.S. and the UK in 2021",
+   "unit": "",
+   "description": "According to a survey carried out among clinicians in the United States and the United Kingdom in 2021, 90 percent of respondents reported the quality of their work has benefitted from digital health systems because of the ability to access patient files, data and images. Furthermore, 88 percent advised digital health systems has benefitted their work due to information sharing.",
+   "note": "United Kingdom, United States; April 2021 and May 2021; 400 respondents; Clinicians",
+   "source": "HPE Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "The quality of my work has benefitted from digital health systems because of the ability to access patient files, data and images",
+    "The quality of my work has benefitted from the digital health systems I use because of information sharing",
+    "The quality of my work has benefitted from the digital health systems I use because of the ability to connect with other physicians",
+    "The current EHR systems I use supports improved patient outcomes"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.9,
+      0.88,
+      0.84,
+      0.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "When does your hospital plan to implement these solutions?",
+   "short": "Planned and implemented digital health technologies in the U.S. as of 2022",
+   "unit": "",
+   "description": "As of 2022, 91 percent of hospital executives surveyed in the United States reported their organization had already implemented telemedicine/e-visits, with five percent indicating they would implement this technology in the next year. Around 56 percent mentioned their hospital already implemented remote patient monitoring, while around a quarter had plans to implement it within the next twelve months.",
+   "note": "Worldwide; February 2022; 100 respondents; 18 years and older; Hospital executives",
+   "source": "Panda Health; Sage Growth Partners Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Telemedicine/e-visits",
+    "Remote monitoring",
+    "Patient engagement solutions",
+    "Self-service payments and estimates",
+    "Self-service patient scheduling",
+    "Financial clearance and price explanation tools",
+    "Digital care navigators/website chatbots",
+    "Digital reputation management tools",
+    "Digital care coordination/care journey orchestration tools"
+   ],
+   "series": [
+    {
+     "name": "We have this already",
+     "values": [
+      0.91,
+      0.56,
+      0.54,
+      0.5,
+      0.46,
+      0.36,
+      0.18,
+      0.16,
+      0.11
+     ]
+    },
+    {
+     "name": "We will implement this in the next year",
+     "values": [
+      0.05,
+      0.24,
+      0.25,
+      0.21,
+      0.29,
+      0.24,
+      0.32,
+      0.32,
+      0.34
+     ]
+    },
+    {
+     "name": "We will implement this in the next three year",
+     "values": [
+      0.04,
+      0.15,
+      0.16,
+      0.17,
+      0.14,
+      0.23,
+      0.29,
+      0.31,
+      0.34
+     ]
+    },
+    {
+     "name": "We have no plans to implement this",
+     "values": [
+      0.05,
+      0.05,
+      0.12,
+      0.11,
+      0.17,
+      0.21,
+      0.21,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Leading health and fitness apps worldwide in 2022, by downloads (in millions)",
+   "short": "Most downloaded health and fitness apps worldwide 2022",
+   "unit": "millions",
+   "description": "In 2022, mobile app Sweatcoin was the leading health and fitness apps worldwide, with 52 million downloads. The Blood Pressure App ranked second, with 51 million global downloads in the measured period. The official coronavirus contact tracing app in Indonesia PeduliLindungi ranked third, with 43 million global downloads in the measured period.",
+   "note": "Worldwide; 2022",
+   "source": "Apptopia Number of downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "Sweatcoin",
+    "Blood Pressure App",
+    "PeduliLindugi",
+    "Home Workout",
+    "Flo",
+    "Lucky Step",
+    "Da Fit",
+    "Six PAck in 30 Days",
+    "FitCoach",
+    "Zepp"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      52,
+      51,
+      43,
+      34,
+      33,
+      29,
+      27.8,
+      27.3,
+      26,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Most popular types of purchased health apps in the U.S. as of 2022",
+   "short": "Types of purchased health apps in the U.S. 2022",
+   "unit": "",
+   "description": "The displayed data about the leading types of purchased health apps among adult Americans in the preceding 12 months is based on the Statista Global Consumer Survey conducted in 2022. Nutrition-related apps were the most popular type of purchased health apps among Americans with 43 percent of respondents having purchased this type of app.",
+   "note": "United States; July 5, 2021 to June 24, 2022; 18-64 years; respondents which spent money on health apps on downloads, on a subscription or on in-app purchases",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Nutrition apps",
+    "Sleep tracking apps",
+    "Meditation / mindfulness",
+    "Symptom checkers",
+    "Patient apps",
+    "Medication checkers / reminders",
+    "Menstruation, contraception or fertility apps (only shown to women)",
+    "Apps to measure bodily functions",
+    "Apps to manage allergies",
+    "Apps to set up routines (e.g. non-smoking app)",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.43,
+      0.34,
+      0.31,
+      0.29,
+      0.29,
+      0.29,
+      0.25,
+      0.25,
+      0.23,
+      0.21,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of mHealth apps available in the Amazon Appstore from 1st quarter 2015 to 3rd quarter 2022",
+   "short": "Amazon Appstore: number of available medical apps as of Q3 2022",
+   "unit": "",
+   "description": "During the last measured period, there were 2,380 healthcare apps available on the Amazon Appstore, a small increase compared to the first quarter of 2022. The number of mHealth apps available to users on the Amazon Appstore remained constant between the end of 2016 to the beginning of 2021, experiencing a drop during the second quarter of 2021.",
+   "note": "Worldwide; Q1 2015 to Q2 2022; medical apps only; excluding health and fitness apps",
+   "source": "Appfigures",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '15",
+    "Q2 '15",
+    "Q3 '15",
+    "Q4 '15",
+    "Q1 '16",
+    "Q2 '16",
+    "Q3 '16",
+    "Q4 '16",
+    "Q1 '17",
+    "Q2 '17",
+    "Q3 '17",
+    "Q4 '17",
+    "Q1 '18",
+    "Q2 '18",
+    "Q3 '18",
+    "Q4 '18",
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2 '21",
+    "Q3 '21",
+    "Q4 '21",
+    "Q1 '22",
+    "Q2 '22",
+    "Q3 '22"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2,
+      96,
+      84,
+      144,
+      179,
+      2700,
+      2799,
+      2887,
+      2880,
+      2810,
+      2802,
+      2870,
+      2883,
+      2957,
+      3005,
+      3028,
+      3051,
+      3076,
+      3097,
+      3112,
+      3107,
+      2954,
+      2955,
+      2972,
+      3099,
+      2327,
+      2155,
+      2281,
+      2308,
+      2349,
+      2380
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of mHealth apps available in the Apple App Store from 1st quarter 2015 to 3rd quarter 2022",
+   "short": "Apple App Store: number of available medical apps as of Q3 2022",
+   "unit": "",
+   "description": "During the last measured period, there were 41,517 healthcare and medical apps available on the Apple App Store, down by 20 percent compared to the previous quarter. In 2020, the number of mHealth apps available to iOS users kept growing, and in the first quarter of 2021 reached its peak of almost 54,000 apps.",
+   "note": "Worldwide; Q1 2015 to Q3 2022; medical apps only; excluding health and fitness apps",
+   "source": "Appfigures",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '15",
+    "Q2 '15",
+    "Q3 '15",
+    "Q4 '15",
+    "Q1 '16",
+    "Q2 '16",
+    "Q3 '16",
+    "Q4 '16",
+    "Q1 '17",
+    "Q2 '17",
+    "Q3 '17",
+    "Q4 '17",
+    "Q1 '18",
+    "Q2 '18",
+    "Q3 '18",
+    "Q4 '18",
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2 '21",
+    "Q3 '21",
+    "Q4 '21",
+    "Q1 '22",
+    "Q2 '22",
+    "Q3 '22"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      28343,
+      33999,
+      36949,
+      39032,
+      41765,
+      45384,
+      47968,
+      46808,
+      46024,
+      47502,
+      47285,
+      47682,
+      47911,
+      47939,
+      47526,
+      46519,
+      45238,
+      46492,
+      44384,
+      45028,
+      45478,
+      45791,
+      48608,
+      51476,
+      53979,
+      45220,
+      47243,
+      49348,
+      51370,
+      52406,
+      41517
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of mHealth apps available in the Google Play Store from 1st quarter 2015 to 3rd quarter 2022",
+   "short": "Google Play: number of available medical apps as of Q3 2022",
+   "unit": "",
+   "description": "During the last measured period, there were 54,546 healthcare and medical apps available on the Google Play Store, a small decrease compared to the previous quarter. Between the beginning of 2020 and the end of 2021, the number of mHealth apps available to Android users via the Google Play Store kept growing, reaching over 65,300 thousand during the last quarter of 2021.",
+   "note": "Worldwide; Q1 2015 to Q3 2022; category medical; excluding health & fitness",
+   "source": "Appfigures",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '15",
+    "Q2 '15",
+    "Q3 '15",
+    "Q4 '15",
+    "Q1 '16",
+    "Q2 '16",
+    "Q3 '16",
+    "Q4 '16",
+    "Q1 '17",
+    "Q2 '17",
+    "Q3 '17",
+    "Q4 '17",
+    "Q1 '18",
+    "Q2 '18",
+    "Q3 '18",
+    "Q4 '18",
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2 '21",
+    "Q3 '21",
+    "Q4 '21",
+    "Q1 '22",
+    "Q2 '22",
+    "Q3 '22"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23955,
+      24995,
+      27417,
+      30385,
+      33725,
+      37084,
+      40165,
+      39579,
+      41263,
+      42703,
+      44951,
+      48375,
+      51133,
+      39989,
+      32104,
+      32984,
+      37143,
+      39525,
+      41377,
+      43623,
+      43285,
+      46360,
+      47140,
+      49809,
+      53054,
+      57205,
+      60646,
+      65324,
+      52565,
+      54603,
+      54546
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading health and fitness apps in the Google Play Store worldwide in June 2023, by number of downloads (in millions)",
+   "short": "Leading Android health apps worldwide 2023, by downloads",
+   "unit": "millions",
+   "description": "In June 2023, the Blood Sugar app was the most-downloaded health and fitness app in the Google Play Store worldwide. The app generated approximately three million downloads from Android users. The Lose Weight App for Men, published by the Australian Leap Fitness Group was the second-most popular app with over two million downloads from global Android users. NoiseFit: Health & Fitness - which allows users to track their sleep and physical exercise ranked third with 1.79 million [...]",
+   "note": "Worldwide; June 2023; downloads from the Google Play Store",
+   "source": "AppTweak Number of downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "Blood Sugar",
+    "Lose Weight App for Men",
+    "NoiseFit: Health & Fitness",
+    "HryFine",
+    "Lose Weight App for Women",
+    "Lose Weight at Home in 30 Days",
+    "Home Workout - No Equipment",
+    "Flo Ovulation & Period Tracker",
+    "Google Fit: Activity Tracking",
+    "Splits Training in 30 Days",
+    "Blood Pressure App: BP Monitor",
+    "boAt Wearables",
+    "Blood Pressure App",
+    "Replika: My AI Friend",
+    "adidas Running: Sports Tracker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.93,
+      2.09,
+      1.79,
+      1.56,
+      1.31,
+      1.31,
+      1.25,
+      1.22,
+      1.09,
+      1.08,
+      0.87,
+      0.82,
+      0.78,
+      0.78,
+      0.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of global mHealth companies who indicated they wanted to expand in the following regions in the next few years as of 2022",
+   "short": "Where global mHealth companies want to expand in the next few years 2022",
+   "unit": "",
+   "description": "As of 2022, over a fifth of surveyed mHealth companies indicated they plan to expand into Canada in the coming years, with around 18 percent wanting to expand in the United States. Furthermore, 13 percent of mHealth companies in the survey reported they wanted to expand in their existing markets.",
+   "note": "Worldwide; March and April, 2022; 300 respondents; Business leaders in the digital health and wellness sector in the U.S,, Canada, UK, Singapore, and Hong Kong",
+   "source": "Beazley; Opinion Matters",
+   "kind": "categorical",
+   "categories": [
+    "Canada",
+    "United States",
+    "UK",
+    "Grow in existing markets",
+    "Asia",
+    "Africa & Middle East",
+    "Latin America",
+    "Europe, excluding the UK"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.22,
+      0.18,
+      0.17,
+      0.13,
+      0.1,
+      0.08,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Perception of eHealth/mHealth apps for chronic pain sufferers in Europe as of 2020",
+   "short": "Effectiveness of eHealth/mHealth apps for chronic pain sufferers in Europe 2020",
+   "unit": "",
+   "description": "In 2020, 52 percent of respondents living with chronic pain in Europe believed that using eHealth/mHealth apps improved their health, while only seven percent of respondents disagreed with that. Furthermore, 39 percent reported that the use of apps would improve the physician-patient relationship,",
+   "note": "Europe; April 2020 to June 2020; 1,789 respondents; People with chronic pain",
+   "source": "Pain Alliance Europe",
+   "kind": "categorical",
+   "categories": [
+    "These apps benefit your health",
+    "The apps improve your relationship with your physician",
+    "The data from the app you share with your physician will improve your health outcomes",
+    "Using app data reduce your visits to doctors",
+    "Your physician encourage use of apps"
+   ],
+   "series": [
+    {
+     "name": "Yes",
+     "values": [
+      0.52,
+      0.39,
+      0.34,
+      0.31,
+      0.25
+     ]
+    },
+    {
+     "name": "No",
+     "values": [
+      0.07,
+      0.21,
+      0.2,
+      0.32,
+      0.21
+     ]
+    },
+    {
+     "name": "Don't know",
+     "values": [
+      0.4,
+      0.4,
+      0.46,
+      0.37,
+      0.54
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Share of reasons for using e-Health or m-Health among chronic pain sufferers in Europe as of 2020",
+   "short": "Reasons for chronic pain suffers using e-Health and m-Health in Europe in 2020",
+   "unit": "",
+   "description": "In 2020, approximately 22 percent of people living with chronic pain surveyed in Europe reported self-management as their main reason for using eHealth or m-Health apps, while nearly nine percent said their main reason for using the technology was to monitor their daily activities.",
+   "note": "Europe; April 2020 to June 2020.; 309 respondents; People with chronic pain",
+   "source": "Pain Alliance Europe",
+   "kind": "categorical",
+   "categories": [
+    "Self-management",
+    "Monitor my daily activities",
+    "Therapy prescribed by my physician",
+    "Planning my visit to physician",
+    "Therapies I have chosen myself",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2182,
+      0.0848,
+      0.0364,
+      0.0273,
+      0.0258,
+      0.0758
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Revenue of the online doctor consultations segment of the digital health market worldwide from 2017 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the online doctor consultations market worldwide 2017-2028",
+   "unit": "billion U.S. dollars",
+   "description": "Global revenue in the 'Online Doctor Consultations' segment of the digital health market was forecast to continuously increase between 2024 and 2028 by 9.5 billion U.S. dollars (an increase of 36.14 percent). After the eleventh consecutive increasing year, revenue is estimated to reach 35.83 billion U.S. dollars and therefore a new peak in 2028.",
+   "note": "",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.46,
+      7.31,
+      10.52,
+      15.35,
+      20.01,
+      20.8,
+      23.75,
+      26.29,
+      28.74,
+      31.28,
+      33.63,
+      35.83
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Distribution of availability to access telehealth/telemedicine services as of 2021, by region and vendor",
+   "short": "Availability of telehealth/telemedicine services in 2021, by region and vendor",
+   "unit": "",
+   "description": "In 2021, 82 percent of health insurers in Asia Pacific reported that telehealth/telemedicine services was available to their members through a third party vendor/partners. On the other hand, 12 percent of insurers worldwide mentioned that they did not offer telehealth/telemedicine services to their members.",
+   "note": "Worldwide; July to September, 2021; 209 respondents; Leading insurers",
+   "source": "Thinking Ahead Institute; Willis Towers Watson Share of insurers",
+   "kind": "categorical",
+   "categories": [
+    "Global",
+    "Latin America",
+    "Asia Pacific",
+    "Europe",
+    "Middle East and Africa"
+   ],
+   "series": [
+    {
+     "name": "Available through an owned entity",
+     "values": [
+      0.13,
+      0.34,
+      0.05,
+      0.18,
+      0.01
+     ]
+    },
+    {
+     "name": "Available through a third-party vendor/partner",
+     "values": [
+      0.75,
+      0.58,
+      0.82,
+      0.77,
+      0.59
+     ]
+    },
+    {
+     "name": "Not available/offered",
+     "values": [
+      0.12,
+      0.08,
+      0.13,
+      0.05,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Share of physician practices with telehealth functionality in the United States as of 2020, by specialty",
+   "short": "Physician practices with telehealth functions in the U.S. in 2020, by specialty",
+   "unit": "",
+   "description": "As of 2020, over 91 percent of practicing physicians in the United States specializing in nephrology had telehealth functionality, the highest share across all specialties. Nephrology is focused on kidneys and the function of the organ. Furthermore, approximately 90 percent of practices specialized in neurology had telehealth technology.",
+   "note": "United States; September 2020; 3,500 respondents; Physicians",
+   "source": "American Medical Association Share of practices with telehealth modality",
+   "kind": "categorical",
+   "categories": [
+    "Nephrology",
+    "Neurology",
+    "Hematology & oncology",
+    "Dermatology",
+    "Urology",
+    "Psychiatry",
+    "Gastroenterology",
+    "Pediatrics",
+    "Cardiology",
+    "Family & general practice"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.915,
+      0.897,
+      0.885,
+      0.873,
+      0.872,
+      0.858,
+      0.837,
+      0.829,
+      0.82,
+      0.809
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Distribution of views on the future and current issues with with telehealth in the U.S. and the UK in 2021",
+   "short": "Opinion on issues and future telehealth use in the U.S and the UK in 2021",
+   "unit": "",
+   "description": "According to a survey carried out among clinicians in the United States and the United Kingdom in 2021, 76 percent of respondents agreed that telehealth will make up the majority of patient care in the near future, although 68 percent reported they frequently had issues in delivering telehealth to patients.",
+   "note": "United Kingdom, United States; April 2021 and May 2021; 400 respondents; Clinicians",
+   "source": "HPE",
+   "kind": "categorical",
+   "categories": [
+    "Telehealth will make up the majority of patient care in the near future",
+    "We frequently have issues in delivering telehealth"
+   ],
+   "series": [
+    {
+     "name": "Agree",
+     "values": [
+      0.76,
+      0.68
+     ]
+    },
+    {
+     "name": "Disagree",
+     "values": [
+      0.22,
+      0.24
+     ]
+    },
+    {
+     "name": "Don't know",
+     "values": [
+      0.02,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Distribution of telehealth use among physicians before, during, and after the COVID-19 pandemic in the United States as of 2021",
+   "short": "Physician use of telehealth before and after the COVID-19 pandemic in the U.S 2021",
+   "unit": "",
+   "description": "According to a survey carried out among U.S. physicians, 65 percent of respondents had not used telehealth prior to the outbreak of the COVID-19 pandemic. During the peak of the pandemic, 43 percent of physicians were seeing over 50 percent of their patients via telehealth technology. In the future, 43 percent forecast they will use telehealth for between 10 and 49 percent of appointments.",
+   "note": "United States; October 25 to November 2, 2021; 240 respondents; Physicians",
+   "source": "Optum; Qualtrics",
+   "kind": "categorical",
+   "categories": [
+    "Pre-pandemic",
+    "Peak pandemic",
+    "Now",
+    "Post- pandemic (prediction)"
+   ],
+   "series": [
+    {
+     "name": "Exclusively (100%)",
+     "values": [
+      0.01,
+      0.16,
+      0.03,
+      0.03
+     ]
+    },
+    {
+     "name": "Heavy (>50%)",
+     "values": [
+      0.01,
+      0.43,
+      0.07,
+      0.04
+     ]
+    },
+    {
+     "name": "Moderate (10-49%)",
+     "values": [
+      0.1,
+      0.31,
+      0.44,
+      0.43
+     ]
+    },
+    {
+     "name": "Rarely (<10%)",
+     "values": [
+      0.23,
+      0.08,
+      0.43,
+      0.43
+     ]
+    },
+    {
+     "name": "Did/do not use",
+     "values": [
+      0.65,
+      0.02,
+      0.03,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Share of opinions after participating in a telehealth session in the United States as of 2021",
+   "short": "Opinion after use of telehealth services in the United States 2021",
+   "unit": "",
+   "description": "According to a survey carried out in the United States in 2021, 23 percent of respondents who had experienced a telehealth service reported it was much more effective than they thought it was going to be and a further 21 percent said they prefer remote consultations when possible. However, 41 percent of respondents indicated they accepted telehealth under the circumstances but would still rather go to in person consultations.",
+   "note": "United States; April 2021; 1,629 respondents; 18 years and older",
+   "source": "Measure Protocol",
+   "kind": "categorical",
+   "categories": [
+    "I still prefer in person but it is acceptable considering the circumstances",
+    "It is much more effective than I thought it would have been",
+    "I prefer remote consultations when it's possible",
+    "I can't wait to go back to in-person",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.41,
+      0.23,
+      0.21,
+      0.13,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Share of leading benefits of using telehealth/telemedicine according to patients in the U.S. in 2021",
+   "short": "Leading benefits to patients of using telehealth/telemedicine in the U.S. in 2021",
+   "unit": "",
+   "description": "In March 2021, approximately 86 percent of Americans surveyed reported that using telemedicine has made it easier to get the care they needed, while approximately 63 percent of the respondents who reported being afraid of going to the doctor said their fears were eased during their experience with telehealth.",
+   "note": "United States; March 2020 and March 2021 ; 2,000 respondents",
+   "source": "Sykes",
+   "kind": "categorical",
+   "categories": [
+    "Telemedicine has made it easier to get the care they need",
+    "Fears about going to the doctor were eased during their experience with telehealth",
+    "People say they’ve been able to see their doctor more often virtually",
+    "People say their healthcare costs have decreased since adopting telehealth",
+    "People feel that their doctor has come across more empathetic in virtual visits"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.8552,
+      0.6258,
+      0.5164,
+      0.3125,
+      0.3101
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Share of physicians who believed the following technology enhancements would improve telehealth appointments in the United States as of 2021",
+   "short": "Physicians' views on improvements to telehealth in the United States 2021",
+   "unit": "",
+   "description": "According to a survey conducted among physicians in the United States in 2021, 40 percent of respondents reported that better audio and video technology would improve telehealth appointments. Furthermore, just over a third of physicians felt the ability to integrate telehealth and electronic medical records (EMRs) would improve the virtual appointments.",
+   "note": "United States; October 25 to November 2, 2021; 240 respondents; Physicians",
+   "source": "Optum; Qualtrics",
+   "kind": "categorical",
+   "categories": [
+    "Better audio/video technology",
+    "Ability to integrate telehealth with their EMR",
+    "An easy-to-use mobile app version for patients",
+    "Ability to have three or more people join a virtual visit",
+    "Ability to integrate telehealth with their practice management system",
+    "Greater ability to manage their own appointments"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4,
+      0.35,
+      0.23,
+      0.15,
+      0.12,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Share of reasons for increased likelihood of consumers to use digital health in the United States as of 2021",
+   "short": "Reasons for consumers to be more likely to use digital health in the U.S. 2021",
+   "unit": "",
+   "description": "According to a survey conducted in the United States in 2021, 33 percent of respondents reported they would use digital health technology if their medical provider recommended them to do so. Furthermore, 30 percent of respondents advised they would be more likely to adopt digital health if they had more confidence in data security and privacy, while on the other hand 16 percent of respondents said nothing would make them more likely to use digital health.",
+   "note": "United States; May to July 2021; 1755 respondents; Three responses were possible",
+   "source": "Accenture Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Recommendations from my medical provider",
+    "If I had more confidence in data security and privacy",
+    "If I could receive better information about my health",
+    "If I knew more If i knew more about what digital options were available to me",
+    "Lower costs of devices/software/apps",
+    "Better quality devices/software/apps",
+    "Training on how to use digital devices/ software/ apps",
+    "Recommendations from friends and family",
+    "If I had better access to technology/internet connectivity",
+    "Don't know",
+    "Other",
+    "Nothing would make me more likely to use digital technology to manage my health"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.33,
+      0.3,
+      0.3,
+      0.2,
+      0.2,
+      0.16,
+      0.15,
+      0.12,
+      0.11,
+      0.06,
+      0.02,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Share of people who received a telemedicine consultation from their doctor in Europe between April 2020 and March 2021, by country",
+   "short": "Telemedicine consultations in Europe since the COVID-19 pandemic began as of 2021",
+   "unit": "",
+   "description": "Between April 2020 and March 2021, approximately 72 percent of the Spanish population had a received medical consultation from a doctor online or by phone due to the pandemic, the highest share across all European Union countries. Slovenia ranked second on the list with 65 percent of people in the country receiving a telemedicine consultation, followed by Poland at 62 percent.",
+   "note": "EU; April 2020 to March 2021; 18 years and older; * Low reliability. Read more",
+   "source": "Eurofound Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Spain",
+    "Slovenia",
+    "Poland",
+    "Ireland",
+    "Lithuania",
+    "Latvia",
+    "Finland",
+    "Cyprus",
+    "Czechia",
+    "Sweden",
+    "Denmark",
+    "Estonia",
+    "Hungary",
+    "Portugal",
+    "Luxembourg*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.716,
+      0.654,
+      0.619,
+      0.603,
+      0.563,
+      0.499,
+      0.486,
+      0.481,
+      0.469,
+      0.467,
+      0.462,
+      0.457,
+      0.45,
+      0.44,
+      0.435
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Rating of telemedicine received during the COVID-19 pandemic in Europe as of March 2021, by country",
+   "short": "Satisfaction of telemedicine during the pandemic in Europe in 2021",
+   "unit": "",
+   "description": "In 2021, 8.3 percent of Polish respondents reported the telemedicine consultation they received during the COVID-19 pandemic did not meet their needs at all. On the other hand, 67 percent of respondents in France indicated that telemedicine during the pandemic met their needs completely.",
+   "note": "EU; April 2020 to March 2021; 18 years and older; * Low reliability according to the source. Question was worded in the source as \"You indicated that you received a medical consultation online or by telephone. To what extent over the last [...] Read more",
+   "source": "Eurofound Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Austria*",
+    "Belgium",
+    "Bulgaria",
+    "Croatia",
+    "Cyprus*",
+    "Czechia",
+    "Denmark",
+    "Estonia",
+    "Finland",
+    "France*",
+    "Germany",
+    "Greece",
+    "Hungary",
+    "Ireland"
+   ],
+   "series": [
+    {
+     "name": "1 - Did not meet my needs at all",
+     "values": [
+      0.039,
+      0.037,
+      0.059,
+      0.027,
+      0.028,
+      0.035,
+      0.054,
+      0.031,
+      0.016,
+      0.012,
+      0.023,
+      0.021,
+      0.063,
+      0.05
+     ]
+    },
+    {
+     "name": "2",
+     "values": [
+      0.048,
+      0.049,
+      0.103,
+      0.047,
+      0.04,
+      0.057,
+      0.039,
+      0.068,
+      0.03,
+      0.036,
+      0.056,
+      0.059,
+      0.095,
+      0.078
+     ]
+    },
+    {
+     "name": "3",
+     "values": [
+      0.074,
+      0.159,
+      0.16,
+      0.225,
+      0.121,
+      0.122,
+      0.099,
+      0.143,
+      0.108,
+      0.052,
+      0.135,
+      0.175,
+      0.22,
+      0.166
+     ]
+    },
+    {
+     "name": "4",
+     "values": [
+      0.266,
+      0.276,
+      0.244,
+      0.201,
+      0.196,
+      0.216,
+      0.204,
+      0.271,
+      0.262,
+      0.231,
+      0.281,
+      0.244,
+      0.218,
+      0.255
+     ]
+    },
+    {
+     "name": "5 - Met my needs completely",
+     "values": [
+      0.573,
+      0.479,
+      0.434,
+      0.5,
+      0.615,
+      0.569,
+      0.605,
+      0.487,
+      0.584,
+      0.669,
+      0.505,
+      0.5,
+      0.403,
+      0.452
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Electronic health records (EHR) market value worldwide in 2020 and 2027 (in billion U.S. dollars)",
+   "short": "Electronic health records (EHR) market value worldwide 2020-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2020, the size of the electronic health records (EHR) market worldwide was valued at approximately 29 billion U.S. dollars. By 2027, the market size of EHRs globally was forecast to reach over 47 billion U.S. dollars.",
+   "note": "Worldwide; 2021; * Forecast. Read more",
+   "source": "Valuates Reports",
+   "kind": "categorical",
+   "categories": [
+    "2020",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      29.16,
+      47.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Market value of electronic health records & clinical workflow in Smart Hospitals, from 2018 to 2026 (in billion U.S. dollars)",
+   "short": "Smart hospital: market value of electronic health records 2018-2026",
+   "unit": "billion U.S. dollars",
+   "description": "Electronic health records (EHR) are expected to boost the market value of smart hospitals. In 2021, the global smart hospital market was valued at 35.9 billion U.S. dollars, from which 7.6 billion were linked to EHR and the consequent clinical workflow. According to future estimations, this market was forecast to increase in value and reach nearly 18 billion U.S. dollars in 2026.",
+   "note": "Worldwide; 2018 to 2026",
+   "source": "Global Market Research",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.6,
+      6.1,
+      7,
+      7.6,
+      8.8,
+      10.6,
+      13,
+      15.1,
+      17.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Share of global telemedicine companies who indicated they wanted to expand in the following regions in the next few years as of 2022",
+   "short": "Where global telemedicine companies want to expand in the next few years 2022",
+   "unit": "",
+   "description": "As of 2022, 22 percent of telemedicine companies surveyed worldwide had planned to expand into Canada in the coming years. Furthermore, 17 percent of companies reported to want to expand in the United States, while 13 percent wanted to grow in their existing markets.",
+   "note": "Worldwide; March and April 2022; 300 respondents; Business leaders in the digital health and wellness sector in the U.S,, Canada, UK, Singapore, and Hong Kong",
+   "source": "Beazley; Opinion Matters",
+   "kind": "categorical",
+   "categories": [
+    "Canada",
+    "United States",
+    "UK",
+    "Grow in existing markets",
+    "Asia",
+    "Europe, excluding the UK",
+    "Latin America",
+    "Africa & Middle East"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.22,
+      0.17,
+      0.15,
+      0.13,
+      0.12,
+      0.12,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Share of office-based physicians with EMR/EHR systems in the United States from 2001 to 2021",
+   "short": "Office-based U.S. physicians with EMR/EHR systems 2001-2021",
+   "unit": "",
+   "description": "In 2021, just over 88 percent of office-based U.S. physicians reported to use any electronic medical record/electronic health record system, a slight decline from 2018 although overall use has increased significantly compared to even a decade previously. The share of physicians using a certified EHR system increased from 72 percent in 2019 to 78 percent in 2021.",
+   "note": "United States; 2001 to 2021; around 10,000 physicians",
+   "source": "CDC",
+   "kind": "timeseries",
+   "categories": [
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2017*",
+    "2018",
+    "2019",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "Any EMR/EHR system",
+     "values": [
+      0.182,
+      0.173,
+      0.173,
+      0.208,
+      0.239,
+      0.292,
+      0.348,
+      0.42,
+      0.483,
+      0.51,
+      0.57,
+      0.718,
+      0.784,
+      0.828,
+      0.869,
+      0.859,
+      0.921,
+      0.899,
+      0.882
+     ]
+    },
+    {
+     "name": "Basic system",
+     "values": [
+      0.105,
+      0.118,
+      0.169,
+      0.218,
+      0.279,
+      0.339,
+      0.396,
+      0.481,
+      0.505,
+      0.539
+     ]
+    },
+    {
+     "name": "Certified system",
+     "values": [
+      0.779,
+      0.797,
+      0.787,
+      0.723,
+      0.778
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Patient engagement with patient portals according to EHR executives in the United States as of 2022",
+   "short": "Patient engagement with patient portals in the United States 2022",
+   "unit": "",
+   "description": "According to a survey of EHR executives in the United States in 2022, 28 percent of respondents reported strong and frequent engagement from patients on their patient portals. A further 44 percent said there had been good engagement, while only four percent indicated little to no interest from patients.",
+   "note": "United States; 2022; 25 respondents; Executives at the top 20 EHRs",
+   "source": "Health Gorilla",
+   "kind": "categorical",
+   "categories": [
+    "Strong and frequent engagement from patients",
+    "Good engagement from patients",
+    "Some engagement from patients",
+    "Little to no interest from patients"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.44,
+      0.24,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Medical information patients would want to access via an electronic health record (EHR) in the United States as of 2020",
+   "short": "Type of medical information patients would want access via EHRs in the U.S 2020",
+   "unit": "",
+   "description": "According to a survey carried out in the United States in 2020, 89 percent of respondents wanted access to laboratory test results through electronic health records (EHRs). Furthermore information relating to medical conditions, medications, and treatment plans were all ranked high as things patients would want access to. The COVID-19 pandemic has also highlighted the importance of patient access to some of this information as 87 percent of respondents wanted access to their [...]",
+   "note": "United States; June 1 to July 3, 2020; 1,213 respondents; 18 years and older; Survey was offered in both English and Spanish",
+   "source": "Pew Charitable Trusts",
+   "kind": "categorical",
+   "categories": [
+    "Laboratory test results",
+    "History of medical conditions",
+    "List of medications and prescription medicines",
+    "Vital signs",
+    "Immunizations",
+    "Treatment plans",
+    "Radiology images and reports",
+    "Physician and clinical notes",
+    "Insurance billing and claims",
+    "Allergies",
+    "Advanced care plans or directives",
+    "Family medical history",
+    "Behavioral or mental health history",
+    "Substance use history",
+    "Demographic information",
+    "Social determinants of health"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.89,
+      0.88,
+      0.87,
+      0.87,
+      0.87,
+      0.87,
+      0.87,
+      0.84,
+      0.84,
+      0.83,
+      0.82,
+      0.8,
+      0.74,
+      0.61,
+      0.58,
+      0.57
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Share of young healthcare professionals who believe the following digital health technologies are best for improving patient care in the next five years, as of January 2020",
+   "short": "Most beneficial digital technologies in future according to young health workers 2020",
+   "unit": "",
+   "description": "According to a worldwide survey of young healthcare professionals carried out in January 2020, the most beneficial digital health technology to improving patient care in the five years is digital health records with 25 percent of respondents agreeing with this. Furthermore, 22 percent of respondents stated that using AI to integrate diagnostics would bring benefits to patient care in the near future.",
+   "note": "Worldwide; November 15, 2019 to January 13, 2020; 2,867 respondents; 40 years and younger; Healthcare professionals (defined as all medical staff, including doctors, nurses, surgeons, radiologists, etc.)",
+   "source": "Philips Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Digital health records",
+    "AI to integrate diagnostics",
+    "AI to optimize operational efficiency",
+    "Healthcare professional-to-healthcare professional telehealth",
+    "Healthcare professional-to-patient telehealth"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.25,
+      0.22,
+      0.2,
+      0.2,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Main electronic medical record (EMR) software used by physicians in Canada as of 2021",
+   "short": "EMR software used by physicians in Canada in 2021",
+   "unit": "",
+   "description": "In 2021, it was found that 17 percent of physicians in Canada surveyed were using Accuro EMR as their main software for electronic medical records. Furthermore, 11 percent of physicians reported using the software Med Access, while 10 percent used PS Suite EMR.",
+   "note": "Canada; April 29, to May 25, 2021; 2,071 respondents; Physicians",
+   "source": "Canada Health Infoway Share of physicians using the software",
+   "kind": "categorical",
+   "categories": [
+    "Accuro EMR",
+    "Med Access",
+    "PS Suite EMR",
+    "OSCAR",
+    "Epic EMR",
+    "Wolf EMR",
+    "Meditech",
+    "Profile by Intrahealth",
+    "Cerner",
+    "Connect Care",
+    "Telus (Unspecified)",
+    "Healthquest EMR",
+    "PLEXIA EMR",
+    "Sunrise Clinical Manager",
+    "Medesync"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.17,
+      0.11,
+      0.1,
+      0.07,
+      0.07,
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Artificial intelligence (AI) in healthcare market size worldwide from 2021 to 2030 (in billion U.S. dollars)",
+   "short": "AI in healthcare market size worldwide 2021-2030",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the artificial intelligence (AI) in healthcare market was worth around 11 billion U.S. dollars worldwide. It was forecast that the global healthcare AI market would be worth almost 188 billion U.S. dollars by 2030, increasing at a compound annual growth rate of 37 percent from 2022 to 2030.",
+   "note": "Worldwide; 2021; * Forecast. Read more",
+   "source": "Precedence Research",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*",
+    "2029*",
+    "2030*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11.06,
+      15.1,
+      20.65,
+      28.24,
+      38.66,
+      52.97,
+      72.62,
+      99.63,
+      136.79,
+      187.95
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Share of clinicians who believed in ten years' time the majority of their decisions will be based on support tools that utilize artificial intelligence (AI) as of December 2021, by region",
+   "short": "Clinicians' who believed clinical decisions will be based on AI by 2031, by region",
+   "unit": "",
+   "description": "According to a survey conducted in December 2021, 64 percent of clinicians in the Asia Pacific and South America regions believed that in future they will make the majority of their decisions using clinical decision support tools that use artificial intelligence (AI). On the other hand, fewer than 50 percent of clinicians surveyed in Europe and North America agreed that the majority of clinical decisions in ten years' time will be based on AI.",
+   "note": "Worldwide; October to December 2021; 2,838 respondents; Clinicians",
+   "source": "Elsevier",
+   "kind": "categorical",
+   "categories": [
+    "South America",
+    "Asia Pacific",
+    "Middle East & Africa",
+    "North America",
+    "Europe"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.64,
+      0.64,
+      0.62,
+      0.47,
+      0.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 51,
+   "title": "Distribution of AI strategies implemented by health organizations in the U.S. as of 2021",
+   "short": "AI strategies of health organizations in the U.S. 2021",
+   "unit": "",
+   "description": "According to a survey conducted in the U.S. in 2021, 48 percent of healthcare organizations had an AI strategy in place and had implemented it, while a further 37 percent had an AI strategy but had not yet implemented it. On the other hand, only two percent of organizations did not plan on creating an AI strategy.",
+   "note": "United States; 2021; 600 respondents; 500 senior healthcare executives & 100 state and federal health officials",
+   "source": "Optum",
+   "kind": "categorical",
+   "categories": [
+    "Have a strategy in place and have implemented it",
+    "Have a strategy in place but have not implemented it",
+    "Don't have a strategy in place but are planning on creating one",
+    "Don't have a strategy in place and don't plan on creating one"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.37,
+      0.13,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 52,
+   "title": "Which best describes your hospital or health system's artificial intelligence (AI)/machine learning (ML) efforts to date?",
+   "short": "State of AI/machine learning in hospitals in the U.S. in 2021",
+   "unit": "",
+   "description": "According to a survey conducted among healthcare providers in the United States in April 2021, 24 percent of respondents reported that in their hospital or health systems artificial intelligence (AI)/machine learning efforts were in the pilot stage and the rollout was to be decided, while a further 22 percent said that it is in the early stage initiatives.",
+   "note": "United States; March 2021 to April 2021; 2,743*; *The source adds the following: 225 health systems, 309 clinicians, 147 payers and 2,062 patients Read more",
+   "source": "HIMSS",
+   "kind": "categorical",
+   "categories": [
+    "Pilots, rollout TBD",
+    "Haven't started",
+    "Early stage initiatives",
+    "Targeted for high impact",
+    "System-wide coordinated",
+    "I don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.24,
+      0.23,
+      0.22,
+      0.19,
+      0.08,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 53,
+   "title": "Perception of pace of AI adoption in healthcare in the United States as of 2021",
+   "short": "Perception of AI adoption speed in healthcare in the U.S. in 2021",
+   "unit": "",
+   "description": "According to a survey of healthcare leaders in the United States in 2021, 53 percent of respondents thought that AI adoption is moving at an appropriate speed. Although, just over a third of respondents believed AI in healthcare is moving faster than it should.",
+   "note": "United States; January 3 to January 16, 2021; 200 respondents",
+   "source": "KPMG",
+   "kind": "categorical",
+   "categories": [
+    "AI adoption is moving faster than it should",
+    "AI adoption is moving at an appropriate speed",
+    "AI adoption is moving slower than it should"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.53,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 54,
+   "title": "Perceived value of AI in healthcare* compared to prior expectations in the United States as of 2021",
+   "short": "Perception of the value of AI in healthcare in the U.S. in 2021",
+   "unit": "",
+   "description": "According to a survey of business leaders in the healthcare and life sciences sector in the United States in 2021, 40 percent of respondents thought that AI has brought more value to their industry than was previously expected. A further 16 percent said that AI has brought significant value, although 13 percent thought AI has brought somewhat less value than was promised.",
+   "note": "United States; January 3 to January 16, 2021; 200 respondents",
+   "source": "KPMG",
+   "kind": "categorical",
+   "categories": [
+    "Significantly less value",
+    "Somewhat less value",
+    "Expected level of value",
+    "Somewhat more value",
+    "Significantly more value"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.04,
+      0.13,
+      0.27,
+      0.4,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 55,
+   "title": "Share of AI technologies used or planned to be used in the healthcare sector in the European Union as of 2021, by technology",
+   "short": "Level of adoption of AI in healthcare in the EU in 2021, by technology",
+   "unit": "",
+   "description": "In 2021, 42 percent of healthcare organizations in the European Union were currently using AI technologies for disease diagnosis, while a further 19 percent had plans to employ this technology within in the next three years. Furthermore, 33 percent of healthcare organizations surveyed planned to use patient monitoring AI tool in the next three years",
+   "note": "EU; 2021; Hospitals and other healthcare providers",
+   "source": "European Commission Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Disease Diagnosis",
+    "Patient Monitoring technologies",
+    "Medical Robotics",
+    "Other",
+    "Genome Analysis"
+   ],
+   "series": [
+    {
+     "name": "Currently using",
+     "values": [
+      0.42,
+      0.39,
+      0.28,
+      0.17,
+      0.14
+     ]
+    },
+    {
+     "name": "Plan to employ",
+     "values": [
+      0.19,
+      0.33,
+      0.25,
+      0.17,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 56,
+   "title": "Share of clinicians using Artificial Intelligence technologies (AI) in selected European countries in 2020, by country",
+   "short": "Share of clinical doctors using Artificial Intelligence in Europe 2020",
+   "unit": "",
+   "description": "In 2020, the use of Artificial Intelligence technologies (AI) among doctors was rare in Europe. According to this survey, only five percent of the responding European clinicians used Artificial Intelligence. Nonetheless, the use of AI seemed slightly higher in Germany and Denmark, where seven percent of clinicians stated to use the technology. On the other hand, with two percent of surveyed doctors declaring to use AI, Portugal was behind the European average in terms of AI implementation.",
+   "note": "Europe; March 23 to April 4, 2020; 1.781; Clinicians",
+   "source": "Deloitte",
+   "kind": "categorical",
+   "categories": [
+    "Germany",
+    "Denmark",
+    "Norway",
+    "Netherlands",
+    "Europe",
+    "United Kingdom (UK)",
+    "Italy",
+    "Portugal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.07,
+      0.07,
+      0.06,
+      0.05,
+      0.05,
+      0.05,
+      0.05,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 57,
+   "title": "Share of users who agree with the following statements regarding the impact of AI technologies in healthcare in the European Union (EU) as of 2021",
+   "short": "Users' opinions on the impact of use of AI in healthcare in the EU in 2021",
+   "unit": "",
+   "description": "According to a survey conducted in 2021 among users of AI technologies in healthcare in the EU, 61 percent of respondents totally agreed these technologies speed up working processes, while a further 28 percent somewhat agreed with this. Furthermore, 94 percent of respondents overall agreed that AI technologies in healthcare improved the quality of treatment.",
+   "note": "EU; 2021; Users of AI technologies in healthcare",
+   "source": "European Commission Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Speed up working process",
+    "More efficient work processes",
+    "Improvement in the quality of diagnosis decisions",
+    "Improvement in the quality of treatment",
+    "Improvement in patients' satisfaction"
+   ],
+   "series": [
+    {
+     "name": "Totally agree",
+     "values": [
+      0.61,
+      0.58,
+      0.56,
+      0.5,
+      0.33
+     ]
+    },
+    {
+     "name": "Somewhat Agree",
+     "values": [
+      0.28,
+      0.31,
+      0.42,
+      0.44,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 58,
+   "title": "Distribution of feelings of trust regarding the use of AI in healthcare in the European Union as of 2021, by application",
+   "short": "Trust towards use of AI in healthcare in the EU in 2021",
+   "unit": "",
+   "description": "In 2021, 25 percent of respondents surveyed in the European Union (EU) reported they would fully trust AI enabled decisions for applications in the area of patient monitoring, while a further 69 percent of respondents indicated that they would trust AI-results in combination with expert judgments. Overall, the majority of respondents indicated that they would trust AI-results combined with judgements from health experts.",
+   "note": "EU; 2021",
+   "source": "European Commission Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Disease Diagnostics",
+    "Medical Robotics",
+    "Genome Analysis",
+    "Patient Monitoring"
+   ],
+   "series": [
+    {
+     "name": "I trust AI-enabled decisions",
+     "values": [
+      0.03,
+      0.19,
+      0.22,
+      0.25
+     ]
+    },
+    {
+     "name": "Combine AI-results and expert judgement",
+     "values": [
+      0.89,
+      0.75,
+      0.67,
+      0.69
+     ]
+    },
+    {
+     "name": "Rely only on expert judgement",
+     "values": [
+      0.08,
+      0.06,
+      0.06,
+      0.06
+     ]
+    },
+    {
+     "name": "Don't know",
+     "values": [
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 59,
+   "title": "Distribution of healthcare professional's time burden currently and forecast with the implementation of AI technologies in Europe in 2020",
+   "short": "AI reducing time burden of admin tasks to healthcare professionals in Europe 2020",
+   "unit": "",
+   "description": "In 2020, in Europe, it was estimated that a physician's working time is roughly split 50-50 between treating patients and administrative tasks. However, it has been forecast with the implementation of AI technologies in healthcare, physicians would be able to spend 17 percent more of their time on patients because the time burden of administrative tasks would be reduced.",
+   "note": "Europe; 2020",
+   "source": "MedTech Europe",
+   "kind": "categorical",
+   "categories": [
+    "Physician's time spent on treating patients",
+    "Physician's time spent on administrative tasks",
+    "Medical assistants' time spent on patients",
+    "Medical assistants' on Q&A calls and transcription"
+   ],
+   "series": [
+    {
+     "name": "Current",
+     "values": [
+      0.5,
+      0.5,
+      0.65,
+      0.35
+     ]
+    },
+    {
+     "name": "With AI",
+     "values": [
+      0.67,
+      0.33,
+      0.85,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 60,
+   "title": "Distribution of healthcare nurses' time burden currently and forecast with the implementation of AI technologies in Europe in 2020",
+   "short": "AI reducing time burden of admin tasks for nurses in Europe 2020",
+   "unit": "",
+   "description": "In Europe, in 2020, it was estimated that nurses spent on average 75 percent of their time interacting with patients and the rest of their time on administrative or regulatory activities. However, with the implementation of AI technologies in healthcare, it has been forecast that nurses would be able to spend around 7.5 percent more of their time with patients. Indeed, AI should reduce the time burden of administrative and regulatory tasks.",
+   "note": "Europe; 2020",
+   "source": "MedTech Europe",
+   "kind": "categorical",
+   "categories": [
+    "Time spent interacting with patients",
+    "Time on administrative or regulatory activities"
+   ],
+   "series": [
+    {
+     "name": "Current",
+     "values": [
+      0.75,
+      0.25
+     ]
+    },
+    {
+     "name": "With AI",
+     "values": [
+      0.825,
+      0.175
+     ]
+    }
+   ]
+  }
+ ]
+}

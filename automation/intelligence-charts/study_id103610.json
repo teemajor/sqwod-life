@@ -1,0 +1,799 @@
+{
+ "studyId": "103610",
+ "study": "functional foods market in china",
+ "file": "research/statista/study_id103610_functional-foods-market-in-china.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Size of the worldwide functional food and beverage market from 2020 to 2021 with a forecast to 2028 (in billion U.S. dollars)",
+   "short": "Size of the worldwide functional food and beverage market 2020-2028",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the global functional foods and beverage market was worth 281.14 billion U.S. dollars. The market is predicted to grow at a compound annual growth rate of about 9.5 percent between 2021 and 2028. For 2028, the market is forecast to be worth over half a trillion U.S. dollars.",
+   "note": "Worldwide; 2020 to 2021; * Forecasts. Data for years 2022 to 2027 has been calculated by Statista using a CAGR with starting and end points provided by the source. Read more",
+   "source": "Fortune Business Insights; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      258.8,
+      281.14,
+      307.77,
+      336.91,
+      368.82,
+      403.75,
+      441.98,
+      483.84,
+      529.66
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Market size of health and functional food in China from 2013 to 2022 with estimates until 2027 (in billion yuan)",
+   "short": "Value of the functional foods market in China 2013-2027",
+   "unit": "billion yuan",
+   "description": "In 2022, the size of China’s functional foods market scaled at around 298.9 billion yuan, showing an increase from 270.8 billion yuan in the year prior. With an increasing disposable income and awareness of healthy lifestyle, the desire for a balanced and healthy diet expanded rapidly in recent years.",
+   "note": "China; 2013 to 2022; * Estimate. One yuan equals approximately 0.14 U.S. dollars and 0.13 euros (as of May 2023). Read more",
+   "source": "iiMedia Research",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      99.3,
+      114.4,
+      128.2,
+      144.6,
+      161.4,
+      188,
+      222.7,
+      250.3,
+      270.8,
+      298.9,
+      328.2,
+      355.4,
+      377.5,
+      400.5,
+      423.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Total production volume of health and functional food in China from 2016 to 2021 with an estimate for 2022 (in 1,000 metric tons)",
+   "short": "Production of functional food in China 2016-2022",
+   "unit": "1,000 metric tons",
+   "description": "In 2021, a total of around 727 thousand metric tons of functional food was produced in China, an increase from about 682 thousand metric tons in the year prior. The demand for health and functional food in China was approximately 719 thousand metric tons, representing a rough supply-demand equilibrium.",
+   "note": "China; 2016 to 2021; * Estimate. Read more",
+   "source": "Intelligence Research Group; Website (weihengag.com)",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      506,
+      539,
+      588,
+      641,
+      682,
+      727,
+      772
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Total demand volume for health and functional food in China from 2016 to 2021 with an estimate for 2022 (in 1,000 metric tons)",
+   "short": "Demand for functional food in China 2016-2022",
+   "unit": "1,000 metric tons",
+   "description": "In 2021, the demand for functional food in China was around 719 thousand metric tons, an increase from about 677 thousand metric tons in the year prior. The production of health and functional food in China was approximately 727 thousand metric tons, representing a rough supply-demand equilibrium.",
+   "note": "China; 2016 to 2021; * Estimate. Read more",
+   "source": "Intelligence Research Group; Website (weihengag.co)",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      510,
+      549,
+      593,
+      636,
+      677,
+      719,
+      761
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Breakdown of sales revenue from health and functional food in China in 2020, by type",
+   "short": "Distribution of revenue of functional food in China 2020, by type",
+   "unit": "",
+   "description": "In 2020, vitamin and dietary supplements accounted for nearly 55 percent of China's total revenue generated from functional food. Fitness nutritions, though only taking up 1.2 percent of the total revenue that year, recorded the highest CAGR between 2012 and 2020.",
+   "note": "China; 2020",
+   "source": "Euromonitor; Huaon.com; Zhihu Share of revenue",
+   "kind": "categorical",
+   "categories": [
+    "Vitamin and dietary supplements",
+    "Traditional herbal food",
+    "Children nutrition",
+    "Body-weight managing food",
+    "Fitness nutrition",
+    "Hypoallergenic food"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5494,
+      0.3054,
+      0.085,
+      0.0434,
+      0.0119,
+      0.005
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Breakdown of retail sales of health and functional food in China in 2022, by channel",
+   "short": "Leading retail channels for health food in China 2022",
+   "unit": "",
+   "description": "In 2022, around 45.8 percent of health food in China were sold through e-commerce channel, increasing rapidly over the past years. Besides, direct sales still held a popularity among health food shoppers and contributed to a quarter of the total sales.",
+   "note": "China; 2022; * Calculated by Statista. Read more",
+   "source": "Eastmoney.com; Euromonitor; Guoyuan Securities",
+   "kind": "categorical",
+   "categories": [
+    "E-commerce",
+    "Pharmacy",
+    "Direct sales",
+    "Others*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.458,
+      0.268,
+      0.257,
+      0.017
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Import value of health and functional food in China from 2011 to 2021 (in million U.S. dollars)",
+   "short": "Import value of functional food in China 2011-2021",
+   "unit": "million U.S. dollars",
+   "description": "In 2021, China imported about 5.18 billion U.S.dollar-worth functional food. The export value of functional food during the same period amounted to around 2.61 billion U.S. dollars.",
+   "note": "China; 2011 to 2021",
+   "source": "CCCMHPIE",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      780,
+      859,
+      1093,
+      1179,
+      1392,
+      1537,
+      2188,
+      3012,
+      3401,
+      4210,
+      5182.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Export value of health and functional food in China from 2011 to 2021 (in million U.S. dollars)",
+   "short": "Export value of functional food in China 2011-2021",
+   "unit": "million U.S. dollars",
+   "description": "In 2021, China exported about 2.61 billion U.S.dollar-worth functional food. The export value of functional food during the same period amounted to around 5.18 billion U.S. dollars.",
+   "note": "China; 2011 to 2021",
+   "source": "CCCMHPIE",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      643,
+      708,
+      901,
+      970,
+      1146,
+      1228,
+      1370,
+      1671,
+      1880,
+      2180,
+      2614.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of import value of health and functional food in China in 2021, by leading trade partner",
+   "short": "Share of functional food imported to China 2021. by supplying country",
+   "unit": "",
+   "description": "In 2021, China imported the most functional food from the United States, accounting for 20 percent of its total import market. Australia ranked second among China's functional food supplying countries, with a share of around 14 percent.",
+   "note": "China; 2021",
+   "source": "CCCMHPIE Share of import value",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Australia",
+    "Germany",
+    "Indonesia",
+    "Japan",
+    "Malaysia",
+    "Thailand",
+    "Netherlands"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2,
+      0.14,
+      0.09,
+      0.08,
+      0.06,
+      0.04,
+      0.04,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Market concentration rates of functional foods and dietary supplements industry in China in 2021, by category",
+   "short": "Concentration ratio of health foods and dietary supplements market in China 2021",
+   "unit": "",
+   "description": "In 2021, the 10 largest Chinese vitamin and dietary supplement manufacturers accounted for about 36 percent of the total market. In comparison, the 10 leading sports supplement companies acquired more than three-fourth of the market.",
+   "note": "China; 2021",
+   "source": "Euromonitor; Forward Intelligence (Qianzhan); Sina.com.cn Market share",
+   "kind": "categorical",
+   "categories": [
+    "CR2",
+    "CR5",
+    "CR10"
+   ],
+   "series": [
+    {
+     "name": "Traditional nutritious food",
+     "values": [
+      0.105,
+      0.185,
+      0.268
+     ]
+    },
+    {
+     "name": "Sports supplements",
+     "values": [
+      0.422,
+      0.684,
+      0.751
+     ]
+    },
+    {
+     "name": "Weight management",
+     "values": [
+      0.281,
+      0.426
+     ]
+    },
+    {
+     "name": "Vitamin and dietary supplements",
+     "values": [
+      0.161,
+      0.273,
+      0.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Market share of leading brands in health and functional foods industry in China in 2021",
+   "short": "Major health foods brands' market share in China 2021",
+   "unit": "",
+   "description": "In 2021, China's leading health foods brand, By-health, covered 6.4 percent of the total market. China's health food industry is highly competitive, with the three leading brands only taking up less than 15 percent of the market.",
+   "note": "China; 2021",
+   "source": "AskCI Consulting; Euromonitor; Website (ihe-china.com)",
+   "kind": "categorical",
+   "categories": [
+    "By-health",
+    "Infinitus",
+    "Amway",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.064,
+      0.039,
+      0.036,
+      0.861
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Sales volume of health and functional foods brands sold on Alibaba's retail platforms in China in May 2020, by brand (in unit)",
+   "short": "Major health foods brands base on sales volume on Taobao and Tmall in China 2020",
+   "unit": "unit",
+   "description": "In May 2020, By-Health ranked first among all health foods brands in terms of online sales on Alibaba's retail platforms, with nearly 585,000 units sold in that month. In the same month, the Australian health foods brand Swisse sold around 269,000 units of products on Taobao and Tmall.",
+   "note": "China; May 2020",
+   "source": "Flanders Investment & Trade; taosj.com; Various sources (Trade Shanghai) Sales volume in unit",
+   "kind": "categorical",
+   "categories": [
+    "By-health",
+    "Swisse",
+    "Conba",
+    "Yangshengtang",
+    "Cenovis",
+    "Fancl",
+    "Centrum",
+    "Jamieson",
+    "Blackmores",
+    "GNC"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      584960,
+      269262,
+      215218,
+      76227,
+      61834,
+      57007,
+      42389,
+      42350,
+      32225,
+      32030
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Annual revenue of By-health Co., Ltd. from 2015 to 2022 (in billion yuan)",
+   "short": "By-health's annual revenue 2015-2022",
+   "unit": "billion yuan",
+   "description": "In 2022, Chinese nutritional and dietary supplements company By-health recorded an annual revenue of around 7.86 billion yuan, representing a growth from 7.43 billion yuan the year prior. By-health is one of China's leading functional foods and nutrious supplements company.",
+   "note": "China; 2015 to 2022",
+   "source": "Byhealth; cninfo.com.cn",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.27,
+      2.31,
+      3.11,
+      4.35,
+      5.26,
+      6.09,
+      7.43,
+      7.86
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Market value of dietary supplements industry in China from 2013 to 2022 (in billion yuan)",
+   "short": "Size of dietary supplements industry in China 2013-2022",
+   "unit": "billion yuan",
+   "description": "As of 2022, China's dietary supplements market amounted to 200.2 billion yuan, increasing from about 190.8 billion yuan in the year prior. The market size of dietary supplements in China has more than doubled since 2013.",
+   "note": "China; 2013, 2019 to 2022",
+   "source": "Euromonitor; Syntun",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      99.7,
+      167,
+      174.3,
+      190.8,
+      200.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Sales revenue of vitamins and dietary supplements on e-commerce platforms in China from 2011 to 2021 (in billion yuan)",
+   "short": "Online sales value of vitamins and supplements China 2011-2021",
+   "unit": "billion yuan",
+   "description": "In 2021, the online sales value of dietary supplements in China was around 77 billion yuan, growing slightly from 76 billion yuan in the previous year. The market for dietary supplements has grown more than tenfold compared to a decade ago.",
+   "note": "China; 2011 to 2021",
+   "source": "Eastmoney.com; Euromonitor; Statista estimates; Various sources (Topsperity Securities)",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6,
+      7.5,
+      14.5,
+      19,
+      25.5,
+      33,
+      41,
+      50,
+      59.5,
+      76,
+      77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Import and export value of dietary supplements in China from 2011 to 2019 (in million U.S. dollars)",
+   "short": "Foreign trade value of dietary supplements in China 2011-2019",
+   "unit": "million U.S. dollars",
+   "description": "In 2019, China imported approximately 3.39 billion U.S. dollar-worth of dietary supplements, while the export value was around 1.87billion U.S. dollars. The trade deficit of nutritional supplements has been widening in the past decades in China.",
+   "note": "China; 2011 to 2019",
+   "source": "CCCMHPIE; Statista estimates",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "Import",
+     "values": [
+      780,
+      850,
+      1090,
+      1160,
+      1380,
+      1530,
+      2170,
+      3010,
+      3390
+     ]
+    },
+    {
+     "name": "Export",
+     "values": [
+      630,
+      710,
+      910,
+      990,
+      1120,
+      1220,
+      1360,
+      1660,
+      1870
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Export value of dietary supplement ingredients in China in 2019, by ingredient (in million U.S. dollars)",
+   "short": "Health food product ingredients' export value in China 2019, by ingredient",
+   "unit": "million U.S. dollars",
+   "description": "In 2019, Sodium Glutamate was the most exported food supplement ingredient from China, with an export value amounting to almost 629 million U.S. dollars. China is the largest dietary supplement ingredients producer and exporter in the world.",
+   "note": "China; 2019",
+   "source": "CCCMHPIE Export value in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Sodium Glutamate",
+    "Lysine Ester",
+    "Threonine",
+    "Vitamin E",
+    "Vitamin C",
+    "DL-Pantothenic acid",
+    "Natural honey",
+    "Active yeast",
+    "Vitamin A",
+    "Vitamin B1",
+    "Vitamin B12",
+    "Vitamin B6",
+    "Coenzyme Q10"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      628.72,
+      539.46,
+      433.71,
+      421.78,
+      347.77,
+      311.39,
+      235.02,
+      232.67,
+      227.93,
+      197.04,
+      195.66,
+      170.43,
+      140.53
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Market share of leading dietary supplements brands in China in 2019",
+   "short": "Major food supplement brands' market share in China 2019",
+   "unit": "",
+   "description": "In 2019, Chinese company By-health covered almost 10 percent of China's dietary supplements market. The dietary supplements market in China is relatively competitive, with the five leading brands only taking up around 35 percent of the total market.",
+   "note": "China; 2019",
+   "source": "Eastmoney.com; Euromonitor; Forward Intelligence (Qianzhan) Market share",
+   "kind": "categorical",
+   "categories": [
+    "By-health",
+    "Infinitus",
+    "Amway",
+    "Perfect (China)",
+    "Dong-E-E-Jiao",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.099,
+      0.091,
+      0.058,
+      0.045,
+      0.044,
+      0.663
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Most favored naturally healthy food among consumers in China as of 1st quarter of 2021",
+   "short": "Most popular naturally healthy food among consumers in China Q1 2021",
+   "unit": "",
+   "description": "Chinese red dates, also named jujube, were the most prevalent naturally healthy food among Chinese consumers as of the first quarter of 2021, which was agreed by 49 percent of consumers. Goji berries, honey, and walnuts were also favored by Chinese consumers because of their health effects.",
+   "note": "China",
+   "source": "iiMedia Research Share of consumers",
+   "kind": "categorical",
+   "categories": [
+    "Chinese red dates (Jujube)",
+    "Goji berries/Black goji berries",
+    "Honey/Propolis",
+    "Walnuts",
+    "Donkey-hide gelation (Ejiao)",
+    "Cereal",
+    "Chinese yam",
+    "American ginseng",
+    "Cow and goat milk powder",
+    "Bird's nest"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4904,
+      0.4234,
+      0.3947,
+      0.3804,
+      0.3254,
+      0.3062,
+      0.2775,
+      0.2201,
+      0.2177,
+      0.2033
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Change in consumption of fruits and vegetables after coronavirus COVID-19 in China as of June 2020",
+   "short": "Fruits and vegetables consumption after COVID-19 in China 2020",
+   "unit": "",
+   "description": "According to a survey in June 2020, more than half of Chinese respondents said they consumed more fruit and vegetables after the coronavirus pandemic. Meanwhile, nearly 60 percent of respondents cooked more often at home.",
+   "note": "China; June 2020; 3,573 respondents; among residents of tier-1 and tier-2 cities",
+   "source": "High-Value Nutrition National Science Challenge",
+   "kind": "categorical",
+   "categories": [
+    "More than before COVID-19",
+    "Same as before COVID-19",
+    "Less than before COVID-19"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.51,
+      0.41,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Change in purchases of food products that claim to have health benefits after coronavirus COVID-19 in China as of June 2020",
+   "short": "Health and functional food consumption after COVID-19 in China 2020",
+   "unit": "",
+   "description": "According to a survey in June 2020, around 27 percent of Chinese respondents said they bought more food products that claim to have health benefits after the coronavirus pandemic. Meanwhile, among respondents with digestive issues, around 30 percent of them purchased more health and functional foods.",
+   "note": "China; June 2020; 3,573 respondents; among residents of tier-1 and tier-2 cities",
+   "source": "High-Value Nutrition National Science Challenge",
+   "kind": "categorical",
+   "categories": [
+    "More than before COVID-19",
+    "Same as before COVID-19",
+    "Less than before COVID-19"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.61,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Distribution of monthly spending on health and functional food products in China as of February 2023",
+   "short": "Monthly spending on health and functional foods in China 2023",
+   "unit": "",
+   "description": "According to a survey among Chinese respondents in March 2023, around 33.9 percent of respondents spent between 300 and 500 yuan on health and functional food products per month. Health food products have become increasingly popular among Chinese consumers in recent years.",
+   "note": "China; March 2023; 2,066 respondents",
+   "source": "iiMedia Research Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Below 100 yuan",
+    "100 to 300 yuan",
+    "300 to 500 yuan",
+    "500 to 1,000 yuan",
+    "Above 1,000 yuan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.09,
+      0.342,
+      0.339,
+      0.166,
+      0.06
+     ]
+    }
+   ]
+  }
+ ]
+}

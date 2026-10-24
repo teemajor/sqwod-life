@@ -1,0 +1,1714 @@
+{
+ "studyId": "6326",
+ "study": "fitnessbranche statista dossier",
+ "file": "research/statista/study_id6326_fitnessbranche-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      3.8,
+      4,
+      4.1,
+      4.6,
+      4.7,
+      4.8,
+      5.1,
+      5.2,
+      5.3,
+      5.5,
+      4.2,
+      2.2,
+      4.9,
+      5.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      5753,
+      5888,
+      7114,
+      7304,
+      7566,
+      7940,
+      8026,
+      8332,
+      8684,
+      8988,
+      9343,
+      9669,
+      9538,
+      9492,
+      9149,
+      9111
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      4.4,
+      4.7,
+      5.1,
+      5.2,
+      5.5,
+      6.1,
+      6.5,
+      7.3,
+      7.6,
+      7.9,
+      8.6,
+      9.1,
+      9.5,
+      10.1,
+      10.6,
+      11.1,
+      11.7,
+      10.3,
+      9.3,
+      10.3,
+      11.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Mitglieder",
+    "Nichtmitglieder"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.134,
+      0.766
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Vereinigtes Königreich",
+    "Deutschland",
+    "Spanien"
+   ],
+   "series": [
+    {
+     "name": "2018",
+     "values": [
+      5250,
+      5330,
+      2290
+     ]
+    },
+    {
+     "name": "2019",
+     "values": [
+      5510,
+      5510,
+      2350
+     ]
+    },
+    {
+     "name": "2020",
+     "values": [
+      2650,
+      4160,
+      1340
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      3560,
+      2230,
+      1580
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      5000,
+      4900,
+      2100
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Vereinigtes Königreich",
+    "Deutschland",
+    "Spanien"
+   ],
+   "series": [
+    {
+     "name": "2018",
+     "values": [
+      9.9,
+      11.1,
+      5.3
+     ]
+    },
+    {
+     "name": "2019",
+     "values": [
+      10.4,
+      11.7,
+      5.5
+     ]
+    },
+    {
+     "name": "2020",
+     "values": [
+      8.3,
+      10.3,
+      4.3
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      9.6,
+      9.3,
+      4.8
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      10.4,
+      10.3,
+      5.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Basic-Fit",
+    "RSG Group*",
+    "Pure Gym",
+    "FitX",
+    "Fitness Park Group"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      3.35,
+      1.81,
+      1.66,
+      0.84,
+      0.84
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Anzahl M&A-Transaktionen",
+     "values": [
+      19,
+      19,
+      17,
+      20,
+      24,
+      17,
+      16,
+      19,
+      13,
+      12
+     ]
+    },
+    {
+     "name": "Anlagenanzahl pro Transaktion",
+     "values": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      29,
+      53,
+      18,
+      32,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      140,
+      235,
+      335
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Einzel",
+     "values": [
+      4506,
+      4594,
+      4884,
+      4819,
+      4844,
+      4856,
+      4867,
+      4888,
+      4829,
+      4775,
+      4374,
+      4238
+     ]
+    },
+    {
+     "name": "Ketten",
+     "values": [
+      1716,
+      1841,
+      1527,
+      1637,
+      1786,
+      1867,
+      1960,
+      2074,
+      2097,
+      2155,
+      2301,
+      2385
+     ]
+    },
+    {
+     "name": "Mikro",
+     "values": [
+      1344,
+      1505,
+      1615,
+      1876,
+      2054,
+      2265,
+      2516,
+      2707,
+      2612,
+      2562,
+      2474,
+      2488
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Clever fit",
+    "Bodystreet",
+    "Körperformen",
+    "Fit+",
+    "EASYFITNESS",
+    "McFIT",
+    "Mrs. Sporty",
+    "Physio Aktiv",
+    "Kieser Training",
+    "fitbox"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      436,
+      290,
+      262,
+      177,
+      170,
+      165,
+      149,
+      145,
+      117,
+      106
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Juni 2013",
+    "August 2014",
+    "Mai 2015",
+    "September 2016",
+    "Mai 2017",
+    "Dezember 2018",
+    "Dezember 2019",
+    "Dezember 2020",
+    "Dezember 2021",
+    "Dezember 2022"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      153,
+      166,
+      166,
+      170,
+      168,
+      163,
+      163,
+      165,
+      165,
+      165
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Juni 2013",
+    "August 2014",
+    "Mai 2015",
+    "September 2016",
+    "Mai 2017",
+    "Dezember 2018",
+    "Dezember 2019",
+    "Dezember 2020",
+    "Dezember 2021",
+    "Dezember 2022",
+    "Dezember 2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      131,
+      190,
+      228,
+      284,
+      309,
+      383,
+      422,
+      408,
+      427,
+      436,
+      439
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Juni 2013",
+    "August 2014",
+    "Mai 2015",
+    "September 2016",
+    "Mai 2017",
+    "Dezember 2018",
+    "Dezember 2019",
+    "Dezember 2020",
+    "Dezember 2021",
+    "Dezember 2022"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      88,
+      86,
+      84,
+      83,
+      83,
+      70,
+      63,
+      57,
+      57,
+      52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Bodystreet",
+    "Körperformen",
+    "fitbox",
+    "EMS-Lounge",
+    "terra sports"
+   ],
+   "series": [
+    {
+     "name": "2020",
+     "values": [
+      290,
+      242,
+      69,
+      64,
+      54
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      270,
+      245,
+      98,
+      70,
+      54
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      290,
+      262,
+      106,
+      70,
+      54
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      24600,
+      27200,
+      31100
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "RSG Group*",
+    "FitX",
+    "Clever Fit**",
+    "Easyfitness**",
+    "BestFit Group",
+    "LifeFit Group**",
+    "Kieser Training**",
+    "FIT/ONE",
+    "ACISO**",
+    "Pfitzenmeier Gruppe"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      1351000,
+      993000,
+      834000,
+      450000,
+      412000,
+      350000,
+      204000,
+      175000,
+      170000,
+      164000
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021*",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Kette",
+     "values": [
+      3.9,
+      4.2,
+      3.7,
+      4.3,
+      4.8,
+      5.2,
+      5.7,
+      6.2,
+      5.5,
+      5,
+      6,
+      6.8
+     ]
+    },
+    {
+     "name": "Einzel",
+     "values": [
+      3.6,
+      3.9,
+      4.9,
+      4.7,
+      4.7,
+      4.8,
+      4.8,
+      4.9,
+      4.3,
+      3.8,
+      3.9,
+      4.1
+     ]
+    },
+    {
+     "name": "Mikro",
+     "values": [
+      0.4,
+      0.5,
+      0.5,
+      0.5,
+      0.6,
+      0.6,
+      0.6,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      386,
+      543,
+      726
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      44.8,
+      44,
+      43.3,
+      42.6,
+      42.1,
+      42.1,
+      44.9,
+      45.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Jan 20",
+    "Feb 20",
+    "Mrz 20",
+    "Apr 20*",
+    "Mai 20*",
+    "Jun 20",
+    "Jul 20",
+    "Aug 20",
+    "Sep 20",
+    "Okt 20",
+    "Nov 20*",
+    "Dez 20*",
+    "Jan 21*",
+    "Feb 21*",
+    "Mrz 21*",
+    "Apr 21*",
+    "Mai 21*",
+    "Jun 21",
+    "Jul 21",
+    "Aug 21",
+    "Sep 21",
+    "Okt 21",
+    "Nov 21",
+    "Dez 21",
+    "Jan 22",
+    "Feb 22",
+    "Mrz 22",
+    "Apr 22",
+    "Mai 22",
+    "Jun 22",
+    "Jul 22",
+    "Aug 22",
+    "Sep 22",
+    "Okt 22",
+    "Nov 22",
+    "Dez 22",
+    "Jan 23",
+    "Feb 23",
+    "Mrz 23",
+    "Apr 23",
+    "Mai 23",
+    "Jun 23",
+    "Jul 23",
+    "Aug 23",
+    "Sep 23",
+    "Okt 23",
+    "Nov 23",
+    "Dez 23",
+    "Jan 24",
+    "Feb 24",
+    "Mrz 24",
+    "Apr 24"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      99.8,
+      100.1,
+      100.1,
+      100.2,
+      100.2,
+      100.1,
+      99.8,
+      99.8,
+      99.7,
+      99.9,
+      100.1,
+      100.1,
+      100.2,
+      99.7,
+      99.8,
+      100,
+      100,
+      101.2,
+      101.5,
+      101.5,
+      101.8,
+      102,
+      102.4,
+      102.3,
+      102.6,
+      102.4,
+      102.6,
+      103.3,
+      103.4,
+      103.8,
+      104.4,
+      105.1,
+      105.6,
+      105.9,
+      106.2,
+      106.4,
+      106.8,
+      107.2,
+      107.1,
+      107.9,
+      108,
+      108.2,
+      108.2,
+      109.7,
+      109.6,
+      109.5,
+      109.9,
+      109.8,
+      110.2,
+      111.3,
+      112,
+      112.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      100,
+      101,
+      104.3,
+      108.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "10 (extrem fit/auf Leistungssportniveau)",
+    "9",
+    "8",
+    "7",
+    "6",
+    "5",
+    "4",
+    "3",
+    "2",
+    "1",
+    "0 (überhaupt nicht fit)"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.02,
+      0.02,
+      0.06,
+      0.13,
+      0.19,
+      0.19,
+      0.14,
+      0.1,
+      0.05,
+      0.05,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Besuchen häufig ein Fitnessstudio",
+     "values": [
+      8.04,
+      8.21,
+      7.95,
+      7.72,
+      7.62
+     ]
+    },
+    {
+     "name": "Besuchen ab und zu ein Fitnessstudio",
+     "values": [
+      12.11,
+      12.52,
+      12.56,
+      12.59,
+      12.33
+     ]
+    },
+    {
+     "name": "Besuchen nie ein Fitnessstudio",
+     "values": [
+      50.45,
+      49.9,
+      50.03,
+      50.29,
+      50.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Anteil der Männer, die mindestens ab und zu ein Fitnessstudio besuchen, in Prozent",
+    "Anteil der Frauen, die mindestens ab und zu ein Fitnessstudio besuchen, in Prozent",
+    "Männliche Fitnessstudio- Besucher in Millionen",
+    "Weibliche Fitnessstudio- Besucher in Millionen",
+    "Anteil der Männer an den Fitnessstudio-Besuchern",
+    "Anteil der Frauen an den Fitnessstudio-Besuchern"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      31.7,
+      25.3,
+      10.95,
+      8.99,
+      55,
+      45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "14-19 Jahre",
+    "20-29 Jahre",
+    "30-39 Jahre",
+    "40-49 Jahre",
+    "50-59 Jahre",
+    "60-69 Jahre",
+    "70 Jahre und älter"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      1.58,
+      4.65,
+      4.2,
+      3.14,
+      3.08,
+      2.08,
+      1.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Zu Hause und draußen",
+    "Ausschließlich zu Hause",
+    "Ausschließlich Fitnesseinrichtungen (Fitness-/EMS-Studios; Yoga-Studios etc.)",
+    "Ausschließlich draußen",
+    "Fitnesseinrichtungen, zu Hause und draußen",
+    "Fitnesseinrichtungen und zu Hause",
+    "Fitnesseinrichtungen und draußen",
+    "Andere Einrichtungen"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.25,
+      0.22,
+      0.18,
+      0.13,
+      0.09,
+      0.07,
+      0.03,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Bessere Gesundheit / Gesundheit erhalten",
+    "Mehr Kraft und / oder Ausdauer",
+    "Weniger Beschwerden (z.B. Rückenschmerzen)",
+    "Gesundheitliche Vorsorge (z.B. Herz-Kreislauf, Fettleibigkeit)",
+    "Bessere psychische Stimmung / Zufriedenheit / Glücksmomente)",
+    "Abnehmen / nicht zunehmen",
+    "Höhere Leistungsfähigkeit",
+    "Stressabbau / \"Kopf frei kriegen\"",
+    "Stärkung des Immunsystems",
+    "Bessere Körperkontrolle",
+    "Besseres Aussehen",
+    "Höhere Konzentrationsfähigkeit, z.B. bei der Arbeit",
+    "Anerkennung im Familien- und Freundeskreis",
+    "Ich bin / fühle mich körperlich nicht fit"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.64,
+      0.58,
+      0.53,
+      0.52,
+      0.48,
+      0.47,
+      0.46,
+      0.45,
+      0.45,
+      0.38,
+      0.35,
+      0.22,
+      0.08,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Ich will auch mal raus / vor die Tür / in anderer Umgebung sein",
+    "Fehlende Motivation ohne Termindruck oder 'Gruppenzwang'",
+    "Zu wenig Platz zu Hause",
+    "Fehlende Ansprechpartner:in bei Fragen",
+    "Angst vor Verletzungen / Verspannungen durch falsche Bewegung(sabläufe)",
+    "Sorge, nicht mitzukommen, z.B. Übungen nicht schnell genug zu verstehen oder in der vorgesehenen Zeit zu absolvieren",
+    "Doppelte Kosten für Online-Kurse und Sportverein bzw. Fiitnessstudio",
+    "Fehlende Anerkennung / Motivation durch Trainer:in oder andere Teilnehmende",
+    "Kein ungestörter Sport zu Hause möglich",
+    "Sonstiges",
+    "Ich sehe / sähe keine Nachteile"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.3,
+      0.29,
+      0.27,
+      0.27,
+      0.18,
+      0.17,
+      0.14,
+      0.13,
+      0.13,
+      0.01,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Gymnastik-/ Yogamatte",
+    "Hanteln",
+    "Fitnessband",
+    "Fahrrad-Ergometer / Indoor Cycling Bike / Rollentrainer",
+    "Hula Hoop Reifen",
+    "Crosstrainer",
+    "Hantelbank / Curlbank",
+    "Laufband",
+    "Rudergerät / Ruder-Ergometer",
+    "Nichts davon"
+   ],
+   "series": [
+    {
+     "name": "Unverändert seit vor der Pandemie vorhanden",
+     "values": [
+      0.43,
+      0.37,
+      0.28,
+      0.26,
+      0.15,
+      0.13,
+      0.11,
+      0.09,
+      0.06,
+      0.2
+     ]
+    },
+    {
+     "name": "Während der Pandemie angeschafft",
+     "values": [
+      0.14,
+      0.1,
+      0.1,
+      0.08,
+      0.13,
+      0.06,
+      0.06,
+      0.06,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Fitnesstudio-Mitgliedschaft",
+    "Online-Dienste (Webseite oder App)",
+    "Wellness-Behandlung (z. B. Massage)",
+    "Mitgliedschaft im Sportverein",
+    "Sport-Einzelkurs/Einzelstunde",
+    "Personal Trainer",
+    "Ich habe kein Geld für Fitness- oder Gesundheitsdienstleistungen ausgegeben",
+    "Sonstiges"
+   ],
+   "series": [
+    {
+     "name": "Daten",
+     "values": [
+      0.13,
+      0.08,
+      0.08,
+      0.07,
+      0.05,
+      0.04,
+      0.77,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Aktivitätsverlauf (z.B. Tracken von Trainingseinheiten)",
+    "Digitale Mitgliederverwaltung",
+    "Indikator der Live-Auslastung",
+    "Kursbuchung im Voraus",
+    "Ernährungsberatung",
+    "Digitale Kurse On-Demand"
+   ],
+   "series": [
+    {
+     "name": "Wunsch",
+     "values": [
+      0.54,
+      0.52,
+      0.5,
+      0.48,
+      0.39,
+      0.37
+     ]
+    },
+    {
+     "name": "Aktuelle Nutzung",
+     "values": [
+      0.28,
+      0.27,
+      0.19,
+      0.32,
+      0.19,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Detaillierte, ausführliche Erläuterung der einzelnen Übungen",
+    "Hinweis auf Übungen, die bei Beschwerden nicht gemacht werden sollten, und Angebot einer Ersatzübung",
+    "Kostenfreies Angebot",
+    "Werbefreiheit",
+    "Nachgewiesene Qualifikation der Trainerin / des Trainers",
+    "Qualifizierter Anbieter",
+    "Hinweise zur Erfolgskontrolle",
+    "Regelmäßiges Angebot",
+    "Unterschiedliche Kameraeinstellungen",
+    "Punkte beim Bonusprogramm meiner Krankenkasse",
+    "In jeder Trainingseinheit der/die gleiche*r Trainer*in",
+    "Ergänzendes Material zum Download",
+    "Bekannte*r Trainer*in"
+   ],
+   "series": [
+    {
+     "name": "Ausschlaggebend",
+     "values": [
+      0.2,
+      0.19,
+      0.24,
+      0.14,
+      0.12,
+      0.1,
+      0.06,
+      0.06,
+      0.05,
+      0.07,
+      0.05,
+      0.03,
+      0.03
+     ]
+    },
+    {
+     "name": "Sehr wichtig",
+     "values": [
+      0.44,
+      0.42,
+      0.35,
+      0.33,
+      0.34,
+      0.33,
+      0.31,
+      0.29,
+      0.25,
+      0.22,
+      0.21,
+      0.2,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Zeitunabhängig / Teilnahme, wann ich will",
+    "Weniger zeitaufwendig, da z.B. An- und Abfahrt entfällt",
+    "Ortsunabhängig / kann ich machen, wo ich will",
+    "Keiner schaut mir zu / bin unbeobachtet",
+    "Kein Ansteckungsrisiko durch Treffen mit anderen Personen",
+    "Kostengünstiger als Fitnessstudio oder Sportverein",
+    "Unterbrechungen / Aussteigen unkompliziert möglich",
+    "Kann ich besser im Alltag (Familie, Arbeit, andere Hobbys und Termine etc.) integrieren",
+    "Kann den inneren Schweinehund leichter überwinden, weil ich nicht noch vor die Tür muss.",
+    "Ich sehe / sähe keine Vorteile"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.58,
+      0.49,
+      0.46,
+      0.43,
+      0.42,
+      0.41,
+      0.37,
+      0.36,
+      0.24,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Pilates / Rückengymnastik",
+    "Workouts für einzelne Körperbereiche, z.B. Bauch-Beine-Po",
+    "Kurse zum Abnehmen / Fatburner",
+    "Yoga / Mobilitätstraining",
+    "Spezielles Herz- / Kreislauftraining (z.B. HIIT)",
+    "Hantel-Krafttraining",
+    "Tanzen / Tanztraining",
+    "Laufen outdoor",
+    "Laufen indoor (z.B. Laufband)",
+    "Thai-Chi",
+    "Outdoor Biking / Fahrradtraining im Freien",
+    "Indoor Cycling (z.B. Ergometer, Indoor Cycling Bike, Rollentrainer)",
+    "Boxtraining",
+    "Indoor Rudern am Rudergerät",
+    "Vorbereitungskurse für Skifahren / Ski-Gymnastik"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.38,
+      0.37,
+      0.32,
+      0.29,
+      0.28,
+      0.21,
+      0.21,
+      0.2,
+      0.15,
+      0.15,
+      0.15,
+      0.12,
+      0.11,
+      0.08,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Pamela Reif",
+    "Mady Morrison",
+    "Sascha Huber",
+    "albertoson",
+    "SophiaThiel",
+    "Michael Smolik",
+    "Tim Gabel",
+    "BodyKiss",
+    "Kevin Wolter",
+    "Coach Stef"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      9690,
+      3150,
+      1670,
+      1330,
+      994,
+      814,
+      712,
+      661,
+      646,
+      487
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Lisa del Piero",
+    "FitnessOskar",
+    "Mady Morrison",
+    "MarkusRuehl",
+    "Pamela Reif",
+    "Rafael McStan",
+    "StrongandFlexTV",
+    "albertoson",
+    "Sascha Huber",
+    "JohannesLuckas"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      937.37,
+      842.58,
+      723.13,
+      682.64,
+      672.55,
+      610.02,
+      362.62,
+      173.05,
+      146.57,
+      119.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      245.6,
+      511.1,
+      1091.1,
+      2330.7,
+      2965.7,
+      3077.8
+     ]
+    }
+   ]
+  }
+ ]
+}

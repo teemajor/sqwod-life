@@ -1,0 +1,1139 @@
+{
+ "studyId": "138007",
+ "study": "public relations worldwide",
+ "file": "research/statista/Fitness Marketing/study_id138007_public-relations-worldwide.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Public relations industry size worldwide from 2020 to 2022 (in billion U.S. dollars)",
+   "short": "PR industry's size worldwide 2020-2022",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, the combined fee income of the leading public relations (PR) agencies worldwide amounted to more than 17 billion U.S. dollars, up 12 percent from less than 15.3 billion dollars a year earlier. According to the same source, PR firms in the United States alone accounted for 11.4 billion dollars of the global 2022 figure.",
+   "note": "Worldwide; 2020 to 2022; according to data sent by over 400 PR firms worldwide and revenue estimates for significant firms choosing not to send data; * Statista calculated the figures based on the source's data. Read more",
+   "source": "PRovoke; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020*",
+    "2021*",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.18,
+      15.25,
+      17.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Value of the public relations (PR) tools market worldwide from 2022 to 2030 (in billion U.S. dollars)",
+   "short": "Value of the public relations (PR) tools market worldwide 2022-2030",
+   "unit": "billion U.S. dollars",
+   "description": "The source forecast that in 2023 the public relations (PR) tools market value will amount to about 14.79 billion U.S. dollars, up more than 10 percent from 13.4 billion dollars a year earlier. The annual figure was projected to continue to rise, surpassing 29 billion dollars by 2030.",
+   "note": "Worldwide; 2022; * Forecast. An exponential development of the values was assumed to estimate the annual values between 2022 and 2030, which were provided by the source. Read more",
+   "source": "ReportLinker; Statista; Yahoo! Finance",
+   "kind": "timeseries",
+   "categories": [
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*",
+    "2029*",
+    "2030*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.4,
+      14.79,
+      16.32,
+      18.01,
+      19.88,
+      21.94,
+      24.22,
+      26.73,
+      29.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Distribution of the public relations (PR) tools market value worldwide in 2022, by selected market",
+   "short": "Distribution of the PR tools market value worldwide 2022, by selected market",
+   "unit": "",
+   "description": "In 2022, the United States alone accounted for over one-quarter (or approximately 27.6 percent) of the global public relations (PR) tools market value. China's share stood slightly below 17 percent.",
+   "note": "Worldwide; 2022",
+   "source": "ReportLinker; Statista; Yahoo! Finance",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "China",
+    "Rest of the world"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2761,
+      0.1687,
+      0.5552
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Leading holding groups and independent networks worldwide in 2022, by PR operations revenue (in million U.S. dollars)",
+   "short": "Top holding groups & independent networks worldwide in 2022, by PR operations revenue",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, Omnicom Public Relations Group Inc. – part of Omnicom Group Inc. – had a PR fee income of almost 1.55 billion U.S. dollars, making it the world's largest holding by that criterion. WPP plc and the Interpublic Group of Companies, Inc. (IPG) followed, with PR operations revenues of 1.4 billion and 1.39 billion dollars, respectively. The world's top PR firm, Edelman's global fee income surpassed one billion dollars in 2022.",
+   "note": "Worldwide; 2022; including PR fee income from subsidiary firms",
+   "source": "PRovoke",
+   "kind": "categorical",
+   "categories": [
+    "Omnicom PR Group (U.S.)",
+    "WPP (UK)",
+    "Interpublic Group (U.S.)",
+    "DJE Holdings (U.S.)",
+    "PROI Worldwide (U.S.)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1545.8,
+      1403.6,
+      1386.2,
+      1218.17,
+      1128.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Leading public relations (PR) agencies worldwide in 2022, by fee income (in million U.S. dollars)",
+   "short": "Leading public relations (PR) agencies worldwide 2022, by fee income",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, Edelman continued to top the global ranking of public relations (PR) agencies by annual fee income, with its result surpassing one billion U.S. dollars. All the world's top six firms are based in the United States. Weber Shandwick and BCW rounded the top three, with estimated fee incomes of 920 million and 840 million dollars, respectively.",
+   "note": "Worldwide; 2022; * Including PR fee income from subsidiary firms. ** Estimated by the source. Numbers have been rounded. Read more",
+   "source": "PRovoke Fee income in million U.S. dollars Agency (headquarters)",
+   "kind": "categorical",
+   "categories": [
+    "Edelman (U.S.)*",
+    "Weber Shandwick (U.S.)* **",
+    "BCW (U.S.)**",
+    "FleishmanHillard (U.S.)* **",
+    "Ketchum (U.S.)* **",
+    "Real Chemistry (U.S.)*",
+    "Vector Inc.* (Japan)",
+    "Brunswick (UK)",
+    "MSL (France)**",
+    "FGS Global (U.S.)*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1079.74,
+      920,
+      840,
+      750,
+      600,
+      555,
+      494.08,
+      454.72,
+      425,
+      421
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Edelman's fee income from 2009 to 2022 (in million U.S. dollars)",
+   "short": "Edelman's fee income 2009-2022",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, Edelman and its subsidiaries generated nearly 1.08 billion U.S. dollars in fee income worldwide, up 10 percent from 985 million dollars a year earlier. Headquartered in Chicago, United States, Edelman was the world's leading public relations (PR) agency by fee income.",
+   "note": "Worldwide; 2009 to 2022; including fee income from subsidiary firms",
+   "source": "PRovoke",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      447.84,
+      531.55,
+      614.9,
+      665.6,
+      746.67,
+      812,
+      854.58,
+      874.97,
+      893.59,
+      888.41,
+      892.04,
+      840.02,
+      984.92,
+      1079.74
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Fastest-growing public relations (PR) agencies worldwide in 2022",
+   "short": "Fastest-growing public relations (PR) agencies worldwide 2022",
+   "unit": "",
+   "description": "In 2022, Singapore-based Redhill Communications and its subsidiaries formed the world's fastest-growing public relations (PR) agency, with its PR fee income increasing by nearly 240 percent compared to the previous year. Ascend Agency (headquartered in the United States) and Pomilio Blumm (from Italy) followed with growth rates of 173 and 167 percent, respectively. The ranking of top global holdings by PR operations revenue in 2022 included Omnicom, WPP, and IPG.",
+   "note": "Worldwide; 2022; constant currency; among leading 250 PR agencies worldwide; * Including PR fee income from subsidiary firms. Read more",
+   "source": "PRovoke PR fee income growth rate Agency (headquarters)",
+   "kind": "categorical",
+   "categories": [
+    "Redhill Communications (Singapore)*",
+    "Ascend Agency (U.S.)",
+    "Pomilio Blumm (Italy)",
+    "Farner Consulting (Switzerland)*",
+    "Premier (UK)",
+    "SEC Newgate spa (Italy)*",
+    "Firehouse Strategies (U.S.)",
+    "Sandpiper (Hong Kong)",
+    "Wachsman (U.S.)*",
+    "Vector Inc. (Japan)*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.384,
+      1.734,
+      1.671,
+      1.226,
+      1.135,
+      0.844,
+      0.829,
+      0.821,
+      0.82,
+      0.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Omnicom Group Inc.'s public relations (PR) revenue from 2018 to 2023 (in billion U.S. dollars)",
+   "short": "Omnicom Group Inc.'s public relations (PR) revenue 2018-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, New York City-based advertising network Omnicom Group Inc.'s public relations (PR) revenue amounted to approximately 1.58 billion U.S. dollars, up less than two percent from 1.55 billion dollars a year earlier. Meanwhile, Omnicom's total revenues reached nearly 14.7 billion dollars in 2023.",
+   "note": "Worldwide; 2018 to 2023",
+   "source": "Omnicom",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.44,
+      1.38,
+      1.31,
+      1.4,
+      1.55,
+      1.58
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Organic growth of Omnicom Group Inc.'s public relations (PR) revenue worldwide from 2019 to 2023",
+   "short": "Organic growth of Omnicom's public relations (PR) revenue worldwide 2019-2023",
+   "unit": "",
+   "description": "In 2023, New York City-based advertising network Omnicom Group Inc.'s public relations (PR) operations recorded a negative organic growth of 0.8 percent in revenue. A year earlier, Omnicom's PR revenues experienced double-digit organic growth of almost 14 percent.",
+   "note": "Worldwide; 2019 to 2023; organic growth",
+   "source": "Omnicom",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      -0.02,
+      -0.042,
+      0.063,
+      0.137,
+      -0.008
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Omnicom Group Inc.'s public relations (PR) revenue as a percentage of its total revenue worldwide from 2018 to 2023",
+   "short": "Omnicom's PR revenue as a share of its total revenue worldwide 2018-2023",
+   "unit": "",
+   "description": "In 2023, public relations (PR) operations accounted for around 10.7 percent of New York City-based advertising network Omnicom Group Inc.'s total revenues, slightly down from 10.9 percent a year earlier. Despite the percentage's decrease, Omnicom's PR revenues grew to almost 1.6 billion dollars in 2023.",
+   "note": "Worldwide; 2018 to 2023",
+   "source": "Omnicom",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.094,
+      0.093,
+      0.1,
+      0.098,
+      0.109,
+      0.107
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "WPP plc's public relations (PR) revenue worldwide from 2018 to 2023 (in million GBP)",
+   "short": "WPP plc's public relations (PR) revenue worldwide 2018-2023",
+   "unit": "million GBP",
+   "description": "Between 2018 and 2023, British agency network WPP plc's public relations (PR) revenue grew by over 35 percent, surpassing 1.26 billion British pounds in the latter year. Meanwhile, WPP's total revenue worldwide amounted to 14.85 billion British pounds in 2023.",
+   "note": "Worldwide; 2018 to 2023",
+   "source": "WPP",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      932,
+      957,
+      893,
+      959,
+      1232,
+      1262
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Change in WPP plc's public relations (PR) revenue worldwide from 2019 to 2023",
+   "short": "Change in WPP plc's public relations (PR) revenue worldwide 2019-2023",
+   "unit": "",
+   "description": "In 2023, British agency network WPP plc's public relations (PR) revenue grew by 2.4 percent compared to the previous year. Meanwhile, WPP's total revenue worldwide amounted to 14.85 billion British pounds that year.",
+   "note": "Worldwide; 2019 to 2023",
+   "source": "WPP",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.027,
+      -0.066,
+      0.074,
+      0.281,
+      0.024
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "WPP plc's public relations (PR) revenue as a percentage of its total revenue worldwide from 2018 to 2022",
+   "short": "WPP's PR revenue as a share of its total revenue worldwide 2018-2022",
+   "unit": "",
+   "description": "In 2022, public relations (PR) operations accounted for approximately 8.5 percent of British agency network WPP plc's total revenues. Four years before, in 2018, the share stood below 7.2 percent. WPP's total revenue surpassed 14 billion British pounds in 2022.",
+   "note": "Worldwide; 2018 to 2022",
+   "source": "Statista; WPP",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0714,
+      0.0723,
+      0.0744,
+      0.0749,
+      0.0851
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Skills companies employing public relations (PR) professionals needed to focus on in the following five years to succeed according to PRs worldwide as of April 2023",
+   "short": "Top success-driving skills for companies according to PRs worldwide 2023",
+   "unit": "",
+   "description": "A spring 2023 survey among public relations (PR) professionals in the United States, Canada, Europe, and Asia asked them to select a maximum of four skills the companies they worked for will need in the next five years to succeed. Media relations ranked first, mentioned by 47 percent of the interviewees. Strategic planning followed, cited by 46 percent. According to another source's projections, the global PR industry revenue will surpass 107 billion U.S. dollars in 2023.",
+   "note": "Worldwide; March 31 to April 25, 2023; 1,034 respondents",
+   "source": "Muck Rack Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Media relations",
+    "Strategic planning",
+    "Data & analytics",
+    "Integrating new AI tools into workflow",
+    "Multimedia (video & design)",
+    "Social media",
+    "Influencer marketing",
+    "Diversity, equity, and inclusion",
+    "Leadership",
+    "Written communications",
+    "Crisis management",
+    "Research",
+    "Business literacy",
+    "Verbal communications",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.47,
+      0.46,
+      0.38,
+      0.31,
+      0.3,
+      0.3,
+      0.3,
+      0.29,
+      0.2,
+      0.17,
+      0.16,
+      0.16,
+      0.11,
+      0.06,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Annual business perspectives among public relations (PR) firms worldwide as of January 2024",
+   "short": "Annual business perspectives among public relations (PR) firms worldwide 2024",
+   "unit": "",
+   "description": "As of January 2024, approximately 70 percent of public relations (PR) firms surveyed worldwide reported a perspective of business growth. The remaining 30 percent expected business to remain the same.",
+   "note": "Worldwide; December 22, 2023, to January 10, 2024; among IPRN members in Argentina, Brazil, Chile, Colombia, Czechia, Denmark, France, Germany, India, Italy, Japan, Luxembourg, the Netherlands, Poland, Portugal, Puerto Rico, Spain, Sweden, the United Kingdom, and the United States",
+   "source": "IPRN",
+   "kind": "categorical",
+   "categories": [
+    "Growth perspective",
+    "Maintenance of current outlook"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Leading services with growth opportunities according to public relations (PR) firms worldwide as of January 2024",
+   "short": "Leading services with growth opportunities according to PR firms worldwide 2024",
+   "unit": "",
+   "description": "A global survey concluded in early 2024 asked public relations (PR) firms which services had the most growth opportunities that year. Strategic communication and PR consultancy ranked first, mentioned by 22 percent of respondents. Approximately 20 percent selected issues and crisis management, while 16 percent cited social media and digital communications. According to the same study, staff training and retention were among the areas in which PR firms most expected to invest in 2024.",
+   "note": "Worldwide; December 22, 2023, to January 10, 2024; among IPRN members in Argentina, Brazil, Chile, Colombia, Czechia, Denmark, France, Germany, India, Italy, Japan, Luxembourg, the Netherlands, Poland, Portugal, Puerto Rico, Spain, Sweden, the United Kingdom, and the United States",
+   "source": "IPRN Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strategic communication & PR consultancy",
+    "Issues & crisis management",
+    "Social media & digital communications",
+    "Media relations",
+    "Public affairs, corporate diplomacy",
+    "CEO/top management media training",
+    "Digital strategy",
+    "Internal communications, employee engagement",
+    "Data & analytics, monitoring, measurement, evaluation",
+    "Analyst & investor relations, financial communication",
+    "Corporate design, creativity, branding",
+    "Mergers & acquisitions"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.22,
+      0.2,
+      0.16,
+      0.1,
+      0.08,
+      0.07,
+      0.06,
+      0.04,
+      0.03,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Leading industries with growth opportunities according to public relations (PR) firms worldwide as of January 2024",
+   "short": "Leading industries with growth opportunities according to PR firms worldwide 2024",
+   "unit": "",
+   "description": "As of January 2024, approximately 19 percent of public relations (PR) firms surveyed worldwide reported considering the technology industry a sector with opportunities for growth. The government affairs and public sector followed with 17 percent, while energy and utilities rounded up the top three, mentioned by 16 percent. According to the same study, 70 percent of PR firms worldwide expected growth in 2024.",
+   "note": "Worldwide; December 22, 2023, to January 10, 2024; among IPRN members in Argentina, Brazil, Chile, Colombia, Czechia, Denmark, France, Germany, India, Italy, Japan, Luxembourg, the Netherlands, Poland, Portugal, Puerto Rico, Spain, Sweden, the United Kingdom, and the United States",
+   "source": "IPRN Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Technology",
+    "Government affairs & public sector",
+    "Energy & utilities",
+    "Financial",
+    "Health & wellness",
+    "Travel & tourism, hospitality, aviation",
+    "Travel, tourism, and hospitality",
+    "Consumer goods",
+    "Education",
+    "Logistics, transports",
+    "Professional services",
+    "Food & beverage, gastronomy",
+    "Arts & culture",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.19,
+      0.17,
+      0.16,
+      0.09,
+      0.08,
+      0.07,
+      0.07,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading areas in which public relations (PR) firms expected to invest worldwide as of January 2024",
+   "short": "Leading areas in which public relations (PR) firms expected to invest worldwide 2024",
+   "unit": "",
+   "description": "A global survey concluded in early 2024 asked public relations (PR) firms in which areas they expected to invest that year. Staff training and retention and employee engagement ranked first, cited by 19 percent of respondents. Around 17 percent selected measurement and analytics. Conversely, according to the same study, talent retention and attraction ranked among the leading challenges to PR firms worldwide that year.",
+   "note": "Worldwide; December 22, 2023, to January 10, 2024; among IPRN members in Argentina, Brazil, Chile, Colombia, Czechia, Denmark, France, Germany, India, Italy, Japan, Luxembourg, the Netherlands, Poland, Portugal, Puerto Rico, Spain, Sweden, the United Kingdom, and the United States",
+   "source": "IPRN Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Staff training & retention, employee engagement",
+    "Measurement & analytics",
+    "Management tools",
+    "Owned communication and marketing",
+    "Creativity",
+    "Multimedia content production",
+    "Technology & media production",
+    "Consumer insights",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.19,
+      0.17,
+      0.12,
+      0.12,
+      0.11,
+      0.11,
+      0.1,
+      0.07,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Leading challenges to the public relations (PR) industry according to PR firms worldwide as of January 2024",
+   "short": "Top challenges to the public relations industry according to PR firms worldwide 2024",
+   "unit": "",
+   "description": "A global survey concluded in early 2024 asked public relations (PR) firms what would be the biggest challenges for their industry that year. Three answers tied for the first place, each selected by 23 percent of respondents: Implementation of new disciplines and/or technologies, retention and attraction of talent, and client confidence to invest due to an uncertain economic outlook. According to the same study, the environment, social, and governance (ESG) trend was among the biggest [...]",
+   "note": "Worldwide; December 22, 2023, to January 10, 2024; among IPRN members in Argentina, Brazil, Chile, Colombia, Czechia, Denmark, France, Germany, India, Italy, Japan, Luxembourg, the Netherlands, Poland, Portugal, Puerto Rico, Spain, Sweden, the United Kingdom, and the United States",
+   "source": "IPRN",
+   "kind": "categorical",
+   "categories": [
+    "Implementation of new disciplines and/or technologies",
+    "Retention & attraction of talent",
+    "Client confidence to invest due to uncertain economic outlook",
+    "Impact of inflation and interest rates on consumer behavior",
+    "Competitors within the PR sector",
+    "Reputation of PR agencies comparing with other specialties",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.23,
+      0.23,
+      0.23,
+      0.12,
+      0.1,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Biggest opportunities for public relations (PR) firms worldwide as of January 2024",
+   "short": "Biggest opportunities for public relations (PR) firms worldwide 2024",
+   "unit": "",
+   "description": "As of January 2024, around 25 percent of public relations (PR) firms surveyed worldwide selected environment, social, and governance (ESG) as the biggest opportunity for their industry that year. Corporate reputation followed, mentioned by 23 percent. According to the same study, technology was the industry with the most growth opportunities for PR firms in 2024.",
+   "note": "Worldwide; December 22, 2023, to January 10, 2024; among IPRN members in Argentina, Brazil, Chile, Colombia, Czechia, Denmark, France, Germany, India, Italy, Japan, Luxembourg, the Netherlands, Poland, Portugal, Puerto Rico, Spain, [...] Read more",
+   "source": "IPRN; Statista Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "ESG (Environment, Social, and Governance)",
+    "Corporate reputation",
+    "CEO profiling/thought leadership",
+    "Integrated communication strategies",
+    "Brand PR",
+    "Events",
+    "Consumer insights",
+    "Sponsorship*",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.25,
+      0.23,
+      0.18,
+      0.18,
+      0.08,
+      0.02,
+      0.02,
+      0.01,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Plans to explore generative artificial intelligence (AI) solutions in the workflow among public relations (PR) professionals worldwide as of April and December 2023",
+   "short": "Plans to explore generative AI in the workflow among PRs worldwide 2023",
+   "unit": "",
+   "description": "As of December 2023, almost two-thirds (or 64 percent) of public relations (PR) professionals surveyed worldwide reported using generative artificial intelligence (AI) solutions such as ChatGPT or DALL-E at work. Earlier that year, that share stood at 33 percent as of April. Meanwhile, the percentage of PRs saying they did not plan to explore those tools declined from 15 to five percent. According to the same study, research and list building was the PR area most impacted by AI adoption [...]",
+   "note": "Worldwide; March 31 to April 25, 2023; November 2 to December 14, 2023; 1,001*; * Number of respondents as of December 2023. As of April 2023, 1,034 professionals were surveyed via email. The source does not specify the survey type [...] Read more",
+   "source": "Muck Rack Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I already use generative AI",
+    "I plan to explore generative AI",
+    "I’m not sure",
+    "No, I do not plan to explore them"
+   ],
+   "series": [
+    {
+     "name": "As of December '23",
+     "values": [
+      0.64,
+      0.23,
+      0.08,
+      0.05
+     ]
+    },
+    {
+     "name": "As of April '23",
+     "values": [
+      0.28,
+      0.33,
+      0.24,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Public relations (PR) areas most impacted by an eventual adoption of artificial intelligence (AI) according to PR professionals worldwide as of December 2023",
+   "short": "PR areas most impacted by an eventual adoption of AI according to PRs worldwide 2023",
+   "unit": "",
+   "description": "As of December 2023, approximately 68 percent of public relations (PR) professionals surveyed worldwide said that if they chose to use artificial intelligence (AI) as a tool, it would be most impactful on research and list building. Writing followed with a share of 64 percent, while 47 percent of respondents mentioned monitoring and measuring. According to another source's projections, the global PR industry revenue will surpass 113 billion U.S. dollars in 2024.",
+   "note": "Worldwide; November 2 to December 14, 2023; 1,001 respondents",
+   "source": "Muck Rack",
+   "kind": "categorical",
+   "categories": [
+    "Research & list building",
+    "Writing",
+    "Monitoring & measuring",
+    "Reporting",
+    "Pitching",
+    "Strategy & planning",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "as of December '23",
+     "values": [
+      0.68,
+      0.64,
+      0.47,
+      0.45,
+      0.37,
+      0.36,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Leading risks generative artificial intelligence (AI) posed to public relations (PR) according to PR professionals using AI and AI-curious worldwide as of December 2023",
+   "short": "Top risks generative AI posed according to PRs worldwide 2023",
+   "unit": "",
+   "description": "A late 2023 survey asked public relations (PR) professionals worldwide to select options they deemed to be risks that generative artificial intelligence (AI) posed to their industry. Approximately 67 percent of respondents already utilizing AI at work mentioned younger or newer PRs not learning the profession's principles and relying too heavily on such tools. That was also the top choice among AI-curious professionals, chosen by 74 percent of them. According to the same study, nearly [...]",
+   "note": "Worldwide; November 2 to December 14, 2023; 1,001 respondents",
+   "source": "Muck Rack Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Younger/newer PR pros don’t learn the principles of the profession and rely too heavily on tools",
+    "Clients/firms think they don’t need content creators anymore",
+    "PR people use unscrutinized AI output and lower the quality of conversations",
+    "Audiences get overwhelmed with so much content it’s harder to reach them or stand out",
+    "Other",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "AI-curious PRs",
+     "values": [
+      0.74,
+      0.7,
+      0.67,
+      0.43,
+      0.12,
+      0
+     ]
+    },
+    {
+     "name": "PRs using AI",
+     "values": [
+      0.67,
+      0.61,
+      0.62,
+      0.41,
+      0.13,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Share of adults who trust news media most of the time in selected countries worldwide as of February 2023",
+   "short": "Trustworthiness of news media worldwide 2023",
+   "unit": "",
+   "description": "A study examining perspectives on the news media from over 40 countries revealed that levels of trust differed notably around the world. Scandinavians in particular had greater trust in the news media than citizens from other parts of the world, with 69 percent of Finns trusting the news, along with 57 percent of Danes and 53 percent of Norwegians.",
+   "note": "Worldwide; January to February, 2023; 2,000*; 18 years and older; *Total sample size for each market was approximately 2,000. Read more",
+   "source": "Reuters Institute for the Study of Journalism; YouGov Share of respondents who trust news media",
+   "kind": "categorical",
+   "categories": [
+    "Finland",
+    "Kenya",
+    "Portugal",
+    "Nigeria",
+    "Denmark",
+    "Netherlands",
+    "South Africa",
+    "Norway",
+    "Thailand",
+    "Sweden",
+    "Ireland",
+    "Singapore",
+    "Belgium",
+    "Brazil",
+    "Germany"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.69,
+      0.63,
+      0.58,
+      0.57,
+      0.57,
+      0.57,
+      0.57,
+      0.53,
+      0.51,
+      0.5,
+      0.47,
+      0.45,
+      0.44,
+      0.43,
+      0.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Level of trust in media worldwide from 2018 to 2023",
+   "short": "Trust in media worldwide 2018-2023",
+   "unit": "",
+   "description": "During a 2023 survey, 50 percent of respondents from 28 countries across the world stated that they trusted the media as a source of reliable information, down from 51 percent in 2020 but the same as in 2021 and 2022. The reported also revealed that the country with the most trust in media was China, whereas the United Kingdom fared the poorest in that regard with just 31 percent of respondents saying that they had faith in the media.",
+   "note": "Worldwide; 2018 to 2023; 33,050 respondents; 18 years and older",
+   "source": "Edelman",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.47,
+      0.49,
+      0.51,
+      0.5,
+      0.5,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Most trusted sources of general news and information worldwide from 2011 to 2023",
+   "short": "Most trusted sources of general news and information worldwide 2011-2023",
+   "unit": "",
+   "description": "As of late 2023, 62 percent of adults who responded to a global survey stated that they trusted traditional media whereas 68 percent said they trusted search engines. The source considered the least trustworthy was social media. Social media was by far the least trusted news source in Europe and North America, and a survey held in the United States revealed that most U.S. adults considered the majority of news seen on social media to be biased.",
+   "note": "Worldwide; 2011 to 2023; 1,150*; 18 years and older; 2023: 28 countries worldwide; top four box for trust on a nine point scale where 1 =  'do not trust at all', 9 = 'trust it a great deal'; *Survey sample per country refers to 2023. Sample [...] Read more",
+   "source": "Edelman",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Traditional media",
+     "values": [
+      0.63,
+      0.6,
+      0.62,
+      0.58,
+      0.59,
+      0.58,
+      0.63,
+      0.65,
+      0.61,
+      0.53,
+      0.57,
+      0.59,
+      0.62
+     ]
+    },
+    {
+     "name": "Search engines",
+     "values": [
+      0.62,
+      0.59,
+      0.63,
+      0.63,
+      0.64,
+      0.65,
+      0.61,
+      0.65,
+      0.61,
+      0.56,
+      0.59,
+      0.63,
+      0.68
+     ]
+    },
+    {
+     "name": "Owned media",
+     "values": [
+      0.42,
+      0.41,
+      0.44,
+      0.44,
+      0.47,
+      0.44,
+      0.41,
+      0.49,
+      0.46,
+      0.41,
+      0.43,
+      0.47,
+      0.51
+     ]
+    },
+    {
+     "name": "Social media",
+     "values": [
+      0.45,
+      0.42,
+      0.45,
+      0.46,
+      0.45,
+      0.42,
+      0.4,
+      0.43,
+      0.4,
+      0.35,
+      0.37,
+      0.41,
+      0.44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Trust in media in selected countries worldwide from 2021 to 2023",
+   "short": "Trust in media worldwide 2021-2023",
+   "unit": "",
+   "description": "During a survey held in 2023, 77 percent of respondents from China stated that they trusted the media as a source of reliable information. Chinese consumers were therefore the most likely to have faith in the media, whereas those in the United Kingdom, Japan, Argentina, and South Korea were at the other end of the spectrum. Trust in media dropped between 2021 and 2023 in most countries surveyed in the study, in particular in Argentina, which saw a decline of 10 percentage points in [...]",
+   "note": "Worldwide; 2021 to 2023; 32,000+ respondents; 18 years and older; 1,150 respondents per country",
+   "source": "Edelman Level of trust",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Indonesia",
+    "Thailand",
+    "India",
+    "United Arab Emirates",
+    "Kenya",
+    "Saudi Arabia",
+    "Singapore",
+    "Malaysia",
+    "Nigeria",
+    "Netherlands",
+    "Mexico",
+    "Canada",
+    "Italy"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.77,
+      0.7,
+      0.69,
+      0.67,
+      0.63,
+      0.62,
+      0.61,
+      0.6,
+      0.6,
+      0.56,
+      0.56,
+      0.54,
+      0.51,
+      0.48
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.79,
+      0.72,
+      0.67,
+      0.62,
+      0.62,
+      0.63,
+      0.6,
+      0.59,
+      0.55,
+      0.51,
+      0.55,
+      0.56,
+      0.5,
+      0.47
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      0.8,
+      0.73,
+      0.66,
+      0.66,
+      0.64,
+      0.57,
+      0.64,
+      0.59,
+      0.6,
+      0.51,
+      0.58,
+      0.54,
+      0.52,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Reasons for journalists blocking public relations communications worldwide as of February 2022",
+   "short": "Reasons for blocking PR communications by journalists worldwide in 2022",
+   "unit": "",
+   "description": "According to a global survey on journalism, those working in the sector are faced with many challenges on top of a high workload, and as such 74 percent said that if a PR person spammed them with irrelevant offers, they would block them or put them on their \"do not call\" list. Additionally, almost 50 percent said that they would do the same if a PR employee repeatedly followed up with them. Other triggers included receiving inaccurate information, lack of transparency, and failing to [...]",
+   "note": "Worldwide; January to February 2022; see notes*; 18 years and older; *A total of 3,800 journalists across approximately 2,160 media outlets,spanning 17 regions were surveyed in 2022. Countries included in the 2022 survey were: United [...] Read more",
+   "source": "Cision Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Spamming me with irrelevant pitches",
+    "Providing inaccurate or unsourced information",
+    "Pitches which sound like marketing brochures",
+    "Repeatedly contacting me to follow up",
+    "Evading requests/lack of transparency",
+    "Failure to respond to the deadline",
+    "Being contacted on social media",
+    "Calling me by the wrong name"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.74,
+      0.6,
+      0.51,
+      0.48,
+      0.42,
+      0.22,
+      0.18,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Share of journalists who believe that the public has lost trust in the media over the past year worldwide from 2017 to 2022",
+   "short": "Journalists who think media trust is reducing worldwide 2017-2022",
+   "unit": "",
+   "description": "According to a global study held in 2022, 57 percent of journalists believed that the public had lost trust in the media over the last twelve months. Although this means that more than half the journalists participating in the study held this view, this is a notable improvement from 2017, where 91 percent felt that consumers' trust in the media had dropped over the last year.",
+   "note": "Worldwide; 2017 to 2022; see notes*; 18 years and older; *A total of 3,800 journalists across approximately 2,160 media outlets,spanning 17 regions were surveyed in 2022. Countries included in the 2022 survey were: United States, [...] Read more",
+   "source": "Cision",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.91,
+      0.71,
+      0.63,
+      0.59,
+      0.53,
+      0.57
+     ]
+    }
+   ]
+  }
+ ]
+}

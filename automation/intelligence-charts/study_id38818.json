@@ -1,0 +1,863 @@
+{
+ "studyId": "38818",
+ "study": "fitness industry in europe statista dossier",
+ "file": "research/statista/Health & Wellness/study_id38818_fitness-industry-in-europe-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the health and fitness market in Europe from 2017 to 2022 (in billion euros)",
+   "short": "Value of the European health and fitness industry 2017-2022",
+   "unit": "billion euros",
+   "description": "The health and fitness market in Europe was worth an estimated 28 billion U.S. dollars in 2022. This is a significant increase in the market size of just over 17 billion U.S. dollars in 2021. This can be attributed to the continued recovery of the industry following the impact of the coronavirus (COVID-19) pandemic, which forced the temporary closure of thousands of gyms and health clubs across Europe.",
+   "note": "Europe; 2017 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26.6,
+      27.2,
+      28.2,
+      18.9,
+      17.1,
+      28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Revenue of the fitness industry in Europe in 2022, by country (in billion euros)",
+   "short": "Revenue of leading fitness markets in Europe 2022",
+   "unit": "billion euros",
+   "description": "In 2022, the revenue of the fitness industry in Germany stood at 4.9 billion euros. Meanwhile, the health and fitness market in the United Kingdom was estimated to be worth five billion euros.",
+   "note": "Europe; 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "categorical",
+   "categories": [
+    "United Kingdom",
+    "Germany",
+    "Spain",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      5,
+      4.9,
+      2.1,
+      1.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Forecast revenue of the health and fitness market in Europe from 2022 to 2026 (in billion U.S. dollars)",
+   "short": "Forecast value of the European health and fitness industry 2022-2026",
+   "unit": "billion U.S. dollars",
+   "description": "The health and fitness market in Europe was forecast to grow in size between 2022 and 2026. Following the impact of the coronavirus (COVID-19) pandemic, the industry was projected to show signs of recovery and reach 32.55 billion U.S. dollars by 2026.",
+   "note": "Europe; 2021",
+   "source": "Daedal Research",
+   "kind": "timeseries",
+   "categories": [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      24.6,
+      26.39,
+      28.3,
+      30.35,
+      32.55
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Revenue of the fitness market in Germany from 2014 to 2022 (in million euros)",
+   "short": "Germany: revenue of the fitness market 2014-2022",
+   "unit": "million euros",
+   "description": "In 2022, the revenue of the fitness market stood at 4.9 billion euros. This marked an increase of more than 100 percent on the previous year, indicating the industry's recovery following the significant impact of the coronavirus (COVID-19) pandemic.",
+   "note": "Germany; 2014 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4700,
+      4830,
+      5050,
+      5200,
+      5330,
+      5510,
+      4160,
+      2200,
+      4900
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Market size of the gym, health & fitness clubs industry in the United Kingdom (UK) from 2012 to 2022 (in million GBP)",
+   "short": "Gym, health & fitness club industry market size in the United Kingdom (UK) 2012-2022",
+   "unit": "million GBP",
+   "description": "Every day, thousands of fitness fanatics hit the gym to keep in shape. However, the coronavirus pandemic which swept across the world in 2020 had a significant impact on the fitness industry as many establishments were forced to close their doors to stem the spread of the disease. While the market size of the fitness club industry in the United Kingdom grew to above two billion British pounds in the years leading up the pandemic, forecasts suggest that the value of the industry will fall to [...]",
+   "note": "United Kingdom; 2012 to 2022; * Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1494.8,
+      1553.2,
+      1607.8,
+      1731.9,
+      1923.3,
+      1886.8,
+      2086.5,
+      2200.6,
+      2251.3,
+      1362.1,
+      1804.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of gyms and health clubs in Europe from 2009 to 2022",
+   "short": "Number of health and fitness clubs in Europe 2009-2022",
+   "unit": "",
+   "description": "The number of gyms and health clubs in Europe has generally been on the increase since 2009. While there was a slight dip in the number of establishments in 2020 as a result of the coronavirus (COVID-19) pandemic, the number of gyms in Europe increased again in 2022, reaching 63,830.",
+   "note": "Europe; 2009 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      48087,
+      48005,
+      47701,
+      45396,
+      49197,
+      51299,
+      51204,
+      55003,
+      59055,
+      63644,
+      63059,
+      63173,
+      63830
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Leading fitness club operators in Europe in 2022, by number of members (in 1,000s)",
+   "short": "Leading fitness club operators in Europe 2022, by members",
+   "unit": "1,000s",
+   "description": "In 2022, Basic-Fit was the largest fitness club operator in Europe, with a membership of over 3.35 million. Meanwhile, The Gym Group, a chain of fitness centers in the United Kingdom, had 821 thousand members across its establishments.",
+   "note": "Europe; 2022; * Only including facilities that offer training equipment. Read more",
+   "source": "Deloitte; EuropeActive Number of memberships in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Basic-Fit",
+    "RSG Group",
+    "Pure Gym",
+    "FitX",
+    "Fitness Park Group",
+    "The Gym Group",
+    "David Lloyd Leisure",
+    "SATS Group",
+    "Friskis&Svettis*",
+    "EASYFITNESS"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3352,
+      1805,
+      1655,
+      842,
+      835,
+      821,
+      730,
+      721,
+      486,
+      434.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Leading fitness club operators in Europe in 2022, by revenue (in million euros)",
+   "short": "Europe: leading fitness club operators 2022, by revenue",
+   "unit": "million euros",
+   "description": "In 2022, the leading fitness club operator in Europe was Basic-Fit, with the company reporting a revenue of almost 800 million euros. Meanwhile, David Lloyd Leisure, a chain of gyms in the United Kingdom, reported revenue of 748 million euros.",
+   "note": "Europe; 2022",
+   "source": "Deloitte; EuropeActive Revenue in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Basic-Fit",
+    "David Lloyd Leisure",
+    "PureGym",
+    "SATS Group",
+    "RSG Group",
+    "Nuffield Health",
+    "Fitness Park Group",
+    "Migros Group",
+    "The Gym Group",
+    "L'Orange Bleue"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      795,
+      748,
+      557,
+      404,
+      371,
+      308,
+      224,
+      218,
+      203,
+      156
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Number of members at health and fitness clubs in Europe in 2022, by country (in millions)",
+   "short": "Gym membership in European countries 2022",
+   "unit": "millions",
+   "description": "In 2022, there were approximately 10.4 million gym members in the United Kingdom. Meanwhile, there were around 5.4 million members at health clubs and fitness establishments in Spain.",
+   "note": "Europe; 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "categorical",
+   "categories": [
+    "United Kingdom",
+    "Germany",
+    "Spain",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      10.4,
+      10.3,
+      5.4,
+      4.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Number of gyms and fitness centres in the United Kingdom (UK) from 2011 to 2022",
+   "short": "Number of gyms in the United Kingdom (UK) 2011-2022",
+   "unit": "",
+   "description": "The number of gyms and fitness centres in the United Kingdom more than doubled between 2011 and 2020, highlighting the booming fitness market within the country. However, the coronavirus (COVID-19) pandemic in 2020 created significant challenges for this growing industry as many health and fitness establishments were forced to close their doors to the public. As a result, the number of gyms in the United Kingdom fell from 3,654 in 2020 to 3,060 in 2021. Despite this, the number [...]",
+   "note": "United Kingdom; 2011 to 2021; *Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1540,
+      1642,
+      1595,
+      1833,
+      2024,
+      2304,
+      2642,
+      3083,
+      3419,
+      3674,
+      3060,
+      3720
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Leading fitness club operators in Germany in 2022, by number of clubs",
+   "short": "Leading gym chains in Germany in 2022, by number of clubs",
+   "unit": "",
+   "description": "In 2022, the largest fitness club operator in Germany was clever fit. Established in 2004, the franchise fitness chain grew to 450 gyms across the country, more than twice as many gyms as its closest competitor, RSG Group.",
+   "note": "Germany; 2022; * Fully or partly a franchise operation. Read more",
+   "source": "Deloitte; EuropeActive Number of clubs",
+   "kind": "categorical",
+   "categories": [
+    "clever fit*",
+    "RSG Group",
+    "EASYFITNESS*",
+    "LifeFit Group*",
+    "ACISO*",
+    "Kieser*",
+    "FitX",
+    "BestFit Group"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      450,
+      211,
+      170,
+      124,
+      119,
+      117,
+      102,
+      82
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of members at gyms and health clubs in Europe from 2010 to 2022 (in millions)",
+   "short": "Health/fitness clubs members in Europe 2010-2022",
+   "unit": "millions",
+   "description": "The number of members at gyms and health clubs in Europe reached its peak in 2019, before declining in the ensuing years as a result of the coronavirus (COVID-19) pandemic. Following the closure of many gyms in 2020 leading to a steep decline in membership, the number has mostly recovered by 2022, reaching 63.1 million members.",
+   "note": "Europe; 2010 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      44.45,
+      43.5,
+      47.7,
+      44.87,
+      47.67,
+      52.44,
+      56.87,
+      59.98,
+      64.76,
+      55.2,
+      56.2,
+      63.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of members at health and fitness clubs in Europe in 2022, by country (in millions)",
+   "short": "Gym membership in European countries 2022",
+   "unit": "millions",
+   "description": "In 2022, there were approximately 10.4 million gym members in the United Kingdom. Meanwhile, there were around 5.4 million members at health clubs and fitness establishments in Spain.",
+   "note": "Europe; 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "categorical",
+   "categories": [
+    "United Kingdom",
+    "Germany",
+    "Spain",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      10.4,
+      10.3,
+      5.4,
+      4.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Number of members at gyms and fitness clubs in the United Kingdom from 2019 to 2021 (in millions)",
+   "short": "Number of gym members in the UK 2019-2021",
+   "unit": "millions",
+   "description": "The number of people with memberships to gyms in the United Kingdom saw an increase between 2020 and 2021. In the latter year, just over 9.57 million people had gym memberships in the UK. However, this was following a steep drop in the number of members between 2019 and 2020 as a result of the impact of the coronavirus (COVID-19) on gyms.",
+   "note": "United Kingdom; 2019 to 2021",
+   "source": "Deloitte; IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.39,
+      8.28,
+      9.57
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of fitness club members in Germany from 2014 to 2022 (in millions)",
+   "short": "Number of gym members in Germany 2014-2022",
+   "unit": "millions",
+   "description": "In 2022, there were approximately 10.3 million fitness club members in Germany. This marked an increase of over one million on the gym membership figures from a year previous.",
+   "note": "Germany; 2014 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      9.08,
+      9.46,
+      10.08,
+      10.61,
+      11.09,
+      11.66,
+      10.31,
+      9.26,
+      10.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of women in England who participated in sport and physical activity at least twice in the last 28 days from 2015 to 2022 (in millions)",
+   "short": "Female participation in sport and physical activity England 2015-2022",
+   "unit": "millions",
+   "description": "The number of women participating in any kind of sport or physical activity in England slightly increased in 2021/22, rising to around 17.7 million. This represented an increase of just under one percent on the previous survey period.",
+   "note": "United Kingdom (England); November 2015 to November 2022; 177551 respondents; 16 years and older",
+   "source": "Sport England",
+   "kind": "categorical",
+   "categories": [
+    "2015/16",
+    "2016/17",
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021/22"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      17.33,
+      17.46,
+      17.59,
+      17.81,
+      17.78,
+      17.51,
+      17.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of people participating in sport twice a month in England between November 2021 and November 2022, by sport (in 1,000)",
+   "short": "England: most popular sports in 2022, by monthly participants",
+   "unit": "1,000",
+   "description": "Sports in the United Kingdom (UK) is governed by the association UK Sport, which funds and governs various other sport associations. One of these is Sport England, the sports governing body for England. Sport England conducts annual surveys on sports participation throughout England, gathering data on demographics, habits, preferences and more. As of November 2022, running was the sport that most people in the UK engaged with on a monthly basis.",
+   "note": "United Kingdom (England); November 2021 to November 2022; 177,551 respondents; 16 years and older",
+   "source": "Sport England Number of participants in thousand",
+   "kind": "categorical",
+   "categories": [
+    "Running",
+    "Fitness class",
+    "Gym session",
+    "Exercise machines",
+    "Swimming",
+    "Hill and mountain walking",
+    "Weights session",
+    "Interval sessions",
+    "Football",
+    "Generic fitness training",
+    "Active Play",
+    "Golf",
+    "Tennis",
+    "Badminton",
+    "Boxing (includes boxing fitness classes)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5896.8,
+      5779.4,
+      4842.6,
+      3801.1,
+      3795.6,
+      3582.8,
+      2602.7,
+      2178.7,
+      2012.3,
+      1865.2,
+      1082.2,
+      1035.7,
+      915,
+      733.2,
+      593.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Number of people participating in fitness classes in England from 2015 to 2022",
+   "short": "Fitness class participation England 2015-2022",
+   "unit": "",
+   "description": "Between November 2021 to November 2022, approximately 5.78 million people participated in fitness classes in England. This marked a slight fall on the number of participants two years earlier, which stood at over 6.3 million.",
+   "note": "United Kingdom (England); 2015 to 2022; 177,551 respondents; 16 years and older; base varies",
+   "source": "Sport England",
+   "kind": "categorical",
+   "categories": [
+    "November 2015-November 2016",
+    "November 2016-November 2017",
+    "November 2017-November 2018",
+    "November 2018-November 2019",
+    "November 2019-November 2020",
+    "November 2020-November 2021",
+    "November 2021-November 2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6336100,
+      6510100,
+      6345600,
+      6131300,
+      6388000,
+      5526000,
+      5779400
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Online revenue forecast for the eServices Fitness market in Europe from 2017 to 2024 (in million U.S. dollars)",
+   "short": "Online revenue forecast for the eServices Fitness market in Europe until 2024",
+   "unit": "million U.S. dollars",
+   "description": "This statistic presents a forecast of the online revenue in the eServices Fitness market in Europe until the year 2024. According to the Digital Market Outlook, the online revenue of the eServices Fitness segment Apps in Europe is expected to be 1,123.7 million U.S. dollars in 2024. An overview of all Digital Markets can be found here.",
+   "note": "Europe; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Wearables",
+     "values": [
+      2189.5,
+      2329.2,
+      2458.2,
+      3099.8,
+      2910.7,
+      2822,
+      2815,
+      2861.1
+     ]
+    },
+    {
+     "name": "Apps",
+     "values": [
+      385.6,
+      464.1,
+      552.6,
+      721.2,
+      827.7,
+      931.9,
+      1031.2,
+      1123.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Forecast for the number of online users in the eServices Fitness market in Europe from 2017 to 2024 (in million)",
+   "short": "Forecast for the number of users in the eServices Fitness market in Europe until 2024",
+   "unit": "million",
+   "description": "This statistic presents a forecast of the number of online users in the eServices Fitness market in Europe until the year 2024. According to the Digital Market Outlook, the number of online users of the eServices Fitness segment Wearables in Europe is expected to be 44.7 million in 2024. An overview of all Digital Markets can be found here.",
+   "note": "Europe; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Apps",
+     "values": [
+      73.1,
+      80.1,
+      87.7,
+      106.5,
+      115.3,
+      123.8,
+      131.8,
+      139.2
+     ]
+    },
+    {
+     "name": "Wearables",
+     "values": [
+      38.7,
+      40.6,
+      42,
+      51.8,
+      47.7,
+      45.3,
+      44.5,
+      44.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Most used eHealth tracker / smart watches by brand in the UK as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in the UK 2023",
+   "unit": "",
+   "description": "With 46 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among UK consumers. In second place follows Fitbit with 28 percent of respondents. These results are based on a representative online survey conducted in 2023 among 1,685 consumers in the UK.",
+   "note": "United Kingdom; January to December 2023; 1685 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Garmin",
+    "Amazfit",
+    "Huawei",
+    "ASUS",
+    "Google",
+    "Fossil",
+    "Honor",
+    "LG",
+    "Misfit",
+    "Mobvoi",
+    "Motorola",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.46,
+      0.28,
+      0.15,
+      0.08,
+      0.05,
+      0.05,
+      0.04,
+      0.04,
+      0.02,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Fitness and health service online purchases in the UK as of December 2023",
+   "short": "Fitness and health service online purchases in the UK 2023",
+   "unit": "",
+   "description": "6 percent of UK respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2023, among 4,030 consumers.",
+   "note": "United Kingdom; January to December 2023; 4030 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Health tracking",
+    "Weight loss / healthy eating",
+    "Meditation / mindfulness / sleeping apps",
+    "Medication checkers / reminders",
+    "Contraception or fertility tracking (only shown to women)",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.06,
+      0.06,
+      0.06,
+      0.05,
+      0.03,
+      0.02,
+      0.9,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Fitness and health service purchases in Germany as of December 2023",
+   "short": "Fitness and health service purchases in Germany 2023",
+   "unit": "",
+   "description": "13 percent of German respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2023, among 5,987 consumers.",
+   "note": "Germany; January to December 2023; 5987 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Online services (website or apps)",
+    "Wellness services (e.g., massage)",
+    "Sports club membership",
+    "Individual sports course / class",
+    "Personal trainer",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.08,
+      0.08,
+      0.07,
+      0.05,
+      0.04,
+      0.77,
+      0.02
+     ]
+    }
+   ]
+  }
+ ]
+}

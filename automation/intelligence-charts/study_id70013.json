@@ -1,0 +1,2205 @@
+{
+ "studyId": "70013",
+ "study": "tiktok",
+ "file": "research/statista/Fitness Marketing/study_id70013_tiktok.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 6,
+   "title": "Most popular social networks worldwide as of April 2024, ranked by number of monthly active users (in millions)",
+   "short": "Global social networks ranked by number of users 2024",
+   "unit": "millions",
+   "description": "Market leader Facebook was the first social network to surpass one billion registered accounts and currently sits at more than three billion monthly active users. Meta Platforms owns four of the biggest social media platforms, all with more than one billion monthly active users each: Facebook (core platform), WhatsApp, Facebook Messenger, and Instagram. In the third quarter of 2023, Facebook reported around four billion monthly core Family product users.",
+   "note": "Worldwide; April 2024; social networks and messenger/chat app/voip included; figures for TikTok does not include Douyin",
+   "source": "DataReportal; Meltwater; We Are Social Number of active users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "YouTube",
+    "Instagram",
+    "WhatsApp¹",
+    "TikTok",
+    "WeChat",
+    "Facebook Messenger",
+    "Telegram",
+    "Snapchat",
+    "Douyin",
+    "Kuaishou",
+    "X/Twitter",
+    "Weibo",
+    "QQ",
+    "Pinterest"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3065,
+      2504,
+      2000,
+      2000,
+      1582,
+      1343,
+      1010,
+      900,
+      800,
+      755,
+      700,
+      611,
+      598,
+      554,
+      498
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Leading mobile apps worldwide in March 2024, by downloads (in millions)",
+   "short": "Most downloaded mobile apps worldwide 2024",
+   "unit": "millions",
+   "description": "In March 2024, Meta-powered apps Facebook and Instagram were the most downloaded mobile apps worldwide, with 59 million and 58 million downloads, respectively. Social video app TikTok followed with 46 million downloads. Meta-owned microblogging platform Threads generated 24 million downloads during the last month of the year.",
+   "note": "Worldwide; March 2024; iOS Apple App Store and Google Play Store",
+   "source": "Appfigures Number of downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "TikTok",
+    "WhatsApp",
+    "Telegram",
+    "Threads",
+    "CapCut",
+    "Messenger",
+    "Snapchat",
+    "WhatsApp Business"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      59,
+      58,
+      46,
+      42,
+      27,
+      24,
+      23,
+      23,
+      22,
+      21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Share of time spent among TikTok users in the United States engaging with social media apps as of February 2023",
+   "short": "U.S. TikTok users share of time spent on social media apps 2023",
+   "unit": "",
+   "description": "As of February 2023, TikTok users in the United States spent 32 percent of the time they dedicated to social media engagement with the popular short-video platform. Meta-owned Facebook and Instagram commanded 20 percent of the online social time of TikTok users in the U.S., respectively. In comparison, the YouTube mobile app kept users engaged for 15 percent of all the time they chose to dedicate to social media.",
+   "note": "United States; February 2023; TikTok users",
+   "source": "Apptopia",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "Snapchat",
+    "Twitter",
+    "Reddit",
+    "Pinterest"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.2,
+      0.2,
+      0.15,
+      0.09,
+      0.02,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of TikTok downloads from 1st quarter 2018 to 4th quarter 2023 (in millions)",
+   "short": "TikTok global quarterly downloads 2018-2023",
+   "unit": "millions",
+   "description": "In the fourth quarter of 2023, TikTok generated around 232 million downloads from users worldwide. Initially launched in China first by ByteDance as Douyin, the short-video format was popularized by TikTok and took over the global social media environment in 2020. In the first quarter of 2020, TikTok downloads peaked at over 313.5 million worldwide, up by 62.3 percent compared to the first quarter of 2019.",
+   "note": "Worldwide; Q1 2018 to Q4 2023; iOS and Android combined",
+   "source": "AppMagic",
+   "kind": "categorical",
+   "categories": [
+    "2018 Q1",
+    "2018 Q2",
+    "2018 Q3",
+    "2018 Q4",
+    "2019 Q1",
+    "2019 Q2",
+    "2019 Q3",
+    "2019 Q4",
+    "2020 Q1",
+    "2020 Q2",
+    "2020 Q3",
+    "2020 Q4",
+    "2021 Q1",
+    "2021 Q2",
+    "2021 Q3",
+    "2021 Q4",
+    "2022 Q1",
+    "2022 Q2",
+    "2022 Q3",
+    "2022 Q4",
+    "2023 Q1",
+    "2023 Q2",
+    "2023 Q3",
+    "2023 Q4"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      113.87,
+      160.48,
+      183.73,
+      195.67,
+      193.09,
+      151.25,
+      167.02,
+      192.48,
+      313.53,
+      291.99,
+      197.04,
+      181.93,
+      179.57,
+      202.34,
+      177.53,
+      161.65,
+      196.86,
+      218.48,
+      243.01,
+      198.34,
+      238.93,
+      256.11,
+      273.31,
+      232.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Markets with the highest growth of TikTok downloads from the Apple App Store in 4th quarter 2024",
+   "short": "Growth of TikTok iOS downloads worldwide Q4 2023, by market",
+   "unit": "",
+   "description": "In the last quarter of 2024, TikTok downloads via the Apple App Store only experienced an increase of almost 40 percent in China. The popular social video experienced a 33 percent growth in iOS downloads in the Japanese market, while South Korea saw the app downloads among iOS users grow by 24 percent. At the end of 2023, countries in the Asia-Pacific region drew the quarterly download growth of TikTok on the Apple App Store.",
+   "note": "Worldwide; Q4 2023; QoQ growth",
+   "source": "AppMagic; Statista Growth compared to previous quarter",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Japan",
+    "South Korea",
+    "Australia",
+    "Singapore",
+    "Grand Total",
+    "Taiwan",
+    "Thailand",
+    "United Kingdom",
+    "Ecuador"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3901,
+      0.336,
+      0.2462,
+      0.2014,
+      0.1714,
+      0.1421,
+      0.1246,
+      0.1219,
+      0.1124,
+      0.0858
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Countries with the highest growth of TikTok downloads from the Google Play Store in 4th quarter 2023",
+   "short": "Growth of TikTok Google Play downloads worldwide Q4 2023, by country",
+   "unit": "",
+   "description": "According to recent industry measurements, TikTok downloads among Canadian Android users experienced a 156 percent increase compared to the previous quarter. The Dominican republic was the second fastest-growing market for the social video app sensation, with 89 percent quarter-over-quarter increase in downloads via the Google Play Store. The United States, which is one of TikTok's main markets, ranked third with 60 percent download increase in the last registered quarter.",
+   "note": "Worldwide; Q4 2023; QoQ growth, Android only",
+   "source": "AppMagic; Statista Growth compared to previous quarter",
+   "kind": "categorical",
+   "categories": [
+    "Canada",
+    "Dominican Republic",
+    "United States",
+    "Kuwait",
+    "Australia",
+    "Germany",
+    "South Korea",
+    "Austria",
+    "Russian Federation",
+    "Greece",
+    "Switzerland"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.5592,
+      0.8066,
+      0.6024,
+      0.1737,
+      0.1545,
+      0.1447,
+      0.1332,
+      0.069,
+      0.0526,
+      0.0458,
+      0.0289
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "TikTok in-app purchase revenues worldwide from 1st quarter of 2018 to 4th quarter 2023 (in million U.S. dollars)",
+   "short": "TikTok mobile app global IAP revenues 2018-2023",
+   "unit": "million U.S. dollars",
+   "description": "In the fourth quarter of 2023, TikTok generated approximately 707 million U.S. dollars in revenues from users worldwide. Between the end of 2021 and the beginning of 2022, TikTok's in-app revenues experienced staggering growth, going from 286 million U.S. dollars in the third quarter of 2020 to over 606 million U.S. dollars in the fourth quarter of 2021.",
+   "note": "Worldwide; Q1 2018 to Q4 2023; Google Play and Apple App Store combined; IAP revenues reduced by platform fees and taxes",
+   "source": "AppMagic",
+   "kind": "categorical",
+   "categories": [
+    "2018 Q1",
+    "2018 Q2",
+    "2018 Q3",
+    "2018 Q4",
+    "2019 Q1",
+    "2019 Q2",
+    "2019 Q3",
+    "2019 Q4",
+    "2020 Q1",
+    "2020 Q2",
+    "2020 Q3",
+    "2020 Q4",
+    "2021 Q1",
+    "2021 Q2",
+    "2021 Q3",
+    "2021 Q4",
+    "2022 Q1",
+    "2022 Q2",
+    "2022 Q3",
+    "2022 Q4",
+    "2023 Q1",
+    "2023 Q2",
+    "2023 Q3",
+    "2023 Q4"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.57,
+      3.79,
+      7,
+      10.5,
+      14.18,
+      22.67,
+      34.98,
+      73.39,
+      143.38,
+      230.34,
+      274.36,
+      286.16,
+      285.98,
+      382.11,
+      407.01,
+      606.34,
+      603.28,
+      616.66,
+      652.66,
+      671.57,
+      629.96,
+      680.89,
+      687.27,
+      707.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "TikTok annual consumer spending worldwide from 2016 to 2023 (in million U.S. dollars)",
+   "short": "Global TikTok annual consumer spending 2016-2023",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, TikTok generated 3.8 billion U.S. dollars in consumer spending. This number adds to a previous total of more than six billion U.S. dollars, collected cumulatively since 2016. Overall, 2021 was the first time TikTok generated more than one billion U.S. dollars of consumer spending in a single year, and that number has continued to grow, almost doubling in 2022 and nearly reaching four billion in 2023.",
+   "note": "Worldwide; 2016 to 2023; across iOS, Google Play; China is iOS only; inclusive of any percent taken by the app stores",
+   "source": "Data.ai",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.7,
+      17,
+      30,
+      160,
+      910,
+      1720,
+      3320,
+      3840
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Leading markets based on TikTok iOS revenue in 4th quarter 2023 (in million U.S. dollars)",
+   "short": "TikTok iOS revenue in leading markets Q4 2023",
+   "unit": "million U.S. dollars",
+   "description": "TikTok generated more than 303 million U.S. dollars in China from iOS in the last quarter of 2023. The United States followed, with a revenue of 65 million U.S. dollars during the last measure quarter, while Japan ranked third as the country generated over almost 29 million U.S. dollars in revenues via the Apple App Store.",
+   "note": "Worldwide; Q4 2023; iOS only",
+   "source": "AppMagic Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "United States",
+    "Japan",
+    "Switzerland",
+    "Germany",
+    "Saudi Arabia",
+    "United Kingdom",
+    "Taiwan",
+    "United Arab Emirates",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      302.88,
+      65.02,
+      28.7,
+      8.87,
+      8.84,
+      8.56,
+      8.54,
+      6.44,
+      5.84,
+      5.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Leading markets based on TikTok Google Play revenue in 4th quarter 2023 (in million U.S. dollars)",
+   "short": "TikTok Google Play revenue in leading markets Q4 2023",
+   "unit": "million U.S. dollars",
+   "description": "In the fourth quarter of 2023, the video-sharing app TikTok generated more than 50 million U.S. dollars in app revenues in the United States via Google Play, with the country accounting for 26 percent of TikTok's revenues throughout the Google Play Store. Germany followed with approximately 20 million U.S. dollars in revenues, while Japan came in third with 18.25 million U.S. dollars generated don TikTok via the Google Play Store.",
+   "note": "Worldwide; Q4 2023; Android only",
+   "source": "AppMagic Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Germany",
+    "Japan",
+    "Switzerland",
+    "Saudi Arabia",
+    "Indonesia",
+    "Taiwan",
+    "Malaysia",
+    "United Kingdom",
+    "Romania"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      50.7,
+      19.6,
+      18.25,
+      12.73,
+      11.12,
+      9.73,
+      4.76,
+      4.27,
+      4.24,
+      4.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of TikTok users worldwide from 2018 to 2027 (in millions)",
+   "short": "Global TikTok users 2018-2027",
+   "unit": "millions",
+   "description": "In 2022, TikTok counted approximately 1.7 billion users worldwide, up by over 66 percent compared to 2020. Launched in 2017 as the international version of Chinese-developed social media Douyin, TikTok rose to popularity in 2020, reaching a peak of approximately 313.5 million downloads during the first quarter of the year. The popular social media platform is forecasted to reach approximately 2.25 billion users in 2027.",
+   "note": "Worldwide; 2018 to 2022; *Forecast Read more",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      347.1,
+      653.5,
+      1035,
+      1407,
+      1719,
+      1922,
+      2051,
+      2136,
+      2198,
+      2249
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "TikTok penetration in selected countries and territories as of January 2024",
+   "short": "TikTok penetration in selected countries and territories 2024",
+   "unit": "",
+   "description": "As of January 2024, the United Arab Emirates and Saudi Arabia were the countries with the highest TikTok reach, with virtually over 130 percent of the population aged 18 and older using the popular social video app. Malaysia followed, with a reach of 113 percent. The United States saw almost 54 percent of its digital population using TikTok, with approximately 150 million users in the country.",
+   "note": "Worldwide; January 2024; 18 years and older; Number of adult users* that avertisers can reach on TikTok compared to the adult population",
+   "source": "DataReportal; Meltwater; TikTok; We Are Social Share of population",
+   "kind": "categorical",
+   "categories": [
+    "United Arab Emirates*",
+    "Saudi Arabia*",
+    "Malaysia*",
+    "Vietnam",
+    "Chile",
+    "Mexico",
+    "Thailand",
+    "Israel",
+    "Colombia",
+    "Singapore",
+    "Indonesia",
+    "Philippines",
+    "Argentina",
+    "Ireland",
+    "Turkey"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.364,
+      1.35,
+      1.136,
+      0.926,
+      0.894,
+      0.808,
+      0.758,
+      0.726,
+      0.701,
+      0.652,
+      0.648,
+      0.644,
+      0.636,
+      0.606,
+      0.603
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Countries with the largest TikTok audience as of January 2024 (in millions)",
+   "short": "Countries with the most TikTok users 2024",
+   "unit": "millions",
+   "description": "As of January 2024, the United States was the country with the largest TikTok audience by far, with almost 150 million users engaging with the popular social video platform. Indonesia followed, with around 126 million TikTok users. Brazil came in third, with almost 99 million users on TikTok watching short-videos.",
+   "note": "Worldwide; January 2024; 18 years and older; based on addressable advertising audience; does not inlcude Douyin",
+   "source": "DataReportal; Meltwater; TikTok; We Are Social Number of TikTok users in millions",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Indonesia",
+    "Brazil",
+    "Mexico",
+    "Vietnam",
+    "Russian Federation",
+    "Pakistan",
+    "Philippines",
+    "Thailand",
+    "Turkey",
+    "Bangladesh",
+    "Saudi Arabia",
+    "Egypt",
+    "Iraq",
+    "Malaysia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      148.92,
+      126.83,
+      98.59,
+      74.15,
+      67.72,
+      58.59,
+      54.38,
+      49.09,
+      44.38,
+      37.73,
+      37.36,
+      35.1,
+      32.94,
+      31.95,
+      28.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Distribution of TikTok users worldwide as of January 2024, by age and gender",
+   "short": "TikTok: distribution of global audiences 2024, by age and gender",
+   "unit": "",
+   "description": "As of January 2024, it was found that 18 percent of TikTok's global audience were women between the ages of 18 and 24 years, while male users of the same age made up approximately 18.6 percent of the platform's audience. The online audience of the popular social video platform was further composed of 15 percent female users aged between 25 and 34 years, and 17.6 percent of male users in the same age group.",
+   "note": "January 2024; 18 years and older; based on addressable ad audience",
+   "source": "DataReportal; Kepios; Meltwater; TikTok; We Are Social",
+   "kind": "categorical",
+   "categories": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55+"
+   ],
+   "series": [
+    {
+     "name": "Female",
+     "values": [
+      0.181,
+      0.15,
+      0.075,
+      0.041,
+      0.033
+     ]
+    },
+    {
+     "name": "Male",
+     "values": [
+      0.186,
+      0.176,
+      0.085,
+      0.042,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Distribution of TikTok users worldwide as of January 2024, by gender",
+   "short": "TikTok: distribution of global audiences 2024, by gender",
+   "unit": "",
+   "description": "As of January 2024, approximately 48 percent of TikTok global users were women. By comparison, male users on the popular social video platform were 52 percent of the total. TikTok generated approximately, 232 million downloads from global users during the last quarter of the year.",
+   "note": "Worldwide; January 2024",
+   "source": "DataReportal; Kepios; Meltwater; TikTok; We Are Social Share of users",
+   "kind": "categorical",
+   "categories": [
+    "Female",
+    "Male"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Most watched TikTok video worldwide as of July 2023 (in millions)",
+   "short": "Most watched TikTok videos of all time 2023",
+   "unit": "millions",
+   "description": "Zach King’s \"Magic Ride\" was the most watched short-video on TikTok as of July 2023, with illusionist and actor Zack King amassing over 2.3 billion views. The Christmas video from makeup artist and influencer James Charles ranked second, with 1.8 billion views, while Zack King came back to claim the third place with his video \"Unexpected Hiding Spots\" at 1.1 billion views.",
+   "note": "Worldwide; July 2023",
+   "source": "TikTok; Yahoo! Finance Number of views in millions",
+   "kind": "categorical",
+   "categories": [
+    "Zach King’s Magic Ride",
+    "James Charles’ Christmas Sisters Party",
+    "Zach King’s Unexpected Hiding Spots",
+    "Glass and Cake Illusion by Zach King",
+    "“M to the B” lip-syncing by Bella Porch",
+    "Zack King’s Wet Wall Illusion",
+    "Sorrel Horse Dancing to “Say It Right”",
+    "Nyadollie’s beauty tutorial look",
+    "An Adorable Baby Laughing by Daexo",
+    "Billie Eilish’s face warp challenge"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2300,
+      1800,
+      1100,
+      966.7,
+      690.7,
+      659.5,
+      421.3,
+      409.1,
+      392.4,
+      357.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Most-followed creators on TikTok worldwide as of March 2024 (in millions)",
+   "short": "Most popular TikTok users worldwide 2024",
+   "unit": "millions",
+   "description": "As of March 2024, TikTok creator and comedian Khabane Lame was the most followed content creator on the platform. Lame, who is based in Italy, reached 161.4 million subscribers. Influencer Charlie D'Amelio followed closely in second position with 152 million followers and singer Bella Poarch ranked third, with a total of 93.9 million followers.",
+   "note": "Worldwide; March 2024",
+   "source": "Social Blade Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Khabane Lame",
+    "charli d’amelio",
+    "Bella Poarch",
+    "MrBeast",
+    "Addison Rae",
+    "Zach King",
+    "Kimberly Loaiza",
+    "cznburak",
+    "domelipa",
+    "dixie"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      161.4,
+      152,
+      93.9,
+      93.5,
+      88.6,
+      81.2,
+      80.9,
+      74.8,
+      73.2,
+      56.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Average number of videos posted on social video app TikTok from March 2023 to August 2023, by account type",
+   "short": "TikTok: number of monthly postings 2023, by account type",
+   "unit": "",
+   "description": "From March 2023 to August 2023, personal TikTok accounts tend to post more per month than business accounts. The average number of TikTok videos posted by personal accounts was almost 17 per month. In comparison, business accounts on TikTok posted on average approximately 14 videos per month.",
+   "note": "Worldwide; March 1, 2023 to August 31, 2023",
+   "source": "Metricool",
+   "kind": "categorical",
+   "categories": [
+    "Business",
+    "Personal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      14.45,
+      16.59
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Average TikTok video views from March 2023 to August 2023, by duration (in 1,000s)",
+   "short": "TikTok: video views 2023, by length",
+   "unit": "1,000s",
+   "description": "From March 2023 to August 2023, TikTok videos with a duration of over 54 seconds saw on average of 38 thousand views. Shorter videos generated progressively fewer views. Videos with a length of fewer than 10 seconds saw the smallest amounts of views, with around 19 thousand views on average. Videos with a length of between 16 to 53 seconds presented around 30 thousand views on average.",
+   "note": "Worldwide; March 1, 2023 to August 31, 2023",
+   "source": "Metricool",
+   "kind": "categorical",
+   "categories": [
+    "0-9 seconds",
+    "10-15 seconds",
+    "16-29 seconds",
+    "30-53 seconds",
+    "＋54 seconds"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      18.9,
+      23.9,
+      28.8,
+      30.7,
+      38.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Average number of views per video posted on social video app TikTok from March 2023 to August 2023, by account type",
+   "short": "TikTok: number of views per video 2023, by account type",
+   "unit": "",
+   "description": "As of September 2023, personal TikTok accounts tended to generate more views than business accounts. The average number of views for personal TikTok accounts was approximately 32,108. In comparison, business accounts generated on average 23,782 video views in the examined period.",
+   "note": "Worldwide; March 1, 2023 to August 31, 2023",
+   "source": "Metricool",
+   "kind": "categorical",
+   "categories": [
+    "Business",
+    "Personal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23782,
+      32108
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Selected pet influencers on TikTok in 2023, by followers (in thousands)",
+   "short": "Pet influencers on TikTok 2023, by followers",
+   "unit": "thousands",
+   "description": "As of October 2023, celebrity favorite Doug the Pug had over six million followers on TikTok, while Noodle the Pug, who urges his fans to prioritize their mental health, has around 4.4 million followers on the app. Nala Cat, who is a popular pet influencer on Instagram, amassed 224 thousand followers on TikTok.",
+   "note": "Worldwide; October 2023",
+   "source": "Metricool Number of followers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Doug the Pug",
+    "Noodle The Pug",
+    "Nala Cat",
+    "Living With Pickles",
+    "Loki The Wolf Dog",
+    "Minnie Penny",
+    "That Pup Stanley",
+    "Liam The Everyday Cat"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6100,
+      4400,
+      224,
+      68,
+      51,
+      11.2,
+      8,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Number of TikTok videos removed from the platform from 3rd quarter 2020 to 4th quarter 2023 (in millions)",
+   "short": "TikTok: videos removed 2020-2023",
+   "unit": "millions",
+   "description": "During the fourth quarter 2023, approximately 176.46 million TikTok videos were removed from the platform, up by around 29 percent compared to the previous quarter. During the last measured quarter, the number of TikTok videos removed by automation represented approximately 72 percent of the total number of removed videos from the platform.",
+   "note": "Q3 2020 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q3 2020",
+    "Q4 2020",
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      43.09,
+      46.11,
+      61.95,
+      81.52,
+      91.45,
+      85.79,
+      102.31,
+      113.81,
+      110.95,
+      85.7,
+      91,
+      106.48,
+      136.53,
+      176.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Number of TikTok videos removed from the platform by automation from 3rd quarter 2020 to 4th quarter 2023 (in millions)",
+   "short": "TikTok: videos removed by automation 2020-2023",
+   "unit": "millions",
+   "description": "During the fourth quarter of 2023, approximately 128.30 million TikTok videos were removed from the platform by automation, up by 44 percent compared to the previous quarter. During the last measured quarter, the number of TikTok videos removed by automation represented a share of 72 percent of the total number of removed videos from the platform.",
+   "note": "Worldwide; Q3 2020 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q3 2020",
+    "Q4 2020",
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.37,
+      4.92,
+      8.83,
+      16.96,
+      31.01,
+      28.39,
+      34.73,
+      48.01,
+      53.29,
+      46.9,
+      53.49,
+      66.44,
+      88.72,
+      128.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Number of TikTok accounts removed from the platform from 3rd quarter 2020 to 4th quarter 2023 (in millions)",
+   "short": "TikTok: accounts removed 2020-2023",
+   "unit": "millions",
+   "description": "During the fourth quarter of 2023, approximately 204 million accounts were removed by TikTok due to community guideline violations. Over 20 million TikTok accounts were removed from the platform because suspected of being operated by users under the age of 13 during the last measured quarter.",
+   "note": "Worldwide; Q3 2020 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q3 2020",
+    "Q4 2020",
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.62,
+      4.49,
+      11.15,
+      14.95,
+      17.01,
+      24.11,
+      44.44,
+      59.43,
+      76.44,
+      76.17,
+      70.63,
+      64.78,
+      100.03,
+      204.82
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Number of TikTok accounts removed from the platform from 3rd quarter 2020 to 4th quarter 2023, by reason",
+   "short": "TikTok: account removed 2020-2023, by reason",
+   "unit": "",
+   "description": "During the fourth quarter 2023, approximately 20 million TikTok accounts were removed from the platform due to suspicion of being operated by users under the age of 13. During the last measured period, there was a staggering 146 percent quarter-over-quarter increase in the number of fake accounts removed from the platform, with 181 million fake accounts removed from TikTok in the fourth quarter of 2023.",
+   "note": "Worldwide; Q3 2020 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q3 2020",
+    "Q4 2020",
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "Accounts suspected to be under the age of 13",
+     "values": [
+      920793,
+      3515238,
+      7263952,
+      11205597,
+      12513729,
+      15383165,
+      20219476,
+      20575056,
+      19690699,
+      17877316,
+      16947484,
+      18823040,
+      20864857,
+      19848855
+     ]
+    },
+    {
+     "name": "Fake accounts",
+     "values": [
+      2409163,
+      1653892,
+      1728621,
+      6077046,
+      20890519,
+      33632058,
+      50963108,
+      54453610,
+      51298135,
+      43154318,
+      73571022,
+      181045649
+     ]
+    },
+    {
+     "name": "Other accounts",
+     "values": [
+      704023,
+      974454,
+      1476399,
+      2093045,
+      2763376,
+      2647105,
+      3328993,
+      5222968,
+      5782574,
+      3847196,
+      2386036,
+      2802525,
+      5593418,
+      3922934
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Number of TikTok livestreaming video sessions suspended in 2nd quarter 2023 and 4th quarter 2023 (in millions)",
+   "short": "TikTok: live video sessions suspended 2023",
+   "unit": "millions",
+   "description": "During the fourth quarter 2023, approximately eight million live streaming video sessions that took place on TikTok were interrupted. This represents a decrease from the previous quarter, when around 10 million live sessions on the platform were suspended due to guidelines.",
+   "note": "Q2 2023 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.07,
+      9.6,
+      8.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Number of TikTok livestreaming video sessions restored in 2nd quarter 2023 and 4th quarter 2023",
+   "short": "TikTok: live video sessions restored 2023",
+   "unit": "",
+   "description": "During the fourth quarter 2023, approximately 483 thousand live streaming video sessions that were initially suspended on TikTok were restored. The increase in restored streaming sessions between the second and the fourth quarter of 2023 follows the increase in the number of steaming sessions suspended in the examined periods. Of the approximately 10 million streaming sessions suspended, only less than four percent were restored in the last examined quarter.",
+   "note": "Q2 2023 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      252045,
+      375137,
+      483888
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Number of adverts removed on TikTok from 1st quarter 2021 to 4th quarter 2023",
+   "short": "TikTok: ads removed 2021-2023",
+   "unit": "",
+   "description": "During the fourth quarter of 2023, the social video platform TikTok removed approximately 4.9 million ads due to account actions. In the last measured quarter, the platform conducted an additional 1.4 million ads removals.",
+   "note": "Worldwide; Q1 2021 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "Ads removed due to account actions",
+     "values": [
+      605253,
+      516006,
+      2976025,
+      2938621,
+      8715899,
+      5148050,
+      5414459,
+      4953815,
+      2993546,
+      7942008,
+      6496665,
+      4920621
+     ]
+    },
+    {
+     "name": "Ads removals",
+     "values": [
+      1921900,
+      1829219,
+      339630,
+      3181858,
+      5845827,
+      4221562,
+      2294262,
+      1635296,
+      870815,
+      962574,
+      1306249,
+      1487737
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Number of fake interactions prevented on TikTok from 2nd quarter 2021 to 4th quarter 2023 (in billions)",
+   "short": "TikTok: fake engagement prevented 2021-2023",
+   "unit": "billions",
+   "description": "During the fourth quarter of 2023, the social video platform TikTok prevented over 22.5 billion fake likes on its content due to inauthentic engagement and fake accounts activity. This represents an increase from the previous quarter, when the number of fake likes prevented was approximately 7.8 billion. Additionally, the platform prevented almost five billion fake follower requests during the last measured quarter, down from the amount of prevented fake followers requests recorded [...]",
+   "note": "Worldwide; Q2 2021 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "Fake likes",
+     "values": [
+      9.61,
+      16.59,
+      11.92,
+      17.59,
+      14.65,
+      5.48,
+      10.18,
+      8.39,
+      5.3,
+      7.81,
+      22.53
+     ]
+    },
+    {
+     "name": "Fake followers requests",
+     "values": [
+      0.63,
+      2.08,
+      2.79,
+      4.76,
+      9.9,
+      8.04,
+      7.5,
+      6.81,
+      21.54,
+      7.26,
+      4.89
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Number of monthly active users of popular short video apps in China in November 2023 (in millions)",
+   "short": "Monthly active users of leading short video apps in China 2023",
+   "unit": "millions",
+   "description": "Douyin, the original Chinese version of TikTok developed by Bytedance, remained as the leader in China’s short-formed video scene. As of November 2023, the app boasted to have 752 million active users across the country. Its closest rival, Kuaishou saw a rapid active user growth reaching 485 million.",
+   "note": "China; November 2023",
+   "source": "iiMedia Research Number of monthly active users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Douyin",
+    "Kuaishou",
+    "Xigua Video",
+    "WeSee (Weishi)",
+    "Douyin Huoshan",
+    "Bobo Video",
+    "Kuai Video (360)",
+    "233 Leyuan",
+    "Meipai",
+    "Kuaiyin"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      751.58,
+      484.69,
+      92.22,
+      73.2,
+      72.21,
+      27.23,
+      19.01,
+      18.49,
+      18.38,
+      13.76
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Number of monthly active users of Douyin in China from December 2022 to November 2023 (in millions)",
+   "short": "Monthly active users of Douyin in China 2022-2023",
+   "unit": "millions",
+   "description": "TikTok's sister app Douyin has amassed 752 million monthly active users in China in November 2023. Apart from Douyin, Bytedance also owned other beloved short video platforms Xigua Video and Huoshan Video in the Chinese market.",
+   "note": "China; December 2022 to November 2023",
+   "source": "iiMedia Research",
+   "kind": "categorical",
+   "categories": [
+    "Dec '22",
+    "Jan '23",
+    "Feb '23",
+    "Mar '23",
+    "Apr '23",
+    "May '23",
+    "Jun '23",
+    "Jul '23",
+    "Aug '23",
+    "Sep '23",
+    "Oct '23",
+    "Nov '23"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      759.66,
+      768.55,
+      747.56,
+      751.14,
+      749,
+      749.61,
+      760.96,
+      772.34,
+      769.51,
+      760.67,
+      758.27,
+      751.58
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Most popular influencers on Douyin (TikTok) in China as of August 22, 2023 (in millions)",
+   "short": "Most-followed influencers on Douyin in China 2023",
+   "unit": "millions",
+   "description": "As of August 22, 2023, Yang Ge, also known as Crazy Xiaoyangge, was the most popular influencer on Douyin with 118 million fans. Half Past Six of Chen Xiang, a family-style situation comedy directed by Chen Xiang took the second spot with 69 million followers. The third place went to Ares Cheng and his wife Yan Zhen.",
+   "note": "China; as of August 22, 2023",
+   "source": "Website (relangdata.cn) Number of fans in millions",
+   "kind": "categorical",
+   "categories": [
+    "Yang Ge (Crazy Xiaoyangge)",
+    "Chen Xiang (Half Past Six of Chen Xiang)",
+    "Ares Cheng & Yan Zhen",
+    "Zhu Xiaohan",
+    "Li Ziqi",
+    "Little Monk"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      118,
+      69.45,
+      60.45,
+      52.81,
+      49.06,
+      45.65
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Share of the mini-programs on WeChat, Alipay, Baidu, and Douyin in China in January 2023, by industry",
+   "short": "Industry distribution of mini-programs in China 2023, by mini-program platform",
+   "unit": "",
+   "description": "In China, internet giants Baidu, Tencent's WeChat, Alibaba's Alipay, and Douyin all have developed their own mini-program ecologies- an ecosystem of cloud-based embedded apps within their core mobile apps. In general, life services were the most common category of mini-programs, as of January 2023. Mobile shopping accounted for 11 percent of top 100 WeChat Mini Programs.",
+   "note": "China; January 2023; among top 100 mini-programs; only top 5 categories are displayed",
+   "source": "QuestMobile Share of mini-programs",
+   "kind": "categorical",
+   "categories": [
+    "WeChat Mini Program",
+    "Alipay Mini Program",
+    "Baidu Smart Mini Program",
+    "Douyin MIni Program"
+   ],
+   "series": [
+    {
+     "name": "Life services",
+     "values": [
+      26,
+      51,
+      22,
+      8
+     ]
+    },
+    {
+     "name": "Mobile shopping",
+     "values": [
+      11,
+      11,
+      9
+     ]
+    },
+    {
+     "name": "Tools",
+     "values": [
+      8,
+      9,
+      16,
+      18
+     ]
+    },
+    {
+     "name": "Financial management",
+     "values": [
+      8,
+      8
+     ]
+    },
+    {
+     "name": "Transportation services",
+     "values": [
+      7
+     ]
+    },
+    {
+     "name": "Mobile video",
+     "values": [
+      9,
+      19
+     ]
+    },
+    {
+     "name": "Education",
+     "values": [
+      18
+     ]
+    },
+    {
+     "name": "Photo editing",
+     "values": [
+      12
+     ]
+    },
+    {
+     "name": "Mobile games",
+     "values": [
+      16,
+      20
+     ]
+    },
+    {
+     "name": "Digital reading",
+     "values": [
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Share of live streaming users on the short video platform Douyin (TikTok) in China from January 2020 to September 2023",
+   "short": "Live streaming usage rate on Douyin (TikTok) in China 2020-2023",
+   "unit": "",
+   "description": "As of September 2023, Douyin, the Chinese sister app of TikTok, reported to have 89.8 percent of its users streaming live content in China. The Beijing-based short video platform is growing its popularity in the country. Its users spent at least 80 minutes watching videos on the platform each day.",
+   "note": "China; January 2020 to September 2023",
+   "source": "QuestMobile",
+   "kind": "categorical",
+   "categories": [
+    "Jan '20",
+    "Feb '21",
+    "Jun '21",
+    "Feb '22",
+    "Jun '22",
+    "Sep '22",
+    "Sep '23"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.603,
+      0.854,
+      0.862,
+      0.868,
+      0.883,
+      0.887,
+      0.898
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Brand index of major luxury brands on Douyin in China as of March 30, 2024",
+   "short": "Most successful luxury brands on Douyin in China 2024",
+   "unit": "",
+   "description": "Dior remained the most successful luxury brand on the Chinese short video app Douyin. During the week from March 24 to 30, 2024, Coach scored the highest - 222,000 points – on Douyin’s brand index. Ralph Lauren overtook Longines to the second place with 217,000 points. The brand index evaluates the overall performance of luxury brands on Douyin, based on effective brand content, user reach, and user search volume.",
+   "note": "China; March 24 to 30, 2024",
+   "source": "Ocean Engine Brand index",
+   "kind": "categorical",
+   "categories": [
+    "Coach",
+    "Ralph Lauren",
+    "Longines",
+    "Louis Vuitton",
+    "Tissot",
+    "Dior",
+    "La Prairie",
+    "Tory Burch",
+    "Gucci",
+    "Cartier"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      221574,
+      217065,
+      208586,
+      208256,
+      200795,
+      197206,
+      183310,
+      178130,
+      175448,
+      174909
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Leading social media platforms used by marketers worldwide as of January 2023",
+   "short": "Social media platforms used by marketers worldwide 2023",
+   "unit": "",
+   "description": "As of January 2023, Facebook was the most commonly used social media platform among marketers worldwide. According to a global survey, 89 percent of responding social media marketers used the network to promote their business, while another 80 percent did so via Instagram.",
+   "note": "Worldwide; January 2023; 2,133 respondents",
+   "source": "Frankwatching; Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "YouTube",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.89,
+      0.8,
+      0.64,
+      0.54,
+      0.44,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Planned changes in use of selected social media for marketing purposes worldwide as of January 2023",
+   "short": "Future use of social media among marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a global 2023 survey, 66 percent of responding marketers stated they would increase their usage of Instagram in the near future; 43 percent said they would increase the usage of TikTok advertising, but as many as 45 percent were not planning to use the mobile video sharing app for marketing purposes.",
+   "note": "Worldwide; January 2023; 2,133 marketers",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "Youtube",
+    "LinkedIn",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "Increase",
+     "values": [
+      0.53,
+      0.66,
+      0.66,
+      0.48,
+      0.22,
+      0.43
+     ]
+    },
+    {
+     "name": "Stay the same",
+     "values": [
+      0.32,
+      0.21,
+      0.19,
+      0.28,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "name": "Decrease",
+     "values": [
+      0.05,
+      0.03,
+      0.01,
+      0.02,
+      0.08,
+      0.02
+     ]
+    },
+    {
+     "name": "No plans to utilize",
+     "values": [
+      0.1,
+      0.1,
+      0.14,
+      0.22,
+      0.4,
+      0.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Planned changes in use of selected video platforms for social media marketing purposes worldwide as of January 2023",
+   "short": "Future use of video among social media marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a global survey of social media marketers released in 2023, 56 percent of responding industry professionals stated they would increase their video activities on Instagram in the following 12 months, while 59 percent said they planned to do so on YouTube.",
+   "note": "Worldwide; January 2023; 2,133 respondents; among marketers",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "YouTube",
+    "Facebook",
+    "LinkedIn",
+    "TikTok",
+    "Twitter"
+   ],
+   "series": [
+    {
+     "name": "Planning to increase activity in next 12 months",
+     "values": [
+      0.56,
+      0.59,
+      0.37,
+      0.55,
+      0.38,
+      0.22
+     ]
+    },
+    {
+     "name": "Planning to decrease activity in next 12 months",
+     "values": [
+      0.05,
+      0.02,
+      0.14,
+      0.03,
+      0.03,
+      0.16
+     ]
+    },
+    {
+     "name": "No plans to use",
+     "values": [
+      0.08,
+      0.16,
+      0.06,
+      0.15,
+      0.48,
+      0.31
+     ]
+    },
+    {
+     "name": "Stay the same",
+     "values": [
+      0.31,
+      0.24,
+      0.43,
+      0.27,
+      0.11,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 51,
+   "title": "Social media platforms with the largest return on investment (ROI) according to B2B marketers worldwide as of May 2023",
+   "short": "Social media platforms with highest ROI for B2B marketers worldwide 2023",
+   "unit": "",
+   "description": "According to a survey released in May 2023, B2B marketers considered Facebook the social media channel with the highest return on investment (ROI). The platform was mentioned by 22 percent of respondents. Instagram, TikTok and YouTube tied in second, each cited by 16 percent of the respondents.",
+   "note": "Worldwide; as of May 2023; > 1,200; among global B2B and B2C marketers",
+   "source": "HubSpot",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "TikTok",
+    "YouTube",
+    "LinkedIn"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.22,
+      0.16,
+      0.16,
+      0.16,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 53,
+   "title": "TikTok advertising revenue worldwide from 2020 to 2027 (in billion U.S. dollars)",
+   "short": "TikTok ad revenue worldwide 2020-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, TikTok generated four billion U.S. dollars in advertising revenue. This figure is expected to double by 2024 and more nearly quadruple by 2026.",
+   "note": "Worldwide; 2020 to 2022; * Forecast. Read more",
+   "source": "eMarketer; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2,
+      4,
+      11.64,
+      18.04,
+      23.58,
+      33.12,
+      43.96,
+      53.95
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 55,
+   "title": "Leading unicorns worldwide as of April 2023 (in billion U.S. dollars)",
+   "short": "Highest valued unicorn companies worldwide 2023",
+   "unit": "billion U.S. dollars",
+   "description": "As of April 2023, ByteDance, the Chinese tech company which owns TikTok, was valued at about 200 billion U.S. dollars, which made it the highest valued unicorn globally. A unicorn is a privately held company with a market valuation of one billion U.S. dollars or more. As of 2021, there were over 590 unicorns globally, with the majority based in the United States and China.",
+   "note": "Worldwide; April 2023",
+   "source": "Hurun Research Institute Valuation in billion U.S. dollars Company (HQ country)",
+   "kind": "categorical",
+   "categories": [
+    "ByteDance (China)",
+    "SpaceX (U.S.)",
+    "ANT Group (China)",
+    "Shein (China)",
+    "Stripe (U.S.)",
+    "WeBank (China)",
+    "Databricks (U.S.)",
+    "Telegram (UAE)",
+    "Revolut (UK)",
+    "Cainiao (China)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      200,
+      137,
+      120,
+      65,
+      50,
+      33,
+      31,
+      30,
+      28,
+      27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 56,
+   "title": "Leading unicorns in China as of April 2023, by market valuation (in billion U.S. dollars)",
+   "short": "Highest valued unicorn companies in China 2023",
+   "unit": "billion U.S. dollars",
+   "description": "A unicorn company is a privately owned startup that has a current valuation of one billion U.S. dollars or over. Once a company has gone public (IPO) or has been acquired it is no longer termed as a unicorn. As of 2022, the number of unicorns worldwide reached approximately 1,400, with North America and Asia Pacific accounting for over 80 percent of all unicorns worldwide. As of 2022, the tech company ByteDance was not only the highest valued unicorn in China but also worldwide.",
+   "note": "China; April 2023",
+   "source": "Hurun Research Institute Valuation in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "ByteDance",
+    "ANT Group",
+    "Shein",
+    "WeBank",
+    "Cainiao"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      200,
+      120,
+      65,
+      33,
+      27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 57,
+   "title": "Most valuable brands worldwide in 2024 (in billion U.S. dollars)",
+   "short": "Most valuable brands worldwide 2024",
+   "unit": "billion U.S. dollars",
+   "description": "In 2024, according to the source's ranking, Apple overtook Amazon's position as the most valuable brand in the world. The technology giant had an estimated brand value of about 516.6 billion U.S. dollars, while Amazon had 308.9 billion dollars worth.",
+   "note": "Worldwide; 2024",
+   "source": "Brand Finance; Visual Capitalist Brand value in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Microsoft",
+    "Google",
+    "Amazon",
+    "Samsung Group",
+    "Walmart",
+    "TikTok/Douyin",
+    "Facebook",
+    "Deutsche Telekom",
+    "ICBC"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      516.6,
+      340.4,
+      333.4,
+      308.9,
+      99.4,
+      96.8,
+      84.2,
+      75.7,
+      73.3,
+      71.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 58,
+   "title": "Digital advertising revenues of major internet companies worldwide in 2023 and 2027 (in billion U.S. dollars)",
+   "short": "Digital advertising revenue for major internet companies 2023-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the forecast for Facebook digital advertising revenues saw the Meta company generating 119 billion U.S. dollars by the end of the fiscal year. TikTok was projected to see its online advertising revenues hit 18 billion U.S. dollars. By comparison, LinkedIn advertising revenues were forecasted to reach approximately a third of that amount for 2023.",
+   "note": "Worldwide; August 2023; forecast",
+   "source": "Statista; Various sources Revenue in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Google",
+    "Facebook",
+    "Amazon",
+    "TikTok",
+    "Tencent",
+    "Microsoft Search & News Advertising",
+    "Baidu",
+    "JD.com",
+    "Apple",
+    "LinkedIn",
+    "Snapchat",
+    "Twitter",
+    "Pinterest",
+    "Spotify"
+   ],
+   "series": [
+    {
+     "name": "2027",
+     "values": [
+      340.18,
+      127.27,
+      70.82,
+      53.95,
+      16.71,
+      16.33,
+      11.51,
+      16.25,
+      13.73,
+      10.35,
+      8.8,
+      2.7,
+      5.13,
+      2.24
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      250.26,
+      118.96,
+      44.35,
+      18.04,
+      13.18,
+      12.54,
+      11.51,
+      10.99,
+      6.51,
+      5.91,
+      5.36,
+      3.31,
+      3.27,
+      1.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 59,
+   "title": "Brand value of TikTok/Douyin worldwide from 2020 to 2023 (in billion U.S. dollars)",
+   "short": "TikTok/Douyin: brand value 2020-2023",
+   "unit": "billion U.S. dollars",
+   "description": "ByteDance’s triumphant TikTok/ Douyin is one of the most successful Chinese brands that have made its name beyond borders. The short video brand enjoyed immense popularity around the world, surpassing Instagram and WhatsApp to be the most downloaded mobile app. In 2023, the brand value of TikTok/Douyin amounted to 84 billion U.S. dollars. It was the most valuable unicorn worldwide in 2023 with a market cap of 200 billion U.S. dollars.",
+   "note": "Worldwide, China; 2020 to 2023",
+   "source": "Brand Finance",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      18.75,
+      58.98,
+      65.7,
+      84.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 60,
+   "title": "Annual revenue generated by ByteDance from 2020 to 2023 (in billion U.S. dollars)",
+   "short": "ByteDance: annual revenue 2020-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, Beijing-based ByteDance reported approximately 120 billion U.S. dollars in revenues, up by about 50 percent compared to the previous year. ByteDance, also the owner of the popular Chinese news and content app Toutiao, has seen its major social video app TikTok face several controversies since its stellar rise to popularity, especially in the United States. Alleging national security concerns, U.S. governmental institutions have been pushing the possibility to ban the app from the [...]",
+   "note": "Worldwide; 2020 to 2023",
+   "source": "Bloomberg",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      34.3,
+      61.7,
+      80,
+      120
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 61,
+   "title": "Revenue generated by ByteDance in 2nd quarter 2022 and 2nd quarter 2023 (in billion U.S. dollars)",
+   "short": "ByteDance: quarterly revenue 2022-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In the second quarter of 2023, Beijing-based ByteDance reported 29 billion U.S. dollars in revenues, up by almost 40 percent compared to the corresponding quarter during the previous year. It was estimated that in the second quarter of 2022, TikTok's parent company generated around 20.7 billion U.S. dollars in revenues.",
+   "note": "Worldwide; Q2 2022 and Q2 2023; *Data calculated by Statista on the basis of values given by the source. Read more",
+   "source": "The Information",
+   "kind": "categorical",
+   "categories": [
+    "Q2 2022*",
+    "Q2 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      20.71,
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 64,
+   "title": "TikTok brand awareness, usage, popularity, loyalty, and buzz among social media users in the United States in 2023",
+   "short": "TikTok brand profile in the United States 2023",
+   "unit": "",
+   "description": "How high is the brand awareness of TikTok in the United States?",
+   "note": "United States; May to June 2023; 2149 respondents; 18-64 years; respondents who use social media",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "TikTok awareness",
+    "TikTok popularity",
+    "TikTok usage",
+    "TikTok loyalty",
+    "TikTok buzz"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.91,
+      0.43,
+      0.42,
+      0.37,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 65,
+   "title": "Opinion of adults in the United States over the government banning TikTok as of March 2023",
+   "short": "U.S. TikTok ban approval 2023",
+   "unit": "",
+   "description": "According to a 2023 survey of adults in the United States, six out of every 10 respondents reported being in favor of the U.S. government banning the social video app TikTok. In contrast, almost 40 percent of the respondents reported opposing suggesting that they do not support the idea of banning the social video platform in the country.",
+   "note": "United States; March 20 to 22, 2023; 2,117 respondents; 18 years and older",
+   "source": "CBS News; YouGov",
+   "kind": "categorical",
+   "categories": [
+    "Favor",
+    "Oppose"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.61,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 66,
+   "title": "Opinion of adult U.S. citizens on government demand for TikTok being sold or banned in the country as of March 2023",
+   "short": "U.S. citizens approval rate of TikTok being sold or banned 2023",
+   "unit": "",
+   "description": "According to a 2023 survey of internet users in the United States, a significant portion of U.S. adult citizens and TikTok users supported the U.S. government's demand for the sale of TikTok's Chinese owners' stakes. Almost 30 percent of U.S. adult citizens strongly approved of the U.S. government's request that the Chinese owners of TikTok sell their stakes. In comparison, two out of every 10 TikTok users strongly supported the demand.",
+   "note": "United States; March 26 to 28, 2023; 1,500 respondents; 18 years and older",
+   "source": "YouGov Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "U.S. adult citizens",
+    "TikTok users"
+   ],
+   "series": [
+    {
+     "name": "Strongly approve",
+     "values": [
+      0.28,
+      0.17
+     ]
+    },
+    {
+     "name": "Somewhat approve",
+     "values": [
+      0.23,
+      0.21
+     ]
+    },
+    {
+     "name": "Not sure",
+     "values": [
+      0.25,
+      0.23
+     ]
+    },
+    {
+     "name": "Somewhat disapprove",
+     "values": [
+      0.13,
+      0.18
+     ]
+    },
+    {
+     "name": "Strongly disapprove",
+     "values": [
+      0.1,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 67,
+   "title": "Opinion of adult U.S. citizens on government demand for TikTok being sold or banned in the country as of March 2023, by party identification",
+   "short": "U.S. citizens approval rate of TikTok being sold or banned 2023, by party ID",
+   "unit": "",
+   "description": "According to a 2023 survey of citizens in the United States, a higher percentage of Republicans support the U.S. government's demand for the sale of TikTok's Chinese owners' stakes or its ban. Four out of every 10 Republicans approve of the U.S. government's request, while only 21 percent of Democrats said they strongly support the demand.",
+   "note": "United States; March 26 to 28, 2023; 1,500 respondents; 18 years and older",
+   "source": "YouGov Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Democrats",
+    "Independents",
+    "Republicans"
+   ],
+   "series": [
+    {
+     "name": "Strongly approve",
+     "values": [
+      0.21,
+      0.24,
+      0.4
+     ]
+    },
+    {
+     "name": "Somewhat approve",
+     "values": [
+      0.27,
+      0.22,
+      0.2
+     ]
+    },
+    {
+     "name": "Not sure",
+     "values": [
+      0.25,
+      0.32,
+      0.18
+     ]
+    },
+    {
+     "name": "Somewhat disapprove",
+     "values": [
+      0.15,
+      0.11,
+      0.14
+     ]
+    },
+    {
+     "name": "Strongly disapprove",
+     "values": [
+      0.12,
+      0.11,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 68,
+   "title": "Opinion of United States citizens over TikTok posing a national security threat to the country as of March 2023",
+   "short": "U.S. adults believing TikTok to be a threat to the country 2023",
+   "unit": "",
+   "description": "According to a 2023 survey of internet users in the United States, many TikTok users do not consider TikTok a threat to the country's security. Approximately 52 percent of the social video platform users said they do not view TikTok as a national threat. In comparison, four out of every 10 U.S. adult citizens answered \"Yes,\" indicating that they consider TikTok a potential national security threat to the U.S.",
+   "note": "United States; March 26 to 28, 2023; 1,500 respondents; 18 years and older",
+   "source": "YouGov",
+   "kind": "categorical",
+   "categories": [
+    "U.S. adult citizens",
+    "TikTok users"
+   ],
+   "series": [
+    {
+     "name": "Yes",
+     "values": [
+      0.42,
+      0.22
+     ]
+    },
+    {
+     "name": "Not sure",
+     "values": [
+      0.28,
+      0.25
+     ]
+    },
+    {
+     "name": "No",
+     "values": [
+      0.31,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 69,
+   "title": "Share of United States citizens who believe TikTok connection to China poses a national security threat as of March 2023",
+   "short": "U.S. adults who see TikTok ties to China as a national security risk 2023",
+   "unit": "",
+   "description": "According to a 2023 survey of adults in the United States, almost six out of every 10 respondents reported thinking that TikTok's connection to China posed a threat to national security. On the other hand, 22 percent of the surveyed respondents indicated that they do not perceive TikTok's ties to China as a national risk for the United States. Another 22 percent of respondents reported being uncertain about the potential risks associated with TikTok's Chinese connections.",
+   "note": "United States; March 20 to 22, 2023; 2,117 respondents; 18 years and older",
+   "source": "CBS News; YouGov",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No",
+    "Not sure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.56,
+      0.22,
+      0.22
+     ]
+    }
+   ]
+  }
+ ]
+}

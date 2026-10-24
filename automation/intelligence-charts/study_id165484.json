@@ -1,0 +1,1189 @@
+{
+ "studyId": "165484",
+ "study": "wellness industry in the us",
+ "file": "research/statista/Health & Wellness/study_id165484_wellness-industry-in-the-us.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Market size of the wellness tourism industry in the United States from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Wellness tourism industry market size in the U.S. 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The wellness tourism market in the United States experienced an increase of over 30 percent between 2020 and 2022, showing signs of recovery after the coronavirus (COVID-19) pandemic. The market size of the wellness tourism industry in the U.S. was estimated at just under 256 billion U.S. dollars in 2022.",
+   "note": "United States; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      263.5,
+      147.3,
+      198.7,
+      255.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Market size of the thermal/mineral springs industry in the United States from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Thermal/mineral springs market size in the U.S. 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The thermal/mineral springs market in the United States experienced an increase of over 24 percent between 2020 and 2022, showing signs of recovery after the coronavirus (COVID-19) pandemic. The market size of the thermal/mineral springs industry in the U.S. was estimated at just over one billion U.S. dollars in 2022.",
+   "note": "United States; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.87,
+      0.67,
+      0.92,
+      1.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Market size of the workplace wellness industry in the United States from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Workplace wellness industry market size in the U.S. 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The workplace wellness market in the United States experienced an increase of over eight percent between 2020 and 2022, showing signs of recovery after the coronavirus (COVID-19) pandemic. The market size of the workplace wellness industry in the U.S. was estimated at 18.16 billion U.S. dollars in 2022.",
+   "note": "United States; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      17.13,
+      15.54,
+      17.49,
+      18.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Revenue of the spa industry in the United States from 2008 to 2022 (in billion U.S. dollars)",
+   "short": "U.S. spa industry revenue 2008-2022",
+   "unit": "billion U.S. dollars",
+   "description": "Going to the spa is a popular way to relax and unwind from the stresses of everyday life. In 2022, the spa industry in the United States was worth an estimated 20.1 billion U.S. dollars. Previously, in 2021, the U.S. spa industry was worth just over 18 billion U.S. dollars. The dip in revenues in 2020 followed by recovery in 2021 can be attributed to the coronavirus (COVID-19) pandemic, which forced the temporary and, in some cases, permanent closure of health facilities and spas across the [...]",
+   "note": "United States; 2008 to 2022",
+   "source": "International Spa Association; Website (americanspa.com)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      12.8,
+      12.3,
+      12.8,
+      13.4,
+      14,
+      14.7,
+      15.5,
+      16.3,
+      16.8,
+      17.5,
+      18.3,
+      19.1,
+      12.1,
+      18.1,
+      20.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Revenue per spa visit in the spa industry in the United States from 2015 to 2022 (in U.S. dollars)",
+   "short": "Revenue per spa visit in the U.S. 2015-2022",
+   "unit": "U.S. dollars",
+   "description": "In 2022, the revenue per spa visit in the United States spa industry amounted to 111.50 U.S. dollars. This represented an increase of seven U.S. dollars on the average revenue generated per spa visit a year earlier.",
+   "note": "United States; 2015 to 2022",
+   "source": "International Spa Association; Website (beautymatter.com)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      90.7,
+      91.3,
+      93.7,
+      96.5,
+      99.5,
+      97.5,
+      104.5,
+      111.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of spa locations in the United States from 2003 to 2022",
+   "short": "Number of spa locations in the U.S. 2003-2022",
+   "unit": "",
+   "description": "Going to the spa is one of the best ways to relax and unwind from the stresses of everyday life. In 2022, there were 21,840 spa locations across the United States, a slight increase on the number of locations in 2021.",
+   "note": "United States; 2003 to 2022",
+   "source": "International Spa Association; Website (beautymatter.com)",
+   "kind": "timeseries",
+   "categories": [
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      9870,
+      12210,
+      13350,
+      15040,
+      17940,
+      21300,
+      20600,
+      19900,
+      19850,
+      19960,
+      20180,
+      20660,
+      21020,
+      21260,
+      21770,
+      22160,
+      22430,
+      21560,
+      21510,
+      21840
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Number of employees in the spa industry in the United States from 2019 to 2023 (in 1,000s)",
+   "short": "Number of employees in the U.S. spa industry 2023",
+   "unit": "1,000s",
+   "description": "The number of employees in the United States spa industry dropped from over 383 thousand in 2020 to just under 305 thousand in 2021. This was as a result of the coronavirus (COVID-19) pandemic, which had a significant impact on the industry. By 2023, the number of employees within the spa sector rose to over 360 thousand.",
+   "note": "United States; 2019 to 2023",
+   "source": "International Spa Association; Website (beautymatter.com)",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      372.1,
+      383.7,
+      304.8,
+      345,
+      360.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Number of spa visits in the United States from 2008 to 2022 (in millions)",
+   "short": "Number of spa visits in the U.S. 2008-2022",
+   "unit": "millions",
+   "description": "Americans visit spas to relax and unwind from the stresses of everyday life. In 2022, the United States spa industry reported 181 million visitors. This figure, however, was eclipsed by the totals in 2019. During that year, approximately 192 million Americans visited spas across the United States. The decrease of over 35 percent from 2019 to 2020 and can be attributed to the coronavirus (COVID-19) pandemic, which forced the temporary and, in some cases, permanent closure of health [...]",
+   "note": "United States; 2008 to 2022",
+   "source": "International Spa Association; Website (americanspa.com)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      160,
+      143,
+      150,
+      156,
+      160,
+      164,
+      176,
+      179,
+      184,
+      187,
+      190,
+      192,
+      124,
+      173,
+      181
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Average revenue per spa visit in the United States in 2022, by spa type (in U.S. dollars)",
+   "short": "Revenue per spa visit in the U.S. in 2022, by type",
+   "unit": "U.S. dollars",
+   "description": "The average visit to a day spa in the United States in 2022 generated revenue of 100 U.S. dollars. Meanwhile, guests at resort or hotel spas spent an average of just over 160 U.S. dollars per visit in 2022.",
+   "note": "United States; 2022",
+   "source": "International Spa Association",
+   "kind": "categorical",
+   "categories": [
+    "Day spa",
+    "Other",
+    "Resort / hotel spa",
+    "All"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      100,
+      141,
+      162,
+      112
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Average price of spa treatments in the United States in 2023, by type (in U.S. dollars)",
+   "short": "Cost of spa treatments in the U.S. 2023, by type",
+   "unit": "U.S. dollars",
+   "description": "A massage at spa establishments in the United States cost an average of 111 U.S. dollars in 2023. Meanwhile, consumers spent an average of 57 U.S. dollars on nail services in the same year.",
+   "note": "United States; January to March 2023; 2,829 respondents",
+   "source": "International Spa Association Average price in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Body treatment",
+    "Facial",
+    "Service",
+    "Massage",
+    "Hair service",
+    "Nail service"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      152,
+      125,
+      116,
+      111,
+      85,
+      57
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Most common services offered by spa establishments in the United States in 2023",
+   "short": "Popular services offered by spas in the U.S. in 2023",
+   "unit": "",
+   "description": "Some 95 percent of spa establishments in the United States offered massage services in 2023. Meanwhile, just 10 percent of spas in the country offered hydrotherapy, and 16 percent provided medically supervised services.",
+   "note": "United States; January to March 2023; 2,829 respondents",
+   "source": "International Spa Association Share of spas",
+   "kind": "categorical",
+   "categories": [
+    "Massage services",
+    "Facials",
+    "Couples services",
+    "Waxing services",
+    "Body services",
+    "Nail services",
+    "Fitness or sports services",
+    "Salon - hair services",
+    "Technology driven experiences",
+    "Complementary/alternative",
+    "Medically supervised services",
+    "Hydrotherapy",
+    "Provider-free/self-guided offerings"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.95,
+      0.93,
+      0.47,
+      0.44,
+      0.41,
+      0.36,
+      0.3,
+      0.29,
+      0.22,
+      0.22,
+      0.16,
+      0.1,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Most popular domestic destination spas in the United States as of July 2023, by rating",
+   "short": "Top domestic spa destinations in the United States 2023",
+   "unit": "",
+   "description": "As of July 2023, The Ranch Malibu in Malibu, California was voted the most popular domestic spa destination in the United States. The second favorite as ranked in the survey was Canyon Ranch Lenox, located in Massachusetts, with a rating of 93.7.",
+   "note": "North America, United States; 2023; 165,000 total survey",
+   "source": "PROOF Insights; Travel + Leisure Spa rating",
+   "kind": "categorical",
+   "categories": [
+    "The Ranch Malibu (Malibu, California)",
+    "Canyon Ranch Lenox (Lenox, Massachusetts)",
+    "Hilton Head Health (Hilton Head, South Carolina)",
+    "Golden Door (San Marcos, California)",
+    "Canyon Ranch Tucson (Tucson, Arizona)",
+    "Cal-a-Vie Health Spa (Vista, California)",
+    "Mii Amo (Sedona, Arizona)",
+    "The Lodge at Woodloch (Hawley, Pennsylvania)",
+    "Miraval Austin (Austin, Texas)",
+    "Shou Sugi Ban House (Water Mill, New York)",
+    "Lake Austin Spa Resort (Austin, Texas)",
+    "Ten Thousand Waves (Santa Fe, New Mexico)",
+    "Miraval Arizona (Tucson, Arizona)",
+    "Civana Wellness Resort & Spa (Carefree, Arizona)",
+    "Miraval Berkshires (Lenox, Massachusetts)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      97.18,
+      93.7,
+      93.68,
+      92.5,
+      92.36,
+      92,
+      91.41,
+      90.7,
+      90.24,
+      90.14,
+      90.05,
+      89.93,
+      89.72,
+      87.86,
+      87.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Number of massage therapists in the United States from 1998 to 2023 (in thousands)",
+   "short": "Number of massage therapists in the U.S. 1998-2023",
+   "unit": "thousands",
+   "description": "According to estimates, the number of massage therapists in the United States more than doubled between 1998 and 2023. There were approximately 321.5 thousand massage therapists in the country in 2023.",
+   "note": "United States; 1998 to 2023",
+   "source": "Website (abmp.com)",
+   "kind": "timeseries",
+   "categories": [
+    "1998",
+    "2001",
+    "2004",
+    "2006",
+    "2008",
+    "2010",
+    "2012",
+    "2014",
+    "2016",
+    "2019",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      137.39,
+      172.56,
+      189.71,
+      241.06,
+      278.09,
+      293.53,
+      316.06,
+      321.98,
+      328.8,
+      334.22,
+      321.49
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Market size of the massage service sector in the United States from 2012 to 2022, with a forecast for 2023 (in billion U.S. dollars)",
+   "short": "U.S. massage service industry market size 2012-2023",
+   "unit": "billion U.S. dollars",
+   "description": "The massage service sector in the United States experienced year-over-year growth since 2012, reaching approximately 21.5 billion U.S. dollars in 2019. In 2020, however, the sector's valuation dipped by 23 percent, most likely due to the effects of the coronavirus (COVID-19) pandemic. The industry was estimated to reach 19 billion U.S. dollars in 2023.",
+   "note": "United States; 2012 to 2022",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11.73,
+      12.98,
+      13.65,
+      15.39,
+      16.26,
+      17.31,
+      19.67,
+      21.5,
+      16.49,
+      17.33,
+      17.56,
+      19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of businesses in the massage service sector in the United States from 2011 to 2022, with a forecast for 2023 (in thousands)",
+   "short": "Massage service industry business count in the U.S. 2011-2023",
+   "unit": "thousands",
+   "description": "There were approximately 241 thousand businesses in the massage service sector in the United States in 2022. The sector experienced a two percent growth over the previous year's total of 235 thousand businesses. However, the industry was forecast to shrink by 0.5 percent to under 241 thousand businesses in 2023.",
+   "note": "United States; 2011 to 2022",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      213.41,
+      208.59,
+      224.98,
+      239.9,
+      247.28,
+      236.85,
+      226.37,
+      246.33,
+      244.55,
+      234.96,
+      240.19,
+      241.36,
+      240.72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Most common reasons for getting a massage in the United States in 2022",
+   "short": "Top reasons for getting massages U.S. 2022",
+   "unit": "",
+   "description": "In 2022, around 60 percent of respondents to a survey reported getting massages for health or wellness reasons, making it the most common reason for getting a massage in the United States. Additionally, roughly half of the respondents stated relaxation and stress reduction as another reason to get a massage.",
+   "note": "United States; 2022",
+   "source": "American Massage Therapy Association",
+   "kind": "categorical",
+   "categories": [
+    "Health or wellness",
+    "Relaxation/stress reduction",
+    "Pampering/special occasion/just to feel good",
+    "Sports conditioning"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.6,
+      0.47,
+      0.34,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Most common locations for a massage among consumers in the United States in 2022",
+   "short": "Common locations for massages among clients U.S. 2022",
+   "unit": "",
+   "description": "According to a 2022 survey, spas were the most common locations for a massage among consumers in the United States. In addition, 37 percent of respondents named the massage therapist's office or location as the second most common location.",
+   "note": "United States; 2022",
+   "source": "American Massage Therapy Association Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Spa",
+    "Massage therapist's office or location",
+    "Massage franchise or chain",
+    "Hotel/resort/cruise",
+    "Physical therapist's office",
+    "Chiropractor's office",
+    "Your home or the home of someone you know",
+    "Beauty salon"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.42,
+      0.37,
+      0.24,
+      0.18,
+      0.16,
+      0.15,
+      0.14,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of consumers who have massages in the United States in 2022, by household income",
+   "short": "Share of massage consumers by household income U.S. 2022",
+   "unit": "",
+   "description": "According to a 2022 survey in the United States, over 40 percent of respondents with a household income of over 100 thousand U.S. dollars reported having massages. In contrast, only 18 percent of respondents with an income of less than 50 thousand U.S. dollars had massages.",
+   "note": "United States; 2022",
+   "source": "American Massage Therapy Association Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Less than $50k",
+    "$50k - $100k",
+    "$100k+"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.18,
+      0.28,
+      0.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Share of consumers who got a massage in the past year in the United States in 2022, by gender",
+   "short": "Share of massage consumers by gender U.S. 2022",
+   "unit": "",
+   "description": "According to a 2022 survey, females in the United States were more likely to get a massage than their male counterparts. Approximately 28 percent of female respondents stated that they got a massage in the previous year, while this figure dropped slightly to 26 percent among male respondents.",
+   "note": "United States; 2022",
+   "source": "American Massage Therapy Association",
+   "kind": "categorical",
+   "categories": [
+    "Female",
+    "Male"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.28,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Average annual wages of massage therapists at spa establishments in the United States in 2023",
+   "short": "Massage therapist average annual compensation in the U.S. 2023",
+   "unit": "",
+   "description": "Almost 45 percent of massage therapists at spa establishments in the United States earned an annual wage of between 40 thousand and 50 thousand U.S. dollars. The survey also revealed that just one percent of massage therapists earned more than 100 thousand U.S. dollars in compensation.",
+   "note": "United States; January to March 2023; 2,829 spa establishments",
+   "source": "International Spa Association Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "< $30,000",
+    "$30,000-$39,999",
+    "$40,000-$49,999",
+    "$50,000-$59,999",
+    "$60,000-$69,999",
+    "$70,000-$79,999",
+    "$80,000-$89,999",
+    "$90,000-$99,999",
+    "$100,000 +"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.01,
+      0.25,
+      0.44,
+      0.1,
+      0.07,
+      0.05,
+      0.04,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Average weekly hours worked by massage therapists in the United States in 2023",
+   "short": "Massage therapist average weekly working hours in the U.S. 2023",
+   "unit": "",
+   "description": "Almost half of massage therapists in the United States worked between 33 and 39 hours in 2023. A survey also revealed that around 13 percent of massage therapists worked more than a 40-hour week.",
+   "note": "United States; January to March 2023; 2,829 spa establishments",
+   "source": "International Spa Association",
+   "kind": "categorical",
+   "categories": [
+    "Less than 28 hours",
+    "28-32 hours",
+    "33-39 hours",
+    "40+ hours"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.14,
+      0.27,
+      0.46,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Most important factors when purchasing wellness-related products in the United States as of August 2023",
+   "short": "Factors when purchasing wellness products in the U.S. 2023",
+   "unit": "",
+   "description": "In today's health-conscious society, consumers spend significant sums of money to look after their body and mind. During an August 2023 survey in the United States, consumers stated that the efficacy of a product was the most important factor when purchasing wellness-related items. Moreover, half of respondents stated that the product had to be well-priced.",
+   "note": "United States; August 2023; 2,007 respondents",
+   "source": "McKinsey & Company Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Effective/works for me",
+    "Well-priced",
+    "High quality",
+    "Good value",
+    "Addresses my specific needs",
+    "Science backed",
+    "Recommended by a medical professional",
+    "Easy to understand",
+    "Certified by a scientific and/or food-and-drug organization",
+    "Clean/all-natural ingredients"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.51,
+      0.5,
+      0.5,
+      0.37,
+      0.35,
+      0.27,
+      0.26,
+      0.23,
+      0.23,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Most important sources of influence when purchasing health and wellness products and services in the United States as of August 2023",
+   "short": "Most influential sources when purchasing health/wellness products in the U.S. 2023",
+   "unit": "",
+   "description": "In today's health-conscious society, consumers spend significant sums of money to look after their body and mind. During an August 2023 survey in the United States, consumers stated that seeing the product in store was the most influential factor when deciding to purchase health and wellness items. Moreover, one quarter of respondents relied on recommendations from friends or family.",
+   "note": "United States; August 2023; 2,007 respondents",
+   "source": "McKinsey & Company Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Seeing product in store",
+    "Recommendations from friends/family",
+    "Recommendations from doctors",
+    "Consumer reviews on websites/blogs",
+    "Television",
+    "YouTube",
+    "Other websits",
+    "Ads on social media",
+    "Samples",
+    "Recommendations from nutritionists",
+    "Print magazines/catalogs",
+    "Recommendations from trainers/coaches",
+    "Recommendations from athletes",
+    "From a brand through DM on social media",
+    "Posts from celebrities"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.26,
+      0.25,
+      0.2,
+      0.13,
+      0.1,
+      0.08,
+      0.07,
+      0.07,
+      0.06,
+      0.05,
+      0.04,
+      0.04,
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Use and purchase frequency of beauty products from selected wellness categories in the United States as of March 2023",
+   "short": "Use and purchase frequency of beauty products by category in the U.S. 2023",
+   "unit": "",
+   "description": "During a March 2023 survey, 69 percent of responding consumers from the United States stated that they used and regularly bought home products. Meanwhile, the respective share stood at 48 percent for the supplements category.",
+   "note": "United States; March 2023; 2,096 respondents; 18 years and older",
+   "source": "McKinsey & Company; The Business of Fashion Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Home",
+    "Supplements",
+    "Spa treatments",
+    "Sleep",
+    "Sexual wellness",
+    "Non-invasive treatments",
+    "Injectables",
+    "Cosmetic surgery"
+   ],
+   "series": [
+    {
+     "name": "Use/buy regularly",
+     "values": [
+      0.69,
+      0.48,
+      0.36,
+      0.28,
+      0.22,
+      0.1,
+      0.08,
+      0.09
+     ]
+    },
+    {
+     "name": "Used to use/buy regularly but don't anymore",
+     "values": [
+      0.14,
+      0.12,
+      0.14,
+      0.14,
+      0.14,
+      0.08,
+      0.05,
+      0.05
+     ]
+    },
+    {
+     "name": "Used/bought once or twice",
+     "values": [
+      0.13,
+      0.18,
+      0.24,
+      0.25,
+      0.27,
+      0.13,
+      0.07,
+      0.07
+     ]
+    },
+    {
+     "name": "Never used/bought",
+     "values": [
+      0.04,
+      0.22,
+      0.26,
+      0.33,
+      0.37,
+      0.69,
+      0.78,
+      0.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Number of users in the digital fitness & well-being segment of the digital health market United States from 2018 to 2028 (in millions)",
+   "short": "Users in the digital fitness & well-being market United States 2018-2028",
+   "unit": "millions",
+   "description": "The indicator 'Users by market' in the 'Digital Fitness & Well-Being' segment of the digital health market in the United States was forecast to continuously increase between 2024 and 2028 by in total 14.4 million users (+9.5 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 165.92 million users and therefore a new peak in 2028. Notably, the indicator 'Users by market' of the 'Digital Fitness & Well-Being' segment of the digital health market was [...]",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      63.08,
+      83.28,
+      116.18,
+      128.6,
+      135.59,
+      144.71,
+      151.51,
+      156.41,
+      160.57,
+      163.52,
+      165.92
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Use of wearable fitness or wellness technologies in the United States as of 2023, by age",
+   "short": "Use of wearable fitness technologies in the U.S. in 2023, by age",
+   "unit": "",
+   "description": "As of 2023, almost 50 percent of adults aged between 35 years and 44 years in the United States reported they used and owned a wearable fitness or wellness device (like a Fitbit, Garmin, or smart watch) designed to track vitals such as blood pressure, heart rate, sleep patterns, and physical activity. The lowest share of users was found among the age group over 65 years of age.",
+   "note": "United States; January 23 to 25, 2023; 2,201 respondents; 18 years and older",
+   "source": "Morning Consult",
+   "kind": "categorical",
+   "categories": [
+    "18-34",
+    "35-44",
+    "45-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4,
+      0.49,
+      0.29,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Use of wearable fitness or wellness technologies in the United States as of 2023, by gender",
+   "short": "Use of wearable fitness technologies in the U.S. 2023, by gender",
+   "unit": "",
+   "description": "As of 2023, 35 percent of women and 34 percent of men in the United States used and owned a wearable fitness or wellness device (such as a Fitbit, Garmin, or smart watch) designed to track vitals like blood pressure, heart rate, sleep patterns, and physical activity. Wearable technology refers to any electronic device that is designed to be worn on the user's body.",
+   "note": "United States; January 23 to 25, 2023; 2,201 respondents; 18 years and older",
+   "source": "Morning Consult",
+   "kind": "categorical",
+   "categories": [
+    "Women",
+    "Men"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.34
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Use of wearable fitness or wellness technologies in the United States as of 2023, by annual income",
+   "short": "Use of wearable fitness technologies in the U.S. in 2023, by income",
+   "unit": "",
+   "description": "As of 2023, 53 percent of adults in the United States earning annually more than 100 thousand U.S. dollars used and owned a wearable fitness or wellness device (like a Fitbit, Garmin, or smart watch) designed to track vitals such as blood pressure, heart rate, sleep patterns, and physical activity. On the other hand, a quarter of respondents earning under 50 thousand U.S. dollars used a wearable device.",
+   "note": "United States; January 23 to 25, 2023; 2,201 respondents; 18 years and older",
+   "source": "Morning Consult",
+   "kind": "categorical",
+   "categories": [
+    "Under 50k",
+    "50k-100k",
+    "100k and above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.25,
+      0.42,
+      0.53
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "User experience with mental wellness and meditation apps in the United States as of January 2023, by age group",
+   "short": "U.S. users experience with meditation apps 2023. by age",
+   "unit": "",
+   "description": "According to a survey conducted among consumers in the United States in January 2023, 21 percent of users aged between 18 and 24 years reported having used mobile mental wellness apps such as Calm or Headspace, and to like them. In comparison, only nine percent of users aged 35 and over reported holding the same experience. Approximately 37 percent of users in the latter demographic reported not having used meditation and mental wellness app, as well as not planning [...]",
+   "note": "United States; January 1 to 18, 2023; 14,743 respondents; 18 years and older",
+   "source": "CivicScience Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "18-24",
+    "25-34",
+    "35+"
+   ],
+   "series": [
+    {
+     "name": "I've used them, and I like them",
+     "values": [
+      0.21,
+      0.17,
+      0.09
+     ]
+    },
+    {
+     "name": "I've used them, but i don't like them",
+     "values": [
+      0.22,
+      0.21,
+      0.04
+     ]
+    },
+    {
+     "name": "I haven't used them, but I plan to",
+     "values": [
+      0.23,
+      0.18,
+      0.08
+     ]
+    },
+    {
+     "name": "I haven't used them, and i'm not interested",
+     "values": [
+      0.15,
+      0.22,
+      0.37
+     ]
+    },
+    {
+     "name": "I haven't heard of this",
+     "values": [
+      0.18,
+      0.22,
+      0.41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Meditation and mindfulness app awareness and usage in the United States from 1st quarter 2019 to 3rd quarter 2022",
+   "short": "Meditation and mindfulness apps market presence in the U.S. 2019-2022",
+   "unit": "",
+   "description": "According to a survey of users in the United States conducted during the third quarter of 2022, awareness of mindfulness and meditation touched the highest point in the examined period, reaching 63 percent of U.S. users. Intent to use mindfulness and meditation apps also grew between the beginning of 2019 and the third quarter of 2022, while usage sat at 20 percent during the last measured quarter.",
+   "note": "United States; Q1 2019 to Q3 2022; 18 years and older",
+   "source": "CivicScience",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2' 21",
+    "Q3 '21",
+    "Q4 '21",
+    "Q1 '22",
+    "Q2 '22",
+    "Q3 '22"
+   ],
+   "series": [
+    {
+     "name": "Usage",
+     "values": [
+      0.08,
+      0.1,
+      0.11,
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.14,
+      0.13,
+      0.13,
+      0.19,
+      0.19,
+      0.2,
+      0.2,
+      0.2
+     ]
+    },
+    {
+     "name": "Intent",
+     "values": [
+      0.05,
+      0.05,
+      0.06,
+      0.06,
+      0.06,
+      0.07,
+      0.06,
+      0.07,
+      0.06,
+      0.07,
+      0.11,
+      0.11,
+      0.11,
+      0.11,
+      0.11
+     ]
+    },
+    {
+     "name": "Awareness",
+     "values": [
+      0.46,
+      0.48,
+      0.5,
+      0.48,
+      0.5,
+      0.55,
+      0.55,
+      0.56,
+      0.56,
+      0.56,
+      0.62,
+      0.62,
+      0.63,
+      0.64,
+      0.63
+     ]
+    }
+   ]
+  }
+ ]
+}

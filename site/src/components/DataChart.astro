@@ -1,0 +1,168 @@
+---
+// DataChart — one interactive chart from the article's `charts` frontmatter (flagship reports).
+// Pure SVG, monochrome + lime accent, zero dependencies. Hover/focus any point for the exact
+// value; multi-series charts get toggle chips; long series (>16 points) render as a line.
+// A plain <table> sits in a <details> under every chart so the numbers are crawlable/copyable.
+import { type Lang } from '../i18n/ui';
+interface Series { name: string; points: (number | null)[] }
+interface Chart { label: string; unit?: string; kind?: 'timeseries' | 'categorical'; categories: string[]; series: Series[]; note?: string; source?: string; url?: string }
+interface Props { lang: Lang; chart: Chart; index: number }
+const { lang, chart: c, index } = Astro.props;
+const T = lang === 'de'
+  ? { table: 'Als Tabelle anzeigen', src: 'Quelle', now: 'jetzt', yoy: 'ggü. Vorjahr', chart: 'Grafik' }
+  : { table: 'Show as table', src: 'Source', now: 'now', yoy: 'vs prior', chart: 'Chart' };
+const cats = c.categories;
+const series = c.series.filter((s) => s.points.length === cats.length && s.points.some((p) => p != null));
+const multi = series.length > 1;
+const all = series.flatMap((s) => s.points.filter((p): p is number => p != null));
+const mx = Math.max(...all, 1e-9), mn = Math.min(...all, 0);
+const categorical = c.kind === 'categorical';
+const asLine = !categorical && cats.length > 16;
+const dense = cats.length > 14; // too many bars for per-bar value labels
+const lblStep = Math.ceil(cats.length / 12);
+const nowYear = String(new Date().getFullYear());
+const fmt = (v: number) => (Math.abs(v) >= 1000 ? v.toLocaleString('en-US', { maximumFractionDigits: 1 }) : String(Math.round(v * 100) / 100));
+// layout
+const W = 720;
+const H = categorical ? Math.max(120, 22 + cats.length * 28) : asLine ? 260 : 264;
+const top = 40, bot = categorical ? 8 : 30, left = categorical ? 150 : 0;
+const base = H - bot, chartH = base - top, plotW = W - left;
+const yOf = (v: number) => base - Math.max(2, ((v - mn) / (mx - mn || 1)) * chartH);
+const slot = plotW / Math.max(1, cats.length);
+const barW = Math.min(44, slot * 0.58);
+const id = `dc${index}`;
+const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i] != null ? Math.round((((pts[i] as number) - (pts[i - 1] as number)) / Math.abs(pts[i - 1] as number)) * 1000) / 10 : '');
+---
+<figure class="dc" id={id} data-multi={multi ? '' : undefined}>
+  <figcaption class="dc-head">
+    <span class="dc-n">{T.chart} {index + 1}</span>
+    <span class="dc-title">{c.label}{c.unit ? <span class="dc-unit"> · {c.unit}</span> : null}</span>
+  </figcaption>
+  {multi && (
+    <div class="dc-chips" role="tablist">
+      {series.map((s, si) => <button type="button" role="tab" class="dc-chip" aria-selected={si === 0 ? 'true' : 'false'} data-s={si}>{s.name || `#${si + 1}`}</button>)}
+    </div>
+  )}
+  <div class="dcw">
+    <svg class="dc-svg" viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMidYMid meet" role="img" aria-label={c.label}>
+      {!categorical && <line x1={left} y1={base} x2={W} y2={base} stroke="var(--line)" stroke-width="1" />}
+      {series.map((s, si) => (
+        <g class="dc-s" data-s={si} style={multi && si !== 0 ? 'display:none' : undefined}>
+          {categorical ? cats.map((cat, i) => {
+            const v = s.points[i]; if (v == null) return null;
+            const y = i * (H / cats.length) + 4, h = Math.max(12, H / cats.length - 10);
+            const w = Math.max(3, ((v - mn) / (mx - mn || 1)) * (plotW - 70));
+            const emph = i === 0;
+            return (
+              <g class="dc-pt" tabindex="0" data-cat={cat} data-val={fmt(v)} data-unit={c.unit ?? ''}>
+                <text x={left - 10} y={y + h / 2 + 4} text-anchor="end" fill="var(--g2)" font-size="12" font-family="var(--mono)">{cat.length > 22 ? `${cat.slice(0, 21)}…` : cat}</text>
+                <rect class="dc-r" x={left} y={y} width={w} height={h} rx="3" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.72'} />
+                <text x={left + w + 8} y={y + h / 2 + 4} fill={emph ? 'var(--accent)' : 'var(--g2)'} font-size="12" font-family="var(--mono)">{fmt(v)}</text>
+              </g>
+            );
+          }) : asLine ? (() => {
+            const pts = s.points.map((v, i) => (v == null ? null : [left + i * slot + slot / 2, yOf(v)] as const));
+            const d = pts.map((p, i) => (p ? `${i === 0 || !pts[i - 1] ? 'M' : 'L'}${p[0].toFixed(1)},${p[1].toFixed(1)}` : '')).join(' ');
+            const step = Math.ceil(cats.length / 8);
+            return (
+              <Fragment>
+                <path d={d} fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" />
+                {pts.map((p, i) => p && (
+                  <g class="dc-pt" tabindex="0" data-cat={cats[i]} data-val={fmt(s.points[i] as number)} data-unit={c.unit ?? ''} data-yoy={yoy(s.points, i)}>
+                    <circle cx={p[0]} cy={p[1]} r="9" fill="transparent" />
+                    <circle class="dc-dot" cx={p[0]} cy={p[1]} r={i === pts.length - 1 ? 4 : 2.5} fill={i === pts.length - 1 ? 'var(--accent)' : 'var(--chalk)'} />
+                    {i % step === 0 && <text x={p[0]} y={base + 20} text-anchor="middle" fill="var(--g4)" font-size="11" font-family="var(--mono)">{cats[i]}</text>}
+                  </g>
+                ))}
+              </Fragment>
+            );
+          })() : cats.map((cat, i) => {
+            const v = s.points[i]; if (v == null) return null;
+            const h = base - yOf(v), x = left + i * slot + (slot - barW) / 2, cx = left + i * slot + slot / 2;
+            const isNow = cat === nowYear, emph = isNow || (!cats.includes(nowYear) && i === cats.length - 1);
+            const showLbl = !dense || i % lblStep === 0;
+            return (
+              <g class="dc-pt" tabindex="0" data-cat={cat} data-val={fmt(v)} data-unit={c.unit ?? ''} data-yoy={yoy(s.points, i)} data-now={isNow ? '1' : ''}>
+                <rect class="dc-r" x={x} y={base - h} width={barW} height={h} rx="4" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.78'} />
+                {!dense && <text x={cx} y={base - h - 8} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g2)'} font-size="12" font-family="var(--mono)">{fmt(v)}</text>}
+                {isNow && <text x={cx} y={top - 10} text-anchor="middle" fill="var(--accent)" font-size="11" font-weight="700" font-family="var(--mono)">▼ {T.now}</text>}
+                {showLbl && <text x={cx} y={base + 20} text-anchor="middle" fill={emph ? 'var(--accent)' : 'var(--g4)'} font-size="11.5" font-family="var(--mono)">{cat}</text>}
+              </g>
+            );
+          })}
+        </g>
+      ))}
+    </svg>
+    <div class="dc-tip" hidden></div>
+  </div>
+  <details class="dc-table">
+    <summary>{T.table}</summary>
+    <table>
+      <thead><tr><th></th>{series.map((s, si) => <th>{s.name || c.unit || ''}</th>)}</tr></thead>
+      <tbody>{cats.map((cat, i) => <tr><th scope="row">{cat}</th>{series.map((s) => <td>{s.points[i] == null ? '' : fmt(s.points[i] as number)}</td>)}</tr>)}</tbody>
+    </table>
+  </details>
+  {(c.source || c.note) && <p class="dc-src">{c.source && (c.url ? <a href={c.url} target="_blank" rel="nofollow noopener">{T.src}: {c.source} ↗</a> : <span>{T.src}: {c.source}</span>)}{c.note && <span class="dc-note"> · {c.note}</span>}</p>}
+</figure>
+
+<style>
+  .dc{margin:22px 0 0;padding:0}
+  .dc-head{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+  .dc-n{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .dc-title{font-size:14.5px;font-weight:700;letter-spacing:-.01em;line-height:1.35}
+  .dc-unit{color:var(--g4);font-weight:500}
+  .dc-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .dc-chip{font:inherit;font-size:12px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--panel);color:var(--g2);cursor:pointer}
+  .dc-chip[aria-selected="true"]{border-color:var(--accent);color:var(--accent)}
+  .dcw{position:relative}
+  .dc-svg{width:100%;height:auto;display:block;margin-top:12px}
+  .dc-pt{cursor:default}.dc-pt:focus{outline:none}
+  .dc-pt:hover .dc-r,.dc-pt:focus .dc-r{opacity:1;stroke:var(--chalk);stroke-width:1.5}
+  .dc-pt:hover .dc-dot,.dc-pt:focus .dc-dot{r:5}
+  .dc-tip{position:absolute;pointer-events:none;z-index:5;background:var(--bg);border:1px solid var(--chalk);border-radius:8px;padding:7px 10px;font-size:12px;line-height:1.4;color:var(--chalk);transform:translate(-50%,-110%);white-space:nowrap;box-shadow:0 4px 18px rgba(0,0,0,.3)}
+  .dc-tip b{font-family:var(--mono)}
+  .dc-tip .up{color:var(--up)}.dc-tip .dn{color:var(--down)}
+  .dc-table{margin-top:8px}
+  .dc-table summary{font-size:12px;color:var(--g4);cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:6px}
+  .dc-table summary::before{content:"▸";transition:transform .15s}
+  .dc-table[open] summary::before{transform:rotate(90deg)}
+  .dc-table table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12.5px;font-family:var(--mono)}
+  .dc-table th,.dc-table td{text-align:right;padding:5px 8px;border-top:1px solid var(--line);color:var(--g2)}
+  .dc-table th[scope="row"],.dc-table thead th:first-child{text-align:left;color:var(--g1)}
+  .dc-table thead th{color:var(--g4);font-weight:600}
+  .dc-src{font-size:11.5px;color:var(--g4);margin:8px 0 0}
+  .dc-src a{color:inherit}
+</style>
+
+<script>
+  // Hover/focus tooltips + series toggle. Scoped per figure so any number of charts coexist.
+  document.querySelectorAll<HTMLElement>('.dc').forEach((fig) => {
+    const wrap = fig.querySelector<HTMLElement>('.dcw'), tip = fig.querySelector<HTMLElement>('.dc-tip');
+    const lang = document.documentElement.lang || 'en';
+    const nowL = lang.startsWith('de') ? 'jetzt' : 'now', yoyL = lang.startsWith('de') ? 'ggü. Vorjahr' : 'vs prior';
+    if (wrap && tip) {
+      const show = (g: Element) => {
+        const cat = g.getAttribute('data-cat') || '', val = g.getAttribute('data-val') || '', unit = g.getAttribute('data-unit') || '';
+        const yoy = g.getAttribute('data-yoy'), now = g.getAttribute('data-now');
+        let html = `<b>${val}</b>${unit ? ' ' + unit : ''}${cat ? ` · ${cat}` : ''}${now ? ' · ' + nowL : ''}`;
+        if (yoy) { const up = parseFloat(yoy) >= 0; html += `<br><span class="${up ? 'up' : 'dn'}">${up ? '▲' : '▼'} ${Math.abs(parseFloat(yoy))}% ${yoyL}</span>`; }
+        tip.innerHTML = html;
+        const gb = (g as SVGGraphicsElement).getBoundingClientRect(), wb = wrap.getBoundingClientRect();
+        tip.style.left = (gb.left - wb.left + gb.width / 2) + 'px';
+        tip.style.top = (gb.top - wb.top) + 'px';
+        tip.hidden = false;
+      };
+      const hide = () => { tip.hidden = true; };
+      fig.querySelectorAll('.dc-pt').forEach((g) => {
+        g.addEventListener('mouseenter', () => show(g)); g.addEventListener('focus', () => show(g));
+        g.addEventListener('mouseleave', hide); g.addEventListener('blur', hide);
+      });
+    }
+    fig.querySelectorAll<HTMLButtonElement>('.dc-chip').forEach((chip) => chip.addEventListener('click', () => {
+      const si = chip.dataset.s;
+      fig.querySelectorAll<HTMLButtonElement>('.dc-chip').forEach((c) => c.setAttribute('aria-selected', c === chip ? 'true' : 'false'));
+      fig.querySelectorAll<SVGGElement>('.dc-s').forEach((g) => { g.style.display = g.dataset.s === si ? '' : 'none'; });
+      if (tip) tip.hidden = true;
+    }));
+  });
+</script>

@@ -1,0 +1,1587 @@
+{
+ "studyId": "108536",
+ "study": "marketing in the united states",
+ "file": "research/statista/Fitness Marketing/study_id108536_marketing-in-the-united-states.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Marketing spending in the United States from 2019 to 2023, by channel (in billion U.S. dollars)",
+   "short": "Marketing spending in the U.S. 2019-2023, by channel",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, marketing spending in the United States exceeded 515 billion U.S. dollars, of which 320 billion (or 62 percent) were allocated to online activities. The total figure was five percent higher than the 490-billion-dollar expenditure recorded a year earlier. According to the same source, linear TV and experiential/sponsorship were among the forecast fastest-growing offline marketing channels in the U.S. in 2024.",
+   "note": "United States; 2019 to 2023",
+   "source": "Winterberry Group",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Offline",
+     "values": [
+      222.7,
+      183.8,
+      195.4,
+      202.8,
+      195.1
+     ]
+    },
+    {
+     "name": "Online",
+     "values": [
+      154,
+      184.5,
+      253.1,
+      287.4,
+      320
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Share of company's revenue spent on marketing according to CMOs in the United States from February 2011 to August 2023",
+   "short": "Share of company's revenue spent on marketing according to CMOs in the U.S. 2011-2023",
+   "unit": "",
+   "description": "During a survey among chief marketing officers (CMOs) from for-profit companies in the United States concluded in August 2023, they reported that, on average, 9.2 percent of their employers' revenues were allocated to marketing activities, up from 8.7 percent a year earlier.",
+   "note": "United States; February 2011 to August 2023; 316*; among marketers from for-profit companies; * Sample size provided refers only to the August 2023 survey. Data preceding 2020 was retrieved from earlier releases. Read more",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+   "kind": "categorical",
+   "categories": [
+    "Feb '11",
+    "Aug '11",
+    "Feb '12",
+    "Aug '12",
+    "Feb '13",
+    "Aug '13",
+    "Feb '14",
+    "Aug '14",
+    "Feb '15",
+    "Aug '15",
+    "Feb '16",
+    "Aug '16",
+    "Feb '17",
+    "Aug '17",
+    "Feb '18",
+    "Aug '18",
+    "Aug '19",
+    "Feb '20",
+    "Jun '20",
+    "Feb '21",
+    "Aug '21",
+    "Feb '22",
+    "Sep '22",
+    "Jan '23",
+    "Aug '23"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.081,
+      0.1,
+      0.085,
+      0.11,
+      0.079,
+      0.078,
+      0.093,
+      0.083,
+      0.083,
+      0.066,
+      0.084,
+      0.075,
+      0.081,
+      0.069,
+      0.079,
+      0.073,
+      0.098,
+      0.086,
+      0.114,
+      0.132,
+      0.086,
+      0.104,
+      0.087,
+      0.109,
+      0.092
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Marketing expenses as a percentage of companies' overall budgets according to CMOs in the United States as of August 2023, by industry",
+   "short": "Marketing spend as a share of companies' total budgets in the U.S. 2023, by industry",
+   "unit": "",
+   "description": "During a survey among chief marketing officers (CMOs) from for-profit companies in the United States concluded in August 2023, they reported that, on average, corporations selling consumer packaged goods (CPG) allocated over one-quarter of their total budgets to marketing expenses. The retail wholesale and the communications and media segments followed, with shares of about 14.5 and 14.3 percent, respectively.",
+   "note": "United States; July 26 to August 17, 2023; 316 respondents; among marketers from for-profit companies",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey Share of budget",
+   "kind": "categorical",
+   "categories": [
+    "Consumer packaged goods",
+    "Retail wholesale",
+    "Communications/media",
+    "Pharma/biotech",
+    "Tech software/platform",
+    "Consumer services",
+    "Education",
+    "Real estate",
+    "Banking/finance/insurance",
+    "Professional services",
+    "Healthcare",
+    "Mining/construction",
+    "Energy",
+    "Manufacturing",
+    "Transportation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2519,
+      0.1452,
+      0.1427,
+      0.1283,
+      0.118,
+      0.1174,
+      0.115,
+      0.1061,
+      0.0949,
+      0.0708,
+      0.068,
+      0.065,
+      0.0383,
+      0.0375,
+      0.0152
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Change in marketing spending according to CMOs in the United States from February 2012 to August 2024",
+   "short": "Expected change in marketing spending according to CMOs in the U.S. 2012-2024",
+   "unit": "",
+   "description": "During a survey among chief marketing officers (CMOs) from for-profit companies in the United States concluded in August 2023, they reported that, on average, their marketing spending increased by 2.6 percent during the past 12 months. Respondents also expected the expenditure to grow by 7.2 percent in the following 12 months. According to the same study, little more than nine percent of companies' revenues were allocated to marketing activities as of August 2023.",
+   "note": "United States; February 2012 to August 2023; 316**; among marketers from for-profit companies; * Forecast. ** Sample size provided refers only to the 2023 survey. Data preceding 2020 was retrieved from earlier releases. Read more",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+   "kind": "categorical",
+   "categories": [
+    "Feb '12",
+    "Feb '14",
+    "Feb '15",
+    "Feb '17",
+    "Feb '18",
+    "Feb '19",
+    "Feb '20",
+    "Jun '20",
+    "Feb '21",
+    "Aug '21",
+    "Feb '22",
+    "Sep '22",
+    "Feb '23",
+    "Aug '23",
+    "Au' 24*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.064,
+      0.067,
+      0.067,
+      0.073,
+      0.071,
+      0.05,
+      0.058,
+      0.009,
+      -0.039,
+      0.052,
+      0.103,
+      0.104,
+      0.029,
+      0.026,
+      0.072
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Change in digital marketing spending and traditional advertising according to CMOs in the United States from 2012 to 2023",
+   "short": "Change in digital vs. traditional marketing budgets as per U.S. CMOs 2012-2023",
+   "unit": "",
+   "description": "During a fall 2023 survey, chief marketing officers (CMOs) in the United States said that their digital spending grew by 7.9 percent, relative to preceding 12 months. On the other hand, traditional advertising spending decreased by 0.6 percent in the same period.",
+   "note": "United States; 2012 to 2023; 316*; among marketers from for-profit companies; * Sample size provided refers only to the Fall 2023 survey. Read more",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+   "kind": "categorical",
+   "categories": [
+    "Feb '12",
+    "Aug '12",
+    "Feb '13",
+    "Aug '13",
+    "Feb '14",
+    "Aug '14",
+    "Feb '15",
+    "Aug '15",
+    "Feb '16",
+    "Aug '16",
+    "Feb '17",
+    "Aug '17",
+    "Feb '18",
+    "Aug '18",
+    "Feb '19",
+    "Aug '19",
+    "Feb '20",
+    "Jun '20",
+    "Feb '21",
+    "Aug '21",
+    "Feb '22",
+    "Sept '22",
+    "Spring '23",
+    "Fall '23"
+   ],
+   "series": [
+    {
+     "name": "Traditional advertising spending*",
+     "values": [
+      -0.008,
+      -0.019,
+      -0.027,
+      -0.021,
+      -0.001,
+      -0.036,
+      -0.011,
+      -0.021,
+      -0.032,
+      -0.013,
+      0.006,
+      -0.02,
+      -0.017,
+      -0.012,
+      -0.018,
+      -0.02,
+      -0.004,
+      -0.053,
+      -0.002,
+      0.014,
+      0.029,
+      -0.007,
+      -0.026,
+      -0.006
+     ]
+    },
+    {
+     "name": "Digital marketing spending",
+     "values": [
+      0.128,
+      0.115,
+      0.102,
+      0.101,
+      0.082,
+      0.108,
+      0.147,
+      0.122,
+      0.132,
+      0.099,
+      0.146,
+      0.13,
+      0.151,
+      0.123,
+      0.143,
+      0.118,
+      0.13,
+      0.084,
+      0.115,
+      0.158,
+      0.202,
+      0.15,
+      0.082,
+      0.079
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Business-to-business (B2B) marketing data spending and annual change in the United States from 2020 to 2025 (in billion U.S. dollars)",
+   "short": "B2B marketing data spending and annual growth in the U.S. 2020-2025",
+   "unit": "billion U.S. dollars",
+   "description": "The source forecast that, in 2024, business-to-business (B2B) marketing data spending in the United States will grow by 2.5 percent to over 3.8 billion U.S. dollars. The value was projected to increase by nearly four percent in the following year and reach about four billion dollars.",
+   "note": "United States; 2020 to 2022; * Forecast. 2020 data comes from an earlier release. Read more",
+   "source": "Expert(s) (Kelsey Voss); Insider Intelligence",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*"
+   ],
+   "series": [
+    {
+     "name": "B2B marketing data spending in billion U.S. dollars",
+     "values": [
+      3.35,
+      3.5,
+      3.65,
+      3.74,
+      3.83,
+      3.98
+     ]
+    },
+    {
+     "name": "Annual change",
+     "values": [
+      4,
+      4.5,
+      4.4,
+      2.3,
+      2.5,
+      3.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Perceived change in new business opportunities according to advertising, marketing, and PR agency executives in the United States from 2020 to 2023",
+   "short": "Change in new business opportunities for agencies in the U.S. 2020-2023",
+   "unit": "",
+   "description": "During a 2023 survey conducted in the United States, 41 percent of the responding marketing, advertising, and public relations (PR) agency executives said new business opportunities decreased compared to the previous year. In 2023, 27 percent of respondents said it increased. Similarly, in 2023, most agency executives thought obtaining new business was harder.",
+   "note": "United States; 2020 to 2023; 250*; among agency executives; * Number of respondents in 2023. Data prior to 2023 was retrieved from an earlier release. Read more",
+   "source": "MarketingProfs; RSW/US",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Increased",
+     "values": [
+      0.11,
+      0.51,
+      0.317,
+      0.27
+     ]
+    },
+    {
+     "name": "Remained the same",
+     "values": [
+      0.33,
+      0.37,
+      0.257,
+      0.31
+     ]
+    },
+    {
+     "name": "Decreased",
+     "values": [
+      0.56,
+      0.12,
+      0.426,
+      0.41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of marketing budgets devoted to mobile marketing according to CMOs in the United States from 2015 to 2024",
+   "short": "U.S. businesses mobile marketing budget share 2015-2024",
+   "unit": "",
+   "description": "In a survey conducted in February 2023, responding marketers in the United States indicated that19 percent of their marketing budget was devoted to mobile marketing. This figure saw a spike in 2020 during the coronavirus pandemic outbreak and feel nearly 10 percent by September 2022.",
+   "note": "United States; 2015 to 2023; 314**; among marketers from for-profit companies; * Forecast. ** Sample size provided refers only to the 2023 survey. Read more",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+   "kind": "timeseries",
+   "categories": [
+    "February 2015",
+    "August 2015",
+    "February 2016",
+    "August 2016",
+    "February 2017",
+    "August 2017",
+    "February 2018",
+    "August 2018",
+    "February 2019",
+    "August 2019",
+    "February 2020",
+    "June 2020",
+    "February 2021",
+    "August 2021",
+    "February 2022",
+    "September 2022",
+    "March 2023",
+    "March 2024*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.032,
+      0.06,
+      0.059,
+      0.038,
+      0.037,
+      0.06,
+      0.07,
+      0.094,
+      0.112,
+      0.128,
+      0.135,
+      0.23,
+      0.185,
+      0.184,
+      0.133,
+      0.137,
+      0.19,
+      0.233
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Share of marketing budgets invested in mobile activities according to CMOs in the United States as of February 2023, by primary economic sector",
+   "short": "U.S. businesses mobile marketing budget share 2023, by sector",
+   "unit": "",
+   "description": "During a survey conducted among marketing professionals from the United States in early 2023, the average share of marketing budget invested in mobile activities among B2C product marketers stood at 28.8 percent, whereas for B2B products at 15.2 percent.",
+   "note": "United States; January 10 to February 1, 2023; 314 respondents; among marketers from for-profit companies",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey; Wall Street Journal",
+   "kind": "categorical",
+   "categories": [
+    "B2B product",
+    "B2B services",
+    "B2C product",
+    "B2C services"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.152,
+      0.132,
+      0.288,
+      0.221
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Reasons for text marketing use according to business owners and marketing managers in the United States as of May 2023",
+   "short": "Reasons for text marketing use in the U.S. 2023",
+   "unit": "",
+   "description": "During a May 202 survey carried out among business owners and marketing managers in the United States, 53.5 percent of respondents stated that they started using text marketing because it offered higher open and click-through rates than other marketing channels. Roughly 29 percent said that younger consumers preferred texting over other forms of communication.",
+   "note": "United States; May 4 to 6, 2023; 400 respondents; among business owners and marketing managers",
+   "source": "SimpleTexting Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Higher engagement levels from customers",
+    "Higher open & click-through rates than other channels",
+    "Most efficient channels for customer service or text support",
+    "Quick and easy channel for two-way interactions with customers",
+    "Quicker feedback from prospective customers",
+    "Younger customers prefer texting over other forms of communication",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.605,
+      0.535,
+      0.523,
+      0.43,
+      0.385,
+      0.285,
+      0.008
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of mobile internet users in the United States from 2020 to 2029 (in millions)",
+   "short": "Mobile internet users in the United States 2020-2029",
+   "unit": "millions",
+   "description": "The number of smartphone users in the United States was forecast to continuously increase between 2024 and 2029 by in total 21.8 million users (+7 percent). After the ninth consecutive increasing year, the smartphone user base is estimated to reach 333.18 million users and therefore a new peak in 2029. Notably, the number of smartphone users was continuously increasing over the past years.",
+   "note": "United States; 2020 to 2029; users who access the internet via mobile broadband connection regardless of the device; * Forecast Read more",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*",
+    "2029*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      250.45,
+      262.31,
+      279.04,
+      295.46,
+      311.36,
+      318.32,
+      322.53,
+      326.5,
+      330.25,
+      333.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Mobile audience reach of leading smartphone apps in the United States in November 2023",
+   "short": "Reach of most popular U.S. smartphone apps 2023",
+   "unit": "",
+   "description": "November 2023, the YouTube mobile app ranked first with a 75 percent audience reach, while social media platform Facebook ranked second with a usage reach of 65 percent. Email platform service Gmail was accessed by 63 percent of mobile audiences in the United States. Social video app TikTok reported a reach of approximately 38 percent in the examine period.",
+   "note": "United States; November 2023; 18 years and older; iOS and Android platforms; smartphone only",
+   "source": "comScore Share of mobile audience reached",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Facebook",
+    "Gmail",
+    "Google Search",
+    "Google Maps",
+    "Amazon Mobile",
+    "Instagram",
+    "Facebook Messenger",
+    "Google Play",
+    "TikTok",
+    "Spotify",
+    "Apple Maps",
+    "Walmart",
+    "PayPal",
+    "Weather - Native Apple (previously Dark Sky Weather)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.75,
+      0.65,
+      0.63,
+      0.59,
+      0.58,
+      0.56,
+      0.39,
+      0.38,
+      0.38,
+      0.38,
+      0.38,
+      0.36,
+      0.34,
+      0.33,
+      0.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Share of marketing budgets devoted to social media marketing according to CMOs in the United States from 2015 to 2024",
+   "short": "U.S. businesses social media marketing budget share 2015-2024",
+   "unit": "",
+   "description": "In a survey conducted in March 2023, responding marketers in the United States indicated that 17 percent of their marketing budget was devoted to social media marketing. This figure saw a spike in 2020 during the coronavirus pandemic outbreak and fell roughly nine percentage points the next year.",
+   "note": "United States; 2015 to 2023; 314**; among marketers from for-profit companies; * Forecast. ** Sample size provided refers only to the 2023 survey. Read more",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+   "kind": "timeseries",
+   "categories": [
+    "February 2015",
+    "February 2016",
+    "February 2017",
+    "February 2018",
+    "February 2019",
+    "February 2020",
+    "June 2020",
+    "February 2021",
+    "August 2021",
+    "February 2022",
+    "September 2022",
+    "March 2023",
+    "March 2024*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.099,
+      0.106,
+      0.105,
+      0.12,
+      0.114,
+      0.133,
+      0.232,
+      0.149,
+      0.153,
+      0.154,
+      0.145,
+      0.17,
+      0.203
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Social media platforms with highest return on advertising spending (ROAS) according to B2C advertisers in the United States and Canada as of February 2023",
+   "short": "Social media with highest ROAS in the U.S. & Canada 2023",
+   "unit": "",
+   "description": "During a 2023 survey, large business-to-consumer (B2C) advertisers from the United States and Canada were asked about social platform where they saw the best return on ad spend. According to the results, 48 percent of respondents said that YouTube produced the best ROAS for them, and 35 percent said the same about Instagram.",
+   "note": "Canada, United States; as of February 2023; 100 respondents; among director-level respondents from B2C companies with revenue of one billion to 10 billion U.S. dollars annually",
+   "source": "MarketingCharts; Smartly.io",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Instagram",
+    "Facebook",
+    "TikTok",
+    "Snapchat",
+    "Twitter"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.35,
+      0.11,
+      0.03,
+      0.02,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Influencer marketing spending worldwide and in the United States in 2022 and 2023 (in billion U.S. dollars)",
+   "short": "Influencer marketing spending worldwide and in the U.S. 2022-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, influencer marketing spending in the United States equaled 22.19 billion U.S. dollars, which was less than global spending by close to 7 billion, which stood at around 29.14 billion in the given year. During 2023, global influencer marketing spending reached 34.08 billion, while in the U.S. it amounted to 26.09 billion dollars.",
+   "note": "Worldwide, United States; 2022 and 2023",
+   "source": "MediaPost; PQ Media",
+   "kind": "categorical",
+   "categories": [
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "U.S.",
+     "values": [
+      22.19,
+      26.09
+     ]
+    },
+    {
+     "name": "Worldwide",
+     "values": [
+      29.14,
+      34.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Most used social media platforms by type in the U.S. as of December 2023",
+   "short": "Most used social media platforms by type in the U.S. 2023",
+   "unit": "",
+   "description": "65 percent of U.S. respondents answer our survey on \"Most used social media platforms by type\" with \"Social networks (e.g., Facebook)\". The survey was conducted in 2023, among 60,267 consumers.",
+   "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Social networks (e.g., Facebook)",
+    "Media sharing (e.g., Snapchat, Instagram, YouTube, Pinterest)",
+    "Instant messengers (e.g., WhatsApp, Facebook Messenger, WeChat)",
+    "(Micro-)blogging (e.g., Twitter, Tumblr, WordPress)",
+    "Business networks (e.g., LinkedIn)",
+    "Discussion forums (e.g., Reddit, Quora)",
+    "Consumer review networks (e.g., Yelp, TripAdvisor)",
+    "I do not use social media regularly",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.58,
+      0.54,
+      0.24,
+      0.2,
+      0.18,
+      0.15,
+      0.08,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Types of social media accounts shoppers followed and purchased from in the United States in 2nd quarter 2023, by generational cohort",
+   "short": "Social media accounts users followed and bought from in the U.S. 2023, by generation",
+   "unit": "",
+   "description": "According to a 2023 survey, millennial shoppers in the U.S., meaning those between the ages of 18 and 25, exhibited the highest inclination to both follow and make purchases through influencers' social media accounts. Boomers, on the other hand, displayed a preference for retailer accounts, while all other age cohorts leaned towards following and engaging with brand accounts on social media.",
+   "note": "United States; Q2 2023; 18-77 years",
+   "source": "Klarna; Nepa",
+   "kind": "categorical",
+   "categories": [
+    "Gen Z (18-26)",
+    "Millennials (27-42)",
+    "Gen X (43-58)",
+    "Baby Boomers (59-77)"
+   ],
+   "series": [
+    {
+     "name": "Influencers",
+     "values": [
+      0.52,
+      0.55,
+      0.26,
+      0.16
+     ]
+    },
+    {
+     "name": "Brands",
+     "values": [
+      0.66,
+      0.75,
+      0.59,
+      0.51
+     ]
+    },
+    {
+     "name": "Retailers",
+     "values": [
+      0.5,
+      0.6,
+      0.72,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Influencer marketing spending and social advertising spending growth in the United States from 2019 to 2025",
+   "short": "Influencer marketing spend and social ad spend growth in the U.S. 2023",
+   "unit": "",
+   "description": "According to a forecast from July 2023, influencer marketing spending in the United States will grow more than three times faster than social ad spend in 2023, and it will continue growing gradually with around 14 percent from year to year until 2025.",
+   "note": "United States; 2019 to 2022",
+   "source": "eMarketer; Insider Intelligence; X (Twitter)",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "series": [
+    {
+     "name": "Influencer marketing spending growth",
+     "values": [
+      0.264,
+      0.169,
+      0.328,
+      0.203,
+      0.14,
+      0.147,
+      0.143
+     ]
+    },
+    {
+     "name": "Social ad spending growth",
+     "values": [
+      0.288,
+      0.249,
+      0.379,
+      0.051,
+      0.041,
+      0.096,
+      0.097
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Influencer marketing spending growth rates in the United States in 2022 and 2023, by player type",
+   "short": "Influencer marketing spend growth in the U.S. 2022-2023, by player type",
+   "unit": "",
+   "description": "In 2022, the influencer marketing growth rate in the United States stood at 22.2 percent. A year later, in 2023, it was expected to fall to 17.6 percent. Specifically for content providers, the 2022 value at 25.9 percent and was forecast to decrease to 20.6 percent.",
+   "note": "2022; * Forecast. Read more",
+   "source": "MarketingCharts; PQ Media",
+   "kind": "categorical",
+   "categories": [
+    "Overall influencer marketing",
+    "Content providers",
+    "Strategic providers",
+    "Measurement and platform providers"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.222,
+      0.259,
+      0.186,
+      0.212
+     ]
+    },
+    {
+     "name": "2023*",
+     "values": [
+      0.176,
+      0.206,
+      0.144,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Share of marketers using generative artificial intelligence (AI) in their companies in the United States as of March 2023",
+   "short": "Popularity of generative AI in marketing in the U.S. 2023",
+   "unit": "",
+   "description": "According to a 2023 study conducted with marketers in the United States, 73 percent of respondents reported using generative artificial intelligence tools, such as chatbots, as a part of their company's work. Only 17 percent of American marketing professionals were not using the generative AI tools.",
+   "note": "United States; March 2023; 1,000 respondents; B2B and B2C marketing professionals, three-quarters of them were from companies with 100 or more employees",
+   "source": "Botco.ai; MarTech",
+   "kind": "categorical",
+   "categories": [
+    "Using generative AI tools",
+    "Not using generative AI tools"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.73,
+      0.27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Leading ways in which B2B marketers are deploying artificial intelligence (AI) in the United States in 2023",
+   "short": "Top ways in which B2B marketers use AI in the U.S. 2023",
+   "unit": "",
+   "description": "Over 30 percent of business-to-business (B2B) marketers surveyed in the United States were using artificial intelligence (AI) for coding, chatbots and design. Another 30 percent of the same professionals deployed AI software for presentations and content.",
+   "note": "United States; 2023; >2,400; among professionals across B2B industries, including technology, healthcare, industrial, and business services",
+   "source": "Sagefrog Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Coding",
+    "Chatbots",
+    "Design",
+    "Presentations",
+    "Content",
+    "Productivity",
+    "Website development",
+    "Automation",
+    "Video creation",
+    "Not applicable"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.31,
+      0.31,
+      0.31,
+      0.3,
+      0.3,
+      0.29,
+      0.26,
+      0.23,
+      0.18,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Leading benefits of using artificial intelligence (AI) tools according to marketing professionals in the United States as of June 2023",
+   "short": "Top marketing benefits of AI usage in U.S. companies 2023",
+   "unit": "",
+   "description": "A survey carried out in June 2023 in the United States found out that 52 percent of marketing professionals that were using artificial intelligence (AI) tools in their marketing programs said that their leading benefit was the increased speed or efficiency of workflows or processes. Another 51 percent of professionals working with AI stated that the same tools benefited their data processing.",
+   "note": "United States; June 2023; 281 respondents; 18 years and older; professionals who work full-time in marketing, advertising, customer service, HR/finance, sales, or IT departments and have some level of involvement in marketing-related activities; work for companies currently using artificial intelligence or machine learning software for advertising, content, or copywriting generation",
+   "source": "Capterra Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Increasing speed or efficiency of workflows or processes",
+    "Data processing",
+    "Automating digital tasks",
+    "Discovering information",
+    "Simplifying workflows or processes"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.52,
+      0.51,
+      0.5,
+      0.47,
+      0.47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Leading objectives of most recent artificial intelligence (AI) deployment according to brand marketers in the United States as of March 2023",
+   "short": "Leading objectives of AI deployment according to marketers in the U.S. 2023",
+   "unit": "",
+   "description": "During a March 2023 survey among brand marketers who have used artificial intelligence (AI) in the United States, 20 percent of respondents said the main objective of their most recent AI deployment was to improve creative content development. This was followed by 19 percent of respondents saying they aimed to serve customers better and improve loyalty.",
+   "note": "United States; March 17 to 30, 2023; 300 respondents; among brand marketers who have deployed AI",
+   "source": "Sitecore Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Improve creative content development",
+    "Better serve customers and improve loyalty",
+    "Increase brand visibility",
+    "Improve internal efficiencies",
+    "Drive more revenue",
+    "Align with new customer expectations",
+    "Setting up internal systems to be ready for future larger investments",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2,
+      0.19,
+      0.17,
+      0.14,
+      0.11,
+      0.11,
+      0.07,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading concerns about usage of generative artificial intelligence (AI) in marketing according to brand marketers in the United States as of March 2023",
+   "short": "Concerns about generative AI use among marketers in the U.S. 2023",
+   "unit": "",
+   "description": "During a March 2023 survey among brand marketers in the United States, approximately 45 percent of respondents said their main concern about using artificial intelligence (AI) in marketing was the significant cost of implementation it may carry. This was followed by 41 percent citing legal vulnerabilities and data privacy concerns.",
+   "note": "United States; March 17 to 30, 2023; 408 respondents; among brand marketers",
+   "source": "Sitecore Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "The significant cost of implementation it may carry",
+    "Legal vulnerabilities and data privacy concerns",
+    "We're constantly playing catch-up on modernization",
+    "I think the technology is prone to error",
+    "My job may be at risk if I'm not able to prove the ROI quickly",
+    "I don't think we have the right staff/skills needed to manage or troubleshoot new AI tech",
+    "I don't think it is something consumers want at the moment",
+    "I don't think I can trust the technology",
+    "All of the above",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.45,
+      0.41,
+      0.26,
+      0.23,
+      0.19,
+      0.17,
+      0.16,
+      0.08,
+      0.04,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Leading forms of regulation that would be most beneficial to developing generative artificial intelligence (AI) in marketing according to marketers in the United States as of March 2023",
+   "short": "Top forms of regulation that should guide AI use in marketing in the U.S. 2023",
+   "unit": "",
+   "description": "During a March 2023 survey among brand marketers in the United States, 36 percent of respondents said industry regulations should guide the usage of generative artificial intelligence (AI) in marketing. This was followed by 27 percent of respondents citing company regulations. Conversely, a mere three percent reckoned there should be no regulations whatsoever.",
+   "note": "United States; March 17 to 30, 2023; 408 respondents; among brand marketers",
+   "source": "Sitecore",
+   "kind": "categorical",
+   "categories": [
+    "Industry",
+    "Company regulation",
+    "Federal/govenrment",
+    "Guidelines",
+    "Regulation",
+    "No regulation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.36,
+      0.27,
+      0.22,
+      0.13,
+      0,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Change in employment for advertising, promotions, and marketing managers in the United States between 2022 and 2032",
+   "short": "Employment change for ad, promotions, and marketing managers in the U.S. 2022-2032",
+   "unit": "",
+   "description": "Between 2022 and 2032, the employment of marketing managers in the United States will increase by an estimated seven percent. According to the same source, U.S. marketing managers' median annual wage amounted to little more than 140 thousand U.S. dollars as of mid-2022.",
+   "note": "United States; 2022; forecast; * Includes all occupations in the U.S. economy. Read more",
+   "source": "Bureau of Labor Statistics Change",
+   "kind": "categorical",
+   "categories": [
+    "Marketing managers",
+    "Advertising, promotions, and marketing managers",
+    "Advertising, marketing, promotions, public relations, and sales managers",
+    "Total, all occupations*",
+    "Advertising and promotions managers"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.07,
+      0.06,
+      0.05,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Median annual wages of advertising, promotions, and marketing managers in the United States between as of May 2022 (in U.S. dollars)",
+   "short": "Median annual wages of advertising, promotions, & marketing managers in the U.S. 2022",
+   "unit": "U.S. dollars",
+   "description": "As of May 2022, the median annual wage for a marketing manager in the United States amounted to 140.04 thousand U.S. dollars. Therefore, half of the workers in this occupation earned more than this value, while the other half earned less.",
+   "note": "United States; May 2022; * Includes all occupations in the U.S. economy. Read more",
+   "source": "Bureau of Labor Statistics Median wages in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Marketing managers",
+    "Advertising, promotions, and marketing managers",
+    "Advertising, marketing, promotions, public relations, and sales managers",
+    "Advertising and promotions managers",
+    "Total, all occupations*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      140040,
+      138730,
+      132820,
+      127830,
+      46310
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Percentage of women among Fortune 500 chief marketing officers (CMOs) in the United States in 2021 and 2022",
+   "short": "Percentage of women among Fortune 500 CMOs in the U.S. 2021-2022",
+   "unit": "",
+   "description": "In 2022, approximately 47 percent of Fortune 500 chief marketing officers (CMOs) in the United States were women. A year earlier, the share stood at 44 percent. Meanwhile, the percentage of underrepresented ethnic groups among Fortune 500 CMOs in the U.S. also increased.",
+   "note": "United States; 2021 and 2022",
+   "source": "Spencer Stuart",
+   "kind": "categorical",
+   "categories": [
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.44,
+      0.47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Percentage of people belonging to historically underrepresented racial or ethnic groups among Fortune 500 chief marketing officers (CMOs) in the United States in 2021 and 2022",
+   "short": "Share of underrepresented ethnic groups among Fortune 500 CMOs in the U.S. 2021-2022",
+   "unit": "",
+   "description": "In 2022, approximately 14 percent of Fortune 500 chief marketing officers (CMOs) in the United States belonged to historically underrepresented racial or ethnic groups. A year earlier, the share stood at 12 percent. Meanwhile, the percentage of women among Fortune 500 CMOs in the U.S. also increased.",
+   "note": "United States; 2021 and 2022",
+   "source": "Spencer Stuart",
+   "kind": "categorical",
+   "categories": [
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.12,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Chief executive officers' (CEOs) assessment of their chief marketing officers (CMOs) in the United States from 2021 to 2023",
+   "short": "CEOs' assessment of their CMOs in the U.S. 2021-2023",
+   "unit": "",
+   "description": "In 2023, approximately 40 percent of chief executive officers (CEOs) surveyed in the United States reported believing their chief marketing officers (CMOs) were best in class. Two years earlier, that share stood at 21 percent. Meanwhile, the share of CEOs thinking their CMOs underperformed dropped from 24 percent in 2021 to 11 percent in 2023. According to the same study, U.S. CEOs expected marketing to help them create new customers, retain existing ones, and drive revenue growth.",
+   "note": "United States; June 2021, December 2021 to March 2022, and September to October 2023; 150*; among CEOs from top corporations in the U.S.; * Number of respondents in 2023. The source does not specify the survey type. Read more",
+   "source": "Boathouse Group",
+   "kind": "categorical",
+   "categories": [
+    "Best in class",
+    "Average",
+    "Underperforming"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.21,
+      0.55,
+      0.24
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.36,
+      0.55,
+      0.09
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.4,
+      0.49,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Average tenure of chief marketing officers (CMOs) at the leading 100 advertisers in the United States from 2004 to 2022 (in months)",
+   "short": "Average tenure of CMOs at the leading 100 advertisers in the U.S. 2004-2022",
+   "unit": "months",
+   "description": "In 2022, the average tenure of chief marketing officers (CMOs) at the leading 100 advertisers in the United States reached 39.6 months – or 3.3 years. Before the pandemic, the average stood above 40 months.",
+   "note": "United States; 2004 to 2022; among the 100 most advertised brands at the end of each year; * Statista calculated the value based on the source's data. Data preceding 2022 comes from earlier releases. Read more",
+   "source": "Spencer Stuart; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23.6,
+      23.5,
+      23.2,
+      26.8,
+      28.4,
+      34.7,
+      42,
+      43.3,
+      45.1,
+      45.4,
+      48,
+      44.1,
+      42,
+      44,
+      42.5,
+      41.1,
+      40,
+      40,
+      39.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Percentage of chief executive officers (CEOs) aware that chief marketing officers (CMOs) had the shortest tenure in the C-suite in the United States from 2021 to 2023",
+   "short": "Share of CEOs aware that CMOs had the C-suite's shortest tenure in the U.S. 2021-2023",
+   "unit": "",
+   "description": "In 2023, approximately 54 percent of chief executive officers (CEOs) surveyed in the United States reported being aware that chief marketing officers (CMOs) had the shortest tenure in the C-suite. In the two previous years, that share did not surpass 46 percent. According to the same study, U.S. CEOs expected marketing to help them generate new customers, retain existing ones, and drive revenue growth.",
+   "note": "United States; June 2021, December 2021 to March 2022, and September to October 2023; 150*; among CEOs from top corporations in the U.S.; * Number of respondents in 2023. The source does not specify the survey type. Read more",
+   "source": "Boathouse Group",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Yes, I am aware",
+     "values": [
+      0.45,
+      0.46,
+      0.54
+     ]
+    },
+    {
+     "name": "No, I am not aware",
+     "values": [
+      0.55,
+      0.54,
+      0.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Chief executive officers' (CEOs) opinion on chief marketing officers (CMOs) with short tenures in the United States from 2021 to 2023",
+   "short": "CEOs' opinion on CMOs with short tenures in the U.S. 2021-2023",
+   "unit": "",
+   "description": "In 2023, approximately 51 percent of chief executive officers (CEOs) surveyed in the United States reported thinking short tenure is a sign of chief marketing officers (CMOs) succeeding in their role. In the two previous years, that share did not surpass 20 percent. According to the same study, U.S. CEOs expected marketing to help them create new customers, retain existing ones, and drive revenue growth.",
+   "note": "United States; June 2021, December 2021 to March 2022, and September to October 2023; 150*; among CEOs from top corporations in the U.S.; * Number of respondents in 2023. The source does not specify the survey type. Read more",
+   "source": "Boathouse Group",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Short CMO tenure is a sign of success in role",
+     "values": [
+      0.2,
+      0.19,
+      0.51
+     ]
+    },
+    {
+     "name": "Short CMO tenure is a sign of failure in role",
+     "values": [
+      0.8,
+      0.81,
+      0.49
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Level of difficulty in obtaining new business according to advertising, marketing, and PR agency executives in the United States from 2020 to 2023",
+   "short": "Difficulty in obtaining new business for agencies in the U.S. 2020-2023",
+   "unit": "",
+   "description": "During a 2023 survey fielded in the United States, 58 percent of the responding marketing, advertising, and public relations (PR) agency executives said it was harder or much harder for them to obtain a new business compared to the previous year. In 2022, that share stood at 43 percent.",
+   "note": "United States; 2020 to 2023; 250*; among agency executives; * Number of respondents in 2023. Data prior to 2023 was retrieved from an earlier release. Percentage points exceeding 100 percent are probably due to rounding. Read more",
+   "source": "MarketingProfs; RSW/US",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Easier/much easier",
+     "values": [
+      0.07,
+      0.38,
+      0.17,
+      0.07
+     ]
+    },
+    {
+     "name": "No change",
+     "values": [
+      0.26,
+      0.35,
+      0.4,
+      0.35
+     ]
+    },
+    {
+     "name": "Harder/much harder",
+     "values": [
+      0.67,
+      0.28,
+      0.43,
+      0.58
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Leading problems chief executive officers (CEOs) wanted marketing to help them solve in the United States as of October 2023",
+   "short": "Leading problems CEOs wanted marketing to help them solve in the U.S. 2023",
+   "unit": "",
+   "description": "During a survey among chief executive officers (CEOs) in the United States concluded in October 2023, respondents were asked to select the five problems they wanted marketing to help them solve. Over half (or 52 percent) of the interviewees mentioned creating new customers, retaining existing ones, and driving revenue growth. Driving sales and growing market shares and staying ahead, differentiating, and growing faster than their competition followed, mentioned by 45 and 44 [...]",
+   "note": "United States; September 9 to October 4, 2023; 75 respondents; among CEOs from organizations with at least 250 million U.S. dollars in annual revenues",
+   "source": "Boathouse Group; Gerson Lehrman Group Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Create new customers, retain existing customers, drive revenue growth",
+    "Drive sales and grow market shares",
+    "Stay ahead, differentiate, grow faster than our competition",
+    "Improve our brand/reputation",
+    "Transform the company's narrative in the marketplace",
+    "Build a better case for the connection between marketing spend and business impact",
+    "Serve our customers better (personalization, etc.)",
+    "Improve company margins (increase pricing/reduce costs)",
+    "Increase our social impact as a company",
+    "Increase my visibility in a way that helps the company/culture/growth",
+    "Translate the company's strategy and vision",
+    "Drive investor perception/valuation",
+    "Innovate our company's products/services",
+    "Drive employee culture/engagement/retention",
+    "Improve distribution (new geographies, new target segments)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.52,
+      0.45,
+      0.44,
+      0.41,
+      0.4,
+      0.37,
+      0.32,
+      0.29,
+      0.28,
+      0.28,
+      0.27,
+      0.25,
+      0.24,
+      0.24,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Leading challenges according to chief marketing officers (CMOs) of for-profit companies in the United States as of August 2023",
+   "short": "Leading challenges according to CMOs of for-profit companies in the U.S. 2023",
+   "unit": "",
+   "description": "As of August 2023, approximately 61 percent of chief marketing officers (CMOs) surveyed in the United States listed demonstrating the impact of marketing actions on financial outcomes among the challenges they faced by marketing leadership. Communicating the role of the brand in business decisions and focusing data and analytics on the most important marketing problems followed, mentioned by around 45 and 42 percent of respondents, respectively.",
+   "note": "United States; July and August 2023; 316 respondents; among marketing leaders at for-profit U.S. companies, 95.6% of whom were VP-level and above",
+   "source": "American Marketing Association; Deloitte; Duke University; MarketingCharts; The CMO Survey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Demonstrating the impact of marketing actions on financial outcomes",
+    "Communicating the role of the brand in business decisions",
+    "Focusing data and analytics on the most important marketing problems",
+    "Securing cross-functional support for new marketing investments",
+    "Leveraging technology to improve customer value",
+    "Infusing customer's point of view in business decisions",
+    "Linking marketing investments to important business objectives",
+    "Using business terminology that resonates outside of the marketing function"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.612,
+      0.453,
+      0.416,
+      0.407,
+      0.369,
+      0.28,
+      0.262,
+      0.154
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Leading external challenges chief marketing officers (CMOs) expected to face in the following six to 12 months in Canada and the United States as of August 2023",
+   "short": "Top external challenges CMOs expected to face in Canada & the U.S. 2023",
+   "unit": "",
+   "description": "During an August 2023 survey among chief marketing officers (CMOs) in Canada and the United States, around 38 percent of respondents listed obtaining the right data to make timely and appropriate decisions among the external challenges they expected to face over the next 12 months. Understanding the difference between temporary and permanent change in consumers stood second, with 35 percent.",
+   "note": "Canada, United States; August 2023; 607*; * Number of responding CMOs in Canada: 206. Number of responding CMOs in the United States: 401. The source does not specify the survey type. Multiple answers were possible. Read more",
+   "source": "B2B International; Dentsu Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Obtaining the right data to make timely and appropriate decisions",
+    "Understanding what is a temporary vs permanent change in consumers",
+    "Aligning with new/changing consumer sentiment",
+    "Declining consumer spending",
+    "Managing changes to the workforce",
+    "Disruptions to the supply chain and ability to fulfill demand",
+    "Inability to react quickly enough to market changes",
+    "Ineffectiveness of advertising in a new media landscape",
+    "Digital-native new players better positioned to monetize emerging habits",
+    "Disruption of my category by new competitors"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.38,
+      0.35,
+      0.34,
+      0.34,
+      0.31,
+      0.29,
+      0.26,
+      0.26,
+      0.24,
+      0.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Aspects of media transformation chief marketing officers (CMOs) expected to be the most challenging in Canada and the United States as of August 2023",
+   "short": "Most challenging media transformations according to CMOs in Canada & the U.S. 2023",
+   "unit": "",
+   "description": "During an August 2023 survey among chief marketing officers (CMOs) in Canada and the United States, around 33 percent of respondents listed integrating emerging tech solutions such as artificial intelligence (AI) and augmented reality (AR) among the media transformation challenges they expected to face over the next 12 months. A complex, crowded and fragmented tech landscape stood second, mentioned by 30 percent.",
+   "note": "Canada, United States; August 2023; 607*; * Number of responding CMOs in Canada: 206. Number of responding CMOs in the United States: 401. The source does not specify the survey type. Multiple answers were possible. Read more",
+   "source": "B2B International; Dentsu Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "The challenge of integrating emerging tech solutions (AI, AR, etc.)",
+    "Complex, crowded and fragmented tech landscape",
+    "Tightening of data privacy regulation and cookie deprecation",
+    "Consumers distrust media outlets",
+    "Scarcity of new content due to the SAG-AFRA strikes",
+    "The declining control over the brand on social media/in the creator economy",
+    "Systemic inequity in the advertising supply chain",
+    "Backlash media has come under for negativity/mental health issues",
+    "Erosion of linear television viewership",
+    "Inadequacy of existing measurement models",
+    "Other parts of the business don't understand the impact of this transformation",
+    "Lack of transparency/visibility from Walled Gardens"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.33,
+      0.3,
+      0.29,
+      0.26,
+      0.25,
+      0.25,
+      0.23,
+      0.23,
+      0.22,
+      0.22,
+      0.19,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Companies' leading challenges in the next 12 months according to CMOs in the United States as of February 2023",
+   "short": "Companies' top challenges in the next 12 months according to CMOs in the U.S. 2023",
+   "unit": "",
+   "description": "An early 2023 survey asked chief marketing officers (CMOs) across the United States what the top challenges their companies would face over the following 12 months. Approximately 20.6 percent said it was expanding into new markets, segments, or geographies. Around 18.8 percent mentioned reducing operational and/or product costs or increasing value for similar cost, while 15.6 percent cited developing, acquiring, and retaining talent.",
+   "note": "United States; January 10 to February 1, 2023; 314 respondents; only respondents rating each response as a top challenge; among marketing leaders at for-profit companies",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Expanding into new markets, segments, or geographies",
+    "Reducing operational and/or product costs or increasing value for similar cost",
+    "Developing, acquiring, and retaining talent",
+    "Accelerating the move to new digital technologies/platforms",
+    "Addressing regulatory environments (e.g., public health, climate, geopolitical, privacy)",
+    "Collaborating with other business functions to drive strategic initiatives (e.g., IT, supply chain)",
+    "Creating new products and services",
+    "Deploying brand as an enterprise-wide strategy",
+    "Implementing systems and/or algorithms (e.g., AI, ML) to create greater customer personalization",
+    "Building more sustainable capabilities and/or offerings",
+    "Building more inclusive capabilities and/or offerings",
+    "Activating purpose as an enterprise-wide business strategy"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.206,
+      0.188,
+      0.156,
+      0.096,
+      0.069,
+      0.06,
+      0.06,
+      0.046,
+      0.046,
+      0.041,
+      0.018,
+      0.014
+     ]
+    }
+   ]
+  }
+ ]
+}

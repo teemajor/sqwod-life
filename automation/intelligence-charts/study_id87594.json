@@ -1,0 +1,714 @@
+{
+ "studyId": "87594",
+ "study": "dietary supplements and functional foods in france",
+ "file": "research/statista/study_id87594_dietary-supplements-and-functional-foods-in-france.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the vitamins & minerals market worldwide from 2020 to 2029 (in billion U.S. dollars)",
+   "short": "Revenue of the vitamins & minerals industry worldwide 2020-2029",
+   "unit": "billion U.S. dollars",
+   "description": "The global revenue in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously increase between 2024 and 2029 by in total 12.3 billion U.S. dollars (+38.52 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 44.18 billion U.S. dollars and therefore a new peak in 2029. Notably, the revenue of the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was continuously increasing over the past years.",
+   "note": "Worldwide; 2020 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23.56,
+      25.89,
+      27.5,
+      29.7,
+      31.93,
+      34.24,
+      36.7,
+      39.2,
+      41.69,
+      44.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Revenue of the vitamins & minerals market worldwide by country in 2023 (in million U.S. dollars)",
+   "short": "Revenue of the vitamins & minerals market worldwide by country 2023",
+   "unit": "million U.S. dollars",
+   "description": "China is leading the ranking by revenue in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market, recording 4.8 billion U.S. dollars. Following closely behind is the United States with 4.4 billion U.S. dollars, while Sweden is trailing the ranking with 5.36 million U.S. dollars, resulting in a difference of 4.8 billion U.S. dollars to the ranking leader, China.",
+   "note": "Worldwide; Jan 1st to Dec 31st 2023",
+   "source": "Statista; Statista Consumer Market Insights Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "United States",
+    "India",
+    "Australia",
+    "Brazil",
+    "Japan",
+    "Canada",
+    "Poland",
+    "United Kingdom",
+    "Indonesia",
+    "South Korea",
+    "Philippines",
+    "Russia",
+    "Germany",
+    "Israel"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4820.57,
+      4369.39,
+      2402.96,
+      1302.1,
+      1175.49,
+      1024.59,
+      937.19,
+      804.08,
+      723.66,
+      677.32,
+      665.95,
+      515.86,
+      512.94,
+      392.19,
+      360.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Revenue growth of the vitamins & minerals market worldwide from 2020 to 2029",
+   "short": "Revenue growth of vitamins & minerals worldwide 2020-2029",
+   "unit": "",
+   "description": "The global revenue change in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously decrease between 2024 and 2029 by in total 1.5 percentage points. According to this forecast in 2029, the indicator will have decreased for the sixth consecutive year to 5.98 percent.",
+   "note": "Worldwide; 2020 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0319,
+      0.0989,
+      0.0621,
+      0.0801,
+      0.075,
+      0.0726,
+      0.0718,
+      0.0679,
+      0.0636,
+      0.0598
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Revenue per capita of the vitamins & minerals market worldwide from 2020 to 2029 (in U.S. dollars)",
+   "short": "Revenue per capita of vitamins & minerals worldwide 2020-2029",
+   "unit": "U.S. dollars",
+   "description": "The global average revenue per capita in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously increase between 2024 and 2029 by in total 1.4 U.S. dollars (+33.98 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 5.48 U.S. dollars and therefore a new peak in 2029. Notably, the average revenue per capita of the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was continuously increasing [...]",
+   "note": "Worldwide; 2020 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.14,
+      3.42,
+      3.61,
+      3.86,
+      4.12,
+      4.38,
+      4.66,
+      4.94,
+      5.21,
+      5.48
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Export quantities of vitamins worldwide in 2023, by country (in million kilograms)",
+   "short": "Export volume of vitamins worldwide in 2023, by country",
+   "unit": "million kilograms",
+   "description": "The leading global exporter of vitamins in 2023 was the China. The country exported almost 347 million kilograms of vitamins and vitamin preparations across the globe. The next biggest exporter of vitamins was the Netherlands, with nearly 63.5 million kilograms.",
+   "note": "Worldwide; 2023",
+   "source": "UN Comtrade Export volume in million kilograms",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Netherlands",
+    "United States",
+    "Germany",
+    "Australia",
+    "Switzerland",
+    "Belgium",
+    "Spain",
+    "Zambia",
+    "Italy",
+    "South Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      346.7,
+      63.45,
+      36.6,
+      23.3,
+      20.8,
+      14.1,
+      11.8,
+      8.5,
+      8,
+      6.9,
+      5.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Import value of vitamins worldwide in 2023, by country (in million U.S. dollars)",
+   "short": "Import value of vitamins worldwide in 2023, by country",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, the United States was the leading worldwide importer of vitamin products in the world. The country imported vitamins worth 1.2 billion U.S. dollars. Three European countries followed the U.S. in import values of vitamins. Germany, the Netherlands, and Spain had a combined import value of about 1.6 billion U.S. dollars.",
+   "note": "Worldwide; 2023",
+   "source": "UN Comtrade",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Netherlands",
+    "Germany",
+    "Spain",
+    "Brazil",
+    "Canada",
+    "Japan",
+    "Italy",
+    "Belgium",
+    "China",
+    "Mexico"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1238,
+      799,
+      600,
+      243,
+      241,
+      234,
+      211,
+      204,
+      178,
+      165,
+      165
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Turnover of the food supplements industry in France in 2021 and 2022, by distribution channel (in millions euros)",
+   "short": "Dietary supplement sales in France 2021-2022, by distribution channel",
+   "unit": "millions euros",
+   "description": "Looking at the turnover of the dietary supplements market in France, sales recorded a three percent growth between 2021 and 2022. Indeed, the turnover went from 2.3 billion euros in 2021 to 2.6 billion euros the following year. This increase is observable many all sales channels, except large retailers, organic stores and catalogue (mail-order) sales..",
+   "note": "France; 2021 and 2022",
+   "source": "FEVAD; IQVIA; IRI; Sources diverses; SYNADIET Turnover in millions euros",
+   "kind": "categorical",
+   "categories": [
+    "Pharmacies",
+    "Direct selling",
+    "Retailers",
+    "Organic stores",
+    "E-commerce",
+    "Specialized sales channels (dietetics, nutrition)",
+    "Parapharmacy*",
+    "Mail-order"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      1383.7,
+      266,
+      203.5,
+      202.8,
+      202,
+      128,
+      122.1,
+      72
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      1150.3,
+      265.1,
+      214.7,
+      204.5,
+      200,
+      123,
+      109.3,
+      80
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Sales revenue from nutritional supplements in direct and distance selling channels in France in 2022, by type of channel (in million euros)",
+   "short": "Turnover of food supplements in direct and distance selling in France 2022",
+   "unit": "million euros",
+   "description": "This bar chart displays the turnover of nutritional supplements in direct and distance selling channels in France in 2022, by type of selling. It shows that the sales of food supplements online amounted to 202 million euros in 2022.",
+   "note": "France; 2022",
+   "source": "FEVAD; Sources diverses (Manufacturers and retailers); SYNADIET Sales value in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Total",
+    "Direct at-home sales",
+    "E-commerce",
+    "Mail-order sales"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      540,
+      266,
+      202,
+      72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Detailed sales revenue from nutritional supplements in pharmacies in France in 2022, by type of treatment (in 1,000 euros)",
+   "short": "Turnover of food supplements in pharmacies in France 2022, by type of treatment",
+   "unit": "1,000 euros",
+   "description": "This bar chart displays the distribution of the sales revenue from nutritional supplements in pharmacies in France in 2022, by type of treatment. It shows that the sales of food supplements tackling mood, stress and/or sleep were the third-highest-selling in pharmacies that year. They amounted to over 226.6 million euros.",
+   "note": "France; As of December 2022",
+   "source": "IQVIA; SYNADIET Sales revenue in thousand euros",
+   "kind": "categorical",
+   "categories": [
+    "Vitality/immune defenses",
+    "Digestion / Transit",
+    "Mood / Stress / Sleep",
+    "Respiratory tract",
+    "Beauty",
+    "Articulation",
+    "Woman's health",
+    "Weightloss",
+    "Genito-urinary",
+    "Blood flow",
+    "Eyesight",
+    "Balance",
+    "Memory/Focus"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      312262,
+      229373,
+      226653,
+      174150,
+      97614,
+      57920,
+      50630,
+      49762,
+      49665,
+      47440,
+      45566,
+      23415,
+      11172
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Distribution of the sales revenue from nutritional supplements in parapharmacies* in France in 2022, by type of treatment (in 1,000s euros)",
+   "short": "Turnover distribution of food supplements in parapharmacies in France 2022, by type",
+   "unit": "1,000s euros",
+   "description": "This bar chart displays the distribution of the sales revenue from nutritional supplements in parapharmacies in France in 2022, by type of treatment. It shows that, that year, the type of food supplements most sold in parapharmacies were products for vitality, amounting to about 25.6 million euros of the sales revenue.",
+   "note": "France; As of December 2022",
+   "source": "IQVIA; SYNADIET Sales revenue in thousand euros",
+   "kind": "categorical",
+   "categories": [
+    "Vitality / Immune defenses",
+    "Beauty",
+    "Sleep / Stress / Mood",
+    "Weightloss",
+    "Digestion",
+    "Respiratory tract",
+    "Articulation",
+    "Blood flow",
+    "Woman's health",
+    "Genito-urinary",
+    "Balance",
+    "Memory/Focus",
+    "Eyesight"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      25562,
+      23647,
+      19968,
+      15021,
+      10117,
+      7003,
+      6453,
+      5067,
+      3677,
+      2947,
+      1360,
+      728,
+      308
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Sales revenue of nutritional supplements in specialized and organic sales channels in France in 2022, by type of channel (in million euros)",
+   "short": "Turnover of food supplements in specialized and organic stores in France 2022",
+   "unit": "million euros",
+   "description": "This bar chart displays the turnover of nutritional supplements in organic and specialty stores in France in 2022, by type of channel. It shows that the sales of food supplements in organic stores amounted to over 202.8 million euros in 2022.",
+   "note": "France; December 2022",
+   "source": "Sources diverses; SYNADIET Sales revenue in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Organic stores",
+    "Dietetics specialized shops"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      202.8,
+      128
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Breakdown of the sales value of the adult dietetics sector in France in 2022, by category",
+   "short": "Distribution of the sales value of the dietetics foods sector France 2022, by diet",
+   "unit": "",
+   "description": "While the previous year gluten-free products made up almost half of the sales value of the adult dietetics foods sector, in 2022, slimming products took their place on the first step of the podium. Indeed, weight-loss food products accounted for 46.2 percent of the sales value of the adult dietetics sector, while gluten-free products took up over 33 percent.",
+   "note": "France; 2022",
+   "source": "IRI; L’Alliance 7; Syndicat français de la nutrition spécialisée",
+   "kind": "categorical",
+   "categories": [
+    "Slimming products",
+    "Gluten-free products",
+    "Sugar-free products",
+    "Sports nutrition products"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.462,
+      0.331,
+      0.145,
+      0.062
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Retail sales value of health and wellness food sector in France between 2016 and 2026, by category (in million U.S. dollars)",
+   "short": "Retail sales of the health and wellness food sector in France 2016-2026, by category",
+   "unit": "million U.S. dollars",
+   "description": "The health and wellness food market has been growing since 2016 and is expected to grow even more until 2026. Indeed, while in 2016 sales of weight management food amounted to around 2.9 billion U.S. dollars, by 2026 the sales value of this category is forecast to amount to over three billion U.S. dollars.",
+   "note": "France; 2016 to 2026",
+   "source": "Agriculture and Agri-Food Canada; Global Database",
+   "kind": "categorical",
+   "categories": [
+    "Cardiovascular health",
+    "Digestive health",
+    "Weight Management"
+   ],
+   "series": [
+    {
+     "name": "2016",
+     "values": [
+      383,
+      1481,
+      2858.6
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      433.5,
+      1678,
+      2799.2
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      441,
+      1734.2,
+      2833.6
+     ]
+    },
+    {
+     "name": "2026",
+     "values": [
+      483.4,
+      2086.4,
+      3148.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Retail sales value of food with probiotics in France in 2021, by category (in million U.S. dollars)",
+   "short": "Retail sales of the health and wellness food sector in France 2021, by category",
+   "unit": "million U.S. dollars",
+   "description": "Probiotics and food containing probiotics have been enjoying success in recent years. Probiotic yogurts in particular are the highest-grossing category in the market. In 2021, it generated almost 450 million U.S. dollars.",
+   "note": "France; 2021; FF= Functional Foods",
+   "source": "Agriculture and Agri-Food Canada; Global Database",
+   "kind": "categorical",
+   "categories": [
+    "Probiotics by FF yoghurt",
+    "Probiotics by FF milk formula",
+    "Probiotics - total"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      448.8,
+      214.9,
+      663.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Sales value of beauty nutritional supplements, or nutricosmetics, in France in 2022, by sales channel (in 1,000 euros)",
+   "short": "Sales value of beauty supplements in France 2022, by sales channel",
+   "unit": "1,000 euros",
+   "description": "Nowadays, the relationship between beauty and health is getting closer and closer. The term \"nutricosmetics\", originating from the cosmetics industry, refers to food supplements that provide, according to manufacturers' claims, health benefits to various external parts of the human body (generally the skin, hair, or nails). Products addressing weight, cellulite, or the \"detoxification\" of the body sometimes complete the lines of nutricosmetics products currently on the market.",
+   "note": "France; 2022; * In France, parapharmacies are points of sales for all non-prescription products sold in pharmacies (over-the-counter). The source adds the following information: \"Compléments alimentaires et assimilés, produits hors AMM, [...] Read more",
+   "source": "IQVIA; IRI; SYNADIET; Various sources (©good. BioAnalytics)",
+   "kind": "categorical",
+   "categories": [
+    "Pharmacies",
+    "Parapharmacy*",
+    "Organic stores",
+    "Retailers"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      97614,
+      23647,
+      15372,
+      10553
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Have you ever taken dietary supplements?",
+   "short": "Share of French people having already consumed food supplements 2022",
+   "unit": "",
+   "description": "Less than a third of the French population indicated never having taken any food supplements at the time this survey was carried out in 2022. Among the respondents who tried food supplements at least once, 32 percent declare they did so in the last 3 months.",
+   "note": "France; February 15-17, 2022; 1,372 respondents; 18 years and older",
+   "source": "Harris Interactive; SYNADIET Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Yes, in the last 3 months",
+    "Yes, in the last 6 months",
+    "Yes, in the last 12 months",
+    "Yes, in the last 2 years",
+    "Yes, a longer time ago",
+    "No, I've never taken any supplements"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.13,
+      0.09,
+      0.05,
+      0.09,
+      0.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "For which indications have you already taken dietary supplements?",
+   "short": "Indications for taking food supplements in France 2023",
+   "unit": "",
+   "description": "According to this survey, 45 percent of the French population taking dietary supplements claimed doing so in order to strengthen their immune system, which is the number one reason to take food supplements, followed by the wish to help with energy and vitality levels.",
+   "note": "France; February 3-6, 2023; 605 respondents; 18 years and older; People who have already consumed food supplements",
+   "source": "Harris Interactive; SYNADIET Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strengthen your immune system",
+    "Help energy / vitality",
+    "To sleep better/relax",
+    "To regulate my stress/moods",
+    "Digestion",
+    "Improve skin / hair / nails",
+    "Compensating for an unbalanced diet",
+    "To ease muscle or articulations discomfort"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.45,
+      0.43,
+      0.35,
+      0.28,
+      0.28,
+      0.25,
+      0.25,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "What type of dietary supplements do you take?",
+   "short": "Types of food supplements consumed among French people 2023",
+   "unit": "",
+   "description": "In France, the most popular type of dietary supplements are vitamins and minerals, far above all other kinds. The second most consumed type of food supplements are bee products such as honey, propolis, royal jelly, etc.",
+   "note": "France; February 3 to 6, 2023; 1,017 respondents; 18 years and older",
+   "source": "Harris Interactive; SYNADIET Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Vitamins and minerals",
+    "Bee products (honey, royal jelly, propolis, pollen, etc.)",
+    "Omegas 3/6/9",
+    "Probiotics",
+    "Super fruits (chia seeds…)",
+    "Aromatherapy / essential oils",
+    "Medicinal plants (nettle, thyme, etc.)",
+    "Yeasts (beer, red rice)",
+    "Marine products (seaweed, spirulina, klamath, etc.)",
+    "Physiological substances (melatonin, etc.)",
+    "Proteins or amino acids",
+    "Gemmotherapy (plant buds)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.64,
+      0.42,
+      0.3,
+      0.27,
+      0.27,
+      0.25,
+      0.25,
+      0.21,
+      0.18,
+      0.16,
+      0.14,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Breakdown of purchase locations for organic food supplements among consumers in France in 2022",
+   "short": "Places where French consumers buy organic food supplements 2022",
+   "unit": "",
+   "description": "The organic food market has been steadily growing in recent years, with producers introducing an organic equivalent of all kinds of food. Food supplements are not immune to this phenomenon, and 31 percent of French consumers declare purchasing these organic versions at specialized stores.",
+   "note": "France; November 21 to December 1, 2022; 4,000 respondents; 18-75 years; respondents who take organic food supplements at least once a month: 9 percent",
+   "source": "Agence Bio; ObSoCo",
+   "kind": "categorical",
+   "categories": [
+    "Specialized organic stores",
+    "Local marketplace",
+    "Supermarkets and hypermarkets",
+    "Artisans / craftsmen",
+    "At the farm, local producers",
+    "Drive",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.31,
+      0.04,
+      0.28,
+      0.03,
+      0.02,
+      0.02,
+      0.26
+     ]
+    }
+   ]
+  }
+ ]
+}

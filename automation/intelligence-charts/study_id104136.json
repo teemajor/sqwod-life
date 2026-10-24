@@ -1,0 +1,908 @@
+{
+ "studyId": "104136",
+ "study": "influencer marketing in germany",
+ "file": "research/statista/Fitness Marketing/study_id104136_influencer-marketing-in-germany.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Distribution of influencers in Germany in 2020, by number of Instagram followers",
+   "short": "Distribution of influencers Germany 2020, by number of Instagram followers",
+   "unit": "",
+   "description": "In 2020, 35.4 percent of German influencers were nano-influencers, meaning they had between 1,000 and 5,000 Instagram followers. Based on the number of followers, other influencers are classified as micro, mid-tier, macro, mega-influencers and celebrities.",
+   "note": "Germany; January 2020; 146,226 influencers",
+   "source": "HypeAuditor Share of influencers",
+   "kind": "categorical",
+   "categories": [
+    "Nano-influencer (1k-5k followers)",
+    "Micro-influencer (5k-20k followers)",
+    "Mid-tier influencer (20k-100k followers)",
+    "Macro-influencer (100k – 1m followers)",
+    "Mega-influencer and celebrities (over 1m followers)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.354,
+      0.43,
+      0.18,
+      0.035,
+      0.0016
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Average daily change in follower numbers on influencer accounts in Germany in 2020, by topic",
+   "short": "Average daily follower growth on influencer accounts in Germany 2020, by topic",
+   "unit": "",
+   "description": "In 2020, influencer accounts covering news and politics recorded the highest growth in follower numbers at 68 percent. Meanwhile, sports accounts focusing on skiing and snowboarding lost significantly. The ranking shows the average daily change in follower numbers on German influencer accounts, broken down by topic, in the last 30 days compared to the previous 180 days.",
+   "note": "Germany; March 2020",
+   "source": "HypeAuditor Daily increase of followers",
+   "kind": "categorical",
+   "categories": [
+    "News and politics",
+    "Anime",
+    "Yoga",
+    "Cooking",
+    "Entertainment",
+    "Skiing",
+    "Snowboarding",
+    "Streetwear",
+    "Shoes",
+    "Hotels"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.68,
+      0.65,
+      0.58,
+      0.57,
+      0.46,
+      -2.27,
+      -1.87,
+      -1.45,
+      -1.15,
+      -0.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Share of the population subscribing to influencer accounts on social media in Germany in 2021",
+   "short": "Share of influencer subscribers on social media Germany 2021",
+   "unit": "",
+   "description": "In 2021, 21 percent of the German population subscribed to influencer accounts on social media. 78.7 percent did not. The survey is based on the Verbrauchs- und Medienanalyse (VuMA), which provides information on more than 1,000 brands and almost all products advertised in the media. The reports presents data on usage and purchase behavior, media usage as well as attitudes of the German-speaking population aged 14 years and older.",
+   "note": "Germany; 2021; 22,563 respondents; 14 years and older; German-speaking population",
+   "source": "VuMA",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No",
+    "No answer"
+   ],
+   "series": [
+    {
+     "name": "2020",
+     "values": [
+      0.188,
+      0.809,
+      0.003
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      0.21,
+      0.787,
+      0.003
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Share of the population following influencer product recommendations in Germany in 2020 and 2021",
+   "short": "Share of people following influencer product recommendations Germany 2021",
+   "unit": "",
+   "description": "In 2021, 78.5 percent of the German population never followed product recommendations from influencers. The survey is based on the Verbrauchs- und Medienanalyse (VuMA), which provides information on more than 1,000 brands and almost all products advertised in the media. The reports presents data on usage and purchase behavior, media usage as well as attitudes of the German-speaking population aged 14 years and older.",
+   "note": "2020 and 2021; 23,138 respondents; 14 years and older; German-speaking population",
+   "source": "VuMA",
+   "kind": "categorical",
+   "categories": [
+    "Frequently",
+    "Occasionally",
+    "Rarely",
+    "Never",
+    "No answer"
+   ],
+   "series": [
+    {
+     "name": "2020",
+     "values": [
+      0.014,
+      0.087,
+      0.092,
+      0.805,
+      0.002
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      0.016,
+      0.09,
+      0.108,
+      0.785,
+      0.002
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Have you ever selected a brand and/ or bought a product, because you had previously seen them on an influencer's account (YouTube/ Instagram)?",
+   "short": "Purchase decisions based on influencers Germany 2020",
+   "unit": "",
+   "description": "In 2020, almost 22 percent of consumers in Germany had selected a brand or bought a product because they had previously seen these on an influencer's YouTube or Instagram account. Around 72 percent did not. The survey was conducted in Germany in 2020 to evaluate purchase decisions based on information from influencers.",
+   "note": "Germany; March 2020; 1,068 respondents; 16 years and older",
+   "source": "BVDW",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No",
+    "Do not know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.216,
+      0.717,
+      0.066
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Does it bother you that influencers recommend products for money or another form of compensation?",
+   "short": "Opinions on influencers earning money for product recommendations in Germany 2020",
+   "unit": "",
+   "description": "In 2020, almost 24 percent of Germans were bothered by influencers receiving money for recommending products. 43 percent were not, but only as long as advertising was clearly labeled as such. The figures are based on a survey conducted in Germany in 2020 regarding opinions on influencers earning money or receiving another form of compensation in return for product suggestions.",
+   "note": "Germany; March 2020; 1,068 respondents; 16 years and older",
+   "source": "BVDW",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No, as long as advertising is labeled as such",
+    "No",
+    "Do not know/no response"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.238,
+      0.43,
+      0.271,
+      0.061
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "What is your company's or your customer's planned annual budget for influencer marketing?",
+   "short": "Planned annual company budget for influencer marketing Germany 2020",
+   "unit": "",
+   "description": "In 2020, 22 percent of German companies planned to spend between 10,000 and 50,000 euros on influencer marketing. 11 percent planned to spend over 250,000 euros. The graph shows planned annual spending on influencer marketing in German companies, based on an online survey conducted in 2018 and 2020.",
+   "note": "Germany; August 1 to October 2, 2018 and November 5, 2020 to January 31, 2021 ; 2018: 53; 2021: 73; Company employees responsible for social media and influencer marketing",
+   "source": "BVDW",
+   "kind": "categorical",
+   "categories": [
+    "Under 10,000 euros",
+    "10,000 to 50,000 euros",
+    "50,001 to 100,000 euros",
+    "100,001 to 250,000 euros",
+    "Over 250,000 euros",
+    "No fixed budget planned"
+   ],
+   "series": [
+    {
+     "name": "2018",
+     "values": [
+      0.28,
+      0.26,
+      0.19,
+      0.06,
+      0.06,
+      0.15
+     ]
+    },
+    {
+     "name": "2020",
+     "values": [
+      0.14,
+      0.22,
+      0.12,
+      0.14,
+      0.11,
+      0.27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "What do you see as advantages of influencer marketing compared to traditional online marketing?",
+   "short": "Opinions on influencer marketing advantages Germany 2020",
+   "unit": "",
+   "description": "In 2020, 36 percent of German companies considered generating content a very important advantage of influence marketing. Other advantages also seen as essential were better improved communication with target groups and increased authenticity. The graph shows the results of an online survey conducted among German companies from November 2020 to January 2021.",
+   "note": "Germany; November 5, 2020 to January 31, 2021 ; 85 respondents; Company employees responsible for social media and influencer marketing",
+   "source": "BVDW Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Generating content",
+    "Better communication with a target group",
+    "More authenticity",
+    "Larger reach",
+    "Less divergence loss",
+    "Efficiency",
+    "Lower costs"
+   ],
+   "series": [
+    {
+     "name": "Very important",
+     "values": [
+      0.36,
+      0.31,
+      0.31,
+      0.23,
+      0.12,
+      0.05,
+      0.01
+     ]
+    },
+    {
+     "name": "Important",
+     "values": [
+      0.35,
+      0.42,
+      0.37,
+      0.28,
+      0.27,
+      0.28,
+      0.21
+     ]
+    },
+    {
+     "name": "Neutral",
+     "values": [
+      0.15,
+      0.07,
+      0.16,
+      0.32,
+      0.27,
+      0.33,
+      0.31
+     ]
+    },
+    {
+     "name": "Not important",
+     "values": [
+      0.07,
+      0.14,
+      0.07,
+      0.09,
+      0.31,
+      0.2,
+      0.31
+     ]
+    },
+    {
+     "name": "Not important at all",
+     "values": [
+      0.07,
+      0.06,
+      0.09,
+      0.07,
+      0.02,
+      0.12,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "How do you evaluate the importance of influencer marketing in terms of the coronavirus (COVID-19) pandemic?",
+   "short": "Opinions on importance of influencer marketing during COVID-19 Germany 2020",
+   "unit": "",
+   "description": "In 2020, 21 percent of German companies were of the opinion that influencer marketing decreased slightly in importance during the coronavirus (COVID-19) pandemic. 35 percent thought importance had increased strongly. The graph shows the results of a survey conducted among German companies, asking about their evaluation of the importance of influencer marketing during the pandemic.",
+   "note": "Germany; November 5, 2020 to January 31, 2021 ; 77 respondents; Company employees responsible for social media and influencer marketing",
+   "source": "BVDW",
+   "kind": "categorical",
+   "categories": [
+    "Decreased strongly",
+    "Decreased slightly",
+    "Increased slightly",
+    "Increased strongly"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.09,
+      0.21,
+      0.35,
+      0.35
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "How do you find the right influencer?",
+   "short": "Opinions in companies on finding the right influencer Germany 2020",
+   "unit": "",
+   "description": "In 2020, 51 percent of German companies considered their own selection process when searching for the right influencer. 12 percent used influencer platforms such as Reachbird.",
+   "note": "Germany; November 5, 2020 to January 31, 2021 ; 70 respondents; Company employees responsible for social media and influencer marketing",
+   "source": "BVDW Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Own selection",
+    "Influencer platforms (e.g. Reachbird)",
+    "Influencer search engines (e.g. InfluencerDB)",
+    "Own database",
+    "Other",
+    "Agency"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.51,
+      0.12,
+      0.12,
+      0.12,
+      0.07,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Have you previously involved influencers in product or campaign development?",
+   "short": "Companies involving influencers in product or campaign development Germany 2020",
+   "unit": "",
+   "description": "In 2020, 66 percent of German companies had involved influencers in developing and planning product campaigns. The graph shows the results of an online survey conducted among German companies during the end of 2020 - beginning of 2021.",
+   "note": "Germany; November 5, 2020 to January 31, 2021 ; 61 respondents; Company employees responsible for social media and influencer marketing",
+   "source": "BVDW",
+   "kind": "categorical",
+   "categories": [
+    "Yes, while developing certain products or product lines",
+    "Yes, in (creative) development and campaign planning",
+    "Yes, in both"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.66,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Does your company have employees responsible specifically for influencer marketing?",
+   "short": "Share of companies with influencer marketing departments Germany 2020",
+   "unit": "",
+   "description": "In 2020, 26 percent of German companies had a department working specifically on influencer marketing. The graph shows the results of an online survey conducted among German companies during the end of 2020 - beginning of 2021. The respondents were employees responsible for social media and influencer marketing.",
+   "note": "Germany; November 5, 2020 to January 31, 2021 ; 104 respondents; Company employees responsible for social media and influencer marketing",
+   "source": "BVDW",
+   "kind": "categorical",
+   "categories": [
+    "Yes, we have a department for it",
+    "Yes, there are employees responsible within a department",
+    "No",
+    "Not yet, but it is planned"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.26,
+      0.38,
+      0.32,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Leading 10 influencers on Instagram in Germany in January 2020, by number of followers (in millions)",
+   "short": "Leading 10 influencers on Instagram Germany 2020, by number of followers",
+   "unit": "millions",
+   "description": "In 2020, these were the three influencer Instagram accounts with the most followers in Germany: footballers Toni Kroos (toni.kr8s) and Mesut Özil (m10_official), then twin sisters Lisa and Lena Mantler (lisaandlena). Toni Kroos and Mesut Özil each had crossed the 20 million follower mark.",
+   "note": "Germany; January 3, 2020",
+   "source": "OnlineMarketing.de",
+   "kind": "categorical",
+   "categories": [
+    "toni.kr8sl",
+    "m10_official",
+    "lisaandlena",
+    "manuelneuer",
+    "bastianschweinsteiger",
+    "gotzemario",
+    "marcinho11",
+    "bibisbeautypalace",
+    "esmuellert",
+    "heidiklum"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      22.7,
+      21.6,
+      15.2,
+      10.1,
+      9.7,
+      8.6,
+      7.9,
+      7.2,
+      7.2,
+      7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Most followed food based influencers on Instagram in Germany in 2018, by number of followers (in 1,000s)*",
+   "short": "Leading food influencers on Instagram in Germany 2018",
+   "unit": "",
+   "description": "This statistic displays the leading food influencers on Instagram in Germany, in 2020. As of 2020, the account \"Nermin Yazılıtaş\" was by far the most followed German food influencer on Instagram, with roughly 2.9 million followers.",
+   "note": "Germany; 2020; *Figures have been rounded to the nearest thousand. Read more",
+   "source": "Likeometer",
+   "kind": "categorical",
+   "categories": [
+    "Nermin Yazılıtaş",
+    "Our Food Stories",
+    "Pamela Reif",
+    "Dritan Alsela",
+    "Bianca Zapatka | Vegan Food",
+    "Manuel",
+    "BakeClub",
+    "Roland Tretti"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2887,
+      1051,
+      848,
+      692,
+      671,
+      603,
+      328,
+      325
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Leading 10 YouTube channels in Germany as of August 2023, by number of subscribers (in millions)",
+   "short": "Leading 10 YouTube channels Germany 2023, by number of subscribers",
+   "unit": "millions",
+   "description": "YouTube is a video streaming platform, used by people across the world. Initially, a creative outlet where videos could be made on a variety of topics, it became increasingly popular, and video-making grew into a business. In Germany, the YouTube channel with the most subscribers was Kinder Spielzeug Kanal. The channel produces videos in which children are playing games.",
+   "note": "Germany; As of August 21, 2023",
+   "source": "HitchOn Number of subscribers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Kinder Spielzeug Kanal",
+    "Kurzgesagt – In a Nutshell",
+    "HaerteTest",
+    "Crazy Frog",
+    "Ice Cream Rolls",
+    "freekickerz",
+    "SurpriseJoe - Nursery Rhymes & Kids Songs",
+    "Ameer Bros",
+    "The Voice Kids",
+    "BibisBeautyPalace"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      22.4,
+      20.9,
+      19.8,
+      14.3,
+      12.3,
+      8.63,
+      8.48,
+      8.39,
+      7.58,
+      5.84
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Leading 10 gaming influencers on YouTube in Germany as of August 2023, by number of subscribers (in millions)",
+   "short": "Leading 10 gaming influencers on YouTube in Germany 2023, by number of subscribers",
+   "unit": "millions",
+   "description": "As of August 2023, Paluten had the most subscribers on YouTube out of all gaming influencers in Germany at 5.02 million. Other leading gaming influencers on the app included Gronkh and GermanLetsPlay. The graph shows the leading 10 gaming influencers on YouTube in Germany by their subscriber numbers.",
+   "note": "Germany; August 21, 2023",
+   "source": "HitchOn Number of subscribers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Paluten",
+    "Gronkh",
+    "GermanLetsPlay",
+    "rewinside",
+    "Standart Skill",
+    "iCrimax",
+    "SpontanaBlack",
+    "Arazhul",
+    "HandOfBlood",
+    "AviveHD"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.02,
+      4.94,
+      3.72,
+      3.35,
+      3.32,
+      3.3,
+      2.76,
+      2.63,
+      2.62,
+      2.54
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading 10 vegan influencers on YouTube in Germany as of August 2023, by number of subscribers (in 1,000)",
+   "short": "Leading 10 vegan influencers on YouTube Germany 2023, by number of subscribers",
+   "unit": "1,000",
+   "description": "As of June 2023, mirellativegal (translates as \"I pretty much do not care\" from German) had the most subscribers on YouTube among other vegan influencers in Germany at 652,000. Other popular vegan influencers on the online video website included Marie Johnson and JANAklar. The graph shows the leading 10 vegan influencers on YouTube in Germany by their subscriber numbers.",
+   "note": "Germany; August 22, 2023",
+   "source": "HitchOn Number of subscribers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "mirellativegal",
+    "Marie Johnson",
+    "JANAklar",
+    "Lisa Sophie Laurent",
+    "annalaurakumme",
+    "Kupferfuchs",
+    "Philipp",
+    "Ohlala & Solala - nachhaltig und gesund",
+    "Joannas Essentials",
+    "Jacko Wusch"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      652,
+      554,
+      476,
+      353,
+      273,
+      258,
+      230,
+      206,
+      200,
+      196
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Leading TikTok accounts in Germany in 2023, by number of followers (in millions)",
+   "short": "Leading TikTok accounts Germany 2023, by number of followers",
+   "unit": "millions",
+   "description": "In 2023, youneszarou had the most TikTok followers in Germany at 53.64 million. The ranking shows the most popular TikTok accounts in Germany in 2023 based on the number of followers.",
+   "note": "Austria, Germany, Switzerland; Creators with international content",
+   "source": "OMR Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "youneszarou",
+    "noelgoescrazy",
+    "condsty",
+    "nickaufmann",
+    "itskingchris",
+    "avemoves",
+    "thispronto",
+    "insecthaus_adi",
+    "joshuamonis",
+    "falcopunch",
+    "nilskue",
+    "noeminikita",
+    "lenamantler",
+    "mr.benz",
+    "macrofying"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      53.64,
+      36.26,
+      23.97,
+      19.51,
+      19.44,
+      18.27,
+      15.98,
+      15.62,
+      14.43,
+      13.92,
+      13.55,
+      13.47,
+      13.35,
+      13.06,
+      11.99
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Distribution of Instagram influencers worldwide in 2023, by category",
+   "short": "Share of Instagram influencers worldwide 2023, by category",
+   "unit": "",
+   "description": "According to the findings of a study examining the state of influencer marketing on Instagram, 8.35 percent of influencers on the platform were focused on the beauty topics, making it the third most popular category among global Instagram influencers in 2023. Lifestyle was the most popular category covered by Instagram influencers that year, with a share of 13.73 percent.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor Share of accounts",
+   "kind": "categorical",
+   "categories": [
+    "Lifestyle",
+    "Music",
+    "Beauty",
+    "Family",
+    "Photography",
+    "Art",
+    "Humor & Fun & Happiness",
+    "Fitness & Gym",
+    "Shows",
+    "Sports with a ball"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1373,
+      0.0987,
+      0.0835,
+      0.0646,
+      0.0641,
+      0.058,
+      0.0562,
+      0.0325,
+      0.0316,
+      0.028
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Leading brands on Instagram worldwide in July 2021, by number of mentions of German-speaking influencers (in 1,000s)",
+   "short": "Most mentioned brands on German-language Instagram worldwide 2021",
+   "unit": "1,000s",
+   "description": "With 2.7 thousand mentions, Zara was the brand most mentioned by German-speaking influencers on Instagram in July 2021. Ideal of Sweden and Nike followed, with 2.4 thousand and two thousand mentions, respectively.",
+   "note": "Worldwide; July 2021",
+   "source": "influData by weCreate Number of mentions in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Zara",
+    "Ideal of Sweden",
+    "Nike",
+    "NA-KD Fashion",
+    "Stronger",
+    "H&M",
+    "Shein Offiicial",
+    "Desenio",
+    "American Style",
+    "Shein Germany",
+    "iCrush Jewerly"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.7,
+      2.4,
+      2,
+      1.9,
+      1.4,
+      1.3,
+      1.2,
+      1.1,
+      1.1,
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Platforms with highest influencer marketing return on investment (ROI) according to professionals in Germany, the United Kingdom, and the United States as of August 2020",
+   "short": "Platforms with highest influencer marketing ROI worldwide 2020",
+   "unit": "",
+   "description": "During a survey carried out in 2020 among marketers from Germany, United Kingdom, and the United States, more than a fifth said that online advertising in general was the platform with highest influencer marketing return on investment (ROI). YouTube and Instagram ranked second, both with 18 percent.",
+   "note": "Germany, United Kingdom, United States; August 2020; 756 respondents",
+   "source": "Censuswide; Influencer Orchestration Network; SurveyMonkey; Takumi",
+   "kind": "categorical",
+   "categories": [
+    "Online advertising",
+    "Instagram",
+    "YouTube",
+    "TV advertising",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.21,
+      0.18,
+      0.18,
+      0.1,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Share of marketers from selected industries that increased spending on influencer marketing in Germany, the United Kingdom, and the United States as of August 2020",
+   "short": "Industries increasing spending on influencer marketing 2020",
+   "unit": "",
+   "description": "During a survey carried out in 2020 among marketers from Germany, United Kingdom and the United States, 79 percent of retail marketers said they had increased their spending on influencer marketing in 2020. Almost three-quarters of all surveyed professionals confirmed that they increased their budget for this type of marketing. Two-thirds of these respondents also said that influencer marketing had a better return on investment than traditional advertising campaigns.",
+   "note": "Germany, United Kingdom, United States; August 2020; 756 respondents",
+   "source": "Censuswide; LBBOnline; SurveyMonkey; Takumi",
+   "kind": "categorical",
+   "categories": [
+    "Retail",
+    "Legal",
+    "Manufacturing",
+    "Average"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.79,
+      0.79,
+      0.75,
+      0.73
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Share of marketers planning to use selected media for influencer marketing in Germany, the United Kingdom, and the United States in 2020",
+   "short": "Most popular media for influencer marketing worldwide 2021",
+   "unit": "",
+   "description": "During a 2020 survey carried out among marketers from Germany, United Kingdom and the United States, 58 percent of respondents said they were planning to use YouTube in their influencer marketing campaigns in 2021. TikTok was named by 35 percent of responding marketers, whereas the streaming platform Twitch by 20 percent.",
+   "note": "Germany, United Kingdom, United States; August 2020; 756 respondents",
+   "source": "Business of Apps; Censuswide; Takumi",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Instagram",
+    "Online ads",
+    "TikTok",
+    "TV ads",
+    "OOH ads",
+    "Twitch",
+    "Triller"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.55,
+      0.43,
+      0.35,
+      0.29,
+      0.2,
+      0.2,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Share of consumers from Germany, the United Kingdom, and the United States interacting with influencers on selected social media platforms as of August 2020",
+   "short": "Consumers interacting with influencers 2020, by platform",
+   "unit": "",
+   "description": "During a survey carried out in 2020 among consumers from Germany, United Kingdom and the United States, 47 percent of respondents said they interacted with influencers on YouTube. On Instagram, the share stood at 37 percent and on Twitch at 14 percent.",
+   "note": "Germany, United Kingdom, United States; August 2020; 3,010 respondents; 16 years and older",
+   "source": "Business of Apps; Censuswide; Takumi",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Instagram",
+    "Pinterest",
+    "Snapchat",
+    "Twitch",
+    "Triller"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.47,
+      0.37,
+      0.17,
+      0.15,
+      0.14,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Share of consumers engaging with influencers weekly on selected social media platforms in Germany, the United Kingdom, and the United States as of August 2020",
+   "short": "Influencer engagement rates worldwide 2020, by platform",
+   "unit": "",
+   "description": "During a 2020 survey carried out among consumers from Germany, United Kingdom and the United States, 95 percent of respondents said they engaged weekly with influencers on YouTube; the same share named TikTok.",
+   "note": "Germany, United Kingdom, United States; August 2020; 3,010 respondents; 16 years and older",
+   "source": "Business of Apps; Censuswide; SurveyMonkey; Takumi",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "YouTube",
+    "TikTok",
+    "Snapchat",
+    "Pinterest",
+    "Twitch",
+    "Triller"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.94,
+      0.95,
+      0.95,
+      0.92,
+      0.87,
+      0.83,
+      0.75
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1598 @@
+{
+ "studyId": "146587",
+ "study": "online fitness",
+ "file": "research/statista/study_id146587_online-fitness.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Besonders Interessierte",
+     "values": [
+      24.51,
+      24.75,
+      25.28,
+      25.4,
+      24.6
+     ]
+    },
+    {
+     "name": "Mäßig Interessierte",
+     "values": [
+      33.67,
+      33.37,
+      33.14,
+      32.85,
+      33.14
+     ]
+    },
+    {
+     "name": "Kaum oder gar nicht Interessierte",
+     "values": [
+      12.42,
+      12.51,
+      12.13,
+      12.35,
+      12.34
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Besonders Interessierte",
+     "values": [
+      21.28,
+      21.17,
+      20.71,
+      19.94,
+      18.83
+     ]
+    },
+    {
+     "name": "Mäßig Interessierte",
+     "values": [
+      26.7,
+      26.29,
+      25.96,
+      25.82,
+      25.63
+     ]
+    },
+    {
+     "name": "Kaum oder gar nicht Interessierte",
+     "values": [
+      22.62,
+      23.17,
+      23.87,
+      24.84,
+      25.62
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Im Garten arbeiten",
+    "Shopping, Einkaufen gehen",
+    "Fotografieren",
+    "Zum Essen ausgehen",
+    "Rätsel lösen",
+    "Computerspiele",
+    "Wandern",
+    "Besuch im Fitnessstudio",
+    "Einfache Reparaturarbeiten (z.B. Tapezieren, Malerarbeiten)",
+    "Jogging, Wald- oder Geländelauf",
+    "Gesellschaftsspiele wie Monopoly, Siedler von Catan usw.",
+    "Basteln, Werken, Töpfern, Emaillieren",
+    "Sauna, Dampfbad",
+    "Walking"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.273,
+      0.257,
+      0.208,
+      0.154,
+      0.133,
+      0.13,
+      0.112,
+      0.109,
+      0.105,
+      0.084,
+      0.081,
+      0.076,
+      0.073,
+      0.062
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.277,
+      0.248,
+      0.205,
+      0.147,
+      0.146,
+      0.139,
+      0.118,
+      0.109,
+      0.111,
+      0.09,
+      0.084,
+      0.076,
+      0.072,
+      0.065
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      0.27,
+      0.256,
+      0.207,
+      0.154,
+      0.151,
+      0.134,
+      0.107,
+      0.113,
+      0.112,
+      0.084,
+      0.081,
+      0.081,
+      0.074,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "10 (extrem fit/auf Leistungssportniveau)",
+    "9",
+    "8",
+    "7",
+    "6",
+    "5",
+    "4",
+    "3",
+    "2",
+    "1",
+    "0 (überhaupt nicht fit)"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.02,
+      0.02,
+      0.06,
+      0.13,
+      0.19,
+      0.19,
+      0.14,
+      0.1,
+      0.05,
+      0.05,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      5753,
+      5888,
+      7114,
+      7304,
+      7566,
+      7940,
+      8026,
+      8332,
+      8684,
+      8988,
+      9343,
+      9669,
+      9538,
+      9492,
+      9149,
+      9111
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      4.4,
+      4.7,
+      5.1,
+      5.2,
+      5.5,
+      6.1,
+      6.5,
+      7.3,
+      7.6,
+      7.9,
+      8.6,
+      9.1,
+      9.5,
+      10.1,
+      10.6,
+      11.1,
+      11.7,
+      10.3,
+      9.3,
+      10.3,
+      11.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      3.8,
+      4,
+      4.1,
+      4.6,
+      4.7,
+      4.8,
+      5.1,
+      5.2,
+      5.3,
+      5.5,
+      4.2,
+      2.2,
+      4.9,
+      5.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Clever fit",
+    "Bodystreet",
+    "Körperformen",
+    "Fit+",
+    "EASYFITNESS",
+    "McFIT",
+    "Mrs. Sporty",
+    "Physio Aktiv",
+    "Kieser Training",
+    "fitbox"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      436,
+      290,
+      262,
+      177,
+      170,
+      165,
+      149,
+      145,
+      117,
+      106
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Zu Hause und draußen",
+    "Ausschließlich zu Hause",
+    "Ausschließlich Fitnesseinrichtungen (Fitness-/EMS-Studios; Yoga-Studios etc.)",
+    "Ausschließlich draußen",
+    "Fitnesseinrichtungen, zu Hause und draußen",
+    "Fitnesseinrichtungen und zu Hause",
+    "Fitnesseinrichtungen und draußen",
+    "Andere Einrichtungen"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.25,
+      0.22,
+      0.18,
+      0.13,
+      0.09,
+      0.07,
+      0.03,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Aktivitätsverlauf (z.B. Tracken von Trainingseinheiten)",
+    "Digitale Mitgliederverwaltung",
+    "Indikator der Live-Auslastung",
+    "Kursbuchung im Voraus",
+    "Ernährungsberatung",
+    "Digitale Kurse On-Demand"
+   ],
+   "series": [
+    {
+     "name": "Wunsch",
+     "values": [
+      0.54,
+      0.52,
+      0.5,
+      0.48,
+      0.39,
+      0.37
+     ]
+    },
+    {
+     "name": "Aktuelle Nutzung",
+     "values": [
+      0.28,
+      0.27,
+      0.19,
+      0.32,
+      0.19,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Fitnesstudio-Mitgliedschaft",
+    "Online-Dienste (Webseite oder App)",
+    "Wellness-Behandlung (z. B. Massage)",
+    "Mitgliedschaft im Sportverein",
+    "Sport-Einzelkurs/Einzelstunde",
+    "Personal Trainer",
+    "Ich habe kein Geld für Fitness- oder Gesundheitsdienstleistungen ausgegeben",
+    "Sonstiges"
+   ],
+   "series": [
+    {
+     "name": "Daten",
+     "values": [
+      0.13,
+      0.08,
+      0.08,
+      0.07,
+      0.05,
+      0.04,
+      0.77,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, Yoga und Training",
+    "Gewichtsabnahme / gesunde Ernährung",
+    "Gesundheits-Tracking",
+    "Meditations-, Achtsamkeits-, Schlaf-Apps",
+    "Verhütungs- oder Fruchtbarkeits-Tracking",
+    "Medikamenten-Checker/-Reminder",
+    "Ich habe für keine Online-Fitness- und Gesundheitsdienstleistungen Geld ausgegeben",
+    "Sonstiges"
+   ],
+   "series": [
+    {
+     "name": "Daten",
+     "values": [
+      0.05,
+      0.05,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.92,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Instant-Messaging-Dienste",
+    "Office-Programme",
+    "On-Demand- oder Streaming-Dienste",
+    "Online Bezahlen",
+    "Videokonferenzen",
+    "Online-Shopping",
+    "Gesundheits- / Fitnessanwendungen",
+    "Digitale Lernangebote",
+    "Podcasts oder Hörbücher",
+    "In Suchmaschinen suchen",
+    "Computerspiele/Spiele-Apps",
+    "Banking-App",
+    "Dienstleistungen online bestellen/buchen"
+   ],
+   "series": [
+    {
+     "name": "Ein oder mehrmals pro Woche",
+     "values": [
+      0.75,
+      0.26,
+      0.33,
+      0.22,
+      0.14,
+      0.15,
+      0.19,
+      0.05,
+      0.08,
+      0.65,
+      0.26,
+      0.29,
+      0.08
+     ]
+    },
+    {
+     "name": "Ein oder mehrmals pro Monat",
+     "values": [
+      0.06,
+      0.2,
+      0.15,
+      0.35,
+      0.15,
+      0.42,
+      0.09,
+      0.11,
+      0.11,
+      0.18,
+      0.11,
+      0.25,
+      0.24
+     ]
+    },
+    {
+     "name": "Ein oder mehrmals pro Halbjahr",
+     "values": [
+      0.01,
+      0.11,
+      0.04,
+      0.12,
+      0.1,
+      0.21,
+      0.04,
+      0.11,
+      0.06,
+      0.04,
+      0.04,
+      0.03,
+      0.21
+     ]
+    },
+    {
+     "name": "Seltener",
+     "values": [
+      0.02,
+      0.19,
+      0.07,
+      0.08,
+      0.17,
+      0.08,
+      0.13,
+      0.22,
+      0.14,
+      0.03,
+      0.13,
+      0.05,
+      0.2
+     ]
+    },
+    {
+     "name": "Nie / Keine Angabe",
+     "values": [
+      0.16,
+      0.25,
+      0.41,
+      0.23,
+      0.44,
+      0.14,
+      0.55,
+      0.52,
+      0.6,
+      0.1,
+      0.46,
+      0.38,
+      0.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Zeitunabhängig / Teilnahme, wann ich will",
+    "Weniger zeitaufwendig, da z.B. An- und Abfahrt entfällt",
+    "Ortsunabhängig / kann ich machen, wo ich will",
+    "Keiner schaut mir zu / bin unbeobachtet",
+    "Kein Ansteckungsrisiko durch Treffen mit anderen Personen",
+    "Kostengünstiger als Fitnessstudio oder Sportverein",
+    "Unterbrechungen / Aussteigen unkompliziert möglich",
+    "Kann ich besser im Alltag (Familie, Arbeit, andere Hobbys und Termine etc.) integrieren",
+    "Kann den inneren Schweinehund leichter überwinden, weil ich nicht noch vor die Tür muss.",
+    "Ich sehe / sähe keine Vorteile"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.58,
+      0.49,
+      0.46,
+      0.43,
+      0.42,
+      0.41,
+      0.37,
+      0.36,
+      0.24,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Ich will auch mal raus / vor die Tür / in anderer Umgebung sein",
+    "Fehlende Motivation ohne Termindruck oder 'Gruppenzwang'",
+    "Zu wenig Platz zu Hause",
+    "Fehlende Ansprechpartner:in bei Fragen",
+    "Angst vor Verletzungen / Verspannungen durch falsche Bewegung(sabläufe)",
+    "Sorge, nicht mitzukommen, z.B. Übungen nicht schnell genug zu verstehen oder in der vorgesehenen Zeit zu absolvieren",
+    "Doppelte Kosten für Online-Kurse und Sportverein bzw. Fiitnessstudio",
+    "Fehlende Anerkennung / Motivation durch Trainer:in oder andere Teilnehmende",
+    "Kein ungestörter Sport zu Hause möglich",
+    "Sonstiges",
+    "Ich sehe / sähe keine Nachteile"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.3,
+      0.29,
+      0.27,
+      0.27,
+      0.18,
+      0.17,
+      0.14,
+      0.13,
+      0.13,
+      0.01,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Pilates / Rückengymnastik",
+    "Workouts für einzelne Körperbereiche, z.B. Bauch-Beine-Po",
+    "Kurse zum Abnehmen / Fatburner",
+    "Yoga / Mobilitätstraining",
+    "Spezielles Herz- / Kreislauftraining (z.B. HIIT)",
+    "Hantel-Krafttraining",
+    "Tanzen / Tanztraining",
+    "Laufen outdoor",
+    "Laufen indoor (z.B. Laufband)",
+    "Thai-Chi",
+    "Outdoor Biking / Fahrradtraining im Freien",
+    "Indoor Cycling (z.B. Ergometer, Indoor Cycling Bike, Rollentrainer)",
+    "Boxtraining",
+    "Indoor Rudern am Rudergerät",
+    "Vorbereitungskurse für Skifahren / Ski-Gymnastik"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.38,
+      0.37,
+      0.32,
+      0.29,
+      0.28,
+      0.21,
+      0.21,
+      0.2,
+      0.15,
+      0.15,
+      0.15,
+      0.12,
+      0.11,
+      0.08,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Detaillierte, ausführliche Erläuterung der einzelnen Übungen",
+    "Hinweis auf Übungen, die bei Beschwerden nicht gemacht werden sollten, und Angebot einer Ersatzübung",
+    "Kostenfreies Angebot",
+    "Werbefreiheit",
+    "Nachgewiesene Qualifikation der Trainerin / des Trainers",
+    "Qualifizierter Anbieter",
+    "Hinweise zur Erfolgskontrolle",
+    "Regelmäßiges Angebot",
+    "Unterschiedliche Kameraeinstellungen",
+    "Punkte beim Bonusprogramm meiner Krankenkasse",
+    "In jeder Trainingseinheit der/die gleiche*r Trainer*in",
+    "Ergänzendes Material zum Download",
+    "Bekannte*r Trainer*in"
+   ],
+   "series": [
+    {
+     "name": "Ausschlaggebend",
+     "values": [
+      0.2,
+      0.19,
+      0.24,
+      0.14,
+      0.12,
+      0.1,
+      0.06,
+      0.06,
+      0.05,
+      0.07,
+      0.05,
+      0.03,
+      0.03
+     ]
+    },
+    {
+     "name": "Sehr wichtig",
+     "values": [
+      0.44,
+      0.42,
+      0.35,
+      0.33,
+      0.34,
+      0.33,
+      0.31,
+      0.29,
+      0.25,
+      0.22,
+      0.21,
+      0.2,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Gymondo",
+    "Adidas Running",
+    "MyFitnessPal",
+    "Clue",
+    "Freeletics",
+    "Flo Period & Ovulation Tracker",
+    "8fit",
+    "Calm",
+    "Lifesum",
+    "Yazio",
+    "7 mind meditation",
+    "Headspace",
+    "Strava",
+    "WW (Weight Watchers)",
+    "Sweat: Kayla Itsines Fitness"
+   ],
+   "series": [
+    {
+     "name": "Daten",
+     "values": [
+      0.3,
+      0.28,
+      0.25,
+      0.15,
+      0.14,
+      0.13,
+      0.11,
+      0.11,
+      0.11,
+      0.11,
+      0.1,
+      0.08,
+      0.08,
+      0.08,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Gymnastik-/ Yogamatte",
+    "Hanteln",
+    "Fitnessband",
+    "Fahrrad-Ergometer / Indoor Cycling Bike / Rollentrainer",
+    "Hula Hoop Reifen",
+    "Crosstrainer",
+    "Hantelbank / Curlbank",
+    "Laufband",
+    "Rudergerät / Ruder-Ergometer",
+    "Nichts davon"
+   ],
+   "series": [
+    {
+     "name": "Unverändert seit vor der Pandemie vorhanden",
+     "values": [
+      0.43,
+      0.37,
+      0.28,
+      0.26,
+      0.15,
+      0.13,
+      0.11,
+      0.09,
+      0.06,
+      0.2
+     ]
+    },
+    {
+     "name": "Während der Pandemie angeschafft",
+     "values": [
+      0.14,
+      0.1,
+      0.1,
+      0.08,
+      0.13,
+      0.06,
+      0.06,
+      0.06,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      41.37,
+      46.87,
+      55.9,
+      75.77,
+      92.34,
+      106.15,
+      117.65,
+      127.24,
+      135.22,
+      141.88,
+      147.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      32.53,
+      47.93,
+      67.83,
+      100.95,
+      137.51,
+      137.17,
+      155.29,
+      179.26,
+      202.35,
+      224.37,
+      245.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Komoot: Radtouren & Wanderwege",
+    "YAZIO: KalorienzÃ¤hler & Fasten",
+    "Strava: Laufen & Radfahren",
+    "WW / WeightWatchers",
+    "Flo Perioden-& Zyklus-Kalender",
+    "Headspace: Meditation & Schlaf",
+    "Calm: Meditation und Schlaf",
+    "Freeletics: Fitness Workouts",
+    "MyFitnessPal: KalorienzÃ¤hler",
+    "Fitbit"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      192.34,
+      139.42,
+      105.89,
+      84.44,
+      83.02,
+      71.06,
+      68.85,
+      62.81,
+      53.55,
+      47.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Gehirnjogging mit Impulse",
+    "Komoot: Radtouren & Wanderwege",
+    "Corona-Warn-App",
+    "TK-App",
+    "YAZIO: Kalorienzähler & Fasten",
+    "CovPass",
+    "Meine AOK",
+    "Sweatcoin: Schritte Zählen",
+    "StepsApp Schrittzähler",
+    "Flo Perioden-& Zyklus-Kalender"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      40.62,
+      38.36,
+      37.5,
+      30.22,
+      29.63,
+      29.17,
+      26.94,
+      26.51,
+      26.23,
+      24.82
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Komoot: Bike Trails & Routes",
+    "YAZIO Fasting & Food Tracker",
+    "Fitbit",
+    "Strava: Run, Ride, Hike",
+    "Freeletics: Fitness Workouts",
+    "Flo Ovulation & Period Tracker",
+    "Geocaching",
+    "WeightWatchers",
+    "Headspace: Mindful Meditation",
+    "Lifesum: Healthy Eating & Diet"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      214.15,
+      151.09,
+      94.52,
+      60.58,
+      38.5,
+      38.31,
+      38.27,
+      37.49,
+      30.79,
+      25.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Pamela Reif",
+    "Mady Morrison",
+    "Sascha Huber",
+    "albertoson",
+    "SophiaThiel",
+    "Michael Smolik",
+    "Tim Gabel",
+    "BodyKiss",
+    "Kevin Wolter",
+    "Coach Stef"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      9690,
+      3150,
+      1670,
+      1330,
+      994,
+      814,
+      712,
+      661,
+      646,
+      487
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Lisa del Piero",
+    "FitnessOskar",
+    "Mady Morrison",
+    "MarkusRuehl",
+    "Pamela Reif",
+    "Rafael McStan",
+    "StrongandFlexTV",
+    "albertoson",
+    "Sascha Huber",
+    "JohannesLuckas"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      937.37,
+      842.58,
+      723.13,
+      682.64,
+      672.55,
+      610.02,
+      362.62,
+      173.05,
+      146.57,
+      119.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Cody Rigsby",
+    "Robin Arzón",
+    "Ally Love",
+    "Kendall Toole",
+    "Emma Lovewell"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      971,
+      871,
+      790,
+      565,
+      513
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "GenZ (16-26 Jahre)",
+    "GenY (27-39 Jahre)",
+    "GenX (40-45 Jahre)",
+    "GenBB (56-70 Jahre)"
+   ],
+   "series": [
+    {
+     "name": "Ich mache coronaunabhängig keinen Sport",
+     "values": [
+      0.06,
+      0.12,
+      0.08,
+      0.23
+     ]
+    },
+    {
+     "name": "Ich mache zurzeit keinen Sport",
+     "values": [
+      0.18,
+      0.31,
+      0.26,
+      0.25
+     ]
+    },
+    {
+     "name": "Mit einem Sportpartner",
+     "values": [
+      0.16,
+      0.14,
+      0.08,
+      0.16
+     ]
+    },
+    {
+     "name": "Online-Kurse",
+     "values": [
+      0.2,
+      0.09,
+      0.06,
+      0.04
+     ]
+    },
+    {
+     "name": "Sport alleine",
+     "values": [
+      0.37,
+      0.31,
+      0.48,
+      0.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "GenZ (16-26 Jahre)",
+    "GenY (27-39 Jahre)",
+    "GenX (40-45 Jahre)",
+    "GenBB (56-70 Jahre)"
+   ],
+   "series": [
+    {
+     "name": "Daten",
+     "values": [
+      0.2,
+      0.09,
+      0.06,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "GenZ (16-26 Jahre)",
+    "GenY (27-39 Jahre)",
+    "GenX (40-45 Jahre)",
+    "GenBB (56-70 Jahre)"
+   ],
+   "series": [
+    {
+     "name": "Frauen",
+     "values": [
+      0.36,
+      0.28,
+      0.24,
+      0.22
+     ]
+    },
+    {
+     "name": "Männer",
+     "values": [
+      0.68,
+      0.53,
+      0.49,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "categorical",
+   "categories": [
+    "Muskelaufbau-Kurs",
+    "Konditionstraining",
+    "Yoga-Kurs",
+    "Pilates-Kurs",
+    "Zumba-Kurs",
+    "Sonstiges",
+    "Gar keinen",
+    "Weiss nicht/Keine Angabe"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.074,
+      0.066,
+      0.063,
+      0.031,
+      0.025,
+      0.03,
+      0.756,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "Q1 2019",
+    "Q2 2019",
+    "Q3 2019",
+    "Q4 2019",
+    "Q1 2020",
+    "Q2 2020",
+    "Q3 2020",
+    "Q4 2020",
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023",
+    "Q1 2024",
+    "Q2 2024"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      277,
+      362,
+      457,
+      511,
+      563,
+      712,
+      886,
+      1091,
+      1334,
+      1667,
+      2081,
+      2331,
+      2492,
+      2767,
+      2962,
+      2966,
+      2973,
+      3033,
+      3107,
+      3078,
+      2964,
+      3004
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "Q1 2019",
+    "Q2 2019",
+    "Q3 2019",
+    "Q4 2019",
+    "Q1 2020",
+    "Q2 2020",
+    "Q3 2020",
+    "Q4 2020",
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      7.1,
+      9.4,
+      18,
+      17.8,
+      19.2,
+      24.4,
+      44.2,
+      76.8,
+      77.8,
+      98.1,
+      149.5,
+      134.3,
+      120.5,
+      123.2,
+      164.6,
+      131.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "",
+   "short": "",
+   "unit": "",
+   "description": "",
+   "note": "",
+   "source": "",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      8.4,
+      11.5,
+      17.9,
+      22,
+      16.4
+     ]
+    }
+   ]
+  }
+ ]
+}

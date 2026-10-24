@@ -1,0 +1,719 @@
+{
+ "studyId": "66861",
+ "study": "sports in vietnam",
+ "file": "research/statista/study_id66861_sports-in-vietnam.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "GDP contribution of the arts, entertainment and recreation sector in Vietnam from 2015 to 2022",
+   "short": "GDP contribution of arts, entertainment and recreation in Vietnam 2015-2022",
+   "unit": "",
+   "description": "In 2022, Vietnam's arts, entertainment and recreation sector accounted for 0.59 percent of the country's total GDP, equivalent to around 56 trillion Vietnamese dong. In that year, Vietnam's total GDP amounted to approximately 9.5 thousand trillion Vietnamese dong.",
+   "note": "Vietnam; 2015 to 2022; figures at current prices; * Preliminary figures. Read more",
+   "source": "General Statistics Office of Vietnam",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0068,
+      0.0068,
+      0.0068,
+      0.0064,
+      0.0056,
+      0.0059
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "GDP value of the arts, entertainment and recreation sector in Vietnam from 2015 to 2022 (in trillion Vietnamese dong)",
+   "short": "GDP value of arts, entertainment and recreation sector in Vietnam 2015-2022",
+   "unit": "trillion Vietnamese dong",
+   "description": "In 2022, Vietnam's arts, entertainment, and recreation sector accounted for a GDP value of approximately 56.06 trillion Vietnamese dong, indicating an increase from the previous year. In the same year, Vietnam's GDP amounted to more than 9.5 quadrillion Vietnamese dong.",
+   "note": "Vietnam; 2015 to 2022; figures at current prices; * Preliminary figures.  Figures have been rounded. The source does not provide data for 2016 and 2017. One thousand Vietnamese dong equals 0.042 U.S. dollars and 0.038 euros as of July [...] Read more",
+   "source": "General Statistics Office of Vietnam",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      35.06,
+      47.36,
+      52.1,
+      51.4,
+      47.74,
+      56.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Frequency of exercising sports among Vietnamese in 2020",
+   "short": "Frequency of exercising sports in Vietnam 2020",
+   "unit": "",
+   "description": "According to a survey on health behaviors, 44 percent of Vietnamese respondents stated that they exercised a lot, very often, moderately, or fairly often. In the same survey, 89 percent of respondents considered themselves very healthy or healthy.",
+   "note": "Vietnam; October to December 2020; 600 respondents; 18 years and older; covering two provinces",
+   "source": "Indochina Research; SSRS; WIN",
+   "kind": "categorical",
+   "categories": [
+    "A lot/very often/moderately/fairly often",
+    "Very little/occasionally/never"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.44,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Monthly spending on exercises among people in Vietnam as of May 2021",
+   "short": "Monthly expenditure on exercises among people Vietnam 2021",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, around 32 percent of the respondents reported to spend less than 300,000 Vietnamese dong per month on exercising. Meanwhile, six percent of them spent over 700,000 Vietnamese dong monthly on exercises.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Free",
+    "Below 300,000 VND",
+    "301,000 - 500,000 VND",
+    "501,000 - 700,000 VND",
+    "Above 700,000 VND"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.32,
+      0.26,
+      0.07,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Most popular exercises among people in Vietnam as of May 2021, by type",
+   "short": "Most popular exercises in Vietnam 2021, by type",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, fitness was the leading kind of exercise among Vietnamese respondents, as stated by 83 percent of them. Meanwhile, 11 percent of them reported doing martial arts as an exercise.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness",
+    "Sports",
+    "Martial art"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.83,
+      0.37,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Most popular fitness exercises among people in Vietnam as of May 2021, by type",
+   "short": "Most popular fitness exercises in Vietnam 2021, by type",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021, walking was the leading kind of fitness exercise among Vietnamese respondents, as stated by 66 percent of them. Meanwhile, 28 percent of them reported doing workout as a fitness exercise.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Walking",
+    "Running",
+    "Cycling",
+    "Gym",
+    "Workout"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.66,
+      0.61,
+      0.38,
+      0.33,
+      0.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Most popular sports among people in Vietnam as of May 2021, by type",
+   "short": "Most popular sports in Vietnam 2021, by type",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, football was the leading kind of sport exercise among Vietnamese respondents, as stated by 56 percent of them. Meanwhile, 28 percent of them reported doing athletics as a sport exercise.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Football",
+    "Badminton",
+    "Volleyball",
+    "Swimming",
+    "Athletics"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.56,
+      0.53,
+      0.37,
+      0.34,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Most popular martial art exercises among people in Vietnam as of May 2021, by type",
+   "short": "Most popular martial arts in Vietnam 2021, by type",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, taekwondo and karate were the leading kind of martial arts among Vietnamese respondents, as stated by 33 percent of them. Meanwhile, 21 percent of them reported doing Muay Thai.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Taekwondo",
+    "Karate",
+    "Boxing",
+    "Vovinam",
+    "Muay Thai"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.33,
+      0.33,
+      0.25,
+      0.24,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Main objectives of doing exercise among people in Vietnam as of May 2021",
+   "short": "Main objectives of exercising among people Vietnam 2021",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, bones strengthening was the leading objective of doing exercises among Vietnamese respondents, as stated by 48 percent of them. Meanwhile, 23 percent of them reported exercising to improve memory.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strengthen bones",
+    "Reduce stress",
+    "Help to manage weight loss",
+    "Improve sleep patterns",
+    "Boost productivity",
+    "Reduce the risk of illnesses",
+    "Improve eating habits",
+    "Boost my mood",
+    "Improve self esteem",
+    "Personal interest",
+    "Increase lifespan",
+    "Improve skin tone",
+    "Improve memory",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.43,
+      0.4,
+      0.4,
+      0.4,
+      0.39,
+      0.39,
+      0.36,
+      0.34,
+      0.27,
+      0.27,
+      0.27,
+      0.23,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Most popular fitness locations among people in Vietnam as of May 2021",
+   "short": "Most popular places to do fitness among people Vietnam 2021",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, around 46 percent of the respondents reported that they exercised at public locations such as parks. Meanwhile, three percent of them did fitness at specialized schools or classes.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Public places (e.g. park)",
+    "Local gym",
+    "Cultural center/community center/sport center",
+    "Gym chain",
+    "Specialized school/class",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.46,
+      0.33,
+      0.07,
+      0.06,
+      0.03,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Leading fitness gym brands in Vietnam as of March 2023, by number of studios",
+   "short": "Leading fitness gym brands Vietnam 2023, by number of studios",
+   "unit": "",
+   "description": "According to a report by Q&Me, as of March 2023, California Fitness and Yoga was the leading fitness studio chain in Vietnam with 37 studios, followed by Curves with 28 studios, and Elite Fitness with 14 stores. Founded in 2007 by an American entrepreneur, California Fitness and Yoga has become the first and largest international fitness company in Vietnam.",
+   "note": "Vietnam; as of March 2023",
+   "source": "Q&Me Number of stores",
+   "kind": "categorical",
+   "categories": [
+    "California Fitness",
+    "Curves",
+    "Elite Fitness",
+    "City Gym",
+    "Fit24 (Fit for life)",
+    "Olympia Hadong",
+    "MMA Gym",
+    "Body fit",
+    "Gym Newlife"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      37,
+      28,
+      14,
+      9,
+      6,
+      5,
+      5,
+      4,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of fitness chain outlets in Vietnam as of March 2023, by city",
+   "short": "Number of fitness chain outlets Vietnam 2023, by city",
+   "unit": "",
+   "description": "According to a report released by Q&Me, as of March 2023, Ho Chi Minh had the highest number of fitness gyms in Vietnam with 55 centers. Meanwhile, there were around 13 gyms in other cities besides Ha Noi and Ho Chi Minh City that year.",
+   "note": "Vietnam; as of March 2023",
+   "source": "Q&Me",
+   "kind": "categorical",
+   "categories": [
+    "Ho Chi Minh City",
+    "Ha Noi",
+    "Others",
+    "Total"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      55,
+      42,
+      13,
+      110
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Frequency of watching sports or fitness videos online among people in Vietnam as of May 2021",
+   "short": "Frequency of watching sports or fitness videos online among Vietnamese 2021",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, around 45 percent of the respondents stated that they watched online sports and fitness videos often. Meanwhile, around two percent of them never watched these videos.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I often watch it",
+    "I sometimes watch it",
+    "I rarely watch it",
+    "I never wath it"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.45,
+      0.45,
+      0.08,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Most popular platforms to watch online sport and fitness videos among people in Vietnam as of May 2021",
+   "short": "Most popular platforms to watch online sport and fitness videos Vietnam 2021",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, around 78 percent of the respondents stated that they watched online sport and fitness videos using YouTube. Meanwhile, around 18 percent of them watched these video on specialized websites for courses and lessons.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Facebook",
+    "Health ad fitness TV programs",
+    "Health and fitness mobile apps",
+    "Online news/magazines",
+    "Specialized websites for courses and lessons"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.78,
+      0.4,
+      0.29,
+      0.28,
+      0.23,
+      0.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Most popular sport and fitness content online among people in Vietnam as of May 2021",
+   "short": "Most popular online sport and fitness content Vietnam 2021",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, around 57 percent of the respondents stated that they watched everyday workout lessons, making these lessons the most popular online sport and fitness content. Meanwhile, around 20 percent of them watched reviews of sport products online.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Everyday workout lessons",
+    "Coaching for a specific part of body",
+    "Healthy diet",
+    "Workout tips",
+    "Food nutrition",
+    "Tips to improve mental health",
+    "Manage weight loss",
+    "Eat clean",
+    "Lifestyle",
+    "Reviews of sport products"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.57,
+      0.44,
+      0.44,
+      0.38,
+      0.36,
+      0.33,
+      0.32,
+      0.3,
+      0.25,
+      0.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Ownership of wearable tech in Vietnam in 2022",
+   "short": "Ownership of wearable tech in Vietnam 2022",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight, around a third of the respondents stated that they owned a smartwatch while 45 percent of them did not own a smartwatch or wearable fitness or activity tracker. In terms of motivation, the majority of respondents claimed that they were concerned about their health and would like to monitor and improve it by using wearable tech.",
+   "note": "Vietnam; September 8 to 30, 2022; 3,342 respondents; 16 years and older; among female and male respondents",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes, a smartwatch",
+    "Yes, a fitness/activity tracker",
+    "Yes, both a smartwatch and a fitness/activity tracker",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.33,
+      0.13,
+      0.08,
+      0.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Main motivations to purchase wearable tech in Vietnam in 2019",
+   "short": "Motivations to purchase wearable tech in Vietnam 2019",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight, the majority of respondents claimed that they were concerned about their health and would like to monitor and improve it by using wearable tech. In the same survey, less than half of the respondents stated that they owned a smart wearable.",
+   "note": "Vietnam; August 2 to 30, 2019; 1,449 respondents; 16 years and older; among female and male respondents that own wearable tech",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I am concerned about my health and want to monitor and improve it (such as sleep quality, measuring heart rate, number of steps taken a day, etc)",
+    "I am into fitness and want to keep track of and optimize my training and performance",
+    "I wanted easier accessibility to smartphone functions without having to constantly have my smartphone in my hand",
+    "I already own other smart devices from the same brand (such as smartphones, televisions, etc) and want to stay connected with my other devices easier",
+    "The price is reasonable for the functions that it can do",
+    "I like to keep up with the latest tech trends and products",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.46,
+      0.39,
+      0.36,
+      0.31,
+      0.24,
+      0.22,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Frequency of using wearable tech in Vietnam in 2019",
+   "short": "Frequency of using wearable tech in Vietnam 2019",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight, 65 percent of the respondents claimed that they used their smartwatch or fitness tracker every day. In the same survey, less than half of the respondents stated that they owned a smart wearable.",
+   "note": "Vietnam; August 2 to 30, 2019; 1,449 respondents; 16 years and older; among female and male respondents that own wearable tech",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Every day",
+    "Several times a week",
+    "Once a week",
+    "Several times a month",
+    "I rarely use my smartwatch and/or fitness activity tracker",
+    "Once a month",
+    "I have stopped using my smartwatch and/or fitness/activity tracker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.22,
+      0.06,
+      0.03,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Most common uses for wearable tech in Vietnam in 2019",
+   "short": "Most common uses for wearable tech in Vietnam 2019",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight, 56 percent of respondents claimed that they were monitoring their fitness activities. In the same survey, less than half of the respondents stated that they owned a smart wearable.",
+   "note": "Vietnam; August 2 to 30, 2019; 1,449 respondents; 16 years and older; among female and male respondents that own wearable tech",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Monitor my fitness activities",
+    "Monitor my sleep cycle and set an alarm accordingly",
+    "Play music",
+    "Make calls",
+    "Receive and reply to short text messages",
+    "Control and manage other connected devices",
+    "Go on social media",
+    "Look up and follow directions on a map app",
+    "Read and/or reply work e-mails",
+    "Read the news",
+    "Make online payments",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.56,
+      0.4,
+      0.32,
+      0.31,
+      0.28,
+      0.27,
+      0.21,
+      0.18,
+      0.18,
+      0.14,
+      0.12,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Leading non-exercise actions to improve physical conditions among people in Vietnam as of May 2021",
+   "short": "Most popular actions to improve health Vietnam 2021",
+   "unit": "",
+   "description": "According to a survey conducted by Q&Me in May 2021 in Vietnam, eating a healthy diet was the leading kind of actions to improve physical conditions among Vietnamese respondents, as stated by 60 percent of them. Meanwhile, 34 percent of them reported quitting smoking and drinking less to improve their health.",
+   "note": "Vietnam; May 2021; 1,406 respondents; 13-65 years; among respondents nationwide",
+   "source": "Q&Me Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Eat a healthy diet",
+    "Drink more water and fewer sugary drinks",
+    "Sleep early",
+    "Pay attention to food nutrition",
+    "Maintain a healthy weight",
+    "Take supplements and vitamins",
+    "Minimize stress",
+    "Quit smoking/ less heavy drinking"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6,
+      0.54,
+      0.51,
+      0.48,
+      0.46,
+      0.37,
+      0.35,
+      0.34
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Volume share of less sweetened liquid milk consumption among consumers in Vietnam from 2018 to 2020",
+   "short": "Volume share of less sweetened liquid milk consumption Vietnam 2018-2020",
+   "unit": "",
+   "description": "As of the third quarter of 2020, less sweetened liquid milk accounted for 12.5 percent of milk consumption volume among Vietnamese consumers. The share of less sweetened liquid milk volume had been growing steadily within the observed timeline.",
+   "note": "Vietnam; MAT Q3 2018 to MAT Q3 2020; among respondents in Ho Chi Minh City, Ha Noi, Da Nang and Can Tho",
+   "source": "Kantar Worldpanel",
+   "kind": "categorical",
+   "categories": [
+    "MAT Q3 2018",
+    "MAT Q3 2019",
+    "MAT Q3 2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.094,
+      0.097,
+      0.125
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Volume share of plain liquid milk consumption among consumers in Vietnam from 2018 to 2020",
+   "short": "Volume share of plain liquid milk consumption Vietnam 2018-2020",
+   "unit": "",
+   "description": "As of the third quarter of 2020, plain liquid milk accounted for 20.4 percent of milk consumption volume among Vietnamese consumers. The share of plain liquid milk volume had been growing steadily within the observed timeline as more consumers had been choosing no-sugar-added products.",
+   "note": "Vietnam; MAT Q3 2018 to MAT Q3 2020; among respondents in Ho Chi Minh City, Ha Noi, Da Nang and Can Tho",
+   "source": "Kantar Worldpanel",
+   "kind": "categorical",
+   "categories": [
+    "MAT Q3 2018",
+    "MAT Q3 2019",
+    "MAT Q3 2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.188,
+      0.197,
+      0.204
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Value share of plant based nutrition drinks in Vietnam as of 3rd quarter 2020, by type",
+   "short": "Value share of plant based drinks Vietnam Q3 2020, by type",
+   "unit": "",
+   "description": "As of the third quarter of 2020, soya-based products accounted for the majority of the value share of plant-based nutrition drinks in Vietnam, with a share of 83 percent. Meanwhile, rice-based products had a value share of six percent in the same period.",
+   "note": "Vietnam; MAT Q3 2020; among respondents in Ho Chi Minh City, Ha Noi, Da Nang and Can Tho",
+   "source": "Kantar Worldpanel",
+   "kind": "categorical",
+   "categories": [
+    "Soya base",
+    "Rice base",
+    "Other nuts base"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.83,
+      0.06,
+      0.11
+     ]
+    }
+   ]
+  }
+ ]
+}

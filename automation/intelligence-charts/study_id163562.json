@@ -1,0 +1,1015 @@
+{
+ "studyId": "163562",
+ "study": "food supplements in germany",
+ "file": "research/statista/study_id163562_food-supplements-in-germany.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Size of the worldwide market for dietary supplements from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Size of the worldwide market for dietary supplements 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The global dietary supplement market is forecast to reach a market value of 185.1 billion U.S. dollars in 2025. In 2021, it was estimated to be worth around 137 billion U.S. dollars. The market has been growing since 2018 and is expected to continue to grow till 2028.",
+   "note": "Worldwide; 2018 to 2028; *Year of data release Read more",
+   "source": "Adroit Market Research; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      112.3,
+      119.7,
+      128.3,
+      137,
+      146.8,
+      158,
+      170.3,
+      185.1,
+      201.1,
+      218.4,
+      239.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Import value of vitamins worldwide in 2023, by country (in million U.S. dollars)",
+   "short": "Import value of vitamins worldwide in 2023, by country",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, the United States was the leading worldwide importer of vitamin products in the world. The country imported vitamins worth 1.2 billion U.S. dollars. Three European countries followed the U.S. in import values of vitamins. Germany, the Netherlands, and Spain had a combined import value of about 1.6 billion U.S. dollars.",
+   "note": "Worldwide; 2023",
+   "source": "UN Comtrade",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Netherlands",
+    "Germany",
+    "Spain",
+    "Brazil",
+    "Canada",
+    "Japan",
+    "Italy",
+    "Belgium",
+    "China",
+    "Mexico"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1238,
+      799,
+      600,
+      243,
+      241,
+      234,
+      211,
+      204,
+      178,
+      165,
+      165
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Production volume of food supplements in Germany from 2019 to 2023 (in 1,000 tons)",
+   "short": "Production volume of food supplements Germany 2019-2023",
+   "unit": "1,000 tons",
+   "description": "In 2023, approximately 204,080 tons of food supplements were produced in Germany. This represents a slight decrease in production volume compared to the previous year.  Different vitamins and minerals were the most popular food supplements in Germany.",
+   "note": "Germany; 2019 to 2023",
+   "source": "Statistisches Bundesamt",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      162.33,
+      180.17,
+      202,
+      205.91,
+      204.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Number of companies producing food supplements in Germany from 2019 to 2023",
+   "short": "Number of companies producing food supplements Germany 2019-2023",
+   "unit": "",
+   "description": "Food supplements have become increasingly important in recent years. This can be recognized above all by the increasing production volume of this food sector. The number of companies in the production of food supplements has also risen across Germany, from 52 in 2019 to 67 in 2023",
+   "note": "Germany; 2019 to 2023",
+   "source": "Statistisches Bundesamt",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      52,
+      56,
+      59,
+      62,
+      67
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Revenue from food supplements¹ in Germany from 2018 bis 2023 (in billion euros²)",
+   "short": "Revenue from food supplements Germany 2018-2023",
+   "unit": "billion euros²",
+   "description": "In 2022, German pharmacies generated around 2.96 billion euros in revenue through food supplement sales. Figures increased annually during the timeline at hand.",
+   "note": "Germany; 2018 bis 2023",
+   "source": "IQVIA",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "MAT 01/2023³"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.3,
+      2.68,
+      2.83,
+      2.93,
+      2.96,
+      2.99
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Year-on-year revenue development for food supplements¹ in Germany from 2019 to 2023",
+   "short": "Year-on-year revenue development for food supplements Germany 2019-2023",
+   "unit": "",
+   "description": "In 2022, German pharmacies recorded a 1.3 percent growth in revenue from food supplement sales. This was a decrease compared to the previous year's 3.5 percent growth.",
+   "note": "Germany; 2019 to 2023",
+   "source": "IQVIA",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "MAT 01/2023³"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0775,
+      0.056,
+      0.035,
+      0.013,
+      0.023
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of warnings issued for food products in Germany in 2022 and 2023, by product category",
+   "short": "Number of warnings issued for food products Germany 2022-2023, by product category",
+   "unit": "",
+   "description": "In 2023, there were 38 official warnings issued for herbs and spices in Germany. This was more than a threefold increase compared to the year before. More warnings were also issued for milk and milk products.",
+   "note": "Germany; 2022 and 2023",
+   "source": "Bundesamt für Verbraucherschutz und Lebensmittelsicherheit Number of issued warnings",
+   "kind": "categorical",
+   "categories": [
+    "Herbs and spices",
+    "Meat¹",
+    "Milk and milk products",
+    "Nuts, snacks²",
+    "Fish and seafood⁴",
+    "Fruit and vegetables",
+    "Grain and baked goods",
+    "Convenience food",
+    "Chocolate, coffee, tea³",
+    "Food supplements",
+    "Non-alcoholic beverages",
+    "Sweets",
+    "Soups, broths, sauces",
+    "Ice cream and desserts"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      38,
+      27,
+      27,
+      20,
+      19,
+      18,
+      16,
+      12,
+      6,
+      6,
+      6,
+      6,
+      6,
+      3
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      12,
+      29,
+      20,
+      34,
+      8,
+      19,
+      34,
+      14,
+      12,
+      10,
+      7,
+      4,
+      5,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Revenue of Orthomol Holding GmbH in Germany from 2015 to 2022 (in million euros)",
+   "short": "Orthomol Holding GmbH revenue Germany 2015-2022",
+   "unit": "million euros",
+   "description": "In 2022, Orthomol's global turnover totaled 153.57 million euros. Compared to previous years, sales have increased. Orthomols's core business is products for nutritional supplements and dietary support. The company's brands include Orthomol and Orthomed.",
+   "note": "Germany; 2015 to 2022",
+   "source": "Orthomol",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      79.68,
+      85.8,
+      94.02,
+      100.38,
+      111.66,
+      129.15,
+      122.86,
+      153.57
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Peripheral product range in pharmacies in Germany in 2022, by revenue (in billion euros)",
+   "short": "Peripheral product range in pharmacies Germany 2022, by revenue",
+   "unit": "billion euros",
+   "description": "In 2022, German pharmacies generated around one billion euros in revenue through selling dermatological products. Total revenue from the peripheral product range sold in pharmacies that year amounted to around 5.38 billion euros.",
+   "note": "Europe, Germany; 2022",
+   "source": "ABDA Revenue in billion euros",
+   "kind": "categorical",
+   "categories": [
+    "Medical-technical aids and products",
+    "Dermatological¹ products (body care, cosmetics, sun protection)",
+    "Bandages and plaster",
+    "Vitamins and mineral nutrients¹",
+    "Diagnostics (e.g. blood sugar test strips)",
+    "Dietetics",
+    "Cough and cold medicine",
+    "Eye medicine¹",
+    "Other medicine",
+    "Gastrointestinal medicine¹"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.09,
+      1,
+      0.9,
+      0.74,
+      0.67,
+      0.29,
+      0.2,
+      0.19,
+      0.18,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Best-selling over the counter medicine in Germany in 2022, by type (in million euros)",
+   "short": "Best-selling over the counter medicine Germany 2022, by type",
+   "unit": "million euros",
+   "description": "Cold and flu medicine had the highest revenue out of all over-the-counter medications in German pharmacies in 2022. It made 897 million euros that year. The next two most popular categories were basic painkillers and cough medicine, with revenues of 655 million euros and 522 million euros respectively.",
+   "note": "Germany",
+   "source": "IQVIA Revenue in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Cold and flu medicine",
+    "Basic painkillers",
+    "Cough medicine",
+    "Muscle and joint pain medicine",
+    "Stomach and digestive medicine",
+    "Medicine for other respiratory infections",
+    "Mineral nutrients",
+    "Laxatives",
+    "Skin fungus medicine",
+    "Sedatives and sleeping pills"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      897,
+      655,
+      522,
+      480,
+      387,
+      335,
+      286,
+      263,
+      240,
+      234
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Best-selling over the counter medicine in Germany in 2022, by type (in million packaging units)",
+   "short": "Best-selling over the counter medicine Germany 2022, by type and units sold",
+   "unit": "million packaging units",
+   "description": "In 2022, cold and flu medicine sold 149 million packaging units, topping the list. Painkillers were next in demand, selling 130 million units.",
+   "note": "Germany",
+   "source": "IQVIA Sales in million packaging units",
+   "kind": "categorical",
+   "categories": [
+    "Cold and flu medicine",
+    "Painkillers",
+    "Cough medicine",
+    "Muscle and joint pain medicine",
+    "Stomach and digestive medicine",
+    "Allergy medicine",
+    "Medicine for other respiratory infections",
+    "Vascular occlusion medicine",
+    "Sore throat medicine",
+    "Wound treatment"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      149,
+      130,
+      58,
+      32,
+      24,
+      24,
+      23,
+      23,
+      22,
+      21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Best-selling over the counter medicine prescribed by a doctor in Germany in 2022, by type (in million euros)",
+   "short": "Best-selling over the counter medicine prescribed by a doctor Germany 2022, by type",
+   "unit": "million euros",
+   "description": "In 2022, mineral nutrients prescribed by a doctor were the top-selling over the counter medicine in Germany. Other leading medicine categories in this ranking included stomach and digestive medicine, as well as laxatives.",
+   "note": "Germany",
+   "source": "IQVIA Revenue in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Mineral nutrients",
+    "Stomach and digestive medicine",
+    "Laxatives",
+    "Cough medicine",
+    "Cold and flu medicine",
+    "Vitamins of the B group",
+    "Basic painkillers",
+    "Medicine for other respiratory infections",
+    "Allergy medicine",
+    "Skin fungus medicine"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      131,
+      114,
+      89,
+      77,
+      59,
+      57,
+      56,
+      52,
+      41,
+      41
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Best-selling over the counter medicine prescribed by a doctor in Germany in 2022, by type (in million packaging units)",
+   "short": "Over the counter prescribed medicine Germany 2022, by type and units sold",
+   "unit": "million packaging units",
+   "description": "In 2022, general painkillers prescribed by a doctor in Germany sold 14 million units in the over the counter category. Vascular occlusion medicine, as well as cold and flu treatments, each sold 11 million units.",
+   "note": "Germany; 2022",
+   "source": "IQVIA Sales in million packaging units",
+   "kind": "categorical",
+   "categories": [
+    "General painkillers",
+    "Vascular occlusion medicine",
+    "Cold and flu medicine",
+    "Cough medicine",
+    "Mineral nutrients",
+    "Allergy medicine",
+    "Stomach and digestive medicine",
+    "Laxatives",
+    "Other vitamins/ combinations",
+    "Medicine for other respiratory infections"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      14,
+      11,
+      11,
+      9,
+      7,
+      4,
+      4,
+      4,
+      4,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Sales of vitamins in Germany in 2019/2020 and 2021/2022, by type (in million packaging units)",
+   "short": "Sales volume of vitamins Germany 2019-2022, by type",
+   "unit": "million packaging units",
+   "description": "Vitamin C generated the highest sales by far in Germany in 2021/2022, with around 32.8 million packaging units sold. However, this was a decrease compared to the time span before. A drop in sales volume was recorded for more than half of the vitamin types shown in the ranking.",
+   "note": "Germany; 2019/20 and 2021/22; April to March of the following year",
+   "source": "Lebensmittelverband Deutschland Sales in million packaging units",
+   "kind": "categorical",
+   "categories": [
+    "Vitamin C",
+    "Multivitamins with minerals",
+    "Vitamin A/D, pure and both combined",
+    "Vitamin B12, pure",
+    "Multivitamins without minerals",
+    "Vitamin B complex"
+   ],
+   "series": [
+    {
+     "name": "2021/2022",
+     "values": [
+      32.8,
+      18.4,
+      12.4,
+      8.2,
+      7.9,
+      6.3
+     ]
+    },
+    {
+     "name": "2019/2020",
+     "values": [
+      34.8,
+      20,
+      9.3,
+      7.8,
+      9.2,
+      6.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Sales of mineral nutrients in Germany in 2019/2020 and 2021/2022, by type (in million packaging units)",
+   "short": "Sales volume of mineral nutrients Germany 2019-2022, by type",
+   "unit": "million packaging units",
+   "description": "Magnesium generated the highest sales by far in Germany in 2021/2022, with around 33.5 million packaging units sold. However, this was a decrease compared to the period before.",
+   "note": "Germany; 2019/20 and 2021/22; April to March of the following year",
+   "source": "Lebensmittelverband Deutschland Sales in million packaging units",
+   "kind": "categorical",
+   "categories": [
+    "Magnesium",
+    "Calcium",
+    "Zink",
+    "Acid-base regulating nutrients",
+    "Selenium",
+    "Other minerals"
+   ],
+   "series": [
+    {
+     "name": "2021/2022",
+     "values": [
+      33.5,
+      14.3,
+      3.6,
+      2.5,
+      2.1,
+      18.9
+     ]
+    },
+    {
+     "name": "2019/2020",
+     "values": [
+      37.1,
+      15.6,
+      3.9,
+      3.2,
+      2,
+      16.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Consumer price index for vitamin tablets or similar in Germany from 2020 bis 2023 (index year 2020 = 100)",
+   "short": "Consumer price index for vitamin tablets or similar Germany 2020-2023",
+   "unit": "index year 2020 = 100",
+   "description": "In 2023, the consumer price index for vitamin tablets was 113.1. This means that prices grew by around 13 percent compared to 2020. Annual increases were recorded during the timeline at hand.",
+   "note": "Germany; 2020 bis 2023",
+   "source": "Statistisches Bundesamt",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      100,
+      101.2,
+      106.4,
+      113.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Production value of vitamins in Germany from 2009 to 2023 (in billion euros)",
+   "short": "Production value of vitamins Germany 2009-2023",
+   "unit": "billion euros",
+   "description": "In 2023, German vitamin production was valued at around 4.7 billion euros. This was a significant increase compared to the year before, with figures also increasing annually during this specified timeline. In 2009, the vitamin production in Germany was valued at only 1.86 billion euros.",
+   "note": "Germany; 2009 to 2023",
+   "source": "Statistisches Bundesamt",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.86,
+      2.01,
+      2.08,
+      2.2,
+      2.26,
+      2.33,
+      2.55,
+      2.68,
+      3.06,
+      3.53,
+      3.53,
+      3.6,
+      3.61,
+      3.72,
+      4.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Number of vitamin production companies in Germany from 2009 to 2023",
+   "short": "Number of vitamin production companies Germany 2009-2023",
+   "unit": "",
+   "description": "In 2023, there were 47 companies in Germany producing vitamin supplements. Numbers decreased during the timeline shown. In 2009, the number of vitamin-producing companies was still at 60.",
+   "note": "Germany; 2009 to 2023",
+   "source": "Statistisches Bundesamt",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      60,
+      59,
+      55,
+      55,
+      60,
+      59,
+      56,
+      55,
+      52,
+      53,
+      52,
+      52,
+      51,
+      50,
+      47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Export and import volume of provitamins and vitamins in Germany from 2008 to 2023 (in tons)",
+   "short": "Export and import volume of provitamins and vitamins Germany 2008-2023",
+   "unit": "tons",
+   "description": "In 2023, Germany exported around 72,000 tons of provitamins and vitamins. Around 59,940 tons of both were imported.",
+   "note": "Germany; 2008 to 2023; * Preliminary. To access this statistic, click the web link and type the code \"51000-005\" into the search bar. Figures (\"Provitamins, vitamins\") are filed under the label WA2936. Read more",
+   "source": "Statistisches Bundesamt",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "Export volume",
+     "values": [
+      59049.4,
+      59539.1,
+      70106,
+      69859.5,
+      67175.4,
+      68625.6,
+      66478.2,
+      73274.7,
+      74161.2,
+      77650.4,
+      64242.5,
+      74167.1,
+      71825.9,
+      76780.3,
+      75931.2,
+      72019.7
+     ]
+    },
+    {
+     "name": "Import volume",
+     "values": [
+      39825.9,
+      36927.3,
+      52315,
+      49516.6,
+      45547.7,
+      44327,
+      49516.8,
+      50879.6,
+      50884.2,
+      50663.7,
+      49862,
+      51328.4,
+      48511.7,
+      55381.7,
+      64988.4,
+      59942.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Leading food supplements consumed in Germany in 2023",
+   "short": "Most popular food supplements in Germany 2023",
+   "unit": "",
+   "description": "In 2023, the most consumed food supplements in Germany were vitamins, with 60 percent of consumers confirming this via a survey. Vitamins were followed by minerals and proteins in the top three.",
+   "note": "Germany; April 2022 to March 2023; 6,018 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Vitamins",
+    "Minerals",
+    "Proteins",
+    "Herbs or herbal products",
+    "Plant-based food supplements (e.g. algae oil)",
+    "Food supplements of animal origin (e.g. fish oil)",
+    "Other",
+    "I have not consumed any food supplements"
+   ],
+   "series": [
+    {
+     "name": "Germany",
+     "values": [
+      0.6,
+      0.35,
+      0.24,
+      0.18,
+      0.14,
+      0.12,
+      0.06,
+      0.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Leading vitamin brands in Germany in 2022, by number of consumers (in 1,000s)",
+   "short": "Leading vitamin brands Germany 2022, by type",
+   "unit": "1,000s",
+   "description": "In 2022, the leading vitamin brands in Germany were Abtei, tetesept and taxofit. Around 5.8 million consumers bought Abtei products.",
+   "note": "Germany; 2022; 10,089 respondents; 15 years and older; Computer-assisted web interviews (CAWI)",
+   "source": "Kantar Number of people in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Abtei",
+    "tetesept",
+    "taxofit",
+    "Kneipp",
+    "Centrum",
+    "Vitasprint",
+    "Aldi",
+    "Vigantolvit",
+    "Biolectra",
+    "Lidl",
+    "MyProtein",
+    "Cetebe",
+    "Sandoz",
+    "Femibion",
+    "Biosan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5795.96,
+      4950.67,
+      3826.71,
+      3755.24,
+      3736.9,
+      2371.62,
+      2330.61,
+      1969.69,
+      1893.95,
+      1877.05,
+      1668.09,
+      1650.53,
+      1235.7,
+      1145.72,
+      786.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Number of vitamin consumers in Germany in 2022, by frequency (in 1,000s)",
+   "short": "Number of vitamin consumers Germany 2022, by frequency",
+   "unit": "1,000s",
+   "description": "In 2022, around 12.38 million people in Germany consumed vitamins and other food supplements once daily. Around 4.86 million did so two to three times a week.",
+   "note": "Germany; 2022; 10,089 respondents; 15 years and older; Computer-assisted web interviews (CAWI)",
+   "source": "Kantar",
+   "kind": "categorical",
+   "categories": [
+    "Once daily",
+    "Two to three times a week",
+    "More than once daily",
+    "Once a month or less often",
+    "Once a week",
+    "Two to three times a month"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      12376.39,
+      4860.23,
+      3852.9,
+      2630.63,
+      2582.18,
+      1698.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Number of vitamin consumers in Germany in 2022, by type (in 1,000s)",
+   "short": "Number of vitamin consumers Germany 2022, by type",
+   "unit": "1,000s",
+   "description": "In 2022, around 13.55 million people in Germany consumed mineral supplements such as iron or zinc. Roughly 10 million consumers took multivitamins.",
+   "note": "Germany; 2022; 10,089 respondents; 15 years and older; Computer-assisted web interviews (CAWI)",
+   "source": "Kantar Number of people in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Minerals (e.g. iron, zinc)",
+    "Single vitamins",
+    "Multivitamins",
+    "Multivitamins and minerals",
+    "Natural products (based on herbs, plants, berries etc.)",
+    "Protein",
+    "Probiotics",
+    "Cod liver oil/fish oils",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13546.06,
+      12568.02,
+      10053.82,
+      9144.13,
+      4439.14,
+      4301.28,
+      2866.1,
+      835.24,
+      3905.95
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Where do you buy food supplements (vitamin products, minerals)?",
+   "short": "Locations for food supplement purchases in Germany in 2022",
+   "unit": "",
+   "description": "Most German consumers bought their food supplements from a drugstore in 2022. Other locations includes pharmacies and shopping online, e.g. on Amazon.",
+   "note": "Germany; October 31 to November 14, 2022; 677 respondents",
+   "source": "POSpulse",
+   "kind": "categorical",
+   "categories": [
+    "Drugstore",
+    "Pharmacy",
+    "Online (e.g. Amazon)",
+    "Supermarket/ discounter",
+    "Online pharmacy",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.616,
+      0.387,
+      0.26,
+      0.2378,
+      0.2186,
+      0.0665
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "What do you pay attention to when buying vitamins and minerals?",
+   "short": "Leading criteria when buying food supplements in Germany in 2022",
+   "unit": "",
+   "description": "Food supplement quality was the most important purchase criteria for German consumers, with around 70 percent of respondents confirming this via a survey. 61 percent of respondents paid attention to the price, while around 58 percent looked at ingredients.",
+   "note": "Germany; October 31 to November 14, 2022; 677 respondents",
+   "source": "POSpulse Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Quality",
+    "Price",
+    "Ingredients",
+    "Dosage form (e.g. capsules, powder)",
+    "Brand",
+    "Recommended by doctor or pharmacist",
+    "Dosage",
+    "Reviews",
+    "Recommended by family/ friends",
+    "Shelf life, storage, expiration date",
+    "Whether it is vegan, vegetarian or purely plant-based",
+    "Packaging",
+    "Other",
+    "Nothing, I buy what is available"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6898,
+      0.61,
+      0.5805,
+      0.4343,
+      0.3353,
+      0.2821,
+      0.2437,
+      0.2009,
+      0.1448,
+      0.1183,
+      0.1064,
+      0.0901,
+      0.0222,
+      0.0133
+     ]
+    }
+   ]
+  }
+ ]
+}

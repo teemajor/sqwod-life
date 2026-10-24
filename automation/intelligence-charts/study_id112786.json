@@ -1,0 +1,1075 @@
+{
+ "studyId": "112786",
+ "study": "influencer marketing in china",
+ "file": "research/statista/Fitness Marketing/study_id112786_influencer-marketing-in-china.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Influencer marketing market size worldwide from 2016 to 2024 (in billion U.S. dollars)",
+   "short": "Global influencer marketing value 2016-2024",
+   "unit": "billion U.S. dollars",
+   "description": "The global influencer marketing market size has more than tripled since 2019. In 2024, the market was estimated to reach a record of 24 billion U.S. dollars.",
+   "note": "Worldwide; 2016 to 2023; * Forecast. Read more",
+   "source": "Influencer Marketing Hub",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.7,
+      3,
+      4.6,
+      6.5,
+      9.7,
+      13.8,
+      16.4,
+      21.1,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Market size of KOL marketing in China from 2018 to 2022 with an estimate for 2023 (in billion yuan)",
+   "short": "Influencer marketing value in China 2018-2023",
+   "unit": "billion yuan",
+   "description": "In China, influencer marketing was thriving. Industry forecasts showed that the country`s influencer marketing, or KOL marketing, would total at 100 billion yuan in 2023 with 16.3 percent year-over-year growth.",
+   "note": "China; 2018 to 2022; * Estimate. KOL (aka key opinion leader) is more commonly used to refer to an influencer marketing practitioner in China. Read more",
+   "source": "chinabaogao.com",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      30,
+      49,
+      67,
+      80,
+      86,
+      100
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Number of social media users in China from 2018 to 2022 with forecasts until 2027 (in millions)",
+   "short": "Number of social media users in China 2018-2027",
+   "unit": "millions",
+   "description": "In 2022, there were around 1.02 billion social media users in China. Despite Facebook, YouTube, and Twitter being blocked in the country, local social networking sites such as WeChat and Weibo have been attracting millions of users, making China the world`s biggest social media market.",
+   "note": "China; 2018 to 2022; excluding Hong Kong; *Forecast. Read more",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      758.87,
+      828.48,
+      901.3,
+      961.02,
+      1015.14,
+      1062.99,
+      1105.3,
+      1142.72,
+      1175.82,
+      1205.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Main channels as a primary information source in researching a brand in China as of 3rd quarter 2023",
+   "short": "Major brand information sources in China Q3 2023",
+   "unit": "",
+   "description": "According to a 2023 survey on the digital usage among Chinese internet users, over a third of respondents said they relied on search engines, social networks, or consumer reviews in researching a brand. Brand websites and video sites were other major channels for gathering brand information.",
+   "note": "China; Q3 2023; 16-64 years",
+   "source": "DataReportal; GWI; Hootsuite; Meltwater; We Are Social Share of surveyed internet users",
+   "kind": "categorical",
+   "categories": [
+    "Search engines",
+    "Social networks",
+    "Consumer reviews",
+    "Product & brand sites",
+    "Video sites",
+    "Mobile apps",
+    "Price comparison sites",
+    "Microblogs",
+    "Messaging services",
+    "Discount voucher sites",
+    "Brand & product blogs",
+    "Q&A sites",
+    "Forums & message boards",
+    "Specialist review sites",
+    "Online pinboards"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.378,
+      0.369,
+      0.335,
+      0.312,
+      0.273,
+      0.266,
+      0.228,
+      0.212,
+      0.203,
+      0.197,
+      0.193,
+      0.179,
+      0.17,
+      0.146,
+      0.093
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Most effective forms of recommendation-based marketing (Zhongcao) in China as of March 2022",
+   "short": "Leading content types of recommendation-based marketing in China 2022",
+   "unit": "",
+   "description": "According to a survey conducted in March 2022, product review and brand endorsement videos from key opinion leaders (KOLs) were the most effective forms of recommendation-based marketing, or \"Zhongcao\" in China, with over 66 percent of surveyed consumers having been convinced to purchase the suggested products.",
+   "note": "China; as of March 2022; 1,702 respondents",
+   "source": "iiMedia Research",
+   "kind": "categorical",
+   "categories": [
+    "KOL review videos",
+    "KOL endorsement videos",
+    "Amateur recommendations in content community",
+    "Advertorials"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.665,
+      0.663,
+      0.503,
+      0.34
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Changes in marketing expenditure among brands in China in 2022 and 2023",
+   "short": "Changes in marketing costs among brands in China 2022-2023",
+   "unit": "",
+   "description": "According to a 2022 survey on marketing strategies among brands in China, 36 percent of surveyed companies said they would increase marketing budget in 2023. A higher proportion of brands would rather keep the same amount of marketing expenditure as the previous year.",
+   "note": "China; December 2022; 50 companies",
+   "source": "QuestMobile Share of surveyed brands",
+   "kind": "categorical",
+   "categories": [
+    "Increase",
+    "The same",
+    "Decrease"
+   ],
+   "series": [
+    {
+     "name": "2023 vs 2022",
+     "values": [
+      0.36,
+      0.42,
+      0.22
+     ]
+    },
+    {
+     "name": "2022 vs 2021",
+     "values": [
+      0.34,
+      0.2,
+      0.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Common marketing activities used by brands in China in 2023",
+   "short": "Common marketing formats among brands in China 2023",
+   "unit": "",
+   "description": "According to a 2022 survey on marketing strategies among brands in China, 76 percent of surveyed brands had included content marketing into their 2023 plan, which was the third most popular format after advertisements and hiring a spokesperson. Four in five surveyed companies were using at least five different marketing activites.",
+   "note": "China; December 2022; 50 companies",
+   "source": "QuestMobile Share of surveyed brands",
+   "kind": "categorical",
+   "categories": [
+    "Advertisements",
+    "Spokesperson",
+    "Content marketing",
+    "Offline events",
+    "Influencer marketing",
+    "Live streaming",
+    "E-commerce marketing",
+    "Offline partnership"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1,
+      0.88,
+      0.76,
+      0.74,
+      0.58,
+      0.5,
+      0.32,
+      0.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Distribution of brand endorsements in China in 2022, by type of spokesperson",
+   "short": "Popular types of endorsement in advertising in China 2022",
+   "unit": "",
+   "description": "Despite the rise of influencers and virtual characters, celebrities remain the most preferred ambassadors by many brands in China. Over two-thirds of brand endorsement deals in 2022 went to celebrities' pockets while a neglectable proportion flew to virtual idols.",
+   "note": "China; 2022",
+   "source": "QuestMobile",
+   "kind": "categorical",
+   "categories": [
+    "Celebrity",
+    "KOL",
+    "Athelete/sports team",
+    "Virtual idol"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.64,
+      0.181,
+      0.158,
+      0.021
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Most expected social marketing formats among advertisers in China in 2024",
+   "short": "Major formats of social marketing in China 2024",
+   "unit": "",
+   "description": "According to a survey on social marketing in China conducted in late 2023, seven in ten surveyed advertisers reported that KOL promotion would be the main focus of their company's social marketing strategy in the coming year. Followed were brand-operated lie streaming and official social media account operation.",
+   "note": "China; September 15 to November 15, 2023; 257 respondents; among advertisers",
+   "source": "Miaozhen Systems; Various sources (GDMS; M360; chinanews.com) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "KOL promotion",
+    "Live streaming (brand-operated)",
+    "Official social media account operation",
+    "In-feed ads",
+    "Community operation/ private traffic",
+    "Keyword optimization (SEO)",
+    "Niche marketing",
+    "Live streaming (KOL)",
+    "Social commerce",
+    "Social media CRM"
+   ],
+   "series": [
+    {
+     "name": "2024",
+     "values": [
+      0.71,
+      0.44,
+      0.38,
+      0.37,
+      0.37,
+      0.35,
+      0.33,
+      0.3,
+      0.3,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Share of advertisers focusing on KOL promotion when doing social marketing in China from 2019 to 2023 with an estimate for 2024",
+   "short": "Importance of influencer promotion in social marketing in China 2019-2024",
+   "unit": "",
+   "description": "According to a survey on social marketing in China conducted in late 2023, 71 percent of surveyed advertisers stated that KOL promotion would be a focus of their companies' social marketing strategy in the coming year. Found out by the same survey, advertisers anticipated China's social marketing spending would increase by 13 percent.",
+   "note": "China; September 15  to November 15, 2023; 257 respondents; among advertisers; *Estimate. The survey question was phrased by the source as: \" Where will your company's social marketing focus be in 2024? (Multiple answers allowed)\"  [...] Read more",
+   "source": "Miaozhen Systems; Various sources (GDMS; M360; China News)",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.63,
+      0.63,
+      0.62,
+      0.67,
+      0.66,
+      0.71
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Main goals of KOL marketing among advertisers in China in 2024",
+   "short": "Motivations to use influencer marketing in China 2024",
+   "unit": "",
+   "description": "According to a survey on social marketing in China conducted in late 2023, 82 percent of surveyed advertisers stated that the most important goal of KOL marketing was to promote products. About 71 percent of advertisers reported to include KOL marketing as the key strategy.",
+   "note": "China; September 15 to November 15, 2023; 257 respondents; among advertisers",
+   "source": "China Advertising Association; Miaozhen Systems; Website (xueerxing.com) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Products recommendation",
+    "Raise brand awareness",
+    "Increase sales conversion",
+    "#Product recommendation & brand promotion",
+    "#Product recommendation & increase sales conversion",
+    "#All three",
+    "Enhance customer interactions"
+   ],
+   "series": [
+    {
+     "name": "2024",
+     "values": [
+      0.82,
+      0.65,
+      0.55,
+      0.51,
+      0.46,
+      0.33,
+      0.38
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Main concerns of KOL marketing among advertisers in China as of November 2021",
+   "short": "Problems of influencer marketing among advertisers in China 2021",
+   "unit": "",
+   "description": "According to a survey on social marketing in China conducted in late 2021, 42 percent of surveyed advertisers stated that data fraud was the main challenge when doing social marketing with KOLs. Despite the difficulties in evaluating the campaign effectiveness, influencer marketing remained the key focus of social marketers in China.",
+   "note": "China; October 8 to November 8, 2021; 270 respondents; among advertisers",
+   "source": "199IT; Miaozhen Systems; Various sources (China Advertising Association) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Performance data fraud",
+    "Unable to assess the ROI of cross-platform KOLs",
+    "Unable to collect and reuse scattered data",
+    "Uncontrollable risks (e.g. scandals of KOLs)",
+    "Opaque KOL pricing",
+    "Vague KOL promotion strategy",
+    "Lengthy process"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.42,
+      0.41,
+      0.34,
+      0.32,
+      0.26,
+      0.26,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "User reach of selected social media platforms in China as of 2021*, by product segment",
+   "short": "Social media influence on consumers in China 2021, by platform and product type",
+   "unit": "",
+   "description": "The social commerce app RED, or Xiaohongshu, has become a crucial social media platform for cosmetics brands in China to reach their target consumers. According to a survey on social marketing in China conducted in late 2021, about 69 percent of RED's users showed a strong interest in cosmetics products. When it comes to automobile advertising, the Chinese TikTok sister app Douyin has the highest share of car enthusiasts.",
+   "note": "China; 2021; *The source categorized users into five product interest groups based on those who click ads and use apps in specified market segments. User reach was calculated by the number of users from a specific market segment [...] Read more",
+   "source": "199IT; Miaozhen Systems; Various sources (China Advertising Association) Share of segment users",
+   "kind": "categorical",
+   "categories": [
+    "Cosmetics",
+    "Food and beverages",
+    "Automobiles",
+    "Maternity and childcare",
+    "Smart consumer electronics"
+   ],
+   "series": [
+    {
+     "name": "RED",
+     "values": [
+      0.69,
+      0.37,
+      0.2,
+      0.23,
+      0.11
+     ]
+    },
+    {
+     "name": "Bilibili",
+     "values": [
+      0.45,
+      0.33,
+      0.21,
+      0.11,
+      0.15
+     ]
+    },
+    {
+     "name": "Kuaishou",
+     "values": [
+      0.35,
+      0.29,
+      0.19,
+      0.08,
+      0.1
+     ]
+    },
+    {
+     "name": "Douyin",
+     "values": [
+      0.48,
+      0.32,
+      0.27,
+      0.14,
+      0.08
+     ]
+    },
+    {
+     "name": "Weibo",
+     "values": [
+      0.31,
+      0.24,
+      0.22,
+      0.1,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Average number of posts published by key opinion leaders (KOLs) per day in China as of April 2021, by platform",
+   "short": "Activeness of top-tier influencers in China 2021, by platform",
+   "unit": "",
+   "description": "Influencers on the Chinese Twitter-like platform, Weibo, are more active in content creation compared to those on other social media sites in China. According to a report in April 2021, KOLs (Key Opinion Leaders) on Weibo published an average of 5.7 posts per day, serving about 300 million active influencer followers.",
+   "note": "China; January to April 2021",
+   "source": "QuestMobile Number of posts",
+   "kind": "categorical",
+   "categories": [
+    "Weibo",
+    "Wechat Official Account",
+    "Kuaishou",
+    "Douyin",
+    "Xiaohongshu (RED)",
+    "Bilibili"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.7,
+      4.3,
+      1.4,
+      1.4,
+      1.1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of active users attracted by key opinion leaders (KOLs) in China as of May 2022, by platform (in millions)",
+   "short": "Active userbase of influencers in China 2022, by platform",
+   "unit": "millions",
+   "description": "As of May 2022, the KOLs (Key Opinion Leaders) on Douyin - TikTok's Chinese sister app - attracted around 604 million active users in China. Its local rival Kuaishou was another active platform for influencer marketing, with 323 million active users following content created by KOLs.",
+   "note": "China; May 2022",
+   "source": "QuestMobile Number of active users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Wechat Official Account",
+    "Douyin",
+    "Weibo",
+    "Kuaishou",
+    "Bilibili",
+    "Xiaohongshu (RED)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      810,
+      604,
+      394,
+      323,
+      160,
+      142
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Penetration rate of top-tier key opinion leaders (KOLs) in China as of April 2021, by platform",
+   "short": "Penetration rate of top-tier influencers in China 2021, by platform",
+   "unit": "",
+   "description": "As of April 2021, the top-tier influencers on the Chinese short video app Douyin attracted around 525 million active users in China, representing a penetration rate of 98 percent. Short-form video platform Kuaishou and social commerce app Xiaohongshu (RED) were other popular social media for influencer marketing in China.",
+   "note": "China; January to April 2021",
+   "source": "QuestMobile Penetration rate",
+   "kind": "categorical",
+   "categories": [
+    "Douyin",
+    "Kuaishou",
+    "Xiaohongshu (RED)",
+    "Bilibili",
+    "Weibo",
+    "Wechat Official Account"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.981,
+      0.976,
+      0.94,
+      0.804,
+      0.797,
+      0.316
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of impressions per post from the top-tier influencers in China as of June 2021, by social network (in 1,000s)",
+   "short": "Impressions per post of top-tier influencers in China 2021, by channel",
+   "unit": "1,000s",
+   "description": "On the short video app Douyin, one post published by a top-tier Key Opinion Leader (KOL) could generate 1.2 million impressions in China as of June 2021. KOL is the specific term for influencers in China. As top-tier KOLs in China usually have more than one million followers, they could help new brands effectively build up awareness and reputation on social media.",
+   "note": "China; as of June 2021",
+   "source": "Parklu Number of impressions in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Douyin (short video)",
+    "Weibo (microblogging)",
+    "Meipain (short video)",
+    "Inke (live streaming)",
+    "Yizhibo (live streaming)",
+    "Xiaohongshu (social commerce)",
+    "Bilibili (video)",
+    "Youku (video)",
+    "WeChat (instant messaging)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1200,
+      1000,
+      1000,
+      1000,
+      1000,
+      800,
+      600,
+      200,
+      75
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Distribution of social media influencers in China in 2022, by tier level",
+   "short": "Influencer distribution in China 2022, by tier level",
+   "unit": "",
+   "description": "As of 2022, mega KOLs (key opinion leaders) accounted for merely 0.3 percent of all social media influencers in China. In comparison, tier-5 KOLs, or KOCs (key opinion customers) made up almost four-fifths of all KOLs.",
+   "note": "China; 2022; based on data collected from WeChat, Weibo, Douyin, Kuaishou, Bilibili, and RED",
+   "source": "China Advertising Association; Miaozhen Systems; Website (chinatradingdesk.com) Share of KOLs",
+   "kind": "categorical",
+   "categories": [
+    "Tier-1 (KOLs)",
+    "Tier-2",
+    "Tier-3",
+    "Tier-4",
+    "Tier-5 (KOCs)"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.0028,
+      0.0131,
+      0.05,
+      0.1732,
+      0.761
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Share of key opinion consumers (KOCs) on selected social media platforms in China in 2023",
+   "short": "Share of micro influencers on major social media in China 2023",
+   "unit": "",
+   "description": "In 2023, Instagram-liked site Xiaohongshu had the highest share of micro influencers - 92 percent - compared to other platforms. Key opinion customers (KOCs) also take a significant share on the short video apps Kuaishou and Douyin.",
+   "note": "China; 2023; KOC refers to influencers with less than 500 thousand followers; *Due to different settings on Xiaohongshu and Bilibili, the fanbase size of KOCs is sized down to below 100,000. For Bilibili, the counting of KOCs was based on [...] Read more",
+   "source": "China Advertising Association; Miaozhen Systems; Website (echinagov.com) Share of KOCs",
+   "kind": "categorical",
+   "categories": [
+    "Xiaohongshu*",
+    "Kuaishou",
+    "Douyin",
+    "Zhihu*",
+    "Bilibili*",
+    "Weibo"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.923,
+      0.841,
+      0.824,
+      0.726,
+      0.623,
+      0.538
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Gender share of active users following top key opinion leaders (KOLs) in China as of April 2021, by social media",
+   "short": "Gender distribution of top-tier influencer followers in China 2021, by app",
+   "unit": "",
+   "description": "The social commerce app Xiaohongshu (RED) has been popular for its beauty related content among Chinese consumers. As of April 2021, about 76.5 percent of RED's active users following the top-tier KOLs (Key Opinion Leaders) were females. A third of such followers aged between 19 and 24 years.",
+   "note": "China; January to April 2021",
+   "source": "QuestMobile Share of active users",
+   "kind": "categorical",
+   "categories": [
+    "Douyin",
+    "Kuaishou",
+    "Weibo",
+    "Wechat Official Account",
+    "Bilibili",
+    "Xiaohongshu (RED)"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.519,
+      0.53,
+      0.411,
+      0.537,
+      0.529,
+      0.235
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.481,
+      0.47,
+      0.589,
+      0.463,
+      0.471,
+      0.765
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Leading fashion influencers on Wechat in June 2023, based on influence index",
+   "short": "Most successful fashion influencers on Wechat in China 2023",
+   "unit": "",
+   "description": "WeChat is one of the important channels for content creators to reach a broad audience. Among all fashion influencers, Li Jiaqi was the most successful content creator on WeChat. Based on the total number of posts, the overall content performance, and the impact of the most trending posts of his WeChat account, Li scored 936.2 points in an influence index on WeChat.",
+   "note": "China; June 2023",
+   "source": "Newrank",
+   "kind": "categorical",
+   "categories": [
+    "Li Jiaqi (Meione-Media)",
+    "Li Beica (Miss_shopping_li)",
+    "Jueli Daily Note (ktmakeup)",
+    "Zhou Xiaochen (zhouxiaochen119)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      936.2,
+      893.6,
+      866.9,
+      859
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Most popular influencers on Douyin (TikTok) in China as of August 22, 2023 (in millions)",
+   "short": "Most-followed influencers on Douyin in China 2023",
+   "unit": "millions",
+   "description": "As of August 22, 2023, Yang Ge, also known as Crazy Xiaoyangge, was the most popular influencer on Douyin with 118 million fans. Half Past Six of Chen Xiang, a family-style situation comedy directed by Chen Xiang took the second spot with 69 million followers. The third place went to Ares Cheng and his wife Yan Zhen.",
+   "note": "China; as of August 22, 2023",
+   "source": "Website (relangdata.cn) Number of fans in millions",
+   "kind": "categorical",
+   "categories": [
+    "Yang Ge (Crazy Xiaoyangge)",
+    "Chen Xiang (Half Past Six of Chen Xiang)",
+    "Ares Cheng & Yan Zhen",
+    "Zhu Xiaohan",
+    "Li Ziqi",
+    "Little Monk"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      118,
+      69.45,
+      60.45,
+      52.81,
+      49.06,
+      45.65
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Leading fashion influencers on Kuaishou as of February 6, 2023, based on influence index",
+   "short": "Leading fashion influencers on Kuaishou in China 2023",
+   "unit": "",
+   "description": "For millions of Chinese users in the rural areas, Kuaishou is more than a short video app for entertainment. It has become an important channel for outfit trends and inspirations. Among all fashion influencers on Kuaishou, Guige M stood out with her unique presentation style with a plot twist. She scored 980.4 points in an influence index based on the total number of posts, the overall content performance, and the impact of its trending posts. Zhouzhou Zhenkeai took the second spot with [...]",
+   "note": "China; January 30 to February 6, 2023",
+   "source": "Newrank Influence index points Account name (Kuaishou ID)",
+   "kind": "categorical",
+   "categories": [
+    "Guige M (1325899862)",
+    "Zhouzhou Zhenkeai (135145117)",
+    "Qin Wenlong (95338390)",
+    "Qianyi (141923107)",
+    "Boya G (9200382)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      980.4,
+      979.5,
+      968.9,
+      966.9,
+      963.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Number of active social media users and followers of leading virtual influencers in China in February 2023 (in millions)",
+   "short": "Social media user base of major virtual celebrities in China 2023",
+   "unit": "millions",
+   "description": "In February 2023, the computer-generated influencer Little Monk was the most popular virtual celebrities in China, based on the number of active social media users and followers. Other virtual human-looking characters had no more than three million active users.",
+   "note": "China; February 2023",
+   "source": "QuestMobile Number of users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Little Monk",
+    "Luo Tianyi",
+    "Yi Haqi",
+    "Aza",
+    "Liu Yexi"
+   ],
+   "series": [
+    {
+     "name": "Number of de-duplicated followers",
+     "values": [
+      57.57,
+      3.19,
+      14.61,
+      1.35,
+      8.39
+     ]
+    },
+    {
+     "name": "Number of de-duplicated active users",
+     "values": [
+      19.53,
+      2.39,
+      1.72,
+      0.76,
+      0.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Impact of social media influencers on purchasing in China as of May 2023",
+   "short": "Impact of social media influencers on purchasing in China 2023",
+   "unit": "",
+   "description": "Influencer marketing has been quite effective in boosting brand awareness and generating sales. According to a Chinese consumer survey conducted by Rakuten Insight in May 2023, about 86 percent of respondents who had followed at least one influencer on social media said that they had purchased the products endorsed by the influencer. A large proportion of these respondents did so because they were convinced by the promotion from the influencer.",
+   "note": "China; May 11 to 31, 2023; 6,979 respondents; 16 years and older; among respondents who followed at least one influencer on social media",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No",
+    "I do not know what this means"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.86,
+      0.13,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Major reasons for purchasing a product endorsed by influencers in China as of May 2023",
+   "short": "Main reasons for buying a product endorsed by influencers in China 2023",
+   "unit": "",
+   "description": "Influencer marketing has been quite effective in boosting brand awareness and generating sales. According to a Chinese consumer survey conducted by Rakuten Insight in May 2023, a majority of respondents who had followed at least one influencer on social media said that they had purchased the products endorsed by the influencer. About 47 percent of these respondents did so because they were convinced by the promotion from the influencer. The result showed that there was no major [...]",
+   "note": "China; May 11 to 31, 2023; 6,033 respondents; 16 years and older",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I was convinced by the promotion from the influencer",
+    "I like and trust the influencer and would purchase whatever he/she promotes",
+    "I wanted to buy it anyway, regardless of who was promoting it",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.47,
+      0.39,
+      0.12,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Willingness to buy a product that is a collaboration between a brand and an influencer in China as of May 2023",
+   "short": "Intention to buy an influencer collaboration product in China 2023",
+   "unit": "",
+   "description": "Influencer marketing has been quite effective in boosting brand awareness and generating sales. According to a Chinese consumer survey conducted by Rakuten Insight in May 2023, 89 percent of respondents who had followed social media influencers said that they would purchase a product that is a collaboration between a brand and an influencer.",
+   "note": "China; May 11 to 31, 2023; 6979 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.89,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Impact of influencer endorsements on buying in China as of May 2023, by product type",
+   "short": "Impact of influencer endorsements on buying in China 2023, by product type",
+   "unit": "",
+   "description": "Influencer marketing has been quite effective in boosting brand awareness and generating sales. According to a Chinese consumer survey conducted by Rakuten Insight in May 2023, about 55 percent of respondents who had made a purchase under the influence of influencer endorsements said that the purchased products were clothing items.",
+   "note": "China; May 11 to 31, 2023; 6,033 respondents; 16 years and older",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Clothing",
+    "Cosmetics",
+    "Shoes and bags",
+    "Consumer electronics and gadgets",
+    "Nutritional supplements and diet products",
+    "Household items and furniture",
+    "Fitness-related products",
+    "Jewellery and fashion accessories",
+    "Books",
+    "Pet products and accessories",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.59,
+      0.58,
+      0.39,
+      0.34,
+      0.31,
+      0.3,
+      0.26,
+      0.24,
+      0.24,
+      0.14,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Acceptable price ranges for a product that is a collaboration between a brand and an influencer in China as of May 2023",
+   "short": "Acceptable price ranges for an influencer collaboration product in China 2023",
+   "unit": "",
+   "description": "Influencer marketing has been quite effective in boosting brand awareness and generating sales. According to a Chinese consumer survey conducted by Rakuten Insight in May 2023, a majority of respondents who had followed social media influencers said that they would purchase a product that is a collaboration between a brand and an influencer. About 60 percent of such respondents stated that they would be willing to buy such items even if the price is higher than a similar product.",
+   "note": "China; May 11 to 31, 2023; 6,193 respondents; 16 years and older",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Same price as a similar product that does not have the influencer's name on it",
+    "Up to 25% more than a similar product",
+    "Up to 50% more than a similar product",
+    "Up to 75% more than a similar product",
+    "Not more than twice the price of a similar product",
+    "I do not have a limit when it comes to supporting my favorite influencer"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4,
+      0.35,
+      0.12,
+      0.03,
+      0.04,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Major reasons for not purchasing a product endorsed by influencers in China as of May 2023",
+   "short": "Reasons for not buying a product endorsed by influencers in China 2023",
+   "unit": "",
+   "description": "According to a consumer survey conducted by Rakuten Insight in May 2023, about 40 percent of respondents from China who had followed influencers but had not purchased their endorsement indicated that they were clear they did not really need the endorsed items. However, the same survey found that a majority of respondents from China had purchased the products endorsed by an influencer.",
+   "note": "China; May 11 to 31, 2023; 912 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "There was nothing that they were endorsing that I needed",
+    "I do not trust the quality of products that have to be endorsed by an influencer",
+    "Others",
+    "I do not trust the influencer"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4,
+      0.28,
+      0.17,
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Share of respondents convinced by recommendation-based marketing (Zhongcao) in China as of March 2022, by number of times",
+   "short": "Consumer experience of recommendation-based marketing in China 2022",
+   "unit": "",
+   "description": "\"Zhongcao\", a popular Chinese term meaning \"planting grass\" originally, describes the effect of recommendation-based marketing strategy as \"to plant a seed in one's mind\". It is commonly used to promote fashion, cosmetics, and food products in China. According to a survey conducted in March 2022, almost a half of respondents recalled three to five times of their purchase decisions had been affected by such marketing strategy.",
+   "note": "China; as of March 2022; 1,702 respondents",
+   "source": "iiMedia Research",
+   "kind": "categorical",
+   "categories": [
+    "1 to 2 times",
+    "3 to 5 times",
+    "6 to 10 times",
+    "More than 10 times"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.124,
+      0.495,
+      0.263,
+      0.118
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Attitudes towards marketing disguised in recommendation-based content (Zhongcao) in China as of March 2022",
+   "short": "Opinions to recommendation-based marketing in China 2022",
+   "unit": "",
+   "description": "\"Zhongcao\", a popular Chinese term meaning \"planting grass\" originally, describes the effect of recommendation-based marketing strategy as \"to plant a seed in one's mind\". It is commonly used to promote fashion, cosmetics, and food products in China. According to a survey conducted in China in March 2022, over 60 percent of respondents stated that they were rational enough to cope with marketing-oriented recommendations.",
+   "note": "China; as of March 2022; 1,702 respondents",
+   "source": "iiMedia Research",
+   "kind": "categorical",
+   "categories": [
+    "Doesn't matter, I am a rational consumer",
+    "Support, this is a summary of other people's experience",
+    "Has been deceived and lost trust in it"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.601,
+      0.225,
+      0.174
+     ]
+    }
+   ]
+  }
+ ]
+}

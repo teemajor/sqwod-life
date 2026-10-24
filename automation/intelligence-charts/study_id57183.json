@@ -1,0 +1,902 @@
+{
+ "studyId": "57183",
+ "study": "health foods and dietary supplements market in japan",
+ "file": "research/statista/study_id57183_health-foods-and-dietary-supplements-market-in-japan.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Nutritional food market size in Japan from fiscal year 2020 to 2022 with forecasts for 2025 and 2030 (in trillion Japanese yen)",
+   "short": "Nutrition market size in Japan FY 2020-2030",
+   "unit": "trillion Japanese yen",
+   "description": "The nutritional food market in Japan was valued at around 1.7 trillion Japanese yen in fiscal year 2022. The market encompasses a variety of food products for health promotion and maintenance. It was forecast to grow and reach almost two trillion yen in fiscal 2030.",
+   "note": "Japan; fiscal year 2020 to 2022; the Japanese fiscal year starts on April 1 of each stated year and ends on March 31 of the following year; *Forecast. Figures are based on the following 10 market categories: formula milk and baby food, [...] Read more",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2025*",
+    "2030*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.65,
+      1.68,
+      1.71,
+      1.81,
+      1.99
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Shipment value of the health foods market in Japan in fiscal years 2015 to 2023 with a forecast for 2024 (in billion Japanese yen)",
+   "short": "Health foods market size in Japan FY 2015-2024",
+   "unit": "billion Japanese yen",
+   "description": "In fiscal year 2023, the shipment value of the health food market in Japan was estimated to reach almost 900 billion Japanese yen, continuing the ongoing upward trend from previous years. The market was forecast to grow in fiscal year 2024, exceeding 900 billion yen for the first time in the last decade.",
+   "note": "Japan; fiscal years 2015 to 2023; the Japanese fiscal year runs from April 1 of the stated year to March 31 of the following year; market size is based on the shipment value at manufacturers; *Prospect. **Forecast. Health foods indicate [...] Read more",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024**"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      806.73,
+      819.6,
+      845,
+      861.43,
+      862.3,
+      865.99,
+      882.5,
+      886.06,
+      899.51,
+      912.87
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Production value of health foods in Japan from 2016 to 2023 (in billion U.S. dollars)",
+   "short": "Production value of health foods in Japan 2016-2023",
+   "unit": "billion U.S. dollars",
+   "description": "The production value of health foods in Japan amounted to around 12.2 billion U.S. dollars in 2023. The market for health food products, such as foods with function claims, grew steadily in recent years, before declining from 2022 onwards.",
+   "note": "Japan; 2016 to 2023",
+   "source": "Nikkan Keizai Tsushin; USDA Foreign Agricultural Service",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.11,
+      10.29,
+      11.31,
+      12.66,
+      13.4,
+      13.48,
+      13.08,
+      12.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Gross merchandise value of health and functional food material in Japan from fiscal year 2020 to 2022 with a forecast for 2023 (in billion Japanese yen)",
+   "short": "Health and functional food ingredient market size in Japan FY 2020-2023",
+   "unit": "billion Japanese yen",
+   "description": "In the fiscal year 2022, the gross merchandise value of materials for health foods and functional foods in Japan amounted to around 195.5 billion Japanese yen. The market refers to raw materials used in foods with health claims in Japan, which advertise a nutritional or functional claim of the ingredients used.",
+   "note": "Japan; fiscal year 2020 to 2022; the Japanese fiscal year starts on April 1 of each stated year and ends March 31 of the following year; *Prospect. **Forecast. Research objects were suppliers of 44 materials for health foods and functional [...] Read more",
+   "source": "Yano Research",
+   "kind": "categorical",
+   "categories": [
+    "2020",
+    "2021",
+    "2022*",
+    "2023**"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      183.79,
+      189.48,
+      195.51,
+      198.76
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Sales value of the health food contract manufacturing market in Japan from fiscal year 2016 to 2022 with a forecast for 2023 (in billion Japanese yen)",
+   "short": "Health food OEM market size in Japan FY 2016-2023",
+   "unit": "billion Japanese yen",
+   "description": "In fiscal year 2022, the sales value of the health food contract manufacturer market in Japan was expected to reach around 167.5 billion Japanese yen. The original equipment manufacturer (OEM) market for health foods was forecasted to exceed 170 billion yen in the following fiscal year. OEMs are contracted by businesses to plan and produce health foods under the contractee's brand.",
+   "note": "Japan; fiscal years 2014 to 2022; the Japanese fiscal year runs from April 1 of each stated year to March 31 of the following year; market size is based on sales at businesses; *Outlook. **Forecast. Research target were health foods contract [...] Read more",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      151.9,
+      153.12,
+      163.88,
+      159.19,
+      162.47,
+      167.1,
+      167.47,
+      170.87
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of health foods certified as \"foods for specified health uses\" (FOSHU) in Japan as of May 2023, by application",
+   "short": "Number of health foods with FOSHU label in Japan 2023, by health claim",
+   "unit": "",
+   "description": "Health foods promoting the effects of dietary fibers for intestinal regulation accounted for the largest share of products certified as \"foods for specified health uses\" (FOSHU) in Japan in 2022, with more than 200 approved products.",
+   "note": "Japan; as of May 1, 2023; products with a valid permission",
+   "source": "Japan Health and Nutrition Food Association Number of products",
+   "kind": "categorical",
+   "categories": [
+    "Neutral fat/body fat",
+    "Dietary fiber for intestinal regulation",
+    "Blood glucose level",
+    "Cholesterol",
+    "Blood pressure",
+    "Teeth",
+    "Oligosaccharide for intestinal regulation",
+    "Probiotics for intestinal regulation",
+    "Bones/minerals",
+    "Skin"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      206,
+      201,
+      172,
+      111,
+      102,
+      91,
+      70,
+      58,
+      50,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of new registrations for health foods with function claims in Japan from fiscal year 2015 to 2023",
+   "short": "Number of new foods with function claims registrations in Japan FY 2015-2023",
+   "unit": "",
+   "description": "In fiscal year 2023, more than 1.4 thousand registrations of health foods with function claims were handed in at the Consumer Affairs Agency in Japan. New registrations quadrupled compared to fiscal year 2015, when the \"foods with function claims\" label was introduced. Functional foods are labeled with claims based on scientific evidence for the effectiveness of the ingredients under the manufacturers' and distributors' own responsibilities.",
+   "note": "Japan; fiscal years 2015 to 2023; the Japanese fiscal year starts on April 1 of each stated year and ends on March 31 of the following year",
+   "source": "CAA; Health & Beauty Expo",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      307,
+      620,
+      452,
+      690,
+      882,
+      1067,
+      1445,
+      1429,
+      1433
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Total number of health foods with function claims registered in Japan as of June 2024, by promoted application",
+   "short": "Number of foods with function claims registrations in Japan 2024, by application",
+   "unit": "",
+   "description": "As of June 2024, the largest share of health foods with function claims registered at the Consumer Affairs Agency in Japan was promoting the effectiveness on the stomach, with almost 1.2 thousand products. Functional foods are labeled with claims based on scientific evidence for the effectiveness of the ingredients under the manufacturers' and distributors' own responsibilities. Since the introduction of labeling regulations in 2015, more than seven thousand products have been registered [...]",
+   "note": "Japan; June 3, 2024; leading ten applications",
+   "source": "CAA; Health & Beauty Expo Number of products",
+   "kind": "categorical",
+   "categories": [
+    "Stomach",
+    "Skin",
+    "Eyes",
+    "Knees",
+    "Legs",
+    "Bones",
+    "Nose",
+    "Waist",
+    "Liver",
+    "Mouth"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1198,
+      893,
+      666,
+      412,
+      310,
+      193,
+      106,
+      84,
+      58,
+      52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Total number of health foods with function claims registered in Japan as of June 2024, by promoted ingredient",
+   "short": "Number of foods with function claims in Japan 2024, by ingredient",
+   "unit": "",
+   "description": "As of June 2024, the largest share of health foods with function claims registered at the Consumer Affairs Agency in Japan was promoting the health effects of gamma-Aminobutyric acid (GABA), with 807 products. Functional foods are labeled with claims based on scientific evidence for the effectiveness of the ingredients under the manufacturers' and distributors' own responsibilities. Since the introduction of labeling regulations in 2015, over seven thousand products have been registered [...]",
+   "note": "Japan; June 3, 2024; leading ten ingredients",
+   "source": "CAA; Health & Beauty Expo Number of products",
+   "kind": "categorical",
+   "categories": [
+    "GABA",
+    "Indigestible dextrin",
+    "EPA, DHA",
+    "Inulin",
+    "Polymethoxyflavones from black ginger",
+    "Ginkgo biloba flavonoid glycoside/ ginkgo biloba terpene lactone",
+    "Lutein, zeaxanthin",
+    "Isoflavones from the kudzu flower",
+    "L-theanine",
+    "Astaxanthin"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      807,
+      450,
+      280,
+      186,
+      178,
+      177,
+      170,
+      147,
+      130,
+      115
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Shipment value of the foods with function claims market in Japan in fiscal years 2015 to 2022 with a forecast for 2023 (in billion Japanese yen)",
+   "short": "Functional foods market size in Japan FY 2015-2023",
+   "unit": "billion Japanese yen",
+   "description": "The shipment value of the foods with function claims market in Japan was estimated to reached 469.2 billion Japanese yen in fiscal year 2022, continuing the ongoing upward trend. The largest growth was recorded in fiscal 2016 when the market tripled in size compared to the previous year.",
+   "note": "Japan; fiscal years 2015 to 2022; the Japanese fiscal year runs from April 1 of the stated year to March 31 of the following year; market size is based on the shipment value at manufacturers; *Prospect. **Forecast. Research objects were [...] Read more",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*",
+    "2023**"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      44.6,
+      136.46,
+      178.86,
+      224.05,
+      254.28,
+      304.4,
+      421.48,
+      469.2,
+      508
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Market share of health foods with function claims based on shipment value in Japan in fiscal year 2021, by type",
+   "short": "Functional foods market share in Japan 2021, by type",
+   "unit": "",
+   "description": "In fiscal year 2021, general foods products accounted for the majority of the market for health foods with function claims, relegating supplements to the second largest segment with a 40.5 percent market share. That year, the functional foods market size continued to grow steadily, exceeding 421 billion Japanese yen.",
+   "note": "Japan; fiscal year 2021; the Japanese fiscal year starts April 1 of the stated year and ends March 31 of the following year; shipment value at manufacturers",
+   "source": "Yano Research Market share",
+   "kind": "categorical",
+   "categories": [
+    "General food",
+    "Supplement",
+    "Fresh food"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.556,
+      0.405,
+      0.039
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Market size of dietary supplements in Japan from fiscal year 2020 to 2022 with forecasts until 2024 (in billion Japanese yen)",
+   "short": "Dietary supplements market size in Japan 2020-2024",
+   "unit": "billion Japanese yen",
+   "description": "In fiscal year 2022, the dietary supplement market in Japan was valued at around 204 billion Japanese yen. The supplements market grew steadily in recent years, accounting for around half of the foods with function claims market.",
+   "note": "Japan; fiscal years 2020 to 2022; the Japanese fiscal year starts on April 1 of each stated year and ends on March 31 of the following year; market size based on shipment value at manufacturers; *Projection.  **Forecast.  The dietary [...] Read more",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024**"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      163.1,
+      170.8,
+      203.9,
+      212.3,
+      220.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Leading manufacturers of foods with function claims in Japan as of June 2024, by number of registered products",
+   "short": "Major functional foods manufacturers in Japan 2024, by product numbers",
+   "unit": "",
+   "description": "As of June 2024, Toyo Shinyaku registered 124 products as foods with function claims at the Consumer Affairs Agency (CAA) in Japan, representing the company with the highest number of product registrations. Toyo Shinyaku Co., Ltd. is an original design and equipment manufacturer (ODEM) of health foods and cosmetics in Japan. Since the introduction of labeling regulations for foods with health claims in 2015, more than seven thousand products have been registered as functional foods [...]",
+   "note": "Japan; June 11, 2024; leading ten manufacturers",
+   "source": "CAA; Health & Beauty Expo Number of products",
+   "kind": "categorical",
+   "categories": [
+    "Toyo Shinyaku Co., Ltd.",
+    "Fine Co., Ltd.",
+    "Morinaga Milk Industry Co., Ltd.",
+    "Ito En, Ltd.",
+    "Asahi Soft Drinks Co., Ltd.",
+    "Kobayashi Pharmaceutical Co., Ltd.",
+    "Tokiwa Phytochemical Co., Ltd.",
+    "Asahi Group Foods, Ltd.",
+    "Nippon Suisan Kaisha Ltd.",
+    "Ezaki Glico Co., Ltd.",
+    "Morinaga Seika"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      124,
+      109,
+      106,
+      104,
+      96,
+      76,
+      72,
+      72,
+      70,
+      69,
+      69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Share of consumers who have tried health foods certified as \"foods for specified health uses\" (FOSHU) in Japan as of March 2023",
+   "short": "Consumer ratio of FOSHU health foods in Japan 2023",
+   "unit": "",
+   "description": "Around 16 percent of consumers in Japan stated they were consuming health foods certified as \"foods for specified health uses\" (FOSHU), as revealed in a survey conducted in March 2023.",
+   "note": "Japan; March 2 to 8, 2023; 10,000 respondents; 15 years and older",
+   "source": "CAA; Neo Marketing",
+   "kind": "categorical",
+   "categories": [
+    "I am currently consuming it",
+    "I used to consume it, but not anymore",
+    "I have never consumed it, but would like to in the future",
+    "I have never tried it and do not plan to in the future"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.157,
+      0.198,
+      0.237,
+      0.408
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Share of consumers who have tried foods with function claims in Japan as of March 2023",
+   "short": "Consumer ratio of health foods with function claims in Japan 2023",
+   "unit": "",
+   "description": "15 percent of consumers in Japan stated that they were consuming foods with function claims, as revealed in a survey conducted in March 2023. While 42.3 percent of respondents had no intention of trying functional foods, around 27 declared their interest in such health products.",
+   "note": "Japan; March 2 to 8, 2023; 10,000 respondents; 15 years and older",
+   "source": "CAA; Neo Marketing",
+   "kind": "categorical",
+   "categories": [
+    "I am currently consuming it",
+    "I used to consume it, but not anymore",
+    "I have never consumed it, but would like to in the future",
+    "I have never tried it and do not plan to in the future"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.15,
+      0.157,
+      0.27,
+      0.423
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Share of consumers who have tried health foods certified as \"foods with nutrient function claims\" (FNFC) in Japan as of March 2023",
+   "short": "Consumer ratio of health foods with nutrient claims in Japan 2023",
+   "unit": "",
+   "description": "Around 12 percent of consumers in Japan stated that they were consuming foods with nutrient function claims (FNFC), as revealed in a survey conducted in March 2023. While 28.7 percent of respondents declared their intention to try FNFC products, almost 45 percent stated to have no intention to try them.",
+   "note": "Japan; March 2 to 8, 2023; 10,000 respondents; 15 years and older",
+   "source": "CAA; Neo Marketing",
+   "kind": "categorical",
+   "categories": [
+    "I am currently consuming it",
+    "I used to consume it, but not anymore",
+    "I have never consumed it, but would like to in the future",
+    "I have never tried it and do not plan to in the future"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.117,
+      0.148,
+      0.287,
+      0.447
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Awareness of meal substitute products in Japan as of March 2024",
+   "short": "Awareness of meal replacement products in Japan 2024",
+   "unit": "",
+   "description": "Around two in three Japanese consumers were aware of meal substitute products, according to a survey in March 2024. The largest share of respondents, 43 percent, stated that they knew what kind of products meal replacements were without having tried them before. Almost 20 percent tried the food supplement products.",
+   "note": "Japan; March 12 to 13, 2024; 1,018 respondents; 16-69 years",
+   "source": "Nippon Information Incorporated",
+   "kind": "categorical",
+   "categories": [
+    "Know and currently eating/drinking them",
+    "Know and have drunk/ eaten them before",
+    "Know but have not drunk/ eaten them before",
+    "Do not know what it is"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.07,
+      0.124,
+      0.43,
+      0.376
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Preferred purchase channels for dietary and health supplements in Japan as of February 2024",
+   "short": "Purchase channels for dietary and health supplements Japan 2024",
+   "unit": "",
+   "description": "Drugstores were the preferred purchase channels for dietary and health supplements in Japan. As revealed in a survey conducted in February 2024, almost 21 percent of respondents stated that they bought dietary supplements in physical drugstores, with online platforms like Amazon, Rakuten, and Yahoo Shopping following behind.",
+   "note": "Japan; February 14 to 19, 2024; 3,000 respondents; 20-79 years",
+   "source": "Planet, Inc. Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Drugstores",
+    "Online stores (Amazon, Rakuten, Yahoo Shopping, etc.)",
+    "Supermarkets",
+    "Discounter stores (Don Quijote, etc.)",
+    "Convenience stores",
+    "Mail-order retail (radio, TV, catalog, pamphlet, etc.)",
+    "Department stores",
+    "DIY stores",
+    "Co-op home deliveries",
+    "Flea market applications (Mercari, Yahoo Auctions, etc.)",
+    "Specialty retailers (pet stores, etc.)",
+    "100 yen stores",
+    "Online grocery stores",
+    "Consumer electronics retailers",
+    "Variety stores (Tokyu Hands, Loft, etc.)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.207,
+      0.126,
+      0.06,
+      0.028,
+      0.025,
+      0.018,
+      0.014,
+      0.012,
+      0.012,
+      0.012,
+      0.012,
+      0.011,
+      0.01,
+      0.009,
+      0.007
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Frequency of consuming foods with function claims in Japan as of April 2024",
+   "short": "Frequency of consuming functional foods in Japan 2024",
+   "unit": "",
+   "description": "The minority of Japanese consumers ate or drank foods with function claims, as revealed in a survey conducted in April 2024. Over 31 percent of respondents stated that they never tried the type of health food, while 3.8 percent consumed them daily.Foods with function claims are a form of “foods with health claims” in Japan that can be labeled with function claims of ingredients based on scientific evidence. Unlike “foods for specified health uses (FOSHU)”, products do not require an [...]",
+   "note": "Japan; April 25 to 27, 2024; 1,197 respondents; 10-69 years",
+   "source": "Loyalty Marketing",
+   "kind": "categorical",
+   "categories": [
+    "Daily",
+    "Several times a week",
+    "Several times a month",
+    "Irregularly",
+    "Almost never",
+    "I used to consume them before but not anymore",
+    "I have never consumed them"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.038,
+      0.073,
+      0.066,
+      0.221,
+      0.231,
+      0.059,
+      0.312
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Frequency of taking dietary supplements in Japan as of April 2024",
+   "short": "Frequency of taking dietary supplements in Japan 2024",
+   "unit": "",
+   "description": "The majority of Japanese consumers were currently taking dietary supplements, according to a survey conducted in April 2024. The largest share of respondents, almost 28 percent, stated to take supplements irregularly, whereas 11 percent would consume the type of functional food daily.",
+   "note": "Japan; April 25 to 27, 2024; 842 respondents; 10-69 years; supplements in tablet and capsule form that are categorized as foods with function claims",
+   "source": "Loyalty Marketing",
+   "kind": "categorical",
+   "categories": [
+    "Daily",
+    "Several times a week",
+    "Several times a month",
+    "Irregular",
+    "Almost never",
+    "I used to take them before but not anymore",
+    "I have never taken them"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.11,
+      0.155,
+      0.128,
+      0.279,
+      0.247,
+      0.073,
+      0.009
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Share of consumers believing the claims and explanations of foods with function claims in Japan as of April 2024",
+   "short": "Level of trust in functional foods claims in Japan 2024",
+   "unit": "",
+   "description": "Close to half of Japanese consumers trusted functional foods, as revealed in an April 2024 survey. The largest share of respondents, over 40 percent, stated that they believed in the claims and explanations on labels of functional foods to an extent, while 8.6 percent showed a high level of trust.Foods with function claims are a form of “foods with health claims” in Japan that can be labeled with function claims of ingredients based on scientific evidence. Unlike “foods for specified health uses [...]",
+   "note": "Japan; April 25 to 27, 2024; 1,197 respondents; 10-69 years",
+   "source": "Loyalty Marketing",
+   "kind": "categorical",
+   "categories": [
+    "I trust them very much",
+    "I trust them to an extent",
+    "I do not really trust them",
+    "I do not trust them at all"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.086,
+      0.405,
+      0.336,
+      0.173
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Leading nutrients consumed as dietary supplements in Japan as of September 2023",
+   "short": "Major supplement ingredients consumed in Japan 2023",
+   "unit": "",
+   "description": "Lactobacillus were the most consumed nutrient in dietary supplements in Japan, according to a survey conducted in September 2023. Over 29 percent of respondents stated that the supplements they took contained lactic bacteria strains, whereas vitamin C ranked highest among vitamins.",
+   "note": "Japan; September 2023; 1,421 respondents; 20-79 years; respondents were users of health foods; multiple answers were allowed",
+   "source": "Yano Research Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Lactobacillus",
+    "Vitamin C",
+    "Multivitamin and minerals",
+    "Vitamin B",
+    "DHA/EPA",
+    "Calcium",
+    "Zinc",
+    "Protein",
+    "Dietary fiber",
+    "Aojiru (green juice)",
+    "Vitamin D",
+    "Collagen",
+    "Blueberry (bilberry)",
+    "Amino acid",
+    "Lutein"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.292,
+      0.288,
+      0.256,
+      0.208,
+      0.201,
+      0.186,
+      0.175,
+      0.158,
+      0.148,
+      0.146,
+      0.146,
+      0.137,
+      0.126,
+      0.124,
+      0.124
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Level of awareness of major food safety certification in Japan as of May 2024",
+   "short": "Awareness of food safety marks in Japan 2024",
+   "unit": "",
+   "description": "The general \"JAS\" mark was the best-known food safety-related certification among Japanese consumers, according to a survey conducted in May 2024. The certification, granted by the Ministry of Agriculture, Forestry and Fisheries to businesses and products that conform to the national standards for food and forestry products, was recognized by over 71 percent of respondents.Specific JAS, referring to the variation intended for products using traditional or other distinctive processes, [...]",
+   "note": "Japan; May 15 to 16, 2024; 1,012 respondents; 20-59 years; multiple answers were allowed",
+   "source": "General Research; NSS Smart Consulting; PR Times Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "JAS",
+    "Food for specified health uses (FOSHU)",
+    "Organic JAS",
+    "HACCP approved by the Ministry of Health, Labor and Welfare",
+    "Specific JAS",
+    "No-Foodloss Project"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.714,
+      0.492,
+      0.169,
+      0.136,
+      0.116,
+      0.114
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Distribution of alternative eating preferences in Japan as of January 2023, by diet form",
+   "short": "Alternative eating habits share in Japan 2023, by diet",
+   "unit": "",
+   "description": "Low sugar was the most common alternative diet among consumers in Japan, as revealed in a survey conducted in January 2023. The survey revealed further that 4.5 percent of respondents were vegetarians, while only 2.4 percent claimed to be vegan.",
+   "note": "Japan; January 2023; 2,418 respondents; 20 years and older",
+   "source": "Frembassy Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Low sugar",
+    "No additives/organic",
+    "Vegetarian",
+    "Gluten free",
+    "Fasting",
+    "Raw food",
+    "Macrobiotic",
+    "Vegan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.083,
+      0.045,
+      0.043,
+      0.033,
+      0.031,
+      0.024,
+      0.024
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Most popular aspects of dietary education advice to follow in Japan as of November 2023",
+   "short": "Dietary advice to follow in Japan 2023",
+   "unit": "",
+   "description": "A nutritionally balanced diet was the most popular dietary advice consumers in Japan wanted to take up, as revealed in a survey conducted in November 2023. Another popular resolution concerning dietary education was keeping a health-conscious diet, named by 57.1 percent of respondents.",
+   "note": "Japan; November 1 to 27, 2023; 2,309 respondents; 20 years and older; postal and online survey; multiple answers allowed",
+   "source": "Central Research Services; MAFF Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "A balanced diet",
+    "A health-conscious diet",
+    "Reduction of food waste",
+    "A well-regulated diet",
+    "Meals with regional and seasonal ingredients",
+    "Cherishing the richness of food, like its taste and pleasure",
+    "Understanding food safety",
+    "Sharing the table with family and friends more often",
+    "Buying regional produce",
+    "Improving preparation and storage techniques",
+    "Cooking more often",
+    "Learning the proper recipes of meals",
+    "Passing on food culture",
+    "Cooking with the family more often",
+    "Understanding the process from production to consumption"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.667,
+      0.571,
+      0.56,
+      0.455,
+      0.422,
+      0.403,
+      0.378,
+      0.341,
+      0.34,
+      0.243,
+      0.185,
+      0.175,
+      0.136,
+      0.103,
+      0.089
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Frequency of balanced meals in Japan as of November 2023",
+   "short": "Frequency of balanced meals in Japan 2023",
+   "unit": "",
+   "description": "Over 38 percent of consumers in Japan ate balanced meals almost every day, as revealed in a survey conducted in November 2023. On the contrary, around 13.6 percent of respondents stated they rarely had two meals composed of a grain product, a protein-based main dish, and a vegetable-based side dish in a day. In its 'Fourth Basic Plan on Promoting Dietary Education', the government targets to increase the percentage of people having balanced meals daily to at least 50 percent by 2025.",
+   "note": "Japan; November 1 to 27, 2023; 2,309 respondents; 20 years and older; postal and online survey; only one answer allowed",
+   "source": "Central Research Services; MAFF",
+   "kind": "categorical",
+   "categories": [
+    "Almost every day",
+    "4 to 5 days per week",
+    "2 to 3 days per week",
+    "Almost never",
+    "No answer"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.382,
+      0.22,
+      0.247,
+      0.136,
+      0.015
+     ]
+    }
+   ]
+  }
+ ]
+}

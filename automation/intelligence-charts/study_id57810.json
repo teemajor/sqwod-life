@@ -1,0 +1,1021 @@
+{
+ "studyId": "57810",
+ "study": "health and food supplements in italy",
+ "file": "research/statista/study_id57810_health-and-food-supplements-in-italy.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Size of the worldwide market for dietary supplements from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Size of the worldwide market for dietary supplements 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The global dietary supplement market is forecast to reach a market value of 185.1 billion U.S. dollars in 2025. In 2021, it was estimated to be worth around 137 billion U.S. dollars. The market has been growing since 2018 and is expected to continue to grow till 2028.",
+   "note": "Worldwide; 2018 to 2028; *Year of data release Read more",
+   "source": "Adroit Market Research; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      112.3,
+      119.7,
+      128.3,
+      137,
+      146.8,
+      158,
+      170.3,
+      185.1,
+      201.1,
+      218.4,
+      239.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Forecast of the worldwide probiotic supplements market value from 2017 to 2027 (in million U.S. dollars)",
+   "short": "Forecast of the global probiotic supplements market value 2017-2027",
+   "unit": "million U.S. dollars",
+   "description": "The global market for probiotic supplements is forecast to increase from 1.5 billion U.S. dollars in 2019 to 3.3 billion in 2027. This would constitute more than a doubling of market values in that time frame. Between 2017 and 2020, market values grew by almost 600 million U.S. dollars.",
+   "note": "Worldwide; 2017 to 2027; * Forecast released Dec 2020.",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1216.3,
+      1343.6,
+      1527.6,
+      1803.8,
+      2016.6,
+      2228.9,
+      2503.9,
+      2700.4,
+      2910.5,
+      3099.4,
+      3282.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Forecast of the worldwide probiotic supplements market value from 2017 to 2027 (in million U.S. dollars), by region",
+   "short": "Forecast of the global probiotic supplements market value 2017-2027, by region",
+   "unit": "",
+   "description": "The markets for probiotic supplements in different regions across the world are forecast to grow at somewhat similar rates. North America, Europe, and Asia-Pacific are forecast to remain the three largest regions for probiotic supplements, with a significant gap in market share in comparison to Latin America, the Middle East, and Africa. Europe is forecast to grow its estimated market value of 365 million U.S. dollars in 2017 to approximately 920.6 million in 2027.",
+   "note": "Worldwide; 2017 to 2027; * Forecast released Dec 2020.",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      547.3,
+      595,
+      688.6,
+      820,
+      933.9,
+      1029.2,
+      1147,
+      1226.9,
+      1306.1,
+      1393.9,
+      1483.1
+     ]
+    },
+    {
+     "name": "Europe",
+     "values": [
+      364.9,
+      406.7,
+      452.8,
+      523,
+      560.5,
+      612.7,
+      690.5,
+      752.4,
+      829,
+      873.2,
+      920.6
+     ]
+    },
+    {
+     "name": "Asia-Pacific",
+     "values": [
+      243.3,
+      272.7,
+      307.9,
+      369.6,
+      421.4,
+      474.3,
+      540.7,
+      585.6,
+      629.9,
+      677.4,
+      717.4
+     ]
+    },
+    {
+     "name": "Latin America",
+     "values": [
+      42.6,
+      47.2,
+      52.9,
+      63,
+      70.1,
+      79.6,
+      89.6,
+      96.5,
+      102.4,
+      108.2,
+      112
+     ]
+    },
+    {
+     "name": "The Middle East and Africa",
+     "values": [
+      18.2,
+      21.9,
+      25.4,
+      28.1,
+      30.7,
+      33.2,
+      36,
+      38.9,
+      43,
+      46.6,
+      48.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Sales value market share of the food supplements sector in Europe in selected years from 2009 to 2020, by country",
+   "short": "Sales value market share of food supplements sector in Europe 2009-2020, by country",
+   "unit": "",
+   "description": "Between 2009 and 2020, the market of food supplements in Europe became increasingly dominated by Italy. In fact, in 2009 the Mediterranean country accounted for almost 20 percent of the total European market of food supplements, while by 2020 this figure had increased to 29 percent.",
+   "note": "Germany, Italy, Russia, Spain, United Kingdom; 2009 to 2020; *Starting from 2018, data for Russia are included into Others **Starting from 2019, data for the United Kingdom are included into Others Read more",
+   "source": "Euromonitor; IQVIA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2016",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "Italy",
+     "values": [
+      0.198,
+      0.2,
+      0.23,
+      0.27,
+      0.29
+     ]
+    },
+    {
+     "name": "Germany",
+     "values": [
+      0.185,
+      0.132,
+      0.13,
+      0.18,
+      0.19
+     ]
+    },
+    {
+     "name": "Russia*",
+     "values": [
+      0.055,
+      0.096
+     ]
+    },
+    {
+     "name": "United Kingdom**",
+     "values": [
+      0.095,
+      0.097,
+      0.08
+     ]
+    },
+    {
+     "name": "France",
+     "values": [
+      0.084,
+      0.089,
+      0.09,
+      0.08,
+      0.09
+     ]
+    },
+    {
+     "name": "Spain",
+     "values": [
+      0.06
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      0.383,
+      0.386,
+      0.47,
+      0.47,
+      0.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Market value of food supplements in Italy from 2008 to 2020 (in million euros)",
+   "short": "Market value of food supplements in Italy 2008-2020",
+   "unit": "million euros",
+   "description": "Between 2008 and 2020, the total market value of food supplements in Italy boomed. According to the data, the value grew threefold throughout the period of consideration. As a matter of fact, in 2008, the market value of these products was of 1.3 billion euros, and reached nearly 3.8 billion euros in 2020.",
+   "note": "Italy; 2008 to 2020",
+   "source": "FederSalus - Associazione Nazionale Produttori e Distributori Prodotti Salutistici; IQVIA",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1315,
+      1576,
+      1664,
+      1892,
+      1938,
+      2066,
+      2358,
+      2567,
+      2760,
+      3277,
+      3475,
+      3684,
+      3789
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Year-on-year market value change of food supplements in Italy from 2009 to 2020",
+   "short": "Y-o-Y market value grow of food supplements in Italy 2009-2020",
+   "unit": "",
+   "description": "Between 2009 and 2020, the total market value of food supplements in Italy grew continuously. In 2008, the market value of these products was 1.3 billion euros, and reached nearly 3.8 billion euros in 2020. The fastest growth of this industry was recorded in 2009, when the market value of food supplements increased by 19.8 percent compared to the previous year.",
+   "note": "Italy; 2009 to 2020",
+   "source": "FederSalus - Associazione Nazionale Produttori e Distributori Prodotti Salutistici; Mediobanca",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.198,
+      0.056,
+      0.137,
+      0.024,
+      0.066,
+      0.141,
+      0.089,
+      0.075,
+      0.187,
+      0.06,
+      0.06,
+      0.029
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Market volume of food supplements in Italy from 2008 to 2019 (in million of packages)",
+   "short": "Market volume of food supplements in Italy 2008-2019",
+   "unit": "million of packages",
+   "description": "Overall, the market volume of food supplements in Italy increased by more than 250 percent between 2008 and 2019. As a matter of fact, in 2008, 97 million packages of food supplements were sold in the country, while the market volume reached then 261 million packages in 2019. This statistic displays the market volume of food supplements in Italy from 2008 to 2019.",
+   "note": "Italy; 2008 to 2019",
+   "source": "FederSalus - Associazione Nazionale Produttori e Distributori Prodotti Salutistici",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      97,
+      116,
+      123,
+      139,
+      142,
+      160,
+      172,
+      185,
+      204,
+      212,
+      226.4,
+      261
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Revenue of the food supplements industry in Italy in 2018, by producer company category (in million euros)",
+   "short": "Revenue of the food supplements industry in Italy 2018, by company category",
+   "unit": "million euros",
+   "description": "The total revenue of the food supplements industry in Italy reached nearly 3.7 billion euros in 2018. According to the source, the revenue generated by branded companies was 2.8 billion euros. Since in Italy food supplements cannot be produced in the same facilities were drugs are produced, Contract Development and Manufacturing Organization plays a relevant role. As a matter of fact, the revenue from food supplements of the CDMO amounted to 819 million euros in 2018.",
+   "note": "Italy; 2018",
+   "source": "FederSalus - Associazione Nazionale Produttori e Distributori Prodotti Salutistici",
+   "kind": "categorical",
+   "categories": [
+    "Branded companies",
+    "CDMO",
+    "Total"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2842,
+      819,
+      3661
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Revenue of the vitamins & minerals industry in Italy 2017-2028 (in million euros)",
+   "short": "Revenue of the vitamins & minerals industry in Italy 2017-2028",
+   "unit": "million euros",
+   "description": "The revenue in the 'Vitamins & Minerals' segment of the OTC pharmaceuticals market in Italy was forecast to continuously increase between 2023 and 2028 by in total 19.8 million euro (+17.93 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 130.2 million euro and therefore a new peak in 2028.",
+   "note": "Italy; 2017 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      85.9,
+      91.3,
+      90.42,
+      94.45,
+      102.18,
+      106.56,
+      110.4,
+      114.36,
+      118.23,
+      122.22,
+      126.21,
+      130.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Distribution of food supplements sales in Italy in 2020, by sales channel",
+   "short": "Food supplements distribution sales in Italy 2020, by sales channel",
+   "unit": "",
+   "description": "In 2020, the food supplements market in Italy generated sales of almost 3.8 billion euros. This statistic shows the distribution of food supplements sales in the country by sales channel. The majority of sales were through pharmacies, with 79 percent. On-line retail accounted for five percent of food supplements sales.",
+   "note": "Italy; 2020",
+   "source": "Mediobanca; Various sources",
+   "kind": "categorical",
+   "categories": [
+    "Pharmacies",
+    "Drugstores",
+    "Large-scale retail",
+    "On-line retail"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.79,
+      0.08,
+      0.08,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Revenue generated by pharmacies through the sales of health supplements in Italy from April 2021 to March 2022, by category (in million euros)",
+   "short": "Health supplements sales value in pharmacies in Italy 2021-2022, by category",
+   "unit": "million euros",
+   "description": "Vitamins and minerals was the best performing category in terms of sales value in the Italian market of health supplements between April 2021 and March 2022. According to the data provided by New Line Ricerche di Mercato, vitamins and minerals registered a sales value of 836 million euros. Bowel wellness products followed, as they generated revenue for 582 million euros in pharmacies. In total, the revenue generated by the sales of health supplements in pharmacies amounted to [...]",
+   "note": "Italy; April 2021 to March 2022; pharmacies",
+   "source": "New Line Ricerche di mercato Revenue in million euros",
+   "kind": "categorical",
+   "categories": [
+    "Total",
+    "Vitamins and minerals",
+    "Bowel wellness products",
+    "Respiratory tract",
+    "Others",
+    "Cardiology area",
+    "Mental well-being and sleep products",
+    "Gastrointestinal area",
+    "Urogenital area",
+    "Musculoskeletal area",
+    "Skin care"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3195,
+      836,
+      582,
+      301,
+      296,
+      279,
+      228,
+      194,
+      185,
+      176,
+      116
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Distribution of the annual revenue generated by pharmacies by sales of health supplements in Italy from April 2021 to March 2022, by category",
+   "short": "Health supplements sales value distribution in Italy 2021-2022, by category",
+   "unit": "",
+   "description": "Vitamins and minerals represented the best performing category in terms of sales of health supplements in Italy between April 2021 and March 2022. According to the data provided by New Line Ricerche di Mercato, vitamins and minerals accounted for 26.2 percent of the total revenue coming from the health supplement segment in pharmacies.",
+   "note": "Italy; April 2021 to March 2022; pharmacies",
+   "source": "New Line Ricerche di mercato Revenue share",
+   "kind": "categorical",
+   "categories": [
+    "Vitamins and minerals",
+    "Bowel wellness products",
+    "Respiratory tract",
+    "Others",
+    "Cardiology area",
+    "Mental well-being and sleep products",
+    "Gastrointestinal area",
+    "Urogenital area",
+    "Musculoskeletal area",
+    "Skin care"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.262,
+      0.182,
+      0.094,
+      0.093,
+      0.087,
+      0.071,
+      0.061,
+      0.058,
+      0.055,
+      0.036
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Annual growth rate of the revenue generated by pharmacies by sales of health supplements in Italy from April 2021 to March 2022, by category",
+   "short": "Annual growth rate of health supplements sales value in Italy 2021-2022, by category",
+   "unit": "",
+   "description": "Between April 2021 and March 2022, the revenue generated by pharmacies through the sales of health supplements experienced a general increase of approximately 8.6 percent. More specifically, according to the data provided by New Line Ricerche di Mercato, almost all the categories grew in revenue compared to the same period of the previous year. Among them, the fastest growing category was the one of supplements for the respiratory tract, since the revenue generated by [...]",
+   "note": "Italy; April 2021 to March 2022; pharmacies",
+   "source": "New Line Ricerche di mercato Annual growth rate",
+   "kind": "categorical",
+   "categories": [
+    "Respiratory tract",
+    "Gastrointestinal area",
+    "Musculoskeletal area",
+    "Bowel wellness products",
+    "Vitamins and minerals",
+    "Urogenital area",
+    "Cardiology area",
+    "Mental well-being and sleep products",
+    "Skin care",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.231,
+      0.132,
+      0.12,
+      0.111,
+      0.073,
+      0.07,
+      0.066,
+      0.045,
+      0.02,
+      -0.004
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Annual sales volume of health supplements sold in pharmacies in Italy from April 2021 to March 2022, by category (in million units)",
+   "short": "Health supplements sales volume in Italy 2021-2022, by category",
+   "unit": "million units",
+   "description": "Between April 2021 tand March 2022, about 186 million units of health supplements were sold in Italian pharmacies. In particular, according to the data provided by New Line Ricerche di Mercato, the best performing category was the one of vitamins and minerals, with a sales volume of 50 million units. Bowel wellness products followed, with 40 million packages sold over the year under consideration.",
+   "note": "Italy; April 2021 to March 2022; pharmacies",
+   "source": "New Line Ricerche di mercato Number of packages sold in millions",
+   "kind": "categorical",
+   "categories": [
+    "Total",
+    "Vitamins and minerals",
+    "Bowel wellness products",
+    "Respiratory tract",
+    "Others",
+    "Mental well-being and sleep products",
+    "Cardiology area",
+    "Gastrointestinal area",
+    "Urogenital area",
+    "Musculoskeletal area",
+    "Skin care"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      186,
+      50,
+      40,
+      21,
+      17,
+      14,
+      13,
+      12,
+      8,
+      7,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Distribution of the sales volume of health supplements in pharmacies in Italy from April 2021 to March 2022, by category",
+   "short": "Health supplements sales volume distribution in Italy 2021-2022, by category",
+   "unit": "",
+   "description": "Between April 2021 and March 2022, about 186 million units of health supplements were sold in Italian pharmacies. According to the data provided by New Line Ricerche di Mercato, the best performing category in the segment was the one of vitamins and minerals, accounting for 26.8 percent of the total sales volume of health supplements, followed by products for bowel wellness with 21.3 percent.",
+   "note": "Italy; April 2021 to March 2022; pharmacies",
+   "source": "New Line Ricerche di mercato Sales volume share",
+   "kind": "categorical",
+   "categories": [
+    "Vitamins and minerals",
+    "Bowel wellness products",
+    "Respiratory tract",
+    "Others",
+    "Mental well-being and sleep products",
+    "Cardiology area",
+    "Gastrointestinal area",
+    "Urogenital area",
+    "Musculoskeletal area",
+    "Skin care"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.268,
+      0.213,
+      0.113,
+      0.09,
+      0.074,
+      0.068,
+      0.066,
+      0.045,
+      0.04,
+      0.023
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Annual growth rate of the sales volume of health supplements supplied by pharmacies in Italy from April 2021 to March 2022, by category",
+   "short": "Annual growth rate of health supplements sales volume in Italy 2021-2022, by category",
+   "unit": "",
+   "description": "Between April 2021 and March 2022, the sales volume of health supplements in Italian pharmacies experienced a general increase compared to the same period of the previous year. According to the data provided by New Line Ricerche di Mercato, the fastest growing category in terms of volumes sold was the one of supplements for the respiratory tract, with an annual growth rate of 24.8 percent.",
+   "note": "Italy; April 2021 to March 2022; pharmacies",
+   "source": "New Line Ricerche di mercato Annual growth rate",
+   "kind": "categorical",
+   "categories": [
+    "Respiratory tract",
+    "Musculoskeletal area",
+    "Gastrointestinal area",
+    "Bowel wellness products",
+    "Cardiology area",
+    "Vitamins and minerals",
+    "Urogenital area",
+    "Skin care",
+    "Mental well-being and sleep products",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.248,
+      0.093,
+      0.092,
+      0.068,
+      0.043,
+      0.041,
+      0.039,
+      0.011,
+      0.008,
+      -0.016
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Food supplements expenditure per capita in leading markets in Europe in 2020 (in euros)",
+   "short": "Food supplements expenditure per capita in leading European markets 2020",
+   "unit": "euros",
+   "description": "In 2020, Italy was the country in Europe with the highest per capita expenditure on food supplements. According to the data, Italians spent on average 63.6 euros per inhabitant on food supplements during that year. This figure was almost double the amount of money spent per capita in Germany, the second country in this ranking. In the same year, the annual average consumption of food supplements in Italy was equal to 4.1 packages per person.",
+   "note": "France, Germany, Italy, Russia, United Kingdom; 2020",
+   "source": "Mediobanca; Various sources Per capita expenditure",
+   "kind": "categorical",
+   "categories": [
+    "Italy",
+    "Germany",
+    "France",
+    "United Kingdom",
+    "Russia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      63.6,
+      32.9,
+      31.7,
+      20.6,
+      11.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Average price per package of food supplements in Italy from 2008 to 2020 (in euros)",
+   "short": "Average price of food supplements in Italy 2008-2020",
+   "unit": "euros",
+   "description": "Between 2008 and 2020, the average price per package of food supplements in Italy increased considerably. According to the data, the price of a package of food supplements was stable around 13.6 euros until 2013, when it dropped to 12.9 euros, the lowest value recorded in the period under consideration. In 2017, then, the average price of supplements increased to 15.5 euros per package, thus increasing by two euros in just one year. In 2020, this figure peaked at 15.6 euros per package.",
+   "note": "Italy; 2008 to 2020",
+   "source": "FederSalus - Associazione Nazionale Produttori e Distributori Prodotti Salutistici; Mediobanca",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.6,
+      13.6,
+      13.5,
+      13.6,
+      13.6,
+      12.9,
+      13.7,
+      13.9,
+      13.5,
+      15.5,
+      15.3,
+      15.6,
+      15.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Number of food supplement packages consumed per capita in Italy from 2008 to 2020",
+   "short": "Food supplements consumption per person in Italy 2008-2020",
+   "unit": "",
+   "description": "Between 2008 and 2020, the average consumption of food supplements in Italy increased continuously. This statistic shows the number of packages of food supplements consumed per capita in Italy from 2008 to 2020. In 2008, the number of packages consumed per inhabitant stood at 1.6, while by 2020 this figure reached 4.1 packages per person, thus more than doubling. In the same year, Italy was the European country with the highest per capita expenditure on food supplements.",
+   "note": "Italy; 2008 to 2020",
+   "source": "FederSalus - Associazione Nazionale Produttori e Distributori Prodotti Salutistici; Mediobanca",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.6,
+      1.9,
+      2.1,
+      2.3,
+      2.4,
+      2.6,
+      2.8,
+      3,
+      3.4,
+      3.5,
+      3.7,
+      3.9,
+      4.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Frequency of food supplements consumption in Italy as of 2019",
+   "short": "Frequency in supplements use in Italy 2019",
+   "unit": "",
+   "description": "Among food supplements users in Italy, as of 2019, the majority reported to take such products on a regular basis. In fact, almost one third of the respondents to a survey on the matter declared to take supplements on a daily basis. Moreover, another 27 percent reported to take them several times a week.",
+   "note": "Italy",
+   "source": "Centro Studi Investimenti Sociali",
+   "kind": "categorical",
+   "categories": [
+    "Every day",
+    "Several times a week",
+    "Several times a month",
+    "3 or 4 times a year",
+    "Once a year",
+    "Occasional"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.315,
+      0.269,
+      0.133,
+      0.159,
+      0.032,
+      0.092
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Distribution of food supplements users in Italy as of 2019, by gender",
+   "short": "Share of food supplements users in Italy by gender 2019",
+   "unit": "",
+   "description": "The majority of food supplements users in Italy, as of 2019, were females. Females accounted for over 60 percent of supplements users, while their share in the total Italian population was slightly over 50 percent.",
+   "note": "Italy; 18 years and older; food supplement users",
+   "source": "Centro Studi Investimenti Sociali",
+   "kind": "categorical",
+   "categories": [
+    "Female",
+    "Male"
+   ],
+   "series": [
+    {
+     "name": "Share over total food supplements users",
+     "values": [
+      0.605,
+      0.395
+     ]
+    },
+    {
+     "name": "Share over total Italian population",
+     "values": [
+      0.519,
+      0.481
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Share of food supplements users in Italy as of 2019, by age group",
+   "short": "Share of food supplements users in Italy by age 2019",
+   "unit": "",
+   "description": "The majority of food supplements users in Italy, as of 2019, were between 35 and 64 years of age. Almost 63 percent of supplements consumers in the country belonged to this age group.",
+   "note": "Italy; 18 years and older; food supplement users",
+   "source": "Centro Studi Investimenti Sociali Share of individuals",
+   "kind": "categorical",
+   "categories": [
+    "18-34 years",
+    "35-64 years",
+    "Over 65 years"
+   ],
+   "series": [
+    {
+     "name": "Share over total food supplements users",
+     "values": [
+      0.203,
+      0.628,
+      0.169
+     ]
+    },
+    {
+     "name": "Share over total Italian population",
+     "values": [
+      0.213,
+      0.518,
+      0.269
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Profile of average food supplements user in Italy as of 2019, by educational level",
+   "short": "Share of food supplements users in Italy by education 2019",
+   "unit": "",
+   "description": "The educational level of the majority of food supplements consumers in Italy, as of 2019, was a high school diploma. Over 55 percent of the total supplements users in the country held a high school diploma.",
+   "note": "Italy; 18 years and older; food supplement users",
+   "source": "Centro Studi Investimenti Sociali Share of individuals",
+   "kind": "categorical",
+   "categories": [
+    "Lower secondary school degree",
+    "High school diploma",
+    "University degree"
+   ],
+   "series": [
+    {
+     "name": "Share over total supplement users",
+     "values": [
+      0.152,
+      0.552,
+      0.296
+     ]
+    },
+    {
+     "name": "Share over total Italian population",
+     "values": [
+      0.471,
+      0.373,
+      0.156
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Share of food supplements users in Italy as of 2019, by macro region",
+   "short": "Share of food supplements users in Italy 2019, by macro region",
+   "unit": "",
+   "description": "As of 2019, the Italian macro region with the greatest share of food supplements users was the one comprising the South and the Islands. Almost 31 percent of the whole population of food supplements users in Italy was from this area.",
+   "note": "Italy; 18 years and older; food supplement users",
+   "source": "Centro Studi Investimenti Sociali Share of individuals",
+   "kind": "categorical",
+   "categories": [
+    "North-West",
+    "North-East",
+    "Center",
+    "South and Islands"
+   ],
+   "series": [
+    {
+     "name": "Share over total food supplements users",
+     "values": [
+      0.277,
+      0.207,
+      0.207,
+      0.309
+     ]
+    },
+    {
+     "name": "Share over total Italian population",
+     "values": [
+      0.267,
+      0.193,
+      0.2,
+      0.34
+     ]
+    }
+   ]
+  }
+ ]
+}

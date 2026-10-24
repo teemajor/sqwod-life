@@ -1,0 +1,1083 @@
+{
+ "studyId": "136673",
+ "study": "functional drinks in the united states",
+ "file": "research/statista/Health & Wellness/study_id136673_functional-drinks-in-the-united-states.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Leading functional beverage categories in the United States in 2021",
+   "short": "Top functional beverage categories in the United States 2021",
+   "unit": "",
+   "description": "According to a survey conducted in 2021, energy drinks and sports drinks were the two leading functional beverages in the United States, with 15 percent and 13 percent of surveyed consumers reporting having purchased them in the last 3 months, respectively.",
+   "note": "United States; 5,000 respondents; Consumer Insights and Social Listening",
+   "source": "Brightfield Group",
+   "kind": "categorical",
+   "categories": [
+    "Energy drinks",
+    "Sports drinks",
+    "Vitamin-enhanced water",
+    "Electrolyte water",
+    "Premium smoothies",
+    "Nitro/cold brew",
+    "Protein powder",
+    "Coffee shots",
+    "Nutrient-infused coffee",
+    "Ionized/alkaline water",
+    "Turmeric tea",
+    "Kombucha",
+    "Post-workout/recovery drinks",
+    "Matcha tea or latte powder",
+    "Oat milk latte"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.15,
+      0.13,
+      0.09,
+      0.07,
+      0.06,
+      0.06,
+      0.05,
+      0.05,
+      0.04,
+      0.04,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Foods and nutrients consumed to improve energy or reduce fatigue in the United States in 2022",
+   "short": "Foods and nutrients consumed to improve energy or reduce fatigue in the U.S. in 2022",
+   "unit": "",
+   "description": "In 2022, vegetables, such as leafy greens, broccoli, carrots, were the most frequently mentioned food that consumers in the United States eat to improve their energy or reduce fatigue, with approximately 51 percent of respondents mentioning them. The second most frequently mentioned food were fruits (dried or fresh), which were mentioned by about 49 percent of respondents.",
+   "note": "United States; March 23 to April 4, 2022; 372 respondents; 18-80 years",
+   "source": "Greenwald & Associates; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Vegetables (e.g., leafy greens, broccoli, carrots)",
+    "Fruits (dried or fresh)",
+    "Vitamin or mineral supplements (e.g., iron, B vitamins)",
+    "Nuts or nut butters",
+    "Caffeinated beverages (e.g., coffee, green or black tea, energy drinks)",
+    "Lean meats (e.g., chicken, pork, beef)",
+    "Whole grains (e.g., brown rice, whole wheat bread, oats)",
+    "Beans, peas or lentils",
+    "Dairy products (e.g., Greek yogurt)",
+    "Fish or shellfish (e.g., salmon, shrimp, scallops",
+    "Protein supplements",
+    "Plant-based protein (e.g., tofu, plant-based meat or seafood alternatives)",
+    "Other dietary supplements (e.g., creatine, melatonin, CoQ10)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.51,
+      0.49,
+      0.42,
+      0.42,
+      0.41,
+      0.37,
+      0.33,
+      0.33,
+      0.29,
+      0.27,
+      0.24,
+      0.17,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Have you purchased/ how likely are you to purchase a beverage that advertises the following health benefits?",
+   "short": "Interest in health drinks in the United States 2023, by benefit claim",
+   "unit": "",
+   "description": "Beverages that advertise energy boosting seem to be the most popular in the United States. According to a survey from February 2023, 42 percent said they had bought energy drinks in the last three months. Another share of 42 percent were very likely to buy one in the next three months.",
+   "note": "United States; February 2023; 1,194 respondents; *Vitamins, minerals, protein, etc. **Keto, low-carb, low-sodium, etc. Read more",
+   "source": "Advantage Solutions Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Nutrition*",
+    "Energy",
+    "Immune health",
+    "Digestive health",
+    "Sleep",
+    "Physical appearance",
+    "Plant-based",
+    "Mental health",
+    "Mindfulness/ mental clarity",
+    "Special diet**"
+   ],
+   "series": [
+    {
+     "name": "Very likely to purchase in next 3 months",
+     "values": [
+      0.3,
+      0.42,
+      0.27,
+      0.3,
+      0.21,
+      0.25,
+      0.23,
+      0.2,
+      0.22,
+      0.21
+     ]
+    },
+    {
+     "name": "Have purchased in past 3 months",
+     "values": [
+      0.28,
+      0.42,
+      0.23,
+      0.24,
+      0.14,
+      0.2,
+      0.2,
+      0.15,
+      0.17,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Revenue of energy and sports drinks worldwide in 2022, by country (in million U.S. dollars)",
+   "short": "Energy and sports drink revenue worldwide 2022, by country",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, the U.S. energy and sports drinks market generated the highest revenue per country with around 96.8 billion U.S. dollars. Ranked second with a considerably lower revenue of almost 9.1 billion U.S. dollars was China, followed by Japan and India.",
+   "note": "Worldwide; Top 15",
+   "source": "Statista; Statista Consumer Market Insights Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "China",
+    "Japan",
+    "India",
+    "Indonesia",
+    "Spain",
+    "Germany",
+    "United Kingdom",
+    "Vietnam",
+    "Nigeria",
+    "Australia",
+    "Netherlands",
+    "South Korea",
+    "Canada",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      96760,
+      9057,
+      5895,
+      5272,
+      4924,
+      4699,
+      4689,
+      3979,
+      3216,
+      2878,
+      2709,
+      1928,
+      1734,
+      1702,
+      1172
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Sales value of the leading kombucha brands in the U.S. in 2023 (in million U.S. dollars)",
+   "short": "Sales value of the leading kombucha brands in the U.S. 2023",
+   "unit": "million U.S. dollars",
+   "description": "As of October 8, 2023, GTs was the most popular brand of kombucha in the United States based on sales value. GTs had sales exceeding 314 million U.S. dollars and was almost triple the sales of the next leading brand, Health Ade Kombucha.",
+   "note": "United States; 52 weeks ended October 8, 2023",
+   "source": "BevNET; Circana Sales value in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "GTs",
+    "Health Ade Kombucha",
+    "Kevita",
+    "Brew Dr Kombucha",
+    "Private label",
+    "Humm",
+    "Aqua Vitea Kombucha",
+    "Health Ade Plus",
+    "Mother Kombucha",
+    "221 B C Kombucha"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      314.13,
+      113.08,
+      53.33,
+      37.21,
+      27.49,
+      23.43,
+      4.68,
+      4.31,
+      3.07,
+      2.92
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Sales of the leading weight control/nutritionals drink brands in the United States in 2022 (in million U.S. dollars)",
+   "short": "Weight control/nutritionals drink brand sales in the United States in 2022",
+   "unit": "million U.S. dollars",
+   "description": "The statistic shows the net sales of weight control/nutritionals drink brands in the United States in 2022. In the 52 weeks ended May 15, 2022, Ensure had the highest sales of 765.68 million U.S. dollars, topping other weight control drink brands in the United States.",
+   "note": "United States; 52 weeks ended May 15, 2022",
+   "source": "Beverage Industry Magazine; IRI Sales in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Ensure",
+    "Premier",
+    "Boost",
+    "Celsius",
+    "Private label"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      765.68,
+      699.94,
+      433.9,
+      405.15,
+      363.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Market share of the leading weight control/nutritionals drink brands in the United States in 2022, based on sales",
+   "short": "Key brands' market share of weight control/nutritionals drink brands in the U.S. 2022",
+   "unit": "",
+   "description": "Ensure had the highest market share (14 percent) of weight control/nutritional drink brands in the United States in 2022, based on sales. In the 52 weeks that ended May 15, 2022, Premier followed with a market share of nearly 13 percent, topping other weight control drink brands in the United States.",
+   "note": "United States; 52 weeks ended May 15, 2022",
+   "source": "Beverage Industry Magazine; IRI Market share",
+   "kind": "categorical",
+   "categories": [
+    "Ensure",
+    "Premier",
+    "Boost",
+    "Celsius",
+    "Private label"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1402,
+      0.1282,
+      0.0794,
+      0.0742,
+      0.0665
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Revenue of the coffee market in the United States from 2018 to 2028, by segment (in billion U.S. dollars)",
+   "short": "Coffee market revenue in the United States 2018-2028, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "Significant fluctuations are estimated for all segments over the forecast period for the indicator 'Revenue, Combined'. Only for the segment Roast Coffee, a significant increase can be observed over the forecast period. Here, the indicator exhibits a difference of 10.95 billion U.S. dollars between 2018 and 2028.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Roast Coffee",
+     "values": [
+      64.23,
+      67.53,
+      55.79,
+      65.87,
+      69.69,
+      70.27,
+      72.1,
+      73.07,
+      74.07,
+      74.15,
+      75.18
+     ]
+    },
+    {
+     "name": "Instant Coffee",
+     "values": [
+      14.16,
+      14.91,
+      11.87,
+      14.12,
+      14.79,
+      14.72,
+      14.64,
+      14.59,
+      14.54,
+      14.3,
+      14.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Do you think drinking coffee is healthy?",
+   "short": "Opinions on the effects of coffee on health in the United States 2022",
+   "unit": "",
+   "description": "In 2022, out of almost one thousand U.S respondents, 36 percent considered coffee as beneficial to a person's health while 32 percent of the participants stated that coffee has no effect on a person's health.",
+   "note": "United States; September 21 to 25, 2022; 998 respondents; 18 years and older",
+   "source": "YouGov",
+   "kind": "categorical",
+   "categories": [
+    "Is beneficial to a person's health",
+    "Has no effect on a person's health",
+    "Is detrimental to a person's health",
+    "Not sure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.36,
+      0.32,
+      0.11,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Do you usually drink caffeinated of decaffeinated coffee?",
+   "short": "Preferences of caffeinated and decaffeinated coffee in the United States 2022",
+   "unit": "",
+   "description": "In 2022, out of almost one thousand U.S respondents, 79 percent drank caffeinated coffee, whereas ten percent of the participants drank decaffeinated coffee. The same percentage of respondents stated that they drank both types equally.",
+   "note": "United States; September 21 to 25, 2022; 747 respondents; 18 years and older; Refers to respondents who drink coffee",
+   "source": "YouGov",
+   "kind": "categorical",
+   "categories": [
+    "Caffeinated",
+    "Decaf",
+    "Both equally",
+    "Not sure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.79,
+      0.1,
+      0.1,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "What do you think of cold brew coffee?",
+   "short": "Opinions on cold brew coffee in the United States 2022",
+   "unit": "",
+   "description": "During a survey conducted in 2022 in the United States, 29 percent of respondents stated that they like cold brew coffee. A share of 22 percent were not sure if they like the drink or not.",
+   "note": "United States; September 21 to 25, 2022; 724 respondents; 18 years and older; Refers to respondents who drink coffee",
+   "source": "YouGov",
+   "kind": "categorical",
+   "categories": [
+    "Love it",
+    "Like it",
+    "Dislike it",
+    "Hate it",
+    "Not sure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.18,
+      0.29,
+      0.17,
+      0.14,
+      0.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Sales of ready-to-drink (RTD) tea in convenience stores in the United States in 2022, by brand (in million U.S. dollars)",
+   "short": "Canned and bottled tea sales in U.S. c-stores 2022, by brand",
+   "unit": "million U.S. dollars",
+   "description": "For the 52 weeks ended on December 26, 2022, Pure Leaf was the best-selling canned and bottled ready-to-drink tea brand in U.S. C-stores, with dollar sales reaching approximately 371 million U.S. dollars. Arizona iced tea ranked in second place, with sales amounting to around 298 million U.S. dollars.",
+   "note": "United States; 52 weeks ended January 1, 2023",
+   "source": "CSP; IRI",
+   "kind": "categorical",
+   "categories": [
+    "Pure Leaf",
+    "Arizona",
+    "Brisk",
+    "Gold Peak",
+    "Monster"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      371,
+      298.4,
+      215.1,
+      211.8,
+      149.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Retail sales of organic black tea in the United States from 2016 to 2021 (in million U.S dollars)",
+   "short": "Retail sales of organic black tea in the United States 2016-2021",
+   "unit": "million U.S dollars",
+   "description": "Overall, retail sales of organic black tea in the United States increased from 2016 to 2021. In 2020, the organic black tea sales increased to 101 million U.S. dollars and declined to approximately 92 million U.S. dollars in the year that followed.",
+   "note": "United States; 2016 to 2021",
+   "source": "Agriculture and Agri-Food Canada; Euromonitor",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      67.1,
+      74.6,
+      80.3,
+      82.9,
+      101,
+      92.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Retail sales value of organic green tea in the United States from 2016 to 2021 (in million U.S dollars)",
+   "short": "Retail sales value of organic green tea in the United States 2016-2021",
+   "unit": "million U.S dollars",
+   "description": "Overall the retail sales of organic green tea in the United States increased from 2016 to 2021. In 2020, the sales grew to approximately 90 million U.S dollars while in the following year, sales declined to 80.7 million U.S dollars.",
+   "note": "United States; 2016 to 2021",
+   "source": "Agriculture and Agri-Food Canada; Euromonitor",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      61.9,
+      65.5,
+      68.8,
+      71.5,
+      89.9,
+      80.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Organic green tea companies in the United States in 2021, by retail sales value (in million U.S dollars)",
+   "short": "Organic green tea companies in the United States 2021, by retail sales value",
+   "unit": "million U.S dollars",
+   "description": "In 2021, Numi was one of the leading companies in the organic green tea market in the United States with a retail sales value of 13.2 million U.S. dollars. RC Bigelow ranked second that year, with a retail sales value of approximately seven million U.S dollars.",
+   "note": "United States; 2021",
+   "source": "Agriculture and Agri-Food Canada; Euromonitor",
+   "kind": "categorical",
+   "categories": [
+    "Numi Inc",
+    "RC Bigelow Inc",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.2,
+      6.6,
+      60.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Market share of organic green tea companies in the United States in 2021",
+   "short": "Market share of organic green tea companies in the United States 2021",
+   "unit": "",
+   "description": "In 2021, Numi Inc. was one of the leading organic green tea companies in the United States with a market share of 16.4 percent. Numi Inc. is known for its variety of organic and fair trade and certified teas. It was followed by RC Bigelow Inc, with a market share of 8.2 percent.",
+   "note": "United States; 2021",
+   "source": "Agriculture and Agri-Food Canada; Euromonitor",
+   "kind": "categorical",
+   "categories": [
+    "Numi Inc",
+    "RC Bigelow Inc",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.164,
+      0.082,
+      0.755
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Energy drink sales in the United States from 2017 to 2023 (in billion U.S. dollars)",
+   "short": "U.S. energy drink sales 2017-2023",
+   "unit": "billion U.S. dollars",
+   "description": "Energy drinks in the United States have increased in popularity in recent years. In 2017, energy drink sales in the United States amounted to 11 billion U.S. dollars and reached around 18.5 billion U.S. dollars by 2023.",
+   "note": "United States; 2017 to 2023",
+   "source": "Beverage Industry Magazine; IRI",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11.05,
+      10.9,
+      11.75,
+      12.81,
+      13.97,
+      16.12,
+      18.51
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Leading energy drink brands in the United States in 2023, based on sales (in billion U.S. dollars)*",
+   "short": "Leading energy drink brands in the U.S. 2023 based on sales",
+   "unit": "",
+   "description": "This ranking shows the leading energy drink brands in the United States in 2023, based on sales. In that year, the leading energy drink brand in the United States was Red Bull, based on generated sales of about 7.34 billion U.S. dollars.",
+   "note": "United States; 52 weeks ended May 21, 2023",
+   "source": "Beverage Industry Magazine; IRI Sales in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Red Bull",
+    "Monster",
+    "Celsius",
+    "Bang",
+    "Rockstar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.34,
+      5.52,
+      1.1,
+      0.79,
+      0.72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Energy shot sales in the United States from 2013 to 2022 (in million U.S. dollars)",
+   "short": "U.S. energy shot dollar sales 2013-2022",
+   "unit": "million U.S. dollars",
+   "description": "Sales of energy shots have gradually decreased year-on-year in the United States. For the 52 weeks ending May 15, 2022, the U.S. energy shot category generated sales amounting to around 980 million U.S. dollars, up from over 932 million U.S. dollars in the previous year.",
+   "note": "United States; 2013 to 2022",
+   "source": "Beverage Industry Magazine; IRI",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1263.24,
+      1178.39,
+      1149.96,
+      1179.46,
+      1093.34,
+      1066.25,
+      1045.98,
+      977.83,
+      932.81,
+      980.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Leading energy shot brands in the United States in 2022, based on market share",
+   "short": "Leading U.S. energy shot brands based on market share 2022",
+   "unit": "",
+   "description": "This ranking illustrates the market share of the ten leading energy shot brands in the United States in 2022. For the 52 weeks ended on May 15, 2022, 5 Hour Energy was the leading energy shot brand in the U.S., with a market share of 88.4 percent.",
+   "note": "United States; 52 weeks ended May 15, 2022",
+   "source": "Beverage Industry Magazine; IRI Market share",
+   "kind": "categorical",
+   "categories": [
+    "5 Hour Energy",
+    "Tweaker",
+    "Stacker",
+    "VPX",
+    "Private Label"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.885,
+      0.026,
+      0.026,
+      0.022,
+      0.009
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Sales of the leading non-aseptic sport drink brands in the United States in 2023 (in billion U.S. dollars)",
+   "short": "Sales of the leading non-aseptic sport drink brands in the U.S. 2023",
+   "unit": "billion U.S. dollars",
+   "description": "This graph shows the sales of the leading non-aseptic sport drink brands in the United States in 2023. For the 52 weeks ended May 21, 2023, Gatorade was the leading non-aseptic sports drink brand in the United States with about seven billion U.S. dollars worth of sales.",
+   "note": "United States; 52 weeks ended May 21, 2023",
+   "source": "Beverage Industry Magazine; IRI Sales in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Gatorade",
+    "BodyArmour",
+    "Powerade",
+    "Electrolit",
+    "Prime"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.06,
+      1.49,
+      1.22,
+      0.4,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Market share of the leading non-aseptic sport drink brands in the United States in 2022, based on dollar sales",
+   "short": "Market share of the leading non-aseptic sport drink brands in the U.S. 2022",
+   "unit": "",
+   "description": "This graph shows the market share of the leading non-aseptic sport drink brands in the United States in 2022, based on dollar sales. For the 52 weeks ending May 15, 2022, Gatorade was the first ranked non-aseptic sports drink brand in the United States with a market share of just over 65 percent.",
+   "note": "United States; 52 weeks ended May 15, 2022",
+   "source": "Beverage Industry Magazine; IRI Market share",
+   "kind": "categorical",
+   "categories": [
+    "Gatorade",
+    "BODYARMOR",
+    "Powerade",
+    "Electrolit",
+    "Private Label"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6508,
+      0.1717,
+      0.1308,
+      0.0309,
+      0.0057
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Net revenue of The Alkaline Water Company Inc. from 2015 to 2022 (in 1,000 U.S dollars)",
+   "short": "Net revenue of The Alkaline Water Company Inc. 2015-2022",
+   "unit": "1,000 U.S dollars",
+   "description": "In 2022, The Alkaline Water Company Inc. reported a net revenue of nearly 60.6 million U.S dollars, being the company's highest revenue during the shown period. The previous year, the company reported a net revenue of roughly 46 million U.S dollars.",
+   "note": "United States; 2015 to 2022",
+   "source": "The Alkaline Water Company Inc.",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3700,
+      7089,
+      12764,
+      19812,
+      32200,
+      38430,
+      46069,
+      60596
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Gross profit of The Alkaline Water Company Inc. from 2015 to 2022 (in 1,000 U.S dollars)",
+   "short": "Gross profit of The Alkaline Water Company Inc. 2015-2022",
+   "unit": "1,000 U.S dollars",
+   "description": "In 2022, The Alkaline Water Company Inc. reported a gross profit of roughly 15.2 million U.S dollars. In 2020, The Alkaline Water Company Inc. reached its all time high, earning approximately 17 million U.S dollars in gross profit.",
+   "note": "United States; 2015 to 2022",
+   "source": "The Alkaline Water Company Inc.",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3700,
+      7089,
+      12764,
+      19812,
+      32200,
+      38430,
+      46069,
+      60596
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Net sales of National Beverage Corp. from 2015 to 2022 (in 1,000 U.S dollars)",
+   "short": "Net sales of National Beverage Corp. 2015-2022",
+   "unit": "1,000 U.S dollars",
+   "description": "National Beverage's net sales increased overall from 2015 to 2022. In 2022, National Beverage Corp. generated sales worth roughly 1.14 billion U.S dollars.",
+   "note": "United States; 2015 to 2022",
+   "source": "National Beverage",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      645825,
+      704785,
+      826918,
+      975734,
+      1014105,
+      1000394,
+      1072210,
+      1138013
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Gross profit of National Beverage Corp. from 2015 to 2022 (in 1,000 U.S dollars)",
+   "short": "Gross profit of National Beverage Corp. 2015-2022",
+   "unit": "1,000 U.S dollars",
+   "description": "There is a general increase in National Beverage's gross profits from 2015 to 2022. In 2022, National Beverage Corp. generated a gross profit worth roughly 418 million U.S dollars.",
+   "note": "United States; 2015 to 2022",
+   "source": "National Beverage",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      219140,
+      241437,
+      326077,
+      391135,
+      384350,
+      370140,
+      421616,
+      417805
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Revenue of Celsius Holdings from 2017 to 2022 (in 1,000 U.S. dollars)",
+   "short": "Celsius Holdings annual revenue 2017-2022",
+   "unit": "1,000 U.S. dollars",
+   "description": "Displayed is the yearly revenue of Celsius Holdings from 2017 to 2022. In 2017, the company's total yearly gross sales equated to nearly 36 million U.S. dollars. Since then, there has been a steady increase in yields. Celsius Holdings' revenue grew exponentially in 2020, to about 130 million U.S. dollars. Earnings for the company continued to climb in 2021 and 2022, peaking at alomst 654 million U.S. dollars.",
+   "note": "United States; 2017 to 2022",
+   "source": "Celsius Holdings",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      36164,
+      52604,
+      75147,
+      130726,
+      314272,
+      653604
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Revenue of Celsius Holdings in 2022, by region (in 1,000 U.S. dollars)",
+   "short": "Regional revenue of Celsius Holdings in 2022",
+   "unit": "1,000 U.S. dollars",
+   "description": "In 2022, the region with the highest reported revenue of Celsius Holdings was North America, with around 618 million U.S. dollars. In contrast, Asia amounted to nearly 3.7 million U.S. dollars in revenue. The main contributor to Celsius Holdings' regional Asian revenue is generated from their Chinese license.",
+   "note": "United States; 2022",
+   "source": "Celsius Holdings",
+   "kind": "categorical",
+   "categories": [
+    "North America",
+    "Europe",
+    "Asia",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      617457,
+      31054,
+      3647,
+      1446
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Gross profit of Celsius Holdings from 2017 to 2022 (in 1,000 U.S. dollars)",
+   "short": "Celsius Holdings gross profit 2017-2022",
+   "unit": "1,000 U.S. dollars",
+   "description": "Shown are the gross profits of Celsius Holdings from 2017 to 2022. The company's gross profits have increased year-to-year since 2017. In 2022, gross profits for Celsius Holdings soared to about 271 million U.S. dollars.",
+   "note": "United States; 2017 to 2022",
+   "source": "Celsius Holdings",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15431,
+      21060,
+      31302,
+      60974,
+      128169,
+      270869
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Net sales of The Vita Coco Company Inc. from 2020 to 2022 (in 1,000 U.S. dollars)",
+   "short": "Net sales of The Vita Coco Company Inc. 2020-2022",
+   "unit": "1,000 U.S. dollars",
+   "description": "The Vita Coco Company`s brands include the coconut water Vita Coco, the energy drink Runa, canned water Ever & Ever, and protein-infused water PWR LIFT. In the last three years, the company's net sales have increased steadily, peaking at almost 428 million U.S. dollars in 2022.",
+   "note": "United States; 2020 to 2022",
+   "source": "Vita Coco",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      310644,
+      379513,
+      427787
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Net sales of The Vita Coco Company Inc. in 2022, by operating segment and product group (in 1,000 U.S. dollars)",
+   "short": "Net sales of The Vita Coco Company Inc. 2022, by segment and product",
+   "unit": "1,000 U.S. dollars",
+   "description": "The Vita Coco Company`s brands include the coconut water Vita Coco, the energy drink Runa, canned water Ever & Ever, and protein-infused water PWR LIFT. Most of the company's net sales were generated in the American market, amounting to nearly 374 million U.S. dollars in 2022. The brand's coconut water seemed to be the most popular.",
+   "note": "United States; 2022",
+   "source": "Vita Coco",
+   "kind": "categorical",
+   "categories": [
+    "Vita Coco Coconut Water",
+    "Private Label",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Americas segment",
+     "values": [
+      275964,
+      88173,
+      9485
+     ]
+    },
+    {
+     "name": "International segment",
+     "values": [
+      38570,
+      12855,
+      2740
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Gross profit of The Vita Coco Company Inc. from 2020 to 2022 (in 1,000 U.S. dollars)",
+   "short": "Gross profit of The Vita Coco Company Inc. 2020-2022",
+   "unit": "1,000 U.S. dollars",
+   "description": "The Vita Coco Company`s brands include the coconut water Vita Coco, the energy drink Runa, canned water Ever & Ever, and protein-infused water PWR LIFT. In the last three years, the company's gross profit fluctuated slightly, amounting to roughly 103 million U.S. dollars in 2022.",
+   "note": "United States; 2020 to 2022",
+   "source": "Vita Coco",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      104858,
+      113148,
+      103361
+     ]
+    }
+   ]
+  }
+ ]
+}

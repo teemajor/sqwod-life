@@ -1,0 +1,1184 @@
+{
+ "studyId": "79430",
+ "study": "fitness industry in latin america",
+ "file": "research/statista/study_id79430_fitness-industry-in-latin-america.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Market size of the global health club industry from 2009 to 2019 (in billion U.S. dollars)",
+   "short": "Total revenue of the global health club industry 2009-2019",
+   "unit": "billion U.S. dollars",
+   "description": "The statistic depicts the global market size of the health club industry from 2009 to 2019. In 2019, the global health and fitness club industry generated estimated revenues of 96.7 billion U.S. dollars.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      67.19,
+      70.93,
+      72.75,
+      75.75,
+      78.17,
+      84.3,
+      81.2,
+      83.15,
+      87.23,
+      94,
+      96.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Expenditure on recreational physical activities in Latin America and the Caribbean in 2018, by segment (in billion U.S. dollars)",
+   "short": "Latin America: expenditure on recreational physical activities 2018, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "In 2018, expenditure on sports and active recreation activities in Latin America and the Caribbean reached approximately 9.9 billion U.S. dollars, while spending on fitness amounted to 5.9 billion dollars.",
+   "note": "2018; Includes consumer expenditures on classes, memberships, entry fees, trainers, and related services and methods of participation",
+   "source": "Global Wellness Institute",
+   "kind": "categorical",
+   "categories": [
+    "Sports & active recreation",
+    "Fitness",
+    "Mindful movement"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      9.9,
+      5.9,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Countries with the highest expenditure on recreational physical activities in Latin America and the Caribbean in 2018 (in million U.S. dollars)",
+   "short": "Latin America: main countries in recreational physical activities expenditure 2018",
+   "unit": "million U.S. dollars",
+   "description": "In 2018, spending on sports and active recreation, fitness, and mindful movement-related activities reached almost 5.9 billion U.S dollars in Brazil, followed by Mexico where the expenditure on these activities amounted to approximately 4.15 billion dollars.",
+   "note": "2018",
+   "source": "Global Wellness Institute Expenditure in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Brazil",
+    "Mexico",
+    "Argentina",
+    "Colombia",
+    "Chile",
+    "Peru",
+    "Ecuador",
+    "Cuba",
+    "Dominican Republic",
+    "Costa Rica"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5896.1,
+      4153.5,
+      1621.8,
+      991.5,
+      674,
+      609.9,
+      348.9,
+      222.3,
+      186.3,
+      177.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Revenue for the eServices Fitness market in Latin America from 2017 to 2024, by segment (in million U.S. dollars)",
+   "short": "Latin America: eServices Fitness market revenue 2017-2024, by segment",
+   "unit": "million U.S. dollars",
+   "description": "According to the Digital Market Outlook, the revenue of the eServices Fitness segment Apps in Latin America is expected to reach close to 234 million U.S. dollars in 2024. An overview of all Digital Markets can be found here.",
+   "note": "LAC; August 2020; forecast adjusted for the impact of COVID-19",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Wearables",
+     "values": [
+      592.7,
+      655.17,
+      718.77,
+      932.41,
+      900.41,
+      890.21,
+      899.7,
+      922.28
+     ]
+    },
+    {
+     "name": "Apps",
+     "values": [
+      52.15,
+      66.55,
+      85.97,
+      122.46,
+      152.34,
+      182.21,
+      209.69,
+      233.94
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Distribution of the eServices Fitness market in Latin America and the Caribbean in 2022, by country",
+   "short": "Latin America & the Caribbean: eServices Fitness market share 2022, by country",
+   "unit": "",
+   "description": "Comparing the 20 selected regions regarding the users penetration in the 'Fitness' segment of the eservices market, Brazil is leading the ranking (15.65 percent) and is followed by Mexico with 13.92 percent. At the other end of the spectrum is Haiti with 1.89 percent, indicating a difference of 13.76 percentage points to Brazil.",
+   "note": "LAC; Jan 1st to Dec 31st 2022; forecast adjusted for the impact of COVID-19 / excludes Venezuela",
+   "source": "Statista; Statista Digital Market Insights Market share",
+   "kind": "categorical",
+   "categories": [
+    "Brazil",
+    "Mexico",
+    "Argentina",
+    "Uruguay",
+    "Colombia",
+    "Ecuador",
+    "Chile",
+    "Panama",
+    "Guatemala",
+    "Jamaica",
+    "Costa Rica",
+    "Cuba",
+    "Dominican Republic",
+    "Bolivia",
+    "Peru"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1565,
+      0.1392,
+      0.1283,
+      0.0711,
+      0.0591,
+      0.0536,
+      0.053,
+      0.0527,
+      0.0519,
+      0.0476,
+      0.0473,
+      0.0434,
+      0.043,
+      0.0415,
+      0.0399
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Fitness and health service purchases in Brazil as of March 2024",
+   "short": "Fitness and health service purchases in Brazil 2024",
+   "unit": "",
+   "description": "25 percent of Brazilian respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2024, among 2,021 consumers.",
+   "note": "Brazil; April 2023 to March 2024; 2021 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Online services (website or apps)",
+    "Personal trainer",
+    "Individual sports course / class",
+    "Sports club membership",
+    "Wellness services (e.g., massage)",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.25,
+      0.16,
+      0.1,
+      0.09,
+      0.08,
+      0.07,
+      0.64,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Fitness and health service purchases in Mexico as of March 2024",
+   "short": "Fitness and health service purchases in Mexico 2024",
+   "unit": "",
+   "description": "18 percent of Mexican respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2024, among 2,027 consumers.",
+   "note": "Mexico; April 2023 to March 2024; 2027 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Online services (website or apps)",
+    "Wellness services (e.g., massage)",
+    "Individual sports course / class",
+    "Personal trainer",
+    "Sports club membership",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.18,
+      0.12,
+      0.09,
+      0.07,
+      0.07,
+      0.06,
+      0.72,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Average cost of a monthly gym membership in Rio de Janeiro, Brazil from 2014 to 2019 (in U.S. dollars)",
+   "short": "Brazil: gym membership cost in Rio de Janeiro 2014-2019",
+   "unit": "U.S. dollars",
+   "description": "This statistic displays the average cost of a monthly gym membership in Rio de Janeiro, Brazil from 2014 to 2019 — considering establishments located in the city's business district. In 2019, the cost of a monthly gym membership in Rio amounted to approximately 30.1 U.S. dollars, down from 43.3 U.S. dollars a year earlier.",
+   "note": "Brazil; 2014 to 2019; In gyms located in the city's business district.",
+   "source": "Deutsche Bank Research",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      71.6,
+      55.1,
+      45.8,
+      48.9,
+      43.3,
+      30.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Average cost of a monthly gym membership in São Paulo, Brazil from 2014 to 2019 (in U.S. dollars)",
+   "short": "Brazil: gym membership cost in São Paulo 2014-2019",
+   "unit": "U.S. dollars",
+   "description": "This statistic displays the average cost of a monthly gym membership in São Paulo, Brazil from 2014 to 2019 — considering establishments located in the city's business district. In 2019, the cost of a monthly gym membership in São Paulo amounted to approximately 36.4 U.S. dollars, down from 51.9 U.S. dollars a year earlier.",
+   "note": "Brazil; 2014 to 2019; In gyms located in the city's business district.",
+   "source": "Deutsche Bank Research",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      114.9,
+      78.9,
+      55.4,
+      62.8,
+      51.9,
+      36.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Average cost of a monthly gym membership in Mexico City from 2014 to 2019 (in U.S. dollars)",
+   "short": "Mexico: gym membership cost in Mexico City 2014-2019",
+   "unit": "U.S. dollars",
+   "description": "This statistic displays the average cost of a monthly gym membership in Mexico City from 2014 to 2019 — considering establishments located in the city's business district. In 2019, the cost of a monthly gym membership in Mexico City amounted to approximately 67.2 U.S. dollars, up from 55.8 U.S. dollars a year earlier.",
+   "note": "Mexico; 2014 to 2019; In gyms located in the city's business district.",
+   "source": "Deutsche Bank Research",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      114.3,
+      72,
+      61,
+      66.5,
+      55.8,
+      67.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Number of active clients of fitness centers run by Grupo Sports World from 2011 to 2023 (in 1,000s)",
+   "short": "Sports World: active members 2011-2023",
+   "unit": "1,000s",
+   "description": "In 2023, Grupo Sports World - a health club chain based in Mexico - reached 80.4 thousand active clients. This represented an increase of roughly six percent compared to the previous year.",
+   "note": "Mexico; 2011 to 2023",
+   "source": "Sports World",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      28.49,
+      43.5,
+      51.4,
+      56.9,
+      67.26,
+      72.99,
+      84.82,
+      83.78,
+      90.6,
+      50.54,
+      50.4,
+      75.63,
+      80.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Average monthly number of member visits to Sports World's studios from 2010 to 2023 (in 1,000s)",
+   "short": "Sports World: member visits to fitness centers 2010-2023",
+   "unit": "1,000s",
+   "description": "In 2023, the facilities of Grupo Sports World - a health club chain from Mexico were visited on average over 614 thousand times a month. The company's revenue amounted to almost 1.8 billion Mexican pesos in the same year.",
+   "note": "Mexico; 2010 to 2023",
+   "source": "Sports World",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      193.4,
+      200,
+      271.9,
+      334.8,
+      398.2,
+      482.2,
+      555.4,
+      653.6,
+      759.9,
+      702.4,
+      117.5,
+      339.7,
+      444.4,
+      614.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of customers of fitness centers run by Smart Fit in Brazil from 2017 to 2023 (in 1,000s)",
+   "short": "Smart Fit: active members in Brazil 2017-2023",
+   "unit": "1,000s",
+   "description": "In 2023, there were more than 1.9 thousand customers of fitness centers run by SmartFit in Brazil. The number of members increased by roughly 13 percent from the previous year. The growth experienced showed that the Brazilian gym operator was able to surpass pre-pandemic levels of membership that year.",
+   "note": "Brazil; 2017 to 2023; as of year-end including members of own brand establishments, franchises as well as Bio Ritmo and O2 gyms",
+   "source": "Smart Fit",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1047,
+      1301,
+      1628,
+      1317,
+      1407,
+      1720,
+      1952
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of customers of fitness centers run by Smart Fit in Mexico from 2017 to 2023 (in 1,000s)",
+   "short": "Smart Fit: active members in Mexico 2017-2023",
+   "unit": "1,000s",
+   "description": "By the end of 2023, Smart Fit had gained 219 thousand members in Mexico versus the previous year. The Brazilian fitness company had a total of 318 establishments in the North American country that same year.",
+   "note": "Mexico; 2017 to 2023; as of year-end including members of own brand establishments, franchises, and other gyms managed by SmartFit",
+   "source": "Smart Fit",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      258,
+      378,
+      490,
+      395,
+      449,
+      681,
+      900
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Revenue of Grupo Sports World from 2012 to 2023 (in million Mexican pesos)",
+   "short": "Sports World: annual revenue 2012-2023",
+   "unit": "million Mexican pesos",
+   "description": "In 2023, the revenue of the Mexican fitness club chain Sports World amounted to almost 1.8 billion Mexican pesos (around 98 million U.S. dollars based on the exchange rates of June 18th, 2024). This represented an increase of roughly 36 percent compared to the previous year.",
+   "note": "Mexico; 2012 to 2023; consolidated figures",
+   "source": "Sports World",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      697.3,
+      892.3,
+      1061.5,
+      1191.6,
+      1363.9,
+      1665.8,
+      1934.4,
+      2015,
+      907.1,
+      648.8,
+      1307.7,
+      1780.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Revenue of the Grupo Sports World in 2019 and 2023, by source (in million Mexican pesos)",
+   "short": "Sports World: revenue by source 2019-2023",
+   "unit": "million Mexican pesos",
+   "description": "The maintenance fees paid by Sports World's clients were the main source of revenue for the Mexican fitness chain between 2019 and 2023. New membership fees, on the other hand, represented only 48.5 million Mexican pesos in revenue for Sports World.",
+   "note": "Mexico; 2019 to 2023",
+   "source": "Sports World",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Maintenance fees",
+     "values": [
+      1580,
+      754.4,
+      476,
+      967,
+      1400.1
+     ]
+    },
+    {
+     "name": "Classes, guest fees, reactivation & summer courses",
+     "values": [
+      349.8,
+      95.6,
+      80.9,
+      90,
+      150.8
+     ]
+    },
+    {
+     "name": "Sports programs",
+     "values": [
+      28.1,
+      43.3,
+      69.9,
+      112.5,
+      144.9
+     ]
+    },
+    {
+     "name": "Memberships",
+     "values": [
+      57.1,
+      13.8,
+      22.1,
+      37.6,
+      48.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Net operating revenue of Smart Fit from 2020 to 2023, by main country (in million Brazilian reals)",
+   "short": "Smart Fit: net operating revenue 2020-2023, by main market",
+   "unit": "million Brazilian reals",
+   "description": "In 2023, Smart Fit generated more than 1.6 billion Brazilian reals in revenue in its home country, growing by roughly eight percent versus the previous year. The Brazilian gym chain also generated a revenue amounting to more than 1.2 billion Brazilian reals in the rest of Latin America in 2023.",
+   "note": "LAC; 2020 to 2023; consolidated figures; *Including Bio Ritmo and other brands. Figures prior to 2022 were retrieved from previous reports. Read more",
+   "source": "Smart Fit",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Brazil*",
+     "values": [
+      754.8,
+      944.1,
+      1513,
+      1627.4
+     ]
+    },
+    {
+     "name": "Mexico",
+     "values": [
+      291.7,
+      349.2,
+      635.1,
+      1001.8
+     ]
+    },
+    {
+     "name": "Rest of Latin America",
+     "values": [
+      209.7,
+      413.5,
+      782.3,
+      1233.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Net operating revenue of Smart Fit from 2014 to 2023 (in million Brazilian reals)",
+   "short": "Smart Fit: net operating revenue 2014-2023",
+   "unit": "million Brazilian reals",
+   "description": "Brazilian fitness club Smart Fit, headquartered in the city of São Paulo, reported a net revenue of roughly 4.2 billion Brazilian reals in 2023. The net revenue generated in that year represented an increase of about 45 percent compared to 2022.",
+   "note": "LAC; consolidated figures including own brand establishments and franchises as well as Bio Ritmo and other brands acquired by the company",
+   "source": "Smart Fit",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      408.2,
+      535.7,
+      641.2,
+      745.6,
+      1160,
+      1983.9,
+      1256.2,
+      1706.9,
+      2930.4,
+      4244.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Net operating revenue of Smart Fit in Brazil from 2020 to 2023, by brand (in million Brazilian reals)",
+   "short": "Smart Fit: net operating revenue in Brazil 2020-2023, by brand",
+   "unit": "million Brazilian reals",
+   "description": "The operating revenue generated by Smart Fit in Brazil grew by around 33 percent in 2023. In the previous year, the gym chain's revenue in the South American country amounted to more than 1.2 billion Brazilian reals.",
+   "note": "Brazil; 2020-2023; consolidated figures",
+   "source": "Smart Fit",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "SmartFit",
+     "values": [
+      600.7,
+      727.5,
+      1224.3,
+      1627.4
+     ]
+    },
+    {
+     "name": "Bio Ritmo",
+     "values": [
+      54.2,
+      57.4,
+      99.6,
+      131.2
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      99.9,
+      159.2,
+      189.1,
+      243.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Number of fitness centers and gyms run by Smart Fit in Latin America as of 4th quarter 2023, by country",
+   "short": "Smart Fit: clubs in Latin America 2023, by country",
+   "unit": "",
+   "description": "As of the fourth quarter of 2023, Brazilian gym chain Smart Fit reported operating a total of 1,438 fitness centers and gyms across Latin America. Almost half of these gyms were located in Brazil, while 318 were in Mexico.",
+   "note": "Q4 2023; includes own brand establishments, franchises as well as Bio Ritmo and O₂ gyms",
+   "source": "Smart Fit",
+   "kind": "categorical",
+   "categories": [
+    "Brazil",
+    "Mexico",
+    "Others Latin America"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      706,
+      318,
+      414
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Number of fitness centers and gyms run by Smart Fit in Brazil from 2017 to 2023",
+   "short": "Smart Fit: clubs in Brazil 2017-2023",
+   "unit": "",
+   "description": "Brazilian franchise Smart Fit reported 706 fitness clubs operating in Brazil at the end of the final quarter of 2023. This represented an increase in operating units of roughly 11 percent compared to the same period of 2022.",
+   "note": "Brazil; 2017 to 2023; as of year-end including owned and franchised establishments as well as Bio Ritmo and O2 gyms",
+   "source": "Smart Fit",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      326,
+      399,
+      488,
+      527,
+      602,
+      634,
+      706
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Number of fitness centers and gyms run by Smart Fit in Mexico from 2017 to 2023",
+   "short": "Smart Fit: clubs in Mexico 2017-2023",
+   "unit": "",
+   "description": "The number of Smart Fit clubs in Mexico amounted to 318 in 2023, continuing the upward trend registered since 2017. The growth represented a 25.2 percent increase in Smart Fit gyms in the country compared to the same period in 2022. Smart Fit is a Brazilian fitness company, which was founded in São Paulo in 2009. In its home country, Smart Fit operated 706 centers at the end of 2023.",
+   "note": "Mexico; 2017 to 2023; as of year-end including owned and franchised units as well as other brands managed by the company",
+   "source": "Smart Fit",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      92,
+      121,
+      162,
+      182,
+      201,
+      254,
+      318
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Funding amount of selected fitness startups in Latin America as of September 2020 (in 1,000 U.S. dollars)",
+   "short": "Latin America: funding amount of selected fitness startups 2020",
+   "unit": "1,000 U.S. dollars",
+   "description": "As of September 2020, investments raised by Mexico-based online fitness startup InstaFit amounted to about 1.3 million U.S. dollars. The company offers on-demand audio and video fitness classes with professional trainers, allowing users to exercise from home. Meanwhile, Chilean fitness startup MuvPass, which was acquired by U.S. American company ClassPass in March 2020, reached approximately 100 thousand dollars in funding raised.",
+   "note": "LAC; As of September 2020; Active companies with headquarters in the region; * Acquired by ClassPass in March 2020. Date of release was not provided by the source, the publication date is the date of access. Figures have been rounded. Read more",
+   "source": "CrunchBase Funding in thousand U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "InstaFit",
+    "Fitpal",
+    "Mude Wellness Media",
+    "Ânimo Wellness",
+    "Savy",
+    "MuvPass*",
+    "EntrenaYa",
+    "Dude",
+    "Fero"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1300,
+      1000,
+      400,
+      300,
+      300,
+      100,
+      40,
+      30,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Weekly percentage of health and fitness app installs in Brazil during the coronavirus (COVID-19) outbreak from February to June 2020, by install type",
+   "short": "Brazil: weekly share of health & fitness app installs during COVID-19, by type",
+   "unit": "",
+   "description": "As a consequence of the temporary closure of gyms and wellness centers due to the outbreak of COVID-19, some Brazilians opted to exercise at home. Since the beginning of the pandemic in the South American country, the highest percentage of health and fitness app installs occurred in the week of April 14 to 20, when 8.16 percent of non-organic installations within the period from February to June 2020 were made.",
+   "note": "Brazil; February 25 to June 22, 2020",
+   "source": "AppsFlyer",
+   "kind": "categorical",
+   "categories": [
+    "Feb 25-Mar 2",
+    "Mar 3-9",
+    "Mar 10-16",
+    "Mar 17-23",
+    "Mar 24-30",
+    "Mar 31-Apr 6",
+    "Apr 7-13",
+    "Apr 14-20",
+    "Apr 21-27",
+    "Apr 28-May 4",
+    "May 5-11",
+    "May 12-18",
+    "May 19-25",
+    "May 26-June 1",
+    "June 2-8",
+    "June 9-15",
+    "June 16-22"
+   ],
+   "series": [
+    {
+     "name": "Organic",
+     "values": [
+      0.0436,
+      0.0404,
+      0.0427,
+      0.0673,
+      0.0682,
+      0.0602,
+      0.0559,
+      0.0596,
+      0.0616,
+      0.064,
+      0.0617,
+      0.064,
+      0.0617,
+      0.0578,
+      0.0675,
+      0.0587,
+      0.065
+     ]
+    },
+    {
+     "name": "Non-organic",
+     "values": [
+      0.0442,
+      0.0308,
+      0.0389,
+      0.0609,
+      0.0578,
+      0.0606,
+      0.0564,
+      0.0816,
+      0.0782,
+      0.0716,
+      0.0562,
+      0.0543,
+      0.0674,
+      0.0748,
+      0.0657,
+      0.0532,
+      0.0474
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Weekly percentage of health and fitness app installs in Mexico during the coronavirus (COVID-19) outbreak from February to June 2020, by install type",
+   "short": "Mexico: weekly share of health & fitness app installs during COVID-19, by type",
+   "unit": "",
+   "description": "With gyms and wellness centers closed down as a result of the COVID-19 pandemic and the restrictions imposed to control its spread, some Mexicans had to exercise from their homes. Since the beginning of the confinement, the highest percentage of health and fitness app installs occurred in the week of April 7 to 13, when 8.46 percent of non-organic installations within the period from February to June 2020 were made.",
+   "note": "Mexico; February 25 to June 22, 2020",
+   "source": "AppsFlyer",
+   "kind": "categorical",
+   "categories": [
+    "Feb 25-Mar 2",
+    "Mar 3-9",
+    "Mar 10-16",
+    "Mar 17-23",
+    "Mar 24-30",
+    "Mar 31-Apr 6",
+    "Apr 7-13",
+    "Apr 14-20",
+    "Apr 21-27",
+    "Apr 28-May 4",
+    "May 5-11",
+    "May 12-18",
+    "May 19-25",
+    "May 26-June 1",
+    "June 2-8",
+    "June 9-15",
+    "June 16-22"
+   ],
+   "series": [
+    {
+     "name": "Organic",
+     "values": [
+      0.0496,
+      0.0432,
+      0.0398,
+      0.0628,
+      0.0734,
+      0.0689,
+      0.0695,
+      0.0659,
+      0.064,
+      0.0679,
+      0.0564,
+      0.0593,
+      0.0568,
+      0.0524,
+      0.061,
+      0.0576,
+      0.0515
+     ]
+    },
+    {
+     "name": "Non-organic",
+     "values": [
+      0.0444,
+      0.038,
+      0.0361,
+      0.0635,
+      0.0626,
+      0.0722,
+      0.0846,
+      0.0828,
+      0.0715,
+      0.0561,
+      0.0574,
+      0.0648,
+      0.056,
+      0.0565,
+      0.0672,
+      0.0469,
+      0.0394
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Most-followed fitness and gym influencers on Instagram worldwide as of May 2020 (in millions)",
+   "short": "Most popular fitness and gym influencers on Instagram worldwide 2020",
+   "unit": "millions",
+   "description": "This statistic presents a ranking of the most popular fitness and gym influencers worldwide on Instagram as of May 2020, sorted by the number of followers. According to HypeAuditor, actor Dwayne \"The Rock\" Johnson was ranked first in the category over 184 million followers.",
+   "note": "Worldwide; May 2020; based on HypeAuditor database, wider industry metrics may vary",
+   "source": "HypeAuditor Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "therock",
+    "nike",
+    "thenotoriousmma",
+    "floydmayweather",
+    "schwarzenegger",
+    "ufc",
+    "miakhalifa",
+    "khabib_nurmagomedov",
+    "loganpaul",
+    "luisafernandaw",
+    "rohitsharma45",
+    "amandaeliselee",
+    "anllela_sagra",
+    "tammyhembrow",
+    "anthonyjoshua"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      184.46,
+      112.32,
+      36.65,
+      23.47,
+      20.78,
+      20.56,
+      20.43,
+      20.23,
+      17.91,
+      13.67,
+      13.67,
+      12.1,
+      11.68,
+      11.33,
+      11.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Number of followers of selected Latinx fitness Instagram influencers as of September 2020 (in millions)",
+   "short": "Number of followers of Latinx fitness and gym Instagram influencers 2020",
+   "unit": "millions",
+   "description": "Born in Venezuela and resident in the United States, fitness celebrity Michelle Lewin had approximately 13.6 million followers on Instagram worldwide as of September 2020. Meanwhile, the founder of MA Warrior Programs, Massy Arias, had a total of 2.7 million Instagram followers as of that date.",
+   "note": "Worldwide; September 7, 2020",
+   "source": "Instagram; Statista Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Michelle Lewin (@michelle_lewin)",
+    "Massy Arias (@massy.arias)",
+    "Lyzabeth Lopez (@lyzabethlopez)",
+    "Melissa Alcantara (@fitgurlmel)",
+    "Robin Arzón (@robinnyc)",
+    "Chady Dunmore (@__chady__)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.6,
+      2.7,
+      1.7,
+      1,
+      0.54,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Number of followers of selected Brazilian fitness Instagram influencers as of September 2020 (in millions)",
+   "short": "Number of followers of Brazilian fitness and gym Instagram influencers 2020",
+   "unit": "millions",
+   "description": "As of September 2020, Brazilian model and fitness enthusiast Mari Gonzalez had approximately 10.3 million followers on Instagram worldwide. Meanwhile, model Gracyanne Barbosa had 8.6 million Instagram followers as of that date.",
+   "note": "Brazil; September 9, 2020",
+   "source": "Instagram; Statista Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Mari Gonzalez (@marigonzalez)",
+    "Gracyanne Barbosa (@graoficial)",
+    "Mayra Cardi (@mayracardi)",
+    "Gabriela Pugliesi (@gabrielapugliesi)",
+    "Bella Falconi (@bellafalconi)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.3,
+      8.6,
+      5.8,
+      4.2,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Number of followers of selected Mexican fitness Instagram influencers as of September 2020 (in 1,000s)",
+   "short": "Number of followers of Mexican fitness and gym Instagram influencers 2020",
+   "unit": "1,000s",
+   "description": "As of September 2020, Mexican actress and fitness enthusiast Bárbara de Regil had over 7.6 million followers on Instagram worldwide. Meanwhile, Danik Michell, also an actress with a love for fitness, had accumulated approximately 4.1 million Instagram followers as of that date.",
+   "note": "Mexico; September 8, 2020",
+   "source": "Instagram; Statista Number of followers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Bárbara de Regil (@barbaraderegil)",
+    "Danik Michell (@danikmichell)",
+    "Rodrigo Garduño (@ro54d)",
+    "Memo Corral (@coachmemocorral)",
+    "Mady (@madydaily)",
+    "Leticia Román (@letysersana)",
+    "Zoar Parga (@zoarparga)",
+    "Ari Gómez (@ ari_gomezt)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7600,
+      4100,
+      1000,
+      479,
+      303,
+      49.4,
+      10,
+      8.4
+     ]
+    }
+   ]
+  }
+ ]
+}

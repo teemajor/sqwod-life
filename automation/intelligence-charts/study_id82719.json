@@ -1,0 +1,1361 @@
+{
+ "studyId": "82719",
+ "study": "diet and nutrition in asia pacific",
+ "file": "research/statista/study_id82719_diet-and-nutrition-in-asia-pacific.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Share of undernourished people worldwide in 2022, by region",
+   "short": "Prevalence of starving people worldwide 2022, by region",
+   "unit": "",
+   "description": "In 2022, the rate of undernourishment worldwide was 9.2 percent. The region with the largest share of undernourished people was Sub-Saharan Africa, with 22.5 percent. Undernourished people worldwideSouthern Asia and Sub-Saharan Africa have some of the highest numbers of undernourished people in the world, totaling 314 million and 262 million, respectively in 2022. Based on the World Hunger Index 2022, Yemen and the Central African Republic were among the most affected [...]",
+   "note": "Worldwide; 2022",
+   "source": "FAO Share of population",
+   "kind": "categorical",
+   "categories": [
+    "Sub-Saharan Africa",
+    "Caribbean",
+    "Southern Asia",
+    "Western Asia",
+    "World",
+    "Northern Africa",
+    "Oceania",
+    "South America",
+    "Central America",
+    "South-eastern Asia",
+    "Central Asia",
+    "Northern America and Europe*",
+    "Eastern Asia*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.225,
+      0.163,
+      0.156,
+      0.108,
+      0.092,
+      0.075,
+      0.07,
+      0.061,
+      0.051,
+      0.05,
+      0.03,
+      0.025,
+      0.025
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Per capita consumption of meat worldwide from 2020 to 2022, with a forecast for 2032, by region (in kilos)",
+   "short": "Per capita consumption of meat worldwide 2020-2032, by region",
+   "unit": "kilos",
+   "description": "The per capita consumption of meat was highest in North America, at roughly 78.6 kilos per person in the period between 2020 and 2022. By comparison, the average person living in Africa consumed about 9.6 kilos per year during that period.",
+   "note": "Worldwide; 2020 to 2022; *Average of per capita consumption from 2020 to 2022. Read more",
+   "source": "FAO; OECD Per capita consumption in kilos",
+   "kind": "categorical",
+   "categories": [
+    "North America",
+    "Oceania",
+    "Europe",
+    "Latin America",
+    "Asia",
+    "Africa",
+    "World"
+   ],
+   "series": [
+    {
+     "name": "2032",
+     "values": [
+      79.1,
+      53.3,
+      52.7,
+      51.9,
+      24.3,
+      9.9,
+      28.8
+     ]
+    },
+    {
+     "name": "2020-2022*",
+     "values": [
+      78.6,
+      55,
+      52.1,
+      49,
+      22.3,
+      9.6,
+      28.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Distribution of the dairy products market volume worldwide in 2023, by region",
+   "short": "Market volume share of the global dairy products in 2023, by region",
+   "unit": "",
+   "description": "This statistic shows the distribution of the dairy products market volume worldwide in 2023, by region. In that year, North America accounted for 14 percent of the dairy products worldwide export share, and EU-27 held 39 percent of the market.",
+   "note": "Worldwide; 2023",
+   "source": "CLAL; IHS Export volume share",
+   "kind": "categorical",
+   "categories": [
+    "Europe - EU 27",
+    "Oceania",
+    "North America",
+    "Europe - Other",
+    "America - Central South and the Caribbean",
+    "Asia - Southeast",
+    "Asia - Other",
+    "Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.39,
+      0.25,
+      0.14,
+      0.1,
+      0.05,
+      0.04,
+      0.01,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Share of people who follow a halal diet worldwide as of 2017 to 2021, by region",
+   "short": "Share of halal diet followers worldwide by region 2017-2021",
+   "unit": "",
+   "description": "As of 2021, almost 48 percent of the population in the Middle East and Africa follow a halal diet. This includes avoiding the consumption of pork, blood and other meat which as not slaughtered according the Islamic guidelines. Furthermore it includes to avoid ingredients such as alcohol which are not conform with their religious beliefs.",
+   "note": "Worldwide; 2021",
+   "source": "Statista",
+   "kind": "categorical",
+   "categories": [
+    "Africa/Middle East",
+    "Asia Pacific",
+    "Europe",
+    "North America",
+    "Latin America"
+   ],
+   "series": [
+    {
+     "name": "2017",
+     "values": [
+      0.4798,
+      0.1206,
+      0.0406,
+      0.0312,
+      0.0099
+     ]
+    },
+    {
+     "name": "2018",
+     "values": [
+      0.4797,
+      0.1212,
+      0.0412,
+      0.0325,
+      0.0099
+     ]
+    },
+    {
+     "name": "2019",
+     "values": [
+      0.4795,
+      0.1217,
+      0.0418,
+      0.0338,
+      0.0098
+     ]
+    },
+    {
+     "name": "2020",
+     "values": [
+      0.4794,
+      0.1223,
+      0.0424,
+      0.0352,
+      0.0098
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      0.4792,
+      0.1229,
+      0.043,
+      0.0366,
+      0.0097
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Prevalence of severe food insecurity in the Asia-Pacific region in 2022, by region",
+   "short": "Prevalence of severe food insecurity APAC 2022, by region",
+   "unit": "",
+   "description": "In 2022, approximately 19.4 percent of the population in South Asia were subject to severe food insecurity. Comparatively, the prevalence of severe food insecurity in East Asia amounted to around one percent that year.",
+   "note": "Asia, APAC; 2022",
+   "source": "FAO Share of population",
+   "kind": "categorical",
+   "categories": [
+    "South Asia",
+    "West Asia",
+    "Central Asia",
+    "Oceania",
+    "Southeast Asia",
+    "East Asia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.194,
+      0.103,
+      0.046,
+      0.034,
+      0.026,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Prevalence of severe food insecurity in East Asia from 2014 to 2022",
+   "short": "Prevalence of severe food insecurity East Asia 2014-2022",
+   "unit": "",
+   "description": "In 2022, approximately one percent of the population in East Asia were subject to severe food insecurity. The share of population in severe food insecurity stayed consistent in East Asia compared to the previous year.",
+   "note": "Asia; 2014 to 2022",
+   "source": "FAO",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.008,
+      0.008,
+      0.015,
+      0.017,
+      0.019,
+      0.013,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Prevalence of severe food insecurity in Southeast Asia from 2014 to 2022",
+   "short": "Prevalence of severe food insecurity SEA 2014-2022",
+   "unit": "",
+   "description": "In 2022, approximately 2.6 percent of the population in Southeast Asia were exposed to severe food insecurity. This was an increase from 2019, when around 1.8 percent of Southeast Asia's population were subject to severe food insecurity.",
+   "note": "Asia; 2014 to 2022",
+   "source": "FAO",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.024,
+      0.019,
+      0.025,
+      0.02,
+      0.026,
+      0.018,
+      0.021,
+      0.026,
+      0.026
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Prevalence of severe food insecurity in South Asia from 2014 to 2022",
+   "short": "Prevalence of severe food insecurity South Asia 2014-2022",
+   "unit": "",
+   "description": "In 2022, 19.4 percent of the population in South Asia was exposed to severe food insecurity. This was a decrease from the previous year, when around 21 percent of South Asia's population was subject to severe food insecurity.",
+   "note": "Asia; 2014 to 2022",
+   "source": "FAO",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.144,
+      0.132,
+      0.119,
+      0.118,
+      0.155,
+      0.163,
+      0.188,
+      0.21,
+      0.194
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Share of low birth weight babies in the Asia-Pacific region in 2020, by country",
+   "short": "Share of low birth weight babies APAC 2020, by country",
+   "unit": "",
+   "description": "In 2020, the share of low birth weight babies in India accounted for 27.44 percent, the highest share across the Asia-Pacific region, followed by Bangladesh and the Philippines. Newborns weighing less than 2.5 thousand grams are classified as low weight.",
+   "note": "Asia, APAC; 2020",
+   "source": "World Bank Share of births",
+   "kind": "categorical",
+   "categories": [
+    "India",
+    "Bangladesh",
+    "Philippines",
+    "Nepal",
+    "Papua New Guinea",
+    "Timor-Leste",
+    "Sri Lanka",
+    "Laos",
+    "Malaysia",
+    "Maldives",
+    "Brunei",
+    "Myanmar",
+    "Cambodia",
+    "Bhutan",
+    "Japan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2744,
+      0.2305,
+      0.2114,
+      0.1973,
+      0.1938,
+      0.1821,
+      0.1798,
+      0.1673,
+      0.1381,
+      0.1372,
+      0.1364,
+      0.1248,
+      0.1145,
+      0.1143,
+      0.113
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Disability-adjusted life years (DALY) rate for child and maternal malnutrition (CMM) in the Asia-Pacific region in 1990 and 2019, by subregion (per 100,000)",
+   "short": "DALY rate for child and maternal malnutrition APAC 1990-2019, by subregion",
+   "unit": "per 100,000",
+   "description": "In 2019, the disability-adjusted life years (DALY) rate for child and maternal malnutrition (CMM) in South Asia amounted to an estimated 6,323 per 100 thousand population, the highest across the Asia-Pacific region. Oceania followed with a CMM DALY count of around 5,401 per 100 thousand that year.",
+   "note": "Asia, Australia and Oceania, APAC; 1990 and 2019; age-standardized rates",
+   "source": "Frontiers",
+   "kind": "categorical",
+   "categories": [
+    "South Asia",
+    "Oceania",
+    "Southeast Asia",
+    "East Asia"
+   ],
+   "series": [
+    {
+     "name": "1990",
+     "values": [
+      15883.22,
+      8022.49,
+      9036.88,
+      5242.02
+     ]
+    },
+    {
+     "name": "2019",
+     "values": [
+      6323.59,
+      5401.42,
+      2635.73,
+      800.75
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Death rate due to child and maternal malnutrition (CMM) in the Asia-Pacific region in 1990 and 2019, by subregion (per 100,000)",
+   "short": "Death rate due to child and maternal malnutrition APAC 1990-2019, by subregion",
+   "unit": "per 100,000",
+   "description": "In 2019, the death rate due to child and maternal malnutrition (CMM) in South Asia amounted to approximately 59 per 100 thousand population, the highest across the Asia-Pacific region. Oceania followed with a CMM death rate of around 57.7 per 100 thousand that year.",
+   "note": "Asia, Australia and Oceania, APAC; 1990 and 2019; age-standardized rates",
+   "source": "Frontiers",
+   "kind": "categorical",
+   "categories": [
+    "South Asia",
+    "Oceania",
+    "Southeast Asia",
+    "East Asia"
+   ],
+   "series": [
+    {
+     "name": "1990",
+     "values": [
+      172.69,
+      89.66,
+      104.1,
+      57.14
+     ]
+    },
+    {
+     "name": "2019",
+     "values": [
+      59.01,
+      57.74,
+      29.05,
+      7.49
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Share of population who are undernourished in Southeast Asia from 2015 to 2019, with forecasts to 2022",
+   "short": "Share of population who are undernourished SEA 2015-2022",
+   "unit": "",
+   "description": "For 2022, it was forecast that five percent of the population in Southeast Asia would be undernourished. This would mark a decrease from 2015, when 7.5 percent of the population in SEA were undernourished.",
+   "note": "Asia; 2015 to 2019; * Projected values are based on the projected midranges. Read more",
+   "source": "FAO",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021*",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.075,
+      0.065,
+      0.058,
+      0.055,
+      0.053,
+      0.053,
+      0.053,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Number of people who are undernourished in Southeast Asia from 2015 to 2019, with forecasts to 2022 (in millions)",
+   "short": "Number of undernourished people SEA 2015-2022",
+   "unit": "millions",
+   "description": "In 2022, an estimated 34.1 million people in Southeast Asia were undernourished. This was a decrease from 2015, when approximately 47.9 million people across Southeast Asia were undernourished.",
+   "note": "Asia; 2015 to 2019; * Projected values are based on the projected midranges. Read more",
+   "source": "FAO",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021*",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      47.9,
+      41.6,
+      37.4,
+      36.5,
+      35,
+      35.2,
+      36,
+      34.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Share of population who are undernourished in South Asia from 2015 to 2019, with forecasts to 2022",
+   "short": "Share of population who are undernourished South Asia 2015-2022",
+   "unit": "",
+   "description": "In 2022, 15.6 percent of the population in South Asia were estimated to be undernourished. This was an increase from 2015, when 14 percent of South Asia's population were undernourished.",
+   "note": "Asia; 2015 to 2019; * Projected values are based on the projected midranges. Read more",
+   "source": "FAO",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021*",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.14,
+      0.129,
+      0.122,
+      0.123,
+      0.133,
+      0.156,
+      0.164,
+      0.156
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of people who are undernourished in South Asia from 2015 to 2019 with forecasts to 2022 (in millions)",
+   "short": "Number of undernourished people South Asia 2015-2022",
+   "unit": "millions",
+   "description": "In 2022, an estimated 313.6 million people in South Asia were undernourished. This marked a significant increase from 2015, when approximately 260.3 million people across the region were undernourished.",
+   "note": "Asia; 2015 to 2019; * Projected values are based on the projected midranges. Read more",
+   "source": "FAO",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021*",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      260.3,
+      242.8,
+      232.2,
+      236.2,
+      258.6,
+      307.7,
+      326,
+      313.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Projected share of adults with obesity in the Asia-Pacific region in 2035, by country or territory",
+   "short": "Projected share of obese adults APAC 2035, by country",
+   "unit": "",
+   "description": "The share of obese adults in New Zealand was projected to account for 49 percent of the country's population by 2035. Singapore, Japan, and Vietnam were projected to have the lowest obesity rates in the Asia-Pacific region, with obese adults in each of the countries set to account for less than ten percent of their total populations in 2035.",
+   "note": "Asia, APAC; 2022",
+   "source": "World Obesity Federation Share of population",
+   "kind": "categorical",
+   "categories": [
+    "New Zealand",
+    "Australia",
+    "Malaysia",
+    "Papua New Guinea",
+    "Mongolia",
+    "Brunei",
+    "Thailand",
+    "Maldives",
+    "Indonesia",
+    "Pakistan",
+    "Bhutan",
+    "Taiwan",
+    "China",
+    "Hong Kong",
+    "Laos"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.49,
+      0.47,
+      0.41,
+      0.38,
+      0.37,
+      0.33,
+      0.28,
+      0.24,
+      0.22,
+      0.21,
+      0.2,
+      0.19,
+      0.18,
+      0.18,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Compound annual growth rate of adult obesity in the Asia-Pacific region between 2020 and 2035, by country or territory",
+   "short": "CAGR of adult obesity APAC 2020-2035, by country",
+   "unit": "",
+   "description": "Between 2020 and 2035, the adult obese population in Vietnam was projected to grow at a compound annual growth rate of 6.3 percent, the highest across the Asia-Pacific region. At the same time, the country was projected to have the lowest share of obese adults across the region by 2035.",
+   "note": "Asia, APAC; 2020 to 2035",
+   "source": "World Obesity Federation Share of population",
+   "kind": "categorical",
+   "categories": [
+    "Vietnam",
+    "Laos",
+    "Maldives",
+    "Timor-Leste",
+    "Cambodia",
+    "Indonesia",
+    "Bangladesh",
+    "Bhutan",
+    "Myanmar",
+    "China",
+    "Nepal",
+    "Thailand",
+    "Afghanistan",
+    "India",
+    "Sri Lanka"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.063,
+      0.061,
+      0.06,
+      0.059,
+      0.058,
+      0.058,
+      0.057,
+      0.056,
+      0.055,
+      0.054,
+      0.053,
+      0.053,
+      0.052,
+      0.052,
+      0.051
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Estimated share of overweight children in the Asia-Pacific region in 2020, by country",
+   "short": "Share of overweight children APAC 2020, by country",
+   "unit": "",
+   "description": "In 2020, approximately 18.5 percent of the children aged up to five years old in Australia were considered overweight. In contrast, 1.3 percent of the children under five years old in Sri Lanka were classified as overweight that year.",
+   "note": "Asia, APAC; 2020; among children under 5 years old",
+   "source": "World Bank Share of children",
+   "kind": "categorical",
+   "categories": [
+    "Australia",
+    "Indonesia",
+    "Mongolia",
+    "Brunei",
+    "Thailand",
+    "South Korea",
+    "China",
+    "Malaysia",
+    "Vietnam",
+    "Bhutan",
+    "Singapore",
+    "Maldives",
+    "Philippines",
+    "Afghanistan",
+    "Pakistan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.185,
+      0.111,
+      0.101,
+      0.093,
+      0.092,
+      0.088,
+      0.083,
+      0.061,
+      0.06,
+      0.052,
+      0.048,
+      0.046,
+      0.042,
+      0.039,
+      0.034
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Compound annual growth rate of child obesity in the Asia-Pacific region between 2020 and 2035, by country or territory",
+   "short": "CAGR of child obesity APAC 2020-2035, by country",
+   "unit": "",
+   "description": "Between 2020 and 2035, the population of obese children in Vietnam was projected to grow at a compound annual growth rate of 9.8 percent, the highest across the Asia-Pacific region. In contrast, the CAGR for child obesity in Singapore between 2020 and 2035 was projected to be 0.8 percent.",
+   "note": "Asia, APAC; 2020 to 2035",
+   "source": "World Obesity Federation Share of population",
+   "kind": "categorical",
+   "categories": [
+    "Vietnam",
+    "India",
+    "Bhutan",
+    "Laos",
+    "Afghanistan",
+    "Sri Lanka",
+    "Bangladesh",
+    "Timor-Leste",
+    "Myanmar",
+    "Nepal",
+    "Pakistan",
+    "Cambodia",
+    "Indonesia",
+    "Maldives",
+    "Philippines"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.098,
+      0.091,
+      0.089,
+      0.089,
+      0.088,
+      0.087,
+      0.086,
+      0.086,
+      0.084,
+      0.084,
+      0.082,
+      0.081,
+      0.079,
+      0.079,
+      0.069
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Share of population with diabetes in the Asia-Pacific region in 2021, by country",
+   "short": "Share of population with diabetes APAC 2021, by country",
+   "unit": "",
+   "description": "In 2021, close to 31 percent of the population in Pakistan had diabetes. In comparison, Vietnam had the lowest prevalence of diabetic people across the Asia-Pacific region that year, approximately six percent.",
+   "note": "Asia, APAC; 2021; 20-79 years",
+   "source": "World Bank Share of population",
+   "kind": "categorical",
+   "categories": [
+    "Pakistan",
+    "Malaysia",
+    "Papua New Guinea",
+    "Bangladesh",
+    "Singapore",
+    "Sri Lanka",
+    "Brunei",
+    "Afghanistan",
+    "Indonesia",
+    "China",
+    "Bhutan",
+    "Thailand",
+    "India",
+    "Maldives",
+    "Nepal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.308,
+      0.19,
+      0.167,
+      0.142,
+      0.116,
+      0.113,
+      0.111,
+      0.109,
+      0.106,
+      0.106,
+      0.104,
+      0.097,
+      0.096,
+      0.092,
+      0.087
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Disability-adjusted life years (DALY) rate for diabetes in the Asia-Pacific region in 2021, by country or territory (per 100,000)",
+   "short": "Disability-adjusted life years rate for diabetes APAC 2021, by country",
+   "unit": "per 100,000",
+   "description": "In 2021, the total disability-adjusted life years (DALY) for diabetes in Papua New Guinea amounted to an estimated 3,062 per 100 thousand population, the highest across the Asia-Pacific region. Brunei followed with a diabetes DALY count of around 2,279 per 100 thousand that year.",
+   "note": "Asia, APAC; 2021",
+   "source": "Lancet Disability-adjusted life years per 100 thousand population",
+   "kind": "categorical",
+   "categories": [
+    "Papua New Guinea",
+    "Brunei",
+    "Myanmar",
+    "Sri Lanka",
+    "Pakistan",
+    "Laos",
+    "Philippines",
+    "Nepal",
+    "Cambodia",
+    "Bangladesh",
+    "Vietnam",
+    "India",
+    "Malaysia",
+    "Indonesia",
+    "Bhutan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3062,
+      2279.7,
+      1996.5,
+      1952.5,
+      1604.6,
+      1399.1,
+      1357.9,
+      1240.2,
+      1205.1,
+      1148.7,
+      1118.3,
+      1106.2,
+      1073.7,
+      1067,
+      1061.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Share of adults with hypertension in the Asia-Pacific region in 2019, by country",
+   "short": "Prevalence of high blood pressure among adults APAC 2019, by country",
+   "unit": "",
+   "description": "In 2019, Brunei had the highest share of adults with hypertension in the Asia-Pacific region, approximately 46.4 percent. In contrast, the share of adults with high blood pressure in Cambodia amounted to around 25.7 percent.",
+   "note": "Asia, APAC; 2019; 30-79 years",
+   "source": "World Bank Share of adults",
+   "kind": "categorical",
+   "categories": [
+    "Brunei",
+    "Bhutan",
+    "Pakistan",
+    "Mongolia",
+    "Malaysia",
+    "Indonesia",
+    "Afghanistan",
+    "Myanmar",
+    "Nepal",
+    "Sri Lanka",
+    "Timor-Leste",
+    "Maldives",
+    "Philippines",
+    "Singapore",
+    "Japan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.464,
+      0.434,
+      0.432,
+      0.428,
+      0.408,
+      0.403,
+      0.402,
+      0.378,
+      0.361,
+      0.356,
+      0.353,
+      0.341,
+      0.338,
+      0.315,
+      0.314
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Share of people who consume dietary supplements or nutraceuticals in the Asia-Pacific region as of March 2022, by country or territory",
+   "short": "Share of people who consume dietary supplements APAC 2022, by country",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on dietary supplements conducted in March 2022, around 79 percent of the respondents in South Korea stated that they took dietary supplements, the highest share across the surveyed Asia-Pacific markets.",
+   "note": "Asia, APAC; March 10 to 31, 2022; 126,478 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "South Korea",
+    "Taiwan",
+    "Hong Kong",
+    "Vietnam",
+    "China",
+    "Thailand",
+    "Indonesia",
+    "Malaysia",
+    "Singapore",
+    "Japan",
+    "Philippines",
+    "India"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.79,
+      0.7,
+      0.69,
+      0.68,
+      0.59,
+      0.58,
+      0.56,
+      0.55,
+      0.53,
+      0.48,
+      0.41,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Frequency of dietary supplement or nutraceutical consumption in the Asia-Pacific region as of March 2022, by country or territory",
+   "short": "Dietary supplement intake frequency APAC 2022, by country",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on dietary supplements conducted in March 2022, around 82 percent of the respondents in South Korea stated that they took dietary supplements on a daily basis, the highest share across the surveyed Asia-Pacific markets.",
+   "note": "Asia, APAC; March 10 to 31, 2022; 66,997 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "South Korea",
+    "Japan",
+    "Hong Kong",
+    "Philippines",
+    "Taiwan",
+    "Singapore",
+    "Malaysia",
+    "Thailand",
+    "Vietnam",
+    "India",
+    "Indonesia",
+    "China"
+   ],
+   "series": [
+    {
+     "name": "Daily",
+     "values": [
+      0.82,
+      0.8,
+      0.71,
+      0.69,
+      0.68,
+      0.67,
+      0.61,
+      0.51,
+      0.48,
+      0.46,
+      0.36,
+      0.35
+     ]
+    },
+    {
+     "name": "Weekly",
+     "values": [
+      0.07,
+      0.04,
+      0.14,
+      0.16,
+      0.1,
+      0.19,
+      0.2,
+      0.22,
+      0.27,
+      0.35,
+      0.25,
+      0.32
+     ]
+    },
+    {
+     "name": "Only when feeling unwell",
+     "values": [
+      0.06,
+      0.08,
+      0.04,
+      0.07,
+      0.06,
+      0.05,
+      0.09,
+      0.08,
+      0.19,
+      0.13,
+      0.29,
+      0.09
+     ]
+    },
+    {
+     "name": "When a performance boost is needed",
+     "values": [
+      0.02,
+      0.03,
+      0.06,
+      0.05,
+      0.08,
+      0.04,
+      0.06,
+      0.16,
+      0.05,
+      0.04,
+      0.08,
+      0.18
+     ]
+    },
+    {
+     "name": "Whenever I remember to",
+     "values": [
+      0.04,
+      0.05,
+      0.05,
+      0.03,
+      0.08,
+      0.05,
+      0.04,
+      0.03,
+      0.01,
+      0.02,
+      0.03,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Share of consumers believing in the effect of dietary supplements or nutraceuticals in the Asia-Pacific region as of March 2022, by country or territory",
+   "short": "Share of people who trust dietary supplements APAC 2022, by country",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on dietary supplements conducted in March 2022, around 92 percent of the respondents in Indonesia believed in the effectiveness of dietary supplements and nutraceuticals. In contrast, about 65 percent of the respondents in India trusted the effect of dietary supplements.",
+   "note": "Asia, APAC; March 10 to 31, 2022; 118,999 respondents; 16 years and older",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Indonesia",
+    "Vietnam",
+    "Taiwan",
+    "South Korea",
+    "Hong Kong",
+    "China",
+    "Philippines",
+    "Malaysia",
+    "Thailand",
+    "Singapore",
+    "Japan",
+    "India"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.92,
+      0.91,
+      0.87,
+      0.84,
+      0.83,
+      0.8,
+      0.8,
+      0.79,
+      0.76,
+      0.73,
+      0.69,
+      0.65
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Private investments in the alternative protein industry in the Asia-Pacific region from 2016 to 2023 (in million U.S. dollars)",
+   "short": "Private investments into alternative proteins APAC 2023",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, private investments in the alternative protein industry across the Asia-Pacific region reached a total of approximately 556 million U.S. dollars. This marked a significant increase from around three million dollars privately invested in the region's alternative protein industry in 2016 and 2017, respectively.",
+   "note": "Asia, APAC; including Australia, China, Hong Kong, Indonesia, Japan, Malaysia, New Zealand, Philippines, Singapore, South Korea, Taiwan, Thailand, and Vietnam; * Preliminary data up to Q2 of 2023 Read more",
+   "source": "The Good Food Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3,
+      3,
+      14,
+      42,
+      182,
+      383,
+      556,
+      47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Share of investments in the alternative protein industry in the Asia-Pacific region in 2022 and 2023, by segment",
+   "short": "Investment share in the alternative protein market APAC 2022-2023, by segment",
+   "unit": "",
+   "description": "In 2022, investments in the plant-based product segment accounted for 66 percent of investments in the Asia-Pacific region's alternative protein market. In the first two quarters of 2023, a shift could be observed, with 50 percent of the investments done in the cultivated segment.",
+   "note": "Asia, APAC; including Australia, China, Hong Kong, Indonesia, Japan, Malaysia, New Zealand, Philippines, Singapore, South Korea, Taiwan, Thailand, and Vietnam; * Preliminary data up to Q2 of 2023 Read more",
+   "source": "The Good Food Institute",
+   "kind": "categorical",
+   "categories": [
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "Precision fermentation",
+     "values": [
+      0.14,
+      0.25
+     ]
+    },
+    {
+     "name": "Biomass fermentation",
+     "values": [
+      0.02
+     ]
+    },
+    {
+     "name": "Cultivated",
+     "values": [
+      0.17,
+      0.5
+     ]
+    },
+    {
+     "name": "Plant-based",
+     "values": [
+      0.66,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Segmental share of investments in the alternative protein industry in the Asia-Pacific region as of 2nd quarter 2023, by selected country",
+   "short": "Segmental investment share in the alternative protein market APAC Q2 2023, by country",
+   "unit": "",
+   "description": "As of the second quarter of 2023, investments in the plant-based product segment accounted for 76 percent of all-time investments in Singapore's alternative protein market. Among the selected countries, Japan was the only one without notable investments in the fermentation segment of the alternative protein market.",
+   "note": "Asia, APAC; all-time invested capital up to Q2 2023",
+   "source": "The Good Food Institute",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Japan",
+    "South Korea",
+    "Singapore",
+    "Australia and New Zealand"
+   ],
+   "series": [
+    {
+     "name": "Plant-based",
+     "values": [
+      0.67,
+      0.76,
+      0.53,
+      0.76,
+      0.62
+     ]
+    },
+    {
+     "name": "Cultivated",
+     "values": [
+      0.2,
+      0.24,
+      0.38,
+      0.11,
+      0.15
+     ]
+    },
+    {
+     "name": "Fermentation",
+     "values": [
+      0.13,
+      0.09,
+      0.13,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "All-time invested capital in the alternative protein industry in the Asia-Pacific region as of 2nd quarter 2023, by selected country (in million U.S. dollars)",
+   "short": "Total investment in the alternative protein market APAC Q2 2023, by country",
+   "unit": "million U.S. dollars",
+   "description": "As of the second quarter of 2023, total investments in the alternative protein market in Singapore amounted to 320 million U.S. dollars. Plant-based alternatives attracted the largest investments in all selected markets in the Asia-Pacific region.",
+   "note": "Asia, APAC; all-time invested capital up to Q2 2023",
+   "source": "The Good Food Institute",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Japan",
+    "South Korea",
+    "Singapore",
+    "Australia and New Zealand"
+   ],
+   "series": [
+    {
+     "name": "Plant-based",
+     "values": [
+      147,
+      54,
+      70,
+      244,
+      249
+     ]
+    },
+    {
+     "name": "Cultivated",
+     "values": [
+      44,
+      17,
+      50,
+      35,
+      59
+     ]
+    },
+    {
+     "name": "Fermentation",
+     "values": [
+      30,
+      0,
+      12,
+      41,
+      90
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Leading alternative protein startups in the Asia-Pacific region in 2022, by total funding (in million U.S. dollars)",
+   "short": "Leading alternative protein companies in APAC 2022, by total funding",
+   "unit": "million U.S. dollars",
+   "description": "As of November 2022, Starfield, a China-based plant-based food company, received a total funding of 100 million U.S. dollars. Meanwhile, the Singapore-based plant-based protein alternative startup Next Gen Foods also received approximately 100 million U.S. dollars in funding for its brand TiNDLE.",
+   "note": "APAC; December 2021 to November 2022",
+   "source": "The Good Food Institute",
+   "kind": "categorical",
+   "categories": [
+    "Starfield",
+    "Tindle",
+    "Oatside",
+    "Vow",
+    "Nourish Ingredients",
+    "All G Foods",
+    "Armored Fresh",
+    "Changing Biotech",
+    "Wide Open Agriculture",
+    "Space F",
+    "Leaft Foods"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      100,
+      100,
+      65.5,
+      49.2,
+      28.6,
+      25,
+      23,
+      22,
+      20,
+      15,
+      15
+     ]
+    }
+   ]
+  }
+ ]
+}

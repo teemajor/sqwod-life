@@ -1,0 +1,737 @@
+{
+ "studyId": "57641",
+ "study": "health foods and dietary supplements market in australia",
+ "file": "research/statista/Health & Wellness/study_id57641_health-foods-and-dietary-supplements-market-in-australia.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the vitamins & minerals market worldwide from 2020 to 2029 (in billion U.S. dollars)",
+   "short": "Revenue of the vitamins & minerals industry worldwide 2020-2029",
+   "unit": "billion U.S. dollars",
+   "description": "The global revenue in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously increase between 2024 and 2029 by in total 12.3 billion U.S. dollars (+38.52 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 44.18 billion U.S. dollars and therefore a new peak in 2029. Notably, the revenue of the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was continuously increasing over the past years.",
+   "note": "Worldwide; 2020 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23.56,
+      25.89,
+      27.5,
+      29.7,
+      31.93,
+      34.24,
+      36.7,
+      39.2,
+      41.69,
+      44.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Export value of vitamins worldwide in 2021, by country (in million U.S. dollars)",
+   "short": "Export value of vitamins worldwide in 2021, by country",
+   "unit": "million U.S. dollars",
+   "description": "The leading global exporter of vitamins in 2021 was China. The country exported approximately 3.7 billion U.S. dollars worth of vitamins and vitamin preparations across the globe. U.S. exports had a value of less than a third of Chinese exports and came to about one billion U.S. dollars.",
+   "note": "Worldwide; 2021",
+   "source": "UN Comtrade",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "United States",
+    "France",
+    "Germany",
+    "Netherlands",
+    "Australia",
+    "Switzerland",
+    "India",
+    "Singapore",
+    "Italy"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3702,
+      1020,
+      460,
+      448,
+      423,
+      359,
+      398,
+      293,
+      212,
+      142
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Estimated revenue of the complementary medicine sector in Australia in financial years 2011 to 2021 (in billion Australian dollars)",
+   "short": "Revenue of the complementary medicine sector Australia FY 2011-2021",
+   "unit": "billion Australian dollars",
+   "description": "In 2021, the revenue of the complementary medicine sector in Australia reached approximately 5.69 billion Australia dollars. this follows a continuous year on year increase in revenue for the industry.",
+   "note": "Australia; financial years 2011, 2015, 2018 and 2021",
+   "source": "Complementary Medicines Australia",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2015",
+    "2018",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.9,
+      3.5,
+      4.6,
+      5.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Share of complementary medicines exported from Australia in 2021, by export region",
+   "short": "Share of exported complementary medicines Australia 2021, by export region",
+   "unit": "",
+   "description": "In 2021, 70 percent of exported complementary medicines from Australia were exported to China and Hong Kong. The second largest export market was Vietnam at just under 9 percent of total exports.",
+   "note": "Australia; 2021",
+   "source": "Austrade; Complementary Medicines Australia",
+   "kind": "categorical",
+   "categories": [
+    "China and Hong Kong",
+    "Vietnam",
+    "Oceania",
+    "South Korea",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7,
+      0.087,
+      0.06,
+      0.052,
+      0.108
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Leading personal products companies listed on the Australian Securities Exchange (ASX) in Australia as of October 2023, by market capital (in million Australian dollars)",
+   "short": "Leading personal products companies on ASX Australia 2023, by market cap",
+   "unit": "million Australian dollars",
+   "description": "As of October 2023, health, beauty, and personal care product company McPherson's Limited topped the personal products category on the Australia Securities Exchange (ASX), with a market cap of almost 60 million Australian dollars. Other companies within the top five included beauty and wellness company BWX Limited, as well as health supplement companies Bioxyne Limited, Biome Australia, and Star Combo Pharma.",
+   "note": "Australia; as of October 2023",
+   "source": "ASX; Listcorp Market cap in million Australian dollars",
+   "kind": "categorical",
+   "categories": [
+    "McPherson's Limited",
+    "BWX Limited",
+    "Bioxyne Limited",
+    "Biome Australia Limited",
+    "Star Combo Pharma",
+    "Anagenics Limited",
+    "The Hydration Pharmaceuticals Company Limited",
+    "Elixinol Wellness Limited",
+    "The Calmer Co International Limited",
+    "Nutritional Growth Solutions Ltd",
+    "Skin Elements Limited",
+    "Holista Colltech Limited"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      59.02,
+      40,
+      22.82,
+      21.93,
+      14.86,
+      9.14,
+      9.13,
+      4.42,
+      4.09,
+      3.52,
+      3.42,
+      2.79
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Revenue of the complementary medicine industry in Australia in the financial year 2021, by type (in billion Australian dollars)",
+   "short": "Revenue of the complementary medicine industry Australia FY 2021, by type",
+   "unit": "billion Australian dollars",
+   "description": "In the 2021 financial year, vitamins and dietary supplements generated 3.1 billion Australian dollars. The next largest segment of the complementary medicines industry was sports nutrition, generation around 1.4 billion Australian dollars in that year.",
+   "note": "Australia; Financial year 2021",
+   "source": "Complementary Medicines Australia",
+   "kind": "categorical",
+   "categories": [
+    "Vitamins and dietary supplements",
+    "Sports nutrition",
+    "Herbal/traditional products",
+    "Weight loss"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.1,
+      1.4,
+      0.75,
+      0.44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Total grocery and pharmacy sales of vitamins and dietary supplements in Australia in financial year 2018 to 2021 (in billion Australian dollars)",
+   "short": "Vitamins and dietary supplement sales in Australia FY 2018-2021",
+   "unit": "billion Australian dollars",
+   "description": "In the 2021 financial year, the sales of vitamins and dietary supplements in grocery stores and pharmacies in Australia totaled 2.1 billion Australian dollars. After remaining steady at around 2 billion Australian dollars annually since 2018 sales have slumped in 2021.",
+   "note": "Australia; financial years 2018 to 2021",
+   "source": "Blackmores; IQVIA",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.1,
+      2.1,
+      2,
+      1.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Distribution of complementary medicine sales in Australia in the financial year 2021, by shop type",
+   "short": "Distribution of complementary medicine shop sales Australia FY 2021 by type",
+   "unit": "",
+   "description": "In the 2021 financial year, 48 percent of complementary medicine was sold through pharmacies in Australia. Supermarkets were responsible for the second largest share of sales and the online market accounted for over 10 percent.",
+   "note": "Australia; Financial year 2021",
+   "source": "Complementary Medicines Australia",
+   "kind": "categorical",
+   "categories": [
+    "Pharmacy",
+    "Supermarkets and grocery",
+    "Specialist retailers",
+    "Online",
+    "Direct selling",
+    "Healthfood stores"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.197,
+      0.128,
+      0.116,
+      0.049,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Market share of leading supplement categories in Australia in the financial year 2019",
+   "short": "Market share of leading supplement categories Australia FY 2019",
+   "unit": "",
+   "description": "In the 2019 financial year, general health supplements held the largest share of the supplement market, with 17.3 percent. This was followed by joint and bone supplements and heart health in second and third place.",
+   "note": "Australia; Financial year 2019; Australia's financial years run from July to June of the following year. For example, FY 2017 starts on July 1, 2016 and ends on June 30, 2017.",
+   "source": "Complementary Medicines Australia; Euromonitor",
+   "kind": "categorical",
+   "categories": [
+    "General Health",
+    "Joint and bone",
+    "Heart health",
+    "Digestive",
+    "Women's health",
+    "Energy",
+    "Immunity",
+    "All other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.173,
+      0.147,
+      0.134,
+      0.106,
+      0.081,
+      0.06,
+      0.055,
+      0.244
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Total revenue of Blackmores Group in financial year 2022, by region (in million Australian dollars)",
+   "short": "Revenue of Blackmores Group FY 2022, by region",
+   "unit": "million Australian dollars",
+   "description": "In the 2022 financial year, Blackmores Group earned a total revenue of 288 million Australian dollars from its Australia and New Zealand segment. This was the group's highest earning segment, which earned around twice as much as the China segment in the same year.",
+   "note": "Worldwide, Australia, China; FY 2022",
+   "source": "Blackmores",
+   "kind": "categorical",
+   "categories": [
+    "Australia & New Zealand",
+    "International",
+    "China"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      288,
+      216,
+      146
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Total Australia and New Zealand segment revenue of Blackmores Group from financial year 2017 to 2022 (in million Australian dollars)",
+   "short": "ANZ segment revenue of Blackmores Group FY 2017-2022",
+   "unit": "million Australian dollars",
+   "description": "In the 2022 financial year, Blackmores Group earned a total revenue of 288 million Australian dollars from its Australia and New Zealand segment, marking a rise from the previous year. This was the group's highest earning segment.",
+   "note": "Australia; FY 2017 to FY 2022",
+   "source": "Blackmores",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      344,
+      354,
+      359,
+      326,
+      281,
+      288
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Estimated average daily vitamin intake per capita in Australia in financial year 2021, by type (in micrograms)",
+   "short": "Average daily vitamin intake per capita in Australia FY 2021, by type",
+   "unit": "micrograms",
+   "description": "In the 2021 financial year, it was estimated that Australians had on average 99 milligrams or 99000 micrograms of vitamin C available to consume per day, which was the highest quantity compared to other vitamin types. The Australian and New Zealand dietary guidelines recommendation suggested that 45 milligrams per day was adequate for an adult.",
+   "note": "FY 2021; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017",
+   "source": "Australian Bureau of Statistics Vitamin intake in milligrams",
+   "kind": "categorical",
+   "categories": [
+    "Preformed Vitamin A",
+    "Pro Vitamin A",
+    "Vitamin A retinol equivalent",
+    "Thiamin (B1)",
+    "Riboflavin (B2)",
+    "Niacin (B3)",
+    "Niacin equivalents",
+    "Folate, natural",
+    "Folic acid",
+    "Total Folates",
+    "Folate equivalents",
+    "Vitamin B6",
+    "Vitamin B12",
+    "Vitamin C",
+    "Vitamin E"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      382.9,
+      2412,
+      878.5,
+      1500,
+      1800,
+      22100,
+      37500,
+      287.5,
+      170.3,
+      457.7,
+      571.9,
+      1700,
+      4.3,
+      99000,
+      13800
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Estimated average daily mineral intake per capita in Australia in financial year 2021, by type (in milligrams)",
+   "short": "Average daily mineral intake per capita in Australia FY 2021, by type",
+   "unit": "milligrams",
+   "description": "In the 2021 financial year, it was estimated that Australians had on average 3,125.2 milligrams of sodium available to consume per day, which was the highest quantity compared to other mineral types. Australian and New Zealand dietary guidelines suggest that adults should limit their intake of sodium to 2,000 milligrams per day.",
+   "note": "FY 2021; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017",
+   "source": "Australian Bureau of Statistics Mineral quantity in milligrams",
+   "kind": "categorical",
+   "categories": [
+    "Calcium",
+    "Iodine",
+    "Iron",
+    "Magnesium",
+    "Phosphorus",
+    "Potassium",
+    "Selenium",
+    "Sodium",
+    "Zinc"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      785,
+      0.17,
+      10.3,
+      289.8,
+      1367,
+      2782.2,
+      0.07,
+      3125.2,
+      9.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Share of protein supplements purchased in Australia as of September 2021, by type",
+   "short": "Share of protein supplements purchased in Australia 2021, by type",
+   "unit": "",
+   "description": "Protein powders made up the largest share of protein supplements purchased in Australia in 2021, with 58 percent of respondents stating the last protein supplement they bought was powdered. In contrast, ready-to-drink protein products were only purchased by 13 percent of consumers.",
+   "note": "Australia; 2021; 1,236 respondents",
+   "source": "Canstar Blue",
+   "kind": "categorical",
+   "categories": [
+    "Protein powder",
+    "Protein bars or balls (solid)",
+    "Protein ready-made shakes or drinks"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.26,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Growth rate of leading supplement ingredients in Australia in 2021",
+   "short": "Growth of leading supplement ingredients Australia 2021",
+   "unit": "",
+   "description": "In the 2021 financial year, echinacea was the fastest growing supplement ingredient in Australia at a 14 percent growth rate on the previous year. Single vitamins had the second highest growth rate at 7 percent.",
+   "note": "Australia; 2021",
+   "source": "Complementary Medicines Australia; Euromonitor",
+   "kind": "categorical",
+   "categories": [
+    "Echinacea",
+    "Single vitamin",
+    "Probiotics",
+    "Vitamin C"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.14,
+      0.07,
+      0.06,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Leading protein supplement flavors in Australia as of August 2022, by type",
+   "short": "Leading protein supplement flavors Australia 2022, by type",
+   "unit": "",
+   "description": "In a survey conducted in 2022 regarding protein supplements in Australia, 27 percent of respondents stated that chocolate flavored protein products were their favorite. Vanilla flavored protein products came in second place, with over 20 percent of respondents stating that vanilla was their favorite flavor.",
+   "note": "Australia; August 2022; 670 respondents",
+   "source": "Canstar Blue Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Chocolate",
+    "Vanilla",
+    "Banana",
+    "Cookies & Cream",
+    "Coffee",
+    "Strawberry",
+    "Caramel",
+    "Choc mint",
+    "Peanut butter",
+    "Cheesecake",
+    "Birthday cake"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.21,
+      0.08,
+      0.08,
+      0.07,
+      0.07,
+      0.07,
+      0.04,
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Average annual financial benefits of targeted complementary medicine use for select conditions in Australia in 2015-2020 (in million Australian dollars)",
+   "short": "Yearly financial benefits from complementary medicine use in Australia 2015-2020",
+   "unit": "million Australian dollars",
+   "description": "This statistic shows the predicted average annual financial benefits of targeted complementary medicine use for select conditions, in the period 2015-2020. It is estimated that if patients took calcium and vitamin D for osteoporosis the net economic benefits, from avoided hospital costs and total productivity gains, would equal approximately 1.8 billion Australian dollars.",
+   "note": "Australia; as of October 2014",
+   "source": "ASMI; Complementary Medicines Australia; Frost & Sullivan",
+   "kind": "categorical",
+   "categories": [
+    "Magnesium for osteoporosis",
+    "Calcium and vitamin D for osteoporosis",
+    "Folic acid, B6 and B12 for cardiovascular disease",
+    "Omega-3 for cardiovascular disease",
+    "Lutein and zeaxanthin for age-related macular degeneration",
+    "St John's Wort for major depression"
+   ],
+   "series": [
+    {
+     "name": "Avoided hospital costs",
+     "values": [
+      212,
+      922,
+      150,
+      194,
+      27
+     ]
+    },
+    {
+     "name": "Total productivity gains",
+     "values": [
+      187,
+      900,
+      68,
+      405,
+      27,
+      340
+     ]
+    },
+    {
+     "name": "Net economic benefit*",
+     "values": [
+      249,
+      1800,
+      176,
+      530,
+      36,
+      300
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of consumers who purchase complementary medicines in Australia in 2021",
+   "short": "Leading complementary medicines purchased Australia 2021",
+   "unit": "",
+   "description": "In 2021, 73 percent of Australian consumers indicated that they had purchased complementary medicines in the previous 12 months. Over half of the respondents had purchased vitamins, making it the most complementary medicine.",
+   "note": "Australia; 2021; purchaced in the last 12 months",
+   "source": "Complementary Medicines Australia",
+   "kind": "categorical",
+   "categories": [
+    "Vitamin mineral",
+    "Probiotic",
+    "Omega-3/fish oil",
+    "Nutritional supplements",
+    "Minerals",
+    "Herbal or homeopathic product",
+    "Other complementary medicines",
+    "Total"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.56,
+      0.26,
+      0.25,
+      0.23,
+      0.19,
+      0.15,
+      0.07,
+      0.73
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Distribution of consumers who purchased vitamin products in Australia in 2020, by gender",
+   "short": "Gender distribution of consumers that purchased vitamin products in Australia 2020",
+   "unit": "",
+   "description": "According to a survey conducted in 2020, 52 percent of female respondents aged between 50 and 64 said they had purchased vitamin products within the last six months. By comparison, 38 percent of male respondents from the same age group gave the same answer.",
+   "note": "Australia; April 2019 to March 2020; 13,208 respondents; 14 years and older; respondents had purchased vitamin products within the last six months",
+   "source": "Roy Morgan",
+   "kind": "categorical",
+   "categories": [
+    "25 and under",
+    "25-34",
+    "35-49",
+    "50-64",
+    "64 and over",
+    "Total"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.2,
+      0.3,
+      0.4,
+      0.38,
+      0.33,
+      0.33
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.28,
+      0.46,
+      0.5,
+      0.52,
+      0.48,
+      0.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Diets and nutrition in Australia as of December 2023",
+   "short": "Diets and nutrition in Australia 2023",
+   "unit": "",
+   "description": "15 percent of Australian respondents answer our survey on \"Diets and nutrition\" with \"Low-carb / no carb\". The survey was conducted in 2023, among 2,029 consumers.",
+   "note": "Australia; January to December 2023; 2029 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Low-carb / no carb",
+    "Lactose-free (e.g., no dairy products)",
+    "Flexitarian (mostly plant-based foods while occasionally allowing meat and fish)",
+    "Gluten-free (e.g., no wheat products)",
+    "Vegetarian (not eating meat and fish)",
+    "Pescetarian (not eating meat, but eating fish)",
+    "Vegan (not eating any animal products)",
+    "I don't follow any nutrition rules",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.15,
+      0.11,
+      0.1,
+      0.09,
+      0.04,
+      0.03,
+      0.02,
+      0.58,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Anticipated average annual number of avoided medical events for select conditions in Australia by targeted complementary medicine use in 2015-2020",
+   "short": "Avoided hospitalizations through CAM medicine use by condition in Australia 2015-2020",
+   "unit": "",
+   "description": "This statistic shows the predicted average number of medical events avoided for select conditions by targeted complementary medicine use, for the period from 2015 to 2020. It was predicted that by taking calcium and vitamin D for osteoporosis the number of medical events can be reduced for the condition by 37,715 yearly.",
+   "note": "Australia; as of October 2014",
+   "source": "ASMI; Complementary Medicines Australia; Frost & Sullivan",
+   "kind": "categorical",
+   "categories": [
+    "Magnesium for osteoporosis",
+    "Calcium and vitamin D for osteoporosis",
+    "Folic acid, B6 and B12 for cardiovascular disease",
+    "Omega-3 for cardiovascular disease",
+    "Lutein and zeaxanthin for age-related macular degeneration",
+    "St John's Wort for major depression*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7815,
+      37715,
+      4905,
+      6984,
+      1095,
+      40855
+     ]
+    }
+   ]
+  }
+ ]
+}

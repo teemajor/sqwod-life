@@ -1,0 +1,1932 @@
+{
+ "studyId": "36038",
+ "study": "smartwatches statista dossier",
+ "file": "research/statista/Trackers Smartwatches Tech/study_id36038_smartwatches-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the digital fitness & well-being device market worldwide from 2019 to 2028, by segment (in billion U.S. dollars)",
+   "short": "Digital fitness & well-being device market revenue worldwide 2019-2028, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. This reflects the overall trend throughout the entire forecast period from 2019 to 2028. It is estimated that the indicator is continuously rising in all segments. In this regard, the Smartwatches segment achieves the highest value of 62.46 billion U.S. dollars in 2028.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smartwatches",
+     "values": [
+      23.74,
+      32.04,
+      38.03,
+      40.19,
+      44.15,
+      47.94,
+      51.58,
+      55.16,
+      58.74,
+      62.46
+     ]
+    },
+    {
+     "name": "Smart bands",
+     "values": [
+      8.61,
+      11.78,
+      14.61,
+      16.47,
+      19.52,
+      22.78,
+      26.08,
+      29.38,
+      32.6,
+      35.84
+     ]
+    },
+    {
+     "name": "Smart Scales",
+     "values": [
+      2.3,
+      2.51,
+      3.21,
+      3.21,
+      3.55,
+      3.89,
+      4.18,
+      4.48,
+      4.72,
+      4.97
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Revenue of the fitness/activity tracking wristwear market worldwide from 2019 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the fitness/activity tracking wristwear industry worldwide 2019-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The global revenue in the 'Smart bands' segment of the digital health market was forecast to continuously increase between 2023 and 2028 by in total 16.3 billion U.S. dollars (+83.5 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 35.84 billion U.S. dollars and therefore a new peak in 2028. Notably, the revenue of the 'Smart bands' segment of the digital health market was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.61,
+      11.78,
+      14.61,
+      16.47,
+      19.52,
+      22.78,
+      26.08,
+      29.38,
+      32.6,
+      35.84
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Wearables unit shipments worldwide from 2014 to 2028 (in millions)",
+   "short": "Total wearable device unit shipments worldwide 2014-2028",
+   "unit": "millions",
+   "description": "In 2024, global shipments of hearables, watches, wrist-bands, and other wearables were forecast to reach around 560 million units. This is a 10.5 prcent percent year-over-year decrease compared to the previous year.",
+   "note": "Worldwide; 2014 to 2028; *2023 figure was calculated by Statista based on the 2023-2024 growth rate (10.5%) provided by the source Read more",
+   "source": "IDC; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      28.8,
+      81.9,
+      102.4,
+      115.4,
+      172.2,
+      346.4,
+      444.7,
+      533.6,
+      492.1,
+      506.6,
+      559.7,
+      590.7,
+      614.1,
+      632.3,
+      645.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Smart wearable shipments forecast worldwide from 2016 to 2026 (in millions)",
+   "short": "Unit shipment forecast of smart wristwear worldwide 2016-2026",
+   "unit": "millions",
+   "description": "Smartwatch shipments worldwide are forecast to grow in the following years, increasing from 37 million units in 2016 to over 402 million units by 2027. Smartwatches are a major segment of the global wearables industry, contributing significantly to the global unit shipments of wearable devices.",
+   "note": "Worldwide; 2016 to 2021",
+   "source": "CCS Insight",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      37,
+      97,
+      118,
+      158,
+      193,
+      232,
+      270,
+      305,
+      339,
+      375,
+      402
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Revenue of the smartwatches market worldwide from 2019 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the smartwatches industry worldwide 2019-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The global revenue in the 'Smartwatches' segment of the digital health market was forecast to continuously increase between 2023 and 2028 by in total 18.3 billion U.S. dollars (+41.45 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 62.46 billion U.S. dollars and therefore a new peak in 2028. Notably, the revenue of the 'Smartwatches' segment of the digital health market was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23.74,
+      32.04,
+      38.03,
+      40.19,
+      44.15,
+      47.94,
+      51.58,
+      55.16,
+      58.74,
+      62.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Revenue growth of the smartwatches market worldwide from 2019 to 2028",
+   "short": "Revenue growth of smartwatches worldwide 2019-2028",
+   "unit": "",
+   "description": "The global revenue change in the 'Smartwatches' segment of the digital health market was forecast to continuously decrease between 2023 and 2028 by in total 3.5 percentage points. According to this forecast in 2028, the indicator will have decreased for the fifth consecutive year to 6.33 percent.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2856,
+      0.35,
+      0.1868,
+      0.0569,
+      0.0985,
+      0.0859,
+      0.0758,
+      0.0695,
+      0.0648,
+      0.0633
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Share of smartwatch shipments from 2020 to 2022, by region",
+   "short": "Smartwatch shipments 2020-2022, by region",
+   "unit": "",
+   "description": "In 2022, North America and India were the largest smartwatch markets, occupying 28 percent and 21 percent of the market, respectively. China followed in the third places, representing 19 percent of global smartwatch market India's share of shipments grew from 3 percent in 2020 to 21 percent in 2022, marking a significant growth of India's smartwatch market.",
+   "note": "Worldwide, North America, China, India; 2020 to 2021",
+   "source": "Counterpoint Research",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      0.33,
+      0.3,
+      0.28
+     ]
+    },
+    {
+     "name": "China",
+     "values": [
+      0.27,
+      0.24,
+      0.19
+     ]
+    },
+    {
+     "name": "India",
+     "values": [
+      0.03,
+      0.1,
+      0.21
+     ]
+    },
+    {
+     "name": "Rest of world",
+     "values": [
+      0.28,
+      0.37,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Wearables unit shipments worldwide from 2014 to 2022 (in millions), by vendor",
+   "short": "Wearables unit shipments worldwide 2014-2022, by vendor",
+   "unit": "",
+   "description": "In 2022, Apple was the leading wearable device vendors, with around 146.3 million global units shipped. Apple was followed by Samsung and Xiaomi, which shipped around 43.1 million and 34.7 shipments worldwide, respectively.",
+   "note": "Worldwide; 2014 to 2022",
+   "source": "IDC",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      11.6,
+      10.7,
+      33.1,
+      48,
+      111.5,
+      151.4,
+      161.8,
+      146.3
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      1.1,
+      12,
+      15.7,
+      16.1,
+      23.3,
+      41.7,
+      50.7,
+      54.4,
+      34.7
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      4.6,
+      11.2,
+      28.9,
+      43.5,
+      42.7,
+      33.3
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      2.7,
+      3.2,
+      4.4,
+      5.8,
+      12.2,
+      31.4,
+      40,
+      48.1,
+      43.1
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      10.9,
+      22,
+      22.5,
+      15.4,
+      13.8,
+      15.9,
+      12.9
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      2,
+      5.8,
+      6.1,
+      6.3
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      4.9
+     ]
+    },
+    {
+     "name": "Imagine Marketing",
+     "values": [
+      26.8,
+      29.3
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      12,
+      27.4,
+      43,
+      48.8,
+      69.4,
+      117.1,
+      146.1,
+      199.9,
+      205.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Wearables unit shipments worldwide by vendor from 1st quarter 2014 to 3rd quarter 2023 (in millions)",
+   "short": "Quarterly wearables shipments worldwide 2014-2023, by vendor",
+   "unit": "millions",
+   "description": "Apple is the leading vendor in terms of worldwide wearables unit shipments, with a total unit shipment of almost 30 million units in the third quarter of 2023.",
+   "note": "Worldwide; Q1 2014 to Q3 2023",
+   "source": "IDC",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '14",
+    "Q2 '14",
+    "Q3 '14",
+    "Q4 '14",
+    "Q1 '15",
+    "Q2 '15",
+    "Q3 '15",
+    "Q4 '15",
+    "Q1 '16",
+    "Q2 '16",
+    "Q3 '16",
+    "Q4 '16",
+    "Q1 '17",
+    "Q2 '17",
+    "Q3 '17",
+    "Q4 '17",
+    "Q1 '18",
+    "Q2 '18",
+    "Q3 '18",
+    "Q4 '18",
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2 '21",
+    "Q3 '21",
+    "Q4 '21",
+    "Q1 '22",
+    "Q3' 22",
+    "Q4 '22",
+    "Q3 '23"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      3.6,
+      3.9,
+      4.1,
+      2.2,
+      2.3,
+      1.1,
+      4.6,
+      3.6,
+      3.4,
+      2.7,
+      13.3,
+      4,
+      4.7,
+      4.2,
+      19.7,
+      13.3,
+      5.1,
+      29.5,
+      43.7,
+      21.2,
+      29.5,
+      41.4,
+      55.6,
+      30.1,
+      32.2,
+      39.8,
+      34.9,
+      32.1,
+      40.8,
+      46.6,
+      29.9
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.4,
+      0.7,
+      2.6,
+      3.1,
+      3.7,
+      2.6,
+      3.8,
+      3.1,
+      3.8,
+      5.2,
+      3.6,
+      3.5,
+      3.6,
+      5.2,
+      3.7,
+      4.2,
+      6.9,
+      7.5,
+      6.5,
+      5.9,
+      12.4,
+      12.8,
+      10.1,
+      10.2,
+      17,
+      13.5,
+      10.2,
+      14,
+      12.7,
+      8.6,
+      9.8,
+      8.5,
+      7.7,
+      11.6
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      1.6,
+      1.6,
+      1.3,
+      1.8,
+      1.9,
+      5.7,
+      5,
+      4.8,
+      7.1,
+      9.5,
+      9.1,
+      8.4,
+      13.7,
+      10.2,
+      8.6,
+      11.7,
+      10.9,
+      6.7,
+      7.7,
+      8.9,
+      8.3,
+      8.5
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.3,
+      0.8,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      1.4,
+      0.7,
+      1,
+      1.9,
+      1.4,
+      2,
+      1.8,
+      4.6,
+      5,
+      3.2,
+      8.3,
+      10.8,
+      8.6,
+      7.1,
+      11.2,
+      13,
+      11.8,
+      9.7,
+      12.7,
+      7.9,
+      10.9,
+      11.8,
+      11,
+      10.7
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      1.7,
+      1.7,
+      2.3,
+      5.3,
+      3.8,
+      4.4,
+      4.8,
+      8.4,
+      4.9,
+      5.7,
+      5.3,
+      6.5,
+      3,
+      3.4,
+      3.6,
+      5.4,
+      2.2,
+      2.7,
+      3.5,
+      5.5,
+      2.9,
+      3.5,
+      3.5,
+      6,
+      2.2,
+      2.5,
+      3.3
+     ]
+    },
+    {
+     "name": "BoAt",
+     "values": [
+      0.9,
+      3.3,
+      5.4,
+      3
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.3,
+      0.5,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      1.2,
+      2.2,
+      1.1,
+      1.5,
+      1.3,
+      2.1,
+      1.1,
+      1.4,
+      1.3,
+      2.5,
+      1.3,
+      1.5
+     ]
+    },
+    {
+     "name": "Jawbone",
+     "values": [
+      0.2,
+      0.5
+     ]
+    },
+    {
+     "name": "BBK",
+     "values": [
+      0.7,
+      0.7
+     ]
+    },
+    {
+     "name": "Lifesense",
+     "values": [
+      1
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      0.3,
+      1
+     ]
+    },
+    {
+     "name": "Imagine marketing",
+     "values": [
+      0.8,
+      4.6,
+      10,
+      5.4,
+      3.2,
+      11.9,
+      6,
+      14.3
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      1.3,
+      2.6,
+      3.9,
+      4.6,
+      3.5,
+      5.3,
+      7.5,
+      10.3,
+      7.3,
+      9.9,
+      10.4,
+      13.6,
+      11.9,
+      13.5,
+      13.5,
+      15.1,
+      12.6,
+      13,
+      13.7,
+      20.3,
+      23.3,
+      11.7,
+      23.8,
+      42.9,
+      22.3,
+      30.3,
+      35.3,
+      55.8,
+      40.9,
+      41.9,
+      52.2,
+      36.6,
+      41.7,
+      58.9,
+      59.1,
+      73.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Market share of wearables unit shipments worldwide from 2014 to 2022, by vendor",
+   "short": "Wearables shipments worldwide market share 2014-2022, by vendor",
+   "unit": "",
+   "description": "The wearable device industry is dominated by Apple, Xiaomi, Samsung, and Huawei. In 2022, Apple was the leading wearables vendor, occupying 29.7 percent of the market. Prior to Apple becoming the leading wearable devices vendor in 2017, Fitbit was the market leader with market shares close to 40 percent.",
+   "note": "Worldwide; 2014 to 2022",
+   "source": "IDC",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      0.142,
+      0.105,
+      0.245,
+      0.27,
+      0.322,
+      0.341,
+      0.303,
+      0.297
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.04,
+      0.147,
+      0.154,
+      0.119,
+      0.131,
+      0.12,
+      0.114,
+      0.102,
+      0.071
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.034,
+      0.063,
+      0.083,
+      0.098,
+      0.08,
+      0.068
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.092,
+      0.039,
+      0.043,
+      0.043,
+      0.069,
+      0.091,
+      0.09,
+      0.09,
+      0.088
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      0.379,
+      0.268,
+      0.22,
+      0.114,
+      0.078,
+      0.046,
+      0.029
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.071,
+      0.07,
+      0.059,
+      0.047
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      0.036
+     ]
+    },
+    {
+     "name": "Imagine marketing",
+     "values": [
+      0.05,
+      0.06
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      0.419,
+      0.334,
+      0.42,
+      0.362,
+      0.39,
+      0.338,
+      0.329,
+      0.375,
+      0.417
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Market share of wearables unit shipments worldwide from 1st quarter 2014 to 3rd quarter 2023, by vendor",
+   "short": "Wearables shipments worldwide market share 2014-2023, by vendor",
+   "unit": "",
+   "description": "Apple is establishing a solid hold on wearable device unit shipments with 20.2 percent in the third quarter of 2023, dominating the market.",
+   "note": "Worldwide; 2014 to 2023",
+   "source": "IDC",
+   "kind": "categorical",
+   "categories": [
+    "1Q '14",
+    "2Q '14",
+    "3Q '14",
+    "4Q '14",
+    "1Q '15",
+    "2Q '15",
+    "3Q '15",
+    "4Q '15",
+    "1Q '16",
+    "2Q '16",
+    "3Q '16",
+    "4Q '16",
+    "1Q '17",
+    "2Q '17",
+    "3Q '17",
+    "4Q '17",
+    "1Q '18",
+    "2Q '18",
+    "3Q '18",
+    "4Q '18",
+    "1Q '19",
+    "2Q '19",
+    "3Q '19",
+    "4Q '19",
+    "1Q '20",
+    "2Q '20",
+    "3Q '20",
+    "4Q '20",
+    "1Q '21",
+    "2Q '21",
+    "3Q '21",
+    "4Q '21",
+    "1Q'22",
+    "3Q'22",
+    "4Q'22",
+    "1Q'23",
+    "3Q '23"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      0.203,
+      0.175,
+      0.141,
+      0.075,
+      0.07,
+      0.049,
+      0.136,
+      0.146,
+      0.13,
+      0.103,
+      0.296,
+      0.087,
+      0.17,
+      0.131,
+      0.302,
+      0.237,
+      0.148,
+      0.35,
+      0.365,
+      0.293,
+      0.342,
+      0.331,
+      0.362,
+      0.288,
+      0.341,
+      0.288,
+      0.349,
+      0.305,
+      0.29,
+      0.336,
+      0.215,
+      0.202
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.057,
+      0.062,
+      0.224,
+      0.172,
+      0.164,
+      0.091,
+      0.19,
+      0.14,
+      0.165,
+      0.152,
+      0.147,
+      0.134,
+      0.137,
+      0.116,
+      0.161,
+      0.151,
+      0.215,
+      0.115,
+      0.116,
+      0.173,
+      0.146,
+      0.108,
+      0.14,
+      0.118,
+      0.136,
+      0.088,
+      0.097,
+      0.118,
+      0.092,
+      0.086,
+      0.093,
+      0.061,
+      0.055,
+      0.078,
+      0.078
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.06,
+      0.036,
+      0.052,
+      0.065,
+      0.059,
+      0.087,
+      0.089,
+      0.141,
+      0.084,
+      0.078,
+      0.111,
+      0.126,
+      0.11,
+      0.067,
+      0.082,
+      0.098,
+      0.079,
+      0.067,
+      0.073,
+      0.063,
+      0.06,
+      0.073,
+      0.057
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.079,
+      0.143,
+      0.067,
+      0.058,
+      0.034,
+      0.024,
+      0.047,
+      0.036,
+      0.045,
+      0.056,
+      0.055,
+      0.043,
+      0.056,
+      0.07,
+      0.09,
+      0.094,
+      0.098,
+      0.088,
+      0.119,
+      0.083,
+      0.09,
+      0.085,
+      0.113,
+      0.082,
+      0.092,
+      0.079,
+      0.103,
+      0.083,
+      0.079,
+      0.072,
+      0.072
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      0.447,
+      0.304,
+      0.328,
+      0.439,
+      0.326,
+      0.249,
+      0.214,
+      0.29,
+      0.245,
+      0.254,
+      0.23,
+      0.192,
+      0.123,
+      0.129,
+      0.137,
+      0.119,
+      0.148,
+      0.095,
+      0.109,
+      0.085,
+      0.052,
+      0.101,
+      0.041,
+      0.05,
+      0.03,
+      0.029,
+      0.026
+     ]
+    },
+    {
+     "name": "BoAt",
+     "values": [
+      0.026,
+      0.035,
+      0.029
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.079,
+      0.089,
+      0.07,
+      0.053,
+      0.061,
+      0.042,
+      0.053,
+      0.076,
+      0.046,
+      0.069,
+      0.057,
+      0.062,
+      0.046,
+      0.054,
+      0.049,
+      0.055,
+      0.05,
+      0.053
+     ]
+    },
+    {
+     "name": "Jawbone",
+     "values": [
+      0.053,
+      0.044
+     ]
+    },
+    {
+     "name": "BBK",
+     "values": [
+      0.031,
+      0.036
+     ]
+    },
+    {
+     "name": "Lifesense",
+     "values": [
+      0.046
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      0.04
+     ]
+    },
+    {
+     "name": "Imagine marketing",
+     "values": [
+      0.041,
+      0.009,
+      0.072,
+      0.054,
+      0.03,
+      0.085,
+      0.044,
+      0.075,
+      0.096
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      0.342,
+      0.464,
+      0.546,
+      0.38,
+      0.287,
+      0.3,
+      0.339,
+      0.355,
+      0.372,
+      0.421,
+      0.453,
+      0.401,
+      0.482,
+      0.513,
+      0.514,
+      0.335,
+      0.503,
+      0.466,
+      0.43,
+      0.343,
+      0.416,
+      0.343,
+      0.281,
+      0.311,
+      0.3008,
+      0.303,
+      0.282,
+      0.364,
+      0.391,
+      0.382,
+      0.377,
+      0.366,
+      0.396,
+      0.418,
+      0.426,
+      0.487,
+      0.494
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Smartwatch market share worldwide from 2020 to 2022, by vendor",
+   "short": "Global smartwatch market share 2020-2022, by vendor",
+   "unit": "",
+   "description": "In 2022, Apple led the global smart watch market, holding around 30 percent of the market. This value was slightly lower than the brand's share in 2021 (32.6 percent). Apple was followed by Samsung (10.1 percent), Huawei (6.9 percent), and Noise (5.8 percent).",
+   "note": "2020 to 2022",
+   "source": "Counterpoint Research",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      0.329,
+      0.326,
+      0.3
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.089,
+      0.098,
+      0.101
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.107,
+      0.074,
+      0.069
+     ]
+    },
+    {
+     "name": "Imoo",
+     "values": [
+      0.064,
+      0.05
+     ]
+    },
+    {
+     "name": "Amazfit",
+     "values": [
+      0.05,
+      0.049,
+      0.041
+     ]
+    },
+    {
+     "name": "Garnin",
+     "values": [
+      0.043,
+      0.046,
+      0.041
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      0.057,
+      0.036
+     ]
+    },
+    {
+     "name": "Mi",
+     "values": [
+      0.015,
+      0.035
+     ]
+    },
+    {
+     "name": "Noise",
+     "values": [
+      0.058
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      0.022
+     ]
+    },
+    {
+     "name": "Fire-Boltt",
+     "values": [
+      0.057
+     ]
+    },
+    {
+     "name": "boAt",
+     "values": [
+      0.039
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      0.224,
+      0.286,
+      0.294
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Quarterly smartwatch unit shipment share worldwide from 2018 to 2023, by vendor",
+   "short": "Smartwatch unit shipment share worldwide 2018-2023, by vendor",
+   "unit": "",
+   "description": "Apple is the leading company in the smartwatch industry in terms of shipment share, accounting for 31 percent of worldwide shipments as of the fourth quarter of 2023. This was followed by Huawei with nine percent of the market share.",
+   "note": "Worldwide; 2018 to 2023",
+   "source": "Counterpoint Research",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '18",
+    "Q2 '18",
+    "Q3 '18",
+    "Q4 '18",
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2 '21",
+    "Q3 '21",
+    "Q4' 21",
+    "Q1 '22",
+    "Q2 '22",
+    "Q3 '22",
+    "Q4 '22",
+    "Q1 '23",
+    "Q2' 23",
+    "Q3 '23",
+    "Q4 '23"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      0.26,
+      0.22,
+      0.21,
+      0.37,
+      0.26,
+      0.23,
+      0.26,
+      0.34,
+      0.3,
+      0.3,
+      0.28,
+      0.4,
+      0.36,
+      0.31,
+      0.23,
+      0.38,
+      0.32,
+      0.27,
+      0.22,
+      0.37,
+      0.26,
+      0.22,
+      0.22,
+      0.31
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.05,
+      0.05,
+      0.08,
+      0.08,
+      0.09,
+      0.1,
+      0.08,
+      0.09,
+      0.09,
+      0.07,
+      0.1,
+      0.1,
+      0.08,
+      0.07,
+      0.14,
+      0.1,
+      0.1,
+      0.09,
+      0.12,
+      0.09,
+      0.09
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.03,
+      0.05,
+      0.05,
+      0.05,
+      0.08,
+      0.08,
+      0.1,
+      0.1,
+      0.12,
+      0.14,
+      0.15,
+      0.08,
+      0.08,
+      0.09,
+      0.05,
+      0.08,
+      0.07,
+      0.07,
+      0.07,
+      0.1,
+      0.09,
+      0.1
+     ]
+    },
+    {
+     "name": "imoo",
+     "values": [
+      0.1,
+      0.09,
+      0.08,
+      0.06,
+      0.08,
+      0.08,
+      0.08,
+      0.06,
+      0.07,
+      0.07,
+      0.07,
+      0.06,
+      0.05,
+      0.06,
+      0.06,
+      0.04
+     ]
+    },
+    {
+     "name": "Amazfit",
+     "values": [
+      0.05,
+      0.05,
+      0.04
+     ]
+    },
+    {
+     "name": "Noise",
+     "values": [
+      0.01,
+      0.01,
+      0.04,
+      0.03,
+      0.09,
+      0.1
+     ]
+    },
+    {
+     "name": "Fire Boltt",
+     "values": [
+      0.09,
+      0.1,
+      0.08
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      0.56,
+      0.59,
+      0.58,
+      0.44,
+      0.49,
+      0.51,
+      0.48,
+      0.41,
+      0.42,
+      0.37,
+      0.35,
+      0.32,
+      0.42,
+      0.46,
+      0.48,
+      0.37,
+      0.5,
+      0.57,
+      0.56,
+      0.47,
+      0.56,
+      0.58,
+      0.59,
+      0.51
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Number of users of smartwatches worldwide from 2019 to 2028 (in millions)",
+   "short": "Number of users of smartwatches worldwide 2019-2028",
+   "unit": "millions",
+   "description": "The global number of users in the 'Smartwatches' segment of the digital health market was forecast to continuously increase between 2023 and 2028 by in total 11.4 million users (+5.2 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 230.85 million users and therefore a new peak in 2028. Notably, the number of users of the 'Smartwatches' segment of the digital health market was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      148.74,
+      186.92,
+      202.6,
+      211.58,
+      219.43,
+      224.31,
+      226.89,
+      228.48,
+      229.64,
+      230.85
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Penetration rate of the smartwatches market worldwide from 2019 to 2028",
+   "short": "Penetration rate of smartwatches worldwide 2019-2028",
+   "unit": "",
+   "description": "The global penetration rate in the 'Smartwatches' segment of the digital health market was forecast to increase between 2023 and 2028 by in total 0.02 percentage points. This overall increase does not happen continuously, notably not in 2027 and 2028. The indicator is estimated to amount to 2.88 percent in 2028. Notably, the penetration rate of the 'Smartwatches' segment of the digital health market was continuously increasing over the past years.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0201,
+      0.025,
+      0.0269,
+      0.0278,
+      0.0286,
+      0.0289,
+      0.029,
+      0.029,
+      0.0289,
+      0.0288
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Wearable devices usage in selected countries as of December 2023",
+   "short": "Wearable devices usage in selected countries 2023",
+   "unit": "",
+   "description": "The displayed data on wearables usage shows a country comparison from the Statista Consumer Insights. As of December 2023, Some 45 percent of respondents in China stated that they personally use wearables (e.g. smart watch, health / fitness tracker). The survey was conducted in 2023.",
+   "note": "Brazil, Canada, China, Germany, India, South Korea, Netherlands, Sweden, United Kingdom, United States; January to December 2023; 2,017 - 10,045 respondents, differs by country; 18-64 years",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "India",
+    "China (Mainland)",
+    "United Kingdom",
+    "Sweden",
+    "Germany",
+    "South Korea",
+    "United States of America",
+    "Netherlands",
+    "Canada",
+    "Brazil"
+   ],
+   "series": [
+    {
+     "name": "Wearables usage",
+     "values": [
+      0.48,
+      0.45,
+      0.42,
+      0.36,
+      0.34,
+      0.33,
+      0.32,
+      0.31,
+      0.31,
+      0.27
+     ]
+    },
+    {
+     "name": "No wearables usage",
+     "values": [
+      0.52,
+      0.55,
+      0.58,
+      0.64,
+      0.66,
+      0.67,
+      0.68,
+      0.69,
+      0.69,
+      0.73
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Most used eHealth tracker / smart watches by brand in the U.S. as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in the U.S. 2023",
+   "unit": "",
+   "description": "With 58 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among U.S. consumers. In second place follows Fitbit with 27 percent of respondents. These results are based on a representative online survey conducted in 2023 among 3,240 consumers in the United States.",
+   "note": "United States; January to December 2023; 3240 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Google",
+    "Amazfit",
+    "ASUS",
+    "Garmin",
+    "LG",
+    "Fossil",
+    "Huawei",
+    "Honor",
+    "Polar",
+    "Xiaomi/Mi",
+    "Misfit",
+    "Moov"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.27,
+      0.21,
+      0.12,
+      0.09,
+      0.09,
+      0.09,
+      0.09,
+      0.07,
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Most used eHealth tracker / smart watches by brand in the UK as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in the UK 2023",
+   "unit": "",
+   "description": "With 46 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among UK consumers. In second place follows Fitbit with 28 percent of respondents. These results are based on a representative online survey conducted in 2023 among 1,685 consumers in the UK.",
+   "note": "United Kingdom; January to December 2023; 1685 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Garmin",
+    "Amazfit",
+    "Huawei",
+    "ASUS",
+    "Google",
+    "Fossil",
+    "Honor",
+    "LG",
+    "Misfit",
+    "Mobvoi",
+    "Motorola",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.46,
+      0.28,
+      0.15,
+      0.08,
+      0.05,
+      0.05,
+      0.04,
+      0.04,
+      0.02,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Most used eHealth tracker / smart watches by brand in Germany as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in Germany 2023",
+   "unit": "",
+   "description": "With 35 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among German consumers. In second place follows Samsung with 21 percent of respondents. These results are based on a representative online survey conducted in 2023 among 2,050 consumers in Germany.",
+   "note": "Germany; January to December 2023; 2050 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Fitbit",
+    "Amazfit",
+    "Garmin",
+    "Huawei",
+    "Adidas",
+    "Xiaomi/Mi",
+    "ASUS",
+    "Denver",
+    "Fossil",
+    "Google",
+    "Honor",
+    "Polar",
+    "Misfit"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.21,
+      0.16,
+      0.08,
+      0.08,
+      0.07,
+      0.05,
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Most used eHealth tracker / smart watches by brand in Spain as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in Spain 2023",
+   "unit": "",
+   "description": "With 24 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Spanish consumers. In second place follows Xiaomi/Mi with 22 percent of respondents. These results are based on a representative online survey conducted in 2023 among 812 consumers in Spain.",
+   "note": "Spain; January to December 2023; 812 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Xiaomi/Mi",
+    "Samsung",
+    "Amazfit",
+    "Huawei",
+    "Fitbit",
+    "Garmin",
+    "Google",
+    "Honor",
+    "ASUS",
+    "LG",
+    "Huami",
+    "Neki",
+    "Polar",
+    "Sony"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.24,
+      0.22,
+      0.15,
+      0.13,
+      0.12,
+      0.09,
+      0.06,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Most used eHealth tracker / smart watches by brand in Italy as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in Italy 2023",
+   "unit": "",
+   "description": "With 26 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Italian consumers. In second place follows Samsung with 16 percent of respondents. These results are based on a representative online survey conducted in 2023 among 694 consumers in Italy.",
+   "note": "Italy; January to December 2023; 694 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Xiaomi/Mi",
+    "Amazfit",
+    "Fitbit",
+    "Huawei",
+    "Garmin",
+    "Google",
+    "ASUS",
+    "Honor",
+    "OPPO",
+    "Blackview",
+    "Fossil",
+    "LG",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.26,
+      0.16,
+      0.15,
+      0.12,
+      0.11,
+      0.11,
+      0.09,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  }
+ ]
+}

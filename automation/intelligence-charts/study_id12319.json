@@ -1,0 +1,1343 @@
+{
+ "studyId": "12319",
+ "study": "health and fitness clubs statista dossier",
+ "file": "research/statista/study_id12319_health-and-fitness-clubs-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Size of the health and fitness club market worldwide in 2021, with a forecast for 2030 (in billion U.S. dollars)",
+   "short": "Market share of global health and fitness club industry 2021-2030",
+   "unit": "billion U.S. dollars",
+   "description": "The health and fitness club market worldwide was estimated to grow at a rate of 7.5 percent annually between 2022 and 2030. By 2030, this industry was estimated to be worth approximately 125 billion U.S. dollars.",
+   "note": "Worldwide; 2021; * Forecast. Read more",
+   "source": "LinkedIn; Various sources (Custom Market Insights)",
+   "kind": "categorical",
+   "categories": [
+    "2021",
+    "2030*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      78,
+      125.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Total number of health and fitness clubs worldwide 2009 to 2019 (in 1,000s)",
+   "short": "Number of fitness and health clubs worldwide 2009-2019",
+   "unit": "1,000s",
+   "description": "The statistic shows the total number of health and fitness clubs worldwide from 2009 to 2019. In 2019, there were more than 205 thousand fitness and health clubs worldwide.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      128.52,
+      133.56,
+      133.76,
+      153.16,
+      165.3,
+      183.92,
+      186.85,
+      201.07,
+      201.25,
+      205.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Total number of health clubs worldwide from 2009 to 2019, by region",
+   "short": "Health clubs - total number by region worldwide 2009-2019",
+   "unit": "",
+   "description": "This graph depicts the number of health clubs worldwide by region from 2009 to 2019. In Europe, there were an estimated 63,644 health clubs in 2019.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012**",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "Europe",
+     "values": [
+      48087,
+      48005,
+      47701,
+      45396,
+      49197,
+      51299,
+      51204,
+      55003,
+      59055,
+      63644
+     ]
+    },
+    {
+     "name": "North America",
+     "values": [
+      38192,
+      38332,
+      38402,
+      36742,
+      38400,
+      40710,
+      42336,
+      42696,
+      44633,
+      47957
+     ]
+    },
+    {
+     "name": "South America",
+     "values": [
+      21442,
+      24086,
+      24086
+     ]
+    },
+    {
+     "name": "Latin America",
+     "values": [
+      46130,
+      53617,
+      55809,
+      55809,
+      65863,
+      65863,
+      61374
+     ]
+    },
+    {
+     "name": "Asia",
+     "values": [
+      16840,
+      18149,
+      18561
+     ]
+    },
+    {
+     "name": "Australia",
+     "values": [
+      3210,
+      3210,
+      3234
+     ]
+    },
+    {
+     "name": "Asia-Pacific",
+     "values": [
+      21658,
+      21804,
+      31011,
+      31011,
+      31011,
+      25140,
+      25140
+     ]
+    },
+    {
+     "name": "Africa",
+     "values": [
+      750,
+      1776,
+      1776
+     ]
+    },
+    {
+     "name": "Africa & Middle East",
+     "values": [
+      2234,
+      2282,
+      5090,
+      6434,
+      6494,
+      6554
+     ]
+    },
+    {
+     "name": "Middle East & North Africa",
+     "values": [
+      5969
+     ]
+    },
+    {
+     "name": "Southern Africa",
+     "values": [
+      1092
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Leading health club industry companies in the United States in 2021, by number of facilities",
+   "short": "Health clubs ranked by number of facilities in the U.S. 2021",
+   "unit": "",
+   "description": "In 2021, Planet Fitness topped the list of health club companies by number of facilities in the United States. In that year, Planet Fitness operated a total of 2,254 health clubs in the country. Coming in second was Orangetheory Fitness with 1,262 health clubs in the United States.",
+   "note": "United States; 2021; only health clubs solely operating in North America",
+   "source": "Club Industry Number of clubs",
+   "kind": "categorical",
+   "categories": [
+    "Planet Fitness",
+    "Orangetheory Fitness",
+    "Xponential Fitness LLC",
+    "F45 Training"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2254,
+      1262,
+      1965,
+      1749
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Number of Planet Fitness health clubs worldwide from 2019 to 2023",
+   "short": "Number of Planet Fitness gyms worldwide 2023",
+   "unit": "",
+   "description": "Founded in 1992, Planet Fitness is one of the largest health club franchises in the world. In 2023, the New Hampshire-based company had 2,410 facilities across the globe.",
+   "note": "Worldwide; 2019 to 2023",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2001,
+      2124,
+      2254,
+      2410
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Value of the corporate wellness market worldwide in 2022, with a forecast for 2033 (in billion U.S. dollars)",
+   "short": "Corporate wellness market size worldwide 2033",
+   "unit": "billion U.S. dollars",
+   "description": "Corporate wellness has become a big industry worldwide, with employers looking to keep their workforce healthy, happy, and motivated. This could range from corporate fitness programs to healthy eating initiatives and creating a healthier working environment in the office. The size of the global corporate wellness market was expected to grow to 146.6 billion U.S. dollars by 2027, an annual increase of almost seven percent on the figure from 2022.How accessible is workplace wellness [...]",
+   "note": "Worldwide; 2022; * Forecast. Read more",
+   "source": "Fact.MR",
+   "kind": "categorical",
+   "categories": [
+    "2022",
+    "2033"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      70.12,
+      146.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of members in health and fitness clubs worldwide from 2009 to 2019, by region (in millions)",
+   "short": "Total number of members of health/fitness clubs worldwide 2009-2019, by region",
+   "unit": "millions",
+   "description": "This graph depicts the total number of members in health and fitness clubs worldwide by region from 2009 to 2019. In Europe, an estimated 64.76 million people were members of health and fitness clubs in 2019.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      53.2,
+      58.09,
+      59.55,
+      55.9,
+      58.6,
+      59.75,
+      60.86,
+      62.87,
+      66.48,
+      70.36
+     ]
+    },
+    {
+     "name": "Europe",
+     "values": [
+      42.56,
+      44.45,
+      43.45,
+      41.95,
+      44.87,
+      47.67,
+      52.44,
+      56.87,
+      59.98,
+      64.76
+     ]
+    },
+    {
+     "name": "Australia",
+     "values": [
+      3.03,
+      3.07,
+      3.07
+     ]
+    },
+    {
+     "name": "Asia",
+     "values": [
+      12.97,
+      13.98,
+      14.14
+     ]
+    },
+    {
+     "name": "Asia-Pacific",
+     "values": [
+      17.03,
+      17.4,
+      17.36,
+      17.36,
+      17.36,
+      22.48,
+      22.48
+     ]
+    },
+    {
+     "name": "South America",
+     "values": [
+      6.38,
+      7.17,
+      7.17
+     ]
+    },
+    {
+     "name": "Latin America",
+     "values": [
+      14.31,
+      15.26,
+      15.72,
+      15.72,
+      19.92,
+      19.92,
+      20.81
+     ]
+    },
+    {
+     "name": "Africa",
+     "values": [
+      1.38,
+      2.01,
+      2.01
+     ]
+    },
+    {
+     "name": "Africa & Middle East",
+     "values": [
+      2.55,
+      2.63,
+      4.18,
+      5.09,
+      5.09,
+      5.18
+     ]
+    },
+    {
+     "name": "Middle East & North Africa",
+     "values": [
+      3.92
+     ]
+    },
+    {
+     "name": "Southern Africa",
+     "values": [
+      2.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Number of members at health & fitness clubs in 2019, by country (in millions)",
+   "short": "Countries with the most health/fitness club memberships 2019",
+   "unit": "millions",
+   "description": "This statistic depicts the leading markets of the health club industry worldwide in regards to club membership in 2019. In that year, there were about 64.19 million health club members in the United States.",
+   "note": "Worldwide; 2019",
+   "source": "IHRSA Club members in millions",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Germany",
+    "United Kingdom",
+    "Brazil",
+    "France",
+    "Canada",
+    "Italy",
+    "Spain",
+    "China (Mainland - top 10 cities)"
+   ],
+   "series": [
+    {
+     "name": "2019",
+     "values": [
+      64.19,
+      11.66,
+      10.39,
+      10.33,
+      6.19,
+      6.18,
+      5.51,
+      5.51,
+      4.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Leading health club companies in the United States in 2021, by membership (in thousands)",
+   "short": "Health & fitness club companies by membership in the U.S. 2021",
+   "unit": "thousands",
+   "description": "In 2021, approximately 15.2 million people were members at Planet Fitness. Meanwhile, Orangetheory Fitness International had just under 800 thousand members in that year.",
+   "note": "Worldwide; 2021",
+   "source": "Club Industry Number of members in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Planet Fitness",
+    "Powerhouse Gyms",
+    "Orangetheory Fitness",
+    "Life Time",
+    "Xponential Fitness",
+    "Rachas Inc. dba Chuze Fitness",
+    "Mountainside Fitness",
+    "The Bay Club",
+    "Bailey's Gym",
+    "Active Wellness"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15200,
+      1800,
+      797.35,
+      649.37,
+      450,
+      290.93,
+      113,
+      90,
+      67,
+      44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Number of members at gyms and health clubs in Europe from 2010 to 2022 (in millions)",
+   "short": "Health/fitness clubs members in Europe 2010-2022",
+   "unit": "millions",
+   "description": "The number of members at gyms and health clubs in Europe reached its peak in 2019, before declining in the ensuing years as a result of the coronavirus (COVID-19) pandemic. Following the closure of many gyms in 2020 leading to a steep decline in membership, the number has mostly recovered by 2022, reaching 63.1 million members.",
+   "note": "Europe; 2010 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      44.45,
+      43.5,
+      47.7,
+      44.87,
+      47.67,
+      52.44,
+      56.87,
+      59.98,
+      64.76,
+      55.2,
+      56.2,
+      63.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Number of members in health and fitness clubs in North America from 2009 to 2019 (in millions)",
+   "short": "Total number of members of health/fitness clubs in North America 2009-2019",
+   "unit": "millions",
+   "description": "This graph depicts the total number of members in health and fitness clubs in North America from 2009 to 2019. In 2019, about 70.36 million people were members of a health/fitness club in North America.",
+   "note": "North America; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      53.2,
+      58.09,
+      59.55,
+      55.9,
+      58.6,
+      59.75,
+      60.86,
+      62.87,
+      66.48,
+      70.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of memberships at fitness centers / health clubs in the United States from 2000 to 2019 (in millions)",
+   "short": "U.S. fitness center / health club memberships 2000-2019",
+   "unit": "millions",
+   "description": "The number of members of fitness centers and health clubs within the United States has experienced a near continual increase between 2000 and 2019, with the exception of a slight decline during 2008, 2009 and 2012, possibly associated with the global financial crisis that took place during this period which resulted in a similar reduction in the Gross Domestic Product (GDP) in the United States over the first two of these periods. In 2019, there were found to be over 64 million members of [...]",
+   "note": "United States; 2000 to 2019",
+   "source": "Baird; IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      32.8,
+      33.8,
+      36.3,
+      39.4,
+      41.3,
+      41.3,
+      42.7,
+      46.7,
+      45.6,
+      45.3,
+      50.2,
+      51.4,
+      50.2,
+      52.9,
+      54.1,
+      55.3,
+      57.3,
+      60.9,
+      62.5,
+      64.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of fitness memberships in Spain from 2019 to 2021 (in millions)",
+   "short": "Gym membership count in Spain 2019-2021",
+   "unit": "millions",
+   "description": "The Spanish fitness market counted more than 4.8 million gym memberships in 2021, increasing by nearly 12 percent compared to the previous year. In total, the revenue of the fitness market in the Iberian country amounted to approximately 1.6 billion euros in 2021.",
+   "note": "Spain; 2019 to 2021",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.51,
+      4.32,
+      4.83
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of fitness club members in Japan from 2014 to 2023 (in millions)",
+   "short": "Number of sports club members in Japan 2014-2023",
+   "unit": "millions",
+   "description": "In 2023, Japan had approximately 2.8 million fitness club members. The figure increased compared to the last year. Roughly one-third of subscribers were affiliated with schools. The gym membership penetration rate in Japan hovered under the five percent mark. This is relatively low compared to the numbers of leading countries, such as the U.S., which had a gym membership penetration rate of over 20 percent. Gym subscribers in Japan paid among the highest membership fees when [...]",
+   "note": "Japan; 2014 to 2023",
+   "source": "METI (Japan)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3,
+      3.02,
+      3.29,
+      3.36,
+      3.37,
+      3.36,
+      2.69,
+      2.58,
+      2.65,
+      2.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Average cost of a monthly gym membership in selected countries worldwide in 2021 (in U.S. dollars)",
+   "short": "Gym membership cost worldwide in 2021, by country",
+   "unit": "U.S. dollars",
+   "description": "The average cost of a monthly gym membership in the United States in 2021 stood at 28.58 U.S. dollars. Meanwhile, gym-goers in Austria had to pay an average of over 107 U.S. dollars monthly for their health club membership.",
+   "note": "Worldwide; 2021",
+   "source": "CashNetUSA Monthly cost in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Austria",
+    "United Arab Emirates",
+    "Qatar",
+    "Japan",
+    "China",
+    "Egypt",
+    "Saudi Arabia",
+    "Iceland",
+    "Czechia",
+    "Switzerland",
+    "Israel",
+    "Hungary",
+    "Singapore",
+    "South Korea",
+    "Brazil"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      107.38,
+      105.72,
+      105.31,
+      99.19,
+      86.61,
+      82.86,
+      79.57,
+      77.08,
+      76.57,
+      73.04,
+      67.23,
+      62.58,
+      60.29,
+      57.96,
+      54.84
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of health clubs in the United States from 2008 to 2022",
+   "short": "Number of U.S. health clubs & fitness centers 2008-2022",
+   "unit": "",
+   "description": "The number of fitness facilities in the United States has fallen sharply in recent years as a result of the coronavirus (COVID-19) pandemic. In 2022, there were around 31 thousand health clubs in the United States.",
+   "note": "United States; 2008 to 2022",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      30022,
+      29750,
+      29890,
+      29960,
+      30500,
+      32150,
+      34460,
+      36180,
+      36540,
+      38477,
+      39570,
+      41370,
+      34337,
+      32269,
+      31028
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of fitness industry businesses in the United States from 2012 to 2023",
+   "short": "Fitness industry enterprises in the United States 2023",
+   "unit": "",
+   "description": "There were over 115 thousand businesses in the fitness industry in the United States in 2023. This marked a slight increase on the previous year's total of approximately 113 thousand businesses.",
+   "note": "United States; 2012 to 2023; * Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      88627,
+      88921,
+      92555,
+      94603,
+      95609,
+      98642,
+      100977,
+      109602,
+      108287,
+      113003,
+      112912,
+      115047
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Number of employees in the gym, health and fitness club industry in the United States from 2012 to 2021, with a forecast for 2023",
+   "short": "Fitness club employment in the United States 2012-2023",
+   "unit": "",
+   "description": "There were over 887 thousand people employed in the gym, health and fitness club industry in the United States in 2022. This represented a fall of almost 25 thousand employees on the previous year.",
+   "note": "United States; 2012 to 2022; *Forecast. Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      645269,
+      664300,
+      703257,
+      726085,
+      753042,
+      795848,
+      827250,
+      854969,
+      962011,
+      911750,
+      887638,
+      899275
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Revenue of the health club industry in the United States from 2000 to 2020 (in billion U.S. dollars)",
+   "short": "U.S. health club industry revenue 2000-2020",
+   "unit": "billion U.S. dollars",
+   "description": "This statistic shows the revenue of health clubs in the United States from 2000 to 2020. In 2020, the U.S. fitness center industry suffered significant losses from the previous year's revenues as a result of the coronavirus (COVID-19) pandemic.",
+   "note": "United States; 2000 to 2020",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11.6,
+      12.2,
+      13.1,
+      14.1,
+      14.8,
+      15.9,
+      17.6,
+      18.7,
+      19.1,
+      19.5,
+      20.3,
+      21.4,
+      21.8,
+      22.4,
+      24.2,
+      25.8,
+      27.6,
+      30.01,
+      35.03,
+      14.63
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Leading health club industry companies in the United States in 2021, by revenue (in million U.S. dollars)",
+   "short": "Health & fitness club companies by revenue in the United States 2021",
+   "unit": "million U.S. dollars",
+   "description": "Life Time Fitness, which had 160 health clubs across the United States in 2021, reported revenue of 1.32 billion U.S. dollars in that year. Meanwhile, Fitness International LLC, also known as LA Fitness, reported revenue of 2.1 billion U.S. dollars in 2021.",
+   "note": "United States; 2021",
+   "source": "Club Industry Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "LA Fitness",
+    "Life Time",
+    "Planet Fitness",
+    "Bay Club",
+    "Orangetheory Fitness",
+    "Xponential Fitness",
+    "F45 Training",
+    "Rachas Inc., Chuze Fitness",
+    "Midtown Athletic Clubs",
+    "East Bank Club",
+    "Mountainside Fitness",
+    "The Houstonian Club",
+    "DMB Sports Clubs Limited Partnership",
+    "Vida Fitness",
+    "Powerhouse Gyms International"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2100,
+      1320,
+      587,
+      185,
+      178.5,
+      155.1,
+      134,
+      77.96,
+      72,
+      52,
+      48.1,
+      38.12,
+      32.6,
+      31,
+      31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Average cost of a monthly gym membership in the United States in 2021, by state (in U.S. dollars)",
+   "short": "Gym membership cost in the U.S. in 2021, by state",
+   "unit": "U.S. dollars",
+   "description": "The average cost of a monthly gym membership in New York State in 2021 stood at 75.32 U.S. dollars, making it the most expensive state for gym memberships in the United States. Meanwhile, gym-goers in Wyoming had to pay an average of just 38 U.S. dollars monthly for their health club membership.",
+   "note": "United States; 2021",
+   "source": "CashNetUSA Monthly cost in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "New York",
+    "Alaska",
+    "Hawaii",
+    "Connecticut",
+    "New Jersey",
+    "Missouri",
+    "California",
+    "Idaho",
+    "Tennessee",
+    "Iowa",
+    "Massachusetts",
+    "Utah",
+    "Washington",
+    "Florida",
+    "Arkansas"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      75.32,
+      75.28,
+      73.68,
+      68.81,
+      67.57,
+      67.55,
+      65.42,
+      65.42,
+      65.27,
+      64.96,
+      64.82,
+      64.11,
+      63.67,
+      63,
+      62.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Gym penetration rate in selected metro areas in the United States as of April 2022",
+   "short": "Health club membership rate in metro areas in the U.S. as of April 2022",
+   "unit": "",
+   "description": "Over one fifth of residents in San Francisco had a gym membership between June 2021 and April 2022. Meanwhile, the health club penetration rate in New York City stood at 16.8 percent.",
+   "note": "United States; June 2021 to April 2022",
+   "source": "Nielsen; The Seattle Times Gym membership rate",
+   "kind": "categorical",
+   "categories": [
+    "San Francisco",
+    "San Diego",
+    "Atlanta",
+    "Seattle",
+    "Salt Lake City",
+    "Boston",
+    "New York",
+    "Sacramento"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.216,
+      0.193,
+      0.193,
+      0.184,
+      0.179,
+      0.174,
+      0.168,
+      0.159
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Fitness and health service purchases in the U.S. as of March 2024",
+   "short": "Fitness and health service purchases in the U.S. 2024",
+   "unit": "",
+   "description": "14 percent of U.S. respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2024, among 10,054 consumers.",
+   "note": "United States; April 2023 to March 2024; 10054 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Online services (website or apps)",
+    "Wellness services (e.g., massage)",
+    "Sports club membership",
+    "Individual sports course / class",
+    "Personal trainer",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.14,
+      0.1,
+      0.09,
+      0.07,
+      0.06,
+      0.06,
+      0.78,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Market size of the physical activity industry worldwide from 2017 to 2022, with a forecast to 2027 (in billion U.S. dollars)",
+   "short": "Global physical activity industry market size 2017-2027",
+   "unit": "billion U.S. dollars",
+   "description": "The global market size of the physical activity industry was forecast to grow at an annual rate of over six percent in the coming years. The market was estimated at 976 billion U.S. dollars in 2022 and was due to exceed 1.35 trillion U.S. dollars by 2027.",
+   "note": "Worldwide; 2017 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      789.5,
+      830.4,
+      875.9,
+      746.8,
+      927.1,
+      976.3,
+      1058.5,
+      1126.3,
+      1202.3,
+      1275.7,
+      1352.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Market size of the physical activity industry worldwide in 2022, by region (in billion U.S. dollars)",
+   "short": "Global physical activity industry market size 2022, by region",
+   "unit": "billion U.S. dollars",
+   "description": "The global market size of the physical activity industry was estimated at over 975 billion U.S. dollars in 2022. The largest region within this market was North America, where consumer spending associated with intentional physical activities performed during leisure and recreation was estimated at over 361 billion U.S. dollars in 2022.",
+   "note": "Worldwide; 2022",
+   "source": "Global Wellness Institute",
+   "kind": "categorical",
+   "categories": [
+    "North America",
+    "Asia-Pacific",
+    "Europe",
+    "Latin America-Caribbean",
+    "Middle East-North Africa",
+    "Sub-Saharan Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      361.2,
+      283.7,
+      245.8,
+      43.5,
+      27.5,
+      14.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Average percentage of the population engaged in sports, exercise, and recreation per day in the United States from 2010 to 2022",
+   "short": "Percentage of U.S. population engaged in sports and exercise per day 2010-2022",
+   "unit": "",
+   "description": "In 2022, it was found that 21.2 percent of men in the United States participated in sports, exercise, and recreational activities daily, compared to only 19.1 percent of women. These statistics highlight a notable difference in the daily engagement of different genders in sporting activities. Other factors influencing this participation include socioeconomic status, age, disability, ethnicity, geography, personal interests, and societal expectations. These barriers can prevent individuals from having [...]",
+   "note": "United States; 2010 to 2022; Approx. 8,100 (2022); 15 years and older",
+   "source": "Bureau of Labor Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "All",
+     "values": [
+      0.185,
+      0.186,
+      0.193,
+      0.186,
+      0.191,
+      0.204,
+      0.209,
+      0.19,
+      0.191,
+      0.2,
+      0.234,
+      0.215,
+      0.201
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.215,
+      0.204,
+      0.217,
+      0.21,
+      0.215,
+      0.229,
+      0.227,
+      0.202,
+      0.211,
+      0.217,
+      0.242,
+      0.234,
+      0.212
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.156,
+      0.169,
+      0.17,
+      0.163,
+      0.168,
+      0.181,
+      0.192,
+      0.178,
+      0.172,
+      0.185,
+      0.226,
+      0.196,
+      0.191
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Average amount of time spent on sports, exercise, and recreation in the United States from 2009 to 2022 (hours per day)",
+   "short": "Hours per day spent on sports, exercise, and recreation in the U.S. 2009-2022",
+   "unit": "hours per day",
+   "description": "When surveyed in 2022, it was found that the civilian population of the United States spent an average of 0.29 hours per day on sports, exercise, and recreation. In total, this was a decrease from the previous year owing to the drop off among men from 0.4 to 0.33 hours, however, among women the figure rose slightly in 2022 from 0.24 to 0.25 hours.",
+   "note": "United States; 2009 to 2022; Approx. 8,100 (in 2022); 15 years and older",
+   "source": "Bureau of Labor Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Total",
+     "values": [
+      0.31,
+      0.31,
+      0.3,
+      0.32,
+      0.3,
+      0.29,
+      0.31,
+      0.32,
+      0.29,
+      0.29,
+      0.32,
+      0.37,
+      0.32,
+      0.29
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.41,
+      0.42,
+      0.39,
+      0.41,
+      0.4,
+      0.38,
+      0.39,
+      0.39,
+      0.35,
+      0.36,
+      0.42,
+      0.44,
+      0.4,
+      0.33
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.21,
+      0.2,
+      0.22,
+      0.24,
+      0.2,
+      0.21,
+      0.22,
+      0.25,
+      0.23,
+      0.23,
+      0.23,
+      0.3,
+      0.24,
+      0.25
+     ]
+    }
+   ]
+  }
+ ]
+}

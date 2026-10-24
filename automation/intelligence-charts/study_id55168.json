@@ -1,0 +1,1994 @@
+{
+ "studyId": "55168",
+ "study": "digital healthcare in italy",
+ "file": "research/statista/study_id55168_digital-healthcare-in-italy (1).pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 6,
+   "title": "Total digital health industry funding worldwide from 2010 to 2022 (in billion U.S. dollars)",
+   "short": "Investor funding in digital health industry 2010-2022",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, funding by investors in the digital health industry amounted to almost 45 billion U.S. dollars, this was double the preceding year and by far the largest amount since 2010. In 2022, funding dropped to 23.3 billion U.S. dollars, although this was still the second-highest annual figure in the provided time interval.",
+   "note": "Worldwide; 2010 to 2022",
+   "source": "StartUp Health",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.1,
+      2.1,
+      2.3,
+      2.3,
+      7.2,
+      6.1,
+      8.4,
+      11.8,
+      15.4,
+      14.4,
+      22.9,
+      44.8,
+      23.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Number of investment deals in the digital health industry worldwide from 2010 to 2021",
+   "short": "Investment deal count in digital health industry globally 2010-2021",
+   "unit": "",
+   "description": "This statistic displays the number of investment deals made by investors in the global digital health industry from 2010 to 2021. In 2021, there were 990 deals made in the digital health industry, the highest amount of deals in a single year.",
+   "note": "Worldwide; 2010 to 2021",
+   "source": "StartUp Health",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      150,
+      282,
+      393,
+      552,
+      582,
+      498,
+      603,
+      841,
+      805,
+      732,
+      797,
+      990
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Top funded digital health categories worldwide in the first half of 2021 (in billion U.S. dollars)",
+   "short": "Top funded global digital health categories 2021",
+   "unit": "billion U.S. dollars",
+   "description": "This statistic shows the top funded digital health categories worldwide during the first half of 2021. In this period, 4.2 billion U.S. dollars of funding was provided for telemedicine which made it by far the most funded category.",
+   "note": "Worldwide; 2021",
+   "source": "Mercom Capital Funding in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Telemedicine",
+    "Wellness",
+    "mHealth apps",
+    "Analytics",
+    "Clinical decision support"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.2,
+      1.7,
+      1.6,
+      1.5,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "How well prepared is your organization for the adoption of digital technologies?",
+   "short": "Preparedness for adoption of digital technologies in healthcare in Europe 2020",
+   "unit": "",
+   "description": "According to a survey conducted among clinicians in Europe in 2020, 47 percent of respondents reported that their health organization was reasonably well prepared to adopt digital technologies. In Denmark, approximately 46 percent of health organizations said they very well prepared for digital technologies, the highest share across all European countries.",
+   "note": "Europe; 23 March, 2020 to 4 April, 2020; 1,781 respondents; 21 years and older;  Doctors and nurses working in primary and secondary care",
+   "source": "Deloitte",
+   "kind": "categorical",
+   "categories": [
+    "A little",
+    "Reasonably well",
+    "Very well"
+   ],
+   "series": [
+    {
+     "name": "Europe",
+     "values": [
+      0.235,
+      0.469,
+      0.273
+     ]
+    },
+    {
+     "name": "Denmark",
+     "values": [
+      0.093,
+      0.421,
+      0.464
+     ]
+    },
+    {
+     "name": "Germany",
+     "values": [
+      0.315,
+      0.473,
+      0.188
+     ]
+    },
+    {
+     "name": "Italy",
+     "values": [
+      0.227,
+      0.429,
+      0.319
+     ]
+    },
+    {
+     "name": "Netherlands",
+     "values": [
+      0.153,
+      0.653,
+      0.187
+     ]
+    },
+    {
+     "name": "Norway",
+     "values": [
+      0.186,
+      0.507,
+      0.279
+     ]
+    },
+    {
+     "name": "Portugal",
+     "values": [
+      0.153,
+      0.5,
+      0.34
+     ]
+    },
+    {
+     "name": "United Kingdom",
+     "values": [
+      0.29,
+      0.428,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "How long do you think it will take your organization to become a fully digital organization?",
+   "short": "Time span predicted for health organizations to become fully digital in Europe 2020",
+   "unit": "",
+   "description": "According to a survey conducted among health workers in Europe in 2020, 39.7 percent of respondents across the continent predicted that their health organizations would need eight years to become fully digital, while 21.6 percent said their organizations only need two years. In Norway, 25 percent of respondents mentioned that their health organizations needed only two years to become fully digital.",
+   "note": "Europe; 23 March, 2020 to 4 April, 2020; 1,781 respondents; 21 years and older; Doctors and nurses working in s primary and secondary care",
+   "source": "Deloitte Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Europe",
+    "Denmark",
+    "Germany",
+    "Italy",
+    "Netherland",
+    "Norway",
+    "Portugal",
+    "United Kingdom"
+   ],
+   "series": [
+    {
+     "name": "2 years",
+     "values": [
+      0.216,
+      0.164,
+      0.245,
+      0.259,
+      0.153,
+      0.25,
+      0.213,
+      0.175
+     ]
+    },
+    {
+     "name": "5 years",
+     "values": [
+      0.114,
+      0.079,
+      0.135,
+      0.122,
+      0.087,
+      0.093,
+      0.133,
+      0.108
+     ]
+    },
+    {
+     "name": "8 years",
+     "values": [
+      0.397,
+      0.436,
+      0.37,
+      0.377,
+      0.473,
+      0.357,
+      0.427,
+      0.405
+     ]
+    },
+    {
+     "name": "10 years",
+     "values": [
+      0.203,
+      0.3,
+      0.173,
+      0.175,
+      0.253,
+      0.136,
+      0.173,
+      0.243
+     ]
+    },
+    {
+     "name": "20 years",
+     "values": [
+      0.07,
+      0.021,
+      0.078,
+      0.067,
+      0.033,
+      0.164,
+      0.053,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "To what extent has your organization increased its adoption of digital technologies to provide virtual support and ways of engaging with patients in response to the COVID-19 situation so far?",
+   "short": "Impact of COVID-19 on adoption of digital tech in Europe 2020, by country",
+   "unit": "",
+   "description": "According to a survey conducted among clinicians in Europe in 2020, 26.1 percent of respondents reported that in response to COVID-19 their health organizations had increased to a great extent its adoption of digital technologies to provide virtual support and ways of engaging with patients, while 28.4 percent said there had been no change. In Norway, 45 percent of health providers have increased adoption of health technologies to a great extent in response to the COVID-19 pandemic, the [...]",
+   "note": "Europe; 23 March, 2020 to 4 April, 2020; 1,781 respondents; 21 years and older;  Doctors and nurses working in s primary and secondary care",
+   "source": "Deloitte Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Europe",
+    "Denmark",
+    "Germany",
+    "Italy",
+    "Netherlands",
+    "Norway",
+    "Portugal",
+    "United Kingdom"
+   ],
+   "series": [
+    {
+     "name": "To a great extent",
+     "values": [
+      0.261,
+      0.336,
+      0.095,
+      0.257,
+      0.147,
+      0.45,
+      0.347,
+      0.354
+     ]
+    },
+    {
+     "name": "To some extent",
+     "values": [
+      0.382,
+      0.352,
+      0.298,
+      0.384,
+      0.427,
+      0.314,
+      0.467,
+      0.45
+     ]
+    },
+    {
+     "name": "No change",
+     "values": [
+      0.284,
+      0.246,
+      0.483,
+      0.298,
+      0.373,
+      0.171,
+      0.147,
+      0.142
+     ]
+    },
+    {
+     "name": "Less use of technology",
+     "values": [
+      0.026,
+      0.025,
+      0.049,
+      0.032,
+      0.013,
+      0.029,
+      0.013,
+      0.005
+     ]
+    },
+    {
+     "name": "Don't know/prefer not to say",
+     "values": [
+      0.047,
+      0.041,
+      0.075,
+      0.029,
+      0.04,
+      0.036,
+      0.026,
+      0.049
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Level of expenditure in digital healthcare in Italy from 2011 to 2021 (in billion euros)",
+   "short": "Expenditure in digital healthcare in Italy 2011-2021",
+   "unit": "billion euros",
+   "description": "Between 2011 and 2021 the expenditure on digital health fluctuated in Italy. However, from 2016 onwards, it steadily increased. In 2021, the spending on e-health peaked at 1.69 billion euros. Digital health is an expression meant to define all the applications of information and communication technology in the health sector.",
+   "note": "Italy; 2011 to 2021",
+   "source": "Osservatori Digital Innovation",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.3,
+      1.23,
+      1.17,
+      1.37,
+      1.34,
+      1.27,
+      1.3,
+      1.39,
+      1.43,
+      1.5,
+      1.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Healthcare investments in digital technologies in Italian healthcare facilities from 2010 to 2019 (in million euros)",
+   "short": "Healthcare investments in digital technologies in Italy 2010-2019",
+   "unit": "million euros",
+   "description": "The level of healthcare investments in digital technologies in healthcare facilities in Italy fluctuated between 2010 and 2019. According to the data, the level of digital technology investments in this sector peaked in 2010 at 320 million euros, while the lowest value, 200 million euros, was registered in 2013. Nonetheless, between 2016 and 2019 the value experienced a steady increase. This statistic shows the healthcare investments in digital technologies in Italian healthcare facilities from 2010 [...]",
+   "note": "Italy; 2010 to 2019",
+   "source": "Osservatori Digital Innovation",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      320,
+      240,
+      270,
+      200,
+      260,
+      230,
+      210,
+      235,
+      257,
+      262
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Digital technology expenditure in public healthcare facilities in Italy from 2010 to 2019 (in million euros)",
+   "short": "Digital technology expenditure in public healthcare facilities in Italy 2010-2019",
+   "unit": "million euros",
+   "description": "The level of digital technology expenditure in public healthcare facilities in Italy increased overall from 2010 and 2019. According to the data, in fact, the expenditure for digital technology was equal to 600 million euros in 2010, while by 2019 it reached 738 million euros, the highest value registered in the period under consideration. This statistic shows the digital technology expenditure in public healthcare facilities in Italy from 2010 to 2019 (in million euros).",
+   "note": "Italy; 2010 to 2019",
+   "source": "Osservatori Digital Innovation",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      600,
+      670,
+      625,
+      600,
+      700,
+      700,
+      660,
+      655,
+      714,
+      738
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Share of clinicians in Italy stating the following were the leading challenges faced by healthcare organizations in implementing digital technologies in Italy in 2020",
+   "short": "Leading challenges in implementing digital technologies in healthcare in Italy 2020",
+   "unit": "",
+   "description": "According to a survey conducted among doctors and nurses in Italy in 2020, 63.6 percent of respondents mentioned that bureaucracy in healthcare was the biggest challenge their organization faces when it comes to implementing digital technologies. Furthermore, 46.6 percent of the respondents reported that training staff to use digital health technologies is also a challenge. This statistic shows the leading challenges in implementing digital technologies in healthcare in Italy [...]",
+   "note": "Italy; March 23, 2020 to April 4, 2020; 401 respondents; 21 years and older; Doctors and nurses working in primary and secondary care",
+   "source": "Deloitte Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Bureaucracy in healthcare",
+    "Training staff to use technology",
+    "Cost of technology"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.636,
+      0.466,
+      0.419
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Percentage of doctors and nurses adopting selected digital healthcare technologies in Italy in 2020",
+   "short": "Adoption rates of digital health technologies among clinicians in Italy in 2020",
+   "unit": "",
+   "description": "In 2020, 69 percent of clinicians surveyed in Italy reported using electronic health records to support care delivery, while online appointment booking and the use of apps for clinicians was adopted by 53 percent of respondents. This statistic shows the percentage of doctors and nurses adopting selected digital healthcare technologies in Italy in 2020.",
+   "note": "Italy; March 23, 2020 to April 4, 2020; 401 respondents; 21 years and older; Doctors and nurses working in primary and secondary care",
+   "source": "Deloitte Share of responses",
+   "kind": "categorical",
+   "categories": [
+    "Electronic health records",
+    "Prescribing",
+    "Apps for Clinicians",
+    "Online appointment booking",
+    "Online access platforms/tools (for primary or hospital care)",
+    "Telemedicine",
+    "Automation of pharmacies/ drug dispensing",
+    "Remote vital sign monitoring",
+    "Patients Apps/Wearables",
+    "Rostering",
+    "Point of care diagnostics",
+    "Automation of other clinical tasks",
+    "Voice recognition tools",
+    "Robotics",
+    "Genomics data (storing or using)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.69,
+      0.67,
+      0.53,
+      0.53,
+      0.47,
+      0.38,
+      0.25,
+      0.21,
+      0.18,
+      0.14,
+      0.1,
+      0.09,
+      0.08,
+      0.08,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Percentage of medical specialists using telemedicine in Italy as of 2022, by type of usage",
+   "short": "Share of medical specialists using telemedicine in Italy in 2022, by type",
+   "unit": "",
+   "description": "According to a 2022 survey, among medical specialists in Italy, tele-consultation with other professionals was the most used type, followed by tele-reporting. This statistic shows the percentage of medical specialists using telemedicine in Italy as of 2022, by type of usage.",
+   "note": "Italy; 2022; 1,700 respondents; specialist physicians",
+   "source": "Osservatori Digital Innovation Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Tele-consultation with other specialist physicians",
+    "Tele-reporting",
+    "Tele-visit",
+    "Tele-monitoring",
+    "Medical tele-consultation",
+    "Tele-consultation with GPs",
+    "Tele-assistance",
+    "Tele-rehabilitation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.33,
+      0.3,
+      0.26,
+      0.22,
+      0.19,
+      0.15,
+      0.09,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Percentage of pharmacies providing telemedicine services in Italy in 2022, by type of service",
+   "short": "Share of pharmacies providing telemedicine services in Italy 2022, by type",
+   "unit": "",
+   "description": "In 2022, around half of pharmacies participating to the survey offered telemedicine services in Italy. According to the data, the most common service offered was telecardiology, with 48.5 percent of pharmacies providing this service. This figure shows the percentage of pharmacies providing telemedicine services in Italy in 2022, by type of service.",
+   "note": "Italy; July to September 2022; 1,030 respondents; Pharmacies",
+   "source": "Cittadinanzattiva ; Federfarma; Teva Pharmaceutical Share of pharmacies",
+   "kind": "categorical",
+   "categories": [
+    "Telecardiology",
+    "Blood pressure telemonitoring",
+    "Telepulmonology"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.485,
+      0.465,
+      0.045
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Percentage of people using telemedicine services provided by pharmacies in Italy as of 2022",
+   "short": "Share of people using telemedicine services in pharmacies in Italy, 2022",
+   "unit": "",
+   "description": "As of 2022, around half of pharmacies participating to the survey offered telemedicine services in Italy. According to the data, only 15 percent of people used these services and more than ten percent did not know that pharmacies provided telemedicine services. This figure shows the percentage of people using telemedicine services provided by pharmacies in Italy.",
+   "note": "Italy; July to September 2022; 1,284 respondents",
+   "source": "Cittadinanzattiva ; Federfarma; Teva Pharmaceutical",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No",
+    "Didn't know the services were available in pharmacies"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.15,
+      0.745,
+      0.105
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Percentage of people with and without chronic diseases using telemedicine services provided by pharmacies in Italy in 2022",
+   "short": "Share of people with chronic diseases using telemedicine in pharmacies in Italy, 2022",
+   "unit": "",
+   "description": "In 2022, around half of pharmacies participating to a survey offered telemedicine services in Italy. According to the data, 27.4 percent of people with chronic diseases used telemedicine services provided by pharmacies, while only 8 percent of people with no chronic diseases used these services. This figure shows the percentage of people with and without chronic diseases using telemedicine services provided by pharmacies in Italy in 2022.",
+   "note": "Italy; July to September 2022; 1,284 respondents; Citizens",
+   "source": "Cittadinanzattiva ; Federfarma; Teva Pharmaceutical",
+   "kind": "categorical",
+   "categories": [
+    "People with chronic diseases",
+    "People without chronic diseases"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.274,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Percentage of Italians using or being interested on telemedicine services as of 2022, by type of service",
+   "short": "Share of Italians using telemedicine services by type 2022",
+   "unit": "",
+   "description": "According to a 2022 survey, 13 percent of Italian citizens used phone call or video call to check on their health status, while 57 percent were the people interested on this service. None of the citizens interviewed used a service of tele-rehabilitation, however almost half of them expressed their interest on the service.This statistic illustrates the percentage of citizens using or being interested on telemedicine services in Italy, by type of service.",
+   "note": "Italy; 2022; 1,073 respondents",
+   "source": "Doxa ; Osservatori Digital Innovation",
+   "kind": "categorical",
+   "categories": [
+    "Phone call or video call to check on health status",
+    "Tele-visit with family doctor",
+    "Tele-monitoring of clinical parameters",
+    "Tele-visit with a medical professional",
+    "Tele-rihabilitation"
+   ],
+   "series": [
+    {
+     "name": "Used",
+     "values": [
+      0.13,
+      0.06,
+      0.03,
+      0.02,
+      0
+     ]
+    },
+    {
+     "name": "Being interested",
+     "values": [
+      0.57,
+      0.53,
+      0.48,
+      0.52,
+      0.47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Share of clinicians using electronic health records (EHR) in selected European countries in 2020, by country",
+   "short": "Share of doctors using electronic health records in Europe 2020",
+   "unit": "",
+   "description": "In 2020, the use of electronic health records (EHR) among doctors was well spread in Europe. According to this survey, over 80 percent of the responding European clinicians used electronic health records. In the Netherlands and Denmark, nearly all respondents were EHR users in 2020. On the other hand, with 69 percent of surveyed Italian doctors, the use of EHR in Italy seemed to be less implemented.",
+   "note": "Europe; March 23 to April 4, 2020; 1.781; Clinicians",
+   "source": "Deloitte",
+   "kind": "categorical",
+   "categories": [
+    "Netherlands",
+    "Denmark",
+    "Norway",
+    "United Kingdom (UK)",
+    "Europe",
+    "Germany",
+    "Portugal",
+    "Italy"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.97,
+      0.95,
+      0.89,
+      0.87,
+      0.81,
+      0.77,
+      0.74,
+      0.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Share of qualified physicians using electronic health records (EHR) in Italy as of the 4th quarter of 2023, by region",
+   "short": "Share of qualified physicians using EHRs in Italy Q4 2023, by region",
+   "unit": "",
+   "description": "According to the data, the Italian regions where all qualified physicians were making use of the EHR were five as of 2023. This statistic shows the share of qualified physicians using Electronic health records (EHR) in Italy as of the fourth quarter of 2023.",
+   "note": "Italy; Q4 2023",
+   "source": "Ministero della Salute Share of qualified physicians",
+   "kind": "categorical",
+   "categories": [
+    "Autonomous Province of Trento",
+    "Lombardy",
+    "Sardinia",
+    "Aosta Valley",
+    "Emilia-Romagna",
+    "Veneto",
+    "Apulia",
+    "Marche",
+    "Piedmont",
+    "Sicily",
+    "Friuli-Venezia Giulia",
+    "Umbria",
+    "Abruzzo",
+    "Tuscany",
+    "Lazio"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.99,
+      0.99,
+      0.92,
+      0.9,
+      0.85,
+      0.74,
+      0.73,
+      0.22,
+      0.06,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Share of healthcare workers having access to the electronic health records (EHR) in Italy as of the 4th quarter 2023, by region",
+   "short": "Share of healthcare workers using EHRs Q4 2023, by region",
+   "unit": "",
+   "description": "According to the data, in the Italian regions of Lombardy, Tuscany, and in the Autonomous Province of Trento all professionals working in healthcare facilities had access to the electronic health records (EHR) in 2023. This statistic depicts the share of healthcare workers having access to the EHR in Italy as of the forth quarter 2023, by region.",
+   "note": "Italy; Q4 2023",
+   "source": "Ministero della Salute Share of healthcare workers",
+   "kind": "categorical",
+   "categories": [
+    "Autonomous Province of Trento",
+    "Tuscany",
+    "Lombardy",
+    "Sardinia",
+    "Veneto",
+    "Piedmont",
+    "Apulia",
+    "Emilia-Romagna",
+    "Campania",
+    "Aosta Valley",
+    "Friuli-Venezia Giulia",
+    "Sicily",
+    "Basilicata",
+    "Abruzzo",
+    "Molise"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      1,
+      1,
+      1,
+      0.9525,
+      0.89,
+      0.8385,
+      0.815,
+      0.6677,
+      0.6471,
+      0.31,
+      0.2329,
+      0.2089,
+      0.1,
+      0.075,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Share of citizens using electronic health records (EHR) in Italy in 4th quarter 2023, by region",
+   "short": "Share of citizens using EHRs in Italy Q4 2023, by region",
+   "unit": "",
+   "description": "According to the data, in the Italian region of Emilia-Romagna around 81 percent of citizens used the electronic health records (EHR) in the last 90 days as of the fourth quarter of 2023. This statistic depicts the share of citizens using the electronic health records (EHR) in Italy in the last 90 days as of the fourth quarter of 2023, by region.",
+   "note": "Italy; Q4 2023",
+   "source": "Ministero della Salute Share of citizens",
+   "kind": "categorical",
+   "categories": [
+    "Emilia-Romagna",
+    "Tuscany",
+    "Aosta Valley",
+    "Lazio",
+    "Piedmont",
+    "Apulia",
+    "Liguria",
+    "Calabria",
+    "Campania",
+    "Sicily",
+    "Marche"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.81,
+      0.6,
+      0.36,
+      0.25,
+      0.14,
+      0.14,
+      0.11,
+      0.05,
+      0.03,
+      0.03,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Revenue of the digital fitness and well-being apps industry in Italy between 2017 and 2027, by segment (in million euros)",
+   "short": "Digital fitness and well-being apps industry revenue Italy 2017-2027, by segment",
+   "unit": "million euros",
+   "description": "The revenue in the digital fitness and well-being apps market in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached almost 274.4 million euros, with fitness apps representing the largest revenue segment. This statistic displays the revenue of the digital fitness and well-being apps industry in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Fitness apps",
+     "values": [
+      32.36,
+      45.35,
+      62.27,
+      90.83,
+      115.9,
+      140.3,
+      178.7,
+      213.1,
+      244,
+      271,
+      293.4
+     ]
+    },
+    {
+     "name": "Meditation apps",
+     "values": [
+      4.03,
+      6.82,
+      11.15,
+      21.72,
+      26.15,
+      32.78,
+      41.42,
+      47.63,
+      52.6,
+      56.34,
+      58.75
+     ]
+    },
+    {
+     "name": "Nutrition apps",
+     "values": [
+      15.89,
+      22.08,
+      29.72,
+      45.42,
+      45.66,
+      48.11,
+      54.25,
+      58.49,
+      62.1,
+      65.79,
+      68.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Revenue of the digital fitness and well-being apps industry per user in Italy between 2017 and 2027, by segment (in euros)",
+   "short": "Digital fitness and well-being apps revenue per user Italy 2017-2027, by segment",
+   "unit": "euros",
+   "description": "The revenue in the digital fitness and well-being apps market per user in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached 23.77 euros per user. Meditation apps had the highest revenue per user, with 24.22 euros. This statistic displays the revenue of the digital fitness and well-being apps industry per user in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Fitness apps",
+     "values": [
+      16.06,
+      16.63,
+      17.11,
+      17.72,
+      18.32,
+      19.07,
+      20.86,
+      22.02,
+      22.84,
+      23.47,
+      24.13
+     ]
+    },
+    {
+     "name": "Meditation apps",
+     "values": [
+      19.71,
+      18.18,
+      17.99,
+      18.71,
+      20.46,
+      22.4,
+      24.22,
+      24.36,
+      23.85,
+      23,
+      22
+     ]
+    },
+    {
+     "name": "Nutrition apps",
+     "values": [
+      13.08,
+      13.51,
+      13.93,
+      14.35,
+      14.78,
+      15.39,
+      16.77,
+      17.56,
+      18.24,
+      18.77,
+      19.07
+     ]
+    },
+    {
+     "name": "Total",
+     "values": [
+      17.82,
+      18.35,
+      18.89,
+      19.57,
+      20.55,
+      21.68,
+      23.77,
+      24.97,
+      25.77,
+      26.3,
+      26.74
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Number of users of digital fitness and well-being app services in Italy between 2017 and 2027, by segment (in million users)",
+   "short": "Digital fitness and well-being app users Italy 2017-2027, by segment",
+   "unit": "million users",
+   "description": "The number of users of digital fitness and well-being apps in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 users of these apps reached roughly 11.5 million. Fitness apps had the highest number of users. This statistic displays the number of digital fitness and well-being app users in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Fitness apps",
+     "values": [
+      2.02,
+      2.73,
+      3.64,
+      5.13,
+      6.32,
+      7.36,
+      8.57,
+      9.68,
+      10.68,
+      11.55,
+      12.16
+     ]
+    },
+    {
+     "name": "Meditation apps",
+     "values": [
+      0.2,
+      0.38,
+      0.62,
+      1.16,
+      1.28,
+      1.46,
+      1.71,
+      1.96,
+      2.21,
+      2.45,
+      2.67
+     ]
+    },
+    {
+     "name": "Nutrition apps",
+     "values": [
+      1.22,
+      1.64,
+      2.13,
+      3.16,
+      3.09,
+      3.13,
+      3.24,
+      3.33,
+      3.41,
+      3.51,
+      3.58
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Fitness and health service online purchases in Italy as of March 2024",
+   "short": "Fitness and health service online purchases in Italy 2024",
+   "unit": "",
+   "description": "5 percent of Italian respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2024, among 2,034 consumers.",
+   "note": "Italy; April 2023 to March 2024; 2034 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Health tracking",
+    "Weight loss / healthy eating",
+    "Medication checkers / reminders",
+    "Meditation / mindfulness / sleeping apps",
+    "Contraception or fertility tracking (only shown to women)",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.05,
+      0.04,
+      0.04,
+      0.02,
+      0.02,
+      0.01,
+      0.92,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Leading health and fitness apps in the Google Play Store in Italy in September 2022, by revenue (in U.S. dollars)",
+   "short": "Leading Android health apps in Italy 2022, by revenue",
+   "unit": "U.S. dollars",
+   "description": "In September 2022, Strava generated over 40 thousand U.S. dollars in revenues from Google Play Store in Italy, ranking first among the health and fitness apps used in the country. Buddyfit ranked second, with close to 17 thousand U.S. dollars in revenues. Weight loss and dieting app Melarossa ranked third, with approximately 14.7 thousand U.S. dollars in revenues in the examined period.",
+   "note": "Italy; September 2022; based on total revenue in Google Play Store generated in Italy.",
+   "source": "Airnow Revenue in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Strava: Run, Ride, Hike",
+    "Buddyfit",
+    "Melarossa Dieta Personalizzata",
+    "Komoot: Bike Trails & Routes",
+    "Freeletics: Fitness Workouts",
+    "Meditopia: Sleep, Meditation",
+    "YAZIO Fasting & Food Tracker",
+    "Daily Workouts",
+    "Relive: Run, Ride, Hike & more",
+    "FitCoach: Fitness Coach & Diet"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      40033,
+      16913,
+      14740,
+      10498,
+      9236,
+      8326,
+      8110,
+      7270,
+      6381,
+      6360
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Leading health and fitness apps in the Google Play Store in Italy in September 2022, by number of downloads",
+   "short": "Leading Android health apps in Italy 2022, by downloads",
+   "unit": "",
+   "description": "In September 2022, Samsung Health was the leading health app in the Google Play Store in Italy, based on the number of downloads, generating over 81.7 thousand downloads. Huawei Health ranked second with 81.4 thousand downloads from Android users, while the Blood Pressure App ranked third with 41.3 thousand downloads during the examined month.",
+   "note": "Italy; September 2022; based on downloads to devices in Italy.",
+   "source": "Airnow Number of downloads",
+   "kind": "categorical",
+   "categories": [
+    "Samsung Health",
+    "Huawei Health",
+    "Blood Pressure App",
+    "Aarogya Setu",
+    "Feelsy: Stress Anxiety Relief",
+    "Yuka - Food & cosmetic scan",
+    "Blood Pressure App Pro",
+    "Blood Pressure Pro",
+    "WeWard",
+    "Home Workout - No Equipment"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      81741,
+      81451,
+      41341,
+      41169,
+      35190,
+      33990,
+      32436,
+      31986,
+      31831,
+      31221
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Percentage of Italian medical specialists suggesting the use of health apps to their patients as of 2022",
+   "short": "Share of medical specialist suggesting use of health apps to patients in Italy 2022",
+   "unit": "",
+   "description": "According to a 2022 survey, almost 40 percent of medical professionals in Italy suggested to their patients to use an health app to check their clinical parameters, while 23 percent suggested an usage to improve therapeutic adherence.",
+   "note": "Italy; 2022; 1,313 respondents",
+   "source": "Osservatori Digital Innovation Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "To check clinical parameters",
+    "To monitor life style",
+    "To improve therapeutic adherence",
+    "To collect symptoms/questionnaires/rating scales",
+    "To support rehablitation",
+    "To eliminate an addiction"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.37,
+      0.33,
+      0.23,
+      0.18,
+      0.12,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Percentage of Italian nurses suggesting the use of health apps to their patients as of 2022",
+   "short": "Share of nurses suggesting use of health apps to patients in Italy 2022",
+   "unit": "",
+   "description": "According to a 2022 survey, 30 percent of nurses in Italy suggested to their patients to use an health app to check their clinical parameters, while 18 percent suggested the use to improve therapeutic adherence. This statistic shows the percentage of nurses in Italy suggesting the use of health apps to their patients.",
+   "note": "Italy; 2022; 2,171 respondents",
+   "source": "Osservatori Digital Innovation Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "To check clinical parameters",
+    "To monitor life style",
+    "To improve therapeutic adherence",
+    "To collect symptoms/questionnaires/rating scales",
+    "To support rehablitation",
+    "To eliminate an addiction"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3,
+      0.25,
+      0.18,
+      0.16,
+      0.12,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Most used eHealth tracker / smart watches by brand in Italy as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in Italy 2024",
+   "unit": "",
+   "description": "With 27 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among Italian consumers. In second place follows Samsung with 17 percent of respondents. These results are based on a representative online survey conducted in 2024 among 706 consumers in Italy.",
+   "note": "Italy; April 2023 to March 2024; 706 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Amazfit",
+    "Xiaomi/Mi",
+    "Fitbit",
+    "Huawei",
+    "Garmin",
+    "ASUS",
+    "Fossil",
+    "Google",
+    "Honor",
+    "OPPO",
+    "Blackview",
+    "LG",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.27,
+      0.17,
+      0.15,
+      0.14,
+      0.1,
+      0.09,
+      0.08,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Revenue of the digital fitness and well-being devices industry in Italy between 2017 and 2027, by segment (in million euros)",
+   "short": "Digital fitness and well-being devices industry revenue Italy 2017-2027, by segment",
+   "unit": "million euros",
+   "description": "The revenue in the digital fitness and well-being devices market in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached around 911.6 million euros, with smartwatches representing the largest revenue segment. This statistic displays the revenue of the digital fitness and well-being devices industry in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Fitness/activity tracking wristwear",
+     "values": [
+      72.25,
+      84.72,
+      95.63,
+      113.1,
+      117.7,
+      120.9,
+      132.1,
+      138.8,
+      143.8,
+      148.8,
+      153.1
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      35.27,
+      47.51,
+      58.95,
+      61.69,
+      73.11,
+      78.86,
+      88.64,
+      95.99,
+      101.2,
+      106.8,
+      110.8
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      258.4,
+      341.6,
+      422,
+      533.3,
+      583,
+      574.6,
+      690.9,
+      738.9,
+      783.1,
+      824.6,
+      859.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Revenue of the digital fitness and well-being devices industry per user in Italy between 2017 and 2027, by segment (in euros)",
+   "short": "Digital fitness and well-being devices revenue per user Italy 2017-2027, by segment",
+   "unit": "euros",
+   "description": "The revenue in the digital fitness and well-being devices market per user in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 the revenues in this sector reached around 143.7 euros per user. Smartwatches had the highest revenue per user, with 179 euros. This statistic displays the revenue of the digital fitness and well-being devices industry per user in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Fitness/activity tracking wristwear",
+     "values": [
+      47.39,
+      48.32,
+      49.27,
+      50.21,
+      51.2,
+      55.24,
+      58.87,
+      60.63,
+      62.03,
+      63.27,
+      64.35
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      39.82,
+      41.22,
+      42.63,
+      44.01,
+      45.41,
+      49.54,
+      53.34,
+      55.45,
+      57.21,
+      58.81,
+      60.24
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      133.6,
+      138.3,
+      143,
+      147.7,
+      152.4,
+      166.3,
+      179,
+      186.1,
+      192,
+      197.4,
+      202.2
+     ]
+    },
+    {
+     "name": "Total",
+     "values": [
+      103.1,
+      107.9,
+      112.5,
+      119.3,
+      122.4,
+      131,
+      143.7,
+      149.1,
+      154.1,
+      154.1,
+      162.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Number of users of digital fitness and well-being devices services in Italy between 2017 and 2027, by segment (in million users)",
+   "short": "Digital fitness and well-being devices users Italy 2017-2027, by segment",
+   "unit": "million users",
+   "description": "The number of users of digital fitness and well-being devices in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 users of these devices reached roughly 6.35 million. Smartwatches had the highest number of users. This statistic displays the number of digital fitness and well-being devices users in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Fitness/activity tracking wristwear",
+     "values": [
+      1.53,
+      1.75,
+      1.94,
+      2.25,
+      2.3,
+      2.19,
+      2.24,
+      2.29,
+      2.32,
+      2.35,
+      2.38
+     ]
+    },
+    {
+     "name": "Smart scales",
+     "values": [
+      0.89,
+      1.15,
+      1.38,
+      1.4,
+      1.61,
+      1.59,
+      1.66,
+      1.73,
+      1.77,
+      1.82,
+      1.84
+     ]
+    },
+    {
+     "name": "Smartwatches",
+     "values": [
+      1.93,
+      2.47,
+      2.95,
+      3.61,
+      3.83,
+      3.46,
+      3.86,
+      3.97,
+      4.08,
+      4.18,
+      4.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Revenue of the digital health industry in Italy between 2017 and 2027 (in billion euros)",
+   "short": "Revenue of the digital health industry in Italy 2017-2027",
+   "unit": "billion euros",
+   "description": "The revenue in the digital health market in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached 2.57 billion euros. This statistic displays the revenue of the digital health industry in Italy between 2017 and 2027.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.74,
+      1,
+      1.3,
+      1.72,
+      1.97,
+      2.18,
+      2.57,
+      2.81,
+      3.03,
+      3.24,
+      3.44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Average revenue of the digital health industry per user in Italy between 2017 and 2027, by segment (in euros)",
+   "short": "Revenue of the digital health industry per user in Italy 2017-2027, by segment",
+   "unit": "euros",
+   "description": "The revenue in the digital health market per user in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached 62.87 euros per user. Digital fitness and well-being was the segment with the highest revenue per user. This statistic displays the revenue of the digital health industry per user in Italy between 2017 and 2027 by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Total",
+     "values": [
+      38.26,
+      43.05,
+      47.28,
+      49.49,
+      53.16,
+      58.13,
+      62.87,
+      64,
+      65.02,
+      65.95,
+      66.78
+     ]
+    },
+    {
+     "name": "Digital finess and well-being",
+     "values": [
+      64.5,
+      64.95,
+      64.21,
+      61.82,
+      62.23,
+      61.77,
+      66.3,
+      66.95,
+      67.36,
+      67.68,
+      68.17
+     ]
+    },
+    {
+     "name": "eHealth",
+     "values": [
+      25.05,
+      30.6,
+      36.64,
+      41.18,
+      46.64,
+      55.39,
+      60.2,
+      61.67,
+      63.17,
+      64.57,
+      65.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Number of users of digital health services in Italy between 2017 and 2027, by segment (in million users)",
+   "short": "Users of digital health services in Italy 2017-2027, by segment",
+   "unit": "million users",
+   "description": "The number of users of digital health services in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 the users of these services reached 40.8 million, among whom more than half were using eHealth services. This statistic displays the number of users of digital health services in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Digital fitness and well-being",
+     "values": [
+      6.48,
+      8.44,
+      10.59,
+      14.01,
+      15.45,
+      16.12,
+      17.89,
+      19.31,
+      20.59,
+      21.77,
+      22.65
+     ]
+    },
+    {
+     "name": "eHealth",
+     "values": [
+      12.88,
+      14.84,
+      16.83,
+      20.79,
+      21.53,
+      21.41,
+      22.91,
+      24.53,
+      26.02,
+      27.38,
+      28.78
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Revenue of the eHealth industry in Italy between 2017 and 2027 (in million euros)",
+   "short": "Revenue of the eHealth industry in Italy 2017-2027",
+   "unit": "million euros",
+   "description": "The revenue in the eHealth market in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached almost 1.4 billion euros. This statistic displays the revenue of the eHealth industry in Italy between 2017 and 2027.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      322.69,
+      453.94,
+      616.87,
+      856.18,
+      1004.34,
+      1186.05,
+      1379.21,
+      1512.42,
+      1643.87,
+      1767.75,
+      1890.62
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Revenue of the eHealth industry in Italy between 2017 and 2027, by segment (in million euros)",
+   "short": "Revenue of the eHealth industry in Italy 2017-2027, by segment",
+   "unit": "million euros",
+   "description": "The revenue in the eHealth market in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached almost 1.4 billion euros, with online doctor consultations representing the largest revenue segment. This statistic displays the revenue of the eHealth industry in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "eHealth Apps",
+     "values": [
+      5.78,
+      7.04,
+      8.47,
+      9.88,
+      11.94,
+      13.75,
+      16.61,
+      19.02,
+      21.37,
+      23.85,
+      26.22
+     ]
+    },
+    {
+     "name": "eHealth Devices",
+     "values": [
+      115.3,
+      155.2,
+      194.3,
+      255.9,
+      262,
+      282.6,
+      314.2,
+      333.9,
+      349.4,
+      362.9,
+      375.1
+     ]
+    },
+    {
+     "name": "Online Doctor Consultaations",
+     "values": [
+      119.9,
+      175.6,
+      248.8,
+      356.2,
+      437.1,
+      487.6,
+      554.4,
+      588.4,
+      611.7,
+      629.6,
+      646.4
+     ]
+    },
+    {
+     "name": "Online Pharmacy",
+     "values": [
+      81.71,
+      116.1,
+      165.3,
+      234.2,
+      293.3,
+      402.1,
+      494,
+      571,
+      661.4,
+      751.4,
+      842.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Average revenue of the eHealth industry per user in Italy between 2017 and 2027, by segment (in euros)",
+   "short": "Revenue of the eHealth industry per user in Italy 2017-2027, by segment",
+   "unit": "euros",
+   "description": "The revenue in the eHealth market per user in Italy was forecast to continuously increase between 2023 and 2027. According to this forecast, in 2023 revenues in this sector reached 60.2 euros per user. Online doctor consultation was the segment with the highest revenue per user. This statistic displays the revenue of the eHealth industry per user in Italy between 2017 and 2027, by segment.",
+   "note": "Italy; 2017 to 2027",
+   "source": "Statista; Statista Health Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "eHealth Apps",
+     "values": [
+      5.72,
+      6.25,
+      6.8,
+      7.14,
+      8.01,
+      8.92,
+      10.08,
+      10.89,
+      11.61,
+      12.31,
+      12.93
+     ]
+    },
+    {
+     "name": "eHealth Devices",
+     "values": [
+      83.9,
+      86.29,
+      89.01,
+      92.85,
+      94.82,
+      102.4,
+      109.8,
+      113.7,
+      116.8,
+      119.6,
+      122.3
+     ]
+    },
+    {
+     "name": "Online Doctor Consultaations",
+     "values": [
+      190.4,
+      194.7,
+      198.9,
+      203,
+      207.3,
+      223.8,
+      238.6,
+      245.7,
+      251.3,
+      256.2,
+      260.3
+     ]
+    },
+    {
+     "name": "Online Pharmacy",
+     "values": [
+      8.28,
+      10.55,
+      13.6,
+      15.72,
+      19.34,
+      26.93,
+      30.72,
+      32.73,
+      35.26,
+      37.67,
+      39.75
+     ]
+    },
+    {
+     "name": "Total",
+     "values": [
+      25.05,
+      30.6,
+      36.64,
+      41.18,
+      46.64,
+      55.39,
+      60.2,
+      61.67,
+      63.17,
+      64.57,
+      65.68
+     ]
+    }
+   ]
+  }
+ ]
+}

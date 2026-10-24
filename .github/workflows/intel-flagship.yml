@@ -1,0 +1,52 @@
+name: Intelligence — monthly flagship report
+
+# One flagship Sqwod Intelligence report per month, drafted from the Statista chart bank
+# (automation/intelligence-charts) plus newer public sources, in EN + DE. The draft lands in
+# automation/intel-drafts/ and Tee gets an approval email; nothing goes live until he taps
+# Approve (then the "Intelligence refresh — apply" job publishes it within 4 hours).
+
+on:
+  workflow_dispatch:
+    inputs:
+      study:
+        description: 'Force a Statista study id (optional, e.g. 102831). Leave blank to let the scorer pick.'
+        required: false
+        default: ''
+  schedule:
+    - cron: '17 6 1 * *'        # 1st of each month, ~08:17 Berlin
+
+permissions:
+  contents: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Draft the flagship (EN + DE) and queue it for approval
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.INTEL_FROM }}
+          INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
+          INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
+          INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          STUDY="${{ github.event.inputs.study }}"
+          if [ -n "$STUDY" ]; then node automation/intelligence-flagship.mjs --date=$(date +%F) --study=$STUDY; else node automation/intelligence-flagship.mjs --date=$(date +%F); fi
+      - name: Commit the draft + queue item
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/intel-drafts automation/intel-queue || true
+          if git diff --staged --quiet; then
+            echo "No draft this run."
+          else
+            git commit -m "intel: flagship draft $(date +%F) (awaiting approval)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi

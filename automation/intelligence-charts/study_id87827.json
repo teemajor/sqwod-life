@@ -1,0 +1,1400 @@
+{
+ "studyId": "87827",
+ "study": "wellness in japan",
+ "file": "research/statista/study_id87827_wellness-in-japan.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Wellness economy market size worldwide in 2022, by region (in billion U.S. dollars)",
+   "short": "Global wellness market size worldwide in 2022, by region",
+   "unit": "billion U.S. dollars",
+   "description": "The global wellness market was estimated to be worth an estimated 5.6 trillion U.S. dollars in 2022. The biggest regional market within this sector was North America, with the region accounting for an estimated 1.9 trillion U.S. dollars of the market in that year.",
+   "note": "Worldwide; 2022",
+   "source": "Global Wellness Institute",
+   "kind": "categorical",
+   "categories": [
+    "North America",
+    "Asia Pacific",
+    "Europe",
+    "Latin America and the Caribbean",
+    "Middle East and North Africa",
+    "Sub-Saharan Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1901.4,
+      1698.1,
+      1469.7,
+      314.4,
+      145.4,
+      82.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Market size of physical activity in Japan in 2018 and 2020 (in billion U.S. dollars)",
+   "short": "Market size of physical activity in Japan 2018-2020",
+   "unit": "billion U.S. dollars",
+   "description": "In 2020, the market size of physical activity in Japan amounted to approximately 41 billion U.S. dollars. The figure covers physical activities performed for leisure purposes that involve consumer spending.",
+   "note": "Japan; 2018 to 2020",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      43.11,
+      44.9,
+      41.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Market size of wellness tourism in Japan from 2017 to 2020 (in billion U.S. dollars)",
+   "short": "Market size of wellness tourism in Japan 2017-2020",
+   "unit": "billion U.S. dollars",
+   "description": "In 2020, the market size of wellness tourism in Japan amounted to approximately 19 billion U.S. dollars, declining significantly compared to the previous year. The advent of the COVID-19 pandemic had adverse effects on the tourism industry as a whole, but especially on inbound tourism in Japan.",
+   "note": "Japan; 2017 to 2020",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23.9,
+      26.6,
+      19.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Market size of mental wellness in Japan in 2019 and 2020 (in billion U.S. dollars)",
+   "short": "Market size of mental wellness in Japan 2019-2020",
+   "unit": "billion U.S. dollars",
+   "description": "In 2020, the market size of mental wellness in Japan amounted to approximately 5.8 billion U.S. dollars. The figure covers products, services, and activities surrounding self-improvement, meditation and mindfulness, brain-boosting nutraceuticals and botanicals, as well as senses, spaces, and sleep.",
+   "note": "Japan; 2019 to 2020",
+   "source": "Global Wellness Institute",
+   "kind": "categorical",
+   "categories": [
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.66,
+      5.78
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Market size of workplace wellness in Japan from 2017 to 2020 (in billion U.S. dollars)",
+   "short": "Market size of workplace wellness in Japan 2017-2020",
+   "unit": "billion U.S. dollars",
+   "description": "In 2020, the market size of workplace wellness in Japan amounted to approximately 4.7 billion U.S. dollars. The figure represents expenses on programs and activities of employers aimed at improving their employees' wellbeing.",
+   "note": "Japan; 2017 to 2020",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.41,
+      4.96,
+      4.73
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Market size of spas in Japan from 2017 to 2020 (in billion U.S. dollars)",
+   "short": "Market size of spas in Japan 2017-2020",
+   "unit": "billion U.S. dollars",
+   "description": "In 2020, the market size of spas in Japan amounted to 4.24 billion U.S. dollars, declining significantly compared to the previous year. The advent of the COVID-19 pandemic had adverse effects on the spa and tourism industry as a whole.",
+   "note": "Japan; 2017 to 2020",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.72,
+      6.14,
+      4.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Retail sales value of the health and wellness (HW) beverages and packaged food market in Japan from 2018 to 2021 with forecasts until 2025 (in billion U.S. dollars)",
+   "short": "HW drinks and packaged food market size in Japan 2018-2025",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the retail sales value of health and wellness (HW) packaged food and beverages in Japan amounted to around 55.1 billion U.S. dollars. The sector was forecast to grow steadily and exceed 57 billion dollars in 2025.",
+   "note": "Japan; 2018 to 2021; *Forecast. 1 U.S. dollar equals 136.01 Japanese yen or 0.94 euros as of March 2023. Values have been rounded. Read more",
+   "source": "Global Organic Trade Guide",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      56.42,
+      56.32,
+      54.84,
+      55.12,
+      56.26,
+      56.76,
+      57.09,
+      57.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Production value of health foods in Japan from 2016 to 2023 (in billion U.S. dollars)",
+   "short": "Production value of health foods in Japan 2016-2023",
+   "unit": "billion U.S. dollars",
+   "description": "The production value of health foods in Japan amounted to around 12.2 billion U.S. dollars in 2023. The market for health food products, such as foods with function claims, grew steadily in recent years, before declining from 2022 onwards.",
+   "note": "Japan; 2016 to 2023",
+   "source": "Nikkan Keizai Tsushin; USDA Foreign Agricultural Service",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.11,
+      10.29,
+      11.31,
+      12.66,
+      13.4,
+      13.48,
+      13.08,
+      12.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Awareness of foods with health claims in Japan as of March 2023",
+   "short": "Awareness of foods with health claims in Japan 2023",
+   "unit": "",
+   "description": "According to a survey conducted in Japan in March 2022, the majority of consumers, around 59 percent, had heard about foods with health claims but did not know what the products were. Foods with health claims in Japan encompass foods for specified health uses (FOSHU), foods with nutrient function claims (FNFC), and foods with function claims.",
+   "note": "Japan; March 2 to 8, 2023; 10,000 respondents; 15 years and older",
+   "source": "CAA; Neo Marketing",
+   "kind": "categorical",
+   "categories": [
+    "I know what it is",
+    "I have heard about it but do not know what it is",
+    "I have never heard and do not know about it"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.167,
+      0.59,
+      0.243
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Awareness of foods with function claims in Japan as of March 2023",
+   "short": "Awareness of foods with function claims in Japan 2023",
+   "unit": "",
+   "description": "According to a survey conducted in Japan in March 2023, around 63 percent of respondents had heard about foods with function claims but did not know what the products were.",
+   "note": "Japan; March 2 to 8, 2023; 10,000 respondents; 15 years and older; survey among Japanese nationals",
+   "source": "CAA; Neo Marketing",
+   "kind": "categorical",
+   "categories": [
+    "I know what it is",
+    "I have heard about it but do not know what it is",
+    "I have never heard and do not know about it"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.19,
+      0.632,
+      0.179
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Share of consumers who have tried foods with function claims in Japan as of March 2023",
+   "short": "Consumer ratio of health foods with function claims in Japan 2023",
+   "unit": "",
+   "description": "15 percent of consumers in Japan stated that they were consuming foods with function claims, as revealed in a survey conducted in March 2023. While 42.3 percent of respondents had no intention of trying functional foods, around 27 declared their interest in such health products.",
+   "note": "Japan; March 2 to 8, 2023; 10,000 respondents; 15 years and older",
+   "source": "CAA; Neo Marketing",
+   "kind": "categorical",
+   "categories": [
+    "I am currently consuming it",
+    "I used to consume it, but not anymore",
+    "I have never consumed it, but would like to in the future",
+    "I have never tried it and do not plan to in the future"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.15,
+      0.157,
+      0.27,
+      0.423
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Share of people participating in sports in Japan from 1996 to 2021",
+   "short": "Participation rate in sports in Japan 1996-2021",
+   "unit": "",
+   "description": "According to a survey conducted in October 2021, the share of people over ten years old participating in sports in Japan amounted to 66.5 percent. Despite the advent of the COVID-19 pandemic, the share was only slightly lower than the result from the previous survey.",
+   "note": "Japan; October 2021; 171,360 respondents; 10 years and older; people who participated in sports at least once a year",
+   "source": "e-Stat (Japan); Ministry of Internal Affairs and Communications (Japan)",
+   "kind": "timeseries",
+   "categories": [
+    "1996",
+    "2001",
+    "2006",
+    "2011",
+    "2016",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.76,
+      0.722,
+      0.653,
+      0.63,
+      0.688,
+      0.665
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Participation rate in sports and physical exercise in Japan in 2023, by type of activity",
+   "short": "Sport participation rate in Japan 2023, by type of activity",
+   "unit": "",
+   "description": "In a survey conducted in November 2023 in Japan, around 61 percent of respondents stated that they had walked for physical exercise purposes. Walking was the most prevalent activity engaged in as a physical exercise, followed by gymnastics (calisthenics), and working out. According to the survey data, the majority of respondents engaged in individual sports that are free to do, such as walking and gymnastics.",
+   "note": "Japan; November 7 to 27, 2023; 40,000 respondents; 18-79 years; multiple answers possible; physical activities that the respondents participated in within the last year; leading 15 activities",
+   "source": "Japan Sports Agency; MEXT (Japan); SRC (Japan) Participation rate",
+   "kind": "categorical",
+   "categories": [
+    "Walking (including walking, strolling, walk to the train station, etc.)",
+    "Working out",
+    "Gymnastics",
+    "Jogging, marathon",
+    "Stair climbing",
+    "Riding bicycles (incl. BMX), cycling",
+    "Aerobics, yoga, ballet, pilates",
+    "Golf (on a golf course)",
+    "Golf (on a practice range/simulation golf)",
+    "Mountain climbing, trekking, trail running, rock climbing",
+    "Swimming",
+    "Tennis, soft tennis",
+    "Fishing",
+    "Bowling",
+    "Hiking"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.609,
+      0.13,
+      0.124,
+      0.108,
+      0.103,
+      0.098,
+      0.064,
+      0.055,
+      0.045,
+      0.04,
+      0.039,
+      0.026,
+      0.026,
+      0.024,
+      0.023
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Share of people participating in sports at least once a week in Japan in fiscal year 2023, by age group and gender",
+   "short": "Share of people doing sports once a week or more in Japan FY 2023, by age and gender",
+   "unit": "",
+   "description": "According to a survey conducted in November 2023 in Japan, 68.6 percent of men in Japan aged between 70 to 79 years were participating in sports at least once a week, while 66.2 percent of women in the same age cohort did likewise. In all of the age groups, the rate of people doing sports at least once a week was higher among men than among women.",
+   "note": "Japan; November 7 to 27, 2023; 40,000 respondents; 18-79 years",
+   "source": "Japan Sports Agency; MEXT (Japan); SRC (Japan)",
+   "kind": "categorical",
+   "categories": [
+    "18 to 19 years",
+    "20 to 29 years",
+    "30 to 39 years",
+    "40 to 49 years",
+    "50 to 59 years",
+    "60 to 69 years",
+    "70 to 79 years"
+   ],
+   "series": [
+    {
+     "name": "Women",
+     "values": [
+      0.498,
+      0.439,
+      0.389,
+      0.417,
+      0.443,
+      0.579,
+      0.662
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.629,
+      0.546,
+      0.498,
+      0.511,
+      0.493,
+      0.558,
+      0.686
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of fitness club members in Japan from 2014 to 2023 (in millions)",
+   "short": "Number of sports club members in Japan 2014-2023",
+   "unit": "millions",
+   "description": "In 2023, Japan had approximately 2.8 million fitness club members. The figure increased compared to the last year. Roughly one-third of subscribers were affiliated with schools. The gym membership penetration rate in Japan hovered under the five percent mark. This is relatively low compared to the numbers of leading countries, such as the U.S., which had a gym membership penetration rate of over 20 percent. Gym subscribers in Japan paid among the highest membership fees when [...]",
+   "note": "Japan; 2014 to 2023",
+   "source": "METI (Japan)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3,
+      3.02,
+      3.29,
+      3.36,
+      3.37,
+      3.36,
+      2.69,
+      2.58,
+      2.65,
+      2.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of people participating in yoga in Japan in 2021, by age group (in 1,000s)",
+   "short": "Number of people doing yoga in Japan 2021, by age group",
+   "unit": "1,000s",
+   "description": "According to a survey conducted in October 2021 in Japan, 663 thousand people between the ages of 50 to 54 participated in yoga. This was the age group with the highest number of participants, followed narrowly by those aged between 40 to 44 years.",
+   "note": "Japan; October 2021; 171,360 respondents; 10 years and older",
+   "source": "e-Stat (Japan); Ministry of Internal Affairs and Communications (Japan)",
+   "kind": "categorical",
+   "categories": [
+    "10 to 14 years",
+    "15 to 19 years",
+    "20 to 24 years",
+    "25 to 29 years",
+    "30 to 34 years",
+    "35 to 39 years",
+    "40 to 44 years",
+    "45 to 49 years",
+    "50 to 54 years",
+    "55 to 59 years",
+    "60 to 64 years",
+    "64 to 69 years",
+    "70 to 74 years",
+    "75 to 79 years",
+    "80 to 84 years",
+    "85 years and older"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      110,
+      149,
+      402,
+      632,
+      599,
+      576,
+      661,
+      653,
+      663,
+      501,
+      363,
+      355,
+      309,
+      164,
+      62,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading reasons for exercising and participating in sports in Japan as of November 2023",
+   "short": "Reasons for working out and doing sports Japan 2023",
+   "unit": "",
+   "description": "In a survey conducted in November 2023 in Japan, about 78.4 percent of respondents exercised or participated in sports for health improvement. This was the most common motivation to engage in sports. Another common reason for doing sports was to improve or maintain physical strength.",
+   "note": "Japan; November 7 to 27, 2023; 20,849 respondents; 18-79 years; multiple responses possible; among respondents who do sports at least once a week",
+   "source": "Japan Sports Agency; MEXT (Japan); SRC (Japan) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "For health reasons",
+    "To improve and maintain physical strength",
+    "I felt a lack of exercise",
+    "To improve and maintain muscle strength",
+    "For fun and relaxation",
+    "For dietary reasons or to lose weight",
+    "For mingling with friends and colleagues",
+    "For beauty reasons",
+    "To improve personal records and abilities",
+    "For mental and physical training",
+    "For spending family time"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.784,
+      0.551,
+      0.434,
+      0.386,
+      0.383,
+      0.283,
+      0.136,
+      0.097,
+      0.079,
+      0.078,
+      0.064
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of people who consider sports and physical exercise personally important in Japan as of November 2023",
+   "short": "Opinion on importance of sports and exercise in Japan 2023",
+   "unit": "",
+   "description": "In a survey conducted in 2023 in Japan, 47.4 percent of respondents stated that they considered physical exercise and sports to be relatively important to them. In total, about 72 percent of respondents considered sports important or relatively important. For about six percent of respondents, physical training and sports were not important at all.",
+   "note": "Japan; November 7 to 27, 2023; 40,000 respondents; 18-79 years",
+   "source": "Japan Sports Agency; MEXT (Japan); SRC (Japan)",
+   "kind": "categorical",
+   "categories": [
+    "Important",
+    "Relatively important",
+    "Not really important",
+    "Not important"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.294,
+      0.474,
+      0.173,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Shipment value of the Japanese cosmetics market from fiscal year 2013 to 2022 with a forecast for 2023 (in trillion Japanese yen)",
+   "short": "Domestic cosmetics market size in Japan FY 2013-2023",
+   "unit": "trillion Japanese yen",
+   "description": "Cosmetics shipments in Japan generated a market value of approximately 2.4 trillion Japanese yen in fiscal year 2022. The country is one of the world’s leading markets for cosmetic products. Skin care was the dominating category of the domestic beauty market. Within this segment, skin lotions were by far the most popular skin care product, catering to male and female consumers.",
+   "note": "Japan; fiscal years 2013 to 2023; the Japanese fiscal years runs from April 1 to March 31 of the following year; the market size is based on the shipment value at brand manufacturers; *Forecast. Research targets were cosmetic brand [...] Read more",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.32,
+      2.33,
+      2.4,
+      2.47,
+      2.55,
+      2.65,
+      2.65,
+      2.24,
+      2.29,
+      2.37,
+      2.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Distribution of the cosmetics market size in Japan in fiscal year 2022, by category",
+   "short": "Domestic cosmetics market share in Japan FY 2022, by category",
+   "unit": "",
+   "description": "The Japanese cosmetics market is home to major beauty brands that operate in the global landscape, contributing to the success of J-beauty overseas. Skincare is the core segment of the domestic market, accounting for around 47 percent of cosmetics shipments in Japan. Haircare followed as the second-largest cosmetics segment, with hair coloring and treatment preparations contributing significantly to the market size.",
+   "note": "Japan; 2022; market size based on shipment value at manufacturers",
+   "source": "Yano Research Market share",
+   "kind": "categorical",
+   "categories": [
+    "Skincare",
+    "Haircare",
+    "Makeup",
+    "Men's cosmetics",
+    "Fragrance",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.473,
+      0.203,
+      0.176,
+      0.054,
+      0.012,
+      0.082
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Sales value of skincare products in Japan from 2012 to 2021 (in billion Japanese yen)",
+   "short": "Skincare sales value in Japan 2012-2021",
+   "unit": "billion Japanese yen",
+   "description": "In 2021, the sales value of skincare products at manufacturers in Japan amounted to around 690 billion Japanese yen, continuing the downward trend of the previous year. Skin lotions account for the largest share of sales, with beauty essence following behind.",
+   "note": "Japan; 2012 to 2021; sales at manufacturers",
+   "source": "METI (Japan); West-Japan Cosmetic Industry Association",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      638.41,
+      645.63,
+      678.92,
+      704.46,
+      717.18,
+      778.79,
+      849.39,
+      887.59,
+      771.82,
+      689.66
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Sales value of make-up products in Japan from 2012 to 2021 (in billion Japanese yen)",
+   "short": "Make-up sales value in Japan 2012-2021",
+   "unit": "billion Japanese yen",
+   "description": "The sales value of make-up products at manufacturers in Japan amounted to around 218 billion Japanese yen in 2021, reaching a decade-low. Make-up sales continued to rise from 2015, before declining for consecutive years in 2020 due to the impact of the coronavirus pandemic.",
+   "note": "Japan; 2012 to 2021",
+   "source": "METI (Japan); West-Japan Cosmetic Industry Association",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      291.41,
+      298.79,
+      306.06,
+      299.56,
+      310.69,
+      352.32,
+      361.33,
+      372.98,
+      245.65,
+      218.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Leading cosmetic products bought among women in Japan as of August 2023",
+   "short": "Most purchased cosmetic products among women in Japan 2023",
+   "unit": "",
+   "description": "According to a survey conducted in August 2023 in Japan, the leading cosmetic products purchased among female consumers were face washes. While 80 percent of women bought at least one face wash product within the last year, only around 10 percent purchased hair removal products.",
+   "note": "Japan; August 3 to 13, 2023; 6,600 respondents; 15-69 years; one answer allowed for each item",
+   "source": "Hot Pepper Beauty Academy Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Face wash",
+    "Toner",
+    "Sunscreen",
+    "Cleanser",
+    "Emulsions and creams",
+    "Lip care",
+    "Foundation",
+    "Eyebrow (including eyebrow mascara)",
+    "Hand cream",
+    "Serum",
+    "Makeup base",
+    "Eyeshadow",
+    "Eyeliner",
+    "Face powder",
+    "Lipstick/lip gloss"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.8,
+      0.762,
+      0.665,
+      0.662,
+      0.603,
+      0.537,
+      0.525,
+      0.522,
+      0.517,
+      0.44,
+      0.434,
+      0.419,
+      0.39,
+      0.39,
+      0.378
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading cosmetic products bought among men in Japan as of August 2023",
+   "short": "Most purchased cosmetic products among men in Japan 2023",
+   "unit": "",
+   "description": "The most purchased cosmetic product among male consumers in Japan was face wash as revealed in a survey conducted in August 2023. While 49 percent of men in Japan bought at least one face wash product within the last year, less than eight percent bought any makeup-type cosmetics like foundation or eyeliner.",
+   "note": "Japan; August 3 to 13, 2023; 6,600 respondents; 15-69 years; one answer allowed for each item",
+   "source": "Hot Pepper Beauty Academy Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Face wash",
+    "Toner",
+    "Face wipes/body wipes",
+    "Emusions and creams",
+    "Hand cream",
+    "Sunscreen",
+    "Lip care",
+    "Fragrance (perfume, hair perfume, etc./excluding deodorant)",
+    "Aftershave lotion",
+    "Cleanser",
+    "Body lotion/cream/oil",
+    "Serum",
+    "Hair removal products",
+    "Face packs/masks",
+    "Oil absorbing sheets"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.49,
+      0.307,
+      0.276,
+      0.257,
+      0.254,
+      0.24,
+      0.202,
+      0.184,
+      0.183,
+      0.158,
+      0.146,
+      0.137,
+      0.114,
+      0.111,
+      0.104
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Utilization rate of beauty services by women in Japan as of February 2023, by type of service",
+   "short": "Utilization rate of beauty services by women in Japan 2023, by type",
+   "unit": "",
+   "description": "According to a survey conducted in February 2023 in Japan, 80.3 percent of women visited beauty parlors for hair-related beauty services in the past year. Among the different beauty services available, hair-related beauty services at beauty parlors had the highest utilization rates by Japanese women.",
+   "note": "Japan; February 8 to 21, 2023; 6,600 respondents; 15-69 years; utilization during the past year; *Facilities that provide beauty treatments such as facials, slimming treatments, and other beauty-related services. Read more",
+   "source": "&D; Hot Pepper Beauty Academy Utilization rate",
+   "kind": "categorical",
+   "categories": [
+    "Hair (at a beauty parlor)",
+    "Relaxation and massages with clothes",
+    "Eye",
+    "Nails",
+    "Depilation (at an aesthe salon)",
+    "Facial (at an aesthe salon)",
+    "Relaxation and massages without clothes",
+    "Slimming treatment (at an aesthe salon)"
+   ],
+   "series": [
+    {
+     "name": "Women",
+     "values": [
+      0.803,
+      0.118,
+      0.084,
+      0.083,
+      0.077,
+      0.068,
+      0.056,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Utilization rate of beauty services by men in Japan as of February 2023, by type of service",
+   "short": "Utilization rate of beauty services by men in Japan 2023, by type",
+   "unit": "",
+   "description": "According to a survey conducted in February 2023 in Japan, 43.7 percent of men visited barber shops in the past year. Among the different beauty services available, the haircut at a barber shop was the most common service used by men in Japan, followed by hair-related services at beauty parlors.",
+   "note": "Japan; February 8 to 21, 2023; 6,600 respondents; 15-69 years; utilization during the past year",
+   "source": "Hot Pepper Beauty Academy Utilization rate",
+   "kind": "categorical",
+   "categories": [
+    "Hair (barber shop)",
+    "Hair (beauty parlor)",
+    "Relaxation massage with clothes",
+    "Relaxation massage without clothes",
+    "Depilation",
+    "Weight reduction",
+    "Facials",
+    "Nails",
+    "Eye"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.437,
+      0.339,
+      0.109,
+      0.056,
+      0.054,
+      0.043,
+      0.043,
+      0.038,
+      0.037
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Share of women frequenting beauty parlors in Japan from 2016 to 2023",
+   "short": "Share of women frequenting beauty parlors in Japan 2016-2023",
+   "unit": "",
+   "description": "In a survey conducted in Japan in February 2023, 80.3 percent of women stated that they visited beauty parlors at least once in the past year. The figures showed a slight overall decrease during recent years with the lowest share of beauty parlor frequenting females recorded in 2023.",
+   "note": "Japan; 2016 to 2023; as of February of the respective year; 6,600 respondents; 15-69 years",
+   "source": "&D; Hot Pepper Beauty Academy",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.859,
+      0.866,
+      0.86,
+      0.86,
+      0.846,
+      0.815,
+      0.813,
+      0.803
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Share of men frequenting beauty parlors in Japan from 2016 to 2023",
+   "short": "Share of men frequenting beauty parlors in Japan 2016-2023",
+   "unit": "",
+   "description": "In a survey conducted in Japan in February 2023, 33.9 percent of men stated that they visited beauty parlors at least once in the past year. Male beauty parlor customers were more likely to be young people, showing a generation gap in beauty parlor frequentation among men.",
+   "note": "Japan; 2016 to 2023; as of February of the respective year; 6,600*; 15-69 years; *In 2016 and 2017, the sample sizes amounted to 1,100 male respondents. Data reflects the share of males who used beauty parlor services at least once in [...] Read more",
+   "source": "&D; Hot Pepper Beauty Academy",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.311,
+      0.327,
+      0.331,
+      0.349,
+      0.336,
+      0.34,
+      0.335,
+      0.339
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Share of women frequenting beauty parlors in Japan as of February 2023, by age group",
+   "short": "Share of women frequenting beauty parlors in Japan 2023, by age group",
+   "unit": "",
+   "description": "In a survey conducted in Japan in February 2023, 82.3 percent of women in their fifties stated that they used beauty parlors in the past year at least once. The survey concluded that the share of women making use of beauty parlor services in the past year was highest among women of that age group. However, the discrepancy to other age groups was relatively small.",
+   "note": "Japan; February 8 to 21, 2023; 6600 respondents; 15-69 years",
+   "source": "&D; Hot Pepper Beauty Academy; Marketing Applications",
+   "kind": "categorical",
+   "categories": [
+    "15-19 years",
+    "20-29 years",
+    "30-39 years",
+    "40-49 years",
+    "50-59 years",
+    "60-69 years"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.79,
+      0.778,
+      0.805,
+      0.806,
+      0.823,
+      0.808
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Share of men frequenting beauty parlors in Japan as of February 2023, by age group",
+   "short": "Men's beauty parlor utilization in Japan 2023, by age group",
+   "unit": "",
+   "description": "In a survey conducted in Japan in February 2023, 52.3 percent of men in their twenties stated that they visited beauty parlors at least once in the past year. The survey concluded that the share of men making use of beauty parlor services in the past year was highest among men in their twenties. The discrepancy in usage between age groups was more pronounced for men than for women.",
+   "note": "Japan; February 8 to 21, 2023; 6,600 respondents; 15-69 years",
+   "source": "&D; Hot Pepper Beauty Academy",
+   "kind": "categorical",
+   "categories": [
+    "15-19 years",
+    "20-29 years",
+    "30-39 years",
+    "40-49 years",
+    "50-59 years",
+    "60-69 years"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.485,
+      0.523,
+      0.462,
+      0.361,
+      0.186,
+      0.093
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Market size of the relaxation and bathing business in Japan from 2016 to 2021 (in billion Japanese yen)",
+   "short": "Market size of the relaxation and bathing business in Japan 2016-2021",
+   "unit": "billion Japanese yen",
+   "description": "In 2021, the market size of the relaxation and bathing business was estimated to amount to 306 billion Japanese yen. The figure was expected to rebound after declining significantly in 2020 due to the COVID-19 pandemic.",
+   "note": "Japan; 2016 to 2021; market size based on revenue of businesses; *Prospect. The relaxation business is comprised of the body care and reflexology segments. Does not include treatments that require a national license, such as [...] Read more",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      408.3,
+      403.9,
+      404.6,
+      378,
+      275.9,
+      306
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Distribution of the relaxation and bathing business market in Japan in 2020, by segment",
+   "short": "Distribution of the relaxation and bathing business market in Japan 2020, by segment",
+   "unit": "",
+   "description": "In 2020, 66.3 percent of the relaxation and bathing business market in Japan was comprised of the bathing business. The market declined significantly with the advent of the COVID-19 pandemic, as bathing houses (spas, onsen, and sento) had to close temporarily or had limited admission regulations.",
+   "note": "Japan; 2020; market size based on revenue of businesses; *Prospect. The relaxation business is comprised of the body care and reflexology segments. Does not include treatments that require a national license, such as acupuncture and [...] Read more",
+   "source": "Yano Research",
+   "kind": "categorical",
+   "categories": [
+    "Relaxation",
+    "Bathing"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.337,
+      0.663
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Number of hot spring areas in Japan from 2013 to 2023",
+   "short": "Number of hot spring areas in Japan 2013-2023",
+   "unit": "",
+   "description": "As of March 2023, there were around 2,894 hot spring (onsen) areas throughout Japan. The most popular prefectures for staying at onsen lodging facilities in Japan are Shizuoka, Hokkaido, and Oita. The number of designated hot spring areas decreased over the past decade.",
+   "note": "Japan; 2013 to 2023, as of the end of March of the respective year",
+   "source": "MOE (Japan)",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3085,
+      3098,
+      3088,
+      3084,
+      3038,
+      2983,
+      2982,
+      2971,
+      2934,
+      2900,
+      2879
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Number of hot spring (onsen) lodging facilities in Japan from 2013 to 2022 (in 1,000s)",
+   "short": "Number of hot spring lodging facilities in Japan 2013-2022",
+   "unit": "1,000s",
+   "description": "As of March 2023, there were approximately 13 thousand hot spring (onsen) lodging facilities in Japan. Hot spring lodging facilities often provide Japanese-style rooms and strive to provide customers with a relaxing overnight stay experience.",
+   "note": "Japan; 2013 to 2022; as of the end of March of the respective year",
+   "source": "MOE (Japan)",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.52,
+      13.36,
+      13.28,
+      13.11,
+      13.01,
+      12.86,
+      12.88,
+      13.05,
+      12.91,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Total number of public bathhouses (sentô) in Japan from fiscal year 2014 to 2023 (in 1,000s)",
+   "short": "Number of public bathhouses Japan FY 2014-2023",
+   "unit": "1,000s",
+   "description": "As of the end of March 2023, there were approximately 23.7 thousand public bathhouses operating in Japan, indicating a continuous decrease in the past decade. The bathhouses in Japan refer to communal bath houses sentô and hot springs onsen.",
+   "note": "Japan; 2014 to 2023; as of the end of March of the respective year",
+   "source": "MHLW (Japan)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26.58,
+      26.22,
+      25.7,
+      25.33,
+      25.12,
+      24.79,
+      24.53,
+      23.95,
+      23.78,
+      23.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Annual number of overnight stays at hot spring (onsen) facilities in Japan from fiscal year 2005 to 2022 (in million)",
+   "short": "Annual number of hot spring overnight stays in Japan FY 2005-2022",
+   "unit": "million",
+   "description": "In the fiscal year 2022, the total number of hot spring (onsen) overnight stays in Japan amounted to approximately 110 million. The figure declined significantly in 2020, showing the adverse effects of the COVID-19 pandemic on tourist visits at hot spring facilities.",
+   "note": "Japan; fiscal year 2005 to 2022; the fiscal year starts on April 1 of the stated year and ends on March 31 of the following year; as of the end of the fiscal year",
+   "source": "MOE (Japan)",
+   "kind": "timeseries",
+   "categories": [
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      136.61,
+      137.09,
+      135.87,
+      132.68,
+      127.93,
+      124.93,
+      120.06,
+      124.7,
+      126.42,
+      127.97,
+      132.06,
+      130.13,
+      130.57,
+      130.56,
+      126.53,
+      76.59,
+      78.04,
+      109.86
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Market size of repositioning by judo, acupuncture, moxibustion and massage in Japan from 2014 to 2021 (in billion Japanese yen)",
+   "short": "Market size of alternative medicine treatments in Japan 2014-2021",
+   "unit": "billion Japanese yen",
+   "description": "In 2021, the market size of repositioning by judo, acupuncture, moxibustion, and massage in Japan amounted to approximately 968 billion Japanese yen. Acupuncture, moxibustion and (anma) massage have their origins in traditional Chinese medicine (TCM). Repositioning by judo (sekkotsu) is a medical practice originating from Judo. Treatments based on TCM are often labeled as pseudoscience by Western medicine due to a lack of conclusive evidence regarding their efficacy.",
+   "note": "Japan; 2014 to 2021",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      979.4,
+      991,
+      983,
+      961,
+      944,
+      971,
+      919,
+      968
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Market size of judo repositioning in Japan from 2014 to 2021 (in billion Japanese yen)",
+   "short": "Market size of judo repositioning in Japan 2014-2021",
+   "unit": "billion Japanese yen",
+   "description": "In 2021, the market size of repositioning by judo in Japan amounted to approximately 479 billion Japanese yen. The figure increased compared to the previous year by more than 30 billion yen.",
+   "note": "Japan; 2014 to 2021",
+   "source": "Yano Research",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      558,
+      554,
+      534,
+      505,
+      481,
+      480,
+      447,
+      479
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Share of people having shiatsu treatments in Japan as of November 2020",
+   "short": "Share of people undergoing shiatsu treatments in Japan 2020",
+   "unit": "",
+   "description": "In a survey conducted in November 2020 in Japan, 6.2 percent of respondents stated that they were currently undergoing a shiatsu treatment. Shiatsu is a type of body massage based on traditional Chinese medicine.",
+   "note": "Japan; November 6 to 15, 2020; 1,201 respondents; 20-99 years",
+   "source": "Central Research Services; Foundation for Training and Licensure Examination in Anma-Massage-Acupressure, Acupuncture and Moxibustion",
+   "kind": "categorical",
+   "categories": [
+    "Currently undergoing treatment",
+    "Currently not undergoing treatment, but was undergoing it in the past year",
+    "Did undergo treatment more than one year ago",
+    "Did not undergo treatment",
+    "Don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.062,
+      0.102,
+      0.257,
+      0.578,
+      0.001
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Share of people undergoing acupuncture and moxibustion treatments in Japan as of November 2020",
+   "short": "Share of people having acupuncture and moxibustion treatments in Japan 2020",
+   "unit": "",
+   "description": "In a survey conducted in November 2020 in Japan, 1.6 percent of respondents stated that they were currently undergoing acupuncture and moxibustion treatment. Acupuncture and moxibustion are based on traditional Chinese medicine.",
+   "note": "Japan; November 6 to 15, 2020; 1,201 respondents; 20-99 years",
+   "source": "Central Research Services; Foundation for Training and Licensure Examination in Anma-Massage-Acupressure, Acupuncture and Moxibustion",
+   "kind": "categorical",
+   "categories": [
+    "Currently undergoing treatment",
+    "Currently not undergoing treatment, but was undergoing it in the past year",
+    "Did undergo treatment more than one year ago",
+    "Did not undergo treatment",
+    "Don't know"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.016,
+      0.033,
+      0.175,
+      0.774,
+      0.002
+     ]
+    }
+   ]
+  }
+ ]
+}

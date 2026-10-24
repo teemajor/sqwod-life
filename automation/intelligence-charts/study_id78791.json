@@ -1,0 +1,1170 @@
+{
+ "studyId": "78791",
+ "study": "creative content industry in south korea",
+ "file": "research/statista/study_id78791_creative-content-industry-in-south-korea.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Sales revenue of the content industry in South Korea from 2014 to 2021 (in trillion South Korean won)",
+   "short": "Sales revenue of content industry South Korea 2014-2021",
+   "unit": "trillion South Korean won",
+   "description": "In 2021, the total sales revenue of the content industry in South Korea amounted to around 137.5 trillion South Korean won. This was the highest recorded number, and continues a trend of yearly increases. The publishing industry accounted for the largest share, with 18 percent of the sales revenue.",
+   "note": "South Korea; 2014 to 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      94.94,
+      100.49,
+      106.12,
+      113.12,
+      119.61,
+      126.71,
+      128.29,
+      137.51
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Sales revenue of the content industry in South Korea in 2021, by segment (in trillion South Korean won)",
+   "short": "Content industry sales revenue in South Korea 2021, by segment",
+   "unit": "trillion South Korean won",
+   "description": "In 2021, the publishing sector of the South Korean content industry posted a sales revenue of around 24.7 trillion South Korean won. Other sectors with high sales included broadcasting and games. Overall, the total sales revenue of the content industry in South Korea amounted to about 137.5 trillion won that year.",
+   "note": "South Korea; 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea) Sales revenue in trillion South Korean won",
+   "kind": "categorical",
+   "categories": [
+    "Publishing",
+    "Broadcasting",
+    "Games",
+    "Information",
+    "Advertising",
+    "Music",
+    "Content solution",
+    "Characters",
+    "Film",
+    "Comic",
+    "Animation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      24.7,
+      23.97,
+      20.99,
+      19.95,
+      18.92,
+      9.37,
+      8.47,
+      5,
+      3.25,
+      2.13,
+      0.76
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Total import value of the content industry in South Korea from 2014 to 2021 (in billion U.S. dollars)",
+   "short": "Import value content industry South Korea 2014-2021",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the import value of the content industry in South Korea totaled around 1.2 billion U.S. dollars. This represents an increase from the previous year. Imports peaked in 2014, at a total value of 1.29 billion dollars.",
+   "note": "South Korea; 2014 to 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.29,
+      1.18,
+      1.16,
+      1.2,
+      1.22,
+      1.2,
+      0.92,
+      1.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Total export value of the content industry in South Korea from 2014 to 2021 (in billion U.S. dollars)",
+   "short": "Export value content industry South Korea 2014-2021",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the export value of the content industry totaled around 12.5 billion U.S. dollars. This represents an increase from the previous years, as well as the highest recorded export value. Between 2014 and 2022, the total export value of South Korean content has increased by over 136 percent.",
+   "note": "South Korea; 2014 to 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.27,
+      5.66,
+      6.01,
+      8.81,
+      9.62,
+      10.25,
+      11.92,
+      12.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Export value of the content industry in South Korea in 2021, by segment (in million U.S. dollars)",
+   "short": "Content industry export value South Korea 2021, by segment",
+   "unit": "million U.S. dollars",
+   "description": "In 2021, the export value of the South Korean gaming industry amounted to around 8.7 billion U.S. dollars. The gaming industry made up nearly 70 percent of the content exported that year, followed by music and broadcasting. The overall export value of the content industry that year totaled about 12.5 billion dollars.",
+   "note": "South Korea; 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea) Export value in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Game",
+    "Music",
+    "Broadcasting",
+    "Information",
+    "Publishing",
+    "Characters",
+    "Advertising",
+    "Content solution",
+    "Animation",
+    "Comic",
+    "Film"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8672.87,
+      775.27,
+      718,
+      660.85,
+      428.38,
+      412.99,
+      258.17,
+      244.53,
+      156.84,
+      81.98,
+      43.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Number of businesses in the content industry in South Korea in 2021, by segment",
+   "short": "Amount of businesses content industry South Korea 2021, by segment",
+   "unit": "",
+   "description": "In 2021, the number of businesses in the publishing and music industries in South Korea amounted to around 34 thousand each. Both sectors made up a 31.3 percent share of companies within the South Korean content industry respectively. This was followed by businesses related to gaming and information. That year, about 108.6 thousand businesses in total were active in the content industry.",
+   "note": "South Korea; 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea) Number of businesses",
+   "kind": "categorical",
+   "categories": [
+    "Publishing",
+    "Music",
+    "Game",
+    "Information",
+    "Advertising",
+    "Comic",
+    "Characters",
+    "Content solution",
+    "Broadcasting",
+    "Film",
+    "Animation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      34011,
+      34001,
+      10991,
+      10108,
+      6627,
+      4919,
+      2901,
+      2256,
+      1133,
+      1034,
+      647
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Sales revenue of the broadcasting industry in South Korea from 2014 to 2022 (in trillion South Korean won)",
+   "short": "Broadcasting industry sales revenue South Korea 2014-2022",
+   "unit": "trillion South Korean won",
+   "description": "In 2022, the sales revenue of the broadcasting industry in South Korea totaled nearly 26 trillion South Korean won. This continues a trend of revenue increase which has been ongoing since 2014. It was also the highest revenue recorded in the same time.",
+   "note": "South Korea; 2014 to 2022",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.77,
+      16.46,
+      17.33,
+      18.04,
+      19.76,
+      20.84,
+      21.96,
+      23.97,
+      26.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Sales revenue of the film industry in South Korea from 2014 to 2023 (in trillion South Korean won)",
+   "short": "Movie industry sales revenue in South Korea 2014-2023",
+   "unit": "trillion South Korean won",
+   "description": "In 2023, the movie industry's sales revenue in South Korea amounted to approximately 1.3 trillion South Korean won. That year, movie production in South Korea resulted in a total of 787 released movies.",
+   "note": "South Korea; 2014 to 2023; box office revenue and value added included",
+   "source": "KOFIC",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.66,
+      1.72,
+      1.74,
+      1.76,
+      1.81,
+      1.91,
+      0.51,
+      0.58,
+      1.16,
+      1.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Sales revenue of the Internet video on demand (VOD) movie market in South Korea from 2013 to 2022 (in billion South Korean won)",
+   "short": "Internet VOD movie film sales in South Korea 2013-2022",
+   "unit": "billion South Korean won",
+   "description": "In 2022, the sales value of movies on online VOD stores amounted to around 170 billion South Korean won. This represents an increase from the previous year. The domestic online VOD market has experienced fast-paced growth since 2021.",
+   "note": "South Korea; 2013 to 2022",
+   "source": "KOFIC",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      72.9,
+      49.9,
+      58.2,
+      67.9,
+      75.2,
+      72.8,
+      93,
+      78.8,
+      106.7,
+      169.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Sales revenue of the animation industry in South Korea in 2021, by industry (in billion South Korean won)",
+   "short": "Sales revenue of animation industry South Korea 2021, by industry",
+   "unit": "billion South Korean won",
+   "description": "In 2021, the production sector of the animation industry in South Korea posted a sales revenue of around 588.8 billion South Korean won. This made it the most successful industry sector, followed by distribution, which generated sales worth about 145.7 billion won. Overall, the South Korean animation industry made a sales revenue of roughly 755.5 billion won that year.",
+   "note": "South Korea; 2021; revenue from theater and broadcasting exports excluded",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "categorical",
+   "categories": [
+    "Production",
+    "Distribution",
+    "Online distribution"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      588.79,
+      145.65,
+      21.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Frequency of consuming animation in South Korea as of July 2023",
+   "short": "Frequency of watching animation South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea in 2023, around 23 percent of respondents stated that they had watched animation once or twice per week. A similar share, at 21.5 percent, consumed it nearly daily.",
+   "note": "South Korea; June 2 to July 14, 2023; 3,500 respondents; 3-69 years; South Koreans that consumed animation within the previous year",
+   "source": "Global Research; Korea Creative Content Agency Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Almost daily",
+    "3-4 times per week",
+    "1-2 times per week",
+    "2-3 times per month",
+    "Once per month",
+    "Once every 2-3 months"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.215,
+      0.186,
+      0.234,
+      0.136,
+      0.105,
+      0.124
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Sales revenue of the music industry in South Korea from 2014 to 2022 (in trillion South Korean won)",
+   "short": "Music industry sales revenue South Korea 2014-2022",
+   "unit": "trillion South Korean won",
+   "description": "In 2021, the sales revenue of the music industry in South Korea totaled around 11 trillion South Korean won. This represents an increase of around 17.5 percent since the previous year. The music industry accounted for 7.3 percent of the total sales revenue of the domestic content industry that year.",
+   "note": "South Korea; 2014 to 2022",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.61,
+      4.98,
+      5.31,
+      5.8,
+      6.1,
+      6.81,
+      6.06,
+      9.37,
+      11.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Value of music industry exports from South Korea from 2005 to 2022 (in million U.S. dollars)",
+   "short": "Music industry export value from South Korea 2005-2022",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, the export value of the music industry in South Korea amounted to around 927.6 million U.S. dollars.",
+   "note": "South Korea; 2005 to 2022",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      22.28,
+      16.67,
+      13.89,
+      16.47,
+      31.27,
+      83.26,
+      196.11,
+      235.1,
+      277.33,
+      335.65,
+      381.02,
+      442.57,
+      512.58,
+      564.24,
+      756.2,
+      679.63,
+      775.27,
+      927.61
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Frequency of using music content in South Korea as of July 2023",
+   "short": "Music content usage frequency South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea in 2023, around 47 percent of respondents stated that they listen to music almost every day. Only about 14 percent of respondents listened to music less frequently than once a week.",
+   "note": "South Korea; June 2 to July 7, 2023; 3,500 respondents; 10-69 years; people who experienced music content over the past year",
+   "source": "Global Research; Korea Creative Content Agency Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Almost everyday",
+    "3-4 times a week",
+    "1-2 times a week",
+    "2-3 times a month",
+    "Once a month",
+    "Once every two to three months"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.467,
+      0.205,
+      0.188,
+      0.064,
+      0.045,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Frequency of using music streaming services in South Korea as of July 2023",
+   "short": "Music streaming services usage frequency South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted among South Korean music listeners in 2023, around 40 percent of respondents stated that they streamed music almost every day. Overall, over 81 percent of those surveyed listened to music on a weekly basis.",
+   "note": "South Korea; June 2 to July 7, 2023; 2,415 respondents; 10-69 years; people who use music streaming services",
+   "source": "Global Research; Korea Creative Content Agency Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Almost every day",
+    "3-4 times a week",
+    "1-2 times a week",
+    "2-3 times a month",
+    "Once a month",
+    "Once every 2-3 months",
+    "Once every 4-12 months"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.404,
+      0.236,
+      0.172,
+      0.087,
+      0.049,
+      0.031,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Most frequently used music streaming or download services in South Korea as of July 2023",
+   "short": "Most frequently used music streaming or download services South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea in 2023, around 60 percent of respondents stated that they used the international streaming giant YouTube to stream or download music contents. A similarly popular service, at about 55 percent, was South Korean music streaming platform Melon. YouTube's paid music streaming service, YouTube Music, was used by roughly 22 percent of Korean respondents.",
+   "note": "South Korea; June 2 to July 7, 2023; 2,735 respondents; 10-69 years; people who use music streaming or download services",
+   "source": "Global Research; Korea Creative Content Agency Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "YouTube (free)",
+    "Melon",
+    "Genie",
+    "YouTube Music (paid)",
+    "Naver VIBE",
+    "FLO",
+    "Bugs Music",
+    "Spotify",
+    "Kakao Music",
+    "Apple Music",
+    "Soribada",
+    "Soundcloud",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.595,
+      0.547,
+      0.219,
+      0.219,
+      0.112,
+      0.109,
+      0.091,
+      0.076,
+      0.071,
+      0.07,
+      0.037,
+      0.037,
+      0.007
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of music streaming app users in South Korea from October 2020 to April 2023, by music app (in 1,000s)",
+   "short": "Number of music streaming app users South Korea 2020-2023, by music app",
+   "unit": "1,000s",
+   "description": "As of April 2023, the music streaming app YouTube Music had around 5.2 million users in South Korea. With this growth, it now has more users than domestic service Melon. YouTube Music experienced great growth since October 2020.",
+   "note": "South Korea; October 2020 to April 2023; 10 years and older; Android and iOS users",
+   "source": "Wiseapp",
+   "kind": "categorical",
+   "categories": [
+    "YouTube Music",
+    "Melon",
+    "Genie Music",
+    "FLO",
+    "Naver VIBE",
+    "Spotify",
+    "KakaoMusic",
+    "Bugs!"
+   ],
+   "series": [
+    {
+     "name": "Oct '20",
+     "values": [
+      1950,
+      5050,
+      2290,
+      1500,
+      800,
+      60,
+      480,
+      460
+     ]
+    },
+    {
+     "name": "Apr '21",
+     "values": [
+      2773.44,
+      4743.99,
+      2696.7,
+      1609.46,
+      1081.94,
+      305.77,
+      462.39,
+      343.65
+     ]
+    },
+    {
+     "name": "Oct '21",
+     "values": [
+      3480,
+      5060,
+      2660,
+      1830,
+      830,
+      490,
+      560,
+      340
+     ]
+    },
+    {
+     "name": "Apr '22",
+     "values": [
+      4003.4,
+      4498.51,
+      2308.21,
+      1507.15,
+      1133.31,
+      465.11,
+      355.01,
+      322.17
+     ]
+    },
+    {
+     "name": "Oct '22",
+     "values": [
+      4590,
+      4540,
+      2320,
+      1490,
+      1060,
+      540,
+      360,
+      320
+     ]
+    },
+    {
+     "name": "Apr '23",
+     "values": [
+      5212.74,
+      4590.78,
+      2032.17,
+      1277.8,
+      1097.79,
+      629.45,
+      317.85,
+      285.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Sales revenue of the comic industry in South Korea from 2014 to 2021 (in billion South Korean won)",
+   "short": "Comic industry sales revenue South Korea 2014-2021",
+   "unit": "billion South Korean won",
+   "description": "In 2021, the sales revenue of the comic industry in South Korea totaled around 2.1 trillion South Korean won. This represents an increase from the previous years, and continues a trend of annual increases. The comic industry accounted for 1.6 percent of the total sales revenue of the content industry that year.",
+   "note": "South Korea; 2014 to 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      854.84,
+      919.41,
+      976.26,
+      1082.23,
+      1178.61,
+      1337.25,
+      1534.44,
+      2132.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Sales revenue of the comic industry in South Korea in 2021, by segment (in billion South Korean won)",
+   "short": "Sales revenue comic industry South Korea 2021, by segment",
+   "unit": "billion South Korean won",
+   "description": "In 2021, the sales revenue of the South Korean comic book industry's online comic production and distribution sector amounted to around 1.1 trillion South Korean won. It was the most successful sector, and was followed by the comic book publishing sector, which achieved sales of about 571.2 billion won. The total sales revenue of the South Korean comic book industry that year was approximately 2.1 trillion won.",
+   "note": "South Korea; 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "categorical",
+   "categories": [
+    "Online comic production and distribution",
+    "Comic book publishing",
+    "Wholesale and retailing",
+    "Leasing/renting"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1083.24,
+      571.19,
+      448.95,
+      28.76
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Number of businesses in the comic industry in South Korea in 2021, by area",
+   "short": "Number of companies in comic industry South Korea 2021, by area",
+   "unit": "",
+   "description": "In 2021, most businesses active within the South Korean comic book industry were based in Seoul, with 1,614 companies located there. A further 1,114 companies were based in Gyeonggi (Gyeonggi Province), with all other areas in South Korea recorded less than 500 registered comic book companies each. Overall, the total number of comic book companies active in South Korea have continued to decline in 2021.",
+   "note": "South Korea; 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea) Number of businesses",
+   "kind": "categorical",
+   "categories": [
+    "Seoul",
+    "Gyeonggi",
+    "Busan",
+    "Gyeongnam",
+    "Incheon",
+    "Gyeongbuk",
+    "Daegu",
+    "Jeonbuk",
+    "Daejeon",
+    "Chungnam",
+    "Gwangju",
+    "Chungbuk",
+    "Jeonnam",
+    "Gangwon",
+    "Jeju"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1614,
+      1114,
+      288,
+      280,
+      221,
+      220,
+      219,
+      202,
+      197,
+      170,
+      161,
+      155,
+      148,
+      135,
+      113
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Main service used for consuming comics in digital format in South Korea as of July 2023",
+   "short": "Service used for consuming comics in digital format South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea in 2023, around 84 percent of respondents stated that Naver Webtoon was one of their main sources for reading digital comics. Naver Webtoon was translated and launched globally as Line Webtoon and focuses on webtoons, a type of digital comics that originated in South Korea. Other popular digital comic services included Kakao Page and Kakao Webtoon, formerly known as Daum Webtoon.",
+   "note": "South Korea; June 2 to July 7, 2023; 3,400 respondents; 10-69 years; South Koreans who had used online portals for reading comics within the previous year",
+   "source": "Global Research; Korea Creative Content Agency Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Naver Webtoon",
+    "Kakao Page",
+    "Kakao Webtoon (formerly Daum Webtoon)",
+    "Naver Series",
+    "Instagram",
+    "Lezhin Comics",
+    "Top Toon",
+    "Ridi",
+    "Toomics",
+    "Facebook",
+    "Manhwakyung",
+    "Postype",
+    "Other",
+    "Dillyhub"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.84,
+      0.32,
+      0.284,
+      0.278,
+      0.136,
+      0.131,
+      0.09,
+      0.054,
+      0.051,
+      0.05,
+      0.023,
+      0.017,
+      0.017,
+      0.009
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Most common way to pay for digital comics or webtoons in South Korea as of July 2023",
+   "short": "Method of paying for digital comics South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea in 2023, around 64.5 percent of respondents stated that they read digital comics or webtoons after charging their platform-specific access pass, such as Cookies on Naver Webtoon. The majority of the remaining respondents paid a fee for each episode of specific comics.",
+   "note": "South Korea; June 2 to July 7, 2023; 1,550 respondents; 10-69 years; South Koreans who paid for digital comics before",
+   "source": "Global Research; Korea Creative Content Agency",
+   "kind": "categorical",
+   "categories": [
+    "Consuming after charging access pass (Coin, Cash, Cookie etc.)",
+    "Fee payment for episodes of specific works",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.645,
+      0.309,
+      0.046
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Preferred digital comic genres in South Korea as of July 2023",
+   "short": "Popular digital comic genres South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea in 2023, fantasy was the one of the most preferred digital comic genres of around 33 percent of South Korean comic readers. Other highly popular genres included action and comedy, at about 33 percent and 31 percent respectively. Comics are popular in South Korea, and the majority of South Koreans read comics digitally.",
+   "note": "South Korea; June 2 to July 7, 2023; 3,400 respondents; 10-69 years; South Koreans who had consumed digital comics within the previous year",
+   "source": "Global Research; Korea Creative Content Agency Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fantasy",
+    "Action",
+    "Comedy/funny",
+    "Drama",
+    "Modern romance",
+    "Everyday life",
+    "School",
+    "Martial arts/historical",
+    "Horror/thriller",
+    "Sentimental",
+    "Romantic fantasy",
+    "Sports",
+    "Adult",
+    "Boy Love/Girl Love",
+    "Educational"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.332,
+      0.332,
+      0.311,
+      0.3,
+      0.262,
+      0.249,
+      0.154,
+      0.151,
+      0.146,
+      0.111,
+      0.109,
+      0.09,
+      0.078,
+      0.036,
+      0.035
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Sales revenue of the publishing industry in South Korea from 2014 to 2021 (in trillion South Korean won)",
+   "short": "Publishing industry sales revenue South Korea 2014-2021",
+   "unit": "trillion South Korean won",
+   "description": "In 2021, the sales revenue of the South Korean publishing industry amounted to around 24.7 trillion South Korean won. This was the highest sales revenue recorded for the industry, and continues a trend of annual increases. After a few years of decline, the number of businesses in the publishing industry started to increase again.",
+   "note": "South Korea; 2014 to 2021",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      20.59,
+      20.51,
+      20.77,
+      20.76,
+      20.95,
+      21.34,
+      21.65,
+      24.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Number of businesses in the publishing industry in South Korea from 2014 to 2022 (in 1,000s)",
+   "short": "Amount of businesses in publishing industry South Korea 2014-2022",
+   "unit": "1,000s",
+   "description": "In 2022, around 34 thousand businesses in the South Korea were in the publishing industry. This represents a significant increase compared to the rest of the decade, up by nearly 35 percent compared to the previous year.",
+   "note": "South Korea; 2014 to 2022",
+   "source": "Korea Creative Content Agency; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      25.71,
+      25.51,
+      25.45,
+      25.83,
+      25,
+      25.22,
+      25.24,
+      34.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Share of adults who read e-books in the previous year in South Korea as of November 2021",
+   "short": "Share of adults reading e-books in South Korea 2011-2021",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea in 2021, around 19 percent of respondents stated that they had read an e-book in the previous year. This represents an increase from the previous year. The rate of reading e-books had dropped in 2015, but has been regaining popularity since then.",
+   "note": "South Korea; September 15 to November 12, 2021; 6,000 respondents; 19 years and older",
+   "source": "Korean Publishing Research Institute; MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2013",
+    "2015",
+    "2017",
+    "2019",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.165,
+      0.139,
+      0.102,
+      0.141,
+      0.165,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Size of the gaming market in South Korea from 2006 to 2022 (in trillion South Korean won)",
+   "short": "Gaming industry size South Korea 2006-2022",
+   "unit": "trillion South Korean won",
+   "description": "As of 2022, the market value of South Korea’s gaming market amounted to around 22.2 trillion South Korean won. The country’s gaming industry is one of the largest in the world. Over the past decade, the market has continued to grow; the market value is estimated to grow up to 25.86 trillion won in 2024.",
+   "note": "South Korea; 2006 to 2022",
+   "source": "Korea Creative Content Agency",
+   "kind": "timeseries",
+   "categories": [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.45,
+      5.14,
+      5.6,
+      6.58,
+      7.43,
+      8.8,
+      9.75,
+      9.72,
+      9.97,
+      10.72,
+      10.89,
+      13.14,
+      14.29,
+      15.58,
+      18.89,
+      20.99,
+      22.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Video game purchases in South Korea as of March 2024",
+   "short": "Video game purchases in South Korea 2024",
+   "unit": "",
+   "description": "When asked about \"Video game purchases\", 15 percent of South Korean respondents answer \"Yes, on in-game purchases\". This online survey was conducted in 2024, among 2,023 consumers.",
+   "note": "South Korea; April 2023 to March 2024; 2023 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Yes, on game downloads",
+    "Yes, on in-game purchases",
+    "Yes, on online games",
+    "Yes, on games on a data medium (e.g., disc)",
+    "Yes, on subscriptions to gaming services / platforms (e.g., cloud gaming, gaming libraries)",
+    "Yes, on subscriptions to individual online games (e.g., World of Warcraft)",
+    "I don't play video games",
+    "No, I have not spent any money on video games"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.17,
+      0.15,
+      0.14,
+      0.08,
+      0.06,
+      0.04,
+      0.23,
+      0.39
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Radio broadcast usage rate in South Korea from 2012 to 2022",
+   "short": "Radio use rate in South Korea 2012-2022",
+   "unit": "",
+   "description": "In 2022, the rate of radio usage in South Korea stood at only 9.9 percent. This represents a significant decrease from the previous year as well as the lowest rate of use in the past decade. Radio usage has continuously decreased over the past years, down from 27.6 percent in 2012.",
+   "note": "South Korea; 2012 to 2022",
+   "source": "Korea Creative Content Agency; Korea Press Foundation",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.276,
+      0.286,
+      0.234,
+      0.166,
+      0.219,
+      0.167,
+      0.208,
+      0.172,
+      0.165,
+      0.162,
+      0.099
+     ]
+    }
+   ]
+  }
+ ]
+}

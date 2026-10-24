@@ -1,0 +1,966 @@
+{
+ "studyId": "67457",
+ "study": "fitness industry in germany",
+ "file": "research/statista/Health & Wellness/study_id67457_fitness-industry-in-germany.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the health and fitness market in Europe from 2017 to 2022 (in billion euros)",
+   "short": "Value of the European health and fitness industry 2017-2022",
+   "unit": "billion euros",
+   "description": "The health and fitness market in Europe was worth an estimated 28 billion U.S. dollars in 2022. This is a significant increase in the market size of just over 17 billion U.S. dollars in 2021. This can be attributed to the continued recovery of the industry following the impact of the coronavirus (COVID-19) pandemic, which forced the temporary closure of thousands of gyms and health clubs across Europe.",
+   "note": "Europe; 2017 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26.6,
+      27.2,
+      28.2,
+      18.9,
+      17.1,
+      28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Revenue of the fitness market in Germany from 2014 to 2022 (in million euros)",
+   "short": "Germany: revenue of the fitness market 2014-2022",
+   "unit": "million euros",
+   "description": "In 2022, the revenue of the fitness market stood at 4.9 billion euros. This marked an increase of more than 100 percent on the previous year, indicating the industry's recovery following the significant impact of the coronavirus (COVID-19) pandemic.",
+   "note": "Germany; 2014 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4700,
+      4830,
+      5050,
+      5200,
+      5330,
+      5510,
+      4160,
+      2200,
+      4900
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Fitness and health service online purchases in Germany as of December 2023",
+   "short": "Fitness and health service online purchases in Germany 2023",
+   "unit": "",
+   "description": "5 percent of German respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2023, among 5,987 consumers.",
+   "note": "Germany; January to December 2023; 5987 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Weight loss / healthy eating",
+    "Health tracking",
+    "Meditation / mindfulness / sleeping apps",
+    "Contraception or fertility tracking (only shown to women)",
+    "Medication checkers / reminders",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.05,
+      0.05,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.92,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Fitness and health service purchases in Germany as of December 2023",
+   "short": "Fitness and health service purchases in Germany 2023",
+   "unit": "",
+   "description": "13 percent of German respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2023, among 5,987 consumers.",
+   "note": "Germany; January to December 2023; 5987 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Online services (website or apps)",
+    "Wellness services (e.g., massage)",
+    "Sports club membership",
+    "Individual sports course / class",
+    "Personal trainer",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.13,
+      0.08,
+      0.08,
+      0.07,
+      0.05,
+      0.04,
+      0.77,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Number of gyms and health clubs in Europe from 2009 to 2022",
+   "short": "Number of health and fitness clubs in Europe 2009-2022",
+   "unit": "",
+   "description": "The number of gyms and health clubs in Europe has generally been on the increase since 2009. While there was a slight dip in the number of establishments in 2020 as a result of the coronavirus (COVID-19) pandemic, the number of gyms in Europe increased again in 2022, reaching 63,830.",
+   "note": "Europe; 2009 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      48087,
+      48005,
+      47701,
+      45396,
+      49197,
+      51299,
+      51204,
+      55003,
+      59055,
+      63644,
+      63059,
+      63173,
+      63830
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of members at health and fitness clubs in Europe in 2022, by country (in millions)",
+   "short": "Gym membership in European countries 2022",
+   "unit": "millions",
+   "description": "In 2022, there were approximately 10.4 million gym members in the United Kingdom. Meanwhile, there were around 5.4 million members at health clubs and fitness establishments in Spain.",
+   "note": "Europe; 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "categorical",
+   "categories": [
+    "United Kingdom",
+    "Germany",
+    "Spain",
+    "France"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      10.4,
+      10.3,
+      5.4,
+      4.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of fitness club members in Germany from 2014 to 2022 (in millions)",
+   "short": "Number of gym members in Germany 2014-2022",
+   "unit": "millions",
+   "description": "In 2022, there were approximately 10.3 million fitness club members in Germany. This marked an increase of over one million on the gym membership figures from a year previous.",
+   "note": "Germany; 2014 to 2022",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      9.08,
+      9.46,
+      10.08,
+      10.61,
+      11.09,
+      11.66,
+      10.31,
+      9.26,
+      10.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Leading fitness club operators in Germany in 2022, by number of clubs",
+   "short": "Leading gym chains in Germany in 2022, by number of clubs",
+   "unit": "",
+   "description": "In 2022, the largest fitness club operator in Germany was clever fit. Established in 2004, the franchise fitness chain grew to 450 gyms across the country, more than twice as many gyms as its closest competitor, RSG Group.",
+   "note": "Germany; 2022; * Fully or partly a franchise operation. Read more",
+   "source": "Deloitte; EuropeActive Number of clubs",
+   "kind": "categorical",
+   "categories": [
+    "clever fit*",
+    "RSG Group",
+    "EASYFITNESS*",
+    "LifeFit Group*",
+    "ACISO*",
+    "Kieser*",
+    "FitX",
+    "BestFit Group"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      450,
+      211,
+      170,
+      124,
+      119,
+      117,
+      102,
+      82
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Leading sports types in Germany in 2023, by number of members (in millions)",
+   "short": "Sports popularity by members in Germany 2023",
+   "unit": "millions",
+   "description": "This graph shows selected sports types by the number of participating members in Germany in 2023. That year, around 10.3 million people were registered in fitness studios, while more than seven million were members of soccer clubs.",
+   "note": "Germany; 2023",
+   "source": "Deloitte; Deutsche Hochschule für Prävention und Gesundheitsmanagement; Deutscher Olympischer Sportbund Members in millions",
+   "kind": "categorical",
+   "categories": [
+    "Fitness*",
+    "Soccer",
+    "Gymnastics",
+    "Tennis",
+    "Alpine club",
+    "Gun club",
+    "Athletics",
+    "Handball",
+    "Golf",
+    "Riding"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.3,
+      7.36,
+      4.79,
+      1.48,
+      1.41,
+      1.32,
+      0.78,
+      0.74,
+      0.68,
+      0.66
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Number of people exercising or playing sports in Germany from 2017 to 2021, by frequency (in millions)",
+   "short": "Frequency of recreational exercising in Germany 2017-2021",
+   "unit": "millions",
+   "description": "Germans usually opt for exercising several times a month or several times a week, based on this survey. And plenty never do so or prefer to keep their activities to themselves. In any case, gym and sports club memberships, home workouts, various outdoor activities, swimming, jogging and cycling are just a few examples of the ways in which the German population likes to stay fit and active.",
+   "note": "Germany; 2017 to 2021; 14 years and older; German-speaking population",
+   "source": "VuMA",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "Several times a week",
+     "values": [
+      11.57,
+      11.81,
+      11.67,
+      12.84,
+      14.27
+     ]
+    },
+    {
+     "name": "Several times a month",
+     "values": [
+      15.07,
+      15.29,
+      15.27,
+      15.24,
+      15.17
+     ]
+    },
+    {
+     "name": "Once a month",
+     "values": [
+      3.79,
+      4,
+      4.02,
+      3.98,
+      3.94
+     ]
+    },
+    {
+     "name": "Less than once a month",
+     "values": [
+      10.44,
+      10.29,
+      10.21,
+      8.91,
+      8.88
+     ]
+    },
+    {
+     "name": "Never, prefer not to say",
+     "values": [
+      29.3,
+      29.05,
+      29.43,
+      29.67,
+      28.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Share of young people exercising in Germany in 2021, by frequency",
+   "short": "Young people exercising in Germany 2021, by frequency",
+   "unit": "",
+   "description": "In 2021, 27 percent of young people in Germany aged between 14 and 19 years exercised several times a month. Among 20 to 25-year-olds, 25.5 percent did the same. The figures are based on a survey conducted in Germany in 2021.",
+   "note": "Germany; 14 years and older; German-speaking population",
+   "source": "VuMA",
+   "kind": "categorical",
+   "categories": [
+    "Several times a week",
+    "Several times a month",
+    "Once a month",
+    "Less than once a month",
+    "Never"
+   ],
+   "series": [
+    {
+     "name": "14-19 years",
+     "values": [
+      0.462,
+      0.272,
+      0.044,
+      0.1,
+      0.121
+     ]
+    },
+    {
+     "name": "20-25 years",
+     "values": [
+      0.379,
+      0.255,
+      0.061,
+      0.115,
+      0.191
+     ]
+    },
+    {
+     "name": "14-25 years (total)",
+     "values": [
+      0.418,
+      0.263,
+      0.053,
+      0.108,
+      0.158
+     ]
+    },
+    {
+     "name": "Population (total)",
+     "values": [
+      0.202,
+      0.215,
+      0.056,
+      0.126,
+      0.401
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to Germany from 2016 to 2022 (in 1,000 euros)",
+   "short": "Germany: articles and equipment for sports import value 2016-2022",
+   "unit": "1,000 euros",
+   "description": "This statistic presents the value of articles and equipment for physical exercise, gymnastics, athletics and other sports imported to Germany from 2016 to 2022. In 2022, imports of sports equipment and articles including swimming pools and paddling pools amounted to approximately 2.2 billion euros.",
+   "note": "Germany; 2016 to 2022",
+   "source": "UN Comtrade",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1303459,
+      1380707,
+      1558656,
+      1575417,
+      1582016,
+      2315764,
+      2164864
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Which of these fitness or health services (website or app) have you used as a paying customer in the past 12 months?",
+   "short": "Online fitness and health service purchases by brand in Germany 2020",
+   "unit": "",
+   "description": "The displayed data on online fitness and health service purchases by brand shows results of the Statista Global Consumer Survey conducted in Germany in 2020. Some 30 percent of respondents answered the question \"Which of these fitness or health services (website or app) have you used as a paying customer in the past 12 months?\" with \"Gymondo\".",
+   "note": "Germany; 22 Jul to 20 Aug 2020 and 17 Feb to 25 Mar 2020; 142 respondents; 18-64 years; respondents who spent money on online fitness & health services (websites and apps)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gymondo",
+    "Adidas Running",
+    "MyFitnessPal",
+    "Clue",
+    "Freeletics",
+    "Flo Period & Ovulation Tracker",
+    "8fit",
+    "Calm",
+    "Lifesum",
+    "Yazio",
+    "7 mind meditation",
+    "Headspace",
+    "Strava",
+    "WW (Weight Watchers)",
+    "Sweat: Kayla Itsines Fitness"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3,
+      0.28,
+      0.25,
+      0.15,
+      0.14,
+      0.13,
+      0.11,
+      0.11,
+      0.11,
+      0.11,
+      0.1,
+      0.08,
+      0.08,
+      0.08,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Leading health and fitness apps in the Google Play Store in Germany in September 2022, by number of downloads",
+   "short": "Leading Android health apps in Germany 2022, by downloads",
+   "unit": "",
+   "description": "In September 2022, the Corona-Warn-App app was downloaded approximately 114 thousand times onto Android mobile devices in Germany, while the Samsung Health was downloaded approximately 86 thousand time. The Huawei Health app ranked fourth with 84.5 thousand downloads from the Google Play Store in Germany in the examined month.",
+   "note": "Germany; September 2022; based on downloads to devices in Germany.",
+   "source": "Airnow Number of downloads",
+   "kind": "categorical",
+   "categories": [
+    "Corona-Warn-App",
+    "Samsung Health",
+    "Huawei Health",
+    "Komoot: Bike Trails & Routes",
+    "Step Counter - Pedometer",
+    "Blood Pressure App",
+    "Aarogya Setu",
+    "CovPass",
+    "Feelsy: Stress Anxiety Relief",
+    "Home Workout - No Equipment"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      113808,
+      86011,
+      84584,
+      78824,
+      55925,
+      51409,
+      42269,
+      41084,
+      39524,
+      37642
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Most used eHealth tracker / smart watches by brand in Germany as of December 2023",
+   "short": "Most used eHealth tracker / smart watches by brand in Germany 2023",
+   "unit": "",
+   "description": "With 35 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among German consumers. In second place follows Samsung with 21 percent of respondents. These results are based on a representative online survey conducted in 2023 among 2,050 consumers in Germany.",
+   "note": "Germany; January to December 2023; 2050 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems (Housing & household equipment, Internet & devices)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Samsung",
+    "Fitbit",
+    "Amazfit",
+    "Garmin",
+    "Huawei",
+    "Adidas",
+    "Xiaomi/Mi",
+    "ASUS",
+    "Denver",
+    "Fossil",
+    "Google",
+    "Honor",
+    "Polar",
+    "Misfit"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.21,
+      0.16,
+      0.08,
+      0.08,
+      0.07,
+      0.05,
+      0.05,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.02,
+      0.02,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Sales revenue of wearables in Germany from 2014 to 2023 (in million euros)",
+   "short": "Revenue from wearable sales in Germany 2014-2023",
+   "unit": "million euros",
+   "description": "In 2023, revenues from wearable sales in Germany amounted to roughly 1.45 billion euros. This was a decrease of around 100,000 euros compared with the previous year.",
+   "note": "Germany; 2014 to 2023; private demand; core wearables; * The source makes the following statement \"including Smart Watches (without SIM), Smart Glasses (without SIM), Health &amp; Fitness Trackers, Wrist Sport Computers, [...] Read more",
+   "source": "BVT; GfK; gfu",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      879,
+      239,
+      437,
+      562,
+      681,
+      940,
+      1132,
+      1352,
+      1460,
+      1453
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Sales volume of wearables in Germany from 2015 to 2023 (in millions)",
+   "short": "Sales volume of wearables in Germany 2015-2023",
+   "unit": "millions",
+   "description": "In 2023, roughly 5.88 million wearable devices were sold in Germany. This was a significant decrease compared to 2022, the sale of wearable devices has rapidly increased since 2015 in which only 2.02 million devices were sold and peaked in 2021.",
+   "note": "Germany; 2015 to 2023; Core wearables, private demand",
+   "source": "GfK; gfu",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.02,
+      3.04,
+      3.58,
+      4.08,
+      5.56,
+      6.78,
+      7.36,
+      7.2,
+      5.88
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Online revenue forecast for the eServices market by segment in Germany from 2023 to 2030 (in million U.S. dollars)",
+   "short": "Revenue forecast for the eServices market by segment in Germany until 2030",
+   "unit": "million U.S. dollars",
+   "description": "The revenue is forecast to experience significant growth in all segments in 2030. Comparing the three different segments for the year 2030, the segment 'Event Tickets' leads the ranking with 3.5 million U.S. dollars. Contrastingly, 'Dating Services' is ranked last, with 305.52 million U.S. dollars. Their difference, compared to Event Tickets, lies at 3.2 million U.S. dollars.",
+   "note": "Germany; 2023 to 2030",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030"
+   ],
+   "series": [
+    {
+     "name": "Event Tickets",
+     "values": [
+      2946.53,
+      3091.52,
+      3180.62,
+      3239.91,
+      3280.62,
+      3482.61,
+      3503.12,
+      3517.3
+     ]
+    },
+    {
+     "name": "Fitness",
+     "values": [
+      618.9,
+      640.95
+     ]
+    },
+    {
+     "name": "Dating Services",
+     "values": [
+      312.39,
+      319.71,
+      325.83,
+      330.27,
+      334.25,
+      300.95,
+      303.43,
+      305.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Online revenue forecast for the eServices Fitness market in Germany from 2017 to 2024 (in million U.S. dollars)",
+   "short": "Online revenue forecast for the eServices Fitness market in Germany until 2024",
+   "unit": "million U.S. dollars",
+   "description": "This statistic presents a forecast of the online revenue in the eServices Fitness market in Germany until the year 2024. According to the Digital Market Outlook, the online revenue of the eServices Fitness segment Apps in Germany is expected to be 171.2 million U.S. dollars in 2024. An overview of all Digital Markets can be found here.",
+   "note": "Germany; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Wearables",
+     "values": [
+      391.8,
+      408.1,
+      423.2,
+      536.2,
+      493.5,
+      471.3,
+      465.2,
+      469.7
+     ]
+    },
+    {
+     "name": "Apps",
+     "values": [
+      40,
+      51.7,
+      66.2,
+      94.7,
+      114.7,
+      134.6,
+      153.7,
+      171.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Forecast for the number of online users in the eServices market by segment in Germany from 2023 to 2030 (in million)",
+   "short": "Forecast for the number of users in the eServices market by segment in Germany until 2030",
+   "unit": "million",
+   "description": "The number of users is forecast to experience significant growth in all segments in 2030. Comparing the three different segments for the year 2030, the segment 'Event Tickets' leads the ranking with 21.58 million users. Contrastingly, 'Dating Services' is ranked last, with 9.55 million users. Their difference, compared to Event Tickets, lies at 12.03 million users.",
+   "note": "Germany; 2023 to 2030",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030"
+   ],
+   "series": [
+    {
+     "name": "Event Tickets",
+     "values": [
+      19.17,
+      19.81,
+      19.96,
+      20.04,
+      20.07,
+      21.56,
+      21.57,
+      21.58
+     ]
+    },
+    {
+     "name": "Fitness",
+     "values": [
+      17.36,
+      18.39
+     ]
+    },
+    {
+     "name": "Dating Services",
+     "values": [
+      9.91,
+      10.01,
+      10.11,
+      10.21,
+      10.38,
+      9.48,
+      9.52,
+      9.55
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Forecast for the number of online users in the eServices Fitness market in Germany from 2017 to 2024 (in million)",
+   "short": "Number of users in the eServices Fitness market in Germany until 2024",
+   "unit": "million",
+   "description": "This statistic presents a forecast of the number of online users in the eServices Fitness market in Germany until the year 2024. According to the Digital Market Outlook, the number of online users of the eServices Fitness segment Wearables in Germany is expected to be 6.7 million in 2024. An overview of all Digital Markets can be found here.",
+   "note": "Germany; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Apps",
+     "values": [
+      9.7,
+      10.4,
+      11.2,
+      13.9,
+      15,
+      16.2,
+      17.3,
+      18.3
+     ]
+    },
+    {
+     "name": "Wearables",
+     "values": [
+      6,
+      6.2,
+      6.4,
+      8,
+      7.2,
+      6.8,
+      6.6,
+      6.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Forecast for the average revenue per online user for the eServices market by segment in Germany from 2021 to 2028 (in U.S. dollars)",
+   "short": "ARPU forecast for the eServices market by segment in Germany until 2028",
+   "unit": "U.S. dollars",
+   "description": "Significant fluctuations are estimated for all segments over the forecast period for the average revenue per user. Only for the segment Event Tickets, a significant increase can be observed over the forecast period. Here, the indicator exhibits a difference of 18.05 U.S. dollars between 2021 and 2028.",
+   "note": "Germany; 2021 to 2028",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Event Tickets",
+     "values": [
+      147.76,
+      153.44,
+      153.54,
+      156.24,
+      159.74,
+      162.22,
+      164.01,
+      165.81
+     ]
+    },
+    {
+     "name": "Fitness",
+     "values": [
+      40.13,
+      37.24,
+      35.65,
+      34.85
+     ]
+    },
+    {
+     "name": "Dating Services",
+     "values": [
+      30.95,
+      31,
+      31.51,
+      31.92,
+      32.24,
+      32.35,
+      32.2,
+      32.04
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1001 @@
+{
+ "studyId": "63747",
+ "study": "sport in australia",
+ "file": "research/statista/study_id63747_sport-in-australia.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Total industry value added from sports and recreation activities in Australia from financial year 2010 to 2023 (in billion Australian dollars)",
+   "short": "Total industry value added from sports and recreation in Australia FY 2010-2023",
+   "unit": "billion Australian dollars",
+   "description": "Sports and recreation activities in Australia contributed over nine billion Australian dollars to the Australian economy in financial year 2023. This was a large increase in comparison to the 2020 financial year, which saw slightly over six billion Australian dollars of value added to the national economy.",
+   "note": "Australia, Australia and Oceania; financial year 2010 to 2023",
+   "source": "Australian Bureau of Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.05,
+      4.32,
+      4.84,
+      4.77,
+      5.19,
+      5.49,
+      5.41,
+      5.64,
+      6.07,
+      6.81,
+      6.32,
+      5.54,
+      6.9,
+      9.43
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Number of persons employed in sports and recreation activities in Australia from financial year 2012 to 2023 (in 1,000s)",
+   "short": "Persons employed by the sports and recreation industry in Australia FY 2012-2023",
+   "unit": "1,000s",
+   "description": "In financial year 2023, a total of 162,000 people were employed in the sports and recreation activities industry in Australia. Over the past decade, industry employment numbers have fluctuated, with numbers dropping to under 120,000 in the 2016 and 2017 financial years.",
+   "note": "Australia, Australia and Oceania; financial years 2012 to 2023",
+   "source": "Australian Bureau of Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      130,
+      122,
+      138,
+      129,
+      119,
+      119,
+      123,
+      134,
+      127,
+      145,
+      159,
+      162
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Key financial figures of the sports and recreation activities industry in Australia in financial year 2023 (in billion Australian dollars)",
+   "short": "Sports and recreation industry financial figures in Australia FY 2023",
+   "unit": "billion Australian dollars",
+   "description": "In financial year 2023, the total income of the sports and recreation activities industry in Australia amounted to around 26 billion Australian dollars. This resulted in an earnings before interest, tax, depreciation, and amortization of close to three billion Australian dollars.",
+   "note": "Australia, Australia and Oceania; financial year 2023",
+   "source": "Australian Bureau of Statistics Value in billion Australian dollars",
+   "kind": "categorical",
+   "categories": [
+    "Total income",
+    "Total expenses",
+    "Sales and service income",
+    "Industry value added",
+    "Wages and salaries",
+    "Operating profit before tax",
+    "Earnings before interest, tax, depreciation, and amortization"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26.19,
+      22.82,
+      22.47,
+      9.43,
+      5.79,
+      3.39,
+      2.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Share of adults participating in sports in Australia in financial year 2023, by frequency",
+   "short": "Share of adults participating in sports Australia 2023, by frequency",
+   "unit": "",
+   "description": "In the 2023 financial year, it was estimated that approximately 87.4 percent of adults in Australia participated in sport at least once a year. Almost 50 percent of respondents engaged in sport at least four times a week, and around a quarter exercised at least seven times a week.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years or older",
+   "source": "ASC; Clearinghouse Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "At least once per year",
+    "At least once per month",
+    "At least once per fortnight",
+    "At least once per week",
+    "At least twice per week",
+    "At least three times per week",
+    "At least four times per week",
+    "At least five times per week",
+    "At least six times per week",
+    "At least seven times per week"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.874,
+      0.853,
+      0.83,
+      0.785,
+      0.7,
+      0.604,
+      0.494,
+      0.402,
+      0.313,
+      0.249
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Share of people participating in sports in Australia financial year 2023, by type",
+   "short": "Share of sports participants in Australia 2023, by type of sports",
+   "unit": "",
+   "description": "In financial year 2023, close to 43 percent of Australians participated in recreational walking. Fitness and gym activities proved almost as popular with well over a third of Australians going to the gym or undertaking a fitness activity in that year.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years and older",
+   "source": "ASC; Clearinghouse Share of people",
+   "kind": "categorical",
+   "categories": [
+    "Walking (Recreational)",
+    "Fitness/Gym",
+    "Swimming",
+    "Athletics, track and field (includes jogging and running)",
+    "Cycling",
+    "Bush walking",
+    "Yoga",
+    "Virtual based physical activity",
+    "Football/soccer",
+    "Golf",
+    "Tennis",
+    "Pilates",
+    "Basketball",
+    "Surfing",
+    "Netball"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.429,
+      0.38,
+      0.18,
+      0.17,
+      0.128,
+      0.1,
+      0.065,
+      0.063,
+      0.062,
+      0.058,
+      0.055,
+      0.052,
+      0.051,
+      0.034,
+      0.032
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of people participating in sports in Australia financial year 2023, by type (in 1,000s)",
+   "short": "Number of sports participants in Australia 2023, by type of sports",
+   "unit": "1,000s",
+   "description": "Sport is often acknowledged as an important part of the Australian cultural identity and despite Australia’s relatively small population, it performs considerably well on the international sporting stage. Among Australia's favorite sporting codes are Rugby, Netball, Cricket, and Australian Rules Football (AFL), however when it comes to sport participation, individual sports dominate the top ten preferred sports in Australia. In the 2023 financial year a survey of over 20,000 respondents named [...]",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years and older",
+   "source": "ASC; Clearinghouse Number of participants in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Walking (Recreational)",
+    "Fitness/Gym",
+    "Swimming",
+    "Athletics, track and field (includes jogging and running)",
+    "Cycling",
+    "Bush walking",
+    "Yoga",
+    "Virtual based physical activity",
+    "Football/soccer",
+    "Golf",
+    "Tennis",
+    "Pilates",
+    "Basketball",
+    "Surfing",
+    "Netball"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      9398.5,
+      8333.8,
+      3947,
+      3724.1,
+      2810.9,
+      2191.9,
+      1430.9,
+      1376.1,
+      1367.3,
+      1279.5,
+      1205,
+      1185.6,
+      1110.9,
+      741,
+      703.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Participation rate of most popular organized physical activities participated in by children in Australia in financial year 2023",
+   "short": "Most popular organized physical activities for children in Australia 2023",
+   "unit": "",
+   "description": "In financial year 2023, swimming was the most popular organized sport for children in Australia, with approximately 38 percent of children aged 0 to 14 participating in the sport. Football/soccer was the second most popular sport, with an approximate participation rate of around 15 percent.",
+   "note": "Australia; July 2022 to June 2023; 3,600 respondents; 0 to 14 years",
+   "source": "Clearinghouse Share of children",
+   "kind": "categorical",
+   "categories": [
+    "Swimming",
+    "Football/soccer",
+    "Gymnastics",
+    "Dancing (recreational)",
+    "Australian football",
+    "Basketball",
+    "Netball",
+    "Tennis",
+    "Athletics, track and field (includes jogging and running)",
+    "Cricket"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3554,
+      0.1441,
+      0.1069,
+      0.0868,
+      0.0839,
+      0.0808,
+      0.061,
+      0.0522,
+      0.0513,
+      0.0484
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Share of children participating in sports in Australia in financial year 2023, by frequency",
+   "short": "Share of children participating in sports Australia 2023, by frequency",
+   "unit": "",
+   "description": "In financial year 2023, it was estimated that about 73.9 percent of children in Australia participated in sports at least once or more a year. Around 50 percent of children participated in sport at least once a week or more.",
+   "note": "Australia; July 2022 to June 2023; 3,600 respondents; 0 to 14 years",
+   "source": "ASC; Clearinghouse Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "At least once per year",
+    "At least once per month",
+    "At least once per fortnight",
+    "At least once per week",
+    "At least twice per week",
+    "At least three times per week",
+    "At least four times per week",
+    "At least five times per week",
+    "At least six times per week",
+    "At least seven times per week"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.739,
+      0.684,
+      0.635,
+      0.515,
+      0.317,
+      0.198,
+      0.121,
+      0.075,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Total number of female adults participating in sports in Australia in financial year 2023, by venue (in 1,000s)",
+   "short": "Number of female adults participating in sports Australia 2023, by venue",
+   "unit": "1,000s",
+   "description": "In financial year 2023, it was estimated that about 3.9 million female adults used gyms, fitness clubs, sports or leisure centers across Australia. The second most popular venues for women to participate in sport were sports clubs and associations.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years or older",
+   "source": "ASC; Clearinghouse Number of participants in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Gym/fitness club/sports/leisure centre",
+    "Sports club or association",
+    "Private studio",
+    "Recreation club or association",
+    "Education instituition",
+    "Individual personal trainer or coach"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3891.2,
+      1800.5,
+      1273.7,
+      626.8,
+      284.9,
+      249.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Total number of male adults participating in sports in Australia in financial year 2023, by venue (in 1,000s)",
+   "short": "Number of male adults participating in sports Australia 2023, by venue",
+   "unit": "1,000s",
+   "description": "In financial year 2023, it was estimated that about 3.5 million male adults used gyms, fitness clubs, sports or leisure centers across Australia. The second most popular venue for men to participate at was at a sports club or association.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years or older",
+   "source": "ASC; Clearinghouse Number of participants in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Gym/fitness club/sports/leisure centre",
+    "Sports club or association",
+    "Recreation club or association",
+    "Private studio",
+    "Education instituition",
+    "Individual personal trainer or coach"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3528.4,
+      3043.7,
+      878.4,
+      370.5,
+      330.7,
+      76.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of health and fitness centers and gyms in operation in Australia from financial year 2016 to 2023",
+   "short": "Number of operating health and fitness centers and gyms Australia FY 2016-2023",
+   "unit": "",
+   "description": "The fitness industry in Australia has gone from strength to strength, with recent 2023 figures estimating approximately 7,311 gyms and health and fitness centers located across the country.",
+   "note": "Australia; FY 2016 to FY 2023",
+   "source": "Australian Bureau of Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3859,
+      4367,
+      4797,
+      5212,
+      5869,
+      6625,
+      7148,
+      7311
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of health and fitness centers and gymnasia operating in Australia at June 2023, by revenue range",
+   "short": "Number of health and fitness centers in Australia 2023, by revenue",
+   "unit": "",
+   "description": "Health and fitness centers and gyms in Australia with a revenue of between 50,000 and 200,000 Australian dollars numbered 1,809 businesses at the end of the June 2023. The majority of health and fitness businesses had an annual revenue of less than two million Australian dollars and only 21 businesses earned over 10 million Australian dollars in that financial year.",
+   "note": "Australia, Australia and Oceania; as of June 2023",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Zero to less than $50k",
+    "$50k to less than $200k",
+    "$200k to less than $2m",
+    "$2m to less than $5m",
+    "$5m to less than $10m",
+    "$10m or more"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1130,
+      1809,
+      4121,
+      200,
+      30,
+      21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of people using gyms, fitness clubs, sports or leisure centers in Australia in financial year 2023, by age (in 1,000s)",
+   "short": "People visiting gyms, fitness clubs, sports or leisure centers Australia 2023, by age",
+   "unit": "1,000s",
+   "description": "In the 2023 financial year, around 1.9 million Australians aged between 25 and 35 years used gyms, fitness clubs or sports or leisure centers in Australia. Significantly fewer people under the age of 18 and people in the 55 to 64 year old age group attended a gym, sports or leisure center.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years and older",
+   "source": "ASC; Clearinghouse",
+   "kind": "categorical",
+   "categories": [
+    "15-17",
+    "18-24",
+    "25-35",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      350.3,
+      1221.3,
+      1956.9,
+      1363.7,
+      1015.5,
+      732.5,
+      779.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Share of people using gyms, fitness clubs, sports or leisure centers in Australia in financial year 2023, by age",
+   "short": "Share of people visiting gyms, fitness clubs, sports centers Australia 2023, by age",
+   "unit": "",
+   "description": "In the 2023 financial year, around 50.2 percent of Australians aged between 18 and 24 years used gyms, fitness clubs, or sports or leisure centers in Australia. The 25 to 35 age group also showed a similarly high participation rate of around 48 percent.",
+   "note": "Australia; July 2022 to June 2023; 16,927 respondents",
+   "source": "ASC; Clearinghouse",
+   "kind": "categorical",
+   "categories": [
+    "15-17",
+    "18-24",
+    "25-35",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.362,
+      0.502,
+      0.483,
+      0.37,
+      0.308,
+      0.243,
+      0.174
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of people participating in fitness and gym activities in Australia in financial year 2023, by gender (in 1,000s)",
+   "short": "Number of fitness and gym participants in Australia 2023, by gender",
+   "unit": "1,000s",
+   "description": "In the 2023 financial year, it was estimated that around 4.4 million women in Australia participated in fitness or gym activities. The number of females participating in fitness or gym activities outnumbered males participating in fitness or gym activities in the country.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years and older",
+   "source": "ASC; Clearinghouse Number of people in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Female",
+    "Male",
+    "Total"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4472.7,
+      3861.1,
+      8333.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Revenue of the Australian Football League (AFL) in Australia from 2012 to 2023 (in million Australian dollars)",
+   "short": "Revenue of the AFL in Australia 2012-2023",
+   "unit": "million Australian dollars",
+   "description": "In 2023, the Australian Football League (AFL) in Australia generated over 1,063 million Australian dollars in revenue. Between 2012 and 2019, the AFL's annual revenue rose steadily to a peak of almost 794 million dollars before dipping in 2020. That year, the season was disrupted by the coronavirus pandemic, and games scheduled to be played at the country’s largest stadium, the Melbourne Cricket Ground (MCG), were relocated to smaller, interstate stadiums due to COVID-19-related [...]",
+   "note": "Australia; 2012 to 2023",
+   "source": "Australian Football League",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      471.18,
+      502.7,
+      528.23,
+      558.67,
+      569.86,
+      752.62,
+      778.6,
+      793.94,
+      674.85,
+      738.14,
+      944.37,
+      1063.55
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Number of Australian Football League (AFL) club memberships in Australia in 2023, by club",
+   "short": "AFL club memberships Australia 2023 by club",
+   "unit": "",
+   "description": "In 2023, the Collingwood Magpies was the Australian Football League club with the highest number of club memberships, with their club boasting almost 106 thousand members. Meanwhile the club with the fewest memberships was the Gold Coast Suns, with around 23 thousand club memberships. Australia, the sporting nation In Australia, sport is often likened to religion due to its avid following. The AFL remains a favorite among Australian consumers, and is played by hundreds of [...]",
+   "note": "Australia, Australia and Oceania; 2023",
+   "source": "Australian Football League Number of memberships",
+   "kind": "categorical",
+   "categories": [
+    "Collingwood Magpies",
+    "West Coast Eagles",
+    "Richmond Tigers",
+    "Carlton Blues",
+    "Essendon Bombers",
+    "Geelong Cats",
+    "Hawthorn Hawks",
+    "Melbourne Demons",
+    "Adelaide Crows",
+    "Sydney Swans",
+    "Port Adelaide Power",
+    "Fremantle Dockers",
+    "St Kilda Saints",
+    "Western Bulldogs",
+    "Brisbane Lions"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      106470,
+      102897,
+      101349,
+      95277,
+      86274,
+      82155,
+      80698,
+      70785,
+      68536,
+      65332,
+      64041,
+      62064,
+      60239,
+      56302,
+      54676
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Total revenue raised by National Rugby League in Australia financial year 2012-2023 (in 1,000 Australian dollars)",
+   "short": "Total revenue raised by NRL Australia FY 2012-2023",
+   "unit": "1,000 Australian dollars",
+   "description": "In the financial year 2023, the Australian National Rugby League raised around 690 million Australian dollars in revenue. This was an increase in total revenue raised by the NRL compared to the previous year.",
+   "note": "Australia, Australia and Oceania; financial year 2023",
+   "source": "National Rugby League",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      181600,
+      320612,
+      344878,
+      354261,
+      366165,
+      377320,
+      520465,
+      552941,
+      417273,
+      570345,
+      585375,
+      689370
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Number of National Rugby League club members in Australia in 2023, by club",
+   "short": "Number of NRL club members Australia 2023, by club",
+   "unit": "",
+   "description": "The NRL team membership for the 2023 season in Australia was led by Melbourne Storm, with 40,122 members as of December 2022. The Brisbane Broncos reported approximately 36,800 members at the time. Made up of 17 teams, the Australasian National Rugby League (NRL) consists of teams from New South Wales, Victoria, Queensland, the Australian Capital Territory, and New Zealand.",
+   "note": "Australia; 2022",
+   "source": "National Rugby League Number of club members",
+   "kind": "categorical",
+   "categories": [
+    "Melbourne Storm",
+    "Brisbane Broncos",
+    "Parramatta Eels",
+    "Wests Tigers",
+    "Sydney Roosters",
+    "Newcastle Knights",
+    "Canberra Raiders",
+    "North Queensland Cowboys",
+    "St. George Illawarra Dragons"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      40122,
+      36800,
+      32376,
+      20906,
+      19029,
+      18139,
+      14380,
+      12625,
+      10651
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Expenditure in media, broadcasting, and marketing by Cricket Australia from financial year 2019 to 2023 (in million Australian dollars)",
+   "short": "Expenditure in media, broadcasting, and marketing by Cricket Australia FY 2019-2023",
+   "unit": "million Australian dollars",
+   "description": "The total expenditure from operating activities by Cricket Australia in marketing was approximately 28.6 million Australian dollars for the financial year of 2023. In the 2020 financial year, expenditure for media, broadcasting, and marketing by Cricket Australia reached over 38 million Australian dollars.",
+   "note": "Australia; Financial years 2019 to 2023; *Figure for marketing only. In previous reports, figure was displayed as 'media, broadcasting, and marketing'. Australian financial year starts on 1 July and ends on 30 June. For example the financial [...] Read more",
+   "source": "cricket.com.au; Deloitte; PwC",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022*",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      31.4,
+      38.2,
+      33.8,
+      27.6,
+      28.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Revenue generated from contracts with customers by Cricket Australia from financial year 2019 to 2023 (in million Australian dollars)",
+   "short": "Revenue from contracts with customers Cricket Australia FY 2019-2023",
+   "unit": "million Australian dollars",
+   "description": "The total revenue from contracts with customers made by Cricket Australia in the financial year 2023 was approximately 392 million Australian dollars. The total revenue from contracts with customers made by Cricket Australia has fluctuated in recent years.",
+   "note": "Australia; financial years 2019 to 2023",
+   "source": "cricket.com.au; Deloitte; PwC",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      479.6,
+      388.2,
+      398.3,
+      392,
+      422.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Share of adults who use technology for sports in Australia in financial year 2023, by type of technology",
+   "short": "Share of adults using tech for sports Australia 2023, by technology type",
+   "unit": "",
+   "description": "In the 2023 financial year, it was estimated that about 23 percent of adults who participated in sports used Wearable technology Australia. Apps for tracking activity or training were used by around 20 percent of Australians adults, and over six percent used Websites (not including social media sites) or online tools to work out.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years or older",
+   "source": "ASC; Clearinghouse Share of participants",
+   "kind": "categorical",
+   "categories": [
+    "Wearable technology such as Fitbit, watches, heart rate monitors",
+    "Apps for tracking activity or training",
+    "Websites (not including social media sites) or online tools",
+    "Free social media site/page such as Running Mums Australia or Urban Rec",
+    "Apps for maps and GPS technology",
+    "Apps for music",
+    "Watching/accompanying video sessions of physical activities/fitness/exercise",
+    "Play music/listen to headphones"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.23,
+      0.208,
+      0.068,
+      0.056,
+      0.053,
+      0.048,
+      0.041,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Total number of adults who use technology for sports in Australia in financial year 2023, by type of technology (in 1,000s)",
+   "short": "Number of adults using tech for sports Australia 2023, by technology type",
+   "unit": "1,000s",
+   "description": "In the 2023 financial year, it was estimated that about 4.4 million adults who participated in sports used wearable technology in Australia. WApps for tracking activity or training were also used by almost four million Australians.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years or older",
+   "source": "ASC; Clearinghouse Number of participants in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Wearable technology such as Fitbit, watches, heart rate monitors",
+    "Apps for tracking activity or training",
+    "Websites (not including social media sites) or online tools",
+    "Free social media site/page such as Running Mums Australia or Urban Rec",
+    "Apps for maps and GPS technology",
+    "Apps for music",
+    "Watching/accompanying video sessions of physical activities /fitness/ exercise",
+    "Play music/listen to headphones"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4414.5,
+      3993.4,
+      1304.2,
+      1075.4,
+      1012.4,
+      912.7,
+      785.2,
+      574.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Total number of adults using wearable technology for sports in Australia in financial year 2023, by age group (in 1,000s)",
+   "short": "Number of adults using wearable tech for sport Australia 2023, by age group",
+   "unit": "1,000s",
+   "description": "In the 2023 financial year, it was estimated that over one million adults aged between 25 and 34 years who participated in sports used wearable technology for sports. There were far fewer sports-wearables users in the over 65 and under 17 age groups.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years or older",
+   "source": "ASC; Clearinghouse",
+   "kind": "categorical",
+   "categories": [
+    "15-17",
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      140.1,
+      479.2,
+      1050.9,
+      963.5,
+      836.3,
+      543.4,
+      401.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Total number of adults using apps for tracking activity or training in Australia in financial year 2023, by age group (in 1,000s)",
+   "short": "Number of adults using tracking or training apps Australia 2023, by age group",
+   "unit": "1,000s",
+   "description": "In the 2023 financial year in Australia, it was estimated that over nine hundred thousand adults aged between 25 and 34 years who participated in sports used applications for tracking activity or training. In the over 65s age group, almost four hundred thousand people used apps for tracking their exercise.",
+   "note": "Australia; July 2022 to June 2023; 20,000 respondents; 15 years or older",
+   "source": "ASC; Clearinghouse",
+   "kind": "categorical",
+   "categories": [
+    "15-17",
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      181.6,
+      425.6,
+      943.1,
+      836.2,
+      711.3,
+      512.5,
+      383.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Fitness and health service online purchases in Australia as of March 2024",
+   "short": "Fitness and health service online purchases in Australia 2024",
+   "unit": "",
+   "description": "7 percent of Australian respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2024, among 2,027 consumers.",
+   "note": "Australia; April 2023 to March 2024; 2027 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Health tracking",
+    "Weight loss / healthy eating",
+    "Meditation / mindfulness / sleeping apps",
+    "Medication checkers / reminders",
+    "Contraception or fertility tracking (only shown to women)",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.07,
+      0.06,
+      0.06,
+      0.05,
+      0.04,
+      0.03,
+      0.89,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Fitness and health service purchases in Australia as of March 2024",
+   "short": "Fitness and health service purchases in Australia 2024",
+   "unit": "",
+   "description": "19 percent of Australian respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2024, among 2,027 consumers.",
+   "note": "Australia; April 2023 to March 2024; 2027 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Wellness services (e.g., massage)",
+    "Online services (website or apps)",
+    "Individual sports course / class",
+    "Personal trainer",
+    "Sports club membership",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.19,
+      0.12,
+      0.11,
+      0.08,
+      0.07,
+      0.07,
+      0.69,
+      0.01
+     ]
+    }
+   ]
+  }
+ ]
+}

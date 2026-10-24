@@ -1,0 +1,876 @@
+{
+ "studyId": "58615",
+ "study": "health functional food in south korea",
+ "file": "research/statista/study_id58615_health-functional-food-in-south-korea.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Size of the health functional food market in South Korea from 2015 to 2022 (in trillion South Korean won)",
+   "short": "Health functional food market size in South Korea 2015-2022",
+   "unit": "trillion South Korean won",
+   "description": "The market for health functional foods in South Korea amounted to approximately 5.36 trillion South Korean won in 2022. It has grown significantly over the years, more than doubling the value from around 2.23 trillion won in 2015. Health functional foods refers to specific products made by compacting elements that are beneficial to the human body into easily consumable packages. They are consumed for their promoted health benefits, such as improving eyesight, countering natural aging, [...]",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea); National Food Safety Information Service",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.23,
+      2.6,
+      2.7,
+      3.07,
+      3.73,
+      4.18,
+      5.06,
+      5.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Percentage of health functional food sales in GDP of manufacturing in South Korea from 2015 to 2021",
+   "short": "Health functional food sales ratio to GDP of manufacturing in South Korea 2015-2021",
+   "unit": "",
+   "description": "This statistic depicts the health functional food sales ratio to GDP of manufacturing in South Korea from 2015 to 2021. In 2021, health functional product sales accounted for 0.76 percent of the GDP of manufacturing in South Korea.",
+   "note": "South Korea; 2015 to 2021",
+   "source": "MFDS (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0043,
+      0.0049,
+      0.0047,
+      0.0052,
+      0.0061,
+      0.0069,
+      0.0076
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Value of health functional food produced in South Korea from 2015 to 2022 (in trillion South Korean won)",
+   "short": "Health functional food production value in South Korea 2015-2022",
+   "unit": "trillion South Korean won",
+   "description": "In 2022, the health functional food production value in South Korea amounted to approximately 2.81 trillion South Korean won, increased from 2.71 trillion in the previous year. Over the years, the value of the health functional food has been steadily on the rise.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea); National Food Safety Information Service",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.13,
+      1.47,
+      1.48,
+      1.73,
+      1.95,
+      2.26,
+      2.71,
+      2.81
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Value of health functional food exported from South Korea from 2015 to 2022 (in million U.S. dollars)",
+   "short": "Health functional food export value in South Korea 2015-2022",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, the export value of health functional food in South Korea amounted to around 215.22 million U.S. dollars, increased from about 201.49 million in the previous year. Over the years, the export value has been constantly on the rise.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea); National Food Safety Information Service",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      78.89,
+      93.42,
+      95.3,
+      114.33,
+      122.36,
+      191.89,
+      201.49,
+      215.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Value of health functional food imported into South Korea from 2015 to 2022 (in million U.S. dollars)",
+   "short": "Health functional food import value in South Korea 2015-2022",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, the import value of health functional food in South Korea amounted to around 1.16 billion U.S. dollars, slightly increased from about 1.1 million in the previous year. Over the years, the import value has been steadily on the rise.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea); National Food Safety Information Service",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      439.25,
+      505.45,
+      508.28,
+      610.97,
+      786.96,
+      912.14,
+      1098.61,
+      1161.78
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Leading health functional food companies in South Korea in 2022. by sales revenue (in billion South Korean won)",
+   "short": "Leading health functional food companies South Korea 2022, by sales",
+   "unit": "billion South Korean won",
+   "description": "Korea Ginseng Corporation (both the Wonju and Buyeo plant) and ChongKunDang Healthcare corp. were the leading manufacturers of health functional foods in South Korea in 2022. Together, the two Korea Ginseng Corporations generated more than 800 billion South Korean won in sales.",
+   "note": "South Korea; 2022",
+   "source": "MFDS (South Korea) Sales revenue in billion South Korean won",
+   "kind": "categorical",
+   "categories": [
+    "Korea Ginseng corp. (Wonju plant)",
+    "Korea Ginseng corp. (Buyeo plant)",
+    "ChongKunDang Healthcare corp.",
+    "KolmarBNH Co., Ltd.",
+    "Korea Yakult Co., Ltd. (Cheonan plant)",
+    "Korea Yakult Co., Ltd. (Pyeongtaek plant)",
+    "Suheung Co., Ltd.",
+    "Novarex Co., Ltd. 2nd factory",
+    "Ildong Foodis Co.,Ltd.",
+    "Cosmaxbio"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      497.28,
+      273.48,
+      257.48,
+      205.78,
+      200.7,
+      180.51,
+      148.75,
+      148.74,
+      133.28,
+      123.54
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of business establishments manufacturing health functional foods in South Korea from 2006 to 2022",
+   "short": "Health functional food manufacturer number in South Korea 2006-2022",
+   "unit": "",
+   "description": "In 2022, there were 566 health functional food manufacturers in South Korea, up from 539 in the previous year. Over the years, the number of health functional food manufacturers has steadily increased.",
+   "note": "South Korea; 2006 to 2022",
+   "source": "MFDS (South Korea); National Food Safety Information Service",
+   "kind": "timeseries",
+   "categories": [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      337,
+      345,
+      356,
+      385,
+      397,
+      424,
+      435,
+      449,
+      460,
+      487,
+      487,
+      496,
+      500,
+      508,
+      521,
+      539,
+      566
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Number of establishments specialized in manufacturing health functional foods in South Korea from 2006 to 2022",
+   "short": "Health food specialized manufacturer number in South Korea 2006-2022",
+   "unit": "",
+   "description": "In 2022, there were 489 manufacturers specialized in health functional foods in South Korea, up from 462 in the previous year. Over the years, the number of health food specialized manufacturers has steadily increased.",
+   "note": "South Korea; 2006 to 2022",
+   "source": "MFDS (South Korea); National Food Safety Information Service",
+   "kind": "timeseries",
+   "categories": [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      313,
+      319,
+      328,
+      349,
+      361,
+      386,
+      396,
+      407,
+      414,
+      434,
+      433,
+      439,
+      439,
+      443,
+      454,
+      462,
+      489
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Number of start-ups manufacturing health functional foods in South Korea from 2011 to 2022",
+   "short": "Health food manufacturing venture number in South Korea 2011-2022",
+   "unit": "",
+   "description": "In 2022, there were 77 venture companies manufacturing health functional foods in South Korea. This was the same amount as the previous year. Overall, the number of start-ups manufacturing health functional foods has been increasing since 2011.",
+   "note": "South Korea; 2011 to 2022",
+   "source": "MFDS (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      38,
+      39,
+      42,
+      46,
+      53,
+      54,
+      57,
+      61,
+      65,
+      67,
+      77,
+      77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Number of good manufacturing practice establishments producing health functional foods in South Korea from 2011 to 2020",
+   "short": "Health food GMP establishment number in South Korea 2011-2020",
+   "unit": "",
+   "description": "In 2020, there were 393 health food manufacturers that conformed to the GMP (good manufacturing practice) standards in South Korea. This was an increase from the previous year, when figures stood at 320.",
+   "note": "South Korea; 2011 to 2020",
+   "source": "MFDS (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      164,
+      185,
+      198,
+      208,
+      216,
+      225,
+      247,
+      281,
+      320,
+      393
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Total sales value of the South Korean health functional foods market from 2014 to 2022 (in trillion South Korean won)",
+   "short": "Health functional foods total sales value South Korea 2014-2022",
+   "unit": "trillion South Korean won",
+   "description": "In 2022, the South Korean health functional foods market recorded sales of approximately 4.17 trillion South Korean won, an increase from the previous year. Figures have continuously increased on a yearly basis since 2014.",
+   "note": "South Korea; 2014 to 2022; domestic sales and exports included",
+   "source": "MFDS (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.63,
+      1.82,
+      2.13,
+      2.24,
+      2.52,
+      2.95,
+      3.33,
+      4.03,
+      4.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Domestic sales value of health functional foods in South Korea from 2015 to 2022 (in trillion South Korean won)",
+   "short": "Health functional foods domestic sales value in South Korea 2015-2022",
+   "unit": "trillion South Korean won",
+   "description": "In 2022, around 3.89 trillion South Korea won of health functional foods were sold within the country, a slight increase compared to the previous year. The sales value of health functional foods has been increasing since 2015.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.73,
+      2.02,
+      2.13,
+      2.4,
+      2.81,
+      3.1,
+      3.8,
+      3.89
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Sales revenue of health functional products sold the most in South Korea in 2022, by type (in billion South Korean won)",
+   "short": "Health functional food bestseller sales revenue in South Korea 2022, by type",
+   "unit": "billion South Korean won",
+   "description": "In 2022, Korean red ginseng products were the most popular health products with the sales revenue of approximately 985 billion South Korean won. It was followed by approved ingredients and probiotics, with around 851 billion won and around 697 billion won, respectively.",
+   "note": "South Korea; 2022; * According to the Ministry of Food and Drug Safety, approved ingredients, unlike notified ingredients, are the type of ingredients that be used for meal or replace conventional food and are approved by the Ministry of [...] Read more",
+   "source": "MFDS (South Korea); National Food Safety Information Service Sales revenue in billion South Korean won",
+   "kind": "categorical",
+   "categories": [
+    "Korean red ginseng",
+    "Approved ingredients*",
+    "Probiotics",
+    "Vitamins and minerals",
+    "Fat/oil with EPA and DHA",
+    "Protein",
+    "Methylsulfonylmethane (MSM)",
+    "Milk thistle extract",
+    "Garcinia cambogia extract",
+    "Electronic fiber"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      984.8,
+      851.1,
+      697.7,
+      460.6,
+      281.9,
+      170.1,
+      69.4,
+      61.8,
+      56.2,
+      48.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Sales value of red ginseng products in South Korea from 2015 to 2022 (in billion South Korean won)",
+   "short": "Red ginseng products sales value South Korea 2015-2022",
+   "unit": "billion South Korean won",
+   "description": "In 2022, the sales value of red ginseng products in South Korea amounted to around 984 billion South Korean won, a slight decrease compared to the previous year. That year, red ginseng accounted for around 23.6 percent of the total sales value of health functional food.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      694.3,
+      990,
+      1035.8,
+      1109.6,
+      1059.8,
+      1060.89,
+      1047.2,
+      984.82
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Sales value of probiotic products in South Korea from 2015 to 2022 (in billion South Korean won)",
+   "short": "Probiotics sales value South Korea 2015-2022",
+   "unit": "billion South Korean won",
+   "description": "In 2022, the sales value of probiotic products in South Korea amounted to over 697 billion South Korean won. That year, probiotics accounted for around 16.7 percent of the total sales value of health functional food.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea); Shinhan Investment",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      157.9,
+      190.3,
+      217.4,
+      299.4,
+      459.4,
+      525.63,
+      767.69,
+      697.74
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Sales value of vitamins and minerals in South Korea from 2015 to 2022 (in billion South Korean won)",
+   "short": "Vitamins and minerals sales value South Korea 2015-2022",
+   "unit": "billion South Korean won",
+   "description": "In 2022, the sales value of vitamins and minerals in South Korea amounted to over 460 billion South Korean won. That year, vitamins and minerals accounted for around 11 percent of the total sales value of health functional food.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "MFDS (South Korea); Shinhan Investment",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      207.9,
+      184.3,
+      225.9,
+      248.4,
+      270.1,
+      298.85,
+      335.41,
+      460.56
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Share of households that purchased health functional food in South Korea from 2016 to 2023",
+   "short": "Share of households who bought health functional food South Korea 2016-2023",
+   "unit": "",
+   "description": "According to a survey on consumer behavior for health functional food in South Korea, around 81.2 percent of households purchased health functional food in 2023. The share of health supplements purchasing households has steadily increased during the last years.",
+   "note": "South Korea; 2016 to July 2023; 6,700 households; households in the whole country, excepting Jeju",
+   "source": "KHSA",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.653,
+      0.716,
+      0.762,
+      0.785,
+      0.789,
+      0.811,
+      0.826,
+      0.812
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of people who consumed dietary supplements or nutraceuticals in South Korea as of March 2022",
+   "short": "Share of people who consumed dietary supplements South Korea 2022",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on dietary supplements in South Korea conducted in March 2022, around 78.6 percent of the respondents stated that they took dietary supplements. The majority of the respondents answered that they took dietary supplements every day.",
+   "note": "South Korea; March 10 to 31, 2022; 8,375 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No",
+    "I don't know what they are"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7858,
+      0.2032,
+      0.011
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Average expenditure on health functional foods per year in South Korea as of February 2023, by gender (in South Korean won)",
+   "short": "Health functional food purchase average value per year in South Korea 2023, by gender",
+   "unit": "South Korean won",
+   "description": "According to a survey conducted in February 2023 among South Koreans who had purchased or consumed health functional food during the last year, 42 percent of male respondents answered to spend below two hundred thousand South Korean won on average on health functional food in a year. Overall, women tended to spend more money on such products than men.",
+   "note": "South Korea; February 14 to 17, 2023; 581 respondents; 20-59 years; people who bought or consumed health functional food during the last year",
+   "source": "MezzoMedia",
+   "kind": "categorical",
+   "categories": [
+    "Below 200,000",
+    "200,000-400,000",
+    "400,000-600,000",
+    "600,000-800,000",
+    "800,000-1,000,000",
+    "Over 1,000,000"
+   ],
+   "series": [
+    {
+     "name": "Men",
+     "values": [
+      0.42,
+      0.27,
+      0.14,
+      0.03,
+      0.02,
+      0.13
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.33,
+      0.32,
+      0.16,
+      0.04,
+      0.02,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Average expenditure on health functional foods per purchase in South Korea as of April 2021, by gender (in South Korean won)",
+   "short": "Health functional food value per purchase in South Korea 2021, by gender",
+   "unit": "South Korean won",
+   "description": "According to a survey among South Koreans who had purchased or consumed health functional food during the last year in April 2021, 46 percent of female respondents answered to spend around 30 to 60 thousand South Korean won per purchase on health functional food. Overall, women tended to spend more money per purchase than men.",
+   "note": "South Korea; April 2 to 8, 2021; 515 respondents; 19-49 years; people who bought or consumed health functional food during the last year",
+   "source": "MezzoMedia",
+   "kind": "categorical",
+   "categories": [
+    "Below 10,000",
+    "10,000-30,000",
+    "30,000-60,000",
+    "60,000-100,000",
+    "Over 100,000"
+   ],
+   "series": [
+    {
+     "name": "Men",
+     "values": [
+      0.04,
+      0.12,
+      0.43,
+      0.26,
+      0.15
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.01,
+      0.06,
+      0.46,
+      0.3,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Sales channels to purchase health functional products in South Korea as of February 2023",
+   "short": "Health functional food purchase channel in South Korea 2023",
+   "unit": "",
+   "description": "According to a survey among consumers of health functional food in South Korea in 2023 on their preferred purchase location, 47 percent of respondents stated to buy health functional products via open markets. Overall, shopping for health functional foods online was the most popular.",
+   "note": "South Korea; February 14 to17, 2023; 581 respondents; 20-59 years; people who bought or consumed health functional food during the last year",
+   "source": "MezzoMedia Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Open markets",
+    "Portal site",
+    "Online general shopping mall",
+    "Large supermarkets",
+    "TV Shopping",
+    "Overseas direct purchase site",
+    "Warehouse-type discount stores",
+    "Specialty store",
+    "Large supermarkets online mall"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.47,
+      0.41,
+      0.23,
+      0.19,
+      0.18,
+      0.17,
+      0.14,
+      0.13,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Frequency of health functional food purchases in South Korea as of February 2023",
+   "short": "Frequency of buying health functional food South Korea 2023",
+   "unit": "",
+   "description": "According to a survey conducted in February 2023 among South Koreans who purchased or consumed health functional foods on their frequency of these products, around 36 percent of respondents answered to buy them around once every three months. The least prevalent frequency to buy health functional foods was less than once a year, with only two percent of respondents answering that way.",
+   "note": "South Korea; February 14 to 17, 2023; 581 respondents; 20-59 years; people who bought or consumed health functional food during the last year",
+   "source": "MezzoMedia",
+   "kind": "categorical",
+   "categories": [
+    "Once a month or more",
+    "Once every two months",
+    "Once every three months",
+    "Once every six months",
+    "Once a year",
+    "Less than once a year"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1,
+      0.24,
+      0.36,
+      0.23,
+      0.06,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Reasons for South Koreans to consume health functional products as of July 2022",
+   "short": "Health functional food intake reasons South Korea 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Opensurvey in July 2022 in South Korea, roughly 69 percent of respondents consumed health functional food for health maintenance and improvement. Improving immunity was another leading source of motivation from taking such products with around 68 percent of respondents answering that way.",
+   "note": "South Korea; July 23, 2022; 722 respondents; 20-69 years; those that currently consume health functional food",
+   "source": "Opensurvey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Health maintenance and improvement",
+    "Improve immunity",
+    "Fatigue recovery",
+    "Eye health management",
+    "Anti-aging",
+    "Bone/joint management",
+    "Diet/Body fat reduction",
+    "Psychological relaxation via consumption",
+    "Muscle mass management",
+    "Blood suger management",
+    "Cure/treatment",
+    "Skin care"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.691,
+      0.679,
+      0.508,
+      0.283,
+      0.245,
+      0.23,
+      0.148,
+      0.139,
+      0.107,
+      0.105,
+      0.084,
+      0.082
+     ]
+    }
+   ]
+  }
+ ]
+}

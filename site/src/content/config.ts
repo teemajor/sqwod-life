@@ -143,6 +143,16 @@ const articles = defineCollection({
     // series.low/high are OPTIONAL estimate bands (firms disagree) — only render when present; never fabricated.
     series: z.object({ label: z.string(), unit: z.string().optional(), points: z.array(z.number()), years: z.array(z.string()).optional(), low: z.array(z.number()).optional(), high: z.array(z.number()).optional() }).optional(),
     playbook: z.array(z.object({ move: z.string(), why: z.string() })).default([]),  // "what this means for you" — operator actions
+    // Flagship reports: many charts, each straight from the Statista chart bank (automation/intelligence-charts).
+    // `categories` = x-axis labels (years or names); `series` = one or more named value rows. Interactive on the
+    // page (hover, series toggle) with a plain table underneath so search engines read the numbers too.
+    charts: z.array(z.object({
+      label: z.string(), unit: z.string().optional(),
+      kind: z.enum(['timeseries', 'categorical']).default('timeseries'),
+      categories: z.array(z.string()),
+      series: z.array(z.object({ name: z.string().default(''), points: z.array(z.number().nullable()) })).min(1),
+      note: z.string().optional(), source: z.string().optional(), url: z.string().optional(),
+    })).default([]),
     // "Where do you stand" benchmark — reader compares their own number vs. sourced bands. Real data only.
     benchmark: z.object({
       label: z.string(),

@@ -1,0 +1,1024 @@
+{
+ "studyId": "105913",
+ "study": "social media marketing in the united states",
+ "file": "research/statista/Fitness Marketing/study_id105913_social-media-marketing-in-the-united-states.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the social media advertising market in the United States from 2019 to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the social media advertising industry in the U.S. 2019-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The ad spending in the 'Social Media Advertising' segment of the digital advertising market in the United States was forecast to continuously increase between 2023 and 2028 by in total 15.8 billion U.S. dollars (+21.84 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 88.08 billion U.S. dollars and therefore a new peak in 2028. Notably, the ad spending of the 'Social Media Advertising' segment of the digital advertising market was continuously [...]",
+   "note": "United States; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      38.44,
+      49.13,
+      63.14,
+      66.65,
+      72.33,
+      76.4,
+      79.66,
+      82.53,
+      85.31,
+      88.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Revenue growth of social media advertising in the United States from 2019 to 2028",
+   "short": "Revenue growth of social media advertising in the U.S. 2019-2028",
+   "unit": "",
+   "description": "The ad spending growth in the 'Social Media Advertising' segment of the digital advertising market in the United States was forecast to continuously decrease between 2023 and 2028 by in total 5.3 percentage points. After the fifth consecutive decreasing year, the indicator is estimated to reach 3.25 percent and therefore a new minimum in 2028.",
+   "note": "United States; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2976,
+      0.2781,
+      0.2852,
+      0.0555,
+      0.0853,
+      0.0562,
+      0.0427,
+      0.036,
+      0.0336,
+      0.0325
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Ad spending per internet user of the social media advertising market in the United States from 2019 to 2028 (in U.S. dollars)",
+   "short": "Ad spending per internet user of social media advertising in the U.S. 2019-2028",
+   "unit": "U.S. dollars",
+   "description": "The average ad spending per internet user in the 'Social Media Advertising' segment of the digital advertising market in the United States was forecast to continuously increase between 2023 and 2028 by in total 33.4 U.S. dollars (+14.41 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 265.17 U.S. dollars and therefore a new peak in 2028. Notably, the average ad spending per internet user of the 'Social Media Advertising' segment of the digital [...]",
+   "note": "United States; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      132.33,
+      165.34,
+      208.89,
+      216.85,
+      231.76,
+      241.34,
+      248.34,
+      254.13,
+      259.65,
+      265.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Mobile advertising spending in the United States from 2027 to 2028, by format (in billion U.S. dollars)",
+   "short": "Mobile ad spend in the U.S. 2027-2028, by format",
+   "unit": "billion U.S. dollars",
+   "description": "Comparing the four different segments for the year 2028, the segment 'Search Advertising Mobile' is forecast to lead the ranking with 123.59 billion U.S. dollars. Contrastingly, 'Influencer Advertising Mobile' is estimated to rank last, with 7.02 billion U.S. dollars. Their difference, compared to Search Advertising Mobile, lies at 116.57 billion U.S. dollars.",
+   "note": "United States; 2027 to 2028",
+   "source": "Statista Digital Market Insights",
+   "kind": "categorical",
+   "categories": [
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Search Advertising Mobile",
+     "values": [
+      113.23,
+      123.59
+     ]
+    },
+    {
+     "name": "Video Advertising Mobile",
+     "values": [
+      82.15,
+      89.73
+     ]
+    },
+    {
+     "name": "Banner Advertising Mobile",
+     "values": [
+      60.72,
+      63.78
+     ]
+    },
+    {
+     "name": "Influencer Advertising Mobile",
+     "values": [
+      6.46,
+      7.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Share of media budgets devoted to digital according to marketers in the United States in 2024, by format",
+   "short": "Share of digital in media budgets in the U.S. 2024, by format",
+   "unit": "",
+   "description": "During a survey carried out between October and November 2023 among brand and agency decision-makers in the United States, it was found that on average, respondents were planning to devote 78.4 percent of their media budgets to digital media. Podcasts were expected to account for 3.8 percent, on average.",
+   "note": "United States; October 20 to November 9, 2023; 203 respondents; among brand and agency media planners and buyers, as well as C-level employees, managers, and juniors; * Figure for \"total digital\" calculaed by Statista based on data [...] Read more",
+   "source": "IAB (U.S.); Statista",
+   "kind": "categorical",
+   "categories": [
+    "Total digital*",
+    "Digital video**",
+    "Paid search (SEM)",
+    "Social media",
+    "Digital display",
+    "Digital out-of-home (DOOH)",
+    "Podcasts",
+    "Digital audio***",
+    "Gaming"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.784,
+      0.226,
+      0.155,
+      0.153,
+      0.126,
+      0.038,
+      0.038,
+      0.036,
+      0.013
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Share of marketing budgets devoted to social media marketing according to CMOs in the United States from 2015 to 2024",
+   "short": "U.S. businesses social media marketing budget share 2015-2024",
+   "unit": "",
+   "description": "In a survey conducted in March 2023, responding marketers in the United States indicated that 17 percent of their marketing budget was devoted to social media marketing. This figure saw a spike in 2020 during the coronavirus pandemic outbreak and fell roughly nine percentage points the next year.",
+   "note": "United States; 2015 to 2023; 314**; among marketers from for-profit companies; * Forecast. ** Sample size provided refers only to the 2023 survey. Read more",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey",
+   "kind": "timeseries",
+   "categories": [
+    "February 2015",
+    "February 2016",
+    "February 2017",
+    "February 2018",
+    "February 2019",
+    "February 2020",
+    "June 2020",
+    "February 2021",
+    "August 2021",
+    "February 2022",
+    "September 2022",
+    "March 2023",
+    "March 2024*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.099,
+      0.106,
+      0.105,
+      0.12,
+      0.114,
+      0.133,
+      0.232,
+      0.149,
+      0.153,
+      0.154,
+      0.145,
+      0.17,
+      0.203
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Share of marketing budgets devoted to social media marketing according to CMOs in the United States as of February 2023, by primary economic sector",
+   "short": "U.S. businesses social media marketing budget share 2023, by sector",
+   "unit": "",
+   "description": "During a survey conducted among marketing professionals from the United States in early 2023, the average share of marketing budget invested in mobile activities among B2C product marketers stood at 22.2 percent, whereas for B2B products at 14.6 percent.",
+   "note": "United States; January 10 to February 1, 2023; 314 respondents; among marketers from for-profit companies",
+   "source": "American Marketing Association; Deloitte; Duke University; The CMO Survey; Wall Street Journal",
+   "kind": "categorical",
+   "categories": [
+    "B2B product",
+    "B2B services",
+    "B2C product",
+    "B2C services"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.146,
+      0.142,
+      0.222,
+      0.196
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Most used social media platforms by type in the U.S. as of December 2023",
+   "short": "Most used social media platforms by type in the U.S. 2023",
+   "unit": "",
+   "description": "65 percent of U.S. respondents answer our survey on \"Most used social media platforms by type\" with \"Social networks (e.g., Facebook)\". The survey was conducted in 2023, among 60,267 consumers.",
+   "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Social networks (e.g., Facebook)",
+    "Media sharing (e.g., Snapchat, Instagram, YouTube, Pinterest)",
+    "Instant messengers (e.g., WhatsApp, Facebook Messenger, WeChat)",
+    "(Micro-)blogging (e.g., Twitter, Tumblr, WordPress)",
+    "Business networks (e.g., LinkedIn)",
+    "Discussion forums (e.g., Reddit, Quora)",
+    "Consumer review networks (e.g., Yelp, TripAdvisor)",
+    "I do not use social media regularly",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.58,
+      0.54,
+      0.24,
+      0.2,
+      0.18,
+      0.15,
+      0.08,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Influencer marketing spending and social advertising spending growth in the United States from 2019 to 2025",
+   "short": "Influencer marketing spend and social ad spend growth in the U.S. 2023",
+   "unit": "",
+   "description": "According to a forecast from July 2023, influencer marketing spending in the United States will grow more than three times faster than social ad spend in 2023, and it will continue growing gradually with around 14 percent from year to year until 2025.",
+   "note": "United States; 2019 to 2022",
+   "source": "eMarketer; Insider Intelligence; X (Twitter)",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "series": [
+    {
+     "name": "Influencer marketing spending growth",
+     "values": [
+      0.264,
+      0.169,
+      0.328,
+      0.203,
+      0.14,
+      0.147,
+      0.143
+     ]
+    },
+    {
+     "name": "Social ad spending growth",
+     "values": [
+      0.288,
+      0.249,
+      0.379,
+      0.051,
+      0.041,
+      0.096,
+      0.097
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Share of content creators in the United States October who will be increasing vs. reducing their social commerce time investment as of October 2023",
+   "short": "Investment changes in social commerce planned by U.S. creators 2023",
+   "unit": "",
+   "description": "Based on a survey conducted in late 2023, the majority of content creators in the United States were planning to increase significantly the time they spent on social commerce in the upcoming months, with almost 61 percent of respondents stating that. Only close to five percent were planning to reduce their time investment into social commerce.",
+   "note": "United States; October 2023; 500 content creators; U.S. creators with an average of 186k followers on TikTok, YouTube, and Instagram, with 90 percent falling in the age range of 18 to 44",
+   "source": "The Influencer Marketing Factory Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Yes, I plan to significantly increase the time I spend on social commerce in the future",
+    "Yes, I might allocate more time to social commerce, but it won't be a siginificant increase",
+    "No, I plan to maintain the same level of time investment in social commerce as I do now",
+    "No, I plan to reduce the time I spend on social commerce activities in the future"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.608,
+      0.246,
+      0.1,
+      0.046
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Content creators' social commerce earnings via affiliate programs in the United States October 2023 (in U.S. dollars)",
+   "short": "Social commerce earnings of U.S. creators 2023",
+   "unit": "U.S. dollars",
+   "description": "Based on a survey conducted in late 2023, nearly a quarter of content creators in the United States earned between 100 and 500 U.S. dollars via social commerce affiliate programs. As equal shared earned ten thousand U.S. dollars of more.",
+   "note": "United States; October 2023; 500 content creators; U.S. creators with an average of 186k followers on TikTok, YouTube, and Instagram, with 90 percent falling in the age range of 18 to 44",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "0-100",
+    "100-500",
+    "500-1,000",
+    "1,000-5,000",
+    "5,000-10,000",
+    "10,000+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.084,
+      0.234,
+      0.131,
+      0.28,
+      0.037,
+      0.234
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Sponsored content types shared by creators from the United States as of June 2023",
+   "short": "Sponsored content types shared by creators from the U.S. 2023",
+   "unit": "",
+   "description": "During a June 2023 survey among content creators from the United States, 98.4 percent of survey participants mentioned using Instagram feed posts for sharing their sponsored content. Instagram Stories and Reels came next, each with around 98 percent, while 89.6 percent of creators also used TikTok videos to promote their sponsored content.",
+   "note": "United States; June 2023; 689 respondents; 18 years and older; U.S. content creators",
+   "source": "Insider Intelligence; Mavrck; X (Twitter) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Instagram feed posts",
+    "Instagram Stories",
+    "Instagram Reel",
+    "TikTok video",
+    "Instagram Live",
+    "Facebook post",
+    "Youtube Short",
+    "Blog post",
+    "YouTube video",
+    "Printerest Pin",
+    "Tweet",
+    "Lemon8",
+    "Snapchat",
+    "LinkedIn",
+    "Podcast"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.984,
+      0.981,
+      0.98,
+      0.896,
+      0.691,
+      0.689,
+      0.626,
+      0.595,
+      0.589,
+      0.543,
+      0.459,
+      0.339,
+      0.309,
+      0.296,
+      0.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Reasons why content creators in the United States are not selling products/services on social media as of October 2023",
+   "short": "Reasons why U.S. creators do not sell products/services on social media 2023",
+   "unit": "",
+   "description": "Based on a survey conducted in late 2023, the majority (43.3 percent) of content creators in the United States who did not plan on selling a product/service in the future, stated that the lack of knowledge about social commerce and affiliate programs was the main reason for that. Lack of time came as a second reason, with 27.8 percent of U.S. creators pointing towards it.",
+   "note": "United States; October 2023; 500 content creators; U.S. creators with an average of 186k followers on TikTok, YouTube, and Instagram, with 90 percent falling in the age range of 18 to 44",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "Lack of knowledge about social commerce and affiliate programs",
+    "Lack of time",
+    "Early stage and prefer to wait",
+    "No storage space"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.433,
+      0.278,
+      0.241,
+      0.048
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Marketing purposes for which professionals are using generative artificial intelligence (AI) in the United States as of March 2023",
+   "short": "Leading marketing purposes of generative AI in the U.S. 2023",
+   "unit": "",
+   "description": "In a survey conducted in the United States in March 2023, 44 percent of marketers said that they used generative artificial intelligence (AI) for the creation of e-mail copy. Another 42 percent of marketers used this type of software for social media copy purposes.",
+   "note": "United States; March 2023; 1,000 respondents; B2B and B2C marketing professionals, three-quarters of them were from companies with 100 or more employees",
+   "source": "Botco.ai; MarTech Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "E-mail copy",
+    "Social media copy",
+    "Social media images",
+    "Chatbots for customers",
+    "Website images",
+    "SEO content",
+    "Blog posts",
+    "Marketing/sales collateral"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.44,
+      0.42,
+      0.39,
+      0.37,
+      0.36,
+      0.35,
+      0.33,
+      0.33
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Leading generative artificial intelligence (AI) tools used for marketing purposes by professionals in the United States as of March 2023",
+   "short": "Leading generative AI tools used for marketing purposes in the U.S. 2023",
+   "unit": "",
+   "description": "In a survey conducted in the United States in March 2023, 55 percent of marketers said that they use ChatGPT for the their marketing purposes. Another 42 percent of marketers used Copy.ai - a natural language processing software that produces product descriptions and social media content - for the same reasons.",
+   "note": "United States; March 2023; 1,000 respondents; B2B and B2C marketing professionals, three-quarters of them were from companies with 100 or more employees",
+   "source": "Botco.ai",
+   "kind": "categorical",
+   "categories": [
+    "ChatGPT",
+    "Copy,ai",
+    "Jasper,ai",
+    "Peppertype.ai",
+    "Lensa",
+    "DALL-E",
+    "MidJourney"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.55,
+      0.42,
+      0.36,
+      0.29,
+      0.28,
+      0.25,
+      0.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Main ways in which creators in the United States utilized artificial intelligence (AI) as of April 2023",
+   "short": "Top ways for creators using AI in the U.S. 2023",
+   "unit": "",
+   "description": "In 2023, according to the results of a survey conducted among creators based in the United States, 21 percent of them used artificial intelligence (AI) for editing content purposes. Another 21 percent used it for generating images or videos. Five percent and a half of U.S. creators stated that they did not use AI.",
+   "note": "United States; April 2023; 660 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Editing content",
+    "Generating images/videos",
+    "Generating text/captions for accessibility",
+    "Brainstorming/researching content",
+    "Outlining e-mails",
+    "Designing graphics",
+    "I don't use AI"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.21,
+      0.209,
+      0.19,
+      0.15,
+      0.101,
+      0.085,
+      0.055
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Consumer support to brands using artificial intelligence (AI) for selected activities in the United States as of March 2024",
+   "short": "Consumer support to brands using AI for selected activities in the U.S. 2024",
+   "unit": "",
+   "description": "According to a survey conducted among adult consumers in the United States in March 2024, 60 percent of respondents said they supported brands using artificial intelligence (AI) to create ads or content. The same share of respondents supported AI-powered product and service design.",
+   "note": "United States; March 6, 2024; 1,000 respondents; 18 years and older",
+   "source": "Dentsu; Toluna Corporate",
+   "kind": "categorical",
+   "categories": [
+    "Create ads or content",
+    "Design products or services",
+    "Offer personalized recommendations",
+    "Offer customer service support"
+   ],
+   "series": [
+    {
+     "name": "Support",
+     "values": [
+      0.6,
+      0.6,
+      0.53,
+      0.53
+     ]
+    },
+    {
+     "name": "Neutral",
+     "values": [
+      0.16,
+      0.16,
+      0.18,
+      0.15
+     ]
+    },
+    {
+     "name": "Oppose",
+     "values": [
+      0.24,
+      0.24,
+      0.29,
+      0.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Consumer support to brands using artificial intelligence (AI) to create ads or content in the United States in 2023 and 2024, by generation",
+   "short": "Support to brands using AI to create ads/content in the U.S. 2023-2024, by generation",
+   "unit": "",
+   "description": "During a March 2024 survey conducted among adult consumers in the United States, 73 percent of Millennial respondents said they supported brands using artificial intelligence (AI) to create ads or content – the same share recorded among that age group a year earlier. Meanwhile, Gen Zers' support for AI-powered ads and brand content grew by four percentage points to 63 percent in 2024.",
+   "note": "United States; March 15, 2023, and March 6, 2024; 1,000 respondents; 18 years and older",
+   "source": "Dentsu; Toluna Corporate",
+   "kind": "categorical",
+   "categories": [
+    "Generation Z",
+    "Millennials",
+    "Generation X",
+    "Baby boomers"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.59,
+      0.73,
+      0.58,
+      0.43
+     ]
+    },
+    {
+     "name": "2024",
+     "values": [
+      0.63,
+      0.73,
+      0.6,
+      0.44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Consumer trust levels towards influencer content generated by artificial intelligence (AI) in the United States as of February 2023",
+   "short": "Consumer trust levels towards AI-generated influencer content in the U.S. 2023",
+   "unit": "",
+   "description": "According to a survey conducted in February 2023, 34 percent of consumers in the United States trusted influencer content generated by artificial intelligence (AI) the same amount as they trusted content generated by human influencers themselves. Another 22 percent of U.S. consumers distrusted the same type of content a little more than the human-generated one.",
+   "note": "United States; February 16, 2023; 18 years and older",
+   "source": "Business Insider; Ipsos Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Trust the same amount",
+    "Distrust a little more",
+    "Distrust a great deal",
+    "Don't know",
+    "Trust a little more",
+    "Trust a great deal more"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.34,
+      0.22,
+      0.17,
+      0.14,
+      0.09,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Reach of social media advertising in the United States as of January 2024, by platform",
+   "short": "Social media ad reach in the United States 2024, by platform",
+   "unit": "",
+   "description": "As of early 2024, advertising on LinkedIn had the highest reach in the United States among the presented social networks, with 82.2 percent. YouTube and Facebook followed, with 77.4 and 71.3 percent, respectively.",
+   "note": "United States; as of January 2024; 18 years and older",
+   "source": "DataReportal; Kepios; Meltwater; Various sources; We Are Social Share of adult population reached",
+   "kind": "categorical",
+   "categories": [
+    "LinkedIn",
+    "YouTube",
+    "Facebook",
+    "Instagram",
+    "TikTok",
+    "X (formerly Twitter)",
+    "Snapchat"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.822,
+      0.774,
+      0.713,
+      0.605,
+      0.553,
+      0.365,
+      0.338
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Reach of social media advertising in the United States as of January 2024, by platform and gender",
+   "short": "Social media ad reach in the United States 2024, by platform & gender",
+   "unit": "",
+   "description": "As of early 2024, among the presented social networks, advertising on YouTube had the highest reach in the United States, both among women and men, with 77.7 and 77 percent, respectively. On average, YouTube advertising reached 77.4 percent of U.S. adults.",
+   "note": "United States; as of January 2024; 18 years and older",
+   "source": "DataReportal; Kepios; Meltwater; Various sources; We Are Social Share of adult population reached",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Facebook",
+    "LinkedIn",
+    "Instagram",
+    "TikTok",
+    "Snapchat",
+    "X (formerly Twitter)"
+   ],
+   "series": [
+    {
+     "name": "Men",
+     "values": [
+      0.77,
+      0.668,
+      0.762,
+      0.541,
+      0.514,
+      0.309,
+      0.469
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.777,
+      0.746,
+      0.733,
+      0.65,
+      0.591,
+      0.363,
+      0.264
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Most popular reasons for internet users in the United States to use social media as of 3rd quarter 2023",
+   "short": "U.S. leading social media usage reasons 2023",
+   "unit": "",
+   "description": "As of the third quarter of 2023, the most popular reason for using social media according to users in the United States was to keep in touch with family and friends, with almost 59 percent of respondents choosing this as their leading reason. Overall, 40.9 percent of internet users in the U.S. said that they used social media to fill their spare time, and 31.9 percent said they used it to find content. Live streams, following sports, and making new contacts were other popular reasons for using [...]",
+   "note": "United States; Q3 2023; 16-64 years; Internet users",
+   "source": "DataReportal; GWI; Meltwater; We Are Social Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Keeping in touch with family and friends",
+    "Filling spare time",
+    "Finding content (e.g. videos)",
+    "Seeing what's being talked about",
+    "Reading news stories",
+    "Finding inspiration for things to do and buy",
+    "Posting about your life",
+    "Finding like-minded communities",
+    "Watching live streams",
+    "Seeing content from brands",
+    "Sharing and discussing opinions",
+    "Watching or following sports",
+    "Finding products to purchase",
+    "Avoiding missing out (FOMO)",
+    "Following celebrities or influencers"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.588,
+      0.409,
+      0.319,
+      0.282,
+      0.277,
+      0.27,
+      0.248,
+      0.219,
+      0.203,
+      0.197,
+      0.197,
+      0.195,
+      0.192,
+      0.187,
+      0.167
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Most common social media activities in the U.S. as of December 2023",
+   "short": "Most common social media activities in the U.S. 2023",
+   "unit": "",
+   "description": "\"Liked posts by other users\" and \"Commented on posts\" are the top two answers among U.S. consumers in our survey on the subject of \"Most common social media activities\".",
+   "note": "United States; January to December 2023; 60267 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Liked posts by other users",
+    "Commented on posts",
+    "Sent private messages",
+    "Followed people",
+    "Posted pictures / videos",
+    "Shared posts by other users",
+    "Posted texts / status updates",
+    "Liked company posts",
+    "Followed companies",
+    "Shared company posts",
+    "I have only used social media passively",
+    "I haven't used social media"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.53,
+      0.48,
+      0.48,
+      0.44,
+      0.42,
+      0.36,
+      0.33,
+      0.27,
+      0.23,
+      0.17,
+      0.08,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Social media channels most used by internet users in the United States to interact with brands in 2022 and 2023",
+   "short": "Most used social media channels for brand interaction in the U.S. 2023",
+   "unit": "",
+   "description": "According to a survey among American internet users in 2023, Facebook was the most used social media channel for the purpose of brand interaction, with 61.5 percent of respondents choosing it. YouTube came second, with 60.3 percent of the total shares pointing towards the video platform as a brand interaction online space.",
+   "note": "United States; December 2023; 1,500 respondents; among working-age consumers",
+   "source": "Attest; eMarketer; Insider Intelligence Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "YouTube",
+    "Instagram",
+    "TikTok",
+    "Snapchat",
+    "X (formelrly Twitter)",
+    "Pinterest",
+    "Twitch"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.615,
+      0.603,
+      0.489,
+      0.429,
+      0.26,
+      0.251,
+      0.22,
+      0.076
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.618,
+      0.546,
+      0.452,
+      0.35,
+      0.226,
+      0.262,
+      0.202,
+      0.081
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Types of most engaging content for social media marketing according to consumers in the United States as of April 2022",
+   "short": "Content types engaging for social media marketing in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey carried out among consumers from the United States, 66 percent of respondents stated that short-form videos were the most engaging type of content for social media marketing. Images followed, with 61 percent.",
+   "note": "United States; February 22 and March 1, 2022; 1,236 respondents; U.S. consumers who use at least",
+   "source": "Lucid; Sprout Social",
+   "kind": "categorical",
+   "categories": [
+    "Short-form video",
+    "Images",
+    "Live video",
+    "GIFs/memes",
+    "Text-based posts",
+    "User-generated content",
+    "Long-form video",
+    "Audio",
+    "URL/links to other content"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.66,
+      0.61,
+      0.37,
+      0.32,
+      0.32,
+      0.26,
+      0.24,
+      0.13,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Leading online platforms for product research among Generation Z in the United States in 1st quarter 2023",
+   "short": "Gen Z: main online platforms for product research in the U.S. 2023",
+   "unit": "",
+   "description": "According to the results of a survey carried out in the first quarter of 2023, nearly six in ten U.S. shoppers aged 18 to 26 looked for product information on Amazon, while 43 percent preferred Walmart.com. Social networks also played an important role in pre-purchase search, with TikTok and YouTube being the most used platforms for this purpose.",
+   "note": "United States; February 8 and 9, 2023; 212 respondents; 18-26 years",
+   "source": "Insider Intelligence; Jungle Scout Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Amazon",
+    "Walmart.com",
+    "TikTok",
+    "YouTube",
+    "Search engine",
+    "Instagram",
+    "Facebook",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.43,
+      0.43,
+      0.42,
+      0.38,
+      0.36,
+      0.29,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Media where adult members of Generation Z were the most receptive to advertisements in the United States as of February 2023",
+   "short": "Media where adult Gen Zers were the most receptive to ads in the U.S. 2023",
+   "unit": "",
+   "description": "During an early 2023 online survey conducted among adult members of Generation Z in the United States, 72 percent reported being receptive to advertisements on social media. Approximately 47 percent stated being open to ads on streaming TV. The shares for cable and broadcast TV stood both below 30 percent.",
+   "note": "United States; February 9 to 13, 2023; 1.093; 18 years and older",
+   "source": "NCSolutions",
+   "kind": "categorical",
+   "categories": [
+    "Social media",
+    "Streaming TV",
+    "Cable TV",
+    "Broadcast TV"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.72,
+      0.47,
+      0.28,
+      0.2
+     ]
+    }
+   ]
+  }
+ ]
+}

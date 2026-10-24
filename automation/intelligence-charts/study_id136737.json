@@ -1,0 +1,911 @@
+{
+ "studyId": "136737",
+ "study": "fitness industry in south korea",
+ "file": "research/statista/study_id136737_fitness-industry-in-south-korea.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Most popular sports participated in South Korea in 2022",
+   "short": "Most popular sports participated South Korea 2022",
+   "unit": "",
+   "description": "According to a survey about the most popular sports in South Korea in 2022, around 49 percent of respondents stated that they took walks as their favorite sport, while another 23.5 percent chose hiking. Aside from these top two favorite sports, indoor sports activities such as bowling or gymnastics were popular. That year, about 61 percent of the respondents were taking part in regular sports activities at least once a week.",
+   "note": "South Korea; September 6 to November 12, 2022; 9,000 respondents; 10 years and older",
+   "source": "MCST (South Korea) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Take a walk",
+    "Hiking",
+    "Bowling",
+    "Gymnastics",
+    "Cycling",
+    "Soccer/Futsal",
+    "Bodybuilding",
+    "Swimming",
+    "Billiards/Pocket billiard",
+    "Golf"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.488,
+      0.235,
+      0.112,
+      0.112,
+      0.111,
+      0.11,
+      0.106,
+      0.1,
+      0.093,
+      0.093
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Average monthly spending on doing sports in South Korea in 2022 (in 1,000 South Korean won)",
+   "short": "Monthly spending on doing sports South Korea 2022",
+   "unit": "1,000 South Korean won",
+   "description": "According to a survey about sports participation in South Korea in 2022, around 24 percent of the respondents stated that they paid no money to play sports or exercise. About 19 percent of the respondents said they spent between 30 thousand and 60 thousand South Korean won per month for sports and working out. The average monthly expenses in 2022 was around 77,135 won. That year, about 61 percent of the respondents were taking part in regular sports activities at least once a week.",
+   "note": "South Korea; September 6 to November 12, 2022; 9,000 respondents; 10 years and older; those that regularly participate in sports",
+   "source": "MCST (South Korea) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "None",
+    "Less than 30k KRW",
+    "30k-60k KRW",
+    "60k-100k KRW",
+    "100k-150k KRW",
+    "150k-200k KRW",
+    "200k-250k KRW",
+    "250k-300k KRW",
+    "More than 300k KRW"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.237,
+      0.116,
+      0.19,
+      0.101,
+      0.162,
+      0.081,
+      0.043,
+      0.013,
+      0.044
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Interest in taking care of health in South Korea as of July 2022",
+   "short": "Interest in taking care of health South Korea 2022",
+   "unit": "",
+   "description": "In July 2022, according to a survey conducted in South Korea by Opensurvey, around 68.8 percent of respondents said that they were interested in taking care of their health. Less than four percent of all respondents stated to be uninterested in taking care of their health.",
+   "note": "South Korea; July 23, 2022; 1,000 respondents; 20-69 years",
+   "source": "Opensurvey",
+   "kind": "categorical",
+   "categories": [
+    "Very interested",
+    "Interested",
+    "Normal",
+    "Uninterested",
+    "Very uninterested"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.211,
+      0.477,
+      0.273,
+      0.037,
+      0.002
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Reasons why people participate in sports activities in South Korea in 2022",
+   "short": "Reasons why people are doing sports South Korea 2022",
+   "unit": "",
+   "description": "According to a survey about sports participation in South Korea in 2022, around 77 percent of the respondents stated that they played sports or exercised to maintain their health. About another 48 percent said they worked out to control their weight. That year, about 61 percent of the respondents were taking part in regular sports activities at least once a week.",
+   "note": "South Korea; September 6 to November 12, 2022; 9,000 respondents; 10 years and older; those that regularly participate in sports",
+   "source": "MCST (South Korea) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Maintain health",
+    "Weight control",
+    "Stress relief",
+    "Leisure",
+    "Personal enjoyment",
+    "Self-satisfaction",
+    "Interpersonal relations",
+    "Improve athletic ability",
+    "Strengthen family relations",
+    "Burn time"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.774,
+      0.478,
+      0.434,
+      0.357,
+      0.254,
+      0.22,
+      0.219,
+      0.147,
+      0.034,
+      0.031
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Number of fitness centers registered in South Korea from 2010 to 2021",
+   "short": "Fitness centers number South Korea 2010-2021",
+   "unit": "",
+   "description": "There were around 11.1 thousand fitness centers registered in South Korea in 2021. This was an increase from the previous year and the highest recorded number during the surveyed period. The number has increased continuously over the past years from a little over six thousand fitness centers in 2010.",
+   "note": "South Korea; 2010 to 2021",
+   "source": "MCST (South Korea); Statistics Korea",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6240,
+      6449,
+      6608,
+      6991,
+      7363,
+      7931,
+      8396,
+      8942,
+      9046,
+      9469,
+      9574,
+      11144
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of fitness centers registered in South Korea in 2021, by region",
+   "short": "Number of fitness centers South Korea 2021, by region",
+   "unit": "",
+   "description": "In 2021, there were more than 2.9 thousand fitness studios registered in Seoul, South Korea. The province of Gyeonggi ranked second with around 2.6 thousand gyms. That year, there were over 11.1 thousand fitness studios in the country.",
+   "note": "South Korea; 2021",
+   "source": "MCST (South Korea) Number of facilities",
+   "kind": "categorical",
+   "categories": [
+    "Seoul",
+    "Gyeonggi",
+    "Busan",
+    "Gyeongnam",
+    "Incheon",
+    "Daegu",
+    "Gyeongbuk",
+    "Chungnam",
+    "Gwangju",
+    "Chungbuk",
+    "Jeonbuk",
+    "Jeonnam",
+    "Gangwon",
+    "Daejeon",
+    "Ulsan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2920,
+      2630,
+      863,
+      629,
+      617,
+      511,
+      415,
+      371,
+      340,
+      320,
+      300,
+      282,
+      273,
+      265,
+      193
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of newly licensed grade 2 bodybuilding instructors in South Korea from 2014 to 2022 (in 1,000s)",
+   "short": "Number of licensed grade 2 bodybuilding instructors South Korea 2014-2022",
+   "unit": "1,000s",
+   "description": "In 2022, there were around 7.5 thousand newly certified grade 2 instructors for bodybuilding in South Korea. This was a decrease from the previous year, with a sharp decrease recorded in 2020. Anyone over the age of 18 is eligible to apply for a grade 2 leisure sports instructor certification, which entails a written and practical exam. Licensed bodybuilding instructors are able to work as personal trainers at fitness studios.",
+   "note": "South Korea; 2014 to 2022",
+   "source": "Korea Sports Promotion Foundation",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7.93,
+      3.23,
+      5.09,
+      3.97,
+      5.16,
+      5.8,
+      0.46,
+      9.72,
+      7.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Number of newly licensed youth bodybuilding instructors in South Korea from 2015 to 2022",
+   "short": "Number of licensed youth bodybuilding instructors South Korea 2015-2022",
+   "unit": "",
+   "description": "In 2022, there were 406 newly certified youth sports instructors for bodybuilding in South Korea. This was a decrease from the previous year, which had the highest figure recorded with 530 new licensees. Anyone over the age of 18 is eligible to apply for youth sports instructor certification, which entails exams and additional training periods.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "Korea Sports Promotion Foundation",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      107,
+      200,
+      269,
+      355,
+      418,
+      11,
+      530,
+      406
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Number of newly licensed elderly bodybuilding instructors in South Korea from 2015 to 2022",
+   "short": "Number of licensed elderly bodybuilding instructors South Korea 2015-2022",
+   "unit": "",
+   "description": "In 2022, there were 885 newly certified elderly bodybuilding instructors in South Korea. This was a decrease from the previous year, which had the highest figure recorded with over one thousand new licensees. Anyone over the age of 18 is eligible to apply for elderly sports instructor certification, which entails exams and additional training periods.",
+   "note": "South Korea; 2015 to 2022",
+   "source": "Korea Sports Promotion Foundation",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      402,
+      633,
+      741,
+      814,
+      887,
+      16,
+      1114,
+      885
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Day of the week to participate in sports activities in South Korea in 2022",
+   "short": "Day of the week doing sports South Korea 2022",
+   "unit": "",
+   "description": "According to a survey about sports participation in South Korea in 2022, around 39 percent of the respondents stated that they played sports or exercised on weekdays. Another 62.3 percent said they played on weekdays or the weekend. That year, about 61 percent of the respondents were taking part in regular sports activities at least once a week.",
+   "note": "South Korea; September 6 to November 12, 2022; 9,000 respondents; 10 years and older; those that regularly participate in sports",
+   "source": "MCST (South Korea)",
+   "kind": "categorical",
+   "categories": [
+    "Weekday",
+    "Weekend",
+    "Weekday or weekend"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.389,
+      0.371,
+      0.623
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Time of the day to participate in sports activities in South Korea in 2022",
+   "short": "Time of the day doing sports South Korea 2022",
+   "unit": "",
+   "description": "According to a survey about sports participation in South Korea in 2022, around 37 percent of the respondents stated that they played sports or exercised in the evenings between 6pm and 10pm. After evenings, mornings were the most popular times for working out. That year, about 61 percent of the respondents were taking part in regular sports activities at least once a week.",
+   "note": "South Korea; September 6 to November 12, 2022; 9,000 respondents; 10 years and older; those that regularly participate in sports",
+   "source": "MCST (South Korea) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Dawn (06:00-08:00)",
+    "Morning (08:00-12:00)",
+    "Noon (12:00-14:00)",
+    "Afternoon (14:00-18:00)",
+    "Evening (18:00-22:00)",
+    "Not fixed"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.165,
+      0.237,
+      0.049,
+      0.125,
+      0.368,
+      0.439
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Intensity of exercise for South Koreans as of July 2022",
+   "short": "Intensity of exercise South Korea 2022",
+   "unit": "",
+   "description": "According to a survey conducted in South Korea by Opensurvey in July 2022, over 60 percent of surveyed respondents answered that they exercised with moderate intensity. Around 11.5 percent stated to engage in high intensity exercise, while another roughly 28.4 percent said they participated in low intensity exercise.",
+   "note": "South Korea; July 23, 2022; 845 respondents; 20-69 years; those that currently participate in sports",
+   "source": "Opensurvey",
+   "kind": "categorical",
+   "categories": [
+    "High intensity",
+    "Moderate intensity",
+    "Low intensity"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.115,
+      0.601,
+      0.284
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Duration of exercise in South Korea as of July 2022",
+   "short": "Exercise duration South Korea 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Opensurvey in July 2022 in South Korea, more than 42 percent of respondents stated to exercise between 30 minutes to an hour. The average duration of exercise among respondents was a little over one hour.",
+   "note": "South Korea; July 23, 2022; 845 respondents; 20-69 years; those that currently participate in sports",
+   "source": "Opensurvey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Less than 30 mins",
+    "30 mins-1 hour",
+    "1 hour-1 hour 30 mins",
+    "1 hour 30 mins-2 hours",
+    "More than 2 hours"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.092,
+      0.426,
+      0.304,
+      0.098,
+      0.079
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Fitness and health service purchases in South Korea as of March 2024",
+   "short": "Fitness and health service purchases in South Korea 2024",
+   "unit": "",
+   "description": "10 percent of South Korean respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2024, among 2,020 consumers.",
+   "note": "South Korea; April 2023 to March 2024; 2020 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Online services (website or apps)",
+    "Personal trainer",
+    "Wellness services (e.g., massage)",
+    "Individual sports course / class",
+    "Sports club membership",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1,
+      0.07,
+      0.06,
+      0.05,
+      0.04,
+      0.04,
+      0.82,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Fitness and health service online purchases in South Korea as of March 2024",
+   "short": "Fitness and health service online purchases in South Korea 2024",
+   "unit": "",
+   "description": "5 percent of South Korean respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2024, among 2,020 consumers.",
+   "note": "South Korea; April 2023 to March 2024; 2020 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Health tracking",
+    "Weight loss / healthy eating",
+    "Contraception or fertility tracking (only shown to women)",
+    "Medication checkers / reminders",
+    "Meditation / mindfulness / sleeping apps",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.05,
+      0.04,
+      0.04,
+      0.02,
+      0.02,
+      0.02,
+      0.93,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Share of South Koreans who used scientific fitness management services from 2017 to 2022",
+   "short": "Usage of scientific fitness management services South Korea 2017-2022",
+   "unit": "",
+   "description": "According to a survey about sports participation in South Korea in 2022, around 13 percent of the respondents stated that they were making use of scientific fitness management services. That year, about 61 percent of the respondents were taking part in regular sports activities at least once a week.",
+   "note": "South Korea; September 6 to November 12, 2022; 9,000 respondents; 10 years and older",
+   "source": "MCST (South Korea)",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.077,
+      0.094,
+      0.118,
+      0.126,
+      0.088,
+      0.128
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading fitness apps in South Korea as of April 2023, by user coverage",
+   "short": "Leading fitness apps South Korea 2023, by user coverage",
+   "unit": "",
+   "description": "In April 2023, Samsung Health recorded a user coverage share of almost 53 percent, meaning that over half of all fitness app users used this app. Another leading app was CashWalk, which provides users the opportunity to receive rewards by walking.",
+   "note": "South Korea; April 2023; including Android OS and iOS",
+   "source": "IGAWorks User coverage share",
+   "kind": "categorical",
+   "categories": [
+    "Samsung Health",
+    "CashWalk",
+    "InBody",
+    "Mstep",
+    "Pedometer - Step Counter App"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.529,
+      0.334,
+      0.044,
+      0.036,
+      0.026
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Most popular fitness YouTube channels in South Korea as of August 2023, by number of followers (in millions)",
+   "short": "Popular fitness channels on YouTube South Korea 2023, by number of subscribers",
+   "unit": "millions",
+   "description": "As of August 2023, the fitness channel Physical Gallery had the most subscribers on the online video sharing platform YouTube in South Korea, with approximately 3.1 million subscribers. Following this channel, Thankyou BUBU had the second highest number of subscribers, with about 3.03 million.",
+   "note": "South Korea; August 2023",
+   "source": "NoxInfluencer Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Physical Gallery",
+    "Thankyou BUBU",
+    "MYLEE DANCE",
+    "Allblanc TV",
+    "Hipeutteum",
+    "Sunny Funny Fitness",
+    "FITVELY",
+    "Jiny diet",
+    "JSYJ",
+    "Chung Sun Gun TV"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.1,
+      3.03,
+      2.33,
+      2.06,
+      1.57,
+      1.38,
+      1.35,
+      1.31,
+      1.29,
+      1.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Fitness and health logging in South Korea as of July 2022",
+   "short": "Fitness and health logging South Korea 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Opensurvey in July 2022 in South Korea, around 30 percent of respondents kept a record of their activity and exercise such as step counts or pictures. The majority did not do such logging, with nearly 56 percent answering to not keep any records of their fitness and health.",
+   "note": "South Korea; July 23, 2022; 1,000 respondents; 20-69 years",
+   "source": "Opensurvey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Activity and exercise records (step count, workout routine, pictures, etc.)",
+    "Physical records (weight, blood pressure, heart rate, etc.)",
+    "Everyday habit records (diet, nutrients, calories, etc.)",
+    "Do not separately record such things"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3,
+      0.255,
+      0.127,
+      0.557
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Fitness and health logging methods in South Korea as of July 2022",
+   "short": "Fitness and health logging methods South Korea 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Opensurvey in July 2022 in South Korea, around 67 percent of respondents logged their fitness and health automatically via a smartphone application or device. About 22 percent kept a manual record of their health status.",
+   "note": "South Korea; July 23, 2022; 443 respondents; 20-69 years; those that log their fitness and health",
+   "source": "Opensurvey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Automatic recording via app or device",
+    "Manual recording (memo, etc.)",
+    "Photo recording",
+    "Video recording",
+    "Voice recording"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.673,
+      0.221,
+      0.217,
+      0.099,
+      0.093
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Devices used for fitness and health logging in South Korea as of July 2022",
+   "short": "Devices used for fitness and health logging South Korea 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Opensurvey in July 2022 in South Korea, around 39 percent of respondents used a fitness device that could be synced with their smartphoen to log their fitness and health. Nearly 31 percent answered to use a smartwatch, while about 17 percent kept a manual record of their activity.",
+   "note": "South Korea; July 23, 2022; 443 respondents; 20-69 years; those that log their fitness and health",
+   "source": "Opensurvey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Health/fitness device synced with smartphone",
+    "Smartwatch",
+    "Health/fitness specialized tool",
+    "Smartphone (social media)",
+    "Smart band",
+    "Manual logging"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.388,
+      0.309,
+      0.269,
+      0.242,
+      0.181,
+      0.169
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Reasons for sharing fitness and health logs in South Korea as of July 2022",
+   "short": "Reasons for sharing fitness and health logs South Korea 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Opensurvey in July 2022 in South Korea, around 37.5 percent of respondents shared their logs of fitness and health activities to keep a record of it. For about 26 percent of respondents, motivation or entertainment was a factor, while roughly 34.5 percent did not share their records about their fitness.",
+   "note": "South Korea; July 23, 2022; 443 respondents; 20-69 years; those that log their fitness and health",
+   "source": "Opensurvey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Save a record",
+    "Motivation/entertainment",
+    "Share with friends and acquaintances",
+    "Collect suitable information for myself",
+    "Monetary rewards such as points",
+    "Have never shared records of fitness and health"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.375,
+      0.26,
+      0.194,
+      0.187,
+      0.163,
+      0.345
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Ownership rate of wearable devices in South Korea from 2016 to 2022",
+   "short": "Wearable device ownership South Korea 2016-2022",
+   "unit": "",
+   "description": "According to a survey on wearable devices in South Korea, about 11.6 percent of the respondents aged 6 years and older owned wearable devices in 2022, compared to only around 1.9 percent in 2016. The ownership rate of wearable devices has steadily increased in recent years.",
+   "note": "South Korea; 2016 to 2022; 25,000 households; 6 years and older",
+   "source": "Korean Internet & Security Agency; Market Metrix; Ministry of Science and ICT (South Korea); NIA",
+   "kind": "timeseries",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.019,
+      0.036,
+      0.035,
+      0.04,
+      0.041,
+      0.08,
+      0.116
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Ownership of smartwatches and wearable fitness/activity trackers in South Korea as of September 2022",
+   "short": "Smartwatch and wearable fitness/activity trackers ownership South Korea 2022",
+   "unit": "",
+   "description": "A survey conducted by Rakuten Insight in September 2022 in South Korea found that around 36.75 percent of respondents owned a smartwatch, while another 3.17 percent stated that they owned both a smartwatch and a fitness/activity tracker.",
+   "note": "South Korea; September 8 to 30, 2022; 7,466 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes, a smartwatch",
+    "Yes, a fitness/activity tracker",
+    "Yes, both a smartwatch and a fitness/activity tracker",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3675,
+      0.0546,
+      0.0317,
+      0.5461
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Brands used by owners of smartwatch or wearable fitness/activity trackers in South Korea as of September 2022",
+   "short": "Smartwatch or wearable fitness/activity trackers brands owned South Korea 2022",
+   "unit": "",
+   "description": "A survey conducted by Rakuten Insight in September 2022 in South Korea found that around 61.1 percent of respondents who owned a smartwatch or a fitness/activity tracker owned a wearable device by Samsung.",
+   "note": "South Korea; September 8 to 30, 2022; 3,389 respondents; 16 years and older; owners of smartwatches or wearable fitness/activity trackers",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Samsung",
+    "Apple Watch",
+    "Xiaomi",
+    "Fitbit",
+    "LG",
+    "Garmin",
+    "Huawei",
+    "ASUS",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6111,
+      0.2529,
+      0.1083,
+      0.0395,
+      0.0307,
+      0.0212,
+      0.0192,
+      0.0118,
+      0.0446
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Motivation for purchasing smartwatches or wearable fitness/activity trackers in South Korea as of September 2022",
+   "short": "Reasons for buying wearable tech South Korea 2022",
+   "unit": "",
+   "description": "A survey conducted by Rakuten Insight in September 2022 found that the main motivation for purchasing a wearable device was to have easier accessibility to smartphone functions, with around 52.4 percent of surveyed wearable tech owners answering that way.",
+   "note": "South Korea; September 8 to 30, 2022; 3,389 respondents; 16 years and older; consumers that own smartwatches or wearable fitness/activity trackers",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I wanted easier accessibility to smartphone functions without having to constantly have my smartphone in my hand",
+    "I am concerned about my health and want to monitor and improve it (such as sleep quality, measuring heart rate, number of steps taken a day, etc)",
+    "I already own other smart devices from the same brand (such as smartphones, televisions, etc) and want to stay connected with my other devices easier",
+    "The price is reasonable for the functions that it can do",
+    "I am into fitness and want to keep track of and optimize my training and performance",
+    "I like to keep up with the latest tech trends and products",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5243,
+      0.3417,
+      0.3202,
+      0.2806,
+      0.2473,
+      0.2452,
+      0.0407
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Popular type of apps connected to smartwatches and fitness/activity trackers in South Korea as of September 2022",
+   "short": "Apps connected to smartwatches and fitness trackers South Korea 2022",
+   "unit": "",
+   "description": "A survey conducted by Rakuten Insight in September 2022 found that most respondents claimed that they connected their wearable tech with fitness apps like Runtastic, Runkeeper, MapMyRun and similar.",
+   "note": "South Korea; September 8 to 30, 2022; 3,389 respondents; 16 years and older; consumers that own smartwatches and/or fitness/activity trackers",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness apps (Runtastic, Runkeeper, MapMyRun, etc)",
+    "Music streaming apps",
+    "Mobile payment apps (Apple Pay, Android Pay, Samsung Pay, Fitbit Pay, Garmin Pay, etc)",
+    "Social media apps",
+    "Smart home apps (Nest, Philips Hue, etc)",
+    "Video streaming apps",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5423,
+      0.4045,
+      0.2662,
+      0.2296,
+      0.1511,
+      0.0959,
+      0.0788
+     ]
+    }
+   ]
+  }
+ ]
+}

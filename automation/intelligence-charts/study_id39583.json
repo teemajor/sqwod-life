@@ -1,0 +1,1760 @@
+{
+ "studyId": "39583",
+ "study": "fitness industry in the united kingdom uk statista dossier",
+ "file": "research/statista/study_id39583_fitness-industry-in-the-united-kingdom-uk-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Leading fitness markets in Europe in 2019, by market share",
+   "short": "Market share of leading fitness markets in Europe 2019",
+   "unit": "",
+   "description": "This statistic displays the leading fitness markets in Europe in 2018, by market share. Germany and the United Kingdom exhibited the greatest share of the fitness market occupying 20 percent each.",
+   "note": "Europe; 2019",
+   "source": "Deloitte Market share",
+   "kind": "categorical",
+   "categories": [
+    "Germany",
+    "United Kingdom",
+    "France",
+    "Spain",
+    "Italy",
+    "Netherlands",
+    "Poland",
+    "Turkey",
+    "Switzerland",
+    "Sweden",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "2019",
+     "values": [
+      0.2,
+      0.2,
+      0.09,
+      0.08,
+      0.08,
+      0.05,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Revenue of the fitness industry in the United Kingdom from 2019 to 2021 (in billion euros)",
+   "short": "United Kingdom: revenue of the fitness market 2015-2021",
+   "unit": "billion euros",
+   "description": "The revenue of the fitness market in the United Kingdom fell significantly between 2019 and 2020. This was as a result of the coronavirus (COVID-19) pandemic, which forced the closure of many gyms across the country. In 2021, the industry showed signs of recovery, with revenue in the market reaching 3.56 billion euros.",
+   "note": "United Kingdom; 2019 to 2021",
+   "source": "Deloitte; EuropeActive",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.51,
+      2.65,
+      3.56
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Market size of the gym, health & fitness clubs industry in the United Kingdom (UK) from 2012 to 2022 (in million GBP)",
+   "short": "Gym, health & fitness club industry market size in the United Kingdom (UK) 2012-2022",
+   "unit": "million GBP",
+   "description": "Every day, thousands of fitness fanatics hit the gym to keep in shape. However, the coronavirus pandemic which swept across the world in 2020 had a significant impact on the fitness industry as many establishments were forced to close their doors to stem the spread of the disease. While the market size of the fitness club industry in the United Kingdom grew to above two billion British pounds in the years leading up the pandemic, forecasts suggest that the value of the industry will fall to [...]",
+   "note": "United Kingdom; 2012 to 2022; * Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1494.8,
+      1553.2,
+      1607.8,
+      1731.9,
+      1923.3,
+      1886.8,
+      2086.5,
+      2200.6,
+      2251.3,
+      1362.1,
+      1804.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Market size of the personal training industry in the United Kingdom (UK) from 2011 to 2022 (in million British pounds)",
+   "short": "Personal training market size in the United Kingdom (UK) 2011-2022",
+   "unit": "million British pounds",
+   "description": "The personal training market in the United Kingdom saw a steady increase between 2011 and 2020, before declining abruptly in 2021. Notably, the market size of the personal trainers sector declined by about 25 percent in 2021. However, the industry is expected to grow by about 18 percent in 2022.",
+   "note": "United Kingdom; 2011 to 2021; *Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      583.8,
+      601.8,
+      606.5,
+      637.4,
+      669.6,
+      695,
+      701.5,
+      707.1,
+      707.6,
+      722.6,
+      538.6,
+      635.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Gross value added (GVA) of fitness facilities in the United Kingdom (UK) from 2008 to 2021 (in million GBP)",
+   "short": "Gross value added (GVA) of fitness facilities in the United Kingdom (UK) 2008-2021",
+   "unit": "million GBP",
+   "description": "In 2021, fitness facilities contributed approximately 818 million British pounds to the GVA of the UK Non-Financial Business Economy. This represented a significant decrease on the figure from two years earlier, no doubt due to the impact of the coronavirus pandemic on fitness facilities.",
+   "note": "United Kingdom; 2008 to 2021",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      350,
+      501,
+      511,
+      668,
+      679,
+      732,
+      802,
+      891,
+      913,
+      1104,
+      1166,
+      1276,
+      634,
+      818
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of gyms and fitness centres in the United Kingdom (UK) from 2011 to 2022",
+   "short": "Number of gyms in the United Kingdom (UK) 2011-2022",
+   "unit": "",
+   "description": "The number of gyms and fitness centres in the United Kingdom more than doubled between 2011 and 2020, highlighting the booming fitness market within the country. However, the coronavirus (COVID-19) pandemic in 2020 created significant challenges for this growing industry as many health and fitness establishments were forced to close their doors to the public. As a result, the number of gyms in the United Kingdom fell from 3,654 in 2020 to 3,060 in 2021. Despite this, the number [...]",
+   "note": "United Kingdom; 2011 to 2021; *Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1540,
+      1642,
+      1595,
+      1833,
+      2024,
+      2304,
+      2642,
+      3083,
+      3419,
+      3674,
+      3060,
+      3720
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Number of members at gyms and fitness clubs in the United Kingdom from 2019 to 2021 (in millions)",
+   "short": "Number of gym members in the UK 2019-2021",
+   "unit": "millions",
+   "description": "The number of people with memberships to gyms in the United Kingdom saw an increase between 2020 and 2021. In the latter year, just over 9.57 million people had gym memberships in the UK. However, this was following a steep drop in the number of members between 2019 and 2020 as a result of the impact of the coronavirus (COVID-19) on gyms.",
+   "note": "United Kingdom; 2019 to 2021",
+   "source": "Deloitte; IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.39,
+      8.28,
+      9.57
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Number of fitness clubs in the largest low-cost health and fitness club groups in the United Kingdom (UK) from 2013 to 2019",
+   "short": "UK: number of gyms in the largest low-cost health and fitness groups 2013-2019",
+   "unit": "",
+   "description": "This statistic displays the number of gyms in the largest low-cost health and fitness club groups in the United Kingdom from 2013 to 2019. From 2013 to 2019, the number of clubs in the largest private low-cost fitness club groups increased from 196 to 727. The revenue of the health club industry amounted to a value of around 6.2 billion U.S. dollars in the UK in 2015. Further information on the fitness industry in the UK can be found in the Dossier: Fitness industry in the United Kingdom.",
+   "note": "United Kingdom; 2013 to 2019",
+   "source": "The Gym Group",
+   "kind": "timeseries",
+   "categories": [
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      196,
+      257,
+      319,
+      450,
+      515,
+      598,
+      727
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Number of The Gym Group health clubs in the United Kingdom from 2012 to 2023",
+   "short": "Number of The Gym Group locations in the UK 2012-2023",
+   "unit": "",
+   "description": "Founded in 2007, The Gym Group is a chain of 24/7 fitness clubs with locations across the United Kingdom. The company had 230 sites in 2023, a significant increase on the number of locations in 2016.",
+   "note": "United Kingdom; 2012 to 2023",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      32,
+      40,
+      55,
+      74,
+      89,
+      128,
+      158,
+      175,
+      183,
+      202,
+      230
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Number of Fitness First gyms in the United Kingdom as of May 2023, by location",
+   "short": "Number of Fitness First locations in the UK 2023, by city",
+   "unit": "",
+   "description": "Founded in 1993 in the United Kingdom, Fitness First had 34 locations in the country as of May 2023. The majority of these locations were in London, while there was also a Fitness First gym in Wigan.",
+   "note": "United Kingdom; as of May 2023",
+   "source": "ScrapeHero",
+   "kind": "categorical",
+   "categories": [
+    "London",
+    "Wigan",
+    "Bath",
+    "Solihull",
+    "Essex",
+    "Basingstoke",
+    "St. Albans",
+    "Dorset",
+    "Bedford",
+    "Milton Keynes"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of Anytime Fitness gyms in the United Kingdom as of May 2023, by location",
+   "short": "Number of Anytime Fitness locations in the UK 2023, by city",
+   "unit": "",
+   "description": "Founded in 2002, Anytime Fitness had 190 gyms across the United Kingdom as of May 2023. Of these locations, 20 were found in London, while Birmingham was home to two Anytime Fitness gyms.",
+   "note": "United Kingdom; as of May 2023",
+   "source": "ScrapeHero",
+   "kind": "categorical",
+   "categories": [
+    "London",
+    "Bristol",
+    "Lewisham",
+    "Birmingham",
+    "Leeds",
+    "Belfast",
+    "Colchester",
+    "Peterborough"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      20,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of David Lloyd gyms in the United Kingdom as of May 2023, by location",
+   "short": "Number of David Lloyd locations in the UK 2023, by city",
+   "unit": "",
+   "description": "Founded in 1982 in the United Kingdom, David Lloyd Leisure had 99 locations in the country as of April 2023. The city with the most David Lloyd gyms was London with seven, while there were three David Lloyd clubs in Bristol.",
+   "note": "United Kingdom; as of April 2023",
+   "source": "ScrapeHero",
+   "kind": "categorical",
+   "categories": [
+    "London",
+    "Kent",
+    "Middlesex",
+    "Surrey",
+    "Hertfordshire",
+    "Bristol",
+    "Nottinghamshire",
+    "Essex",
+    "Glasgow",
+    "Berkshire"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7,
+      5,
+      4,
+      4,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Number of enterprises in the operation of fitness facilities in the United Kingdom (UK) from 2015 to 2020, by employment size band",
+   "short": "Number of fitness facilities operating in the UK 2015-2020, by employees",
+   "unit": "",
+   "description": "This statistic shows the number of VAT and/or PAYE based enterprises in the operation of fitness facilities in the United Kingdom from 2015 to 2020, by employment size band. In March 2020, there were 15 fitness facility enterprises employing between 100 and 249 employees.",
+   "note": "United Kingdom; 2015 to 2020; VAT and/or PAYE based enterprises",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2015",
+    "2016",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "0-4",
+     "values": [
+      1600,
+      1810,
+      2335,
+      2655,
+      2915
+     ]
+    },
+    {
+     "name": "5-9",
+     "values": [
+      420,
+      395,
+      495,
+      495,
+      540
+     ]
+    },
+    {
+     "name": "10-19",
+     "values": [
+      160,
+      170,
+      180,
+      185,
+      185
+     ]
+    },
+    {
+     "name": "20-49",
+     "values": [
+      35,
+      50,
+      55,
+      60,
+      65
+     ]
+    },
+    {
+     "name": "50-99",
+     "values": [
+      20,
+      15,
+      20,
+      30,
+      25
+     ]
+    },
+    {
+     "name": "100-249",
+     "values": [
+      15,
+      10,
+      15,
+      10,
+      15
+     ]
+    },
+    {
+     "name": "250+",
+     "values": [
+      15,
+      10,
+      10,
+      10,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Estimated number of people working in sports and fitness occupations in the United Kingdom from 4th quarter 2021 to 4th quarter 2023",
+   "short": "Number of people working in sports and fitness occupations in the UK 2021-2023",
+   "unit": "",
+   "description": "There were estimated to be approximately 174,600 sport and fitness working in the United Kingdom as of the fourth quarter of 2023, compared with 165,300 in the previous quarter.",
+   "note": "United Kingdom; Q4 2021 to Q4 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      152500,
+      165900,
+      174400,
+      169900,
+      167500,
+      155900,
+      161500,
+      165300,
+      174600
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Estimated number of fitness and wellness instructors in the United Kingdom from 4th quarter 2021 to 2nd quarter 2023",
+   "short": "Number of fitness instructors in the UK 2021-2023",
+   "unit": "",
+   "description": "There were estimated to be approximately 57,900 fitness instructors working in the United Kingdom as of the second quarter of 2023, compared with 60,900 in the previous quarter.",
+   "note": "United Kingdom; Q4 2021 to Q2 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      67200,
+      73400,
+      75500,
+      71900,
+      68300,
+      60900,
+      57900
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Number of personal trainers in the United Kingdom (UK) from 2011 to 2022",
+   "short": "Number of personal trainers in the United Kingdom (UK) 2011-2022",
+   "unit": "",
+   "description": "Trying to keep fit can be a constant battle, with many people in the United Kingdom turning to personal trainers to help them keep in shape. In 2011, there were just over 15 thousand personal trainers in the UK, a figure which rose to over 23 thousand by 2020. However, the coronavirus pandemic in 2020 posed a significant threat to this growing industry as many health and fitness establishments were forced to close their doors to the public, resulting in the decline of personal trainer [...]",
+   "note": "United Kingdom; 2011 to 2021; *Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15197,
+      16619,
+      17058,
+      18534,
+      19081,
+      20624,
+      21304,
+      21879,
+      22361,
+      23143,
+      22910,
+      25350
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Gender distribution of sports and fitness occupations in the United Kingdom (UK) in 2021, by employment status",
+   "short": "Gender distribution of sports and fitness occupations by employment status 2021",
+   "unit": "",
+   "description": "In 2021, over 168 thousand people worked in the field of sports and fitness in the United Kingdom (UK), 80 thousand of which were classified as part-time positions and the remaining 87.8 thousand classified as full-time. Male employees occupied around 55 percent of these positions, the majority of whom were employed in a full time position.",
+   "note": "United Kingdom; October 2020 to September 2021; Currently in employment",
+   "source": "Office for National Statistics (UK)",
+   "kind": "categorical",
+   "categories": [
+    "All",
+    "Men",
+    "Women"
+   ],
+   "series": [
+    {
+     "name": "Full-time",
+     "values": [
+      87800,
+      61500,
+      26300
+     ]
+    },
+    {
+     "name": "Part-time",
+     "values": [
+      80100,
+      32300,
+      47800
+     ]
+    },
+    {
+     "name": "Total",
+     "values": [
+      168100,
+      93700,
+      74300
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Number of people participating in fitness classes in England from 2015 to 2023",
+   "short": "Fitness class participation England 2015-2023",
+   "unit": "",
+   "description": "Between November 2022 to November 2023, approximately 6.2 million people participated in fitness classes in England. This marked an increase from the number of participants two years earlier, which stood at over approximately 5.8 million.",
+   "note": "United Kingdom (England); 2015 to 2023; 172,968 respondents; 16 years and older; base varies",
+   "source": "Sport England Number of participants",
+   "kind": "categorical",
+   "categories": [
+    "November 2015-November 2016",
+    "November 2016-November 2017",
+    "November 2017-November 2018",
+    "November 2018-November 2019",
+    "November 2019-November 2020",
+    "November 2020-November 2021",
+    "November 2021-November 2022",
+    "November 2022-November 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6336100,
+      6510100,
+      6345600,
+      6131300,
+      6388000,
+      5526000,
+      5779400,
+      6219400
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Number of people participating in generic fitness training in England from 2017 to 2023",
+   "short": "Generic fitness training participation England 2017-2023",
+   "unit": "",
+   "description": "The number of people participating in generic fitness training in England decreased in 2023 over the previous year. Overall, about 1.84 million individuals incorporated generic fitness training into their exercise routines in 2023, which was about 30 thousand less participants than in 2022.",
+   "note": "United Kingdom (England); 2017 to 2023; 172,968 respondents; 16 years and older; base varies",
+   "source": "Sport England",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1956500,
+      1893400,
+      1762800,
+      2238000,
+      2071100,
+      1865200,
+      1835100
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Number of people who participated in fitness activities at least twice in the last 28 days in England from 2017 to 2021 (in millions)",
+   "short": "England: number of fitness activity participants 2017-2021",
+   "unit": "millions",
+   "description": "The statistic displays the number of people who participated in fitness activities at least twice in the last 28 days in England from 2017 to 2021. As of November 2021, approximately 11.37 million people in England participated in fitness activities with at least moderate intensity for more than 150 minutes a week.",
+   "note": "United Kingdom (England); November 2020 to November 2021; 16 years and older",
+   "source": "Sport England",
+   "kind": "categorical",
+   "categories": [
+    "Fitness activities"
+   ],
+   "series": [
+    {
+     "name": "May 2016-17",
+     "values": [
+      13.2
+     ]
+    },
+    {
+     "name": "November 2016-17",
+     "values": [
+      13.2
+     ]
+    },
+    {
+     "name": "May 2017-18",
+     "values": [
+      13.37
+     ]
+    },
+    {
+     "name": "November 2017-18",
+     "values": [
+      13.48
+     ]
+    },
+    {
+     "name": "May 2018-19",
+     "values": [
+      13.77
+     ]
+    },
+    {
+     "name": "November 2018-19",
+     "values": [
+      12.86
+     ]
+    },
+    {
+     "name": "May 2019-20",
+     "values": [
+      13.83
+     ]
+    },
+    {
+     "name": "November 2019-20",
+     "values": [
+      12.72
+     ]
+    },
+    {
+     "name": "May 2020-21",
+     "values": [
+      11.35
+     ]
+    },
+    {
+     "name": "November 2020-21",
+     "values": [
+      11.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Shares of adults who participated in selected sports in the past four weeks in Scotland from 2014 to 2019",
+   "short": "Scotland: share of adults sport participation 2014-2019",
+   "unit": "",
+   "description": "An annual household survey by the Scottish government determined that swimming is the most common practiced type of sport in Scotland, with 17 percent of respondents stating that they went swimming in the four weeks prior to being questioned. Next after swimming, keep fit and aerobics as well as multigym and weight training were the most regular sports for Scottish people to participate in.",
+   "note": "United Kingdom (Scotland); 2014 to 2019; 9,780*; adults.; * Base in (2014 - 9,800); (2015 - 9,410); (2016 - 9,640); (2017 - 9,810), (2018 - 9,700) This statistic using original data from the Scottish Government and includes copyright material [...] Read more",
+   "source": "Scottish Government",
+   "kind": "categorical",
+   "categories": [
+    "Swimming",
+    "Multigym / Weight Training",
+    "Running / jogging",
+    "Keep Fit /Aerobics",
+    "Cycling (at least 30 minutes)",
+    "Dancing",
+    "Football",
+    "Golf",
+    "Snooker / Billiards / Pool",
+    "Bowls"
+   ],
+   "series": [
+    {
+     "name": "2014",
+     "values": [
+      0.18,
+      0.12,
+      0.12,
+      0.13,
+      0.11,
+      0.07,
+      0.07,
+      0.06,
+      0.05,
+      0.03
+     ]
+    },
+    {
+     "name": "2015",
+     "values": [
+      0.17,
+      0.13,
+      0.12,
+      0.14,
+      0.12,
+      0.07,
+      0.08,
+      0.06,
+      0.05,
+      0.02
+     ]
+    },
+    {
+     "name": "2016",
+     "values": [
+      0.16,
+      0.14,
+      0.13,
+      0.14,
+      0.11,
+      0.07,
+      0.08,
+      0.06,
+      0.06,
+      0.02
+     ]
+    },
+    {
+     "name": "2017",
+     "values": [
+      0.18,
+      0.15,
+      0.14,
+      0.15,
+      0.12,
+      0.07,
+      0.07,
+      0.05,
+      0.06,
+      0.02
+     ]
+    },
+    {
+     "name": "2018",
+     "values": [
+      0.17,
+      0.15,
+      0.14,
+      0.14,
+      0.13,
+      0.08,
+      0.07,
+      0.06,
+      0.05,
+      0.02
+     ]
+    },
+    {
+     "name": "2019",
+     "values": [
+      0.17,
+      0.16,
+      0.14,
+      0.13,
+      0.11,
+      0.08,
+      0.06,
+      0.06,
+      0.05,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Share of adults meeting physical activity guidelines in Scotland in 2022, by gender and age",
+   "short": "Share of adults meeting activity guidelines in Scotland 2022, by gender and age",
+   "unit": "",
+   "description": "This statistic displays the share of adults meeting physical activity guidelines in Scotland in 2022, by gender and age. In this year, 79 percent of men and 80 percent of women in Scotland aged 25 to 34 years old met the recommended guidelines for moderate and vigorous physical activity.",
+   "note": "United Kingdom (Scotland); March and April, 2022; 4,377*; 16 years and older",
+   "source": "ScotCen",
+   "kind": "categorical",
+   "categories": [
+    "16-24 years",
+    "25-34 years",
+    "35-44 years",
+    "45-54 years",
+    "55-64 years",
+    "65-74 years",
+    "75 years and over"
+   ],
+   "series": [
+    {
+     "name": "Men",
+     "values": [
+      0.82,
+      0.79,
+      0.81,
+      0.69,
+      0.64,
+      0.62,
+      0.48
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.69,
+      0.8,
+      0.67,
+      0.63,
+      0.54,
+      0.49,
+      0.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Share of people who are physically active in Wales in 2020, by gender and duration",
+   "short": "Weekly amount of physical activity in Wales 2020, by gender",
+   "unit": "",
+   "description": "Regular physical activity is associated with decreased mortality and lower morbidity from several non-communicable diseases. Adults who are physically active report more positive mental and physical health.The, 2019, UK Chief Medical Officers' Physical Activity Guidelines, recommend that each week, adults should accumulate at least 150 minutes of moderate intensity activity, such as brisk walking or cycling. In addition, physical activity should be spread throughout the week by being [...]",
+   "note": "United Kingdom (Wales); April 2019 to March 2020; 5,900 respondents; 16 years and older",
+   "source": "NatCen; Welsh Government",
+   "kind": "categorical",
+   "categories": [
+    "Men",
+    "Women"
+   ],
+   "series": [
+    {
+     "name": "Active at least 150 minutes per week",
+     "values": [
+      0.58,
+      0.49
+     ]
+    },
+    {
+     "name": "Active less than 30 minutes per week",
+     "values": [
+      0.3,
+      0.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Fitness and health service purchases in the UK as of March 2024",
+   "short": "Fitness and health service purchases in the UK 2024",
+   "unit": "",
+   "description": "19 percent of UK respondents answer our survey on \"Fitness and health service purchases\" with \"Gym membership\". The survey was conducted in 2024, among 4,032 consumers.",
+   "note": "United Kingdom; April 2023 to March 2024; 4032 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Gym membership",
+    "Online services (website or apps)",
+    "Wellness services (e.g., massage)",
+    "Individual sports course / class",
+    "Sports club membership",
+    "Personal trainer",
+    "I haven't spent any money on fitness or health services",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.19,
+      0.1,
+      0.09,
+      0.07,
+      0.07,
+      0.06,
+      0.72,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Percentage of consumers that have a home fitness product within their households in the United Kingdom (UK) in 2021",
+   "short": "Share of consumers that own a home fitness product in the UK 2021",
+   "unit": "",
+   "description": "This data on sports and fitness shows the results of the Statista Global Consumer Survey conducted in the United Kingdom (UK) in 2021. That year, approximately 74 percent of the survey respondents in the UK had at least one home fitness product in their home.",
+   "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "Owner",
+    "Non-owner"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.74,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Which of the following home fitness products does your household own?",
+   "short": "Share of UK consumers that own a home fitness product 2021, by product category",
+   "unit": "",
+   "description": "In 2021, about 28 percent of consumers in the United Kingdom (UK) had either weights or dumbbells at home, making them some of the most commonly owned home fitness products in UK households. Many consumers in the UK also owned (yoga) mats. Approximately 74 percent of survey respondents owned at least one fitness product.",
+   "note": "United Kingdom; September 22 to 29, 2021; Over 1,000; 16-50 years; residential online population",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Weights or dumbbells",
+    "(Yoga) mat",
+    "Home cycling machine",
+    "Treadmill",
+    "Fitness bands, expanders, ropes or straps",
+    "Weight bench",
+    "Pull-up bar / wall bar",
+    "Hula Hoop",
+    "Work out or exercise machines",
+    "Cross trainer",
+    "Rowing machine",
+    "Fascia roll",
+    "Connected tread mill",
+    "Connected home cycling machine",
+    "Connected rowing machine"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.22,
+      0.17,
+      0.16,
+      0.16,
+      0.15,
+      0.12,
+      0.12,
+      0.11,
+      0.1,
+      0.09,
+      0.08,
+      0.05,
+      0.05,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Consumer price index (CPI) of equipment for sport and open-air recreation in the United Kingdom (UK) from 2008 to 2023",
+   "short": "Sport equipment consumer price index (CPI) annual average in the UK 2008-2023",
+   "unit": "",
+   "description": "This statistic shows the Consumer Price Index (CPI) of equipment for sport and open-air recreation in the United Kingdom (UK) as an annual average from 2008 to 2023, where the year 2015 equals 100. In 2023, the annual average price index was measured at 119.8.",
+   "note": "United Kingdom; 2008 to 2023; * Index value 2015 equals 100. The year 2015 is the base year used to calculate the index value. Consumer price indices are designed to measure changes in the price of everything consumers buy. More [...] Read more",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      99,
+      100.4,
+      100,
+      100.3,
+      99.1,
+      99.8,
+      101.5,
+      100,
+      99.9,
+      99.4,
+      101.1,
+      102,
+      103.1,
+      108.2,
+      116.9,
+      119.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Fitness and health service online purchases in the UK as of March 2024",
+   "short": "Fitness and health service online purchases in the UK 2024",
+   "unit": "",
+   "description": "6 percent of UK respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2024, among 4,032 consumers.",
+   "note": "United Kingdom; April 2023 to March 2024; 4032 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Health tracking",
+    "Weight loss / healthy eating",
+    "Meditation / mindfulness / sleeping apps",
+    "Medication checkers / reminders",
+    "Contraception or fertility tracking (only shown to women)",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.06,
+      0.06,
+      0.06,
+      0.04,
+      0.03,
+      0.02,
+      0.9,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Which of these fitness or health services (website or app) have you used as a paying customer in the past 12 months?",
+   "short": "Online fitness and health service purchases by brand in the UK 2020",
+   "unit": "",
+   "description": "The displayed data on online fitness and health service purchases by brand shows results of the Statista Global Consumer Survey conducted in the UK in 2020. Some 41 percent of respondents answered the question \"Which of these fitness or health services (website or app) have you used as a paying customer in the past 12 months?\" with \"Fitbit\".",
+   "note": "United Kingdom; 14 Jul to 31 Jul 2020 and 7 Feb to 27 Mar 2020; 147 respondents; 18-64 years; respondents who spent money on online fitness & health services (websites and apps)",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitbit",
+    "MyFitnessPal",
+    "30 Day Fitness Challenge",
+    "7 Minute Workout",
+    "Headspace",
+    "Strava",
+    "Flo Period & Ovulation Tracker",
+    "Calm",
+    "Sleep Cycle",
+    "BetterMe Weight Loss",
+    "Fitness Buddy",
+    "Instant Heart Rate",
+    "Clue",
+    "Sweatcoin",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.41,
+      0.33,
+      0.29,
+      0.28,
+      0.24,
+      0.24,
+      0.21,
+      0.2,
+      0.17,
+      0.14,
+      0.12,
+      0.12,
+      0.11,
+      0.1,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Leading health and fitness apps in the Google Play Store in Great Britain in September 2022, by revenue (in U.S. dollars)",
+   "short": "Leading Android health apps in Great Britain 2022, by revenue",
+   "unit": "U.S. dollars",
+   "description": "In September 2022, Fitbit was the leading health and fitness app in Great Britain based on revenues generated from Android users. The app generated approximately 261 thousand U.S. dollars in revenue. Strava ranked second, with a revenue of roughly 261 thousand U.S. dollars. Calorie Counter ranked third, generating more than 158 thousand U.S. dollars in revenues.",
+   "note": "United Kingdom (Great Britain); September 2022; based on total revenue in Google Play Store generated in Great Britain.",
+   "source": "Airnow Revenue in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Fitbit",
+    "Strava: Run, Ride, Hike",
+    "Calorie Counter +",
+    "Headspace: Mindful Meditation",
+    "Calm - Sleep, Meditate, Relax",
+    "Flo Ovulation & Period Tracker",
+    "AllTrails: Hike, Bike & Run",
+    "The Body Coach: Fitness Plans",
+    "Breeze: mental health",
+    "Courtney Black Fitness"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      261782,
+      260945,
+      158022,
+      100455,
+      85582,
+      79878,
+      67687,
+      42564,
+      34297,
+      31370
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Leading health and fitness apps in the Google Play Store in Great Britain in September 2022, by number of downloads",
+   "short": "Leading health and fitness apps in Google Play in Great Britain 2022, by downloads",
+   "unit": "",
+   "description": "In September 2022, Samsung Health was the leading health and fitness mobile app in the Google Play Store in Great Britain, with over 72.7 thousand downloads onto British devices. Huawei Health ranked second, with over 66 thousand downloads onto Android devices during the examined period.",
+   "note": "United Kingdom (Great Britain); September 2022; based on downloads to devices in Great Britain.",
+   "source": "Airnow Number of downloads",
+   "kind": "categorical",
+   "categories": [
+    "Samsung Health",
+    "Huawei Health",
+    "AllTrails: Hike, Bike & Run",
+    "Sweatcoin",
+    "Aarogya Setu",
+    "Calorie Counter +",
+    "Blood Pressure Pro",
+    "Home Workout - No Equipment",
+    "Great Run: Running Events",
+    "PureGym"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      72756,
+      66257,
+      62832,
+      38712,
+      33785,
+      33488,
+      27007,
+      25466,
+      24472,
+      24358
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Wearable devices usage in selected countries as of March 2024",
+   "short": "Wearable devices usage in selected countries 2024",
+   "unit": "",
+   "description": "The displayed data on wearables usage shows a country comparison from the Statista Consumer Insights. As of March 2024, Some 46 percent of respondents in China stated that they personally use wearables (e.g. smart watch, health / fitness tracker). The survey was conducted in 2024. Looking to gain further valuable insights into this matter? Check out share of eHealth tracker / smart watch owners in 56 countries and territories worldwide to see how consumers around the globe are [...]",
+   "note": "Brazil, Canada, China, Germany, India, South Korea, Netherlands, Sweden, United Kingdom, United States; April 2023 to March 2024; 2,020 - 10,059 respondents, differs by country; 18-64 years",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "India",
+    "China (Mainland)",
+    "United Kingdom",
+    "Sweden",
+    "Germany",
+    "South Korea",
+    "Netherlands",
+    "United States of America",
+    "Canada",
+    "Brazil"
+   ],
+   "series": [
+    {
+     "name": "Wearables usage",
+     "values": [
+      0.5,
+      0.46,
+      0.42,
+      0.37,
+      0.35,
+      0.34,
+      0.34,
+      0.32,
+      0.32,
+      0.28
+     ]
+    },
+    {
+     "name": "No wearables usage",
+     "values": [
+      0.5,
+      0.54,
+      0.58,
+      0.63,
+      0.65,
+      0.66,
+      0.66,
+      0.68,
+      0.68,
+      0.72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Most used eHealth tracker / smart watches by brand in the UK as of March 2024",
+   "short": "Most used eHealth tracker / smart watches by brand in the UK 2024",
+   "unit": "",
+   "description": "With 46 percent, Apple is the most popular brand for personal smart watches and eHealth or fitness trackers among UK consumers. In second place follows Fitbit with 28 percent of respondents. These results are based on a representative online survey conducted in 2024 among 1,696 consumers in the UK.",
+   "note": "United Kingdom; April 2023 to March 2024; 1696 respondents; 18-64 years; respondents who use fitness trackers, smartwatches with fitness function, motion trackers or sleep tracking systems",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Apple",
+    "Fitbit",
+    "Samsung",
+    "Garmin",
+    "Google",
+    "Amazfit",
+    "Huawei",
+    "ASUS",
+    "Fossil",
+    "LG",
+    "Honor",
+    "Misfit",
+    "Mobvoi",
+    "Motorola",
+    "Polar"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.46,
+      0.28,
+      0.15,
+      0.08,
+      0.05,
+      0.04,
+      0.04,
+      0.03,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Forecast for the number of online users in the eServices market by segment in the United Kingdom from 2023 to 2030 (in million)",
+   "short": "Forecast for the number of users in the eServices market by segment in the United Kingdom until 2030",
+   "unit": "million",
+   "description": "Over the last two observations, the number of users is forecast to significantly increase in all segments. Comparing the three different segments for the year 2030, the segment 'Event Tickets' leads the ranking with 19.62 million users. Contrastingly, 'Dating Services' is ranked last, with 8.36 million users. Their difference, compared to Event Tickets, lies at 11.26 million users.",
+   "note": "United Kingdom; 2023 to 2030",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030"
+   ],
+   "series": [
+    {
+     "name": "Event Tickets",
+     "values": [
+      17.94,
+      18.14,
+      18.23,
+      18.27,
+      18.28,
+      19.61,
+      19.61,
+      19.62
+     ]
+    },
+    {
+     "name": "Fitness",
+     "values": [
+      15.01,
+      15.74
+     ]
+    },
+    {
+     "name": "Dating Services",
+     "values": [
+      13.1,
+      13.32,
+      13.53,
+      13.74,
+      13.94,
+      8.31,
+      8.34,
+      8.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Forecast for the average revenue per online user for the eServices market by segment in the United Kingdom from 2023 to 2030 (in U.S. dollars)",
+   "short": "ARPU forecast for the eServices market by segment in the United Kingdom until 2030",
+   "unit": "U.S. dollars",
+   "description": "The average revenue per user (ARPU) is forecast to experience significant growth in all segments in 2030. Concerning the three selected segments, the segment Event Tickets has the largest average revenue per user (ARPU) with 266.29 U.S. dollars. Contrastingly, Dating Services is ranked last, with 40.32 U.S. dollars. Their difference, compared to Event Tickets, lies at 225.97 U.S. dollars.",
+   "note": "United Kingdom; 2023 to 2030",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030"
+   ],
+   "series": [
+    {
+     "name": "Event Tickets",
+     "values": [
+      246.94,
+      255.25,
+      261.5,
+      265.95,
+      269.08,
+      264.06,
+      265.41,
+      266.29
+     ]
+    },
+    {
+     "name": "Fitness",
+     "values": [
+      48.13,
+      47.09
+     ]
+    },
+    {
+     "name": "Dating Services",
+     "values": [
+      26.12,
+      26.44,
+      26.64,
+      26.68,
+      26.66,
+      40.03,
+      40.2,
+      40.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Online penetration rate forecast for the eServices Fitness market in the United Kingdom from 2017 to 2024",
+   "short": "Penetration rate for the eServices Fitness market in the UK until 2024",
+   "unit": "",
+   "description": "This statistic presents a forecast of the penetration rate in the eServices Fitness market in the United Kingdom until the year 2024. According to the Digital Market Outlook, the penetration rate of the eServices Fitness market in the segment Wearables in the United Kingdom is expected to be 10.3 percent in 2024. An overview of all Digital Markets can be found here.",
+   "note": "United Kingdom; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Apps",
+     "values": [
+      13.3,
+      14.1,
+      15,
+      18.1,
+      19.4,
+      20.5,
+      21.6,
+      22.6
+     ]
+    },
+    {
+     "name": "Wearables",
+     "values": [
+      9,
+      9.4,
+      9.8,
+      12.2,
+      11.1,
+      10.5,
+      10.3,
+      10.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Forecast for the average revenue per online user in the eServices Fitness market in the United Kingdom from 2017 to 2024 (in U.S. dollars)",
+   "short": "ARPU forecast for the eServices Fitness market in the United Kingdom until 2024",
+   "unit": "U.S. dollars",
+   "description": "This statistic presents a forecast of the average revenue per online user in the eServices Fitness market in the United Kingdom until the year 2024. According to the Digital Market Outlook, the average revenue per online user of the eServices Fitness segment Apps in the United Kingdom is expected to be 11.8 U.S. dollars in 2024. An overview of all Digital Markets can be found here.",
+   "note": "United Kingdom; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Wearables",
+     "values": [
+      70.4,
+      71.6,
+      73.1,
+      74.6,
+      75.9,
+      76.9,
+      77.7,
+      78.2
+     ]
+    },
+    {
+     "name": "Apps",
+     "values": [
+      9.6,
+      10.3,
+      10.7,
+      11.1,
+      11.3,
+      11.4,
+      11.6,
+      11.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Forecast for the number of online users in the eServices Fitness market in the United Kingdom from 2017 to 2024 (in million)",
+   "short": "Number of users in the eServices Fitness market in the UK until 2024",
+   "unit": "million",
+   "description": "This statistic presents a forecast of the number of online users in the eServices Fitness market in the United Kingdom until the year 2024. According to the Digital Market Outlook, the number of online users of the eServices Fitness segment Wearables in the United Kingdom is expected to be 7.1 million in 2024. An overview of all Digital Markets can be found here.",
+   "note": "United Kingdom; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Apps",
+     "values": [
+      8.9,
+      9.4,
+      10.1,
+      12.3,
+      13.2,
+      14.1,
+      14.9,
+      15.6
+     ]
+    },
+    {
+     "name": "Wearables",
+     "values": [
+      6,
+      6.3,
+      6.6,
+      8.3,
+      7.6,
+      7.2,
+      7.1,
+      7.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Online revenue forecast for the eServices Fitness market in the United Kingdom from 2017 to 2024 (in million U.S. dollars)",
+   "short": "Online revenue forecast for the eServices Fitness market in the UK until 2024",
+   "unit": "million U.S. dollars",
+   "description": "This statistic presents a forecast of the online revenue in the eServices Fitness market in the United Kingdom until the year 2024. According to the Digital Market Outlook, the online revenue of the eServices Fitness segment Apps in the United Kingdom is expected to be 183.5 million U.S. dollars in 2024. An overview of all Digital Markets can be found here.",
+   "note": "United Kingdom; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Wearables",
+     "values": [
+      422.3,
+      453.1,
+      481.5,
+      616.7,
+      575.6,
+      554.4,
+      550.3,
+      557.7
+     ]
+    },
+    {
+     "name": "Apps",
+     "values": [
+      85.4,
+      96.9,
+      108.6,
+      136.3,
+      148.8,
+      160.8,
+      172.4,
+      183.5
+     ]
+    }
+   ]
+  }
+ ]
+}

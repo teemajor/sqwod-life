@@ -1,0 +1,625 @@
+{
+ "studyId": "39712",
+ "study": "yoga statista dossier",
+ "file": "research/statista/study_id39712_yoga-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Market size of the global health club industry from 2009 to 2019 (in billion U.S. dollars)",
+   "short": "Total revenue of the global health club industry 2009-2019",
+   "unit": "billion U.S. dollars",
+   "description": "The statistic depicts the global market size of the health club industry from 2009 to 2019. In 2019, the global health and fitness club industry generated estimated revenues of 96.7 billion U.S. dollars.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      67.19,
+      70.93,
+      72.75,
+      75.75,
+      78.17,
+      84.3,
+      81.2,
+      83.15,
+      87.23,
+      94,
+      96.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Total number of health clubs worldwide from 2009 to 2019, by region",
+   "short": "Health clubs - total number by region worldwide 2009-2019",
+   "unit": "",
+   "description": "This graph depicts the number of health clubs worldwide by region from 2009 to 2019. In Europe, there were an estimated 63,644 health clubs in 2019.",
+   "note": "Worldwide; 2009 to 2019",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012**",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019"
+   ],
+   "series": [
+    {
+     "name": "Europe",
+     "values": [
+      48087,
+      48005,
+      47701,
+      45396,
+      49197,
+      51299,
+      51204,
+      55003,
+      59055,
+      63644
+     ]
+    },
+    {
+     "name": "North America",
+     "values": [
+      38192,
+      38332,
+      38402,
+      36742,
+      38400,
+      40710,
+      42336,
+      42696,
+      44633,
+      47957
+     ]
+    },
+    {
+     "name": "South America",
+     "values": [
+      21442,
+      24086,
+      24086
+     ]
+    },
+    {
+     "name": "Latin America",
+     "values": [
+      46130,
+      53617,
+      55809,
+      55809,
+      65863,
+      65863,
+      61374
+     ]
+    },
+    {
+     "name": "Asia",
+     "values": [
+      16840,
+      18149,
+      18561
+     ]
+    },
+    {
+     "name": "Australia",
+     "values": [
+      3210,
+      3210,
+      3234
+     ]
+    },
+    {
+     "name": "Asia-Pacific",
+     "values": [
+      21658,
+      21804,
+      31011,
+      31011,
+      31011,
+      25140,
+      25140
+     ]
+    },
+    {
+     "name": "Africa",
+     "values": [
+      750,
+      1776,
+      1776
+     ]
+    },
+    {
+     "name": "Africa & Middle East",
+     "values": [
+      2234,
+      2282,
+      5090,
+      6434,
+      6494,
+      6554
+     ]
+    },
+    {
+     "name": "Middle East & North Africa",
+     "values": [
+      5969
+     ]
+    },
+    {
+     "name": "Southern Africa",
+     "values": [
+      1092
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Revenue of the yoga industry in the United States from 2012 to 2020 (in billion U.S. dollars)",
+   "short": "US yoga industry revenue 2012-2020",
+   "unit": "billion U.S. dollars",
+   "description": "The statistic shows revenue of the yoga industry in the United States in 2012, 2015 and 2020. In 2015, yoga industry revenue amounted to 9.09 billion U.S. dollars in the United States.",
+   "note": "United States; 2012 to 2015",
+   "source": "Sports Club Advisors",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2015",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6.9,
+      9.09,
+      11.56
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "U.S. yoga and pilates industry segmentation in 2015, by products/services",
+   "short": "Yoga and pilates products & services market share in the U.S. 2015",
+   "unit": "",
+   "description": "The statistic shows products and services segmentation of the U.S. yoga and pilates market in 2015. The industry generated 51.3 percent of its revenue from yoga classes.",
+   "note": "United States; 2015",
+   "source": "IBISWorld Market share",
+   "kind": "categorical",
+   "categories": [
+    "Yoga classes",
+    "Pilates classes",
+    "Pilates and yoga accreditation training",
+    "Merchandise sales"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.513,
+      0.197,
+      0.15,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Number of yoga participants in the United States from 2010 to 2023 (in millions)",
+   "short": "Yoga participation in the U.S. 2010-2023",
+   "unit": "millions",
+   "description": "In 2023, the number of people doing yoga in the United States continued a downward trend which began in the previous year. In 2022, around 34 million U.S. Americans reported having done yoga at least once in that year. By 2023, that number had declined to roughly 33.64 million, denoting a 1.8 percent decrease in yoga participants in the North American country between 2022 and 2023.",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      21,
+      22.11,
+      23.25,
+      24.31,
+      25.26,
+      25.29,
+      26.27,
+      27.35,
+      28.75,
+      30.46,
+      32.81,
+      34.35,
+      34.25,
+      33.64
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of pilates participants in the United States from 2010 to 2023 (in millions)",
+   "short": "Participation in pilates train 2010-2023",
+   "unit": "millions",
+   "description": "There were 11.86 million people who participated in pilates training in the United States in 2023, denoting an increase of 15 percent versus the previous year. This marked the highest annual figure for pilates participants in the U.S. since 2010.",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.4,
+      8.51,
+      8.52,
+      8.07,
+      8.5,
+      8.59,
+      8.89,
+      9.05,
+      9.08,
+      9.24,
+      9.91,
+      9.75,
+      10.31,
+      11.86
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Which of the following statements on yoga do you agree with?",
+   "short": "Attitudes people in the U.S. have toward practicing yoga 2016",
+   "unit": "",
+   "description": "This statistic shows which of the statements in regard to yoga people in the United States agree with in 2016 according to a Statista survey. 42 percent of survey respondents said that they agree with the statement, \"Yoga increases my personal well-being.\"",
+   "note": "United States; October 28 - November 6, 2016; 453 respondents; 18 to 69 years; Did yoga within the last 24 months",
+   "source": "Statista Survey Agree with statement",
+   "kind": "categorical",
+   "categories": [
+    "Yoga increases my personal well-being",
+    "Yoga helps me find my inner peace",
+    "Yoga fits my lifestyle well",
+    "Yoga is more than just exercise to me",
+    "Yoga perfectly meets my personal needs",
+    "I see great results from yoga that no other type of exercise could provide",
+    "I prefer yoga over other sports",
+    "Yoga is just a fad that will end quickly",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.42,
+      0.41,
+      0.38,
+      0.32,
+      0.28,
+      0.23,
+      0.22,
+      0.11,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Which type of yoga do / did you do?",
+   "short": "Types of yoga people in the U.S. do or did 2016",
+   "unit": "",
+   "description": "This statistic shows what type of yoga people in the United States do in 2016 according to a Statista survey. 24 percent of survey respondents said they do / did Acro Yoga.",
+   "note": "United States; October 28 - November 6, 2016; 453 respondents; 18 to 69 years; Did yoga within the last 24 months",
+   "source": "Statista Survey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Acro Yoga",
+    "Wellness Yoga",
+    "Power Yoga/Yoga-Pilates/Yogilates",
+    "Anusara Yoga",
+    "Bikram Yoga",
+    "Anti Gravity/Aerial Yoga",
+    "Hatha Yoga",
+    "Forrest Yoga",
+    "Luna Yoga",
+    "Kundalini Yoga",
+    "Kriya Yoga",
+    "Ashtanga/Vinyasa Yoga/Vinyasa Flow",
+    "Integral/Sivananda Yoga",
+    "Yin Yoga",
+    "TriYoga/Flow Yoga"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.24,
+      0.24,
+      0.17,
+      0.14,
+      0.1,
+      0.09,
+      0.09,
+      0.08,
+      0.08,
+      0.07,
+      0.07,
+      0.07,
+      0.05,
+      0.04,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Where do you / did you normally do yoga?",
+   "short": "Where people in the U.S. normally do yoga 2016",
+   "unit": "",
+   "description": "This statistic shows where people in the United States normally do yoga in 2016 according to a Statista survey. 48 percent of survey respondents said they do yoga on their own and not with an instructor or in a studio.",
+   "note": "United States; October 28 - November 6, 2016; 453 respondents; 18 to 69 years; Did yoga within the last 24 months",
+   "source": "Statista Survey Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "On my own - no instructor or studio",
+    "At a gym",
+    "In a yoga studio/school",
+    "With a private instructor",
+    "In a pilates studio",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.35,
+      0.24,
+      0.15,
+      0.11,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Do you currently do or have you ever done yoga on a regular basis?",
+   "short": "Share of people in the U.S. who do or have ever done yoga regularly 2016",
+   "unit": "",
+   "description": "This statistic shows the share of people in the United States who currently do or have ever done yoga on a regular basis in 2016 according to a Statista survey. 49 percent of survey respondents said they have never done yoga on a regular basis.",
+   "note": "United States; October 28 - November 6, 2016; 1,075 respondents; 18 to 69 years; Work out at least once per month",
+   "source": "Statista Survey",
+   "kind": "categorical",
+   "categories": [
+    "Yes, I currently do yoga",
+    "Yes, within the past 12 months",
+    "Yes, 1 to 2 years ago",
+    "Yes, 2 to 3 years ago",
+    "Yes, 3 to 5 years ago",
+    "Yes, but more than 5 years ago",
+    "No, I have never done yoga on a regular basis"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2,
+      0.15,
+      0.08,
+      0.03,
+      0.01,
+      0.05,
+      0.49
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "How regularly do / did you do yoga?",
+   "short": "How regularly people in the U.S. do yoga 2016",
+   "unit": "",
+   "description": "This statistic shows how regularly people in the United States do yoga in 2016 according to a Statista survey. 37 percent of survey respondents said they do yoga several times a week.",
+   "note": "United States; October 28 - November 6, 2016; 453 respondents; 18 to 69 years; Did yoga within the last 24 months",
+   "source": "Statista Survey",
+   "kind": "categorical",
+   "categories": [
+    "Daily",
+    "Several times a week",
+    "Once a week",
+    "2 to 3 times a month",
+    "Once a month",
+    "More rarely"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.19,
+      0.37,
+      0.26,
+      0.09,
+      0.04,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "What time of the day do / did you normally practice yoga?",
+   "short": "Time of the day people in the U.S. normally practice yoga 2016",
+   "unit": "",
+   "description": "This statistic shows what time of the day people in the United States normally practice yoga in 2016 according to a Statista survey. 42 percent of survey respondents said they practice yoga in the morning (6 to 10 a.m.).",
+   "note": "United States; October 28 - November 6, 2016; 453 respondents; 18 to 69 years; Did yoga within the last 24 months",
+   "source": "Statista Survey",
+   "kind": "categorical",
+   "categories": [
+    "In the morning (6 to 10 a.m.)",
+    "In the late morning (10 to 12 a.m.)",
+    "Around noon (12 a.m. to 1 p.m.)",
+    "In the afternoon (1 to 5 p.m.)",
+    "In the evening (5 to 12 p.m.)",
+    "At night (12 p.m. to 6 a.m.)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.42,
+      0.23,
+      0.08,
+      0.15,
+      0.3,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "How many hours do/did you normally spend practicing yoga on an average day?",
+   "short": "How many hours people in the U.S. spend on yoga on an average day 2016",
+   "unit": "",
+   "description": "This statistic shows how many hours people in the United States normally spend practicing yoga on an average day in 2016 according to a Statista survey. 89 percent of survey respondents said they spend on average 1 to 5 hours a day practicing yoga.",
+   "note": "United States; October 28 - November 6, 2016; 431 respondents; 18 to 69 years; Did yoga within the last 24 months",
+   "source": "Statista Survey",
+   "kind": "categorical",
+   "categories": [
+    "0 hours",
+    "1 to 5 hours",
+    "6 to 10 hours",
+    "11 to 24 hours"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.03,
+      0.89,
+      0.03,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "What are/were your monthly expenses for yoga (e.g. course fees) excluding costs for equipment?",
+   "short": "Amount of money people in the U.S. spend on yoga every month 2016",
+   "unit": "",
+   "description": "This statistic shows the amount of money people in the United States spend on yoga (e.g. course fees) excluding costs for equipment in 2016 according to a Statista survey. 28 percent of survey respondents said they practice yoga at no expense.",
+   "note": "United States; October 28 - November 6, 2016; 453 respondents; 18 to 69 years; Did yoga within the last 24 months",
+   "source": "Statista Survey",
+   "kind": "categorical",
+   "categories": [
+    "0$",
+    "1-20$",
+    "21-50$",
+    "51-100$",
+    "101-250$",
+    "No answer"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.24,
+      0.23,
+      0.16,
+      0.07,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "What is the likelihood that you would start doing yoga within the next 12 months?",
+   "short": "How likely people in the U.S. are to start doing yoga within the next 12 months 2016",
+   "unit": "",
+   "description": "This statistic shows how likely people in the United States are to start doing yoga within the next 12 months in 2016 according to a Statista survey. 33 percent of survey respondents said that it would be not at all likely for them to start doing yoga within the next 12 months.",
+   "note": "United States; October 28 - November 6, 2016; 864 respondents; 18 to 69 years; Don't do yoga currently",
+   "source": "Statista Survey",
+   "kind": "categorical",
+   "categories": [
+    "Very likely",
+    "Somewhat likely",
+    "Slightly likely",
+    "Not at all likely"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.18,
+      0.22,
+      0.28,
+      0.33
+     ]
+    }
+   ]
+  }
+ ]
+}

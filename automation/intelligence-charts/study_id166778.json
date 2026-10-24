@@ -1,0 +1,1132 @@
+{
+ "studyId": "166778",
+ "study": "wellness industry in the uk",
+ "file": "research/statista/Health & Wellness/study_id166778_wellness-industry-in-the-uk.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Market size of the wellness industry in Europe in 2022, by country (in billion U.S. dollars)",
+   "short": "Wellness industry market size in Europe in 2022, by country",
+   "unit": "billion U.S. dollars",
+   "description": "The wellness economy in Europe was estimated at a value of just under 1.47 trillion U.S. dollars in 2022. The biggest country market in Europe was Germany, which accounted for revenues of over 268 billion U.S. dollars in the wellness market.",
+   "note": "Europe; 2022",
+   "source": "FTNnews; Global Wellness Institute Market size in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Germany",
+    "United Kingdom",
+    "France",
+    "Italy",
+    "Russia",
+    "Spain",
+    "Netherlands",
+    "Switzerland",
+    "Turkey",
+    "Austria"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      268.65,
+      223.83,
+      171.9,
+      112.12,
+      94.52,
+      82.95,
+      52.3,
+      50.31,
+      44.95,
+      42.35
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Market size of the spa industry in the United Kingdom from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Spa industry market size in the UK 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The spa industry in the United Kingdom experienced an increase of over 20 percent between 2020 and 2022, showing signs of recovery after the coronavirus (COVID-19) pandemic. The market size of the spa industry in the UK was estimated at just over three billion U.S. dollars in 2022.",
+   "note": "United Kingdom; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.32,
+      2.11,
+      2.87,
+      3.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Market size of the workplace wellness industry in the United Kingdom from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Workplace wellness industry market size in the UK 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The workplace wellness market in the United Kingdom experienced a decline over just over four percent between 2020 and 2022. The market size of the workplace wellness industry in the UK was estimated at 2.72 billion U.S. dollars in 2022.",
+   "note": "United Kingdom; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.23,
+      2.96,
+      2.67,
+      2.72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Market size of the wellness tourism industry in the United Kingdom from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Wellness tourism industry market size in the UK 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The wellness tourism market in the United Kingdom experienced an increase of almost 80 percent between 2020 and 2022, showing signs of recovery after the coronavirus (COVID-19) pandemic. The market size of the wellness tourism industry in the UK was estimated at just over 15.6 billion U.S. dollars in 2022.",
+   "note": "United Kingdom; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.1,
+      4.9,
+      11.4,
+      15.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Estimated number of fitness and wellness instructors in the United Kingdom from 4th quarter 2021 to 2nd quarter 2023",
+   "short": "Number of fitness instructors in the UK 2021-2023",
+   "unit": "",
+   "description": "There were estimated to be approximately 57,900 fitness instructors working in the United Kingdom as of the second quarter of 2023, compared with 60,900 in the previous quarter.",
+   "note": "United Kingdom; Q4 2021 to Q2 2023",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      67200,
+      73400,
+      75500,
+      71900,
+      68300,
+      60900,
+      57900
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Revenue of the spa market in the United Kingdom in 2022, by segment (in billion U.S. dollars)",
+   "short": "Spa market revenue in the UK 2022",
+   "unit": "billion U.S. dollars",
+   "description": "The spa market in the United Kingdom generated revenues of over 3.7 billion U.S. dollars in 2022. The largest segment within this market was the day/club/salon spa segment, which accounted for approximately 40 percent of the revenues in that year.",
+   "note": "United Kingdom; 2022",
+   "source": "GlobalData",
+   "kind": "categorical",
+   "categories": [
+    "Total revenue",
+    "Day/club/salon spa"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      3.78,
+      1.55
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Most important factors when booking a spa day in the United Kingdom in 2023",
+   "short": "Most important factors when booking spas in the UK 2023",
+   "unit": "",
+   "description": "Health spas often provide a variety of facilities from indoor swimming pools and hot tubs, to massages and beauty treatments. In a 2023 survey in the United Kingdom, over one third of respondents stated that they looked at the facilities for things like a swimming pool and relaxation space when making a decision to book one spa day over another. Meanwhile, just under 10 percent of respondents read up on reviews and ratings when making their decision.",
+   "note": "United Kingdom; 2023; 8,827 respondents",
+   "source": "Good Spa Guide; SpaSeekers.com Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "It`s about finding the right offer, I`m looking for real value for money",
+    "I look at the facilities for things like a swimming pool and relaxation space",
+    "I read up on reviews and ratings - especially Good Spa Guide ratings!",
+    "I look at the treatments - I have a favourite that I want to see",
+    "I already know the spa I want to go to, there`s no swaying me",
+    "I look for a specific product brand - I prefer their treatments and products"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4002,
+      0.3432,
+      0.099,
+      0.0749,
+      0.0443,
+      0.0113
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Most important features of spas in the United Kingdom in 2023",
+   "short": "Most attractive spa features in the UK 2023",
+   "unit": "",
+   "description": "A 2023 survey explored the most attractive features at spas according to respondents in the United Kingdom. Over half of respondents deemed thermal rooms as the most important factor when booking a spa. Meanwhile, 13 percent of respondents wanted the right treatment selection when selecting a spa location.",
+   "note": "United Kingdom; 2023; 8,694 respondents",
+   "source": "Good Spa Guide; Spa Business; SpaSeekers.com",
+   "kind": "categorical",
+   "categories": [
+    "Thermal rooms",
+    "Right treatment selection",
+    "Relaxation rooms",
+    "Outdoor spa space",
+    "Pool"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.13,
+      0.1,
+      0.1,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Importance of wellness options when booking a spa in the United Kingdom in 2023",
+   "short": "Importance of wellness options to spa clients in the UK 2023",
+   "unit": "",
+   "description": "A 2023 survey explored the importance of wellness options such as holistic treatments and mindfulness classes to customers at spas in the United Kingdom. Just over four percent of respondents stated that they would not book a spa unless there were wellness options. Meanwhile, around 15 percent of respondents were not at all interested in wellness services.",
+   "note": "United Kingdom; 2023; 8,682 respondents",
+   "source": "Good Spa Guide; SpaSeekers.com",
+   "kind": "categorical",
+   "categories": [
+    "A great deal",
+    "A lot",
+    "A moderate amount",
+    "A little",
+    "Not at all"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0415,
+      0.1395,
+      0.1857,
+      0.4801,
+      0.1533
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Importance of sustainability when booking a spa in the United Kingdom in 2023",
+   "short": "Importance of sustainability to spa clients in the UK 2023",
+   "unit": "",
+   "description": "A 2023 survey explored the importance of sustainability to customers at spas in the United Kingdom. Just over one quarter of respondents stated that sustainability matter a lot to them when booking a spa, but it would not stop them if the spa looked amazing. Meanwhile, less than eight percent of respondents stated that sustainability did not matter to them at all.",
+   "note": "United Kingdom; 2023; 8,686 respondents",
+   "source": "Good Spa Guide; SpaSeekers.com",
+   "kind": "categorical",
+   "categories": [
+    "A little",
+    "A lot",
+    "A moderate amount",
+    "Not at all",
+    "A great deal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4203,
+      0.2689,
+      0.185,
+      0.0748,
+      0.0473
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Share of spa vouchers redeemed in the United Kingdom in 2023, by month",
+   "short": "Spa vouchers redeemed in the United Kingdom by month 2023",
+   "unit": "",
+   "description": "In 2023, January was the month with the highest share of spa vouchers redeemed in the United Kingdom. The following months, February and March, had a combined total of 22 percent of the total number of vouchers redeemed in that year.",
+   "note": "Europe, United Kingdom; 2023",
+   "source": "SpaSeekers.com",
+   "kind": "categorical",
+   "categories": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.15,
+      0.11,
+      0.11,
+      0.07,
+      0.08,
+      0.07,
+      0.08,
+      0.07,
+      0.07,
+      0.08,
+      0.08,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Main barriers to going to a spa in the United Kingdom in 2023",
+   "short": "Reasons for not going to a spa in the UK 2023",
+   "unit": "",
+   "description": "A 2023 survey in the United Kingdom revealed the main worries and doubts respondents had about going to a spa. During the survey, around 18 percent of respondents stated that they had worried about going to a spa because they did not feel body confident. However, over 70 percent of respondents stated that they were confident that a spa would treat them well in any situation.",
+   "note": "United Kingdom; 2023; 8,713 respondents",
+   "source": "Good Spa Guide; SpaSeekers.com Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "You don`t (or didn`t) feel body confident",
+    "You are (or were) pregnant",
+    "You are (or were) disabled",
+    "You have (or have had) cancer",
+    "You have (or have had) another major illness",
+    "You feel (or felt) uncomfortable because of your gender or sexuality",
+    "I would prefer not to say",
+    "No - I`m confident a spa would treat me well in any situation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1764,
+      0.0471,
+      0.0133,
+      0.0132,
+      0.0106,
+      0.0052,
+      0.0157,
+      0.7008
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Household expenditure on health in the United Kingdom (UK) from 2005 to 2022 (in million GBP)",
+   "short": "Expenditure on health in the United Kingdom 2005-2022",
+   "unit": "million GBP",
+   "description": "This statistic shows the total consumer expenditure on health in the United Kingdom from 2005 to 2022. In 2022, consumer expenditure on health products and services was some 27.3 billion British pounds, a significant increase compared to the previous year.",
+   "note": "United Kingdom; 2005 to 2022",
+   "source": "Office for National Statistics (UK)",
+   "kind": "timeseries",
+   "categories": [
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13274,
+      11619,
+      16081,
+      16103,
+      15877,
+      17043,
+      17925,
+      19854,
+      24032,
+      24797,
+      25407,
+      26912,
+      27785,
+      28240,
+      28609,
+      24308,
+      25494,
+      27339
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Average annual spending on wellness in the United Kingdom in 2023, by category (in GBP)",
+   "short": "Annual spend on self-care in the UK 2023",
+   "unit": "GBP",
+   "description": "A 2023 survey in the United Kingdom revealed that average consumers spent over 4.6 thousand British pounds annually on wellness and self-care. Within this category, consumers in the UK spent an average of 560 British pounds a year on massages.",
+   "note": "Europe, United Kingdom; June 28 to 30, 2023; 2,009 respondents",
+   "source": "Professional Beauty; Website (aquacard.co.uk) Average spend in GBP",
+   "kind": "categorical",
+   "categories": [
+    "Spa day",
+    "Hairdresser appointment",
+    "Beauty treatments (e.g. waxing, injectables)",
+    "Beauty products",
+    "Massage",
+    "Manicure/pedicure",
+    "Skincare products",
+    "Bath essentials (e.g. oils, bath bombs)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      623,
+      610,
+      605,
+      581,
+      560,
+      560,
+      556,
+      524
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Average annual spending on massages in the United Kingdom in 2023, by gender (in GBP)",
+   "short": "Annual spend on massages in the UK by gender 2023",
+   "unit": "GBP",
+   "description": "A 2023 survey in the United Kingdom revealed that men spent more a year on average on massages than women. Overall, the average consumer in the UK spent 560 British pounds on massages in a year.",
+   "note": "Europe, United Kingdom; June 28 to 30, 2023; 2,009 respondents; only respondents who have massages",
+   "source": "Professional Beauty; Website (aquacard.co.uk)",
+   "kind": "categorical",
+   "categories": [
+    "Male",
+    "Female",
+    "Total"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      668,
+      457,
+      560
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Average annual spending on spa days in the United Kingdom in 2023, by gender (in GBP)",
+   "short": "Annual spend on spa days in the UK by gender 2023",
+   "unit": "GBP",
+   "description": "A 2023 survey in the United Kingdom revealed that men spent more a year on average on spa days than women. Overall, the average consumer in the UK spent 623 British pounds on spa days in a year.",
+   "note": "Europe, United Kingdom; June 28 to 30, 2023; 2,009 respondents; only respondents who go on spa days",
+   "source": "Professional Beauty; Website (aquacard.co.uk)",
+   "kind": "categorical",
+   "categories": [
+    "Male",
+    "Female",
+    "Total"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      683,
+      563,
+      623
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Level of spending on spa days in the current economic climate in the United Kingdom in 2023",
+   "short": "Current level of spending on spa days in the UK 2023",
+   "unit": "",
+   "description": "A 2023 survey explored the level of spending on spa days in the United Kingdom in the current economic climate. Around one quarter of respondents stated that they were likely to spend less when booking a spa day, while four percent stated that they were not going to spas at all at the moment.",
+   "note": "United Kingdom; 2023; 8,827 respondents",
+   "source": "Good Spa Guide; Spa Business; SpaSeekers.com",
+   "kind": "categorical",
+   "categories": [
+    "More",
+    "I`m not going to spas at the moment",
+    "Less",
+    "About the same"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.02,
+      0.04,
+      0.26,
+      0.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Consumers planning to purchase products focused on mental health and wellbeing in the United States and the United Kingdom in 2022, by generation",
+   "short": "Mental health & wellbeing product buying plans in the U.S. & UK 2022, by generation",
+   "unit": "",
+   "description": "In 2022, many young people in the United Kingdom and the United States said they were likely to buy mental health and wellbeing focused products. For example, around seven in 10 surveyed consumers of the Gen Z and millennial variety said they were likely to buy such goods that year. According to the survey, boomers were least likely to buy items for their mental health or wellbeing in 2022 out of all generations.",
+   "note": "United Kingdom, United States; January 2022; 2,099 respondents*; * 1,051 respondents in the U.S. and 1,048 respondents in the UK. Original question: 'How likely are you to purchase a product in 2022 that is focused on your mental [...] Read more",
+   "source": "Latana",
+   "kind": "categorical",
+   "categories": [
+    "Very likely",
+    "Likely",
+    "Neither likely nor unlikely",
+    "Unlikely",
+    "Very unlikely",
+    "Don't know"
+   ],
+   "series": [
+    {
+     "name": "Gen Z",
+     "values": [
+      0.27,
+      0.4,
+      0.19,
+      0.05,
+      0.02,
+      0.05
+     ]
+    },
+    {
+     "name": "Millennials",
+     "values": [
+      0.35,
+      0.37,
+      0.19,
+      0.05,
+      0.03,
+      0.02
+     ]
+    },
+    {
+     "name": "Gen X",
+     "values": [
+      0.21,
+      0.4,
+      0.28,
+      0.06,
+      0.05,
+      0.06
+     ]
+    },
+    {
+     "name": "Baby boomers",
+     "values": [
+      0.1,
+      0.24,
+      0.37,
+      0.09,
+      0.11,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Share of consumers who purchased health and beauty products online or in-store in the United Kingdom from July 2019 to December 2023",
+   "short": "Share of UK shoppers purchasing health and beauty online or in-store 2019-2023",
+   "unit": "",
+   "description": "According to survey findings, UK shoppers' purchases of health and beauty products online and in-store changed gradually between July 2019 and December 2023. The share of shoppers purchasing such products via in-store channels generally declined during the observed period, going from 63 percent to 53 percent in December 2023.",
+   "note": "United Kingdom; July 2019 to December 2023; Between 1,974 and 2,042; 18 years and older; UK shoppers per wave",
+   "source": "YouGov",
+   "kind": "timeseries",
+   "categories": [
+    "July 2019",
+    "September 2019",
+    "December 2019",
+    "March 2020",
+    "June 2020",
+    "September 2020",
+    "December 2020",
+    "March 2021",
+    "June 2021",
+    "September 2021",
+    "December 2021",
+    "March 2022",
+    "June 2022",
+    "September 2022",
+    "December 2022",
+    "March 2023",
+    "June 2023",
+    "September 2023",
+    "December 2023"
+   ],
+   "series": [
+    {
+     "name": "In-store",
+     "values": [
+      0.63,
+      0.6,
+      0.61,
+      0.62,
+      0.53,
+      0.51,
+      0.47,
+      0.46,
+      0.51,
+      0.52,
+      0.5,
+      0.51,
+      0.54,
+      0.53,
+      0.52,
+      0.52,
+      0.52,
+      0.53,
+      0.55
+     ]
+    },
+    {
+     "name": "Online",
+     "values": [
+      0.18,
+      0.21,
+      0.2,
+      0.21,
+      0.28,
+      0.29,
+      0.3,
+      0.34,
+      0.3,
+      0.28,
+      0.3,
+      0.29,
+      0.29,
+      0.29,
+      0.27,
+      0.27,
+      0.29,
+      0.29,
+      0.28
+     ]
+    },
+    {
+     "name": "Neither - I don't buy such items",
+     "values": [
+      0.16,
+      0.16,
+      0.15,
+      0.15,
+      0.16,
+      0.17,
+      0.19,
+      0.15,
+      0.15,
+      0.16,
+      0.04,
+      0.16,
+      0.14,
+      0.15,
+      0.17,
+      0.17,
+      0.15,
+      0.15,
+      0.15
+     ]
+    },
+    {
+     "name": "Don't know",
+     "values": [
+      0.03,
+      0.03,
+      0.04,
+      0.03,
+      0.03,
+      0.03,
+      0.04,
+      0.05,
+      0.04,
+      0.16,
+      0.04,
+      0.04,
+      0.04,
+      0.03,
+      0.04,
+      0.04,
+      0.04,
+      0.03,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Leading beauty and health online shops ranked by brand awareness in the United Kingdom in 2023",
+   "short": "Most well-known beauty and health online shops in the UK 2023",
+   "unit": "",
+   "description": "Boots is the most well-known beauty & health online shop in the UK. Founded in 1849, the Nottinghamshire based brand is recognized by 93 percent of internet respondents. Second on this list is the health and beauty retailer Superdrug, followed by LloydsPharmacy and Avon.",
+   "note": "United Kingdom; August to September 2023; 1243 respondents; 18 to 64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Boots",
+    "Superdrug",
+    "LloydsPharmacy",
+    "Avon",
+    "The Perfume Shop",
+    "The Fragrance Shop",
+    "LUSH",
+    "Sephora",
+    "Pharmacy2U",
+    "Lookfantastic",
+    "fragrancedirect",
+    "Feelunique",
+    "Cult Beauty",
+    "Glossybox",
+    "Space NK"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.93,
+      0.89,
+      0.85,
+      0.83,
+      0.8,
+      0.72,
+      0.71,
+      0.48,
+      0.46,
+      0.4,
+      0.38,
+      0.37,
+      0.31,
+      0.3,
+      0.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Revenue in the digital fitness & well-being devices segment of the digital health market United Kingdom from 2018 to 2028 (in million U.S. dollars)",
+   "short": "Revenue in the digital fitness & well-being devices segment UK 2018-2028",
+   "unit": "million U.S. dollars",
+   "description": "The indicator 'Revenue by market' in the 'Fitness Trackers' segment of the digital health market in the United Kingdom was forecast to continuously increase between 2024 and 2028 by in total 503.7 million U.S. dollars (+33.04 percent). After the sixth consecutive increasing year, the indicator is estimated to reach 2 billion U.S. dollars and therefore a new peak in 2028.",
+   "note": "United Kingdom; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      676.49,
+      828.45,
+      1073.11,
+      1308.44,
+      1285.3,
+      1376.58,
+      1524.3,
+      1649.25,
+      1777.51,
+      1902.11,
+      2028
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Number of users in the digital fitness & well-being devices segment of the digital health market United Kingdom from 2018 to 2028 (in million individuals)",
+   "short": "Users in the digital fitness & well-being devices segment UK 2018-2028",
+   "unit": "million individuals",
+   "description": "The indicator 'Users by market' in the 'Fitness Trackers' segment of the digital health market in the United Kingdom was forecast to continuously increase between 2024 and 2028 by in total 1.2 million users (+12.02 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 11.15 million users and therefore a new peak in 2028. Notably, the indicator 'Users by market' of the 'Fitness Trackers' segment of the digital health market was continuously [...]",
+   "note": "United Kingdom; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.96,
+      6.15,
+      7.5,
+      8.39,
+      8.89,
+      9.47,
+      9.98,
+      10.37,
+      10.7,
+      10.95,
+      11.15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Revenue in the digital fitness & well-being segment of the digital health market United Kingdom from 2018 to 2028 (in million U.S. dollars)",
+   "short": "Revenue in the digital fitness & well-being market UK 2018-2028",
+   "unit": "million U.S. dollars",
+   "description": "The indicator 'Revenue by market' in the 'Digital Fitness & Well-Being' segment of the digital health market in the United Kingdom was forecast to continuously increase between 2024 and 2028 by in total 566.5 million U.S. dollars (+27.15 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 2.7 billion U.S. dollars and therefore a new peak in 2028. Notably, the indicator 'Revenue by market' of the 'Digital Fitness & Well-Being' segment of the digital health [...]",
+   "note": "United Kingdom; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      724.88,
+      960.54,
+      1303.43,
+      1493.55,
+      1659.89,
+      1876.14,
+      2086.81,
+      2269.56,
+      2423.52,
+      2545.8,
+      2653.27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Number of users in the digital fitness & well-being segment of the digital health market United Kingdom from 2018 to 2028 (in million individuals)",
+   "short": "Users in the digital fitness & well-being market UK 2018-2028",
+   "unit": "million individuals",
+   "description": "The indicator 'Users by market' in the 'Digital Fitness & Well-Being' segment of the digital health market in the United Kingdom was forecast to continuously increase between 2024 and 2028 by in total 3.4 million users (+13.64 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 28.28 million users and therefore a new peak in 2028. Notably, the indicator 'Users by market' of the 'Digital Fitness & Well-Being' segment of the digital health market was [...]",
+   "note": "United Kingdom; 2018 to 2028",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.4,
+      11.8,
+      17.22,
+      19.77,
+      21.49,
+      23.45,
+      24.93,
+      26.1,
+      27.1,
+      27.72,
+      28.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Revenue in the health & fitness segment of the app market United Kingdom from 2017 to 2027 (in million U.S. dollars)",
+   "short": "Revenue in the health & fitness segment of the app market United Kingdom 2017-2027",
+   "unit": "million U.S. dollars",
+   "description": "The indicator 'Revenue By Segment' in the 'Health & Fitness' segment of the app market in the United Kingdom was forecast to continuously increase between 2024 and 2027 by in total 126.2 million U.S. dollars (+39.01 percent). After the tenth consecutive increasing year, the indicator is estimated to reach 449.68 million U.S. dollars and therefore a new peak in 2027. Notably, the indicator 'Revenue By Segment' of the 'Health & Fitness' segment of the app market was continuously [...]",
+   "note": "United Kingdom; 2017 to 2027",
+   "source": "Statista; Statista Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      48.19,
+      77.87,
+      111.54,
+      171.18,
+      238.97,
+      243.58,
+      278.3,
+      323.49,
+      367.25,
+      409,
+      449.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Leading wearable brands ranked by brand awareness in the United Kingdom in 2023",
+   "short": "Most well-known wearable brands in the UK 2023",
+   "unit": "",
+   "description": "When it comes to the most well-known wearable brands in the UK, Samsung tops the list. The South Korean brand is recognized by 94 percent of respondents in the United Kingdom, just as much as the also first placed Apple. Sony comes third in this list, followed by Adidas and LG.",
+   "note": "United Kingdom; October 2023; 1247 respondents; 18 to 64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Samsung",
+    "Apple",
+    "Sony",
+    "adidas",
+    "LG",
+    "Fitbit",
+    "Huawei",
+    "Garmin",
+    "ASUS",
+    "Michael Kors",
+    "Xiaomi",
+    "Fossil",
+    "Oppo",
+    "Honor",
+    "Amazfit"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.94,
+      0.94,
+      0.92,
+      0.91,
+      0.87,
+      0.84,
+      0.84,
+      0.65,
+      0.61,
+      0.6,
+      0.47,
+      0.44,
+      0.43,
+      0.34,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Prospective health benefits for mobile users engaging with health and fitness apps in selected countries in 2023",
+   "short": "Health and fitness app planned usage reasons in selected countries 2023",
+   "unit": "",
+   "description": "According to a survey of users in the United States, United Kingdom, and France, connecting more with friends and family was the main reason respondents were planning on using mobile fitness and health apps in 2023. Accessing fitness content and workouts was the second most popular reason for mobile users to plan using health apps, with 30 percent of users in France reporting planning to using health apps for this type of content.",
+   "note": "France, United Kingdom, United States; January 2023; 4,000 respondents; 18 years and older",
+   "source": "Airship; Sapio Research Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Connecting with friends and family more",
+    "Workout / fitness",
+    "Improving sleep",
+    "Nutritionist / diet",
+    "Virtual doctor visits (health, theraphy, counseling)",
+    "Limiting screen time",
+    "Avoid distracting interruption",
+    "Meditation / wellness",
+    "Biometrics / heart monitoring",
+    "Fertility / period tracking",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "France",
+     "values": [
+      0.27,
+      0.29,
+      0.16,
+      0.15,
+      0.1,
+      0.14,
+      0.1,
+      0.09,
+      0.1,
+      0.07,
+      0.01
+     ]
+    },
+    {
+     "name": "United Kingdom",
+     "values": [
+      0.26,
+      0.25,
+      0.19,
+      0.15,
+      0.07,
+      0.14,
+      0.09,
+      0.11,
+      0.09,
+      0.06,
+      0.01
+     ]
+    },
+    {
+     "name": "United States",
+     "values": [
+      0.27,
+      0.25,
+      0.15,
+      0.17,
+      0.15,
+      0.11,
+      0.13,
+      0.13,
+      0.1,
+      0.06,
+      0.01
+     ]
+    },
+    {
+     "name": "Overall",
+     "values": [
+      0.27,
+      0.26,
+      0.17,
+      0.16,
+      0.12,
+      0.12,
+      0.11,
+      0.11,
+      0.09,
+      0.06,
+      0.01
+     ]
+    }
+   ]
+  }
+ ]
+}

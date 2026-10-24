@@ -1,0 +1,1185 @@
+{
+ "studyId": "62092",
+ "study": "instagram marketing and advertising",
+ "file": "research/statista/Fitness Marketing/study_id62092_instagram-marketing-and-advertising.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Social media advertising spending worldwide from 2019 to 2028, by device (in billion U.S. dollars)",
+   "short": "Social media ad spending worldwide 2019-2028, by device",
+   "unit": "billion U.S. dollars",
+   "description": "The ad spending is forecast to experience significant growth in all segments in 2028. As part of the positive trend, the indicator achieves the maximum value across all two different segments by the end of the comparison period. Notably, the segment Social Media Advertising Mobile stands out with the highest value of 212.68 billion U.S. dollars.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Social Media Advertising Mobile",
+     "values": [
+      74.42,
+      105.01,
+      146.06,
+      154.75,
+      170.3,
+      181.55,
+      190.54,
+      198.17,
+      205.43,
+      212.68
+     ]
+    },
+    {
+     "name": "Social Media Advertising Desktop",
+     "values": [
+      23.08,
+      27.76,
+      34.86,
+      34.75,
+      36.78,
+      38.25,
+      39.51,
+      40.68,
+      41.89,
+      43.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Leading markets worldwide in 2022, by social media advertising spending (in million U.S. dollars)",
+   "short": "Largest social media advertising markets worldwide 2022",
+   "unit": "million U.S. dollars",
+   "description": "Comparing the 20 selected regions regarding the ad spending in the 'Social Media Advertising' segment of the digital advertising market, the United States is leading the ranking (66.6 billion U.S. dollars) and is followed by China with 64.6 billion U.S. dollars. At the other end of the spectrum is Thailand with 457.91 million U.S. dollars, indicating a difference of 66.2 billion U.S. dollars to the United States.",
+   "note": "Worldwide; Jan 1st to Dec 31st 2022",
+   "source": "Statista; Statista Digital Market Insights Spending in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "China",
+    "United Kingdom",
+    "Japan",
+    "Australia",
+    "Germany",
+    "Canada",
+    "France",
+    "South Korea",
+    "Brazil",
+    "Italy",
+    "Mexico",
+    "Spain",
+    "India",
+    "Russia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      66647.55,
+      64630.08,
+      9045.4,
+      7026.05,
+      3514.36,
+      3494.58,
+      3230.88,
+      2771.29,
+      2514.12,
+      2108.01,
+      1933.83,
+      1663.73,
+      1604.95,
+      1211.68,
+      1079.96
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Net Instagram Stories advertising revenue worldwide from 2019 to 2023 (in billion U.S. dollars )",
+   "short": "Instagram Stories ad revenue worldwide 2019-2023",
+   "unit": "billion U.S. dollars ",
+   "description": "The net advertising revenue of Instagram Stories worldwide was expected to amount to 11.43 billion U.S. dollars in 2021, marking an increase from the previous year's value of 6.9 billion. Instagram Stories ad revenue was expected to further increase over the following two years, reaching a projected 20.03 billion dollars in 2023.",
+   "note": "Worldwide; 2019 and 2020; * Forecast. Includes advertising that appears on desktop and laptop computers as well as mobile phones, tablets, and other internet-connected devices, and includes all the various forms of advertising on those [...] Read more",
+   "source": "eMarketer; Hootsuite",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021*",
+    "2022*",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.32,
+      6.9,
+      11.43,
+      15.95,
+      20.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Leading social media platforms used by marketers worldwide as of January 2023",
+   "short": "Social media platforms used by marketers worldwide 2023",
+   "unit": "",
+   "description": "As of January 2023, Facebook was the most commonly used social media platform among marketers worldwide. According to a global survey, 89 percent of responding social media marketers used the network to promote their business, while another 80 percent did so via Instagram.",
+   "note": "Worldwide; January 2023; 2,133 respondents",
+   "source": "Frankwatching; Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "YouTube",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.89,
+      0.8,
+      0.64,
+      0.54,
+      0.44,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Most important social media platforms for marketers worldwide as of January 2023",
+   "short": "Most important social media platforms for marketers worldwide 2023",
+   "unit": "",
+   "description": "In early 2023, when asked to indicate the most important social media platform for their business, the vast majority of global marketers selected Facebook. Instagram and LinkedIn followed at second and third place, however Instagram started seeing a growing importance only since 2019. 2021 was the first year when Pinterest was not named in this context.",
+   "note": "Worldwide; January 2023; 2,100 marketers",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "YouTube",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.45,
+      0.22,
+      0.21,
+      0.08,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Planned changes in use of selected social media for marketing purposes worldwide as of January 2023",
+   "short": "Future use of social media among marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a global 2023 survey, 66 percent of responding marketers stated they would increase their usage of Instagram in the near future; 43 percent said they would increase the usage of TikTok advertising, but as many as 45 percent were not planning to use the mobile video sharing app for marketing purposes.",
+   "note": "Worldwide; January 2023; 2,133 marketers",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "Youtube",
+    "LinkedIn",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "Increase",
+     "values": [
+      0.53,
+      0.66,
+      0.66,
+      0.48,
+      0.22,
+      0.43
+     ]
+    },
+    {
+     "name": "Stay the same",
+     "values": [
+      0.32,
+      0.21,
+      0.19,
+      0.28,
+      0.3,
+      0.1
+     ]
+    },
+    {
+     "name": "Decrease",
+     "values": [
+      0.05,
+      0.03,
+      0.01,
+      0.02,
+      0.08,
+      0.02
+     ]
+    },
+    {
+     "name": "No plans to utilize",
+     "values": [
+      0.1,
+      0.1,
+      0.14,
+      0.22,
+      0.4,
+      0.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Video platforms used for marketing purposes worldwide in 2023",
+   "short": "Video platforms used for marketing purposes worldwide 2023",
+   "unit": "",
+   "description": "During a late 2023 survey carried out among marketing professionals worldwide, 90 percent of respondents stated they used videos on YouTube for marketing purposes. Facebook was the second-most commonly named platform, mentioned by 86 percent of respondents. TikTok was used by 69 percent of interviewed marketers.",
+   "note": "Worldwide; late 2023; 967 respondents; among marketing professionals",
+   "source": "Wyzowl Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "Webinar",
+    "Twitter",
+    "TikTok",
+    "Facebook Live",
+    "Interactive video",
+    "Snapchat",
+    "360 video",
+    "Virtual reality (VR)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.9,
+      0.86,
+      0.79,
+      0.76,
+      0.7,
+      0.69,
+      0.69,
+      0.68,
+      0.65,
+      0.57,
+      0.56,
+      0.56
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Leading goals of Instagram marketers worldwide in 2022",
+   "short": "Top Instagram marketing goals worldwide 2022",
+   "unit": "",
+   "description": "According to a survey conducted among Instagram marketers worldwide and released in April 2022, 37 percent of respondents said their leading Instagram marketing goal for 2022 was to increase brand awareness and reach new audiences. This was followed by 35 percent of respondents saying their main Instagram marketing goal was to advertise their products and services, while 31 percent cited the increase of their revenue and sales.",
+   "note": "Worldwide; as of April 19, 2022; 580 respondents",
+   "source": "HubSpot",
+   "kind": "categorical",
+   "categories": [
+    "Increasing brand awareness/reaching new audiences",
+    "Advertising their products/services",
+    "Increasing revenue/sales",
+    "Fostering relationships with their customers/increasing brand loyalty",
+    "Improving customer service and retention"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.37,
+      0.35,
+      0.31,
+      0.3,
+      0.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Brand value of Instagram worldwide from 2020 to 2023 (in billion U.S. dollars)",
+   "short": "Instagram: brand value 2020-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the brand value of Instagram amounted to 47.4 billion U.S. dollars. A year earlier, the value stood at 33.48 billion dollars. Instagram was the sixth most valuable media brand worldwide in 2023.",
+   "note": "Worldwide, United States; 2020 to 2023",
+   "source": "Brand Finance",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26.44,
+      25.07,
+      33.48,
+      47.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Worldwide visits to Instagram.com from July to December 2023 (in billions)",
+   "short": "Total global visitor traffic to Instagram.com 2023",
+   "unit": "billions",
+   "description": "Instagram is a web traffic powerhouse: in December 2023 approximately 6.9 billion visits were measured to the online photo and video sharing platform, making it one of the most-visited websites online. Instagram is one of the most popular social networks worldwide.",
+   "note": "Worldwide; July to December 2023; combined desktop & mobile web; excluding apps",
+   "source": "SimilarWeb",
+   "kind": "categorical",
+   "categories": [
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6.8,
+      6.7,
+      6.4,
+      6.7,
+      6.6,
+      6.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Average number of weekly brand posts on Instagram in 2023, by vertical",
+   "short": "Average weekly Instagram brand posts 2023, by vertical",
+   "unit": "",
+   "description": "In 2023, the median weekly brand posts on social media app Instagram was 4.7 posts. Overall, sports teams added an average of 18 posts weekly to the social network, while media brands generated an average of 12.2 posts. Additionally, retail brands posted on average 5.7 times per week, whilst fashion brands posted 6.1 times per week.",
+   "note": "Worldwide; 2023",
+   "source": "Rival IQ Number of Instagram posts per week",
+   "kind": "categorical",
+   "categories": [
+    "Sports teams",
+    "Media",
+    "Health & beauty",
+    "Fashion",
+    "Retail",
+    "Home decor",
+    "Nonprofits",
+    "Total",
+    "Financial services",
+    "Higher ed",
+    "Influencers",
+    "Travel",
+    "Tech & software",
+    "Alcohol",
+    "Food & beverage"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      18,
+      12.2,
+      6.8,
+      6.1,
+      5.7,
+      4.9,
+      4.9,
+      4.7,
+      4,
+      3.9,
+      3.8,
+      3.8,
+      3.7,
+      3.1,
+      2.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Average ad fraud rates of Instagram influencers worldwide from 2019 to 2023",
+   "short": "Average fraud rates of Instagram influencers 2019-2023",
+   "unit": "",
+   "description": "Average influencer fraud rates (ER) worldwide had decreased gradually since 2019. The fraud rate was about 63 percent in 2019, only to drop to 45 percent four years later, in 2022 and then raised back again in 2023, to 49.19 percent on average. The influencer fraud rates are based on buying followers, likes and comments, stories views, and comment pods.",
+   "note": "Worldwide; 2019 to 2023",
+   "source": "HypeAuditor",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6353,
+      0.5539,
+      0.4923,
+      0.4532,
+      0.4919
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Leading brands on Instagram worldwide in 2022, by number of influencers mentioning them (in 1,000s)",
+   "short": "Leading brands on Instagram worldwide 2022, by influencers",
+   "unit": "1,000s",
+   "description": "Instagram was the most talked about brand on Instagram worldwide in 2022, with 85.5 thousand influencers mentioning it. Zara followed with 66.4 thousand influencers, while Shein rounded out the top three with 57.2 thousand.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor Number of influencers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "Zara",
+    "Shein",
+    "H&M",
+    "Nike",
+    "Spotify",
+    "Amazon",
+    "YouTube",
+    "Target",
+    "Netflix"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      85.5,
+      66.4,
+      57.2,
+      46.1,
+      40.5,
+      35.7,
+      35,
+      33.8,
+      31.6,
+      28.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Leading brands on Instagram worldwide in 1st half 2022, by number of likes (in millions)",
+   "short": "Leading brands on Instagram worldwide 2022, by number of likes",
+   "unit": "millions",
+   "description": "With over 142 million likes, Zara was the brand with most mentions on Instagram in the first half of 2022. Dior and Prada followed, with 65 million and almost 63 million mentions, respectively.",
+   "note": "Worldwide; January to June 2022",
+   "source": "influData by weCreate Number of likes in millions",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "Dior",
+    "Prada",
+    "Gucci",
+    "Fashion Nova",
+    "Louis Vuitton",
+    "Zara",
+    "Shein",
+    "Nike",
+    "Pretty Little Thing",
+    "Revolve",
+    "Anastasia Beverly Hills",
+    "H&M",
+    "Huda Beauty",
+    "YouTube"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      142.74,
+      65.2,
+      62.98,
+      51.93,
+      49.78,
+      33.19,
+      33.15,
+      31.15,
+      16.44,
+      16.32,
+      15.88,
+      11.3,
+      11.2,
+      10.27,
+      8.58
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Most popular social networks worldwide as of April 2024, ranked by number of monthly active users (in millions)",
+   "short": "Global social networks ranked by number of users 2024",
+   "unit": "millions",
+   "description": "Market leader Facebook was the first social network to surpass one billion registered accounts and currently sits at more than three billion monthly active users. Meta Platforms owns four of the biggest social media platforms, all with more than one billion monthly active users each: Facebook (core platform), WhatsApp, Facebook Messenger, and Instagram. In the third quarter of 2023, Facebook reported around four billion monthly core Family product users.",
+   "note": "Worldwide; April 2024; social networks and messenger/chat app/voip included; figures for TikTok does not include Douyin",
+   "source": "DataReportal; Meltwater; We Are Social Number of active users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "YouTube",
+    "Instagram",
+    "WhatsApp¹",
+    "TikTok",
+    "WeChat",
+    "Facebook Messenger",
+    "Telegram",
+    "Snapchat",
+    "Douyin",
+    "Kuaishou",
+    "X/Twitter",
+    "Weibo",
+    "QQ",
+    "Pinterest"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3065,
+      2504,
+      2000,
+      2000,
+      1582,
+      1343,
+      1010,
+      900,
+      800,
+      755,
+      700,
+      611,
+      598,
+      554,
+      498
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Leading media and entertainment brands worldwide in 2023, by brand value (in billion U.S. dollars)",
+   "short": "Most valuable media & entertainment brands worldwide 2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, Google ranked as the most valuable media and entertainment brand worldwide, with a brand value of nearly 537.2 billion U.S. dollars. Facebook ranked second, valued at around 93 billion dollars. Part of the Tencent Group, WeChat and v.qq.com (Tencent Video) had a brand value of 53.5 billion and 19.5 billion dollars, respectively.",
+   "note": "Worldwide; 2023",
+   "source": "Kantar Brand value in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Google",
+    "Facebook",
+    "Instagram",
+    "WeChat",
+    "Youtube",
+    "Netflix",
+    "LinkedIn",
+    "Disney",
+    "TikTok",
+    "v.qq.com (Tencent Video)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      537.19,
+      93.02,
+      58.95,
+      53.05,
+      53.01,
+      49.76,
+      48.53,
+      46.97,
+      44.35,
+      19.45
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Strongest media brands worldwide in 2023 (index score)",
+   "short": "Strongest media brands worldwide 2023",
+   "unit": "index score",
+   "description": "In 2023, Google was the strongest media brand worldwide with a Brand Strength Index score of 93.2. YouTube ranked second with a score of 92.7. They both belonged to the most valuable media brands worldwide that year.",
+   "note": "2023",
+   "source": "Brand Finance Brand Strength Index score",
+   "kind": "categorical",
+   "categories": [
+    "Google",
+    "YouTube",
+    "WeChat",
+    "Naver",
+    "Instagram",
+    "Disney",
+    "WhatsApp",
+    "Netflix",
+    "Kakao",
+    "LinkedIn"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      93.2,
+      92.7,
+      91.6,
+      91.3,
+      90.7,
+      86.3,
+      86.2,
+      85.8,
+      85.1,
+      83.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Brands with the highest brand value change worldwide in 2023",
+   "short": "Fastest growing brands worldwide 2023",
+   "unit": "",
+   "description": "In 2023, Airtel was the fastest growing brand worldwide. The Indian telecom provider registered an annual brand value growth of 24 percent. Pepsi ranked second, with a growth rate of 17 percent.",
+   "note": "Worldwide; 2023",
+   "source": "Kantar Brand value change (2023 vs. 2022)",
+   "kind": "categorical",
+   "categories": [
+    "Airtel",
+    "Pepsi",
+    "Fanta",
+    "BCA",
+    "Sprite",
+    "Gatorade",
+    "United Healthcare",
+    "Dior",
+    "Coca-Cola",
+    "Johnnie Walker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.24,
+      0.17,
+      0.15,
+      0.12,
+      0.12,
+      0.11,
+      0.09,
+      0.09,
+      0.08,
+      0.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Instagram accounts with the most followers worldwide as of April 2024 (in millions)",
+   "short": "Instagram accounts with the most followers worldwide 2024",
+   "unit": "millions",
+   "description": "Cristiano Ronaldo has one of the most popular Instagram accounts as of April 2024. The Portuguese footballer is the most-followed person on the photo sharing app platform with 628 million followers. Instagram's own account was ranked first with roughly 672 million followers.",
+   "note": "April 2024; business / creator accounts",
+   "source": "Social Blade Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "cristiano",
+    "leomessi",
+    "selenagomez",
+    "kyliejenner",
+    "therock",
+    "arianagrande",
+    "kimkardashian",
+    "beyonce",
+    "khloekardashian",
+    "nike",
+    "kendalljenner",
+    "justinbieber",
+    "natgeo",
+    "taylorswift"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      672,
+      628,
+      502,
+      429,
+      400,
+      397,
+      380,
+      363,
+      319,
+      310,
+      306,
+      294,
+      292,
+      283,
+      283
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading virtual creators on Instagram worldwide as of October 2022, by number of followers (in millions)",
+   "short": "Most-followed virtual creators on Instagram worldwide 2022",
+   "unit": "millions",
+   "description": "In October 2022, Lu of Magalu (handle: @magazineluiza) was the most followed virtual creator on Instagram, having amassed six million followers. Lu was created in 2009 and represents the Brazilian retailer Magalu (Magazine Luiza). Nobody Sausage, created by artist Kael Cabral, ranked second with 4.3 million followers.",
+   "note": "Worldwide; October 11, 2022",
+   "source": "NeoReach; Offbeat",
+   "kind": "categorical",
+   "categories": [
+    "Lu of Magalu",
+    "Nobody Sausage",
+    "CB of Casas Bahia",
+    "Miquela Sousa",
+    "Good Advice Cupcake"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6,
+      4.3,
+      3.2,
+      3,
+      2.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Distribution of Instagram influencers worldwide in 2023, by number of followers",
+   "short": "Global distribution of Instagram influencers in 2023, by number of followers",
+   "unit": "",
+   "description": "In 2023, Instagram influencers with 1,000 to 10,000 followers accounted for 76.86 percent of influencer accounts worldwide. The second most popular group was that of micro-influencers with 10,000 to 50,000 subscribers, accounting for 18.23 percent of all influencers. Mid-tier influencers with 50,000 to 500,000 followers represented 4.56 percent of the total, while mega-influencers and celebrities with more than one million subscribers accounted for 0.16 percent.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1,000 to 10,000",
+    "10,000 to 50,000",
+    "50,000 to 500,000",
+    "500,000 to 1,000,000",
+    "1,000,000 and above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7686,
+      0.1823,
+      0.0456,
+      0.002,
+      0.0016
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Distribution of Instagram influencers worldwide in 2023, by category",
+   "short": "Share of Instagram influencers worldwide 2023, by category",
+   "unit": "",
+   "description": "According to the findings of a study examining the state of influencer marketing on Instagram, 8.35 percent of influencers on the platform were focused on the beauty topics, making it the third most popular category among global Instagram influencers in 2023. Lifestyle was the most popular category covered by Instagram influencers that year, with a share of 13.73 percent.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor Share of accounts",
+   "kind": "categorical",
+   "categories": [
+    "Lifestyle",
+    "Music",
+    "Beauty",
+    "Family",
+    "Photography",
+    "Art",
+    "Humor & Fun & Happiness",
+    "Fitness & Gym",
+    "Shows",
+    "Sports with a ball"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1373,
+      0.0987,
+      0.0835,
+      0.0646,
+      0.0641,
+      0.058,
+      0.0562,
+      0.0325,
+      0.0316,
+      0.028
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Distribution of virtual creators on Instagram worldwide as of October 2022, by industry",
+   "short": "Virtual creators on Instagram 2022, by industry",
+   "unit": "",
+   "description": "As of October 2022, roughly a third of virtual creators worldwide could be classified as fashion industry creators based on their interests, content, and campaigns. Entertainment ranked second, with 18 percent of virtual creators. Beauty and consumer electronics followed, with 14 percent and 12.5 percent, respectively.",
+   "note": "Worldwide; October 11, 2022",
+   "source": "NeoReach; Offbeat Share",
+   "kind": "categorical",
+   "categories": [
+    "Fashion",
+    "Entertainment",
+    "Beauty",
+    "Consumer electronics",
+    "Gaming",
+    "Food & drink",
+    "Home & garden",
+    "Photography",
+    "Luxury goods & jewelry",
+    "Automotive & transportation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.339,
+      0.179,
+      0.143,
+      0.125,
+      0.071,
+      0.054,
+      0.036,
+      0.018,
+      0.018,
+      0.018
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Engagement rates among Instagram influencers worldwide in 2022-2023, by number of followers",
+   "short": "Engagement rates among global IG influencers 2022-2023, by profile size",
+   "unit": "",
+   "description": "According to a study of Instagram (IG) influencer engagement rates (ER) worldwide, nano influencers have been seeing the highest popularity compared to other tier profiles. Influencers who had between one to ten thousand followers had tan engagement rate of 2.19 percent in 2023. On average the ER for all studied IG influencers stood at 1.85 percent in the same year.",
+   "note": "Worldwide; 2022 to 2023",
+   "source": "HypeAuditor Engagement rate",
+   "kind": "categorical",
+   "categories": [
+    "1K - 10K",
+    "10K - 50K",
+    "50K - 500K",
+    "500K - 1M",
+    "Over 1M",
+    "Average ER"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.0219,
+      0.0099,
+      0.0086,
+      0.0087,
+      0.0094,
+      0.0185
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.0253,
+      0.0106,
+      0.0091,
+      0.0086,
+      0.0092,
+      0.019
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Share of Instagram influencers involved in fraud worldwide from 2022-2023, by number of followers",
+   "short": "Share of fraudulent Instagram influencers worldwide 2022-2023, by number of followers",
+   "unit": "",
+   "description": "A majority of Instagram mega-influencers with more than one million followers worldwide were involved in fraudulent activities to inflate their engagement and follower figures in 2023. Mega-influencers and celebrities involved in fraud were 58.5 percent of the total in the same year. The average share of influencers involved in fraud went down with 2.15 percent and reached was of 43.17 percent.",
+   "note": "Worldwide; 2022 and 2023",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1,000 to 10,000",
+    "10,000 to 50,000",
+    "50,000 to 500,000",
+    "500,000 to 1,000,000",
+    "1,000,000 and above",
+    "Average"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.3526,
+      0.5017,
+      0.5474,
+      0.5819,
+      0.6123,
+      0.4532
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.341,
+      0.478,
+      0.493,
+      0.56,
+      0.585,
+      0.4317
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Number of Instagram users worldwide from 2020 to 2025 (in billions)",
+   "short": "Instagram: number of global users 2020-2025",
+   "unit": "billions",
+   "description": "In 2021, there were 1.21 billion monthly active users of Meta's Instagram, making up over 28 percent of the world's internet users. By 2025, it has been forecast that there will be 1.44 billion monthly active users of the social media platform, which would account for 31.2 percent of global internet users.",
+   "note": "Worldwide; 2020 to November 2021; * Forecast According to the source: \"Internet users of any age who access their Instagram account via any device at least once per month.\" Read more",
+   "source": "eMarketer; Insider Intelligence",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1.04,
+      1.21,
+      1.28,
+      1.35,
+      1.4,
+      1.44
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Countries and territories with the highest Instagram audience reach as of January 2024",
+   "short": "Instagram: countries with the highest audience reach 2024",
+   "unit": "",
+   "description": "As of January 2024, Bahrain was the country with the highest Instagram audience reach with 90.7 percent. The United Arab Emirates also had a high Instagram audience penetration rate, with 87 percent of the population using the social network. In Turkey, Kazakhstan, and Brunei, the photo-sharing platform was used by more than 85 percent of each country's population.",
+   "note": "Worldwide; January 2024; 18 years and older; based on addressable ad audience",
+   "source": "DataReportal; Meltwater; Meta Platforms; We Are Social Share of population",
+   "kind": "categorical",
+   "categories": [
+    "Bahrain",
+    "UAE",
+    "Turkey",
+    "Kazakhstan",
+    "Brunei",
+    "Cayman Islands",
+    "Uruguay",
+    "Kuwait",
+    "Chile",
+    "Cyprus",
+    "Montenegro",
+    "Argentina",
+    "Brazil",
+    "Barbados",
+    "Panama"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.907,
+      0.87,
+      0.868,
+      0.868,
+      0.853,
+      0.843,
+      0.832,
+      0.817,
+      0.816,
+      0.8,
+      0.795,
+      0.794,
+      0.78,
+      0.775,
+      0.769
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Distribution of Instagram users worldwide as of April 2024, by age and gender",
+   "short": "Instagram: distribution of global audiences 2024, by age and gender",
+   "unit": "",
+   "description": "As of April 2024, around 16.5 percent of global active Instagram users were men between the ages of 18 and 24 years. More than half of the global Instagram population worldwide was aged 34 years or younger.",
+   "note": "Worldwide; April 2024; 18 years and older; based on addressable ad audience",
+   "source": "DataReportal; Instagram; Meltwater; Meta Platforms; We Are Social",
+   "kind": "categorical",
+   "categories": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "series": [
+    {
+     "name": "Female",
+     "values": [
+      0.152,
+      0.142,
+      0.081,
+      0.048,
+      0.027,
+      0.017
+     ]
+    },
+    {
+     "name": "Male",
+     "values": [
+      0.165,
+      0.164,
+      0.079,
+      0.039,
+      0.019,
+      0.012
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Preferred types of content on Instagram according to users worldwide as of April 2023",
+   "short": "Instagram: favorite types of posts for global users 2023",
+   "unit": "",
+   "description": "According to a global online survey conducted in 2022, 50 percent of weekly Instagram users said that they wanted to see funny content on the social media platform. Additionally, 46 percent of all respondents said that they wanted to see creative content, whilst 41 percent said they wanted to see informative content on Instagram. Over a third of users wanted to see engaging content on the photo and video sharing app.",
+   "note": "Worldwide; April 2023; 7,206 respondents; 16-64 years; weekly Instagram users",
+   "source": "GWI",
+   "kind": "categorical",
+   "categories": [
+    "Funny",
+    "Creative",
+    "Informative",
+    "Relaxing",
+    "Inspirational",
+    "Engaging",
+    "Trendy",
+    "Exciting",
+    "Relavant",
+    "Helpful/how-to"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5,
+      0.46,
+      0.41,
+      0.37,
+      0.36,
+      0.36,
+      0.35,
+      0.34,
+      0.33,
+      0.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Average Instagram follower engagement with selected post types worldwide as of February 2024, by post type",
+   "short": "Global Instagram follower engagement rate 2024, by type of post",
+   "unit": "",
+   "description": "As of February 2024, the average Instagram business profile follower engagement with posts on a page was 2.18 percent. Overall, photo posts drew the highest level of engagement from page followers, having an interaction rate of 2.69 percent, while carousel posts (posts with multiple images or videos) generated a 1.16 percent engagement rate. In addition, the interaction rate for video posts on the social media platform was 2.21 percent.",
+   "note": "Worldwide; December 1, 2023 to February 29, 2024; Instagram business accounts; engagements refers to combined number of likes and comments on a post compared to the number of account followers at the time of post publication",
+   "source": "DataReportal; Hootsuite; Locowise; We Are Social",
+   "kind": "categorical",
+   "categories": [
+    "Average engagement rate (all post types)",
+    "Photo posts",
+    "Video posts",
+    "Carousel posts"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0218,
+      0.0269,
+      0.0221,
+      0.0116
+     ]
+    }
+   ]
+  }
+ ]
+}

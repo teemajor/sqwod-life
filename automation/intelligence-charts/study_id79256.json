@@ -1,0 +1,1291 @@
+{
+ "studyId": "79256",
+ "study": "diet and nutrition in australia",
+ "file": "research/statista/study_id79256_diet-and-nutrition-in-australia.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Prevalence of obesity among adults in selected countries as of 2021, or latest year available, by gender*",
+   "short": "Obesity - prevalence in selected countries by gender 2021",
+   "unit": "",
+   "description": "In 2021, over 30 percent of both men and women in the United States reported themselves as obese (BMI over 30), making it the country with the highest percentage of obese adults on this list. Other selected countries on the list with a high prevalence of obesity among adults included Iceland and Russia.",
+   "note": "Worldwide; 2021",
+   "source": "OECD Share of the adult population",
+   "kind": "categorical",
+   "categories": [
+    "Australia (2017)",
+    "Austria (2019)",
+    "Belgium (2018)",
+    "Brazil (2021)**",
+    "Canada (2020)",
+    "Chile (2021)",
+    "Czech Republic (2019)",
+    "Denmark (2021)",
+    "Estonia (2020)",
+    "Finland (2020)",
+    "France (2019)",
+    "Germany (2019)",
+    "Greece (2019)",
+    "Hungary (2019)"
+   ],
+   "series": [
+    {
+     "name": "Women",
+     "values": [
+      0.187,
+      0.152,
+      0.15,
+      0.226,
+      0.207,
+      0.286,
+      0.175,
+      0.183,
+      0.189,
+      0.23,
+      0.152,
+      0.185,
+      0.162,
+      0.227
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.204,
+      0.181,
+      0.167,
+      0.221,
+      0.212,
+      0.241,
+      0.212,
+      0.186,
+      0.229,
+      0.23,
+      0.135,
+      0.186,
+      0.166,
+      0.251
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Ranking of the overweight population share in Australasia by country 2020",
+   "short": "Overweight population share in Australasia 2020, by country",
+   "unit": "",
+   "description": "This statistic shows a ranking of the estimated overweight population share in 2020 in Australasia, differentiated by country. Obesity is defined as a body mass index (BMI) of more than 25.",
+   "note": "Australia; 2019; All values are estimates.",
+   "source": "Statista Population share",
+   "kind": "categorical",
+   "categories": [
+    "Australia",
+    "New Zealand",
+    "Fiji",
+    "Papua New Guinea"
+   ],
+   "series": [
+    {
+     "name": "2020",
+     "values": [
+      72,
+      72,
+      62,
+      50
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Share of population who are undernourished in the Asia-Pacific region in 2020, by country or territory",
+   "short": "Prevalence of undernourishment APAC 2020, by country",
+   "unit": "",
+   "description": "In 2020, around 41.6 percent of North Korea's population were undernourished. Comparatively, several countries in the Asia-Pacific region reported prevalences of undernourishment of 2.5 percent or under that year.",
+   "note": "Asia, APAC; 2020",
+   "source": "World Bank Share of population",
+   "kind": "categorical",
+   "categories": [
+    "North Korea",
+    "Afghanistan",
+    "Timor-Leste",
+    "Pakistan",
+    "India",
+    "Bangladesh",
+    "Thailand",
+    "Indonesia",
+    "Cambodia",
+    "Brunei",
+    "Vietnam",
+    "Nepal",
+    "Philippines",
+    "Laos",
+    "Macao"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.416,
+      0.298,
+      0.262,
+      0.169,
+      0.163,
+      0.114,
+      0.088,
+      0.065,
+      0.063,
+      0.059,
+      0.057,
+      0.055,
+      0.052,
+      0.051,
+      0.048
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Leading underlying causes of death in Australia in 2021, by gender",
+   "short": "Leading causes of death Australia 2021, by gender",
+   "unit": "",
+   "description": "Ischaemic heart disease was the leading cause of death for Australian males in 2021, with 10,371 deaths registered in that year. For Australian women, dementia and Alzheimer's disease were the leading cause of death, followed by ischaemic heart disease.",
+   "note": "Australia; 2021",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Ischaemic heart diseases",
+    "Dementia, including Alzheimer's disease",
+    "Cerebrovascular diseases",
+    "Malignant neoplasm of trachea, bronchus and lung",
+    "Chronic lower respiratory diseases"
+   ],
+   "series": [
+    {
+     "name": "Males",
+     "values": [
+      10371,
+      5664,
+      4180,
+      4968,
+      3951
+     ]
+    },
+    {
+     "name": "Females",
+     "values": [
+      6960,
+      10276,
+      5620,
+      3706,
+      3854
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Share of the population experiencing major long-term health conditions in Australia in financial year 2021, by condition",
+   "short": "Share of population with long-term health conditions Australia FY 2021, by condition",
+   "unit": "",
+   "description": "The most common long-term health condition reported by Australians 18 years and older were mental and behavioral conditions, representing 22.6 percent of the population as of financial year 2021. By comparison diabetes and heart disease affected just under five percent of the population each.",
+   "note": "Australia; August 2020 to June 2021; 11,110 respondents",
+   "source": "Australian Bureau of Statistics Share of population",
+   "kind": "categorical",
+   "categories": [
+    "Mental and behavioural conditions",
+    "Hay fever and allergic rhinitis",
+    "Back problems (dorsopathies)",
+    "Asthma",
+    "Arthritis",
+    "Hypertension",
+    "Diabetes mellitus",
+    "Heart, stroke and vascular disease",
+    "Osteoporosis",
+    "Cancer (malignant neoplasms)",
+    "Chronic obstructive pulmonary disease (COPD)",
+    "Kidney disease"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.226,
+      0.211,
+      0.148,
+      0.126,
+      0.125,
+      0.066,
+      0.047,
+      0.038,
+      0.034,
+      0.017,
+      0.016,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Share of adults meeting the Australian Dietary Guidelines for fruit and vegetables in Australia 2021, by gender",
+   "short": "Share of adults meeting fruit and vegetable guidelines Australia 2021, by gender",
+   "unit": "",
+   "description": "During the 2021 financial year in Australia, just over 48 percent of female respondents were meeting the Australian Dietary Guidelines for fruit consumption for adults. The majority of both men and women did not reach the recommended daily intake for vegetables, with less then five percent of men consuming their recommended daily vegetable intake.",
+   "note": "Australia; August 2020 to June 2021; 11,110 respondents; 18 years and older",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Meeting fruit recommendation",
+    "Meeting vegetable recommendation",
+    "Meeting both guidelines"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.412,
+      0.044,
+      0.029
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.483,
+      0.128,
+      0.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Estimated average daily serves per capita in Australia in financial year 2021, by food group",
+   "short": "Estimated average daily serves per capita in Australia FY 2021, by food group",
+   "unit": "",
+   "description": "In the 2021 financial year, it was estimated that Australians consumed on average 3.8 serves of grains and cereals per day. By comparison, Australians consumed 2.4 serves of vegetables daily, which was around half the recommended daily intake.",
+   "note": "FY 2021",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Grains and cereals",
+    "Vegetables and legumes/beans",
+    "Fruit",
+    "Milk, yoghurt, cheese and/or alternatives",
+    "Meats, poultry, fish, eggs, tofu, nuts and seeds and legumes/beans",
+    "Unsaturated spreads and oils"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.84,
+      2.36,
+      1.39,
+      1.57,
+      1.84,
+      3.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Share of overweight and obese adults in Australia in financial year 2018",
+   "short": "Share of overweight and obese adults Australia FY 2018",
+   "unit": "",
+   "description": "In 2018, 67 percent of adults in Australia were overweight or obese. Obesity alone accounted for over 30 percent of adults. Children under the age of 18 were significantly less likely to be obese, however, overall obesity rates in Australia are considered to be high.",
+   "note": "Australia; financial year 2018; 18 years and older; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017.",
+   "source": "AIHW; Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Overweight but not obese",
+    "Obese",
+    "Overweight or obese"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.356,
+      0.313,
+      0.67
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of overweight and obese persons in Australia in financial year 2018, by age group",
+   "short": "Share of overweight and obese persons in Australia in FY 2018, by age group",
+   "unit": "",
+   "description": "In 2018, the proportion of people in Australia who were obese by age group peaked at 40.5 percent for people 65 to 74 years old. Obesity alone accounted for over 40 percent of people in this age group. Children had a much lower likelihood of being obese but there is a clear increase in obesity rates with age. From 75 years onwards obesity rates drop dramatically, which is likely an indication of the lower life expectancy and a higher risk of chronic illness associated with obesity.",
+   "note": "Australia; financial year 2018; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017.",
+   "source": "AIHW; Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "5 to 14",
+    "15 to 24",
+    "25 to 34",
+    "35 to 44",
+    "45 to 54",
+    "55 to 64",
+    "65 to 74",
+    "75 to 84",
+    "85 and over"
+   ],
+   "series": [
+    {
+     "name": "Overweight but not obese",
+     "values": [
+      0.167,
+      0.267,
+      0.339,
+      0.381,
+      0.366,
+      0.348,
+      0.375,
+      0.381,
+      0.423
+     ]
+    },
+    {
+     "name": "Obese",
+     "values": [
+      0.077,
+      0.139,
+      0.238,
+      0.306,
+      0.374,
+      0.399,
+      0.405,
+      0.363,
+      0.198
+     ]
+    },
+    {
+     "name": "Overweight or obese",
+     "values": [
+      0.245,
+      0.406,
+      0.577,
+      0.687,
+      0.74,
+      0.747,
+      0.782,
+      0.75,
+      0.618
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Breakdown of the adult population in Australia in financial year 2018, by body mass index range (in 1,000s)",
+   "short": "Breakdown of adult population in Australia FY 2018, by BMI range",
+   "unit": "1,000s",
+   "description": "In 2018, 6.6 million adults in Australia were considered to be overweight based on their Body Mass Index (BMI). In that year there were more Australian adults who were overweight than those who were of a normal weight range.",
+   "note": "Australia; financial year 2018; 18 years and older; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017.",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Underweight",
+    "Normal range (18.50–19.99)",
+    "Normal range (20.00–24.99)",
+    "Overweight",
+    "Obesity class I",
+    "Obesity class II",
+    "Obesity class III"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      244.9,
+      656.7,
+      5267.1,
+      6643.9,
+      3670.3,
+      1431.7,
+      742.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Share of children meeting the Australian Dietary Guidelines for fruit and vegetable consumption in Australia in 2021, by gender",
+   "short": "Share of children meeting fruit and vegetable recommendation in Australia 2021",
+   "unit": "",
+   "description": "In the 2021 financial year in Australia, 63 percent of young females aged 2 to 17 years were meeting the Australian Dietary Guidelines for fruit consumption. Most children did not reach the recommended daily intake for vegetables, with less than eight percent of boys consuming the recommended daily vegetable intake.",
+   "note": "Australia; August 2020 to June 2021; 11,110 respondents; 2 to 17 years",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Meeting fruit recommendation",
+    "Meeting vegetable recommendation",
+    "Meeting both recommendations"
+   ],
+   "series": [
+    {
+     "name": "Males",
+     "values": [
+      0.622,
+      0.073,
+      0.074
+     ]
+    },
+    {
+     "name": "Females",
+     "values": [
+      0.632,
+      0.108,
+      0.098
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Share of children who meet recommendations for daily fruit intake in Australia in financial year 2021, by age group",
+   "short": "Children who meet fruit intake recommendations Australia FY 2021 by age",
+   "unit": "",
+   "description": "In 2018, 97.4 percent of children aged 2 to 3 years old in Australia had an adequate fruit intake. The proportion of children eating enough fruit per day drops off significantly in the older age groups and by the age of 17 over 40 percent of children are not getting their recommended daily intake of fruit.",
+   "note": "Australia; August 2020 to June 2021; 11,110 respondents; 2-17 years",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "2–3",
+    "4–8",
+    "9–11",
+    "12–13",
+    "14-17"
+   ],
+   "series": [
+    {
+     "name": "Met fruit consumption recommendation",
+     "values": [
+      0.938,
+      0.694,
+      0.568,
+      0.592,
+      0.442
+     ]
+    },
+    {
+     "name": "Did not meet fruit consumption recommendation",
+     "values": [
+      0.053,
+      0.309,
+      0.432,
+      0.405,
+      0.557
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Share of children who meet recommendations for daily vegetable intake in Australia in financial year 2021, by age group",
+   "short": "Children who meet vegetable intake recommendations Australia FY 2021, by age",
+   "unit": "",
+   "description": "In the 2021 financial year, 94.2 percent of children aged 14 to 17 years old in Australia did not meet the recommendations for daily intake of vegetables. The share of children aged two to three eating enough vegetables per day is higher than any other age group, but still low with less than one third of children aged between 2 and 3 years old consuming enough vegetables on a daily basis.",
+   "note": "Australia; August 2020 to June 2021; 11,110 respondents; 2-17 years",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "2–3",
+    "4–8",
+    "9–11",
+    "12–13",
+    "14-17"
+   ],
+   "series": [
+    {
+     "name": "Adequate vegetable intake",
+     "values": [
+      0.277,
+      0.084,
+      0.063,
+      0.046,
+      0.05
+     ]
+    },
+    {
+     "name": "Inadequate vegetable intake",
+     "values": [
+      0.726,
+      0.923,
+      0.923,
+      0.946,
+      0.942
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Share of children who consume sweetened drinks in Australia in 2021, by frequency",
+   "short": "Share of children consuming sweetened drinks in Australia 2021, by frequency",
+   "unit": "",
+   "description": "In the 2021 financial year, around 80 percent of children aged 2 to 17 years in Australia did not consume sweetened drinks at all. Around 12 percent of children consumed sugary drinks every one to three days and around 3.4 percent had a sweetened drink daily.",
+   "note": "Australia; August 2020 to June 2021; 11,110 respondents; 2 to 17 years",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Daily",
+    "1–3 days",
+    "4–6 days",
+    "Did not consume"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.034,
+      0.12,
+      0.053,
+      0.794
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of underweight, normal and overweight children in Australia in financial year 2018 (in thousands)",
+   "short": "Number of underweight and overweight children in Australia, FY 2018",
+   "unit": "thousands",
+   "description": "In 2018, 3.2 million Australian children were considered to be of normal weight, this was the majority of children in the country. In contrast, the numbers of obese and underweight children topped almost 400,000 in both weight categories.",
+   "note": "Australia; July 2017 to June 2018; 21,300 respondents; 2-17 years",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Underweight",
+    "Normal",
+    "Overweight",
+    "Obese"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      395.9,
+      3238.5,
+      805.8,
+      396.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Share of overweight and obese children in Australia in financial year 2018, by age group",
+   "short": "Share of overweight and obese children Australia FY 2018, by age group",
+   "unit": "",
+   "description": "In the 2018 financial year, 17.7 percent of Australian children aged between 8 to 11 years old were overweight, and about 6.9 percent were obese. The age groups with the greatest share of obese children were 5 to 7 and 16 to 17 years old at 10.3 percent of each age group.",
+   "note": "Australia; financial year 2018",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "2–4",
+    "5–7",
+    "8–11",
+    "12–15",
+    "16–17"
+   ],
+   "series": [
+    {
+     "name": "Overweight",
+     "values": [
+      0.16,
+      0.174,
+      0.177,
+      0.148,
+      0.18
+     ]
+    },
+    {
+     "name": "Obese",
+     "values": [
+      0.092,
+      0.103,
+      0.069,
+      0.067,
+      0.103
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Estimated average daily vitamin intake per capita in Australia in financial year 2021, by type (in micrograms)",
+   "short": "Average daily vitamin intake per capita in Australia FY 2021, by type",
+   "unit": "micrograms",
+   "description": "In the 2021 financial year, it was estimated that Australians had on average 99 milligrams or 99000 micrograms of vitamin C available to consume per day, which was the highest quantity compared to other vitamin types. The Australian and New Zealand dietary guidelines recommendation suggested that 45 milligrams per day was adequate for an adult.",
+   "note": "FY 2021; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017",
+   "source": "Australian Bureau of Statistics Vitamin intake in milligrams",
+   "kind": "categorical",
+   "categories": [
+    "Preformed Vitamin A",
+    "Pro Vitamin A",
+    "Vitamin A retinol equivalent",
+    "Thiamin (B1)",
+    "Riboflavin (B2)",
+    "Niacin (B3)",
+    "Niacin equivalents",
+    "Folate, natural",
+    "Folic acid",
+    "Total Folates",
+    "Folate equivalents",
+    "Vitamin B6",
+    "Vitamin B12",
+    "Vitamin C",
+    "Vitamin E"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      382.9,
+      2412,
+      878.5,
+      1500,
+      1800,
+      22100,
+      37500,
+      287.5,
+      170.3,
+      457.7,
+      571.9,
+      1700,
+      4.3,
+      99000,
+      13800
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Estimated average daily mineral intake per capita in Australia in financial year 2021, by type (in milligrams)",
+   "short": "Average daily mineral intake per capita in Australia FY 2021, by type",
+   "unit": "milligrams",
+   "description": "In the 2021 financial year, it was estimated that Australians had on average 3,125.2 milligrams of sodium available to consume per day, which was the highest quantity compared to other mineral types. Australian and New Zealand dietary guidelines suggest that adults should limit their intake of sodium to 2,000 milligrams per day.",
+   "note": "FY 2021; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017",
+   "source": "Australian Bureau of Statistics Mineral quantity in milligrams",
+   "kind": "categorical",
+   "categories": [
+    "Calcium",
+    "Iodine",
+    "Iron",
+    "Magnesium",
+    "Phosphorus",
+    "Potassium",
+    "Selenium",
+    "Sodium",
+    "Zinc"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      785,
+      0.17,
+      10.3,
+      289.8,
+      1367,
+      2782.2,
+      0.07,
+      3125.2,
+      9.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Estimated average daily macronutrient intake per capita in Australia in financial year 2021, by type (in grams)",
+   "short": "Average daily macronutrient intake per capita in Australia FY 2021, by type",
+   "unit": "grams",
+   "description": "In the 2021 financial year, it was estimated that Australians had on average 231 grams of carbohydrate available to consume per day, which was the highest quantity compared to other macronutrient types. Australian and New Zealand dietary guidelines suggest that adults should gain 45 to 65 percent of their total energy intake from carbohydrates, which is about 230 to 310 grams per day.",
+   "note": "FY 2021; Australia's financial year runs from July 1 to June 30; for example, financial year 2017 starts on July 1, 2016 and ends on June 30, 2017",
+   "source": "Australian Bureau of Statistics Macronutrient quantity in grams",
+   "kind": "categorical",
+   "categories": [
+    "Protein",
+    "Total Fat",
+    "Saturated fat",
+    "Monounsaturated fat",
+    "Polyunsaturated fat",
+    "Linoleic acid",
+    "Alpha-Linolenic acid",
+    "Total long chain omega 3 fatty acids",
+    "Trans fatty acids",
+    "Carbohydrate",
+    "Total sugars",
+    "Free sugar",
+    "Added sugar",
+    "Starch",
+    "Dietary Fibre"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      79.6,
+      94.3,
+      36.4,
+      36.2,
+      14.3,
+      12.1,
+      1.8,
+      0.22,
+      1.66,
+      231.3,
+      114.1,
+      68.8,
+      63.6,
+      114.2,
+      21.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Average daily proportion of carbohydrate available per capita from selected AUSNUT food groupings in Australia in financial year 2021, by major food group",
+   "short": "Proportion of carbohydrate available from AUSNUT food groups in Australia FY 2021",
+   "unit": "",
+   "description": "In the 2021 financial year, it was estimated that 30 percent of carbohydrates consumed by Australians came from cereals and cereal products. That year, it was estimated that Australians consumed a total of 231.3 grams of carbohydrate on average per day.",
+   "note": "Australia; FY 2021",
+   "source": "Australian Bureau of Statistics Percentage of daily consumption",
+   "kind": "categorical",
+   "categories": [
+    "Cereals and cereal products",
+    "Cereal based products and dishes",
+    "Non-alcoholic beverages",
+    "Milk products and dishes",
+    "Fruit products and dishes",
+    "Confectionery and cereal/nut/fruit/seed bars",
+    "Sugar products and dishes",
+    "Vegetable products and dishes",
+    "Snack foods",
+    "Savoury sauces and condiments",
+    "Meat, poultry and game products and dishes",
+    "Infant formulae and foods",
+    "Legume and pulse products and dishes",
+    "Seed and nut products and dishes",
+    "Dairy and meat substitutes"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3,
+      0.124,
+      0.092,
+      0.09,
+      0.081,
+      0.079,
+      0.072,
+      0.064,
+      0.032,
+      0.021,
+      0.011,
+      0.007,
+      0.006,
+      0.006,
+      0.004
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Average daily proportion of protein available per capita from selected AUSNUT food groupings in Australia in financial year 2021, by major food group",
+   "short": "Proportion of protein available from AUSNUT food groups in Australia FY 2021",
+   "unit": "",
+   "description": "In the 2021 financial year, it was estimated that about 34.6 percent of daily protein consumed by Australians came from meat or poultry dishes. That same year, it was estimated that Australians received around 0.8 percent of their protein through dairy and meat substitutes.",
+   "note": "Australia; financial year 2021",
+   "source": "Australian Bureau of Statistics Percentage daily consumption",
+   "kind": "categorical",
+   "categories": [
+    "Meat, poultry and game products and dishes",
+    "Milk products and dishes",
+    "Cereals and cereal products",
+    "Cereal based products and dishes",
+    "Vegetable products and dishes",
+    "Fish and seafood products and dishes",
+    "Egg products and dishes",
+    "Confectionery and cereal/nut/fruit/seed bars",
+    "Seed and nut products and dishes",
+    "Fruit products and dishes",
+    "Non-alcoholic beverages",
+    "Snack foods",
+    "Legume and pulse products and dishes",
+    "Savoury sauces and condiments",
+    "Dairy & meat substitutes"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.346,
+      0.184,
+      0.154,
+      0.059,
+      0.053,
+      0.042,
+      0.03,
+      0.022,
+      0.022,
+      0.017,
+      0.017,
+      0.014,
+      0.009,
+      0.008,
+      0.008
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Average daily proportion of fiber available per capita from selected AUSNUT food groupings in Australia in financial year 2021, by major food group",
+   "short": "Proportion of fiber available from AUSNUT food groups in Australia FY 2021",
+   "unit": "",
+   "description": "In the 2021 financial year, it was estimated that almost 28 percent of daily fiber consumed by Australians came from cereals and cereal products. That year, it was estimated that Australians consumed a total on average around 24 grams of fiber per day.",
+   "note": "Australia; financial year 2021",
+   "source": "Australian Bureau of Statistics Percentage daily consumption",
+   "kind": "categorical",
+   "categories": [
+    "Cereals and cereal products",
+    "Vegetable products and dishes",
+    "Fruit products and dishes",
+    "Cereal based products and dishes",
+    "Non-alcoholic beverages",
+    "Seed and nut products and dishes",
+    "Snack foods",
+    "Meat, poultry and game products and dishes",
+    "Confectionery and cereal/nut/fruit/seed bars",
+    "Legume and pulse products and dishes",
+    "Savoury sauces and condiments",
+    "Miscellaneous",
+    "Milk products and dishes",
+    "Dairy & meat substitutes",
+    "Soup"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.278,
+      0.243,
+      0.155,
+      0.069,
+      0.052,
+      0.036,
+      0.03,
+      0.028,
+      0.026,
+      0.025,
+      0.023,
+      0.011,
+      0.006,
+      0.006,
+      0.005
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Number of people with diabetes mellitus in Australia from financial year 2008 to 2021 (in 1,000s people)",
+   "short": "Number of people with diabetes Australia FY 2008-2021",
+   "unit": "1,000s people",
+   "description": "In the 2021 financial year, an estimated 1.3 million people were suffering from diabetes in Australia, according to the National Health Survey. The number of people suffering from diabetes in Australia has increased over time since the beginning of the time series in 2008.",
+   "note": "Australia; financial year 2008 to financial year 2021; 11,110 respondents; 18 years and older; Australia's financial year runs from July of one year to June of the following year; for example, the financial year 2018 starts on July 1, 2017 and ends on June 30, 2018",
+   "source": "Australian Bureau of Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2012",
+    "2015",
+    "2018",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      898.8,
+      986.9,
+      1178.4,
+      1182.6,
+      1316.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Rate of type 1 diabetes diagnoses in Australia from 2006 to 2020 (per 100,000 population)",
+   "short": "Rate of type 1 diabetes diagnoses in Australia 2006-2020",
+   "unit": "per 100,000 population",
+   "description": "In 2020, around 13 people per 100,000 in Australia were diagnosed with type 1 diabetes, similar to the previous year. From 2006 to 2018, the rate of type 1 diabetes diagnoses hovered around 11 and 12 people per 100,000 of the population.",
+   "note": "Australia; 2006 to 2020",
+   "source": "AIHW",
+   "kind": "timeseries",
+   "categories": [
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11.3,
+      12.6,
+      12.3,
+      11.3,
+      11.9,
+      12,
+      11.6,
+      11.5,
+      11.7,
+      12.1,
+      11.7,
+      12,
+      11.9,
+      13,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Prevalence of type 2 diabetes across Australia in 2020, by age group and gender",
+   "short": "Prevalence of type 2 diabetes in Australia 2020 by age group and gender",
+   "unit": "",
+   "description": "In 2020, around one in five men over the age of 85 had type 2 diabetes in Australia. Prevalence increased with age for both men and women up to the age of 84, before slightly dropping in the 85 years and over age group. Less than one percent of males and females aged 39 and under had type 2 diabetes that year.",
+   "note": "Australia; 2020",
+   "source": "AIHW",
+   "kind": "categorical",
+   "categories": [
+    "0-39",
+    "40-44",
+    "45-49",
+    "50-54",
+    "55-59",
+    "60-64",
+    "65-69",
+    "70-74",
+    "75-79",
+    "80-84",
+    "85+"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.003,
+      0.024,
+      0.038,
+      0.061,
+      0.087,
+      0.118,
+      0.155,
+      0.19,
+      0.211,
+      0.22,
+      0.202
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.003,
+      0.02,
+      0.032,
+      0.05,
+      0.068,
+      0.087,
+      0.111,
+      0.136,
+      0.155,
+      0.17,
+      0.156
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Number of deaths per 100,000 population caused by diabetes as underlying cause in Australia from 2005 to 2020",
+   "short": "Deaths caused by diabetes in Australia 2005-2020",
+   "unit": "",
+   "description": "In 2020 the number of deaths per 100,000 population caused by diabetes as the underlying cause in Australia was 15, consistent with the numbers from the previous year. This number has remained stable since 2018 after a peak at 18 deaths per 100,000 of the population in 2008.",
+   "note": "Australia; 2005 to 2020",
+   "source": "AIHW",
+   "kind": "timeseries",
+   "categories": [
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      16,
+      17,
+      17,
+      18,
+      17,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      15,
+      15,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Number of diabetes prescriptions dispensed in Australia in financial year 2021, by type of medicine",
+   "short": "Number of diabetes prescriptions dispensed Australia FY 2021, by type of medicine",
+   "unit": "",
+   "description": "In the 2021 financial year in Australia, prescription diabetes medication metformin was dispensed over five million times. Other highly dispensed prescription medications for diabetes in Australia that year included sulfonylureas and SGLT2.",
+   "note": "Australia; FY 2021; Australia's financial year runs from July 1 to June 30 of the stated year; for example, financial year 2021 starts on July 1, 2020 and ends on June 30, 2021.",
+   "source": "AIHW Number of prescriptions dispensed",
+   "kind": "categorical",
+   "categories": [
+    "Metformin",
+    "Combination (incl. Metformin)",
+    "Sulfonylureas",
+    "SGLT2",
+    "DPP-4 inhibitors",
+    "Insulin",
+    "Other blood-lowering drugs",
+    "Combination",
+    "Thiazolidinediones",
+    "Alpha glucosidase inhibitors"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5406987,
+      3567281,
+      2065354,
+      1694517,
+      1396184,
+      1081593,
+      961465,
+      270952,
+      57952,
+      35045
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Total cancer burden attributable to specific risk factors in Australia in 2018 (in disability adjusted life years)",
+   "short": "Cancer burden (DALYs) attributable to specific risk factors Australia 2018",
+   "unit": "disability adjusted life years",
+   "description": "In 2018, tobacco use was the leading attributable risk factor to the cancer burden in Australia. That year, over 189,000 disability adjusted life years, or DALYs, were attributed to tobacco use. DALYs are used to measure the burden of a disease, or years of healthy life lost, by combining years of life lost with years of life lived with disability. Other leading risk factors included being overweight or obese, alcohol use, diet-related risks, and high sun exposure.",
+   "note": "Australia; 2018",
+   "source": "AIHW Disability adjusted life years (DALYs)",
+   "kind": "categorical",
+   "categories": [
+    "Tobacco Use",
+    "Overweight and obesity",
+    "Alcohol use",
+    "Combined dietary risks",
+    "High sun exposure",
+    "Diabetes",
+    "Occupational exposures and hazards",
+    "Physical inactivity",
+    "Illicit drug use",
+    "Unsafe sex",
+    "Air pollution"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      189178,
+      61805,
+      43260,
+      39485,
+      35330,
+      27604,
+      19787,
+      15420,
+      10893,
+      7104,
+      5430
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Number of people with normal, high and severe blood pressure in Australia in financial year 2018 (in thousands)",
+   "short": "Number of people with normal and high blood pressure Australia FY 2018",
+   "unit": "thousands",
+   "description": "This statistic displays the number of people with normal, high and severe blood pressure in Australia in the financial year 2018. That year, about 14 million Australians aged 18 years or older had normal blood pressure.",
+   "note": "Australia; July 2017 to June 2018; 21,315 respondents; 18 years and older",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "Normal/Low (<140/90 mmHg)",
+    "High (from 140/90 mmHg to <160/100 mmHg)",
+    "Very high (from 160/100 mmHg to <180/110 mmHg)",
+    "Severe (from 180/110 mmHg)"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      14398,
+      3161.4,
+      861.1,
+      233.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Distribution of the population with high blood pressure in Australia in financial year 2018, by age group*",
+   "short": "Population with high blood pressure Australia FY 2018, by age group",
+   "unit": "",
+   "description": "This statistic displays the distribution of the population with high, very high and severe blood pressure in Australia in the financial year 2018, by age group. That year, about 15.9 percent of Australians aged between 35 and 44 years had high blood pressure.",
+   "note": "Australia; July 2017 to June 2018; 21,315 respondents; 18 years and older; * High blood pressure includes people with high (from 140/90 mmHg to <160/100 mmHg), very high (from 160/100 mmHg to <180/110 mmHg) and severe (from [...] Read more",
+   "source": "Australian Bureau of Statistics",
+   "kind": "categorical",
+   "categories": [
+    "18–24",
+    "25–34",
+    "35–44",
+    "45–54",
+    "55–64",
+    "65–74",
+    "75–84",
+    "85 years and over"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.055,
+      0.088,
+      0.159,
+      0.264,
+      0.335,
+      0.402,
+      0.452,
+      0.474
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Number of people with osteoporosis in Australia from financial year 2005 to 2018 (in 1,000s people)",
+   "short": "Number of people with osteoporosis in Australia FY 2005-2018",
+   "unit": "1,000s people",
+   "description": "This statistic displays the number of people with osteoporosis in Australia from financial year 2005 to 2018, based on the National Health Survey. In financial year 2018, it is estimated that 924 thousand people in Australia were suffering from osteoporosis.",
+   "note": "Australia; FY 2005 to FY 2018; 18 years and older",
+   "source": "Australian Bureau of Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2005",
+    "2008",
+    "2012",
+    "2015",
+    "2018"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      585.8,
+      692.3,
+      725.5,
+      801.8,
+      924
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Number of people with hay fever and allergies in Australia from financial year 2005 to 2018 (in 1,000s people)",
+   "short": "Number of people with hay fever and allergies in Australia FY 2005-2018",
+   "unit": "1,000s people",
+   "description": "This statistic displays the number of people with hay fever and allergies in Australia from financial year 2005 to 2018, based on the National Health Survey. In financial year 2018, it is estimated that 4.6 million people in Australia were suffering from hay fever and allergies.",
+   "note": "Australia; FY 2005 to FY 2018; 18 years and older",
+   "source": "Australian Bureau of Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2005",
+    "2008",
+    "2012",
+    "2015",
+    "2018"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      3165.7,
+      3107.2,
+      3701.8,
+      4460.4,
+      4663
+     ]
+    }
+   ]
+  }
+ ]
+}

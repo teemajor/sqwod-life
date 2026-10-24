@@ -1,0 +1,1521 @@
+{
+ "studyId": "66090",
+ "study": "smart wearables in asia pacific",
+ "file": "research/statista/study_id66090_smart-wearables-in-asia-pacific.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Revenue of the digital fitness & well-being device market worldwide from 2019 to 2028, by segment (in billion U.S. dollars)",
+   "short": "Digital fitness & well-being device market revenue worldwide 2019-2028, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. This reflects the overall trend throughout the entire forecast period from 2019 to 2028. It is estimated that the indicator is continuously rising in all segments. In this regard, the Smartwatches segment achieves the highest value of 62.46 billion U.S. dollars in 2028.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Smartwatches",
+     "values": [
+      23.74,
+      32.04,
+      38.03,
+      40.19,
+      44.15,
+      47.94,
+      51.58,
+      55.16,
+      58.74,
+      62.46
+     ]
+    },
+    {
+     "name": "Smart bands",
+     "values": [
+      8.61,
+      11.78,
+      14.61,
+      16.47,
+      19.52,
+      22.78,
+      26.08,
+      29.38,
+      32.6,
+      35.84
+     ]
+    },
+    {
+     "name": "Smart Scales",
+     "values": [
+      2.3,
+      2.51,
+      3.21,
+      3.21,
+      3.55,
+      3.89,
+      4.18,
+      4.48,
+      4.72,
+      4.97
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Revenue growth of the fitness/activity tracking wristwear market worldwide from 2019 to 2028",
+   "short": "Revenue growth of fitness/activity tracking wristwear worldwide 2019-2028",
+   "unit": "",
+   "description": "The global revenue change in the 'Smart bands' segment of the digital health market was forecast to continuously decrease between 2023 and 2028 by in total 8.6 percentage points. After the fifth consecutive decreasing year, the indicator is estimated to reach 9.93 percent and therefore a new minimum in 2028.",
+   "note": "Worldwide; 2019 to 2028",
+   "source": "Statista; Statista Digital Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2944,
+      0.3676,
+      0.2411,
+      0.1267,
+      0.1857,
+      0.1667,
+      0.145,
+      0.1264,
+      0.1098,
+      0.0993
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Wearables unit shipments worldwide from 2014 to 2028 (in millions)",
+   "short": "Total wearable device unit shipments worldwide 2014-2028",
+   "unit": "millions",
+   "description": "In 2024, global shipments of hearables, watches, wrist-bands, and other wearables were forecast to reach around 560 million units. This is a 10.5 prcent percent year-over-year decrease compared to the previous year.",
+   "note": "Worldwide; 2014 to 2028; *2023 figure was calculated by Statista based on the 2023-2024 growth rate (10.5%) provided by the source Read more",
+   "source": "IDC; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      28.8,
+      81.9,
+      102.4,
+      115.4,
+      172.2,
+      346.4,
+      444.7,
+      533.6,
+      492.1,
+      506.6,
+      559.7,
+      590.7,
+      614.1,
+      632.3,
+      645.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Wearables unit shipments worldwide from 2014 to 2022 (in millions), by vendor",
+   "short": "Wearables unit shipments worldwide 2014-2022, by vendor",
+   "unit": "",
+   "description": "In 2022, Apple was the leading wearable device vendors, with around 146.3 million global units shipped. Apple was followed by Samsung and Xiaomi, which shipped around 43.1 million and 34.7 shipments worldwide, respectively.",
+   "note": "Worldwide; 2014 to 2022",
+   "source": "IDC",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Apple",
+     "values": [
+      11.6,
+      10.7,
+      33.1,
+      48,
+      111.5,
+      151.4,
+      161.8,
+      146.3
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      1.1,
+      12,
+      15.7,
+      16.1,
+      23.3,
+      41.7,
+      50.7,
+      54.4,
+      34.7
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      4.6,
+      11.2,
+      28.9,
+      43.5,
+      42.7,
+      33.3
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      2.7,
+      3.2,
+      4.4,
+      5.8,
+      12.2,
+      31.4,
+      40,
+      48.1,
+      43.1
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      10.9,
+      22,
+      22.5,
+      15.4,
+      13.8,
+      15.9,
+      12.9
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      2,
+      5.8,
+      6.1,
+      6.3
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      4.9
+     ]
+    },
+    {
+     "name": "Imagine Marketing",
+     "values": [
+      26.8,
+      29.3
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      12,
+      27.4,
+      43,
+      48.8,
+      69.4,
+      117.1,
+      146.1,
+      199.9,
+      205.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Share of smartwatch shipments from 2020 to 2022, by region",
+   "short": "Smartwatch shipments 2020-2022, by region",
+   "unit": "",
+   "description": "In 2022, North America and India were the largest smartwatch markets, occupying 28 percent and 21 percent of the market, respectively. China followed in the third places, representing 19 percent of global smartwatch market India's share of shipments grew from 3 percent in 2020 to 21 percent in 2022, marking a significant growth of India's smartwatch market.",
+   "note": "Worldwide, North America, China, India; 2020 to 2021",
+   "source": "Counterpoint Research",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      0.33,
+      0.3,
+      0.28
+     ]
+    },
+    {
+     "name": "China",
+     "values": [
+      0.27,
+      0.24,
+      0.19
+     ]
+    },
+    {
+     "name": "India",
+     "values": [
+      0.03,
+      0.1,
+      0.21
+     ]
+    },
+    {
+     "name": "Rest of world",
+     "values": [
+      0.28,
+      0.37,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Revenue of the fitness tracking smart wearables market in the Asia-Pacific region in 2022, with a forecast for 2027, by subregion (in billion U.S. dollars)",
+   "short": "Smart fitness wearables market revenue APAC 2022-2027, by subregion",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, the market for fitness tracking smart wearables in East Asia generated an estimated 22.9 billion U.S. dollars in revenue. The subregion's market was forecast to grow significantly over the following years, set to reach around 40.8 billion U.S. dollars by 2027. Similarly, South Asia's market for fitness tracking smart wearables was projected to more than triple in size during that same time period.",
+   "note": "Asia, APAC; as of June 2022; includes smartwatches, smart scales, and fitness/activity tracking wristwear",
+   "source": "Statista; Statista Digital Market Insights Market revenue in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "East Asia",
+    "South Asia",
+    "Southeast Asia",
+    "Oceania"
+   ],
+   "series": [
+    {
+     "name": "2027*",
+     "values": [
+      40.83,
+      11.96,
+      2.11,
+      0.98
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      22.87,
+      3.84,
+      1.42,
+      0.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Largest smartwatch markets in the Asia-Pacific region in 2022, by revenue (in million U.S. dollars)",
+   "short": "Largest smartwatch markets APAC 2022, by revenue",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, China's smartwatch market generated an estimated 14.51 billion U.S. dollars in revenue, making it the largest market across the Asia-Pacific region by far. Japan, the region's second largest smartwatch market, generated just under 960 million U.S. dollars that year.",
+   "note": "Asia, APAC; as of June 2022",
+   "source": "Statista; Statista Digital Market Insights Market revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Japan",
+    "South Korea",
+    "Australia",
+    "New Zealand",
+    "Vietnam",
+    "Singapore",
+    "Indonesia",
+    "India",
+    "Malaysia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      14510,
+      959.1,
+      884.6,
+      346,
+      156.6,
+      124.3,
+      104.8,
+      93.76,
+      86.69,
+      82.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Smartwatch usage penetration rate in the Asia-Pacific region in 2022, by selected country",
+   "short": "Smartwatch user penetration APAC 2022, by country",
+   "unit": "",
+   "description": "In 2022, the smartwatch penetration rate in New Zealand stood at an estimated 14.88 percent, the highest across the Asia-Pacific region. In contrast, India's smartwatch penetration amounted to 0.05 percent that year.",
+   "note": "Asia, APAC; as of June 2022",
+   "source": "Statista; Statista Digital Market Insights Penetration rate",
+   "kind": "categorical",
+   "categories": [
+    "New Zealand",
+    "South Korea",
+    "Singapore",
+    "Australia",
+    "China",
+    "Japan",
+    "Malaysia",
+    "Vietnam",
+    "Indonesia",
+    "India"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1488,
+      0.0846,
+      0.081,
+      0.0688,
+      0.0465,
+      0.0369,
+      0.0192,
+      0.0095,
+      0.0033,
+      0.0005
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Largest fitness and activity tracking wristwear markets in the Asia-Pacific region in 2022, by revenue (in million U.S. dollars)",
+   "short": "Largest fitness tracking wristwear markets APAC 2022, by revenue",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, China's fitness tracking wristwear market generated an estimated 4.33 billion U.S. dollars in revenue, making it the largest market across the Asia-Pacific region. India was the second largest fitness wristwear market in APAC that year, generating around 3.45 billion U.S. dollars in revenue.",
+   "note": "Asia, APAC; as of June 2022",
+   "source": "Statista; Statista Digital Market Insights Market revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "India",
+    "Japan",
+    "Indonesia",
+    "South Korea",
+    "Australia",
+    "Vietnam",
+    "Philippines",
+    "Thailand",
+    "Bangladesh"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4332,
+      3454,
+      439.7,
+      351.7,
+      191,
+      113.8,
+      87.43,
+      72.96,
+      51.57,
+      49.84
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Fitness and activity tracking wristwear usage penetration in the Asia-Pacific region in 2022, by selected country",
+   "short": "Fitness tracking wristwear user penetration APAC 2022, by revenue",
+   "unit": "",
+   "description": "In 2022, the fitness tracking wristwear penetration rate in South Korea stood at an estimated 4.55 percent, the highest across the Asia-Pacific region. In contrast, Bangladesh's fitness tracking wristwear penetration amounted to 0.87 percent that year.",
+   "note": "Asia, APAC; as of June 2022",
+   "source": "Statista; Statista Digital Market Insights Penetration rate",
+   "kind": "categorical",
+   "categories": [
+    "South Korea",
+    "Australia",
+    "India",
+    "Japan",
+    "China",
+    "Indonesia",
+    "Thailand",
+    "Philippines",
+    "Vietnam",
+    "Bangladesh"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0455,
+      0.0449,
+      0.0367,
+      0.036,
+      0.0302,
+      0.0285,
+      0.0223,
+      0.0173,
+      0.0157,
+      0.0087
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Share of smartwatch and fitness tracker owners in Asia in 2022, by country or territory",
+   "short": "Share of smart wearable owners Asia 2022, by country",
+   "unit": "",
+   "description": "A survey conducted by Rakuten Insight in September 2022 found that 46 percent of the respondents in China owned smartwatches. The smartwatch and fitness tracker ownership was lowest in Japan, with 16 percent of the respondents owning smartwatches and only one percent fitness trackers.",
+   "note": "Asia; September 8 to 30, 2022; 122,661 respondents; 16 years and older",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Hong Kong",
+    "Taiwan",
+    "South Korea",
+    "India",
+    "Vietnam",
+    "Thailand",
+    "Malaysia",
+    "Indonesia",
+    "Singapore",
+    "Philippines",
+    "Japan"
+   ],
+   "series": [
+    {
+     "name": "Smartwatch",
+     "values": [
+      0.46,
+      0.42,
+      0.38,
+      0.37,
+      0.37,
+      0.33,
+      0.31,
+      0.3,
+      0.29,
+      0.27,
+      0.25,
+      0.16
+     ]
+    },
+    {
+     "name": "Fitness/activity tracker",
+     "values": [
+      0.11,
+      0.1,
+      0.07,
+      0.05,
+      0.09,
+      0.13,
+      0.08,
+      0.15,
+      0.07,
+      0.28,
+      0.07,
+      0.01
+     ]
+    },
+    {
+     "name": "Both",
+     "values": [
+      0.2,
+      0.13,
+      0.11,
+      0.03,
+      0.14,
+      0.08,
+      0.09,
+      0.12,
+      0.08,
+      0.13,
+      0.08,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Market shares of the leading smartwatch brands in the Asia-Pacific region in 2022, by subregion (in billion U.S. dollars)",
+   "short": "Market shares of leading smartwatch brands APAC 2022, by subregion",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, Huawei was by far the leading smartwatch vendor in East Asia, holding a market share of 39 percent. Fitbit held the highest smartwatch market shares in both South Asia and Southeast Asia that year. In Oceania, Garmin was the leading smartwatch brand in 2022.",
+   "note": "Asia, APAC; as of June 2022",
+   "source": "Statista; Statista Digital Market Insights Market share",
+   "kind": "categorical",
+   "categories": [
+    "East Asia",
+    "Southeast Asia",
+    "South Asia",
+    "Oceania"
+   ],
+   "series": [
+    {
+     "name": "Amazfit",
+     "values": [
+      0.06,
+      0.05,
+      0.03
+     ]
+    },
+    {
+     "name": "Apple",
+     "values": [
+      0.07,
+      0.03,
+      0.02
+     ]
+    },
+    {
+     "name": "boAt",
+     "values": [
+      0.12
+     ]
+    },
+    {
+     "name": "Diesel",
+     "values": [
+      0.02
+     ]
+    },
+    {
+     "name": "Fire-Boltt",
+     "values": [
+      0.15
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      0.24,
+      0.23,
+      0.1
+     ]
+    },
+    {
+     "name": "Fossil",
+     "values": [
+      0.06,
+      0.06,
+      0.02
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.16,
+      0.04,
+      0.02,
+      0.26
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.39,
+      0.16,
+      0.09,
+      0.11
+     ]
+    },
+    {
+     "name": "Michael Kors",
+     "values": [
+      0.05
+     ]
+    },
+    {
+     "name": "Noise",
+     "values": [
+      0.04,
+      0.08,
+      0.09,
+      0.12
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      0.12,
+      0.15,
+      0.14,
+      0.16
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.09,
+      0.1,
+      0.07,
+      0.17
+     ]
+    },
+    {
+     "name": "Ticwatch",
+     "values": [
+      0.03
+     ]
+    },
+    {
+     "name": "UMIDIGI",
+     "values": [
+      0.03
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.02
+     ]
+    },
+    {
+     "name": "Xplora",
+     "values": [
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Market shares of the leading fitness and activity tracking wristwear brands in the Asia-Pacific region in 2022, by subregion (in billion U.S. dollars)",
+   "short": "Market shares of leading fitness tracking wristwear brands APAC 2022, by subregion",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, Fitbit was the leading brand for fitness tracking wristwear in Southeast Asia, South Asia, and Oceania. In South Asia, the U.S. company held a smart fitness wristwear market share of 51 percent.",
+   "note": "Asia, APAC; as of June 2022",
+   "source": "Statista; Statista Digital Market Insights Market share",
+   "kind": "categorical",
+   "categories": [
+    "East Asia",
+    "Southeast Asia",
+    "South Asia",
+    "Oceania"
+   ],
+   "series": [
+    {
+     "name": "Amazfit",
+     "values": [
+      0.03,
+      0.03
+     ]
+    },
+    {
+     "name": "BIGGERFIVE",
+     "values": [
+      0.02
+     ]
+    },
+    {
+     "name": "Blackview",
+     "values": [
+      0.05
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      0.05,
+      0.38,
+      0.51,
+      0.47
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.23,
+      0.05,
+      0.26
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.03,
+      0.1
+     ]
+    },
+    {
+     "name": "Mi",
+     "values": [
+      0.03,
+      0.09
+     ]
+    },
+    {
+     "name": "MorePro",
+     "values": [
+      0.04
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      0.92,
+      0.04,
+      0.09,
+      0.08
+     ]
+    },
+    {
+     "name": "Polar",
+     "values": [
+      0.05,
+      0.02
+     ]
+    },
+    {
+     "name": "Realme",
+     "values": [
+      0.06
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.02
+     ]
+    },
+    {
+     "name": "SoundPEATS",
+     "values": [
+      0.03,
+      0.05
+     ]
+    },
+    {
+     "name": "Suunto",
+     "values": [
+      0.05,
+      0.05,
+      0.02
+     ]
+    },
+    {
+     "name": "Withings",
+     "values": [
+      0.06,
+      0.02
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.04,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Smartwatch and fitness tracker ownership by brand in Asia in 2022, by country or territory",
+   "short": "Smart wearable ownership Asia 2022, by country and brand",
+   "unit": "",
+   "description": "According to a survey conducted by Rakuten Insight in September 2022, 44 percent of the smartwatch or fitness tracker users in Hong Kong owned Apple Watches. In comparison, Samsung was the most popular brand among South Korean consumers, with 61 percent of the smartwatch or fitness tracker owners using the brand as of September 2022.",
+   "note": "Asia; September 8 to 30, 2022; 67,493 respondents; 16 years and older; consumers who own a smartwatch or fitness tracker",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Hong Kong",
+    "Japan",
+    "Taiwan",
+    "Vietnam",
+    "Thailand",
+    "Singapore",
+    "China",
+    "South Korea",
+    "Malaysia",
+    "Philippines",
+    "India",
+    "Indonesia"
+   ],
+   "series": [
+    {
+     "name": "Apple Watch",
+     "values": [
+      0.44,
+      0.4,
+      0.35,
+      0.34,
+      0.29,
+      0.29,
+      0.28,
+      0.25,
+      0.2,
+      0.2,
+      0.18,
+      0.15
+     ]
+    },
+    {
+     "name": "Fitbit",
+     "values": [
+      0.11,
+      0.09,
+      0.03,
+      0.04,
+      0.06,
+      0.24,
+      0.02,
+      0.04,
+      0.1,
+      0.06,
+      0.16,
+      0.05
+     ]
+    },
+    {
+     "name": "Garmin",
+     "values": [
+      0.06,
+      0.05,
+      0.08,
+      0.04,
+      0.11,
+      0.09,
+      0.03,
+      0.02,
+      0.06,
+      0.02,
+      0.05,
+      0.05
+     ]
+    },
+    {
+     "name": "Samsung",
+     "values": [
+      0.22,
+      0.02,
+      0.12,
+      0.39,
+      0.23,
+      0.18,
+      0.08,
+      0.61,
+      0.19,
+      0.29,
+      0.3,
+      0.38
+     ]
+    },
+    {
+     "name": "Xiaomi",
+     "values": [
+      0.2,
+      0.07,
+      0.45,
+      0.24,
+      0.25,
+      0.1,
+      0.42,
+      0.11,
+      0.29,
+      0.22,
+      0.29,
+      0.39
+     ]
+    },
+    {
+     "name": "Huawei",
+     "values": [
+      0.06,
+      0.06,
+      0.03,
+      0.1,
+      0.16,
+      0.07,
+      0.47,
+      0.02,
+      0.23,
+      0.23,
+      0.08,
+      0.1
+     ]
+    },
+    {
+     "name": "ASUS",
+     "values": [
+      0.02,
+      0.04,
+      0.05,
+      0.07,
+      0.04,
+      0.02,
+      0.04,
+      0.01,
+      0.03,
+      0.04,
+      0.07,
+      0.07
+     ]
+    },
+    {
+     "name": "LG",
+     "values": [
+      0.01,
+      0.02,
+      0.01,
+      0.1,
+      0.05,
+      0.03,
+      0.01,
+      0.03,
+      0.02,
+      0.05,
+      0.1,
+      0.08
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      0.04,
+      0.35,
+      0.07,
+      0.05,
+      0.08,
+      0.22,
+      0.04,
+      0.04,
+      0.15,
+      0.13,
+      0.22,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Leading smartwatch vendors in China in 1st quarter 2023, by shipment share",
+   "short": "Top smartwatch brands China Q1 2023, by shipment share",
+   "unit": "",
+   "description": "In the first quarter of 2023, Huawei was the leading smartwatch brand in China, accounting for 37 percent of smartwatch shipments in the country. Huawei was also among the leading children's smartwatch vendors in China that quarter.",
+   "note": "China; Q1 2023",
+   "source": "Counterpoint Research",
+   "kind": "categorical",
+   "categories": [
+    "Huawei",
+    "Apple",
+    "Oppo",
+    "Xiaomi",
+    "Amazfit",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.37,
+      0.35,
+      0.08,
+      0.08,
+      0.07,
+      0.04
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Leading children's smartwatch vendors in China in 1st quarter 2023, by shipment share",
+   "short": "Top kids smartwatch brands China Q1 2023, by shipment share",
+   "unit": "",
+   "description": "In the first quarter of 2023, Imoo was the leading children's smartwatch brand in China, accounting for 35 percent of kids smartwatch shipments in the country. Out of the leading children's smartwatch vendors, Huawei and Xiaomi were also among the leading adult smartwatch brands in China that quarter.",
+   "note": "China; Q1 2023",
+   "source": "Counterpoint Research",
+   "kind": "categorical",
+   "categories": [
+    "Imoo",
+    "Huawei",
+    "Xiaomi",
+    "Qihoo 360",
+    "Abardeen",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.35,
+      0.15,
+      0.09,
+      0.08,
+      0.02,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Share of smart wearable owners that have social media apps installed in Asia in 2022, by country or territory",
+   "short": "Share of wearable users that have social media apps installed Asia 2022, by country",
+   "unit": "",
+   "description": "According to a survey conducted by Rakuten Insight in September 2022, 53 percent of the smart wearable users in China had social media apps installed on their devices. In comparison, 19 percent of the respondents in Japan had social media apps on their smart wearables as of September 2022.",
+   "note": "Asia; September 8 to 30, 2022; 67,493 respondents; 16 years and older; consumers who own a smartwatch or fitness tracker",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Philippines",
+    "Indonesia",
+    "India",
+    "Thailand",
+    "Vietnam",
+    "Taiwan",
+    "Malaysia",
+    "Hong Kong",
+    "South Korea",
+    "Singapore",
+    "Japan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.53,
+      0.44,
+      0.41,
+      0.41,
+      0.38,
+      0.36,
+      0.36,
+      0.36,
+      0.34,
+      0.23,
+      0.2,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of smart wearable owners that have mobile payment apps installed in Asia in 2022, by country or territory",
+   "short": "Share of wearable users that have mobile payment apps installed Asia 2022, by country",
+   "unit": "",
+   "description": "According to a survey conducted by Rakuten Insight in September 2022, 54 percent of the smart wearable users in China had mobile payment apps installed on their devices. In comparison, 22 percent of the respondents in Japan had mobile payment apps on their smart wearables as of September 2022.",
+   "note": "Asia; September 8 to 30, 2022; 67,493 respondents; 16 years and older; consumers who own a smartwatch or fitness tracker",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "India",
+    "Singapore",
+    "Hong Kong",
+    "Vietnam",
+    "Taiwan",
+    "Indonesia",
+    "South Korea",
+    "Philippines",
+    "Malaysia",
+    "Thailand",
+    "Japan"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.54,
+      0.36,
+      0.36,
+      0.34,
+      0.33,
+      0.32,
+      0.28,
+      0.27,
+      0.26,
+      0.26,
+      0.25,
+      0.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Share of smart wearable owners that have smart home apps installed in Asia in 2022, by country or territory",
+   "short": "Share of wearable users that have smart home apps installed Asia 2022, by country",
+   "unit": "",
+   "description": "According to a survey conducted by Rakuten Insight in September 2022, 26 percent of the smart wearable users in India had smart home apps installed on their devices. In comparison, ten percent of the respondents in Hong Kong had smart home apps on their smart wearables as of September 2022.",
+   "note": "Asia; September 8 to 30, 2022; 67,493 respondents; 16 years and older; consumers who own a smartwatch or fitness tracker",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "India",
+    "Vietnam",
+    "China",
+    "Thailand",
+    "Indonesia",
+    "Philippines",
+    "South Korea",
+    "Malaysia",
+    "Taiwan",
+    "Singapore",
+    "Japan",
+    "Hong Kong"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.26,
+      0.21,
+      0.21,
+      0.19,
+      0.19,
+      0.17,
+      0.15,
+      0.14,
+      0.11,
+      0.11,
+      0.11,
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Popular apps to connect with wearable electronics in China in 2022",
+   "short": "Popular apps to connect with smart wearables in China 2022",
+   "unit": "",
+   "description": "According to a 2022 survey by Rakuten Insight on wearable tech, 62 percent of respondents in China claimed that they connected their wearable tech with fitness apps like Runtastic, Runkeeper, MapMyRun and other similar applications.",
+   "note": "China; September 8 to 30, 2022; 3,791 respondents; 16 years and older; among female and male respondents that own wearable tech",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness apps",
+    "Mobile payment apps",
+    "Social media apps",
+    "Music streaming apps",
+    "Video streaming apps",
+    "Smart home apps",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.62,
+      0.54,
+      0.53,
+      0.42,
+      0.14,
+      0.21,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Monthly active users of leading smart wearable apps in China in September 2022 (in millions)",
+   "short": "MAU of major smart wearable apps in China 2022",
+   "unit": "millions",
+   "description": "Huawei has been leading China's smart wearables market. In September 2022, Huawei's two smart wearable apps Huawei Health and Huaiwei FamCare had about 47.5 million and 7.5 million monthly active users respectively. In terms of user growth, Vivo Health recorded the highest growth rate at 67.5 percent compared to a year ago.",
+   "note": "China; September 2022",
+   "source": "QuestMobile Number of users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Huawei Health",
+    "Xiao Tiancai",
+    "Vivo Health",
+    "Huawei FamCare",
+    "HeyTap Health",
+    "MITU"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      47.45,
+      13.07,
+      9.42,
+      7.49,
+      6.18,
+      3.82
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Share of respondents who own wearable electronics in China in 2022, by age",
+   "short": "Ownership of wearable tech China 2022, by age",
+   "unit": "",
+   "description": "According to a 2022 survey by Rakuten Insight on wearable tech, smartwatches were mostly owned by respondents who were 25 to 34 years, while a fitness or activity trackers were mostly owned by those aged over 45 years. In terms of motivation, the majority of respondents claimed that they were concerned about their health and would like to monitor and improve it by using wearable tech.",
+   "note": "China; September 8 to 30, 2022; 4,871 respondents; 16 years and older; among female and male respondents",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Yes, a smartwatch",
+    "Yes, a fitness/activity tracker",
+    "Yes, both a smartwatch and a fitness/activity tracker",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "16 to 24 years old",
+     "values": [
+      0.44,
+      0.11,
+      0.17,
+      0.28
+     ]
+    },
+    {
+     "name": "25 to 34 years old",
+     "values": [
+      0.5,
+      0.1,
+      0.26,
+      0.15
+     ]
+    },
+    {
+     "name": "35 to 44 years old",
+     "values": [
+      0.49,
+      0.13,
+      0.19,
+      0.19
+     ]
+    },
+    {
+     "name": "45 to 54 years old",
+     "values": [
+      0.35,
+      0.18,
+      0.14,
+      0.33
+     ]
+    },
+    {
+     "name": "55 years and older",
+     "values": [
+      0.2,
+      0.19,
+      0.09,
+      0.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Frequency of using smartwatches or wearable fitness/activity trackers in Japan as of September 2022",
+   "short": "Usage frequency of smartwatches or wearable fitness/activity trackers Japan 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Rakuten Insight in 2022, 65 percent of the respondents in Japan stated to use their smartwatch or wearable fitness or activity tracker every day. A combined share of 88 percent of the respondents used their wearable device at least once a week.",
+   "note": "Japan; September 8 to 30, 2022; 129*; 16 years and older; *The sample size consisted of 732 people, of which 129 respondents owned smartwatches or wearable fitness/activity trackers. Original survey question: \"How often do you use [...] Read more",
+   "source": "Rakuten Insight",
+   "kind": "categorical",
+   "categories": [
+    "Every day",
+    "Several times a week",
+    "Once a week",
+    "Several times a month",
+    "Once a month",
+    "I rarely use my smartwatch and/or fitness activity tracker",
+    "I have stopped using my smartwatch and/or fitness/activity tracker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.65,
+      0.16,
+      0.07,
+      0.05,
+      0,
+      0.02,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Most common uses for wearable tech in Indonesia in 2022",
+   "short": "Most common uses for wearable tech in Indonesia 2022",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on wearable tech, 62 percent of respondents in Indonesia claimed that they were monitoring their fitness activities. In the same survey, about half of the respondents stated that they owned a smart wearable.",
+   "note": "Indonesia; September 8 to 30, 2022; 5,089 respondents; 16 years and older; among female and male respondents that own wearable tech",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Monitor my fitness activities",
+    "Play music",
+    "Monitor my sleep cycle and set an alarm accordingly",
+    "Control and manage other connected devices",
+    "Make calls",
+    "Look up and follow directions on a map app",
+    "Go on social media",
+    "Receive and reply to short text messages",
+    "Read and/or reply work e-mails",
+    "Make online payments",
+    "Read the news",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.62,
+      0.45,
+      0.36,
+      0.34,
+      0.28,
+      0.2,
+      0.19,
+      0.17,
+      0.13,
+      0.12,
+      0.11,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Main motivations to purchase wearable tech in Singapore in 2022",
+   "short": "Motivations to purchase wearable tech in Singapore 2022",
+   "unit": "",
+   "description": "According to a survey by Rakuten Insight on wearable tech, 50 percent of respondents in Singapore claimed that they were concerned about their health and would like to monitor and improve it by using wearable tech. In the same survey, more than half of the respondents in Singapore stated that they owned a smart wearable.",
+   "note": "Singapore; September 8 to 30, 2022; 3,574 respondents; 16 years and older; among female and male respondents that own wearable tech",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I am concerned about my health and want to monitor and improve it",
+    "I am into fitness and want to keep track of and optimize my training and performance",
+    "I wanted easier accessibility to smartphone functions without having to constantly have my smartphone in my hand",
+    "The price is reasonable for the functions that it can do",
+    "I already own other smart devices from the same brand and want to stay connected with my other devices easier",
+    "I like to keep up with the latest tech trends and products",
+    "Others"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5,
+      0.41,
+      0.32,
+      0.29,
+      0.2,
+      0.17,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Reasons against purchasing smart wearables in India as of September 2022",
+   "short": "Reasons against buying smart wearables India 2022",
+   "unit": "",
+   "description": "According to a survey conducted by Rakuten Insight, the main reason for not purchasing a wearable device amongst 38.7 percent of the respondents across India was that they did not see the need for a smartwatch or fitness tracker.",
+   "note": "India; September 8 to 30, 2022; 15,599 respondents; 16 years and older; among respondents that do not own smartwatches or wearable fitness/activity trackers",
+   "source": "Rakuten Insight Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I do not see the need for a smartwatch or fitness tracker",
+    "Smartwatches and fitness trackers are too expensive",
+    "I already have a smartphone and am satisfied with its functions",
+    "I am not into sports and therefore do not need a smart wearable to track my fitness",
+    "I am concerned about privacy and the safety of my data that would be stored by such wearable",
+    "The technology is not yet at a level where I think the devices would be useful",
+    "Others",
+    "Smartwatches and fitness trackers do not look good"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3869,
+      0.3717,
+      0.3623,
+      0.2604,
+      0.179,
+      0.1678,
+      0.1524,
+      0.1196
+     ]
+    }
+   ]
+  }
+ ]
+}

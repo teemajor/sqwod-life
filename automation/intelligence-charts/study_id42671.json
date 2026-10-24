@@ -1,0 +1,1082 @@
+{
+ "studyId": "42671",
+ "study": "sme marketing",
+ "file": "research/statista/Fitness Marketing/study_id42671_sme-marketing.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Advertising budgets of small and medium-sized businesses (SMBs) in the United States as of October 2022 (in U.S. dollars)",
+   "short": "Advertising budgets of SMBs in the U.S. 2022",
+   "unit": "U.S. dollars",
+   "description": "According to the results of a 2022 survey carried out among owners or senior leaders/managers at small and medium-sized businesses (SMBs) in the United States, slightly more than 70 percent of the participating companies had advertising budgets of up to 100,000 US dollars.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute",
+   "kind": "categorical",
+   "categories": [
+    "0 to 1000",
+    "1,001 to 10,000",
+    "10,001 to 100,000",
+    "100,001 to 100,000,000"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.119,
+      0.267,
+      0.319,
+      0.295
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Distribution of advertising budgets at small and medium-sized businesses (SMBs) in the United States as of October 2022, by medium",
+   "short": "SMBs' advertising budgets distribution in the U.S. 2022, by medium",
+   "unit": "",
+   "description": "During a 2022 survey, it was found that social media took a mean share of 27.2 percent of advertising budget of small and medium-sized businesses in the United States. Search advertising was the second most invested-in medium, with a share of 16.3 percent.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Mean share",
+   "kind": "categorical",
+   "categories": [
+    "Social media",
+    "Online search",
+    "Digital display",
+    "Online video",
+    "Print",
+    "Mobile-only formats",
+    "Radio",
+    "Broadcast / cable TV",
+    "Streaming / connected TV",
+    "Outdoor",
+    "Podcast",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.272,
+      0.163,
+      0.093,
+      0.085,
+      0.072,
+      0.062,
+      0.045,
+      0.045,
+      0.044,
+      0.042,
+      0.033,
+      0.046
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Leading marketing goals according to small businesses (SMBs) in the United States as of November 2022",
+   "short": "Leading marketing objectives of SMBs in the U.S. 2022",
+   "unit": "",
+   "description": "During a survey conducted in November 2022 in the United States, nearly 60 percent of small businesses (SMBs) mentioned increasing sales as a leading marketing goal. For 15.5 percent of respondents, marketing objectives focused on generating leads.",
+   "note": "November 2022; 218 respondents; among business professionals and advertisers",
+   "source": "Taradel Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Increase sales",
+    "Increase leads",
+    "Build brand awareness",
+    "Launch/Grow e-commerce",
+    "Retain customers",
+    "Reduce costs",
+    "Improve analysis",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.589,
+      0.155,
+      0.105,
+      0.046,
+      0.041,
+      0.009,
+      0.005,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Leading marketing challenges according to small businesses (SMBs) in the United States as of November 2022",
+   "short": "Leading SMB marketing challenges in the U.S. 2022",
+   "unit": "",
+   "description": "During a survey fielded in November 2022 among small businesses (SMBs) in the United States, budget and lead-generation appeared as the main marketing challenges. A little over 23 percent of respondents mentioned budget, whilw 22.8 percent mentioned lead-generation. For nearly 10 percent of SMBs, return-on-investment (ROI) was a major marketing challenge.",
+   "note": "United States; November 2022; 218 respondents",
+   "source": "Taradel Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Budget",
+    "Lead-generation",
+    "ROI",
+    "Know-how",
+    "Competition",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.233,
+      0.228,
+      0.096,
+      0.087,
+      0.059,
+      0.297
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Marketing tactics of small and medium-sized businesses (SMBs) in the United States as of August 2023",
+   "short": "Marketing tactics of SMBs in the U.S. 2023",
+   "unit": "",
+   "description": "During an August 2023 survey, 56 percent of surveyed small or medium business owners said they used social media marketing to increase customer engagement and online traffic, while 21 percent of them were considering doing it. Offering sales or deals on products or services to appeal to new customers ranked close second, with 73 percent of respondents either already adopting this practice or considering it for the future.",
+   "note": "United States; August 10 to 23, 2023; 681 respondents; among small to midsize business owners and decision makers",
+   "source": "Morning Consult; Verizon (Verizon Business) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Using social media marketing to increase customer engagement and online traffic",
+    "Offering sales or deals on products or services to appeal to new customers",
+    "Implementing new digital marketing technologies to better target the right audiences",
+    "Using social media 'storefronts' or 'shops' to allow customers to buy products or services directly via social platforms",
+    "Establishing partnerships with complementary businesses to drive awareness and customer acquisition"
+   ],
+   "series": [
+    {
+     "name": "My business is currently doing or has already done this",
+     "values": [
+      0.56,
+      0.5,
+      0.41,
+      0.31,
+      0.27
+     ]
+    },
+    {
+     "name": "My business has not yet done but is considering doing this",
+     "values": [
+      0.21,
+      0.23,
+      0.26,
+      0.26,
+      0.29
+     ]
+    },
+    {
+     "name": "My business is not considering this",
+     "values": [
+      0.17,
+      0.21,
+      0.24,
+      0.35,
+      0.33
+     ]
+    },
+    {
+     "name": "Don't know/No opinion",
+     "values": [
+      0.07,
+      0.06,
+      0.09,
+      0.09,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Leading media and tactics planned to be used by SMBs for marketing purposes over the next year in the United States as of November 2022",
+   "short": "Planned use of selected marketing media and tactics by U.S. SMBs 2022",
+   "unit": "",
+   "description": "According to the survey conducted in November 2022, 68.5 percent of small businesses (SMBs) in the United States planned to use Facebook ads as a marketing channel over the next year. Over 66 percent of respondents mentioned email, while 60 percent planned to use direct mail.",
+   "note": "United States; November 2022; 218 respondents; among business professionals and advertisers",
+   "source": "Taradel Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Facebook ads",
+    "Email",
+    "Direct mail",
+    "Local/Event",
+    "Paid search/Google ads",
+    "Instagram ads",
+    "Organic search/SEO",
+    "Content marketing",
+    "Digital banner ads",
+    "Newspaper/Local publications",
+    "YouTube ads",
+    "TikTok ads",
+    "Traditional TV/Radio",
+    "Local shared mail/Coupon packs",
+    "Streaming TV ads"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.685,
+      0.662,
+      0.603,
+      0.457,
+      0.397,
+      0.374,
+      0.356,
+      0.306,
+      0.215,
+      0.21,
+      0.21,
+      0.169,
+      0.132,
+      0.082,
+      0.082
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of marketing channels used by small businesses (SMBs) in the United States as of November 2022",
+   "short": "Number of marketing channels used by SMBs in the U.S. 2022",
+   "unit": "",
+   "description": "According to a survey conducted in November 2022, 75 percent of small businesses (SMBs) in the United States used at least two marketing channels to promote their products and services. A little over 12 percent of respondents used only one channel.",
+   "note": "United States; November 2022; 218 respondents; among business professionals and advertisers",
+   "source": "Taradel",
+   "kind": "categorical",
+   "categories": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.116,
+      0.125,
+      0.194,
+      0.199,
+      0.162,
+      0.204
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Marketing channels with highest return-on-investment ROI according to small businesses (SMBs) in the United States as of November 2022",
+   "short": "Marketing channels with highest ROI according to SMBs in the U.S. 2022",
+   "unit": "",
+   "description": "According to the survey conducted in November 2022, nearly 30 percent of small businesses (SMBs) in the United States reported that Facebook delivered the highest return-on-investment (ROI) for their marketing strategies. Direct mail and email followed, each mentioned by 23.4 and 19.2 percent of respondents.",
+   "note": "United States; November 2022; 218 respondents; among business professionals and advertisers",
+   "source": "Taradel",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Direct mail",
+    "Email",
+    "Paid search/Google ads",
+    "Organic search/SEO",
+    "Local/Event",
+    "Instagram ads"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.29,
+      0.234,
+      0.192,
+      0.164,
+      0.131,
+      0.112,
+      0.108
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Digital advertising platforms used by small and medium-sized businesses (SMBs) in the United States as of October 2022",
+   "short": "Digital ad platforms used by SMBs in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey, 63.3 percent of responding small and medium-sized businesses (SMBs) from the United States who advertised online said they used Facebook for paid digital advertising. Other social networks, such as Instagram, TikTok, Twitter, LinkedIn, or Pinterest were also popular. SMBs also advertised in search engines (Google and Microsoft) as well as on digital retail media (Amazon).",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Google",
+    "YouTube",
+    "Instagram",
+    "Amazon",
+    "Microsoft (Bing, Yahoo, DuckDuckGo)",
+    "TikTok",
+    "Twitter",
+    "LinkedIn",
+    "Apple",
+    "Pinterest",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.633,
+      0.612,
+      0.457,
+      0.435,
+      0.381,
+      0.339,
+      0.286,
+      0.273,
+      0.265,
+      0.206,
+      0.199,
+      0.019
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Level of importance of digital advertising to the success of small and medium-sized businesses in the United States as of October 2022",
+   "short": "Importance of digital advertising to the success of SMBs in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey, almost 82 percent of responding small and medium-sized businesses (SMBs) from the United States somewhat or strongly agreed that digital advertising was important for them. On the other hand, around five percent of respondents somewhat or strongly disagreed with that statement.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strongly agree",
+    "Somewhat agree",
+    "Neither agree nor disagree",
+    "Somewhat disagree",
+    "Strongly disagree",
+    "No answer/does not apply"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.498,
+      0.321,
+      0.121,
+      0.04,
+      0.014,
+      0.005
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Revenue digital advertising generated for small and medium-sized businesses (SMBs) in the United States in 2022, by company type (in U.S. dollars)",
+   "short": "Digital ad revenue generated by SMBs in the U.S. 2022, by company type",
+   "unit": "U.S. dollars",
+   "description": "During a survey held in 2022, 71 percent of responding small and medium-sized businesses (SMBs) from the United States stated that they expected that digital advertising would generate up to 650 thousand U.S. dollars in revenue for their busiensses. Among SMB advertisers the respective share stood at approximately 70 percent.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute",
+   "kind": "categorical",
+   "categories": [
+    "Total",
+    "Advertisers",
+    "Publishers"
+   ],
+   "series": [
+    {
+     "name": "$0 to $50 000",
+     "values": [
+      0.448,
+      0.428,
+      0.43
+     ]
+    },
+    {
+     "name": "$50 001 to $650,000",
+     "values": [
+      0.262,
+      0.27,
+      0.26
+     ]
+    },
+    {
+     "name": "over $650,000",
+     "values": [
+      0.291,
+      0.302,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Projected change in digital advertising revenue generated by small and medium-sized businesses (SMBs) in the United States in 2023, by company type",
+   "short": "Growth of digital ad revenue generated by SMBs in the U.S. 2023, by company type",
+   "unit": "",
+   "description": "During a 2022 survey, almost two-thirds (or 64.4 percent) of responding small and medium-sized businesses (SMBs) from the United States stated that they expected higher digital advertising revenue for the next year. On the other hand, only 7.7 percent of respondents reported an expectation of lower digital ad revenue for the next year.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute",
+   "kind": "categorical",
+   "categories": [
+    "Total",
+    "Advertisers",
+    "Publishers"
+   ],
+   "series": [
+    {
+     "name": "Higher",
+     "values": [
+      0.644,
+      0.643,
+      0.633
+     ]
+    },
+    {
+     "name": "The same",
+     "values": [
+      0.252,
+      0.259,
+      0.259
+     ]
+    },
+    {
+     "name": "Lower",
+     "values": [
+      0.077,
+      0.068,
+      0.082
+     ]
+    },
+    {
+     "name": "Don't know",
+     "values": [
+      0.027,
+      0.03,
+      0.025
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Impact of digital advertising on the growth of small and medium-sized businesses (SMBs) in the United States as of October 2022",
+   "short": "Impact of digital advertising on the growth of SMBs in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey, roughly one-third (or 35.1 percent) of responding small and medium-sized businesses (SMBs) from the United States reported that their business had grown 50 percent or more in the two years leading up to the survey because of digital advertising.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents Growth in the last two years",
+   "kind": "categorical",
+   "categories": [
+    "None",
+    "1% to 24%",
+    "25% to 49%",
+    "50% to 74%",
+    "75% to 100%"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.012,
+      0.371,
+      0.265,
+      0.183,
+      0.168
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Change in the usage of digital advertising among small and medium-sized businesses (SMBs) in the United States between 2022 and 2024",
+   "short": "Change in the usage of digital advertising among SMBs in the U.S. 2022-2024",
+   "unit": "",
+   "description": "During a 2022 survey, almost 70 percent of responding small and medium-sized businesses (SMBs) from the United States said that they planned to increase their usage of digital advertising in the next two years. In the meantime, approximately 27 percent of responding SMBs stated that they planned to keep the level about the same in the respective period.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs that advertise",
+   "source": "Data Catalyst Institute",
+   "kind": "categorical",
+   "categories": [
+    "More than now - 25% or more",
+    "Somewhat more than now - 5%-25% more",
+    "About the same - give or take 5%",
+    "Somewhat less than now - 5%-25% less",
+    "Much less than now - 25% (or more) less"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.311,
+      0.387,
+      0.269,
+      0.024,
+      0.009
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Purpose of using digital advertising among small and medium-sized businesses (SMBs) in the United States as of October 2022",
+   "short": "Purpose of using digital advertising at SMBs in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey, 58.5 percent of responding small and medium-sized businesses (SMBs) from the United States stated that finding customers that buy products or services was the main purpose of using digital advertising for their business. Generating overall brand awareness came second with slightly more than 40 percent.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs that advertise",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "To find customers that buy products or services",
+    "To generate overall brand awareness",
+    "To retarget existing customers to stay top of mind",
+    "To enter new markets",
+    "To communicate company values and goals",
+    "To retarget customers to increase lifetime value",
+    "To conduct thought leadership",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.585,
+      0.414,
+      0.231,
+      0.227,
+      0.227,
+      0.202,
+      0.098,
+      0.011
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Share of small and medium-sized businesses (SMBs) where digital advertising contributed more to revenue than traditional advertising in the United States as of October 2022",
+   "short": "SMBs where digital ads contributed more to revenue than traditional ads US 2022",
+   "unit": "",
+   "description": "During a 2022 survey, approximately 78 percent of responding small and medium-sized businesses (SMBs) from the United States somewhat or strongly agreed that digital advertising contributed more to their revenue than traditional advertising. On the other hand, 6.6 percent of respondents somewhat or strongly disagreed with that statement.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strongly agree",
+    "Somewhat agree",
+    "Neither agree nor disagree",
+    "Somewhat disagree",
+    "Strongly disagree",
+    "N/A - does not apply"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.484,
+      0.299,
+      0.143,
+      0.046,
+      0.02,
+      0.008
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Share of small and medium-sized businesses (SMBs) that believed that digital advertising allowed them to target customers more efficiently than traditional advertising in the United States as of October 2022",
+   "short": "SMBs that believe that digital ads targeted customers more efficiently U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey, 82.2 percent of responding small and medium-sized businesses (SMBs) from the United States somewhat or strongly agreed that digital advertising allowed them to target customers more efficiently than traditional advertising. On the other hand, approximately five percent of respondents somewhat or strongly disagreed with that statement.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strongly agree",
+    "Somewhat agree",
+    "Neither agree nor disagree",
+    "Somewhat disagree",
+    "Strongly disagree",
+    "No answer/does not apply"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.502,
+      0.32,
+      0.123,
+      0.032,
+      0.016,
+      0.007
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Share of small and medium-sized businesses (SMBs) that believed that digital advertising helped them reach more new customers than traditional advertising in the United States as of October 2022",
+   "short": "SMBs that believe online ads help them reach more new customers than offline ads U.S.",
+   "unit": "",
+   "description": "During a 2022 survey, 81.3 percent of responding small and medium-sized businesses (SMBs) from the United States somewhat or strongly agreed that digital advertising helped them reach more new customers than traditional advertising. On the other hand, around six percent of respondents somewhat or strongly disagreed with that statement.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strongly agree",
+    "Somewhat agree",
+    "Neither agree nor disagree",
+    "Somewhat disagree",
+    "Strongly disagree",
+    "N/A - does not apply"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.508,
+      0.305,
+      0.119,
+      0.046,
+      0.012,
+      0.011
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Share of small and medium-sized businesses (SMBs) that believed that digital advertising helped them reach new customers in the United States as of October 2022",
+   "short": "SMBs that believe digital ads help them reach new customers in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey, almost 82 percent of responding small and medium-sized businesses (SMBs) from the United States somewhat or strongly agreed that digital advertising helped them reach new customers. On the other hand, around five percent of respondents somewhat or strongly disagreed with that statement.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strongly agree",
+    "Somewhat agree",
+    "Neither agree nor disagree",
+    "Somewhat disagree",
+    "Strongly disagree",
+    "N/A - does not apply"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.501,
+      0.318,
+      0.126,
+      0.039,
+      0.013,
+      0.003
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Share of small and medium-sized businesses (SMBs) that believed that digital advertising helped them compete with much larger competitors in the United States as of October 2022",
+   "short": "SMBs that believed digital ads helped them be competetive in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey, 78.5 percent of responding small and medium-sized businesses (SMBs) from the United States somewhat or strongly agreed that digital advertising helped them compete with much larger competitors. On the other hand, around 6.3 percent of respondents somewhat or strongly disagreed with that statement.",
+   "note": "United States; September 6 to October 2, 2022; 2,428 respondents; among owners or senior leaders/managers at SMBs",
+   "source": "Data Catalyst Institute Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Strongly agree",
+    "Somewhat agree",
+    "Neither agree nor disagree",
+    "Somewhat disagree",
+    "Strongly disagree",
+    "N/A - does not apply"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.479,
+      0.306,
+      0.142,
+      0.05,
+      0.013,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Leading social media networks used by small and medium-sized businesses (SMBs) to advertise in the United States as of November 2022",
+   "short": "Leading social media used by SMBs for advertising in the U.S. 2022",
+   "unit": "",
+   "description": "During a survey of small and medium-sized businesses in the United States as of November 2022, over 80 percent of respondents said they used Facebook regularly. Almost half of SMBs adopted Instagram for marketing and advertising, while 30 percent used LinkedIn.",
+   "note": "United States; November 2022; 218 respondents",
+   "source": "Taradel",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "YouTube",
+    "Twitter",
+    "NextDoor",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.833,
+      0.479,
+      0.298,
+      0.181,
+      0.14,
+      0.116,
+      0.107
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Social media usage by small businesses to advertise products and services in the United States as of August 2023, by platform",
+   "short": "Social media usage by SMBs to advertise products and services in the U.S. 2023",
+   "unit": "",
+   "description": "According to a survey conducted in August 2023 in the United States, Facebook and Instagram were the most popular social media platforms among small businesses. Eighty percent of respondents reported using Facebook to promote products and services. Sixty-four percent of respondents mentioned the same for Instagram. Threads and Twitter had the lowest usage levels among SMBs.",
+   "note": "United States; August 10 to 23, 2023; 681 respondents; among small to midsize business owners and decision makers",
+   "source": "Morning Consult; Verizon (Verizon Business) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "TikTok",
+    "LinkedIn",
+    "Twitter",
+    "Threads"
+   ],
+   "series": [
+    {
+     "name": "My business began using this in the past year",
+     "values": [
+      0.2,
+      0.15,
+      0.13,
+      0.11,
+      0.11,
+      0.11
+     ]
+    },
+    {
+     "name": "My business used this before, and has expanded or increased our usage in the past year",
+     "values": [
+      0.29,
+      0.24,
+      0.12,
+      0.16,
+      0.14,
+      0.1
+     ]
+    },
+    {
+     "name": "My business used this before, and is using the same way now as we were a year ago",
+     "values": [
+      0.31,
+      0.2,
+      0.1,
+      0.22,
+      0.15,
+      0.07
+     ]
+    },
+    {
+     "name": "My business does not use this",
+     "values": [
+      0.16,
+      0.34,
+      0.58,
+      0.42,
+      0.52,
+      0.58
+     ]
+    },
+    {
+     "name": "Do not know / No opinion",
+     "values": [
+      0.03,
+      0.07,
+      0.08,
+      0.1,
+      0.09,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Marketing content formats that generated highest social media engagement according to small businesses (SMBs) in the United States and Canada in 2022",
+   "short": "Most engaging social media content for U.S. and Canada SMBs 2022",
+   "unit": "",
+   "description": "During a survey of small businesses (SMBs) in the U.S. and Canada in 2022, one-quarter of respondents deemed video the most engaging marketing content on social media platforms. For nearly 20 percent of SMBs, promotions and offers generated the higher engagement.",
+   "note": "Canada, United States; 2022; 600 respondents",
+   "source": "UpCity",
+   "kind": "categorical",
+   "categories": [
+    "Videos",
+    "Promotion and offers",
+    "Images",
+    "Testimonial and reviews",
+    "Articles",
+    "Infographics",
+    "Quizzes and polls",
+    "Webinars"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.25,
+      0.19,
+      0.17,
+      0.12,
+      0.09,
+      0.08,
+      0.06,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Usage of in-house versus third-party social media management by small businesses (SMBs) in the United States and Canada in 2022",
+   "short": "In-house versus third-party social media management in U.S. & Canada SMBs 2022",
+   "unit": "",
+   "description": "During a survey of small businesses (SMBs) in the U.S. and Canada in 2022, nearly 50 percent of respondents reported only working with an in-house social media team to manage marketing activities. Around one-quarter of SMBs hired a third-party social media agency.",
+   "note": "Canada, United States; 2022; 600 respondents",
+   "source": "UpCity Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I only worked with an in-house social media team",
+    "I only worked with social media freelancers/consultants",
+    "I worked with a third-party social media agency"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.48,
+      0.28,
+      0.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Factors taken into account by small businesses (SMBs) while hiring a social media agency in the United States and Canada in 2022",
+   "short": "Factors SMBs focused on while hiring a social media agency U.S. & Canada 2022",
+   "unit": "",
+   "description": "During a survey of small businesses (SMBs) in the U.S. and Canada in 2022, around one-quarter of the respondents mentioned considering an agency's years of experience before hiring it for social media marketing activities. A little over 20 percent of SMBs focused on affordable pricing, while 15 percent followed recommendations from colleagues, friends, or family members.",
+   "note": "Canada, United States; 2022; 600 respondents",
+   "source": "UpCity Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Affordable pricing",
+    "Years of experience",
+    "Impressive portfolio",
+    "Referred by a colleague, friend, or family member",
+    "Seemed like the right cultural fit",
+    "Had positive online reviews and testimonials",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.21,
+      0.24,
+      0.13,
+      0.15,
+      0.12,
+      0.11,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Likelihood of small businesses (SMBs) to invest in artificial technology (AI) and/or automation technology in the next 12 months in the United States as of June 2023",
+   "short": "Likelihood of U.S. SMBs to invest in AI for marketing purposes 2023",
+   "unit": "",
+   "description": "According to the survey conducted in the United States in June 2023, 44 percent of small businesses (SMBs) owners and marketing decision-makers did not use artificial intelligence and/or automation, but would like to start adopting the technology. Around one-quarter of SMBs reported they already use AI.",
+   "note": "United States; June 2023; 486 respondents; among small business owners and marketing decision-makers",
+   "source": "Ascend2; Constant Contact Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Currently using",
+    "Not using but would like to start",
+    "Not using, no interest in starting using",
+    "Unsure"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.26,
+      0.44,
+      0.14,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Leading concerns or hesitations among SMBs about using artificial intelligence (AI) and/or automation technology for marketing purposes in the United States as of June 2023",
+   "short": "SMBs leading concerns or hesitations about using AI for marketing in the U.S. 2023",
+   "unit": "",
+   "description": "According to the survey conducted in the United States in June 2023, 44 percent of small business (SMB) owners and marketing decision-makers stated that their biggest concern regarding using artificial intelligence (AI) and/or automation technology for marketing purposes was their data security. Concerns about the price of implementation of the technology followed with 41 percent.",
+   "note": "United States; June 2023; 486 respondents; among small business owners and marketing decision-makers",
+   "source": "Ascend2; Constant Contact Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I'm concerned about the security of my data",
+    "The technology is too expensive to implement",
+    "It would take too much time to learn/implement",
+    "There are no AI/automation tools built for small businesses",
+    "I don't feel they would help my business",
+    "I don't think it's ethical to use AI/automation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.44,
+      0.41,
+      0.33,
+      0.27,
+      0.26,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Leading areas SMBs used artificial intelligence (AI) and/or automation for marketing purposes in the United States as of June 2023",
+   "short": "Leading areas SMBs used AI and/or automation for marketing in the U.S. 2023",
+   "unit": "",
+   "description": "According to the survey conducted in the United States in June 2023, 52 percent of responding small business (SMB) owners and marketing decision-makers stated they used artificial intelligence (AI) and/or automation for their social media marketing. Meanwhile, 44 percent of respondents used AI for content creation, while 41 percent adopted the technology for email campaigns.",
+   "note": "United States; June 2023; 486 respondents; among small business owners and marketing decision-makers",
+   "source": "Ascend2; Constant Contact Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Social media",
+    "Content creation (writing or images)",
+    "Email campaigns",
+    "Ad targeting",
+    "Analytics",
+    "Website forms",
+    "CRM",
+    "SMS/text campaigns"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.52,
+      0.44,
+      0.41,
+      0.38,
+      0.35,
+      0.34,
+      0.3,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Estimated time SMBs saved on marketing in a week by using artificial intelligence (AI) and/or automation technology in the United States as of June 2023 (in minutes)",
+   "short": "Estimated time SMBs saved on marketing in a week by using AI in the U.S. 2023",
+   "unit": "minutes",
+   "description": "According to the survey conducted in the United States in June 2023, 39 percent of responding small business (SMB) owners and marketing decision-makers stated they saved between 26 and 40 minutes in a week by using artificial intelligence (AI) and/or automation technology for their marketing. Around 33 percent of SMBs saved more than 40 minutes per week by using AI.",
+   "note": "United States; June 2023; 486 respondents; among small business owners and marketing decision-makers",
+   "source": "Ascend2; Constant Contact",
+   "kind": "categorical",
+   "categories": [
+    "0-10",
+    "11-25",
+    "26-40",
+    "41-60",
+    "60+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.08,
+      0.2,
+      0.39,
+      0.22,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Expected savings from using artificial intelligence (AI) and/or automation technology in SMBs marketing over the next 12 months in the United States as of June 2023 (in U.S. dollars)",
+   "short": "Expected savings from using AI in SMBs marketing in the U.S. 2023",
+   "unit": "U.S. dollars",
+   "description": "According to the survey conducted in the United States in June 2023, approximately 30 percent of responding small business (SMB) owners and marketing decision-makers expected to save between 1,000 and 4,999 U.S. dollars in marketing over the next 12 months by using artificial intelligence (AI) and/or automation technology for their marketing. Around 28 percent expected to save at least five thousand dollars.",
+   "note": "United States; June 2023; 486 respondents; among small business owners and marketing decision-makers",
+   "source": "Ascend2; Constant Contact",
+   "kind": "categorical",
+   "categories": [
+    "0-499",
+    "500-999",
+    "1,000-4,999",
+    "5,000-9,999",
+    "10,000-24,999",
+    "25,000+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.208,
+      0.218,
+      0.297,
+      0.149,
+      0.079,
+      0.05
+     ]
+    }
+   ]
+  }
+ ]
+}

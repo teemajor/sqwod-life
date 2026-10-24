@@ -1,0 +1,873 @@
+{
+ "studyId": "55327",
+ "study": "influencer marketing in the united kingdom uk",
+ "file": "research/statista/Fitness Marketing/study_id55327_influencer-marketing-in-the-united-kingdom-uk.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Influencer advertising spending in the United Kingdom from 2018 to 2029 (in million GBP)",
+   "short": "Influencer advertising spending in the UK 2018-2029",
+   "unit": "million GBP",
+   "description": "The ad spending in the 'Influencer Advertising' segment of the advertising market in the United Kingdom was forecast to continuously increase between 2024 and 2029 by in total 434.6 million GBP (£) (+48.5 percent). After the eleventh consecutive increasing year, the indicator is estimated to reach 1.3 billion GBP (£) and therefore a new peak in 2029. Notably, the ad spending of the 'Influencer Advertising' segment of the advertising market was continuously increasing over the past years.",
+   "note": "United Kingdom",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      162.37,
+      263.01,
+      367.49,
+      564.2,
+      686.13,
+      791.09,
+      896.02,
+      1006.91,
+      1091.4,
+      1170.48,
+      1249.56,
+      1330.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Expected change in marketing spending at companies in the United Kingdom (UK) in 2023, by medium/channel",
+   "short": "Change in marketing spending at UK companies 2023, by medium",
+   "unit": "",
+   "description": "During a late 2022 survey carried out among marketers in the United Kingdom (UK), 45 percent stated they were planning to increase their social media budgets in 2023. On the other hand, 46 percent wanted to cut on print media spending.",
+   "note": "United Kingdom; as of November 2022; 59 respondents",
+   "source": "Ebiquity; ISBA; Statista Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Print",
+    "Out-of-home",
+    "Digital display",
+    "Retail media",
+    "Gaming/esports/Metaverse",
+    "Mobile in-app",
+    "Radio",
+    "Influencer marketing",
+    "Digital out-of-home",
+    "Paid search",
+    "Paid social",
+    "Advanced/connected TV"
+   ],
+   "series": [
+    {
+     "name": "Increase of more than 10 percent",
+     "values": [
+      0.06,
+      0.05,
+      0.02,
+      0.04,
+      0.02,
+      0.06,
+      0.07,
+      0.07,
+      0.05,
+      0.12,
+      0.13
+     ]
+    },
+    {
+     "name": "Increase between 0 and 10 percent",
+     "values": [
+      0.05,
+      0.14,
+      0.2,
+      0.18,
+      0.13,
+      0.19,
+      0.2,
+      0.27,
+      0.33,
+      0.35,
+      0.33,
+      0.4
+     ]
+    },
+    {
+     "name": "Maintain 2022 budget",
+     "values": [
+      0.48,
+      0.46,
+      0.45,
+      0.58,
+      0.63,
+      0.62,
+      0.5,
+      0.45,
+      0.38,
+      0.42,
+      0.33,
+      0.27
+     ]
+    },
+    {
+     "name": "Decrease of 0 to 10 percent",
+     "values": [
+      0.23,
+      0.25,
+      0.21,
+      0.09,
+      0.07,
+      0.13,
+      0.15,
+      0.11,
+      0.15,
+      0.13,
+      0.17,
+      0.17
+     ]
+    },
+    {
+     "name": "Decrease of more than 10 percent",
+     "values": [
+      0.23,
+      0.09,
+      0.09,
+      0.13,
+      0.13,
+      0.04,
+      0.09,
+      0.11,
+      0.07,
+      0.05,
+      0.05,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Leading marketing trends according to marketers in Germany, Italy, and the United Kingdom (UK) as of February 2023",
+   "short": "Top marketing trends in Western Europe 2023",
+   "unit": "",
+   "description": "In a survey released in 2023, marketing professionals working for companies in the United Kingdom, Italy, and Germany indicated the most relevant trends of their industry for the year. Nearly three out of four respondents mentioned artificial intelligence (AI), while 44 percent of them believed online marketing would make more use of online videos.",
+   "note": "Germany, Italy, United Kingdom; February 2023; 359 respondents; among senior marketers from retail, e-commerce, finance, consumer goods, media and publishing industries",
+   "source": "Mapp Digital",
+   "kind": "categorical",
+   "categories": [
+    "Artificial Intelligence",
+    "Videos",
+    "Influencer marketing",
+    "Gamification"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.73,
+      0.44,
+      0.4,
+      0.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Areas of focus for expanding influencer marketing activity according to retail marketers in the United Kingdom (UK) as of April 2023",
+   "short": "Areas of focus for expanding influencer marketing in the UK 2023",
+   "unit": "",
+   "description": "During a 2023 survey carried out in the United Kingdom (UK), 54 percent of responding retail marketers said that in the 12 months following the survey they were planning to increase video content produced by creators. On the other hand, 31 percent were planning to further invest in micro-influencers.",
+   "note": "United Kingdom; April 12 to 30, 2023; 102 respondents; among senior decision-makers in marketing, working in the retail sector",
+   "source": "Various sources (LTK); YouGov",
+   "kind": "categorical",
+   "categories": [
+    "Increasing video content by creators",
+    "More diverse casting",
+    "Further investment in micro-influencers"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.54,
+      0.46,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Benefits of influencer marketing according to retail marketers in the United Kingdom (UK) as of April 2023",
+   "short": "Benefits of influencer marketing in the UK 2023",
+   "unit": "",
+   "description": "During a 2023 survey carried out in the United Kingdom (UK), 69 percent of responding retail marketers said that influencer marketing improved brand awareness. This was the most often cited benefit of using influencers for marketing purposes.",
+   "note": "United Kingdom; April 12 to 30, 2023; 102 respondents; among senior decision-makers in marketing, working in the retail sector",
+   "source": "LTK; YouGov",
+   "kind": "categorical",
+   "categories": [
+    "Improves brand awareness",
+    "Boosts online traffic and clicks",
+    "Directly drive sales growth",
+    "Increases reach and engagement across social channels"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.69,
+      0.62,
+      0.62,
+      0.46
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of social media users in the United Kingdom from 2020 to 2029 (in millions)",
+   "short": "Social media users in the United Kingdom 2020-2029",
+   "unit": "millions",
+   "description": "The number of social media users in the United Kingdom was forecast to continuously increase between 2024 and 2029 by in total 3.2 million users (+5.24 percent). After the ninth consecutive increasing year, the social media user base is estimated to reach 64.27 million users and therefore a new peak in 2029. Notably, the number of social media users of was continuously increasing over the past years.",
+   "note": "United Kingdom; 2020 to 2029; all values are estimates",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      55.54,
+      57.87,
+      59.08,
+      60.12,
+      61.03,
+      61.83,
+      62.54,
+      63.18,
+      63.75,
+      64.27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Most popular social media platforms in the United Kingdom (UK) as of the third quarter 2023, by usage reach",
+   "short": "Leading social networks in the United Kingdom (UK) 2023, by reach",
+   "unit": "",
+   "description": "As of the third quarter of 2023, WhatsApp was the most active social network among internet users in the United Kingdom (UK), with 79 percent of internet users reporting use of the service. Facebook was very close behind, with a rate of 73 percent, followed by Facebook Messenger with 60.1 percent. YouTube’s broad audience in the United Kingdom YouTube reaches a broad audience in the UK, making it an attractive partner for advertisers of almost any product. More than 75 percent of [...]",
+   "note": "United Kingdom; Q3 2023; 16-64 years; internet users who used each platform in the past month",
+   "source": "DataReportal; GWI; Meltwater; We Are Social Share of internet users",
+   "kind": "categorical",
+   "categories": [
+    "WhatsApp",
+    "Facebook",
+    "Facebook Messenger",
+    "Instagram",
+    "X (Twitter)",
+    "TikTok",
+    "IMessage",
+    "Snapchat",
+    "LinkedIn",
+    "Pinterest"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.79,
+      0.73,
+      0.601,
+      0.597,
+      0.442,
+      0.4,
+      0.383,
+      0.313,
+      0.302,
+      0.268
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Influencer / content creators follower in the United Kingdom in 2023",
+   "short": "Influencer / content creators follower in the UK in 2023",
+   "unit": "",
+   "description": "In the United Kingdom (UK), about 84 percent of the residential online population follow influencers or content creators online. This is according to the Statista Consumer Insights Global survey 2023.",
+   "note": "United Kingdom; April 5, 2022 to March 23, 2023; 1,007 respondents; 18-64 years; residential online population",
+   "source": "Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "Influencer / content creators follower",
+    "Non-follower"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.84,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of consumers who followed influencers in the United Kingdom (UK) as of April 2023, by generational cohort",
+   "short": "Popularity of influencers in the UK 2023",
+   "unit": "",
+   "description": "According to a survey carried out in the United Kingdom in April 2023, 84 percent of respondents from Generation Z said they followed influencers. This was followed by 68 percent of Millennial respondents saying they followed influencers.",
+   "note": "Europe, United Kingdom; April 2023; 480 respondents; 18-65 years; among respondents who shop online at least every couple of months, use social media platforms at least a few times per month,",
+   "source": "Capterra",
+   "kind": "categorical",
+   "categories": [
+    "Generation Z",
+    "Millennials",
+    "Generation X",
+    "Boomers"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.84,
+      0.68,
+      0.27,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Influencer / content creators followed by type in the United Kingdom in 2023",
+   "short": "Influencer / content creators followed by type in the UK in 2023",
+   "unit": "",
+   "description": "In the United Kingdom (UK), 37 percent of the residential online population state they like to watch, listen, or read about film & TV content from influencers / content creators, making it the most followed type of content. The runner up in this content type ranking among British consumers is comedy content at 32 percent. This is according to the Statista Consumer Insights Global survey 2023.",
+   "note": "United Kingdom; April 5, 2022 to March 23, 2023; 1,007 respondents; 18-64 years; residential online population",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Film & TV",
+    "Comedy",
+    "Music",
+    "Advice & self-help",
+    "Food (e.g., mukbangs)",
+    "Shopping / product reviews",
+    "Health & fitness",
+    "Sports",
+    "Animal & nature",
+    "News & politics",
+    "Business & economy",
+    "Gaming & e-sports",
+    "Cars / vehicles",
+    "Science & technology",
+    "History"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.37,
+      0.32,
+      0.3,
+      0.28,
+      0.27,
+      0.26,
+      0.26,
+      0.25,
+      0.24,
+      0.21,
+      0.21,
+      0.2,
+      0.19,
+      0.18,
+      0.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Social media influencer categories most followed by consumers in the United Kingdom as of April 2023",
+   "short": "Influencer categories most followed in the UK 2023",
+   "unit": "",
+   "description": "A survey carried out in April 2023 revealed that fashion social media influencers were the most popular among UK consumers, followed by 50 percent of respondents. Lifestyle and food/cooking influencers also made it to the top three categories, followed by 40 percent and 41 percent of the interviewed consumers, respectively.",
+   "note": "Europe, United Kingdom; April 2023; 1,013 respondents; 18-65 years; among respondents who shop online at least every couple of months\nand use social media platforms at least a few times per month",
+   "source": "Capterra; Fashion Network",
+   "kind": "categorical",
+   "categories": [
+    "Fashion",
+    "Lifestyle",
+    "Food/cooking",
+    "Health & wellness",
+    "Music"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5,
+      0.49,
+      0.41,
+      0.41,
+      0.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Platforms consumers used to follow influencers in the United Kingdom (UK) as of April 2023",
+   "short": "Platforms consumers used to follow influencers in the UK 2023",
+   "unit": "",
+   "description": "According to a survey carried out in April 2023, more than a half of UK consumers who said they followed influencers used Instagram to do so. YouTube was the second most popular platform, used by 44 percent of the interviewed to that end.",
+   "note": "Europe, United Kingdom; April 2023; 480 respondents; among respondents who shop online at least every couple of months, use social media platforms at least a few times per month, and follow influencers",
+   "source": "Capterra",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "YouTube",
+    "TikTok",
+    "Facebook",
+    "LinkedIn"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.55,
+      0.44,
+      0.41,
+      0.34,
+      0.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Trust in advertising among consumers in the United Kingdom (UK) in 2022, by medium",
+   "short": "Consumer trust in advertising in the UK 2022, by media",
+   "unit": "",
+   "description": "During a 2022 survey fielded among adults in the United Kingdom, gauging their perception of advertising, it was found that 34 percent of respondents stated that they found advertising they trusted on TV. TV was the most trusted medium among the seven presented. Cinema and the radio ranked second, both named by 32 percent of interviewed consumers.",
+   "note": "United Kingdom; 2022; 18 years and older",
+   "source": "Craft; Credos; Marketing Week Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "TV",
+    "Cinema",
+    "Radio",
+    "Printed",
+    "Out-of-home",
+    "Newspaper",
+    "Magazine",
+    "Direct mail",
+    "Podcast",
+    "Online",
+    "Tailored online ads",
+    "Mobile",
+    "Social media",
+    "Influencer advertising"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.34,
+      0.32,
+      0.32,
+      0.29,
+      0.3,
+      0.28,
+      0.28,
+      0.23,
+      0.23,
+      0.23,
+      0.2,
+      0.18,
+      0.18,
+      0.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Where consumers in the United Kingdom (UK) go to find the best Black Friday deals as of 2023",
+   "short": "Where consumers go to find the best Black Friday deals in the UK 2023",
+   "unit": "",
+   "description": "As of 2023, 59 percent of shoppers in the United Kingdom reported that they go straight to Amazon in order to find the best deals for Black Friday. Additionally, 32 percent reported that they use search engines, while 19 percent said they go to retailer sites to find the best Black Friday deals.",
+   "note": "United Kingdom; September 13  to 18, 2023; 2,025*; *Consumers that have shopped online in the UK. This includes 1,369 consumers that bought something over the Black Friday (12th November – 29th November)period in 2022. Multiple [...] Read more",
+   "source": "Censuswide; Wunderman Thompson Commerce Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "I go straight to Amazon",
+    "I use search engines",
+    "I go to retailer sites and see what deals are on offer",
+    "I go to brand websites and see what deals are on offer",
+    "I receive personalized communications like emails",
+    "I don't do anything to find the best Black Friday deals",
+    "TV adverts",
+    "I go into stores",
+    "I find them on social media",
+    "I use comparison sites",
+    "I read Black Friday reviews by online publications like MailOnline",
+    "Digital advertising online",
+    "I listen to influencers",
+    "I know what I want, and if it's not disscounted I don't buy it",
+    "YouTube advertising"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.59,
+      0.32,
+      0.19,
+      0.18,
+      0.16,
+      0.16,
+      0.15,
+      0.12,
+      0.12,
+      0.12,
+      0.11,
+      0.1,
+      0.08,
+      0.08,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Share of consumers whose buying decisions were influenced by social media influencers in the United Kingdom (UK) in 2022, by generational cohort",
+   "short": "Consumers influenced by social media influencers in the UK 2022, by generation",
+   "unit": "",
+   "description": "In 2022, approximately one-fourth of consumers surveyed in the United Kingdom said that social media influencers had completely or somewhat influenced their buying decisions. Gen Z were the most susceptible to the influence of content creators, followed by millennials. Conversely, social media influencers had a lesser impact on Gen X shoppers, falling below the country's average.",
+   "note": "United Kingdom; March 28, 2022; 1,000 respondents; 18 years and older",
+   "source": "Deloitte",
+   "kind": "categorical",
+   "categories": [
+    "Country total",
+    "Gen Z",
+    "Millennial",
+    "Gen X"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.26,
+      0.53,
+      0.42,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Share of consumers that have already bought something based on the recommendation of an influencer in selected countries in 2022",
+   "short": "Share of global consumers that purchased because of influencer recommendations 2022",
+   "unit": "",
+   "description": "During a 2022 online survey among consumers, 84 percent of consumers from Kenya said that they already bought something based on the recommendation of an influencer. Responding consumers from Brazil and Morocco followed with 73 percent and 67 percent, respectively.",
+   "note": "Brazil, Colombia, France, Germany, Italy, Ivory Coast, Kenya, Mexico, Morocco, Portugal, South Africa, Spain, United Kingdom, United States; May to June 2022; 14,200 respondents",
+   "source": "MARCO Agency Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Kenya",
+    "Brazil",
+    "Morocco",
+    "South Africa",
+    "Mexico",
+    "Colombia",
+    "United States",
+    "Cote d'Ivoire",
+    "United Kingdom",
+    "Portugal",
+    "Germany",
+    "France",
+    "Spain",
+    "Italy"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.84,
+      0.73,
+      0.67,
+      0.65,
+      0.56,
+      0.51,
+      0.45,
+      0.42,
+      0.41,
+      0.4,
+      0.38,
+      0.31,
+      0.29,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Elements that made social media influencers appear untrustworthy according to consumers in the United Kingdom (UK) as of April 2023",
+   "short": "Reasons for distrusting influencers in the UK 2023",
+   "unit": "",
+   "description": "According to a survey carried out in April 2023, 40 percent of responding consumers from the United Kingdom (UK) said they disapproved of the false image influencers sometimes portray, such as promoting beauty products or standards when they have had surgery or using photos that have been edited. A very similar share said that influencers that value quantity over quality seemed less trustworthy.",
+   "note": "Europe, United Kingdom; April 2023; 1,013 respondents; 18-65 years; among respondents who shop online at least every couple of months\nand use social media platforms at least a few times per month",
+   "source": "Capterra; Various sources (ChannelX)",
+   "kind": "categorical",
+   "categories": [
+    "...disapprove of the false image influencers sometimes portray, such as promoting beauty products or standards when they have had surgery or using photos that have been edited",
+    "...said that influencers that value quantity over quality seemed less trustworthy",
+    "...stated they did not like how the life influencers portray on social media is unrealistic and unattainable for many followers",
+    "...said that when an influencer noticeably lacked experience or professionalism, it eroded trust"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4,
+      0.38,
+      0.37,
+      0.28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Number of complaints about digital advertising and resulting cases taken up by the Advertising Standards Authority (ASA) in the United Kingdom (UK) in 2023, by ad location",
+   "short": "Complaints about digital advertising in the UK 2023, by ad location",
+   "unit": "",
+   "description": "Most complaints about digital ads filed to the Advertising Standards Authority (ASA) in 2022 regarded adverts appearing on the advertiser's own website, social media account or app. Second largest category were influencer ads (website, social media or app). In general, online ads attracted most complaints, followed by ads in TV and outdoor media. The ASA is the advertising regulator in the United Kingdom (UK).",
+   "note": "United Kingdom; 2023",
+   "source": "Advertising Standards Authority (UK) Number of complaints",
+   "kind": "categorical",
+   "categories": [
+    "Website, social media or app (own site)",
+    "Website, social media or app (influencer ad)",
+    "Website, social media or app (paid ad)",
+    "Video on demand",
+    "Search",
+    "Game",
+    "Messaging app",
+    "Audio podcast or on demand",
+    "Website, social media or app (other)",
+    "Augmented or virtual reality",
+    "Voice assistant",
+    "Viral"
+   ],
+   "series": [
+    {
+     "name": "Cases",
+     "values": [
+      8345,
+      3894,
+      4185,
+      583,
+      407,
+      146,
+      162,
+      46,
+      21,
+      2,
+      1,
+      0
+     ]
+    },
+    {
+     "name": "Complaints",
+     "values": [
+      9770,
+      4809,
+      4185,
+      1340,
+      425,
+      166,
+      173,
+      52,
+      21,
+      2,
+      1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Social media audiences in the United Kingdom (UK) as of June 2023, by age group",
+   "short": "Social media audiences in the United Kingdom (UK) 2023, by age group",
+   "unit": "",
+   "description": "As of June 2023, 28 percent of social media users in the United Kingdom (UK) were aged between 30 and 39 years old. Overall, 22 percent of social networks user in the UK belonged to the 18 to 29 year age group.Ipsos data on the share of Facebook use among certain age groups in the UK shows that the group between 25 and 34 years of age has the largest share of use and the group between 45 and 54 has the smallest share. All above 55 years of age were in grouped together distorting the [...]",
+   "note": "United Kingdom; July 4, 2022 to June 22, 2023; 24,183 respondents; 18-64 years; residential online population",
+   "source": "Statista; Statista Consumer Insights",
+   "kind": "categorical",
+   "categories": [
+    "18 - 29 years",
+    "30 - 39 years",
+    "40 - 49 years",
+    "50 - 64 years"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.22,
+      0.28,
+      0.19,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Trust in advertising among consumers in the United Kingdom (UK) in 2022, by medium and age",
+   "short": "Consumer trust in advertising in the UK 2022, by medium & age",
+   "unit": "",
+   "description": "During a 2022 survey fielded among adults in the United Kingdom, gauging their perception of advertising, it was found that 45 percent of respondents aged 18 to 34 stated that they trusted cinema advertising. Cinema was the most trusted medium among this age group. The most trusted medium among 35 to 54 year-olds was TV.",
+   "note": "United Kingdom; 2022; 18 years and older",
+   "source": "Craft; Credos; Hoc Marketing Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "TV",
+    "Cinema",
+    "Radio",
+    "Printed",
+    "Out-of-home",
+    "Newspaper",
+    "Magazine",
+    "Direct mail",
+    "Podcast",
+    "Online",
+    "Tailored online ads"
+   ],
+   "series": [
+    {
+     "name": "18-34",
+     "values": [
+      0.4,
+      0.45,
+      0.39,
+      0.36,
+      0.38,
+      0.34,
+      0.34,
+      0.3,
+      0.4,
+      0.32,
+      0.3
+     ]
+    },
+    {
+     "name": "35-54",
+     "values": [
+      0.38,
+      0.36,
+      0.37,
+      0.33,
+      0.35,
+      0.33,
+      0.31,
+      0.25,
+      0.27,
+      0.26,
+      0.23
+     ]
+    },
+    {
+     "name": "55-74",
+     "values": [
+      0.25,
+      0.2,
+      0.21,
+      0.19,
+      0.19,
+      0.2,
+      0.21,
+      0.15,
+      0.07,
+      0.1,
+      0.09
+     ]
+    },
+    {
+     "name": "75+",
+     "values": [
+      0.28,
+      0.19,
+      0.24,
+      0.21,
+      0.22,
+      0.27,
+      0.25,
+      0.16,
+      0.08,
+      0.06,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Share of Generation Z consumers who bought vs did not buy products promoted by influencers in the United Kingdom as of June 2023",
+   "short": "Influencer marketing effectiveness among Gen Z in the UK 2023",
+   "unit": "",
+   "description": "During a 2023 survey carried out among consumers aged 18 to 24 from the United Kingdom, 56 percent of respondents stated they did not buy products promoted by influencers. A third said they occasionally bought such products and 10 percent bought them regularly.",
+   "note": "United Kingdom; 562 respondents; 18-24 years",
+   "source": "Attention Exchange",
+   "kind": "categorical",
+   "categories": [
+    "Do not buy at all",
+    "Buy occassionally",
+    "Buy regularly"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.56,
+      0.33,
+      0.1
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1586 @@
+{
+ "studyId": "13668",
+ "study": "wellness and spa statista dossier",
+ "file": "research/statista/Health & Wellness/study_id13668_wellness-and-spa-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Size of the wellness market worldwide from 2017 to 2022, with a forecast to 2027 (in trillion U.S. dollars)",
+   "short": "Wellness market value worldwide 2017-2027",
+   "unit": "trillion U.S. dollars",
+   "description": "The size of the wellness market worldwide stood at 5.61 trillion U.S. dollars in 2022. This figure was projected to grow at a compound annual growth rate of 8.6 percent, reaching an estimated 8.47 trillion U.S. dollars by 2027.",
+   "note": "Worldwide; 2017 to 2022",
+   "source": "Cision; Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.32,
+      4.93,
+      4.46,
+      5.19,
+      5.61,
+      6.26,
+      6.82,
+      7.36,
+      7.89,
+      8.47
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Wellness economy market size worldwide in 2022, by region (in billion U.S. dollars)",
+   "short": "Global wellness market size worldwide in 2022, by region",
+   "unit": "billion U.S. dollars",
+   "description": "The global wellness market was estimated to be worth an estimated 5.6 trillion U.S. dollars in 2022. The biggest regional market within this sector was North America, with the region accounting for an estimated 1.9 trillion U.S. dollars of the market in that year.",
+   "note": "Worldwide; 2022",
+   "source": "Global Wellness Institute",
+   "kind": "categorical",
+   "categories": [
+    "North America",
+    "Asia Pacific",
+    "Europe",
+    "Latin America and the Caribbean",
+    "Middle East and North Africa",
+    "Sub-Saharan Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1901.4,
+      1698.1,
+      1469.7,
+      314.4,
+      145.4,
+      82.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Market size of the wellness industry worldwide in 2022, by segment (in billion U.S. dollars)",
+   "short": "Market size of the global wellness industry in 2022, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "The global wellness economy was estimated at a value of just under 5.2 trillion U.S. dollars in 2022. Of this revenue, over one trillion U.S. dollars was generated in personal care and beauty, while the global wellness tourism market was estimated at 467 billion U.S. dollars.",
+   "note": "Worldwide; 2022",
+   "source": "Global Wellness Institute Market size in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Personal care & beauty",
+    "Health eating, nutrition & weight loss",
+    "Physical activity",
+    "Public health, prevention & personalized medicine",
+    "Traditional & complementary medicine",
+    "Wellness tourism",
+    "Wellness real estate",
+    "Mental wellness",
+    "Spas",
+    "Workplace wellness",
+    "Thermal/mineral springs"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1048.2,
+      1046.2,
+      927.1,
+      600.9,
+      502.4,
+      466.8,
+      341.2,
+      165.5,
+      82.1,
+      49.6,
+      45.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Average annual growth rate of the global wellness industry between 2022 and 2027, by segment",
+   "short": "Average annual growth rate of wellness industry 2022-2027, by segment",
+   "unit": "",
+   "description": "The average annual growth rate of the global wellness industry between 2022 to 2027 was estimated at just over 12 percent. Within this timeframe, the wellness tourism segment of the wellness industry was projected to grow by approximately 16.6 percent.",
+   "note": "Worldwide; 2022",
+   "source": "Global Wellness Institute; Website (healthylivingandtravel.com) Average annual growth rate",
+   "kind": "categorical",
+   "categories": [
+    "Wellness real estate",
+    "Wellness tourism",
+    "Thermal/mineral springs",
+    "Mental wellness",
+    "Spas",
+    "Traditional and complementary medicine",
+    "Healthy eating, nutrition, and weight loss",
+    "Physical activity",
+    "Personal care and beauty",
+    "Workplace wellness",
+    "Public health, prevention, and personalized medicine",
+    "Industry average"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.174,
+      0.166,
+      0.143,
+      0.128,
+      0.083,
+      0.082,
+      0.068,
+      0.067,
+      0.057,
+      0.029,
+      0.016,
+      0.086
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Functional and natural health food market value worldwide from 2023 to 2033 (in billion U.S. dollars)",
+   "short": "Global health and wellness food market value 2023-2022",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the global functional and natural health food market was valued at 23.5 billion U.S. dollars and is projected to increase to 38.5 billion U.S. dollars by 2033.",
+   "note": "Worldwide; 2023; * Forecast. Read more",
+   "source": "Future Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030",
+    "2031",
+    "2032",
+    "2033"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23.5,
+      24.75,
+      26.06,
+      27.44,
+      28.89,
+      30.42,
+      32.04,
+      33.73,
+      35.52,
+      37.4,
+      38.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Market size of the thermal/mineral springs industry worldwide from 2019 to 2022, with a forecast to 2027 (in billion U.S. dollars)",
+   "short": "Market size of the thermal/mineral springs industry worldwide 2019-2027",
+   "unit": "billion U.S. dollars",
+   "description": "The global market size of the thermal/mineral springs industry was forecast to grow at an annual rate of over 14 percent in the coming years. The market was estimated at 46.3 billion U.S. dollars in 2022 and was due to exceed 90 billion U.S. dollars by 2027.",
+   "note": "Worldwide; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      65.7,
+      39.9,
+      45.4,
+      46.3,
+      57.9,
+      66.6,
+      74.5,
+      82.4,
+      90.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Market size of the wellness tourism industry worldwide from 2019 to 2022, with a forecast to 2027 (in billion U.S. dollars)",
+   "short": "Market size of the wellness tourism industry worldwide 2027",
+   "unit": "billion U.S. dollars",
+   "description": "The global wellness tourism industry was predicted to be worth around 1.4 trillion U.S. dollars in 2027. This market an increase of more than 100 percent on the market size from 2022, which stood at just over 650 billion U.S. dollars.",
+   "note": "Worldwide; 2019 to 2022",
+   "source": "Global Wellness Institute; PR Newswire",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      720.4,
+      350.6,
+      466.8,
+      650.7,
+      867.9,
+      1029.5,
+      1152.6,
+      1275.1,
+      1399.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Expenditure in the wellness tourism industry worldwide in 2022, by region (in billion U.S. dollars)",
+   "short": "Wellness tourism expenditure worldwide 2019-2022, by region",
+   "unit": "billion U.S. dollars",
+   "description": "The global expenditure on wellness tourism increased by roughly 36 percent between 2020 and 2022. Overall, North America was the region worldwide which recorded the highest spending in this market, reaching 266.8 billion U.S. dollars in 2022.",
+   "note": "Worldwide; 2022",
+   "source": "Euromonitor; Global Wellness Institute",
+   "kind": "categorical",
+   "categories": [
+    "North America",
+    "Europe",
+    "Asia-Pacific",
+    "Latin America/Caribbean",
+    "Middle East/North Africa",
+    "Sub-Saharan Africa",
+    "Worldwide"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      266.8,
+      250.7,
+      85.1,
+      29.4,
+      13.6,
+      5,
+      650.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Number of wellness tourism trips worldwide in 2022, by region and type (in millions)",
+   "short": "Number of wellness tourism trips worldwide 2022, by region and type",
+   "unit": "millions",
+   "description": "Europe recorded the highest number of wellness tourism trips worldwide in 2022. That year, travelers in Europe took over 300 million trips for wellness tourism purposes, while visitors in the Asia-Pacific region and North America made around 242 and 213 million trips, respectively, for the same reason. Overall, domestic travel played an essential role in the leading wellness tourism destinations worldwide, with 95 percent of all trips in Asia made by domestic travelers in 2022.",
+   "note": "Worldwide; 2022",
+   "source": "Euromonitor; Global Wellness Institute",
+   "kind": "categorical",
+   "categories": [
+    "Europe",
+    "Asia-Pacific",
+    "North America",
+    "Latin America/Caribbean",
+    "Middle East-North Africa",
+    "Sub-Saharan Africa"
+   ],
+   "series": [
+    {
+     "name": "International wellness trips",
+     "values": [
+      56.8,
+      10.9,
+      8.2,
+      11.2,
+      5,
+      2.5
+     ]
+    },
+    {
+     "name": "Domestic wellness trips",
+     "values": [
+      243.7,
+      231.4,
+      205.3,
+      36,
+      5,
+      3.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Leading countries in wellness tourism expenditure worldwide in 2022 (in billion U.S. dollars)",
+   "short": "Leading countries in wellness tourism expenditure worldwide 2022",
+   "unit": "billion U.S. dollars",
+   "description": "The United States recorded the highest wellness tourism spending worldwide in 2022. Expenditure in the country on wellness tourism reached almost 256 billion U.S. dollars in 2022. Germany ranked second with spending exceeding 70 billion U.S. dollars.",
+   "note": "Worldwide; 2022; figures combine expenditures for international/inbound and domestic wellness tourism trips, also including primary and secondary wellness tourism trips; data refer to the destination markets recording the highest wellness tourism expenditure in 2020",
+   "source": "Euromonitor; Global Wellness Institute Expenditure in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Germany",
+    "France",
+    "Austria",
+    "Switzerland",
+    "Japan",
+    "Italy",
+    "United Kingdom",
+    "Australia",
+    "Mexico",
+    "Spain",
+    "China",
+    "India",
+    "Canada",
+    "Thailand"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      255.9,
+      70.2,
+      35.5,
+      19.5,
+      17.7,
+      17.6,
+      15.7,
+      15.6,
+      14.4,
+      13.8,
+      11.4,
+      11.2,
+      11,
+      11,
+      7.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Value of the corporate wellness market worldwide in 2022, with a forecast for 2033 (in billion U.S. dollars)",
+   "short": "Corporate wellness market size worldwide 2033",
+   "unit": "billion U.S. dollars",
+   "description": "Corporate wellness has become a big industry worldwide, with employers looking to keep their workforce healthy, happy, and motivated. This could range from corporate fitness programs to healthy eating initiatives and creating a healthier working environment in the office. The size of the global corporate wellness market was expected to grow to 146.6 billion U.S. dollars by 2027, an annual increase of almost seven percent on the figure from 2022.",
+   "note": "Worldwide; 2022; * Forecast. Read more",
+   "source": "Fact.MR",
+   "kind": "categorical",
+   "categories": [
+    "2022",
+    "2033"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      70.12,
+      146.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Market size of the workplace wellness industry worldwide in 2022, by region (in billion U.S. dollars)",
+   "short": "Global workplace wellness industry market size in 2022, by region",
+   "unit": "billion U.S. dollars",
+   "description": "The global workplace wellness market was estimated to be worth over 50 billion U.S. dollars in 2022. The largest region within this market was North America, where spending in this sector was estimated at almost 20 billion U.S. dollars in 2022.",
+   "note": "Worldwide; 2022",
+   "source": "Global Wellness Institute; Website (healthylivingandtravel.com)",
+   "kind": "categorical",
+   "categories": [
+    "North America",
+    "Europe",
+    "Asia-Pacific",
+    "Middle East-North Africa",
+    "Latin America-Caribbean",
+    "Sub-Saharan Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      19.8,
+      18.7,
+      8.4,
+      1.7,
+      1.6,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Market size of the workplace wellness industry in the United States from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Workplace wellness industry market size in the U.S. 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The workplace wellness market in the United States experienced an increase of over eight percent between 2020 and 2022, showing signs of recovery after the coronavirus (COVID-19) pandemic. The market size of the workplace wellness industry in the U.S. was estimated at 18.16 billion U.S. dollars in 2022.",
+   "note": "United States; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      17.13,
+      15.54,
+      17.49,
+      18.16
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Market size of the workplace wellness industry in the United Kingdom from 2019 to 2022 (in billion U.S. dollars)",
+   "short": "Workplace wellness industry market size in the UK 2019-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The workplace wellness market in the United Kingdom experienced a decline over just over four percent between 2020 and 2022. The market size of the workplace wellness industry in the UK was estimated at 2.72 billion U.S. dollars in 2022.",
+   "note": "United Kingdom; 2019 to 2022",
+   "source": "Global Wellness Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.23,
+      2.96,
+      2.67,
+      2.72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Total number of companies providing corporate wellness services and products in the United States from 2007 to 2021",
+   "short": "Number of corporate wellness service companies in the U.S. 2007-2021",
+   "unit": "",
+   "description": "This statistic depicts the total number of companies which provide corporate wellness services and products in the United States from 2007 to 2015 as well as projections until 2021. It is projected that the total number of corporate wellness companies in the U.S. will have reached approximately 600 by 2019.",
+   "note": "United States; 2007 to 2016; * From 2016 on all values are projected. Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016*",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      438,
+      456,
+      463,
+      468,
+      477,
+      498,
+      509,
+      529,
+      544,
+      559,
+      574,
+      588,
+      603,
+      618,
+      633
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Percentage of employers in the U.S. that offered select wellness programs and events as of 2020",
+   "short": "Share of U.S. employers that offered select wellness programs in 2020",
+   "unit": "",
+   "description": "According to the 2020 survey, 34 percent of employers offered their employees access to a smoking cessation program. Comparatively, 25 percent of employers offered weight loss programs. This statistic displays the percentage of survey respondents in the U.S. that indicated their employer offered different wellness programs and events in 2020.",
+   "note": "September 28 to November 10, 2020; 2,504 respondents; Members of SHRM: HR professionals",
+   "source": "SHRM Percentage of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Wellness programs, general",
+    "Onsite seasonal flu vaccinations",
+    "Tobacco cessation program",
+    "Health risk assessments",
+    "Rewards or bonuses for completing certain health and wellness programs",
+    "Weight loss programs",
+    "Stress management program",
+    "Preventive programs specifically targeting employees with chronic health conditions",
+    "Personal or life coaching",
+    "Health insurance premium discount for participation in wellness program",
+    "Meditation/mindfulness/contemplative pragram (subsidized, unsubsidized, or reimbursed)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.52,
+      0.52,
+      0.34,
+      0.34,
+      0.3,
+      0.25,
+      0.25,
+      0.22,
+      0.21,
+      0.2,
+      0.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Change in corporate wellness solution priorities since the start of the coronavirus (COVID-19) pandemic in the United States in 2020, by type",
+   "short": "Change in wellness solutions for companies during COVID-19 pandemic U.S. 2020",
+   "unit": "",
+   "description": "In a November 2020 survey of benefit consultants in the United States, it was shown that 82.31 percent of companies had strongly increased their interest in behavioral health or mental wellbeing solutions during the COVID-19 pandemic. The interest in women's health or family planning had largely no change at 70.77 percent.",
+   "note": "United States; November 19, 2020; 130 benefit consultants",
+   "source": "Shortlister Share of interest",
+   "kind": "categorical",
+   "categories": [
+    "Behavioral Health/Mental Wellbeing",
+    "Biometrics",
+    "Caregiving/Senior Support",
+    "Diabetes Management",
+    "Employee Assistance Programs (EAP)",
+    "Ergonomics/Musculoskeletal",
+    "Financial Wellness",
+    "Fitness/Weight Management",
+    "Sleep Management",
+    "Tobacco Cessation",
+    "Women's Health/Family Planning"
+   ],
+   "series": [
+    {
+     "name": "Strongly decreased",
+     "values": [
+      0,
+      0.1473,
+      0,
+      0,
+      0,
+      0.0077,
+      0,
+      0.0231,
+      0.031,
+      0.0385,
+      0.0154
+     ]
+    },
+    {
+     "name": "Decreased",
+     "values": [
+      0,
+      0.5271,
+      0.0385,
+      0.0308,
+      0.0154,
+      0.0692,
+      0.0231,
+      0.0692,
+      0.0775,
+      0.2231,
+      0.1615
+     ]
+    },
+    {
+     "name": "No change",
+     "values": [
+      0.0308,
+      0.2558,
+      0.3154,
+      0.6231,
+      0.0769,
+      0.4538,
+      0.2769,
+      0.5692,
+      0.5891,
+      0.6692,
+      0.7077
+     ]
+    },
+    {
+     "name": "Increased",
+     "values": [
+      0.1462,
+      0.062,
+      0.3538,
+      0.3231,
+      0.4462,
+      0.3846,
+      0.4923,
+      0.3,
+      0.2713,
+      0.0615,
+      0.0769
+     ]
+    },
+    {
+     "name": "Strongly increased",
+     "values": [
+      0.8231,
+      0.0078,
+      0.2923,
+      0.0231,
+      0.4615,
+      0.0846,
+      0.2077,
+      0.0385,
+      0.031,
+      0.0077,
+      0.0385
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Leading must have corporate wellness solution programs in the United States in 2020, by type",
+   "short": "Leading must have corporate wellness solution programs U.S. 2020, by type",
+   "unit": "",
+   "description": "During a November 2020 survey of benefit consultants in the United States, around 58 percent of respondents ranked a wellness platform as the most critical program for a company to have in their well-being strategy. In comparison, only 21 percent of respondents chose behavioral health programs as the most critical.",
+   "note": "United States; November 19, 2020; 132 benefit consultants",
+   "source": "Shortlister Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Wellness Platform",
+    "Mental Wellbeing",
+    "Behavioral Health"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.58,
+      0.4,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Fastest growing demand among corporate wellness solution programs in the United States in 2020, by type",
+   "short": "Fastest growing demand in wellness solution programs U.S. 2020, by type",
+   "unit": "",
+   "description": "In a November 2020 survey of benefit consultants in the United States, 40 percent of respondents said financial wellness programs had the fastest growing demand for companies to have in their well-being strategy. A growing demand indicates a positive divergence in the market for these products.",
+   "note": "United States; November 19, 2020; 132 benefit consultants",
+   "source": "Shortlister Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Financial Wellness",
+    "Mental Well-being",
+    "Caregiving Services (Senior/Child)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4,
+      0.32,
+      0.32
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Fastest declining demand among corporate wellness solution programs in the United States in 2020, by type",
+   "short": "Fastest declining demand in corporate wellness solution programs U.S. 2020, by type",
+   "unit": "",
+   "description": "In a November 2020 survey of benefit consultants in the United States, 42 percent of respondents said health risk assessment programs had the fastest declining demand for companies to have in their well-being strategy. A declining demand indicates a negative divergence in the market for these products.",
+   "note": "United States; November 19, 2020; 132 benefit consultants",
+   "source": "Shortlister Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Health risk assessment",
+    "Biometric Screenings",
+    "Firness (Onsite fitness & gym networks)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.42,
+      0.4,
+      0.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Consumer spending on selected health and meditation mobile apps worldwide from 2019 to 2021 (in million U.S. dollars)",
+   "short": "Global consumer spend on selected mental wellness apps 2019-2021",
+   "unit": "million U.S. dollars",
+   "description": "In 2021, mobile meditation and mental wellness app Calm saw global consumers spend approximately 119.19 million U.S. dollars for premium features and functionalities. By comparison, Headspace saw approximately 86 million U.S. dollars in consumer spending during the same year. Berlin-based Meditopia, which launched in 2017, saw an increase by 180 percent in consumer spend between 2019 and 2020, reaching almost 134 million U.S. dollars in app spending in 2021.",
+   "note": "Worldwide; 2019 to 2021; gross spending across iOS and Google Play",
+   "source": "Data.ai",
+   "kind": "categorical",
+   "categories": [
+    "Calm",
+    "Headspace",
+    "Meditopia",
+    "insight Timer",
+    "Daily Yoga"
+   ],
+   "series": [
+    {
+     "name": "2019",
+     "values": [
+      94.52,
+      65.36,
+      4.77,
+      7.8,
+      5.6
+     ]
+    },
+    {
+     "name": "2020",
+     "values": [
+      93.25,
+      65.21,
+      13.38,
+      8.63,
+      6.22
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      119.19,
+      86.27,
+      13.89,
+      8.92,
+      6.78
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading health and fitness apps in the Google Play Store worldwide in June 2023, by number of downloads (in millions)",
+   "short": "Leading Android health apps worldwide 2023, by downloads",
+   "unit": "millions",
+   "description": "In June 2023, the Blood Sugar app was the most-downloaded health and fitness app in the Google Play Store worldwide. The app generated approximately three million downloads from Android users. The Lose Weight App for Men, published by the Australian Leap Fitness Group was the second-most popular app with over two million downloads from global Android users. NoiseFit: Health & Fitness - which allows users to track their sleep and physical exercise ranked third with 1.79 million [...]",
+   "note": "Worldwide; June 2023; downloads from the Google Play Store",
+   "source": "AppTweak Number of downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "Blood Sugar",
+    "Lose Weight App for Men",
+    "NoiseFit: Health & Fitness",
+    "HryFine",
+    "Lose Weight App for Women",
+    "Lose Weight at Home in 30 Days",
+    "Home Workout - No Equipment",
+    "Flo Ovulation & Period Tracker",
+    "Google Fit: Activity Tracking",
+    "Splits Training in 30 Days",
+    "Blood Pressure App: BP Monitor",
+    "boAt Wearables",
+    "Blood Pressure App",
+    "Replika: My AI Friend",
+    "adidas Running: Sports Tracker"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.93,
+      2.09,
+      1.79,
+      1.56,
+      1.31,
+      1.31,
+      1.25,
+      1.22,
+      1.09,
+      1.08,
+      0.87,
+      0.82,
+      0.78,
+      0.78,
+      0.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Leading health and fitness apps in the Google Play Store worldwide in June 2023, by revenue (in U.S. dollars)",
+   "short": "Leading Android health apps worldwide 2023, by revenue",
+   "unit": "U.S. dollars",
+   "description": "In June 2023, Fitbit was the top-grossing health and fitness app in the Google Play Store worldwide. The platform generated over six million U.S. dollars in revenues from Android users. MyFitnessPal was the second highest-grossing health and fitness app with roughly 2.55 million U.S. dollars in revenues from global Android users in the examined month. Hiking and trail maps app AllTrails ranked third, having generated around 1.5 million U.S. dollars in revenues in the last examined month.",
+   "note": "Worldwide; June 2023; IAP revenue in the Google Play Store",
+   "source": "AppTweak Revenue in U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Fitbit",
+    "MyFitnessPal: Calorie Counter",
+    "AllTrails: Hike, Bike & Run",
+    "komoot - hike, bike & run",
+    "Strava: Run, Bike, Hike",
+    "YAZIO Fasting & Food Tracker",
+    "Flo Ovulation & Period Tracker",
+    "Calm - Sleep, Meditate, Relax",
+    "WeightWatchers",
+    "Headspace: Mindful Meditation",
+    "Calorie Counter by Lose It!",
+    "Geocaching®",
+    "BetterMe: Health Coaching",
+    "Replika: My AI Friend",
+    "Peloton - Fitness & Workouts"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6019822,
+      2549626,
+      1498588,
+      1249701,
+      1130248,
+      805792,
+      721217,
+      683536,
+      559625,
+      526315,
+      452747,
+      438343,
+      390392,
+      374387,
+      367335
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Downloads of Headspace mobile app worldwide from 1st quarter of 2018 to 4th quarter 2023 (in millions)",
+   "short": "Headspace: mobile app global quarterly downloads 2018-2023",
+   "unit": "millions",
+   "description": "In the last quarter of 2023, meditation app Headspace saw around one million downloads worldwide, down by roughly 20 percent compared to the 1.3 million downloads recorded in the corresponding quarter in 2022. Headspace, which launched in 2012, is a meditation and mindfulness app popular for its recognizable animations. In 2020, the app maintained an average of three million for its quarterly downloads. In the same year, meditation apps experienced an increase in popularity due [...]",
+   "note": "Worldwide; Q1 2018 to Q4 2023; Google Play and Apple App Store",
+   "source": "AppMagic",
+   "kind": "categorical",
+   "categories": [
+    "2018 Q1",
+    "2018 Q2",
+    "2018 Q3",
+    "2018 Q4",
+    "2019 Q1",
+    "2019 Q2",
+    "2019 Q3",
+    "2019 Q4",
+    "2020 Q1",
+    "2020 Q2",
+    "2020 Q3",
+    "2020 Q4",
+    "2021 Q1",
+    "2021 Q2",
+    "2021 Q3",
+    "2021 Q4",
+    "2022 Q1",
+    "2022 Q2",
+    "2022 Q3",
+    "2022 Q4",
+    "2023 Q1",
+    "2023 Q2",
+    "2023 Q3",
+    "2023 Q4"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.53,
+      2.77,
+      3.63,
+      4.81,
+      4.3,
+      3.61,
+      2.66,
+      2.86,
+      3.64,
+      3.19,
+      1.99,
+      2.88,
+      3.47,
+      2.38,
+      2.36,
+      1.68,
+      1.46,
+      1.36,
+      1.19,
+      1.31,
+      1.72,
+      1.36,
+      1.26,
+      1.06
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "In-app purchase revenues of mobile app Calm worldwide from 1st quarter of 2018 to 4th quarter 2023 (in million U.S. dollars)",
+   "short": "Calm: mobile app global IAP revenues 2018-2023",
+   "unit": "million U.S. dollars",
+   "description": "In the fourth quarter of 2023, leading mental wellness and meditation app Calm generated approximately 18 million U.S. dollars in IAP revenues worldwide. Clam in-app revenues started to increase in 2019, reaching almost 22 million U.S. dollars in the first months of the year, up 63 percent from the previous quarter. Calm is a mobile application that guides users through meditation and stress relief practices.",
+   "note": "Worldwide; Q1 2018 to Q4 2023; Google Play and Apple App Store combined; IAP revenues reduced by platform fees and taxes",
+   "source": "AppMagic",
+   "kind": "categorical",
+   "categories": [
+    "2018 Q1",
+    "2018 Q2",
+    "2018 Q3",
+    "2018 Q4",
+    "2019 Q1",
+    "2019 Q2",
+    "2019 Q3",
+    "2019 Q4",
+    "2020 Q1",
+    "2020 Q2",
+    "2020 Q3",
+    "2020 Q4",
+    "2021 Q1",
+    "2021 Q2",
+    "2021 Q3",
+    "2021 Q4",
+    "2022 Q1",
+    "2022 Q2",
+    "2022 Q3",
+    "2022 Q4",
+    "2023 Q1",
+    "2023 Q2",
+    "2023 Q3",
+    "2023 Q4"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.53,
+      9.62,
+      12.3,
+      13.36,
+      21.88,
+      17.24,
+      16.08,
+      14.96,
+      20.38,
+      17.4,
+      17.54,
+      20.28,
+      23.39,
+      20.95,
+      21.31,
+      19.67,
+      24.42,
+      24.29,
+      20.33,
+      20.11,
+      25.61,
+      21.17,
+      18.49,
+      17.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Fitness and health service online purchases in the U.S. as of December 2023",
+   "short": "Fitness and health service online purchases in the U.S. 2023",
+   "unit": "",
+   "description": "7 percent of U.S. respondents answer our survey on \"Fitness and health service online purchases\" with \"Fitness, yoga, and training\". The survey was conducted in 2023, among 10,046 consumers.",
+   "note": "United States; January to December 2023; 10046 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, yoga, and training",
+    "Health tracking",
+    "Meditation / mindfulness / sleeping apps",
+    "Weight loss / healthy eating",
+    "Medication checkers / reminders",
+    "Contraception or fertility tracking (only shown to women)",
+    "I have not paid for any fitness or health services online",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.07,
+      0.07,
+      0.06,
+      0.06,
+      0.05,
+      0.02,
+      0.89,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Meditation and mindfulness app awareness and usage in the United States from 1st quarter 2019 to 3rd quarter 2022",
+   "short": "Meditation and mindfulness apps market presence in the U.S. 2019-2022",
+   "unit": "",
+   "description": "According to a survey of users in the United States conducted during the third quarter of 2022, awareness of mindfulness and meditation touched the highest point in the examined period, reaching 63 percent of U.S. users. Intent to use mindfulness and meditation apps also grew between the beginning of 2019 and the third quarter of 2022, while usage sat at 20 percent during the last measured quarter.",
+   "note": "United States; Q1 2019 to Q3 2022; 18 years and older",
+   "source": "CivicScience",
+   "kind": "categorical",
+   "categories": [
+    "Q1 '19",
+    "Q2 '19",
+    "Q3 '19",
+    "Q4 '19",
+    "Q1 '20",
+    "Q2 '20",
+    "Q3 '20",
+    "Q4 '20",
+    "Q1 '21",
+    "Q2' 21",
+    "Q3 '21",
+    "Q4 '21",
+    "Q1 '22",
+    "Q2 '22",
+    "Q3 '22"
+   ],
+   "series": [
+    {
+     "name": "Usage",
+     "values": [
+      0.08,
+      0.1,
+      0.11,
+      0.12,
+      0.12,
+      0.12,
+      0.12,
+      0.14,
+      0.13,
+      0.13,
+      0.19,
+      0.19,
+      0.2,
+      0.2,
+      0.2
+     ]
+    },
+    {
+     "name": "Intent",
+     "values": [
+      0.05,
+      0.05,
+      0.06,
+      0.06,
+      0.06,
+      0.07,
+      0.06,
+      0.07,
+      0.06,
+      0.07,
+      0.11,
+      0.11,
+      0.11,
+      0.11,
+      0.11
+     ]
+    },
+    {
+     "name": "Awareness",
+     "values": [
+      0.46,
+      0.48,
+      0.5,
+      0.48,
+      0.5,
+      0.55,
+      0.55,
+      0.56,
+      0.56,
+      0.56,
+      0.62,
+      0.62,
+      0.63,
+      0.64,
+      0.63
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Leading health and fitness apps in the Google Play Store in the United States in September 2022, by number of downloads",
+   "short": "Leading Android health apps in the U.S. 2022, by downloads",
+   "unit": "",
+   "description": "In September 2022, Feesly was the most-downloaded health and fitness app in the Google Play Store in the United States. The app generated over 355.8 thousand downloads from Android users. Planet Fitness Workouts app was the second-most popular app with approximately 335 thousand downloads from U.S. Android users during the examined month.",
+   "note": "United States; September 2022; based on downloads to devices in the United States",
+   "source": "Airnow Number of downloads in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Feelsy: Stress Anxiety Relief",
+    "Planet Fitness Workouts",
+    "AllTrails: Hike, Bike & Run",
+    "Home Workout - No Equipment",
+    "Sweatcoin",
+    "Blood Pressure Pro",
+    "Six Pack in 30 Days",
+    "FitGift: more health more earn",
+    "DreamApp — dream analyzer",
+    "Blood Pressure App Pro"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      355815,
+      334920,
+      247922,
+      198435,
+      178585,
+      142539,
+      116669,
+      99741,
+      98139,
+      95271
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Number of yoga participants in the United States from 2010 to 2023 (in millions)",
+   "short": "Yoga participation in the U.S. 2010-2023",
+   "unit": "millions",
+   "description": "In 2023, the number of people doing yoga in the United States continued a downward trend which began in the previous year. In 2022, around 34 million U.S. Americans reported having done yoga at least once in that year. By 2023, that number had declined to roughly 33.64 million, denoting a 1.8 percent decrease in yoga participants in the North American country between 2022 and 2023.",
+   "note": "United States; 6 years and older; including people who participated in the activity at least once in each given year; *Total number of respondents in 2023. Figures were rounded. Read more",
+   "source": "Outdoor Foundation; SFIA; Sports Marketing Surveys USA",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      21,
+      22.11,
+      23.25,
+      24.31,
+      25.26,
+      25.29,
+      26.27,
+      27.35,
+      28.75,
+      30.46,
+      32.81,
+      34.35,
+      34.25,
+      33.64
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Number of businesses in the pilates and yoga studio sector in the United States from 2012 to 2022 (in thousands)",
+   "short": "Pilates and yoga studio industry business count in the U.S. 2012-2022",
+   "unit": "thousands",
+   "description": "There were approximately 37 thousand businesses in the pilates and yoga studio sector in the United States in 2020. The volume of pilates and yoga studios is expected to grow by 9.9 percent between 2020 and 2022.",
+   "note": "United States; 2012 to 2020; *Forecast Source did not provide a publication date. Release date was date accessed. Figures have ben rounded. Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      22.34,
+      24.08,
+      27.97,
+      31.52,
+      33.01,
+      32.35,
+      35.5,
+      36.35,
+      36.92,
+      39.02,
+      40.58
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Market size of the pilates and yoga studio sector in the United States from 2012 to 2020, with a forecast until 2022 (in billion U.S. dollars)",
+   "short": "U.S. pilates and yoga studio market size 2012-2022",
+   "unit": "billion U.S. dollars",
+   "description": "The market size of the pilates and yoga studio industry in the United States amounted to 9.31 billion U.S. dollars in 2020. The market saw a 9.96 percent decline over the previous year's size of 10.34 billion U.S dollars, most likely due to the coronavirus (COVID-19) pandemic. Forecasts predict the size of the sector to increase by 6.11 percent between 2020 and 2022.",
+   "note": "United States; 2012 to 2020; *Forecast Source did not provide a publication date. Release date was date accessed. Figures have ben rounded. Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.38,
+      5.89,
+      6.65,
+      7.48,
+      8.5,
+      9.08,
+      9.61,
+      10.33,
+      9.31,
+      9.68,
+      9.88
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Number of employees in the pilates and yoga studio sector in the United States from 2012 to 2022 (in thousands)",
+   "short": "Pilates and yoga studio industry employee count in the U.S. 2012-2022",
+   "unit": "thousands",
+   "description": "The number of employees in the pilates and yoga studio center was forecast to reach nearly 113 thousand in 2022. That was roughly three thousand more from the previous year's total. Employment in this sector grew steadily from 2012 to 2019, before experiencing a temporary slump in 2020, most likely due to challenges created by the coronavirus (COVID-19) pandemic.",
+   "note": "United States; 2012 to 2020; *Forecast Figures have ben rounded. Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      83.26,
+      86.06,
+      91.25,
+      94.35,
+      98.22,
+      104.14,
+      108.47,
+      111.36,
+      105.83,
+      110.15,
+      113
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Value of the yoga wear market worldwide from 2020 to 2028 (in million U.S. dollars)",
+   "short": "Yoga wear market value worldwide 2020-2028",
+   "unit": "million U.S. dollars",
+   "description": "In 2021, the revenue of the yoga apparel market was estimated to be worth around 22.7 billion U.S. dollars worldwide. This figure is forecast to increase to approximately 40 billion U.S. dollars by 2028, at a CAGR of 8.4 percent.",
+   "note": "Worldwide; 2020",
+   "source": "Fortune Business Insights; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      19240,
+      22720,
+      24624,
+      26688,
+      28925,
+      31349,
+      33976,
+      36824,
+      39910
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Size of the spa services market worldwide in 2023, with a forecast for 2032 (in billion U.S. dollars)",
+   "short": "Spa services market revenue worldwide 2023-2032",
+   "unit": "billion U.S. dollars",
+   "description": "The spa services market includes massage services, beauty and grooming, and physical fitness, among others, and was estimated to be worth around 147.5 billion U.S. dollars worldwide in 2023. This market was expected to grow by over eight percent between 2023 and 2032.",
+   "note": "Worldwide; 2023",
+   "source": "Industry Research Biz; LinkedIn",
+   "kind": "categorical",
+   "categories": [
+    "2023",
+    "2032"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      147.48,
+      243.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Market size of the massage service sector in the United States from 2012 to 2022, with a forecast for 2023 (in billion U.S. dollars)",
+   "short": "U.S. massage service industry market size 2012-2023",
+   "unit": "billion U.S. dollars",
+   "description": "The massage service sector in the United States experienced year-over-year growth since 2012, reaching approximately 21.5 billion U.S. dollars in 2019. In 2020, however, the sector's valuation dipped by 23 percent, most likely due to the effects of the coronavirus (COVID-19) pandemic. The industry was estimated to reach 19 billion U.S. dollars in 2023.",
+   "note": "United States; 2012 to 2022",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11.73,
+      12.98,
+      13.65,
+      15.39,
+      16.26,
+      17.31,
+      19.67,
+      21.5,
+      16.49,
+      17.33,
+      17.56,
+      19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Number of employees in the massage service sector in the United States from 2011 to 2022, with a forecast for 2023 (in thousands)",
+   "short": "Massage service industry employee count in the U.S. 2011-2023",
+   "unit": "thousands",
+   "description": "There were approximately 369 thousand employees in the massage service sector in the United States in 2022. This figure was forecast to decrease very slightly to reach just over 368.7 thousand in 2023.",
+   "note": "United States; 2011 to 2022",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      330.6,
+      325.1,
+      340.63,
+      357.43,
+      366.47,
+      357.55,
+      342.65,
+      369.72,
+      368.2,
+      352.51,
+      365.36,
+      368.97,
+      368.72
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Number of businesses in the massage service sector in the United States from 2011 to 2022, with a forecast for 2023 (in thousands)",
+   "short": "Massage service industry business count in the U.S. 2011-2023",
+   "unit": "thousands",
+   "description": "There were approximately 241 thousand businesses in the massage service sector in the United States in 2022. The sector experienced a two percent growth over the previous year's total of 235 thousand businesses. However, the industry was forecast to shrink by 0.5 percent to under 241 thousand businesses in 2023.",
+   "note": "United States; 2011 to 2022",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      213.41,
+      208.59,
+      224.98,
+      239.9,
+      247.28,
+      236.85,
+      226.37,
+      246.33,
+      244.55,
+      234.96,
+      240.19,
+      241.36,
+      240.72
+     ]
+    }
+   ]
+  }
+ ]
+}

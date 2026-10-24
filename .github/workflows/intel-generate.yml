@@ -1,9 +1,10 @@
 name: Intelligence — draft new report
 
+# RETIRED 2026-10-24: the weekly auto-drafter produced near-duplicate topics and English
+# "German" files from the noisy PDF fact bank. Replaced by intel-flagship.yml (monthly,
+# chart-bank based, native DE, email approval). Kept for manual runs only.
 on:
   workflow_dispatch:            # manual run from the Actions tab
-  schedule:
-    - cron: '0 6 * * 3'         # Wednesdays ~08:00 Berlin — one fresh draft/week
 
 permissions:
   contents: write

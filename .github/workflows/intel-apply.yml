@@ -24,12 +24,14 @@ jobs:
 
       - name: Apply approved proposals
         run: node automation/intelligence-refresh.mjs --apply --date=$(date +%F)
+      - name: Publish approved flagship drafts / archive rejected ones
+        run: node automation/intelligence-flagship.mjs --apply --date=$(date +%F)
 
       - name: Commit applied changes (if any)
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
-          git add site/src/content/articles automation/intel-queue automation/intel-sources.json
+          git add site/src/content/articles automation/intel-queue automation/intel-sources.json automation/intel-drafts automation/intel-flagship-log.json
           if git diff --staged --quiet; then
             echo "Nothing approved to apply."
           else

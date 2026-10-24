@@ -1,0 +1,1240 @@
+{
+ "studyId": "14578",
+ "study": "e mail marketing statista dossier",
+ "file": "research/statista/Fitness Marketing/study_id14578_e-mail-marketing-statista-dossier.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Number of e-mail users worldwide from 2017 to 2026 (in millions)",
+   "short": "Number of e-mail users worldwide 2017-2026",
+   "unit": "millions",
+   "description": "Despite the growth and prominence of mobile messengers and chat apps, e-mail is an integral part of daily online life. In 2022, the number of global e-mail users amounted to 4.26 billion and is set to grow to 4.73 billion users in 2026.",
+   "note": "United States; 2017 to 2022; * Forecast 2017 to 2020 data from previous publications Read more",
+   "source": "The Radicati Group",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3718,
+      3823,
+      3930,
+      4037,
+      4147,
+      4258,
+      4371,
+      4481,
+      4594,
+      4730
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "Daily number of emails sent worldwide as of April 2024 by country (in billions)",
+   "short": "Countries with highest number of emails sent 2024",
+   "unit": "billions",
+   "description": "As of April 18, 2024, the United States was the country with the highest number of emails sent daily, with almost ten billion. Germany and Ireland followed, with 8.5 billion and 8.4 billion emails daily, respectively. Overall, the Netherlands, the United Kingdom, and France each had 8.3 billion emails sent per day. As of December 2023, over 241 million emails were sent worldwide within one minute.",
+   "note": "Worldwide; April 18, 2024",
+   "source": "Cisco Talos Intelligence Group Emails sent in billions",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Germany",
+    "Ireland",
+    "Netherlands",
+    "United Kingdom",
+    "France",
+    "Austria",
+    "Japan",
+    "India",
+    "Australia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      9.7,
+      8.5,
+      8.4,
+      8.3,
+      8.3,
+      8.3,
+      8.2,
+      8.2,
+      8.2,
+      8.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Monthly share of spam in the total e-mail traffic worldwide from January 2014 to December 2023",
+   "short": "Spam: share of global e-mail traffic monthly 2014-2023",
+   "unit": "",
+   "description": "Spam messages accounted for over 46.8 percent of e-mail traffic in December 2023. Russia generated the largest share of unsolicited spam e-mails in 2022, with 31.5 percent of global spam e-mails originating from the country.",
+   "note": "Worldwide; January 2014 to December 2023",
+   "source": "Kaspersky Lab",
+   "kind": "timeseries",
+   "categories": [
+    "Jan 2014",
+    "Feb 2014",
+    "Mar 2014",
+    "Apr 2014",
+    "May 2014",
+    "Jun 2014",
+    "Jul 2014",
+    "Aug 2014",
+    "Sep 2014",
+    "Oct 2014",
+    "Nov 2014",
+    "Dec 2014",
+    "Jan 2015",
+    "Feb 2015",
+    "Mar 2015",
+    "Apr 2015",
+    "May 2015",
+    "Jun 2015",
+    "Jul 2015",
+    "Aug 2015",
+    "Sep 2015",
+    "Oct 2015",
+    "Nov 2015",
+    "Dec 2015",
+    "Jan 2016",
+    "Feb 2016",
+    "Mar 2016",
+    "Apr 2016",
+    "May 2016",
+    "Jun 2016",
+    "Jul 2016",
+    "Aug 2016",
+    "Sep 2016",
+    "Oct 2016",
+    "Nov 2016",
+    "Dec 2016",
+    "Jan 2017",
+    "Feb 2017",
+    "Mar 2017",
+    "Apr 2017",
+    "May 2017",
+    "Jun 2017",
+    "Jul 2017",
+    "Aug 2017",
+    "Sep 2017",
+    "Oct 2017",
+    "Nov 2017",
+    "Dec 2017",
+    "Jan 2018",
+    "Feb 2018",
+    "Mar 2018",
+    "Apr 2018",
+    "May 2018",
+    "Jun 2018",
+    "Jul 2018",
+    "Aug 2018",
+    "Sep 2018",
+    "Oct 2018",
+    "Nov 2018",
+    "Dec 2018",
+    "Jan 2019",
+    "Feb 2019",
+    "Mar 2019",
+    "Apr 2019",
+    "May 2019",
+    "Jun 2019",
+    "Jul 2019",
+    "Aug 2019",
+    "Sep 2019",
+    "Oct 2019",
+    "Nov 2019",
+    "Dec 2019",
+    "Jan 2020",
+    "Feb 2020",
+    "Mar 2020",
+    "Apr 2020",
+    "May 2020",
+    "Jun 2020",
+    "Jul 2020",
+    "Aug 2020",
+    "Sep 2020",
+    "Oct 2020",
+    "Nov 2020",
+    "Dec 2020",
+    "Jan 2021",
+    "Feb 2021",
+    "Mar 2021",
+    "Apr 2021",
+    "May 2021",
+    "Jun 2021",
+    "Jul 2021",
+    "Aug 2021",
+    "Sep 2021",
+    "Oct 2021",
+    "Nov 2021",
+    "Dec 2021",
+    "Jan 2022",
+    "Feb 2022",
+    "Mar 2022",
+    "Apr 2022",
+    "May 2022",
+    "Jun 2022",
+    "Jul 2022",
+    "Aug 2022",
+    "Sep 2022",
+    "Oct 2022",
+    "Nov 2022",
+    "Dec 2022",
+    "Jan 2023",
+    "Feb 2023",
+    "Mar 2023",
+    "Apr 2023",
+    "May 2023",
+    "Jun 2023",
+    "Jul 2023",
+    "Aug 2023",
+    "Sep 2023",
+    "Oct 2023",
+    "Nov 2023",
+    "Dec 2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.657,
+      0.699,
+      0.635,
+      0.711,
+      0.698,
+      0.648,
+      0.67,
+      0.672,
+      0.6653,
+      0.6488,
+      0.6433,
+      0.6641,
+      0.619,
+      0.597,
+      0.562,
+      0.536,
+      0.536,
+      0.532,
+      0.542,
+      0.556,
+      0.528,
+      0.5411,
+      0.5414,
+      0.5442,
+      0.5962,
+      0.5461,
+      0.5652,
+      0.5651,
+      0.5946,
+      0.5578,
+      0.5843,
+      0.5789,
+      0.6125,
+      0.5669,
+      0.6166,
+      0.6133,
+      0.5505,
+      0.5336,
+      0.5687,
+      0.5799,
+      0.5544,
+      0.5747,
+      0.5518,
+      0.5933,
+      0.5956,
+      0.5787,
+      0.5881,
+      0.5267,
+      0.545,
+      0.528,
+      0.4816,
+      0.477,
+      0.5065,
+      0.5062,
+      0.5058,
+      0.5354,
+      0.5349,
+      0.54,
+      0.56,
+      0.57,
+      0.55,
+      0.55,
+      0.56,
+      0.5729,
+      0.5871,
+      0.5691,
+      0.5633,
+      0.5778,
+      0.5468,
+      0.5548,
+      0.5582,
+      0.5726,
+      0.5576,
+      0.5411,
+      0.5395,
+      0.5145,
+      0.5092,
+      0.4816,
+      0.4936,
+      0.5007,
+      0.473,
+      0.4853,
+      0.4798,
+      0.4683,
+      0.4612,
+      0.4578,
+      0.451,
+      0.4529,
+      0.4635,
+      0.4803,
+      0.4495,
+      0.4584,
+      0.4562,
+      0.4455,
+      0.437,
+      0.4537,
+      0.5056,
+      0.5278,
+      0.4972,
+      0.4753,
+      0.4923,
+      0.5166,
+      0.4765,
+      0.4758,
+      0.4845,
+      0.4612,
+      0.4715,
+      0.452,
+      0.427,
+      0.429,
+      0.432,
+      0.452,
+      0.499,
+      0.489,
+      0.448,
+      0.449,
+      0.433,
+      0.468,
+      0.479,
+      0.468
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "E-mail marketing revenue worldwide from 2022 to 2032 (in billion U.S. dollars)",
+   "short": "E-mail marketing revenue worldwide 2022-2032",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the global e-mail marketing market was valued at 8.3 billion U.S. dollars and the source projected that the figure would increase to 18.9 billion by 2028. The compound annual growth rate (CAGR) for that period is expected to amount to 18.8 percent.",
+   "note": "Worldwide; 2022; * Forecast. Read more",
+   "source": "Market.us",
+   "kind": "timeseries",
+   "categories": [
+    "2022",
+    "2023",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*",
+    "2029*",
+    "2030*",
+    "2031*",
+    "2032*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      7,
+      8.3,
+      9.7,
+      12,
+      14.5,
+      16.9,
+      18.9,
+      22.4,
+      26.1,
+      31,
+      37.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Key metrics other than open rates used by marketers to determine e-mail marketing campaign success worldwide as of December 2023",
+   "short": "Most used email marketing metrics worldwide 2023",
+   "unit": "",
+   "description": "During a survey carried out among marketers in nine countries worldwide, the conversion rate - the number of viewers who converted as a share of the total number of viewers - was the most preferred metric to determine the success of e-mail marketing campaigns other than the open rate, with 26.5 percent of professionals relying on it. Click-through-rate (CTR) - the amount of clicks that an ad receives as a share of the total number of times it has been displayed - came second, with [...]",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo",
+   "kind": "categorical",
+   "categories": [
+    "Conversion rate",
+    "CTR",
+    "E-mail ROI",
+    "Reply/submission rate",
+    "CTOR",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.265,
+      0.238,
+      0.148,
+      0.108,
+      0.034,
+      0.034
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Leading types of e-mail marketing campaigns used worldwide in 2023",
+   "short": "Leading e-mail marketing campaign types worldwide 2023",
+   "unit": "",
+   "description": "During a 2023 survey carried out among marketers in selected countries worldwide, newsletters were the most popular type of email marketing campaigns, with 16.8 percent of professionals sending it out to existing and potential customers. The promotional e-mail campaigns followed with 15.3 percent of professionals using it for their marketing purposes.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Newsletter",
+    "Promotional",
+    "Lead nurture",
+    "Welcome",
+    "Surveys",
+    "Feedback",
+    "Cold e-mail",
+    "Seasonal",
+    "Onboarding",
+    "Cart/browse abandonment"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.168,
+      0.153,
+      0.116,
+      0.116,
+      0.082,
+      0.081,
+      0.078,
+      0.076,
+      0.073,
+      0.057
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Leading e-mail marketing priorities according to professionals worldwide as of May 2023",
+   "short": "Leading e-mail marketing priorities for professionals worldwide 2023",
+   "unit": "",
+   "description": "According to a 2023 survey, the leading priority of 55 percent of e-mail marketing professionals for the upcoming year was to expand how they used personalization. Another 48 percent of the same professionals wanted to put their focus on automating more aspects of their e-mail campaigns. Just 19 percent reported that they would invest in new e-mail tools.",
+   "note": "Worldwide; as of May 2023; 440 respondents; e-mail marketers",
+   "source": "Litmus; MarketingCharts Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Expand how you use personalization",
+    "Automate more aspects of your e-mail program",
+    "Refine testing e-mail measurement/performance",
+    "Improve ROI of e-mail program",
+    "Improve/better understand deliverability",
+    "Streamline workflows/approvals",
+    "Improve data management",
+    "Implement design systems",
+    "Invest in new e-mail tools"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.55,
+      0.48,
+      0.44,
+      0.38,
+      0.37,
+      0.36,
+      0.36,
+      0.22,
+      0.19
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Key objectives of e-mail marketing campaigns worldwide as of December 2023 for the upcoming year",
+   "short": "Leading e-mail marketing campaign objectives worldwide 2024",
+   "unit": "",
+   "description": "During a 2023 survey carried out among marketers in selected countries worldwide, product awareness and promotions were the key objectives of their e-mail marketing campaigns - with 16 percent of respondents choosing them. Retention and newsletters came second, each named by 14.6 percent of respondents.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo",
+   "kind": "categorical",
+   "categories": [
+    "Product awareness/promotions",
+    "Newsletters",
+    "Retention",
+    "Acquisition",
+    "Purchases/sales",
+    "Surveys/ data collection",
+    "Repeat purchases",
+    "Transactional communication"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.16,
+      0.146,
+      0.146,
+      0.139,
+      0.133,
+      0.12,
+      0.085,
+      0.072
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of email marketing campaigns sent with subject line personalization worldwide as of December 2023",
+   "short": "Subject line personalization rates in e-mail marketing worldwide 2023",
+   "unit": "",
+   "description": "In 2023, around 65 percent of marketing professionals from selected countries worldwide sent out more than half of their e-mail marketing campaigns with subject line personalization included. Another 9 percent of the same professionals did not send any e-mails with personalized subject lines.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo",
+   "kind": "categorical",
+   "categories": [
+    "Didn't send any with personalization",
+    "Less than 50%",
+    "More than 50%"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.088,
+      0.265,
+      0.647
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Best day of the week for sending out e-mail marketing campaigns according to marketers worldwide as of December 2023",
+   "short": "Most preferred week day for e-mail marketing campaigns worldwide 2023",
+   "unit": "",
+   "description": "During a 2023 survey carried out among marketers in selected countries worldwide, around 35 percent shared that Tuesdays were the most preferred week day for sending out e-mail marketing. Wednesdays came second, with around 20 percent of respondents picking them as a suitable day for e-mail campaigning.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.157,
+      0.353,
+      0.196,
+      0.124,
+      0.065,
+      0.072,
+      0.033
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Areas in which marketers used automation the most worldwide as of February 2024",
+   "short": "Areas in which marketers used automation the most worldwide 2024",
+   "unit": "",
+   "description": "During a February 2024 global survey among marketing decision-makers, approximately 58 percent reported automating their email marketing efforts. Social media and content management followed, as respectively 49 and 33 percent of respondents said they used automation in those areas.",
+   "note": "Worldwide; February 2024; 387 respondents; among marketing decision-makers",
+   "source": "Ascend2 Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Email marketing",
+    "Social media management",
+    "Content management",
+    "Paid ads",
+    "SMS marketing",
+    "Campaign tracking",
+    "Landing pages",
+    "Live chat",
+    "SEO efforts",
+    "Account-based marketing",
+    "Workflows/visualization",
+    "Sales funnel communications",
+    "Push notifications",
+    "Dynamic web forms",
+    "Lead scoring"
+   ],
+   "series": [
+    {
+     "name": "2024",
+     "values": [
+      0.58,
+      0.49,
+      0.33,
+      0.32,
+      0.3,
+      0.28,
+      0.27,
+      0.24,
+      0.22,
+      0.2,
+      0.2,
+      0.19,
+      0.18,
+      0.18,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Marketing e-mail open rates worldwide in 2023",
+   "short": "Marketing e-mail open rates worldwide 2023",
+   "unit": "",
+   "description": "In 2023, 30 percent of marketers from around the world stated that their e-mail marketing campaigns had an open rate between 10 and 20 percent. Another 57.8 percent shared that their open rates were between 20 and 50 percent.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents",
+   "source": "Mailmodo",
+   "kind": "categorical",
+   "categories": [
+    "Between 10% and 20%",
+    "Less than 10%",
+    "More than 50%",
+    "Between 20% - 50%"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.3,
+      0.029,
+      0.093,
+      0.578
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Changes in e-mail open rates observed by marketers worldwide in 2023",
+   "short": "E-mail open rates change among marketers worldwide 2023",
+   "unit": "",
+   "description": "In 2022, around 67 percent of marketers from around the world stated that their e-mail marketing campaigns had an increased open rate compared to what they observed in 2021. Another 23 percent shared that they experienced no changes in the open rates of their e-mail campaigns.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo",
+   "kind": "categorical",
+   "categories": [
+    "No changes",
+    "Open rates decreased",
+    "Open rates increased"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.236,
+      0.097,
+      0.667
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Distribution of marketing emails sent via selected providers worldwide in September 2023, by delivery status",
+   "short": "Delivery status of marketing emails worldwide 2023, by provider",
+   "unit": "",
+   "description": "In September 2022, the share of emails sent over software provided by GetResponse that reached the inbox of their recipients stood at 86.58 percent and was the highest among the providers presented in the data set. For MailChimp, the share amounted to 80.66 percent.",
+   "note": "Worldwide; September 2023",
+   "source": "CleverReach Share",
+   "kind": "categorical",
+   "categories": [
+    "ActiveCampaign",
+    "GetResponse",
+    "CampaignMonitor",
+    "CleverReach",
+    "Klick-Tipp",
+    "Mailjet",
+    "HubSpot",
+    "Moosend",
+    "Rapidmail",
+    "Mailify"
+   ],
+   "series": [
+    {
+     "name": "Inbox",
+     "values": [
+      0.8549,
+      0.8558,
+      0.8464,
+      0.8415,
+      0.8429,
+      0.8431,
+      0.8329,
+      0.8195,
+      0.83,
+      0.8176
+     ]
+    },
+    {
+     "name": "Spam",
+     "values": [
+      0.1135,
+      0.1121,
+      0.12,
+      0.1244,
+      0.1234,
+      0.1234,
+      0.1323,
+      0.1409,
+      0.1329,
+      0.1455
+     ]
+    },
+    {
+     "name": "Lost",
+     "values": [
+      0.0316,
+      0.0321,
+      0.0336,
+      0.0341,
+      0.0337,
+      0.0335,
+      0.0348,
+      0.0396,
+      0.0371,
+      0.0408
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Distribution of marketing emails sent in selected industries worldwide in September 2023, by delivery status",
+   "short": "Delivery status of marketing emails worldwide 2023, by industry",
+   "unit": "",
+   "description": "In September 2023, the share of marketing emails sent over by the clothing sector that reached the inbox of their recipients stood at 86.76 percent and was the highest among the industries presented in the data set. For dating industry emails, the share amounted to 81.58 percent.",
+   "note": "Worldwide",
+   "source": "CleverReach Share",
+   "kind": "categorical",
+   "categories": [
+    "Clothing",
+    "Home & garden",
+    "Food & drink",
+    "Pets",
+    "Entertainment",
+    "Electronics",
+    "Cosmetics & beauty",
+    "Sport & fitness",
+    "Health",
+    "Job & career",
+    "Finance",
+    "Dating",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Inbox",
+     "values": [
+      0.8676,
+      0.8691,
+      0.8658,
+      0.8492,
+      0.8394,
+      0.8514,
+      0.8439,
+      0.8284,
+      0.8262,
+      0.8125,
+      0.8193,
+      0.8158,
+      0.8528
+     ]
+    },
+    {
+     "name": "Spam",
+     "values": [
+      0.1037,
+      0.105,
+      0.105,
+      0.1167,
+      0.1266,
+      0.1146,
+      0.1255,
+      0.1346,
+      0.1357,
+      0.1458,
+      0.1443,
+      0.1441,
+      0.1144
+     ]
+    },
+    {
+     "name": "Lost",
+     "values": [
+      0.0288,
+      0.0259,
+      0.0292,
+      0.0341,
+      0.034,
+      0.034,
+      0.0307,
+      0.037,
+      0.0381,
+      0.0417,
+      0.0364,
+      0.0401,
+      0.0327
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "E-mail marketing return on investment (ROI) improve rates according to marketers worldwide as of December 2023",
+   "short": "ROI improve rates in e-mail marketing campaigns worldwide 2023",
+   "unit": "",
+   "description": "In 2023, around 52 percent of marketing professionals reported a two-time improvement rate in their e-mail marketing campaigns' return on investment (ROI) rates. Another 5.7 percent marked a four times larger ROI rate compared to their 2022 one. An additional 12.9 percent of marketers saw no ROI improvement.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo",
+   "kind": "categorical",
+   "categories": [
+    "One time",
+    "Two times",
+    "Three times",
+    "Four times",
+    "More than four times",
+    "No improvement"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.086,
+      0.528,
+      0.164,
+      0.057,
+      0.036,
+      0.129
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Click-to-open rates of marketing e-mails worldwide in 2022, by industry",
+   "short": "Click-to-open rates of marketing e-mails worldwide 2022, by industry",
+   "unit": "",
+   "description": "In 2022, marketing e-mails in the financial services sector had the highest click-to-open rate, at 16.68 percent. Publishing and communications followed, with 14.47 percent and 11.83 percent, respectively.",
+   "note": "Worldwide; 2022",
+   "source": "GetResponse Click-to-open rate",
+   "kind": "categorical",
+   "categories": [
+    "Financial services",
+    "Publishing",
+    "Communications",
+    "Technology & high tech",
+    "Legal services",
+    "Sports & activities",
+    "Non-profits",
+    "Travel",
+    "Internet marketing",
+    "Automotive",
+    "Education",
+    "Agencies",
+    "Arts & entertainment",
+    "Restaurants & food",
+    "Health & beauty"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1668,
+      0.1447,
+      0.1183,
+      0.1177,
+      0.0975,
+      0.0829,
+      0.0801,
+      0.0769,
+      0.0766,
+      0.0752,
+      0.0741,
+      0.074,
+      0.072,
+      0.0644,
+      0.0641
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Likelihood to habitually opt out of mailing lists due to mistrust of brands among consumers in the United States as of December 2023, by age group",
+   "short": "Likelihood to opt out of mailing lists in the U.S. 2023, by age group",
+   "unit": "",
+   "description": "During a December 2023 survey in the United States, roughly two-thirds (or 64.3 percent) of consumers aged 55 to 64 reported habitually (always or most of the time) opting out of brands' mailing lists. Among interviewees aged 18 to 24, the respective share stood at approximately 53 percent.",
+   "note": "December 2023; 1,500 respondents; among working-age consumers",
+   "source": "Attest",
+   "kind": "categorical",
+   "categories": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.533,
+      0.555,
+      0.62,
+      0.538,
+      0.643
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Use of social media links in e-mail marketing footers worldwide as of December 2023",
+   "short": "Social media link rates in e-mail marketing campaigns sent worldwide 2023",
+   "unit": "",
+   "description": "In 2023, around 85 percent of marketing professionals from selected countries worldwide sent out their company's social media links in their e-mail footers. Another three percent of the same professionals did not use an e-mail footer in their campaigns at all.",
+   "note": "Worldwide; November 4, 2023, to December 5, 2023; 235 respondents; email marketers, email developers, email designers, deliverability experts",
+   "source": "Mailmodo",
+   "kind": "categorical",
+   "categories": [
+    "Didn't use an e-mail footer",
+    "No",
+    "Yes"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.029,
+      0.118,
+      0.853
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Click-to-open rates of marketing e-mails in selected countries worldwide in 2022",
+   "short": "Click-to-open rates of marketing e-mails 2022, by country",
+   "unit": "",
+   "description": "In 2022, marketing e-mails in Canada had a click-to-open rate of 20.12 percent, the highest among the selected global countries presented in the data set. In Belgium, the rate stood at 12.98 percent. Germany and Poland followed with 12.11 and 10.41 percent, respectively.",
+   "note": "Worldwide; 2022",
+   "source": "GetResponse Open rate",
+   "kind": "categorical",
+   "categories": [
+    "Canada",
+    "Belgium",
+    "Germany",
+    "Poland",
+    "India",
+    "Ukraine",
+    "Israel",
+    "Russia",
+    "United States",
+    "Netherlands",
+    "Romania",
+    "Great Britain",
+    "Singapore",
+    "Italy",
+    "Spain"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.2012,
+      0.1298,
+      0.1211,
+      0.1041,
+      0.0982,
+      0.0956,
+      0.0916,
+      0.0891,
+      0.0872,
+      0.079,
+      0.0694,
+      0.0665,
+      0.0649,
+      0.0643,
+      0.0594
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Click-through rates of marketing e-mails in selected countries worldwide in 2022",
+   "short": "Click-through rates of marketing e-mails worldwide 2022, by country",
+   "unit": "",
+   "description": "In 2022, marketing e-mails in Canada had a click-through rate of 7.41 percent, highest among the selected global countries presented in the data set. In Germany, the rate stood at 4.18 percent.",
+   "note": "Europe; 2022",
+   "source": "GetResponse Open rate",
+   "kind": "categorical",
+   "categories": [
+    "Canada",
+    "Belgium",
+    "Germany",
+    "Netherlands",
+    "Poland",
+    "United States",
+    "Israel",
+    "Russia",
+    "Italy",
+    "Australia",
+    "Philippines",
+    "France",
+    "Great Britain",
+    "Ukraine",
+    "India"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0741,
+      0.045,
+      0.0418,
+      0.0361,
+      0.0322,
+      0.0268,
+      0.0226,
+      0.0226,
+      0.0205,
+      0.0204,
+      0.0197,
+      0.0191,
+      0.0184,
+      0.0181,
+      0.0164
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Unsubscribe rates of marketing e-mails in selected countries worldwide in 2022",
+   "short": "Unsubscribe rates of marketing e-mails worldwide 2022, by country",
+   "unit": "",
+   "description": "In 2022, marketing e-mails in Netherlands and Belgium both had an unsubscribe rate of 0.28 percent, highest among the selected countries presented in the data set. In Vietnam, the rate stood at 0.04 percent and was the lowest in the set.",
+   "note": "Europe; 2022",
+   "source": "GetResponse Open rate",
+   "kind": "categorical",
+   "categories": [
+    "Netherlands",
+    "Belgium",
+    "Russia",
+    "Germany",
+    "France",
+    "Australia",
+    "Italy",
+    "Poland",
+    "Canada",
+    "Great Britain",
+    "Ukraine",
+    "Romania",
+    "Colombia",
+    "Brazil",
+    "Philippines"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0028,
+      0.0028,
+      0.0023,
+      0.0018,
+      0.0017,
+      0.0016,
+      0.0013,
+      0.0013,
+      0.0012,
+      0.0012,
+      0.0012,
+      0.001,
+      0.001,
+      0.0009,
+      0.0009
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Areas in which data-driven marketing was currently the most useful according to marketing decision-makers worldwide as of June 2023",
+   "short": "Areas in which data-driven marketing was currently the most useful worldwide 2023",
+   "unit": "",
+   "description": "As of June 2023, approximately 47 percent of marketing decision-makers surveyed worldwide included email marketing among the areas in which data-driven marketing was the most useful. Customer experience and journey mapping followed closely, mentioned by 46 percent of respondents.",
+   "note": "Worldwide; on the week of June 12, 2023; 380 respondents",
+   "source": "Ascend2; Various sources (research partners) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Email marketing",
+    "Customer experience/journey mapping",
+    "Personalization",
+    "Paid advertising",
+    "Products/services development",
+    "Forecasting results/performance",
+    "Omnichannel marketing"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.47,
+      0.46,
+      0.4,
+      0.37,
+      0.35,
+      0.26,
+      0.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Favorite types of brand messaging among consumers worldwide as of November 2023",
+   "short": "Favorite types of brand messaging among consumers worldwide 2023",
+   "unit": "",
+   "description": "As of November 2023, approximately 92 percent of consumers surveyed worldwide reported favoring a brand's messaging that provided a consistent user experience regardless of where they interacted with it. Rewarding customers for their loyalty and using their data in a way that made them feel comfortable tied in second, both mentioned by 88 percent of respondents.",
+   "note": "Worldwide; September to November 2023; 10,394 respondents; 18-77 years",
+   "source": "Econsultancy; Marigold Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Provides a consistent experience, regardless of where I interact with it",
+    "Rewards me for my loyalty",
+    "Uses my data in a way that makes me feel comfortable",
+    "Treats me like an individual",
+    "Strives to develop a relationship",
+    "Surprises me with rewards I don't expect",
+    "Makes me feel special, like a VIP",
+    "Influences my life beyond the products and services that it provides"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.92,
+      0.88,
+      0.88,
+      0.85,
+      0.82,
+      0.77,
+      0.75,
+      0.71
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Effectiveness of artificial intelligence (AI) in email marketing in Europe and in the United States as of August 2023",
+   "short": "Effectiveness of AI in email marketing in Europe & the U.S. 2023",
+   "unit": "",
+   "description": "During a 2023 survey carried out among email marketers from the United States, the United Kingdom, and other European countries, it was found that approximately 51 percent of respondents believed that AI-supported email marketing was more effective than traditional email marketing approaches. Roughly 20 percent noticed no significant difference or said they believed it was as effective as traditional approaches.",
+   "note": "United Kingdom, United States; as of August 2023; 1,250 respondents; among CEOs and marketers using the Selzy email marketing platform; wider industry metrics may vary",
+   "source": "Selzy",
+   "kind": "categorical",
+   "categories": [
+    "More effective than traditional approaches in email marketing",
+    "No significant difference",
+    "As effective as traditional approaches",
+    "Uncertain"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.507,
+      0.104,
+      0.09,
+      0.299
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Most interesting artificial intelligence (AI) features in email marketing in Europe and in the United States as of August 2023",
+   "short": "Top AI features in email marketing in Europe & the U.S. 2023",
+   "unit": "",
+   "description": "During a 2023 survey carried out among email marketers from the United States, the United Kingdom, and other European countries, it was found that automatic content and image generation was the most interesting application of artificial intelligence (AI) in email marketing, named by approximately 40 percent of respondents. It was closely followed by personalization of content and newsletters, mentioned by 34 percent of the interviewed.",
+   "note": "United Kingdom, United States; as of August 2023; 1,250 respondents; among CEOs and marketers using the Selzy email marketing platform; wider industry metrics may vary",
+   "source": "Various sources (Selzy)",
+   "kind": "categorical",
+   "categories": [
+    "Automatic content & image generation",
+    "Personalized content & newsletters",
+    "Determining optimal time to send emails",
+    "Filtering contacts & databases"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.397,
+      0.339,
+      0.132,
+      0.132
+     ]
+    }
+   ]
+  }
+ ]
+}

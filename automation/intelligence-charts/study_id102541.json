@@ -1,0 +1,1816 @@
+{
+ "studyId": "102541",
+ "study": "influencer marketing in the us",
+ "file": "research/statista/Fitness Marketing/study_id102541_influencer-marketing-in-the-us.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Influencer marketing spending worldwide and in the United States in 2022 and 2023 (in billion U.S. dollars)",
+   "short": "Influencer marketing spending worldwide and in the U.S. 2022-2023",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, influencer marketing spending in the United States equaled 22.19 billion U.S. dollars, which was less than global spending by close to 7 billion, which stood at around 29.14 billion in the given year. During 2023, global influencer marketing spending reached 34.08 billion, while in the U.S. it amounted to 26.09 billion dollars.",
+   "note": "Worldwide, United States; 2022 and 2023",
+   "source": "MediaPost; PQ Media",
+   "kind": "categorical",
+   "categories": [
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "U.S.",
+     "values": [
+      22.19,
+      26.09
+     ]
+    },
+    {
+     "name": "Worldwide",
+     "values": [
+      29.14,
+      34.08
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Influencer marketing spending in the United States from 2019 to 2024 (in billion U.S. dollars)",
+   "short": "Influencer marketing expenditure in the U.S. 2019-2024",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, approximately four billion U.S. dollars were spent on influencer marketing in the United States. This figure would mark a projected increase of around one more billion, just one year later, in 2022. Further growth is anticipated for the future.",
+   "note": "United States; 2019 to 2021; * Forecast. Read more",
+   "source": "eMarketer; Insider Intelligence",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.42,
+      2.9,
+      3.9,
+      4.99,
+      6.16,
+      7.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Change in influencer marketing spending in the United States from 2019 to 2023",
+   "short": "Influencer marketing expenditure growth in the U.S. 2019-2023",
+   "unit": "",
+   "description": "In 2021, influencer marketing spending in the United States was forecast to increase by more than a third compared to its 2020 value. Throughout the presented period, the expenditure was projected to enjoy two-digit growth rates every single year.",
+   "note": "United States; 2019 and 2020; * Forecast. Read more",
+   "source": "CB News; eMarketer",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021*",
+    "2022*",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.264,
+      0.144,
+      0.336,
+      0.122,
+      0.115
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Influencer marketing spending in the United States in 2023 and 2024, by platform (in million U.S. dollars)",
+   "short": "Influencer marketing spending in the U.S. 2023-2024, by platform",
+   "unit": "million U.S. dollars",
+   "description": "Influencer marketing spending on Instagram in the United States was expected to amount to 1.95 billion U.S. dollars in 2023. YouTube came in second, projected to capture 986 million dollars of the influencer marketing spend, while TikTok surpassed Facebook in nabbing third place, with expenses amounting to 986.6 million.",
+   "note": "United States; as of July 2023; forecasts / selected platforms",
+   "source": "eMarketer; Insider Intelligence",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "YouTube",
+    "TikTok",
+    "Facebook"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      1958.8,
+      989.6,
+      986.6,
+      896.9
+     ]
+    },
+    {
+     "name": "2024",
+     "values": [
+      2210.5,
+      1070.2,
+      1253.9,
+      1002.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Influencer marketing usage rate in the United States from 2020 to 2025",
+   "short": "Influencer marketing penetration rate in the U.S. 2020-2025",
+   "unit": "",
+   "description": "In 2021, 69.7 percent of U.S. marketers in companies larger than 100 employees were expected to use influencers for marketing purposes. On the global level, the influencer marketing market was valued at 13.8 billion U.S. dollars in 2021.",
+   "note": "United States; 2020 ; among companies with 100+ employees; including both paid and unpaid partnerships between brands and influencers; * Forecast. Read more",
+   "source": "eMarketer; Insider Intelligence",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021*",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.645,
+      0.697,
+      0.745,
+      0.786,
+      0.827,
+      0.86
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Influencer marketing spending and social advertising spending growth in the United States from 2019 to 2025",
+   "short": "Influencer marketing spend and social ad spend growth in the U.S. 2023",
+   "unit": "",
+   "description": "According to a forecast from July 2023, influencer marketing spending in the United States will grow more than three times faster than social ad spend in 2023, and it will continue growing gradually with around 14 percent from year to year until 2025.",
+   "note": "United States; 2019 to 2022",
+   "source": "eMarketer; Insider Intelligence; X (Twitter)",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ],
+   "series": [
+    {
+     "name": "Influencer marketing spending growth",
+     "values": [
+      0.264,
+      0.169,
+      0.328,
+      0.203,
+      0.14,
+      0.147,
+      0.143
+     ]
+    },
+    {
+     "name": "Social ad spending growth",
+     "values": [
+      0.288,
+      0.249,
+      0.379,
+      0.051,
+      0.041,
+      0.096,
+      0.097
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "New marketing tactics and channels planned to be explored according to B2B companies in the United States in 2023",
+   "short": "New B2B marketing tactics to be used in the U.S. 2023",
+   "unit": "",
+   "description": "Over 40 percent of business-to-business (B2B) marketers surveyed in the United States planned to explore artificial intelligence (AI) and automation in 2023. Video marketing and influencer marketing were also among the strategies to be experimented, mentioned by 32 and 30 percent of the respondents, respectively.",
+   "note": "United States; 2022; >900",
+   "source": "Fleet Management Weekly; MarketingProfs Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Artificial intelligence and automation",
+    "Video marketing",
+    "Influencer marketing",
+    "Personalization",
+    "Mobile-first strategy",
+    "Inbound marketing",
+    "Account-based marketing",
+    "Brand storytelling",
+    "Virtual events & webinars",
+    "Podcasting & livestreaming",
+    "CRM software",
+    "Social media advertising",
+    "Retargeting",
+    "Organic Social Media",
+    "Conversational marketing (chatbots)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.42,
+      0.32,
+      0.3,
+      0.26,
+      0.26,
+      0.25,
+      0.24,
+      0.24,
+      0.23,
+      0.21,
+      0.2,
+      0.2,
+      0.19,
+      0.18,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of marketing budgets spent on influencer marketing worldwide as of February 2024",
+   "short": "Share of marketing budgets spent on influencer marketing worldwide 2024",
+   "unit": "",
+   "description": "During a global 2024 survey among marketing agencies and brands, 22.4 percent of respondents stated they invested 10 to 20 percent of their marketing budget into influencer marketing. Another 26 percent devoted more than 40 percent to this type of digital marketing activity.",
+   "note": "Worldwide; 3,000 respondents; among PR agencies, marketing agencies, brands, and other relevant professionals",
+   "source": "Influencer Marketing Hub",
+   "kind": "categorical",
+   "categories": [
+    "<10%",
+    "10-20%",
+    "20-30%",
+    "30-40%",
+    ">40%"
+   ],
+   "series": [
+    {
+     "name": "Feb 2024",
+     "values": [
+      0.261,
+      0.224,
+      0.158,
+      0.115,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Average cost paid per influencer marketing post in the United States in 2022, by gender (in U.S. dollars)",
+   "short": "Average amount paid per influencer marketing post in the U.S. 2022, by gender",
+   "unit": "U.S. dollars",
+   "description": "In 2022, male influencers from the United States charged on average 3.13 thousand U.S. dollars per post whereas female influencers charged 2.65 thousand. That is nearly one third less than their male counterparts and yet another manifestation of the gender pay gap.",
+   "note": "United States; 2022; on IZEA platform only; broader industry metrics may vary",
+   "source": "Izea",
+   "kind": "categorical",
+   "categories": [
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      3131
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      2652
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Average cost paid per influencer marketing post in the United States in 2022, by ethnicity (in U.S. dollars)",
+   "short": "Average amount paid per influencer marketing post in the U.S. 2022, by ethnicity",
+   "unit": "U.S. dollars",
+   "description": "In 2022, Asian influencers in the United States charged on average 3.6 thousand U.S. dollars per post, whereas African American influencers charged on average 3.04 thousand. Caucasian influencers earned the least, with 2.45 thousand dollars per post.",
+   "note": "United States; 2022; on IZEA platform only; broader industry metrics may vary",
+   "source": "Izea; US Census Bureau",
+   "kind": "categorical",
+   "categories": [
+    "Caucasian",
+    "Hispanic",
+    "African American",
+    "Non-White other",
+    "Asian"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2453,
+      2757,
+      3042,
+      3142,
+      3668
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Leading payment methods among marketers in the United States used to pay influencers as of January 2023",
+   "short": "Leading payment types for influencers among U.S. marketers 2023",
+   "unit": "",
+   "description": "In January 2023, 64 percent of marketers in the United States were paying influencers on a campaign basis. Interestingly, half of U.S. marketers based their influencer marketing payments on an affiliate basis, post basis and hourly rate.",
+   "note": "United States; January 2023; 300 respondents",
+   "source": "AP; Capterra Shares of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Pay per campaign",
+    "Pay per performance",
+    "Retainer or continual basis",
+    "Fixed rate",
+    "Licensing deal",
+    "Affiliate basis",
+    "Pay per post",
+    "Hourly rate",
+    "Gifts"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.64,
+      0.56,
+      0.54,
+      0.53,
+      0.52,
+      0.5,
+      0.5,
+      0.5,
+      0.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Annual incomes of creators in the United States in 2021 and 2023 (in U.S. dollars)",
+   "short": "Creators' annual incomes in the U.S. 2021-2023",
+   "unit": "U.S. dollars",
+   "description": "In 2023, according to the results of a survey conducted among creators based in the United States, 25 percent of them had an annual income between 50,000 and 100,000 U.S. dollars, while by comparison the same income was received by 18 percent of creators two years earlier, in 2021. The same percent of respondents - 20 - had an annual income between 20,000 and 50,000 in both years.",
+   "note": "United States; April 2023; 660 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "Up to 20,000",
+    "20,000 to 50,000",
+    "50,000 to 100,000",
+    "100,000 to 500,000",
+    "500,000 to 1,000,000",
+    "Over 1,000,000"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.41,
+      0.2,
+      0.18,
+      0.13,
+      0.06,
+      0.02
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.19,
+      0.2,
+      0.25,
+      0.24,
+      0.11,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Share of selected platforms in influencer marketing spending in the United States from 2019 to 2024",
+   "short": "Influencer marketing expenditure in the U.S. 2019-2024, by platform",
+   "unit": "",
+   "description": "In 2021, TikTok accounted for 10.2 percent of influencer marketing spending in the United States. This was the smallest share among the four platforms presented in the data set. However, TikTok was forecast to overtake Facebook already a year later and YouTube in 2023, making it second only to Instagram, whose market share is projected to remain fairly stable in the upcoming years.",
+   "note": "United States; 2019 to 2021; * Forecast. Read more",
+   "source": "eMarketer; Insider Intelligence",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*"
+   ],
+   "series": [
+    {
+     "name": "Instagram",
+     "values": [
+      0.431,
+      0.436,
+      0.45,
+      0.447,
+      0.446,
+      0.445
+     ]
+    },
+    {
+     "name": "YouTube",
+     "values": [
+      0.252,
+      0.237,
+      0.21,
+      0.19,
+      0.177,
+      0.172
+     ]
+    },
+    {
+     "name": "Facebook",
+     "values": [
+      0.208,
+      0.193,
+      0.165,
+      0.148,
+      0.136,
+      0.133
+     ]
+    },
+    {
+     "name": "TikTok",
+     "values": [
+      0.023,
+      0.054,
+      0.102,
+      0.155,
+      0.171,
+      0.185
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Sponsored content types shared by creators from the United States as of June 2023",
+   "short": "Sponsored content types shared by creators from the U.S. 2023",
+   "unit": "",
+   "description": "During a June 2023 survey among content creators from the United States, 98.4 percent of survey participants mentioned using Instagram feed posts for sharing their sponsored content. Instagram Stories and Reels came next, each with around 98 percent, while 89.6 percent of creators also used TikTok videos to promote their sponsored content.",
+   "note": "United States; June 2023; 689 respondents; 18 years and older; U.S. content creators",
+   "source": "Insider Intelligence; Mavrck; X (Twitter) Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Instagram feed posts",
+    "Instagram Stories",
+    "Instagram Reel",
+    "TikTok video",
+    "Instagram Live",
+    "Facebook post",
+    "Youtube Short",
+    "Blog post",
+    "YouTube video",
+    "Printerest Pin",
+    "Tweet",
+    "Lemon8",
+    "Snapchat",
+    "LinkedIn",
+    "Podcast"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.984,
+      0.981,
+      0.98,
+      0.896,
+      0.691,
+      0.689,
+      0.626,
+      0.595,
+      0.589,
+      0.543,
+      0.459,
+      0.339,
+      0.309,
+      0.296,
+      0.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Platforms that were the favorite to work with vs. earned the most money among creators in the United States as of April 2023",
+   "short": "Favorite vs top earning platforms for creators in the U.S. 2023",
+   "unit": "",
+   "description": "In 2023, according to the results of a survey conducted among creators based in the United States, 28 percent of them saw TikTok as their favorite platform, while by comparison 26 percent of creators earned the most money on the same platform. YouTube was the platform that earned the best for 26 percent of U.S. creators, while it was a favorite for 23 percent of them.",
+   "note": "United States; April 2023; 660 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "Instagram",
+    "YouTube",
+    "Facebook",
+    "Twitter",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "Favorite platform as a creator",
+     "values": [
+      0.28,
+      0.16,
+      0.23,
+      0.17,
+      0.08,
+      0.08
+     ]
+    },
+    {
+     "name": "Platform where you make the most money",
+     "values": [
+      0.26,
+      0.17,
+      0.26,
+      0.17,
+      0.09,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Main ways in which creators engaged with their followers in the United States as of April 2023",
+   "short": "Top ways for creators to engage with followers in the U.S. 2023",
+   "unit": "",
+   "description": "In 2023, according to the results of a survey conducted among creators based in the United States, close to 30 percent of them said that posting frequently on social media was their favorite way of engaging with followers. Another 27.8 percent of American creators went live on social media as a method to engage with their base.",
+   "note": "United States; April 2023; 660 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "Post frequently on social media",
+    "Replying to all (or majority) comments on my posts",
+    "Go live on social media",
+    "Do one on one calls with my followers",
+    "In-person meet ups"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.293,
+      0.284,
+      0.278,
+      0.09,
+      0.056
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Main ways in which creators in the United States utilized artificial intelligence (AI) as of April 2023",
+   "short": "Top ways for creators using AI in the U.S. 2023",
+   "unit": "",
+   "description": "In 2023, according to the results of a survey conducted among creators based in the United States, 21 percent of them used artificial intelligence (AI) for editing content purposes. Another 21 percent used it for generating images or videos. Five percent and a half of U.S. creators stated that they did not use AI.",
+   "note": "United States; April 2023; 660 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Editing content",
+    "Generating images/videos",
+    "Generating text/captions for accessibility",
+    "Brainstorming/researching content",
+    "Outlining e-mails",
+    "Designing graphics",
+    "I don't use AI"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.21,
+      0.209,
+      0.19,
+      0.15,
+      0.101,
+      0.085,
+      0.055
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Challenges among marketers in the United States when working with influencers as of January 2023",
+   "short": "Challenges for working with influencers among U.S. marketers 2023",
+   "unit": "",
+   "description": "In January 2023, 41 percent of marketers in the United States said that determining the success metrics or KPIs when working with influencers was their greatest challenge. For another 40 percent stated that determining rates or making payments was hard to do as well.",
+   "note": "United States; January 2023; 300 respondents",
+   "source": "Capterra",
+   "kind": "categorical",
+   "categories": [
+    "Determining success metrics or KPIs",
+    "Determining rates or making payments"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.41,
+      0.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Share of influencers who would work with brands just for free products in the United States as of February 2023",
+   "short": "Influencers who would work with brands for free products in the U.S. 2023",
+   "unit": "",
+   "description": "According to a survey conducted among marketers and creators in the United States and released in February 2023, 29 percent of surveyed influencers said that if they loved a brand, they would be willing to work with it just for free products. This was followed by 54 percent of respondents stating they would do so if the product value were high, while 17 percent said they would not work just for free products.",
+   "note": "United States; February 1, 2023; 700 respondents; among marketers and creators",
+   "source": "Aspire",
+   "kind": "categorical",
+   "categories": [
+    "Yes, if I love the brand",
+    "Yes, if the product value is high",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.29,
+      0.54,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Main challenges for creators in the United States as of April 2023",
+   "short": "Top challenges for creators in the U.S. 2023",
+   "unit": "",
+   "description": "During a 2023 survey conducted among creators based in the United States, 14.6 percent of them said that finding brand deals was their biggest challenge. Another 13.8 percent pointed towards pricing negotiations as their greatest challenge for the same year. Diversity, equity and inclusion (DEI) was selected by 3.5 percent of content creators.",
+   "note": "United States; April 2023; 660 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Finding brand deals",
+    "Pricing negotiation",
+    "Meeting campaign objectives",
+    "Communication with the brand",
+    "Managing taxes/finances",
+    "Burnout/mental health",
+    "Getting paid on time",
+    "Landing side gigs",
+    "DEI (diversity, equity, and inclusion)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.146,
+      0.138,
+      0.132,
+      0.132,
+      0.116,
+      0.116,
+      0.105,
+      0.079,
+      0.035
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Leading platforms used by marketers for influencer marketing in the United States from 2020 to 2025",
+   "short": "Leading platforms used by marketers for influencer marketing in the U.S. 2020-2025",
+   "unit": "",
+   "description": "Instagram ranked as the most-used influencer marketing platform used among marketers in the United States in 2021. Nearly 68 percent of marketers adopted Instagram for influencer campaigns. Facebook followed, being used by 52 percent of marketers as an influencer marketing platform, while TikTok came in third with 42 percent. TikTok surpassed YouTube as an influencer marketing platform in 2021 and was expected to rise further over the years - going from 36 percent of [...]",
+   "note": "United States; 2020 and 2021; among companies with more than 100 employees; including both paid and unpaid partnerships between brands and influencers  ; * Forecast. The source does not specify the number of respondents. Read more",
+   "source": "eMarketer; Hootsuite; Insider Intelligence",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*"
+   ],
+   "series": [
+    {
+     "name": "Instagram",
+     "values": [
+      0.62,
+      0.679,
+      0.725,
+      0.766,
+      0.808,
+      0.841
+     ]
+    },
+    {
+     "name": "Facebook",
+     "values": [
+      0.484,
+      0.52,
+      0.552,
+      0.58,
+      0.605,
+      0.623
+     ]
+    },
+    {
+     "name": "YouTube",
+     "values": [
+      0.389,
+      0.408,
+      0.425,
+      0.442,
+      0.456,
+      0.468
+     ]
+    },
+    {
+     "name": "TikTok",
+     "values": [
+      0.36,
+      0.42,
+      0.457,
+      0.49,
+      0.52,
+      0.549
+     ]
+    },
+    {
+     "name": "Twitter",
+     "values": [
+      0.236,
+      0.244,
+      0.25,
+      0.255,
+      0.259,
+      0.262
+     ]
+    },
+    {
+     "name": "Snapchat",
+     "values": [
+      0.155,
+      0.163,
+      0.171,
+      0.178,
+      0.185,
+      0.191
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Marketing channels influencing online purchase decisions in the United States in 2022",
+   "short": "Marketing channels influencing online purchase decisions in the U.S. 2022",
+   "unit": "",
+   "description": "According to a survey conducted in the United States in 2022, email marketing is still the most effective online marketing tactic. About 45 percent of e-shoppers are influenced by general e-mails from online retailers, as e-mail marketing keeps the consumer in shopping mode and the communication active. Another successful marketing strategy is receiving catalogs and printed material via mail. It greatly affected consumers' online buying behavior, over four of ten survey respondents [...]",
+   "note": "United States; May 2022; 1,015 respondents",
+   "source": "Bizrate Insights; Digital Commerce 360 Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "General email",
+    "Catalogs and other printed material via postal mail",
+    "Online advertising",
+    "Offers within order confirmation/shipping",
+    "Social media advertising",
+    "Email that suggests I left something in my cart",
+    "Back-in-stock emails",
+    "Social media",
+    "Advertising on search engines",
+    "Text messages",
+    "Advertising that follows me online after I have viewed a product",
+    "Social media influencers"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.44,
+      0.43,
+      0.32,
+      0.23,
+      0.21,
+      0.2,
+      0.2,
+      0.18,
+      0.17,
+      0.12,
+      0.11,
+      0.07
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Leading brands on YouTube in the United States and Canada in 4th quarter 2022, by influencer media value (in million U.S. dollars)",
+   "short": "Top YouTube influencer marketing spenders in the U.S. & Canada 2022",
+   "unit": "million U.S. dollars",
+   "description": "With 4.12 million U.S. dollars, Nord VPN - a VPN service company - was the brand with the highest YouTube influencer media value (IMV) in the United States and Canada in the fourth quarter of 2022. Squarespace - a website building and hosting company - ranked third, with an IMV of 3.21 million.",
+   "note": "Q4 2022",
+   "source": "NeoReach IMV in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Nord VPN",
+    "ExpressVPN",
+    "Squarespace",
+    "Ridge Wallet",
+    "Hello Fresh",
+    "Manscaped",
+    "Raycon",
+    "Crunch Labs",
+    "Brilliant",
+    "Keeps",
+    "Ship Staion",
+    "Draft Kings",
+    "Betterhelp",
+    "Ebay Motors",
+    "Marvel Snap"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.12,
+      3.58,
+      3.21,
+      3.19,
+      2.96,
+      2.78,
+      2.33,
+      2.27,
+      2.23,
+      2.07,
+      2.06,
+      2.05,
+      2.02,
+      1.69,
+      1.69
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading content creators and channels on YouTube in the United States and Canada in the 1st quarter 2023, by Influencer Media Value (IMV) (in million U.S. dollars)",
+   "short": "Most valued creators and channels on YouTube in the U.S. & Canada 2023",
+   "unit": "million U.S. dollars",
+   "description": "In the first quarter of 2023, brands and companies that activated sponsored YouTube campaigns with the YouTuber Philip DeFranco - sxephil - saw over 4.42 million U.S. dollars during the first quarter of 2023 in IMV due to collaboration with brands such as Greens, Bokksu, Grammarly, NordVPN and others.",
+   "note": "Canada, United States; Q1 2023",
+   "source": "NeoReach IMV in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "sxephil",
+    "donutmediatv",
+    "linustechtips",
+    "theakguy1974",
+    "bgfilms",
+    "pewdiepie",
+    "matthewpatrick13",
+    "h3podcast",
+    "1veritasium",
+    "gamersnexus",
+    "w1ldc4t43",
+    "garrettmitch",
+    "thehoonigans",
+    "reallifelore",
+    "mmg69"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.42,
+      2.42,
+      2.39,
+      1.58,
+      1.56,
+      1.36,
+      1.34,
+      1.2,
+      1.14,
+      1.07,
+      1.06,
+      0.93,
+      0.88,
+      0.88,
+      0.85
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Engagement rates of influencers on YouTube in the United States in 1st half 2023, by number of followers",
+   "short": "YouTube U.S. engagement rates of influencers 2023, by followers",
+   "unit": "",
+   "description": "Between January and June 2023 in the United States, YouTube influencers with an audience of between 100,000 and 250,000 thousand followers had an average engagement rate of 52.48 percent. YouTube influencers with over one million followers achieved an engagement rate of 141 percent.",
+   "note": "United States; January 1 to June 14, 2023; 1.83 million YouTube accounts analyzed",
+   "source": "Affable.ai",
+   "kind": "categorical",
+   "categories": [
+    "5k-10k",
+    "10k-50k",
+    "50k-100k",
+    "100k-250k",
+    "250-1m",
+    "1m+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1292,
+      0.1745,
+      0.3475,
+      0.5248,
+      0.7858,
+      1.4104
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Engagement rate among influencers on Instagram in the United States in 2021 and 2022, by number of followers",
+   "short": "Engagement rate among U.S. influencers on Instagram 2021-2022, by profile size",
+   "unit": "",
+   "description": "During a study of engagement rates on Instagram influencer accounts in the United States, it was found that influencers with a profile size of between one and five thousand followers were projected to have the highest engagement rate throughout 2022, at 4.6 percent. This marked a slight decrease from the average 2021 nano-influencer engagement rate of 4.6 percent.",
+   "note": "United States; 2021",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1K - 5K",
+    "5K - 20K",
+    "20K - 100K",
+    "100K - 1M",
+    "Over 1M",
+    "Overall"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.047,
+      0.021,
+      0.018,
+      0.017,
+      0.017,
+      0.025
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.046,
+      0.02,
+      0.015,
+      0.014,
+      0.014,
+      0.024
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Leading beauty Influencers on YouTube in the United States in 1st half 2023, by engagement rate",
+   "short": "Top YouTube U.S. beauty influencers 2023, by engagement rate",
+   "unit": "",
+   "description": "As of June 2023, beauty influencer Courtney Renee (@reneeswaybeauty) had a YouTube engagement rate of 52.36 percent, making her the leading beauty influencer in the United States. Tai Selene (@taiselene) and Kathy Chan (@itskathychan) came second and third, with engagement rates of 35.24 percent and 28.42 percent, respectively.",
+   "note": "United States; January 1 to June 14, 2023",
+   "source": "Affable.ai Engagement rate",
+   "kind": "categorical",
+   "categories": [
+    "Courtney Renee @reneeswaybeauty",
+    "Tai Selene @taiselene",
+    "Kathy Chan @itskathychan",
+    "Brenda @brendacurlstylist",
+    "Daniela Flores @danielaflores",
+    "Erin Miller @erinmiller",
+    "Christy Keane Can @christykeanecan",
+    "Connie Pena @conniepena777",
+    "douxfairy @douxfairy",
+    "The Allure Edition @theallureedition",
+    "Sadia Slayy @sadiaslayy",
+    "ruslanagee @ruslanagee",
+    "Canela Trigueros @canelatrigueros",
+    "Jeromelordet @jeromelordet",
+    "Penny Tovar @pennytovar"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5236,
+      0.3524,
+      0.2842,
+      0.2393,
+      0.2366,
+      0.1903,
+      0.1824,
+      0.1303,
+      0.0691,
+      0.0646,
+      0.055,
+      0.0475,
+      0.0301,
+      0.0235,
+      0.0183
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Distribution of TikTok influencer marketing content in the United States and Canada in 1st quarter 2022, by type",
+   "short": "TikTok influencer marketing content types in the U.S. & Canada 2022",
+   "unit": "",
+   "description": "In the first quarter of 2022, roughly 77 percent of the TikTok influencer marketing campaigns of brands and companies that activated TikTok campaigns with sponsored content achieving at least 10,000 views presented dedicated content. The second most popular type was integrated content, included in 21 percent of analyzed videos.",
+   "note": "Q1 2022",
+   "source": "NeoReach",
+   "kind": "categorical",
+   "categories": [
+    "Dedicated",
+    "Integrated",
+    "Description only"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7691,
+      0.21,
+      0.022
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Engagement rates of influencers on TikTok in the United States in 1st half 2023, by number of followers",
+   "short": "TikTok U.S. engagement rates of influencers 2023, by followers",
+   "unit": "",
+   "description": "Between January and June 2023 in the United States, TikTok influencers with an audience of between five and 10 thousand followers had an average engagement rate of 76.23 percent. This was the highest among all influencers using the platform. TikTok influencers with over one million followers achieved an engagement rate of 12.69 percent.",
+   "note": "United States; January 1 to June 14, 2023; 953.611 thousand TikTok accounts analyzed",
+   "source": "Affable.ai",
+   "kind": "categorical",
+   "categories": [
+    "5k-10k",
+    "10k-50k",
+    "50k-100k",
+    "100k-250k",
+    "250-1m",
+    "1m+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7623,
+      0.3777,
+      0.2787,
+      0.2043,
+      0.1659,
+      0.1269
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Engagement rates of TikTok influencer campaigns of selected brands in the United States and Canada in 2022",
+   "short": "Engagement rates of TikTok brand influencer campaign videos in the U.S. & Canada 2022",
+   "unit": "",
+   "description": "In 2022, TikTok influencer marketing videos that activated TikTok campaigns with sponsored content that had the highest engagement rates were released by Robinhood - a company that deals with financial services - and stood at 24.5 percent in terms of engagement on the platform. Wetwall - a shower panel provider company - followed with 17.8 percent engagement rate.",
+   "note": "2022",
+   "source": "NeoReach Engagement rate",
+   "kind": "categorical",
+   "categories": [
+    "Robinhood",
+    "Wetwall",
+    "Nope Movie",
+    "Lucky Iron Fish",
+    "fazer",
+    "mode keyboards",
+    "Scream",
+    "Lindt Chocolate",
+    "Revashelf",
+    "Essie"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.245,
+      0.178,
+      0.1463,
+      0.1294,
+      0.1158,
+      0.1143,
+      0.1139,
+      0.0957,
+      0.0945,
+      0.0819
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Engagement rates of influencer campaigns on TikTok in the United States and Canada in 2022, by industry",
+   "short": "Engagement rates of TikTok influencer campaign videos in the U.S. & Canada 2022",
+   "unit": "",
+   "description": "In 2022, TikTok influencer marketing videos of brands and companies that activated TikTok campaigns with sponsored content that had the highest engagement rates were in the luxury goods and jewelry industry - with an overall 0.60 percent rate. Record labels and finance followed.",
+   "note": "2022",
+   "source": "NeoReach Engegement rate",
+   "kind": "categorical",
+   "categories": [
+    "Luxury goods & jewelry",
+    "Record labels",
+    "Finance",
+    "Fashion",
+    "Photography",
+    "Entertainment",
+    "Apps",
+    "Food & drinks",
+    "Home & garden",
+    "Education"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.006,
+      0.006,
+      0.0055,
+      0.0054,
+      0.0054,
+      0.0052,
+      0.005,
+      0.005,
+      0.005,
+      0.0048
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Brands with most views of TikTok influencer campaigns in the United States and Canada in 2022 (in millions)",
+   "short": "Number of views of TikTok brand influencer campaign videos in the U.S. & Canada 2022",
+   "unit": "millions",
+   "description": "In 2022, TikTok influencer marketing videos that activated TikTok campaigns with sponsored content that had the highest views were released by Amazon and stood at around 205 million views on the platform. McDonald's followed with 118 million views, while third came Turbo Tax - an American company that provides financial software services - with 86 million TikTok views.",
+   "note": "2022",
+   "source": "NeoReach Views in millions",
+   "kind": "categorical",
+   "categories": [
+    "Amazon",
+    "McDonald's",
+    "Turbo Tax",
+    "Samsung",
+    "Paramount",
+    "Amazon Prime Video",
+    "Adidas",
+    "MAC Cosemetics",
+    "Spotify",
+    "Netflix"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      205.62,
+      118.29,
+      86.93,
+      78.18,
+      67.2,
+      61.9,
+      57.12,
+      51.33,
+      50.01,
+      47.48
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Number of TikTok influencer marketing branding and awareness campaigns in the United States and Canada in selected industry in 2023, by views (in millions)",
+   "short": "TikTok influencer branding & awareness videos in the U.S. & Canada 2022, by views",
+   "unit": "millions",
+   "description": "In 2022, TikTok influencer marketing videos of brands and companies that activated TikTok branding and awareness campaigns with sponsored content achieving at least 10,000 views and were sponsored by players from the food and drink industry achieved 981.3 million views. The second strongest industry was entertainment, having sponsored branding and awareness videos that made 572 million views on the platform.",
+   "note": "2022",
+   "source": "NeoReach",
+   "kind": "categorical",
+   "categories": [
+    "Food & drink",
+    "Entertainment",
+    "Beauty",
+    "Fashion",
+    "Tech"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      981.3,
+      572,
+      565,
+      495,
+      405.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Number of TikTok influencer marketing download or install videos in the United States and Canada in 2022, by views",
+   "short": "TikTok influencer download or install videos in the U.S. & Canada 2022, by views",
+   "unit": "",
+   "description": "In the first quarter of 2022, TikTok influencer marketing videos of brands and companies that activated TikTok download or install campaigns with sponsored content from the gaming industry reached 9.2 million views. The second strongest industry was apps, having 8 million views on their download or install videos.",
+   "note": "2022",
+   "source": "NeoReach",
+   "kind": "categorical",
+   "categories": [
+    "Gaming",
+    "Apps",
+    "Education",
+    "Tech",
+    "Entertainment"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      9.2,
+      8,
+      1.9,
+      1.4,
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Number of TikTok influencer marketing contest and giveaway campaigns in the United States and Canada in 2022, by views",
+   "short": "TikTok influencer contest & giveaway videos in the U.S. & Canada 2022, by views",
+   "unit": "",
+   "description": "In 2022, TikTok influencer marketing videos of brands and companies that activated TikTok contest and giveaway campaigns with sponsored content and were sponsored by players from the food and drink industry reached 33.7 million views on the platform. The second strongest industries was fashion, having achieved 14.1 million views for the analyzed contest and giveaway videos.",
+   "note": "2022",
+   "source": "NeoReach",
+   "kind": "categorical",
+   "categories": [
+    "Food & drink",
+    "Fashion",
+    "Finance",
+    "Beauty",
+    "Consumer lectronics"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      33.7,
+      14.1,
+      5.4,
+      2.3,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Number of TikTok influencer marketing 'limited time offer' videos in the United States and Canada in 2022, by views (in millions)",
+   "short": "TikTok influencer 'limited time offer' videos in the U.S. & Canada 2022, by views",
+   "unit": "millions",
+   "description": "In 2022, TikTok influencer marketing videos of brands and companies that activated TikTok \"limited time offer\" campaigns and were sponsored by players from the food and drink industry reached 42.9 million views. The second strongest industry was fashion, having achieved 29.8 million views on the platform.",
+   "note": "2022",
+   "source": "NeoReach",
+   "kind": "categorical",
+   "categories": [
+    "Food & drink",
+    "Fashion",
+    "Beauty",
+    "Entertainment",
+    "Health & wellness"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      42.9,
+      29.8,
+      7.5,
+      6.2,
+      1.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Leading beauty Influencers on TikTok in the United States in 1st half 2023, by engagement rate",
+   "short": "Top TikTok beauty influencers in the U.S. 2023, by engagement rate",
+   "unit": "",
+   "description": "As of June 2023, beauty influencer Katy (@katyateyourlunch) had a TikTok engagement rate of 51.95 percent, making her the leading beauty influencer in the United States. Shrika Peddireddy (@shrikapeddireddy) and Tanem (@musthavesxt) came second and third, with engagement rates of 28.06 percent and 21.28 percent, respectively.",
+   "note": "United States; January 1 to June 14, 2023",
+   "source": "Affable.ai Engagement rate",
+   "kind": "categorical",
+   "categories": [
+    "Katy @katyateyourlunch",
+    "shrika peddireddy @shrikapeddireddy",
+    "Tanem @musthavesxt",
+    "Erza Haliti @erzahalitii",
+    "Mimi @mininaildiary",
+    "gracemchoi @gracemchoi",
+    "Jewe @jewellianna",
+    "autumn grace @autumngracebeauty",
+    "chernohkoroma @therealchernohk",
+    "Tierra @tierragabrielle",
+    "Jessica Monique @iam_jessicamonique",
+    "Bethany @theotherasian_",
+    "Loren Asad @loren.asad",
+    "pri @shadesofpri",
+    "Rocy Roque @rocyroque"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5195,
+      0.2806,
+      0.2128,
+      0.1928,
+      0.1867,
+      0.1807,
+      0.1509,
+      0.126,
+      0.1145,
+      0.1103,
+      0.1028,
+      0.0809,
+      0.0752,
+      0.074,
+      0.0714
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Leading product recommendation sources according to consumers in the United States as of August 2022, by generation",
+   "short": "Main purchase recommendation sources in the U.S. 2022, by generation",
+   "unit": "",
+   "description": "According to a survey conducted among consumers in the United States in August 2022, 71 percent of respondents said they had purchased products or services based on recommendations from family, while 66 percent said they did so based on suggestions from close friends. Gen X respondents were those most inclined towards following the recommendations of family and friends. In contrast, Gen Z and Millennial respondents were more likely to adhere to the endorsements of [...]",
+   "note": "United States; August 23 and 24, 2022; 1,116 respondents; 18 years and older",
+   "source": "Ipsos; MarketingCharts",
+   "kind": "categorical",
+   "categories": [
+    "Family",
+    "Close friends",
+    "Acquaintances",
+    "Someone that works in the store/for the company",
+    "Companies or brands on social media",
+    "A review site",
+    "Groups on social media",
+    "Individual influencers on social media"
+   ],
+   "series": [
+    {
+     "name": "Overall",
+     "values": [
+      0.71,
+      0.66,
+      0.39,
+      0.38,
+      0.35,
+      0.33,
+      0.28,
+      0.27
+     ]
+    },
+    {
+     "name": "Generation Z and Millennial",
+     "values": [
+      0.74,
+      0.7,
+      0.44,
+      0.45,
+      0.54,
+      0.41,
+      0.44,
+      0.45
+     ]
+    },
+    {
+     "name": "Generation X",
+     "values": [
+      0.77,
+      0.72,
+      0.49,
+      0.43,
+      0.38,
+      0.35,
+      0.3,
+      0.29
+     ]
+    },
+    {
+     "name": "Boomer and older",
+     "values": [
+      0.65,
+      0.56,
+      0.26,
+      0.27,
+      0.11,
+      0.21,
+      0.07,
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Social media activities creating a positive brand perception according to consumers in the United States as of June 2022",
+   "short": "Social media activities creating a positive brand perception in the U.S. 2022",
+   "unit": "",
+   "description": "During a 2022 survey in the United States, 73 percent of responding consumers stated that offers or promotions posted on social media channels created a positive brand perception. According to 26 percent of respondents, memes and jokes posted by brands achieved that purpose, too.",
+   "note": "United States; June 2022; 1,059 respondents",
+   "source": "Latana",
+   "kind": "categorical",
+   "categories": [
+    "Offers / promotions",
+    "Brand-related news",
+    "Memes / jokes",
+    "Brand ambassadors",
+    "None of these"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.73,
+      0.47,
+      0.26,
+      0.2,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Social media activities creating a positive brand perception according to consumers in the United States as of June 2022, by gender",
+   "short": "Social media activities creating a positive brand perception U.S. 2022, by gender",
+   "unit": "",
+   "description": "During a 2022 survey in the United States, 76 percent of responding women and 70 percent of responding men stated that offers or promotions posted on social media channels created a positive brand perception. According to 26 percent of women and 27 percent of men, memes and jokes posted by brands achieved that purpose, too.",
+   "note": "United States; June 2022; 1,059 respondents",
+   "source": "Latana",
+   "kind": "categorical",
+   "categories": [
+    "Offers / promotions",
+    "Brand-related news",
+    "Memes / jokes",
+    "Brand ambassadors",
+    "None of these"
+   ],
+   "series": [
+    {
+     "name": "Women",
+     "values": [
+      0.76,
+      0.43,
+      0.26,
+      0.19,
+      0.11
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.7,
+      0.5,
+      0.27,
+      0.22,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Types of drivers that made consumers in the United States support creators in 2021 and 2023",
+   "short": "Types of drivers that made consumers support creators in the U.S. 2021-2023",
+   "unit": "",
+   "description": "During a survey carried out among consumers in the United States in April 2023, around 29 percent of respondents stated that they supported creators online because they inspired them - to compare, 22 percent stated the same two years earlier. Another five percent said they supported creators because of fear of missing out (F.O.M.O).",
+   "note": "United States; April 2023; 1,000 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "I support them under any circumstances",
+    "I trust what they advertise",
+    "F.O.M.O",
+    "My friends do the same",
+    "They inspire me",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.261,
+      0.187,
+      0.114,
+      0.144,
+      0.223,
+      0.071
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.202,
+      0.123,
+      0.05,
+      0.097,
+      0.29,
+      0.054
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 51,
+   "title": "Types of products made by influencers that consumers bought in the United States as of April 2023, by category",
+   "short": "Types of products made by influencers that consumers bought in the U.S. 2023",
+   "unit": "",
+   "description": "During a survey carried out among consumers in the United States in April 2023, around 31 percent of respondents who said they had bought a product made and released by an influencer stated that they had bought influencer-made merchandise. Another 19 percent said they purchased beauty products released by influencers.",
+   "note": "United States; April 2023; 1,000 respondents; 18 years and older; among respondents who have bought a product made and released by an influencer",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "Merchandise (e.g. t-shirt, jacket, toy collectible)",
+    "Beauty (e.g. lipstick)",
+    "Food (e.g. burger)",
+    "Beverage (e.g. coffee)",
+    "Supplement (e.g. hair vitamins)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.309,
+      0.189,
+      0.187,
+      0.175,
+      0.141
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 52,
+   "title": "Amounts of money that consumers in the United States paid to support creators in 2021 and 2023",
+   "short": "Amounts of money consumers are willing to pay to support creators in the U.S. 2021-23",
+   "unit": "",
+   "description": "During a survey carried out among consumers in the United States in April 2023, around 20 percent of respondents stated that paid between 10 and 20 U.S. dollars to support their favorite creators. As a comparison, 17 percent of respondents shared that they spend between five and ten U.S. dollars to tip creators two years earlier, in 2021, while this value significantly increased in 2023 - up to 40 percent paid similar amounts.",
+   "note": "United States; April 2023; 1,000 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "Up to 5$",
+    "5$ to 10$",
+    "10$ to 20$",
+    "20$ to 50$",
+    "More than 50$"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.46,
+      0.17,
+      0.19,
+      0.14,
+      0.05
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.2061,
+      0.4081,
+      0.2364,
+      0.103,
+      0.0466
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 53,
+   "title": "Ways in which consumers in the United States prefer to support creators in 2021 and 2023",
+   "short": "Way in which consumers prefer to support creators in the U.S. 2021-2023",
+   "unit": "",
+   "description": "During a survey carried out among consumers in the United States in April 2023, around 15 percent of respondents stated that they preferred to support their favorite creators by buying their merchandise - as a comparison, also 15 percent of respondents stated the same two years earlier. Another 22 percent said they supported creators on by streaming their music on various platforms, such as Spotify, in 2023.",
+   "note": "United States; April 2023; 1,000 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "Streaming their music (Spotify, SoundCloud, Apple Music)",
+    "Streaming their podcast",
+    "Buying merchandise",
+    "Buying products from companies they created",
+    "Tipping them on platforms",
+    "Not skipping ads on their videos",
+    "Buying products they sponsor",
+    "Other (sum)"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.218,
+      0.167,
+      0.15,
+      0.078,
+      0.061,
+      0.063,
+      0.051,
+      0.196
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.222,
+      0.17,
+      0.152,
+      0.079,
+      0.062,
+      0.064,
+      0.052,
+      0.199
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 54,
+   "title": "Platforms on which consumers in the United States tipped/subscribed to support creators in 2021 and 2023",
+   "short": "Platforms where consumers support creators in the U.S. 2023",
+   "unit": "",
+   "description": "During a survey carried out among consumers in the United States in April 2023, around 8 percent of respondents stated that they tipped or subscribed to OnlyFans to support creators online - as a comparison, around three percent stated the same two years earlier, in 2021. Another almost 26 percent said they supported creators on YouTube in 2023.",
+   "note": "United States; April 2023; 1,000 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "YouTube",
+    "Instagram",
+    "Twitch",
+    "OnlyFans",
+    "Twitter",
+    "Snapchat",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.201,
+      0.289,
+      0.218,
+      0.218,
+      0.029,
+      0.087,
+      0.049,
+      0.053
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.204,
+      0.258,
+      0.13,
+      0.142,
+      0.078,
+      0.093,
+      0.084,
+      0.011
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 55,
+   "title": "Share of consumers who bought a product or service made by an influencer in the United States as of April 2023",
+   "short": "Consumers who bought a product/service made by influencers U.S. 2023",
+   "unit": "",
+   "description": "During a survey carried out among consumers in the United States in April 2023, exactly half of the respondents said they had purchased a product made and released by an influencer, while the other half said they had not done so.",
+   "note": "United States; April 2023; 1,000 respondents; 18 years and older",
+   "source": "The Influencer Marketing Factory",
+   "kind": "categorical",
+   "categories": [
+    "Yes",
+    "No"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5,
+      0.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 56,
+   "title": "Millennials' opinions on how much they trust product/brand recommendations made by social media influencers worldwide in 2023",
+   "short": "Millennials' trust on product/brand recommendation made by influencers worldwide 2023",
+   "unit": "",
+   "description": "As of March 2023, nearly 50 percent of 10 millennials worldwide found influencers' recommendations of a brand or product more engaging than regular advertisements. For 36 percent of the respondents, influencer recommendations were also considered more trustworthy than average ads. According to the same report, millennials ranked reliability as the most wanted quality in a brand.",
+   "note": "Worldwide; March 2023; 3,700 respondents; 27-40 years; in 12 markets",
+   "source": "GWI Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Influencer recommendations are more engaging than regular ads",
+    "I'm likely to purchase a product recommended by influencers",
+    "I follow influencers who regularly promote products/brands",
+    "I'm happy with the volume of promoted products/brands I see from influencers",
+    "Influencers are knowledgeable about the products they recommend",
+    "Recommendations from influencers are more informative than from celebrities",
+    "Influencer recommendations are more trustworthy than regular ads"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.49,
+      0.45,
+      0.44,
+      0.41,
+      0.4,
+      0.4,
+      0.36
+     ]
+    }
+   ]
+  }
+ ]
+}

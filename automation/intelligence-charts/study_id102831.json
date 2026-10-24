@@ -1,0 +1,1609 @@
+{
+ "studyId": "102831",
+ "study": "dietary supplements and functional foods worldwide",
+ "file": "research/statista/Health & Wellness/study_id102831_dietary-supplements-and-functional-foods-worldwide.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Size of the worldwide market for dietary supplements from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Size of the worldwide market for dietary supplements 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The global dietary supplement market is forecast to reach a market value of 185.1 billion U.S. dollars in 2025. In 2021, it was estimated to be worth around 137 billion U.S. dollars. The market has been growing since 2018 and is expected to continue to grow till 2028.",
+   "note": "Worldwide; 2018 to 2028; *Year of data release Read more",
+   "source": "Adroit Market Research; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      112.3,
+      119.7,
+      128.3,
+      137,
+      146.8,
+      158,
+      170.3,
+      185.1,
+      201.1,
+      218.4,
+      239.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Value of the dietary supplements market worldwide in 2018 and 2020 with a forecast to 2026, by region (in billion U.S. dollars)",
+   "short": "Regional breakdown of the size of the global dietary supplements market 2018-2026",
+   "unit": "billion U.S. dollars",
+   "description": "Between 2018 and 2020, the North American dietary supplements market grew from 42.6 to 50.7 billion U.S. dollars. The market is projected to grow further and reach about 72 billion U.S. dollars by 2026. The Asia-Pacific market in 2026 is forecast to be about 20 billion U.S. dollars smaller than its NA counterpart. Europe has the smallest market of the regions depicted here and it is expected to stay that way.",
+   "note": "Worldwide; 2018, 2020, 2026; * Forecast Read more",
+   "source": "Reports And Data; Statista estimates",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2020",
+    "2026*"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      42.56,
+      50.68,
+      72.06
+     ]
+    },
+    {
+     "name": "Asia-Pacific",
+     "values": [
+      31.28,
+      36.82,
+      52.07
+     ]
+    },
+    {
+     "name": "Europe",
+     "values": [
+      25.93,
+      31.67,
+      47.71
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Size of the worldwide functional food and beverage market from 2020 to 2021 with a forecast to 2028 (in billion U.S. dollars)",
+   "short": "Size of the worldwide functional food and beverage market 2020-2028",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the global functional foods and beverage market was worth 281.14 billion U.S. dollars. The market is predicted to grow at a compound annual growth rate of about 9.5 percent between 2021 and 2028. For 2028, the market is forecast to be worth over half a trillion U.S. dollars.",
+   "note": "Worldwide; 2020 to 2021; * Forecasts. Data for years 2022 to 2027 has been calculated by Statista using a CAGR with starting and end points provided by the source. Read more",
+   "source": "Fortune Business Insights; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      258.8,
+      281.14,
+      307.77,
+      336.91,
+      368.82,
+      403.75,
+      441.98,
+      483.84,
+      529.66
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Revenue of the vitamins & minerals market worldwide from 2020 to 2029 (in billion U.S. dollars)",
+   "short": "Revenue of the vitamins & minerals industry worldwide 2020-2029",
+   "unit": "billion U.S. dollars",
+   "description": "The global revenue in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously increase between 2024 and 2029 by in total 12.3 billion U.S. dollars (+38.52 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 44.18 billion U.S. dollars and therefore a new peak in 2029. Notably, the revenue of the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was continuously increasing over the past years.",
+   "note": "Worldwide; 2020 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23.56,
+      25.89,
+      27.5,
+      29.7,
+      31.93,
+      34.24,
+      36.7,
+      39.2,
+      41.69,
+      44.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Forecast of the worldwide probiotic supplements market value from 2017 to 2027 (in million U.S. dollars)",
+   "short": "Forecast of the global probiotic supplements market value 2017-2027",
+   "unit": "million U.S. dollars",
+   "description": "The global market for probiotic supplements is forecast to increase from 1.5 billion U.S. dollars in 2019 to 3.3 billion in 2027. This would constitute more than a doubling of market values in that time frame. Between 2017 and 2020, market values grew by almost 600 million U.S. dollars.",
+   "note": "Worldwide; 2017 to 2027; * Forecast released Dec 2020.",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1216.3,
+      1343.6,
+      1527.6,
+      1803.8,
+      2016.6,
+      2228.9,
+      2503.9,
+      2700.4,
+      2910.5,
+      3099.4,
+      3282.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Import value of vitamins worldwide in 2022, by country (in million U.S. dollars)",
+   "short": "Import value of vitamins worldwide in 2022, by country",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, the United States was the leading worldwide importer of vitamin products in the world. The country imported vitamins worth 1.6 billion U.S. dollars. Three European countries followed the U.S. in import values of vitamins. Germany, the Netherlands, and France had a combined import value of slightly more than the U.S. imports.",
+   "note": "Worldwide; 2022",
+   "source": "UN Comtrade",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Germany",
+    "Netherlands",
+    "France",
+    "Brazil",
+    "Canada",
+    "Belgium",
+    "Spain",
+    "Japan",
+    "China",
+    "India"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      1556,
+      751,
+      518,
+      347,
+      315,
+      286,
+      284,
+      277,
+      243,
+      205,
+      199
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Export value of vitamins worldwide in 2021, by country (in million U.S. dollars)",
+   "short": "Export value of vitamins worldwide in 2021, by country",
+   "unit": "million U.S. dollars",
+   "description": "The leading global exporter of vitamins in 2021 was China. The country exported approximately 3.7 billion U.S. dollars worth of vitamins and vitamin preparations across the globe. U.S. exports had a value of less than a third of Chinese exports and came to about one billion U.S. dollars.",
+   "note": "Worldwide; 2021",
+   "source": "UN Comtrade",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "United States",
+    "France",
+    "Germany",
+    "Netherlands",
+    "Australia",
+    "Switzerland",
+    "India",
+    "Singapore",
+    "Italy"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3702,
+      1020,
+      460,
+      448,
+      423,
+      359,
+      398,
+      293,
+      212,
+      142
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Import quantities of vitamins worldwide in 2021, by country (in kilograms)",
+   "short": "Import volume of vitamins worldwide in 2021, by country",
+   "unit": "kilograms",
+   "description": "In 2021, seven of the leading ten importers of vitamins were European Countries. However, at 120,079 kilograms, imports to the United States were the highest volume of any country on the globe. The Netherlands was the leading European importer measured by volume with total imports amounting to 38,352 kilograms of vitamins.",
+   "note": "Worldwide; 2021",
+   "source": "UN Comtrade Import volume in metric tons",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Germany",
+    "Netherlands",
+    "Belgium",
+    "France",
+    "Brazil",
+    "Spain",
+    "Japan",
+    "Italy",
+    "United Kingdom",
+    "Indonesia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      120079,
+      55769,
+      39479,
+      30510,
+      27857,
+      21348,
+      21348,
+      20268,
+      17966,
+      17954,
+      17944
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Export quantities of vitamins worldwide in 2022, by country (in million kilograms)",
+   "short": "Export volume of vitamins worldwide in 2022, by country",
+   "unit": "million kilograms",
+   "description": "The leading global exporter of vitamins in 2022 was the China. The country exported almost 342 million kilograms of vitamins and vitamin preparations across the globe. The next biggest exporter of vitamins was the Netherlands, with nearly 70 million kilograms.",
+   "note": "Worldwide; 2022",
+   "source": "UN Comtrade Export volume in million kilograms",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "Netherlands",
+    "United States",
+    "Australia",
+    "Germany",
+    "India",
+    "France",
+    "Belgium",
+    "Switzerland",
+    "Spain",
+    "South Africa"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      341.93,
+      70.09,
+      41.3,
+      28.38,
+      26.96,
+      19.25,
+      17.61,
+      17.16,
+      15.46,
+      7.79,
+      6.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Size of the worldwide functional food and beverage market from 2020 to 2021 with a forecast to 2028 (in billion U.S. dollars)",
+   "short": "Size of the worldwide functional food and beverage market 2020-2028",
+   "unit": "billion U.S. dollars",
+   "description": "In 2021, the global functional foods and beverage market was worth 281.14 billion U.S. dollars. The market is predicted to grow at a compound annual growth rate of about 9.5 percent between 2021 and 2028. For 2028, the market is forecast to be worth over half a trillion U.S. dollars.",
+   "note": "Worldwide; 2020 to 2021; * Forecasts. Data for years 2022 to 2027 has been calculated by Statista using a CAGR with starting and end points provided by the source. Read more",
+   "source": "Fortune Business Insights; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      258.8,
+      281.14,
+      307.77,
+      336.91,
+      368.82,
+      403.75,
+      441.98,
+      483.84,
+      529.66
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Size of the functional food market worldwide from 2019 to 2027 (in billion U.S. dollars)",
+   "short": "Size of the functional food market worldwide 2019-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2019, the worldwide functional food market had an estimated size of around 178 billion U.S. dollars. Among other products, this covers vitamins and minerals, proteins, amino acids, probiotics, prebiotics, and dietary fibers. In 2027, the market size is expected to reach around 268 billion U.S. dollars.",
+   "note": "Worldwide; 2019 to 2027; * Forecast. For the Statista estimate an exponential development of the values between 2019 and 2027 was assumed to estimate the annual values. The values for 2019 and 2027 were provided by the source. [...] Read more",
+   "source": "Allied Market Research; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020*",
+    "2021*",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      177.77,
+      187.12,
+      196.97,
+      207.33,
+      218.24,
+      229.72,
+      241.81,
+      254.53,
+      267.92
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Market value of functional protein worldwide from 2019 to 2026 (in billion U.S. dollars)",
+   "short": "Functional protein market value worldwide 2019-2026",
+   "unit": "billion U.S. dollars",
+   "description": "This statistic shows the value of functional protein market worldwide from 2019 to 2026. In 2019, the global functional protein market was estimated to value at approximately five billion U.S. dollars.",
+   "note": "Worldwide; 2019; * Figures are forecasts and have been estimated using the compound annual growth rate provided by the source. **Forecast figure provided by the source. Read more",
+   "source": "Fior Markets; Statista estimates",
+   "kind": "timeseries",
+   "categories": [
+    "2019*",
+    "2020*",
+    "2021*",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026**"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.99,
+      5.34,
+      5.71,
+      6.1,
+      6.53,
+      6.98,
+      7.46,
+      7.98
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Size of the dietary fibers market worldwide from 2019 to 2027 (in billion U.S. dollars)",
+   "short": "Size of the dietary fibers market worldwide 2019-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2019, the global market size of the dietary fibers market was estimated to be about 5.08 billion U.S. dollars. The market will grow to 10.22 billion by 2027 according to model predictions. The compound annual growth rate for the 2019 to 2027 time period is 10.5 percent.",
+   "note": "Worldwide; 2019 to 2027; *Forecast in September 2020. For the Statista estimate an exponential development of the values between 2019 and 2027 was assumed to estimate the annual values. The values for 2019 and 2027 were provided [...] Read more",
+   "source": "Statista; Verified Market Research",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020*",
+    "2021*",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.6,
+      5.08,
+      5.62,
+      6.21,
+      6.86,
+      7.58,
+      8.37,
+      9.25,
+      10.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Revenue of the vitamins & minerals market worldwide by country in 2023 (in million U.S. dollars)",
+   "short": "Revenue of the vitamins & minerals market worldwide by country 2023",
+   "unit": "million U.S. dollars",
+   "description": "China is leading the ranking by revenue in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market, recording 4.8 billion U.S. dollars. Following closely behind is the United States with 4.4 billion U.S. dollars, while Sweden is trailing the ranking with 5.36 million U.S. dollars, resulting in a difference of 4.8 billion U.S. dollars to the ranking leader, China.",
+   "note": "Worldwide; Jan 1st to Dec 31st 2023",
+   "source": "Statista; Statista Consumer Market Insights Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "China",
+    "United States",
+    "India",
+    "Australia",
+    "Brazil",
+    "Japan",
+    "Canada",
+    "Poland",
+    "United Kingdom",
+    "Indonesia",
+    "South Korea",
+    "Philippines",
+    "Russia",
+    "Germany",
+    "Israel"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4820.57,
+      4369.39,
+      2402.96,
+      1302.1,
+      1175.49,
+      1024.59,
+      937.19,
+      804.08,
+      723.66,
+      677.32,
+      665.95,
+      515.86,
+      512.94,
+      392.19,
+      360.52
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Revenue growth of the vitamins & minerals market worldwide from 2020 to 2029",
+   "short": "Revenue growth of vitamins & minerals worldwide 2020-2029",
+   "unit": "",
+   "description": "The global revenue change in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously decrease between 2024 and 2029 by in total 1.5 percentage points. According to this forecast in 2029, the indicator will have decreased for the sixth consecutive year to 5.98 percent.",
+   "note": "Worldwide; 2020 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0319,
+      0.0989,
+      0.0621,
+      0.0801,
+      0.075,
+      0.0726,
+      0.0718,
+      0.0679,
+      0.0636,
+      0.0598
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Revenue per capita of the vitamins & minerals market worldwide from 2020 to 2029 (in U.S. dollars)",
+   "short": "Revenue per capita of vitamins & minerals worldwide 2020-2029",
+   "unit": "U.S. dollars",
+   "description": "The global average revenue per capita in the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was forecast to continuously increase between 2024 and 2029 by in total 1.4 U.S. dollars (+33.98 percent). After the ninth consecutive increasing year, the indicator is estimated to reach 5.48 U.S. dollars and therefore a new peak in 2029. Notably, the average revenue per capita of the 'Vitamins & Minerals' segment of the otc pharmaceuticals market was continuously increasing [...]",
+   "note": "Worldwide; 2020 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3.14,
+      3.42,
+      3.61,
+      3.86,
+      4.12,
+      4.38,
+      4.66,
+      4.94,
+      5.21,
+      5.48
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Leading supplements and vitamins used by supplement consumers in the U.S., the UK, and China in 2019",
+   "short": "Leading supplements & vitamins consumed in the U.S., the UK, and China in 2019",
+   "unit": "",
+   "description": "Vitamin C was the leading supplement consumed by survey respondents in China, the United Kingdom, and the United States. The representative survey found that 46 percent of all those respondents who had consumed any supplement in the past 30 days had consumed Vitamin C in 2019. Vitamin D and Calcium ranked second and third among respondents with 41 and 34 percent of respondents stating they consumed these supplements, respectively.",
+   "note": "China, United Kingdom, United States; May 2019; 2257*; 18-70 years; Consumers who have used a dietary supplement in the last thirty days.; * (U.S. = 753, UK = 750, China = 756). The survey is representative. Read more",
+   "source": "Glanbia; NutraIngredients-USA.com",
+   "kind": "categorical",
+   "categories": [
+    "Vitamin C",
+    "Vitamin D",
+    "Calcium",
+    "B Vitamins",
+    "Iron",
+    "Omega-3s",
+    "Fiber",
+    "Probiotics",
+    "Magnesium",
+    "Vitamin A"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.46,
+      0.41,
+      0.34,
+      0.32,
+      0.29,
+      0.28,
+      0.24,
+      0.23,
+      0.23,
+      0.21
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Leading reasons to consume supplements and vitamins among supplement consumers in the U.S., the UK, and China in 2019",
+   "short": "Leading reasons to consume supplements & vitamins in the U.S., the UK & China in 2019",
+   "unit": "",
+   "description": "General Health concerns were the leading reason to take vitamins and other supplements among survey respondents in China, the United Kingdom, and the United States in 2019. Viewed individually heart health trumped this concern slightly among Chinese respondents, while general health outpaced other concerns in the U.S. and in the UK. Overall 43 percent of respondents named general health as a reason to take nutritional supplements. Respondents were representative of the larger [...]",
+   "note": "China, United Kingdom, United States; May 2019; 2257*; 18-70 years; Consumers who have used a dietary supplement in the last thirty days.; * (U.S. = 753, UK = 750, China = 756). The survey is representative. Read more",
+   "source": "Glanbia; NutraIngredients-USA.com Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "General health",
+    "Heart health",
+    "Healthy aging",
+    "Mental health, brain/cognitive health",
+    "Joint health",
+    "Digestive health",
+    "Bone health",
+    "Sleep support",
+    "Beauty support",
+    "Muscle health",
+    "Sexual health",
+    "Eye health",
+    "Women specific"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.43,
+      0.31,
+      0.25,
+      0.24,
+      0.24,
+      0.23,
+      0.2,
+      0.18,
+      0.17,
+      0.16,
+      0.12,
+      0.12,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Forecast of the worldwide probiotic supplements market value from 2017 to 2027 (in million U.S. dollars), by region",
+   "short": "Forecast of the global probiotic supplements market value 2017-2027, by region",
+   "unit": "",
+   "description": "The markets for probiotic supplements in different regions across the world are forecast to grow at somewhat similar rates. North America, Europe, and Asia-Pacific are forecast to remain the three largest regions for probiotic supplements, with a significant gap in market share in comparison to Latin America, the Middle East, and Africa. Europe is forecast to grow its estimated market value of 365 million U.S. dollars in 2017 to approximately 920.6 million in 2027.",
+   "note": "Worldwide; 2017 to 2027; * Forecast released Dec 2020.",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "North America",
+     "values": [
+      547.3,
+      595,
+      688.6,
+      820,
+      933.9,
+      1029.2,
+      1147,
+      1226.9,
+      1306.1,
+      1393.9,
+      1483.1
+     ]
+    },
+    {
+     "name": "Europe",
+     "values": [
+      364.9,
+      406.7,
+      452.8,
+      523,
+      560.5,
+      612.7,
+      690.5,
+      752.4,
+      829,
+      873.2,
+      920.6
+     ]
+    },
+    {
+     "name": "Asia-Pacific",
+     "values": [
+      243.3,
+      272.7,
+      307.9,
+      369.6,
+      421.4,
+      474.3,
+      540.7,
+      585.6,
+      629.9,
+      677.4,
+      717.4
+     ]
+    },
+    {
+     "name": "Latin America",
+     "values": [
+      42.6,
+      47.2,
+      52.9,
+      63,
+      70.1,
+      79.6,
+      89.6,
+      96.5,
+      102.4,
+      108.2,
+      112
+     ]
+    },
+    {
+     "name": "The Middle East and Africa",
+     "values": [
+      18.2,
+      21.9,
+      25.4,
+      28.1,
+      30.7,
+      33.2,
+      36,
+      38.9,
+      43,
+      46.6,
+      48.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Forecast of the worldwide probiotic supplements market value in online stores from 2017 to 2027 (in million U.S. dollars)",
+   "short": "Forecast of the online global probiotic supplements market value 2017-2027",
+   "unit": "million U.S. dollars",
+   "description": "The global market for probiotic supplements in online stores is forecast to increase from 363.4 million U.S. dollars in 2019 to 955 million in 2027. This would constitute more than a doubling of market values in that time frame. Between 2017 and 2020, market values grew by around 180 million U.S. dollars.",
+   "note": "Worldwide; 2017 to 2027; * Forecast released Dec 2020.",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      268.9,
+      305.9,
+      363.4,
+      450.6,
+      527.2,
+      601.8,
+      700.3,
+      773.9,
+      852.7,
+      912.7,
+      955
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Forecast of the worldwide dry probiotic supplements market value from 2017 to 2027 (in million U.S. dollars), by type",
+   "short": "Forecast of the global dry probiotic supplements market value 2017-2027, by type",
+   "unit": "",
+   "description": "The various types of dry probiotic supplements on the global market are forecast to have similar compound annual growth rates, between 9.13 percent for tablets and 10.76 percent for chewable supplements. In 2017, capsules were estimated to have more than double the sales than any other type of probiotic supplement. The market value of capsules in 2027 is forecast to be 1.47 billion U.S. dollars.",
+   "note": "Worldwide; 2017 to 2027; * Forecast released Dec 2020.",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Capsule",
+     "values": [
+      555.2,
+      606.1,
+      684.4,
+      813.9,
+      911.8,
+      1000,
+      1109.1,
+      1195.6,
+      1303.4,
+      1395.1,
+      1467.7
+     ]
+    },
+    {
+     "name": "Powder",
+     "values": [
+      222.1,
+      245.4,
+      277.3,
+      324.4,
+      360.9,
+      397.3,
+      443.7,
+      472.9,
+      507.8,
+      534.2,
+      555.6
+     ]
+    },
+    {
+     "name": "Chewable",
+     "values": [
+      141.3,
+      154.3,
+      179.9,
+      213.7,
+      242.4,
+      273,
+      312.4,
+      332.1,
+      353.5,
+      367.4,
+      387.2
+     ]
+    },
+    {
+     "name": "Tablet",
+     "values": [
+      40.4,
+      43,
+      49.7,
+      57.7,
+      64.6,
+      72.6,
+      83,
+      87.2,
+      91.5,
+      93.7,
+      94.5
+     ]
+    },
+    {
+     "name": "Others",
+     "values": [
+      50.5,
+      55.1,
+      63.6,
+      74.9,
+      84.3,
+      94.2,
+      107.1,
+      113.7,
+      121.1,
+      126,
+      129.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Forecast of the worldwide probiotic supplements market value from 2017 to 2027 (in million U.S. dollars), by application",
+   "short": "Forecast of the global probiotic supplements market value 2017-2027, by application",
+   "unit": "",
+   "description": "In 2020, the worldwide market for probiotic supplements used for gastrointestinal health was worth 1.1 billion U.S. dollars. It is predicted to grow to 2.1 billion U.S. dollars. The markets for all types of applications are forecast to grow with the smallest growth predicted for the urinary tract health items.",
+   "note": "Worldwide; 2017 to 2027; ** Forecast released Dec 2020.; * The Source notes that other Applications include Skin health, prostate health, cardiovascular health, stress and mood maintenance, metabolic health, blood sugar level [...] Read more",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020**",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Gastrointestinal Health",
+     "values": [
+      732.2,
+      827.8,
+      947,
+      1133.7,
+      1282.2,
+      1408.9,
+      1585.5,
+      1723.6,
+      1868.1,
+      1993.4,
+      2095.4
+     ]
+    },
+    {
+     "name": "Immune Health",
+     "values": [
+      266.7,
+      278.6,
+      310.6,
+      357.3,
+      393,
+      440.6,
+      496.3,
+      524.8,
+      557.5,
+      590.3,
+      636.2
+     ]
+    },
+    {
+     "name": "Vaginal Health",
+     "values": [
+      60.2,
+      65.6,
+      74.6,
+      84.2,
+      89,
+      96.8,
+      104.9,
+      110.9,
+      117.8,
+      124.5,
+      132.7
+     ]
+    },
+    {
+     "name": "Urinary Tract Health",
+     "values": [
+      48.6,
+      52.7,
+      58.3,
+      64.1,
+      67.2,
+      71.7,
+      76.3,
+      79,
+      82.4,
+      85.4,
+      89.7
+     ]
+    },
+    {
+     "name": "Oral Health",
+     "values": [
+      28.2,
+      31,
+      36.4,
+      42.9,
+      45.7,
+      50.2,
+      54.9,
+      58.1,
+      61.8,
+      65.3,
+      69
+     ]
+    },
+    {
+     "name": "Others*",
+     "values": [
+      80.4,
+      88,
+      106,
+      121.7,
+      139.4,
+      160.6,
+      185.9,
+      204,
+      222.9,
+      240.5,
+      259.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Forecast of the worldwide probiotic supplements market value from 2017 to 2027 (in million U.S. dollars), by form",
+   "short": "Worldwide probiotic supplements market value 2017-2027, by form",
+   "unit": "",
+   "description": "The global market value of probiotic supplements in the form of liquids is predicted to increase from approximately 207 million U.S. dollars in 2017 to nearly 648 million in 2027. In comparison, the market share of probiotic supplements in dry form is predicted to grow from approximately one billion in 2017 to nearly 2.6 billion in 2027.",
+   "note": "Worldwide; 2017 to 2027; * Forecast released Dec 2020.",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020*",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Liquid",
+     "values": [
+      206.8,
+      239.7,
+      272.7,
+      319.2,
+      352.5,
+      391.9,
+      448.5,
+      498.9,
+      533.1,
+      583.1,
+      647.9
+     ]
+    },
+    {
+     "name": "Dry",
+     "values": [
+      1009.5,
+      1103.9,
+      1254.8,
+      1484.6,
+      1664.1,
+      1837,
+      2055.3,
+      2201.5,
+      2377.4,
+      2516.3,
+      2634.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Forecast of the worldwide probiotic supplements market value from 2017 to 2027 (in million U.S. dollars), by source",
+   "short": "Forecast of the global probiotic supplements market value 2017-2027, by source",
+   "unit": "",
+   "description": "When dividing the forecast of the market for probiotic supplements by their sources, an increase in products that have bacteria as their source is predicted. Such products are forecast to grow from approximately 1.1 billion U.S. dollars in 2017 to nearly 3 billion in 2027. This translates to a compound annual growth rate (CAGR) of 10.69 percent. By contrast, products that have yeast as their source are estimated to grow from 110 million U.S. dollars to 224 million in 2027, which is a [...]",
+   "note": "Worldwide; 2017 to 2027",
+   "source": "Netscribes",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027"
+   ],
+   "series": [
+    {
+     "name": "Bacteria",
+     "values": [
+      1106.8,
+      1225.8,
+      1397.1,
+      1656.3,
+      1855.9,
+      2056,
+      2314.6,
+      2501.7,
+      2701.9,
+      2882.7,
+      3058.1
+     ]
+    },
+    {
+     "name": "Yeast",
+     "values": [
+      109.5,
+      117.8,
+      130.5,
+      147.6,
+      160.7,
+      173,
+      189.2,
+      198.7,
+      208.6,
+      216.7,
+      224.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Revenue of BASF's Nutrition & Care segment from 2019 to 2023 (in million euros)",
+   "short": "BASF's Nutrition & Care segment revenue 2019-2023",
+   "unit": "million euros",
+   "description": "BASF's revenue in the Nutrition & Care segment stood at around 6.86 billion euros in 2023. The Nutrition & Care segment of BASF was newly formed in 2019 and consists of the company's Nutrition & Health and Care Chemicals divisions, which serve various aspects of the fast-moving consumer goods market, including food and animal feed, pharmaceuticals, cosmetics, cleaners and detergents.",
+   "note": "Worldwide; 2019 to 2023",
+   "source": "BASF",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6075,
+      6019,
+      6422,
+      8066,
+      6858
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Distribution of Bayer Group's net sales from 2021 to 2023, by segment",
+   "short": "Distribution of Bayer Group's net sales 2021-2023 by segment",
+   "unit": "",
+   "description": "This statistic depicts the distribution of Bayer Group's net sales from 2021 to 2023, by segment. Bayer consists of following main segments: Pharmaceuticals, Consumer Health, and Crop Science. Covestro (ex-MaterialScience) and Animal Health were spun-off during 2015 and 2019, respectively. In 2023, Bayer Pharmaceuticals generated 38 percent of Bayer's total net sales.",
+   "note": "Worldwide",
+   "source": "Bayer",
+   "kind": "categorical",
+   "categories": [
+    "Crop Science",
+    "Pharmaceuticals",
+    "Consumer Health",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.458,
+      0.415,
+      0.12,
+      0.007
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.496,
+      0.379,
+      0.12,
+      0.005
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.488,
+      0.38,
+      0.127,
+      0.005
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Revenue of Sanofi by segment from 2014 to 2023 (in million euros)",
+   "short": "Sanofi - revenue by segment 2014-2023",
+   "unit": "million euros",
+   "description": "In 2023, French pharmaceutical and healthcare company Sanofi generated approximately 38 billion euros through its biopharmaceutical segment. Sanofi’s consumer healthcare segment earned the company about 5.2 billion euros in that year.",
+   "note": "Worldwide; * From 2023 on called \"Biopharma\" (\"Pharmaceuticals\" + \"Vaccines\"). ** During 2016, the Animal Health and the Consumer Healthcare segments were the objects of a swap deal between Sanofi and Boehringer Ingelheim. Since [...] Read more",
+   "source": "Sanofi",
+   "kind": "timeseries",
+   "categories": [
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Pharmaceuticals*",
+     "values": [
+      27720,
+      29799,
+      25914,
+      25173,
+      24685,
+      25700,
+      25674,
+      26970,
+      30688,
+      37890
+     ]
+    },
+    {
+     "name": "Vaccines*",
+     "values": [
+      3974,
+      4261,
+      4577,
+      5101,
+      5118,
+      5731,
+      5973,
+      6323,
+      7229
+     ]
+    },
+    {
+     "name": "Consumer Healthcare**",
+     "values": [
+      3330,
+      4798,
+      4660,
+      4695,
+      4394,
+      4468,
+      5080,
+      5180
+     ]
+    },
+    {
+     "name": "Animal Health**",
+     "values": [
+      2076,
+      2515,
+      2708
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Revenue of Archer Daniels Midland (ADM) in 2022, by segment (in million U.S. dollars)",
+   "short": "Archer Daniels Midland's revenue 2022, by segment",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the revenue of agricultural company Archer Daniels Midland (ADM) in 2022, by segment. The animal nutrition segment generated revenue of about 3.9 billion U.S. dollars in that year. ADM is an U.S.-based global food processing and commodity trading corporation. The company's special focus lays on processing of oilseeds and soybeans. ADM is headquartered in Decatur, Illinois.",
+   "note": "Worldwide; Fiscal year ended on December 31, 2022",
+   "source": "Archer Daniels Midland",
+   "kind": "categorical",
+   "categories": [
+    "Agricultural services and oilseeds",
+    "Carbohydrate Solutions",
+    "Human nutrition",
+    "Animal nutrition",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      79563,
+      13961,
+      3769,
+      3867,
+      396
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Abbott Laboratories' Nutritionals segment revenue from 2019 to 2023, by category (in million U.S. dollars)",
+   "short": "Abbott's Nutritional segment revenue by category 2019-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows Abbott Laboratories' revenue of the Nutritionals segment from 2019 to 2023, broken down by category. In 2023, the International Pediatric Nutritionals segment generated approximately two billion U.S. dollars.",
+   "note": "Worldwide",
+   "source": "Abbott Laboratories",
+   "kind": "categorical",
+   "categories": [
+    "International Pediatric Nutritionals",
+    "U.S. Pediatric Nutritionals",
+    "International Adult Nutritionals",
+    "U.S. Adult Nutritionals"
+   ],
+   "series": [
+    {
+     "name": "2019",
+     "values": [
+      2282,
+      1879,
+      2017,
+      1231
+     ]
+    },
+    {
+     "name": "2020",
+     "values": [
+      2140,
+      1987,
+      2228,
+      1292
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      2106,
+      2192,
+      2632,
+      1364
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      1919,
+      1562,
+      2621,
+      1357
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      1957,
+      1977,
+      2784,
+      1436
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Glanbia's revenue from 2016 to 2021, by segment (in million euros)",
+   "short": "Revenue of Glanbia by segment 2016-2021",
+   "unit": "million euros",
+   "description": "This statistic displays the global revenue of Glanbia from 2016 to 2021, by segment. In 2021, Glanbia generated some 1.3 billion euros of revenue through its Global Performance Nutrition segment. Glanbia plc is a manufacturer of sports nutrition, dairy products, vitamins, minerals, and other supplements. The company is headquartered in Kilkenny, Ireland.",
+   "note": "Worldwide",
+   "source": "Glanbia",
+   "kind": "categorical",
+   "categories": [
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020***",
+    "2021**"
+   ],
+   "series": [
+    {
+     "name": "Global Performance Nutrition",
+     "values": [
+      1007.5,
+      1121.1,
+      1179.6,
+      1363.8,
+      1138,
+      1303.1
+     ]
+    },
+    {
+     "name": "Global Nutritionals*",
+     "values": [
+      1224.2,
+      1266,
+      1990.9,
+      2511.9,
+      2685.1,
+      2893.8
+     ]
+    },
+    {
+     "name": "Joint Ventures & Associates**",
+     "values": [
+      820.8,
+      1093.4,
+      1283.8,
+      1476.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Perrigo Company's revenue from 2018 to 2023, by segment (in million U.S. dollars)",
+   "short": "Revenue of Perrigo by segment 2018-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic displays the revenue of the Perrigo Company by segment from 2018 to 2023. In 2023, Perrigo generated a total revenue of roughly 4.7 billion U.S. dollars, of which nearly three billion were generated from the Consumer self-care Americas (CSCA) segment. Perrigo Company plc is a manufacturer of pharmaceutical over-the-counter (OTC) products. The company has one of its headquarters in Grand Rapids, Michigan.",
+   "note": "Worldwide; * During 2021, Perrigo sold its generics business. Previous years have not been restated. Read more",
+   "source": "Perrigo",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021*",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Consumer Self-care Americas (CSCA)",
+     "values": [
+      2411.6,
+      2487.7,
+      2693,
+      2693.1,
+      2925.9,
+      2962.3
+     ]
+    },
+    {
+     "name": "Consumer Self-care international (CSCI)",
+     "values": [
+      1495.9,
+      1382.2,
+      1395.2,
+      1445.6,
+      1525.7,
+      1693.3
+     ]
+    },
+    {
+     "name": "Rx Pharmaceuticals",
+     "values": [
+      920.8,
+      967.5,
+      975.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Herbalife's net sales share worldwide in 2022, by product category",
+   "short": "Global net sales share of Herbalife in 2022, by product category",
+   "unit": "",
+   "description": "This statistic depicts Herbalife's net sales share worldwide in 2022, by product category. In 2022, 56.8 percent of Herbalife's net sales came from the company's weight management category.",
+   "note": "Worldwide; 2022",
+   "source": "Herbalife",
+   "kind": "categorical",
+   "categories": [
+    "Weight management",
+    "Targeted nutrition",
+    "Energy, sports & fitness",
+    "Literature, promotional and other",
+    "Outer nutrition"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.568,
+      0.291,
+      0.106,
+      0.019,
+      0.016
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Revenue distribution of Otsuka Holdings Co., Ltd. in fiscal year 2022, by business segment",
+   "short": "Otsuka Holdings' revenue share FY 2022, by segment",
+   "unit": "",
+   "description": "Otsuka Holdings Co., Ltd generated the largest revenue share, around 66 percent, through their pharmaceutical business in the fiscal year 2022. About 25 percent of the revenue was from the nutraceutical business.",
+   "note": "Japan; fiscal year 2022; the company's fiscal year starts on January 1st and ends on December 31 of the stated year",
+   "source": "Otsuka Holdings",
+   "kind": "categorical",
+   "categories": [
+    "Pharmaceutical business",
+    "Nutraceutical business",
+    "Consumer products business",
+    "Other business"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.655,
+      0.251,
+      0.021,
+      0.073
+     ]
+    }
+   ]
+  }
+ ]
+}

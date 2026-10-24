@@ -1,0 +1,687 @@
+{
+ "studyId": "47734",
+ "study": "protein market",
+ "file": "research/statista/study_id47734_protein-market.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 4,
+   "title": "Forecast value of the protein ingredients market worldwide from 2021 to 2032 (in billion U.S. dollars)",
+   "short": "Global animal and plant protein market size 2021-2032",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, the global protein market was valued at over 27.5 billion U.S. dollars. The market is forecast to value around 47.4 billion U.S. dollars by 2030.",
+   "note": "Worldwide; 2022; Animal and plant protein",
+   "source": "Future Market Insights; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030",
+    "2031",
+    "2032"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      26,
+      27.5,
+      29.04,
+      30.66,
+      32.38,
+      34.19,
+      36.1,
+      38.12,
+      40.26,
+      42.51,
+      44.89,
+      47.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 5,
+   "title": "EBITDA of protein food products worldwide in 2022, by select company (in million U.S. dollars)",
+   "short": "EBITDA of protein food products worldwide in 2022, by company",
+   "unit": "million U.S. dollars",
+   "description": "The statistic shows the EBITDA of protein food products worldwide in 2022, by company. EBITDA of Tyson Foods, Inc. amounted to about 5.7 billion U.S. dollars, while Pilgrim's Pride had EBITDA of about 1.6 billion U.S. dollars that year.",
+   "note": "Worldwide; Fiscal year 2022",
+   "source": "JBS; Nasdaq OMX; Pilgrim's; Statista; Tyson Foods EBITDA in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "JBS",
+    "Tyson Foods, Inc.",
+    "Pilgrim's Pride Corporation"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6700,
+      5688,
+      1586
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Estimated animal protein consumption worldwide in 2022, by source (in million metric tons)",
+   "short": "Global animal protein consumption by type 2022",
+   "unit": "million metric tons",
+   "description": "This statistic represents the estimated animal protein consumption worldwide in 2022, by source. In that year, the FAO estimated a volume consumption of 136 million tons of (ready to cook equivalent) poultry worldwide.",
+   "note": "Worldwide; 2022",
+   "source": "FAO; Mowi Consumption in million metric tons",
+   "kind": "categorical",
+   "categories": [
+    "Fish(GWT)*",
+    "Poultry (rtc)",
+    "Pork (cwe)",
+    "Beef (cwe)",
+    "Atlantic salmon (GWT)*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      161,
+      136,
+      121,
+      72,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Growth of protein intake worldwide from 2021 to 2026, by region*",
+   "short": "Growth of protein intake worldwide 2021-2026, by region",
+   "unit": "",
+   "description": "Between 2021 and 2026, it is predicted that China and Hong Kong will increase their protein intake by 10.2 percent compared to the previous five years. The Middle East is expected to increase protein intake by only about 0.7 percent.",
+   "note": "Worldwide; 2022; *Forecast compared to previous five years. Read more",
+   "source": "Euromonitor; IMF; USDEC",
+   "kind": "categorical",
+   "categories": [
+    "China and Hong Kong",
+    "South Asia",
+    "Sub-Saharan Africa",
+    "Southeast Asia",
+    "North Africa",
+    "Middle East",
+    "Latin America",
+    "Mexico",
+    "Japan and Korea",
+    "Australia and New Zealand"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.102,
+      0.062,
+      0.047,
+      0.026,
+      0.009,
+      0.007,
+      0.005,
+      0.002,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Value of the whey protein market worldwide from 2022 to 2032 (in billion U.S. dollars)",
+   "short": "Size of the whey protein market worldwide 2022-2032",
+   "unit": "billion U.S. dollars",
+   "description": "This statistic shows the market size of the whey protein market from 2022 to 2032. In 2022, the global whey protein market was valued at approximately 19.6 billion U.S. dollars and is forecast to reach 40.3 billion U.S. dollars by 2032.",
+   "note": "Worldwide; 2022; * Figure for 2023 to 2032 are calculated based on the cagr given by the source. Read more",
+   "source": "Future Market Insights; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*",
+    "2028*",
+    "2029*",
+    "2030*",
+    "2031*",
+    "2032*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      19.6,
+      21.07,
+      22.6,
+      24.3,
+      26.2,
+      28.1,
+      31.2,
+      32.5,
+      35,
+      37.6,
+      40.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Sports and active nutrition market worldwide from 2022 to 2027 (in billion U.S. dollars)",
+   "short": "Global sports nutrition & supplement market 2022-2027",
+   "unit": "billion U.S. dollars",
+   "description": "The global sports nutrition market and supplements was valued at about 27 billion U.S. dollars in 2022, and is expected to increase in value to over 37 billion U.S. dollars by 2027.",
+   "note": "Worldwide; 2022",
+   "source": "GlobalData; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      27.7,
+      29.4,
+      31.1,
+      33,
+      35,
+      37.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Meat industry value worldwide in 2021 and forecast for 2022 and 2027 (in billion U.S. dollars)",
+   "short": "Global meat products market value 2021-2027",
+   "unit": "billion U.S. dollars",
+   "description": "The value of the global meat sector was estimated to value at 897 billion U.S. dollars in 2021, and was forecast to increase to 1354 billion U.S. dollars by 2027.",
+   "note": "Worldwide; 2022",
+   "source": "MMR; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027**"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      897.5,
+      961.17,
+      1029.35,
+      1102.37,
+      1180.57,
+      1264.31,
+      1354
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Market revenue of plant-based meat worldwide from 2018 to 2028 (in billion U.S. dollars)",
+   "short": "Global meat substitutes market revenue 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the market value of plant-based meat substitutes worldwide was estimated to be worth 10.15 billion U.S. dollars. This figure is estimated to steadily increase over the coming years and reach roughly 16.78 billion in 2028.Meat substitutesMeat substitutes are plant-based products that try to emulate meat products in taste, texture, smell, and appearance. These alternatives exist in a high variety of forms, like the diversity of meat products they are imitating. Plant-based products have [...]",
+   "note": "Worldwide; 2018 to 2023",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.66,
+      5.38,
+      6.63,
+      7.79,
+      8.96,
+      10.15,
+      11.38,
+      12.71,
+      13.99,
+      15.37,
+      16.78
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Per capita meat consumption in the United States in 2022 and 2033, by type (in pounds)",
+   "short": "U.S. per capita meat consumption 2022 and 2033, by type",
+   "unit": "pounds",
+   "description": "In 2022, the most consumed type of meat in the United States was broiler chicken, at about 98.9 pounds per capita. This figure is expected to increase to around 107.5 pounds per capita by 2033.",
+   "note": "United States; 2022; retail weight; * Projected Read more",
+   "source": "Economic Research Service; US Department of Agriculture",
+   "kind": "categorical",
+   "categories": [
+    "2022",
+    "2033*"
+   ],
+   "series": [
+    {
+     "name": "Broilers",
+     "values": [
+      98.9,
+      107.5
+     ]
+    },
+    {
+     "name": "Beef",
+     "values": [
+      59.1,
+      56.9
+     ]
+    },
+    {
+     "name": "Pork",
+     "values": [
+      51.1,
+      52.7
+     ]
+    },
+    {
+     "name": "Turkeys",
+     "values": [
+      14.6,
+      15.4
+     ]
+    },
+    {
+     "name": "Lamb/Mutton",
+     "values": [
+      1.3,
+      1.3
+     ]
+    },
+    {
+     "name": "Veal",
+     "values": [
+      0.2,
+      0.1
+     ]
+    },
+    {
+     "name": "Other chicken",
+     "values": [
+      1.7,
+      1.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Value of the plant-based foods market in the United States from 2018 to 2022 (in billion U.S. dollars)",
+   "short": "Dollar sales of plant-based foods market U.S. 2018-2022",
+   "unit": "billion U.S. dollars",
+   "description": "In the 52 weeks ending January 1, 2023, sales of plant-based foods in the United States were valued at approximately 8 billion U.S. dollars. The market was valued at about 4.8 billion U.S. dollars in 2018.",
+   "note": "United States; 52 weeks ending January 1, 2023",
+   "source": "Circana; PBFA; SPINS; The Good Food Institute",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4.8,
+      5.4,
+      6.9,
+      7.4,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Average meat substitutes price in the United States from 2019 to 2029 (in U.S. dollars)",
+   "short": "Average meat substitutes price in the U.S. 2019-2029",
+   "unit": "U.S. dollars",
+   "description": "The price per unit in the 'Meat Substitutes' segment of the food market in the United States was forecast to continuously increase between 2024 and 2029 by in total 1.9 U.S. dollars (+10.93 percent). After the eighth consecutive increasing year, the indicator is estimated to reach 19.24 U.S. dollars and therefore a new peak in 2029.",
+   "note": "United States; 2019 to 2029",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      16.38,
+      16.87,
+      15.36,
+      16.54,
+      17.01,
+      17.39,
+      17.74,
+      18.09,
+      18.45,
+      18.8,
+      19.24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Share of consumer that increased their consumption of protein during last year in the United States in 2023, by protein source type",
+   "short": "Consumer that increased their consumption of protein in the U.S. in 2023, by type",
+   "unit": "",
+   "description": "In 2023, approximately 28 percent of respondents in the United States mentioned that during the last year, they have consumed more protein from whole-plant sources than before. Moreover, about 19 percent of respondents mentioned that they have consumed more dairy-based protein.",
+   "note": "March 23 to April 4, 2023; 1,022 respondents; 18-80 years",
+   "source": "Greenwald & Associates; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Protein from whole-plant sources",
+    "Poultry",
+    "Seafood",
+    "Other plant-based dairy alternatives",
+    "Dairy",
+    "Plant-based meat/seafood alternatives",
+    "Red meat",
+    "Blended meat products"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.28,
+      0.26,
+      0.23,
+      0.22,
+      0.19,
+      0.19,
+      0.16,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Share of consumer that decreased their consumption of protein during last year in the United States in 2023, by protein source type",
+   "short": "Consumer that decreased their consumption of protein in the U.S. in 2023, by source",
+   "unit": "",
+   "description": "In 2023, approximately 11 percent of respondents in the United States mentioned that during the last year, they have consumed less protein from whole-plant sources than before. Moreover, about 23 percent of respondents mentioned that they have consumed less dairy-based protein.",
+   "note": "United States; March 23 to April 4, 2023; 1,0022 respondents; 18-80 years",
+   "source": "Greenwald & Associates; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Red meat",
+    "Dairy",
+    "Eggs",
+    "Blended meat products",
+    "Seafood",
+    "Plant based dairy alternatives",
+    "Protein from whole",
+    "Plant-based meat/seafood alternatives",
+    "Protein from whole-plant sources"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.32,
+      0.23,
+      0.23,
+      0.2,
+      0.19,
+      0.12,
+      0.12,
+      0.11,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Distribution of diets followed by consumers in the United States in 2023",
+   "short": "Share of diet type followed by Americans 2023",
+   "unit": "",
+   "description": "High-protein and mindful eating were the most common eating patterns or diets followed in the United States in 2023. Some 18 percent and 17 percent of survey respondents followed these eating patterns in the past year, respectively. Other popular eating patterns included calorie-counting and plant-based diets.",
+   "note": "United States; March 23 to April 4, 2022; 1,005 respondents; 18-80 years",
+   "source": "Greenwald & Associates; IFIC",
+   "kind": "categorical",
+   "categories": [
+    "High-protein",
+    "Mindful eating",
+    "Clean eating",
+    "Calorie counting",
+    "Intermittent fasting",
+    "GIuten-free",
+    "Plant-based",
+    "Flexitarian",
+    "Low-carbon footprint/sustainable",
+    "Mediterranean style",
+    "Intuitive eating",
+    "Weight-loss plan",
+    "Carb-cycling",
+    "Ketogenic or high-fat",
+    "DASH eating plan",
+    "Cleanse",
+    "Paleo",
+    "Vegetarian",
+    "Vegan"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      0.18,
+      0.17,
+      0.12,
+      0.12,
+      0.12,
+      0.06,
+      0.06,
+      0.06,
+      0.05,
+      0.05,
+      0.05,
+      0.04,
+      0.04,
+      0.04,
+      0.02,
+      0.02,
+      0.01,
+      0.01,
+      0.01
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Foods and nutrients consumed for weight loss/management in the United States in 2022",
+   "short": "Foods and nutrients consumed for weight loss/management in the U.S. in 2022",
+   "unit": "",
+   "description": "In 2022, vegetables, such as leafy greens, broccoli, carrots, were the most frequently mentioned food that consumers in the United States eat to reduce or manage their weight, with approximately 64 percent of respondents mentioning them. The second most frequently mentioned food were fruits (dried or fresh), which were mentioned by about 62 percent of respondents.",
+   "note": "United States; March 23 to April 4, 2022; 310 respondents; 18-80 years",
+   "source": "Greenwald & Associates; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Vegetables (e.g., leafy greens, broccoli, carrots)",
+    "Fruits (dried or fresh)",
+    "Lean meats (e.g., chicken, pork, beef)",
+    "Vitamin or mineral supplements (e.g., iron, B vitamins)",
+    "Fish or shellfish (e.g., salmon, shrimp, scallops",
+    "Whole grains (e.g., brown rice, whole wheat bread, oats)",
+    "Dairy products (e.g., Greek yogurt)",
+    "Nuts or nut butters",
+    "Beans, peas or lentils",
+    "Caffeinated beverages (e.g., coffee, green or black tea, energy drinks)",
+    "Plant-based protein (e.g., tofu, plant-based meat or seafood alternatives)",
+    "Packaged meals/snacks from a branded diet",
+    "Other dietary supplements (e.g., creatine, melatonin, CoQ10)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.64,
+      0.62,
+      0.53,
+      0.47,
+      0.44,
+      0.42,
+      0.39,
+      0.36,
+      0.35,
+      0.32,
+      0.22,
+      0.15,
+      0.11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Nutrients consumers try to consume in the United States in 2023",
+   "short": "Nutrients consumers try to consume in the U.S. in 2023",
+   "unit": "",
+   "description": "In 2023, protein was the most frequently mentioned nutrient that consumers in the United States try to consume, with approximately 67 percent of respondents mentioning it. About 61 percent of respondents mentioned that they try to consume Vitamin D.",
+   "note": "United States; March 23 to April 4, 2023; 1,022 respondents; 18-80 years",
+   "source": "Greenwald & Associates; IFIC",
+   "kind": "categorical",
+   "categories": [
+    "Protein",
+    "Vitamin D",
+    "Fiber",
+    "Calcium",
+    "Vitamin B12",
+    "Iron",
+    "Potassium",
+    "Iodine",
+    "Sodium",
+    "Saturated fat"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.67,
+      0.61,
+      0.61,
+      0.56,
+      0.5,
+      0.48,
+      0.44,
+      0.15,
+      0.12,
+      0.09
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Consumers' definitions of healthy food in the United States in 2023",
+   "short": "Consumers' definitions of healthy food in the U.S. in 2023",
+   "unit": "",
+   "description": "In 2023, nearly 40 percent of respondents in the United States that the term \"fresh\" best defines healthy food to them. This was the most frequently chosen definition. The term \"low in sugar\" was the second most frequently chosen definition for healthy foods, with nearly 37 percent of respondents choosing this definition.",
+   "note": "United States; March 23 to April 4, 2023; 1,005 respondents; 18-80 years",
+   "source": "Greenwald & Associates; IFIC Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fresh",
+    "Low in sugar",
+    "Good source of protein",
+    "Contains fruits or vegetables (or includes these ingredients)",
+    "Good source of nutrients (e.g., potassium, vitamin D)",
+    "Natural",
+    "Low Sodium",
+    "Good source of fiber",
+    "Minimal or no processing",
+    "Organic",
+    "Low in total fat",
+    "Low in saturated fat",
+    "Limited or no artificial ingredients orpreservatives",
+    "Low calorie",
+    "Good source of healthy fats (e.g., monounsaturated or polyunsaturated fats)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.4,
+      0.37,
+      0.33,
+      0.28,
+      0.28,
+      0.26,
+      0.25,
+      0.25,
+      0.23,
+      0.21,
+      0.21,
+      0.21,
+      0.2,
+      0.19,
+      0.18
+     ]
+    }
+   ]
+  }
+ ]
+}

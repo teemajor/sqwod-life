@@ -1,0 +1,1669 @@
+{
+ "studyId": "102264",
+ "study": "tiktok marketing",
+ "file": "research/statista/Fitness Marketing/study_id102264_tiktok-marketing.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Most popular social networks worldwide as of April 2024, ranked by number of monthly active users (in millions)",
+   "short": "Global social networks ranked by number of users 2024",
+   "unit": "millions",
+   "description": "Market leader Facebook was the first social network to surpass one billion registered accounts and currently sits at more than three billion monthly active users. Meta Platforms owns four of the biggest social media platforms, all with more than one billion monthly active users each: Facebook (core platform), WhatsApp, Facebook Messenger, and Instagram. In the third quarter of 2023, Facebook reported around four billion monthly core Family product users.",
+   "note": "Worldwide; April 2024; social networks and messenger/chat app/voip included; figures for TikTok does not include Douyin",
+   "source": "DataReportal; Meltwater; We Are Social Number of active users in millions",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "YouTube",
+    "Instagram",
+    "WhatsApp¹",
+    "TikTok",
+    "WeChat",
+    "Facebook Messenger",
+    "Telegram",
+    "Snapchat",
+    "Douyin",
+    "Kuaishou",
+    "X/Twitter",
+    "Weibo",
+    "QQ",
+    "Pinterest"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3065,
+      2504,
+      2000,
+      2000,
+      1582,
+      1343,
+      1010,
+      900,
+      800,
+      755,
+      700,
+      611,
+      598,
+      554,
+      498
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Estimated digital ad revenue of ByteDance worldwide in 2023, by platform (in billion U.S. dollars)",
+   "short": "Estimated global ad revenue of ByteDance 2023, by platform",
+   "unit": "billion U.S. dollars",
+   "description": "ByteDance, TikTok's parent company, has reshaped the social media game both inside and outside China. With an estimated 40.8 billion U.S. dollars in digital ad revenue from Douyin and TikTok in 2023, the company remained the fifth spot among global ad publishers.",
+   "note": "Worldwide, China; as of November 2023",
+   "source": "eMarketer",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "Douyin"
+   ],
+   "series": [
+    {
+     "name": "2023",
+     "values": [
+      20,
+      20.81
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Share of selected social media platforms in digital video advertising revenue worldwide in 2022 and 2027",
+   "short": "Social media share in digital video ad revenue 2022-2027, by platform",
+   "unit": "",
+   "description": "In 2022, TikTok's estimated share in global video advertising revenue stood at seven percent. The source projected it would double by 2027. Additionally, TikTok Douyin (the same app in China) held a share of 15 percent in 2022 and was expected to grow to 23 percent in the same period. Combined, the apps would account for 37 percent of the total in 2027.",
+   "note": "Worldwide; forecast",
+   "source": "FierceVideo; Omdia",
+   "kind": "categorical",
+   "categories": [
+    "Meta",
+    "YouTube",
+    "TikTok",
+    "TikTok Douyin"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      0.16,
+      0.15,
+      0.07,
+      0.15
+     ]
+    },
+    {
+     "name": "2027",
+     "values": [
+      0.12,
+      0.12,
+      0.14,
+      0.23
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "TikTok advertising revenue worldwide from 2020 to 2027 (in billion U.S. dollars)",
+   "short": "TikTok ad revenue worldwide 2020-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, TikTok generated four billion U.S. dollars in advertising revenue. This figure is expected to double by 2024 and more nearly quadruple by 2026.",
+   "note": "Worldwide; 2020 to 2022; * Forecast. Read more",
+   "source": "eMarketer; Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2024*",
+    "2025*",
+    "2026*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2,
+      4,
+      11.64,
+      18.04,
+      23.58,
+      33.12,
+      43.96,
+      53.95
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Brand value of TikTok/Douyin worldwide from 2020 to 2023 (in billion U.S. dollars)",
+   "short": "TikTok/Douyin: brand value 2020-2023",
+   "unit": "billion U.S. dollars",
+   "description": "ByteDance’s triumphant TikTok/ Douyin is one of the most successful Chinese brands that have made its name beyond borders. The short video brand enjoyed immense popularity around the world, surpassing Instagram and WhatsApp to be the most downloaded mobile app. In 2023, the brand value of TikTok/Douyin amounted to 84 billion U.S. dollars. It was the most valuable unicorn worldwide in 2023 with a market cap of 200 billion U.S. dollars.",
+   "note": "Worldwide, China; 2020 to 2023",
+   "source": "Brand Finance",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      18.75,
+      58.98,
+      65.7,
+      84.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Net percentage change of marketing agency budget allocations in media worldwide for 2023",
+   "short": "Media investment plans among market agencies worldwide 2023",
+   "unit": "",
+   "description": "A global survey of almost 1,000 marketing agencies showed that, in 2023, there would continue to be a net increase in budget and resource allocations across the whole spectrum of digital media. Online video will have the greatest net change, with an overall increase of 66 percent of those surveyed planning to invest more in this area. It is followed closely by social media stories and video streaming, with a net increase of 64 percent and 62 percent, respectively. Influencer content and social [...]",
+   "note": "Worldwide; as of September 2022; nearly 1,000; marketing professionals",
+   "source": "Kantar; MarketingCharts Change of budget allocations",
+   "kind": "categorical",
+   "categories": [
+    "Online video",
+    "Social media stories",
+    "Video streaming",
+    "Marketing in metaverse",
+    "E-commerce",
+    "Influencers content",
+    "Social media news feeds",
+    "TV streaming",
+    "Online/mobile games",
+    "Podcasts",
+    "Music streaming",
+    "Display",
+    "Digital out of home",
+    "Sponsored events",
+    "TV product placement"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.66,
+      0.64,
+      0.62,
+      0.61,
+      0.59,
+      0.59,
+      0.56,
+      0.53,
+      0.52,
+      0.46,
+      0.46,
+      0.45,
+      0.42,
+      0.3,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Leading social media platforms used by marketers worldwide as of January 2023",
+   "short": "Social media platforms used by marketers worldwide 2023",
+   "unit": "",
+   "description": "As of January 2023, Facebook was the most commonly used social media platform among marketers worldwide. According to a global survey, 89 percent of responding social media marketers used the network to promote their business, while another 80 percent did so via Instagram.",
+   "note": "Worldwide; January 2023; 2,133 respondents",
+   "source": "Frankwatching; Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "YouTube",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.89,
+      0.8,
+      0.64,
+      0.54,
+      0.44,
+      0.26
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Leading consumer trends according to marketers worldwide as of November 2023",
+   "short": "Leading consumer trends that marketers watch out for worldwide 2023",
+   "unit": "",
+   "description": "According to a survey conducted among marketers worldwide in November 2023, 57 percent of respondents said the consumer trend that they were watching out for in the same year was generative artificial intelligence (AI), such as ChatGPT and Dall-E. Another trend was TikTok or social video which was mentioned by 49 percent of the respondents.",
+   "note": "Worldwide; November 2023; 1,085 respondents; among brands, agencies, media companies, measurement firms, tech platforms, and other marketing industry constituents",
+   "source": "Mediaocean; TechValidate Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Generative AI",
+    "CTV/streaming",
+    "TikTok/social video",
+    "E-commerce everywhere",
+    "Consumer privacy",
+    "Gaming",
+    "Metaverse",
+    "Political and advocacy trends"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.57,
+      0.53,
+      0.49,
+      0.4,
+      0.3,
+      0.21,
+      0.16,
+      0.14
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Social media platforms with the largest return on investment (ROI) according to marketers worldwide as of September 2023",
+   "short": "Social media platforms with highest ROI worldwide 2023",
+   "unit": "",
+   "description": "According to a survey released in September 2023 and conducted among B2B and B2C marketers worldwide 29 percent of respondents said that Facebook was the social media platform with the highest return on investment (ROI) that year. The same share of respondents pointed towards Instagram for the same reason. YouTube ranked third with 26 percent of respondents, followed by TikTok with 24 percent.",
+   "note": "Worldwide; as of September 2023; 1,460 respondents; among global marketers from across B2B and B2C companies",
+   "source": "HubSpot",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "TikTok",
+    "LinkedIn",
+    "X (formerly Twitter)",
+    "Snapchat",
+    "Pinterest",
+    "Twitch",
+    "Tumblr"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.29,
+      0.29,
+      0.26,
+      0.24,
+      0.16,
+      0.16,
+      0.06,
+      0.06,
+      0.05,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Frequency of social media ad use among marketers worldwide as of January 2023, by platform",
+   "short": "Use of social media ads among marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a 2023 survey, 67 percent of responding marketers from across the world stated they often or sometimes used Facebook ads in their work. According to the results of this survey, Facebook was the most used ad platform. Instagram ranked second, with 52 percent of respondents saying they often or sometimes used ads on this platform.",
+   "note": "Worldwide; January 2023; 2,133 marketers; most participants were based in the USA, Canada, the UK, India, and Australia",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "LinkedIn",
+    "Twitter",
+    "TikTok"
+   ],
+   "series": [
+    {
+     "name": "Often",
+     "values": [
+      0.3,
+      0.24,
+      0.07,
+      0.07,
+      0.02,
+      0.03
+     ]
+    },
+    {
+     "name": "Sometimes",
+     "values": [
+      0.37,
+      0.28,
+      0.18,
+      0.18,
+      0.08,
+      0.09
+     ]
+    },
+    {
+     "name": "Never",
+     "values": [
+      0.33,
+      0.49,
+      0.75,
+      0.75,
+      0.9,
+      0.88
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Video platforms used for marketing purposes worldwide in 2023",
+   "short": "Video platforms used for marketing purposes worldwide 2023",
+   "unit": "",
+   "description": "During a late 2023 survey carried out among marketing professionals worldwide, 90 percent of respondents stated they used videos on YouTube for marketing purposes. Facebook was the second-most commonly named platform, mentioned by 86 percent of respondents. TikTok was used by 69 percent of interviewed marketers.",
+   "note": "Worldwide; late 2023; 967 respondents; among marketing professionals",
+   "source": "Wyzowl Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Facebook",
+    "Instagram",
+    "LinkedIn",
+    "Webinar",
+    "Twitter",
+    "TikTok",
+    "Facebook Live",
+    "Interactive video",
+    "Snapchat",
+    "360 video",
+    "Virtual reality (VR)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.9,
+      0.86,
+      0.79,
+      0.76,
+      0.7,
+      0.69,
+      0.69,
+      0.68,
+      0.65,
+      0.57,
+      0.56,
+      0.56
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Planned changes in use of selected video platforms for social media marketing purposes worldwide as of January 2023",
+   "short": "Future use of video among social media marketers worldwide 2023, by platform",
+   "unit": "",
+   "description": "During a global survey of social media marketers released in 2023, 56 percent of responding industry professionals stated they would increase their video activities on Instagram in the following 12 months, while 59 percent said they planned to do so on YouTube.",
+   "note": "Worldwide; January 2023; 2,133 respondents; among marketers",
+   "source": "Social Media Examiner",
+   "kind": "categorical",
+   "categories": [
+    "Instagram",
+    "YouTube",
+    "Facebook",
+    "LinkedIn",
+    "TikTok",
+    "Twitter"
+   ],
+   "series": [
+    {
+     "name": "Planning to increase activity in next 12 months",
+     "values": [
+      0.56,
+      0.59,
+      0.37,
+      0.55,
+      0.38,
+      0.22
+     ]
+    },
+    {
+     "name": "Planning to decrease activity in next 12 months",
+     "values": [
+      0.05,
+      0.02,
+      0.14,
+      0.03,
+      0.03,
+      0.16
+     ]
+    },
+    {
+     "name": "No plans to use",
+     "values": [
+      0.08,
+      0.16,
+      0.06,
+      0.15,
+      0.48,
+      0.31
+     ]
+    },
+    {
+     "name": "Stay the same",
+     "values": [
+      0.31,
+      0.24,
+      0.43,
+      0.27,
+      0.11,
+      0.31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Most popular brands on TikTok worldwide in 2022, by number of followers (in millions)",
+   "short": "Most popular brands on TikTok globally 2022, by number of followers",
+   "unit": "millions",
+   "description": "In 2022, TikTok's own brand was the most popular brand on its platform, gathering roughly 62 million followers worldwide. Netflix and NBA ranked second and third with approximately 23 million and 15 million followers on the social media platform, respectively.",
+   "note": "Worldwide; 2022; data collected from 900 branded TikTok accounts",
+   "source": "SentiOne Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "Netflix",
+    "NBA",
+    "Nickelodeon",
+    "Fortnite",
+    "RedBull",
+    "Duolingo",
+    "Gymshark",
+    "ABC News",
+    "NBC News",
+    "Nike",
+    "Adidas",
+    "McDonald's",
+    "Gucci",
+    "Target"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      62,
+      22.9,
+      15,
+      12,
+      8,
+      6.5,
+      4.2,
+      3.6,
+      3.2,
+      2.7,
+      2.3,
+      2.2,
+      2.1,
+      1.8,
+      1.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Leading brands on TikTok worldwide in 2023, by number of influencers (in 1,000s)",
+   "short": "Most talked about brands on TikTok worldwide 2023",
+   "unit": "1,000s",
+   "description": "Target was the most talked about brand on TikTok in 2023, with 21 thousand influencers mentioning it. Netflix and Amazon followed with 18.8 thousand and 16.3 thousand influencers, respectively.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor Number of influencers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "target",
+    "Netflix",
+    "Amazon",
+    "sephora",
+    "Starbucks",
+    "Disney",
+    "SHEGLAM",
+    "CapCut",
+    "FashionNova",
+    "Revolve"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      21,
+      18.8,
+      16.3,
+      15.6,
+      13.3,
+      12.8,
+      9.8,
+      8.6,
+      8.4,
+      7.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Leading TikTok accounts worldwide as of September 2022, by followers (in millions)",
+   "short": "Most-followed TikTok accounts worldwide 2022",
+   "unit": "millions",
+   "description": "In September 2022, comedian and TikTok personality Khaby Lame counted over 148 million followers, followed by social media personality and influencer Charlie D'Amelio. In June 2022, Khaby Lame surpassed D'Amelio in terms of followers count on TikTok. However, D'Amelio's popular account on the platform grew by 733 million new likes in the first six months of 2022.",
+   "note": "Worldwide; September 2022",
+   "source": "influData by weCreate Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "khaby.lame",
+    "charlidamelio",
+    "bellapoarch",
+    "addisonre",
+    "willsmith",
+    "zachking",
+    "kimberly.loaiza",
+    "cznburak",
+    "tiktok",
+    "dixiedamelio",
+    "domelipa",
+    "therock",
+    "spencerx",
+    "lorengray",
+    "jasonderulo"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      148.24,
+      142.28,
+      91.07,
+      88.55,
+      72.24,
+      69.13,
+      66.26,
+      62.52,
+      61.2,
+      57.43,
+      56.43,
+      56.26,
+      55.02,
+      54.53,
+      52.49
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Fastest growing TikTok accounts worldwide in 2022, by annual follower growth",
+   "short": "Fastest growing global TikTok accounts 2022, by follower growth",
+   "unit": "",
+   "description": "The fastest-growing TikTok user worldwide in 2022 was Brazilian sports influencer Luva de Pedreiro, who grew his audience by 1,546 percent compared to the previous year. Online personality and pastry chef Amaury Guichon was the second fastest growing global TikTok creators in 2022, with a follower growth of almost 736 percent year-over-year.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor Year-on-year follower growth TikTok username",
+   "kind": "categorical",
+   "categories": [
+    "luvadepedreiro",
+    "amauryguichon",
+    "badbunny",
+    "rubentuestaok",
+    "bayashi.tiktok",
+    "mrbeast",
+    "therock",
+    "domelipa",
+    "khaby.lame",
+    "charlidamelio"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      15.46,
+      7.36,
+      6.27,
+      2.53,
+      1.48,
+      1.02,
+      0.44,
+      0.34,
+      0.23,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Number of TikTok creators with more than 10 million followers worldwide in September 2022, by country",
+   "short": "Number of supernova creators on TikTok worldwide 2022",
+   "unit": "",
+   "description": "On September 15, 2022, the United States was home to 344 creators with more than 10 million followers, which made it the country with the highest number of supernova creators on TikTok worldwide. Indonesia and Mexico ranked second, both with 95 supernova creators, followed by Brazil with 77.",
+   "note": "Worldwide; September 15, 2022",
+   "source": "NeoReach Number of supernova creators",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Indonesia",
+    "Mexico",
+    "Brazil",
+    "Russia",
+    "India",
+    "Philippines",
+    "United Kingdom",
+    "South Korea",
+    "Spain",
+    "Colombia",
+    "Canada",
+    "Vietnam",
+    "Pakistan",
+    "Australia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      344,
+      95,
+      95,
+      77,
+      55,
+      43,
+      32,
+      28,
+      25,
+      24,
+      24,
+      14,
+      14,
+      13,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Distribution of TikTok creators worldwide as of September 2022, by age group",
+   "short": "Distribution of global TikTok creators 2022, by age group",
+   "unit": "",
+   "description": "As of September 2022, the majority of content creators on TikTok were aged between 18 and 25 years old, as almost 50 percent of creators on the short-video platform belonged to this age group. TikTok creators under 13 years old represented roughly seven percent of the total. While TikTok does not present registration restrictions for users aged between 13 and 18 years old, users aged under 13 years old in the United States have to use the platform's \"Younger Users\" version.",
+   "note": "Worldwide; September 2022",
+   "source": "influData by weCreate Share of creators",
+   "kind": "categorical",
+   "categories": [
+    "<13",
+    "13-17",
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55+"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.07,
+      0.207,
+      0.491,
+      0.187,
+      0.029,
+      0.014,
+      0.002
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Distribution of TikTok creators worldwide as of September 2022, by gender",
+   "short": "Distribution of global TikTok creators 2022, by gender",
+   "unit": "",
+   "description": "As of September 2022, the majority of content creators on TikTok were women, while men accounted for less than 45 percent of the total number of creators on the platform. Women creating content on the short-video app were 55.3 percent in the examined period.",
+   "note": "Worldwide; September 2022",
+   "source": "influData by weCreate Share of creators",
+   "kind": "categorical",
+   "categories": [
+    "Women",
+    "Men"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.553,
+      0.447
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Leading English-language TikTok creators worldwide as of September 2022, by followers (in millions)",
+   "short": "Most-followed English-language TikTok creators worldwide 2022",
+   "unit": "millions",
+   "description": "In September 2022, social media personality and comedian Khabane Lame was counting almost 148 million TikTok followers worldwide, ranking first among English-language content creators for audiences on the platform. Charlie D' Amelio ranked second with roughly 142 million followers, while Bella Poarch ranked third with more than 90 million people following her account on the platform.",
+   "note": "Worldwide; September 2022",
+   "source": "influData by weCreate Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "khaby.lame",
+    "charlidamelio",
+    "bellapoarch",
+    "addisonre",
+    "willsmith",
+    "zachking",
+    "tiktok",
+    "dixiedamelio",
+    "spencerx",
+    "lorengray",
+    "therock",
+    "jasonderulo",
+    "justmaiko",
+    "brentrivera",
+    "selenagomez"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      147.58,
+      142.28,
+      90.11,
+      88.12,
+      72.04,
+      69.08,
+      61.2,
+      57.42,
+      55.02,
+      54.53,
+      53.14,
+      52.5,
+      51.31,
+      43.66,
+      41.78
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Leading virtual creators on TikTok worldwide as of October 2022, by number of followers (in millions)",
+   "short": "Most-followed virtual creators on TikTok worldwide 2022",
+   "unit": "millions",
+   "description": "In October 2022, Nobody Sausage (handle: @nobodysausage) was the most followed virtual creator on TikTok, having amassed 16.7 million followers. Nobody Sausage comes from Portugal and was created by artist Kael Cabral. FN Meka, a robot rapper who first appeared in 2019, ranked second with 10.2 million followers.",
+   "note": "Worldwide; October 11, 2022",
+   "source": "NeoReach; Offbeat",
+   "kind": "categorical",
+   "categories": [
+    "Nobody Sausage",
+    "FN Meka",
+    "Tito Lizzardo and Catty B",
+    "Noodle and Bun",
+    "Janky"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      16.7,
+      10.2,
+      5.7,
+      5.2,
+      5.2
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Distribution of TikTok influencers worldwide in 2022, by number of followers",
+   "short": "Global distribution of TikTok influencers in 2022, by number of followers",
+   "unit": "",
+   "description": "In 2022, TikTok influencers with 1,000 to 10,000 followers made up 66.96 percent of TikTok influencer accounts worldwide. The second and third largest groups were micro-influencers with 10,000 to 50,000 followers and mid-tier influencers with 50,000 to 500,000 followers, accounting respectively for 23.06 percent and 9.04 percent.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1,000 to 10,000",
+    "10,000 to 50,000",
+    "50,000 to 500,000",
+    "500,000 to 1,000,000",
+    "1,000,000 and above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.6696,
+      0.2306,
+      0.0904,
+      0.0053,
+      0.0041
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Engagement rate of TikTok influencers worldwide from 2021 to 2023, by number of followers",
+   "short": "Engagement rate among global TikTok influencers 2023, by profile size",
+   "unit": "",
+   "description": "TikTok nano-influencers with one to 10 thousand followers had the highest engagement rate (ER) compared to other TikTok profiles worldwide in 2023. Nano-influencers had an ER of 11.97 percent, while micro-influencers with 10,000 to 50,000 followers came second with 10.21 percent.",
+   "note": "Worldwide; 2021 to 2023",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "Nano-influencers (1K-10K)",
+    "Micro-influencers (10k-50K)",
+    "Mid-tier-influencers (50K-500K)",
+    "Macro-influencers (500K-1M)",
+    "Mega-influencers (over 1M)"
+   ],
+   "series": [
+    {
+     "name": "2021",
+     "values": [
+      0.157,
+      0.122,
+      0.108,
+      0.106,
+      0.111
+     ]
+    },
+    {
+     "name": "2022",
+     "values": [
+      0.152,
+      0.124,
+      0.109,
+      0.108,
+      0.113
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      0.1197,
+      0.1021,
+      0.0948,
+      0.0939,
+      0.0967
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Engagement rates of selected virtual creators on TikTok worldwide as of October 2022",
+   "short": "Engagement rates of virtual creators on TikTok worldwide 2022",
+   "unit": "",
+   "description": "In October 2022, Nobody Sausage (handle: @nobodysausage) had an engagement rate of 1.35 percent, which means that 1.35 percent of its followers interacted with its posts on average. It was also the most followed virtual creator on TikTok, having amassed 16.7 million followers. The virtual creator with the highest engagement rate in this data set was FN Meka, with 3.19 percent.",
+   "note": "Worldwide; October 11, 2022",
+   "source": "NeoReach; Offbeat",
+   "kind": "categorical",
+   "categories": [
+    "FN Meka",
+    "Nobody Sausage",
+    "Noodle and Bun",
+    "Janky",
+    "Tito Lizzardo"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.0319,
+      0.0135,
+      0.0133,
+      0.0071,
+      0.004
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Average number of views per post of TikTok influencers in 2022, by number of followers",
+   "short": "Views per post of global TikTok influencers 2022, by profile size",
+   "unit": "",
+   "description": "The post of a TikTok mega-influencer with more than one million followers received an average of 329,382 views worldwide in 2022. The post of a macro-influencer with 100,000 to one million followers received an average of 38,517 views.",
+   "note": "Worldwide; 2022",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "Nano-influencers (1K-10K)",
+    "Micro-influencers (10k-50K)",
+    "Mid-influencers (50K-500K)",
+    "Macro-influencers (500K-1M)",
+    "Mega-influencers (over 1M)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5121,
+      7611,
+      10244,
+      38517,
+      329382
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Number of adverts removed on TikTok from 1st quarter 2021 to 4th quarter 2023",
+   "short": "TikTok: ads removed 2021-2023",
+   "unit": "",
+   "description": "During the fourth quarter of 2023, the social video platform TikTok removed approximately 4.9 million ads due to account actions. In the last measured quarter, the platform conducted an additional 1.4 million ads removals.",
+   "note": "Worldwide; Q1 2021 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q1 2021",
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "Ads removed due to account actions",
+     "values": [
+      605253,
+      516006,
+      2976025,
+      2938621,
+      8715899,
+      5148050,
+      5414459,
+      4953815,
+      2993546,
+      7942008,
+      6496665,
+      4920621
+     ]
+    },
+    {
+     "name": "Ads removals",
+     "values": [
+      1921900,
+      1829219,
+      339630,
+      3181858,
+      5845827,
+      4221562,
+      2294262,
+      1635296,
+      870815,
+      962574,
+      1306249,
+      1487737
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Number of fake interactions removed on TikTok from 2nd quarter 2021 to 4th quarter 2023 (in millions)",
+   "short": "TikTok: fake engagement removed 2021-2023",
+   "unit": "millions",
+   "description": "During the fourth quarter of 2023, the social video platform TikTok removed around 720 million fake followers on the platform due to fake accounts. This represents a staggering increase from the previous quarter, when the number of fake followers removed was approximately 211 million. Additionally, the platform removed around 1.03 billion fake likes during the last measured quarter.",
+   "note": "Worldwide; Q2 2021 to Q4 2023",
+   "source": "TikTok",
+   "kind": "timeseries",
+   "categories": [
+    "Q2 2021",
+    "Q3 2021",
+    "Q4 2021",
+    "Q1 2022",
+    "Q2 2022",
+    "Q3 2022",
+    "Q4 2022",
+    "Q1 2023",
+    "Q2 2023",
+    "Q3 2023",
+    "Q4 2023"
+   ],
+   "series": [
+    {
+     "name": "Fake likes",
+     "values": [
+      91.81,
+      203.71,
+      285.32,
+      248.62,
+      163.77,
+      146.36,
+      366.8,
+      536.88,
+      577.88,
+      348.7,
+      1037
+     ]
+    },
+    {
+     "name": "Fake followers",
+     "values": [
+      71.94,
+      231.15,
+      441.99,
+      623.71,
+      1444.82,
+      759.04,
+      1465.24,
+      1247.89,
+      252.94,
+      211.37,
+      720.29
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Leading media companies worldwide in 2022, by revenue (in billion euros)",
+   "short": "Largest media companies worldwide 2022",
+   "unit": "billion euros",
+   "description": "In 2022, the leading media company worldwide based on revenue was Alphabet Inc., with revenue of 268.6 billion euros. In second place was Comcast, followed by Meta Platforms Inc, Walt Disney, and Tencent.",
+   "note": "Worldwide; 2022",
+   "source": "Institut für Medien- und Kommunikationspolitik Revenues in billion euros",
+   "kind": "categorical",
+   "categories": [
+    "Alphabet Inc. (Mountain View / USA)",
+    "Comcast Corporation (Philadelphia / USA)",
+    "Meta Platforms, Inc. (Facebook) (Palo Alto/ USA)",
+    "The Walt Disney Company (Burbank / USA)",
+    "Tencent Holdings Ltd. (Shenzen / China)",
+    "Bytedance (Santa Monica / USA)",
+    "Apple Inc. (Cupertino / USA)",
+    "Amazon.com, Inc. (Seattle / USA)",
+    "Charter Communications Inc. (Stanford / USA)",
+    "Sony Corporation (Tokyo / JP )",
+    "Microsoft Corporation (Redmond / USA)",
+    "Warner Bros. Discovery (New York / USA)",
+    "Netflix (Los Gatos/ USA)",
+    "Paramount Global (New York / USA)",
+    "News Corp. / New Fox (New York / USA)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      268.6,
+      115.32,
+      110.74,
+      79.53,
+      78.35,
+      75.97,
+      74.2,
+      69.29,
+      51.3,
+      40,
+      39.54,
+      32.12,
+      30,
+      28.64,
+      23.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Digital advertising revenues of major internet companies worldwide in 2023 and 2027 (in billion U.S. dollars)",
+   "short": "Digital advertising revenue for major internet companies 2023-2027",
+   "unit": "billion U.S. dollars",
+   "description": "In 2023, the forecast for Facebook digital advertising revenues saw the Meta company generating 119 billion U.S. dollars by the end of the fiscal year. TikTok was projected to see its online advertising revenues hit 18 billion U.S. dollars. By comparison, LinkedIn advertising revenues were forecasted to reach approximately a third of that amount for 2023.",
+   "note": "Worldwide; August 2023; forecast",
+   "source": "Statista; Various sources Revenue in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Google",
+    "Facebook",
+    "Amazon",
+    "TikTok",
+    "Tencent",
+    "Microsoft Search & News Advertising",
+    "Baidu",
+    "JD.com",
+    "Apple",
+    "LinkedIn",
+    "Snapchat",
+    "Twitter",
+    "Pinterest",
+    "Spotify"
+   ],
+   "series": [
+    {
+     "name": "2027",
+     "values": [
+      340.18,
+      127.27,
+      70.82,
+      53.95,
+      16.71,
+      16.33,
+      11.51,
+      16.25,
+      13.73,
+      10.35,
+      8.8,
+      2.7,
+      5.13,
+      2.24
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      250.26,
+      118.96,
+      44.35,
+      18.04,
+      13.18,
+      12.54,
+      11.51,
+      10.99,
+      6.51,
+      5.91,
+      5.36,
+      3.31,
+      3.27,
+      1.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Change in advertising revenue of selected social media platforms worldwide in 2023",
+   "short": "Growth of social media ad revenue worldwide 2023, by platform",
+   "unit": "",
+   "description": "Advertising revenue generated by TikTok was expected to increase by 55 percent in 2023. That would make it the fastest-growing social media platform among the seven market leaders presented in the data set. As of August 2023, X's (Twitter's) ad revenue was expected to shrink by 30 percent in that calendar year.",
+   "note": "Worldwide; August 2023; forecast",
+   "source": "Statista",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "Pinterest",
+    "Snapchat",
+    "LinkedIn",
+    "Tencent",
+    "Facebook",
+    "X (Twitter)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.55,
+      0.17,
+      0.16,
+      0.15,
+      0.07,
+      0.05,
+      -0.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Leading media brands worldwide in 2023, by brand value (in billion U.S. dollars)",
+   "short": "Most valuable media brands 2023",
+   "unit": "billion U.S. dollars",
+   "description": "As of 2023, Google was the most valuable media brand in the world, with an estimated brand value of about 281.4 billion U.S. dollars. TikTok/Douyin took the second place, with a brand value of nearly 65.7 billion dollars. The Chinese short-form video platform ranked ahead of Facebook, which brand value declined to roughly 59 billion dollars.",
+   "note": "2023",
+   "source": "Brand Finance Brand value in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Google",
+    "TikTok/Douyin",
+    "Facebook",
+    "WeChat",
+    "Disney",
+    "Instagram",
+    "Tencent",
+    "YouTube",
+    "Netflix",
+    "LinkedIn"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      281.38,
+      65.7,
+      58.97,
+      50.25,
+      49.51,
+      47.44,
+      38.06,
+      29.71,
+      24.15,
+      15.51
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Fastest growing media brands worldwide in 2022, by brand value growth rate",
+   "short": "Fastest growing media brands 2022",
+   "unit": "",
+   "description": "In 2022, TikTok – a video-sharing platform – was the fastest growing media brand worldwide, with a brand value growth rate of 215 percent. Snapchat – a messaging app – ranked second, with a brand value growth rate of 184 percent. Out of the presented top nine, five brands are from the United States and four from Asia (China and South Korea).",
+   "note": "2022",
+   "source": "Brand Finance Growth rate",
+   "kind": "categorical",
+   "categories": [
+    "TikTok",
+    "Snapchat",
+    "Kakao",
+    "Twitter",
+    "‎Comedy Central",
+    "VH1",
+    "iQ.com",
+    "ByteDance",
+    "YouTube"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.15,
+      1.84,
+      1.61,
+      0.85,
+      0.82,
+      0.73,
+      0.44,
+      0.4,
+      0.38
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Leading unicorns worldwide as of April 2023 (in billion U.S. dollars)",
+   "short": "Highest valued unicorn companies worldwide 2023",
+   "unit": "billion U.S. dollars",
+   "description": "As of April 2023, ByteDance, the Chinese tech company which owns TikTok, was valued at about 200 billion U.S. dollars, which made it the highest valued unicorn globally. A unicorn is a privately held company with a market valuation of one billion U.S. dollars or more. As of 2021, there were over 590 unicorns globally, with the majority based in the United States and China.",
+   "note": "Worldwide; April 2023",
+   "source": "Hurun Research Institute Valuation in billion U.S. dollars Company (HQ country)",
+   "kind": "categorical",
+   "categories": [
+    "ByteDance (China)",
+    "SpaceX (U.S.)",
+    "ANT Group (China)",
+    "Shein (China)",
+    "Stripe (U.S.)",
+    "WeBank (China)",
+    "Databricks (U.S.)",
+    "Telegram (UAE)",
+    "Revolut (UK)",
+    "Cainiao (China)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      200,
+      137,
+      120,
+      65,
+      50,
+      33,
+      31,
+      30,
+      28,
+      27
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Leading social media billionaires as of April 2024, by net worth (in billion U.S. dollars)",
+   "short": "Net worth of the richest social media entrepreneurs 2024",
+   "unit": "billion U.S. dollars",
+   "description": "The impressive growth of social media companies in the early 2010s made many founders extremely wealthy. Facebook founder Mark Zuckerberg is the world’s richest social media entrepreneur with a personal net worth of 117 billion U.S. dollars. Zhang Yiming, the creator of TikTok, is worth 43.4 billion U.S. dollars.",
+   "note": "Worldwide; April 2024; social media entrepreneurs",
+   "source": "Forbes Net worth in billion U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Mark Zuckerberg, Facebook",
+    "Zhang Yiming, TikTok",
+    "Eduardo Saverin, Facebook",
+    "Dustin Moskovitz, Facebook",
+    "Jan Koum, WhatsApp",
+    "Jeff Rothschild, Facebook",
+    "Jack Dorsey, Twitter",
+    "Brian Acton, WhatsApp",
+    "Evan Spiegel, Snapchat",
+    "Bobby Murphy, Snapchat"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      117,
+      43.4,
+      28,
+      18.3,
+      16.1,
+      5.9,
+      4.9,
+      3.1,
+      3.1,
+      2.8
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "Social media platforms offering the best social commerce experience worldwide in 2023",
+   "short": "Social media offering the best social commerce experience worldwide 2023",
+   "unit": "",
+   "description": "In a 2023 survey, nearly a quarter (23 percent) of global consumers rated Facebook as the social media platform delivering the best experience for social commerce. Instagram ranked second, with 18 percent, followed by YouTube and TikTok, at 8 percent each.",
+   "note": "Worldwide; April 6 to 20, 2023; 31,647 respondents",
+   "source": "Censuswide; Wunderman Thompson Commerce Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Facebook",
+    "Instagram",
+    "YouTube",
+    "TikTok",
+    "WhatsApp",
+    "Pinterest",
+    "Telegram",
+    "Twitter"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.23,
+      0.18,
+      0.08,
+      0.08,
+      0.07,
+      0.02,
+      0.02,
+      0.02
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 49,
+   "title": "Number of TikTok users worldwide from 2020 to 2025 (in millions)",
+   "short": "TikTok: number of global users 2020-2025",
+   "unit": "millions",
+   "description": "Launched in 2016, TikTok rose to be one of the most popular social app and video platform for global users. In 2021, TikTok had approximately 656 million global users. This figure was projected to increase by around 15 percent year-over-year, reaching 755 million users in 2022. TikTok global installs peaked at the end of 2019, with the app amassing over 318 million downloads. During 2020 and 2021, TikTok download trends experienced a slower growth, amassing 173 million downloads [...]",
+   "note": "Worldwide; 2020 and 2021; * Forecast Internet users who access TikTok monthly via any device Read more",
+   "source": "eMarketer",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022*",
+    "2023*",
+    "2024*",
+    "2025*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      465.7,
+      655.9,
+      755,
+      834.3,
+      900.7,
+      955.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Countries with the largest TikTok audience as of January 2024 (in millions)",
+   "short": "Countries with the most TikTok users 2024",
+   "unit": "millions",
+   "description": "As of January 2024, the United States was the country with the largest TikTok audience by far, with almost 150 million users engaging with the popular social video platform. Indonesia followed, with around 126 million TikTok users. Brazil came in third, with almost 99 million users on TikTok watching short-videos.",
+   "note": "Worldwide; January 2024; 18 years and older; based on addressable advertising audience; does not inlcude Douyin",
+   "source": "DataReportal; Meltwater; TikTok; We Are Social Number of TikTok users in millions",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Indonesia",
+    "Brazil",
+    "Mexico",
+    "Vietnam",
+    "Russian Federation",
+    "Pakistan",
+    "Philippines",
+    "Thailand",
+    "Turkey",
+    "Bangladesh",
+    "Saudi Arabia",
+    "Egypt",
+    "Iraq",
+    "Malaysia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      148.92,
+      126.83,
+      98.59,
+      74.15,
+      67.72,
+      58.59,
+      54.38,
+      49.09,
+      44.38,
+      37.73,
+      37.36,
+      35.1,
+      32.94,
+      31.95,
+      28.68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 51,
+   "title": "Distribution of TikTok users worldwide as of January 2024, by age and gender",
+   "short": "TikTok: distribution of global audiences 2024, by age and gender",
+   "unit": "",
+   "description": "As of January 2024, it was found that 18 percent of TikTok's global audience were women between the ages of 18 and 24 years, while male users of the same age made up approximately 18.6 percent of the platform's audience. The online audience of the popular social video platform was further composed of 15 percent female users aged between 25 and 34 years, and 17.6 percent of male users in the same age group.",
+   "note": "January 2024; 18 years and older; based on addressable ad audience",
+   "source": "DataReportal; Kepios; Meltwater; TikTok; We Are Social",
+   "kind": "categorical",
+   "categories": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55+"
+   ],
+   "series": [
+    {
+     "name": "Female",
+     "values": [
+      0.181,
+      0.15,
+      0.075,
+      0.041,
+      0.033
+     ]
+    },
+    {
+     "name": "Male",
+     "values": [
+      0.186,
+      0.176,
+      0.085,
+      0.042,
+      0.03
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 52,
+   "title": "Monthly time spent on TikTok per user in selected markets worldwide in 2020 and 2022 (in hours)",
+   "short": "TikTok user engagement in selected markets 2020-2022",
+   "unit": "hours",
+   "description": "In 2022, users worldwide spent approximately 23.3 hours using TikTok per month, up from the 19.6 hours of engagement registered per user in 2021. Users in the United Kingdom spent more than 27 hours on average using the popular social video and live streaming app, while users in Argentina spent almost 120 hours monthly on the app, up by 37 percent compared to the previous year.",
+   "note": "Worldwide; 2020 to 2022; Android phones only",
+   "source": "Data.ai Time spent per user in hours",
+   "kind": "categorical",
+   "categories": [
+    "Worldwide",
+    "United Kingdom",
+    "Russia",
+    "United States",
+    "Germany",
+    "Australia",
+    "Mexico",
+    "Indonesia",
+    "Canada",
+    "France",
+    "Brazil",
+    "Turkey",
+    "South Korea",
+    "Singapore"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      23.3,
+      27.18,
+      28.42,
+      26.48,
+      23.42,
+      29.36,
+      27.36,
+      29,
+      25.54,
+      21.24,
+      20.54,
+      19.54,
+      20.18
+     ]
+    },
+    {
+     "name": "2021",
+     "values": [
+      19.6,
+      27.3,
+      26.3,
+      25.6,
+      23.6,
+      23.4,
+      23.4,
+      23.1,
+      22.6,
+      21.1,
+      20.2,
+      18.8,
+      16.9,
+      16.3
+     ]
+    },
+    {
+     "name": "2020",
+     "values": [
+      13.3,
+      19.9,
+      17.4,
+      21.5,
+      19.4,
+      16.8,
+      17.2,
+      13.8,
+      17.1,
+      17.3,
+      14,
+      14,
+      13.8,
+      9.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 53,
+   "title": "Consumer attitudes towards buying products promoted on Tik Tok in the United States as of 2022",
+   "short": "Consumer attitudes towards Tik Tok purchases in the U.S. 2022",
+   "unit": "",
+   "description": "When asked about whether they bought products promoted on Tik Tok, 56 percent of consumers in the United States stated that they have done so. Another 36 percent said that they had not bought anything but are open to do so. Just eight percent expressed no interest in purchasing goods on the social media platform.",
+   "note": "United States; 2022; 1,000 respondents; TikTok users",
+   "source": "M&C Saatchi Performance; MediaPost",
+   "kind": "categorical",
+   "categories": [
+    "Yes, I've purchased a product promoted on TikTok",
+    "No, but I'm open to doing so",
+    "I'm not interested"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.56,
+      0.36,
+      0.08
+     ]
+    }
+   ]
+  }
+ ]
+}

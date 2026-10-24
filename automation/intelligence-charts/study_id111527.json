@@ -1,0 +1,2015 @@
+{
+ "studyId": "111527",
+ "study": "online video content creators",
+ "file": "research/statista/Fitness Marketing/study_id111527_online-video-content-creators.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Average weekly time spent with online video worldwide from 2018 to 2023",
+   "short": "Weekly time spent with online video worldwide 2018-2023",
+   "unit": "",
+   "description": "According to a survey conducted among consumers worldwide, respondents watched an average of 19 hours of online video content per week in 2022. This represented an increase from 2021, when consumers watched 19 hours of online video content weekly.",
+   "note": "Worldwide; 2018 to 2022; 528 respondents; average hours per person per week; *Forecast Read more",
+   "source": "Wyzowl",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      10.5,
+      14,
+      16,
+      18,
+      19,
+      17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Share of internet users worldwide who have watched a vlog in the past week in 3rd quarter 2023, by region",
+   "short": "Global vlog viewership reach 2023, by region",
+   "unit": "",
+   "description": "During the third quarter of 2023, the Philippines saw the highest vlog reach worldwide by far, with over 50 percent of internet users reporting they watched videos of this genre weekly. Internet users located in Morocco followed in second place, with almost 33 percent of respondents stating that they had watched a vlog in the past week. Vlogs became a popular video genre in the first half of the 2010s, thanks to video platforms like YouTube allowing any user to post their own content.",
+   "note": "Worldwide; Q3 2023; 16-64 years; among internet users",
+   "source": "DataReportal; Meltwater; We Are Social Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Philippines",
+    "Morocco",
+    "India",
+    "United Arab Emirates",
+    "Indonedia",
+    "Taiwan",
+    "Brazil",
+    "Malaysia",
+    "South Africa",
+    "China",
+    "Hong Kong",
+    "Mexico",
+    "Worldwide",
+    "Saudi Arabia",
+    "Spain"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.507,
+      0.327,
+      0.319,
+      0.309,
+      0.304,
+      0.301,
+      0.3,
+      0.266,
+      0.263,
+      0.257,
+      0.248,
+      0.245,
+      0.238,
+      0.228,
+      0.216
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Share of internet users worldwide watching vlogs weekly as of 3rd quarter 2023, by age and gender",
+   "short": "Vlogs: global audience reach 2023, by age and gender",
+   "unit": "",
+   "description": "A survey conducted during the third quarter of 2023 found that 36 percent of female internet users aged between 16 and 24 years watched vlogs. Overall, women were more likely to watch vlogs worldwide than men. Vlogs are an online video genre that gained popularity in the 2010s, thanks to platforms like YouTube. Vlogs are also a popular video format for influencers, with this type of video content reporting a global usage reach of approximately 24 percent in the third quarter of 2023.",
+   "note": "Worldwide; Q3 2023; 16-64 years; among internet users",
+   "source": "DataReportal; GWI; Meltwater; We Are Social Reach",
+   "kind": "categorical",
+   "categories": [
+    "16-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64"
+   ],
+   "series": [
+    {
+     "name": "Male",
+     "values": [
+      0.266,
+      0.253,
+      0.227,
+      0.17,
+      0.117
+     ]
+    },
+    {
+     "name": "Female",
+     "values": [
+      0.361,
+      0.3,
+      0.237,
+      0.172,
+      0.125
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Estimated annual earnings of social media and video creators as of September 2023 (in million U.S. dollars)",
+   "short": "Highest-earning content creators 2023",
+   "unit": "million U.S. dollars",
+   "description": "With his extravagant challenges and elaborated stunts, Mr. Beast (Jimmy Donaldson) is the most renown content creator online. The American YouTuber was the top-earning creator worldwide, with an estimated revenue of 82 million U.S. dollars for the year. Comedic duo Rhett & Link, gamer Preston Arsement, as well as child influencer and YouTuber Ryan Kaji were estimated to have generated approximately 35 million U.S. dollars, respectively. YouTuber and boxer Jake Paul followed, with [...]",
+   "note": "Worldwide; as of September 2023",
+   "source": "Forbes; Influential Annual earnings in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Mr. Beast (Jimmy Donaldson)",
+    "Rhett & Link",
+    "Preston Arsement (PrestonPlayz)",
+    "Ryan Kaji",
+    "Jake Paul",
+    "Elliot Tebele (F*ckJerry)",
+    "Mark Edward Fischbach (Markiplier)",
+    "Sean McLoughlin (Jacksepticeye)",
+    "Matt Rife",
+    "Olajide Olatunji (KSI)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      82,
+      35,
+      35,
+      35,
+      34,
+      30,
+      30,
+      27,
+      25,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 9,
+   "title": "Media and internet revenues worldwide in 2023 and 2027, by segment (in billion U.S. dollars)",
+   "short": "Global media and internet revenue 2023-2027, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "Between 2023 and 2027, global revenues generated by advertising in media and internet services will grow significantly, going from 828 billion U.S. dollars to 1.05 trillion U.S. dollars. Revenues generated by paid digital and analog content such as offline and online video entertainment services will experience moderate growth, reaching 729 billion U.S. dollars in 2026. In 2027, revenues generated from internet access costs will make up 33 percent of the total, reaching 918 billion U.S. dollars.",
+   "note": "Worldwide; 2023",
+   "source": "Activate; Statista",
+   "kind": "categorical",
+   "categories": [
+    "2023*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "Advertising revenue",
+     "values": [
+      828,
+      1053
+     ]
+    },
+    {
+     "name": "Cost of internet access",
+     "values": [
+      828,
+      918
+     ]
+    },
+    {
+     "name": "Paid content",
+     "values": [
+      644,
+      729
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Average daily time spent watching social video content among users in the United States from 2019 to 2027 (in minutes)",
+   "short": "U.S. daily social video consumption 2019-2027",
+   "unit": "minutes",
+   "description": "In 2022, social video platforms and video content recorded around 57 minutes of daily engagement on average among users in the United States. The amount of time spent watching social video among users in the country was projected to reach 61 minutes per day in 2023, and about daily 68 minutes by the end of 2027.",
+   "note": "United States; 2019 to 2022; 18 years and older; *Forecast Read more",
+   "source": "Activate Average daily time spent in minutes",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*",
+    "2027*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      33,
+      43,
+      51,
+      57,
+      61,
+      68
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Leading social media and online video platforms in the United States in 2nd quarter 2023, based on monthly users (in millions)",
+   "short": "U.S. most used social video platform 2023",
+   "unit": "millions",
+   "description": "In the third quarter of 2023, YouTube was the most popular social video platforms for users in the United States, with an estimated viewership of 234 million viewers. Instagram ranked second, with approximately 132 million users engaging with the platform's Reels and posts on a monthly basis. Facebook followed, while TikTok was estimated to have a monthly audience of less than 100 million users in the examined period.",
+   "note": "United States; Q2 2023; 4,023 respondents; 18 years and older; monthly users; *Forecast Read more",
+   "source": "Activate",
+   "kind": "categorical",
+   "categories": [
+    "YouTube",
+    "Instagram",
+    "Facebook",
+    "TikTok",
+    "Snapchat"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      234,
+      132,
+      114,
+      99,
+      48
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Most popular virtual personalities and virtual YouTubers online as of March 2024, by average viewers (in 1,000s)",
+   "short": "Leading VTubers 2024, by average viewers",
+   "unit": "1,000s",
+   "description": "In March 2024, the Japanese channel Miko was the most popular VTuber found online, with an average viewership of almost 31 thousand users. The pink-haired character, which is present on YouTube, Twitch, and bilibili, was launched in 2018 by Hololive Productions, a Japanese virtual YouTuber agency. Virtual YouTuber Usada Pekora, known on YouTube by her channel's name Pekora, debuted in 2018 and as Miko, was crated and is managed by the virtual creators' agency Hololive. [...]",
+   "note": "Worldwide; March 2024; across all video platforms (YouTube, Twitch)",
+   "source": "Stream Hatchet",
+   "kind": "categorical",
+   "categories": [
+    "Miko Ch.",
+    "Pekora Ch.",
+    "Kuzuha Channel",
+    "Kanae Channel",
+    "Oozora Subaru",
+    "Inugami Korone",
+    "Fubuki Ch, Shirakami Fubuki",
+    "AZKI Channel",
+    "Shirogane Noel",
+    "Lauren Iroas"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      30.7,
+      28.6,
+      21.4,
+      20.9,
+      20.2,
+      18.9,
+      14.2,
+      11.6,
+      11.2,
+      11.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Share of content creators earnings on selected online video and live streaming platforms worldwide as of June 2023",
+   "short": "Live streaming content creators revenue share on selected global platforms 2023",
+   "unit": "",
+   "description": "On June 15, 2023, Twitch announced the launch of its Partner Plus Program - which allows streamers with at least 350 recurring paid subscribers for three months in a row to earn 70 percent of their net subscription revenue. Twitch's new partner program came right before influential live streamers xQc and Amouranth left the platform to onboard competitor's live streaming hosting service Kick.",
+   "note": "Worldwide; as of June 2023",
+   "source": "DLive; GlobeNewswire; Google; New York Times; Rumble; TechCrunch; TikTok; Twitch Share of creators earnings",
+   "kind": "categorical",
+   "categories": [
+    "Twitch ¹",
+    "Twitch Partner Plus Program²",
+    "YouTube Partner Program advertising revenue³",
+    "YouTube Super Chat & Super Stickers for Live Chat",
+    "TikTok Live net revenue from virtual items",
+    "Rumble exclusive licensing and YouTube revenue (net advertising revenue)",
+    "Rumble exclusive licensing on all other websites (net advertising revenues on Rumble and 3rd party partners)",
+    "Rumble licensing excluding YouTube (net advertising revenues on Rumble and 3rd party partners)",
+    "Rumble (non-exclusive, similar to YouTube)",
+    "Rumble monthly subscription badges",
+    "Kick",
+    "DLive"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.5,
+      0.7,
+      0.55,
+      0.7,
+      0.5,
+      0.9,
+      0.6,
+      0.6,
+      0.6,
+      1,
+      0.95,
+      0.75
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Most viewed YouTube channel owners of all time as of March 2024, by views (in billions)",
+   "short": "All-time most viewed YouTube channel owners 2024",
+   "unit": "billions",
+   "description": "As of March 2024, T-Series had reached surpassed 248 billion lifetime video views, making it the most-viewed YouTube channel owner of all time. Popular children's rhymes and song channel Cocomelon followed, with 177 billion lifetime views. Several children-themed channels such as Like Nastya, Kids Diana Show, and Vlad and Niki appeared in the ranking.",
+   "note": "Worldwide; March 2024",
+   "source": "Social Blade; YouTube All-time channel views in billions",
+   "kind": "categorical",
+   "categories": [
+    "T-Series",
+    "Cocomelon - Nursery Rhymes",
+    "SET India",
+    "Sony SAB",
+    "Kids Diana Show",
+    "Like Nastya",
+    "Vlad and Niki",
+    "Zee TV",
+    "WWE",
+    "Colors TV"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      248.89,
+      177.43,
+      159.89,
+      111.38,
+      100.94,
+      98.33,
+      86.76,
+      86.45,
+      82.22,
+      68.58
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 16,
+   "title": "Most popular YouTube channels as of February 2024, ranked by number of subscribers (in millions)",
+   "short": "YouTube: most subscribed channels 2024",
+   "unit": "millions",
+   "description": "Indian music network T-Series had the most YouTube subscribers in the world as of February 2024, with 259 million users following the channel. MrBeast ranked second with roughly 237 million subscribers.",
+   "note": "Worldwide; February 2024; excluding YouTube category channels such as Music, Gaming, or YouTube Spotlight",
+   "source": "Google; Social Blade Number of subscribers in millions",
+   "kind": "categorical",
+   "categories": [
+    "T-Series",
+    "MrBeast",
+    "YouTube Movies",
+    "Cocomelon - Nursery Rhymes",
+    "SET India",
+    "Music",
+    "Kids Diana Show",
+    "Like Nastya",
+    "PewDiePie",
+    "Vlad and Niki"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      259,
+      237,
+      178,
+      171,
+      168,
+      120,
+      119,
+      112,
+      111,
+      110
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Estimated annual earnings of selected YouTube channel creators as of September 2023 (in million U.S. dollars)",
+   "short": "Highest-earning YouTube stars 2023",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, it was estimated that YouTube Mr. Beast (Jimmy Donaldson) ranked first as the top-earning YouTuber worldwide with earnings of approximately 82 million U.S. dollars. Comedic duo Rhett & Link ranked second, with an estimate of 35 million U.S. dollars earned during the last measured year. Fourth-ranked Ryan Kaji, who goes by Ryan on his YouTube channel, called Ryan's World, is 12 years old and earned 35 million U.S. dollars in the past year, surpassing YouTuber Jake Paul.",
+   "note": "Worldwide; as of September 2023",
+   "source": "Forbes; Influential Annual earnings in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Mr. Beast (Jimmy Donaldson)",
+    "Rhett & Link",
+    "Preston Arsement (PrestonPlayz)",
+    "Ryan Kaji",
+    "Jake Paul",
+    "Mark Edward Fischbach (Markiplier)",
+    "Logan Paul",
+    "Brent Rivera",
+    "Huda Kattan",
+    "Marques Brownlee",
+    "Mark Rober"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      82,
+      35,
+      35,
+      35,
+      34,
+      30,
+      21,
+      17.5,
+      13,
+      8.5,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Cumulative YouTube advertising revenue paid to content creators and channels from 2020 to 2022 (in billion U.S. dollars)",
+   "short": "Total YouTube advertising payout 2020-2022",
+   "unit": "billion U.S. dollars",
+   "description": "In 2022, YouTube paid a total of nine billion U.S. dollars in advertising earnings to monetizable content creators and channels that were eligible on its platform. The cumulative payout between 2020 and 2022 almost doubled, with the platform paying two billion U.S. dollars to creators in 2021 and 1.5 billion U.S. dollars to creators in 2022.",
+   "note": "Worldwide; 2020 to 2022",
+   "source": "Google; YouTube",
+   "kind": "timeseries",
+   "categories": [
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5.5,
+      7.5,
+      9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 19,
+   "title": "Number of copyright infringements claims submitted to YouTube for review in 1st half 2023, by detection method (in millions)",
+   "short": "Copyright claims to YouTube H1 2023, by detection method",
+   "unit": "millions",
+   "description": "During the first half of 2023, the majority of copyright claims received by YouTube were spotted by the platform's Content ID tool, which cross-checks uploaded videos against a larger file database. Over 2.75 million claims were submitted via Copyright Match Tool, while approximately of two million claims were submitted to the platform via webforms.",
+   "note": "Worldwide; H1 2023",
+   "source": "YouTube",
+   "kind": "categorical",
+   "categories": [
+    "Content ID",
+    "Enterprise webform",
+    "Copyright Match",
+    "Webform"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      980.13,
+      3.14,
+      2.75,
+      1.98
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 20,
+   "title": "Number of copyright infringements claims submitted to YouTube via automatic detection 1st half 2023, by status (in millions)",
+   "short": "Status of automatically detected copyright claims to YouTube H1 2023",
+   "unit": "millions",
+   "description": "During the first half of 2023, only 0.4 percent of the Content ID copyright infringement claims submitted to YouTube were disputed, with around 976.2 million claims went undisputed. Approximately 99 percent of copyright claims submitted to YouTube were identified by the platform's Content ID tool during the examined period.",
+   "note": "Worldwide; H1 2023",
+   "source": "YouTube",
+   "kind": "categorical",
+   "categories": [
+    "Unchallenged Content ID claims",
+    "Disputed claims",
+    "Escalated to appeal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      976.2,
+      3.87,
+      0.67
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Number of disputed copyright infringements claims submitted to YouTube in1st half 2023, by resolution (in millions)",
+   "short": "Disputed YouTube copyright claims H1 2023, by resolution",
+   "unit": "millions",
+   "description": "During the first half of 2023, the majority of the disputed copyright infringement claims submitted to YouTube saw a resolution in favor of the uploaders. Of the approximately 3.87 million disputed claims registered in the examined period, more than 2.5 million claims, succeeded in favor of the uploader. By comparison, 1.5 million claims failed. In this second case, the uploaders could present an appeal for the failed dispute.",
+   "note": "Worldwide; H1 2023",
+   "source": "YouTube",
+   "kind": "categorical",
+   "categories": [
+    "Dispute succeeded",
+    "Dispute failed"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.19,
+      1.5
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Monthly video views of Jimmy Donaldson YouTube channel MrBeast from January 2020 to February 2024 (in millions)",
+   "short": "MrBeast monthly video views 2020-2024",
+   "unit": "millions",
+   "description": "Jimmy Donaldson - operating on YouTube as MrBeast, saw over 1.47 billion views on his popular YouTube channel in February 2024. In November 2022, MrBeast overtook PewDiePie as the most subscribed YouTuber on the platform. Additionally, MrBeast was the most valued content creator in the United States and Canada during the second quarter of 2022, with an Influencer Media value of 4.9 million U.S. dollars.",
+   "note": "Worldwide; January 2020 to February 2024",
+   "source": "Social Blade",
+   "kind": "categorical",
+   "categories": [
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      214.47,
+      230.22,
+      310.93,
+      235.31,
+      296.56,
+      466.55,
+      379.48,
+      537.24,
+      318.66,
+      400.28,
+      297.55,
+      440.75,
+      522.68,
+      269.37,
+      511.36,
+      729.4,
+      360.36,
+      491.4,
+      494.41,
+      412.62,
+      459.66,
+      330.41,
+      582.98,
+      616.71,
+      373,
+      311.91,
+      275.47,
+      358.57,
+      261.32,
+      375.09,
+      468.44,
+      521.18,
+      291.77,
+      600.67,
+      992.1,
+      1777,
+      1262,
+      984.64,
+      946.06,
+      1310,
+      1195,
+      1352,
+      1493,
+      1921,
+      2047,
+      2565,
+      2043,
+      2038,
+      2369,
+      1475
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Number of active streamers on Twitch worldwide from January 2018 to March 2024 (in millions)",
+   "short": "Active streamers on Twitch worldwide 2024",
+   "unit": "millions",
+   "description": "In March 2024, video streaming platform Twitch had approximately 7.94 million active streamers, down from a peak of 9.89 million in January 2021. The platform experienced a boom during the COVID-19 pandemic when many new users used the platform to connect with friends or try their hand at livestreaming. However, this trend normalized again towards the end of the year, and the streaming space has also grown more competitive as platforms other than Twitch have evolved to [...]",
+   "note": "Worldwide; January 2018 to March 2024",
+   "source": "TwitchTracker",
+   "kind": "categorical",
+   "categories": [
+    "2018-01",
+    "2018-02",
+    "2018-03",
+    "2018-04",
+    "2018-05",
+    "2018-06",
+    "2018-07",
+    "2018-08",
+    "2018-09",
+    "2018-10",
+    "2018-11",
+    "2018-12",
+    "2019-01",
+    "2019-02",
+    "2019-03",
+    "2019-04",
+    "2019-05",
+    "2019-06",
+    "2019-07",
+    "2019-08",
+    "2019-09",
+    "2019-10",
+    "2019-11",
+    "2019-12",
+    "2020-01",
+    "2020-02",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2020-11",
+    "2020-12",
+    "2021-01",
+    "2021-02",
+    "2021-03",
+    "2021-04",
+    "2021-05",
+    "2021-06",
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2.97,
+      2.89,
+      3.7,
+      3.32,
+      3.06,
+      3.15,
+      2.96,
+      3.71,
+      3.67,
+      3.65,
+      3.74,
+      4.12,
+      4.54,
+      4.21,
+      4.39,
+      4.18,
+      3.93,
+      3.4,
+      3.36,
+      3.19,
+      2.94,
+      2.97,
+      3.2,
+      3.35,
+      3.94,
+      3.75,
+      5.08,
+      7.21,
+      7.4,
+      7.16,
+      7.46,
+      7.71,
+      7.46,
+      7.84,
+      8.55,
+      9.24,
+      9.89,
+      9.52,
+      9.6,
+      9.36,
+      9.02,
+      8.28,
+      8.34,
+      8.07,
+      7.45,
+      7.28,
+      7.13,
+      7.57,
+      8.56,
+      8.43,
+      8.07,
+      7.68,
+      7.25,
+      7.47,
+      8.04,
+      7.8,
+      7.12,
+      7.13,
+      6.94,
+      7.03,
+      7.55,
+      7.19,
+      7.4,
+      7.25,
+      6.82,
+      7.12,
+      7.59,
+      7.46,
+      7.13,
+      6.89,
+      7.36,
+      7.89,
+      8.36,
+      7.82,
+      7.94
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Most popular streamers on Twitch worldwide in October 2023, by average concurrent viewers",
+   "short": "Most popular Twitch streamers worldwide 2023, by average viewers",
+   "unit": "",
+   "description": "Twitch is an online video streaming service which allows eSports and gaming fans to watch their favorite gamers play a variety of online video games. In October 2023, the most popular streaming channel on Twitch in terms of average viewers was Squeezie. The channel averaged 219 thousand viewers worldwide in the last 30 days.",
+   "note": "Worldwide; October 2023; all languages; average concurrent viewers for the last 30 days",
+   "source": "TwitchTracker",
+   "kind": "categorical",
+   "categories": [
+    "Squeezie",
+    "CBLOL",
+    "PrimeVideo",
+    "KaiCenat",
+    "MaximeBiaggi",
+    "kingsleague",
+    "aminematue",
+    "LEC",
+    "Call of Duty",
+    "playapex"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      219699,
+      92881,
+      73748,
+      68955,
+      66776,
+      64953,
+      56153,
+      55814,
+      52545,
+      51397
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Most watched PUBG Mobile streamers on Twitch worldwide in October 2023, by monthly viewership hours",
+   "short": "PUBG Mobile top streamers on Twitch 2023, by viewership hours",
+   "unit": "",
+   "description": "PlayerUnknown's Battlegrounds (PUBG) was first released for Windows in December 2017, with the mobile version being released worldwide in March 2018. In October 2023, R0o08 was the top-ranked PUBG Mobile streamer, having accumulated approximately 213 thousand viewer hours on Twitch in the preceding 30 days.",
+   "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+   "source": "Twitchmetrics Total viewership hours in the last 30 days",
+   "kind": "categorical",
+   "categories": [
+    "R0o08",
+    "HypoAimGaming",
+    "al3od",
+    "HeadShot_kw",
+    "n00k360",
+    "R8xSKTON",
+    "3almyy",
+    "NAVABp",
+    "whoistezar",
+    "btooome1"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      213204,
+      61175,
+      56344,
+      35961,
+      22686,
+      17726,
+      16765,
+      12954,
+      12428,
+      10891
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 27,
+   "title": "Most watched Garena Free Fire streamers on Twitch worldwide in October 2023, by monthly viewership hours",
+   "short": "Garena Free Fire top streamers on Twitch 2023, by viewership hours",
+   "unit": "",
+   "description": "Garena Free Fire is a battle royale game first released in September 2017. The online-only action-adventure game pits up to 50 players against each other on an island in a fight to the death. In October 2023, SiwiYNion was the top-ranked Garena Free Fire streamer, having accumulated approximately 60,925 viewer hours on Twitch in the preceding 30 days.",
+   "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+   "source": "Twitchmetrics Total viewership hours in the last 30 days",
+   "kind": "categorical",
+   "categories": [
+    "SiwiYNion",
+    "nascary__",
+    "kleuvis0247",
+    "LilbooYT",
+    "Stheffanifr1",
+    "xdonmagdiel",
+    "A3SAGXX",
+    "loud_thurzin",
+    "stunxff_",
+    "soypunicher"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      60925,
+      31592,
+      23627,
+      18773,
+      18031,
+      16499,
+      15400,
+      13978,
+      13718,
+      8161
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Most watched Call of Duty: Warzone streamers on Twitch worldwide in October 2023, by monthly viewership hours",
+   "short": "Call of Duty: Warzone top streamers on Twitch 2023, by viewership hours",
+   "unit": "",
+   "description": "Call of Duty: Warzone is a free-to-play (F2P) battle royale game was first released in March 2020. In October 2023, the official Call of Duty channel was the top-ranked Call of Duty: Warzone streamer, having accumulated approximately 980 thousand viewer hours on Twitch in the preceding 30 days.",
+   "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+   "source": "Twitchmetrics Total viewership hours in the last 30 days",
+   "kind": "categorical",
+   "categories": [
+    "Call of Duty",
+    "Symfuhny",
+    "TeePee",
+    "fifakillvizualz",
+    "Moonryde",
+    "BobbyPoffGaming",
+    "Aydan",
+    "DiazBiffle",
+    "SkyrrozTV",
+    "HusKerrs"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      980178,
+      970948,
+      632796,
+      463854,
+      411498,
+      403775,
+      334270,
+      333245,
+      331499,
+      329682
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Most watched Minecraft streamers on Twitch worldwide in October 2023, by monthly viewership hours",
+   "short": "Minecraft: top streamers on Twitch 2023, by viewership hours",
+   "unit": "",
+   "description": "Minecraft was officially released in 2011 and has grown to become one of the most popular computer games of all time. In October 2023, Cellbit was the top-ranked Minecraft streamer on Twitch, having accumulated over 3.96 million viewer hours on the platform during the preceding 30 days. auronplay ranked second, with users watching approximately 3.8 million hours of content. Minecraft live streamed content reported a peak of 55.2 thousand average viewers on Twitch in September 2023.",
+   "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+   "source": "Twitchmetrics Total viewership hours in the last 30 days",
+   "kind": "categorical",
+   "categories": [
+    "Cellbit",
+    "auronplay",
+    "Roier",
+    "Bagi",
+    "forsen",
+    "Tubbo",
+    "juansguarnizo",
+    "aldo_geo",
+    "Foolish_Gamers",
+    "Forever"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      3962426,
+      3841552,
+      1950574,
+      1670991,
+      1379785,
+      1376110,
+      1186825,
+      1089723,
+      983901,
+      874192
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Most watched Grand Theft Auto V streamers on Twitch worldwide in October 2023, by monthly viewership hours",
+   "short": "GTA V: top streamers on Twitch 2023, by viewership hours",
+   "unit": "",
+   "description": "Grand Theft Auto V, developed by Rockstar North, is an action-adventure PC and PlayStation game launched in 2013. In October 2023, summit1g was the top-ranked Grand Theft Auto V streamer on Twitch, having accumulated over 4.1 million viewer hours on the platform during the preceding 30 days. Streamer  (fantasista_jp) ranked second, with users watching approximately 3.6 million hours of live streamed GTA V content.",
+   "note": "Worldwide; October 2023; total viewership hours (hours live x average viewers) in the last 30 days",
+   "source": "Twitchmetrics Total viewership hours in the last 30 days",
+   "kind": "categorical",
+   "categories": [
+    "summit1g",
+    "(fantasista_jp)",
+    "(kanae_2434)",
+    "(raderaderader)",
+    "PaulinhoLOKObr",
+    "LuquEt4",
+    "Lord_Kebun",
+    "loud_coringa",
+    "JLTomy",
+    "dasMEHDI"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      4123904,
+      3597633,
+      3447573,
+      3112613,
+      2899664,
+      2173373,
+      1068696,
+      2169301,
+      1495361,
+      1111942
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Leading female Twitch streamers from January to May 2023, based on hours watched (in millions)",
+   "short": "Leading female Twitch streamers 2023, based on hours watched",
+   "unit": "millions",
+   "description": "Between January and May 2023, Rivers_gg from Mexico was the most popular female Twitch streamer, with approximately 8.88 million hours of watch time during the measured period. Travel blogger Jinnytty from South Korea was the second-most popular female Twitch streamer, with about 7.6 million hours watched within the first five months of 2023.",
+   "note": "Worldwide; January 1 to May 31, 2023",
+   "source": "Streams Charts Hours watched in millions",
+   "kind": "categorical",
+   "categories": [
+    "Rivers_gg",
+    "Jinnytty",
+    "Saddummy",
+    "AMOURANTH",
+    "Kyedae",
+    "39daph",
+    "Ironmouse",
+    "viichan6",
+    "ayatsunoyuni",
+    "2chamcham2"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      8.88,
+      7.58,
+      6.63,
+      6.44,
+      5.66,
+      4.84,
+      4.66,
+      4.51,
+      4.31,
+      4.22
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Most popular TikTok videos based on total global likes as of March 2023 (in billions)",
+   "short": "Most liked TikTok videos of all time 2023",
+   "unit": "billions",
+   "description": "With barely 10 seconds and 61 million likes, Bella Poach's lip syncing \"M to the B\" by Millie B was the most engaging video on TikTok as of March 2023. Bella Poarch, who as of the beginning of 2023 was the third-most followed creator on the popular social video platform, rose to popularity as a singer and content creators since opening a TikTok account in January 2020. Second ranked \"dancing in front of the bathroom mirror,\" by user @jamie32bsh generated almost 52 million likes between [...]",
+   "note": "Worldwide; February 2023",
+   "source": "TikTok; Yahoo Singapore Number of likes in millions",
+   "kind": "categorical",
+   "categories": [
+    "@bellapoarch - Lip syncing",
+    "@jamie32bsh - Dancing in front of bathroom mirror",
+    "@fredziownik_art - Drawings of mouths",
+    "@thenickluciano - Lip syncing",
+    "@totouchanemu - Dancing filmed by a drone",
+    "@mngnzls - Sang \"Suave\" by El Alfa",
+    "@adrianchateau - Person barking at dog",
+    "@billieeilish - \"Time Warp Scan\" filter",
+    "@khaby.lame - Peeling a banana",
+    "@britishpromise.cats - Cat pawing at camera"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      61,
+      51.8,
+      51,
+      49.7,
+      45,
+      41.4,
+      40.6,
+      40.5,
+      37.9,
+      37.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 34,
+   "title": "Most-followed creators on TikTok worldwide as of March 2024 (in millions)",
+   "short": "Most popular TikTok users worldwide 2024",
+   "unit": "millions",
+   "description": "As of March 2024, TikTok creator and comedian Khabane Lame was the most followed content creator on the platform. Lame, who is based in Italy, reached 161.4 million subscribers. Influencer Charlie D'Amelio followed closely in second position with 152 million followers and singer Bella Poarch ranked third, with a total of 93.9 million followers.",
+   "note": "Worldwide; March 2024",
+   "source": "Social Blade Number of followers in millions",
+   "kind": "categorical",
+   "categories": [
+    "Khabane Lame",
+    "charli d`amelio",
+    "Bella Poarch",
+    "MrBeast",
+    "Addison Rae",
+    "Zach King",
+    "Kimberly Loaiza",
+    "cznburak",
+    "domelipa",
+    "dixie"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      161.4,
+      152,
+      93.9,
+      93.5,
+      88.6,
+      81.2,
+      80.9,
+      74.8,
+      73.2,
+      56.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Estimated annual earnings of selected TikTok channel creators as of September 2023 (in million U.S. dollars)",
+   "short": "Highest-paid TikTok stars 2023",
+   "unit": "million U.S. dollars",
+   "description": "In 2023, it was estimated that TikTok video creator Charlie D' Amelio had annual earnings amounting to 23 million U.S. dollars. Earnings include advertising revenues as well as sponsored content and event appearances. The second highest-earning TikTok star was Senegalese-Italian TikTok star Khaby Lame, with earnings of approximately 16.5 million U.S. dollars during the measured period.",
+   "note": "Worldwide; as of September 2023",
+   "source": "Forbes; Influential Annual earnings in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "Charli D`Amelio",
+    "Khabane (Khaby) Lame",
+    "Zach King",
+    "Dixie D`Amelio",
+    "Christina Najjar (Tinx)",
+    "Mikayla Nogueira",
+    "Addison Rae Easterling",
+    "Alix Earle",
+    "Michael Le (JustMaiko)",
+    "Bella Poarch"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23,
+      16.5,
+      13,
+      11.5,
+      7,
+      7,
+      6,
+      5,
+      4.4,
+      3.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Number of graphic and search elements per TikTok video published worldwide in 2022 and 2023",
+   "short": "Elements found in global TikTok videos 2022-2023",
+   "unit": "",
+   "description": "In 2023, TikTok videos presented on average almost two emojis, while in 2022, the number of emojis per TikTok video was 1.42 on average. Descriptions appeared to have become longer in 2023, with videos spotting on average 26 words, compared to the 21 words per video on average in 2022. The number of hashtags used to facilitate video search on the platform remained at around 6.7 in the last examined year.",
+   "note": "Worldwide; 2022 and 2023; standard posting frequency is three videos weekly",
+   "source": "Metricool",
+   "kind": "categorical",
+   "categories": [
+    "Emojis",
+    "Words",
+    "Hashtags",
+    "Mentions"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      1.42,
+      21,
+      6.7,
+      0.17
+     ]
+    },
+    {
+     "name": "2023",
+     "values": [
+      1.96,
+      25.88,
+      6.69,
+      0.17
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Average number of TikTok videos published per day from March 2023 to August 2023, by account size",
+   "short": "TikTok: videos posted daily 2023, by account size",
+   "unit": "",
+   "description": "From March 2023 to August 2023, TikTok accounts with up to 100 followers and 500 views posted approximately 0.7 videos per day. In comparison, medium accounts - namely TikTok accounts between 1,001 and 10,000 followers and between 1,001 and 5,000 views - posted around 1.5 videos per day, Huge accounts, with over 50,001 followers and over 25,001 views posted two videos per day in the examined period.",
+   "note": "Worldwide; March 1, 2023 to August 31, 2023; based on followers and views",
+   "source": "Metricool",
+   "kind": "categorical",
+   "categories": [
+    "Tiny",
+    "Small",
+    "Medium",
+    "Big",
+    "Huge"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.7,
+      0.9,
+      1.5,
+      1.6,
+      2.3
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Average number of views per video posted on social video app TikTok from March 2023 to August 2023, by account type",
+   "short": "TikTok: number of views per video 2023, by account type",
+   "unit": "",
+   "description": "As of September 2023, personal TikTok accounts tended to generate more views than business accounts. The average number of views for personal TikTok accounts was approximately 32,108. In comparison, business accounts generated on average 23,782 video views in the examined period.",
+   "note": "Worldwide; March 1, 2023 to August 31, 2023",
+   "source": "Metricool",
+   "kind": "categorical",
+   "categories": [
+    "Business",
+    "Personal"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      23782,
+      32108
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "TikTok influencer engagement rates worldwide in 2023, by follower count",
+   "short": "TikTok influencer engagement rates worldwide 2023",
+   "unit": "",
+   "description": "In 2023, TikTok influencers with 1,000 to 10,000 followers had 11.97 percent engagement rates, while influencers wiht over one million followers had an engagement rate of 9.67 percent. As of January 2023, TikTok was used daily by over 15.5 million Android users and 29.7 million iOS users.",
+   "note": "Worldwide; 2023",
+   "source": "HypeAuditor",
+   "kind": "categorical",
+   "categories": [
+    "1,000-10,000",
+    "10,000-50,000",
+    "50,000-500,000",
+    "500,000-1,000,000",
+    ">1,000,000"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.1197,
+      0.1021,
+      0.0948,
+      0.0939,
+      0.0967
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 41,
+   "title": "Selected pet influencers on TikTok in 2023, by followers (in thousands)",
+   "short": "Pet influencers on TikTok 2023, by followers",
+   "unit": "thousands",
+   "description": "As of October 2023, celebrity favorite Doug the Pug had over six million followers on TikTok, while Noodle the Pug, who urges his fans to prioritize their mental health, has around 4.4 million followers on the app. Nala Cat, who is a popular pet influencer on Instagram, amassed 224 thousand followers on TikTok.",
+   "note": "Worldwide; October 2023",
+   "source": "Metricool Number of followers in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Doug the Pug",
+    "Noodle The Pug",
+    "Nala Cat",
+    "Living With Pickles",
+    "Loki The Wolf Dog",
+    "Minnie Penny",
+    "That Pup Stanley",
+    "Liam The Everyday Cat"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6100,
+      4400,
+      224,
+      68,
+      51,
+      11.2,
+      8,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Most popular influencers on Douyin (TikTok) in China as of August 22, 2023 (in millions)",
+   "short": "Most-followed influencers on Douyin in China 2023",
+   "unit": "millions",
+   "description": "As of August 22, 2023, Yang Ge, also known as Crazy Xiaoyangge, was the most popular influencer on Douyin with 118 million fans. Half Past Six of Chen Xiang, a family-style situation comedy directed by Chen Xiang took the second spot with 69 million followers. The third place went to Ares Cheng and his wife Yan Zhen.",
+   "note": "China; as of August 22, 2023",
+   "source": "Website (relangdata.cn) Number of fans in millions",
+   "kind": "categorical",
+   "categories": [
+    "Yang Ge (Crazy Xiaoyangge)",
+    "Chen Xiang (Half Past Six of Chen Xiang)",
+    "Ares Cheng & Yan Zhen",
+    "Zhu Xiaohan",
+    "Li Ziqi",
+    "Little Monk"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      118,
+      69.45,
+      60.45,
+      52.81,
+      49.06,
+      45.65
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Average monthly traffic to OnlyFans.com worldwide from November 2023 to January 2024 (in million visits)",
+   "short": "OnlyFans.com monthly traffic volume 2023-2023",
+   "unit": "million visits",
+   "description": "In January 2024, OnlyFans.com saw approximately one billion monthly website visits from users worldwide. Launched in 2016, OnlyFans is a social and video platform that allows creators to monetize their content via paid subscriptions and tips. In recent years, the London-based platform has become increasingly popular for hosting adult content.",
+   "note": "Worldwide; December 2022 to February 2023",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "Nov 23",
+    "Dec 23",
+    "Jan 24"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      971.44,
+      943.29,
+      1020
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Leading countries for monthly traffic to OnlyFans.com in January 2024 (in million visits)",
+   "short": "Countries with the highest monthly traffic volume to OnlyFans.com 2024",
+   "unit": "million visits",
+   "description": "In January 2024, users in the United States amassed approximately 455 million visits to the content creator website OnlyFans. Canada followed, with approximately 35 million visits to the photo and video sharing platform during the examined month. Users in the United Kingdom and Canada amassed around 33.6 million and 29 million visits to the OnlyFans website, respectively.",
+   "note": "Worldwide; January 2024; organic traffic only",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "Canada",
+    "United Kingdom",
+    "Mexico",
+    "Australia"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      455.61,
+      34.65,
+      33.57,
+      29.12,
+      28.48
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 46,
+   "title": "OnlyFans net revenue worldwide from 2021 to 2022, by region (in million U.S. dollars)",
+   "short": "OnlyFans global net revenue 2021-2022, by region",
+   "unit": "million U.S. dollars",
+   "description": "In 2022, the popular online video and user-generated content OnlyFans, owned and managed by the London-based Fenix International Limited, generated 67 percent of its annual net revenue in the United States market. The company generated almost 200 million U.S. dollars from the rest of the world, while 160 million U.S. dollars were generated in the European and UK markets.",
+   "note": "Worldwide; 2021 to 2022, year ending on November 30.",
+   "source": "Companies House; Fenix International",
+   "kind": "categorical",
+   "categories": [
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "United States",
+     "values": [
+      648.6,
+      732.7
+     ]
+    },
+    {
+     "name": "United Kingdom and Europe",
+     "values": [
+      126.02,
+      159.8
+     ]
+    },
+    {
+     "name": "Rest of the world",
+     "values": [
+      157.12,
+      197.34
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 47,
+   "title": "Pieces of content posted by creators on OnlyFans worldwide from January 2022 to March 2024(in millions)",
+   "short": "Number of OnlyFans posts 2022-2024",
+   "unit": "millions",
+   "description": "According to OnlyFans transparency reports, in March 2024, the platform counted approximately 44 million pieces of posted content. This represents an increase from the previous month, when the platform counted 42.3 million pieces of user-generated content.",
+   "note": "Worldwide; January 2022 to March 2024",
+   "source": "OnlyFans",
+   "kind": "categorical",
+   "categories": [
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      17.24,
+      17.21,
+      18.47,
+      17.04,
+      17.46,
+      17.97,
+      20.42,
+      22.23,
+      22.53,
+      22.91,
+      21.91,
+      20.52,
+      23.15,
+      23.13,
+      27.59,
+      28.31,
+      31.02,
+      31.02,
+      34.86,
+      34.89,
+      34.9,
+      37.82,
+      39.85,
+      40.56,
+      44.25,
+      42.3,
+      44.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 48,
+   "title": "Number of OnlyFans creator accounts worldwide from July 2021 to March 2024",
+   "short": "Number of OnlyFans accounts 2021-2024",
+   "unit": "",
+   "description": "In March 2024, OnlyFans received approximately 197,504 requests to open creator accounts on the platform, 32 percent of which were approved to post on the platform. During the second half, the entertainment and video platform OnlyFans received around 1.97 million requests submitted to open creators' accounts, but only 637.5 thousand were approved to open an account on the platform.",
+   "note": "Worldwide; July 2021 to March 2024",
+   "source": "OnlyFans",
+   "kind": "categorical",
+   "categories": [
+    "2021-07",
+    "2021-08",
+    "2021-09",
+    "2021-10",
+    "2021-11",
+    "2021-12",
+    "2022-01",
+    "2022-02",
+    "2022-03",
+    "2022-04",
+    "2022-05",
+    "2022-06",
+    "2022-07",
+    "2022-08",
+    "2022-09",
+    "2022-10",
+    "2022-11",
+    "2022-12",
+    "2023-01",
+    "2023-02",
+    "2023-03",
+    "2023-04",
+    "2023-05",
+    "2023-06",
+    "2023-07",
+    "2023-08",
+    "2023-09",
+    "2023-10",
+    "2023-11",
+    "2023-12",
+    "2024-01",
+    "2024-02",
+    "2024-03"
+   ],
+   "series": [
+    {
+     "name": "Creator accounts submitted",
+     "values": [
+      279222,
+      247479,
+      168397,
+      175611,
+      184043,
+      181747,
+      246093,
+      221694,
+      218423,
+      213090,
+      272426,
+      347520,
+      361021,
+      375536,
+      344376,
+      342917,
+      324387,
+      282802,
+      397571,
+      347015,
+      413106,
+      408370,
+      391352,
+      351983,
+      330350,
+      322380,
+      271466,
+      254668,
+      247723,
+      194096,
+      244883,
+      209555,
+      197504
+     ]
+    },
+    {
+     "name": "Creator accounts approved",
+     "values": [
+      114065,
+      95975,
+      67433,
+      65659,
+      64132,
+      63158,
+      78511,
+      70127,
+      79594,
+      83230,
+      10454,
+      135102,
+      139265,
+      153408,
+      141241,
+      134363,
+      138932,
+      124546,
+      153179,
+      134148,
+      141853,
+      136317,
+      124513,
+      111061,
+      108035,
+      103848,
+      87345,
+      82618,
+      82023,
+      62603,
+      78844,
+      67301,
+      62645
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 50,
+   "title": "Leading Kick live streamers worldwide in April 2023, by hours watched (in millions)",
+   "short": "Most popular Kick streamers 2023, by hours watched",
+   "unit": "millions",
+   "description": "In April 2023, Adin Ross was the most popular streamer on the newly launched platform Kick with over 6.25 million hours on content watched by global audiences during the month. TrainwreckTV, who helped create and launch the platform in October 2022, ranked second with 1.93 million hours of live content watched. Roshtein ranked third, with 1.91 million hours of live content watched in April 2023.",
+   "note": "Worldwide; April 2023",
+   "source": "StreamElements; Streams Charts Hours watched in millions",
+   "kind": "categorical",
+   "categories": [
+    "Adinross",
+    "Trainwreck",
+    "Roshtein",
+    "Ac7ionman",
+    "Destiny",
+    "Mellstroy11",
+    "Classybeef",
+    "Westcol",
+    "Xposed",
+    "Odablock"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6.25,
+      1.93,
+      1.91,
+      1.52,
+      1.27,
+      1.25,
+      0.87,
+      0.84,
+      0.56,
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 51,
+   "title": "Leading female Kick streamers from in July 2023, based on hours watched (in 1,000s)",
+   "short": "Leading female Kick streamers 2023, based on hours watched",
+   "unit": "1,000s",
+   "description": "In July 2023, performer and internet personality Amouranth was the most popular female content creator on the live streaming platform, with almost 500 thousand watched hours from users worldwide. Amouranth abandoned Twitch to join the competing live platform Kick in June 2023. Thedandangler ranked second with around 200 thousand hours watched.",
+   "note": "Worldwide; July 1 to 30, 2023",
+   "source": "Streams Charts Hours watched in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Amouranth",
+    "Thedandangler",
+    "Elisabetexo",
+    "Alinarose",
+    "Crystal",
+    "Kittycass",
+    "Neonjade",
+    "Actuallyangel",
+    "Corvifeon",
+    "Woodbabee"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      496,
+      192,
+      176,
+      146,
+      97,
+      89,
+      88,
+      83,
+      82,
+      70
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 52,
+   "title": "Leading Kick streamers in the platform's Creator Incentive program in August 2023, based on hours watched (in 1,000s)",
+   "short": "Emerging Kick streamers 2023, based on hours watched",
+   "unit": "1,000s",
+   "description": "In August 2023, Crazytawn was the leading emerging creator among the chosen Kick streamers to join the platform's Creative Incentive program. Kick, which launched in December 2022, is a live streaming platform that charges five percent of streamers' revenues, compared to the 30 percent rate charged in commissions by Twitch. On August 14, 2023, Kick announced it was starting its first Creator Incentive Program. Loochy was the second most popular emerging content creator on [...]",
+   "note": "August 1 to 14, 2023",
+   "source": "Streams Charts Hours watched in thousands",
+   "kind": "categorical",
+   "categories": [
+    "Crazytawn",
+    "Loochy",
+    "Ryda",
+    "Averagedad",
+    "Testy",
+    "Chopstix",
+    "Kingwoolz",
+    "Beckatv",
+    "Sgt_jackson12",
+    "Essie_gotback_kick"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      50,
+      45,
+      41,
+      38,
+      31,
+      20,
+      17,
+      17,
+      14,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 53,
+   "title": "Estimated earnings of live streaming creators worldwide on Kick based on number of subscribers as of April 2023 (in U.S. dollars)",
+   "short": "Global Kick creators earnings based on number of subscribers 2023",
+   "unit": "U.S. dollars",
+   "description": "As of April 2023, online live platform Kick reported that for 100 subscribers creators would earn 475 U.S. dollars. Kick was launched in December 2022 as a direct competitor to Twitch. Kick reportedly charges five percent of streamers revenues, in comparison to Twitch which is reported to retain between 50 and 30 percent of creator's earnings. Kick, which signed up streamers Amouranth and xQc in June 2023, reported that creators with 5,000 subscribers would be able to earn almost [...]",
+   "note": "Worldwide; April 2023",
+   "source": "Kick",
+   "kind": "categorical",
+   "categories": [
+    "100 subs",
+    "250 subs",
+    "500 subs",
+    "1000 subs",
+    "5000 subs"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      475,
+      1187,
+      2375,
+      4750,
+      23750
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 54,
+   "title": "Most popular live streaming slots and casino channels worldwide from January to June 2023, by hours watched (in millions)",
+   "short": "Leading live streaming global gambling channels 2023, by hours watched",
+   "unit": "millions",
+   "description": "In the first half of 2023, Kick streamer Roshtein hosted the most popular slots and casino channel, generating almost 14 million hours of watched live content. Twitch channel SlotsMarko ranked second, with approximately 5.5 million hours watched, while Kick's channel ClassyBeef ranked third, with 4.82 million hours watched by global users. In 2022, Twitch announced the banning of unlicensed gambling livestreams on the platform.",
+   "note": "Worldwide; January 1 to June 30, 2023; casino jackpot, slots, virtual casino live streams. Channels hosted on Twitch and Kick",
+   "source": "Streams Charts Hours watched in millions",
+   "kind": "categorical",
+   "categories": [
+    "Roshtein",
+    "SlotsMarko",
+    "Classybeef",
+    "Trainwreckstv",
+    "Mellstroy111",
+    "CasinoDaddy",
+    "Syztmz",
+    "Adinross",
+    "Xposed",
+    "SkipNhO"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      13.77,
+      5.49,
+      4.82,
+      4.39,
+      4.3,
+      4.28,
+      2.56,
+      2.23,
+      2.16,
+      1.77
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 56,
+   "title": "Number of Vimeo subscribers worldwide in 2021 and 2023, by division (in 1,000s)",
+   "short": "Vimeo: annual paid subscribers count 2021-2023, by division",
+   "unit": "1,000s",
+   "description": "In 2023, software as a service Vimeo saw approximately 1.38 million paid subscribers for its self-serve and add-ons division. This represented a decrease compared to the previous year when Vimeo had approximately 1.55 million paying subscribers. Additionally, the company saw around 3,300 paying subscribers to its video enterprise division. Vimeo, which used to be a segment of the IAC/InterActiveCorp, went public in May 2021.",
+   "note": "Worldwide; 2021 and 2023",
+   "source": "IAC; Vimeo",
+   "kind": "timeseries",
+   "categories": [
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "Self-serve & add ons",
+     "values": [
+      1505,
+      1554.7,
+      1379.7
+     ]
+    },
+    {
+     "name": "Vimeo enterprise",
+     "values": [
+      1.6,
+      2.2,
+      3.3
+     ]
+    },
+    {
+     "name": "Other",
+     "values": [
+      138.7,
+      93.3,
+      67
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 57,
+   "title": "Vimeo average revenue per user (ARPU) in 2020 and 2021 (in U.S. dollars)",
+   "short": "Vimeo: average revenue per user 2020-2021",
+   "unit": "U.S. dollars",
+   "description": "In 2021, Vimeo saw an average revenue per user (ARPU) of approximately 243 U.S. dollars. Vimeo, which offers B2B video software solutions, used to be a segment of the IAC/InterActiveCorp before going public in May 2021.",
+   "note": "Worldwide; 2020 and 2021",
+   "source": "IAC; Vimeo",
+   "kind": "categorical",
+   "categories": [
+    "2020",
+    "2021"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      205,
+      243
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 58,
+   "title": "Average monthly traffic to Cameo.com worldwide from December 2022 to February 2023 (in million visits)",
+   "short": "Cameo.com monthly traffic volume 2022-2023",
+   "unit": "million visits",
+   "description": "In February 2023, Cameo.com saw approximately 4.7 million monthly website visits from users worldwide. Launched in 2016, the platform allows fans to request personalized messages from their favorite celebrity for a fee. In 2021, \"The Office\" actor Brian Baumgartner was among the most popular celebrities on Cameo, charging 225 U.S. dollars to fans for personalized video content.",
+   "note": "Worldwide; December 2022 to February 2023",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "Dec 22",
+    "Jan 23",
+    "Feb 23"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      6.2,
+      4.2,
+      4.7
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 59,
+   "title": "Leading countries for monthly traffic to Cameo.com in February 2023 (in 1,000s visits)",
+   "short": "Countries with the highest monthly traffic volume to Cameo.com 2023",
+   "unit": "1,000s visits",
+   "description": "In February 2023, users in the United States amassed approximately 2.5million visits to the website Cameo.com. Launched in 2016, the Cameo platform allows fans to request personalized messages from their favorite celebrity for a fee. The platform hosts a wide range of well-known personalities, from Instagram creators to rappers and famous actors, as well as reality show personalities. In the examined period, users in the United Kingdom amassed 383.3 thousand visits to the Cameo [...]",
+   "note": "Worldwide; February 2023",
+   "source": "Semrush",
+   "kind": "categorical",
+   "categories": [
+    "United States",
+    "United Kingdom",
+    "Australia",
+    "Canada",
+    "Israel"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2500,
+      383.3,
+      294.4,
+      248.3,
+      131.9
+     ]
+    }
+   ]
+  }
+ ]
+}

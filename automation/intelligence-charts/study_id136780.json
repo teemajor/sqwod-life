@@ -1,0 +1,1580 @@
+{
+ "studyId": "136780",
+ "study": "fitness industry in the united states",
+ "file": "research/statista/study_id136780_fitness-industry-in-the-united-states.pptx",
+ "extractedAt": "2026-10-24",
+ "charts": [
+  {
+   "slide": 5,
+   "title": "Revenue of the health club industry in the United States from 2000 to 2020 (in billion U.S. dollars)",
+   "short": "U.S. health club industry revenue 2000-2020",
+   "unit": "billion U.S. dollars",
+   "description": "This statistic shows the revenue of health clubs in the United States from 2000 to 2020. In 2020, the U.S. fitness center industry suffered significant losses from the previous year's revenues as a result of the coronavirus (COVID-19) pandemic.",
+   "note": "United States; 2000 to 2020",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2000",
+    "2001",
+    "2002",
+    "2003",
+    "2004",
+    "2005",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2019",
+    "2020"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      11.6,
+      12.2,
+      13.1,
+      14.1,
+      14.8,
+      15.9,
+      17.6,
+      18.7,
+      19.1,
+      19.5,
+      20.3,
+      21.4,
+      21.8,
+      22.4,
+      24.2,
+      25.8,
+      27.6,
+      30.01,
+      35.03,
+      14.63
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 6,
+   "title": "Economic impact of the fitness industry in the United States in 2021 (in billion U.S. dollars)",
+   "short": "Fitness club industry value added in the U.S. 2021",
+   "unit": "billion U.S. dollars",
+   "description": "The fitness club industry contributed in excess of 35 billion U.S. dollars to the United States economy in 2021. Of this revenue generated, almost 20 billion U.S. dollars consisted of direct value added to the economy.",
+   "note": "United States; 2021",
+   "source": "Deloitte; IHRSA; Website (healthclubnews.org)",
+   "kind": "categorical",
+   "categories": [
+    "Direct value added",
+    "Indirect value added"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      19.98,
+      15.87
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 7,
+   "title": "Leading health club industry companies in the United States in 2021, by revenue (in million U.S. dollars)",
+   "short": "Health & fitness club companies by revenue in the United States 2021",
+   "unit": "million U.S. dollars",
+   "description": "Life Time Fitness, which had 160 health clubs across the United States in 2021, reported revenue of 1.32 billion U.S. dollars in that year. Meanwhile, Fitness International LLC, also known as LA Fitness, reported revenue of 2.1 billion U.S. dollars in 2021.",
+   "note": "United States; 2021",
+   "source": "Club Industry Revenue in million U.S. dollars",
+   "kind": "categorical",
+   "categories": [
+    "LA Fitness",
+    "Life Time",
+    "Planet Fitness",
+    "Bay Club",
+    "Orangetheory Fitness",
+    "Xponential Fitness",
+    "F45 Training",
+    "Rachas Inc., Chuze Fitness",
+    "Midtown Athletic Clubs",
+    "East Bank Club",
+    "Mountainside Fitness",
+    "The Houstonian Club",
+    "DMB Sports Clubs Limited Partnership",
+    "Vida Fitness",
+    "Powerhouse Gyms International"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2100,
+      1320,
+      587,
+      185,
+      178.5,
+      155.1,
+      134,
+      77.96,
+      72,
+      52,
+      48.1,
+      38.12,
+      32.6,
+      31,
+      31
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 8,
+   "title": "Leading health club industry companies in the United States in 2021, by number of facilities",
+   "short": "Health clubs ranked by number of facilities in the U.S. 2021",
+   "unit": "",
+   "description": "In 2021, Planet Fitness topped the list of health club companies by number of facilities in the United States. In that year, Planet Fitness operated a total of 2,254 health clubs in the country. Coming in second was Orangetheory Fitness with 1,262 health clubs in the United States.",
+   "note": "United States; 2021; only health clubs solely operating in North America",
+   "source": "Club Industry Number of clubs",
+   "kind": "categorical",
+   "categories": [
+    "Planet Fitness",
+    "Orangetheory Fitness",
+    "Xponential Fitness LLC",
+    "F45 Training"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      2254,
+      1262,
+      1965,
+      1749
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 10,
+   "title": "Number of health clubs in the United States from 2008 to 2022",
+   "short": "Number of U.S. health clubs & fitness centers 2008-2022",
+   "unit": "",
+   "description": "The number of fitness facilities in the United States has fallen sharply in recent years as a result of the coronavirus (COVID-19) pandemic. In 2022, there were around 31 thousand health clubs in the United States.",
+   "note": "United States; 2008 to 2022",
+   "source": "IHRSA",
+   "kind": "timeseries",
+   "categories": [
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      30022,
+      29750,
+      29890,
+      29960,
+      30500,
+      32150,
+      34460,
+      36180,
+      36540,
+      38477,
+      39570,
+      41370,
+      34337,
+      32269,
+      31028
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 11,
+   "title": "Number of health clubs in the United States in 2021, by state",
+   "short": "U.S. states with the most fitness centers 2021",
+   "unit": "",
+   "description": "The state of California on the west coast of the United States is home to over five thousand health clubs. Meanwhile, New York state on the east coast houses around 2,200 gyms. These health clubs were severely impacted by the coronavirus (COVID-19) pandemic, as many were forced to close for months on end to stem the spread of the virus.",
+   "note": "United States; 2021",
+   "source": "IHRSA",
+   "kind": "categorical",
+   "categories": [
+    "California",
+    "Texas",
+    "Florida",
+    "New York"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      5123,
+      3285,
+      2809,
+      2263
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 12,
+   "title": "Most popular gyms in the United States as of April 2022",
+   "short": "Most used gyms in the U.S. as of April 2022",
+   "unit": "",
+   "description": "As of April 2022, Planet Fitness was the most popular fitness center among gym members in the United States. Overall, 26.6 percent of surveyed gym members claimed to exercise at Planet Fitness the most often.",
+   "note": "United States; March 29 to April 5, 2022; 2,157 respondents; 18 years and older; respondents who exercise and are a member of a gym",
+   "source": "Bespoke Intel Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Planet Fitness",
+    "LA Fitness",
+    "24 Hour Fitness",
+    "Gold's Gym",
+    "Anytime Fitness",
+    "New York Sports Clubs",
+    "Equinox Fitness",
+    "Lifetime Fitness",
+    "Crunch Fitness",
+    "O2 Fitness",
+    "Orangetheory Fitness",
+    "Washington Sports Clubs",
+    "Boston Sports Clubs",
+    "Philadelphia Sports Clubs",
+    "Curves International"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.266,
+      0.095,
+      0.095,
+      0.052,
+      0.039,
+      0.036,
+      0.034,
+      0.03,
+      0.027,
+      0.02,
+      0.011,
+      0.008,
+      0.007,
+      0.007,
+      0.007
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 13,
+   "title": "Gym penetration rate in selected metro areas in the United States as of April 2022",
+   "short": "Health club membership rate in metro areas in the U.S. as of April 2022",
+   "unit": "",
+   "description": "Over one fifth of residents in San Francisco had a gym membership between June 2021 and April 2022. Meanwhile, the health club penetration rate in New York City stood at 16.8 percent.",
+   "note": "United States; June 2021 to April 2022",
+   "source": "Nielsen; The Seattle Times Gym membership rate",
+   "kind": "categorical",
+   "categories": [
+    "San Francisco",
+    "San Diego",
+    "Atlanta",
+    "Seattle",
+    "Salt Lake City",
+    "Boston",
+    "New York",
+    "Sacramento"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.216,
+      0.193,
+      0.193,
+      0.184,
+      0.179,
+      0.174,
+      0.168,
+      0.159
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 14,
+   "title": "Share of visits to fitness chains in the United States in the 1st quarter of 2023, by chain",
+   "short": "Share of gym visits in the U.S. in Q1 2023, by chain",
+   "unit": "",
+   "description": "In the first quarter of 2023, almost half of all visits to fitness chains in the United States were made to Planet Fitness locations. Meanwhile, just over 10 percent of gym visits in that quarter were made to LA Fitness gyms.",
+   "note": "United States; Q1 2023; * Anytime Fitness, Life Time, Gold's Gym, EoS Fitness, Vasa Fitness, The Edge Fitness, Chuze Fitness, and more. Read more",
+   "source": "Placer.ai",
+   "kind": "categorical",
+   "categories": [
+    "Planet Fitness",
+    "LA Fitness",
+    "Crunch Fitness",
+    "24 Hour Fitness",
+    "Other fitness chains*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.474,
+      0.106,
+      0.071,
+      0.066,
+      0.283
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 15,
+   "title": "Number of LA Fitness gyms in the United States as of May 2024, by state",
+   "short": "Number of LA Fitness locations in the U.S. 2024, by state",
+   "unit": "",
+   "description": "Founded in 1984, LA Fitness had almost 550 gyms across the United States as of May 2024. Unsurprisingly given the name of the company, the state with the highest amount of LA Fitness locations was California, with 92 gyms in the state.",
+   "note": "United States; as of May 2024",
+   "source": "ScrapeHero",
+   "kind": "categorical",
+   "categories": [
+    "California",
+    "Florida",
+    "Texas",
+    "Georgia",
+    "Illinois",
+    "Pennsylvania",
+    "New York",
+    "Washington",
+    "New Jersey",
+    "Arizona"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      92,
+      79,
+      74,
+      40,
+      34,
+      32,
+      28,
+      25,
+      25,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 17,
+   "title": "Number of fitness industry businesses in the United States from 2012 to 2023",
+   "short": "Fitness industry enterprises in the United States 2023",
+   "unit": "",
+   "description": "There were over 115 thousand businesses in the fitness industry in the United States in 2023. This marked a slight increase on the previous year's total of approximately 113 thousand businesses.",
+   "note": "United States; 2012 to 2023; * Forecast Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      88627,
+      88921,
+      92555,
+      94603,
+      95609,
+      98642,
+      100977,
+      109602,
+      108287,
+      113003,
+      112912,
+      115047
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 18,
+   "title": "Number of employees in the gym, health and fitness club industry in the United States from 2012 to 2021, with a forecast for 2023",
+   "short": "Fitness club employment in the United States 2012-2023",
+   "unit": "",
+   "description": "There were over 887 thousand people employed in the gym, health and fitness club industry in the United States in 2022. This represented a fall of almost 25 thousand employees on the previous year.",
+   "note": "United States; 2012 to 2022; *Forecast. Read more",
+   "source": "IBISWorld",
+   "kind": "timeseries",
+   "categories": [
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023*"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      645269,
+      664300,
+      703257,
+      726085,
+      753042,
+      795848,
+      827250,
+      854969,
+      962011,
+      911750,
+      887638,
+      899275
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 21,
+   "title": "Average percentage of the population engaged in sports, exercise, and recreation per day in the United States from 2010 to 2022",
+   "short": "Percentage of U.S. population engaged in sports and exercise per day 2010-2022",
+   "unit": "",
+   "description": "In 2022, it was found that 21.2 percent of men in the United States participated in sports, exercise, and recreational activities daily, compared to only 19.1 percent of women. These statistics highlight a notable difference in the daily engagement of different genders in sporting activities. Other factors influencing this participation include socioeconomic status, age, disability, ethnicity, geography, personal interests, and societal expectations. These barriers can prevent individuals from having [...]",
+   "note": "United States; 2010 to 2022; Approx. 8,100 (2022); 15 years and older",
+   "source": "Bureau of Labor Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "All",
+     "values": [
+      0.185,
+      0.186,
+      0.193,
+      0.186,
+      0.191,
+      0.204,
+      0.209,
+      0.19,
+      0.191,
+      0.2,
+      0.234,
+      0.215,
+      0.201
+     ]
+    },
+    {
+     "name": "Men",
+     "values": [
+      0.215,
+      0.204,
+      0.217,
+      0.21,
+      0.215,
+      0.229,
+      0.227,
+      0.202,
+      0.211,
+      0.217,
+      0.242,
+      0.234,
+      0.212
+     ]
+    },
+    {
+     "name": "Women",
+     "values": [
+      0.156,
+      0.169,
+      0.17,
+      0.163,
+      0.168,
+      0.181,
+      0.192,
+      0.178,
+      0.172,
+      0.185,
+      0.226,
+      0.196,
+      0.191
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 22,
+   "title": "Average hours per day spent on leisure and sports in the United States from 2009 to 2022, by employment status",
+   "short": "Hours per day spent on leisure and sports in the U.S. by employment status 2022",
+   "unit": "",
+   "description": "When surveyed in 2022, respondents in the United States who were not employed answered that they spent an average of 6.9 hours a day on leisure and sports. This was a decrease of 0.03 hours from the previous year. Meanwhile, respondents who were employed spent marginally more time on sports and leisure a day in 2022 than in 2021, with the average time rising from 4.21 to 4.22 hours.",
+   "note": "United States; 2009 to 2022; Approx. 8,100 (2022); 25 years and older",
+   "source": "Bureau of Labor Statistics",
+   "kind": "timeseries",
+   "categories": [
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "Employed",
+     "values": [
+      4.24,
+      4.22,
+      4.18,
+      4.34,
+      4.21,
+      4.26,
+      4.18,
+      4.16,
+      4.2,
+      4.22,
+      4.02,
+      4.3,
+      4.21,
+      4.22
+     ]
+    },
+    {
+     "name": "Employed full-time",
+     "values": [
+      4.08,
+      3.99,
+      3.95,
+      4.09,
+      4.02,
+      4.05,
+      4.05,
+      4,
+      3.92,
+      4.03,
+      3.84,
+      4.16,
+      4.01,
+      4.05
+     ]
+    },
+    {
+     "name": "Employed part-time",
+     "values": [
+      4.8,
+      4.97,
+      4.95,
+      5.11,
+      4.87,
+      5.03,
+      4.62,
+      4.69,
+      5.16,
+      4.96,
+      4.66,
+      4.78,
+      5.01,
+      4.89
+     ]
+    },
+    {
+     "name": "Not employed",
+     "values": [
+      6.89,
+      6.68,
+      6.85,
+      6.97,
+      6.87,
+      6.93,
+      6.86,
+      6.75,
+      6.97,
+      7.06,
+      6.68,
+      7.28,
+      6.93,
+      6.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 23,
+   "title": "Most popular sports activities in the U.S. as of March 2024",
+   "short": "Most popular sports activities in the U.S. 2024",
+   "unit": "",
+   "description": "We asked U.S. consumers about \"Most popular sports activities\" and found that \"Hiking\" takes the top spot, while \"Winter sports (e.g., skiing, snowboarding, ice skating)\" is at the other end of the ranking.",
+   "note": "United States; April 2023 to March 2024; 22327 respondents; 18-64 years; respondents who do sports or exercise at least occasionally",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Hiking",
+    "Fitness, aerobics, cardio",
+    "Basketball",
+    "Dancing",
+    "Hunting / Fishing",
+    "Swimming / Diving",
+    "American Football / Flag Football",
+    "Cycling",
+    "Running / Jogging",
+    "Baseball / Softball",
+    "Yoga / Pilates",
+    "Golf",
+    "Soccer",
+    "Badminton",
+    "Tennis"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.34,
+      0.33,
+      0.31,
+      0.26,
+      0.26,
+      0.25,
+      0.24,
+      0.24,
+      0.23,
+      0.21,
+      0.2,
+      0.17,
+      0.15,
+      0.13,
+      0.13
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 24,
+   "title": "Leading outdoor activities in the United States in 2022, by number of participants (in millions)",
+   "short": "Most popular outdoor activities in the U.S. 2022",
+   "unit": "millions",
+   "description": "Hiking was the most popular outdoor activity amongst people in the United States in 2022, accounting for nearly 60 million participants. The second most popular outdoor sport in the North American country was running, jogging, and trail running with 56.9 million participants during the same year.",
+   "note": "United States; 6 years and older",
+   "source": "Outdoor Foundation; Outdoor Industry Association; SFIA; Sports Marketing Surveys USA Number of participants in millions",
+   "kind": "categorical",
+   "categories": [
+    "Hiking",
+    "Running, jogging and trail running",
+    "Road biking, mountain biking and BMX",
+    "Freshwater, saltwater and fly fishing",
+    "Car, backyard and RV camping"
+   ],
+   "series": [
+    {
+     "name": "2022",
+     "values": [
+      59.6,
+      56.9,
+      54.7,
+      54.5,
+      51.4
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 25,
+   "title": "Participation rate in outdoor sports in the United States in 2021, by age group",
+   "short": "Participation rate in outdoor sports 2021, by age group",
+   "unit": "",
+   "description": "In 2021, 60.8 percent of Gen Z respondents stated that they participated in outdoor sports, making them the generation with the highest participation. The generation with the lowest participation in outdoor sports was the Boomers.",
+   "note": "United States; 2021; 18,000 respondents; six years and older",
+   "source": "Physical Activity Council",
+   "kind": "categorical",
+   "categories": [
+    "Boomers (1945-1964)",
+    "Gen X (1965-1979)",
+    "Millennials (1980-1999)",
+    "Gen Z (2000+)"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.419,
+      0.504,
+      0.605,
+      0.608
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 26,
+   "title": "Types of sports / activities rich Americans regularly participated in in the United States in 2022",
+   "short": "Types of sports / activities high-income household members participated in the U.S.",
+   "unit": "",
+   "description": "The statistic shows the sports/exercise activities members of affluent households in the United States participated in in 2022. In 2022, 29 percent of respondents who stated their income was high said they participated in basketball.",
+   "note": "United States; four waves from 03 January 2022 to 16 December 2022; 7316 respondents; 18-64 years",
+   "source": "Statista Consumer Insights Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Fitness, aerobics, cardio",
+    "Hiking",
+    "Basketball",
+    "Cycling",
+    "Swimming / Diving",
+    "American Football / Flag Football",
+    "Running / Jogging",
+    "Hunting / Fishing",
+    "Golf",
+    "Dancing",
+    "Yoga / Pilates",
+    "Baseball / Softball",
+    "Soccer",
+    "Badminton",
+    "Table Tennis"
+   ],
+   "series": [
+    {
+     "name": "Spalte1",
+     "values": [
+      0.39,
+      0.37,
+      0.29,
+      0.28,
+      0.26,
+      0.26,
+      0.24,
+      0.23,
+      0.23,
+      0.22,
+      0.21,
+      0.21,
+      0.15,
+      0.15,
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 28,
+   "title": "Revenue of the sports equipment industry in the United States from 2018 to 2024, with a forecast to 2028 (in billion U.S. dollars)",
+   "short": "Revenue of the sports equipment industry in the U.S. 2018-2028",
+   "unit": "billion U.S. dollars",
+   "description": "The revenue in the 'Sports Equipment' segment of the toys & hobby market in the United States was forecast to continuously increase between 2024 and 2028 by in total 3.5 billion U.S. dollars (+17.98 percent). After the eighth consecutive increasing year, the indicator is estimated to reach 22.99 billion U.S. dollars and therefore a new peak in 2028.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      14.97,
+      15.59,
+      15.55,
+      16.26,
+      17.44,
+      18.47,
+      19.47,
+      20.35,
+      21.23,
+      22.11,
+      22.99
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 29,
+   "title": "Wholesale sales of home gyms for consumers in the United States from 2007 to 2023 (in million U.S. dollars)",
+   "short": "Wholesale sales (consumer segment) of home gyms in the U.S. 2007-2023",
+   "unit": "million U.S. dollars",
+   "description": "This statistic shows the wholesale sales of home gyms in the United States from 2007 to 2023. In 2023, wholesale sales of these products reached an estimated 463 million U.S. dollars, falling slightly from the previous year. This figure nevertheless represented a 9.3 percent increase on-year..",
+   "note": "United States; 2007 to 2023",
+   "source": "SFIA",
+   "kind": "timeseries",
+   "categories": [
+    "2007",
+    "2008",
+    "2009",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      286,
+      232,
+      199,
+      199,
+      194,
+      190,
+      178,
+      215,
+      211,
+      210,
+      204,
+      209,
+      221,
+      384,
+      466,
+      424,
+      463
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 30,
+   "title": "Sports equipment market revenue in the United States from 2018 to 2028, by product type (in billion U.S. dollars)",
+   "short": "Sports equipment market revenue in the U.S. from 2018 to 2028, by product type",
+   "unit": "billion U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. Considering the nine different types presented in this statistics, 'Sports Equipment' leads the ranking with 22.99 billion U.S. dollars revenue. Contrastingly, 'Racket Sports Equipment' is ranked last, with 0.54 billion U.S. dollars. Their difference, compared to the Sports Equipment, lies at 22.45 billion U.S. dollars.",
+   "note": "United States; 2018 to 2028",
+   "source": "Statista; Statista Consumer Market Insights",
+   "kind": "timeseries",
+   "categories": [
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028"
+   ],
+   "series": [
+    {
+     "name": "Exercise Equipment",
+     "values": [
+      4.38,
+      4.54,
+      4.65,
+      4.88,
+      5.16,
+      5.43,
+      5.71,
+      5.98,
+      6.25,
+      6.52,
+      6.79
+     ]
+    },
+    {
+     "name": "Outdoor Equipment",
+     "values": [
+      3.22,
+      3.34,
+      3.42,
+      3.59,
+      3.8,
+      4,
+      4.2,
+      4.4,
+      4.6,
+      4.8,
+      5
+     ]
+    },
+    {
+     "name": "Winter Sports Equipment",
+     "values": [
+      2.38,
+      2.49,
+      2.37,
+      2.45,
+      2.65,
+      2.85,
+      3,
+      3.11,
+      3.22,
+      3.33,
+      3.43
+     ]
+    },
+    {
+     "name": "Golf Equipment",
+     "values": [
+      1.92,
+      2.02,
+      1.96,
+      2.05,
+      2.27,
+      2.41,
+      2.56,
+      2.67,
+      2.79,
+      2.91,
+      3.03
+     ]
+    },
+    {
+     "name": "Fishing Equipment",
+     "values": [
+      1.26,
+      1.31,
+      1.26,
+      1.31,
+      1.44,
+      1.53,
+      1.63,
+      1.7,
+      1.77,
+      1.85,
+      1.92
+     ]
+    },
+    {
+     "name": "Water Sports Equipment",
+     "values": [
+      0.81,
+      0.85,
+      0.83,
+      0.87,
+      0.96,
+      1.02,
+      1.08,
+      1.13,
+      1.18,
+      1.23,
+      1.28
+     ]
+    },
+    {
+     "name": "Team Sports Equipment",
+     "values": [
+      0.65,
+      0.67,
+      0.69,
+      0.72,
+      0.77,
+      0.81,
+      0.85,
+      0.89,
+      0.93,
+      0.97,
+      1.01
+     ]
+    },
+    {
+     "name": "Racket Sports Equipment",
+     "values": [
+      0.35,
+      0.36,
+      0.37,
+      0.39,
+      0.41,
+      0.43,
+      0.45,
+      0.47,
+      0.49,
+      0.52,
+      0.54
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 31,
+   "title": "Most popular home exercise equipment among users in the United States as of April 2022",
+   "short": "Most common home fitness equipment in the U.S. as of April 2022",
+   "unit": "",
+   "description": "According to an April 2022 report, weightlifting equipment was the most common home exercise equipment for survey participants from the United States. Specifically, 30.4 percent of respondents claimed to own weightlifting equipment in their home.",
+   "note": "United States; March 29 to April 5, 2022; 9,706 respondents; 18 years and older",
+   "source": "Bespoke Intel Share of respondents",
+   "kind": "categorical",
+   "categories": [
+    "Weightlifting equipment",
+    "Treadmill",
+    "Resistance bands",
+    "Spin bike",
+    "Boxing/punching bag",
+    "Elliptical machine",
+    "Stair climber",
+    "Rowing machine",
+    "Display guided workout equipment like mirror/tonal/tempo, etc",
+    "None of the above"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.304,
+      0.257,
+      0.243,
+      0.15,
+      0.111,
+      0.106,
+      0.073,
+      0.068,
+      0.047,
+      0.369
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 32,
+   "title": "Most common brand of treadmill owned in the United States as of April 2022",
+   "short": "Most common brand of treadmill in the United States as of April 2022",
+   "unit": "",
+   "description": "As of April 2022, NordicTrack was the most common brand of treadmill owned by individuals in the United States. According to survey results, 31.9 percent of treadmill owners in the U.S. were using a NordicTrack product. Peloton treadmills were the second most commonly owned brand of treadmill among respondents.",
+   "note": "United States; March 29 to April 5, 2022; 2,494 respondents; 18 years and older; respondents who own a treadmill",
+   "source": "Bespoke Intel",
+   "kind": "categorical",
+   "categories": [
+    "NordicTrack",
+    "Peloton",
+    "ProForm",
+    "Bowflex",
+    "Schwinn",
+    "Echelon",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.319,
+      0.205,
+      0.123,
+      0.105,
+      0.061,
+      0.061,
+      0.127
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 33,
+   "title": "Most common reasons for not owning fitness equipment at home in the United States as of April 2022",
+   "short": "Most common reasons for not owning fitness gear at home in the U.S. as of April 2022",
+   "unit": "",
+   "description": "As of April 2022, the price of fitness equipment was the leading reason why people did not own fitness equipment in their homes in the United States. Specifically, 35.6 percent of survey participants claimed affordability to be the main reason why they did not own such equipment at home. Additionally, about a fifth of respondents highlighted the lack of space in their homes as another deciding factor.",
+   "note": "United States; March 29 to April 5, 2022; 3,578 respondents; 18 years and older; respondents who do not own fitness equipment in their home",
+   "source": "Bespoke Intel",
+   "kind": "categorical",
+   "categories": [
+    "I can’t afford it",
+    "I don’t exercise enough for it to make sense",
+    "I don’t have the space for it",
+    "I prefer exercising outside of my home",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.356,
+      0.249,
+      0.2,
+      0.12,
+      0.076
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 35,
+   "title": "Leading health and fitness apps in the United States in 2022, by downloads (in millions)",
+   "short": "Most downloaded health and fitness apps U.S. 2022",
+   "unit": "millions",
+   "description": "In 2022, Planet Fitness was the most popular health and fitness app in the United States, generating over 18 million downloads. Sport and activity tracking Sweatcoin ranked second, amassing approximately nine million downloads. The mental wellness and meditation app Calm saw 8.8 million downloads in the country in the examined period, ranking third as the most downloaded health app. Despite the controversies surrounding period tracking mobile apps data sharing and privacy [...]",
+   "note": "2022",
+   "source": "Apptopia Number of downloads in millions",
+   "kind": "categorical",
+   "categories": [
+    "Planet Fitness",
+    "Sweatcoin",
+    "Calm",
+    "MyFitnessPal",
+    "Flo",
+    "Impulse",
+    "Yuka",
+    "Workouts by Muscle Booster",
+    "AllTrails",
+    "FitCoach"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      18.3,
+      8.84,
+      8.8,
+      7.9,
+      7.2,
+      6.64,
+      6.61,
+      6.2,
+      6,
+      5.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 36,
+   "title": "Most downloaded health and fitness app subcategories in the United States from January to October 2022",
+   "short": "U.S. download share of health and fitness apps 2022, by subcategory",
+   "unit": "",
+   "description": "Between January and October 2022, workout and fitness apps were the most downloaded health and fitness app subcategories in the United States, with a market share of 23.6 percent. Weight loss apps followed, with approximately 14 percent of market share in the category. Women's health reported a download share of around four percent in the examined period among U.S. users.",
+   "note": "United States; January to October, 2022",
+   "source": "AppTweak",
+   "kind": "categorical",
+   "categories": [
+    "Fitness & workout",
+    "Weight loss",
+    "Outdoor activities: walk, run, bike, ski",
+    "Health tracking",
+    "Health care management",
+    "Mental health",
+    "Meditation",
+    "Sleep tracker",
+    "Women's health",
+    "Other"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.236,
+      0.137,
+      0.121,
+      0.071,
+      0.067,
+      0.051,
+      0.049,
+      0.049,
+      0.039,
+      0.18
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 37,
+   "title": "Most used health and fitness app keywords in the United States from January to October 2022",
+   "short": "U.S. leading health and fitness apps search keywords 2022",
+   "unit": "",
+   "description": "Between January and October 2022, the most searched keyword for mobile users in the United States to find health and fitness apps was \"fitness,\" with a search volume of 63. The keyword \"workout\" followed, with a search volume of 60, while the keyword search \"gym\" ranked third with a search volume of approximately 47 in the examined period.",
+   "note": "United States; January to October 2022",
+   "source": "AppTweak Search volume",
+   "kind": "categorical",
+   "categories": [
+    "fitness",
+    "workout",
+    "gym",
+    "home workout",
+    "workout app",
+    "workout apps",
+    "workouts",
+    "7 minute workout",
+    "lazy workout",
+    "work out app"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      63,
+      60,
+      47,
+      46,
+      43,
+      40,
+      39,
+      38,
+      35,
+      28
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 38,
+   "title": "Usage reach of health and fitness apps in the United States in 2019 and 2022",
+   "short": "Health and fitness apps usage in the U.S. 2022",
+   "unit": "",
+   "description": "In 2019, mobile health and fitness apps were used by 23 percent of consumers in the United States. In comparison, health apps, workout apps, and meditation apps reached approximately 36 percent of U.S. consumers. The adoption of health and fitness apps experienced an acceleration in 2020 and 2021, due to the consequences of the COVID-19 pandemic global outbreak.",
+   "note": "United States; 2019 and 2022; 18 years and older",
+   "source": "Activate",
+   "kind": "categorical",
+   "categories": [
+    "2019",
+    "2022"
+   ],
+   "series": [
+    {
+     "name": "",
+     "values": [
+      0.23,
+      0.36
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 39,
+   "title": "Wearables and connected fitness equipment market size in the United States in 2019, 2022, and 2026 (in billion U.S. dollars)",
+   "short": "Wearables and connected fitness equipment market size in the U.S. 2026",
+   "unit": "billion U.S. dollars",
+   "description": "In the United States, the wearables market size amounted to 17.2 billion U.S. dollars in 2022 and is forecast to reach a value of over 23 billion U.S. dollars by 2026. By contrast, the size of the connected fitness equipment market will grow by 300 million between 2022 and 2026.",
+   "note": "United States; 2019 to 2022",
+   "source": "Activate",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2022*",
+    "2026*"
+   ],
+   "series": [
+    {
+     "name": "Connected fitness equipment",
+     "values": [
+      1.4,
+      5.2,
+      5.5
+     ]
+    },
+    {
+     "name": "Wearable devices",
+     "values": [
+      7.1,
+      17.2,
+      23.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 40,
+   "title": "Revenues of digital health and fitness mobile apps, connected equipment, and wearable devices in the United States in 2019, 2022 and 2026 (in billion U.S. dollars)",
+   "short": "U.S. digital health and fitness market revenues 2019-2026, by segment",
+   "unit": "billion U.S. dollars",
+   "description": "In 2019, wearable devices generated over seven billion U.S. dollars in revenues, while connected fitness equipment generated around 1.4 billion U.S. dollars, and mobile health and fitness apps recorded around 400 million U.S. dollars. By the end of 2022, the U.S. wearable devices segment t is projected to reach revenues of around 17.2 billion U.S. dollars. In comparison, health and fitness mobile apps are projected to surpass one billion U.S. dollars in revenues only by the end of 2026.",
+   "note": "United States; 2019; revenues for both subscriptions and in-app purchases, B2C revenues only",
+   "source": "Activate",
+   "kind": "timeseries",
+   "categories": [
+    "2019",
+    "2022*",
+    "2026*"
+   ],
+   "series": [
+    {
+     "name": "Wearable devices",
+     "values": [
+      7.1,
+      17.2,
+      23.1
+     ]
+    },
+    {
+     "name": "Connected fitness equipment",
+     "values": [
+      1.4,
+      5.2,
+      5.5
+     ]
+    },
+    {
+     "name": "Health and fitness mobile apps",
+     "values": [
+      0.4,
+      0.7,
+      1.1
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 42,
+   "title": "Online revenue forecast for the eServices market by segment in United States from 2023 to 2030 (in million U.S. dollars)",
+   "short": "Revenue forecast for the eServices market by segment in United States until 2030",
+   "unit": "million U.S. dollars",
+   "description": "Over the last two observations, the revenue is forecast to significantly increase in all segments. Comparing the three different segments for the year 2030, the segment 'Event Tickets' leads the ranking with 41.2 million U.S. dollars. Contrastingly, 'Dating Services' is ranked last, with 2.4 million U.S. dollars. Their difference, compared to Event Tickets, lies at 38.7 million U.S. dollars.",
+   "note": "United States; 2023 to 2030",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030"
+   ],
+   "series": [
+    {
+     "name": "Event Tickets",
+     "values": [
+      33044.14,
+      35281.89,
+      36763.41,
+      37677.23,
+      38298.19,
+      40747.27,
+      41000.82,
+      41166.11
+     ]
+    },
+    {
+     "name": "Fitness",
+     "values": [
+      5452.31,
+      5642.62
+     ]
+    },
+    {
+     "name": "Dating Services",
+     "values": [
+      2476.9,
+      2547.23,
+      2602.69,
+      2645.85,
+      2680.43,
+      2398.83,
+      2416.61,
+      2430.37
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 43,
+   "title": "Online revenue forecast for the eServices Fitness market in United States from 2017 to 2024 (in million U.S. dollars)",
+   "short": "Online revenue forecast for the eServices Fitness market in United States until 2024",
+   "unit": "million U.S. dollars",
+   "description": "This statistic presents a forecast of the online revenue in the eServices Fitness market in United States until the year 2024. According to the Digital Market Outlook, the online revenue of the eServices Fitness segment Apps in United States is expected to be 1,798.9 million U.S. dollars in 2024. An overview of all Digital Markets can be found here.",
+   "note": "United States; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Wearables",
+     "values": [
+      2821.4,
+      2939.5,
+      3095.7,
+      4056.1,
+      3840.9,
+      3757.2,
+      3769.8,
+      3843.8
+     ]
+    },
+    {
+     "name": "Apps",
+     "values": [
+      759.8,
+      861.6,
+      976.6,
+      1268.9,
+      1413.1,
+      1552.7,
+      1682.5,
+      1798.9
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 44,
+   "title": "Forecast for the number of online users in the eServices Fitness market in United States from 2017 to 2024 (in million)",
+   "short": "Number of users in the eServices Fitness market in United States until 2024",
+   "unit": "million",
+   "description": "This statistic presents a forecast of the number of online users in the eServices Fitness market in United States until the year 2024. According to the Digital Market Outlook, the number of online users of the eServices Fitness segment Wearables in United States is expected to be 39.6 million in 2024. An overview of all Digital Markets can be found here.",
+   "note": "United States; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Apps",
+     "values": [
+      69.6,
+      72.9,
+      77.3,
+      95.3,
+      102,
+      108.5,
+      114.3,
+      119
+     ]
+    },
+    {
+     "name": "Wearables",
+     "values": [
+      37.8,
+      38.4,
+      38.8,
+      48.3,
+      43.4,
+      40.6,
+      39.6,
+      39.6
+     ]
+    }
+   ]
+  },
+  {
+   "slide": 45,
+   "title": "Online penetration rate forecast for the eServices Fitness market in United States from 2017 to 2024",
+   "short": "Penetration rate for the eServices Fitness market in United States until 2024",
+   "unit": "",
+   "description": "This statistic presents a forecast of the penetration rate in the eServices Fitness market in United States until the year 2024. According to the Digital Market Outlook, the penetration rate of the eServices Fitness market in the segment Wearables in United States is expected to be 11.7 percent in 2024. An overview of all Digital Markets can be found here.",
+   "note": "United States; 2019",
+   "source": "Statista",
+   "kind": "timeseries",
+   "categories": [
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "series": [
+    {
+     "name": "Apps",
+     "values": [
+      21.4,
+      22.3,
+      23.5,
+      28.8,
+      30.6,
+      32.4,
+      33.9,
+      35.1
+     ]
+    },
+    {
+     "name": "Wearables",
+     "values": [
+      11.6,
+      11.7,
+      11.8,
+      14.6,
+      13,
+      12.1,
+      11.8,
+      11.7
+     ]
+    }
+   ]
+  }
+ ]
+}
