@@ -1,0 +1,33 @@
+{
+  "kind": "flagship",
+  "id": "flagship-239bn-by-2028-what-the-supplement-boom-means-for-coaches",
+  "slug": "239bn-by-2028-what-the-supplement-boom-means-for-coaches",
+  "title": "$239bn by 2028: What the Supplement Boom Means for Coaches",
+  "titleDe": "239 Milliarden Dollar: Was der Supplement-Boom für dein Studio bedeutet",
+  "description": "The global dietary supplement market is forecast to reach $239.4bn by 2028, growing from $112.3bn in 2018, while functional food and beverage adds another $529.66bn in parallel — operators who embed product recommendations into their programming sit inside the fastest-growing slice of consumer health spending. A living Sqwod Intelligence report.",
+  "studyId": "102831",
+  "study": "dietary supplements and functional foods worldwide",
+  "status": "pending",
+  "createdAt": "2026-10-24",
+  "wordsEn": 3725,
+  "wordsDe": 4600,
+  "chartCount": 10,
+  "hasBenchmark": true,
+  "freshCount": 0,
+  "takeaways": [
+    "The global supplement market hit $158bn in 2023 and is on track for $239.4bn by 2028 [0].",
+    "North America alone was a $72.06bn supplement market by 2026 — the largest regional block by far [1].",
+    "Probiotic supplements reached $2.5bn in 2023 and are forecast to hit $3.28bn by 2027 [4].",
+    "46% of supplement consumers across the US, UK and China used Vitamin C — the single most popular product [16].",
+    "China exported 341.93 million kg of vitamins in 2022, dwarfing every other country and exposing supply-chain concentration risk [8].",
+    "The vitamins and minerals segment grew 8.01% in 2023, faster than any year since the 2021 pandemic spike [14]."
+  ],
+  "warnings": [
+    "3 number(s) in the text are not in the dataset or linked sources (could be derived in a way I could not match): 2,257, 1200, 2257",
+    "No newer public sources were found; the report rests on Statista only."
+  ],
+  "approve": "https://sqwod-pr-intake.sqwodlife.workers.dev/intel?id=flagship-239bn-by-2028-what-the-supplement-boom-means-for-coaches&action=approve&exp=1795392000&sig=cee430d942e17a4e8f889d44e0021bec987ecda3eecd04569e309fbca336ff3e",
+  "reject": "https://sqwod-pr-intake.sqwodlife.workers.dev/intel?id=flagship-239bn-by-2028-what-the-supplement-boom-means-for-coaches&action=reject&exp=1795392000&sig=ad39d5ce8b4a9d2f47658aec645342b26f2a62d87d0167742f76e94aceb03536",
+  "label": "$239bn by 2028: What the Supplement Boom Means for Coaches",
+  "report": "$239bn by 2028: What the Supplement Boom Means for Coaches"
+}
