@@ -555,7 +555,7 @@ h2:not(.plain){line-height:1}
 
 /* money ticker */
 .tick{overflow:hidden;white-space:nowrap;border-bottom:1px solid var(--line);background:var(--panel2)}
-.tick-in{display:inline-block;padding:9px 0;animation:tick 48s linear infinite}
+.tick-in{display:inline-block;padding:9px 0;animation:tick 130s linear infinite}
 .tick:hover .tick-in{animation-play-state:paused}
 .tick-in a,.tick-in span{display:inline-block;margin:0 26px;font-size:12px;letter-spacing:.02em;color:var(--g2);text-decoration:none}
 .tick-in b{color:var(--accent);font-family:var(--mono);font-weight:600;margin-right:6px}

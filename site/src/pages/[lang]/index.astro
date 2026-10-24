@@ -265,6 +265,15 @@ const T = de
   </section>
 </Base>
 
+<script is:inline>
+  // Ticker speed: a fixed reading pace (~32 px a second) whatever the number of items,
+  // so a long day of headlines doesn't race past. One loop = half the doubled strip.
+  (function () {
+    var t = document.querySelector('.tick-in'); if (!t) return;
+    var loop = t.scrollWidth / 2; if (loop > 0) t.style.animationDuration = Math.round(loop / 32) + 's';
+  })();
+</script>
+
 <style>
   /* the page owns its top spacing (ticker sits flush under the nav) */
   :global(main.wrap){padding-top:0}
