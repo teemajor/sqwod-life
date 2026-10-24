@@ -17,81 +17,87 @@ const cards = categories.map((c) => ({
   c,
   reviewed: c.picks.filter((p) => p.reviewSlug && reviewedSlugs.has(p.reviewSlug)).length,
   total: c.picks.length,
-  names: c.picks.slice(0, 4).map((p) => p.brand),
+  names: [...new Set(c.picks.map((p) => p.brand))].slice(0, 4),
+  guide: guides.find((g) => g.category === c.slug),
 }));
+const year = new Date().getFullYear();
 const totalReviewed = reviews.length;
 
-const title = lang === 'de' ? 'Sqwod Verified — Kaufberatung für Wellness & Fitness' : 'Sqwod Verified — Wellness & Fitness Buyer\'s Guides';
+const title = lang === 'de' ? 'Sqwod Verified: Kaufberatung für Fitness-Profis' : 'Sqwod Verified: buyer\'s guides for fitness professionals';
 const blurb = lang === 'de'
-  ? 'Ehrliche, methodische Kaufberatung für die Fitness- & Wellness-Branche. Bewertete Produkte tragen einen Sqwod Score; Redaktions-Tipps sind kuratierte Marktführer. Affiliate-Links sind gekennzeichnet — die Wahrheit gewinnt.'
-  : 'Honest, methodology-driven buyer\'s guides for the fitness & wellness industry. Reviewed products carry a Sqwod Score; editorial picks are curated leaders. Affiliate links are labeled — truth wins.';
+  ? 'Ehrliche, methodische Kaufberatung für die Fitness- & Wellness-Branche. Bewertete Produkte tragen einen Sqwod Score; Redaktions-Tipps sind kuratierte Marktführer. Affiliate-Links sind gekennzeichnet. Die Wahrheit gewinnt.'
+  : 'Honest, methodology-driven buyer\'s guides for the fitness & wellness industry. Reviewed products carry a Sqwod Score; editorial picks are curated leaders. Affiliate links are labeled. Truth wins.';
 ---
 <Base lang={lang} title={title} description={blurb} active="verified">
-  <div class="crumb">Sqwod Verified</div>
-  <h1 class="reveal d1" style="margin:0 0 6px">{lang==='de'?'Kaufberatung, der man trauen kann':'Buyer\'s guides you can trust'}</h1>
-  <p class="sub reveal d2" style="max-width:64ch">{blurb}</p>
-  <p class="sub reveal d2" style="margin-top:6px">
-    <a href={`/${lang}/verified/methodology`} style="color:var(--chalk)">{t(lang,'verified.howWeRank')} →</a>
-    &nbsp;·&nbsp; <b>{totalReviewed}</b> {lang==='de'?'bewertet':'reviewed'} &nbsp;·&nbsp; <b>{categories.length}</b> {lang==='de'?'Kategorien':'categories'}
-  </p>
-
-  <!-- Buyer's guides: the "best X" layer. These answer the question people
-       actually type, and they are the strongest internal-link source into the
-       scored reviews — so they sit above the category grid, not below it. -->
-  <section class="guides">
-    <p class="kick">{lang === 'de' ? 'Kaufberatung nach Kategorie' : 'Buyer\'s guides by category'}</p>
-    <div class="glist">
-      {guides.map((g) => (
-        <a class="gcard" href={`/${lang}/${GUIDE_PREFIX[lang]}/${g.slug[lang]}/`}>
-          <span class="gc-h">{lang === 'de' ? `Beste ${g.title.de}` : `Best ${g.title.en}`}</span>
-          <span class="gc-y">{new Date().getFullYear()}</span>
-        </a>
-      ))}
+  <section class="vx">
+    <p class="kick m">Sqwod Verified</p>
+    <h1 class="vx-h1">{(lang==='de'?'Kaufberatung, der man trauen kann.':"Buyer's guides you can trust.").split(' ').map((w, i) => <Fragment><span class="hw" style={`animation-delay:${i * 0.07}s`}>{w}</span>{' '}</Fragment>)}</h1>
+    <p class="vx-sub">{blurb}</p>
+    <div class="vx-stats">
+      <div><span class="dnum" data-count>{totalReviewed}</span><span>{lang==='de'?'Produkte bewertet':'products scored'}</span></div>
+      <div><span class="dnum" data-count>{categories.length}</span><span>{lang==='de'?'Kategorien':'categories'}</span></div>
+      <a href={`/${lang}/verified/methodology`}><span class="dnum">45·40·15</span><span>{t(lang,'verified.howWeRank')} →</span></a>
     </div>
   </section>
 
+  <!-- One card per category (Oct 2026): the "Best X" ranking is the main link, because it
+       answers what people search for and feeds the scored reviews; the full category sits
+       one tap away. This replaces the separate guide list + category grid, which repeated
+       the same eight categories twice. -->
   <div class="cat-grid">
-    {cards.map(({ c, reviewed, total, names }, i) => (
-      <a class={`cat reveal d${(i % 6) + 1}`} href={`/${lang}/verified/c/${c.slug}`}>
-        <div class="cat-ic"><CategoryIcon cat={c.slug} size={46} /></div>
-        <div class="cat-body">
-          <h3>{c.label[lang]}</h3>
-          <p>{c.blurb[lang]}</p>
+    {cards.map(({ c, reviewed, total, names, guide }, i) => (
+      <div class={`cat lift rv d${(i % 3) + 1}`}>
+        <div class="cat-top">
+          <div class="cat-ic"><CategoryIcon cat={c.slug} size={40} /></div>
           <div class="cat-meta">
             {reviewed > 0 && <span class="pill rev">{reviewed} {lang==='de'?'bewertet':'reviewed'}</span>}
             <span class="pill">{total} {lang==='de'?'Picks':'picks'}</span>
-            <span class="brands">{names.join(' · ')}</span>
           </div>
-          <span class="cat-cta">{lang==='de'?'Guide ansehen':'See the guide'} →</span>
         </div>
-      </a>
+        <h2 class="plain cat-h">{guide ? (lang === 'de' ? `Beste ${guide.title.de}` : `Best ${guide.title.en}`) : c.label[lang]} <span class="cat-y">{year}</span></h2>
+        <p class="cat-p">{c.blurb[lang]}</p>
+        <p class="brands">{names.join(' · ')}</p>
+        <div class="cat-links">
+          {guide && <a class="cat-go" href={`/${lang}/${GUIDE_PREFIX[lang]}/${guide.slug[lang]}/`}>{lang==='de'?'Zum Ranking':'See the ranking'} →</a>}
+          <a class={guide ? 'cat-alt' : 'cat-go'} href={`/${lang}/verified/c/${c.slug}`}>{lang==='de'?'Alle Picks':'All picks'}</a>
+        </div>
+      </div>
     ))}
   </div>
 
-  <p class="disc" style="margin-top:18px">{t(lang,'disclosure')}</p>
+  <p class="disc" style="margin-top:22px">{t(lang,'disclosure')}</p>
 </Base>
 
 <style>
-  .cat-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
-  .cat{display:grid;grid-template-columns:46px 1fr;gap:16px;align-items:start;border:1px solid var(--line);border-radius:16px;padding:20px;text-decoration:none;background:var(--panel);transition:border-color .15s ease,transform .15s ease}
-  .cat:hover{border-color:var(--chalk);transform:translateY(-2px)}
-  .cat-body h3{font-size:18px;letter-spacing:-.01em;margin:0 0 6px;color:var(--chalk)}
-  .cat-body p{font-size:13.5px;color:var(--g2);line-height:1.5;margin:0 0 12px}
-  .cat-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
-  .pill{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--g3);border:1px solid var(--line);border-radius:999px;padding:3px 9px}
-  .pill.rev{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
-  .brands{font-size:12px;color:var(--g4)}
-  .cat-cta{font-size:13px;font-weight:700;color:var(--chalk)}
-  @media(max-width:680px){.cat-grid{grid-template-columns:1fr}}
-</style>
-
-<style>
-  .guides{margin:22px 0 6px}
-  .guides .kick{font-size:10.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);margin:0 0 10px}
-  .glist{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-  .gcard{display:flex;align-items:center;justify-content:space-between;gap:10px;
-    border:1px solid var(--line);border-radius:10px;padding:11px 13px;text-decoration:none;background:var(--panel)}
-  .gcard:hover{border-color:var(--chalk)}
-  .gc-h{font-size:13.5px;font-weight:700;line-height:1.35}
-  .gc-y{font-size:11px;color:var(--g4);font-family:var(--mono)}
+  .vx{padding:24px 0 30px;border-bottom:1px solid var(--line);margin-bottom:26px}
+  .vx-h1{font-size:clamp(46px,7vw,92px);line-height:.92;margin:0;max-width:16ch}
+  .vx-sub{margin:18px 0 0;max-width:64ch;font-size:17px;line-height:1.55;color:var(--g2)}
+  .vx-stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .vx-stats>*{display:flex;flex-direction:column;gap:6px;min-width:150px;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--panel);text-decoration:none}
+  .vx-stats .dnum{font-size:40px;color:var(--chalk)}
+  .vx-stats a .dnum{color:var(--accent)}
+  .vx-stats span:last-child{font-size:13px;color:var(--g2)}
+  .vx-stats a:hover{border-color:var(--accent-line)}
+  .cat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .cat{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:20px;padding:22px;background:var(--panel)}
+  .cat-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+  .cat-meta{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+  .cat-h{font-size:20px;font-weight:600;letter-spacing:-.015em;line-height:1.25;margin:0 0 8px;color:var(--chalk)}
+  .cat-y{font-family:var(--mono);font-size:12px;font-weight:400;color:var(--g3);margin-left:4px}
+  .cat-p{font-size:14px;color:var(--g2);line-height:1.5;margin:0 0 10px}
+  .pill{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g3);border:1px solid var(--line);border-radius:999px;padding:4px 9px}
+  .pill.rev{background:var(--accent-soft);color:var(--accent);border-color:var(--accent-line)}
+  .brands{font-size:12.5px;color:var(--g3);margin:0 0 16px}
+  .cat-links{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:auto}
+  .cat-go{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:12px;background:var(--chalk);color:var(--ink);font-size:14px;font-weight:600;text-decoration:none;transition:background .15s,color .15s}
+  .cat-go:hover{background:var(--accent);color:var(--accent-ink)}
+  .cat-alt{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--edge);border-radius:12px;font-size:14px;font-weight:600;text-decoration:none;color:var(--chalk)}
+  .cat-alt:hover{border-color:var(--accent);color:var(--accent)}
+  @media(max-width:680px){
+    .cat-grid{grid-template-columns:1fr}
+    .vx-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+    .vx-stats>*{min-width:0;padding:12px}
+    .vx-stats .dnum{font-size:28px}
+    .vx-stats span:last-child{font-size:11.5px}
+  }
 </style>

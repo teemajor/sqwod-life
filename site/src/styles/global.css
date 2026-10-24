@@ -601,3 +601,15 @@ html,body{overflow-x:clip}
 /* German caps carry umlauts (Ä Ö Ü) whose dots sit above the cap height: tight display
    leading lets the line above swallow them ("GERÄTE" read as "GERATE"). Give DE room. */
 :lang(de) h1,:lang(de) h2:not(.plain),:lang(de) .dsp,:lang(de) .hx-h1,:lang(de) .rh-h1,:lang(de) .vh-h1,:lang(de) .inv-h{line-height:1.08!important}
+
+/* ============ MOBILE PASS · OCT 2026 ============
+   Stacked card grids become one swipe row on phones: one card plus a peek of the next,
+   snapping into place. Cuts each section to a single card's height. */
+@media(max-width:640px){
+  .swipe{display:grid!important;grid-auto-flow:column;grid-auto-columns:84%;grid-template-columns:none!important;
+    gap:12px!important;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;
+    margin-left:-24px;margin-right:-24px;padding:2px 24px 10px;scroll-padding:0 24px;scrollbar-width:none}
+  .swipe::-webkit-scrollbar{display:none}
+  .swipe>*{scroll-snap-align:start;min-width:0}
+  .swipe .tilt{rotate:0deg}
+}

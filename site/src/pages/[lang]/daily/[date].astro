@@ -44,17 +44,26 @@ const tx = {
   listen: lang === 'de' ? 'Hören auf' : 'Listen on',
   byEmail: lang === 'de' ? 'Per E-Mail' : 'By email',
   subH: lang === 'de' ? 'Bekomm Sqwod Daily in dein Postfach' : 'Get Sqwod Daily in your inbox',
-  subP: lang === 'de' ? 'Fünf Minuten, jeden Werktag. Was sich in der Branche bewegt — und was es für dich heißt. Kostenlos.' : 'Five minutes, every weekday. What moved in the industry — and what it means for you. Free.',
+  subP: lang === 'de' ? 'Fünf Minuten, jeden Werktag. Was sich in der Branche bewegt und was es für dich heißt. Kostenlos.' : 'Five minutes, every weekday. What moved in the industry, and what it means for you. Free.',
   subBtn: lang === 'de' ? 'Kostenlos abonnieren' : 'Subscribe free',
   sources: lang === 'de' ? 'Quellen' : 'Sources',
-  draft: lang === 'de' ? 'Entwurf — Freigabe ausstehend' : 'Draft — pending approval',
+  draft: lang === 'de' ? 'Entwurf, Freigabe ausstehend' : 'Draft, pending approval',
+  money: lang === 'de' ? 'Geldbewegungen' : 'Money movement',
+  invRead: lang === 'de' ? 'Investor-Sicht' : 'Investor read',
+  stat: lang === 'de' ? 'Zahl des Tages' : 'Stat of the day',
+  play: lang === 'de' ? 'Anhören' : 'Listen',
+  all: lang === 'de' ? 'Alle Ausgaben' : 'All issues',
 };
+const KIND: Record<string, string> = lang === 'de'
+  ? { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Aus' }
+  : { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown' };
+const headWords = (d.summary || 'Sqwod Daily').split(' ');
 
 // --- SEO / GEO: a unique title + description per issue (not the boilerplate
 // intro), plus NewsArticle structured data so each episode is its own citable,
 // rich-result-eligible page. The one-line `summary` drives all of it. ---
 const epTitle = d.summary || d.title;
-const metaTitle = `${epTitle} — Sqwod Daily`;
+const metaTitle = `${epTitle} · Sqwod Daily`;
 const dots = d.connectDots?.body?.replace(/\s+/g, ' ').trim();
 let metaDesc = [d.summary, dots || d.items.map((i) => i.headline).join(' · ')].filter(Boolean).join(' — ');
 if (metaDesc.length > 200) metaDesc = metaDesc.slice(0, 199).trimEnd() + '…';
@@ -79,118 +88,135 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
 ---
 <Base lang={lang} title={metaTitle} description={metaDesc} ogType="article" image="/podcast-cover.png" noindex={noindex}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
-  <div class="crumb"><a href={`/${lang}/daily`}>← Sqwod Daily</a></div>
-  <h1 style="margin:0 0 6px">Sqwod Daily</h1>
-  <p class="sub" style="margin:0 0 16px">{fmt} · {d.edition}</p>
-  {d.status !== 'published' && <p class="dealnote">⚑ {tx.draft}</p>}
-
-  {d.intro && <p class="verdict" style="margin-bottom:14px">{d.intro}</p>}
-
-  <ShareBar path={`/${lang}/daily/${d.urlSlug}`} title={d.connectDots?.title || d.summary || `Sqwod Daily — ${fmt}`} lang={lang} />
-
-  <!-- LISTEN: embedded player + link-outs to the podcast apps -->
-  <section class="player" id="listen">
-    {hasAudio && <audio controls preload="none" src={audioPath} style="width:100%"></audio>}
-    <div class="listen">
-      <span class="ll">{tx.listen}:</span>
-      {APPLE_URL !== '#' && <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
-      {SPOTIFY_URL !== '#' && <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>}
-      <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
-    </div>
+  <!-- Oct 2026 redesign: display headline of the day, player card, digest column + a rail
+       with the money movement, the stat and the one thing to do today -->
+  <section class="dx">
+    <p class="dx-crumb"><a href={`/${lang}/daily`}>Sqwod Daily</a> / {fmt}</p>
+    <p class="kick dx-kick"><span class="pulse" aria-hidden="true"></span>Sqwod Daily · {d.edition}</p>
+    <h1 class="dx-h1">{headWords.map((w, i) => <Fragment><span class="hw" style={`animation-delay:${Math.min(i, 14) * 0.05}s`}>{w}</span>{' '}</Fragment>)}</h1>
+    {d.status !== 'published' && <p class="dealnote">⚑ {tx.draft}</p>}
+    {d.intro && <p class="dx-intro">{d.intro}</p>}
+    <section class="player" id="listen">
+      <div class="pl-top">{hasAudio
+        ? <button type="button" class="pl-dot" aria-label={tx.play}><svg class="pl-i-play" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg><svg class="pl-i-pause" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg></button>
+        : <span class="pl-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>}<span><b>{tx.play}</b> · {d.duration ?? '5 min'}</span></div>
+      {hasAudio && <audio controls preload="none" src={audioPath}></audio>}
+      <div class="listen">
+        <span class="ll">{tx.listen}:</span>
+        {APPLE_URL !== '#' && <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
+        {SPOTIFY_URL !== '#' && <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>}
+        <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
+      </div>
+    </section>
+    <ShareBar path={`/${lang}/daily/${d.urlSlug}`} title={d.connectDots?.title || d.summary || `Sqwod Daily · ${fmt}`} lang={lang} />
   </section>
 
-  {d.move && d.move.url && (
-    <section class="movecard">
-      <p class="kick">{lang==='de'?'Move des Tages':'Move of the Day'}</p>
-      {d.move.note && <p class="move-note">{d.move.note}</p>}
-      <a class="move-link" href={d.move.url} target="_blank" rel="nofollow noopener" data-umami-event="move-watch" data-umami-event-platform={d.move.platform || 'social'}>
-        {lang==='de'?'Ansehen auf':'Watch on'} {d.move.platform || 'social'} →
-      </a>
-      {d.move.handle && <span class="move-credit">{lang==='de'?'Coach:':'Coach:'} {d.move.handle}</span>}
-    </section>
-  )}
-
-  <!-- CONNECT THE DOTS: the teaching lead -->
-  {d.connectDots && (
-    <section class="dots">
-      <p class="kick">{tx.dots}</p>
-      <h2>{d.connectDots.title}</h2>
-      {d.connectDots.body.split('\n').filter(Boolean).map((p) => <p class="dotbody">{p}</p>)}
-    </section>
-  )}
-
-  <!-- THE BRIEF: readable digest, no per-item click-outs -->
-  <section class="block" style="margin-top:8px">
-    <p class="kick">{tx.inToday}</p>
-    <ol class="digest">
-      {d.items.map((item, i) => (
-        <li>
-          <span class="dn">{String(i + 1).padStart(2, '0')}</span>
-          <div>
-            <span class="pillar-chip">{pillarLabel(item.pillar)}</span>
-            <h3>{item.headline}</h3>
-            <p class="dek">{item.dek}</p>
-          </div>
-        </li>
-      ))}
-    </ol>
-  </section>
-
-  <!-- DO THIS: actionable -->
-  {d.doThis && (
-    <section class="dothis">
-      <p class="kick">{tx.doThis}</p>
-      <div class="dothis-box">{d.doThis}</div>
-    </section>
-  )}
-
-  <!-- DEAL READ: investor / brand view of today's money moves -->
-  {(d.moneyMoves?.length > 0 || d.dealRead) && (
-    <section class="deals">
-      <p class="kick">{lang === 'de' ? 'Geldbewegung' : 'Money movement'}</p>
-      {d.moneyMoves?.length > 0 && (
-        <ul class="deal-list">
-          {d.moneyMoves.map((m) => <li><b>{m.entity}</b>{m.amount ? <span class="deal-amt"> {m.amount}</span> : null}{m.note ? <span class="deal-note"> · {m.note}</span> : null}</li>)}
-        </ul>
+  <div class="dgrid">
+    <div class="dmain">
+      {d.move && d.move.url && (
+        <section class="movecard rv">
+          <p class="kick">{lang==='de'?'Move des Tages':'Move of the Day'}</p>
+          {d.move.note && <p class="move-note">{d.move.note}</p>}
+          <a class="move-link" href={d.move.url} target="_blank" rel="nofollow noopener" data-umami-event="move-watch" data-umami-event-platform={d.move.platform || 'social'}>
+            {lang==='de'?'Ansehen auf':'Watch on'} {d.move.platform || 'social'} →
+          </a>
+          {d.move.handle && <span class="move-credit">{lang==='de'?'Coach:':'Coach:'} {d.move.handle}</span>}
+        </section>
       )}
-      {d.dealRead && <p class="deal-read"><b>{lang === 'de' ? 'Investoren-Lesart' : 'Investor read'}</b> {d.dealRead}</p>}
-    </section>
-  )}
 
-  <!-- SQWOD RECS: curated actionable (incl. affiliate) -->
-  {d.recs && d.recs.length > 0 && (
-    <section class="recs">
-      <p class="kick">{tx.recs}</p>
-      <ul class="reclist">
-        {d.recs.map((r) => (
-          <li>
-            <b>{r.label}:</b>{' '}
-            {r.url
-              ? <a href={r.url} rel={r.affiliate ? 'sponsored nofollow' : undefined}>{r.text}</a>
-              : r.text}
-            {r.affiliate && <span class="recad">· {tx.ad}</span>}
-          </li>
-        ))}
-      </ul>
-    </section>
-  )}
+      {d.connectDots && (
+        <section class="dots rv">
+          <p class="kick">{tx.dots}</p>
+          <h2>{d.connectDots.title}</h2>
+          {d.connectDots.body.split('\n').filter(Boolean).map((p) => <p class="dotbody">{p}</p>)}
+        </section>
+      )}
 
-  <!-- MEANWHILE: entertainment -->
-  {d.meanwhile && (
-    <section class="mw">
-      <p class="kick">{tx.meanwhile}</p>
-      <p class="mwbody">{d.meanwhile}</p>
-    </section>
-  )}
+      <section class="brief">
+        <p class="kick">{tx.inToday}</p>
+        <ol class="digest">
+          {d.items.map((item, i) => (
+            <li class="rv">
+              <span class="dnum dn">{String(i + 1).padStart(2, '0')}</span>
+              <div>
+                <span class="pillar-chip">{pillarLabel(item.pillar)}</span>
+                <h3>{item.headline}</h3>
+                <p class="dek">{item.dek}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
 
-  <!-- SPONSOR (matches the audio read + email block) -->
-  {d.sponsor && (
-    <aside class="sponsor">
-      <span class="adlabel">{lang==='de'?'Anzeige':'Sponsored'} · {lang==='de'?'Präsentiert von':'Presented by'} {d.sponsor.name}</span>
-      {d.sponsor.blurb && <p>{d.sponsor.blurb}</p>}
-      {d.sponsor.url && <a class="lp" href={d.sponsor.url} rel="sponsored nofollow" target="_blank">{d.sponsor.cta ?? (lang==='de'?'Mehr erfahren':'Learn more')} →</a>}
+      {d.recs && d.recs.length > 0 && (
+        <section class="recs">
+          <p class="kick">{tx.recs}</p>
+          <ul class="reclist">
+            {d.recs.map((r) => (
+              <li>
+                <b>{r.label}:</b>{' '}
+                {r.url
+                  ? <a href={r.url} rel={r.affiliate ? 'sponsored nofollow' : undefined}>{r.text}</a>
+                  : r.text}
+                {r.affiliate && <span class="recad">· {tx.ad}</span>}
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {d.meanwhile && (
+        <section class="mw">
+          <p class="kick">{tx.meanwhile}</p>
+          <p class="mwbody">{d.meanwhile}</p>
+        </section>
+      )}
+
+      {d.sponsor && (
+        <aside class="sponsor">
+          <span class="adlabel">{lang==='de'?'Anzeige':'Sponsored'} · {lang==='de'?'Präsentiert von':'Presented by'} {d.sponsor.name}</span>
+          {d.sponsor.blurb && <p>{d.sponsor.blurb}</p>}
+          {d.sponsor.url && <a class="lp" href={d.sponsor.url} rel="sponsored nofollow" target="_blank">{d.sponsor.cta ?? (lang==='de'?'Mehr erfahren':'Learn more')} →</a>}
+        </aside>
+      )}
+    </div>
+
+    <aside class="drail">
+      <div class="drail-in">
+        {(d.moneyMoves?.length > 0 || d.dealRead) && (
+          <section class="rcard rv">
+            <p class="kick">{tx.money}</p>
+            {d.moneyMoves?.length > 0 && (
+              <ul class="deal-list">
+                {d.moneyMoves.map((m) => (
+                  <li>
+                    <span class="deal-k">{KIND[m.kind] ?? m.kind}</span>
+                    {m.amount && <span class="dnum deal-amt">{m.amount}</span>}
+                    <span class="deal-e"><b>{m.entity}</b>{m.note ? ` ${m.note}` : ''}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {d.dealRead && <p class="deal-read"><b>{tx.invRead}</b>{d.dealRead}</p>}
+          </section>
+        )}
+        {d.stat && d.stat.number && (
+          <section class="rcard rv d1">
+            <p class="kick">{tx.stat}</p>
+            <div class="dnum stat-n" data-count>{d.stat.number}</div>
+            <p class="stat-l">{d.stat.label}</p>
+            {d.stat.body && <p class="stat-b">{d.stat.body}</p>}
+          </section>
+        )}
+        {d.doThis && (
+          <section class="dothis rv d2">
+            <p class="kick">{tx.doThis}</p>
+            <p class="dothis-box">{d.doThis}</p>
+          </section>
+        )}
+      </div>
     </aside>
-  )}
+  </div>
 
   <!-- THE ONE ASK: subscribe, inline (no extra click to /subscribe) -->
   <InlineSignup lang={lang} source="daily-issue" variant="daily" />
@@ -208,57 +234,83 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
   )}
 </Base>
 
+<script is:inline>
+  // the big play button drives the native player underneath
+  (function () {
+    var pl = document.querySelector('.player'), btn = pl && pl.querySelector('button.pl-dot'), au = pl && pl.querySelector('audio');
+    if (!btn || !au) return;
+    btn.addEventListener('click', function () { au.paused ? au.play() : au.pause(); });
+    au.addEventListener('play', function () { pl.classList.add('playing'); });
+    au.addEventListener('pause', function () { pl.classList.remove('playing'); });
+  })();
+</script>
+
 <style>
-  .crumb a{color:inherit;text-decoration:none}
-  .player{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--panel);display:flex;flex-direction:column;gap:12px}
-  audio{filter:invert(1) hue-rotate(180deg)}
-  .listen{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
-  .ll{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
-  .lp{font-size:13px;font-weight:700;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:6px 13px;transition:border-color .15s ease,background .15s ease}
-  .lp:hover{border-color:var(--chalk);background:var(--chalk);color:var(--ink)}
+  .dx{padding:16px 0 26px;border-bottom:1px solid var(--line)}
+  .dx-crumb{font-family:var(--mono);font-size:12px;color:var(--g3);margin:0 0 18px}
+  .dx-crumb a{color:var(--g3);text-decoration:none}
+  .dx-kick{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .dx-h1{font-size:clamp(38px,5.4vw,72px);line-height:.95;margin:0;max-width:22ch}
+  .dx-intro{margin:18px 0 0;max-width:66ch;font-size:18px;line-height:1.55;color:var(--g1)}
+  .player{margin:22px 0 18px;border:1px solid var(--line);border-radius:20px;padding:16px 18px;background:var(--panel);display:flex;flex-direction:column;gap:12px;max-width:720px}
+  .pl-top{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--g2)}
+  .pl-top b{color:var(--chalk)}
+  .pl-dot{width:44px;height:44px;border:0;border-radius:12px;background:var(--chalk);color:var(--ink);display:grid;place-items:center;flex:none;cursor:pointer;transition:background .15s,color .15s}
+  button.pl-dot:hover{background:var(--accent);color:var(--accent-ink)}
+  .pl-i-pause{display:none}
+  .player.playing .pl-i-play{display:none}
+  .player.playing .pl-i-pause{display:block}
+  audio{width:100%}
+  :global(:root:not([data-theme="light"])) audio{color-scheme:dark}
+  .listen{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+  .ll{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .lp{display:inline-flex;align-items:center;min-height:36px;font-size:13px;font-weight:600;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:0 13px;transition:border-color .15s ease,color .15s}
+  .lp:hover{border-color:var(--accent);color:var(--accent)}
 
-  .digest{list-style:none;margin:14px 0 0;padding:0;border-top:1px solid var(--line)}
-  .digest li{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
-  .dn{font-family:var(--mono);font-size:13px;color:var(--g4);padding-top:6px}
-  .pillar-chip{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
-  .digest h3{font-size:21px;line-height:1.2;letter-spacing:-.02em;margin:7px 0 6px;font-weight:800}
-  .digest .dek{color:var(--g2);font-size:15.5px;line-height:1.6;margin:0}
+  .dgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start;padding-top:8px}
+  .dmain{min-width:0;max-width:720px}
+  .drail-in{position:sticky;top:24px;display:grid;gap:14px;padding-top:26px}
+  .rcard{border:1px solid var(--line);border-radius:20px;padding:20px;background:var(--panel)}
+  .deal-list{list-style:none;margin:0;padding:0}
+  .deal-list li{display:grid;grid-template-columns:1fr;gap:4px;padding:12px 0;border-top:1px solid var(--line)}
+  .deal-list li:first-child{border-top:0;padding-top:0}
+  .deal-k{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .deal-amt{font-size:30px;color:var(--accent)}
+  .deal-e{font-size:14px;line-height:1.45;color:var(--g2)}
+  .deal-e b{color:var(--chalk)}
+  .deal-read{margin:12px 0 0;padding:12px 14px;border-radius:12px;background:var(--accent-soft);font-size:14px;line-height:1.55;color:var(--g1)}
+  .deal-read b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:4px}
+  .stat-n{font-size:64px;color:var(--chalk)}
+  .stat-l{margin:10px 0 0;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--g2);line-height:1.4}
+  .stat-b{margin:10px 0 0;font-size:14px;line-height:1.55;color:var(--g2)}
+  .dothis-box{margin:0;background:var(--chalk);color:var(--ink);border-radius:16px;padding:18px 20px;font-size:15.5px;line-height:1.55;font-weight:600}
 
-  .movecard{margin-top:16px;border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px;background:var(--panel)}
-  .movecard .kick{margin:0 0 8px}
-  .move-note{font-size:18px;font-weight:700;line-height:1.35;color:var(--chalk);margin:0 0 12px;letter-spacing:-.01em}
-  .move-link{display:inline-block;font-size:13px;font-weight:800;color:var(--ink);background:var(--chalk);text-decoration:none;padding:9px 16px;border-radius:999px}
+  .brief{margin-top:26px}
+  .digest{list-style:none;margin:10px 0 0;padding:0;border-top:1px solid var(--line)}
+  .digest li{display:grid;grid-template-columns:54px 1fr;gap:14px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+  .dn{font-size:30px;color:var(--accent)}
+  .pillar-chip{font-size:10.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .digest h3{font-size:21px;line-height:1.25;letter-spacing:-.015em;margin:6px 0 8px;font-weight:600}
+  .digest .dek{color:var(--g2);font-size:15.5px;line-height:1.65;margin:0}
+
+  .movecard{margin-top:26px;border:1px solid var(--line);border-radius:20px;padding:20px;background:var(--panel)}
+  .move-note{font-size:18px;font-weight:600;line-height:1.35;color:var(--chalk);margin:0 0 12px;letter-spacing:-.01em}
+  .move-link{display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:600;color:var(--ink);background:var(--chalk);text-decoration:none;padding:0 16px;border-radius:12px}
   .move-credit{display:block;margin-top:10px;font-size:12px;color:var(--g3)}
-  .dots{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}
-  .dots h2{font-size:25px;line-height:1.2;letter-spacing:-.02em;margin:8px 0 10px}
+  .dots{margin-top:26px}
+  .dots h2{font-size:clamp(28px,3.4vw,40px);margin:0 0 12px}
   .dotbody{color:var(--g1);font-size:16.5px;line-height:1.7;margin:0 0 12px;max-width:62ch}
-  .dothis{margin-top:24px}
-  .deal-list{list-style:none;margin:8px 0 0;padding:0}
-  .deal-list li{padding:8px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.5}
-  .deal-amt{font-family:var(--mono);color:var(--accent);font-weight:700}
-  .deal-note{color:var(--g2)}
-  .deal-read{margin:12px 0 0;padding:12px 14px;border-left:3px solid var(--accent);background:var(--panel);border-radius:10px;font-size:14.5px;line-height:1.55}
-  .deal-read b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--g4);margin-bottom:4px}
-  .dothis-box{margin-top:8px;background:var(--chalk);color:var(--ink);border-radius:14px;padding:18px 20px;font-size:16px;line-height:1.6;font-weight:600}
-  .mw{margin-top:24px}
-  .mwbody{color:var(--g1);font-size:15.5px;line-height:1.7;margin:8px 0 0;max-width:62ch}
-  .recs{margin-top:24px}
-  .reclist{margin:10px 0 0;padding:0;list-style:none}
+  .mw,.recs{margin-top:26px}
+  .mwbody{color:var(--g1);font-size:15.5px;line-height:1.7;margin:0;max-width:62ch}
+  .reclist{margin:0;padding:0;list-style:none}
   .reclist li{padding:10px 0;border-top:1px solid var(--line);color:var(--g1);font-size:15px;line-height:1.55}
   .reclist b{color:var(--chalk)}
   .reclist a{color:var(--chalk);text-decoration:none;border-bottom:1px solid var(--g3)}
-  .reclist a:hover{border-color:var(--chalk)}
-  .recad{font-size:9px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--g4);margin-left:6px}
-
-  .sponsor{margin-top:22px;border:1px dashed var(--line);border-radius:14px;padding:18px 20px;background:var(--panel)}
-  .sponsor .adlabel{font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g4)}
+  .reclist a:hover{border-color:var(--accent);color:var(--accent)}
+  .recad{font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--g4);margin-left:6px}
+  .sponsor{margin-top:26px;border:1px dashed var(--edge);border-radius:20px;padding:18px 20px;background:var(--panel)}
+  .sponsor .adlabel{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g4)}
   .sponsor p{margin:8px 0 12px;color:var(--g1);font-size:15.5px;line-height:1.55}
-  .sponsor .lp{display:inline-block}
-
-  .subcard{margin-top:26px;border:1px solid var(--line);border-radius:16px;padding:28px;text-align:center;background:linear-gradient(180deg,var(--panel),transparent)}
-  .subcard h2{font-size:24px;letter-spacing:-.02em;margin:0 0 8px}
-  .subcard p{color:var(--g2);max-width:46ch;margin:0 auto 18px;line-height:1.55}
-  .subcard .cta{display:inline-block}
 
   .srcblock{margin-top:30px;padding-top:18px;border-top:1px solid var(--line)}
   .srcblock ol{margin:10px 0 0;padding-left:20px;color:var(--g3)}
@@ -266,9 +318,14 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
   .srcblock a{color:var(--g3);text-decoration:none;border-bottom:1px solid var(--line)}
   .srcblock a:hover{color:var(--chalk);border-color:var(--chalk)}
 
-  @media(max-width:520px){
-    .digest li{grid-template-columns:26px 1fr;gap:10px}
+  @media(max-width:960px){
+    .dgrid{grid-template-columns:1fr;gap:0}
+    .drail-in{position:static;padding-top:22px}
+  }
+  @media(max-width:560px){
+    .digest li{grid-template-columns:40px 1fr;gap:10px}
+    .dn{font-size:24px}
     .digest h3{font-size:19px}
-    .subcard{padding:22px 16px}
+    .stat-n{font-size:52px}
   }
 </style>

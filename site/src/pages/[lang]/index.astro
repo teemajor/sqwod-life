@@ -124,7 +124,7 @@ const T = de
     <div class="hx-in">
       <p class="kick hx-kick"><span class="pulse" aria-hidden="true"></span>{T.kicker}</p>
       <h1 class="hx-h1">
-        {h1.map((x, i) => <Fragment><span class={x.a ? 'hw hx-acc' : 'hw'} style={`animation-delay:${i * 0.08}s`}>{x.w}</span>{x.br ? <br /> : ' '}</Fragment>)}
+        {h1.map((x, i) => <Fragment><span class={x.a ? 'hw hx-acc' : 'hw'} style={`animation-delay:${i * 0.08}s`}>{x.w}</span>{' '}{x.br ? <br /> : null}</Fragment>)}
       </h1>
       <p class="hx-sub">{tagline}</p>
       <InlineSignup lang={lang} source="home-hero" head={T.signup} variant="hero" />
@@ -175,7 +175,7 @@ const T = de
         <div><p class="kick">{T.repKick}</p><h2>{T.repH}</h2></div>
         <a class="sx-all" href={`/${lang}/intelligence`}>{T.repAll} →</a>
       </div>
-      <div class="g3">
+      <div class="g3 swipe">
         {reports.map((r, i) => (
           <a class={`rc lift rv d${i + 1}${i === 1 ? ' tilt' : ''}`} href={hrefFor(r)}>
             <span class="dnum rc-n" data-count>{statOf(r)}</span>
@@ -215,7 +215,7 @@ const T = de
         <div><p class="kick">{T.vKick}</p><h2><span data-count>{reviews.length}</span> {T.vH}</h2><p>{T.vP}</p></div>
         <a class="sx-all" href={`/${lang}/verified`}>{T.allGuides} →</a>
       </div>
-      <div class="g3">
+      <div class="g3 swipe">
         {topPicks.map((r, i) => (
           <a class={`vc lift rv d${i + 1}`} href={`/${lang}/verified/${r.data.urlSlug}`}>
             <div class="vc-img">
@@ -242,7 +242,7 @@ const T = de
         <div><p class="kick">{T.pbKick}</p><h2>{T.pbH}</h2></div>
         <a class="sx-all" href={`/${lang}/articles`}>{T.allReads} →</a>
       </div>
-      <div class="g3">
+      <div class="g3 swipe">
         {playbooks.map((a, i) => (
           <a class={`pc2 lift rv d${i + 1}`} href={hrefFor(a)}>
             <span class="pc2-tag">{laneTag(a)}</span>
@@ -257,7 +257,7 @@ const T = de
   <!-- Work with Sqwod -->
   <section class="sx sx-last">
     <div class="sx-head rv"><div><p class="kick">{T.workKick}</p><h2>{T.workH}</h2></div></div>
-    <div class="g3">
+    <div class="g3 swipe">
       <div class="door lift rv d1"><p class="kick">{T.brandK}</p><span class="door-h">{T.brandH}</span><p>{T.brandP}</p><a class="cta door-cta" href={`/${lang}/advertise`}>{T.brandCta} →</a></div>
       <div class="door lift rv d2 tilt"><p class="kick">{T.investK}</p><span class="door-h">{T.investH}</span><p>{T.investP}</p><a class="door-ghost" href={`/${lang}/subscribe`}>{T.investCta} →</a></div>
       <div class="door lift rv d3"><p class="kick">{T.podK}</p><span class="door-h">{T.podH}</span><p>{T.podP}</p><a class="door-ghost" href="https://sqwodpod.com" target="_blank" rel="noopener">{T.podCta} →</a></div>
@@ -376,6 +376,15 @@ const T = de
     .g3{grid-template-columns:1fr}
     .inv-in{grid-template-columns:1fr;gap:28px}
     .tilt{rotate:0deg}
+  }
+  @media(max-width:640px){
+    .hx-h1 br{display:none}
+    .hx :global(.isu-pills){flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-24px;padding-right:24px}
+    .hx :global(.isu-pills)::-webkit-scrollbar{display:none}
+    .hx :global(.isu-pill){flex:none}
+    .inv-stats div{padding:14px 12px}
+    .ds-c{padding:20px}
+    .ds-stat{font-size:60px}
   }
   @media(max-width:560px){
     .hx{padding:36px 0 40px}

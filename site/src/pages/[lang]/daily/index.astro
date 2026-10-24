@@ -28,13 +28,12 @@ const blurb = lang === 'de'
   : 'Your 5-minute audio rundown of the wellness industry — every weekday, in EN & DE.';
 const RSS_URL = rssFor(lang);
 ---
-<Base lang={lang} title={lang==='de'?'Sqwod Daily — täglicher Audio-Brief':'Sqwod Daily — daily audio brief'} description={blurb} active="daily">
-  <div class="crumb">Sqwod Daily</div>
-
-  <div class="audio-hero">
-    <div class="audio-meta">
-      <h1 style="margin:0 0 6px">Sqwod Daily</h1>
-      <p class="sub" style="margin:0 0 14px">{blurb}</p>
+<Base lang={lang} title={lang==='de'?'Sqwod Daily: der tägliche Brief fürs Fitness-Business':'Sqwod Daily: the daily brief for the fitness industry'} description={blurb} active="daily">
+  <div class="dh">
+    <div>
+      <p class="kick dh-kick"><span class="pulse" aria-hidden="true"></span>{lang==='de'?'Werktäglich · 5 Minuten · EN & DE':'Every weekday · 5 minutes · EN & DE'}</p>
+      <h1 class="dh-h1"><span class="hw">Sqwod</span> <span class="hw" style="animation-delay:.08s;color:var(--accent)">Daily</span></h1>
+      <p class="dh-sub">{blurb}</p>
       <div class="listen">
         <span class="ll">{lang==='de'?'Hören auf':'Listen on'}:</span>
         {APPLE_URL !== '#' && <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
@@ -43,6 +42,13 @@ const RSS_URL = rssFor(lang);
         <a class="lp sub-cta" href="#daily-signup">{lang==='de'?'Per E-Mail':'By email'}</a>
       </div>
     </div>
+    {latest && (
+      <a class="dh-latest lift" href={`/${lang}/daily/${latest.data.urlSlug}`}>
+        <span class="kick" style="margin:0">{lang==='de'?'Neueste Ausgabe':'Latest issue'} · {fmt(latest.data.date)}</span>
+        <span class="dh-lt">{epLine(latest)}</span>
+        <span class="dh-go">{lang==='de'?'Jetzt lesen':'Read it now'} →</span>
+      </a>
+    )}
   </div>
 
   <InlineSignup lang={lang} source="daily-hub" variant="daily" id="daily-signup" />
@@ -54,7 +60,7 @@ const RSS_URL = rssFor(lang);
         const ha = hasAudio(iss.data.urlSlug);
         const url = `/${lang}/daily/${iss.data.urlSlug}`;
         return (
-          <div class={`ep-row${ha ? '' : ' noaudio'}`}>
+          <div class={`ep-row rv${ha ? '' : ' noaudio'}`}>
             <a class="ep-main" href={url}>
               <span class="ep-date">{fmt(iss.data.date)}</span>
               <span class="ep-title">
@@ -80,6 +86,15 @@ const RSS_URL = rssFor(lang);
 </Base>
 
 <style>
+  .dh{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:end;padding:20px 0 28px;border-bottom:1px solid var(--line);margin-bottom:8px}
+  .dh-kick{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .dh-h1{font-size:clamp(64px,10vw,128px);line-height:.88;margin:0}
+  .dh-sub{margin:16px 0 18px;max-width:56ch;font-size:17px;line-height:1.55;color:var(--g2)}
+  .dh-latest{display:flex;flex-direction:column;gap:12px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:24px;text-decoration:none}
+  .dh-lt{font-family:var(--display);text-transform:uppercase;font-size:clamp(26px,3vw,36px);line-height:1;color:var(--chalk)}
+  :lang(de) .dh-lt{line-height:1.08}
+  .dh-go{font-size:14px;font-weight:600;color:var(--accent)}
+  @media(max-width:860px){ .dh{grid-template-columns:1fr;gap:22px} }
   .ep-list{border-top:1px solid var(--line)}
   .ep-row{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;
     padding:18px 6px;border-bottom:1px solid var(--line);transition:background .15s ease}

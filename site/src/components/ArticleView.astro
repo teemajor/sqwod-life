@@ -193,7 +193,7 @@ const shareCfg = {
 {d.takeaways && d.takeaways.length > 0 && (
   <section class="block tldr">
     <p class="kick">{reportHero ? TOC.read30 : TX.tldr}</p>
-    <ol class={wide ? 'tldr-list tl-wide' : 'tldr-list'}>
+    <ol class={wide ? 'tldr-list tl-wide swipe' : 'tldr-list'}>
       {d.takeaways.map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}
     </ol>
   </section>
@@ -497,6 +497,16 @@ const shareCfg = {
   .rp-note{font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--g4);margin:12px 0 0}
   :global(.prose h2){scroll-margin-top:24px}
   #data,#playbook,#sources,#cite{scroll-margin-top:24px}
+  @media(max-width:640px){
+    .fig-grid{grid-template-columns:1fr 1fr;gap:10px}
+    .fig{padding:14px 14px 12px}
+    .fig-val{font-size:30px}
+    .fig .fviz{margin:10px 0 0}
+    .fig-share{display:none}
+    .fig-note{font-size:11.5px}
+    .rel-card .meta{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+    .rh-bars{height:110px}
+  }
   @media(max-width:960px){
     .rh-grid{grid-template-columns:1fr;gap:28px}
     .rp-grid{grid-template-columns:1fr;gap:0}
