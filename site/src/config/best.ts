@@ -36,6 +36,8 @@ export interface BestGuide {
   /** the editorial half of the direct-answer lede — the factual half (winner,
    *  score, price) is generated from live data in the page template. */
   lede: Record<Lang, string>;
+  /** the professional read: one paragraph for operators, coaches, brands and investors (Oct 2026 audience reframe) */
+  pro?: Record<Lang, string>;
   /** "what to know before buying" — 3-5 items, the real decision criteria */
   before: Array<Record<Lang, string>>;
   /** Rail B: the paragraph written for someone buying for a business, not a
@@ -60,6 +62,10 @@ export const guides: BestGuide[] = [
     lede: {
       en: 'It wins on the least glamorous thing that matters most: you will actually wear it overnight, and overnight is where the data that changes training gets made.',
       de: 'Er gewinnt an der unspektakulärsten Stelle, die am meisten zählt: Du trägst ihn nachts wirklich — und nachts entstehen die Daten, die Training verändern.',
+    },
+    pro: {
+      en: 'For operators: wearables are the data layer your coaching sits on. Pick one platform you can read across all clients (Whoop, Oura and Garmin export; Apple Health needs an aggregator), price the subscription per client over 12 months, and treat recovery scores as a conversation starter, not a prescription. Brands: the moat is the subscription and the app, not the sensor.',
+      de: 'Für Betreiber: Wearables sind die Datenschicht unter deinem Coaching. Wähle eine Plattform, die du über alle Kund:innen hinweg lesen kannst (Whoop, Oura und Garmin exportieren; Apple Health braucht einen Aggregator), rechne das Abo pro Kund:in auf 12 Monate und nutze Recovery-Scores als Gesprächseinstieg, nicht als Vorgabe. Für Marken: Der Burggraben ist das Abo und die App, nicht der Sensor.',
     },
     before: [
       {
@@ -139,6 +145,10 @@ export const guides: BestGuide[] = [
       en: 'Most recovery tools are bought for what they promise and kept for how they feel; this one earns its place on both, which is rarer than the category suggests.',
       de: 'Die meisten Recovery-Tools werden für ihr Versprechen gekauft und für ihr Gefühl behalten. Dieses hier überzeugt bei beidem — seltener, als die Kategorie vermuten lässt.',
     },
+    pro: {
+      en: 'For operators: recovery tools are the cheapest premium tier you can add. Percussion guns and foam rollers survive shared use; compression boots and cold units need a cleaning protocol and a booking slot. Price a recovery add-on against the hardware cost per session, not per unit. Brands: the category is crowded on features and thin on evidence; the ones with studies win the B2B deals.',
+      de: 'Für Betreiber: Recovery-Tools sind die günstigste Premium-Stufe, die du anbieten kannst. Massagepistolen und Faszienrollen halten geteilte Nutzung aus; Kompressionsstiefel und Kälteanwendungen brauchen ein Reinigungsprotokoll und einen Buchungsslot. Kalkuliere ein Recovery-Add-on über die Hardwarekosten pro Einheit, nicht pro Gerät. Für Marken: Die Kategorie ist voll an Features und dünn an Evidenz; wer Studien hat, gewinnt die B2B-Deals.',
+    },
     before: [
       {
         en: 'Be clear what you are buying. The strong evidence for percussion and compression is about how you feel — perceived soreness and short-term range of motion. The evidence that they meaningfully speed up physiological recovery is much thinner. Feeling better is a legitimate reason to buy; just buy it knowingly.',
@@ -213,6 +223,10 @@ export const guides: BestGuide[] = [
       en: 'It earns the top spot because it changes something about the night rather than only reporting on it — the distinction that separates most of this category.',
       de: 'Es steht oben, weil es die Nacht verändert und nicht nur darüber berichtet — genau die Unterscheidung, an der sich diese Kategorie trennt.',
     },
+    pro: {
+      en: 'For operators: sleep is the recovery lever most clients ignore and most coaches cannot see. Sleep tech earns its place when the data flows into the same dashboard as training load. For studios the play is education and partnerships, not inventory: a sleep workshop sells, a smart mattress in the lobby does not. Brands: hardware plus subscription is the model; distribution runs through wellness programmes, not gyms.',
+      de: 'Für Betreiber: Schlaf ist der Erholungshebel, den die meisten Kund:innen ignorieren und die meisten Coaches nicht sehen. Schlaftechnik lohnt sich, wenn die Daten im selben Dashboard landen wie die Trainingsbelastung. Für Studios heißt das Bildung und Partnerschaften, nicht Lagerbestand: Ein Schlaf-Workshop verkauft sich, eine smarte Matratze im Eingang nicht. Für Marken: Hardware plus Abo ist das Modell; der Vertrieb läuft über Wellness-Programme, nicht über Studios.',
+    },
     before: [
       {
         en: 'Separate measuring from changing. A tracker tells you the night was bad. A mattress, a cooling layer, blackout or a temperature change makes the night better. If you already know you sleep badly, spend on the thing that changes it before the thing that quantifies it.',
@@ -279,6 +293,10 @@ export const guides: BestGuide[] = [
     lede: {
       en: 'It tops the list on the two things that survive scrutiny in this category: third-party testing you can verify, and a dose that matches what the studies actually used.',
       de: 'Es steht oben wegen der zwei Dinge, die in dieser Kategorie einer Prüfung standhalten: nachweisbare Fremdtestung und eine Dosis, die dem entspricht, was in den Studien wirklich verwendet wurde.',
+    },
+    pro: {
+      en: 'For operators: supplements are margin, liability and trust in one shelf. Stock only third-party-tested products (Informed Sport, NSF, Cologne List), keep the range to protein, creatine and electrolytes, and never let a coach dose on the floor. Brands: the winners here sell on testing and transparency, not formulas; undisclosed blends lose the professional channel.',
+      de: 'Für Betreiber: Supplements sind Marge, Haftung und Vertrauen in einem Regal. Führe nur extern getestete Produkte (Informed Sport, NSF, Kölner Liste), halte das Sortiment bei Protein, Kreatin und Elektrolyten und lass keinen Coach auf der Fläche dosieren. Für Marken: Hier gewinnen Tests und Transparenz, nicht Formeln; undeklarierte Mischungen verlieren den Profi-Kanal.',
     },
     before: [
       {
@@ -358,6 +376,10 @@ export const guides: BestGuide[] = [
       en: 'It wins because it is still a good machine with the subscription switched off — the test most of this category quietly fails.',
       de: 'Es gewinnt, weil es auch ohne Abo eine gute Maschine bleibt — der Test, an dem diese Kategorie meist stillschweigend scheitert.',
     },
+    pro: {
+      en: 'For operators: connected equipment is a lease decision, not a purchase. Price it per booked hour, check the commercial licence (most consumer subscriptions forbid studio use), and favour machines that work without the subscription. Investors: the home market reset higher after 2020 but is cooling, and the growth has moved to institutional buyers (SFIA 2026). Hardware alone is not a moat.',
+      de: 'Für Betreiber: Vernetzte Geräte sind eine Leasing-, keine Kaufentscheidung. Rechne pro gebuchter Stunde, prüfe die gewerbliche Lizenz (die meisten Consumer-Abos verbieten Studionutzung) und bevorzuge Geräte, die ohne Abo funktionieren. Für Investoren: Der Heimmarkt hat sich nach 2020 höher eingependelt, kühlt aber ab, und das Wachstum liegt bei institutionellen Käufern (SFIA 2026). Hardware allein ist kein Burggraben.',
+    },
     before: [
       {
         en: 'Ask what it is worth when the subscription lapses. Some connected machines become ordinary equipment; a few become close to unusable. That answer should drive the purchase more than the screen size does.',
@@ -424,6 +446,10 @@ export const guides: BestGuide[] = [
     lede: {
       en: 'It comes out on top for the boring reason that decides this category: it still performs after fifty washes, which is where most of the competition quietly falls apart.',
       de: 'Es steht oben aus dem langweiligen Grund, der diese Kategorie entscheidet: Es funktioniert nach fünfzig Wäschen noch — genau dort, wo die Konkurrenz still auseinanderfällt.',
+    },
+    pro: {
+      en: 'For operators: apparel is brand surface, not revenue. Team kit and member merch earn their keep when they are the pieces coaches wear on camera; a rack of third-party leggings does not. Partner on co-branded drops with a brand that already sells online. Brands: the professional channel is coach endorsement and studio kit deals, both cheaper than paid social and stickier.',
+      de: 'Für Betreiber: Bekleidung ist Markenfläche, kein Umsatz. Team-Kit und Member-Merch lohnen sich, wenn es die Teile sind, die Coaches vor der Kamera tragen; ein Ständer mit Fremdmarken-Leggings nicht. Mach Co-Branding-Drops mit einer Marke, die online schon verkauft. Für Marken: Der Profi-Kanal sind Coach-Empfehlungen und Studio-Kit-Deals, beides günstiger als Paid Social und nachhaltiger.',
     },
     before: [
       {
@@ -492,6 +518,10 @@ export const guides: BestGuide[] = [
       en: 'It leads because it is the one you will still be using in a year, which in software is a completely different question from which one demos best.',
       de: 'Sie führt, weil du sie in einem Jahr noch nutzt — bei Software eine völlig andere Frage als die, welche sich am besten vorführen lässt.',
     },
+    pro: {
+      en: 'For operators: the app your clients log in is the retention tool you do not pay for. Choose on export and coach dashboard, not on workout library. If you coach remotely, the client-facing app is your product; price it into the package. Brands and investors: this category commoditises fast; the defensible layer is the coach-side tooling and the data, not the exercise videos.',
+      de: 'Für Betreiber: Die App, in der deine Kund:innen loggen, ist das Retention-Tool, für das du nichts zahlst. Wähle nach Export und Coach-Dashboard, nicht nach Übungsbibliothek. Wenn du remote coachst, ist die Kund:innen-App dein Produkt; preise sie ins Paket ein. Für Marken und Investoren: Diese Kategorie wird schnell zur Massenware; verteidigbar sind Coach-Tools und Daten, nicht die Übungsvideos.',
+    },
     before: [
       {
         en: 'Ask how you leave before you ask how you start. Whether your history exports in a usable format determines whether this is a tool or a trap. Test the export on day one, not in year two.',
@@ -558,6 +588,10 @@ export const guides: BestGuide[] = [
     lede: {
       en: 'It comes first because it disappears into the day rather than adding to it — the only meaningful test for software you have to touch every morning.',
       de: 'Es steht vorn, weil es im Alltag verschwindet statt ihn zu belasten — der einzige sinnvolle Test für Software, die du jeden Morgen anfassen musst.',
+    },
+    pro: {
+      en: 'For operators: booking and payment software is the one tool you cannot switch cheaply, so pick for the next three years. Weigh payout speed, no-show handling, aggregator integrations (Wellhub, Urban Sports Club) and whether members can self-serve. Investors: this is where the industry\'s recurring revenue is captured; switching costs are the moat and the reason incumbents get bought.',
+      de: 'Für Betreiber: Buchungs- und Zahlungssoftware ist das eine Tool, das du nicht günstig wechseln kannst, also wähle für die nächsten drei Jahre. Achte auf Auszahlungstempo, No-Show-Handling, Aggregator-Anbindungen (Wellhub, Urban Sports Club) und darauf, ob Mitglieder sich selbst verwalten können. Für Investoren: Hier wird der wiederkehrende Umsatz der Branche eingesammelt; Wechselkosten sind der Burggraben und der Grund, warum etablierte Anbieter gekauft werden.',
     },
     before: [
       {

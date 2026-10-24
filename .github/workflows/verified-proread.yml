@@ -1,0 +1,54 @@
+name: Verified — write the professional read (PR for review)
+
+# One-off / on-demand: adds the `proRead` block (clients / studio / brand / trade) to every
+# Sqwod Verified review in EN + DE, from the review's own facts. Opens a pull request so Tee
+# reads the diff before anything goes live. Re-run any time; reviews that already have a
+# pro read are skipped unless "force" is set.
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Rewrite reviews that already have a pro read (true/false)'
+        required: false
+        default: 'false'
+      slug:
+        description: 'Only this review slug (optional)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  proread:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Write pro reads
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          ARGS=""
+          [ "${{ github.event.inputs.force }}" = "true" ] && ARGS="$ARGS --force"
+          [ -n "${{ github.event.inputs.slug }}" ] && ARGS="$ARGS --slug=${{ github.event.inputs.slug }}"
+          node automation/verified-proread.mjs $ARGS
+      - name: Build check
+        working-directory: site
+        run: npm install --no-audit --no-fund && npm run build
+      - name: Open a pull request for review
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: verified-proread
+          title: "Verified: professional read on every review (clients / studio / brand / trade)"
+          commit-message: "verified: add proRead to reviews (EN + DE)"
+          body: |
+            Adds the **For professionals** block to Sqwod Verified reviews, written from each review's own verdict, score, pros, cons and price. German authored natively and checked; any review whose pro read contained a number not already in the review was left untouched (see the job log).
+
+            Read a few, then merge. Nothing is live until this is merged.
+          add-paths: site/src/content/reviews
+          delete-branch: true

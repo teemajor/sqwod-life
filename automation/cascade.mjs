@@ -100,9 +100,9 @@ function loadSources() {
 const LANG_NAME = { en: 'English', de: 'German' };
 function voice(lang) {
   const de = lang === 'de';
-  return `VOICE: Sqwod Daily is a trusted news brief for people who run fitness businesses: coaches, personal trainers, studio and gym owners. Write like a good trade reporter explaining the news to a smart friend.
+  return `VOICE: Sqwod Daily is a trusted news brief for fitness industry professionals: studio and gym founders and operators first, then coaches and personal trainers, brand operators, investors and the companies that sell into the industry. Write like a good trade reporter explaining the news to a smart peer.
 - Report first: who did what, where, when, and how much. Use the names, numbers and dates in the source.
-- Then, where the facts support it, one plain sentence on what it means for coaches or studio owners. If the facts do not support a lesson, just report the news.
+- Then, where the facts support it, one plain sentence on what it means for operators, coaches or the brands and investors in that category. If the facts do not support a lesson, just report the news.
 - Plain words, short sentences, active voice. Explain any term a coach might not know in a few words.
 - No slang, idioms, puns, jokes, wordplay, hype or clever phrasing. No unexplained abbreviations.
 - Never invent anything. If a detail is not in the source, leave it out.
@@ -182,7 +182,7 @@ function textProblems(text, lang) {
 // The strings inside the framing sections, with a path so a bad one can be removed.
 function sectionStrings(s) {
   const out = [];
-  for (const k of ['summary', 'intro', 'connectTitle', 'connectBody', 'doThis', 'meanwhile']) if (typeof s?.[k] === 'string' && s[k]) out.push([k, s[k]]);
+  for (const k of ['summary', 'intro', 'connectTitle', 'connectBody', 'doThis', 'dealRead', 'meanwhile']) if (typeof s?.[k] === 'string' && s[k]) out.push([k, s[k]]);
   if (s?.stat) out.push(['stat', `${s.stat.label || ''}. ${s.stat.body || ''}`]);
   if (s?.policyWatch) out.push(['policyWatch', `${s.policyWatch.title || ''}. ${s.policyWatch.body || ''}`]);
   (s?.recs || []).forEach((r, i) => { if (!r.affiliate) out.push([`recs.${i}`, r.text || '']); });
@@ -259,6 +259,7 @@ Produce ONE minified JSON object. Never invent numbers, companies, deals, dates 
  "doThis":"one concrete thing a coach or studio owner can do this week, linked to today's news",
  "meanwhile":"",
  "moneyMoves":[{"entity":"company name from the stories","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one plain clause"}]  // ONLY real raises/M&A/valuations; [] if none,
+ "dealRead":"ONLY if moneyMoves is non-empty: 1-2 plain sentences for investors and brand operators on what today's deals signal for that category (who is funding what, which model is attracting money, what it means for incumbents). Facts only; else \"\"",
  "policyWatch":{"title":"...","body":"1-2 plain sentences"} or null. Only for a law, regulation, health-insurance rule, association programme or official requirement that affects coaches or studios,
  "stat":{"number":"a figure verbatim from the stories","label":"what it measures","body":"one plain sentence on why it matters"} or null. Must be a different figure than any moneyMoves amount,
  "recs":[{"label":"Try|Read|Track","text":"a concrete, evergreen, useful tip or resource for a coach or studio owner"}]  // exactly 2. Each a different type and topic; NOT a recap of today's stories; no invented brand names, prices or numbers.

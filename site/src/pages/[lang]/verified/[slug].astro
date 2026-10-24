@@ -163,6 +163,18 @@ const faqLd = {
         </div>
       </section>
 
+      {d.proRead && (
+        <section class="block pro">
+          <p class="kick">{lang==='de'?'◆ Für Profis':'◆ For professionals'}</p>
+          <div class="pro-grid">
+            <div><h4>{lang==='de'?'Für deine Kund:innen':'For your clients'}</h4><p>{d.proRead.clients}</p></div>
+            <div><h4>{lang==='de'?'Für dein Studio':'For your studio'}</h4><p>{d.proRead.studio}</p></div>
+            <div><h4>{lang==='de'?'Für Marken & Investoren':'For brands & investors'}</h4><p>{d.proRead.brand}</p></div>
+          </div>
+          <p class="trade"><b>{lang==='de'?'Trade-Read':'Trade read'}</b> {d.proRead.trade}</p>
+        </section>
+      )}
+
       <section class="block">
         <p class="kick">{lang==='de'?'Für wen':'Who it\'s for'}</p>
         <div class="who">
@@ -185,6 +197,13 @@ const faqLd = {
 
 <style>
   @media(min-width:900px){ .who{display:grid;grid-template-columns:1fr 1fr;gap:16px} }
+  .pro-grid{display:grid;gap:12px;margin-top:10px}
+  @media(min-width:900px){ .pro-grid{grid-template-columns:1fr 1fr 1fr} }
+  .pro-grid>div{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:12px 14px;background:var(--panel)}
+  .pro-grid h4{margin:0 0 6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--g4)}
+  .pro-grid p{margin:0;font-size:14px;line-height:1.5;color:var(--g1)}
+  .trade{margin:12px 0 0;font-size:13.5px;color:var(--g2);line-height:1.5}
+  .trade b{color:var(--chalk);font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-right:8px}
   .gallery{margin-top:12px;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--panel)}
   .g-tabs{font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);margin:0 0 8px 2px}
   /* product photos sit on a clean white card (on-brand high-contrast B&W) — Amazon shots are on white,

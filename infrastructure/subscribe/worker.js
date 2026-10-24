@@ -7,7 +7,7 @@
  * it doesn't own never lands on the list.
  *
  * Routes:
- *   POST /subscribe   ← email + lang (+ optional role: coach|studio|brand|creator)
+ *   POST /subscribe   ← email + lang (+ optional role: studio|coach|brand|investor|company|creator)
  *                       (form-encoded OR JSON). Runs bot checks,
  *                       emails a confirmation link, redirects to ?status=pending.
  *   GET  /confirm?t=… ← verifies the token, creates the contact in the matching
@@ -39,7 +39,7 @@ const RATE_WINDOW = 3600;      // …per this many seconds
 
 // Self-reported audience segment from the role picker. Anything else is stored
 // as 'unknown' so a crafted POST can't write arbitrary values to Resend.
-const ROLES = new Set(['coach', 'studio', 'brand', 'creator']);
+const ROLES = new Set(['coach', 'studio', 'brand', 'creator', 'investor', 'company']);
 const cleanRole = (v) => { const r = (v || '').toString().trim().toLowerCase(); return ROLES.has(r) ? r : ''; };
 
 // Throwaway-inbox domains. Not exhaustive by design — the confirmation step is

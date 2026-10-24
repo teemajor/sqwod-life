@@ -79,3 +79,13 @@ for doing the search. If a figure can't be sourced, it doesn't go in.
 - [ ] Actionable for the reader (coach / studio operator / wellness creator).
 - [ ] `tags:` set so it auto-links to related pieces.
 - [ ] Bilingual parity (EN + DE) where the section is bilingual.
+
+## Audience (Oct 2026)
+
+sqwod.life is written for **fitness industry professionals**. In priority order when a piece can only serve one reader well:
+
+1. **Founders and operators** (studios, gyms, brands, suppliers)
+2. **Coaches and personal trainers**
+3. **Investors, buyers and companies** selling into the industry
+
+Consumer framing ("buy if you are busy") is never the lead. Every lane carries the professional read: Verified reviews have the `proRead` block (clients / studio / brand / trade), the Daily has `dealRead` under Money movement, flagship reports have an "investors and brands" section, sign-up segments include investor and company.

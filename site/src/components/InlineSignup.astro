@@ -21,9 +21,10 @@ const base = variant === 'daily'
 // Callers may override the copy; an empty body string hides the paragraph.
 const copy = { head: head ?? base.head, body: body ?? base.body };
 
+// Audience segments (Oct 2026): professionals first. 'investor' and 'company' let sponsors buy a targeted list.
 const roles = de
-  ? [['coach', 'Coach oder PT'], ['studio', 'Studio- oder Gym-Inhaber:in'], ['brand', 'Marke oder Gründer:in'], ['creator', 'Creator']]
-  : [['coach', 'Coach or PT'], ['studio', 'Studio or gym owner'], ['brand', 'Brand or founder'], ['creator', 'Creator']];
+  ? [['studio', 'Studio- oder Gym-Betreiber:in'], ['coach', 'Coach oder PT'], ['brand', 'Marke oder Gründer:in'], ['investor', 'Investor:in'], ['company', 'Unternehmen / Anbieter'], ['creator', 'Creator']]
+  : [['studio', 'Studio or gym operator'], ['coach', 'Coach or PT'], ['brand', 'Brand or founder'], ['investor', 'Investor'], ['company', 'Company / supplier'], ['creator', 'Creator']];
 
 const T = de
   ? { iam: 'Ich bin', ph: 'E-Mail-Adresse', btn: 'Kostenlos abonnieren', fine: 'Wir schicken dir einmal eine Bestätigungs-Mail. Abmeldung jederzeit mit einem Klick.', privacy: 'Datenschutz', soon: 'Anmeldung bald verfügbar.' }

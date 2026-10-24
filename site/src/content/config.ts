@@ -92,6 +92,14 @@ const reviews = defineCollection({
     pros: z.array(z.string()),
     cons: z.array(z.string()),
     whoFor: z.object({ buy: z.string(), skip: z.string() }),
+    // The professional read (Oct 2026: sqwod.life speaks to industry professionals first).
+    // Three lenses + a trade line. Rendered ABOVE the consumer buy/skip, which stays for the FAQ schema.
+    proRead: z.object({
+      clients: z.string(),   // should a coach/trainer recommend it to clients, and to whom
+      studio: z.string(),    // does it belong in a studio, gym, Pod or corporate programme
+      brand: z.string(),     // what a brand, buyer or investor should take from it (positioning, moat, risk)
+      trade: z.string(),     // price/margin/distribution/channel facts in one line
+    }).optional(),
 
     // asset for the viewer fallback chain (see infrastructure/schemas/product-asset.schema.json)
     // images MUST be licensed: direct/network media first (Awin/Impact/CJ feeds, brand press kits); Amazon PA-API optional. Never scraped.
@@ -212,6 +220,7 @@ const daily = defineCollection({
       note: z.string().optional(),
       url: z.string().optional(),
     })).default([]),
+    dealRead: z.string().optional(),       // investor / brand read of today's moneyMoves (Oct 2026 audience reframe)
     policyWatch: z.object({ title: z.string(), body: z.string(), url: z.string().optional() }).optional(),
     stat: z.object({ number: z.string(), label: z.string(), body: z.string().optional(), url: z.string().optional() }).optional(),
     recs: z.array(z.object({ label: z.string(), text: z.string(), url: z.string().optional(), affiliate: z.boolean().default(false) })).default([]), // curated actionable; >=1 affiliate

@@ -1,0 +1,25 @@
+name: Deploy Cloudflare Worker (subscribe)
+
+# Ships infrastructure/subscribe/worker.js to Cloudflare on push. Secrets
+# (RESEND_API_KEY, CONFIRM_SECRET) were set once with `wrangler secret put` and
+# stay on the Worker; this only pushes the code and the public [vars].
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'infrastructure/subscribe/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy subscribe worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: infrastructure/subscribe
+          command: deploy

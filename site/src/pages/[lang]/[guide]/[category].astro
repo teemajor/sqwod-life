@@ -255,6 +255,13 @@ const tx = {
       {' '}<a href={`/${lang}/verified/methodology/`}>{tx.methodology} →</a></p>
   </section>
 
+  {guide.pro && (
+    <section class="block pro-note">
+      <p class="kick">{lang==='de'?'◆ Für Profis':'◆ For professionals'}</p>
+      <p class="pro-p">{guide.pro[lang]}</p>
+    </section>
+  )}
+
   <!-- --------------------------------------------------- before you buy -->
   <section class="block">
     <p class="kick">{tx.before}</p>
@@ -294,7 +301,9 @@ const tx = {
           <div><h4>{tx.pros}</h4><ul>{r!.pros.slice(0, 3).map((p) => <li>{p}</li>)}</ul></div>
           <div><h4>{tx.cons}</h4><ul>{r!.cons.slice(0, 2).map((c) => <li>{c}</li>)}</ul></div>
         </div>
-        <p class="who"><b>{tx.buyIf}</b> {r!.whoFor.buy} <b>{tx.skipIf}</b> {r!.whoFor.skip}</p>
+        {r!.proRead
+          ? <p class="who pro"><b>{lang==='de'?'Für Kund:innen':'For clients'}</b> {r!.proRead.clients} <b>{lang==='de'?'Fürs Studio':'For the studio'}</b> {r!.proRead.studio}</p>
+          : <p class="who"><b>{tx.buyIf}</b> {r!.whoFor.buy} <b>{tx.skipIf}</b> {r!.whoFor.skip}</p>}
         <div class="tp-cta">
           <a class="deal" href={`/go/${r!.urlSlug}`} rel="sponsored nofollow">{tx.bestDeal} →</a>
           <a class="ghost" href={`/${lang}/verified/${r!.urlSlug}/`}>{tx.readReview}</a>
@@ -340,6 +349,9 @@ const tx = {
   .byline{font-size:13px;color:var(--g4);margin:12px 0 0}
   .byline a{color:var(--g3)}
   .lede{font-size:17px;line-height:1.6;margin:14px 0 0}
+  .pro-note{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:14px 18px;background:var(--panel);margin-top:18px}
+  .pro-p{margin:6px 0 0;font-size:15px;line-height:1.6;color:var(--g1)}
+  .who.pro b{color:var(--accent)}
   .disc{font-size:12px;color:var(--g4);border-left:2px solid var(--line);padding-left:10px;margin-top:14px}
   .toppick .tp{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
   /* global.css sets .seedwrap{margin:0 auto}; inside a flex row those auto

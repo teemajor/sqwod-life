@@ -148,7 +148,7 @@ Rules: no estimates of your own, no figures without a URL, no paywalled teasers,
 }
 
 const LANG = { en: { name: 'English', style: 'Sharp, plain, specific English. Short sentences. No hype, no filler. Never use em dashes.' }, de: { name: 'German', style: 'Natürliches, präzises Deutsch, direkt für Coaches und Studiobetreiber:innen geschrieben, keine Übersetzung aus dem Englischen. Du-Ansprache. Keine Gedankenstriche (—).' } };
-const SYSTEM = 'You are Sqwod Intelligence, the data desk of sqwod.life: strategic intelligence for coaches, personal trainers, studio and gym founders and wellness operators. Positioning: on the practitioner\'s side, a builder not an observer. Every claim is sourced. You never invent, round differently, extrapolate or combine numbers into new ones the reader cannot verify.';
+const SYSTEM = 'You are Sqwod Intelligence, the data desk of sqwod.life: strategic intelligence for fitness industry professionals. Readers, in priority order: studio, gym and brand founders and operators; coaches and personal trainers; investors, buyers and the companies that sell into the industry. Positioning: on the practitioner\'s side, a builder not an observer. Every claim is sourced. You never invent, round differently, extrapolate or combine numbers into new ones the reader cannot verify.';
 
 async function structure(s, fresh, lang, enRef) {
   const L = LANG[lang];
@@ -160,7 +160,7 @@ ${datasetText(s)}
 NEWER PUBLIC SOURCES (each verified with a URL; cite them by source name):
 ${fresh.length ? fresh.map((f, i) => `(F${i}) ${f.label}: ${f.value} (${f.period}) — ${f.source} — ${f.url}${f.note ? ' — ' + f.note : ''}`).join('\n') : '(none found this month)'}
 
-Design a FLAGSHIP report (3,000+ words will be written next) for coaches, trainers and studio founders. Respond ONLY as minified JSON:
+Design a FLAGSHIP report (3,000+ words will be written next) for fitness industry professionals: founders and operators first, then coaches, then investors and brands. Respond ONLY as minified JSON:
 {
  "title": "<= 70 chars, a real headline with a number in it",
  "description": "2 sentences: the finding + why an operator should care. Ends with 'A living Sqwod Intelligence report.' (DE: 'Ein lebender Sqwod-Intelligence-Report.')",
@@ -171,7 +171,7 @@ Design a FLAGSHIP report (3,000+ words will be written next) for coaches, traine
  "charts": [{"idx":<chart index>,"label":"short reader-facing title in ${L.name}","unit":"short unit e.g. $bn, Mio. €, %","note":"optional one-line reading of the chart"}],   // 8 to 10 distinct indices, time-series first, the single most important one FIRST
  "benchmark": null OR {"label":"what the reader enters","unit":"%","prompt":"one-line prompt","betterIsHigh":true,"min":0,"max":100,"median":<a value from a categorical chart>,"medianLabel":"what that median is","bands":[{"to":<n>,"label":"..."},{"to":<n>,"label":"..."},{"to":<n>,"label":"..."}],"source":"chart source","chart":<index>}   // ONLY if a categorical chart compares countries/segments on one metric a reader can self-report; bands must sit inside the real spread of that chart's values
  "playbook": [{"move":"specific operator action","why":"why it follows from the data, naming the figure"}],   // 5 to 6
- "outline": [{"h2":"section heading","points":["3-4 bullet points of what the section argues, each naming the figures it will use"]}],   // 7 to 9 sections, first = the hook, last = what to do
+ "outline": [{"h2":"section heading","points":["3-4 bullet points of what the section argues, each naming the figures it will use"]}],   // 7 to 9 sections: first = the hook; second-to-last = "What investors and brands should read into this" (capital flows, who wins, model risk, what a buyer or sponsor should do), written for investors, brand operators and companies selling into the industry; last = what operators and coaches should do
  "hero": {"stat":"the single headline figure","statLabel":"6 words max"},
  "tags": ["3 to 5 lowercase tags"]
 }`;
@@ -182,7 +182,7 @@ async function body(s, fresh, lang, st) {
   const L = LANG[lang];
   const allowed = st.charts.map((c) => `[${c.idx}] ${s.charts[c.idx]?.title}`).join('\n');
   const prompt = `${lang === 'de' ? 'Schreibe auf Deutsch.' : 'Write in English.'} ${L.style}
-Write the full body of the flagship report "${st.title}" for coaches, personal trainers and studio founders. Minimum 3,000 words. Markdown. Use exactly these sections, in order, as '## ' headings:
+Write the full body of the flagship report "${st.title}" for fitness industry professionals: studio, gym and brand founders and operators first, then coaches and trainers, then investors, buyers and companies selling into the industry. Minimum 3,000 words. Markdown. Use exactly these sections, in order, as '## ' headings:
 ${st.outline.map((o, i) => `${i + 1}. ${o.h2}\n   ${o.points.join('\n   ')}`).join('\n')}
 
 DATA you may cite (nothing else; quote values exactly as given, you may compute a percentage change or multiple between two values of the SAME chart and must show both endpoints when you do):

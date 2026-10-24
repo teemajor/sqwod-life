@@ -144,6 +144,19 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
     </section>
   )}
 
+  <!-- DEAL READ: investor / brand view of today's money moves -->
+  {(d.moneyMoves?.length > 0 || d.dealRead) && (
+    <section class="deals">
+      <p class="kick">{lang === 'de' ? 'Geldbewegung' : 'Money movement'}</p>
+      {d.moneyMoves?.length > 0 && (
+        <ul class="deal-list">
+          {d.moneyMoves.map((m) => <li><b>{m.entity}</b>{m.amount ? <span class="deal-amt"> {m.amount}</span> : null}{m.note ? <span class="deal-note"> · {m.note}</span> : null}</li>)}
+        </ul>
+      )}
+      {d.dealRead && <p class="deal-read"><b>{lang === 'de' ? 'Investoren-Lesart' : 'Investor read'}</b> {d.dealRead}</p>}
+    </section>
+  )}
+
   <!-- SQWOD RECS: curated actionable (incl. affiliate) -->
   {d.recs && d.recs.length > 0 && (
     <section class="recs">
@@ -220,6 +233,12 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
   .dots h2{font-size:25px;line-height:1.2;letter-spacing:-.02em;margin:8px 0 10px}
   .dotbody{color:var(--g1);font-size:16.5px;line-height:1.7;margin:0 0 12px;max-width:62ch}
   .dothis{margin-top:24px}
+  .deal-list{list-style:none;margin:8px 0 0;padding:0}
+  .deal-list li{padding:8px 0;border-top:1px solid var(--line);font-size:14.5px;line-height:1.5}
+  .deal-amt{font-family:var(--mono);color:var(--accent);font-weight:700}
+  .deal-note{color:var(--g2)}
+  .deal-read{margin:12px 0 0;padding:12px 14px;border-left:3px solid var(--accent);background:var(--panel);border-radius:10px;font-size:14.5px;line-height:1.55}
+  .deal-read b{display:block;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--g4);margin-bottom:4px}
   .dothis-box{margin-top:8px;background:var(--chalk);color:var(--ink);border-radius:14px;padding:18px 20px;font-size:16px;line-height:1.6;font-weight:600}
   .mw{margin-top:24px}
   .mwbody{color:var(--g1);font-size:15.5px;line-height:1.7;margin:8px 0 0;max-width:62ch}
