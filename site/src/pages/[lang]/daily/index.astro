@@ -2,7 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
-import { APPLE_URL, SPOTIFY_URL, rssFor } from '../../../config/podcast';
+import { appleFor, spotifyFor, rssFor } from '../../../config/podcast';
 import { isLiveIssue } from '../../../config/daily.mjs';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { readdirSync } from 'node:fs';
@@ -36,8 +36,8 @@ const RSS_URL = rssFor(lang);
       <p class="dh-sub">{blurb}</p>
       <div class="listen">
         <span class="ll">{lang==='de'?'Hören auf':'Listen on'}:</span>
-        {APPLE_URL !== '#' && <a class="lp" href={APPLE_URL} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
-        {SPOTIFY_URL !== '#' && <a class="lp" href={SPOTIFY_URL} target="_blank" rel="noopener">Spotify</a>}
+        {appleFor(lang) !== '#' && <a class="lp" href={appleFor(lang)} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
+        {spotifyFor(lang) !== '#' && <a class="lp" href={spotifyFor(lang)} target="_blank" rel="noopener">Spotify</a>}
         <a class="lp" href={RSS_URL} target="_blank" rel="noopener">RSS</a>
         <a class="lp sub-cta" href="#daily-signup">{lang==='de'?'Per E-Mail':'By email'}</a>
       </div>

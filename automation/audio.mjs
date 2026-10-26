@@ -221,8 +221,8 @@ function buildFeed(lang) {
     <itunes:category text="Health &amp; Fitness"/>
     <itunes:category text="Business"/>
     <itunes:owner><itunes:name>${xml(s.owner)}</itunes:name><itunes:email>${s.email}</itunes:email></itunes:owner>
-    <itunes:image href="${SITE}/podcast-cover.png"/>
-    <image><url>${SITE}/podcast-cover.png</url><title>${xml(s.title)}</title><link>${SITE}/${lang}/daily</link></image>
+    <itunes:image href="${SITE}/podcast-cover-${lang}.jpg"/>
+    <image><url>${SITE}/podcast-cover-${lang}.jpg</url><title>${xml(s.title)}</title><link>${SITE}/${lang}/daily</link></image>
 ${items.join('\n')}
   </channel>
 </rss>
