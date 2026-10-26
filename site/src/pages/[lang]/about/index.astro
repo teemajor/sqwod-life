@@ -1,4 +1,8 @@
 ---
+// About, Oct 2026 redesign (approved mockup "About · founder"): dark hero with Tee's
+// portrait, a quiet "worked with" strip, a note whose words light up as you read, the
+// need -> product map, headline numbers, the "hats" list with a photo that follows the
+// cursor, and the mission band. Only credits Tee confirmed appear here.
 import Base from '../../../layouts/Base.astro';
 import { languages, type Lang } from '../../../i18n/ui';
 
@@ -6,50 +10,364 @@ export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
 
-const ecosystem = [
-  { name: 'Sqwod Pods', en: 'Private, fully-equipped training studios for coaches & creators.', de: 'Private, voll ausgestattete Trainingsstudios für Coaches & Creator.' },
-  { name: 'Sqwod OS', en: 'Software to build, manage, and grow a fitness business.', de: 'Software zum Aufbauen, Verwalten und Wachsen eines Fitness-Business.' },
-  { name: 'Sqwod AI', en: 'The AI coach and intelligence layer.', de: 'Der KI-Coach und die Intelligence-Ebene.' },
-  { name: 'Sqwod Products', en: 'Coffee, protein, and gear built for the work.', de: 'Kaffee, Protein und Equipment für die Arbeit.' },
+// [[ ]] marks the phrase that turns moss. {{Name}} links a product name (see `links`).
+// A blank line starts a new paragraph.
+const note = de
+  ? `Ich habe sqwod.life gebaut, weil ich es selbst gebraucht habe. Unsere Branche lebt von Meinungen, Hype und Pressemitteilungen. Sie braucht [[Daten, auf die sie sich verlassen kann.]]
+
+Ich betreibe Studios und kaufe für sie ein. Ich bin auch selbst Kunde und will den besten Deal. Früher habe ich im Affiliate-Marketing gearbeitet, ich kenne also die Margen. Und ich weiß, dass sich Bewertungen kaufen und fälschen lassen. Deshalb sammelt {{Sqwod Verified}} Bewertungen aus dem ganzen Netz, sortiert die Fakes aus und macht daraus einen Score. Wenn du über uns kaufst, verdiene ich vielleicht eine Provision. Am Score ändert das nichts.
+
+Ich trainiere Kund:innen und mir ist die Wissenschaft wichtig. Dafür gibt es {{Intelligence}}. Manchmal lese ich, manchmal höre ich den {{Sqwod Daily}} beim Laufen.
+
+KI hat es möglich gemacht, dass ein einzelner Coach all das bauen kann. Ich habe meine eigenen Probleme gelöst. Wie sich herausstellt, sind es auch deine.`
+  : `I built sqwod.life because I needed it. Our industry runs on opinions, hype and press releases. It needs [[data it can rely on.]]
+
+I run studios and I buy for them. I'm a consumer too, and I want the best deal. I used to work in affiliate marketing, so I know the margins. I also know reviews can be bought and faked. So {{Sqwod Verified}} pulls reviews from across the web, throws out the fakes and boils it all down to one score. If you buy through us, I might earn a commission. It never changes the score.
+
+I train clients and I care about the science. That's what {{Intelligence}} is for. Some days I read, some days I listen to the {{Sqwod Daily}} on a run.
+
+AI is what let one coach build all of it. I was solving my own problems. Turns out they're yours too.`;
+const links: Record<string, string> = {
+  'Sqwod Verified': `/${lang}/verified`,
+  'Intelligence': `/${lang}/intelligence`,
+  'Sqwod Daily': `/${lang}/daily`,
+};
+type W = { t: string; hl: boolean; href?: string };
+const paras: W[][] = note.split(/\n\s*\n/).map((para) => {
+  const ws: W[] = [];
+  para.split(/(\[\[.*?\]\]|\{\{.*?\}\})/).forEach((part) => {
+    if (part.startsWith('{{')) {
+      const name = part.slice(2, -2);
+      ws.push({ t: name, hl: false, href: links[name] });
+      return;
+    }
+    const hl = part.startsWith('[[');
+    part.replace(/\[\[|\]\]/g, '').split(/\s+/).filter(Boolean).forEach((t) => {
+      // keep punctuation that follows a linked name attached to it
+      if (/^[.,;:!?]/.test(t) && ws.length && ws[ws.length - 1].href) { ws.push({ t, hl, href: undefined }); return; }
+      ws.push({ t, hl });
+    });
+  });
+  return ws;
+});
+
+const strip = [
+  { src: '/logos/army.png', alt: 'U.S. Army', h: 40, emb: true, role: de ? 'Soldat:innen trainiert' : 'Trained service members' },
+  { src: '/logos/usmc.png', alt: 'U.S. Marine Corps', h: 40, emb: true, role: de ? 'Soldat:innen trainiert' : 'Trained service members' },
+  { src: '/logos/navy.png', alt: 'U.S. Navy', h: 40, emb: true, role: de ? 'Soldat:innen trainiert' : 'Trained service members' },
+  { src: '/logos/usaf.png', alt: 'U.S. Air Force', h: 30, emb: true, role: de ? 'Soldat:innen trainiert' : 'Trained service members' },
+  { src: '/logos/bryant.png', alt: 'Bryant University', h: 15, emb: false, role: 'Assistant Strength Coach' },
+  { src: '/logos/wh.svg', alt: "Women's Health", h: 16, emb: false, role: de ? 'Trainer-Features, drei Strecken' : 'Featured trainer, three spreads' },
+  { src: '/logos/prh.svg', alt: 'Penguin Random House', h: 30, emb: false, role: de ? 'Autor, Urban Calisthenics' : 'Author, Urban Calisthenics' },
+  { src: '/logos/adidas.png', alt: 'adidas', h: 26, emb: false, role: de ? 'Fitness-Model' : 'Fitness model' },
+  { src: '/logos/eonline.png', alt: 'E!', h: 32, emb: false, role: 'TV, Just Jillian' },
 ];
-const title = lang === 'de' ? 'Über uns — Sqwod' : 'About — Sqwod';
+
+const fixes = de
+  ? [
+      { need: 'Ich kaufe Equipment für meine Studios und Gear für mich selbst. Ich will den besten Deal.', name: 'Verified', what: 'Jedes Produkt auf derselben Scorecard bewertet, mit dem besten Live-Preis.', href: `/${lang}/verified` },
+      { need: 'Ich trainiere Kund:innen. Sie fragen, was die Wissenschaft sagt. Ich muss auf dem Laufenden bleiben.', name: 'Intelligence', what: 'Monatliche Reports auf Basis echter Marktdaten, dazu Evidence-Playbooks.', href: `/${lang}/intelligence` },
+      { need: 'Manchmal lese ich. Manchmal höre ich beim Laufen oder zwischen den Sätzen.', name: 'Der Daily', what: 'Fünf Minuten an jedem Werktag. Zum Lesen oder Hören.', href: `/${lang}/daily` },
+      { need: 'Ein Coach, kein Entwicklerteam, keine Redaktion.', name: 'Mit KI gebaut', what: 'KI übernimmt die Schwerarbeit. Jede Zahl wird gegen ihre Quelle geprüft.', href: `/${lang}/verified/methodology` },
+    ]
+  : [
+      { need: 'I buy equipment for my studios, and gear for myself. I want the best deal.', name: 'Verified', what: 'Every product scored on the same scorecard, with the best live price.', href: `/${lang}/verified` },
+      { need: 'I train clients. They ask what the science says. I need to stay informed.', name: 'Intelligence', what: 'Monthly reports on real market data, plus evidence playbooks.', href: `/${lang}/intelligence` },
+      { need: 'Some days I read. Some days I listen on a run or between sets.', name: 'The Daily', what: 'Five minutes every weekday. Read it or listen to it.', href: `/${lang}/daily` },
+      { need: 'One coach, no dev team, no newsroom.', name: 'Built with AI', what: 'AI does the heavy lifting. Every number is checked against its source.', href: `/${lang}/verified/methodology` },
+    ];
+
+const nums = de
+  ? [{ v: '24+', l: 'Jahre auf der Trainingsfläche' }, { v: '4', l: 'US-Teilstreitkräfte trainiert' }, { v: '3', l: 'Kontinente, auf denen ich gecoacht habe' }, { v: '600+', l: 'Coaches auf eine Plattform gebracht' }, { v: '1', l: 'Olympiasiegerin trainiert' }]
+  : [{ v: '24+', l: 'years on the training floor' }, { v: '4', l: 'U.S. military branches trained' }, { v: '3', l: 'continents coached on' }, { v: '600+', l: 'coaches onboarded to one platform' }, { v: '1', l: 'Olympic champion trained' }];
+
+const I = (f: string) => `/team/about/${f}.jpg`;
+const hats = de
+  ? [
+      { r: 'Strength Coach', d: 'Assistant Strength Coach an der Bryant University. College- und Profi-Athlet:innen.', img: I('michigan-squat') },
+      { r: 'Olympia', d: 'Trainer von Melaine Walker, Olympiasiegerin über 400 m Hürden für Jamaika.', img: I('beach-sprint') },
+      { r: 'Militär', d: 'Fitnesstrainer für Soldat:innen aus vier US-Teilstreitkräften, auf drei Kontinenten.', img: I('military-class') },
+      { r: 'Autor', d: 'Urban Calisthenics, erschienen bei Penguin Random House.', img: I('urban-calisthenics-cover') },
+      { r: 'Model & TV', d: "adidas, Features in Women's Health, E! Just Jillian.", img: I('wh-boot-camp-rebooted') },
+      { r: 'Betreiber', d: 'Sqwod Pods: zwei private Trainingsräume in Berlin.', img: I('pod-storefront') },
+      { r: 'Produkt & Growth', d: 'Produktmanager und Growth-Marketer. Über 600 Coaches onboarded.', img: I('studio-coaching-medball') },
+      { r: 'Gründer', d: 'Sqwod: Intelligence, Räume und Tools für die Menschen, die Fitness aufbauen.', img: I('pod-kollwitzkiez') },
+    ]
+  : [
+      { r: 'Strength coach', d: 'Assistant strength coach at Bryant University. College and pro athletes.', img: I('michigan-squat') },
+      { r: 'Olympic', d: 'Trained Melaine Walker, Olympic 400m hurdles champion for Jamaica.', img: I('beach-sprint') },
+      { r: 'Military', d: 'Fitness trainer for service members of four U.S. branches, on three continents.', img: I('military-class') },
+      { r: 'Author', d: 'Urban Calisthenics, published by Penguin Random House.', img: I('urban-calisthenics-cover') },
+      { r: 'Model & TV', d: "adidas, Women's Health features, E! Just Jillian.", img: I('wh-boot-camp-rebooted') },
+      { r: 'Operator', d: 'Sqwod Pods: two private training rooms in Berlin.', img: I('pod-storefront') },
+      { r: 'Product & growth', d: 'Product manager and growth marketer. 600+ coaches onboarded.', img: I('studio-coaching-medball') },
+      { r: 'Founder', d: 'Sqwod: intelligence, rooms and tools for the people who build fitness.', img: I('pod-kollwitzkiez') },
+    ];
+
+// icon paths: simple-icons (CC0); LinkedIn drawn by hand
+const socials = [
+  { name: 'Instagram', h: '@teemajor', url: 'https://instagram.com/teemajor', d: 'M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.72 3.72 0 0 1-1.38-.9 3.72 3.72 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.88 5.88 0 0 0-2.13 1.38A5.88 5.88 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.71 1.46 1.38 2.13a5.88 5.88 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.88 5.88 0 0 0 2.13-1.38 5.88 5.88 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.88 5.88 0 0 0-1.38-2.13A5.88 5.88 0 0 0 19.86.63C19.1.33 18.22.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z' },
+  { name: 'LinkedIn', h: 'in/teemajor', url: 'https://linkedin.com/in/teemajor', d: 'M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z' },
+  { name: 'YouTube', h: '@TeeMajor', url: 'https://www.youtube.com/@TeeMajor', d: 'M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81zM9.55 15.57V8.43L15.82 12l-6.27 3.57z' },
+  { name: 'X', h: '@Tee_Major', url: 'https://x.com/Tee_Major', d: 'M14.23 10.16 22.98 0h-2.07l-7.6 8.82L7.25 0H.26l9.17 13.34L.26 24h2.07l8.02-9.32L16.75 24h7L14.23 10.16zm-2.84 3.3-.93-1.33L3.08 1.56H6.26l5.97 8.54.93 1.33 7.76 11.1h-3.18l-6.35-9.07z' },
+  { name: 'Facebook', h: '/teemajor', url: 'https://facebook.com/teemajor', d: 'M9.1 23.69v-7.98H6.63v-3.67H9.1v-1.58c0-4.09 1.85-5.98 5.86-5.98.76 0 2.07.15 2.61.3v3.33c-.28-.03-.78-.05-1.39-.05-1.97 0-2.73.75-2.73 2.69v1.29h3.92l-.67 3.67h-3.25v8.25A12 12 0 0 0 24 12 12 12 0 1 0 9.1 23.69z' },
+];
+
+const T = de
+  ? { kick: 'Der Gründer', line: '<b>24 Jahre auf der Trainingsfläche.</b> Coach einer Olympiasiegerin, von College- und Profi-Athlet:innen und von vier US-Teilstreitkräften. Sqwod habe ich gebaut, um meine eigenen Probleme zu lösen.', base: 'Basis', origin: 'Herkunft', building: 'Baut', usa: 'USA',
+      worked: 'Gearbeitet mit', noteK: 'Ein Wort von Tee', founder: 'Gründer, Sqwod · Berlin', fixK: 'Jeder Teil existiert, weil ich ihn gebraucht habe', hatsK: 'Die Rollen',
+      missionK: 'Die Mission', mission: 'Wir bewaffnen die Rebellen.', missionP: 'Intelligence, ehrliche Reviews und private Trainingsräume für die Coaches, Betreiber:innen und Marken, die die großen Plattformen übersehen.', cta1: 'Sqwod Daily holen', cta2: 'Mit Sqwod arbeiten',
+      title: 'Über Tee Major · Sqwod', desc: 'Tee Major, Gründer von Sqwod: 24 Jahre Coaching, vom College-Kraftraum bis zu vier US-Teilstreitkräften. Warum er sqwod.life gebaut hat.' }
+  : { kick: 'The founder', line: '<b>24 years on the training floor.</b> Coach to an Olympic champion, college and pro athletes and four U.S. military branches. I built Sqwod to solve my own problems.', base: 'Base', origin: 'Origin', building: 'Building', usa: 'USA',
+      worked: 'Worked with', noteK: 'A note from Tee', founder: 'Founder, Sqwod · Berlin', fixK: 'Every part exists because I needed it', hatsK: 'The hats',
+      missionK: 'The mission', mission: 'We arm the rebels.', missionP: 'Intelligence, honest reviews and private training rooms for the coaches, operators and brands the big platforms overlook.', cta1: 'Get Sqwod Daily', cta2: 'Work with Sqwod',
+      title: 'About Tee Major · Sqwod', desc: 'Tee Major, founder of Sqwod: 24 years of coaching, from college weight rooms to four U.S. military branches. Why he built sqwod.life.' };
 ---
-<Base lang={lang} title={title} active="about">
-  <div class="crumb">{lang==='de'?'Über uns':'About'}</div>
-  <h1>{lang==='de'?'Wir bewaffnen die Rebellen.':'We arm the rebels.'}</h1>
-  <p class="sub" style="max-width:54ch">{lang==='de'
-    ? 'sqwod.life gibt Coaches, Trainer:innen, Studio-Gründer:innen und Creatorn den Vorsprung im Fitness-Business — Insider-Wissen, ehrliche Gear-Bewertungen und Wachstums-Playbooks, unabhängig von den großen Plattformen.'
-    : 'sqwod.life gives coaches, trainers, studio founders, and creators their edge in the fitness industry: insider intelligence, honest gear reviews, and growth playbooks, independent of the big platforms.'}</p>
-
-  <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
-    <p class="kick">{lang==='de'?'Die Mission':'The mission'}</p>
-    <p class="prose measure" style="margin-left:0">{lang==='de'
-      ? 'Großartiges Coaching und gute Technologie sind die Zutaten für Spitzenleistung. Wir bauen digitale und physische Räume, in denen Creator, Coaches und Trainer:innen einfache, bezahlbare Werkzeuge bekommen, um ihre Communities aufzubauen, zu verwalten und wachsen zu lassen.'
-      : 'Great coaching and good technology are the ingredients of peak performance. We build digital and physical spaces where creators, coaches, and trainers get simple, affordable tools to build, manage, and grow their communities.'}</p>
-  </section>
-
-  <section class="block">
-    <p class="kick">{lang==='de'?'Der Gründer':'The founder'}</p>
-    <p class="prose measure" style="margin-left:0">{lang==='de'
-      ? 'Tee Major — 24+ Jahre in der Fitnessbranche, Militär-Fitnesstrainer (USMC, Army, Navy, Air Force), TRX-, ACE- und Sporternährungs-zertifiziert, selbst Creator. Sqwod ist aus dem Bedarf eines Creators entstanden: Content drehen, Kund:innen trainieren, in Topform bleiben.'
-      : 'Tee Major — 24+ years in the fitness industry, military fitness trainer (USMC, Army, Navy, Air Force), TRX / ACE / sports-nutrition certified, and a creator himself. Sqwod was born from a creator\'s need: shoot content, train clients, stay in peak shape.'}</p>
-  </section>
-
-  <section class="block">
-    <p class="kick">{lang==='de'?'Die Sqwod-Familie':'The Sqwod family'}</p>
-    <p class="sub" style="margin-bottom:12px">{lang==='de'?'sqwod.life ist Teil eines größeren Ganzen:':'sqwod.life is part of something bigger:'}</p>
-    <div class="grid cols2">
-    {ecosystem.map((e) => (
-      <div class="card" style="grid-template-columns:1fr;cursor:default">
-        <div class="info"><h3>{e.name}</h3><div class="meta">{lang==='de'?e.de:e.en}</div></div>
+<Base lang={lang} title={T.title} description={T.desc} active="about" image="/team/tee-major.jpg">
+  <!-- 1 HERO -->
+  <section class="abh bleed">
+    <div class="abh-photo"><img src="/team/tee-major.jpg" alt={de ? 'Tee Major, Profilporträt' : 'Tee Major, profile portrait'} width="900" height="1350" /></div>
+    <div class="wrap abh-in">
+      <p class="kick abh-kick">{T.kick}</p>
+      <h1 class="abh-name"><span><i>Tee</i></span><span><i>Major</i></span></h1>
+      <p class="abh-line" set:html={T.line} />
+      <div class="abh-meta">
+        <div><small>{T.base}</small><span>Berlin</span></div>
+        <div><small>{T.origin}</small><span>{T.usa}</span></div>
+        <div><small>{T.building}</small><span>Sqwod</span></div>
       </div>
-    ))}
     </div>
   </section>
 
-  <section class="block" style="border-bottom:none">
-    <p class="kick">{lang==='de'?'Kontakt':'Contact'}</p>
-    <p class="prose">tee@sqwod.life · Berlin<br><a href={`/${lang}/impressum`} style="color:var(--g2)">Impressum</a></p>
+  <!-- 1b WORKED WITH -->
+  <section class="as">
+    <span class="as-k">{T.worked}</span>
+    <ul class="as-row">
+      {strip.map((s) => (
+        <li class="as-l" tabindex="0">
+          <img class={s.emb ? 'as-img' : 'as-img wordmark'} src={s.src} alt={s.alt} title={s.alt} style={`height:${s.h}px`} loading="lazy" />
+          <span class="as-role">{s.role}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- 2 NOTE -->
+  <section class="an">
+    <p class="kick">{T.noteK}</p>
+    <div class="an-txt">{paras.map((ws) => (
+      <p>{ws.map((w, i) => {
+        const glue = i + 1 < ws.length && /^[.,;:!?]/.test(ws[i + 1].t) ? '' : ' ';
+        return w.href
+          ? <Fragment><a class="aw al" href={w.href}>{w.t}</a>{glue}</Fragment>
+          : <span class={w.hl ? 'aw hl' : 'aw'}>{w.t}{glue}</span>;
+      })}</p>
+    ))}</div>
+    <div class="an-sig rv">
+      <span class="an-av"><img src="/team/tee-major.jpg" alt="" width="900" height="1350" loading="lazy" /></span>
+      <div><p class="an-name">Tee<i>.</i></p><p class="an-role">{T.founder}</p></div>
+      <ul class="an-soc">
+        {socials.map((x) => (
+          <li><a href={x.url} target="_blank" rel="noopener me" aria-label={`${x.name} ${x.h}`}><svg viewBox="0 0 24 24" aria-hidden="true"><path d={x.d} fill="currentColor" /></svg><span>{x.h}</span></a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2b NEED -> FIX -->
+  <section class="af">
+    <p class="kick">{T.fixK}</p>
+    {fixes.map((f, i) => (
+      <a class="af-row rv" href={f.href}>
+        <span class="af-n">{String(i + 1).padStart(2, '0')}</span>
+        <p class="af-need">{f.need}</p>
+        <span class="af-arrow" aria-hidden="true">→</span>
+        <div><span class="af-name">{f.name}</span><p class="af-what">{f.what}</p></div>
+      </a>
+    ))}
+  </section>
+
+  <!-- 3 NUMBERS -->
+  <section class="anum">
+    {nums.map((n, i) => <div class={`rv d${Math.min(i, 3)}`}><span class="dnum" data-count>{n.v}</span><p>{n.l}</p></div>)}
+  </section>
+
+  <!-- 4 THE HATS -->
+  <section class="ahats" id="hats">
+    <p class="kick">{T.hatsK}</p>
+    <div>
+      {hats.map((h, i) => (
+        <div class="ahat" data-img={h.img}>
+          <span class="ahat-n">{String(i + 1).padStart(2, '0')}</span>
+          <span class="ahat-r">{h.r}</span>
+          <span class="ahat-d">{h.d}</span>
+        </div>
+      ))}
+    </div>
+    <div class="apeek" aria-hidden="true"><img alt="" src={hats[0].img} /></div>
+  </section>
+
+  <!-- 5 CLOSE -->
+  <section class="ac bleed">
+    <div class="wrap ac-in">
+      <div><p class="kick abh-kick">{T.missionK}</p><h2 class="ac-h">{T.mission}</h2></div>
+      <div>
+        <p class="ac-p">{T.missionP}</p>
+        <a class="ac-btn" href={`/${lang}/subscribe`}>{T.cta1} →</a><a class="ac-btn ghost" href={`/${lang}/advertise`}>{T.cta2}</a>
+      </div>
+    </div>
   </section>
 </Base>
+
+<script is:inline>
+  // Words light up as they cross the middle of the screen; the "hats" photo follows the cursor.
+  (function () {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var ws = document.querySelectorAll('.aw');
+    if (reduce || !('IntersectionObserver' in window)) ws.forEach(function (w) { w.classList.add('lit'); });
+    else {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('lit'); io.unobserve(e.target); } }); }, { rootMargin: '-38% 0px -52% 0px' });
+      ws.forEach(function (w) { io.observe(w); });
+    }
+    var sec = document.getElementById('hats'), peek = sec && sec.querySelector('.apeek'), img = peek && peek.querySelector('img');
+    if (!sec || !peek || !window.matchMedia('(hover: hover)').matches) return;
+    sec.querySelectorAll('.ahat').forEach(function (row) {
+      row.addEventListener('mouseenter', function () { img.src = row.getAttribute('data-img'); peek.classList.add('on'); });
+    });
+    sec.addEventListener('mousemove', function (e) {
+      var r = sec.getBoundingClientRect();
+      peek.style.left = (e.clientX - r.left + 24) + 'px'; peek.style.top = (e.clientY - r.top - 160) + 'px';
+    });
+    sec.addEventListener('mouseleave', function () { peek.classList.remove('on'); });
+  })();
+</script>
+
+<style>
+  :global(main.wrap){padding-top:0}
+  /* hero: always dark, the portrait's black background melts into it */
+  .abh{position:relative;background:#050506;color:#F4F0EA;min-height:min(820px,92vh);overflow:hidden;display:flex;align-items:flex-end}
+  .abh-photo{position:absolute;right:0;top:0;bottom:0;width:58%}
+  .abh-photo img{width:100%;height:100%;object-fit:cover;object-position:45% 22%;display:block;transform:scale(1.08);animation:ahsettle 2.2s cubic-bezier(.2,.7,.2,1) forwards;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 32%);mask-image:linear-gradient(90deg,transparent 0%,#000 32%)}
+  @keyframes ahsettle{to{transform:scale(1)}}
+  .abh-in{position:relative;z-index:2;padding-top:120px;padding-bottom:72px;width:100%}
+  .abh-kick{color:#7FB58C}
+  .abh-name{margin:0;font-size:clamp(96px,17vw,240px);line-height:.94;color:#F4F0EA}
+  .abh-name span{display:block;overflow:hidden}
+  .abh-name i{display:block;font-style:normal;transform:translateY(105%);animation:ahup 1s cubic-bezier(.2,.7,.2,1) forwards}
+  .abh-name span:nth-child(2) i{animation-delay:.12s}
+  @keyframes ahup{to{transform:none}}
+  .abh-line{margin:26px 0 0;max-width:520px;font-size:20px;line-height:1.5;color:#A3A3A0}
+  .abh-line :global(b){color:#F4F0EA;font-weight:500}
+  .abh-meta{display:flex;gap:26px;margin-top:30px}
+  .abh-meta div{border-left:1px solid rgba(255,255,255,.18);padding-left:14px}
+  .abh-meta small{display:block;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:#A3A3A0}
+  .abh-meta span{display:block;margin-top:6px;font-size:15px;color:#F4F0EA}
+
+  /* worked-with strip */
+  .as{display:flex;align-items:center;gap:32px;padding:24px 0;border-bottom:1px solid var(--line)}
+  .as-k{flex:none;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .as-row{list-style:none;margin:0;padding:0;display:flex;align-items:center;justify-content:space-between;gap:24px;flex:1;flex-wrap:wrap}
+  .as-l{position:relative;display:flex;align-items:center;justify-content:center;height:48px;outline:none}
+  .as-img{width:auto;filter:grayscale(1);opacity:.55;transition:opacity .3s,filter .3s,transform .4s cubic-bezier(.2,.7,.2,1)}
+  :global(:root:not([data-theme="light"])) .as-img.wordmark{filter:grayscale(1) invert(1);opacity:.6}
+  @media (prefers-color-scheme: light){ :global(:root:not([data-theme="dark"])) .as-img.wordmark{filter:grayscale(1);opacity:.55} }
+  .as-l:hover .as-img,.as-l:focus .as-img{filter:none;opacity:1;transform:translateY(-4px)}
+  :global(:root:not([data-theme="light"])) .as-l:hover .as-img.wordmark{filter:grayscale(1) invert(1)}
+  @media (prefers-color-scheme: light){ :global(:root:not([data-theme="dark"])) .as-l:hover .as-img.wordmark{filter:none} }
+  .as-role{position:absolute;top:calc(100% + 2px);left:50%;transform:translate(-50%,4px);white-space:nowrap;font:500 10.5px var(--mono);color:var(--accent);opacity:0;pointer-events:none;transition:opacity .25s,transform .3s}
+  .as-l:hover .as-role,.as-l:focus .as-role{opacity:1;transform:translate(-50%,0)}
+
+  /* note */
+  .an{padding:100px 0 90px}
+  .an-txt{max-width:1000px;font-size:clamp(23px,2.7vw,38px);line-height:1.25;font-weight:500;letter-spacing:-.02em}
+  .an-txt p{margin:0 0 .75em}
+  .an-txt p:last-child{margin-bottom:0}
+  .aw.al{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.16em;text-decoration-color:var(--accent);color:var(--chalk)}
+  .aw.al:hover{color:var(--accent)}
+  .aw{color:var(--chalk);opacity:.14;transition:opacity .5s ease}
+  .aw.lit{opacity:1}
+  .aw.hl{color:var(--accent)}
+  .an-sig{display:flex;align-items:center;gap:18px;margin-top:40px;flex-wrap:wrap}
+  .an-av{width:64px;height:64px;border-radius:50%;overflow:hidden;background:#050506;flex:none;box-shadow:0 0 0 3px var(--ink),0 0 0 4px var(--accent)}
+  .an-av img{width:100%;height:100%;object-fit:cover;object-position:45% 22%;display:block}
+  .an-name{margin:0;font-family:var(--display);text-transform:uppercase;font-size:44px;line-height:.9}
+  .an-name i{font-style:normal;color:var(--accent)}
+  .an-role{margin:4px 0 0;font:500 12px var(--mono);color:var(--g3)}
+  .an-soc{list-style:none;margin:0 0 0 24px;padding:0 0 0 24px;border-left:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px}
+  .an-soc a{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px 0 12px;border:1px solid var(--line);border-radius:12px;text-decoration:none;font:500 13px var(--mono);color:var(--g2);transition:border-color .2s,color .2s,translate .3s}
+  .an-soc a:hover{border-color:var(--accent);color:var(--chalk);translate:0 -2px}
+  .an-soc svg{width:16px;height:16px}
+  .an-soc a:hover svg{color:var(--accent)}
+
+  /* need -> fix */
+  .af{padding:0 0 100px}
+  .af-row{display:grid;grid-template-columns:56px minmax(0,1.1fr) 70px minmax(0,1fr);gap:24px;align-items:center;padding:28px 0;border-top:1px solid var(--line);text-decoration:none}
+  .af-row:last-child{border-bottom:1px solid var(--line)}
+  .af-n{font:500 13px var(--mono);color:var(--g4)}
+  .af-need{margin:0;font-size:22px;line-height:1.35;letter-spacing:-.015em;color:var(--g2);font-style:italic}
+  .af-arrow{font-size:38px;color:var(--accent);transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .af-row:hover .af-arrow{transform:translateX(12px)}
+  .af-name{display:block;font-family:var(--display);text-transform:uppercase;font-size:clamp(40px,5vw,64px);line-height:.92;color:var(--chalk);transition:color .25s}
+  :lang(de) .af-name{line-height:1.05}
+  .af-row:hover .af-name{color:var(--accent)}
+  .af-what{margin:8px 0 0;font-size:15px;line-height:1.5;color:var(--g2)}
+
+  /* numbers */
+  .anum{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .anum div{padding:30px 22px 26px;border-right:1px solid var(--line)}
+  .anum div:last-child{border-right:0}
+  .anum .dnum{display:block;font-size:clamp(56px,6.4vw,92px);color:var(--chalk)}
+  .anum p{margin:12px 0 0;font-size:14px;line-height:1.45;color:var(--g2);max-width:22ch}
+
+  /* hats */
+  .ahats{position:relative;padding:100px 0 110px}
+  .ahat{position:relative;display:grid;grid-template-columns:60px minmax(0,1fr) minmax(0,1.05fr);gap:26px;align-items:center;padding:22px 0;border-top:1px solid var(--line)}
+  .ahat:last-child{border-bottom:1px solid var(--line)}
+  .ahat::before{content:'';position:absolute;left:0;right:0;top:-1px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+  .ahat:hover::before{transform:scaleX(1)}
+  .ahat-n{font:500 13px var(--mono);color:var(--g4)}
+  .ahat-r{font-family:var(--display);font-size:clamp(40px,5vw,64px);line-height:.95;text-transform:uppercase;color:var(--chalk);transition:transform .4s cubic-bezier(.2,.7,.2,1),color .3s}
+  :lang(de) .ahat-r{line-height:1.05}
+  .ahat:hover .ahat-r{transform:translateX(12px);color:var(--accent)}
+  .ahat-d{font-size:17px;line-height:1.5;color:var(--g2);transition:color .3s}
+  .ahat:hover .ahat-d{color:var(--chalk)}
+  .apeek{position:absolute;left:0;top:0;width:250px;height:310px;border-radius:18px;overflow:hidden;pointer-events:none;z-index:5;box-shadow:0 30px 60px -20px rgba(0,0,0,.55);opacity:0;transform:rotate(0deg) scale(.9);transition:opacity .25s ease,transform .35s cubic-bezier(.2,.7,.2,1)}
+  .apeek.on{opacity:1;transform:rotate(-3deg) scale(1)}
+  .apeek img{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* close */
+  .ac{background:#050506;color:#F4F0EA;margin-bottom:-8px}
+  .ac-in{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:44px;align-items:end;padding-top:100px;padding-bottom:100px}
+  .ac-h{margin:0;font-size:clamp(56px,7vw,92px);line-height:.9;color:#F4F0EA}
+  .ac-p{margin:0 0 22px;font-size:18px;line-height:1.55;color:#A3A3A0}
+  .ac-btn{display:inline-flex;align-items:center;min-height:50px;padding:0 20px;margin:0 10px 10px 0;border-radius:14px;background:#F4F0EA;color:#0E0E0F;font-weight:600;font-size:15px;text-decoration:none;transition:background .15s,color .15s}
+  .ac-btn:hover{background:#7FB58C;color:#0E0E0F}
+  .ac-btn.ghost{background:transparent;color:#F4F0EA;border:1px solid rgba(255,255,255,.25)}
+  .ac-btn.ghost:hover{border-color:#7FB58C;color:#7FB58C}
+
+  @media(max-width:860px){
+    .abh{display:block;min-height:0}
+    .abh-photo{position:relative;width:100%;height:62vh;max-height:520px}
+    .abh-photo img{-webkit-mask-image:linear-gradient(0deg,transparent 0%,#000 35%);mask-image:linear-gradient(0deg,transparent 0%,#000 35%)}
+    .abh-in{margin-top:-140px;padding-top:0;padding-bottom:44px}
+    .as{flex-direction:column;align-items:flex-start;gap:12px}
+    .as-row{justify-content:flex-start;gap:18px 24px}
+    .an{padding:64px 0 56px}
+    .an-soc{margin:8px 0 0;padding:0;border-left:0;width:100%}
+    .af-row{grid-template-columns:36px 1fr;gap:6px 14px}
+    .af-arrow{display:none}
+    .af-row > div{grid-column:2}
+    .af-need{font-size:17px}
+    .anum{grid-template-columns:1fr 1fr}
+    .anum div:nth-child(2n){border-right:0}
+    .anum div{border-bottom:1px solid var(--line)}
+    .ahats{padding:64px 0 70px}
+    .ahat{grid-template-columns:36px 1fr;gap:6px 14px}
+    .ahat-d{grid-column:2;font-size:15px}
+    .ac-in{grid-template-columns:1fr;gap:20px;padding-top:64px;padding-bottom:64px}
+  }
+  @media (prefers-reduced-motion: reduce){ .abh-name i{transform:none;animation:none} .abh-photo img{animation:none;transform:none} }
+</style>
