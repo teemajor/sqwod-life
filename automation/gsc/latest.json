@@ -1,39 +1,104 @@
 {
   "site": "sc-domain:sqwod.life",
   "window": {
-    "start": "2026-09-18",
-    "end": "2026-10-16",
+    "start": "2026-09-25",
+    "end": "2026-10-23",
     "days": 28
   },
-  "generatedAt": "2026-10-19T13:32:48.789Z",
+  "generatedAt": "2026-10-26T13:15:46.003Z",
   "totals": {
     "clicks": 0,
-    "impressions": 0,
+    "impressions": 9,
     "ctr": 0,
-    "queries": 0,
-    "pages": 1
+    "queries": 2,
+    "pages": 2
   },
-  "topQueries": [],
+  "topQueries": [
+    {
+      "query": "nexowod",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 81
+    },
+    {
+      "query": "sqwod",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    }
+  ],
   "topPages": [
+    {
+      "page": "https://sqwod.life/de/",
+      "lang": "de",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 81
+    },
     {
       "page": "https://sqwod.life/en/",
       "lang": "en",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 5,
       "ctr": 0,
-      "position": 5.5
+      "position": 3.6
     }
   ],
   "striking": [],
   "questions": [],
-  "gaps": [],
+  "gaps": [
+    {
+      "query": "nexowod",
+      "landedOn": "https://sqwod.life/de/",
+      "impressions": 7,
+      "position": 81
+    }
+  ],
   "countries": [
     {
       "country": "usa",
       "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 18.5
+    },
+    {
+      "country": "che",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 79.7
+    },
+    {
+      "country": "deu",
+      "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 5.5
+      "position": 2.5
+    },
+    {
+      "country": "ecu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "country": "ukr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "country": "zaf",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
     }
   ]
 }
