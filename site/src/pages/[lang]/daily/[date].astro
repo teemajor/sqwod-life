@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
 import { pillarMeta } from '../../../i18n/pillars';
 import { appleFor, spotifyFor, rssFor, episodeAudio } from '../../../config/podcast';
+import ListenBadge from '../../../components/ListenBadge.astro';
 import ShareBar from '../../../components/ShareBar.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { existsSync } from 'node:fs';
@@ -104,7 +105,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
       <div class="listen">
         <span class="ll">{tx.listen}:</span>
         {appleFor(lang) !== '#' && <a class="lp" href={appleFor(lang)} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
-        {spotifyFor(lang) !== '#' && <a class="lp" href={spotifyFor(lang)} target="_blank" rel="noopener">Spotify</a>}
+        <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
         <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
       </div>
     </section>

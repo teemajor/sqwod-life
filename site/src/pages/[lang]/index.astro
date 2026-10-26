@@ -14,6 +14,8 @@ import { reviewEarns } from '../../config/verified-categories';
 import { isLiveIssue } from '../../config/daily.mjs';
 import { priceOf } from '../../lib/price';
 import { join } from 'node:path';
+import ListenBadge from '../../components/ListenBadge.astro';
+import { spotifyFor } from '../../config/podcast';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -139,6 +141,7 @@ const T = de
         <a class="ds-title" href={`/${lang}/daily/${latest.data.urlSlug}`}>{latest.data.summary || latest.data.title}</a>
         <div class="ds-act">
           {latestHasAudio && <a class="ds-listen" href={`/${lang}/daily/${latest.data.urlSlug}#listen`}><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>{T.listen} · {latest.data.duration ?? '5 min'}</a>}
+          <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
           <a class="ds-more" href={`/${lang}/daily/${latest.data.urlSlug}`}>{T.read} →</a>
         </div>
       </div>
