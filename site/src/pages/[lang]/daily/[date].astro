@@ -97,7 +97,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
     <h1 class="dx-h1">{headWords.map((w, i) => <Fragment><span class="hw" style={`animation-delay:${Math.min(i, 14) * 0.05}s`}>{w}</span>{' '}</Fragment>)}</h1>
     {d.status !== 'published' && <p class="dealnote">⚑ {tx.draft}</p>}
     {d.intro && <p class="dx-intro">{d.intro}</p>}
-    <section class="player" id="listen">
+    <section class="player" id="listen" data-ep={d.urlSlug} data-lang={lang} data-title={epTitle} data-cover={`/podcast-cover-${lang}.jpg`}>
       <div class="pl-top">{hasAudio
         ? <button type="button" class="pl-dot" aria-label={tx.play}><svg class="pl-i-play" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg><svg class="pl-i-pause" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/></svg></button>
         : <span class="pl-dot" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>}<span><b>{tx.play}</b> · {d.duration ?? '5 min'}</span></div>
@@ -157,7 +157,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
               <li>
                 <b>{r.label}:</b>{' '}
                 {r.url
-                  ? <a href={r.url} rel={r.affiliate ? 'sponsored nofollow' : undefined}>{r.text}</a>
+                  ? <a href={r.url} rel={r.affiliate ? 'sponsored nofollow' : undefined} data-umami-event="daily-rec-click" data-umami-event-label={r.label} data-umami-event-affiliate={r.affiliate ? 'yes' : 'no'} data-umami-event-episode={d.urlSlug}>{r.text}</a>
                   : r.text}
                 {r.affiliate && <span class="recad">· {tx.ad}</span>}
               </li>
@@ -177,7 +177,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
         <aside class="sponsor">
           <span class="adlabel">{lang==='de'?'Anzeige':'Sponsored'} · {lang==='de'?'Präsentiert von':'Presented by'} {d.sponsor.name}</span>
           {d.sponsor.blurb && <p>{d.sponsor.blurb}</p>}
-          {d.sponsor.url && <a class="lp" href={d.sponsor.url} rel="sponsored nofollow" target="_blank">{d.sponsor.cta ?? (lang==='de'?'Mehr erfahren':'Learn more')} →</a>}
+          {d.sponsor.url && <a class="lp" href={d.sponsor.url} rel="sponsored nofollow" target="_blank" data-umami-event="sponsor-click" data-umami-event-sponsor={d.sponsor.name} data-umami-event-episode={d.urlSlug}>{d.sponsor.cta ?? (lang==='de'?'Mehr erfahren':'Learn more')} →</a>}
         </aside>
       )}
     </div>
@@ -243,6 +243,38 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
     btn.addEventListener('click', function () { au.paused ? au.play() : au.pause(); });
     au.addEventListener('play', function () { pl.classList.add('playing'); });
     au.addEventListener('pause', function () { pl.classList.remove('playing'); });
+
+    // Listening metrics (Umami): one event per milestone per page view.
+    var ep = pl.dataset.ep, lang = pl.dataset.lang, sent = {};
+    function track(name) {
+      if (sent[name]) return; sent[name] = 1;
+      try { window.umami && window.umami.track(name, { episode: ep, lang: lang }); } catch (e) {}
+    }
+    au.addEventListener('play', function () { track('daily-play'); });
+    au.addEventListener('timeupdate', function () {
+      if (!au.duration) return;
+      var pct = au.currentTime / au.duration;
+      if (pct >= 0.5) track('daily-listen-50');
+    });
+    au.addEventListener('ended', function () { track('daily-listen-complete'); });
+
+    // Lock-screen and headphone controls: cover, title, play/pause, skip 15s.
+    if ('mediaSession' in navigator) {
+      au.addEventListener('play', function () {
+        try {
+          navigator.mediaSession.metadata = new MediaMetadata({
+            title: pl.dataset.title || 'Sqwod Daily',
+            artist: lang === 'de' ? 'Sqwod Daily (Deutsch)' : 'Sqwod Daily',
+            album: 'Sqwod Daily',
+            artwork: [{ src: pl.dataset.cover, sizes: '3000x3000', type: 'image/jpeg' }]
+          });
+          navigator.mediaSession.setActionHandler('play', function () { au.play(); });
+          navigator.mediaSession.setActionHandler('pause', function () { au.pause(); });
+          navigator.mediaSession.setActionHandler('seekbackward', function () { au.currentTime = Math.max(0, au.currentTime - 15); });
+          navigator.mediaSession.setActionHandler('seekforward', function () { au.currentTime = Math.min(au.duration || 0, au.currentTime + 15); });
+        } catch (e) {}
+      });
+    }
   })();
 </script>
 

@@ -86,7 +86,7 @@ const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
         <p class="vd">{d.verdict}</p>
         <div class="acts">
           <a class="rev" href={`/${lang}/verified/${d.urlSlug}`}>{T.read}</a>
-          {pick && <a class="vis" href={pick.url} target="_blank" rel={earns(pick) ? 'sponsored nofollow' : 'nofollow'}>{T.visit}</a>}
+          {pick && <a class="vis" href={pick.url} target="_blank" rel={earns(pick) ? 'sponsored nofollow' : 'nofollow'} data-umami-event="deal-click" data-umami-event-product={d.urlSlug} data-umami-event-placement="compare" data-umami-event-earns={earns(pick) ? 'yes' : 'no'}>{T.visit}</a>}
         </div>
       </div>
     ))}

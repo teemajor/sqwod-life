@@ -168,7 +168,7 @@ const faqLd = {
 
         <div class="vbuy">
           {priceText && <div><span class="dnum vbuy-p">{priceText}</span>{lowText && <p class="vbuy-n">{lowText}</p>}</div>}
-          <a class="vbuy-btn" href={`/go/${d.urlSlug}`} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'}>{t(lang,'verified.bestDeal')} →</a>
+          <a class="vbuy-btn" href={`/go/${d.urlSlug}`} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'} data-umami-event="deal-click" data-umami-event-product={d.urlSlug} data-umami-event-placement="review" data-umami-event-earns={reviewEarns(d.urlSlug) ? 'yes' : 'no'}>{t(lang,'verified.bestDeal')} →</a>
         </div>
         <p class="dealnote vbuy-note">{reviewEarns(d.urlSlug)
           ? <Fragment>Anzeige / Affiliate · {lang==='de'?'Live-Preis beim Händler':'live price shown at the retailer'}</Fragment>

@@ -90,7 +90,7 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
           <p class="why">{p.why[lang]}</p>
           <div class="acts">
             {r && <a class="rev-link" href={`/${lang}/verified/${p.reviewSlug}`}>{tx.read} →</a>}
-            <a class="visit" href={p.url} target="_blank" rel={earns(p) ? 'sponsored nofollow' : 'nofollow'}>{tx.visit} ↗</a>
+            <a class="visit" href={p.url} target="_blank" rel={earns(p) ? 'sponsored nofollow' : 'nofollow'} data-umami-event="deal-click" data-umami-event-product={p.reviewSlug ?? p.product} data-umami-event-placement="category" data-umami-event-earns={earns(p) ? 'yes' : 'no'}>{tx.visit} ↗</a>
           </div>
         </div>
         {r && (

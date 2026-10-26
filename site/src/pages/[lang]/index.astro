@@ -140,7 +140,7 @@ const T = de
         <p class="kick"><span class="pulse" aria-hidden="true" style="margin-right:8px"></span>{T.today} · {fmtDate(latest.data.date)}</p>
         <a class="ds-title" href={`/${lang}/daily/${latest.data.urlSlug}`}>{latest.data.summary || latest.data.title}</a>
         <div class="ds-act">
-          {latestHasAudio && <a class="ds-listen" href={`/${lang}/daily/${latest.data.urlSlug}#listen`}><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>{T.listen} · {latest.data.duration ?? '5 min'}</a>}
+          {latestHasAudio && <a class="ds-listen" href={`/${lang}/daily/${latest.data.urlSlug}#listen`} data-umami-event="daily-listen-click" data-umami-event-where="home"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>{T.listen} · {latest.data.duration ?? '5 min'}</a>}
           <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
           <a class="ds-more" href={`/${lang}/daily/${latest.data.urlSlug}`}>{T.read} →</a>
         </div>

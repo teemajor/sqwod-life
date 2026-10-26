@@ -188,7 +188,7 @@ const tx = {
           </div>
           <p class="verdict">{top.r!.verdict}</p>
           <div class="tp-cta">
-            <a class="deal" href={`/go/${top.r!.urlSlug}`} rel="sponsored nofollow">{tx.bestDeal} →</a>
+            <a class="deal" href={`/go/${top.r!.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={top.r!.urlSlug} data-umami-event-placement="guide-top" data-umami-event-earns="yes">{tx.bestDeal} →</a>
             <a class="ghost" href={`/${lang}/verified/${top.r!.urlSlug}/`}>{tx.readReview}</a>
           </div>
         </div>
@@ -305,7 +305,7 @@ const tx = {
           ? <p class="who pro"><b>{lang==='de'?'Für Kund:innen':'For clients'}</b> {r!.proRead.clients} <b>{lang==='de'?'Fürs Studio':'For the studio'}</b> {r!.proRead.studio}</p>
           : <p class="who"><b>{tx.buyIf}</b> {r!.whoFor.buy} <b>{tx.skipIf}</b> {r!.whoFor.skip}</p>}
         <div class="tp-cta">
-          <a class="deal" href={`/go/${r!.urlSlug}`} rel="sponsored nofollow">{tx.bestDeal} →</a>
+          <a class="deal" href={`/go/${r!.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r!.urlSlug} data-umami-event-placement="guide-list" data-umami-event-earns="yes">{tx.bestDeal} →</a>
           <a class="ghost" href={`/${lang}/verified/${r!.urlSlug}/`}>{tx.readReview}</a>
         </div>
       </article>

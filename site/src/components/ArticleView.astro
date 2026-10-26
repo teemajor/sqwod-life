@@ -331,6 +331,7 @@ const shareCfg = {
   <section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
     <Content />
   </section>
+  <div class="read-end" data-slug={d.urlSlug ?? entry.slug} data-lang={lang} aria-hidden="true" style="height:1px"></div>
 
   {d.sources && d.sources.length > 0 && (
     <section class="block sources-block" id="sources">
@@ -778,5 +779,19 @@ const shareCfg = {
         setTimeout(() => btn.classList.remove('busy'), 1400);
       });
     });
+  })();
+</script>
+
+<script is:inline>
+  // Read-to-the-end metric (Umami): fires once when the end of the article body scrolls into view.
+  (function () {
+    var m = document.querySelector('.read-end');
+    if (!m || !('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (es) {
+      if (!es.some(function (e) { return e.isIntersecting; })) return;
+      io.disconnect();
+      try { window.umami && window.umami.track('article-read', { article: m.dataset.slug, lang: m.dataset.lang }); } catch (e) {}
+    });
+    io.observe(m);
   })();
 </script>
