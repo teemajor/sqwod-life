@@ -32,7 +32,8 @@ crons = ["0 7 * * *"]
 #   npx wrangler secret put RESEND_API_KEY    # Resend API key
 #   npx wrangler secret put DIGEST_KEY        # any long random string; guards /digest for the weekly task
 
-# Optional custom route (otherwise it's served at the *.workers.dev URL):
-# [[routes]]
-# pattern = "dash.sqwod.life/*"
-# zone_name = "sqwod.life"
+# The dashboard's address. Must stay listed here: without it, `wrangler deploy` warns that
+# it will remove the custom domain set in the Cloudflare dashboard (seen 26 Oct 2026).
+[[routes]]
+pattern = "dash.sqwod.life"
+custom_domain = true

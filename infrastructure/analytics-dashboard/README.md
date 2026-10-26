@@ -4,10 +4,14 @@ One private page that merges **site** (self-hosted Umami) and **email** (Resend)
 into a single branded view at **https://dash.sqwod.life**, gated by Cloudflare Access.
 A Cloudflare Worker; no paid Umami API (it logs into our own Umami for a token).
 
-**Layout (v2):** ① north-star hero (total list + net-new this week + activity
-sparkline) → ② "this week's move" auto-insight → ③ funnel (visitors → subscribe rate
-→ share rate) → ④ site detail (KPIs with % change, top pages/sources, custom events)
-→ ⑤ email (EN/DE list sizes + recent broadcasts). 7/30/90-day switch. Fresh each load.
+**Layout (v3, Oct 2026):** ① alerts (only things a human must act on; drafts older than
+3 days or from before the Daily relaunch collapse into one line with no send button, and the
+server refuses to send them) → ② subscribers (big number + 90-day growth line) and signup
+rate → ③ this week's move (picks the biggest leak) → ④ funnel: visitors → engaged (full
+reads + listens) → signup form → new subscribers → ⑤ Daily & audio, money clicks, content →
+⑥ email (clicks, not opens). Fonts: Anton + Geist (Google Fonts); palette = sqwod.life moss
+green, follows the viewer's light/dark setting. Event properties (product, placement,
+episode, article) come from Umami's event-data values endpoint.
 
 ## As-built setup
 - **Worker:** `sqwod-command-center` (internal name only; the page reads "Sqwod.Life Analytics").
