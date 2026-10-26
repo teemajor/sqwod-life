@@ -49,8 +49,8 @@ const VOICE = { en: VOICE_EN, de: VOICE_DE };
 if (KEY) console.log(`· Daily voices (repo, authoritative) — EN: ${VOICE.en} · DE: ${VOICE.de}`);
 
 const SHOW = {
-  en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the fitness and wellness industry, every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
-  de: { title: 'Sqwod Daily', desc: 'Dein 5-Minuten-Audio-Rundown zum Business von Fitness und Wellness — jeden Werktag. Von Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'hello@sqwod.life' },
+  en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the fitness and wellness industry, every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'podcast@sqwod.life' },
+  de: { title: 'Sqwod Daily (Deutsch)', desc: 'Dein 5-Minuten-Audio-Rundown zum Business von Fitness und Wellness, jeden Werktag. Von Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'podcast@sqwod.life' },
 };
 const GREET = { en: "It's Sqwod Daily: the fitness industry in five minutes, minus the boring parts. Let's get into it.", de: 'Hier ist Sqwod Daily: die Fitnessbranche in fünf Minuten, ohne den langweiligen Teil. Los geht’s.' };
 const OUTRO = { en: "And that's your Sqwod Daily. Go get one rep better — see you tomorrow.", de: 'Und das war dein Sqwod Daily. Werd eine Rep besser — bis morgen.' };
@@ -166,6 +166,14 @@ async function synth(script, lang, outPath) {
   writeFileSync(outPath, Buffer.from(await r.arrayBuffer()));
 }
 
+// Episode title = the day's topics (what a scrolling listener decides on), not the
+// show name + date. Apps already show both. Falls back to the date if no summary.
+const episodeTitle = (summary, niceDate) => {
+  const t = String(summary || '').replace(/\s+/g, ' ').trim();
+  if (!t) return `Sqwod Daily, ${niceDate}`;
+  return t.length > 120 ? t.slice(0, 117).replace(/[\s,&]+\S*$/, '') + '…' : t;
+};
+
 const rfc822 = (d) => new Date(d + 'T06:00:00Z').toUTCString();
 const xml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
@@ -184,10 +192,10 @@ function buildFeed(lang) {
     const len = statSync(mp3).size;
     const dur = hms(estDuration(scriptFor(iss, lang)));
     const niceDate = new Date(date + 'T06:00:00Z').toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
-    const notes = [iss.summary || iss.intro, ...iss.items.map((i) => `• ${i.headline} — ${i.dek}`)].filter(Boolean).join('\n');
+    const notes = [iss.summary || iss.intro, ...iss.items.map((i) => `• ${i.headline}: ${i.dek}`)].filter(Boolean).join('\n');
     items.push(
       `    <item>
-      <title>${xml(`Sqwod Daily — ${niceDate}`)}</title>
+      <title>${xml(episodeTitle(iss.summary, niceDate))}</title>
       <description>${xml(notes)}</description>
       <pubDate>${rfc822(date)}</pubDate>
       <enclosure url="${url}" length="${len}" type="audio/mpeg"/>
