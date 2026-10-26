@@ -1,102 +1,5 @@
 [
   {
-    "date": "2026-10-02",
-    "key": "garmin acquires muscle oxygen sensor maker moxy price undisc",
-    "tokens": [
-      "garmin",
-      "acquires",
-      "muscle",
-      "oxygen",
-      "sensor",
-      "maker",
-      "moxy",
-      "price",
-      "undisclosed"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "key": "wir begren unser neues frdermitglied",
-    "tokens": [
-      "begr",
-      "unser",
-      "neues",
-      "rdermitglied"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "key": "orangetheory beachbody vets launch 8216intentional rest8217 ",
-    "tokens": [
-      "orangetheory",
-      "beachbody",
-      "vets",
-      "launch",
-      "8216",
-      "intentional",
-      "rest",
-      "8217",
-      "studio"
-    ],
-    "entities": [
-      "Orangetheory"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "key": "andrea maier md worldrenowned pioneer in healthy aging will ",
-    "tokens": [
-      "andrea",
-      "maier",
-      "world",
-      "renowned",
-      "pioneer",
-      "healthy",
-      "aging",
-      "lead",
-      "discussions",
-      "future",
-      "longevity",
-      "healthspan",
-      "2026",
-      "global",
-      "summit"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "key": "the london massage brand that says something bigger about th",
-    "tokens": [
-      "london",
-      "massage",
-      "brand",
-      "something",
-      "bigger",
-      "about",
-      "global",
-      "economy"
-    ]
-  },
-  {
-    "date": "2026-10-02",
-    "key": "tresalis acquires wellbeing fragrance brand vyrao in debut b",
-    "tokens": [
-      "tresalis",
-      "acquires",
-      "well",
-      "being",
-      "fragrance",
-      "brand",
-      "vyrao",
-      "debut",
-      "beauty",
-      "acquisition"
-    ]
-  },
-  {
     "date": "2026-10-05",
     "key": "filip  company assists mozaik investments with the acquisiti",
     "tokens": [
@@ -1362,6 +1265,79 @@
       "scale",
       "protein",
       "snacks"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "key": "churn starts before cancellation the member signals studios ",
+    "tokens": [
+      "churn",
+      "starts",
+      "before",
+      "cancellation",
+      "member",
+      "signals",
+      "studios",
+      "missing"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "key": "puregym bernimmt nonstop gym in der schweiz",
+    "tokens": [
+      "puregym",
+      "bernimmt",
+      "nonstop",
+      "schweiz"
+    ],
+    "entities": [
+      "PureGym"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "key": "the invisible layer electromagnetic exposure and human healt",
+    "tokens": [
+      "invisible",
+      "layer",
+      "electromagnetic",
+      "exposure",
+      "human",
+      "health",
+      "built",
+      "environment"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "key": "fitness community raises 3330 in pink challenge",
+    "tokens": [
+      "community",
+      "raises",
+      "pink",
+      "challenge"
+    ],
+    "deal": "£3,330"
+  },
+  {
+    "date": "2026-10-26",
+    "key": "wir begren unser neues frdermitglied",
+    "tokens": [
+      "begr",
+      "unser",
+      "neues",
+      "rdermitglied"
+    ]
+  },
+  {
+    "date": "2026-10-26",
+    "key": "why hiring the right gm can be a growth lever for boutique f",
+    "tokens": [
+      "hiring",
+      "right",
+      "growth",
+      "lever",
+      "boutique"
     ]
   }
 ]
