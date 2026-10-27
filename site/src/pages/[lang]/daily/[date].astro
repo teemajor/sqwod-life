@@ -200,6 +200,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
               </ul>
             )}
             {d.dealRead && <p class="deal-read"><b>{tx.invRead}</b>{d.dealRead}</p>}
+            <a class="deal-all" href={`/${lang}/intelligence/deals/`} data-umami-event="daily-to-deal-tracker">{lang === 'de' ? 'Alle Deals im Sqwod Deal Tracker' : 'All deals in the Sqwod Deal Tracker'} →</a>
           </section>
         )}
         {d.stat && d.stat.number && (
@@ -362,4 +363,5 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
     .digest h3{font-size:19px}
     .stat-n{font-size:52px}
   }
+  .deal-all{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--g1);text-decoration:underline;text-underline-offset:3px}
 </style>
