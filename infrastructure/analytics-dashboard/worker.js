@@ -31,7 +31,9 @@
  */
 
 const RESEND_API = 'https://api.resend.com';
-const DAILY_TRIGGER_CRON = '0 5 * * 1-5';  // must match wrangler.toml [triggers] crons
+// Fires at 04:00 AND 05:00 UTC on weekdays; triggerDaily only acts on the one that is
+// 06:00 in Berlin (04:00 UTC in summer time, 05:00 UTC in winter). Cloudflare crons are UTC-only.
+const DAILY_TRIGGER_CRON = '0 4,5 * * 1-5';  // must match wrangler.toml [triggers] crons
 const DAY = 86400000;
 const FRESH_DRAFT_MS = 3 * DAY;      // a draft older than this is history, not a task
 const GRACE_MS = 90 * 60 * 1000;     // a draft minutes old is a pipeline mid-run
@@ -578,6 +580,8 @@ function alertsText(q, dashUrl) {
 // "Actions: Read and write" only. The workflow skips itself if today already shipped,
 // so a retry or GitHub's late fallback schedule can never send the Daily twice.
 async function triggerDaily(env) {
+  const berlinHour = Number(new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hour12: false }).format(new Date()));
+  if (berlinHour !== 6) { console.log(`daily trigger: ${berlinHour}:00 in Berlin, waiting for the 06:00 run`); return; }
   const repo = env.GITHUB_REPO || 'teemajor/sqwod-life';
   const alert = async (why) => {
     console.log(`daily trigger failed: ${why}`);
