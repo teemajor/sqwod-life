@@ -37,7 +37,7 @@ const RSS_URL = rssFor(lang);
       <p class="dh-sub">{blurb}</p>
       <div class="listen">
         <span class="ll">{lang==='de'?'Hören auf':'Listen on'}:</span>
-        {appleFor(lang) !== '#' && <a class="lp" href={appleFor(lang)} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
+        <ListenBadge platform="apple" href={appleFor(lang)} lang={lang} />
         <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
         <a class="lp" href={RSS_URL} target="_blank" rel="noopener">RSS</a>
         <a class="lp sub-cta" href="#daily-signup">{lang==='de'?'Per E-Mail':'By email'}</a>

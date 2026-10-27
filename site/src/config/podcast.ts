@@ -4,8 +4,8 @@
 // One show per language, so each language has its own Apple + Spotify link.
 // Leave '#' until a show is live: the button stays hidden.
 export const SHOWS: Record<string, { apple: string; spotify: string }> = {
-  en: { apple: '#', spotify: 'https://open.spotify.com/show/4PTiBNrqvFMMQzDj1ayvbP' },
-  de: { apple: '#', spotify: 'https://open.spotify.com/show/0uOmI3rSstJm4BsOf7y4O0' },
+  en: { apple: 'https://podcasts.apple.com/us/podcast/sqwod-daily/id6827468812', spotify: 'https://open.spotify.com/show/4PTiBNrqvFMMQzDj1ayvbP' },
+  de: { apple: 'https://podcasts.apple.com/de/podcast/sqwod-daily-deutsch/id6827471157', spotify: 'https://open.spotify.com/show/0uOmI3rSstJm4BsOf7y4O0' },
 };
 export const appleFor = (lang: string) => (SHOWS[lang] ?? SHOWS.en).apple;
 export const spotifyFor = (lang: string) => (SHOWS[lang] ?? SHOWS.en).spotify;

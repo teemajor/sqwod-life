@@ -104,7 +104,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
       {hasAudio && <audio controls preload="none" src={audioPath}></audio>}
       <div class="listen">
         <span class="ll">{tx.listen}:</span>
-        {appleFor(lang) !== '#' && <a class="lp" href={appleFor(lang)} target="_blank" rel="noopener">Apple&nbsp;Podcasts</a>}
+        <ListenBadge platform="apple" href={appleFor(lang)} lang={lang} />
         <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
         <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
       </div>

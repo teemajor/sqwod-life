@@ -4,11 +4,21 @@
 // (white on the dark theme, black on the light theme; our backgrounds aren't pure
 // black/white, so the green version isn't allowed). Min width 70px, clear space = half
 // the icon height. Files: /public/brands/ (unaltered, from developer.spotify.com/documentation/design).
-// Apple: add the badge from Apple's marketing tools once the show is live on Apple.
-interface Props { platform: 'spotify'; href: string; lang: string }
+// Apple: official "Listen on Apple Podcasts" badge (EN) / "Anhören auf Apple Podcasts" (DE),
+// unaltered, from Apple's marketing tools. Apple's rules: never modify it (keep the grey
+// border), min 30px tall, clear space = 1/10 of its height, and it goes FIRST when shown
+// next to other platforms' badges. So it is rendered bare, not inside our pill.
+interface Props { platform: 'spotify' | 'apple'; href: string; lang: string }
 const { platform, href, lang } = Astro.props;
-const label = lang === 'de' ? 'Auf Spotify anhören' : 'Listen on Spotify';
+const label = platform === 'apple'
+  ? (lang === 'de' ? 'Auf Apple Podcasts anhören' : 'Listen on Apple Podcasts')
+  : (lang === 'de' ? 'Auf Spotify anhören' : 'Listen on Spotify');
 ---
+{platform === 'apple' && href && href !== '#' && (
+  <a class="lb-apple" href={href} target="_blank" rel="noopener" aria-label={label} title={label} data-umami-event="listen-apple">
+    <img src={`/brands/apple-podcasts-badge-${lang === 'de' ? 'de' : 'en'}.svg`} alt={label} height="46" width={lang === 'de' ? 168 : 145} loading="lazy" decoding="async" />
+  </a>
+)}
 {platform === 'spotify' && href && href !== '#' && (
   <a class="lb" href={href} target="_blank" rel="noopener" aria-label={label} title={label} data-umami-event="listen-spotify">
     <img class="lb-dark" src="/brands/spotify-full-white.svg" alt="Spotify" width="81" height="22" loading="lazy" decoding="async" />
@@ -16,6 +26,9 @@ const label = lang === 'de' ? 'Auf Spotify anhören' : 'Listen on Spotify';
   </a>
 )}
 <style>
+  .lb-apple{display:inline-flex;line-height:0;padding:3px;border-radius:12px;transition:opacity .15s ease}
+  .lb-apple:hover{opacity:.85}
+  .lb-apple img{height:46px;width:auto;display:block}
   .lb{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;line-height:0;transition:border-color .15s ease}
   .lb:hover{border-color:var(--accent)}
   .lb img{height:22px;width:auto;display:block}
