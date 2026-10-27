@@ -1,97 +1,5 @@
 [
   {
-    "date": "2026-10-05",
-    "key": "filip  company assists mozaik investments with the acquisiti",
-    "tokens": [
-      "filip",
-      "company",
-      "assists",
-      "mozaik",
-      "investments",
-      "acquisition",
-      "several",
-      "centres"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "key": "i wore the apple watch ultra 3 for months  the best smartwat",
-    "tokens": [
-      "wore",
-      "apple",
-      "watch",
-      "ultra",
-      "months",
-      "best",
-      "smartwatch",
-      "last",
-      "year",
-      "just",
-      "lowest",
-      "ever",
-      "price",
-      "recommend"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "key": "vasa fitness puts inclusive strength training at center of n",
-    "tokens": [
-      "vasa",
-      "puts",
-      "inclusive",
-      "strength",
-      "training",
-      "center",
-      "brand",
-      "platform",
-      "club",
-      "build",
-      "outs"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "key": "eve wellness brings noreferral ai breast ultrasound to walnu",
-    "tokens": [
-      "brings",
-      "referral",
-      "breast",
-      "ultrasound",
-      "walnut",
-      "creek"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "key": "australian and new zealand gyms look to reactivation campaig",
-    "tokens": [
-      "australian",
-      "zealand",
-      "gyms",
-      "look",
-      "reactivation",
-      "campaigns",
-      "unlock",
-      "dormant",
-      "member",
-      "leads"
-    ]
-  },
-  {
-    "date": "2026-10-05",
-    "key": "pr email for influencers templates that actually get brand r",
-    "tokens": [
-      "email",
-      "influencers",
-      "templates",
-      "actually",
-      "brand",
-      "replies",
-      "tracker"
-    ]
-  },
-  {
     "date": "2026-10-06",
     "key": "greenock womens gym raises 850 for children in poverty inver",
     "tokens": [
@@ -1338,6 +1246,82 @@
       "growth",
       "lever",
       "boutique"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "key": "mark mastrov named to 2027 hfa hall of fame",
+    "tokens": [
+      "mark",
+      "mastrov",
+      "named",
+      "2027",
+      "hall",
+      "fame"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "key": "the secret strategy behind whoops 101 billion valuation",
+    "tokens": [
+      "secret",
+      "strategy",
+      "behind",
+      "whoop",
+      "billion",
+      "valuation"
+    ],
+    "entities": [
+      "Whoop"
+    ],
+    "deal": "$10.1b"
+  },
+  {
+    "date": "2026-10-27",
+    "key": "philip donnay named gll ceo as peter bundey retires",
+    "tokens": [
+      "philip",
+      "donnay",
+      "named",
+      "peter",
+      "bundey",
+      "retires"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "key": "why body20 is betting on strength training for women",
+    "tokens": [
+      "body20",
+      "betting",
+      "strength",
+      "training",
+      "women"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "key": "think smart software von medocheck",
+    "tokens": [
+      "think",
+      "smart",
+      "software",
+      "medo",
+      "check"
+    ]
+  },
+  {
+    "date": "2026-10-27",
+    "key": "the adecco group ag launches ezra loop an aihuman coaching s",
+    "tokens": [
+      "adecco",
+      "group",
+      "launches",
+      "ezra",
+      "loop",
+      "human",
+      "coaching",
+      "service"
     ]
   }
 ]
