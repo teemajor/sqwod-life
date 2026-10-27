@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-growing-your-clients-might-still-fee-1009
 lang: "de"
 counterpart: the-fitness-industry-is-growing-your-clients-might-still-fee-1009
 title: "Wachstum überall – aber für wen eigentlich?"
+topic: strategy
+newsTake: true
 description: "Der Fitnessmarkt boomt, doch wer genau hinschaut, sieht gefährliche blinde Flecken – und kann sie als Coach gezielt nutzen."
 pillar: move
 type: method

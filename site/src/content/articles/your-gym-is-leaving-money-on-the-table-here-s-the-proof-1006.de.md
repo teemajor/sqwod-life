@@ -3,6 +3,8 @@ urlSlug: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
 lang: "de"
 counterpart: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
 title: "Fitness-Studios: Warum Wachstum jetzt anders aussieht"
+topic: pricing-revenue
+newsTake: true
 description: "Fünf Signale aus dieser Woche zeigen, dass die klügsten Betreiber nicht mehr nur auf Mitglieder setzen – sondern auf Bedeutung."
 pillar: signal
 type: trends

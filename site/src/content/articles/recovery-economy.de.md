@@ -3,6 +3,8 @@ urlSlug: recovery-economy
 lang: de
 counterpart: recovery-economy
 title: "Recovery frisst das Supplement-Regal"
+topic: market-moves
+newsTake: true
 description: "Wellness ist die einzige Kategorie, für die Konsument:innen 2026 MEHR ausgeben wollen — und Recovery ist ihre breiteste Tür."
 pillar: signal
 type: trends

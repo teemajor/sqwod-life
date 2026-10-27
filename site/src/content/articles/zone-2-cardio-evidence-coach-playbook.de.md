@@ -3,6 +3,8 @@ urlSlug: zone-2-cardio-evidence-coach-playbook
 lang: "de"
 counterpart: zone-2-cardio-evidence-coach-playbook
 title: "Deine Kunden fragen ständig nach Zone 2. Hier ist die Evidenz — und das Skript."
+seoTitle: "Zone-2-Training: Was die Studienlage sagt und was übertrieben ist"
+topic: training
 description: "Wir haben die Meta-Analysen zu Zone-2-Cardio gelesen, bewertet und geprüft, was noch erforscht wird. Was Zone 2 wirklich bringt, wo der Hype die Daten überholt — und was du dem Kunden sagst, der fragt."
 pillar: move
 type: evidence

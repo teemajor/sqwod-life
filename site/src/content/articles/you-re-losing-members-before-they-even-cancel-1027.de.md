@@ -3,6 +3,8 @@ urlSlug: you-re-losing-members-before-they-even-cancel-1027
 lang: "de"
 counterpart: you-re-losing-members-before-they-even-cancel-1027
 title: "Mitglieder kündigen leise – bevor sie es wirklich tun"
+seoTitle: "Kündigungen im Studio früh erkennen: die Warnsignale"
+topic: retention
 description: "Warum smarte Studios jetzt auf unsichtbare Warnsignale setzen müssen – und was das mit EMF, Pink Challenges und PureGyms Expansionshunger zu tun hat."
 pillar: signal
 type: trends

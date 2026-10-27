@@ -3,6 +3,8 @@ urlSlug: menstrual-cycle-periodization-evidence-coach-playbook
 lang: "en"
 counterpart: menstrual-cycle-periodization-evidence-coach-playbook
 title: "Should You Periodize Training Around the Menstrual Cycle? Here's the Evidence — and the Script."
+seoTitle: "Cycle-Syncing Training: Does Periodizing by Phase Work?"
+topic: training
 description: "Cycle-syncing your programming is everywhere in coaching content. We read the meta-analyses, graded them, and checked the trial registry. What the evidence actually supports, what's still open, and exactly what to tell the client who asks."
 pillar: move
 type: evidence

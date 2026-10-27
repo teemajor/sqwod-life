@@ -3,6 +3,8 @@ urlSlug: your-gym-could-be-thriving-or-closing-here-s-how-to-tell-1016
 lang: "de"
 counterpart: your-gym-could-be-thriving-or-closing-here-s-how-to-tell-1016
 title: "Mitglieder gewinnen, halten, nicht verlieren – der Stand der Dinge"
+topic: strategy
+newsTake: true
 description: "Was aktuelle Branchen-News über Wachstum, KI-Coaching und die echte Bedrohung für dein Studio verraten – und was du heute noch tun kannst."
 pillar: build
 type: ai-automation

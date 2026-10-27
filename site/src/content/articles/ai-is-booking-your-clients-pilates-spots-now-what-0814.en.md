@@ -3,6 +3,8 @@ urlSlug: ai-is-booking-your-clients-pilates-spots-now-what-0814
 lang: "en"
 counterpart: ai-is-booking-your-clients-pilates-spots-now-what-0814
 title: "AI Is Booking Your Clients' Pilates Spots. Now What?"
+topic: ai-tools
+newsTake: true
 description: "The fitness industry is automating faster than most coaches are adapting — here's how to make that work for you, not against you."
 pillar: move
 type: method

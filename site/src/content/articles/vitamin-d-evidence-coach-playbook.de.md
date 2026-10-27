@@ -3,6 +3,8 @@ urlSlug: vitamin-d-evidence-coach-playbook
 lang: "de"
 counterpart: vitamin-d-evidence-coach-playbook
 title: "Vitamin D: Wer wirklich supplementieren sollte — und wer sein Geld verbrennt"
+seoTitle: "Vitamin D: Wer muss wirklich supplementieren?"
+topic: supplements
 description: "Wir haben Leitlinien, Meta-Analysen und Sicherheitsdaten gelesen. Vitamin D ist ein Ausgleichs-Supplement, kein Leistungs-Supplement — wie du als Coach den Unterschied erkennst, und das Skript für den Kunden, der schon 5.000 I.E. nimmt."
 pillar: signal
 type: evidence

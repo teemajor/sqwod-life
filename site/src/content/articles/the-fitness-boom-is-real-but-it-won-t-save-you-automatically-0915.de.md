@@ -3,6 +3,8 @@ urlSlug: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
 lang: "de"
 counterpart: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
 title: "Rekordumsätze, aber Studios schließen: Was das bedeutet"
+topic: strategy
+newsTake: true
 description: "Warum Wachstum allein kein Studio rettet – und was du jetzt konkret tun kannst."
 pillar: build
 type: ai-automation

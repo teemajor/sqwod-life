@@ -3,6 +3,8 @@ urlSlug: ai-prompts-for-coaches
 lang: de
 counterpart: ai-prompts-for-coaches
 title: "5 KI-Prompts, die Coaches ihre Woche zurückgeben"
+seoTitle: "KI-Prompts für Fitness-Coaches: 5 Vorlagen zum Kopieren"
+topic: ai-tools
 description: "Fünf Copy-paste-Prompts für Programming, Check-ins und Content — jeder parametrisiert, jeder mit der einen Leitplanke, die KI davon abhält, dich zu blamieren."
 pillar: build
 type: ai-automation

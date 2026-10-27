@@ -3,6 +3,8 @@ urlSlug: fitness-is-booming-everywhere-except-your-revenue-model-0811
 lang: "de"
 counterpart: fitness-is-booming-everywhere-except-your-revenue-model-0811
 title: "Fitness ist kein Nischenthema mehr – und du verpasst den Zug"
+topic: market-moves
+newsTake: true
 description: "Warum gerade jetzt der perfekte Moment ist, dein Studio oder Investment neu auszurichten – und wie du konkret anfängst."
 pillar: signal
 type: trends

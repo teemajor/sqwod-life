@@ -3,6 +3,8 @@ urlSlug: ai-is-booking-your-clients-pilates-spots-now-what-0814
 lang: "de"
 counterpart: ai-is-booking-your-clients-pilates-spots-now-what-0814
 title: "KI bucht Pilates, dein Klient wartet noch – was läuft falsch?"
+topic: ai-tools
+newsTake: true
 description: "Wenn eine KI schneller im Studio angemeldet ist als dein Klient, wird es Zeit, dein System zu überdenken – und dein Training gleich mit."
 pillar: move
 type: method

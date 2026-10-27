@@ -3,6 +3,8 @@ urlSlug: your-gym-is-leaking-money-and-it-s-not-just-churn-0925
 lang: "de"
 counterpart: your-gym-is-leaking-money-and-it-s-not-just-churn-0925
 title: "Mitglieder, Märkte, Männer: Was die Fitnessbranche gerade übersieht"
+topic: retention
+newsTake: true
 description: "Von geplatzten Zahlungen bis zu viralen Skandalen – wer heute nicht hinschaut, zahlt morgen drauf."
 pillar: signal
 type: trends

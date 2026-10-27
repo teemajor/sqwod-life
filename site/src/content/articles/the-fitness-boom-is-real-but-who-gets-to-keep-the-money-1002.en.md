@@ -3,6 +3,8 @@ urlSlug: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
 lang: "en"
 counterpart: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
 title: "The Fitness Boom Is Real — But Who Gets to Keep the Money?"
+topic: strategy
+newsTake: true
 description: "Membership is up across the board, but the winners are splitting into two very different camps — here's which one you want to be in."
 pillar: build
 type: marketing

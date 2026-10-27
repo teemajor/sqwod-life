@@ -3,6 +3,8 @@ urlSlug: why-every-studio-is-chasing-the-same-woman-right-now-1027
 lang: "de"
 counterpart: why-every-studio-is-chasing-the-same-woman-right-now-1027
 title: "Warum dein Kursplan gerade veraltet — und was du jetzt tust"
+topic: strategy
+newsTake: true
 description: "Drei Branchentrends zeigen: Wer sein Programm nicht anpasst, verliert genau die Zielgruppe, um die alle kämpfen."
 pillar: move
 type: method

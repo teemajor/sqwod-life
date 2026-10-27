@@ -3,6 +3,8 @@ urlSlug: glp1-muscle-evidence-coach-playbook
 lang: "en"
 counterpart: glp1-muscle-evidence-coach-playbook
 title: "Your Clients Are on the Weight-Loss Jab. Here's the Muscle Problem — and Exactly How to Coach It."
+seoTitle: "GLP-1 and Muscle Loss: Coaching Clients on Ozempic or Wegovy"
+topic: nutrition-metabolism
 description: "We read the body-composition trials on Ozempic, Wegovy and Mounjaro, graded them, and checked what's still being tested. How much muscle GLP-1 drugs really cost, why the panic is half-right, and precisely what to program for the client who's dropping weight fast."
 pillar: signal
 type: evidence

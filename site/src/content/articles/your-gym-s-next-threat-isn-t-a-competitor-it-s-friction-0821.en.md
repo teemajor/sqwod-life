@@ -3,6 +3,8 @@ urlSlug: your-gym-s-next-threat-isn-t-a-competitor-it-s-friction-0821
 lang: "en"
 counterpart: your-gym-s-next-threat-isn-t-a-competitor-it-s-friction-0821
 title: "Your gym's next threat isn't a competitor — it's friction"
+topic: strategy
+newsTake: true
 description: "From planning battles to cardiac scares, this week's fitness news reveals the hidden friction points quietly killing studio growth — and exactly what to do about them."
 pillar: build
 type: marketing

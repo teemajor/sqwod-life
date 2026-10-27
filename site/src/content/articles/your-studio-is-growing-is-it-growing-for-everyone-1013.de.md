@@ -3,6 +3,8 @@ urlSlug: your-studio-is-growing-is-it-growing-for-everyone-1013
 lang: "de"
 counterpart: your-studio-is-growing-is-it-growing-for-everyone-1013
 title: "Wer nicht mitdenkt, verliert – die stille Revolution im Studio"
+topic: strategy
+newsTake: true
 description: "Warum KI, Longevity und Inklusion gerade alles verändern – und was du diese Woche konkret tun kannst."
 pillar: move
 type: method

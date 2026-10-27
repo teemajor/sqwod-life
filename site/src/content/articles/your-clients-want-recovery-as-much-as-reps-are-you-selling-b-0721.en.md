@@ -3,6 +3,8 @@ urlSlug: your-clients-want-recovery-as-much-as-reps-are-you-selling-b-0721
 lang: "en"
 counterpart: your-clients-want-recovery-as-much-as-reps-are-you-selling-b-0721
 title: "Your Clients Want Recovery as Much as Reps — Are You Selling Both?"
+topic: offer-programming
+newsTake: true
 description: "From golf to MMA to yoga studios, the fitness industry is quietly pivoting toward integrated recovery — and coaches who ignore it are leaving both results and revenue on the table."
 pillar: move
 type: method

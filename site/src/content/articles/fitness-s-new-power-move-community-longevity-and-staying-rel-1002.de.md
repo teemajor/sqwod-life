@@ -3,6 +3,8 @@ urlSlug: fitness-s-new-power-move-community-longevity-and-staying-rel-1002
 lang: "de"
 counterpart: fitness-s-new-power-move-community-longevity-and-staying-rel-1002
 title: "Fitness's New Power Move: Community, Longevity, and Staying Relevant"
+topic: marketing-community
+newsTake: true
 description: "From road trips to Ozempic, here's what every gym operator needs to understand about where loyalty is being built right now."
 pillar: signal
 type: market-data

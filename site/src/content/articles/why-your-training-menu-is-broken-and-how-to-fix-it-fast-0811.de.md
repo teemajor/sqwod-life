@@ -3,6 +3,8 @@ urlSlug: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
 lang: "de"
 counterpart: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
 title: "Weniger ist mehr: Warum dein Trainingsplan zu voll ist"
+topic: offer-programming
+newsTake: true
 description: "Wie Coaches mit schlanken Programmen, klaren Tests und der richtigen Zielgruppe mehr rausholen – und was du heute noch ändern kannst."
 pillar: move
 type: method

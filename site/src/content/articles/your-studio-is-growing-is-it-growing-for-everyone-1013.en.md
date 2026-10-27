@@ -3,6 +3,8 @@ urlSlug: your-studio-is-growing-is-it-growing-for-everyone-1013
 lang: "en"
 counterpart: your-studio-is-growing-is-it-growing-for-everyone-1013
 title: "Your Studio Is Growing. Is It Growing for Everyone?"
+topic: strategy
+newsTake: true
 description: "From AI receptionists to longevity gaps, here's what the fitness industry's expansion boom means for your coaching practice — and what to do about it."
 pillar: move
 type: method

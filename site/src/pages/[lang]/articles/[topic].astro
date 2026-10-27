@@ -1,0 +1,87 @@
+---
+// Articles topic pages (27 Oct 2026): /[lang]/articles/<topic>, one per Articles
+// topic chip in config/topics.ts. Replaces the old /articles/<lane> pages; those
+// three URLs (move, build, signal) now build as redirect stubs to where their
+// readers belong, so links already shared keep working.
+import Base from '../../../layouts/Base.astro';
+import Glyph from '../../../components/Glyph.astro';
+import { getCollection } from 'astro:content';
+import { languages, t, type Lang } from '../../../i18n/ui';
+import { pillarGlyph } from '../../../i18n/pillars';
+import { TOPICS, ARTICLE_TOPICS, LEGACY_LANES } from '../../../config/topics';
+
+export async function getStaticPaths() {
+  const all = await getCollection('articles');
+  const used = new Set(all.map((a) => `${a.data.lang}:${a.data.topic}`));
+  const topics = languages.flatMap((lang) => ARTICLE_TOPICS.filter((topic) => used.has(`${lang}:${topic}`)).map((topic) => ({ params: { lang, topic }, props: { redirect: null } })));
+  const legacy = languages.flatMap((lang) => Object.entries(LEGACY_LANES).map(([lane, to]) => ({
+    params: { lang, topic: lane },
+    props: { redirect: to ? `/${lang}/articles/${to}/` : `/${lang}/articles/` },
+  })));
+  return [...topics, ...legacy];
+}
+
+const lang = Astro.params.lang as Lang;
+const topic = Astro.params.topic as string;
+const { redirect } = Astro.props as { redirect: string | null };
+const de = lang === 'de';
+
+const meta = TOPICS[topic];
+const articles = redirect ? [] : (await getCollection('articles', (a) => a.data.lang === lang && a.data.topic === topic))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const href = (a: (typeof articles)[number]) => `/${lang}/analysis/${a.data.urlSlug}`;
+const fmtDate = (d: Date) => d.toLocaleDateString(de ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+const others = ARTICLE_TOPICS.filter((k) => k !== topic);
+const target = redirect ? new URL(redirect, Astro.site).toString() : '';
+---
+{redirect ? (
+  <html lang={lang}>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="robots" content="noindex,follow" />
+      <meta http-equiv="refresh" content={`0; url=${redirect}`} />
+      <link rel="canonical" href={target} />
+      <title>{de ? 'Artikel | Sqwod' : 'Articles | Sqwod'}</title>
+    </head>
+    <body style="font-family:system-ui,sans-serif;padding:24px">
+      <p>{de ? 'Diese Rubrik ist umgezogen.' : 'This section has moved.'} <a href={redirect}>{de ? 'Weiter zu den Artikeln' : 'Go to Articles'}</a></p>
+    </body>
+  </html>
+) : (
+  <Base lang={lang} title={`${meta.label[lang]} | ${de ? 'Artikel' : 'Articles'} | Sqwod`} description={meta.desc[lang]} active="articles">
+    <div class="pagehead">
+      <p class="kick"><a href={`/${lang}/articles`}>{t(lang, 'nav.articles')}</a></p>
+      <h1>{meta.label[lang]}</h1>
+      <p class="sub">{meta.desc[lang]}</p>
+    </div>
+
+    <nav class="chips" aria-label={de ? 'Themen' : 'Topics'}>
+      {others.map((k) => <a href={`/${lang}/articles/${k}`}>{TOPICS[k].label[lang]}</a>)}
+    </nav>
+
+    <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
+      <p class="kick">{`${articles.length} ${de ? 'Artikel' : (articles.length === 1 ? 'article' : 'articles')}`}</p>
+      <div class="grid cols2">
+        {articles.map((a) => (
+          <a class="card" style="grid-template-columns:52px 1fr" href={href(a)}>
+            <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
+            <div class="info">
+              <span class="bestfor">{fmtDate(a.data.publishedAt)}</span>
+              <h3>{a.data.title}</h3>
+              <div class="meta">{a.data.description}</div>
+              <span class="cardcta">{de ? 'Lesen' : 'Read'} →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  </Base>
+)}
+
+<style>
+  .pagehead .kick a{color:inherit;text-decoration:none}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;padding:6px 0 14px}
+  .chips a{font-size:13px;font-weight:600;color:var(--g1);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+  .chips a:hover,.chips a:focus-visible{border-color:var(--chalk);color:var(--chalk)}
+</style>

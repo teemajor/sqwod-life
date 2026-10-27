@@ -3,6 +3,8 @@ urlSlug: sauna-heat-evidence-coach-playbook
 lang: "en"
 counterpart: sauna-heat-evidence-coach-playbook
 title: "Your Clients Think the Sauna Adds Years to Their Life. Here's What the Evidence Actually Shows."
+seoTitle: "Sauna Health Benefits: What the Evidence Actually Shows"
+topic: recovery-sleep
 description: "We read the Finnish cohort studies, the intervention trials, and the recovery research, and graded them. What heat exposure really does for the heart and for training, where the longevity story is over-read, and exactly what to tell the client who asks."
 pillar: signal
 type: evidence

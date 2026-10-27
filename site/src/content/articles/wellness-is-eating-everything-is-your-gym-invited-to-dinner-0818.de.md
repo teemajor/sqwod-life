@@ -3,6 +3,8 @@ urlSlug: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
 lang: "de"
 counterpart: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
 title: "Fitness 2026: Wer jetzt nicht neu denkt, zahlt bald die Zeche"
+topic: market-moves
+newsTake: true
 description: "Von EMS-Trends bis REIT-Bewertungen — warum die Branche gerade neu sortiert wird und was du diese Woche tun solltest."
 pillar: signal
 type: market-data

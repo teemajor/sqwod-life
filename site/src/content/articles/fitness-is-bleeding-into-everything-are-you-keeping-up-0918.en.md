@@ -3,6 +3,8 @@ urlSlug: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
 lang: "en"
 counterpart: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
 title: "Fitness Is Bleeding Into Everything. Are You Keeping Up?"
+topic: market-moves
+newsTake: true
 description: "From hybrid race classes to allergy care, the wellness industry is expanding its borders fast — here's what operators need to do before they get lapped."
 pillar: signal
 type: market-data

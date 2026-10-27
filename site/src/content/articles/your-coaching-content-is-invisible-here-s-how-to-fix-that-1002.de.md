@@ -3,6 +3,8 @@ urlSlug: your-coaching-content-is-invisible-here-s-how-to-fix-that-1002
 lang: "de"
 counterpart: your-coaching-content-is-invisible-here-s-how-to-fix-that-1002
 title: "Wenn Content König ist – warum trainieren deine Klienten trotzdem falsch?"
+topic: marketing-community
+newsTake: true
 description: "Wie der Aufstieg creator-geführter Fitness-Medien deine Programmgestaltung unter Druck setzt – und was du jetzt konkret dagegen tun kannst."
 pillar: move
 type: method

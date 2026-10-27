@@ -3,6 +3,8 @@ urlSlug: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
 lang: "en"
 counterpart: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
 title: "The Fitness Boom Is Real — But It Won't Save You Automatically"
+topic: strategy
+newsTake: true
 description: "Industry revenue is up, but a $23M chain just shut its doors — here's what separates the operators winning right now from the ones disappearing."
 pillar: build
 type: ai-automation

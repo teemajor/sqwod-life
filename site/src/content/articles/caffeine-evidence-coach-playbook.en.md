@@ -3,6 +3,8 @@ urlSlug: caffeine-evidence-coach-playbook
 lang: "en"
 counterpart: caffeine-evidence-coach-playbook
 title: "Caffeine Is the One Supplement Your Clients Are Right About. Here's Exactly How to Coach It."
+seoTitle: "Caffeine for Performance: Dose, Timing and Evidence"
+topic: supplements
 description: "We read the umbrella reviews, the ISSN position stand, and the newest trials, and graded them. What caffeine really does for performance, the dose that works, and the honest downsides — written for the gym floor."
 pillar: signal
 type: evidence

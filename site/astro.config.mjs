@@ -1,6 +1,21 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import { INDEX_COMPARE_PAGES, dailyIsFresh } from './src/config/seo.mjs';
+import { readdirSync, readFileSync } from 'node:fs';
+import { INDEX_COMPARE_PAGES, dailyIsFresh, newsTakeIsFresh } from './src/config/seo.mjs';
+
+// Article URLs the index-budget policy hides (newsTake past NEWS_TAKE_INDEX_DAYS).
+// Read straight from the content files: the sitemap filter only sees URLs.
+const ART_DIR = new URL('./src/content/articles/', import.meta.url);
+const hiddenArticleUrls = new Set();
+for (const f of readdirSync(ART_DIR)) {
+  if (!f.endsWith('.md')) continue;
+  const fm = readFileSync(new URL(f, ART_DIR), 'utf8').split(/^---\s*$/m)[1] || '';
+  if (!/^newsTake:\s*true\s*$/m.test(fm)) continue;
+  const slug = (fm.match(/^urlSlug:\s*(\S+)/m) || [])[1];
+  const lang = ((fm.match(/^lang:\s*"?(\w+)/m) || [])[1]);
+  const date = ((fm.match(/^publishedAt:\s*(\S+)/m) || [])[1]);
+  if (slug && lang && !newsTakeIsFresh(date)) hiddenArticleUrls.add(`https://sqwod.life/${lang}/analysis/${slug}/`);
+}
 
 // sqwod.life — one domain, /en/ + /de/ parity.
 // Routing handled explicitly via the [lang] dynamic segment (see src/pages).
@@ -15,6 +30,9 @@ export default defineConfig({
         if (!INDEX_COMPARE_PAGES && page.includes('/verified/compare/')) return false;
         const m = page.match(/\/daily\/(\d{4}-\d{2}-\d{2})\/?$/);
         if (m && !dailyIsFresh(m[1])) return false;
+        if (hiddenArticleUrls.has(page)) return false;
+        // old lane pages (Move/Build/Signal) are redirect stubs since 27 Oct 2026
+        if (/\/articles\/(move|build|signal)\/?$/.test(page)) return false;
         return true;
       },
       i18n: {

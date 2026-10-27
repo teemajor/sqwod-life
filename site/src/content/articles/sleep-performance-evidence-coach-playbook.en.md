@@ -3,6 +3,8 @@ urlSlug: sleep-performance-evidence-coach-playbook
 lang: "en"
 counterpart: sleep-performance-evidence-coach-playbook
 title: "Your Client Sleeps Six Hours and Wonders Why They're Stuck. Here's the Evidence — and the Script."
+seoTitle: "Sleep and Athletic Performance: What the Evidence Says"
+topic: recovery-sleep
 description: "We read the meta-analyses on sleep and performance, graded them, and checked what's still being tested. What sleep loss actually costs a training block, what a nap is worth, and exactly what to tell the client who says they're fine on six hours."
 pillar: signal
 type: evidence

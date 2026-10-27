@@ -3,6 +3,8 @@ urlSlug: your-coaching-content-is-invisible-here-s-how-to-fix-that-1002
 lang: "en"
 counterpart: your-coaching-content-is-invisible-here-s-how-to-fix-that-1002
 title: "Your coaching content is invisible. Here's how to fix that."
+topic: marketing-community
+newsTake: true
 description: "Learn how the creator economy's new media playbook can make your workout programming impossible to ignore."
 pillar: move
 type: method

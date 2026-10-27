@@ -3,6 +3,8 @@ urlSlug: your-studio-s-reputation-is-your-product-stop-treating-it-li-0710
 lang: "en"
 counterpart: your-studio-s-reputation-is-your-product-stop-treating-it-li-0710
 title: "Your Studio's Reputation Is Your Product — Stop Treating It Like a Logo"
+topic: marketing-community
+newsTake: true
 description: "From knockoff equipment scandals to community-as-marketing, here's what this week's fitness news tells you about protecting and growing what you've actually built."
 pillar: build
 type: marketing

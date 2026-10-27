@@ -4,6 +4,7 @@ import ArticleView from '../../../components/ArticleView.astro';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
 import { getRelated } from '../../../lib/related';
+import { newsTakeIsFresh } from '../../../config/seo.mjs';
 
 export async function getStaticPaths() {
   const arts = await getCollection('articles', (a) => a.data.format === 'analysis' || a.data.format === 'field-note');
@@ -11,8 +12,15 @@ export async function getStaticPaths() {
 }
 const { entry } = Astro.props;
 const lang = Astro.params.lang as Lang;
-const label = entry.data.format === 'field-note' ? 'Field Notes' : 'Analysis';
+const d = entry.data;
+const label = d.format === 'field-note' ? 'Field Notes' : 'Analysis';
+// Evidence playbooks belong to the Evidence section; everything else to Articles.
+const active = d.type === 'evidence' ? 'evidence' : 'articles';
+// Search title for the <title> tag (falls back to the headline). Dated news takes
+// leave Google NEWS_TAKE_INDEX_DAYS after publishing (config/seo.mjs).
+const pageTitle = `${d.seoTitle ?? d.title} | Sqwod`;
+const noindex = d.newsTake && !newsTakeIsFresh(d.publishedAt);
 ---
-<Base lang={lang} title={`${entry.data.title} — Sqwod`} description={entry.data.description} active="articles">
+<Base lang={lang} title={pageTitle} description={d.description} active={active} noindex={noindex}>
   <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel={label} related={await getRelated(lang, entry)} /></div>
 </Base>

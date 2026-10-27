@@ -3,6 +3,8 @@ urlSlug: ai-influencers-and-longevity-where-fitness-money-is-moving-n-0922
 lang: "en"
 counterpart: ai-influencers-and-longevity-where-fitness-money-is-moving-n-0922
 title: "AI, influencers, and longevity: where fitness money is moving now"
+topic: market-moves
+newsTake: true
 description: "Five breaking stories reveal one uncomfortable truth about where fitness businesses are falling behind — and exactly what to do about it."
 pillar: build
 type: ai-automation

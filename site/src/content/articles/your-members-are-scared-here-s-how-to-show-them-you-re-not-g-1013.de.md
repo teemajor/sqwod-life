@@ -3,6 +3,8 @@ urlSlug: your-members-are-scared-here-s-how-to-show-them-you-re-not-g-1013
 lang: "de"
 counterpart: your-members-are-scared-here-s-how-to-show-them-you-re-not-g-1013
 title: "Dein Studio wächst – aber vertrauen deine Mitglieder dir noch?"
+topic: marketing-community
+newsTake: true
 description: "Während Gym-Franchises mit 100-Millionen-Plänen punkten, entscheiden kleine Vertrauenssignale darüber, ob deine Mitglieder bleiben oder zittern."
 pillar: build
 type: marketing

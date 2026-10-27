@@ -3,6 +3,8 @@ urlSlug: peptides-evidence-coach-playbook
 lang: "de"
 counterpart: peptides-evidence-coach-playbook
 title: "BPC-157, TB-500, MK-677: Was der Peptid-Hype verschweigt — ein Sicherheits-Briefing für Coaches"
+seoTitle: "BPC-157, TB-500, MK-677: Studienlage und Risiken"
+topic: supplements
 description: "Die 'Heilungs- und Wachstums'-Peptide sind überall in den Gym-WhatsApp-Gruppen. Wir haben die tatsächliche Evidenz am Menschen gelesen — und meist ihr Fehlen gefunden. Was hinter BPC-157, TB-500 und den Wachstumshormon-Peptiden wirklich steckt, warum das Risiko bei deinem Kunden liegt, und wie du das Gespräch führst."
 pillar: signal
 type: evidence

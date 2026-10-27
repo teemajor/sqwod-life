@@ -3,6 +3,8 @@ urlSlug: the-boutique-bubble-is-popping-here-s-where-smart-money-goes-0901
 lang: "en"
 counterpart: the-boutique-bubble-is-popping-here-s-where-smart-money-goes-0901
 title: "The Boutique Bubble Is Popping. Here's Where Smart Money Goes Next"
+topic: market-moves
+newsTake: true
 description: "Six stories from this week reveal a single uncomfortable truth about where fitness is heading — and what operators should do about it before the next quarter."
 pillar: signal
 type: market-data

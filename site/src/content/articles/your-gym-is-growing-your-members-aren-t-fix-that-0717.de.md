@@ -3,6 +3,8 @@ urlSlug: your-gym-is-growing-your-members-aren-t-fix-that-0717
 lang: "de"
 counterpart: your-gym-is-growing-your-members-aren-t-fix-that-0717
 title: "Europameister im Studio: Was Lars Springer Betreibern lehrt"
+topic: dach
+newsTake: true
 description: "Warum Athleten-Geschichten das stärkste Wachstumsinstrument in einer stagnierenden Marktphase sind – und wie du es sofort nutzt."
 pillar: signal
 type: trends

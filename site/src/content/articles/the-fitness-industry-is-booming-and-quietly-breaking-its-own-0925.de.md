@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-booming-and-quietly-breaking-its-own-0925
 lang: "de"
 counterpart: the-fitness-industry-is-booming-and-quietly-breaking-its-own-0925
 title: "Das Fitness-Business bricht auf – bist du dabei oder dagegen?"
+topic: market-moves
+newsTake: true
 description: "Warum der Markt gerade alles neu verhandelt und was du als Coach jetzt konkret tun solltest."
 pillar: move
 type: method

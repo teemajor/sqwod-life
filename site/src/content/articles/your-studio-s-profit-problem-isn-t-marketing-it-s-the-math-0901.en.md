@@ -3,6 +3,8 @@ urlSlug: your-studio-s-profit-problem-isn-t-marketing-it-s-the-math-0901
 lang: "en"
 counterpart: your-studio-s-profit-problem-isn-t-marketing-it-s-the-math-0901
 title: "Your Studio's Profit Problem Isn't Marketing. It's the Math."
+seoTitle: "Studio Profitability: Fix Pricing Before You Spend on Marketing"
+topic: pricing-revenue
 description: "Why hiring a CMO won't save you if your pricing and product mix are broken — and what to fix first."
 pillar: build
 type: coaching-business

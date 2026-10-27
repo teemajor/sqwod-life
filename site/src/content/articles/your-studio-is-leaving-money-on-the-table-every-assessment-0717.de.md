@@ -3,6 +3,8 @@ urlSlug: your-studio-is-leaving-money-on-the-table-every-assessment-0717
 lang: "de"
 counterpart: your-studio-is-leaving-money-on-the-table-every-assessment-0717
 title: "Your Studio Is Leaving Money on the Table Every Assessment"
+topic: pricing-revenue
+newsTake: true
 description: "How movement assessments, therapeutic training, and a golfer's fitness coach reveal the revenue model most studios are still ignoring."
 pillar: move
 type: method

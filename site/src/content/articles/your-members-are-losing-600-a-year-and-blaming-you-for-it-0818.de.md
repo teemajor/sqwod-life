@@ -3,6 +3,8 @@ urlSlug: your-members-are-losing-600-a-year-and-blaming-you-for-it-0818
 lang: "de"
 counterpart: your-members-are-losing-600-a-year-and-blaming-you-for-it-0818
 title: "Deine Mitglieder verlieren Geld – und merken es nicht"
+topic: pricing-revenue
+newsTake: true
 description: "Warum die größten Wachstumschancen im Fitness-Business gerade nicht im Neubau stecken, sondern in dem, was du deinen Mitgliedern anbietest."
 pillar: build
 type: ai-automation

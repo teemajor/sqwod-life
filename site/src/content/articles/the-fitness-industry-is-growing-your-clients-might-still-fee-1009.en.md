@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-growing-your-clients-might-still-fee-1009
 lang: "en"
 counterpart: the-fitness-industry-is-growing-your-clients-might-still-fee-1009
 title: "The Fitness Industry Is Growing. Your Clients Might Still Feel Left Out."
+topic: strategy
+newsTake: true
 description: "New studios, big valuations, and cancer-exercise grants all point to the same blind spot coaches keep missing — and here's how to fix it."
 pillar: move
 type: method

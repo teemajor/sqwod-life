@@ -3,6 +3,8 @@ urlSlug: your-online-booking-system-just-became-a-security-vulnerabil-0818
 lang: "en"
 counterpart: your-online-booking-system-just-became-a-security-vulnerabil-0818
 title: "Your Online Booking System Just Became a Security Vulnerability"
+topic: ai-tools
+newsTake: true
 description: "AI agents are already hacking gym booking systems — here's what every studio owner needs to do before it happens to theirs."
 pillar: move
 type: method

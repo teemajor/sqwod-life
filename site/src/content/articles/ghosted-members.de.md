@@ -3,6 +3,7 @@ urlSlug: ghosted-members
 lang: de
 counterpart: ghosted-members
 title: "Geghostet: 49% der abgewanderten Mitglieder wurden nie kontaktiert"
+seoTitle: "Ehemalige Mitglieder: 49 % nie kontaktiert (Rückgewinnungs-Daten)"
 description: "Fast die Hälfte der abgewanderten Mitglieder sagt, ihr Studio habe sich nie gemeldet, nachdem sie wegblieben — während ~50% in 90 Tagen kündigen und Neugewinnung 5–7× teurer ist als Halten. Das billigste Wachstum, das du ignorierst. Ein lebender Sqwod-Intelligence-Report."
 pillar: build
 type: coaching-business

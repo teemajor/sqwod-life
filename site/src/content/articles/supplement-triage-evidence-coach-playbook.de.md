@@ -3,6 +3,8 @@ urlSlug: supplement-triage-evidence-coach-playbook
 lang: "de"
 counterpart: supplement-triage-evidence-coach-playbook
 title: "Ein Kunde zeigt dir einen 180-Euro-Warenkorb voller Supplements. So sortierst du ihn in 60 Sekunden."
+seoTitle: "Welche Supplements wirken wirklich? Eine Evidenz-Rangliste"
+topic: supplements
 description: "Wir haben das ganze Regal gegen die Meta-Analysen geprüft — was ein klares Ja bekommt, was nur für bestimmte Einheiten taugt, und wovon du heute abraten kannst. Plus die Frage, die wichtiger ist als jede Wirkung: Ist die Dose überhaupt sauber?"
 pillar: move
 type: evidence

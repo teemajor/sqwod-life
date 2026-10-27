@@ -3,6 +3,8 @@ urlSlug: your-clients-want-more-one-modality-won-t-cut-it-anymore-0918
 lang: "en"
 counterpart: your-clients-want-more-one-modality-won-t-cut-it-anymore-0918
 title: "Your clients want more. One modality won't cut it anymore."
+seoTitle: "Hybrid Training Programs: How Studios Combine Modalities"
+topic: offer-programming
 description: "The fitness industry is blurring every line between disciplines — here's how coaches can stay ahead of the curve before their clients outgrow them."
 pillar: move
 type: method

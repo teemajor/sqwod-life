@@ -3,6 +3,8 @@ urlSlug: menopause-training-evidence-coach-playbook
 lang: "de"
 counterpart: menopause-training-evidence-coach-playbook
 title: "Deine Kundin ist 51 und alles fühlt sich anders an. Das sagt die Evidenz wirklich."
+seoTitle: "Training in den Wechseljahren: Was die Studienlage sagt"
+topic: training
 description: "Coaching rund um Perimenopause und Menopause ist voller selbstbewusster Behauptungen und dünner Daten. Wir haben die Meta-Analysen gelesen, bewertet und das Studienregister geprüft. Was Training leistet, was nicht — und was du der Frau vor dir sagst."
 pillar: move
 type: evidence

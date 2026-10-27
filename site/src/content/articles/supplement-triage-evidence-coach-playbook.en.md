@@ -3,6 +3,8 @@ urlSlug: supplement-triage-evidence-coach-playbook
 lang: "en"
 counterpart: supplement-triage-evidence-coach-playbook
 title: "A Client Just Showed You a €180 Supplement Stack. Here's How to Triage It in 60 Seconds."
+seoTitle: "Which Supplements Actually Work? An Evidence Tier List"
+topic: supplements
 description: "We graded the whole shelf against the meta-analyses — what earns a default yes, what earns a specific yes, and what you can say no to today. Plus the question that matters more than any of it: is the tub actually clean?"
 pillar: move
 type: evidence

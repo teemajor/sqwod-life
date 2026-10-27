@@ -3,6 +3,8 @@ urlSlug: why-your-next-marketing-asset-is-already-on-the-competition--0721
 lang: "de"
 counterpart: why-your-next-marketing-asset-is-already-on-the-competition--0721
 title: "Mitgliederzahlen steigen – aber wer erzählt noch Geschichten?"
+topic: dach
+newsTake: true
 description: "Die DACH-Fitnesswirtschaft wächst, doch die Studios, die wirklich gewinnen, verkaufen keine Trainingsplätze – sie verkaufen Identität."
 pillar: signal
 type: trends

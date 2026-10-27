@@ -3,6 +3,8 @@ urlSlug: your-studio-isn-t-just-a-gym-anymore-and-that-s-the-point-1020
 lang: "en"
 counterpart: your-studio-isn-t-just-a-gym-anymore-and-that-s-the-point-1020
 title: "Your Studio Isn't Just a Gym Anymore — And That's the Point"
+topic: marketing-community
+newsTake: true
 description: "Three industries are telling you the same thing: experience and identity now sell what reps and sets used to."
 pillar: move
 type: method

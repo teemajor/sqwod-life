@@ -3,6 +3,8 @@ urlSlug: ashwagandha-evidence-coach-playbook
 lang: "en"
 counterpart: ashwagandha-evidence-coach-playbook
 title: "Ashwagandha: What the Evidence Actually Supports — and the Safety Talk You Need to Have."
+seoTitle: "Ashwagandha: What the Evidence Says on Stress, Sleep, Strength"
+topic: supplements
 description: "We read the meta-analyses and graded them. What ashwagandha does for stress, sleep and strength, what's oversold, the real liver-and-pregnancy caution, and exactly what to tell the client who asks."
 pillar: signal
 type: evidence

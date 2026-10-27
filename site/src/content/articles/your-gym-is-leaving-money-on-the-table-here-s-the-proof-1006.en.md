@@ -3,6 +3,8 @@ urlSlug: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
 lang: "en"
 counterpart: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
 title: "Your gym is leaving money on the table — here's the proof"
+topic: pricing-revenue
+newsTake: true
 description: "From dormant members to longevity medicine, five signals show exactly where fitness revenue is hiding right now."
 pillar: signal
 type: trends

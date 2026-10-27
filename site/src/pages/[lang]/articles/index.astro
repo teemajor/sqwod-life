@@ -1,68 +1,67 @@
 ---
+// Articles hub (27 Oct 2026): browse by topic chip, then the latest pieces.
+// Evidence playbooks and data reports have their own nav sections, so they are
+// not listed here.
 import Base from '../../../layouts/Base.astro';
-import PillarIcon from '../../../components/PillarIcon.astro';
 import Glyph from '../../../components/Glyph.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
-import { LANES, pillarMeta, pillarGlyph } from '../../../i18n/pillars';
+import { pillarGlyph } from '../../../i18n/pillars';
+import { TOPICS, ARTICLE_TOPICS, topicLabel } from '../../../config/topics';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
 }
 const lang = Astro.params.lang as Lang;
-const title = lang === 'de' ? 'Artikel — für Coaches, Gründer:innen & Investor:innen' : 'Articles — for coaches, founders & investors';
+const de = lang === 'de';
+const title = de ? 'Artikel für Studio- und Gym-Betreiber | Sqwod' : 'Articles for Gym and Studio Operators | Sqwod';
 
-const articleHref = (a: any) =>
-  (a.data.format === 'report' || a.data.format === 'index')
-    ? `/${lang}/intelligence/${a.data.urlSlug}`
-    : `/${lang}/analysis/${a.data.urlSlug}`;
-const recent = (await getCollection('articles', (a) => a.data.lang === lang && a.data.format !== 'report' && a.data.format !== 'index'))
-  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime()).slice(0, 4);
-
-// Count content per lane so we only surface lanes that actually have something.
-const allArticles = await getCollection('articles', (a) => a.data.lang === lang);
-const allReviews = await getCollection('reviews', (r) => r.data.lang === lang);
-const laneCount: Record<string, number> = {};
-for (const a of allArticles) laneCount[a.data.pillar] = (laneCount[a.data.pillar] || 0) + 1;
-laneCount['gear'] = (laneCount['gear'] || 0) + allReviews.length;   // GEAR surfaces Verified reviews
-const lanes = LANES.filter((p) => (laneCount[p] || 0) > 0);
-const laneHref = (p: string) => p === 'gear' ? `/${lang}/verified` : `/${lang}/articles/${p}`;
+const articles = (await getCollection('articles', (a) =>
+  a.data.lang === lang && a.data.type !== 'evidence' && a.data.format !== 'report' && a.data.format !== 'index'))
+  .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
+const count = (k: string) => articles.filter((a) => a.data.topic === k).length;
+const topics = ARTICLE_TOPICS.filter((k) => count(k) > 0);
+const recent = articles.slice(0, 12);
+const href = (a: (typeof articles)[number]) => `/${lang}/analysis/${a.data.urlSlug}`;
 ---
-<Base lang={lang} title={title} active="articles">
+<Base lang={lang} title={title} description={de ? 'Analysen für Coaches, Studio-Gründer:innen und Betreiber, nach Thema sortiert.' : 'Analysis for coaches, studio founders and operators, sorted by topic.'} active="articles">
   <div class="pagehead">
     <div class="crumb">{t(lang,'nav.articles')}</div>
-    <h1>{lang==='de'?'Artikel':'Articles'}</h1>
-    <p class="sub">{lang==='de'?'Playbooks und Analysen für Coaches, Gründer:innen und Investor:innen.':'Playbooks and analysis for coaches, founders, and investors.'}</p>
+    <h1>{de ? 'Artikel' : 'Articles'}</h1>
+    <p class="sub">{de ? 'Analysen für Coaches, Studio-Gründer:innen und Betreiber. Wähle ein Thema.' : 'Analysis for coaches, studio founders and operators. Pick a topic.'}</p>
   </div>
 
   <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
-    <p class="kick">{lang==='de'?'Themen':'Browse by topic'}</p>
+    <p class="kick">{de ? 'Themen' : 'Topics'}</p>
     <div class="grid cols3">
-    {lanes.map((p, i) => (
-      <a class={`card reveal d${(i % 6) + 1}`} style="grid-template-columns:52px 1fr" href={laneHref(p)}>
-        <PillarIcon pillar={p} size={52} />
-        <div class="info">
-          <h3>{pillarMeta[p].label[lang]}</h3>
-          <div class="meta">{pillarMeta[p].desc[lang]}</div>
-          <span class="cardcta">{lang==='de'?'Entdecken':'Explore'} →</span>
-        </div>
-      </a>
-    ))}
+      {topics.map((k) => (
+        <a class="card topic" href={`/${lang}/articles/${k}`}>
+          <div class="info">
+            <span class="bestfor">{`${count(k)} ${de ? 'Artikel' : (count(k) === 1 ? 'article' : 'articles')}`}</span>
+            <h3>{TOPICS[k].label[lang]}</h3>
+            <div class="meta">{TOPICS[k].desc[lang]}</div>
+          </div>
+        </a>
+      ))}
     </div>
+    <p class="meta" style="margin-top:14px">
+      {de ? 'Studienlage zu Supplements und Training: ' : 'Research on supplements and training: '}<a class="cardcta" href={`/${lang}/evidence`}>Sqwod Evidence →</a>
+      &nbsp; {de ? 'Marktdaten: ' : 'Market data: '}<a class="cardcta" href={`/${lang}/intelligence`}>Reports →</a>
+    </p>
   </section>
 
   {recent.length > 0 && (
     <section class="block">
-      <p class="kick">{lang==='de'?'Neueste Artikel':'Latest articles'}</p>
+      <p class="kick">{de ? 'Neueste Artikel' : 'Latest articles'}</p>
       <div class="grid cols2">
       {recent.map((a) => (
-        <a class="card" style="grid-template-columns:52px 1fr" href={articleHref(a)}>
+        <a class="card" style="grid-template-columns:52px 1fr" href={href(a)}>
           <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
           <div class="info">
-            <span class="bestfor">{pillarMeta[a.data.pillar as keyof typeof pillarMeta].label[lang]}</span>
+            {a.data.topic && <span class="bestfor">{topicLabel(a.data.topic, lang)}</span>}
             <h3>{a.data.title}</h3>
             <div class="meta">{a.data.description}</div>
-            <span class="cardcta">{lang==='de'?'Lesen':'Read'} →</span>
+            <span class="cardcta">{de ? 'Lesen' : 'Read'} →</span>
           </div>
         </a>
       ))}
@@ -70,3 +69,7 @@ const laneHref = (p: string) => p === 'gear' ? `/${lang}/verified` : `/${lang}/a
     </section>
   )}
 </Base>
+
+<style>
+  .card.topic{grid-template-columns:1fr}
+</style>

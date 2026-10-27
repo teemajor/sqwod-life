@@ -3,6 +3,8 @@ urlSlug: bcaa-evidence-coach-playbook
 lang: "de"
 counterpart: bcaa-evidence-coach-playbook
 title: "BCAA: Das Supplement, das genau so lange wirkt, bis dein Kunde genug Eiweiß isst"
+seoTitle: "Bringen BCAAs etwas? Die Studienlage für Coaches"
+topic: supplements
 description: "Wir haben die Meta-Analysen gelesen, bewertet und das Studienregister geprüft. Was BCAA in Studien zeigen, für wen sie schlicht überflüssig sind — und das Skript für den Kunden mit der 40-Euro-Dose."
 pillar: move
 type: evidence

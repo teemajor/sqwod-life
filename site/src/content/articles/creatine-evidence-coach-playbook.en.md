@@ -3,6 +3,8 @@ urlSlug: creatine-evidence-coach-playbook
 lang: "en"
 counterpart: creatine-evidence-coach-playbook
 title: "Your Clients Keep Asking About Creatine. Here's the Evidence — and the Script."
+seoTitle: "Creatine: What the Evidence Says and What to Tell Clients"
+topic: supplements
 description: "We read the meta-analyses, graded them, and checked what's still being tested. What creatine actually does, what it doesn't, and exactly what to tell the client who asks."
 pillar: move
 type: evidence

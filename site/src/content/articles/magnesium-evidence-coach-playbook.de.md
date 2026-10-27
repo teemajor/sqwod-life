@@ -3,6 +3,8 @@ urlSlug: magnesium-evidence-coach-playbook
 lang: "de"
 counterpart: magnesium-evidence-coach-playbook
 title: "Deine Kunden schwören bei Schlaf und Krämpfen auf Magnesium. Das sagt die Evidenz wirklich."
+seoTitle: "Magnesium für Schlaf und Krämpfe: Was die Studienlage zeigt"
+topic: supplements
 description: "Wir haben die Meta-Analysen gelesen, bewertet und geprüft, was noch erforscht wird. Was Magnesium wirklich bringt, welche Form sich lohnt — und was du dem Kunden sagst, der fragt."
 pillar: signal
 type: evidence

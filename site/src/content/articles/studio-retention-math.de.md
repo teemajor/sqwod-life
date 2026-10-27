@@ -3,6 +3,8 @@ urlSlug: studio-retention-math
 lang: de
 counterpart: studio-retention-math
 title: "Die Retention-Rechnung, die über dein Studio entscheidet"
+seoTitle: "Mitgliederbindung: Die ersten 30 Tage entscheiden"
+topic: retention
 description: "Die Branche verliert 4–8% pro Monat, die Hälfte kündigt in 90 Tagen. Die Lösung ist nicht mehr Werbung — es sind die ersten 30."
 pillar: build
 type: coaching-business

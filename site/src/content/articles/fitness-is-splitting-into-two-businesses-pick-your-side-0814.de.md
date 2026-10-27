@@ -3,6 +3,8 @@ urlSlug: fitness-is-splitting-into-two-businesses-pick-your-side-0814
 lang: "de"
 counterpart: fitness-is-splitting-into-two-businesses-pick-your-side-0814
 title: "Fitness-Markt 2025: Wer jetzt nicht handelt, verliert den Anschluss"
+topic: strategy
+newsTake: true
 description: "Von P&G bis Peloton zeigt der Markt ein klares Muster – und wer es versteht, kann jetzt die richtigen Züge machen."
 pillar: signal
 type: market-data

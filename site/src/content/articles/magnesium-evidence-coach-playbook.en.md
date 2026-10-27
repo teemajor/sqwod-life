@@ -3,6 +3,8 @@ urlSlug: magnesium-evidence-coach-playbook
 lang: "en"
 counterpart: magnesium-evidence-coach-playbook
 title: "Your Clients Swear By Magnesium for Sleep and Cramps. Here's What the Evidence Actually Says."
+seoTitle: "Magnesium for Sleep and Cramps: What the Evidence Shows"
+topic: supplements
 description: "We read the meta-analyses, graded them, and checked what's still being tested. What magnesium really does, which form to bother with, and exactly what to tell the client who asks."
 pillar: signal
 type: evidence

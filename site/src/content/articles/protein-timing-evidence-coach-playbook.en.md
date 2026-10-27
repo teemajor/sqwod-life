@@ -3,6 +3,8 @@ urlSlug: protein-timing-evidence-coach-playbook
 lang: "en"
 counterpart: protein-timing-evidence-coach-playbook
 title: "The Anabolic Window Is Not a Window. Here's the Evidence — and the Script."
+seoTitle: "Anabolic Window: Does Post-Workout Protein Timing Matter?"
+topic: nutrition-metabolism
 description: "We read the timing meta-analyses, the dose-response curves and the 100-gram tracer study, graded them, and checked what's still being tested. What actually drives your client's result, what doesn't, and exactly what to tell the person clutching a shaker in the car park."
 pillar: move
 type: evidence

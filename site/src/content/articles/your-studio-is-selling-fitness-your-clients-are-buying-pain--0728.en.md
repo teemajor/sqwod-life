@@ -3,6 +3,8 @@ urlSlug: your-studio-is-selling-fitness-your-clients-are-buying-pain--0728
 lang: "en"
 counterpart: your-studio-is-selling-fitness-your-clients-are-buying-pain--0728
 title: "Your Studio Is Selling Fitness. Your Clients Are Buying Pain Relief."
+topic: offer-programming
+newsTake: true
 description: "The real reason your retention is suffering — and one movement cue that fixes your positioning overnight."
 pillar: move
 type: method

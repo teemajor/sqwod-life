@@ -41,6 +41,9 @@ const typeFor = (lane, text) => {
   if (lane === 'move') return 'method';
   return 'analysis';
 };
+// Topic chips for the Articles section (site/src/config/topics.ts). Keep in sync.
+const ARTICLE_TOPICS = ['retention', 'pricing-revenue', 'marketing-community', 'offer-programming', 'ai-tools', 'strategy', 'market-moves', 'dach'];
+const topicFor = (o) => (ARTICLE_TOPICS.includes(o?.topic) ? o.topic : (LANE === 'signal' ? 'market-moves' : 'strategy'));
 const LANE_BRIEF = {
   build: 'a news analysis for fitness coaches, studio owners and operators',
   signal: 'a news analysis for fitness operators, founders and investors',
@@ -98,7 +101,9 @@ HARD RULES:
 - Attribute claims to the outlets. Plain words, no slang. No em dashes.
 - ${lang === 'de' ? 'Schreibe natürliches, idiomatisches Deutsch, keine Übersetzung. Keine Anrede mit du im Titel.' : 'Plain, direct English.'}
 
-Respond ONLY as minified JSON: {"title":"...","entity":"the exact name from the lead story your title uses, or empty","number":"the exact number from the lead story your title uses, or empty","description":"1 sentence saying what the reader learns","body":"the full markdown article"}`;
+TOPIC: pick the one topic this story belongs to: ${ARTICLE_TOPICS.join(', ')}.
+
+Respond ONLY as minified JSON: {"topic":"one of the topics above","title":"...","entity":"the exact name from the lead story your title uses, or empty","number":"the exact number from the lead story your title uses, or empty","description":"1 sentence saying what the reader learns","body":"the full markdown article"}`;
 
   let feedback = '';
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -138,6 +143,7 @@ function frontmatter(slug, lang, lane, type, art, cluster) {
     `lang: ${q(lang)}`,
     `counterpart: ${slug}`,
     `title: ${q(art.title)}`,
+    `topic: ${topicFor(art)}`,
     `description: ${q(art.description)}`,
     `pillar: ${lane}`,
     `type: ${type}`,
@@ -182,7 +188,7 @@ async function run() {
 
   mkdirSync(OUT, { recursive: true });
   writeFileSync(join(OUT, `${slug}.en.md`), frontmatter(slug, 'en', LANE, type, en, cluster));
-  writeFileSync(join(OUT, `${slug}.de.md`), frontmatter(slug, 'de', LANE, type, de, cluster));
+  writeFileSync(join(OUT, `${slug}.de.md`), frontmatter(slug, 'de', LANE, type, { ...de, topic: topicFor(en) }, cluster));
   console.log(`\n✓ article → ${slug} (${LANE}/${type}, EN+DE)`);
 }
 run();

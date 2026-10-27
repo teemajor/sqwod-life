@@ -3,6 +3,8 @@ urlSlug: big-money-is-moving-into-fitness-here-s-how-small-studios-wi-0825
 lang: "de"
 counterpart: big-money-is-moving-into-fitness-here-s-how-small-studios-wi-0825
 title: "Fitness ist Kapital – warum große Fische jetzt deinen Markt aufkaufen"
+topic: strategy
+newsTake: true
 description: "Was Ferrero, Strava und zwei neue Boutique-Studios dir über die Zukunft deines Geschäfts verraten – und was du diese Woche konkret tun kannst."
 pillar: build
 type: marketing

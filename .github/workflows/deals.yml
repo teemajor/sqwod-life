@@ -1,0 +1,58 @@
+name: Deal Tracker — queue new deals
+
+# After each Daily, collects the day's raises / M&A / valuations from the Daily's
+# "Money movement" block, merges repeats, web-checks new deals (company, country,
+# one-liner EN + DE, source link) and emails Tee one Publish / Skip card per new deal.
+# Nothing goes live here: a Publish tap flips automation/intel-queue/deal-<id>.json to
+# "approved" via the pr-intake Worker, and that commit triggers the site deploy.
+# Manual run with "all" web-checks every past deal once (the backfill).
+
+on:
+  workflow_dispatch:
+    inputs:
+      enrich:
+        description: 'Web-check scope: "new" (default) or "all" (backfill, one-off)'
+        required: false
+        default: 'new'
+  workflow_run:
+    workflows: ["Generate content (Sqwod cascade)"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  queue:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Collect, web-check and queue new deals
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.INTEL_FROM }}
+          INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
+          INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
+          INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
+        run: |
+          SCOPE="${{ github.event.inputs.enrich }}"
+          if [ "$SCOPE" = "all" ]; then node automation/deals.mjs --enrich=all --date=$(date +%F); else node automation/deals.mjs --enrich --email --date=$(date +%F); fi
+      - name: Commit the database + queue
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          for p in site/src/data/deals.json automation/intel-queue automation/deals-enrich.json; do
+            [ -e "$p" ] && git add "$p"
+          done
+          if git diff --staged --quiet; then
+            echo "No deal changes."
+          else
+            git commit -m "deals: queue $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi

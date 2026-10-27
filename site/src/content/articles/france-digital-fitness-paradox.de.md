@@ -3,6 +3,7 @@ urlSlug: france-digital-fitness-paradox
 lang: de
 counterpart: france-digital-fitness-paradox
 title: "Frankreichs Digital-Fitness-Paradox: 28,5 Mio. App-Nutzer, nur 7 % zahlen"
+seoTitle: "Digitaler Fitnessmarkt Frankreich 2026: Nutzer vs. Zahlende"
 description: "In Frankreich nutzen 28,5 Mio. Menschen Wellness-Coaching-Apps, doch nur 7 % der Erwachsenen haben für einen Online-Fitnessdienst bezahlt, und 82 % gaben gar nichts für Fitness- oder Gesundheitsangebote aus. Aufmerksamkeit gibt es überall, zahlende Kund:innen kaum. Was das für Coaches und Studios bedeutet. Ein lebender Sqwod-Intelligence-Report."
 pillar: signal
 type: market-data

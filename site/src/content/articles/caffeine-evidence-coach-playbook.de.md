@@ -3,6 +3,8 @@ urlSlug: caffeine-evidence-coach-playbook
 lang: "de"
 counterpart: caffeine-evidence-coach-playbook
 title: "Koffein ist das eine Supplement, bei dem deine Kunden recht haben. So coachst du es richtig."
+seoTitle: "Koffein und Leistung: Dosierung, Timing, Studienlage"
+topic: supplements
 description: "Wir haben die Umbrella-Reviews, das ISSN-Positionspapier und die neuesten Studien gelesen und bewertet. Was Koffein wirklich für die Leistung bringt, die Dosis, die wirkt, und die ehrlichen Schattenseiten — für die Trainingsfläche geschrieben."
 pillar: signal
 type: evidence

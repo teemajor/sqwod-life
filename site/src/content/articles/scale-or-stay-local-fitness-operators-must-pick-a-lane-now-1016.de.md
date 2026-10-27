@@ -3,6 +3,8 @@ urlSlug: scale-or-stay-local-fitness-operators-must-pick-a-lane-now-1016
 lang: "de"
 counterpart: scale-or-stay-local-fitness-operators-must-pick-a-lane-now-1016
 title: "Wer nicht wächst, schrumpft – und der Fitness-Markt weiß das gerade sehr genau"
+seoTitle: "Wachstumsstrategie fürs Studio: skalieren oder lokal bleiben?"
+topic: strategy
 description: "Von PureGyms Schweizer Expansion bis zu fitbox' 1000-Standorte-Meilenstein: Was Betreiber und Investoren jetzt aus der Konsolidierungswelle lernen müssen."
 pillar: signal
 type: trends

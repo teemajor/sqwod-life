@@ -19,6 +19,19 @@ export const DAILY_INDEX_DAYS = 30;
 // and the reviews themselves are ranking.
 export const INDEX_COMPARE_PAGES = false;
 
+// Dated news takes (27 Oct 2026, Tee approved via the re-tag sheet): the 92
+// pre-27-Oct roundup articles flagged `newsTake: true`. Like Daily, they stay
+// live and linked for readers but get noindex,follow and leave the sitemap this
+// many days after publishing. New one-story articles are NOT flagged and stay
+// indexed; revisit with Search Console data around 22 Dec 2026.
+export const NEWS_TAKE_INDEX_DAYS = 30;
+
+export function newsTakeIsFresh(publishedAt, now = Date.now()) {
+  const t = new Date(publishedAt).getTime();
+  if (Number.isNaN(t)) return true;
+  return now - t <= NEWS_TAKE_INDEX_DAYS * 86400000;
+}
+
 // Helper shared by the sitemap filter: is a daily URL still fresh?
 export function dailyIsFresh(urlSlug, now = Date.now()) {
   const t = Date.parse(urlSlug);

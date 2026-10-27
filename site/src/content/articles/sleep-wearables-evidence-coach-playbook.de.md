@@ -3,6 +3,8 @@ urlSlug: sleep-wearables-evidence-coach-playbook
 lang: "de"
 counterpart: sleep-wearables-evidence-coach-playbook
 title: "Der Ring deines Kunden meldet 42 Minuten Tiefschlaf. So sehr kannst du dem trauen."
+seoTitle: "Wie genau sind Schlaftracker? Oura, Whoop, Apple Watch"
+topic: wearables-devices
 description: "Wir haben die Polysomnografie-Validierungsstudien zu Oura, Whoop, Apple Watch & Co. gelesen, bewertet und geprüft, was noch untersucht wird. Was Schlaf-Tracker gut messen, wo die Zahlen geraten sind — und was du dem Kunden sagst, der wegen seines Scores in Panik gerät."
 pillar: gear
 type: evidence

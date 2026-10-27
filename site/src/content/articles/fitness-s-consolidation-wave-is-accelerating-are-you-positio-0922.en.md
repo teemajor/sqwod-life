@@ -3,6 +3,8 @@ urlSlug: fitness-s-consolidation-wave-is-accelerating-are-you-positio-0922
 lang: "en"
 counterpart: fitness-s-consolidation-wave-is-accelerating-are-you-positio-0922
 title: "Fitness's Consolidation Wave Is Accelerating — Are You Positioned?"
+topic: market-moves
+newsTake: true
 description: "Big money is reshaping who owns gyms, who joins them, and how classes are sold — here's what operators and investors need to do right now."
 pillar: signal
 type: market-data

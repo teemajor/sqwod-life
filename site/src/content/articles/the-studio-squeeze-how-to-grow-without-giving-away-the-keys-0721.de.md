@@ -3,6 +3,8 @@ urlSlug: the-studio-squeeze-how-to-grow-without-giving-away-the-keys-0721
 lang: "de"
 counterpart: the-studio-squeeze-how-to-grow-without-giving-away-the-keys-0721
 title: "Franchise boomt, ClassPass lenkt ein – was das für dein Studio bedeutet"
+topic: strategy
+newsTake: true
 description: "Drei aktuelle Signale aus der Branche zeigen: Wer jetzt die richtigen Stellschrauben dreht, gewinnt Marktanteile – wer wartet, verliert sie."
 pillar: build
 type: coaching-business

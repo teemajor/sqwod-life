@@ -3,6 +3,8 @@ urlSlug: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
 lang: "de"
 counterpart: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
 title: "Fitness ist kein Produkt mehr – es ist ein Ökosystem"
+topic: market-moves
+newsTake: true
 description: "Warum Betreiber, die nur Geräte verkaufen, bald das Nachsehen haben – und was jetzt zu tun ist."
 pillar: signal
 type: market-data

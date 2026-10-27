@@ -3,6 +3,8 @@ urlSlug: the-fitness-business-split-is-here-which-side-are-you-on-0908
 lang: "en"
 counterpart: the-fitness-business-split-is-here-which-side-are-you-on-0908
 title: "The Fitness Business Split Is Here. Which Side Are You On?"
+topic: strategy
+newsTake: true
 description: "Six real stories from this week reveal a brutal fork in the road for every gym, coach, and studio owner — here's how to read the map."
 pillar: build
 type: ai-automation

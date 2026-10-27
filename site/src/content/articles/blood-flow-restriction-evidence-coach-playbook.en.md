@@ -3,6 +3,8 @@ urlSlug: blood-flow-restriction-evidence-coach-playbook
 lang: "en"
 counterpart: blood-flow-restriction-evidence-coach-playbook
 title: "Blood-Flow Restriction Training: Who It's Really For — and What to Tell Your Clients"
+seoTitle: "Blood Flow Restriction Training: Evidence, Safety, Who It Suits"
+topic: training
 description: "We read the meta-analyses, graded them, and checked the trial registry. What BFR does as well as heavy lifting, where it falls short, the safety line every coach must respect — and the script for the client who asks."
 pillar: move
 type: evidence

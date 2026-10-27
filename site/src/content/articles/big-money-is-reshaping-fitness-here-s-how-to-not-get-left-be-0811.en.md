@@ -3,6 +3,8 @@ urlSlug: big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811
 lang: "en"
 counterpart: big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811
 title: "Big money is reshaping fitness. Here's how to not get left behind."
+topic: market-moves
+newsTake: true
 description: "From SlimFast to Kirin, consolidation is accelerating — and independent operators who aren't paying attention are about to feel it."
 pillar: build
 type: ai-automation

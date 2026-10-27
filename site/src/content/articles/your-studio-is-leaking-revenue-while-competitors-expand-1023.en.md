@@ -3,6 +3,8 @@ urlSlug: your-studio-is-leaking-revenue-while-competitors-expand-1023
 lang: "en"
 counterpart: your-studio-is-leaking-revenue-while-competitors-expand-1023
 title: "Your Studio Is Leaking Revenue While Competitors Expand"
+topic: pricing-revenue
+newsTake: true
 description: "While top fitness brands are aggressively growing, most studios are losing money through gaps they can't see — here's how to close them."
 pillar: build
 type: ai-automation

@@ -3,6 +3,8 @@ urlSlug: your-clients-sleep-badly-breathe-wrong-and-need-more-than-yo-0825
 lang: "en"
 counterpart: your-clients-sleep-badly-breathe-wrong-and-need-more-than-yo-0825
 title: "Your Clients Sleep Badly, Breathe Wrong, and Need More Than You"
+topic: offer-programming
+newsTake: true
 description: "Three industry signals this week reveal why the best coaches are building ecosystems, not just class schedules."
 pillar: move
 type: method

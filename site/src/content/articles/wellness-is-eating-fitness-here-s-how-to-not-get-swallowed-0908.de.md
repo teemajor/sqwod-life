@@ -3,6 +3,8 @@ urlSlug: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
 lang: "de"
 counterpart: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
 title: "Wellness frisst die Fitnesswelt – wer jetzt schläft, verliert"
+topic: market-moves
+newsTake: true
 description: "Sechs aktuelle Signale zeigen, dass Wellness zur dominanten Wachstumslogik wird – und was Fitnessoperatoren jetzt konkret tun müssen."
 pillar: signal
 type: trends

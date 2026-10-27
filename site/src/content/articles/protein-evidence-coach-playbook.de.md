@@ -3,6 +3,8 @@ urlSlug: protein-evidence-coach-playbook
 lang: "de"
 counterpart: protein-evidence-coach-playbook
 title: "Deine Kunden zerdenken das Protein-Timing. Das bewegt wirklich etwas."
+seoTitle: "Wie viel Protein für Muskelaufbau? Tagesmenge vs. Timing"
+topic: nutrition-metabolism
 description: "Wir haben die Dosis-Wirkungs-Meta-Analysen, das ISSN-Positionspapier und die Timing-Studien gelesen und bewertet. Wie viel Protein wirklich Muskeln baut, ob das anabole Fenster real ist — und was du dem Kunden sagst, der fragt."
 pillar: move
 type: evidence

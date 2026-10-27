@@ -3,6 +3,8 @@ urlSlug: your-members-don-t-want-a-gym-they-want-a-feeling-1006
 lang: "de"
 counterpart: your-members-don-t-want-a-gym-they-want-a-feeling-1006
 title: "Wellness wird Lifestyle: Was das für dein Studio bedeutet"
+topic: marketing-community
+newsTake: true
 description: "Sechs aktuelle Deals zeigen, wohin der Markt driftet – und was du jetzt konkret tun kannst."
 pillar: build
 type: ai-automation

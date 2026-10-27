@@ -3,6 +3,8 @@ urlSlug: studio-retention-math
 lang: en
 counterpart: studio-retention-math
 title: "The retention math that decides if your studio survives"
+seoTitle: "Gym Member Retention: Why the First 30 Days Decide Churn"
+topic: retention
 description: "Industry churn runs 4–8% a month and half of new members quit in 90 days. The fix isn't more ads — it's the first 30."
 pillar: build
 type: coaching-business

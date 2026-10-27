@@ -4,13 +4,17 @@ import Glyph from '../../../components/Glyph.astro';
 import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../../i18n/ui';
 import { pillarGlyph } from '../../../i18n/pillars';
+import { TOPICS, EVIDENCE_TOPICS } from '../../../config/topics';
 
 export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
 const lang = Astro.params.lang as Lang;
 
 const title = lang === 'de'
-  ? 'Sqwod Evidence — die Forschung, übersetzt für Coaches'
-  : 'Sqwod Evidence — the research, translated for coaches';
+  ? 'Studienlage zu Supplements und Training für Coaches | Sqwod Evidence'
+  : 'Supplement and Training Research for Coaches | Sqwod Evidence';
+const description = lang === 'de'
+  ? 'Was die Studienlage zu Supplements, Training, Ernährung, Recovery und Wearables sagt: bewertet, mit Quellen, plus das Skript für deine Kunden.'
+  : 'What the research says on supplements, training, nutrition, recovery and wearables: graded, sourced, with the script for your clients.';
 
 // The series = any article marked type: evidence. Stays in its own lane for the
 // funnel; this hub unifies them by the evidence tag.
@@ -19,9 +23,13 @@ const pieces = (await getCollection('articles', (a) =>
   .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
 
 const pieceHref = (a: any) => `/${lang}/analysis/${a.data.urlSlug}`;
+// Grouped by Evidence topic chip (27 Oct 2026); anything untagged goes last.
+const groups = [...EVIDENCE_TOPICS.map((k) => ({ k, label: TOPICS[k].label[lang], items: pieces.filter((p) => p.data.topic === k) })),
+  { k: 'other', label: lang === 'de' ? 'Weitere' : 'More', items: pieces.filter((p) => !p.data.topic || !EVIDENCE_TOPICS.includes(p.data.topic)) }]
+  .filter((g) => g.items.length);
 const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
 ---
-<Base lang={lang} title={title} active="evidence">
+<Base lang={lang} title={title} description={description} active="evidence">
   <div class="pagehead">
     <div class="crumb">Sqwod Evidence</div>
     <h1>Sqwod Evidence</h1>
@@ -34,11 +42,15 @@ const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
     </p>
   </div>
 
-  <section class="block" style="border-top:1px solid var(--line);margin-top:8px">
-    <p class="kick">{lang==='de'?'Evidenz-Beiträge':'Evidence briefings'}</p>
-    {pieces.length > 0 ? (
+  <nav class="ev-chips" aria-label={lang==='de'?'Themen':'Topics'}>
+    {groups.map((g) => <a href={`#${g.k}`}>{g.label} · {g.items.length}</a>)}
+  </nav>
+
+  {groups.map((g, gi) => (
+    <section class="block" id={g.k} style={gi === 0 ? 'border-top:1px solid var(--line);margin-top:8px' : ''}>
+      <p class="kick">{g.label}{g.k === 'supplements' && <Fragment> · <a class="ev-hub" href={`/${lang}/evidence/supplements`}>{lang==='de'?'Alle von A bis Z':'All from A to Z'} →</a></Fragment>}</p>
       <div class="grid cols2">
-      {pieces.map((a) => (
+      {g.items.map((a) => (
         <a class="card" style="grid-template-columns:52px 1fr" href={pieceHref(a)}>
           <Glyph kind={a.data.hero ? (a.data.hero.kind === 'orbit' ? 'ring' : a.data.hero.kind) : pillarGlyph(a.data.pillar)} size={52} />
           <div class="info">
@@ -50,10 +62,9 @@ const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
         </a>
       ))}
       </div>
-    ) : (
-      <p class="meta">{lang==='de'?'Bald mehr.':'More soon.'}</p>
-    )}
-  </section>
+    </section>
+  ))}
+  {pieces.length === 0 && <p class="meta">{lang==='de'?'Bald mehr.':'More soon.'}</p>}
 
   <section class="block">
     <div class="note"><b>{lang==='de'?'Ein Supplement im Blick?':'Shopping a supplement?'}</b> {lang==='de'
@@ -61,3 +72,11 @@ const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
       : 'The evidence tells you what works — Sqwod Verified tells you which product to buy.'} <a class="cardcta" href={`/${lang}/verified`}>{lang==='de'?'Zu Sqwod Verified':'Browse Sqwod Verified'} →</a></div>
   </section>
 </Base>
+
+<style>
+  .ev-chips{display:flex;flex-wrap:wrap;gap:8px;padding:10px 0 4px}
+  .ev-chips a{font-size:13px;font-weight:600;color:var(--g1);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+  .ev-chips a:hover,.ev-chips a:focus-visible{border-color:var(--chalk);color:var(--chalk)}
+  .ev-hub{color:var(--chalk);text-decoration:none;letter-spacing:.06em}
+  section.block[id]{scroll-margin-top:90px}
+</style>

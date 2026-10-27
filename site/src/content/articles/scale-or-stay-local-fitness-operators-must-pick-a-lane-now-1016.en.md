@@ -3,6 +3,8 @@ urlSlug: scale-or-stay-local-fitness-operators-must-pick-a-lane-now-1016
 lang: "en"
 counterpart: scale-or-stay-local-fitness-operators-must-pick-a-lane-now-1016
 title: "Scale or Stay Local? Fitness Operators Must Pick a Lane Now"
+seoTitle: "Gym Growth Strategy: Scale or Stay Local?"
+topic: strategy
 description: "From PureGym's Swiss expansion to a Flint gym's charity drive, this week's moves reveal the only two strategies that actually work right now."
 pillar: signal
 type: trends

@@ -3,6 +3,7 @@ urlSlug: strength-won-the-equipment-boom
 lang: de
 counterpart: strength-won-the-equipment-boom
 title: "Krafttraining hat den Geräte-Boom gewonnen. Jetzt kaufen die Studios wieder."
+seoTitle: "Fitnessgeräte-Markt 2026: Daten zum Kraft-Boom"
 description: "Der US-Absatz von Freihanteln hat sich von 2019 bis 2023 fast verdreifacht (+179 %), Crosstrainer sind geschrumpft. Heimgeräte erreichten ein Rekordhoch von 6,56 Mrd. $, Studiogeräte 1,69 Mrd. $, und 2025 floss das Geld zurück zu den Anlagen. Wohin die Ausgaben für Fitnessgeräte wirklich gehen. Ein lebender Sqwod-Intelligence-Report."
 pillar: build
 type: market-data

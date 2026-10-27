@@ -3,6 +3,8 @@ urlSlug: seed-oils-evidence-coach-playbook
 lang: "en"
 counterpart: seed-oils-evidence-coach-playbook
 title: "Are Seed Oils Actually Killing Us? We Read the Studies. The Answer Annoys Both Sides."
+seoTitle: "Are Seed Oils Bad for You? What the Studies Show"
+topic: nutrition-metabolism
 description: "We pulled the mortality cohorts, the inflammation RCTs, the Cochrane review and the one trial the internet loves — graded them all — and worked out what a coach should actually tell a client who just threw out their canola oil. Spoiler: the evidence points the opposite way to the panic."
 pillar: signal
 type: evidence

@@ -3,6 +3,8 @@ urlSlug: your-leaders-are-burned-out-cold-water-might-fix-that-0703
 lang: "de"
 counterpart: your-leaders-are-burned-out-cold-water-might-fix-that-0703
 title: "Wenn der Chef ins Eisbad steigt, trifft er bessere Entscheidungen"
+topic: strategy
+newsTake: true
 description: "Warum Kontrasthydrotherapie nicht nur Recovery-Tool ist, sondern das schärfste Leadership-Instrument im Fitnessstudio."
 pillar: signal
 type: trends

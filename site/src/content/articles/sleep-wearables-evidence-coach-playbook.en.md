@@ -3,6 +3,8 @@ urlSlug: sleep-wearables-evidence-coach-playbook
 lang: "en"
 counterpart: sleep-wearables-evidence-coach-playbook
 title: "Your Client's Ring Says They Got 42 Minutes of Deep Sleep. Here's How Much to Trust It."
+seoTitle: "How Accurate Are Sleep Trackers? Oura, Whoop, Apple Watch"
+topic: wearables-devices
 description: "We read the polysomnography validation studies on Oura, Whoop, Apple Watch and the rest, graded them, and checked what's still being tested. What sleep trackers actually measure well, where the numbers are guesswork, and exactly what to tell the client who's panicking about their score."
 pillar: gear
 type: evidence

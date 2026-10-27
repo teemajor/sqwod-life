@@ -3,6 +3,8 @@ urlSlug: sleep-performance-evidence-coach-playbook
 lang: "de"
 counterpart: sleep-performance-evidence-coach-playbook
 title: "Dein Kunde schläft sechs Stunden und wundert sich, warum nichts vorangeht. Hier ist die Evidenz — und das Skript."
+seoTitle: "Schlaf und sportliche Leistung: Was die Studienlage sagt"
+topic: recovery-sleep
 description: "Wir haben die Meta-Analysen zu Schlaf und Leistung gelesen, bewertet und geprüft, was noch erforscht wird. Was Schlafmangel einen Trainingsblock kostet, was ein Nickerchen wert ist — und was du dem Kunden sagst, der behauptet, sechs Stunden reichen ihm."
 pillar: signal
 type: evidence

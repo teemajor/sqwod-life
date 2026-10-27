@@ -3,6 +3,8 @@ urlSlug: cold-plunge-evidence-coach-playbook
 lang: "en"
 counterpart: cold-plunge-evidence-coach-playbook
 title: "The Cold Plunge Question: What the Evidence Actually Supports — and When It Works Against Your Client"
+seoTitle: "Cold Plunge After Training: Recovery Benefit vs Muscle Gains"
+topic: recovery-sleep
 description: "We read the meta-analyses on cold water immersion, graded them, and checked the live trial registry. What it does for recovery, what it costs you in muscle, and exactly what to tell the client who just bought an ice barrel."
 pillar: signal
 type: evidence

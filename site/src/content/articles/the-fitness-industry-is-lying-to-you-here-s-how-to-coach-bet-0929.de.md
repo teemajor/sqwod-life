@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-lying-to-you-here-s-how-to-coach-bet-0929
 lang: "de"
 counterpart: the-fitness-industry-is-lying-to-you-here-s-how-to-coach-bet-0929
 title: "Wenn der Trend dich killt: Was Coaches jetzt wirklich brauchen"
+topic: offer-programming
+newsTake: true
 description: "Die Fitnessbranche boomt – aber falsche Sichtbarkeitsstrategien kosten Coaches Glaubwürdigkeit, Gesundheit und Klienten."
 pillar: move
 type: method

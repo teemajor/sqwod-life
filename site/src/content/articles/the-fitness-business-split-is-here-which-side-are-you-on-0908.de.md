@@ -3,6 +3,8 @@ urlSlug: the-fitness-business-split-is-here-which-side-are-you-on-0908
 lang: "de"
 counterpart: the-fitness-business-split-is-here-which-side-are-you-on-0908
 title: "Wer nur Training verkauft, verliert – das zeigt die Fitness-Woche"
+topic: strategy
+newsTake: true
 description: "Sechs aktuelle Deals zeigen, wohin das Geld fließt – und was du als Coach oder Studio-Betreiber jetzt anders machen solltest."
 pillar: build
 type: ai-automation

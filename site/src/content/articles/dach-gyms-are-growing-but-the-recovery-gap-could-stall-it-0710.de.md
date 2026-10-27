@@ -3,6 +3,8 @@ urlSlug: dach-gyms-are-growing-but-the-recovery-gap-could-stall-it-0710
 lang: "de"
 counterpart: dach-gyms-are-growing-but-the-recovery-gap-could-stall-it-0710
 title: "Wachstum reicht nicht – wer jetzt nicht differenziert, verliert"
+topic: dach
+newsTake: true
 description: "Die DACH-Fitnesswirtschaft wächst – aber wer sich nicht vom Einheitsbrei absetzt, wird vom nächsten Zyklus weggespült."
 pillar: signal
 type: trends

@@ -3,6 +3,7 @@ urlSlug: ghosted-members
 lang: en
 counterpart: ghosted-members
 title: "Ghosted: 49% of Lapsed Members Were Never Contacted"
+seoTitle: "Lapsed Gym Members: 49% Never Contacted (Win-Back Data)"
 description: "Nearly half of lapsed members say their gym never reached out after they stopped showing up — while ~50% quit in 90 days and winning a new member costs 5–7× keeping one. The cheapest growth you're ignoring. A living Sqwod Intelligence report."
 pillar: build
 type: coaching-business

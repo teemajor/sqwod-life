@@ -3,6 +3,8 @@ urlSlug: your-studio-is-losing-members-while-you-sleep-1016
 lang: "de"
 counterpart: your-studio-is-losing-members-while-you-sleep-1016
 title: "Your Studio Is Losing Members While You Sleep"
+topic: retention
+newsTake: true
 description: "Three industry moves this week reveal the same truth: the gap between premium experience and frictionless access is where members walk out the door."
 pillar: move
 type: method

@@ -3,6 +3,8 @@ urlSlug: fitness-is-splitting-into-winners-and-losers-which-side-are--0828
 lang: "en"
 counterpart: fitness-is-splitting-into-winners-and-losers-which-side-are--0828
 title: "Fitness Is Splitting Into Winners and Losers—Which Side Are You On?"
+topic: strategy
+newsTake: true
 description: "From Planet Fitness lawsuits to Basic-Fit's profit comeback, the industry is rewarding operators who get community and hybrid right—here's what to do now."
 pillar: signal
 type: trends

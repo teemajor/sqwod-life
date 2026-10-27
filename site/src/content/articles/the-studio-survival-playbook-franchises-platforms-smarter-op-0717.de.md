@@ -3,6 +3,8 @@ urlSlug: the-studio-survival-playbook-franchises-platforms-smarter-op-0717
 lang: "de"
 counterpart: the-studio-survival-playbook-franchises-platforms-smarter-op-0717
 title: "Wachstum oder Ausbluten? Was dein Studio jetzt entscheiden muss"
+topic: strategy
+newsTake: true
 description: "Drei aktuelle Branchensignale zeigen, dass der Fitness-Markt gerade neu sortiert wird – wer jetzt handelt, sichert sich den Vorteil."
 pillar: build
 type: coaching-business

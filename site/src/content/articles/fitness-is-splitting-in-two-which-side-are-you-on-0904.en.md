@@ -3,6 +3,8 @@ urlSlug: fitness-is-splitting-in-two-which-side-are-you-on-0904
 lang: "en"
 counterpart: fitness-is-splitting-in-two-which-side-are-you-on-0904
 title: "Fitness Is Splitting in Two — Which Side Are You On?"
+topic: strategy
+newsTake: true
 description: "From dark rooms to GLP-1 masterclasses, the wellness economy is fracturing fast — and operators who don't pick a lane will get left behind."
 pillar: signal
 type: market-data

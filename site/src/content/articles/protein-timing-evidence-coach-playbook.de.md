@@ -3,6 +3,8 @@ urlSlug: protein-timing-evidence-coach-playbook
 lang: "de"
 counterpart: protein-timing-evidence-coach-playbook
 title: "Das anabole Fenster ist kein Fenster. Hier ist die Evidenz — und das Skript."
+seoTitle: "Anaboles Fenster: Zählt das Protein-Timing nach dem Training?"
+topic: nutrition-metabolism
 description: "Wir haben die Timing-Meta-Analysen, die Dosis-Wirkungs-Kurven und die 100-Gramm-Tracerstudie gelesen, bewertet und geprüft, was noch erforscht wird. Was das Ergebnis deiner Kunden wirklich treibt — und was du dem Kunden sagst, der mit dem Shaker zum Auto rennt."
 pillar: move
 type: evidence

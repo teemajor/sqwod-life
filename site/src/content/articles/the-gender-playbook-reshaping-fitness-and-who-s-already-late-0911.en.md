@@ -3,6 +3,8 @@ urlSlug: the-gender-playbook-reshaping-fitness-and-who-s-already-late-0911
 lang: "en"
 counterpart: the-gender-playbook-reshaping-fitness-and-who-s-already-late-0911
 title: "The Gender Playbook Reshaping Fitness (And Who's Already Late)"
+seoTitle: "Women-Focused Gyms: Why Fitness Is Repositioning (2026)"
+topic: strategy
 description: "From Tokyo to Mumbai, capital and operators are rushing toward women-first fitness — here's what that means for everyone still running a general-population gym."
 pillar: signal
 type: trends

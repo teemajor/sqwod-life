@@ -3,6 +3,8 @@ urlSlug: your-members-are-losing-money-and-they-ll-blame-you-for-it-0814
 lang: "de"
 counterpart: your-members-are-losing-money-and-they-ll-blame-you-for-it-0814
 title: "Deine Mitglieder zahlen zu viel – und merken es irgendwann"
+topic: pricing-revenue
+newsTake: true
 description: "Warum das alte Abomodell bröckelt, was Nostalgie und Wellness-Riesen damit zu tun haben – und was du diese Woche konkret ändern kannst."
 pillar: build
 type: marketing

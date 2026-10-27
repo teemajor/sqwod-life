@@ -3,6 +3,8 @@ urlSlug: bcaa-evidence-coach-playbook
 lang: "en"
 counterpart: bcaa-evidence-coach-playbook
 title: "BCAAs: The Supplement That Works Right Up Until Your Client Eats Enough Protein"
+seoTitle: "Do BCAAs Work? Evidence Review for Coaches"
+topic: supplements
 description: "We read the meta-analyses, graded them, and checked the trial registry. What BCAAs actually do, who they're genuinely useless for, and the script for the client holding a €40 tub."
 pillar: move
 type: evidence

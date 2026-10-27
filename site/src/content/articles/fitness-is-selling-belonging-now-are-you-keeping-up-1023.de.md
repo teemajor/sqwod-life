@@ -3,6 +3,8 @@ urlSlug: fitness-is-selling-belonging-now-are-you-keeping-up-1023
 lang: "de"
 counterpart: fitness-is-selling-belonging-now-are-you-keeping-up-1023
 title: "Fitness Is Selling Belonging Now — Are You Keeping Up?"
+topic: marketing-community
+newsTake: true
 description: "From pharmacy referrals to protein snacks to Mark Wahlberg's gym, every smart bet in fitness right now is chasing the same thing: connection with a purpose."
 pillar: signal
 type: trends

@@ -3,6 +3,7 @@ urlSlug: pilates-reformer-boom
 lang: de
 counterpart: pilates-reformer-boom
 title: "Der Pilates-Run: ein 19,2-Mrd.-$-Markt — und alle wollen rein"
+seoTitle: "Pilates-Markt 2026: Größe, Wachstum, Wettbewerb"
 description: "US-Pilates- & Yoga-Studios sind ein 19,2-Mrd.-$-Markt mit ~11%/Jahr Wachstum (IBISWorld), Pilates ist drei Jahre in Folge das meistgebuchte Workout auf ClassPass (+66%), und Peloton hat sich gerade in Connected Reformer eingekauft. Der Reformer-Boom in Zahlen. Ein lebender Sqwod-Intelligence-Report."
 pillar: build
 type: market-data

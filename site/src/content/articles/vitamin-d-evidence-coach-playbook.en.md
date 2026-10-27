@@ -3,6 +3,8 @@ urlSlug: vitamin-d-evidence-coach-playbook
 lang: "en"
 counterpart: vitamin-d-evidence-coach-playbook
 title: "Vitamin D: Who Actually Needs to Supplement — and Who's Wasting Their Money"
+seoTitle: "Vitamin D Supplements: Who Actually Needs Them?"
+topic: supplements
 description: "We read the guidelines, the meta-analyses and the safety data. Vitamin D is a correction supplement, not a performance supplement — here's how a coach tells the difference, and the script for the client who's already taking 5,000 IU."
 pillar: signal
 type: evidence

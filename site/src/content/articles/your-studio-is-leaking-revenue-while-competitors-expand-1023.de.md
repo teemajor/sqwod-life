@@ -3,6 +3,8 @@ urlSlug: your-studio-is-leaking-revenue-while-competitors-expand-1023
 lang: "de"
 counterpart: your-studio-is-leaking-revenue-while-competitors-expand-1023
 title: "Wachstum ohne Boden: Warum Studios skalieren und trotzdem bluten"
+topic: pricing-revenue
+newsTake: true
 description: "Expansion ist sexy, aber versteckte Umsatzverluste fressen deinen Gewinn – hier ist, was du jetzt tun musst."
 pillar: build
 type: ai-automation

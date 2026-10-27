@@ -3,6 +3,8 @@ urlSlug: 88-of-leads-ghosted-fitness-is-booming-but-operators-are-asl-1009
 lang: "de"
 counterpart: 88-of-leads-ghosted-fitness-is-booming-but-operators-are-asl-1009
 title: "88% of leads ghosted: fitness is booming but operators are asleep"
+topic: retention
+newsTake: true
 description: "The wellness industry is attracting real money and real customers — but most gym operators are fumbling the basics while the market moves on without them."
 pillar: signal
 type: trends

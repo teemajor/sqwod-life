@@ -9,6 +9,7 @@ import InlineSignup from '../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../i18n/ui';
 import { pillarMeta, type Pillar } from '../../i18n/pillars';
+import { topicLabel } from '../../config/topics';
 import { readdirSync } from 'node:fs';
 import { reviewEarns } from '../../config/verified-categories';
 import { isLiveIssue } from '../../config/daily.mjs';
@@ -50,7 +51,7 @@ const reportCount = articles.filter(isReport).length;
 const builds = articles.filter((a) => !isReport(a) && a.data.pillar === 'build').slice(0, 2);
 const evidence = articles.find((a) => a.data.type === 'evidence');
 const playbooks = [...builds, ...(evidence ? [evidence] : [])];
-const laneTag = (a: Art) => a.data.type === 'evidence' ? 'Evidence' : (pillarMeta[a.data.pillar as Pillar]?.label[lang] ?? a.data.pillar);
+const laneTag = (a: Art) => topicLabel(a.data.topic, lang) || (a.data.type === 'evidence' ? 'Evidence' : (pillarMeta[a.data.pillar as Pillar]?.label[lang] ?? a.data.pillar));
 
 // --- Ticker: today's money movement, then the latest headlines, then the newest report stat
 type Tick = { k: string; t: string; href: string };
@@ -95,7 +96,7 @@ const T = de
       repKick: 'Sqwod Intelligence', repH: 'Die Daten hinter dem Business.', repAll: 'Alle Reports',
       invKick: 'Sqwod Intelligence · monatlicher Flagship-Report', invH: 'Ein großer Report im Monat. Gebaut auf 2.061 Statista-Grafiken.', invA: 'Reports live', invB: 'Sprachen, nativ geschrieben', invC: 'interaktive Grafiken pro Report', invCta: 'Flagship-Report lesen',
       vKick: 'Sqwod Verified', vH: 'Produkte mit Score.', vP: 'Für deine Kund:innen, dein Studio und dein Regal.', allGuides: 'Alle Kaufberater', trade: 'Trade-Sicht', ad: 'Anzeige',
-      pbKick: 'Lesen', pbH: 'Playbooks für Operator', allReads: 'Alle Artikel',
+      pbKick: 'Artikel', pbH: 'Playbooks für Operator', allReads: 'Alle Artikel',
       workKick: 'Partner', workH: 'Mit Sqwod arbeiten',
       brandK: 'Für Marken', brandH: 'Erreiche die Menschen, die Fitness machen.', brandP: 'Sqwod Daily, der Podcast, Plätze auf der Seite. Oder lass dein Produkt bewerten und in Sqwod Pods einsetzen.', brandCta: 'Werben',
       investK: 'Für Investor:innen', investH: 'Dealflow, täglich eingeordnet.', investP: 'Jede Finanzierung, Übernahme und Eröffnung mit Investor-Sicht. Dazu jeden Monat ein Flagship-Report.', investCta: 'Als Investor:in abonnieren',
@@ -105,7 +106,7 @@ const T = de
       repKick: 'Sqwod Intelligence', repH: 'The data behind the business.', repAll: 'All reports',
       invKick: 'Sqwod Intelligence · monthly flagship', invH: 'One deep report a month. Built on 2,061 Statista charts.', invA: 'reports live', invB: 'languages, written natively', invC: 'interactive charts per report', invCta: 'Read the flagship',
       vKick: 'Sqwod Verified', vH: 'products scored.', vP: 'For your clients, your studio and your shelf.', allGuides: "All buyer's guides", trade: 'Trade read', ad: 'Ad',
-      pbKick: 'Read', pbH: 'Operator playbooks', allReads: 'All reads',
+      pbKick: 'Articles', pbH: 'Operator playbooks', allReads: 'All articles',
       workKick: 'Partners', workH: 'Work with Sqwod',
       brandK: 'For brands', brandH: 'Reach the people who run fitness.', brandP: 'Sqwod Daily, the podcast, site placements. Or get your product reviewed and used in Sqwod Pods.', brandCta: 'Advertise',
       investK: 'For investors', investH: 'Deal flow, decoded daily.', investP: 'Every raise, acquisition and opening with an investor read. Plus one flagship report a month.', investCta: 'Join as an investor',

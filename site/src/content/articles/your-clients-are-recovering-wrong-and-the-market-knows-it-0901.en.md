@@ -3,6 +3,8 @@ urlSlug: your-clients-are-recovering-wrong-and-the-market-knows-it-0901
 lang: "en"
 counterpart: your-clients-are-recovering-wrong-and-the-market-knows-it-0901
 title: "Your clients are recovering wrong — and the market knows it"
+topic: offer-programming
+newsTake: true
 description: "From towel drills to Pilates surges, here's what the recovery boom means for your programming right now."
 pillar: move
 type: method

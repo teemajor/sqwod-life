@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-lying-to-you-here-s-how-to-coach-bet-0929
 lang: "en"
 counterpart: the-fitness-industry-is-lying-to-you-here-s-how-to-coach-bet-0929
 title: "The Fitness Industry Is Lying to You — Here's How to Coach Better"
+topic: offer-programming
+newsTake: true
 description: "From a coach who died chasing viral reach to a £1.1 billion Pilates boom, this week's news reveals exactly what separates coaches who last from those who don't."
 pillar: move
 type: method

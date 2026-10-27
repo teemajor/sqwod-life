@@ -3,6 +3,8 @@ urlSlug: the-metric-you-re-missing-while-everyone-else-scales-0911
 lang: "en"
 counterpart: the-metric-you-re-missing-while-everyone-else-scales-0911
 title: "The Metric You're Missing While Everyone Else Scales"
+topic: marketing-community
+newsTake: true
 description: "Today's fitness industry moves tell a clear story about where growth actually comes from — and it's not where most gym owners are looking."
 pillar: build
 type: marketing

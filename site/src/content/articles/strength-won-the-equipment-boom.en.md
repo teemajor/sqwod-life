@@ -3,6 +3,7 @@ urlSlug: strength-won-the-equipment-boom
 lang: en
 counterpart: strength-won-the-equipment-boom
 title: "Strength Won the Equipment Boom. Now Gyms Are Buying Again."
+seoTitle: "Fitness Equipment Market 2026: Strength Sales Data"
 description: "US free-weight sales nearly tripled from 2019 to 2023 (+179%) while ellipticals shrank. Home equipment hit a record $6.56bn, gym equipment a record $1.69bn, and in 2025 the money started shifting back to facilities. Where fitness equipment spending is really moving. A living Sqwod Intelligence report."
 pillar: build
 type: market-data

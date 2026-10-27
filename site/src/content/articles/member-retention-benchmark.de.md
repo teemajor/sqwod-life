@@ -3,6 +3,7 @@ urlSlug: member-retention-benchmark
 lang: de
 counterpart: member-retention-benchmark
 title: "Der Mitglieder-Retention-Benchmark 2026"
+seoTitle: "Mitgliederbindung im Fitnessstudio: Benchmark 2026"
 description: "Der echte Branchenanker liegt bei 66,4% Jahres-Retention — nicht bei den oft zitierten 71,4% von vor zehn Jahren. Gib deine Zahl ein und sieh, wo du wirklich stehst. Ein lebendiger Sqwod-Intelligence-Report."
 pillar: signal
 type: market-data

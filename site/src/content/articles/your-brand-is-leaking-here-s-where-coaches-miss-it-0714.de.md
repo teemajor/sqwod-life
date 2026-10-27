@@ -3,6 +3,8 @@ urlSlug: your-brand-is-leaking-here-s-where-coaches-miss-it-0714
 lang: "de"
 counterpart: your-brand-is-leaking-here-s-where-coaches-miss-it-0714
 title: "Warum dein Studio gerade auf dem Prüfstand steht"
+topic: marketing-community
+newsTake: true
 description: "Drei aktuelle Branchen-News zeigen, dass Vertrauen, Community und Qualität gerade über Erfolg oder Scheitern entscheiden – und was du jetzt konkret tun kannst."
 pillar: build
 type: coaching-business

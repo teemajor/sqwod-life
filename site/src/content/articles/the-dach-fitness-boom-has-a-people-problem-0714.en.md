@@ -3,6 +3,8 @@ urlSlug: the-dach-fitness-boom-has-a-people-problem-0714
 lang: "en"
 counterpart: the-dach-fitness-boom-has-a-people-problem-0714
 title: "The DACH Fitness Boom Has a People Problem"
+topic: dach
+newsTake: true
 description: "The German-speaking fitness market is growing fast — but the operators who win will be the ones who turn local champions into magnetic brand assets."
 pillar: signal
 type: trends

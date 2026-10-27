@@ -1,6 +1,7 @@
 ---
 import { type Lang } from '../i18n/ui';
-import { LANES, pillarMeta, type Pillar } from '../i18n/pillars';
+import { pillarMeta, type Pillar } from '../i18n/pillars';
+import { TOPICS, topicLabel } from '../config/topics';
 import ArticleHero from './ArticleHero.astro';
 import ShareBar from './ShareBar.astro';
 import BenchmarkWidget from './BenchmarkWidget.astro';
@@ -19,8 +20,18 @@ interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: 
 const { lang, entry, sectionLabel, related = [], wide = false } = Astro.props;
 const d = entry.data;
 const { Content, headings } = await entry.render();
-const pillar = pillarMeta[d.pillar as Pillar];
-const isLane = (LANES as readonly string[]).includes(d.pillar);
+// Section + topic label (27 Oct 2026: topics replace the Move/Build/Signal lanes).
+const isReport = d.format === 'report' || d.format === 'index';
+const isEvidence = d.type === 'evidence';
+const tag = topicLabel(d.topic, lang) || (isEvidence ? 'Evidence' : isReport ? 'Report' : (pillarMeta[d.pillar as Pillar]?.label[lang] ?? ''));
+const pillar = { label: { en: tag, de: tag } as Record<string, string> };
+const more = isReport
+  ? { href: `/${lang}/intelligence`, label: 'Reports' }
+  : isEvidence
+    ? { href: `/${lang}/evidence`, label: 'Evidence' }
+    : d.topic && TOPICS[d.topic]?.section === 'articles'
+      ? { href: `/${lang}/articles/${d.topic}`, label: TOPICS[d.topic].label[lang] }
+      : { href: `/${lang}/articles`, label: lang === 'de' ? 'Artikel' : 'Articles' };
 const fmt = d.publishedAt.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 // Derive the share URL from the entry's format (same rule as lib/related.ts) —
 // never from the display label: reports/indexes live under /intelligence,
@@ -410,11 +421,7 @@ const shareCfg = {
 )}
 
 <section class="block" style="border-bottom:none">
-  {/* `gear` is a schema pillar but not a reader-facing LANE, so /articles/gear is never
-      built — linking to it produced a 404 on every gear article. Fall back to the
-      articles hub for any pillar that has no lane page of its own. */}
-  <a class="cta" href={isLane ? `/${lang}/articles/${d.pillar}` : `/${lang}/articles`}>
-    {lang==='de'?'Mehr aus':'More in'} {isLane ? pillar.label[lang] : (lang==='de'?'Artikel':'Articles')} →</a>
+  <a class="cta" href={more.href}>{lang==='de'?'Mehr aus':'More in'} {more.label} →</a>
 </section>
 
 <style>

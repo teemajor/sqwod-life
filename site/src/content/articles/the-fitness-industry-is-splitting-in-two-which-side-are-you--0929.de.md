@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-splitting-in-two-which-side-are-you--0929
 lang: "de"
 counterpart: the-fitness-industry-is-splitting-in-two-which-side-are-you--0929
 title: "Wachsen oder sterben: Was die Fitness-Branche dir gerade zeigt"
+topic: strategy
+newsTake: true
 description: "Fünf aktuelle Branchen-News ergeben ein klares Muster – und einen konkreten Plan für deinen nächsten Schritt."
 pillar: build
 type: ai-automation

@@ -3,6 +3,8 @@ urlSlug: the-studio-squeeze-how-to-grow-without-giving-away-the-keys-0721
 lang: "en"
 counterpart: the-studio-squeeze-how-to-grow-without-giving-away-the-keys-0721
 title: "The Studio Squeeze: How to Grow Without Giving Away the Keys"
+topic: strategy
+newsTake: true
 description: "Three industry moves this week reveal the same pressure every studio owner feels — here's how to think about growth, partnerships, and protecting your margins."
 pillar: build
 type: coaching-business

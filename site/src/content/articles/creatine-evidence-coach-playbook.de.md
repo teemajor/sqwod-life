@@ -3,6 +3,8 @@ urlSlug: creatine-evidence-coach-playbook
 lang: "de"
 counterpart: creatine-evidence-coach-playbook
 title: "Deine Kunden fragen ständig nach Kreatin. Hier ist die Evidenz — und das Skript."
+seoTitle: "Kreatin: Was die Studienlage sagt und was Coaches sagen sollten"
+topic: supplements
 description: "Wir haben die Meta-Analysen gelesen, bewertet und geprüft, was noch erforscht wird. Was Kreatin wirklich bringt, was nicht — und was du dem Kunden sagst, der fragt."
 pillar: move
 type: evidence

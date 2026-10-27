@@ -3,6 +3,8 @@ urlSlug: your-studio-is-a-subscription-business-act-like-one-0731
 lang: "de"
 counterpart: your-studio-is-a-subscription-business-act-like-one-0731
 title: "Dein Studio kämpft ums Überleben – während KI & VCs den Markt umbauen"
+topic: pricing-revenue
+newsTake: true
 description: "Was Massagestudios, KI-Coaching und Car-Wash-Abos gemeinsam haben – und was du diese Woche konkret anders machen solltest."
 pillar: build
 type: ai-automation

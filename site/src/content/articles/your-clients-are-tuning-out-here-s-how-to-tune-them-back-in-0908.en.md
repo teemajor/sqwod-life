@@ -3,6 +3,8 @@ urlSlug: your-clients-are-tuning-out-here-s-how-to-tune-them-back-in-0908
 lang: "en"
 counterpart: your-clients-are-tuning-out-here-s-how-to-tune-them-back-in-0908
 title: "Your clients are tuning out. Here's how to tune them back in."
+topic: retention
+newsTake: true
 description: "Three fitness industry signals this week point to the same uncomfortable truth: member experience is the new moat — and most coaches are ignoring it."
 pillar: move
 type: method

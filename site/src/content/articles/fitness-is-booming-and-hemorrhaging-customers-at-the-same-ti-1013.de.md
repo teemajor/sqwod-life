@@ -3,6 +3,8 @@ urlSlug: fitness-is-booming-and-hemorrhaging-customers-at-the-same-ti-1013
 lang: "de"
 counterpart: fitness-is-booming-and-hemorrhaging-customers-at-the-same-ti-1013
 title: "88% Leads ignoriert – warum Fitness gerade Geld verbrennt"
+topic: retention
+newsTake: true
 description: "Die Branche wächst, aber wer Leads nicht innerhalb von 72 Stunden anruft und Mitglieder mit 587-Dollar-Kündigungsgebühren bestraft, finanziert seinen eigenen Untergang."
 pillar: signal
 type: trends

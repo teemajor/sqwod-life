@@ -3,6 +3,8 @@ urlSlug: fitness-is-booming-everywhere-except-your-revenue-model-0811
 lang: "en"
 counterpart: fitness-is-booming-everywhere-except-your-revenue-model-0811
 title: "Fitness Is Booming Everywhere Except Your Revenue Model"
+topic: market-moves
+newsTake: true
 description: "From UK city rankings to P&G's $3.8bn bet, this week's signals all point to the same uncomfortable truth: wellness money is moving fast, and most operators are watching from the sidelines."
 pillar: signal
 type: trends

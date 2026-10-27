@@ -3,6 +3,8 @@ urlSlug: protein-evidence-coach-playbook
 lang: "en"
 counterpart: protein-evidence-coach-playbook
 title: "Your Clients Obsess Over Protein Timing. Here's What Actually Moves the Needle."
+seoTitle: "How Much Protein to Build Muscle? Daily Target vs Timing"
+topic: nutrition-metabolism
 description: "We read the dose-response meta-analyses, the ISSN position stand, and the timing trials, and graded them. How much protein really builds muscle, whether the anabolic window is real, and exactly what to tell the client who asks."
 pillar: move
 type: evidence

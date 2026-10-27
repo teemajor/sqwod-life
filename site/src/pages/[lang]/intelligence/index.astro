@@ -34,6 +34,17 @@ const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB',
     </a>
   )}
 
+  <a class="card dt-promo" style="grid-template-columns:1fr;margin-top:12px" href={`/${lang}/intelligence/deals/`} data-umami-event="deal-tracker-promo">
+    <div class="info">
+      <span class="bestfor">{lang==='de'?'Neu · Datenbank · täglich aktualisiert':'New · Database · updated daily'}</span>
+      <h3>Sqwod Deal Tracker</h3>
+      <div class="meta">{lang==='de'
+        ? 'Jede Finanzierung, Übernahme und jeder Börsengang in Fitness und Wellness. Filterbar nach Region, DACH inklusive. Download als CSV.'
+        : 'Every raise, acquisition and IPO in fitness and wellness. Filter by region, including Europe and DACH. Download as CSV.'}</div>
+      <span class="cardcta">{lang==='de'?'Deals ansehen':'See the deals'} →</span>
+    </div>
+  </a>
+
   <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
     {reports.length === 0 && <p class="sub">{lang==='de'?'Bald verfügbar.':'Coming soon.'}</p>}
     <div class="grid cols2">

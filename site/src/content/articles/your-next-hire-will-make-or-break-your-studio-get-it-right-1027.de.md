@@ -3,6 +3,8 @@ urlSlug: your-next-hire-will-make-or-break-your-studio-get-it-right-1027
 lang: "de"
 counterpart: your-next-hire-will-make-or-break-your-studio-get-it-right-1027
 title: "Warum dein nächster Wachstumshebel ein Mensch ist – kein Tool"
+topic: strategy
+newsTake: true
 description: "Während KI-Coaching-Dienste boomen, zeigen aktuelle Branchenbewegungen: Wer jetzt die richtigen Menschen einstellt und entwickelt, gewinnt den nächsten Zyklus."
 pillar: build
 type: ai-automation

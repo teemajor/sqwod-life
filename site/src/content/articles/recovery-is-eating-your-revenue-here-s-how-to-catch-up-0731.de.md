@@ -3,6 +3,8 @@ urlSlug: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
 lang: "de"
 counterpart: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
 title: "Recovery verkauft sich – aber nur wenn du es richtig packst"
+topic: offer-programming
+newsTake: true
 description: "Warum Recovery gerade zum stärksten Umsatzhebel im Fitness-Business wird – und wie du als Coach davon profitierst."
 pillar: move
 type: method

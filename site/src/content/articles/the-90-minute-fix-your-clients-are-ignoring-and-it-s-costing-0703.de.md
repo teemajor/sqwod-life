@@ -3,6 +3,8 @@ urlSlug: the-90-minute-fix-your-clients-are-ignoring-and-it-s-costing-0703
 lang: "de"
 counterpart: the-90-minute-fix-your-clients-are-ignoring-and-it-s-costing-0703
 title: "The 90-Minute Fix Your Clients Are Ignoring (And It's Costing Them)"
+topic: offer-programming
+newsTake: true
 description: "Three new findings reveal why movement volume, mental health, and medication all point to the same prescription — and what coaches should do about it right now."
 pillar: move
 type: method

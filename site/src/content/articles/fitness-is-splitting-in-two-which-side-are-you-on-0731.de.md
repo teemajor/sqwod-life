@@ -3,6 +3,8 @@ urlSlug: fitness-is-splitting-in-two-which-side-are-you-on-0731
 lang: "de"
 counterpart: fitness-is-splitting-in-two-which-side-are-you-on-0731
 title: "Wachstum oder Tiefe? Die Gretchenfrage für Fitnessbetreiber"
+topic: strategy
+newsTake: true
 description: "Während Ketten auf Expansion setzen, gewinnen Betreiber, die zuerst in Menschen investieren – hier ist, warum das kein Widerspruch sein muss."
 pillar: signal
 type: trends

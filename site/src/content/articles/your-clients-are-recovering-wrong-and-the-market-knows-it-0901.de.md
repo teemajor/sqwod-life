@@ -3,6 +3,8 @@ urlSlug: your-clients-are-recovering-wrong-and-the-market-knows-it-0901
 lang: "de"
 counterpart: your-clients-are-recovering-wrong-and-the-market-knows-it-0901
 title: "Recovery ist das neue Training – und deine Kunden wissen es schon"
+topic: offer-programming
+newsTake: true
 description: "Warum der Boom bei Pilates, Towel Abduction und Wellnesskliniken dir sagt, was deine Mitglieder wirklich wollen – und wie du sofort davon profitierst."
 pillar: move
 type: method

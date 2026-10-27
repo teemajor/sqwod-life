@@ -3,6 +3,8 @@ urlSlug: your-members-are-losing-money-and-they-ll-blame-you-for-it-0814
 lang: "en"
 counterpart: your-members-are-losing-money-and-they-ll-blame-you-for-it-0814
 title: "Your Members Are Losing Money — and They'll Blame You for It"
+topic: pricing-revenue
+newsTake: true
 description: "New research exposes the membership pricing trap killing retention, and what savvy operators are doing right now to fix it."
 pillar: build
 type: marketing

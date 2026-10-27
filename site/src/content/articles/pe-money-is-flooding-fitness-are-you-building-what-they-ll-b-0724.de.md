@@ -3,6 +3,8 @@ urlSlug: pe-money-is-flooding-fitness-are-you-building-what-they-ll-b-0724
 lang: "de"
 counterpart: pe-money-is-flooding-fitness-are-you-building-what-they-ll-b-0724
 title: "Kapital sucht Muskeln – bist du bereit, wenn PE anklopft?"
+topic: market-moves
+newsTake: true
 description: "Warum Private-Equity-Interesse, Community-Programme und neue DACH-Branchenzahlen zusammen eine klare Botschaft senden – und was Betreiber jetzt tun sollten."
 pillar: signal
 type: trends

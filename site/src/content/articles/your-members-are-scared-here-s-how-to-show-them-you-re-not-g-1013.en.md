@@ -3,6 +3,8 @@ urlSlug: your-members-are-scared-here-s-how-to-show-them-you-re-not-g-1013
 lang: "en"
 counterpart: your-members-are-scared-here-s-how-to-show-them-you-re-not-g-1013
 title: "Your Members Are Scared. Here's How to Show Them You're Not Going Anywhere"
+topic: marketing-community
+newsTake: true
 description: "From gym closures to $100M expansion plays, the fitness industry is sending mixed signals — here's how to make sure your studio sends the right one."
 pillar: build
 type: marketing

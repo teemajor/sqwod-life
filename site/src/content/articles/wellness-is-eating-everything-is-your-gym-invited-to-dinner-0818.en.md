@@ -3,6 +3,8 @@ urlSlug: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
 lang: "en"
 counterpart: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
 title: "Wellness is eating everything — is your gym invited to dinner?"
+topic: market-moves
+newsTake: true
 description: "From REITs to retail to supplements, capital is flooding into wellness from every direction — here's what fitness operators need to do before they're the last ones at the table."
 pillar: signal
 type: market-data

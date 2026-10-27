@@ -4,7 +4,7 @@
 
 Every page exists in both languages: /en/... and /de/... are 1:1 counterparts. Figures carry an as-of date and a named source; reviews show a Sqwod Score (0-100) built from a public criteria scorecard plus aggregated crowd ratings. Affiliate links are labelled on-page.
 
-## Intelligence (data reports)
+## Reports (data reports, under /intelligence/)
 - [State of Wearables 2026](https://sqwod.life/en/intelligence/wearables-84bn-market/): open-access flagship report on the wearables market, with downloadable figures (CSV/JSON) and a citation block
 - [Member retention benchmark](https://sqwod.life/en/intelligence/member-retention-benchmark/): churn and retention figures for gyms and studios
 - [Ghosted members](https://sqwod.life/en/intelligence/ghosted-members/): lapsed-member data and the re-activation case
@@ -28,10 +28,12 @@ Every page exists in both languages: /en/... and /de/... are 1:1 counterparts. F
 - [Supplements A to Z](https://sqwod.life/en/evidence/supplements/): every graded supplement with its verdict (default yes, conditional, skip, avoid) and a link to the sourced playbook
 - [Evidence methodology](https://sqwod.life/en/evidence/methodology/): how studies are graded
 
-## Articles by lane
-- [Signal](https://sqwod.life/en/articles/signal/): industry trends and market moves
-- [Build](https://sqwod.life/en/articles/build/): growth and operations playbooks for coaches and studios
-- [Move](https://sqwod.life/en/articles/move/): training method and programming
+## Articles by topic
+- [All articles](https://sqwod.life/en/articles/): analysis for gym and studio operators, coaches and founders
+- [Retention](https://sqwod.life/en/articles/retention/): churn, win-back, the first 90 days
+- [Pricing & Revenue](https://sqwod.life/en/articles/pricing-revenue/): membership pricing and new revenue lines
+- [Market Moves](https://sqwod.life/en/articles/market-moves/): funding, deals, openings and closures
+- [Strategy](https://sqwod.life/en/articles/strategy/), [Offer & Programming](https://sqwod.life/en/articles/offer-programming/), [Marketing & Community](https://sqwod.life/en/articles/marketing-community/), [AI & Tools](https://sqwod.life/en/articles/ai-tools/), [DACH](https://sqwod.life/en/articles/dach/)
 
 ## Sqwod Daily
 - [Sqwod Daily](https://sqwod.life/en/daily/): weekday briefing on the business of fitness, with audio episodes and an email edition

@@ -3,6 +3,8 @@ urlSlug: blood-flow-restriction-evidence-coach-playbook
 lang: "de"
 counterpart: blood-flow-restriction-evidence-coach-playbook
 title: "Blutflussrestriktion (BFR): Für wen sie wirklich ist — und was du deinen Kunden sagst"
+seoTitle: "BFR-Training (Okklusionstraining): Studienlage und Sicherheit"
+topic: training
 description: "Wir haben die Meta-Analysen gelesen, bewertet und das Studienregister geprüft. Was BFR im Vergleich zu schwerem Training leistet, wo sie zurückbleibt, welche Sicherheitsgrenze jeder Coach kennen muss — und das Skript für den Kunden, der fragt."
 pillar: move
 type: evidence

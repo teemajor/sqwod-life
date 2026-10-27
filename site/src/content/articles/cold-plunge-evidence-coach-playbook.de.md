@@ -3,6 +3,8 @@ urlSlug: cold-plunge-evidence-coach-playbook
 lang: "de"
 counterpart: cold-plunge-evidence-coach-playbook
 title: "Die Eisbad-Frage: Was die Evidenz wirklich hergibt — und wann Kälte gegen deinen Kunden arbeitet"
+seoTitle: "Eisbaden nach dem Training: Regeneration vs. Muskelaufbau"
+topic: recovery-sleep
 description: "Wir haben die Meta-Analysen zum Kaltwasserbad gelesen, bewertet und das Studienregister geprüft. Was es für die Regeneration bringt, was es dich an Muskelaufbau kostet — und was du dem Kunden sagst, der sich gerade eine Eistonne gekauft hat."
 pillar: signal
 type: evidence

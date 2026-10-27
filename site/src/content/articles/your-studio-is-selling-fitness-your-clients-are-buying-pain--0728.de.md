@@ -3,6 +3,8 @@ urlSlug: your-studio-is-selling-fitness-your-clients-are-buying-pain--0728
 lang: "de"
 counterpart: your-studio-is-selling-fitness-your-clients-are-buying-pain--0728
 title: "Rücken, Recovery, Rendite: Was dein Studio gerade falsch priorisiert"
+topic: offer-programming
+newsTake: true
 description: "Warum die erfolgreichsten Fitnessbusiness-Entscheidungen 2025 alle beim Körper anfangen – und wie du das sofort nutzt."
 pillar: move
 type: method

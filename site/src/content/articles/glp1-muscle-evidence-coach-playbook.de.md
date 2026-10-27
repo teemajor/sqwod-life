@@ -3,6 +3,8 @@ urlSlug: glp1-muscle-evidence-coach-playbook
 lang: "de"
 counterpart: glp1-muscle-evidence-coach-playbook
 title: "Deine Kunden nehmen die Abnehmspritze. Hier ist das Muskel-Problem — und wie du es genau coachst."
+seoTitle: "GLP-1 und Muskelverlust: Training mit Ozempic und Wegovy"
+topic: nutrition-metabolism
 description: "Wir haben die Körperzusammensetzungs-Studien zu Ozempic, Wegovy und Mounjaro gelesen, benotet und geprüft, was noch getestet wird. Wie viel Muskel GLP-1-Medikamente wirklich kosten, warum die Panik halb richtig ist, und was du für den Kunden programmierst, der schnell abnimmt."
 pillar: signal
 type: evidence

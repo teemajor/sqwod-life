@@ -3,6 +3,8 @@ urlSlug: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
 lang: "en"
 counterpart: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
 title: "Recovery Is Eating Your Revenue — Here's How to Catch Up"
+topic: offer-programming
+newsTake: true
 description: "The fitness industry is quietly pivoting to recovery and longevity, and coaches who ignore it will watch their clients walk out the door."
 pillar: move
 type: method

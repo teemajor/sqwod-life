@@ -3,6 +3,8 @@ urlSlug: ashwagandha-evidence-coach-playbook
 lang: "de"
 counterpart: ashwagandha-evidence-coach-playbook
 title: "Ashwagandha: Was die Evidenz wirklich stützt — und das Sicherheitsgespräch, das du führen musst."
+seoTitle: "Ashwagandha: Was die Studienlage zu Stress, Schlaf und Kraft sagt"
+topic: supplements
 description: "Wir haben die Meta-Analysen gelesen und bewertet. Was zu Stress, Schlaf und Kraft untersucht ist, was überverkauft wird, die reale Leber- und Schwangerschafts-Vorsicht — und was du dem Kunden sagst, der fragt."
 pillar: signal
 type: evidence

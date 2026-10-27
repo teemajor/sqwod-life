@@ -3,6 +3,8 @@ urlSlug: your-gym-could-be-thriving-or-closing-here-s-how-to-tell-1016
 lang: "en"
 counterpart: your-gym-could-be-thriving-or-closing-here-s-how-to-tell-1016
 title: "Your gym could be thriving or closing — here's how to tell"
+topic: strategy
+newsTake: true
 description: "Six stories from this week reveal the difference between studios that grow and ones that fold — and what you can do right now to land on the right side."
 pillar: build
 type: ai-automation

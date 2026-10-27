@@ -3,6 +3,8 @@ urlSlug: red-light-therapy-evidence-coach-playbook
 lang: "de"
 counterpart: red-light-therapy-evidence-coach-playbook
 title: "Rotlichttherapie: Was Panels, Masken und Kappen wirklich tun — nach Evidenz sortiert"
+seoTitle: "Rotlichttherapie: Wirkt sie? Studienlage nach Anwendung"
+topic: wearables-devices
 description: "Wir haben die Photobiomodulations-Forschung Anwendung für Anwendung benotet — Leistung vor dem Workout, Schmerz, Haare, Haut — und die Behauptungen, die halten, von denen getrennt, die das Geräte-Marketing erfunden hat. Plus: worauf es ankommt, wenn ein Kunde gleich 400 € für ein Panel ausgibt."
 pillar: gear
 type: evidence

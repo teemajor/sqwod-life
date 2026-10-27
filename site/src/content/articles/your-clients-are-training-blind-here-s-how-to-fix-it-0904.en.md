@@ -3,6 +3,8 @@ urlSlug: your-clients-are-training-blind-here-s-how-to-fix-it-0904
 lang: "en"
 counterpart: your-clients-are-training-blind-here-s-how-to-fix-it-0904
 title: "Your clients are training blind — here's how to fix it"
+topic: offer-programming
+newsTake: true
 description: "Two overlooked ideas from Dubai and Arkansas show why removing distractions (and adding a towel) could be your gym's sharpest edge right now."
 pillar: move
 type: method

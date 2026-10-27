@@ -1,0 +1,205 @@
+---
+// Sqwod Deal Tracker: every raise, acquisition, valuation and IPO the Daily has logged,
+// merged, web-checked and approved by Tee (one tap per deal). Data: src/lib/deals.ts.
+import Base from '../../../layouts/Base.astro';
+import DataChart from '../../../components/DataChart.astro';
+import InlineSignup from '../../../components/InlineSignup.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+import { liveDeals, generatedAt } from '../../../lib/deals';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+const deals = liveDeals().sort((a, b) => b.date.localeCompare(a.date));
+
+const T = de ? {
+  title: 'Sqwod Deal Tracker: Finanzierungen & Übernahmen in Fitness und Wellness',
+  h1: 'Sqwod Deal Tracker',
+  sub: 'Jede Finanzierung, Übernahme, Bewertung und jeder Börsengang in Fitness, Wellness und Consumer Health. Täglich aus Sqwod Daily erfasst, Wiederholungen zusammengeführt, jede Meldung von Hand freigegeben.',
+  deals: 'Deals erfasst', value: 'Offengelegtes Volumen', valueNote: 'ca. USD', eu: 'Europa & DACH', euNote: 'Anteil der Deals', since: 'Seit',
+  all: 'Alle', region: 'Region', kind: 'Art', cat: 'Kategorie', search: 'Firma suchen …', count: 'Deals angezeigt',
+  th: ['Datum', 'Firma', 'Deal', 'Betrag', 'Region', 'Kategorie', 'Quelle'],
+  kinds: { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Schließung' } as Record<string, string>,
+  undisclosed: 'nicht genannt', source: 'Quelle', daily: 'Daily',
+  chart1: 'Offengelegtes Deal-Volumen pro Monat', unit1: 'Mio. USD (ca.)', chart2: 'Deals nach Kategorie', unit2: 'Anzahl',
+  method: 'So entsteht der Tracker',
+  methodBody: [
+    'Quelle: der Abschnitt „Money movement“ in jeder Ausgabe von Sqwod Daily, mit Link zur Originalmeldung.',
+    'Meldet die Presse denselben Deal innerhalb von 60 Tagen erneut, führen wir ihn zu einem Eintrag zusammen und behalten das Datum der ersten Meldung.',
+    'Neue Deals werden im Web gegengeprüft (Firmensitz, Betrag, Quelle) und erst nach Freigabe durch Tee Major veröffentlicht.',
+    'USD-Werte sind Näherungen mit festen Wechselkursen. Maßgeblich ist der Betrag in Originalwährung.',
+  ],
+  empty: 'Die ersten Deals werden gerade geprüft. Trag dich ein und bekomm jeden neuen Deal in Sqwod Daily.',
+  download: 'Daten herunterladen', cite: 'Zitieren', updated: 'Stand',
+  signupHead: 'Jeden Deal am Morgen, bevor er Thema ist', signupBody: 'Sqwod Daily: Geld, Deals und was sie für dein Business heißen. Werktäglich, kostenlos.',
+} : {
+  title: 'Sqwod Deal Tracker: Fitness & Wellness Funding and M&A',
+  h1: 'Sqwod Deal Tracker',
+  sub: 'Every raise, acquisition, valuation and IPO in fitness, wellness and consumer health. Logged daily from Sqwod Daily, repeats merged, every entry approved by hand.',
+  deals: 'Deals tracked', value: 'Disclosed value', valueNote: 'approx. USD', eu: 'Europe & DACH', euNote: 'share of deals', since: 'Since',
+  all: 'All', region: 'Region', kind: 'Type', cat: 'Category', search: 'Search a company…', count: 'deals shown',
+  th: ['Date', 'Company', 'Deal', 'Amount', 'Region', 'Category', 'Source'],
+  kinds: { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown' } as Record<string, string>,
+  undisclosed: 'undisclosed', source: 'Source', daily: 'Daily',
+  chart1: 'Disclosed deal value per month', unit1: 'USD millions (approx.)', chart2: 'Deals by category', unit2: 'count',
+  method: 'How the tracker is built',
+  methodBody: [
+    'Source: the "Money movement" block in every Sqwod Daily issue, linked to the original report.',
+    'When the press reports the same deal again within 60 days, we merge it into one entry and keep the date it was first reported.',
+    'New deals are checked on the web (headquarters, amount, source) and published only after Tee Major approves them.',
+    'USD values are approximations at fixed exchange rates. The amount in the original currency is the reference.',
+  ],
+  empty: 'The first deals are being checked right now. Sign up and get every new deal in Sqwod Daily.',
+  download: 'Download the data', cite: 'Cite', updated: 'As of',
+  signupHead: 'Every deal, in your inbox before it is old news', signupBody: 'Sqwod Daily: money, deals and what they mean for your business. Every weekday, free.',
+};
+const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten', 'Latin America': 'Lateinamerika', Other: 'Sonstige' };
+const CAT_DE: Record<string, string> = { 'Gyms & studios': 'Studios & Clubs', 'Wearables & devices': 'Wearables & Geräte', 'Health & longevity': 'Health & Longevity', 'Nutrition & supplements': 'Ernährung & Supplements', 'Software & AI': 'Software & KI', 'Apparel & footwear': 'Bekleidung & Schuhe', Other: 'Sonstige' };
+const rName = (r: string) => (de ? REGION_DE[r] || r : r);
+const cName = (c: string) => (de ? CAT_DE[c] || c : c);
+const loc = de ? 'de-DE' : 'en-GB';
+const fmtDate = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { day: '2-digit', month: 'short', year: 'numeric' });
+const usd = (n: number) => (n >= 1e9 ? `$${(n / 1e9).toLocaleString(loc, { maximumFractionDigits: 1 })}${de ? ' Mrd.' : 'bn'}` : n >= 1e6 ? `$${(n / 1e6).toLocaleString(loc, { maximumFractionDigits: n >= 1e8 ? 0 : 1 })}${de ? ' Mio.' : 'M'}` : `$${Math.round(n / 1e3)}K`);
+
+// headline numbers, all computed from the live rows
+const disclosed = deals.reduce((s, d) => s + (d.amountUsd || 0), 0);
+const euShare = deals.length ? Math.round((deals.filter((d) => d.region === 'Europe' || d.region === 'DACH' || d.region === 'UK').length / deals.length) * 100) : 0;
+const first = deals.length ? deals[deals.length - 1].date : generatedAt;
+
+// charts (same component as the flagship reports)
+const months = [...new Set(deals.map((d) => d.date.slice(0, 7)))].sort();
+const monthLabel = (m: string) => new Date(m + '-15T12:00:00Z').toLocaleDateString(loc, { month: 'short', year: '2-digit' });
+const chartMonths = { label: T.chart1, unit: T.unit1, kind: 'timeseries' as const, categories: months.map(monthLabel),
+  series: [{ name: T.value, points: months.map((m) => Math.round(deals.filter((d) => d.date.startsWith(m)).reduce((s, d) => s + (d.amountUsd || 0), 0) / 1e5) / 10) }],
+  source: 'Sqwod Deal Tracker' };
+const cats = [...new Set(deals.map((d) => d.category))].sort((a, b) => deals.filter((d) => d.category === b).length - deals.filter((d) => d.category === a).length);
+const chartCats = { label: T.chart2, unit: T.unit2, kind: 'categorical' as const, categories: cats.map(cName),
+  series: [{ name: T.deals, points: cats.map((c) => deals.filter((d) => d.category === c).length) }], source: 'Sqwod Deal Tracker' };
+
+const regions = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East'].filter((r) => deals.some((d) => d.region === r));
+const kinds = ['raise', 'acquisition', 'valuation', 'ipo', 'shutdown'].filter((k) => deals.some((d) => d.kind === k));
+const url = `https://sqwod.life/${lang}/intelligence/deals/`;
+const citation = `Sqwod Intelligence. "Sqwod Deal Tracker." sqwod.life, ${new Date(generatedAt + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}. ${url}`;
+const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sqwod Deal Tracker', description: T.sub, url, inLanguage: lang,
+  creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' }, dateModified: generatedAt, temporalCoverage: `${first}/..`,
+  distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://sqwod.life/data/deals.csv' }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://sqwod.life/data/deals.json' }] };
+---
+<Base lang={lang} title={T.title} description={T.sub} active="intelligence" noindex={deals.length < 10}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <div class="crumb"><a href={`/${lang}/intelligence`}>Sqwod Intelligence</a> / {T.h1}</div>
+  <h1>{T.h1}</h1>
+  <p class="sub">{T.sub}</p>
+
+  {deals.length === 0 ? (
+    <div class="note" style="margin-top:20px">{T.empty}</div>
+  ) : (
+    <>
+      <div class="dt-kpis">
+        <div><b>{deals.length.toLocaleString(loc)}</b><span>{T.deals}</span></div>
+        <div><b>{usd(disclosed)}</b><span>{T.value} · {T.valueNote}</span></div>
+        <div><b>{euShare}%</b><span>{T.eu} · {T.euNote}</span></div>
+        <div><b>{fmtDate(first)}</b><span>{T.since}</span></div>
+      </div>
+
+      {months.length >= 3 && <DataChart lang={lang} chart={chartMonths} index={0} total={2} />}
+      {cats.length >= 2 && <DataChart lang={lang} chart={chartCats} index={1} total={2} />}
+
+      <section class="dt-filters" aria-label={T.region}>
+        <div class="dt-chips" role="group">
+          <button type="button" class="on" data-region="">{T.all}</button>
+          <button type="button" data-region="europe-all">{T.eu}</button>
+          {regions.map((r) => <button type="button" data-region={r}>{rName(r)}</button>)}
+        </div>
+        <div class="dt-row">
+          <input type="search" placeholder={T.search} aria-label={T.search} data-q />
+          <select aria-label={T.kind} data-kind><option value="">{T.kind}: {T.all}</option>{kinds.map((k) => <option value={k}>{T.kinds[k]}</option>)}</select>
+          <select aria-label={T.cat} data-cat><option value="">{T.cat}: {T.all}</option>{cats.map((c) => <option value={c}>{cName(c)}</option>)}</select>
+        </div>
+        <p class="dt-count"><span data-count>{deals.length}</span> {T.count}</p>
+      </section>
+
+      <div class="dt-wrap">
+        <table class="dt">
+          <thead><tr>{T.th.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+          <tbody>
+            {deals.map((d) => (
+              <tr data-region={d.region} data-kind={d.kind} data-cat={d.category} data-name={`${d.entity} ${d.note}`.toLowerCase()}>
+                <td class="dt-date">{fmtDate(d.date)}</td>
+                <td><b>{d.entity}</b><span class="dt-note">{de && d.noteDe ? d.noteDe : d.note}</span></td>
+                <td>{T.kinds[d.kind] || d.kind}</td>
+                <td class="dt-amt">{d.amount ? <>{d.amount}{d.amountUsd && d.currency !== 'USD' ? <span class="dt-note">≈ {usd(d.amountUsd)}</span> : null}</> : <span class="dt-muted">{T.undisclosed}</span>}</td>
+                <td>{d.country || rName(d.region)}</td>
+                <td>{cName(d.category)}</td>
+                <td class="dt-src">{d.url ? <a href={d.url} rel="nofollow noopener" target="_blank">{T.source} ↗</a> : null}{' '}<a href={d.issue.replace('/en/', `/${lang}/`)}>{T.daily}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  <InlineSignup lang={lang} source="deal-tracker" head={T.signupHead} body={T.signupBody} />
+
+  <section class="note dt-method">
+    <b>{T.method}</b>
+    <ul>{T.methodBody.map((l) => <li>{l}</li>)}</ul>
+    {deals.length > 0 && <p><b>{T.download}:</b> <a href="/data/deals.csv" download>CSV</a> · <a href="/data/deals.json">JSON</a> · {T.updated} {fmtDate(generatedAt)}</p>}
+    <p><b>{T.cite}:</b> {citation}</p>
+  </section>
+</Base>
+
+<style>
+  .dt-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:22px 0 8px}
+  .dt-kpis div{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}
+  .dt-kpis b{display:block;font-size:24px;letter-spacing:-.01em;color:var(--chalk)}
+  .dt-kpis span{display:block;font-size:12px;color:var(--g2);margin-top:4px}
+  @media(min-width:760px){.dt-kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  .dt-filters{margin:26px 0 10px}
+  .dt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+  .dt-chips button{border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
+  .dt-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .dt-row{display:grid;grid-template-columns:1fr;gap:8px}
+  @media(min-width:640px){.dt-row{grid-template-columns:2fr 1fr 1fr}}
+  .dt-row input,.dt-row select{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px}
+  .dt-count{font-size:12px;color:var(--g2);margin:8px 0 0}
+  .dt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin-bottom:24px}
+  .dt{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
+  .dt th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+  .dt td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--g1)}
+  .dt tr:last-child td{border-bottom:0}
+  .dt td b{color:var(--chalk)}
+  .dt-note{display:block;font-size:12px;color:var(--g2);margin-top:3px;line-height:1.45}
+  .dt-muted{color:var(--g3)}
+  .dt-date{white-space:nowrap;font-family:var(--mono);font-size:12px;color:var(--g2)}
+  .dt-amt{white-space:nowrap}
+  .dt-src{white-space:nowrap;font-size:12.5px}
+  .dt-src a{color:var(--g1)}
+  .dt-method ul{margin:8px 0 10px;padding-left:18px}
+  .dt-method p{margin:6px 0 0;word-break:break-word}
+</style>
+
+<script>
+  const rows = Array.from(document.querySelectorAll<HTMLTableRowElement>('.dt tbody tr'));
+  const q = document.querySelector<HTMLInputElement>('[data-q]');
+  const kind = document.querySelector<HTMLSelectElement>('[data-kind]');
+  const cat = document.querySelector<HTMLSelectElement>('[data-cat]');
+  const count = document.querySelector('[data-count]');
+  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.dt-chips button'));
+  let region = '';
+  const EUROPE = new Set(['DACH', 'UK', 'Europe']);
+  function apply() {
+    const s = (q?.value || '').trim().toLowerCase();
+    let n = 0;
+    for (const r of rows) {
+      const okR = !region || (region === 'europe-all' ? EUROPE.has(r.dataset.region || '') : r.dataset.region === region);
+      const ok = okR && (!kind?.value || r.dataset.kind === kind.value) && (!cat?.value || r.dataset.cat === cat.value) && (!s || (r.dataset.name || '').includes(s));
+      r.hidden = !ok; if (ok) n++;
+    }
+    if (count) count.textContent = String(n);
+  }
+  chips.forEach((b) => b.addEventListener('click', () => { region = b.dataset.region || ''; chips.forEach((c) => c.classList.toggle('on', c === b)); apply(); }));
+  q?.addEventListener('input', apply); kind?.addEventListener('change', apply); cat?.addEventListener('change', apply);
+</script>

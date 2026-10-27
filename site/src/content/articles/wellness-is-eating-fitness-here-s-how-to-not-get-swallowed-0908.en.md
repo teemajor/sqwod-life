@@ -3,6 +3,8 @@ urlSlug: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
 lang: "en"
 counterpart: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
 title: "Wellness Is Eating Fitness. Here's How to Not Get Swallowed."
+topic: market-moves
+newsTake: true
 description: "From pet supplements to GLP-1 masterclasses, capital is flooding wellness from every angle — and fitness operators who ignore it will wake up irrelevant."
 pillar: signal
 type: trends

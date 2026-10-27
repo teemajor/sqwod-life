@@ -1,0 +1,2317 @@
+{
+  "generatedAt": "2026-10-27",
+  "fx": {
+    "USD": 1,
+    "EUR": 1.08,
+    "GBP": 1.27,
+    "CHF": 1.13,
+    "CAD": 0.72,
+    "AUD": 0.65,
+    "INR": 0.012,
+    "JPY": 0.0066,
+    "SEK": 0.095,
+    "NOK": 0.092,
+    "DKK": 0.145,
+    "AED": 0.27,
+    "SAR": 0.27,
+    "SGD": 0.75
+  },
+  "mergeDays": 60,
+  "deals": [
+    {
+      "date": "2026-10-23",
+      "entity": "Nirva",
+      "kind": "raise",
+      "amount": "$33 million",
+      "amountUsd": 33000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "raised to bring an AI pendant wearable to market",
+      "url": "https://tradersunion.com/news/business-wealth/show/3925381-nirva-raises-ai-pendant-wearable-market/",
+      "source": "Traders Union",
+      "issue": "/en/daily/2026-10-23",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "nirva-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-23",
+          "url": "https://tradersunion.com/news/business-wealth/show/3925381-nirva-raises-ai-pendant-wearable-market/",
+          "issue": "/en/daily/2026-10-23"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-23",
+      "entity": "WILDE",
+      "kind": "raise",
+      "amount": "$40 million",
+      "amountUsd": 40000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "secured from S2G Investments to expand retail distribution and launch new products",
+      "url": "https://insider.fitt.co/wilde-lands-40m-to-scale-protein-snacks/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-10-23",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "wilde-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-23",
+          "url": "https://insider.fitt.co/wilde-lands-40m-to-scale-protein-snacks/",
+          "issue": "/en/daily/2026-10-23"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-21",
+      "entity": "Unravel Health",
+      "kind": "raise",
+      "amount": "€2.5M",
+      "amountUsd": 2700000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "raised to launch the Micro Lab, an at-home saliva-based hormone testing device shipping in 2027",
+      "url": "https://insider.fitt.co/unravel-health-raises-e2-5m-for-at-home-hormone-testing/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-10-21",
+      "region": "Other",
+      "category": "Health & longevity",
+      "id": "unravel-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-21",
+          "url": "https://insider.fitt.co/unravel-health-raises-e2-5m-for-at-home-hormone-testing/",
+          "issue": "/en/daily/2026-10-21"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-20",
+      "entity": "PureGym / NonStop Gym",
+      "kind": "acquisition",
+      "amount": "£235m",
+      "amountUsd": 298450000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "PureGym acquires 47-location Swiss low-cost chain NonStop Gym, deal expected to close 2 November 2026",
+      "url": "https://www.irishlegal.com/articles/browne-jacobson-advises-puregym-on-ps235m-swiss-fitness-business-acquisition",
+      "source": "Irish Legal News",
+      "issue": "/en/daily/2026-10-20",
+      "region": "DACH",
+      "category": "Gyms & studios",
+      "id": "puregym-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-20",
+          "url": "https://www.irishlegal.com/articles/browne-jacobson-advises-puregym-on-ps235m-swiss-fitness-business-acquisition",
+          "issue": "/en/daily/2026-10-20"
+        },
+        {
+          "date": "2026-10-26",
+          "url": "https://www.fitnessmanagement.de/puregym-uebernimmt-nonstop-gym-schweiz/",
+          "issue": "/en/daily/2026-10-26"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-19",
+      "entity": "Huppa",
+      "kind": "raise",
+      "amount": "€1M",
+      "amountUsd": 1080000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "pre-seed round for an all-in-one platform for gyms, CrossFit boxes and studios",
+      "url": "https://www.eu-startups.com/2026/10/amsterdams-huppa-raises-e1-million-to-build-an-operating-system-for-class-based-gyms-and-studios/",
+      "source": "EU-Startups",
+      "issue": "/en/daily/2026-10-19",
+      "region": "Europe",
+      "category": "Gyms & studios",
+      "id": "huppa-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-19",
+          "url": "https://www.eu-startups.com/2026/10/amsterdams-huppa-raises-e1-million-to-build-an-operating-system-for-class-based-gyms-and-studios/",
+          "issue": "/en/daily/2026-10-19"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-15",
+      "entity": "Othello",
+      "kind": "raise",
+      "amount": "$8M",
+      "amountUsd": 8000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "closed to fund real-time AI sales coaching delivered during live calls",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbmlOWkxCQ0lqQ2RmTjlYYVRPdzNtRlRiRnpET3d2YWNHcV9fckd3RDFNcWFXYm1LLWd3R2JYM2o0RTBXd005V0t3dUxQbzNZckVZTWszTHFkY1FYSE9HRHZ0ZkhMREFnUmJrbF9BR0pPcTVWU0Vscnhxd01RNnNYOVRZOGJrRmIxTzNQNEwyTDhpcmtUUGlYR1FSamhvUHdldkdDMXc3UW12dkZMdEdMYmhsMUNLU0JKdUVxWkJadFhoc1A4dVEtMGlTcUU?oc=5",
+      "source": "StreetInsider",
+      "issue": "/en/daily/2026-10-15",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "othello-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-15",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNbmlOWkxCQ0lqQ2RmTjlYYVRPdzNtRlRiRnpET3d2YWNHcV9fckd3RDFNcWFXYm1LLWd3R2JYM2o0RTBXd005V0t3dUxQbzNZckVZTWszTHFkY1FYSE9HRHZ0ZkhMREFnUmJrbF9BR0pPcTVWU0Vscnhxd01RNnNYOVRZOGJrRmIxTzNQNEwyTDhpcmtUUGlYR1FSamhvUHdldkdDMXc3UW12dkZMdEdMYmhsMUNLU0JKdUVxWkJadFhoc1A4dVEtMGlTcUU?oc=5",
+          "issue": "/en/daily/2026-10-15"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-10-14",
+      "entity": "The Stack",
+      "kind": "raise",
+      "amount": "$2.27M",
+      "amountUsd": 2270000,
+      "currency": "USD",
+      "approx": false,
+      "note": "expanding its supplements range in the Indian market",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVkJzaXBlWlZhOGZMbGhqZUlELUFyY1VQZ1J3bldTMHBVTFAyUUg3SXZLVjNlSXlCVndtOFozQVVwV3FENjNJdko4LVpnTjNyWHNfeHNsNW1lRTVfS2dWaUJxamRUTnFTNlFCYTdzRWFaSE9xT3ViQmpLNGxNNWtlbW9mRXJQaUFac1pwWk5kTjhQOEN0bUE?oc=5",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-10-14",
+      "region": "Asia-Pacific",
+      "category": "Nutrition & supplements",
+      "id": "stack-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-14",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVkJzaXBlWlZhOGZMbGhqZUlELUFyY1VQZ1J3bldTMHBVTFAyUUg3SXZLVjNlSXlCVndtOFozQVVwV3FENjNJdko4LVpnTjNyWHNfeHNsNW1lRTVfS2dWaUJxamRUTnFTNlFCYTdzRWFaSE9xT3ViQmpLNGxNNWtlbW9mRXJQaUFac1pwWk5kTjhQOEN0bUE?oc=5",
+          "issue": "/en/daily/2026-10-14"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-14",
+      "entity": "Stride",
+      "kind": "raise",
+      "amount": "£4.6M",
+      "amountUsd": 5842000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "Andrew Steele's preventive health venture backed on a 'don't break' thesis",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOTV2T3N5MWJaYkNvLV81Szhwck1nUEFjZllES2dwbGpZRUVXdXR0RlhoZ29CRE9QbFk2ODNSaUFLd3M1M3ZLTFUyTWpHWUFiYkdLeG9ta2J1aDJSSVFhRjl0OVR0X0t0VW9aQS1xdllIZWFXd3lwZ2dtMFYycVFuUWdMVmNjU2p4ek1zb2pyTzY5a2dSUERrbWtyc09IR0IxMzZucjNETnRvOXladGc?oc=5",
+      "source": "Tech Funding News",
+      "issue": "/en/daily/2026-10-14",
+      "region": "Other",
+      "category": "Health & longevity",
+      "id": "stride-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-14",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOTV2T3N5MWJaYkNvLV81Szhwck1nUEFjZllES2dwbGpZRUVXdXR0RlhoZ29CRE9QbFk2ODNSaUFLd3M1M3ZLTFUyTWpHWUFiYkdLeG9ta2J1aDJSSVFhRjl0OVR0X0t0VW9aQS1xdllIZWFXd3lwZ2dtMFYycVFuUWdMVmNjU2p4ek1zb2pyTzY5a2dSUERrbWtyc09IR0IxMzZucjNETnRvOXladGc?oc=5",
+          "issue": "/en/daily/2026-10-14"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-13",
+      "entity": "Macobs Technologies",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "acquired Dhanta Wellness as part of a broader grooming and wellness strategy",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTEg1Yk5hT0JTYjlWbENkN0tzNl9BZjIxUjZ0V3NvaS1NcnF5Qk52QUd5VG1IMXo0bVh4NWJHSng0dzhkU1FoclNENFpiN1JHNUtOSnlqQ00xbW0wYjVBMUttYjlpdzVqclF1TC1nbV8ySjdMVno1X1d2eWRsODlSSkZ5VVE2U3hRY2hrS0h4a2xFN2pjaWNMaElma3dpRmppbGxZWkU3RXo4RTZESlVYanYyZmZROEx2Y2R5d3AyUE9NYTIyZlA3cktYdnJMcTcyUFFqQkRpSWNTdTh1cGJlQmloRzFCS0dXQ1A4NTRodUdwLVpn?oc=5",
+      "source": "Kalkine India",
+      "issue": "/en/daily/2026-10-13",
+      "region": "Other",
+      "category": "Other",
+      "id": "macobs-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-13",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTEg1Yk5hT0JTYjlWbENkN0tzNl9BZjIxUjZ0V3NvaS1NcnF5Qk52QUd5VG1IMXo0bVh4NWJHSng0dzhkU1FoclNENFpiN1JHNUtOSnlqQ00xbW0wYjVBMUttYjlpdzVqclF1TC1nbV8ySjdMVno1X1d2eWRsODlSSkZ5VVE2U3hRY2hrS0h4a2xFN2pjaWNMaElma3dpRmppbGxZWkU3RXo4RTZESlVYanYyZmZROEx2Y2R5d3AyUE9NYTIyZlA3cktYdnJMcTcyUFFqQkRpSWNTdTh1cGJlQmloRzFCS0dXQ1A4NTRodUdwLVpn?oc=5",
+          "issue": "/en/daily/2026-10-13"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-09",
+      "entity": "Persona (Cal AI / Zach Yadegari)",
+      "kind": "raise",
+      "amount": "$10M",
+      "amountUsd": 10000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "raise for an AI assistant paired with a wearable band",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdTV1Qnl1cWJGTXhCM3lVbkZUNWhGWW5JRzd5ak5ubDYyS3hpVW5KWlNvMEh1Z2d2RVJDMlpENUN0Zjg3ejdNbEpEUVQycHFZemNQaW5iSkE5LVVuYXlUQ3V5dUYwRmtzTnctLXVxa3NZYmJCZnp6SzNzZ18xaUtiMmhjVDJOR09GNHJEX1BSSXhwVklYR0FsYmdLbTA5ems?oc=5",
+      "source": "The Business Journals",
+      "issue": "/en/daily/2026-10-09",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "persona-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-09",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdTV1Qnl1cWJGTXhCM3lVbkZUNWhGWW5JRzd5ak5ubDYyS3hpVW5KWlNvMEh1Z2d2RVJDMlpENUN0Zjg3ejdNbEpEUVQycHFZemNQaW5iSkE5LVVuYXlUQ3V5dUYwRmtzTnctLXVxa3NZYmJCZnp6SzNzZ18xaUtiMmhjVDJOR09GNHJEX1BSSXhwVklYR0FsYmdLbTA5ems?oc=5",
+          "issue": "/en/daily/2026-10-09"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-07",
+      "entity": "GLORIAH",
+      "kind": "raise",
+      "amount": "£600K",
+      "amountUsd": 762000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "UK intimate wellness brand expanding beyond the gym floor",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTHJGdVd2NWttT0t0VUFiV1gxald0RFJ4bWl1Vm1wVEx2V3BST3V2SmZ0TnRiNnF5aXhCUXhHR0hQdXhINmpMRVl5bTFNNjN2NGw1bW1SVXZ0bHJtQnZ4YTMzVGQyc2h5UW9XN1dfR0JWVURyelgxclI0bVZyWU14SktsUjFrTTg?oc=5",
+      "source": "Femtech Insider",
+      "issue": "/en/daily/2026-10-07",
+      "region": "UK",
+      "category": "Gyms & studios",
+      "id": "gloriah-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-07",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTHJGdVd2NWttT0t0VUFiV1gxald0RFJ4bWl1Vm1wVEx2V3BST3V2SmZ0TnRiNnF5aXhCUXhHR0hQdXhINmpMRVl5bTFNNjN2NGw1bW1SVXZ0bHJtQnZ4YTMzVGQyc2h5UW9XN1dfR0JWVURyelgxclI0bVZyWU14SktsUjFrTTg?oc=5",
+          "issue": "/en/daily/2026-10-07"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-06",
+      "entity": "SuperMush",
+      "kind": "raise",
+      "amount": "$3M",
+      "amountUsd": 3000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Series A led by India's NDude Labs, backing functional mushroom wellness",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLUxja1h3SXBZOHlkaVpzWVRJUjl3RFhrQS0tZlZSX1EwYTJQOFBFQktFbUpMbnA0dVdobzc0elBRNkxJUEY5ZFNoUWQweUFZcVB2SWxERjltZWNGWmlyUUVlenVLWEdwRDRjVjJGUElwUVltWklta1ZwSm1HRVRXa1VPb2hxamVuVWE5ZjZhU2daTWdZNUJmblZnS0JTZHBSOTlWLU91MWR5RzTSAasBQVVfeXFMTy1MY2tYd0lwWTh5ZGlac1lUSVI5d0RYa0EtLWZWUl9RMGEyUDhQRUJLRW1KTG5wNHVXaG83NHpQUTZMSVBGOWRTaFFkMHlBWXFQdklsREY5bWVjRlppclFFZXp1S1hHcEQ0Y1YyRlBJcFFZbVpJbWtWcEptR0VUV2tVT29ocWplblVhOWY2YVNnWk1nWTVCZm5WZ0tCU2RwUjk5Vi1PdTFkeUc0?oc=5",
+      "source": "Entrackr",
+      "issue": "/en/daily/2026-10-06",
+      "region": "Asia-Pacific",
+      "category": "Nutrition & supplements",
+      "id": "supermush-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-06",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLUxja1h3SXBZOHlkaVpzWVRJUjl3RFhrQS0tZlZSX1EwYTJQOFBFQktFbUpMbnA0dVdobzc0elBRNkxJUEY5ZFNoUWQweUFZcVB2SWxERjltZWNGWmlyUUVlenVLWEdwRDRjVjJGUElwUVltWklta1ZwSm1HRVRXa1VPb2hxamVuVWE5ZjZhU2daTWdZNUJmblZnS0JTZHBSOTlWLU91MWR5RzTSAasBQVVfeXFMTy1MY2tYd0lwWTh5ZGlac1lUSVI5d0RYa0EtLWZWUl9RMGEyUDhQRUJLRW1KTG5wNHVXaG83NHpQUTZMSVBGOWRTaFFkMHlBWXFQdklsREY5bWVjRlppclFFZXp1S1hHcEQ0Y1YyRlBJcFFZbVpJbWtWcEptR0VUV2tVT29ocWplblVhOWY2YVNnWk1nWTVCZm5WZ0tCU2RwUjk5Vi1PdTFkeUc0?oc=5",
+          "issue": "/en/daily/2026-10-06"
+        },
+        {
+          "date": "2026-10-07",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNX2ZDZlNwclM5ay1sS01zbWM5TUkwc09BRWJKaUFnUFRsQ1RQTEEzaEVsZE1hTHdPNzQ0bTRla0Zxd2UxSzlXN1hUS2I4alBka2FYbUEwS1NiMHRBQU13WGJCRnZiZUpSOEY2ZlJmYkF1VXpGWFJndjZpcm9vOG5zcnVnQ2JXR01rbmc2RzhrNUNfZi15TkNpZURVcGY3dw?oc=5",
+          "issue": "/en/daily/2026-10-07"
+        },
+        {
+          "date": "2026-10-08",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQWWw5WGdLZjNGcU96dkxoUE5PeHAyemthY2RISl9UMUZia29rZHVWWHh6aUpqTDdaNGJZdGs0TURlQVkwdmVjdm9xclJMRC1vS0tzWU1DbS1fLVFvMU5Cb2ptNWVuOVFRLVdXWUw3UXo4Z2hpZGxERFZTdHFrUUhPdU8tNlVUcFY3YTM1czh5dUhicWhKVkNiR0g4eHdld21HaER5dkMtX1E4N01ucVdETGtQS0stbGlMeVY0b2I2b1pwcVVldzBJUF9rTkPSAcwBQVVfeXFMUFlsOVhnS2YzRnFPenZMaFBOT3hwMnprYWNkSEpfVDFGYmtva2R1Vlh4emlKakw3WjRiWXRrNE1EZUFZMHZlY3ZvcXJSTEQtb0tLc1lNQ20tXy1RbzFOQm9qbTVlbjlRUS1XV1lMN1F6OGdoaWRsRERWU3Rxa1FIT3VPLTZVVHBWN2EzNXM4eXVIYnFoSlZDYkdIOHh3ZXdtR2hEeXZDLV9RODdNbnFXRExrUEtLLWxpTHlWNG9iNm9acHFVZXcwSVBfa05D?oc=5",
+          "issue": "/en/daily/2026-10-08"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-06",
+      "entity": "OSU Center for Health Sciences",
+      "kind": "raise",
+      "amount": "$800,000",
+      "amountUsd": 800000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Raised for a new wellness center and scholarships",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT3h2TDJfMXk2X2NOQ1ZqTTBfSDJPWkZlbGpFSDZhUUNVRzFFRlgzTzF3NURDaDllcXZHUklqemhBQlU4dkJzN1VQSlBhRXQtT0t1SmxoSGlkbDR3Vnktamx6VEdzdzRGYjc5eWlnbjA1Z3pDZ3FHek1MdUk5N3E2N19hWFF5SEs3eHJnVTctNGk4bjBEWnlrdXhtVGxFZkFERjVSMkdZZGxjMHZmcWZ5RjB6alA?oc=5",
+      "source": "fox23.com",
+      "issue": "/en/daily/2026-10-06",
+      "region": "Other",
+      "category": "Other",
+      "id": "osu-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-06",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT3h2TDJfMXk2X2NOQ1ZqTTBfSDJPWkZlbGpFSDZhUUNVRzFFRlgzTzF3NURDaDllcXZHUklqemhBQlU4dkJzN1VQSlBhRXQtT0t1SmxoSGlkbDR3Vnktamx6VEdzdzRGYjc5eWlnbjA1Z3pDZ3FHek1MdUk5N3E2N19hWFF5SEs3eHJnVTctNGk4bjBEWnlrdXhtVGxFZkFERjVSMkdZZGxjMHZmcWZ5RjB6alA?oc=5",
+          "issue": "/en/daily/2026-10-06"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-06",
+      "entity": "Vuori",
+      "kind": "valuation",
+      "amount": "$5.5B",
+      "amountUsd": 5500000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Post-valuation expansion into new territory reported by Fast Company",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcDUyYUowNU1rcXAxMmo4SUNfb2xuN1VVTUhJS0FNYVNZb0k3MGtkaGxCaE9UQ01zRmZnZ1h5SEJWMGNwQ2hUYlJDMllXcVVjZnFaZHBsRmFDTTRicTQ3RDMxV0FlMlFKdDY1b2dYTE4xUVplNFljQnhUcUphUnhCa0xhMmZ2TUdCMHR2Yndpbnh3OTlySU9aNWliaURxdXZyMWxaRTIyVkw4NkhiSEZuVW00cy12XzEzbXhfYkkzMDFRalNHQ0JWOUpQemtSeVMtd0VZ?oc=5",
+      "source": "Fast Company",
+      "issue": "/en/daily/2026-10-06",
+      "region": "Other",
+      "category": "Other",
+      "id": "vuori-valuation-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-06",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNcDUyYUowNU1rcXAxMmo4SUNfb2xuN1VVTUhJS0FNYVNZb0k3MGtkaGxCaE9UQ01zRmZnZ1h5SEJWMGNwQ2hUYlJDMllXcVVjZnFaZHBsRmFDTTRicTQ3RDMxV0FlMlFKdDY1b2dYTE4xUVplNFljQnhUcUphUnhCa0xhMmZ2TUdCMHR2Yndpbnh3OTlySU9aNWliaURxdXZyMWxaRTIyVkw4NkhiSEZuVW00cy12XzEzbXhfYkkzMDFRalNHQ0JWOUpQemtSeVMtd0VZ?oc=5",
+          "issue": "/en/daily/2026-10-06"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-05",
+      "entity": "Mozaik Investments",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Acquired several fitness centres in Romania, advised by Filip & Company",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY3VUWnlhMVVheUxYNVZiMVc3Sm1OaW1oVWctaXNNeVQ2a3VxUDl6c2lVdDZXUVJobE5CY2J3MTFkeTh3cDItR0tvUERCMFFUM0F3V040TDQ0Z2x4TEx0NDBJUHVwaDBLOE43NWh0RmY4VEQ2cGh4eUtGdjdKckwwLXZBcWE2b29QcjJuTjFVTGNkWVNaVlJNMHJNWmZxWWEwV2RjWno4cjdFRzNUeV91SWdxMm52MW9sVHVzRlpOcUh5cFBEWGc?oc=5",
+      "source": "The Diplomat Bucharest",
+      "issue": "/en/daily/2026-10-05",
+      "region": "Other",
+      "category": "Other",
+      "id": "mozaik-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-05",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY3VUWnlhMVVheUxYNVZiMVc3Sm1OaW1oVWctaXNNeVQ2a3VxUDl6c2lVdDZXUVJobE5CY2J3MTFkeTh3cDItR0tvUERCMFFUM0F3V040TDQ0Z2x4TEx0NDBJUHVwaDBLOE43NWh0RmY4VEQ2cGh4eUtGdjdKckwwLXZBcWE2b29QcjJuTjFVTGNkWVNaVlJNMHJNWmZxWWEwV2RjWno4cjdFRzNUeV91SWdxMm52MW9sVHVzRlpOcUh5cFBEWGc?oc=5",
+          "issue": "/en/daily/2026-10-05"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-02",
+      "entity": "Garmin / Moxy",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Garmin acquires muscle oxygen sensor brand Moxy; price undisclosed",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-10-02",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "garmin-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-02",
+          "url": "",
+          "issue": "/en/daily/2026-10-02"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-02",
+      "entity": "Tresalis / Vyrao",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Wellness investor Tresalis makes its first beauty deal acquiring well-being fragrance brand Vyrao",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-10-02",
+      "region": "Other",
+      "category": "Other",
+      "id": "tresalis-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-02",
+          "url": "",
+          "issue": "/en/daily/2026-10-02"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-01",
+      "entity": "McDonald's",
+      "kind": "acquisition",
+      "amount": "$8.5B",
+      "amountUsd": 8500000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "reinventing its menu for the post-GLP-1, eat-less era",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRmlTRmxnVTRLRXRPWERJaVNjeDRTdlNzaEZIYVFLOVFGYS1pMkQ0dzFrM0xHYm5qaW1ucU5qbG1CanUtVnVtcUxhczVMX1F6dWNOekxmQl9UeFRYbnVxQm9CWUNQVkx0QzFGOXlud0RYb25QWlhud3VSMVJCY1AtZDM2N2xPa3lfaExfX3Facw?oc=5",
+      "source": "moneywise.com",
+      "issue": "/en/daily/2026-10-01",
+      "region": "Other",
+      "category": "Health & longevity",
+      "id": "mcdonald-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-01",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRmlTRmxnVTRLRXRPWERJaVNjeDRTdlNzaEZIYVFLOVFGYS1pMkQ0dzFrM0xHYm5qaW1ucU5qbG1CanUtVnVtcUxhczVMX1F6dWNOekxmQl9UeFRYbnVxQm9CWUNQVkx0QzFGOXlud0RYb25QWlhud3VSMVJCY1AtZDM2N2xPa3lfaExfX3Facw?oc=5",
+          "issue": "/en/daily/2026-10-01"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-30",
+      "entity": "unnamed gym operator",
+      "kind": "raise",
+      "amount": "£18.7m",
+      "amountUsd": 23749000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "funding round backing a seven-site expansion",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM2dtVmh1U1pwaHJGTUExUE1XaUZ0M0Q4VnZaMjRwTHAtalA5cGRVZTgxMzhXZjlRWmFUcmp0T20zeWlIT3cxcU10bm5nZHVNNVc2ckV1OTM4Z1ItZnR4aUhGRG5COE10WkZtR29yYTdma1V4U2wyZmN4RzZLVFlwQ3p1ZXFkSUFTUzNoQk8xNmdNZzhKR1dJbTBIN1drcVg5cGdIWk5IeXEtM2xKX3NHT0tiQ1pvTm5zWmY2eHBxRQ?oc=5",
+      "source": "TheBusinessDesk.com",
+      "issue": "/en/daily/2026-09-30",
+      "region": "Other",
+      "category": "Gyms & studios",
+      "id": "gym-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-30",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQM2dtVmh1U1pwaHJGTUExUE1XaUZ0M0Q4VnZaMjRwTHAtalA5cGRVZTgxMzhXZjlRWmFUcmp0T20zeWlIT3cxcU10bm5nZHVNNVc2ckV1OTM4Z1ItZnR4aUhGRG5COE10WkZtR29yYTdma1V4U2wyZmN4RzZLVFlwQ3p1ZXFkSUFTUzNoQk8xNmdNZzhKR1dJbTBIN1drcVg5cGdIWk5IeXEtM2xKX3NHT0tiQ1pvTm5zWmY2eHBxRQ?oc=5",
+          "issue": "/en/daily/2026-09-30"
+        }
+      ],
+      "status": "hidden",
+      "reason": "company not named"
+    },
+    {
+      "date": "2026-09-29",
+      "entity": "IPercept",
+      "kind": "raise",
+      "amount": "$16.5M",
+      "amountUsd": 16500000,
+      "currency": "USD",
+      "approx": false,
+      "note": "fitness machine tracking infrastructure for operators",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQi1XLWxFOC16bGlNQ0pmMjBLdXFKQmdEeEphOHp0RFRTcFJNYzVaeDRFekhHQXA4cnZyZ1BwMFpxR2JObmpseGZzTDJsSEVGTGNlY1NMVFluVm5XNEI0UUhSM05xZUQ2RWVfamVVcUlnaEg3X19lQjBuU3ltQmlFSWtYU3RWOFU?oc=5",
+      "source": "Tech.eu",
+      "issue": "/en/daily/2026-09-29",
+      "region": "Other",
+      "category": "Other",
+      "id": "ipercept-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-29",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQi1XLWxFOC16bGlNQ0pmMjBLdXFKQmdEeEphOHp0RFRTcFJNYzVaeDRFekhHQXA4cnZyZ1BwMFpxR2JObmpseGZzTDJsSEVGTGNlY1NMVFluVm5XNEI0UUhSM05xZUQ2RWVfamVVcUlnaEg3X19lQjBuU3ltQmlFSWtYU3RWOFU?oc=5",
+          "issue": "/en/daily/2026-09-29"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-29",
+      "entity": "Mona",
+      "kind": "raise",
+      "amount": "$3.5M",
+      "amountUsd": 3500000,
+      "currency": "USD",
+      "approx": false,
+      "note": "AI platform expanding financial coaching and capital access for small business owners",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOSWhZc3VOeUtfd2hZSkhXQUZrNDdod3daQm5TRkdvVEZfOHlna0pnYXZGdXBDNHpRQ190ZUtlTDRZN0pJWVIyRU5vZnB5R1RsTHlOWDFMWlc4b1cwNkxlQjBqd1hGMjdKT1JlNXhmb0Jvd3FGTTcwN0c2MmNfa0JPaVZvMkVBcDZGeEdIMkJ2TFRtNGhCSTFtejJyaF9VRmVTMm1hbUtIbkhyWmxkV3hyajVRalVQcVBaS1JSSW81aW1DSXY3OVRNcUxoSGgzVktmeTVlV1hNSlRBRVUxYzgzUURPaGNYbTJNSUNiTHY5UEE?oc=5",
+      "source": "businesswire.com",
+      "issue": "/en/daily/2026-09-29",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "mona-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-29",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOSWhZc3VOeUtfd2hZSkhXQUZrNDdod3daQm5TRkdvVEZfOHlna0pnYXZGdXBDNHpRQ190ZUtlTDRZN0pJWVIyRU5vZnB5R1RsTHlOWDFMWlc4b1cwNkxlQjBqd1hGMjdKT1JlNXhmb0Jvd3FGTTcwN0c2MmNfa0JPaVZvMkVBcDZGeEdIMkJ2TFRtNGhCSTFtejJyaF9VRmVTMm1hbUtIbkhyWmxkV3hyajVRalVQcVBaS1JSSW81aW1DSXY3OVRNcUxoSGgzVktmeTVlV1hNSlRBRVUxYzgzUURPaGNYbTJNSUNiTHY5UEE?oc=5",
+          "issue": "/en/daily/2026-09-29"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-28",
+      "entity": "Amaani",
+      "kind": "raise",
+      "amount": "$5M",
+      "amountUsd": 5000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "BECO Capital-led raise to grow a beauty-meets-wellness brand",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTGpwMmQ0WFhDYXIwdy1EYUI1WnFJbXlMdjVIanpzeVk2X3lxNVZFZVFCZDRxMHJ0bks3Q1RWT0w5ak83Mi1XTllwTXdkZzRjQWNBV3JFRmlOVXNWODQ5c25saklMeUF5YWRvWWswOHN3c21sWHhmbmQtUUJaYUZiY0R5bmFYcDNNX0N1OHRRN2lTVWJNY0JRMENDaEdOQ25qYlhqdU9RNkzSAagBQVVfeXFMTkxqcDJkNFhYQ2FyMHctRGFCNVpxSW15THY1SGp6c3lZNl95cTVWRWVRQmQ0cTBydG5LN0NUVk9MOWpPNzItV05ZcE13ZGc0Y0FjQVdyRUZpTlVzVjg0OXNubGpJTHlBeWFkb1lrMDhzd3NtbFh4Zm5kLVFCWmFGYmNEeW5hWHAzTV9DdTh0UTdpU1ViTWNCUTBDQ2hHTkNuamJYanVPUTZM?oc=5",
+      "source": "Entrackr",
+      "issue": "/en/daily/2026-09-28",
+      "region": "Other",
+      "category": "Other",
+      "id": "amaani-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-28",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTGpwMmQ0WFhDYXIwdy1EYUI1WnFJbXlMdjVIanpzeVk2X3lxNVZFZVFCZDRxMHJ0bks3Q1RWT0w5ak83Mi1XTllwTXdkZzRjQWNBV3JFRmlOVXNWODQ5c25saklMeUF5YWRvWWswOHN3c21sWHhmbmQtUUJaYUZiY0R5bmFYcDNNX0N1OHRRN2lTVWJNY0JRMENDaEdOQ25qYlhqdU9RNkzSAagBQVVfeXFMTkxqcDJkNFhYQ2FyMHctRGFCNVpxSW15THY1SGp6c3lZNl95cTVWRWVRQmQ0cTBydG5LN0NUVk9MOWpPNzItV05ZcE13ZGc0Y0FjQVdyRUZpTlVzVjg0OXNubGpJTHlBeWFkb1lrMDhzd3NtbFh4Zm5kLVFCWmFGYmNEeW5hWHAzTV9DdTh0UTdpU1ViTWNCUTBDQ2hHTkNuamJYanVPUTZM?oc=5",
+          "issue": "/en/daily/2026-09-28"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-24",
+      "entity": "Elixinol Wellness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Acquired Vitable to expand wellness product portfolio",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-09-24",
+      "region": "Other",
+      "category": "Other",
+      "id": "elixinol-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-24",
+          "url": "",
+          "issue": "/en/daily/2026-09-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-24",
+      "entity": "TUSOL Wellness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Smoothie brand acquired via Website Closers brokerage",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZGtzZHByNDVoVE9lNE5KSnV1MXpjcXJfVkp6SGhBR0tqN3ZaNTFMMlFTd3BpOG1lS3VOd3lKbTNGeVZ0WVhFdW9PcFZlSEJ6ZVpjakpRem9fX0xKOTlMeUdyUzJFa3gydXJ5Q1ZLQ21VY1ZwaFhOVUl1Mk05aDB1S3ZpdFdrbWpwVGdISTdDcjZld1BLNjdEVy15cHFXdk5iZlFyRQ?oc=5",
+      "source": "app.dealroom.co",
+      "issue": "/en/daily/2026-09-24",
+      "region": "Other",
+      "category": "Other",
+      "id": "tusol-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-24",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZGtzZHByNDVoVE9lNE5KSnV1MXpjcXJfVkp6SGhBR0tqN3ZaNTFMMlFTd3BpOG1lS3VOd3lKbTNGeVZ0WVhFdW9PcFZlSEJ6ZVpjakpRem9fX0xKOTlMeUdyUzJFa3gydXJ5Q1ZLQ21VY1ZwaFhOVUl1Mk05aDB1S3ZpdFdrbWpwVGdISTdDcjZld1BLNjdEVy15cHFXdk5iZlFyRQ?oc=5",
+          "issue": "/en/daily/2026-09-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-23",
+      "entity": "Bird&Be",
+      "kind": "raise",
+      "amount": "$13M",
+      "amountUsd": 13000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "expanding male fertility and reproductive health into mainstream wellness",
+      "url": "https://athletechnews.com/birdbe-raises-13m-to-shift-conversation-around-male-fertility/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-09-23",
+      "region": "Other",
+      "category": "Health & longevity",
+      "id": "bird-be-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-23",
+          "url": "https://athletechnews.com/birdbe-raises-13m-to-shift-conversation-around-male-fertility/",
+          "issue": "/en/daily/2026-09-23"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-23",
+      "entity": "Magic AI fitness mirror",
+      "kind": "raise",
+      "amount": "£8m",
+      "amountUsd": 10160000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "UK startup funding US market entry for AI-powered connected fitness hardware",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObkt6U2xxa3M5QzE3NDVKLVRYU3FYSTk2UmRhYmlXS0dBOEZ5bjVjVmNnN2NEejNvSE96QXczN2dmTjlmeVNzYzFCRE9OelRCdkM2UzIzVEVVcTh6VDJzdVY5VUprb3hsQVgtbXZkOW4xV0hTWEd3dzJBSkVOd2dud2xveFIwczVzREZOQUpBbmh5TGFHZzdBalVyQ2djUzBheEJIdEptMUhTWDBx?oc=5",
+      "source": "The Times",
+      "issue": "/en/daily/2026-09-23",
+      "region": "UK",
+      "category": "Wearables & devices",
+      "id": "magic-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-23",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxObkt6U2xxa3M5QzE3NDVKLVRYU3FYSTk2UmRhYmlXS0dBOEZ5bjVjVmNnN2NEejNvSE96QXczN2dmTjlmeVNzYzFCRE9OelRCdkM2UzIzVEVVcTh6VDJzdVY5VUprb3hsQVgtbXZkOW4xV0hTWEd3dzJBSkVOd2dud2xveFIwczVzREZOQUpBbmh5TGFHZzdBalVyQ2djUzBheEJIdEptMUhTWDBx?oc=5",
+          "issue": "/en/daily/2026-09-23"
+        },
+        {
+          "date": "2026-09-24",
+          "url": "",
+          "issue": "/en/daily/2026-09-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-21",
+      "entity": "Disha",
+      "kind": "raise",
+      "amount": "$5.96M",
+      "amountUsd": 5960000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Series A led by General Catalyst for AI health coaching platform",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16RHFjM01KTGxtQkFwS2lPdUNhc2Ywc3JLR3J1bUxrT3hBRHZuMUxZLWVrQ3ZyTU5PbVdxWGt0Y21uZFJfcDhSNHNDTEZHcERHWjRvc2l5TURiN1FaYk9HdFk5SdIBY0FVX3lxTE16RHFjM01KTGxtQkFwS2lPdUNhc2Ywc3JLR3J1bUxrT3hBRHZuMUxZLWVrQ3ZyTU5PbVdxWGt0Y21uZFJfcDhSNHNDTEZHcERHWjRvc2l5TURiN1FaYk9HdFk5SQ?oc=5",
+      "source": "Ventureburn",
+      "issue": "/en/daily/2026-09-21",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "disha-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-21",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16RHFjM01KTGxtQkFwS2lPdUNhc2Ywc3JLR3J1bUxrT3hBRHZuMUxZLWVrQ3ZyTU5PbVdxWGt0Y21uZFJfcDhSNHNDTEZHcERHWjRvc2l5TURiN1FaYk9HdFk5SdIBY0FVX3lxTE16RHFjM01KTGxtQkFwS2lPdUNhc2Ywc3JLR3J1bUxrT3hBRHZuMUxZLWVrQ3ZyTU5PbVdxWGt0Y21uZFJfcDhSNHNDTEZHcERHWjRvc2l5TURiN1FaYk9HdFk5SQ?oc=5",
+          "issue": "/en/daily/2026-09-21"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-21",
+      "entity": "Rajasthan Royals",
+      "kind": "acquisition",
+      "amount": "$1.65B",
+      "amountUsd": 1650000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "CCI greenlit mega-deal covering the franchise and two overseas franchises",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEdybU5reUhXNDQ4QUhxN19ZenhscHJiT3lFc2FQUzVZTWdveTRzNjJaNU9FY3g3dzlBY0Nxd0s1dWozOG9xaUR5cC1vNHQwQW1TVzEwcDRPTTdWZk9FWE1hZTFsRjQzd3gxUHhuN3U2dWxha3BOM25vOFFFTEpvV0FRbURMVnZvZ1RWVkZ0S1J0ZE1ydHM1QmdMZ09sTkx2dzBNSkhuRVhYejUwc1VYWjctcG9oN1NNOEFmOVBOdzRJLUlXS0E?oc=5",
+      "source": "bwmarketingworld.com",
+      "issue": "/en/daily/2026-09-21",
+      "region": "Other",
+      "category": "Gyms & studios",
+      "id": "rajasthan-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-21",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOEdybU5reUhXNDQ4QUhxN19ZenhscHJiT3lFc2FQUzVZTWdveTRzNjJaNU9FY3g3dzlBY0Nxd0s1dWozOG9xaUR5cC1vNHQwQW1TVzEwcDRPTTdWZk9FWE1hZTFsRjQzd3gxUHhuN3U2dWxha3BOM25vOFFFTEpvV0FRbURMVnZvZ1RWVkZ0S1J0ZE1ydHM1QmdMZ09sTkx2dzBNSkhuRVhYejUwc1VYWjctcG9oN1NNOEFmOVBOdzRJLUlXS0E?oc=5",
+          "issue": "/en/daily/2026-09-21"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-09-18",
+      "entity": "HealthKart",
+      "kind": "ipo",
+      "amount": "$300–400M",
+      "amountUsd": 350000000,
+      "currency": "USD",
+      "approx": true,
+      "note": "Indian supplement giant weighing a major public listing as nutrition market grows",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNX2o4NnBtbzlhYWVrOWFQaFB2Nm9uZlNXSFJHbFlwQXowUWcwbjNfaGhneDlRZ3JaV0FuZ1Q2UWZxSDZmOTJ4M1VSLXdTQWRmdXE1VVRQTEdfZDlYY0Nqd2FaajMtMlZKLWZTY2R6S2VGdmczNzAxSXcxYUdrQ0FkMTFJTzhGNHkteDZGOFhmTW91bkVzYXRaZ2JvYnJSUzladkV5bVdaTGFodEpHQVhIdUNxNzV0UTNKNkZhSXFPTVVXUzVvekx1a1ZRMjYwQW1fdGIwNHkzNm51V2hOQ21ZZEJ6RWhvSGFkYW9oVWVXRnhEMlo2S0EtUlhUZGRqOFZyVFY00gGIAkFVX3lxTE5MbkRFMnI3emgtd1FBbTVZZm5UMmhaX18tUXU4bDlTZ1gtS1hUVzhFQUJ3MlZaVmFZakw2NFQwbWp4bldFcjNnc1lsTmhXQkRTT2lpRHRiTU00aWs2MUVqaTEwN3J6ZHdwS0hwSzBYRDdrRHNTOFdsMmtrXy1uZDBDdVJlYXNtUm5nLW1vSnhiVGlMY0hHQkJCM0ZOWU1ja1FlYjVHOWNIN09XRmY3NVNUeWlRMGJaSjMzZXplaEhKYVNwS052QU1LQkFxbTR2VGx6cDBpY1FyZTN6Q2podFdWMlQ4SjJXSUZzQ0NiR0xSY2Y2U2lKZG5fUk5ERHh4Z2tHMEpBRmhKMQ?oc=5",
+      "source": "Livemint",
+      "issue": "/en/daily/2026-09-18",
+      "region": "Asia-Pacific",
+      "category": "Nutrition & supplements",
+      "id": "healthkart-ipo-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-18",
+          "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNX2o4NnBtbzlhYWVrOWFQaFB2Nm9uZlNXSFJHbFlwQXowUWcwbjNfaGhneDlRZ3JaV0FuZ1Q2UWZxSDZmOTJ4M1VSLXdTQWRmdXE1VVRQTEdfZDlYY0Nqd2FaajMtMlZKLWZTY2R6S2VGdmczNzAxSXcxYUdrQ0FkMTFJTzhGNHkteDZGOFhmTW91bkVzYXRaZ2JvYnJSUzladkV5bVdaTGFodEpHQVhIdUNxNzV0UTNKNkZhSXFPTVVXUzVvekx1a1ZRMjYwQW1fdGIwNHkzNm51V2hOQ21ZZEJ6RWhvSGFkYW9oVWVXRnhEMlo2S0EtUlhUZGRqOFZyVFY00gGIAkFVX3lxTE5MbkRFMnI3emgtd1FBbTVZZm5UMmhaX18tUXU4bDlTZ1gtS1hUVzhFQUJ3MlZaVmFZakw2NFQwbWp4bldFcjNnc1lsTmhXQkRTT2lpRHRiTU00aWs2MUVqaTEwN3J6ZHdwS0hwSzBYRDdrRHNTOFdsMmtrXy1uZDBDdVJlYXNtUm5nLW1vSnhiVGlMY0hHQkJCM0ZOWU1ja1FlYjVHOWNIN09XRmY3NVNUeWlRMGJaSjMzZXplaEhKYVNwS052QU1LQkFxbTR2VGx6cDBpY1FyZTN6Q2podFdWMlQ4SjJXSUZzQ0NiR0xSY2Y2U2lKZG5fUk5ERHh4Z2tHMEpBRmhKMQ?oc=5",
+          "issue": "/en/daily/2026-09-18"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-17",
+      "entity": "longevity membership business (undisclosed)",
+      "kind": "raise",
+      "amount": "$5M",
+      "amountUsd": 5000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "seed round backs membership-based longevity operator",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY1RWMkwxbC1RSjcwWmcyODd4cW1aNXVyWmM3STI0aklfdTVnNzVJQW5WRFlPajJZNVJQbjZVa0lLdjVzOVlodWVnbTdPekNVa2pxQmF5VktBYmJmQlJoMEJtUXlQQmFaTl8xWWhJdy1GUEpJN1NFUUFETEtXa2dMWVdqZjgyUlozVFVqOS1yU3dHUjBBMlJfclhrZG91dWRURlQ2UlA5dmIwM2Z2bWRxN0FQZW9SQUFRaGh6a3NLMA?oc=5",
+      "source": "LaingBuisson News",
+      "issue": "/en/daily/2026-09-17",
+      "region": "Other",
+      "category": "Health & longevity",
+      "id": "longevity-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-17",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOY1RWMkwxbC1RSjcwWmcyODd4cW1aNXVyWmM3STI0aklfdTVnNzVJQW5WRFlPajJZNVJQbjZVa0lLdjVzOVlodWVnbTdPekNVa2pxQmF5VktBYmJmQlJoMEJtUXlQQmFaTl8xWWhJdy1GUEpJN1NFUUFETEtXa2dMWVdqZjgyUlozVFVqOS1yU3dHUjBBMlJfclhrZG91dWRURlQ2UlA5dmIwM2Z2bWRxN0FQZW9SQUFRaGh6a3NLMA?oc=5",
+          "issue": "/en/daily/2026-09-17"
+        }
+      ],
+      "status": "hidden",
+      "reason": "company not named"
+    },
+    {
+      "date": "2026-09-16",
+      "entity": "Australian wearable sensor research (ARC funding)",
+      "kind": "raise",
+      "amount": "$1.3M",
+      "amountUsd": 1300000,
+      "currency": "USD",
+      "approx": false,
+      "note": "ARC grant to advance wearable sensor technology",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-09-16",
+      "region": "Asia-Pacific",
+      "category": "Wearables & devices",
+      "id": "australian-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-16",
+          "url": "",
+          "issue": "/en/daily/2026-09-16"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-15",
+      "entity": "Wizard Wellness",
+      "kind": "raise",
+      "amount": "$1M",
+      "amountUsd": 1000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "closed alongside a national retail rollout into 4,000+ stores completed in four weeks",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYUJsUUVoZVE4UHp5OW5YSHRvRjJUZTUzUksyeTB2VlZwQkF4NG85N0QwS1pPNDJkRnF2M19UMFkwMTFKcjdDcHlad1pMSDhMaGp0U0sydUxtU1NCUFZJaEZEVEtYaC1ydW52eFlRbUtTemw5RVJfVmFYZzhsUExoVmxaOFZIWDljSTNwMklDaldqZ1dSampkZXBUV0dnTTJUYk1EWERmWmtHTkJEcU1WZw?oc=5",
+      "source": "citybiz",
+      "issue": "/en/daily/2026-09-15",
+      "region": "Other",
+      "category": "Other",
+      "id": "wizard-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-15",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYUJsUUVoZVE4UHp5OW5YSHRvRjJUZTUzUksyeTB2VlZwQkF4NG85N0QwS1pPNDJkRnF2M19UMFkwMTFKcjdDcHlad1pMSDhMaGp0U0sydUxtU1NCUFZJaEZEVEtYaC1ydW52eFlRbUtTemw5RVJfVmFYZzhsUExoVmxaOFZIWDljSTNwMklDaldqZ1dSampkZXBUV0dnTTJUYk1EWERmWmtHTkJEcU1WZw?oc=5",
+          "issue": "/en/daily/2026-09-15"
+        },
+        {
+          "date": "2026-09-16",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUWV0MzRiTUQ0cHZGS0UybHk0N2xJSFRZUmdZSnBCNTZ3MTVON0wyeWNCamRBN0w0NmVSVkpiaXdVWjRuRjl4eVlhOWVyRWdScVliV1JyLWxfdWxKa2FrVFpJbExBV1Z5LVBubUtxZjhpSFlFVkZ0U2xGdUZRRlRaN3lVRExSMUpj?oc=5",
+          "issue": "/en/daily/2026-09-16"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-14",
+      "entity": "Aeon / Aware Health",
+      "kind": "acquisition",
+      "amount": "€12M",
+      "amountUsd": 12960000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "Aeon acquires Aware Health, pushing total Seed funding past €12M in healthtech consolidation",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWXhDeGRiWFRjWFpfQ1JfY0dZb2xpYkZyMGxfTXpXT2RaTFdqeEVNbG9ReVRqX1EyOGkyWHFBZ1RhNWN5aVdKeUdydElqNVc1LVRRanNHSnhMY09CVk1xMHRFT3BoS1VzbE1MVVFzT1g3M3J2NElqSHdVcEhDQV9kYzQ1bGl3TDN1VFBRMkd1RTNiUDVQdmJ2ZnBhcGFnVHpoSnZMX21zRTRjc2FZZlh3TTgyMDB3U1FqUDhwMGhhU3IzaVJuVmc?oc=5",
+      "source": "eu-startups.com",
+      "issue": "/en/daily/2026-09-14",
+      "region": "DACH",
+      "category": "Health & longevity",
+      "id": "aeon-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-14",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWXhDeGRiWFRjWFpfQ1JfY0dZb2xpYkZyMGxfTXpXT2RaTFdqeEVNbG9ReVRqX1EyOGkyWHFBZ1RhNWN5aVdKeUdydElqNVc1LVRRanNHSnhMY09CVk1xMHRFT3BoS1VzbE1MVVFzT1g3M3J2NElqSHdVcEhDQV9kYzQ1bGl3TDN1VFBRMkd1RTNiUDVQdmJ2ZnBhcGFnVHpoSnZMX21zRTRjc2FZZlh3TTgyMDB3U1FqUDhwMGhhU3IzaVJuVmc?oc=5",
+          "issue": "/en/daily/2026-09-14"
+        },
+        {
+          "date": "2026-09-15",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNaWxNRzk2RXZ1M2p2SHlYcWJIeEk4WVlfb0JKaTVvNmVFd08tbjlPWFB1VklMZVQzNHlCcHdUdC01aGpfRXBqUkJxVlpIUHRZZmhDaWF3WnNFNFpUZnVtSy1FS2lBSnkwWDk3cGphZEk2TURjRmFJRXN1NnVxNVBHbUoySEpXME5JMG42YlNpWmRBdEZsdFRDY2tZVGt0WDcxX1RkTFNNV1NWaEVRTGZ3?oc=5",
+          "issue": "/en/daily/2026-09-15"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-14",
+      "entity": "Mahomes partnership",
+      "kind": "valuation",
+      "amount": "$30M",
+      "amountUsd": 30000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Patrick and Brittany Mahomes sign $30M deal with a $10B fitness brand",
+      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNVjhWVEYtM203R2dpOENNempxNG0xbE9WX2REVGxQbmJGSGQ2OVg5UmVoWUFmLUc3V1ZSZkViVlFmYXRaQTdtZE1Ya1NNMWRmZ0Y5bWwyRldXYzhGZE1saHVWSE14azVZVFljM1BkLXRuVExkRWd1OF9hczNSd1IweDcwYjRiYkhsQ2tGdnFmamRpR2QzRHljS2ZFQnJrV2laWDZzMDg2WnVxTzR6XzQ4UkcyU1E4bHZEV2lHLTFwTEh3bVNqMHlBdUl6MzdsT001cko2eXJzMHFHSmt3Tk5vZ0tUUlNMSUh0bkhPeUdtQ0tkcTRxRTZHOWtIYjEtLWN4dGU4WnQtYXdZdnFWUlpPeUNIZW03MkdlaEMxUG1DWWd1cXPSAagCQVVfeXFMUFd2UlJDc1B6aUhLaGR4Zy1WWmt1ZWhJaGVTOFBYbnNYUEVGdmNPZGxmOWpVMFdVZWFaclRKRVl4eUFDNzhhX3h0RlFaZE12aFB1RWtwWV95MzVFVVBvUTlhcktaNVd3X2hiVzByTm1ZcktNQ0xyNnJmOU1nbjZYckFfa25KX3hsLUtMOUFhazV0Y1hKSnh4TDJDdzBiaHpiQjlDdTFFMXV4NUJxeHRMcmkya1lTc0FXVnVpYzRvaWYyeHdrNzZPT3o0aVA5U05DdWc2cnZtZkIwZW9xVUZNRkdMMmJFTWJQRWM4Ukc1YXgxMVBzX3FKbFlyWWo1N2FwRG5QM0VaZ012aXMxck9iSWE2eDBXWTFIZ3ZiWUxXNGhSRXZkS3dJazM?oc=5",
+      "source": "The Times of India",
+      "issue": "/en/daily/2026-09-14",
+      "region": "Other",
+      "category": "Other",
+      "id": "mahomes-valuation-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-14",
+          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNVjhWVEYtM203R2dpOENNempxNG0xbE9WX2REVGxQbmJGSGQ2OVg5UmVoWUFmLUc3V1ZSZkViVlFmYXRaQTdtZE1Ya1NNMWRmZ0Y5bWwyRldXYzhGZE1saHVWSE14azVZVFljM1BkLXRuVExkRWd1OF9hczNSd1IweDcwYjRiYkhsQ2tGdnFmamRpR2QzRHljS2ZFQnJrV2laWDZzMDg2WnVxTzR6XzQ4UkcyU1E4bHZEV2lHLTFwTEh3bVNqMHlBdUl6MzdsT001cko2eXJzMHFHSmt3Tk5vZ0tUUlNMSUh0bkhPeUdtQ0tkcTRxRTZHOWtIYjEtLWN4dGU4WnQtYXdZdnFWUlpPeUNIZW03MkdlaEMxUG1DWWd1cXPSAagCQVVfeXFMUFd2UlJDc1B6aUhLaGR4Zy1WWmt1ZWhJaGVTOFBYbnNYUEVGdmNPZGxmOWpVMFdVZWFaclRKRVl4eUFDNzhhX3h0RlFaZE12aFB1RWtwWV95MzVFVVBvUTlhcktaNVd3X2hiVzByTm1ZcktNQ0xyNnJmOU1nbjZYckFfa25KX3hsLUtMOUFhazV0Y1hKSnh4TDJDdzBiaHpiQjlDdTFFMXV4NUJxeHRMcmkya1lTc0FXVnVpYzRvaWYyeHdrNzZPT3o0aVA5U05DdWc2cnZtZkIwZW9xVUZNRkdMMmJFTWJQRWM4Ukc1YXgxMVBzX3FKbFlyWWo1N2FwRG5QM0VaZ012aXMxck9iSWE2eDBXWTFIZ3ZiWUxXNGhSRXZkS3dJazM?oc=5",
+          "issue": "/en/daily/2026-09-14"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-11",
+      "entity": "MIRROR FIT",
+      "kind": "raise",
+      "amount": "$1.6M",
+      "amountUsd": 1600000,
+      "currency": "USD",
+      "approx": false,
+      "note": "funding a push toward 1,000 women's beauty gym locations across Japan",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaWY4LWlBQUdsRmZQSXVaV3NnQnlqN3E3aHhfb1JlOUhPcmNLdkhlcHl4RFFVaTZaRFItaVdYdmFPYllPZkN5RXplYTFOQTQ3SGU3Zng2YUtmMWl3V1hYeGhWUjdodFF5UEdXejlrRkxGNGNjLU9NMmVnampRVnh2bElVTy1XaXZ0MVUydWtwb2tpbEw5ZGxXdEFaeVBBanVLRUFObzItR2NjeHRGVnE5YWdYYw?oc=5",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-09-11",
+      "region": "Asia-Pacific",
+      "category": "Gyms & studios",
+      "id": "mirror-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-11",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaWY4LWlBQUdsRmZQSXVaV3NnQnlqN3E3aHhfb1JlOUhPcmNLdkhlcHl4RFFVaTZaRFItaVdYdmFPYllPZkN5RXplYTFOQTQ3SGU3Zng2YUtmMWl3V1hYeGhWUjdodFF5UEdXejlrRkxGNGNjLU9NMmVnampRVnh2bElVTy1XaXZ0MVUydWtwb2tpbEw5ZGxXdEFaeVBBanVLRUFObzItR2NjeHRGVnE5YWdYYw?oc=5",
+          "issue": "/en/daily/2026-09-11"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-10",
+      "entity": "Guardians Cup / Albemarle County officer wellness",
+      "kind": "raise",
+      "amount": "$58,000",
+      "amountUsd": 58000,
+      "currency": "USD",
+      "approx": false,
+      "note": "raised via golf tournament for first responder mental health",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWUVNQVVOZ3JtOWJ2RXFLVEdkeHhqUFdvNFJCLWtVUkk0Z2VYYkg4a1R3VzZSLVQtX2xtNGUyYUhkaUlIbnFpSVM2U2FETUllREl4aUFyVzNiMWc1ajdaYW9xcGRJN1hESlZMZld1dk5rSHQtUlVwbFNHZEhkamlTUzBMUmxqOV92cWg5ZlB6YXFoUXRMUllnUnc0dnlMWkY0Zmxrd0t4Uy05eHIwYVHSAcIBQVVfeXFMT2xFWlJsUlJmc21tNGxSd0lOYU1jcDlET25xOWEwTEZFRHZVOVVSZHJzLTRJa0NmWkFPOWEtMDRqSUpsbEhoclg4Q1VWRGt6anpNNUw5dHR4M1lLb3lTelFiX3R1STlsdUtZTnJ2N3dMaTlxR3BhSlBzdlZ6UU1FM2kxUjZBVFN1LWJENldPdnJzRTBUSDhPN2F1cXc1VGF5c0V2dmxEWW95QVN2T1pOZUhGQVJfdzZPSkRJdmZzQjcwa1E?oc=5",
+      "source": "WVIR",
+      "issue": "/en/daily/2026-09-10",
+      "region": "Other",
+      "category": "Health & longevity",
+      "id": "guardians-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-10",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPWUVNQVVOZ3JtOWJ2RXFLVEdkeHhqUFdvNFJCLWtVUkk0Z2VYYkg4a1R3VzZSLVQtX2xtNGUyYUhkaUlIbnFpSVM2U2FETUllREl4aUFyVzNiMWc1ajdaYW9xcGRJN1hESlZMZld1dk5rSHQtUlVwbFNHZEhkamlTUzBMUmxqOV92cWg5ZlB6YXFoUXRMUllnUnc0dnlMWkY0Zmxrd0t4Uy05eHIwYVHSAcIBQVVfeXFMT2xFWlJsUlJmc21tNGxSd0lOYU1jcDlET25xOWEwTEZFRHZVOVVSZHJzLTRJa0NmWkFPOWEtMDRqSUpsbEhoclg4Q1VWRGt6anpNNUw5dHR4M1lLb3lTelFiX3R1STlsdUtZTnJ2N3dMaTlxR3BhSlBzdlZ6UU1FM2kxUjZBVFN1LWJENldPdnJzRTBUSDhPN2F1cXc1VGF5c0V2dmxEWW95QVN2T1pOZUhGQVJfdzZPSkRJdmZzQjcwa1E?oc=5",
+          "issue": "/en/daily/2026-09-10"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-10",
+      "entity": "Vegamour",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "acquired by Belle Brands, signaling buyer appetite in branded wellness verticals",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZXRSNGhyVDRLLWdlZFdWWGw0cjZkcWl6YWFGTmhGdUxzZVpXeDdzaUtxM0wzM18zeVFmcU9lX2pUMkZqVWlMVHFNaWFwa0MwVF9sT2RraTVELXFxZy1FQTJhVkxpMXBYWnVWZUpCdWh6ZlpST2t6YTV0VGtoaU43MTBkc2hkVTViY09YNE9EMkg?oc=5",
+      "source": "globalcosmeticsnews.com",
+      "issue": "/en/daily/2026-09-10",
+      "region": "Other",
+      "category": "Other",
+      "id": "vegamour-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-10",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZXRSNGhyVDRLLWdlZFdWWGw0cjZkcWl6YWFGTmhGdUxzZVpXeDdzaUtxM0wzM18zeVFmcU9lX2pUMkZqVWlMVHFNaWFwa0MwVF9sT2RraTVELXFxZy1FQTJhVkxpMXBYWnVWZUpCdWh6ZlpST2t6YTV0VGtoaU43MTBkc2hkVTViY09YNE9EMkg?oc=5",
+          "issue": "/en/daily/2026-09-10"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-08",
+      "entity": "Fredun Pharmaceuticals",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Pharma-to-FMCG player moves into pet wellness via Furlicks acquisition",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSnhPMEdvZHBBR2VLT2trMzU4eTY3ZWgwOV9ubTQ1QjQ3LVpwYU1SUEJTOExNV3NDeWRxTUI1UnFTOEpqVW5kZFh1VFVORGZXSHZtRC1TSzQwQlhLb1FJYmJONjN3RHRhaVJZSGN2N3lVQ3NLQnB0aHhfNXFFVlFRTW1aRE9vWTdRYmxETXU1X2Y2dVM0bTY5QkdWeFdXekczR1MzcjZSc04yalFpbXZsbjRBcHZuX1VVREJYWTBXdmM2LUVwVXhTS3VwQ1lzV2dEQmlUcFFhaGhJQdIB3wFBVV95cUxPUDNrOGRwY2RaRnF2aDZxbHdUbXNNYjBTVUhEYnIwYWMyZGc3cUV4M3dpYnI1c1NpTUxnVTNmdHQzZkt0LUVnS244YXBFdjhGNTh3eXNTN0g5UjZhUzBra1huVS13Nnp6TFhHZDU4ZHB1aTdwbmFLMS1FdW0wc25fN08tZ0szRkdpV1dXYVJQNTBKSDlHcFBqeFlUMDVEQVVKU2xyM05CekkxQk5Xeks2RG5rc3Z2bllJYUVCYndGeUFJLThURk5VbXRCcmppejJVcG96cl8zVzlMdGYtNml3?oc=5",
+      "source": "Business Standard",
+      "issue": "/en/daily/2026-09-08",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "fredun-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-08",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSnhPMEdvZHBBR2VLT2trMzU4eTY3ZWgwOV9ubTQ1QjQ3LVpwYU1SUEJTOExNV3NDeWRxTUI1UnFTOEpqVW5kZFh1VFVORGZXSHZtRC1TSzQwQlhLb1FJYmJONjN3RHRhaVJZSGN2N3lVQ3NLQnB0aHhfNXFFVlFRTW1aRE9vWTdRYmxETXU1X2Y2dVM0bTY5QkdWeFdXekczR1MzcjZSc04yalFpbXZsbjRBcHZuX1VVREJYWTBXdmM2LUVwVXhTS3VwQ1lzV2dEQmlUcFFhaGhJQdIB3wFBVV95cUxPUDNrOGRwY2RaRnF2aDZxbHdUbXNNYjBTVUhEYnIwYWMyZGc3cUV4M3dpYnI1c1NpTUxnVTNmdHQzZkt0LUVnS244YXBFdjhGNTh3eXNTN0g5UjZhUzBra1huVS13Nnp6TFhHZDU4ZHB1aTdwbmFLMS1FdW0wc25fN08tZ0szRkdpV1dXYVJQNTBKSDlHcFBqeFlUMDVEQVVKU2xyM05CekkxQk5Xeks2RG5rc3Z2bllJYUVCYndGeUFJLThURk5VbXRCcmppejJVcG96cl8zVzlMdGYtNml3?oc=5",
+          "issue": "/en/daily/2026-09-08"
+        },
+        {
+          "date": "2026-09-09",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQ1VjNGFsbTh2ek5pbTlQTDdCeno2bTV1TlhqYU5SX3Y5a3VjdmFaWWNqN1g5SnlsWXotN1lmQkxHQ0hWOHVZM1F2bnhSXzlSekk4QlVrYWJQMndCbWFmdHQtTFNXWEZOc2tIeEQ3b25mSzZ6N3g1dlNMZXV0b19tVVVwZ0JBUU95MUpOekRlT3E2YlpOczlhNkJ0ZVpnNDJCU25lWkYxVXZPaW5nM2Y3bGZWaDhWTU5wOWsxYmFCR0tZWEt2MVdrS0N3RQ?oc=5",
+          "issue": "/en/daily/2026-09-09"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-07",
+      "entity": "Nua",
+      "kind": "raise",
+      "amount": "$50M",
+      "amountUsd": 50000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "India-based women's health brand scaling product portfolio and distribution",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNX3RFbzRER2JfS3l0bWx5bUNuVkc2SUtoOXp2dEpqRU9mRmJhTkJLLVRSU1NxbHVUTllpQS1aWnhQNUwtRnR4QTJvWVEwMWRUSzltWC1PX3RoTjJTR2s1dWdnUWhMUnRRa0R3MXpGQVVrRF9oX29nd0NQdzh5Sy11RmMyQTJaR0N6UHd1TWFmaE5RSW9GLU5RM2FfRVEzSW9rTGo5TEtB0gGmAUFVX3lxTE1fdEVvNERHYl9LeXRtbHltQ25WRzZJS2g5enZ0SmpFT2ZGYmFOQkstVFJTU3FsdVROWWlBLVpaeFA1TC1GdHhBMm9ZUTAxZFRLOW1YLU9fdGhOMlNHazV1Z2dRaExSdFFrRHcxekZBVWtEX2hfb2d3Q1B3OHlLLXVGYzJBMlpHQ3pQd3VNYWZoTlFJb0YtTlEzYV9FUTNJb2tMajlMS0E?oc=5",
+      "source": "Entrackr",
+      "issue": "/en/daily/2026-09-07",
+      "region": "Asia-Pacific",
+      "category": "Other",
+      "id": "nua-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-07",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNX3RFbzRER2JfS3l0bWx5bUNuVkc2SUtoOXp2dEpqRU9mRmJhTkJLLVRSU1NxbHVUTllpQS1aWnhQNUwtRnR4QTJvWVEwMWRUSzltWC1PX3RoTjJTR2s1dWdnUWhMUnRRa0R3MXpGQVVrRF9oX29nd0NQdzh5Sy11RmMyQTJaR0N6UHd1TWFmaE5RSW9GLU5RM2FfRVEzSW9rTGo5TEtB0gGmAUFVX3lxTE1fdEVvNERHYl9LeXRtbHltQ25WRzZJS2g5enZ0SmpFT2ZGYmFOQkstVFJTU3FsdVROWWlBLVpaeFA1TC1GdHhBMm9ZUTAxZFRLOW1YLU9fdGhOMlNHazV1Z2dRaExSdFFrRHcxekZBVWtEX2hfb2d3Q1B3OHlLLXVGYzJBMlpHQ3pQd3VNYWZoTlFJb0YtTlEzYV9FUTNJb2tMajlMS0E?oc=5",
+          "issue": "/en/daily/2026-09-07"
+        },
+        {
+          "date": "2026-09-08",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMmpteHVlRVZ6OUo0YldzMERHWGlLT3V0Qm1FZUZLOEdsSHZ4eWcxazZPM25WN18wa256Z0dIcmhPdjI0SHRiNDlRanBtVnJ2REJvXzN5V2FjZXFPdXVydG1jRUg1MV9UdGdTcnFvY0FxYjAtd0xzT0JBeXIwWHJJYXN6Yzhob20xUFVxWjM3YnpZQVk?oc=5",
+          "issue": "/en/daily/2026-09-08"
+        },
+        {
+          "date": "2026-09-09",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdDZRUDc1cEhReWMwWFVxdklwUTIycklHTjNNV2JDaGk2dEN6WXFpOFo4Y3lhUk9LR09jYzdBTWVvOTlPT3JXVndEY3NaQzZYU2VySWlFZm1yYWc0aVdmeGFwNGp2QTVQUGhyWGI3VGo2THF2b2QtajQ5WFliS3BZUEVlb0o3Zlk4NEhuSl9YdVFOblh6QXltZmZSZTNBUQ?oc=5",
+          "issue": "/en/daily/2026-09-09"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-04",
+      "entity": "The Wellness Company",
+      "kind": "raise",
+      "amount": "$1.6M CAD",
+      "amountUsd": 1152000,
+      "currency": "CAD",
+      "approx": false,
+      "note": "seed round to build Tempo, an AI-powered health companion",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNDgydDk2X2FPWjdOWFUyNmNHVlRCampPVDhMZm1KMDdHdHdkRVFHakt0b2xiMTNaQzBrc3lwd3REZ3Q3NzNjV2pPUjByM3JIVFExaTlFUjdqYTNzWmxGOUFMX3R6RW5uNlMzYXMxQ3ZodW9fN0J3S3VfcmxDS0ZPR3F6NXR3Z3NYYTYwS0syenc0LXRJRGNMQWJZYmlJb3gyOUM2ODhkWk8zektHa3VN?oc=5",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-09-04",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "company-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-04",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNDgydDk2X2FPWjdOWFUyNmNHVlRCampPVDhMZm1KMDdHdHdkRVFHakt0b2xiMTNaQzBrc3lwd3REZ3Q3NzNjV2pPUjByM3JIVFExaTlFUjdqYTNzWmxGOUFMX3R6RW5uNlMzYXMxQ3ZodW9fN0J3S3VfcmxDS0ZPR3F6NXR3Z3NYYTYwS0syenc0LXRJRGNMQWJZYmlJb3gyOUM2ODhkWk8zektHa3VN?oc=5",
+          "issue": "/en/daily/2026-09-04"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-04",
+      "entity": "Cradlewise",
+      "kind": "raise",
+      "amount": "$12M",
+      "amountUsd": 12000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "AI-first consumer health startup expanding into smart wellness",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLThTYnJhQVZvYTh6dEItSXM3aFhfc2FvdUtBcWFMU0ZaVU9vamo4RDhDMWNJWmJLVVNNWTlYYlE5N0NBS2dCekJZVjVkUVJxWTd5a0p1cnN3Nm5BeHlHSTNaU2lYMUJJR2g1X2lRTWkwUHhRSWZxX0xidkZzRXZKSWZMM3BfSXh2UElMX3RwM3JNWXdUdVdnQzJmaVdXZDZMb0VaMzltM0dRaVZBY2tOX0dGRnpRRHBpWWp0MUx4dUVGaDJyamdJOTVHSzXSAcwBQVVfeXFMTi04U2JyYUFWb2E4enRCLUlzN2hYX3Nhb3VLQXFhTFNGWlVPb2pqOEQ4QzFjSVpiS1VTTVk5WGJROTdDQUtnQnpCWVY1ZFFScVk3eWtKdXJzdzZuQXh5R0kzWlNpWDFCSUdoNV9pUU1pMFB4UUlmcV9MYnZGc0V2SklmTDNwX0l4dlBJTF90cDNyTVl3VHVXZ0MyZmlXV2Q2TG9FWjM5bTNHUWlWQWNrTl9HRkZ6UURwaVlqdDFMeHVFRmgycmpnSTk1R0s1?oc=5",
+      "source": "Indian Startup News",
+      "issue": "/en/daily/2026-09-04",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "cradlewise-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-04",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOLThTYnJhQVZvYTh6dEItSXM3aFhfc2FvdUtBcWFMU0ZaVU9vamo4RDhDMWNJWmJLVVNNWTlYYlE5N0NBS2dCekJZVjVkUVJxWTd5a0p1cnN3Nm5BeHlHSTNaU2lYMUJJR2g1X2lRTWkwUHhRSWZxX0xidkZzRXZKSWZMM3BfSXh2UElMX3RwM3JNWXdUdVdnQzJmaVdXZDZMb0VaMzltM0dRaVZBY2tOX0dGRnpRRHBpWWp0MUx4dUVGaDJyamdJOTVHSzXSAcwBQVVfeXFMTi04U2JyYUFWb2E4enRCLUlzN2hYX3Nhb3VLQXFhTFNGWlVPb2pqOEQ4QzFjSVpiS1VTTVk5WGJROTdDQUtnQnpCWVY1ZFFScVk3eWtKdXJzdzZuQXh5R0kzWlNpWDFCSUdoNV9pUU1pMFB4UUlmcV9MYnZGc0V2SklmTDNwX0l4dlBJTF90cDNyTVl3VHVXZ0MyZmlXV2Q2TG9FWjM5bTNHUWlWQWNrTl9HRkZ6UURwaVlqdDFMeHVFRmgycmpnSTk1R0s1?oc=5",
+          "issue": "/en/daily/2026-09-04"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-03",
+      "entity": "cbdMD / Twinlab",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "cbdMD acquires legacy supplement brand Twinlab, combining CBD credibility with sports nutrition heritage",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmJManZyZi0tZ19uSHBscmJlSHZqTkx1WWxKbDQ3TXpTVzBzbGN2OVRvUUpDT2p5eXcwVEItUG1QQXozcTJrWV9PLWRNNFpVdXJlcTdFVElKWlI2ZGZSLUdSNzk0YzVjVm1GNl8xRTBvQVVId2J1bHZwenExc0Q1czY2bUVkeWtRRFZfVlRVRjBPajczZlhPLXJmdHlXc1JJaTNnUUVpN1Y1bTNKSU5pd0czeTFaZVdBNE1wTUJGRG5pdGtL?oc=5",
+      "source": "WholeFoods Magazine",
+      "issue": "/en/daily/2026-09-03",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "cbdmd-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-03",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmJManZyZi0tZ19uSHBscmJlSHZqTkx1WWxKbDQ3TXpTVzBzbGN2OVRvUUpDT2p5eXcwVEItUG1QQXozcTJrWV9PLWRNNFpVdXJlcTdFVElKWlI2ZGZSLUdSNzk0YzVjVm1GNl8xRTBvQVVId2J1bHZwenExc0Q1czY2bUVkeWtRRFZfVlRVRjBPajczZlhPLXJmdHlXc1JJaTNnUUVpN1Y1bTNKSU5pd0czeTFaZVdBNE1wTUJGRG5pdGtL?oc=5",
+          "issue": "/en/daily/2026-09-03"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-03",
+      "entity": "Informa / Global Wellness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Informa acquires Global Wellness, entering the $6.8 trillion wellness economy",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd0JhQm12MWRsWEVJYVhKcTMwV2hxRlNhaHRsQWppQWo0YmZPRk5ORXF4amdCLUdKLWhldlZ5UnJPNmJwNjczT2UtRlBmV1lJWFYtdktNTHloZThzTHh1ZTk0ODMwdktjMVpzVThjSEoxQzV3M1VlaGhNM1VEb2FadWtNcnNHaTlSeFNLZUFLWk0xSGlnekxRbE1QeVNVTDhJ?oc=5",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-09-03",
+      "region": "Other",
+      "category": "Other",
+      "id": "informa-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-03",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd0JhQm12MWRsWEVJYVhKcTMwV2hxRlNhaHRsQWppQWo0YmZPRk5ORXF4amdCLUdKLWhldlZ5UnJPNmJwNjczT2UtRlBmV1lJWFYtdktNTHloZThzTHh1ZTk0ODMwdktjMVpzVThjSEoxQzV3M1VlaGhNM1VEb2FadWtNcnNHaTlSeFNLZUFLWk0xSGlnekxRbE1QeVNVTDhJ?oc=5",
+          "issue": "/en/daily/2026-09-03"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-02",
+      "entity": "Nestlé",
+      "kind": "acquisition",
+      "amount": "$1B",
+      "amountUsd": 1000000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "offloading its mainstream supplements business in a $1B deal",
+      "url": "https://athletechnews.com/nestle-to-divest-mainstream-supplements-business-for-1-billion/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-09-02",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "nestl-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-02",
+          "url": "https://athletechnews.com/nestle-to-divest-mainstream-supplements-business-for-1-billion/",
+          "issue": "/en/daily/2026-09-02"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-02",
+      "entity": "Enhance",
+      "kind": "raise",
+      "amount": "$18.2M",
+      "amountUsd": 18200000,
+      "currency": "USD",
+      "approx": false,
+      "note": "UK-based gym software company raising to expand into the US market",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSVNLQzNaWk81YUxrWkhwcl9tME9lMlJZUEY2Zm1KS0twSk84M0RYclBLQm1hcUZDeG93bTgxQWhSQld2N1hpRWVPNVptdFBncDk3RHNUM1d4NFJVWktybV93blNkVlF1WGh1dmVnTlpBMHNyUlNOYW9uaWlqQkRxazkyekVmTENGOFJyaFdpVW5GdWFBVFk1dHQwTFY?oc=5",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-09-02",
+      "region": "UK",
+      "category": "Gyms & studios",
+      "id": "enhance-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-02",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSVNLQzNaWk81YUxrWkhwcl9tME9lMlJZUEY2Zm1KS0twSk84M0RYclBLQm1hcUZDeG93bTgxQWhSQld2N1hpRWVPNVptdFBncDk3RHNUM1d4NFJVWktybV93blNkVlF1WGh1dmVnTlpBMHNyUlNOYW9uaWlqQkRxazkyekVmTENGOFJyaFdpVW5GdWFBVFk1dHQwTFY?oc=5",
+          "issue": "/en/daily/2026-09-02"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-02",
+      "entity": "bback",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "DSG Consumer Partners acquires Singapore wellness and recovery brand",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX2dQWWU5MXU0cHlwSW4tOWxISjFUVF96bGZhZkJUajhrUU9ZOWEwb0pVLXlUZ1FmNXR3VlMwUFVPRWV5THk1d2NWS01ZY18tTnVRckVlSC0zN09vb1ExUUROMXI2bmhTVmNIWEtVc1JGem9XdHRNS3dGYlZkdnJ6N1dJdnp3ajlkc2xsNWN4a0ljZ01mcVBnNzBPa20xQW1xRUxNX2szd2NVSnNkXzNKQ1NjT3pycXNPM1E?oc=5",
+      "source": "Asia Business Outlook",
+      "issue": "/en/daily/2026-09-02",
+      "region": "Asia-Pacific",
+      "category": "Other",
+      "id": "bback-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-02",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQX2dQWWU5MXU0cHlwSW4tOWxISjFUVF96bGZhZkJUajhrUU9ZOWEwb0pVLXlUZ1FmNXR3VlMwUFVPRWV5THk1d2NWS01ZY18tTnVRckVlSC0zN09vb1ExUUROMXI2bmhTVmNIWEtVc1JGem9XdHRNS3dGYlZkdnJ6N1dJdnp3ajlkc2xsNWN4a0ljZ01mcVBnNzBPa20xQW1xRUxNX2szd2NVSnNkXzNKQ1NjT3pycXNPM1E?oc=5",
+          "issue": "/en/daily/2026-09-02"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-01",
+      "entity": "Healf",
+      "kind": "raise",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "SEMCAP Beauty & Wellness led the round, signalling continued investor appetite for wellness platforms",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-09-01",
+      "region": "Other",
+      "category": "Other",
+      "id": "healf-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-01",
+          "url": "",
+          "issue": "/en/daily/2026-09-01"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-09-01",
+      "entity": "Quell",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "London's HITAI acquired YC-backed fitness gaming studio Quell to bolster its motion-tracking platform",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQN09VeUl3aFNhcmR1VHdoSkFXOE9FOFJQZXIydG91RFZ6eHZGT2JSc09WcUx3YjBmME9ZajhzTlBWZ1JxazZiXy1uQnpYc2d6SnYxMmFqcThhbDVheFBQNUdZVUpRa1U3MHJsUk9hN2tSV1lib0s5Ull1ZU9iQ0Z0eFNHUUVwamp6a1hzT0tVdDVRYnhVWFNfOEtpVWRfak5pc1JVN1Q4Y1ROT3BWc0V0TlJWa3JQZmhmRGxSZ1pCSDZTc1ZRSm5MRWpTV1R0TjBOMC1KQTBvTlVpc3ZTd2xZWmpYUTg4cWhodWJ3?oc=5",
+      "source": "EU-Startups",
+      "issue": "/en/daily/2026-09-01",
+      "region": "UK",
+      "category": "Gyms & studios",
+      "id": "quell-acquisition-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-01",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQN09VeUl3aFNhcmR1VHdoSkFXOE9FOFJQZXIydG91RFZ6eHZGT2JSc09WcUx3YjBmME9ZajhzTlBWZ1JxazZiXy1uQnpYc2d6SnYxMmFqcThhbDVheFBQNUdZVUpRa1U3MHJsUk9hN2tSV1lib0s5Ull1ZU9iQ0Z0eFNHUUVwamp6a1hzT0tVdDVRYnhVWFNfOEtpVWRfak5pc1JVN1Q4Y1ROT3BWc0V0TlJWa3JQZmhmRGxSZ1pCSDZTc1ZRSm5MRWpTV1R0TjBOMC1KQTBvTlVpc3ZTd2xZWmpYUTg4cWhodWJ3?oc=5",
+          "issue": "/en/daily/2026-09-01"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-31",
+      "entity": "World Gym",
+      "kind": "valuation",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Posted US$6.9M quarterly profit as expansion strategy gains traction",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-08-31",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "world-valuation-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-31",
+          "url": "",
+          "issue": "/en/daily/2026-08-31"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-28",
+      "entity": "Excalibur Group",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Acquired SpaSeekers to expand wellness booking platform portfolio",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQTNyY0pKRVFGYkl2RG9hVXdLME1VLTB6Z1RQeWg5SkJqS3lqbGVLVVBuNWNzWHVmUTBfQ2tvcGtRUDg0ZS1Yb0dFb2ZWanBBc3NVQTRySzM2dURhenZwVHNaejBNanBPRXE1SXBBZjN5QnhLMHBKVFlqYWJGUEVKbVJjZlN4UkVUd1NCcERCQVpZR0NRUkRJbjREUk9hLTlhTmhwcGpxQmxBTTdoVXUzNVRWUGhiZkZvUDlicFlfbVJESVp2WXc?oc=5",
+      "source": "spabusiness.com",
+      "issue": "/en/daily/2026-08-28",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "excalibur-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-28",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQTNyY0pKRVFGYkl2RG9hVXdLME1VLTB6Z1RQeWg5SkJqS3lqbGVLVVBuNWNzWHVmUTBfQ2tvcGtRUDg0ZS1Yb0dFb2ZWanBBc3NVQTRySzM2dURhenZwVHNaejBNanBPRXE1SXBBZjN5QnhLMHBKVFlqYWJGUEVKbVJjZlN4UkVUd1NCcERCQVpZR0NRUkRJbjREUk9hLTlhTmhwcGpxQmxBTTdoVXUzNVRWUGhiZkZvUDlicFlfbVJESVp2WXc?oc=5",
+          "issue": "/en/daily/2026-08-28"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-27",
+      "entity": "InstaAstro",
+      "kind": "raise",
+      "amount": "$12 million",
+      "amountUsd": 12000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Series A for its online astrology and spiritual wellness platform",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZFJsajJEdWdpdWhIRDctMTlkeVNwUnhqN2RUZldRRXFfRTBuSDN4eVVPd1V3SWQzc2Npc21ndFBubFNhaGZieGRMM2hMeTQ3T1NOTDdLSHVuaVVMU1FfUC1uX1ZlN3RPYWF0anlWbnVMR0dLa2tQa1o2MU00MjJpUF9EZVJHV0pVdWl0RFV1ZFJzVGU1aGlHblE5QzhwNDdoWnNLRDE3MjRwMzV1SUVZc2JybzJHRVdvdTl2clloY1FlV3hvZDRaODFuUHRCMDdjd2hjQ25ReUxkSEtr0gHcAUFVX3lxTE9kUmxqMkR1Z2l1aEhENy0xOWR5U3BSeGo3ZFRmV1FFcV9FMG5IM3h5VU93VXdJZDNzY2lzbWd0UG5sU2FoZmJ4ZEwzaEx5NDdPU05MN0tIdW5pVUxTUV9QLW5fVmU3dE9hYXRqeVZudUxHR0tra1BrWjYxTTQyMmlQX0RlUkdXSlV1aXREVXVkUnNUZTVoaUduUTlDOHA0N2hac0tEMTcyNHAzNXVJRVlzYnJvMkdFV291OXZyWWhjUWVXeG9kNFo4MW5QdEIwN2N3aGNDblF5TGRIS2s?oc=5",
+      "source": "Indian Startup News",
+      "issue": "/en/daily/2026-08-27",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "instaastro-raise-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-27",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZFJsajJEdWdpdWhIRDctMTlkeVNwUnhqN2RUZldRRXFfRTBuSDN4eVVPd1V3SWQzc2Npc21ndFBubFNhaGZieGRMM2hMeTQ3T1NOTDdLSHVuaVVMU1FfUC1uX1ZlN3RPYWF0anlWbnVMR0dLa2tQa1o2MU00MjJpUF9EZVJHV0pVdWl0RFV1ZFJzVGU1aGlHblE5QzhwNDdoWnNLRDE3MjRwMzV1SUVZc2JybzJHRVdvdTl2clloY1FlV3hvZDRaODFuUHRCMDdjd2hjQ25ReUxkSEtr0gHcAUFVX3lxTE9kUmxqMkR1Z2l1aEhENy0xOWR5U3BSeGo3ZFRmV1FFcV9FMG5IM3h5VU93VXdJZDNzY2lzbWd0UG5sU2FoZmJ4ZEwzaEx5NDdPU05MN0tIdW5pVUxTUV9QLW5fVmU3dE9hYXRqeVZudUxHR0tra1BrWjYxTTQyMmlQX0RlUkdXSlV1aXREVXVkUnNUZTVoaUduUTlDOHA0N2hac0tEMTcyNHAzNXVJRVlzYnJvMkdFV291OXZyWWhjUWVXeG9kNFo4MW5QdEIwN2N3aGNDblF5TGRIS2s?oc=5",
+          "issue": "/en/daily/2026-08-27"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-27",
+      "entity": "Temple (Deepinder Goyal)",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Acquired a London-based longevity company ahead of a wearable launch",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTjl1ZGZWZ3U3UG9VZEF6cTJ6ejNJMXk2QjVWVGFLQjJkaTJKWEZIZnM0SFRwM3ltMmphc3hnT2owa0hIQVA3NEZ1M2dWX0FFTzg4T204R0c4UEFwV3hScnQ5bndrWjl5dkg0T1EwSkVqS3ROdlVFSHk2UFNySzg4dnJXdDVtV0FidElnMGpPai1hTGE5aUpnZkFOaUtOUWU2UElCSE1aVVotbFk5ek1EUVB3WG9tSm5jb1NETg?oc=5",
+      "source": "LinkedIn",
+      "issue": "/en/daily/2026-08-27",
+      "region": "UK",
+      "category": "Wearables & devices",
+      "id": "temple-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-27",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQTjl1ZGZWZ3U3UG9VZEF6cTJ6ejNJMXk2QjVWVGFLQjJkaTJKWEZIZnM0SFRwM3ltMmphc3hnT2owa0hIQVA3NEZ1M2dWX0FFTzg4T204R0c4UEFwV3hScnQ5bndrWjl5dkg0T1EwSkVqS3ROdlVFSHk2UFNySzg4dnJXdDVtV0FidElnMGpPai1hTGE5aUpnZkFOaUtOUWU2UElCSE1aVVotbFk5ek1EUVB3WG9tSm5jb1NETg?oc=5",
+          "issue": "/en/daily/2026-08-27"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-27",
+      "entity": "Fifty 1 Labs",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Acquired five recovery brands in an all-stock deal with no cash exchanged",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQW50dGhvTW1RSUo5c2lad3EwZjBvSjd0ZmpybGdocVdsS1lxMnJmemJrMzNFdzhYZTRjUzJ0M1BLWUdncU5RZHJJRl82VTZnaTFod2RxYndvQ2RlbUZKSkR3dEFyUFQ4RC1jQmFOVnBDVGxCNGZUVkJnZTRydXg0WEwtZV9Lc0FtbkhtdHhyZm01d01IUHNTb2FzX09CQWx3RXZFS3FFMTVWMWJEWUFNZDV5bENqZDA?oc=5",
+      "source": "Stock Titan",
+      "issue": "/en/daily/2026-08-27",
+      "region": "Other",
+      "category": "Other",
+      "id": "fifty-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-27",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQW50dGhvTW1RSUo5c2lad3EwZjBvSjd0ZmpybGdocVdsS1lxMnJmemJrMzNFdzhYZTRjUzJ0M1BLWUdncU5RZHJJRl82VTZnaTFod2RxYndvQ2RlbUZKSkR3dEFyUFQ4RC1jQmFOVnBDVGxCNGZUVkJnZTRydXg0WEwtZV9Lc0FtbkhtdHhyZm01d01IUHNTb2FzX09CQWx3RXZFS3FFMTVWMWJEWUFNZDV5bENqZDA?oc=5",
+          "issue": "/en/daily/2026-08-27"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-25",
+      "entity": "Oura",
+      "kind": "ipo",
+      "amount": "$3 billion",
+      "amountUsd": 3000000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "targeting a $3B valuation in its upcoming IPO, betting Wall Street is ready to wear recovery data on its finger",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWHpWNWZpbzRIM1ZGbFFKelEwaXVtZ05IeWlGNkRpMXh2YnV1M3J6LUZEWU5scTVrc25KREhIOW5DQWt5Um90dDZIWlR6OE95MTJ5c1d1LXgzNGdXWWVsUlBjcTVpRW9zMkdFWHhvMWxVNlFEQlNmelBxQnoySGs2WG9sTTQyQnNiYTMtSG5hc0tZVFN5?oc=5",
+      "source": "observer.com",
+      "issue": "/en/daily/2026-08-25",
+      "region": "Europe",
+      "category": "Wearables & devices",
+      "id": "oura-ipo-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-25",
+          "url": "",
+          "issue": "/en/daily/2026-08-25"
+        },
+        {
+          "date": "2026-08-28",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWHpWNWZpbzRIM1ZGbFFKelEwaXVtZ05IeWlGNkRpMXh2YnV1M3J6LUZEWU5scTVrc25KREhIOW5DQWt5Um90dDZIWlR6OE95MTJ5c1d1LXgzNGdXWWVsUlBjcTVpRW9zMkdFWHhvMWxVNlFEQlNmelBxQnoySGs2WG9sTTQyQnNiYTMtSG5hc0tZVFN5?oc=5",
+          "issue": "/en/daily/2026-08-28"
+        },
+        {
+          "date": "2026-09-15",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPR3RwMU9jUmVXal93QWZHbEwwWVk5SF85czFJRVJTZzdiU1hNVjMwVXNKUmJWNDVRTXNiOXdQWHdURWdBcHB2Qk01RWJObHNHN3c2MEdNU2U2MldMMkNmUDFXODhienNfdDRIOVpOWVZXdFFvUnl5Z1Ezbm9xTjdIQmQyaGRDeDdjbDNwc3VERkwwZw?oc=5",
+          "issue": "/en/daily/2026-09-15"
+        },
+        {
+          "date": "2026-09-22",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOVZKNUpyaDZTNXFXMlRPZHNzTzVHeU9wQ0ZOTmxnQi10UzFiRVFMa3E1ZmpFaDJMUTFIU1F6OFNmaWNnTTlYLUNkN0kzdHo0NE9oZUk2Yk9adWtwQmp2cVZLeERHRnAteXRUWGRuT2didzJxLVBJZ2tCMjZjVTJrejRYMU1aaW92RVlGRXpQekhvZ1FYbkZhUDY3enlFWnY1WU5HOVV6Z2kyNTg?oc=5",
+          "issue": "/en/daily/2026-09-22"
+        },
+        {
+          "date": "2026-09-30",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOajZPNTRKeWdVYTJkc0dGOGN2Vk92SEVyenlMeTdsb1BpeTdzYTh5dlo4UWxlZERWNTFZRV9GeEVNM0VUUTJTekhjSjBhb1VsRFNFS0xRWmhCUEVfWENkNHRsS1ZZX2NNUjBHVEdBNGhmWGctbjRPcl83WnE5VFZzQkNaWG1YeTIwWUZnQ0M3ZjJJXzlLTXpuQ2g0aEcyVmpQRDFEdHBJOHJYazFiRFJGSkdtOTBrQkNwOVNLb3l0eE5EamdLWFJoNjZYZU9uUdIBzgFBVV95cUxOajZPNTRKeWdVYTJkc0dGOGN2Vk92SEVyenlMeTdsb1BpeTdzYTh5dlo4UWxlZERWNTFZRV9GeEVNM0VUUTJTekhjSjBhb1VsRFNFS0xRWmhCUEVfWENkNHRsS1ZZX2NNUjBHVEdBNGhmWGctbjRPcl83WnE5VFZzQkNaWG1YeTIwWUZnQ0M3ZjJJXzlLTXpuQ2g0aEcyVmpQRDFEdHBJOHJYazFiRFJGSkdtOTBrQkNwOVNLb3l0eE5EamdLWFJoNjZYZU9uUQ?oc=5",
+          "issue": "/en/daily/2026-09-30"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-25",
+      "entity": "Purely Elizabeth",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "acquired by Ferrero, signaling Big Snack's serious push into the better-for-you category",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-08-25",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "purely-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-25",
+          "url": "",
+          "issue": "/en/daily/2026-08-25"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-08-20",
+      "entity": "Celebrate Wellness gala",
+      "kind": "raise",
+      "amount": "$230,000",
+      "amountUsd": 230000,
+      "currency": "USD",
+      "approx": false,
+      "note": "raised to fund free cancer support programs in South Bay",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQXNrcERWM0dEdHp1SVRjNzVrWGdrWmR5el81QXVoOHhwS2FNOHRJY2tCX3VPa09uSTRMVEpzbzV6YTFaNnJRRlJNT2Q1MDhKZGdfanlES2FkVWNKUEdRT2NRWFpxNUFYN1dEa3JyWG9CWmxSamlxTWlJVkVfWF91TUViWnA5MlNIOTNrMzZsd2V3TWxDZHRKbmxWVFhQdTFfMDBWeXotVW1sc2pTcGV0VGhXTGhkaXBGY2ZLVGh6YzU?oc=5",
+      "source": "Daily Breeze",
+      "issue": "/en/daily/2026-08-20",
+      "region": "Other",
+      "category": "Other",
+      "id": "celebrate-raise-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-20",
+          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQXNrcERWM0dEdHp1SVRjNzVrWGdrWmR5el81QXVoOHhwS2FNOHRJY2tCX3VPa09uSTRMVEpzbzV6YTFaNnJRRlJNT2Q1MDhKZGdfanlES2FkVWNKUEdRT2NRWFpxNUFYN1dEa3JyWG9CWmxSamlxTWlJVkVfWF91TUViWnA5MlNIOTNrMzZsd2V3TWxDZHRKbmxWVFhQdTFfMDBWeXotVW1sc2pTcGV0VGhXTGhkaXBGY2ZLVGh6YzU?oc=5",
+          "issue": "/en/daily/2026-08-20"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-20",
+      "entity": "Kodeon",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "acquired meditation app Breethe in its largest deal to date",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdngxaHFXVFppOTJJMnJ6UWRsTkxBN2ZxdHNYRkszNnRsVmFJdEJqd181bnQyRUlucWprS0hiUHFma050YzdHQkRyaHVWSWN6X1hiWVd4T0tydWpDUjEtY1l2U1o3UHZvTzRmMU1pS1BJS1lWeFZXcDRNM2J6bUNYeGVGMjNWOGRFRmR0VTFwcFpIS1RDUDAyc2NrSQ?oc=5",
+      "source": "BetaKit",
+      "issue": "/en/daily/2026-08-20",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "kodeon-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-20",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdngxaHFXVFppOTJJMnJ6UWRsTkxBN2ZxdHNYRkszNnRsVmFJdEJqd181bnQyRUlucWprS0hiUHFma050YzdHQkRyaHVWSWN6X1hiWVd4T0tydWpDUjEtY1l2U1o3UHZvTzRmMU1pS1BJS1lWeFZXcDRNM2J6bUNYeGVGMjNWOGRFRmR0VTFwcFpIS1RDUDAyc2NrSQ?oc=5",
+          "issue": "/en/daily/2026-08-20"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-19",
+      "entity": "LAC (V3 Group)",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "acquired MASQUELIER'S® French Pine Bark Extract brand, expanding footprint into East Asia, the Middle East, and Africa",
+      "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNNXk3WHk2bVBUcmhGRVBENXRmcmREY0owdlFlWThXWWxyYUdxYy1fQV9LdkdkUW1La1JqTlp0REpkOTdTV2tRZ0lIRENxZjhOVS0xRWM0US0tUDZUdjdEdW9tU0tjRWItRmZCUFJKMUdIYVlFOW9NYVphVllsZFNKVGkxRVRia2pHZmlEU2JNanhPNnJNME9GSGtWem81SU9MY000aklRQm5fOHNrbTM5REUwTVNhWEdhTS1zM3B0WHY5c0syQmJaNS1Tb0R6dVpNblZjWDQ5Skk3cDVodlRZOElvQVgtc1h4OWNseExtdEY4ZlNMRnZXeVpnUWNvVnlpSDFwdWhUcElhNnV1b1l0YWlTUzE4cU5fNHNNbHFmaHFnaC05aHczSUprZ2ROQ0k3Rm1aRU54VElidkgtd1pwdEwxcTVnY0hEQk11RUVGX1Jydk1tZGc?oc=5",
+      "source": "media-outreach.com",
+      "issue": "/en/daily/2026-08-19",
+      "region": "Europe",
+      "category": "Other",
+      "id": "lac-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-19",
+          "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNNXk3WHk2bVBUcmhGRVBENXRmcmREY0owdlFlWThXWWxyYUdxYy1fQV9LdkdkUW1La1JqTlp0REpkOTdTV2tRZ0lIRENxZjhOVS0xRWM0US0tUDZUdjdEdW9tU0tjRWItRmZCUFJKMUdIYVlFOW9NYVphVllsZFNKVGkxRVRia2pHZmlEU2JNanhPNnJNME9GSGtWem81SU9MY000aklRQm5fOHNrbTM5REUwTVNhWEdhTS1zM3B0WHY5c0syQmJaNS1Tb0R6dVpNblZjWDQ5Skk3cDVodlRZOElvQVgtc1h4OWNseExtdEY4ZlNMRnZXeVpnUWNvVnlpSDFwdWhUcElhNnV1b1l0YWlTUzE4cU5fNHNNbHFmaHFnaC05aHczSUprZ2ROQ0k3Rm1aRU54VElidkgtd1pwdEwxcTVnY0hEQk11RUVGX1Jydk1tZGc?oc=5",
+          "issue": "/en/daily/2026-08-19"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-08-18",
+      "entity": "Whoop",
+      "kind": "ipo",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "targeting a public offering within 18 months while expanding Boston HQ",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVy1FVnJvSV91ajQ0YmpTUnNsMmF6Q1FmSVlXRk8xNktCYVg1Sm5OWVR0endkV0VobmdhcHRUVElKeGtUZmtDQ2JrTWFjYjJKN3hzMWFVdl9adkVNd1hTR3o1SDF0OG9qYUE1OW1JNDYxbmpDOGVXSlJkZFp6bTFEWUJaOXJmLTV2d0U3SjBVbERQZjdzUEZVV1hnWkQ5Zw?oc=5",
+      "source": "Boston's ROCK 92.9",
+      "issue": "/en/daily/2026-08-18",
+      "region": "North America",
+      "category": "Wearables & devices",
+      "id": "whoop-ipo-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-18",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVy1FVnJvSV91ajQ0YmpTUnNsMmF6Q1FmSVlXRk8xNktCYVg1Sm5OWVR0endkV0VobmdhcHRUVElKeGtUZmtDQ2JrTWFjYjJKN3hzMWFVdl9adkVNd1hTR3o1SDF0OG9qYUE1OW1JNDYxbmpDOGVXSlJkZFp6bTFEWUJaOXJmLTV2d0U3SjBVbERQZjdzUEZVV1hnWkQ5Zw?oc=5",
+          "issue": "/en/daily/2026-08-18"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-17",
+      "entity": "Delightree",
+      "kind": "raise",
+      "amount": "$25M",
+      "amountUsd": 25000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "building an agentic AI operating system for franchise and multi-unit brands",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNUZRN0had0Fqb2prQ0MyelJOaEVHQ3FXSzdYN3dYSGRnWDN3NU9WRUc2OTBVQWZmdUFwWTBUOGo4RlZ1WXJWMW1nNHFBdXgzbXZCcG1NMHBWcjYtOS1qb0pUaGFvOEs3RVJjRVJ5bm01cC1WSWEwWVpFRXNVTmtWakRIaEFxajREbVBBVk9EQTVZRnhwTGVHRU5fb1NpMUF0LS12Z01tcXpsc0oyOXdjWDdHR3hzMHpoNGwyeW5n0gHDAUFVX3lxTE5rMnhpdlJhYmIxOGUtb3NFbHZ1Z1RsSThxb0g2VHZwOXdrb3p1NFpaYXBpV0RKVTZvZDdHdFl0VE1MMmJ5V1VLS2gxQ0lDMVRHaS1vXzZXZDhFdFVxNFhJQVJSNkxLbWxpN3pKaHJLTGppeFNvQWxpYS1ETlo5bG9iSGtUbEhwV0FqVjVjZ1liVmRZOHE5NHpQSTZyU184OG5ZRWExOUdYd055SG1MaEFPa1hOZlNOSFlDVG5KVThiZF9ZMA?oc=5",
+      "source": "Pulse 2.0",
+      "issue": "/en/daily/2026-08-17",
+      "region": "Other",
+      "category": "Gyms & studios",
+      "id": "delightree-raise-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-17",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNUZRN0had0Fqb2prQ0MyelJOaEVHQ3FXSzdYN3dYSGRnWDN3NU9WRUc2OTBVQWZmdUFwWTBUOGo4RlZ1WXJWMW1nNHFBdXgzbXZCcG1NMHBWcjYtOS1qb0pUaGFvOEs3RVJjRVJ5bm01cC1WSWEwWVpFRXNVTmtWakRIaEFxajREbVBBVk9EQTVZRnhwTGVHRU5fb1NpMUF0LS12Z01tcXpsc0oyOXdjWDdHR3hzMHpoNGwyeW5n0gHDAUFVX3lxTE5rMnhpdlJhYmIxOGUtb3NFbHZ1Z1RsSThxb0g2VHZwOXdrb3p1NFpaYXBpV0RKVTZvZDdHdFl0VE1MMmJ5V1VLS2gxQ0lDMVRHaS1vXzZXZDhFdFVxNFhJQVJSNkxLbWxpN3pKaHJLTGppeFNvQWxpYS1ETlo5bG9iSGtUbEhwV0FqVjVjZ1liVmRZOHE5NHpQSTZyU184OG5ZRWExOUdYd055SG1MaEFPa1hOZlNOSFlDVG5KVThiZF9ZMA?oc=5",
+          "issue": "/en/daily/2026-08-17"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-08-13",
+      "entity": "OZOP Energy Solutions / Varon USA",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "OZOP acquired Varon USA equipment to anchor a new product development initiative in fitness-adjacent energy tech",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPSTNTVC1Ubm9MZUF4eGx4dlpKZGhjT3lNRnQ3SnVuczNROFR0VVlQWmlJRUVUNXhyaHVwLTVtM0pPeks4XzNoX0wwYl9WM1pzNXd2T2lYTmpFT1JPaURfcVBnRnIwaHdtS1lKUUdZSVVpVkpmdEg0Y2RsYWFEU0dMM3ctME50ajJMZHdhaGZYalNhdG0xSkpkYTJUUFlpcUxFalZLQUwtWmVpenRGZGZJS0E4eGFLa2paemtnU2VFVWdxUlFRN2RqOVpQdTdlVFl4VW01MEdtc1hQa3dZamhYSjNRYk9WbjJCWXVhc1MxRGw5c1NKQmhPalVjMGhIUW5Yck8zZnAzVXlmdUdsc1HSAZMCQVVfeXFMTXdqMnllN3FyRFAxRWF4aF9pOWJkZEthYTdWcUx0UU9rVFo5UHZkOFA0VGVKTi1najVGWklLeVM3V28yamRIcmtVek1wT3luSHZZbU5ieVlaU1ZhNzNDRGFLTjVubVdhc014TUM5RThwcm1hZWtwTENHX2tPMEtZZF9Ua3I0a0lScWc4YzZCQnZQRWlIS0R2SzIwUkp3SVFFX2k4R2Q1ZHdzVVZ4Ylh1ZnpaZEd6cE5Rdlc0NVh6V21idHdXM1Z4d0FLWklXUzdWSXB6TUxabi1EOWJUOHEwdDFOTG52cWlMN3VNTXZvdGVlYjE3Rk54TlVpMmdxQzQ2MFNlV0hLcVZQRDc2Nzh6M25ZZFk?oc=5",
+      "source": "manilatimes.net",
+      "issue": "/en/daily/2026-08-13",
+      "region": "North America",
+      "category": "Other",
+      "id": "ozop-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-13",
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPSTNTVC1Ubm9MZUF4eGx4dlpKZGhjT3lNRnQ3SnVuczNROFR0VVlQWmlJRUVUNXhyaHVwLTVtM0pPeks4XzNoX0wwYl9WM1pzNXd2T2lYTmpFT1JPaURfcVBnRnIwaHdtS1lKUUdZSVVpVkpmdEg0Y2RsYWFEU0dMM3ctME50ajJMZHdhaGZYalNhdG0xSkpkYTJUUFlpcUxFalZLQUwtWmVpenRGZGZJS0E4eGFLa2paemtnU2VFVWdxUlFRN2RqOVpQdTdlVFl4VW01MEdtc1hQa3dZamhYSjNRYk9WbjJCWXVhc1MxRGw5c1NKQmhPalVjMGhIUW5Yck8zZnAzVXlmdUdsc1HSAZMCQVVfeXFMTXdqMnllN3FyRFAxRWF4aF9pOWJkZEthYTdWcUx0UU9rVFo5UHZkOFA0VGVKTi1najVGWklLeVM3V28yamRIcmtVek1wT3luSHZZbU5ieVlaU1ZhNzNDRGFLTjVubVdhc014TUM5RThwcm1hZWtwTENHX2tPMEtZZF9Ua3I0a0lScWc4YzZCQnZQRWlIS0R2SzIwUkp3SVFFX2k4R2Q1ZHdzVVZ4Ylh1ZnpaZEd6cE5Rdlc0NVh6V21idHdXM1Z4d0FLWklXUzdWSXB6TUxabi1EOWJUOHEwdDFOTG52cWlMN3VNTXZvdGVlYjE3Rk54TlVpMmdxQzQ2MFNlV0hLcVZQRDc2Nzh6M25ZZFk?oc=5",
+          "issue": "/en/daily/2026-08-13"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-12",
+      "entity": "Planet Fitness",
+      "kind": "raise",
+      "amount": "$62",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Raymond James lifts price target to $62, maintains Buy rating",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTWwzOFRXS1NlTlpMd2lOS3k0RmdBeVdkZ0NCUVVzOFJEU3U4Rlo4ZnZ6WGV5Rk1TYlFwTFYyREdtR2liYzk2WEFnbWhLczlFVV90TFBYVDRTQldlaDY2SVdJNGF4WmRkZHVRalAwN0ljTjBFV1B5QmpiUWpTcmVpbU9EU3lvMTBWNkc1cnZjcFJLRnEyN1lqZVdoQ1JIQzNSX1ZPYV95ZWl4RWRwSVE?oc=5",
+      "source": "富途牛牛",
+      "issue": "/en/daily/2026-08-12",
+      "region": "Other",
+      "category": "Other",
+      "id": "planet-raise-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-12",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTWwzOFRXS1NlTlpMd2lOS3k0RmdBeVdkZ0NCUVVzOFJEU3U4Rlo4ZnZ6WGV5Rk1TYlFwTFYyREdtR2liYzk2WEFnbWhLczlFVV90TFBYVDRTQldlaDY2SVdJNGF4WmRkZHVRalAwN0ljTjBFV1B5QmpiUWpTcmVpbU9EU3lvMTBWNkc1cnZjcFJLRnEyN1lqZVdoQ1JIQzNSX1ZPYV95ZWl4RWRwSVE?oc=5",
+          "issue": "/en/daily/2026-08-12"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-07",
+      "entity": "Thorne",
+      "kind": "acquisition",
+      "amount": "$3.8bn",
+      "amountUsd": 3800000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "P&G acquires supplement brand, signalling big consumer goods moves into fitness nutrition",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdlI1Q3FJVGdDWW8tOUE3VFMxeFVKRkdxdW5YdG13ekVKZ0xOalJMdV9ySDBoWjZxeFZpM2dWQVFiV1JobFRZWm9YQ3NnZURmS1B4UHlfanFKLVZrV09YWDc0T3BXbFhaV0RYZHUtT3dEVHJ3WGxPRllrM2gzNE1VZW82VFdUY0hLbUV5ODY1SENPVHBfcnBnVlM2aFlEOGtBdmhJN2NoRFQyQXlV?oc=5",
+      "source": "Retail Systems",
+      "issue": "/en/daily/2026-08-07",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "thorne-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-07",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdlI1Q3FJVGdDWW8tOUE3VFMxeFVKRkdxdW5YdG13ekVKZ0xOalJMdV9ySDBoWjZxeFZpM2dWQVFiV1JobFRZWm9YQ3NnZURmS1B4UHlfanFKLVZrV09YWDc0T3BXbFhaV0RYZHUtT3dEVHJ3WGxPRllrM2gzNE1VZW82VFdUY0hLbUV5ODY1SENPVHBfcnBnVlM2aFlEOGtBdmhJN2NoRFQyQXlV?oc=5",
+          "issue": "/en/daily/2026-08-07"
+        },
+        {
+          "date": "2026-08-14",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSllZc25UNWVXeGFwbVBNZGROcnFtUFVFclhYclJQQTRvMThNajRzbXpXS2czcEZrbTlSdHhsdzktRlVsSzI5dGJIbzRLYkFEQ1ZTMVpVRlVHeHd5TkVycnJhaFY2alZ5RnhYWDR1T0JlWTRRUnloTXRVZVFOSzJ3OWdPYWNDY2Vlbnp4Tm9IMUNaMFppV3J2c2RUS0tXaTRkTEg2WF9VRzhHb2ZFX3c?oc=5",
+          "issue": "/en/daily/2026-08-14"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-07",
+      "entity": "Jamieson Wellness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Kirin acquires Jamieson to build a North American wellness platform",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSnF1b1hjN1A2TkVEWHZMSldRRXktTkhlMFVJRl9PaWtqck4xZEZHWEFIbEJyYWlUQk41aExFS1VXWmRNY2xXTDI4NU1vdkVLSFJYMzVXdHV6THpKMTVmS0hDa2xFZDJfclFLdTVOZUJWUjBtRWdoaklCaHRZeEtRZENaVmJiaktBNTEzV2swTXg4V3BPa19obnIxVnU1WjRpT2htZU9B?oc=5",
+      "source": "NutraIngredients.com",
+      "issue": "/en/daily/2026-08-07",
+      "region": "North America",
+      "category": "Software & AI",
+      "id": "jamieson-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-07",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSnF1b1hjN1A2TkVEWHZMSldRRXktTkhlMFVJRl9PaWtqck4xZEZHWEFIbEJyYWlUQk41aExFS1VXWmRNY2xXTDI4NU1vdkVLSFJYMzVXdHV6THpKMTVmS0hDa2xFZDJfclFLdTVOZUJWUjBtRWdoaklCaHRZeEtRZENaVmJiaktBNTEzV2swTXg4V3BPa19obnIxVnU1WjRpT2htZU9B?oc=5",
+          "issue": "/en/daily/2026-08-07"
+        },
+        {
+          "date": "2026-09-25",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOQVJKdG1DUVFpeWU1a19ETElXQjJDVm9zd25KVTdjVDB1cEEyUUFoa0VURjFvWWNfUVhvaXpOdUxXd05sUWI2ZGo1a2ZYZjdlbUZKdzYtTVUyVjc2SFJuYUhWX09wcUZxazFTRzdjbElCNWJSS2loV09icU16MXNYZncybzBNaHFHSk0tdHpHQnNyVTZ4cWRKb1UwWkpFdDZkQ1g1TkE0NnFJU1NSMFlYMTgwYXI2TnZiQnNYSUtYVTZJb2R6RVpWYXFzZGI?oc=5",
+          "issue": "/en/daily/2026-09-25"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-06",
+      "entity": "Othello",
+      "kind": "raise",
+      "amount": "$6.85M",
+      "amountUsd": 6850000,
+      "currency": "USD",
+      "approx": false,
+      "note": "seed round to build AI-powered sales coaching for fitness and membership sales",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN0VsZTFQMUJTMGJ0U3ltaTBVWVhvVi0xZl9TU25OSDdvc0ZUT25KYWdJT093OWxVTlg5TzZpVFpkOW1WMHhWcjBwbFdZb200clJQblpxb3ItamJybjVSMDdJS3RYNkpaNnR2UldvT1dNcWRvQjJCR3BKLWhERGw0eVJoTkJ4Mjl1WEIxUWl3?oc=5",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-08-06",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "othello-raise-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-06",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN0VsZTFQMUJTMGJ0U3ltaTBVWVhvVi0xZl9TU25OSDdvc0ZUT25KYWdJT093OWxVTlg5TzZpVFpkOW1WMHhWcjBwbFdZb200clJQblpxb3ItamJybjVSMDdJS3RYNkpaNnR2UldvT1dNcWRvQjJCR3BKLWhERGw0eVJoTkJ4Mjl1WEIxUWl3?oc=5",
+          "issue": "/en/daily/2026-08-06"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-08-06",
+      "entity": "Whoop",
+      "kind": "valuation",
+      "amount": "$10.1B",
+      "amountUsd": 10100000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "latest valuation tied to refurbished device trial strategy and subscription lock-in model",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPakFDX09jNzdkdVZ3amFqSERKTm1rRUl1elh4VHhLWWloYzNlU1ZzVVV5X2FyQjZsZkxWSmFQM0d2NTVpQmVWSy1ibzd6RklrQThHRjVEOWNrdFM1VXVFT3djNWp4Y2lLYWIxa2ZBU0s2X2NfN0MzTjhTYU8xOUFIcXZXRmJ2MUlPSEcxanlPNjg0Mml1cGVTbDJ3?oc=5",
+      "source": "streamlinefeed.co.ke",
+      "issue": "/en/daily/2026-08-06",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "whoop-valuation-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-06",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPakFDX09jNzdkdVZ3amFqSERKTm1rRUl1elh4VHhLWWloYzNlU1ZzVVV5X2FyQjZsZkxWSmFQM0d2NTVpQmVWSy1ibzd6RklrQThHRjVEOWNrdFM1VXVFT3djNWp4Y2lLYWIxa2ZBU0s2X2NfN0MzTjhTYU8xOUFIcXZXRmJ2MUlPSEcxanlPNjg0Mml1cGVTbDJ3?oc=5",
+          "issue": "/en/daily/2026-08-06"
+        },
+        {
+          "date": "2026-09-28",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPSklVck0tMzB1ZndWU2wybF9telhDd0lVZTF0cE1BZHFtV2lBU3ZWbFBFVXNaTEhBVmh2TXI4b2U4R2xNTVRmUGhPNF82bVVzT21wY0JkS0libkxxMVNsTXIzcG5PSlo0UEYwU2E2UlFRclYwS1Vpd3ZmSXlYaXA3YkJmaU1sd0FtT3lMalFsazZndjNrcUFtWVltT1dKSWZhcGNUMHRPUmsxazdWREdfTTg2a2xtNEpTU2ZGTEpaV2RjT1ZuQ3ZQTmVMc1E2MnlfTi1qeVlCWmlrODNHZUJyclY5U3JnNUU?oc=5",
+          "issue": "/en/daily/2026-09-28"
+        },
+        {
+          "date": "2026-10-27",
+          "url": "https://www.fastcompany.com/91629965/whoop-oura-wellness-healthcare-medical-devices-future",
+          "issue": "/en/daily/2026-10-27"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-04",
+      "entity": "Fitness Fanatics",
+      "kind": "ipo",
+      "amount": "$4–$6 per share",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Setting its expected U.S. IPO price range, signalling how Wall Street is valuing the fitness sector",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSzRSdy1rcGxaYnl4a29zTzdURUMzRmFaMnR5SFA3N3dIWmhaQ3JyWk5hTmxlZnNvRXpSNlhRNEZremhVMnZkWU5uV1lfM0x1NWlObTZkU01nTXNHQlQ2blZJczRCS3VNU0hHT2pPaXBKdHMwNHZFWlE1a3VaSXRYb3RTRXE1SWlmNW9jUkZ6YUtURktnUHg1ajB4Q29CQ2NFd25DOG9rc1BSbUJKZUc4VkxVMjRLZHNZdVRLMEtWeEI2TlRUSU81VW15alNqOXpvT1E?oc=5",
+      "source": "tradingview.com",
+      "issue": "/en/daily/2026-08-04",
+      "region": "Other",
+      "category": "Other",
+      "id": "fanatics-ipo-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-04",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSzRSdy1rcGxaYnl4a29zTzdURUMzRmFaMnR5SFA3N3dIWmhaQ3JyWk5hTmxlZnNvRXpSNlhRNEZremhVMnZkWU5uV1lfM0x1NWlObTZkU01nTXNHQlQ2blZJczRCS3VNU0hHT2pPaXBKdHMwNHZFWlE1a3VaSXRYb3RTRXE1SWlmNW9jUkZ6YUtURktnUHg1ajB4Q29CQ2NFd25DOG9rc1BSbUJKZUc4VkxVMjRLZHNZdVRLMEtWeEI2TlRUSU81VW15alNqOXpvT1E?oc=5",
+          "issue": "/en/daily/2026-08-04"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-08-03",
+      "entity": "Kuwait Stock Exchange",
+      "kind": "valuation",
+      "amount": "13.74 million dinars",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "first-half profit signaling recovering Gulf market confidence",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdnk4RnoybUNTV0wwbDdYOXFGUElDRnpraGt4LW1BaHNRSnNLbndWbm1LbEp6S2o5RGZCZTZrVE5DZjVlSjJzUTlYQTFISnJaaWpCOEtHVmtsU0hvWjhucFRPZVRvRlFBa2NSRnkxU3doQkFlQXV5WFRWRzQ3eGk3aFZlOWVyYVpnZW5zbE5mb1dpcjZRcjJ6ZDZzUFJSUzNoaVE?oc=5",
+      "source": "Times Kuwait",
+      "issue": "/en/daily/2026-08-03",
+      "region": "Other",
+      "category": "Other",
+      "id": "kuwait-valuation-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-03",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNdnk4RnoybUNTV0wwbDdYOXFGUElDRnpraGt4LW1BaHNRSnNLbndWbm1LbEp6S2o5RGZCZTZrVE5DZjVlSjJzUTlYQTFISnJaaWpCOEtHVmtsU0hvWjhucFRPZVRvRlFBa2NSRnkxU3doQkFlQXV5WFRWRzQ3eGk3aFZlOWVyYVpnZW5zbE5mb1dpcjZRcjJ6ZDZzUFJSUzNoaVE?oc=5",
+          "issue": "/en/daily/2026-08-03"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-07-31",
+      "entity": "MASAJ",
+      "kind": "raise",
+      "amount": "£1.5m",
+      "amountUsd": 1905000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "expanding massage studio network across London",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcFNlZHc2SFgxd1B6Njd2T1lHcXJPbC1HdHVzdHRqdzZyZUVyVGhtamVtaHNjYk5hSHI3bFRzQXIxSE5DMzRMQkJrQ0hxMENNNmphQUtYV3dtbG1mWnQ2UmZCaUhKa0VyeGUxLVFGNWlqYWZER0VqdlA4SXh1NjFQaEsyYlFZRXBBUjc4STdR?oc=5",
+      "source": "TheIndustry.beauty",
+      "issue": "/en/daily/2026-07-31",
+      "region": "UK",
+      "category": "Gyms & studios",
+      "id": "masaj-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-31",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOcFNlZHc2SFgxd1B6Njd2T1lHcXJPbC1HdHVzdHRqdzZyZUVyVGhtamVtaHNjYk5hSHI3bFRzQXIxSE5DMzRMQkJrQ0hxMENNNmphQUtYV3dtbG1mWnQ2UmZCaUhKa0VyeGUxLVFGNWlqYWZER0VqdlA4SXh1NjFQaEsyYlFZRXBBUjc4STdR?oc=5",
+          "issue": "/en/daily/2026-07-31"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-31",
+      "entity": "Ahead Health",
+      "kind": "raise",
+      "amount": "$10M",
+      "amountUsd": 10000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "launching preventive health platform in Germany and the Netherlands",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNV2JqQ2R5UlVCcDhrYk12TU9NWHVGQU9XOWZia0U1Wi0zeDg1NDdIN3lMRlAxMS1wN0pwaDZ0QWN4TTBObDVfWmtSOTBzSUNDWlRPUDRfM0RFeHZCNHBlM3k0al91c2VTRnpCVlhHc29XaTJOZGs2M0NpX2RiTjA3ZlFUUjd0SEVQMWs2Z1d1ZEp6VTA?oc=5",
+      "source": "Tech Funding News",
+      "issue": "/en/daily/2026-07-31",
+      "region": "DACH",
+      "category": "Health & longevity",
+      "id": "ahead-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-31",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNV2JqQ2R5UlVCcDhrYk12TU9NWHVGQU9XOWZia0U1Wi0zeDg1NDdIN3lMRlAxMS1wN0pwaDZ0QWN4TTBObDVfWmtSOTBzSUNDWlRPUDRfM0RFeHZCNHBlM3k0al91c2VTRnpCVlhHc29XaTJOZGs2M0NpX2RiTjA3ZlFUUjd0SEVQMWs2Z1d1ZEp6VTA?oc=5",
+          "issue": "/en/daily/2026-07-31"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-31",
+      "entity": "SoundHealth",
+      "kind": "raise",
+      "amount": "$12.25M",
+      "amountUsd": 12250000,
+      "currency": "USD",
+      "approx": false,
+      "note": "scaling AI-powered devices for breathing and sleep disorders",
+      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNU09zdXB5S09xdVpfdW9lZjVrT3dCQXU1SURQSTlXVENrbEc1eU1YODh1Q1cxRFBhb3B2amhCTm1pRy1kRzE0NTk4S3lpSEtZeVZQcDFtUE40cXlqQTlXdnJnN3VEeDNvcXlNOUNhUUdKVGtKQU04MTU1WFd5NDFkUERRZjVabU4wazJBbmR2akVxOGV1cnZ0MnFCSlRuMWJiTW9KMXU4ZWF3T09xLTY0NnV1TGkwMmtERGVneU1tUTNBODVMbXFVai1HY2NtczZFQ3dkaHl4YjRBS3dIRGI1YUFNX1lNcTcxQ3ctbS1DZEdUQ1gwYzl4NWdVc2ZQc3VO?oc=5",
+      "source": "bastillepost.com",
+      "issue": "/en/daily/2026-07-31",
+      "region": "Other",
+      "category": "Software & AI",
+      "id": "soundhealth-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-31",
+          "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNU09zdXB5S09xdVpfdW9lZjVrT3dCQXU1SURQSTlXVENrbEc1eU1YODh1Q1cxRFBhb3B2amhCTm1pRy1kRzE0NTk4S3lpSEtZeVZQcDFtUE40cXlqQTlXdnJnN3VEeDNvcXlNOUNhUUdKVGtKQU04MTU1WFd5NDFkUERRZjVabU4wazJBbmR2akVxOGV1cnZ0MnFCSlRuMWJiTW9KMXU4ZWF3T09xLTY0NnV1TGkwMmtERGVneU1tUTNBODVMbXFVai1HY2NtczZFQ3dkaHl4YjRBS3dIRGI1YUFNX1lNcTcxQ3ctbS1DZEdUQ1gwYzl4NWdVc2ZQc3VO?oc=5",
+          "issue": "/en/daily/2026-07-31"
+        }
+      ],
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
+    {
+      "date": "2026-07-31",
+      "entity": "Fitbit",
+      "kind": "acquisition",
+      "amount": "$2.1B",
+      "amountUsd": 2100000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "acquired by Google — traced as a brand-equity masterclass by Inc.",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMkR6N21meUlUc19yMG01NG9tMkpsWHhpUzRlZG5ick03NHE1ZzVpN1BfODRmZnRPOURpbUE3SzB3VWQ3X0wzb2tndTZpbF9vLWlxZnJhZndTS1pUNmthZm8yNlk3NFdjdU5KaXV3Uk0tQ01iVVM3cUptWmJoRDBzUVN2Y1FReGh3VDFrdFhfZFkyelBUei1qSG42VjF6MWw2OVZEWG9VdEplaVJBZmtHa1FFR29zU1AxdEg4?oc=5",
+      "source": "inc.com",
+      "issue": "/en/daily/2026-07-31",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "fitbit-acquisition-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-31",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMkR6N21meUlUc19yMG01NG9tMkpsWHhpUzRlZG5ick03NHE1ZzVpN1BfODRmZnRPOURpbUE3SzB3VWQ3X0wzb2tndTZpbF9vLWlxZnJhZndTS1pUNmthZm8yNlk3NFdjdU5KaXV3Uk0tQ01iVVM3cUptWmJoRDBzUVN2Y1FReGh3VDFrdFhfZFkyelBUei1qSG42VjF6MWw2OVZEWG9VdEplaVJBZmtHa1FFR29zU1AxdEg4?oc=5",
+          "issue": "/en/daily/2026-07-31"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-29",
+      "entity": "Throne Science",
+      "kind": "raise",
+      "amount": "$10M",
+      "amountUsd": 10000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "seed round to build a gut-health monitoring toilet, co-founded by Whoop's former CTO",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYXRZbW1fM3g4b2FrN2tuTm1ZTXVvTkZ0OEZIYTRzb0FzLW5aZE9RU2dsS0xteWhOZlQ3WXdYcGJTc3dnUnhEVlYtM181Q1Q1MnFLSWxDbVFYY2RvQ2x4Q1B1SXMzWjQyZnVYQzgwT0tqaC02OVB5R1JPUEtDOHVHSmNTQXM0dmJSMWQyR2ExNW4zZWZUTVZnNldhYkU3SEIzYVlqeW9mbElMRFVvX21CazhVN3lGNjZlNUs0aE5Bb0haLURuVFQ5bE9qc3ROUQ?oc=5",
+      "source": "Crunchbase News",
+      "issue": "/en/daily/2026-07-29",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "throne-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-29",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYXRZbW1fM3g4b2FrN2tuTm1ZTXVvTkZ0OEZIYTRzb0FzLW5aZE9RU2dsS0xteWhOZlQ3WXdYcGJTc3dnUnhEVlYtM181Q1Q1MnFLSWxDbVFYY2RvQ2x4Q1B1SXMzWjQyZnVYQzgwT0tqaC02OVB5R1JPUEtDOHVHSmNTQXM0dmJSMWQyR2ExNW4zZWZUTVZnNldhYkU3SEIzYVlqeW9mbElMRFVvX21CazhVN3lGNjZlNUs0aE5Bb0haLURuVFQ5bE9qc3ROUQ?oc=5",
+          "issue": "/en/daily/2026-07-29"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-28",
+      "entity": "VEYR",
+      "kind": "raise",
+      "amount": "£1M",
+      "amountUsd": 1270000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "UK startup raising to bring AI-powered fitness coaching to market",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQzh1cXpSSWlob3J4N1ZlcUUyYlFfNnFoczkyWXZpU2tTeDlfN3drdXpVNTRsR3ZmM0ZVMWhqdGttQXFja0NPSVFwOXNJc2dIT0ZQMVhWYmJOQjdNdGg4NWw2TUREMGh1aU56ZEJqdlZaSFB3MUFjMVd1VkNvMHBJQjVMbnRqSUpzeXI0bkxsT1FXc05KUmlkZTZvRHVQdDBZck0zQXp2OWZvYWZ0?oc=5",
+      "source": "Well Nation",
+      "issue": "/en/daily/2026-07-28",
+      "region": "UK",
+      "category": "Software & AI",
+      "id": "veyr-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-28",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQzh1cXpSSWlob3J4N1ZlcUUyYlFfNnFoczkyWXZpU2tTeDlfN3drdXpVNTRsR3ZmM0ZVMWhqdGttQXFja0NPSVFwOXNJc2dIT0ZQMVhWYmJOQjdNdGg4NWw2TUREMGh1aU56ZEJqdlZaSFB3MUFjMVd1VkNvMHBJQjVMbnRqSUpzeXI0bkxsT1FXc05KUmlkZTZvRHVQdDBZck0zQXp2OWZvYWZ0?oc=5",
+          "issue": "/en/daily/2026-07-28"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-27",
+      "entity": "Bain Capital",
+      "kind": "acquisition",
+      "amount": "$1.2B",
+      "amountUsd": 1200000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "acquired a supplements company, signalling private equity conviction in consumer health spending",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-07-27",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "bain-acquisition-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-27",
+          "url": "",
+          "issue": "/en/daily/2026-07-27"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-27",
+      "entity": "Sydney Marathon",
+      "kind": "valuation",
+      "amount": "$60M",
+      "amountUsd": 60000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "AI coaching program rollout valued at over $60 million",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWHBINE90QzRhS0xYWnNXdzZCcldwWmRDck1KRm9fTGQ4N2dWYm13MG42UFN6dERyT1pSM1NRb1dSZ1d6b19ZY2VKQ1pFY19aR0dva3ZaeFdzZm8wcnMtZkpUNGd0SHB4UkJtZWtVSHc4SDlBZ2F5bW1raWpEYXpYdFNiQzY1M096M1AtUW54emFPRldpTjBNQ191Y19hNkQ5VXd1azRod241bzJZZ05NVQ?oc=5",
+      "source": "Canadian Running Magazine",
+      "issue": "/en/daily/2026-07-27",
+      "region": "Asia-Pacific",
+      "category": "Software & AI",
+      "id": "sydney-valuation-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-27",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWHBINE90QzRhS0xYWnNXdzZCcldwWmRDck1KRm9fTGQ4N2dWYm13MG42UFN6dERyT1pSM1NRb1dSZ1d6b19ZY2VKQ1pFY19aR0dva3ZaeFdzZm8wcnMtZkpUNGd0SHB4UkJtZWtVSHc4SDlBZ2F5bW1raWpEYXpYdFNiQzY1M096M1AtUW54emFPRldpTjBNQ191Y19hNkQ5VXd1azRod241bzJZZ05NVQ?oc=5",
+          "issue": "/en/daily/2026-07-27"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-24",
+      "entity": "Planet Fitness operator (Australia)",
+      "kind": "valuation",
+      "amount": "$170m",
+      "amountUsd": 170000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "private equity values Australian Planet Fitness operator, confirming at-scale gyms are acquisition targets",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNT2Q3UzBMaFRiOTJOY0F5UXNFRDc2eXhfQWtZV2d1R0VaRmd5MjlzVmpBdE1PMFlCM0g4Q0gtN3RjU2I2LUpxZnVRaUhYN3JMWU9hLUQyMzBvZFQ2b3pVME5IYzdhT1gxaGh1RE81Z1ZvWTJqbFg0QXE5OFprSzN3amNCcm8wb3cyQXFsSnBjS041Y054UV9lRmFVbXZVNEFBSExySXQyYw?oc=5",
+      "source": "AFR",
+      "issue": "/en/daily/2026-07-24",
+      "region": "Asia-Pacific",
+      "category": "Gyms & studios",
+      "id": "planet-valuation-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-24",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNT2Q3UzBMaFRiOTJOY0F5UXNFRDc2eXhfQWtZV2d1R0VaRmd5MjlzVmpBdE1PMFlCM0g4Q0gtN3RjU2I2LUpxZnVRaUhYN3JMWU9hLUQyMzBvZFQ2b3pVME5IYzdhT1gxaGh1RE81Z1ZvWTJqbFg0QXE5OFprSzN3amNCcm8wb3cyQXFsSnBjS041Y054UV9lRmFVbXZVNEFBSExySXQyYw?oc=5",
+          "issue": "/en/daily/2026-07-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-23",
+      "entity": "Garmin / TrainingPeaks",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Garmin acquires TrainingPeaks, raising questions about platform pricing, integrations, and data ownership for coaches",
+      "url": "https://athletechnews.com/garmin-debuts-200-screenless-fitness-band-in-challenge-to-whoop/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-07-23",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "garmin-acquisition-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-23",
+          "url": "https://athletechnews.com/garmin-debuts-200-screenless-fitness-band-in-challenge-to-whoop/",
+          "issue": "/en/daily/2026-07-23"
+        },
+        {
+          "date": "2026-07-24",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1keDBKRUdYVlY5SERYeTgzM2ZMVnhSdDBBWHZrelNWc1hIN2htZExJOC1KcXhvQ0lHTzVadzBpNkQzMEtPTm1ocWNtQW9mQ0trN1ZuNEF1SkpnM0psOHRqZHRqVHM3RFVwY1pPai1pUWlLR2s?oc=5",
+          "issue": "/en/daily/2026-07-24"
+        },
+        {
+          "date": "2026-07-27",
+          "url": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxOQ3RsWVlJRFZQaWhQYXZlSE1UVUFMZGVzVVpaTF8wU3ZuS3Y0V1Y4eThwdmY4RVdNSGVUXzZUa2JlMlphWG9fZm9jYWdXWVRqOXAxSF9mMXlodk9XeXBhUHlzcVNodUNoMVU2aXRWdHU0bmQ1SnFUZG90aGh1X0ppY01kOFZ5U3BxOUZzdWdjOVA0LVR3cnR6TmtLbl9yOUlDNzhyZnNWbWNxWi1OX2xhN2M0LUpaQ0tPVE5oZTI2RFAzVW13TlpjSWdzbjdyem92QjBqMFg2dDE2ekVBMzViZjRfcEcySm5rcVhRUWo5TVhLbFRHNmpNSzhsclA2dWF2a3BoYVZnM2FPRzRXZHRsQnVBNXZBVlI5WEtxc0F5dGxWX0hKSjRHRmlnYlR2R3pLOTNIN1dwR3o5c2J6akI1ck15RQ?oc=5",
+          "issue": "/en/daily/2026-07-27"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-22",
+      "entity": "EGYM & Playlist",
+      "kind": "acquisition",
+      "amount": "$7.5B",
+      "amountUsd": 7500000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "a reported tie-up that could turn structured training into prescribed, outcome-based fitness",
+      "url": "https://athletechnews.com/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-07-22",
+      "region": "Other",
+      "category": "Other",
+      "id": "egym-acquisition-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-22",
+          "url": "https://athletechnews.com/",
+          "issue": "/en/daily/2026-07-22"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-21",
+      "entity": "Wonder",
+      "kind": "raise",
+      "amount": "$650M",
+      "amountUsd": 650000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Marc Lore's personalized-nutrition company raises a Series D at a $9B valuation",
+      "url": "https://www.restaurantdive.com/news/wonder-valuation-9-billion-latest-650m-funding/825417/",
+      "source": "Restaurant Dive",
+      "issue": "/en/daily/2026-07-21",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "wonder-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-21",
+          "url": "https://www.restaurantdive.com/news/wonder-valuation-9-billion-latest-650m-funding/825417/",
+          "issue": "/en/daily/2026-07-21"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-20",
+      "entity": "Ultimate Longevity Center",
+      "kind": "raise",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "sells 200 franchise territories ahead of its full launch",
+      "url": "",
+      "source": "",
+      "issue": "/en/daily/2026-07-20",
+      "region": "Other",
+      "category": "Gyms & studios",
+      "id": "ultimate-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-20",
+          "url": "",
+          "issue": "/en/daily/2026-07-20"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-17",
+      "entity": "Interactive Strength",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "acquires connected stair-climbing brand Stepr",
+      "url": "https://athletechnews.com/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-07-17",
+      "region": "Other",
+      "category": "Other",
+      "id": "interactive-acquisition-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-17",
+          "url": "https://athletechnews.com/",
+          "issue": "/en/daily/2026-07-17"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-16",
+      "entity": "Oura",
+      "kind": "raise",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "takes a strategic equity investment from Eli Lilly to support GLP-1 patients",
+      "url": "https://insider.fitt.co/oura-supports-psychedelic-research-invi-mindhealth/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-07-16",
+      "region": "Other",
+      "category": "Wearables & devices",
+      "id": "oura-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-16",
+          "url": "https://insider.fitt.co/oura-supports-psychedelic-research-invi-mindhealth/",
+          "issue": "/en/daily/2026-07-16"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-15",
+      "entity": "Neko Health",
+      "kind": "raise",
+      "amount": "$700M",
+      "amountUsd": 700000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Daniel Ek's body-scanning startup raises at a $7B valuation ahead of US launch",
+      "url": "https://www.axios.com/pro/health-tech-deals/2026/07/15/neko-health-raises-700m-series-c",
+      "source": "Axios",
+      "issue": "/en/daily/2026-07-15",
+      "region": "North America",
+      "category": "Other",
+      "id": "neko-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-15",
+          "url": "https://www.axios.com/pro/health-tech-deals/2026/07/15/neko-health-raises-700m-series-c",
+          "issue": "/en/daily/2026-07-15"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-14",
+      "entity": "IM8 (Prenetics)",
+      "kind": "raise",
+      "amount": "$1B",
+      "amountUsd": 1000000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "David Beckham's supplement brand takes growth capital from General Catalyst's CVF",
+      "url": "https://athletechnews.com/general-catalyst-commits-1-billion-to-david-beckham-im8-supplement-brand/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-07-14",
+      "region": "Other",
+      "category": "Nutrition & supplements",
+      "id": "im8-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-14",
+          "url": "https://athletechnews.com/general-catalyst-commits-1-billion-to-david-beckham-im8-supplement-brand/",
+          "issue": "/en/daily/2026-07-14"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-09",
+      "entity": "Basic-Fit",
+      "kind": "acquisition",
+      "amount": "$61M",
+      "amountUsd": 61000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "acquires German brand wellyou to deepen its DACH footprint",
+      "url": "https://athletechnews.com/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-07-09",
+      "region": "DACH",
+      "category": "Other",
+      "id": "basic-acquisition-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-09",
+          "url": "https://athletechnews.com/",
+          "issue": "/en/daily/2026-07-09"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-07-03",
+      "entity": "Heatronics",
+      "kind": "raise",
+      "amount": "Rs 1.8 crore",
+      "amountUsd": 216000,
+      "currency": "INR",
+      "approx": false,
+      "note": "seed round led by Inflection Point Ventures to scale heat-based wellness devices",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNTZsRkhxRzJBNTRXdk41d21LSG4xbi1GeU9jd3NjVnRQUnY0VjRXeGY3bEFaSTRJVmxXSGpzaUhISDNGM2ZOSHpfLVNkU1dlcVQ3MHVEM0ota0loTTExNTQycDBPYUFHdFdvemx5SlhiY3Vudzk0Y2lEOWpPSFA3TC1BVFk3NUM2YlpuQkthWHN2SnlMSUFIM1lEekZXQmd6VHdITmFkdGhTZ1VLVHQyNDc3RDNEdjNXQWpDQlBNdmprdnpHQ29GZmZGMVM0QQ?oc=5",
+      "source": "Siliconindia",
+      "issue": "/en/daily/2026-07-03",
+      "region": "Other",
+      "category": "Other",
+      "id": "heatronics-raise-2026-07",
+      "reports": [
+        {
+          "date": "2026-07-03",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNTZsRkhxRzJBNTRXdk41d21LSG4xbi1GeU9jd3NjVnRQUnY0VjRXeGY3bEFaSTRJVmxXSGpzaUhISDNGM2ZOSHpfLVNkU1dlcVQ3MHVEM0ota0loTTExNTQycDBPYUFHdFdvemx5SlhiY3Vudzk0Y2lEOWpPSFA3TC1BVFk3NUM2YlpuQkthWHN2SnlMSUFIM1lEekZXQmd6VHdITmFkdGhTZ1VLVHQyNDc3RDNEdjNXQWpDQlBNdmprdnpHQ29GZmZGMVM0QQ?oc=5",
+          "issue": "/en/daily/2026-07-03"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-06-21",
+      "entity": "Peloton",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "acquired connected Pilates brand Skōp to broaden its fitness portfolio beyond the bike",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcGtlSDBSZE1YY3dMM09QQVdhdUZsdHlsTEZlQXYtQ0YxOTkxeklOVGZ3dXB2M0lwS2JCSk1QcFg0eW9QdHZ1dWJib1VIbU1vbFBJX29GT1hSc3JXS2tkMHZkNGFRcEFkMUp2bHJiVUo1X2ZrVTFwTWRjN1llVng5MXBQX0NLSFN0cERnX3ZqYy1nUQ?oc=5",
+      "source": "Yahoo! Finance Canada",
+      "issue": "/en/daily/2026-06-21",
+      "region": "Other",
+      "category": "Gyms & studios",
+      "id": "peloton-acquisition-2026-06",
+      "reports": [
+        {
+          "date": "2026-06-21",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcGtlSDBSZE1YY3dMM09QQVdhdUZsdHlsTEZlQXYtQ0YxOTkxeklOVGZ3dXB2M0lwS2JCSk1QcFg0eW9QdHZ1dWJib1VIbU1vbFBJX29GT1hSc3JXS2tkMHZkNGFRcEFkMUp2bHJiVUo1X2ZrVTFwTWRjN1llVng5MXBQX0NLSFN0cERnX3ZqYy1nUQ?oc=5",
+          "issue": "/en/daily/2026-06-21"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    }
+  ]
+}

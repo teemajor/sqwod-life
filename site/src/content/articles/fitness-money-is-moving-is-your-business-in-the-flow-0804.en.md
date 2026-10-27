@@ -3,6 +3,8 @@ urlSlug: fitness-money-is-moving-is-your-business-in-the-flow-0804
 lang: "en"
 counterpart: fitness-money-is-moving-is-your-business-in-the-flow-0804
 title: "Fitness Money Is Moving. Is Your Business in the Flow?"
+topic: market-moves
+newsTake: true
 description: "From a $67M real estate deal to a $10M digital health raise, capital is chasing a very specific kind of fitness operator right now — here's what they all have in common."
 pillar: signal
 type: market-data

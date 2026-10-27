@@ -3,6 +3,8 @@ urlSlug: fitness-is-booming-and-hemorrhaging-customers-at-the-same-ti-1013
 lang: "en"
 counterpart: fitness-is-booming-and-hemorrhaging-customers-at-the-same-ti-1013
 title: "Fitness Is Booming and Hemorrhaging Customers at the Same Time"
+topic: retention
+newsTake: true
 description: "The industry is expanding into new markets while quietly failing the members it already has — here's how to stop doing both."
 pillar: signal
 type: trends

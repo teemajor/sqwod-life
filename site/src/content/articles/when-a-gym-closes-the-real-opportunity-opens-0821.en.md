@@ -3,6 +3,8 @@ urlSlug: when-a-gym-closes-the-real-opportunity-opens-0821
 lang: "en"
 counterpart: when-a-gym-closes-the-real-opportunity-opens-0821
 title: "When a Gym Closes, the Real Opportunity Opens"
+topic: offer-programming
+newsTake: true
 description: "Two local fitness stories reveal exactly how smart studios survive — and what coaches can learn right now."
 pillar: move
 type: method

@@ -3,6 +3,8 @@ urlSlug: fitness-money-is-moving-is-your-business-in-the-flow-0804
 lang: "de"
 counterpart: fitness-money-is-moving-is-your-business-in-the-flow-0804
 title: "Fitness-Branche sucht Kapital – wer die Logik kennt, gewinnt"
+topic: market-moves
+newsTake: true
 description: "Warum gerade jetzt Geld in Clubs, Health-Tech und sogar Psychedelika fließt – und was Betreiber daraus machen sollten."
 pillar: signal
 type: market-data

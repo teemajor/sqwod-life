@@ -5,19 +5,21 @@ const { lang, active = '', altPath } = Astro.props;
 const other = lang === 'en' ? 'de' : 'en';
 const otherHref = altPath ?? `/${other}/`;
 const de = lang === 'de';
-// Four doors, operator-first. Evidence lives inside Read; Press and About sit in the footer.
+// Format-led nav (27 Oct 2026, option B, modelled on Fitt Insider / Athletech):
+// Daily, Articles, Evidence, Reports, Verified. Topics are chips inside Articles
+// and Evidence. Reports keeps its /intelligence URLs; only the label changed.
 const L = de
-  ? { daily: 'Daily', read: 'Lesen', intel: 'Intelligence', verified: 'Verified', adv: 'Werben' }
-  : { daily: 'Daily', read: 'Read', intel: 'Intelligence', verified: 'Verified', adv: 'Advertise' };
-const readOn = active === 'articles' || active === 'evidence';
+  ? { daily: 'Daily', articles: 'Artikel', evidence: 'Evidence', reports: 'Reports', verified: 'Verified', adv: 'Werben' }
+  : { daily: 'Daily', articles: 'Articles', evidence: 'Evidence', reports: 'Reports', verified: 'Verified', adv: 'Advertise' };
 ---
 <header class="site">
   <div class="wrap bar">
     <a class="logo" href={`/${lang}/`}><img class="logo-mark lm-dark" src="/sqwod-white.png" alt="Sqwod" width="76" height="20" /><img class="logo-mark lm-light" src="/sqwod-black.png" alt="Sqwod" width="76" height="20" /></a>
     <nav class="main" id="mainnav">
       <a href={`/${lang}/daily`} class={active==='daily'?'on':''}>{L.daily}</a>
-      <a href={`/${lang}/articles`} class={readOn?'on':''}>{L.read}</a>
-      <a href={`/${lang}/intelligence`} class={active==='intelligence'?'on':''}>{L.intel}</a>
+      <a href={`/${lang}/articles`} class={active==='articles'?'on':''}>{L.articles}</a>
+      <a href={`/${lang}/evidence`} class={active==='evidence'?'on':''}>{L.evidence}</a>
+      <a href={`/${lang}/intelligence`} class={active==='intelligence'?'on':''}>{L.reports}</a>
       <a href={`/${lang}/verified`} class={active==='verified'?'on':''}>{L.verified}</a>
       <a href={`/${lang}/advertise`} class={`nav-adv ${active==='advertise'?'on':''}`}>{L.adv}</a>
     </nav>

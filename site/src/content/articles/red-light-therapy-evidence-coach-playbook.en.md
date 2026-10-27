@@ -3,6 +3,8 @@ urlSlug: red-light-therapy-evidence-coach-playbook
 lang: "en"
 counterpart: red-light-therapy-evidence-coach-playbook
 title: "Red Light Therapy: What the Panels, Masks and Caps Actually Do — Ranked by Evidence"
+seoTitle: "Red Light Therapy: Does It Work? Evidence Ranked by Use"
+topic: wearables-devices
 description: "We graded the photobiomodulation research use by use — pre-workout performance, pain, hair, skin — and separated the claims that hold up from the ones the device marketing invented. Plus what actually matters if a client is about to spend £400 on a panel."
 pillar: gear
 type: evidence

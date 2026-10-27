@@ -3,6 +3,7 @@ urlSlug: pilates-reformer-boom
 lang: en
 counterpart: pilates-reformer-boom
 title: "The Pilates Land Grab: a $19.2bn Market, and Everyone Wants In"
+seoTitle: "Pilates Market Size 2026: $19.2bn and Growing"
 description: "US Pilates & yoga studios are a $19.2bn market growing ~11%/yr (IBISWorld), Pilates is the #1 workout on ClassPass three years running (+66%), and Peloton just bought its way into connected reformers. The reformer boom, by the numbers. A living Sqwod Intelligence report."
 pillar: build
 type: market-data

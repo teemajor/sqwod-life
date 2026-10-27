@@ -3,6 +3,8 @@ urlSlug: when-a-gym-closes-the-real-opportunity-opens-0821
 lang: "de"
 counterpart: when-a-gym-closes-the-real-opportunity-opens-0821
 title: "Warum dein Studio stirbt – und was Jetset Pilates richtig macht"
+topic: offer-programming
+newsTake: true
 description: "Zwei aktuelle Storys zeigen, warum Community das einzige echte Alleinstellungsmerkmal im Fitnessmarkt ist – und wie du es sofort nutzt."
 pillar: move
 type: method

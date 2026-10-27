@@ -3,6 +3,8 @@ urlSlug: your-online-booking-system-just-became-a-security-vulnerabil-0818
 lang: "de"
 counterpart: your-online-booking-system-just-became-a-security-vulnerabil-0818
 title: "KI bucht deinen Pilates-Kurs – ob du willst oder nicht"
+topic: ai-tools
+newsTake: true
 description: "Was passiert, wenn autonome KI-Agenten auf volle Kurse treffen – und was du als Coach jetzt tun solltest."
 pillar: move
 type: method

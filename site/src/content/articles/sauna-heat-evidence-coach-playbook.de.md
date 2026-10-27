@@ -3,6 +3,8 @@ urlSlug: sauna-heat-evidence-coach-playbook
 lang: "de"
 counterpart: sauna-heat-evidence-coach-playbook
 title: "Deine Kunden glauben, die Sauna verlängert ihr Leben. Das zeigt die Evidenz wirklich."
+seoTitle: "Sauna und Gesundheit: Was die Studienlage wirklich zeigt"
+topic: recovery-sleep
 description: "Wir haben die finnischen Kohortenstudien, die Interventionsstudien und die Regenerationsforschung gelesen und bewertet. Was Hitze wirklich fürs Herz und fürs Training bringt, wo die Langlebigkeits-Story überinterpretiert wird — und was du dem Kunden sagst, der fragt."
 pillar: signal
 type: evidence

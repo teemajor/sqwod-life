@@ -3,6 +3,8 @@ urlSlug: your-gym-isn-t-too-small-to-steal-strategy-from-a-5-5b-brand-1006
 lang: "de"
 counterpart: your-gym-isn-t-too-small-to-steal-strategy-from-a-5-5b-brand-1006
 title: "Stärke für alle: Was Vasa und Vuori Trainern wirklich sagen"
+topic: marketing-community
+newsTake: true
 description: "Zwei Branchen-Moves zeigen, wo der Fitness-Markt hingeht – und was du als Coach jetzt tun solltest."
 pillar: move
 type: method

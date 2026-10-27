@@ -3,6 +3,8 @@ urlSlug: your-studio-is-a-community-engine-are-you-using-it-0707
 lang: "de"
 counterpart: your-studio-is-a-community-engine-are-you-using-it-0707
 title: "Your Studio Is a Community Engine — Are You Using It?"
+seoTitle: "Community-Marketing fürs Studio: Mitglieder als bester Kanal"
+topic: marketing-community
 description: "Six real moves from top fitness brands show exactly how to turn your physical space and audience into your most powerful marketing asset."
 pillar: build
 type: marketing

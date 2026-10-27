@@ -3,6 +3,8 @@ urlSlug: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
 lang: "en"
 counterpart: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
 title: "Why Your Training Menu Is Broken (And How to Fix It Fast)"
+topic: offer-programming
+newsTake: true
 description: "From 3-day splits to over-55s lifting heavy, this week's fitness news reveals one uncomfortable truth: most people are training the wrong things, the wrong way, for the wrong crowd."
 pillar: move
 type: method

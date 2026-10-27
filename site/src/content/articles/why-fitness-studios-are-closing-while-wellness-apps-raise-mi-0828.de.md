@@ -3,6 +3,8 @@ urlSlug: why-fitness-studios-are-closing-while-wellness-apps-raise-mi-0828
 lang: "de"
 counterpart: why-fitness-studios-are-closing-while-wellness-apps-raise-mi-0828
 title: "Wachstum oder Pleite: Was die Fitness-Branche gerade entscheidet"
+topic: market-moves
+newsTake: true
 description: "Fünf aktuelle Nachrichten zeigen ein Muster – und eine klare Handlungsoption für Studiobesitzer."
 pillar: build
 type: coaching-business

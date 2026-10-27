@@ -3,6 +3,8 @@ urlSlug: big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811
 lang: "de"
 counterpart: big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811
 title: "Fitness-Branche im Übernahme-Fieber: Was Coaches jetzt wissen müssen"
+topic: market-moves
+newsTake: true
 description: "Große Konzerne kaufen sich in Wellness ein – wer kein klares Profil hat, wird unsichtbar oder übernommen."
 pillar: build
 type: ai-automation

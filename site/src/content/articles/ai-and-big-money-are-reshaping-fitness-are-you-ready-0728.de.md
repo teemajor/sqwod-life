@@ -3,6 +3,8 @@ urlSlug: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
 lang: "de"
 counterpart: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
 title: "KI, Kapital und Konkurrenz: Wer jetzt schläft, verliert Mitglieder"
+topic: market-moves
+newsTake: true
 description: "Drei globale Trends zeigen, wohin die Fitnessbranche kippt – und was du diese Woche konkret tun kannst, um nicht abgehängt zu werden."
 pillar: build
 type: ai-automation

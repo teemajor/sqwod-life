@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-splitting-in-two-which-side-are-you--0929
 lang: "en"
 counterpart: the-fitness-industry-is-splitting-in-two-which-side-are-you--0929
 title: "The Fitness Industry Is Splitting in Two — Which Side Are You On?"
+topic: strategy
+newsTake: true
 description: "This week's news reveals a clear fault line between studios scaling smart and those quietly unraveling — here's how to make sure you're on the right side."
 pillar: build
 type: ai-automation

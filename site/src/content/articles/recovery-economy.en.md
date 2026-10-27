@@ -3,6 +3,8 @@ urlSlug: recovery-economy
 lang: en
 counterpart: recovery-economy
 title: "Recovery is eating the supplement aisle"
+topic: market-moves
+newsTake: true
 description: "Wellness is the one category consumers plan to spend MORE on in 2026 — and recovery is its broadest door."
 pillar: signal
 type: trends

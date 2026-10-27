@@ -3,6 +3,8 @@ urlSlug: seed-oils-evidence-coach-playbook
 lang: "de"
 counterpart: seed-oils-evidence-coach-playbook
 title: "Bringen uns Pflanzenöle wirklich um? Wir haben die Studien gelesen. Die Antwort ärgert beide Lager."
+seoTitle: "Sind Samenöle ungesund? Was die Studien wirklich zeigen"
+topic: nutrition-metabolism
 description: "Wir haben die Mortalitäts-Kohorten, die Entzündungs-RCTs, den Cochrane-Review und die eine Studie, die das Internet liebt, herausgezogen — alle benotet — und herausgearbeitet, was ein Coach einem Kunden sagen sollte, der gerade sein Rapsöl weggeworfen hat. Spoiler: die Evidenz zeigt in die Gegenrichtung zur Panik."
 pillar: signal
 type: evidence

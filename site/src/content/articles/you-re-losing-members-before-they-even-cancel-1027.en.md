@@ -3,6 +3,8 @@ urlSlug: you-re-losing-members-before-they-even-cancel-1027
 lang: "en"
 counterpart: you-re-losing-members-before-they-even-cancel-1027
 title: "You're Losing Members Before They Even Cancel"
+seoTitle: "Gym Churn Warning Signs: Spot Members Before They Cancel"
+topic: retention
 description: "The signals are already there — here's how smart operators are learning to read them before it's too late."
 pillar: signal
 type: trends

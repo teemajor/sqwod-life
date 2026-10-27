@@ -3,6 +3,8 @@ urlSlug: why-your-next-marketing-asset-is-already-on-the-competition--0721
 lang: "en"
 counterpart: why-your-next-marketing-asset-is-already-on-the-competition--0721
 title: "Why Your Next Marketing Asset Is Already on the Competition Floor"
+topic: dach
+newsTake: true
 description: "The DACH fitness market's latest data drop and a European champion's story reveal the same growth lever operators keep ignoring."
 pillar: signal
 type: trends

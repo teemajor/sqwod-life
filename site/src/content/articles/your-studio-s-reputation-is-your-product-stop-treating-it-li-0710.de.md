@@ -3,6 +3,8 @@ urlSlug: your-studio-s-reputation-is-your-product-stop-treating-it-li-0710
 lang: "de"
 counterpart: your-studio-s-reputation-is-your-product-stop-treating-it-li-0710
 title: "Dein Studio kämpft ums Überleben – und du weißt noch nicht warum"
+topic: marketing-community
+newsTake: true
 description: "Warum Community, Qualität und Erlebnis gerade die einzigen Waffen sind, die zählen – und wie du sie sofort einsetzt."
 pillar: build
 type: marketing

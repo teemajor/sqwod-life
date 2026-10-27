@@ -3,6 +3,8 @@ urlSlug: big-money-is-eating-wellness-indie-gyms-what-s-your-move-0807
 lang: "de"
 counterpart: big-money-is-eating-wellness-indie-gyms-what-s-your-move-0807
 title: "Wer das Produkt nicht besitzt, verliert den Kunden"
+topic: market-moves
+newsTake: true
 description: "Warum Fitness-Operatoren jetzt entscheiden müssen, ob sie Plattform oder Zulieferer sein wollen – und was das konkret bedeutet."
 pillar: signal
 type: trends

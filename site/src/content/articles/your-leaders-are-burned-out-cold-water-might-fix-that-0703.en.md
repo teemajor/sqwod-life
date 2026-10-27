@@ -3,6 +3,8 @@ urlSlug: your-leaders-are-burned-out-cold-water-might-fix-that-0703
 lang: "en"
 counterpart: your-leaders-are-burned-out-cold-water-might-fix-that-0703
 title: "Your Leaders Are Burned Out. Cold Water Might Fix That."
+topic: strategy
+newsTake: true
 description: "How contrast hydrotherapy and the biology of stress decisions point to one overlooked recovery tool for fitness operators."
 pillar: signal
 type: trends

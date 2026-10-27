@@ -3,6 +3,8 @@ urlSlug: big-brands-are-scaling-fast-here-s-how-to-keep-up-0724
 lang: "en"
 counterpart: big-brands-are-scaling-fast-here-s-how-to-keep-up-0724
 title: "Big Brands Are Scaling Fast. Here's How to Keep Up."
+topic: market-moves
+newsTake: true
 description: "Four headlines prove the fitness industry is consolidating around strong brands — here's what independent coaches and studio owners must do right now."
 pillar: build
 type: coaching-business

@@ -131,6 +131,14 @@ const articles = defineCollection({
     lang,
     counterpart: z.string().optional(),
     title: z.string(),
+    // Search title (27 Oct 2026): the <title> tag and what search/AI engines quote.
+    // The punchy `title` stays as the on-page headline. Optional; falls back to title.
+    seoTitle: z.string().optional(),
+    // Topic chip slug from config/topics.ts (replaces lanes for browsing).
+    topic: z.string().optional(),
+    // Dated news take (the pre-27-Oct roundup pieces). Stays live for readers but
+    // leaves Google and the sitemap NEWS_TAKE_INDEX_DAYS after publishing (config/seo.mjs).
+    newsTake: z.boolean().default(false),
     description: z.string(),
     pillar,                              // lane: move | build | gear | signal
     type: z.string().default('analysis'), // granular sub-type (founder-story, ai-automation, method, market-data…)

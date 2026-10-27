@@ -3,6 +3,8 @@ urlSlug: your-studio-is-leaving-money-on-the-floor-here-s-the-fix-0807
 lang: "de"
 counterpart: your-studio-is-leaving-money-on-the-floor-here-s-the-fix-0807
 title: "Deine Kunden wollen mehr – aber du merkst es zu spät"
+topic: pricing-revenue
+newsTake: true
 description: "Wie Luxus-Wellness, Silber-Athleten und KI-Coaching dir zeigen, wo dein Studio gerade Geld liegen lässt."
 pillar: move
 type: method

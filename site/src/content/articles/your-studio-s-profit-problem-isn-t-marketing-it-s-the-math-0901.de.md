@@ -3,6 +3,8 @@ urlSlug: your-studio-s-profit-problem-isn-t-marketing-it-s-the-math-0901
 lang: "de"
 counterpart: your-studio-s-profit-problem-isn-t-marketing-it-s-the-math-0901
 title: "Dein Studio kämpft ums Überleben – und du denkst, es liegt am Marketing"
+seoTitle: "Studio profitabel machen: erst Preise, dann Marketing"
+topic: pricing-revenue
 description: "Warum jedes zweite Studio rote Zahlen schreibt und wie du mit drei konkreten Hebeln heute noch gegensteuern kannst."
 pillar: build
 type: coaching-business

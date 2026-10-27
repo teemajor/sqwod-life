@@ -3,6 +3,8 @@ urlSlug: the-dach-fitness-boom-has-a-people-problem-0714
 lang: "de"
 counterpart: the-dach-fitness-boom-has-a-people-problem-0714
 title: "Wachstum allein reicht nicht – was die DACH-Studie wirklich bedeutet"
+topic: dach
+newsTake: true
 description: "Die Fitnesswirtschaft wächst, aber wer jetzt nicht handelt, schaut dem Erfolg anderer zu."
 pillar: signal
 type: trends

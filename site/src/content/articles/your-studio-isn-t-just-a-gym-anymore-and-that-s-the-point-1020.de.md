@@ -3,6 +3,8 @@ urlSlug: your-studio-isn-t-just-a-gym-anymore-and-that-s-the-point-1020
 lang: "de"
 counterpart: your-studio-isn-t-just-a-gym-anymore-and-that-s-the-point-1020
 title: "Dein Studio ist schon überholt – bevor du es merkst"
+topic: marketing-community
+newsTake: true
 description: "Drei aktuelle Branchensignale zeigen, warum Erlebnis, Marke und Longevity jetzt dein Trainingskonzept neu definieren müssen – und was du diese Woche konkret änderst."
 pillar: move
 type: method

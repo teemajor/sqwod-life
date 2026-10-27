@@ -3,6 +3,8 @@ urlSlug: your-members-are-losing-600-a-year-and-blaming-you-for-it-0818
 lang: "en"
 counterpart: your-members-are-losing-600-a-year-and-blaming-you-for-it-0818
 title: "Your Members Are Losing $600 a Year — And Blaming You For It"
+topic: pricing-revenue
+newsTake: true
 description: "New research exposes a pricing loyalty trap that's quietly killing retention, and what smart operators are doing right now to fix it."
 pillar: build
 type: ai-automation

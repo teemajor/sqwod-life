@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-consolidating-fast-are-you-ready-1020
 lang: "en"
 counterpart: the-fitness-industry-is-consolidating-fast-are-you-ready-1020
 title: "The Fitness Industry Is Consolidating Fast — Are You Ready?"
+seoTitle: "Fitness Industry Consolidation 2026: Who Is Buying and Why"
+topic: market-moves
 description: "From mega-acquisitions to €1M studio software raises, the fitness industry is reorganizing itself — here's what operators need to do before the dust settles."
 pillar: signal
 type: market-data

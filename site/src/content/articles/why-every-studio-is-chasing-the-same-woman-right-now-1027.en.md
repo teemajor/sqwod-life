@@ -3,6 +3,8 @@ urlSlug: why-every-studio-is-chasing-the-same-woman-right-now-1027
 lang: "en"
 counterpart: why-every-studio-is-chasing-the-same-woman-right-now-1027
 title: "Why Every Studio Is Chasing the Same Woman Right Now"
+topic: strategy
+newsTake: true
 description: "Three industry moves reveal a single trend — and a concrete playbook for coaches who want to stay ahead of it."
 pillar: move
 type: method

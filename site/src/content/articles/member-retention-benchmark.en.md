@@ -3,6 +3,7 @@ urlSlug: member-retention-benchmark
 lang: en
 counterpart: member-retention-benchmark
 title: "The Member Retention Benchmark 2026"
+seoTitle: "Gym Member Retention Rate Benchmark 2026"
 description: "The real industry anchor is 66.4% annual retention — not the decade-old 71.4% everyone still quotes. Enter your number and see where you actually stand. A living Sqwod Intelligence report."
 pillar: signal
 type: market-data

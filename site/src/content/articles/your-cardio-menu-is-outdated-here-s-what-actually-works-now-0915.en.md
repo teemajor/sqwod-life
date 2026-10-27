@@ -3,6 +3,8 @@ urlSlug: your-cardio-menu-is-outdated-here-s-what-actually-works-now-0915
 lang: "en"
 counterpart: your-cardio-menu-is-outdated-here-s-what-actually-works-now-0915
 title: "Your Cardio Menu Is Outdated. Here's What Actually Works Now"
+topic: offer-programming
+newsTake: true
 description: "From post-meal walks to Pilates strength hybrids, the fitness landscape is shifting — here's how to update your programming before your clients do it for you."
 pillar: move
 type: method

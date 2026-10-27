@@ -3,6 +3,8 @@ urlSlug: your-gym-is-leaking-money-and-it-s-not-just-churn-0925
 lang: "en"
 counterpart: your-gym-is-leaking-money-and-it-s-not-just-churn-0925
 title: "Your Gym Is Leaking Money — And It's Not Just Churn"
+topic: retention
+newsTake: true
 description: "From failed payments to viral PR disasters, here's what's quietly killing fitness businesses right now — and what to do about it."
 pillar: signal
 type: trends

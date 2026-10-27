@@ -3,6 +3,8 @@ urlSlug: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
 lang: "en"
 counterpart: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
 title: "AI and Big Money Are Reshaping Fitness — Are You Ready?"
+topic: market-moves
+newsTake: true
 description: "The funding rounds and franchise expansions making headlines right now signal one thing: the fitness industry is consolidating fast, and indie operators need a clear playbook to stay relevant."
 pillar: build
 type: ai-automation

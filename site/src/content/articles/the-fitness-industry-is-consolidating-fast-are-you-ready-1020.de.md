@@ -3,6 +3,8 @@ urlSlug: the-fitness-industry-is-consolidating-fast-are-you-ready-1020
 lang: "de"
 counterpart: the-fitness-industry-is-consolidating-fast-are-you-ready-1020
 title: "Wer nicht skaliert, wird gefressen – die Fitness-Konsolidierung läuft"
+seoTitle: "Konsolidierung der Fitnessbranche 2026: Wer kauft und warum"
+topic: market-moves
 description: "Drei Signale zeigen, warum Fitness-Betreiber jetzt entscheiden müssen, ob sie Jäger oder Beute sind."
 pillar: signal
 type: market-data

@@ -3,6 +3,8 @@ urlSlug: when-22k-memberships-are-selling-why-are-you-still-discounti-0904
 lang: "en"
 counterpart: when-22k-memberships-are-selling-why-are-you-still-discounti-0904
 title: "When $22K Memberships Are Selling, Why Are You Still Discounting?"
+seoTitle: "How to Price a Premium Gym Membership Tier"
+topic: pricing-revenue
 description: "The luxury gym boom is real — here's how mid-market studios can stop racing to the bottom and start charging what they're worth."
 pillar: build
 type: ai-automation

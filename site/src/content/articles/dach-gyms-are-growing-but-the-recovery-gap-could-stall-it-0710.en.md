@@ -3,6 +3,8 @@ urlSlug: dach-gyms-are-growing-but-the-recovery-gap-could-stall-it-0710
 lang: "en"
 counterpart: dach-gyms-are-growing-but-the-recovery-gap-could-stall-it-0710
 title: "DACH Gyms Are Growing — But the Recovery Gap Could Stall It"
+topic: dach
+newsTake: true
 description: "The DACH fitness market is on a hot streak, and the operators who add contrast hydrotherapy now will own the margin everyone else is chasing."
 pillar: signal
 type: trends
