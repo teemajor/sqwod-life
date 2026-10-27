@@ -17,7 +17,7 @@ export async function getRelated(lang: Lang, entry: CollectionEntry<'articles'>,
     ...arts.map((a) => ({
       title: a.data.title,
       href: `/${lang}/${a.data.format === 'report' || a.data.format === 'index' ? 'intelligence' : 'analysis'}/${a.data.urlSlug}`,
-      kind: a.data.format === 'report' ? 'Report' : a.data.format === 'index' ? 'Index' : a.data.format === 'field-note' ? 'Field Note' : 'Analysis',
+      kind: a.data.format === 'report' ? 'Report' : a.data.format === 'index' ? 'Index' : a.data.format === 'field-note' ? 'Field Note' : a.data.type === 'evidence' ? 'Evidence' : 'Analysis',
       desc: a.data.description,
       tags: a.data.tags ?? [],
       date: a.data.publishedAt.getTime(),

@@ -2,6 +2,8 @@
 import { type Lang } from '../i18n/ui';
 import { pillarMeta, type Pillar } from '../i18n/pillars';
 import { TOPICS, topicLabel } from '../config/topics';
+import { evidenceAnswers } from '../config/evidence-answers';
+import { tierMeta } from '../config/supplements-az';
 import ArticleHero from './ArticleHero.astro';
 import ShareBar from './ShareBar.astro';
 import BenchmarkWidget from './BenchmarkWidget.astro';
@@ -28,6 +30,11 @@ const isReport = d.format === 'report' || d.format === 'index';
 const isEvidence = d.type === 'evidence';
 const tag = topicLabel(d.topic, lang) || (isEvidence ? 'Evidence' : isReport ? 'Report' : (pillarMeta[d.pillar as Pillar]?.label[lang] ?? ''));
 const pillar = { label: { en: tag, de: tag } as Record<string, string> };
+// Answer box (27 Oct 2026): the fast answer at the top of every Evidence playbook.
+const answer = isEvidence ? evidenceAnswers[d.urlSlug] : undefined;
+const AB = lang === 'de'
+  ? { kick: 'Die kurze Antwort', ev: 'Evidenz', doThis: 'So geht\'s', watch: 'Achtung', hub: 'Alle Supplements von A bis Z' }
+  : { kick: 'The short answer', ev: 'Evidence', doThis: 'Do this', watch: 'Watch out', hub: 'All supplements A to Z' };
 const more = isReport
   ? { href: `/${lang}/intelligence`, label: 'Reports' }
   : isEvidence
@@ -148,6 +155,8 @@ function figVizSvg(z: ReturnType<typeof vizOf>) {
 const TX = lang === 'de'
   ? { tldr: 'Das Wichtigste', means: 'Was das für dich heißt', data: 'Daten & Quelle', dl: 'Daten (CSV)', dlj: 'JSON', cite: 'Diesen Report zitieren', copy: 'Kopieren', copied: 'Kopiert ✓', now: 'jetzt', share: 'Als Bild teilen', tag: 'SQWOD INTELLIGENCE', board: 'Scoreboard teilen', boardEye: 'Zahlen, die zählen', boardTitle: 'IN ZAHLEN', verdict: 'Verdict teilen', real: 'Belegt durch Studien', hype: 'Glaub dem Hype nicht' }
   : { tldr: 'Key takeaways', means: 'What this means for you', data: 'Data & citation', dl: 'Data (CSV)', dlj: 'JSON', cite: 'Cite this report', copy: 'Copy', copied: 'Copied ✓', now: 'now', share: 'Share as image', tag: 'SQWOD INTELLIGENCE', board: 'Share scoreboard', boardEye: 'Figures that matter', boardTitle: 'BY THE NUMBERS', verdict: 'Share verdict', real: 'Backed by trials', hype: "Don't buy the hype" };
+// Reports are cited as reports; everything else (analysis, evidence) as a page.
+if (!isReport) { TX.cite = lang === 'de' ? 'Diese Seite zitieren' : 'Cite this page'; }
 // data the share-image script needs (brand strings + the chart series + figures + verdict), passed to the client below
 const V = d.verdict;
 const shareCfg = {
@@ -194,6 +203,21 @@ const shareCfg = {
     <div class="crumb">{sectionLabel} · {pillar.label[lang]}</div>
     <h1>{d.title}</h1>
     <p class="sub">{d.description}</p>
+    {answer && (
+      <section class="answer" aria-label={AB.kick}>
+        <div class="ans-head">
+          <span class="ans-kick">{AB.kick}</span>
+          {answer.tier && <span class={`ans-pill t-${answer.tier}`}>{tierMeta[answer.tier].label[lang]}</span>}
+        </div>
+        <p class="ans-verdict">{answer.verdict[lang]}</p>
+        <dl class="ans-grid">
+          <div><dt>{AB.ev}</dt><dd>{answer.grade[lang]}</dd></div>
+          <div><dt>{AB.doThis}</dt><dd>{answer.doThis[lang]}</dd></div>
+          <div><dt>{AB.watch}</dt><dd>{answer.watch[lang]}</dd></div>
+        </dl>
+        {d.topic === 'supplements' && <a class="ans-hub" href={`/${lang}/evidence/supplements`}>{AB.hub} →</a>}
+      </section>
+    )}
     {d.hero && <ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} />}
     <div class="meta" style="margin:8px 0 0;color:var(--g3);font-size:12px">
       <span class="by">{byEditor && <img class="by-img" src={EDITOR.img} alt="" width="22" height="22" loading="lazy" />}{lang === 'de' ? 'Von ' : 'By '}<a href={EDITOR.about(lang)} rel="author">{byName}</a>{byEditor && <span class="by-role"> · {EDITOR.role[lang]}</span>}</span> · {fmt}
@@ -213,7 +237,7 @@ const shareCfg = {
   </section>
 )}
 
-{!locked && !wide && <InlineSignup lang={lang} source="article-top" />}
+{!locked && !wide && <div id="signup-mid"><InlineSignup lang={lang} source="article-mid" /></div>}
 
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
@@ -345,6 +369,9 @@ const shareCfg = {
   <section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
     <Content />
   </section>
+  {/* Move the first sign-up box from above the article to after its second section
+      (27 Oct 2026). Runs during parse, before paint; without JS it stays above. */}
+  {!locked && !wide && <script is:inline>(function(){var b=document.getElementById('signup-mid');var p=document.querySelector('.report-body .prose');if(!b||!p)return;var h=p.querySelectorAll(':scope > h2');if(h.length<3)return;h[2].parentNode.insertBefore(b,h[2]);b.classList.add('in-prose');})();</script>}
   <p class="how-made">{howMade(lang)} <a href={EDITOR.about(lang)}>{lang === 'de' ? 'Über den Herausgeber' : 'About the editor'} →</a></p>
   <div class="read-end" data-slug={d.urlSlug ?? entry.slug} data-lang={lang} aria-hidden="true" style="height:1px"></div>
 
@@ -364,9 +391,9 @@ const shareCfg = {
     <section class="block changelog">
       <p class="kick">{lang==='de'?'Aktualisierungen':'Update log'}</p>
       <ul class="cl-list">
-        {d.changelog.map((c) => <li><b>{c.date}</b> — {c.note}</li>)}
+        {d.changelog.map((c) => <li><b>{c.date}</b>: {c.note}</li>)}
       </ul>
-      <p class="src-note">{lang==='de'?'Lebender Report — wir aktualisieren die Zahlen regelmäßig.':'Living report — we refresh the figures on a regular cadence.'}</p>
+      <p class="src-note">{lang==='de'?'Lebender Report: Wir aktualisieren die Zahlen regelmäßig.':'Living report: we refresh the figures on a regular cadence.'}</p>
     </section>
   )}
 </div>
@@ -546,6 +573,24 @@ const shareCfg = {
   .share-btn.busy{opacity:.55;pointer-events:none}
   .fig-share{margin-top:auto;padding-top:14px;align-self:flex-start}   /* pin to card bottom so a row of cards lines up evenly */
   .chart-share{margin-top:12px}
+  /* answer box (Evidence playbooks, 27 Oct 2026) */
+  .answer{margin:16px 0 18px;border:1px solid var(--chalk);border-radius:14px;padding:16px 18px;background:var(--panel)}
+  .ans-head{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-bottom:8px}
+  .ans-kick{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g2)}
+  .ans-pill{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:5px;padding:3px 8px;line-height:1.3}
+  .ans-pill.t-yes{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .ans-pill.t-conditional{color:var(--chalk);border-color:var(--chalk);border-style:dashed}
+  .ans-pill.t-skip{color:var(--g1);background:var(--panel2);border-color:var(--panel2)}
+  .ans-pill.t-avoid{color:var(--chalk);border:2px solid var(--chalk)}
+  .ans-pill.t-avoid::before{content:"✕";font-size:11px}
+  .ans-verdict{margin:0 0 12px;font-size:17px;font-weight:700;line-height:1.45;color:var(--chalk);max-width:62ch}
+  .ans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px;margin:0}
+  .ans-grid div{min-width:0}
+  .ans-grid dt{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);margin:0 0 4px}
+  .ans-grid dd{margin:0;font-size:14px;line-height:1.5;color:var(--g1)}
+  .ans-hub{display:inline-block;margin-top:12px;font-size:13px;font-weight:700;color:var(--chalk)}
+  @media(max-width:700px){ .ans-grid{grid-template-columns:1fr} .ans-verdict{font-size:16px} }
+  #signup-mid.in-prose{margin:28px 0}
 </style>
 
 <script is:inline>
