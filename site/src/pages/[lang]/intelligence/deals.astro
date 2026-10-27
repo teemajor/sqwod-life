@@ -78,6 +78,7 @@ const cats = [...new Set(deals.map((d) => d.category))].sort((a, b) => deals.fil
 const chartCats = { label: T.chart2, unit: T.unit2, kind: 'categorical' as const, categories: cats.map(cName),
   series: [{ name: T.deals, points: cats.map((c) => deals.filter((d) => d.category === c).length) }], source: 'Sqwod Deal Tracker' };
 
+const charts = [...(months.length >= 3 ? [chartMonths] : []), ...(cats.length >= 2 ? [chartCats] : [])];
 const regions = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East'].filter((r) => deals.some((d) => d.region === r));
 const kinds = ['raise', 'acquisition', 'valuation', 'ipo', 'shutdown'].filter((k) => deals.some((d) => d.kind === k));
 const url = `https://sqwod.life/${lang}/intelligence/deals/`;
@@ -103,8 +104,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
         <div><b>{fmtDate(first)}</b><span>{T.since}</span></div>
       </div>
 
-      {months.length >= 3 && <DataChart lang={lang} chart={chartMonths} index={0} total={2} />}
-      {cats.length >= 2 && <DataChart lang={lang} chart={chartCats} index={1} total={2} />}
+      {charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} total={charts.length} />)}
 
       <section class="dt-filters" aria-label={T.region}>
         <div class="dt-chips" role="group">
