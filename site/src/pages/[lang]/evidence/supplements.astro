@@ -1,7 +1,10 @@
 ---
 // Supplements A to Z: the hub that groups every supplement Sqwod Evidence has graded.
 // Data lives in config/supplements-az.ts (one row per supplement, traceable to its playbook).
+// 27 Oct 2026 design pass: verdict filter + summary table up top (a coach's job is
+// "what can I recommend?"), distinct verdict pills, named links, an "Updated" line.
 import Base from '../../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../../i18n/ui';
 import { supplements, tierMeta, supplementFaq, type Tier } from '../../../config/supplements-az';
 import { GUIDE_PREFIX } from '../../../config/best';
@@ -11,9 +14,15 @@ const lang = Astro.params.lang as Lang;
 const de = lang === 'de';
 
 const rows = [...supplements].sort((a, b) => a.name[lang].localeCompare(b.name[lang], lang));
-const letters = [...new Set(rows.map((r) => r.name[lang][0].toUpperCase()))];
 const tiers: Tier[] = ['yes', 'conditional', 'skip', 'avoid'];
 const count = (t: Tier) => rows.filter((r) => r.tier === t).length;
+
+// "Updated" = the newest updatedAt among the playbooks this page summarises.
+const slugs = new Set(rows.map((r) => r.playbook));
+const books = await getCollection('articles', (a) => a.data.lang === lang && slugs.has(a.data.urlSlug));
+const updated = new Date(Math.max(...books.map((b) => b.data.updatedAt.getTime())));
+const updatedText = updated.toLocaleDateString(de ? 'de-DE' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+const ownCount = new Set(rows.filter((r) => r.own).map((r) => r.playbook)).size;
 
 const title = de
   ? 'Supplements von A bis Z: Was die Studienlage sagt | Sqwod Evidence'
@@ -25,6 +34,9 @@ const description = de
 const base = 'https://sqwod.life';
 const pageUrl = `${base}/${lang}/evidence/supplements/`;
 const href = (slug: string) => `/${lang}/analysis/${slug}`;
+const linkText = (r: (typeof rows)[number]) => r.own
+  ? (de ? `Playbook: ${r.name[lang]}` : `${r.name[lang]} playbook`)
+  : (de ? `${r.name[lang]} in der Supplement-Triage` : `${r.name[lang]} in the supplement triage`);
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -33,6 +45,7 @@ const jsonLd = [
     name: de ? 'Supplements von A bis Z' : 'Supplements A to Z',
     url: pageUrl,
     inLanguage: lang,
+    dateModified: updated.toISOString(),
     numberOfItems: rows.length,
     itemListElement: rows.map((r, i) => ({
       '@type': 'ListItem',
@@ -64,28 +77,48 @@ const jsonLd = [
     <p class="sub">{de
       ? `Die ${rows.length} Supplements, nach denen Kunden am häufigsten fragen, bewertet nach der Studienlage. Jede Zeile fasst ein Playbook mit Quellen zusammen: was wirkt, für wen, und was du weglassen kannst.`
       : `The ${rows.length} supplements clients ask about most, graded by the research. Each row sums up a sourced playbook: what works, for whom, and what to skip.`}</p>
+    <p class="az-updated">{de ? 'Aktualisiert' : 'Updated'} <time datetime={updated.toISOString().slice(0, 10)}>{updatedText}</time> · {de ? `${rows.length} Supplements · ${ownCount} Playbooks` : `${rows.length} supplements · ${ownCount} playbooks`}</p>
   </div>
 
-  <section class="block az-legend" aria-label={de ? 'Bewertungsstufen' : 'Verdicts'}>
-    {tiers.map((t) => (
-      <div class="az-tier">
-        <span class={`az-pill t-${t}`}>{tierMeta[t].label[lang]} · {count(t)}</span>
-        <span class="az-tdesc">{tierMeta[t].desc[lang]}</span>
-      </div>
-    ))}
+  <section class="block az-filter-wrap" aria-label={de ? 'Nach Bewertung filtern' : 'Filter by verdict'}>
+    <div class="az-filter" role="group" aria-label={de ? 'Bewertung' : 'Verdict'}>
+      <button type="button" class="az-fbtn" data-tier="all" aria-pressed="true">
+        <span class="az-pill t-all">{de ? 'Alle' : 'All'} · {rows.length}</span>
+        <span class="az-tdesc">{de ? 'Jedes bewertete Supplement.' : 'Every graded supplement.'}</span>
+      </button>
+      {tiers.map((t) => (
+        <button type="button" class="az-fbtn" data-tier={t} aria-pressed="false">
+          <span class={`az-pill t-${t}`}>{tierMeta[t].label[lang]} · {count(t)}</span>
+          <span class="az-tdesc">{tierMeta[t].desc[lang]}</span>
+        </button>
+      ))}
+    </div>
+
+    <div class="az-table-wrap">
+      <table class="az-table">
+        <caption class="sr-only">{de ? 'Alle Supplements mit Bewertung und Evidenz' : 'All supplements with verdict and evidence'}</caption>
+        <thead><tr><th scope="col">Supplement</th><th scope="col">{de ? 'Bewertung' : 'Verdict'}</th><th scope="col">{de ? 'Evidenz' : 'Evidence'}</th></tr></thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr data-tier={r.tier}>
+              <th scope="row"><a href={`#${r.id}`}>{r.name[lang]}</a></th>
+              <td><span class={`az-pill t-${r.tier}`}>{tierMeta[r.tier].label[lang]}</span></td>
+              <td class="az-tgrade">{r.grade[lang]}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p class="az-empty" hidden>{de ? 'Keine Supplements mit dieser Bewertung.' : 'No supplements with this verdict.'}</p>
   </section>
 
-  <nav class="az-jump" aria-label={de ? 'Buchstaben' : 'Letters'}>
-    {letters.map((l) => <a href={`#letter-${l}`}>{l}</a>)}
-  </nav>
-
-  <section class="az-list">
+  <section class="az-list" aria-label={de ? 'Alle Supplements im Detail' : 'All supplements in detail'}>
     {rows.map((r, i) => {
       const L = r.name[lang][0].toUpperCase();
       const first = i === 0 || rows[i - 1].name[lang][0].toUpperCase() !== L;
       return (
-        <article class="az-row" id={r.id}>
-          <div class="az-letter" id={first ? `letter-${L}` : undefined} aria-hidden={first ? undefined : 'true'}>{first ? L : ''}</div>
+        <article class="az-row" id={r.id} data-tier={r.tier}>
+          <div class="az-letter" aria-hidden="true">{first ? L : ''}</div>
           <div class="az-body">
             <h2>
               <a href={href(r.playbook)}>{r.name[lang]}</a>
@@ -96,9 +129,7 @@ const jsonLd = [
               <span class="az-grade">{de ? 'Evidenz' : 'Evidence'}: {r.grade[lang]}</span>
             </div>
             <p>{r.line[lang]}</p>
-            <a class="cardcta" href={href(r.playbook)}>{r.own
-              ? (de ? 'Zum Playbook' : 'Read the playbook')
-              : (de ? 'Bewertet in der Supplement-Triage' : 'Graded in the supplement triage')} →</a>
+            <a class="cardcta" href={href(r.playbook)}>{linkText(r)} →</a>
           </div>
         </article>
       );
@@ -109,7 +140,7 @@ const jsonLd = [
     <div class="note"><b>{de ? 'Vor jeder Wirkung: Ist es sauber?' : 'Before any effect: is it clean?'}</b> {de
       ? 'In einer Analyse von 200 Sportsupplements (Sport Integrity Australia, 2022) enthielten 35 % Substanzen von der WADA-Verbotsliste. Empfiehl nur Produkte mit unabhängiger Chargenzertifizierung.'
       : 'In an analysis of 200 sports supplements (Sport Integrity Australia, 2022), 35% contained substances on the WADA prohibited list. Recommend only products with third-party batch certification.'}
-      <a class="cardcta" href={href('supplement-triage-evidence-coach-playbook')}>{de ? 'Die ganze Triage' : 'The full triage'} →</a></div>
+      <a class="cardcta" href={href('supplement-triage-evidence-coach-playbook')}>{de ? 'Die ganze Supplement-Triage' : 'The full supplement triage'} →</a></div>
   </section>
 
   <section class="block az-faq">
@@ -130,24 +161,71 @@ const jsonLd = [
   </section>
 </Base>
 
+<script>
+  // Verdict filter. Without JS everything stays visible; with it, one tap narrows
+  // both the summary table and the detail rows. The choice lives in the URL hash
+  // (#yes, #conditional, #skip, #avoid) so a filtered view can be shared.
+  const TIERS = ['yes', 'conditional', 'skip', 'avoid'];
+  const btns = Array.from(document.querySelectorAll<HTMLButtonElement>('.az-fbtn'));
+  const items = Array.from(document.querySelectorAll<HTMLElement>('.az-table tbody tr, .az-row'));
+  const empty = document.querySelector<HTMLElement>('.az-empty');
+  function apply(tier: string) {
+    const t = TIERS.includes(tier) ? tier : 'all';
+    btns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.tier === t)));
+    let shown = 0;
+    items.forEach((el) => { const on = t === 'all' || el.dataset.tier === t; el.hidden = !on; if (on) shown++; });
+    if (empty) empty.hidden = shown > 0;
+  }
+  btns.forEach((b) => b.addEventListener('click', () => {
+    const t = b.dataset.tier || 'all';
+    apply(t);
+    history.replaceState(null, '', t === 'all' ? location.pathname : `#${t}`);
+  }));
+  const h = location.hash.slice(1);
+  if (TIERS.includes(h)) apply(h);
+</script>
+
 <style>
   .pagehead .kick a{color:inherit;text-decoration:none}
-  .az-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px 20px}
-  .az-tier{display:grid;gap:6px;align-content:start}
-  .az-tdesc{font-size:13px;color:var(--g2);line-height:1.5}
-  .az-pill{justify-self:start;display:inline-block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);border-radius:5px;padding:3px 7px;color:var(--g1);background:var(--panel2)}
+  .az-updated{margin:12px 0 0;font-size:13px;color:var(--g2)}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+  /* Verdict pills: four distinct forms, not just four fills */
+  .az-pill{justify-self:start;display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);border-radius:5px;padding:3px 8px;line-height:1.3;white-space:nowrap}
+  .az-pill.t-all{color:var(--chalk);border-color:var(--chalk);background:transparent}
   .az-pill.t-yes{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
-  .az-pill.t-conditional{color:var(--chalk);border-color:var(--chalk);background:transparent}
-  .az-pill.t-skip{color:var(--g2)}
-  .az-pill.t-avoid{color:var(--g2);text-decoration:line-through}
-  .az-jump{display:flex;flex-wrap:wrap;gap:6px;padding:18px 0 4px}
-  .az-jump a{min-width:34px;text-align:center;padding:6px 0;border:1px solid var(--line);border-radius:8px;color:var(--chalk);text-decoration:none;font-weight:700;font-size:13px}
-  .az-jump a:hover,.az-jump a:focus-visible{border-color:var(--chalk)}
-  .az-list{border-top:1px solid var(--line);margin-top:14px}
+  .az-pill.t-conditional{color:var(--chalk);border-color:var(--chalk);background:transparent;border-style:dashed}
+  .az-pill.t-skip{color:var(--g1);background:var(--panel2);border-color:var(--panel2)}
+  .az-pill.t-avoid{color:var(--chalk);background:transparent;border:2px solid var(--chalk)}
+  .az-pill.t-avoid::before{content:"✕";font-size:11px;line-height:1}
+
+  /* Filter = the verdict key */
+  .az-filter{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+  .az-fbtn{display:grid;gap:6px;align-content:start;text-align:left;min-height:44px;padding:12px;border:1px solid var(--line);border-radius:12px;background:transparent;color:inherit;font:inherit;cursor:pointer}
+  .az-fbtn:hover{border-color:var(--edge,var(--g3))}
+  .az-fbtn[aria-pressed="true"]{border-color:var(--chalk);background:var(--panel)}
+  .az-fbtn:focus-visible{outline:2px solid var(--chalk);outline-offset:2px}
+  .az-tdesc{font-size:13px;color:var(--g2);line-height:1.45}
+
+  /* Summary table */
+  .az-table-wrap{overflow-x:auto;margin-top:18px}
+  .az-table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+  .az-table th,.az-table td{padding:10px 12px 10px 0;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+  .az-table thead th{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
+  .az-table tbody th{font-weight:700}
+  .az-table tbody th a{color:var(--chalk);text-decoration:none}
+  .az-table tbody th a:hover{text-decoration:underline}
+  .az-tgrade{color:var(--g2)}
+  .az-empty{margin:12px 0 0;color:var(--g2)}
+  /* the filter toggles [hidden]; component display rules must not override it */
+  .az-row[hidden],.az-table tr[hidden]{display:none}
+
+  /* Detail rows */
+  .az-list{border-top:1px solid var(--line);margin-top:6px}
   .az-row{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:20px 0;border-bottom:1px solid var(--line);scroll-margin-top:90px}
-  .az-letter{font-size:28px;font-weight:800;line-height:1;color:var(--g3);scroll-margin-top:90px}
+  .az-letter{font-size:28px;font-weight:800;line-height:1;color:var(--g3)}
   .az-body{min-width:0}
-  .az-body h2{margin:0 0 8px;font-size:20px;font-weight:800;letter-spacing:-.01em;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+  .az-body h2{margin:0 0 8px;font-size:20px;font-weight:800;letter-spacing:0;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
   .az-body h2 a{color:var(--chalk);text-decoration:none}
   .az-body h2 a:hover{text-decoration:underline}
   .az-aka{font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500;color:var(--g3)}
@@ -155,7 +233,8 @@ const jsonLd = [
   .az-grade{font-size:13px;color:var(--g2)}
   .az-body p{margin:0 0 10px;max-width:68ch;line-height:1.6;color:var(--g1)}
   .az-faq details{border-bottom:1px solid var(--line);padding:12px 0}
-  .az-faq summary{cursor:pointer;font-weight:700}
+  .az-faq summary{cursor:pointer;font-weight:700;min-height:24px}
   .az-faq details p{margin:8px 0 0;max-width:68ch;line-height:1.6;color:var(--g1)}
-  @media(min-width:900px){ .az-row{grid-template-columns:64px minmax(0,1fr)} .az-letter{font-size:36px} }
+  @media(min-width:900px){ .az-row{grid-template-columns:64px minmax(0,1fr)} .az-letter{font-size:36px} .az-body h2{font-size:22px} }
+  @media(max-width:560px){ .az-filter{grid-template-columns:1fr 1fr} .az-fbtn .az-tdesc{display:none} .az-table th,.az-table td{padding-right:8px} .az-table th:nth-child(3),.az-table td:nth-child(3){display:none} }
 </style>

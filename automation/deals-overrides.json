@@ -1,0 +1,262 @@
+{
+  "_doc": "Tee's decisions per deal. status approved = live on the Deal Tracker, hidden = never shown. Any other field here (entity, region, country, category, note, noteDe, url, amount) overrides the automatic value. 'block' hides any deal whose company name contains the text.",
+  "deals": {
+    "nirva-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "wilde-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "unravel-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "puregym-acquisition-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "huppa-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "othello-raise-2026-10": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "stack-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "stride-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "persona-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "gloriah-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "supermush-raise-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "osu-raise-2026-10": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "vuori-valuation-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "garmin-acquisition-2026-10": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "mcdonald-acquisition-2026-10": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "mona-raise-2026-09": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "bird-be-raise-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "magic-raise-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "disha-raise-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "rajasthan-acquisition-2026-09": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "healthkart-ipo-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "aeon-acquisition-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "mahomes-valuation-2026-09": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "mirror-raise-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "guardians-raise-2026-09": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "vegamour-acquisition-2026-09": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "cradlewise-raise-2026-09": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "cbdmd-acquisition-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "informa-acquisition-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "nestl-acquisition-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "enhance-raise-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "quell-acquisition-2026-09": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "world-valuation-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "instaastro-raise-2026-08": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "temple-acquisition-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "oura-ipo-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "purely-acquisition-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "celebrate-raise-2026-08": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "whoop-ipo-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "delightree-raise-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "ozop-acquisition-2026-08": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "planet-raise-2026-08": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "thorne-acquisition-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "jamieson-acquisition-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "othello-raise-2026-08": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "whoop-valuation-2026-08": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "kuwait-valuation-2026-08": {
+      "status": "hidden",
+      "why": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    "masaj-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "ahead-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "soundhealth-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "fitbit-acquisition-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "throne-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "veyr-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "bain-acquisition-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "planet-valuation-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "garmin-acquisition-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "egym-acquisition-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "wonder-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "interactive-acquisition-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "oura-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "neko-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "im8-raise-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "basic-acquisition-2026-07": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    },
+    "peloton-acquisition-2026-06": {
+      "status": "approved",
+      "why": "backfill review 2026-10-27"
+    }
+  },
+  "block": []
+}

@@ -8,6 +8,7 @@ import BenchmarkWidget from './BenchmarkWidget.astro';
 import DataChart from './DataChart.astro';
 import InlineSignup from './InlineSignup.astro';
 import { SUBSCRIBE } from '../config/subscribe';
+import { EDITOR, authorName, isHouseAuthor, howMade } from '../config/authors';
 import type { CollectionEntry } from 'astro:content';
 import type { RelatedItem } from '../lib/related';
 import { readFileSync } from 'node:fs';
@@ -19,6 +20,8 @@ const logoUri = 'data:image/png;base64,' + readFileSync(fileURLToPath(new URL('.
 interface Props { lang: Lang; entry: CollectionEntry<'articles'>; sectionLabel: string; related?: RelatedItem[]; wide?: boolean }
 const { lang, entry, sectionLabel, related = [], wide = false } = Astro.props;
 const d = entry.data;
+const byName = authorName(d.author);
+const byEditor = isHouseAuthor(d.author);
 const { Content, headings } = await entry.render();
 // Section + topic label (27 Oct 2026: topics replace the Move/Build/Signal lanes).
 const isReport = d.format === 'report' || d.format === 'index';
@@ -98,7 +101,7 @@ for (const c of (d.charts ?? [])) {
   c.categories.forEach((cat, i) => csvRows.push([cat, ...c.series.map((x) => x.points[i] ?? '')].map(csvCell).join(',')));
 }
 const jsonHref = `data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify({ title: d.title, asOf: d.asOf, url: reportUrl, figures: d.figures, series: d.series, charts: d.charts, sources: d.sources }, null, 2))}`;
-const citation = `${d.author}. "${d.title}." sqwod.life${d.asOf ? `, ${d.asOf}` : ''}. ${reportUrl}`;
+const citation = `${byName}. "${d.title}." sqwod.life${d.asOf ? `, ${d.asOf}` : ''}. ${reportUrl}`;
 // Link each figure to its source: explicit figure.url wins, else auto-match the
 // figure's `source` label to a citation in `sources[]` (by its leading token).
 const figSourceUrl = (f: { source?: string; url?: string }) => {
@@ -169,7 +172,7 @@ const shareCfg = {
         <h1 class="rh-h1">{words.map((w, i) => <Fragment><span class="hw" style={`animation-delay:${Math.min(i, 12) * 0.06}s`}>{w}</span>{' '}</Fragment>)}</h1>
         <p class="rh-sub">{d.description}</p>
         <p class="rh-meta">
-          <span>{d.author}</span><span>{fmt}</span><span>{`${readMin} ${TOC.min}`}</span>
+          <span class="by">{byEditor && <img class="by-img" src={EDITOR.img} alt="" width="22" height="22" loading="lazy" />}<a href={EDITOR.about(lang)} rel="author">{byName}</a></span><span>{fmt}</span><span>{`${readMin} ${TOC.min}`}</span>
           {(d.charts?.length ?? 0) > 0 && <span>{`${d.charts.length} ${TOC.charts}`}</span>}
           {(d.sources?.length ?? 0) > 0 && <span>{`${d.sources.length} ${TOC.sources}`}</span>}
         </p>
@@ -193,7 +196,7 @@ const shareCfg = {
     <p class="sub">{d.description}</p>
     {d.hero && <ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} />}
     <div class="meta" style="margin:8px 0 0;color:var(--g3);font-size:12px">
-      {d.author} · {fmt}
+      <span class="by">{byEditor && <img class="by-img" src={EDITOR.img} alt="" width="22" height="22" loading="lazy" />}{lang === 'de' ? 'Von ' : 'By '}<a href={EDITOR.about(lang)} rel="author">{byName}</a>{byEditor && <span class="by-role"> · {EDITOR.role[lang]}</span>}</span> · {fmt}
       {locked && <span class="conf" style="margin-left:8px">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
     </div>
   </Fragment>
@@ -342,6 +345,7 @@ const shareCfg = {
   <section class="block prose" style="border-top:1px solid var(--line);margin-top:18px">
     <Content />
   </section>
+  <p class="how-made">{howMade(lang)} <a href={EDITOR.about(lang)}>{lang === 'de' ? 'Über den Herausgeber' : 'About the editor'} →</a></p>
   <div class="read-end" data-slug={d.urlSlug ?? entry.slug} data-lang={lang} aria-hidden="true" style="height:1px"></div>
 
   {d.sources && d.sources.length > 0 && (
@@ -425,6 +429,12 @@ const shareCfg = {
 </section>
 
 <style>
+  .by{display:inline-flex;align-items:center;gap:7px}
+  .by a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--g4)}
+  .by-img{width:22px;height:22px;border-radius:50%;object-fit:cover;filter:grayscale(1)}
+  .by-role{color:var(--g3)}
+  .how-made{font-size:12px;color:var(--g3);line-height:1.55;margin:18px 0 0;padding-top:12px;border-top:1px solid var(--line)}
+  .how-made a{color:var(--g2)}
   .figs-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
   .figs-actions{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
   .fig-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:14px;margin-top:14px}

@@ -18,7 +18,8 @@
 // Prompt rules alone are not enough (see quality.mjs): every rule here is code.
 
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 export const MAX_TITLE = 70;
 
@@ -116,9 +117,14 @@ export function headingProblems(body) {
 export function recentArticles(dir, lang, n = 60) {
   if (!existsSync(dir)) return { titles: [], urls: new Set() };
   const rows = [];
-  for (const f of readdirSync(dir)) {
+  // Drafts waiting for Tee's one-tap approval (article-review.mjs) count as covered too,
+  // so the next run never writes a second piece on a story that is still in review.
+  const drafts = join(dirname(fileURLToPath(import.meta.url)), 'article-drafts');
+  const files = [...readdirSync(dir).map((f) => join(dir, f)), ...(existsSync(drafts) ? readdirSync(drafts).map((f) => join(drafts, f)) : [])];
+  for (const path of files) {
+    const f = path.split('/').pop();
     if (!f.endsWith(`.${lang}.md`)) continue;
-    const raw = readFileSync(join(dir, f), 'utf8');
+    const raw = readFileSync(path, 'utf8');
     const fm = raw.split(/^---\s*$/m)[1] || '';
     const title = ((fm.match(/^title:\s*(.+)$/m) || [])[1] || '').replace(/^["']|["']$/g, '');
     const date = ((fm.match(/^publishedAt:\s*(.+)$/m) || [])[1] || '').trim();

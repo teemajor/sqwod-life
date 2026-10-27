@@ -25,15 +25,25 @@ jobs:
           node automation/articles.mjs --lane=signal --days=5 || true
           node automation/articles.mjs --lane=move   --days=5 || true
 
+      - name: Hold new articles for Tee's one-tap approval (nothing publishes unreviewed)
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.INTEL_FROM }}
+          INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
+          INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
+          INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
+        run: node automation/article-review.mjs --queue --date=$(date +%F)
+
       - name: Commit & push (if anything changed)
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
           git add site/src/content/articles
+          for p in automation/article-drafts automation/intel-queue; do [ -e "$p" ] && git add "$p"; done
           if git diff --staged --quiet; then
             echo "No new articles this run."
           else
-            git commit -m "articles: lane drops $(date +%F)"
+            git commit -m "articles: drafts held for approval $(date +%F)"
             git pull --rebase --autostash origin main || true
             git push
           fi

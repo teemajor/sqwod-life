@@ -1,5 +1,7 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import { ogPath } from '../../../lib/og';
+import { authorLd } from '../../../config/authors';
 import ArticleView from '../../../components/ArticleView.astro';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
@@ -29,12 +31,12 @@ const jsonLd = {
     {
       '@type': 'Article', headline: d.title, description: d.description,
       datePublished: iso(d.publishedAt), dateModified: iso(d.updatedAt), inLanguage: lang,
-      author: { '@type': 'Organization', name: d.author }, publisher: { '@type': 'Organization', name: 'sqwod.life' },
+      author: authorLd(d.author), publisher: { '@type': 'Organization', name: 'sqwod.life' },
       image: `${site}/podcast-cover.png`, mainEntityOfPage: url, isAccessibleForFree: !d.gated,
     },
     {
       '@type': 'Dataset', name: d.title, description: d.description, url,
-      creator: { '@type': 'Organization', name: d.author }, dateModified: iso(d.updatedAt),
+      creator: authorLd(d.author), dateModified: iso(d.updatedAt),
       ...(years.length ? { temporalCoverage: `${years[0]}/${years[years.length - 1]}` } : {}),
       ...(variableMeasured.length ? { variableMeasured } : {}),
       ...(d.sources?.length ? { isBasedOn: d.sources.map((s) => s.url) } : {}),
@@ -42,7 +44,7 @@ const jsonLd = {
   ],
 };
 ---
-<Base lang={lang} title={`${d.seoTitle ?? d.title} | Sqwod Intelligence`} description={d.description} active="intelligence" ogType="article" image="/podcast-cover.png">
+<Base lang={lang} title={`${d.seoTitle ?? d.title} | Sqwod Intelligence`} description={d.description} active="intelligence" ogType="article" image={ogPath('intelligence', lang, d.urlSlug)}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <ArticleView lang={lang} entry={entry} sectionLabel="Sqwod Intelligence" related={await getRelated(lang, entry)} wide />
 </Base>

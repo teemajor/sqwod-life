@@ -204,6 +204,12 @@ async function intel(req, env) {
   const ok = await putFile(env, path, JSON.stringify(p, null, 2), `intel: ${p.status} ${id}`, cur.sha);
   if (!ok) return page('Try again', 'Could not record your decision — please tap the link again.');
 
+  // Lane articles (automation/article-review.mjs): Approve & publish / Reject.
+  if (p.kind === 'article') {
+    if (action === 'approve') return page('Publishing queued ✓', `<b>${esc(p.title)}</b> goes live in English and German with your byline on the next apply run (within 4 hours).`);
+    if (action === 'reject') return page('Article rejected', `<b>${esc(p.title)}</b> is archived and will not be published.`);
+    return page('Flagged for review', `<b>${esc(p.title)}</b> is flagged. Nothing on the site changes.`);
+  }
   // Deal Tracker cards (automation/deals.mjs): Publish / Skip. The commit above triggers a deploy.
   if (p.kind === 'deal') {
     if (action === 'approve') return page('Published ✓', `<b>${esc(p.title)}</b> goes live on the Sqwod Deal Tracker within a few minutes.`);

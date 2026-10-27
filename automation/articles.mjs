@@ -72,6 +72,24 @@ function pool(lane) {
   return items;
 }
 
+// Sqwod's own data (27 Oct 2026): if the Deal Tracker holds earlier approved deals for the
+// company or its category, the article may cite them. That is the one number nobody else has.
+function trackerContext(lead) {
+  const p = join(__dirname, '..', 'site', 'src', 'data', 'deals.json');
+  if (!existsSync(p)) return '';
+  let deals = []; try { deals = JSON.parse(readFileSync(p, 'utf8')).deals.filter((d) => d.status === 'approved'); } catch { return ''; }
+  const text = `${lead.headline} ${lead.text || ''}`.toLowerCase();
+  const same = deals.filter((d) => text.includes(String(d.entity).split(/[\s/(]/)[0].toLowerCase()));
+  const cat = same[0]?.category;
+  const peers = cat ? deals.filter((d) => d.category === cat && !same.includes(d)) : [];
+  if (!same.length && !peers.length) return '';
+  const usd = (n) => (n >= 1e9 ? `$${(n / 1e9).toFixed(1)}bn` : `$${Math.round(n / 1e6)}M`);
+  const sum = peers.reduce((a, d) => a + (d.amountUsd || 0), 0);
+  return `SQWOD DEAL TRACKER (our own database of approved fitness/wellness deals since ${deals.at(-1)?.date}; cite it as "the Sqwod Deal Tracker"):
+${same.map((d) => `- ${d.date}: ${d.entity} ${d.kind} ${d.amount || '(amount undisclosed)'}`).join('\n')}
+${peers.length ? `- ${peers.length} other ${cat} deals tracked${sum ? `, ${usd(sum)} disclosed in total` : ''}: ${peers.slice(0, 5).map((d) => d.entity).join(', ')}` : ''}`;
+}
+
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 const q = (s) => JSON.stringify(s ?? '');
 
@@ -87,8 +105,12 @@ ${lead.headline} (${lead.outlet})
 ${lead.text ? `What the article says: ${lead.text.slice(0, 1500)}\n` : ''}
 CONTEXT STORIES (use only if they add directly to the lead; otherwise ignore):
 ${ctx}
+${trackerContext(lead)}
 
-STRUCTURE: say what happened (who, what, how much), why it matters to studio and gym operators, and what an operator can do with it. 300 to 500 words, Markdown, 2 or 3 short sections with \`##\` subheads.
+STRUCTURE: say what happened (who, what, how much), why it matters to studio and gym operators, and what an operator can do with it. 350 to 550 words, Markdown, 3 short sections with \`##\` subheads.
+- Put the story in context with at least one comparison from the material above (an earlier deal, a competitor, a Deal Tracker figure). If there is none, say what is still unknown instead.
+- The last section is the editor's view: one clear opinion on what this means and who wins or loses, written as Sqwod's take, signed off by nobody. Opinion is allowed there; facts still come only from the material above.
+- Every source you rely on must be about this story or this company. Never use an unrelated story as evidence.
 
 TITLE RULES (checked by code; a failing title is rejected):
 - Name the company, organisation or person from the lead story exactly as the story spells it, or use one of its numbers. Like a trade news desk: "WILDE Lands $40M to Scale Protein Snacks", "Inside Erewhon's Growth Strategy".

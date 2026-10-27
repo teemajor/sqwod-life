@@ -2,6 +2,7 @@
 // Sqwod Deal Tracker: every raise, acquisition, valuation and IPO the Daily has logged,
 // merged, web-checked and approved by Tee (one tap per deal). Data: src/lib/deals.ts.
 import Base from '../../../layouts/Base.astro';
+import { ogPath } from '../../../lib/og';
 import DataChart from '../../../components/DataChart.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { languages, type Lang } from '../../../i18n/ui';
@@ -87,7 +88,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' }, dateModified: generatedAt, temporalCoverage: `${first}/..`,
   distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://sqwod.life/data/deals.csv' }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://sqwod.life/data/deals.json' }] };
 ---
-<Base lang={lang} title={T.title} description={T.sub} active="intelligence" noindex={deals.length < 10}>
+<Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('deals', lang)} noindex={deals.length < 10}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   <div class="crumb"><a href={`/${lang}/intelligence`}>Sqwod Intelligence</a> / {T.h1}</div>
   <h1>{T.h1}</h1>

@@ -1,10 +1,12 @@
 ---
 import Base from '../../../layouts/Base.astro';
+import { ogPath } from '../../../lib/og';
 import ArticleView from '../../../components/ArticleView.astro';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
 import { getRelated } from '../../../lib/related';
 import { newsTakeIsFresh } from '../../../config/seo.mjs';
+import { authorLd } from '../../../config/authors';
 
 export async function getStaticPaths() {
   const arts = await getCollection('articles', (a) => a.data.format === 'analysis' || a.data.format === 'field-note');
@@ -20,7 +22,12 @@ const active = d.type === 'evidence' ? 'evidence' : 'articles';
 // leave Google NEWS_TAKE_INDEX_DAYS after publishing (config/seo.mjs).
 const pageTitle = `${d.seoTitle ?? d.title} | Sqwod`;
 const noindex = d.newsTake && !newsTakeIsFresh(d.publishedAt);
+const url = `https://sqwod.life/${lang}/analysis/${d.urlSlug}/`;
+const jsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, inLanguage: lang, url,
+  datePublished: d.publishedAt.toISOString(), dateModified: d.updatedAt.toISOString(), author: authorLd(d.author),
+  publisher: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life', logo: { '@type': 'ImageObject', url: 'https://sqwod.life/sqwod-black.png' } } };
 ---
-<Base lang={lang} title={pageTitle} description={d.description} active={active} noindex={noindex}>
+<Base lang={lang} title={pageTitle} description={d.description} active={active} ogType="article" image={ogPath('analysis', lang, d.urlSlug)} noindex={noindex}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <div class="measure"><ArticleView lang={lang} entry={entry} sectionLabel={label} related={await getRelated(lang, entry)} /></div>
 </Base>

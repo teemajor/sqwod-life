@@ -74,6 +74,7 @@ const status = args.status || 'draft';
 const apiKey = process.env.ANTHROPIC_API_KEY;
 const dryRun = !apiKey; // real mode only when an API key is present
 const MODEL = process.env.SQWOD_MODEL || 'claude-sonnet-4-6';
+const SEARCH_TOOL = process.env.SQWOD_SEARCH_TOOL || 'web_search_20260209';
 
 // ---- load sources -------------------------------------------------------
 function loadSources() {
@@ -134,7 +135,7 @@ Source: ${source?.provenance || 'n/a'}
 
 Write:
 - "headline": a plain news headline, <= 80 characters, that states what happened (who did what). Lead with the key number when there is one.
-- "dek": ${thin ? 'ONE sentence that restates the headline in plain words. Only the headline is available, so add nothing else.' : '2 to 3 sentences: what happened with the key details (where, when, how much, who is involved), then, if the facts support it, one sentence on what it means for coaches or studio owners.'}
+- "dek": ${thin ? 'ONE sentence that restates the headline in plain words. Only the headline is available, so add nothing else.' : '2 to 3 sentences: what happened with the key details (where, when, how much, who is involved), then one sentence on why it matters for studio owners, coaches or brands, drawn from the facts (a competitor move, a price, a market signal). If the facts give no basis for that sentence, stop after the details.'}
 - If the story is about someone's death: respectful and factual only. No lesson, no advice.
 Respond ONLY as minified JSON: {"headline":"...","dek":"..."}`;
 }
@@ -527,6 +528,42 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
   return lines.join('\n');
 }
 
+// ---- thin-item enrichment (27 Oct 2026) --------------------------------------
+// A headline-only source made one-sentence items ("Whoop valued at $10.1 billion." and
+// nothing else). Before writing, each thin source gets ONE web lookup for the facts a
+// reader needs (who, how much, when, why it matters), each with the URL it came from.
+// The facts join the source's fact list, so the item fact-check below still holds every
+// claim to a source. No verified facts back = the item stays thin, never padded.
+async function enrichThin(sources) {
+  if (!apiKey || args['no-enrich']) return;
+  const thin = sources.filter((s) => s.thin || !(s.facts || []).some((f) => f.label === 'Article'));
+  for (const src of thin) {
+    const prompt = `Find the facts behind this fitness/wellness industry news headline. Search the web, open the most reliable reports (company release, trade press, major outlet), and list ONLY facts stated there.
+Headline: ${src.topic}
+Outlet: ${src.entity || 'n/a'}${src.readMore || src.en?.readMore ? `\nOriginal link: ${src.readMore || src.en.readMore}` : ''}
+Respond ONLY as minified JSON: {"facts":[{"fact":"one short factual sentence (who, what, how much, when)","url":"https://... the page that states it"}],"context":"one sentence of verified background (e.g. prior round, size, market), or empty"}
+Rules: 2 to 5 facts. Every fact needs a URL you opened. No estimates, no opinion, no facts older than the story unless labelled as background. If you cannot verify, return {"facts":[]}.`;
+    try {
+      const r = await fetch('https://api.anthropic.com/v1/messages', {
+        method: 'POST',
+        headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
+        body: JSON.stringify({ model: MODEL, max_tokens: 1500, messages: [{ role: 'user', content: prompt }], tools: [{ type: SEARCH_TOOL, name: 'web_search', max_uses: 4 }] }),
+      });
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      const data = await r.json();
+      const txt = (data.content || []).filter((c) => c.type === 'text').map((c) => c.text).join('\n');
+      const m = txt.match(/\{[\s\S]*\}/); const j = m ? JSON.parse(m[0]) : null;
+      const facts = (j?.facts || []).filter((f) => f && f.fact && /^https?:\/\//.test(f.url || ''));
+      if (facts.length < 2) { console.log(`  · enrich: no verified facts for "${src.topic}" (stays short)`); continue; }
+      const text = [...facts.map((f) => `${f.fact} (${f.url})`), ...(j.context ? [`Background: ${j.context}`] : [])].join(' ');
+      src.facts = [...(src.facts || []), { label: 'Article', value: text }];
+      src.provenance = `${src.provenance || src.entity || ''}; enriched from ${[...new Set(facts.map((f) => new URL(f.url).hostname))].join(', ')}`;
+      src.thin = false;
+      console.log(`  ＋ enriched "${src.topic}" with ${facts.length} sourced facts`);
+    } catch (e) { console.error(`  · enrich failed for "${src.topic}": ${e.message}`); }
+  }
+}
+
 // ---- run the daily step -------------------------------------------------
 async function run() {
   const byDate = loadSources();
@@ -538,6 +575,7 @@ async function run() {
   }
   const sources = byDate[date];
   mkdirSync(DAILY_OUT, { recursive: true });
+  await enrichThin(sources);   // headline-only stories get sourced facts before anyone writes
 
   const move = pickMove();   // one curated clip for the day (same in EN + DE); null if queue empty
   if (move) console.log(`🎬 Move of the Day: ${move.platform || 'clip'} ${move.handle || ''} ${move.url}`);
