@@ -24,12 +24,13 @@ ALLOWED_EMAILS = "tee@teemajor.com,sqwodlife@gmail.com"
 # Monday sends the weekly pulse. Every other day it sends NOTHING unless the
 # "needs you" queue has something in it, so a quiet inbox means a healthy pipeline.
 [triggers]
-crons = ["0 7 * * *"]
+crons = ["0 7 * * *", "0 5 * * 1-5"]  # 07:00 UTC alerts/pulse · 05:00 UTC weekdays = start the Daily (06:00 Berlin winter, 07:00 summer)
 
 # --- secrets (DO NOT put here — set via CLI or the dashboard's Variables & Secrets) ---
 #   npx wrangler secret put UMAMI_USERNAME    # your Umami login (e.g. admin)
 #   npx wrangler secret put UMAMI_PASSWORD    # your Umami password
 #   npx wrangler secret put RESEND_API_KEY    # Resend API key
+#   npx wrangler secret put GITHUB_TOKEN      # fine-grained, teemajor/sqwod-life only, Actions: Read and write (starts the Daily at 05:00 UTC)
 #   npx wrangler secret put DIGEST_KEY        # any long random string; guards /digest for the weekly task
 
 # The dashboard's address. Must stay listed here: without it, `wrangler deploy` warns that

@@ -1,9 +1,22 @@
 name: Generate content (Sqwod cascade)
 
 on:
-  workflow_dispatch:            # manual run from the Actions tab
+  workflow_dispatch:            # manual run from the Actions tab, AND the on-time trigger:
+                                # the dash.sqwod.life Cloudflare Worker dispatches this at
+                                # 05:00 UTC on weekdays, because GitHub's own schedule
+                                # routinely starts 5-6 hours late (11:12, 11:43 in Oct 2026).
+    inputs:
+      force:
+        description: 'Re-run even if today''s issue already exists (sends the email again)'
+        type: boolean
+        default: false
   schedule:
-    - cron: '0 5 * * 1-5'        # ~06:00–07:00 Berlin, weekdays — self-publishing Daily
+    - cron: '0 5 * * 1-5'        # fallback only: skips itself if the Worker run already shipped today
+
+# Never run two Dailies at once (Worker trigger + late GitHub schedule).
+concurrency:
+  group: sqwod-daily
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -17,18 +30,34 @@ jobs:
         with:
           node-version: 20
 
+      # One Daily per day. Whichever trigger arrives second finds today's issue already
+      # committed and stops here, so readers never get the email twice.
+      - name: Already shipped today?
+        id: guard
+        run: |
+          D=$(date +%F)
+          if [ -f "site/src/content/daily/$D.en.md" ] && [ "${{ inputs.force }}" != "true" ]; then
+            echo "done=true" >> "$GITHUB_OUTPUT"
+            echo "Sqwod Daily $D already shipped (event: ${{ github.event_name }}). Nothing to do."
+          else
+            echo "done=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Ingest today's industry news (free, no key)
         id: ingest
+        if: steps.guard.outputs.done != 'true'
         run: node automation/ingest.mjs
 
       - name: Rewrite in Sqwod voice (EN + DE)
         id: cascade
+        if: steps.guard.outputs.done != 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node automation/cascade.mjs --date=$(date +%F) --status=published   # auto-publish; guardrail repairs/drops unverifiable items, then publishes — no human review
 
       - name: Voice it — TTS audio + podcast feeds (EN + DE)
         id: audio
+        if: steps.guard.outputs.done != 'true'
         env:
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           # Voice ids are version-controlled in automation/audio.mjs (authoritative);
@@ -37,10 +66,12 @@ jobs:
 
       - name: Render the email (EN + DE, with sponsor slot)
         id: newsletter
+        if: steps.guard.outputs.done != 'true'
         run: node automation/newsletter.mjs --date=$(date +%F)
 
       - name: Commit & push (if anything changed)
         id: commit
+        if: steps.guard.outputs.done != 'true'
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
@@ -60,6 +91,7 @@ jobs:
 
       - name: Send the Daily (Resend Broadcasts API)
         id: send
+        if: steps.guard.outputs.done != 'true'
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_AUDIENCE_EN: ${{ secrets.RESEND_AUDIENCE_EN }}
@@ -70,7 +102,7 @@ jobs:
         run: node automation/send.mjs --date=$(date +%F)
 
       - name: Heartbeat — confirm today actually shipped
-        if: always()
+        if: always() && steps.guard.outputs.done != 'true'
         run: |
           D=$(date +%F)
           EN="site/src/content/daily/$D.en.md"

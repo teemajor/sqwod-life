@@ -31,6 +31,7 @@
  */
 
 const RESEND_API = 'https://api.resend.com';
+const DAILY_TRIGGER_CRON = '0 5 * * 1-5';  // must match wrangler.toml [triggers] crons
 const DAY = 86400000;
 const FRESH_DRAFT_MS = 3 * DAY;      // a draft older than this is history, not a task
 const GRACE_MS = 90 * 60 * 1000;     // a draft minutes old is a pipeline mid-run
@@ -87,6 +88,8 @@ export default {
   // Daily 07:00 UTC (wrangler.toml). Monday = weekly pulse. Other days send only when an
   // alert needs a human, so a quiet inbox means a healthy pipeline.
   async scheduled(event, env, ctx) {
+    // 05:00 UTC weekdays: start the Daily on time (GitHub's own schedule runs hours late).
+    if (event.cron === DAILY_TRIGGER_CRON) { ctx.waitUntil(triggerDaily(env)); return; }
     const endAt = Date.now();
     const d = await gather(env, { startAt: endAt - 7 * DAY, endAt, unit: 'day', label: 'Last 7 days', activeKey: '7' });
     const dashUrl = env.DASH_URL || 'https://dash.sqwod.life';
@@ -568,4 +571,36 @@ function alertsText(q, dashUrl) {
   q.forEach((it, i) => { L.push(`${i + 1}. [${it.level === 'blocked' ? 'BLOCKED' : 'WATCH'}] ${it.title}`, `   ${it.detail}`, ''); });
   L.push(dashUrl);
   return L.join('\n');
+}
+
+// Starts the "Generate content" GitHub workflow (content.yml) via workflow_dispatch.
+// Needs secret GITHUB_TOKEN: a fine-grained token for teemajor/sqwod-life with
+// "Actions: Read and write" only. The workflow skips itself if today already shipped,
+// so a retry or GitHub's late fallback schedule can never send the Daily twice.
+async function triggerDaily(env) {
+  const repo = env.GITHUB_REPO || 'teemajor/sqwod-life';
+  const alert = async (why) => {
+    console.log(`daily trigger failed: ${why}`);
+    if (!env.RESEND_API_KEY || !env.RESEND_FROM) return;
+    await fetch(`${RESEND_API}/emails`, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+      body: JSON.stringify({ from: env.RESEND_FROM, to: env.DIGEST_TO || 'tee@teemajor.com',
+        subject: 'Sqwod Daily: the 06:00 start failed',
+        text: `Cloudflare could not start today's Daily (${why}).\n\nGitHub's own schedule will still run it later today as a fallback. To run it now: https://github.com/${repo}/actions/workflows/content.yml → Run workflow.` }),
+    }).catch(() => {});
+  };
+  if (!env.GITHUB_TOKEN) return alert('GITHUB_TOKEN secret is not set');
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const r = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/content.yml/dispatches`, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${env.GITHUB_TOKEN}`, accept: 'application/vnd.github+json',
+        'x-github-api-version': '2022-11-28', 'user-agent': 'sqwod-dashboard-worker', 'content-type': 'application/json' },
+      body: JSON.stringify({ ref: 'main' }),
+    }).catch((e) => ({ ok: false, status: String(e) }));
+    if (r.ok) { console.log(`daily trigger: dispatched (attempt ${attempt})`); return; }
+    if (r.status === 401 || r.status === 403 || r.status === 404) return alert(`GitHub said ${r.status}: the token is wrong, expired, or lacks Actions write access`);
+    await new Promise((res) => setTimeout(res, 20000));
+  }
+  return alert('GitHub did not answer after 3 tries');
 }
