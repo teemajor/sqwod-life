@@ -1,0 +1,161 @@
+---
+// Supplements A to Z: the hub that groups every supplement Sqwod Evidence has graded.
+// Data lives in config/supplements-az.ts (one row per supplement, traceable to its playbook).
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+import { supplements, tierMeta, supplementFaq, type Tier } from '../../../config/supplements-az';
+import { GUIDE_PREFIX } from '../../../config/best';
+
+export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+
+const rows = [...supplements].sort((a, b) => a.name[lang].localeCompare(b.name[lang], lang));
+const letters = [...new Set(rows.map((r) => r.name[lang][0].toUpperCase()))];
+const tiers: Tier[] = ['yes', 'conditional', 'skip', 'avoid'];
+const count = (t: Tier) => rows.filter((r) => r.tier === t).length;
+
+const title = de
+  ? 'Supplements von A bis Z: Was die Studienlage sagt | Sqwod Evidence'
+  : 'Supplements A to Z: What the Evidence Says | Sqwod Evidence';
+const description = de
+  ? `${rows.length} Supplements, nach Studienlage bewertet: was wirkt, für wen, und was du weglassen kannst. Jede Aussage mit Quelle, für Coaches und Trainer.`
+  : `${rows.length} supplements graded by the research: what works, for whom, and what to skip. Every claim sourced, written for coaches and trainers.`;
+
+const base = 'https://sqwod.life';
+const pageUrl = `${base}/${lang}/evidence/supplements/`;
+const href = (slug: string) => `/${lang}/analysis/${slug}`;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': `${pageUrl}#list`,
+    name: de ? 'Supplements von A bis Z' : 'Supplements A to Z',
+    url: pageUrl,
+    inLanguage: lang,
+    numberOfItems: rows.length,
+    itemListElement: rows.map((r, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: r.name[lang],
+      description: `${tierMeta[r.tier].label[lang]}. ${r.line[lang]}`,
+      url: `${base}${href(r.playbook)}/`,
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${pageUrl}#faq`,
+    inLanguage: lang,
+    mainEntity: supplementFaq.map((f) => ({
+      '@type': 'Question',
+      name: f.q[lang],
+      acceptedAnswer: { '@type': 'Answer', text: f.a[lang] },
+    })),
+  },
+];
+---
+<Base lang={lang} title={title} description={description} active="evidence">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
+
+  <div class="pagehead">
+    <p class="kick"><a href={`/${lang}/evidence`}>Sqwod Evidence</a></p>
+    <h1>{de ? 'Supplements von A bis Z' : 'Supplements A to Z'}</h1>
+    <p class="sub">{de
+      ? `Die ${rows.length} Supplements, nach denen Kunden am häufigsten fragen, bewertet nach der Studienlage. Jede Zeile fasst ein Playbook mit Quellen zusammen: was wirkt, für wen, und was du weglassen kannst.`
+      : `The ${rows.length} supplements clients ask about most, graded by the research. Each row sums up a sourced playbook: what works, for whom, and what to skip.`}</p>
+  </div>
+
+  <section class="block az-legend" aria-label={de ? 'Bewertungsstufen' : 'Verdicts'}>
+    {tiers.map((t) => (
+      <div class="az-tier">
+        <span class={`az-pill t-${t}`}>{tierMeta[t].label[lang]} · {count(t)}</span>
+        <span class="az-tdesc">{tierMeta[t].desc[lang]}</span>
+      </div>
+    ))}
+  </section>
+
+  <nav class="az-jump" aria-label={de ? 'Buchstaben' : 'Letters'}>
+    {letters.map((l) => <a href={`#letter-${l}`}>{l}</a>)}
+  </nav>
+
+  <section class="az-list">
+    {rows.map((r, i) => {
+      const L = r.name[lang][0].toUpperCase();
+      const first = i === 0 || rows[i - 1].name[lang][0].toUpperCase() !== L;
+      return (
+        <article class="az-row" id={r.id}>
+          <div class="az-letter" id={first ? `letter-${L}` : undefined} aria-hidden={first ? undefined : 'true'}>{first ? L : ''}</div>
+          <div class="az-body">
+            <h2>
+              <a href={href(r.playbook)}>{r.name[lang]}</a>
+              {r.aka && <span class="az-aka">{r.aka}</span>}
+            </h2>
+            <div class="az-meta">
+              <span class={`az-pill t-${r.tier}`}>{tierMeta[r.tier].label[lang]}</span>
+              <span class="az-grade">{de ? 'Evidenz' : 'Evidence'}: {r.grade[lang]}</span>
+            </div>
+            <p>{r.line[lang]}</p>
+            <a class="cardcta" href={href(r.playbook)}>{r.own
+              ? (de ? 'Zum Playbook' : 'Read the playbook')
+              : (de ? 'Bewertet in der Supplement-Triage' : 'Graded in the supplement triage')} →</a>
+          </div>
+        </article>
+      );
+    })}
+  </section>
+
+  <section class="block">
+    <div class="note"><b>{de ? 'Vor jeder Wirkung: Ist es sauber?' : 'Before any effect: is it clean?'}</b> {de
+      ? 'In einer Analyse von 200 Sportsupplements (Sport Integrity Australia, 2022) enthielten 35 % Substanzen von der WADA-Verbotsliste. Empfiehl nur Produkte mit unabhängiger Chargenzertifizierung.'
+      : 'In an analysis of 200 sports supplements (Sport Integrity Australia, 2022), 35% contained substances on the WADA prohibited list. Recommend only products with third-party batch certification.'}
+      <a class="cardcta" href={href('supplement-triage-evidence-coach-playbook')}>{de ? 'Die ganze Triage' : 'The full triage'} →</a></div>
+  </section>
+
+  <section class="block az-faq">
+    <p class="kick">{de ? 'Häufige Fragen' : 'Common questions'}</p>
+    {supplementFaq.map((f) => (
+      <details>
+        <summary>{f.q[lang]}</summary>
+        <p>{f.a[lang]}</p>
+      </details>
+    ))}
+  </section>
+
+  <section class="block">
+    <div class="note"><b>{de ? 'Welches Produkt?' : 'Which product?'}</b> {de
+      ? 'Die Evidenz sagt dir, was wirkt. Sqwod Verified sagt dir, welches Produkt, mit Prüfsiegel-Check.'
+      : 'The evidence tells you what works. Sqwod Verified tells you which product, with the testing check.'}
+      <a class="cardcta" href={`/${lang}/${GUIDE_PREFIX[lang]}/supplements/`}>{de ? 'Beste Supplements' : 'Best supplements'} →</a></div>
+  </section>
+</Base>
+
+<style>
+  .pagehead .kick a{color:inherit;text-decoration:none}
+  .az-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px 20px}
+  .az-tier{display:grid;gap:6px;align-content:start}
+  .az-tdesc{font-size:13px;color:var(--g2);line-height:1.5}
+  .az-pill{justify-self:start;display:inline-block;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);border-radius:5px;padding:3px 7px;color:var(--g1);background:var(--panel2)}
+  .az-pill.t-yes{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .az-pill.t-conditional{color:var(--chalk);border-color:var(--chalk);background:transparent}
+  .az-pill.t-skip{color:var(--g2)}
+  .az-pill.t-avoid{color:var(--g2);text-decoration:line-through}
+  .az-jump{display:flex;flex-wrap:wrap;gap:6px;padding:18px 0 4px}
+  .az-jump a{min-width:34px;text-align:center;padding:6px 0;border:1px solid var(--line);border-radius:8px;color:var(--chalk);text-decoration:none;font-weight:700;font-size:13px}
+  .az-jump a:hover,.az-jump a:focus-visible{border-color:var(--chalk)}
+  .az-list{border-top:1px solid var(--line);margin-top:14px}
+  .az-row{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;padding:20px 0;border-bottom:1px solid var(--line);scroll-margin-top:90px}
+  .az-letter{font-size:28px;font-weight:800;line-height:1;color:var(--g3);scroll-margin-top:90px}
+  .az-body{min-width:0}
+  .az-body h2{margin:0 0 8px;font-size:20px;font-weight:800;letter-spacing:-.01em;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+  .az-body h2 a{color:var(--chalk);text-decoration:none}
+  .az-body h2 a:hover{text-decoration:underline}
+  .az-aka{font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500;color:var(--g3)}
+  .az-meta{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin-bottom:8px}
+  .az-grade{font-size:13px;color:var(--g2)}
+  .az-body p{margin:0 0 10px;max-width:68ch;line-height:1.6;color:var(--g1)}
+  .az-faq details{border-bottom:1px solid var(--line);padding:12px 0}
+  .az-faq summary{cursor:pointer;font-weight:700}
+  .az-faq details p{margin:8px 0 0;max-width:68ch;line-height:1.6;color:var(--g1)}
+  @media(min-width:900px){ .az-row{grid-template-columns:64px minmax(0,1fr)} .az-letter{font-size:36px} }
+</style>

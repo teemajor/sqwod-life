@@ -1,7 +1,11 @@
 #!/usr/bin/env node
 /**
- * Sqwod article engine — turns the same cited news pool the Daily uses into full
- * lane articles: problem → solution playbooks (BUILD) and trend briefs (SIGNAL).
+ * Sqwod article engine: turns the same cited news pool the Daily uses into
+ * one-story lane articles (BUILD for operators, SIGNAL for market moves).
+ * Since 27 Oct 2026 each article covers ONE lead story and its title must name
+ * who did what (or a number from the story); generic, reader-addressed and
+ * near-duplicate titles are rejected in code (titles.mjs). The Daily is the
+ * roundup and is not affected.
  *
  * SAFETY: it never invents figures. It synthesises an actionable piece from real,
  * cited headlines (problem → solution → takeaway) and links the source outlets.
@@ -16,6 +20,8 @@
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { titleProblems, headingProblems, recentArticles, pickLead } from './titles.mjs';
+import { noEmDash, phraseProblems } from './quality.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SOURCES = join(__dirname, 'sources');
@@ -36,10 +42,13 @@ const typeFor = (lane, text) => {
   return 'analysis';
 };
 const LANE_BRIEF = {
-  build: 'an actionable playbook for fitness coaches, studio owners and operators',
-  signal: 'a sharp trend brief for fitness operators and investors',
-  move: 'a practical training/method note for coaches',
+  build: 'a news analysis for fitness coaches, studio owners and operators',
+  signal: 'a news analysis for fitness operators, founders and investors',
 };
+// Move retired as a lane on 27 Oct 2026 (nav is now Daily, Articles, Evidence,
+// Reports, Verified). Its pieces were studio-business news filed under training.
+// The workflow still calls --lane=move; it now exits cleanly without writing.
+if (LANE === 'move') { console.log('· move lane retired 2026-10-27: nothing to write'); process.exit(0); }
 
 // ---- gather the recent cited news pool, filtered to the lane ----
 function pool(lane) {
@@ -53,7 +62,8 @@ function pool(lane) {
       if (s.pillar !== lane) continue;
       const key = (s.topic || '').toLowerCase().slice(0, 50);
       if (seen.has(key)) continue; seen.add(key);
-      items.push({ headline: s.topic, outlet: s.entity, url: (s.en && s.en.readMore) || s.readMore || '', conversion: s.conversion });
+      const text = ((s.facts || []).find((f) => f.label === 'Article') || {}).value || '';
+      items.push({ headline: s.topic, outlet: s.entity, url: (s.en && s.en.readMore) || s.readMore || '', conversion: s.conversion, text, thin: !!s.thin });
     }
   }
   return items;
@@ -62,43 +72,65 @@ function pool(lane) {
 const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 const q = (s) => JSON.stringify(s ?? '');
 
-async function authour(cluster, lang) {
+// One lead story per article (titles.mjs). Context stories only when they are about
+// the same subject. The Daily is the roundup; lane articles go deep on one thing.
+async function authour({ lead, context }, lang, { recentTitles, enTitle } = {}) {
   const langName = lang === 'de' ? 'German' : 'English';
-  const list = cluster.map((c, i) => `${i + 1}. ${c.headline} (${c.outlet})`).join('\n');
-  const prompt = `You are Sqwod's editor writing ${LANE_BRIEF[LANE]} in ${langName}.
+  const ctx = context.map((c, i) => `${i + 1}. ${c.headline} (${c.outlet})`).join('\n') || '(none)';
+  const base = `You are Sqwod's editor writing ${LANE_BRIEF[LANE]} in ${langName}.
 
-VOICE: emotion creates motion. Lead with the reader's problem, then the solution. Witty, specific, useful — Morning Brew for the fitness industry. Never corporate.
+THE LEAD STORY (the article is about this one story):
+${lead.headline} (${lead.outlet})
+${lead.text ? `What the article says: ${lead.text.slice(0, 1500)}\n` : ''}
+CONTEXT STORIES (use only if they add directly to the lead; otherwise ignore):
+${ctx}
 
-These are today's real, cited stories (the ONLY facts you may rely on):
-${list}
+STRUCTURE: say what happened (who, what, how much), why it matters to studio and gym operators, and what an operator can do with it. 300 to 500 words, Markdown, 2 or 3 short sections with \`##\` subheads.
 
-Write ONE original article that connects these into a single useful thread for the reader. STRUCTURE: hook the problem → explain what's really happening → give a concrete, do-this-now solution. 400–600 words, Markdown, 2–4 short sections with \`##\` subheads.
+TITLE RULES (checked by code; a failing title is rejected):
+- Name the company, organisation or person from the lead story exactly as the story spells it, or use one of its numbers. Like a trade news desk: "WILDE Lands $40M to Scale Protein Snacks", "Inside Erewhon's Growth Strategy".
+- At most 70 characters. A statement, never a question. No em dashes.
+- Never address the reader ("Your studio...", "You're...", "Dein Studio..."). No formulas: "which side are you on", "pick a lane", "splitting in two", "are you ready", "here's how", "leaving money on the table".
+${enTitle ? `- Use the same name or number as the English title: "${enTitle}".\n` : ''}SUBHEAD RULES: each subhead says something specific about this story. Never generic labels like "What's really happening", "Do this now", "The bottom line", "Your move".
 
 HARD RULES:
 - Never invent numbers, dollar figures, percentages, dates, or company facts. If a number isn't in the stories above, don't state one.
-- It's analysis and advice grounded in the stories — attribute claims to the outlets where relevant.
-- ${lang === 'de' ? 'Schreibe natürliches, idiomatisches Deutsch — keine Übersetzung.' : 'Plain, punchy English.'}
+- Attribute claims to the outlets. Plain words, no slang. No em dashes.
+- ${lang === 'de' ? 'Schreibe natürliches, idiomatisches Deutsch, keine Übersetzung. Keine Anrede mit du im Titel.' : 'Plain, direct English.'}
 
-Respond ONLY as minified JSON: {"title":"<=70 chars, problem-led","description":"1 sentence promise","body":"the full markdown article"}`;
+Respond ONLY as minified JSON: {"title":"...","entity":"the exact name from the lead story your title uses, or empty","number":"the exact number from the lead story your title uses, or empty","description":"1 sentence saying what the reader learns","body":"the full markdown article"}`;
+
+  let feedback = '';
   for (let attempt = 1; attempt <= 3; attempt++) {
+    let o;
     try {
       const r = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
         headers: { 'x-api-key': apiKey, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-        body: JSON.stringify({ model: MODEL, max_tokens: 1800, messages: [{ role: 'user', content: prompt }] }),
+        body: JSON.stringify({ model: MODEL, max_tokens: 1800, messages: [{ role: 'user', content: base + feedback }] }),
       });
       if (!r.ok) throw new Error(`HTTP ${r.status}`);
       const data = await r.json();
       const txt = (data.content?.[0]?.text || '').trim().replace(/^```(?:json)?\s*|\s*```$/g, '');
-      const o = JSON.parse(txt);
-      if (o.title && o.body) return o;
-    } catch (e) { console.error(`· author retry ${attempt}/3 (${lang}): ${e.message}`); if (attempt < 3) await new Promise((x) => setTimeout(x, attempt * 2000)); }
+      o = JSON.parse(txt);
+      if (!o.title || !o.body) throw new Error('missing title/body');
+    } catch (e) { console.error(`· author retry ${attempt}/3 (${lang}): ${e.message}`); if (attempt < 3) await new Promise((x) => setTimeout(x, attempt * 2000)); continue; }
+
+    o.title = noEmDash(o.title).trim(); o.description = noEmDash(o.description || ''); o.body = noEmDash(o.body);
+    const problems = [
+      ...titleProblems(o.title, { lang, recentTitles, leadText: `${lead.headline} ${lead.text || ''}`, entity: o.entity, number: o.number }),
+      ...phraseProblems(o.title).map((x) => `title: ${x}`),
+      ...headingProblems(o.body),
+    ];
+    if (!problems.length) return o;
+    console.error(`· ${lang} draft rejected (${attempt}/3): ${problems.join(' | ')}`);
+    feedback = `\n\nYOUR PREVIOUS DRAFT WAS REJECTED. Title was: "${o.title}". Fix every problem:\n- ${problems.join('\n- ')}`;
   }
-  return null;
+  return null; // never ship a generic or duplicate title: skip this run instead
 }
 
 function frontmatter(slug, lang, lane, type, art, cluster) {
-  const sources = cluster.filter((c) => c.url).slice(0, 6).map((c) => `  - { label: ${q(c.outlet)}, url: ${q(c.url)} }`);
+  const sources = cluster.filter((c) => c.url).slice(0, 3).map((c) => `  - { label: ${q(c.outlet)}, url: ${q(c.url)} }`);
   const conv = (cluster[0] && cluster[0].conversion) || 'list-growth';
   return [
     '---',
@@ -129,18 +161,24 @@ function frontmatter(slug, lang, lane, type, art, cluster) {
 }
 
 async function run() {
-  const cluster = pool(LANE).slice(0, 6);
-  if (cluster.length < 2) { console.log(`· not enough ${LANE} stories in the last ${DAYS}d (${cluster.length}) — skipping`); process.exit(0); }
-  console.log(`Cluster (${LANE}, ${cluster.length}):`); cluster.forEach((c) => console.log(`  · ${c.headline} — ${c.outlet}`));
+  const pooled = pool(LANE);
+  const recentEn = recentArticles(OUT, 'en', 60);
+  const recentDe = recentArticles(OUT, 'de', 60);
+  const pick = pickLead(pooled, { usedUrls: recentEn.urls, recentTitles: recentEn.titles });
+  if (!pick) { console.log(`· no ${LANE} story in the last ${DAYS}d that the last 60 articles haven't covered (${pooled.length} in pool): skipping`); process.exit(0); }
+  const cluster = [pick.lead, ...pick.context];
+  console.log(`Lead (${LANE}): ${pick.lead.headline} (${pick.lead.outlet})`);
+  pick.context.forEach((c) => console.log(`  context: ${c.headline} (${c.outlet})`));
 
-  if (!apiKey) { console.log('\n· dry-run (no ANTHROPIC_API_KEY): would author EN + DE from the cluster above.'); process.exit(0); }
+  if (!apiKey) { console.log('\n· dry-run (no ANTHROPIC_API_KEY): would author EN + DE from the lead above.'); process.exit(0); }
 
-  const en = await authour(cluster, 'en');
-  if (!en) { console.error('✗ EN authoring failed — aborting'); process.exit(0); }
+  const en = await authour(pick, 'en', { recentTitles: recentEn.titles });
+  if (!en) { console.error('✗ EN draft failed the title/structure rules 3 times: no article this run'); process.exit(0); }
   const slug = slugify(en.title) + '-' + date.slice(5).replace('-', '');
-  if (existsSync(join(OUT, `${slug}.en.md`))) { console.log(`· ${slug} already exists — skipping`); process.exit(0); }
+  if (existsSync(join(OUT, `${slug}.en.md`))) { console.log(`· ${slug} already exists: skipping`); process.exit(0); }
   const type = typeFor(LANE, cluster.map((c) => c.headline).join(' '));
-  const de = await authour(cluster, 'de') || en;
+  const de = await authour(pick, 'de', { recentTitles: recentDe.titles, enTitle: en.title });
+  if (!de) { console.error('✗ DE draft failed the title/structure rules 3 times: no article this run (EN+DE ship together)'); process.exit(0); }
 
   mkdirSync(OUT, { recursive: true });
   writeFileSync(join(OUT, `${slug}.en.md`), frontmatter(slug, 'en', LANE, type, en, cluster));
