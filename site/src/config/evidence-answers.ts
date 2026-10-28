@@ -1,5 +1,5 @@
 import { type Lang } from '../i18n/ui';
-import { type Tier } from './supplements-az';
+import { type Tier, tierMeta } from './supplements-az';
 
 // Answer box at the top of every Evidence playbook (27 Oct 2026, Tee approved
 // "all 23"). The fast answer a coach came for: verdict, evidence grade, what to
@@ -9,8 +9,13 @@ import { type Tier } from './supplements-az';
 // changes, re-check its entry here.
 
 type L = Record<Lang, string>;
+export type AnswerTier = Tier | 'myth';
+export const answerTierLabel = (t: AnswerTier, lang: Lang) =>
+  t === 'myth' ? (lang === 'de' ? 'Mythos' : 'Myth') : tierMeta[t].label[lang];
 export interface EvidenceAnswer {
-  tier?: Tier;   // only where "should a coach recommend it?" is the question
+  // Pill. Tier = "should a coach recommend it?". 'myth' (28 Oct 2026, Tee) = a
+  // popular claim the research does not support (cycle-syncing, the anabolic window).
+  tier?: AnswerTier;
   verdict: L;    // one sentence
   grade: L;      // strongest relevant grade from the page
   doThis: L;
@@ -110,7 +115,7 @@ export const evidenceAnswers: Record<string, EvidenceAnswer> = {
     watch: { en: 'Evidence on symptoms is mixed. Hormone therapy and bone-density results are for the doctor.', de: 'Die Evidenz zu Beschwerden ist gemischt. Hormontherapie und Knochendichte-Werte gehören zur Ärztin oder zum Arzt.' },
   },
   'menstrual-cycle-periodization-evidence-coach-playbook': {
-    tier: 'skip',
+    tier: 'myth',
     verdict: { en: 'Phase-based programming shows small to no effect on strength or muscle. Birth control does not hold gains back.', de: 'Zyklusbasierte Trainingsplanung zeigt kleine bis keine Effekte auf Kraft oder Muskeln. Die Pille bremst den Fortschritt nicht.' },
     grade: { en: 'Weak and conflicting for cycle-syncing', de: 'Schwach und widersprüchlich für Zyklus-Training' },
     doThis: { en: 'Adjust to how she feels and performs week to week, not to a calendar.', de: 'Nach Befinden und Leistung von Woche zu Woche anpassen, nicht nach dem Kalender.' },
@@ -131,7 +136,7 @@ export const evidenceAnswers: Record<string, EvidenceAnswer> = {
     watch: { en: 'Medication questions belong with the doctor. The coach handles training and food.', de: 'Fragen zum Medikament gehören zur Ärztin oder zum Arzt. Der Coach kümmert sich um Training und Ernährung.' },
   },
   'protein-timing-evidence-coach-playbook': {
-    tier: 'skip',
+    tier: 'myth',
     verdict: { en: 'The 30-minute anabolic window does not hold up. The daily total is what matters.', de: 'Das 30-Minuten-Fenster hält nicht. Entscheidend ist die Tagesmenge.' },
     grade: { en: 'Strong that timing is not the driver', de: 'Stark: Das Timing ist nicht entscheidend' },
     doThis: { en: '1.6 to 2.2 g/kg a day over about four protein meals. Some protein before bed if training late.', de: '1,6 bis 2,2 g/kg pro Tag über etwa vier Proteinmahlzeiten. Bei spätem Training etwas Protein vor dem Schlafen.' },

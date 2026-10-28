@@ -2,8 +2,7 @@
 import { type Lang } from '../i18n/ui';
 import { pillarMeta, type Pillar } from '../i18n/pillars';
 import { TOPICS, topicLabel } from '../config/topics';
-import { evidenceAnswers } from '../config/evidence-answers';
-import { tierMeta } from '../config/supplements-az';
+import { evidenceAnswers, answerTierLabel } from '../config/evidence-answers';
 import ArticleHero from './ArticleHero.astro';
 import ShareBar from './ShareBar.astro';
 import BenchmarkWidget from './BenchmarkWidget.astro';
@@ -207,7 +206,7 @@ const shareCfg = {
       <section class="answer" aria-label={AB.kick}>
         <div class="ans-head">
           <span class="ans-kick">{AB.kick}</span>
-          {answer.tier && <span class={`ans-pill t-${answer.tier}`}>{tierMeta[answer.tier].label[lang]}</span>}
+          {answer.tier && <span class={`ans-pill t-${answer.tier}`}>{answerTierLabel(answer.tier, lang)}</span>}
         </div>
         <p class="ans-verdict">{answer.verdict[lang]}</p>
         <dl class="ans-grid">
@@ -583,6 +582,9 @@ const shareCfg = {
   .ans-pill.t-skip{color:var(--g1);background:var(--panel2);border-color:var(--panel2)}
   .ans-pill.t-avoid{color:var(--chalk);border:2px solid var(--chalk)}
   .ans-pill.t-avoid::before{content:"✕";font-size:11px}
+  /* Myth: a claim the research does not support. Dotted outline, muted, with a "≠" mark */
+  .ans-pill.t-myth{color:var(--g1);border:1px dotted var(--g2);background:transparent}
+  .ans-pill.t-myth::before{content:"≠";font-size:12px;line-height:1}
   .ans-verdict{margin:0 0 12px;font-size:17px;font-weight:700;line-height:1.45;color:var(--chalk);max-width:62ch}
   .ans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px;margin:0}
   .ans-grid div{min-width:0}
