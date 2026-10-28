@@ -8,11 +8,15 @@
 // unaltered, from Apple's marketing tools. Apple's rules: never modify it (keep the grey
 // border), min 30px tall, clear space = 1/10 of its height, and it goes FIRST when shown
 // next to other platforms' badges. So it is rendered bare, not inside our pill.
-interface Props { platform: 'spotify' | 'apple'; href: string; lang: string }
+// YouTube: no official badge file in the repo, so it renders as our own pill with the
+// YouTube name (text only, no altered logo). Hidden while the href is '#'.
+interface Props { platform: 'spotify' | 'apple' | 'youtube'; href: string; lang: string }
 const { platform, href, lang } = Astro.props;
 const label = platform === 'apple'
   ? (lang === 'de' ? 'Auf Apple Podcasts anhören' : 'Listen on Apple Podcasts')
-  : (lang === 'de' ? 'Auf Spotify anhören' : 'Listen on Spotify');
+  : platform === 'youtube'
+    ? (lang === 'de' ? 'Auf YouTube anhören' : 'Listen on YouTube')
+    : (lang === 'de' ? 'Auf Spotify anhören' : 'Listen on Spotify');
 ---
 {platform === 'apple' && href && href !== '#' && (
   <a class="lb-apple" href={href} target="_blank" rel="noopener" aria-label={label} title={label} data-umami-event="listen-apple">
@@ -25,7 +29,15 @@ const label = platform === 'apple'
     <img class="lb-light" src="/brands/spotify-full-black.svg" alt="" aria-hidden="true" width="81" height="22" loading="lazy" decoding="async" />
   </a>
 )}
+{platform === 'youtube' && href && href !== '#' && (
+  <a class="lb lb-yt" href={href} target="_blank" rel="noopener" aria-label={label} title={label} data-umami-event="listen-youtube">
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z" fill="currentColor"/></svg>
+    <span>YouTube</span>
+  </a>
+)}
 <style>
+  .lb-yt{gap:8px;color:var(--chalk);font:700 13px/1 inherit;line-height:1}
+  .lb-yt span{font-family:inherit;font-weight:700;font-size:13px}
   .lb-apple{display:inline-flex;line-height:0;padding:3px;border-radius:12px;transition:opacity .15s ease}
   .lb-apple:hover{opacity:.85}
   .lb-apple img{height:46px;width:auto;display:block}

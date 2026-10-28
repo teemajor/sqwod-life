@@ -210,9 +210,16 @@ function render(iss, lang) {
   const fwdBody = encodeURIComponent((lang === 'de'
     ? 'Dachte, das ist was für dich. Die Fitnessbranche, eingeordnet in 5 Minuten:'
     : 'Thought of you. The fitness industry, decoded in 5 minutes:') + '\n\n' + withUTM(epUrl, 'forward'));
+  // Referral programme (infrastructure/subscribe: ?ref=CODE, counted on confirm).
+  // Each reader got their personal link in the welcome email; /refer re-sends it.
+  const refUrl = withUTM(`${SITE}/${lang}/refer`, 'refer');
+  const refLine = lang === 'de'
+    ? `Drei Leute über deinen persönlichen Link, und du bekommst einen Sqwod-Intelligence-Report geschenkt. <a href="${refUrl}" style="color:${INK};font-weight:700;">Deinen Link holen &rarr;</a>`
+    : `Three people through your personal link and we send you a Sqwod Intelligence report, free. <a href="${refUrl}" style="color:${INK};font-weight:700;">Get your link &rarr;</a>`;
   const share = card(label(shareHead, 'pulse-ring.gif') +
     `<div style="font:400 15px/1.6 ${F};color:${G2};margin-bottom:14px;">${shareBody}</div>` +
-    `<a href="mailto:?subject=${fwdSubject}&amp;body=${fwdBody}" style="${btn()}">${lang === 'de' ? 'An eine:n Freund:in weiterleiten' : 'Forward to a friend'} &rarr;</a>`);
+    `<a href="mailto:?subject=${fwdSubject}&amp;body=${fwdBody}" style="${btn()}">${lang === 'de' ? 'An eine:n Freund:in weiterleiten' : 'Forward to a friend'} &rarr;</a>` +
+    `<div style="font:400 13.5px/1.6 ${F};color:${G2};margin-top:14px;">${refLine}</div>`);
 
   // Top sponsor slot: a clearly-defined "Presented by" band UNDER the hero, before content.
   const presentedBand = iss.sponsor && iss.sponsor.name ? `

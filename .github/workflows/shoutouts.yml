@@ -1,0 +1,92 @@
+name: You made the news — clips + outreach
+
+# After each Daily: find the companies the episode names, cut the passage about each
+# one out of the episode MP3, draft a note + LinkedIn post, and email Tee one
+# Send / Skip card per company (automation/shoutouts.mjs). Nothing is sent to a company
+# here. A "Send it" tap flips automation/intel-queue/shoutout-<id>.json to "approved"
+# via the pr-intake Worker; that commit is a push on main, which runs the "send" job
+# below and emails the clip to the company.
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Episode date (YYYY-MM-DD). Default: today.'
+        required: false
+  workflow_run:
+    workflows: ["Generate content (Sqwod cascade)"]
+    types: [completed]
+  push:
+    branches: [main]
+    paths:
+      - 'automation/intel-queue/shoutout-*.json'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: shoutouts
+  cancel-in-progress: false
+
+jobs:
+  clips:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Cut clips, draft notes, email the review cards
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.INTEL_FROM }}
+          INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
+          INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
+          INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
+          SHOUTOUT_FROM: ${{ vars.SHOUTOUT_FROM }}
+          SHOUTOUT_REPLY_TO: ${{ vars.SHOUTOUT_REPLY_TO }}
+        run: |
+          D="${{ github.event.inputs.date }}"; [ -z "$D" ] && D=$(date +%F)
+          node automation/shoutouts.mjs --date=$D --email
+          node automation/shoutouts.mjs --prune
+      - name: Commit clips + queue
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          for p in site/public/clips automation/intel-queue; do [ -e "$p" ] && git add -A "$p"; done
+          if git diff --staged --quiet; then echo "No shout-out changes."; else
+            git commit -m "shoutouts: clips $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
+
+  send:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Send approved shout-outs
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          SHOUTOUT_FROM: ${{ vars.SHOUTOUT_FROM }}
+          SHOUTOUT_REPLY_TO: ${{ vars.SHOUTOUT_REPLY_TO }}
+        run: node automation/shoutouts.mjs --send
+      - name: Record what was sent
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/intel-queue
+          if git diff --staged --quiet; then echo "Nothing sent."; else
+            git commit -m "shoutouts: sent $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi

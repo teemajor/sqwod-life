@@ -46,6 +46,7 @@ Schema: `site/src/content/config.ts` — articles carry `pillar` (lane) + `type`
 |---|---|---|
 | `content.yml` | weekdays ~06:00 Berlin | `ingest` (global news + trade RSS) → `cascade` (bilingual Daily, fact-checked, auto-publish) → `audio` (ElevenLabs TTS + podcast feeds) → `newsletter` (email HTML) → commit → `send` (Resend broadcast) → heartbeat |
 | `articles.yml` | Tue + Fri | `articles.mjs` — synthesizes problem→solution playbooks (BUILD) + trend briefs (SIGNAL/MOVE) from the cited news pool, EN+DE; never invents figures |
+| `shoutouts.yml` | after each Daily + on approval | `shoutouts.mjs` — "you made the news": per-company clips cut from the episode, note + LinkedIn draft, one-tap Send/Skip; approved notes go out with the clip |
 | `press.yml` | hourly | screen + publish submitted press releases |
 | `leads.yml` | Mondays | weekly idea/source queue |
 | `deploy.yml` | on push to `main` **and** when the content/audio workflows finish (`workflow_run`) | build `site/` → GitHub Pages. (Bot commits use `GITHUB_TOKEN`, which doesn't fire `push`, so deploy also chains off those runs.) |
@@ -74,7 +75,8 @@ node automation/articles.mjs --lane=build --days=5
 
 ## Required secrets / config
 - GitHub Actions secrets: `ANTHROPIC_API_KEY`, `ELEVENLABS_API_KEY`, `RESEND_API_KEY`, `RESEND_AUDIENCE_EN/DE`; vars `RESEND_FROM`, `RESEND_REPLY_TO`. (Daily voices are **version-controlled in `automation/audio.mjs`** — EN = Adam, DE = Helmut — the `ELEVENLABS_VOICE_EN/DE` secrets are intentionally *not* consulted.)
-- Cloudflare subscribe Worker (`infrastructure/subscribe/`): secret `RESEND_API_KEY`, var `RESEND_SEGMENT_EN/DE`. Endpoint wired in `site/src/config/subscribe.ts`.
+- Shout-outs (`shoutouts.yml`): reuses `ANTHROPIC_API_KEY`, `RESEND_API_KEY`, `INTEL_REVIEWER_EMAIL`, `INTEL_SIGNING_SECRET`, vars `INTEL_FROM`, `INTEL_WORKER_URL`; plus vars `SHOUTOUT_FROM` (the sender companies see, e.g. `Tee Major, Sqwod Daily <podcast@sqwod.life>`, must be on the verified domain) and `SHOUTOUT_REPLY_TO`.
+- Cloudflare subscribe Worker (`infrastructure/subscribe/`): secret `RESEND_API_KEY`, var `RESEND_SEGMENT_EN/DE`. Endpoint wired in `site/src/config/subscribe.ts`. Referral programme (refer 3 → Intelligence report) lives in the same Worker; its KV namespace is created by the deploy workflow.
 
 ## Status / next
 - ✅ Live: site, bilingual auto-Daily + audio (repo-pinned voices, auto-deploy), Resend send + capture worker, gated report lead-magnet, share bars, 3-lane taxonomy + Verified, globalized/diversified sources, article engine, per-figure-sourced Intelligence reports (integrity pass).

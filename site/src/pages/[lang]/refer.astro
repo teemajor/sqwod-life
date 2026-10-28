@@ -1,0 +1,81 @@
+---
+// Referral programme: refer 3 confirmed readers, get a Sqwod Intelligence report.
+// Every subscriber already has their link in the welcome email; this page re-sends
+// it (POST /refer on the subscribe Worker, which only emails addresses on the list).
+import Base from '../../layouts/Base.astro';
+import { languages, type Lang } from '../../i18n/ui';
+import { SUBSCRIBE } from '../../config/subscribe';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const endpoint = SUBSCRIBE.endpoint ? SUBSCRIBE.endpoint.replace(/\/subscribe$/, '') + '/refer' : '';
+const c = lang === 'de' ? {
+  title: 'Teile Sqwod Daily, hol dir den Report',
+  blurb: 'Drei Leute, die sich über deinen persönlichen Link anmelden und bestätigen, und du bekommst einen Sqwod-Intelligence-Report geschenkt: jede Grafik, jede Tabelle, jede Quelle. Bei zehn schicken wir dir Sqwod-Gear.',
+  how: ['Deinen Link hast du in der Willkommensmail. Hier bekommst du ihn nochmal.', 'Teile ihn per WhatsApp, LinkedIn oder im Team-Chat.', 'Wir zählen nur bestätigte Anmeldungen. Keine Bots, keine Doppelten.'],
+  email: 'Deine E-Mail-Adresse (die, mit der du Sqwod Daily bekommst)', cta: 'Meinen Link schicken',
+  sent: 'Wenn diese Adresse auf der Liste ist, liegt dein Link mit deinem aktuellen Stand in wenigen Minuten im Postfach.',
+  err: 'Das hat nicht geklappt. Prüf die E-Mail-Adresse und versuch es nochmal.',
+  notyet: 'Noch kein Abo?', sub: 'Kostenlos abonnieren',
+} : {
+  title: 'Share Sqwod Daily, get the report',
+  blurb: 'Three people who sign up through your personal link and confirm, and we send you a Sqwod Intelligence report, free: every chart, every table, every source. At ten we send you Sqwod gear.',
+  how: ['Your link is in your welcome email. Get it again here.', 'Share it on WhatsApp, LinkedIn or the team chat.', 'We count confirmed sign-ups only. No bots, no duplicates.'],
+  email: 'Your email (the one Sqwod Daily goes to)', cta: 'Send me my link',
+  sent: "If that address is on the list, your link and current count are in your inbox within a few minutes.",
+  err: "That didn't go through. Check the email address and try again.",
+  notyet: 'Not subscribed yet?', sub: 'Subscribe free',
+};
+---
+<Base lang={lang} title={c.title + ' — Sqwod'} description={c.blurb} active="">
+  <div class="sub-hero">
+    <div class="sh-copy">
+      <h1>{c.title}</h1>
+      <p class="sub">{c.blurb}</p>
+      <ol class="how">{c.how.map((p) => <li>{p}</li>)}</ol>
+      <p class="fine">{c.notyet} <a href={`/${lang}/subscribe`}>{c.sub}</a></p>
+    </div>
+    <div class="sh-form">
+      <div class="banner ok" id="banner-sent" hidden role="status">{c.sent}</div>
+      <div class="banner err" id="banner-err" hidden role="alert">{c.err}</div>
+      <form class="bform" method="post" action={endpoint || '#'}>
+        <input type="hidden" name="lang" value={lang} />
+        <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+        <label>{c.email}<input type="email" name="email" required placeholder="you@studio.com" /></label>
+        <button class="cta" type="submit" disabled={!endpoint} data-umami-event="refer-link">{c.cta}</button>
+      </form>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      try {
+        var s = new URLSearchParams(location.search).get('status');
+        var el = s === 'sent' ? document.getElementById('banner-sent') : s === 'error' ? document.getElementById('banner-err') : null;
+        if (el) el.hidden = false;
+      } catch (_) {}
+    })();
+  </script>
+</Base>
+
+<style>
+  .sub-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:10px 0 8px}
+  .sh-copy h1{font-size:clamp(28px,4.5vw,40px);letter-spacing:-.02em;line-height:1.05;margin:0 0 12px}
+  .how{margin:18px 0 0;padding-left:22px}
+  .how li{margin:0 0 10px;color:var(--g1);font-size:15px;line-height:1.5}
+  .sh-form{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,var(--panel),transparent)}
+  .bform{display:flex;flex-direction:column;gap:14px}
+  .bform label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--g3)}
+  .bform input{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 14px;color:var(--chalk);font:inherit;text-transform:none;letter-spacing:0}
+  .bform input:focus{outline:none;border-color:var(--chalk)}
+  .bform .cta[disabled]{opacity:.5;cursor:not-allowed}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .banner{border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.5;margin:0 0 16px}
+  .banner.ok{background:rgba(31,125,77,.14);border:1px solid rgba(31,125,77,.45);color:var(--chalk)}
+  .banner.err{background:rgba(179,38,30,.14);border:1px solid rgba(179,38,30,.45);color:var(--chalk)}
+  .fine{font-size:13px;color:var(--g2);margin:16px 0 0}
+  .fine a{color:var(--chalk)}
+  @media(max-width:680px){.sub-hero{grid-template-columns:1fr;gap:22px}}
+</style>

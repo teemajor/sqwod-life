@@ -74,3 +74,23 @@ Resend click tracking rewrites the confirmation link. Corporate mail scanners
 that pre-fetch links can therefore auto-confirm an address. That is inherent to
 double opt-in with click tracking on, and it is a much smaller problem than
 unverified bot sign-ups.
+
+
+## Referral programme ("refer 3, get the report")
+
+Built into this Worker. Every subscriber has a stable code derived from their email
+(`HMAC(CONFIRM_SECRET, "ref:" + email)`, first 10 hex chars), so no table of codes exists.
+
+```
+welcome email (sent on confirm) carries   https://sqwod.life/<lang>/subscribe?ref=<code>
+↓ friend lands anywhere on the site with ?ref= → remembered in localStorage → sent as `ref` with the sign-up
+↓ friend confirms → contact created → referrer credited ONCE per friend (KV: refd:<email>)
+↓ KV refcount:<code> += 1 → Resend property referral_count on the referrer
+↓ at 3 (and 10) → reward email to the referrer (REFERRAL_REWARDS_JSON, defaults in worker.js)
+```
+
+- `/refer` page (`site/src/pages/[lang]/refer.astro`) → `POST /refer` re-sends a subscriber their link + count. It only emails addresses that are on the list and answers identically either way.
+- Resend contact properties used: `ref_code`, `referred_by`, `referral_count` (created 2026-10-28).
+- KV: `.github/workflows/deploy-subscribe-worker.yml` creates the `sqwod-subscribe-SUBS_KV` namespace on first deploy (needs **Workers KV Storage: Edit** on `CLOUDFLARE_API_TOKEN`) and binds it. Without KV, sign-ups still work; referrals are simply not counted.
+- Rewards: default milestone 3 = the State of Wearables 2026 report link, 10 = "reply with your address for gear". Override with the `REFERRAL_REWARDS_JSON` var; set `SWAG_WORKER_URL` + secret `SWAG_SECRET` to also fire `infrastructure/swag-fulfill` for physical rewards.
+- Honest note: the Intelligence reports already unlock with any email, so the milestone-3 reward is a thank-you, not something scarce. Stickers / tee / hoodie (the copy `newsletter.mjs` already promises) are the stronger carrot once the Shopify variants exist.

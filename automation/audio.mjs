@@ -30,6 +30,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const DAILY = join(__dirname, '..', 'site', 'src', 'content', 'daily');
 const AUDIO = join(__dirname, '..', 'site', 'public', 'audio');
 const PUBLIC = join(__dirname, '..', 'site', 'public');
+// Paragraph-level timing marks per episode (tiny JSON), written at synth time from
+// ElevenLabs' character alignment. automation/shoutouts.mjs cuts the per-company
+// clips from these, so a clip is the real episode audio, not a re-synth.
+const MARKS = join(__dirname, 'audio-marks');
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 const SITE = (process.env.SITE_URL || 'https://sqwod.life').replace(/\/$/, '');
@@ -48,9 +52,16 @@ const VOICE_DE = 'g1jpii0iyvtRs8fqXsd1'; // Helmut — native German
 const VOICE = { en: VOICE_EN, de: VOICE_DE };
 if (KEY) console.log(`· Daily voices (repo, authoritative) — EN: ${VOICE.en} · DE: ${VOICE.de}`);
 
+// AI-voice disclosure: the host voice is synthetic. Said once in the show notes and
+// once per episode, so Apple, Spotify and YouTube (altered/synthetic content rules)
+// and listeners all see it. Editorial is still human-set and fact-checked.
+export const DISCLOSE = {
+  en: 'Narrated by an AI voice. Written, sourced and fact-checked by the Sqwod editorial team.',
+  de: 'Gesprochen von einer KI-Stimme. Geschrieben, belegt und geprüft von der Sqwod-Redaktion.',
+};
 const SHOW = {
-  en: { title: 'Sqwod Daily', desc: 'Your 5-minute audio rundown of the fitness and wellness industry, every weekday. From Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'podcast@sqwod.life' },
-  de: { title: 'Sqwod Daily (Deutsch)', desc: 'Dein 5-Minuten-Audio-Rundown zum Business von Fitness und Wellness, jeden Werktag. Von Sqwod.', author: 'Sqwod', owner: 'Sqwod', email: 'podcast@sqwod.life' },
+  en: { title: 'Sqwod Daily', desc: `Your 5-minute audio rundown of the fitness and wellness industry, every weekday. From Sqwod. ${DISCLOSE.en}`, author: 'Sqwod', owner: 'Sqwod', email: 'podcast@sqwod.life' },
+  de: { title: 'Sqwod Daily (Deutsch)', desc: `Dein 5-Minuten-Audio-Rundown zum Business von Fitness und Wellness, jeden Werktag. Von Sqwod. ${DISCLOSE.de}`, author: 'Sqwod', owner: 'Sqwod', email: 'podcast@sqwod.life' },
 };
 const GREET = { en: "It's Sqwod Daily: the fitness industry in five minutes, minus the boring parts. Let's get into it.", de: 'Hier ist Sqwod Daily: die Fitnessbranche in fünf Minuten, ohne den langweiligen Teil. Los geht’s.' };
 const OUTRO = { en: "And that's your Sqwod Daily. Go get one rep better — see you tomorrow.", de: 'Und das war dein Sqwod Daily. Werd eine Rep besser — bis morgen.' };
@@ -156,14 +167,60 @@ async function preflight(langs) {
   return ok;
 }
 
-async function synth(script, lang, outPath) {
-  const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE[lang]}`, {
+async function synth(script, lang, outPath, date) {
+  // `/with-timestamps` returns the same MP3 (base64) plus a character alignment.
+  // We keep only paragraph start/end times (automation/audio-marks/<date>-<lang>.json).
+  const r = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE[lang]}/with-timestamps`, {
     method: 'POST',
-    headers: { 'xi-api-key': KEY, 'content-type': 'application/json', accept: 'audio/mpeg' },
+    headers: { 'xi-api-key': KEY, 'content-type': 'application/json' },
     body: JSON.stringify({ text: script, model_id: 'eleven_multilingual_v2', voice_settings: { stability: 0.5, similarity_boost: 0.75 } }),
   });
   if (!r.ok) throw new Error(`ElevenLabs ${r.status}: ${(await r.text()).slice(0, 200)}`);
-  writeFileSync(outPath, Buffer.from(await r.arrayBuffer()));
+  const j = await r.json();
+  if (!j.audio_base64) throw new Error('ElevenLabs: no audio_base64 in with-timestamps response');
+  writeFileSync(outPath, Buffer.from(j.audio_base64, 'base64'));
+  try {
+    const marks = paragraphMarks(script, j.alignment || j.normalized_alignment);
+    if (marks) {
+      mkdirSync(MARKS, { recursive: true });
+      writeFileSync(join(MARKS, `${date}-${lang}.json`), JSON.stringify({ date, lang, duration: marks.at(-1).end, paras: marks }, null, 1) + '\n');
+      console.log(`· marks (${lang}): ${marks.length} paragraphs, ${marks.at(-1).end.toFixed(1)}s`);
+    }
+  } catch (e) { console.log(`· marks skipped (${lang}): ${e.message}`); }
+}
+
+// Character alignment → one {start, end, text} per paragraph of the script.
+// Accepts both REST shapes (parallel arrays, or an array of character objects).
+export function paragraphMarks(script, al) {
+  if (!al) return null;
+  let chars, starts, ends;
+  if (Array.isArray(al.characters) && al.characters.length && typeof al.characters[0] === 'object') {
+    chars = al.characters.map((c) => c.character ?? c.char ?? '');
+    starts = al.characters.map((c) => c.start_time_seconds ?? c.startTimeSeconds ?? c.start);
+    ends = al.characters.map((c) => c.end_time_seconds ?? c.endTimeSeconds ?? c.end);
+  } else {
+    chars = al.characters || al.chars;
+    starts = al.character_start_times_seconds || al.characterStartTimesSeconds;
+    ends = al.character_end_times_seconds || al.characterEndTimesSeconds;
+  }
+  if (!Array.isArray(chars) || !Array.isArray(starts) || !chars.length) return null;
+  const joined = chars.join('');
+  const paras = script.split(/\n+/).map((t) => t.trim()).filter(Boolean);
+  const out = [];
+  let cursor = 0;
+  for (let i = 0; i < paras.length; i++) {
+    const text = paras[i];
+    // Locate the paragraph in the aligned text (exact first, then by its first 24 chars).
+    let at = joined.indexOf(text, cursor);
+    if (at < 0) at = joined.indexOf(text.slice(0, 24), cursor);
+    if (at < 0) return null;                                  // alignment doesn't match the script: no marks
+    const endIdx = Math.min(at + text.length, chars.length) - 1;
+    const start = Number(starts[at]), end = Number(ends[endIdx] ?? starts[endIdx]);
+    if (!Number.isFinite(start) || !Number.isFinite(end)) return null;
+    out.push({ i, start: +start.toFixed(2), end: +end.toFixed(2), text });
+    cursor = at + text.length;
+  }
+  return out;
 }
 
 // Episode title = the day's topics (what a scrolling listener decides on), not the
@@ -192,7 +249,7 @@ function buildFeed(lang) {
     const len = statSync(mp3).size;
     const dur = hms(estDuration(scriptFor(iss, lang)));
     const niceDate = new Date(date + 'T06:00:00Z').toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
-    const notes = [iss.summary || iss.intro, ...iss.items.map((i) => `• ${i.headline}: ${i.dek}`)].filter(Boolean).join('\n');
+    const notes = [iss.summary || iss.intro, ...iss.items.map((i) => `• ${i.headline}: ${i.dek}`), DISCLOSE[lang]].filter(Boolean).join('\n');
     items.push(
       `    <item>
       <title>${xml(episodeTitle(iss.summary, niceDate))}</title>
@@ -251,7 +308,7 @@ async function run() {
         const script = scriptFor(iss, lang);
         const out = join(AUDIO, `${date}-${lang}.mp3`);
         try {
-          await synth(script, lang, out);
+          await synth(script, lang, out, date);
           const kb = (statSync(out).size / 1024).toFixed(0);
           console.log(`✓ audio (${lang}): ${kb} KB → audio/${date}-${lang}.mp3`);
           summary(`- ✅ Audio ${lang.toUpperCase()} — ${kb} KB → \`audio/${date}-${lang}.mp3\``);

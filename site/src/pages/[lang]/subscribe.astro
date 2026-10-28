@@ -49,6 +49,7 @@ const c = lang === 'de' ? {
         <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
         <input type="hidden" name="source" value="subscribe-page" />
         <input type="hidden" name="ts" id="sb-ts" value="" />
+        <input type="hidden" name="ref" id="sb-ref" value="" />
         <label>{c.email}<input type="email" name="email" required placeholder="you@studio.com" /></label>
         <button class="cta" type="submit" disabled={!SUBSCRIBE.endpoint} data-umami-event="subscribe" data-umami-event-where="subscribe-page">{c.cta}</button>
         {!SUBSCRIBE.endpoint && <p class="note">{c.soon}</p>}
@@ -82,6 +83,10 @@ const c = lang === 'de' ? {
 
         // Stamp the form load time for the Worker's time-on-form check.
         var t = document.getElementById('sb-ts'); if (t) t.value = String(Date.now());
+        // Referral: ?ref=CODE on this or any earlier page is remembered and sent along.
+        var rq = q.get('ref');
+        if (rq && /^[a-f0-9]{10}$/.test(rq)) localStorage.setItem('sqwod_ref', rq);
+        var r = document.getElementById('sb-ref'); if (r) r.value = localStorage.getItem('sqwod_ref') || '';
       } catch (_) {}
     })();
   </script>

@@ -2,7 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { languages, t, type Lang } from '../../../i18n/ui';
-import { appleFor, spotifyFor, rssFor } from '../../../config/podcast';
+import { appleFor, spotifyFor, youtubeFor, rssFor } from '../../../config/podcast';
 import ListenBadge from '../../../components/ListenBadge.astro';
 import { isLiveIssue } from '../../../config/daily.mjs';
 import InlineSignup from '../../../components/InlineSignup.astro';
@@ -39,6 +39,7 @@ const RSS_URL = rssFor(lang);
         <span class="ll">{lang==='de'?'Hören auf':'Listen on'}:</span>
         <ListenBadge platform="apple" href={appleFor(lang)} lang={lang} />
         <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
+        <ListenBadge platform="youtube" href={youtubeFor(lang)} lang={lang} />
         <a class="lp" href={RSS_URL} target="_blank" rel="noopener">RSS</a>
         <a class="lp sub-cta" href="#daily-signup">{lang==='de'?'Per E-Mail':'By email'}</a>
       </div>

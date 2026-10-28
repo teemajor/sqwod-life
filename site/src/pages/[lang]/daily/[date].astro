@@ -4,7 +4,7 @@ import { ogPath } from '../../../lib/og';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
 import { pillarMeta } from '../../../i18n/pillars';
-import { appleFor, spotifyFor, rssFor, episodeAudio } from '../../../config/podcast';
+import { appleFor, spotifyFor, youtubeFor, rssFor, episodeAudio } from '../../../config/podcast';
 import ListenBadge from '../../../components/ListenBadge.astro';
 import ShareBar from '../../../components/ShareBar.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
@@ -107,6 +107,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
         <span class="ll">{tx.listen}:</span>
         <ListenBadge platform="apple" href={appleFor(lang)} lang={lang} />
         <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
+        <ListenBadge platform="youtube" href={youtubeFor(lang)} lang={lang} />
         <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
       </div>
     </section>
