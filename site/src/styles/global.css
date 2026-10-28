@@ -610,6 +610,10 @@ html,body{overflow-x:clip}
     gap:12px!important;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;
     margin-left:-24px;margin-right:-24px;padding:2px 24px 10px;scroll-padding:0 24px;scrollbar-width:none}
   .swipe::-webkit-scrollbar{display:none}
-  .swipe>*{scroll-snap-align:start;min-width:0}
+  /* Lock each card: one card per swipe, always stopping on a snap point. */
+  .swipe>*{scroll-snap-align:start;scroll-snap-stop:always;min-width:0}
   .swipe .tilt{rotate:0deg}
+  /* No reveal animation inside a swipe row: the cards used to fade in and slide up
+     (.rv) while the row was still settling, which read as a wobble. Static instead. */
+  .js .swipe>.rv,.js .swipe .rv{opacity:1!important;transform:none!important;transition:none!important}
 }
