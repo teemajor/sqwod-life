@@ -1,87 +1,5 @@
 [
   {
-    "date": "2026-10-06",
-    "key": "greenock womens gym raises 850 for children in poverty inver",
-    "tokens": [
-      "greenock",
-      "women",
-      "raises",
-      "children",
-      "poverty",
-      "inverclyde"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "key": "indias ndude labs leads 3 mn series a in us wellness brand s",
-    "tokens": [
-      "india",
-      "ndude",
-      "labs",
-      "leads",
-      "series",
-      "brand",
-      "supermush"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "key": "is oura really a subscription company its s1 shows 80 of rev",
-    "tokens": [
-      "oura",
-      "really",
-      "subscription",
-      "company",
-      "shows",
-      "revenue",
-      "still",
-      "comes",
-      "ring"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "key": "whats next for vuori after a 55 billion valuation a threeway",
-    "tokens": [
-      "what",
-      "next",
-      "vuori",
-      "billion",
-      "valuation",
-      "three",
-      "stretch"
-    ],
-    "entities": [
-      "Vuori"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "key": "osu center for health sciences raises more than 800k for wel",
-    "tokens": [
-      "center",
-      "health",
-      "sciences",
-      "raises",
-      "800k",
-      "scholarships"
-    ]
-  },
-  {
-    "date": "2026-10-06",
-    "key": "the antigym membership comes with a golden retriever",
-    "tokens": [
-      "anti",
-      "membership",
-      "comes",
-      "golden",
-      "retriever"
-    ]
-  },
-  {
     "date": "2026-10-07",
     "key": "world spa awards 2026 italy takes the lead spas take on a ne",
     "tokens": [
@@ -1322,6 +1240,96 @@
       "human",
       "coaching",
       "service"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "key": "dssvevent 2026 in mlaga bildergalerie",
+    "tokens": [
+      "dssv",
+      "event",
+      "2026",
+      "laga",
+      "bildergalerie"
+    ],
+    "entities": [
+      "DSSV"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "key": "sats grows earnings as group exercise strategy pays off and ",
+    "tokens": [
+      "sats",
+      "grows",
+      "earnings",
+      "group",
+      "exercise",
+      "strategy",
+      "pays",
+      "expansion",
+      "gathers",
+      "pace"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "key": "burnham and highbridge fitness group raises 500 for breast c",
+    "tokens": [
+      "burnham",
+      "highbridge",
+      "group",
+      "raises",
+      "breast",
+      "cancer",
+      "pink",
+      "classes"
+    ],
+    "deal": "£500"
+  },
+  {
+    "date": "2026-10-28",
+    "key": "oura ring 5 with blood pressure tracking ai health feature l",
+    "tokens": [
+      "oura",
+      "ring",
+      "blood",
+      "pressure",
+      "tracking",
+      "health",
+      "feature",
+      "launched",
+      "india",
+      "price",
+      "features"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "key": "precor stellt neue glutebuilder selectorized line vor",
+    "tokens": [
+      "precor",
+      "stellt",
+      "neue",
+      "glutebuilder",
+      "selectorized",
+      "line"
+    ]
+  },
+  {
+    "date": "2026-10-28",
+    "key": "xponential fitness shares fall as revenue and p",
+    "tokens": [
+      "xponential",
+      "shares",
+      "fall",
+      "revenue"
+    ],
+    "entities": [
+      "Xponential"
     ]
   }
 ]

@@ -1,0 +1,192 @@
+[
+  {
+    "id": "news-2026-10-28-1",
+    "entity": "DSSV",
+    "topic": "DSSV-Event 2026 in Málaga: Bildergalerie",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "DSSV (Tue, 27 Oct 2026 08:57:24 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "DSSV-Event 2026 in Málaga: Bildergalerie"
+      },
+      {
+        "label": "Outlet",
+        "value": "DSSV"
+      }
+    ],
+    "thin": true,
+    "en": {
+      "headline": "DSSV-Event 2026 in Málaga: Bildergalerie",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/dssv-event-2026-bildergalerie/"
+    },
+    "de": {
+      "headline": "DSSV-Event 2026 in Málaga: Bildergalerie",
+      "dek": "Via DSSV.",
+      "readMore": "https://www.dssv.de/dssv-event-2026-bildergalerie/"
+    }
+  },
+  {
+    "id": "news-2026-10-28-2",
+    "entity": "Health Club Management",
+    "topic": "SATS grows earnings as group exercise strategy pays off and expansion gathers pace",
+    "pillar": "move",
+    "conversion": "products",
+    "provenance": "Health Club Management (Tue, 27 Oct 2026 10:00:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "SATS grows earnings as group exercise strategy pays off and expansion gathers pace"
+      },
+      {
+        "label": "Outlet",
+        "value": "Health Club Management"
+      },
+      {
+        "label": "Article",
+        "value": "Nordic fitness operator, SATS, has reported a 22 per cent increase in third- quarter EBITDA before IFRS 16, as higher revenue per member and continued growth in group exercise helped lift earnings across a smaller club portfolio."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "SATS grows earnings as group exercise strategy pays off and expansion gathers pace",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/SATS-grows-earnings-as-group-exercise-strategy-pays-off-and-expansion-gathers-pace/363848"
+    },
+    "de": {
+      "headline": "SATS grows earnings as group exercise strategy pays off and expansion gathers pace",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/SATS-grows-earnings-as-group-exercise-strategy-pays-off-and-expansion-gathers-pace/363848"
+    }
+  },
+  {
+    "id": "news-2026-10-28-3",
+    "entity": "Burnham-On-Sea.com",
+    "topic": "Burnham and Highbridge fitness group raises £500 for Breast Cancer Now with pink fitness classes",
+    "pillar": "signal",
+    "conversion": "sqwod-os",
+    "provenance": "Burnham-On-Sea.com (Wed, 28 Oct 2026 00:04:05 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Burnham and Highbridge fitness group raises £500 for Breast Cancer Now with pink fitness classes"
+      },
+      {
+        "label": "Outlet",
+        "value": "Burnham-On-Sea.com"
+      },
+      {
+        "label": "Deal",
+        "value": "raise £500"
+      },
+      {
+        "label": "Article",
+        "value": "A Burnham-On-Sea and Highbridge fitness group has raised nearly £500 for Breast Cancer Now after turning its classes pink for the charity’s Wear It Pink campaign. Fit & Fabulous Somerset teachers and class members joined in with the fundraising initiative, swapping their usual workout wear for a splash of pink to show their support for those affected by breast cancer. The special classes brought participants together to raise awareness of the disease and help fund vital research into breast cancer. Charlotte Simmons, owner of Fit and Fabulous Somerset, told Burnham-On-Sea.com: “Thank you to everyone who helped us raise awareness and funds for Breast Cancer Now. It was amazing to see so many of you join in the Wear It Pink campaign and support such a great cause. We have raised nearly £500 and the total keeps growing!” The Wear It Pink campaign gave Fit & Fabulous members the chance to combine their regular exercise sessions with a worthwhile cause, with participants showing their support through a colourful display of pink outfits. Breast Cancer Now supports people affected by breast cancer and funds research aimed at improving treatments and outcomes for those diagnosed with the disease. The fundraising total is continuing to grow, with Charlotte thanking everyone who took part and helped raise both awareness and money for the charity."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Burnham and Highbridge fitness group raises £500 for Breast Cancer Now with pink fitness classes",
+      "dek": "Via Burnham-On-Sea.com.",
+      "readMore": "https://www.burnham-on-sea.com/news/burnham-and-highbridge-fitness-group-raises-500-for-breast-cancer-now-with-pink-fitness-classes/"
+    },
+    "de": {
+      "headline": "Burnham and Highbridge fitness group raises £500 for Breast Cancer Now with pink fitness classes",
+      "dek": "Via Burnham-On-Sea.com.",
+      "readMore": "https://www.burnham-on-sea.com/news/burnham-and-highbridge-fitness-group-raises-500-for-breast-cancer-now-with-pink-fitness-classes/"
+    }
+  },
+  {
+    "id": "news-2026-10-28-4",
+    "entity": "News18",
+    "topic": "Oura Ring 5 With Blood Pressure Tracking, AI Health Feature Launched In India: Price, Features",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "News18 (Thu, 22 Oct 2026 10:54:51 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Oura Ring 5 With Blood Pressure Tracking, AI Health Feature Launched In India: Price, Features"
+      },
+      {
+        "label": "Outlet",
+        "value": "News18"
+      }
+    ],
+    "thin": true,
+    "en": {
+      "headline": "Oura Ring 5 With Blood Pressure Tracking, AI Health Feature Launched In India: Price, Features",
+      "dek": "Via News18.",
+      "readMore": "https://www.news18.com/tech/oura-ring-5-with-blood-pressure-tracking-ai-health-feature-launched-in-india-price-features-cx-amz-10393079.html"
+    },
+    "de": {
+      "headline": "Oura Ring 5 With Blood Pressure Tracking, AI Health Feature Launched In India: Price, Features",
+      "dek": "Via News18.",
+      "readMore": "https://www.news18.com/tech/oura-ring-5-with-blood-pressure-tracking-ai-health-feature-launched-in-india-price-features-cx-amz-10393079.html"
+    }
+  },
+  {
+    "id": "news-2026-10-28-5",
+    "entity": "fitness MANAGEMENT",
+    "topic": "Precor stellt neue Glutebuilder Selectorized Line vor",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "fitness MANAGEMENT (2026-10-27T06:46:14+00:00)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Precor stellt neue Glutebuilder Selectorized Line vor"
+      },
+      {
+        "label": "Outlet",
+        "value": "fitness MANAGEMENT"
+      },
+      {
+        "label": "Article",
+        "value": "Precor erweitert die Glutebuilder-Linie um neue Selectorized Geräte für geführtes Glute-Training mit Steckgewichten. Menü Linkedin Facebook Instagram Spotify Youtube Whatsapp Map-marker-alt Ergebnisse alle Ergebnisse anzeigen Ergebnisse alle Ergebnisse anzeigen Results See all results Ergebnisse alle Ergebnisse anzeigen Menü Home > Neue Glutebuilder Selectorized Line Die fM Redaktion Oktober 27, 2026 Lesezeit: 2 Minuten -Anzeige- Die neue Glutebuilder Selectorized Line von Precor verbindet biomechanische Präzision und leistungsorientiertes Design mit dem Komfort eines Steckgewichtsystems. Geführte Bewegungsbahnen, verschiedene Einstellmöglichkeiten und eine kompakte Bauweise machen gezieltes Glute-Training für Mitglieder unterschiedlicher Leistungsniveaus zugänglich. Die Welt des Krafttrainings entwickelt sich kontinuierlich weiter. Neben Kraft, Stabilität und Verletzungsprävention gewinnen insbesondere Muskelaufbau und ästhetische Ziele an Bedeutung. Dabei ist gezieltes Glute-Training ein zentraler Trend. Um dieser Nachfrage gerecht zu werden, erweitert Precor seine Glutebuilder-Linie um neue Geräte mit Steckgewichten. Gemeinsam mit Glutebuilder entwickelt, verbinden sie die bewährte biomechanische Präzision und das leistungsorientierte Design der Plate-Loaded-Serie mit dem Komfort eines Steckgewichtsystems."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Precor stellt neue Glutebuilder Selectorized Line vor",
+      "dek": "Via fitness MANAGEMENT.",
+      "readMore": "https://www.fitnessmanagement.de/precor-glutebuilder-selectorized-line/"
+    },
+    "de": {
+      "headline": "Precor stellt neue Glutebuilder Selectorized Line vor",
+      "dek": "Via fitness MANAGEMENT.",
+      "readMore": "https://www.fitnessmanagement.de/precor-glutebuilder-selectorized-line/"
+    }
+  },
+  {
+    "id": "news-2026-10-28-6",
+    "entity": "Pluang",
+    "topic": "Xponential Fitness shares fall as revenue and p...",
+    "pillar": "build",
+    "conversion": "pods",
+    "provenance": "Pluang (Tue, 27 Oct 2026 16:04:42 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Xponential Fitness shares fall as revenue and p..."
+      },
+      {
+        "label": "Outlet",
+        "value": "Pluang"
+      }
+    ],
+    "thin": true,
+    "en": {
+      "headline": "Xponential Fitness shares fall as revenue and p...",
+      "dek": "Via Pluang.",
+      "readMore": "https://pluang.com/en/news-feed/xponential-fitness-perlu-stabil-atau-turun-lebih-lanjut"
+    },
+    "de": {
+      "headline": "Xponential Fitness shares fall as revenue and p...",
+      "dek": "Via Pluang.",
+      "readMore": "https://pluang.com/en/news-feed/xponential-fitness-perlu-stabil-atau-turun-lebih-lanjut"
+    }
+  }
+]
