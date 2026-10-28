@@ -1,6 +1,7 @@
 ---
 // Sqwod Deal Tracker: every raise, acquisition, valuation and IPO the Daily has logged,
 // merged, web-checked and approved by Tee (one tap per deal). Data: src/lib/deals.ts.
+import { isLiveIssue } from '../../../config/daily.mjs'; // issues before DAILY_START are not built, so no Daily link for them
 import Base from '../../../layouts/Base.astro';
 import { ogPath } from '../../../lib/og';
 import DataChart from '../../../components/DataChart.astro';
@@ -133,7 +134,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
                 <td class="dt-amt">{d.amount ? <>{d.amount}{d.amountUsd && d.currency !== 'USD' ? <span class="dt-note">≈ {usd(d.amountUsd)}</span> : null}</> : <span class="dt-muted">{T.undisclosed}</span>}</td>
                 <td>{d.country || rName(d.region)}</td>
                 <td>{cName(d.category)}</td>
-                <td class="dt-src">{d.url ? <a href={d.url} rel="nofollow noopener" target="_blank">{T.source} ↗</a> : null}{' '}<a href={d.issue.replace('/en/', `/${lang}/`)}>{T.daily}</a></td>
+                <td class="dt-src">{d.url ? <a href={d.url} rel="nofollow noopener" target="_blank">{T.source} ↗</a> : null}{isLiveIssue('published', d.issue.slice(-10)) && <>{' '}<a href={d.issue.replace('/en/', `/${lang}/`)}>{T.daily}</a></>}</td>
               </tr>
             ))}
           </tbody>

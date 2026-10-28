@@ -27,6 +27,8 @@ export default defineConfig({
       // everything the index-budget policy marks noindex (src/config/seo.mjs)
       filter: (page) => {
         if (page.includes('/go/') || page === 'https://sqwod.life/') return false;
+        // campaign landing page (noindex) and its short-link stubs
+        if (/^https:\/\/sqwod\.life\/((en|de)\/)?join\/?$/.test(page) || /^https:\/\/sqwod\.life\/pricing\/?$/.test(page)) return false;
         if (!INDEX_COMPARE_PAGES && page.includes('/verified/compare/')) return false;
         const m = page.match(/\/daily\/(\d{4}-\d{2}-\d{2})\/?$/);
         if (m && !dailyIsFresh(m[1])) return false;

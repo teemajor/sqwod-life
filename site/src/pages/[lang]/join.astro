@@ -1,0 +1,292 @@
+---
+// Join landing page (Oct 2026): where Tee's YouTube, Facebook and LinkedIn posts send people
+// to sign up for Sqwod Daily. Campaign page, so noindex and no site nav.
+// Post links: sqwod.life/join?src=<post>. The short link /join keeps the query string, and the
+// script at the bottom turns ?src=deals into the signup source "join-deals".
+
+// ── EDIT HERE: Tee's founder quote ─────────────────────────────────────────────
+const FOUNDER_QUOTE = {
+  en: 'I run Sqwod Pods in Berlin and buy equipment for them. I built sqwod.life because the industry needed numbers I could rely on.',
+  de: 'Ich betreibe die Sqwod Pods in Berlin und kaufe die Ausstattung dafür selbst ein. Ich habe sqwod.life gebaut, weil der Branche verlässliche Zahlen gefehlt haben.',
+};
+// ───────────────────────────────────────────────────────────────────────────────
+
+import Base from '../../layouts/Base.astro';
+import InlineSignup from '../../components/InlineSignup.astro';
+import { getCollection } from 'astro:content';
+import { languages, type Lang } from '../../i18n/ui';
+import { ogPath } from '../../lib/og';
+import { liveDeals } from '../../lib/deals';
+import { isLiveIssue } from '../../config/daily.mjs';
+import bls from '../../data/pricing-index/bls.json';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+const other = de ? 'en' : 'de';
+
+// Figures, computed at build time.
+const deals = liveDeals();
+const nDeals = deals.length;
+const nEurope = deals.filter((d) => d.region === 'DACH' || d.region === 'UK' || d.region === 'Europe').length;
+const medianHourly = `$${Number(bls.national.medianHourly).toFixed(2)}`;
+
+// Latest live Daily in this language.
+const latest = (await getCollection('daily'))
+  .filter((i) => i.data.lang === lang && isLiveIssue(i.data.status, i.data.date))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())[0];
+
+const kindLabel: Record<string, [string, string]> = {
+  raise: ['Raise', 'Finanzierung'], acquisition: ['Acquisition', 'Übernahme'], valuation: ['Valuation', 'Bewertung'],
+  ipo: ['IPO', 'Börsengang'], shutdown: ['Shutdown', 'Schließung'],
+};
+
+const T = de ? {
+  title: 'Sqwod Daily: jeder Deal der Fitnessbranche, jeden Werktag',
+  desc: 'Wer Geld bekommt, wer wen kauft und was das für dein Studio, deine Marke oder deine Kund:innen heißt. Werktäglich in fünf Minuten, kostenlos.',
+  tag: 'Sqwod Daily · kostenlos · DE & EN',
+  kick: 'Für alle, die Fitness zum Business machen',
+  h1: 'Jeder Deal der Fitnessbranche. Jeden Werktag. In fünf Minuten.',
+  sub: 'Wer Geld bekommt, wer wen kauft und was das für dein Studio, deine Marke oder deine Kund:innen heißt. Von Tee Major, 24 Jahre in der Fitnessbranche.',
+  formHead: 'Sqwod Daily abonnieren', emailLabel: 'Deine E-Mail-Adresse',
+  btn: 'Daily kostenlos abonnieren →', fine: 'Wir schicken dir einmal eine Bestätigung. Abmelden mit einem Klick.',
+  proofH: 'Was hinter dem Daily steckt',
+  getH: 'Das bekommst du, kostenlos',
+  get: [
+    { h: 'Sqwod Daily', when: 'jeden Werktag', p: 'Fünf Meldungen, das Geld dahinter und eine Sache, die du heute angehen kannst. Als E-Mail oder Podcast.' },
+    { h: 'Deal Tracker', when: 'täglich aktualisiert', p: 'Jede Finanzierung, Übernahme und jeder Börsengang. Nach Region filtern und als Tabelle herunterladen.' },
+    { h: 'Ein großer Report', when: 'einmal im Monat', p: 'Mit Quellen belegt, mit interaktiven Grafiken. Abonnent:innen lesen ihn zuerst.' },
+  ],
+  issueH: 'Eine aktuelle Ausgabe', doThis: 'Heute tun', story: 'Meldung', readIssue: 'Ganze Ausgabe lesen →',
+  role: 'Tee Major · Gründer & Herausgeber, Sqwod',
+  band: 'Kenne den Deal vor deiner Konkurrenz.', bandBtn: 'Jetzt kostenlos abonnieren',
+  privacy: 'Datenschutz', switchLabel: 'English',
+} : {
+  title: 'Sqwod Daily: every fitness deal, every weekday',
+  desc: 'Who raised money, who bought whom, and what it means for your studio, brand or clients. Five minutes every weekday, free.',
+  tag: 'Sqwod Daily · free · EN & DE',
+  kick: 'For people who run fitness businesses',
+  h1: 'Every fitness deal. Every weekday. Five minutes.',
+  sub: 'Who raised money, who bought whom, and what it means for your studio, brand or clients. From Tee Major, 24 years in the fitness industry.',
+  formHead: 'Join Sqwod Daily', emailLabel: 'Your email address',
+  btn: 'Send me the Daily →', fine: 'We email you once to confirm. Unsubscribe in one click.',
+  proofH: 'What backs the Daily',
+  getH: 'What you get, free',
+  get: [
+    { h: 'Sqwod Daily', when: 'every weekday', p: 'Five stories, the money behind them, and one thing to do today. By email or as a podcast.' },
+    { h: 'Deal Tracker', when: 'updated daily', p: 'Every raise, acquisition and IPO. Filter by region and download it as a spreadsheet.' },
+    { h: 'One deep report', when: 'once a month', p: 'Sourced, with interactive charts. Subscribers read it first.' },
+  ],
+  issueH: 'A recent issue', doThis: 'Do this today', story: 'Story', readIssue: 'Read the full issue →',
+  role: 'Tee Major · Founder & editor, Sqwod',
+  band: 'Know the deal before your competitors do.', bandBtn: 'Subscribe free',
+  privacy: 'Privacy', switchLabel: 'Deutsch',
+};
+
+const proof: { num: string; line: string; src: string; href?: string }[] = de ? [
+  { num: String(nDeals), line: 'Deals in Fitness und Wellness seit Juni erfasst', src: 'Sqwod Deal Tracker, jeder einzeln von Hand geprüft', href: '/de/intelligence/deals/' },
+  { num: String(nEurope), line: 'davon in Europa, UK und DACH', src: 'Sqwod Deal Tracker', href: '/de/intelligence/deals/' },
+  { num: '12,36 Mio.', line: 'Mitglieder in deutschen Fitnessanlagen', src: 'DSSV, Eckdaten der deutschen Fitnesswirtschaft 2026' },
+] : [
+  { num: String(nDeals), line: 'deals tracked since June', src: 'Sqwod Deal Tracker, each one checked by hand', href: '/en/intelligence/deals/' },
+  { num: '+179%', line: 'US home free-weight sales, 2019 to 2023', src: 'SFIA via Statista, wholesale', href: '/en/intelligence/strength-won-the-equipment-boom/' },
+  { num: medianHourly, line: 'median hourly pay for US trainers', src: 'BLS OEWS, May 2025', href: '/en/intelligence/pricing-index/' },
+];
+
+let issue: { href: string; date: string; summary: string; rows: { label: string; text: string }[] } | null = null;
+if (latest) {
+  const d = latest.data;
+  const rows: { label: string; text: string }[] = [];
+  const mm = d.moneyMoves[0];
+  if (mm) rows.push({ label: kindLabel[mm.kind]?.[de ? 1 : 0] ?? mm.kind, text: [mm.entity, mm.amount].filter(Boolean).join(' · ') });
+  if (d.items[0]) rows.push({ label: T.story, text: d.items[0].headline });
+  if (d.doThis) rows.push({ label: T.doThis, text: d.doThis });
+  issue = {
+    href: `/${lang}/daily/${d.urlSlug}`,
+    date: d.date.toLocaleDateString(de ? 'de-DE' : 'en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }),
+    summary: d.summary || d.title,
+    rows: rows.slice(0, 3),
+  };
+}
+---
+<Base lang={lang} title={T.title} description={T.desc} image={ogPath('join', lang)} altPath={`/${other}/join/`} noindex bare>
+  <div class="jn">
+    <header class="jn-top jn-w">
+      <a class="jn-logo" href={`/${lang}/`}><img class="lm-dark" src="/sqwod-white.png" alt="Sqwod" width="84" height="22" /><img class="lm-light" src="/sqwod-black.png" alt="Sqwod" width="84" height="22" /></a>
+      <span class="jn-tag">{T.tag}</span>
+    </header>
+
+    <main>
+      <section class="jn-hero jn-w">
+        <div class="jn-copy">
+          <p class="jn-kick">{T.kick}</p>
+          <h1 class="jn-h1">{T.h1}</h1>
+          <p class="jn-sub">{T.sub}</p>
+        </div>
+        <div class="jn-card">
+          <InlineSignup lang={lang} source="join" id="signup" head={T.formHead} body="" btn={T.btn} fine={T.fine} event="join-submit" emailLabel={T.emailLabel} />
+        </div>
+      </section>
+
+      <section class="jn-sec jn-w" aria-labelledby="jn-proof-h">
+        <h2 class="jn-sr" id="jn-proof-h">{T.proofH}</h2>
+        <ul class="jn-proof">
+          {proof.map((p) => {
+            const inner = <><span class="jn-num" data-count>{p.num}</span><span class="jn-line">{p.line}</span><span class="jn-src">{p.src}</span></>;
+            return <li>{p.href ? <a class="jn-pc" href={p.href}>{inner}</a> : <div class="jn-pc">{inner}</div>}</li>;
+          })}
+        </ul>
+      </section>
+
+      <section class="jn-sec jn-w" aria-labelledby="jn-get-h">
+        <h2 class="jn-h2" id="jn-get-h">{T.getH}</h2>
+        <div class="jn-get">
+          {T.get.map((g) => (
+            <div class="jn-gc">
+              <h3>{g.h}</h3>
+              <p class="jn-when">{g.when}</p>
+              <p>{g.p}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {issue && (
+        <section class="jn-sec jn-w" aria-labelledby="jn-issue-h">
+          <h2 class="jn-h2" id="jn-issue-h">{T.issueH}</h2>
+          <a class="jn-issue" href={issue.href}>
+            <span class="jn-idate">Sqwod Daily · {issue.date}</span>
+            <span class="jn-isum">{issue.summary}</span>
+            <dl class="jn-rows">
+              {issue.rows.map((r) => <div><dt>{r.label}</dt><dd>{r.text}</dd></div>)}
+            </dl>
+            <span class="jn-more">{T.readIssue}</span>
+          </a>
+        </section>
+      )}
+
+      <section class="jn-sec jn-w jn-founder">
+        <img src="/team/tee-major.jpg" alt="Tee Major" width="120" height="120" loading="lazy" />
+        <figure>
+          <blockquote><p>{FOUNDER_QUOTE[lang]}</p></blockquote>
+          <figcaption><a href={`/${lang}/about`}>{T.role}</a></figcaption>
+        </figure>
+      </section>
+
+      <section class="jn-band">
+        <div class="jn-w jn-band-in">
+          <p class="jn-band-h">{T.band}</p>
+          <a class="jn-band-btn" href="#signup" data-focus-email>{T.bandBtn}</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="jn-foot jn-w">
+      <a href={`/${lang}/impressum`}>Impressum</a>
+      <a href={`/${lang}/datenschutz`}>{T.privacy}</a>
+      <a href={`/${other}/join/`} hreflang={other} lang={other}>{T.switchLabel}</a>
+    </footer>
+  </div>
+
+  <script is:inline>
+    (function () {
+      // ?src=deals → signup source "join-deals". Only [a-z0-9-], up to 32 characters.
+      var src = '';
+      try { src = (new URLSearchParams(location.search).get('src') || '').toLowerCase(); } catch (e) {}
+      if (/^[a-z0-9-]{1,32}$/.test(src)) {
+        document.querySelectorAll('.jn form input[name="source"]').forEach(function (el) { el.value = 'join-' + src; });
+        document.querySelectorAll('.jn form [data-umami-event-where]').forEach(function (el) { el.setAttribute('data-umami-event-where', 'join-' + src); });
+      }
+      // The band button scrolls to the form and puts the cursor in the email field.
+      document.querySelectorAll('[data-focus-email]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+          var input = document.querySelector('#signup input[type="email"]');
+          if (!input) return;
+          e.preventDefault();
+          var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          input.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+          input.focus({ preventScroll: true });
+        });
+      });
+    })();
+  </script>
+</Base>
+
+<style>
+  .jn{min-height:100vh;background:var(--ink);color:var(--chalk)}
+  .jn-w{max-width:1120px;margin:0 auto;padding-left:20px;padding-right:20px}
+  .jn-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+  .jn-top{display:flex;align-items:center;justify-content:space-between;gap:12px;height:64px;border-bottom:1px solid var(--line)}
+  .jn-logo img{height:19px;width:auto;display:block}
+  .jn-tag{font-size:12.5px;color:var(--g2);font-weight:600;letter-spacing:.02em;text-align:right}
+
+  .jn-hero{display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:center;padding-top:64px;padding-bottom:56px}
+  .jn-kick{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--up);margin:0 0 18px}
+  .jn-h1{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(42px,6.4vw,82px);line-height:.95;letter-spacing:.005em;margin:0 0 22px;hyphens:manual}
+  .jn-sub{font-size:18px;line-height:1.55;color:var(--g1);margin:0;max-width:46ch}
+  .jn-card :global(.isu){margin:0;padding:28px}
+  .jn-card :global(.isu-h){font-size:22px}
+
+  .jn-sec{padding-top:40px;padding-bottom:40px}
+  .jn-h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(30px,4vw,44px);line-height:1;margin:0 0 24px}
+
+  .jn-proof{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .jn-pc{display:flex;flex-direction:column;gap:8px;height:100%;padding:24px;border:1px solid var(--line);border-radius:16px;background:var(--panel);text-decoration:none;color:inherit}
+  a.jn-pc:hover{border-color:var(--edge)}
+  .jn-num{font-family:var(--display);font-size:clamp(48px,5.6vw,72px);line-height:.95;color:var(--accent);font-variant-numeric:tabular-nums}
+  .jn-line{font-size:16px;line-height:1.4;color:var(--chalk);font-weight:600}
+  .jn-src{font-size:12.5px;color:var(--g3);margin-top:auto}
+
+  .jn-get{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .jn-gc{padding:24px;border-top:2px solid var(--accent);background:var(--panel);border-radius:0 0 16px 16px}
+  .jn-gc h3{font-size:19px;margin:0 0 4px}
+  .jn-gc .jn-when{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);margin:0 0 12px}
+  .jn-gc p{margin:0;line-height:1.55;color:var(--g1)}
+
+  .jn-issue{display:block;padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--panel);text-decoration:none;color:inherit}
+  .jn-issue:hover{border-color:var(--edge)}
+  .jn-idate{display:block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);margin:0 0 10px}
+  .jn-isum{display:block;font-size:21px;font-weight:700;line-height:1.3;margin:0 0 20px;max-width:60ch}
+  .jn-rows{margin:0 0 20px;display:flex;flex-direction:column}
+  .jn-rows div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 0;border-top:1px solid var(--line)}
+  .jn-rows dt{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);padding-top:3px}
+  .jn-rows dd{margin:0;line-height:1.5;color:var(--g1)}
+  .jn-more{font-weight:700;font-size:14px}
+
+  .jn-founder{display:flex;align-items:center;gap:28px;max-width:860px}
+  .jn-founder img{width:120px;height:120px;border-radius:50%;object-fit:cover;filter:grayscale(1);flex:none}
+  .jn-founder figure{margin:0}
+  .jn-founder blockquote{margin:0 0 12px;font-size:20px;line-height:1.5;color:var(--chalk)}
+  .jn-founder blockquote p{margin:0}
+  .jn-founder figcaption a{font-size:14px;color:var(--g2);font-weight:600}
+
+  /* --up equals --accent in dark mode; in light mode it is the darker moss, so the kicker and band pass 4.5:1 */
+  .jn-band{background:var(--up);color:var(--accent-ink);margin-top:40px}
+  .jn-band-in{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:48px;padding-bottom:48px}
+  .jn-band-h{font-family:var(--display);text-transform:uppercase;font-size:clamp(32px,4.4vw,52px);line-height:1;margin:0;max-width:18ch}
+  .jn-band-btn{flex:none;display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:14px;background:var(--accent-ink);color:var(--up);font-weight:700;text-decoration:none}
+  .jn-band-btn:hover{opacity:.9}
+
+  .jn-foot{display:flex;gap:20px;flex-wrap:wrap;padding-top:28px;padding-bottom:40px;font-size:13px}
+  .jn-foot a{color:var(--g2);font-weight:600;text-decoration:none}
+  .jn-foot a:hover{color:var(--chalk)}
+
+  @media (max-width:860px){
+    .jn-hero{grid-template-columns:1fr;gap:32px;padding-top:40px;padding-bottom:32px}
+    .jn-proof,.jn-get{grid-template-columns:1fr}
+    .jn-band-in{flex-direction:column;align-items:flex-start}
+  }
+  @media (max-width:560px){
+    .jn-w{padding-left:16px;padding-right:16px}
+    .jn-tag{font-size:11.5px}
+    .jn-sub{font-size:16.5px}
+    .jn-card :global(.isu){padding:20px 16px}
+    .jn-rows div{grid-template-columns:1fr;gap:4px}
+    .jn-founder{flex-direction:column;align-items:flex-start;gap:18px}
+    .jn-founder blockquote{font-size:18px}
+    .jn-band-btn{width:100%;justify-content:center}
+  }
+</style>

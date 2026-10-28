@@ -7,8 +7,11 @@
 import { SUBSCRIBE } from '../config/subscribe';
 import type { Lang } from '../i18n/ui';
 
-interface Props { lang: Lang; source: string; variant?: 'default' | 'daily' | 'hero'; id?: string; head?: string; body?: string; role?: string }
-const { lang, source, variant = 'default', id, head, body, role } = Astro.props;
+// Optional overrides (join landing page, Oct 2026): `btn` and `fine` replace the button and
+// fine-print copy, `event` the Umami event name, `emailLabel` renders a visible <label> for the
+// email field (default: aria-label only). Callers that pass none of these render as before.
+interface Props { lang: Lang; source: string; variant?: 'default' | 'daily' | 'hero'; id?: string; head?: string; body?: string; role?: string; btn?: string; fine?: string; event?: string; emailLabel?: string }
+const { lang, source, variant = 'default', id, head, body, role, btn, fine, event = 'subscribe', emailLabel } = Astro.props;
 const de = lang === 'de';
 
 const base = variant === 'daily'
@@ -31,6 +34,7 @@ const T = de
   : { iam: 'I am a', ph: 'Email address', btn: 'Subscribe free', fine: 'We email you once to confirm. Unsubscribe anytime in one click.', privacy: 'Privacy', soon: 'Sign-up opens soon.' };
 
 const groupId = `role-${source}`;
+const emailId = `${groupId}-email`;
 ---
 <section class={variant === 'hero' ? 'isu isu-hero' : 'isu'} id={id} aria-labelledby={`${groupId}-h`}>
   <h2 class={variant === 'hero' ? 'isu-h isu-sr' : 'isu-h'} id={`${groupId}-h`}>{copy.head}</h2>
@@ -49,11 +53,14 @@ const groupId = `role-${source}`;
           ))}
         </div>
       </fieldset>
+      {emailLabel && <label class="isu-legend isu-label" for={emailId}>{emailLabel}</label>}
       <div class="isu-row">
-        <input type="email" name="email" required autocomplete="email" placeholder={T.ph} aria-label={T.ph} />
-        <button class="cta isu-btn" type="submit" data-umami-event="subscribe" data-umami-event-where={source}>{variant === 'hero' ? `${copy.head} →` : T.btn}</button>
+        {emailLabel
+          ? <input type="email" name="email" id={emailId} required autocomplete="email" placeholder={T.ph} />
+          : <input type="email" name="email" required autocomplete="email" placeholder={T.ph} aria-label={T.ph} />}
+        <button class="cta isu-btn" type="submit" data-umami-event={event} data-umami-event-where={source}>{btn ?? (variant === 'hero' ? `${copy.head} →` : T.btn)}</button>
       </div>
-      <p class="isu-fine">{T.fine} <a href={`/${lang}/datenschutz`}>{T.privacy}</a></p>
+      <p class="isu-fine">{fine ?? T.fine} <a href={`/${lang}/datenschutz`}>{T.privacy}</a></p>
     </form>
   ) : (
     <p class="isu-fine">{T.soon}</p>
@@ -74,6 +81,7 @@ const groupId = `role-${source}`;
   .isu-hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
   .isu-roles{border:0;margin:0;padding:0;min-width:0}
   .isu-legend{font-size:13px;color:var(--g2);padding:0;margin:0 0 8px}
+  .isu-label{display:block;margin:0 0 -6px}
   .isu-pills{display:flex;flex-wrap:wrap;gap:8px}
   .isu-pill{position:relative;cursor:pointer}
   .isu-pill input{position:absolute;opacity:0;width:1px;height:1px}

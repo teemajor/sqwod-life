@@ -1,0 +1,39 @@
+---
+// Short link for social posts: sqwod.life/join -> /en/join/
+// GitHub Pages has no server redirects, so this copies the pattern of src/pages/index.astro:
+// the inline script forwards instantly and keeps the query string (?src=... tells us which
+// post converted); the meta refresh is the no-JS fallback (it drops the query string).
+// The visible links are for crawlers and the rare reader who lands here. Do not hide them.
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,follow" />
+  <meta http-equiv="refresh" content="0; url=/en/join/" />
+  <link rel="canonical" href="https://sqwod.life/en/join/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Join Sqwod Daily</title>
+  <script is:inline>location.replace('/en/join/' + location.search + location.hash);</script>
+  <style>
+    html{color-scheme:dark light}
+    :root{--rc-bg:#0e0e10;--rc-fg:#e8e8ea;--rc-line:#34343c}
+    @media(prefers-color-scheme:light){ :root{--rc-bg:#fafafa;--rc-fg:#111114;--rc-line:#d8d8e0} }
+    html,body{margin:0;background:var(--rc-bg);color:var(--rc-fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+    main{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:32px;text-align:center;box-sizing:border-box}
+    h1{font-size:20px;margin:0}
+    nav{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+    nav a{display:inline-block;padding:11px 22px;border:1px solid var(--rc-line);border-radius:10px;color:var(--rc-fg);text-decoration:none;font-weight:600;font-size:14px}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Join Sqwod Daily</h1>
+    <nav>
+      <a href="/en/join/">Continue to the sign-up page</a>
+      <a href="/de/join/">Weiter auf Deutsch</a>
+    </nav>
+  </main>
+</body>
+</html>

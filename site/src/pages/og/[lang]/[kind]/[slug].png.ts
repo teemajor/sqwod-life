@@ -47,10 +47,21 @@ export async function getStaticPaths() {
       footer: `sqwod.life/${lang}/intelligence/deals`,
     } },
   });
+  // Join landing page (/[lang]/join): the card social posts unfurl to.
+  for (const lang of ['en', 'de']) out.push({
+    params: { lang, kind: 'join', slug: 'index' },
+    props: { card: {
+      kicker: lang === 'de' ? 'Sqwod Daily · kostenlos' : 'Sqwod Daily · free',
+      title: lang === 'de' ? 'Jeder Deal der Fitnessbranche. Jeden Werktag. In fünf Minuten.' : 'Every fitness deal. Every weekday. Five minutes.',
+      stat: n >= 10 ? String(n) : undefined, statLabel: lang === 'de' ? 'Deals seit Juni erfasst, von Hand geprüft' : 'deals tracked since June, checked by hand',
+      byline: true,
+      footer: `sqwod.life/${lang}/join`,
+    } },
+  });
   return out;
 }
 
 export const GET: APIRoute = async ({ props }) => {
   const png = await renderCard((props as { card: OgCard }).card);
-  return new Response(png, { headers: { 'Content-Type': 'image/png' } });
+  return new Response(new Uint8Array(png), { headers: { 'Content-Type': 'image/png' } });
 };
