@@ -267,18 +267,24 @@ async function refCode(env, email) {
 }
 const refLink = (env, lang, code) => `${env.SITE_BASE || 'https://sqwod.life'}/${lang}/subscribe?ref=${code}`;
 
-// Milestone rewards. 3 = what Tee asked for (a free Intelligence report). NOTE: the
-// reports already unlock with any email, so this reward is a thank-you, not something
-// scarce. Swap REFERRAL_REWARDS_JSON (or wire SWAG_WORKER_URL) for stickers / tee /
-// hoodie when the Shopify variants exist; the copy in newsletter.mjs already promises those.
+// Milestone rewards: the swag ladder the newsletter already promises (stickers at 3,
+// tee at 10, hoodie at 25). Physical rewards need a postal address, which we do not
+// have, so the reward email asks for it by reply; infrastructure/swag-fulfill then
+// creates the free Shopify order (Printful ships) once an address is known.
+// Override copy/links with REFERRAL_REWARDS_JSON. The report that used to sit at 3
+// already unlocks with any email, so it was a thank-you, not a carrot.
 const DEFAULT_REWARDS = {
   3: {
-    en: { subject: 'You brought 3 people to Sqwod Daily. Here is your report.', body: 'Three confirmed referrals. Thank you. As promised, your Sqwod Intelligence report, free, with every chart, table and source:', url: 'https://sqwod.life/en/intelligence/state-of-wearables-2026?utm_source=referral&utm_medium=email&utm_campaign=reward-3', cta: 'Open the report' },
-    de: { subject: 'Du hast 3 Leute zu Sqwod Daily gebracht. Hier ist dein Report.', body: 'Drei bestätigte Empfehlungen. Danke. Wie versprochen: dein Sqwod-Intelligence-Report, kostenlos, mit allen Grafiken, Tabellen und Quellen:', url: 'https://sqwod.life/de/intelligence/state-of-wearables-2026?utm_source=referral&utm_medium=email&utm_campaign=reward-3', cta: 'Report öffnen' },
+    en: { subject: 'You brought 3 people to Sqwod Daily. Sticker pack is yours.', body: 'Three confirmed referrals. Thank you. Your Sqwod sticker pack is ready to ship: reply to this email with your name and postal address and it goes out with the next batch.', url: '', cta: '' },
+    de: { subject: 'Du hast 3 Leute zu Sqwod Daily gebracht. Das Sticker-Pack gehört dir.', body: 'Drei bestätigte Empfehlungen. Danke. Dein Sqwod-Sticker-Pack ist versandbereit: antworte auf diese Mail mit Name und Postadresse, dann geht es mit der nächsten Lieferung raus.', url: '', cta: '' },
   },
   10: {
-    en: { subject: '10 referrals. You are officially Sqwod crew.', body: 'Ten people joined Sqwod Daily because of you. Reply to this email with your postal address and we will send you Sqwod gear.', url: '', cta: '' },
-    de: { subject: '10 Empfehlungen. Du bist offiziell Sqwod-Crew.', body: 'Zehn Leute sind wegen dir bei Sqwod Daily. Antworte auf diese Mail mit deiner Postadresse und wir schicken dir Sqwod-Gear.', url: '', cta: '' },
+    en: { subject: '10 referrals. The Sqwod tee is yours.', body: 'Ten people joined Sqwod Daily because of you. Reply with your name, postal address and size (S to XXL) and the tee ships.', url: '', cta: '' },
+    de: { subject: '10 Empfehlungen. Das Sqwod-Shirt gehört dir.', body: 'Zehn Leute sind wegen dir bei Sqwod Daily. Antworte mit Name, Postadresse und Größe (S bis XXL), dann geht das Shirt raus.', url: '', cta: '' },
+  },
+  25: {
+    en: { subject: '25 referrals. Hoodie time.', body: 'Twenty-five people joined Sqwod Daily through your link. Reply with your name, postal address and size (S to XXL) and the hoodie ships.', url: '', cta: '' },
+    de: { subject: '25 Empfehlungen. Hoodie-Zeit.', body: 'Fünfundzwanzig Leute sind über deinen Link zu Sqwod Daily gekommen. Antworte mit Name, Postadresse und Größe (S bis XXL), dann geht der Hoodie raus.', url: '', cta: '' },
   },
 };
 function rewards(env) {
@@ -355,14 +361,14 @@ async function sendWelcome(env, email, lang, link) {
     head: 'Du bist dabei.',
     body: 'Die nächste Ausgabe kommt am nächsten Werktag um sechs. Lesen oder hören, fünf Minuten.',
     refHead: 'Kennst du drei Leute, die das lesen sollten?',
-    refBody: 'Das ist dein persönlicher Link. Drei bestätigte Anmeldungen darüber, und du bekommst einen Sqwod-Intelligence-Report geschenkt. Wir zählen für dich.',
+    refBody: 'Das ist dein persönlicher Link. Drei bestätigte Anmeldungen darüber, und wir schicken dir das Sqwod-Sticker-Pack. Bei zehn ein Shirt, bei 25 einen Hoodie. Wir zählen für dich.',
     cta: 'Link kopieren und teilen',
   } : {
     subject: 'Welcome to Sqwod Daily. Here is your referral link.',
     head: "You're in.",
     body: 'The next issue lands on the next weekday at six. Read it or hear it, five minutes.',
     refHead: 'Know three people who should read this?',
-    refBody: 'This is your personal link. Three confirmed sign-ups through it and we send you a Sqwod Intelligence report, free. We count for you.',
+    refBody: 'This is your personal link. Three confirmed sign-ups through it and we mail you the Sqwod sticker pack. Ten gets a tee, twenty-five a hoodie. We count for you.',
     cta: 'Copy and share your link',
   };
   const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:560px;color:#111;line-height:1.6">
@@ -406,8 +412,8 @@ async function refer(req, env) {
   const n = env.SUBS_KV ? parseInt(await env.SUBS_KV.get(`refcount:${code}`), 10) || 0 : 0;
   const link = refLink(env, lang, code);
   const t = lang === 'de'
-    ? { subject: 'Dein Sqwod-Empfehlungslink', body: `Dein persönlicher Link. Bisher ${n} bestätigte Empfehlung${n === 1 ? '' : 'en'}. Drei, und du bekommst einen Sqwod-Intelligence-Report geschenkt.` }
-    : { subject: 'Your Sqwod referral link', body: `Your personal link. ${n} confirmed referral${n === 1 ? '' : 's'} so far. Three, and we send you a Sqwod Intelligence report, free.` };
+    ? { subject: 'Dein Sqwod-Empfehlungslink', body: `Dein persönlicher Link. Bisher ${n} bestätigte Empfehlung${n === 1 ? '' : 'en'}. Drei, und wir schicken dir das Sqwod-Sticker-Pack.` }
+    : { subject: 'Your Sqwod referral link', body: `Your personal link. ${n} confirmed referral${n === 1 ? '' : 's'} so far. Three, and we mail you the Sqwod sticker pack.` };
   const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:560px;color:#111;line-height:1.6"><p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#777">Sqwod Daily</p><h2 style="margin:4px 0 10px">${t.subject}</h2><p>${t.body}</p><p style="background:#f4f4f4;padding:12px 14px;border-radius:10px;word-break:break-all;font-family:ui-monospace,Menlo,monospace;font-size:14px"><a href="${link}" style="color:#111">${link}</a></p></div>`;
   await fetch('https://api.resend.com/emails', {
     method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
