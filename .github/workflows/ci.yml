@@ -35,3 +35,6 @@ jobs:
       - name: Sqwod Score integrity
         run: npm run check:scores
         working-directory: site
+      - name: No new em dashes (house style)
+        run: npm run check:dashes
+        working-directory: site
