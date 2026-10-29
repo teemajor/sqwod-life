@@ -21,7 +21,7 @@ import { readFileSync } from 'node:fs';
 // Core fitness/wellness-industry vocabulary (EN + DE). A story must hit one.
 export const STRONG_RX = new RegExp('\\b(' + [
   // places & businesses
-  'fitness', 'gym\\w*', 'fitnessstudio\\w*', 'health club\\w*', 'boutique (?:fitness|studio)', 'studio\\w*',
+  'fitness', 'gym\\w*', 'fitnessstudio\\w*', 'fitnesskette\\w*', 'fitnessanlage\\w*', 'health club\\w*', 'boutique (?:fitness|studio)', 'studio\\w*',
   // 'franchise' alone was dropped (Oct 2026): it let an estate-agency franchise story
   // in. Fitness franchise news always carries fitness/gym/studio as well.
   'fitness franchise\\w*', 'gym franchise\\w*', 'classpass', 'wellness', 'wellbeing', 'well-being', 'spa\\b', 'sauna\\w*',
@@ -68,7 +68,7 @@ export const OFFTOPIC_RX = new RegExp('\\b(' + [
 ].join('|') + ')\\b', 'i');
 
 // Outlets whose beat is markets/finance — drop on name alone.
-export const FINANCE_OUTLETS_RX = /^(fx ?empire|investing\.com|kitco|coindesk|cointelegraph|marketwatch|benzinga|barchart(\.com)?|seeking alpha|(the )?motley fool|forexlive|dailyfx|yahoo finance|zacks( investment research)?|finanzen\.net|börse online|boerse\.de)$/i;
+export const FINANCE_OUTLETS_RX = /^(fx ?empire|investing\.com|kitco|coindesk|cointelegraph|marketwatch|benzinga|barchart(\.com)?|seeking alpha|(the )?motley fool|forexlive|dailyfx|yahoo finance|zacks( investment research)?|finanzen\.net|börse online|boerse\.de|pluang|simply wall st|tipranks|investorplace|gurufocus)$/i;   // + stock-tip apps (28 Oct 2026: Pluang)
 
 // ---- DEAL / MONEY widening (added 2026-07-23) --------------------------------
 // Goal: capture the money — a Neko $700M or an IM8 $1B — the way Fitt Insider does,
@@ -81,6 +81,9 @@ export const DEAL_RX = new RegExp('\\b(' + [
   'raises?', 'raised', 'raising', 'funding', 'fundraise\\w*', 'seed round', 'series [a-e]\\b',
   'growth capital', 'venture round', 'valuation', 'valued at', 'ipo', 'goes public', 'spac',
   'acqui\\w*', 'buys', 'buyout', 'merger', 'merges', 'takeover', 'stake', 'invests?', 'investment', 'backs',
+  // closures count as money news for the Deal Tracker (29 Oct 2026)
+  'bankrupt\\w*', 'chapter 11', 'insolven\\w*', 'insolvenz\\w*', 'shuts? down', 'shutting down', 'ceases operations',
+  'enters administration', 'into administration', 'liquidat\\w*', 'winds? down',
 ].join('|') + ')\\b|[$€£]\\s?\\d|\\b\\d[\\d.,]*\\s?(?:m|bn|million|billion)\\b', 'i');
 
 // Consumer health / wellness context — broad enough to place a deal in our world

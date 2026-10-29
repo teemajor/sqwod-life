@@ -3,36 +3,43 @@ urlSlug: studio-retention-math
 lang: en
 counterpart: studio-retention-math
 title: "The retention math that decides if your studio survives"
-seoTitle: "Gym Member Retention: Why the First 30 Days Decide Churn"
+seoTitle: "Gym Member Retention: Why the First 90 Days Decide Churn"
 topic: retention
-description: "Industry churn runs 4–8% a month and half of new members quit in 90 days. The fix isn't more ads — it's the first 30."
+description: "The industry keeps about two in three members a year, and most of the loss happens in the first three months. The fix isn't more ads. It's onboarding."
 pillar: build
 type: coaching-business
 format: analysis
 conversion: pods
 publishedAt: 2026-06-13
-updatedAt: 2026-06-14
-asOf: Jun 2026
+updatedAt: 2026-10-28
+asOf: Oct 2026
 author: "sqwod.life"
 gated: false
 sourceIds: ["stat-studio-retention-2026"]
 sources:
-  - { label: "Smart Health Clubs — 100 gym retention statistics (2025)", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
-  - { label: "Glofox — The guide to reducing churn", url: "https://www.glofox.com/blog/reducing-churn/" }
-  - { label: "CloudGym — Member retention for boutique studios", url: "https://www.cloudgymmanager.com/member-retention-for-boutique-fitness-studios-stop-the-30-annual-churn/" }
+  - { label: "Health & Fitness Association (HFA): 2025 Fitness Industry Benchmarking Report (175 companies, 17,000+ facilities)", url: "https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/" }
+  - { label: "Sperandei et al. (2016), Journal of Science and Medicine in Sport: attrition among 5,240 members of one gym in Rio de Janeiro", url: "https://doi.org/10.1016/j.jsams.2015.12.522" }
+  - { label: "Health Club Management: UK National Retention Report 2013 (342,759 memberships, joined 2009 to 2012)", url: "https://www.healthclubmanagement.co.uk/health-club-management-features/Attention-retention/28332" }
 figures:
-  - { label: "Monthly member churn", value: "4–8%", note: "boutique average; top studios hold 2–3%", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
-  - { label: "Quit within 90 days", value: "~50%", note: "of new members — the onboarding window decides retention", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
-  - { label: "Cost to acquire vs retain", value: "5–7×", note: "more expensive to win a member than to keep one", source: "Glofox", url: "https://www.glofox.com/blog/reducing-churn/" }
+  - { label: "Industry annual retention", value: "66.4%", note: "about one in three members gone within a year", source: "HFA 2025", url: "https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/" }
+  - { label: "Stopped before month 3", value: "63%", note: "of new members at one gym in Rio de Janeiro, 2005 to 2014", source: "Sperandei et al. 2016", url: "https://doi.org/10.1016/j.jsams.2015.12.522" }
+  - { label: "Still members after 12 months", value: "51.9%", note: "of 342,759 UK memberships joined 2009 to 2012", source: "UK National Retention Report 2013", url: "https://www.healthclubmanagement.co.uk/health-club-management-features/Attention-retention/28332" }
+changelog:
+  - { date: "13 Jun 2026", note: "First publish." }
+  - { date: "28 Oct 2026", note: "Correction: replaced vendor-blog figures (4 to 8% monthly churn, ~50% quit in 90 days, 5 to 7× acquisition cost) and two unsourced claims (5% retention lift raises profit 20%+, 3× more likely to stay a year) with HFA 2025 and two named retention studies." }
 hero:
   kind: line
-  stat: "4–8%"
-  statLabel: "avg. monthly churn"
+  stat: "63%"
+  statLabel: "new members gone before month 3*"
 tags: ["retention", "studio-ops", "growth"]
 ---
 
-Industry monthly churn runs about 4–8% (top studios hold 2–3%), it costs roughly **5–7× more** to acquire a member than to keep one, and **~50% of new members quit within the first 90 days**. Run that math forward and the conclusion is brutal: most studios are filling a leaking bucket with expensive water.
+The industry keeps about **two in three members a year**: the Health & Fitness Association's 2025 benchmark puts annual retention at **66.4%** across 175 companies and 17,000+ facilities. And the loss is front-loaded. In a study of 5,240 members at one gym in Rio de Janeiro, **63% of new members stopped before their third month**. In the UK's 2013 National Retention Report, covering 342,759 memberships, only **51.9%** were still members after a year.
 
-The lever isn't a bigger ad budget. It's the first 30–90 days — onboarding, early wins, and the habit loop that turns a trial into a member. The payoff is outsized: a 5% lift in retention can raise profit more than 20%, and members who pass the 90-day mark are roughly 3× more likely to stay a full year.
+Run that forward and the conclusion is blunt: most studios are filling a leaking bucket, and the hole is near the top.
 
-The takeaway is operational, not promotional: win the first 30–90 days with structured onboarding and early wins, and the retention math stops working against you.
+The lever isn't a bigger ad budget. It's the first 30 to 90 days: onboarding, early wins, and the habit loop that turns a trial into a member. Every member you keep past that window is one you don't have to pay to replace.
+
+The takeaway is operational, not promotional: win the first 90 days with structured onboarding and early wins, and the retention math stops working against you.
+
+*\*Single-gym study (Sperandei et al. 2016). Your own numbers will differ; measure your first-90-day dropout and compare.*

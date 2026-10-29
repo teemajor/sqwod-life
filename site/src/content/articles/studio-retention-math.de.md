@@ -3,36 +3,43 @@ urlSlug: studio-retention-math
 lang: de
 counterpart: studio-retention-math
 title: "Die Retention-Rechnung, die über dein Studio entscheidet"
-seoTitle: "Mitgliederbindung: Die ersten 30 Tage entscheiden"
+seoTitle: "Mitgliederbindung: Die ersten 90 Tage entscheiden"
 topic: retention
-description: "Die Branche verliert 4–8% pro Monat, die Hälfte kündigt in 90 Tagen. Die Lösung ist nicht mehr Werbung — es sind die ersten 30."
+description: "Die Branche hält etwa zwei von drei Mitgliedern pro Jahr, und der größte Verlust passiert in den ersten drei Monaten. Die Lösung ist nicht mehr Werbung. Es ist Onboarding."
 pillar: build
 type: coaching-business
 format: analysis
 conversion: pods
 publishedAt: 2026-06-13
-updatedAt: 2026-06-14
-asOf: Juni 2026
+updatedAt: 2026-10-28
+asOf: Oktober 2026
 author: "sqwod.life"
 gated: false
 sourceIds: ["stat-studio-retention-2026"]
 sources:
-  - { label: "Smart Health Clubs — 100 Retention-Statistiken (2025)", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
-  - { label: "Glofox — Leitfaden gegen Churn", url: "https://www.glofox.com/blog/reducing-churn/" }
-  - { label: "CloudGym — Mitgliederbindung für Boutique-Studios", url: "https://www.cloudgymmanager.com/member-retention-for-boutique-fitness-studios-stop-the-30-annual-churn/" }
+  - { label: "Health & Fitness Association (HFA): 2025 Fitness Industry Benchmarking Report (175 Unternehmen, 17.000+ Standorte)", url: "https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/" }
+  - { label: "Sperandei et al. (2016), Journal of Science and Medicine in Sport: Abbruchquoten bei 5.240 Mitgliedern eines Studios in Rio de Janeiro", url: "https://doi.org/10.1016/j.jsams.2015.12.522" }
+  - { label: "Health Club Management: UK National Retention Report 2013 (342.759 Mitgliedschaften, Eintritt 2009 bis 2012)", url: "https://www.healthclubmanagement.co.uk/health-club-management-features/Attention-retention/28332" }
 figures:
-  - { label: "Mitglieder-Churn pro Monat", value: "4–8%", note: "Boutique-Schnitt; Top-Studios halten 2–3%", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
-  - { label: "Kündigung in 90 Tagen", value: "~50%", note: "der neuen Mitglieder — das Onboarding-Fenster entscheidet", source: "Smart Health Clubs", url: "https://smarthealthclubs.com/blog/100-gym-membership-retention-statistics/" }
-  - { label: "Gewinnung vs. Halten", value: "5–7×", note: "teurer, ein Mitglied zu gewinnen als zu halten", source: "Glofox", url: "https://www.glofox.com/blog/reducing-churn/" }
+  - { label: "Jahres-Retention der Branche", value: "66,4%", note: "etwa jedes dritte Mitglied ist binnen eines Jahres weg", source: "HFA 2025", url: "https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/" }
+  - { label: "Aufgehört vor Monat 3", value: "63%", note: "der neuen Mitglieder eines Studios in Rio de Janeiro, 2005 bis 2014", source: "Sperandei et al. 2016", url: "https://doi.org/10.1016/j.jsams.2015.12.522" }
+  - { label: "Nach 12 Monaten noch Mitglied", value: "51,9%", note: "von 342.759 britischen Mitgliedschaften, Eintritt 2009 bis 2012", source: "UK National Retention Report 2013", url: "https://www.healthclubmanagement.co.uk/health-club-management-features/Attention-retention/28332" }
+changelog:
+  - { date: "13 Juni 2026", note: "Erstveröffentlichung." }
+  - { date: "28 Oktober 2026", note: "Korrektur: Zahlen aus Anbieter-Blogs (4 bis 8% Churn pro Monat, ~50% Kündigung in 90 Tagen, 5 bis 7× Gewinnungskosten) und zwei unbelegte Aussagen (5% mehr Bindung = 20%+ Gewinn, 3× wahrscheinlicher ein Jahr zu bleiben) durch HFA 2025 und zwei benannte Retention-Studien ersetzt." }
 hero:
   kind: line
-  stat: "4–8%"
-  statLabel: "Ø Churn pro Monat"
+  stat: "63%"
+  statLabel: "Neue weg vor Monat 3*"
 tags: ["kundenbindung", "studio-ops", "wachstum"]
 ---
 
-Der Branchen-Churn liegt bei rund 4–8% pro Monat (Top-Studios halten 2–3%), die Neugewinnung kostet etwa **5–7× mehr** als das Halten, und **~50% der neuen Mitglieder kündigen in den ersten 90 Tagen**. Rechnet man das hoch, ist die Schlussfolgerung hart: Die meisten Studios füllen einen löchrigen Eimer mit teurem Wasser.
+Die Branche hält etwa **zwei von drei Mitgliedern pro Jahr**: Der Benchmark 2025 der Health & Fitness Association beziffert die Jahres-Retention auf **66,4%**, über 175 Unternehmen und 17.000+ Standorte. Und der Verlust passiert früh. In einer Studie mit 5.240 Mitgliedern eines Studios in Rio de Janeiro hörten **63% der neuen Mitglieder vor dem dritten Monat auf**. Im britischen National Retention Report 2013 mit 342.759 Mitgliedschaften waren nach einem Jahr nur noch **51,9%** dabei.
 
-Der Hebel ist nicht mehr Werbebudget. Es sind die ersten 30–90 Tage — Onboarding, frühe Erfolge und die Gewohnheitsschleife, die aus dem Probetraining ein Mitglied macht. Der Effekt ist überproportional: 5% mehr Bindung können den Gewinn um über 20% steigern, und wer die 90-Tage-Marke übersteht, bleibt etwa 3× wahrscheinlicher ein ganzes Jahr.
+Rechnet man das hoch, ist die Schlussfolgerung klar: Die meisten Studios füllen einen löchrigen Eimer, und das Loch sitzt weit oben.
 
-Die Lehre ist operativ, nicht werblich: Gewinne die ersten 30–90 Tage mit strukturiertem Onboarding und frühen Erfolgen — dann arbeitet die Retention-Rechnung nicht mehr gegen dich.
+Der Hebel ist nicht mehr Werbebudget. Es sind die ersten 30 bis 90 Tage: Onboarding, frühe Erfolge und die Gewohnheitsschleife, die aus dem Probetraining ein Mitglied macht. Jedes Mitglied, das du über dieses Fenster hinaus hältst, musst du nicht teuer ersetzen.
+
+Die Lehre ist operativ, nicht werblich: Gewinne die ersten 90 Tage mit strukturiertem Onboarding und frühen Erfolgen, dann arbeitet die Retention-Rechnung nicht mehr gegen dich.
+
+*\*Studie in einem einzelnen Studio (Sperandei et al. 2016). Deine Zahlen werden abweichen; miss deine Abbrüche in den ersten 90 Tagen und vergleiche.*

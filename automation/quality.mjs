@@ -129,7 +129,9 @@ function frontmatter(file) {
   const fm = raw.split(/^---\s*$/m)[1] || '';
   const get = (k) => (fm.match(new RegExp(`^${k}:\\s*(.+)$`, 'm')) || [])[1]?.replace(/^["']|["']$/g, '').trim();
   const tags = (fm.match(/^tags:\s*\[(.*)\]/m) || [])[1] || '';
-  return { get, tags };
+  // successor:\n  reviewSlug: "..." (a newer model we also review)
+  const successor = (fm.match(/^successor:\s*\n(?:\s+.*\n)*?\s+reviewSlug:\s*["']?([\w-]+)/m) || [])[1] || '';
+  return { get, tags, successor };
 }
 
 // Slugs used as the Gear rec in the last `days` issues of this language.
@@ -158,8 +160,14 @@ export function pickGearRec({ reviewsDir, dailyDir, lang, items, date }) {
   const seed = [...String(date || '')].reduce((a, c) => a + c.charCodeAt(0), 0);
   const cands = [];
   for (const f of files) {
-    const { get, tags } = frontmatter(join(reviewsDir, f));
+    const { get, tags, successor } = frontmatter(join(reviewsDir, f));
     if (get('draft') === 'true') continue;
+    // Never recommend an older model when we publish a review of its successor
+    // (28 Oct 2026: the Oura Ring 5 story got a Ring Gen3 pick).
+    if (successor) {
+      const next = join(reviewsDir, `${successor}.${lang}.md`);
+      if (existsSync(next) && frontmatter(next).get('draft') !== 'true') continue;
+    }
     const slug = get('urlSlug') || f.replace(`.${lang}.md`, '');
     if (recent.has(slug)) continue;
     const product = get('productName') || get('title') || slug;

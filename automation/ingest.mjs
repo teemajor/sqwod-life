@@ -11,7 +11,7 @@
  *   node automation/ingest.mjs                 # writes sources/<today>.json
  *   node automation/ingest.mjs --date=2026-06-19 --max=6
  */
-import { feedSummary, fetchArticle, bestText, decodeEntities, stripTags } from './article.mjs';
+import { feedSummary, fetchArticle, bestText, decodeEntities, stripTags, staleReason, isLabelledAd } from './article.mjs';
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
@@ -56,6 +56,8 @@ const QUERIES = [
   { q: '("personal trainer" OR "fitness coach" OR "online coaching") (business OR clients OR pricing OR platform OR income) when:7d', pillar: 'business-strategy', conversion: 'pods' },
   { q: '(longevity OR recovery OR supplements OR "cold plunge" OR sauna OR "creatine") (market OR brand OR launch OR study OR trend) when:6d', pillar: 'industry-trends', conversion: 'list-growth' },
   { q: '(fitness OR wellness) (influencer OR creator OR "social media") (brand OR marketing OR campaign OR deal) when:6d', pillar: 'marketing-visibility', conversion: 'sqwod-os' },
+  // Closures (29 Oct 2026): the Deal Tracker logs who shut down, not only who raised.
+  { q: '(fitness OR gym OR "health club" OR "fitness studio" OR "fitness app" OR "fitness franchise" OR wearable OR supplement OR Fitnessstudio OR Fitnesskette) (bankruptcy OR "Chapter 11" OR "shuts down" OR "shutting down" OR insolvency OR "enters administration" OR "ceases operations" OR Insolvenz OR "stellt Betrieb ein") when:7d', pillar: 'industry-trends', conversion: 'sqwod-os' },
   { q: '("wellness economy" OR "fitness industry" OR "health club industry") (global OR Europe OR Asia OR "market size" OR report OR forecast OR growth) when:7d', pillar: 'industry-trends', conversion: 'sqwod-os' },
   // Fitt-Insider-adjacent beat (added 2026-07-23): the "future of health" money + science
   // stories our reader keeps seeing elsewhere. Scoped so the on-brand STRONG gate still
@@ -180,7 +182,7 @@ function sameDeal(item, picked) {
 }
 // Viral and human-interest sites: entertaining, but not industry news.
 const VIRAL_OUTLETS = /(twisted ?sifter|bored ?panda|buzzfeed|upworthy|distractify|someecards|unilad|ladbible|the ?list\b|ranker|cracked|scary ?mommy|yahoo life)/i;
-const JUNK = /(\bhoroscope\b|\bzodiac\b|\brecipe\b|\bkardashian\b|\broyal\b|^meet\s|\bquiz\b|\bweight loss pill\b|\bcelebrit|sponsored content|\bdeal of the day\b|fundrais\w*|\bcharity\b|\bdonat\w*|\w+-a-thon\b|\bbest .{1,40} platforms?\b|\b\d+ (?:best|top) |^#\d+\s*:|\bpodcast\b|\bmust-see\b|\bepisode \d+)/i;   // + charity fundraisers, listicles, podcast episodes (Oct 2026)
+const JUNK = /(\bhoroscope\b|\bzodiac\b|\brecipe\b|\bkardashian\b|\broyal\b|^meet\s|\bquiz\b|\bweight loss pill\b|\bcelebrit|sponsored content|\bdeal of the day\b|fundrais\w*|\bcharity\b|\bdonat\w*|\braise[sd]? (?:nearly |almost |over |more than |about )?[£$€]\s?\d[\d,]*(?:\.\d+)?(?!\s?(?:m|bn|k|million|billion|mio)\b)(?![\d,.]) for\b|\bwear it pink\b|\b(?:bildergalerie|fotogalerie|photo gallery|in pictures|impressionen)\b|\bbreast cancer now\b|\bmovember\b|\bcancer research\b|\bspenden\w*|\w+-a-thon\b|\bbest .{1,40} platforms?\b|\b\d+ (?:best|top) |^#\d+\s*:|\bpodcast\b|\bmust-see\b|\bepisode \d+)/i;   // + charity fundraisers, listicles, podcast episodes (Oct 2026)
 // Advertorial / non-story noise. WordPress "Geschützt:"/"Protected:" posts are
 // password-gated (no readable story), and webinar/whitepaper promos are ads, not news
 // — these are exactly the body LIFE / DSSV items that kept leading the Daily. Drop them.
@@ -230,10 +232,11 @@ function classify(t, prior) {
 
 function moneyKind(t) {
   const s = t.toLowerCase();
-  if (/\b(acquir|acquisition|buys|merger|m&a)\b/.test(s)) return 'acquisition';
+  if (/\b(acquir\w*|acquisition|buys|merger|m&a)\b|(?:ü|\b)ber(?:nimmt|nahme)\b|\bkauft\b|\bfusion\b/.test(s)) return 'acquisition';
   if (/\b(ipo|goes public)\b/.test(s)) return 'ipo';
   if (/\b(valuation|valued at)\b/.test(s)) return 'valuation';
-  if (/\b(shuts down|shutting down|bankrupt|closes)\b/.test(s)) return 'shutdown';
+  // Closures (29 Oct 2026, Deal Tracker): bankruptcies, insolvencies, administrations, wind-downs.
+  if (/\b(shuts? down|shutting down|bankrupt\w*|chapter 11|insolven\w*|enters administration|into administration|ceases operations|winds? down|wind-down|liquidat\w*|closes (?:all|its doors|every)|closing all)\b|\binsolvenz\w*|stellt (?:den )?betrieb ein|schlie(?:ß|ss)t alle/.test(s)) return 'shutdown';
   if (/\b(raise|raises|raised|funding|seed|series [a-d]|invest)\b/.test(s)) return 'raise';
   return null;
 }
@@ -260,7 +263,7 @@ const DACH_EU_RX = /\b(german|germany|berlin|munich|münchen|hamburg|cologne|kö
 const LEGIBLE_MONEY_RX = /([$€£]\s?\d|\bUSD\b|\bEUR\b|\bGBP\b|\b\d[\d.,]*\s?(?:k|m|bn|million|billion)\b)/i;
 const ILLEGIBLE_MONEY_RX = /(\bcrore\b|\blakh\b|\brs\.?\s?\d|₹|¥|\brmb\b|\byuan\b|₩|\bwon\b|\brupees?\b|\bpesos?\b|\bbaht\b|\bringgit\b|\brupiah\b|\bnaira\b|\btaka\b|\bdirham\b)/i;
 
-const DEAL_KINDS = new Set(['raise', 'acquisition', 'ipo', 'valuation']);
+const DEAL_KINDS = new Set(['raise', 'acquisition', 'ipo', 'valuation', 'shutdown']);
 function scoreCandidate({ headline, trade, wire, lang, money, age, curated = false }) {
   const h = headline || '';
   let s = 0;
@@ -309,8 +312,11 @@ function loadLedger() {
 const normUrl = (u) => String(u || '').toLowerCase().replace(/^https?:\/\/(www\.)?/, '').replace(/[?#].*$/, '').replace(/\/+$/, '');
 // Words every deal headline shares; a match on these alone says nothing.
 const DEAL_GENERIC = new Set(['raises', 'raised', 'million', 'billion', 'funding', 'round', 'acquires', 'acquisition', 'deal', 'investment', 'seed', 'series', 'startup', 'gyms', 'studios', 'software', 'platform', 'build', 'operating', 'system']);
-function seenBefore(tok, url, ledger, money = null) {
+const DEAL_KINDS_ALL = new Set(['raise', 'acquisition', 'ipo', 'valuation', 'shutdown']);
+function seenBefore(tok, url, ledger, money = null, headline = '') {
   const nu = normUrl(url);
+  const kind = money?.kind || moneyKind(headline);
+  const ents = allEntities(headline);
   const amt = normAmount(money?.amount);
   for (const e of ledger) {
     if (nu && e.url && normUrl(e.url) === nu) return true;   // exact same link
@@ -320,6 +326,20 @@ function seenBefore(tok, url, ledger, money = null) {
     if (amt && e.deal === amt) {
       const et = new Set(e._tok || e.tokens || []);
       for (const w of tok) if (!DEAL_GENERIC.has(w) && et.has(w)) return true;
+    }
+    // Same company, same kind of deal (28 Oct 2026): PureGym buying NonStop ran on
+    // 15, 20 and 26 Oct under three headlines ("acquires NonStop", "advises PureGym on
+    // £235m Swiss deal", "übernimmt NonStop"). A deal kind plus a shared company, or two
+    // shared distinctive words, within the ledger window is one story.
+    if (kind && DEAL_KINDS_ALL.has(kind)) {
+      const ek = moneyKind(e.key || (e.tokens || []).join(' '));
+      if (ek === kind) {
+        const eEnts = (Array.isArray(e.entities) && e.entities.length) ? e.entities : allEntities(e.key || '');
+        if (ents.some((x) => eEnts.includes(x))) return true;
+        const et = new Set(e._tok || e.tokens || []);
+        let shared = 0; for (const w of tok) if (!DEAL_GENERIC.has(w) && et.has(w)) shared++;
+        if (shared >= 2) return true;
+      }
     }
   }
   return false;
@@ -422,7 +442,7 @@ async function getXml(url) {
 // first (curated/trade feeds are added first, so they win).
 const DUP_STOP = new Set(['the','a','an','to','of','for','and','in','on','with','its','is','as','at','by','new','now','says','said','after','into','from','more','than','that','this','will','how','why','amid','over','under','your','you','fitness','wellness','industry','report','plans','plan']);
 function dupTokens(h) {
-  return new Set(String(h).toLowerCase().replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !DUP_STOP.has(w)));
+  return new Set(String(h).toLowerCase().replace(/ß/g, 'ss').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !DUP_STOP.has(w)));
 }
 function findNearDup(tok, pool) {
   if (tok.size === 0) return null;
@@ -478,7 +498,7 @@ function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversi
   if (twin) {
     twin._outlets = (twin._outlets || 1) + 1;
     if (twin._outlets <= 3) twin._boost = (twin._boost || 0) + 2;
-    if (((twin.wire && !wire) || (!twin.trade && trade && !wire)) && !seenBefore(tok, link, ledger, money)) {   // reporting beats announcement; trade press beats a general outlet
+    if (((twin.wire && !wire) || (!twin.trade && trade && !wire)) && !seenBefore(tok, link, ledger, money, headline)) {   // reporting beats announcement; trade press beats a general outlet
       Object.assign(twin, { headline, outlet, link, pub, pillar, conversion, trade, wire: false, pressRelease: undefined, summary: summary || twin.summary, key, _tok: tok, _upgradedFrom: twin.outlet });
       twin._baseScore = scoreCandidate({ headline, trade, wire: false, lang, money: twin.money, age: ageDays(pub) });
     }
@@ -486,7 +506,7 @@ function add(pool, seen, ledger, { headline, outlet, link, pub, pillar, conversi
     twin._score = twin._baseScore + (twin._boost || 0);
     return;
   }
-  if (seenBefore(tok, link, ledger, money)) return;      // already covered in the last LEDGER_DAYS → skip
+  if (seenBefore(tok, link, ledger, money, headline)) return;      // already covered in the last LEDGER_DAYS → skip
   seen.add(key);
   SOURCE_COUNT[outlet] = (SOURCE_COUNT[outlet] || 0) + 1;
   pool.push({ headline, outlet, link, pub, pillar, conversion, trade, wire, pressRelease: wire || undefined, money, key, summary, curated, _tok: tok, _score: scoreCandidate({ headline, trade, wire, lang, money, age, curated }) });
@@ -737,20 +757,50 @@ async function run() {
   // ARTICLE TEXT (Oct 2026): the writer used to see headlines only, and padded the gap
   // with spin. Keep the opening of each chosen article (publisher page, or the feed's
   // own summary when the page is blocked) so the Daily reports real facts.
+  // Fitt's own brief text is curated reporting; the page it links is often the
+  // company's press release. Prefer the brief for those items.
+  const loadText = async (p) => {
+    const page = p.curated && bestText(p.summary) ? '' : await fetchArticle(p.link);
+    p.text = p.curated ? (bestText(p.summary) || bestText(page)) : bestText(page, p.summary);
+  };
   {
-    let i = 0, got = 0;
-    const worker = async () => {
-      while (i < ordered.length) {
-        const p = ordered[i++];
-        // Fitt's own brief text is curated reporting; the page it links is often the
-        // company's press release. Prefer the brief for those items.
-        const page = p.curated && bestText(p.summary) ? '' : await fetchArticle(p.link);
-        p.text = p.curated ? (bestText(p.summary) || bestText(page)) : bestText(page, p.summary);
-        if (p.text) got++;
-      }
-    };
+    let i = 0;
+    const worker = async () => { while (i < ordered.length) await loadText(ordered[i++]); };
     await Promise.all(Array.from({ length: Math.min(4, ordered.length) }, worker));
-    console.log(`📰 article text for ${got}/${ordered.length} stories`);
+    console.log(`📰 article text for ${ordered.filter((p) => p.text).length}/${ordered.length} stories`);
+  }
+  // OLD NEWS GATE (28 Oct 2026). The feed date is when a page was published or last
+  // touched, not when the thing happened. Read the dates in the article itself: drop
+  // a story whose newest date is weeks old (a republished 2025 earnings report) or an
+  // event that is already over (a photo recap). Refill from the next-best candidates.
+  {
+    const staleOf = (p) => {
+      const body = `${p.headline}. ${p.text || p.summary || ''}`;
+      if (isLabelledAd(body)) return 'the publisher labels it as an ad';
+      return staleReason(body, date, p.headline);
+    };
+    const dropped = [];
+    for (let k = ordered.length - 1; k >= 0; k--) {
+      const why = staleOf(ordered[k]);
+      if (why) { dropped.push(ordered[k]); console.error(`⌛ not news, dropped (${why}): ${ordered[k].headline.slice(0, 70)}`); ordered.splice(k, 1); }
+    }
+    if (dropped.length) {
+      const taken = new Set([...ordered, ...dropped]);
+      const spare = pool.filter((p) => !taken.has(p)).sort((a, b) => b._score - a._score);
+      const floor = (ordered[0]?._score ?? 0) - 8;   // a refill is still a real story, not filler
+      for (const cand of spare) {
+        if (ordered.length >= MAX) break;
+        if (cand._score < floor) break;
+        if (ordered.filter((p) => p.outlet === cand.outlet).length >= 2) continue;
+        const [link] = await resolveAll([cand.link]);
+        if (link) cand.link = link;
+        await loadText(cand);
+        const why = staleOf(cand);
+        if (why) { console.error(`⌛ refill skipped (${why}): ${cand.headline.slice(0, 70)}`); continue; }
+        ordered.push(cand);
+        console.error(`↺ refilled with: ${cand.headline.slice(0, 70)} (score ${cand._score.toFixed(1)})`);
+      }
+    }
   }
   const sources = ordered.map((p, i) => ({
     id: `news-${date}-${i + 1}`,
