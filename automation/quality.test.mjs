@@ -61,3 +61,24 @@ t('AI sales coaching stays out', () => assert.ok(!isOnBrand('AI Sales Coaching P
 t('hospital expansion stays out', () => assert.ok(!isOnBrand('IHH Healthcare expands Gleneagles Hospital Johor')));
 t('beauty-school training stays out', () => assert.ok(!isOnBrand('BorboletaPro Expands Lash+Brow Training in Paul Mitchell Schools')));
 t('personal training news gets in', () => assert.ok(isOnBrand('Personal training studio expands to five locations')));
+
+// ---- 28 Oct 2026: old news as new, superseded gear pick ----
+const { staleReason } = await import('./article.mjs');
+const { pickGearRec } = await import('./quality.mjs');
+const T = '2026-10-28';
+t('republished 2025 earnings report is old news', () => assert.ok(staleReason('Xponential reported Q4 2024 revenue of $83.2 million. After results on March 13, 2025 shares fell 31%.', T)));
+t('event that ended last week is old news (EN)', () => assert.ok(staleReason('The DSSV event takes place from 20 to 23 October 2026 in Torremolinos.', T, 'DSSV event')));
+t('event that ended last week is old news (DE)', () => assert.ok(staleReason('Das DSSV-Event findet vom 20. bis 23. Oktober 2026 im Hotel Meliá statt.', T, 'DSSV-Event')));
+t('yesterday\'s launch is news', () => assert.equal(staleReason('Precor presented a new Glutebuilder line on 27 October 2026.', T), ''));
+t('an upcoming event is news', () => assert.equal(staleReason('Der DSSV bietet am 19. November 2026 eine Online-Einweisung an.', T, 'Webinar'), ''));
+t('background dates do not make news old', () => assert.equal(staleReason('Reformd opens in Calabasas in January 2027. The Toronto studio opened in June 2025.', T), ''));
+t('undated text is never called old', () => assert.equal(staleReason('Huppa, founded in 2024, raised €1 million.', T), ''));
+t('gear pick skips a model we have a newer review for', () => assert.equal(
+  pickGearRec({ reviewsDir: new URL('../site/src/content/reviews', import.meta.url).pathname, dailyDir: '/nonexistent', lang: 'en', items: [{ headline: 'Oura Ring 5 launches in India', dek: '' }], date: T }).url,
+  '/en/verified/oura-ring-5'));
+const { isLabelledAd } = await import('./article.mjs');
+t('a labelled ad is not news', () => assert.ok(isLabelledAd('Die fM Redaktion Oktober 27, 2026 Lesezeit: 2 Minuten -Anzeige- Die neue Glutebuilder Selectorized Line')));
+t('a complaint is not an ad', () => assert.ok(!isLabelledAd('Der Verband hat Anzeige gegen den Betreiber erstattet.')));
+const { FINANCE_OUTLETS_RX } = await import('./onbrand.mjs');
+t('stock-tip apps are not news outlets', () => assert.ok(FINANCE_OUTLETS_RX.test('Pluang')));
+t('facts found for a headline are checked for age too', () => assert.ok(staleReason('Xponential reported fourth-quarter 2024 revenue of $83.2 million. After results on March 13, 2025 the stock fell 31%.', T)));

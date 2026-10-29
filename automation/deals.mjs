@@ -36,7 +36,8 @@ const DAILY = join(ROOT, 'site', 'src', 'content', 'daily');
 const OUT = join(ROOT, 'site', 'src', 'data', 'deals.json');
 const QUEUE = join(__dirname, 'intel-queue');
 const OVERRIDES = join(__dirname, 'deals-overrides.json');
-const ENRICH = join(__dirname, 'deals-enrich.json');   // web-checked facts per deal (cache; written by --enrich)
+const ENRICH = join(__dirname, 'deals-enrich.json');
+const MANUAL = join(__dirname, 'deals-manual.json');  // researched entries not from a Daily (e.g. past closures), each with a source url   // web-checked facts per deal (cache; written by --enrich)
 const apiKey = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.SQWOD_MODEL || 'claude-sonnet-4-6';
 const SEARCH_TOOL = process.env.SQWOD_SEARCH_TOOL || 'web_search_20260209';
@@ -166,6 +167,16 @@ export function collect() {
       });
     }
   }
+  // Researched entries (closures before the tracker started, deals the Daily missed).
+  for (const m of read(MANUAL, { entries: [] }).entries || []) {
+    if (!m.entity || !m.date || !/^https?:\/\//.test(m.url || '')) continue;   // a manual entry without a source never counts
+    const amt = parseAmount(m.amount);
+    const text = `${m.entity} ${m.note || ''} ${m.url}`;
+    raw.push({ date: m.date, entity: m.entity, kind: m.kind || 'shutdown', amount: m.amount || '', amountUsd: amt?.usd ?? null, currency: amt?.currency ?? null,
+      approx: !!amt?.range, note: m.note || '', noteDe: m.noteDe || undefined, url: m.url, source: m.source || '', issue: '',
+      region: (m.country && regionOf(m.country)) || tag(REGION_RULES, text), country: m.country || undefined,
+      category: CATEGORIES.includes(m.category) ? m.category : tag(CATEGORY_RULES, text), onBrand: true, vague: false, manual: true });
+  }
   return raw;
 }
 
@@ -193,7 +204,7 @@ export function merge(raw) {
   const seen = new Map();
   for (const d of out) {
     const n = (seen.get(d.id) || 0) + 1; seen.set(d.id, n); if (n > 1) d.id += `-${n}`;
-    d.region = tag(REGION_RULES, d._text); d.category = tag(CATEGORY_RULES, d._text);
+    if (!d.manual) { d.region = tag(REGION_RULES, d._text); d.category = tag(CATEGORY_RULES, d._text); }
     d.onBrand = d.onBrand || isOnBrand(d._text);
     delete d._k; delete d._ks; delete d._text;
   }

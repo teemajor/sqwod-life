@@ -23,6 +23,7 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { isOnBrand, isProductReview } from './onbrand.mjs';
+import { staleReason, isLabelledAd } from './article.mjs';
 import { isGoogleNews, resolveAll, phraseProblems, isObituary, stripPhrases, noEmDash, pickGearRec, wrongLanguage, foreignSentences } from './quality.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -99,10 +100,14 @@ function loadSources() {
 // with facts, told plainly, as a story the reader can follow. One definition, used by
 // every prompt below, so the voice cannot drift between steps.
 const LANG_NAME = { en: 'English', de: 'German' };
+// The issue date, so the writer can tell past from future (set in run()).
+let ISSUE_DATE = new Date().toISOString().slice(0, 10);
+const longDate = (lang) => new Date(`${ISSUE_DATE}T12:00:00Z`).toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 function voice(lang) {
   const de = lang === 'de';
   return `VOICE: Sqwod Daily is a trusted news brief for fitness industry professionals: studio and gym founders and operators first, then coaches and personal trainers, brand operators, investors and the companies that sell into the industry. Write like a good trade reporter explaining the news to a smart peer.
 - Report first: who did what, where, when, and how much. Use the names, numbers and dates in the source.
+- TODAY is ${longDate(lang)}. Compare every date in the source with today. Something dated before today already happened: report it in the past tense, never as upcoming. Never present an old result or an event that is over as new.
 - Then, where the facts support it, one plain sentence on what it means for operators, coaches or the brands and investors in that category. If the facts do not support a lesson, just report the news.
 - Plain words, short sentences, active voice. Explain any term a coach might not know in a few words.
 - No slang, idioms, puns, jokes, wordplay, hype or clever phrasing. No unexplained abbreviations.
@@ -259,7 +264,7 @@ Produce ONE minified JSON object. Never invent numbers, companies, deals, dates 
  "connectBody":"two short paragraphs separated by \\n. Paragraph 1: the facts of that story, told as a short story (what happened, the details, the context given). Paragraph 2: what it means in practice for a coach or studio owner, grounded in those facts. No speculation beyond the facts.",
  "doThis":"one concrete thing a coach or studio owner can do this week, linked to today's news",
  "meanwhile":"",
- "moneyMoves":[{"entity":"company name from the stories","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one plain clause"}]  // ONLY real raises/M&A/valuations; [] if none,
+ "moneyMoves":[{"entity":"company name from the stories","kind":"raise|acquisition|valuation|ipo|shutdown","amount":"only if stated verbatim, else empty string","note":"one plain clause"}]  // ONLY real raises, M&A, valuations, IPOs, and closures (kind "shutdown": a company closes, goes bankrupt, insolvent or into administration); [] if none,
  "dealRead":"ONLY if moneyMoves is non-empty: 1-2 plain sentences for investors and brand operators on what today's deals signal for that category (who is funding what, which model is attracting money, what it means for incumbents). Facts only; else \"\"",
  "policyWatch":{"title":"...","body":"1-2 plain sentences"} or null. Only for a law, regulation, health-insurance rule, association programme or official requirement that affects coaches or studios,
  "stat":{"number":"a figure verbatim from the stories","label":"what it measures","body":"one plain sentence on why it matters"} or null. Must be a different figure than any moneyMoves amount,
@@ -542,7 +547,7 @@ async function enrichThin(sources) {
 Headline: ${src.topic}
 Outlet: ${src.entity || 'n/a'}${src.readMore || src.en?.readMore ? `\nOriginal link: ${src.readMore || src.en.readMore}` : ''}
 Respond ONLY as minified JSON: {"facts":[{"fact":"one short factual sentence (who, what, how much, when)","url":"https://... the page that states it"}],"context":"one sentence of verified background (e.g. prior round, size, market), or empty"}
-Rules: 2 to 5 facts. Every fact needs a URL you opened. No estimates, no opinion, no facts older than the story unless labelled as background. If you cannot verify, return {"facts":[]}.`;
+Rules: 2 to 5 facts. Every fact needs a URL you opened. No estimates, no opinion. Today is ${ISSUE_DATE}: the facts must be about what THIS headline reports, from coverage published in the last 14 days. Do not fill the gap with an older story about the same company (an earlier quarter, last year's event). Put the date in each fact. If you cannot verify recent facts, return {"facts":[]}.`;
     try {
       const r = await fetch('https://api.anthropic.com/v1/messages', {
         method: 'POST',
@@ -569,6 +574,7 @@ async function run() {
   const byDate = loadSources();
   const dates = Object.keys(byDate).sort();
   const date = args.date || dates[dates.length - 1];
+  ISSUE_DATE = date;
   if (!byDate[date]) {
     console.log(`No source file for ${date} (ingest found nothing today). Nothing to generate — exiting cleanly.`);
     process.exit(0);   // no-op day, not a failure
@@ -576,19 +582,31 @@ async function run() {
   const sources = byDate[date];
   mkdirSync(DAILY_OUT, { recursive: true });
   await enrichThin(sources);   // headline-only stories get sourced facts before anyone writes
+  // NOT NEWS ANY MORE (28 Oct 2026). The dates in the facts decide, not the feed date:
+  // a stock app's 2026 page was "enriched" with Xponential's March 2025 results, and a
+  // DSSV photo gallery with the announcement of an event that had already ended.
+  for (let k = sources.length - 1; k >= 0; k--) {
+    const src = sources[k];
+    const text = (src.facts || []).filter((f) => f.label === 'Article').map((f) => f.value).join(' ');
+    const why = isLabelledAd(text) ? 'the publisher labels it as an ad' : staleReason(text, date, src.topic);
+    if (why) { console.log(`  ⌛ dropped "${String(src.topic).slice(0, 60)}": ${why}`); sources.splice(k, 1); }
+  }
+  if (!sources.length) { console.log(`No current stories left for ${date}. Nothing to publish.`); process.exit(0); }
 
   const move = pickMove();   // one curated clip for the day (same in EN + DE); null if queue empty
   if (move) console.log(`🎬 Move of the Day: ${move.platform || 'clip'} ${move.handle || ''} ${move.url}`);
   let published = false;
 
-  for (const lang of LANGS) {
+  // ITEMS for one language from a list of sources: write, then every guard. Returns
+  // the items that survived (each keeps its sourceId).
+  const srcOf = (it) => sources.find((s) => s.id === it.sourceId) || {};
+  async function buildItems(lang, srcList) {
     let items = [];
-    for (const src of sources) {
+    for (const src of srcList) {
       const out = await generate('daily-item', src, lang);
       items.push({ ...out, pillar: src.pillar, conversion: src.conversion, sourceId: src.id, source: src.entity });
     }
     items = await enforceLanguage(items, sources, lang);   // an EN issue never ships German copy
-    const srcOf = (it) => sources.find((s) => s.id === it.sourceId) || {};
     // ON-BRAND GUARDRAIL: nothing outside the fitness/wellness industry EVER ships
     // (belt-and-braces on top of ingest — catches a polluted source file too).
     {
@@ -656,6 +674,33 @@ async function run() {
       items = items.filter((it) => it.readMore && /^https?:\/\//.test(it.readMore));
       if (items.length < before) console.log(`  ⛔ ${lang.toUpperCase()} dropped ${before - items.length} item(s) with no source link`);
     }
+    return items;
+  }
+
+  // ONE STORY SET, TWO LANGUAGES (28 Oct 2026). Each edition used to run its guards on
+  // its own, so a story dropped in one language could survive in the other: the EN issue
+  // had SATS and no Xponential, the DE issue the reverse. Now a story missing from one
+  // edition gets one more try in that language; if it still fails, neither edition runs it.
+  const itemsBy = {};
+  for (const lang of LANGS) itemsBy[lang] = await buildItems(lang, sources);
+  const idsOf = (lang) => new Set(itemsBy[lang].map((it) => it.sourceId));
+  const union = new Set(LANGS.flatMap((l) => [...idsOf(l)]));
+  for (const lang of LANGS) {
+    const missing = sources.filter((s) => union.has(s.id) && !idsOf(lang).has(s.id));
+    if (!missing.length) continue;
+    console.log(`  ↻ ${lang.toUpperCase()} retrying ${missing.length} story(ies) the other edition kept`);
+    itemsBy[lang].push(...await buildItems(lang, missing));
+  }
+  const common = [...union].filter((id) => LANGS.every((l) => idsOf(l).has(id)));
+  const order = (id) => sources.findIndex((s) => s.id === id);
+  for (const lang of LANGS) {
+    const dropped = itemsBy[lang].filter((it) => !common.includes(it.sourceId)).length;
+    if (dropped) console.log(`  ⛔ ${lang.toUpperCase()} dropped ${dropped} story(ies) the other edition could not run`);
+    itemsBy[lang] = itemsBy[lang].filter((it) => common.includes(it.sourceId)).sort((x, y) => order(x.sourceId) - order(y.sourceId));
+  }
+
+  for (const lang of LANGS) {
+    const items = itemsBy[lang];
     if (!items.length) { console.log(`  ⚠ ${lang.toUpperCase()} no verifiable items left — NOT publishing ${date}.${lang}`); continue; }
 
     // FRAMING from the final list: lead, boxes, recs. Language/style checked; one

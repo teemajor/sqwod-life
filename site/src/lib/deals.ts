@@ -18,7 +18,8 @@ export interface Deal {
 const AUTOMATION = join(process.cwd(), '..', 'automation');
 const readJson = (p: string) => { try { return existsSync(p) ? JSON.parse(readFileSync(p, 'utf8')) : null; } catch { return null; } };
 
-export function liveDeals(): Deal[] {
+/** Every approved entry, closures included (the table, the downloads). */
+export function liveAll(): Deal[] {
   const overrides = readJson(join(AUTOMATION, 'deals-overrides.json')) || { deals: {} };
   return (data.deals as Deal[]).filter((d) => {
     const o = overrides.deals?.[d.id]?.status;
@@ -29,5 +30,9 @@ export function liveDeals(): Deal[] {
     return q?.status === 'approved';
   });
 }
+/** Money deals only: raises, acquisitions, valuations, IPOs (headline counts, cards). */
+export const liveDeals = (): Deal[] => liveAll().filter((d) => d.kind !== 'shutdown');
+/** Closures, bankruptcies, insolvencies and administrations. */
+export const liveClosures = (): Deal[] => liveAll().filter((d) => d.kind === 'shutdown');
 export const FX: Record<string, number> = data.fx;
 export const generatedAt: string = data.generatedAt;
