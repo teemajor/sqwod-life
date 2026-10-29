@@ -1,88 +1,5 @@
 [
   {
-    "date": "2026-10-07",
-    "key": "world spa awards 2026 italy takes the lead spas take on a ne",
-    "tokens": [
-      "world",
-      "awards",
-      "2026",
-      "italy",
-      "takes",
-      "lead",
-      "spas",
-      "take",
-      "dimension"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "key": "gloriah raises 600k to scale intimate wellness brand",
-    "tokens": [
-      "gloriah",
-      "raises",
-      "600k",
-      "scale",
-      "intimate",
-      "brand"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "key": "cambridge heartwear lands 184m nhs contract for worlds first",
-    "tokens": [
-      "cambridge",
-      "heartwear",
-      "lands",
-      "184m",
-      "contract",
-      "world",
-      "first",
-      "reusable",
-      "wearable"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "key": "hyperice8217s fall prime day sale promises up to 250 off pro",
-    "tokens": [
-      "hyperice",
-      "8217",
-      "fall",
-      "prime",
-      "sale",
-      "promises",
-      "athlete",
-      "loved",
-      "recovery",
-      "tools"
-    ],
-    "entities": [
-      "Hyperice"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "key": "supermush raises 3m series a to expand functional wellness l",
-    "tokens": [
-      "supermush",
-      "raises",
-      "series",
-      "expand",
-      "functional",
-      "line"
-    ]
-  },
-  {
-    "date": "2026-10-07",
-    "key": "gym franchise weighs in with 100m expansion plans",
-    "tokens": [
-      "franchise",
-      "weighs",
-      "100m",
-      "expansion"
-    ]
-  },
-  {
     "date": "2026-10-08",
     "key": "all inclusive fitness  expansion im fitnessmarkt was studiob",
     "tokens": [
@@ -1331,5 +1248,87 @@
     "entities": [
       "Xponential"
     ]
+  },
+  {
+    "date": "2026-10-29",
+    "key": "intake breathing gets 62m for magnetic nasal strips",
+    "tokens": [
+      "intake",
+      "breathing",
+      "gets",
+      "magnetic",
+      "nasal",
+      "strips"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "key": "garmin fitness revenue climbs 16 after screenless wearable l",
+    "tokens": [
+      "garmin",
+      "revenue",
+      "climbs",
+      "screenless",
+      "wearable",
+      "launch"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "key": "how one fitness operator tripled recovery engagement metrics",
+    "tokens": [
+      "operator",
+      "tripled",
+      "recovery",
+      "engagement",
+      "metrics"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "key": "total fitness ceo sophie lawler and fitness first ceo marc d",
+    "tokens": [
+      "total",
+      "sophie",
+      "lawler",
+      "first",
+      "marc",
+      "diaper",
+      "script",
+      "summit"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "key": "remembering dr tyler c cooper",
+    "tokens": [
+      "remembering",
+      "tyler",
+      "cooper"
+    ]
+  },
+  {
+    "date": "2026-10-29",
+    "key": "garmin q3 2026 earnings call garmin raises fullyear outlook ",
+    "tokens": [
+      "garmin",
+      "2026",
+      "earnings",
+      "call",
+      "raises",
+      "full",
+      "year",
+      "outlook",
+      "revenue",
+      "tops",
+      "jumps"
+    ],
+    "entities": [
+      "Garmin"
+    ],
+    "deal": "$1.98b"
   }
 ]
