@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28",
+  "generatedAt": "2026-10-29",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,34 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-10-29",
+      "entity": "Intake Breathing",
+      "kind": "raise",
+      "amount": "$62M",
+      "amountUsd": 62000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Intake Breathing raises $62M from Camino Partners to expand magnetic nasal strips into retail.",
+      "url": "https://athletechnews.com/intake-breathing-62-million-investment-magnetic-nasal-strips/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-10-29",
+      "region": "North America",
+      "category": "Health & longevity",
+      "id": "intake-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-29",
+          "url": "https://athletechnews.com/intake-breathing-62-million-investment-magnetic-nasal-strips/",
+          "issue": "/en/daily/2026-10-29"
+        }
+      ],
+      "country": "United States",
+      "noteDe": "Intake Breathing sammelt 62 Mio. USD bei Camino Partners, um magnetische Nasenstreifen in den Einzelhandel zu bringen.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-10-23",
       "entity": "Nirva",
