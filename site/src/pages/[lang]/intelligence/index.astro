@@ -12,7 +12,7 @@ const lang = Astro.params.lang as Lang;
 
 const reports = (await getCollection('articles', (a) => a.data.lang === lang && (a.data.format === 'report' || a.data.format === 'index')))
   .sort((a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime());
-const title = lang === 'de' ? 'Sqwod Intelligence — Reports & Daten' : 'Sqwod Intelligence — reports & data';
+const title = lang === 'de' ? 'Sqwod Intelligence: Reports & Daten' : 'Sqwod Intelligence: reports & data';
 const blurb = lang === 'de'
   ? 'Tiefgehende Reports und Daten zum Business der Wellness-Branche.'
   : 'In-depth reports and data on the business of wellness.';
@@ -65,6 +65,6 @@ const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB',
   </section>
 
   <div class="note">{lang==='de'
-    ? 'Reports sind kostenlos — wir schicken dir die Vollversion per E-Mail. Schnelle Daten-Drops sind für alle offen.'
-    : 'Reports are free — we\'ll email you the full version. Quick data drops are open to everyone.'}</div>
+    ? 'Reports sind kostenlos: wir schicken dir die Vollversion per E-Mail. Schnelle Daten-Drops sind für alle offen.'
+    : 'Reports are free: we\'ll email you the full version. Quick data drops are open to everyone.'}</div>
 </Base>

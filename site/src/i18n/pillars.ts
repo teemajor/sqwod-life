@@ -17,22 +17,22 @@ export const pillarMeta: Record<Pillar, {
 }> = {
   move: {
     label: { en: 'Move', de: 'Move' },
-    desc: { en: 'Technique, programming, recovery — solve the body problem.', de: 'Technik, Programming, Recovery — löse das Körperproblem.' },
+    desc: { en: 'Technique, programming, recovery: solve the body problem.', de: 'Technik, Programming, Recovery: löse das Körperproblem.' },
     routesTo: 'Sqwod products · Sqwod AI',
   },
   build: {
     label: { en: 'Build', de: 'Build' },
-    desc: { en: 'Clients, retention, pricing, ops, founder stories, AI workflows — grow the business.', de: 'Kunden, Bindung, Preise, Betrieb, Gründer-Stories, KI-Workflows — bau das Business.' },
+    desc: { en: 'Clients, retention, pricing, ops, founder stories, AI workflows: grow the business.', de: 'Kunden, Bindung, Preise, Betrieb, Gründer-Stories, KI-Workflows: bau das Business.' },
     routesTo: 'Sqwod Pods · Sqwod OS',
   },
   gear: {
     label: { en: 'Gear', de: 'Gear' },
-    desc: { en: 'What to buy and why — wearables, apps, tools, buyer’s guides.', de: 'Was kaufen — und warum. Wearables, Apps, Tools, Kaufberatung.' },
+    desc: { en: 'What to buy and why: wearables, apps, tools, buyer’s guides.', de: 'Was kaufen, und warum. Wearables, Apps, Tools, Kaufberatung.' },
     routesTo: 'Sqwod Verified · Deals',
   },
   signal: {
     label: { en: 'Signal', de: 'Signal' },
-    desc: { en: 'Market data, trends, wellness culture, policy — the intelligence layer.', de: 'Marktdaten, Trends, Wellness-Kultur, Politik — die Intelligence-Ebene.' },
+    desc: { en: 'Market data, trends, wellness culture, policy: the intelligence layer.', de: 'Marktdaten, Trends, Wellness-Kultur, Politik: die Intelligence-Ebene.' },
     routesTo: 'Intelligence · Ventures',
   },
 };

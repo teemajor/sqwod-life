@@ -104,7 +104,7 @@ const faqLd = {
   ],
 };
 ---
-<Base lang={lang} title={`${d.title} — Sqwod Verified`} description={d.verdict} active="verified" ogType="article" image={d.asset.images[0] ?? '/podcast-cover.png'}>
+<Base lang={lang} title={`${d.title} | Sqwod Verified`} description={d.verdict} active="verified" ogType="article" image={d.asset.images[0] ?? '/podcast-cover.png'}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd).replace(/</g, '\\u003c')} />
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(faqLd).replace(/</g, '\\u003c')} />
   <section class="vh">
@@ -352,7 +352,7 @@ const faqLd = {
   .successor a{color:var(--chalk)}
   .g-credit{font-size:10.5px;color:var(--g4);margin-top:8px;letter-spacing:.02em}
   /* Empty state when a product has no photos yet (until the affiliate image
-     feed populates asset.images) — the brand diamond mark, not a broken box. */
+     feed populates asset.images): the brand diamond mark, not a broken box. */
   .g-empty{background:var(--panel);padding:0;flex-direction:column;gap:14px;border:1px dashed var(--line)}
   .g-mark{width:44%;max-width:130px;opacity:.5}
   .g-empty-name{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--g3)}

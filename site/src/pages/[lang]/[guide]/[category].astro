@@ -162,8 +162,8 @@ const tx = {
   {top && (
     <p class="lede">
       {de
-        ? <>Für die meisten ist <b>{top.r!.productName}</b> die richtige Wahl — <b>{top.r!.sqwodScore}/100</b>, der höchste Wert der Kategorie{top.r!.value?.bestPrice ? <>, bei <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.de}</>
-        : <>For most people the <b>{top.r!.productName}</b> is the right buy — <b>{top.r!.sqwodScore}/100</b>, the highest score in this category{top.r!.value?.bestPrice ? <>, at <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.en}</>}
+        ? <>Für die meisten ist <b>{top.r!.productName}</b> die richtige Wahl: <b>{top.r!.sqwodScore}/100</b>, der höchste Wert der Kategorie{top.r!.value?.bestPrice ? <>, bei <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.de}</>
+        : <>For most people the <b>{top.r!.productName}</b> is the right buy: <b>{top.r!.sqwodScore}/100</b>, the highest score in this category{top.r!.value?.bestPrice ? <>, at <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.en}</>}
     </p>
   )}
 
@@ -239,19 +239,19 @@ const tx = {
       ? 'Jeder Sqwod Score ist ein Gesamtwert von 0–100 aus drei veröffentlichten Komponenten:'
       : 'Every Sqwod Score is a 0–100 composite of three published components:'}</p>
     <ul class="weights">
-      <li><b>Crowd Signal — 45%.</b> {de
+      <li><b>Crowd Signal: 45%.</b> {de
         ? 'Echtes Nutzer-Feedback über Händler, App-Stores, Bewertungsplattformen, Reddit und YouTube. Normalisiert, nach Menge und Aktualität gewichtet, Fake-Reviews gefiltert.'
         : 'Real-user feedback across retailers, app stores, review platforms, Reddit and YouTube. Normalised, volume- and recency-weighted, fake-review filtered.'}</li>
-      <li><b>Sqwod Assessment — 40%.</b> {de
+      <li><b>Sqwod Assessment: 40%.</b> {de
         ? 'Unsere gewichtete Scorecard: Leistung, Preis-Leistung, Verarbeitung, Nutzung, Coach-/Betreiber-Eignung, Support.'
         : 'Our weighted scorecard: performance, value, build, experience, coach/operator fit, support.'}</li>
-      <li><b>Value / Deal — 15%.</b> {de
+      <li><b>Value / Deal: 15%.</b> {de
         ? 'Bester Live-Preis gegen den Kategorie-Benchmark plus echte Preishistorie. Abos zählen gegen den Score.'
         : 'Best live price against the category benchmark, plus real price history. Subscriptions weigh against the score.'}</li>
     </ul>
     <p class="note">{de
-      ? 'Alle Teilbewertungen stehen auf jeder Produktseite. Provisionen beeinflussen den Score nie — wir veröffentlichen auch schlechte Werte.'
-      : 'All sub-scores are shown on every product page. Commission never affects the score — we publish low scores too.'}
+      ? 'Alle Teilbewertungen stehen auf jeder Produktseite. Provisionen beeinflussen den Score nie: wir veröffentlichen auch schlechte Werte.'
+      : 'All sub-scores are shown on every product page. Commission never affects the score: we publish low scores too.'}
       {' '}<a href={`/${lang}/verified/methodology/`}>{tx.methodology} →</a></p>
   </section>
 

@@ -55,7 +55,7 @@ const tx = {
   allCats: lang === 'de' ? 'Alle Kategorien' : 'All categories',
   headToHead: lang === 'de' ? 'Top-Direktvergleiche' : 'Top head-to-heads',
 };
-const title = `${cat.label[lang]} — Sqwod Verified`;
+const title = `${cat.label[lang]} | Sqwod Verified`;
 ---
 <Base lang={lang} title={title} description={cat.blurb[lang]} active="verified">
   <div class="crumb"><a href={`/${lang}/verified`}>Sqwod Verified</a> / {cat.label[lang]}</div>
@@ -67,8 +67,8 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
     <a class="guide-cta" href={`/${lang}/${GUIDE_PREFIX[lang]}/${guideFor.slug[lang]}/`}>
       <span class="gc-kick">{lang === 'de' ? 'Kaufberatung' : "Buyer's guide"}</span>
       <span class="gc-title">{lang === 'de'
-        ? `Beste ${guideFor.title.de} ${new Date().getFullYear()} — bewertet und begründet`
-        : `Best ${guideFor.title.en} ${new Date().getFullYear()} — ranked and explained`}</span>
+        ? `Beste ${guideFor.title.de} ${new Date().getFullYear()}: bewertet und begründet`
+        : `Best ${guideFor.title.en} ${new Date().getFullYear()}: ranked and explained`}</span>
       <span class="gc-go">→</span>
     </a>
   )}
@@ -119,8 +119,8 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
   )}
 
   <div class="note" style="margin-top:16px"><b>{t(lang,'verified.howWeRank')}.</b> {lang==='de'
-    ? 'Bewertete Produkte tragen einen Sqwod Score (Crowd 45% · unsere Bewertung 40% · Preis-Leistung 15%). Redaktions-Tipps sind kuratierte Marktführer, die wir noch nicht bewertet haben — ohne Score. „Affiliate" heißt: wir verdienen ggf. über den Link. „Nicht affiliiert" heißt: rein auf Empfehlung gelistet.'
-    : 'Reviewed products carry a Sqwod Score (Crowd 45% · our assessment 40% · Value 15%). Editorial picks are curated category leaders we haven\'t scored yet — no score. "Affiliate" means we may earn from the link. "Not affiliated" means it\'s listed purely on merit.'}</div>
+    ? 'Bewertete Produkte tragen einen Sqwod Score (Crowd 45% · unsere Bewertung 40% · Preis-Leistung 15%). Redaktions-Tipps sind kuratierte Marktführer, die wir noch nicht bewertet haben, ohne Score. „Affiliate" heißt: wir verdienen ggf. über den Link. „Nicht affiliiert" heißt: rein auf Empfehlung gelistet.'
+    : 'Reviewed products carry a Sqwod Score (Crowd 45% · our assessment 40% · Value 15%). Editorial picks are curated category leaders we haven\'t scored yet, no score. "Affiliate" means we may earn from the link. "Not affiliated" means it\'s listed purely on merit.'}</div>
   <p class="disc" style="margin-top:12px">{t(lang,'disclosure')}</p>
   <p style="margin-top:16px"><a class="lp" href={`/${lang}/verified`}>← {tx.allCats}</a></p>
 </Base>
@@ -148,7 +148,7 @@ const title = `${cat.label[lang]} — Sqwod Verified`;
   /* NOTE: global.css sets `.score b { position:absolute; inset:0 }` so the
      number fills and centres itself over the whole badge. This block used to
      rely on flex-column stacking, which absolute positioning takes the number
-     out of — leaving the number and the SCORE label centred on top of each
+     out of: leaving the number and the SCORE label centred on top of each
      other. Both children are therefore positioned explicitly here: the diamond
      and number occupy the top 74px, the label sits beneath it. */
   .score{position:relative;width:74px;height:90px;display:block;text-decoration:none}

@@ -11,28 +11,28 @@ const lang = Astro.params.lang as Lang;
 // redirect) do NOT exist at build time. Both banners are rendered hidden and
 // toggled client-side by the inline script below.
 const c = lang === 'de' ? {
-  title: 'Werde schärfer — in 5 Minuten am Tag',
-  blurb: 'Sqwod Daily: das Business von Fitness und Wellness, werktäglich aufbereitet — Geldbewegungen, die Lektion hinter den News, ein To-do, etwas Unterhaltung. Kostenlos.',
-  perks: ['Werktäglich, zweisprachig (EN & DE)', 'Geldbewegungen, Politik-Radar & Stats', 'Ein umsetzbarer Tipp pro Ausgabe', 'Lesen oder hören — Audio zu jeder Ausgabe'],
+  title: 'Werde schärfer: in 5 Minuten am Tag',
+  blurb: 'Sqwod Daily: das Business von Fitness und Wellness, werktäglich aufbereitet, Geldbewegungen, die Lektion hinter den News, ein To-do, etwas Unterhaltung. Kostenlos.',
+  perks: ['Werktäglich, zweisprachig (EN & DE)', 'Geldbewegungen, Politik-Radar & Stats', 'Ein umsetzbarer Tipp pro Ausgabe', 'Lesen oder hören: Audio zu jeder Ausgabe'],
   email: 'E-Mail-Adresse', cta: 'Kostenlos abonnieren', soon: 'Anmeldung wird in Kürze aktiviert.',
   fine: 'Mit der Anmeldung akzeptierst du unsere Datenschutzbestimmungen. Abmeldung jederzeit.',
-  ok: 'Fast geschafft. Wir haben dir eine Bestätigungsmail geschickt — klick den Link darin, dann bist du dabei.',
-  done: 'Bestätigt. Du bist dabei — die nächste Ausgabe kommt am nächsten Werktag.',
+  ok: 'Fast geschafft. Wir haben dir eine Bestätigungsmail geschickt: klick den Link darin, dann bist du dabei.',
+  done: 'Bestätigt. Du bist dabei: die nächste Ausgabe kommt am nächsten Werktag.',
   expired: 'Dieser Bestätigungslink ist abgelaufen. Trag deine E-Mail nochmal ein, wir schicken dir einen neuen.',
   err: 'Hmm, das hat nicht geklappt. Prüf die E-Mail-Adresse und versuch es nochmal.',
 } : {
   title: 'Get sharper in 5 minutes a day',
   blurb: 'Sqwod Daily: the fitness and wellness industry, decoded every weekday. Money movement, the lesson behind the news, one thing to do, a little fun. Free.',
-  perks: ['Every weekday, bilingual (EN & DE)', 'Money movement, policy watch & stats', 'One actionable takeaway per issue', 'Read it or hear it — audio with every issue'],
+  perks: ['Every weekday, bilingual (EN & DE)', 'Money movement, policy watch & stats', 'One actionable takeaway per issue', 'Read it or hear it: audio with every issue'],
   email: 'Email address', cta: 'Subscribe free', soon: 'Sign-up goes live shortly.',
   fine: 'By subscribing you accept our privacy policy. Unsubscribe anytime.',
-  ok: "Almost there. We've sent you a confirmation email — click the link inside and you're in.",
-  done: "Confirmed. You're in — the next issue lands on the next weekday.",
+  ok: "Almost there. We've sent you a confirmation email: click the link inside and you're in.",
+  done: "Confirmed. You're in: the next issue lands on the next weekday.",
   expired: "That confirmation link has expired. Enter your email again and we'll send a fresh one.",
   err: "Hmm, that didn't go through. Check the email address and try again.",
 };
 ---
-<Base lang={lang} title={c.title + ' — Sqwod'} description={c.blurb} active="">
+<Base lang={lang} title={c.title + ' | Sqwod'} description={c.blurb} active="">
   <div class="sub-hero">
     <div class="sh-copy">
       <h1>{c.title}</h1>

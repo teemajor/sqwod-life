@@ -102,7 +102,7 @@ const csv = csvRows.join('\n');
 const csvHref = csv ? `data:text/csv;charset=utf-8,${encodeURIComponent(csv)}` : '';
 for (const c of (d.charts ?? [])) {
   csvRows.push('');
-  csvRows.push(`${c.label}${c.unit ? ` (${c.unit})` : ''}${c.source ? ` — ${c.source}` : ''}`);
+  csvRows.push(`${c.label}${c.unit ? ` (${c.unit})` : ''}${c.source ? `: ${c.source}` : ''}`);
   csvRows.push(['', ...c.series.map((x) => x.name || c.unit || 'value')].map(csvCell).join(','));
   c.categories.forEach((cat, i) => csvRows.push([cat, ...c.series.map((x) => x.points[i] ?? '')].map(csvCell).join(',')));
 }

@@ -7,16 +7,16 @@ export function getStaticPaths() {
 }
 const lang = Astro.params.lang as Lang;
 const c = lang === 'de' ? {
-  title: 'Danke — wir haben deine Mitteilung erhalten',
+  title: 'Danke: wir haben deine Mitteilung erhalten',
   body: 'Unser Team prüft die Einreichung auf Qualität und Richtlinie. Du bekommst eine E-Mail mit dem Status und einem Vorschau-Link. Bei Premium-Einreichungen erscheint die Mitteilung nach Zahlungseingang.',
   back: 'Zurück zur Presse', another: 'Weitere einreichen',
 } : {
-  title: 'Thanks — we’ve got your release',
+  title: 'Thanks: we’ve got your release',
   body: 'Our team reviews submissions for quality and policy. You’ll get an email with the status and a preview link. Premium releases publish once payment clears.',
   back: 'Back to Press', another: 'Submit another',
 };
 ---
-<Base lang={lang} title={c.title + ' — Sqwod'} description={c.body} active="press">
+<Base lang={lang} title={c.title + ' | Sqwod'} description={c.body} active="press">
   <div class="crumb"><a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a></div>
   <h1 style="margin:0 0 10px">{c.title}</h1>
   <p class="verdict" style="max-width:60ch">{c.body}</p>

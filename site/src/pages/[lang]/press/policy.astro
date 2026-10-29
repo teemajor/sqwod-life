@@ -9,7 +9,7 @@ const lang = Astro.params.lang as Lang;
 
 const c = lang === 'de' ? {
   title: 'Inhalts-Richtlinie für Pressemitteilungen',
-  intro: 'Wir veröffentlichen Mitteilungen, die für die Fitness- & Wellness-Branche relevant und für unsere Leser:innen — Coaches, Studio-Gründer, Operator, Investoren — wertvoll sind. Einreichung bedeutet keine garantierte Veröffentlichung; wir kuratieren.',
+  intro: 'Wir veröffentlichen Mitteilungen, die für die Fitness- & Wellness-Branche relevant und für unsere Leser:innen (Coaches, Studio-Gründer, Operator, Investoren) wertvoll sind. Einreichung bedeutet keine garantierte Veröffentlichung; wir kuratieren.',
   okH: 'Was wir veröffentlichen',
   ok: ['Branchenrelevante Neuigkeiten: Launches, Finanzierungen, Partnerschaften, Personalien, Studien.', 'Faktenbasierte, nachprüfbare Aussagen mit Quelle, wo nötig.', 'Klar erkennbarer Absender und Ansprechpartner.'],
   noH: 'Was wir ablehnen',
@@ -19,7 +19,7 @@ const c = lang === 'de' ? {
   contact: 'Fragen? ',
 } : {
   title: 'Press release content policy',
-  intro: 'We publish releases that are relevant to the fitness & wellness industry and valuable to our readers — coaches, studio founders, operators, investors. Submitting does not guarantee publication; we curate.',
+  intro: 'We publish releases that are relevant to the fitness & wellness industry and valuable to our readers: coaches, studio founders, operators, investors. Submitting does not guarantee publication; we curate.',
   okH: 'What we publish',
   ok: ['Industry-relevant news: launches, funding, partnerships, key hires, studies.', 'Factual, verifiable claims, with a source where needed.', 'A clearly identified sender and contact.'],
   noH: 'What we reject',
@@ -29,7 +29,7 @@ const c = lang === 'de' ? {
   contact: 'Questions? ',
 };
 ---
-<Base lang={lang} title={c.title + ' — Sqwod'} description={c.intro} active="press">
+<Base lang={lang} title={c.title + ' | Sqwod'} description={c.intro} active="press">
   <div class="crumb"><a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a> · {c.title}</div>
   <h1 style="margin:0 0 10px">{c.title}</h1>
   <p class="verdict">{c.intro}</p>

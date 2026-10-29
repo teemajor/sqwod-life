@@ -45,16 +45,16 @@ const items = [A, B].map((d) => ({ name: d.productName, slug: d.urlSlug, score: 
 
 const T = lang === 'de' ? {
   vs: 'vs', verdict: 'Sqwod-Urteil', pick: 'Unser Sieger', takes: 'gewinnt', choose: 'Wähle', ifb: 'wenn du',
-  score: 'Score', from: 'ab', read: 'Bewertung lesen →', visit: 'Zur Website ↗', all: 'Alle', both: 'Beide sind stark — die Wahl hängt davon ab, was du priorisierst:',
+  score: 'Score', from: 'ab', read: 'Bewertung lesen →', visit: 'Zur Website ↗', all: 'Alle', both: 'Beide sind stark: die Wahl hängt davon ab, was du priorisierst:',
 } : {
   vs: 'vs', verdict: 'Sqwod verdict', pick: 'Our pick', takes: 'takes it', choose: 'Choose', ifb: 'if you',
-  score: 'Score', from: 'from', read: 'Read review →', visit: 'Visit site ↗', all: 'All', both: 'Both are strong — the call comes down to what you prioritise:',
+  score: 'Score', from: 'from', read: 'Read review →', visit: 'Visit site ↗', all: 'All', both: 'Both are strong: the call comes down to what you prioritise:',
 };
 
-const title = `${A.productName} ${T.vs} ${B.productName} — ${lang === 'de' ? 'welches gewinnt?' : 'which wins?'} | Sqwod Verified`;
+const title = `${A.productName} ${T.vs} ${B.productName}: ${lang === 'de' ? 'welches gewinnt?' : 'which wins?'} | Sqwod Verified`;
 const desc = lang === 'de'
-  ? `${A.productName} (Sqwod Score ${A.sqwodScore}) im direkten Vergleich mit ${B.productName} (${B.sqwodScore}) — Specs, Preis und für wen sich welches lohnt.`
-  : `${A.productName} (Sqwod Score ${A.sqwodScore}) head-to-head with ${B.productName} (${B.sqwodScore}) — specs, price, and who each is for.`;
+  ? `${A.productName} (Sqwod Score ${A.sqwodScore}) im direkten Vergleich mit ${B.productName} (${B.sqwodScore}): Specs, Preis und für wen sich welches lohnt.`
+  : `${A.productName} (Sqwod Score ${A.sqwodScore}) head-to-head with ${B.productName} (${B.sqwodScore}): specs, price, and who each is for.`;
 
 const card = (d: typeof A, isWin: boolean) => ({ d, isWin, pick: pickOf(d.urlSlug) });
 const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
@@ -66,12 +66,12 @@ const cards = [card(A, !tie && winner === A), card(B, !tie && winner === B)];
   <div class="verdict">
     <div class="vlabel">{T.verdict}</div>
     {tie
-      ? <p class="vhead"><b>{lang==='de'?'Gleichstand':'Dead heat'}</b> — {winner.sqwodScore} {T.vs} {loser.sqwodScore}. {lang==='de'?'Der Use-Case entscheidet.':'Your use case is the tiebreaker.'}</p>
-      : <p class="vhead"><b>{T.pick}: {winner.productName}</b> {T.takes} — {winner.sqwodScore} {T.vs} {loser.sqwodScore}.</p>}
+      ? <p class="vhead"><b>{lang==='de'?'Gleichstand':'Dead heat'}</b>: {winner.sqwodScore} {T.vs} {loser.sqwodScore}. {lang==='de'?'Der Use-Case entscheidet.':'Your use case is the tiebreaker.'}</p>
+      : <p class="vhead"><b>{T.pick}: {winner.productName}</b> {T.takes}: {winner.sqwodScore} {T.vs} {loser.sqwodScore}.</p>}
     <p class="vbody">{T.both}</p>
     <ul class="pick-if">
-      <li><b>{A.productName}</b> — {A.whoFor?.buy}</li>
-      <li><b>{B.productName}</b> — {B.whoFor?.buy}</li>
+      <li><b>{A.productName}</b>: {A.whoFor?.buy}</li>
+      <li><b>{B.productName}</b>: {B.whoFor?.buy}</li>
     </ul>
   </div>
 

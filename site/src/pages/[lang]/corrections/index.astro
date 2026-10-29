@@ -11,19 +11,19 @@ const entries = (await getCollection('corrections', (c) => c.data.lang === lang)
 const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-US', { year: 'numeric', month: 'short', day: 'numeric' });
 const T = lang === 'de' ? {
   crumb: 'Standards / Korrekturen', h1: 'Korrekturen & Klarstellungen',
-  policy: 'Wir behandeln jede Zahl wie eine Quelle: belegt, verlinkt, überprüfbar. Wenn wir einen Fehler machen, korrigieren wir ihn sichtbar und führen ihn hier — wie eine seriöse Redaktion. Jede Korrektur nennt, was wir geschrieben hatten, was jetzt stimmt und warum.',
+  policy: 'Wir behandeln jede Zahl wie eine Quelle: belegt, verlinkt, überprüfbar. Wenn wir einen Fehler machen, korrigieren wir ihn sichtbar und führen ihn hier: wie eine seriöse Redaktion. Jede Korrektur nennt, was wir geschrieben hatten, was jetzt stimmt und warum.',
   none: 'Noch keine Korrekturen. Wenn wir einen Fehler machen, steht er hier.',
   was: 'Vorher', now: 'Jetzt', why: 'Grund', source: 'Quelle',
   correction: 'Korrektur', clarification: 'Klarstellung', read: 'Zum Beitrag',
 } : {
   crumb: 'Standards / Corrections', h1: 'Corrections & Clarifications',
-  policy: 'We treat every number like a source: cited, linked, checkable. When we get something wrong, we fix it in the open and log it here — the way a serious newsroom does. Each entry says what we published, what is correct now, and why.',
+  policy: 'We treat every number like a source: cited, linked, checkable. When we get something wrong, we fix it in the open and log it here: the way a serious newsroom does. Each entry says what we published, what is correct now, and why.',
   none: 'No corrections yet. If we get something wrong, it will appear here.',
   was: 'We said', now: 'Now', why: 'Why', source: 'Source',
   correction: 'Correction', clarification: 'Clarification', read: 'Read the piece',
 };
 ---
-<Base lang={lang} title={`${T.h1} — sqwod.life`} active="about">
+<Base lang={lang} title={`${T.h1} | sqwod.life`} active="about">
   <div class="measure">
     <div class="crumb">{T.crumb}</div>
     <h1>{T.h1}</h1>

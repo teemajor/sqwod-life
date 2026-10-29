@@ -10,33 +10,33 @@ const grades = [
     en: 'Backed by multiple meta-analyses or randomised controlled trials pointing the same way. We state it plainly.',
     de: 'Durch mehrere Meta-Analysen oder randomisierte kontrollierte Studien in dieselbe Richtung gestützt. Wir sagen es klar.' } },
   { n: { en: 'Moderate', de: 'Moderat' }, d: {
-    en: 'Real evidence with caveats — a single meta-analysis, mixed effect sizes, or moderate GRADE certainty. We flag the limits.',
-    de: 'Echte Evidenz mit Einschränkungen — eine einzelne Meta-Analyse, gemischte Effektstärken oder moderate GRADE-Sicherheit. Wir benennen die Grenzen.' } },
+    en: 'Real evidence with caveats: a single meta-analysis, mixed effect sizes, or moderate GRADE certainty. We flag the limits.',
+    de: 'Echte Evidenz mit Einschränkungen: eine einzelne Meta-Analyse, gemischte Effektstärken oder moderate GRADE-Sicherheit. Wir benennen die Grenzen.' } },
   { n: { en: 'Early', de: 'Früh' }, d: {
-    en: 'Promising but unsettled — small studies, animal or preclinical work, or open questions in the trial registry. Framed as “being studied,” never as a promise.',
-    de: 'Vielversprechend, aber ungeklärt — kleine Studien, Tier- oder präklinische Arbeit oder offene Fragen im Studienregister. Als „wird untersucht“ gerahmt, nie als Versprechen.' } },
+    en: 'Promising but unsettled: small studies, animal or preclinical work, or open questions in the trial registry. Framed as “being studied,” never as a promise.',
+    de: 'Vielversprechend, aber ungeklärt: kleine Studien, Tier- oder präklinische Arbeit oder offene Fragen im Studienregister. Als „wird untersucht“ gerahmt, nie als Versprechen.' } },
 ];
 
 // Which sources we trust, in order.
 const tiers = [
-  { n: { en: 'Tier 1 — cite freely', de: 'Stufe 1 — frei zitieren' }, d: {
+  { n: { en: 'Tier 1: cite freely', de: 'Stufe 1: frei zitieren' }, d: {
     en: 'Meta-analyses and systematic reviews of randomised controlled trials, and large RCTs. The strongest human evidence.',
     de: 'Meta-Analysen und systematische Reviews randomisierter kontrollierter Studien sowie große RCTs. Die stärkste Evidenz am Menschen.' } },
-  { n: { en: 'Tier 2 — cite with context', de: 'Stufe 2 — mit Kontext zitieren' }, d: {
+  { n: { en: 'Tier 2: cite with context', de: 'Stufe 2, mit Kontext zitieren' }, d: {
     en: 'Individual RCTs, observational and cohort studies. Useful, but we name the study design and its limits.',
     de: 'Einzelne RCTs, Beobachtungs- und Kohortenstudien. Nützlich, aber wir benennen Studiendesign und Grenzen.' } },
-  { n: { en: 'Tier 3 — signal, not proof', de: 'Stufe 3 — Signal, kein Beweis' }, d: {
-    en: 'Preprints, animal/in-vitro work, and the clinical trial registry (ClinicalTrials.gov). We use these to show what’s coming — clearly labelled as not yet proven.',
-    de: 'Preprints, Tier-/In-vitro-Arbeit und das klinische Studienregister (ClinicalTrials.gov). Damit zeigen wir, was kommt — klar als noch nicht bewiesen gekennzeichnet.' } },
+  { n: { en: 'Tier 3: signal, not proof', de: 'Stufe 3: Signal, kein Beweis' }, d: {
+    en: 'Preprints, animal/in-vitro work, and the clinical trial registry (ClinicalTrials.gov). We use these to show what’s coming: clearly labelled as not yet proven.',
+    de: 'Preprints, Tier-/In-vitro-Arbeit und das klinische Studienregister (ClinicalTrials.gov). Damit zeigen wir, was kommt: klar als noch nicht bewiesen gekennzeichnet.' } },
 ];
 ---
-<Base lang={lang} title="Methodology — Sqwod Evidence" active="evidence">
+<Base lang={lang} title="Methodology | Sqwod Evidence" active="evidence">
   <div class="measure">
     <div class="crumb">Sqwod Evidence / {lang==='de'?'Methodik':'Methodology'}</div>
     <h1>{lang==='de'?'Wie wir die Evidenz bewerten':'How we grade the evidence'}</h1>
     <p class="sub">{lang==='de'
-      ? 'Jeder Sqwod-Evidence-Beitrag folgt derselben Regel: jede Aussage an eine benannte, verlinkte Studie geknüpft — und nach Stärke bewertet. Wo die Evidenz stark ist, sagen wir das; wo sie dünn ist, ebenfalls.'
-      : 'Every Sqwod Evidence briefing follows one rule: every claim tied to a named, linked study — and graded for strength. Where evidence is strong we say so; where it’s thin, we say that too.'}</p>
+      ? 'Jeder Sqwod-Evidence-Beitrag folgt derselben Regel: jede Aussage an eine benannte, verlinkte Studie geknüpft, und nach Stärke bewertet. Wo die Evidenz stark ist, sagen wir das; wo sie dünn ist, ebenfalls.'
+      : 'Every Sqwod Evidence briefing follows one rule: every claim tied to a named, linked study, and graded for strength. Where evidence is strong we say so; where it’s thin, we say that too.'}</p>
 
     <section class="block" style="border-top:1px solid var(--line);margin-top:18px">
       <p class="kick">{lang==='de'?'Evidenz-Grade':'Evidence grades'}</p>

@@ -322,7 +322,7 @@ function pickAffiliateRec(lang) {
   const slug = get('urlSlug') || files[0].replace(`.${lang}.md`, '');
   return {
     label: 'Gear', affiliate: true, url: `/${lang}/verified/${slug}`,
-    text: lang === 'de' ? `${product} — unser Urteil + bester Preis.` : `${product} — our verdict + best price.`,
+    text: lang === 'de' ? `${product}: unser Urteil + bester Preis.` : `${product}: our verdict + best price.`,
   };
 }
 
@@ -387,8 +387,8 @@ function buildSections(lead, lang, items) {
   s.play = {
     title: 'Sqwod Readiness Tap',
     prompt: lang === 'de'
-      ? 'Wie wach bist du heute? 30-Sekunden-Reaktionstest — derselbe PVT, mit dem Schlafforscher Wachheit messen.'
-      : 'How sharp are you today? 30-second reaction test — the same PVT sleep scientists use to measure alertness.',
+      ? 'Wie wach bist du heute? 30-Sekunden-Reaktionstest: derselbe PVT, mit dem Schlafforscher Wachheit messen.'
+      : 'How sharp are you today? 30-second reaction test: the same PVT sleep scientists use to measure alertness.',
     url: `/${lang}/play`,
   };
   return s;
