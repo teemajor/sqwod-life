@@ -256,6 +256,38 @@
     "peloton-acquisition-2026-06": {
       "status": "approved",
       "why": "backfill review 2026-10-27"
+    },
+    "fitlab-shutdown-2026-10": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
+    },
+    "elite-shutdown-2026-09": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
+    },
+    "mad-shutdown-2026-08": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
+    },
+    "flex-shutdown-2026-07": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
+    },
+    "kraftwerk-shutdown-2026-05": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
+    },
+    "escape-shutdown-2026-04": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
+    },
+    "fusion-shutdown-2026-04": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
+    },
+    "get-shutdown-2026-02": {
+      "status": "approved",
+      "why": "closure research approved by Tee 2026-10-29"
     }
   },
   "block": []
