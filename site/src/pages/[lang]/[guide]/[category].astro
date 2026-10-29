@@ -298,8 +298,8 @@ const tx = {
           </ul>
         ) : null}
         <div class="pc">
-          <div><h4>{tx.pros}</h4><ul>{r!.pros.slice(0, 3).map((p) => <li>{p}</li>)}</ul></div>
-          <div><h4>{tx.cons}</h4><ul>{r!.cons.slice(0, 2).map((c) => <li>{c}</li>)}</ul></div>
+          <div class="pros"><h4>{tx.pros}</h4><ul>{r!.pros.slice(0, 3).map((p) => <li>{p}</li>)}</ul></div>
+          <div class="cons"><h4>{tx.cons}</h4><ul>{r!.cons.slice(0, 2).map((c) => <li>{c}</li>)}</ul></div>
         </div>
         {r!.proRead
           ? <p class="who pro"><b>{lang==='de'?'Für Kund:innen':'For clients'}</b> {r!.proRead.clients} <b>{lang==='de'?'Fürs Studio':'For the studio'}</b> {r!.proRead.studio}</p>
@@ -364,7 +364,7 @@ const tx = {
   .verdict{margin:6px 0 12px}
   .tp-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
   .tp-cta{align-items:center}
-  .tp-cta a{display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box;padding-top:0;padding-bottom:0}
+  .tp-cta a{display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box;padding-top:0;padding-bottom:0;margin-top:0}
   .ghost{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:10px;font-size:13px;font-weight:600}
   .tablewrap{overflow-x:auto}
   table.glance{width:100%;min-width:560px;border-collapse:collapse;font-size:14px}
@@ -392,12 +392,18 @@ const tx = {
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
   ul.crit li{display:flex;justify-content:space-between;font-size:12.5px;
     border:1px solid var(--line);border-radius:8px;padding:6px 10px}
-  .pc{display:grid;gap:14px;margin-bottom:10px}
-  @media(min-width:760px){ .pc{grid-template-columns:1fr 1fr} }
+  /* pros/cons: same round +/– markers as the review page (verified/[slug].astro), so a pro
+     and a con read apart before the words do. Stacked on phones, side by side from 760px. */
+  .pc{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:14px}
+  @media(min-width:760px){ .pc{grid-template-columns:1fr 1fr;gap:20px} }
   .pc h4{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--g4)}
-  .pc ul{margin:0;padding-left:16px;font-size:13.5px}
-  .pc li{margin-bottom:4px}
-  .who{font-size:13.5px;color:var(--g3);margin:0 0 12px}
+  .pc ul{margin:0;padding:0;list-style:none;font-size:14px;line-height:1.5;color:var(--g1)}
+  .pc li{position:relative;margin:0;padding:6px 0 6px 30px}
+  .pc li::before{position:absolute;left:0;top:6px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font:700 12px/1 var(--sans)}
+  .pc .pros li::before{content:'+';background:var(--accent);color:var(--accent-ink)}
+  .pc .cons li::before{content:'–';background:transparent;color:var(--g2);box-shadow:inset 0 0 0 1.5px var(--g3)}
+  .who{font-size:13.5px;line-height:1.55;color:var(--g2);margin:0 0 12px}
+  .who b{color:var(--accent)}
   .operator{background:var(--panel);border-radius:14px;padding:18px;border:1px solid var(--line)}
   details.faq{border-bottom:1px solid var(--line);padding:12px 0}
   details.faq summary{cursor:pointer;font-weight:700;font-size:15px}
