@@ -13,7 +13,7 @@ publishedAt: 2026-06-20
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-verdict: "The best-value everyday tracker — accurate sensors, ECG and Google smarts for under €100. Just know the best insights sit behind Fitbit Premium."
+verdict: "The best-value everyday tracker: accurate sensors, ECG and Google smarts for under €100. Just know the best insights sit behind Fitbit Premium."
 sqwodScore: 82
 confidence: High
 crowd:
@@ -63,6 +63,6 @@ asset:
   credit: "Product images via Amazon"
 ---
 
-The Charge 6 is the everyday-tracker value pick: accurate heart-rate and health sensors, ECG, built-in GPS and — new for this generation — Google Maps and Wallet on the wrist, for around €130. Multiple 2026 round-ups name it the best overall tracker.
+The Charge 6 is the everyday-tracker value pick: accurate heart-rate and health sensors, ECG, built-in GPS and (new for this generation) Google Maps and Wallet on the wrist, for around €130. Multiple 2026 round-ups name it the best overall tracker.
 
 The catch coaches should flag to clients: Fitbit's most useful analysis (the deeper Sleep Profile, readiness, detailed trends) lives behind Fitbit Premium. As a hardware buy it's excellent value; budget for the subscription if you want the full picture.

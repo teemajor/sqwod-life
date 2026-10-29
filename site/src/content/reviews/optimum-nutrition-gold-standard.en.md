@@ -42,7 +42,7 @@ value:
 pros:
   - "Whey isolate as primary source with a strong ~24 g protein per serving"
   - "Renowned easy mixing with almost no clumping"
-  - "Informed-Choice / banned-substance tested — safe for tested athletes"
+  - "Informed-Choice / banned-substance tested: safe for tested athletes"
   - "Huge flavour range and one of the most-reviewed proteins in the world"
 cons:
   - "Premium price per kg versus generic German whey brands"
@@ -59,6 +59,6 @@ asset:
 tags: ["supplements", "whey", "protein"]
 ---
 
-Gold Standard 100% Whey is the reference point most other proteins get measured against. It leads with whey protein isolate, delivers around 24 g of protein per serving, and mixes into water or milk with minimal effort — the two things reviewers praise most across tens of thousands of ratings. It is also Informed-Choice / banned-substance tested, which matters if you compete.
+Gold Standard 100% Whey is the reference point most other proteins get measured against. It leads with whey protein isolate, delivers around 24 g of protein per serving, and mixes into water or milk with minimal effort: the two things reviewers praise most across tens of thousands of ratings. It is also Informed-Choice / banned-substance tested, which matters if you compete.
 
 The trade-off is price: at roughly €48 per kilo (2.27 kg tub, ON's German store) it sits well above generic German whey brands, and the protein percentage per 100 g trails a pure isolate. For most lifters that premium buys consistency, safety testing and a flavour you will actually keep drinking, which is why it remains a default recommendation.

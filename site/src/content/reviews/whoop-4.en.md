@@ -13,7 +13,7 @@ publishedAt: 2026-06-09
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-verdict: "The coach's strain-and-recovery band — screenless, always-on, built for athletes who train by readiness. The subscription model is the commitment."
+verdict: "The coach's strain-and-recovery band: screenless, always-on, built for athletes who train by readiness. The subscription model is the commitment."
 sqwodScore: 82
 confidence: High
 crowd:
@@ -44,7 +44,7 @@ value:
   history: [78, 74, 80, 70, 66, 60, 64, 62, 70, 66, 62, 64]
 pros:
   - "Best-in-class strain + recovery for athletes"
-  - "Screenless — zero distraction, wear anywhere"
+  - "Screenless: zero distraction, wear anywhere"
   - "Deep coaching dashboards"
 cons:
   - "Membership-only; no buy-once option"
@@ -66,4 +66,4 @@ tags: ["wearables", "recovery", "strain"]
 
 Whoop is the coach's band: no screen, no notifications, just continuous strain and recovery scoring that's genuinely useful for programming load. For performance coaches it's the most "in the system" wearable here.
 
-The trade is the model — it's membership-only at ~€30/mo, which is why Value sits at 72 despite strong crowd and assessment numbers.
+The trade is the model: it's membership-only at ~€30/mo, which is why Value sits at 72 despite strong crowd and assessment numbers.

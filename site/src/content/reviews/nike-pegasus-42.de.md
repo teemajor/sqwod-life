@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Aktuelles Modell (Pegasus 42, 139,99 €; Peg 41 reduziert). Amazon.de ASIN B0GF685C7R (Herren). Verkäufer+Bild per SiteStripe prüfen. Vorerst: Marke direkt + Fallback.
-verdict: "Ein zuverlässiger, gut verarbeiteter Neutral-Alltagsschuh, der Komfort und Haltbarkeit trifft, aber durchschnittlich läuft — ein sicheres Arbeitstier, kein aufregendes."
+verdict: "Ein zuverlässiger, gut verarbeiteter Neutral-Alltagsschuh, der Komfort und Haltbarkeit trifft, aber durchschnittlich läuft: ein sicheres Arbeitstier, kein aufregendes."
 sqwodScore: 81
 confidence: Medium
 crowd:
@@ -45,7 +45,7 @@ pros:
   - "Gute Preis-Leistung und Verarbeitung für die Klasse"
   - "Vielseitig genug auch für Freizeit/Gehen"
 cons:
-  - "Mittelsohle wirkt flach — das neue Air Zoom bringt wenig"
+  - "Mittelsohle wirkt flach: das neue Air Zoom bringt wenig"
   - "Am besten für lockere Läufe; wenig Vielseitigkeit fürs Tempo"
 whoFor:
   buy: "Du coachst Anfänger:innen bis Fortgeschrittene, die einen zuverlässigen, gedämpften Neutralschuh für lockere Kilometer wollen."
@@ -60,4 +60,4 @@ tags: ["apparel", "running", "shoes"]
 
 Der Pegasus ist Nikes Arbeitstier, und der 42 hält die Reihe verlässlich: ein bequemer, langlebiger, geräumiger Neutralschuh, den viele Tester als besten Peg der letzten Jahre bezeichnen. Für lockere Alltags-Kilometer und Kund:innen, die einen vertrauten Namen wollen, liefert er.
 
-Gewöhnlich bleibt er beim Laufgefühl — das durchgehende Air Zoom und die ReactX-Dämpfung wirken eher durchschnittlich als lebendig, weshalb er sich bei entspannten Läufen am wohlsten fühlt. Eine sichere Empfehlung, keine aufregende.
+Gewöhnlich bleibt er beim Laufgefühl: das durchgehende Air Zoom und die ReactX-Dämpfung wirken eher durchschnittlich als lebendig, weshalb er sich bei entspannten Läufen am wohlsten fühlt. Eine sichere Empfehlung, keine aufregende.

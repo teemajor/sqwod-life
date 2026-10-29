@@ -13,7 +13,7 @@ publishedAt: 2026-06-20
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-verdict: "The best-value entry into Garmin's training ecosystem — bright AMOLED, ~11-day battery, and the metrics that matter, without the €500 price."
+verdict: "The best-value entry into Garmin's training ecosystem: bright AMOLED, ~11-day battery, and the metrics that matter, without the €500 price."
 sqwodScore: 86
 confidence: High
 crowd:
@@ -62,6 +62,6 @@ asset:
   credit: "Product images via Amazon"
 ---
 
-The Forerunner 165 is the value sweet spot of Garmin's lineup: a bright AMOLED face, around 11 days of battery, and the training-load, recovery and VO2 metrics that actually inform programming — at roughly half the price of the 265/965.
+The Forerunner 165 is the value sweet spot of Garmin's lineup: a bright AMOLED face, around 11 days of battery, and the training-load, recovery and VO2 metrics that actually inform programming, at roughly half the price of the 265/965.
 
-For a coach kitting out clients or recommending a first "real" training watch, this is the easy pick. The trade-offs are the omissions — no offline maps, no multiband GPS — which only matter for trail and ultra use. For everyone else, it's the most watch-per-euro Garmin makes.
+For a coach kitting out clients or recommending a first "real" training watch, this is the easy pick. The trade-offs are the omissions (no offline maps, no multiband GPS), which only matter for trail and ultra use. For everyone else, it's the most watch-per-euro Garmin makes.

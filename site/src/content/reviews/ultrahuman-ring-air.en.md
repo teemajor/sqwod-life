@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC/Amazon.de. Verify Amazon seller+image via SiteStripe before wiring Amazon link (ASIN B0CHF6BZ9H, avoid renewed B0FKT4FMQM). For now: brand-direct + fallback.
-verdict: "An accurate, feather-light recovery ring with a standout metabolic-health angle — and, unlike Oura, no subscription. Softer workout tracking is the trade."
+verdict: "An accurate, feather-light recovery ring with a standout metabolic-health angle, and, unlike Oura, no subscription. Softer workout tracking is the trade."
 sqwodScore: 82
 confidence: Medium
 crowd:
@@ -40,15 +40,15 @@ value:
   bestPrice: 234.53
   currency: EUR
 pros:
-  - "Subscription-free — one-time purchase unlocks all data (vs Oura’s paywall)"
+  - "Subscription-free: one-time purchase unlocks all data (vs Oura’s paywall)"
   - "Excellent, accurate sleep and recovery tracking"
   - "Very light (2.4–3.6 g), comfortable all-day and all-night wear"
-  - "Unique metabolic ecosystem — optional M1 glucose sync + PowerPlugs app store"
+  - "Unique metabolic ecosystem: optional M1 glucose sync + PowerPlugs app store"
 cons:
   - "Weaker automatic workout tracking than a wrist wearable"
   - "App polish and ecosystem are younger than Oura’s"
 whoFor:
-  buy: "You want continuous sleep, recovery and HRV data — with an optional metabolic angle — without locking clients into a monthly subscription."
+  buy: "You want continuous sleep, recovery and HRV data (with an optional metabolic angle) without locking clients into a monthly subscription."
   skip: "You need precise gym/strength workout tracking or the most refined app experience."
 asset:
   type: images
@@ -58,6 +58,6 @@ asset:
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 
-The Ring AIR’s pitch is simple: Oura-class sleep and recovery accuracy in a lighter titanium ring, with no subscription — a one-time purchase unlocks everything. For a coach who hates recurring fees and wants clean recovery data, that alone makes it the value smart ring.
+The Ring AIR’s pitch is simple: Oura-class sleep and recovery accuracy in a lighter titanium ring, with no subscription, a one-time purchase unlocks everything. For a coach who hates recurring fees and wants clean recovery data, that alone makes it the value smart ring.
 
 The extras are where it gets interesting: an optional M1 glucose patch and an app store of PowerPlugs give it a metabolic-coaching angle no rival matches. The trade-offs are softer automatic workout tracking and an app that is still maturing next to Oura’s.

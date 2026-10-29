@@ -13,7 +13,7 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-verdict: "The most effective sleep-temperature system, now with a hydro-powered blanket for full-body cooling, built-in audio and a zero-gravity base. It works — but €3,299+ and a mandatory Autopilot subscription make it a serious commitment."
+verdict: "The most effective sleep-temperature system, now with a hydro-powered blanket for full-body cooling, built-in audio and a zero-gravity base. It works, but €3,299+ and a mandatory Autopilot subscription make it a serious commitment."
 sqwodScore: 79
 confidence: High
 crowd:
@@ -40,15 +40,15 @@ value:
   currency: EUR
   subscription: "Autopilot €199/yr (required)"
 pros:
-  - "Hydro-powered blanket — full-body cooling, ~2× more temperature control"
+  - "Hydro-powered blanket: full-body cooling, ~2× more temperature control"
   - "Wearable-free HR, HRV, respiration & sleep stages"
-  - "Low upkeep — water tank refilled ~3× a year"
+  - "Low upkeep: water tank refilled ~3× a year"
 cons:
   - "€3,299+ upfront plus a mandatory Autopilot subscription"
   - "Setup can be fiddly; controls are app-dependent"
   - "Some durability and connectivity complaints"
 whoFor:
-  buy: "You'll invest in sleep quality and want automatic, dual-zone temperature that genuinely improves recovery — no wearable required."
+  buy: "You'll invest in sleep quality and want automatic, dual-zone temperature that genuinely improves recovery, no wearable required."
   skip: "You want a one-time purchase, or you can't justify €3,299+ plus a yearly subscription."
 asset:
   type: images
@@ -61,6 +61,6 @@ successor:
 tags: ["sleep", "recovery", "sleep-tech"]
 ---
 
-The Eight Sleep Pod 5 (top trim: Pod 5 Ultra) is the successor to the Pod 4, and it pushes the same core idea further: automatic, dual-zone bed temperature that tracks heart rate, HRV, respiration and sleep stages without a wearable. New this generation are a hydro-powered "blanket" layer for full-body — not just surface — cooling, integrated surround-sound audio, a zero-gravity adjustable base on the Ultra, and predictive health sensing that flags possible illness from overnight anomalies.
+The Eight Sleep Pod 5 (top trim: Pod 5 Ultra) is the successor to the Pod 4, and it pushes the same core idea further: automatic, dual-zone bed temperature that tracks heart rate, HRV, respiration and sleep stages without a wearable. New this generation are a hydro-powered "blanket" layer for full-body (not just surface) cooling, integrated surround-sound audio, a zero-gravity adjustable base on the Ultra, and predictive health sensing that flags possible illness from overnight anomalies.
 
-It genuinely works — experts rate the effectiveness highly (Sleep Foundation 8.9/10) — but the economics are the story. The base Pod 5 Cover is €3,299 and the Autopilot subscription is required, which is what keeps the value component low even as the effectiveness scores top the field.
+It genuinely works (experts rate the effectiveness highly (Sleep Foundation 8.9/10)) but the economics are the story. The base Pod 5 Cover is €3,299 and the Autopilot subscription is required, which is what keeps the value component low even as the effectiveness scores top the field.

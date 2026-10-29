@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Footwear = size/colour-locked ASINs, often 3rd-party/imports — kept brand-direct (hoka.com DE). Amazon rep ASIN B0DMTKRN13 if a clean brand/Amazon-sold listing appears. Street ~€110.
-verdict: "A plusher, more protective but heavier Clifton — an excellent max-cushion easy-day cruiser, not a fast shoe."
+verdict: "A plusher, more protective but heavier Clifton: an excellent max-cushion easy-day cruiser, not a fast shoe."
 sqwodScore: 83
 confidence: Medium
 crowd:
@@ -47,11 +47,11 @@ pros:
   - "True-to-size, smooth MetaRocker turnover for easy miles"
 cons:
   - "~10% heavier than the Clifton 9 (~278 g)"
-  - "Dated CMEVA foam feels firm and lacks liveliness — no pop for tempo"
+  - "Dated CMEVA foam feels firm and lacks liveliness, no pop for tempo"
   - "Some testers report big-toe rubbing"
 whoFor:
   buy: "You coach easy-day and recovery clients who want maximum, protective cushioning in a stable neutral daily trainer."
-  skip: "You want a lightweight, springy shoe for tempo or faster paces — the firm EVA and weight make it dull."
+  skip: "You want a lightweight, springy shoe for tempo or faster paces: the firm EVA and weight make it dull."
 asset:
   type: images
   images:
@@ -64,6 +64,6 @@ successor:
 tags: ["apparel", "running", "shoes"]
 ---
 
-The Clifton is HOKA’s cornerstone daily trainer, and the 10 leans into protection: max cushioning, a stable ride, a roomier knit upper and a durable outsole that soak up easy miles. Reviewers land it around 88/100 and 4.5 stars — for a forgiving recovery-day shoe, it is a safe recommendation.
+The Clifton is HOKA’s cornerstone daily trainer, and the 10 leans into protection: max cushioning, a stable ride, a roomier knit upper and a durable outsole that soak up easy miles. Reviewers land it around 88/100 and 4.5 stars: for a forgiving recovery-day shoe, it is a safe recommendation.
 
-The catch is character. At ~278 g it is heavier than the 9, and the basic CMEVA foam rides firm rather than lively, so it has no interest in going fast. Buy it for cushioned easy miles; for tempo, steer clients to something springier. (It is widely discounted to ~€110 as the range refreshes — best value there.)
+The catch is character. At ~278 g it is heavier than the 9, and the basic CMEVA foam rides firm rather than lively, so it has no interest in going fast. Buy it for cushioned easy miles; for tempo, steer clients to something springier. (It is widely discounted to ~€110 as the range refreshes: best value there.)

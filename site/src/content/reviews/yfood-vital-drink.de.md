@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Brand-direct yfood.eu; also Amazon.de (~€4/bottle) — verify NEW + first-party via SiteStripe before wiring Amazon. No affiliate network confirmed yet.
-verdict: "Die yfood Trinkmahlzeit ist Deutschlands ausgereiftester Mahlzeitersatz zum Trinken: ausgewogene ca. 500 kcal pro 500-ml-Flasche mit 26 Vitaminen und Mineralstoffen, viel Milcheiweiß und richtig gutem Geschmack. Stark bei der Praktikabilität, aber verarbeitet und teuer — ein cleverer gelegentlicher Ersatz, keine vollwertige Mahlzeit."
+verdict: "Die yfood Trinkmahlzeit ist Deutschlands ausgereiftester Mahlzeitersatz zum Trinken: ausgewogene ca. 500 kcal pro 500-ml-Flasche mit 26 Vitaminen und Mineralstoffen, viel Milcheiweiß und richtig gutem Geschmack. Stark bei der Praktikabilität, aber verarbeitet und teuer: ein cleverer gelegentlicher Ersatz, keine vollwertige Mahlzeit."
 sqwodScore: 77
 confidence: High
 crowd:
@@ -43,12 +43,12 @@ value:
 pros:
   - "Vollständiges Makro-/Mikroprofil: ca. 33g Eiweiß, 26 Vitamine & Mineralstoffe pro 500ml"
   - "Durchweg gelobter Geschmack (Cold Brew Coffee, Vanille, Choco)"
-  - "Extrem praktisch, ungekühlt haltbar, keine Zubereitung — ideal für unterwegs"
+  - "Extrem praktisch, ungekühlt haltbar, keine Zubereitung: ideal für unterwegs"
   - "Neu formulierte Varianten ohne Zuckerzusatz erhältlich"
   - "Klarer Marktführer mit breiter Verfügbarkeit im Handel und auf Amazon.de"
 cons:
   - "Teuer: ca. 3–4 € pro Flasche, Preis laut Tests 'eher hoch'"
-  - "Verarbeitete Basis — Maltodextrin und Sonnenblumen-/Rapsöl-Mischung"
+  - "Verarbeitete Basis: Maltodextrin und Sonnenblumen-/Rapsöl-Mischung"
   - "Ältere/normale Varianten teils zuckerreich und zu süß"
   - "Kein Ersatz für vollwertige Kost; fehlende sekundäre Pflanzenstoffe & Ballaststoffvielfalt"
   - "Einwegverpackung verursacht Müll bei häufigem Konsum"
@@ -63,4 +63,4 @@ asset:
 tags: ["nutrition", "meal-replacement", "convenience"]
 ---
 
-yfood wurde 2017 in München gegründet und gehört seit 2022 mehrheitlich zu Nestlé — in Deutschland ist die Marke der klare Kategorieführer bei Trinkmahlzeiten. Die Trinkmahlzeit (im Handel als „THIS IS FOOD“ Classic) liefert rund 500 kcal in der 500-ml-Flasche (die 330-ml-Variante ca. 330 kcal), etwa 33g Milcheiweiß, 26 Vitamine und Mineralstoffe sowie Ballaststoffe. Unabhängige Tests geben 77,5/100 — gelobt für den durchweg sehr guten Geschmack und die cremige, klumpenfreie Konsistenz, mit rund drei Stunden Sättigung. Auf Amazon.de liegen die Bewertungen bei etwa 4,5/5 über Hunderte Rezensionen je Sorte.
+yfood wurde 2017 in München gegründet und gehört seit 2022 mehrheitlich zu Nestlé: in Deutschland ist die Marke der klare Kategorieführer bei Trinkmahlzeiten. Die Trinkmahlzeit (im Handel als „THIS IS FOOD“ Classic) liefert rund 500 kcal in der 500-ml-Flasche (die 330-ml-Variante ca. 330 kcal), etwa 33g Milcheiweiß, 26 Vitamine und Mineralstoffe sowie Ballaststoffe. Unabhängige Tests geben 77,5/100: gelobt für den durchweg sehr guten Geschmack und die cremige, klumpenfreie Konsistenz, mit rund drei Stunden Sättigung. Auf Amazon.de liegen die Bewertungen bei etwa 4,5/5 über Hunderte Rezensionen je Sorte.

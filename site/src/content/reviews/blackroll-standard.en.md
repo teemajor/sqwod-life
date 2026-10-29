@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # German brand, Amazon.de. Roller ASIN B07DLPFJBP (NOT B09HV3329D — that is the Fascia GUN). Verify seller+image via SiteStripe before wiring Amazon. For now: brand-direct + fallback.
-verdict: "The German original that set the foam-roller standard — durable, medium-firm and physio-trusted, if priced above generic rollers."
+verdict: "The German original that set the foam-roller standard: durable, medium-firm and physio-trusted, if priced above generic rollers."
 sqwodScore: 84
 confidence: High
 crowd:
@@ -41,7 +41,7 @@ value:
   currency: EUR
 pros:
   - "Effective medium firmness for muscle and fascia release"
-  - "High-quality, recyclable EPP foam — made in Germany"
+  - "High-quality, recyclable EPP foam: made in Germany"
   - "Virtually unbreakable; survives daily studio use"
   - "Physio-endorsed and versatile across the whole body"
 cons:
@@ -49,7 +49,7 @@ cons:
   - "Medium firmness can feel intense for beginners (a softer MED tier exists)"
 whoFor:
   buy: "You coach or run a studio and want one durable, hygienic, medium-firm all-rounder that survives daily multi-client use."
-  skip: "You’re a complete beginner or very sensitive — start on the softer MED roller first."
+  skip: "You’re a complete beginner or very sensitive: start on the softer MED roller first."
 asset:
   type: images
   images:
@@ -60,4 +60,4 @@ tags: ["recovery", "faszienrolle", "mobility"]
 
 BLACKROLL is the brand that made the foam roller a category, and the Standard is why: a medium-firm, made-in-Germany EPP roller that is effectively indestructible and trusted by physios. For a studio kitting out a recovery corner, it is the safe default that will outlast everything cheaper around it.
 
-The only real knock is price — you can find a generic roller that rolls muscle just as well for less. What you pay extra for is the durability, the hygienic recyclable foam and the physio credibility. Beginners should note the Standard runs firm; the softer MED tier is the gentler entry point.
+The only real knock is price: you can find a generic roller that rolls muscle just as well for less. What you pay extra for is the durability, the hygienic recyclable foam and the physio credibility. Beginners should note the Standard runs firm; the softer MED tier is the gentler entry point.

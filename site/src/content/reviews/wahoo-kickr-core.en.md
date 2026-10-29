@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Current model = KICKR CORE 2 (2025). Amazon.de ASIN B0CGH8CRST (CORE 2) / B07J16C4WL (original). Verify seller+image via SiteStripe. CORE 2 ships with cassette OR Zwift Cog; ~€419–549.
-verdict: "A reliable, ±2%-accurate, quiet smart trainer that delivers near-flagship performance for mid-tier money — one of the best-value picks for coached indoor cycling."
+verdict: "A reliable, ±2%-accurate, quiet smart trainer that delivers near-flagship performance for mid-tier money: one of the best-value picks for coached indoor cycling."
 sqwodScore: 82
 confidence: Medium
 crowd:
@@ -59,6 +59,6 @@ asset:
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 
-The KICKR CORE is Wahoo’s value smart trainer, and in its current CORE 2 form it hits the sweet spot: ±2% power accuracy that matches real power meters, a solid quiet ride, and full Zwift/TrainerRoad support — all for mid-tier money. Experts land it around 4.5/5, and for coaches programming structured indoor sessions it’s one of the best-value trainers going.
+The KICKR CORE is Wahoo’s value smart trainer, and in its current CORE 2 form it hits the sweet spot: ±2% power accuracy that matches real power meters, a solid quiet ride, and full Zwift/TrainerRoad support, all for mid-tier money. Experts land it around 4.5/5, and for coaches programming structured indoor sessions it’s one of the best-value trainers going.
 
-Two notes before buying. The current CORE 2 ships with a cassette (or Zwift Cog) — the older CORE did not — so confirm which model and bundle you’re getting. And if you want integrated incline motion or steering, that’s the pricier KICKR/MOVE, not the CORE.
+Two notes before buying. The current CORE 2 ships with a cassette (or Zwift Cog) (the older CORE did not) so confirm which model and bundle you’re getting. And if you want integrated incline motion or steering, that’s the pricier KICKR/MOVE, not the CORE.

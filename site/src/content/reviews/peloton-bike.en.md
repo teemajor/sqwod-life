@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC (onepeloton.de). Confirm live DE price + current SKU name (rebranding to Cross Training Bike) before publish. Bike ~€1,200; Bike+ up to €2,699.
-verdict: "The gold standard for connected indoor cycling — worth it only if you will commit to the €39/month classes that make it shine."
+verdict: "The gold standard for connected indoor cycling: worth it only if you will commit to the €39/month classes that make it shine."
 sqwodScore: 79
 confidence: Medium
 crowd:
@@ -49,7 +49,7 @@ pros:
   - "Praised by verified German buyers (4.94/5 at Fitshop)"
 cons:
   - "High upfront cost (~€1,200 Bike / up to €2,699 Bike+)"
-  - "Mandatory €39/month membership — the bike is heavily limited without it"
+  - "Mandatory €39/month membership: the bike is heavily limited without it"
   - "Value collapses if you dislike instructor-led classes"
 whoFor:
   buy: "You want motivating, instructor-led studio classes at home and will use the monthly subscription regularly."
@@ -66,6 +66,6 @@ successor:
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 
-Peloton remains the benchmark for connected indoor cycling, and the reason is the content: thousands of live and on-demand classes — now including German-language rides — wrapped in a well-built, quiet bike with a compact footprint. Verified German buyers rate it near-perfect.
+Peloton remains the benchmark for connected indoor cycling, and the reason is the content: thousands of live and on-demand classes (now including German-language rides) wrapped in a well-built, quiet bike with a compact footprint. Verified German buyers rate it near-perfect.
 
-The catch is the model. The hardware is ~€1,200 (up to €2,699 for the Bike+), and the €39/month All-Access Membership is effectively mandatory — the bike does little without it. If you will ride the classes, it is worth it; if you resent subscriptions, it is an expensive way to pedal. (Confirm the live onepeloton.de price and current SKU name before buying — Peloton is rebranding the line.)
+The catch is the model. The hardware is ~€1,200 (up to €2,699 for the Bike+), and the €39/month All-Access Membership is effectively mandatory: the bike does little without it. If you will ride the classes, it is worth it; if you resent subscriptions, it is an expensive way to pedal. (Confirm the live onepeloton.de price and current SKU name before buying: Peloton is rebranding the line.)

@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # SaaS (trainingpeaks.com). USD-Preise (EUR UNVERIFIED). Deutsche UI unterstützt. HINWEIS: laut Berichten Juli 2026 von Garmin übernommen — vor Publish prüfen. Führt zur Sqwod-OS-Zielgruppe.
-verdict: "Die Branchenstandard-Plattform für Ausdauertraining und Coaching — unerreichte Analytik und Coach-Tools, aber im Preis und Tempo auf ernsthafte, datenaffine Nutzer:innen ausgelegt."
+verdict: "Die Branchenstandard-Plattform für Ausdauertraining und Coaching: unerreichte Analytik und Coach-Tools, aber im Preis und Tempo auf ernsthafte, datenaffine Nutzer:innen ausgelegt."
 sqwodScore: 80
 confidence: Medium
 crowd:
@@ -47,11 +47,11 @@ pros:
   - "Speziell gebaute Coach-Tools, die pro Athlet:in skalieren"
   - "Kostenlose Basic-Stufe für den Einstieg ohne Kosten"
 cons:
-  - "Steile Lernkurve — braucht Know-how oder einen Coach"
+  - "Steile Lernkurve: braucht Know-how oder einen Coach"
   - "Preis-Leistung kritisiert; ein sehr teurer Kalender bei Unternutzung"
 whoFor:
   buy: "Du bist Ausdauer-Coach oder datengetriebene:r Athlet:in und willst Belastungssteuerung und strukturierte Pläne über viele Athlet:innen."
-  skip: "Du bist Freizeitsportler:in oder Kraftnutzer:in und willst nur einfaches Logging — Tiefe und Preis sind überzogen."
+  skip: "Du bist Freizeitsportler:in oder Kraftnutzer:in und willst nur einfaches Logging: Tiefe und Preis sind überzogen."
 asset:
   type: images
   images:
@@ -62,4 +62,4 @@ tags: ["apps", "coaching", "endurance"]
 
 Für Ausdauer-Coaches ist TrainingPeaks der Standard: der Performance Management Chart (Fitness, Ermüdung, Form über TSS/CTL/ATL), strukturierte Workout-Builder und Roster-Tools sind unerreicht, und es liest von 90+ Geräten ein. Eine kostenlose Basic-Stufe senkt die Einstiegshürde.
 
-Der Preis ist Komplexität und Kosten — es belohnt Nutzer:innen, die die Daten lesen können (oder einen Coach haben), und Tester bemängeln die Preis-Leistung bei Unternutzung. Zu beachten: TrainingPeaks wurde Mitte 2026 Berichten zufolge von Garmin übernommen, die Roadmap könnte sich also ändern.
+Der Preis ist Komplexität und Kosten: es belohnt Nutzer:innen, die die Daten lesen können (oder einen Coach haben), und Tester bemängeln die Preis-Leistung bei Unternutzung. Zu beachten: TrainingPeaks wurde Mitte 2026 Berichten zufolge von Garmin übernommen, die Roadmap könnte sich also ändern.

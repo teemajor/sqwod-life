@@ -13,7 +13,7 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-verdict: "Der kleinste Smart Ring der Welt — rund 40 % schlanker als zuvor, schärfere Multi-Wellenlängen-Sensoren und Health Radar. Die beste Recovery- und Schlafdatenqualität bleibt das Argument; der Preis von 429 € und das 70-€/Jahr-Abo bleiben der Haken."
+verdict: "Der kleinste Smart Ring der Welt: rund 40 % schlanker als zuvor, schärfere Multi-Wellenlängen-Sensoren und Health Radar. Die beste Recovery- und Schlafdatenqualität bleibt das Argument; der Preis von 429 € und das 70-€/Jahr-Abo bleiben der Haken."
 sqwodScore: 86
 confidence: High
 crowd:
@@ -40,15 +40,15 @@ value:
   currency: EUR
   subscription: "69,99 €/Jahr"
 pros:
-  - "Kleinster Smart Ring der Welt — schmuckartig, kaum spürbar"
+  - "Kleinster Smart Ring der Welt: schmuckartig, kaum spürbar"
   - "Schärfere Multi-Wellenlängen-Sensoren; bis zu ~9 Tage Akku"
   - "Beste Companion-App der Kategorie (App Store 4.9★)"
 cons:
   - "Pflicht-Abo von 5,99 €/Monat für alle Funktionen"
-  - "50 € teurer als der Ring 4 — hohe Gesamtkosten"
+  - "50 € teurer als der Ring 4: hohe Gesamtkosten"
   - "Fitness-Tracking hinkt dedizierten Sport-Wearables hinterher"
 whoFor:
-  buy: "Du planst rund um Recovery und Schlaf und willst das genaueste, dezenteste Wearable — jetzt so klein, dass Kund:innen es nicht bemerken."
+  buy: "Du planst rund um Recovery und Schlaf und willst das genaueste, dezenteste Wearable: jetzt so klein, dass Kund:innen es nicht bemerken."
   skip: "Du brauchst Live-Herzfrequenz im Training und GPS, oder du zahlst kein laufendes Abo."
 asset:
   type: images
@@ -58,6 +58,6 @@ asset:
 tags: ["wearables", "recovery", "sleep", "smart-ring"]
 ---
 
-Der Oura Ring 5 ist der Sprung über zwei Generationen vom Gen3: Oura nennt ihn den kleinsten Smart Ring der Welt — rund 40 % schlanker als der Ring 4 — mit verbessertem Multi-Wellenlängen-Sensor, längerem Akku (bis zu etwa neun Tage), Wasserdichtigkeit bis 100 m und neuer Software wie Health Radar, GLP-1 Insights und Live-Aktivitätstracking. Für Coaches, die rund um Recovery und Schlaf planen, ist das Argument aus Genauigkeit plus Diskretion stärker denn je.
+Der Oura Ring 5 ist der Sprung über zwei Generationen vom Gen3: Oura nennt ihn den kleinsten Smart Ring der Welt (rund 40 % schlanker als der Ring 4) mit verbessertem Multi-Wellenlängen-Sensor, längerem Akku (bis zu etwa neun Tage), Wasserdichtigkeit bis 100 m und neuer Software wie Health Radar, GLP-1 Insights und Live-Aktivitätstracking. Für Coaches, die rund um Recovery und Schlaf planen, ist das Argument aus Genauigkeit plus Diskretion stärker denn je.
 
-Der Haken ist geblieben: 429 € Anschaffung und ein 70-€/Jahr-Abo für das volle Bild — genau das drückt die Preis-Leistung, während Crowd (App Store 4.9★ über 265.000+ Bewertungen) und unsere Einschätzung hoch liegen. Der Recovery-Maßstab — zu seinem Preis.
+Der Haken ist geblieben: 429 € Anschaffung und ein 70-€/Jahr-Abo für das volle Bild, genau das drückt die Preis-Leistung, während Crowd (App Store 4.9★ über 265.000+ Bewertungen) und unsere Einschätzung hoch liegen. Der Recovery-Maßstab: zu seinem Preis.

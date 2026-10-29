@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de ASIN B0CG6PJLY3 (42mm) / B0CG9P8YFW (38mm). UVP 349,95 €, Straße ~260 €. Verkäufer+Bild per SiteStripe prüfen. Vorerst: Marke direkt + Fallback. App-Store-Zahl ist app-weit.
-verdict: "Der schönste Hybrid für ernsthaftes Health-Tracking — Herzdaten in Medizinqualität und ~30 Tage Akku, wenn man auf GPS und Smart-Apps verzichten kann."
+verdict: "Der schönste Hybrid für ernsthaftes Health-Tracking: Herzdaten in Medizinqualität und ~30 Tage Akku, wenn man auf GPS und Smart-Apps verzichten kann."
 sqwodScore: 81
 confidence: Medium
 crowd:
@@ -42,15 +42,15 @@ value:
   low: 264
 pros:
   - "Herausragendes Hybrid-Analog-Design, das wie eine echte Uhr wirkt"
-  - "Tiefe, klinisch orientierte Gesundheits-Suite — EKG/AFib, SpO2, Temperatur"
+  - "Tiefe, klinisch orientierte Gesundheits-Suite: EKG/AFib, SpO2, Temperatur"
   - "Klassenbester Akku mit ~30 Tagen Laufzeit"
   - "Starkes Schlaf-Tracking mit einfacher Begleit-App"
 cons:
   - "Kein eingebautes GPS (nur Connected-GPS übers Handy)"
-  - "Wenig Smart-Funktionen — winziges OLED, keine Drittanbieter-Apps"
+  - "Wenig Smart-Funktionen: winziges OLED, keine Drittanbieter-Apps"
 whoFor:
   buy: "Du hast gesundheitsbewusste Kund:innen, die diskretes Herz- und Schlaf-Monitoring mit langem Akku in einer klassisch aussehenden Uhr wollen."
-  skip: "Du brauchst GPS am Handgelenk, Live-Workout-Metriken oder volle Smartwatch-Apps — Garmin oder Apple Watch passen besser."
+  skip: "Du brauchst GPS am Handgelenk, Live-Workout-Metriken oder volle Smartwatch-Apps: Garmin oder Apple Watch passen besser."
 asset:
   type: images
   images:

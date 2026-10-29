@@ -13,7 +13,7 @@ publishedAt: 2026-06-20
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-verdict: "Der klügste Kauf in Therabodys Sortiment — tiefe 16-mm-Percussion plus schnelle Wärme, in einem Griff, den man wirklich eine ganze Session halten kann. Der Preis ist der Haken."
+verdict: "Der klügste Kauf in Therabodys Sortiment: tiefe 16-mm-Percussion plus schnelle Wärme, in einem Griff, den man wirklich eine ganze Session halten kann. Der Preis ist der Haken."
 sqwodScore: 86
 confidence: High
 crowd:
@@ -41,7 +41,7 @@ value:
   currency: EUR
   history: [429, 429, 399, 399, 379, 359, 399, 399, 379, 399, 359, 399]
 pros:
-  - "16 mm Amplitude + 40 lb Stall Force — wirklich tief"
+  - "16 mm Amplitude + 40 lb Stall Force: wirklich tief"
   - "Integrierte Wärme beschleunigt Warm-up und Recovery"
   - "Dreiecksgriff liegt gut; ~900 g, 150 Min. Akku"
 cons:
@@ -49,7 +49,7 @@ cons:
   - "App ist nett, aber nicht essenziell"
 whoFor:
   buy: "Du bist Coach oder ambitioniert und willst Profi-Percussion + Wärme in einem Gerät."
-  skip: "Du brauchst nur gelegentlich leichte Massage — eine Budget-Gun reicht."
+  skip: "Du brauchst nur gelegentlich leichte Massage: eine Budget-Gun reicht."
 tags: ["recovery", "massage", "therabody"]
 asset:
   type: images
@@ -58,6 +58,6 @@ asset:
   credit: "Produktbilder via Amazon"
 ---
 
-Die Prime Plus ist der Preis-Leistungs-Sweetspot bei Therabody: ein Motor mit 16 mm Amplitude und 40 lb Stall Force, der tiefes Gewebe wirklich erreicht, plus integrierte Wärme, die Muskeln schnell aufwärmt — in einem Gehäuse unter 900 g mit Dreiecksgriff, den man eine ganze Session hält. Tester nennen sie durchweg den klügsten Kauf der Reihe.
+Die Prime Plus ist der Preis-Leistungs-Sweetspot bei Therabody: ein Motor mit 16 mm Amplitude und 40 lb Stall Force, der tiefes Gewebe wirklich erreicht, plus integrierte Wärme, die Muskeln schnell aufwärmt, in einem Gehäuse unter 900 g mit Dreiecksgriff, den man eine ganze Session hält. Tester nennen sie durchweg den klügsten Kauf der Reihe.
 
-Für Coaches, die Kund:innen behandeln, oder ambitionierte Trainierende ist die Wärme-Power-Kombi der Unterschied zu günstigeren Guns. Einziger echter Kritikpunkt: der Preis. Gute Budget-Guns gibt es — aber ohne Wärme, Verarbeitung und Ergonomie.
+Für Coaches, die Kund:innen behandeln, oder ambitionierte Trainierende ist die Wärme-Power-Kombi der Unterschied zu günstigeren Guns. Einziger echter Kritikpunkt: der Preis. Gute Budget-Guns gibt es, aber ohne Wärme, Verarbeitung und Ergonomie.

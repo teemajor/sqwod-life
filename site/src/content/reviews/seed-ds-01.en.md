@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC subscription, NOT on Amazon officially. No direct DE/EU shipping (freight-forwarder + 19% VAT). /go on publish: seed.com (pending Impact/CJ/direct). On-site 4.6★/10k+ is first-party. Clinical evidence is manufacturer-sponsored — keep that caveat.
-verdict: "A premium, well-formulated synbiotic with real (if company-sponsored) clinical data and strong customer ratings — but the ~$50/month subscription and no direct German shipping make it a hard local sell."
+verdict: "A premium, well-formulated synbiotic with real (if company-sponsored) clinical data and strong customer ratings, but the ~$50/month subscription and no direct German shipping make it a hard local sell."
 sqwodScore: 76
 confidence: Medium
 crowd:
@@ -45,11 +45,11 @@ value:
 pros:
   - "Broad 24-strain formula (53.64B AFU) with an acid-protective ViaCap capsule"
   - "Shelf-stable, vegan, third-party tested (heavy metals, allergens, glyphosate)"
-  - "Company has published actual RCTs on the full formulation — rare in the category"
+  - "Company has published actual RCTs on the full formulation: rare in the category"
   - "Strong customer sentiment (4.6★, 10k+ on-site)"
 cons:
-  - "Subscription-first, ~$49.99/mo — expensive vs shelf competitors"
-  - "No direct EU/Germany shipping — freight forwarder + 19% VAT raises true cost"
+  - "Subscription-first, ~$49.99/mo: expensive vs shelf competitors"
+  - "No direct EU/Germany shipping: freight forwarder + 19% VAT raises true cost"
   - "Clinical evidence is manufacturer-sponsored and short-term"
 whoFor:
   buy: "You want a science-forward, broad-spectrum daily synbiotic and are fine with a recurring ~$50/month subscription."
@@ -62,6 +62,6 @@ asset:
 tags: ["supplements", "gut-health", "probiotic"]
 ---
 
-Seed's DS-01 is the probiotic that made "synbiotic" a marketing word — and the formulation backs the hype more than most. It packs 24 strains (53.64 billion AFU) into a nested ViaCap capsule built to survive stomach acid, it's shelf-stable and vegan, and it's third-party tested for heavy metals, allergens and glyphosate. Crucially, Seed has actually published randomized controlled trials on the full formula — a bar almost no shelf probiotic clears.
+Seed's DS-01 is the probiotic that made "synbiotic" a marketing word, and the formulation backs the hype more than most. It packs 24 strains (53.64 billion AFU) into a nested ViaCap capsule built to survive stomach acid, it's shelf-stable and vegan, and it's third-party tested for heavy metals, allergens and glyphosate. Crucially, Seed has actually published randomized controlled trials on the full formula: a bar almost no shelf probiotic clears.
 
-Two honest caveats. The evidence, while real, is manufacturer-sponsored and short-term, so treat it as promising rather than settled — and probiotic benefits are strain-specific and often transient. And the economics are rough for a German audience: it's a subscription-first ~$49.99/month product with no direct EU shipping, so buying it means a freight forwarder plus 19% VAT on top. A genuinely strong formula that's simply hard to justify from Berlin right now.
+Two honest caveats. The evidence, while real, is manufacturer-sponsored and short-term, so treat it as promising rather than settled, and probiotic benefits are strain-specific and often transient. And the economics are rough for a German audience: it's a subscription-first ~$49.99/month product with no direct EU shipping, so buying it means a freight forwarder plus 19% VAT on top. A genuinely strong formula that's simply hard to justify from Berlin right now.

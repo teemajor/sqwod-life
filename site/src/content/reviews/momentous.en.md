@@ -13,7 +13,7 @@ publishedAt: 2026-06-20
 updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
-verdict: "The supplement line you can recommend to athletes without hedging — NSF Certified for Sport, Creapure creatine, obsessive purity testing. You pay a premium for that certainty."
+verdict: "The supplement line you can recommend to athletes without hedging: NSF Certified for Sport, Creapure creatine, obsessive purity testing. You pay a premium for that certainty."
 sqwodScore: 85
 confidence: High
 crowd:
@@ -43,7 +43,7 @@ value:
   subscription: "Subscribe & save ~15%"
   history: [49, 49, 45, 45, 42, 39, 45, 45, 42, 45, 39, 45]
 pros:
-  - "NSF Certified for Sport + Informed-Sport — safe for tested athletes"
+  - "NSF Certified for Sport + Informed-Sport: safe for tested athletes"
   - "Creapure creatine; six-stage testing incl. heavy metals, PFAS, microplastics"
   - "Simple, evidence-led formulas (no proprietary-blend games)"
 cons:
@@ -51,7 +51,7 @@ cons:
   - "Cheaper Creapure brands give near-identical results"
 whoFor:
   buy: "You coach tested athletes (or are cautious) and want certainty over price."
-  skip: "You're on a tight budget — a Creapure/NSF generic is most of the way there."
+  skip: "You're on a tight budget: a Creapure/NSF generic is most of the way there."
 asset:
   type: images
   images:
@@ -60,6 +60,6 @@ asset:
 tags: ["supplements", "creatine", "protein", "momentous"]
 ---
 
-Momentous is the supplement brand built for the one thing most matter to a coach: certainty. The basics — creatine, whey/plant protein, daily essentials — are NSF Certified for Sport and Informed-Sport tested, the creatine is Creapure, and the latest batch testing screens for heavy metals, PFAS and even microplastics that most of the category ignores. For anyone advising tested athletes, that removes the "is this safe to recommend?" question.
+Momentous is the supplement brand built for the one thing most matter to a coach: certainty. The basics (creatine, whey/plant protein, daily essentials) are NSF Certified for Sport and Informed-Sport tested, the creatine is Creapure, and the latest batch testing screens for heavy metals, PFAS and even microplastics that most of the category ignores. For anyone advising tested athletes, that removes the "is this safe to recommend?" question.
 
-The trade is price: roughly €1–1.50 per serving versus ~€0.20 for commodity creatine. The active ingredient does the same work in a cheaper Creapure tub — so what you're really paying for is the certification and the testing rigor. For coaches and quality-first buyers that's worth it; on a tight budget, a Creapure/NSF generic gets you most of the way, which is why Value lands at 76 against a near-perfect purity score.
+The trade is price: roughly €1–1.50 per serving versus ~€0.20 for commodity creatine. The active ingredient does the same work in a cheaper Creapure tub, so what you're really paying for is the certification and the testing rigor. For coaches and quality-first buyers that's worth it; on a tight budget, a Creapure/NSF generic gets you most of the way, which is why Value lands at 76 against a near-perfect purity score.

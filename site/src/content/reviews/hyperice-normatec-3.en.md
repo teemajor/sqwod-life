@@ -44,11 +44,11 @@ pros:
   - "High-quality, durable materials with a comfortable, well-fitting design"
   - "Smooth, massage-like compression with 7 intensity levels and ZoneBoost targeting"
   - "Easy Hyperice app control with custom routines and long battery life"
-  - "Cordless with integrated pump/battery — no bulky external base unit"
+  - "Cordless with integrated pump/battery, no bulky external base unit"
 cons:
   - "Very expensive (RRP around €999; typically €719-899 on the street)"
   - "Bulky boots take up space and the control pod has no display screen"
-  - "Recovery-benefit evidence for compression boots is mixed and limited — not a miracle fix"
+  - "Recovery-benefit evidence for compression boots is mixed and limited, not a miracle fix"
 whoFor:
   buy: "Runners, cyclists and high-frequency trainers who will use it consistently and want legs that feel fresher the next day."
   skip: "Casual exercisers or budget-conscious buyers expecting a proven, measurable performance boost."
@@ -60,6 +60,6 @@ asset:
 tags: ["recovery", "compression", "hyperice"]
 ---
 
-The Normatec 3 is Hyperice's flagship pneumatic compression boot system, and it earns its reputation on hardware: durable materials, a comfortable fit, cordless operation with an integrated battery, and smooth, massage-like compression across seven intensity levels with ZoneBoost targeting. Users clearly love it — Best Buy (4.8/5, 314 reviews) and REI (4.7/5, 418 reviews) both sit near the top of the scale, and the Hyperice app makes running custom routines effortless.
+The Normatec 3 is Hyperice's flagship pneumatic compression boot system, and it earns its reputation on hardware: durable materials, a comfortable fit, cordless operation with an integrated battery, and smooth, massage-like compression across seven intensity levels with ZoneBoost targeting. Users clearly love it: Best Buy (4.8/5, 314 reviews) and REI (4.7/5, 418 reviews) both sit near the top of the scale, and the Hyperice app makes running custom routines effortless.
 
-The catch is price and proof. At an RRP near €999 (and roughly €719-899 depending on the retailer) it is a serious investment, and the scientific evidence that compression boots meaningfully speed recovery is mixed and limited — most benefit is subjective 'fresher legs' rather than measurable performance. It is a genuinely good tool for people who will use it often, but treat it as a comfort-and-consistency aid, not a guaranteed recovery upgrade.
+The catch is price and proof. At an RRP near €999 (and roughly €719-899 depending on the retailer) it is a serious investment, and the scientific evidence that compression boots meaningfully speed recovery is mixed and limited: most benefit is subjective 'fresher legs' rather than measurable performance. It is a genuinely good tool for people who will use it often, but treat it as a comfort-and-consistency aid, not a guaranteed recovery upgrade.

@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # German brand. DTC (esn.com) + Amazon.de ASIN B004U4WUFU (Chocolate 1kg). ~€45–50/kg. Verify Amazon seller+image via SiteStripe before wiring. For now: brand-direct + fallback. Limited availability outside DACH.
-verdict: "Germany’s default whey — premium quality and lab-tested reassurance at a mid-premium price that budget shoppers can beat elsewhere."
+verdict: "Germany’s default whey: premium quality and lab-tested reassurance at a mid-premium price that budget shoppers can beat elsewhere."
 sqwodScore: 83
 confidence: High
 crowd:
@@ -40,12 +40,12 @@ value:
   bestPrice: 47.90
   currency: EUR
 pros:
-  - "German market leader — the default trusted whey in the DACH region"
+  - "German market leader: the default trusted whey in the DACH region"
   - "Concentrate + isolate complex, up to ~25 g protein per serving"
   - "Rigorously lab-tested (>80k tests/yr, FSSC 22000 / HACCP)"
   - "Praised for solubility, creamy texture and flavour range"
 cons:
-  - "Price premium — €48–53/kg sits above discounted rivals like Myprotein"
+  - "Price premium: €48–53/kg sits above discounted rivals like Myprotein"
   - "Polarised taste feedback; limited availability outside the DACH/EU market"
 whoFor:
   buy: "You are a DACH coach or client who wants a widely-trusted, lab-tested German whey with excellent mixability and broad flavour choice."
@@ -60,4 +60,4 @@ tags: ["supplements", "protein", "whey"]
 
 ESN is, by survey, Germany’s most popular whey, and Designer Whey is why: a concentrate-plus-isolate complex with up to ~25 g protein per serving, rigorous in-house lab testing, and consistently praised mixability and flavour. For DACH coaches who value brand certainty, it is the trusted default.
 
-The trade is price. At €48–53/kg it sits clearly above a discounted Myprotein, taste is a little polarising across the range, and availability thins out fast outside Germany and the EU. You are paying for German lab-tested reassurance — worth it if that certainty matters more than the last few euros per kilo.
+The trade is price. At €48–53/kg it sits clearly above a discounted Myprotein, taste is a little polarising across the range, and availability thins out fast outside Germany and the EU. You are paying for German lab-tested reassurance: worth it if that certainty matters more than the last few euros per kilo.

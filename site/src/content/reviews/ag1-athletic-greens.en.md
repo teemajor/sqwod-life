@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Link = DTC drinkag1.com (Impact 23569, 15%, EUR, ships DE) — verified tracking 2026-09-11. ALSO on amazon.de now (B0FDD89ZTZ, ~EUR 107, sold by AG1 EU), but Impact's AG1 Amazon Seller programme (56343, 20%) resolves to amazon.COM only, so it is unusable for DACH readers. Keep the DTC link. Evidence-critical review: NSF Certified for Sport is real, but proprietary blend + thin INDEPENDENT evidence + high price. Trustpilot exact score UNVERIFIED.
-verdict: "A well-made, exhaustively tested convenience greens — but a premium price, undisclosed blend doses and thin independent evidence make it hard to justify over a solid diet."
+verdict: "A well-made, exhaustively tested convenience greens, but a premium price, undisclosed blend doses and thin independent evidence make it hard to justify over a solid diet."
 sqwodScore: 61
 confidence: Low
 crowd:
@@ -44,16 +44,16 @@ value:
   subscription: "€87/mo subscription (30 servings, ~€2.90/serving)"
 pros:
   - "Broad all-in-one micronutrient, probiotic and adaptogen profile"
-  - "Genuinely rigorous testing — NSF Certified for Sport (meaningful for tested athletes)"
+  - "Genuinely rigorous testing: NSF Certified for Sport (meaningful for tested athletes)"
   - "Vegan, gluten/dairy-free, no added sugar; 90-day money-back guarantee"
   - "Convenient single daily scoop"
 cons:
-  - "High cost — ~€87/month, far above €1.50–2/serving competitors"
+  - "High cost: ~€87/month, far above €1.50–2/serving competitors"
   - "Proprietary blend: ingredients listed but per-dose amounts hidden"
-  - "Limited INDEPENDENT evidence — supportive studies are company-linked; no product replaces produce"
+  - "Limited INDEPENDENT evidence: supportive studies are company-linked; no product replaces produce"
 whoFor:
   buy: "You are busy, won’t reliably eat varied produce, want a banned-substance-tested all-in-one, and the price is not a barrier."
-  skip: "You are on a budget or already eat a balanced diet — a good diet plus a cheap NSF multivitamin covers most of the same ground."
+  skip: "You are on a budget or already eat a balanced diet: a good diet plus a cheap NSF multivitamin covers most of the same ground."
 asset:
   type: images
   images:
@@ -64,4 +64,4 @@ tags: ["supplements", "greens", "nutrition"]
 
 AG1 is the greens powder that built a marketing empire, and to its credit the manufacturing is legitimate: ~75 ingredients, a real probiotic dose, and NSF Certified for Sport testing that matters if your clients are drug-tested. As a convenient daily insurance policy for someone who won’t eat their vegetables, it does what it says.
 
-Where we stay skeptical is value and evidence. At ~€87/month it costs many times its shelf competitors, the proprietary blend hides per-ingredient doses, and the independent evidence is thin — most supportive data is company-funded, and no powder replaces real produce. Good product, honest caveats: buy it for convenience and testing assurance, not for proven added benefit.
+Where we stay skeptical is value and evidence. At ~€87/month it costs many times its shelf competitors, the proprietary blend hides per-ingredient doses, and the independent evidence is thin: most supportive data is company-funded, and no powder replaces real produce. Good product, honest caveats: buy it for convenience and testing assurance, not for proven added benefit.

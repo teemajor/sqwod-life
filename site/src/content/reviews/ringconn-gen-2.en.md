@@ -41,7 +41,7 @@ value:
   currency: EUR
 pros:
   - "Class-leading battery: ~12 days plus ~150-day charging case"
-  - "No subscription — all metrics included (Oura charges €5.99/mo)"
+  - "No subscription: all metrics included (Oura charges €5.99/mo)"
   - "Very thin, light titanium design; comfortable all-day/all-night wear"
   - "Sleep apnea monitoring on board"
   - "Solid sleep and heart-rate accuracy"
@@ -52,7 +52,7 @@ cons:
   - "Some features still feel beta"
 whoFor:
   buy: "Buy it if you want Oura-level sleep and recovery tracking without a monthly fee and value the best battery life on the market."
-  skip: "Skip it if you want deep, polished app insights or serious activity/workout tracking — Oura and Ultrahuman still lead there."
+  skip: "Skip it if you want deep, polished app insights or serious activity/workout tracking: Oura and Ultrahuman still lead there."
 asset:
   type: images
   images:
@@ -65,6 +65,6 @@ successor:
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 
-The RingConn Gen 2 has quietly become the default recommendation for anyone who wants a smart ring but refuses to pay a subscription. At around €269 street (RRP €339) it undercuts the Oura Ring 4 and then removes the €5.99/month paywall entirely — every metric, from sleep stages and HRV to stress and skin temperature, is included forever. Its headline feature is battery: reviewers consistently see 10–12 days per charge, and the bundled charging case stretches total runtime to roughly 150 days, a combination no rival matches. The titanium body is one of the thinnest and lightest available (2–3g), and it adds sleep apnea monitoring that even pricier rings lack. Wareable, Trusted Reviews and TechRadar all landed around 4/5, and Germany's testberichte.de rated it 1,9 (gut).
+The RingConn Gen 2 has quietly become the default recommendation for anyone who wants a smart ring but refuses to pay a subscription. At around €269 street (RRP €339) it undercuts the Oura Ring 4 and then removes the €5.99/month paywall entirely: every metric, from sleep stages and HRV to stress and skin temperature, is included forever. Its headline feature is battery: reviewers consistently see 10–12 days per charge, and the bundled charging case stretches total runtime to roughly 150 days, a combination no rival matches. The titanium body is one of the thinnest and lightest available (2–3g), and it adds sleep apnea monitoring that even pricier rings lack. Wareable, Trusted Reviews and TechRadar all landed around 4/5, and Germany's testberichte.de rated it 1,9 (gut).
 
-Be honest about ecosystem maturity, though: Oura's and Ultrahuman's apps are simply more polished. The RingConn companion crams a lot of raw data into dense menus without presenting it as clearly as rivals, and deep fitness/workout analysis plus third-party integrations are largely missing. The coating is also scratch-prone and a few features still feel like beta. In Germany the ring is widely available — via de.ringconn.com, ringconn-germany.de and Amazon.de (street price from roughly €234 per Geizhals). If you want to start even lighter and cheaper, the Gen 2 Air (~€239 RRP, no apnea detection and slightly shorter battery) is an option. For subscription-weary buyers, the Gen 2 remains the clear pick.
+Be honest about ecosystem maturity, though: Oura's and Ultrahuman's apps are simply more polished. The RingConn companion crams a lot of raw data into dense menus without presenting it as clearly as rivals, and deep fitness/workout analysis plus third-party integrations are largely missing. The coating is also scratch-prone and a few features still feel like beta. In Germany the ring is widely available: via de.ringconn.com, ringconn-germany.de and Amazon.de (street price from roughly €234 per Geizhals). If you want to start even lighter and cheaper, the Gen 2 Air (~€239 RRP, no apnea detection and slightly shorter battery) is an option. For subscription-weary buyers, the Gen 2 remains the clear pick.

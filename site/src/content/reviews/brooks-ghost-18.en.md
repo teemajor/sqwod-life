@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Current model (Ghost 18, €150; Ghost 17 discounted ~€105). Amazon.de ASIN B0GRT4KJV6 (men). Verify seller+image via SiteStripe. For now: brand-direct + fallback.
-verdict: "A dependable, durable neutral daily trainer that does everything competently and nothing excitingly — safe over spectacular."
+verdict: "A dependable, durable neutral daily trainer that does everything competently and nothing excitingly: safe over spectacular."
 sqwodScore: 81
 confidence: Medium
 crowd:
@@ -46,7 +46,7 @@ pros:
   - "Excellent outsole durability"
   - "Multiple width options (narrow to 2E)"
 cons:
-  - "Low energy return vs modern rivals — nothing groundbreaking"
+  - "Low energy return vs modern rivals: nothing groundbreaking"
   - "Heavier (289 g) and the toebox runs a touch narrow/warm"
 whoFor:
   buy: "You coach beginners or neutral heel-strikers who need a stable, durable, foolproof shoe for daily easy miles."
@@ -61,4 +61,4 @@ tags: ["apparel", "running", "shoes"]
 
 The Ghost is the shoe you recommend when you want zero surprises: a stable, well-cushioned neutral trainer with genuinely excellent durability and a comfortable, secure upper. For beginners and heel-strikers building a base, it is the definition of a safe daily.
 
-The flip side is character — the DNA Loft ride is smooth but flat, and at 289 g it is heavier than livelier rivals. If a client wants one shoe to also handle faster days, steer them elsewhere; the Ghost is about dependability, not excitement.
+The flip side is character: the DNA Loft ride is smooth but flat, and at 289 g it is heavier than livelier rivals. If a client wants one shoe to also handle faster days, steer them elsewhere; the Ghost is about dependability, not excitement.

@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Aktuelles Modell = KICKR CORE 2 (2025). Amazon.de ASIN B0CGH8CRST (CORE 2) / B07J16C4WL (Original). Verkäufer+Bild per SiteStripe prüfen. CORE 2 mit Kassette ODER Zwift Cog; ~419–549 €.
-verdict: "Ein zuverlässiger, ±2%-genauer, leiser Smart-Trainer mit Beinahe-Flaggschiff-Leistung zum Mittelklasse-Preis — eine der besten Preis-Leistungs-Optionen fürs Coaching-Indoor-Cycling."
+verdict: "Ein zuverlässiger, ±2%-genauer, leiser Smart-Trainer mit Beinahe-Flaggschiff-Leistung zum Mittelklasse-Preis: eine der besten Preis-Leistungs-Optionen fürs Coaching-Indoor-Cycling."
 sqwodScore: 82
 confidence: Medium
 crowd:
@@ -59,6 +59,6 @@ asset:
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 
-Der KICKR CORE ist Wahoos Preis-Leistungs-Smart-Trainer, und in der aktuellen CORE-2-Form trifft er den Sweet Spot: ±2% Leistungsgenauigkeit auf Powermeter-Niveau, ein solides, leises Fahrgefühl und voller Zwift-/TrainerRoad-Support — zum Mittelklasse-Preis. Experten sehen ihn bei ~4,5/5, und für Coaches mit strukturierten Indoor-Einheiten ist er einer der besten Preis-Leistungs-Trainer.
+Der KICKR CORE ist Wahoos Preis-Leistungs-Smart-Trainer, und in der aktuellen CORE-2-Form trifft er den Sweet Spot: ±2% Leistungsgenauigkeit auf Powermeter-Niveau, ein solides, leises Fahrgefühl und voller Zwift-/TrainerRoad-Support, zum Mittelklasse-Preis. Experten sehen ihn bei ~4,5/5, und für Coaches mit strukturierten Indoor-Einheiten ist er einer der besten Preis-Leistungs-Trainer.
 
-Zwei Hinweise vor dem Kauf: Der aktuelle CORE 2 kommt mit Kassette (oder Zwift Cog) — der ältere CORE nicht — also Modell und Bundle prüfen. Und wer integrierte Steigungsbewegung oder Lenkung will, braucht den teureren KICKR/MOVE, nicht den CORE.
+Zwei Hinweise vor dem Kauf: Der aktuelle CORE 2 kommt mit Kassette (oder Zwift Cog) (der ältere CORE nicht) also Modell und Bundle prüfen. Und wer integrierte Steigungsbewegung oder Lenkung will, braucht den teureren KICKR/MOVE, nicht den CORE.

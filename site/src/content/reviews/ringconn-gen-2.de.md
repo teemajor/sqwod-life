@@ -41,7 +41,7 @@ value:
   currency: EUR
 pros:
   - "Erstklassiger Akku: ~12 Tage plus Ladecase mit ~150 Tagen"
-  - "Kein Abo — alle Werte inklusive (Oura verlangt 5,99 €/Monat)"
+  - "Kein Abo: alle Werte inklusive (Oura verlangt 5,99 €/Monat)"
   - "Sehr dünnes, leichtes Titandesign; bequem Tag und Nacht"
   - "Schlafapnoe-Erkennung an Bord"
   - "Solide Schlaf- und Herzfrequenzgenauigkeit"
@@ -52,7 +52,7 @@ cons:
   - "Einige Funktionen wirken noch wie Beta"
 whoFor:
   buy: "Du solltest zugreifen, wenn du Oura-ähnliches Schlaf- und Recovery-Tracking ohne monatliche Gebühr willst und Wert auf die beste Akkulaufzeit am Markt legst."
-  skip: "Lass die Finger davon, wenn du tiefe, polierte App-Auswertungen oder ernsthaftes Aktivitäts-/Workout-Tracking brauchst — da führen Oura und Ultrahuman weiterhin."
+  skip: "Lass die Finger davon, wenn du tiefe, polierte App-Auswertungen oder ernsthaftes Aktivitäts-/Workout-Tracking brauchst: da führen Oura und Ultrahuman weiterhin."
 asset:
   type: images
   images:
@@ -65,6 +65,6 @@ successor:
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 
-Der RingConn Gen 2 hat sich still und leise zur Standard-Empfehlung für alle entwickelt, die einen Smart Ring wollen, aber kein Abo zahlen möchten. Für rund 269 € Straßenpreis (UVP 339 €) unterbietet er den Oura Ring 4 und streicht die 5,99-€/Monat-Paywall komplett — jede Messung, von Schlafphasen und HRV bis Stress und Hauttemperatur, ist für immer inklusive. Sein Aushängeschild ist der Akku: Tester sehen durchweg 10–12 Tage pro Ladung, und das mitgelieferte Lade-Case streckt die Gesamtlaufzeit auf rund 150 Tage — eine Kombination, die kein Rivale erreicht. Der Titan-Körper zählt zu den dünnsten und leichtesten überhaupt (2–3 g) und bietet zusätzlich eine Schlafapnoe-Erkennung, die selbst teureren Ringen fehlt. Wareable, Trusted Reviews und TechRadar landeten alle bei rund 4/5, und das deutsche testberichte.de bewertete ihn mit 1,9 (gut).
+Der RingConn Gen 2 hat sich still und leise zur Standard-Empfehlung für alle entwickelt, die einen Smart Ring wollen, aber kein Abo zahlen möchten. Für rund 269 € Straßenpreis (UVP 339 €) unterbietet er den Oura Ring 4 und streicht die 5,99-€/Monat-Paywall komplett: jede Messung, von Schlafphasen und HRV bis Stress und Hauttemperatur, ist für immer inklusive. Sein Aushängeschild ist der Akku: Tester sehen durchweg 10–12 Tage pro Ladung, und das mitgelieferte Lade-Case streckt die Gesamtlaufzeit auf rund 150 Tage, eine Kombination, die kein Rivale erreicht. Der Titan-Körper zählt zu den dünnsten und leichtesten überhaupt (2–3 g) und bietet zusätzlich eine Schlafapnoe-Erkennung, die selbst teureren Ringen fehlt. Wareable, Trusted Reviews und TechRadar landeten alle bei rund 4/5, und das deutsche testberichte.de bewertete ihn mit 1,9 (gut).
 
-Beim Thema Ökosystem-Reife musst du aber ehrlich bleiben: Ouras und Ultrahumans Apps sind schlicht ausgereifter. Der RingConn-Companion stopft dir viele Rohdaten in dichte Menüs, ohne sie so verständlich aufzubereiten wie die Konkurrenz, und die tiefe Fitness- und Workout-Auswertung samt Drittanbieter-Integrationen fehlt weitgehend. Dazu ist die Beschichtung kratzempfindlich und ein paar Funktionen fühlen sich noch nach Beta an. In Deutschland ist der Ring gut verfügbar — über de.ringconn.com, ringconn-germany.de und Amazon.de (Straßenpreis laut Geizhals ab rund 234 €). Wer noch leichter und günstiger einsteigen will, greift zum Gen 2 Air (ca. 239 € UVP, ohne Apnoe-Erkennung und mit etwas kürzerem Akku). Für abo-müde Käufer bleibt der Gen 2 die klare Empfehlung.
+Beim Thema Ökosystem-Reife musst du aber ehrlich bleiben: Ouras und Ultrahumans Apps sind schlicht ausgereifter. Der RingConn-Companion stopft dir viele Rohdaten in dichte Menüs, ohne sie so verständlich aufzubereiten wie die Konkurrenz, und die tiefe Fitness- und Workout-Auswertung samt Drittanbieter-Integrationen fehlt weitgehend. Dazu ist die Beschichtung kratzempfindlich und ein paar Funktionen fühlen sich noch nach Beta an. In Deutschland ist der Ring gut verfügbar: über de.ringconn.com, ringconn-germany.de und Amazon.de (Straßenpreis laut Geizhals ab rund 234 €). Wer noch leichter und günstiger einsteigen will, greift zum Gen 2 Air (ca. 239 € UVP, ohne Apnoe-Erkennung und mit etwas kürzerem Akku). Für abo-müde Käufer bleibt der Gen 2 die klare Empfehlung.

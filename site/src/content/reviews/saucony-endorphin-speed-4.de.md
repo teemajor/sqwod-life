@@ -63,6 +63,6 @@ successor:
 tags: ["footwear", "running", "super-trainer"]
 ---
 
-Der Endorphin Speed 4 bleibt der Formel treu, die diese Reihe so beliebt gemacht hat: eine PWRRUN PB-Mittelsohle mit Nylon-Platte, die genau richtig nachgibt — lebendig, aber nie hart an lockeren Tagen. RunRepeat (89/100), Running Shoes Guru (7/10) und Believe in the Run (Top Pick) sind sich einig: einer der vielseitigsten Super-Trainer überhaupt, egal ob du locker cruisst oder das Tempo anziehst.
+Der Endorphin Speed 4 bleibt der Formel treu, die diese Reihe so beliebt gemacht hat: eine PWRRUN PB-Mittelsohle mit Nylon-Platte, die genau richtig nachgibt, lebendig, aber nie hart an lockeren Tagen. RunRepeat (89/100), Running Shoes Guru (7/10) und Believe in the Run (Top Pick) sind sich einig: einer der vielseitigsten Super-Trainer überhaupt, egal ob du locker cruisst oder das Tempo anziehst.
 
-Der Haken war lange der Preis: zur UVP von 200 € wirkte er neben steiferen Konkurrenten teuer, und die Passform fällt etwas klein aus mit enger Zehenbox. Doch seit der Speed 5 im Handel ist, haben deutsche Händler den 4er auf rund 106-119 € gesenkt — aus einem sehr guten Schuh wird so eine klare Empfehlung. Achtung: Es gibt keine saubere Amazon.de-Listung von Amazon oder Saucony direkt, kauf also lieber bei etablierten Lauf-Shops.
+Der Haken war lange der Preis: zur UVP von 200 € wirkte er neben steiferen Konkurrenten teuer, und die Passform fällt etwas klein aus mit enger Zehenbox. Doch seit der Speed 5 im Handel ist, haben deutsche Händler den 4er auf rund 106-119 € gesenkt: aus einem sehr guten Schuh wird so eine klare Empfehlung. Achtung: Es gibt keine saubere Amazon.de-Listung von Amazon oder Saucony direkt, kauf also lieber bei etablierten Lauf-Shops.
