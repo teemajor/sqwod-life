@@ -273,7 +273,7 @@ async function refCode(env, email) {
 const refLink = (env, lang, code) => `${env.SITE_BASE || 'https://sqwod.life'}/${lang}/subscribe?ref=${code}`;
 
 // Milestone rewards: the Printful-synced items already in the Shopify store (Oct 2026).
-// 3 = Black Glossy Mug, 10 = Organic cotton drawstring bag, 25 = Eco Raglan Hoodie (sized).
+// 3 = Black Glossy Mug, 10 = Sqwod canvas bag, 25 = Eco Raglan Hoodie (sized).
 // The reward email carries a signed claim link; /claim collects the postal address and
 // hands it to infrastructure/swag-fulfill, which creates the free Shopify order Printful
 // ships. Override copy with REFERRAL_REWARDS_JSON. `sized` adds a size picker to the form.
@@ -285,8 +285,8 @@ const DEFAULT_REWARDS = {
   },
   10: {
     sized: false,
-    en: { subject: '10 referrals. The Sqwod gym bag is yours.', body: 'Ten people joined Sqwod Daily because of you. Your organic cotton Sqwod gym bag is ready: tap below and give us an address.', cta: 'Claim my bag' },
-    de: { subject: '10 Empfehlungen. Die Sqwod-Gymbag gehört dir.', body: 'Zehn Leute sind wegen dir bei Sqwod Daily. Deine Sqwod-Gymbag aus Bio-Baumwolle ist bereit: tipp unten und gib uns eine Adresse.', cta: 'Tasche holen' },
+    en: { subject: '10 referrals. The Sqwod canvas bag is yours.', body: 'Ten people joined Sqwod Daily because of you. Your Sqwod canvas bag is ready: tap below and give us an address.', cta: 'Claim my bag' },
+    de: { subject: '10 Empfehlungen. Die Sqwod-Canvas-Tasche gehört dir.', body: 'Zehn Leute sind wegen dir bei Sqwod Daily. Deine Sqwod-Canvas-Tasche ist bereit: tipp unten und gib uns eine Adresse.', cta: 'Tasche holen' },
   },
   25: {
     sized: true,
@@ -415,14 +415,14 @@ async function sendWelcome(env, email, lang, link) {
     head: 'Du bist dabei.',
     body: 'Die nächste Ausgabe kommt am nächsten Werktag um sechs. Lesen oder hören, fünf Minuten.',
     refHead: 'Kennst du drei Leute, die das lesen sollten?',
-    refBody: 'Das ist dein persönlicher Link. Drei bestätigte Anmeldungen darüber, und wir schicken dir die Sqwod-Tasse. Bei zehn die Gymbag, bei 25 den Hoodie. Wir zählen für dich.',
+    refBody: 'Das ist dein persönlicher Link. Drei bestätigte Anmeldungen darüber, und wir schicken dir die Sqwod-Tasse. Bei zehn die Canvas-Tasche, bei 25 den Hoodie. Wir zählen für dich.',
     cta: 'Link kopieren und teilen',
   } : {
     subject: 'Welcome to Sqwod Daily. Here is your referral link.',
     head: "You're in.",
     body: 'The next issue lands on the next weekday at six. Read it or hear it, five minutes.',
     refHead: 'Know three people who should read this?',
-    refBody: 'This is your personal link. Three confirmed sign-ups through it and we ship you the Sqwod mug. Ten gets the gym bag, twenty-five the hoodie. We count for you.',
+    refBody: 'This is your personal link. Three confirmed sign-ups through it and we ship you the Sqwod mug. Ten gets the canvas bag, twenty-five the hoodie. We count for you.',
     cta: 'Copy and share your link',
   };
   const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:560px;color:#111;line-height:1.6">

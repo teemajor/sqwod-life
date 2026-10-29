@@ -1,5 +1,5 @@
 ---
-// Referral programme: refer 3 confirmed readers, get the Sqwod mug (10: gym bag, 25: hoodie).
+// Referral programme: refer 3 confirmed readers, get the Sqwod mug (10: canvas bag, 25: hoodie).
 // Every subscriber already has their link in the welcome email; this page re-sends
 // it (POST /refer on the subscribe Worker, which only emails addresses on the list).
 import Base from '../../layouts/Base.astro';
@@ -13,7 +13,7 @@ const lang = Astro.params.lang as Lang;
 const endpoint = SUBSCRIBE.endpoint ? SUBSCRIBE.endpoint.replace(/\/subscribe$/, '') + '/refer' : '';
 const c = lang === 'de' ? {
   title: 'Teile Sqwod Daily, hol dir die Tasse',
-  blurb: 'Drei Leute, die sich über deinen persönlichen Link anmelden und bestätigen, und wir schicken dir die schwarze Sqwod-Tasse. Bei zehn die Gymbag aus Bio-Baumwolle, bei 25 den Hoodie.',
+  blurb: 'Drei Leute, die sich über deinen persönlichen Link anmelden und bestätigen, und wir schicken dir die schwarze Sqwod-Tasse. Bei zehn die Sqwod-Canvas-Tasche, bei 25 den Hoodie.',
   how: ['Deinen Link hast du in der Willkommensmail. Hier bekommst du ihn nochmal.', 'Teile ihn per WhatsApp, LinkedIn oder im Team-Chat.', 'Wir zählen nur bestätigte Anmeldungen. Keine Bots, keine Doppelten.'],
   email: 'Deine E-Mail-Adresse (die, mit der du Sqwod Daily bekommst)', cta: 'Meinen Link schicken',
   sent: 'Wenn diese Adresse auf der Liste ist, liegt dein Link mit deinem aktuellen Stand in wenigen Minuten im Postfach.',
@@ -21,7 +21,7 @@ const c = lang === 'de' ? {
   notyet: 'Noch kein Abo?', sub: 'Kostenlos abonnieren',
 } : {
   title: 'Share Sqwod Daily, get the mug',
-  blurb: 'Three people who sign up through your personal link and confirm, and we ship you the black Sqwod mug. Ten gets the organic cotton gym bag, twenty-five the hoodie.',
+  blurb: 'Three people who sign up through your personal link and confirm, and we ship you the black Sqwod mug. Ten gets the Sqwod canvas bag, twenty-five the hoodie.',
   how: ['Your link is in your welcome email. Get it again here.', 'Share it on WhatsApp, LinkedIn or the team chat.', 'We count confirmed sign-ups only. No bots, no duplicates.'],
   email: 'Your email (the one Sqwod Daily goes to)', cta: 'Send me my link',
   sent: "If that address is on the list, your link and current count are in your inbox within a few minutes.",
