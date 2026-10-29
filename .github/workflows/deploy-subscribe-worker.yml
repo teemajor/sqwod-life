@@ -16,6 +16,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # The referral ledger + rate limiting live in a KV namespace. Create it once
+      # (idempotent: looks it up by title first) and bind it for this deploy, so
+      # nobody has to run wrangler locally. Needs "Workers KV Storage: Edit" on the token.
+      - name: Ensure the SUBS_KV namespace exists and bind it
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          API="https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/storage/kv/namespaces"
+          ID=$(curl -sf -H "Authorization: Bearer $CF_TOKEN" "$API?per_page=100" | jq -r '.result[] | select(.title=="sqwod-subscribe-SUBS_KV") | .id' | head -n1)
+          if [ -z "$ID" ]; then
+            ID=$(curl -sf -X POST -H "Authorization: Bearer $CF_TOKEN" -H "content-type: application/json" "$API" -d '{"title":"sqwod-subscribe-SUBS_KV"}' | jq -r '.result.id')
+            echo "created KV namespace $ID"
+          else
+            echo "KV namespace exists: $ID"
+          fi
+          if [ -n "$ID" ] && [ "$ID" != "null" ]; then
+            printf '\n[[kv_namespaces]]\nbinding = "SUBS_KV"\nid = "%s"\n' "$ID" >> infrastructure/subscribe/wrangler.toml
+          else
+            echo "::warning title=Subscribe worker::Could not create/find the KV namespace (token lacks Workers KV Storage: Edit?). Deploying without it: rate limiting and referrals stay off."
+          fi
       - name: Deploy subscribe worker
         uses: cloudflare/wrangler-action@v3
         with:

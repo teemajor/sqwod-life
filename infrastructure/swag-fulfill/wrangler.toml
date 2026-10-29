@@ -4,10 +4,16 @@ compatibility_date = "2025-06-01"
 
 [vars]
 SHOPIFY_STORE = "sqwodpod.myshopify.com"
-# milestone (referral count) → Shopify variant id (defaults: sticker / tee-M / hoodie-M).
-# Created as DRAFT products — link them in Printful, then set live + adjust size handling.
-REWARDS_JSON = "{\"3\":\"54136504811853\",\"10\":\"54136503763277\",\"25\":\"54136503894349\"}"
+# milestone (referral count) → reward (see worker.js header for the three shapes).
+#   3  Black Glossy Mug (Printful-synced, ARCHIVED in Shopify: set Active)
+#   10 Sqwod canvas bag: exists in Printful only. Push it to the Sqwod Pod store from
+#      Printful, then in Shopify give the product the URL handle "sqwod-canvas-bag"
+#      (Search engine listing → URL handle). The worker finds the variant by handle.
+#   25 Eco Raglan Hoodie, black, by size (Printful-synced, ARCHIVED: set Active)
+# The DRAFT "Sqwod Sticker Pack" is not linked to Printful; add it the same way later.
+REWARDS_JSON = "{\"3\":\"44069279236385\",\"10\":{\"handle\":\"sqwod-canvas-bag\"},\"25\":{\"XS\":\"46536782119245\",\"S\":\"46536782152013\",\"M\":\"46536782184781\",\"L\":\"46536782217549\",\"XL\":\"46536782250317\"}}"
 
-# Secrets (not stored here):
-#   wrangler secret put SHOPIFY_ADMIN_TOKEN
-#   wrangler secret put BEEHIIV_WEBHOOK_SECRET
+# Secrets (not stored here). Set once with wrangler, or as GitHub secrets consumed by
+# .github/workflows/deploy-swag-worker.yml:
+#   SHOPIFY_ADMIN_TOKEN   Shopify Admin API token (Orders: write, Products: read)
+#   SWAG_SECRET           same value as the subscribe Worker's SWAG_SECRET

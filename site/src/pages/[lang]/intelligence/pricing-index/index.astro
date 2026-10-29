@@ -512,7 +512,7 @@ function unlock() {
     var done = function () { try { if (window.umami) window.umami.track('pricing-index-unlocked'); } catch (e) {} unlock(); };
     if (!PI.subscribe) { done(); return; }
     fetch(PI.subscribe, { method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ email: email, lang: 'en', source: 'pricing-index', role: 'coach', ts: loadedAt }) })
+      body: JSON.stringify({ email: email, lang: 'en', source: 'pricing-index', role: 'coach', ts: loadedAt, ref: (function () { try { return localStorage.getItem('sqwod_ref') || ''; } catch (e) { return ''; } })() }) })
       .catch(function () {}).then(done);
   });
 })();

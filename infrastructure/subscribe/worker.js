@@ -12,7 +12,27 @@
  *                       emails a confirmation link, redirects to ?status=pending.
  *   GET  /confirm?t=… ← verifies the token, creates the contact in the matching
  *                       segment with locale/signup_source/confirmed_at, then
- *                       redirects to ?status=confirmed.
+ *                       redirects to ?status=confirmed. Also: mints the new
+ *                       subscriber's referral code, credits the referrer (if the
+ *                       sign-up carried ?ref=CODE), sends the welcome email with
+ *                       the subscriber's own referral link, and sends the reward
+ *                       email when a referrer hits a milestone.
+ *   POST /refer       ← email + lang: re-sends a subscriber their referral link
+ *                       and current count (only if the address is on the list;
+ *                       the response never reveals whether it is).
+ *   POST /claim       ← signed token from the reward email + postal address:
+ *                       forwards to the swag Worker (free Shopify order, Printful
+ *                       ships) and emails the team a record. Once per milestone.
+ *
+ * Referral programme (needs the SUBS_KV binding; without it referrals are ignored):
+ *   code      = first 10 hex chars of HMAC(CONFIRM_SECRET, "ref:" + email), so a
+ *               subscriber's code is stable and needs no table.
+ *   link      = SITE_BASE/<lang>/subscribe?ref=<code>   (forms carry ?ref through)
+ *   KV keys   = ref:<code> → email · refcount:<code> → n · refd:<email> → code
+ *   Resend    = contact properties ref_code, referred_by, referral_count
+ *   rewards   = REFERRAL_REWARDS_JSON, {"3":{"en":{"subject":..,"body":..,"url":..},"de":{..}}, ...}
+ *               (defaults below); optional SWAG_WORKER_URL + SWAG_SECRET also POST
+ *               {email, milestone} to infrastructure/swag-fulfill for physical rewards.
  *
  * Secrets (wrangler secret put …):
  *   RESEND_API_KEY     re_…
@@ -29,8 +49,13 @@
  *   ALLOW_ORIGIN       e.g. https://sqwod.life (CORS + origin gate)
  *   CONFIRM_TTL_HOURS  token lifetime, default 48
  *   MIN_FILL_MS        minimum time-on-form in ms, default 2500
+ *   REFERRAL_REWARDS_JSON  optional override of the milestone rewards (see above)
+ *   SWAG_WORKER_URL    e.g. https://sqwod-swag-fulfill.<account>.workers.dev (physical rewards)
+ *   CLAIMS_TO          where claim records go (default RESEND_FROM)
+ * Secrets: SWAG_SECRET  shared secret for the swag Worker (same value on both)
  * Bindings (optional but recommended):
- *   SUBS_KV            KV namespace used for per-IP rate limiting
+ *   SUBS_KV            KV namespace: per-IP rate limiting + referral ledger
+ *                      (created automatically by .github/workflows/deploy-subscribe-worker.yml)
  */
 const EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 const MAX_EMAIL = 254;
@@ -65,6 +90,8 @@ export default {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: cors(env) });
     if (req.method === 'POST' && url.pathname === '/subscribe') return subscribe(req, env);
     if (req.method === 'GET' && url.pathname === '/confirm') return confirm(req, env, url);
+    if (req.method === 'POST' && url.pathname === '/refer') return refer(req, env);
+    if (req.method === 'POST' && url.pathname === '/claim') return claim(req, env);
     return new Response('Sqwod subscribe', { status: 200 });
   },
 };
@@ -109,7 +136,7 @@ async function subscribe(req, env) {
   const ct = req.headers.get('content-type') || '';
   const wantsJson = ct.includes('application/json');
 
-  let email = '', lang = 'en', hp = '', source = '', ts = 0, role = '';
+  let email = '', lang = 'en', hp = '', source = '', ts = 0, role = '', ref = '';
   if (wantsJson) {
     const b = await req.json().catch(() => ({}));
     email = (b.email || '').toString().trim().toLowerCase();
@@ -118,6 +145,7 @@ async function subscribe(req, env) {
     source = (b.source || '').toString().slice(0, 60);
     ts = parseInt(b.ts, 10) || 0;
     role = cleanRole(b.role);
+    ref = cleanRef(b.ref);
   } else {
     const form = await req.formData();
     email = (form.get('email') || '').toString().trim().toLowerCase();
@@ -126,6 +154,7 @@ async function subscribe(req, env) {
     source = (form.get('source') || '').toString().slice(0, 60);
     ts = parseInt(form.get('ts'), 10) || 0;
     role = cleanRole(form.get('role'));
+    ref = cleanRef(form.get('ref'));
   }
 
   const base = env.SITE_BASE || 'https://sqwod.life';
@@ -177,6 +206,7 @@ async function subscribe(req, env) {
     l: lang,
     s: source || 'site',
     r: role,
+    f: ref,                                   // referrer's code, credited on confirm
     x: Date.now() + ttlHours * 3600 * 1000,
   }, env.CONFIRM_SECRET);
 
@@ -220,7 +250,230 @@ async function confirm(req, env, url) {
     console.log('resend contact error', r.status, (await r.text()).slice(0, 200));
     return redirect(`${base}/${lang}/subscribe?status=error`);
   }
+  // Referral bookkeeping + welcome email only for a genuinely NEW contact, so a
+  // re-confirm can never credit a referrer twice or re-send the welcome.
+  if (r.ok) {
+    try { await onNewSubscriber(env, data.e, lang, data.f || ''); } catch (e) { console.log('referral step failed', String(e).slice(0, 200)); }
+  }
   return redirect(`${base}/${lang}/subscribe?status=confirmed`);
+}
+
+/* ------------------------------------------------------------ referrals ----
+ * No table of codes: a subscriber's code is derived from their email with the
+ * signing secret, so it is stable, unguessable and needs nothing stored to issue.
+ * KV only maps code → email (for crediting) and keeps the counts.
+ */
+const REF_RE = /^[a-f0-9]{10}$/;
+const cleanRef = (v) => { const r = (v || '').toString().trim().toLowerCase(); return REF_RE.test(r) ? r : ''; };
+async function refCode(env, email) {
+  const key = await hmacKey(env.CONFIRM_SECRET);
+  const mac = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode('ref:' + email));
+  return [...new Uint8Array(mac)].slice(0, 5).map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+const refLink = (env, lang, code) => `${env.SITE_BASE || 'https://sqwod.life'}/${lang}/subscribe?ref=${code}`;
+
+// Milestone rewards: the Printful-synced items already in the Shopify store (Oct 2026).
+// 3 = Black Glossy Mug, 10 = Sqwod canvas bag, 25 = Eco Raglan Hoodie (sized).
+// The reward email carries a signed claim link; /claim collects the postal address and
+// hands it to infrastructure/swag-fulfill, which creates the free Shopify order Printful
+// ships. Override copy with REFERRAL_REWARDS_JSON. `sized` adds a size picker to the form.
+const DEFAULT_REWARDS = {
+  3: {
+    sized: false,
+    en: { subject: 'You brought 3 people to Sqwod Daily. The mug is yours.', body: 'Three confirmed referrals. Thank you. Your black Sqwod mug is ready to ship: tap below, give us a postal address, and it goes out from Printful within days.', cta: 'Claim my mug' },
+    de: { subject: 'Du hast 3 Leute zu Sqwod Daily gebracht. Die Tasse gehört dir.', body: 'Drei bestätigte Empfehlungen. Danke. Deine schwarze Sqwod-Tasse ist versandbereit: tipp unten, gib uns eine Postadresse, und sie geht innerhalb weniger Tage raus.', cta: 'Tasse holen' },
+  },
+  10: {
+    sized: false,
+    en: { subject: '10 referrals. The Sqwod canvas bag is yours.', body: 'Ten people joined Sqwod Daily because of you. Your Sqwod canvas bag is ready: tap below and give us an address.', cta: 'Claim my bag' },
+    de: { subject: '10 Empfehlungen. Die Sqwod-Canvas-Tasche gehört dir.', body: 'Zehn Leute sind wegen dir bei Sqwod Daily. Deine Sqwod-Canvas-Tasche ist bereit: tipp unten und gib uns eine Adresse.', cta: 'Tasche holen' },
+  },
+  25: {
+    sized: true,
+    en: { subject: '25 referrals. Hoodie time.', body: 'Twenty-five people joined Sqwod Daily through your link. Pick your size and give us an address, and the black Sqwod hoodie ships.', cta: 'Claim my hoodie' },
+    de: { subject: '25 Empfehlungen. Hoodie-Zeit.', body: 'Fünfundzwanzig Leute sind über deinen Link zu Sqwod Daily gekommen. Wähl deine Größe, gib uns eine Adresse, und der schwarze Sqwod-Hoodie geht raus.', cta: 'Hoodie holen' },
+  },
+};
+function rewards(env) {
+  try { const o = JSON.parse(env.REFERRAL_REWARDS_JSON || ''); if (o && typeof o === 'object') return o; } catch (_) {}
+  return DEFAULT_REWARDS;
+}
+
+async function resendPatch(env, email, properties) {
+  const r = await fetch(`https://api.resend.com/contacts/${encodeURIComponent(email)}`, {
+    method: 'PATCH',
+    headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ properties }),
+  });
+  if (!r.ok) console.log('resend patch error', r.status, (await r.text()).slice(0, 160));
+  return r.ok;
+}
+async function resendHas(env, email) {
+  const r = await fetch(`https://api.resend.com/contacts/${encodeURIComponent(email)}`, { headers: { Authorization: `Bearer ${env.RESEND_API_KEY}` } });
+  return r.ok;
+}
+
+async function onNewSubscriber(env, email, lang, referredBy) {
+  const code = await refCode(env, email);
+  const props = { ref_code: code };
+  let credited = '';
+  if (env.SUBS_KV) {
+    await env.SUBS_KV.put(`ref:${code}`, email);
+    if (referredBy && referredBy !== code && !(await env.SUBS_KV.get(`refd:${email}`))) {
+      const referrer = await env.SUBS_KV.get(`ref:${referredBy}`);
+      if (referrer && referrer !== email) {
+        await env.SUBS_KV.put(`refd:${email}`, referredBy);           // this address is credited once, ever
+        const n = (parseInt(await env.SUBS_KV.get(`refcount:${referredBy}`), 10) || 0) + 1;
+        await env.SUBS_KV.put(`refcount:${referredBy}`, String(n));
+        await resendPatch(env, referrer, { referral_count: n });
+        credited = referredBy;
+        const tier = rewards(env)[String(n)];
+        if (tier) await sendReward(env, referrer, n, tier);
+      }
+    }
+  }
+  if (credited) props.referred_by = credited;
+  await resendPatch(env, email, props);
+  await sendWelcome(env, email, lang, refLink(env, lang, code));
+}
+
+async function sendReward(env, email, n, tier) {
+  const rl = await resendHas(env, email) ? await refLang(env, email) : 'en';
+  const t = tier[rl] || tier.en || Object.values(tier)[0];
+  if (!t || !t.subject) return;
+  // Signed claim link, valid 90 days: the /claim page collects the postal address.
+  const token = await sign({ e: email, m: n, l: rl, x: Date.now() + 90 * 86400e3 }, env.CONFIRM_SECRET);
+  const url = `${env.SITE_BASE || 'https://sqwod.life'}/${rl}/claim?t=${encodeURIComponent(token)}`;
+  const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:560px;color:#111;line-height:1.6">
+<p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#777">Sqwod Daily · ${n} referrals</p>
+<h2 style="margin:4px 0 10px">${esc(t.subject)}</h2><p>${esc(t.body)}</p>
+<p><a href="${url}" style="display:inline-block;background:#0a0a0a;color:#fff;text-decoration:none;font-weight:800;padding:12px 22px;border-radius:999px">${esc(t.cta || 'Claim')}</a></p>
+<p style="font-size:12px;color:#8a8a8a;word-break:break-all">${url}</p></div>`;
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ from: env.RESEND_FROM || 'Sqwod Daily <daily@sqwod.life>', to: email, subject: t.subject, html, text: `${t.subject}\n\n${t.body}\n\n${url}` }),
+  });
+}
+
+/* ---------------------------------------------------------------- POST /claim
+ * The /claim page posts the address with the signed token from the reward email.
+ * Each (email, milestone) can be claimed once (KV). The order itself is created by
+ * infrastructure/swag-fulfill (SWAG_WORKER_URL + SWAG_SECRET); without those two the
+ * claim is recorded and emailed to RESEND_REPLY_TO / RESEND_FROM for manual shipping.
+ */
+const COUNTRY_RE = /^[A-Z]{2}$/;
+async function claim(req, env) {
+  const f = await req.formData().catch(() => null);
+  const base = env.SITE_BASE || 'https://sqwod.life';
+  const g = (k) => (f && f.get(k) ? f.get(k).toString().trim().slice(0, 120) : '');
+  const data = env.CONFIRM_SECRET && f ? await verify(g('t'), env.CONFIRM_SECRET) : null;
+  const lang = data && data.l === 'de' ? 'de' : (g('lang') === 'de' ? 'de' : 'en');
+  const back = (st) => redirect(`${base}/${lang}/claim?status=${st}`);
+  if (!data || !data.e || !data.m) return back('invalid');
+  if (!data.x || Date.now() > data.x) return back('expired');
+  if (g('company')) return back('claimed');                                 // honeypot
+  const allow = env.ALLOW_ORIGIN;
+  if (allow) { const o = req.headers.get('origin') || '', rf = req.headers.get('referer') || ''; if (!(o === allow || (!o && rf.startsWith(allow + '/')))) return back('error'); }
+  const ship = {
+    first_name: g('first_name'), last_name: g('last_name'), address1: g('address1'), address2: g('address2'),
+    city: g('city'), zip: g('zip'), country_code: g('country').toUpperCase(),
+  };
+  if (!ship.first_name || !ship.last_name || !ship.address1 || !ship.city || !ship.zip || !COUNTRY_RE.test(ship.country_code)) return back('error');
+  const size = g('size').toUpperCase().slice(0, 4);
+  const key = `claimed:${data.e}:${data.m}`;
+  if (env.SUBS_KV && (await env.SUBS_KV.get(key))) return back('claimed');
+  let ok = false, detail = '';
+  if (env.SWAG_WORKER_URL && env.SWAG_SECRET) {
+    const r = await fetch(`${env.SWAG_WORKER_URL.replace(/\/$/, '')}/reward`, {
+      method: 'POST', headers: { 'content-type': 'application/json', 'X-Sqwod-Secret': env.SWAG_SECRET },
+      body: JSON.stringify({ email: data.e, milestone: data.m, size, shipping_address: ship }),
+    }).catch(() => null);
+    ok = !!(r && r.ok); detail = r ? `${r.status} ${(await r.text().catch(() => '')).slice(0, 200)}` : 'no response';
+  }
+  // Always tell the team: the order record if it worked, the address if it did not.
+  const to = env.CLAIMS_TO || env.RESEND_FROM || 'daily@sqwod.life';
+  const addr = `${ship.first_name} ${ship.last_name}\n${ship.address1}${ship.address2 ? '\n' + ship.address2 : ''}\n${ship.zip} ${ship.city}\n${ship.country_code}${size ? '\nSize: ' + size : ''}`;
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ from: env.RESEND_FROM || 'Sqwod Daily <daily@sqwod.life>', to, subject: `${ok ? '✅' : '📦 MANUAL'} Referral reward claimed: milestone ${data.m} by ${data.e}`, text: `${ok ? 'Shopify order created via the swag Worker.' : `Swag Worker ${env.SWAG_WORKER_URL ? 'failed: ' + detail : 'not configured'}. Ship this one by hand:`}\n\n${addr}` }),
+  }).catch(() => {});
+  if (env.SUBS_KV) await env.SUBS_KV.put(key, new Date().toISOString());
+  return back('claimed');
+}
+async function refLang(env, email) {
+  try {
+    const r = await fetch(`https://api.resend.com/contacts/${encodeURIComponent(email)}`, { headers: { Authorization: `Bearer ${env.RESEND_API_KEY}` } });
+    const j = r.ok ? await r.json() : null;
+    return (j?.properties?.locale || j?.data?.properties?.locale) === 'de' ? 'de' : 'en';
+  } catch (_) { return 'en'; }
+}
+
+const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+async function sendWelcome(env, email, lang, link) {
+  const t = lang === 'de' ? {
+    subject: 'Willkommen bei Sqwod Daily. Hier ist dein Empfehlungslink.',
+    head: 'Du bist dabei.',
+    body: 'Die nächste Ausgabe kommt am nächsten Werktag um sechs. Lesen oder hören, fünf Minuten.',
+    refHead: 'Kennst du drei Leute, die das lesen sollten?',
+    refBody: 'Das ist dein persönlicher Link. Drei bestätigte Anmeldungen darüber, und wir schicken dir die Sqwod-Tasse. Bei zehn die Canvas-Tasche, bei 25 den Hoodie. Wir zählen für dich.',
+    cta: 'Link kopieren und teilen',
+  } : {
+    subject: 'Welcome to Sqwod Daily. Here is your referral link.',
+    head: "You're in.",
+    body: 'The next issue lands on the next weekday at six. Read it or hear it, five minutes.',
+    refHead: 'Know three people who should read this?',
+    refBody: 'This is your personal link. Three confirmed sign-ups through it and we ship you the Sqwod mug. Ten gets the canvas bag, twenty-five the hoodie. We count for you.',
+    cta: 'Copy and share your link',
+  };
+  const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:560px;color:#111;line-height:1.6">
+<p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#777">Sqwod Daily</p>
+<h2 style="margin:4px 0 10px">${t.head}</h2><p>${t.body}</p>
+<h3 style="margin:22px 0 6px">${t.refHead}</h3><p style="margin:0 0 10px">${t.refBody}</p>
+<p style="background:#f4f4f4;padding:12px 14px;border-radius:10px;word-break:break-all;font-family:ui-monospace,Menlo,monospace;font-size:14px"><a href="${link}" style="color:#111">${link}</a></p>
+<p><a href="${link}" style="display:inline-block;background:#0a0a0a;color:#fff;text-decoration:none;font-weight:800;padding:12px 22px;border-radius:999px">${t.cta}</a></p></div>`;
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ from: env.RESEND_FROM || 'Sqwod Daily <daily@sqwod.life>', to: email, subject: t.subject, html, text: `${t.head}\n\n${t.body}\n\n${t.refHead}\n${t.refBody}\n\n${link}` }),
+  });
+}
+
+/* ---------------------------------------------------------------- POST /refer
+ * The /refer page: a subscriber asks for their link again. We email it (with the
+ * count) only if the address is on the list, and answer the same way either way.
+ */
+async function refer(req, env) {
+  const ct = req.headers.get('content-type') || '';
+  const wantsJson = ct.includes('application/json');
+  let email = '', lang = 'en', hp = '';
+  if (wantsJson) { const b = await req.json().catch(() => ({})); email = (b.email || '').toString().trim().toLowerCase(); lang = b.lang === 'de' ? 'de' : 'en'; hp = (b.company || '').toString(); }
+  else { const f = await req.formData(); email = (f.get('email') || '').toString().trim().toLowerCase(); lang = (f.get('lang') || '') === 'de' ? 'de' : 'en'; hp = (f.get('company') || '').toString(); }
+  const base = env.SITE_BASE || 'https://sqwod.life';
+  const done = () => (wantsJson ? json({ ok: true }, 200, env) : redirect(`${base}/${lang}/refer?status=sent`));
+  if (hp) return done();
+  const allow = env.ALLOW_ORIGIN;
+  if (allow) { const o = req.headers.get('origin') || '', rf = req.headers.get('referer') || ''; if (!(o === allow || (!o && rf.startsWith(allow + '/')))) return wantsJson ? json({ ok: false, error: 'origin' }, 403, env) : redirect(`${base}/${lang}/refer?status=error`); }
+  if (!EMAIL_RE.test(email) || email.length > MAX_EMAIL) return wantsJson ? json({ ok: false, error: 'invalid_email' }, 400, env) : redirect(`${base}/${lang}/refer?status=error`);
+  const ip = req.headers.get('cf-connecting-ip') || '';
+  if (env.SUBS_KV && ip) {
+    const key = `rate:refer:${ip}`;
+    const seen = parseInt(await env.SUBS_KV.get(key), 10) || 0;
+    if (seen >= RATE_MAX) return done();
+    await env.SUBS_KV.put(key, String(seen + 1), { expirationTtl: RATE_WINDOW });
+  }
+  if (!env.CONFIRM_SECRET || !(await resendHas(env, email))) return done();
+  const code = await refCode(env, email);
+  if (env.SUBS_KV) await env.SUBS_KV.put(`ref:${code}`, email);          // self-heals contacts from before the programme
+  const n = env.SUBS_KV ? parseInt(await env.SUBS_KV.get(`refcount:${code}`), 10) || 0 : 0;
+  const link = refLink(env, lang, code);
+  const t = lang === 'de'
+    ? { subject: 'Dein Sqwod-Empfehlungslink', body: `Dein persönlicher Link. Bisher ${n} bestätigte Empfehlung${n === 1 ? '' : 'en'}. Drei, und wir schicken dir die Sqwod-Tasse.` }
+    : { subject: 'Your Sqwod referral link', body: `Your personal link. ${n} confirmed referral${n === 1 ? '' : 's'} so far. Three, and we ship you the Sqwod mug.` };
+  const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:560px;color:#111;line-height:1.6"><p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#777">Sqwod Daily</p><h2 style="margin:4px 0 10px">${t.subject}</h2><p>${t.body}</p><p style="background:#f4f4f4;padding:12px 14px;border-radius:10px;word-break:break-all;font-family:ui-monospace,Menlo,monospace;font-size:14px"><a href="${link}" style="color:#111">${link}</a></p></div>`;
+  await fetch('https://api.resend.com/emails', {
+    method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ from: env.RESEND_FROM || 'Sqwod Daily <daily@sqwod.life>', to: email, subject: t.subject, html, text: `${t.body}\n\n${link}` }),
+  });
+  return done();
 }
 
 /* ------------------------------------------------------- confirmation email */

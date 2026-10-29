@@ -1,0 +1,32 @@
+name: Deploy Cloudflare Worker (swag fulfilment)
+
+# Ships infrastructure/swag-fulfill/worker.js to Cloudflare on push and pushes its two
+# secrets from GitHub, so the referral rewards (mug / bag / hoodie via Printful) need no
+# local wrangler. Add once: repo secrets SHOPIFY_ADMIN_TOKEN and SWAG_SECRET (the same
+# value the subscribe Worker uses).
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'infrastructure/swag-fulfill/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy swag worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: infrastructure/swag-fulfill
+          command: deploy
+          secrets: |
+            SHOPIFY_ADMIN_TOKEN
+            SWAG_SECRET
+        env:
+          SHOPIFY_ADMIN_TOKEN: ${{ secrets.SHOPIFY_ADMIN_TOKEN }}
+          SWAG_SECRET: ${{ secrets.SWAG_SECRET }}

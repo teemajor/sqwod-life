@@ -9,12 +9,21 @@
  *
  * Secrets (wrangler secret put …):
  *   SHOPIFY_ADMIN_TOKEN     Admin API access token (Orders: write, Products: read)
- *   BEEHIIV_WEBHOOK_SECRET  shared secret you set on the beehiiv webhook
+ *   SWAG_SECRET             shared secret the subscribe Worker sends as X-Sqwod-Secret
+ *                           (BEEHIIV_WEBHOOK_SECRET still accepted for the legacy beehiiv hook)
  * Vars (wrangler.toml [vars]):
  *   SHOPIFY_STORE           e.g. sqwodpod.myshopify.com
- *   REWARDS_JSON            map of milestone → Shopify variant id, e.g.
- *                           {"3":"gid://...sticker","10":"...tee","25":"...hoodie"}
+ *   REWARDS_JSON            map of milestone → reward. A reward is one of:
+ *                             "44069279236385"              a Shopify variant id
+ *                             {"S":"…","M":"…"}             variant ids by size (claim's `size`)
+ *                             {"handle":"sqwod-canvas-bag"} a Shopify product handle; the
+ *                                 variant is looked up at order time (by size title when the
+ *                                 claim carries one, else the first variant). Lets you push a
+ *                                 product from Printful and name it once, no id hunting.
  *                           (numeric keys = referral count thresholds)
+ *
+ * Caller today: infrastructure/subscribe (POST /claim) sends
+ *   {email, milestone, size?, shipping_address:{first_name,last_name,address1,address2,city,zip,country_code}}
  */
 const API = '2024-10';
 const json = (o, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { 'content-type': 'application/json' } });
@@ -30,7 +39,8 @@ export default {
 async function reward(req, env) {
   // 1) authenticate the webhook (shared secret in header or query)
   const secret = req.headers.get('X-Sqwod-Secret') || new URL(req.url).searchParams.get('secret');
-  if (!env.BEEHIIV_WEBHOOK_SECRET || secret !== env.BEEHIIV_WEBHOOK_SECRET) return json({ error: 'unauthorized' }, 401);
+  const expected = env.SWAG_SECRET || env.BEEHIIV_WEBHOOK_SECRET;
+  if (!expected || secret !== expected) return json({ error: 'unauthorized' }, 401);
 
   const p = await req.json().catch(() => ({}));
   // beehiiv payloads vary — accept the common shapes. Adjust keys to your webhook.
@@ -42,8 +52,16 @@ async function reward(req, env) {
   // 2) map milestone → Shopify variant
   let rewards = {};
   try { rewards = JSON.parse(env.REWARDS_JSON || '{}'); } catch {}
-  const variantId = rewards[milestone];
+  let variantId = rewards[milestone];
+  const size = String(p.size || '').toUpperCase();
+  if (variantId && typeof variantId === 'object' && variantId.handle) {   // product handle → variant
+    variantId = await variantByHandle(env, variantId.handle, size);
+    if (!variantId) return json({ error: `no product with handle "${rewards[milestone].handle}" in Shopify (push it from Printful, then set its URL handle)` }, 404);
+  } else if (variantId && typeof variantId === 'object') {               // sized item
+    variantId = variantId[size] || variantId.M || Object.values(variantId)[0];
+  }
   if (!variantId) return json({ skipped: `no reward configured for milestone ${milestone}` });
+  if (!ship) return json({ error: 'shipping_address required: a physical reward cannot ship without one' }, 400);
 
   // 3) create a free order (100% discount) so Printful fulfills it
   const order = {
@@ -67,6 +85,19 @@ async function reward(req, env) {
   if (!r.ok) return json({ error: 'shopify order failed', detail: (await r.text()).slice(0, 300) }, 502);
   const created = await r.json();
   return json({ ok: true, orderId: created.order?.id, milestone, email });
+}
+
+// Product handle → variant id (first variant, or the one whose title contains the size).
+async function variantByHandle(env, handle, size) {
+  const r = await fetch(`https://${env.SHOPIFY_STORE}/admin/api/${API}/products.json?handle=${encodeURIComponent(handle)}&fields=id,variants`, {
+    headers: { 'X-Shopify-Access-Token': env.SHOPIFY_ADMIN_TOKEN },
+  });
+  if (!r.ok) return null;
+  const prod = ((await r.json()).products || [])[0];
+  const vs = prod?.variants || [];
+  if (!vs.length) return null;
+  const bySize = size ? vs.find((v) => String(v.title).toUpperCase().split(/\s*\/\s*/).includes(size)) : null;
+  return (bySize || vs[0]).id;
 }
 
 // accept either a numeric variant id or a gid://shopify/ProductVariant/123

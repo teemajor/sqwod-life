@@ -74,3 +74,22 @@ Resend click tracking rewrites the confirmation link. Corporate mail scanners
 that pre-fetch links can therefore auto-confirm an address. That is inherent to
 double opt-in with click tracking on, and it is a much smaller problem than
 unverified bot sign-ups.
+
+
+## Referral programme ("refer 3, get the report")
+
+Built into this Worker. Every subscriber has a stable code derived from their email
+(`HMAC(CONFIRM_SECRET, "ref:" + email)`, first 10 hex chars), so no table of codes exists.
+
+```
+welcome email (sent on confirm) carries   https://sqwod.life/<lang>/subscribe?ref=<code>
+↓ friend lands anywhere on the site with ?ref= → remembered in localStorage → sent as `ref` with the sign-up
+↓ friend confirms → contact created → referrer credited ONCE per friend (KV: refd:<email>)
+↓ KV refcount:<code> += 1 → Resend property referral_count on the referrer
+↓ at 3 (and 10) → reward email to the referrer (REFERRAL_REWARDS_JSON, defaults in worker.js)
+```
+
+- `/refer` page (`site/src/pages/[lang]/refer.astro`) → `POST /refer` re-sends a subscriber their link + count. It only emails addresses that are on the list and answers identically either way.
+- Resend contact properties used: `ref_code`, `referred_by`, `referral_count` (created 2026-10-28).
+- KV: `.github/workflows/deploy-subscribe-worker.yml` creates the `sqwod-subscribe-SUBS_KV` namespace on first deploy (needs **Workers KV Storage: Edit** on `CLOUDFLARE_API_TOKEN`) and binds it. Without KV, sign-ups still work; referrals are simply not counted.
+- Rewards: 3 = Black Glossy Mug, 10 = Sqwod canvas bag, 25 = Eco Raglan Hoodie (sized). Mug and hoodie are Printful-synced products already in the Shopify store (set them from Archived to Active once); the canvas bag is pushed from Printful and found by its Shopify handle `sqwod-canvas-bag` (`infrastructure/swag-fulfill/wrangler.toml`). The reward email carries a signed 90-day claim link → `/[lang]/claim` collects the postal address → `POST /claim` → swag Worker creates the free Shopify order → Printful ships. Every claim is also emailed to `CLAIMS_TO` (default `RESEND_FROM`); if the swag Worker is unset or fails, that email is flagged MANUAL and carries the address. Set var `SWAG_WORKER_URL` + secret `SWAG_SECRET` on this Worker (same secret on the swag Worker; `.github/workflows/deploy-swag-worker.yml` pushes it from the GitHub secret of the same name, next to `SHOPIFY_ADMIN_TOKEN`). Override copy with `REFERRAL_REWARDS_JSON`.

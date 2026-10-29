@@ -44,6 +44,7 @@ const emailId = `${groupId}-email`;
       <input type="hidden" name="lang" value={lang} />
       <input type="hidden" name="source" value={source} />
       <input type="hidden" name="ts" class="sb-ts" value="" />
+      <input type="hidden" name="ref" class="sb-ref" value="" />
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="isu-hp" />
       <fieldset class="isu-roles">
         <legend class="isu-legend">{T.iam}</legend>
@@ -71,6 +72,13 @@ const emailId = `${groupId}-email`;
   // Time-on-form stamp for the Worker's bot check (prerendered page, so it runs
   // client-side). Safe to run more than once per page.
   document.querySelectorAll('.sb-ts').forEach(function (el) { if (!el.value) el.value = String(Date.now()); });
+  // Referral: remember ?ref=CODE from any landing page, pass it with the sign-up.
+  try {
+    var q = new URLSearchParams(location.search).get('ref');
+    if (q && /^[a-f0-9]{10}$/.test(q)) localStorage.setItem('sqwod_ref', q);
+    var ref = localStorage.getItem('sqwod_ref') || '';
+    document.querySelectorAll('.sb-ref').forEach(function (el) { el.value = ref; });
+  } catch (e) {}
 </script>
 
 <style>

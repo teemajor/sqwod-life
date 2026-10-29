@@ -216,6 +216,13 @@ async function intel(req, env) {
     if (action === 'reject') return page('Skipped', `<b>${esc(p.title)}</b> stays off the Deal Tracker.`);
     return page('Flagged for review', `<b>${esc(p.title)}</b> is flagged. Nothing on the site changes.`);
   }
+  // "You made the news" clips (automation/shoutouts.mjs): Send it / Skip. The commit above
+  // is a push on main that runs the shoutouts workflow's send job.
+  if (p.kind === 'shoutout') {
+    if (action === 'approve') return page('Sending ✓', `The note and clip go to <b>${esc(p.to || 'the company')}</b> (${esc(p.company)}) within a few minutes. Replies land in your inbox.`);
+    if (action === 'reject') return page('Skipped', `<b>${esc(p.company)}</b> will not be contacted. Nothing else changes.`);
+    return page('Flagged for review', `<b>${esc(p.company)}</b> is flagged. Nothing is sent.`);
+  }
   // Flagship report drafts (intelligence-flagship.mjs) reuse the same approve/reject plumbing.
   if (p.kind === 'flagship') {
     if (action === 'approve') return page('Publishing queued ✓', `<b>${esc(p.title)}</b> goes live in English and German on the next apply run (within 4 hours), dated that day.`);

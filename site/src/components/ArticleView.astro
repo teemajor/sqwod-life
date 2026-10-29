@@ -634,7 +634,7 @@ const shareCfg = {
           await fetch(endpoint, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ email, lang, source: 'report-unlock', ts: loadedAt }),
+            body: JSON.stringify({ email, lang, source: 'report-unlock', ts: loadedAt, ref: (() => { try { return localStorage.getItem('sqwod_ref') || ''; } catch { return ''; } })() }),
           });
         } catch (_) {}
       }
