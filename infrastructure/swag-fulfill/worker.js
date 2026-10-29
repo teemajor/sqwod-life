@@ -9,12 +9,17 @@
  *
  * Secrets (wrangler secret put …):
  *   SHOPIFY_ADMIN_TOKEN     Admin API access token (Orders: write, Products: read)
- *   BEEHIIV_WEBHOOK_SECRET  shared secret you set on the beehiiv webhook
+ *   SWAG_SECRET             shared secret the subscribe Worker sends as X-Sqwod-Secret
+ *                           (BEEHIIV_WEBHOOK_SECRET still accepted for the legacy beehiiv hook)
  * Vars (wrangler.toml [vars]):
  *   SHOPIFY_STORE           e.g. sqwodpod.myshopify.com
- *   REWARDS_JSON            map of milestone → Shopify variant id, e.g.
- *                           {"3":"gid://...sticker","10":"...tee","25":"...hoodie"}
+ *   REWARDS_JSON            map of milestone → Shopify variant id, or, for sized items,
+ *                           → {"S":id,"M":id,...} picked by the claim's `size`:
+ *                           {"3":"44069279236385","25":{"S":"…","M":"…"}}
  *                           (numeric keys = referral count thresholds)
+ *
+ * Caller today: infrastructure/subscribe (POST /claim) sends
+ *   {email, milestone, size?, shipping_address:{first_name,last_name,address1,address2,city,zip,country_code}}
  */
 const API = '2024-10';
 const json = (o, s = 200) => new Response(JSON.stringify(o), { status: s, headers: { 'content-type': 'application/json' } });
@@ -30,7 +35,8 @@ export default {
 async function reward(req, env) {
   // 1) authenticate the webhook (shared secret in header or query)
   const secret = req.headers.get('X-Sqwod-Secret') || new URL(req.url).searchParams.get('secret');
-  if (!env.BEEHIIV_WEBHOOK_SECRET || secret !== env.BEEHIIV_WEBHOOK_SECRET) return json({ error: 'unauthorized' }, 401);
+  const expected = env.SWAG_SECRET || env.BEEHIIV_WEBHOOK_SECRET;
+  if (!expected || secret !== expected) return json({ error: 'unauthorized' }, 401);
 
   const p = await req.json().catch(() => ({}));
   // beehiiv payloads vary — accept the common shapes. Adjust keys to your webhook.
@@ -42,8 +48,13 @@ async function reward(req, env) {
   // 2) map milestone → Shopify variant
   let rewards = {};
   try { rewards = JSON.parse(env.REWARDS_JSON || '{}'); } catch {}
-  const variantId = rewards[milestone];
+  let variantId = rewards[milestone];
+  if (variantId && typeof variantId === 'object') {                      // sized item
+    const size = String(p.size || '').toUpperCase();
+    variantId = variantId[size] || variantId.M || Object.values(variantId)[0];
+  }
   if (!variantId) return json({ skipped: `no reward configured for milestone ${milestone}` });
+  if (!ship) return json({ error: 'shipping_address required: a physical reward cannot ship without one' }, 400);
 
   // 3) create a free order (100% discount) so Printful fulfills it
   const order = {

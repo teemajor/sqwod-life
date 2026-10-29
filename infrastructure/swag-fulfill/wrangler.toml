@@ -4,10 +4,15 @@ compatibility_date = "2025-06-01"
 
 [vars]
 SHOPIFY_STORE = "sqwodpod.myshopify.com"
-# milestone (referral count) → Shopify variant id (defaults: sticker / tee-M / hoodie-M).
-# Created as DRAFT products — link them in Printful, then set live + adjust size handling.
-REWARDS_JSON = "{\"3\":\"54136504811853\",\"10\":\"54136503763277\",\"25\":\"54136503894349\"}"
+# milestone (referral count) → Shopify variant id. These three are the Printful-synced
+# products already in the store (Oct 2026): Black Glossy Mug, Organic cotton drawstring
+# bag, Eco Raglan Hoodie (black, by size). They are ARCHIVED in Shopify: set each to
+# Active (hidden from the Online Store channel is fine) so orders can be created.
+# The DRAFT "Sqwod Sticker Pack" (54136504811853) is not linked to Printful yet; once it
+# is, swap it in at "3" and move the mug up.
+REWARDS_JSON = "{\"3\":\"44069279236385\",\"10\":\"46486692954445\",\"25\":{\"XS\":\"46536782119245\",\"S\":\"46536782152013\",\"M\":\"46536782184781\",\"L\":\"46536782217549\",\"XL\":\"46536782250317\"}}"
 
-# Secrets (not stored here):
-#   wrangler secret put SHOPIFY_ADMIN_TOKEN
-#   wrangler secret put BEEHIIV_WEBHOOK_SECRET
+# Secrets (not stored here). Set once with wrangler, or as GitHub secrets consumed by
+# .github/workflows/deploy-swag-worker.yml:
+#   SHOPIFY_ADMIN_TOKEN   Shopify Admin API token (Orders: write, Products: read)
+#   SWAG_SECRET           same value as the subscribe Worker's SWAG_SECRET

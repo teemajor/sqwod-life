@@ -1,0 +1,102 @@
+---
+// Referral reward claim: the reward email links here with a signed token (?t=…).
+// The form posts the postal address to the subscribe Worker's /claim, which creates
+// the free Shopify order through the swag Worker (Printful ships) and records it.
+import Base from '../../layouts/Base.astro';
+import { languages, type Lang } from '../../i18n/ui';
+import { SUBSCRIBE } from '../../config/subscribe';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const endpoint = SUBSCRIBE.endpoint ? SUBSCRIBE.endpoint.replace(/\/subscribe$/, '') + '/claim' : '';
+const c = lang === 'de' ? {
+  title: 'Dein Sqwod-Reward',
+  blurb: 'Danke fürs Weitersagen. Sag uns, wohin wir schicken sollen. Versand über Printful, in der Regel innerhalb einer Woche in Europa.',
+  first: 'Vorname', last: 'Nachname', a1: 'Straße und Hausnummer', a2: 'Adresszusatz (optional)', city: 'Stadt', zip: 'PLZ', country: 'Land', size: 'Größe (nur Hoodie)',
+  cta: 'Abschicken', fine: 'Wir nutzen die Adresse nur für diesen Versand.',
+  claimed: 'Angekommen. Dein Reward geht in den nächsten Tagen raus. Wir melden uns, falls etwas fehlt.',
+  invalid: 'Dieser Link ist ungültig oder wurde schon benutzt.', expired: 'Dieser Link ist abgelaufen. Antworte auf die Reward-Mail, dann schicken wir einen neuen.',
+  err: 'Das hat nicht geklappt. Bitte alle Pflichtfelder prüfen.',
+} : {
+  title: 'Your Sqwod reward',
+  blurb: 'Thanks for spreading the word. Tell us where to send it. Shipped by Printful, usually within a week in Europe.',
+  first: 'First name', last: 'Last name', a1: 'Street and number', a2: 'Address line 2 (optional)', city: 'City', zip: 'Postcode', country: 'Country', size: 'Size (hoodie only)',
+  cta: 'Send it', fine: 'We use the address for this shipment only.',
+  claimed: 'Got it. Your reward ships in the next few days. We will reach out if anything is missing.',
+  invalid: 'This link is invalid or was already used.', expired: 'This link has expired. Reply to the reward email and we will send a fresh one.',
+  err: "That didn't go through. Please check the required fields.",
+};
+const COUNTRIES: [string, string][] = [['DE', 'Deutschland'], ['AT', 'Österreich'], ['CH', 'Schweiz'], ['GB', 'United Kingdom'], ['US', 'United States'], ['NL', 'Nederland'], ['BE', 'Belgique'], ['FR', 'France'], ['ES', 'España'], ['IT', 'Italia'], ['DK', 'Danmark'], ['SE', 'Sverige'], ['NO', 'Norge'], ['FI', 'Suomi'], ['PL', 'Polska'], ['IE', 'Ireland'], ['PT', 'Portugal'], ['CZ', 'Česko'], ['CA', 'Canada'], ['AU', 'Australia']];
+---
+<Base lang={lang} title={c.title + ' — Sqwod'} description={c.blurb} active="">
+  <div class="sub-hero">
+    <div class="sh-copy">
+      <h1>{c.title}</h1>
+      <p class="sub">{c.blurb}</p>
+    </div>
+    <div class="sh-form">
+      <div class="banner ok" id="banner-claimed" hidden role="status">{c.claimed}</div>
+      <div class="banner err" id="banner-invalid" hidden role="alert">{c.invalid}</div>
+      <div class="banner err" id="banner-expired" hidden role="alert">{c.expired}</div>
+      <div class="banner err" id="banner-err" hidden role="alert">{c.err}</div>
+      <form class="bform" id="claim" method="post" action={endpoint || '#'}>
+        <input type="hidden" name="lang" value={lang} />
+        <input type="hidden" name="t" id="tok" value="" />
+        <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+        <div class="row"><label>{c.first}<input name="first_name" required autocomplete="given-name" /></label><label>{c.last}<input name="last_name" required autocomplete="family-name" /></label></div>
+        <label>{c.a1}<input name="address1" required autocomplete="address-line1" /></label>
+        <label>{c.a2}<input name="address2" autocomplete="address-line2" /></label>
+        <div class="row"><label>{c.zip}<input name="zip" required autocomplete="postal-code" /></label><label>{c.city}<input name="city" required autocomplete="address-level2" /></label></div>
+        <label>{c.country}<select name="country" required autocomplete="country">{COUNTRIES.map(([v, n]) => <option value={v} selected={v === (lang === 'de' ? 'DE' : 'GB')}>{n}</option>)}</select></label>
+        <label id="size-row" hidden>{c.size}<select name="size"><option>S</option><option selected>M</option><option>L</option><option>XL</option><option>XS</option></select></label>
+        <button class="cta" type="submit" disabled={!endpoint} data-umami-event="claim-reward">{c.cta}</button>
+        <p class="fine">{c.fine}</p>
+      </form>
+    </div>
+  </div>
+
+  <script is:inline>
+    (function () {
+      try {
+        var q = new URLSearchParams(location.search);
+        var s = q.get('status');
+        var map = { claimed: 'banner-claimed', invalid: 'banner-invalid', expired: 'banner-expired', error: 'banner-err' };
+        var el = map[s] ? document.getElementById(map[s]) : null;
+        if (el) el.hidden = false;
+        var form = document.getElementById('claim');
+        if (s === 'claimed' && form) form.hidden = true;
+        var t = q.get('t') || '';
+        var tok = document.getElementById('tok'); if (tok) tok.value = t;
+        if (!t && !s && form) { form.hidden = true; var inv = document.getElementById('banner-invalid'); if (inv) inv.hidden = false; }
+        // The token's first part is readable JSON (the signature is the second part):
+        // show the size picker only for the sized milestone (25).
+        var head = t.split('.')[0];
+        if (head) {
+          var json = atob(head.replace(/-/g, '+').replace(/_/g, '/'));
+          var m = JSON.parse(json).m;
+          if (Number(m) >= 25) { var sr = document.getElementById('size-row'); if (sr) sr.hidden = false; }
+        }
+      } catch (_) {}
+    })();
+  </script>
+</Base>
+
+<style>
+  .sub-hero{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start;padding:10px 0 8px}
+  .sh-copy h1{font-size:clamp(28px,4.5vw,40px);letter-spacing:-.02em;line-height:1.05;margin:0 0 12px}
+  .sh-form{border:1px solid var(--line);border-radius:18px;padding:26px;background:linear-gradient(180deg,var(--panel),transparent)}
+  .bform{display:flex;flex-direction:column;gap:14px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .bform label{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--g3)}
+  .bform input,.bform select{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:13px 14px;color:var(--chalk);font:inherit;text-transform:none;letter-spacing:0;min-height:48px}
+  .bform input:focus,.bform select:focus{outline:none;border-color:var(--chalk)}
+  .bform .cta[disabled]{opacity:.5;cursor:not-allowed}
+  .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+  .banner{border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.5;margin:0 0 16px}
+  .banner.ok{background:rgba(31,125,77,.14);border:1px solid rgba(31,125,77,.45);color:var(--chalk)}
+  .banner.err{background:rgba(179,38,30,.14);border:1px solid rgba(179,38,30,.45);color:var(--chalk)}
+  .fine{font-size:11.5px;color:var(--g4);line-height:1.5;margin:4px 0 0}
+  @media(max-width:680px){.sub-hero{grid-template-columns:1fr;gap:22px}.row{grid-template-columns:1fr}}
+</style>
