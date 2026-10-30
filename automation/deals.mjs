@@ -7,7 +7,8 @@
  *   node automation/deals.mjs --email         # same, then email Tee one Publish/Skip card per new deal
  *   node automation/deals.mjs --enrich        # web-check new deals first (needs ANTHROPIC_API_KEY); --enrich=all for every deal
  *   node automation/deals.mjs --review        # print what is pending / hidden (for a chat review)
- *   node automation/deals.mjs --selftest      # amount-parser + dedupe tests
+ *   node automation/deals.mjs --selftest      # amount-parser, dedupe and review-flag tests
+ *   node automation/deals.mjs --email --preview=/tmp/x.html   # also save the review email as HTML
  *
  * How a deal goes live (one tap, no workflow step needed):
  *   1. This script writes every deal to site/src/data/deals.json and, for each NEW one,
@@ -248,9 +249,10 @@ async function enrich(deals, { all = false } = {}) {
   for (let i = 0; i < todo.length; i += 6) {
     const batch = todo.slice(i, i + 6);
     const prompt = `You verify deals for the Sqwod Deal Tracker (fitness, wellness and consumer health industry). For each deal below, search the web and answer ONLY with minified JSON:
-{"deals":[{"id":"...","company":"clean company name","dealCountry":"country where the company (for an acquisition: the company being bought) is headquartered, in English, or empty if not found","category":"one of ${CATEGORIES.join(' | ')}","relevant":true|false,"oneLineEn":"what happened, max 18 words, plain English, no hype, no em dashes","oneLineDe":"same in natural German, du-neutral, no em dashes","amount":"the deal size exactly as a source states it, or empty","url":"https://... a page you opened that reports this deal","confidence":"high|medium|low"}]}
+{"deals":[{"id":"...","company":"clean company name","dealCountry":"country where the company (for an acquisition: the company being bought) is headquartered, in English, or empty if not found","category":"one of ${CATEGORIES.join(' | ')}","relevant":true|false,"oneLineEn":"what happened, max 18 words, plain English, no hype, no em dashes","oneLineDe":"same in natural German, du-neutral, no em dashes","amount":"the size of THIS round or deal exactly as the company's own announcement (or the most reliable report) states it, or empty","amountIs":"what the amount we have stored actually is: round | total-raised | valuation | facility | estimate | undisclosed | wrong","announcedOn":"YYYY-MM-DD when this deal was FIRST publicly announced (earliest release or report), or empty","dealStatus":"done | agreed | planned | rumour (planned = only considering, e.g. an IPO plan with no filing; a crowdfunding campaign that has not closed)","url":"https://... a page you opened that reports this deal, ideally the company's own release","primarySource":true|false,"confidence":"high|medium|low"}]}
 "relevant" = false when the deal is outside fitness, wellness, nutrition, consumer health or sports business (e.g. fast food, cricket teams, astrology apps, energy, stock exchanges).
-Never guess a country or amount: leave it empty and set confidence low.
+Never guess a country, amount or date: leave it empty and set confidence low.
+Watch for these common mistakes in the stored data: a headline's "total raised to date" given as the round size; £ shown as €; a valuation shown as the amount raised; an old deal re-reported in a retrospective article (announcedOn then lies months before "first reported").
 DEALS:
 ${batch.map((d) => `- id=${d.id} | ${d.entity} | ${d.kind} | ${d.amount || 'amount not stated'} | first reported ${d.date} | note: ${d.note} | known source: ${d.url || 'none'}`).join('\n')}`;
     const j = parseJson(await claude(prompt, { maxTokens: 3500, tools: [{ type: SEARCH_TOOL, name: 'web_search', max_uses: 10 }] }));
@@ -269,12 +271,43 @@ function applyEnrichment(deals) {
     if (CATEGORIES.includes(e.category)) d.category = e.category;
     if (e.oneLineEn) d.note = e.oneLineEn;
     if (e.oneLineDe) d.noteDe = e.oneLineDe;
-    if (!d.url && /^https?:\/\//.test(e.url || '')) d.url = e.url;
-    if (!d.amountUsd && e.amount) { const a = parseAmount(e.amount); if (a) Object.assign(d, { amount: e.amount, amountUsd: a.usd, currency: a.currency }); }
+    if (/^https?:\/\//.test(e.url || '') && (!d.url || weakUrl(d.url))) d.url = e.url;
+    const checkedAmt = parseAmount(e.amount);
+    if (checkedAmt && (!d.amountUsd || amountDiffers(d, checkedAmt))) {
+      if (d.amount && e.confidence === 'high') d.amountWas = d.amount;   // shown in the review email
+      if (!d.amountUsd || e.confidence === 'high') Object.assign(d, { amount: e.amount, amountUsd: checkedAmt.usd, currency: checkedAmt.currency });
+    }
     if (e.relevant === false) d.onBrand = false;
     d.checked = e.confidence;
   }
+  for (const d of deals) d.flags = dealFlags(d, cache[d.id]);
   return deals;
+}
+
+// ---------- review flags (shown in the Publish email; never on the site) ----------
+const weakUrl = (u) => { try { const x = new URL(u); return x.hostname === 'news.google.com' || x.pathname.replace(/\/+$/, '') === ''; } catch { return true; } };
+function amountDiffers(d, a) {
+  if (!d.amountUsd || !a?.usd) return false;
+  return (d.currency && a.currency && d.currency !== a.currency) || Math.abs(d.amountUsd - a.usd) / Math.max(d.amountUsd, a.usd) > 0.12;
+}
+/** Plain-English reasons to look twice before publishing. Empty array = looks clean. */
+export function dealFlags(d, e) {
+  const f = [];
+  if (!e) f.push('not web-checked');
+  else {
+    if (e.confidence !== 'high') f.push(`web check is only ${e.confidence || 'low'} confidence`);
+    if (d.amountWas) f.push(`amount corrected from ${d.amountWas} to ${d.amount} (per source)`);
+    else if (d.amount && !e.amount) f.push('amount not confirmed by the web check');
+    else if (d.amount && amountDiffers(d, parseAmount(e.amount))) f.push(`amount may be wrong: source says ${e.amount}`);
+    if (e.amountIs && !['round', 'undisclosed'].includes(e.amountIs) && !(e.amountIs === 'valuation' && d.kind === 'valuation') && d.amount && !d.amountWas) f.push(`stored amount looks like a ${e.amountIs.replace('-', ' ')} figure, not the deal size`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(e.announcedOn || '')) f.push('announcement date not confirmed (could be old news)');
+    else if (Date.parse(d.date) - Date.parse(e.announcedOn) > 45 * 864e5) f.push(`old news: first announced ${e.announcedOn}`);
+    if (['planned', 'rumour'].includes(e.dealStatus)) f.push(`not a completed deal (${e.dealStatus})`);
+  }
+  if (!d.url) f.push('no source link');
+  else if (weakUrl(d.url)) f.push('source link is a homepage or Google News redirect');
+  if (d.onBrand === false) f.push('may be off-topic');
+  return f;
 }
 
 // ---------- 4. status ----------
@@ -316,17 +349,23 @@ function queueNew(deals) {
 async function emailDigest(fresh) {
   if (!fresh.length) { console.log('No new deals to review.'); return; }
   const btn = (href, label, quiet) => `<a href="${href}" style="display:inline-block;padding:9px 16px;border-radius:999px;font-weight:700;text-decoration:none;margin:4px 6px 0 0;${quiet ? 'border:1px solid #999;color:#333' : 'background:#111;color:#fff'}">${label}</a>`;
+  const flagged = fresh.filter((d) => d.flags?.length).length;
+  fresh = [...fresh].sort((a, b) => (b.flags?.length ? 1 : 0) - (a.flags?.length ? 1 : 0));
+  const flagBox = (d) => d.flags?.length
+    ? `<div style="margin:8px 0 4px;padding:8px 10px;border-left:3px solid #b45309;background:#fff7ed;font-size:13px;color:#7c2d12"><b>⚠ Check before publishing</b><br>${d.flags.map((x) => `· ${esc(x)}`).join('<br>')}</div>`
+    : '<div style="margin:6px 0 2px;font-size:12px;color:#15803d">✓ Amount, date and source checked</div>';
   const cards = fresh.map((d) => `<div style="border-top:1px solid #ddd;padding:14px 0">
 <b>${esc(d.entity)}</b> · ${esc(d.kind)} · ${esc(d.amount || 'amount undisclosed')}${d.amountUsd ? ` (≈ ${usdFmt(d.amountUsd)})` : ''}<br>
 <span style="color:#555">${esc(d.note)}</span><br>
 <span style="font-size:12px;color:#777">${esc(d.country || d.region)} · ${esc(d.category)}${d.checked ? ` · web-checked (${esc(d.checked)})` : ' · not web-checked'} · first reported ${esc(d.date)}${d.url ? ` · <a href="${esc(d.url)}">source</a>` : ' · no source link'}</span><br>
-${d.warn ? '<span style="font-size:12px;color:#b45309">⚠ The on-topic filter is unsure about this one.</span><br>' : ''}${btn(signedLink(`deal-${d.id}`, 'approve'), 'Publish')}${btn(signedLink(`deal-${d.id}`, 'reject'), 'Skip', true)}</div>`).join('');
+${flagBox(d)}${btn(signedLink(`deal-${d.id}`, 'approve'), 'Publish')}${btn(signedLink(`deal-${d.id}`, 'reject'), 'Skip', true)}</div>`).join('');
   const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:640px;color:#111">
 <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#777">Sqwod Deal Tracker · ${fresh.length} new</p>
 <h2 style="margin:4px 0 6px">New deals to publish</h2>
-<p style="color:#444;margin:0 0 6px">Publish puts the deal on sqwod.life/en/intelligence/deals within minutes. Skip keeps it off. Links valid 30 days.</p>${cards}</div>`;
+<p style="color:#444;margin:0 0 6px">Publish puts the deal on sqwod.life/en/intelligence/deals within minutes. Skip keeps it off. Links valid 30 days.${flagged ? ` <b>${flagged} of ${fresh.length}</b> have a warning and are listed first.` : ''}</p>${cards}</div>`;
+  if (args.preview) { writeFileSync(String(args.preview === true ? 'deal-email-preview.html' : args.preview), html); console.log(`preview written: ${args.preview}`); }
   if (!RESEND || !REVIEWER) { console.log(`[dry-run] would email ${REVIEWER || '(no INTEL_REVIEWER_EMAIL)'} ${fresh.length} deal(s)`); return; }
-  const r = await fetch('https://api.resend.com/emails', { method: 'POST', headers: { authorization: `Bearer ${RESEND}`, 'content-type': 'application/json' }, body: JSON.stringify({ from: FROM, to: REVIEWER, subject: `💸 ${fresh.length} new deal${fresh.length > 1 ? 's' : ''} to publish`, html }) });
+  const r = await fetch('https://api.resend.com/emails', { method: 'POST', headers: { authorization: `Bearer ${RESEND}`, 'content-type': 'application/json' }, body: JSON.stringify({ from: FROM, to: REVIEWER, subject: `💸 ${fresh.length} new deal${fresh.length > 1 ? 's' : ''} to publish${flagged ? ` (${flagged} to check)` : ''}`, html }) });
   console.log(r.ok ? `Emailed ${fresh.length} deal(s) to review.` : `! email failed: ${r.status} ${await r.text()}`);
 }
 
@@ -337,7 +376,7 @@ function build() {
 }
 function write(deals) {
   mkdirSync(dirname(OUT), { recursive: true });
-  const clean = deals.map(({ _new, onBrand, vague: _v, warn, ...d }) => d);
+  const clean = deals.map(({ _new, onBrand, vague: _v, warn, flags: _f, amountWas: _a, ...d }) => d);
   writeFileSync(OUT, JSON.stringify({ generatedAt: today, fx: FX, mergeDays: MERGE_DAYS, deals: clean }, null, 2) + '\n');
 }
 function review(deals) {
@@ -358,7 +397,17 @@ function selftest() {
     { date: '2026-10-26', entity: 'PureGym / NonStop Gym', kind: 'acquisition', amountUsd: 3e8, amount: '£235 million', url: 'c', issue: 'w' }]);
   const mok = m.length === 2 && m.find((d) => d.entity.startsWith('PureGym')).url === 'c';
   console.log(`${mok ? '✓' : '✗'} merge: ${m.length} deals from 4 reports`);
-  process.exit(ok && mok ? 0 : 1);
+  // review flags (audit 30 Oct 2026: stale valuations, total-raised as round size, IPO plans, homepage links)
+  const ft = (name, d, e, want) => { const f = dealFlags({ onBrand: true, url: 'https://example.com/news/a', ...d }, e); const pass = want.every((w) => f.some((x) => x.includes(w))) && (want.length || f.length === 0); console.log(`${pass ? '✓' : '✗'} flags: ${name} -> ${JSON.stringify(f)}`); return pass; };
+  const fok = [
+    ft('clean deal', { date: '2026-10-29', amount: '$62M', amountUsd: 62e6, currency: 'USD' }, { confidence: 'high', amount: '$62M', amountIs: 'round', announcedOn: '2026-10-28', dealStatus: 'done' }, []),
+    ft('stale valuation', { date: '2026-08-06', amount: '$10.1B', amountUsd: 10.1e9, currency: 'USD' }, { confidence: 'high', amount: '$10.1B', amountIs: 'valuation', announcedOn: '2026-03-31', dealStatus: 'done' }, ['old news', 'valuation']),
+    ft('total raised', { date: '2026-10-23', amount: '$25M', amountUsd: 25e6, currency: 'USD', amountWas: '$33 million' }, { confidence: 'high', amount: '$25M', amountIs: 'total-raised', announcedOn: '2026-10-22', dealStatus: 'done' }, ['corrected from $33 million']),
+    ft('currency mix-up', { date: '2026-10-21', amount: '€2.5M', amountUsd: 2.7e6, currency: 'EUR' }, { confidence: 'medium', amount: '£2.5M', amountIs: 'round', announcedOn: '2026-10-16', dealStatus: 'done' }, ['source says £2.5M', 'medium']),
+    ft('IPO plan', { date: '2026-09-18', amount: '', amountUsd: null }, { confidence: 'high', amount: '', amountIs: 'undisclosed', announcedOn: '2026-09-18', dealStatus: 'planned' }, ['not a completed deal']),
+    ft('homepage link, unchecked', { date: '2026-07-09', url: 'https://athletechnews.com/' }, null, ['not web-checked', 'homepage']),
+  ].every(Boolean);
+  process.exit(ok && mok && fok ? 0 : 1);
 }
 
 if (args.selftest) selftest();
