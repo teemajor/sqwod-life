@@ -38,3 +38,9 @@ Places where the build brief and the repo disagreed. Each one is written down he
 - **Stat source.** Daily frontmatter `stat.url` is optional and rarely set, so most days show "More stats →" to the issue, as the brief allows.
 - **Big numbers fit their column.** The 72px (desktop) and 48px (phone) Anton numbers shrink to fit when an amount is long (e.g. "22 Mio. Dollar"), instead of being cut off.
 - **Review fixes (Step 4):** between 641 and 900px the card now uses the phone layout (the 3-column row squeezed "Read today's issue" to nothing at tablet widths). Long amounts are shown compactly ("22 Mio. Dollar" → "22 Mio. $"). The episode length comes from the frontmatter `duration`, else from the spoken script at ~150 words a minute (today: 3 min EN, 2 min DE, not a fixed "5 min"). `daily-listen` is sent from the player on the first play, not on pause clicks. The Umami event name on the homepage changed from `daily-listen-click` to `daily-listen`; update any Umami goal that used the old name.
+
+## Step 5
+- **Final checks (30 Oct 2026):** the site build passes (1,561 pages), and `deals.mjs --selftest`, `jobs.mjs --selftest`, `quality.test.mjs` and `titles.test.mjs` all pass.
+- `validate-richresults.mjs` exits 1 because of **12 existing over-long headlines** (Daily issues 20 to 30 Oct and one evidence playbook, > 110 characters). None of them comes from this build; they were left alone.
+- `/jobs/` stays out of the sitemap while it has fewer than 10 open roles (`astro.config.mjs`), matching its `noindex`.
+- Screenshots for the PR are in `automation/build-shots/`. They can be deleted once the PR is merged.

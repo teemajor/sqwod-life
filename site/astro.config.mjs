@@ -17,6 +17,11 @@ for (const f of readdirSync(ART_DIR)) {
   if (slug && lang && !newsTakeIsFresh(date)) hiddenArticleUrls.add(`https://sqwod.life/${lang}/analysis/${slug}/`);
 }
 
+// Sqwod Jobs is noindex while it lists fewer than 10 open roles (src/pages/[lang]/jobs),
+// so it stays out of the sitemap until then too.
+let openJobs = 0;
+try { openJobs = JSON.parse(readFileSync(new URL('./src/data/jobs.json', import.meta.url), 'utf8')).jobs.filter((j) => !j.expired).length; } catch { /* no file yet */ }
+
 // sqwod.life — one domain, /en/ + /de/ parity.
 // Routing handled explicitly via the [lang] dynamic segment (see src/pages).
 export default defineConfig({
@@ -30,6 +35,7 @@ export default defineConfig({
         // campaign landing page (noindex) and its short-link stubs
         if (/^https:\/\/sqwod\.life\/((en|de)\/)?join\/?$/.test(page) || /^https:\/\/sqwod\.life\/pricing\/?$/.test(page)) return false;
         if (!INDEX_COMPARE_PAGES && page.includes('/verified/compare/')) return false;
+        if (openJobs < 10 && /\/(en|de)\/jobs\/?$/.test(page)) return false;
         const m = page.match(/\/daily\/(\d{4}-\d{2}-\d{2})\/?$/);
         if (m && !dailyIsFresh(m[1])) return false;
         if (hiddenArticleUrls.has(page)) return false;
