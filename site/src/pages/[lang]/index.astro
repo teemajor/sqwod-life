@@ -38,9 +38,24 @@ const dStat = latest?.data.stat?.number ? latest.data.stat : null;
 // "Source: <name>" for the stat when the Daily carries a source URL for it (short host name)
 const statSource = (() => { try { return dStat?.url && /^https?:/.test(dStat.url) ? new URL(dStat.url).hostname.replace(/^www\./, '') : null; } catch { return null; } })();
 const issueHref = latest ? `/${lang}/daily/${latest.data.urlSlug}/` : '';
-const duration = latest?.data.duration ? `${latest.data.duration.split(':')[0]} min` : '5 min';
+// episode length: the frontmatter duration ("2:51"), else the spoken script at ~150 words a minute (as audio.mjs)
+const duration = (() => {
+  const d = latest?.data.duration?.match(/^(\d+):(\d{2})$/);
+  if (d) return `${Math.max(1, Math.round(+d[1] + +d[2] / 60))} min`;
+  const words = latest?.data.audioScript ? latest.data.audioScript.split(/\s+/).length : 0;
+  return `${words ? Math.max(1, Math.round(words / 150)) : 5} min`;
+})();
+// "22 Mio. Dollar" / "$22 million" -> "22 Mio. $" / "$22M": the card's big number stays big
+function compactAmount(a: string) {
+  const m = a.match(/^\s*([$€£])?\s*(\d[\d.,]*)\s*(Mio\.?|Millionen|Mrd\.?|Milliarden|million|billion|bn|M|B)\s*(Dollar|US-Dollar|USD|Euro|EUR|Pfund|GBP|[$€£])?\s*$/i);
+  if (!m) return a;
+  const sym = m[1] || ({ dollar: '$', 'us-dollar': '$', usd: '$', euro: '€', eur: '€', pfund: '£', gbp: '£' } as Record<string, string>)[(m[4] || '').toLowerCase()] || m[4] || '';
+  const big = /^(mrd|milliard|billion|bn|b$)/i.test(m[3]);
+  return de ? `${m[2]} ${big ? 'Mrd.' : 'Mio.'} ${sym}`.trim() : `${sym}${m[2]}${big ? 'B' : 'M'}`;
+}
+const moveAmount = move?.amount ? compactAmount(move.amount) : '';
 const KIND: Record<string, string> = de
-  ? { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Aus', news: 'News', report: 'Report' }
+  ? { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Schließung', news: 'News', report: 'Report' }
   : { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown', news: 'News', report: 'Report' };
 
 // --- Articles
@@ -98,7 +113,7 @@ const h1 = de
   : [{ w: 'Your' }, { w: 'edge' }, { w: 'in' }, { w: 'the', br: true }, { w: 'fitness', a: true }, { w: 'industry.' }];
 const T = de
   ? { kicker: 'Sqwod Daily · werktäglich · EN & DE', signup: 'Hol dir den 5-Minuten-Brief',
-      today: 'Heutiger Daily', listen: 'Anhören', pause: 'Pause', undisclosed: 'nicht genannt', allDeals: 'Alle Deals im Tracker', allDealsShort: 'Alle Deals', source: 'Quelle', moreStats: 'Mehr Zahlen', onApple: 'Auf Apple Podcasts anhören', onSpotify: 'Auf Spotify anhören', readShort: 'Ausgabe lesen', read: 'Ausgabe lesen', money: 'Geldbewegungen', invRead: 'Investor-Sicht', statDay: 'Zahl des Tages', heads: 'Heute im Daily',
+      today: 'Heutiger Daily', listen: 'Anhören', pause: 'Pause', undisclosed: 'Nicht genannt', allDeals: 'Alle Deals im Tracker', allDealsShort: 'Alle Deals', source: 'Quelle', moreStats: 'Mehr Zahlen', onApple: 'Auf Apple Podcasts anhören', onSpotify: 'Auf Spotify anhören', readShort: 'Ausgabe lesen', newTab: 'öffnet neuen Tab', moneyOne: 'Geldbewegung', readLong: 'Heutige Ausgabe lesen', read: 'Ausgabe lesen', money: 'Geldbewegungen', invRead: 'Investor-Sicht', statDay: 'Zahl des Tages', heads: 'Heute im Daily',
       repKick: 'Sqwod Intelligence', repH: 'Die Daten hinter dem Business.', repAll: 'Alle Reports',
       invKick: 'Sqwod Intelligence · monatlicher Flagship-Report', invH: 'Ein großer Report im Monat. Gebaut auf 2.061 Statista-Grafiken.', invA: 'Reports live', invB: 'Sprachen, nativ geschrieben', invC: 'interaktive Grafiken pro Report', invCta: 'Flagship-Report lesen',
       vKick: 'Sqwod Verified', vH: 'Produkte mit Score.', vP: 'Für deine Kund:innen, dein Studio und dein Regal.', allGuides: 'Alle Kaufberater', trade: 'Trade-Sicht', ad: 'Anzeige',
@@ -108,7 +123,7 @@ const T = de
       investK: 'Für Investor:innen', investH: 'Dealflow, täglich eingeordnet.', investP: 'Jede Finanzierung, Übernahme und Eröffnung mit Investor-Sicht. Dazu jeden Monat ein Flagship-Report.', investCta: 'Als Investor:in abonnieren',
       podK: 'Für Coaches in Berlin', podH: 'Trainiere Kund:innen in einem privaten Sqwod Pod.', podP: 'Voll ausgestattete private Trainingsräume in Prenzlauer Berg und Weißensee.', podCta: 'Pod buchen' }
   : { kicker: 'Sqwod Daily · every weekday · EN & DE', signup: 'Get the 5-minute brief',
-      today: "Today's Daily", listen: 'Listen', pause: 'Pause', undisclosed: 'Undisclosed', allDeals: 'All deals in the tracker', allDealsShort: 'All deals', source: 'Source', moreStats: 'More stats', onApple: 'Listen on Apple Podcasts', onSpotify: 'Listen on Spotify', readShort: 'Read the issue', read: "Read today's issue", money: 'Money movement', invRead: 'Investor read', statDay: 'Stat of the day', heads: 'In today\'s Daily',
+      today: "Today's Daily", listen: 'Listen', pause: 'Pause', undisclosed: 'Undisclosed', newTab: 'opens in a new tab', moneyOne: 'Money movement', readLong: "Read today's issue", allDeals: 'All deals in the tracker', allDealsShort: 'All deals', source: 'Source', moreStats: 'More stats', onApple: 'Listen on Apple Podcasts', onSpotify: 'Listen on Spotify', readShort: 'Read the issue', read: "Read today's issue", money: 'Money movement', invRead: 'Investor read', statDay: 'Stat of the day', heads: 'In today\'s Daily',
       repKick: 'Sqwod Intelligence', repH: 'The data behind the business.', repAll: 'All reports',
       invKick: 'Sqwod Intelligence · monthly flagship', invH: 'One deep report a month. Built on 2,061 Statista charts.', invA: 'reports live', invB: 'languages, written natively', invC: 'interactive charts per report', invCta: 'Read the flagship',
       vKick: 'Sqwod Verified', vH: 'products scored.', vP: 'For your clients, your studio and your shelf.', allGuides: "All buyer's guides", trade: 'Trade read', ad: 'Ad',
@@ -151,9 +166,9 @@ const T = de
       <div class="dc-c dc-m">
         {move ? (
           <Fragment>
-            <p class="kick">{T.money} · {KIND[move.kind] ?? move.kind}</p>
-            <span class={`dnum dc-big dc-amt${move.amount ? '' : ' dc-und'}`} style={`--len:${(move.amount || T.undisclosed).length}`}>{move.amount || T.undisclosed}</span>
-            <p class="dc-line"><b>{move.entity}</b>{move.note ? `, ${move.note}` : ''}</p>
+            <p class="kick">{T.moneyOne} · {KIND[move.kind] ?? move.kind}</p>
+            <span class={`dnum dc-big dc-amt${moveAmount ? '' : ' dc-und'}`} style={`--len:${(moveAmount || T.undisclosed).length}`}>{moveAmount || T.undisclosed}</span>
+            <p class="dc-line"><b>{move.entity}</b>{move.note ? <Fragment> · {move.note}</Fragment> : null}</p>
           </Fragment>
         ) : (
           <Fragment>
@@ -170,10 +185,10 @@ const T = de
         </div>
       )}
       <div class="dc-f dc-f1">
-        <div class="dc-listen">
+        {(latestHasAudio || appleFor(lang) !== '#' || spotifyFor(lang) !== '#') && <div class="dc-listen">
           {latestHasAudio && (
             <Fragment>
-              <button type="button" class="dc-play" data-umami-event="daily-listen" data-umami-event-where="home" aria-pressed="false" data-label-play={`${T.listen} · ${duration}`} data-label-pause={`${T.pause} · ${duration}`}>
+              <button type="button" class="dc-play" data-playing="false" data-label-play={`${T.listen} · ${duration}`} data-label-pause={`${T.pause} · ${duration}`}>
                 <svg class="dc-ico-play" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
                 <svg class="dc-ico-pause" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
                 <span>{T.listen} · {duration}</span>
@@ -187,8 +202,8 @@ const T = de
           {spotifyFor(lang) !== '#' && <a class="dc-app" href={spotifyFor(lang)} target="_blank" rel="noopener" aria-label={T.onSpotify} title={T.onSpotify} data-umami-event="listen-spotify" data-umami-event-where="home">
             <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M6.4 9.1c3.8-1.1 8.1-.8 11.3 1M7 12.3c3.2-.9 6.6-.6 9.3.9M7.6 15.3c2.6-.7 5.2-.5 7.4.7" fill="none" stroke="var(--panel)" stroke-width="1.6" stroke-linecap="round"/></svg>
           </a>}
-        </div>
-        <a class="dc-link dc-read" href={issueHref} data-umami-event="daily-read" data-umami-event-where="footer"><span class="dc-long">{T.read}</span><span class="dc-short">{T.readShort}</span> →</a>
+        </div>}
+        <a class="dc-link dc-read" href={issueHref} data-umami-event="daily-read" data-umami-event-where="footer"><span class="dc-long">{T.readLong}</span><span class="dc-short">{T.readShort}</span> →</a>
       </div>
       <div class="dc-f dc-f2">
         <a class="dc-link" href={`/${lang}/intelligence/deals/`} data-umami-event="daily-deals"><span class="dc-long">{T.allDeals}</span><span class="dc-short">{T.allDealsShort}</span> →</a>
@@ -196,7 +211,7 @@ const T = de
       {dStat && (
         <div class="dc-f dc-f3">
           {statSource
-            ? <a class="dc-link" href={dStat.url} target="_blank" rel="noopener" data-umami-event="daily-source">{T.source}: {statSource} ↗</a>
+            ? <a class="dc-link" href={dStat.url} target="_blank" rel="noopener" aria-label={`${T.source}: ${statSource} (${T.newTab})`} data-umami-event="daily-source">{T.source}: {statSource} ↗</a>
             : <a class="dc-link" href={issueHref} data-umami-event="daily-source" data-umami-event-kind="more-stats">{T.moreStats} →</a>}
         </div>
       )}
@@ -307,9 +322,12 @@ const T = de
     var b = document.querySelector('.dc-play'), au = document.querySelector('.dc-audio');
     if (!b || !au) return;
     var label = b.querySelector('span');
-    var sync = function () { var on = !au.paused; b.setAttribute('aria-pressed', on ? 'true' : 'false'); label.textContent = b.getAttribute(on ? 'data-label-pause' : 'data-label-play'); };
-    b.addEventListener('click', function () { if (au.paused) au.play(); else au.pause(); });
-    au.addEventListener('play', sync); au.addEventListener('pause', sync); au.addEventListener('ended', sync);
+    var sync = function () { var on = !au.paused; b.setAttribute('data-playing', on ? 'true' : 'false'); label.textContent = b.getAttribute(on ? 'data-label-pause' : 'data-label-play'); };
+    var tracked = false;
+    b.addEventListener('click', function () { if (au.paused) { var p = au.play(); if (p && p.catch) p.catch(sync); } else au.pause(); });
+    // Umami "daily-listen" counts the first play only (pause clicks are not listens)
+    au.addEventListener('play', function () { sync(); if (!tracked && window.umami && umami.track) { tracked = true; umami.track('daily-listen', { where: 'home' }); } });
+    au.addEventListener('pause', sync); au.addEventListener('ended', sync);
   })();
 </script>
 
@@ -352,7 +370,7 @@ const T = de
   .dc-big{display:block;font-size:min(72px,calc(100cqi / (var(--len, 4) * .5)));color:var(--chalk);white-space:nowrap}
   .dc-amt{color:var(--accent)}
   .dc-und{color:var(--g2)}
-  .dc-line{margin:10px 0 0;font-size:15px;line-height:1.45;color:var(--g2);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .dc-line{margin:10px 0 0;font-size:15px;line-height:1.45;color:var(--g2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
   .dc-line b{color:var(--chalk);font-weight:600}
   .ds-heads{list-style:none;margin:0;padding:0}
   .ds-heads li{padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.4}
@@ -361,18 +379,19 @@ const T = de
   .dc-f1{grid-area:f1}.dc-f2{grid-area:f2}.dc-f3{grid-area:f3;border-right:0}
   .dc-nostat .dc-f2{border-right:0}
   .dc-listen{display:flex;align-items:center;gap:2px}
-  .dc-play{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 10px 0 0;margin-right:6px;border:0;background:none;font:inherit;font-size:14px;font-weight:600;color:var(--accent);cursor:pointer}
+  .dc-play{display:inline-flex;align-items:center;gap:8px;min-height:44px;line-height:1;flex:none;padding:0 10px 0 0;margin-right:6px;border:0;background:none;font:inherit;font-size:14px;font-weight:600;color:var(--accent);cursor:pointer}
   .dc-play:hover span{text-decoration:underline;text-underline-offset:4px}
   .dc-ico-pause{display:none}
-  .dc-play[aria-pressed="true"] .dc-ico-pause{display:block}
-  .dc-play[aria-pressed="true"] .dc-ico-play{display:none}
-  .dc-app{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;color:var(--g1)}
+  .dc-play[data-playing="true"] .dc-ico-pause{display:block}
+  .dc-play[data-playing="true"] .dc-ico-play{display:none}
+  .dc-app{flex:none;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;color:var(--g1)}
   .dc-app:hover{color:var(--accent)}
   .dc-link{display:inline-flex;align-items:center;gap:.3em;min-height:44px;font-size:14px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .dc-link:hover{color:var(--accent)}
-  .dc-read{margin-left:auto}
+  .dc-read{margin-left:auto;flex:none}
+  @media(max-width:1100px){ .dc .dc-long{display:none} .dc .dc-short{display:inline} }
   .dc-short{display:none}
-  @media (prefers-color-scheme: light) and (max-width:640px){:global(:root:not([data-theme="dark"])) .dc-play{color:#fff}}
+  @media (prefers-color-scheme: light) and (max-width:900px){:global(:root:not([data-theme="dark"])) .dc-play{color:#fff}}
 
   /* sections */
   .sx{padding:72px 0 0}
@@ -435,12 +454,7 @@ const T = de
     .inv-in{grid-template-columns:1fr;gap:28px}
     .tilt{rotate:0deg}
   }
-  @media(max-width:640px){
-    .hx-h1 br{display:none}
-    .hx :global(.isu-pills){flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-24px;padding-right:24px}
-    .hx :global(.isu-pills)::-webkit-scrollbar{display:none}
-    .hx :global(.isu-pill){flex:none}
-    .inv-stats div{padding:14px 12px}
+  @media(max-width:900px){
     /* Daily card, phone: headline, then money | stat, then read | all deals, then the listen bar */
     .dc,.dc.dc-nostat{grid-template-columns:1fr 1fr;grid-template-areas:"h h" "m s" "r d" "l l"}
     .dc-nostat .dc-m{grid-column:1 / -1}
@@ -448,7 +462,7 @@ const T = de
     .dc-h{border-right:0;border-bottom:1px solid var(--line)}
     .dc-s{border-right:0}
     .dc-big{font-size:min(48px,calc(100cqi / (var(--len, 4) * .5)))}
-    .dc-line{font-size:13.5px}
+    .dc-line{font-size:13.5px;-webkit-line-clamp:3}
     .dc-f{min-height:0;padding:0;border:0}
     .dc-f1{display:contents}
     .dc-read{grid-area:r;margin:0;padding:0 18px}
@@ -460,6 +474,13 @@ const T = de
     .dc-play{flex:1;justify-content:center;min-height:48px;padding:0 16px;margin:0 6px 0 0;border-radius:999px;background:var(--accent);color:var(--accent-ink)}
     .dc-play:hover span{text-decoration:none}
     :global(:root[data-theme="light"]) .dc-play{color:#fff}
+  }
+  @media(max-width:640px){
+    .hx-h1 br{display:none}
+    .hx :global(.isu-pills){flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-24px;padding-right:24px}
+    .hx :global(.isu-pills)::-webkit-scrollbar{display:none}
+    .hx :global(.isu-pill){flex:none}
+    .inv-stats div{padding:14px 12px}
   }
   @media(max-width:560px){
     .hx{padding:36px 0 40px}
