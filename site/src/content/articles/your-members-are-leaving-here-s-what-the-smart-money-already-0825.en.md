@@ -29,7 +29,7 @@ tags: []
 
 ## The Leaky Bucket Nobody Wants to Talk About
 
-You don't have a acquisition problem. You have a retention problem. Athletech News put it plainly this week: your churn rate isn't just a number on a dashboard — it's a message. It tells you whether your members feel something, or feel nothing. Most operators read it too late, after the cancellations stack up, and then scramble to run a discount promo. That's not a strategy. That's a bandage.
+You don't have a acquisition problem. You have a retention problem. Athletech News put it plainly this week: your churn rate isn't just a number on a dashboard; it's a message. It tells you whether your members feel something, or feel nothing. Most operators read it too late, after the cancellations stack up, and then scramble to run a discount promo. That's not a strategy. That's a bandage.
 
 The uncomfortable truth is that the fitness industry keeps building new front doors while leaving the back door wide open.
 
@@ -41,11 +41,11 @@ Crosscourt just raised $2M to turn basketball into a structured boutique fitness
 
 W.O.L.F. Gyms acquired REDCON1 Gym in North Boca Raton, expanding its national footprint according to ACCESS Newswire. Consolidation is accelerating. Operators with a clear identity are absorbing the ones without one.
 
-And then there's Kodeon snapping up mental wellness app Breethe in its largest acquisition to date, per BetaKit. A tech platform buying a meditation app isn't a wellness vanity play — it's an acknowledgment that mental health is now a retention surface. Members who feel supported mentally stick around physically.
+And then there's Kodeon snapping up mental wellness app Breethe in its largest acquisition to date, per BetaKit. A tech platform buying a meditation app isn't a wellness vanity play: it's an acknowledgment that mental health is now a retention surface. Members who feel supported mentally stick around physically.
 
 Meanwhile, boutique fitness is leaning hard into pop-up experiences, Athletech News reports, because operators have figured out that novelty and community pull people off the couch when a static monthly membership fee cannot.
 
-Even the DSSV is running exclusive online seminars for members — the German fitness association understands that operator education is infrastructure, not an add-on.
+Even the DSSV is running exclusive online seminars for members: the German fitness association understands that operator education is infrastructure, not an add-on.
 
 The thread connecting all of it: **belonging beats convenience, every single time.**
 
@@ -53,13 +53,13 @@ The thread connecting all of it: **belonging beats convenience, every single tim
 
 Stop optimizing your acquisition funnel for one week. Seriously. Instead, do this:
 
-**Audit the first 90 days of a member's journey — in detail.**
+**Audit the first 90 days of a member's journey in detail.**
 
 Map every touchpoint from sign-up to day ninety. When do they first feel like they belong? When do they go quiet? Most churn is decided in that window, long before someone hits cancel. Crosscourt is building community rituals into the product from day one. The pop-up boom exists because a single shared experience creates more loyalty than three months of solo workouts.
 
 Ask your team three questions:
 1. Does a new member know another member's name within two weeks?
-2. Is there a moment — an event, a challenge, a class format — designed specifically to create that connection?
+2. Is there a moment (an event, a challenge, a class format) designed specifically to create that connection?
 3. Are you tracking engagement signals, not just check-in frequency?
 
 Kodeon acquiring a mental wellness app tells you something important: the next retention layer isn't a better scheduling app. It's making members feel seen beyond the workout.

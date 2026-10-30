@@ -2,7 +2,7 @@
 urlSlug: your-studio-is-leaving-money-on-the-floor-here-s-the-fix-0807
 lang: "en"
 counterpart: your-studio-is-leaving-money-on-the-floor-here-s-the-fix-0807
-title: "Your Studio Is Leaving Money on the Floor — Here's the Fix"
+title: "Your Studio Is Leaving Money on the Floor: Here's the Fix"
 topic: pricing-revenue
 newsTake: true
 description: "Five signals from this week's fitness news tell you exactly where to find your next wave of members and revenue."
@@ -31,18 +31,18 @@ tags: []
 
 Pilates is red-hot, luxury wellness brands are landing on Nordstrom.com, and a single community fundraiser in Kildare just raised €15,000 in one day. The money is clearly moving through the fitness industry. It's just not all moving through *your* studio.
 
-This week's news is basically a treasure map — if you know how to read it.
+This week's news is basically a treasure map, if you know how to read it.
 
 ## Three Signals You Should Not Ignore
 
 **1. Underserved demographics are wide open.**
-A gym in Devizes just launched a dedicated strength training class for over-55s, per the Gazette and Herald. That's not a niche — that's a massive, underserved population with disposable income, flexible schedules, and real motivation to stay healthy. If your timetable doesn't have a single class designed *for* them, you're leaving a full cohort at the door. Not because they don't want to train. Because nobody asked them to.
+A gym in Devizes just launched a dedicated strength training class for over-55s, per the Gazette and Herald. That's not a niche: that's a massive, underserved population with disposable income, flexible schedules, and real motivation to stay healthy. If your timetable doesn't have a single class designed *for* them, you're leaving a full cohort at the door. Not because they don't want to train. Because nobody asked them to.
 
-**2. The premium tier keeps expanding — and clients expect it.**
-Luxury yoga brand TulaBala just debuted on Nordstrom.com, according to WBOC TV. That's a wellness brand sitting next to designer handbags. Your members are being marketed to at that level every single day. The experience you deliver — the curation, the atmosphere, the personalisation — needs to meet that bar. You don't have to charge Nordstrom prices. You do have to *feel* like you belong in that conversation.
+**2. The premium tier keeps expanding, and clients expect it.**
+Luxury yoga brand TulaBala just debuted on Nordstrom.com, according to WBOC TV. That's a wellness brand sitting next to designer handbags. Your members are being marketed to at that level every single day. The experience you deliver (the curation, the atmosphere, the personalisation) needs to meet that bar. You don't have to charge Nordstrom prices. You do have to *feel* like you belong in that conversation.
 
 **3. AI coaching is already in your members' ears.**
-Spotify's new Running Mode drops an AI coach directly into a listener's workout, per finance.biggo.com. Your members are getting real-time feedback, pacing cues, and personalised nudges from a playlist app. That's your competition now — frictionless, always-on, free. The only answer is the thing AI still can't do: genuine human connection, accountability, and community.
+Spotify's new Running Mode drops an AI coach directly into a listener's workout, per finance.biggo.com. Your members are getting real-time feedback, pacing cues, and personalised nudges from a playlist app. That's your competition now: frictionless, always-on, free. The only answer is the thing AI still can't do: genuine human connection, accountability, and community.
 
 ## Here's What to Actually Do This Week
 
@@ -52,8 +52,8 @@ These signals point to the same playbook. Execute it in three moves.
 
 **Audit your experience against the premium bar.** Walk into your studio like a first-timer. Is the welcome warm? Is the space considered? Does it feel like somewhere that deserves a Nordstrom shelf? Fix the thing that makes you wince first.
 
-**Double down on community events.** That €15,000 raised in Kildare came from one all-day exercise session built around a shared purpose, per kildare-nationalist.ie. Community fundraisers, charity challenges, and milestone celebrations don't just generate goodwill — they pack your floor, create content, and remind members why they chose you over an app.
+**Double down on community events.** That €15,000 raised in Kildare came from one all-day exercise session built around a shared purpose, per kildare-nationalist.ie. Community fundraisers, charity challenges, and milestone celebrations don't just generate goodwill: they pack your floor, create content, and remind members why they chose you over an app.
 
-The Athletech News report on the Pilates market makes one thing clear: brand leaders believe there is still significant room to grow. The ceiling isn't here yet. The studios that win the next phase won't be the ones with the flashiest equipment. They'll be the ones that spotted the gaps — older demographics, premium expectations, human connection — and moved first.
+The Athletech News report on the Pilates market makes one thing clear: brand leaders believe there is still significant room to grow. The ceiling isn't here yet. The studios that win the next phase won't be the ones with the flashiest equipment. They'll be the ones that spotted the gaps (older demographics, premium expectations, human connection) and moved first.
 
 The map is right in front of you.

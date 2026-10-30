@@ -5,7 +5,7 @@ counterpart: the-metric-you-re-missing-while-everyone-else-scales-0911
 title: "The Metric You're Missing While Everyone Else Scales"
 topic: marketing-community
 newsTake: true
-description: "Today's fitness industry moves tell a clear story about where growth actually comes from — and it's not where most gym owners are looking."
+description: "Today's fitness industry moves tell a clear story about where growth actually comes from, and it's not where most gym owners are looking."
 pillar: build
 type: marketing
 format: analysis
@@ -29,7 +29,7 @@ tags: []
 
 ## You're Watching the Wrong Numbers
 
-Gym Group just reported rising H1 revenue on the back of higher membership, according to TradingView. Sounds like the headline every studio owner wants. But here's the problem: Athletech News ran a piece this week pointing out that most gym owners are fixated on the wrong metric entirely. More members doesn't automatically mean more money — not if your retention, yield-per-member, or lifetime value is leaking.
+Gym Group just reported rising H1 revenue on the back of higher membership, according to TradingView. Sounds like the headline every studio owner wants. But here's the problem: Athletech News ran a piece this week pointing out that most gym owners are fixated on the wrong metric entirely. More members doesn't automatically mean more money, not if your retention, yield-per-member, or lifetime value is leaking.
 
 While you're refreshing your new-member count, the smarter operators are asking a different question: what does each member actually generate over time?
 
@@ -37,11 +37,11 @@ While you're refreshing your new-member count, the smarter operators are asking 
 
 Look at what's moving in the market this week and you'll spot a pattern.
 
-Arketa — a fitness software provider — is opening a physical brick-and-mortar studio, per Athletech News. A software company going physical isn't a vanity project. It's a data play. They want to understand the full member journey, on the floor, not just through a dashboard. That tells you something: the operators who will win are the ones who close the gap between what the numbers say and what members actually experience.
+Arketa (a fitness software provider) is opening a physical brick-and-mortar studio, per Athletech News. A software company going physical isn't a vanity project. It's a data play. They want to understand the full member journey, on the floor, not just through a dashboard. That tells you something: the operators who will win are the ones who close the gap between what the numbers say and what members actually experience.
 
-Meanwhile, a Leeds agency has landed an international brief from a supplements firm targeting UK growth, reports Prolific North. A supplements brand doesn't spend on agency retainers unless it believes fitness consumers are ready to spend more — on more things. Your members aren't just buying sessions. They're buying a wellness identity.
+Meanwhile, a Leeds agency has landed an international brief from a supplements firm targeting UK growth, reports Prolific North. A supplements brand doesn't spend on agency retainers unless it believes fitness consumers are ready to spend more, on more things. Your members aren't just buying sessions. They're buying a wellness identity.
 
-That's reinforced by activity outside fitness proper. Belle Brands acquired hair wellness brand Vegamour, per Global Cosmetics News. Fredun Pharmaceuticals picked up pet wellness brand Furlicks, according to Sahi. Wellness is consolidating fast across every category. The acquirers understand that loyal, health-conscious consumers have high lifetime value — and they're building portfolios around them.
+That's reinforced by activity outside fitness proper. Belle Brands acquired hair wellness brand Vegamour, per Global Cosmetics News. Fredun Pharmaceuticals picked up pet wellness brand Furlicks, according to Sahi. Wellness is consolidating fast across every category. The acquirers understand that loyal, health-conscious consumers have high lifetime value, and they're building portfolios around them.
 
 The thread connecting all of this? Lifetime value beats acquisition volume, every time.
 
@@ -55,4 +55,4 @@ Before you run another new-member promo, do this:
 
 **3. Treat your studio like Arketa is treating theirs.** Go experiential. The software company opening a physical space is doing it to learn what conversion and retention look like in real life. Walk your own floor this week. Watch where people hesitate, where they linger, where they leave. The data lives in the room, not just the spreadsheet.
 
-The Gym Group's membership growth is real and worth noting — but membership is a lagging indicator. What you should be building is the metric underneath it: a member who stays, spends more, and tells someone else. That's the number nobody's talking about. Start there.
+The Gym Group's membership growth is real and worth noting, but membership is a lagging indicator. What you should be building is the metric underneath it: a member who stays, spends more, and tells someone else. That's the number nobody's talking about. Start there.

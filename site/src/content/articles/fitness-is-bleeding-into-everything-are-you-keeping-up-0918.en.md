@@ -5,7 +5,7 @@ counterpart: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
 title: "Fitness Is Bleeding Into Everything. Are You Keeping Up?"
 topic: market-moves
 newsTake: true
-description: "From hybrid race classes to allergy care, the wellness industry is expanding its borders fast — here's what operators need to do before they get lapped."
+description: "From hybrid race classes to allergy care, the wellness industry is expanding its borders fast: here's what operators need to do before they get lapped."
 pillar: signal
 type: market-data
 format: analysis
@@ -29,7 +29,7 @@ tags: []
 
 ## The Gym Is No Longer Just the Gym
 
-Your members don't think of fitness as a category anymore. They think of it as a lifestyle layer — something that shows up at a 5K run organized by an NHL team, inside a nutrition IPO filing, and in an allergy clinic. If you're still selling "memberships" and "classes," you're speaking a language your customers are quietly outgrowing.
+Your members don't think of fitness as a category anymore. They think of it as a lifestyle layer: something that shows up at a 5K run organized by an NHL team, inside a nutrition IPO filing, and in an allergy clinic. If you're still selling "memberships" and "classes," you're speaking a language your customers are quietly outgrowing.
 
 This week handed operators a clear signal: wellness is colonizing every adjacent space. The question isn't whether that affects your business. It's whether you move first or get moved on.
 
@@ -37,9 +37,9 @@ This week handed operators a clear signal: wellness is colonizing every adjacent
 
 Look at the week's news as a pattern, not a pile of stories.
 
-Hyrox and Orangetheory are staging joint classes at the Eudemonia Summit, per Athletech News. Two brands that could easily see each other as competitors are instead building a shared stage. That's not a marketing stunt — that's a signal that community-driven, performance-oriented fitness is strong enough to attract collaboration at scale.
+Hyrox and Orangetheory are staging joint classes at the Eudemonia Summit, per Athletech News. Two brands that could easily see each other as competitors are instead building a shared stage. That's not a marketing stunt: that's a signal that community-driven, performance-oriented fitness is strong enough to attract collaboration at scale.
 
-Meanwhile, HealthKart is weighing a $300–400 million IPO as the nutrition market builds momentum, according to Livemint. Supplements and nutrition were once a sideline. Now they're IPO material. Your members are already spending serious money in that space — just probably not with you.
+Meanwhile, HealthKart is weighing a $300–400 million IPO as the nutrition market builds momentum, according to Livemint. Supplements and nutrition were once a sideline. Now they're IPO material. Your members are already spending serious money in that space, just probably not with you.
 
 The LA Kings raised over $120,000 through a 5K to support youth wellness and social impact programs, reports ACCESS Newswire. A hockey franchise running a community fitness event that doubles as a fundraiser. Sports, wellness, and social purpose in one package. Operators who think "community" means a loyalty punch card should take note.
 
@@ -47,7 +47,7 @@ And then there's Wizard Wellness, which just raised $1M to push into allergy car
 
 Even at the club level, bodyLIFE's Club of the Month spotlight on balance Fitness- & Wellness-Club and the latest DSSV digital edition both point to the same European conversation: integrated fitness and wellness experiences are what serious clubs are building toward.
 
-The throughline? Fitness is the platform. Everything else — nutrition, community events, clinical care, cross-brand experiences — is becoming content on top of it.
+The throughline? Fitness is the platform. Everything else (nutrition, community events, clinical care, cross-brand experiences) is becoming content on top of it.
 
 ## What You Should Do This Week
 
@@ -57,7 +57,7 @@ Here's a concrete starting point:
 
 **Pick one adjacency and make a move.** That could mean:
 - Reaching out to a local sports team, school, or nonprofit about a co-branded community event (the LA Kings model doesn't require an NHL budget)
-- Adding a curated nutrition retail shelf or partner referral — because if HealthKart is IPO-ready, your members' supplement spend is already going somewhere
+- Adding a curated nutrition retail shelf or partner referral, because if HealthKart is IPO-ready, your members' supplement spend is already going somewhere
 - Booking a conversation with one complementary operator in your market about a joint programming day (see: Hyrox x Orangetheory)
 
 The brands winning right now aren't the ones with the best equipment. They're the ones that show up in more of their members' lives. Wellness is expanding its borders. Plant your flag in at least one new territory before someone else does it first.

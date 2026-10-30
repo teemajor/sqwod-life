@@ -2,7 +2,7 @@
 urlSlug: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
 lang: "en"
 counterpart: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
-title: "Your gym is leaving money on the table — here's the proof"
+title: "Your gym is leaving money on the table: here's the proof"
 topic: pricing-revenue
 newsTake: true
 description: "From dormant members to longevity medicine, five signals show exactly where fitness revenue is hiding right now."
@@ -29,28 +29,28 @@ tags: []
 
 ## The problem nobody wants to say out loud
 
-Your gym has two businesses: the one that's running, and the much larger one that isn't. Dormant members, untapped community goodwill, and a longevity-obsessed consumer who doesn't yet think of you as a health destination — that's the gap. This week's news cycle, read together, draws a map straight to it.
+Your gym has two businesses: the one that's running, and the much larger one that isn't. Dormant members, untapped community goodwill, and a longevity-obsessed consumer who doesn't yet think of you as a health destination: that's the gap. This week's news cycle, read together, draws a map straight to it.
 
 ## What's actually happening out there
 
-**Reactivation is having a moment.** Australian and New Zealand gyms are leaning hard into reactivation campaigns to unlock dormant member leads, according to Australasian Leisure Management Magazine. The insight isn't that people quit — it's that they don't leave forever. They go quiet. A warm lead who already swiped your card once is worth a completely different conversation than a cold prospect, and operators who treat them the same are burning cash.
+**Reactivation is having a moment.** Australian and New Zealand gyms are leaning hard into reactivation campaigns to unlock dormant member leads, according to Australasian Leisure Management Magazine. The insight isn't that people quit: it's that they don't leave forever. They go quiet. A warm lead who already swiped your card once is worth a completely different conversation than a cold prospect, and operators who treat them the same are burning cash.
 
-**Community is becoming a balance-sheet asset.** A women's gym in Greenock raised £850 for Children in Poverty Inverclyde, per Yahoo News UK. OSU Center for Health Sciences raised more than $800K for a wellness center and scholarships, reports fox23.com. These aren't feel-good footnotes — they're proof that gyms embedded in community causes generate the kind of loyalty no ad spend can manufacture. Members who believe in your mission stay longer and recruit harder.
+**Community is becoming a balance-sheet asset.** A women's gym in Greenock raised £850 for Children in Poverty Inverclyde, per Yahoo News UK. OSU Center for Health Sciences raised more than $800K for a wellness center and scholarships, reports fox23.com. These aren't feel-good footnotes: they're proof that gyms embedded in community causes generate the kind of loyalty no ad spend can manufacture. Members who believe in your mission stay longer and recruit harder.
 
 **Capital is moving toward consolidation.** Filip & Company advised Mozaik Investments on the acquisition of several fitness centres, The Diplomat Bucharest reports. When legal and investment firms are doing fitness deals in Eastern Europe, it's a signal: the sector is maturing, margins are being hunted, and independent operators who haven't thought about their strategic position are about to feel the squeeze from better-capitalised competitors.
 
-**Longevity is the next category war.** World-renowned healthy aging pioneer Andrea Maier, MD will lead discussions on the future of longevity and healthspan at the 2026 Global Wellness Summit, according to businessnewsthisweek.com. This is the consumer trend that will redraw the fitness industry's ceiling. The member who wants to live well at 80 is not the same person as the member who wants abs by summer — and they will pay differently, train differently, and expect a different level of operator sophistication.
+**Longevity is the next category war.** World-renowned healthy aging pioneer Andrea Maier, MD will lead discussions on the future of longevity and healthspan at the 2026 Global Wellness Summit, according to businessnewsthisweek.com. This is the consumer trend that will redraw the fitness industry's ceiling. The member who wants to live well at 80 is not the same person as the member who wants abs by summer, and they will pay differently, train differently, and expect a different level of operator sophistication.
 
 ## Do this now
 
 Pick one thread and pull it this week.
 
-**If you have a dormant member list** — and you do — segment it by last visit date and send a single, human email. Not a discount. A check-in. "We noticed you've been away. What changed?" Reactivation campaigns work because the relationship already exists. Stop selling to strangers when you have warm contacts going cold.
+**If you have a dormant member list**, and you do, segment it by last visit date and send a single, human email. Not a discount. A check-in. "We noticed you've been away. What changed?" Reactivation campaigns work because the relationship already exists. Stop selling to strangers when you have warm contacts going cold.
 
-**If you're community-adjacent** — and every gym is — find one local cause and tie a campaign to it. The Greenock example shows you don't need a massive budget. You need a specific cause, a visible effort, and members who can see their gym doing something that matters beyond the squat rack.
+**If you're community-adjacent**, and every gym is, find one local cause and tie a campaign to it. The Greenock example shows you don't need a massive budget. You need a specific cause, a visible effort, and members who can see their gym doing something that matters beyond the squat rack.
 
-**If you're thinking about growth or exit** — the Mozaik deal is your reminder that positioning happens before the conversation, not during it. Know your numbers, know your story, know why your locations matter.
+**If you're thinking about growth or exit**: the Mozaik deal is your reminder that positioning happens before the conversation, not during it. Know your numbers, know your story, know why your locations matter.
 
-**If you're programming for the next decade** — start learning the longevity vocabulary now. Healthspan. Muscle preservation. Cognitive fitness. The 2026 Global Wellness Summit agenda is tomorrow's member expectation.
+**If you're programming for the next decade**: start learning the longevity vocabulary now. Healthspan. Muscle preservation. Cognitive fitness. The 2026 Global Wellness Summit agenda is tomorrow's member expectation.
 
 The operators who win the next five years won't be the ones who did more of the same. They'll be the ones who read the signals early.
