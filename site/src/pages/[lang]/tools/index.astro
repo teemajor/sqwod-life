@@ -87,14 +87,14 @@ const schema = {
   // "I want this": Umami records the click (data-umami-event); this only swaps the link
   // for a thank-you and keeps the page where it was (the #vote jump is the no-JS fallback).
   (function () {
-    var keep = null;
+    var keep = null, lastMsg = null;
     document.querySelectorAll('.tl-vote').forEach(function (a) {
       a.addEventListener('click', function () {
         keep = window.scrollY;
         var card = a.closest('.tl');
         var msg = card && card.querySelector('.tl-noted');
         a.remove();   // one vote per card
-        if (msg) { msg.textContent = noted; msg.focus(); }
+        if (msg) { msg.textContent = noted; msg.focus(); lastMsg = msg; }
       });
     });
     window.addEventListener('hashchange', function () {
@@ -103,7 +103,7 @@ const schema = {
       // drop the hash so the next vote fires hashchange again
       history.replaceState(null, '', location.pathname + location.search);
       window.scrollTo(0, y);
-      requestAnimationFrame(function () { window.scrollTo(0, y); });
+      requestAnimationFrame(function () { window.scrollTo(0, y); if (lastMsg) lastMsg.focus({ preventScroll: true }); });
     });
   })();
 </script>
