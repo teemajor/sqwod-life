@@ -61,4 +61,4 @@ tags: ["apparel", "running", "shoes"]
 
 Der Ghost ist der Schuh, den man empfiehlt, wenn man null Überraschungen will: ein stabiler, gut gedämpfter Neutralschuh mit wirklich exzellenter Haltbarkeit und bequemem, sicherem Obermaterial. Für Anfänger:innen und Fersenläufer:innen im Grundlagenaufbau ist er die Definition eines sicheren Alltagsschuhs.
 
-Die Kehrseite ist der Charakter: das DNA-Loft-Laufgefühl ist geschmeidig, aber flach, und mit 289 g schwerer als spritzigere Rivalen. Will eine Kund:in einen Schuh auch für schnellere Tage, verweise sie woanders hin; beim Ghost geht es um Verlässlichkeit, nicht um Nervenkitzel.
+Die Kehrseite ist der Charakter: Das DNA-Loft-Laufgefühl ist geschmeidig, aber flach, und mit 289 g schwerer als spritzigere Rivalen. Will eine Kund:in einen Schuh auch für schnellere Tage, verweise sie woanders hin; beim Ghost geht es um Verlässlichkeit, nicht um Nervenkitzel.

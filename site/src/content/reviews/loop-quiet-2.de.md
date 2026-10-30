@@ -47,7 +47,7 @@ pros:
 cons:
   - "Kein medizinischer Gehörschutz"
   - "24 dB SNR (~21 dB unabhängiges Labor-NRR) bringt lautes Schnarchen/Maschinen nicht zum Schweigen"
-  - "Passform größenabhängig: falscher Tip verschlechtert die Dichtung"
+  - "Passform größenabhängig: Falscher Tip verschlechtert die Dichtung"
 whoFor:
   buy: "Du (oder deine Kund:innen) willst bequeme, wiederverwendbare, maximal-leise Ohrstöpsel für Schlaf, Seitenschlaf, Fokus oder Reisen zum kleinen Preis."
   skip: "Du musst sehr lauten, tieffrequenten Lärm blocken oder brauchst zertifizierten/medizinischen Gehörschutz."
@@ -61,4 +61,4 @@ tags: ["sleep", "earplugs", "recovery"]
 
 Loop Quiet 2 ist der schlaf-fokussierte Stöpsel in Loops Reihe und eine einfache Empfehlung: 24 dB SNR passive Reduktion, vier Tip-Größen für zuverlässige Dichtung und ein flaches Profil, das Tester als bequem für Seitenschläfer hervorheben, wiederverwendbar und waschbar für ~20 €. Über 13.500+ On-Site-Bewertungen liegt er bei 4,2/5, mit einem unabhängigen Labor-„B“ für die Reduktion.
 
-Nur die Erwartung kalibrieren: Es ist Komfort-und-Ruhe, kein Tresor, die beworbenen 24 dB SNR messen nach unabhängigem NRR eher ~21 dB, es nimmt Lärm die Spitze, löscht aber lautes Schnarchen nicht. Als günstige, bequeme, wiederverwendbare Schlaf- und Fokus-Hilfe gehört er zu den besten der Kategorie.
+Nur die Erwartung kalibrieren: Es ist Komfort-und-Ruhe, kein Tresor; die beworbenen 24 dB SNR messen nach unabhängigem NRR eher ~21 dB, es nimmt Lärm die Spitze, löscht aber lautes Schnarchen nicht. Als günstige, bequeme, wiederverwendbare Schlaf- und Fokus-Hilfe gehört er zu den besten der Kategorie.

@@ -91,21 +91,21 @@ export const guides: BestGuide[] = [
     ],
     operator: {
       en: 'Rolling wearables out across a client roster is a different purchase. Price it per client per month over three years including subscription, not per unit. Check whether the platform has a genuine coach dashboard or whether you will be reading twenty separate apps. Confirm you can export raw data into your own booking or programming stack. And weigh compliance hardest of all: the best tracker for a roster is the one still being worn in week six, which is usually the one nobody has to remember to charge. In the EU, client biometric data in a coaching relationship carries GDPR obligations: know where it is stored and what you are agreeing to on your clients behalf.',
-      de: 'Wearables für einen ganzen Kundenstamm sind ein anderer Kauf. Rechne pro Kunde und Monat über drei Jahre inklusive Abo, nicht pro Gerät. Prüfe, ob die Plattform ein echtes Coach-Dashboard hat oder ob du zwanzig einzelne Apps liest. Kläre, ob du Rohdaten in dein Buchungs- oder Programmier-System exportieren kannst. Und gewichte die Konsequenz am höchsten: der beste Tracker für einen Kundenstamm ist der, der in Woche sechs noch getragen wird, und das ist meist der, den niemand ans Ladekabel denken muss. In der EU gilt: Biometrische Kundendaten im Coaching sind DSGVO-relevant. Wisse, wo sie liegen und wozu du im Namen deiner Kund:innen zustimmst.',
+      de: 'Wearables für einen ganzen Kundenstamm sind ein anderer Kauf. Rechne pro Kunde und Monat über drei Jahre inklusive Abo, nicht pro Gerät. Prüfe, ob die Plattform ein echtes Coach-Dashboard hat oder ob du zwanzig einzelne Apps liest. Kläre, ob du Rohdaten in dein Buchungs- oder Programmier-System exportieren kannst. Und gewichte die Konsequenz am höchsten: Der beste Tracker für einen Kundenstamm ist der, der in Woche sechs noch getragen wird, und das ist meist der, den niemand ans Ladekabel denken muss. In der EU gilt: Biometrische Kundendaten im Coaching sind DSGVO-relevant. Wisse, wo sie liegen und wozu du im Namen deiner Kund:innen zustimmst.',
     },
     faq: [
       {
         q: { en: 'Do I actually need a smart ring, or is a watch enough?', de: 'Brauche ich wirklich einen Smart Ring oder reicht eine Uhr?' },
         a: {
           en: 'A ring is the better buy if your main goal is sleep and recovery, because you will keep it on overnight without thinking about it. A watch is the better buy if you want live training metrics, GPS and a screen you can read mid-session. If you train hard and sleep badly, start with the ring: that is where the biggest unmanaged variable usually sits.',
-          de: 'Ein Ring ist die bessere Wahl, wenn es dir vor allem um Schlaf und Erholung geht: du trägst ihn nachts, ohne darüber nachzudenken. Eine Uhr ist besser, wenn du Live-Trainingsdaten, GPS und ein ablesbares Display willst. Wer hart trainiert und schlecht schläft, fängt mit dem Ring an: Dort liegt meist die größte unbeachtete Stellschraube.',
+          de: 'Ein Ring ist die bessere Wahl, wenn es dir vor allem um Schlaf und Erholung geht: Du trägst ihn nachts, ohne darüber nachzudenken. Eine Uhr ist besser, wenn du Live-Trainingsdaten, GPS und ein ablesbares Display willst. Wer hart trainiert und schlecht schläft, fängt mit dem Ring an: Dort liegt meist die größte unbeachtete Stellschraube.',
         },
       },
       {
         q: { en: 'Which fitness trackers work without a subscription?', de: 'Welche Fitness-Tracker funktionieren ohne Abo?' },
         a: {
           en: 'Several do, and the subscription column in the comparison table on this page shows which. It matters more than most buyers expect: over three years a mandatory plan can cost more than the device itself, so a subscription-free tracker at a higher sticker price is frequently the cheaper option. Decide on the three-year total, not the shelf price.',
-          de: 'Mehrere: die Abo-Spalte in der Vergleichstabelle auf dieser Seite zeigt, welche. Das Thema ist wichtiger, als die meisten erwarten: Über drei Jahre kann ein Pflicht-Abo mehr kosten als das Gerät selbst. Ein abofreier Tracker mit höherem Kaufpreis ist deshalb oft die günstigere Wahl. Entscheide nach Dreijahres-Gesamtkosten, nicht nach Regalpreis.',
+          de: 'Mehrere: Die Abo-Spalte in der Vergleichstabelle auf dieser Seite zeigt, welche. Das Thema ist wichtiger, als die meisten erwarten: Über drei Jahre kann ein Pflicht-Abo mehr kosten als das Gerät selbst. Ein abofreier Tracker mit höherem Kaufpreis ist deshalb oft die günstigere Wahl. Entscheide nach Dreijahres-Gesamtkosten, nicht nach Regalpreis.',
         },
       },
       {
@@ -126,7 +126,7 @@ export const guides: BestGuide[] = [
         q: { en: 'Can I use one wearable platform across a whole client roster?', de: 'Kann ich eine Wearable-Plattform für meinen ganzen Kundenstamm nutzen?' },
         a: {
           en: 'Some platforms offer a coach or team view; many do not, and you end up reading individual apps one at a time. Before committing a roster, check three things: whether a genuine multi-client dashboard exists, what per-seat licensing costs, and whether raw data exports. In the EU also settle where client biometric data is stored: that is a GDPR question, not an IT preference.',
-          de: 'Manche Plattformen bieten eine Coach- oder Team-Ansicht, viele nicht: dann liest du einzelne Apps nacheinander. Vor der Entscheidung für einen ganzen Kundenstamm drei Dinge prüfen: Gibt es ein echtes Mehr-Kunden-Dashboard, was kostet die Lizenz pro Platz, und lassen sich Rohdaten exportieren? In der EU zusätzlich klären, wo biometrische Kundendaten liegen: das ist eine DSGVO-Frage, keine IT-Vorliebe.',
+          de: 'Manche Plattformen bieten eine Coach- oder Team-Ansicht, viele nicht: Dann liest du einzelne Apps nacheinander. Vor der Entscheidung für einen ganzen Kundenstamm drei Dinge prüfen: Gibt es ein echtes Mehr-Kunden-Dashboard, was kostet die Lizenz pro Platz, und lassen sich Rohdaten exportieren? In der EU zusätzlich klären, wo biometrische Kundendaten liegen: Das ist eine DSGVO-Frage, keine IT-Vorliebe.',
         },
       },
     ],
@@ -152,7 +152,7 @@ export const guides: BestGuide[] = [
     before: [
       {
         en: 'Be clear what you are buying. The strong evidence for percussion and compression is about how you feel: perceived soreness and short-term range of motion. The evidence that they meaningfully speed up physiological recovery is much thinner. Feeling better is a legitimate reason to buy; just buy it knowingly.',
-        de: 'Sei dir klar, was du kaufst. Die gute Evidenz für Percussion und Kompression betrifft das Gefühl: empfundenen Muskelkater und kurzfristige Beweglichkeit. Dass sie die physiologische Erholung wirklich beschleunigen, ist deutlich schwächer belegt. Sich besser zu fühlen ist ein legitimer Kaufgrund: kauf nur mit offenen Augen.',
+        de: 'Sei dir klar, was du kaufst. Die gute Evidenz für Percussion und Kompression betrifft das Gefühl: empfundenen Muskelkater und kurzfristige Beweglichkeit. Dass sie die physiologische Erholung wirklich beschleunigen, ist deutlich schwächer belegt. Sich besser zu fühlen ist ein legitimer Kaufgrund: Kauf nur mit offenen Augen.',
       },
       {
         en: 'Power is oversold. Stall force and amplitude matter for thick muscle like quads and glutes, and actively work against you on the neck, shoulders and anywhere near a joint. A lighter tool you can steer one-handed beats a flagship you cannot comfortably hold up.',
@@ -176,7 +176,7 @@ export const guides: BestGuide[] = [
         q: { en: 'Do massage guns actually work?', de: 'Bringen Massagepistolen wirklich etwas?' },
         a: {
           en: 'For how you feel, yes: the evidence for reduced perceived soreness and short-term improvements in range of motion is reasonably consistent. For actually accelerating tissue repair or clearing metabolic waste, the evidence is much weaker than the marketing suggests. Buy one because moving more comfortably has value, not because it will make you recover faster.',
-          de: 'Fürs Gefühl ja: die Evidenz für weniger empfundenen Muskelkater und kurzfristig bessere Beweglichkeit ist recht konsistent. Dass sie die Geweberegeneration beschleunigen oder Stoffwechselprodukte abtransportieren, ist deutlich schwächer belegt, als die Werbung nahelegt. Kauf eine, weil angenehmere Bewegung einen Wert hat, nicht, weil du schneller regenerierst.',
+          de: 'Fürs Gefühl ja: Die Evidenz für weniger empfundenen Muskelkater und kurzfristig bessere Beweglichkeit ist recht konsistent. Dass sie die Geweberegeneration beschleunigen oder Stoffwechselprodukte abtransportieren, ist deutlich schwächer belegt, als die Werbung nahelegt. Kauf eine, weil angenehmere Bewegung einen Wert hat, nicht, weil du schneller regenerierst.',
         },
       },
       {
@@ -197,14 +197,14 @@ export const guides: BestGuide[] = [
         q: { en: 'Massage gun or foam roller, which should I buy first?', de: 'Massagepistole oder Faszienrolle: was zuerst?' },
         a: {
           en: 'A foam roller if you are buying one thing and want the broadest use for the least money; it covers large surfaces well and costs a fraction. A massage gun if you want targeted work you can do in ninety seconds without getting on the floor, which, realistically, is why people use it more often.',
-          de: 'Eine Faszienrolle, wenn du nur eine Sache kaufst und maximale Vielseitigkeit fürs wenigste Geld willst: sie deckt große Flächen gut ab und kostet einen Bruchteil. Eine Massagepistole, wenn du gezielt in neunzig Sekunden arbeiten willst, ohne dich auf den Boden zu legen: was realistisch der Grund ist, warum sie öfter genutzt wird.',
+          de: 'Eine Faszienrolle, wenn du nur eine Sache kaufst und maximale Vielseitigkeit fürs wenigste Geld willst: Sie deckt große Flächen gut ab und kostet einen Bruchteil. Eine Massagepistole, wenn du gezielt in neunzig Sekunden arbeiten willst, ohne dich auf den Boden zu legen: was realistisch der Grund ist, warum sie öfter genutzt wird.',
         },
       },
       {
         q: { en: 'Who should avoid percussion therapy entirely?', de: 'Wer sollte auf Percussion ganz verzichten?' },
         a: {
           en: 'Anyone on blood thinners or with a clotting disorder, a history of stroke or carotid artery disease, osteoporosis, a recent injury, or an implant in the area: check with a clinician first. Always avoid acute injuries, bruising, swelling and numb areas regardless of health status.',
-          de: 'Wer Blutverdünner nimmt oder eine Gerinnungsstörung hat, nach Schlaganfall oder bei Karotiserkrankung, bei Osteoporose, frischer Verletzung oder Implantat im Bereich: vorher ärztlich abklären. Akute Verletzungen, Blutergüsse, Schwellungen und taube Stellen sind unabhängig vom Gesundheitszustand immer tabu.',
+          de: 'Wer Blutverdünner nimmt oder eine Gerinnungsstörung hat, nach Schlaganfall oder bei Karotiserkrankung, bei Osteoporose, frischer Verletzung oder Implantat im Bereich: Vorher ärztlich abklären. Akute Verletzungen, Blutergüsse, Schwellungen und taube Stellen sind unabhängig vom Gesundheitszustand immer tabu.',
         },
       },
     ],
@@ -275,7 +275,7 @@ export const guides: BestGuide[] = [
         q: { en: 'Is a cooling mattress or a tracker the better first purchase?', de: 'Kühlmatratze oder Tracker: was zuerst kaufen?' },
         a: {
           en: 'If you already know you sleep badly, buy the thing that changes the night. Temperature regulation has a more direct effect on sleep quality than measurement does. Buy the tracker when you need to find out what is wrong, not to confirm what you already feel every morning.',
-          de: 'Wenn du ohnehin weißt, dass du schlecht schläfst, kauf das, was die Nacht verändert. Temperaturregulierung wirkt direkter auf die Schlafqualität als Messung. Den Tracker kaufst du, um herauszufinden was los ist, nicht, um zu bestätigen, was du jeden Morgen spürst.',
+          de: 'Wenn du ohnehin weißt, dass du schlecht schläfst, kauf das, was die Nacht verändert. Temperaturregulierung wirkt direkter auf die Schlafqualität als Messung. Den Tracker kaufst du, um herauszufinden, was los ist, nicht, um zu bestätigen, was du jeden Morgen spürst.',
         },
       },
     ],
@@ -305,7 +305,7 @@ export const guides: BestGuide[] = [
       },
       {
         en: 'Third-party testing is the one label claim worth paying for, because supplement labels are not independently verified by default. Certification means someone checked that what is on the label is in the tub.',
-        de: 'Fremdtestung ist die eine Auszeichnung, für die sich Aufpreis lohnt: denn Supplement-Etiketten werden standardmäßig nicht unabhängig geprüft. Zertifizierung heißt: Jemand hat kontrolliert, ob drin ist, was draufsteht.',
+        de: 'Fremdtestung ist die eine Auszeichnung, für die sich Aufpreis lohnt, denn Supplement-Etiketten werden standardmäßig nicht unabhängig geprüft. Zertifizierung heißt: Jemand hat kontrolliert, ob drin ist, was draufsteht.',
       },
       {
         en: 'Compare price per effective dose, not price per tub. A larger container at a lower dose per serving is routinely the more expensive product.',
@@ -313,7 +313,7 @@ export const guides: BestGuide[] = [
       },
       {
         en: 'Proprietary blends hide doses. If a label lists a blend total instead of per-ingredient amounts, you cannot tell whether anything is present in a meaningful quantity: treat that as a reason to look elsewhere.',
-        de: 'Proprietäre Mischungen verstecken Dosierungen. Wenn ein Etikett nur eine Blend-Summe statt Einzelmengen nennt, kannst du nicht erkennen, ob irgendetwas in relevanter Menge enthalten ist: das ist ein Grund, weiterzusuchen.',
+        de: 'Proprietäre Mischungen verstecken Dosierungen. Wenn ein Etikett nur eine Blend-Summe statt Einzelmengen nennt, kannst du nicht erkennen, ob irgendetwas in relevanter Menge enthalten ist: Das ist ein Grund, weiterzusuchen.',
       },
       {
         en: 'Anything involving a medical condition, pregnancy or medication belongs with a qualified professional. This is coaching information, not medical advice.',
@@ -329,7 +329,7 @@ export const guides: BestGuide[] = [
         q: { en: 'Which supplements actually have strong evidence behind them?', de: 'Welche Supplements haben wirklich starke Evidenz?' },
         a: {
           en: 'A short list, and it is much shorter than the shelf suggests. Creatine monohydrate, caffeine and protein for meeting intake targets are the ones with repeated meta-analytic support for training outcomes. Most of the rest sits somewhere between promising and unproven: our Sqwod Evidence briefings grade each claim and link the studies rather than asking you to take our word for it.',
-          de: 'Eine kurze Liste: deutlich kürzer, als das Regal vermuten lässt. Kreatin-Monohydrat, Koffein und Protein zum Erreichen der Zufuhr sind die mit wiederholter Meta-Analysen-Unterstützung für Trainingsergebnisse. Der Rest liegt meist zwischen vielversprechend und unbelegt: unsere Sqwod-Evidence-Briefings bewerten jede Aussage und verlinken die Studien, statt um Vertrauen zu bitten.',
+          de: 'Eine kurze Liste: deutlich kürzer, als das Regal vermuten lässt. Kreatin-Monohydrat, Koffein und Protein zum Erreichen der Zufuhr sind die mit wiederholter Meta-Analysen-Unterstützung für Trainingsergebnisse. Der Rest liegt meist zwischen vielversprechend und unbelegt: Unsere Sqwod-Evidence-Briefings bewerten jede Aussage und verlinken die Studien, statt um Vertrauen zu bitten.',
         },
       },
       {
@@ -350,7 +350,7 @@ export const guides: BestGuide[] = [
         q: { en: 'Do I need to cycle creatine?', de: 'Muss ich Kreatin zyklisieren?' },
         a: {
           en: 'No. The evidence supports a consistent daily dose without cycling, and loading phases are optional: they fill stores faster but reach the same place. Consistency matters far more than timing or protocol.',
-          de: 'Nein. Die Evidenz spricht für eine gleichbleibende Tagesdosis ohne Zyklen, und Ladephasen sind optional: sie füllen die Speicher schneller, landen aber am selben Punkt. Konsequenz zählt deutlich mehr als Timing oder Protokoll.',
+          de: 'Nein. Die Evidenz spricht für eine gleichbleibende Tagesdosis ohne Zyklen, und Ladephasen sind optional: Sie füllen die Speicher schneller, landen aber am selben Punkt. Konsequenz zählt deutlich mehr als Timing oder Protokoll.',
         },
       },
       {
@@ -407,28 +407,28 @@ export const guides: BestGuide[] = [
         q: { en: 'What happens to a connected machine if I cancel the subscription?', de: 'Was passiert mit einem vernetzten Gerät, wenn ich das Abo kündige?' },
         a: {
           en: 'It varies enormously and it is the single most important question in this category. Some machines keep full manual control and become ordinary equipment. Others lose programmes, resistance control or most of the screen. Ask before buying, because the answer determines what you own in three years.',
-          de: 'Das variiert enorm und ist die wichtigste Frage der Kategorie. Manche Geräte behalten volle manuelle Steuerung und werden zu normalem Equipment. Andere verlieren Programme, Widerstandssteuerung oder den Großteil des Displays. Frag vor dem Kauf: die Antwort bestimmt, was du in drei Jahren besitzt.',
+          de: 'Das variiert enorm und ist die wichtigste Frage der Kategorie. Manche Geräte behalten volle manuelle Steuerung und werden zu normalem Equipment. Andere verlieren Programme, Widerstandssteuerung oder den Großteil des Displays. Frag vor dem Kauf: Die Antwort bestimmt, was du in drei Jahren besitzt.',
         },
       },
       {
         q: { en: 'Is home gym equipment allowed in a commercial studio?', de: 'Darf Heim-Equipment im gewerblichen Studio stehen?' },
         a: {
           en: 'Physically yes, contractually often not. A large share of consumer equipment warranties exclude commercial use outright, which means a failure in month four may not be covered at all. Insurance and liability can be affected too. Confirm commercial rating in writing before it goes on a studio floor.',
-          de: 'Physisch ja, vertraglich oft nicht. Ein großer Teil der Consumer-Garantien schließt gewerbliche Nutzung komplett aus: ein Defekt im vierten Monat ist dann möglicherweise gar nicht gedeckt. Auch Versicherung und Haftung können betroffen sein. Lass dir die Gewerbetauglichkeit schriftlich bestätigen, bevor es auf die Studiofläche kommt.',
+          de: 'Physisch ja, vertraglich oft nicht. Ein großer Teil der Consumer-Garantien schließt gewerbliche Nutzung komplett aus: Ein Defekt im vierten Monat ist dann möglicherweise gar nicht gedeckt. Auch Versicherung und Haftung können betroffen sein. Lass dir die Gewerbetauglichkeit schriftlich bestätigen, bevor es auf die Studiofläche kommt.',
         },
       },
       {
         q: { en: 'How much space do I actually need?', de: 'Wie viel Platz brauche ich wirklich?' },
         a: {
           en: 'More than the footprint listed. Add clearance for the movement itself, safe access on the sides you use, and room to fold or move it if that is part of the plan. Ceiling height matters for anything overhead: measure before ordering, not after delivery.',
-          de: 'Mehr als die angegebene Stellfläche. Rechne Bewegungsraum, sicheren Zugang an den genutzten Seiten und Platz zum Klappen oder Verschieben dazu. Deckenhöhe zählt bei allem über Kopf: vor der Bestellung messen, nicht nach der Lieferung.',
+          de: 'Mehr als die angegebene Stellfläche. Rechne Bewegungsraum, sicheren Zugang an den genutzten Seiten und Platz zum Klappen oder Verschieben dazu. Deckenhöhe zählt bei allem über Kopf: Vor der Bestellung messen, nicht nach der Lieferung.',
         },
       },
       {
         q: { en: 'Are cheaper machines a false economy?', de: 'Sind günstige Geräte am Ende teurer?' },
         a: {
           en: 'For light home use, often not: a well-built budget machine used four times a week can last years. Under heavy or shared use the calculation inverts quickly, because bearings, belts and frames are where cost is removed. Judge it on expected sessions over the service life rather than on price alone.',
-          de: 'Bei leichter Heimnutzung oft nicht: ein solides günstiges Gerät hält bei viermal wöchentlich Jahren stand. Bei starker oder geteilter Nutzung kippt die Rechnung schnell, denn an Lagern, Riemen und Rahmen wird gespart. Bewerte nach erwarteten Einheiten über die Lebensdauer statt nach Preis allein.',
+          de: 'Bei leichter Heimnutzung oft nicht: Ein solides günstiges Gerät hält bei viermal wöchentlich Jahren stand. Bei starker oder geteilter Nutzung kippt die Rechnung schnell, denn an Lagern, Riemen und Rahmen wird gespart. Bewerte nach erwarteten Einheiten über die Lebensdauer statt nach Preis allein.',
         },
       },
     ],
@@ -471,14 +471,14 @@ export const guides: BestGuide[] = [
     ],
     operator: {
       en: 'Coaches buy apparel differently: you are on the floor for far more hours than any client, so durability per euro over a year is the honest metric, not how something looks new. If you are considering branded kit for a studio, the questions are minimum order quantities, whether the blank holds up to commercial laundering, and how the colour looks after twenty washes. Recommending gear to clients also carries a quiet responsibility: a shoe recommendation that puts someone in the wrong heel height for their lift is a coaching error wearing a shopping decision.',
-      de: 'Coaches kaufen Bekleidung anders: Du stehst deutlich mehr Stunden auf der Fläche als jede:r Kund:in, also ist Haltbarkeit pro Euro über ein Jahr die ehrliche Kennzahl, nicht, wie etwas neu aussieht. Bei gebrandeter Studio-Kleidung lauten die Fragen: Mindestbestellmenge, hält der Rohling gewerbliche Wäsche aus, und wie sieht die Farbe nach zwanzig Wäschen aus? Empfehlungen an Kund:innen tragen zudem eine stille Verantwortung: ein Schuhtipp mit falscher Absatzhöhe für die jeweilige Übung ist ein Coaching-Fehler im Gewand einer Kaufentscheidung.',
+      de: 'Coaches kaufen Bekleidung anders: Du stehst deutlich mehr Stunden auf der Fläche als jede:r Kund:in, also ist Haltbarkeit pro Euro über ein Jahr die ehrliche Kennzahl, nicht, wie etwas neu aussieht. Bei gebrandeter Studio-Kleidung lauten die Fragen: Mindestbestellmenge, hält der Rohling gewerbliche Wäsche aus, und wie sieht die Farbe nach zwanzig Wäschen aus? Empfehlungen an Kund:innen tragen zudem eine stille Verantwortung: Ein Schuhtipp mit falscher Absatzhöhe für die jeweilige Übung ist ein Coaching-Fehler im Gewand einer Kaufentscheidung.',
     },
     faq: [
       {
         q: { en: 'Do I need weightlifting shoes, or is this just marketing?', de: 'Brauche ich Gewichtheberschuhe oder ist das nur Marketing?' },
         a: {
           en: 'They genuinely help if limited ankle mobility is capping your squat depth or you do Olympic lifts, because the raised heel lets you reach depth with a more upright torso. They are unhelpful and often counterproductive for deadlifts, where you want to be as close to the floor as possible. If you mainly deadlift and press, a flat firm sole is the better buy.',
-          de: 'Sie helfen wirklich, wenn eingeschränkte Sprunggelenksbeweglichkeit deine Kniebeugentiefe begrenzt oder du olympisch hebst: die erhöhte Ferse ermöglicht Tiefe bei aufrechterem Oberkörper. Beim Kreuzheben sind sie unnütz und oft hinderlich, weil du dem Boden möglichst nah sein willst. Wer vor allem zieht und drückt, kauft besser eine flache, feste Sohle.',
+          de: 'Sie helfen wirklich, wenn eingeschränkte Sprunggelenksbeweglichkeit deine Kniebeugentiefe begrenzt oder du olympisch hebst: Die erhöhte Ferse ermöglicht Tiefe bei aufrechterem Oberkörper. Beim Kreuzheben sind sie unnütz und oft hinderlich, weil du dem Boden möglichst nah sein willst. Wer vor allem zieht und drückt, kauft besser eine flache, feste Sohle.',
         },
       },
       {
@@ -542,7 +542,7 @@ export const guides: BestGuide[] = [
     ],
     operator: {
       en: 'For a coach or studio this is infrastructure, not an app, and switching later is genuinely painful: it costs you history, client habits and often a few clients. Model the cost at the roster size you are targeting rather than todays. Insist on data export in a real format before you commit. And check the GDPR position properly if you operate in the EU: where client data is stored, who processes it, and whether you have a data processing agreement. That is not paperwork for its own sake: it is the thing that becomes a problem exactly when the business is going well.',
-      de: 'Für Coaches und Studios ist das Infrastruktur, keine App, und ein späterer Wechsel tut wirklich weh: Er kostet Historie, Kundengewohnheiten und meist ein paar Kund:innen. Rechne mit der angestrebten Kundenzahl, nicht der heutigen. Bestehe vor der Entscheidung auf Datenexport in einem echten Format. Und kläre die DSGVO-Lage sauber, wenn du in der EU arbeitest: wo Kundendaten liegen, wer sie verarbeitet, und ob ein Auftragsverarbeitungsvertrag vorliegt. Das ist kein Papierkram um seiner selbst willen: es wird genau dann zum Problem, wenn das Geschäft gut läuft.',
+      de: 'Für Coaches und Studios ist das Infrastruktur, keine App, und ein späterer Wechsel tut wirklich weh: Er kostet Historie, Kundengewohnheiten und meist ein paar Kund:innen. Rechne mit der angestrebten Kundenzahl, nicht der heutigen. Bestehe vor der Entscheidung auf Datenexport in einem echten Format. Und kläre die DSGVO-Lage sauber, wenn du in der EU arbeitest: wo Kundendaten liegen, wer sie verarbeitet, und ob ein Auftragsverarbeitungsvertrag vorliegt. Das ist kein Papierkram um seiner selbst willen: Es wird genau dann zum Problem, wenn das Geschäft gut läuft.',
     },
     faq: [
       {
@@ -556,7 +556,7 @@ export const guides: BestGuide[] = [
         q: { en: 'Is a free training app good enough?', de: 'Reicht eine kostenlose Trainings-App?' },
         a: {
           en: 'For training yourself, very often yes: logging consistently matters more than the software doing it. For coaching others, free tools usually break down on client management, billing and data protection rather than on programming features.',
-          de: 'Fürs eigene Training sehr oft ja: konsequentes Protokollieren zählt mehr als die Software dahinter. Fürs Coaching anderer scheitern kostenlose Tools meist an Kundenverwaltung, Abrechnung und Datenschutz, nicht an den Programmierfunktionen.',
+          de: 'Fürs eigene Training sehr oft ja: Konsequentes Protokollieren zählt mehr als die Software dahinter. Fürs Coaching anderer scheitern kostenlose Tools meist an Kundenverwaltung, Abrechnung und Datenschutz, nicht an den Programmierfunktionen.',
         },
       },
       {
@@ -570,7 +570,7 @@ export const guides: BestGuide[] = [
         q: { en: 'Where does client data sit, and does that matter?', de: 'Wo liegen Kundendaten, und spielt das eine Rolle?' },
         a: {
           en: 'It matters a great deal in the EU. Training and health data about identifiable clients falls under GDPR, which means you need to know where it is processed and to have an agreement in place with the provider. Ask before you onboard clients, not after.',
-          de: 'In der EU sehr. Trainings- und Gesundheitsdaten identifizierbarer Kund:innen fallen unter die DSGVO: du musst wissen, wo sie verarbeitet werden, und brauchst eine Vereinbarung mit dem Anbieter. Frag, bevor du Kund:innen einlädst, nicht danach.',
+          de: 'In der EU sehr. Trainings- und Gesundheitsdaten identifizierbarer Kund:innen fallen unter die DSGVO: Du musst wissen, wo sie verarbeitet werden, und brauchst eine Vereinbarung mit dem Anbieter. Frag, bevor du Kund:innen einlädst, nicht danach.',
         },
       },
     ],
@@ -641,7 +641,7 @@ export const guides: BestGuide[] = [
         q: { en: 'What happens to my clients if I switch platforms?', de: 'Was passiert mit meinen Kund:innen bei einem Plattformwechsel?' },
         a: {
           en: 'Expect to lose some, which is why export matters. You will need your client list, their booking history and their payment details in a portable form, and payment tokens in particular are often not transferable. Plan a switch around a quiet period and communicate it before it happens rather than after.',
-          de: 'Rechne mit Verlusten: deshalb zählt der Export. Du brauchst Kundenliste, Buchungshistorie und Zahlungsdaten in portabler Form, wobei gerade Zahlungs-Token oft nicht übertragbar sind. Plane den Wechsel in eine ruhige Phase und kommuniziere ihn vorher, nicht hinterher.',
+          de: 'Rechne mit Verlusten: Deshalb zählt der Export. Du brauchst Kundenliste, Buchungshistorie und Zahlungsdaten in portabler Form, wobei gerade Zahlungs-Token oft nicht übertragbar sind. Plane den Wechsel in eine ruhige Phase und kommuniziere ihn vorher, nicht hinterher.',
         },
       },
     ],

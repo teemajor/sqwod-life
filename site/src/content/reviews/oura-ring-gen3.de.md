@@ -52,7 +52,7 @@ cons:
   - "Größen-Kit + Wartezeit vor dem Start"
 whoFor:
   buy: "Du bist Coach und programmierst rund um Recovery und Schlaf, oder willst die ruhigsten Readiness-Daten zur Steuerung der Belastung."
-  skip: "Du brauchst Echtzeit-Herzfrequenz und GPS: nimm einen Brustgurt oder eine Sportuhr. Oder du zahlst kein Abo."
+  skip: "Du brauchst Echtzeit-Herzfrequenz und GPS: Nimm einen Brustgurt oder eine Sportuhr. Oder du zahlst kein Abo."
 asset:
   type: images
   images:
@@ -67,4 +67,4 @@ tags: ["wearables", "recovery", "schlaf", "smart-ring"]
 
 Der Oura Ring Gen3 bleibt der Recovery-Maßstab, aus einem Grund: Er erfasst die Daten, die zählen (Schlafphasen, HRV, Readiness), präziser, häufiger und reibungsloser als alles am Handgelenk. Für Coaches, die rund um die Recovery ihrer Kund:innen programmieren, ist diese Genauigkeit plus Diskretion das ganze Argument.
 
-Der Haken ist das Abo. 70 €/Jahr zusätzlich zur Hardware hält ihn bei der reinen Preis-Leistung von der Spitze fern: deshalb liegt die Preis-Leistungs-Komponente bei 78, während Crowd und unsere Bewertung hoch ausfallen.
+Der Haken ist das Abo. 70 €/Jahr zusätzlich zur Hardware hält ihn bei der reinen Preis-Leistung von der Spitze fern: Deshalb liegt die Preis-Leistungs-Komponente bei 78, während Crowd und unsere Bewertung hoch ausfallen.

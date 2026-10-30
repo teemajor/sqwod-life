@@ -48,7 +48,7 @@ cons:
   - "Schwächeres automatisches Workout-Tracking als am Handgelenk"
   - "App und Ökosystem jünger/unfertiger als bei Oura"
 whoFor:
-  buy: "Du willst kontinuierliche Schlaf-, Recovery- und HRV-Daten (mit optionalem Stoffwechsel-Fokus) ohne Kund:innen in ein Monatsabo zu zwingen."
+  buy: "Du willst kontinuierliche Schlaf-, Recovery- und HRV-Daten (mit optionalem Stoffwechsel-Fokus), ohne Kund:innen in ein Monatsabo zu zwingen."
   skip: "Du brauchst präzises Gym-/Kraft-Tracking oder die ausgereifteste App."
 asset:
   type: images
@@ -58,6 +58,6 @@ asset:
 tags: ["wearables", "smart-ring", "recovery"]
 ---
 
-Das Argument des Ring AIR ist simpel: Schlaf- und Recovery-Genauigkeit auf Oura-Niveau in einem leichteren Titanring, ohne Abo, ein Einmalkauf schaltet alles frei. Für Coaches, die wiederkehrende Gebühren hassen und saubere Recovery-Daten wollen, ist er schon deshalb der Preis-Leistungs-Ring.
+Das Argument des Ring AIR ist simpel: Schlaf- und Recovery-Genauigkeit auf Oura-Niveau in einem leichteren Titanring, ohne Abo; ein Einmalkauf schaltet alles frei. Für Coaches, die wiederkehrende Gebühren hassen und saubere Recovery-Daten wollen, ist er schon deshalb der Preis-Leistungs-Ring.
 
 Spannend wird es bei den Extras: ein optionales M1-Glukose-Patch und ein PowerPlugs-App-Store geben ihm einen Stoffwechsel-Fokus, den kein Rivale bietet. Die Kompromisse sind das schwächere automatische Workout-Tracking und eine App, die neben Oura noch reift.

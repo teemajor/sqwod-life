@@ -48,11 +48,11 @@ pros:
   - "Langlebiger, vielseitiger Alltagsschuh mit markantem Look"
 cons:
   - "Schwer für die Kategorie (~292–300 g)"
-  - "Festes Laufgefühl: der Schaum wirkt eher wie EVA als Superfoam"
+  - "Festes Laufgefühl: Der Schaum wirkt eher wie EVA als Superfoam"
   - "Fällt groß aus; Premium-Preis (150–190 €)"
 whoFor:
   buy: "Du coachst Neutral-Läufer:innen, die einen festen-aber-gedämpften, langlebigen Max-Stack-Alltagsschuh wollen und Ons Rocker-Laufgefühl mögen."
-  skip: "Du willst weiches Superfoam, einen leichten Tempo-Schuh oder eine schmale Passform: kleiner wählen oder anderswo schauen."
+  skip: "Du willst weiches Superfoam, einen leichten Tempo-Schuh oder eine schmale Passform: Kleiner wählen oder anderswo schauen."
 asset:
   type: images
   images:
@@ -67,4 +67,4 @@ tags: ["apparel", "running", "shoes"]
 
 Der Cloudmonster 2 ist Ons großer, gedämpfter Alltagsschuh, und das Update verbessert den ersten spürbar: breite, stabile Max-Stack-Plattform, geschmeidiger Rocker-Abrollvorgang und Dual-Density-Schaum mit mehr Pop. Unabhängige Tests sehen ihn bei 88/100: ein langlebiger, vielseitiger Cruiser für lockere und lange Läufe.
 
-Was er nicht ist: weich oder leicht. Das „Helion“ wirkt eher wie verbessertes EVA als plüschiges Superfoam, mit ~292–300 g ist er schwer, und er fällt groß aus. Für Coaches, die einen langlebigen gedämpften Schuh mit Ons Signatur-Laufgefühl empfehlen, liefert er, nur Erwartungen zu Festigkeit, Gewicht und Größe setzen.
+Was er nicht ist: weich oder leicht. Das „Helion“ wirkt eher wie verbessertes EVA als plüschiges Superfoam, mit ~292–300 g ist er schwer, und er fällt groß aus. Für Coaches, die einen langlebigen gedämpften Schuh mit Ons Signatur-Laufgefühl empfehlen, liefert er: nur Erwartungen zu Festigkeit, Gewicht und Größe setzen.

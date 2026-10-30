@@ -63,4 +63,4 @@ tags: ["wearables", "recovery", "strain", "smart-band"]
 
 Whoop 5.0 (zusammen mit dem medizinischen Whoop MG erschienen) ist der größte Sprung in der Geschichte der Reihe. Der Akku steigt von rund vier bis fünf Tagen auf beworbene 14-plus dank eines Ladepacks am Handgelenk, das Band ist etwa 7 % kleiner, der Sensor misst 26-mal pro Sekunde, und dazu kommen FDA-freigegebenes EKG, tägliche Blutdruck-Insights und Longevity-Metriken (Healthspan). Für Athlet:innen, die nach Readiness trainieren, bleibt die Coaching-Tiefe das Argument.
 
-Zwei Dinge bremsen es. Tester finden die Herzfrequenz-Genauigkeit weiterhin nicht ganz auf Spitzenniveau, und es bleibt reines Abo: die Hardware kommt mit der Mitgliedschaft, aber es gibt keinen Weg aus den laufenden Kosten. Ohne Display und ohne integriertes GPS ist es ein reines Recovery-Instrument, kein Allrounder.
+Zwei Dinge bremsen es. Tester finden die Herzfrequenz-Genauigkeit weiterhin nicht ganz auf Spitzenniveau, und es bleibt reines Abo: Die Hardware kommt mit der Mitgliedschaft, aber es gibt keinen Weg aus den laufenden Kosten. Ohne Display und ohne integriertes GPS ist es ein reines Recovery-Instrument, kein Allrounder.

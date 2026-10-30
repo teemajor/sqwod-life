@@ -45,7 +45,7 @@ pros:
   - "Robuste Außensohle, die auch nach 300+ km hält"
   - "Bereits deutliche Rabatte verfügbar (Straßenpreis ~135 € statt 170 € UVP)"
 cons:
-  - "Schmale Zehenbox kann einengen: überlege die Weite Wide (2E)"
+  - "Schmale Zehenbox kann einengen: Überlege die Weite Wide (2E)"
   - "Schwerer als das v13 (~295 g Herren), nicht fürs schnelle Laufen gemacht"
   - "Hohe UVP macht den vollen Preis schwer zu rechtfertigen"
 whoFor:
@@ -65,4 +65,4 @@ tags: ["footwear", "running", "daily-trainer"]
 
 Der Fresh Foam X 1080v14 ist New Balances Flaggschiff unter den maximal gedämpften Neutralschuhen, und das v14 setzt voll auf weichen Komfort. Experten loben durchweg die weiche, nachgiebige Fresh-Foam-X-Mittelsohle (RunRepeat 83/100, Running Shoes Guru 8,0/10 mit glatter 10 für Komfort) und nennen ihn einen der besten Cruiser für lockere Läufe und Regeneration. Das Mesh-Obermaterial ist atmungsaktiver und das Laufgefühl etwas stabiler als beim v13.
 
-Die Kompromisse sind Gewicht und Form: Mit rund 295 g ist er spürbar schwerer als zuvor und nicht fürs Tempo gedacht, und die zulaufende Zehenbox fühlt sich für viele eng an, die Weite 2E löst das. Bei voller UVP von 170 € ist das Preis-Leistungs-Verhältnis nur okay, doch in Deutschland liegen die Straßenpreise bei ~135 €, was ihn für komfortorientierte Alltagskilometer klar empfehlenswert macht.
+Die Kompromisse sind Gewicht und Form: Mit rund 295 g ist er spürbar schwerer als zuvor und nicht fürs Tempo gedacht, und die zulaufende Zehenbox fühlt sich für viele eng an; die Weite 2E löst das. Bei voller UVP von 170 € ist das Preis-Leistungs-Verhältnis nur okay, doch in Deutschland liegen die Straßenpreise bei ~135 €, was ihn für komfortorientierte Alltagskilometer klar empfehlenswert macht.

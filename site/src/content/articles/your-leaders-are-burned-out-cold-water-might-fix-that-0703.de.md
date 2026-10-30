@@ -29,13 +29,13 @@ Fitnessbetreiber reden viel über Member-Retention. Aber die wenigsten reden üb
 
 Das ist kein Charakterproblem. Es ist Biologie.
 
-Das Global Wellness Institute beschreibt in seiner Analyse zu Leadership Under Pressure, wie chronischer Stress die Entscheidungsqualität von Führungspersonen messbar verschlechtert. Cortisol, anhaltende Anspannung, fehlende Regeneration: der präfrontale Kortex, zuständig für rationales Abwägen und Impulskontrolle, arbeitet schlicht schlechter, wenn der Körper im Dauerkampfmodus steckt. Wer das ignoriert, optimiert Prozesse, während das eigentliche Problem im Chefbüro sitzt.
+Das Global Wellness Institute beschreibt in seiner Analyse zu Leadership Under Pressure, wie chronischer Stress die Entscheidungsqualität von Führungspersonen messbar verschlechtert. Cortisol, anhaltende Anspannung, fehlende Regeneration: Der präfrontale Kortex, zuständig für rationales Abwägen und Impulskontrolle, arbeitet schlicht schlechter, wenn der Körper im Dauerkampfmodus steckt. Wer das ignoriert, optimiert Prozesse, während das eigentliche Problem im Chefbüro sitzt.
 
-## Kaltes Wasser ist keine Wellness-Mode: es ist Neurobiologie
+## Kaltes Wasser ist keine Wellness-Mode: Es ist Neurobiologie
 
 Gleichzeitig beschreibt das Global Wellness Institute in seinem Report zu Contrast Hydrotherapy, warum der Wechsel zwischen Hitze und Kälte weit mehr ist als ein Instagram-würdiges Spa-Erlebnis. Kontrasthydrotherapie reguliert das autonome Nervensystem, fördert die Durchblutung und unterstützt aktiv die körperliche wie mentale Erholung.
 
-Die Verbindung liegt auf der Hand, wird aber kaum gezogen: Wer seinen Körper systematisch aus dem Stressmodus holt, verbessert damit auch die neuronale Grundlage für gute Entscheidungen. Eisbad plus Sauna ist in diesem Kontext kein Luxus: es ist ein Leadership-Tool mit physiologischer Wirkung.
+Die Verbindung liegt auf der Hand, wird aber kaum gezogen: Wer seinen Körper systematisch aus dem Stressmodus holt, verbessert damit auch die neuronale Grundlage für gute Entscheidungen. Eisbad plus Sauna ist in diesem Kontext kein Luxus: Es ist ein Leadership-Tool mit physiologischer Wirkung.
 
 Für Fitnessbetreiber bedeutet das eine doppelte Chance: als Angebot für eine zahlungskräftige Zielgruppe (Führungskräfte, Gründer, Manager) und als Instrument für die eigene Unternehmensführung.
 
@@ -50,7 +50,7 @@ Unternehmen zahlen für betriebliche Gesundheitsförderung. Ein klar kommunizier
 Sprich nicht über Wohlbefinden. Sprich über Entscheidungsqualität, Stressresilienz und Performance unter Druck: die Sprache, die Führungskräfte tatsächlich verwenden. Die Forschung des Global Wellness Institute gibt dir den inhaltlichen Rückhalt dafür.
 
 **3. Teste das Protokoll an dir selbst.**
-Wenn du als Betreiber im Dauerstress arbeitest und Kontrast-Hydrotherapie in deinem eigenen Studio anbietest, aber nie nutzt: das ist das erste Problem. Wer das Tool nicht kennt, kann es nicht verkaufen. Und wer es kennt, trifft wahrscheinlich bessere Entscheidungen.
+Wenn du als Betreiber im Dauerstress arbeitest und Kontrast-Hydrotherapie in deinem eigenen Studio anbietest, aber nie nutzt: Das ist das erste Problem. Wer das Tool nicht kennt, kann es nicht verkaufen. Und wer es kennt, trifft wahrscheinlich bessere Entscheidungen.
 
 ---
 

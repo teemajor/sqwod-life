@@ -51,7 +51,7 @@ cons:
   - "AMOLED ohne Saphir-Option: Haltbarkeit von Experten angemerkt"
 whoFor:
   buy: "Du coachst oder läufst Ausdauer/Triathlon und willst Race-GPS, volle Karten und die komplette Readiness-/Load-Suite in einer leichten Premium-AMOLED-Uhr."
-  skip: "Du hast ein kleines Handgelenk oder knappes Budget und willst v.a. Basis-Lauftracking: eine Forerunner 265 oder 165 liefert die meisten Metriken günstiger."
+  skip: "Du hast ein kleines Handgelenk oder knappes Budget und willst v.a. Basis-Lauftracking: Eine Forerunner 265 oder 165 liefert die meisten Metriken günstiger."
 asset:
   type: images
   images:

@@ -51,7 +51,7 @@ cons:
   - "Einige Tester berichten von Großzehen-Reiben"
 whoFor:
   buy: "Du coachst lockere und Recovery-Tage und willst maximale, schützende Dämpfung in einem stabilen Neutralschuh."
-  skip: "Du willst einen leichten, spritzigen Schuh fürs Tempo: fester EVA und Gewicht machen ihn träge."
+  skip: "Du willst einen leichten, spritzigen Schuh fürs Tempo: Fester EVA und Gewicht machen ihn träge."
 asset:
   type: images
   images:
@@ -66,4 +66,4 @@ tags: ["apparel", "running", "shoes"]
 
 Der Clifton ist HOKAs Eckpfeiler-Alltagsschuh, und der 10 setzt auf Schutz: maximale Dämpfung, stabiles Laufgefühl, geräumigeres Strick-Obermaterial und eine langlebige Außensohle für lockere Kilometer. Tester sehen ihn bei ~88/100 und 4,5 Sternen: als nachgiebiger Recovery-Schuh eine sichere Empfehlung.
 
-Der Haken ist der Charakter. Mit ~278 g ist er schwerer als der 9, und der einfache CMEVA-Schaum läuft fest statt lebendig: schnell will er nicht. Kaufe ihn für gedämpfte lockere Kilometer; fürs Tempo verweise Kund:innen auf etwas Spritzigeres. (Als Auslaufmodell oft ~110 €: dort am besten.)
+Der Haken ist der Charakter. Mit ~278 g ist er schwerer als der 9, und der einfache CMEVA-Schaum läuft fest statt lebendig: Schnell will er nicht. Kaufe ihn für gedämpfte lockere Kilometer; fürs Tempo verweise Kund:innen auf etwas Spritzigeres. (Als Auslaufmodell oft ~110 €: dort am besten.)

@@ -24,7 +24,7 @@ hero:
 tags: []
 ---
 
-## Das Problem sitzt nicht im Studio: es sitzt im Stundenplan
+## Das Problem sitzt nicht im Studio: Es sitzt im Stundenplan
 
 Du merkst es an den Anmeldezahlen. Oder an den Kommentaren nach dem Kurs. Oder daran, dass dieselben zwölf Personen kommen: zuverlässig, aber immer dieselben zwölf. Irgendwas zieht nicht mehr.
 
@@ -42,9 +42,9 @@ Drei Meldungen aus dieser Woche zeichnen ein klares Bild davon, wohin sich der M
 
 Kein Großprojekt. Drei kleine Schritte, die sofort wirken:
 
-1. **Schau deinen Kursplan mit fremden Augen an.** Wenn eine Frau zwischen 30 und 50 draufschaut: was sieht sie? Kraftorientierte Formate, oder hauptsächlich Ausdauer und Flexibilität? Wenn Letzteres überwiegt, weißt du, wo du anfängst.
+1. **Schau deinen Kursplan mit fremden Augen an.** Wenn eine Frau zwischen 30 und 50 draufschaut: Was sieht sie? Kraftorientierte Formate, oder hauptsächlich Ausdauer und Flexibilität? Wenn Letzteres überwiegt, weißt du, wo du anfängst.
 
-2. **Schreib eine Einheit auf: komplett.** Warm-up, Hauptteil, Cool-down, Coaching-Cues, häufige Fehler. Nicht für dich. Für jemand anderen, der sie genauso gut leiten kann wie du. Wenn du das nicht kannst, ist dein Konzept noch kein Konzept: es ist Improvisation mit Erfahrung.
+2. **Schreib eine Einheit auf: komplett.** Warm-up, Hauptteil, Cool-down, Coaching-Cues, häufige Fehler. Nicht für dich. Für jemand anderen, der sie genauso gut leiten kann wie du. Wenn du das nicht kannst, ist dein Konzept noch kein Konzept: Es ist Improvisation mit Erfahrung.
 
 3. **Füge eine digitale Verlängerung hinzu.** Das muss kein Produktionsaufwand sein. Eine kurze Videonotiz nach dem Kurs, ein Mobility-Flow als Hausaufgabe, ein wöchentlicher Tipp per Nachricht. Mitglieder, die zwischen den Einheiten von dir hören, bleiben länger.
 

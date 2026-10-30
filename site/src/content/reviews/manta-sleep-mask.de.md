@@ -42,7 +42,7 @@ value:
   low: 47
 pros:
   - "Echte 100% Verdunkelung: im Labor selbst unter Flutlicht dunkel"
-  - "Null Augendruck: geformte Cups lassen Platz über den Augen (gut für Wimpern)"
+  - "Null Augendruck: Geformte Cups lassen Platz über den Augen (gut für Wimpern)"
   - "Stark anpassbar und maschinenwaschbar"
   - "Starke Crowd-Stimmung (4,7–4,8 on-site über ~5.000 Bewertungen)"
 cons:
