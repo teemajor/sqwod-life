@@ -47,3 +47,12 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+      # Tell Bing/DuckDuckGo/AI search engines what changed (automation/indexnow.mjs).
+      # Waits 90s so the new sitemap is live on Pages before it is read.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: IndexNow ping
+        run: sleep 90 && node automation/indexnow.mjs
+        continue-on-error: true

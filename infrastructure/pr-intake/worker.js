@@ -307,6 +307,14 @@ async function getFile(env, path) {
 async function putFile(env, path, content, message, sha) {
   const body = { message, content: btoa(unescape(encodeURIComponent(content))), branch: env.GH_BRANCH || 'main' };
   if (sha) body.sha = sha;
-  const r = await fetch(GH(env, path), { method: 'PUT', headers: ghHeaders(env), body: JSON.stringify(body) });
-  return r.ok;
+  // A tap often lands while the review run is pushing its own commit; GitHub then answers 409 even though
+  // this file did not change. Retry while the file is still the version we read (never overwrite a newer one).
+  for (let i = 0; i < 4; i++) {
+    const r = await fetch(GH(env, path), { method: 'PUT', headers: ghHeaders(env), body: JSON.stringify(body) });
+    if (r.ok) return true;
+    if (![409, 422, 502, 503].includes(r.status)) return false;
+    await new Promise((res) => setTimeout(res, 600 * (i + 1)));
+    if (sha) { const now = await getFile(env, path); if (!now || now.sha !== sha) return false; }
+  }
+  return false;
 }

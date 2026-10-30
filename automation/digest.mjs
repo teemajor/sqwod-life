@@ -108,7 +108,7 @@ for (const p of q) {
 }
 for (const p of pressItems()) if (['screened', 'submitted'].includes(p.status) && !p.id.startsWith('press-sample-')) cards.push(cardFor(p));
 const revising = [...q, ...pressItems()].filter((p) => p.status === 'revise');
-const handFix = [...q, ...pressItems()].filter((p) => ['flagged', 'needs-changes'].includes(p.status) && daysSince(p.decidedAt || p.revisedAt || p.createdAt) <= 30);
+const handFix = [...q, ...pressItems()].filter((p) => ['flagged', 'needs-changes'].includes(p.status) && daysSince(p.decidedAt || p.revisedAt || (p.notes || []).slice(-1)[0]?.at || p.createdAt) <= 30);
 const autoApplied = q.filter((p) => p.autoApplied && p.status === 'auto-applied' && daysSince(p.appliedAt || p.createdAt) <= 7);
 
 const order = { daily: 0, evidence: 1, press: 2, flagship: 3, article: 4, figure: 5, deal: 6 };

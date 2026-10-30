@@ -15,7 +15,8 @@
  *       its website copy fixed.
  *   deal   → a web check against the note; corrected fields go into deals-overrides.json,
  *       the deal stays pending for Publish.
- *   figure proposals · press → the note is kept and the item is flagged for a hand fix.
+ *   figure proposals → Claude re-checks the number on the web; it returns as a proposal (Publish / Keep).
+ *   press → the note is kept and the item is flagged for a hand fix.
  * If a rewrite fails its checks, nothing changes and the email says why.
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
@@ -112,6 +113,24 @@ TEE'S NOTE: ${notes.map((n) => n.text).join(' / ')}`;
   return { changed: changed || `Updated ${Object.keys(clean).join(', ') || 'nothing'}.`, unresolved };
 }
 
+// Report figure: Claude checks the number on the web and turns the item into a proposal (Publish / Keep in the next email).
+async function reviseFigure(p, notes) {
+  const prompt = `Tee publishes sqwod.life (fitness industry intelligence). A figure in his report "${p.report}" needs checking. Search the web for the most recent figure from a named, reputable source (industry body, research firm, company filing). Prefer the currently cited source if it still publishes this number. Answer ONLY with minified JSON:
+{"value":"the current value in the SAME units and format as the published value, or empty if you could not confirm any","sourceLabel":"named source, e.g. 'HFA 2025' or 'IHRSA Global Report 2025'","sourceUrl":"https://... the exact page you opened that states it","year":"year/edition the value is for","snippet":"<=160-char quote from that page stating the number","sameAsPublished":true|false,"changed":"one sentence for Tee: what you found","unresolved":"what you could not confirm, or empty"}
+FIGURE: ${JSON.stringify({ label: p.label, publishedValue: p.oldValue, citedSource: p.currentSource, citedUrl: p.sourceUrl || p.checkedUrl })}
+TEE'S NOTE: ${notes.map((n) => n.text).join(' / ')}`;
+  const j = parseJson(await claude(prompt, { maxTokens: 4000, tools: [{ type: process.env.SQWOD_SEARCH_TOOL || 'web_search_20260209', name: 'web_search', max_uses: 8 }] }));
+  if (!j) return { error: 'the web check returned nothing usable' };
+  const fields = { foundUrl: j.sourceUrl || '', foundSource: j.sourceLabel || '', foundYear: j.year || '', snippet: j.snippet || p.snippet };
+  try { fields.foundDomain = new URL(j.sourceUrl).hostname.replace(/^www\./, ''); } catch { fields.foundDomain = ''; }
+  if (!j.value || !j.sourceUrl) return { changed: j.changed || 'No confirmed figure found.', unresolved: j.unresolved || 'Could not find a named source for this number.', fields: { ...fields, confidence: 'low' } };
+  if (j.sameAsPublished || String(j.value).trim() === String(p.oldValue).trim()) {
+    // Confirmed: nothing to publish. Keep the found source so Tee can see it, then tap Keep.
+    return { changed: j.changed || `Confirmed ${p.oldValue} at ${fields.foundSource}.`, unresolved: j.unresolved || '', fields: { ...fields, newValue: null, confidence: 'medium', recommendation: `Still supported by ${fields.foundSource}. Tap Keep as is.` } };
+  }
+  return { changed: j.changed || `Found ${j.value} at ${fields.foundSource}.`, unresolved: j.unresolved || '', fields: { ...fields, newValue: String(j.value), kind: 'changed', confidence: 'medium', recommendation: `Claude checked this after your note. Publish updates the report in EN and DE.` } };
+}
+
 let n = 0;
 for (const it of [...queueItems(), ...pressItems()].filter((q) => q.status === 'revise')) {
   const { _path, ...p } = it;
@@ -121,7 +140,9 @@ for (const it of [...queueItems(), ...pressItems()].filter((q) => q.status === '
   let r;
   if (['article', 'evidence', 'flagship', 'daily'].includes(p.kind)) r = await rewrite(p, notes);
   else if (p.kind === 'deal') r = await reviseDeal(p, notes);
+  else if (['changed', 'review-due'].includes(p.kind)) r = await reviseFigure(p, notes);
   else r = { manual: true };
+  if (r.fields) Object.assign(p, r.fields);
 
   const stamp = now();
   const nextNotes = (p.notes || []).map((x) => (x.appliedAt ? x : { ...x, appliedAt: stamp }));
