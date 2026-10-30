@@ -19,6 +19,62 @@
   "mergeDays": 60,
   "deals": [
     {
+      "date": "2026-10-30",
+      "entity": "Ozlo",
+      "kind": "raise",
+      "amount": "$22M",
+      "amountUsd": 22000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Ozlo raised a $22M Series B to expand sleep tech and target tinnitus and epilepsy.",
+      "url": "https://insider.fitt.co/ozlo-raises-22m-to-advance-sleep-tech/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-10-30",
+      "region": "North America",
+      "category": "Wearables & devices",
+      "id": "ozlo-raise-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-30",
+          "url": "https://insider.fitt.co/ozlo-raises-22m-to-advance-sleep-tech/",
+          "issue": "/en/daily/2026-10-30"
+        }
+      ],
+      "country": "United States",
+      "noteDe": "Ozlo schloss eine 22-Mio.-USD-Series-B-Runde ab, um Schlaftechnologie auszubauen und Tinnitus sowie Epilepsie anzugehen.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-10-30",
+      "entity": "Fitness Park Group",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Providence Equity Partners agreed to acquire Fitness Park Group, expanding its European gym portfolio.",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/-Providence-agrees-Fitness-Park-acquisition-strengthening-European-fitness-interests/363874",
+      "source": "Health Club Management",
+      "issue": "/en/daily/2026-10-30",
+      "region": "Europe",
+      "category": "Gyms & studios",
+      "id": "providence-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-30",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/-Providence-agrees-Fitness-Park-acquisition-strengthening-European-fitness-interests/363874",
+          "issue": "/en/daily/2026-10-30"
+        }
+      ],
+      "country": "France",
+      "noteDe": "Providence Equity Partners vereinbarte die Übernahme der Fitness Park Group und stärkt sein europäisches Fitnessstudio-Portfolio.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
       "date": "2026-10-29",
       "entity": "Intake Breathing",
       "kind": "raise",

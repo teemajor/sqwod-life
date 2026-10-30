@@ -1,93 +1,5 @@
 [
   {
-    "date": "2026-10-08",
-    "key": "all inclusive fitness  expansion im fitnessmarkt was studiob",
-    "tokens": [
-      "inclusive",
-      "expansion",
-      "fitnessmarkt",
-      "studiobetreiber",
-      "jetzt",
-      "wissen",
-      "sollten"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "key": "wellness brand supermush raises 3 million in funding from nd",
-    "tokens": [
-      "brand",
-      "supermush",
-      "raises",
-      "million",
-      "funding",
-      "ndude",
-      "product",
-      "expansion"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "key": "the longevity movement is leaving women behind experts say",
-    "tokens": [
-      "longevity",
-      "movement",
-      "leaving",
-      "women",
-      "behind",
-      "experts"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "key": "promising everything players would want in a golf watch and ",
-    "tokens": [
-      "promising",
-      "everything",
-      "players",
-      "would",
-      "want",
-      "golf",
-      "watch",
-      "everyday",
-      "smartwatch",
-      "garmin",
-      "approach",
-      "looks",
-      "smart",
-      "craved",
-      "brand"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "key": "smart glasses im fitnessstudio",
-    "tokens": [
-      "smart",
-      "glasses",
-      "fitnessstudio"
-    ]
-  },
-  {
-    "date": "2026-10-08",
-    "key": "hfa american cancer society announce 10 grants that will exp",
-    "tokens": [
-      "american",
-      "cancer",
-      "society",
-      "announce",
-      "grants",
-      "expand",
-      "exercise",
-      "programs",
-      "people",
-      "affected"
-    ]
-  },
-  {
     "date": "2026-10-09",
     "key": "atn insights 88 of leads receive no followup within 72 hours",
     "tokens": [
@@ -1330,5 +1242,76 @@
       "Garmin"
     ],
     "deal": "$1.98b"
+  },
+  {
+    "date": "2026-10-30",
+    "key": "providence agrees fitness park acquisition strengthening eur",
+    "tokens": [
+      "providence",
+      "agrees",
+      "park",
+      "acquisition",
+      "strengthening",
+      "european",
+      "interests"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "key": "turning fitness tracking into a retention tool",
+    "tokens": [
+      "turning",
+      "tracking",
+      "retention",
+      "tool"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "key": "ozlo raises 22m to advance sleep tech",
+    "tokens": [
+      "ozlo",
+      "raises",
+      "advance",
+      "sleep",
+      "tech"
+    ],
+    "deal": "$22m"
+  },
+  {
+    "date": "2026-10-30",
+    "key": "fitness first hyrox training club in hamburg erffnet",
+    "tokens": [
+      "first",
+      "hyrox",
+      "training",
+      "club",
+      "hamburg",
+      "eroffnet"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "key": "fitlab files for bankruptcy",
+    "tokens": [
+      "fitlab",
+      "files",
+      "bankruptcy"
+    ]
+  },
+  {
+    "date": "2026-10-30",
+    "key": "aktivpark padel club opening weekend und spielbetrieb",
+    "tokens": [
+      "aktivpark",
+      "padel",
+      "club",
+      "opening",
+      "weekend",
+      "spielbetrieb"
+    ]
   }
 ]
