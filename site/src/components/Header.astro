@@ -1,5 +1,6 @@
 ---
 import { t, type Lang } from '../i18n/ui';
+import { toolsIsNew } from '../config/tools';
 interface Props { lang: Lang; active?: string; altPath?: string }
 const { lang, active = '', altPath } = Astro.props;
 const other = lang === 'en' ? 'de' : 'en';
@@ -8,9 +9,13 @@ const de = lang === 'de';
 // Format-led nav (27 Oct 2026, option B, modelled on Fitt Insider / Athletech):
 // Daily, Articles, Evidence, Reports, Verified. Topics are chips inside Articles
 // and Evidence. Reports keeps its /intelligence URLs; only the label changed.
+// Tools (30 Oct 2026) sits between Reports and Verified, with a green "new" dot until
+// TOOLS_NEW_UNTIL. Advertise lives in the right-hand cluster next to EN/DE on desktop
+// and at the end of the menu on phones.
 const L = de
-  ? { daily: 'Daily', articles: 'Artikel', evidence: 'Evidence', reports: 'Reports', verified: 'Verified', adv: 'Werben' }
-  : { daily: 'Daily', articles: 'Articles', evidence: 'Evidence', reports: 'Reports', verified: 'Verified', adv: 'Advertise' };
+  ? { daily: 'Daily', articles: 'Artikel', evidence: 'Evidence', reports: 'Reports', tools: 'Tools', verified: 'Verified', adv: 'Werben', isNew: 'neu' }
+  : { daily: 'Daily', articles: 'Articles', evidence: 'Evidence', reports: 'Reports', tools: 'Tools', verified: 'Verified', adv: 'Advertise', isNew: 'new' };
+const toolsNew = toolsIsNew();
 ---
 <header class="site">
   <div class="wrap bar">
@@ -20,6 +25,7 @@ const L = de
       <a href={`/${lang}/articles`} class={active==='articles'?'on':''}>{L.articles}</a>
       <a href={`/${lang}/evidence`} class={active==='evidence'?'on':''}>{L.evidence}</a>
       <a href={`/${lang}/intelligence`} class={active==='intelligence'?'on':''}>{L.reports}</a>
+      <a href={`/${lang}/tools/`} class={active==='tools'?'on':''}>{L.tools}{toolsNew && <><span class="nav-new" aria-hidden="true"></span><span class="nav-sr"> ({L.isNew})</span></>}</a>
       <a href={`/${lang}/verified`} class={active==='verified'?'on':''}>{L.verified}</a>
       <a href={`/${lang}/advertise`} class={`nav-adv ${active==='advertise'?'on':''}`}>{L.adv}</a>
     </nav>
@@ -43,6 +49,8 @@ const L = de
   .adv-link{font-size:13px;font-weight:600;color:var(--g2);text-decoration:none}
   .adv-link:hover{color:var(--chalk)}
   .nav-adv{display:none}
+  .nav-new{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-left:5px;vertical-align:super}
+  .nav-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   @media(max-width:640px){
     .adv-link{display:none}
     .nav-adv{display:block}
