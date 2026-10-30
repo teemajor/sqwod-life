@@ -1,0 +1,256 @@
+---
+// Sqwod Jobs (Germany): open roles in German fitness and wellness, updated every Friday,
+// pay shown whenever the employer lists it. Data: automation/jobs.mjs -> src/data/jobs.json
+// (src/lib/jobs.ts). Filter state is readable from the URL (?city=berlin&type=trainer&pay=1&q=…),
+// so city landing links work before city pages exist.
+import Base from '../../../layouts/Base.astro';
+import InlineSignup from '../../../components/InlineSignup.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+import { liveJobs, hasPay, jobsEdition, jobsGeneratedAt, type Job } from '../../../lib/jobs';
+import { JOBS_JSONLD_ON_LIST } from '../../../config/seo.mjs';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+const loc = de ? 'de-DE' : 'en-GB';
+const jobs = liveJobs();
+
+const T = de ? {
+  title: 'Sqwod Jobs: Fitness- und Wellness-Jobs in Deutschland, mit Gehalt',
+  h1: 'Fitness- und Wellness-Jobs in Deutschland.',
+  sub: 'Jede offene Stelle, die wir finden, jeden Freitag aktualisiert. Gehalt immer dann, wenn der Arbeitgeber es angibt.',
+  updated: 'Aktualisiert', open: 'offene Stellen',
+  sRoles: 'Offene Stellen', sPay: 'mit Gehaltsangabe', sCities: 'Städte', sEmployers: 'Arbeitgeber',
+  alertHead: 'Neue Fitness-Jobs jeden Freitag', alertBody: 'Eine Mail pro Woche, nur Deutschland, mit Gehalt, wenn wir es haben.', alertBtn: 'Jobs-Alert abonnieren',
+  all: 'Alle', other: 'Andere Städte', remote: 'Remote', type: 'Bereich', payOnly: 'Nur mit Gehalt', search: 'Stelle oder Arbeitgeber suchen …', shown: 'Stellen angezeigt',
+  noPay: 'Gehalt nicht angegeben', apply: 'Bewerben', via: 'Quelle', none: 'Keine Stelle passt zu diesen Filtern.',
+  empty: 'Die erste Liste erscheint nach dem ersten wöchentlichen Lauf. Trag dich ein, dann bekommst du sie am Freitag als Erste:r.',
+  per: { hour: 'Std.', month: 'Monat', year: 'Jahr' } as Record<string, string>,
+  emp: { 'full-time': 'Vollzeit', 'part-time': 'Teilzeit', freelance: 'Freiberuflich', 'mini-job': 'Minijob', unknown: '' } as Record<string, string>,
+  types: { trainer: 'Trainer:in', coach: 'Coach', 'studio-manager': 'Studioleitung', sales: 'Vertrieb', marketing: 'Marketing', 'product-tech': 'Produkt & Tech', ops: 'Betrieb & Service', other: 'Sonstiges' } as Record<string, string>,
+  method: 'So entsteht die Liste',
+  methodBody: [
+    'Quellen: die Jobsuche der Bundesagentur für Arbeit, Adzuna, die Karriereseiten von Fitness- und Wellness-Marken, die DSSV-Jobbörse und Fitt Insider (nur Remote-Stellen, die Deutschland erlauben).',
+    'Doppelte Anzeigen führen wir zusammen und behalten die Version mit Gehalt.',
+    'Gehalt steht so da, wie der Arbeitgeber es angibt. Brutto und netto rechnen wir nicht um.',
+    'Eine Stelle verschwindet, wenn wir sie 21 Tage lang nicht mehr finden.',
+  ],
+} : {
+  title: 'Sqwod Jobs: fitness and wellness jobs in Germany, with pay',
+  h1: 'Fitness and wellness jobs in Germany.',
+  sub: 'Every open role we can find, updated every Friday. Pay shown whenever the employer lists it.',
+  updated: 'Updated', open: 'open roles',
+  sRoles: 'Open roles', sPay: 'with pay listed', sCities: 'Cities', sEmployers: 'Employers',
+  alertHead: 'New fitness jobs every Friday', alertBody: 'One email a week, Germany only, pay listed when we have it.', alertBtn: 'Get the jobs alert',
+  all: 'All', other: 'Other cities', remote: 'Remote', type: 'Area', payOnly: 'Pay listed', search: 'Search a role or employer…', shown: 'roles shown',
+  noPay: 'Pay not listed', apply: 'Apply', via: 'Source', none: 'No role matches these filters.',
+  empty: 'The first list goes up after the first weekly run. Sign up and get it first, on Friday.',
+  per: { hour: 'hour', month: 'month', year: 'year' } as Record<string, string>,
+  emp: { 'full-time': 'Full-time', 'part-time': 'Part-time', freelance: 'Freelance', 'mini-job': 'Mini-job', unknown: '' } as Record<string, string>,
+  types: { trainer: 'Trainer', coach: 'Coach', 'studio-manager': 'Studio manager', sales: 'Sales', marketing: 'Marketing', 'product-tech': 'Product & tech', ops: 'Operations & service', other: 'Other' } as Record<string, string>,
+  method: 'How the list is built',
+  methodBody: [
+    'Sources: the Federal Employment Agency job search (Bundesagentur für Arbeit), Adzuna, the careers pages of fitness and wellness brands, the DSSV job board and Fitt Insider (remote roles open to Germany only).',
+    'Duplicate ads are merged; we keep the version with pay.',
+    'Pay is shown as the employer states it. Gross and net are not converted.',
+    'A role drops off when we have not found it for 21 days.',
+  ],
+};
+const SOURCE: Record<string, string> = { ba: 'Bundesagentur für Arbeit', adzuna: 'Adzuna', 'career-page': de ? 'Karriereseite' : 'Careers page', dssv: 'DSSV', fitt: 'Fitt Insider' };
+// city chips: label, URL slug, region value in the data
+const CITIES: [string, string, string][] = [['Berlin', 'berlin', 'Berlin'], ['Hamburg', 'hamburg', 'Hamburg'], ['München', 'muenchen', 'München'], ['Köln', 'koeln', 'Köln'], ['Frankfurt', 'frankfurt', 'Frankfurt'], [T.other, 'other', 'Other DE'], [T.remote, 'remote', 'Remote DE']];
+const citySlug = (r: string) => (CITIES.find((c) => c[2] === r) || ['', 'other'])[1];
+const types = Object.keys(T.types).filter((k) => jobs.some((j) => j.type === k));
+
+const fmtDate = (d: string, opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short' }) => new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { ...opts, timeZone: 'UTC' });
+const eur = (n: number) => (de ? `${n.toLocaleString(loc, { maximumFractionDigits: 2 })} €` : `€${n.toLocaleString(loc, { maximumFractionDigits: 2 })}`);
+function pay(j: Job) {
+  if (!hasPay(j)) return null;
+  const a = j.payMin != null ? eur(j.payMin) : null, b = j.payMax != null ? eur(j.payMax) : null;
+  const amt = a && b && a !== b ? `${a}–${b}` : a && b ? a : a ? `${de ? 'ab' : 'from'} ${a}` : `${de ? 'bis' : 'up to'} ${b}`;
+  return j.payPeriod ? `${amt} / ${T.per[j.payPeriod]}` : amt;
+}
+const summary = (j: Job) => (de ? j.summaryDe : j.summaryEn) || null;
+
+// stats, all from the live rows
+const withPay = jobs.filter(hasPay).length;
+const payPct = jobs.length ? Math.round((withPay / jobs.length) * 100) : 0;
+const cities = new Set(jobs.filter((j) => j.region !== 'Remote DE').map((j) => (j.city || '').toLowerCase()).filter(Boolean)).size;
+const employers = new Set(jobs.map((j) => (j.employer || '').toLowerCase()).filter(Boolean)).size;
+const edition = jobsEdition || jobsGeneratedAt;
+
+// JobPosting JSON-LD per row: switched off by default (see JOBS_JSONLD_ON_LIST in config/seo.mjs).
+const EMP_SCHEMA: Record<string, string> = { 'full-time': 'FULL_TIME', 'part-time': 'PART_TIME', freelance: 'CONTRACTOR', 'mini-job': 'PART_TIME' };
+const addDays = (d: string, n: number) => new Date(Date.parse(d + 'T12:00:00Z') + n * 86400000).toISOString().slice(0, 10);
+const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
+  '@context': 'https://schema.org', '@type': 'JobPosting', title: j.title,
+  description: summary(j) || j.title, datePosted: j.postedAt || j.seenAt, validThrough: addDays(j.postedAt || j.seenAt, 30),
+  hiringOrganization: { '@type': 'Organization', name: j.employer || 'Unknown', ...(j.employerSite ? { sameAs: j.employerSite } : {}) },
+  ...(j.region === 'Remote DE'
+    ? { jobLocationType: 'TELECOMMUTE', applicantLocationRequirements: { '@type': 'Country', name: 'DE' } }
+    : { jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: j.city, addressCountry: 'DE' } } }),
+  ...(EMP_SCHEMA[j.employment] ? { employmentType: EMP_SCHEMA[j.employment] } : {}),
+  ...(hasPay(j) && j.payPeriod ? { baseSalary: { '@type': 'MonetaryAmount', currency: 'EUR', value: { '@type': 'QuantitativeValue', unitText: j.payPeriod.toUpperCase(),
+    ...(j.payMin != null && j.payMax != null && j.payMin !== j.payMax ? { minValue: j.payMin, maxValue: j.payMax } : { value: j.payMin ?? j.payMax }) } } } : {}),
+  directApply: false, url: j.url,
+}));
+---
+<Base lang={lang} title={T.title} description={T.sub} active="tools" noindex={jobs.length < 10}>
+  {postings.map((p) => <script type="application/ld+json" set:html={JSON.stringify(p)} />)}
+  <section class="jh">
+    <div class="jh-l">
+      <p class="kick jh-crumb"><a href={`/${lang}/tools/`}>Sqwod Tools</a> / Jobs</p>
+      {edition && <p class="jh-live"><span class="pulse" aria-hidden="true"></span>{T.updated} {fmtDate(edition)} · {jobs.length.toLocaleString(loc)} {T.open}</p>}
+      <h1 class="jh-h1">{T.h1}</h1>
+      <p class="jh-sub">{T.sub}</p>
+      {jobs.length > 0 && (
+        <div class="jh-stats">
+          <div><b class="dnum">{jobs.length.toLocaleString(loc)}</b><span>{T.sRoles}</span></div>
+          <div><b class="dnum jh-acc">{withPay.toLocaleString(loc)}<small> · {payPct}%</small></b><span>{T.sPay}</span></div>
+          <div><b class="dnum">{cities.toLocaleString(loc)}</b><span>{T.sCities}</span></div>
+          <div><b class="dnum">{employers.toLocaleString(loc)}</b><span>{T.sEmployers}</span></div>
+        </div>
+      )}
+    </div>
+    <div class="jh-r">
+      <InlineSignup lang={lang} source="jobs-alert" event="jobs-alert" id="jobs-alert" head={T.alertHead} body={T.alertBody} btn={T.alertBtn} />
+    </div>
+  </section>
+
+  {jobs.length === 0 ? (
+    <div class="note jb-empty">{T.empty}</div>
+  ) : (
+    <>
+      <section class="jb-filters" aria-label={T.type}>
+        <div class="jb-chips" role="group">
+          <button type="button" class="on" data-city="" aria-pressed="true">{T.all}</button>
+          {CITIES.filter((c) => jobs.some((j) => j.region === c[2])).map(([label, slug]) => <button type="button" data-city={slug} aria-pressed="false">{label}</button>)}
+        </div>
+        <div class="jb-row">
+          <input type="search" placeholder={T.search} aria-label={T.search} data-q />
+          <select aria-label={T.type} data-type><option value="">{T.type}: {T.all}</option>{types.map((k) => <option value={k}>{T.types[k]}</option>)}</select>
+          <label class="jb-pay"><input type="checkbox" data-pay /> <span>{T.payOnly}</span></label>
+        </div>
+        <p class="jb-count" aria-live="polite"><span data-count>{jobs.length}</span> {T.shown}</p>
+      </section>
+
+      <ul class="jb-list">
+        {jobs.map((j) => (
+          <li class="jb" data-city={citySlug(j.region)} data-type={j.type || 'other'} data-pay={hasPay(j) ? '1' : '0'} data-name={`${j.title} ${j.employer || ''} ${j.city || ''}`.toLowerCase()}>
+            <div class="jb-main">
+              <h2 class="plain jb-t">{j.title}</h2>
+              <p class="jb-meta">{[j.employer, j.region === 'Remote DE' ? T.remote : j.city, T.emp[j.employment]].filter(Boolean).join(' · ')}</p>
+              {summary(j) && <p class="jb-sum">{summary(j)}</p>}
+              <p class="jb-src">{T.via}: {SOURCE[j.source] || j.source}</p>
+            </div>
+            <div class="jb-side">
+              {pay(j) ? <span class="dnum jb-payv" title={j.payText || undefined}>{pay(j)}</span> : <span class="jb-nopay">{T.noPay}</span>}
+              <a class="jb-apply" href={j.url} rel="nofollow noopener" target="_blank" data-umami-event="job-apply" data-umami-event-source={j.source}>{T.apply} ↗</a>
+            </div>
+          </li>
+        ))}
+      </ul>
+      <p class="note jb-none" hidden data-none>{T.none}</p>
+    </>
+  )}
+
+  <section class="note jb-method">
+    <b>{T.method}</b>
+    <ul>{T.methodBody.map((l) => <li>{l}</li>)}</ul>
+  </section>
+</Base>
+
+<style>
+  .jh{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:start;margin:0 0 8px}
+  .jh-crumb{margin:0 0 14px}
+  .jh-crumb a{color:inherit;text-decoration:none}
+  .jh-crumb a:hover{color:var(--chalk);text-decoration:underline}
+  .jh-live{display:inline-flex;align-items:center;gap:9px;margin:0 0 18px;padding:6px 13px;border:1px solid var(--accent-line);border-radius:999px;background:var(--accent-soft);font-size:13px;font-weight:600;color:var(--chalk)}
+  .jh-live .pulse{box-shadow:0 0 8px 2px var(--accent-line)}
+  .jh-h1{font-size:76px;line-height:.95;margin:0;hyphens:manual}
+  .jh-sub{margin:18px 0 0;font-size:17px;line-height:1.5;color:var(--g2);max-width:58ch}
+  .jh-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:24px 0 0}
+  .jh-stats div{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px 14px 12px;min-width:0}
+  .jh-stats b{display:block;font-size:46px;color:var(--chalk);white-space:nowrap}
+  .jh-stats b small{font-size:.5em}
+  .jh-stats span{display:block;font-size:13px;color:var(--g2);margin-top:6px}
+  .jh-stats .jh-acc{color:var(--accent)}
+  .jh-r :global(.isu){margin:0}
+  .jb-empty{margin-top:28px}
+  .jb-filters{margin:32px 0 10px}
+  .jb-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+  .jb-chips button{min-height:44px;border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:0 15px;font:inherit;font-size:13.5px;cursor:pointer}
+  .jb-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .jb-row{display:grid;grid-template-columns:1fr;gap:8px}
+  @media(min-width:640px){.jb-row{grid-template-columns:2fr 1fr auto}}
+  .jb-row input[type=search],.jb-row select{width:100%;min-height:44px;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:0 11px;font:inherit;font-size:14px}
+  .jb-pay{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:14px;cursor:pointer;white-space:nowrap}
+  .jb-pay input{width:18px;height:18px;accent-color:var(--accent)}
+  .jb-count{font-size:12px;color:var(--g2);margin:8px 0 0}
+  .jb-list{list-style:none;margin:0 0 24px;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+  .jb{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;padding:16px 18px;border-top:1px solid var(--line)}
+  .jb:first-child{border-top:0}
+  .jb-t{font-size:16px;font-weight:700;line-height:1.3;margin:0;color:var(--chalk)}
+  .jb-meta{margin:4px 0 0;font-size:13.5px;color:var(--g1)}
+  .jb-sum{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--g2);max-width:70ch}
+  .jb-src{margin:6px 0 0;font-size:12px;color:var(--g2)}
+  .jb-side{display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between;gap:8px;text-align:right}
+  .jb-payv{font-size:26px;color:var(--accent);white-space:nowrap}
+  .jb-nopay{font-size:13px;color:var(--g2)}
+  .jb-apply{display:inline-flex;align-items:center;min-height:44px;font-size:14px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px}
+  .jb-apply:hover{color:var(--accent)}
+  .jb-method ul{margin:8px 0 0;padding-left:18px}
+  @media(max-width:899px){
+    .jh{grid-template-columns:1fr;gap:20px}
+    .jh-h1{font-size:50px}
+    .jh-sub{font-size:15px;margin-top:12px}
+    .jh-stats{gap:8px;margin-top:16px}
+    .jh-stats b{font-size:34px}
+  }
+  @media(max-width:560px){
+    .jb{grid-template-columns:1fr;gap:8px}
+    .jb-side{flex-direction:row;align-items:center;text-align:left}
+    .jb-payv{font-size:22px}
+  }
+</style>
+
+<script>
+  const rows = Array.from(document.querySelectorAll<HTMLLIElement>('.jb'));
+  const q = document.querySelector<HTMLInputElement>('[data-q]');
+  const type = document.querySelector<HTMLSelectElement>('[data-type]');
+  const payOnly = document.querySelector<HTMLInputElement>('[data-pay]');
+  const count = document.querySelector('[data-count]');
+  const none = document.querySelector<HTMLElement>('[data-none]');
+  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.jb-chips button'));
+  const ALIAS: Record<string, string> = { munich: 'muenchen', 'münchen': 'muenchen', munchen: 'muenchen', cologne: 'koeln', 'köln': 'koeln', koln: 'koeln', 'frankfurt-am-main': 'frankfurt' };
+  let city = '';
+  function apply(write = true) {
+    const s = (q?.value || '').trim().toLowerCase();
+    let n = 0;
+    for (const r of rows) {
+      const ok = (!city || r.dataset.city === city) && (!type?.value || r.dataset.type === type.value) && (!payOnly?.checked || r.dataset.pay === '1') && (!s || (r.dataset.name || '').includes(s));
+      r.hidden = !ok; if (ok) n++;
+    }
+    if (count) count.textContent = String(n);
+    if (none) none.hidden = n > 0;
+    chips.forEach((c) => { const on = (c.dataset.city || '') === city; c.classList.toggle('on', on); c.setAttribute('aria-pressed', String(on)); });
+    if (write) {
+      const p = new URLSearchParams();
+      if (city) p.set('city', city); if (type?.value) p.set('type', type.value); if (payOnly?.checked) p.set('pay', '1'); if (s) p.set('q', s);
+      history.replaceState(null, '', location.pathname + (p.toString() ? `?${p}` : ''));
+    }
+  }
+  // read the filter state from the URL (?city=berlin, ?type=trainer, ?pay=1, ?q=…)
+  const u = new URLSearchParams(location.search);
+  const c = (u.get('city') || '').toLowerCase();
+  city = ALIAS[c] || c;
+  if (city && !chips.some((b) => b.dataset.city === city)) city = '';
+  if (type && u.get('type') && Array.from(type.options).some((o) => o.value === u.get('type'))) type.value = u.get('type')!;
+  if (payOnly && u.get('pay') === '1') payOnly.checked = true;
+  if (q && u.get('q')) q.value = u.get('q')!;
+  if (rows.length) apply(false);
+  chips.forEach((b) => b.addEventListener('click', () => { city = b.dataset.city || ''; apply(); }));
+  q?.addEventListener('input', () => apply()); type?.addEventListener('change', () => apply()); payOnly?.addEventListener('change', () => apply());
+</script>

@@ -230,6 +230,9 @@ const daily = defineCollection({
       url: z.string().optional(),
     })).default([]),
     dealRead: z.string().optional(),       // investor / brand read of today's moneyMoves (Oct 2026 audience reframe)
+    // Fridays only: "5 jobs this week" from Sqwod Jobs (automation/cascade.mjs reads site/src/data/jobs.json).
+    // A list, not a story: it sits after Money movement and does not count against the item cap.
+    jobsWeek: z.array(z.object({ title: z.string(), employer: z.string().optional(), city: z.string().optional(), pay: z.string().optional() })).default([]),
     policyWatch: z.object({ title: z.string(), body: z.string(), url: z.string().optional() }).optional(),
     stat: z.object({ number: z.string(), label: z.string(), body: z.string().optional(), url: z.string().optional() }).optional(),
     recs: z.array(z.object({ label: z.string(), text: z.string(), url: z.string().optional(), affiliate: z.boolean().default(false) })).default([]), // curated actionable; >=1 affiliate

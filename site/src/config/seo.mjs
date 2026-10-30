@@ -38,3 +38,9 @@ export function dailyIsFresh(urlSlug, now = Date.now()) {
   if (Number.isNaN(t)) return true; // unknown slug shape → don't hide it
   return now - t <= DAILY_INDEX_DAYS * 86400000;
 }
+
+// Sqwod Jobs (Oct 2026). Google's job-posting guidelines say JobPosting markup belongs on
+// a page about ONE job, not on a list of jobs, and the Indexing API only accepts such
+// pages. /jobs/ is a list, so the per-row JobPosting JSON-LD and the Indexing API ping
+// (automation/jobs-indexing.mjs) stay off until Tee decides. true = emit and ping.
+export const JOBS_JSONLD_ON_LIST = false;

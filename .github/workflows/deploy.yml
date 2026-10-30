@@ -8,7 +8,7 @@ on:
   # push event above — so deploy when they finish too, or new audio (e.g. a voice
   # change) gets committed to main but never published.
   workflow_run:
-    workflows: ["Backfill Daily audio", "Generate content (Sqwod cascade)", "Review actions (Publish / Note / Skip)", "Intelligence refresh — apply"]
+    workflows: ["Backfill Daily audio", "Generate content (Sqwod cascade)", "Review actions (Publish / Note / Skip)", "Intelligence refresh — apply", "Jobs"]
     types: [completed]
 
 permissions:

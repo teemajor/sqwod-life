@@ -1,6 +1,7 @@
 // Sqwod Tools (/[lang]/tools/): every free calculator and database in one list.
 // The Tools page renders its cards from this array, in this order. A tool flips from
-// "coming" to "live" by changing `status`.
+// "coming" to "live" by changing `status`. Jobs flips by itself: the Tools page shows it
+// as live once automation/jobs.mjs has published roles (jobsLive() in src/lib/jobs.ts).
 // Live numbers are read on the page itself from the site's data files, never typed here.
 import type { Lang } from '../i18n/ui';
 
@@ -63,5 +64,7 @@ export const TOOLS: Tool[] = [
     name: { en: 'Sqwod Jobs', de: 'Sqwod Jobs' },
     type: { en: 'jobs · Germany', de: 'Jobs · Deutschland' },
     answers: { en: 'Who is hiring trainers, coaches and studio managers in Germany, and what do they pay?', de: 'Wer stellt in Deutschland Trainer:innen, Coaches und Studioleitungen ein, und was zahlen sie?' },
+    href: (lang) => `/${lang}/jobs/`,
+    cta: { en: 'See the jobs →', de: 'Jobs ansehen →' },
   },
 ];

@@ -7,6 +7,7 @@ import Base from '../../../layouts/Base.astro';
 import { languages, type Lang } from '../../../i18n/ui';
 import { TOOLS, type Tool } from '../../../config/tools';
 import { liveDeals } from '../../../lib/deals';
+import { liveJobs, hasPay } from '../../../lib/jobs';
 import bls from '../../../data/pricing-index/bls.json';
 
 export function getStaticPaths() {
@@ -17,6 +18,9 @@ const de = lang === 'de';
 const loc = de ? 'de-DE' : 'en-GB';
 
 const deals = liveDeals();
+const jobs = liveJobs();
+// Jobs is live once the weekly run has published roles; until then it stays a "coming" card.
+const tools: Tool[] = TOOLS.map((t) => (t.slug === 'jobs' && jobs.length ? { ...t, status: 'live' as const } : t));
 const firstDeal = deals.map((d) => d.date).sort()[0];
 const sinceMonth = firstDeal ? new Date(firstDeal + 'T12:00:00Z').toLocaleDateString(loc, { month: 'long', timeZone: 'UTC' }) : '';
 
@@ -27,6 +31,7 @@ const NUMBERS: Record<string, { n: string; unit: string }> = {
     n: `$${bls.national.medianHourly.toFixed(2)}`,
     unit: de ? 'Median-Stundenlohn von US-Trainer:innen' : 'median trainer pay / hour',
   },
+  jobs: { n: jobs.length.toLocaleString(loc), unit: de ? `offene Stellen · ${jobs.filter(hasPay).length} mit Gehalt` : `open roles · ${jobs.filter(hasPay).length} with pay` },
 };
 
 const T = de ? {
@@ -42,7 +47,7 @@ const T = de ? {
 };
 const name = (t: Tool) => t.name[lang];
 const tag = (t: Tool) => `${t.status === 'live' ? T.live : T.coming} · ${t.type[lang]}`;
-const live = TOOLS.filter((t) => t.status === 'live');
+const live = tools.filter((t) => t.status === 'live');
 
 const url = `https://sqwod.life/${lang}/tools/`;
 const schema = {
@@ -61,7 +66,7 @@ const schema = {
   <p class="sub tl-sub">{T.sub}</p>
 
   <div class="tl-grid">
-    {TOOLS.map((t) => t.status === 'live' ? (
+    {tools.map((t) => t.status === 'live' ? (
       <article class="tl tl-live">
         <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{tag(t)}</span>
         <h2 class="plain tl-h">{name(t)}</h2>
