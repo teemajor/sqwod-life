@@ -68,30 +68,51 @@ const NUM = String.raw`\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?k?|\d+(?:[.,]\d{1,2}
 
 /**
  * Pay as the employer wrote it -> { payText, payMin, payMax, payPeriod, payCurrency }.
- * Netto and brutto are kept as written in payText; numbers are never converted.
- * No number, or a non-euro currency, -> all null except payText.
+ * Only numbers that sit next to a euro sign (or EUR / Euro) count as pay, so working hours
+ * ("40 Std./Woche"), holidays ("30 Tage Urlaub") and "13 Gehälter" are never read as money.
+ * The period comes from the words right after the amount, else from the whole text, else
+ * from the size of the figure. Netto and brutto are kept as written in payText; numbers are
+ * never converted. No euro amount -> all null except payText.
  */
+const CUR = String.raw`(?:€|\beur\b|\beuro\b)`;
+const BONUS_RX = /^\s*(?:€|eur|euro)?\s*(?:brutto\s*)?(?:prämie|praemie|bonus|zuschuss|provision|startprämie|wechselprämie|einmalig)/i;
+const PER_HOUR = /\b(std|stunde|stündl\w*|stundenlohn|hour|hourly)\b|\/\s*h\b|\bpro\s+h\b|\bper\s+h\b/;
+const PER_MONTH = /\b(monat\w*|mtl|monthly|month|minijob|mini-job)\b|\/\s*m\b/;
+const PER_YEAR = /\b(jahr\w*|jährl\w*|p\.\s?a\.?|pa|year|annual\w*|annum|jahresgehalt)\b/;
+const periodIn = (t) => (PER_HOUR.test(t) ? 'hour' : PER_MONTH.test(t) ? 'month' : PER_YEAR.test(t) ? 'year' : null);
+
 export function parsePay(text) {
   const payText = text == null ? null : String(text).replace(/\s+/g, ' ').trim() || null;
   const none = { payText, payMin: null, payMax: null, payPeriod: null, payCurrency: null };
   if (!payText) return none;
   const s = payText.toLowerCase();
   if (/\b(usd|gbp|chf)\b|[$£]/.test(s)) return none;              // pay in another currency: not comparable
-  if (!/€|eur\b|euro/.test(s) && !/minijob|mini-job|std|stunde|hour|monat|month|jahr|year|p\.a\.|brutto|netto|gehalt|lohn|vergütung/.test(s)) return none;
-  const nums = [...s.matchAll(new RegExp(`(?<![\\d.,])(${NUM})(?![\\d])`, 'gi'))]
-    .map((m) => num(m[1])).filter((n) => n != null && n > 0 && !(n >= 1900 && n <= 2100 && Number.isInteger(n) && /20\d\d\b/.test(s) && !/€\s*20\d\d|20\d\d\s*€|20\d\d[.,]/.test(s)));
-  if (!nums.length) return none;
-  let period = null;
-  if (/std|stunde|stündl|\/\s*h\b|\bh\b|per hour|\/hour|hourly|stundenlohn/.test(s)) period = 'hour';
-  else if (/monat|mtl|\/\s*m\b|month|minijob|mini-job|basis/.test(s)) period = 'month';
-  else if (/jahr|jährl|p\.\s?a\.|\bpa\b|year|annual|annum/.test(s)) period = 'year';
-  const isRange = nums.length >= 2 && /[-–—]|bis\b(?!\s*zu)|to\b/.test(s);
-  let min = nums[0], max = isRange ? nums[1] : nums[0];
-  if (/\bab\b|from\b|mindestens|at least/.test(s) && !isRange) max = null;
-  if (/bis zu|up to|max\./.test(s) && !isRange) { max = nums[0]; min = null; }
+  // working time and leave are not pay: blank them out before reading numbers or periods
+  const t = s.replace(new RegExp(`(?:${NUM})\\s*(?:std\\.?|stunden|h)\\s*(?:\\/|pro|die|per|in der|a)?\\s*(?:woche|wöchentl\\w*|week)`, 'g'), ' ')
+    .replace(new RegExp(`(?:${NUM})\\s*(?:tage|days)\\b[^,;]*`, 'g'), ' ')
+    .replace(new RegExp(`(?:${NUM})\\s*(?:gehälter|monatsgehälter)`, 'g'), ' ')
+    .replace(new RegExp(`(?<![€\\d.,])(?:${NUM})\\s*(?:std\\.?|stunden)(?![\\w])`, 'g'), ' ');   // "20 Std." = hours (pay says "€/Std.")
+  let min = null, max = null, end = -1, start = -1;
+  const range = t.match(new RegExp(`(?:${CUR}\\s*)?(${NUM})\\s*${CUR}?\\s*(?:-|–|—|\\bbis\\b(?!\\s*zu)|\\bto\\b)\\s*${CUR}?\\s*(${NUM})\\s*(${CUR})?`, 'i'));
+  const rangeHasCur = range && new RegExp(CUR, 'i').test(range[0] + t.slice(range.index + range[0].length, range.index + range[0].length + 3)) ;
+  if (range && rangeHasCur) {
+    min = num(range[1]); max = num(range[2]); start = range.index; end = range.index + range[0].length;
+  } else {
+    const rx = new RegExp(`${CUR}\\s*(${NUM})|(${NUM})\\s*${CUR}`, 'gi');
+    for (const m of t.matchAll(rx)) {
+      const after = t.slice(m.index + m[0].length);
+      if (BONUS_RX.test(after)) continue;                          // "1.000 € Prämie" is a bonus, not pay
+      min = max = num(m[1] || m[2]); start = m.index; end = m.index + m[0].length; break;
+    }
+  }
+  if (min == null && max == null) return none;
+  const before = t.slice(Math.max(0, start - 14), start);
+  if (min === max) {
+    if (/\b(ab|from|mindestens|at least)\s*$/.test(before)) max = null;
+    else if (/\b(bis zu|up to|max\.?|maximal)\s*$/.test(before)) min = null;
+  }
   if (min != null && max != null && max < min) [min, max] = [max, min];
-  const ref = max ?? min;
-  if (!period) period = ref <= 150 ? 'hour' : ref <= 15000 ? 'month' : 'year';
+  const period = periodIn(t.slice(end, end + 30)) || periodIn(t) || (((max ?? min) <= 150) ? 'hour' : ((max ?? min) <= 15000) ? 'month' : 'year');
   return { payText, payMin: min, payMax: max, payPeriod: period, payCurrency: 'EUR' };
 }
 
@@ -101,7 +122,7 @@ const CITY_REGION = [
   [/\bberlin\b/i, 'Berlin'], [/\bhamburg\b/i, 'Hamburg'], [/\bm(ü|ue|u)nchen\b|\bmunich\b/i, 'München'],
   [/\bk(ö|oe|o)ln\b|\bcologne\b/i, 'Köln'], [/\bfrankfurt(?!\s*\(?\s*oder)/i, 'Frankfurt'],
 ];
-const DE_PLACE_RX = /\b(germany|deutschland|\bde\b|berlin|hamburg|m(ü|ue|u)nchen|munich|k(ö|oe|o)ln|cologne|frankfurt|d(ü|ue|u)sseldorf|stuttgart|leipzig|dresden|hannover|n(ü|ue|u)rnberg|bremen|essen|dortmund|bonn|mannheim|karlsruhe|wiesbaden|mainz|augsburg|freiburg|heidelberg|potsdam|m(ü|ue|u)nster|bochum|duisburg|kiel|rostock|regensburg)\b/i;
+const DE_PLACE_RX = /\b(germany|deutschland|berlin|hamburg|m(ü|ue|u)nchen|munich|k(ö|oe|o)ln|cologne|frankfurt|d(ü|ue|u)sseldorf|stuttgart|leipzig|dresden|hannover|n(ü|ue|u)rnberg|bremen|essen|dortmund|bonn|mannheim|karlsruhe|wiesbaden|mainz|augsburg|freiburg|heidelberg|potsdam|m(ü|ue|u)nster|bochum|duisburg|kiel|rostock|regensburg)\b/i;
 const REMOTE_RX = /\b(remote|home ?office|homeoffice|anywhere|fully distributed)\b/i;
 
 /** Region from a city or location string; null when the place is not in Germany. */
@@ -121,7 +142,11 @@ const robotsCache = new Map();      // host -> Disallow prefixes for us (or null
 const blocked = new Set();          // hosts that answered 403 on a disabled-by-terms source
 const down = new Map();             // host -> consecutive network failures; 3 in a row = skip the host this run
 export const runLog = { startedAt: new Date().toISOString(), sinceDays: SINCE, sources: {}, hosts: {}, notes: [] };
-const hostLog = (host) => (runLog.hosts[host] ||= { requests: 0, failures: 0, errors: [] });
+const hostLog = (host) => {
+  const h = (runLog.hosts[host] ||= { requests: 0, failures: 0, errors: [] });
+  if (h.errors.length > 10) h.errors.length = 10;          // keep the run log small
+  return h;
+};
 
 async function rawFetch(url, opts = {}) {
   const host = new URL(url).host;
@@ -168,8 +193,8 @@ async function allowed(url) {
     try {
       const r = await rawFetch(`${u.protocol}//${u.host}/robots.txt`);
       if (r.ok) rules = robotsRules(await r.text());
-      else if (r.status === 401 || r.status === 403) rules = { disallow: ['/'], allow: [] };   // locked robots.txt = keep out
-    } catch (e) { rules = null; down.set(u.host, (down.get(u.host) || 0) + 1); hostLog(u.host).errors.push(`robots.txt: ${e.cause?.code || e.message}`.slice(0, 160)); }
+      else if (r.status === 401 || r.status === 403 || r.status >= 500) rules = { disallow: ['/'], allow: [] };   // locked or broken robots.txt = keep out (RFC 9309)
+    } catch (e) { rules = { disallow: ['/'], allow: [] }; down.set(u.host, (down.get(u.host) || 0) + 1); hostLog(u.host).errors.push(`robots.txt: ${e.cause?.code || e.message}`.slice(0, 160)); }
     robotsCache.set(u.host, rules);
   }
   return robotsAllows(robotsCache.get(u.host), u.pathname + u.search);
@@ -221,14 +246,19 @@ export function dedupe(jobs) {
   return [...by.values()];
 }
 
+const toNum = (v) => (v == null || v === '' ? null : Number.isFinite(Number(v)) ? Number(v) : null);
+const safeDate = (v) => { const t = typeof v === 'number' ? v : Date.parse(v); return Number.isFinite(t) ? iso(t) : null; };
+/** Only absolute http(s) links reach the page; a relative link is resolved against where it was found. */
+const safeUrl = (u, base) => { try { const x = new URL(u, base); return /^https?:$/.test(x.protocol) ? x.href : null; } catch { return null; } };
 function job(source, f) {
-  const pay = f.pay ?? parsePay(f.payText);
+  const raw = f.pay ?? parsePay(f.payText);
+  const pay = { ...raw, payMin: toNum(raw.payMin), payMax: toNum(raw.payMax) };
   return {
     id: idFor(source, f.rawId), title: clean(f.title), employer: clean(f.employer) || null, employerSite: f.employerSite || null,
     city: clean(f.city) || null, region: f.region ?? regionFor(f.city, { country: f.country }), type: f.type || null,
     employment: f.employment || 'unknown',
     payText: pay.payText, payMin: pay.payMin, payMax: pay.payMax, payPeriod: pay.payPeriod, payCurrency: pay.payCurrency,
-    url: f.url, source, postedAt: f.postedAt ? iso(Date.parse(f.postedAt)) : null, lang: f.lang || 'de',
+    url: safeUrl(f.url, f.base), source, postedAt: f.postedAt ? safeDate(f.postedAt) : null, lang: f.lang || 'de',
     description: clean(f.description).slice(0, 1500) || null,
   };
 }
@@ -254,7 +284,7 @@ async function fromBA(src) {
           if (ort.land && !/deutschland|germany/i.test(ort.land)) continue;
           out.push(job('ba', {
             rawId: s.refnr, title: s.titel || s.beruf, employer: s.arbeitgeber, city: ort.ort, country: 'DE',
-            employment: emp, url: s.externeUrl || src.detail(s.refnr), postedAt: s.aktuelleVeroeffentlichungsdatum || s.eintrittsdatum, payText: null,
+            employment: emp, url: s.externeUrl || src.detail(s.refnr), postedAt: s.aktuelleVeroeffentlichungsdatum || s.modifikationsTimestamp || null, payText: null,
           }));
         }
         if (list.length < 100) break;
@@ -281,8 +311,9 @@ async function fromAdzuna(src) {
           : parsePay(null);
         const area = r.location?.area || [];
         out.push(job('adzuna', {
-          rawId: r.id, title: r.title, employer: r.company?.display_name, city: area[area.length - 1] || r.location?.display_name, country: 'DE',
-          employment: r.contract_time === 'part_time' ? 'part-time' : r.contract_type === 'contract' ? 'freelance' : r.contract_time === 'full_time' ? 'full-time' : 'unknown',
+          // area is [country, state, city, district…]: the city is the third entry
+          rawId: r.id, title: r.title, employer: r.company?.display_name, city: area[2] || r.location?.display_name, country: 'DE',
+          employment: r.contract_time === 'part_time' ? 'part-time' : r.contract_time === 'full_time' ? 'full-time' : 'unknown',
           url: r.redirect_url, postedAt: r.created, pay, description: r.description,
         }));
       }
@@ -311,12 +342,17 @@ function fromJsonLd(source, p, fallbackUrl, extra = {}) {
   const listed = (sal.minValue || sal.maxValue || sal.value) && (!p.baseSalary.currency || p.baseSalary.currency === 'EUR');
   const pay = listed ? { payText: clean(`${sal.minValue ?? sal.value}${sal.maxValue ? '–' + sal.maxValue : ''} ${p.baseSalary.currency || 'EUR'} / ${unit || '?'}`), payMin: sal.minValue ?? sal.value ?? null, payMax: sal.maxValue ?? sal.value ?? null,
     payPeriod: unit === 'HOUR' ? 'hour' : unit === 'MONTH' ? 'month' : unit === 'YEAR' ? 'year' : null, payCurrency: 'EUR' } : parsePay(null);
-  return job(source, {
+  const reqs = [].concat(p.applicantLocationRequirements || []).map((x) => x?.name || x?.address?.addressCountry || x).join(' ');
+  const allowsDE = /\b(germany|deutschland|de|deu)\b/i.test(`${reqs} ${typeof country === 'string' ? country : ''}`);
+  const j = job(source, {
+    base: fallbackUrl,
     rawId: p.identifier?.value || p.url || `${p.title}-${loc.addressLocality}`, title: p.title, employer: p.hiringOrganization?.name || extra.employer,
     employerSite: p.hiringOrganization?.sameAs || extra.employerSite, city: loc.addressLocality || (remote ? 'Remote' : ''), country,
     region: regionFor(`${loc.addressLocality || ''} ${remote ? 'remote' : ''}`, { country }),
     employment: empOf([].concat(p.employmentType || []).join(' ')), url: p.url || fallbackUrl, postedAt: p.datePosted, pay, description: p.description,
   });
+  j._remoteDE = remote && allowsDE;          // read by fromFitt only, never written to the file
+  return j;
 }
 
 /** An HTML job board: JobPosting JSON-LD on the page, else job links and their detail pages. */
@@ -336,8 +372,9 @@ async function fromHtmlBoard(src, { maxDetail = 40 } = {}) {
 async function fromFitt(src) {
   // A US board: keep only roles that explicitly allow Germany.
   const all = await fromHtmlBoard(src);
-  return all.filter((j) => /germany|deutschland|\bde\b/i.test(`${j.city} ${j.description}`) && /remote|telecommute/i.test(`${j.city} ${j.description}`))
-    .map((j) => ({ ...j, region: 'Remote DE' }));
+  // Germany must be in the posting's structured location (applicantLocationRequirements or
+  // the address country) and the job must be remote; free text does not count.
+  return all.filter((j) => j._remoteDE).map((j) => ({ ...j, region: 'Remote DE' }));
 }
 
 /* ---- brand career pages ---- */
@@ -401,7 +438,7 @@ async function fromAts(b) {
     const r = await get(url); if (!r.ok) return [];
     return [...r.text.matchAll(/<position>([\s\S]*?)<\/position>/g)].map(([, x]) => {
       const tag = (t) => clean((x.match(new RegExp(`<${t}>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</${t}>`)) || [])[1]);
-      return mk({ rawId: `${b.ats.id}-${tag('id')}`, title: tag('name'), city: tag('office'), employment: empOf(`${tag('employmentType')} ${tag('schedule')}`),
+      return mk({ rawId: `${b.ats.id}-${tag('id')}`, title: tag('name'), city: tag('office'), country: 'DE', employment: empOf(`${tag('employmentType')} ${tag('schedule')}`),
         url: `https://${b.ats.id}.jobs.personio.de/job/${tag('id')}`, postedAt: tag('createdAt'), payText: null });
     });
   }
@@ -426,16 +463,19 @@ async function fromBrands(brands) {
 
 /* --------------------------------------------------------- on-brand and classify -- */
 
-const DROP_TITLE_RX = /\b(reinigung\w*|putzkraft|cleaner|cleaning|hausmeister)\b/i;
+const DROP_TITLE_RX = /(reinig|putzkraft|cleaner|cleaning|hausmeister)/i;
 // German job titles glue words together ("Fitnesstrainer", "Studioleiter"), which the
 // word-bounded isOnBrand vocabulary misses. These compounds count too; OFFTOPIC still blocks.
-const JOB_COMPOUND_RX = /(fitness|trainer|studio|yoga|pilates|physio|sport|gesundheit|wellness|kurs|reha|ernährung|personaltrain)/i;
+const JOB_COMPOUND_RX = /(fitness|trainer|studio|yoga|pilates|physio|\bsport\w*|wellness|ernährungsberat|personaltrain)/i;
+// …but not the trainers and "sport" jobs of other trades that BA keyword search returns
+const JOB_DENY_RX = /\b(sap|it|software|erste[- ]hilfe|lkw|fahrer\w*|transport\w*|pflege\w*|kranken\w*|verkehr\w*|fahrlehrer\w*|hunde\w*|sprach\w*|excel|vertriebstrainer\w*|verkaufstrainer\w*)\b/i;
 /** Off-topic gate. Brand career pages are on-brand by the list itself (they are fitness and
  *  wellness companies, so a "Software Engineer" there counts); everything else must pass isOnBrand. */
 export function keepJob(j) {
   if (DROP_TITLE_RX.test(j.title)) return false;
   if (j.source === 'career-page') return true;
   const text = `${j.title} ${j.employer || ''}`;
+  if (JOB_DENY_RX.test(j.title)) return false;
   return isOnBrand(text) || (JOB_COMPOUND_RX.test(text) && !OFFTOPIC_RX.test(text));
 }
 
@@ -507,8 +547,10 @@ export function mergeRun(stored, fresh, { now = Date.now(), failedSources = new 
   for (const f of fresh) {
     const cur = byId.get(f.id) || byKey.get(dedupeKey(f));
     if (cur) {
-      Object.assign(cur, { lastSeenAt: today, expired: false, url: f.url || cur.url });
-      if (!hasPay(cur) && hasPay(f)) Object.assign(cur, { payText: f.payText, payMin: f.payMin, payMax: f.payMax, payPeriod: f.payPeriod, payCurrency: f.payCurrency });
+      Object.assign(cur, { lastSeenAt: today, expired: false });
+      if (f.source === cur.source && f.url) cur.url = f.url;
+      // a later posting with pay replaces one without: link, pay and source credit move together
+      if (!hasPay(cur) && hasPay(f)) Object.assign(cur, { url: f.url, source: f.source, payText: f.payText, payMin: f.payMin, payMax: f.payMax, payPeriod: f.payPeriod, payCurrency: f.payCurrency });
       continue;
     }
     const j = { ...f, seenAt: today, lastSeenAt: today, expired: false };
@@ -560,6 +602,7 @@ async function run() {
       else if (src.id === 'career-page') { await discover(brandsFile.brands); got = await fromBrands(brandsFile.brands); }
       else if (src.id === 'dssv') got = await fromHtmlBoard(src);
       else if (src.id === 'fitt') got = await fromFitt(src);
+      else got = await fromHtmlBoard(src);   // indeed / stepstone, only if ever enabled: robots.txt, stop at the first 403
     } catch (e) { log.error = e.message; }
     if (got === null) { log.note = 'skipped'; continue; }
     const hostFails = Object.entries(runLog.hosts).filter(([h, v]) => v.failures && src.url && new URL(src.url).host === h);
@@ -579,6 +622,7 @@ async function run() {
   const week = Date.now() - 7 * DAY;
   runLog.summary = {
     live: live.length, newThisWeek: live.filter((j) => Date.parse(j.seenAt) >= week).length, withPay: live.filter(hasPay).length,
+    newWithPay: live.filter((j) => Date.parse(j.seenAt) >= week && hasPay(j)).length,
     hostsFailed: Object.values(runLog.hosts).filter((h) => h.failures && h.failures === h.requests).length,
     sourcesFailed: [...failed],
   };
@@ -592,7 +636,7 @@ async function run() {
     console.log('dry run: data files untouched; run log at automation/jobs/last-run-dry.json'); return;
   }
 
-  const out = { generatedAt: iso(), edition: editionFor(), jobs: merged.map(({ description, classified, ...j }) => ({ ...j, classified: classified || undefined })) };
+  const out = { generatedAt: iso(), edition: editionFor(), jobs: merged.map(({ description, classified, _remoteDE, ...j }) => ({ ...j, classified: classified || undefined })) };
   // descriptions stay out of the site file (size, copyright); the summaries carry the gist
   writeFileSync(OUT, JSON.stringify(out, null, 1) + '\n');
   const appended = appendPay(merged);
@@ -634,12 +678,23 @@ function selftest() {
   P('', null, null, null);
   P(null, null, null, null);
   P('520 € auf Minijob-Basis, Start 2026', 520, 520, 'month');
+  // review cases (Oct 2026): brutto/netto plus another number, working hours, holidays, bonuses
+  P('14 € brutto pro Stunde, 2 Wochen Urlaub', 14, 14, 'hour');
+  P('2.800 € brutto, 13 Gehälter', 2800, 2800, 'month');
+  P('2.800 € brutto zzgl. 30 Tage Urlaub', 2800, 2800, 'month');
+  P('Vollzeit (40 Std./Woche), 3.000 € brutto im Monat', 3000, 3000, 'month');
+  P('Teilzeit 20 Std., 1.400 €', 1400, 1400, 'month');
+  P('3.000 € brutto/Monat bei 40 h/Woche', 3000, 3000, 'month');
+  P('45.000 € brutto (Basisgehalt)', 45000, 45000, 'year');
+  P('13,90€/Std. + Provision bis 500 €', 13.9, 13.9, 'hour');
+  P('1.000 Euro Prämie', null, null, null);
   const nb = parsePay('2.000 € netto'); t('netto kept as written', nb.payText === '2.000 € netto' && nb.payMin === 2000, nb);
   // regions
   const R = (loc, want, o) => t(`region: ${loc}`, regionFor(loc, o) === want, regionFor(loc, o));
   R('Berlin', 'Berlin'); R('München-Schwabing', 'München'); R('Cologne, Germany', 'Köln'); R('Frankfurt am Main', 'Frankfurt'); R('Frankfurt (Oder)', 'Other DE');
   R('Leipzig', 'Other DE'); R('Remote - Germany', 'Remote DE'); R('Remote, US', null); R('New York, NY', null); R('Hamburg', 'Hamburg');
   R('Wels', 'Other DE', { country: 'DE' });
+  R('Paris, Île-de-France, France', null); R('Remote - Rio de Janeiro', null);
   // dedupe keeps the posting with pay, else the earliest
   const d = dedupe([
     { employer: 'FitX GmbH', title: 'Fitnesstrainer (m/w/d)', city: 'Berlin', postedAt: '2026-10-20', payMin: null, payMax: null, source: 'ba' },
@@ -655,6 +710,9 @@ function selftest() {
   t('gate: keeps trainer', keepJob({ title: 'Fitnesstrainer (m/w/d)', employer: 'FitX', source: 'ba' }));
   t('gate: keeps ops at a studio', keepJob({ title: 'Servicekraft Empfang Fitnessstudio', employer: 'clever fit', source: 'ba' }));
   t('gate: drops off-topic', !keepJob({ title: 'Lagerist', employer: 'Spedition Meyer', source: 'ba' }));
+  t('gate: drops Gebäudereinigung', !keepJob({ title: 'Gebäudereinigung Fitnessstudio', employer: 'X', source: 'ba' }));
+  t('gate: drops SAP Trainer', !keepJob({ title: 'SAP Trainer (m/w/d)', employer: 'Beratung GmbH', source: 'ba' }));
+  t('gate: drops Transport', !keepJob({ title: 'LKW-Fahrer Transport', employer: 'Spedition', source: 'ba' }));
   t('gate: brand page counts', keepJob({ title: 'Software Engineer', employer: 'Whoop', source: 'career-page' }));
   // robots.txt
   const rr = robotsRules('User-agent: *\nDisallow: /private\nAllow: /private/jobs\n\nUser-agent: OtherBot\nDisallow: /');
@@ -671,6 +729,9 @@ function selftest() {
   t('expiry: source failed this run -> not expired', m.find((x) => x.id === 'b').expired === false);
   t('merge: new job stamped', m.find((x) => x.id === 'c').seenAt === '2026-11-30');
   t('edition: Thursday run -> Friday', editionFor(Date.parse('2026-11-05T17:00:00Z')) === '2026-11-06');
+  t('url: javascript: dropped', job('dssv', { rawId: 1, title: 'x', url: 'javascript:alert(1)' }).url === null);
+  t('url: relative resolved', job('dssv', { rawId: 1, title: 'x', url: '/job/1', base: 'https://www.dssv.de/jobboerse/' }).url === 'https://www.dssv.de/job/1');
+  t('date: epoch ms and junk', job('career-page', { rawId: 1, title: 'x', url: 'https://a.b', postedAt: 1761800000000 }).postedAt === '2025-10-30' && job('dssv', { rawId: 2, title: 'x', url: 'https://a.b', postedAt: 'soon' }).postedAt === null);
   t('json-ld: finds JobPosting in @graph', jsonLdJobs('<script type="application/ld+json">{"@graph":[{"@type":"JobPosting","title":"x"}]}</script>').length === 1);
   console.log(ok ? 'selftest passed' : 'selftest FAILED');
   process.exit(ok ? 0 : 1);

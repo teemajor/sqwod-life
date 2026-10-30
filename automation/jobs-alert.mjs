@@ -13,18 +13,22 @@
  * Fewer than 3 new roles this week: nothing is sent, the run only logs it. Previews are
  * always written to automation/jobs/preview-en.html and preview-de.html.
  *
- * Env: RESEND_API_KEY, RESEND_FROM (default "Sqwod Jobs <daily@sqwod.life>"),
+ * Sent under the Resend topic "Sqwod Jobs" (RESEND_TOPIC_JOBS), so the unsubscribe link only
+ * ends the jobs alert and never a Daily subscription.
+ *
+ * Env: RESEND_API_KEY, RESEND_TOPIC_JOBS, RESEND_FROM (default "Sqwod Jobs <daily@sqwod.life>"),
  *      RESEND_SEGMENT_JOBS_EN, RESEND_SEGMENT_JOBS_DE
  */
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { loadJobs, newThisWeek, hasPay, payLabel, cityLabel } from './jobs-week.mjs';
+import { loadJobs, newThisWeek, hasPay, payLabel, payBasis, cityLabel } from './jobs-week.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 const KEY = process.env.RESEND_API_KEY;
 const FROM = process.env.RESEND_FROM || 'Sqwod Jobs <daily@sqwod.life>';
+const TOPIC = process.env.RESEND_TOPIC_JOBS || 'bf47c9ac-146f-4767-8fb3-ab43dba06bad';
 const SEG = { en: process.env.RESEND_SEGMENT_JOBS_EN, de: process.env.RESEND_SEGMENT_JOBS_DE };
 const SITE = 'https://sqwod.life';
 const date = args.date || new Date().toISOString().slice(0, 10);
@@ -47,7 +51,7 @@ function email(lang, fresh) {
   const withPay = fresh.filter(hasPay).length;
   const page = `${SITE}/${lang}/jobs/?utm_source=sqwod-jobs&utm_medium=email&utm_campaign=jobs-${date}`;
   const rows = top.map((j, i) => {
-    const pay = payLabel(j, lang);
+    const pay = payLabel(j, lang) ? [payLabel(j, lang), payBasis(j, lang)].filter(Boolean).join(' ') : null;
     return `<tr><td style="padding:14px 0;${i ? 'border-top:1px solid #E2DED6;' : ''}">
       <div style="font:700 16px/1.3 ${F};color:#1B1917;">${esc(j.title)}</div>
       <div style="font:400 13.5px/1.5 ${F};color:#5C5850;margin-top:3px;">${esc([j.employer ? `${t.at} ${j.employer}` : '', cityLabel(j, lang)].filter(Boolean).join(', '))}</div>
@@ -94,7 +98,7 @@ if (fresh.length < MIN_NEW) {
     if (!SEG[lang]) { console.log(`· ${lang.toUpperCase()}: no RESEND_SEGMENT_JOBS_${lang.toUpperCase()} configured, skipping`); continue; }
     const r = await fetch('https://api.resend.com/broadcasts', {
       method: 'POST', headers: { Authorization: `Bearer ${KEY}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({ segment_id: SEG[lang], from: FROM, subject: mails[lang].subject, html: mails[lang].html, name: `Sqwod Jobs ${date} (${lang.toUpperCase()})`, send: true }),
+      body: JSON.stringify({ segment_id: SEG[lang], from: FROM, subject: mails[lang].subject, html: mails[lang].html, name: `Sqwod Jobs ${date} (${lang.toUpperCase()})`, topic_id: TOPIC, send: true }),
     });
     console.log(r.ok ? `✓ ${lang.toUpperCase()} jobs alert sent` : `! ${lang.toUpperCase()} failed: ${r.status} ${(await r.text()).slice(0, 200)}`);
   }

@@ -25,7 +25,7 @@ const T = de ? {
   sRoles: 'Offene Stellen', sPay: 'mit Gehaltsangabe', sCities: 'Städte', sEmployers: 'Arbeitgeber',
   alertHead: 'Neue Fitness-Jobs jeden Freitag', alertBody: 'Eine Mail pro Woche, nur Deutschland, mit Gehalt, wenn wir es haben.', alertBtn: 'Jobs-Alert abonnieren',
   all: 'Alle', other: 'Andere Städte', remote: 'Remote', type: 'Bereich', payOnly: 'Nur mit Gehalt', search: 'Stelle oder Arbeitgeber suchen …', shown: 'Stellen angezeigt',
-  noPay: 'Gehalt nicht angegeben', apply: 'Bewerben', via: 'Quelle', none: 'Keine Stelle passt zu diesen Filtern.',
+  noPay: 'Gehalt nicht angegeben', apply: 'Bewerben', newTab: 'öffnet in neuem Tab', filters: 'Filter', city: 'Stadt', via: 'Quelle', none: 'Keine Stelle passt zu diesen Filtern.',
   empty: 'Die erste Liste erscheint nach dem ersten wöchentlichen Lauf. Trag dich ein, dann bekommst du sie am Freitag als Erste:r.',
   per: { hour: 'Std.', month: 'Monat', year: 'Jahr' } as Record<string, string>,
   emp: { 'full-time': 'Vollzeit', 'part-time': 'Teilzeit', freelance: 'Freiberuflich', 'mini-job': 'Minijob', unknown: '' } as Record<string, string>,
@@ -45,7 +45,7 @@ const T = de ? {
   sRoles: 'Open roles', sPay: 'with pay listed', sCities: 'Cities', sEmployers: 'Employers',
   alertHead: 'New fitness jobs every Friday', alertBody: 'One email a week, Germany only, pay listed when we have it.', alertBtn: 'Get the jobs alert',
   all: 'All', other: 'Other cities', remote: 'Remote', type: 'Area', payOnly: 'Pay listed', search: 'Search a role or employer…', shown: 'roles shown',
-  noPay: 'Pay not listed', apply: 'Apply', via: 'Source', none: 'No role matches these filters.',
+  noPay: 'Pay not listed', apply: 'Apply', newTab: 'opens in a new tab', filters: 'Filters', city: 'City', via: 'Source', none: 'No role matches these filters.',
   empty: 'The first list goes up after the first weekly run. Sign up and get it first, on Friday.',
   per: { hour: 'hour', month: 'month', year: 'year' } as Record<string, string>,
   emp: { 'full-time': 'Full-time', 'part-time': 'Part-time', freelance: 'Freelance', 'mini-job': 'Mini-job', unknown: '' } as Record<string, string>,
@@ -72,6 +72,8 @@ function pay(j: Job) {
   const amt = a && b && a !== b ? `${a}–${b}` : a && b ? a : a ? `${de ? 'ab' : 'from'} ${a}` : `${de ? 'bis' : 'up to'} ${b}`;
   return j.payPeriod ? `${amt} / ${T.per[j.payPeriod]}` : amt;
 }
+// gross or net as the ad says it (never converted)
+const basis = (j: Job) => (/netto|\bnet\b/i.test(j.payText || '') ? (de ? 'netto' : 'net') : /brutto|\bgross\b/i.test(j.payText || '') ? (de ? 'brutto' : 'gross') : null);
 const summary = (j: Job) => (de ? j.summaryDe : j.summaryEn) || null;
 
 // stats, all from the live rows
@@ -98,7 +100,7 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
 }));
 ---
 <Base lang={lang} title={T.title} description={T.sub} active="tools" noindex={jobs.length < 10}>
-  {postings.map((p) => <script type="application/ld+json" set:html={JSON.stringify(p)} />)}
+  {postings.map((p) => <script type="application/ld+json" set:html={JSON.stringify(p).replace(/</g, '\\u003c')} />)}
   <section class="jh">
     <div class="jh-l">
       <p class="kick jh-crumb"><a href={`/${lang}/tools/`}>Sqwod Tools</a> / Jobs</p>
@@ -123,8 +125,8 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
     <div class="note jb-empty">{T.empty}</div>
   ) : (
     <>
-      <section class="jb-filters" aria-label={T.type}>
-        <div class="jb-chips" role="group">
+      <section class="jb-filters" aria-label={T.filters}>
+        <div class="jb-chips" role="group" aria-label={T.city}>
           <button type="button" class="on" data-city="" aria-pressed="true">{T.all}</button>
           {CITIES.filter((c) => jobs.some((j) => j.region === c[2])).map(([label, slug]) => <button type="button" data-city={slug} aria-pressed="false">{label}</button>)}
         </div>
@@ -146,8 +148,8 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
               <p class="jb-src">{T.via}: {SOURCE[j.source] || j.source}</p>
             </div>
             <div class="jb-side">
-              {pay(j) ? <span class="dnum jb-payv" title={j.payText || undefined}>{pay(j)}</span> : <span class="jb-nopay">{T.noPay}</span>}
-              <a class="jb-apply" href={j.url} rel="nofollow noopener" target="_blank" data-umami-event="job-apply" data-umami-event-source={j.source}>{T.apply} ↗</a>
+              {pay(j) ? <span class="jb-payw"><span class="dnum jb-payv" title={j.payText || undefined}>{pay(j)}</span>{basis(j) && <span class="jb-basis">{basis(j)}</span>}</span> : <span class="jb-nopay">{T.noPay}</span>}
+              <a class="jb-apply" href={j.url} rel="nofollow noopener" target="_blank" aria-label={`${T.apply}: ${j.title} (${T.newTab})`} data-umami-event="job-apply" data-umami-event-source={j.source}>{T.apply} ↗</a>
             </div>
           </li>
         ))}
@@ -192,6 +194,9 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
   .jb-list{list-style:none;margin:0 0 24px;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
   .jb{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;padding:16px 18px;border-top:1px solid var(--line)}
   .jb:first-child{border-top:0}
+  .jb[hidden],.jb-none[hidden]{display:none}
+  .jb-payw{display:inline-flex;align-items:baseline;gap:6px}
+  .jb-basis{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--g2)}
   .jb-t{font-size:16px;font-weight:700;line-height:1.3;margin:0;color:var(--chalk)}
   .jb-meta{margin:4px 0 0;font-size:13.5px;color:var(--g1)}
   .jb-sum{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--g2);max-width:70ch}

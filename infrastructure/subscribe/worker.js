@@ -214,7 +214,8 @@ async function confirm(req, env, url) {
   const jobsAlert = data.s === 'jobs-alert';
   if (jobsAlert) payload.properties.jobs_alert = 'true';
   const jobsSegment = jobsAlert ? (lang === 'de' ? env.RESEND_SEGMENT_JOBS_DE : env.RESEND_SEGMENT_JOBS_EN) : '';
-  const segs = [segment, jobsSegment].filter(Boolean);
+  // A jobs-alert sign-up asked for one email a week, not the Daily: it joins only the jobs segment.
+  const segs = jobsAlert ? [jobsSegment].filter(Boolean) : [segment].filter(Boolean);
   if (segs.length) payload.segments = segs.map((id) => ({ id }));
 
   const r = await fetch('https://api.resend.com/contacts', {

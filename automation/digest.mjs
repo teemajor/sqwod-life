@@ -138,10 +138,11 @@ function monday() {
 // ---------- Friday: one line on Sqwod Jobs (a list, nothing to approve) ----------
 function fridayJobs() {
   const log = readJson(join(ROOT, 'automation', 'jobs', 'last-run.json'), null);
-  if (!log?.summary) return '';
+  // a run older than 2 days means Thursday's run did not happen: say so instead of repeating last week
+  if (!log?.summary || Date.now() - Date.parse(log.startedAt) > 2 * 86400000) return '<p style="margin:22px 0 0;font-size:14px;line-height:1.5"><b>Jobs:</b> no run this week. Check Actions → Jobs.</p>';
   const s = log.summary;
   const url = 'https://github.com/teemajor/sqwod-life/blob/main/automation/jobs/last-run.json';
-  return `<p style="margin:22px 0 0;font-size:14px;line-height:1.5"><b>Jobs:</b> ${s.newThisWeek ?? 0} new roles found, ${s.withPay ?? 0} with pay, ${s.hostsFailed ?? 0} hosts failed. <a href="${url}" style="color:#111">Run log</a></p>`;
+  return `<p style="margin:22px 0 0;font-size:14px;line-height:1.5"><b>Jobs:</b> ${s.newThisWeek ?? 0} new roles found, ${s.newWithPay ?? 0} with pay, ${s.hostsFailed ?? 0} hosts failed. <a href="${url}" style="color:#111">Run log</a></p>`;
 }
 const isFriday = new Date(`${today}T12:00:00Z`).getUTCDay() === 5;
 

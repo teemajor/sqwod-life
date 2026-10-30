@@ -29,4 +29,6 @@ export function payLabel(j, lang) {
   const per = de ? { hour: 'Std.', month: 'Monat', year: 'Jahr' } : { hour: 'hour', month: 'month', year: 'year' };
   return j.payPeriod ? `${amt} / ${per[j.payPeriod]}` : amt;
 }
+/** "netto" / "brutto" (or net / gross) as the ad says it; pay is never converted. */
+export const payBasis = (j, lang) => (/netto|\bnet\b/i.test(j.payText || '') ? (lang === 'de' ? 'netto' : 'net') : /brutto|\bgross\b/i.test(j.payText || '') ? (lang === 'de' ? 'brutto' : 'gross') : null);
 export const cityLabel = (j, lang) => (j.region === 'Remote DE' ? 'Remote' : j.city || '') || null;

@@ -208,7 +208,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
             <p class="kick">{lang === 'de' ? `${d.jobsWeek.length} Jobs diese Woche` : `${d.jobsWeek.length} jobs this week`}</p>
             <ul class="deal-list">
               {d.jobsWeek.map((j) => (
-                <li><span class="deal-e"><b>{j.title}</b>{[j.employer ? `${lang === 'de' ? 'bei' : 'at'} ${j.employer}` : '', j.city].filter(Boolean).join(', ')}{j.pay ? <span class="dnum deal-amt">{j.pay}</span> : null}</span></li>
+                <li>{j.pay && <span class="deal-k">{j.pay}</span>}<span class="deal-e"><b>{j.title}</b>{' '}{[j.employer ? `${lang === 'de' ? 'bei' : 'at'} ${j.employer}` : '', j.city].filter(Boolean).join(', ')}</span></li>
               ))}
             </ul>
             <a class="deal-all" href={`/${lang}/jobs/`} data-umami-event="daily-to-jobs">{lang === 'de' ? 'Alle Jobs bei Sqwod Jobs' : 'All jobs on Sqwod Jobs'} →</a>
