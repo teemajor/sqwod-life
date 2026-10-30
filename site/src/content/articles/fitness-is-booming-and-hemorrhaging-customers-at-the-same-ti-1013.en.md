@@ -5,7 +5,7 @@ counterpart: fitness-is-booming-and-hemorrhaging-customers-at-the-same-ti-1013
 title: "Fitness Is Booming and Hemorrhaging Customers at the Same Time"
 topic: retention
 newsTake: true
-description: "The industry is expanding into new markets while quietly failing the members it already has — here's how to stop doing both."
+description: "The industry is expanding into new markets while quietly failing the members it already has: here's how to stop doing both."
 pillar: signal
 type: trends
 format: analysis
@@ -31,7 +31,7 @@ tags: []
 
 Fitness operators are in expansion mode. REGYMEN Fitness just announced a push into New Zealand, with Paul Bowman and Ash Williams leading the charge, per Australasian Leisure Management Magazine. Macobs Technologies is acquiring Dhanta Wellness as part of a broader grooming and wellness rollup strategy, according to Kalkine India. Viome, the Bellevue-based health company, is snapping up capabilities too, per The Business Journals. Everyone is growing.
 
-Meanwhile, a Fitness First member in Singapore told Stomp she couldn't use her membership because the class schedule didn't fit her life or her arthritis — and when she tried to leave, she was hit with a $587.50 cancellation fee. That's not a cautionary tale. That's your average Tuesday.
+Meanwhile, a Fitness First member in Singapore told Stomp she couldn't use her membership because the class schedule didn't fit her life or her arthritis, and when she tried to leave, she was hit with a $587.50 cancellation fee. That's not a cautionary tale. That's your average Tuesday.
 
 The industry keeps buying its way into new markets while the members inside existing ones feel ignored, trapped, or both.
 
@@ -41,7 +41,7 @@ Here's the number that should embarrass every operator in the room: 88% of leads
 
 Think about that alongside the Fitness First story. Someone joined, showed up, found the product didn't work for her body or her schedule, and then discovered the exit cost nearly $600. The acquisition funnel is leaky at the top and punishing at the bottom.
 
-This is what happens when growth strategy is about deals and locations rather than member experience. You can announce a New Zealand expansion or close a wellness acquisition, but if your CRM is silent for three days after someone fills out a contact form — and your contracts punish people for noticing you failed them — you're building on sand.
+This is what happens when growth strategy is about deals and locations rather than member experience. You can announce a New Zealand expansion or close a wellness acquisition, but if your CRM is silent for three days after someone fills out a contact form, and your contracts punish people for noticing you failed them, you're building on sand.
 
 The DSSV's Aufstiegskongress 2026 in Mannheim signals that the European operator community is at least gathering to talk about where the industry goes next. The question is whether those conversations lead with product-market fit or with square footage.
 
@@ -49,10 +49,10 @@ The DSSV's Aufstiegskongress 2026 in Mannheim signals that the European operator
 
 You don't need another acquisition thesis right now. You need a 72-hour rule and a cancellation audit.
 
-**The 72-hour rule:** Every inbound lead gets a personal, non-automated touchpoint within three days. Not a drip sequence. A human message or call. Athletech News's data makes the competitive advantage here almost embarrassingly easy to claim — if 88% of your competitors are silent, showing up at all puts you in the top tier.
+**The 72-hour rule:** Every inbound lead gets a personal, non-automated touchpoint within three days. Not a drip sequence. A human message or call. Athletech News's data makes the competitive advantage here almost embarrassingly easy to claim, if 88% of your competitors are silent, showing up at all puts you in the top tier.
 
-**The cancellation audit:** Pull your last 90 days of cancellation requests. What reasons are members giving? How many cite schedule, accessibility, or health changes — exactly the issues the Fitness First member described? Those aren't edge cases. They're product feedback you're currently monetizing as penalty fees instead of fixing.
+**The cancellation audit:** Pull your last 90 days of cancellation requests. What reasons are members giving? How many cite schedule, accessibility, or health changes: exactly the issues the Fitness First member described? Those aren't edge cases. They're product feedback you're currently monetizing as penalty fees instead of fixing.
 
-**The wellness convergence lens:** Viome and Macobs are both betting that health is moving toward personalization — nutrition, gut health, grooming, and fitness under one roof. If you're a single-site operator, you can't buy your way there. But you can make your existing members feel seen enough to stay. That's the foundation any acquisition strategy has to sit on.
+**The wellness convergence lens:** Viome and Macobs are both betting that health is moving toward personalization: nutrition, gut health, grooming, and fitness under one roof. If you're a single-site operator, you can't buy your way there. But you can make your existing members feel seen enough to stay. That's the foundation any acquisition strategy has to sit on.
 
 Expansion is a headline. Retention is a business. Right now, the industry is better at the former than it has any right to be, and worse at the latter than it can afford.

@@ -2,10 +2,10 @@
 urlSlug: recovery-is-the-new-rep-and-your-clients-already-know-it-0804
 lang: "en"
 counterpart: recovery-is-the-new-rep-and-your-clients-already-know-it-0804
-title: "Recovery Is the New Rep—And Your Clients Already Know It"
+title: "Recovery Is the New Rep, And Your Clients Already Know It"
 topic: offer-programming
 newsTake: true
-description: "From Spotify's AI running coach to Pharrell's skincare line, recovery is eating the fitness industry—here's how coaches can lead the shift before clients leave to find it elsewhere."
+description: "From Spotify's AI running coach to Pharrell's skincare line, recovery is eating the fitness industry: here's how coaches can lead the shift before clients leave to find it elsewhere."
 pillar: move
 type: method
 format: analysis
@@ -36,7 +36,7 @@ If you're still programming training blocks without a recovery layer, you're not
 
 ## What's Really Happening Here
 
-The market is telling coaches something loud and clear: people want to feel *better*, not just perform better. The Preston membership model—gym plus Pilates plus recovery under one roof—is a direct response to members who stopped seeing hard training as the whole answer. Humanrace isn't a gym brand, but it's eating fitness real estate by speaking the language of longevity. Spotify isn't a coach, but it's showing up in the exact moment a coach should.
+The market is telling coaches something loud and clear: people want to feel *better*, not just perform better. The Preston membership model, gym plus Pilates plus recovery under one roof, is a direct response to members who stopped seeing hard training as the whole answer. Humanrace isn't a gym brand, but it's eating fitness real estate by speaking the language of longevity. Spotify isn't a coach, but it's showing up in the exact moment a coach should.
 
 The gap these products are filling isn't a product gap. It's a *coaching* gap.
 
@@ -44,7 +44,7 @@ When a client's sleep tracking app knows more about their recovery debt than you
 
 ## The Do-This-Now Fix
 
-You don't need a $12M raise or a celebrity skincare line. You need to make recovery a *named, visible part of your coaching offer*—not a footnote at the bottom of a training plan.
+You don't need a $12M raise or a celebrity skincare line. You need to make recovery a *named, visible part of your coaching offer*, not a footnote at the bottom of a training plan.
 
 Here's what that looks like in practice:
 
@@ -52,13 +52,13 @@ Here's what that looks like in practice:
 
 **2. Name your recovery work explicitly.** Don't call it a cool-down. Call it recovery work. Language shapes perceived value. If it has no name, it has no worth.
 
-**3. Build a recovery block into your programming—on paper.** The Preston model works because recovery is *scheduled*, not suggested. Even one dedicated recovery session per week, visible in the plan, signals that you take it as seriously as the training itself.
+**3. Build a recovery block into your programming, on paper.** The Preston model works because recovery is *scheduled*, not suggested. Even one dedicated recovery session per week, visible in the plan, signals that you take it as seriously as the training itself.
 
-**4. Get ahead of the AI.** Spotify's running coach and SoundHealth's breathing devices are useful tools—not threats, if you position yourself right. Reference them. Ask clients what their data says. Then *interpret* it for them. That's the human edge no app has yet.
+**4. Get ahead of the AI.** Spotify's running coach and SoundHealth's breathing devices are useful tools, not threats, if you position yourself right. Reference them. Ask clients what their data says. Then *interpret* it for them. That's the human edge no app has yet.
 
 ## The Bottom Line
 
-The fitness industry's biggest players—tech, wellness, celebrity brands, and local gym collectives—are all converging on the same insight: recovery sells because recovery *works*, and clients have figured that out.
+The fitness industry's biggest players (tech, wellness, celebrity brands, and local gym collectives) are all converging on the same insight: recovery sells because recovery *works*, and clients have figured that out.
 
 The coaches who thrive in this shift won't be the ones who trained people hardest. They'll be the ones who helped people feel the best they've felt in years.
 

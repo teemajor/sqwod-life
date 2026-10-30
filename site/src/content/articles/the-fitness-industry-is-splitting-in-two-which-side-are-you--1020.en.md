@@ -2,10 +2,10 @@
 urlSlug: the-fitness-industry-is-splitting-in-two-which-side-are-you--1020
 lang: "en"
 counterpart: the-fitness-industry-is-splitting-in-two-which-side-are-you--1020
-title: "The Fitness Industry Is Splitting in Two — Which Side Are You On?"
+title: "The Fitness Industry Is Splitting in Two, Which Side Are You On?"
 topic: strategy
 newsTake: true
-description: "Boutique studios are betting big on physical expansion while corporate wellness quietly implodes — here's how to position your business before the market makes the choice for you."
+description: "Boutique studios are betting big on physical expansion while corporate wellness quietly implodes: here's how to position your business before the market makes the choice for you."
 pillar: build
 type: coaching-business
 format: analysis
@@ -37,15 +37,15 @@ The difference isn't luck. It's where the revenue is coming from.
 
 ## Corporate wellness is a leaky bucket right now
 
-Mind Gym's numbers are a canary in the coal mine for anyone whose business leans heavily on B2B or employer-funded wellness contracts. When companies tighten HR budgets, your invoice is one of the first things that disappears from a spreadsheet. That's not a critique of the model — it's a structural vulnerability worth understanding.
+Mind Gym's numbers are a canary in the coal mine for anyone whose business leans heavily on B2B or employer-funded wellness contracts. When companies tighten HR budgets, your invoice is one of the first things that disappears from a spreadsheet. That's not a critique of the model: it's a structural vulnerability worth understanding.
 
 Meanwhile, the boutique operators scaling hard are betting on something more durable: direct consumer loyalty. People who choose to show up, pay out of pocket, and come back aren't doing it because their employer told them to. That's a fundamentally stickier relationship.
 
-Gym membership trend data from Quartz reinforces that the fitness consumer is still active — the audience isn't shrinking. The question is who captures it and how.
+Gym membership trend data from Quartz reinforces that the fitness consumer is still active: the audience isn't shrinking. The question is who captures it and how.
 
 ## Legacy matters more than you think
 
-Here's the part that gets overlooked in expansion conversations: culture compounds. Jazzercise founder Judi Sheppard Missett is being inducted into the 2027 HFA Hall of Fame, a reminder that the brands with the longest runways were built on identity, community, and a coach people trusted. And the fitness world's recent remembrance of Eric Von Frohlich — honored by Athletech News as an innovator, beloved coach, and friend — points to the same truth. The coaches and concepts that last aren't just selling movement. They're selling belonging.
+Here's the part that gets overlooked in expansion conversations: culture compounds. Jazzercise founder Judi Sheppard Missett is being inducted into the 2027 HFA Hall of Fame, a reminder that the brands with the longest runways were built on identity, community, and a coach people trusted. And the fitness world's recent remembrance of Eric Von Frohlich (honored by Athletech News as an innovator, beloved coach, and friend) points to the same truth. The coaches and concepts that last aren't just selling movement. They're selling belonging.
 
 The studios now opening their biggest locations yet didn't get there by accident. They built something people wanted to be part of, then scaled the container.
 
@@ -53,7 +53,7 @@ The studios now opening their biggest locations yet didn't get there by accident
 
 Before you draft your next growth plan, run this two-part audit:
 
-**1. Revenue source check.** What percentage of your revenue depends on corporate contracts, employer stipends, or B2B relationships? If that number makes you nervous given what's happening to Mind Gym, start actively building your direct-to-consumer channel now — not when the contracts dry up.
+**1. Revenue source check.** What percentage of your revenue depends on corporate contracts, employer stipends, or B2B relationships? If that number makes you nervous given what's happening to Mind Gym, start actively building your direct-to-consumer channel now, not when the contracts dry up.
 
 **2. Community depth check.** Could your members describe *why* they train with you, not just *what* they do there? If the answer is no, you have a retention problem disguised as a marketing problem. Fix the culture before you fix the funnel.
 

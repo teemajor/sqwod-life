@@ -5,7 +5,7 @@ counterpart: your-clients-are-tuning-out-here-s-how-to-tune-them-back-in-0908
 title: "Your clients are tuning out. Here's how to tune them back in."
 topic: retention
 newsTake: true
-description: "Three fitness industry signals this week point to the same uncomfortable truth: member experience is the new moat — and most coaches are ignoring it."
+description: "Three fitness industry signals this week point to the same uncomfortable truth: member experience is the new moat, and most coaches are ignoring it."
 pillar: move
 type: method
 format: analysis
@@ -32,9 +32,9 @@ Your clients are living in a world of hyper-personalization and sensory novelty.
 
 ## What's actually happening here
 
-Peloton's new Movement Preferences tool — flagged by Pelobuddy — lets members tell the platform which exercises they want filtered out of class recommendations. That's not a gimmick. That's a company saying: *we'd rather show you less than lose you to frustration*. Preference over volume.
+Peloton's new Movement Preferences tool (flagged by Pelobuddy) lets members tell the platform which exercises they want filtered out of class recommendations. That's not a gimmick. That's a company saying: *we'd rather show you less than lose you to frustration*. Preference over volume.
 
-The Dubai darkness class flips the usual gym script. No mirrors. No lights. No visual comparison to the person next to you. Khaleej Times frames it as a novel offering, but the coaching logic underneath is serious — remove external noise, force internal focus. Proprioception over performance anxiety.
+The Dubai darkness class flips the usual gym script. No mirrors. No lights. No visual comparison to the person next to you. Khaleej Times frames it as a novel offering, but the coaching logic underneath is serious: remove external noise, force internal focus. Proprioception over performance anxiety.
 
 And Gildan? Apparel recovery signals that people are buying into fitness identity again. They want to *belong* to this. Which means the bar for what belonging feels like just got higher.
 
@@ -46,9 +46,9 @@ You don't need a sensory deprivation room or a recommendation algorithm. You nee
 
 Try this trifecta:
 
-**1. Run a five-question preference check.** Before the next training block starts, ask clients to name one movement they dread, one they love, and one goal they haven't told you yet. Keep it casual — voice note, a message, a paper card. Peloton built a whole feature around this. You can do it with your phone.
+**1. Run a five-question preference check.** Before the next training block starts, ask clients to name one movement they dread, one they love, and one goal they haven't told you yet. Keep it casual: voice note, a message, a paper card. Peloton built a whole feature around this. You can do it with your phone.
 
-**2. Build one 'lights-off' moment per session.** Not literally dark — unless you want to — but a minute where clients close their eyes, drop external cues, and just feel the movement. A slow eccentric, a breathing reset, a balance hold with eyes shut. Force internal attention. The Dubai class isn't weird; it's just brave about something coaches already know works.
+**2. Build one 'lights-off' moment per session.** Not literally dark (unless you want to) but a minute where clients close their eyes, drop external cues, and just feel the movement. A slow eccentric, a breathing reset, a balance hold with eyes shut. Force internal attention. The Dubai class isn't weird; it's just brave about something coaches already know works.
 
 **3. Make the identity visible.** If Gildan's recovery tells us anything, it's that people are investing in looking and feeling like they belong to fitness. Acknowledge progress out loud. Name the work. 'You've owned that hinge pattern for three weeks' costs you nothing and lands harder than a PR board.
 

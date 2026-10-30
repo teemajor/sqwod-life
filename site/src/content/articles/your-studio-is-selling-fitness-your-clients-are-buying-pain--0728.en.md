@@ -5,7 +5,7 @@ counterpart: your-studio-is-selling-fitness-your-clients-are-buying-pain--0728
 title: "Your Studio Is Selling Fitness. Your Clients Are Buying Pain Relief."
 topic: offer-programming
 newsTake: true
-description: "The real reason your retention is suffering — and one movement cue that fixes your positioning overnight."
+description: "The real reason your retention is suffering, and one movement cue that fixes your positioning overnight."
 pillar: move
 type: method
 format: analysis
@@ -30,7 +30,7 @@ tags: []
 
 Here's an uncomfortable truth: most fitness businesses are marketing performance to people who are quietly desperate for recovery.
 
-A brand-new gym just opened in London with its entire identity built around wellness and injury recovery — not PRs, not body transformation, not six-week challenges. Recovery. That's the front door. And it's not alone. Wolfgang Unsöld's work, covered by Trainingsworld, frames movement itself as therapy. Not a metaphor. A methodology.
+A brand-new gym just opened in London with its entire identity built around wellness and injury recovery, not PRs, not body transformation, not six-week challenges. Recovery. That's the front door. And it's not alone. Wolfgang Unsöld's work, covered by Trainingsworld, frames movement itself as therapy. Not a metaphor. A methodology.
 
 Meanwhile, the mainstream fitness industry is still selling harder, faster, more.
 
@@ -38,11 +38,11 @@ There's a gap there. A real one. And your clients are living in it.
 
 ## What's Actually Happening in Your Sessions
 
-Fitness coach Dan Go told Hindustan Times that one single movement — addressing the damage from years of sitting — "saved his lower back." One movement. Not a program overhaul. Not a new modality. A targeted, specific fix for a specific, universal problem.
+Fitness coach Dan Go told Hindustan Times that one single movement, addressing the damage from years of sitting, "saved his lower back." One movement. Not a program overhaul. Not a new modality. A targeted, specific fix for a specific, universal problem.
 
-Your clients sit all day. They come to you carrying that damage. And the number one thing quietly killing your retention isn't your programming — it's that clients don't feel *better* fast enough to stay.
+Your clients sit all day. They come to you carrying that damage. And the number one thing quietly killing your retention isn't your programming: it's that clients don't feel *better* fast enough to stay.
 
-This is also a business model problem, not just a coaching one. Athletech News recently spotlighted an LA Pilates studio that, instead of franchising like its competitors, chose to scale its *instructors*. The insight buried in that story: the product isn't the class. The product is the quality of the human delivering it. Retention lives in that relationship and in clients feeling genuinely helped — not just worked.
+This is also a business model problem, not just a coaching one. Athletech News recently spotlighted an LA Pilates studio that, instead of franchising like its competitors, chose to scale its *instructors*. The insight buried in that story: the product isn't the class. The product is the quality of the human delivering it. Retention lives in that relationship and in clients feeling genuinely helped, not just worked.
 
 The studios winning right now have figured out that pain relief is the hook, and performance is the upsell.
 
@@ -50,9 +50,9 @@ The studios winning right now have figured out that pain relief is the hook, and
 
 Two moves. One for the floor, one for your marketing.
 
-**On the floor:** Borrow Dan Go's framework. At the start of every intake or goal-setting conversation, ask: *"What does your body feel like at the end of a normal workday?"* Not *"What are your goals?"* That question opens the pain-relief door. It tells you exactly what quick win will hook a client for life. Then program one movement — just one — that addresses it in the first session. Let them feel the difference before they've even broken a sweat.
+**On the floor:** Borrow Dan Go's framework. At the start of every intake or goal-setting conversation, ask: *"What does your body feel like at the end of a normal workday?"* Not *"What are your goals?"* That question opens the pain-relief door. It tells you exactly what quick win will hook a client for life. Then program one movement (just one) that addresses it in the first session. Let them feel the difference before they've even broken a sweat.
 
-**In your messaging:** Stop leading with transformation. Lead with relief. The London gym isn't promising a six-pack on its signage — it's promising recovery from injury. That's not a soft sell. That's a precise sell to a massive, underserved audience.
+**In your messaging:** Stop leading with transformation. Lead with relief. The London gym isn't promising a six-pack on its signage: it's promising recovery from injury. That's not a soft sell. That's a precise sell to a massive, underserved audience.
 
 Luxphy's performance-based profit recovery model, covered by The Manila Times in an ecommerce context, actually maps cleanly here: find where value is leaking, recover it on a performance basis. Your version? Find where clients are dropping off (usually weeks two through six, when novelty fades and soreness peaks) and insert a recovery-focused touchpoint right there. A check-in. A deload session. A single corrective movement with a simple explanation of why it matters.
 
@@ -60,6 +60,6 @@ Luxphy's performance-based profit recovery model, covered by The Manila Times in
 
 Movement is therapy. That's not soft. That's your strongest sales argument.
 
-The coaches scaling right now aren't the ones with the hardest programming. They're the ones whose clients walk out of every session feeling measurably better than they walked in — and who can *articulate* why that happened.
+The coaches scaling right now aren't the ones with the hardest programming. They're the ones whose clients walk out of every session feeling measurably better than they walked in, and who can *articulate* why that happened.
 
 That's your edge. Use it.

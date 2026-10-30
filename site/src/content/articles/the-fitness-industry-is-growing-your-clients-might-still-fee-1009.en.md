@@ -5,7 +5,7 @@ counterpart: the-fitness-industry-is-growing-your-clients-might-still-fee-1009
 title: "The Fitness Industry Is Growing. Your Clients Might Still Feel Left Out."
 topic: strategy
 newsTake: true
-description: "New studios, big valuations, and cancer-exercise grants all point to the same blind spot coaches keep missing — and here's how to fix it."
+description: "New studios, big valuations, and cancer-exercise grants all point to the same blind spot coaches keep missing, and here's how to fix it."
 pillar: move
 type: method
 format: analysis
@@ -31,13 +31,13 @@ tags: []
 
 A new yoga and Pilates studio just opened in Toms River (Shore News Network). Vuori is sitting on a $5.5 billion valuation and eyeing global expansion (Fast Company). Hyperice is selling recovery tools beloved by pro athletes at Prime Day prices (Athletech News). By every surface metric, the fitness industry is booming.
 
-And yet: the Health & Fitness Association just announced ten grants with the American Cancer Society specifically to expand exercise access for people affected by cancer. Athletech News flags that the longevity movement — arguably the hottest trend in wellness right now — is structurally leaving women behind. A coach in Mahopac is literally *running* to raise money because the need in his community outpaces what the market is providing (Halston Media Group).
+And yet: the Health & Fitness Association just announced ten grants with the American Cancer Society specifically to expand exercise access for people affected by cancer. Athletech News flags that the longevity movement, arguably the hottest trend in wellness right now, is structurally leaving women behind. A coach in Mahopac is literally *running* to raise money because the need in his community outpaces what the market is providing (Halston Media Group).
 
 Those two realities exist at the same time. The industry is scaling up. The gap between who fitness serves and who it *should* serve is scaling right alongside it.
 
 ## What's actually happening here
 
-The Vuori story is instructive. Fast Company describes their next move as a "three-way stretch" — apparel, community, and international reach. That's a brand betting that fitness identity sells. And it does. To a specific, already-converted buyer.
+The Vuori story is instructive. Fast Company describes their next move as a "three-way stretch": apparel, community, and international reach. That's a brand betting that fitness identity sells. And it does. To a specific, already-converted buyer.
 
 The HFA grants tell the other story. When a major association needs to fund ten separate programs just to get exercise in front of people dealing with cancer, that's a signal that mainstream fitness infrastructure isn't reaching them organically. It's not a charity story. It's a market failure wearing a charity hat.
 
@@ -49,7 +49,7 @@ You don't need a grant or a $5.5 billion war chest. You need one underserved coh
 
 Here's the framework coaches are already using:
 
-**1. Name the gap in your market.** Is it post-cancer clients? Perimenopausal women who've been handed a longevity plan designed for a 45-year-old man? Residents of a town that just got its first studio and has no idea where to start? The Mahopac coach didn't wait for the industry to catch up — he picked a cause and moved.
+**1. Name the gap in your market.** Is it post-cancer clients? Perimenopausal women who've been handed a longevity plan designed for a 45-year-old man? Residents of a town that just got its first studio and has no idea where to start? The Mahopac coach didn't wait for the industry to catch up: he picked a cause and moved.
 
 **2. Build one entry-point session.** Not a full program. One low-barrier, low-cost (or free) session designed for whoever you've identified. Shine Studios opening in Toms River is a reminder that proximity and approachability matter enormously. Be the option that doesn't feel intimidating.
 
@@ -57,4 +57,4 @@ Here's the framework coaches are already using:
 
 The industry will keep growing. The valuations will climb. The boutique studios will keep opening in well-resourced zip codes.
 
-Your job — and your actual competitive edge — is showing up where the growth hasn't reached yet.
+Your job, and your actual competitive edge, is showing up where the growth hasn't reached yet.

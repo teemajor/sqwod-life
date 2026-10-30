@@ -2,10 +2,10 @@
 urlSlug: your-gym-s-next-threat-isn-t-a-competitor-it-s-friction-0821
 lang: "en"
 counterpart: your-gym-s-next-threat-isn-t-a-competitor-it-s-friction-0821
-title: "Your gym's next threat isn't a competitor — it's friction"
+title: "Your gym's next threat isn't a competitor: it's friction"
 topic: strategy
 newsTake: true
-description: "From planning battles to cardiac scares, this week's fitness news reveals the hidden friction points quietly killing studio growth — and exactly what to do about them."
+description: "From planning battles to cardiac scares, this week's fitness news reveals the hidden friction points quietly killing studio growth, and exactly what to do about them."
 pillar: build
 type: marketing
 format: analysis
@@ -29,7 +29,7 @@ tags: []
 
 ## The week proved that momentum kills you slower than a hard stop
 
-A fitness coach died during a HYROX event, raising urgent questions about cardiac screening protocols, per Inshorts. A Coalville gym owner watched a £1 million expansion get shot down by local authorities, reported Leicester Mercury. Meanwhile, Edinburgh Leisure quietly launched a pay-as-you-go gym inside a city high school — no fanfare, just access.
+A fitness coach died during a HYROX event, raising urgent questions about cardiac screening protocols, per Inshorts. A Coalville gym owner watched a £1 million expansion get shot down by local authorities, reported Leicester Mercury. Meanwhile, Edinburgh Leisure quietly launched a pay-as-you-go gym inside a city high school, no fanfare, just access.
 
 Three different stories. One shared villain: **friction**. The friction of unprepared bodies. The friction of planning systems that don't move at the speed of your ambition. The friction of pricing models that lock people out before they ever walk in.
 
@@ -37,11 +37,11 @@ If you're a studio owner or coach reading this, at least one of these is already
 
 ## What's really happening out there
 
-The market is expanding fast. India's coaching industry — valued at $14.8 billion according to The Economic Times — just landed a major 'vidyapeeth' institutional partner. Boutique studio Torque opened in North Platte, per KNOP News 2. Supplement brand LAC acquired a premium French pine bark extract to push further into East Asia, the Middle East and Africa, via Media Outreach.
+The market is expanding fast. India's coaching industry, valued at $14.8 billion according to The Economic Times, just landed a major 'vidyapeeth' institutional partner. Boutique studio Torque opened in North Platte, per KNOP News 2. Supplement brand LAC acquired a premium French pine bark extract to push further into East Asia, the Middle East and Africa, via Media Outreach.
 
 Growth is everywhere. But so is exposure.
 
-When your market grows, your margins for error shrink. More clients means more liability. More locations means more regulatory surface area. More products means more supply chain dependency. The coaches and owners winning right now aren't the ones moving fastest — they're the ones who've **removed friction before it removes them**.
+When your market grows, your margins for error shrink. More clients means more liability. More locations means more regulatory surface area. More products means more supply chain dependency. The coaches and owners winning right now aren't the ones moving fastest: they're the ones who've **removed friction before it removes them**.
 
 The HYROX tragedy isn't just a cautionary headline. It's a direct question to every coach running high-intensity programming: do you have a cardiac screening protocol, or are you assuming the waiver covers you? The Coalville story asks a different but equally sharp question: do you have a Plan B when your physical expansion gets blocked?
 
@@ -49,13 +49,13 @@ The HYROX tragedy isn't just a cautionary headline. It's a direct question to ev
 
 You don't need a consultant. You need thirty minutes and brutal honesty.
 
-**1. Participant safety protocol — written, not assumed.**
+**1. Participant safety protocol: written, not assumed.**
 If you run any high-intensity format, write down exactly what pre-participation screening looks like. Who checks it. What triggers a conversation. What your emergency response steps are. The HYROX story, per Inshorts, is a reminder that "they signed a waiver" is not a safety plan.
 
-**2. Expansion path — physical and digital.**
-The Coalville owner had one plan: a £1 million physical build. When authorities said no, there was no pivot. Edinburgh Leisure's pay-as-you-go high school gym shows a smarter model — low-infrastructure, high-access, community-embedded. If your growth depends entirely on one building or one approval, you don't have a strategy, you have a wish.
+**2. Expansion path: physical and digital.**
+The Coalville owner had one plan: a £1 million physical build. When authorities said no, there was no pivot. Edinburgh Leisure's pay-as-you-go high school gym shows a smarter model: low-infrastructure, high-access, community-embedded. If your growth depends entirely on one building or one approval, you don't have a strategy, you have a wish.
 
-**3. Pricing friction — are you locking people out?**
-Pay-as-you-go isn't charity. It's a customer acquisition tool. Edinburgh Leisure isn't giving fitness away — they're removing the commitment barrier that stops first-timers from becoming regulars. If your lowest-cost entry point requires a contract, ask yourself who you're actually protecting.
+**3. Pricing friction: are you locking people out?**
+Pay-as-you-go isn't charity. It's a customer acquisition tool. Edinburgh Leisure isn't giving fitness away: they're removing the commitment barrier that stops first-timers from becoming regulars. If your lowest-cost entry point requires a contract, ask yourself who you're actually protecting.
 
-The fitness industry is building momentum globally. The operators who'll be standing in two years aren't the loudest ones right now — they're the ones quietly removing every reason a client, a regulator, or a medical emergency has to stop them.
+The fitness industry is building momentum globally. The operators who'll be standing in two years aren't the loudest ones right now: they're the ones quietly removing every reason a client, a regulator, or a medical emergency has to stop them.

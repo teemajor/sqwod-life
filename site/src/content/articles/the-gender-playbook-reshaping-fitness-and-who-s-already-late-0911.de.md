@@ -5,7 +5,7 @@ counterpart: the-gender-playbook-reshaping-fitness-and-who-s-already-late-0911
 title: "The Gender Playbook Reshaping Fitness (And Who's Already Late)"
 seoTitle: "Studios für Frauen: Warum die Fitnessbranche umdenkt (2026)"
 topic: strategy
-description: "From Tokyo to Mumbai, capital and operators are rushing toward women-first fitness — here's what that means for everyone still running a general-population gym."
+description: "From Tokyo to Mumbai, capital and operators are rushing toward women-first fitness: here's what that means for everyone still running a general-population gym."
 pillar: signal
 type: trends
 format: analysis
@@ -37,17 +37,17 @@ Meanwhile, the operators who aren't panicking are the ones who stopped trying to
 
 Three funding stories landed this week, and they rhyme.
 
-In Japan, MIRROR FIT raised $1.6M to scale a women's beauty gym concept toward 1,000 locations, per Dealroom. Not a women's *fitness* gym — a women's beauty gym. The category is getting more specific, not less.
+In Japan, MIRROR FIT raised $1.6M to scale a women's beauty gym concept toward 1,000 locations, per Dealroom. Not a women's *fitness* gym, a women's beauty gym. The category is getting more specific, not less.
 
 In India, Nua closed a $50M Series C to grow its women's wellness business across the country, TechStory reports. Fifty million dollars. Series C. Women's wellness. In a market that traditional fitness operators have chronically underserved.
 
 Then there's the quiet stuff: all inclusive Fitness just brought in Dr. Jobst Müller-Trimbusch as CFO, per body LIFE. A serious financial hire signals serious scaling ambitions. You don't recruit a CFO to coast.
 
-The pattern isn't subtle. Capital is concentrating where community is concentrated — and right now, women-first concepts are building the tighter communities.
+The pattern isn't subtle. Capital is concentrating where community is concentrated, and right now, women-first concepts are building the tighter communities.
 
 ## It's Not Just Commercial Gyms Feeling It
 
-Even outside the private sector, the wellness conversation is getting intentional. A golf tournament in Albemarle County raised $58K specifically for officer wellness, WVIR reports. Public-sector wellness funding, raised through a community event. The point isn't golf — it's that *targeted* wellness initiatives (specific beneficiary, specific need) are unlocking dollars that general wellness messaging never could.
+Even outside the private sector, the wellness conversation is getting intentional. A golf tournament in Albemarle County raised $58K specifically for officer wellness, WVIR reports. Public-sector wellness funding, raised through a community event. The point isn't golf: it's that *targeted* wellness initiatives (specific beneficiary, specific need) are unlocking dollars that general wellness messaging never could.
 
 Specificity converts. Vagueness costs you the check.
 
@@ -59,7 +59,7 @@ Three moves worth considering right now:
 
 **1. Audit your actual member base.** If women represent a significant share of your members but your programming, marketing, and space design still default to a generic (read: male-coded) experience, you have a retention leak you're not measuring.
 
-**2. Study the MIRROR FIT thesis.** A beauty gym concept scaling toward 1,000 stores in Japan isn't a quirk — it's proof that fitness adjacent to other identity-driven services (beauty, wellness, community) is a stickier product. What's the equivalent adjacency in your market?
+**2. Study the MIRROR FIT thesis.** A beauty gym concept scaling toward 1,000 stores in Japan isn't a quirk: it's proof that fitness adjacent to other identity-driven services (beauty, wellness, community) is a stickier product. What's the equivalent adjacency in your market?
 
 **3. Make your next hire or partnership announcement specific.** The DSSV welcomed a new team member this week. Body LIFE announced a CFO. Both are small signals, but they're being communicated because specificity builds credibility. Your audience notices who you're bringing in and what it says about where you're going.
 

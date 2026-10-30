@@ -2,10 +2,10 @@
 urlSlug: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
 lang: "en"
 counterpart: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
-title: "The Fitness Boom Is Real — But Who Gets to Keep the Money?"
+title: "The Fitness Boom Is Real, But Who Gets to Keep the Money?"
 topic: strategy
 newsTake: true
-description: "Membership is up across the board, but the winners are splitting into two very different camps — here's which one you want to be in."
+description: "Membership is up across the board, but the winners are splitting into two very different camps: here's which one you want to be in."
 pillar: build
 type: marketing
 format: analysis
@@ -33,19 +33,19 @@ Here's the headline nobody's saying out loud: 86% of gym and studio owners grew 
 
 So why does it feel so hard?
 
-Because growth and margin are not the same thing. Filling seats is one game. Building something defensible — a brand people would actually miss — is another. And right now, the industry is quietly splitting into two camps: operators chasing volume, and operators chasing meaning. The ones chasing meaning are making smarter moves.
+Because growth and margin are not the same thing. Filling seats is one game. Building something defensible, a brand people would actually miss, is another. And right now, the industry is quietly splitting into two camps: operators chasing volume, and operators chasing meaning. The ones chasing meaning are making smarter moves.
 
 ## The Market Is Telling You Something
 
 Look at what's actually happening this week.
 
-FIT EASY just reported membership climbing to 3.11 million, per TipRanks — a volume play, scaling hard on access and affordability. Gold's Gym is rebuilding in Southern California with a 15-location franchise deal, according to Athletech News — legacy brand, big footprint, betting on name recognition.
+FIT EASY just reported membership climbing to 3.11 million, per TipRanks, a volume play, scaling hard on access and affordability. Gold's Gym is rebuilding in Southern California with a 15-location franchise deal, according to Athletech News: legacy brand, big footprint, betting on name recognition.
 
 Both are valid. Both are expensive to copy.
 
-Then look at the other end. Orangetheory and Beachbody veterans just launched a studio built around intentional rest — recovery, stillness, the anti-grind — reported by Athletech News. A London massage brand is being held up by Business Insider Africa as a signal of something larger happening in the global wellness economy. And fragrance house Vyrao, built around well-being, just got acquired by Tresalis in their debut beauty buy, per Personal Care Insights.
+Then look at the other end. Orangetheory and Beachbody veterans just launched a studio built around intentional rest (recovery, stillness, the anti-grind) reported by Athletech News. A London massage brand is being held up by Business Insider Africa as a signal of something larger happening in the global wellness economy. And fragrance house Vyrao, built around well-being, just got acquired by Tresalis in their debut beauty buy, per Personal Care Insights.
 
-Notice the pattern. Serious operators — people who've already won the volume game — are pivoting toward *feeling*. Recovery. Ritual. Rest. The stuff that's harder to commoditize, harder to discount, and harder to cancel.
+Notice the pattern. Serious operators, people who've already won the volume game, are pivoting toward *feeling*. Recovery. Ritual. Rest. The stuff that's harder to commoditize, harder to discount, and harder to cancel.
 
 They're not abandoning growth. They're changing what they're selling.
 
@@ -53,16 +53,16 @@ They're not abandoning growth. They're changing what they're selling.
 
 You don't need a fragrance line or a London location. But you do need to decide what business you're actually in.
 
-If you're competing on access — price, convenience, sheer number of locations — then the FIT EASY and Gold's playbook is your benchmark. Stack locations, streamline operations, and make switching costs low for everyone except your most loyal members.
+If you're competing on access (price, convenience, sheer number of locations) then the FIT EASY and Gold's playbook is your benchmark. Stack locations, streamline operations, and make switching costs low for everyone except your most loyal members.
 
 If you're competing on experience, here's the concrete thing you can do this week:
 
-**Audit your member journey for moments of feeling.** Not features — feelings. Walk in your front door like a first-timer. What do they smell? What do they hear? What's the first human interaction? Where does it feel transactional instead of intentional?
+**Audit your member journey for moments of feeling.** Not features: feelings. Walk in your front door like a first-timer. What do they smell? What do they hear? What's the first human interaction? Where does it feel transactional instead of intentional?
 
 The intentional rest studio founders didn't invent recovery. They packaged it into an emotion. The London massage brand didn't reinvent touch. They built a mood around it. Vyrao didn't discover aromatherapy. They made it feel like identity.
 
 Your studio already has these moments. They're just undesigned.
 
-Find two of them. Make them deliberate. Tell your members the story behind them. That's not a wellness rebrand — that's just smart retention, and it costs you almost nothing.
+Find two of them. Make them deliberate. Tell your members the story behind them. That's not a wellness rebrand: that's just smart retention, and it costs you almost nothing.
 
 The membership boom won't last forever. The studios that make people *feel* something will outlast the ones that just make people sweat.
