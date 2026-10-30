@@ -50,7 +50,7 @@ cons:
   - "Geschmack variiert stark je Sorte; Preisvorteil hängt an Rabattcodes"
 whoFor:
   buy: "Du (oder deine Kund:innen) willst ein zertifiziertes, proteinreiches Alltags-Whey zum zuverlässig niedrigsten Preis pro kg."
-  skip: "Du bist laktoseempfindlich oder willst die schlanksten Makros: nimm das Impact Whey Isolate."
+  skip: "Du bist laktoseempfindlich oder willst die schlanksten Makros: Nimm das Impact Whey Isolate."
 asset:
   type: images
   images:
@@ -61,4 +61,4 @@ tags: ["supplements", "protein", "whey"]
 
 Impact Whey ist das Standard-Preis-Leistungs-Protein: ein Whey-Konzentrat für rund 30 €/kg mit 50+ Sorten, Informed-Choice- und Informed-Protein-Zertifizierung und einem tiefen Pool starker Bewertungen. Für Coaches, die ein bezahlbares, getestetes Alltags-Protein empfehlen, ist es die naheliegende Wahl.
 
-Zwei Vorbehalte bleiben ehrlich. Es ist ein Konzentrat, trägt also mehr Laktose und Kohlenhydrate als ein Isolat, und der Geschmack schwankt je Sorte. Und der Preisvorteil hängt an Myproteins nahezu ständigen Rabattcodes: zum vollen UVP ist es deutlich weniger überzeugend.
+Zwei Vorbehalte bleiben ehrlich. Es ist ein Konzentrat, trägt also mehr Laktose und Kohlenhydrate als ein Isolat, und der Geschmack schwankt je Sorte. Und der Preisvorteil hängt an Myproteins nahezu ständigen Rabattcodes: Zum vollen UVP ist es deutlich weniger überzeugend.

@@ -60,6 +60,6 @@ asset:
 tags: ["apparel", "yoga", "leggings"]
 ---
 
-Alos High-Waist Airlift ist die Legging, die man meint, wenn man „Alo" sagt: ein kompressiver, doppellagiger Bund, ein formender Sitz und ein langlebiger, doppelt gefütterter Stoff mit dem dezenten Schimmer, der von Studio bis Straße funktioniert. Unabhängige Praxis-Tests sehen sie bei 4,2/5, und sie fällt größengetreu aus: für Kund:innen, die eine hochwertige Optik mit Haltbarkeit wollen, ist sie das Ankerstück im Sortiment.
+Alos High-Waist Airlift ist die Legging, die man meint, wenn man „Alo" sagt: ein kompressiver, doppellagiger Bund, ein formender Sitz und ein langlebiger, doppelt gefütterter Stoff mit dem dezenten Schimmer, der von Studio bis Straße funktioniert. Unabhängige Praxis-Tests sehen sie bei 4,2/5, und sie fällt größengetreu aus: Für Kund:innen, die eine hochwertige Optik mit Haltbarkeit wollen, ist sie das Ankerstück im Sortiment.
 
 Zwei Dinge bremsen sie. Es ist ein Premium-Kauf (128–134 $) ohne Taschen und mit nur moderater Atmungsaktivität, also nicht die Hot-Yoga-Wahl. Und der Service-Ruf der Marke fällt auf unabhängigen Plattformen niedrig aus: getrennt vom Produkt zu betrachten. Für Deutschland betreibt Alo einen lokalisierten en-de-Store (Live-EUR-Preis dort prüfen), doch Direktbestellungen tragen weiterhin Zoll und einen transatlantischen Retourenweg.

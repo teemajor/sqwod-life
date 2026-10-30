@@ -26,7 +26,7 @@ hero:
 tags: ["ki", "prompts", "automatisierung", "how-to"]
 ---
 
-Die Coaches, die mit KI gewinnen, schreiben keine Romane an einen Chatbot: sie nutzen eine Handvoll wiederholbarer Prompts, die aus einer Stunde Admin ein paar Minuten machen. Das Muster, das alle guten teilen (und das die viralen „frag einfach ChatGPT"-Posts auslassen): **Präzision rein, Sicherheit an.** Vage Prompts liefern generische, manchmal falsche Antworten; die hier sind parametrisiert, füll die `[Klammern]` mit den echten Daten deiner Kund:innen und deiner eigenen Stimme.
+Die Coaches, die mit KI gewinnen, schreiben keine Romane an einen Chatbot: Sie nutzen eine Handvoll wiederholbarer Prompts, die aus einer Stunde Admin ein paar Minuten machen. Das Muster, das alle guten teilen (und das die viralen „frag einfach ChatGPT"-Posts auslassen): **Präzision rein, Sicherheit an.** Vage Prompts liefern generische, manchmal falsche Antworten; die hier sind parametrisiert, füll die `[Klammern]` mit den echten Daten deiner Kund:innen und deiner eigenen Stimme.
 
 Eine Regel steht über allen, also lies sie zuerst:
 
@@ -39,7 +39,7 @@ Du bist mein Co-Trainer. Entwirf einen [4]-Wochen-Trainingsblock und HALT dann a
 frag mich nach Änderungen, bevor du ausbaust.
 KUND:IN: [Alter, Trainingsalter, Ziel, Tage/Woche, Dauer, Equipment, Verletzungen].
 REGELN: progressive Belastung Woche für Woche, ein Deload, Compound zuerst. Liste
-Sätze × Wdh. × RIR und Pausen. Erfinde KEINE Maxima: nutz die Zahlen, die ich dir
+Sätze × Wdh. × RIR und Pausen. Erfinde KEINE Maxima: Nutz die Zahlen, die ich dir
 gebe: [letzte Werte]. Markiere alles, was fachliches Urteil braucht.
 ```
 *Warum es funktioniert: Das „halt an und frag mich" macht aus einer Textwand einen Entwurf, den du wirklich formst.*
@@ -73,7 +73,7 @@ sollte, (3) Red Flags, bei denen ich weiterverweise oder erst ärztliche Freigab
 brauche. Sei vorsichtig bei der Sicherheit; sag, wenn etwas außerhalb des Coach-
 Rahmens liegt.
 ```
-*Hier verdient die Leitplanke ihr Geld: das Modell soll Risiken zeigen, nicht überspielen.*
+*Hier verdient die Leitplanke ihr Geld: Das Modell soll Risiken zeigen, nicht überspielen.*
 
 ### 5. Eine Einheit → eine Woche Content (die Repurposing-Maschine für Creator)
 
@@ -87,4 +87,4 @@ muss in meinem Transkript stehen, keine Stats erfinden. Triff meinen Ton: [ ].
 
 Diese fünf decken ~80% der Routinearbeit ab: Programming, Bindung, Content, Onboarding, Distribution. Du brauchst kein Deck mit 50; du brauchst fünf, die du jede Woche wirklich nutzt, mit deinem Urteil obendrauf.
 
-Speichere sie, pass sie an deine Stimme an und bau die fünf in deinen Wochen-Workflow ein: der Hebel liegt darin, sie konsequent zu nutzen, nicht mehr zu sammeln.
+Speichere sie, pass sie an deine Stimme an und bau die fünf in deinen Wochen-Workflow ein: Der Hebel liegt darin, sie konsequent zu nutzen, nicht mehr zu sammeln.

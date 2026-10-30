@@ -29,7 +29,7 @@ tags: []
 
 ## Das Problem: Die Mitte bricht weg
 
-JCPenney macht gerade etwas Bemerkenswertes, und es hat direkt mit deinem Studio zu tun. Laut *Marketing Dive* parodiert die Kaufhauskette Off-Price-Retailer mit einer Wellness-Kampagne. Die Botschaft dahinter: Wellness ist längst kein Premium-Signal mehr. Wenn selbst ein angeschlagenes Kaufhaus Wellness als Massenware vermarktet, dann ist die Mitte des Marktes unter Druck. Wer nicht klar positioniert ist (oben oder unten, nicht irgendwo dazwischen) verliert.
+JCPenney macht gerade etwas Bemerkenswertes, und es hat direkt mit deinem Studio zu tun. Laut *Marketing Dive* parodiert die Kaufhauskette Off-Price-Retailer mit einer Wellness-Kampagne. Die Botschaft dahinter: Wellness ist längst kein Premium-Signal mehr. Wenn selbst ein angeschlagenes Kaufhaus Wellness als Massenware vermarktet, dann ist die Mitte des Marktes unter Druck. Wer nicht klar positioniert ist (oben oder unten, nicht irgendwo dazwischen), verliert.
 
 Gleichzeitig meldet der australische HealthCo Healthcare & Wellness REIT laut *Kalkine* 100 % Mieteingang und ein Portfolio im Wert von 1,34 Milliarden Dollar. Investors Fazit: Gesundheitsimmobilien sind stabil, wenn das Konzept stimmt. Das Kapital folgt Klarheit, nicht Mittelmaß.
 
@@ -49,7 +49,7 @@ Drei Moves, keine Ausreden:
 
 - **Positionierungs-Check:** Schreib in einem Satz auf, warum jemand zu dir kommt und nicht zu deinem günstigsten Mitbewerber. Wenn dieser Satz mit "weil wir eine tolle Gemeinschaft haben" endet, ist das zu weich. Was ist dein messbares Ergebnis für den Kunden?
 
-- **EMS ernst nehmen:** Auch wenn du kein EMS-Studio bist: analysiere, welche Zielgruppe BODY20 mit dem Tone-Gruppenformat anspricht. Überschneidet sie sich mit deiner? Wenn ja, was ist deine Antwort?
+- **EMS ernst nehmen:** Auch wenn du kein EMS-Studio bist: Analysiere, welche Zielgruppe BODY20 mit dem Tone-Gruppenformat anspricht. Überschneidet sie sich mit deiner? Wenn ja, was ist deine Antwort?
 
 - **Supplement-Gespräch führen:** Frag deine fünf aktivsten Mitglieder diese Woche, was sie aktuell nehmen und wo sie es kaufen. Die Antwort sagt dir mehr über dein Upsell-Potenzial als jede Marktanalyse.
 

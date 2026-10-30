@@ -53,7 +53,7 @@ cons:
   - "Wenig UNABHÄNGIGE Evidenz: stützende Studien firmennah; kein Pulver ersetzt Gemüse"
 whoFor:
   buy: "Du bist busy, isst nicht zuverlässig abwechslungsreiches Gemüse, willst ein dopinggetestetes All-in-one, und der Preis ist kein Hindernis."
-  skip: "Du hast ein Budget oder isst bereits ausgewogen: gute Ernährung plus ein günstiges NSF-Multivitamin deckt das meiste ab."
+  skip: "Du hast ein Budget oder isst bereits ausgewogen: Gute Ernährung plus ein günstiges NSF-Multivitamin deckt das meiste ab."
 asset:
   type: images
   images:
@@ -64,4 +64,4 @@ tags: ["supplements", "greens", "nutrition"]
 
 AG1 ist das Greens-Pulver, das ein Marketing-Imperium baute, und die Herstellung ist tatsächlich seriös: ~75 Zutaten, eine echte Probiotika-Dosis und eine NSF-Certified-for-Sport-Prüfung, die zählt, wenn deine Kund:innen getestet werden. Als bequeme tägliche Absicherung für jemanden, der sein Gemüse nicht isst, tut es, was es verspricht.
 
-Skeptisch bleiben wir bei Preis und Evidenz. Mit ~87 €/Monat kostet es ein Vielfaches der Regal-Konkurrenz, der Proprietary Blend verbirgt die Dosen pro Zutat, und die unabhängige Evidenz ist dünn: die meisten stützenden Daten sind firmenfinanziert, und kein Pulver ersetzt echtes Gemüse. Gutes Produkt, ehrliche Vorbehalte: kaufe es für Bequemlichkeit und Prüf-Sicherheit, nicht für belegten Mehrwert.
+Skeptisch bleiben wir bei Preis und Evidenz. Mit ~87 €/Monat kostet es ein Vielfaches der Regal-Konkurrenz, der Proprietary Blend verbirgt die Dosen pro Zutat, und die unabhängige Evidenz ist dünn: Die meisten stützenden Daten sind firmenfinanziert, und kein Pulver ersetzt echtes Gemüse. Gutes Produkt, ehrliche Vorbehalte: kaufe es für Bequemlichkeit und Prüf-Sicherheit, nicht für belegten Mehrwert.

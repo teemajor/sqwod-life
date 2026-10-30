@@ -50,8 +50,8 @@ cons:
   - "Sperrige Stiefel brauchen Platz, und die Steuereinheit hat kein Display"
   - "Studienlage zum Recovery-Nutzen von Kompressionsstiefeln ist gemischt und dünn, kein Wundermittel"
 whoFor:
-  buy: "Du bist Läufer, Radfahrer oder trainierst sehr oft und nutzt das Gerät wirklich regelmäßig: dann fühlen sich deine Beine am nächsten Tag frischer an."
-  skip: "Du trainierst nur gelegentlich oder achtest aufs Budget und erwartest einen belegten, messbaren Leistungsschub: dann lass es."
+  buy: "Du bist Läufer, Radfahrer oder trainierst sehr oft und nutzt das Gerät wirklich regelmäßig: Dann fühlen sich deine Beine am nächsten Tag frischer an."
+  skip: "Du trainierst nur gelegentlich oder achtest aufs Budget und erwartest einen belegten, messbaren Leistungsschub: Dann lass es."
 asset:
   type: images
   images:
@@ -62,4 +62,4 @@ tags: ["recovery", "compression", "hyperice"]
 
 Der Normatec 3 ist Hyperices Flaggschiff unter den Kompressionsstiefeln und überzeugt vor allem bei der Hardware: langlebige Materialien, bequemer Sitz, kabelloser Betrieb mit integriertem Akku und eine sanfte, massageartige Kompression über sieben Stufen samt ZoneBoost. Die Nutzer lieben ihn: Best Buy (4,8/5, 314 Bewertungen) und REI (4,7/5, 418 Bewertungen) liegen fast am oberen Ende, und mit der Hyperice-App startest du eigene Routinen im Handumdrehen.
 
-Der Haken sind Preis und Beleg. Mit einer UVP um 999 € (im Handel je nach Shop etwa 719-899 €) ist er eine echte Investition, und die Studienlage, dass Kompressionsstiefel die Regeneration spürbar beschleunigen, ist gemischt und dünn: der Nutzen ist meist das subjektive Gefühl „frischerer Beine", nicht messbare Leistung. Für alle, die ihn oft nutzen, ist er ein richtig gutes Tool: sieh ihn aber als Komfort- und Routine-Helfer, nicht als garantiertes Recovery-Upgrade.
+Der Haken sind Preis und Beleg. Mit einer UVP um 999 € (im Handel je nach Shop etwa 719-899 €) ist er eine echte Investition, und die Studienlage, dass Kompressionsstiefel die Regeneration spürbar beschleunigen, ist gemischt und dünn: Der Nutzen ist meist das subjektive Gefühl „frischerer Beine", nicht messbare Leistung. Für alle, die ihn oft nutzen, ist er ein richtig gutes Tool: Sieh ihn aber als Komfort- und Routine-Helfer, nicht als garantiertes Recovery-Upgrade.

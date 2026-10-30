@@ -63,4 +63,4 @@ tags: ["sleep", "recovery", "sleep-tech"]
 
 The Eight Sleep Pod 5 (top trim: Pod 5 Ultra) is the successor to the Pod 4, and it pushes the same core idea further: automatic, dual-zone bed temperature that tracks heart rate, HRV, respiration and sleep stages without a wearable. New this generation are a hydro-powered "blanket" layer for full-body (not just surface) cooling, integrated surround-sound audio, a zero-gravity adjustable base on the Ultra, and predictive health sensing that flags possible illness from overnight anomalies.
 
-It genuinely works (experts rate the effectiveness highly (Sleep Foundation 8.9/10)) but the economics are the story. The base Pod 5 Cover is €3,299 and the Autopilot subscription is required, which is what keeps the value component low even as the effectiveness scores top the field.
+It genuinely works, experts rate the effectiveness highly (Sleep Foundation 8.9/10), but the economics are the story. The base Pod 5 Cover is €3,299 and the Autopilot subscription is required, which is what keeps the value component low even as the effectiveness scores top the field.

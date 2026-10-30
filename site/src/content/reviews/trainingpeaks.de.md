@@ -62,4 +62,4 @@ tags: ["apps", "coaching", "endurance"]
 
 Für Ausdauer-Coaches ist TrainingPeaks der Standard: der Performance Management Chart (Fitness, Ermüdung, Form über TSS/CTL/ATL), strukturierte Workout-Builder und Roster-Tools sind unerreicht, und es liest von 90+ Geräten ein. Eine kostenlose Basic-Stufe senkt die Einstiegshürde.
 
-Der Preis ist Komplexität und Kosten: es belohnt Nutzer:innen, die die Daten lesen können (oder einen Coach haben), und Tester bemängeln die Preis-Leistung bei Unternutzung. Zu beachten: TrainingPeaks wurde Mitte 2026 Berichten zufolge von Garmin übernommen, die Roadmap könnte sich also ändern.
+Der Preis ist Komplexität und Kosten: Es belohnt Nutzer:innen, die die Daten lesen können (oder einen Coach haben), und Tester bemängeln die Preis-Leistung bei Unternutzung. Zu beachten: TrainingPeaks wurde Mitte 2026 Berichten zufolge von Garmin übernommen, die Roadmap könnte sich also ändern.

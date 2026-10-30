@@ -60,4 +60,4 @@ tags: ["apparel", "running", "shoes"]
 
 Der Pegasus ist Nikes Arbeitstier, und der 42 hält die Reihe verlässlich: ein bequemer, langlebiger, geräumiger Neutralschuh, den viele Tester als besten Peg der letzten Jahre bezeichnen. Für lockere Alltags-Kilometer und Kund:innen, die einen vertrauten Namen wollen, liefert er.
 
-Gewöhnlich bleibt er beim Laufgefühl: das durchgehende Air Zoom und die ReactX-Dämpfung wirken eher durchschnittlich als lebendig, weshalb er sich bei entspannten Läufen am wohlsten fühlt. Eine sichere Empfehlung, keine aufregende.
+Gewöhnlich bleibt er beim Laufgefühl: Das durchgehende Air Zoom und die ReactX-Dämpfung wirken eher durchschnittlich als lebendig, weshalb er sich bei entspannten Läufen am wohlsten fühlt. Eine sichere Empfehlung, keine aufregende.

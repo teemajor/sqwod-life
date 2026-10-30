@@ -66,4 +66,4 @@ tags: ["wearables", "smartwatch", "apple-watch"]
 
 Die Apple Watch Series 11 folgt auf die Series 9 (mit der Series 10 dazwischen), und ihr wichtigster Gewinn ist der, den man wirklich spürt: bis zu 24 Stunden Akkulaufzeit, dazu neue Bluthochdruck-Hinweise, ein Sleep Score, ein helleres und robusteres Display und der Sprung von LTE auf 5G. Sie bleibt die beste Allround-Smartwatch, kein Abo, riesiges App-Ökosystem, EKG und jetzt auch Blutdruck-Signale.
 
-Der Haken: Es ist ein iteratives Update. Das Design ist gegenüber der Series 10 kaum verändert, und die meisten Software-Neuerungen erreichen ältere Modelle über watchOS 26: wer also eine Series 9 oder 10 hat, hat wenig Grund zu wechseln. Deshalb ist es die Preis-Leistung, nicht die Hardware, die sie knapp hinter der Spitze hält.
+Der Haken: Es ist ein iteratives Update. Das Design ist gegenüber der Series 10 kaum verändert, und die meisten Software-Neuerungen erreichen ältere Modelle über watchOS 26: Wer also eine Series 9 oder 10 hat, hat wenig Grund zu wechseln. Deshalb ist es die Preis-Leistung, nicht die Hardware, die sie knapp hinter der Spitze hält.

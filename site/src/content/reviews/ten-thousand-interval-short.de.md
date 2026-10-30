@@ -59,6 +59,6 @@ asset:
 tags: ["apparel", "training", "shorts"]
 ---
 
-Die Interval Short ist Ten Thousands Allround-Klassiker, und der Ruf ist verdient: Vier-Wege-Stretch-Popeline mit wirklich exzellenter Bewegungsfreiheit, ein nicht kneifender, flach liegender Bund und eine Abriebfestigkeit, die über Jahre hält. Unabhängige Tester geben 4,6/5, und im direkten Vergleich schlägt sie Lululemon fürs Krafttraining, mit Liner-Wahl und drei Beinlängen ist sie die Eine-Short-für-alles.
+Die Interval Short ist Ten Thousands Allround-Klassiker, und der Ruf ist verdient: Vier-Wege-Stretch-Popeline mit wirklich exzellenter Bewegungsfreiheit, ein nicht kneifender, flach liegender Bund und eine Abriebfestigkeit, die über Jahre hält. Unabhängige Tester geben 4,6/5, und im direkten Vergleich schlägt sie Lululemon fürs Krafttraining; mit Liner-Wahl und drei Beinlängen ist sie die Eine-Short-für-alles.
 
 Für deutsche Käufer:innen ist es 2026 einfacher geworden: tenthousand.cc liefert jetzt nach Deutschland und zeigt Euro-Preise (79,95 € für die 7" ohne Liner). Der Preis liegt über den früheren 68 $, und der Shop nennt keine Zoll- oder Retourenbedingungen für EU-Bestellungen, also an der Kasse prüfen. Der Support nach dem Kauf zieht weiter Beschwerden an (ein BBB-„F"), und die glänzende 4,9★-Zahl ist markeneigen, nicht unabhängig. Tolle Short; jetzt einfach zu bestellen, aber nicht günstig.

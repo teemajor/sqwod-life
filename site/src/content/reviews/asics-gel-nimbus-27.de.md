@@ -49,7 +49,7 @@ cons:
   - "Nur minimales Update zum 26; lohnt vor allem im Angebot"
 whoFor:
   buy: "Du coachst Läufer:innen, die maximalen Schutz für lockere Tage, lange langsame Distanzen oder mehr Kilometer und schwerere Läufer:innen wollen."
-  skip: "Du willst einen spritzigen Allrounder mit Tempo-Pop: schau dir den Novablast oder einen Carbon-Schuh an."
+  skip: "Du willst einen spritzigen Allrounder mit Tempo-Pop: Schau dir den Novablast oder einen Carbon-Schuh an."
 asset:
   type: images
   images:
@@ -64,4 +64,4 @@ tags: ["apparel", "running", "shoes"]
 
 Der Gel-Nimbus ist ASICS’ Flaggschiff über 27 Generationen, und der 27 ist die Definition eines weichen, schützenden Alltagsschuhs: maximale Dämpfung, stabiles Laufgefühl und robuste Verarbeitung für lockere Kilometer. Für Coaches, die einen nachgiebigen Recovery-Schuh empfehlen, ist er eine sichere Wahl.
 
-Man sollte nur wissen, was er nicht ist, mit ~300 g und moderater Energie-Rückgabe will er nicht schnell laufen. Und da der Nimbus 28 jetzt aktuell bei 200 € liegt, ergibt der 27 vor allem als vergünstigter Preis-Tipp Sinn.
+Man sollte nur wissen, was er nicht ist: Mit ~300 g und moderater Energie-Rückgabe will er nicht schnell laufen. Und da der Nimbus 28 jetzt aktuell bei 200 € liegt, ergibt der 27 vor allem als vergünstigter Preis-Tipp Sinn.

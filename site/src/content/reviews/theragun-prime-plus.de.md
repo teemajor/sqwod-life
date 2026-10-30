@@ -49,7 +49,7 @@ cons:
   - "App ist nett, aber nicht essenziell"
 whoFor:
   buy: "Du bist Coach oder ambitioniert und willst Profi-Percussion + Wärme in einem Gerät."
-  skip: "Du brauchst nur gelegentlich leichte Massage: eine Budget-Gun reicht."
+  skip: "Du brauchst nur gelegentlich leichte Massage: Eine Budget-Gun reicht."
 tags: ["recovery", "massage", "therabody"]
 asset:
   type: images

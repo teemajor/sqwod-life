@@ -50,7 +50,7 @@ cons:
   - "Gemischte Evidenz: EMS baut Kraft als ERGÄNZUNG zum echten Training, nicht standalone; Recovery-Evidenz dünner"
 whoFor:
   buy: "Du bist ambitioniert und nutzt EMS neben echtem Training für ergänzende Kraft, gezielte TENS-Schmerzlinderung und Recovery, und kannst den Preis tragen."
-  skip: "Du willst einen günstigen Standalone-Shortcut für Fitness oder Recovery: ein kleineres Compex (Sport Elite) oder Kabelgerät liefert den Großteil des belegten Nutzens günstiger."
+  skip: "Du willst einen günstigen Standalone-Shortcut für Fitness oder Recovery: Ein kleineres Compex (Sport Elite) oder Kabelgerät liefert den Großteil des belegten Nutzens günstiger."
 asset:
   type: images
   images:

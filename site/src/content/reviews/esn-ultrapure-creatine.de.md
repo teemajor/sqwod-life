@@ -58,6 +58,6 @@ asset:
 tags: ["supplements", "creatine", "protein"]
 ---
 
-Kreatin-Monohydrat ist das seltene Supplement, das den Hype tatsächlich verdient: die ISSN nennt es das wirksamste verfügbare Ergogen für hochintensive Leistung und Magermasse, und ESNs Ultrapure ist eine saubere, laborgeprüfte, vegane, Kölner-Liste-Version zu wirklich fairem Preis (~0,16–0,21 €/Portion). Für Coaches, die einen Basis-Stack aufbauen, ist das die einfache, evidenzbasierte Empfehlung.
+Kreatin-Monohydrat ist das seltene Supplement, das den Hype tatsächlich verdient: Die ISSN nennt es das wirksamste verfügbare Ergogen für hochintensive Leistung und Magermasse, und ESNs Ultrapure ist eine saubere, laborgeprüfte, vegane, Kölner-Liste-Version zu wirklich fairem Preis (~0,16–0,21 €/Portion). Für Coaches, die einen Basis-Stack aufbauen, ist das die einfache, evidenzbasierte Empfehlung.
 
-Ein ehrlicher Hinweis: „Ultrapure“ ist ESNs eigenes Kreatin, nicht das Marken-Creapure, wer gezielt Creapure will, findet bei ESN ein separates SKU. Ansonsten gilt: Monohydrat ist Monohydrat, 3–5 g täglich, geprüft, günstig, fertig.
+Ein ehrlicher Hinweis: „Ultrapure“ ist ESNs eigenes Kreatin, nicht das Marken-Creapure; wer gezielt Creapure will, findet bei ESN ein separates SKU. Ansonsten gilt: Monohydrat ist Monohydrat, 3–5 g täglich, geprüft, günstig, fertig.
