@@ -7,7 +7,7 @@
   "description": "The global dietary supplement market is forecast to reach $239.4bn by 2028, growing from $112.3bn in 2018, while functional food and beverage adds another $529.66bn in parallel — operators who embed product recommendations into their programming sit inside the fastest-growing slice of consumer health spending. A living Sqwod Intelligence report.",
   "studyId": "102831",
   "study": "dietary supplements and functional foods worldwide",
-  "status": "pending",
+  "status": "rejected",
   "createdAt": "2026-10-24",
   "wordsEn": 3725,
   "wordsDe": 4600,
@@ -29,5 +29,6 @@
   "approve": "https://sqwod-pr-intake.sqwodlife.workers.dev/intel?id=flagship-239bn-by-2028-what-the-supplement-boom-means-for-coaches&action=approve&exp=1795392000&sig=cee430d942e17a4e8f889d44e0021bec987ecda3eecd04569e309fbca336ff3e",
   "reject": "https://sqwod-pr-intake.sqwodlife.workers.dev/intel?id=flagship-239bn-by-2028-what-the-supplement-boom-means-for-coaches&action=reject&exp=1795392000&sig=ad39d5ce8b4a9d2f47658aec645342b26f2a62d87d0167742f76e94aceb03536",
   "label": "$239bn by 2028: What the Supplement Boom Means for Coaches",
-  "report": "$239bn by 2028: What the Supplement Boom Means for Coaches"
+  "report": "$239bn by 2028: What the Supplement Boom Means for Coaches",
+  "decidedAt": "2026-10-30T14:46:10.371Z"
 }
