@@ -14,7 +14,7 @@
   "kind": "review-due",
   "reliability": "Could not read the source automatically — verify by hand.",
   "recommendation": "Reminder to check healthandfitness.org yourself; your current figure stays either way.",
-  "status": "revise",
+  "status": "flagged",
   "createdAt": "2026-06-28",
   "notes": [
     {
@@ -24,7 +24,8 @@
     },
     {
       "at": "2026-10-30T14:49:50.661Z",
-      "text": "check for accuracy and make corrections and updates. add sources."
+      "text": "check for accuracy and make corrections and updates. add sources.",
+      "appliedAt": "2026-10-30T14:50:23.468Z"
     }
   ],
   "revisions": 0,
