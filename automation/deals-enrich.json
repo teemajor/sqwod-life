@@ -11,5 +11,31 @@
     "url": "https://athletechnews.com/intake-breathing-62-million-investment-magnetic-nasal-strips/",
     "confidence": "high",
     "checkedAt": "2026-10-29"
+  },
+  "ozlo-raise-2026-10": {
+    "id": "ozlo-raise-2026-10",
+    "company": "Ozlo",
+    "dealCountry": "United States",
+    "category": "Wearables & devices",
+    "relevant": true,
+    "oneLineEn": "Ozlo raised a $22M Series B to expand sleep tech and target tinnitus and epilepsy.",
+    "oneLineDe": "Ozlo schloss eine 22-Mio.-USD-Series-B-Runde ab, um Schlaftechnologie auszubauen und Tinnitus sowie Epilepsie anzugehen.",
+    "amount": "$22M",
+    "url": "https://www.finsmes.com/2026/10/ozlo-raises-22m-in-series-b-funding.html",
+    "confidence": "high",
+    "checkedAt": "2026-10-30"
+  },
+  "providence-acquisition-2026-10": {
+    "id": "providence-acquisition-2026-10",
+    "company": "Fitness Park Group",
+    "dealCountry": "France",
+    "category": "Gyms & studios",
+    "relevant": true,
+    "oneLineEn": "Providence Equity Partners agreed to acquire Fitness Park Group, expanding its European gym portfolio.",
+    "oneLineDe": "Providence Equity Partners vereinbarte die Übernahme der Fitness Park Group und stärkt sein europäisches Fitnessstudio-Portfolio.",
+    "amount": "",
+    "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/-Providence-agrees-Fitness-Park-acquisition-strengthening-European-fitness-interests/363874",
+    "confidence": "high",
+    "checkedAt": "2026-10-30"
   }
 }
