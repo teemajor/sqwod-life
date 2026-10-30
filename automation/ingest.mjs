@@ -142,6 +142,10 @@ const FITT_BRIEF = { base: 'https://insider.fitt.co/daily-brief-', outlet: 'Fitt
 // page and feed). Google News still indexes them, so search that one site.
 const TRADE_QUERIES = [
   { q: 'site:clubindustry.com when:4d', outlet: 'Club Industry', pillar: 'business-strategy', conversion: 'pods' },
+  // Wellworthy (Fitt Insider's consumer site): product launches and trends. Its RSS
+  // feed returns 403 to automated readers, robots.txt allows all. Added 30 Oct 2026 (Tee).
+  { q: 'site:wellworthy.com when:4d', outlet: 'Wellworthy', pillar: 'operations-technology', conversion: 'verified',
+    skip: /^(just dropped|trends|articles|health stacks|brands)$/i },
 ];
 
 // PR Newswire's advertising subdomain — never a story.
@@ -581,6 +585,7 @@ async function run() {
       for (const it of parseItems(await getXml(url))) {
         scanned++;
         const headline = it.title.replace(/\s+-\s+[^-]+$/, '').trim();   // strip " - Outlet"
+        if (tq.skip && tq.skip.test(headline)) continue;   // section index pages, not stories
         const [pillar, conversion] = classify(headline, tq);
         if (!isOnBrand(headline, tq.outlet)) continue;   // a site search can return syndicated off-topic pieces
         add(pool, seen, ledger, { headline, outlet: tq.outlet, link: it.link, pub: it.pub, pillar, conversion, trade: true, lang: tq.lang || '', summary: it.summary });
