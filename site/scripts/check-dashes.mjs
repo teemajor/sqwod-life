@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 // Em-dash ratchet over the built site (dist/).
 //
-// House style: no em dashes in copy. The reviews and the shared templates are clean
-// (Oct 2026), but older articles still carry some, so this check cannot demand zero
-// everywhere yet. Instead it is a ratchet:
-//   - a page may never have MORE em dashes than scripts/em-dash-baseline.json allows
-//   - a page that is not in the baseline (every new article, Daily issue, review) must have none
+// House style: no em dashes in copy. The site is clean (reviews, templates and titles Oct 2026,
+// articles, press and corrections after that), so the baseline file is empty and every page must
+// have none. The baseline stays as an escape hatch: if a page ever has to keep a dash, list it in
+// scripts/em-dash-baseline.json and its count is the most it may have. It is a ratchet:
+//   - a page may never have MORE em dashes than the baseline allows (default 0)
+//   - `npm run check:dashes -- --update` only ever lowers the baseline
 // Counted: visible text, the <title>, and the meta/og descriptions (what Google shows).
 // Not counted: scripts, styles, a lone "—" used as a "no data" placeholder in a table,
-// and dist/email/ (archived copies of newsletters that were already sent).
+// dist/email/ (archived copies of newsletters that were already sent) and /press/ (company-written releases).
 //
 //   npm run check:dashes            check (exit 1 with a report if any page got worse)
 //   npm run check:dashes -- --update  after removing dashes: lower the baseline to match.
@@ -21,7 +22,8 @@ import { fileURLToPath } from 'node:url';
 
 const DIST = resolve(fileURLToPath(new URL('../dist', import.meta.url)));
 const BASELINE = fileURLToPath(new URL('./em-dash-baseline.json', import.meta.url));
-const SKIP = ['email/'];
+// email/: archived newsletters already sent. */press/: releases written and submitted by companies, not Sqwod copy.
+const SKIP = ['email/', 'en/press/', 'de/press/'];
 const init = process.argv.includes('--init');   // one-off: record today's counts as the starting baseline
 const update = init || process.argv.includes('--update');
 

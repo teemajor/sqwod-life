@@ -26,19 +26,19 @@ tags: []
 
 ## The Problem Nobody Wants to Admit
 
-You can program the perfect Pilates reformer sequence. You can cue breathing like a poet. But if your client crawled out of bed after five broken hours of sleep, mouth-breathing through a stress spiral, your session is damage control — not progress.
+You can program the perfect Pilates reformer sequence. You can cue breathing like a poet. But if your client crawled out of bed after five broken hours of sleep, mouth-breathing through a stress spiral, your session is damage control, not progress.
 
 Three stories dropped this week that, taken together, spell out exactly what's missing from most coaching businesses. Read them right and there's a real opportunity here.
 
 ## What's Actually Happening Out There
 
-First, a longtime Solidcore coach just launched her own Pilates studio in New York City, according to Athletech News. That's not just a career move — it's a signal. Experienced coaches are leaving established brands to build something more personal, more community-driven, and presumably more profitable on their own terms.
+First, a longtime Solidcore coach just launched her own Pilates studio in New York City, according to Athletech News. That's not just a career move: it's a signal. Experienced coaches are leaving established brands to build something more personal, more community-driven, and presumably more profitable on their own terms.
 
 At the same time, Sleep Review reports that an AI-enabled sleep and breathing devices company just raised $12.25 million to accelerate growth. Investors are betting big on the idea that how people sleep and breathe is a performance variable worth solving with serious technology.
 
-Then Nisqually Valley News covered Thurston County celebrating community organizations during both National Wellness Month and National Recovery Month — two observances running simultaneously, because apparently we needed a reminder that wellness and recovery are not the same thing and both deserve attention.
+Then Nisqually Valley News covered Thurston County celebrating community organizations during both National Wellness Month and National Recovery Month: two observances running simultaneously, because apparently we needed a reminder that wellness and recovery are not the same thing and both deserve attention.
 
-Here's the thread: a boutique coach building her own space, a tech company funding sleep and breathing solutions, and a county government recognizing that community support structures matter for health outcomes. All three are pointing at the same gap — the space between your training session and everything else in your client's life.
+Here's the thread: a boutique coach building her own space, a tech company funding sleep and breathing solutions, and a county government recognizing that community support structures matter for health outcomes. All three are pointing at the same gap: the space between your training session and everything else in your client's life.
 
 ## What Coaches Can Actually Do This Week
 
@@ -46,12 +46,12 @@ You don't need $12.25 million or a New York City studio lease to act on this. Yo
 
 **Map the recovery gap.** Ask five of your current clients one question this week: *How would you rate your sleep quality and stress levels right now, on a scale of one to ten?* You already know their squat depth. You probably don't know their sleep score. The answer will tell you where your programming is fighting upstream.
 
-**Build a referral bench, not just a client roster.** The coach who launched her own studio didn't do it alone — she built on community. Identify one sleep specialist, one breathwork practitioner, and one mental health or recovery resource in your area. Make an introduction when the client needs it. You become the hub, not just a spoke.
+**Build a referral bench, not just a client roster.** The coach who launched her own studio didn't do it alone: she built on community. Identify one sleep specialist, one breathwork practitioner, and one mental health or recovery resource in your area. Make an introduction when the client needs it. You become the hub, not just a spoke.
 
 **Name what you already do.** If you cue breath during lifts, you're doing breathwork. If you program deload weeks, you're managing recovery. National Recovery Month, as Nisqually Valley News highlighted, is a chance to talk openly about rest, restoration, and the non-glamorous side of progress. Post about it. Clients who feel seen stick around.
 
 ## The Bigger Picture
 
-Boutique fitness is crowded. The coaches who will build lasting businesses aren't the ones with the hardest workouts — they're the ones who understand that training is maybe forty percent of the result. Sleep, breathing, community, and recovery infrastructure make up the rest.
+Boutique fitness is crowded. The coaches who will build lasting businesses aren't the ones with the hardest workouts: they're the ones who understand that training is maybe forty percent of the result. Sleep, breathing, community, and recovery infrastructure make up the rest.
 
 The market is already moving there. The only question is whether you move with it or watch someone else fill the gap.

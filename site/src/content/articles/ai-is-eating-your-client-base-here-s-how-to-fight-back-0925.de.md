@@ -27,7 +27,7 @@ hero:
 tags: []
 ---
 
-## The money is moving — are you?
+## The money is moving: are you?
 
 While you were programming this week's sessions, investors were writing cheques. Magic AI just raised $11M to bring its fitness tech to the US, backed by names that also back Soho House, according to Tech Funding News. Disha pulled in $5.96M in Series A funding led by General Catalyst to scale AI health coaching, per Ventureburn. And Zensai is about to unveil what it calls the only agentic AI coaching platform built exclusively for Microsoft at HumanX Amsterdam.
 
@@ -35,15 +35,15 @@ That's three AI coaching plays hitting the news in one cycle. This isn't a trend
 
 At the same time, Australasian Leisure Management Magazine reports Australian fitness industry revenue is forecast to approach $3.8 billion. Discover Strength just announced its first Massachusetts studio in Wellesley, targeting Greater Boston for growth. The physical side of fitness is expanding too.
 
-So the market isn't shrinking. It's splitting — into operators who use technology as leverage, and those who get replaced by it.
+So the market isn't shrinking. It's splitting into operators who use technology as leverage, and those who get replaced by it.
 
 ## What's really happening
 
-AI coaching tools are not coming for your personality, your programming instincts, or the moment a client finally nails their first pull-up. They're coming for the repetitive, low-touch work you're probably undercharging for anyway — check-ins, habit tracking, basic nutrition nudges, progress summaries.
+AI coaching tools are not coming for your personality, your programming instincts, or the moment a client finally nails their first pull-up. They're coming for the repetitive, low-touch work you're probably undercharging for anyway: check-ins, habit tracking, basic nutrition nudges, progress summaries.
 
 The TUSOL Wellness acquisition brokered by Website Closers is a useful side signal here. Wellness brands with digital assets attached are being bought and sold. The businesses with staying power have a community, a methodology, and a product that extends beyond the hour they're present in.
 
-Discover Strength's expansion into Wellesley tells the same story from a different angle. They're not opening a generic gym. They're planting a specific, repeatable coaching model in a new market — one that's differentiated enough to travel.
+Discover Strength's expansion into Wellesley tells the same story from a different angle. They're not opening a generic gym. They're planting a specific, repeatable coaching model in a new market: one that's differentiated enough to travel.
 
 The coaches and studios that survive the AI wave will be the ones who know what they stand for and build systems around it.
 
@@ -51,14 +51,14 @@ The coaches and studios that survive the AI wave will be the ones who know what 
 
 You don't need $11M to compete. You need clarity and a few smart moves.
 
-**1. Define your unfair advantage.** What do you deliver that an app genuinely cannot? Write it in one sentence. If you can't, your clients can't either — and they'll churn to whatever's cheaper.
+**1. Define your unfair advantage.** What do you deliver that an app genuinely cannot? Write it in one sentence. If you can't, your clients can't either, and they'll churn to whatever's cheaper.
 
-**2. Audit your low-touch work.** List every client interaction that doesn't require your real expertise. Basic check-ins, reminder messages, generic meal guidance. These are prime candidates for automation tools — free your time for the work only you can do.
+**2. Audit your low-touch work.** List every client interaction that doesn't require your real expertise. Basic check-ins, reminder messages, generic meal guidance. These are prime candidates for automation tools: free your time for the work only you can do.
 
 **3. Build a methodology, not just a service.** Discover Strength scales because the method travels. Magic AI raises capital because the product is repeatable. Ask yourself: if you doubled your client base tomorrow, what breaks? Fix that first.
 
-**4. Own a community asset.** An email list, a private group, a signature challenge — something you control and that grows independent of any single platform. Wellness M&A activity shows that community and content have real acquisition value now.
+**4. Own a community asset.** An email list, a private group, a signature challenge: something you control and that grows independent of any single platform. Wellness M&A activity shows that community and content have real acquisition value now.
 
-**5. Stay curious about the tools.** You don't have to adopt every platform that raises a Series A. But you should know what they do. Test one AI coaching or admin tool this quarter. Your competitive advantage isn't ignoring technology — it's deploying it smarter than a faceless app can.
+**5. Stay curious about the tools.** You don't have to adopt every platform that raises a Series A. But you should know what they do. Test one AI coaching or admin tool this quarter. Your competitive advantage isn't ignoring technology: it's deploying it smarter than a faceless app can.
 
 The market is big, the capital is flowing, and the operators with a point of view will take the lion's share. Be one of them.

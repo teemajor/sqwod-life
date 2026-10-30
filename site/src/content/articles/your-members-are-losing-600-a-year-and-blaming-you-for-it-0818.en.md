@@ -2,7 +2,7 @@
 urlSlug: your-members-are-losing-600-a-year-and-blaming-you-for-it-0818
 lang: "en"
 counterpart: your-members-are-losing-600-a-year-and-blaming-you-for-it-0818
-title: "Your Members Are Losing $600 a Year — And Blaming You For It"
+title: "Your Members Are Losing $600 a Year, And Blaming You For It"
 topic: pricing-revenue
 newsTake: true
 description: "New research exposes a pricing loyalty trap that's quietly killing retention, and what smart operators are doing right now to fix it."
@@ -29,23 +29,23 @@ tags: []
 
 ## The Loyalty Paradox Nobody Wants to Talk About
 
-Here's an uncomfortable truth: your most committed members are probably your worst deal. A study of 7,752 members across three US health clubs — covered by ScienceBlog.com — found that people on flat monthly contracts paid more than $17 per visit on average, while a pay-per-visit pass at the same clubs cost only $10. Over time, those loyal members forgo about $600 in savings. They show up less, pay more, and eventually notice. When they do, they don't blame themselves. They blame you.
+Here's an uncomfortable truth: your most committed members are probably your worst deal. A study of 7,752 members across three US health clubs (covered by ScienceBlog.com) found that people on flat monthly contracts paid more than $17 per visit on average, while a pay-per-visit pass at the same clubs cost only $10. Over time, those loyal members forgo about $600 in savings. They show up less, pay more, and eventually notice. When they do, they don't blame themselves. They blame you.
 
 This isn't a niche problem. It's a structural one. And it's landing at exactly the wrong moment.
 
 ## The Industry Is Scaling Up While Trust Is Scaling Down
 
-Crunch Franchise just opened a new location in Fort Walton Beach, Florida, per the Health & Fitness Association — another signal that big-box fitness is expanding aggressively. Delightree raised $25 million to build an agentic AI operating system for franchise and multi-unit brands, according to Pulse 2.0. The direction of travel is clear: more locations, more automation, more operational muscle.
+Crunch Franchise just opened a new location in Fort Walton Beach, Florida, per the Health & Fitness Association: another signal that big-box fitness is expanding aggressively. Delightree raised $25 million to build an agentic AI operating system for franchise and multi-unit brands, according to Pulse 2.0. The direction of travel is clear: more locations, more automation, more operational muscle.
 
 Meanwhile, a Coalville gym owner is fighting planning authorities after a £1 million expansion was shot down, per the Leicester Mercury. Independent operators are grinding for growth while the franchises hoover up capital and real estate.
 
-The gap between large and small operators is widening. But here's the thing — neither side wins if members feel ripped off. Scale doesn't fix a broken pricing model. It just breaks it faster, in more locations.
+The gap between large and small operators is widening. But here's the thing: neither side wins if members feel ripped off. Scale doesn't fix a broken pricing model. It just breaks it faster, in more locations.
 
 Les Mills naming Jason Paris as CEO, as reported by Athletech News, signals that even legacy fitness brands are rethinking leadership and direction. Change is everywhere. Member trust doesn't have to be the casualty.
 
-## The '90s Nostalgia Play — And What It's Actually Teaching Us
+## The '90s Nostalgia Play, And What It's Actually Teaching Us
 
-Athletech News reports that top gyms are leaning into '90s nostalgia with themed classes and marketing campaigns. Aerobics aesthetics, throwback playlists, the whole bit. Smart operators aren't just selling workouts — they're selling a feeling. A sense of belonging to something.
+Athletech News reports that top gyms are leaning into '90s nostalgia with themed classes and marketing campaigns. Aerobics aesthetics, throwback playlists, the whole bit. Smart operators aren't just selling workouts: they're selling a feeling. A sense of belonging to something.
 
 That's the real lesson buried under the leg warmers: **people stay when they feel seen, not just serviced.**
 
@@ -55,10 +55,10 @@ Which brings you back to the pricing problem. If your members are silently overp
 
 You don't need to blow up your pricing model. You need to make it legible and fair. Three moves:
 
-**1. Run a visit-frequency audit.** Segment your monthly members by actual visit frequency. The bottom quartile — people coming in fewer than four times a month — are almost certainly overpaying relative to drop-in rates. That's your churn risk list.
+**1. Run a visit-frequency audit.** Segment your monthly members by actual visit frequency. The bottom quartile, people coming in fewer than four times a month, are almost certainly overpaying relative to drop-in rates. That's your churn risk list.
 
 **2. Introduce a transparent hybrid option.** A lighter-tier membership or a visit bundle gives low-frequency members a dignified off-ramp instead of a cancellation. You keep the relationship. They keep their dignity.
 
-**3. Use the data in your retention conversations.** When a member is flagged as at-risk, lead with value: show them what they've used, what they've saved, what they'd miss. The ScienceBlog.com research shows the $600 gap is real — don't let your members discover it on their way out the door.
+**3. Use the data in your retention conversations.** When a member is flagged as at-risk, lead with value: show them what they've used, what they've saved, what they'd miss. The ScienceBlog.com research shows the $600 gap is real: don't let your members discover it on their way out the door.
 
 The operators who grow from here won't just have the best equipment or the best locations. They'll have members who genuinely believe the price is fair. That's the retention moat no franchise can easily replicate.

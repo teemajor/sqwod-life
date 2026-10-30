@@ -2,7 +2,7 @@
 urlSlug: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
 lang: "en"
 counterpart: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
-title: "Recovery Is Eating Your Revenue — Here's How to Catch Up"
+title: "Recovery Is Eating Your Revenue: Here's How to Catch Up"
 topic: offer-programming
 newsTake: true
 description: "The fitness industry is quietly pivoting to recovery and longevity, and coaches who ignore it will watch their clients walk out the door."
@@ -26,23 +26,23 @@ hero:
 tags: []
 ---
 
-## Your Clients Are Already Buying Recovery — Just Not From You
+## Your Clients Are Already Buying Recovery, Just Not From You
 
 Pharrell's skincare brand Humanrace is leaning into recovery and longevity, according to Athletech News. A tech startup just raised $12.25M to build AI-enabled devices for breathing and sleep, per Bastille Post. A Preston gym is bundling Pilates and recovery into a single women's wellness membership, reports Blog Preston.
 
 Notice who's *not* in that list? Most independent coaches.
 
-Recovery used to be the boring footnote at the end of a program. It's now the headline. Celebrities, VCs, and local gyms are all betting on it simultaneously — and that kind of convergence isn't a trend, it's a shift. If your programming still treats rest days as empty calendar slots, you're already behind.
+Recovery used to be the boring footnote at the end of a program. It's now the headline. Celebrities, VCs, and local gyms are all betting on it simultaneously, and that kind of convergence isn't a trend, it's a shift. If your programming still treats rest days as empty calendar slots, you're already behind.
 
 ## What's Really Happening Here
 
 Three things are colliding at once.
 
-First, clients are getting smarter about sleep, breathwork, and stress — partly because the tech is now consumer-facing and accessible. When a $12.25M company is building non-invasive devices specifically for breathing and sleep disorders, that category is moving mainstream fast. Your clients will start asking questions. Better to be the person with answers.
+First, clients are getting smarter about sleep, breathwork, and stress: partly because the tech is now consumer-facing and accessible. When a $12.25M company is building non-invasive devices specifically for breathing and sleep disorders, that category is moving mainstream fast. Your clients will start asking questions. Better to be the person with answers.
 
-Second, premium brands are reframing fitness entirely. Humanrace isn't selling gym performance — it's selling how you feel at 60. Longevity is the new six-pack. Coaches who only talk output (reps, pace, load) are speaking a language that's slowly going out of style.
+Second, premium brands are reframing fitness entirely. Humanrace isn't selling gym performance: it's selling how you feel at 60. Longevity is the new six-pack. Coaches who only talk output (reps, pace, load) are speaking a language that's slowly going out of style.
 
-Third, the bundling play is working. That Preston membership combining gym, Pilates, and recovery isn't just a nice package — it's a retention strategy. Members who access multiple modalities under one roof are harder to churn. Athletech News also noted an LA Pilates studio scaling by investing in instructor development rather than franchising — proof that depth beats spread when you're building something sticky.
+Third, the bundling play is working. That Preston membership combining gym, Pilates, and recovery isn't just a nice package: it's a retention strategy. Members who access multiple modalities under one roof are harder to churn. Athletech News also noted an LA Pilates studio scaling by investing in instructor development rather than franchising: proof that depth beats spread when you're building something sticky.
 
 The throughline: recovery isn't a feature anymore. It's the frame.
 
@@ -52,10 +52,10 @@ You don't need a new facility or a $12M raise. You need to make recovery *visibl
 
 **Start with the language.** Rename your rest days. Call them "adaptation sessions" or "nervous system work." It sounds small. It reframes what clients value.
 
-**Add one recovery touchpoint per week per client.** This could be a 5-minute breathwork protocol at the end of a session, a sleep hygiene check-in during onboarding, or a shared resource on HRV tracking. You're not becoming a sleep doctor — you're becoming the coach who thinks about the whole person.
+**Add one recovery touchpoint per week per client.** This could be a 5-minute breathwork protocol at the end of a session, a sleep hygiene check-in during onboarding, or a shared resource on HRV tracking. You're not becoming a sleep doctor: you're becoming the coach who thinks about the whole person.
 
-**Build a micro-bundle.** Take the Preston model at small scale: pair your existing training sessions with one recovery-focused add-on — a monthly mobility workshop, a breathwork drop-in, a recovery Q&A. Charge accordingly. Clients who buy into the ecosystem stay longer.
+**Build a micro-bundle.** Take the Preston model at small scale: pair your existing training sessions with one recovery-focused add-on, a monthly mobility workshop, a breathwork drop-in, a recovery Q&A. Charge accordingly. Clients who buy into the ecosystem stay longer.
 
 **Develop your own depth first.** The LA studio scaling instructors rather than franchising is the lesson here. Before you try to grow wide, grow deep. Know your recovery modalities well enough to teach them confidently. That expertise becomes your moat.
 
-Recovery is where attention — and money — is flowing right now. You don't have to pivot your whole business. You just have to stop leaving that conversation to skincare brands and sleep tech startups.
+Recovery is where attention, and money, is flowing right now. You don't have to pivot your whole business. You just have to stop leaving that conversation to skincare brands and sleep tech startups.

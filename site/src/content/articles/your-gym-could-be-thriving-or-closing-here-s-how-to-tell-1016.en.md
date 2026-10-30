@@ -2,10 +2,10 @@
 urlSlug: your-gym-could-be-thriving-or-closing-here-s-how-to-tell-1016
 lang: "en"
 counterpart: your-gym-could-be-thriving-or-closing-here-s-how-to-tell-1016
-title: "Your gym could be thriving or closing — here's how to tell"
+title: "Your gym could be thriving or closing: here's how to tell"
 topic: strategy
 newsTake: true
-description: "Six stories from this week reveal the difference between studios that grow and ones that fold — and what you can do right now to land on the right side."
+description: "Six stories from this week reveal the difference between studios that grow and ones that fold, and what you can do right now to land on the right side."
 pillar: build
 type: ai-automation
 format: analysis
@@ -31,19 +31,19 @@ tags: []
 
 This week handed fitness operators a strange gift: a clear, side-by-side view of what success and failure actually look like.
 
-On one end, Athletech News remembered Eric Von Frohlich — a coach whose impact outlived every piece of equipment he ever touched. On another, a California gym member is reportedly sweating out a 20-million-VND membership card (roughly the kind of prepaid commitment that hurts when a club disappears), according to Vietnam.vn. Meanwhile, Simply Wall Street flagged Planet Fitness posting a revenue beat alongside member growth. And a Cheshire gym owner profiled by the Chester Standard is planning new facilities *and* a personal training academy off the back of an award win.
+On one end, Athletech News remembered Eric Von Frohlich, a coach whose impact outlived every piece of equipment he ever touched. On another, a California gym member is reportedly sweating out a 20-million-VND membership card (roughly the kind of prepaid commitment that hurts when a club disappears), according to Vietnam.vn. Meanwhile, Simply Wall Street flagged Planet Fitness posting a revenue beat alongside member growth. And a Cheshire gym owner profiled by the Chester Standard is planning new facilities *and* a personal training academy off the back of an award win.
 
-Same industry. Wildly different outcomes. The question isn't whether the fitness market is healthy — it is. The question is whether *your* operation is positioned to stay in it.
+Same industry. Wildly different outcomes. The question isn't whether the fitness market is healthy: it is. The question is whether *your* operation is positioned to stay in it.
 
 ## What the numbers and the eulogies are actually telling you
 
 Qz.com's breakdown of gym membership trends puts hard shape around the feeling: membership behaviour is shifting fast, and operators who don't read the data are flying blind.
 
-But here's the uncomfortable truth the data doesn't capture — the gyms closing aren't failing because fitness is unpopular. They're failing because they treated members as transactions instead of relationships. That Vietnam.vn story stings precisely because someone trusted a gym with real money, on an instalment plan, and now they're worried that trust was misplaced.
+But here's the uncomfortable truth the data doesn't capture: the gyms closing aren't failing because fitness is unpopular. They're failing because they treated members as transactions instead of relationships. That Vietnam.vn story stings precisely because someone trusted a gym with real money, on an instalment plan, and now they're worried that trust was misplaced.
 
-Eric Von Frohlich's remembrance in Athletech News is the counter-example. Coaches and owners wrote about him like he was irreplaceable — because he was. He built something that prepaid memberships can't manufacture: genuine loyalty.
+Eric Von Frohlich's remembrance in Athletech News is the counter-example. Coaches and owners wrote about him like he was irreplaceable, because he was. He built something that prepaid memberships can't manufacture: genuine loyalty.
 
-The Cheshire gym owner isn't just building new facilities. She's building a personal training academy — a pipeline of coaches who carry a culture forward. That's long-term thinking dressed up as a building project.
+The Cheshire gym owner isn't just building new facilities. She's building a personal training academy, a pipeline of coaches who carry a culture forward. That's long-term thinking dressed up as a building project.
 
 And then there's Othello, which just raised $8 million for real-time AI sales coaching during live calls, per StreetInsider. The market is betting that the moment a potential member is on the phone with your front desk is the moment most gyms lose them.
 
@@ -51,10 +51,10 @@ And then there's Othello, which just raised $8 million for real-time AI sales co
 
 You don't need a rebrand or a fundraise. You need to close three specific gaps right now:
 
-**1. Audit your member trust signals.** If a member had to stop paying tomorrow, would they feel safe? Clear cancellation policies, transparent billing, and a refund process that doesn't require a lawyer aren't just ethical — they're retention tools. The Vietnam.vn story is a warning label.
+**1. Audit your member trust signals.** If a member had to stop paying tomorrow, would they feel safe? Clear cancellation policies, transparent billing, and a refund process that doesn't require a lawyer aren't just ethical: they're retention tools. The Vietnam.vn story is a warning label.
 
-**2. Train your sales conversation, not just your sales script.** Othello raised $8 million because investors know most gym staff wing it on the phone. You don't need AI to fix this — you need a 30-minute weekly roleplay with your front desk team. Record a call. Listen back. Fix one thing.
+**2. Train your sales conversation, not just your sales script.** Othello raised $8 million because investors know most gym staff wing it on the phone. You don't need AI to fix this: you need a 30-minute weekly roleplay with your front desk team. Record a call. Listen back. Fix one thing.
 
-**3. Build a coach pipeline before you need one.** The Cheshire owner isn't waiting until she's short-staffed. A personal training academy — even an informal internal one — means your culture survives staff turnover. Eric Von Frohlich's legacy isn't a logo. It's the coaches he shaped.
+**3. Build a coach pipeline before you need one.** The Cheshire owner isn't waiting until she's short-staffed. A personal training academy, even an informal internal one, means your culture survives staff turnover. Eric Von Frohlich's legacy isn't a logo. It's the coaches he shaped.
 
 Planet Fitness is growing. Award-winning independents are expanding. The operators who close are the ones who mistake a busy class schedule for a healthy business. Busy is not the same as built to last.

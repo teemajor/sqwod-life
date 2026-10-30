@@ -5,7 +5,7 @@ counterpart: your-clients-sit-all-day-here-s-the-one-move-that-fixes-it-0724
 title: "Your clients sit all day. Here's the one move that fixes it."
 topic: offer-programming
 newsTake: true
-description: "The fitness industry is finally catching up to what desk workers actually need — here's how to build it into every session."
+description: "The fitness industry is finally catching up to what desk workers actually need: here's how to build it into every session."
 pillar: move
 type: method
 format: analysis
@@ -27,29 +27,29 @@ tags: []
 
 ## The problem hiding in plain sight
 
-Most of your clients aren't broken from training too hard. They're broken from sitting too long. Fitness coach Dan Go told the Hindustan Times that one targeted movement essentially "saved" his lower back after years of desk-induced damage — and the reason it works isn't magic, it's mechanics. Prolonged sitting compresses the lumbar spine, shuts off the glutes, and leaves the hip flexors in a permanent state of protest. By the time a client walks into your gym, they've already spent eight hours undoing your work.
+Most of your clients aren't broken from training too hard. They're broken from sitting too long. Fitness coach Dan Go told the Hindustan Times that one targeted movement essentially "saved" his lower back after years of desk-induced damage, and the reason it works isn't magic, it's mechanics. Prolonged sitting compresses the lumbar spine, shuts off the glutes, and leaves the hip flexors in a permanent state of protest. By the time a client walks into your gym, they've already spent eight hours undoing your work.
 
 The good news: the industry is starting to notice.
 
 ## Recovery is becoming the product
 
-Two new gym openings — one flagged by the London Post, another UFC GYM® in Murfreesboro covered by Franchising.com — both led with the same pitch: full-service fitness *and* recovery. Not recovery as an afterthought. Recovery as a headline feature. That's not a coincidence; that's the market reading the room.
+Two new gym openings (one flagged by the London Post, another UFC GYM® in Murfreesboro covered by Franchising.com) both led with the same pitch: full-service fitness *and* recovery. Not recovery as an afterthought. Recovery as a headline feature. That's not a coincidence; that's the market reading the room.
 
-German training resource Trainingsworld put it plainly in a piece from coach Wolfgang Unsöld: movement is therapy. Not a metaphor — a method. The premise is that structured, intentional movement has a direct corrective effect on bodies that have been sitting, slouching, and stiffening their way through modern life. The therapeutic value isn't in the intensity. It's in the specificity.
+German training resource Trainingsworld put it plainly in a piece from coach Wolfgang Unsöld: movement is therapy. Not a metaphor, a method. The premise is that structured, intentional movement has a direct corrective effect on bodies that have been sitting, slouching, and stiffening their way through modern life. The therapeutic value isn't in the intensity. It's in the specificity.
 
 For coaches, this reframes the job. You're not just programming sets and reps. You're undoing the damage that happens between sessions.
 
 ## The do-this-now fix
 
-Dan Go's back-saving move — as reported by the Hindustan Times — targets exactly what sitting destroys: posterior chain engagement and lumbar extension. Without naming a specific exercise (Go keeps the framing broad), the principle is clear: one well-chosen, consistently applied movement can reverse cumulative postural damage when it's loaded correctly and practiced regularly.
+Dan Go's back-saving move, as reported by the Hindustan Times, targets exactly what sitting destroys: posterior chain engagement and lumbar extension. Without naming a specific exercise (Go keeps the framing broad), the principle is clear: one well-chosen, consistently applied movement can reverse cumulative postural damage when it's loaded correctly and practiced regularly.
 
 Here's how to apply that logic immediately:
 
 **Start every session with a diagnostic minute.** Before your client touches a barbell, watch them stand, hinge, and breathe. Where are they holding tension? Where are they dead? That tells you what the desk did to them today.
 
-**Build one corrective anchor into every programme.** Not a warm-up filler — an actual prioritised movement that addresses their specific sitting pattern. Hip flexor length, glute activation, thoracic extension: pick the one that matches their pattern and make it non-negotiable.
+**Build one corrective anchor into every programme.** Not a warm-up filler, an actual prioritised movement that addresses their specific sitting pattern. Hip flexor length, glute activation, thoracic extension: pick the one that matches their pattern and make it non-negotiable.
 
-**Sell recovery as the context, not the cool-down.** The gyms opening right now are winning memberships by promising recovery alongside performance. You can do the same thing inside a single session. Frame the corrective work as the reason their training will actually stick. Clients who understand *why* they're doing something do it better — and come back for more.
+**Sell recovery as the context, not the cool-down.** The gyms opening right now are winning memberships by promising recovery alongside performance. You can do the same thing inside a single session. Frame the corrective work as the reason their training will actually stick. Clients who understand *why* they're doing something do it better, and come back for more.
 
 ## The bigger picture
 

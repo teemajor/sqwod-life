@@ -5,7 +5,7 @@ counterpart: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
 title: "Wellness Is Eating Fitness. Here's How to Not Get Swallowed."
 topic: market-moves
 newsTake: true
-description: "From pet supplements to GLP-1 masterclasses, capital is flooding wellness from every angle — and fitness operators who ignore it will wake up irrelevant."
+description: "From pet supplements to GLP-1 masterclasses, capital is flooding wellness from every angle, and fitness operators who ignore it will wake up irrelevant."
 pillar: signal
 type: trends
 format: analysis
@@ -31,7 +31,7 @@ tags: []
 
 Pet food brands are buying wellness companies. Media platforms are launching metabolic health curricula. Event-industry giants are acquiring wellness divisions. If you run a gym, a studio, or a fitness-adjacent business and you still think your competition is the box down the street, you're watching the wrong door.
 
-This week told the story clearly. Fredun — a consumer goods company — moved into pet wellness by acquiring Furlicks, per Business Standard. Informa, a business events conglomerate, made a push into the wellness sector through acquisition, according to CIM Business Events. MasterClass, a platform built on celebrity cooking and creative writing, just launched a class on GLP-1s and metabolic health, as reported by Athletech News. None of these players are traditional fitness. All of them are now your neighbors.
+This week told the story clearly. Fredun (a consumer goods company) moved into pet wellness by acquiring Furlicks, per Business Standard. Informa, a business events conglomerate, made a push into the wellness sector through acquisition, according to CIM Business Events. MasterClass, a platform built on celebrity cooking and creative writing, just launched a class on GLP-1s and metabolic health, as reported by Athletech News. None of these players are traditional fitness. All of them are now your neighbors.
 
 Wellness has become the category that every category wants a piece of. Capital follows attention, and attention is firmly on how people feel, move, and age.
 
@@ -39,20 +39,20 @@ Wellness has become the category that every category wants a piece of. Capital f
 
 Two forces are colliding right now.
 
-First, money is moving fast. Nua, a women's wellness brand, raised $50 million to expand its portfolio and distribution, according to Inc42. That's not a niche bet — that's a signal that investors see women's wellness as a scalable, underserved market with room to run. The capital is there. The question is who builds the infrastructure to capture it.
+First, money is moving fast. Nua, a women's wellness brand, raised $50 million to expand its portfolio and distribution, according to Inc42. That's not a niche bet: that's a signal that investors see women's wellness as a scalable, underserved market with room to run. The capital is there. The question is who builds the infrastructure to capture it.
 
-Second, the experience layer is thickening. Boutique fitness is taking direct aim at Hyrox, per Athletech News's week in review — meaning studios aren't just selling classes anymore, they're selling competitive identity, community, and events. Meanwhile, gantner's coverage in body LIFE points to the connected, tech-integrated gym as the operating model of the future, where seamless member processes replace friction at every touchpoint.
+Second, the experience layer is thickening. Boutique fitness is taking direct aim at Hyrox, per Athletech News's week in review, meaning studios aren't just selling classes anymore, they're selling competitive identity, community, and events. Meanwhile, gantner's coverage in body LIFE points to the connected, tech-integrated gym as the operating model of the future, where seamless member processes replace friction at every touchpoint.
 
-Put it together: the winners won't just be the fittest facilities. They'll be the most connected ecosystems — brands that hold a member's attention before, during, and after the workout.
+Put it together: the winners won't just be the fittest facilities. They'll be the most connected ecosystems: brands that hold a member's attention before, during, and after the workout.
 
 ## Your Move: Stop Selling Sessions, Start Building a Wellness Stack
 
 Here's the concrete read-across for operators and investors.
 
-**Audit your adjacencies.** What does your member do for their health outside your four walls? Sleep, nutrition, hormonal health, recovery, mental wellness — these are all spend categories your members are already in. If you're not present there, someone else is. The MasterClass GLP-1 launch isn't a curiosity; it's a content brand colonizing your expertise.
+**Audit your adjacencies.** What does your member do for their health outside your four walls? Sleep, nutrition, hormonal health, recovery, mental wellness: these are all spend categories your members are already in. If you're not present there, someone else is. The MasterClass GLP-1 launch isn't a curiosity; it's a content brand colonizing your expertise.
 
-**Position around an outcome, not a modality.** Hyrox-style competition programming works because it gives members a finish line beyond just showing up. Whether it's a race, a transformation challenge, or a health metric — give your community something to train *toward*. That's retention with a narrative.
+**Position around an outcome, not a modality.** Hyrox-style competition programming works because it gives members a finish line beyond just showing up. Whether it's a race, a transformation challenge, or a health metric: give your community something to train *toward*. That's retention with a narrative.
 
-**Think like a platform, even if you're small.** Gantner's vision of the connected fitness studio isn't just about fancy door locks and digital check-ins — it's about using integrated technology to reduce operational drag so your staff can focus on the thing no app can replicate: human coaching. Automate the back end, invest in the front line.
+**Think like a platform, even if you're small.** Gantner's vision of the connected fitness studio isn't just about fancy door locks and digital check-ins; it's about using integrated technology to reduce operational drag so your staff can focus on the thing no app can replicate: human coaching. Automate the back end, invest in the front line.
 
-The wellness land grab is on. Pet brands, media companies, and event conglomerates are all planting flags. The fitness operators who survive this moment are the ones who realize they're not in the workout business — they're in the transformation business. That's a much bigger market. Act like it.
+The wellness land grab is on. Pet brands, media companies, and event conglomerates are all planting flags. The fitness operators who survive this moment are the ones who realize they're not in the workout business: they're in the transformation business. That's a much bigger market. Act like it.

@@ -5,7 +5,7 @@ counterpart: your-members-don-t-want-a-gym-they-want-a-feeling-1006
 title: "Your Members Don't Want a Gym. They Want a Feeling."
 topic: marketing-community
 newsTake: true
-description: "Six stories from this week prove wellness has quietly moved from sweat to sensation — and your studio needs to catch up."
+description: "Six stories from this week prove wellness has quietly moved from sweat to sensation, and your studio needs to catch up."
 pillar: build
 type: ai-automation
 format: analysis
@@ -37,27 +37,27 @@ This week's news isn't a collection of quirky outliers. It's a pattern. And if y
 
 ## What's Actually Happening
 
-Wellness is colonizing every sensory channel — and investors are following the feeling.
+Wellness is colonizing every sensory channel, and investors are following the feeling.
 
-NDude Labs led a $3M Series A into SuperMush, a US wellness brand built on functional mushrooms, per Entrackr. Tresalis made its debut beauty acquisition by snapping up Vyrao, a fragrance brand positioned around well-being, according to Personal Care Insights. Eve Wellness is now offering no-referral AI breast ultrasounds for $349 in Walnut Creek — no doctor's note, no friction, just access, per Hoodline.
+NDude Labs led a $3M Series A into SuperMush, a US wellness brand built on functional mushrooms, per Entrackr. Tresalis made its debut beauty acquisition by snapping up Vyrao, a fragrance brand positioned around well-being, according to Personal Care Insights. Eve Wellness is now offering no-referral AI breast ultrasounds for $349 in Walnut Creek, no doctor's note, no friction, just access, per Hoodline.
 
 The thread connecting all of it: people are paying for *how something makes them feel*, not just what it functionally does. Mushroom coffee isn't just caffeine. A scent acquisition isn't about perfume. A $349 ultrasound is about autonomy and peace of mind.
 
-Then look at the studio side. Per Athletech News, the new "intentional rest" concept from Orangetheory and Beachbody veterans is betting that recovery — not intensity — is the next white space in fitness. And the anti-gym in Montana, covered by Montana Outdoor, isn't selling fitness. It's selling belonging. The dog is the point.
+Then look at the studio side. Per Athletech News, the new "intentional rest" concept from Orangetheory and Beachbody veterans is betting that recovery (not intensity) is the next white space in fitness. And the anti-gym in Montana, covered by Montana Outdoor, isn't selling fitness. It's selling belonging. The dog is the point.
 
-Business Insider Africa frames the London massage brand story as evidence that the global wellness economy is rewarding businesses that *mean something* to their members — not just ones that deliver a good session.
+Business Insider Africa frames the London massage brand story as evidence that the global wellness economy is rewarding businesses that *mean something* to their members, not just ones that deliver a good session.
 
 The market has shifted. The emotion *is* the offer.
 
 ## What You Do With This Monday Morning
 
-You don't need to adopt a golden retriever or launch a mushroom line. But you do need to audit what feeling your business leads with — because right now, you might be leading with logistics.
+You don't need to adopt a golden retriever or launch a mushroom line. But you do need to audit what feeling your business leads with, because right now, you might be leading with logistics.
 
 **Three moves, no budget required:**
 
-**1. Rewrite your front door.** Your website, your Instagram bio, your front desk script — do they describe what members *do* at your studio, or how they *feel* leaving it? Swap one functional claim for one emotional one this week.
+**1. Rewrite your front door.** Your website, your Instagram bio, your front desk script: do they describe what members *do* at your studio, or how they *feel* leaving it? Swap one functional claim for one emotional one this week.
 
-**2. Name your vibe, then protect it.** The rest studio has "intentional." The Montana gym has the dog. What's your one word? If you can't say it in under three seconds, your members can't either. Pick it, then make sure every touchpoint — lighting, music, scent, staff greeting — earns it.
+**2. Name your vibe, then protect it.** The rest studio has "intentional." The Montana gym has the dog. What's your one word? If you can't say it in under three seconds, your members can't either. Pick it, then make sure every touchpoint, lighting, music, scent, staff greeting, earns it.
 
 **3. Add one non-workout touchpoint.** It doesn't have to be a spa. A curated playlist people can take home. A free tea station with a handwritten note about recovery. A 60-second breathing prompt after class. Small sensory moments signal that you understand wellness is bigger than the hour they spend with you.
 

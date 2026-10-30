@@ -5,7 +5,7 @@ counterpart: your-clients-want-more-one-modality-won-t-cut-it-anymore-0918
 title: "Your clients want more. One modality won't cut it anymore."
 seoTitle: "Hybrid Training Programs: How Studios Combine Modalities"
 topic: offer-programming
-description: "The fitness industry is blurring every line between disciplines — here's how coaches can stay ahead of the curve before their clients outgrow them."
+description: "The fitness industry is blurring every line between disciplines: here's how coaches can stay ahead of the curve before their clients outgrow them."
 pillar: move
 type: method
 format: analysis
@@ -29,17 +29,17 @@ tags: []
 
 ## The menu is changing whether you like it or not
 
-Your yoga clients are asking about Pilates. Your Pilates clients want strength work. Your strength clients are suddenly obsessed with post-meal walks. Nobody told them to diversify — they just did.
+Your yoga clients are asking about Pilates. Your Pilates clients want strength work. Your strength clients are suddenly obsessed with post-meal walks. Nobody told them to diversify: they just did.
 
-The business side of fitness is catching up fast. A Florida Crunch Fitness franchisee just moved into boutique yoga, according to The Business Journals. Chuze Fitness added reformer Pilates through a partnership with iFIT and Freemotion, per Athletech News. JetSet Pilates — a Pilates brand, let that sink in — launched new strength training class formats, also reported by Athletech News. These aren't random pivots. They're operators reading the room. The client who walked in for one thing now wants everything.
+The business side of fitness is catching up fast. A Florida Crunch Fitness franchisee just moved into boutique yoga, according to The Business Journals. Chuze Fitness added reformer Pilates through a partnership with iFIT and Freemotion, per Athletech News. JetSet Pilates (a Pilates brand, let that sink in) launched new strength training class formats, also reported by Athletech News. These aren't random pivots. They're operators reading the room. The client who walked in for one thing now wants everything.
 
 If gyms are cross-pollinating, your programming needs to as well.
 
 ## What's actually driving this
 
-Clients are more informed than they've ever been. A fitness coach quoted in the Hindustan Times recently ranked cardio formats from worst to best — breaking down everything from running to post-meal walks — and that piece travelled. People are reading, comparing, questioning. Another coach listed ten essential home workout tools in the Indian Express. That's your competition now: content that tells clients what they should be doing before they ask you.
+Clients are more informed than they've ever been. A fitness coach quoted in the Hindustan Times recently ranked cardio formats from worst to best, breaking down everything from running to post-meal walks, and that piece travelled. People are reading, comparing, questioning. Another coach listed ten essential home workout tools in the Indian Express. That's your competition now: content that tells clients what they should be doing before they ask you.
 
-Meanwhile, George Kruis — former pro rugby player turned supplement brand founder — told Real Business that his brand fourfive grew by meeting consumers where they already were, not where the industry assumed they'd be. The lesson isn't about supplements. It's about attention. Your clients' attention is fragmented across modalities, formats, and platforms. A coach who only speaks one fitness language is going to lose that attention.
+Meanwhile, George Kruis, former pro rugby player turned supplement brand founder, told Real Business that his brand fourfive grew by meeting consumers where they already were, not where the industry assumed they'd be. The lesson isn't about supplements. It's about attention. Your clients' attention is fragmented across modalities, formats, and platforms. A coach who only speaks one fitness language is going to lose that attention.
 
 This isn't a threat. It's a brief.
 
@@ -49,10 +49,10 @@ You don't need to become a yoga teacher, a Pilates instructor, and a reformer sp
 
 Here's a concrete starting point:
 
-**1. Audit your current clients' full movement week.** Ask them what else they're doing outside your sessions. You'll find yoga, walking, reformer classes, and home workouts already in the mix. Now you're not competing with those — you're contextualising them.
+**1. Audit your current clients' full movement week.** Ask them what else they're doing outside your sessions. You'll find yoga, walking, reformer classes, and home workouts already in the mix. Now you're not competing with those: you're contextualising them.
 
-**2. Pick one adjacent modality and get fluent in the basics.** Not certified necessarily — just conversational. If your clients are doing reformer Pilates, understand what it taxes, what it leaves undertrained, and how your sessions can complement it. JetSet Pilates adding strength training shows the demand is there. Meet it.
+**2. Pick one adjacent modality and get fluent in the basics.** Not certified necessarily, just conversational. If your clients are doing reformer Pilates, understand what it taxes, what it leaves undertrained, and how your sessions can complement it. JetSet Pilates adding strength training shows the demand is there. Meet it.
 
-**3. Give clients a ranked framework for their cardio.** The Hindustan Times coach got traction because they organised something clients were already confused about. Steal that format. Send a simple voice note, a short doc, a whiteboard video — your take on how their cardio stack should be ordered and why. You become the editor of their fitness life, not just one chapter in it.
+**3. Give clients a ranked framework for their cardio.** The Hindustan Times coach got traction because they organised something clients were already confused about. Steal that format. Send a simple voice note, a short doc, a whiteboard video: your take on how their cardio stack should be ordered and why. You become the editor of their fitness life, not just one chapter in it.
 
-The operators expanding into new formats are doing it because their clients demanded range. You have the advantage they don't — you know your clients by name. Use it before the next franchise does.
+The operators expanding into new formats are doing it because their clients demanded range. You have the advantage they don't: you know your clients by name. Use it before the next franchise does.

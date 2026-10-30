@@ -196,25 +196,25 @@ hero:
   chart: 0
 changelog:
   - { date: "21 Jun 2026", note: "Added the IDC shipment forecast and the smart-ring growth figure." }
-  - { date: "28 Jun 2026", note: "Integrity pass: corrected the market topline to GMInsights' $91.1bn (2026) — the prior ~$96bn was not supported by a named source. Updated shipments to IDC's Sept-2024 forecast (612.5M by 2028) and replaced the smartwatch-revenue figure with Statista's current series. Every figure now cites one named source with its own number." }
+  - { date: "28 Jun 2026", note: "Integrity pass: corrected the market topline to GMInsights' $91.1bn (2026); the prior ~$96bn was not supported by a named source. Updated shipments to IDC's Sept-2024 forecast (612.5M by 2028) and replaced the smartwatch-revenue figure with Statista's current series. Every figure now cites one named source with its own number." }
   - { date: "29 Jun 2026", note: "Correction: a refresh had briefly set the 2026 topline to GMInsights' 2025 figure ($83.5bn). Restored to the 2026 value ($91.1bn) the rest of the report cites." }
   - { date: "2026-09-28", note: "Auto-updated \"Smartwatch market revenue\" $40.6bn → $40.57bn from Statista (same source, high confidence). Revert from the email if wrong." }
   - { date: "2026-10-27", note: "Second edition, rebuilt as a monthly flagship. 13 charts from the Statista chart bank (eight studies: wearables in the US, fitness and activity trackers, smartwatches, wellness US/UK, fitness Germany/UK, sports equipment Europe), a client-tracking benchmark, and fresh public data: IDC Q1 2025 and January 2026 shipment counts, Oura's Series E, Whoop's Series G, Apple's FDA-cleared hypertension notifications. Topline moved from GMInsights' broad wearables figure to Statista's device-segment series so every chart and figure share one method; GMInsights kept as the cross-check." }
 sources:
-  - { label: "Statista — Wearables in the United States (study 166600): shipments, device revenue, users, ARPU, ownership, brand use", url: "https://www.statista.com/study/166600/wearables-in-the-united-states/" }
-  - { label: "Statista — Fitness and activity tracker (study 35598): wristwear revenue, growth, users, brand use by country, app rankings", url: "https://www.statista.com/study/35598/fitness-and-activity-tracker/" }
-  - { label: "Statista — Smartwatches dossier (study 36038): smartwatch revenue, growth, users, penetration, usage by country", url: "https://www.statista.com/study/36038/smartwatches-statista-dossier/" }
-  - { label: "Statista — Wellness industry in the US (study 165484): wearable use by age, gender, income (Morning Consult)", url: "https://www.statista.com/study/165484/wellness-industry-in-the-us/" }
-  - { label: "Statista — Fitness industry in Germany (study 67457): wearable sales volume and revenue (GfK / gfu / BVT)", url: "https://www.statista.com/study/67457/fitness-industry-in-germany/" }
-  - { label: "Statista — Wellness industry in the UK (study 166778): device revenue and users, brand awareness", url: "https://www.statista.com/study/166778/wellness-industry-in-the-uk/" }
-  - { label: "Statista — Fitness industry in the UK (study 39583): wearable use in selected countries, March 2024", url: "https://www.statista.com/study/39583/fitness-industry-in-the-united-kingdom-uk-statista-dossier/" }
-  - { label: "Statista — Sports and fitness equipment in Europe (study 109838): brand use in the Netherlands and Sweden", url: "https://www.statista.com/study/109838/sports-and-fitness-equipment-in-europe/" }
-  - { label: "IDC — 45.6M wrist-worn wearables shipped in Q1 2025, led by Huawei, Xiaomi and Apple (June 2025)", url: "https://my.idc.com/getdoc.jsp?containerId=prAP53613925" }
-  - { label: "IDC via Bloomberg / PYMNTS — Smart ring shipments 4.3M in 2025 (+49%), smartwatches 163M (+6%) (January 2026)", url: "https://www.pymnts.com/news/wearables/2026/smart-ring-shipments-projected-to-jump-49percent/" }
-  - { label: "Fierce Healthcare — Oura raises $900M Series E at $11bn; 5.5M rings sold, ~3M in 2025, $1bn 2025 revenue (October 2025)", url: "https://www.fiercehealthcare.com/health-tech/oura-raises-900m-series-e-oura-ring-sales-catapult" }
-  - { label: "Fortune / Yahoo Finance — Whoop raises $575M Series G at $10.1bn; 2.5M members, $1.1bn bookings run rate (March 2026)", url: "https://finance.yahoo.com/news/apple-watch-rival-whoop-is-raising-575-million-from-investors-including-cristiano-ronaldo-lebron-james-100052521.html" }
-  - { label: "HLTH — Apple receives FDA clearance for hypertension notifications on Apple Watch (September 2025)", url: "https://hlth.com/insights/news/apple-receives-fda-nod-for-hypertension-notification-feature-2025-09-16" }
-  - { label: "GMInsights — Wearables market 2026 to 2035 (cross-check for the broad-scope topline)", url: "https://www.gminsights.com/industry-analysis/wearables-market" }
+  - { label: "Statista, Wearables in the United States (study 166600): shipments, device revenue, users, ARPU, ownership, brand use", url: "https://www.statista.com/study/166600/wearables-in-the-united-states/" }
+  - { label: "Statista, Fitness and activity tracker (study 35598): wristwear revenue, growth, users, brand use by country, app rankings", url: "https://www.statista.com/study/35598/fitness-and-activity-tracker/" }
+  - { label: "Statista, Smartwatches dossier (study 36038): smartwatch revenue, growth, users, penetration, usage by country", url: "https://www.statista.com/study/36038/smartwatches-statista-dossier/" }
+  - { label: "Statista, Wellness industry in the US (study 165484): wearable use by age, gender, income (Morning Consult)", url: "https://www.statista.com/study/165484/wellness-industry-in-the-us/" }
+  - { label: "Statista, Fitness industry in Germany (study 67457): wearable sales volume and revenue (GfK / gfu / BVT)", url: "https://www.statista.com/study/67457/fitness-industry-in-germany/" }
+  - { label: "Statista, Wellness industry in the UK (study 166778): device revenue and users, brand awareness", url: "https://www.statista.com/study/166778/wellness-industry-in-the-uk/" }
+  - { label: "Statista, Fitness industry in the UK (study 39583): wearable use in selected countries, March 2024", url: "https://www.statista.com/study/39583/fitness-industry-in-the-united-kingdom-uk-statista-dossier/" }
+  - { label: "Statista, Sports and fitness equipment in Europe (study 109838): brand use in the Netherlands and Sweden", url: "https://www.statista.com/study/109838/sports-and-fitness-equipment-in-europe/" }
+  - { label: "IDC: 45.6M wrist-worn wearables shipped in Q1 2025, led by Huawei, Xiaomi and Apple (June 2025)", url: "https://my.idc.com/getdoc.jsp?containerId=prAP53613925" }
+  - { label: "IDC via Bloomberg / PYMNTS: Smart ring shipments 4.3M in 2025 (+49%), smartwatches 163M (+6%) (January 2026)", url: "https://www.pymnts.com/news/wearables/2026/smart-ring-shipments-projected-to-jump-49percent/" }
+  - { label: "Fierce Healthcare: Oura raises $900M Series E at $11bn; 5.5M rings sold, ~3M in 2025, $1bn 2025 revenue (October 2025)", url: "https://www.fiercehealthcare.com/health-tech/oura-raises-900m-series-e-oura-ring-sales-catapult" }
+  - { label: "Fortune / Yahoo Finance: Whoop raises $575M Series G at $10.1bn; 2.5M members, $1.1bn bookings run rate (March 2026)", url: "https://finance.yahoo.com/news/apple-watch-rival-whoop-is-raising-575-million-from-investors-including-cristiano-ronaldo-lebron-james-100052521.html" }
+  - { label: "HLTH: Apple receives FDA clearance for hypertension notifications on Apple Watch (September 2025)", url: "https://hlth.com/insights/news/apple-receives-fda-nod-for-hypertension-notification-feature-2025-09-16" }
+  - { label: "GMInsights: Wearables market 2026 to 2035 (cross-check for the broad-scope topline)", url: "https://www.gminsights.com/industry-analysis/wearables-market" }
 tags: ["wearables", "market-data", "recovery", "smart-rings", "germany"]
 ---
 

@@ -5,7 +5,7 @@ counterpart: profit-punches-ai-what-fitness-coaches-must-do-right-now-0804
 title: "Profit, Punches & AI: What Fitness Coaches Must Do Right Now"
 topic: market-moves
 newsTake: true
-description: "Six wild industry headlines reveal one uncomfortable truth about where the money — and the danger — is heading in fitness."
+description: "Six wild industry headlines reveal one uncomfortable truth about where the money, and the danger, is heading in fitness."
 pillar: build
 type: ai-automation
 format: analysis
@@ -35,13 +35,13 @@ And also: a gym membership dispute in Ahmedabad turned violent, with a businessm
 
 Same week. Same industry. Completely different planets.
 
-Here's the uncomfortable read: the businesses winning right now are the ones that got *boring fundamentals right* — membership volume, service expansion, supply chain. The chaos is coming from operators who skipped the boring stuff and jumped straight to hype, tech shortcuts, or assuming that a signed membership form is a relationship.
+Here's the uncomfortable read: the businesses winning right now are the ones that got *boring fundamentals right*, membership volume, service expansion, supply chain. The chaos is coming from operators who skipped the boring stuff and jumped straight to hype, tech shortcuts, or assuming that a signed membership form is a relationship.
 
 ## What's Actually Happening Under the Hood
 
-The Basic-Fit story is a low-cost, high-volume model grinding back to profitability. Not sexy. Just operationally tight. MASAJ raising £1.5M is a studio network betting on physical, human-touch services in an era everyone said would go digital-first. Aldous getting venture capital for supplements signals that product businesses built on community and digital distribution are still attractive — but only when the fundamentals are real.
+The Basic-Fit story is a low-cost, high-volume model grinding back to profitability. Not sexy. Just operationally tight. MASAJ raising £1.5M is a studio network betting on physical, human-touch services in an era everyone said would go digital-first. Aldous getting venture capital for supplements signals that product businesses built on community and digital distribution are still attractive, but only when the fundamentals are real.
 
-Meanwhile, the AI coaching story from qlsproctor.com.au is a warning shot. The legal community is now actively dissecting how AI-generated coaching advice performs when challenged. If a court can unpick AI guidance in a high-stakes trial, imagine what an angry member's lawyer does with an AI-generated training plan that preceded an injury. The Ahmedabad assault story, covered by The Times of India, is an extreme case — but it's a reminder that member conflict, when mishandled, escalates fast.
+Meanwhile, the AI coaching story from qlsproctor.com.au is a warning shot. The legal community is now actively dissecting how AI-generated coaching advice performs when challenged. If a court can unpick AI guidance in a high-stakes trial, imagine what an angry member's lawyer does with an AI-generated training plan that preceded an injury. The Ahmedabad assault story, covered by The Times of India, is an extreme case, but it's a reminder that member conflict, when mishandled, escalates fast.
 
 The pattern: operators chasing growth without the infrastructure to support it create the conditions for both legal and physical blowback.
 
@@ -51,7 +51,7 @@ The pattern: operators chasing growth without the infrastructure to support it c
 
 **2. Treat membership disputes like legal documents, not awkward conversations.** The Ahmedabad incident is an extreme example, but member conflict over billing, cancellations, and access is universal. Have a written escalation process. Train your front desk. Log disputes. A paper trail protects everyone.
 
-**3. Pick your growth model and actually resource it.** Basic-Fit scaled on volume. MASAJ is scaling on premium physical experience. Aldous is scaling on digital community and product. None of them are doing all three. Pick your lane, then build the operations — staff, systems, space — to actually service the growth you're chasing. Undercapitalized expansion is where the horror stories start.
+**3. Pick your growth model and actually resource it.** Basic-Fit scaled on volume. MASAJ is scaling on premium physical experience. Aldous is scaling on digital community and product. None of them are doing all three. Pick your lane, then build the operations (staff, systems, space) to actually service the growth you're chasing. Undercapitalized expansion is where the horror stories start.
 
 **4. Watch the supplement angle.** If you're a studio or coach with an engaged audience, the Aldous investment signals real appetite for branded, community-led wellness products. You don't need VC money to test a small product line. You need trust and an email list.
 

@@ -2,7 +2,7 @@
 urlSlug: fitness-is-fracturing-here-s-how-to-pick-your-lane-1009
 lang: "en"
 counterpart: fitness-is-fracturing-here-s-how-to-pick-your-lane-1009
-title: "Fitness Is Fracturing — Here's How to Pick Your Lane"
+title: "Fitness Is Fracturing: Here's How to Pick Your Lane"
 topic: strategy
 newsTake: true
 description: "Six funding stories reveal one clear signal: the middle of the market is dying, and knowing which edge to own could define your next year."
@@ -31,7 +31,7 @@ tags: []
 
 Look at where the money went this week. A mushroom-based wellness brand (SuperMush) pulled in $3 million, per Indian Startup News. An intimate wellness brand (GLORIAH) raised £600K, per Femtech Insider. A gym franchise announced $100 million in expansion plans, per 1News. And a no-referral AI breast ultrasound clinic launched at $349 a scan, per Hoodline.
 
-These are not random data points. They are a map. Capital is flowing hard to two opposite ends of the fitness and wellness spectrum — mass scale and radical niche — and quietly starving everything in between.
+These are not random data points. They are a map. Capital is flowing hard to two opposite ends of the fitness and wellness spectrum, mass scale and radical niche, and quietly starving everything in between.
 
 If your studio or coaching business is 'good for everyone,' that is not a positioning strategy. That is a waiting room.
 
@@ -41,20 +41,20 @@ On one end: the $100 million franchise play, reported by 1News, is a bet that co
 
 On the other end, you have SuperMush going deep on a specific functional wellness identity, GLORIAH owning intimate health as a category, and Eve Wellness laser-focused on one screening modality for one demographic. None of these are trying to be everything. They are trying to be *the* thing for someone specific.
 
-Then there is the Montana Outdoor story about a gym membership that comes with a golden retriever — yes, really. It sounds like a headline gag, but it is actually the sharpest illustration of the moment: even community and joy are now differentiators. The experience *around* fitness is becoming the product.
+Then there is the Montana Outdoor story about a gym membership that comes with a golden retriever: yes, really. It sounds like a headline gag, but it is actually the sharpest illustration of the moment: even community and joy are now differentiators. The experience *around* fitness is becoming the product.
 
-The middle — decent equipment, decent classes, decent price — is getting hollowed out from both sides.
+The middle (decent equipment, decent classes, decent price) is getting hollowed out from both sides.
 
 ## Your Move: Pick an Edge and Name It Out Loud
 
 You do not need $3 million or a franchise war chest to act on this. You need clarity. Here is a concrete exercise you can run this week:
 
-**Step 1 — Write down who your last 10 clients actually were.** Not who you hoped to attract. Who showed up, paid, and came back. Age, goal, lifestyle, what else they spend money on. Look for the pattern you have been ignoring.
+**Step 1: Write down who your last 10 clients actually were.** Not who you hoped to attract. Who showed up, paid, and came back. Age, goal, lifestyle, what else they spend money on. Look for the pattern you have been ignoring.
 
-**Step 2 — Find the category word.** SuperMush has 'functional wellness.' GLORIAH has 'intimate wellness.' Eve Wellness has 'preventive screening.' What is your one-phrase category? It should make some people say 'that is not for me' — that is how you know it is working.
+**Step 2: Find the category word.** SuperMush has 'functional wellness.' GLORIAH has 'intimate wellness.' Eve Wellness has 'preventive screening.' What is your one-phrase category? It should make some people say 'that is not for me': that is how you know it is working.
 
-**Step 3 — Audit your messaging for the word 'everyone.'** Every time your website or social bio says 'for everyone' or 'all fitness levels,' replace it with the specific person from Step 1. Specificity is not exclusion. It is a magnet.
+**Step 3: Audit your messaging for the word 'everyone.'** Every time your website or social bio says 'for everyone' or 'all fitness levels,' replace it with the specific person from Step 1. Specificity is not exclusion. It is a magnet.
 
-**Step 4 — Add one tangible signal.** The golden retriever is a signal. It says something true about the experience before anyone walks in the door. What is your version? A playlist genre, a recovery ritual, a community ritual that only *your* people would recognize?
+**Step 4: Add one tangible signal.** The golden retriever is a signal. It says something true about the experience before anyone walks in the door. What is your version? A playlist genre, a recovery ritual, a community ritual that only *your* people would recognize?
 
 The funding landscape is telling you where attention and money are moving. You do not have to raise a round to respond. You just have to stop being forgettable.

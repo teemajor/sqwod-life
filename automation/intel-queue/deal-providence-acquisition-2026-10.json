@@ -1,8 +1,9 @@
 {
   "id": "deal-providence-acquisition-2026-10",
   "kind": "deal",
-  "status": "pending",
+  "status": "approved",
   "title": "Fitness Park Group: acquisition",
   "dealId": "providence-acquisition-2026-10",
-  "createdAt": "2026-10-30"
+  "createdAt": "2026-10-30",
+  "decidedAt": "2026-10-30T14:17:47.249Z"
 }
