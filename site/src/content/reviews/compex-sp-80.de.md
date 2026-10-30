@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de: SP-8.0-Varianten-ASINs (z.B. B09GFDGJT9) + günstigeres Sport Elite B00A2O44CY. Verkäufer+Bild per SiteStripe prüfen. 999–1200 €. EMS-Evidenz GEMISCHT — als Trainings-Ergänzung, kein Standalone-Shortcut.
-verdict: "Das leistungsfähigste kabellose EMS-Gerät von Compex, von Nutzern geliebt — aber mit ~900 €+ eine Premium-Trainingsergänzung, kein belegter Leistungs- oder Recovery-Shortcut."
+verdict: "Das leistungsfähigste kabellose EMS-Gerät von Compex, von Nutzern geliebt, aber mit ~900 €+ eine Premium-Trainingsergänzung, kein belegter Leistungs- oder Recovery-Shortcut."
 sqwodScore: 73
 confidence: Medium
 crowd:
@@ -40,17 +40,17 @@ value:
   bestPrice: 890.39
   currency: EUR
 pros:
-  - "Wirklich kabellos mit 4 unabhängigen Modulen — Bewegungsfreiheit"
+  - "Wirklich kabellos mit 4 unabhängigen Modulen: Bewegungsfreiheit"
   - "Größte Programm-Bibliothek der Reihe (40 Programme: Kraft, Recovery, TENS, Reha)"
   - "Mi-Sensor-Autokalibrierung passt Intensität je Nutzer an"
   - "Starke Crowd-Stimmung (4,3/5, ~480 Amazon.de-Bewertungen)"
 cons:
-  - "Teuer — 890–1.200 €"
+  - "Teuer: 890–1.200 €"
   - "Selbstklebende Elektroden sind Verbrauchsmaterial (laufende Kosten)"
   - "Gemischte Evidenz: EMS baut Kraft als ERGÄNZUNG zum echten Training, nicht standalone; Recovery-Evidenz dünner"
 whoFor:
-  buy: "Du bist ambitioniert und nutzt EMS neben echtem Training für ergänzende Kraft, gezielte TENS-Schmerzlinderung und Recovery — und kannst den Preis tragen."
-  skip: "Du willst einen günstigen Standalone-Shortcut für Fitness oder Recovery — ein kleineres Compex (Sport Elite) oder Kabelgerät liefert den Großteil des belegten Nutzens günstiger."
+  buy: "Du bist ambitioniert und nutzt EMS neben echtem Training für ergänzende Kraft, gezielte TENS-Schmerzlinderung und Recovery, und kannst den Preis tragen."
+  skip: "Du willst einen günstigen Standalone-Shortcut für Fitness oder Recovery: ein kleineres Compex (Sport Elite) oder Kabelgerät liefert den Großteil des belegten Nutzens günstiger."
 asset:
   type: images
   images:
@@ -59,6 +59,6 @@ asset:
 tags: ["recovery", "ems", "muscle-stimulation"]
 ---
 
-Das SP 8.0 Wireless ist die Spitze von Compex’ Muskelstim-Reihe: vier kabellose Module, 40 Programme für Kraft, TENS-Schmerz und Recovery sowie Mi-Sensor-Autokalibrierung. Nutzer bewerten es hoch (4,3/5 über ~480 Bewertungen) — als vielseitiges, wirklich kabelloses Gerät das leistungsfähigste von Compex.
+Das SP 8.0 Wireless ist die Spitze von Compex’ Muskelstim-Reihe: vier kabellose Module, 40 Programme für Kraft, TENS-Schmerz und Recovery sowie Mi-Sensor-Autokalibrierung. Nutzer bewerten es hoch (4,3/5 über ~480 Bewertungen): als vielseitiges, wirklich kabelloses Gerät das leistungsfähigste von Compex.
 
-Zu Wissenschaft und Preis aber ehrlich sein: Peer-Review-Arbeiten zeigen, dass EMS Kraft als Ergänzung zum willkürlichen Training aufbaut — nicht als Standalone-Shortcut — und die Recovery-Evidenz ist noch dünner. Mit ~900 €+ plus Verbrauchselektroden kaufst du es für Bequemlichkeit und Vielseitigkeit neben dem Training, nicht für Wunder.
+Zu Wissenschaft und Preis aber ehrlich sein: Peer-Review-Arbeiten zeigen, dass EMS Kraft als Ergänzung zum willkürlichen Training aufbaut (nicht als Standalone-Shortcut) und die Recovery-Evidenz ist noch dünner. Mit ~900 €+ plus Verbrauchselektroden kaufst du es für Bequemlichkeit und Vielseitigkeit neben dem Training, nicht für Wunder.

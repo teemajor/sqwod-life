@@ -14,7 +14,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # HINWEIS: EUR-Abopreise waren zum RechercheZeitpunkt nicht offiziell bestätigt — vor Veröffentlichung prüfen.
-verdict: "14 Tage Akku, ein 7 % kleineres Band, EKG auf Abruf und tägliche Blutdruck-Insights — der größte Whoop-Sprung bisher. Weiterhin ohne Display, weiterhin nur im Abo, und die Herzfrequenz-Genauigkeit ist noch nicht ganz Spitzenklasse."
+verdict: "14 Tage Akku, ein 7 % kleineres Band, EKG auf Abruf und tägliche Blutdruck-Insights: der größte Whoop-Sprung bisher. Weiterhin ohne Display, weiterhin nur im Abo, und die Herzfrequenz-Genauigkeit ist noch nicht ganz Spitzenklasse."
 sqwodScore: 82
 confidence: Medium
 crowd:
@@ -41,17 +41,17 @@ value:
   bestPrice: 199
   currency: EUR
   priceType: yearly
-  subscription: "One 199 €/Jahr · Peak 264 €/Jahr · Life (MG) 399 €/Jahr — Hardware inklusive"
+  subscription: "One 199 €/Jahr · Peak 264 €/Jahr · Life (MG) 399 €/Jahr: Hardware inklusive"
 pros:
-  - "14+ Tage Akku (vorher ~4–5) — lädt am Handgelenk"
+  - "14+ Tage Akku (vorher ~4–5): lädt am Handgelenk"
   - "EKG auf Abruf + tägliche Blutdruck-Insights; Healthspan-Metriken"
   - "Erstklassiges Strain- & Recovery-Coaching"
 cons:
   - "Herzfrequenz-Genauigkeit noch nicht Spitzenklasse"
-  - "Nur im Abo, >199 €/Jahr — Hardware nicht einzeln kaufbar"
+  - "Nur im Abo, >199 €/Jahr: Hardware nicht einzeln kaufbar"
   - "Kein Display, kein integriertes GPS; alte 4.0-Bänder passen nicht"
 whoFor:
-  buy: "Du trainierst nach Readiness und willst die tiefsten Recovery- und Strain-Analysen in einem Band ohne Display — jetzt mit medizinischem EKG und Blutdruck-Metriken."
+  buy: "Du trainierst nach Readiness und willst die tiefsten Recovery- und Strain-Analysen in einem Band ohne Display: jetzt mit medizinischem EKG und Blutdruck-Metriken."
   skip: "Du willst ein Display, integriertes GPS oder einen Einmalkauf statt einer Mitgliedschaft."
 asset:
   type: images
@@ -63,4 +63,4 @@ tags: ["wearables", "recovery", "strain", "smart-band"]
 
 Whoop 5.0 (zusammen mit dem medizinischen Whoop MG erschienen) ist der größte Sprung in der Geschichte der Reihe. Der Akku steigt von rund vier bis fünf Tagen auf beworbene 14-plus dank eines Ladepacks am Handgelenk, das Band ist etwa 7 % kleiner, der Sensor misst 26-mal pro Sekunde, und dazu kommen FDA-freigegebenes EKG, tägliche Blutdruck-Insights und Longevity-Metriken (Healthspan). Für Athlet:innen, die nach Readiness trainieren, bleibt die Coaching-Tiefe das Argument.
 
-Zwei Dinge bremsen es. Tester finden die Herzfrequenz-Genauigkeit weiterhin nicht ganz auf Spitzenniveau, und es bleibt reines Abo — die Hardware kommt mit der Mitgliedschaft, aber es gibt keinen Weg aus den laufenden Kosten. Ohne Display und ohne integriertes GPS ist es ein reines Recovery-Instrument, kein Allrounder.
+Zwei Dinge bremsen es. Tester finden die Herzfrequenz-Genauigkeit weiterhin nicht ganz auf Spitzenniveau, und es bleibt reines Abo: die Hardware kommt mit der Mitgliedschaft, aber es gibt keinen Weg aus den laufenden Kosten. Ohne Display und ohne integriertes GPS ist es ein reines Recovery-Instrument, kein Allrounder.

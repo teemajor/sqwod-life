@@ -18,8 +18,8 @@ const partners: { network: string; brands: string[] }[] = [
   { network: 'Awin', brands: ['Optimum Nutrition'] },
   { network: 'Amazon', brands: [
     lang === 'de'
-      ? 'Amazon.de-Partnerprogramm (Partner-ID sqwod-21) — betrifft jeden Amazon-Link auf dieser Seite'
-      : 'Amazon.de Associates (tag sqwod-21) — applies to every Amazon link on this site',
+      ? 'Amazon.de-Partnerprogramm (Partner-ID sqwod-21): betrifft jeden Amazon-Link auf dieser Seite'
+      : 'Amazon.de Associates (tag sqwod-21): applies to every Amazon link on this site',
   ] },
 ];
 
@@ -29,11 +29,11 @@ const T = {
     crumb: 'Disclosure',
     lede: 'sqwod.life may earn a commission when you buy through links on Sqwod Verified pages. That is advertising, and we label it: affiliate links carry rel="sponsored" and an "Affiliate" tag on the page.',
     firewall: 'The commission never touches the score.',
-    firewallBody: 'The Sqwod Score is 45% Crowd Signal, 40% Sqwod Assessment and 15% Value, and it is calculated the same way whether or not a commission exists. We have declined, been declined by, or simply never approached most of the brands we rank — and several products we rate highest pay us nothing at all. If that ever stops being true, this page changes first.',
+    firewallBody: 'The Sqwod Score is 45% Crowd Signal, 40% Sqwod Assessment and 15% Value, and it is calculated the same way whether or not a commission exists. We have declined, been declined by, or simply never approached most of the brands we rank, and several products we rate highest pay us nothing at all. If that ever stops being true, this page changes first.',
     who: 'Who we have a commercial relationship with',
     whoBody: 'Current as of',
     rest: 'Everything else is listed on merit',
-    restBody: 'A product with no partner programme behind it is linked plainly, with no tracking and no commission. It is on the shelf because it earned a place there. Brands whose applications we were declined for are treated exactly the same way — the rejection has no bearing on how they are scored or ranked.',
+    restBody: 'A product with no partner programme behind it is linked plainly, with no tracking and no commission. It is on the shelf because it earned a place there. Brands whose applications we were declined for are treated exactly the same way: the rejection has no bearing on how they are scored or ranked.',
     method: 'Our methodology',
   },
   de: {
@@ -41,16 +41,16 @@ const T = {
     crumb: 'Transparenz',
     lede: 'sqwod.life erhält ggf. eine Provision, wenn du über Links auf Sqwod-Verified-Seiten kaufst. Das ist Werbung, und wir kennzeichnen sie: Affiliate-Links tragen rel="sponsored" und auf der Seite den Hinweis „Anzeige / Affiliate".',
     firewall: 'Die Provision berührt den Score nie.',
-    firewallBody: 'Der Sqwod Score besteht zu 45 % aus Crowd Signal, zu 40 % aus der Sqwod-Bewertung und zu 15 % aus Value — und wird identisch berechnet, ob eine Provision existiert oder nicht. Die meisten Marken, die wir bewerten, haben wir abgelehnt, sie uns, oder wir haben sie nie angefragt; mehrere unserer bestbewerteten Produkte zahlen uns überhaupt nichts. Sollte das je nicht mehr stimmen, ändert sich zuerst diese Seite.',
+    firewallBody: 'Der Sqwod Score besteht zu 45 % aus Crowd Signal, zu 40 % aus der Sqwod-Bewertung und zu 15 % aus Value, und wird identisch berechnet, ob eine Provision existiert oder nicht. Die meisten Marken, die wir bewerten, haben wir abgelehnt, sie uns, oder wir haben sie nie angefragt; mehrere unserer bestbewerteten Produkte zahlen uns überhaupt nichts. Sollte das je nicht mehr stimmen, ändert sich zuerst diese Seite.',
     who: 'Mit wem wir eine kommerzielle Beziehung haben',
     whoBody: 'Stand',
     rest: 'Alles andere ist auf Empfehlung gelistet',
-    restBody: 'Ein Produkt ohne Partnerprogramm wird schlicht verlinkt — ohne Tracking, ohne Provision. Es steht im Regal, weil es sich den Platz verdient hat. Marken, deren Programme uns abgelehnt haben, behandeln wir exakt genauso: Die Ablehnung hat keinen Einfluss auf Bewertung oder Ranking.',
+    restBody: 'Ein Produkt ohne Partnerprogramm wird schlicht verlinkt, ohne Tracking, ohne Provision. Es steht im Regal, weil es sich den Platz verdient hat. Marken, deren Programme uns abgelehnt haben, behandeln wir exakt genauso: Die Ablehnung hat keinen Einfluss auf Bewertung oder Ranking.',
     method: 'Unsere Methodik',
   },
 }[lang];
 ---
-<Base lang={lang} title={`${T.title} — Sqwod Verified`} active="verified">
+<Base lang={lang} title={`${T.title} | Sqwod Verified`} active="verified">
   <div class="measure">
     <div class="crumb">Sqwod Verified / {T.crumb}</div>
     <h1>{T.title}</h1>

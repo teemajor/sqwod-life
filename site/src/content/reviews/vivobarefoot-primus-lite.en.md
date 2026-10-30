@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Awin DE (Vivobarefoot) — join on Tee's Awin account. €115 street (RRP €160, historic low ~€96). Brand-direct vivobarefoot.com/de until Awin link wired.
-verdict: "The Vivobarefoot Primus Lite III is the reference barefoot gym shoe: a wafer-thin, zero-drop platform with class-leading ground feel that makes it superb for lifting, functional training and hard-floor work. It is polarizing though — the adaptation curve is real, versatility is limited, and the price is steep for what it is."
+verdict: "The Vivobarefoot Primus Lite III is the reference barefoot gym shoe: a wafer-thin, zero-drop platform with class-leading ground feel that makes it superb for lifting, functional training and hard-floor work. It is polarizing though: the adaptation curve is real, versatility is limited, and the price is steep for what it is."
 sqwodScore: 76
 confidence: High
 crowd:
@@ -47,7 +47,7 @@ pros:
   - "Very light and packable"
 cons:
   - "Steep price for a minimalist shoe"
-  - "Real adaptation period — calves and feet need weeks to adjust"
+  - "Real adaptation period: calves and feet need weeks to adjust"
   - "Poor on loose, wet or trail surfaces; low versatility"
   - "No gusseted tongue, lockdown could be better"
 whoFor:
@@ -66,4 +66,4 @@ tags: ["footwear", "barefoot", "training"]
 
 The Primus Lite III is Vivobarefoot's most-reviewed training model and, per OutdoorGearLab, their pick for Best Barefoot Gym Shoe (74/100). Its appeal is simple: a 3mm puncture-resistant sole with zero drop puts your foot as close to the floor as a shoe reasonably allows. For squats, deadlifts and Olympic-style lifting that flat, stable base and the direct ground feedback are genuinely excellent, and the wide anatomical toebox lets your toes splay for balance. It is a B-Corp product built largely from recycled materials, and reviewers consistently praise the upper and outsole durability plus grip on gym floors.
 
-Be honest with yourself about the trade-offs. Barefoot shoes are polarizing and this one is no exception: coming from cushioned trainers you need weeks — often a couple of months — to build calf and foot strength before long sessions feel comfortable, and rushing it invites soreness. Versatility is the other catch. OutdoorGearLab and others note it feels slick on loose or wet ground and out of its depth on trails, so it is best treated as a dedicated gym and hard-surface shoe rather than an all-rounder. At roughly €115 street (RRP ~€160) it is premium for a minimalist shoe, which is the most common gripe — but for the right lifter it is close to a category benchmark.
+Be honest with yourself about the trade-offs. Barefoot shoes are polarizing and this one is no exception: coming from cushioned trainers you need weeks (often a couple of months) to build calf and foot strength before long sessions feel comfortable, and rushing it invites soreness. Versatility is the other catch. OutdoorGearLab and others note it feels slick on loose or wet ground and out of its depth on trails, so it is best treated as a dedicated gym and hard-surface shoe rather than an all-rounder. At roughly €115 street (RRP ~€160) it is premium for a minimalist shoe, which is the most common gripe, but for the right lifter it is close to a category benchmark.

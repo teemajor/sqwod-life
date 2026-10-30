@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Prior-gen value pick (current = Nimbus 28, €200). Amazon.de ASIN B0D79V2KV9 (men, one colour). Verify seller+image via SiteStripe. Shoes: many size/colour ASINs — prefer brand/Amazon-sold. For now: brand-direct + fallback.
-verdict: "A supremely comfortable, stable max-cushion daily trainer for easy miles — best bought on discount as the outgoing model."
+verdict: "A supremely comfortable, stable max-cushion daily trainer for easy miles: best bought on discount as the outgoing model."
 sqwodScore: 83
 confidence: Medium
 crowd:
@@ -40,16 +40,16 @@ value:
   bestPrice: 129.90
   currency: EUR
 pros:
-  - "Plush, shock-absorbing ride — excellent for easy and recovery miles"
+  - "Plush, shock-absorbing ride: excellent for easy and recovery miles"
   - "Surprisingly stable for a max-stack neutral shoe"
   - "Breathable engineered-mesh upper, comfortable and true to size"
   - "Durable, premium build"
 cons:
-  - "Heavy (~300 g) with low energy return — no pop for faster paces"
+  - "Heavy (~300 g) with low energy return, no pop for faster paces"
   - "A minimal update over the 26; only makes sense on discount"
 whoFor:
   buy: "You coach runners who want maximum underfoot protection for easy days, long slow distance, or higher-mileage and heavier runners."
-  skip: "You want one lively do-it-all trainer with pop for tempo work — look at the Novablast or a plated shoe."
+  skip: "You want one lively do-it-all trainer with pop for tempo work: look at the Novablast or a plated shoe."
 asset:
   type: images
   images:
@@ -64,4 +64,4 @@ tags: ["apparel", "running", "shoes"]
 
 The Gel-Nimbus is ASICS’ 27-generation flagship, and the 27 is the definition of a plush, protective daily trainer: max cushioning, a stable ride and a durable build that soaks up easy miles. For a coach recommending a forgiving shoe for recovery days, it is a foolproof pick.
 
-Just know what it is not — at ~300 g with modest energy return it has no interest in going fast. And with the Nimbus 28 now current at €200, the 27 makes most sense as the discounted value buy rather than at full RRP.
+Just know what it is not: at ~300 g with modest energy return it has no interest in going fast. And with the Nimbus 28 now current at €200, the 27 makes most sense as the discounted value buy rather than at full RRP.

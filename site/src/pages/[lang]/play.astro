@@ -10,22 +10,22 @@ const lang = Astro.params.lang as Lang;
 const c = lang === 'de' ? {
   title: 'Sqwod Readiness Tap',
   blurb: 'Wie wach bist du heute? Der psychomotorische Vigilanztest (PVT) ist der Goldstandard, mit dem Schlafforscher Wachheit und Müdigkeit messen. Fünf Runden, 30 Sekunden, ein ehrlicher Wert.',
-  start: 'Test starten', wait: 'Warte auf das Signal …', tapNow: 'TAP!', tooSoon: 'Zu früh — warte aufs Signal.', tapToStart: 'Tippe, um zu starten',
+  start: 'Test starten', wait: 'Warte auf das Signal …', tapNow: 'TAP!', tooSoon: 'Zu früh: warte aufs Signal.', tapToStart: 'Tippe, um zu starten',
   round: 'Runde', of: 'von', avg: 'Ø Reaktionszeit', best: 'Bestwert', again: 'Nochmal', ms: 'ms',
-  sci: 'Wissenschaft: Der PVT misst die Reaktionszeit auf Zufallssignale — sensibel für Schlafmangel und Erschöpfung. Über ~500 ms gelten als „Lapse“.',
+  sci: 'Wissenschaft: Der PVT misst die Reaktionszeit auf Zufallssignale, sensibel für Schlafmangel und Erschöpfung. Über ~500 ms gelten als „Lapse“.',
   bands: ['Scharf', 'Solide', 'Neblig', 'Ausgelaugt'],
-  verdicts: ['Du bist wach. Geh trainieren.', 'Solide. Kaffee optional.', 'Etwas neblig — Pause oder Wasser.', 'Ausgelaugt. Erholung vor Intensität.'],
+  verdicts: ['Du bist wach. Geh trainieren.', 'Solide. Kaffee optional.', 'Etwas neblig: Pause oder Wasser.', 'Ausgelaugt. Erholung vor Intensität.'],
 } : {
   title: 'Sqwod Readiness Tap',
   blurb: "How sharp are you today? The Psychomotor Vigilance Task (PVT) is the gold standard sleep scientists use to measure alertness and fatigue. Five rounds, 30 seconds, one honest number.",
-  start: 'Start test', wait: 'Wait for the signal…', tapNow: 'TAP!', tooSoon: 'Too soon — wait for the signal.', tapToStart: 'Tap to start',
+  start: 'Start test', wait: 'Wait for the signal…', tapNow: 'TAP!', tooSoon: 'Too soon: wait for the signal.', tapToStart: 'Tap to start',
   round: 'Round', of: 'of', avg: 'Avg reaction', best: 'Personal best', again: 'Go again', ms: 'ms',
-  sci: 'The science: the PVT measures reaction time to random signals — highly sensitive to sleep loss and fatigue. Anything over ~500 ms counts as a lapse.',
+  sci: 'The science: the PVT measures reaction time to random signals, highly sensitive to sleep loss and fatigue. Anything over ~500 ms counts as a lapse.',
   bands: ['Sharp', 'Solid', 'Foggy', 'Run-down'],
-  verdicts: ['You\'re wired. Go train.', 'Solid. Coffee optional.', 'A little foggy — pause or hydrate.', 'Run-down. Recover before intensity.'],
+  verdicts: ['You\'re wired. Go train.', 'Solid. Coffee optional.', 'A little foggy: pause or hydrate.', 'Run-down. Recover before intensity.'],
 };
 ---
-<Base lang={lang} title={c.title + ' — Sqwod'} description={c.blurb} active="play">
+<Base lang={lang} title={c.title + ' | Sqwod'} description={c.blurb} active="play">
   <div class="crumb">Sqwod · Play</div>
   <h1 style="margin:0 0 8px">{c.title}</h1>
   <p class="sub" style="max-width:60ch;margin:0 0 18px">{c.blurb}</p>

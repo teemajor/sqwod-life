@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Deutsche Marke. Amazon.de ASIN B0057ED9AM (500 g). Verkäufer+Bild per SiteStripe prüfen. HINWEIS: ESN Ultrapure ist NICHT das Creapure-SKU (separates ESN-Produkt, B01J5HMMQS). ~30 €/500g, Straße ab ~22 €.
-verdict: "Ein sauberes, veganes, laborgeprüftes und fair bepreistes Kreatin-Monohydrat — das am besten belegte Supplement im Sport, richtig gemacht."
+verdict: "Ein sauberes, veganes, laborgeprüftes und fair bepreistes Kreatin-Monohydrat: das am besten belegte Supplement im Sport, richtig gemacht."
 sqwodScore: 87
 confidence: High
 crowd:
@@ -41,14 +41,14 @@ value:
   currency: EUR
 pros:
   - "Die Zutatenklasse mit der stärksten Evidenzbasis aller Sport-Supplements"
-  - "Laborgeprüft und auf der Kölner Liste — sicher für getestete Athlet:innen"
+  - "Laborgeprüft und auf der Kölner Liste: sicher für getestete Athlet:innen"
   - "Vegan, mikrofein, geschmacksneutral, löst sich gut"
-  - "Fair bepreist — im Markt ab ~0,16 € pro Portion"
+  - "Fair bepreist: im Markt ab ~0,16 € pro Portion"
 cons:
-  - "Kein Marken-Creapure — wer gezielt Creapure will, wählt ESNs separates SKU"
+  - "Kein Marken-Creapure: wer gezielt Creapure will, wählt ESNs separates SKU"
   - "Offizieller esn.com-Preis liegt über den günstigsten Händlern"
 whoFor:
-  buy: "Du (oder deine Kund:innen) willst ein sauberes, dopingsicheres, fair bepreistes Kreatin — das eine Basis-Supplement, das fast jedem zu empfehlen ist."
+  buy: "Du (oder deine Kund:innen) willst ein sauberes, dopingsicheres, fair bepreistes Kreatin: das eine Basis-Supplement, das fast jedem zu empfehlen ist."
   skip: "Du brauchst gezielt Marken-Creapure oder dosierst bereits 3–5 g Kreatin aus anderer Quelle."
 asset:
   type: images
@@ -58,6 +58,6 @@ asset:
 tags: ["supplements", "creatine", "protein"]
 ---
 
-Kreatin-Monohydrat ist das seltene Supplement, das den Hype tatsächlich verdient — die ISSN nennt es das wirksamste verfügbare Ergogen für hochintensive Leistung und Magermasse — und ESNs Ultrapure ist eine saubere, laborgeprüfte, vegane, Kölner-Liste-Version zu wirklich fairem Preis (~0,16–0,21 €/Portion). Für Coaches, die einen Basis-Stack aufbauen, ist das die einfache, evidenzbasierte Empfehlung.
+Kreatin-Monohydrat ist das seltene Supplement, das den Hype tatsächlich verdient: die ISSN nennt es das wirksamste verfügbare Ergogen für hochintensive Leistung und Magermasse, und ESNs Ultrapure ist eine saubere, laborgeprüfte, vegane, Kölner-Liste-Version zu wirklich fairem Preis (~0,16–0,21 €/Portion). Für Coaches, die einen Basis-Stack aufbauen, ist das die einfache, evidenzbasierte Empfehlung.
 
-Ein ehrlicher Hinweis: „Ultrapure“ ist ESNs eigenes Kreatin, nicht das Marken-Creapure — wer gezielt Creapure will, findet bei ESN ein separates SKU. Ansonsten gilt: Monohydrat ist Monohydrat — 3–5 g täglich, geprüft, günstig, fertig.
+Ein ehrlicher Hinweis: „Ultrapure“ ist ESNs eigenes Kreatin, nicht das Marken-Creapure, wer gezielt Creapure will, findet bei ESN ein separates SKU. Ansonsten gilt: Monohydrat ist Monohydrat, 3–5 g täglich, geprüft, günstig, fertig.

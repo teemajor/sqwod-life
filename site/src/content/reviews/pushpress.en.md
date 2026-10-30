@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: false
 draft: false
 # US SaaS (pushpress.com). Listed on merit (affiliate:false), routes to Sqwod OS. Payments = Stripe/USD; EU/DE fit (SEPA, German UI, GDPR) UNVERIFIED/likely poor — flagged honestly.
-verdict: "A top-rated, all-in-one gym platform with a genuinely useful free tier — excellent for US operators, but built around US/Stripe payments rather than the European market."
+verdict: "A top-rated, all-in-one gym platform with a genuinely useful free tier: excellent for US operators, but built around US/Stripe payments rather than the European market."
 sqwodScore: 77
 confidence: Medium
 crowd:
@@ -44,12 +44,12 @@ value:
   low: 0
   subscription: "$0 free (to 100 members) · Pro $159/mo · Max $229/mo"
 pros:
-  - "Genuine free tier up to 100 members — rare in the category"
+  - "Genuine free tier up to 100 members: rare in the category"
   - "Strong operator satisfaction (4.7 Capterra / 4.8 G2)"
   - "All-in-one: billing, check-in, apps and scheduling in one system"
   - "Well-rated member app on iOS"
 cons:
-  - "US-focused payments — Stripe/USD fee tables, no documented EUR pricing"
+  - "US-focused payments: Stripe/USD fee tables, no documented EUR pricing"
   - "No documented SEPA, German-language UI or explicit GDPR tooling"
   - "Android member app rated only 3.4/5"
 whoFor:
@@ -65,4 +65,4 @@ tags: ["studio-tools", "gym-management", "software"]
 
 PushPress is one of the best-rated gym-management platforms going: member management, automated billing, check-in and member apps in one system, with a genuinely useful free tier up to 100 members and high operator scores on Capterra and G2. For a US operator, it is a strong all-in-one.
 
-For a German studio, the honest caveat is localization. Pricing and payments run on Stripe in USD, and there is no documented EUR/SEPA support, German-language interface or explicit GDPR tooling. We list it on merit as a category leader — but DE operators should verify EU payment and language support directly before switching.
+For a German studio, the honest caveat is localization. Pricing and payments run on Stripe in USD, and there is no documented EUR/SEPA support, German-language interface or explicit GDPR tooling. We list it on merit as a category leader, but DE operators should verify EU payment and language support directly before switching.

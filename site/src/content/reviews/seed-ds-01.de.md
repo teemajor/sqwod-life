@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC-Abo, NICHT offiziell auf Amazon. Kein Direktversand nach DE/EU (Paketweiterleitung + 19% MwSt). /go beim Publish: seed.com (Impact/CJ/direct offen). On-site 4,6★/10k+ ist markeneigen. Klinische Evidenz ist herstellerfinanziert — Vorbehalt beibehalten.
-verdict: "Ein hochwertiges, gut formuliertes Synbiotikum mit echten (wenn auch herstellerfinanzierten) Studien und starken Kundenbewertungen — doch das ~50-$-Abo und kein Direktversand nach Deutschland machen es lokal schwer verkäuflich."
+verdict: "Ein hochwertiges, gut formuliertes Synbiotikum mit echten (wenn auch herstellerfinanzierten) Studien und starken Kundenbewertungen, doch das ~50-$-Abo und kein Direktversand nach Deutschland machen es lokal schwer verkäuflich."
 sqwodScore: 76
 confidence: Medium
 crowd:
@@ -45,11 +45,11 @@ value:
 pros:
   - "Breite 24-Stämme-Formel (53,64 Mrd. AFU) mit säureschützender ViaCap-Kapsel"
   - "Lagerstabil, vegan, laborgeprüft (Schwermetalle, Allergene, Glyphosat)"
-  - "Das Unternehmen hat echte RCTs zur Gesamtformel veröffentlicht — in der Kategorie selten"
+  - "Das Unternehmen hat echte RCTs zur Gesamtformel veröffentlicht: in der Kategorie selten"
   - "Starke Kundenstimmung (4,6★, 10k+ on-site)"
 cons:
-  - "Abo-first, ~49,99 $/Monat — teuer gegenüber Regal-Konkurrenz"
-  - "Kein Direktversand nach EU/Deutschland — Paketweiterleitung + 19% MwSt erhöhen die echten Kosten"
+  - "Abo-first, ~49,99 $/Monat: teuer gegenüber Regal-Konkurrenz"
+  - "Kein Direktversand nach EU/Deutschland: Paketweiterleitung + 19% MwSt erhöhen die echten Kosten"
   - "Klinische Evidenz ist herstellerfinanziert und kurzfristig"
 whoFor:
   buy: "Du willst ein wissenschaftsnahes, breit aufgestelltes tägliches Synbiotikum und bist mit einem wiederkehrenden ~50-$-Abo einverstanden."
@@ -62,6 +62,6 @@ asset:
 tags: ["supplements", "darmgesundheit", "probiotikum"]
 ---
 
-Seeds DS-01 ist das Probiotikum, das „Synbiotikum" zum Marketingwort machte — und die Formulierung untermauert den Hype stärker als die meisten. 24 Stämme (53,64 Mrd. AFU) stecken in einer verschachtelten ViaCap-Kapsel, die die Magensäure überstehen soll; das Produkt ist lagerstabil, vegan und laborgeprüft auf Schwermetalle, Allergene und Glyphosat. Entscheidend: Seed hat tatsächlich randomisierte kontrollierte Studien zur Gesamtformel veröffentlicht — eine Hürde, die fast kein Regal-Probiotikum nimmt.
+Seeds DS-01 ist das Probiotikum, das „Synbiotikum" zum Marketingwort machte, und die Formulierung untermauert den Hype stärker als die meisten. 24 Stämme (53,64 Mrd. AFU) stecken in einer verschachtelten ViaCap-Kapsel, die die Magensäure überstehen soll; das Produkt ist lagerstabil, vegan und laborgeprüft auf Schwermetalle, Allergene und Glyphosat. Entscheidend: Seed hat tatsächlich randomisierte kontrollierte Studien zur Gesamtformel veröffentlicht, eine Hürde, die fast kein Regal-Probiotikum nimmt.
 
-Zwei ehrliche Vorbehalte. Die Evidenz ist zwar real, aber herstellerfinanziert und kurzfristig — also eher vielversprechend als gesichert; Probiotika-Effekte sind zudem stammspezifisch und oft vorübergehend. Und die Ökonomie ist für ein deutsches Publikum ungünstig: ein Abo-first-Produkt für ~49,99 $/Monat ohne Direktversand in die EU — Kauf heißt Paketweiterleitung plus 19% MwSt obendrauf. Eine wirklich starke Formel, die sich aus Berlin aktuell schwer rechtfertigen lässt.
+Zwei ehrliche Vorbehalte. Die Evidenz ist zwar real, aber herstellerfinanziert und kurzfristig, also eher vielversprechend als gesichert; Probiotika-Effekte sind zudem stammspezifisch und oft vorübergehend. Und die Ökonomie ist für ein deutsches Publikum ungünstig: ein Abo-first-Produkt für ~49,99 $/Monat ohne Direktversand in die EU, Kauf heißt Paketweiterleitung plus 19% MwSt obendrauf. Eine wirklich starke Formel, die sich aus Berlin aktuell schwer rechtfertigen lässt.

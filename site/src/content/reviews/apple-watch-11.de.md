@@ -14,7 +14,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # HINWEIS: Aktuelle Generation. Fakten (Preis, Specs, Bewertungen, Pro/Contra) sind belegt & real.
-verdict: "Die Akkulaufzeit reicht endlich — bis zu 24 Stunden — und Bluthochdruck-Hinweise plus 5G bringen echte Gesundheits-Mehrwerte. Aber es ist ein kleiner Sprung: Besitzer einer Series 9 oder 10 gewinnen wenig, und die günstigere SE unterbietet sie."
+verdict: "Die Akkulaufzeit reicht endlich (bis zu 24 Stunden) und Bluthochdruck-Hinweise plus 5G bringen echte Gesundheits-Mehrwerte. Aber es ist ein kleiner Sprung: Besitzer einer Series 9 oder 10 gewinnen wenig, und die günstigere SE unterbietet sie."
 sqwodScore: 86
 confidence: High
 crowd:
@@ -41,16 +41,16 @@ value:
   currency: EUR
   subscription: "keine"
 pros:
-  - "Bis zu 24 Std. Akku — endlich mehr als ein voller Tag"
+  - "Bis zu 24 Std. Akku: endlich mehr als ein voller Tag"
   - "Bluthochdruck-Hinweise + Sleep Score (watchOS 26)"
   - "Helleres, kratzfesteres Display; 5G"
 cons:
-  - "Iterativ — kaum Neues gegenüber der Series 10"
+  - "Iterativ: kaum Neues gegenüber der Series 10"
   - "Die meisten Software-Features kommen per watchOS 26 auch auf ältere Modelle"
   - "Die günstigere Watch SE 3 ist für die meisten das bessere Angebot"
 whoFor:
-  buy: "Du steigst von einer Series 6 oder älter um und willst die beste Allround-Apple-Watch — echte Akkulaufzeit, helleres Display und die neuen Gesundheits-Warnungen, ohne Abo."
-  skip: "Du hast schon eine Series 9 oder 10 — watchOS 26 liefert dir die meisten Software-Neuerungen gratis, der Umstieg lohnt kaum."
+  buy: "Du steigst von einer Series 6 oder älter um und willst die beste Allround-Apple-Watch: echte Akkulaufzeit, helleres Display und die neuen Gesundheits-Warnungen, ohne Abo."
+  skip: "Du hast schon eine Series 9 oder 10: watchOS 26 liefert dir die meisten Software-Neuerungen gratis, der Umstieg lohnt kaum."
 asset:
   type: images
   images:
@@ -64,6 +64,6 @@ successor:
 tags: ["wearables", "smartwatch", "apple-watch"]
 ---
 
-Die Apple Watch Series 11 folgt auf die Series 9 (mit der Series 10 dazwischen), und ihr wichtigster Gewinn ist der, den man wirklich spürt: bis zu 24 Stunden Akkulaufzeit, dazu neue Bluthochdruck-Hinweise, ein Sleep Score, ein helleres und robusteres Display und der Sprung von LTE auf 5G. Sie bleibt die beste Allround-Smartwatch — kein Abo, riesiges App-Ökosystem, EKG und jetzt auch Blutdruck-Signale.
+Die Apple Watch Series 11 folgt auf die Series 9 (mit der Series 10 dazwischen), und ihr wichtigster Gewinn ist der, den man wirklich spürt: bis zu 24 Stunden Akkulaufzeit, dazu neue Bluthochdruck-Hinweise, ein Sleep Score, ein helleres und robusteres Display und der Sprung von LTE auf 5G. Sie bleibt die beste Allround-Smartwatch, kein Abo, riesiges App-Ökosystem, EKG und jetzt auch Blutdruck-Signale.
 
-Der Haken: Es ist ein iteratives Update. Das Design ist gegenüber der Series 10 kaum verändert, und die meisten Software-Neuerungen erreichen ältere Modelle über watchOS 26 — wer also eine Series 9 oder 10 hat, hat wenig Grund zu wechseln. Deshalb ist es die Preis-Leistung, nicht die Hardware, die sie knapp hinter der Spitze hält.
+Der Haken: Es ist ein iteratives Update. Das Design ist gegenüber der Series 10 kaum verändert, und die meisten Software-Neuerungen erreichen ältere Modelle über watchOS 26: wer also eine Series 9 oder 10 hat, hat wenig Grund zu wechseln. Deshalb ist es die Preis-Leistung, nicht die Hardware, die sie knapp hinter der Spitze hält.

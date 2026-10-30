@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC (onepeloton.de). Live-DE-Preis + aktuellen SKU-Namen (Rebranding zu Cross Training Bike) vor Publish prüfen. Bike ~1.200 €; Bike+ bis 2.699 €.
-verdict: "Der Goldstandard fürs vernetzte Indoor-Cycling — nur lohnend, wenn du dich auf die 39-€/Monat-Kurse einlässt, die es glänzen lassen."
+verdict: "Der Goldstandard fürs vernetzte Indoor-Cycling, nur lohnend, wenn du dich auf die 39-€/Monat-Kurse einlässt, die es glänzen lassen."
 sqwodScore: 79
 confidence: Medium
 crowd:
@@ -49,7 +49,7 @@ pros:
   - "Von verifizierten deutschen Käufern gelobt (4,94/5 bei Fitshop)"
 cons:
   - "Hohe Anschaffung (~1.200 € Bike / bis 2.699 € Bike+)"
-  - "Pflicht-Abo 39 €/Monat — ohne ist das Bike stark eingeschränkt"
+  - "Pflicht-Abo 39 €/Monat, ohne ist das Bike stark eingeschränkt"
   - "Wert bricht ein, wenn du Instructor-Kurse nicht magst"
 whoFor:
   buy: "Du willst motivierende Instructor-Kurse zuhause und nutzt das Monatsabo regelmäßig."
@@ -66,6 +66,6 @@ successor:
 tags: ["connected-fitness", "indoor-cycling", "equipment"]
 ---
 
-Peloton bleibt der Maßstab fürs vernetzte Indoor-Cycling, und der Grund sind die Inhalte: tausende Live- und On-Demand-Kurse — jetzt auch auf Deutsch — in einem gut gebauten, leisen Bike mit kompakter Stellfläche. Verifizierte deutsche Käufer bewerten es nahezu perfekt.
+Peloton bleibt der Maßstab fürs vernetzte Indoor-Cycling, und der Grund sind die Inhalte: tausende Live- und On-Demand-Kurse (jetzt auch auf Deutsch) in einem gut gebauten, leisen Bike mit kompakter Stellfläche. Verifizierte deutsche Käufer bewerten es nahezu perfekt.
 
-Der Haken ist das Modell. Die Hardware kostet ~1.200 € (bis 2.699 € fürs Bike+), und die All-Access-Mitgliedschaft für 39 €/Monat ist faktisch Pflicht — ohne sie kann das Bike wenig. Wer die Kurse fährt, für den lohnt es sich; wer Abos scheut, tritt teuer. (Live-Preis auf onepeloton.de und aktuellen SKU-Namen vor dem Kauf prüfen — Peloton benennt die Reihe um.)
+Der Haken ist das Modell. Die Hardware kostet ~1.200 € (bis 2.699 € fürs Bike+), und die All-Access-Mitgliedschaft für 39 €/Monat ist faktisch Pflicht, ohne sie kann das Bike wenig. Wer die Kurse fährt, für den lohnt es sich; wer Abos scheut, tritt teuer. (Live-Preis auf onepeloton.de und aktuellen SKU-Namen vor dem Kauf prüfen: Peloton benennt die Reihe um.)

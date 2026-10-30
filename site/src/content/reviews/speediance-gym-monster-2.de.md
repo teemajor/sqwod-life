@@ -40,7 +40,7 @@ value:
   bestPrice: 3443
   currency: EUR
 pros:
-  - "Kein Pflicht-Abo — über 400 Workouts inklusive"
+  - "Kein Pflicht-Abo: über 400 Workouts inklusive"
   - "Sehr kompakt: klappt auf ~0,26 m² und passt durch Türen"
   - "Digitaler Zwei-Motoren-Widerstand bis 100 kg mit Exzentrik-/Ketten-Modus"
   - "Großer, reaktionsschneller 21,5\"-Touchscreen, einfacher Aufbau"

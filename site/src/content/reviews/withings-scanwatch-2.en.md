@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de ASIN B0CG6PJLY3 (42mm) / B0CG9P8YFW (38mm). RRP €349.95, street ~€260. Verify seller+image via SiteStripe before wiring Amazon. For now: brand-direct + fallback. App Store count is app-wide.
-verdict: "The best-looking hybrid for serious health tracking — medical-grade heart insights and ~30-day battery, if you can live without GPS or smart apps."
+verdict: "The best-looking hybrid for serious health tracking: medical-grade heart insights and ~30-day battery, if you can live without GPS or smart apps."
 sqwodScore: 81
 confidence: Medium
 crowd:
@@ -42,15 +42,15 @@ value:
   low: 264
 pros:
   - "Standout hybrid analog design that reads as a real watch"
-  - "Deep, clinically-oriented health suite — ECG/AFib, SpO2, temperature"
+  - "Deep, clinically-oriented health suite: ECG/AFib, SpO2, temperature"
   - "Class-leading ~30-day battery life"
   - "Strong sleep tracking with an easy companion app"
 cons:
   - "No built-in GPS (connected GPS via phone only)"
-  - "Limited smart features — tiny OLED, no third-party apps"
+  - "Limited smart features: tiny OLED, no third-party apps"
 whoFor:
   buy: "You have health-focused clients who want discreet, long-battery cardiovascular and sleep monitoring in a classic-looking watch."
-  skip: "You need on-wrist GPS, live workout metrics or full smartwatch apps — a Garmin or Apple Watch fits better."
+  skip: "You need on-wrist GPS, live workout metrics or full smartwatch apps: a Garmin or Apple Watch fits better."
 asset:
   type: images
   images:

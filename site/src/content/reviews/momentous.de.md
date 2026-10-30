@@ -13,7 +13,7 @@ publishedAt: 2026-06-20
 updatedAt: 2026-06-28
 author: "Sqwod Verified"
 affiliate: true
-verdict: "Die Supplement-Linie, die du Athlet:innen ohne Wenn und Aber empfehlen kannst — NSF Certified for Sport, Creapure-Kreatin, kompromisslose Reinheitstests. Für diese Gewissheit zahlst du Aufpreis."
+verdict: "Die Supplement-Linie, die du Athlet:innen ohne Wenn und Aber empfehlen kannst: NSF Certified for Sport, Creapure-Kreatin, kompromisslose Reinheitstests. Für diese Gewissheit zahlst du Aufpreis."
 sqwodScore: 85
 confidence: High
 crowd:
@@ -43,7 +43,7 @@ value:
   subscription: "Abo & Sparen ~15%"
   history: [49, 49, 45, 45, 42, 39, 45, 45, 42, 45, 39, 45]
 pros:
-  - "NSF Certified for Sport + Informed-Sport — sicher für getestete Athlet:innen"
+  - "NSF Certified for Sport + Informed-Sport: sicher für getestete Athlet:innen"
   - "Creapure-Kreatin; sechsstufige Tests inkl. Schwermetalle, PFAS, Mikroplastik"
   - "Einfache, evidenzbasierte Formeln (keine Proprietary-Blend-Spielchen)"
 cons:
@@ -51,7 +51,7 @@ cons:
   - "Günstigere Creapure-Marken liefern fast identisch"
 whoFor:
   buy: "Du coachst getestete Athlet:innen (oder bist vorsichtig) und willst Gewissheit statt Preis."
-  skip: "Knappes Budget — ein Creapure/NSF-Generikum kommt sehr nah ran."
+  skip: "Knappes Budget: ein Creapure/NSF-Generikum kommt sehr nah ran."
 asset:
   type: images
   images:
@@ -60,6 +60,6 @@ asset:
 tags: ["supplements", "creatine", "protein", "momentous"]
 ---
 
-Momentous ist die Supplement-Marke für das, was Coaches am meisten zählt: Gewissheit. Die Basics — Kreatin, Whey/Pflanzenprotein, tägliche Essentials — sind NSF Certified for Sport und Informed-Sport-geprüft, das Kreatin ist Creapure, und die neuesten Batch-Tests screenen auf Schwermetalle, PFAS und sogar Mikroplastik, was die meisten der Branche ignorieren. Wer getestete Athlet:innen berät, eliminiert damit die Frage „darf ich das empfehlen?".
+Momentous ist die Supplement-Marke für das, was Coaches am meisten zählt: Gewissheit. Die Basics (Kreatin, Whey/Pflanzenprotein, tägliche Essentials) sind NSF Certified for Sport und Informed-Sport-geprüft, das Kreatin ist Creapure, und die neuesten Batch-Tests screenen auf Schwermetalle, PFAS und sogar Mikroplastik, was die meisten der Branche ignorieren. Wer getestete Athlet:innen berät, eliminiert damit die Frage „darf ich das empfehlen?".
 
-Der Haken ist der Preis: rund 1–1,50 € pro Portion gegenüber ~0,20 € für Standard-Kreatin. Der Wirkstoff leistet im günstigeren Creapure-Behälter dasselbe — du zahlst also vor allem für Zertifizierung und Test-Tiefe. Für Coaches und Qualitätskäufer lohnt das; bei knappem Budget bringt dich ein Creapure/NSF-Generikum fast ans Ziel — daher Preis-Leistung 76 trotz nahezu perfektem Reinheits-Score.
+Der Haken ist der Preis: rund 1–1,50 € pro Portion gegenüber ~0,20 € für Standard-Kreatin. Der Wirkstoff leistet im günstigeren Creapure-Behälter dasselbe: du zahlst also vor allem für Zertifizierung und Test-Tiefe. Für Coaches und Qualitätskäufer lohnt das; bei knappem Budget bringt dich ein Creapure/NSF-Generikum fast ans Ziel: daher Preis-Leistung 76 trotz nahezu perfektem Reinheits-Score.

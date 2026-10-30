@@ -67,7 +67,7 @@ const headWords = (d.summary || 'Sqwod Daily').split(' ');
 const epTitle = d.summary || d.title;
 const metaTitle = `${epTitle} · Sqwod Daily`;
 const dots = d.connectDots?.body?.replace(/\s+/g, ' ').trim();
-let metaDesc = [d.summary, dots || d.items.map((i) => i.headline).join(' · ')].filter(Boolean).join(' — ');
+let metaDesc = [d.summary, dots || d.items.map((i) => i.headline).join(' · ')].filter(Boolean).join(': ');
 if (metaDesc.length > 200) metaDesc = metaDesc.slice(0, 199).trimEnd() + '…';
 const canonical = new URL(`/${lang}/daily/${d.urlSlug}/`, Astro.site).toString();
 const jsonLd: Record<string, unknown> = {

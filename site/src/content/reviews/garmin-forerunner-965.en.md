@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Amazon.de ASIN B0BS1TN8QL (whitestone) / B0BS1XZY7T (black). Verify seller+image via SiteStripe before wiring Amazon. Street ~€499, MSRP was €649.
-verdict: "Garmin’s near-complete premium running and triathlon watch — a gorgeous AMOLED, deep training analytics and full maps. Price and 47 mm size are the only real trade-offs."
+verdict: "Garmin’s near-complete premium running and triathlon watch: a gorgeous AMOLED, deep training analytics and full maps. Price and 47 mm size are the only real trade-offs."
 sqwodScore: 86
 confidence: High
 crowd:
@@ -41,17 +41,17 @@ value:
   bestPrice: 489
   currency: EUR
 pros:
-  - "Bright 1.4\" AMOLED in a light 53 g case — an expert-praised standout"
+  - "Bright 1.4\" AMOLED in a light 53 g case: an expert-praised standout"
   - "Long battery for AMOLED: up to 23 days smartwatch / ~31 h GPS"
   - "Complete endurance toolkit: Training Readiness, Load, HRV Status, routable maps"
   - "Strong crowd sentiment (Best Buy 4.9, Walmart 4.6)"
 cons:
   - "Premium price (~€499 street, higher MSRP)"
   - "Large 47 mm case suits bigger wrists"
-  - "AMOLED with no sapphire option — durability flagged by experts"
+  - "AMOLED with no sapphire option: durability flagged by experts"
 whoFor:
   buy: "You coach or run endurance/triathlon and want race-grade GPS, full maps and the complete readiness/load suite in a light premium AMOLED watch."
-  skip: "You have a small wrist or tight budget and mainly want basic run tracking — a Forerunner 265 or 165 delivers most metrics for less."
+  skip: "You have a small wrist or tight budget and mainly want basic run tracking: a Forerunner 265 or 165 delivers most metrics for less."
 asset:
   type: images
   images:
@@ -64,6 +64,6 @@ successor:
 tags: ["wearables", "running", "garmin", "triathlon"]
 ---
 
-The Forerunner 965 is Garmin’s premium runner’s watch done almost completely: a bright, high-res AMOLED, full routable maps, and the entire training-analytics stack — Training Readiness, Training Load, HRV Status — in a light 53 g package that experts rate around 95%. For a coach or serious endurance athlete, it is the near-flagship without stepping up to a Fenix.
+The Forerunner 965 is Garmin’s premium runner’s watch done almost completely: a bright, high-res AMOLED, full routable maps, and the entire training-analytics stack (Training Readiness, Training Load, HRV Status) in a light 53 g package that experts rate around 95%. For a coach or serious endurance athlete, it is the near-flagship without stepping up to a Fenix.
 
-The trade-offs are exactly two: price and size. At ~€499 street it is a real investment, and the 47 mm case is large for smaller wrists. If you want the same training metrics for less, the 265 or 165 cover most of it — but the 965 is the one with maps, the best screen and the full data suite.
+The trade-offs are exactly two: price and size. At ~€499 street it is a real investment, and the 47 mm case is large for smaller wrists. If you want the same training metrics for less, the 265 or 165 cover most of it, but the 965 is the one with maps, the best screen and the full data suite.

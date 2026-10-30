@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Current model (Pegasus 42, €139.99; Peg 41 discounted). Amazon.de ASIN B0GF685C7R (men). Verify seller+image via SiteStripe. For now: brand-direct + fallback.
-verdict: "A dependable, well-built neutral daily trainer that nails comfort and durability but rides average — a safe workhorse, not an exciting one."
+verdict: "A dependable, well-built neutral daily trainer that nails comfort and durability but rides average: a safe workhorse, not an exciting one."
 sqwodScore: 81
 confidence: Medium
 crowd:
@@ -45,7 +45,7 @@ pros:
   - "Strong value and build quality for the tier"
   - "Versatile enough to double as casual/walking wear"
 cons:
-  - "Midsole feels flat — the new Air Zoom adds little"
+  - "Midsole feels flat: the new Air Zoom adds little"
   - "Best kept to easy runs; limited versatility for faster paces"
 whoFor:
   buy: "You coach beginner-to-intermediate athletes who need one dependable, cushioned neutral trainer for daily easy mileage."
@@ -60,4 +60,4 @@ tags: ["apparel", "running", "shoes"]
 
 The Pegasus is Nike’s workhorse, and the 42 keeps the franchise reliable: a comfortable, durable, roomy neutral trainer that many reviewers call the best Peg in recent memory. For everyday easy miles and clients who want a familiar, dependable name, it delivers.
 
-Where it stays ordinary is the ride — the full-length Air Zoom and ReactX foam feel average rather than lively, so it is happiest on relaxed runs. A safe recommendation, not a thrilling one.
+Where it stays ordinary is the ride: the full-length Air Zoom and ReactX foam feel average rather than lively, so it is happiest on relaxed runs. A safe recommendation, not a thrilling one.

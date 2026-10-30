@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Link = DTC drinkag1.com (Impact 23569, 15%, EUR, liefert DE) — Tracking geprueft 2026-09-11. Inzwischen AUCH auf amazon.de (B0FDD89ZTZ, ca. EUR 107, Verkauf durch AG1 EU), aber Impacts AG1-Amazon-Seller-Programm (56343, 20%) fuehrt nur auf amazon.COM und ist damit fuer DACH-Leser unbrauchbar. DTC-Link beibehalten. Evidenzkritisch: NSF-Sport-Zertifikat real, aber Proprietary Blend + dünne UNABHÄNGIGE Evidenz + hoher Preis. Trustpilot-Score UNVERIFIED.
-verdict: "Ein gut gemachtes, umfassend getestetes Convenience-Greens — aber Premium-Preis, versteckte Blend-Dosen und dünne unabhängige Evidenz machen es gegenüber guter Ernährung schwer zu rechtfertigen."
+verdict: "Ein gut gemachtes, umfassend getestetes Convenience-Greens, aber Premium-Preis, versteckte Blend-Dosen und dünne unabhängige Evidenz machen es gegenüber guter Ernährung schwer zu rechtfertigen."
 sqwodScore: 61
 confidence: Low
 crowd:
@@ -44,16 +44,16 @@ value:
   subscription: "87 €/Monat Abo (30 Portionen, ~2,90 €/Portion)"
 pros:
   - "Breites All-in-one-Profil aus Mikronährstoffen, Probiotika und Adaptogenen"
-  - "Wirklich strenge Prüfung — NSF Certified for Sport (relevant für getestete Athlet:innen)"
+  - "Wirklich strenge Prüfung: NSF Certified for Sport (relevant für getestete Athlet:innen)"
   - "Vegan, glutenfrei/milchfrei, ohne Zuckerzusatz; 90-Tage-Geld-zurück"
   - "Bequemer täglicher Scoop"
 cons:
-  - "Hoher Preis — ~87 €/Monat, weit über 1,50–2-€/Portion-Konkurrenz"
+  - "Hoher Preis: ~87 €/Monat, weit über 1,50–2-€/Portion-Konkurrenz"
   - "Proprietary Blend: Zutaten gelistet, aber Dosen pro Zutat verborgen"
-  - "Wenig UNABHÄNGIGE Evidenz — stützende Studien firmennah; kein Pulver ersetzt Gemüse"
+  - "Wenig UNABHÄNGIGE Evidenz: stützende Studien firmennah; kein Pulver ersetzt Gemüse"
 whoFor:
-  buy: "Du bist busy, isst nicht zuverlässig abwechslungsreiches Gemüse, willst ein dopinggetestetes All-in-one — und der Preis ist kein Hindernis."
-  skip: "Du hast ein Budget oder isst bereits ausgewogen — gute Ernährung plus ein günstiges NSF-Multivitamin deckt das meiste ab."
+  buy: "Du bist busy, isst nicht zuverlässig abwechslungsreiches Gemüse, willst ein dopinggetestetes All-in-one, und der Preis ist kein Hindernis."
+  skip: "Du hast ein Budget oder isst bereits ausgewogen: gute Ernährung plus ein günstiges NSF-Multivitamin deckt das meiste ab."
 asset:
   type: images
   images:
@@ -64,4 +64,4 @@ tags: ["supplements", "greens", "nutrition"]
 
 AG1 ist das Greens-Pulver, das ein Marketing-Imperium baute, und die Herstellung ist tatsächlich seriös: ~75 Zutaten, eine echte Probiotika-Dosis und eine NSF-Certified-for-Sport-Prüfung, die zählt, wenn deine Kund:innen getestet werden. Als bequeme tägliche Absicherung für jemanden, der sein Gemüse nicht isst, tut es, was es verspricht.
 
-Skeptisch bleiben wir bei Preis und Evidenz. Mit ~87 €/Monat kostet es ein Vielfaches der Regal-Konkurrenz, der Proprietary Blend verbirgt die Dosen pro Zutat, und die unabhängige Evidenz ist dünn — die meisten stützenden Daten sind firmenfinanziert, und kein Pulver ersetzt echtes Gemüse. Gutes Produkt, ehrliche Vorbehalte: kaufe es für Bequemlichkeit und Prüf-Sicherheit, nicht für belegten Mehrwert.
+Skeptisch bleiben wir bei Preis und Evidenz. Mit ~87 €/Monat kostet es ein Vielfaches der Regal-Konkurrenz, der Proprietary Blend verbirgt die Dosen pro Zutat, und die unabhängige Evidenz ist dünn: die meisten stützenden Daten sind firmenfinanziert, und kein Pulver ersetzt echtes Gemüse. Gutes Produkt, ehrliche Vorbehalte: kaufe es für Bequemlichkeit und Prüf-Sicherheit, nicht für belegten Mehrwert.

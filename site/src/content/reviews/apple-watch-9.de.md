@@ -13,7 +13,7 @@ publishedAt: 2026-06-08
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-verdict: "Der beste Allrounder — Workouts, Benachrichtigungen, Schlaf, EKG — ohne Abo. Akku und Recovery-Tiefe sind die Kompromisse."
+verdict: "Der beste Allrounder: Workouts, Benachrichtigungen, Schlaf und EKG, ohne Abo. Akku und Recovery-Tiefe sind die Kompromisse."
 sqwodScore: 85
 confidence: High
 crowd:
@@ -42,7 +42,7 @@ value:
   subscription: "keins"
   history: [88, 86, 84, 80, 78, 76, 80, 82, 84, 80, 78, 80]
 pros:
-  - "Kann alles gut — Workouts, EKG, Benachrichtigungen"
+  - "Kann alles gut: Workouts, EKG, Benachrichtigungen"
   - "Kein Abo"
   - "Riesiges App-Ökosystem"
 cons:
@@ -63,8 +63,8 @@ asset:
   credit: "Produktbilder via Amazon"
 ---
 
-Die Series 9 ist die sichere Alles-Könner-Wahl: exzellentes Workout-Tracking, EKG, Benachrichtigungen und das tiefste App-Ökosystem — ohne Abo. Für die meisten der Weg des geringsten Bedauerns.
+Die Series 9 ist die sichere Alles-Könner-Wahl: exzellentes Workout-Tracking, EKG, Benachrichtigungen und das tiefste App-Ökosystem, ohne Abo. Für die meisten der Weg des geringsten Bedauerns.
 
-Boden verliert sie nur dort, wo die Spezialisten gewinnen: Akkulaufzeit und Recovery-Tiefe — deshalb liegt die Coach-Eignung hinter den dedizierten Recovery-Geräten.
+Boden verliert sie nur dort, wo die Spezialisten gewinnen: Akkulaufzeit und Recovery-Tiefe, deshalb liegt die Coach-Eignung hinter den dedizierten Recovery-Geräten.
 
-_Hinweis: Apple hat die Series 9 eingestellt. Das aktuelle Modell ist die Apple Watch Series 11 — und weil neue Series-9-Ware inzwischen knapp ist (und oft generalüberholt von Drittanbietern verkauft wird), verweist unser Deal-Button auf das aktuelle, neue, von Apple verkaufte Modell._
+_Hinweis: Apple hat die Series 9 eingestellt. Das aktuelle Modell ist die Apple Watch Series 11, und weil neue Series-9-Ware inzwischen knapp ist (und oft generalüberholt von Drittanbietern verkauft wird), verweist unser Deal-Button auf das aktuelle, neue, von Apple verkaufte Modell._

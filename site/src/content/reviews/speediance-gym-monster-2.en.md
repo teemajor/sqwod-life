@@ -40,7 +40,7 @@ value:
   bestPrice: 3443
   currency: EUR
 pros:
-  - "No mandatory subscription — 400+ workouts included"
+  - "No mandatory subscription: 400+ workouts included"
   - "Very compact: folds to ~2.75 sq ft and fits through doorways"
   - "Dual-motor digital resistance up to 100 kg with eccentric/chain modes"
   - "Large 21.5\" responsive touchscreen, easy setup"
@@ -65,6 +65,6 @@ successor:
 tags: ["connected-fitness", "home-gym", "strength"]
 ---
 
-The Speediance Gym Monster 2 is a motorised digital-weight home gym built to do what a rack full of plates does, in the space of a folded ironing board. Two direct-drive motors generate electromagnetic resistance in 0.5 kg increments up to 100 kg total (roughly 50 kg per arm), with eccentric-overload, chain and fixed-speed modes that free weights simply can't replicate. A 21.5-inch touchscreen drives 400+ guided classes and free-lift tracking, and unlike Tonal there is no compulsory membership — the workouts are included, with only the Wellness+ AI health-coaching layer sitting behind a paid tier (~€18/month). Reviewers from Trusted Reviews (4.5/5) to T3 praise the engineering, responsiveness and how genuinely small it is: it folds to about 27 cm deep, wheels around, and clears a standard doorway.
+The Speediance Gym Monster 2 is a motorised digital-weight home gym built to do what a rack full of plates does, in the space of a folded ironing board. Two direct-drive motors generate electromagnetic resistance in 0.5 kg increments up to 100 kg total (roughly 50 kg per arm), with eccentric-overload, chain and fixed-speed modes that free weights simply can't replicate. A 21.5-inch touchscreen drives 400+ guided classes and free-lift tracking, and unlike Tonal there is no compulsory membership: the workouts are included, with only the Wellness+ AI health-coaching layer sitting behind a paid tier (~€18/month). Reviewers from Trusted Reviews (4.5/5) to T3 praise the engineering, responsiveness and how genuinely small it is: it folds to about 27 cm deep, wheels around, and clears a standard doorway.
 
-The honest cons are consistent across every independent review. The 100 kg ceiling is fine for hypertrophy and conditioning but caps serious barbell-strength lifters, and the narrow 27-inch chassis makes wide movements like flyes and lat pulldowns feel cramped, with the bench sitting awkwardly close to the motor housing. Software can be occasionally finicky and long-term programming gets repetitive, and there's a mild cable thump plus some floor-vibration transmission to be aware of in apartments. At €3,443 (RRP €4,199, occasional flash-sale lows near €2,699 ex-VAT) it is firmly high-ticket — but for space-limited EU buyers who want subscription-free versatility, it's one of the strongest connected-strength options on the market.
+The honest cons are consistent across every independent review. The 100 kg ceiling is fine for hypertrophy and conditioning but caps serious barbell-strength lifters, and the narrow 27-inch chassis makes wide movements like flyes and lat pulldowns feel cramped, with the bench sitting awkwardly close to the motor housing. Software can be occasionally finicky and long-term programming gets repetitive, and there's a mild cable thump plus some floor-vibration transmission to be aware of in apartments. At €3,443 (RRP €4,199, occasional flash-sale lows near €2,699 ex-VAT) it is firmly high-ticket, but for space-limited EU buyers who want subscription-free versatility, it's one of the strongest connected-strength options on the market.

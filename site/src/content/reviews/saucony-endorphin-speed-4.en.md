@@ -63,6 +63,6 @@ successor:
 tags: ["footwear", "running", "super-trainer"]
 ---
 
-The Endorphin Speed 4 keeps the formula that made this line a favorite: a PWRRUN PB midsole paired with a nylon plate that flexes just enough to feel lively without punishing you on easy days. Reviewers from RunRepeat (89/100), Running Shoes Guru (7/10) and Believe in the Run (Top Pick) all land on the same verdict — one of the most versatile super-trainers you can buy, happy cruising or cranking the pace.
+The Endorphin Speed 4 keeps the formula that made this line a favorite: a PWRRUN PB midsole paired with a nylon plate that flexes just enough to feel lively without punishing you on easy days. Reviewers from RunRepeat (89/100), Running Shoes Guru (7/10) and Believe in the Run (Top Pick) all land on the same verdict: one of the most versatile super-trainers you can buy, happy cruising or cranking the pace.
 
 The catch used to be price: at its €200 RRP it looked expensive next to firmer, plated rivals, and the fit runs slightly small with a snug toe box. But with the Speed 5 now on shelves, German retailers have dropped the 4 to around €106-119, turning a very good shoe into an easy recommendation. Note there is no clean Amazon.de listing sold by Amazon or Saucony, so buy through established running retailers.

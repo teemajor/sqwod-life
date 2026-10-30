@@ -11,14 +11,14 @@ const live = !!PR_INTAKE_URL;
 
 const tx = lang === 'de' ? {
   title: 'Pressemitteilung einreichen',
-  blurb: 'Bring deine Neuigkeit vor Entscheider, Gründer und Investoren der Fitness- & Wellness-Branche. Zwei Optionen — kostenlos oder Premium.',
+  blurb: 'Bring deine Neuigkeit vor Entscheider, Gründer und Investoren der Fitness- & Wellness-Branche. Zwei Optionen: kostenlos oder Premium.',
   free: 'Standard', premium: 'Premium', cost: 'Kosten', gratis: 'Kostenlos',
   fIncl: ['Veröffentlichung auf sqwod.life (Presse-Feed)', 'Bilingual EN & DE', 'Dauerhaft archiviert'],
   pIncl: ['Alles aus Standard', 'Verlinkt im Sqwod-Daily-Newsletter', 'Geteilt auf LinkedIn & Instagram', 'Platzierung oben im Feed'],
   how: 'So läuft es', steps: [
     'Einreichen: Formular unten ausfüllen.',
     'Prüfung: Wir kuratieren nach Qualität & Inhalts-Richtlinie (KI-Vorprüfung + menschliche Freigabe).',
-    'Freigabe: Du bekommst eine E-Mail mit Vorschau-Link — bei Premium den Zahlungslink.',
+    'Freigabe: Du bekommst eine E-Mail mit Vorschau-Link, bei Premium den Zahlungslink.',
     'Veröffentlichung: Standard nach Freigabe, Premium nach Zahlung.',
   ],
   timing: 'Timing: Premium mind. 1 Werktag vorher, Standard mind. 48 h vorher einreichen.',
@@ -28,14 +28,14 @@ const tx = lang === 'de' ? {
   f: { company: 'Unternehmen', contact: 'Ansprechpartner:in', email: 'E-Mail', url: 'Website', headline: 'Schlagzeile', dek: 'Kurzbeschreibung (1 Satz)', body: 'Mitteilung (Text)', logo: 'Logo-URL (optional)', link: 'Link (optional)', tier: 'Option', langlbl: 'Sprache', both: 'Beide (EN & DE)', date: 'Wunsch-Datum', consent: 'Ich bestätige, dass ich berechtigt bin, diese Mitteilung einzureichen, und die Inhalts-Richtlinie akzeptiere.', submit: 'Mitteilung einreichen' },
 } : {
   title: 'Submit a press release',
-  blurb: 'Put your news in front of fitness & wellness decision-makers, founders and investors. Two options — free or premium.',
+  blurb: 'Put your news in front of fitness & wellness decision-makers, founders and investors. Two options: free or premium.',
   free: 'Standard', premium: 'Premium', cost: 'Cost', gratis: 'Free',
   fIncl: ['Published on sqwod.life (press feed)', 'Bilingual EN & DE', 'Permanently archived'],
   pIncl: ['Everything in Standard', 'Linked in the Sqwod Daily newsletter', 'Shared on LinkedIn & Instagram', 'Top-of-feed placement'],
   how: 'How it works', steps: [
     'Submit: fill in the form below.',
     'Review: we curate for quality & content policy (AI pre-screen + human approval).',
-    'Approval: you get an email with a preview link — and, for premium, the payment link.',
+    'Approval: you get an email with a preview link, and, for premium, the payment link.',
     'Publish: standard after approval, premium after payment.',
   ],
   timing: 'Timing: submit premium at least 1 business day ahead, standard at least 48 hours ahead.',
@@ -45,7 +45,7 @@ const tx = lang === 'de' ? {
   f: { company: 'Company', contact: 'Contact name', email: 'Email', url: 'Website', headline: 'Headline', dek: 'One-line summary', body: 'Release (body)', logo: 'Logo URL (optional)', link: 'Link (optional)', tier: 'Option', langlbl: 'Language', both: 'Both (EN & DE)', date: 'Preferred date', consent: 'I confirm I’m authorized to submit this release and accept the content policy.', submit: 'Submit release' },
 };
 ---
-<Base lang={lang} title={tx.title + ' — Sqwod'} description={tx.blurb} active="press">
+<Base lang={lang} title={tx.title + ' | Sqwod'} description={tx.blurb} active="press">
   <div class="crumb"><a href={`/${lang}/press`}>{lang==='de'?'Presse':'Press'}</a> · {tx.title}</div>
   <h1 style="margin:0 0 6px">{tx.title}</h1>
   <p class="sub" style="margin:0 0 22px;max-width:62ch">{tx.blurb}</p>
@@ -100,8 +100,8 @@ const tx = lang === 'de' ? {
       </div>
       <fieldset class="tierpick">
         <legend>{tx.f.tier}</legend>
-        <label class="radio"><input type="radio" name="tier" value="standard" checked /> {tx.free} — {tx.gratis}</label>
-        <label class="radio"><input type="radio" name="tier" value="premium" /> {tx.premium} — €{PREMIUM_PRICE.eur}</label>
+        <label class="radio"><input type="radio" name="tier" value="standard" checked /> {tx.free}: {tx.gratis}</label>
+        <label class="radio"><input type="radio" name="tier" value="premium" /> {tx.premium}: €{PREMIUM_PRICE.eur}</label>
       </fieldset>
       <!-- Cloudflare Turnstile (anti-spam) renders here once the site key is set on the Worker page -->
       <div class="cf-turnstile" data-sitekey="TURNSTILE_SITE_KEY"></div>

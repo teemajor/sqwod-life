@@ -107,7 +107,7 @@ const data = { min, max, median: b.median ?? null, betterIsHigh: b.betterIsHigh 
       // which band?
       let band = bands[bands.length - 1].label;
       for (const b of bands) { if (v <= b.to) { band = b.label; break; } }
-      let html = `${L.you}: <b>${raw}${unit}</b> — <b>${band}</b>.`;
+      let html = `${L.you}: <b>${raw}${unit}</b>: <b>${band}</b>.`;
       if (median != null) {
         const diff = Math.round((raw - median) * 10) / 10;
         const good = betterIsHigh ? diff >= 0 : diff <= 0;

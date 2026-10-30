@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # SaaS (trainingpeaks.com). USD pricing (EUR UNVERIFIED). German UI supported. NOTE: reported acquired by Garmin July 2026 — fact-check before publish. Routes to Sqwod OS audience.
-verdict: "The industry-standard endurance training and coaching platform — unmatched analytics and coach tools, but priced and paced for serious, data-committed users."
+verdict: "The industry-standard endurance training and coaching platform: unmatched analytics and coach tools, but priced and paced for serious, data-committed users."
 sqwodScore: 80
 confidence: Medium
 crowd:
@@ -47,11 +47,11 @@ pros:
   - "Purpose-built coach tooling that scales per athlete"
   - "Free Basic tier lets athletes start at no cost"
 cons:
-  - "Steep learning curve — needs know-how or a coach to exploit"
+  - "Steep learning curve: needs know-how or a coach to exploit"
   - "Value/price criticized; a very expensive calendar if underused"
 whoFor:
   buy: "You are an endurance coach or data-driven athlete who wants load management and structured plans across many athletes."
-  skip: "You are a casual exerciser or strength user who just wants simple logging — the depth and price are overkill."
+  skip: "You are a casual exerciser or strength user who just wants simple logging: the depth and price are overkill."
 asset:
   type: images
   images:
@@ -62,4 +62,4 @@ tags: ["apps", "coaching", "endurance"]
 
 For endurance coaches, TrainingPeaks is the standard: the Performance Management Chart (fitness, fatigue, form via TSS/CTL/ATL), structured workout builders and roster tools are unmatched, and it ingests from 90+ devices. A free Basic athlete tier lowers the barrier to entry.
 
-The cost is complexity and price — it rewards users who know how to read the data (or have a coach), and reviewers ding the value if you underuse it. One thing to watch: TrainingPeaks was reported acquired by Garmin in mid-2026, so the roadmap may shift.
+The cost is complexity and price: it rewards users who know how to read the data (or have a coach), and reviewers ding the value if you underuse it. One thing to watch: TrainingPeaks was reported acquired by Garmin in mid-2026, so the roadmap may shift.

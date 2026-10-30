@@ -13,7 +13,7 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-verdict: "Das wirksamste Schlaf-Temperatursystem, jetzt mit hydro-betriebener Decke für Ganzkörper-Kühlung, integriertem Audio und Zero-Gravity-Basis. Es funktioniert — aber 3.299 €+ und ein Pflicht-Autopilot-Abo machen es zu einer echten Investition."
+verdict: "Das wirksamste Schlaf-Temperatursystem, jetzt mit hydro-betriebener Decke für Ganzkörper-Kühlung, integriertem Audio und Zero-Gravity-Basis. Es funktioniert, aber 3.299 €+ und ein Pflicht-Autopilot-Abo machen es zu einer echten Investition."
 sqwodScore: 79
 confidence: High
 crowd:
@@ -40,15 +40,15 @@ value:
   currency: EUR
   subscription: "Autopilot 199 €/Jahr (erforderlich)"
 pros:
-  - "Hydro-betriebene Decke — Ganzkörper-Kühlung, ~2× mehr Temperaturkontrolle"
+  - "Hydro-betriebene Decke: Ganzkörper-Kühlung, ~2× mehr Temperaturkontrolle"
   - "Herzfrequenz, HRV, Atmung & Schlafphasen ohne Wearable"
-  - "Wenig Wartung — Wassertank ~3×/Jahr nachfüllen"
+  - "Wenig Wartung: Wassertank ~3×/Jahr nachfüllen"
 cons:
   - "3.299 €+ Anschaffung plus Pflicht-Autopilot-Abo"
   - "Einrichtung kann fummelig sein; Steuerung nur per App"
   - "Vereinzelt Beschwerden zu Haltbarkeit und Verbindung"
 whoFor:
-  buy: "Du investierst in Schlafqualität und willst automatische Zwei-Zonen-Temperatur, die die Regeneration wirklich verbessert — ohne Wearable."
+  buy: "Du investierst in Schlafqualität und willst automatische Zwei-Zonen-Temperatur, die die Regeneration wirklich verbessert, ohne Wearable."
   skip: "Du willst einen Einmalkauf, oder 3.299 €+ plus Jahresabo sind nicht zu rechtfertigen."
 asset:
   type: images
@@ -63,4 +63,4 @@ tags: ["sleep", "recovery", "sleep-tech"]
 
 Der Eight Sleep Pod 5 (Top-Variante: Pod 5 Ultra) ist der Nachfolger des Pod 4 und treibt dieselbe Grundidee weiter: automatische Zwei-Zonen-Betttemperatur, die Herzfrequenz, HRV, Atmung und Schlafphasen ohne Wearable erfasst. Neu in dieser Generation sind eine hydro-betriebene „Decke" für Ganzkörper- statt nur Oberflächen-Kühlung, integriertes Surround-Audio, eine Zero-Gravity-Basis beim Ultra und vorausschauende Gesundheitssensorik, die aus nächtlichen Auffälligkeiten mögliche Erkrankungen erkennt.
 
-Es funktioniert wirklich — Experten bewerten die Wirksamkeit hoch (Sleep Foundation 8.9/10) — doch die Wirtschaftlichkeit ist die eigentliche Geschichte. Der Basis-Pod-5-Cover kostet 3.299 €, und das Autopilot-Abo ist Pflicht. Genau das drückt die Preis-Leistung, während die Wirksamkeits-Werte die Kategorie anführen.
+Es funktioniert wirklich (Experten bewerten die Wirksamkeit hoch (Sleep Foundation 8.9/10)) doch die Wirtschaftlichkeit ist die eigentliche Geschichte. Der Basis-Pod-5-Cover kostet 3.299 €, und das Autopilot-Abo ist Pflicht. Genau das drückt die Preis-Leistung, während die Wirksamkeits-Werte die Kategorie anführen.

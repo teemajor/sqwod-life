@@ -13,7 +13,7 @@ updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
 draft: false
-verdict: "The world's smallest smart ring — about 40% slimmer than before, sharper multi-wavelength sensors, and Health Radar. Best-in-class recovery and sleep data stays the pitch; the €429 price and €70/yr subscription stay the catch."
+verdict: "The world's smallest smart ring: about 40% slimmer than before, sharper multi-wavelength sensors, and Health Radar. Best-in-class recovery and sleep data stays the pitch; the €429 price and €70/yr subscription stay the catch."
 sqwodScore: 86
 confidence: High
 crowd:
@@ -40,15 +40,15 @@ value:
   currency: EUR
   subscription: "€69.99/yr"
 pros:
-  - "World's smallest, jewellery-like comfort — barely there"
+  - "World's smallest, jewellery-like comfort: barely there"
   - "Sharper multi-wavelength sensors; up to ~9-day battery"
   - "Best companion app in the category (App Store 4.9★)"
 cons:
   - "Mandatory €5.99/mo membership to unlock full features"
-  - "€50 pricier than Ring 4 — high total cost of ownership"
+  - "€50 pricier than Ring 4: high total cost of ownership"
   - "Fitness tracking still lags dedicated sports wearables"
 whoFor:
-  buy: "You program around recovery and sleep and want the most accurate, most discreet wearable there is — now so small clients won't clock it."
+  buy: "You program around recovery and sleep and want the most accurate, most discreet wearable there is: now so small clients won't clock it."
   skip: "You need live workout heart rate and GPS, or you won't pay an ongoing subscription."
 asset:
   type: images
@@ -58,6 +58,6 @@ asset:
 tags: ["wearables", "recovery", "sleep", "smart-ring"]
 ---
 
-The Oura Ring 5 is the two-generation leap from the Gen3: Oura calls it the world's smallest smart ring — roughly 40% slimmer than the Ring 4 — with an upgraded multi-wavelength sensor array, a longer battery (up to around nine days), 100 m waterproofing, and new software in Health Radar, GLP-1 Insights and live activity tracking. For coaches programming around recovery and sleep, the accuracy-plus-discretion pitch is stronger than ever.
+The Oura Ring 5 is the two-generation leap from the Gen3: Oura calls it the world's smallest smart ring (roughly 40% slimmer than the Ring 4) with an upgraded multi-wavelength sensor array, a longer battery (up to around nine days), 100 m waterproofing, and new software in Health Radar, GLP-1 Insights and live activity tracking. For coaches programming around recovery and sleep, the accuracy-plus-discretion pitch is stronger than ever.
 
-The catch hasn't changed: it's €429 up front and a €70/yr membership to unlock the full picture, which is what keeps the value component down even as the crowd (App Store 4.9★ across 265k+ ratings) and our assessment run high. It's the recovery benchmark — for a price.
+The catch hasn't changed: it's €429 up front and a €70/yr membership to unlock the full picture, which is what keeps the value component down even as the crowd (App Store 4.9★ across 265k+ ratings) and our assessment run high. It's the recovery benchmark: for a price.

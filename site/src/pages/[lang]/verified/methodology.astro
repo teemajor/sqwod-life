@@ -4,12 +4,12 @@ import { languages, type Lang } from '../../../i18n/ui';
 export function getStaticPaths() { return languages.map((lang) => ({ params: { lang } })); }
 const lang = Astro.params.lang as Lang;
 const comps = [
-  { n: 'Crowd Signal', w: '45%', d: { en: 'Real-user feedback across retailers, app stores, review platforms, Reddit & YouTube — normalized, volume- & recency-weighted, fake-review filtered.', de: 'Echtes Nutzer-Feedback über Händler, App-Stores, Bewertungsplattformen, Reddit & YouTube — normalisiert, mengen- & aktualitätsgewichtet, Fake-Reviews gefiltert.' } },
+  { n: 'Crowd Signal', w: '45%', d: { en: 'Real-user feedback across retailers, app stores, review platforms, Reddit & YouTube: normalized, volume- & recency-weighted, fake-review filtered.', de: 'Echtes Nutzer-Feedback über Händler, App-Stores, Bewertungsplattformen, Reddit & YouTube: normalisiert, mengen- & aktualitätsgewichtet, Fake-Reviews gefiltert.' } },
   { n: 'Sqwod Assessment', w: '40%', d: { en: 'Our weighted scorecard: performance, value, build, experience, coach/operator fit, support.', de: 'Unsere gewichtete Scorecard: Leistung, Preis-Leistung, Verarbeitung, Bedienung, Coach-Eignung, Support.' } },
   { n: 'Value / Deal', w: '15%', d: { en: 'Best live price vs. category benchmark + real price history. Subscriptions weigh against the score.', de: 'Bester Live-Preis vs. Kategorie-Benchmark + echte Preis-Historie. Abos zählen negativ.' } },
 ];
 ---
-<Base lang={lang} title="Methodology — Sqwod Verified" active="verified">
+<Base lang={lang} title="Methodology | Sqwod Verified" active="verified">
   <div class="measure">
     <div class="crumb">Sqwod Verified / {lang==='de'?'Methodik':'Methodology'}</div>
     <h1>{lang==='de'?'Wie wir bewerten':'How we score'}</h1>
@@ -24,7 +24,7 @@ const comps = [
     </section>
     <div class="note"><b>{lang==='de'?'Editorielle Firewall':'Editorial firewall'}.</b> {lang==='de'?'Provisionen beeinflussen den Score nie. Wir veröffentlichen auch schlechte Bewertungen.':'Commission never affects the score. We publish low scores too.'}</div>
     <div class="note" style="margin-top:10px"><b>{lang==='de'?'Aktueller Stand (ehrlich)':'Current status (honest)'}.</b> {lang==='de'
-      ? 'Trustpilot-Bewertungen aktualisieren sich jetzt täglich (verlinkt, mit Stand-Datum); weitere Crowd- und Preiszahlen stammen aus recherchierten öffentlichen Quellen, während die Live-Aggregation weiter ausgerollt wird. Die Sqwod-Bewertung ist immer unsere eigene. Wahrheit gewinnt — wir kennzeichnen, was bewertet vs. redaktionell ausgewählt ist.'
-      : 'Trustpilot ratings now refresh daily (linked, with an as-of date); the remaining crowd & price figures are researched public sources as live aggregation continues to roll out. The Sqwod Assessment is always our own. Truth wins — we label what\'s scored vs. an editorial pick.'}</div>
+      ? 'Trustpilot-Bewertungen aktualisieren sich jetzt täglich (verlinkt, mit Stand-Datum); weitere Crowd- und Preiszahlen stammen aus recherchierten öffentlichen Quellen, während die Live-Aggregation weiter ausgerollt wird. Die Sqwod-Bewertung ist immer unsere eigene. Wahrheit gewinnt: wir kennzeichnen, was bewertet vs. redaktionell ausgewählt ist.'
+      : 'Trustpilot ratings now refresh daily (linked, with an as-of date); the remaining crowd & price figures are researched public sources as live aggregation continues to roll out. The Sqwod Assessment is always our own. Truth wins: we label what\'s scored vs. an editorial pick.'}</div>
   </div>
 </Base>

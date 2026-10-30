@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # DTC (myprotein.de) + Amazon.de ASIN B008BH7KKM (1kg Vanille). ~30 €/kg, stark rabattcode-getrieben. Amazon-Verkäufer+Bild per SiteStripe prüfen. Vorerst: Marke direkt + Fallback.
-verdict: "Der Preis-Leistungs-Maßstab: ein zertifiziertes Whey-Konzentrat für ~30 €/kg mit 50+ Sorten und breit starken Bewertungen — mit Rabattcode kaufen."
+verdict: "Der Preis-Leistungs-Maßstab: ein zertifiziertes Whey-Konzentrat für ~30 €/kg mit 50+ Sorten und breit starken Bewertungen, mit Rabattcode kaufen."
 sqwodScore: 85
 confidence: High
 crowd:
@@ -46,11 +46,11 @@ pros:
   - "Riesige Geschmacksauswahl (50+)"
   - "Hohe Zufriedenheit mit tiefer Stichprobe (4,64/5 über 29k Bewertungen)"
 cons:
-  - "Konzentrat, kein Isolat — mehr Laktose/Kohlenhydrate als ein Isolat"
+  - "Konzentrat, kein Isolat: mehr Laktose/Kohlenhydrate als ein Isolat"
   - "Geschmack variiert stark je Sorte; Preisvorteil hängt an Rabattcodes"
 whoFor:
   buy: "Du (oder deine Kund:innen) willst ein zertifiziertes, proteinreiches Alltags-Whey zum zuverlässig niedrigsten Preis pro kg."
-  skip: "Du bist laktoseempfindlich oder willst die schlanksten Makros — nimm das Impact Whey Isolate."
+  skip: "Du bist laktoseempfindlich oder willst die schlanksten Makros: nimm das Impact Whey Isolate."
 asset:
   type: images
   images:
@@ -61,4 +61,4 @@ tags: ["supplements", "protein", "whey"]
 
 Impact Whey ist das Standard-Preis-Leistungs-Protein: ein Whey-Konzentrat für rund 30 €/kg mit 50+ Sorten, Informed-Choice- und Informed-Protein-Zertifizierung und einem tiefen Pool starker Bewertungen. Für Coaches, die ein bezahlbares, getestetes Alltags-Protein empfehlen, ist es die naheliegende Wahl.
 
-Zwei Vorbehalte bleiben ehrlich. Es ist ein Konzentrat, trägt also mehr Laktose und Kohlenhydrate als ein Isolat, und der Geschmack schwankt je Sorte. Und der Preisvorteil hängt an Myproteins nahezu ständigen Rabattcodes — zum vollen UVP ist es deutlich weniger überzeugend.
+Zwei Vorbehalte bleiben ehrlich. Es ist ein Konzentrat, trägt also mehr Laktose und Kohlenhydrate als ein Isolat, und der Geschmack schwankt je Sorte. Und der Preisvorteil hängt an Myproteins nahezu ständigen Rabattcodes: zum vollen UVP ist es deutlich weniger überzeugend.

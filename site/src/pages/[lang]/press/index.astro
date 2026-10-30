@@ -15,14 +15,14 @@ const fmt = (d: Date) => d.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB',
 const tx = {
   title: lang === 'de' ? 'Pressemitteilungen' : 'Press releases',
   blurb: lang === 'de'
-    ? 'Neuigkeiten direkt von Unternehmen der Fitness- und Wellness-Branche — Launches, Finanzierungen, Partnerschaften. Eingereicht von den Unternehmen, kuratiert von Sqwod.'
-    : 'News straight from fitness & wellness companies — launches, funding, partnerships. Submitted by the companies, curated by Sqwod.',
+    ? 'Neuigkeiten direkt von Unternehmen der Fitness- und Wellness-Branche: Launches, Finanzierungen, Partnerschaften. Eingereicht von den Unternehmen, kuratiert von Sqwod.'
+    : 'News straight from fitness & wellness companies: launches, funding, partnerships. Submitted by the companies, curated by Sqwod.',
   submit: lang === 'de' ? 'Mitteilung einreichen' : 'Submit a release',
   none: lang === 'de' ? 'Noch keine Mitteilungen.' : 'No releases yet.',
   label: lang === 'de' ? 'Unternehmensmitteilung' : 'Company submission',
 };
 ---
-<Base lang={lang} title={tx.title + ' — Sqwod'} description={tx.blurb} active="press">
+<Base lang={lang} title={tx.title + ' | Sqwod'} description={tx.blurb} active="press">
   <div class="crumb">Sqwod · {tx.title}</div>
   <div class="head">
     <div>

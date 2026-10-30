@@ -16,7 +16,7 @@ author: "Sqwod Verified"
 affiliate: true
 draft: false
 # Vorgänger als Preis-Tipp (aktuell = Nimbus 28, 200 €). Amazon.de ASIN B0D79V2KV9 (Herren, eine Farbe). Verkäufer+Bild per SiteStripe prüfen. Schuhe: viele ASINs — Marke/Amazon bevorzugen. Vorerst: Marke direkt + Fallback.
-verdict: "Ein extrem bequemer, stabiler Max-Cushion-Alltagsschuh für lockere Kilometer — am besten als Auslaufmodell im Angebot."
+verdict: "Ein extrem bequemer, stabiler Max-Cushion-Alltagsschuh für lockere Kilometer: am besten als Auslaufmodell im Angebot."
 sqwodScore: 83
 confidence: Medium
 crowd:
@@ -40,16 +40,16 @@ value:
   bestPrice: 129.90
   currency: EUR
 pros:
-  - "Weiches, dämpfendes Laufgefühl — top für lockere und Recovery-Läufe"
+  - "Weiches, dämpfendes Laufgefühl: top für lockere und Recovery-Läufe"
   - "Überraschend stabil für einen Max-Stack-Neutralschuh"
   - "Atmungsaktives Mesh-Obermaterial, bequem und größengetreu"
   - "Langlebige, hochwertige Verarbeitung"
 cons:
-  - "Schwer (~300 g) mit geringer Energie-Rückgabe — kein Tempo-Pop"
+  - "Schwer (~300 g) mit geringer Energie-Rückgabe, kein Tempo-Pop"
   - "Nur minimales Update zum 26; lohnt vor allem im Angebot"
 whoFor:
   buy: "Du coachst Läufer:innen, die maximalen Schutz für lockere Tage, lange langsame Distanzen oder mehr Kilometer und schwerere Läufer:innen wollen."
-  skip: "Du willst einen spritzigen Allrounder mit Tempo-Pop — schau dir den Novablast oder einen Carbon-Schuh an."
+  skip: "Du willst einen spritzigen Allrounder mit Tempo-Pop: schau dir den Novablast oder einen Carbon-Schuh an."
 asset:
   type: images
   images:
@@ -64,4 +64,4 @@ tags: ["apparel", "running", "shoes"]
 
 Der Gel-Nimbus ist ASICS’ Flaggschiff über 27 Generationen, und der 27 ist die Definition eines weichen, schützenden Alltagsschuhs: maximale Dämpfung, stabiles Laufgefühl und robuste Verarbeitung für lockere Kilometer. Für Coaches, die einen nachgiebigen Recovery-Schuh empfehlen, ist er eine sichere Wahl.
 
-Man sollte nur wissen, was er nicht ist — mit ~300 g und moderater Energie-Rückgabe will er nicht schnell laufen. Und da der Nimbus 28 jetzt aktuell bei 200 € liegt, ergibt der 27 vor allem als vergünstigter Preis-Tipp Sinn.
+Man sollte nur wissen, was er nicht ist, mit ~300 g und moderater Energie-Rückgabe will er nicht schnell laufen. Und da der Nimbus 28 jetzt aktuell bei 200 € liegt, ergibt der 27 vor allem als vergünstigter Preis-Tipp Sinn.

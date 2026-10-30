@@ -13,7 +13,7 @@ publishedAt: 2026-06-08
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
-verdict: "The best all-rounder — workouts, notifications, sleep, ECG — no subscription. Battery and depth-of-recovery data are the compromises."
+verdict: "The best all-rounder: workouts, notifications, sleep and ECG, with no subscription. Battery and depth-of-recovery data are the compromises."
 sqwodScore: 85
 confidence: High
 crowd:
@@ -42,7 +42,7 @@ value:
   subscription: "none"
   history: [88, 86, 84, 80, 78, 76, 80, 82, 84, 80, 78, 80]
 pros:
-  - "Does everything well — workouts, ECG, notifications"
+  - "Does everything well: workouts, ECG, notifications"
   - "No subscription"
   - "Huge app ecosystem"
 cons:
@@ -63,8 +63,8 @@ asset:
   credit: "Product images via Amazon"
 ---
 
-The Series 9 is the safe, do-everything pick: excellent workout tracking, ECG, notifications, and the deepest app ecosystem — with no subscription. For most readers it's the path of least regret.
+The Series 9 is the safe, do-everything pick: excellent workout tracking, ECG, notifications, and the deepest app ecosystem, with no subscription. For most readers it's the path of least regret.
 
 It loses ground only where the specialists win: battery life and the depth of recovery analytics, which is why Coach fit trails the dedicated recovery devices.
 
-_Note: Apple has discontinued the Series 9. The current model is the Apple Watch Series 11 — and because new Series 9 stock is now limited (and often sold refurbished by third parties), our deal button points to the current, new, Apple-sold Apple Watch._
+_Note: Apple has discontinued the Series 9. The current model is the Apple Watch Series 11, and because new Series 9 stock is now limited (and often sold refurbished by third parties), our deal button points to the current, new, Apple-sold Apple Watch._

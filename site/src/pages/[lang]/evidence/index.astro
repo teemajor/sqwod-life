@@ -34,8 +34,8 @@ const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
     <div class="crumb">Sqwod Evidence</div>
     <h1>Sqwod Evidence</h1>
     <p class="sub">{lang==='de'
-      ? 'Wir lesen die Forschung, damit deine Kunden es nicht müssen. Jede Aussage ist an eine benannte Studie geknüpft, nach Studienqualität bewertet und trägt einen echten Namen — plus, was gerade erst erforscht wird.'
-      : 'We read the research so your clients don’t have to. Every claim tied to a named study, graded by strength of evidence, signed by a real name — plus what’s still being tested.'}</p>
+      ? 'Wir lesen die Forschung, damit deine Kunden es nicht müssen. Jede Aussage ist an eine benannte Studie geknüpft, nach Studienqualität bewertet und trägt einen echten Namen: plus, was gerade erst erforscht wird.'
+      : 'We read the research so your clients don’t have to. Every claim tied to a named study, graded by strength of evidence, signed by a real name: plus what’s still being tested.'}</p>
     <p style="margin-top:10px;display:flex;flex-wrap:wrap;gap:8px 20px">
       <a class="cardcta" href={`/${lang}/evidence/supplements`}>{lang==='de'?'Supplements von A bis Z':'Supplements A to Z'} →</a>
       <a class="cardcta" href={`/${lang}/evidence/methodology`}>{lang==='de'?'Wie wir bewerten':'How we grade the evidence'} →</a>
@@ -68,8 +68,8 @@ const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
 
   <section class="block">
     <div class="note"><b>{lang==='de'?'Ein Supplement im Blick?':'Shopping a supplement?'}</b> {lang==='de'
-      ? 'Die Evidenz sagt dir, was wirkt — Sqwod Verified sagt dir, welches Produkt.'
-      : 'The evidence tells you what works — Sqwod Verified tells you which product to buy.'} <a class="cardcta" href={`/${lang}/verified`}>{lang==='de'?'Zu Sqwod Verified':'Browse Sqwod Verified'} →</a></div>
+      ? 'Die Evidenz sagt dir, was wirkt. Sqwod Verified sagt dir, welches Produkt.'
+      : 'The evidence tells you what works. Sqwod Verified tells you which product to buy.'} <a class="cardcta" href={`/${lang}/verified`}>{lang==='de'?'Zu Sqwod Verified':'Browse Sqwod Verified'} →</a></div>
   </section>
 </Base>
 

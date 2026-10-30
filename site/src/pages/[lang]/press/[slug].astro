@@ -29,7 +29,7 @@ const tx = {
   translated: lang === 'de' ? 'Maschinell aus dem Original übersetzt.' : 'Machine-translated from the original.',
 };
 ---
-<Base lang={lang} title={`${d.headline} — ${d.company}`} description={d.dek ?? d.headline}>
+<Base lang={lang} title={`${d.headline}: ${d.company}`} description={d.dek ?? d.headline}>
   <div class="crumb"><a href={`/${lang}/press`}>{tx.label}</a> · {fmt}</div>
 
   <span class="adlabel">{tx.label} · {tx.by} {d.company}</span>
