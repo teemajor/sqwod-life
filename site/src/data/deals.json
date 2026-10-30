@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29",
+  "generatedAt": "2026-10-30",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -78,13 +78,13 @@
       "date": "2026-10-23",
       "entity": "Nirva",
       "kind": "raise",
-      "amount": "$33 million",
-      "amountUsd": 33000000,
+      "amount": "$25M",
+      "amountUsd": 25000000,
       "currency": "USD",
       "approx": false,
-      "note": "raised to bring an AI pendant wearable to market",
-      "url": "https://tradersunion.com/news/business-wealth/show/3925381-nirva-raises-ai-pendant-wearable-market/",
-      "source": "Traders Union",
+      "note": "$25M pre-Series A (total raised $33M) to bring an AI pendant wearable to market",
+      "url": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
+      "source": "TechCrunch",
       "issue": "/en/daily/2026-10-23",
       "region": "Other",
       "category": "Wearables & devices",
@@ -96,8 +96,9 @@
           "issue": "/en/daily/2026-10-23"
         }
       ],
+      "noteDe": "25 Mio. $ Pre-Series-A (insgesamt 33 Mio. $) für einen KI-Anhänger als Wearable",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-10-23",
@@ -128,13 +129,13 @@
       "date": "2026-10-21",
       "entity": "Unravel Health",
       "kind": "raise",
-      "amount": "€2.5M",
-      "amountUsd": 2700000,
-      "currency": "EUR",
+      "amount": "£2.5M",
+      "amountUsd": 3175000,
+      "currency": "GBP",
       "approx": false,
-      "note": "raised to launch the Micro Lab, an at-home saliva-based hormone testing device shipping in 2027",
-      "url": "https://insider.fitt.co/unravel-health-raises-e2-5m-for-at-home-hormone-testing/",
-      "source": "Fitt Insider",
+      "note": "£2.5M led by Conduit EIS Impact Fund and Wrightwood for Micro Lab, an at-home saliva hormone test",
+      "url": "https://femtechinsider.com/unravel-health-raises-2-5m-to-launch-at-home-saliva-hormone-test/",
+      "source": "Femtech Insider",
       "issue": "/en/daily/2026-10-21",
       "region": "Other",
       "category": "Health & longevity",
@@ -146,8 +147,9 @@
           "issue": "/en/daily/2026-10-21"
         }
       ],
+      "noteDe": "2,5 Mio. £ unter Führung von Conduit EIS Impact Fund und Wrightwood für Micro Lab, einen Hormontest per Speichelprobe für zu Hause",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-10-20",
@@ -306,15 +308,15 @@
     },
     {
       "date": "2026-10-09",
-      "entity": "Persona (Cal AI / Zach Yadegari)",
+      "entity": "Persona",
       "kind": "raise",
       "amount": "$10M",
       "amountUsd": 10000000,
       "currency": "USD",
       "approx": false,
-      "note": "raise for an AI assistant paired with a wearable band",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdTV1Qnl1cWJGTXhCM3lVbkZUNWhGWW5JRzd5ak5ubDYyS3hpVW5KWlNvMEh1Z2d2RVJDMlpENUN0Zjg3ejdNbEpEUVQycHFZemNQaW5iSkE5LVVuYXlUQ3V5dUYwRmtzTnctLXVxa3NZYmJCZnp6SzNzZ18xaUtiMmhjVDJOR09GNHJEX1BSSXhwVklYR0FsYmdLbTA5ems?oc=5",
-      "source": "The Business Journals",
+      "note": "$10M led by Vine Ventures for an AI assistant paired with a wearable band",
+      "url": "https://techcrunch.com/?p=3174041",
+      "source": "TechCrunch",
       "issue": "/en/daily/2026-10-09",
       "region": "Other",
       "category": "Wearables & devices",
@@ -326,8 +328,9 @@
           "issue": "/en/daily/2026-10-09"
         }
       ],
+      "noteDe": "10 Mio. $ unter Führung von Vine Ventures für einen KI-Assistenten mit Wearable-Armband",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-10-07",
@@ -337,8 +340,8 @@
       "amountUsd": 762000,
       "currency": "GBP",
       "approx": false,
-      "note": "UK intimate wellness brand expanding beyond the gym floor",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTHJGdVd2NWttT0t0VUFiV1gxald0RFJ4bWl1Vm1wVEx2V3BST3V2SmZ0TnRiNnF5aXhCUXhHR0hQdXhINmpMRVl5bTFNNjN2NGw1bW1SVXZ0bHJtQnZ4YTMzVGQyc2h5UW9XN1dfR0JWVURyelgxclI0bVZyWU14SktsUjFrTTg?oc=5",
+      "note": "oversubscribed £600K seed led by Gabriel Investment Syndicate for intimate wellness products",
+      "url": "https://femtechinsider.com/?p=36067",
       "source": "Femtech Insider",
       "issue": "/en/daily/2026-10-07",
       "region": "UK",
@@ -351,8 +354,9 @@
           "issue": "/en/daily/2026-10-07"
         }
       ],
+      "noteDe": "überzeichnete Seed-Runde über 600.000 £ unter Führung des Gabriel Investment Syndicate für Intim-Wellness-Produkte",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-10-06",
@@ -436,8 +440,8 @@
           "issue": "/en/daily/2026-10-06"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: stale: $5.5B valuation is from the Nov 2024 round"
     },
     {
       "date": "2026-10-05",
@@ -473,8 +477,8 @@
       "currency": null,
       "approx": false,
       "note": "Garmin acquires muscle oxygen sensor brand Moxy; price undisclosed",
-      "url": "",
-      "source": "",
+      "url": "https://the5krunner.com/2026/09/22/garmin-acquires-moxy-monitor/",
+      "source": "the5krunner",
       "issue": "/en/daily/2026-10-02",
       "region": "Other",
       "category": "Wearables & devices",
@@ -487,7 +491,7 @@
         }
       ],
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-10-02",
@@ -748,13 +752,13 @@
       "date": "2026-09-21",
       "entity": "Disha",
       "kind": "raise",
-      "amount": "$5.96M",
-      "amountUsd": 5960000,
-      "currency": "USD",
+      "amount": "₹43.88 crore (~$5M)",
+      "amountUsd": 5000000,
+      "currency": "INR",
       "approx": false,
-      "note": "Series A led by General Catalyst for AI health coaching platform",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16RHFjM01KTGxtQkFwS2lPdUNhc2Ywc3JLR3J1bUxrT3hBRHZuMUxZLWVrQ3ZyTU5PbVdxWGt0Y21uZFJfcDhSNHNDTEZHcERHWjRvc2l5TURiN1FaYk9HdFk5SdIBY0FVX3lxTE16RHFjM01KTGxtQkFwS2lPdUNhc2Ywc3JLR3J1bUxrT3hBRHZuMUxZLWVrQ3ZyTU5PbVdxWGt0Y21uZFJfcDhSNHNDTEZHcERHWjRvc2l5TURiN1FaYk9HdFk5SQ?oc=5",
-      "source": "Ventureburn",
+      "note": "Series A led by General Catalyst for an AI health coaching platform (formerly Curelink); USD figures in reports vary",
+      "url": "https://dealroom.co/news/154020-disha-formerly-curelink-raises-4-6m-series-a-led-by-general-catalyst/",
+      "source": "Dealroom",
       "issue": "/en/daily/2026-09-21",
       "region": "Other",
       "category": "Software & AI",
@@ -766,8 +770,9 @@
           "issue": "/en/daily/2026-09-21"
         }
       ],
+      "noteDe": "Series A unter Führung von General Catalyst für eine KI-Gesundheitscoaching-Plattform (früher Curelink); Dollarangaben in Berichten schwanken",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-09-21",
@@ -816,8 +821,8 @@
           "issue": "/en/daily/2026-09-18"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: not a deal: IPO only being considered, no filing"
     },
     {
       "date": "2026-09-17",
@@ -903,13 +908,13 @@
       "date": "2026-09-14",
       "entity": "Aeon / Aware Health",
       "kind": "acquisition",
-      "amount": "€12M",
-      "amountUsd": 12960000,
-      "currency": "EUR",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
       "approx": false,
-      "note": "Aeon acquires Aware Health, pushing total Seed funding past €12M in healthtech consolidation",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWXhDeGRiWFRjWFpfQ1JfY0dZb2xpYkZyMGxfTXpXT2RaTFdqeEVNbG9ReVRqX1EyOGkyWHFBZ1RhNWN5aVdKeUdydElqNVc1LVRRanNHSnhMY09CVk1xMHRFT3BoS1VzbE1MVVFzT1g3M3J2NElqSHdVcEhDQV9kYzQ1bGl3TDN1VFBRMkd1RTNiUDVQdmJ2ZnBhcGFnVHpoSnZMX21zRTRjc2FZZlh3TTgyMDB3U1FqUDhwMGhhU3IzaVJuVmc?oc=5",
-      "source": "eu-startups.com",
+      "note": "Zurich's Aeon acquires the core assets of Berlin blood-diagnostics platform Aware Health; price undisclosed",
+      "url": "https://webdisclosure.com/press-release/aeon-closes-seed-extension-acquiring-germanys-leading-consumer-blood-diagnostics-platform-aware-health-LOyUAXyW1eZ",
+      "source": "Aeon press release",
       "issue": "/en/daily/2026-09-14",
       "region": "DACH",
       "category": "Health & longevity",
@@ -926,8 +931,9 @@
           "issue": "/en/daily/2026-09-15"
         }
       ],
+      "noteDe": "Das Zürcher Unternehmen Aeon übernimmt die Kernbereiche der Berliner Blutdiagnostik-Plattform Aware Health; Preis nicht genannt",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-09-14",
@@ -958,13 +964,13 @@
       "date": "2026-09-11",
       "entity": "MIRROR FIT",
       "kind": "raise",
-      "amount": "$1.6M",
-      "amountUsd": 1600000,
-      "currency": "USD",
+      "amount": "¥250M (~$1.7M)",
+      "amountUsd": 1650000,
+      "currency": "JPY",
       "approx": false,
-      "note": "funding a push toward 1,000 women's beauty gym locations across Japan",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOaWY4LWlBQUdsRmZQSXVaV3NnQnlqN3E3aHhfb1JlOUhPcmNLdkhlcHl4RFFVaTZaRFItaVdYdmFPYllPZkN5RXplYTFOQTQ3SGU3Zng2YUtmMWl3V1hYeGhWUjdodFF5UEdXejlrRkxGNGNjLU9NMmVnampRVnh2bElVTy1XaXZ0MVUydWtwb2tpbEw5ZGxXdEFaeVBBanVLRUFObzItR2NjeHRGVnE5YWdYYw?oc=5",
-      "source": "Dealroom",
+      "note": "equity plus bank loans to expand women-only beauty gym HITORI WELLNESS toward 300 stores in Japan within 4 years",
+      "url": "https://inforcapital.com/news/mirror-fit-raises-250-million-to-expand-women-only-beauty-gym-hitori-wellness/",
+      "source": "Infor Capital",
       "issue": "/en/daily/2026-09-11",
       "region": "Asia-Pacific",
       "category": "Gyms & studios",
@@ -976,8 +982,9 @@
           "issue": "/en/daily/2026-09-11"
         }
       ],
+      "noteDe": "Eigenkapital plus Bankkredite, um das Frauen-Beauty-Gym HITORI WELLNESS in vier Jahren auf 300 Standorte in Japan auszubauen",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-09-10",
@@ -1199,15 +1206,15 @@
     },
     {
       "date": "2026-09-03",
-      "entity": "Informa / Global Wellness",
+      "entity": "Informa / Global Wellness Summit + Global Wellness Institute",
       "kind": "acquisition",
       "amount": "",
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "Informa acquires Global Wellness, entering the $6.8 trillion wellness economy",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd0JhQm12MWRsWEVJYVhKcTMwV2hxRlNhaHRsQWppQWo0YmZPRk5ORXF4amdCLUdKLWhldlZ5UnJPNmJwNjczT2UtRlBmV1lJWFYtdktNTHloZThzTHh1ZTk0ODMwdktjMVpzVThjSEoxQzV3M1VlaGhNM1VEb2FadWtNcnNHaTlSeFNLZUFLWk0xSGlnekxRbE1QeVNVTDhJ?oc=5",
-      "source": "Dealroom",
+      "note": "Informa acquires the Global Wellness Summit and Global Wellness Institute; terms undisclosed",
+      "url": "https://athletechnews.com/global-wellness-summit-informa-acquisition/",
+      "source": "Athletech News",
       "issue": "/en/daily/2026-09-03",
       "region": "Other",
       "category": "Other",
@@ -1219,20 +1226,21 @@
           "issue": "/en/daily/2026-09-03"
         }
       ],
+      "noteDe": "Informa übernimmt Global Wellness Summit und Global Wellness Institute; Konditionen nicht genannt",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-09-02",
-      "entity": "Nestlé",
+      "entity": "Nestlé / Yellow Wood Partners",
       "kind": "acquisition",
       "amount": "$1B",
       "amountUsd": 1000000000,
       "currency": "USD",
       "approx": false,
-      "note": "offloading its mainstream supplements business in a $1B deal",
-      "url": "https://athletechnews.com/nestle-to-divest-mainstream-supplements-business-for-1-billion/",
-      "source": "Athletech News",
+      "note": "Nestlé sells its mainstream supplements unit (Nature's Bounty, Nuun, Puritan's Pride) to Yellow Wood Partners",
+      "url": "https://www.nestlehealthscience.us/stories/nestle-reaches-agreement-divest-its-mainstream-vitamins-minerals-and-supplements-business",
+      "source": "Nestlé Health Science",
       "issue": "/en/daily/2026-09-02",
       "region": "Other",
       "category": "Nutrition & supplements",
@@ -1244,8 +1252,9 @@
           "issue": "/en/daily/2026-09-02"
         }
       ],
+      "noteDe": "Nestlé verkauft sein Mainstream-Supplement-Geschäft (Nature's Bounty, Nuun, Puritan's Pride) an Yellow Wood Partners",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-09-02",
@@ -1255,8 +1264,8 @@
       "amountUsd": 18200000,
       "currency": "USD",
       "approx": false,
-      "note": "UK-based gym software company raising to expand into the US market",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQSVNLQzNaWk81YUxrWkhwcl9tME9lMlJZUEY2Zm1KS0twSk84M0RYclBLQm1hcUZDeG93bTgxQWhSQld2N1hpRWVPNVptdFBncDk3RHNUM1d4NFJVWktybV93blNkVlF1WGh1dmVnTlpBMHNyUlNOYW9uaWlqQkRxazkyekVmTENGOFJyaFdpVW5GdWFBVFk1dHQwTFY?oc=5",
+      "note": "Dubai-based gym and PT software; equity (Global Ventures) plus venture debt (Stride) to expand into the US",
+      "url": "https://dealroom.co/news/148290-enhance-raises-18-2m-to-take-gym-training-software-into-the-us/",
       "source": "Dealroom",
       "issue": "/en/daily/2026-09-02",
       "region": "UK",
@@ -1269,8 +1278,10 @@
           "issue": "/en/daily/2026-09-02"
         }
       ],
+      "country": "United Arab Emirates",
+      "noteDe": "Gym- und PT-Software aus Dubai; Eigenkapital (Global Ventures) plus Venture Debt (Stride) für den Eintritt in die USA",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-09-02",
@@ -1324,15 +1335,15 @@
     },
     {
       "date": "2026-09-01",
-      "entity": "Quell",
+      "entity": "HITAI / Quell",
       "kind": "acquisition",
       "amount": "",
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "London's HITAI acquired YC-backed fitness gaming studio Quell to bolster its motion-tracking platform",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQN09VeUl3aFNhcmR1VHdoSkFXOE9FOFJQZXIydG91RFZ6eHZGT2JSc09WcUx3YjBmME9ZajhzTlBWZ1JxazZiXy1uQnpYc2d6SnYxMmFqcThhbDVheFBQNUdZVUpRa1U3MHJsUk9hN2tSV1lib0s5Ull1ZU9iQ0Z0eFNHUUVwamp6a1hzT0tVdDVRYnhVWFNfOEtpVWRfak5pc1JVN1Q4Y1ROT3BWc0V0TlJWa3JQZmhmRGxSZ1pCSDZTc1ZRSm5MRWpTV1R0TjBOMC1KQTBvTlVpc3ZTd2xZWmpYUTg4cWhodWJ3?oc=5",
-      "source": "EU-Startups",
+      "note": "London's HITAI acquires YC-backed Quell's motion-tracking tech and IP (asset deal)",
+      "url": "https://startuprise.co.uk/hitai-acquires-quell/",
+      "source": "StartupRise",
       "issue": "/en/daily/2026-09-01",
       "region": "UK",
       "category": "Gyms & studios",
@@ -1344,8 +1355,9 @@
           "issue": "/en/daily/2026-09-01"
         }
       ],
+      "noteDe": "Das Londoner Unternehmen HITAI übernimmt Technik und IP des YC-finanzierten Studios Quell (Asset Deal)",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-08-31",
@@ -1369,8 +1381,8 @@
           "issue": "/en/daily/2026-08-31"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: not a deal: quarterly profit report"
     },
     {
       "date": "2026-08-28",
@@ -1514,20 +1526,20 @@
           "issue": "/en/daily/2026-09-30"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: stale: confidential IPO filing announced 21 May 2026; IPO postponed Sep 2026"
     },
     {
       "date": "2026-08-25",
-      "entity": "Purely Elizabeth",
+      "entity": "Ferrero / Purely Elizabeth",
       "kind": "acquisition",
       "amount": "",
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "acquired by Ferrero, signaling Big Snack's serious push into the better-for-you category",
-      "url": "",
-      "source": "",
+      "note": "Ferrero to acquire better-for-you granola brand Purely Elizabeth; terms undisclosed (Forbes estimate: over $850M)",
+      "url": "https://dealroom.co/news/145117-ferrero-to-acquire-purely-elizabeth-for-an-estimated-850-million/",
+      "source": "Dealroom",
       "issue": "/en/daily/2026-08-25",
       "region": "Other",
       "category": "Nutrition & supplements",
@@ -1539,8 +1551,9 @@
           "issue": "/en/daily/2026-08-25"
         }
       ],
+      "noteDe": "Ferrero übernimmt die Müslimarke Purely Elizabeth; Konditionen nicht genannt (Forbes schätzt über 850 Mio. $)",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-08-20",
@@ -1639,8 +1652,8 @@
           "issue": "/en/daily/2026-08-18"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: not a deal: IPO plan, no filing"
     },
     {
       "date": "2026-08-17",
@@ -1777,15 +1790,15 @@
     },
     {
       "date": "2026-08-07",
-      "entity": "Jamieson Wellness",
+      "entity": "Kirin / Jamieson Wellness",
       "kind": "acquisition",
-      "amount": "",
-      "amountUsd": null,
-      "currency": null,
+      "amount": "C$2.5B",
+      "amountUsd": 1800000000,
+      "currency": "CAD",
       "approx": false,
-      "note": "Kirin acquires Jamieson to build a North American wellness platform",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSnF1b1hjN1A2TkVEWHZMSldRRXktTkhlMFVJRl9PaWtqck4xZEZHWEFIbEJyYWlUQk41aExFS1VXWmRNY2xXTDI4NU1vdkVLSFJYMzVXdHV6THpKMTVmS0hDa2xFZDJfclFLdTVOZUJWUjBtRWdoaklCaHRZeEtRZENaVmJiaktBNTEzV2swTXg4V3BPa19obnIxVnU1WjRpT2htZU9B?oc=5",
-      "source": "NutraIngredients.com",
+      "note": "Kirin to acquire Canadian vitamin maker Jamieson Wellness (C$2.5B enterprise value)",
+      "url": "https://www.nutraingredients.com/Article/2026/08/06/kirin-to-acquire-jamieson-wellness-for-c25-billion/",
+      "source": "NutraIngredients",
       "issue": "/en/daily/2026-08-07",
       "region": "North America",
       "category": "Software & AI",
@@ -1802,8 +1815,9 @@
           "issue": "/en/daily/2026-09-25"
         }
       ],
+      "noteDe": "Kirin übernimmt den kanadischen Vitaminhersteller Jamieson Wellness (Unternehmenswert 2,5 Mrd. C$)",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-08-06",
@@ -1862,8 +1876,8 @@
           "issue": "/en/daily/2026-10-27"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: stale: $10.1B valuation is from the Mar 2026 Series G"
     },
     {
       "date": "2026-08-04",
@@ -1969,13 +1983,13 @@
       "date": "2026-07-31",
       "entity": "SoundHealth",
       "kind": "raise",
-      "amount": "$12.25M",
-      "amountUsd": 12250000,
+      "amount": "$5.25M",
+      "amountUsd": 5250000,
       "currency": "USD",
       "approx": false,
-      "note": "scaling AI-powered devices for breathing and sleep disorders",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNU09zdXB5S09xdVpfdW9lZjVrT3dCQXU1SURQSTlXVENrbEc1eU1YODh1Q1cxRFBhb3B2amhCTm1pRy1kRzE0NTk4S3lpSEtZeVZQcDFtUE40cXlqQTlXdnJnN3VEeDNvcXlNOUNhUUdKVGtKQU04MTU1WFd5NDFkUERRZjVabU4wazJBbmR2akVxOGV1cnZ0MnFCSlRuMWJiTW9KMXU4ZWF3T09xLTY0NnV1TGkwMmtERGVneU1tUTNBODVMbXFVai1HY2NtczZFQ3dkaHl4YjRBS3dIRGI1YUFNX1lNcTcxQ3ctbS1DZEdUQ1gwYzl4NWdVc2ZQc3VO?oc=5",
-      "source": "bastillepost.com",
+      "note": "Series A led by Shangbay Capital for AI devices for breathing and sleep disorders; $12.25M raised in total",
+      "url": "https://www.massdevice.com/soundhealth-additional-fundraising/",
+      "source": "MassDevice",
       "issue": "/en/daily/2026-07-31",
       "region": "Other",
       "category": "Software & AI",
@@ -1987,8 +2001,9 @@
           "issue": "/en/daily/2026-07-31"
         }
       ],
+      "noteDe": "Series A unter Führung von Shangbay Capital für KI-Geräte gegen Atem- und Schlafstörungen; insgesamt 12,25 Mio. $",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-31",
@@ -2012,8 +2027,8 @@
           "issue": "/en/daily/2026-07-31"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "old news: Google closed the Fitbit deal in January 2021; the Inc. piece was a retrospective (hidden 2026-10-30)"
     },
     {
       "date": "2026-07-29",
@@ -2023,9 +2038,9 @@
       "amountUsd": 10000000,
       "currency": "USD",
       "approx": false,
-      "note": "seed round to build a gut-health monitoring toilet, co-founded by Whoop's former CTO",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNYXRZbW1fM3g4b2FrN2tuTm1ZTXVvTkZ0OEZIYTRzb0FzLW5aZE9RU2dsS0xteWhOZlQ3WXdYcGJTc3dnUnhEVlYtM181Q1Q1MnFLSWxDbVFYY2RvQ2x4Q1B1SXMzWjQyZnVYQzgwT0tqaC02OVB5R1JPUEtDOHVHSmNTQXM0dmJSMWQyR2ExNW4zZWZUTVZnNldhYkU3SEIzYVlqeW9mbElMRFVvX21CazhVN3lGNjZlNUs0aE5Bb0haLURuVFQ5bE9qc3ROUQ?oc=5",
-      "source": "Crunchbase News",
+      "note": "Series A led by Will Ventures for a gut-health toilet sensor; co-founded by Whoop's former CTO",
+      "url": "https://pulse2.com/throne-science-raises-10-million-series-a-for-ai-powered-smart-toilet-sensor/",
+      "source": "Pulse 2.0",
       "issue": "/en/daily/2026-07-29",
       "region": "Other",
       "category": "Wearables & devices",
@@ -2037,8 +2052,9 @@
           "issue": "/en/daily/2026-07-29"
         }
       ],
+      "noteDe": "Series A unter Führung von Will Ventures für einen Toilettensensor zur Darmgesundheit; Mitgründer ist Whoops früherer CTO",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-28",
@@ -2062,20 +2078,20 @@
           "issue": "/en/daily/2026-07-28"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: not a deal yet: crowdfunding campaign launched, not closed"
     },
     {
       "date": "2026-07-27",
-      "entity": "Bain Capital",
+      "entity": "Bain Capital / Vitabiotics",
       "kind": "acquisition",
       "amount": "$1.2B",
       "amountUsd": 1200000000,
       "currency": "USD",
       "approx": false,
-      "note": "acquired a supplements company, signalling private equity conviction in consumer health spending",
-      "url": "",
-      "source": "",
+      "note": "Bain Capital agrees to buy UK vitamins maker Vitabiotics; $1.2B as reported by Bloomberg",
+      "url": "https://athletechnews.com/bain-to-buy-1-2-billion-uk-supplements-firm-vitabiotics/",
+      "source": "Athletech News",
       "issue": "/en/daily/2026-07-27",
       "region": "Other",
       "category": "Nutrition & supplements",
@@ -2087,8 +2103,9 @@
           "issue": "/en/daily/2026-07-27"
         }
       ],
+      "noteDe": "Bain Capital kauft den britischen Vitaminhersteller Vitabiotics; 1,2 Mrd. $ laut Bloomberg",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-27",
@@ -2117,15 +2134,15 @@
     },
     {
       "date": "2026-07-24",
-      "entity": "Planet Fitness operator (Australia)",
-      "kind": "valuation",
-      "amount": "$170m",
-      "amountUsd": 170000000,
-      "currency": "USD",
+      "entity": "Franchise Equity Partners / Bravo Fit",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
       "approx": false,
-      "note": "private equity values Australian Planet Fitness operator, confirming at-scale gyms are acquisition targets",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNT2Q3UzBMaFRiOTJOY0F5UXNFRDc2eXhfQWtZV2d1R0VaRmd5MjlzVmpBdE1PMFlCM0g4Q0gtN3RjU2I2LUpxZnVRaUhYN3JMWU9hLUQyMzBvZFQ2b3pVME5IYzdhT1gxaGh1RE81Z1ZvWTJqbFg0QXE5OFprSzN3amNCcm8wb3cyQXFsSnBjS041Y054UV9lRmFVbXZVNEFBSExySXQyYw?oc=5",
-      "source": "AFR",
+      "note": "Franchise Equity Partners acquires Bravo Fit, the Planet Fitness franchisee in Australia; Planet Fitness exits its minority stake; terms undisclosed",
+      "url": "https://www.franchising.com/news/20260722_franchise_equity_partners_acquires_bravo_fit_planet_fitness_australian_fran.html",
+      "source": "Franchising.com",
       "issue": "/en/daily/2026-07-24",
       "region": "Asia-Pacific",
       "category": "Gyms & studios",
@@ -2137,20 +2154,21 @@
           "issue": "/en/daily/2026-07-24"
         }
       ],
+      "noteDe": "Franchise Equity Partners übernimmt Bravo Fit, den Planet-Fitness-Franchisenehmer in Australien; Planet Fitness steigt aus; Konditionen nicht genannt",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-23",
-      "entity": "Garmin / TrainingPeaks",
+      "entity": "Garmin / TrainingPeaks & TrainHeroic",
       "kind": "acquisition",
       "amount": "",
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "Garmin acquires TrainingPeaks, raising questions about platform pricing, integrations, and data ownership for coaches",
-      "url": "https://athletechnews.com/garmin-debuts-200-screenless-fitness-band-in-challenge-to-whoop/",
-      "source": "Athletech News",
+      "note": "Garmin acquires training platforms TrainingPeaks and TrainHeroic; terms undisclosed",
+      "url": "https://www.garmin.com/en-US/newsroom/press-release/corporate/garmin-acquires-trainingpeaks-and-trainheroic-leading-endurance-and-strength-training-platforms-for-athletes-and-coaches/",
+      "source": "Garmin",
       "issue": "/en/daily/2026-07-23",
       "region": "Other",
       "category": "Wearables & devices",
@@ -2172,8 +2190,9 @@
           "issue": "/en/daily/2026-07-27"
         }
       ],
+      "noteDe": "Garmin übernimmt die Trainingsplattformen TrainingPeaks und TrainHeroic; Konditionen nicht genannt",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-22",
@@ -2197,8 +2216,8 @@
           "issue": "/en/daily/2026-07-22"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: stale: EGYM/Playlist merger announced 15 Jan 2026"
     },
     {
       "date": "2026-07-21",
@@ -2222,8 +2241,8 @@
           "issue": "/en/daily/2026-07-21"
         }
       ],
-      "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "status": "hidden",
+      "reason": "audit 2026-10-30: off-topic: food delivery, not fitness or wellness"
     },
     {
       "date": "2026-07-20",
@@ -2280,15 +2299,15 @@
     },
     {
       "date": "2026-07-17",
-      "entity": "Interactive Strength",
+      "entity": "Interactive Strength / STEPR",
       "kind": "acquisition",
-      "amount": "",
-      "amountUsd": null,
-      "currency": null,
+      "amount": "$6.7M + earn-outs",
+      "amountUsd": 6700000,
+      "currency": "USD",
       "approx": false,
-      "note": "acquires connected stair-climbing brand Stepr",
-      "url": "https://athletechnews.com/",
-      "source": "Athletech News",
+      "note": "Interactive Strength (TRNR) agrees to acquire connected stair-climber brand STEPR; close expected Q4 2026",
+      "url": "https://www.newswire.com/news/trnr-signs-definitive-agreement-to-acquire-stepr-raises-2026-pro-forma-revenue",
+      "source": "Newswire",
       "issue": "/en/daily/2026-07-17",
       "region": "Other",
       "category": "Other",
@@ -2300,8 +2319,9 @@
           "issue": "/en/daily/2026-07-17"
         }
       ],
+      "noteDe": "Interactive Strength (TRNR) übernimmt die vernetzte Stepper-Marke STEPR; Abschluss im 4. Quartal 2026 erwartet",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-16",
@@ -2311,9 +2331,9 @@
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "takes a strategic equity investment from Eli Lilly to support GLP-1 patients",
-      "url": "https://insider.fitt.co/oura-supports-psychedelic-research-invi-mindhealth/",
-      "source": "Fitt Insider",
+      "note": "Eli Lilly makes a strategic equity investment in Oura; amount undisclosed",
+      "url": "https://ouraring.com/blog/lilly-equity-investment/",
+      "source": "Oura",
       "issue": "/en/daily/2026-07-16",
       "region": "Other",
       "category": "Wearables & devices",
@@ -2325,8 +2345,9 @@
           "issue": "/en/daily/2026-07-16"
         }
       ],
+      "noteDe": "Eli Lilly beteiligt sich strategisch an Oura; Betrag nicht genannt",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-15",
@@ -2357,13 +2378,13 @@
       "date": "2026-07-14",
       "entity": "IM8 (Prenetics)",
       "kind": "raise",
-      "amount": "$1B",
-      "amountUsd": 1000000000,
-      "currency": "USD",
+      "amount": "up to $1B",
+      "amountUsd": null,
+      "currency": null,
       "approx": false,
-      "note": "David Beckham's supplement brand takes growth capital from General Catalyst's CVF",
-      "url": "https://athletechnews.com/general-catalyst-commits-1-billion-to-david-beckham-im8-supplement-brand/",
-      "source": "Athletech News",
+      "note": "non-dilutive revenue-based marketing financing of up to $1B from General Catalyst's Customer Value Fund (not equity)",
+      "url": "https://pulse2.com/prenetics-raises-1-billion-for-im8-via-general-catalysts-customer-value-fund/",
+      "source": "Pulse 2.0",
       "issue": "/en/daily/2026-07-14",
       "region": "Other",
       "category": "Nutrition & supplements",
@@ -2375,19 +2396,20 @@
           "issue": "/en/daily/2026-07-14"
         }
       ],
+      "noteDe": "nicht verwässernde, umsatzbasierte Marketingfinanzierung von bis zu 1 Mrd. $ aus dem Customer Value Fund von General Catalyst (kein Eigenkapital)",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-09",
-      "entity": "Basic-Fit",
+      "entity": "Basic-Fit / wellyou",
       "kind": "acquisition",
-      "amount": "$61M",
-      "amountUsd": 61000000,
-      "currency": "USD",
+      "amount": "€52M",
+      "amountUsd": 56160000,
+      "currency": "EUR",
       "approx": false,
-      "note": "acquires German brand wellyou to deepen its DACH footprint",
-      "url": "https://athletechnews.com/",
+      "note": "Basic-Fit buys 41 wellyou clubs in Germany, all cash",
+      "url": "https://athletechnews.com/basic-fit-bolsters-germany-push-with-61-million-acquisition-of-wellyou/",
       "source": "Athletech News",
       "issue": "/en/daily/2026-07-09",
       "region": "DACH",
@@ -2400,8 +2422,9 @@
           "issue": "/en/daily/2026-07-09"
         }
       ],
+      "noteDe": "Basic-Fit kauft 41 wellyou-Clubs in Deutschland, in bar",
       "status": "approved",
-      "reason": "backfill review 2026-10-27"
+      "reason": "audit 2026-10-30: facts corrected"
     },
     {
       "date": "2026-07-03",
