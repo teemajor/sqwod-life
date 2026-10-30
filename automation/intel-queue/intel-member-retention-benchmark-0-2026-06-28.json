@@ -14,12 +14,15 @@
   "kind": "review-due",
   "reliability": "Could not read the source automatically — verify by hand.",
   "recommendation": "Reminder to check healthandfitness.org yourself; your current figure stays either way.",
-  "status": "revise",
+  "status": "flagged",
   "createdAt": "2026-06-28",
   "notes": [
     {
       "at": "2026-10-30T14:48:07.664Z",
-      "text": "check for accuracy and make corrections and updates. add sources."
+      "text": "check for accuracy and make corrections and updates. add sources.",
+      "appliedAt": "2026-10-30T14:48:42.865Z"
     }
-  ]
+  ],
+  "revisions": 0,
+  "lastChange": "Your note is saved. This kind of item needs a hand fix."
 }
