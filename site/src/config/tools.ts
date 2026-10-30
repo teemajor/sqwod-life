@@ -1,6 +1,6 @@
 // Sqwod Tools (/[lang]/tools/): every free calculator and database in one list.
 // The Tools page renders its cards from this array, in this order. A tool flips from
-// "coming" to "live" by changing `status` (Jobs does it on its own: see jobsLive()).
+// "coming" to "live" by changing `status`.
 // Live numbers are read on the page itself from the site's data files, never typed here.
 import type { Lang } from '../i18n/ui';
 
@@ -19,6 +19,7 @@ export interface Tool {
 }
 
 // The Tools nav item carries a small green "new" dot until this date (30 days after launch).
+// Checked at build time: the dot goes with the first deploy after the date (the site rebuilds every weekday).
 export const TOOLS_NEW_UNTIL = '2026-11-29';
 export const toolsIsNew = (now = Date.now()) => now < Date.parse(TOOLS_NEW_UNTIL + 'T23:59:59Z');
 
@@ -27,7 +28,7 @@ export const TOOLS: Tool[] = [
     slug: 'deal-tracker', status: 'live',
     name: { en: 'Deal Tracker', de: 'Deal Tracker' },
     type: { en: 'Database · updated daily', de: 'Datenbank · täglich aktualisiert' },
-    answers: { en: 'Who raised, bought, listed or closed in fitness and wellness, with the source.', de: 'Wer in Fitness und Wellness Geld bekommen, gekauft, an die Börse gebracht oder geschlossen hat, mit Quelle.' },
+    answers: { en: 'Who raised, bought, listed or closed in fitness and wellness, with the source.', de: 'Wer in Fitness und Wellness Kapital aufgenommen, übernommen, einen Börsengang gemacht oder geschlossen hat, mit Quelle.' },
     href: (lang) => `/${lang}/intelligence/deals/`,
     cta: { en: 'See the deals →', de: 'Deals ansehen →' },
   },
@@ -35,7 +36,7 @@ export const TOOLS: Tool[] = [
     slug: 'pricing-index', status: 'live', enOnly: true,
     name: { en: 'Coach Pricing Index', de: 'Coach Pricing Index' },
     type: { en: 'Calculator · US', de: 'Rechner · nur auf Englisch · US' },
-    answers: { en: 'What should I charge per session? Your floor rate in five steps, with trainer pay by state.', de: 'Was sollte ich pro Einheit verlangen? Dein Mindestpreis in fünf Schritten, mit Trainer-Gehältern nach US-Bundesstaat.' },
+    answers: { en: 'What should I charge per session? Your floor rate in five steps, with trainer pay by state.', de: 'Was sollte ich pro Einheit verlangen? Dein Mindestpreis in fünf Schritten, mit Stundenlöhnen für Trainer:innen nach US-Bundesstaat.' },
     href: () => '/en/intelligence/pricing-index/',
     cta: { en: 'Find your floor rate →', de: 'Mindestpreis berechnen →' },
   },

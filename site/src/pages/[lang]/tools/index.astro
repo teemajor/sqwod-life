@@ -30,10 +30,10 @@ const NUMBERS: Record<string, { n: string; unit: string }> = {
 };
 
 const T = de ? {
-  title: 'Sqwod Tools: kostenlose Rechner und Datenbanken fürs Fitness-Business',
+  title: 'Sqwod Tools: Rechner und Datenbanken fürs Fitness-Business',
   sub: 'Kostenlose Rechner und Datenbanken für alle, die ein Fitness-Business führen. Aufgebaut auf denselben Quellen wie unsere Reports.',
   live: 'Live', coming: 'Bald', want: 'Will ich haben →', noted: 'Notiert, danke',
-  foot: 'Du willst eins der kommenden Tools zuerst? Tipp auf „Will ich haben“ oder antworte auf einen beliebigen Daily.',
+  foot: 'Du willst eins der kommenden Tools zuerst? Tippe auf „Will ich haben“ oder antworte auf einen beliebigen Daily.',
 } : {
   title: 'Sqwod Tools: free calculators and databases for the fitness business',
   sub: 'Free calculators and databases for people who run fitness businesses. Built on the same sources as our reports.',
@@ -56,7 +56,7 @@ const schema = {
 ---
 <Base lang={lang} title={T.title} description={T.sub} active="tools">
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
-  <div class="crumb">Sqwod Tools</div>
+  <p class="kick">Sqwod Tools</p>
   <h1>Tools</h1>
   <p class="sub tl-sub">{T.sub}</p>
 
@@ -75,7 +75,7 @@ const schema = {
         <h2 class="plain tl-h">{name(t)}</h2>
         <p class="tl-a">{t.answers[lang]}</p>
         <a class="tl-vote" href="#vote" data-umami-event="tool-vote" data-umami-event-tool={t.slug}>{T.want}</a>
-        <span class="tl-noted" role="status" aria-live="polite"></span>
+        <span class="tl-noted" role="status" aria-live="polite" tabindex="-1"></span>
       </article>
     ))}
   </div>
@@ -93,12 +93,17 @@ const schema = {
         keep = window.scrollY;
         var card = a.closest('.tl');
         var msg = card && card.querySelector('.tl-noted');
-        if (msg) msg.textContent = noted;
-        a.hidden = true;
+        a.remove();   // one vote per card
+        if (msg) { msg.textContent = noted; msg.focus(); }
       });
     });
     window.addEventListener('hashchange', function () {
-      if (keep !== null && location.hash === '#vote') { window.scrollTo(0, keep); keep = null; }
+      if (keep === null || location.hash !== '#vote') return;
+      var y = keep; keep = null;
+      // drop the hash so the next vote fires hashchange again
+      history.replaceState(null, '', location.pathname + location.search);
+      window.scrollTo(0, y);
+      requestAnimationFrame(function () { window.scrollTo(0, y); });
     });
   })();
 </script>
@@ -106,7 +111,6 @@ const schema = {
 <style>
   .tl-sub{max-width:62ch}
   .tl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 0}
-  @media(max-width:899px){.tl-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
   @media(max-width:699px){.tl-grid{grid-template-columns:1fr}}
   .tl{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}
   .tl-live{background:var(--panel);border-color:var(--accent-line)}
@@ -121,7 +125,7 @@ const schema = {
   .tl-live .tl-a{color:var(--g2)}
   .tl-go,.tl-vote{display:inline-flex;align-items:center;align-self:flex-start;min-height:44px;margin-top:auto;font-size:15px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
   .tl-go:hover,.tl-vote:hover{color:var(--accent)}
-  .tl-noted{font-size:14px;font-weight:600;color:var(--chalk)}
+  .tl-noted{font-size:14px;font-weight:600;color:var(--chalk);outline:none}
   .tl-noted:not(:empty){margin-top:auto;min-height:44px;display:inline-flex;align-items:center}
   .tl-foot{margin:28px 0 8px;padding-top:18px;border-top:1px solid var(--line);font-size:14.5px;line-height:1.5;color:var(--g2);max-width:70ch}
 </style>
