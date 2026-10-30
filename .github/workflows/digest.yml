@@ -1,0 +1,61 @@
+name: Morning review email
+
+# One email with everything that waits for Tee (automation/digest.mjs, 30 Oct 2026).
+# The dash Worker dispatches this at 07:30 Berlin on weekdays (GitHub's own schedule
+# runs hours late); the schedule below is only a fallback and skips itself when today's
+# email already went out. Mondays also refresh Search Console first.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 9 * * 1-5'   # fallback only
+
+concurrency:
+  group: sqwod-digest
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  REVIEW_DIGEST: '1'
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Already sent today?
+        id: guard
+        run: |
+          D=$(TZ=Europe/Berlin date +%F)
+          if grep -qx "$D" automation/intel-queue/.digest-sent 2>/dev/null; then echo "done=true" >> "$GITHUB_OUTPUT"; echo "Review email for $D already sent."; else echo "done=false" >> "$GITHUB_OUTPUT"; fi
+      - name: "Monday: refresh Search Console"
+        if: steps.guard.outputs.done != 'true'
+        continue-on-error: true
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: |
+          if [ "$(TZ=Europe/Berlin date +%u)" = "1" ] && [ -n "$GSC_SERVICE_ACCOUNT_JSON" ]; then node automation/gsc.mjs --days=28; fi
+      - name: Build and send the review email
+        if: steps.guard.outputs.done != 'true'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.INTEL_FROM }}
+          INTEL_REVIEWER_EMAIL: ${{ secrets.INTEL_REVIEWER_EMAIL }}
+          INTEL_SIGNING_SECRET: ${{ secrets.INTEL_SIGNING_SECRET }}
+          INTEL_WORKER_URL: ${{ vars.INTEL_WORKER_URL }}
+        run: node automation/digest.mjs
+      - name: Remember it went out
+        if: steps.guard.outputs.done != 'true'
+        run: |
+          TZ=Europe/Berlin date +%F > automation/intel-queue/.digest-sent
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/intel-queue/.digest-sent automation/gsc 2>/dev/null || true
+          if ! git diff --staged --quiet; then git commit -m "review: email sent $(TZ=Europe/Berlin date +%F)"; git pull --rebase --autostash origin main || true; git push; fi

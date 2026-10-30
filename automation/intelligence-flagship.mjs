@@ -278,6 +278,7 @@ function signedLink(id, action, ttlDays = 30) {
 }
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 async function email(item) {
+  if (process.env.REVIEW_DIGEST === '1') { console.log('→ goes into the morning review email instead of its own email'); return; }
   const raw = (f) => `https://github.com/${REPO}/blob/main/automation/intel-drafts/${f}`;
   const btn = (href, label, danger) => `<a href="${href}" style="display:inline-block;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;margin:4px 6px 4px 0;${danger ? 'border:1px solid #999;color:#333' : 'background:#111;color:#fff'}">${label}</a>`;
   const warn = item.warnings.length ? `<p style="color:#b45309"><b>Check these before approving:</b></p><ul>${item.warnings.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : '<p style="color:#15803d">No stray numbers found. Every figure traces to the chart bank or a linked source.</p>';

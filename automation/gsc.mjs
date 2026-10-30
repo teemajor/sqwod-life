@@ -118,7 +118,8 @@ const text = [
   section('TOP PAGES BY CLICKS', out.topPages.slice(0, 10), ['clicks', 'impressions', 'page']),
   `\nFull data: automation/gsc/latest.json in the repo.`,
 ].join('\n');
-await fetch('https://api.resend.com/emails', {
+if (process.env.REVIEW_DIGEST === '1') console.log('→ search pulse goes into Monday\'s review email');
+else await fetch('https://api.resend.com/emails', {
   method: 'POST', headers: { authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'content-type': 'application/json' },
   body: JSON.stringify({ from: process.env.RESEND_FROM, to: process.env.GSC_DIGEST_TO || 'tee@teemajor.com', subject: `🔎 Search pulse: ${totals.clicks} clicks · ${striking.length} striking-distance queries`, text }),
 }).then((r) => console.log('digest email:', r.status)).catch((e) => console.warn('digest email failed:', e.message));

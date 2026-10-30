@@ -24,7 +24,7 @@ ALLOWED_EMAILS = "tee@teemajor.com,sqwodlife@gmail.com"
 # Monday sends the weekly pulse. Every other day it sends NOTHING unless the
 # "needs you" queue has something in it, so a quiet inbox means a healthy pipeline.
 [triggers]
-crons = ["0 7 * * *", "0 4,5 * * 1-5"]  # 07:00 UTC alerts/pulse · 04:00+05:00 UTC weekdays = start the Daily at 06:00 Berlin all year (the Worker picks whichever is 06:00 local)
+crons = ["0 7 * * *", "0,30 4-9 * * 1-5"]  # 07:00 UTC alerts/pulse · weekday clock every 30 min 04:00-09:30 UTC: the Worker starts the Daily at 06:00, the review email at 07:30 and the held-Daily send at 10:00 Berlin, all year
 
 # --- secrets (DO NOT put here — set via CLI or the dashboard's Variables & Secrets) ---
 #   npx wrangler secret put UMAMI_USERNAME    # your Umami login (e.g. admin)

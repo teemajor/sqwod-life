@@ -341,13 +341,14 @@ function queueNew(deals) {
   const fresh = deals.filter((d) => d._new);
   for (const d of fresh) {
     const id = `deal-${d.id}`;
-    writeFileSync(join(QUEUE, `${id}.json`), JSON.stringify({ id, kind: 'deal', status: 'pending', title: `${d.entity}: ${d.kind} ${d.amount || ''}`.trim(), dealId: d.id, createdAt: today }, null, 2) + '\n');
+    writeFileSync(join(QUEUE, `${id}.json`), JSON.stringify({ id, kind: 'deal', status: 'pending', title: `${d.entity}: ${d.kind} ${d.amount || ''}`.trim(), dealId: d.id, createdAt: today, flags: d.flags || [], checked: d.checked || '' }, null, 2) + '\n');
   }
   return fresh;
 }
 
 async function emailDigest(fresh) {
   if (!fresh.length) { console.log('No new deals to review.'); return; }
+  if (process.env.REVIEW_DIGEST === '1') { console.log('→ goes into the morning review email instead of its own email'); return; }
   const btn = (href, label, quiet) => `<a href="${href}" style="display:inline-block;padding:9px 16px;border-radius:999px;font-weight:700;text-decoration:none;margin:4px 6px 0 0;${quiet ? 'border:1px solid #999;color:#333' : 'background:#111;color:#fff'}">${label}</a>`;
   const flagged = fresh.filter((d) => d.flags?.length).length;
   fresh = [...fresh].sort((a, b) => (b.flags?.length ? 1 : 0) - (a.flags?.length ? 1 : 0));

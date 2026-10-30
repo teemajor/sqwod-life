@@ -24,6 +24,9 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const ARTICLES = join(ROOT, 'site', 'src', 'content', 'articles');
 const DRAFTS = join(__dirname, 'article-drafts');
+// Evidence playbooks (30 Oct 2026) wait in their own drafts folder; the weekly evidence task writes them there
+// with a queue item evidence-<slug>.json, and --apply publishes them the same way as articles.
+const DRAFTS_BY_KIND = { article: DRAFTS, evidence: join(__dirname, 'evidence-drafts') };
 const QUEUE = join(__dirname, 'intel-queue');
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
 const today = args.date || new Date().toISOString().slice(0, 10);
@@ -64,6 +67,7 @@ function checks(raw) {
 }
 
 async function email(item, en, de) {
+  if (process.env.REVIEW_DIGEST === '1') { console.log(`→ ${item.title}: goes into the morning review email`); return; }
   const btn = (href, label, quiet) => `<a href="${href}" style="display:inline-block;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;margin:4px 6px 4px 0;${quiet ? 'border:1px solid #999;color:#333' : 'background:#111;color:#fff'}">${label}</a>`;
   const warn = checks(en);
   const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:640px;color:#111">
@@ -100,8 +104,9 @@ async function queue() {
 function apply() {
   if (!existsSync(QUEUE)) { console.log('No queue.'); return; }
   let n = 0;
-  for (const f of readdirSync(QUEUE).filter((f) => f.startsWith('article-') && f.endsWith('.json'))) {
+  for (const f of readdirSync(QUEUE).filter((f) => /^(article|evidence)-/.test(f) && f.endsWith('.json'))) {
     const path = join(QUEUE, f); const p = JSON.parse(readFileSync(path, 'utf8'));
+    const DRAFTS = DRAFTS_BY_KIND[p.kind] || DRAFTS_BY_KIND.article;
     const files = ['en', 'de'].map((l) => join(DRAFTS, `${p.slug}.${l}.md`)).filter(existsSync);
     if (p.status === 'approved' && files.length) {
       for (const src of files) {

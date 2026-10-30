@@ -215,6 +215,7 @@ function emailHtml(proposals) {
   </div></div>`;
 }
 async function sendEmail(proposals) {
+  if (process.env.REVIEW_DIGEST === '1') { console.log('→ goes into the morning review email instead of its own email'); return; }
   const html = emailHtml(proposals);
   const autos = proposals.filter((p) => p.autoApplied).length;
   const pending = proposals.length - autos;

@@ -18,6 +18,10 @@ on:
 permissions:
   contents: write
 
+# One morning review email replaces this workflow's own email (automation/digest.mjs, 30 Oct 2026).
+env:
+  REVIEW_DIGEST: '1'
+
 jobs:
   draft:
     runs-on: ubuntu-latest

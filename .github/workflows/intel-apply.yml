@@ -35,6 +35,7 @@ jobs:
           git config user.email "bot@sqwod.life"
           git add site/src/content/articles automation/intel-queue automation/intel-sources.json automation/intel-drafts automation/intel-flagship-log.json
           [ -e automation/article-drafts ] && git add automation/article-drafts
+          [ -e automation/evidence-drafts ] && git add automation/evidence-drafts
           if git diff --staged --quiet; then
             echo "Nothing approved to apply."
           else

@@ -53,7 +53,9 @@ jobs:
         if: steps.guard.outputs.done != 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: node automation/cascade.mjs --date=$(date +%F) --status=published   # auto-publish; guardrail repairs/drops unverifiable items, then publishes — no human review
+        run: |
+          set -o pipefail   # keep a cascade crash a failure (the step would otherwise report tee's exit code)
+          node automation/cascade.mjs --date=$(date +%F) --status=published 2>&1 | tee /tmp/cascade.log   # guardrail repairs/drops unverifiable items; the trust check below decides whether it ships on its own
 
       - name: Voice it — TTS audio + podcast feeds (EN + DE)
         id: audio
@@ -69,6 +71,20 @@ jobs:
         if: steps.guard.outputs.done != 'true'
         run: node automation/newsletter.mjs --date=$(date +%F)
 
+      # Trust check (30 Oct 2026): a problem a reader could see holds the issue for Tee's
+      # morning review email instead of sending it. Undecided by 10:00 Berlin, it goes out.
+      - name: Trust check (hold if flagged)
+        id: trust
+        if: steps.guard.outputs.done != 'true'
+        continue-on-error: true      # a crash here must never stop the Daily: no hold output = it sends as before
+        run: |
+          node automation/daily-trust.mjs --date=$(date +%F) --log=/tmp/cascade.log
+          # A held issue is unpublished: rebuild the feeds without it.
+          if grep -q '^status: "review"' "site/src/content/daily/$(date +%F).en.md" 2>/dev/null; then
+            node automation/newsletter.mjs --date=$(date +%F)
+            node automation/audio.mjs --feeds-only
+          fi
+
       - name: Commit & push (if anything changed)
         id: commit
         if: steps.guard.outputs.done != 'true'
@@ -78,7 +94,7 @@ jobs:
           # Only stage paths that actually exist — a missing optional folder
           # (e.g. automation/moves before any move is submitted) must never
           # fail the whole Daily with a git pathspec error (exit 128).
-          for p in site/src/content automation/sources automation/covered-ledger.json automation/moves site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets site/public/daily-en.xml site/public/daily-de.xml; do
+          for p in site/src/content automation/sources automation/covered-ledger.json automation/intel-queue automation/moves site/public/audio site/public/podcast.xml site/public/podcast.de.xml site/public/email site/public/email-assets site/public/daily-en.xml site/public/daily-de.xml; do
             [ -e "$p" ] && git add "$p"
           done
           if git diff --staged --quiet; then
@@ -91,7 +107,7 @@ jobs:
 
       - name: Send the Daily (Resend Broadcasts API)
         id: send
-        if: steps.guard.outputs.done != 'true'
+        if: steps.guard.outputs.done != 'true' && steps.trust.outputs.hold != 'true'
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_AUDIENCE_EN: ${{ secrets.RESEND_AUDIENCE_EN }}
@@ -113,7 +129,7 @@ jobs:
           ST=$(grep -m1 '^status:' "$EN" | cut -d '"' -f2)
           if [ -f "site/public/audio/$D-en.mp3" ]; then AU="audio OK"; else AU="NO AUDIO"; fi
           if [ "$ST" != "published" ]; then
-            echo "::warning title=Sqwod Daily::Issue for $D is status=$ST (held by verification) — not live until promoted. $AU"
+            echo "::warning title=Sqwod Daily::Issue for $D is held for review (status=$ST). It is in the 07:30 review email and goes out at 10:00 unless Tee decides. $AU"
           else
             echo "Sqwod Daily $D shipped: status=$ST · $AU"
           fi

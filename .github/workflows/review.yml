@@ -1,0 +1,98 @@
+name: Review actions (Publish / Note / Skip)
+
+# Acts on Tee's taps in the morning review email (automation/digest.mjs, 30 Oct 2026).
+# Runs when the pr-intake Worker commits a decision to automation/intel-queue/ or
+# automation/press-queue/ (Publish, Skip, Note), and at 10:00 Berlin on weekdays
+# (dispatched by the dash Worker with mode=auto-release) to send a held Daily nobody
+# decided on. Order: apply Notes (Claude revises), publish approved drafts, release a
+# held Daily, commit (deploys), then send that Daily.
+# The bot's own commits use GITHUB_TOKEN and never re-trigger this workflow.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'automation/intel-queue/**'
+      - 'automation/press-queue/**'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'normal, or auto-release (send a held Daily still undecided)'
+        required: false
+        default: 'normal'
+
+concurrency:
+  group: sqwod-review
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+env:
+  REVIEW_DIGEST: '1'
+
+jobs:
+  act:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Apply Notes (Claude revises the draft)
+        continue-on-error: true   # one failing step must never block the Daily release or the other approvals
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node automation/revise.mjs
+
+      - name: Publish approved articles + Evidence playbooks
+        continue-on-error: true   # one failing step must never block the Daily release or the other approvals
+        run: node automation/article-review.mjs --apply --date=$(date +%F)
+      - name: Publish approved flagship reports
+        continue-on-error: true   # one failing step must never block the Daily release or the other approvals
+        run: node automation/intelligence-flagship.mjs --apply --date=$(date +%F)
+      - name: Apply approved report figures
+        continue-on-error: true   # one failing step must never block the Daily release or the other approvals
+        run: node automation/intelligence-refresh.mjs --apply --date=$(date +%F)
+
+      # From 10:00 Berlin any run sends a held Daily nobody decided on (the clock decides, not the
+      # trigger), so a cancelled or failed 10:00 dispatch is caught by the 10:30 one or the next tap.
+      - name: Release a held Daily (Publish, or auto from 10:00)
+        id: release
+        run: node automation/daily-release.mjs
+
+      - name: Re-voice a Daily that a Note rewrote
+        continue-on-error: true   # one failing step must never block the Daily release or the other approvals
+        if: steps.release.outputs.revised == 'true'
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+        run: node automation/audio.mjs --date=${{ steps.release.outputs.release }}
+
+      - name: Commit (deploys the site)
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          for p in site/src/content site/public automation/intel-queue automation/press-queue automation/article-drafts automation/evidence-drafts automation/intel-drafts automation/intel-sources.json automation/intel-flagship-log.json automation/deals-overrides.json; do
+            [ -e "$p" ] && git add "$p"
+          done
+          if git diff --staged --quiet; then
+            echo "Nothing to apply."
+          else
+            git commit -m "review: apply decisions $(date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
+
+      - name: Send the released Daily
+        if: steps.release.outputs.release != ''
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_EN: ${{ secrets.RESEND_AUDIENCE_EN }}
+          RESEND_AUDIENCE_DE: ${{ secrets.RESEND_AUDIENCE_DE }}
+          RESEND_FROM: ${{ vars.RESEND_FROM }}
+          RESEND_REPLY_TO: ${{ vars.RESEND_REPLY_TO }}
+          RESEND_PRIMARY_LANG: ${{ vars.RESEND_PRIMARY_LANG }}
+        run: node automation/send.mjs --date=${{ steps.release.outputs.release }}

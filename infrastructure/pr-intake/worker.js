@@ -18,6 +18,11 @@
  *                    The scheduled `intelligence-refresh.mjs --apply` then
  *                    publishes the result. Removal is the ONLY action that
  *                    deletes a figure, and it always requires the second tap.
+ *   GET/POST /note ← the review email's Note button (30 Oct 2026): GET shows a text box,
+ *                    POST saves {at, text} to the item's notes[] and sets status
+ *                    "revise"; automation/revise.mjs then applies it and the item
+ *                    returns in the next review email. Ids starting "press-" live in
+ *                    automation/press-queue/, everything else in automation/intel-queue/.
  *
  * Everything lives in the repo as the single source of truth; automation/press.mjs
  * (run by .github/workflows/press.yml) screens + publishes. The Worker holds NO
@@ -41,6 +46,7 @@ export default {
     if (req.method === 'POST' && url.pathname === '/submit') return submit(req, env);
     if (req.method === 'POST' && url.pathname === '/webhook') return webhook(req, env);
     if (req.method === 'GET' && url.pathname === '/intel') return intel(req, env);
+    if (url.pathname === '/note') return note(req, env);
     return new Response('Sqwod PR intake', { status: 200 });
   },
 };
@@ -163,6 +169,45 @@ async function hmacOk(data, sig, secret) {
 const btn = (href, label, danger) =>
   `<a href="${esc(href)}" style="display:inline-block;background:${danger ? '#7a2230' : '#FAFAFA'};color:${danger ? '#fff' : '#0e0e10'};text-decoration:none;font:800 15px/1 -apple-system;padding:14px 22px;border-radius:10px;margin:8px 8px 0 0">${label}</a>`;
 
+const queuePath = (id) => (id.startsWith('press-') ? `automation/press-queue/${id.slice(6)}.json` : `automation/intel-queue/${id}.json`);
+// Statuses that still wait for a decision (press uses its own words).
+const OPEN = new Set(['pending', 'screened', 'submitted', 'needs-changes', 'flagged']);
+
+async function note(req, env) {
+  const u = new URL(req.url);
+  const form = req.method === 'POST' ? await req.formData() : null;
+  const get = (k) => (form ? (form.get(k) || '').toString() : u.searchParams.get(k) || '');
+  const id = get('id'), exp = get('exp'), sig = get('sig');
+  if (!id) return page('Invalid link', 'This note link is malformed.');
+  if (!Number(exp) || Number(exp) * 1000 < Date.now()) return page('Link expired', 'This link has expired. Tomorrow\'s review email has a fresh one.');
+  if (!(await hmacOk(`${id}.note.${exp}`, sig, env.INTEL_SIGNING_SECRET))) return page('Could not verify', 'This link failed signature verification.');
+  const path = queuePath(id);
+  const cur = await getFile(env, path);
+  if (!cur) return page('Not found', 'That item no longer exists.');
+  const p = JSON.parse(cur.content);
+  const name = esc(p.title || p.label || p.headline || id);
+  // Notes only on things still open, a sent Daily (website fix) or one already being revised. Never on a released Daily.
+  if (!OPEN.has(p.status) && !['sent', 'revise'].includes(p.status)) return page('Already handled', `This is already <b>${esc(p.status)}</b>. A note can't change it any more.`);
+  if (req.method !== 'POST') {
+    return new Response(`<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Note · Sqwod</title>` +
+      `<div style="font-family:-apple-system,Segoe UI,Arial;background:#0e0e10;color:#FAFAFA;min-height:100vh;margin:0;padding:24px;box-sizing:border-box">` +
+      `<div style="max-width:560px;margin:0 auto"><div style="font:800 22px/1 -apple-system;letter-spacing:-.02em">SQWOD<span style="color:#85858e">.life</span></div>` +
+      `<h1 style="font-size:20px;margin:22px 0 6px">What should change?</h1><p style="color:#b8b8c0;font-size:14px;line-height:1.5;margin:0 0 14px">${name}</p>` +
+      `<form method="POST" action="/note"><input type="hidden" name="id" value="${esc(id)}"><input type="hidden" name="exp" value="${esc(exp)}"><input type="hidden" name="sig" value="${esc(sig)}">` +
+      `<textarea name="text" required rows="7" placeholder="e.g. Cut the second paragraph. Lead with the price change. The 63% figure is from one gym, say so." style="width:100%;box-sizing:border-box;border-radius:10px;border:1px solid #333;background:#16161a;color:#fff;padding:12px;font:15px/1.5 -apple-system,Arial"></textarea>` +
+      `<button style="margin-top:12px;background:#FAFAFA;color:#0e0e10;border:0;font:800 15px/1 -apple-system;padding:14px 22px;border-radius:10px">Send note</button></form>` +
+      `<p style="color:#85858e;font-size:13px;line-height:1.5;margin-top:16px">Claude applies it within the hour and the revised version comes back in your next review email.${p.kind === 'daily' && p.held ? ' For a held Daily: the fixed issue goes out as soon as it is revised.' : ''}</p></div></div>`,
+      { status: 200, headers: { 'content-type': 'text/html;charset=utf-8' } });
+  }
+  const text = get('text').trim().slice(0, 2000);
+  if (!text) return page('Empty note', 'Nothing was saved.');
+  p.notes = [...(p.notes || []), { at: new Date().toISOString(), text }];
+  p.status = 'revise';
+  const ok = await putFile(env, path, JSON.stringify(p, null, 2), `review: note on ${id}`, cur.sha);
+  if (!ok) return page('Try again', 'Could not save your note. Please send it again.');
+  return page('Note saved ✓', `Claude is revising <b>${name}</b>. The new version comes back in your next review email.`);
+}
+
 const INTEL_ACTIONS = {
   approve: 'approved', replace: 'replace-approved', review: 'flagged', reject: 'rejected', 'remove-confirm': 'remove-approved',
 };
@@ -175,7 +220,7 @@ async function intel(req, env) {
   if (!Number(exp) || Number(exp) * 1000 < Date.now()) return page('Link expired', 'This link has expired — the next refresh will send a fresh one.');
   if (!(await hmacOk(`${id}.${action}.${exp}`, sig, env.INTEL_SIGNING_SECRET))) return page('Could not verify', 'This link failed signature verification.');
 
-  const path = `automation/intel-queue/${id}.json`;
+  const path = queuePath(id);
   const cur = await getFile(env, path);
   if (!cur) return page('Not found', 'That proposal no longer exists.');
   const p = JSON.parse(cur.content);
@@ -198,14 +243,25 @@ async function intel(req, env) {
     return page('Remove this figure?', `You're about to permanently remove <b>${esc(p.label)}</b> (currently <b>${esc(p.oldValue)}</b>${p.currentSource ? `, ${esc(p.currentSource)}` : ''}) from <b>${esc(p.report)}</b> in both languages. This can't be undone from the email. ${btn(confirmUrl, 'Yes, remove it', true)}`);
   }
 
-  if (p.status !== 'pending') return page('Already handled', `This proposal was already <b>${esc(p.status)}</b>.`);
+  if (!OPEN.has(p.status)) return page('Already handled', `This was already <b>${esc(p.status)}</b>.`);
   p.status = INTEL_ACTIONS[action];
   p.decidedAt = new Date().toISOString();
   const ok = await putFile(env, path, JSON.stringify(p, null, 2), `intel: ${p.status} ${id}`, cur.sha);
   if (!ok) return page('Try again', 'Could not record your decision — please tap the link again.');
 
-  // Lane articles (automation/article-review.mjs): Approve & publish / Reject.
-  if (p.kind === 'article') {
+  // Held Daily (daily-trust.mjs): Publish sends it now, Skip keeps it off the site and out of inboxes.
+  if (p.kind === 'daily') {
+    if (action === 'approve') return page('Sending ✓', `Today's Daily goes live and out to subscribers in the next few minutes.`);
+    if (action === 'reject') return page('Skipped', `Today's Daily stays unpublished. No email goes out.`);
+    return page('Flagged', 'Nothing changes. It still goes out at 10:00 unless you decide.');
+  }
+  if (p.kind === 'press' || id.startsWith('press-')) {
+    if (action === 'approve') return page('Approved ✓', `<b>${esc(p.headline)}</b> publishes within the hour${p.tier === 'premium' && !p.paid ? ', once payment arrives' : ''}.`);
+    if (action === 'reject') return page('Rejected', `<b>${esc(p.headline)}</b> will not be published.`);
+    return page('Flagged', 'Nothing changes.');
+  }
+  // Lane articles and Evidence playbooks (automation/article-review.mjs): Approve & publish / Reject.
+  if (p.kind === 'article' || p.kind === 'evidence') {
     if (action === 'approve') return page('Publishing queued ✓', `<b>${esc(p.title)}</b> goes live in English and German with your byline on the next apply run (within 4 hours).`);
     if (action === 'reject') return page('Article rejected', `<b>${esc(p.title)}</b> is archived and will not be published.`);
     return page('Flagged for review', `<b>${esc(p.title)}</b> is flagged. Nothing on the site changes.`);
@@ -245,7 +301,8 @@ async function getFile(env, path) {
   const r = await fetch(`${GH(env, path)}?ref=${env.GH_BRANCH || 'main'}`, { headers: ghHeaders(env) });
   if (!r.ok) return null;
   const j = await r.json();
-  return { sha: j.sha, content: atob(j.content.replace(/\n/g, '')) };
+  const bin = atob(j.content.replace(/\n/g, ''));
+  return { sha: j.sha, content: new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0))) };   // UTF-8 safe (ä, ü, € in queue files)
 }
 async function putFile(env, path, content, message, sha) {
   const body = { message, content: btoa(unescape(encodeURIComponent(content))), branch: env.GH_BRANCH || 'main' };

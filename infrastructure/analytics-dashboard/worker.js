@@ -31,9 +31,11 @@
  */
 
 const RESEND_API = 'https://api.resend.com';
-// Fires at 04:00 AND 05:00 UTC on weekdays; triggerDaily only acts on the one that is
-// 06:00 in Berlin (04:00 UTC in summer time, 05:00 UTC in winter). Cloudflare crons are UTC-only.
-const DAILY_TRIGGER_CRON = '0 4,5 * * 1-5';  // must match wrangler.toml [triggers] crons
+// Weekday clock: fires every 30 min from 04:00 to 09:30 UTC; clockJobs() acts on Berlin
+// wall-clock times (Cloudflare crons are UTC-only, Berlin moves between UTC+1 and UTC+2):
+//   06:00 start the Daily (content.yml) · 07:30 the review email (digest.yml)
+//   10:00 + 10:30 send a held Daily nobody decided on (review.yml; from 10:00 any run releases it)
+const DAILY_TRIGGER_CRON = '0,30 4-9 * * 1-5';  // must match wrangler.toml [triggers] crons
 const DAY = 86400000;
 const FRESH_DRAFT_MS = 3 * DAY;      // a draft older than this is history, not a task
 const GRACE_MS = 90 * 60 * 1000;     // a draft minutes old is a pipeline mid-run
@@ -91,7 +93,7 @@ export default {
   // alert needs a human, so a quiet inbox means a healthy pipeline.
   async scheduled(event, env, ctx) {
     // 05:00 UTC weekdays: start the Daily on time (GitHub's own schedule runs hours late).
-    if (event.cron === DAILY_TRIGGER_CRON) { ctx.waitUntil(triggerDaily(env)); return; }
+    if (event.cron === DAILY_TRIGGER_CRON) { ctx.waitUntil(clockJobs(env, event.scheduledTime)); return; }
     const endAt = Date.now();
     const d = await gather(env, { startAt: endAt - 7 * DAY, endAt, unit: 'day', label: 'Last 7 days', activeKey: '7' });
     const dashUrl = env.DASH_URL || 'https://dash.sqwod.life';
@@ -579,9 +581,39 @@ function alertsText(q, dashUrl) {
 // Needs secret GITHUB_TOKEN: a fine-grained token for teemajor/sqwod-life with
 // "Actions: Read and write" only. The workflow skips itself if today already shipped,
 // so a retry or GitHub's late fallback schedule can never send the Daily twice.
+async function clockJobs(env, at = Date.now()) {
+  const [h, m] = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(at)).split(':').map(Number);
+  const slot = `${h}:${m < 15 ? '00' : m < 45 ? '30' : '00'}`;   // cron fires a little late; round to the half hour
+  if (slot === '6:00') return triggerDaily(env);
+  if (slot === '7:30') return dispatchWorkflow(env, 'digest.yml', null, 'the 07:30 review email');
+  if (slot === '10:00') return dispatchWorkflow(env, 'review.yml', { mode: 'auto-release' }, 'the 10:00 send of a held Daily');
+  if (slot === '10:30') return dispatchWorkflow(env, 'review.yml', { mode: 'auto-release' }, 'the 10:30 safety run for a held Daily');
+  console.log(`clock: ${slot} Berlin, nothing scheduled`);
+}
+
+// workflow_dispatch for the review loop (same token as the Daily trigger). Alerts by email on failure.
+async function dispatchWorkflow(env, file, inputs, label) {
+  const repo = env.GITHUB_REPO || 'teemajor/sqwod-life';
+  if (!env.GITHUB_TOKEN) { console.log(`${label}: GITHUB_TOKEN not set`); return; }
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const r = await fetch(`https://api.github.com/repos/${repo}/actions/workflows/${file}/dispatches`, {
+      method: 'POST',
+      headers: { authorization: `Bearer ${env.GITHUB_TOKEN}`, accept: 'application/vnd.github+json',
+        'x-github-api-version': '2022-11-28', 'user-agent': 'sqwod-dashboard-worker', 'content-type': 'application/json' },
+      body: JSON.stringify(inputs ? { ref: 'main', inputs } : { ref: 'main' }),
+    }).catch((e) => ({ ok: false, status: String(e) }));
+    if (r.ok) { console.log(`${label}: dispatched (attempt ${attempt})`); return; }
+    if (r.status === 401 || r.status === 403 || r.status === 404) break;
+    await new Promise((res) => setTimeout(res, 20000));
+  }
+  if (env.RESEND_API_KEY && env.RESEND_FROM) await fetch(`${RESEND_API}/emails`, {
+    method: 'POST', headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+    body: JSON.stringify({ from: env.RESEND_FROM, to: env.DIGEST_TO || 'tee@teemajor.com', subject: `Sqwod: could not start ${label}`,
+      text: `Cloudflare could not start ${label}. Run it by hand: https://github.com/${repo}/actions/workflows/${file} → Run workflow.` }),
+  }).catch(() => {});
+}
+
 async function triggerDaily(env) {
-  const berlinHour = Number(new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', hour12: false }).format(new Date()));
-  if (berlinHour !== 6) { console.log(`daily trigger: ${berlinHour}:00 in Berlin, waiting for the 06:00 run`); return; }
   const repo = env.GITHUB_REPO || 'teemajor/sqwod-life';
   const alert = async (why) => {
     console.log(`daily trigger failed: ${why}`);
