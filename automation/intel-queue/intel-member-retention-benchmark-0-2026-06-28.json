@@ -9,12 +9,12 @@
   "checkedUrl": "https://www.healthandfitness.org/",
   "checkedDomain": "healthandfitness.org",
   "sourceUrl": "https://www.healthandfitness.org/",
-  "snippet": "(value not found on page — please verify)",
-  "confidence": "low",
+  "snippet": "Member retention averaged 66.4% for the year.",
+  "confidence": "medium",
   "kind": "review-due",
   "reliability": "Could not read the source automatically — verify by hand.",
-  "recommendation": "Reminder to check healthandfitness.org yourself; your current figure stays either way.",
-  "status": "revise",
+  "recommendation": "Still supported by HFA 2025 Fitness Industry Benchmarking Report. Tap Keep as is.",
+  "status": "pending",
   "createdAt": "2026-06-28",
   "notes": [
     {
@@ -24,8 +24,16 @@
     },
     {
       "at": "2026-10-30T14:49:50.661Z",
-      "text": "check for accuracy and make corrections and updates. add sources."
+      "text": "check for accuracy and make corrections and updates. add sources.",
+      "appliedAt": "2026-10-30T15:12:08.015Z"
     }
   ],
-  "revisions": 0
+  "revisions": 1,
+  "foundUrl": "https://www.healthandfitness.org/hfa-releases-2025-fitness-industry-benchmarking-report/",
+  "foundSource": "HFA 2025 Fitness Industry Benchmarking Report",
+  "foundYear": "2025 (FY2024 data)",
+  "foundDomain": "healthandfitness.org",
+  "revisedAt": "2026-10-30T15:12:08.015Z",
+  "lastChange": "Confirmed: HFA's own press release (Sep 30 2025) states member retention averaged 66.4%, matching Tee's published figure exactly.",
+  "unresolved": "The HFA 2026 Benchmarking Report exists (244 operators) but no updated annual retention figure from it has been publicly disclosed yet; 66.4% from the 2025 report remains the latest confirmed public number."
 }
