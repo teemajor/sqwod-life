@@ -20,8 +20,9 @@
  * Vars (wrangler.toml [vars]):
  *   RESEND_SEGMENT_EN  segment ID for the English list
  *   RESEND_SEGMENT_DE  segment ID for the German list
- *   RESEND_SEGMENT_JOBS_EN / RESEND_SEGMENT_JOBS_DE  segments for the Friday Sqwod Jobs alert
- *                      (sign-ups with source "jobs-alert" join the one for their language)
+ *   RESEND_SEGMENT_JOBS  segment for the Friday Sqwod Jobs alert, one for both languages
+ *                      (the email is German first, English below). Falls back to
+ *                      RESEND_SEGMENT_JOBS_EN, its name before Nov 2026.
  *   RESEND_FROM        e.g. "Sqwod Daily <daily@sqwod.life>"
  *   CONFIRM_FROM       sender for the confirmation mail only. Must sit on a domain
  *                      with click tracking OFF (notify.sqwod.life), otherwise the
@@ -111,7 +112,7 @@ async function subscribe(req, env) {
   const ct = req.headers.get('content-type') || '';
   const wantsJson = ct.includes('application/json');
 
-  let email = '', lang = 'en', hp = '', source = '', ts = 0, role = '';
+  let email = '', lang = 'en', hp = '', source = '', ts = 0, role = '', daily = false;
   if (wantsJson) {
     const b = await req.json().catch(() => ({}));
     email = (b.email || '').toString().trim().toLowerCase();
@@ -120,6 +121,7 @@ async function subscribe(req, env) {
     source = (b.source || '').toString().slice(0, 60);
     ts = parseInt(b.ts, 10) || 0;
     role = cleanRole(b.role);
+    daily = b.daily === true || b.daily === '1';
   } else {
     const form = await req.formData();
     email = (form.get('email') || '').toString().trim().toLowerCase();
@@ -128,6 +130,7 @@ async function subscribe(req, env) {
     source = (form.get('source') || '').toString().slice(0, 60);
     ts = parseInt(form.get('ts'), 10) || 0;
     role = cleanRole(form.get('role'));
+    daily = form.get('daily') === '1';
   }
 
   const base = env.SITE_BASE || 'https://sqwod.life';
@@ -179,11 +182,13 @@ async function subscribe(req, env) {
     l: lang,
     s: source || 'site',
     r: role,
+    // jobs-alert sign-ups only: the unticked "also send me the Daily" box was ticked
+    d: source === 'jobs-alert' && daily ? 1 : 0,
     x: Date.now() + ttlHours * 3600 * 1000,
   }, env.CONFIRM_SECRET);
 
   const confirmUrl = `${new URL(req.url).origin}/confirm?t=${encodeURIComponent(token)}`;
-  const sent = await sendConfirmation(env, email, lang, confirmUrl, ttlHours);
+  const sent = await sendConfirmation(env, email, lang, confirmUrl, ttlHours, source === 'jobs-alert' ? (daily ? 'jobs+daily' : 'jobs') : 'daily');
   if (!sent) return fail('provider', 502);
 
   return okResponse();
@@ -213,9 +218,11 @@ async function confirm(req, env, url) {
   // jobs email. Resend contact properties are strings, so the flag is the string "true".
   const jobsAlert = data.s === 'jobs-alert';
   if (jobsAlert) payload.properties.jobs_alert = 'true';
-  const jobsSegment = jobsAlert ? (lang === 'de' ? env.RESEND_SEGMENT_JOBS_DE : env.RESEND_SEGMENT_JOBS_EN) : '';
-  // A jobs-alert sign-up asked for one email a week, not the Daily: it joins only the jobs segment.
-  const segs = jobsAlert ? [jobsSegment].filter(Boolean) : [segment].filter(Boolean);
+  // One jobs segment for both languages (31 Oct 2026): the Resend plan allows 3 segments.
+  const jobsSegment = jobsAlert ? (env.RESEND_SEGMENT_JOBS || env.RESEND_SEGMENT_JOBS_EN || '') : '';
+  // A jobs-alert sign-up joins the jobs segment, and the Daily only if it ticked the box for it.
+  const wantsDaily = !jobsAlert || data.d === 1;
+  const segs = [jobsAlert ? jobsSegment : '', wantsDaily ? segment : ''].filter(Boolean);
   if (segs.length) payload.segments = segs.map((id) => ({ id }));
 
   const r = await fetch('https://api.resend.com/contacts', {
@@ -239,6 +246,12 @@ async function confirm(req, env, url) {
       });
       if (!g.ok) console.log('resend jobs segment error', g.status, (await g.text()).slice(0, 200));
     }
+    if (data.d === 1 && segment) {
+      const g = await fetch(`https://api.resend.com/contacts/${encodeURIComponent(data.e)}/segments/${segment}`, {
+        method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}` },
+      });
+      if (!g.ok) console.log('resend daily segment error', g.status, (await g.text()).slice(0, 200));
+    }
   }
 
   // Re-confirming an address that already exists is a success, not an error.
@@ -250,18 +263,24 @@ async function confirm(req, env, url) {
 }
 
 /* ------------------------------------------------------- confirmation email */
-async function sendConfirmation(env, email, lang, confirmUrl, ttlHours) {
+async function sendConfirmation(env, email, lang, confirmUrl, ttlHours, what = 'daily') {
+  // What the sign-up asked for: the Daily, the Friday jobs alert, or both.
+  const NAME = lang === 'de'
+    ? { daily: 'zum Sqwod Daily', jobs: 'zum Sqwod-Jobs-Alert', 'jobs+daily': 'zum Sqwod-Jobs-Alert und zum Sqwod Daily' }
+    : { daily: 'Sqwod Daily subscription', jobs: 'Sqwod Jobs alert', 'jobs+daily': 'Sqwod Jobs alert and Sqwod Daily subscription' };
+  const name = NAME[what] || NAME.daily;
+  const label = what === 'jobs' ? 'Sqwod Jobs' : 'Sqwod Daily';
   const t = lang === 'de' ? {
-    subject: 'Bestätige deine Anmeldung zum Sqwod Daily',
+    subject: `Bestätige deine Anmeldung ${name}`,
     head: 'Nur noch ein Klick.',
-    body: 'Klick den Button, um deine Anmeldung zum Sqwod Daily zu bestätigen. Ohne Bestätigung schicken wir dir nichts.',
+    body: `Klick den Button, um deine Anmeldung ${name} zu bestätigen. Ohne Bestätigung schicken wir dir nichts.`,
     cta: 'Anmeldung bestätigen',
     fine: `Der Link ist ${ttlHours} Stunden gültig. Du hast dich nicht angemeldet? Dann ignorier diese Mail einfach — es passiert nichts.`,
     fallback: 'Button geht nicht? Kopier diesen Link in den Browser:',
   } : {
-    subject: 'Confirm your Sqwod Daily subscription',
+    subject: `Confirm your ${name}`,
     head: 'One click to go.',
-    body: "Hit the button to confirm your Sqwod Daily subscription. We won't send you anything until you do.",
+    body: `Hit the button to confirm your ${name}. We won't send you anything until you do.`,
     cta: 'Confirm subscription',
     fine: `This link works for ${ttlHours} hours. Didn't sign up? Ignore this email — nothing happens.`,
     fallback: "Button not working? Paste this link into your browser:",
@@ -270,7 +289,7 @@ async function sendConfirmation(env, email, lang, confirmUrl, ttlHours) {
   const html = `<!doctype html><html><body style="margin:0;background:#0a0a0a;padding:32px 16px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif">
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;margin:0 auto;background:#111;border:1px solid #262626;border-radius:16px">
     <tr><td style="padding:32px">
-      <div style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a">Sqwod Daily</div>
+      <div style="font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a">${label}</div>
       <h1 style="margin:14px 0 10px;font-size:24px;line-height:1.2;letter-spacing:-.02em;color:#fff">${t.head}</h1>
       <p style="margin:0 0 24px;font-size:15px;line-height:1.6;color:#b8b8b8">${t.body}</p>
       <a href="${confirmUrl}" style="display:inline-block;background:#fff;color:#0a0a0a;text-decoration:none;font-weight:800;font-size:15px;padding:14px 26px;border-radius:999px">${t.cta}</a>
