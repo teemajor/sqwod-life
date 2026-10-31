@@ -20,8 +20,9 @@
  * Vars (wrangler.toml [vars]):
  *   RESEND_SEGMENT_EN  segment ID for the English list
  *   RESEND_SEGMENT_DE  segment ID for the German list
- *   RESEND_SEGMENT_JOBS_EN / RESEND_SEGMENT_JOBS_DE  segments for the Friday Sqwod Jobs alert
- *                      (sign-ups with source "jobs-alert" join the one for their language)
+ *   RESEND_SEGMENT_JOBS  segment for the Friday Sqwod Jobs alert, one for both languages
+ *                      (the email is German first, English below). Falls back to
+ *                      RESEND_SEGMENT_JOBS_EN, its name before Nov 2026.
  *   RESEND_FROM        e.g. "Sqwod Daily <daily@sqwod.life>"
  *   CONFIRM_FROM       sender for the confirmation mail only. Must sit on a domain
  *                      with click tracking OFF (notify.sqwod.life), otherwise the
@@ -217,7 +218,8 @@ async function confirm(req, env, url) {
   // jobs email. Resend contact properties are strings, so the flag is the string "true".
   const jobsAlert = data.s === 'jobs-alert';
   if (jobsAlert) payload.properties.jobs_alert = 'true';
-  const jobsSegment = jobsAlert ? (lang === 'de' ? env.RESEND_SEGMENT_JOBS_DE : env.RESEND_SEGMENT_JOBS_EN) : '';
+  // One jobs segment for both languages (31 Oct 2026): the Resend plan allows 3 segments.
+  const jobsSegment = jobsAlert ? (env.RESEND_SEGMENT_JOBS || env.RESEND_SEGMENT_JOBS_EN || '') : '';
   // A jobs-alert sign-up joins the jobs segment, and the Daily only if it ticked the box for it.
   const wantsDaily = !jobsAlert || data.d === 1;
   const segs = [jobsAlert ? jobsSegment : '', wantsDaily ? segment : ''].filter(Boolean);
