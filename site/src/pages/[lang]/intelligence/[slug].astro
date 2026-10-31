@@ -37,6 +37,7 @@ const jsonLd = {
     {
       '@type': 'Dataset', name: d.title, description: d.description, url,
       creator: authorLd(d.author), dateModified: iso(d.updatedAt),
+      license: `https://sqwod.life/${lang}/data-licence/`,
       ...(years.length ? { temporalCoverage: `${years[0]}/${years[years.length - 1]}` } : {}),
       ...(variableMeasured.length ? { variableMeasured } : {}),
       ...(d.sources?.length ? { isBasedOn: d.sources.map((s) => s.url) } : {}),
