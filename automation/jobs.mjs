@@ -43,12 +43,12 @@ const BRANDS = join(__dirname, 'jobs-brands.json');
 const apiKey = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.SQWOD_MODEL || 'claude-sonnet-4-6';
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
-const SINCE = Math.max(1, Math.min(100, Number(args.since) || 14));
+export const SINCE = Math.max(1, Math.min(100, Number(args.since) || 14));
 const DAY = 86400000;
 const iso = (t = Date.now()) => new Date(t).toISOString().slice(0, 10);
 
 export const REGIONS = ['Berlin', 'Hamburg', 'München', 'Köln', 'Frankfurt', 'Other DE', 'Remote DE'];
-export const TYPES = ['trainer', 'coach', 'studio-manager', 'sales', 'marketing', 'product-tech', 'ops', 'other'];
+export const TYPES = ['trainer', 'coach', 'studio-manager', 'sales', 'marketing', 'product-tech', 'ops', 'apprenticeship', 'other'];
 export const EMPLOYMENT = ['full-time', 'part-time', 'freelance', 'mini-job', 'unknown'];
 
 /* ------------------------------------------------------------------ pay parsing -- */
@@ -271,31 +271,163 @@ const empOf = (s) => (EMP_MAP.find(([rx]) => rx.test(String(s || ''))) || [null,
 
 /* ------------------------------------------------------------------- sources -- */
 
-async function fromBA(src) {
+/** One Bundesagentur search item -> job fields. v6 (seen 31 Oct 2026) uses stellenangebotsTitel,
+ *  firma, referenznummer, stellenlokationen[].adresse, datumErsteVeroeffentlichung, the
+ *  arbeitszeit* flags and verguetungsangabe (a category such as KEINE_ANGABEN, never a figure);
+ *  the documented v4 names are kept as fallbacks. `emp` is the employment of the search pass. */
+export function baItem(s, emp = 'unknown') {
+  const loc = (Array.isArray(s.stellenlokationen) && s.stellenlokationen[0]?.adresse) || s.arbeitsort || (Array.isArray(s.arbeitsorte) ? s.arbeitsorte[0] : null) || {};
+  const land = String(loc.land || '').trim();
+  const refnr = s.referenznummer || s.refnr || s.hashId;
+  const title = s.stellenangebotsTitel || s.titel || s.stellentitel || s.hauptberuf || s.beruf;
+  if (!refnr || !title) return null;
+  if (land && !/^(deutschland|germany|de|deu)$/i.test(land)) return { foreign: true };
+  // "Cham, Oberpfalz" -> "Cham"
+  const city = String(loc.ort || loc.stadt || '').split(',')[0].trim() || null;
+  const vz = s.arbeitszeitVollzeit === true;
+  const tz = ['arbeitszeitTeilzeitVormittag', 'arbeitszeitTeilzeitNachmittag', 'arbeitszeitTeilzeitAbend', 'arbeitszeitTeilzeitFlexibel', 'arbeitszeitTeilzeit'].some((k) => s[k] === true);
+  const employment = emp === 'mini-job' ? 'mini-job' : vz && !tz ? 'full-time' : tz && !vz ? 'part-time' : emp;
+  return {
+    payCategory: String(s.verguetungsangabe || 'none'),
+    fields: {
+      rawId: refnr, title, employer: s.firma || s.arbeitgeber || s.arbeitgeberName, city, country: 'DE', employment,
+      url: s.externeUrl || null,
+      postedAt: s.datumErsteVeroeffentlichung || s.veroeffentlichungszeitraum?.von || s.aktuelleVeroeffentlichungsdatum || null,
+      payText: null,
+    },
+  };
+}
+
+// The search list only says WHETHER pay is given (verguetungsangabe); the figure is on the
+// job's detail page. Category -> pay period.
+const BA_PAY_PERIOD = { STUNDENLOHN: 'hour', MONATSGEHALT: 'month', MONATSLOHN: 'month', JAHRESGEHALT: 'year' };
+const BA_DETAIL_MAX = 60;
+
+/** Pay from one Bundesagentur job detail. Reads every field whose name sounds like pay
+ *  (verguetung, gehalt, lohn, entgelt, salary): numbers as min/max, text through parsePay.
+ *  The search category sets the period when the detail does not. A collective-agreement
+ *  grade without an amount ("Entgeltgruppe 13 TV-L") stays text only: no figure is invented. */
+export function baDetailPay(detail, category) {
+  const texts = []; const nums = [];
+  const walk = (x, key = '') => {
+    if (x == null) return;
+    if (Array.isArray(x)) return x.forEach((v) => walk(v, key));
+    if (typeof x === 'object') return Object.entries(x).forEach(([k, v]) => walk(v, /verguet|gehalt|lohn|entgelt|salar|pay/i.test(k) ? k : key ? `${key}.${k}` : ''));
+    if (!/verguet|gehalt|lohn|entgelt|salar|pay/i.test(key)) return;
+    if (/angabe$/i.test(key) && typeof x === 'string' && /^[A-Z_]+$/.test(x)) return;   // the category enum itself
+    if (typeof x === 'number' && x > 0) nums.push({ key, n: x });
+    else if (typeof x === 'string' && x.trim()) texts.push(x.trim());
+  };
+  walk(detail);
+  const period = BA_PAY_PERIOD[category] || null;
+  const payText = texts.join(' · ').slice(0, 200) || null;
+  if (nums.length) {
+    const lo = nums.find((v) => /von|min|ab|unten|lower/i.test(v.key))?.n ?? Math.min(...nums.map((v) => v.n));
+    const hi = nums.find((v) => /bis|max|oben|upper/i.test(v.key))?.n ?? Math.max(...nums.map((v) => v.n));
+    const p = period || (hi <= 150 ? 'hour' : hi <= 15000 ? 'month' : 'year');
+    return { payText: payText || `${lo}${hi !== lo ? `–${hi}` : ''} € (${p})`, payMin: lo, payMax: hi, payPeriod: p, payCurrency: 'EUR' };
+  }
+  const parsed = parsePay(payText);
+  if (parsed.payMin != null || parsed.payMax != null) {
+    // trust the category's period over the guess from the figure's size, unless the text named one
+    const named = /std|stunde|monat|jahr|p\.\s?a|hour|month|year/i.test(payText || '');
+    return { ...parsed, payPeriod: named ? parsed.payPeriod : period || parsed.payPeriod };
+  }
+  return { payText, payMin: null, payMax: null, payPeriod: null, payCurrency: null };
+}
+
+/** Fetch detail pages for postings whose category says pay is given and put the pay on those
+ *  rows. Tries the documented v4 path, then v6, with base64(refnr); keeps whichever answers. */
+async function fetchBaDetailPay(src, out, wanted, headers, diag) {
+  const d = (diag.detail = { wanted: wanted.size, fetched: 0, withFigure: 0, textOnly: 0, failed: 0 });
+  if (!wanted.size) return;
+  const base = src.url.replace(/\/pc\/v\d+\/jobs$/, '');
+  let path = null;
+  for (const [refnr, category] of [...wanted].slice(0, BA_DETAIL_MAX)) {
+    const code = Buffer.from(refnr).toString('base64');
+    let detail = null;
+    for (const pth of path ? [path] : ['/pc/v4/jobdetails/', '/pc/v6/jobdetails/']) {
+      detail = await getJson(`${base}${pth}${encodeURIComponent(code)}`, { api: true, headers });
+      if (detail && typeof detail === 'object') { path = pth; break; }
+    }
+    if (!detail) { d.failed++; continue; }
+    d.fetched++;
+    if (!d.path) { d.path = path; d.sampleKeys = Object.keys(detail).slice(0, 40); }
+    const pay = baDetailPay(detail, category);
+    if (pay.payMin != null || pay.payMax != null) d.withFigure++; else if (pay.payText) d.textOnly++;
+    if (pay.payText && (d.samples ||= []).length < 6) d.samples.push(pay.payText);
+    for (const j of out) if (j.id === idFor('ba', refnr)) Object.assign(j, pay);
+  }
+}
+
+export async function fromBA(src) {
   const out = []; const since = SINCE;
+  const payWanted = new Map();   // refnr -> pay category, for postings that say a figure is given
+  const headers = { 'X-API-Key': src.apiKey, accept: 'application/json' };
+  // What the API sent back, for the run log: v6 answered 200 with no postings on 31 Oct 2026.
+  const diag = (runLog.sources.ba.diag = { tried: [] });
+  // v6 returns the postings as `ergebnisliste` (seen 31 Oct 2026); the docs and v4 say `stellenangebote`.
+  const listOf = (j) => (Array.isArray(j?.ergebnisliste) ? j.ergebnisliste : Array.isArray(j?.stellenangebote) ? j.stellenangebote : []);
+  const shape = (j) => (j && typeof j === 'object' ? { keys: Object.keys(j).slice(0, 12), maxErgebnisse: j.maxErgebnisse ?? null, items: listOf(j).length } : { body: String(j).slice(0, 80) });
+  // Pick the first endpoint whose probe ("Fitnesstrainer", nationwide) returns postings.
+  let base = null;
+  for (const url of src.endpoints || [src.url]) {
+    const probe = new URLSearchParams({ was: QUERIES[0], veroeffentlichtseit: String(since), size: '50', page: '1' });
+    const j = await getJson(`${url}?${probe}`, { api: true, headers });
+    diag.tried.push({ url: url.replace(/^.*jobsuche-service/, ''), ...shape(j), sample: listOf(j)[0] || null });
+    if (listOf(j).length) { base = url; break; }
+  }
+  if (!base) { runLog.notes.push(`Bundesagentur: no endpoint returned postings (${diag.tried.map((t) => `${t.url}: ${t.items ?? '?'} items, keys ${(t.keys || []).join('/')}`).join('; ')})`); return []; }
+  diag.used = base.replace(/^.*jobsuche-service/, '');
+  diag.itemKeys = Object.keys(diag.tried[diag.tried.length - 1].sample || {});
   // One pass per working-time filter tags employment from the source itself; a last
   // unfiltered pass catches postings with none of them.
   const passes = [['vz', 'full-time'], ['tz', 'part-time'], ['mj', 'mini-job'], [null, 'unknown']];
   for (const q of QUERIES) {
     for (const [az, emp] of passes) {
-      for (let page = 1; page <= 5; page++) {
-        const p = new URLSearchParams({ was: q, veroeffentlichtseit: String(since), size: '100', page: String(page), angebotsart: '1' });
+      for (let page = 1; page <= 8; page++) {
+        const p = new URLSearchParams({ was: q, veroeffentlichtseit: String(since), size: '50', page: String(page), angebotsart: '1' });
         if (az) p.set('arbeitszeit', az);
-        const j = await getJson(`${src.url}?${p}`, { api: true, headers: { 'X-API-Key': src.apiKey, accept: 'application/json' } });
-        const list = j?.stellenangebote || [];
+        const j = await getJson(`${base}?${p}`, { api: true, headers });
+        const list = listOf(j);
         for (const s of list) {
-          const ort = s.arbeitsort || {};
-          if (ort.land && !/deutschland|germany/i.test(ort.land)) continue;
-          out.push(job('ba', {
-            rawId: s.refnr, title: s.titel || s.beruf, employer: s.arbeitgeber, city: ort.ort, country: 'DE',
-            employment: emp, url: s.externeUrl || src.detail(s.refnr), postedAt: s.aktuelleVeroeffentlichungsdatum || s.modifikationsTimestamp || null, payText: null,
-          }));
+          const item = baItem(s, emp);
+          if (!item) { diag.skippedNoId = (diag.skippedNoId || 0) + 1; continue; }
+          if (item.foreign) continue;
+          diag.pay = diag.pay || {}; diag.pay[item.payCategory] = (diag.pay[item.payCategory] || 0) + 1;
+          out.push(job('ba', { ...item.fields, url: item.fields.url || src.detail(item.fields.rawId) }));
+          if (BA_PAY_PERIOD[item.payCategory]) payWanted.set(item.fields.rawId, item.payCategory);
         }
-        if (list.length < 100) break;
+        if (list.length < 50) break;
       }
     }
   }
+  await fetchBaDetailPay(src, out, payWanted, headers, diag);
   return out;
+}
+
+/** Adzuna's salary_min/max carry no unit: they are usually yearly, but some ads come through as
+ *  the hourly or monthly figure. The period is read from the size: up to 150 € hourly, up to
+ *  6,000 € monthly (fitness pay above that per month is rare, while a part-time or mini-job
+ *  year, 6,456 € and up, sits above it), else yearly. Checked on the first 17 rows (31 Oct 2026). */
+export function adzunaPay(min, max) {
+  const lo = min || null, hi = max || null, ref = hi ?? lo;
+  const payPeriod = ref <= 150 ? 'hour' : ref <= 6000 ? 'month' : 'year';
+  const unit = { hour: 'Std.', month: 'Monat', year: 'Jahr' }[payPeriod];
+  const fmt = (n) => `${Number(n).toLocaleString('de-DE', { maximumFractionDigits: 2 })} €`;
+  const payText = `${lo && hi && lo !== hi ? `${fmt(lo)} – ${fmt(hi)}` : fmt(hi ?? lo)} / ${unit} (Adzuna)`;
+  return { payText, payMin: lo, payMax: hi, payPeriod, payCurrency: 'EUR' };
+}
+/** Adzuna's area runs [country, state, (district or city), (city or neighbourhood)…]: Berlin
+ *  and Hamburg roles come as ["Deutschland", "Berlin", "Schöneberg"]. The region is read from
+ *  the whole list; the city shown is the big city when there is one, else the most specific
+ *  place, without "(Kreis)". */
+export function adzunaPlace(loc = {}) {
+  const area = (loc.area || []).filter(Boolean);
+  const region = regionFor(`${area.join(' ')} ${loc.display_name || ''}`, { country: 'DE' });
+  const big = { Berlin: 'Berlin', Hamburg: 'Hamburg', München: 'München', Köln: 'Köln', Frankfurt: 'Frankfurt am Main' }[region];
+  const last = area.length > 1 ? area[area.length - 1] : (loc.display_name || '').split(',')[0];
+  return { region, city: big || String(last || '').replace(/\s*\(Kreis\)$/, '').trim() || null };
 }
 
 async function fromAdzuna(src) {
@@ -310,13 +442,10 @@ async function fromAdzuna(src) {
       for (const r of list) {
         // Adzuna estimates pay when the ad has none (salary_is_predicted "1"): that is not listed pay.
         const listed = String(r.salary_is_predicted) === '0' && (r.salary_min || r.salary_max);
-        const pay = listed
-          ? { payText: [r.salary_min, r.salary_max].filter(Boolean).map((n) => `${Math.round(n).toLocaleString('de-DE')} €`).join(' – ') + ' / Jahr', payMin: r.salary_min || null, payMax: r.salary_max || null, payPeriod: 'year', payCurrency: 'EUR' }
-          : parsePay(null);
-        const area = r.location?.area || [];
+        const pay = listed ? adzunaPay(r.salary_min, r.salary_max) : parsePay(null);
+        const where = adzunaPlace(r.location);
         out.push(job('adzuna', {
-          // area is [country, state, city, district…]: the city is the third entry
-          rawId: r.id, title: r.title, employer: r.company?.display_name, city: area[2] || r.location?.display_name, country: 'DE',
+          rawId: r.id, title: r.title, employer: r.company?.display_name, city: where.city, region: where.region, country: 'DE',
           employment: r.contract_time === 'part_time' ? 'part-time' : r.contract_time === 'full_time' ? 'full-time' : 'unknown',
           url: r.redirect_url, postedAt: r.created, pay, description: r.description,
         }));
@@ -484,6 +613,8 @@ export function keepJob(j) {
 }
 
 const TYPE_RULES = [
+  // Ausbildung and dual study first: "Auszubildende zum Sport- und Fitnesskaufmann" is training, not a trainer job
+  [/ausbildung|auszubildende|\bazubi|duales studium|dualer student|duale[rs]? student|trainee/i, 'apprenticeship'],
   [/studioleit|clubmanag|club manager|studio manager|filialleit|standortleit|general manager/i, 'studio-manager'],
   [/personal ?trainer|fitnesstrainer|fitness ?trainer|trainer\b|trainer:?in|instructor|kursleit|yoga|pilates|physio/i, 'trainer'],
   [/coach/i, 'coach'],
@@ -517,7 +648,7 @@ async function classify(jobs) {
     const prompt = `You classify German fitness and wellness job postings for a job list. Use ONLY what is in each posting. When the posting does not say, answer "unknown" (for type use "other") rather than guess.
 
 For each job return:
-- type: one of ${TYPES.join(', ')}
+- type: one of ${TYPES.join(', ')} (apprenticeship = Ausbildung, duales Studium or trainee programme)
 - region: one of ${REGIONS.join(', ')}, or "unknown". From the job's city: Berlin, Hamburg, München, Köln, Frankfurt (am Main) by name; any other German place is "Other DE"; remote work allowed from Germany is "Remote DE".
 - employment: one of ${EMPLOYMENT.join(', ')}
 - summaryEn: one plain English sentence (max 25 words) saying what the role is and where. No claims that are not in the posting. No pay figures.
@@ -552,7 +683,16 @@ export function mergeRun(stored, fresh, { now = Date.now(), failedSources = new 
     const cur = byId.get(f.id) || byKey.get(dedupeKey(f));
     if (cur) {
       Object.assign(cur, { lastSeenAt: today, expired: false });
-      if (f.source === cur.source && f.url) cur.url = f.url;
+      if (f.source === cur.source) {
+        // the same source again: take its current place and pay, so a parser fix reaches stored rows
+        if (f.url) cur.url = f.url;
+        Object.assign(cur, { city: f.city ?? cur.city, region: f.region ?? cur.region });
+        if (!cur.postedAt && f.postedAt) cur.postedAt = f.postedAt;
+        if (!cur.employer && f.employer) cur.employer = f.employer;
+        if (f.employment && f.employment !== 'unknown') cur.employment = f.employment;
+        if (hasPay(f)) Object.assign(cur, { payText: f.payText, payMin: f.payMin, payMax: f.payMax, payPeriod: f.payPeriod, payCurrency: f.payCurrency });
+        if (typeByRule(cur.title) === 'apprenticeship') cur.type = 'apprenticeship';
+      }
       // a later posting with pay replaces one without: link, pay and source credit move together
       if (!hasPay(cur) && hasPay(f)) Object.assign(cur, { url: f.url, source: f.source, payText: f.payText, payMin: f.payMin, payMax: f.payMax, payPeriod: f.payPeriod, payCurrency: f.payCurrency });
       continue;
@@ -576,10 +716,14 @@ export const editionFor = (now = Date.now()) => { const d = new Date(now); const
 function readStore() {
   try { return JSON.parse(readFileSync(OUT, 'utf8')); } catch { return { generatedAt: null, edition: null, jobs: [] }; }
 }
+/** Append-only: a job's first pay line, and a new line whenever its pay changes (e.g. a parser
+ *  fix). Readers take the LAST line per id; older lines are never deleted. */
 function appendPay(jobs) {
-  const seen = new Set();
-  if (existsSync(PAY_LOG)) for (const l of readFileSync(PAY_LOG, 'utf8').split('\n')) { try { seen.add(JSON.parse(l).id); } catch { /* blank */ } }
-  const lines = jobs.filter((j) => hasPay(j) && !seen.has(j.id)).map((j) => JSON.stringify({
+  const last = new Map();
+  if (existsSync(PAY_LOG)) for (const l of readFileSync(PAY_LOG, 'utf8').split('\n')) { try { const x = JSON.parse(l); last.set(x.id, x); } catch { /* blank */ } }
+  const same = (a, j) => a && a.payMin === j.payMin && a.payMax === j.payMax && a.payPeriod === j.payPeriod;
+  const lines = jobs.filter((j) => hasPay(j) && !same(last.get(j.id), j)).map((j) => JSON.stringify({
+    ...(last.has(j.id) ? { correction: true, loggedAt: iso() } : {}),
     id: j.id, seenAt: j.seenAt, title: j.title, employer: j.employer, city: j.city, region: j.region, type: j.type, employment: j.employment,
     payText: j.payText, payMin: j.payMin, payMax: j.payMax, payPeriod: j.payPeriod, payCurrency: j.payCurrency, source: j.source, url: j.url,
   }));
@@ -641,6 +785,9 @@ async function run() {
   }
   const brandHosts = Object.entries(runLog.hosts).filter(([k]) => !SOURCES.some((x) => x.url && new URL(x.url).host === k));
   if (brandHosts.length) console.log(`  · career pages: ${brandHosts.length} hosts, ${brandHosts.filter(([, v]) => v.failures && v.failures === v.requests).length} unreachable, ${brandHosts.filter(([, v]) => v.errors.some((e) => e.startsWith('robots'))).length} blocked by robots.txt`);
+  if (runLog.sources.ba?.diag) console.log(`  · ba endpoints: ${JSON.stringify(runLog.sources.ba.diag.tried.map(({ sample, ...t }) => t))}${runLog.sources.ba.diag.used ? ` → using ${runLog.sources.ba.diag.used}` : ''}`);
+  const dd = runLog.sources.ba?.diag?.detail;
+  if (dd) console.log(`  · ba pay details: ${dd.wanted} postings say pay is given, ${dd.fetched} fetched (${dd.path || 'no path'}), ${dd.withFigure} with a figure, ${dd.textOnly} text only, ${dd.failed} failed${dd.samples ? `; e.g. ${dd.samples.slice(0, 3).join(' | ')}` : ''}`);
   if (runLog.discovery) console.log(`  · discovery: ${runLog.discovery.found} careers pages found of ${runLog.discovery.tried} tried`);
   if (args.dry) {
     mkdirSync(RUN_DIR, { recursive: true });
@@ -744,6 +891,31 @@ function selftest() {
   t('url: javascript: dropped', job('dssv', { rawId: 1, title: 'x', url: 'javascript:alert(1)' }).url === null);
   t('url: relative resolved', job('dssv', { rawId: 1, title: 'x', url: '/job/1', base: 'https://www.dssv.de/jobboerse/' }).url === 'https://www.dssv.de/job/1');
   t('date: epoch ms and junk', job('career-page', { rawId: 1, title: 'x', url: 'https://a.b', postedAt: 1761800000000 }).postedAt === '2025-10-30' && job('dssv', { rawId: 2, title: 'x', url: 'https://a.b', postedAt: 'soon' }).postedAt === null);
+  const ap = adzunaPay(15, 20), am = adzunaPay(5000, 5000), ay = adzunaPay(33600, 42000);
+  t('adzuna pay: 15-20 is hourly, 5000 monthly, 33600-42000 yearly', ap.payPeriod === 'hour' && am.payPeriod === 'month' && ay.payPeriod === 'year', [ap, am, ay]);
+  t('adzuna pay: 10800-13200 and 8184-11460 are yearly, 1007-2015 monthly', adzunaPay(10800, 13200).payPeriod === 'year' && adzunaPay(8184, 11460).payPeriod === 'year' && adzunaPay(1007, 2015).payPeriod === 'month');
+  const pl = (area, dn) => adzunaPlace({ area, display_name: dn });
+  t('adzuna place: Berlin district', pl(['Deutschland', 'Berlin', 'Schöneberg'], 'Schöneberg, Berlin').region === 'Berlin' && pl(['Deutschland', 'Berlin', 'Schöneberg']).city === 'Berlin');
+  t('adzuna place: Hamburg district', pl(['Deutschland', 'Hamburg', 'Barmbek-Nord'], 'Barmbek-Nord, Hamburg').region === 'Hamburg');
+  t('adzuna place: Kreis', pl(['Deutschland', 'Nordrhein-Westfalen', 'Düren (Kreis)']).city === 'Düren' && pl(['Deutschland', 'Nordrhein-Westfalen', 'Düren (Kreis)']).region === 'Other DE');
+  t('adzuna place: Bavaria to München', pl(['Deutschland', 'Bayern', 'Oberbayern', 'München'], 'München, Oberbayern').region === 'München');
+  t('type: Ausbildung', typeByRule('Auszubildende zum Sport- und Fitnesskaufmann (w/m/x)') === 'apprenticeship' && typeByRule('Duales Studium - Fitnessökonomie') === 'apprenticeship' && typeByRule('Fitnesstrainer (m/w/d)') === 'trainer');
+  const bi = baItem({ stellenangebotsTitel: 'Fitnesstrainer (m/w/d)', firma: 'Fitnesspoint', referenznummer: '10001-1234-S', arbeitszeitVollzeit: true,
+    arbeitszeitTeilzeitAbend: true, verguetungsangabe: 'KEINE_ANGABEN', datumErsteVeroeffentlichung: '2026-10-31',
+    stellenlokationen: [{ adresse: { ort: 'Cham, Oberpfalz', land: 'DEUTSCHLAND' } }] }, 'full-time');
+  t('ba v6 item: title, firm, city, date, employment', bi.fields.title === 'Fitnesstrainer (m/w/d)' && bi.fields.employer === 'Fitnesspoint' && bi.fields.city === 'Cham' && bi.fields.postedAt === '2026-10-31' && bi.fields.employment === 'full-time' && bi.payCategory === 'KEINE_ANGABEN', bi);
+  t('ba v6 item: part-time only', baItem({ stellenangebotsTitel: 'x', referenznummer: '1', arbeitszeitTeilzeitVormittag: true, stellenlokationen: [{ adresse: { ort: 'Berlin', land: 'DEUTSCHLAND' } }] }, 'full-time').fields.employment === 'part-time');
+  t('ba v6 item: abroad skipped', baItem({ stellenangebotsTitel: 'x', referenznummer: '1', stellenlokationen: [{ adresse: { ort: 'Wien', land: 'ÖSTERREICH' } }] }).foreign === true);
+  const dp1 = baDetailPay({ titel: 'x', verguetung: '14,50 € pro Stunde' }, 'STUNDENLOHN');
+  t('ba detail pay: hourly text', dp1.payMin === 14.5 && dp1.payPeriod === 'hour', dp1);
+  const dp2 = baDetailPay({ verguetung: '38.000 – 42.000 €' }, 'JAHRESGEHALT');
+  t('ba detail pay: range, period from category', dp2.payMin === 38000 && dp2.payMax === 42000 && dp2.payPeriod === 'year', dp2);
+  const dp3 = baDetailPay({ verguetung: 'Entgeltgruppe 13 TV-L' }, 'JAHRESGEHALT');
+  t('ba detail pay: tariff grade, no figure invented', dp3.payMin == null && dp3.payText === 'Entgeltgruppe 13 TV-L', dp3);
+  const dp4 = baDetailPay({ gehalt: { von: 2600, bis: 3100 } }, 'MONATSGEHALT');
+  t('ba detail pay: structured numbers', dp4.payMin === 2600 && dp4.payMax === 3100 && dp4.payPeriod === 'month', dp4);
+  const dp5 = baDetailPay({ verguetungsangabe: 'STUNDENLOHN', verguetung: '15 €' }, 'STUNDENLOHN');
+  t('ba detail pay: category enum ignored, 15 € hourly', dp5.payMin === 15 && dp5.payPeriod === 'hour', dp5);
   t('json-ld: finds JobPosting in @graph', jsonLdJobs('<script type="application/ld+json">{"@graph":[{"@type":"JobPosting","title":"x"}]}</script>').length === 1);
   console.log(ok ? 'selftest passed' : 'selftest FAILED');
   process.exit(ok ? 0 : 1);

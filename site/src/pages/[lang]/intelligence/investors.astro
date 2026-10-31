@@ -119,7 +119,7 @@ const T = de ? {
   signupHead: 'Every deal, in your inbox before it is old news', signupBody: 'Sqwod Daily: money, deals and what they mean for your business. Every weekday, free.',
 };
 const url = `https://sqwod.life/${lang}/intelligence/investors/`;
-const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sqwod Investor Map', description: T.sub, url, inLanguage: lang,
+const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sqwod Investor Map', description: T.sub, url, inLanguage: lang, license: `https://sqwod.life/${lang}/data-licence/`, isAccessibleForFree: true,
   creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' }, dateModified: CHECKED };
 const applyLine = (i: (typeof all)[number]) => {
   if (!i.apply) return '';

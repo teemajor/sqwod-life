@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import { languages, type Lang } from '../../i18n/ui';
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+// Referenced as the schema.org `license` of every Sqwod Intelligence report
+// (Dataset node in intelligence/[slug].astro). Keep the URL stable.
+---
+<Base lang={lang} title={de ? 'Datenlizenz | Sqwod' : 'Data licence | Sqwod'} description={de ? 'Wie Sie Daten und Berichte von Sqwod Intelligence nutzen dürfen.' : 'How you may use Sqwod Intelligence data and reports.'} active="">
+  <h1 style="margin-top:36px">{de ? 'Datenlizenz' : 'Data licence'}</h1>
+  <div class="prose lic">
+    <p class="lbl">{de ? 'Offene Daten' : 'Open data'}</p>
+    <p>{de
+      ? 'Der Sqwod Coach Pricing Index steht unter der Lizenz '
+      : 'The Sqwod Coach Pricing Index is licensed under '}
+      <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 (CC BY 4.0)</a>.
+      {de
+        ? ' Sie dürfen ihn frei nutzen, teilen und weiterverarbeiten, auch kommerziell, solange Sie Sqwod als Quelle nennen und auf die Seite verlinken.'
+        : ' You may use, share and build on it freely, including commercially, as long as you credit Sqwod and link to the page.'}</p>
+
+    <p class="lbl">{de ? 'Deal Tracker und Intelligence-Berichte' : 'Deal Tracker and Intelligence reports'}</p>
+    <p>{de
+      ? 'Einzelne Deals, Zahlen, Diagramme und kurze Zitate aus dem Sqwod Deal Tracker (inkl. CSV- und JSON-Downloads) und unseren Berichten dürfen Sie mit Quellenangabe und Link übernehmen, z. B. in Artikeln, Präsentationen oder Forschung. Nicht erlaubt ist, die Datenbank, ganze Berichte oder große Teile davon zu veröffentlichen, weiterzuverkaufen, in eigene Produkte oder Datenbanken einzubauen oder hinter eine eigene Bezahlschranke zu stellen. Sqwod behält alle Rechte, einschließlich des Datenbankherstellerrechts.'
+      : 'You may quote individual deals, figures, charts and short passages from the Sqwod Deal Tracker (including its CSV and JSON downloads) and our reports with credit and a link, for example in articles, decks or research. You may not republish, resell, build into your own products or databases, or paywall the database, whole reports or substantial parts of them. Sqwod keeps all rights, including its database rights.'}</p>
+
+    <p class="lbl">{de ? 'So nennen Sie die Quelle' : 'How to credit us'}</p>
+    <p><code>{de ? 'Quelle: Sqwod Intelligence, sqwod.life' : 'Source: Sqwod Intelligence, sqwod.life'}</code>{de ? ', mit Link auf die jeweilige Seite.' : ', linked to the page you used.'}</p>
+
+    <p class="lbl">{de ? 'Fragen oder größere Nutzung' : 'Questions or larger use'}</p>
+    <p>{de ? 'Schreiben Sie uns: ' : 'Email us: '}<a href="mailto:tee@sqwod.life">tee@sqwod.life</a></p>
+  </div>
+</Base>
+
+<style>
+  .lic .lbl{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);margin:24px 0 4px}
+  .lic p{margin:0 0 6px;line-height:1.65}
+  .lic a{color:var(--chalk);text-decoration:underline}
+</style>

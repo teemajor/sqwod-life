@@ -1,0 +1,822 @@
+{
+ "startedAt": "2026-10-31T11:27:35.433Z",
+ "sinceDays": 14,
+ "sources": {
+  "ba": {
+   "enabled": true,
+   "fetched": 233,
+   "kept": 195,
+   "diag": {
+    "tried": [
+     {
+      "url": "/pc/v6/jobs",
+      "keys": [
+       "ergebnisliste",
+       "maxErgebnisse",
+       "page",
+       "size",
+       "facetten"
+      ],
+      "maxErgebnisse": 62,
+      "items": 50,
+      "sample": {
+       "stellenangebotsart": "ARBEIT",
+       "stellenangebotsTitel": "Fitnesstrainer (m/w/d)",
+       "arbeitszeitTeilzeitAbend": true,
+       "arbeitszeitTeilzeitNachmittag": true,
+       "arbeitszeitTeilzeitVormittag": true,
+       "arbeitszeitVollzeit": true,
+       "eintrittszeitraum": {
+        "von": "2026-10-31"
+       },
+       "verguetungsangabe": "KEINE_ANGABEN",
+       "vertragsdauer": "UNBEFRISTET",
+       "stellenlokationen": [
+        {
+         "adresse": {
+          "strasse": "Rodinger Straße 22",
+          "adresszusatz": "Fitnesspoint Cham",
+          "plz": "93413",
+          "ort": "Cham, Oberpfalz",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.20344044500007,
+         "laenge": 12.656930714000055
+        },
+        {
+         "adresse": {
+          "strasse": "Allersbergerstraße",
+          "hausnummer": "26",
+          "adresszusatz": "Fitnesspoint Hilpoltstein",
+          "plz": "91161",
+          "ort": "Hilpoltstein, Mittelfranken",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.197240882000074,
+         "laenge": 11.187779594000062
+        },
+        {
+         "adresse": {
+          "strasse": "Eschenweg 2",
+          "adresszusatz": "Fitnesspoint Pfarrkirchen",
+          "plz": "84347",
+          "ort": "Pfarrkirchen, Niederbayern",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 48.42892451700004,
+         "laenge": 12.944821192000063
+        },
+        {
+         "adresse": {
+          "strasse": "Im Gewerbepark D 09",
+          "adresszusatz": "Fitnesspoint Regensburg",
+          "plz": "93059",
+          "ort": "Regensburg",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.03049628100007,
+         "laenge": 12.129351241000052
+        },
+        {
+         "adresse": {
+          "strasse": "Hansastraße 5",
+          "adresszusatz": "Fitnesspoint Schwabach",
+          "plz": "91126",
+          "ort": "Schwabach",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.32170599600005,
+         "laenge": 11.057846796000092
+        },
+        {
+         "adresse": {
+          "strasse": "Innere Frühlingstraße 43",
+          "adresszusatz": "Body-Gym Straubing",
+          "plz": "94315",
+          "ort": "Straubing",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 48.87790856300006,
+         "laenge": 12.578383694000081
+        },
+        {
+         "adresse": {
+          "strasse": "Am Ziegelfeld 1",
+          "adresszusatz": "Fitnesspoint Vilshofen",
+          "plz": "94474",
+          "ort": "Vilshofen an der Donau",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 48.616393567000046,
+         "laenge": 13.17795252500008
+        }
+       ],
+       "veroeffentlichungszeitraum": {
+        "von": "2026-10-31"
+       },
+       "datumErsteVeroeffentlichung": "2026-10-31",
+       "aenderungsdatum": "2026-10-31T10:31:43.141",
+       "hauptberuf": "Fitnesstrainer/in",
+       "firma": "INJOY International Sports- an d Wellnessclubs",
+       "arbeitgeberKundennummerHash": "gZ0EdVQcflqLi_DIlSDcmifYYIWajHrSuReroArxbwI=",
+       "referenznummer": "10001-1003943373-S",
+       "alleBerufe": [
+        "Fitnesstrainer/in"
+       ]
+      }
+     }
+    ],
+    "used": "/pc/v6/jobs",
+    "itemKeys": [
+     "stellenangebotsart",
+     "stellenangebotsTitel",
+     "arbeitszeitTeilzeitAbend",
+     "arbeitszeitTeilzeitNachmittag",
+     "arbeitszeitTeilzeitVormittag",
+     "arbeitszeitVollzeit",
+     "eintrittszeitraum",
+     "verguetungsangabe",
+     "vertragsdauer",
+     "stellenlokationen",
+     "veroeffentlichungszeitraum",
+     "datumErsteVeroeffentlichung",
+     "aenderungsdatum",
+     "hauptberuf",
+     "firma",
+     "arbeitgeberKundennummerHash",
+     "referenznummer",
+     "alleBerufe"
+    ],
+    "pay": {
+     "KEINE_ANGABEN": 209,
+     "JAHRESGEHALT": 10,
+     "STUNDENLOHN": 14
+    },
+    "detail": {
+     "wanted": 12,
+     "fetched": 12,
+     "withFigure": 12,
+     "textOnly": 0,
+     "failed": 0,
+     "path": "/pc/v4/jobdetails/",
+     "sampleKeys": [
+      "stellenangebotsart",
+      "stellenangebotsTitel",
+      "quereinstiegGeeignet",
+      "stellenangebotsBeschreibung",
+      "arbeitszeitSchichtNachtWochenende",
+      "arbeitszeitTeilzeitAbend",
+      "arbeitszeitTeilzeitNachmittag",
+      "arbeitszeitTeilzeitVormittag",
+      "arbeitszeitTeilzeitFlexibel",
+      "arbeitszeitVollzeit",
+      "eintrittszeitraum",
+      "verguetungsangabe",
+      "artDerVerguetung",
+      "gehaltsspanneVon",
+      "gehaltsspanneBis",
+      "vertragsdauer",
+      "istGeringfuegigeBeschaeftigung",
+      "istBehinderungGefordert",
+      "stellenlokationen",
+      "homeofficemoeglich",
+      "istPrivateArbeitsvermittlung",
+      "istArbeitnehmerUeberlassung",
+      "veroeffentlichungszeitraum",
+      "datumErsteVeroeffentlichung",
+      "aenderungsdatum",
+      "externeURL",
+      "istBetreut",
+      "hauptberuf",
+      "alternativBeruf1",
+      "alternativBeruf2",
+      "firma",
+      "allianzpartnerUrl",
+      "allianzpartnerName",
+      "referenznummer"
+     ],
+     "samples": [
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "FESTGEHALT"
+     ]
+    }
+   }
+  },
+  "adzuna": {
+   "enabled": true,
+   "fetched": 436,
+   "kept": 309
+  },
+  "career-page": {
+   "enabled": true,
+   "fetched": 1,
+   "kept": 1
+  },
+  "dssv": {
+   "enabled": true,
+   "fetched": 0,
+   "kept": 0
+  },
+  "fitt": {
+   "enabled": false,
+   "fetched": 0,
+   "kept": 0,
+   "note": "disabled (terms of use)"
+  },
+  "indeed": {
+   "enabled": false,
+   "fetched": 0,
+   "kept": 0,
+   "note": "disabled (terms of use)"
+  },
+  "stepstone": {
+   "enabled": false,
+   "fetched": 0,
+   "kept": 0,
+   "note": "disabled (terms of use)"
+  }
+ },
+ "hosts": {
+  "rest.arbeitsagentur.de": {
+   "requests": 50,
+   "failures": 0,
+   "errors": []
+  },
+  "api.adzuna.com": {
+   "requests": 14,
+   "failures": 0,
+   "errors": []
+  },
+  "api.ashbyhq.com": {
+   "requests": 5,
+   "failures": 0,
+   "errors": []
+  },
+  "corehandf.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "aviron.breezy.hr": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "corepoweryoga.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "echelonfit.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "uk.egym.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "f45training.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "onefiit.notion.site": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "functionhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "garmin.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "humanauthealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "issaonline.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "jiminihealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.linkedin.com": {
+   "requests": 0,
+   "failures": 0,
+   "errors": [
+    "robots.txt disallows /company/jk-group-official/jobs/"
+   ]
+  },
+  "jobs.lifesum.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "playlist.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "livemomentous.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "myequilibria.com": {
+   "requests": 1,
+   "failures": 1,
+   "errors": [
+    "HTTP 404 /careers"
+   ]
+  },
+  "boards-api.greenhouse.io": {
+   "requests": 29,
+   "failures": 12,
+   "errors": [
+    "HTTP 404 /v1/boards/calibratecareers/jobs",
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/cerebral/jobs",
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/embed/jobs"
+   ]
+  },
+  "www.pvolve.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "remedyplace.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "restore.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "gosportsart.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "sweat440.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "sweathouz.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "apply.workable.com": {
+   "requests": 2,
+   "failures": 0,
+   "errors": []
+  },
+  "therabody.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "marianatek.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "careers.ulta.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "careers.hellofresh.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "onepeloton.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.nike.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "booking.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "lifeatexpediagroup.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "partner.getyourguide.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "betterhelp.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "allbirds.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "aloyoga.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "arcteryx.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "api.lever.co": {
+   "requests": 8,
+   "failures": 1,
+   "errors": [
+    "HTTP 404 /v0/postings/interaxon"
+   ]
+  },
+  "boweryfarming.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "campspot.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "chomps.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "clicktherapeutics.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "curai.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.eleanorhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "feedmediagroup.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "ats.rippling.com": {
+   "requests": 2,
+   "failures": 0,
+   "errors": []
+  },
+  "forward.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "kickoff.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "trainwithkickoff.notion.site": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "maximus.avature.net": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "mindbloom.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "mntstudio.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "joinmodernhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "drinkolipop.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "orangetheory.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "parsleyhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "prenuvo.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "redesignhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "ritual.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "web.runna.com": {
+   "requests": 1,
+   "failures": 1,
+   "errors": [
+    "HTTP 429 /survey"
+   ]
+  },
+  "solidcore.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "springhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "careers.sweetgreen.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "honest.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "thesis.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "thistle.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "trainingpeaks.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.viz.ai": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "api.smartrecruiters.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "fitx.de": {
+   "requests": 1,
+   "failures": 1,
+   "errors": [
+    "timeout"
+   ]
+  },
+  "clever-fit.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.holmesplace.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "fitnessfirst.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "wellhub.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "freeletics.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "kieser-training.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.mrssporty.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "bodystreet.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "easyfitness.club": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "igus.jobs.personio.de": {
+   "requests": 1,
+   "failures": 1,
+   "errors": [
+    "HTTP 404 /xml"
+   ]
+  },
+  "www.elements.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "jumpers-fitness.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "gymondo.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "perfectgym.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "magicline.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.dssv.de": {
+   "requests": 3,
+   "failures": 0,
+   "errors": []
+  },
+  "fitt.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  }
+ },
+ "notes": [],
+ "discovery": {
+  "tried": 0,
+  "found": 0,
+  "missing": [
+   "amp",
+   "Centr",
+   "Daxko",
+   "EVOLT IOH",
+   "Forme Science",
+   "GYMLETE",
+   "Hyperice",
+   "HYROX",
+   "iFIT",
+   "Keyspan",
+   "Kineon",
+   "Planet Fitness",
+   "Predictive Fitness (TriDot)",
+   "Reform RX",
+   "Runningman",
+   "Skelcore",
+   "Technogym",
+   "The Ranch",
+   "WellnessSpace Brands",
+   "Wild.AI",
+   "ZeroWheel",
+   "Sephora",
+   "Nutrisystem",
+   "iHerb",
+   "GNC",
+   "23andMe",
+   "Everlywell",
+   "Spafinder",
+   "Groupon",
+   "Viator",
+   "ASICS Digital",
+   "Brave Health",
+   "Brooks Running",
+   "CrewLAB",
+   "Daily Harvest",
+   "David Protein",
+   "Embla",
+   "Fitt Insider",
+   "Grüns",
+   "Gymshark",
+   "Healthie",
+   "Hey Jane",
+   "January AI",
+   "Kaylo",
+   "Kodiak Cakes",
+   "Lenus",
+   "Midi Health",
+   "Neura Health",
+   "NextHealth",
+   "Open",
+   "Peach Lab",
+   "Pendulum",
+   "Pomelo Care",
+   "Project Healthy Minds",
+   "Prostasis",
+   "PushPress",
+   "RetreatVi",
+   "SLiNGSHOT",
+   "Sword Health",
+   "Ten Thousand",
+   "Thirty Madison",
+   "Train Fitness",
+   "United Athletic Club",
+   "WHOOP",
+   "Zing Coach",
+   "RSG Group (McFit, John Reed, Gold's Gym DE)",
+   "FIT/ONE",
+   "Peloton Germany",
+   "Zalando Sports / adidas Training",
+   "Eversports"
+  ]
+ },
+ "found": {
+  "fetchedAfterGate": 505,
+  "unique": 283,
+  "withPay": 27
+ },
+ "summary": {
+  "live": 286,
+  "newThisWeek": 286,
+  "withPay": 27,
+  "newWithPay": 27,
+  "hostsFailed": 4,
+  "sourcesFailed": []
+ },
+ "finishedAt": "2026-10-31T11:31:13.534Z",
+ "payLinesAppended": 5
+}
