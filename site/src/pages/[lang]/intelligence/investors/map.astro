@@ -7,9 +7,8 @@ import Base from '../../../../layouts/Base.astro';
 import { ogPath } from '../../../../lib/og';
 import DealGlyphs from '../../../../components/DealGlyphs.astro';
 import { flagCode, countryName } from '../../../../lib/flags';
-import { investors, STAGE_LABEL, FOCUS_LABEL, STAGES, FOCUS, type InvestorType } from '../../../../lib/investors';
-import { locate, countryCentre } from '../../../../lib/geo';
-import { generatedAt } from '../../../../lib/deals';
+import { investors, FOCUS_LABEL, FOCUS, type InvestorType } from '../../../../lib/investors';
+import { globeData, GLOBE_COLORS } from '../../../../lib/globe-data';
 import { languages, type Lang } from '../../../../i18n/ui';
 
 export function getStaticPaths() {
@@ -18,37 +17,20 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const de = lang === 'de';
 const all = investors();
-const today = generatedAt;
-const isOpen = (i: (typeof all)[number]) => !!i.apply && (i.apply.status === 'rolling' || (i.apply.status === 'open' && (!i.apply.deadline || i.apply.deadline >= today)));
+const { points, arcs, unplaced } = globeData(lang, all);
 const types: InvestorType[] = ['vc', 'corporate', 'accelerator', 'competition', 'grant', 'buyer'];
 const REGIONS = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East', 'Latin America'];
 const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten', 'Latin America': 'Lateinamerika' };
 const rName = (r: string) => (de ? REGION_DE[r] || r : r);
-const stageLine = (i: (typeof all)[number]) => i.stage || (i.stages.length ? (i.stages.length === STAGES.length ? (de ? 'alle Phasen' : 'any stage') : `${STAGE_LABEL[lang][i.stages[0]]}${i.stages.length > 1 ? ` – ${STAGE_LABEL[lang][i.stages[i.stages.length - 1]]}` : ''}`) : '');
-// one point per placed investor; a tiny spiral offset keeps same-city dots apart
-const perCity = new Map<string, number>();
-const points = all.flatMap((i) => {
-  if (!i.country) return [];
-  const loc = locate(i.city, i.country); if (!loc) return [];
-  const key = `${loc[0]},${loc[1]}`; const k = perCity.get(key) || 0; perCity.set(key, k + 1);
-  const r = 0.28 * Math.sqrt(k), a = k * 2.4;
-  return [{ id: i.id, n: i.name, t: i.type, c: i.country, cc: flagCode(i.country), city: i.city || '', lat: loc[0] + r * Math.cos(a), lng: loc[1] + r * Math.sin(a) / Math.max(0.3, Math.cos(loc[0] * Math.PI / 180)), precise: loc[2] ? 1 : 0, r: i.region, f: i.focusTags,
-    st: stageLine(i), chk: i.check || '', a12: i.active12m, tot: i.dealsTotal, last: i.lastDeal, open: isOpen(i) ? 1 : 0, lead: i.leadsRounds ? 1 : 0,
-    deals: i.deals.map((d) => ({ id: d.id, e: d.entity, amt: d.amount, c: d.country || '', kind: d.kind, lead: d.lead && d.role === 'investor' ? 1 : 0, role: d.role })),
-    port: i.portfolio.map((p) => [p[1], p[2], p[3]]), focus: de ? i.focusDe || i.focus : i.focus, url: i.url, cbi: i.enrich?.cbi?.url || '', cb: i.enrich?.cb?.permalink ? `https://www.crunchbase.com/organization/${i.enrich.cb.permalink}` : '' }];
-});
-// arcs: investor HQ → country of a company it backed on the tracker (same-country arcs are skipped, they would be invisible)
-const arcs = points.flatMap((p) => p.deals.filter((d) => d.c && d.c !== p.c).flatMap((d) => { const c = countryCentre(d.c); return c ? [{ id: p.id, t: p.t, sLat: p.lat, sLng: p.lng, eLat: c[0], eLng: c[1], e: d.e, c: d.c }] : []; }));
 const countries = [...new Set(points.map((p) => p.c))];
 const cNames = Object.fromEntries([...new Set([...countries, ...arcs.map((a) => a.c)])].map((c) => [c, countryName(c, lang)]));
 const flagCodes = [...new Set(points.map((p) => p.cc))].filter(Boolean);
-const unplaced = all.length - points.length;
 
 const T = de ? {
   title: 'Sqwod Investor Globe: Fitness- und Wellness-Investoren auf dem Globus', crumb: 'Investor Globe',
   h1: 'Der Investor Globe.', sub: `${points.length} Investoren, Programme und Käufer aus der Investor Map auf einem drehbaren Globus. Punkt = Sitz, Größe = Investments der letzten 12 Monate, Bogen = ein Deal aus dem Deal Tracker in einem anderen Land, Ring = Bewerbung offen.`,
   back: 'Zur Liste', list: 'Investor Map (Liste)', kpi: { shown: 'angezeigt', countries: 'Länder', arcs: 'Deal-Bögen', open: 'offene Aufrufe' },
-  all: 'Alle', region: 'Region', focus: 'Fokus', search: 'Investor suchen und hinfliegen …', arcsT: 'Bögen', rotate: 'Drehen', tour: 'Tour', stop: 'Stopp', legend: 'Legende',
+  all: 'Alle', region: 'Region', focus: 'Fokus', search: 'Investor suchen und hinfliegen …', arcsT: { traffic: 'Bögen: Verkehr', all: 'Bögen: alle', off: 'Bögen: aus' } as Record<string, string>, rotate: 'Drehen', tour: 'Tour', stop: 'Stopp', legend: 'Legende',
   types: { vc: 'Fonds', corporate: 'Corporate', accelerator: 'Accelerator', competition: 'Wettbewerb', grant: 'Förderung', buyer: 'Käufer' } as Record<string, string>,
   hint: 'Ziehen zum Drehen, Scrollen zum Zoomen, Punkt antippen für Details.', nowebgl: 'Dein Browser kann kein WebGL darstellen. Die Investor Map als Liste:',
   close: 'Schließen', stage: 'Phase', cheque: 'Ticket', activity: 'Aktivität', inv12: 'Investments in 12 Monaten', last: 'zuletzt', deals: 'Deals im Deal Tracker', lead: 'Lead', buyerOf: 'Kauf', port: 'Portfolio (CB Insights)', open: 'Bewerbung offen', entry: 'Eintrag in der Investor Map →', site: 'Website ↗', approx: 'Position: Landesmitte (Stadt unbekannt)', unplaced: `${unplaced} Einträge ohne bekannten Sitz fehlen auf dem Globus.`,
@@ -57,7 +39,7 @@ const T = de ? {
   title: 'Sqwod Investor Globe: fitness and wellness investors on a globe', crumb: 'Investor Globe',
   h1: 'The Investor Globe.', sub: `${points.length} investors, programmes and buyers from the Investor Map on a globe you can spin. Dot = HQ, size = investments in the last 12 months, arc = a Deal Tracker deal in another country, ring = applications open.`,
   back: 'Back to the list', list: 'Investor Map (list)', kpi: { shown: 'shown', countries: 'countries', arcs: 'deal arcs', open: 'open calls' },
-  all: 'All', region: 'Region', focus: 'Focus', search: 'Search an investor and fly there…', arcsT: 'Arcs', rotate: 'Spin', tour: 'Tour', stop: 'Stop', legend: 'Legend',
+  all: 'All', region: 'Region', focus: 'Focus', search: 'Search an investor and fly there…', arcsT: { traffic: 'Arcs: traffic', all: 'Arcs: all', off: 'Arcs: off' } as Record<string, string>, rotate: 'Spin', tour: 'Tour', stop: 'Stop', legend: 'Legend',
   types: { vc: 'Fund', corporate: 'Corporate', accelerator: 'Accelerator', competition: 'Competition', grant: 'Grant', buyer: 'Buyer' } as Record<string, string>,
   hint: 'Drag to spin, scroll to zoom, tap a dot for details.', nowebgl: 'Your browser cannot render WebGL. The Investor Map as a list:',
   close: 'Close', stage: 'Stage', cheque: 'Cheque', activity: 'Activity', inv12: 'investments in 12 months', last: 'last', deals: 'Deals in the Deal Tracker', lead: 'lead', buyerOf: 'bought', port: 'Portfolio (CB Insights)', open: 'Applications open', entry: 'Entry in the Investor Map →', site: 'Website ↗', approx: 'Position: country centre (city unknown)', unplaced: `${unplaced} entries without a known HQ are not on the globe.`,
@@ -65,7 +47,7 @@ const T = de ? {
 };
 const url = `https://sqwod.life/${lang}/intelligence/investors/map/`;
 const schema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Sqwod Investor Globe', description: T.sub, url, inLanguage: lang, applicationCategory: 'BusinessApplication', operatingSystem: 'Web', creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' } };
-const COLORS: Record<string, string> = { vc: '#7FB58C', corporate: '#E3B65C', accelerator: '#6FB6E8', competition: '#D08BE0', grant: '#F2EFE8', buyer: '#E57A7A' };
+const COLORS = GLOBE_COLORS;
 ---
 <Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('investors', lang)}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
@@ -100,7 +82,7 @@ const COLORS: Record<string, string> = { vc: '#7FB58C', corporate: '#E3B65C', ac
         <span class="dt-sel"><select aria-label={T.region} data-region><option value="">{T.region}: {T.all}</option><option value="europe-all">{de ? 'Europa & DACH' : 'Europe & DACH'}</option>{REGIONS.map((r) => <option value={r}>{rName(r)}</option>)}</select></span>
         <span class="dt-sel"><select aria-label={T.focus} data-focus><option value="">{T.focus}: {T.all}</option>{FOCUS.map((f) => <option value={f}>{FOCUS_LABEL[lang][f]}</option>)}</select></span>
         <div class="gl-tog">
-          <button type="button" class="on" data-arcs aria-pressed="true">{T.arcsT}</button>
+          <button type="button" class="on" data-arcs data-mode="traffic" data-labels={JSON.stringify(T.arcsT)}>{T.arcsT.traffic}</button>
           <button type="button" class="on" data-rotate aria-pressed="true">{T.rotate}</button>
           <button type="button" data-tour aria-pressed="false" data-on={T.stop} data-off={T.tour}>{T.tour}</button>
         </div>
@@ -224,45 +206,24 @@ const COLORS: Record<string, string> = { vc: '#7FB58C', corporate: '#E3B65C', ac
 </style>
 
 <script>
-  import Globe from 'globe.gl';
-  import { feature } from 'topojson-client';
-  import topo from 'world-atlas/countries-110m.json';
-
-  type Pt = { id: string; n: string; t: string; c: string; cc: string; city: string; lat: number; lng: number; precise: number; r: string; f: string[]; st: string; chk: string; a12: number; tot: number; last: string; open: number; lead: number;
-    deals: { id: string; e: string; amt: string; c: string; kind: string; lead: number; role: string }[]; port: [string, string, number | null][]; focus: string; url: string; cbi: string; cb: string };
-  type Arc = { id: string; t: string; sLat: number; sLng: number; eLat: number; eLng: number; e: string; c: string };
+  import { mountGlobe, hasWebGL, type ArcMode } from '../../../../lib/globe-client';
+  import type { GlobePoint as Pt, GlobeArc as Arc } from '../../../../lib/globe-data';
   const D = JSON.parse(document.getElementById('gl-data')!.textContent || '{}') as { points: Pt[]; arcs: Arc[]; cNames: Record<string, string>; colors: Record<string, string>; T: any; lang: string; listHref: string; dealsHref: string };
-    const el = document.querySelector<HTMLElement>('[data-canvas]')!;
+  const el = document.querySelector<HTMLElement>('[data-canvas]')!;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const esc = (s: string) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
   const fmtD = (iso: string) => iso ? new Date(iso + 'T12:00:00Z').toLocaleDateString(D.lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '';
   const fmt = (n: number) => n >= 1e9 ? `$${(n / 1e9).toFixed(1).replace(/\.0$/, '')}B` : n >= 1e6 ? `$${(n / 1e6).toFixed(1).replace(/\.0$/, '')}M` : n >= 1e3 ? `$${Math.round(n / 1e3)}K` : `$${n}`;
-  const hex2rgba = (h: string, a: number) => `rgba(${parseInt(h.slice(1, 3), 16)},${parseInt(h.slice(3, 5), 16)},${parseInt(h.slice(5, 7), 16)},${a})`;
 
-  // WebGL available?
-  const probe = document.createElement('canvas');
-  if (!(probe.getContext('webgl2') || probe.getContext('webgl'))) {
+  if (!hasWebGL()) {
     document.querySelector<HTMLElement>('[data-nowebgl]')!.hidden = false;
   } else {
-    const land = (feature(topo as any, (topo as any).objects.countries) as any).features;
-    const globe = new Globe(el, { animateIn: !reduce, rendererConfig: { antialias: true, alpha: true, powerPreference: 'high-performance' } })
-      .width(el.clientWidth).height(el.clientHeight)
-      .backgroundColor('rgba(0,0,0,0)')
-      .showAtmosphere(true).atmosphereColor('#7FB58C').atmosphereAltitude(0.22)
-      .hexPolygonsData(land).hexPolygonResolution(3).hexPolygonMargin(0.58).hexPolygonUseDots(true).hexPolygonAltitude(0.004).hexPolygonColor(() => 'rgba(127,181,140,0.45)')
-      .showGraticules(true)
-      .pointLat('lat').pointLng('lng').pointColor((p: any) => D.colors[p.t]).pointAltitude((p: any) => 0.008 + Math.min(p.a12, 10) * 0.006).pointRadius((p: any) => 0.2 + Math.min(p.a12, 10) * 0.035).pointResolution(16)
-      .pointLabel((p: any) => `<b>${esc(p.n)}</b>${esc(D.T.types[p.t])}${p.c ? ` · ${esc(D.cNames[p.c] || p.c)}${p.city ? ', ' + esc(p.city) : ''}` : ''}<br><small>${p.a12 ? `${p.a12} ${esc(D.T.inv12)}` : ''}${p.a12 && p.deals.length ? ' · ' : ''}${p.deals.length ? `${p.deals.length} ${esc(D.T.deals)}` : ''}${p.open ? ` · ${esc(D.T.open)}` : ''}</small>`)
-      .onPointClick((p: any) => select(p))
-      .ringColor((r: any) => (t: number) => hex2rgba(D.colors[r.t], 0.9 * (1 - t))).ringMaxRadius(2.6).ringPropagationSpeed(reduce ? 0 : 1.4).ringRepeatPeriod(1400).ringAltitude(0.015)
-      .arcStartLat('sLat').arcStartLng('sLng').arcEndLat('eLat').arcEndLng('eLng').arcColor((a: any) => [hex2rgba(D.colors[a.t], 0.85), hex2rgba(D.colors[a.t], 0.15)]).arcAltitudeAutoScale(0.45).arcStroke(0.32)
-      .arcDashLength(0.45).arcDashGap(0.25).arcDashAnimateTime(reduce ? 0 : 2600).arcsTransitionDuration(600)
-      .arcLabel((a: any) => `<b>${esc(a.e)}</b><small>${esc(D.cNames[a.c] || a.c)}</small>`);
-    const mat = globe.globeMaterial() as any; mat.color.set('#0b0f0c'); mat.emissive.set('#0a1a10'); mat.emissiveIntensity = 0.35; mat.shininess = 4;
-    const ctl = globe.controls(); ctl.autoRotate = !reduce; ctl.autoRotateSpeed = 0.45; ctl.enablePan = false; ctl.minDistance = 130; ctl.maxDistance = 520; ctl.zoomSpeed = 0.8;
-    globe.pointOfView({ lat: 44, lng: 8, altitude: reduce ? 1.7 : 3.4 }, 0);
-    if (!reduce) setTimeout(() => globe.pointOfView({ lat: 44, lng: 8, altitude: 1.7 }, 2200), 300);
-    new ResizeObserver(() => globe.width(el.clientWidth).height(el.clientHeight)).observe(el);
+    let tourOn = false;
+    const g = mountGlobe(el, { colors: D.colors, reduce,
+      label: (p) => `<b>${esc(p.n)}</b>${esc(D.T.types[p.t])}${p.c ? ` · ${esc(D.cNames[p.c] || p.c)}${p.city ? ', ' + esc(p.city) : ''}` : ''}<br><small>${p.a12 ? `${p.a12} ${esc(D.T.inv12)}` : ''}${p.a12 && p.deals.length ? ' · ' : ''}${p.deals.length ? `${p.deals.length} ${esc(D.T.deals)}` : ''}${p.open ? ` · ${esc(D.T.open)}` : ''}</small>`,
+      arcLabel: (a) => `<b>${esc(a.e)}</b><small>${esc(D.cNames[a.c] || a.c)}</small>`,
+      onSelect: (p) => select(p), onUserInput: () => { if (tourOn) tour(false); } });
+
 
     // ---- filters (share the list page's URL parameters) ----
     const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.gl-chips button'));
@@ -286,17 +247,16 @@ const COLORS: Record<string, string> = { vc: '#7FB58C', corporate: '#E3B65C', ac
     }
     function apply() {
       const pts = visible(); const ids = new Set(pts.map((p) => p.id));
-      const arcs = arcsBtn.classList.contains('on') ? D.arcs.filter((a) => ids.has(a.id)) : [];
-      globe.pointsData(pts).ringsData(pts.filter((p) => p.open)).arcsData(arcs);
+      const arcs = D.arcs.filter((a) => ids.has(a.id));
+      g.setData(pts, arcs);
       kpi('shown', pts.length); kpi('countries', new Set(pts.map((p) => p.c)).size); kpi('arcs', arcs.length); kpi('open', pts.filter((p) => p.open).length);
       const u = new URLSearchParams(); if (type) u.set('type', type); if (region.value) u.set('region', region.value); if (focus.value) u.set('focus', focus.value);
       history.replaceState(null, '', location.pathname + (u.toString() ? '?' + u : ''));
     }
     chips.forEach((b) => b.addEventListener('click', () => { type = b.dataset.type || ''; chips.forEach((c) => { c.classList.toggle('on', c === b); c.setAttribute('aria-pressed', String(c === b)); }); apply(); }));
     region.addEventListener('change', apply); focus.addEventListener('change', apply);
-    arcsBtn.addEventListener('click', () => { const on = !arcsBtn.classList.contains('on'); arcsBtn.classList.toggle('on', on); arcsBtn.setAttribute('aria-pressed', String(on)); apply(); });
-    rotBtn.addEventListener('click', () => { const on = !rotBtn.classList.contains('on'); rotBtn.classList.toggle('on', on); rotBtn.setAttribute('aria-pressed', String(on)); ctl.autoRotate = on; });
-    el.addEventListener('pointerdown', () => { if (tourOn) tour(false); }, { passive: true });
+    arcsBtn.addEventListener('click', () => { const order: ArcMode[] = ['traffic', 'all', 'off']; const next = order[(order.indexOf(arcsBtn.dataset.mode as ArcMode) + 1) % 3]; arcsBtn.dataset.mode = next; arcsBtn.classList.toggle('on', next !== 'off'); arcsBtn.textContent = JSON.parse(arcsBtn.dataset.labels!)[next]; g.setArcMode(next); });
+    rotBtn.addEventListener('click', () => { const on = !rotBtn.classList.contains('on'); rotBtn.classList.toggle('on', on); rotBtn.setAttribute('aria-pressed', String(on)); g.spin(on); });
     apply();
 
     // ---- fly to a searched investor ----
@@ -312,8 +272,8 @@ const COLORS: Record<string, string> = { vc: '#7FB58C', corporate: '#E3B65C', ac
     const body = document.querySelector<HTMLElement>('[data-panel-body]')!;
     document.querySelector('[data-close]')!.addEventListener('click', () => { panel.hidden = true; });
     function select(p: Pt) {
-      ctl.autoRotate = false; rotBtn.classList.remove('on'); rotBtn.setAttribute('aria-pressed', 'false');
-      globe.pointOfView({ lat: p.lat - (innerWidth < 900 ? 12 : 0), lng: p.lng + (innerWidth < 900 ? 0 : 14), altitude: 1.1 }, reduce ? 0 : 900);
+      g.spin(false); rotBtn.classList.remove('on'); rotBtn.setAttribute('aria-pressed', 'false');
+      g.flyTo(p.lat - (innerWidth < 900 ? 12 : 0), p.lng + (innerWidth < 900 ? 0 : 14), 1.1);
       const flag = p.cc ? `<svg class="fl" width="16" height="12" aria-hidden="true"><use href="#fl-${p.cc}"/></svg>` : '';
       const kv: string[] = [];
       if (p.st) kv.push(`<li><b>${esc(D.T.stage)}</b><span>${esc(p.st)}</span></li>`);
@@ -335,16 +295,16 @@ const COLORS: Record<string, string> = { vc: '#7FB58C', corporate: '#E3B65C', ac
 
     // ---- tour: fly through the regions ----
     const tourName = document.querySelector<HTMLElement>('[data-tourname]')!;
-    let tourOn = false, tourTimer = 0, stop = 0;
+    let tourTimer = 0, stop = 0;
     function tour(on: boolean) {
       tourOn = on; tourBtn.classList.toggle('on', on); tourBtn.setAttribute('aria-pressed', String(on)); tourBtn.textContent = on ? tourBtn.dataset.on! : tourBtn.dataset.off!;
       clearTimeout(tourTimer); tourName.hidden = !on;
-      if (!on) { ctl.autoRotate = rotBtn.classList.contains('on'); return; }
-      ctl.autoRotate = false; panel.hidden = true;
+      if (!on) { g.spin(rotBtn.classList.contains('on')); return; }
+      g.spin(false); panel.hidden = true;
       const step = () => {
         const [name, lat, lng, alt] = D.T.tourStops[stop % D.T.tourStops.length] as [string, number, number, number]; stop++;
         tourName.hidden = true; void tourName.offsetWidth; tourName.textContent = name; tourName.hidden = false;
-        globe.pointOfView({ lat, lng, altitude: alt }, reduce ? 0 : 1800);
+        g.flyTo(lat, lng, alt, 1800);
         tourTimer = window.setTimeout(step, 4200);
       };
       step();

@@ -1,0 +1,23 @@
+name = "sqwod-investor-pitch"
+main = "worker.js"
+compatibility_date = "2025-06-01"
+
+# Public vars (non-secret).
+[vars]
+SITE_BASE    = "https://sqwod.life"          # where /investor-data.json is fetched from (cached 1 h in the Worker)
+ALLOW_ORIGIN = "https://sqwod.life"          # CORS + origin gate: posts from anywhere else are refused
+MODEL        = "claude-sonnet-5-5"           # the Claude model that reads the pitch
+MIN_FILL_MS  = "4000"                        # reject pitches "typed" in under 4 s
+MAX_CHARS    = "2000"                        # pitch length cap (the site enforces the same)
+DAILY_PER_IP = "5"                           # AI reads per IP per day (needs PITCH_KV)
+
+# Per-IP daily cap. Create with:
+#   wrangler kv namespace create PITCH_KV
+# then paste the returned id below and uncomment. Without it the Worker still
+# runs — it just skips the cap, so do not ship without it.
+# [[kv_namespaces]]
+# binding = "PITCH_KV"
+# id = ""
+
+# Secrets are NOT stored here. Set with:
+#   wrangler secret put ANTHROPIC_API_KEY

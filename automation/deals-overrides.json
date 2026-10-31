@@ -714,7 +714,9 @@
       "leads": [
         "Isogon Ventures",
         "2150"
-      ]
+      ],
+      "status": "hidden",
+      "note": "hidden 31 Oct 2026: IPercept is CNC-machine monitoring (industrial AI), not wellness"
     },
     "amaani-raise-2026-09": {
       "country": "United Arab Emirates",
@@ -870,7 +872,8 @@
       ],
       "leads": [
         "Modi Ventures"
-      ]
+      ],
+      "note": "Crunchbase dates an Ozlo Series B of $37.7M to 4 June 2026; the tracker entry is the $22M round reported 30 Oct 2026 by Fitt Insider. Check whether this is a second close or a mis-dated entry before quoting totals."
     }
   },
   "block": []
