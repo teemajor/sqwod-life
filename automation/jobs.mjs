@@ -201,12 +201,16 @@ async function allowed(url) {
 }
 
 /** GET with robots, rate limit and timeout. Returns { ok, status, text } and never throws. */
-async function get(url, { headers = {}, stopOn403 = false } = {}) {
+/** `api: true` for documented APIs and public job-board feeds (BA, Adzuna, ATS JSON/XML):
+ *  robots.txt is written for crawlers, and these hosts often disallow everything there
+ *  although the API is meant to be called. Web pages (career sites, DSSV, Fitt) always
+ *  go through robots.txt. Rate limit, timeout and user agent apply to both. */
+async function get(url, { headers = {}, stopOn403 = false, api = false } = {}) {
   const host = new URL(url).host;
   const h = hostLog(host);
   if (blocked.has(host)) return { ok: false, status: 403, text: '' };
   if ((down.get(host) || 0) >= 3) return { ok: false, status: 0, text: '', down: true };
-  if (!(await allowed(url))) { h.errors.push(`robots.txt disallows ${new URL(url).pathname}`); return { ok: false, status: 0, text: '', robots: true }; }
+  if (!api && !(await allowed(url))) { h.errors.push(`robots.txt disallows ${new URL(url).pathname}`); return { ok: false, status: 0, text: '', robots: true }; }
   h.requests++;
   try {
     const r = await rawFetch(url, { headers });
@@ -277,7 +281,7 @@ async function fromBA(src) {
       for (let page = 1; page <= 5; page++) {
         const p = new URLSearchParams({ was: q, veroeffentlichtseit: String(since), size: '100', page: String(page), angebotsart: '1' });
         if (az) p.set('arbeitszeit', az);
-        const j = await getJson(`${src.url}?${p}`, { headers: { 'X-API-Key': src.apiKey, accept: 'application/json' } });
+        const j = await getJson(`${src.url}?${p}`, { api: true, headers: { 'X-API-Key': src.apiKey, accept: 'application/json' } });
         const list = j?.stellenangebote || [];
         for (const s of list) {
           const ort = s.arbeitsort || {};
@@ -301,7 +305,7 @@ async function fromAdzuna(src) {
   for (const q of QUERIES) {
     for (let page = 1; page <= 4; page++) {
       const p = new URLSearchParams({ app_id: id, app_key: key, what: q, max_days_old: String(SINCE), results_per_page: '50', 'content-type': 'application/json' });
-      const j = await getJson(`${src.url}/${page}?${p}`);
+      const j = await getJson(`${src.url}/${page}?${p}`, { api: true });
       const list = j?.results || [];
       for (const r of list) {
         // Adzuna estimates pay when the ad has none (salary_is_predicted "1"): that is not listed pay.
@@ -435,14 +439,14 @@ async function fromAts(b) {
   const url = def.feed(b.ats.id);
   const mk = (f) => job('career-page', { ...f, employer: b.brand, employerSite: b.site });
   if (def.type === 'personio') {
-    const r = await get(url); if (!r.ok) return [];
+    const r = await get(url, { api: true }); if (!r.ok) return [];
     return [...r.text.matchAll(/<position>([\s\S]*?)<\/position>/g)].map(([, x]) => {
       const tag = (t) => clean((x.match(new RegExp(`<${t}>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</${t}>`)) || [])[1]);
       return mk({ rawId: `${b.ats.id}-${tag('id')}`, title: tag('name'), city: tag('office'), country: 'DE', employment: empOf(`${tag('employmentType')} ${tag('schedule')}`),
         url: `https://${b.ats.id}.jobs.personio.de/job/${tag('id')}`, postedAt: tag('createdAt'), payText: null });
     });
   }
-  const j = await getJson(url); if (!j) return [];
+  const j = await getJson(url, { api: true }); if (!j) return [];
   if (def.type === 'greenhouse') return (j.jobs || []).map((p) => mk({ rawId: `${b.ats.id}-${p.id}`, title: p.title, city: p.location?.name, url: p.absolute_url, postedAt: p.first_published || p.updated_at, description: p.content }));
   if (def.type === 'lever') return (Array.isArray(j) ? j : []).map((p) => {
     const sr = p.salaryRange;
@@ -630,6 +634,14 @@ async function run() {
   console.log(`jobs: ${Object.entries(runLog.sources).map(([k, v]) => `${k} ${v.kept}/${v.fetched}`).join(' · ')}`);
   console.log(`jobs: ${unique.length} unique this run · ${runLog.summary.live} live · ${runLog.summary.withPay} with pay · ${runLog.summary.newThisWeek} new this week`);
   for (const n of runLog.notes) console.log(`  · ${n}`);
+  // why a source came back empty, straight into the Actions log
+  for (const src of SOURCES.filter((x) => x.enabled && x.url)) {
+    const h = runLog.hosts[new URL(src.url).host];
+    if (h && (h.failures || h.errors.length)) console.log(`  · ${src.id} (${new URL(src.url).host}): ${h.requests} requests, ${h.failures} failed; ${h.errors.slice(0, 3).join(' | ')}`);
+  }
+  const brandHosts = Object.entries(runLog.hosts).filter(([k]) => !SOURCES.some((x) => x.url && new URL(x.url).host === k));
+  if (brandHosts.length) console.log(`  · career pages: ${brandHosts.length} hosts, ${brandHosts.filter(([, v]) => v.failures && v.failures === v.requests).length} unreachable, ${brandHosts.filter(([, v]) => v.errors.some((e) => e.startsWith('robots'))).length} blocked by robots.txt`);
+  if (runLog.discovery) console.log(`  · discovery: ${runLog.discovery.found} careers pages found of ${runLog.discovery.tried} tried`);
   if (args.dry) {
     mkdirSync(RUN_DIR, { recursive: true });
     writeFileSync(join(RUN_DIR, 'last-run-dry.json'), JSON.stringify(runLog, null, 1) + '\n');
