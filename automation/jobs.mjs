@@ -271,6 +271,33 @@ const empOf = (s) => (EMP_MAP.find(([rx]) => rx.test(String(s || ''))) || [null,
 
 /* ------------------------------------------------------------------- sources -- */
 
+/** One Bundesagentur search item -> job fields. v6 (seen 31 Oct 2026) uses stellenangebotsTitel,
+ *  firma, referenznummer, stellenlokationen[].adresse, datumErsteVeroeffentlichung, the
+ *  arbeitszeit* flags and verguetungsangabe (a category such as KEINE_ANGABEN, never a figure);
+ *  the documented v4 names are kept as fallbacks. `emp` is the employment of the search pass. */
+export function baItem(s, emp = 'unknown') {
+  const loc = (Array.isArray(s.stellenlokationen) && s.stellenlokationen[0]?.adresse) || s.arbeitsort || (Array.isArray(s.arbeitsorte) ? s.arbeitsorte[0] : null) || {};
+  const land = String(loc.land || '').trim();
+  const refnr = s.referenznummer || s.refnr || s.hashId;
+  const title = s.stellenangebotsTitel || s.titel || s.stellentitel || s.hauptberuf || s.beruf;
+  if (!refnr || !title) return null;
+  if (land && !/^(deutschland|germany|de|deu)$/i.test(land)) return { foreign: true };
+  // "Cham, Oberpfalz" -> "Cham"
+  const city = String(loc.ort || loc.stadt || '').split(',')[0].trim() || null;
+  const vz = s.arbeitszeitVollzeit === true;
+  const tz = ['arbeitszeitTeilzeitVormittag', 'arbeitszeitTeilzeitNachmittag', 'arbeitszeitTeilzeitAbend', 'arbeitszeitTeilzeitFlexibel', 'arbeitszeitTeilzeit'].some((k) => s[k] === true);
+  const employment = emp === 'mini-job' ? 'mini-job' : vz && !tz ? 'full-time' : tz && !vz ? 'part-time' : emp;
+  return {
+    payCategory: String(s.verguetungsangabe || 'none'),
+    fields: {
+      rawId: refnr, title, employer: s.firma || s.arbeitgeber || s.arbeitgeberName, city, country: 'DE', employment,
+      url: s.externeUrl || null,
+      postedAt: s.datumErsteVeroeffentlichung || s.veroeffentlichungszeitraum?.von || s.aktuelleVeroeffentlichungsdatum || null,
+      payText: null,
+    },
+  };
+}
+
 export async function fromBA(src) {
   const out = []; const since = SINCE;
   const headers = { 'X-API-Key': src.apiKey, accept: 'application/json' };
@@ -301,17 +328,11 @@ export async function fromBA(src) {
         const j = await getJson(`${base}?${p}`, { api: true, headers });
         const list = listOf(j);
         for (const s of list) {
-          // field names differ between API versions: take the first one present
-          const ort = s.arbeitsort || (Array.isArray(s.arbeitsorte) ? s.arbeitsorte[0] : s.arbeitsorte) || {};
-          if (ort.land && !/^(deutschland|germany|de|deu)$/i.test(String(ort.land).trim())) continue;
-          const refnr = s.refnr || s.referenznummer || s.hashId;
-          const title = s.titel || s.stellenangebotsTitel || s.stellentitel || s.beruf || s.berufsbezeichnung;
-          if (!refnr || !title) { diag.skippedNoId = (diag.skippedNoId || 0) + 1; continue; }
-          out.push(job('ba', {
-            rawId: refnr, title, employer: s.arbeitgeber || s.arbeitgeberName || s.firma, city: ort.ort || ort.stadt, country: 'DE',
-            employment: emp, url: s.externeUrl || src.detail(refnr),
-            postedAt: s.aktuelleVeroeffentlichungsdatum || s.veroeffentlichungsdatum || s.modifikationsTimestamp || null, payText: null,
-          }));
+          const item = baItem(s, emp);
+          if (!item) { diag.skippedNoId = (diag.skippedNoId || 0) + 1; continue; }
+          if (item.foreign) continue;
+          diag.pay = diag.pay || {}; diag.pay[item.payCategory] = (diag.pay[item.payCategory] || 0) + 1;
+          out.push(job('ba', { ...item.fields, url: item.fields.url || src.detail(item.fields.rawId) }));
         }
         if (list.length < 50) break;
       }
@@ -600,7 +621,10 @@ export function mergeRun(stored, fresh, { now = Date.now(), failedSources = new 
       if (f.source === cur.source) {
         // the same source again: take its current place and pay, so a parser fix reaches stored rows
         if (f.url) cur.url = f.url;
-        Object.assign(cur, { city: f.city, region: f.region ?? cur.region });
+        Object.assign(cur, { city: f.city ?? cur.city, region: f.region ?? cur.region });
+        if (!cur.postedAt && f.postedAt) cur.postedAt = f.postedAt;
+        if (!cur.employer && f.employer) cur.employer = f.employer;
+        if (f.employment && f.employment !== 'unknown') cur.employment = f.employment;
         if (hasPay(f)) Object.assign(cur, { payText: f.payText, payMin: f.payMin, payMax: f.payMax, payPeriod: f.payPeriod, payCurrency: f.payCurrency });
         if (typeByRule(cur.title) === 'apprenticeship') cur.type = 'apprenticeship';
       }
@@ -809,6 +833,12 @@ function selftest() {
   t('adzuna place: Kreis', pl(['Deutschland', 'Nordrhein-Westfalen', 'Düren (Kreis)']).city === 'Düren' && pl(['Deutschland', 'Nordrhein-Westfalen', 'Düren (Kreis)']).region === 'Other DE');
   t('adzuna place: Bavaria to München', pl(['Deutschland', 'Bayern', 'Oberbayern', 'München'], 'München, Oberbayern').region === 'München');
   t('type: Ausbildung', typeByRule('Auszubildende zum Sport- und Fitnesskaufmann (w/m/x)') === 'apprenticeship' && typeByRule('Duales Studium - Fitnessökonomie') === 'apprenticeship' && typeByRule('Fitnesstrainer (m/w/d)') === 'trainer');
+  const bi = baItem({ stellenangebotsTitel: 'Fitnesstrainer (m/w/d)', firma: 'Fitnesspoint', referenznummer: '10001-1234-S', arbeitszeitVollzeit: true,
+    arbeitszeitTeilzeitAbend: true, verguetungsangabe: 'KEINE_ANGABEN', datumErsteVeroeffentlichung: '2026-10-31',
+    stellenlokationen: [{ adresse: { ort: 'Cham, Oberpfalz', land: 'DEUTSCHLAND' } }] }, 'full-time');
+  t('ba v6 item: title, firm, city, date, employment', bi.fields.title === 'Fitnesstrainer (m/w/d)' && bi.fields.employer === 'Fitnesspoint' && bi.fields.city === 'Cham' && bi.fields.postedAt === '2026-10-31' && bi.fields.employment === 'full-time' && bi.payCategory === 'KEINE_ANGABEN', bi);
+  t('ba v6 item: part-time only', baItem({ stellenangebotsTitel: 'x', referenznummer: '1', arbeitszeitTeilzeitVormittag: true, stellenlokationen: [{ adresse: { ort: 'Berlin', land: 'DEUTSCHLAND' } }] }, 'full-time').fields.employment === 'part-time');
+  t('ba v6 item: abroad skipped', baItem({ stellenangebotsTitel: 'x', referenznummer: '1', stellenlokationen: [{ adresse: { ort: 'Wien', land: 'ÖSTERREICH' } }] }).foreign === true);
   t('json-ld: finds JobPosting in @graph', jsonLdJobs('<script type="application/ld+json">{"@graph":[{"@type":"JobPosting","title":"x"}]}</script>').length === 1);
   console.log(ok ? 'selftest passed' : 'selftest FAILED');
   process.exit(ok ? 0 : 1);
