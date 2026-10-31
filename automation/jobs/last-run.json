@@ -1,11 +1,11 @@
 {
- "startedAt": "2026-10-31T10:30:57.498Z",
+ "startedAt": "2026-10-31T10:44:06.594Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
    "enabled": true,
-   "fetched": 0,
-   "kept": 0,
+   "fetched": 233,
+   "kept": 195,
    "diag": {
     "tried": [
      {
@@ -18,14 +18,141 @@
        "facetten"
       ],
       "maxErgebnisse": 62,
-      "items": 0,
-      "sample": null
-     },
-     {
-      "url": "/pc/v4/app/jobs",
-      "body": "null",
-      "sample": null
+      "items": 50,
+      "sample": {
+       "stellenangebotsart": "ARBEIT",
+       "stellenangebotsTitel": "Fitnesstrainer (m/w/d)",
+       "arbeitszeitTeilzeitAbend": true,
+       "arbeitszeitTeilzeitNachmittag": true,
+       "arbeitszeitTeilzeitVormittag": true,
+       "arbeitszeitVollzeit": true,
+       "eintrittszeitraum": {
+        "von": "2026-10-31"
+       },
+       "verguetungsangabe": "KEINE_ANGABEN",
+       "vertragsdauer": "UNBEFRISTET",
+       "stellenlokationen": [
+        {
+         "adresse": {
+          "strasse": "Rodinger Straße 22",
+          "adresszusatz": "Fitnesspoint Cham",
+          "plz": "93413",
+          "ort": "Cham, Oberpfalz",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.20344044500007,
+         "laenge": 12.656930714000055
+        },
+        {
+         "adresse": {
+          "strasse": "Allersbergerstraße",
+          "hausnummer": "26",
+          "adresszusatz": "Fitnesspoint Hilpoltstein",
+          "plz": "91161",
+          "ort": "Hilpoltstein, Mittelfranken",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.197240882000074,
+         "laenge": 11.187779594000062
+        },
+        {
+         "adresse": {
+          "strasse": "Eschenweg 2",
+          "adresszusatz": "Fitnesspoint Pfarrkirchen",
+          "plz": "84347",
+          "ort": "Pfarrkirchen, Niederbayern",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 48.42892451700004,
+         "laenge": 12.944821192000063
+        },
+        {
+         "adresse": {
+          "strasse": "Im Gewerbepark D 09",
+          "adresszusatz": "Fitnesspoint Regensburg",
+          "plz": "93059",
+          "ort": "Regensburg",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.03049628100007,
+         "laenge": 12.129351241000052
+        },
+        {
+         "adresse": {
+          "strasse": "Hansastraße 5",
+          "adresszusatz": "Fitnesspoint Schwabach",
+          "plz": "91126",
+          "ort": "Schwabach",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 49.32170599600005,
+         "laenge": 11.057846796000092
+        },
+        {
+         "adresse": {
+          "strasse": "Innere Frühlingstraße 43",
+          "adresszusatz": "Body-Gym Straubing",
+          "plz": "94315",
+          "ort": "Straubing",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 48.87790856300006,
+         "laenge": 12.578383694000081
+        },
+        {
+         "adresse": {
+          "strasse": "Am Ziegelfeld 1",
+          "adresszusatz": "Fitnesspoint Vilshofen",
+          "plz": "94474",
+          "ort": "Vilshofen an der Donau",
+          "region": "BAYERN",
+          "land": "DEUTSCHLAND"
+         },
+         "breite": 48.616393567000046,
+         "laenge": 13.17795252500008
+        }
+       ],
+       "veroeffentlichungszeitraum": {
+        "von": "2026-10-31"
+       },
+       "datumErsteVeroeffentlichung": "2026-10-31",
+       "aenderungsdatum": "2026-10-31T10:31:43.141",
+       "hauptberuf": "Fitnesstrainer/in",
+       "firma": "INJOY International Sports- an d Wellnessclubs",
+       "arbeitgeberKundennummerHash": "gZ0EdVQcflqLi_DIlSDcmifYYIWajHrSuReroArxbwI=",
+       "referenznummer": "10001-1003943373-S",
+       "alleBerufe": [
+        "Fitnesstrainer/in"
+       ]
+      }
      }
+    ],
+    "used": "/pc/v6/jobs",
+    "itemKeys": [
+     "stellenangebotsart",
+     "stellenangebotsTitel",
+     "arbeitszeitTeilzeitAbend",
+     "arbeitszeitTeilzeitNachmittag",
+     "arbeitszeitTeilzeitVormittag",
+     "arbeitszeitVollzeit",
+     "eintrittszeitraum",
+     "verguetungsangabe",
+     "vertragsdauer",
+     "stellenlokationen",
+     "veroeffentlichungszeitraum",
+     "datumErsteVeroeffentlichung",
+     "aenderungsdatum",
+     "hauptberuf",
+     "firma",
+     "arbeitgeberKundennummerHash",
+     "referenznummer",
+     "alleBerufe"
     ]
    }
   },
@@ -65,11 +192,9 @@
  },
  "hosts": {
   "rest.arbeitsagentur.de": {
-   "requests": 2,
-   "failures": 1,
-   "errors": [
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/app/jobs"
-   ]
+   "requests": 38,
+   "failures": 0,
+   "errors": []
   },
   "api.adzuna.com": {
    "requests": 14,
@@ -543,9 +668,7 @@
    "errors": []
   }
  },
- "notes": [
-  "Bundesagentur: no endpoint returned postings (/pc/v6/jobs: 0 items, keys ergebnisliste/maxErgebnisse/page/size/facetten; /pc/v4/app/jobs: ? items, keys )"
- ],
+ "notes": [],
  "discovery": {
   "tried": 0,
   "found": 0,
@@ -623,20 +746,18 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 310,
-  "unique": 205,
+  "fetchedAfterGate": 505,
+  "unique": 270,
   "withPay": 22
  },
  "summary": {
-  "live": 208,
-  "newThisWeek": 208,
+  "live": 273,
+  "newThisWeek": 273,
   "withPay": 22,
   "newWithPay": 22,
   "hostsFailed": 3,
-  "sourcesFailed": [
-   "ba"
-  ]
+  "sourcesFailed": []
  },
- "finishedAt": "2026-10-31T10:33:59.717Z",
+ "finishedAt": "2026-10-31T10:48:50.677Z",
  "payLinesAppended": 0
 }
