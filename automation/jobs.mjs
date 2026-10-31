@@ -273,25 +273,39 @@ const empOf = (s) => (EMP_MAP.find(([rx]) => rx.test(String(s || ''))) || [null,
 
 async function fromBA(src) {
   const out = []; const since = SINCE;
+  const headers = { 'X-API-Key': src.apiKey, accept: 'application/json' };
+  // What the API sent back, for the run log: v6 answered 200 with no postings on 31 Oct 2026.
+  const diag = (runLog.sources.ba.diag = { tried: [] });
+  const shape = (j) => (j && typeof j === 'object' ? { keys: Object.keys(j).slice(0, 12), maxErgebnisse: j.maxErgebnisse ?? null, items: (j.stellenangebote || []).length } : { body: String(j).slice(0, 80) });
+  // Pick the first endpoint whose probe ("Fitnesstrainer", nationwide) returns postings.
+  let base = null;
+  for (const url of src.endpoints || [src.url]) {
+    const probe = new URLSearchParams({ was: QUERIES[0], veroeffentlichtseit: String(since), size: '50', page: '1' });
+    const j = await getJson(`${url}?${probe}`, { api: true, headers });
+    diag.tried.push({ url: url.replace(/^.*jobsuche-service/, ''), ...shape(j), sample: (j?.stellenangebote || [])[0] || null });
+    if ((j?.stellenangebote || []).length) { base = url; break; }
+  }
+  if (!base) { runLog.notes.push(`Bundesagentur: no endpoint returned postings (${diag.tried.map((t) => `${t.url}: ${t.items ?? '?'} items, keys ${(t.keys || []).join('/')}`).join('; ')})`); return []; }
+  diag.used = base.replace(/^.*jobsuche-service/, '');
   // One pass per working-time filter tags employment from the source itself; a last
   // unfiltered pass catches postings with none of them.
   const passes = [['vz', 'full-time'], ['tz', 'part-time'], ['mj', 'mini-job'], [null, 'unknown']];
   for (const q of QUERIES) {
     for (const [az, emp] of passes) {
-      for (let page = 1; page <= 5; page++) {
-        const p = new URLSearchParams({ was: q, veroeffentlichtseit: String(since), size: '100', page: String(page), angebotsart: '1' });
+      for (let page = 1; page <= 8; page++) {
+        const p = new URLSearchParams({ was: q, veroeffentlichtseit: String(since), size: '50', page: String(page), angebotsart: '1' });
         if (az) p.set('arbeitszeit', az);
-        const j = await getJson(`${src.url}?${p}`, { api: true, headers: { 'X-API-Key': src.apiKey, accept: 'application/json' } });
+        const j = await getJson(`${base}?${p}`, { api: true, headers });
         const list = j?.stellenangebote || [];
         for (const s of list) {
           const ort = s.arbeitsort || {};
-          if (ort.land && !/deutschland|germany/i.test(ort.land)) continue;
+          if (ort.land && !/^(deutschland|germany|de|deu)$/i.test(String(ort.land).trim())) continue;
           out.push(job('ba', {
-            rawId: s.refnr, title: s.titel || s.beruf, employer: s.arbeitgeber, city: ort.ort, country: 'DE',
+            rawId: s.refnr || s.hashId, title: s.titel || s.stellenangebotsTitel || s.beruf, employer: s.arbeitgeber, city: ort.ort, country: 'DE',
             employment: emp, url: s.externeUrl || src.detail(s.refnr), postedAt: s.aktuelleVeroeffentlichungsdatum || s.modifikationsTimestamp || null, payText: null,
           }));
         }
-        if (list.length < 100) break;
+        if (list.length < 50) break;
       }
     }
   }
@@ -674,6 +688,7 @@ async function run() {
   }
   const brandHosts = Object.entries(runLog.hosts).filter(([k]) => !SOURCES.some((x) => x.url && new URL(x.url).host === k));
   if (brandHosts.length) console.log(`  · career pages: ${brandHosts.length} hosts, ${brandHosts.filter(([, v]) => v.failures && v.failures === v.requests).length} unreachable, ${brandHosts.filter(([, v]) => v.errors.some((e) => e.startsWith('robots'))).length} blocked by robots.txt`);
+  if (runLog.sources.ba?.diag) console.log(`  · ba endpoints: ${JSON.stringify(runLog.sources.ba.diag.tried.map(({ sample, ...t }) => t))}${runLog.sources.ba.diag.used ? ` → using ${runLog.sources.ba.diag.used}` : ''}`);
   if (runLog.discovery) console.log(`  · discovery: ${runLog.discovery.found} careers pages found of ${runLog.discovery.tried} tried`);
   if (args.dry) {
     mkdirSync(RUN_DIR, { recursive: true });
