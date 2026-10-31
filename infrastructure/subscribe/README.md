@@ -38,9 +38,10 @@ POSTing directly to the endpoint sailed through.
 | `locale` | `de` or `en` |
 | `signup_source` | e.g. `home-hero`, `home-footer`, `subscribe-page`, `report-unlock` |
 | `confirmed_at` | ISO timestamp of the confirmation click |
+| `jobs_alert` | `"true"` when the sign-up came from the Sqwod Jobs page (`signup_source` = `jobs-alert`). Existing subscribers who sign up there keep their contact; the Worker switches the property on with a `PATCH /contacts/<email>`. The Worker also adds the contact to the jobs segment for their language (`RESEND_SEGMENT_JOBS_EN` / `RESEND_SEGMENT_JOBS_DE` in `wrangler.toml`), which is what `automation/jobs-alert.mjs` sends the Friday jobs email to. A new contact from the jobs page joins **only** the jobs segment (they asked for one email a week, not the Daily). The alert is sent under the Resend topic "Sqwod Jobs", so its unsubscribe link ends only the jobs alert. |
 
-These must exist in Resend (Contacts → Properties) — they were created on
-2026-08-16.
+These must exist in Resend (Contacts → Properties). The first four were created on
+2026-08-16; `jobs_alert` (type string, fallback `false`) was added for Sqwod Jobs in Oct 2026.
 
 ## Deploy
 

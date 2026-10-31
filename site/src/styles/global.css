@@ -595,6 +595,7 @@ html,body{overflow-x:clip}
   .js .rv,.hw,.growbars i{opacity:1!important;transform:none!important}
   .growbars i:not(.hi){opacity:.16!important}
   .tick-in{animation:none!important}
+  .pulse{animation:none!important}
 }
 /* score breakdown numbers in the display face (Oct 2026) */
 .cnum{font-family:var(--display);font-weight:400;font-size:34px;letter-spacing:.005em}

@@ -21,12 +21,15 @@ const closures = all.filter((d) => d.kind === 'shutdown');
 const T = de ? {
   title: 'Sqwod Deal Tracker: Finanzierungen & Übernahmen in Fitness und Wellness',
   h1: 'Sqwod Deal Tracker',
-  sub: 'Jede Finanzierung, Übernahme, Bewertung und jeder Börsengang in Fitness, Wellness und Consumer Health. Täglich aus Sqwod Daily erfasst, Wiederholungen zusammengeführt, jede Meldung von Hand freigegeben.',
-  deals: 'Deals erfasst', value: 'Offengelegtes Volumen', valueNote: 'ca. USD, Finanzierungen + M&A + IPOs', eu: 'Europa & DACH', euNote: 'Anteil der Deals', since: 'Seit',
+  heroH1: 'Jede Finanzierung. Jede Übernahme. Jede Pleite.',
+  sub: 'Jede Finanzierung, Übernahme, jeder Börsengang und jede Schließung in Fitness und Wellness, gegen die Quelle geprüft. Nach Region filterbar, DACH inklusive.',
+  updatedOn: 'Aktualisiert', sinceShort: 'seit', dealsShort: 'Deals', closuresShort: 'Schließungen',
+  cta: 'Neue Deals jeden Werktag →', csv: 'CSV herunterladen',
+  latest: 'Neueste Deals', seeAll: (n: number) => `Alle ${n} ansehen ↓`, panelFoot: 'Gegen die Quelle geprüft · Beträge wie gemeldet',
+  deals: 'Deals erfasst', value: 'Offengelegtes Volumen', valueNote: 'ca. USD, Finanzierungen + M&A + IPOs', eu: 'Europa & DACH',
   all: 'Alle', region: 'Region', kind: 'Art', cat: 'Kategorie', search: 'Firma suchen …', count: 'Deals angezeigt',
   th: ['Datum', 'Firma', 'Deal', 'Betrag', 'Region', 'Kategorie', 'Quelle'],
   kinds: { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Insolvenz / Schließung' } as Record<string, string>,
-  closures: 'Insolvenzen und Schließungen', closuresNote: 'seit Januar 2026 erfasst',
   undisclosed: 'nicht genannt', source: 'Quelle', daily: 'Daily',
   chart1: 'Offengelegtes Deal-Volumen pro Monat', unit1: 'Mio. USD (ca.)', chart2: 'Deals nach Kategorie', unit2: 'Anzahl',
   method: 'So entsteht der Tracker',
@@ -42,12 +45,15 @@ const T = de ? {
 } : {
   title: 'Sqwod Deal Tracker: Fitness & Wellness Funding and M&A',
   h1: 'Sqwod Deal Tracker',
-  sub: 'Every raise, acquisition, valuation and IPO in fitness, wellness and consumer health. Logged daily from Sqwod Daily, repeats merged, every entry approved by hand.',
-  deals: 'Deals tracked', value: 'Disclosed value', valueNote: 'approx. USD, raises + M&A + IPOs', eu: 'Europe & DACH', euNote: 'share of deals', since: 'Since',
+  heroH1: 'Who’s raising, buying and closing in fitness.',
+  sub: 'Every raise, acquisition, IPO and closure in fitness and wellness, checked against the source. Filter by region, DACH included.',
+  updatedOn: 'Updated', sinceShort: 'since', dealsShort: 'Deals', closuresShort: 'Closures',
+  cta: 'Get new deals every weekday →', csv: 'Download CSV',
+  latest: 'Latest deals', seeAll: (n: number) => `See all ${n} ↓`, panelFoot: 'Checked against the source · amounts as disclosed',
+  deals: 'Deals tracked', value: 'Disclosed value', valueNote: 'approx. USD, raises + M&A + IPOs', eu: 'Europe & DACH',
   all: 'All', region: 'Region', kind: 'Type', cat: 'Category', search: 'Search a company…', count: 'deals shown',
   th: ['Date', 'Company', 'Deal', 'Amount', 'Region', 'Category', 'Source'],
   kinds: { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Bankruptcy / closure' } as Record<string, string>,
-  closures: 'Bankruptcies and closures', closuresNote: 'tracked since January 2026',
   undisclosed: 'undisclosed', source: 'Source', daily: 'Daily',
   chart1: 'Disclosed deal value per month', unit1: 'USD millions (approx.)', chart2: 'Deals by category', unit2: 'count',
   method: 'How the tracker is built',
@@ -75,6 +81,8 @@ const moved = (d: { kind: string }) => d.kind !== 'valuation';
 const disclosed = deals.filter(moved).reduce((s, d) => s + (d.amountUsd || 0), 0);
 const euShare = deals.length ? Math.round((deals.filter((d) => d.region === 'Europe' || d.region === 'DACH' || d.region === 'UK').length / deals.length) * 100) : 0;
 const first = deals.length ? deals[deals.length - 1].date : generatedAt;
+const dayMonth = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { day: 'numeric', month: 'short', timeZone: 'UTC' });
+const latest6 = deals.slice(0, 6);   // newest approved money deals (deals is sorted newest first)
 
 // charts (same component as the flagship reports)
 const months = [...new Set(deals.map((d) => d.date.slice(0, 7)))].sort();
@@ -97,26 +105,56 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
 ---
 <Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('deals', lang)} noindex={deals.length < 10}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
-  <div class="crumb"><a href={`/${lang}/intelligence`}>Sqwod Intelligence</a> / {T.h1}</div>
-  <h1>{T.h1}</h1>
-  <p class="sub">{T.sub}</p>
-
   {deals.length === 0 ? (
-    <div class="note" style="margin-top:20px">{T.empty}</div>
+    <>
+      <p class="kick"><a href={`/${lang}/intelligence`}>Sqwod Intelligence</a> / {T.h1}</p>
+      <h1>{T.h1}</h1>
+      <p class="sub">{T.sub}</p>
+      <div class="note" style="margin-top:20px">{T.empty}</div>
+    </>
   ) : (
     <>
-      <div class="dt-kpis">
-        <div><b>{deals.length.toLocaleString(loc)}</b><span>{T.deals}</span></div>
-        <div><b>{usd(disclosed)}</b><span>{T.value} · {T.valueNote}</span></div>
-        <div><b>{euShare}%</b><span>{T.eu} · {T.euNote}</span></div>
-        {closures.length > 0
-          ? <div><b>{closures.length}</b><span>{T.closures} · {T.closuresNote}</span></div>
-          : <div><b>{fmtDate(first)}</b><span>{T.since}</span></div>}
-      </div>
+      <!-- Hero (design "D", Oct 2026). Never add a chart of deal value by month up here:
+           one big month next to a quiet one reads as "the money is drying up". -->
+      <section class="dh">
+        <div class="dh-l">
+          <p class="kick dh-crumb"><a href={`/${lang}/intelligence`}>Sqwod Intelligence</a> / Deal Tracker</p>
+          <p class="dh-live"><span class="pulse" aria-hidden="true"></span>{T.updatedOn} {dayMonth(generatedAt)} · {T.sinceShort} {dayMonth(first)}</p>
+          <h1 class="dh-h1">{T.heroH1}</h1>
+          <p class="dh-sub">{T.sub}</p>
+          <div class="dh-kpis">
+            <div title={T.valueNote}><b class="dnum dh-acc">{usd(disclosed)}</b><span>{T.value} <span class="dh-approx">≈ USD</span><span class="dh-sr"> ({T.valueNote})</span></span></div>
+            <div><b class="dnum">{deals.length.toLocaleString(loc)}</b><span>{T.dealsShort}</span></div>
+            <div><b class="dnum">{euShare}<small class="dh-pct">%</small></b><span>{T.eu}</span></div>
+            <div><b class="dnum">{closures.length}</b><span>{T.closuresShort}</span></div>
+          </div>
+          <div class="dh-btns">
+            <a class="dh-cta" href="#deals-signup" data-umami-event="deals-hero-cta" data-hero-cta>{T.cta}</a>
+            <a class="dh-csv" href="/data/deals.csv" download data-umami-event="deals-csv" data-umami-event-where="hero">{T.csv}</a>
+          </div>
+        </div>
+        <aside class="dh-panel" aria-labelledby="dh-latest">
+          <h2 class="plain dh-ph" id="dh-latest">{T.latest}</h2>
+          <ul class="dh-rows">
+            {latest6.map((d) => (
+              <li>
+                <span class="dh-date">{dayMonth(d.date)}</span>
+                <span class="dh-who"><b>{d.entity}</b><small>{T.kinds[d.kind] || d.kind} · {cName(d.category)}</small></span>
+                {d.amount
+                  ? <span class={`dnum dh-amt${d.kind === 'raise' ? ' dh-acc' : ''}`}>{d.amount}</span>
+                  : <span class="dh-und">{T.undisclosed}</span>}
+              </li>
+            ))}
+          </ul>
+          <a class="dh-all" href="#all-deals">{T.seeAll(all.length)}</a>
+          <p class="dh-pfoot">{T.panelFoot}</p>
+        </aside>
+        <a class="dh-csv-m" href="/data/deals.csv" download data-umami-event="deals-csv" data-umami-event-where="hero-phone">{T.csv}</a>
+      </section>
 
       {charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} total={charts.length} />)}
 
-      <section class="dt-filters" aria-label={T.region}>
+      <section class="dt-filters" id="all-deals" aria-label={T.region}>
         <div class="dt-chips" role="group">
           <button type="button" class="on" data-region="">{T.all}</button>
           <button type="button" data-region="europe-all">{T.eu}</button>
@@ -151,7 +189,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
     </>
   )}
 
-  <InlineSignup lang={lang} source="deal-tracker" head={T.signupHead} body={T.signupBody} />
+  <InlineSignup lang={lang} source="deal-tracker" id="deals-signup" head={T.signupHead} body={T.signupBody} />
 
   <section class="note dt-method">
     <b>{T.method}</b>
@@ -162,11 +200,65 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
 </Base>
 
 <style>
-  .dt-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:22px 0 8px}
-  .dt-kpis div{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px}
-  .dt-kpis b{display:block;font-size:24px;letter-spacing:-.01em;color:var(--chalk)}
-  .dt-kpis span{display:block;font-size:12px;color:var(--g2);margin-top:4px}
-  @media(min-width:760px){.dt-kpis{grid-template-columns:repeat(4,minmax(0,1fr))}}
+  /* hero, design "D" (Oct 2026) */
+  .dh{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:start;margin:0 0 8px}
+  .dh-crumb{margin:0 0 14px}
+  .dh-crumb a{color:inherit;text-decoration:none}
+  .dh-crumb a:hover{color:var(--chalk)}
+  .dh-live{display:inline-flex;align-items:center;gap:9px;margin:0 0 18px;padding:6px 13px;border:1px solid var(--accent-line);border-radius:999px;background:var(--accent-soft);font-size:13px;font-weight:600;color:var(--chalk)}
+  .dh-live .pulse{box-shadow:0 0 8px 2px var(--accent-line)}
+  .dh-h1{font-size:76px;line-height:.95;margin:0;hyphens:manual}
+  .dh-sub{margin:18px 0 0;font-size:17px;line-height:1.5;color:var(--g2);max-width:58ch}
+  .dh-kpis{display:grid;grid-template-columns:minmax(max-content,1.4fr) repeat(3,minmax(0,1fr));gap:10px;margin:24px 0 0}
+  .dh-kpis div{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px 14px 12px;min-width:0}
+  .dh-kpis b{display:block;font-size:46px;color:var(--chalk);white-space:nowrap}
+  .dh-kpis span{display:block;font-size:13px;color:var(--g2);margin-top:6px;line-height:1.3}
+  .dh-kpis .dh-acc,.dh-acc{color:var(--accent)}
+  .dh-pct{font-size:.62em;margin-left:1px}
+  .dh-kpis .dh-approx{display:inline;font-size:inherit;margin:0;color:var(--g2)}
+  .dh-kpis .dh-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .dh-btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+  .dh-cta,.dh-csv{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap}
+  .dh-cta{background:var(--accent);color:var(--accent-ink)}
+  .dh-cta:hover{background:var(--chalk);color:var(--ink)}
+  @media (prefers-color-scheme: light){:global(:root:not([data-theme="dark"])) .dh-cta:not(:hover){color:#fff}}
+  :global(:root[data-theme="light"]) .dh-cta:not(:hover){color:#fff}
+  .dh-csv{border:1px solid var(--edge);color:var(--chalk)}
+  .dh-csv:hover{border-color:var(--accent);color:var(--accent)}
+  .dh-panel{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:22px 22px 18px;min-width:0}
+  .dh-ph{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--g2);margin:0 0 6px}
+  .dh-rows{list-style:none;margin:0;padding:0}
+  .dh-rows li{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:12px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+  .dh-rows li:first-child{border-top:0}
+  .dh-date{font-size:13px;color:var(--g2);white-space:nowrap}
+  .dh-who{min-width:0}
+  .dh-who b{display:block;font-size:15px;color:var(--chalk);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .dh-who small{display:block;font-size:12px;color:var(--g2);margin-top:2px}
+  .dh-amt{font-size:24px;color:var(--chalk);white-space:nowrap;text-align:right}
+  .dh-amt.dh-acc{color:var(--accent)}
+  .dh-und{font-size:12px;color:var(--g2);text-align:right}
+  .dh-all{display:inline-flex;align-items:center;min-height:44px;margin-top:4px;font-size:14px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px}
+  .dh-all:hover{color:var(--accent)}
+  .dh-pfoot{margin:4px 0 0;font-size:12px;color:var(--g2)}
+  .dh-csv-m{display:none}
+  @media(max-width:1100px) and (min-width:900px){.dh-h1{font-size:60px}.dh-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.dh-kpis b{font-size:40px}.dh-cta,.dh-csv{padding:0 18px}}
+  .dh-kpis span{overflow-wrap:anywhere}
+  @media(max-width:899px){
+    .dh{grid-template-columns:1fr;gap:0}
+    .dh-crumb{margin-bottom:10px}
+    .dh-live{margin-bottom:12px;font-size:12px}
+    .dh-h1{font-size:50px}
+    .dh-sub{font-size:15px;margin-top:12px}
+    .dh-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}
+    .dh-kpis div{padding:10px 12px}
+    .dh-kpis b{font-size:34px}
+    .dh-kpis span{margin-top:4px;font-size:12.5px}
+    .dh-btns{margin-top:14px}
+    .dh-cta{width:100%}
+    .dh-csv{display:none}
+    .dh-panel{margin-top:28px}
+    .dh-csv-m{display:flex;align-items:center;justify-content:center;min-height:44px;margin:8px auto 0;font-size:14px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px}
+  }
   .dt-filters{margin:26px 0 10px}
   .dt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
   .dt-chips button{border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
@@ -192,6 +284,13 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
 </style>
 
 <script>
+  // Hero CTA: a sign-up that starts from the hero is recorded as source "deal-tracker-hero".
+  document.querySelector('[data-hero-cta]')?.addEventListener('click', () => {
+    const src = document.querySelector<HTMLInputElement>('#deals-signup input[name="source"]');
+    if (src) src.value = 'deal-tracker-hero';
+    const btn = document.querySelector<HTMLElement>('#deals-signup [data-umami-event]');
+    if (btn) btn.dataset.umamiEventWhere = 'deal-tracker-hero';
+  });
   const rows = Array.from(document.querySelectorAll<HTMLTableRowElement>('.dt tbody tr'));
   const q = document.querySelector<HTMLInputElement>('[data-q]');
   const kind = document.querySelector<HTMLSelectElement>('[data-kind]');

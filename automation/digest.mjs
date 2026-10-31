@@ -135,6 +135,17 @@ function monday() {
   return out.join('');
 }
 
+// ---------- Friday: one line on Sqwod Jobs (a list, nothing to approve) ----------
+function fridayJobs() {
+  const log = readJson(join(ROOT, 'automation', 'jobs', 'last-run.json'), null);
+  // a run older than 2 days means Thursday's run did not happen: say so instead of repeating last week
+  if (!log?.summary || Date.now() - Date.parse(log.startedAt) > 2 * 86400000) return '<p style="margin:22px 0 0;font-size:14px;line-height:1.5"><b>Jobs:</b> no run this week. Check Actions → Jobs.</p>';
+  const s = log.summary;
+  const url = 'https://github.com/teemajor/sqwod-life/blob/main/automation/jobs/last-run.json';
+  return `<p style="margin:22px 0 0;font-size:14px;line-height:1.5"><b>Jobs:</b> ${s.newThisWeek ?? 0} new roles found, ${s.newWithPay ?? 0} with pay, ${s.hostsFailed ?? 0} hosts failed. <a href="${url}" style="color:#111">Run log</a></p>`;
+}
+const isFriday = new Date(`${today}T12:00:00Z`).getUTCDay() === 5;
+
 // ---------- render ----------
 const btn = (href, label, style = 'solid') => href ? `<a href="${esc(href)}" style="display:inline-block;padding:9px 14px;border-radius:999px;font:700 13px/1 -apple-system,Segoe UI,Arial,sans-serif;text-decoration:none;margin:6px 6px 0 0;${style === 'solid' ? 'background:#111;color:#fff' : style === 'warn' ? 'border:1px solid #b45309;color:#b45309' : 'border:1px solid #bbb;color:#333'}">${label}</a>` : '';
 function card(c) {
@@ -166,6 +177,7 @@ ${section('Already out', fyi)}
 ${revising.length ? `<h3 style="font:800 13px/1 -apple-system,Arial;letter-spacing:.1em;text-transform:uppercase;margin:26px 0 4px">Being revised · ${revising.length}</h3><p style="font-size:13px;color:#555;margin:0">${revising.map((p) => `${esc(p.title || p.headline || p.id)}: “${esc((p.notes || []).slice(-1)[0]?.text || '')}”`).join('<br>')}</p>` : ''}
 ${handFix.length ? `<h3 style="font:800 13px/1 -apple-system,Arial;letter-spacing:.1em;text-transform:uppercase;margin:26px 0 4px">Waiting on a hand fix · ${handFix.length}</h3><p style="font-size:13px;color:#555;margin:0">${handFix.map((p) => `${esc(p.title || p.label || p.headline || p.id)}${(p.notes || []).length ? `: “${esc(p.notes.slice(-1)[0].text)}”` : ''}`).join('<br>')}</p>` : ''}
 ${autoApplied.length ? `<h3 style="font:800 13px/1 -apple-system,Arial;letter-spacing:.1em;text-transform:uppercase;margin:26px 0 4px">Updated automatically this week · ${autoApplied.length}</h3>${autoApplied.map((p) => `<p style="font-size:13px;margin:4px 0">${esc(p.label)}: ${esc(p.oldValue)} → <b>${esc(p.newValue)}</b> (${esc(p.foundSource || p.currentSource || '')}) ${btn(signedLink(p.id, 'revert'), `Revert`, 'ghost')}</p>`).join('')}` : ''}
+${isFriday ? fridayJobs() : ''}
 ${isMonday ? `<h3 style="font:800 13px/1 -apple-system,Arial;letter-spacing:.1em;text-transform:uppercase;margin:28px 0 8px">This week</h3><div style="font-size:14px;line-height:1.5">${monday()}</div>` : ''}
 <p style="margin:28px 0 0;font-size:11px;color:#999">Links are valid for 7 days. Sent by automation/digest.mjs.</p></div>`;
 

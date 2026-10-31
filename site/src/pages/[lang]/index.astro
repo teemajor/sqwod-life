@@ -15,8 +15,7 @@ import { reviewEarns } from '../../config/verified-categories';
 import { isLiveIssue } from '../../config/daily.mjs';
 import { priceOf } from '../../lib/price';
 import { join } from 'node:path';
-import ListenBadge from '../../components/ListenBadge.astro';
-import { appleFor, spotifyFor } from '../../config/podcast';
+import { appleFor, spotifyFor, episodeAudio } from '../../config/podcast';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -33,8 +32,30 @@ let audioFiles = new Set<string>();
 try { audioFiles = new Set(readdirSync(join(process.cwd(), 'public', 'audio'))); } catch { /* none yet */ }
 const latestHasAudio = !!(latest && audioFiles.has(`${latest.data.urlSlug}-${lang}.mp3`));
 const moves = latest?.data.moneyMoves ?? [];
+// the card's money column: the first move with a disclosed amount, else the first move
+const move = moves.find((m) => m.amount) ?? moves[0];
+const dStat = latest?.data.stat?.number ? latest.data.stat : null;
+// "Source: <name>" for the stat when the Daily carries a source URL for it (short host name)
+const statSource = (() => { try { return dStat?.url && /^https?:/.test(dStat.url) ? new URL(dStat.url).hostname.replace(/^www\./, '') : null; } catch { return null; } })();
+const issueHref = latest ? `/${lang}/daily/${latest.data.urlSlug}/` : '';
+// episode length: the frontmatter duration ("2:51"), else the spoken script at ~150 words a minute (as audio.mjs)
+const duration = (() => {
+  const d = latest?.data.duration?.match(/^(\d+):(\d{2})$/);
+  if (d) return `${Math.max(1, Math.round(+d[1] + +d[2] / 60))} min`;
+  const words = latest?.data.audioScript ? latest.data.audioScript.split(/\s+/).length : 0;
+  return `${words ? Math.max(1, Math.round(words / 150)) : 5} min`;
+})();
+// "22 Mio. Dollar" / "$22 million" -> "22 Mio. $" / "$22M": the card's big number stays big
+function compactAmount(a: string) {
+  const m = a.match(/^\s*([$€£])?\s*(\d[\d.,]*)\s*(Mio\.?|Millionen|Mrd\.?|Milliarden|million|billion|bn|M|B)\s*(Dollar|US-Dollar|USD|Euro|EUR|Pfund|GBP|[$€£])?\s*$/i);
+  if (!m) return a;
+  const sym = m[1] || ({ dollar: '$', 'us-dollar': '$', usd: '$', euro: '€', eur: '€', pfund: '£', gbp: '£' } as Record<string, string>)[(m[4] || '').toLowerCase()] || m[4] || '';
+  const big = /^(mrd|milliard|billion|bn|b$)/i.test(m[3]);
+  return de ? `${m[2]} ${big ? 'Mrd.' : 'Mio.'} ${sym}`.trim() : `${sym}${m[2]}${big ? 'B' : 'M'}`;
+}
+const moveAmount = move?.amount ? compactAmount(move.amount) : '';
 const KIND: Record<string, string> = de
-  ? { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Aus', news: 'News', report: 'Report' }
+  ? { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Schließung', news: 'News', report: 'Report' }
   : { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Shutdown', news: 'News', report: 'Report' };
 
 // --- Articles
@@ -92,7 +113,7 @@ const h1 = de
   : [{ w: 'Your' }, { w: 'edge' }, { w: 'in' }, { w: 'the', br: true }, { w: 'fitness', a: true }, { w: 'industry.' }];
 const T = de
   ? { kicker: 'Sqwod Daily · werktäglich · EN & DE', signup: 'Hol dir den 5-Minuten-Brief',
-      today: 'Heutiger Daily', listen: 'Anhören', read: 'Ausgabe lesen', money: 'Geldbewegungen', invRead: 'Investor-Sicht', statDay: 'Zahl des Tages', heads: 'Heute im Daily',
+      today: 'Heutiger Daily', listen: 'Anhören', pause: 'Pause', undisclosed: 'Nicht genannt', allDeals: 'Alle Deals im Tracker', allDealsShort: 'Alle Deals', source: 'Quelle', moreStats: 'Mehr Zahlen', onApple: 'Auf Apple Podcasts anhören', onSpotify: 'Auf Spotify anhören', readShort: 'Ausgabe lesen', newTab: 'öffnet neuen Tab', moneyOne: 'Geldbewegung', readLong: 'Heutige Ausgabe lesen', read: 'Ausgabe lesen', money: 'Geldbewegungen', invRead: 'Investor-Sicht', statDay: 'Zahl des Tages', heads: 'Heute im Daily',
       repKick: 'Sqwod Intelligence', repH: 'Die Daten hinter dem Business.', repAll: 'Alle Reports',
       invKick: 'Sqwod Intelligence · monatlicher Flagship-Report', invH: 'Ein großer Report im Monat. Gebaut auf 2.061 Statista-Grafiken.', invA: 'Reports live', invB: 'Sprachen, nativ geschrieben', invC: 'interaktive Grafiken pro Report', invCta: 'Flagship-Report lesen',
       vKick: 'Sqwod Verified', vH: 'Produkte mit Score.', vP: 'Für deine Kund:innen, dein Studio und dein Regal.', allGuides: 'Alle Kaufberater', trade: 'Trade-Sicht', ad: 'Anzeige',
@@ -102,7 +123,7 @@ const T = de
       investK: 'Für Investor:innen', investH: 'Dealflow, täglich eingeordnet.', investP: 'Jede Finanzierung, Übernahme und Eröffnung mit Investor-Sicht. Dazu jeden Monat ein Flagship-Report.', investCta: 'Als Investor:in abonnieren',
       podK: 'Für Coaches in Berlin', podH: 'Trainiere Kund:innen in einem privaten Sqwod Pod.', podP: 'Voll ausgestattete private Trainingsräume in Prenzlauer Berg und Weißensee.', podCta: 'Pod buchen' }
   : { kicker: 'Sqwod Daily · every weekday · EN & DE', signup: 'Get the 5-minute brief',
-      today: "Today's Daily", listen: 'Listen', read: "Read today's issue", money: 'Money movement', invRead: 'Investor read', statDay: 'Stat of the day', heads: 'In today\'s Daily',
+      today: "Today's Daily", listen: 'Listen', pause: 'Pause', undisclosed: 'Undisclosed', newTab: 'opens in a new tab', moneyOne: 'Money movement', readLong: "Read today's issue", allDeals: 'All deals in the tracker', allDealsShort: 'All deals', source: 'Source', moreStats: 'More stats', onApple: 'Listen on Apple Podcasts', onSpotify: 'Listen on Spotify', readShort: 'Read the issue', read: "Read today's issue", money: 'Money movement', invRead: 'Investor read', statDay: 'Stat of the day', heads: 'In today\'s Daily',
       repKick: 'Sqwod Intelligence', repH: 'The data behind the business.', repAll: 'All reports',
       invKick: 'Sqwod Intelligence · monthly flagship', invH: 'One deep report a month. Built on 2,061 Statista charts.', invA: 'reports live', invB: 'languages, written natively', invC: 'interactive charts per report', invCta: 'Read the flagship',
       vKick: 'Sqwod Verified', vH: 'products scored.', vP: 'For your clients, your studio and your shelf.', allGuides: "All buyer's guides", trade: 'Trade read', ad: 'Ad',
@@ -134,27 +155,20 @@ const T = de
     </div>
   </section>
 
-  <!-- Today's Daily strip -->
+  <!-- Today's Daily: card C1b (Oct 2026). Headline, the day's biggest money move and the stat,
+       with one shared footer row of actions. -->
   {latest && (
-    <section class="ds rv" aria-label={T.today}>
-      <div class="ds-c">
-        <p class="kick"><span class="pulse" aria-hidden="true" style="margin-right:8px"></span>{T.today} · {fmtDate(latest.data.date)}</p>
-        <a class="ds-title" href={`/${lang}/daily/${latest.data.urlSlug}`}>{latest.data.summary || latest.data.title}</a>
-        <div class="ds-act">
-          {latestHasAudio && <a class="ds-listen" href={`/${lang}/daily/${latest.data.urlSlug}#listen`} data-umami-event="daily-listen-click" data-umami-event-where="home"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>{T.listen} · {latest.data.duration ?? '5 min'}</a>}
-          <ListenBadge platform="apple" href={appleFor(lang)} lang={lang} />
-          <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
-          <a class="ds-more" href={`/${lang}/daily/${latest.data.urlSlug}`}>{T.read} →</a>
-        </div>
+    <section class={`dc rv${dStat ? '' : ' dc-nostat'}`} aria-label={T.today}>
+      <div class="dc-c dc-h">
+        <p class="kick dc-k"><span class="pulse" aria-hidden="true"></span>{T.today} · {fmtDate(latest.data.date)}</p>
+        <a class="dc-title" href={issueHref} data-umami-event="daily-read" data-umami-event-where="headline">{latest.data.summary || latest.data.title}</a>
       </div>
-      <div class="ds-c">
-        {moves.length > 0 ? (
+      <div class="dc-c dc-m">
+        {move ? (
           <Fragment>
-            <p class="kick">{T.money}</p>
-            <ul class="ds-moves">
-              {moves.slice(0, 2).map((m) => <li><span class="ds-amt">{m.amount}</span><span><b>{m.entity}</b> {m.note}</span></li>)}
-            </ul>
-            {latest.data.dealRead && <p class="ds-inv"><b>{T.invRead}:</b> {latest.data.dealRead}</p>}
+            <p class="kick">{T.moneyOne} · {KIND[move.kind] ?? move.kind}</p>
+            <span class={`dnum dc-big dc-amt${moveAmount ? '' : ' dc-und'}`} style={`--len:${(moveAmount || T.undisclosed).length}`}>{moveAmount || T.undisclosed}</span>
+            <p class="dc-line"><b>{move.entity}</b>{move.note ? <Fragment> · {move.note}</Fragment> : null}</p>
           </Fragment>
         ) : (
           <Fragment>
@@ -163,11 +177,42 @@ const T = de
           </Fragment>
         )}
       </div>
-      {latest.data.stat && (
-        <div class="ds-c">
+      {dStat && (
+        <div class="dc-c dc-s">
           <p class="kick">{T.statDay}</p>
-          <div class="dnum ds-stat" data-count>{latest.data.stat.number}</div>
-          <p class="ds-statl">{latest.data.stat.label}</p>
+          <span class="dnum dc-big" style={`--len:${dStat.number.length}`}>{dStat.number}</span>
+          <p class="dc-line">{dStat.label}</p>
+        </div>
+      )}
+      <div class="dc-f dc-f1">
+        {(latestHasAudio || appleFor(lang) !== '#' || spotifyFor(lang) !== '#') && <div class="dc-listen">
+          {latestHasAudio && (
+            <Fragment>
+              <button type="button" class="dc-play" data-playing="false" data-label-play={`${T.listen} · ${duration}`} data-label-pause={`${T.pause} · ${duration}`}>
+                <svg class="dc-ico-play" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>
+                <svg class="dc-ico-pause" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor"/></svg>
+                <span>{T.listen} · {duration}</span>
+              </button>
+              <audio class="dc-audio" preload="none" src={episodeAudio(latest.data.urlSlug, lang)}></audio>
+            </Fragment>
+          )}
+          {appleFor(lang) !== '#' && <a class="dc-app" href={appleFor(lang)} target="_blank" rel="noopener" aria-label={T.onApple} title={T.onApple} data-umami-event="listen-apple" data-umami-event-where="home">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="9.5" r="2.6" fill="currentColor"/><path d="M10.6 13.4h2.8l-.5 7.1h-1.8z" fill="currentColor"/><path d="M7.2 15.2a6.8 6.8 0 1 1 9.6 0M4.6 17.6a10.2 10.2 0 1 1 14.8 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </a>}
+          {spotifyFor(lang) !== '#' && <a class="dc-app" href={spotifyFor(lang)} target="_blank" rel="noopener" aria-label={T.onSpotify} title={T.onSpotify} data-umami-event="listen-spotify" data-umami-event-where="home">
+            <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="currentColor"/><path d="M6.4 9.1c3.8-1.1 8.1-.8 11.3 1M7 12.3c3.2-.9 6.6-.6 9.3.9M7.6 15.3c2.6-.7 5.2-.5 7.4.7" fill="none" stroke="var(--panel)" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </a>}
+        </div>}
+        <a class="dc-link dc-read" href={issueHref} data-umami-event="daily-read" data-umami-event-where="footer"><span class="dc-long">{T.readLong}</span><span class="dc-short">{T.readShort}</span> →</a>
+      </div>
+      <div class="dc-f dc-f2">
+        <a class="dc-link" href={`/${lang}/intelligence/deals/`} data-umami-event="daily-deals"><span class="dc-long">{T.allDeals}</span><span class="dc-short">{T.allDealsShort}</span> →</a>
+      </div>
+      {dStat && (
+        <div class="dc-f dc-f3">
+          {statSource
+            ? <a class="dc-link" href={dStat.url} target="_blank" rel="noopener" aria-label={`${T.source}: ${statSource} (${T.newTab})`} data-umami-event="daily-source">{T.source}: {statSource} ↗</a>
+            : <a class="dc-link" href={issueHref} data-umami-event="daily-source" data-umami-event-kind="more-stats">{T.moreStats} →</a>}
         </div>
       )}
     </section>
@@ -271,6 +316,22 @@ const T = de
 </Base>
 
 <script is:inline>
+  // Daily card: "Listen" plays the episode right here (the <audio> is only rendered when the
+  // MP3 exists in the build). Button text and aria-pressed follow the player.
+  (function () {
+    var b = document.querySelector('.dc-play'), au = document.querySelector('.dc-audio');
+    if (!b || !au) return;
+    var label = b.querySelector('span');
+    var sync = function () { var on = !au.paused; b.setAttribute('data-playing', on ? 'true' : 'false'); label.textContent = b.getAttribute(on ? 'data-label-pause' : 'data-label-play'); };
+    var tracked = false;
+    b.addEventListener('click', function () { if (au.paused) { var p = au.play(); if (p && p.catch) p.catch(sync); } else au.pause(); });
+    // Umami "daily-listen" counts the first play only (pause clicks are not listens)
+    au.addEventListener('play', function () { sync(); if (!tracked && window.umami && umami.track) { tracked = true; umami.track('daily-listen', { where: 'home' }); } });
+    au.addEventListener('pause', sync); au.addEventListener('ended', sync);
+  })();
+</script>
+
+<script is:inline>
   // Ticker speed: a fixed reading pace (~32 px a second) whatever the number of items,
   // so a long day of headlines doesn't race past. One loop = half the doubled strip.
   (function () {
@@ -295,28 +356,42 @@ const T = de
   .hx-acc{color:var(--accent)}
   .hx-sub{margin:20px 0 0;max-width:620px;font-size:18px;line-height:1.5;color:var(--g2)}
 
-  /* daily strip */
-  .ds{display:grid;grid-template-columns:1.25fr 1fr 1fr;margin:40px 0 0;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden}
-  .ds-c{padding:24px 26px;border-right:1px solid var(--line);min-width:0}
-  .ds-c:last-child{border-right:0}
-  .ds .kick{display:flex;align-items:center;margin-bottom:12px}
-  .ds-title{display:block;font-size:21px;font-weight:600;line-height:1.3;letter-spacing:-.015em;text-decoration:none}
-  .ds-title:hover{color:var(--accent)}
-  .ds-act{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:16px}
-  .ds-listen{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 14px;border:1px solid var(--edge);border-radius:12px;font-size:14px;font-weight:600;text-decoration:none}
-  .ds-listen:hover{border-color:var(--accent);color:var(--accent)}
-  .ds-more{font-size:14px;font-weight:600;text-decoration:none}
-  .ds-moves{list-style:none;margin:0;padding:0}
-  .ds-moves li{display:grid;grid-template-columns:auto 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.4;color:var(--g2)}
-  .ds-moves li:first-child{border-top:0;padding-top:0}
-  .ds-moves b{color:var(--chalk)}
-  .ds-amt{font-family:var(--mono);font-weight:600;color:var(--accent);white-space:nowrap}
-  .ds-inv{margin:12px 0 0;padding:10px 12px;border-radius:12px;background:var(--accent-soft);font-size:13px;line-height:1.45;color:var(--g1)}
+  /* today's Daily: card C1b */
+  .dc{display:grid;grid-template-columns:1.45fr 1fr 1fr;grid-template-areas:"h m s" "f1 f2 f3";margin:40px 0 0;border:1px solid var(--line);border-radius:20px;background:var(--panel);overflow:hidden}
+  .dc.dc-nostat{grid-template-columns:1.45fr 2fr;grid-template-areas:"h m" "f1 f2"}
+  .dc-c{padding:24px 26px;border-right:1px solid var(--line);min-width:0}
+  .dc-h{grid-area:h}.dc-m{grid-area:m}.dc-s{grid-area:s;border-right:0}
+  .dc-nostat .dc-m{border-right:0}
+  .dc .kick{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+  .dc-title{display:block;font-size:21px;font-weight:600;line-height:1.3;letter-spacing:-.015em;text-decoration:none}
+  .dc-title:hover{color:var(--accent)}
+  /* big numbers shrink to fit their column (Anton is ~.5em per character), never cut off */
+  .dc-m,.dc-s{container-type:inline-size}
+  .dc-big{display:block;font-size:min(72px,calc(100cqi / (var(--len, 4) * .5)));color:var(--chalk);white-space:nowrap}
+  .dc-amt{color:var(--accent)}
+  .dc-und{color:var(--g2)}
+  .dc-line{margin:10px 0 0;font-size:15px;line-height:1.45;color:var(--g2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .dc-line b{color:var(--chalk);font-weight:600}
   .ds-heads{list-style:none;margin:0;padding:0}
   .ds-heads li{padding:8px 0;border-top:1px solid var(--line);font-size:14px;line-height:1.4}
   .ds-heads li:first-child{border-top:0;padding-top:0}
-  .ds-stat{font-size:72px;color:var(--chalk)}
-  .ds-statl{margin:10px 0 0;font-size:14px;line-height:1.45;color:var(--g2)}
+  .dc-f{display:flex;align-items:center;gap:8px;min-height:64px;padding:10px 26px;border-top:1px solid var(--line);border-right:1px solid var(--line);min-width:0}
+  .dc-f1{grid-area:f1}.dc-f2{grid-area:f2}.dc-f3{grid-area:f3;border-right:0}
+  .dc-nostat .dc-f2{border-right:0}
+  .dc-listen{display:flex;align-items:center;gap:2px}
+  .dc-play{display:inline-flex;align-items:center;gap:8px;min-height:44px;line-height:1;flex:none;padding:0 10px 0 0;margin-right:6px;border:0;background:none;font:inherit;font-size:14px;font-weight:600;color:var(--accent);cursor:pointer}
+  .dc-play:hover span{text-decoration:underline;text-underline-offset:4px}
+  .dc-ico-pause{display:none}
+  .dc-play[data-playing="true"] .dc-ico-pause{display:block}
+  .dc-play[data-playing="true"] .dc-ico-play{display:none}
+  .dc-app{flex:none;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;color:var(--g1)}
+  .dc-app:hover{color:var(--accent)}
+  .dc-link{display:inline-flex;align-items:center;gap:.3em;min-height:44px;font-size:14px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dc-link:hover{color:var(--accent)}
+  .dc-read{margin-left:auto;flex:none}
+  @media(max-width:1100px){ .dc .dc-long{display:none} .dc .dc-short{display:inline} }
+  .dc-short{display:none}
+  @media (prefers-color-scheme: light) and (max-width:900px){:global(:root:not([data-theme="dark"])) .dc-play{color:#fff}}
 
   /* sections */
   .sx{padding:72px 0 0}
@@ -375,12 +450,30 @@ const T = de
   .door-ghost:hover{border-color:var(--accent);color:var(--accent)}
 
   @media(max-width:900px){
-    .ds{grid-template-columns:1fr}
-    .ds-c{border-right:0;border-bottom:1px solid var(--line)}
-    .ds-c:last-child{border-bottom:0}
     .g3{grid-template-columns:1fr}
     .inv-in{grid-template-columns:1fr;gap:28px}
     .tilt{rotate:0deg}
+  }
+  @media(max-width:900px){
+    /* Daily card, phone: headline, then money | stat, then read | all deals, then the listen bar */
+    .dc,.dc.dc-nostat{grid-template-columns:1fr 1fr;grid-template-areas:"h h" "m s" "r d" "l l"}
+    .dc-nostat .dc-m{grid-column:1 / -1}
+    .dc-c{padding:18px 18px 14px}
+    .dc-h{border-right:0;border-bottom:1px solid var(--line)}
+    .dc-s{border-right:0}
+    .dc-big{font-size:min(48px,calc(100cqi / (var(--len, 4) * .5)))}
+    .dc-line{font-size:13.5px;-webkit-line-clamp:3}
+    .dc-f{min-height:0;padding:0;border:0}
+    .dc-f1{display:contents}
+    .dc-read{grid-area:r;margin:0;padding:0 18px}
+    .dc-f2{grid-area:d;padding:0 18px}
+    .dc-nostat .dc-f2{grid-area:d}
+    .dc-f3{display:none}
+    .dc-long{display:none}.dc-short{display:inline}
+    .dc-listen{grid-area:l;gap:4px;padding:10px 12px 12px 18px;border-top:1px solid var(--line);margin-top:6px}
+    .dc-play{flex:1;justify-content:center;min-height:48px;padding:0 16px;margin:0 6px 0 0;border-radius:999px;background:var(--accent);color:var(--accent-ink)}
+    .dc-play:hover span{text-decoration:none}
+    :global(:root[data-theme="light"]) .dc-play{color:#fff}
   }
   @media(max-width:640px){
     .hx-h1 br{display:none}
@@ -388,8 +481,6 @@ const T = de
     .hx :global(.isu-pills)::-webkit-scrollbar{display:none}
     .hx :global(.isu-pill){flex:none}
     .inv-stats div{padding:14px 12px}
-    .ds-c{padding:20px}
-    .ds-stat{font-size:60px}
   }
   @media(max-width:560px){
     .hx{padding:36px 0 40px}

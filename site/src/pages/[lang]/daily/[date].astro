@@ -203,6 +203,17 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
             <a class="deal-all" href={`/${lang}/intelligence/deals/`} data-umami-event="daily-to-deal-tracker">{lang === 'de' ? 'Alle Deals im Sqwod Deal Tracker' : 'All deals in the Sqwod Deal Tracker'} →</a>
           </section>
         )}
+        {d.jobsWeek?.length > 0 && (
+          <section class="rcard rv">
+            <p class="kick">{lang === 'de' ? `${d.jobsWeek.length} Jobs diese Woche` : `${d.jobsWeek.length} jobs this week`}</p>
+            <ul class="deal-list">
+              {d.jobsWeek.map((j) => (
+                <li>{j.pay && <span class="deal-k">{j.pay}</span>}<span class="deal-e"><b>{j.title}</b>{' '}{[j.employer ? `${lang === 'de' ? 'bei' : 'at'} ${j.employer}` : '', j.city].filter(Boolean).join(', ')}</span></li>
+              ))}
+            </ul>
+            <a class="deal-all" href={`/${lang}/jobs/`} data-umami-event="daily-to-jobs">{lang === 'de' ? 'Alle Jobs bei Sqwod Jobs' : 'All jobs on Sqwod Jobs'} →</a>
+          </section>
+        )}
         {d.stat && d.stat.number && (
           <section class="rcard rv d1">
             <p class="kick">{tx.stat}</p>

@@ -4,7 +4,7 @@
 // (share buttons, subscribe CTAs, report unlock, Move-of-the-Day) — Umami captures
 // them automatically.
 // Oct 2026 additions: daily-play / daily-listen-50 / daily-listen-complete (episode
-// player, via umami.track), daily-listen-click (homepage), listen-spotify, listen-apple, deal-click
+// player, via umami.track), daily-listen / daily-read / daily-deals / daily-source (homepage Daily card; daily-listen-click until 30 Oct 2026), listen-spotify, listen-apple, deal-click
 // (product, placement, earns), daily-rec-click, sponsor-click, article-read. The beacon only loads when both values are set.
 export const ANALYTICS = {
   src: 'https://umami-production-5dc9.up.railway.app/script.js',

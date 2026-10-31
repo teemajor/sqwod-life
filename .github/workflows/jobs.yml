@@ -1,0 +1,107 @@
+name: Jobs
+
+# Sqwod Jobs (Germany), automation/jobs.mjs.
+#   Thursday 18:00 Berlin: fetch every source, write site/src/data/jobs.json, append
+#     automation/jobs-pay.jsonl, write the run log, commit. The commit fires deploy.yml
+#     (workflow_run on "Jobs"), so Friday's page is live before Friday's Daily is built.
+#   Friday 08:00 Berlin: the jobs alert email (automation/jobs-alert.mjs).
+# GitHub cron is UTC and has no time zone setting, so each job has two UTC slots
+# (summer and winter time) and a guard that runs it once per day, at or after the Berlin
+# hour. GitHub's schedule can run late; the guard still lets a late run through.
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: '"scrape" (default) or "alert"'
+        required: false
+        default: 'scrape'
+  schedule:
+    - cron: '0 16,17 * * 4'   # Thursday 18:00 Berlin (CEST 16 UTC, CET 17 UTC)
+    - cron: '0 6,7 * * 5'     # Friday 08:00 Berlin (CEST 6 UTC, CET 7 UTC)
+
+concurrency:
+  group: sqwod-jobs
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.task != 'alert' || github.event.schedule == '0 16,17 * * 4'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Due?
+        id: guard
+        run: |
+          D=$(TZ=Europe/Berlin date +%F); H=$(TZ=Europe/Berlin date +%H)
+          LAST=$(node -e "try{console.log(require('./automation/jobs/last-run.json').startedAt.slice(0,10))}catch{console.log('')}")
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "go=true" >> "$GITHUB_OUTPUT";
+          elif [ "$H" -ge 18 ] && [ "$LAST" != "$(date -u +%F)" ]; then echo "go=true" >> "$GITHUB_OUTPUT";
+          else echo "go=false" >> "$GITHUB_OUTPUT"; echo "Not due ($D $H:00 Berlin, last run $LAST)."; fi
+      - name: Fetch, classify and write the jobs
+        if: steps.guard.outputs.go == 'true'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+        run: node automation/jobs.mjs
+      - name: Commit the data
+        if: steps.guard.outputs.go == 'true'
+        run: |
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add site/src/data/jobs.json automation/jobs-pay.jsonl automation/jobs/last-run.json automation/jobs-brands.json 2>/dev/null || true
+          if git diff --staged --quiet; then echo "No job changes."; else
+            git commit -m "jobs: weekly run $(TZ=Europe/Berlin date +%F)"
+            git pull --rebase --autostash origin main || true
+            git push
+          fi
+      - name: Ping the Indexing API
+        if: steps.guard.outputs.go == 'true'
+        continue-on-error: true
+        env:
+          GSC_SERVICE_ACCOUNT_JSON: ${{ secrets.GSC_SERVICE_ACCOUNT_JSON }}
+        run: node automation/jobs-indexing.mjs
+
+  alert:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.task == 'alert' || github.event.schedule == '0 6,7 * * 5'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Due?
+        id: guard
+        run: |
+          D=$(TZ=Europe/Berlin date +%F); H=$(TZ=Europe/Berlin date +%H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "go=true" >> "$GITHUB_OUTPUT";
+          elif [ "$H" -ge 8 ] && ! grep -qx "$D" automation/jobs/.alert-sent 2>/dev/null; then echo "go=true" >> "$GITHUB_OUTPUT";
+          else echo "go=false" >> "$GITHUB_OUTPUT"; echo "Not due or already sent ($D $H:00 Berlin)."; fi
+      - name: Send the jobs alert
+        if: steps.guard.outputs.go == 'true'
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_FROM: ${{ vars.JOBS_FROM }}
+          RESEND_SEGMENT_JOBS_EN: ${{ vars.RESEND_SEGMENT_JOBS_EN }}
+          RESEND_SEGMENT_JOBS_DE: ${{ vars.RESEND_SEGMENT_JOBS_DE }}
+        run: node automation/jobs-alert.mjs
+      - name: Remember it went out
+        if: steps.guard.outputs.go == 'true' && github.event_name != 'workflow_dispatch'
+        run: |
+          mkdir -p automation/jobs
+          TZ=Europe/Berlin date +%F > automation/jobs/.alert-sent
+          git config user.name "Sqwod Bot"
+          git config user.email "bot@sqwod.life"
+          git add automation/jobs/.alert-sent
+          if ! git diff --staged --quiet; then git commit -m "jobs: alert sent $(TZ=Europe/Berlin date +%F)"; git pull --rebase --autostash origin main || true; git push; fi

@@ -1,0 +1,136 @@
+---
+// Sqwod Tools: every free calculator and database in one place (Oct 2026).
+// Cards come from src/config/tools.ts; live numbers are read from the site's own data
+// files at build time (deals: src/lib/deals.ts, trainer pay: src/data/pricing-index/bls.json).
+// "I want this" on a coming tool is an Umami event (tool-vote), nothing is stored here.
+import Base from '../../../layouts/Base.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+import { TOOLS, type Tool } from '../../../config/tools';
+import { liveDeals } from '../../../lib/deals';
+import { liveJobs, hasPay } from '../../../lib/jobs';
+import bls from '../../../data/pricing-index/bls.json';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+const loc = de ? 'de-DE' : 'en-GB';
+
+const deals = liveDeals();
+const jobs = liveJobs();
+// Jobs is live once the weekly run has published roles; until then it stays a "coming" card.
+const tools: Tool[] = TOOLS.map((t) => (t.slug === 'jobs' && jobs.length ? { ...t, status: 'live' as const } : t));
+const firstDeal = deals.map((d) => d.date).sort()[0];
+const sinceMonth = firstDeal ? new Date(firstDeal + 'T12:00:00Z').toLocaleDateString(loc, { month: 'long', timeZone: 'UTC' }) : '';
+
+// One live number per live tool, each from a data file.
+const NUMBERS: Record<string, { n: string; unit: string }> = {
+  'deal-tracker': { n: deals.length.toLocaleString(loc), unit: de ? `Deals seit ${sinceMonth}` : `deals since ${sinceMonth}` },
+  'pricing-index': {
+    n: `$${bls.national.medianHourly.toFixed(2)}`,
+    unit: de ? 'Median-Stundenlohn von US-Trainer:innen' : 'median trainer pay / hour',
+  },
+  jobs: { n: jobs.length.toLocaleString(loc), unit: de ? `offene Stellen · ${jobs.filter(hasPay).length} mit Gehalt` : `open roles · ${jobs.filter(hasPay).length} with pay` },
+};
+
+const T = de ? {
+  title: 'Sqwod Tools: Rechner und Datenbanken fürs Fitness-Business',
+  sub: 'Kostenlose Rechner und Datenbanken für alle, die ein Fitness-Business führen. Aufgebaut auf denselben Quellen wie unsere Reports.',
+  live: 'Live', coming: 'Bald', want: 'Will ich haben →', noted: 'Notiert, danke',
+  foot: 'Du willst eins der kommenden Tools zuerst? Tippe auf „Will ich haben“ oder antworte auf einen beliebigen Daily.',
+} : {
+  title: 'Sqwod Tools: free calculators and databases for the fitness business',
+  sub: 'Free calculators and databases for people who run fitness businesses. Built on the same sources as our reports.',
+  live: 'Live', coming: 'Coming', want: 'I want this →', noted: 'Noted, thanks',
+  foot: 'Want one of the coming tools first? Tap “I want this” or reply to any Daily.',
+};
+const name = (t: Tool) => t.name[lang];
+const tag = (t: Tool) => `${t.status === 'live' ? T.live : T.coming} · ${t.type[lang]}`;
+const live = tools.filter((t) => t.status === 'live');
+
+const url = `https://sqwod.life/${lang}/tools/`;
+const schema = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Sqwod Tools', description: T.sub, url, inLanguage: lang,
+  isPartOf: { '@type': 'WebSite', name: 'sqwod.life', url: 'https://sqwod.life' },
+  mainEntity: {
+    '@type': 'ItemList', numberOfItems: live.length,
+    itemListElement: live.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: name(t), url: `https://sqwod.life${t.href!(lang)}`, description: t.answers[lang] })),
+  },
+};
+---
+<Base lang={lang} title={T.title} description={T.sub} active="tools">
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <p class="kick">Sqwod Tools</p>
+  <h1>Tools</h1>
+  <p class="sub tl-sub">{T.sub}</p>
+
+  <div class="tl-grid">
+    {tools.map((t) => t.status === 'live' ? (
+      <article class="tl tl-live">
+        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{tag(t)}</span>
+        <h2 class="plain tl-h">{name(t)}</h2>
+        {NUMBERS[t.slug] && <p class="tl-num"><span class="dnum">{NUMBERS[t.slug].n}</span><span class="tl-unit">{NUMBERS[t.slug].unit}</span></p>}
+        <p class="tl-a">{t.answers[lang]}</p>
+        <a class="tl-go" href={t.href!(lang)} hreflang={t.enOnly && de ? 'en' : undefined} data-umami-event="tool-open" data-umami-event-tool={t.slug}>{t.cta![lang]}</a>
+      </article>
+    ) : (
+      <article class="tl tl-coming">
+        <span class="tl-tag">{tag(t)}</span>
+        <h2 class="plain tl-h">{name(t)}</h2>
+        <p class="tl-a">{t.answers[lang]}</p>
+        <a class="tl-vote" href="#vote" data-umami-event="tool-vote" data-umami-event-tool={t.slug}>{T.want}</a>
+        <span class="tl-noted" role="status" aria-live="polite" tabindex="-1"></span>
+      </article>
+    ))}
+  </div>
+
+  <p class="tl-foot" id="vote">{T.foot}</p>
+</Base>
+
+<script is:inline define:vars={{ noted: T.noted }}>
+  // "I want this": Umami records the click (data-umami-event); this only swaps the link
+  // for a thank-you and keeps the page where it was (the #vote jump is the no-JS fallback).
+  (function () {
+    var keep = null, lastMsg = null;
+    document.querySelectorAll('.tl-vote').forEach(function (a) {
+      a.addEventListener('click', function () {
+        keep = window.scrollY;
+        var card = a.closest('.tl');
+        var msg = card && card.querySelector('.tl-noted');
+        a.remove();   // one vote per card
+        if (msg) { msg.textContent = noted; msg.focus(); lastMsg = msg; }
+      });
+    });
+    window.addEventListener('hashchange', function () {
+      if (keep === null || location.hash !== '#vote') return;
+      var y = keep; keep = null;
+      // drop the hash so the next vote fires hashchange again
+      history.replaceState(null, '', location.pathname + location.search);
+      window.scrollTo(0, y);
+      requestAnimationFrame(function () { window.scrollTo(0, y); if (lastMsg) lastMsg.focus({ preventScroll: true }); });
+    });
+  })();
+</script>
+
+<style>
+  .tl-sub{max-width:62ch}
+  .tl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 0}
+  @media(max-width:699px){.tl-grid{grid-template-columns:1fr}}
+  .tl{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}
+  .tl-live{background:var(--panel);border-color:var(--accent-line)}
+  .tl-coming{background:transparent;opacity:.78}
+  .tl-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g1)}
+  .tl-live .tl-tag{color:var(--accent)}
+  .tl-h{font-size:20px;font-weight:600;letter-spacing:-.01em;line-height:1.25;margin:2px 0 0}
+  .tl-num{display:flex;flex-direction:column;gap:6px;margin:6px 0 0}
+  .tl-num .dnum{font-size:64px;color:var(--accent)}
+  .tl-unit{font-size:13px;color:var(--g2)}
+  .tl-a{margin:0;font-size:14.5px;line-height:1.5;color:var(--g1)}
+  .tl-live .tl-a{color:var(--g2)}
+  .tl-go,.tl-vote{display:inline-flex;align-items:center;align-self:flex-start;min-height:44px;margin-top:auto;font-size:15px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+  .tl-go:hover,.tl-vote:hover{color:var(--accent)}
+  .tl-noted{font-size:14px;font-weight:600;color:var(--chalk);outline:none}
+  .tl-noted:not(:empty){margin-top:auto;min-height:44px;display:inline-flex;align-items:center}
+  .tl-foot{margin:28px 0 8px;padding-top:18px;border-top:1px solid var(--line);font-size:14.5px;line-height:1.5;color:var(--g2);max-width:70ch}
+</style>

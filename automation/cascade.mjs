@@ -23,6 +23,7 @@ import { readFileSync, readdirSync, writeFileSync, mkdirSync, existsSync } from 
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { isOnBrand, isProductReview } from './onbrand.mjs';
+import { loadJobs, newThisWeek, payLabel, cityLabel } from './jobs-week.mjs';
 import { staleReason, isLabelledAd } from './article.mjs';
 import { isGoogleNews, resolveAll, phraseProblems, isObituary, stripPhrases, noEmDash, pickGearRec, wrongLanguage, foreignSentences } from './quality.mjs';
 
@@ -451,6 +452,16 @@ Respond ONLY as minified JSON: {"issues":[{"claim":"...","problem":"...","blocki
 // no em dashes, never Fitt Insider's tagline. URLs are left untouched.
 const q = (s) => JSON.stringify(typeof s === 'string' ? noEmDash(stripPhrases(s)) : (s ?? ''));
 
+// Fridays: "5 jobs this week" from Sqwod Jobs, when at least 3 roles were added in the last
+// 7 days. A list, not a story: written as its own `jobsWeek` block after Money movement, so it
+// never takes the place of a news item and the item cap is untouched.
+function jobsWeekFor(date, lang) {
+  if (new Date(date + 'T12:00:00Z').getUTCDay() !== 5) return [];
+  const fresh = newThisWeek(loadJobs().jobs || [], Date.parse(date + 'T23:59:59Z'));
+  if (fresh.length < 3) return [];
+  return fresh.slice(0, 5).map((j) => ({ title: j.title, employer: j.employer || '', city: cityLabel(j, lang) || '', pay: payLabel(j, lang) || '' }));
+}
+
 function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
   const lines = [
     '---',
@@ -483,6 +494,16 @@ function issueFrontmatter(date, lang, items, sections, issueStatus = status) {
       if (m.amount) lines.push(`    amount: ${q(m.amount)}`);
       if (m.note) lines.push(`    note: ${q(m.note)}`);
       if (m.url) lines.push(`    url: ${q(m.url)}`);
+    }
+  }
+  const jobsWeek = jobsWeekFor(date, lang);
+  if (jobsWeek.length) {
+    lines.push('jobsWeek:');
+    for (const j of jobsWeek) {
+      lines.push(`  - title: ${q(j.title)}`);
+      if (j.employer) lines.push(`    employer: ${q(j.employer)}`);
+      if (j.city) lines.push(`    city: ${q(j.city)}`);
+      if (j.pay) lines.push(`    pay: ${q(j.pay)}`);
     }
   }
   if (s.policyWatch && s.policyWatch.title) {

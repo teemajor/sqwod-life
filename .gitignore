@@ -65,3 +65,6 @@ Claude outputs/
 
 # weekly social run output: PNGs + week.json are regenerated every Monday
 automation/social/out/
+
+# local jobs dry-run log (the real run log, last-run.json, is committed by the Jobs workflow)
+automation/jobs/last-run-dry.json

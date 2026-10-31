@@ -29,7 +29,7 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] 
 
 // ---- generalized frontmatter reader for our controlled schema ----
 const OBJ = new Set(['sponsor', 'connectDots', 'policyWatch', 'stat', 'play', 'move']);
-const ARR = new Set(['moneyMoves', 'recs', 'items']);
+const ARR = new Set(['moneyMoves', 'recs', 'items', 'jobsWeek']);
 const jval = (s) => { const m = s.match(/"(?:[^"\\]|\\.)*"/); return m ? JSON.parse(m[0]) : (s.trim() || ''); };
 function parseIssue(file) {
   const text = readFileSync(file, 'utf8');
@@ -127,6 +127,11 @@ function render(iss, lang) {
         ${m.note ? `<div style="font:400 13.5px/1.5 ${F};color:${G2};margin-top:8px;">${esc(m.note)}${m.url ? ` <a href="${esc(m.url)}" style="color:${G4};text-decoration:none;">&rarr;</a>` : ''}</div>` : ''}
       </td></tr></table>`;
     }).join('') + (iss.dealRead ? `<div style="font:400 14px/1.55 ${F};color:${G1};margin-top:14px;padding:14px 16px;border-radius:12px;background:${MOSS_SOFT};"><span style="font:700 10px/1 ${F};letter-spacing:.14em;text-transform:uppercase;color:${MOSS_INK};">${esc(tx.dealRead || 'Investor read')}</span><br>${esc(iss.dealRead)}</div>` : '')) : '';
+
+  // JOBS THIS WEEK (Fridays, from Sqwod Jobs): a plain list after the money block
+  const jobsWeek = (iss.jobsWeek || []).length ? card(label(lang === 'de' ? `${iss.jobsWeek.length} Jobs diese Woche` : `${iss.jobsWeek.length} jobs this week`, 'line-trend.gif') +
+    iss.jobsWeek.map((j, i) => `<div style="font:400 14px/1.5 ${F};color:${G2};padding:9px 0;${i ? `border-top:1px solid ${LINE};` : ''}"><b style="color:${INK};">${esc(j.title)}</b>${j.employer ? ` ${lang === 'de' ? 'bei' : 'at'} ${esc(j.employer)}` : ''}${j.city ? `, ${esc(j.city)}` : ''}${j.pay ? `, <span style="color:${MOSS_INK};font-weight:700;">${esc(j.pay)}</span>` : ''}</div>`).join('') +
+    `<div style="margin-top:12px;"><a href="${withUTM(`${SITE}/${lang}/jobs/`, 'jobs-week')}" style="font:700 14px/1 ${F};color:${INK};">${lang === 'de' ? 'Alle Jobs ansehen' : 'See all jobs'} &rarr;</a></div>`) : '';
 
   // CONNECT THE DOTS (hero image + teach)
   const cd = iss.connectDots && iss.connectDots.title;
@@ -254,6 +259,7 @@ function render(iss, lang) {
         </td></tr>
         ${move}
         ${money}
+        ${jobsWeek}
         ${dots}
         ${rundown}
         ${policy}

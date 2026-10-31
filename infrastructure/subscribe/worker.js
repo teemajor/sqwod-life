@@ -20,6 +20,8 @@
  * Vars (wrangler.toml [vars]):
  *   RESEND_SEGMENT_EN  segment ID for the English list
  *   RESEND_SEGMENT_DE  segment ID for the German list
+ *   RESEND_SEGMENT_JOBS_EN / RESEND_SEGMENT_JOBS_DE  segments for the Friday Sqwod Jobs alert
+ *                      (sign-ups with source "jobs-alert" join the one for their language)
  *   RESEND_FROM        e.g. "Sqwod Daily <daily@sqwod.life>"
  *   CONFIRM_FROM       sender for the confirmation mail only. Must sit on a domain
  *                      with click tracking OFF (notify.sqwod.life), otherwise the
@@ -207,13 +209,37 @@ async function confirm(req, env, url) {
       confirmed_at: new Date().toISOString(),
     },
   };
-  if (segment) payload.segments = [{ id: segment }];
+  // Sqwod Jobs alert (Oct 2026): a sign-up from the jobs page also opts into the Friday
+  // jobs email. Resend contact properties are strings, so the flag is the string "true".
+  const jobsAlert = data.s === 'jobs-alert';
+  if (jobsAlert) payload.properties.jobs_alert = 'true';
+  const jobsSegment = jobsAlert ? (lang === 'de' ? env.RESEND_SEGMENT_JOBS_DE : env.RESEND_SEGMENT_JOBS_EN) : '';
+  // A jobs-alert sign-up asked for one email a week, not the Daily: it joins only the jobs segment.
+  const segs = jobsAlert ? [jobsSegment].filter(Boolean) : [segment].filter(Boolean);
+  if (segs.length) payload.segments = segs.map((id) => ({ id }));
 
   const r = await fetch('https://api.resend.com/contacts', {
     method: 'POST',
     headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
     body: JSON.stringify(payload),
   });
+
+  // Already a subscriber: the create is refused (409), so switch the jobs alert on for
+  // the existing contact instead. Their other properties stay as they were.
+  if (r.status === 409 && jobsAlert) {
+    const u = await fetch(`https://api.resend.com/contacts/${encodeURIComponent(data.e)}`, {
+      method: 'PATCH',
+      headers: { Authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
+      body: JSON.stringify({ properties: { jobs_alert: 'true' } }),
+    });
+    if (!u.ok) console.log('resend jobs_alert update error', u.status, (await u.text()).slice(0, 200));
+    if (jobsSegment) {
+      const g = await fetch(`https://api.resend.com/contacts/${encodeURIComponent(data.e)}/segments/${jobsSegment}`, {
+        method: 'POST', headers: { Authorization: `Bearer ${env.RESEND_API_KEY}` },
+      });
+      if (!g.ok) console.log('resend jobs segment error', g.status, (await g.text()).slice(0, 200));
+    }
+  }
 
   // Re-confirming an address that already exists is a success, not an error.
   if (!r.ok && r.status !== 409) {
