@@ -44,3 +44,9 @@ Places where the build brief and the repo disagreed. Each one is written down he
 - `validate-richresults.mjs` exits 1 because of **12 existing over-long headlines** (Daily issues 20 to 30 Oct and one evidence playbook, > 110 characters). None of them comes from this build; they were left alone.
 - `/jobs/` stays out of the sitemap while it has fewer than 10 open roles (`astro.config.mjs`), matching its `noindex`.
 - Screenshots for the PR are in `automation/build-shots/`. They can be deleted once the PR is merged.
+
+## Deal Tracker on phones (31 Oct 2026)
+- **The 7-column table becomes a card list below 900px** (same breakpoint as the hero). One DOM for both: each `<tr>` turns into a wrapping flex row on small screens and the cells are re-ordered (name + amount, type pill · category · country, note, date + links). ARIA roles (`table`, `row`, `cell`, `columnheader`) keep it a table for screen readers; the column headers stay in the DOM, visually hidden.
+- **Filters:** region chips scroll sideways in one row with an edge fade (44px tall); search gets an icon; Type and Category sit side by side; inputs are 16px on phones so iOS Safari does not zoom on focus. A "Clear filters" link appears next to the count once a filter is set, and an empty state replaces the headerless table when nothing matches.
+- **Count opt-out:** the "n deals shown" number is `data-shown`, not `data-count`. `Base.astro` counts every `[data-count]` up from 0 when it scrolls into view and writes the original number back at the end, which could overwrite a filtered count if someone taps a chip inside that 1.1 s. `/jobs/` still uses `data-count` for its filter count and has the same latent issue.
+- The phone mock (`automation/build-shots/deals-mobile-mock.html`, standalone with the site fonts) and the screenshots (`deals-mobile-*.png`) can be deleted once merged.

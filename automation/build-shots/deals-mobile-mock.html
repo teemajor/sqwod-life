@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Deal Tracker · phone mock</title>
+<style>
+@font-face{font-family:"Geist Variable";font-weight:100 900;font-display:swap;src:url("../../site/node_modules/@fontsource-variable/geist/files/geist-latin-wght-normal.woff2") format("woff2")}
+@font-face{font-family:"Geist Mono Variable";font-weight:100 900;font-display:swap;src:url("../../site/node_modules/@fontsource-variable/geist-mono/files/geist-mono-latin-wght-normal.woff2") format("woff2")}
+@font-face{font-family:"Anton";font-weight:400;font-display:swap;src:url("../../site/public/fonts/anton-latin-400-normal.woff2") format("woff2")}
+:root{--ink:#0E0E0F;--chalk:#F4F0EA;--g1:#E4E0D9;--g2:#A3A3A0;--g3:#8E8E8A;--panel:#19191B;--panel2:#212124;--line:#28282B;--edge:#3A3A3D;
+  --accent:#7FB58C;--accent-ink:#0E0E0F;--down:#F07A7A;--sans:"Geist Variable",system-ui,sans-serif;--mono:"Geist Mono Variable",ui-monospace,monospace;--display:"Anton","Geist Variable",Impact,sans-serif}
+:root[data-theme="light"]{--ink:#F4EFE6;--chalk:#121110;--g1:#2E2B28;--g2:#5C5850;--g3:#6B665E;--panel:#FFFFFF;--panel2:#FAF8F4;--line:#E2DED6;--edge:#C9C4BA;--accent:#4F7A5A;--accent-ink:#F4EFE6;--down:#B3261E}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--ink);color:var(--chalk);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.bar{display:flex;align-items:center;justify-content:space-between;height:58px;border-bottom:1px solid var(--line)}
+.logo{font-weight:800;font-size:19px;letter-spacing:-.02em}.logo span{color:var(--g3)}
+.mock-h{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--g2);margin:22px 0 0}
+.dnum{font-family:var(--display);font-weight:400;line-height:.9;letter-spacing:.005em;font-variant-numeric:tabular-nums}
+
+/* ===== the CSS below is what ships in deals.astro ===== */
+.dt-filters{margin:26px 0 10px}
+.dt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.dt-chips button{border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
+.dt-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+.dt-row{display:grid;grid-template-columns:1fr;gap:8px}
+@media(min-width:640px){.dt-row{grid-template-columns:2fr 1fr 1fr}}
+.dt-q,.dt-sel{position:relative;display:block;min-width:0}
+.dt-q svg{position:absolute;left:13px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--g2);pointer-events:none}
+.dt-sel::after{content:"";position:absolute;right:14px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--g2);border-bottom:1.5px solid var(--g2);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.dt-row input,.dt-row select{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px}
+.dt-row input{padding-left:38px}
+.dt-row select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dt-row input:focus-visible,.dt-row select:focus-visible,.dt-chips button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.dt-count{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--g2);margin:8px 0 0}
+.dt-count b{font-weight:600;color:var(--chalk)}
+.dt-clear{border:0;background:none;padding:8px 0;margin:-8px 0;font:inherit;font-size:12px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.dt-clear:hover{color:var(--accent)}
+.dt-clear[hidden]{display:none}
+.dt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin-bottom:24px}
+.dt{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
+.dt th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.dt td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--g1)}
+.dt tr:last-child td{border-bottom:0}
+.dt td b{color:var(--chalk)}
+.dt tr[hidden]{display:none}
+.dt-note{display:block;font-size:12px;color:var(--g2);margin-top:3px;line-height:1.45}
+.dt-muted{color:var(--g3)}
+.dt-date{white-space:nowrap;font-family:var(--mono);font-size:12px;color:var(--g2)}
+.dt-amt{white-space:nowrap}
+.dt-src{white-space:nowrap;font-size:12.5px}
+.dt-src a{color:var(--g1)}
+.dt-none{margin:0;padding:28px 16px;text-align:center;font-size:14px;color:var(--g2)}
+.dt-none[hidden]{display:none}
+.dt-none .dt-clear{font-size:14px;margin-left:6px}
+
+/* Phones and small tablets: the 7-column table becomes a list of cards.
+   One DOM for both: the <tr> turns into a wrapping flex row and the cells are re-ordered.
+   The company cell uses display:contents so the name and the note can sit on different lines. */
+@media(max-width:767px){
+  .dt-filters{margin-top:24px}
+  .dt-chips{flex-wrap:nowrap;gap:8px;margin:0 -24px 12px;padding:2px 24px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding:24px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
+  .dt-chips::-webkit-scrollbar{display:none}
+  .dt-chips button{flex:0 0 auto;min-height:44px;padding:0 15px;font-size:13.5px;scroll-snap-align:start}
+  .dt-row{grid-template-columns:1fr 1fr}
+  .dt-q{grid-column:1/-1}
+  .dt-row input,.dt-row select{min-height:48px;padding-top:0;padding-bottom:0;font-size:16px}   /* 16px: iOS Safari does not zoom in on focus */
+  .dt-count{margin-top:10px;font-size:13px}
+  .dt-wrap{overflow:visible}
+  .dt{min-width:0;display:block}
+  .dt thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}   /* column names stay for screen readers */
+  .dt tbody{display:block}
+  .dt tr{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:10px;row-gap:5px;padding:14px 16px 12px;border-top:1px solid var(--line)}
+  .dt tr:first-child{border-top:0}
+  .dt tr[hidden]{display:none}
+  .dt td{display:block;padding:0;border:0}
+  .dt td.dt-who{display:contents}
+  .dt-who b{order:1;flex:1 1 0;min-width:0;font-size:16px;font-weight:700;line-height:1.3;overflow-wrap:break-word}
+  .dt-amt{order:2;flex:0 0 auto;max-width:48%;text-align:right;white-space:normal;font-size:22px;color:var(--chalk)}
+  .dt tr[data-kind="raise"] .dt-amt{color:var(--accent)}
+  .dt-amt .dt-note{font-family:var(--sans);font-size:12px;margin-top:4px}
+  .dt-amt .dt-muted{font-family:var(--sans);font-size:12.5px}
+  .dt tr::before{content:"";order:3;flex:0 0 100%;height:0}   /* forced line break: name + amount alone on line one */
+  .dt-kind{order:4;display:inline-flex;align-items:center;min-height:20px;padding:0 8px;border:1px solid var(--line);border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g1);align-self:center}
+  .dt tr[data-kind="shutdown"] .dt-kind{color:var(--down);border-color:color-mix(in srgb,var(--down) 45%,transparent)}
+  .dt-cat,.dt-where{font-size:12.5px;line-height:20px;color:var(--g2);align-self:center}
+  .dt-cat{order:5}
+  .dt-where{order:6}
+  .dt-where::before{content:"·";margin-right:8px;color:var(--g3)}
+  .dt-who .dt-note{order:7;flex:0 0 100%;margin-top:3px;font-size:13.5px;line-height:1.5;color:var(--g2)}
+  .dt-date{order:8;flex:1 1 auto;margin-top:5px}
+  .dt-src{order:9;flex:0 0 auto;margin-top:5px;margin-left:auto;display:flex;gap:18px;font-size:13px}
+  .dt-src a{padding:12px 0;margin:-12px 0;font-weight:600;color:var(--chalk);text-decoration-thickness:1px;text-underline-offset:3px}   /* 44px tap height without extra row height */
+  .dt-src a:hover{color:var(--accent)}
+}
+</style></head>
+<body>
+<header class="wrap"><div class="bar"><span class="logo">sqwod<span>.life</span></span><span style="font-size:11px;color:var(--g3);font-weight:700;letter-spacing:.06em">DE · <b style="color:var(--chalk)">EN</b></span></div></header>
+<main class="wrap">
+<p class="mock-h">All deals</p>
+<section class="dt-filters" id="all-deals" aria-label="Region">
+  <div class="dt-chips" role="group" aria-label="Region">
+    <button type="button" class="on" data-region="" aria-pressed="true">All</button>
+    <button type="button" data-region="europe-all" aria-pressed="false">Europe &amp; DACH</button>
+    <button type="button" data-region="DACH" aria-pressed="false">DACH</button><button type="button" data-region="UK" aria-pressed="false">UK</button><button type="button" data-region="Europe" aria-pressed="false">Europe</button><button type="button" data-region="North America" aria-pressed="false">North America</button><button type="button" data-region="Asia-Pacific" aria-pressed="false">Asia-Pacific</button>
+  </div>
+  <div class="dt-row">
+    <label class="dt-q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input type="search" placeholder="Search a company…" aria-label="Search a company…" autocomplete="off" enterkeyhint="search" data-q></label>
+    <span class="dt-sel"><select aria-label="Type" data-kind><option value="">Type: All</option><option value="raise">Raise</option><option value="acquisition">Acquisition</option><option value="valuation">Valuation</option><option value="ipo">IPO</option><option value="shutdown">Bankruptcy / closure</option></select></span>
+    <span class="dt-sel"><select aria-label="Category" data-cat><option value="">Category: All</option><option>Health &amp; longevity</option><option>Gyms &amp; studios</option><option>Wearables &amp; devices</option><option>Nutrition &amp; supplements</option></select></span>
+  </div>
+  <p class="dt-count"><span><b data-count>12</b> deals shown</span><button type="button" class="dt-clear" data-clear hidden>Clear filters</button></p>
+</section>
+<div class="dt-wrap">
+  <table class="dt" role="table">
+    <thead><tr role="row"><th scope="col" role="columnheader">Date</th><th scope="col" role="columnheader">Company</th><th scope="col" role="columnheader">Deal</th><th scope="col" role="columnheader">Amount</th><th scope="col" role="columnheader">Region</th><th scope="col" role="columnheader">Category</th><th scope="col" role="columnheader">Source</th></tr></thead>
+    <tbody>
+<tr role="row" data-region="North America" data-kind="raise" data-cat="Health &amp; longevity" data-name="intake breathing intake breathing raises $62m from camino partners to expand magnetic nasal strips into retail.">
+  <td class="dt-date" role="cell">29 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>Intake Breathing</b><span class="dt-note">Intake Breathing raises $62M from Camino Partners to expand magnetic nasal strips into retail.</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">$62M</td>
+  <td class="dt-where" role="cell">United States</td>
+  <td class="dt-cat" role="cell">Health &amp; longevity</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="North America" data-kind="shutdown" data-cat="Gyms &amp; studios" data-name="fitlab filed for chapter 11 in delaware with $100m to $500m in liabilities; runs fitness studios, events and equipment and apparel brands">
+  <td class="dt-date" role="cell">26 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>FitLab</b><span class="dt-note">Filed for Chapter 11 in Delaware with $100M to $500M in liabilities; runs fitness studios, events and equipment and apparel brands</span></td>
+  <td class="dt-kind" role="cell">Bankruptcy / closure</td>
+  <td class="dt-amt dnum" role="cell"><span class="dt-muted">undisclosed</span></td>
+  <td class="dt-where" role="cell">United States</td>
+  <td class="dt-cat" role="cell">Gyms &amp; studios</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a></td>
+</tr>
+<tr role="row" data-region="Other" data-kind="raise" data-cat="Wearables &amp; devices" data-name="nirva $25m pre-series a (total raised $33m) to bring an ai pendant wearable to market">
+  <td class="dt-date" role="cell">23 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>Nirva</b><span class="dt-note">$25M pre-Series A (total raised $33M) to bring an AI pendant wearable to market</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">$25M</td>
+  <td class="dt-where" role="cell">Other</td>
+  <td class="dt-cat" role="cell">Wearables &amp; devices</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="Other" data-kind="raise" data-cat="Nutrition &amp; supplements" data-name="wilde secured from s2g investments to expand retail distribution and launch new products">
+  <td class="dt-date" role="cell">23 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>WILDE</b><span class="dt-note">secured from S2G Investments to expand retail distribution and launch new products</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">$40 million</td>
+  <td class="dt-where" role="cell">Other</td>
+  <td class="dt-cat" role="cell">Nutrition &amp; supplements</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="Other" data-kind="raise" data-cat="Health &amp; longevity" data-name="unravel health £2.5m led by conduit eis impact fund and wrightwood for micro lab, an at-home saliva hormone test">
+  <td class="dt-date" role="cell">21 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>Unravel Health</b><span class="dt-note">£2.5M led by Conduit EIS Impact Fund and Wrightwood for Micro Lab, an at-home saliva hormone test</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">£2.5M<span class="dt-note">≈ $3.2M</span></td>
+  <td class="dt-where" role="cell">Other</td>
+  <td class="dt-cat" role="cell">Health &amp; longevity</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="DACH" data-kind="acquisition" data-cat="Gyms &amp; studios" data-name="puregym / nonstop gym puregym acquires 47-location swiss low-cost chain nonstop gym, deal expected to close 2 november 2026">
+  <td class="dt-date" role="cell">20 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>PureGym / NonStop Gym</b><span class="dt-note">PureGym acquires 47-location Swiss low-cost chain NonStop Gym, deal expected to close 2 November 2026</span></td>
+  <td class="dt-kind" role="cell">Acquisition</td>
+  <td class="dt-amt dnum" role="cell">£235m<span class="dt-note">≈ $298M</span></td>
+  <td class="dt-where" role="cell">DACH</td>
+  <td class="dt-cat" role="cell">Gyms &amp; studios</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="Europe" data-kind="raise" data-cat="Gyms &amp; studios" data-name="huppa pre-seed round for an all-in-one platform for gyms, crossfit boxes and studios">
+  <td class="dt-date" role="cell">19 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>Huppa</b><span class="dt-note">pre-seed round for an all-in-one platform for gyms, CrossFit boxes and studios</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">€1M<span class="dt-note">≈ $1.1M</span></td>
+  <td class="dt-where" role="cell">Europe</td>
+  <td class="dt-cat" role="cell">Gyms &amp; studios</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="Asia-Pacific" data-kind="raise" data-cat="Nutrition &amp; supplements" data-name="the stack expanding its supplements range in the indian market">
+  <td class="dt-date" role="cell">14 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>The Stack</b><span class="dt-note">expanding its supplements range in the Indian market</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">$2.27M</td>
+  <td class="dt-where" role="cell">Asia-Pacific</td>
+  <td class="dt-cat" role="cell">Nutrition &amp; supplements</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="Other" data-kind="raise" data-cat="Health &amp; longevity" data-name="stride andrew steele's preventive health venture backed on a 'don't break' thesis">
+  <td class="dt-date" role="cell">14 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>Stride</b><span class="dt-note">Andrew Steele's preventive health venture backed on a 'don't break' thesis</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">£4.6M<span class="dt-note">≈ $5.8M</span></td>
+  <td class="dt-where" role="cell">Other</td>
+  <td class="dt-cat" role="cell">Health &amp; longevity</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="Other" data-kind="raise" data-cat="Wearables &amp; devices" data-name="persona $10m led by vine ventures for an ai assistant paired with a wearable band">
+  <td class="dt-date" role="cell">09 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>Persona</b><span class="dt-note">$10M led by Vine Ventures for an AI assistant paired with a wearable band</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">$10M</td>
+  <td class="dt-where" role="cell">Other</td>
+  <td class="dt-cat" role="cell">Wearables &amp; devices</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="UK" data-kind="raise" data-cat="Gyms &amp; studios" data-name="gloriah oversubscribed £600k seed led by gabriel investment syndicate for intimate wellness products">
+  <td class="dt-date" role="cell">07 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>GLORIAH</b><span class="dt-note">oversubscribed £600K seed led by Gabriel Investment Syndicate for intimate wellness products</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">£600K<span class="dt-note">≈ $762K</span></td>
+  <td class="dt-where" role="cell">UK</td>
+  <td class="dt-cat" role="cell">Gyms &amp; studios</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+<tr role="row" data-region="Asia-Pacific" data-kind="raise" data-cat="Nutrition &amp; supplements" data-name="supermush series a led by india's ndude labs, backing functional mushroom wellness">
+  <td class="dt-date" role="cell">06 Oct 2026</td>
+  <td class="dt-who" role="cell"><b>SuperMush</b><span class="dt-note">Series A led by India's NDude Labs, backing functional mushroom wellness</span></td>
+  <td class="dt-kind" role="cell">Raise</td>
+  <td class="dt-amt dnum" role="cell">$3M</td>
+  <td class="dt-where" role="cell">Asia-Pacific</td>
+  <td class="dt-cat" role="cell">Nutrition &amp; supplements</td>
+  <td class="dt-src" role="cell"><a href="#" rel="nofollow noopener">Source ↗</a> <a href="#">Daily</a></td>
+</tr>
+    </tbody>
+  </table>
+  <p class="dt-none" data-none hidden>No deals match these filters.<button type="button" class="dt-clear" data-clear>Clear filters</button></p>
+</div>
+</main>
+<script>
+  const rows=[...document.querySelectorAll('.dt tbody tr')],q=document.querySelector('[data-q]'),kind=document.querySelector('[data-kind]'),cat=document.querySelector('[data-cat]'),count=document.querySelector('[data-count]'),chips=[...document.querySelectorAll('.dt-chips button')],clears=[...document.querySelectorAll('[data-clear]')],none=document.querySelector('[data-none]');
+  let region='';const EUROPE=new Set(['DACH','UK','Europe']);
+  function apply(){const s=(q.value||'').trim().toLowerCase();let n=0;for(const r of rows){const okR=!region||(region==='europe-all'?EUROPE.has(r.dataset.region):r.dataset.region===region);const ok=okR&&(!kind.value||r.dataset.kind===kind.value)&&(!cat.value||r.dataset.cat===cat.value)&&(!s||r.dataset.name.includes(s));r.hidden=!ok;if(ok)n++}
+    count.textContent=String(n);const active=!!(region||kind.value||cat.value||s);clears[0].hidden=!active;none.hidden=n>0}
+  chips.forEach(b=>b.addEventListener('click',()=>{region=b.dataset.region||'';chips.forEach(c=>{c.classList.toggle('on',c===b);c.setAttribute('aria-pressed',String(c===b))});apply()}));
+  q.addEventListener('input',apply);kind.addEventListener('change',apply);cat.addEventListener('change',apply);
+  clears.forEach(c=>c.addEventListener('click',()=>{q.value='';kind.value='';cat.value='';chips[0].click()}));
+</script>
+</body></html>

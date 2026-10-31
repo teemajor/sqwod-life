@@ -30,7 +30,7 @@ const T = de ? {
   all: 'Alle', region: 'Region', kind: 'Art', cat: 'Kategorie', search: 'Firma suchen …', count: 'Deals angezeigt',
   th: ['Datum', 'Firma', 'Deal', 'Betrag', 'Region', 'Kategorie', 'Quelle'],
   kinds: { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Insolvenz / Schließung' } as Record<string, string>,
-  undisclosed: 'nicht genannt', source: 'Quelle', daily: 'Daily',
+  undisclosed: 'nicht genannt', source: 'Quelle', daily: 'Daily', clear: 'Filter zurücksetzen', none: 'Kein Deal passt zu diesen Filtern.',
   chart1: 'Offengelegtes Deal-Volumen pro Monat', unit1: 'Mio. USD (ca.)', chart2: 'Deals nach Kategorie', unit2: 'Anzahl',
   method: 'So entsteht der Tracker',
   methodBody: [
@@ -54,7 +54,7 @@ const T = de ? {
   all: 'All', region: 'Region', kind: 'Type', cat: 'Category', search: 'Search a company…', count: 'deals shown',
   th: ['Date', 'Company', 'Deal', 'Amount', 'Region', 'Category', 'Source'],
   kinds: { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Bankruptcy / closure' } as Record<string, string>,
-  undisclosed: 'undisclosed', source: 'Source', daily: 'Daily',
+  undisclosed: 'undisclosed', source: 'Source', daily: 'Daily', clear: 'Clear filters', none: 'No deals match these filters.',
   chart1: 'Disclosed deal value per month', unit1: 'USD millions (approx.)', chart2: 'Deals by category', unit2: 'count',
   method: 'How the tracker is built',
   methodBody: [
@@ -155,36 +155,42 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
       {charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} total={charts.length} />)}
 
       <section class="dt-filters" id="all-deals" aria-label={T.region}>
-        <div class="dt-chips" role="group">
-          <button type="button" class="on" data-region="">{T.all}</button>
-          <button type="button" data-region="europe-all">{T.eu}</button>
-          {regions.map((r) => <button type="button" data-region={r}>{rName(r)}</button>)}
+        <div class="dt-chips" role="group" aria-label={T.region}>
+          <button type="button" class="on" data-region="" aria-pressed="true">{T.all}</button>
+          <button type="button" data-region="europe-all" aria-pressed="false">{T.eu}</button>
+          {regions.map((r) => <button type="button" data-region={r} aria-pressed="false">{rName(r)}</button>)}
         </div>
         <div class="dt-row">
-          <input type="search" placeholder={T.search} aria-label={T.search} data-q />
-          <select aria-label={T.kind} data-kind><option value="">{T.kind}: {T.all}</option>{kinds.map((k) => <option value={k}>{T.kinds[k]}</option>)}</select>
-          <select aria-label={T.cat} data-cat><option value="">{T.cat}: {T.all}</option>{cats.map((c) => <option value={c}>{cName(c)}</option>)}</select>
+          <label class="dt-q">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <input type="search" placeholder={T.search} aria-label={T.search} autocomplete="off" enterkeyhint="search" data-q />
+          </label>
+          <span class="dt-sel"><select aria-label={T.kind} data-kind><option value="">{T.kind}: {T.all}</option>{kinds.map((k) => <option value={k}>{T.kinds[k]}</option>)}</select></span>
+          <span class="dt-sel"><select aria-label={T.cat} data-cat><option value="">{T.cat}: {T.all}</option>{cats.map((c) => <option value={c}>{cName(c)}</option>)}</select></span>
         </div>
-        <p class="dt-count"><span data-count>{all.length}</span> {T.count}</p>
+        <p class="dt-count"><span><b data-shown>{all.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
       </section>
 
       <div class="dt-wrap">
-        <table class="dt">
-          <thead><tr>{T.th.map((h) => <th scope="col">{h}</th>)}</tr></thead>
+        <!-- The ARIA roles keep this a table for screen readers on phones, where the CSS
+             turns every row into a card (display:flex drops the native table semantics). -->
+        <table class="dt" role="table">
+          <thead><tr role="row">{T.th.map((h) => <th scope="col" role="columnheader">{h}</th>)}</tr></thead>
           <tbody>
             {all.map((d) => (
-              <tr data-region={d.region} data-kind={d.kind} data-cat={d.category} data-name={`${d.entity} ${d.note}`.toLowerCase()}>
-                <td class="dt-date">{fmtDate(d.date)}</td>
-                <td><b>{d.entity}</b><span class="dt-note">{de && d.noteDe ? d.noteDe : d.note}</span></td>
-                <td>{T.kinds[d.kind] || d.kind}</td>
-                <td class="dt-amt">{d.amount ? <>{d.amount}{d.amountUsd && d.currency !== 'USD' ? <span class="dt-note">≈ {usd(d.amountUsd)}</span> : null}</> : <span class="dt-muted">{T.undisclosed}</span>}</td>
-                <td>{d.country || rName(d.region)}</td>
-                <td>{cName(d.category)}</td>
-                <td class="dt-src">{d.url ? <a href={d.url} rel="nofollow noopener" target="_blank">{T.source} ↗</a> : null}{d.issue && isLiveIssue('published', d.issue.slice(-10)) ? <>{' '}<a href={d.issue.replace('/en/', `/${lang}/`)}>{T.daily}</a></> : null}</td>
+              <tr role="row" data-region={d.region} data-kind={d.kind} data-cat={d.category} data-name={`${d.entity} ${d.note}`.toLowerCase()}>
+                <td class="dt-date" role="cell">{fmtDate(d.date)}</td>
+                <td class="dt-who" role="cell"><b>{d.entity}</b><span class="dt-note">{de && d.noteDe ? d.noteDe : d.note}</span></td>
+                <td class="dt-kind" role="cell">{T.kinds[d.kind] || d.kind}</td>
+                <td class="dt-amt" role="cell">{d.amount ? <>{d.amount}{d.amountUsd && d.currency !== 'USD' ? <span class="dt-note">≈ {usd(d.amountUsd)}</span> : null}</> : <span class="dt-muted">{T.undisclosed}</span>}</td>
+                <td class="dt-where" role="cell">{d.country || rName(d.region)}</td>
+                <td class="dt-cat" role="cell">{cName(d.category)}</td>
+                <td class="dt-src" role="cell">{d.url ? <a href={d.url} rel="nofollow noopener" target="_blank">{T.source} ↗</a> : null}{d.issue && isLiveIssue('published', d.issue.slice(-10)) ? <>{' '}<a href={d.issue.replace('/en/', `/${lang}/`)}>{T.daily}</a></> : null}</td>
               </tr>
             ))}
           </tbody>
         </table>
+        <p class="dt-none" data-none hidden>{T.none}<button type="button" class="dt-clear" data-clear>{T.clear}</button></p>
       </div>
     </>
   )}
@@ -265,20 +271,75 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   .dt-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
   .dt-row{display:grid;grid-template-columns:1fr;gap:8px}
   @media(min-width:640px){.dt-row{grid-template-columns:2fr 1fr 1fr}}
+  .dt-q,.dt-sel{position:relative;display:block;min-width:0}
+  .dt-q svg{position:absolute;left:13px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--g2);pointer-events:none}
+  .dt-sel::after{content:"";position:absolute;right:14px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--g2);border-bottom:1.5px solid var(--g2);transform:translateY(-70%) rotate(45deg);pointer-events:none}
   .dt-row input,.dt-row select{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px}
-  .dt-count{font-size:12px;color:var(--g2);margin:8px 0 0}
+  .dt-row input{padding-left:38px}
+  .dt-row select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dt-row input:focus-visible,.dt-row select:focus-visible,.dt-chips button:focus-visible,.dt-clear:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .dt-count{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--g2);margin:8px 0 0}
+  .dt-count b{font-weight:600;color:var(--chalk)}
+  .dt-clear{border:0;background:none;padding:8px 0;margin:-8px 0;font:inherit;font-size:12px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+  .dt-clear:hover{color:var(--accent)}
+  .dt-clear[hidden]{display:none}
   .dt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin-bottom:24px}
   .dt{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
   .dt th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
   .dt td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--g1)}
   .dt tr:last-child td{border-bottom:0}
   .dt td b{color:var(--chalk)}
+  .dt tr[hidden]{display:none}
   .dt-note{display:block;font-size:12px;color:var(--g2);margin-top:3px;line-height:1.45}
   .dt-muted{color:var(--g3)}
   .dt-date{white-space:nowrap;font-family:var(--mono);font-size:12px;color:var(--g2)}
   .dt-amt{white-space:nowrap}
   .dt-src{white-space:nowrap;font-size:12.5px}
   .dt-src a{color:var(--g1)}
+  .dt-none{margin:0;padding:28px 16px;text-align:center;font-size:14px;color:var(--g2)}
+  .dt-none[hidden]{display:none}
+  .dt-none .dt-clear{font-size:14px;margin-left:6px}
+
+  /* Phones and tablets in portrait, same breakpoint as the hero (the 7-column table needs 720px): the table becomes a list of
+     cards from the same DOM. Each <tr> is a wrapping flex row and the cells are re-ordered;
+     the company cell uses display:contents so the name and the note sit on different lines. */
+  @media(max-width:899px){
+    .dt-filters{margin-top:24px}
+    .dt-chips{flex-wrap:nowrap;gap:8px;margin:0 -24px 12px;padding:2px 24px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding:24px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+      -webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
+    .dt-chips::-webkit-scrollbar{display:none}
+    .dt-chips button{flex:0 0 auto;min-height:44px;padding:0 15px;font-size:13.5px;scroll-snap-align:start}
+    .dt-row{grid-template-columns:1fr 1fr}
+    .dt-q{grid-column:1/-1}
+    .dt-row input,.dt-row select{min-height:48px;padding-top:0;padding-bottom:0;font-size:16px}   /* 16px: iOS Safari does not zoom in on focus */
+    .dt-count{margin-top:10px;font-size:13px}
+    .dt-wrap{overflow:visible}
+    .dt{min-width:0;display:block}
+    .dt thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}   /* column names stay for screen readers */
+    .dt tbody{display:block}
+    .dt tr{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:10px;row-gap:5px;padding:14px 16px 12px;border-top:1px solid var(--line)}
+    .dt tr:first-child{border-top:0}
+    .dt tr[hidden]{display:none}
+    .dt td{display:block;padding:0;border:0}
+    .dt td.dt-who{display:contents}
+    .dt-who b{order:1;flex:1 1 0;min-width:0;font-size:16px;font-weight:700;line-height:1.3;overflow-wrap:break-word}
+    .dt-amt{order:2;flex:0 0 auto;max-width:48%;text-align:right;white-space:normal;font-family:var(--display);font-weight:400;font-size:22px;line-height:.9;letter-spacing:.005em;font-variant-numeric:tabular-nums;color:var(--chalk)}
+    .dt tr[data-kind="raise"] .dt-amt{color:var(--accent)}
+    .dt-amt .dt-note{font-family:var(--sans);font-size:12px;margin-top:4px}
+    .dt-amt .dt-muted{font-family:var(--sans);font-size:12.5px}
+    .dt tr::before{content:"";order:3;flex:0 0 100%;height:0}   /* forced line break: name and amount alone on line one */
+    .dt-kind{order:4;display:inline-flex;align-items:center;min-height:20px;padding:0 8px;border:1px solid var(--line);border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g1);align-self:center}
+    .dt tr[data-kind="shutdown"] .dt-kind{color:var(--down);border-color:color-mix(in srgb,var(--down) 45%,transparent)}
+    .dt-cat,.dt-where{font-size:12.5px;line-height:20px;color:var(--g2);align-self:center}
+    .dt-cat{order:5}
+    .dt-where{order:6}
+    .dt-where::before{content:"·";margin-right:8px;color:var(--g3)}
+    .dt-who .dt-note{order:7;flex:0 0 100%;margin-top:3px;font-size:13.5px;line-height:1.5;color:var(--g2)}
+    .dt-date{order:8;flex:1 1 auto;margin-top:5px}
+    .dt-src{order:9;flex:0 0 auto;margin-top:5px;margin-left:auto;display:flex;gap:18px;font-size:13px}
+    .dt-src a{padding:12px 0;margin:-12px 0;font-weight:600;color:var(--chalk);text-decoration-thickness:1px;text-underline-offset:3px}   /* 44px tap height without extra row height */
+    .dt-src a:hover{color:var(--accent)}
+  }
   .dt-method ul{margin:8px 0 10px;padding-left:18px}
   .dt-method p{margin:6px 0 0;word-break:break-word}
 </style>
@@ -295,8 +356,10 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   const q = document.querySelector<HTMLInputElement>('[data-q]');
   const kind = document.querySelector<HTMLSelectElement>('[data-kind]');
   const cat = document.querySelector<HTMLSelectElement>('[data-cat]');
-  const count = document.querySelector('[data-count]');
+  const count = document.querySelector('[data-shown]');   // not data-count: Base.astro would count it up from 0 and could overwrite a filtered value
   const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.dt-chips button'));
+  const clears = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-clear]'));
+  const none = document.querySelector<HTMLElement>('[data-none]');
   let region = '';
   const EUROPE = new Set(['DACH', 'UK', 'Europe']);
   function apply() {
@@ -308,7 +371,12 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
       r.hidden = !ok; if (ok) n++;
     }
     if (count) count.textContent = String(n);
+    const active = !!(region || kind?.value || cat?.value || s);
+    clears.forEach((c) => { if (c.closest('.dt-count')) c.hidden = !active; });   // "Clear filters" next to the count only while a filter is set
+    if (none) none.hidden = n > 0;
   }
-  chips.forEach((b) => b.addEventListener('click', () => { region = b.dataset.region || ''; chips.forEach((c) => c.classList.toggle('on', c === b)); apply(); }));
+  function setRegion(b: HTMLButtonElement) { region = b.dataset.region || ''; chips.forEach((c) => { c.classList.toggle('on', c === b); c.setAttribute('aria-pressed', String(c === b)); }); apply(); }
+  chips.forEach((b) => b.addEventListener('click', () => setRegion(b)));
   q?.addEventListener('input', apply); kind?.addEventListener('change', apply); cat?.addEventListener('change', apply);
+  clears.forEach((c) => c.addEventListener('click', () => { if (q) q.value = ''; if (kind) kind.value = ''; if (cat) cat.value = ''; if (chips[0]) setRegion(chips[0]); else apply(); }));
 </script>
