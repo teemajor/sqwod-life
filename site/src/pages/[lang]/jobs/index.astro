@@ -6,7 +6,7 @@
 import Base from '../../../layouts/Base.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { languages, type Lang } from '../../../i18n/ui';
-import { liveJobs, hasPay, jobsEdition, jobsGeneratedAt, type Job } from '../../../lib/jobs';
+import { liveJobs, hasPay, jobsEdition, jobsGeneratedAt, brandOf, payMonthly, type Job } from '../../../lib/jobs';
 import { JOBS_JSONLD_ON_LIST } from '../../../config/seo.mjs';
 
 export function getStaticPaths() {
@@ -26,6 +26,8 @@ const T = de ? {
   alertHead: 'Neue Fitness-Jobs jeden Freitag', alertBody: 'Eine Mail pro Woche, nur Deutschland, mit Gehalt, wenn wir es haben.', alertBtn: 'Jobs-Alert abonnieren',
   all: 'Alle', other: 'Andere Städte', remote: 'Remote', type: 'Bereich', payOnly: 'Nur mit Gehalt', search: 'Stelle oder Arbeitgeber suchen …', shown: 'Stellen angezeigt',
   noPay: 'Gehalt nicht angegeben', apply: 'Bewerben', newTab: 'öffnet in neuem Tab', nationwide: 'bundesweit', filters: 'Filter', city: 'Stadt', via: 'Quelle', none: 'Keine Stelle passt zu diesen Filtern.',
+  showResults: 'Stellen anzeigen', close: 'Schließen', more: 'Alle anzeigen', less: 'Weniger anzeigen', clear: 'Alle Filter löschen', count: 'Stellen', employment: 'Anstellung', posted: 'Veröffentlicht', employer: 'Arbeitgeber', pay: 'Gehalt', last7: 'Letzte 7 Tage', last30: 'Letzte 30 Tage',
+  sort: 'Sortieren', sorts: { default: 'Mit Gehalt zuerst', new: 'Neueste zuerst', pay: 'Höchstes Gehalt zuerst', az: 'Arbeitgeber A bis Z' } as Record<string, string>,
   empty: 'Die erste Liste erscheint nach dem ersten wöchentlichen Lauf. Trag dich ein, dann bekommst du sie am Freitag als Erste:r.',
   per: { hour: 'Std.', month: 'Monat', year: 'Jahr' } as Record<string, string>,
   emp: { 'full-time': 'Vollzeit', 'part-time': 'Teilzeit', freelance: 'Freiberuflich', 'mini-job': 'Minijob', unknown: '' } as Record<string, string>,
@@ -46,6 +48,8 @@ const T = de ? {
   alertHead: 'New fitness jobs every Friday', alertBody: 'One email a week, Germany only, pay listed when we have it.', alertBtn: 'Get the jobs alert',
   all: 'All', other: 'Other cities', remote: 'Remote', type: 'Area', payOnly: 'Pay listed', search: 'Search a role or employer…', shown: 'roles shown',
   noPay: 'Pay not listed', apply: 'Apply', newTab: 'opens in a new tab', nationwide: 'Germany-wide', filters: 'Filters', city: 'City', via: 'Source', none: 'No role matches these filters.',
+  showResults: 'Show roles', close: 'Close', more: 'Show all', less: 'Show fewer', clear: 'Clear all filters', count: 'roles', employment: 'Employment', posted: 'Posted', employer: 'Employer', pay: 'Pay', last7: 'Last 7 days', last30: 'Last 30 days',
+  sort: 'Sort', sorts: { default: 'Pay listed first', new: 'Newest first', pay: 'Highest pay first', az: 'Employer A to Z' } as Record<string, string>,
   empty: 'The first list goes up after the first weekly run. Sign up and get it first, on Friday.',
   per: { hour: 'hour', month: 'month', year: 'year' } as Record<string, string>,
   emp: { 'full-time': 'Full-time', 'part-time': 'Part-time', freelance: 'Freelance', 'mini-job': 'Mini-job', unknown: '' } as Record<string, string>,
@@ -63,6 +67,15 @@ const SOURCE: Record<string, string> = { ba: 'Bundesagentur für Arbeit', adzuna
 const CITIES: [string, string, string][] = [['Berlin', 'berlin', 'Berlin'], ['Hamburg', 'hamburg', 'Hamburg'], ['München', 'muenchen', 'München'], ['Köln', 'koeln', 'Köln'], ['Frankfurt', 'frankfurt', 'Frankfurt'], [T.other, 'other', 'Other DE'], [T.remote, 'remote', 'Remote DE']];
 const citySlug = (r: string) => (CITIES.find((c) => c[2] === r) || ['', 'other'])[1];
 const types = Object.keys(T.types).filter((k) => jobs.some((j) => j.type === k));
+const count = (f: (j: Job) => boolean) => jobs.filter(f).length;
+const employments = ['full-time', 'part-time', 'freelance', 'mini-job'].filter((e) => jobs.some((j) => j.employment === e));
+const sources = Object.keys(SOURCE).filter((k) => jobs.some((j) => j.source === k));
+const today = jobsEdition || jobsGeneratedAt || new Date().toISOString().slice(0, 10);
+const daysOld = (j: Job) => Math.round((Date.parse(today + 'T12:00:00Z') - Date.parse((j.postedAt || j.seenAt) + 'T12:00:00Z')) / 86400000);
+const postedBucket = (j: Job) => { const d = daysOld(j); return d <= 7 ? '7 30' : d <= 30 ? '30' : ''; };
+const brands = new Map<string, { b: ReturnType<typeof brandOf>; n: number }>();
+for (const j of jobs) { const b = brandOf(j); if (!b.key) continue; const cur = brands.get(b.key); if (cur) cur.n++; else brands.set(b.key, { b, n: 1 }); }
+const employerRows = [...brands.values()].sort((a, b) => b.n - a.n || a.b.short.localeCompare(b.b.short, loc));
 
 const fmtDate = (d: string, opts: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short' }) => new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { ...opts, timeZone: 'UTC' });
 const eur = (n: number) => (de ? `${n.toLocaleString(loc, { maximumFractionDigits: 2 })} €` : `€${n.toLocaleString(loc, { maximumFractionDigits: 2 })}`);
@@ -125,36 +138,71 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
     <div class="note jb-empty">{T.empty}</div>
   ) : (
     <>
-      <section class="jb-filters" aria-label={T.filters}>
-        <div class="jb-chips" role="group" aria-label={T.city}>
-          <button type="button" class="on" data-city="" aria-pressed="true">{T.all}</button>
-          {CITIES.filter((c) => jobs.some((j) => j.region === c[2])).map(([label, slug]) => <button type="button" data-city={slug} aria-pressed="false">{label}</button>)}
+      <div class="fx" id="all-jobs" data-fx>
+        <div class="fx-bar">
+          <label class="dt-q">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+            <input type="search" placeholder={T.search} aria-label={T.search} autocomplete="off" enterkeyhint="search" data-q />
+          </label>
+          <button type="button" class="fx-open" data-fx-open aria-controls="fx-side" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" /></svg>{T.filters}<b data-fx-n hidden></b>
+          </button>
+          <span class="dt-sel fx-sort"><select aria-label={T.sort} data-sort>{Object.entries(T.sorts).map(([v, l]) => <option value={v}>{T.sort}: {l}</option>)}</select></span>
         </div>
-        <div class="jb-row">
-          <input type="search" placeholder={T.search} aria-label={T.search} data-q />
-          <select aria-label={T.type} data-type><option value="">{T.type}: {T.all}</option>{types.map((k) => <option value={k}>{T.types[k]}</option>)}</select>
-          <label class="jb-pay"><input type="checkbox" data-pay /> <span>{T.payOnly}</span></label>
-        </div>
-        <p class="jb-count" aria-live="polite"><span data-count>{jobs.length}</span> {T.shown}</p>
-      </section>
+        <p class="dt-count fx-count" aria-live="polite"><span><b data-shown>{jobs.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
+        <ul class="fx-chips" data-fx-chips aria-label={T.filters}></ul>
 
-      <ul class="jb-list">
-        {jobs.map((j) => (
-          <li class="jb" data-city={citySlug(j.region)} data-type={j.type || 'other'} data-pay={hasPay(j) ? '1' : '0'} data-name={`${j.title} ${j.employer || ''} ${j.city || ''}`.toLowerCase()}>
-            <div class="jb-main">
-              <h2 class="plain jb-t">{j.title}</h2>
-              <p class="jb-meta">{[j.employer, j.region === 'Remote DE' ? T.remote : /^(deutschland|germany)$/i.test(j.city || '') ? T.nationwide : j.city, T.emp[j.employment]].filter(Boolean).join(' · ')}</p>
-              {summary(j) && <p class="jb-sum">{summary(j)}</p>}
-              <p class="jb-src">{T.via}: {SOURCE[j.source] || j.source}</p>
-            </div>
-            <div class="jb-side">
-              {pay(j) ? <span class="jb-payw"><span class="dnum jb-payv" title={j.payText || undefined}>{pay(j)}</span>{basis(j) && <span class="jb-basis">{basis(j)}</span>}</span> : <span class="jb-nopay">{T.noPay}</span>}
-              <a class="jb-apply" href={j.url} rel="nofollow noopener" target="_blank" aria-label={`${T.apply}: ${j.title} (${T.newTab})`} data-umami-event="job-apply" data-umami-event-source={j.source}>{T.apply} ↗</a>
-            </div>
-          </li>
-        ))}
-      </ul>
-      <p class="note jb-none" hidden data-none>{T.none}</p>
+        <aside class="fx-side" id="fx-side" data-fx-side aria-label={T.filters}>
+          <div class="fx-side-head"><b>{T.filters}</b><button type="button" class="fx-x" data-fx-close aria-label={T.close}>×</button></div>
+          <div class="fx-side-body">
+            <details class="fx-g" open><summary>{T.city}</summary><div>
+              {CITIES.filter((c) => jobs.some((j) => j.region === c[2])).map(([label, slug, region]) => <label class="fx-opt"><input type="checkbox" name="city" value={slug} /><span>{label}</span><i data-n>{count((j) => j.region === region)}</i></label>)}
+            </div></details>
+            <details class="fx-g" open><summary>{T.type}</summary><div>
+              {types.map((k) => <label class="fx-opt"><input type="checkbox" name="type" value={k} /><span>{T.types[k]}</span><i data-n>{count((j) => j.type === k)}</i></label>)}
+            </div></details>
+            <details class="fx-g" open><summary>{T.pay}</summary><div>
+              <label class="fx-opt"><input type="checkbox" name="pay" value="1" /><span>{T.payOnly}</span><i data-n>{withPay}</i></label>
+            </div></details>
+            <details class="fx-g"><summary>{T.employment}</summary><div>
+              {employments.map((e) => <label class="fx-opt"><input type="checkbox" name="emp" value={e} /><span>{T.emp[e]}</span><i data-n>{count((j) => j.employment === e)}</i></label>)}
+            </div></details>
+            <details class="fx-g"><summary>{T.posted}</summary><div>
+              <label class="fx-opt"><input type="radio" name="posted" value="7" /><span>{T.last7}</span><i data-n>{count((j) => daysOld(j) <= 7)}</i></label>
+              <label class="fx-opt"><input type="radio" name="posted" value="30" /><span>{T.last30}</span><i data-n>{count((j) => daysOld(j) <= 30)}</i></label>
+            </div></details>
+            <details class="fx-g"><summary>{T.employer}</summary><div data-fx-more>
+              {employerRows.map((r, k) => <label class="fx-opt" hidden={k >= 8}><input type="checkbox" name="employer" value={r.b.key} /><span>{r.b.logo ? <img class="fx-logo" src={r.b.logo} width="18" height="18" alt="" loading="lazy" /> : <i class="fx-mono" style={`--h:${r.b.hue}`}>{r.b.initials}</i>}{r.b.short}</span><i data-n>{r.n}</i></label>)}
+              {employerRows.length > 8 && <button type="button" class="fx-more" data-fx-toggle data-more={T.more} data-less={T.less}>{T.more} ({employerRows.length})</button>}
+            </div></details>
+            <details class="fx-g"><summary>{T.via}</summary><div>
+              {sources.map((k) => <label class="fx-opt"><input type="checkbox" name="src" value={k} /><span>{SOURCE[k]}</span><i data-n>{count((j) => j.source === k)}</i></label>)}
+            </div></details>
+          </div>
+          <div class="fx-side-foot"><button type="button" class="dt-clear" data-clear>{T.clear}</button><button type="button" class="ih-cta fx-show" data-fx-close><span data-shown-2>{jobs.length}</span>&nbsp;{T.showResults}</button></div>
+        </aside>
+        <div class="fx-veil" data-fx-veil data-fx-close hidden></div>
+
+        <ul class="jb-list">
+          {jobs.map((j) => { const b = brandOf(j); return (
+            <li class="jb" data-city={citySlug(j.region)} data-type={j.type || 'other'} data-pay={hasPay(j) ? '1' : '0'} data-emp={j.employment} data-posted={postedBucket(j)} data-employer={b.key} data-src={j.source}
+              data-date={(j.postedAt || j.seenAt).replace(/-/g, '')} data-paym={payMonthly(j) ?? ''} data-az={b.short.toLowerCase()} data-name={`${j.title} ${j.employer || ''} ${b.short} ${j.city || ''}`.toLowerCase()}>
+              <div class="jb-logo" aria-hidden="true">{b.logo ? <img src={b.logo} width="44" height="44" alt="" loading="lazy" decoding="async" /> : <span class="jb-mono" style={`--h:${b.hue}`}>{b.initials}</span>}</div>
+              <div class="jb-main">
+                <h2 class="plain jb-t">{j.title}</h2>
+                <p class="jb-meta"><b title={b.name !== b.short ? b.name : undefined}>{b.short}</b>{[j.region === 'Remote DE' ? T.remote : /^(deutschland|germany)$/i.test(j.city || '') ? T.nationwide : j.city, T.emp[j.employment]].filter(Boolean).map((x) => <span>{x}</span>)}</p>
+                {summary(j) && <p class="jb-sum">{summary(j)}</p>}
+                <p class="jb-src">{T.via}: {SOURCE[j.source] || j.source}{(j.postedAt || j.seenAt) && <> · {fmtDate(j.postedAt || j.seenAt)}</>}</p>
+              </div>
+              <div class="jb-side">
+                {pay(j) ? <span class="jb-payw"><span class="dnum jb-payv" title={j.payText || undefined}>{pay(j)}</span>{basis(j) && <span class="jb-basis">{basis(j)}</span>}</span> : <span class="jb-nopay">{T.noPay}</span>}
+                <a class="jb-apply" href={j.url} rel="nofollow noopener" target="_blank" aria-label={`${T.apply}: ${j.title} (${T.newTab})`} data-umami-event="job-apply" data-umami-event-source={j.source}>{T.apply} ↗</a>
+              </div>
+            </li>
+          ); })}
+          <li class="dt-none" data-none hidden>{T.none}<button type="button" class="dt-clear" data-clear>{T.clear}</button></li>
+        </ul>
+      </div>
     </>
   )}
 
@@ -181,20 +229,88 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
   .jh-stats .jh-acc{color:var(--accent)}
   .jh-r :global(.isu){margin:0}
   .jb-empty{margin-top:28px}
-  .jb-filters{margin:32px 0 10px}
-  .jb-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
-  .jb-chips button{min-height:44px;border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:0 15px;font:inherit;font-size:13.5px;cursor:pointer}
-  .jb-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
-  .jb-row{display:grid;grid-template-columns:1fr;gap:8px}
-  @media(min-width:640px){.jb-row{grid-template-columns:2fr 1fr auto}}
-  .jb-row input[type=search],.jb-row select{width:100%;min-height:44px;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:0 11px;font:inherit;font-size:14px}
-  .jb-pay{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-size:14px;cursor:pointer;white-space:nowrap}
-  .jb-pay input{width:18px;height:18px;accent-color:var(--accent)}
-  .jb-count{font-size:12px;color:var(--g2);margin:8px 0 0}
-  .jb-list{list-style:none;margin:0 0 24px;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
-  .jb{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;padding:16px 18px;border-top:1px solid var(--line)}
+  /* faceted filter: same pattern as the Investor Map (sidebar on desktop, sheet on phones) */
+  .fx{position:relative;display:grid;grid-template-columns:230px minmax(0,1fr);grid-template-areas:"bar bar" "count count" "chips chips" "side list";column-gap:22px;margin:30px 0 0;scroll-margin-top:16px}
+  .fx-bar{grid-area:bar;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+  .fx-open{display:none}
+  .dt-q,.dt-sel{position:relative;display:block;min-width:0}
+  .dt-q svg{position:absolute;left:13px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--g2);pointer-events:none}
+  .dt-sel::after{content:"";position:absolute;right:14px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--g2);border-bottom:1.5px solid var(--g2);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+  .fx-bar input,.fx-bar select{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px;min-height:42px}
+  .fx-bar input{padding-left:38px}
+  .fx-bar select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fx-bar input:focus-visible,.fx-bar select:focus-visible,.fx-open:focus-visible,.dt-clear:focus-visible,.fx-more:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .dt-count{grid-area:count;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--g2);margin:8px 0 0}
+  .dt-count b{font-weight:600;color:var(--chalk)}
+  .dt-clear{border:0;background:none;padding:8px 0;margin:-8px 0;font:inherit;font-size:12px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+  .dt-clear:hover{color:var(--accent)}
+  .dt-clear[hidden]{display:none}
+  .fx-chips{grid-area:chips;list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+  .fx-chips:empty{display:none}
+  .fx-chips :global(button){display:inline-flex;align-items:center;gap:6px;min-height:30px;padding:0 10px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--chalk);border-radius:999px;font:inherit;font-size:12.5px;cursor:pointer}
+  .fx-chips :global(button::after){content:"×";font-size:15px;color:var(--g2)}
+  .fx-chips :global(button:hover){border-color:var(--accent)}
+  .fx-side{grid-area:side;align-self:start;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;margin-top:12px;padding-right:4px;scrollbar-width:thin}
+  .fx-side-head,.fx-veil,.fx-side-foot{display:none}
+  .fx-g{border-top:1px solid var(--line);padding:4px 0 8px}
+  .fx-g:first-child{border-top:0}
+  .fx-g summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;min-height:40px;font-size:13px;font-weight:700;color:var(--chalk);user-select:none}
+  .fx-g summary::-webkit-details-marker{display:none}
+  .fx-g summary::after{content:"";width:7px;height:7px;border-right:1.5px solid var(--g2);border-bottom:1.5px solid var(--g2);transform:rotate(45deg);margin-right:6px;transition:transform .15s}
+  .fx-g[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+  .fx-g>div{display:grid;gap:2px;padding-bottom:4px}
+  .fx-opt{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:9px;min-height:32px;padding:2px 4px;border-radius:8px;font-size:13px;color:var(--g1);cursor:pointer}
+  .fx-opt:hover{background:var(--panel)}
+  .fx-opt[hidden]{display:none}
+  .fx-opt input{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer}
+  .fx-opt span{display:flex;align-items:center;gap:7px;min-width:0;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .fx-opt i[data-n]{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--g3);min-width:2ch;text-align:right}
+  .fx-opt.is-zero{color:var(--g3)}
+  .fx-opt.is-zero i[data-n]{color:var(--g4)}
+  .fx-logo{width:18px;height:18px;border-radius:5px;object-fit:contain;background:#fff;flex:none}
+  .fx-mono{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:5px;font-style:normal;font-size:8.5px;font-weight:700;letter-spacing:.02em;color:#0b0f0c;background:hsl(var(--h) 45% 72%);flex:none}
+  .fx-more{border:0;background:none;padding:6px 4px;margin:2px 0 0;font:inherit;font-size:12.5px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer;justify-self:start}
+  .fx-more:hover{color:var(--accent)}
+  .ih-cta{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:15px;font-weight:600;text-decoration:none;border:0;font-family:inherit;cursor:pointer}
+  .jb-list{grid-area:list;list-style:none;margin:12px 0 24px;padding:0;border:1px solid var(--line);border-radius:14px;background:var(--panel);align-self:start}
+  .jb{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:16px;padding:16px 18px;border-top:1px solid var(--line)}
   .jb:first-child{border-top:0}
-  .jb[hidden],.jb-none[hidden]{display:none}
+  .jb[hidden]{display:none}
+  .jb-logo{width:44px;height:44px;border-radius:10px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center}
+  .jb-logo img{width:44px;height:44px;object-fit:contain;display:block}
+  .jb-mono{display:flex;width:44px;height:44px;align-items:center;justify-content:center;font-family:var(--display);font-size:18px;letter-spacing:.03em;color:#0b0f0c;background:hsl(var(--h) 45% 72%)}
+  .dt-none{margin:0;padding:28px 16px;text-align:center;font-size:14px;color:var(--g2);list-style:none}
+  .dt-none[hidden]{display:none}
+  .dt-none .dt-clear{font-size:14px;margin-left:6px}
+  .jb-meta b{font-weight:600;color:var(--chalk)}
+  .jb-meta span::before{content:"·";margin:0 7px;color:var(--g3)}
+  @media(max-width:899px){
+    .fx{grid-template-columns:1fr;grid-template-areas:"bar" "count" "chips" "list";margin-top:24px}
+    .fx-bar{grid-template-columns:1fr auto}
+    .dt-q{grid-column:1/-1}
+    .fx-sort{grid-column:1}
+    .fx-bar input,.fx-bar select{min-height:48px;padding-top:0;padding-bottom:0;font-size:16px}
+    .fx-open{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 16px;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;font:inherit;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+    .fx-open svg{width:18px;height:18px}
+    .fx-open b{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px}
+    .fx-open b[hidden]{display:none}
+    .dt-count{margin-top:10px;font-size:13px}
+    .fx-chips :global(button){min-height:36px}
+    .fx-side{position:fixed;inset:auto 0 0 0;z-index:60;max-height:88vh;margin:0;padding:0;border-radius:18px 18px 0 0;background:var(--ink);border-top:1px solid var(--line);box-shadow:0 -12px 40px rgba(0,0,0,.45);display:flex;flex-direction:column;transform:translateY(102%);transition:transform .22s ease;visibility:hidden}
+    .fx-side.is-open{transform:none;visibility:visible}
+    .fx-side-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px 10px;border-bottom:1px solid var(--line);font-size:16px}
+    .fx-x{border:0;background:var(--panel);color:var(--chalk);width:36px;height:36px;border-radius:999px;font-size:22px;line-height:1;cursor:pointer}
+    .fx-side-body{flex:1;overflow:auto;padding:4px 18px 8px;-webkit-overflow-scrolling:touch}
+    .fx-opt{min-height:44px;font-size:15px}
+    .fx-opt input{width:20px;height:20px}
+    .fx-g summary{min-height:46px;font-size:15px}
+    .fx-side-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 18px calc(12px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--ink)}
+    .fx-show{flex:1;min-height:48px}
+    .fx-veil{display:block;position:fixed;inset:0;z-index:59;background:rgba(0,0,0,.55)}
+    .fx-veil[hidden]{display:none}
+  }
+  @media(prefers-reduced-motion:reduce){.fx-side{transition:none}}
+  :global(body.fx-lock){overflow:hidden}
   .jb-payw{display:inline-flex;align-items:baseline;gap:6px}
   .jb-basis{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--g2)}
   .jb-t{font-size:16px;font-weight:700;line-height:1.3;margin:0;color:var(--chalk)}
@@ -215,47 +331,29 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
     .jh-stats b{font-size:34px}
   }
   @media(max-width:560px){
-    .jb{grid-template-columns:1fr;gap:8px}
-    .jb-side{flex-direction:row;align-items:center;text-align:left}
+    .jb{grid-template-columns:36px minmax(0,1fr);gap:8px 12px;padding:14px}
+    .jb-logo,.jb-logo img,.jb-mono{width:36px;height:36px}
+    .jb-mono{font-size:15px}
+    .jb-side{grid-column:2;flex-direction:row;align-items:center;text-align:left}
     .jb-payv{font-size:22px}
   }
 </style>
 
 <script>
-  const rows = Array.from(document.querySelectorAll<HTMLLIElement>('.jb'));
-  const q = document.querySelector<HTMLInputElement>('[data-q]');
-  const type = document.querySelector<HTMLSelectElement>('[data-type]');
-  const payOnly = document.querySelector<HTMLInputElement>('[data-pay]');
-  const count = document.querySelector('[data-count]');
-  const none = document.querySelector<HTMLElement>('[data-none]');
-  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.jb-chips button'));
-  const ALIAS: Record<string, string> = { munich: 'muenchen', 'münchen': 'muenchen', munchen: 'muenchen', cologne: 'koeln', 'köln': 'koeln', koln: 'koeln', 'frankfurt-am-main': 'frankfurt' };
-  let city = '';
-  function apply(write = true) {
-    const s = (q?.value || '').trim().toLowerCase();
-    let n = 0;
-    for (const r of rows) {
-      const ok = (!city || r.dataset.city === city) && (!type?.value || r.dataset.type === type.value) && (!payOnly?.checked || r.dataset.pay === '1') && (!s || (r.dataset.name || '').includes(s));
-      r.hidden = !ok; if (ok) n++;
-    }
-    if (count) count.textContent = String(n);
-    if (none) none.hidden = n > 0;
-    chips.forEach((c) => { const on = (c.dataset.city || '') === city; c.classList.toggle('on', on); c.setAttribute('aria-pressed', String(on)); });
-    if (write) {
-      const p = new URLSearchParams();
-      if (city) p.set('city', city); if (type?.value) p.set('type', type.value); if (payOnly?.checked) p.set('pay', '1'); if (s) p.set('q', s);
-      history.replaceState(null, '', location.pathname + (p.toString() ? `?${p}` : ''));
-    }
+  import { initFacets } from '../../../lib/facets';
+  const root = document.querySelector<HTMLElement>('[data-fx]');
+  if (root) {
+    // old city links used ?city=munich / köln etc.; map them onto the facet values
+    const ALIAS: Record<string, string> = { munich: 'muenchen', 'münchen': 'muenchen', munchen: 'muenchen', cologne: 'koeln', 'köln': 'koeln', koln: 'koeln', 'frankfurt-am-main': 'frankfurt' };
+    const u = new URLSearchParams(location.search); const c = u.get('city');
+    if (c && ALIAS[c.toLowerCase()]) { u.set('city', ALIAS[c.toLowerCase()]); history.replaceState(null, '', location.pathname + '?' + u); }
+    initFacets({
+      root, rowSelector: '.jb', defaultSort: 'default',
+      facets: [
+        { name: 'city', mode: 'one' }, { name: 'type', mode: 'one' }, { name: 'pay', mode: 'flag' }, { name: 'emp', mode: 'one' },
+        { name: 'posted', mode: 'many' }, { name: 'employer', mode: 'one' }, { name: 'src', mode: 'one' },
+      ],
+      sortKey: (el, k) => k === 'new' ? -Number(el.dataset.date || 0) : k === 'pay' ? -(Number(el.dataset.paym) || 0) : k === 'az' ? (el.dataset.az || '') : -(el.dataset.pay === '1' ? 1e9 : 0) - Number(el.dataset.date || 0),
+    });
   }
-  // read the filter state from the URL (?city=berlin, ?type=trainer, ?pay=1, ?q=…)
-  const u = new URLSearchParams(location.search);
-  const c = (u.get('city') || '').toLowerCase();
-  city = ALIAS[c] || c;
-  if (city && !chips.some((b) => b.dataset.city === city)) city = '';
-  if (type && u.get('type') && Array.from(type.options).some((o) => o.value === u.get('type'))) type.value = u.get('type')!;
-  if (payOnly && u.get('pay') === '1') payOnly.checked = true;
-  if (q && u.get('q')) q.value = u.get('q')!;
-  if (rows.length) apply(false);
-  chips.forEach((b) => b.addEventListener('click', () => { city = b.dataset.city || ''; apply(); }));
-  q?.addEventListener('input', () => apply()); type?.addEventListener('change', () => apply()); payOnly?.addEventListener('change', () => apply());
 </script>
