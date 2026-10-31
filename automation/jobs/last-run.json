@@ -1,16 +1,38 @@
 {
- "startedAt": "2026-10-31T10:01:42.223Z",
+ "startedAt": "2026-10-31T10:30:57.498Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
    "enabled": true,
    "fetched": 0,
-   "kept": 0
+   "kept": 0,
+   "diag": {
+    "tried": [
+     {
+      "url": "/pc/v6/jobs",
+      "keys": [
+       "ergebnisliste",
+       "maxErgebnisse",
+       "page",
+       "size",
+       "facetten"
+      ],
+      "maxErgebnisse": 62,
+      "items": 0,
+      "sample": null
+     },
+     {
+      "url": "/pc/v4/app/jobs",
+      "body": "null",
+      "sample": null
+     }
+    ]
+   }
   },
   "adzuna": {
    "enabled": true,
-   "fetched": 423,
-   "kept": 299
+   "fetched": 436,
+   "kept": 309
   },
   "career-page": {
    "enabled": true,
@@ -43,16 +65,16 @@
  },
  "hosts": {
   "rest.arbeitsagentur.de": {
-   "requests": 36,
-   "failures": 0,
-   "errors": []
+   "requests": 2,
+   "failures": 1,
+   "errors": [
+    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/app/jobs"
+   ]
   },
   "api.adzuna.com": {
    "requests": 14,
-   "failures": 1,
-   "errors": [
-    "HTTP 503 /v1/api/jobs/de/search/3"
-   ]
+   "failures": 0,
+   "errors": []
   },
   "api.ashbyhq.com": {
    "requests": 5,
@@ -521,7 +543,9 @@
    "errors": []
   }
  },
- "notes": [],
+ "notes": [
+  "Bundesagentur: no endpoint returned postings (/pc/v6/jobs: 0 items, keys ergebnisliste/maxErgebnisse/page/size/facetten; /pc/v4/app/jobs: ? items, keys )"
+ ],
  "discovery": {
   "tried": 0,
   "found": 0,
@@ -599,9 +623,9 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 300,
-  "unique": 198,
-  "withPay": 20
+  "fetchedAfterGate": 310,
+  "unique": 205,
+  "withPay": 22
  },
  "summary": {
   "live": 208,
@@ -609,8 +633,10 @@
   "withPay": 22,
   "newWithPay": 22,
   "hostsFailed": 3,
-  "sourcesFailed": []
+  "sourcesFailed": [
+   "ba"
+  ]
  },
- "finishedAt": "2026-10-31T10:06:17.387Z",
- "payLinesAppended": 5
+ "finishedAt": "2026-10-31T10:33:59.717Z",
+ "payLinesAppended": 0
 }
