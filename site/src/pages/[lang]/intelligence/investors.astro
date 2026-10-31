@@ -14,6 +14,7 @@ import { flagCode, countryName, COUNTRY_CODE } from '../../../lib/flags';
 import { investors, regionOf, TYPE_LABEL, TYPE_PLURAL, TYPE_HELP, STAGE_LABEL, FOCUS_LABEL, BAND_LABEL, STAGES, FOCUS, BANDS, type InvestorType } from '../../../lib/investors';
 import { generatedAt } from '../../../lib/deals';
 import { PITCH } from '../../../config/pitch';
+import { SUBSCRIBE } from '../../../config/subscribe';
 import { languages, type Lang } from '../../../i18n/ui';
 
 export function getStaticPaths() {
@@ -70,7 +71,7 @@ const T = de ? {
   mCat: 'Was baust du?', mStage: 'Phase', mCountry: 'Land', mAmount: 'Gesuchte Summe', mWant: 'Was suchst du?', mKeys: 'Stichworte (optional)', mKeysPh: 'z. B. Boutique-Studio, Recovery, Protein, Coaching-App',
   wants: { money: 'Investment', programme: 'Accelerator oder Programm', grant: 'Förderung oder Wettbewerb', buyer: 'Käufer / Exit' } as Record<string, string>,
   mBtn: 'Investoren finden', mReset: 'Zurücksetzen', mResults: 'Treffer', mTop: 'Deine Top 5', mScore: 'Match', mWhy: 'Warum',
-  mLockH: 'Die komplette Liste nach Anmeldung', mLockP: 'Sqwod Daily ist kostenlos. Nach der Bestätigung siehst du alle Treffer mit Score und Daten, auf diesem Gerät dauerhaft.', mLocked: 'weitere Treffer nach der Anmeldung',
+  mLockH: 'Die komplette Liste nach Anmeldung', mLockP: 'Sqwod Daily ist kostenlos. Nach der Bestätigung siehst du alle Treffer mit Score und Daten, auf diesem Gerät dauerhaft.', mLocked: 'weitere Treffer nach der Anmeldung', mUnlocked: 'Fast geschafft: bestätige die Mail in deinem Postfach. Deine komplette Liste ist auf diesem Gerät freigeschaltet.', mSignupErr: 'Die Anmeldung hat nicht geklappt. Bitte E-Mail prüfen und noch einmal versuchen.',
   mNone: 'Kein Investor passt zu dieser Kombination. Lockere Phase, Summe oder „Was suchst du?“.',
   pitchH: 'Oder füg deinen Pitch ein', pitchP: 'Zwei bis zehn Sätze reichen: was du baust, für wen, wo, wie weit du bist, was du suchst. Claude liest den Pitch gegen alle Einträge und begründet jede Empfehlung mit den Daten.', pitchPh: 'Wir bauen … für … in … Wir sind in Phase … und suchen …', pitchBtn: 'KI-Einschätzung holen', pitchLocked: 'Kostenlos nach Anmeldung', pitchSoon: 'Die KI-Einschätzung geht in Kürze live.', pitchWait: 'Pitch wird gelesen …', pitchErr: 'Das hat nicht geklappt. Bitte in einer Minute noch einmal versuchen.', pitchQuota: 'Fünf Einschätzungen pro Tag sind frei. Morgen wieder.', pitchShort: 'Bitte mindestens zwei Sätze.', aiRead: 'KI-Einschätzung', aiTop: 'Top 10 laut KI', aiNote: 'Modell: {m}. Jede Begründung steht neben den Daten, aus denen sie kommt. Prüf sie, bevor du schreibst.',
   ev: { stage: 'Phase', focus: 'Fokus', geo: 'Standort', check: 'Ticket', activity: 'Aktivität', portfolio: 'Portfolio', sameCountry: 'gleiches Land', sameRegion: 'gleiche Region', abroad: 'investiert auch außerhalb der Heimatregion', otherRegion: 'andere Region', unknown: 'keine Angabe', open: 'Aufruf offen', none: 'keine passende Phase', adjacent: 'angrenzende Phase', noFocus: 'kein Fokus-Treffer', fits: 'passt', near: 'nahe dran', off: 'außerhalb', last: 'zuletzt', inv12: 'Investments in 12 Monaten', tracker: 'im Deal Tracker' },
@@ -101,7 +102,7 @@ const T = de ? {
   mCat: 'What are you building?', mStage: 'Stage', mCountry: 'Country', mAmount: 'Amount you are raising', mWant: 'What do you want?', mKeys: 'Keywords (optional)', mKeysPh: 'e.g. boutique studio, recovery, protein, coaching app',
   wants: { money: 'Investment', programme: 'Accelerator or programme', grant: 'Grant or competition', buyer: 'Buyer / exit' } as Record<string, string>,
   mBtn: 'Find investors', mReset: 'Reset', mResults: 'matches', mTop: 'Your top 5', mScore: 'Match', mWhy: 'Why',
-  mLockH: 'The full list after sign-up', mLockP: 'Sqwod Daily is free. Once you confirm, every match with its score and data is unlocked on this device for good.', mLocked: 'more matches after sign-up',
+  mLockH: 'The full list after sign-up', mLockP: 'Sqwod Daily is free. Once you confirm, every match with its score and data is unlocked on this device for good.', mLocked: 'more matches after sign-up', mUnlocked: 'Almost there: confirm the email in your inbox. Your full list is unlocked on this device.', mSignupErr: 'The sign-up did not go through. Please check the email address and try again.',
   mNone: 'No investor fits this combination. Loosen the stage, the amount or “What do you want?”.',
   pitchH: 'Or paste your pitch', pitchP: 'Two to ten sentences are enough: what you build, for whom, where, how far you are, what you want. Claude reads the pitch against every entry and backs each pick with the data.', pitchPh: 'We build … for … in … We are at … stage and are raising …', pitchBtn: 'Get the AI read', pitchLocked: 'Free after sign-up', pitchSoon: 'The AI read goes live shortly.', pitchWait: 'Reading your pitch…', pitchErr: 'That did not work. Please try again in a minute.', pitchQuota: 'Five reads a day are free. Come back tomorrow.', pitchShort: 'Please write at least two sentences.', aiRead: 'AI read', aiTop: 'Top 10 by AI', aiNote: 'Model: {m}. Every reason sits next to the data it came from. Check it before you write.',
   ev: { stage: 'Stage', focus: 'Focus', geo: 'Location', check: 'Cheque', activity: 'Activity', portfolio: 'Portfolio', sameCountry: 'same country', sameRegion: 'same region', abroad: 'also invests outside its home region', otherRegion: 'other region', unknown: 'not stated', open: 'call open', none: 'no matching stage', adjacent: 'adjacent stage', noFocus: 'no focus match', fits: 'fits', near: 'close', off: 'outside', last: 'last', inv12: 'investments in 12 months', tracker: 'in the Deal Tracker' },
@@ -291,7 +292,7 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     <ul>{T.methodBody.map((l) => <li>{l}</li>)}</ul>
   </section>
   <script type="application/json" id="iv-data" set:html={JSON.stringify(data)} />
-  <script type="application/json" id="iv-i18n" set:html={JSON.stringify({ lang, pitch: { wait: T.pitchWait, err: T.pitchErr, quota: T.pitchQuota, short: T.pitchShort, locked: T.pitchLocked, btn: T.pitchBtn, aiRead: T.aiRead, aiTop: T.aiTop, aiNote: T.aiNote, top: T.mTop }, ev: T.ev, stage: STAGE_LABEL[lang], focus: FOCUS_LABEL[lang], type: TYPE_LABEL[lang], band: BAND_LABEL, region: REGIONS.map((r) => [r, rName(r)]), countries: Object.fromEntries(countries.map((c) => [c, countryName(c, lang)])), bands: BANDS.map((b) => [b[0], b[1] === Infinity ? null : b[1]]) })} />
+  <script type="application/json" id="iv-i18n" set:html={JSON.stringify({ lang, subscribe: SUBSCRIBE.endpoint, unlocked: T.mUnlocked, signupErr: T.mSignupErr, pitch: { wait: T.pitchWait, err: T.pitchErr, quota: T.pitchQuota, short: T.pitchShort, locked: T.pitchLocked, btn: T.pitchBtn, aiRead: T.aiRead, aiTop: T.aiTop, aiNote: T.aiNote, top: T.mTop }, ev: T.ev, stage: STAGE_LABEL[lang], focus: FOCUS_LABEL[lang], type: TYPE_LABEL[lang], band: BAND_LABEL, region: REGIONS.map((r) => [r, rName(r)]), countries: Object.fromEntries(countries.map((c) => [c, countryName(c, lang)])), bands: BANDS.map((b) => [b[0], b[1] === Infinity ? null : b[1]]) })} />
 </Base>
 
 <style>
@@ -388,6 +389,8 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   .mt-lock-n{margin:0 0 -16px;font-size:13px;color:var(--g2);text-align:center}
   .mt-lock-n b{color:var(--chalk)}
   .mt-lock :global(.isu){margin:0;border-color:var(--accent-line)}
+  .mt-lock :global(.mt-note){margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--accent-soft);border:1px solid var(--accent-line);font-size:13px;line-height:1.5;color:var(--chalk)}
+  .mt-lock :global(.mt-note.is-err){background:none;border-color:var(--down);color:var(--down)}
   .mt-none{margin:0;color:var(--g2);font-size:14px}
   .mt-none[hidden]{display:none}
   .mt-ai{margin:0;font-size:13px;color:var(--g2)}
@@ -730,7 +733,20 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   const UNLOCK = 'sqwod_investor_unlock';
   const unlocked = () => { try { return localStorage.getItem(UNLOCK) === '1'; } catch { return false; } };
   // the sign-up form posts and redirects; remember the unlock on this device before it leaves
-  document.querySelector<HTMLFormElement>('#matcher-signup form')?.addEventListener('submit', () => { try { localStorage.setItem(UNLOCK, '1'); } catch {} });
+  let lastRanked: { x: Row; s: number; why: Line[] }[] = []; let lastAi: Map<string, string> | undefined;
+  const signup = document.querySelector<HTMLFormElement>('#matcher-signup form');
+  signup?.addEventListener('submit', async (e) => {
+    // post in the background: the person keeps their results, the Worker still sends the confirmation mail
+    e.preventDefault();
+    const fd = new FormData(signup); const body: Record<string, string> = {}; fd.forEach((v, k) => (body[k] = String(v)));
+    const button = signup.querySelector<HTMLButtonElement>('button[type=submit]'); if (button) button.disabled = true;
+    let ok = false;
+    try { const r = await fetch(signup.action, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }); ok = r.ok; } catch {}
+    if (button) button.disabled = false;
+    const note = document.createElement('p'); note.className = 'mt-note' + (ok ? '' : ' is-err'); note.textContent = ok ? I.unlocked : I.signupErr;
+    signup.parentElement?.querySelector('.mt-note')?.remove(); signup.parentElement?.append(note);
+    if (ok) { try { localStorage.setItem(UNLOCK, '1'); } catch {} setTimeout(() => render(lastRanked, lastAi), 900); }
+  });
   const summaryEl = document.querySelector<HTMLElement>('[data-mt-summary]')!;
   const aiNoteEl = document.querySelector<HTMLElement>('[data-mt-ainote]')!;
   const topEl = document.querySelector<HTMLElement>('[data-mt-top]')!;
@@ -747,6 +763,7 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   }
   /** Draw a ranked list; ai: per-id reason from the pitch read (shown above the evidence lines). */
   function render(ranked: { x: Row; s: number; why: Line[] }[], ai?: Map<string, string>) {
+    lastRanked = ranked; lastAi = ai;
     const free = unlocked() || ai ? ranked.length : 5;
     ol.replaceChildren(...ranked.slice(0, unlocked() ? ranked.length : 8).map((m, k) => {
       const li = document.createElement('li'); li.className = 'mr' + (k >= free ? ' is-locked' : ''); if (k >= free) li.setAttribute('aria-hidden', 'true');
@@ -782,17 +799,17 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     const msg = document.querySelector<HTMLElement>('[data-pitch-msg]')!; const cnt = document.querySelector<HTMLElement>('[data-pitch-count]')!;
     const opened = Date.now();
     const say = (t: string, err = false) => { msg.textContent = t; msg.classList.toggle('is-err', err); };
-    const refresh = () => { cnt.textContent = String(ta.value.length); btn.textContent = unlocked() ? I.pitch.btn : I.pitch.locked; };
+    const PITCH_KEY = 'sqwod_pitch_text';
+    try { const saved = sessionStorage.getItem(PITCH_KEY); if (saved && !ta.value) ta.value = saved; } catch {}
+    const refresh = () => { cnt.textContent = String(ta.value.length); btn.textContent = I.pitch.btn; try { sessionStorage.setItem(PITCH_KEY, ta.value); } catch {} };
     ta.addEventListener('input', refresh); refresh();
-    document.querySelectorAll<HTMLFormElement>('#investors-signup form, #matcher-signup form').forEach((f) => f.addEventListener('submit', () => { try { localStorage.setItem(UNLOCK, '1'); } catch {} }));
     btn.addEventListener('click', async () => {
-      if (!unlocked()) { document.getElementById('investors-signup')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
       const text = ta.value.trim(); if (text.length < 40) { say(I.pitch.short, true); return; }
       btn.disabled = true; say(I.pitch.wait);
       try {
         const r = await fetch(box.dataset.endpoint!, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ pitch: text, lang: I.lang, ts: opened }) });
         const j = await r.json().catch(() => ({}));
-        if (!r.ok) { say(j.error === 'quota' ? I.pitch.quota : I.pitch.err, true); return; }
+        if (!r.ok) { say(j.error === 'quota' ? I.pitch.quota : `${I.pitch.err} (${[j.error, j.status, j.detail].filter(Boolean).join(' · ')})`, true); return; }
         const byId = new Map(DATA.map((x) => [x.id, x]));
         const ai = new Map<string, string>((j.matches || []).map((m: any) => [m.id, m.why]));
         // rule-based evidence for each pick, scored with whatever the form holds (or neutral inputs)
