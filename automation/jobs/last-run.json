@@ -1,11 +1,11 @@
 {
- "startedAt": "2026-10-31T11:27:35.433Z",
+ "startedAt": "2026-10-31T12:16:59.333Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
    "enabled": true,
    "fetched": 233,
-   "kept": 195,
+   "kept": 180,
    "diag": {
     "tried": [
      {
@@ -203,20 +203,20 @@
       "referenznummer"
      ],
      "samples": [
-      "GEHALTSSPANNE",
-      "GEHALTSSPANNE",
-      "GEHALTSSPANNE",
-      "GEHALTSSPANNE",
-      "GEHALTSSPANNE",
-      "FESTGEHALT"
+      "26.000 € – 34.000 € / Jahr (Arbeitsagentur)",
+      "36.000 € – 45.000 € / Jahr (Arbeitsagentur)",
+      "17 € – 18 € / Std. (Arbeitsagentur)",
+      "65.000 € – 80.000 € / Jahr (Arbeitsagentur)",
+      "18,5 € – 20,5 € / Std. (Arbeitsagentur)",
+      "15,33 € / Std. (Arbeitsagentur)"
      ]
     }
    }
   },
   "adzuna": {
    "enabled": true,
-   "fetched": 436,
-   "kept": 309
+   "fetched": 435,
+   "kept": 308
   },
   "career-page": {
    "enabled": true,
@@ -634,10 +634,8 @@
   },
   "fitx.de": {
    "requests": 1,
-   "failures": 1,
-   "errors": [
-    "timeout"
-   ]
+   "failures": 0,
+   "errors": []
   },
   "clever-fit.com": {
    "requests": 1,
@@ -727,7 +725,9 @@
    "errors": []
   }
  },
- "notes": [],
+ "notes": [
+  "7 stored roles failed the on-topic gate and were taken off the page."
+ ],
  "discovery": {
   "tried": 0,
   "found": 0,
@@ -805,18 +805,18 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 505,
-  "unique": 283,
-  "withPay": 27
+  "fetchedAfterGate": 489,
+  "unique": 276,
+  "withPay": 25
  },
  "summary": {
-  "live": 286,
-  "newThisWeek": 286,
-  "withPay": 27,
-  "newWithPay": 27,
-  "hostsFailed": 4,
+  "live": 279,
+  "newThisWeek": 279,
+  "withPay": 25,
+  "newWithPay": 25,
+  "hostsFailed": 3,
   "sourcesFailed": []
  },
- "finishedAt": "2026-10-31T11:31:13.534Z",
- "payLinesAppended": 5
+ "finishedAt": "2026-10-31T12:20:36.733Z",
+ "payLinesAppended": 0
 }
