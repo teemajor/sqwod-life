@@ -1,0 +1,25 @@
+name: Deploy Cloudflare Worker (investor-pitch)
+
+# Ships infrastructure/investor-pitch/worker.js to Cloudflare on push. Secrets
+# (ANTHROPIC_API_KEY) was set once with `wrangler secret put` and
+# stay on the Worker; this only pushes the code and the public [vars].
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'infrastructure/investor-pitch/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy investor-pitch worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: infrastructure/investor-pitch
+          command: deploy
