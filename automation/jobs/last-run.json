@@ -1,5 +1,5 @@
 {
- "startedAt": "2026-10-31T12:16:59.333Z",
+ "startedAt": "2026-10-31T13:30:28.122Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
@@ -347,10 +347,8 @@
   },
   "myequilibria.com": {
    "requests": 1,
-   "failures": 1,
-   "errors": [
-    "HTTP 404 /careers"
-   ]
+   "failures": 0,
+   "errors": []
   },
   "boards-api.greenhouse.io": {
    "requests": 29,
@@ -470,8 +468,9 @@
   },
   "api.lever.co": {
    "requests": 8,
-   "failures": 1,
+   "failures": 2,
    "errors": [
+    "timeout",
     "HTTP 404 /v0/postings/interaxon"
    ]
   },
@@ -725,9 +724,7 @@
    "errors": []
   }
  },
- "notes": [
-  "7 stored roles failed the on-topic gate and were taken off the page."
- ],
+ "notes": [],
  "discovery": {
   "tried": 0,
   "found": 0,
@@ -814,9 +811,9 @@
   "newThisWeek": 279,
   "withPay": 25,
   "newWithPay": 25,
-  "hostsFailed": 3,
+  "hostsFailed": 2,
   "sourcesFailed": []
  },
- "finishedAt": "2026-10-31T12:20:36.733Z",
+ "finishedAt": "2026-10-31T13:34:13.709Z",
  "payLinesAppended": 0
 }

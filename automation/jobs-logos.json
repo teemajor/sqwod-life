@@ -1,0 +1,775 @@
+{
+ "_doc": "Written by automation/jobs-logos.mjs. key → { file, domain, short, fetchedAt }. Delete a row to refetch it.",
+ "logos": {
+  "fitx": {
+   "file": "fitx.png",
+   "domain": "fitx.de",
+   "short": "FitX",
+   "tried": "fitx.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "kieser-training": {
+   "file": "kieser-training.png",
+   "domain": "kieser-training.de",
+   "short": "Kieser Training",
+   "tried": "kieser-training.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "sona-positive-health": {
+   "file": null,
+   "domain": "sona.health",
+   "short": "Sona",
+   "tried": "sona.health",
+   "fetchedAt": "2026-10-31"
+  },
+  "fkw-krafttraining": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "bfi-clubs": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "sg-stern": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "aida-cruises-german-branch-of-costa-crociere-s-p-a": {
+   "file": "aida-cruises-german-branch-of-costa-crociere-s-p-a.png",
+   "domain": "aida.de",
+   "short": "AIDA Cruises",
+   "tried": "aida.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "carasana-baderbetriebe": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "creating-healthy-places": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "faminfit": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "fitnessking": {
+   "file": "fitnessking.png",
+   "domain": "fitnessking.de",
+   "short": "FitnessKing",
+   "tried": "fitnessking.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "fitseveneleven": {
+   "file": null,
+   "domain": "fitseveneleven.de",
+   "short": "FITSEVENELEVEN",
+   "tried": "fitseveneleven.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "injoy": {
+   "file": "injoy.png",
+   "domain": "injoy.de",
+   "short": "INJOY",
+   "tried": "injoy.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "primus": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "mr-management-easyfitness-neuburg-meitingen": {
+   "file": "mr-management-easyfitness-neuburg-meitingen.png",
+   "domain": "easyfitness.club",
+   "short": "EasyFitness",
+   "tried": "easyfitness.club",
+   "fetchedAt": "2026-10-31"
+  },
+  "mm": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "kraftwerk": {
+   "file": "kraftwerk.png",
+   "domain": "kraftwerk-fitness.de",
+   "short": "KRAFTWERK",
+   "tried": "kraftwerk-fitness.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "viva-fitness": {
+   "file": null,
+   "domain": "viva-fitness.de",
+   "short": "Viva Fitness",
+   "tried": "viva-fitness.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "xtrafit-service": {
+   "file": "xtrafit-service.png",
+   "domain": "xtrafit.de",
+   "short": "XTRAFIT",
+   "tried": "xtrafit.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "nxtgen-athlete": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "injoy-gym-and-swim": {
+   "file": "injoy-gym-and-swim.png",
+   "domain": "injoy.de",
+   "short": "INJOY",
+   "tried": "injoy.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "mcfit-rsg-group": {
+   "file": "mcfit-rsg-group.png",
+   "domain": "mcfit.com",
+   "short": "McFIT",
+   "tried": "mcfit.com",
+   "fetchedAt": "2026-10-31"
+  },
+  "therapiezentrum-wedel": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "john-reed-fitness-rsg-group": {
+   "file": "john-reed-fitness-rsg-group.png",
+   "domain": "johnreed.fitness",
+   "short": "JOHN REED Fitness",
+   "tried": "johnreed.fitness",
+   "fetchedAt": "2026-10-31"
+  },
+  "topfit-fitness-und-freizeitanlagen": {
+   "file": "topfit-fitness-und-freizeitanlagen.png",
+   "domain": "topfit.de",
+   "short": "TopFit",
+   "tried": "topfit.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "a-i-fitness": {
+   "file": "a-i-fitness.png",
+   "domain": "ai-fitness.de",
+   "short": "A.I. Fitness",
+   "tried": "ai-fitness.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "gold-s-gym-rsg-group": {
+   "file": null,
+   "domain": "goldsgym.de",
+   "short": "Gold's Gym",
+   "tried": "goldsgym.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "ja-sport": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "fast-fitness-brands": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "angerhof-sport-und-wellnesshotel": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "recrutio": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "david-lloyd-leisure": {
+   "file": "david-lloyd-leisure.png",
+   "domain": "davidlloyd.de",
+   "short": "David Lloyd",
+   "tried": "davidlloyd.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "sea-chefs-human-resources-services": {
+   "file": "sea-chefs-human-resources-services.png",
+   "domain": "seachefs.com",
+   "short": "sea chefs",
+   "tried": "seachefs.com",
+   "fetchedAt": "2026-10-31"
+  },
+  "martins-rojas": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "medaix": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "bodyloft-rottweil": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "sanogym": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "alter-meierhof": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "team-einhorn": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "ritter-von-kempski-services": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "body-soul": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "basic-fit": {
+   "file": "basic-fit.png",
+   "domain": "basic-fit.com",
+   "short": "Basic-Fit",
+   "tried": "basic-fit.com",
+   "fetchedAt": "2026-10-31"
+  },
+  "fitness-first": {
+   "file": "fitness-first.png",
+   "domain": "fitnessfirst.de",
+   "short": "Fitness First",
+   "tried": "fitnessfirst.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "biogena-group": {
+   "file": "biogena-group.png",
+   "domain": "biogena.com",
+   "short": "Biogena",
+   "tried": "biogena.com",
+   "fetchedAt": "2026-10-31"
+  },
+  "sunpoint": {
+   "file": null,
+   "domain": "sunpoint.de",
+   "short": "SUNPOINT",
+   "tried": "sunpoint.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "job-find-4-you-personalmanagement": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "skyller-sports-hildesheim": {
+   "file": null,
+   "domain": "skyller-sports.de",
+   "short": "Skyller Sports",
+   "tried": "skyller-sports.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "skyller-sports-burgdorf": {
+   "file": null,
+   "domain": "skyller-sports.de",
+   "short": "Skyller Sports",
+   "tried": "skyller-sports.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "skyller-sports": {
+   "file": null,
+   "domain": "skyller-sports.de",
+   "short": "Skyller Sports",
+   "tried": "skyller-sports.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "skyller-sports-garbsen": {
+   "file": null,
+   "domain": "skyller-sports.de",
+   "short": "Skyller Sports",
+   "tried": "skyller-sports.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "skyller-sports-neustadt": {
+   "file": null,
+   "domain": "skyller-sports.de",
+   "short": "Skyller Sports",
+   "tried": "skyller-sports.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "skyller-sports-langenhagen": {
+   "file": null,
+   "domain": "skyller-sports.de",
+   "short": "Skyller Sports",
+   "tried": "skyller-sports.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "lernstudio-barbarossa-megakids-fortbildungs": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "adk-fur-gesundheit-und-soziales": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "somana": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "aktiv-gesund": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "a-ja-travemunde": {
+   "file": null,
+   "domain": "a-ja.de",
+   "short": "a-ja Resort",
+   "tried": "a-ja.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "kohler-greco": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "das-achental": {
+   "file": "das-achental.png",
+   "domain": "das-achental.com",
+   "short": "Das Achental",
+   "tried": "das-achental.com",
+   "fetchedAt": "2026-10-31"
+  },
+  "fitness-zirkel": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "deutsche-sportakademie": {
+   "file": null,
+   "domain": "deutsche-sportakademie.de",
+   "short": "Deutsche Sportakademie",
+   "tried": "deutsche-sportakademie.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "a-rosa-travemunde": {
+   "file": "a-rosa-travemunde.png",
+   "domain": "a-rosa.de",
+   "short": "A-ROSA",
+   "tried": "a-rosa.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "karate-fachsportschule": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "meda-sportakademie": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "azubi-scout-net": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "wiesbaden": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "bochum": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "michael-page": {
+   "file": "michael-page.png",
+   "domain": "michaelpage.de",
+   "short": "Michael Page",
+   "tried": "michaelpage.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "urban-sports-club": {
+   "file": "urban-sports-club.png",
+   "domain": "urbansportsclub.com",
+   "short": "Urban Sports Club",
+   "tried": "urbansportsclub.com",
+   "fetchedAt": "2026-10-31"
+  },
+  "injoy-sports-an-d-wellnessclubs": {
+   "file": "injoy-sports-an-d-wellnessclubs.png",
+   "domain": "injoy.de",
+   "short": "INJOY",
+   "tried": "injoy.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "jurcevic-ivan-impuls-fitnessstudio": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "easyfitness": {
+   "file": "easyfitness.png",
+   "domain": "easyfitness.club",
+   "short": "EasyFitness",
+   "tried": "easyfitness.club",
+   "fetchedAt": "2026-10-31"
+  },
+  "mk-health-fitness-center": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "naturresort-spa-schindelbruch": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "injoy-quality": {
+   "file": "injoy-quality.png",
+   "domain": "injoy.de",
+   "short": "INJOY",
+   "tried": "injoy.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "st-augustinus-kliniken": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "hafner-thomas": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "sports-spa-sudstadt": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "integion": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "physioaktiv-hehner": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "aktivita": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "aqualaatzium-freizeit": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "sportverein-halle": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "elztalhotel": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "impuls-fitness-und-sportclub": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "aquamagis-plettenberg": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "amkare-ambulantes-kardiolog-rehabilitationszentrum-koln-reha": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "awo-bezirksverband-unterfranken": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "sporttreff": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "diakonie-michaelshoven": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "pure-medical-fitness-am-kelternplatz": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "rehazentrum-am-kelternplatz": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "albthermen-betriebsges": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "exowork-solution": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "maya-mare": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "wichernhaus-wuppertal": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "rd-sport-ronny-diana-schulz": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "family-fitness-inh-peter-dimmer": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "vinys-sports": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "aquasport-wasserwelten-h-b": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "fitshop": {
+   "file": null,
+   "domain": "fitshop.de",
+   "short": "Fitshop",
+   "tried": "fitshop.de",
+   "fetchedAt": "2026-10-31"
+  },
+  "fitness-korbach-quartier": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "fitness-herum-galerie": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "mootz-spang-und-wagner": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "fab-freizeitanlagen-betriebs": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "r-p-ges-f-rehabilitation-u-physiotherapie": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "gesundheitszentrum-reinecke": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "mbf-michels-bildungsforum-fur-gesundheitsberufe": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "akut-medizinische-personallogistik": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  },
+  "intense-activities": {
+   "file": null,
+   "domain": null,
+   "short": null,
+   "tried": null,
+   "fetchedAt": "2026-10-31"
+  }
+ }
+}
