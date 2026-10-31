@@ -1,5 +1,5 @@
 {
- "startedAt": "2026-10-31T11:04:18.491Z",
+ "startedAt": "2026-10-31T11:27:35.433Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
@@ -158,6 +158,58 @@
      "KEINE_ANGABEN": 209,
      "JAHRESGEHALT": 10,
      "STUNDENLOHN": 14
+    },
+    "detail": {
+     "wanted": 12,
+     "fetched": 12,
+     "withFigure": 12,
+     "textOnly": 0,
+     "failed": 0,
+     "path": "/pc/v4/jobdetails/",
+     "sampleKeys": [
+      "stellenangebotsart",
+      "stellenangebotsTitel",
+      "quereinstiegGeeignet",
+      "stellenangebotsBeschreibung",
+      "arbeitszeitSchichtNachtWochenende",
+      "arbeitszeitTeilzeitAbend",
+      "arbeitszeitTeilzeitNachmittag",
+      "arbeitszeitTeilzeitVormittag",
+      "arbeitszeitTeilzeitFlexibel",
+      "arbeitszeitVollzeit",
+      "eintrittszeitraum",
+      "verguetungsangabe",
+      "artDerVerguetung",
+      "gehaltsspanneVon",
+      "gehaltsspanneBis",
+      "vertragsdauer",
+      "istGeringfuegigeBeschaeftigung",
+      "istBehinderungGefordert",
+      "stellenlokationen",
+      "homeofficemoeglich",
+      "istPrivateArbeitsvermittlung",
+      "istArbeitnehmerUeberlassung",
+      "veroeffentlichungszeitraum",
+      "datumErsteVeroeffentlichung",
+      "aenderungsdatum",
+      "externeURL",
+      "istBetreut",
+      "hauptberuf",
+      "alternativBeruf1",
+      "alternativBeruf2",
+      "firma",
+      "allianzpartnerUrl",
+      "allianzpartnerName",
+      "referenznummer"
+     ],
+     "samples": [
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "GEHALTSSPANNE",
+      "FESTGEHALT"
+     ]
     }
    }
   },
@@ -197,7 +249,7 @@
  },
  "hosts": {
   "rest.arbeitsagentur.de": {
-   "requests": 38,
+   "requests": 50,
    "failures": 0,
    "errors": []
   },
@@ -295,8 +347,10 @@
   },
   "myequilibria.com": {
    "requests": 1,
-   "failures": 0,
-   "errors": []
+   "failures": 1,
+   "errors": [
+    "HTTP 404 /careers"
+   ]
   },
   "boards-api.greenhouse.io": {
    "requests": 29,
@@ -580,8 +634,10 @@
   },
   "fitx.de": {
    "requests": 1,
-   "failures": 0,
-   "errors": []
+   "failures": 1,
+   "errors": [
+    "timeout"
+   ]
   },
   "clever-fit.com": {
    "requests": 1,
@@ -751,16 +807,16 @@
  "found": {
   "fetchedAfterGate": 505,
   "unique": 283,
-  "withPay": 22
+  "withPay": 27
  },
  "summary": {
   "live": 286,
   "newThisWeek": 286,
-  "withPay": 22,
-  "newWithPay": 22,
-  "hostsFailed": 2,
+  "withPay": 27,
+  "newWithPay": 27,
+  "hostsFailed": 4,
   "sourcesFailed": []
  },
- "finishedAt": "2026-10-31T11:08:06.365Z",
- "payLinesAppended": 0
+ "finishedAt": "2026-10-31T11:31:13.534Z",
+ "payLinesAppended": 5
 }
