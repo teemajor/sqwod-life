@@ -6,6 +6,10 @@ import Base from '../../../layouts/Base.astro';
 import { ogPath } from '../../../lib/og';
 import DataChart from '../../../components/DataChart.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
+import DealGlyphs from '../../../components/DealGlyphs.astro';
+import DealIcon from '../../../components/DealIcon.astro';
+import Flag from '../../../components/Flag.astro';
+import { flagCode, countryName } from '../../../lib/flags';
 import { languages, type Lang } from '../../../i18n/ui';
 import { liveAll, generatedAt } from '../../../lib/deals';
 
@@ -70,6 +74,10 @@ const T = de ? {
 const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten', 'Latin America': 'Lateinamerika', Other: 'Sonstige' };
 const CAT_DE: Record<string, string> = { 'Gyms & studios': 'Studios & Clubs', 'Wearables & devices': 'Wearables & Geräte', 'Health & longevity': 'Health & Longevity', 'Nutrition & supplements': 'Ernährung & Supplements', 'Software & AI': 'Software & KI', 'Apparel & footwear': 'Bekleidung & Schuhe', Other: 'Sonstige' };
 const rName = (r: string) => (de ? REGION_DE[r] || r : r);
+const where = (d: { country?: string; region: string }) => (d.country ? countryName(d.country, lang) : rName(d.region));
+// flags on the region chips; Asia-Pacific and Middle East have no single flag and get none
+const REGION_FLAGS: Record<string, string[]> = { 'europe-all': ['eu'], DACH: ['de', 'at', 'ch'], UK: ['gb'], Europe: ['eu'], 'North America': ['us', 'ca'] };
+const flagCodes = [...new Set([...all.map((d) => flagCode(d.country)), ...Object.values(REGION_FLAGS).flat()])].filter(Boolean);
 const cName = (c: string) => (de ? CAT_DE[c] || c : c);
 const loc = de ? 'de-DE' : 'en-GB';
 const fmtDate = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { day: '2-digit', month: 'short', year: 'numeric' });
@@ -116,6 +124,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
     <>
       <!-- Hero (design "D", Oct 2026). Never add a chart of deal value by month up here:
            one big month next to a quiet one reads as "the money is drying up". -->
+      <DealGlyphs flags={flagCodes} />
       <section class="dh">
         <div class="dh-l">
           <p class="kick dh-crumb"><a href={`/${lang}/intelligence`}>Sqwod Intelligence</a> / Deal Tracker</p>
@@ -139,7 +148,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
             {latest6.map((d) => (
               <li>
                 <span class="dh-date">{dayMonth(d.date)}</span>
-                <span class="dh-who"><b>{d.entity}</b><small>{T.kinds[d.kind] || d.kind} · {cName(d.category)}</small></span>
+                <span class="dh-who"><b>{d.entity}</b><small><DealIcon kind={d.kind} />{T.kinds[d.kind] || d.kind} · <Flag country={d.country} />{where(d)} · {cName(d.category)}</small></span>
                 {d.amount
                   ? <span class={`dnum dh-amt${d.kind === 'raise' ? ' dh-acc' : ''}`}>{d.amount}</span>
                   : <span class="dh-und">{T.undisclosed}</span>}
@@ -157,8 +166,8 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
       <section class="dt-filters" id="all-deals" aria-label={T.region}>
         <div class="dt-chips" role="group" aria-label={T.region}>
           <button type="button" class="on" data-region="" aria-pressed="true">{T.all}</button>
-          <button type="button" data-region="europe-all" aria-pressed="false">{T.eu}</button>
-          {regions.map((r) => <button type="button" data-region={r} aria-pressed="false">{rName(r)}</button>)}
+          <button type="button" data-region="europe-all" aria-pressed="false">{REGION_FLAGS['europe-all'].map((c) => <Flag code={c} />)}{T.eu}</button>
+          {regions.map((r) => <button type="button" data-region={r} aria-pressed="false">{(REGION_FLAGS[r] || []).map((c) => <Flag code={c} />)}{rName(r)}</button>)}
         </div>
         <div class="dt-row">
           <label class="dt-q">
@@ -181,9 +190,9 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
               <tr role="row" data-region={d.region} data-kind={d.kind} data-cat={d.category} data-name={`${d.entity} ${d.note}`.toLowerCase()}>
                 <td class="dt-date" role="cell">{fmtDate(d.date)}</td>
                 <td class="dt-who" role="cell"><b>{d.entity}</b><span class="dt-note">{de && d.noteDe ? d.noteDe : d.note}</span></td>
-                <td class="dt-kind" role="cell">{T.kinds[d.kind] || d.kind}</td>
+                <td class="dt-kind" role="cell"><DealIcon kind={d.kind} />{T.kinds[d.kind] || d.kind}</td>
                 <td class="dt-amt" role="cell">{d.amount ? <>{d.amount}{d.amountUsd && d.currency !== 'USD' ? <span class="dt-note">≈ {usd(d.amountUsd)}</span> : null}</> : <span class="dt-muted">{T.undisclosed}</span>}</td>
-                <td class="dt-where" role="cell">{d.country || rName(d.region)}</td>
+                <td class="dt-where" role="cell"><Flag country={d.country} />{where(d)}</td>
                 <td class="dt-cat" role="cell">{cName(d.category)}</td>
                 <td class="dt-src" role="cell">{d.url ? <a href={d.url} rel="nofollow noopener" target="_blank">{T.source} ↗</a> : null}{d.issue && isLiveIssue('published', d.issue.slice(-10)) ? <>{' '}<a href={d.issue.replace('/en/', `/${lang}/`)}>{T.daily}</a></> : null}</td>
               </tr>
@@ -239,7 +248,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   .dh-date{font-size:13px;color:var(--g2);white-space:nowrap}
   .dh-who{min-width:0}
   .dh-who b{display:block;font-size:15px;color:var(--chalk);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .dh-who small{display:block;font-size:12px;color:var(--g2);margin-top:2px}
+  .dh-who small{display:block;font-size:12px;color:var(--g2);margin-top:2px;line-height:1.4}
   .dh-amt{font-size:24px;color:var(--chalk);white-space:nowrap;text-align:right}
   .dh-amt.dh-acc{color:var(--accent)}
   .dh-und{font-size:12px;color:var(--g2);text-align:right}
@@ -267,7 +276,12 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   }
   .dt-filters{margin:26px 0 10px}
   .dt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
-  .dt-chips button{border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
+  .dt-chips button{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
+  .dt-chips button :global(.fl){margin-right:3px}
+  .dt-chips button :global(.fl:last-of-type){margin-right:7px}
+  .dt-chips button.on :global(.fl){border-color:rgba(0,0,0,.25)}
+  .dh-who small :global(.fl){width:14px;height:10px;margin-right:4px}
+  .dh-who small :global(.di){width:12px;height:12px;margin-right:3px}
   .dt-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
   .dt-row{display:grid;grid-template-columns:1fr;gap:8px}
   @media(min-width:640px){.dt-row{grid-template-columns:2fr 1fr 1fr}}

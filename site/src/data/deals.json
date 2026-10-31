@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30",
+  "generatedAt": "2026-10-31",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -43,8 +43,8 @@
       "country": "United States",
       "noteDe": "Ozlo schloss eine 22-Mio.-USD-Series-B-Runde ab, um Schlaftechnologie auszubauen und Tinnitus sowie Epilepsie anzugehen.",
       "checked": "high",
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-10-30",
@@ -71,8 +71,8 @@
       "country": "France",
       "noteDe": "Providence Equity Partners vereinbarte die Übernahme der Fitness Park Group und stärkt sein europäisches Fitnessstudio-Portfolio.",
       "checked": "high",
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-10-29",
@@ -142,7 +142,7 @@
       "url": "https://techcrunch.com/2026/10/22/nirva-raises-33m-for-a-pendant-that-only-listens-to-you/",
       "source": "TechCrunch",
       "issue": "/en/daily/2026-10-23",
-      "region": "Other",
+      "region": "North America",
       "category": "Wearables & devices",
       "id": "nirva-raise-2026-10",
       "reports": [
@@ -153,6 +153,7 @@
         }
       ],
       "noteDe": "25 Mio. $ Pre-Series-A (insgesamt 33 Mio. $) für einen KI-Anhänger als Wearable",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -168,7 +169,7 @@
       "url": "https://insider.fitt.co/wilde-lands-40m-to-scale-protein-snacks/",
       "source": "Fitt Insider",
       "issue": "/en/daily/2026-10-23",
-      "region": "Other",
+      "region": "North America",
       "category": "Nutrition & supplements",
       "id": "wilde-raise-2026-10",
       "reports": [
@@ -178,6 +179,7 @@
           "issue": "/en/daily/2026-10-23"
         }
       ],
+      "country": "United States",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -193,7 +195,7 @@
       "url": "https://femtechinsider.com/unravel-health-raises-2-5m-to-launch-at-home-saliva-hormone-test/",
       "source": "Femtech Insider",
       "issue": "/en/daily/2026-10-21",
-      "region": "Other",
+      "region": "UK",
       "category": "Health & longevity",
       "id": "unravel-raise-2026-10",
       "reports": [
@@ -204,6 +206,7 @@
         }
       ],
       "noteDe": "2,5 Mio. £ unter Führung von Conduit EIS Impact Fund und Wrightwood für Micro Lab, einen Hormontest per Speichelprobe für zu Hause",
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -234,6 +237,7 @@
           "issue": "/en/daily/2026-10-26"
         }
       ],
+      "country": "Switzerland",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -259,6 +263,7 @@
           "issue": "/en/daily/2026-10-19"
         }
       ],
+      "country": "Netherlands",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -309,6 +314,7 @@
           "issue": "/en/daily/2026-10-14"
         }
       ],
+      "country": "India",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -324,7 +330,7 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOTV2T3N5MWJaYkNvLV81Szhwck1nUEFjZllES2dwbGpZRUVXdXR0RlhoZ29CRE9QbFk2ODNSaUFLd3M1M3ZLTFUyTWpHWUFiYkdLeG9ta2J1aDJSSVFhRjl0OVR0X0t0VW9aQS1xdllIZWFXd3lwZ2dtMFYycVFuUWdMVmNjU2p4ek1zb2pyTzY5a2dSUERrbWtyc09IR0IxMzZucjNETnRvOXladGc?oc=5",
       "source": "Tech Funding News",
       "issue": "/en/daily/2026-10-14",
-      "region": "Other",
+      "region": "UK",
       "category": "Health & longevity",
       "id": "stride-raise-2026-10",
       "reports": [
@@ -334,6 +340,7 @@
           "issue": "/en/daily/2026-10-14"
         }
       ],
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -349,7 +356,7 @@
       "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPTEg1Yk5hT0JTYjlWbENkN0tzNl9BZjIxUjZ0V3NvaS1NcnF5Qk52QUd5VG1IMXo0bVh4NWJHSng0dzhkU1FoclNENFpiN1JHNUtOSnlqQ00xbW0wYjVBMUttYjlpdzVqclF1TC1nbV8ySjdMVno1X1d2eWRsODlSSkZ5VVE2U3hRY2hrS0h4a2xFN2pjaWNMaElma3dpRmppbGxZWkU3RXo4RTZESlVYanYyZmZROEx2Y2R5d3AyUE9NYTIyZlA3cktYdnJMcTcyUFFqQkRpSWNTdTh1cGJlQmloRzFCS0dXQ1A4NTRodUdwLVpn?oc=5",
       "source": "Kalkine India",
       "issue": "/en/daily/2026-10-13",
-      "region": "Other",
+      "region": "Asia-Pacific",
       "category": "Other",
       "id": "macobs-acquisition-2026-10",
       "reports": [
@@ -359,6 +366,7 @@
           "issue": "/en/daily/2026-10-13"
         }
       ],
+      "country": "India",
       "status": "pending",
       "reason": "new"
     },
@@ -374,7 +382,7 @@
       "url": "https://techcrunch.com/?p=3174041",
       "source": "TechCrunch",
       "issue": "/en/daily/2026-10-09",
-      "region": "Other",
+      "region": "North America",
       "category": "Wearables & devices",
       "id": "persona-raise-2026-10",
       "reports": [
@@ -385,6 +393,7 @@
         }
       ],
       "noteDe": "10 Mio. $ unter Führung von Vine Ventures für einen KI-Assistenten mit Wearable-Armband",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -411,6 +420,7 @@
         }
       ],
       "noteDe": "überzeichnete Seed-Runde über 600.000 £ unter Führung des Gabriel Investment Syndicate für Intim-Wellness-Produkte",
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -426,7 +436,7 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLUxja1h3SXBZOHlkaVpzWVRJUjl3RFhrQS0tZlZSX1EwYTJQOFBFQktFbUpMbnA0dVdobzc0elBRNkxJUEY5ZFNoUWQweUFZcVB2SWxERjltZWNGWmlyUUVlenVLWEdwRDRjVjJGUElwUVltWklta1ZwSm1HRVRXa1VPb2hxamVuVWE5ZjZhU2daTWdZNUJmblZnS0JTZHBSOTlWLU91MWR5RzTSAasBQVVfeXFMTy1MY2tYd0lwWTh5ZGlac1lUSVI5d0RYa0EtLWZWUl9RMGEyUDhQRUJLRW1KTG5wNHVXaG83NHpQUTZMSVBGOWRTaFFkMHlBWXFQdklsREY5bWVjRlppclFFZXp1S1hHcEQ0Y1YyRlBJcFFZbVpJbWtWcEptR0VUV2tVT29ocWplblVhOWY2YVNnWk1nWTVCZm5WZ0tCU2RwUjk5Vi1PdTFkeUc0?oc=5",
       "source": "Entrackr",
       "issue": "/en/daily/2026-10-06",
-      "region": "Asia-Pacific",
+      "region": "North America",
       "category": "Nutrition & supplements",
       "id": "supermush-raise-2026-10",
       "reports": [
@@ -446,6 +456,7 @@
           "issue": "/en/daily/2026-10-08"
         }
       ],
+      "country": "United States",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -511,7 +522,7 @@
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY3VUWnlhMVVheUxYNVZiMVc3Sm1OaW1oVWctaXNNeVQ2a3VxUDl6c2lVdDZXUVJobE5CY2J3MTFkeTh3cDItR0tvUERCMFFUM0F3V040TDQ0Z2x4TEx0NDBJUHVwaDBLOE43NWh0RmY4VEQ2cGh4eUtGdjdKckwwLXZBcWE2b29QcjJuTjFVTGNkWVNaVlJNMHJNWmZxWWEwV2RjWno4cjdFRzNUeV91SWdxMm52MW9sVHVzRlpOcUh5cFBEWGc?oc=5",
       "source": "The Diplomat Bucharest",
       "issue": "/en/daily/2026-10-05",
-      "region": "Other",
+      "region": "Europe",
       "category": "Other",
       "id": "mozaik-acquisition-2026-10",
       "reports": [
@@ -521,6 +532,7 @@
           "issue": "/en/daily/2026-10-05"
         }
       ],
+      "country": "Romania",
       "status": "pending",
       "reason": "new"
     },
@@ -536,7 +548,7 @@
       "url": "https://the5krunner.com/2026/09/22/garmin-acquires-moxy-monitor/",
       "source": "the5krunner",
       "issue": "/en/daily/2026-10-02",
-      "region": "Other",
+      "region": "North America",
       "category": "Wearables & devices",
       "id": "garmin-acquisition-2026-10",
       "reports": [
@@ -546,6 +558,7 @@
           "issue": "/en/daily/2026-10-02"
         }
       ],
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -561,7 +574,7 @@
       "url": "",
       "source": "",
       "issue": "/en/daily/2026-10-02",
-      "region": "Other",
+      "region": "UK",
       "category": "Other",
       "id": "tresalis-acquisition-2026-10",
       "reports": [
@@ -571,6 +584,7 @@
           "issue": "/en/daily/2026-10-02"
         }
       ],
+      "country": "United Kingdom",
       "status": "pending",
       "reason": "new"
     },
@@ -636,7 +650,7 @@
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQi1XLWxFOC16bGlNQ0pmMjBLdXFKQmdEeEphOHp0RFRTcFJNYzVaeDRFekhHQXA4cnZyZ1BwMFpxR2JObmpseGZzTDJsSEVGTGNlY1NMVFluVm5XNEI0UUhSM05xZUQ2RWVfamVVcUlnaEg3X19lQjBuU3ltQmlFSWtYU3RWOFU?oc=5",
       "source": "Tech.eu",
       "issue": "/en/daily/2026-09-29",
-      "region": "Other",
+      "region": "Europe",
       "category": "Other",
       "id": "ipercept-raise-2026-09",
       "reports": [
@@ -646,6 +660,7 @@
           "issue": "/en/daily/2026-09-29"
         }
       ],
+      "country": "Sweden",
       "status": "pending",
       "reason": "new"
     },
@@ -686,7 +701,7 @@
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOTGpwMmQ0WFhDYXIwdy1EYUI1WnFJbXlMdjVIanpzeVk2X3lxNVZFZVFCZDRxMHJ0bks3Q1RWT0w5ak83Mi1XTllwTXdkZzRjQWNBV3JFRmlOVXNWODQ5c25saklMeUF5YWRvWWswOHN3c21sWHhmbmQtUUJaYUZiY0R5bmFYcDNNX0N1OHRRN2lTVWJNY0JRMENDaEdOQ25qYlhqdU9RNkzSAagBQVVfeXFMTkxqcDJkNFhYQ2FyMHctRGFCNVpxSW15THY1SGp6c3lZNl95cTVWRWVRQmQ0cTBydG5LN0NUVk9MOWpPNzItV05ZcE13ZGc0Y0FjQVdyRUZpTlVzVjg0OXNubGpJTHlBeWFkb1lrMDhzd3NtbFh4Zm5kLVFCWmFGYmNEeW5hWHAzTV9DdTh0UTdpU1ViTWNCUTBDQ2hHTkNuamJYanVPUTZM?oc=5",
       "source": "Entrackr",
       "issue": "/en/daily/2026-09-28",
-      "region": "Other",
+      "region": "Middle East",
       "category": "Other",
       "id": "amaani-raise-2026-09",
       "reports": [
@@ -696,6 +711,7 @@
           "issue": "/en/daily/2026-09-28"
         }
       ],
+      "country": "United Arab Emirates",
       "status": "pending",
       "reason": "new"
     },
@@ -711,7 +727,7 @@
       "url": "",
       "source": "",
       "issue": "/en/daily/2026-09-24",
-      "region": "Other",
+      "region": "Asia-Pacific",
       "category": "Other",
       "id": "elixinol-acquisition-2026-09",
       "reports": [
@@ -721,6 +737,7 @@
           "issue": "/en/daily/2026-09-24"
         }
       ],
+      "country": "Australia",
       "status": "pending",
       "reason": "new"
     },
@@ -736,7 +753,7 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZGtzZHByNDVoVE9lNE5KSnV1MXpjcXJfVkp6SGhBR0tqN3ZaNTFMMlFTd3BpOG1lS3VOd3lKbTNGeVZ0WVhFdW9PcFZlSEJ6ZVpjakpRem9fX0xKOTlMeUdyUzJFa3gydXJ5Q1ZLQ21VY1ZwaFhOVUl1Mk05aDB1S3ZpdFdrbWpwVGdISTdDcjZld1BLNjdEVy15cHFXdk5iZlFyRQ?oc=5",
       "source": "app.dealroom.co",
       "issue": "/en/daily/2026-09-24",
-      "region": "Other",
+      "region": "North America",
       "category": "Other",
       "id": "tusol-acquisition-2026-09",
       "reports": [
@@ -746,6 +763,7 @@
           "issue": "/en/daily/2026-09-24"
         }
       ],
+      "country": "United States",
       "status": "pending",
       "reason": "new"
     },
@@ -761,7 +779,7 @@
       "url": "https://athletechnews.com/birdbe-raises-13m-to-shift-conversation-around-male-fertility/",
       "source": "Athletech News",
       "issue": "/en/daily/2026-09-23",
-      "region": "Other",
+      "region": "North America",
       "category": "Health & longevity",
       "id": "bird-be-raise-2026-09",
       "reports": [
@@ -771,6 +789,7 @@
           "issue": "/en/daily/2026-09-23"
         }
       ],
+      "country": "Canada",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -801,6 +820,7 @@
           "issue": "/en/daily/2026-09-24"
         }
       ],
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -816,7 +836,7 @@
       "url": "https://dealroom.co/news/154020-disha-formerly-curelink-raises-4-6m-series-a-led-by-general-catalyst/",
       "source": "Dealroom",
       "issue": "/en/daily/2026-09-21",
-      "region": "Other",
+      "region": "Asia-Pacific",
       "category": "Software & AI",
       "id": "disha-raise-2026-09",
       "reports": [
@@ -827,6 +847,7 @@
         }
       ],
       "noteDe": "Series A unter Führung von General Catalyst für eine KI-Gesundheitscoaching-Plattform (früher Curelink); Dollarangaben in Berichten schwanken",
+      "country": "India",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -927,6 +948,7 @@
           "issue": "/en/daily/2026-09-16"
         }
       ],
+      "country": "Australia",
       "status": "pending",
       "reason": "new"
     },
@@ -942,7 +964,7 @@
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYUJsUUVoZVE4UHp5OW5YSHRvRjJUZTUzUksyeTB2VlZwQkF4NG85N0QwS1pPNDJkRnF2M19UMFkwMTFKcjdDcHlad1pMSDhMaGp0U0sydUxtU1NCUFZJaEZEVEtYaC1ydW52eFlRbUtTemw5RVJfVmFYZzhsUExoVmxaOFZIWDljSTNwMklDaldqZ1dSampkZXBUV0dnTTJUYk1EWERmWmtHTkJEcU1WZw?oc=5",
       "source": "citybiz",
       "issue": "/en/daily/2026-09-15",
-      "region": "Other",
+      "region": "North America",
       "category": "Other",
       "id": "wizard-raise-2026-09",
       "reports": [
@@ -957,6 +979,7 @@
           "issue": "/en/daily/2026-09-16"
         }
       ],
+      "country": "United States",
       "status": "pending",
       "reason": "new"
     },
@@ -988,6 +1011,7 @@
         }
       ],
       "noteDe": "Das Zürcher Unternehmen Aeon übernimmt die Kernbereiche der Berliner Blutdiagnostik-Plattform Aware Health; Preis nicht genannt",
+      "country": "Germany",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1039,6 +1063,7 @@
         }
       ],
       "noteDe": "Eigenkapital plus Bankkredite, um das Frauen-Beauty-Gym HITORI WELLNESS in vier Jahren auf 300 Standorte in Japan auszubauen",
+      "country": "Japan",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1104,7 +1129,7 @@
       "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPSnhPMEdvZHBBR2VLT2trMzU4eTY3ZWgwOV9ubTQ1QjQ3LVpwYU1SUEJTOExNV3NDeWRxTUI1UnFTOEpqVW5kZFh1VFVORGZXSHZtRC1TSzQwQlhLb1FJYmJONjN3RHRhaVJZSGN2N3lVQ3NLQnB0aHhfNXFFVlFRTW1aRE9vWTdRYmxETXU1X2Y2dVM0bTY5QkdWeFdXekczR1MzcjZSc04yalFpbXZsbjRBcHZuX1VVREJYWTBXdmM2LUVwVXhTS3VwQ1lzV2dEQmlUcFFhaGhJQdIB3wFBVV95cUxPUDNrOGRwY2RaRnF2aDZxbHdUbXNNYjBTVUhEYnIwYWMyZGc3cUV4M3dpYnI1c1NpTUxnVTNmdHQzZkt0LUVnS244YXBFdjhGNTh3eXNTN0g5UjZhUzBra1huVS13Nnp6TFhHZDU4ZHB1aTdwbmFLMS1FdW0wc25fN08tZ0szRkdpV1dXYVJQNTBKSDlHcFBqeFlUMDVEQVVKU2xyM05CekkxQk5Xeks2RG5rc3Z2bllJYUVCYndGeUFJLThURk5VbXRCcmppejJVcG96cl8zVzlMdGYtNml3?oc=5",
       "source": "Business Standard",
       "issue": "/en/daily/2026-09-08",
-      "region": "Other",
+      "region": "Asia-Pacific",
       "category": "Nutrition & supplements",
       "id": "fredun-acquisition-2026-09",
       "reports": [
@@ -1119,6 +1144,7 @@
           "issue": "/en/daily/2026-09-09"
         }
       ],
+      "country": "India",
       "status": "pending",
       "reason": "new"
     },
@@ -1154,6 +1180,7 @@
           "issue": "/en/daily/2026-09-09"
         }
       ],
+      "country": "India",
       "status": "pending",
       "reason": "new"
     },
@@ -1169,7 +1196,7 @@
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNDgydDk2X2FPWjdOWFUyNmNHVlRCampPVDhMZm1KMDdHdHdkRVFHakt0b2xiMTNaQzBrc3lwd3REZ3Q3NzNjV2pPUjByM3JIVFExaTlFUjdqYTNzWmxGOUFMX3R6RW5uNlMzYXMxQ3ZodW9fN0J3S3VfcmxDS0ZPR3F6NXR3Z3NYYTYwS0syenc0LXRJRGNMQWJZYmlJb3gyOUM2ODhkWk8zektHa3VN?oc=5",
       "source": "Dealroom",
       "issue": "/en/daily/2026-09-04",
-      "region": "Other",
+      "region": "North America",
       "category": "Software & AI",
       "id": "company-raise-2026-09",
       "reports": [
@@ -1179,6 +1206,7 @@
           "issue": "/en/daily/2026-09-04"
         }
       ],
+      "country": "Canada",
       "status": "pending",
       "reason": "new"
     },
@@ -1247,7 +1275,7 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYmJManZyZi0tZ19uSHBscmJlSHZqTkx1WWxKbDQ3TXpTVzBzbGN2OVRvUUpDT2p5eXcwVEItUG1QQXozcTJrWV9PLWRNNFpVdXJlcTdFVElKWlI2ZGZSLUdSNzk0YzVjVm1GNl8xRTBvQVVId2J1bHZwenExc0Q1czY2bUVkeWtRRFZfVlRVRjBPajczZlhPLXJmdHlXc1JJaTNnUUVpN1Y1bTNKSU5pd0czeTFaZVdBNE1wTUJGRG5pdGtL?oc=5",
       "source": "WholeFoods Magazine",
       "issue": "/en/daily/2026-09-03",
-      "region": "Other",
+      "region": "North America",
       "category": "Nutrition & supplements",
       "id": "cbdmd-acquisition-2026-09",
       "reports": [
@@ -1257,6 +1285,7 @@
           "issue": "/en/daily/2026-09-03"
         }
       ],
+      "country": "United States",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1272,7 +1301,7 @@
       "url": "https://athletechnews.com/global-wellness-summit-informa-acquisition/",
       "source": "Athletech News",
       "issue": "/en/daily/2026-09-03",
-      "region": "Other",
+      "region": "North America",
       "category": "Other",
       "id": "informa-acquisition-2026-09",
       "reports": [
@@ -1283,6 +1312,7 @@
         }
       ],
       "noteDe": "Informa übernimmt Global Wellness Summit und Global Wellness Institute; Konditionen nicht genannt",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1298,7 +1328,7 @@
       "url": "https://www.nestlehealthscience.us/stories/nestle-reaches-agreement-divest-its-mainstream-vitamins-minerals-and-supplements-business",
       "source": "Nestlé Health Science",
       "issue": "/en/daily/2026-09-02",
-      "region": "Other",
+      "region": "North America",
       "category": "Nutrition & supplements",
       "id": "nestl-acquisition-2026-09",
       "reports": [
@@ -1309,6 +1339,7 @@
         }
       ],
       "noteDe": "Nestlé verkauft sein Mainstream-Supplement-Geschäft (Nature's Bounty, Nuun, Puritan's Pride) an Yellow Wood Partners",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1324,7 +1355,7 @@
       "url": "https://dealroom.co/news/148290-enhance-raises-18-2m-to-take-gym-training-software-into-the-us/",
       "source": "Dealroom",
       "issue": "/en/daily/2026-09-02",
-      "region": "UK",
+      "region": "Middle East",
       "category": "Gyms & studios",
       "id": "enhance-raise-2026-09",
       "reports": [
@@ -1361,6 +1392,7 @@
           "issue": "/en/daily/2026-09-02"
         }
       ],
+      "country": "Singapore",
       "status": "pending",
       "reason": "new"
     },
@@ -1376,7 +1408,7 @@
       "url": "",
       "source": "",
       "issue": "/en/daily/2026-09-01",
-      "region": "Other",
+      "region": "UK",
       "category": "Other",
       "id": "healf-raise-2026-09",
       "reports": [
@@ -1386,6 +1418,7 @@
           "issue": "/en/daily/2026-09-01"
         }
       ],
+      "country": "United Kingdom",
       "status": "pending",
       "reason": "new"
     },
@@ -1412,6 +1445,7 @@
         }
       ],
       "noteDe": "Das Londoner Unternehmen HITAI übernimmt Technik und IP des YC-finanzierten Studios Quell (Asset Deal)",
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1452,7 +1486,7 @@
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQTNyY0pKRVFGYkl2RG9hVXdLME1VLTB6Z1RQeWg5SkJqS3lqbGVLVVBuNWNzWHVmUTBfQ2tvcGtRUDg0ZS1Yb0dFb2ZWanBBc3NVQTRySzM2dURhenZwVHNaejBNanBPRXE1SXBBZjN5QnhLMHBKVFlqYWJGUEVKbVJjZlN4UkVUd1NCcERCQVpZR0NRUkRJbjREUk9hLTlhTmhwcGpxQmxBTTdoVXUzNVRWUGhiZkZvUDlicFlfbVJESVp2WXc?oc=5",
       "source": "spabusiness.com",
       "issue": "/en/daily/2026-08-28",
-      "region": "Other",
+      "region": "UK",
       "category": "Software & AI",
       "id": "excalibur-acquisition-2026-08",
       "reports": [
@@ -1462,6 +1496,7 @@
           "issue": "/en/daily/2026-08-28"
         }
       ],
+      "country": "United Kingdom",
       "status": "pending",
       "reason": "new"
     },
@@ -1512,6 +1547,7 @@
           "issue": "/en/daily/2026-08-27"
         }
       ],
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1527,7 +1563,7 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQW50dGhvTW1RSUo5c2lad3EwZjBvSjd0ZmpybGdocVdsS1lxMnJmemJrMzNFdzhYZTRjUzJ0M1BLWUdncU5RZHJJRl82VTZnaTFod2RxYndvQ2RlbUZKSkR3dEFyUFQ4RC1jQmFOVnBDVGxCNGZUVkJnZTRydXg0WEwtZV9Lc0FtbkhtdHhyZm01d01IUHNTb2FzX09CQWx3RXZFS3FFMTVWMWJEWUFNZDV5bENqZDA?oc=5",
       "source": "Stock Titan",
       "issue": "/en/daily/2026-08-27",
-      "region": "Other",
+      "region": "North America",
       "category": "Other",
       "id": "fifty-acquisition-2026-08",
       "reports": [
@@ -1537,6 +1573,7 @@
           "issue": "/en/daily/2026-08-27"
         }
       ],
+      "country": "United States",
       "status": "pending",
       "reason": "new"
     },
@@ -1597,7 +1634,7 @@
       "url": "https://dealroom.co/news/145117-ferrero-to-acquire-purely-elizabeth-for-an-estimated-850-million/",
       "source": "Dealroom",
       "issue": "/en/daily/2026-08-25",
-      "region": "Other",
+      "region": "North America",
       "category": "Nutrition & supplements",
       "id": "purely-acquisition-2026-08",
       "reports": [
@@ -1608,6 +1645,7 @@
         }
       ],
       "noteDe": "Ferrero übernimmt die Müslimarke Purely Elizabeth; Konditionen nicht genannt (Forbes schätzt über 850 Mio. $)",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1648,7 +1686,7 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdngxaHFXVFppOTJJMnJ6UWRsTkxBN2ZxdHNYRkszNnRsVmFJdEJqd181bnQyRUlucWprS0hiUHFma050YzdHQkRyaHVWSWN6X1hiWVd4T0tydWpDUjEtY1l2U1o3UHZvTzRmMU1pS1BJS1lWeFZXcDRNM2J6bUNYeGVGMjNWOGRFRmR0VTFwcFpIS1RDUDAyc2NrSQ?oc=5",
       "source": "BetaKit",
       "issue": "/en/daily/2026-08-20",
-      "region": "Other",
+      "region": "North America",
       "category": "Software & AI",
       "id": "kodeon-acquisition-2026-08",
       "reports": [
@@ -1658,6 +1696,7 @@
           "issue": "/en/daily/2026-08-20"
         }
       ],
+      "country": "United States",
       "status": "pending",
       "reason": "new"
     },
@@ -1683,6 +1722,7 @@
           "issue": "/en/daily/2026-08-19"
         }
       ],
+      "country": "Netherlands",
       "status": "pending",
       "reason": "new · may be off-topic"
     },
@@ -1723,7 +1763,7 @@
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQNUZRN0had0Fqb2prQ0MyelJOaEVHQ3FXSzdYN3dYSGRnWDN3NU9WRUc2OTBVQWZmdUFwWTBUOGo4RlZ1WXJWMW1nNHFBdXgzbXZCcG1NMHBWcjYtOS1qb0pUaGFvOEs3RVJjRVJ5bm01cC1WSWEwWVpFRXNVTmtWakRIaEFxajREbVBBVk9EQTVZRnhwTGVHRU5fb1NpMUF0LS12Z01tcXpsc0oyOXdjWDdHR3hzMHpoNGwyeW5n0gHDAUFVX3lxTE5rMnhpdlJhYmIxOGUtb3NFbHZ1Z1RsSThxb0g2VHZwOXdrb3p1NFpaYXBpV0RKVTZvZDdHdFl0VE1MMmJ5V1VLS2gxQ0lDMVRHaS1vXzZXZDhFdFVxNFhJQVJSNkxLbWxpN3pKaHJLTGppeFNvQWxpYS1ETlo5bG9iSGtUbEhwV0FqVjVjZ1liVmRZOHE5NHpQSTZyU184OG5ZRWExOUdYd055SG1MaEFPa1hOZlNOSFlDVG5KVThiZF9ZMA?oc=5",
       "source": "Pulse 2.0",
       "issue": "/en/daily/2026-08-17",
-      "region": "Other",
+      "region": "North America",
       "category": "Gyms & studios",
       "id": "delightree-raise-2026-08",
       "reports": [
@@ -1733,6 +1773,7 @@
           "issue": "/en/daily/2026-08-17"
         }
       ],
+      "country": "United States",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1826,7 +1867,7 @@
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdlI1Q3FJVGdDWW8tOUE3VFMxeFVKRkdxdW5YdG13ekVKZ0xOalJMdV9ySDBoWjZxeFZpM2dWQVFiV1JobFRZWm9YQ3NnZURmS1B4UHlfanFKLVZrV09YWDc0T3BXbFhaV0RYZHUtT3dEVHJ3WGxPRllrM2gzNE1VZW82VFdUY0hLbUV5ODY1SENPVHBfcnBnVlM2aFlEOGtBdmhJN2NoRFQyQXlV?oc=5",
       "source": "Retail Systems",
       "issue": "/en/daily/2026-08-07",
-      "region": "Other",
+      "region": "North America",
       "category": "Nutrition & supplements",
       "id": "thorne-acquisition-2026-08",
       "reports": [
@@ -1841,6 +1882,7 @@
           "issue": "/en/daily/2026-08-14"
         }
       ],
+      "country": "United States",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1872,6 +1914,7 @@
         }
       ],
       "noteDe": "Kirin übernimmt den kanadischen Vitaminhersteller Jamieson Wellness (Unternehmenswert 2,5 Mrd. C$)",
+      "country": "Canada",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1947,7 +1990,7 @@
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQSzRSdy1rcGxaYnl4a29zTzdURUMzRmFaMnR5SFA3N3dIWmhaQ3JyWk5hTmxlZnNvRXpSNlhRNEZremhVMnZkWU5uV1lfM0x1NWlObTZkU01nTXNHQlQ2blZJczRCS3VNU0hHT2pPaXBKdHMwNHZFWlE1a3VaSXRYb3RTRXE1SWlmNW9jUkZ6YUtURktnUHg1ajB4Q29CQ2NFd25DOG9rc1BSbUJKZUc4VkxVMjRLZHNZdVRLMEtWeEI2TlRUSU81VW15alNqOXpvT1E?oc=5",
       "source": "tradingview.com",
       "issue": "/en/daily/2026-08-04",
-      "region": "Other",
+      "region": "Asia-Pacific",
       "category": "Other",
       "id": "fanatics-ipo-2026-08",
       "reports": [
@@ -1957,6 +2000,7 @@
           "issue": "/en/daily/2026-08-04"
         }
       ],
+      "country": "Hong Kong",
       "status": "pending",
       "reason": "new"
     },
@@ -2007,6 +2051,7 @@
           "issue": "/en/daily/2026-07-31"
         }
       ],
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -2032,6 +2077,7 @@
           "issue": "/en/daily/2026-07-31"
         }
       ],
+      "country": "Switzerland",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -2047,7 +2093,7 @@
       "url": "https://www.massdevice.com/soundhealth-additional-fundraising/",
       "source": "MassDevice",
       "issue": "/en/daily/2026-07-31",
-      "region": "Other",
+      "region": "North America",
       "category": "Software & AI",
       "id": "soundhealth-raise-2026-07",
       "reports": [
@@ -2058,6 +2104,7 @@
         }
       ],
       "noteDe": "Series A unter Führung von Shangbay Capital für KI-Geräte gegen Atem- und Schlafstörungen; insgesamt 12,25 Mio. $",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2098,7 +2145,7 @@
       "url": "https://pulse2.com/throne-science-raises-10-million-series-a-for-ai-powered-smart-toilet-sensor/",
       "source": "Pulse 2.0",
       "issue": "/en/daily/2026-07-29",
-      "region": "Other",
+      "region": "North America",
       "category": "Wearables & devices",
       "id": "throne-raise-2026-07",
       "reports": [
@@ -2109,6 +2156,7 @@
         }
       ],
       "noteDe": "Series A unter Führung von Will Ventures für einen Toilettensensor zur Darmgesundheit; Mitgründer ist Whoops früherer CTO",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2149,7 +2197,7 @@
       "url": "https://athletechnews.com/bain-to-buy-1-2-billion-uk-supplements-firm-vitabiotics/",
       "source": "Athletech News",
       "issue": "/en/daily/2026-07-27",
-      "region": "Other",
+      "region": "UK",
       "category": "Nutrition & supplements",
       "id": "bain-acquisition-2026-07",
       "reports": [
@@ -2160,6 +2208,7 @@
         }
       ],
       "noteDe": "Bain Capital kauft den britischen Vitaminhersteller Vitabiotics; 1,2 Mrd. $ laut Bloomberg",
+      "country": "United Kingdom",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2185,6 +2234,7 @@
           "issue": "/en/daily/2026-07-27"
         }
       ],
+      "country": "Australia",
       "status": "pending",
       "reason": "new"
     },
@@ -2211,6 +2261,7 @@
         }
       ],
       "noteDe": "Franchise Equity Partners übernimmt Bravo Fit, den Planet-Fitness-Franchisenehmer in Australien; Planet Fitness steigt aus; Konditionen nicht genannt",
+      "country": "Australia",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2226,7 +2277,7 @@
       "url": "https://www.garmin.com/en-US/newsroom/press-release/corporate/garmin-acquires-trainingpeaks-and-trainheroic-leading-endurance-and-strength-training-platforms-for-athletes-and-coaches/",
       "source": "Garmin",
       "issue": "/en/daily/2026-07-23",
-      "region": "Other",
+      "region": "North America",
       "category": "Wearables & devices",
       "id": "garmin-acquisition-2026-07",
       "reports": [
@@ -2247,6 +2298,7 @@
         }
       ],
       "noteDe": "Garmin übernimmt die Trainingsplattformen TrainingPeaks und TrainHeroic; Konditionen nicht genannt",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2312,7 +2364,7 @@
       "url": "",
       "source": "",
       "issue": "/en/daily/2026-07-20",
-      "region": "Other",
+      "region": "North America",
       "category": "Gyms & studios",
       "id": "ultimate-raise-2026-07",
       "reports": [
@@ -2322,6 +2374,7 @@
           "issue": "/en/daily/2026-07-20"
         }
       ],
+      "country": "United States",
       "status": "pending",
       "reason": "new"
     },
@@ -2365,7 +2418,7 @@
       "url": "https://www.newswire.com/news/trnr-signs-definitive-agreement-to-acquire-stepr-raises-2026-pro-forma-revenue",
       "source": "Newswire",
       "issue": "/en/daily/2026-07-17",
-      "region": "Other",
+      "region": "North America",
       "category": "Other",
       "id": "interactive-acquisition-2026-07",
       "reports": [
@@ -2376,6 +2429,7 @@
         }
       ],
       "noteDe": "Interactive Strength (TRNR) übernimmt die vernetzte Stepper-Marke STEPR; Abschluss im 4. Quartal 2026 erwartet",
+      "country": "United States",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2391,7 +2445,7 @@
       "url": "https://ouraring.com/blog/lilly-equity-investment/",
       "source": "Oura",
       "issue": "/en/daily/2026-07-16",
-      "region": "Other",
+      "region": "Europe",
       "category": "Wearables & devices",
       "id": "oura-raise-2026-07",
       "reports": [
@@ -2402,6 +2456,7 @@
         }
       ],
       "noteDe": "Eli Lilly beteiligt sich strategisch an Oura; Betrag nicht genannt",
+      "country": "Finland",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2417,7 +2472,7 @@
       "url": "https://www.axios.com/pro/health-tech-deals/2026/07/15/neko-health-raises-700m-series-c",
       "source": "Axios",
       "issue": "/en/daily/2026-07-15",
-      "region": "North America",
+      "region": "Europe",
       "category": "Other",
       "id": "neko-raise-2026-07",
       "reports": [
@@ -2427,6 +2482,7 @@
           "issue": "/en/daily/2026-07-15"
         }
       ],
+      "country": "Sweden",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -2442,7 +2498,7 @@
       "url": "https://pulse2.com/prenetics-raises-1-billion-for-im8-via-general-catalysts-customer-value-fund/",
       "source": "Pulse 2.0",
       "issue": "/en/daily/2026-07-14",
-      "region": "Other",
+      "region": "Asia-Pacific",
       "category": "Nutrition & supplements",
       "id": "im8-raise-2026-07",
       "reports": [
@@ -2453,6 +2509,7 @@
         }
       ],
       "noteDe": "nicht verwässernde, umsatzbasierte Marketingfinanzierung von bis zu 1 Mrd. $ aus dem Customer Value Fund von General Catalyst (kein Eigenkapital)",
+      "country": "Hong Kong",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2479,6 +2536,7 @@
         }
       ],
       "noteDe": "Basic-Fit kauft 41 wellyou-Clubs in Deutschland, in bar",
+      "country": "Germany",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2494,7 +2552,7 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNTZsRkhxRzJBNTRXdk41d21LSG4xbi1GeU9jd3NjVnRQUnY0VjRXeGY3bEFaSTRJVmxXSGpzaUhISDNGM2ZOSHpfLVNkU1dlcVQ3MHVEM0ota0loTTExNTQycDBPYUFHdFdvemx5SlhiY3Vudzk0Y2lEOWpPSFA3TC1BVFk3NUM2YlpuQkthWHN2SnlMSUFIM1lEekZXQmd6VHdITmFkdGhTZ1VLVHQyNDc3RDNEdjNXQWpDQlBNdmprdnpHQ29GZmZGMVM0QQ?oc=5",
       "source": "Siliconindia",
       "issue": "/en/daily/2026-07-03",
-      "region": "Other",
+      "region": "Asia-Pacific",
       "category": "Other",
       "id": "heatronics-raise-2026-07",
       "reports": [
@@ -2504,6 +2562,7 @@
           "issue": "/en/daily/2026-07-03"
         }
       ],
+      "country": "India",
       "status": "pending",
       "reason": "new"
     },
@@ -2519,7 +2578,7 @@
       "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcGtlSDBSZE1YY3dMM09QQVdhdUZsdHlsTEZlQXYtQ0YxOTkxeklOVGZ3dXB2M0lwS2JCSk1QcFg0eW9QdHZ1dWJib1VIbU1vbFBJX29GT1hSc3JXS2tkMHZkNGFRcEFkMUp2bHJiVUo1X2ZrVTFwTWRjN1llVng5MXBQX0NLSFN0cERnX3ZqYy1nUQ?oc=5",
       "source": "Yahoo! Finance Canada",
       "issue": "/en/daily/2026-06-21",
-      "region": "Other",
+      "region": "North America",
       "category": "Gyms & studios",
       "id": "peloton-acquisition-2026-06",
       "reports": [
@@ -2529,6 +2588,7 @@
           "issue": "/en/daily/2026-06-21"
         }
       ],
+      "country": "United States",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },

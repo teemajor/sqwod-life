@@ -1,0 +1,9 @@
+---
+// Deal-type symbol (raise, acquisition, valuation, ipo, shutdown). Decorative: the text label
+// always follows it, so screen readers skip the icon. Needs <DealGlyphs /> once on the page.
+interface Props { kind: string }
+const { kind } = Astro.props;
+const k = ['raise', 'acquisition', 'valuation', 'ipo', 'shutdown'].includes(kind) ? kind : 'raise';
+---
+<svg class="di" aria-hidden="true" focusable="false"><use href={`#di-${k}`} /></svg>
+<style>.di{display:inline-block;width:14px;height:14px;vertical-align:-2px;margin-right:5px;flex:none}</style>

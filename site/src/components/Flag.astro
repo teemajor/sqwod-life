@@ -1,0 +1,10 @@
+---
+// Small country flag, by country name (as stored in deals.json) or ISO code. Renders nothing
+// for unknown countries. Decorative: the country name follows it in the text. Needs <DealGlyphs />.
+import { flagCode } from '../lib/flags';
+interface Props { country?: string | null; code?: string }
+const { country, code } = Astro.props;
+const c = code || flagCode(country);
+---
+{c && <svg class="fl" aria-hidden="true" focusable="false"><use href={`#fl-${c}`} /></svg>}
+<style>.fl{display:inline-block;width:16px;height:12px;vertical-align:-1px;margin-right:6px;border-radius:2px;border:1px solid var(--line);box-sizing:content-box;flex:none}</style>
