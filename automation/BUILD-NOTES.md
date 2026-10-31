@@ -119,6 +119,11 @@ What shipped on `/[lang]/intelligence/investors/`:
 - **Nav**: Deal Tracker, Investor Map and Globe highlight "Tools" in the header (they are listed under /tools), URLs unchanged.
 - **Jobs alert, one segment (31 Oct 2026):** the owner chose one jobs list for both languages instead of upgrading Resend for a fourth segment. The segment "Jobs alert (EN)" (`fb69d0c4-…`) is now the one "Jobs alert" segment; the Worker puts every jobs sign-up there (`RESEND_SEGMENT_JOBS`, falling back to `RESEND_SEGMENT_JOBS_EN`), and `jobs-alert.mjs` sends one email, German first with an English summary and English labels. No GitHub variable is needed any more: the segment id is the script's default. Jobs sign-ups can also tick an unticked "also send me the Daily" box; only then do they join the Daily segment for their language.
 
+## Deal Tracker list-first, globe page layout, map readability (31 Oct 2026)
+- **Deal Tracker**: slim hero (title, sub, link row); filters, the two charts side by side (compact SVG variant) and the table come first; KPIs, the latest-deals panel, the Investor Map card and the CSV button sit in a 260px right sidebar (below the table on phones).
+- **Globe page**: the control bar (type chips, search, selects, Arcs/Spin/Tour) sits above the stage instead of over it, so the globe is never covered; the stage is page-wide with rounded corners (full-bleed only on phones), so the hero text and the globe line up.
+- **Map readability**: country outlines (`polygonsData` with a faint stroke) on top of the dotted land; pills re-nudge on every few degrees of spin and nudge down when they would overlap; label reach in the ring view narrowed so a dense city does not pull in every neighbour's name tags; big rings a little wider. Apollo Health Ventures' city was stored as "Berlin and Boston" (now Berlin, both named in the focus text).
+
 ## Investor sources verified (31 Oct 2026)
 
 - All 43 directory entries that were marked `Likely` now point `source` at the organisation's own page (fund site, programme page or official funding page) instead of listicles, Substack posts or data-hub profiles, and every entry has a `url`.

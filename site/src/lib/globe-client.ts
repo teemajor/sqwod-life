@@ -34,7 +34,7 @@ export interface GlobeHandle {
   destroy(): void;
 }
 /** A point as displayed: lat/lng move when a city spreads; `cl` is the cluster size it stands for. */
-interface Disp extends GlobePoint { lat0: number; lng0: number; ci: number; cn: number; cl: number; gc: number; glat: number; glng: number; gname: string; gmin: number; a: number }
+interface Disp extends GlobePoint { lat0: number; lng0: number; ci: number; cn: number; cl: number; gc: number; glat: number; glng: number; gname: string; gmin: number; a: number; dy: number }
 // cl: investors the marker stands for (1 = itself); gc: cities merged into it; glat/glng: where the marker sits; a: ring angle
 
 const SPREAD_ALT = 0.5;             // below this camera altitude a city opens into a ring with name tags; above it, cities are pills
@@ -83,7 +83,8 @@ export function mountGlobe(el: HTMLElement, opts: GlobeOptions): GlobeHandle {
     .width(el.clientWidth).height(el.clientHeight)
     .backgroundColor('rgba(0,0,0,0)')
     .showAtmosphere(true).atmosphereColor('#7FB58C').atmosphereAltitude(0.22)
-    .hexPolygonsData(land).hexPolygonResolution(3).hexPolygonMargin(0.58).hexPolygonUseDots(true).hexPolygonAltitude(0.004).hexPolygonColor(() => 'rgba(127,181,140,0.45)')
+    .hexPolygonsData(land).hexPolygonResolution(3).hexPolygonMargin(0.6).hexPolygonUseDots(true).hexPolygonAltitude(0.004).hexPolygonColor(() => 'rgba(127,181,140,0.42)')
+    .polygonsData(land).polygonAltitude(0.002).polygonCapColor(() => 'rgba(127,181,140,0.05)').polygonSideColor(() => 'rgba(0,0,0,0)').polygonStrokeColor(() => 'rgba(160,200,170,0.38)').polygonsTransitionDuration(0)
     .showGraticules(true)
     .pointsTransitionDuration(reduce ? 0 : 350)
     .pointLat('lat').pointLng('lng').pointColor((p: any) => colorOf(p))
@@ -106,7 +107,7 @@ export function mountGlobe(el: HTMLElement, opts: GlobeOptions): GlobeHandle {
     .htmlLat('lat').htmlLng('lng').htmlAltitude((d: any) => (d.cl > 1 ? 0.03 : 0.02))
     .htmlElement((d: any) => {
       const div = document.createElement('div'); div.className = 'gl-lab';
-      if (d.cl > 1) { div.innerHTML = `<span class="gl-lab-c">${esc(d.gname)}${d.gc > 1 ? ` <small>+${d.gc - 1}</small>` : ''}<i>${d.cl}</i></span>`; div.addEventListener('click', (e) => { e.stopPropagation(); open(d.src || d); }); }
+      if (d.cl > 1) { div.innerHTML = `<span class="gl-lab-c" style="transform:translateY(${d.dy || 0}px)">${esc(d.gname)}${d.gc > 1 ? ` <small>+${d.gc - 1}</small>` : ''}<i>${d.cl}</i></span>`; div.addEventListener('click', (e) => { e.stopPropagation(); open(d.src || d); }); }
       else { const sx = Math.sin(d.a), sy = -Math.cos(d.a); div.innerHTML = `<span class="gl-lab-n${d.id === selId ? ' is-sel' : ''}" style="transform:translate(${Math.round(sx * 55)}%,${Math.round(sy * 95 - 10)}%)">${esc(d.n)}</span>`; div.addEventListener('click', (e) => { e.stopPropagation(); opts.onSelect?.(d.src || d); }); }
       return div;
     })
@@ -127,14 +128,14 @@ export function mountGlobe(el: HTMLElement, opts: GlobeOptions): GlobeHandle {
     const pov = globe.pointOfView(); const alt = pov.altitude;
     const spread = alt < SPREAD_ALT;
     // quantise so a slow zoom does not relayout every frame; in spread mode the label set follows the camera
-    const key = spread ? `s:${Math.round(alt * 12)}:${Math.round(pov.lat / 4)}:${Math.round(pov.lng / 4)}` : 'c';
+    const key = `${spread ? 's' : 'c'}:${Math.round(alt * 12)}:${Math.round(pov.lat / 3)}:${Math.round(pov.lng / 3)}`;
     if (!force && key === lastKey) return; lastKey = key;
     const shown: Disp[] = []; const labels: Disp[] = [];
     if (!spread) {
       // greedy grouping: cities closer than the merge radius (scales with altitude) share one marker, named after the biggest city
       const cities = new Map<string, Disp[]>(); for (const p of disp) { p.lat = p.lat0; p.lng = p.lng0; p.cl = 1; p.gc = 1; (cities.get(p.ck) || cities.set(p.ck, []).get(p.ck)!).push(p); }
       const sorted = [...cities.values()].sort((a, b) => b.length - a.length);
-      const mergeR = alt * 4.5;         // wide view: nearby cities share a pill; mid view: one pill per city
+      const mergeR = alt * 6;           // wide view: nearby cities share a pill; mid view: one pill per city
       const groups: { lat: number; lng: number; name: string; members: Disp[]; cities: [number, number][] }[] = [];
       for (const m of sorted) {
         const g = groups.find((g) => angular(g.lat, g.lng, m[0].lat0, m[0].lng0) < mergeR);
@@ -149,13 +150,13 @@ export function mountGlobe(el: HTMLElement, opts: GlobeOptions): GlobeHandle {
         shown.push(rep); labels.push(rep);
       }
     } else {
-      const reach = alt * 45;               // labels only near the camera centre
+      const reach = alt * 28;               // labels only near the camera centre
       for (const p of disp) {
         p.cl = 1; p.gc = 1;
         if (p.cn === 1) { p.lat = p.lat0; p.lng = p.lng0; p.a = -Math.PI / 2; }
         else {
           // ring radius scales with altitude (so it keeps the same size on screen) and with the number of dots on it
-          const r = Math.min(1.3, Math.max(0.08, alt * (1.6 + 0.5 * Math.sqrt(p.cn))));
+          const r = Math.min(1.6, Math.max(0.08, alt * (1.4 + 0.6 * Math.sqrt(p.cn))));
           const a = (2 * Math.PI * p.ci) / p.cn - Math.PI / 2; p.a = a;
           p.lat = p.lat0 + r * Math.cos(a); p.lng = p.lng0 + (r * Math.sin(a)) / Math.max(0.3, Math.cos((p.lat0 * Math.PI) / 180));
         }
@@ -164,6 +165,17 @@ export function mountGlobe(el: HTMLElement, opts: GlobeOptions): GlobeHandle {
         if (p.id === selId || angular(pov.lat, pov.lng, p.lat, p.lng) < reach) labels.push(p);
       }
       if (labels.length > 70) { labels.sort((a, b) => (b.id === selId ? 1 : 0) - (a.id === selId ? 1 : 0) || b.a12 - a.a12); labels.length = 70; }
+    }
+    // pills that would overlap on screen are nudged down, biggest first
+    const placed: { x: number; y: number; w: number; h: number }[] = [];
+    for (const p of labels.filter((l) => l.cl > 1).sort((a, b) => b.cl - a.cl)) {
+      const sc = globe.getScreenCoords(p.lat, p.lng, 0.03); if (!sc) { p.dy = 0; continue; }
+      const w = 9.5 * (p.gname.length + (p.gc > 1 ? 4 : 0)) + 64, h = 34; let dy = 0;
+      for (let tries = 0; tries < 4; tries++) {
+        const hit = placed.some((r) => Math.abs(r.x - sc.x) < (r.w + w) / 2 && Math.abs(r.y - (sc.y + dy)) < (r.h + h) / 2);
+        if (!hit) break; dy += h + 2;
+      }
+      p.dy = dy; placed.push({ x: sc.x, y: sc.y + dy, w, h });
     }
     globe.pointsData(shown).customLayerData(shown).ringsData(shown.filter((p) => p.cl === 1 && p.open)).htmlElementsData(labels.map((p) => ({ ...p, src: p })));
   }
@@ -203,7 +215,7 @@ export function mountGlobe(el: HTMLElement, opts: GlobeOptions): GlobeHandle {
       for (const p of points) { const k = keys.find((k) => angular(k.lat, k.lng, p.lat, p.lng) < 0.35); if (k) { p.ck = k.ck; p.lat = k.lat; p.lng = k.lng; } else keys.push({ ck: p.ck, lat: p.lat, lng: p.lng }); }
       const byCity = new Map<string, number>(); for (const p of points) byCity.set(p.ck, (byCity.get(p.ck) || 0) + 1);
       const idx = new Map<string, number>();
-      disp = points.map((p) => { const ci = idx.get(p.ck) || 0; idx.set(p.ck, ci + 1); return { ...p, lat0: p.lat, lng0: p.lng, ci, cn: byCity.get(p.ck) || 1, cl: 1, gc: 1, glat: p.lat, glng: p.lng, gname: p.city || p.c, gmin: 180, a: -Math.PI / 2 }; });
+      disp = points.map((p) => { const ci = idx.get(p.ck) || 0; idx.set(p.ck, ci + 1); return { ...p, lat0: p.lat, lng0: p.lng, ci, cn: byCity.get(p.ck) || 1, cl: 1, gc: 1, glat: p.lat, glng: p.lng, gname: p.city || p.c, gmin: 180, a: -Math.PI / 2, dy: 0 }; });
       // arcs start at the displayed position's city centre (stable while a ring opens)
       allArcs = arcs; layout(true); applyArcs();
     },
