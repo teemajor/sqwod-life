@@ -27,6 +27,11 @@ export const SOURCES = [
     id: 'ba', enabled: true, label: 'Bundesagentur für Arbeit',
     // Jobsuche API, documented at https://jobsuche.api.bund.dev/. The key is the published one.
     url: 'https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs',   // v4 answered 403 (31 Oct 2026)
+    // Tried in order until one returns postings (v6 answered 200 but empty on 31 Oct 2026).
+    endpoints: [
+      'https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs',
+      'https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/app/jobs',
+    ],
     apiKey: 'jobboerse-jobsuche',
     detail: (refnr) => `https://www.arbeitsagentur.de/jobsuche/jobdetail/${encodeURIComponent(refnr)}`,
   },
