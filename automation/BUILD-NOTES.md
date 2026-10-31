@@ -44,3 +44,14 @@ Places where the build brief and the repo disagreed. Each one is written down he
 - `validate-richresults.mjs` exits 1 because of **12 existing over-long headlines** (Daily issues 20 to 30 Oct and one evidence playbook, > 110 characters). None of them comes from this build; they were left alone.
 - `/jobs/` stays out of the sitemap while it has fewer than 10 open roles (`astro.config.mjs`), matching its `noindex`.
 - Screenshots for the PR are in `automation/build-shots/`. They can be deleted once the PR is merged.
+
+## After the first real runs (31 Oct 2026)
+- **Run 1** saved nothing: one `git add` for four paths failed because `jobs-pay.jsonl` did not exist yet. Fixed in teemajor/sqwod-life#39.
+- **Run 2**: 192 roles, all from Adzuna. Fixes since then:
+  - **Bundesagentur:** every request answered 403. The API moved its search to `/pc/v6/jobs` (bundesAPI/jobsuche-api); v4 is refused. Switched to v6.
+  - **Adzuna pay:** `salary_min/max` carry no unit, and I had labelled them all as yearly. "15–20 €" is hourly and "5.000 €" monthly. The period now comes from the size of the figure: up to 150 € hourly, up to 6,000 € monthly, else yearly (checked against all 17 rows; one ad, a fitness trainer at 104,000 € a year, is shown as listed). The 17 stored rows were corrected, and 17 correction lines were appended to `jobs-pay.jsonl`; the original lines stay, and readers take the last line per id.
+  - **Adzuna place:** Berlin and Hamburg come as districts ("Schöneberg", "Barmbek-Nord"), so 174 of 192 roles were "Other DE". The region is now read from the whole area list; stored rows get their place refreshed when the next run sees them.
+  - **New type `apprenticeship`** (Ausbildung, duales Studium, trainee): 91 of the 192 roles were apprenticeship and dual-study places at FitX, McFit, INJOY and others, and were typed "other". This goes beyond the brief's type list; it is labelled "Ausbildung & duales Studium" on the page.
+  - **Fitt Insider:** `insider.fitt.co/jobs/` is a 404, and the board's current address could not be found. Switched off in `jobs-sources.mjs` until the right URL is known.
+  - **DSSV:** the page loaded but has no JobPosting markup and no job links the reader recognises: 0 roles. It needs a parser for its own HTML, or drop it.
+  - **Careers pages:** found for 129 of 199 brands (Greenhouse 29, Lever 8, Ashby 5, Workable 2, SmartRecruiters 1, Personio 1, softgarden 1, own site 82); 70 have none. Only 1 role was in Germany: most of these brands are American.
