@@ -1,5 +1,5 @@
 {
- "startedAt": "2026-10-31T09:24:49.847Z",
+ "startedAt": "2026-10-31T10:01:42.223Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
@@ -9,8 +9,8 @@
   },
   "adzuna": {
    "enabled": true,
-   "fetched": 436,
-   "kept": 309
+   "fetched": 423,
+   "kept": 299
   },
   "career-page": {
    "enabled": true,
@@ -23,9 +23,10 @@
    "kept": 0
   },
   "fitt": {
-   "enabled": true,
+   "enabled": false,
    "fetched": 0,
-   "kept": 0
+   "kept": 0,
+   "note": "disabled (terms of use)"
   },
   "indeed": {
    "enabled": false,
@@ -43,215 +44,77 @@
  "hosts": {
   "rest.arbeitsagentur.de": {
    "requests": 36,
-   "failures": 36,
-   "errors": [
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs",
-    "HTTP 403 /jobboerse/jobsuche-service/pc/v4/jobs"
-   ]
+   "failures": 0,
+   "errors": []
   },
   "api.adzuna.com": {
    "requests": 14,
-   "failures": 0,
-   "errors": []
+   "failures": 1,
+   "errors": [
+    "HTTP 503 /v1/api/jobs/de/search/3"
+   ]
   },
-  "aescape.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "aktivsolutions.com": {
-   "requests": 1,
+  "api.ashbyhq.com": {
+   "requests": 5,
    "failures": 0,
    "errors": []
   },
   "corehandf.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "ampfit.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "avironactive.com": {
    "requests": 1,
    "failures": 0,
    "errors": []
   },
   "aviron.breezy.hr": {
-   "requests": 2,
+   "requests": 1,
    "failures": 0,
    "errors": []
-  },
-  "centr.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
   },
   "corepoweryoga.com": {
-   "requests": 3,
+   "requests": 1,
    "failures": 0,
    "errors": []
-  },
-  "daxko.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 429 /",
-    "HTTP 429 /careers",
-    "HTTP 429 /jobs",
-    "HTTP 429 /karriere",
-    "HTTP 429 /de/karriere"
-   ]
   },
   "echelonfit.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "egym.com": {
    "requests": 1,
    "failures": 0,
    "errors": []
   },
   "uk.egym.com": {
-   "requests": 2,
+   "requests": 1,
    "failures": 0,
    "errors": []
-  },
-  "eightsleep.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "evolt360.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
   },
   "f45training.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "onefiit.com": {
    "requests": 1,
    "failures": 0,
    "errors": []
   },
   "onefiit.notion.site": {
-   "requests": 2,
+   "requests": 1,
    "failures": 0,
    "errors": []
   },
-  "forme.science": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
   "functionhealth.com": {
-   "requests": 3,
+   "requests": 1,
    "failures": 0,
    "errors": []
   },
   "garmin.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "gymlete.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "humanauthealth.com": {
-   "requests": 3,
+   "requests": 1,
    "failures": 0,
    "errors": []
   },
-  "hyperice.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "hyrox.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "ifit.com": {
-   "requests": 0,
+  "humanauthealth.com": {
+   "requests": 1,
    "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
+   "errors": []
   },
   "issaonline.com": {
-   "requests": 3,
+   "requests": 1,
    "failures": 0,
    "errors": []
   },
   "jiminihealth.com": {
-   "requests": 6,
-   "failures": 1,
-   "errors": [
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "jkproducts.us": {
    "requests": 1,
    "failures": 0,
    "errors": []
@@ -260,1431 +123,30 @@
    "requests": 0,
    "failures": 0,
    "errors": [
-    "robots.txt disallows /company/jk-group-official/jobs/",
     "robots.txt disallows /company/jk-group-official/jobs/"
    ]
   },
-  "getkeyspan.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "kineon.io": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "lifesum.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
   "jobs.lifesum.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "mindbodyonline.com": {
    "requests": 1,
    "failures": 0,
    "errors": []
   },
   "playlist.com": {
-   "requests": 2,
+   "requests": 1,
    "failures": 0,
    "errors": []
   },
   "livemomentous.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
+   "requests": 1,
+   "failures": 0,
+   "errors": []
   },
   "myequilibria.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "ouraring.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "planetfitness.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "tridot.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "pvolve.com": {
    "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.pvolve.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "reformrx.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "remedyplace.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "restore.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "runningmanfestival.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "skelcore.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "gosportsart.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "sweat440.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "sweathouz.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "technogym.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "the-athleticclubs.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "theranchlife.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 500 /",
-    "HTTP 500 /careers",
-    "HTTP 500 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "therabody.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "wellnessspace.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "timeout"
-   ]
-  },
-  "wild.ai": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "marianatek.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "zerowheel.fit": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "sephora.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "ulta.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "careers.ulta.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "nutrisystem.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "hellofresh.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "careers.hellofresh.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "onepeloton.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "nike.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.nike.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "booking.com": {
-   "requests": 6,
-   "failures": 2,
-   "errors": [
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "expedia.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "lifeatexpediagroup.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "iherb.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 403 /",
-    "HTTP 403 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "gnc.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 307 /",
-    "HTTP 307 /careers",
-    "HTTP 307 /jobs",
-    "HTTP 307 /karriere",
-    "HTTP 307 /de/karriere"
-   ]
-  },
-  "affiliate.23andme.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: ENOTFOUND",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "app.impact.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "spafinder.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "groupon.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 403 /",
-    "HTTP 403 /careers",
-    "HTTP 403 /jobs",
-    "HTTP 403 /karriere",
-    "HTTP 403 /de/karriere"
-   ]
-  },
-  "viator.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "partner.getyourguide.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "business.calm.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "calm.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "headspace.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "betterhelp.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "talkspace.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.talkspace.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "bettersleep.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "bettersleep.workable.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "allbirds.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "aloyoga.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "arcteryx.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "asics.com": {
-   "requests": 4,
-   "failures": 4,
-   "errors": [
-    "HTTP 403 /",
-    "fetch failed",
-    "fetch failed",
-    "fetch failed",
-    "3 network failures in a row: host skipped for the rest of this run"
-   ]
-  },
-  "bighealth.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "blueland.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "boweryfarming.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "bravehealth.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "brooksrunning.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "joincalibrate.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.calm.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "campspot.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "catapultsports.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.catapult.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "cerebral.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "chomps.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "clicktherapeutics.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "crewlabsports.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: ENOTFOUND",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "crossfit.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "curai.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "dailyharvest.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "davidprotein.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "eleanorhealth.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.eleanorhealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "embla.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: ECONNREFUSED",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "feedmediagroup.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "fitt.co": {
-   "requests": 7,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "fluidlogic.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "ats.rippling.com": {
-   "requests": 4,
-   "failures": 0,
-   "errors": []
-  },
-  "forward.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "found.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "freenome.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.freenome.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "garnerhealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "goodinside.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.goodinside.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "growtherapy.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "gruens.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "gymshark.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "hatch.co": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "healthie.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: EAI_AGAIN",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "heyjanehealth.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: ENOTFOUND",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "hungryroot.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "instridehealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "january.ai": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "juneshine.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "kaylo.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: ENOTFOUND",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "kickoff.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "trainwithkickoff.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "trainwithkickoff.notion.site": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "kodiakcakes.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "lenus.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: CERT_HAS_EXPIRED",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "littleotterhealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "mantrahealth.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "mavenclinic.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "maximus.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "maximus.avature.net": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "meruhealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "midihealth.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: ENOTFOUND",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "mindbloom.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "mntstudio.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "joinmodernhealth.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "choosemuse.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "myfitnesspal.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "nanit.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "neurahealth.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: EAI_AGAIN",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "nexthealth.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: This operation was aborted",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "drinkolipop.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "olly.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "omadahealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "onceuponafarmorganics.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "open.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: fetch failed",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "orangetheory.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "oshihealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "osmind.org": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "parsleyhealth.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "peachlab.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: ERR_TLS_CERT_ALTNAME_INVALID",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "pendulumlife.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "pomelocare.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 429 /",
-    "HTTP 429 /careers",
-    "HTTP 429 /jobs",
-    "HTTP 429 /karriere",
-    "HTTP 429 /de/karriere"
-   ]
-  },
-  "prenuvo.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "projecthealthyminds.org": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "prostasis.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "pushpress.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "redesignhealth.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "retreatvi.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "ritual.com": {
-   "requests": 6,
-   "failures": 2,
-   "errors": [
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "ro.co": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "rugiet.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "runna.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "web.runna.com": {
-   "requests": 2,
-   "failures": 2,
-   "errors": [
-    "HTTP 429 /survey",
-    "HTTP 429 /survey"
-   ]
-  },
-  "rvohealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "seed.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "slingshot.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "solidcore.co": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "springhealth.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "sweetgreen.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "careers.sweetgreen.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "swordhealth.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 429 /",
-    "HTTP 429 /careers",
-    "HTTP 429 /jobs",
-    "HTTP 429 /karriere",
-    "HTTP 429 /de/karriere"
-   ]
-  },
-  "tenthousand.cc": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "honest.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "thesis.co": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "thirtymadison.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "thistle.co": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "thrivemarket.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "thrivemarketjobs.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "trainfitness.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: DEPTH_ZERO_SELF_SIGNED_CERT",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "trainingpeaks.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "unitedathleticclub.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "viz.ai": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.viz.ai": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "whoop.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "xplor.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "zingcoach.com": {
-   "requests": 5,
-   "failures": 5,
-   "errors": [
-    "HTTP 403 /",
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "zushealth.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "zwift.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "rsg-group.com": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: This operation was aborted",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "fitx.de": {
-   "requests": 4,
-   "failures": 0,
-   "errors": []
-  },
-  "clever-fit.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere"
-   ]
-  },
-  "holmesplace.de": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.holmesplace.de": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "fitnessfirst.de": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "urbansportsclub.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "culture.urbansportsclub.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "wellhub.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "freeletics.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "kieser-training.de": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "mrssporty.de": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.mrssporty.de": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "bodystreet.com": {
-   "requests": 6,
-   "failures": 0,
-   "errors": []
-  },
-  "easyfitness.club": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "injoy.de": {
-   "requests": 4,
-   "failures": 2,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs"
-   ]
-  },
-  "fitone.de": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt: This operation was aborted",
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "elements.com": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.elements.com": {
-   "requests": 2,
-   "failures": 0,
-   "errors": []
-  },
-  "jumpers-fitness.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "onepeloton.de": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "gymondo.com": {
-   "requests": 3,
-   "failures": 0,
-   "errors": []
-  },
-  "adidas.de": {
-   "requests": 0,
-   "failures": 0,
-   "errors": [
-    "robots.txt disallows /",
-    "robots.txt disallows /careers",
-    "robots.txt disallows /jobs",
-    "robots.txt disallows /karriere",
-    "robots.txt disallows /de/karriere"
-   ]
-  },
-  "perfectgym.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /jobs",
-    "HTTP 404 /karriere"
-   ]
-  },
-  "magicline.com": {
-   "requests": 6,
-   "failures": 3,
-   "errors": [
-    "HTTP 404 /careers",
-    "HTTP 404 /karriere",
-    "HTTP 404 /de/karriere"
-   ]
-  },
-  "eversports.com": {
-   "requests": 5,
-   "failures": 4,
-   "errors": [
-    "HTTP 410 /careers",
-    "HTTP 410 /jobs",
-    "HTTP 410 /karriere",
-    "HTTP 410 /de/karriere"
-   ]
-  },
-  "dssv.de": {
-   "requests": 1,
-   "failures": 0,
-   "errors": []
-  },
-  "www.dssv.de": {
-   "requests": 4,
-   "failures": 0,
-   "errors": []
-  },
-  "insider.fitt.co": {
-   "requests": 2,
    "failures": 1,
    "errors": [
-    "HTTP 404 /jobs/"
+    "HTTP 404 /careers"
    ]
-  },
-  "api.ashbyhq.com": {
-   "requests": 5,
-   "failures": 0,
-   "errors": []
   },
   "boards-api.greenhouse.io": {
    "requests": 29,
@@ -1702,8 +164,103 @@
     "HTTP 404 /v1/boards/embed/jobs"
    ]
   },
+  "www.pvolve.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "remedyplace.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "restore.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "gosportsart.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "sweat440.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "sweathouz.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
   "apply.workable.com": {
    "requests": 2,
+   "failures": 0,
+   "errors": []
+  },
+  "therabody.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "marianatek.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "careers.ulta.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "careers.hellofresh.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "onepeloton.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.nike.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "booking.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "lifeatexpediagroup.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "partner.getyourguide.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "betterhelp.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "allbirds.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "aloyoga.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "arcteryx.com": {
+   "requests": 1,
    "failures": 0,
    "errors": []
   },
@@ -1714,7 +271,209 @@
     "HTTP 404 /v0/postings/interaxon"
    ]
   },
+  "boweryfarming.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "campspot.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "chomps.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "clicktherapeutics.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "curai.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.eleanorhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "feedmediagroup.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "ats.rippling.com": {
+   "requests": 2,
+   "failures": 0,
+   "errors": []
+  },
+  "forward.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "kickoff.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "trainwithkickoff.notion.site": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "maximus.avature.net": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "mindbloom.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "mntstudio.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "joinmodernhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "drinkolipop.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "orangetheory.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "parsleyhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "prenuvo.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "redesignhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "ritual.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "web.runna.com": {
+   "requests": 1,
+   "failures": 1,
+   "errors": [
+    "HTTP 429 /survey"
+   ]
+  },
+  "solidcore.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "springhealth.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "careers.sweetgreen.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "honest.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "thesis.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "thistle.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "trainingpeaks.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.viz.ai": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
   "api.smartrecruiters.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "fitx.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "clever-fit.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.holmesplace.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "fitnessfirst.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "wellhub.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "freeletics.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "kieser-training.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.mrssporty.de": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "bodystreet.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "easyfitness.club": {
    "requests": 1,
    "failures": 0,
    "errors": []
@@ -1725,12 +484,47 @@
    "errors": [
     "HTTP 404 /xml"
    ]
+  },
+  "www.elements.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "jumpers-fitness.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "gymondo.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "perfectgym.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "magicline.com": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
+  },
+  "www.dssv.de": {
+   "requests": 3,
+   "failures": 0,
+   "errors": []
+  },
+  "fitt.co": {
+   "requests": 1,
+   "failures": 0,
+   "errors": []
   }
  },
  "notes": [],
  "discovery": {
-  "tried": 199,
-  "found": 129,
+  "tried": 0,
+  "found": 0,
   "missing": [
    "amp",
    "Centr",
@@ -1805,21 +599,18 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 310,
-  "unique": 192,
-  "withPay": 17
+  "fetchedAfterGate": 300,
+  "unique": 198,
+  "withPay": 20
  },
  "summary": {
-  "live": 192,
-  "newThisWeek": 192,
-  "withPay": 17,
-  "newWithPay": 17,
-  "hostsFailed": 12,
-  "sourcesFailed": [
-   "ba",
-   "fitt"
-  ]
+  "live": 208,
+  "newThisWeek": 208,
+  "withPay": 22,
+  "newWithPay": 22,
+  "hostsFailed": 3,
+  "sourcesFailed": []
  },
- "finishedAt": "2026-10-31T09:43:12.901Z",
- "payLinesAppended": 17
+ "finishedAt": "2026-10-31T10:06:17.387Z",
+ "payLinesAppended": 5
 }
