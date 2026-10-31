@@ -8,6 +8,7 @@ ALLOW_ORIGIN  = "https://sqwod.life"   # only the live site may post rates
 MIN_FILL_MS   = "8000"                 # reject calculator runs faster than 8s
 MIN_CELL      = "30"                   # medians publish only for groups of 30+
 THROTTLE_SALT = "sqwod-pi-2026"        # salts the daily one-row-per-device hash
+VOTE_TOOLS    = "studio-break-even,churn-cost,market-numbers,pricing-index-de"   # coming tools that can be upvoted on /tools/ (src/config/tools.ts slugs)
 
 # Anonymous rate rows. Create once in the Cloudflare dashboard:
 #   Storage & Databases > D1 > Create > name "sqwod-pricing-index"

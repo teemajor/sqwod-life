@@ -37,6 +37,9 @@ const de = lang === 'de';
       <p>{de
         ? 'Wenn du uns per E-Mail kontaktierst oder ein Formular (z. B. die Pressemitteilungs-Einreichung) absendest, verarbeiten wir die von dir angegebenen Daten, um deine Anfrage zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO. Die Daten werden gelöscht, sobald sie für den Zweck nicht mehr erforderlich sind.'
         : 'If you contact us by email or submit a form (e.g. the press-release submission), we process the data you provide in order to handle your request. Legal basis: Art. 6(1)(b) or (f) GDPR. The data is deleted once it is no longer needed for that purpose.'}</p>
+      <p>{de
+        ? 'Upvotes auf der Tools-Seite: Wenn du für ein kommendes Tool stimmst, senden wir den Namen des Tools an einen Cloudflare Worker (Cloudflare, Inc., USA), der die Stimmen zählt. Damit niemand mehrfach am Tag abstimmt, bildet der Worker aus deiner IP-Adresse, dem Tool und dem Datum einen gesalzenen Hash-Wert; die IP-Adresse selbst wird nicht gespeichert, der Hash-Wert wird nach zwei Tagen gelöscht und nie mit den Zählern verknüpft. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer fairen Abstimmung).'
+        : 'Upvotes on the Tools page: when you vote for a coming tool, we send the tool name to a Cloudflare Worker (Cloudflare, Inc., USA) that counts the votes. To stop repeat votes on the same day, the Worker builds a salted hash from your IP address, the tool and the date; the IP address itself is not stored, the hash is deleted after two days and never linked to the counts. Legal basis: Art. 6(1)(f) GDPR (legitimate interest in a fair vote).'}</p>
 
       <p class="lbl">{de ? '6. Reichweitenmessung (Umami)' : '6. Analytics (Umami)'}</p>
       <p>{de

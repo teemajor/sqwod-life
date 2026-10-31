@@ -68,6 +68,12 @@ export const TOOLS: Tool[] = [
     answers: { en: 'How big is the fitness market in Germany, Austria and Switzerland, and who leads it?', de: 'Wie groß ist der Fitnessmarkt in Deutschland, Österreich und der Schweiz, und wer führt ihn an?' },
   },
   {
+    slug: 'pricing-index-de', status: 'coming',
+    name: { en: 'Coach Pricing Index DE', de: 'Coach Pricing Index DE' },
+    type: { en: 'calculator · Germany', de: 'Rechner · Deutschland' },
+    answers: { en: 'What do trainers and coaches earn in Germany, built from the pay in Sqwod Jobs?', de: 'Was verdienen Trainer:innen und Coaches in Deutschland, aus den Gehältern in Sqwod Jobs?' },
+  },
+  {
     slug: 'jobs', status: 'coming',
     name: { en: 'Sqwod Jobs', de: 'Sqwod Jobs' },
     type: { en: 'jobs · Germany', de: 'Jobs · Deutschland' },

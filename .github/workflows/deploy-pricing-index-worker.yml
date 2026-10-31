@@ -1,0 +1,25 @@
+name: Deploy Cloudflare Worker (pricing-index)
+
+# Ships infrastructure/pricing-index/worker.js (Coach Pricing Index rates and the Tools page
+# upvotes) to Cloudflare on push, like the subscribe Worker. The D1 binding and [vars] come
+# from wrangler.toml; the Worker creates its tables itself on the first request.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'infrastructure/pricing-index/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy pricing-index worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: infrastructure/pricing-index
+          command: deploy

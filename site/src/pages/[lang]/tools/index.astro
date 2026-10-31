@@ -1,14 +1,23 @@
 ---
-// Sqwod Tools: every free calculator and database in one place (Oct 2026).
-// Cards come from src/config/tools.ts; live numbers are read from the site's own data
-// files at build time (deals: src/lib/deals.ts, trainer pay: src/data/pricing-index/bls.json).
-// "I want this" on a coming tool is an Umami event (tool-vote), nothing is stored here.
+// Sqwod Tools: every free calculator and database in one place.
+// Layout (31 Oct 2026, mock "B · Spotlight" with the Deal Tracker card from mock A): Sqwod Jobs
+// leads as a spotlight with the Friday jobs alert inside it; the other live tools follow as cards
+// that preview what you get after the click; coming tools can be upvoted (counts live in the
+// pricing-index Worker, /vote and /votes). Every number is read from the site's own data files
+// at build time: deals (src/lib/deals.ts), investors (src/lib/investors.ts), jobs (src/lib/jobs.ts),
+// US trainer pay (src/data/pricing-index/bls.json). Cards come from src/config/tools.ts.
 import Base from '../../../layouts/Base.astro';
+import InlineSignup from '../../../components/InlineSignup.astro';
+import DealGlyphs from '../../../components/DealGlyphs.astro';
+import DealIcon from '../../../components/DealIcon.astro';
+import Flag from '../../../components/Flag.astro';
 import { languages, type Lang } from '../../../i18n/ui';
 import { TOOLS, type Tool } from '../../../config/tools';
+import { PRICING_INDEX } from '../../../config/pricing-index';
 import { liveDeals } from '../../../lib/deals';
-import { investors } from '../../../lib/investors';
-import { liveJobs, hasPay } from '../../../lib/jobs';
+import { investors, TYPE_LABEL, type InvestorType } from '../../../lib/investors';
+import { liveJobs, hasPay, jobsEdition, type Job } from '../../../lib/jobs';
+import { flagCode, countryName } from '../../../lib/flags';
 import bls from '../../../data/pricing-index/bls.json';
 
 export function getStaticPaths() {
@@ -17,39 +26,93 @@ export function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const de = lang === 'de';
 const loc = de ? 'de-DE' : 'en-GB';
+const fmtN = (n: number) => n.toLocaleString(loc);
 
-const deals = liveDeals();
+// ---- data, all from the site's own files
+const deals = liveDeals().sort((a, b) => b.date.localeCompare(a.date));
 const jobs = liveJobs();
+const inv = investors();
 // Jobs is live once the weekly run has published roles; until then it stays a "coming" card.
 const tools: Tool[] = TOOLS.map((t) => (t.slug === 'jobs' && jobs.length ? { ...t, status: 'live' as const } : t));
-const firstDeal = deals.map((d) => d.date).sort()[0];
-const sinceMonth = firstDeal ? new Date(firstDeal + 'T12:00:00Z').toLocaleDateString(loc, { month: 'long', timeZone: 'UTC' }) : '';
+const live = tools.filter((t) => t.status === 'live');
+const coming = tools.filter((t) => t.status === 'coming');
+const spotlight = live.find((t) => t.slug === 'jobs');
+const cards = live.filter((t) => t !== spotlight);
+const href = (slug: string) => tools.find((t) => t.slug === slug)?.href?.(lang) ?? '#';
 
-// One live number per live tool, each from a data file.
-const NUMBERS: Record<string, { n: string; unit: string }> = {
-  'deal-tracker': { n: deals.length.toLocaleString(loc), unit: de ? `Deals seit ${sinceMonth}` : `deals since ${sinceMonth}` },
-  'investor-map': { n: investors().length.toLocaleString(loc), unit: de ? 'Investoren, Programme und Käufer' : 'investors, programmes and buyers' },
-  'pricing-index': {
-    n: `$${bls.national.medianHourly.toFixed(2)}`,
-    unit: de ? 'Median-Stundenlohn von US-Trainer:innen' : 'median trainer pay / hour',
-  },
-  jobs: { n: jobs.length.toLocaleString(loc), unit: de ? `offene Stellen · ${jobs.filter(hasPay).length} mit Gehalt` : `open roles · ${jobs.filter(hasPay).length} with pay` },
+// jobs spotlight
+const jobsWithPay = jobs.filter(hasPay).length;
+const employers = new Set(jobs.map((j) => (j.employer || '').toLowerCase()).filter(Boolean)).size;
+const apprenticeships = jobs.filter((j) => j.type === 'apprenticeship').length;
+const CITY: [string, string, string][] = [['Berlin', 'berlin', 'Berlin'], ['Hamburg', 'hamburg', 'Hamburg'], ['München', 'muenchen', 'München'], ['Köln', 'koeln', 'Köln'], ['Frankfurt', 'frankfurt', 'Frankfurt']];
+const cityChips = CITY.map(([label, slug, region]) => ({ label, slug, n: jobs.filter((j) => j.region === region).length })).filter((c) => c.n > 0).sort((a, b) => b.n - a.n);
+const previewJobs = jobs.slice(0, 4);   // liveJobs() sorts pay listed first, then newest
+const eurK = (n: number) => (n >= 10000 ? `${(n / 1000).toLocaleString(loc, { maximumFractionDigits: 1 })}K` : n.toLocaleString(loc, { maximumFractionDigits: 2 }));
+const payShort = (j: Job) => {
+  if (!hasPay(j)) return null;
+  const a = j.payMin ?? j.payMax!, b = j.payMax ?? j.payMin!;
+  const amt = a === b ? `€${eurK(a)}` : `€${eurK(a)}–${eurK(b)}`;
+  const per = { hour: de ? '/Std.' : '/h', month: de ? '/Monat' : '/mo', year: de ? '/Jahr' : '/yr' }[j.payPeriod || 'year'];
+  return `${amt}${per}`;
 };
+const SRC: Record<string, string> = { ba: 'Arbeitsagentur', adzuna: 'Adzuna', 'career-page': de ? 'Karriereseite' : 'Careers page', dssv: 'DSSV', fitt: 'Fitt Insider' };
+const fmtDay = (d: string | null) => (d ? new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' }) : '');
+
+// deal tracker card: the 3 newest money deals, in the Deal Tracker's own card design
+const latestDeals = deals.slice(0, 3);
+const KIND: Record<string, string> = de
+  ? { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Schließung' }
+  : { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Closure' };
+const CAT_DE: Record<string, string> = { 'Gyms & studios': 'Studios & Clubs', 'Wearables & devices': 'Wearables & Geräte', 'Health & longevity': 'Health & Longevity', 'Nutrition & supplements': 'Ernährung & Supplements', 'Software & AI': 'Software & KI', 'Apparel & footwear': 'Bekleidung & Schuhe', Other: 'Sonstige' };
+const cName = (c: string) => (de ? CAT_DE[c] || c : c);
+const flagCodes = latestDeals.map((d) => flagCode(d.country)).filter(Boolean);
+
+// investor map card: directory by type
+const TYPES: InvestorType[] = ['vc', 'corporate', 'buyer', 'accelerator', 'competition', 'grant'];
+const byType = TYPES.map((t) => ({ t, n: inv.filter((i) => i.type === t).length })).filter((x) => x.n > 0);
+const maxType = Math.max(1, ...byType.map((x) => x.n));
+
+// pricing index card: highest state, national, lowest state (BLS OEWS)
+const states = Object.values(bls.states as Record<string, { name: string; medianHourly: number }>).filter((s) => s.medianHourly).sort((a, b) => b.medianHourly - a.medianHourly);
+const payRows = [
+  { k: states[0]?.name, v: states[0]?.medianHourly, hi: true },
+  { k: de ? 'USA gesamt (Median)' : 'US median', v: bls.national.medianHourly },
+  { k: states[states.length - 1]?.name, v: states[states.length - 1]?.medianHourly },
+].filter((r) => r.k && r.v);
 
 const T = de ? {
   title: 'Sqwod Tools: Rechner und Datenbanken fürs Fitness-Business',
   sub: 'Kostenlose Rechner und Datenbanken für alle, die ein Fitness-Business führen. Aufgebaut auf denselben Quellen wie unsere Reports.',
-  live: 'Live', coming: 'Bald', want: 'Will ich haben →', noted: 'Notiert, danke',
-  foot: 'Du willst eins der kommenden Tools zuerst? Tippe auf „Will ich haben“ oder antworte auf einen beliebigen Daily.',
+  live: 'Live', coming: 'Bald', isNew: 'Neu',
+  jobsQ: 'Wer stellt im Fitness-Business gerade ein?', jobsP: 'Trainer:innen, Studioleitungen und Ausbildungsplätze aus der Arbeitsagentur, von Adzuna und von Karriereseiten. Mit Gehalt, wann immer der Arbeitgeber es angibt.',
+  roles: 'offene Stellen', employers: 'Arbeitgeber', withPay: 'mit Gehalt', updated: 'aktualisiert', browse: 'Jobs ansehen →',
+  week: 'Diese Woche', payFirst: 'Gehalt zuerst', apprent: 'Ausbildung', noPay: 'ohne Gehaltsangabe',
+  alertHead: 'Neue Fitness-Jobs jeden Freitag', alertBody: 'Eine Mail pro Woche, nur Deutschland, mit Gehalt, wenn wir es haben.', alertBtn: 'Eintragen',
+  dealsTitle: 'Deal Tracker', latest: 'Neueste Deals', since: 'seit Juni', undisclosed: 'nicht genannt',
+  dealsP: 'Jede Finanzierung, Übernahme und Schließung in Fitness und Wellness, gegen die Quelle geprüft. Nach Region filterbar, CSV-Download.',
+  dealsCta: (n: number) => `Alle ${n} Deals ansehen →`,
+  invQ: 'Wer finanziert Fitness- und Wellness-Firmen?', invP: 'Fonds, Corporates, Accelerators und Förderprogramme, mit den Deals, an denen sie beteiligt waren.', invBy: 'Im Verzeichnis', invCta: 'Investoren finden →',
+  priceQ: 'Was sollte ich pro Einheit verlangen?', priceP: 'Dein Mindestpreis in fünf Schritten, neben dem Trainer-Stundenlohn in deinem US-Bundesstaat. Nur auf Englisch.', priceBy: 'Median-Stundenlohn, US-Trainer:innen', priceCta: 'Mindestpreis berechnen →',
+  comingH: 'Was sollen wir als Nächstes bauen?', comingP: 'Stimm für die Tools, die du willst. Das mit den meisten Stimmen bauen wir zuerst.',
+  vote: 'Dafür stimmen', voted: 'Gestimmt', votes: (n: number) => `${n} ${n === 1 ? 'Stimme' : 'Stimmen'}`,
+  foot: 'Lieber schreiben? Antworte auf einen beliebigen Daily und sag uns, welches Tool dir fehlt.',
 } : {
   title: 'Sqwod Tools: free calculators and databases for the fitness business',
   sub: 'Free calculators and databases for people who run fitness businesses. Built on the same sources as our reports.',
-  live: 'Live', coming: 'Coming', want: 'I want this →', noted: 'Noted, thanks',
-  foot: 'Want one of the coming tools first? Tap “I want this” or reply to any Daily.',
+  live: 'Live', coming: 'Coming', isNew: 'New',
+  jobsQ: 'Who’s hiring fitness people in Germany?', jobsP: 'Trainer, studio manager and Ausbildung places from the Arbeitsagentur, Adzuna and brand career pages. Pay shown whenever the employer gives it.',
+  roles: 'open roles', employers: 'employers', withPay: 'list pay', updated: 'updated', browse: 'Browse the jobs →',
+  week: 'This week', payFirst: 'Pay listed first', apprent: 'Ausbildung', noPay: 'pay not listed',
+  alertHead: 'New fitness jobs every Friday', alertBody: 'One email a week, Germany only, pay listed when we have it.', alertBtn: 'Get the alert',
+  dealsTitle: 'Deal Tracker', latest: 'Latest deals', since: 'since June', undisclosed: 'undisclosed',
+  dealsP: 'Every raise, acquisition and closure in fitness and wellness, checked against the source. Filter by region, download as CSV.',
+  dealsCta: (n: number) => `See all ${n} deals →`,
+  invQ: 'Who funds fitness and wellness companies?', invP: 'Funds, corporates, accelerators and grants, with the deals they took part in.', invBy: 'In the directory', invCta: 'Find investors →',
+  priceQ: 'What should I charge per session?', priceP: 'Your floor rate in five steps, next to trainer pay in your state.', priceBy: 'Median trainer pay / hour', priceCta: 'Find your floor rate →',
+  comingH: 'What should we build next?', comingP: 'Vote for the tools you want. The one with the most votes gets built first.',
+  vote: 'Upvote', voted: 'Voted', votes: (n: number) => `${n} ${n === 1 ? 'vote' : 'votes'}`,
+  foot: 'Rather write? Reply to any Daily and tell us which tool you are missing.',
 };
-const name = (t: Tool) => t.name[lang];
-const tag = (t: Tool) => `${t.status === 'live' ? T.live : T.coming} · ${t.type[lang]}`;
-const live = tools.filter((t) => t.status === 'live');
 
 const url = `https://sqwod.life/${lang}/tools/`;
 const schema = {
@@ -57,82 +120,265 @@ const schema = {
   isPartOf: { '@type': 'WebSite', name: 'sqwod.life', url: 'https://sqwod.life' },
   mainEntity: {
     '@type': 'ItemList', numberOfItems: live.length,
-    itemListElement: live.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: name(t), url: `https://sqwod.life${t.href!(lang)}`, description: t.answers[lang] })),
+    itemListElement: live.map((t, i) => ({ '@type': 'ListItem', position: i + 1, name: t.name[lang], url: `https://sqwod.life${t.href!(lang)}`, description: t.answers[lang] })),
   },
 };
 ---
 <Base lang={lang} title={T.title} description={T.sub} active="tools">
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <DealGlyphs flags={flagCodes} />
   <p class="kick">Sqwod Tools</p>
   <h1>Tools</h1>
   <p class="sub tl-sub">{T.sub}</p>
 
-  <div class="tl-grid">
-    {tools.map((t) => t.status === 'live' ? (
-      <article class="tl tl-live">
-        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{tag(t)}</span>
-        <h2 class="plain tl-h">{name(t)}</h2>
-        {NUMBERS[t.slug] && <p class="tl-num"><span class="dnum">{NUMBERS[t.slug].n}</span><span class="tl-unit">{NUMBERS[t.slug].unit}</span></p>}
-        <p class="tl-a">{t.answers[lang]}</p>
-        <a class="tl-go" href={t.href!(lang)} hreflang={t.enOnly && de ? 'en' : undefined} data-umami-event="tool-open" data-umami-event-tool={t.slug}>{t.cta![lang]}</a>
+  {spotlight && (
+    <section class="sp" aria-labelledby="sp-h">
+      <div class="sp-l">
+        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{T.isNew} · {spotlight.name[lang]}{jobsEdition && ` · ${T.updated} ${fmtDay(jobsEdition)}`}</span>
+        <h2 class="sp-h" id="sp-h">{T.jobsQ}</h2>
+        <div class="sp-stats">
+          <div><span class="dnum">{fmtN(jobs.length)}</span><span>{T.roles}</span></div>
+          <div><span class="dnum">{fmtN(employers)}</span><span>{T.employers}</span></div>
+          <div><span class="dnum sp-acc">{fmtN(jobsWithPay)}</span><span>{T.withPay}</span></div>
+        </div>
+        <p class="sp-p">{T.jobsP}</p>
+        <a class="tl-btn" href={href('jobs')} data-umami-event="tool-open" data-umami-event-tool="jobs">{T.browse}</a>
+        <div class="sp-alert">
+          <InlineSignup lang={lang} source="jobs-alert" event="jobs-alert" id="tools-jobs-alert" head={T.alertHead} body={T.alertBody} btn={T.alertBtn} roles={false} />
+        </div>
+      </div>
+      <div class="mini sp-r" aria-label={T.week}>
+        <div class="mini-h"><span>{T.week}</span><span>{T.payFirst}</span></div>
+        <div class="chips">
+          {cityChips.map((c) => <a href={`${href('jobs')}?city=${c.slug}`} data-umami-event="tool-open" data-umami-event-tool="jobs-city">{c.label}<b>{c.n}</b></a>)}
+          {apprenticeships > 0 && <a href={`${href('jobs')}?type=apprenticeship`} data-umami-event="tool-open" data-umami-event-tool="jobs-apprenticeship">{T.apprent}<b>{apprenticeships}</b></a>}
+        </div>
+        <ul class="jl">
+          {previewJobs.map((j) => (
+            <li>
+              <span class="jl-w"><b>{j.title}</b><small>{[j.employer, j.region === 'Remote DE' ? 'Remote' : j.city, SRC[j.source]].filter(Boolean).join(' · ')}</small></span>
+              {payShort(j) ? <span class="dnum jl-pay">{payShort(j)}</span> : <span class="jl-none">{T.noPay}</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <div class="tg">
+    {cards.map((t) => t.slug === 'deal-tracker' ? (
+      <article class="tc tc-deals">
+        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{T.live} · {t.type[lang]}</span>
+        <h2 class="plain tc-h">{T.dealsTitle}</h2>
+        <div class="mini">
+          <div class="mini-h"><span>{T.latest}</span><span>{fmtN(deals.length)} {T.since}</span></div>
+          <ul class="dl">
+            {latestDeals.map((d) => (
+              <li>
+                <span class="dl-w"><b>{d.entity}</b><small><DealIcon kind={d.kind} /><span class="dl-k">{KIND[d.kind] || d.kind}</span>{cName(d.category)}{d.country && <Fragment> · <Flag country={d.country} />{countryName(d.country, lang)}</Fragment>}</small></span>
+                {d.amount ? <span class={`dnum dl-amt${d.kind === 'raise' ? ' acc' : ''}`}>{d.amount}</span> : <span class="dl-und">{T.undisclosed}</span>}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <p class="tc-p">{T.dealsP}</p>
+        <a class="tl-btn" href={t.href!(lang)} data-umami-event="tool-open" data-umami-event-tool={t.slug}>{T.dealsCta(deals.length)}</a>
+      </article>
+    ) : t.slug === 'investor-map' ? (
+      <article class="tc">
+        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{T.live} · {t.type[lang]}</span>
+        <h2 class="plain tc-h tc-q">{T.invQ}</h2>
+        <div class="mini">
+          <div class="mini-h"><span>{T.invBy}</span><span>{fmtN(inv.length)}</span></div>
+          <ul class="bl">
+            {byType.map((x) => (
+              <li><span>{TYPE_LABEL[lang][x.t]}</span><i style={`--w:${Math.round((x.n / maxType) * 100)}%`} aria-hidden="true"></i><b>{fmtN(x.n)}</b></li>
+            ))}
+          </ul>
+        </div>
+        <p class="tc-p">{T.invP}</p>
+        <a class="tl-link" href={t.href!(lang)} data-umami-event="tool-open" data-umami-event-tool={t.slug}>{T.invCta}</a>
+      </article>
+    ) : t.slug === 'pricing-index' ? (
+      <article class="tc">
+        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{T.live} · {t.type[lang]}</span>
+        <h2 class="plain tc-h tc-q">{T.priceQ}</h2>
+        <div class="mini">
+          <div class="mini-h"><span>{T.priceBy}</span><span>BLS {bls.period}</span></div>
+          <ul class="pl">
+            {payRows.map((r) => <li><span>{r.k}</span><b class={`dnum${r.hi ? ' acc' : ''}`}>${r.v!.toFixed(2)}</b></li>)}
+          </ul>
+        </div>
+        <p class="tc-p">{T.priceP}</p>
+        <a class="tl-link" href={t.href!(lang)} hreflang={t.enOnly && de ? 'en' : undefined} data-umami-event="tool-open" data-umami-event-tool={t.slug}>{T.priceCta}</a>
       </article>
     ) : (
-      <article class="tl tl-coming">
-        <span class="tl-tag">{tag(t)}</span>
-        <h2 class="plain tl-h">{name(t)}</h2>
-        <p class="tl-a">{t.answers[lang]}</p>
-        <a class="tl-vote" href="#vote" data-umami-event="tool-vote" data-umami-event-tool={t.slug}>{T.want}</a>
-        <span class="tl-noted" role="status" aria-live="polite" tabindex="-1"></span>
+      <article class="tc">
+        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{T.live} · {t.type[lang]}</span>
+        <h2 class="plain tc-h">{t.name[lang]}</h2>
+        <p class="tc-p">{t.answers[lang]}</p>
+        <a class="tl-link" href={t.href!(lang)} data-umami-event="tool-open" data-umami-event-tool={t.slug}>{t.cta![lang]}</a>
       </article>
     ))}
   </div>
 
-  <p class="tl-foot" id="vote">{T.foot}</p>
+  {coming.length > 0 && (
+    <section class="vt" id="vote" aria-labelledby="vt-h">
+      <div class="vt-head">
+        <h2 class="plain vt-h" id="vt-h">{T.comingH}</h2>
+        <p>{T.comingP}</p>
+      </div>
+      <ul class="vt-list">
+        {coming.map((t) => (
+          <li class="vt-item">
+            <div class="vt-w">
+              <span class="vt-tag">{T.coming} · {t.type[lang]}</span>
+              <b>{t.name[lang]}</b>
+              <small>{t.answers[lang]}</small>
+            </div>
+            <button type="button" class="vt-btn" data-tool={t.slug} aria-pressed="false" data-umami-event="tool-vote" data-umami-event-tool={t.slug} data-label={T.vote} data-label-on={T.voted}>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 5l7 9H5z" fill="currentColor"/></svg>
+              <span class="vt-l">{T.vote}</span>
+              <span class="vt-n" data-count hidden></span>
+            </button>
+          </li>
+        ))}
+      </ul>
+      <p class="vt-foot">{T.foot}</p>
+    </section>
+  )}
 </Base>
 
-<script is:inline define:vars={{ noted: T.noted }}>
-  // "I want this": Umami records the click (data-umami-event); this only swaps the link
-  // for a thank-you and keeps the page where it was (the #vote jump is the no-JS fallback).
+<script is:inline define:vars={{ endpoint: PRICING_INDEX.endpoint, votesLabel: { one: T.votes(1), many: T.votes(2).replace('2', '{n}') } }}>
+  // Upvotes for coming tools: counts from the pricing-index Worker (/votes), one vote per tool
+  // per browser (remembered in localStorage) and per device per day (checked by the Worker).
+  // Umami records every click too (data-umami-event="tool-vote"). Without the Worker the
+  // buttons still work and record the vote locally; the counts stay hidden.
   (function () {
-    var keep = null, lastMsg = null;
-    document.querySelectorAll('.tl-vote').forEach(function (a) {
-      a.addEventListener('click', function () {
-        keep = window.scrollY;
-        var card = a.closest('.tl');
-        var msg = card && card.querySelector('.tl-noted');
-        a.remove();   // one vote per card
-        if (msg) { msg.textContent = noted; msg.focus(); lastMsg = msg; }
+    var KEY = 'sqwod_tool_votes';
+    var mine = {};
+    try { mine = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) {}
+    var counts = {};
+    var btns = document.querySelectorAll('.vt-btn');
+    var label = function (n) { return n === 1 ? votesLabel.one : votesLabel.many.replace('{n}', n); };
+    function paint() {
+      btns.forEach(function (b) {
+        var t = b.getAttribute('data-tool'), on = !!mine[t];
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        b.querySelector('.vt-l').textContent = b.getAttribute(on ? 'data-label-on' : 'data-label');
+        var c = b.querySelector('[data-count]');
+        if (typeof counts[t] === 'number') { c.textContent = label(counts[t]); c.hidden = false; }
       });
-    });
-    window.addEventListener('hashchange', function () {
-      if (keep === null || location.hash !== '#vote') return;
-      var y = keep; keep = null;
-      // drop the hash so the next vote fires hashchange again
-      history.replaceState(null, '', location.pathname + location.search);
-      window.scrollTo(0, y);
-      requestAnimationFrame(function () { window.scrollTo(0, y); if (lastMsg) lastMsg.focus({ preventScroll: true }); });
+    }
+    paint();
+    fetch(endpoint + '/votes').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      if (d && d.ok && d.votes) { counts = d.votes; paint(); }
+    }).catch(function () {});
+    btns.forEach(function (b) {
+      b.addEventListener('click', function () {
+        var t = b.getAttribute('data-tool');
+        if (mine[t]) return;
+        mine[t] = 1;
+        try { localStorage.setItem(KEY, JSON.stringify(mine)); } catch (e) {}
+        if (typeof counts[t] === 'number') counts[t] += 1;
+        paint();
+        fetch(endpoint + '/vote', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ tool: t }) }).catch(function () {});
+      });
     });
   })();
 </script>
 
 <style>
   .tl-sub{max-width:62ch}
-  .tl-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0 0}
-  @media(max-width:699px){.tl-grid{grid-template-columns:1fr}}
-  .tl{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;padding:24px;min-width:0}
-  .tl-live{background:var(--panel);border-color:var(--accent-line)}
-  .tl-coming{background:transparent;opacity:.78}
-  .tl-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g1)}
-  .tl-live .tl-tag{color:var(--accent)}
-  .tl-h{font-size:20px;font-weight:600;letter-spacing:-.01em;line-height:1.25;margin:2px 0 0}
-  .tl-num{display:flex;flex-direction:column;gap:6px;margin:6px 0 0}
-  .tl-num .dnum{font-size:64px;color:var(--accent)}
-  .tl-unit{font-size:13px;color:var(--g2)}
-  .tl-a{margin:0;font-size:14.5px;line-height:1.5;color:var(--g1)}
-  .tl-live .tl-a{color:var(--g2)}
-  .tl-go,.tl-vote{display:inline-flex;align-items:center;align-self:flex-start;min-height:44px;margin-top:auto;font-size:15px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
-  .tl-go:hover,.tl-vote:hover{color:var(--accent)}
-  .tl-noted{font-size:14px;font-weight:600;color:var(--chalk);outline:none}
-  .tl-noted:not(:empty){margin-top:auto;min-height:44px;display:inline-flex;align-items:center}
-  .tl-foot{margin:28px 0 8px;padding-top:18px;border-top:1px solid var(--line);font-size:14.5px;line-height:1.5;color:var(--g2);max-width:70ch}
+  .tl-tag{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+  .acc{color:var(--accent)}
+  .tl-btn{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;min-height:48px;padding:0 22px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:15px;text-decoration:none;white-space:nowrap}
+  .tl-btn:hover{background:var(--chalk);color:var(--ink)}
+  :global(:root[data-theme="light"]) .tl-btn:not(:hover){color:#fff}
+  @media (prefers-color-scheme: light){:global(:root:not([data-theme="dark"])) .tl-btn:not(:hover){color:#fff}}
+  .tl-link{display:inline-flex;align-items:center;align-self:flex-start;min-height:44px;margin-top:auto;font-size:15px;font-weight:700;color:var(--chalk);text-decoration:underline;text-underline-offset:4px}
+  .tl-link:hover{color:var(--accent)}
+  .mini{border:1px solid var(--line);border-radius:14px;background:var(--bg);padding:12px 14px}
+  .mini-h{display:flex;justify-content:space-between;gap:10px;font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g2);margin-bottom:8px}
+
+  /* spotlight */
+  .sp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:28px;align-items:start;margin:28px 0 0;padding:26px;border:1px solid var(--accent-line);border-radius:22px;background:var(--panel)}
+  .sp-l{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+  .sp-h{font-size:clamp(34px,4.2vw,52px);line-height:.95;margin:12px 0 14px;text-wrap:balance;hyphens:manual}
+  .sp-stats{display:flex;flex-wrap:wrap;gap:24px;margin:0 0 14px}
+  .sp-stats div{display:flex;flex-direction:column;gap:4px}
+  .sp-stats .dnum{font-size:40px;color:var(--chalk)}
+  .sp-stats .sp-acc{color:var(--accent)}
+  .sp-stats span:last-child{font-size:12.5px;color:var(--g2)}
+  .sp-p{margin:0 0 16px;color:var(--g2);line-height:1.5;max-width:48ch}
+  .sp-alert{width:100%;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+  .sp-alert :global(.isu){margin:0;padding:0;border:0;background:none}
+  .sp-alert :global(.isu-h){font-size:17px;font-family:var(--sans);text-transform:none;letter-spacing:-.01em}
+  .sp-alert :global(.isu-p){margin-bottom:10px;font-size:14px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:6px}
+  .chips a{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--panel);font-size:12.5px;color:var(--g1);text-decoration:none}
+  .chips a:hover{border-color:var(--accent-line);color:var(--chalk)}
+  .chips b{color:var(--chalk)}
+  .jl{list-style:none;margin:0;padding:0}
+  .jl li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}
+  .jl-w{min-width:0}
+  .jl-w b{display:block;font-size:14px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .jl-w small{display:block;font-size:12px;color:var(--g2);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .jl-pay{font-size:18px;color:var(--accent);white-space:nowrap}
+  .jl-none{font-size:11.5px;color:var(--g2);white-space:nowrap}
+
+  /* live tool cards */
+  .tg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:14px 0 0}
+  .tc{display:flex;flex-direction:column;gap:12px;min-width:0;padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--panel)}
+  .tc-deals{border-color:var(--accent-line)}
+  .tc-h{margin:0;font-size:20px;font-weight:600;letter-spacing:-.01em;line-height:1.25}
+  .tc-q{text-wrap:balance}
+  .tc-p{margin:0;font-size:14px;line-height:1.5;color:var(--g2)}
+  .tc-deals .tl-btn{margin-top:auto}
+  .dl{list-style:none;margin:0;padding:0}
+  .dl li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+  .dl li:first-child{border-top:0;padding-top:2px}
+  .dl-w{min-width:0}
+  .dl-w b{display:block;font-size:14.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dl-w small{display:flex;flex-wrap:wrap;align-items:center;gap:0 6px;margin-top:4px;font-size:11.5px;color:var(--g2)}
+  .dl-k{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g1)}
+  .dl-amt{font-size:22px;white-space:nowrap}
+  .dl-und{font-size:11.5px;color:var(--g2)}
+  .bl{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+  .bl li{display:grid;grid-template-columns:7.5em minmax(0,1fr) auto;gap:10px;align-items:center;font-size:12.5px;color:var(--g1)}
+  .bl i{display:block;height:8px;width:var(--w);min-width:4px;border-radius:4px;background:var(--edge)}
+  .bl li:first-child i{background:var(--accent)}
+  .bl b{font-variant-numeric:tabular-nums;color:var(--chalk)}
+  .pl{list-style:none;margin:0;padding:0}
+  .pl li{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:13.5px}
+  .pl li:first-child{border-top:0}
+  .pl b{font-size:22px}
+
+  /* coming tools: upvotes */
+  .vt{margin:34px 0 10px;padding-top:24px;border-top:1px solid var(--line)}
+  .vt-head{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:6px 20px;margin-bottom:14px}
+  .vt-h{margin:0;font-size:22px;font-weight:700;letter-spacing:-.01em}
+  .vt-head p{margin:0;font-size:14px;color:var(--g2);max-width:52ch}
+  .vt-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .vt-item{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 16px;border:1px dashed var(--edge);border-radius:14px}
+  .vt-w{min-width:0}
+  .vt-tag{display:block;font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--g2)}
+  .vt-w b{display:block;font-size:15.5px;margin:3px 0 2px}
+  .vt-w small{display:block;font-size:13px;line-height:1.45;color:var(--g2)}
+  .vt-btn{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:86px;min-height:64px;padding:8px 10px;border:1px solid var(--edge);border-radius:12px;background:var(--panel);color:var(--chalk);font:inherit;font-size:12.5px;font-weight:700;cursor:pointer;flex:none}
+  .vt-btn:hover{border-color:var(--accent)}
+  .vt-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .vt-btn[aria-pressed="true"]{border-color:var(--accent-line);background:var(--accent-soft);color:var(--accent);cursor:default}
+  .vt-n{font-size:11px;font-weight:500;color:var(--g2)}
+  .vt-foot{margin:14px 0 0;font-size:13.5px;color:var(--g2)}
+
+  @media (max-width:1000px){ .tg{grid-template-columns:repeat(2,minmax(0,1fr))} }
+  @media (max-width:899px){
+    .sp{grid-template-columns:1fr;padding:20px;gap:20px}
+    .sp-stats .dnum{font-size:34px}
+  }
+  @media (max-width:700px){
+    .tg,.vt-list{grid-template-columns:1fr}
+    .tl-btn{width:100%}
+  }
 </style>
