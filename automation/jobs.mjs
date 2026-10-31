@@ -314,7 +314,7 @@ export function baDetailPay(detail, category) {
     if (Array.isArray(x)) return x.forEach((v) => walk(v, key));
     if (typeof x === 'object') return Object.entries(x).forEach(([k, v]) => walk(v, /verguet|gehalt|lohn|entgelt|salar|pay/i.test(k) ? k : key ? `${key}.${k}` : ''));
     if (!/verguet|gehalt|lohn|entgelt|salar|pay/i.test(key)) return;
-    if (/angabe$/i.test(key) && typeof x === 'string' && /^[A-Z_]+$/.test(x)) return;   // the category enum itself
+    if (typeof x === 'string' && /^[A-Z_]+$/.test(x.trim())) return;   // enums such as GEHALTSSPANNE, FESTGEHALT, STUNDENLOHN
     if (typeof x === 'number' && x > 0) nums.push({ key, n: x });
     else if (typeof x === 'string' && x.trim()) texts.push(x.trim());
   };
@@ -325,7 +325,9 @@ export function baDetailPay(detail, category) {
     const lo = nums.find((v) => /von|min|ab|unten|lower/i.test(v.key))?.n ?? Math.min(...nums.map((v) => v.n));
     const hi = nums.find((v) => /bis|max|oben|upper/i.test(v.key))?.n ?? Math.max(...nums.map((v) => v.n));
     const p = period || (hi <= 150 ? 'hour' : hi <= 15000 ? 'month' : 'year');
-    return { payText: payText || `${lo}${hi !== lo ? `–${hi}` : ''} € (${p})`, payMin: lo, payMax: hi, payPeriod: p, payCurrency: 'EUR' };
+    const fmt = (n) => `${Number(n).toLocaleString('de-DE', { maximumFractionDigits: 2 })} €`;
+    const unit = { hour: 'Std.', month: 'Monat', year: 'Jahr' }[p];
+    return { payText: payText || `${lo !== hi ? `${fmt(lo)} – ${fmt(hi)}` : fmt(lo)} / ${unit} (Arbeitsagentur)`, payMin: lo, payMax: hi, payPeriod: p, payCurrency: 'EUR' };
   }
   const parsed = parsePay(payText);
   if (parsed.payMin != null || parsed.payMax != null) {
@@ -600,6 +602,7 @@ const DROP_TITLE_RX = /(reinig|putzkraft|cleaner|cleaning|hausmeister)/i;
 // German job titles glue words together ("Fitnesstrainer", "Studioleiter"), which the
 // word-bounded isOnBrand vocabulary misses. These compounds count too; OFFTOPIC still blocks.
 const JOB_COMPOUND_RX = /(fitness|trainer|studio|yoga|pilates|physio|\bsport\w*|wellness|ernährungsberat|personaltrain)/i;
+const FITNESS_CTX_RX = /(fitness|gym|studio|sport|yoga|pilates|physio|reha|wellness|gesundheit|kurs|aqua|bäder|\bbad\b|schwimm|sauna|\bspa\b|therm|club|personal ?train|ernährung|bewegung|athlet|crossfit|hyrox|boulder|kletter|tanz|dance|massage|vital|body|rücken|mma|kampfsport|box|martial|longevity|biohack|kieser|mrs\.? ?sporty|mcfit|injoy|clever ?fit|fitx|john reed|easyfit|kraftwerk|holmes|urban sports)/i;
 // …but not the trainers and "sport" jobs of other trades that BA keyword search returns
 const JOB_DENY_RX = /\b(sap|it|software|erste[- ]hilfe|lkw|fahrer\w*|transport\w*|pflege\w*|kranken\w*|verkehr\w*|fahrlehrer\w*|hunde\w*|sprach\w*|excel|vertriebstrainer\w*|verkaufstrainer\w*)\b/i;
 /** Off-topic gate. Brand career pages are on-brand by the list itself (they are fitness and
@@ -609,6 +612,9 @@ export function keepJob(j) {
   if (j.source === 'career-page') return true;
   const text = `${j.title} ${j.employer || ''}`;
   if (JOB_DENY_RX.test(j.title)) return false;
+  // Job boards return any "Trainer" or "Coach" (Agile Coach, Technischer Trainer): the title or
+  // employer must also name the fitness world (31 Oct 2026, run 7).
+  if (!FITNESS_CTX_RX.test(`${j.title} ${j.employer || ''}`)) return false;
   return isOnBrand(text) || (JOB_COMPOUND_RX.test(text) && !OFFTOPIC_RX.test(text));
 }
 
@@ -765,6 +771,10 @@ async function run() {
 
   const store = readStore();
   const merged = mergeRun(store.jobs, unique, { failedSources: failed });
+  // the on-topic gate tightens over time: stored rows that no longer pass leave the page (kept in the file)
+  let dropped = 0;
+  for (const j of merged) if (!j.expired && !keepJob(j)) { j.expired = true; j.dropped = 'off-topic'; dropped++; }
+  if (dropped) runLog.notes.push(`${dropped} stored roles failed the on-topic gate and were taken off the page.`);
   const live = merged.filter((j) => !j.expired);
   if (!args.dry) await classify(live);
   const week = Date.now() - 7 * DAY;
@@ -872,6 +882,9 @@ function selftest() {
   t('gate: drops Gebäudereinigung', !keepJob({ title: 'Gebäudereinigung Fitnessstudio', employer: 'X', source: 'ba' }));
   t('gate: drops SAP Trainer', !keepJob({ title: 'SAP Trainer (m/w/d)', employer: 'Beratung GmbH', source: 'ba' }));
   t('gate: drops Transport', !keepJob({ title: 'LKW-Fahrer Transport', employer: 'Spedition', source: 'ba' }));
+  t('gate: drops Agile Coach', !keepJob({ title: 'Agile Coach (m/w/d)', employer: 'FERCHAU GmbH', source: 'ba' }));
+  t('gate: drops technical trainer', !keepJob({ title: 'Technischer Trainer - Automatisierungstechnik (m/w/d)', employer: 'Tesla Germany GmbH', source: 'ba' }));
+  t('gate: keeps MMA trainer and gym-named employer', keepJob({ title: 'MMA-Trainer (m/w/d)', employer: 'ExoWork', source: 'ba' }) && keepJob({ title: 'Trainer (m/w/d)', employer: 'Bodyloft Rottweil', source: 'adzuna' }));
   t('gate: brand page counts', keepJob({ title: 'Software Engineer', employer: 'Whoop', source: 'career-page' }));
   // robots.txt
   const rr = robotsRules('User-agent: *\nDisallow: /private\nAllow: /private/jobs\n\nUser-agent: OtherBot\nDisallow: /');
@@ -916,6 +929,8 @@ function selftest() {
   t('ba detail pay: structured numbers', dp4.payMin === 2600 && dp4.payMax === 3100 && dp4.payPeriod === 'month', dp4);
   const dp5 = baDetailPay({ verguetungsangabe: 'STUNDENLOHN', verguetung: '15 €' }, 'STUNDENLOHN');
   t('ba detail pay: category enum ignored, 15 € hourly', dp5.payMin === 15 && dp5.payPeriod === 'hour', dp5);
+  const dp6 = baDetailPay({ artDerVerguetung: 'GEHALTSSPANNE', gehaltsspanneVon: 26000, gehaltsspanneBis: 34000 }, 'JAHRESGEHALT');
+  t('ba detail pay: gehaltsspanne, readable text', dp6.payMin === 26000 && dp6.payMax === 34000 && dp6.payPeriod === 'year' && dp6.payText === '26.000 € – 34.000 € / Jahr (Arbeitsagentur)', dp6);
   t('json-ld: finds JobPosting in @graph', jsonLdJobs('<script type="application/ld+json">{"@graph":[{"@type":"JobPosting","title":"x"}]}</script>').length === 1);
   console.log(ok ? 'selftest passed' : 'selftest FAILED');
   process.exit(ok ? 0 : 1);
