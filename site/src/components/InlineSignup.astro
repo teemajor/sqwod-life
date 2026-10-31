@@ -10,8 +10,9 @@ import type { Lang } from '../i18n/ui';
 // Optional overrides (join landing page, Oct 2026): `btn` and `fine` replace the button and
 // fine-print copy, `event` the Umami event name, `emailLabel` renders a visible <label> for the
 // email field (default: aria-label only). Callers that pass none of these render as before.
-interface Props { lang: Lang; source: string; variant?: 'default' | 'daily' | 'hero'; id?: string; head?: string; body?: string; role?: string; btn?: string; fine?: string; event?: string; emailLabel?: string }
-const { lang, source, variant = 'default', id, head, body, role, btn, fine, event = 'subscribe', emailLabel } = Astro.props;
+// `roles={false}` hides the role picker (a one-line form, e.g. inside the Tools page Jobs spotlight).
+interface Props { lang: Lang; source: string; variant?: 'default' | 'daily' | 'hero'; id?: string; head?: string; body?: string; role?: string; btn?: string; fine?: string; event?: string; emailLabel?: string; roles?: boolean }
+const { lang, source, variant = 'default', id, head, body, role, btn, fine, event = 'subscribe', emailLabel, roles: showRoles = true } = Astro.props;
 const de = lang === 'de';
 
 const base = variant === 'daily'
@@ -45,14 +46,14 @@ const emailId = `${groupId}-email`;
       <input type="hidden" name="source" value={source} />
       <input type="hidden" name="ts" class="sb-ts" value="" />
       <input type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" class="isu-hp" />
-      <fieldset class="isu-roles">
+      {showRoles && <fieldset class="isu-roles">
         <legend class="isu-legend">{T.iam}</legend>
         <div class="isu-pills">
           {roles.map(([v, label]) => (
             <label class="isu-pill"><input type="radio" name="role" value={v} checked={v === role} /><span>{label}</span></label>
           ))}
         </div>
-      </fieldset>
+      </fieldset>}
       {emailLabel && <label class="isu-legend isu-label" for={emailId}>{emailLabel}</label>}
       <div class="isu-row">
         {emailLabel

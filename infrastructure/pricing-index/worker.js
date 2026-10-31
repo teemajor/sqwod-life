@@ -13,9 +13,14 @@
  *   GET  /stats       ← public aggregates. Counts always; medians and
  *                       percentiles only for groups with MIN_CELL+ responses.
  *
+ *   POST /vote        ← {tool} from the "coming tools" upvote on sqwod.life/<lang>/tools/.
+ *                       Origin gate, tool must be in VOTE_TOOLS, one vote per tool
+ *                       per device per day (same salted daily hash, same purge).
+ *   GET  /votes       ← public counts per coming tool.
+ *
  * Bindings: DB (D1 database "sqwod-pricing-index"). Tables are created on first
  * request, so no separate migration step.
- * Vars: ALLOW_ORIGIN, MIN_FILL_MS, MIN_CELL, THROTTLE_SALT.
+ * Vars: ALLOW_ORIGIN, MIN_FILL_MS, MIN_CELL, THROTTLE_SALT, VOTE_TOOLS (comma-separated slugs).
  */
 
 const STATES = new Set(('AL AK AZ AR CA CO CT DE DC FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY').split(' '));
@@ -39,6 +44,7 @@ const SCHEMA = [
      hours TEXT NOT NULL
    )`,
   `CREATE TABLE IF NOT EXISTS throttle (k TEXT PRIMARY KEY, day TEXT NOT NULL)`,
+  `CREATE TABLE IF NOT EXISTS votes (tool TEXT PRIMARY KEY, n INTEGER NOT NULL DEFAULT 0)`,
 ];
 let schemaReady = false;
 async function ensureSchema(env) {
@@ -62,6 +68,8 @@ export default {
     try {
       if (req.method === 'POST' && url.pathname === '/contribute') return await contribute(req, env);
       if (req.method === 'GET' && url.pathname === '/stats') return await stats(env);
+      if (req.method === 'POST' && url.pathname === '/vote') return await vote(req, env);
+      if (req.method === 'GET' && url.pathname === '/votes') return await votes(env);
     } catch (e) {
       return json({ ok: false, error: 'server' }, 500, cors(env, 'GET, POST, OPTIONS'));
     }
@@ -160,6 +168,42 @@ async function stats(env) {
     online: dist(rows.map((r) => r.online_monthly), minCell),        // online + hybrid monthly prices
     states,
   }, 200, h);
+}
+
+// ---- "coming tools" upvotes (Tools page, Oct 2026) ----
+const voteTools = (env) => new Set(String(env.VOTE_TOOLS || '').split(',').map((s) => s.trim()).filter(Boolean));
+
+async function vote(req, env) {
+  const h = cors(env, 'POST, OPTIONS');
+  const origin = req.headers.get('Origin') || '';
+  if (origin !== (env.ALLOW_ORIGIN || 'https://sqwod.life')) return json({ ok: false, error: 'origin' }, 403, h);
+  let b;
+  try { b = await req.json(); } catch { return json({ ok: false, error: 'bad_json' }, 400, h); }
+  const tool = String(b.tool || '');
+  if (!voteTools(env).has(tool)) return json({ ok: false, error: 'invalid' }, 400, h);
+  await ensureSchema(env);
+  // one vote per tool per device per day: salted daily hash, purged after 2 days, never stored with the count
+  const day = new Date().toISOString().slice(0, 10);
+  const ip = req.headers.get('CF-Connecting-IP') || '';
+  const k = await sha256(`vote|${tool}|${ip}|${day}|${env.THROTTLE_SALT || ''}`);
+  const ins = await env.DB.prepare('INSERT OR IGNORE INTO throttle (k, day) VALUES (?, ?)').bind(k, day).run();
+  if (!ins.meta || ins.meta.changes === 0) return json({ ok: true, dup: true }, 200, h);
+  await env.DB.batch([
+    env.DB.prepare('INSERT INTO votes (tool, n) VALUES (?, 1) ON CONFLICT(tool) DO UPDATE SET n = n + 1').bind(tool),
+    env.DB.prepare('DELETE FROM throttle WHERE day < ?').bind(new Date(Date.now() - 2 * 86400000).toISOString().slice(0, 10)),
+  ]);
+  return json({ ok: true }, 200, h);
+}
+
+async function votes(env) {
+  const h = { ...cors(env, 'GET, OPTIONS'), 'Access-Control-Allow-Origin': '*', 'Cache-Control': 'public, max-age=60' };
+  await ensureSchema(env);
+  const { results } = await env.DB.prepare('SELECT tool, n FROM votes').all();
+  const allowed = voteTools(env);
+  const counts = {};
+  for (const t of allowed) counts[t] = 0;
+  for (const r of results || []) if (allowed.has(r.tool)) counts[r.tool] = r.n;
+  return json({ ok: true, votes: counts }, 200, h);
 }
 
 async function sha256(s) {
