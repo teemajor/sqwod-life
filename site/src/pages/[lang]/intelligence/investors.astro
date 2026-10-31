@@ -56,7 +56,7 @@ const T = de ? {
   heroH1: 'Wer Fitness und Wellness finanziert.',
   sub: 'Fonds, Corporates, Accelerators, Wettbewerbe und Förderprogramme für Gründer:innen in Fitness, Wellness und Health-Tech, plus jeder Geldgeber und Käufer aus dem Deal Tracker. Mit Portfolio-Daten von CB Insights und Crunchbase, Quelle und Prüfdatum.',
   crumb: 'Investor Map', checked: 'Geprüft', entries: 'Einträge', withDeals: 'mit Deals im Tracker', countries: 'Länder', open: 'offene Aufrufe',
-  cta: 'Passende Investoren finden →', tracker: 'Zum Deal Tracker',
+  cta: 'Passende Investoren finden →', tracker: 'Zum Deal Tracker', globe: '3D-Globus öffnen', globeKick: 'Investor Globe', globeH: 'Alle Investoren auf einem drehbaren Globus.', globeP: 'Punkt = Sitz, Größe = Investments der letzten 12 Monate, Bogen = ein Deal aus dem Tracker in einem anderen Land. Mit Tour durch die Regionen.',
   all: 'Alle', region: 'Region', country: 'Land', eu: 'Europa & DACH', search: 'Investor, Programm oder Portfolio-Firma suchen …', count: 'Einträge', clear: 'Alle Filter löschen', none: 'Kein Eintrag passt zu diesen Filtern.',
   filters: 'Filter', showResults: 'Einträge anzeigen', close: 'Schließen', more: 'Alle anzeigen', less: 'Weniger anzeigen',
   fType: 'Art', fStage: 'Phase', fCheck: 'Ticketgröße', fFocus: 'Fokus', fActivity: 'Aktivität & Zugang',
@@ -88,7 +88,7 @@ const T = de ? {
   heroH1: 'Who funds fitness and wellness.',
   sub: 'Funds, corporates, accelerators, competitions and grants for founders in fitness, wellness and health tech, plus every backer and buyer from the Deal Tracker. With portfolio data from CB Insights and Crunchbase, a source and a check date.',
   crumb: 'Investor Map', checked: 'Checked', entries: 'entries', withDeals: 'with deals in the tracker', countries: 'countries', open: 'open calls',
-  cta: 'Find my investors →', tracker: 'Open the Deal Tracker',
+  cta: 'Find my investors →', tracker: 'Open the Deal Tracker', globe: 'Open the 3D globe', globeKick: 'Investor Globe', globeH: 'Every investor on a globe you can spin.', globeP: 'Dot = HQ, size = investments in the last 12 months, arc = a tracker deal in another country. With a tour through the regions.',
   all: 'All', region: 'Region', country: 'Country', eu: 'Europe & DACH', search: 'Search an investor, programme or portfolio company…', count: 'entries', clear: 'Clear all filters', none: 'No entries match these filters.',
   filters: 'Filters', showResults: 'Show results', close: 'Close', more: 'Show all', less: 'Show fewer',
   fType: 'Type', fStage: 'Stage', fCheck: 'Cheque size', fFocus: 'Focus', fActivity: 'Activity & access',
@@ -146,9 +146,15 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     </div>
     <div class="ih-btns">
       <a class="ih-cta" href="#matcher" data-umami-event="investors-hero-cta">{T.cta}</a>
+      <a class="ih-alt" href={`/${lang}/intelligence/investors/map/`}>{T.globe}</a>
       <a class="ih-alt" href={`/${lang}/intelligence/deals/`}>{T.tracker}</a>
     </div>
   </section>
+
+  <a class="gb" href={`/${lang}/intelligence/investors/map/`} data-umami-event="investors-globe">
+    <img src="/img/investor-globe.jpg" srcset="/img/investor-globe-800.jpg 800w, /img/investor-globe.jpg 1600w" sizes="(max-width: 899px) 100vw, 1120px" width="1600" height="900" alt="" loading="lazy" decoding="async" />
+    <span class="gb-txt"><span class="kick">{T.globeKick}</span><b>{T.globeH}</b><span class="gb-p">{T.globeP}</span><span class="gb-cta">{T.globe} →</span></span>
+  </a>
 
   <!-- Investor Matcher -->
   <section class="mt" id="matcher" aria-labelledby="mt-h">
@@ -310,6 +316,18 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     .ih-cta{width:100%}
     .ih-alt{width:100%;border:0;text-decoration:underline;text-underline-offset:4px;min-height:44px}
   }
+
+  /* globe teaser */
+  .gb{position:relative;display:block;margin:28px 0 0;border:1px solid var(--accent-line);border-radius:18px;overflow:hidden;background:#05070a;text-decoration:none;color:var(--chalk);aspect-ratio:16/7;min-height:240px}
+  .gb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%;transition:transform .6s ease;opacity:.95}
+  .gb:hover img{transform:scale(1.04)}
+  .gb::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,7,10,.92) 0%,rgba(5,7,10,.6) 45%,rgba(5,7,10,0) 75%)}
+  .gb-txt{position:absolute;left:28px;right:28px;bottom:26px;top:26px;z-index:1;display:flex;flex-direction:column;justify-content:center;gap:8px;max-width:440px}
+  .gb-txt b{font-family:var(--display);font-size:38px;line-height:.98;font-weight:400;letter-spacing:.01em}
+  .gb-p{font-size:14px;line-height:1.5;color:var(--g1)}
+  .gb-cta{display:inline-flex;align-items:center;align-self:flex-start;min-height:40px;padding:0 16px;margin-top:6px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:14px;font-weight:600}
+  .gb:hover .gb-cta{background:var(--chalk);color:var(--ink)}
+  @media(max-width:899px){.gb{aspect-ratio:auto;min-height:0}.gb img{position:relative;aspect-ratio:16/9;height:auto}.gb::after{background:linear-gradient(180deg,rgba(5,7,10,0) 30%,rgba(5,7,10,.95) 60%)}.gb-txt{position:relative;inset:auto;padding:0 16px 18px;margin-top:-70px;max-width:none}.gb-txt b{font-size:28px}}
 
   /* matcher */
   .mt{margin:36px 0 0;border:1px solid var(--accent-line);border-radius:18px;background:var(--panel);padding:24px;scroll-margin-top:16px}

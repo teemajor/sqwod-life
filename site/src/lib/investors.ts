@@ -128,7 +128,7 @@ function derive(inv: Investor, en: Enrichment | undefined, today: string) {
   // 1. fill gaps for deal-derived investors from the enrichment profiles
   const prof = en?.cb && en.cb.country ? en.cb : en?.cbi;
   if (!inv.country && prof?.country) { inv.country = prof.country; inv.city = prof.city; inv.region = regionOf(prof.country); }
-  if (!inv.city && prof?.city) inv.city = prof.city;
+  if (!inv.city && prof?.city && prof.country === inv.country) inv.city = prof.city;
   if (!inv.url && en?.cbi?.site) inv.url = 'https://' + en.cbi.site.replace(/^https?:\/\//, '');
   inv.founded = en?.cb?.founded || en?.cbi?.founded;
   if (!inv.focus && (en?.cb?.desc || en?.cbi?.desc)) { inv.focus = en!.cb?.desc || en!.cbi!.desc!; inv.focusDe = inv.focus; }
