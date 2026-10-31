@@ -21,7 +21,7 @@ A weekly list of open roles in German fitness and wellness at `/en/jobs/` and `/
 - **`jobs.mjs`**: fetches every source in `jobs-sources.mjs` in order (Bundesagentur für Arbeit Jobsuche API, Adzuna, brand career pages from `jobs-brands.json`, the DSSV board, Fitt Insider remote roles open to Germany; Indeed and StepStone are registered but switched off because their terms forbid scraping). It respects robots.txt, sends one request per second per host, times out after 10 s and identifies as `SqwodJobsBot/1.0`. Then it dedupes by employer + title + city (keeping the version with pay), drops off-topic and cleaning roles, and has Claude classify type, region and employment and write one-sentence EN + DE summaries (it answers "unknown" rather than guess). Pay is parsed in plain code (`parsePay`): only euro amounts count, and netto/brutto is kept as written.
   - Writes `site/src/data/jobs.json` (jobs unseen for 21 days get `expired: true` and stay in the file), appends `jobs-pay.jsonl` (append only, never delete lines; when a job's pay changes, e.g. after a parser fix, a new line with `"correction": true` is added, so readers take the last line per id), and writes the run log `jobs/last-run.json` (counts per source, failures per host).
   - New brands get their careers page found once and saved back into `jobs-brands.json` (`careersUrl`, `ats`).
-- **`jobs-alert.mjs`**: the Friday email (up to 10 newest roles, pay first) to the Resend "Jobs alert" segments, under the topic "Sqwod Jobs", so its unsubscribe link ends only the alert. Sends nothing if fewer than 3 roles are new; previews always go to `jobs/preview-{en,de}.html`.
+- **`jobs-alert.mjs`**: the Friday email (up to 10 newest roles, pay first) to the one Resend "Jobs alert" segment, German first with English below (the Resend plan allows 3 segments, so there is no German jobs segment), under the topic "Sqwod Jobs", so its unsubscribe link ends only the alert. Sends nothing if fewer than 3 roles are new; the preview always goes to `jobs/preview.html` (`preview-{en,de}.html` are from the old two-language version).
 - **`jobs-indexing.mjs`**: Indexing API ping for the two jobs pages, off while `JOBS_JSONLD_ON_LIST` in `site/src/config/seo.mjs` is false (see `BUILD-NOTES.md`).
 - **`jobs-week.mjs`**: shared helpers. On Fridays with ≥ 3 new roles, `cascade.mjs` writes a "5 jobs this week" list (`jobsWeek`) after Money movement in the Daily, and `digest.mjs` adds one line to the morning review email.
 - **`.github/workflows/jobs.yml`**: scrape Thursdays 18:00 Berlin (the commit triggers the deploy), alert Fridays 08:00 Berlin; both can also be started by hand.
@@ -32,7 +32,7 @@ node automation/jobs.mjs --selftest     # pay parser, dedupe, regions, robots, e
 node automation/jobs.mjs --dry          # fetch and count, write nothing but jobs/last-run-dry.json
 node automation/jobs.mjs --discover     # only find careers pages for jobs-brands.json
 node automation/jobs.mjs --since=7      # postings from the last 7 days (default 14)
-node automation/jobs-alert.mjs --dry    # build both emails, save previews, send nothing
+node automation/jobs-alert.mjs --dry    # build the email, save the preview, send nothing
 ```
 
 ## Run it locally

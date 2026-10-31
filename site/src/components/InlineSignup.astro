@@ -11,6 +11,8 @@ import type { Lang } from '../i18n/ui';
 // fine-print copy, `event` the Umami event name, `emailLabel` renders a visible <label> for the
 // email field (default: aria-label only). Callers that pass none of these render as before.
 // `roles={false}` hides the role picker (a one-line form, e.g. inside the Tools page Jobs spotlight).
+// Jobs alert sign-ups (source "jobs-alert") get an unticked box to add the Sqwod Daily as well;
+// the Worker only adds them to the Daily list when it is ticked.
 interface Props { lang: Lang; source: string; variant?: 'default' | 'daily' | 'hero'; id?: string; head?: string; body?: string; role?: string; btn?: string; fine?: string; event?: string; emailLabel?: string; roles?: boolean }
 const { lang, source, variant = 'default', id, head, body, role, btn, fine, event = 'subscribe', emailLabel, roles: showRoles = true } = Astro.props;
 const de = lang === 'de';
@@ -31,9 +33,10 @@ const roles = de
   : [['studio', 'Studio or gym operator'], ['coach', 'Coach or PT'], ['brand', 'Brand or founder'], ['investor', 'Investor'], ['company', 'Company / supplier'], ['creator', 'Creator']];
 
 const T = de
-  ? { iam: 'Ich bin', ph: 'E-Mail-Adresse', btn: 'Kostenlos abonnieren', fine: 'Wir schicken dir einmal eine Bestätigungs-Mail. Abmeldung jederzeit mit einem Klick.', privacy: 'Datenschutz', soon: 'Anmeldung bald verfügbar.' }
-  : { iam: 'I am a', ph: 'Email address', btn: 'Subscribe free', fine: 'We email you once to confirm. Unsubscribe anytime in one click.', privacy: 'Privacy', soon: 'Sign-up opens soon.' };
+  ? { daily: 'Schick mir auch den Sqwod Daily (werktags, 5 Minuten)', iam: 'Ich bin', ph: 'E-Mail-Adresse', btn: 'Kostenlos abonnieren', fine: 'Wir schicken dir einmal eine Bestätigungs-Mail. Abmeldung jederzeit mit einem Klick.', privacy: 'Datenschutz', soon: 'Anmeldung bald verfügbar.' }
+  : { daily: 'Also send me the Sqwod Daily (weekdays, 5 minutes)', iam: 'I am a', ph: 'Email address', btn: 'Subscribe free', fine: 'We email you once to confirm. Unsubscribe anytime in one click.', privacy: 'Privacy', soon: 'Sign-up opens soon.' };
 
+const askDaily = source === 'jobs-alert';
 const groupId = `role-${source}`;
 const emailId = `${groupId}-email`;
 ---
@@ -61,6 +64,7 @@ const emailId = `${groupId}-email`;
           : <input type="email" name="email" required autocomplete="email" placeholder={T.ph} aria-label={T.ph} />}
         <button class="cta isu-btn" type="submit" data-umami-event={event} data-umami-event-where={source}>{btn ?? (variant === 'hero' ? `${copy.head} →` : T.btn)}</button>
       </div>
+      {askDaily && <label class="isu-check"><input type="checkbox" name="daily" value="1" /><span>{T.daily}</span></label>}
       <p class="isu-fine">{fine ?? T.fine} <a href={`/${lang}/datenschutz`}>{T.privacy}</a></p>
     </form>
   ) : (
@@ -94,6 +98,8 @@ const emailId = `${groupId}-email`;
   .isu-row input{flex:1 1 240px;min-width:0;min-height:48px;box-sizing:border-box;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:0 18px;color:var(--chalk);font:inherit;font-size:16px}
   .isu-row input:focus{outline:none;border-color:var(--chalk)}
   .isu-btn{min-height:48px;padding:0 22px;font-size:14px;border:0;cursor:pointer;border-radius:14px}
+  .isu-check{display:flex;align-items:center;gap:10px;min-height:44px;font-size:14px;color:var(--g1);cursor:pointer;margin:-4px 0 -8px}
+  .isu-check input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--accent)}
   .isu-fine{font-size:12.5px;color:var(--g3);margin:0;line-height:1.5}
   .isu-fine a{color:var(--g2)}
   .isu-btn{transition:background .15s,color .15s}

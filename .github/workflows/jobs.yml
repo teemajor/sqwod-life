@@ -96,8 +96,7 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_FROM: ${{ vars.JOBS_FROM }}
-          RESEND_SEGMENT_JOBS_EN: ${{ vars.RESEND_SEGMENT_JOBS_EN }}
-          RESEND_SEGMENT_JOBS_DE: ${{ vars.RESEND_SEGMENT_JOBS_DE }}
+          RESEND_SEGMENT_JOBS: ${{ vars.RESEND_SEGMENT_JOBS || vars.RESEND_SEGMENT_JOBS_EN }}
         run: node automation/jobs-alert.mjs
       - name: Remember it went out
         if: steps.guard.outputs.go == 'true' && github.event_name != 'workflow_dispatch'
