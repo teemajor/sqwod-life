@@ -12,6 +12,7 @@ export interface Deal {
   amount: string; amountUsd: number | null; currency: string | null; approx?: boolean;
   note: string; noteDe?: string; url: string; source: string; issue: string;
   region: string; country?: string; category: string; status: string; checked?: string;
+  investors?: string[]; leads?: string[]; acquirer?: string;   // lead investors are a subset of investors; acquirer for M&A
   reports: { date: string; url: string; issue: string }[];
 }
 

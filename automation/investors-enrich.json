@@ -1,0 +1,5512 @@
+{
+ "_doc": "CB Insights enrichment for the Investor Map, fetched 31 Oct 2026 through the CB Insights connector (get_company_investments, get_company_profile). Keyed by directory id, or by the investor name as it appears on a deal. cbi.url is the citation. deals: [date, portfolio company, round, amount USD or null], newest first, at most 8 and biased to health, fitness and consumer rows. Counts are from the rows returned (10 per investor requested), so n is a floor, not a total. Re-run with the connector or the CB Insights API when the directory grows. cb: Crunchbase profile (cb_expert_resolve_entity) for the most active investors; stages are Crunchbase investor_stage buckets (seed, early, late, pe, debt, venture); permalink gives https://www.crunchbase.com/organization/<permalink>.",
+ "checked": "2026-10-31",
+ "items": {
+  "2150": {
+   "cbi": {
+    "id": 662037,
+    "url": "https://app.cbinsights.com/profiles/e/gxBey",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "founded": 2019,
+    "type": "Venture Capital",
+    "desc": "Urban tech and industry transformation"
+   },
+   "deals": [
+    [
+     "2026-09-28",
+     "IPercept",
+     "Series A",
+     16500000
+    ],
+    [
+     "2026-06-22",
+     "Superlight",
+     "Series A",
+     21000000
+    ],
+    [
+     "2026-06-03",
+     "Gigaton",
+     "Series A",
+     26000000
+    ],
+    [
+     "2026-03-18",
+     "Cocoon",
+     "Series A",
+     15000000
+    ]
+   ]
+  },
+  "courtside-ventures": {
+   "cbi": {
+    "id": 372948,
+    "url": "https://app.cbinsights.com/profiles/e/rLxnL",
+    "site": "courtsidevc.com",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2015,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-09",
+     "System Labs",
+     "Series A",
+     12600000
+    ],
+    [
+     "2026-02-11",
+     "Egra",
+     "Pre-Seed",
+     5500000
+    ],
+    [
+     "2025-12-01",
+     "Packz",
+     "Pre-Seed",
+     null
+    ],
+    [
+     "2025-08-12",
+     "Jump",
+     "Series A",
+     23000000
+    ],
+    [
+     "2025-06-11",
+     "Fermat",
+     "Series B",
+     45000000
+    ],
+    [
+     "2025-04-29",
+     "Fanstake",
+     "Seed",
+     6250000
+    ],
+    [
+     "2025-02-10",
+     "Commons Clinic",
+     "Series B",
+     26000000
+    ],
+    [
+     "2025-01-15",
+     "Eternal",
+     "Seed",
+     13250000
+    ]
+   ],
+   "cb": {
+    "permalink": "courtside-ventures",
+    "founded": 2015,
+    "stages": [
+     "seed",
+     "early",
+     "late"
+    ],
+    "types": [
+     "micro_vc",
+     "venture_capital"
+    ],
+    "city": "New York",
+    "country": "United States",
+    "desc": "Early-stage founders at the intersection of sports, technology and media."
+   }
+  },
+  "will-ventures": {
+   "cbi": {
+    "id": 471545,
+    "url": "https://app.cbinsights.com/profiles/e/7ZrxM",
+    "site": "willventures.tech",
+    "city": "Boston",
+    "country": "United States",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-29",
+     "BetterDays",
+     "Seed",
+     7000000
+    ],
+    [
+     "2026-09-09",
+     "System Labs",
+     "Series A",
+     12600000
+    ],
+    [
+     "2026-07-14",
+     "DubClub",
+     "Series B",
+     null
+    ],
+    [
+     "2026-06-01",
+     "Throne",
+     "Series A",
+     10000000
+    ],
+    [
+     "2026-03-19",
+     "23 Broadway",
+     "Seed",
+     3000000
+    ],
+    [
+     "2026-03-02",
+     "Devotion",
+     "Seed",
+     4000000
+    ],
+    [
+     "2026-01-07",
+     "BetHog",
+     "Series A",
+     9970000
+    ],
+    [
+     "2025-09-16",
+     "Birches Health",
+     "Series A",
+     10000000
+    ]
+   ],
+   "cb": {
+    "note": "no Crunchbase match for willventures.tech"
+   }
+  },
+  "elysian-park-ventures": {
+   "cbi": {
+    "id": 380930,
+    "url": "https://app.cbinsights.com/profiles/e/9l7Md",
+    "site": "elysianpark.ventures",
+    "city": "New York",
+    "country": "United States",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-21",
+     "International Dance League",
+     "Series A",
+     15000000
+    ],
+    [
+     "2026-10-19",
+     "Ida Sports",
+     "Series A",
+     3000000
+    ],
+    [
+     "2026-09-22",
+     "PlayVS",
+     "Series D",
+     3000000
+    ],
+    [
+     "2026-01-28",
+     "The Realest",
+     "Series A",
+     12000000
+    ],
+    [
+     "2026-01-07",
+     "Diamond Kinetics",
+     "Series C",
+     8600000
+    ],
+    [
+     "2025-11-03",
+     "International Dance League",
+     "Seed",
+     7000000
+    ],
+    [
+     "2025-03-11",
+     "FCTRY Lab",
+     "Series A",
+     8000000
+    ]
+   ],
+   "cb": {
+    "permalink": "elysian-park-ventures",
+    "founded": 2016,
+    "stages": [
+     "seed",
+     "early",
+     "late"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "Los Angeles",
+    "country": "United States",
+    "desc": "Private investment arm of the LA Dodgers ownership group: sports, technology and entertainment."
+   }
+  },
+  "kb-partners": {
+   "cbi": {
+    "id": 339465,
+    "url": "https://app.cbinsights.com/profiles/e/QB0vp",
+    "site": "kbpartners.com",
+    "city": "Highland Park, Illinois",
+    "country": "United States",
+    "founded": 1996,
+    "type": "Angel Investor (Group)"
+   },
+   "deals": [
+    [
+     "2026-10-21",
+     "International Dance League",
+     "Series A",
+     15000000
+    ],
+    [
+     "2026-02-19",
+     "SportIQ",
+     "Series A",
+     3200000
+    ],
+    [
+     "2026-01-28",
+     "The Realest",
+     "Series A",
+     12000000
+    ],
+    [
+     "2025-11-03",
+     "International Dance League",
+     "Seed",
+     7000000
+    ],
+    [
+     "2025-08-07",
+     "Vow",
+     "Seed",
+     null
+    ],
+    [
+     "2024-12-03",
+     "NIL FanBox",
+     "Seed",
+     2250000
+    ]
+   ],
+   "cb": {
+    "permalink": "kb-partners",
+    "founded": 1996,
+    "stages": [
+     "seed",
+     "early"
+    ],
+    "types": [
+     "angel_group",
+     "venture_capital"
+    ],
+    "city": "Highland Park, Illinois",
+    "country": "United States",
+    "desc": "Early-stage companies at the intersection of sports and technology."
+   }
+  },
+  "sapphire-sport": {
+   "cbi": {
+    "id": 10518133,
+    "url": "https://app.cbinsights.com/profiles/e/0Rjk3p",
+    "site": "359capital.com",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2018,
+    "type": "Venture Capital",
+    "note": "Sapphire Sport now operates as 359 Capital"
+   },
+   "deals": [
+    [
+     "2026-10-05",
+     "Tasklet",
+     "Series C",
+     12800000
+    ],
+    [
+     "2026-07-28",
+     "Fish Audio",
+     "Seed",
+     52000000
+    ],
+    [
+     "2026-06-01",
+     "Sekai",
+     "Series A",
+     20000000
+    ],
+    [
+     "2026-03-24",
+     "Highlight AI",
+     "Series A",
+     40000000
+    ],
+    [
+     "2026-03-19",
+     "23 Broadway",
+     "Seed",
+     3000000
+    ],
+    [
+     "2026-03-03",
+     "Rodeo",
+     "Seed",
+     8500000
+    ],
+    [
+     "2025-11-12",
+     "The Snow League",
+     "Series A",
+     15000000
+    ]
+   ]
+  },
+  "next-ventures": {
+   "cbi": {
+    "id": 472261,
+    "url": "https://app.cbinsights.com/profiles/e/vK3qx",
+    "site": "nextventures.com",
+    "city": "Austin",
+    "country": "United States",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-30",
+     "Aligator",
+     "Seed",
+     1200000
+    ],
+    [
+     "2026-05-01",
+     "Tokaido Health",
+     "Seed",
+     25000000
+    ],
+    [
+     "2026-04-01",
+     "Healthier Intelligence",
+     "Venture",
+     null
+    ],
+    [
+     "2025-12-02",
+     "Trial Library",
+     "Series A",
+     10000000
+    ],
+    [
+     "2025-10-20",
+     "Adaptyx Biosciences",
+     "Series A",
+     14000000
+    ],
+    [
+     "2025-04-10",
+     "Cofertility",
+     "Series A",
+     7250000
+    ],
+    [
+     "2025-01-15",
+     "Eternal",
+     "Seed",
+     13250000
+    ]
+   ],
+   "cb": {
+    "permalink": "next-ventūres",
+    "founded": 2019,
+    "stages": [
+     "seed",
+     "early"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "San Francisco",
+    "country": "United States",
+    "desc": "Sports, fitness, health and wellness markets."
+   }
+  },
+  "fitt-capital": {
+   "cbi": {
+    "id": 1184810,
+    "url": "https://app.cbinsights.com/profiles/e/MWYG5",
+    "site": "capital.fitt.co",
+    "city": "Pittsburgh",
+    "country": "United States"
+   },
+   "deals": [
+    [
+     "2024-05-13",
+     "Movemint",
+     "Pre-Seed",
+     null
+    ]
+   ]
+  },
+  "collaborative-fund": {
+   "cbi": {
+    "id": 758974,
+    "url": "https://app.cbinsights.com/profiles/e/9oP29",
+    "site": "collabfund.com",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2010,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-16",
+     "Dr. Max's",
+     "Seed",
+     null
+    ],
+    [
+     "2026-10-08",
+     "Sabi",
+     "Seed",
+     50000000
+    ],
+    [
+     "2026-10-07",
+     "Parallel Systems",
+     "Series C",
+     100000000
+    ],
+    [
+     "2026-07-09",
+     "Hippo Harvest",
+     "Series C",
+     30000000
+    ],
+    [
+     "2026-06-16",
+     "Osmo",
+     "Seed",
+     5000000
+    ],
+    [
+     "2026-06-04",
+     "Fuse Energy",
+     "Series B",
+     29030000
+    ]
+   ]
+  },
+  "cavu-consumer-partners": {
+   "cbi": {
+    "id": 381152,
+    "url": "https://app.cbinsights.com/profiles/e/aOGVq",
+    "site": "cavuconsumer.com",
+    "city": "Santa Monica",
+    "country": "United States",
+    "founded": 2015,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-14",
+     "EZ Bombs",
+     "Series A",
+     25000000
+    ],
+    [
+     "2026-07-24",
+     "Dolce Glow",
+     "Series A",
+     11000000
+    ],
+    [
+     "2026-07-16",
+     "Ultra",
+     "Series A",
+     9500000
+    ],
+    [
+     "2026-05-11",
+     "4AM",
+     "Seed",
+     4000000
+    ],
+    [
+     "2026-04-30",
+     "Gymkhana Fine Foods",
+     "Series A",
+     8500000
+    ],
+    [
+     "2026-04-29",
+     "Crazy Mountain",
+     "Seed",
+     15000000
+    ],
+    [
+     "2025-12-05",
+     "Recess",
+     "Series B",
+     24710000
+    ],
+    [
+     "2025-06-11",
+     "Sauz",
+     "Seed",
+     12000000
+    ]
+   ],
+   "cb": {
+    "permalink": "cavu-venture-partners",
+    "founded": 2015,
+    "stages": [
+     "seed",
+     "early",
+     "late",
+     "pe"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "New York",
+    "country": "United States",
+    "desc": "Specialist consumer firm investing in better-for-you branded consumer brands."
+   }
+  },
+  "vmg-partners": {
+   "cbi": {
+    "id": 341292,
+    "url": "https://app.cbinsights.com/profiles/e/rLjOn",
+    "site": "vmgpartners.com",
+    "city": "San Francisco",
+    "country": "United States",
+    "founded": 2005,
+    "type": "Growth Equity"
+   },
+   "deals": [
+    [
+     "2026-06-18",
+     "Gradial",
+     "Series C",
+     65000000
+    ],
+    [
+     "2026-06-09",
+     "Stars and Honey",
+     "Series A",
+     24000000
+    ],
+    [
+     "2026-06-04",
+     "Scotch",
+     "Series A",
+     20000000
+    ],
+    [
+     "2026-05-18",
+     "BRAMI",
+     "Series B",
+     33000000
+    ],
+    [
+     "2026-04-08",
+     "The Doux",
+     "Private Equity",
+     null
+    ],
+    [
+     "2026-03-30",
+     "Vacation",
+     "Growth Equity",
+     null
+    ],
+    [
+     "2025-11-01",
+     "Cocolab",
+     "Series A",
+     null
+    ]
+   ]
+  },
+  "rocana-venture-partners": {
+   "cbi": {
+    "id": 384009,
+    "url": "https://app.cbinsights.com/profiles/e/lNjbY",
+    "site": "rocanaventures.com",
+    "city": "Santa Ana",
+    "country": "United States",
+    "founded": 2018,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-06-24",
+     "Maxine's Heavenly",
+     "Series A",
+     2860000
+    ],
+    [
+     "2025-10-27",
+     "Recess",
+     "Series B",
+     30000000
+    ],
+    [
+     "2025-06-26",
+     "Othership",
+     "Convertible Note",
+     11300000
+    ],
+    [
+     "2025-06-10",
+     "Eli Health",
+     "Series A",
+     8760000
+    ],
+    [
+     "2025-02-14",
+     "Supergut",
+     "Series B",
+     22000000
+    ],
+    [
+     "2025-01-01",
+     "SEEQ",
+     "Seed",
+     null
+    ],
+    [
+     "2024-09-24",
+     "Cure Hydration",
+     "Warrant",
+     1500000
+    ],
+    [
+     "2022-02-02",
+     "OLIPOP",
+     "Series B",
+     30000000
+    ]
+   ],
+   "cb": {
+    "permalink": "rocana-venture-partners",
+    "founded": 2018,
+    "stages": [
+     "early"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "Miami",
+    "country": "United States",
+    "desc": "Early-stage consumer packaged goods brands with a better-living ethos."
+   }
+  },
+  "wellness-growth-ventures": {
+   "cbi": {
+    "id": 9983289,
+    "url": "https://app.cbinsights.com/profiles/e/7A0OzM",
+    "site": "wellnessgrowthventures.com",
+    "country": "United States"
+   },
+   "deals": [
+    [
+     "2024-09-24",
+     "Cure Hydration",
+     "Warrant",
+     1500000
+    ]
+   ]
+  },
+  "pave-health-ventures": {
+   "cbi": {
+    "id": 10508153,
+    "url": "https://app.cbinsights.com/profiles/e/lgBbeO",
+    "site": "pavehealthventures.com",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2024,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-08",
+     "Outro Health",
+     "Seed",
+     7000000
+    ],
+    [
+     "2026-09-29",
+     "Tiny Health",
+     "Series B",
+     33000000
+    ],
+    [
+     "2026-09-15",
+     "Kairon Health",
+     "Seed",
+     5000000
+    ],
+    [
+     "2026-09-14",
+     "Wizard Wellness",
+     "Seed",
+     1000000
+    ],
+    [
+     "2025-09-30",
+     "BeSound",
+     "Seed",
+     6800000
+    ],
+    [
+     "2025-06-01",
+     "Movido Health",
+     "Seed",
+     null
+    ],
+    [
+     "2024-07-08",
+     "Ohm Health",
+     "Seed",
+     null
+    ]
+   ],
+   "cb": {
+    "permalink": "pave-health-ventures",
+    "founded": 2024,
+    "types": [
+     "venture_capital"
+    ],
+    "desc": "Funding platform supporting healthcare industries."
+   }
+  },
+  "prelude-growth-partners": {
+   "cbi": {
+    "id": 384134,
+    "url": "https://app.cbinsights.com/profiles/e/KjANw",
+    "site": "preludegrowth.com",
+    "city": "New York",
+    "country": "United States",
+    "type": "Growth Equity",
+    "check": "$10M to $100M"
+   },
+   "deals": [
+    [
+     "2026-03-26",
+     "KilgourMD",
+     "Series A",
+     null
+    ],
+    [
+     "2026-02-18",
+     "Westman Atelier",
+     "Venture",
+     15000000
+    ],
+    [
+     "2025-11-13",
+     "Perelel",
+     "Series B",
+     27000000
+    ],
+    [
+     "2025-06-11",
+     "OneSkin",
+     "Series A",
+     20000000
+    ],
+    [
+     "2023-05-16",
+     "Skin Pharm",
+     "Series A",
+     15000000
+    ]
+   ]
+  },
+  "finn-capital-partners": {
+   "cbi": {
+    "id": 381658,
+    "url": "https://app.cbinsights.com/profiles/e/ynRZQ",
+    "site": "finncapitalpartners.com",
+    "city": "San Francisco",
+    "country": "United States",
+    "type": "Family Office"
+   },
+   "deals": [
+    [
+     "2022-09-27",
+     "Hello Cake",
+     "Series A",
+     8000000
+    ],
+    [
+     "2022-05-20",
+     "Adgile Media Group",
+     "Seed",
+     5000000
+    ],
+    [
+     "2020-01-28",
+     "OLIPOP",
+     "Series A",
+     10000000
+    ],
+    [
+     "2019-11-21",
+     "Vertosa",
+     "Seed",
+     6000000
+    ]
+   ]
+  },
+  "rock-health-capital": {
+   "cbi": {
+    "id": 142515,
+    "url": "https://app.cbinsights.com/profiles/e/4K0aZ",
+    "site": "rockhealth.com",
+    "city": "San Francisco",
+    "country": "United States",
+    "founded": 2010,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-08-18",
+     "Ours Privacy",
+     "Series A",
+     15000000
+    ],
+    [
+     "2025-10-14",
+     "Pear Suite",
+     "Series A",
+     7600000
+    ],
+    [
+     "2025-07-28",
+     "Ours Privacy",
+     "Seed",
+     null
+    ],
+    [
+     "2024-06-24",
+     "Pear Suite",
+     "Seed",
+     1000000
+    ],
+    [
+     "2023-12-13",
+     "Marigold Health",
+     "Series A",
+     11000000
+    ],
+    [
+     "2022-11-09",
+     "WellTheory",
+     "Seed",
+     7200000
+    ]
+   ],
+   "cb": {
+    "permalink": "rock-health-a34a",
+    "founded": 2012,
+    "city": "San Francisco",
+    "country": "United States",
+    "desc": "Funding for entrepreneurs working in healthcare and technology."
+   }
+  },
+  "age1": {
+   "cbi": {
+    "id": 1093753,
+    "url": "https://app.cbinsights.com/profiles/e/lxR0P",
+    "site": "age1.com",
+    "city": "San Francisco",
+    "country": "United States",
+    "founded": 2023,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-02-11",
+     "Loyal",
+     "Series C",
+     100000000
+    ],
+    [
+     "2026-02-09",
+     "Aerska",
+     "Series A",
+     39000000
+    ],
+    [
+     "2025-11-17",
+     "Skeletalis",
+     "Series A",
+     8000000
+    ],
+    [
+     "2025-10-01",
+     "Aerska",
+     "Seed",
+     21000000
+    ],
+    [
+     "2024-12-18",
+     "General Proximity",
+     "Seed",
+     8000000
+    ]
+   ]
+  },
+  "apollo-health-ventures": {
+   "cbi": {
+    "id": 359041,
+    "url": "https://app.cbinsights.com/profiles/e/pnDG0",
+    "site": "apollo.vc",
+    "city": "Hamburg",
+    "country": "Germany",
+    "founded": 2016,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-06-22",
+     "Bionyra Pharma",
+     "Series A",
+     165000000
+    ],
+    [
+     "2025-12-16",
+     "Aeovian Pharmaceuticals",
+     "Series B",
+     55000000
+    ],
+    [
+     "2025-11-13",
+     "Scripta Therapeutics",
+     "Seed",
+     12000000
+    ],
+    [
+     "2025-05-14",
+     "Therini Bio",
+     "Series A",
+     39000000
+    ],
+    [
+     "2025-05-08",
+     "HAYA Therapeutics",
+     "Series A",
+     65000000
+    ],
+    [
+     "2025-04-01",
+     "Cognito Therapeutics",
+     "Series C",
+     105000000
+    ],
+    [
+     "2024-12-04",
+     "Refoxy Pharma",
+     "Seed",
+     9560000
+    ]
+   ]
+  },
+  "kizoo-technology-capital": {
+   "cbi": {
+    "id": 388876,
+    "url": "https://app.cbinsights.com/profiles/e/qmdDm",
+    "site": "kizoo.com",
+    "city": "Karlsruhe",
+    "country": "Germany",
+    "type": "Venture Capital"
+   },
+   "deals": []
+  },
+  "heal-capital": {
+   "cbi": {
+    "id": 485182,
+    "url": "https://app.cbinsights.com/profiles/e/jm5A4",
+    "site": "healcapital.com",
+    "city": "Berlin",
+    "country": "Germany",
+    "type": "Venture Capital",
+    "check": "€1M to €5M"
+   },
+   "deals": [
+    [
+     "2026-10-06",
+     "Vocca",
+     "Series A",
+     20000000
+    ],
+    [
+     "2026-09-15",
+     "Aitiologic",
+     "Seed",
+     7380000
+    ],
+    [
+     "2026-06-09",
+     "Tokura",
+     "Seed",
+     null
+    ],
+    [
+     "2026-05-12",
+     "Ditto",
+     "Series A",
+     8940000
+    ],
+    [
+     "2026-04-29",
+     "Hypervision Surgical",
+     "Series A",
+     22960000
+    ],
+    [
+     "2026-04-01",
+     "Heim Health",
+     "Seed",
+     3300000
+    ],
+    [
+     "2025-06-12",
+     "MediShout",
+     "Series A",
+     2750000
+    ],
+    [
+     "2025-02-27",
+     "Hemato",
+     "Seed",
+     3750000
+    ]
+   ],
+   "cb": {
+    "permalink": "heal-capital",
+    "founded": 2019,
+    "stages": [
+     "seed",
+     "early",
+     "late"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "Berlin",
+    "country": "Germany",
+    "desc": "HealthTech venture fund, more than EUR 200M under management."
+   }
+  },
+  "lead-sports-health-tech-partners": {
+   "cbi": {
+    "id": 1133510,
+    "url": "https://app.cbinsights.com/profiles/e/MWW8z",
+    "site": "leadsports.com",
+    "city": "Orlando (Lake Nona academy)",
+    "country": "United States",
+    "type": "Incubator/Accelerator",
+    "note": "CB Insights profile covers the Lake Nona academy; leAD itself is Berlin-based"
+   },
+   "deals": [
+    [
+     "2020-10-15",
+     "Phlex",
+     "Seed",
+     70000
+    ],
+    [
+     "2020-10-15",
+     "NESTRE",
+     "Pre-Seed",
+     80000
+    ],
+    [
+     "2020-10-15",
+     "Break the Love",
+     "Pre-Seed",
+     80000
+    ],
+    [
+     "2018-07-26",
+     "RunLive",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "calm-storm-ventures": {
+   "cbi": {
+    "id": 528568,
+    "url": "https://app.cbinsights.com/profiles/e/moxnz",
+    "site": "calmstorm.vc",
+    "city": "Vienna",
+    "country": "Austria",
+    "founded": 2020,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-17",
+     "Health Force",
+     "Seed",
+     4820000
+    ],
+    [
+     "2026-09-14",
+     "Aeon",
+     "Seed",
+     4380000
+    ],
+    [
+     "2026-07-01",
+     "Propcorn",
+     "Seed",
+     null
+    ],
+    [
+     "2026-06-19",
+     "Resolyst",
+     "Pre-Seed",
+     3000000
+    ],
+    [
+     "2026-04-27",
+     "SquareMind",
+     "Series A",
+     18000000
+    ],
+    [
+     "2026-02-26",
+     "Oska Health",
+     "Seed",
+     13000000
+    ],
+    [
+     "2026-02-11",
+     "Circle Health",
+     "Seed",
+     2700000
+    ],
+    [
+     "2026-01-07",
+     "CertHub",
+     "Series A",
+     7250000
+    ]
+   ],
+   "cb": {
+    "permalink": "calm-storm-ventures",
+    "founded": 2020,
+    "stages": [
+     "seed",
+     "early"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "Vienna",
+    "country": "Austria",
+    "desc": "Super-early-stage HealthTech fund in Europe."
+   }
+  },
+  "speedinvest": {
+   "cbi": {
+    "id": 406746,
+    "url": "https://app.cbinsights.com/profiles/e/NnmnR",
+    "site": "speedinvest.com",
+    "city": "Vienna",
+    "country": "Austria",
+    "founded": 2011,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-26",
+     "MP Space",
+     "Seed",
+     16170000
+    ],
+    [
+     "2026-10-15",
+     "TechNovaTime",
+     "Pre-Seed",
+     3400000
+    ],
+    [
+     "2026-10-06",
+     "Vocca",
+     "Series A",
+     20000000
+    ],
+    [
+     "2026-10-06",
+     "Hexafarms",
+     "Seed",
+     5400000
+    ],
+    [
+     "2026-07-09",
+     "Keyper",
+     "Series A",
+     11000000
+    ],
+    [
+     "2026-06-24",
+     "Seltz",
+     "Seed",
+     12500000
+    ]
+   ],
+   "cb": {
+    "permalink": "speedinvest",
+    "founded": 2011,
+    "stages": [
+     "seed",
+     "early",
+     "late"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "Vienna",
+    "country": "Austria",
+    "desc": "Pan-European venture firm from pre-seed to pre-IPO."
+   }
+  },
+  "dutch-sport-tech-fund": {
+   "cbi": {
+    "id": 813024,
+    "url": "https://app.cbinsights.com/profiles/e/mxkBy",
+    "site": "dutchsporttechfund.com",
+    "city": "Amstelveen",
+    "country": "Netherlands",
+    "founded": 2020,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2025-10-28",
+     "CityLegends",
+     "Seed",
+     2000000
+    ],
+    [
+     "2025-02-21",
+     "Aphetor",
+     "Seed",
+     null
+    ],
+    [
+     "2024-11-27",
+     "Piing",
+     "Seed",
+     null
+    ],
+    [
+     "2024-06-25",
+     "Homefans",
+     "Venture",
+     null
+    ],
+    [
+     "2024-03-01",
+     "NewU",
+     "Seed",
+     null
+    ],
+    [
+     "2023-09-04",
+     "Scala Sports",
+     "Venture",
+     null
+    ]
+   ]
+  },
+  "active-partners": {
+   "cbi": {
+    "id": 358804,
+    "url": "https://app.cbinsights.com/profiles/e/rLQ4n",
+    "site": "active.partners",
+    "country": "United Kingdom",
+    "type": "Growth Equity",
+    "check": "£2M to £10M+ over the life of an investment"
+   },
+   "deals": [
+    [
+     "2026-09-23",
+     "Magic",
+     "Series B",
+     11000000
+    ],
+    [
+     "2026-09-21",
+     "Sprive",
+     "Series A",
+     10000000
+    ],
+    [
+     "2026-09-14",
+     "Patch",
+     "Seed",
+     null
+    ],
+    [
+     "2026-08-31",
+     "Healf",
+     "Series A",
+     null
+    ],
+    [
+     "2026-06-22",
+     "Seat Unique",
+     "Series B",
+     26420000
+    ],
+    [
+     "2026-05-16",
+     "Froot Pops",
+     "Seed",
+     1500000
+    ],
+    [
+     "2026-04-16",
+     "All Things",
+     "Seed",
+     4810000
+    ],
+    [
+     "2026-02-18",
+     "epetome",
+     "Seed",
+     null
+    ]
+   ],
+   "cb": {
+    "permalink": "active-partners",
+    "founded": 2004,
+    "stages": [
+     "seed",
+     "early",
+     "debt"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "London",
+    "country": "United Kingdom",
+    "desc": "Venture capital firm."
+   }
+  },
+  "sfc-capital": {
+   "cbi": {
+    "id": 377775,
+    "url": "https://app.cbinsights.com/profiles/e/zbOkN",
+    "site": "sfccapital.com",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2012,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-13",
+     "Obsero",
+     "Seed",
+     1200000
+    ],
+    [
+     "2026-10-06",
+     "Nearhuman",
+     "Pre-Seed",
+     390000
+    ],
+    [
+     "2026-10-05",
+     "Nuba Technologies",
+     "Pre-Seed",
+     420000
+    ],
+    [
+     "2026-09-23",
+     "SolarSub",
+     "Seed",
+     1770000
+    ],
+    [
+     "2026-09-16",
+     "Kinva Bio",
+     "Seed",
+     null
+    ],
+    [
+     "2026-09-02",
+     "Intelligent Mass Spec Solutions",
+     "Seed",
+     1460000
+    ],
+    [
+     "2026-06-02",
+     "Gnosis Health",
+     "Seed",
+     770000
+    ]
+   ]
+  },
+  "passion-capital": {
+   "cbi": {
+    "id": 358252,
+    "url": "https://app.cbinsights.com/profiles/e/aOLKO",
+    "site": "passioncapital.com",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2011,
+    "type": "Venture Capital",
+    "note": "CB Insights describes the current focus as AI, fintech and risk"
+   },
+   "deals": [
+    [
+     "2026-09-29",
+     "Marble",
+     "Series A",
+     7380000
+    ],
+    [
+     "2026-09-03",
+     "Backbone",
+     "Pre-Seed",
+     4640000
+    ],
+    [
+     "2026-07-03",
+     "geoSurge",
+     "Seed",
+     12560000
+    ],
+    [
+     "2026-06-03",
+     "Paypercut",
+     "Seed",
+     5800000
+    ],
+    [
+     "2026-04-10",
+     "Round",
+     "Seed",
+     6000000
+    ],
+    [
+     "2025-12-25",
+     "Lassie",
+     "Series C",
+     73010000
+    ]
+   ]
+  },
+  "connect-ventures": {
+   "cbi": {
+    "id": 365225,
+    "url": "https://app.cbinsights.com/profiles/e/GxarY",
+    "site": "connectventures.co",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2012,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-08-24",
+     "Embedd",
+     "Pre-Seed",
+     2690000
+    ],
+    [
+     "2026-07-08",
+     "Nexcade",
+     "Seed",
+     6000000
+    ],
+    [
+     "2026-06-03",
+     "Upstream",
+     "Pre-Seed",
+     3000000
+    ],
+    [
+     "2026-06-01",
+     "Sekai",
+     "Series A",
+     20000000
+    ],
+    [
+     "2026-05-12",
+     "Dessn",
+     "Series A",
+     6000000
+    ],
+    [
+     "2026-04-28",
+     "Zellify",
+     "Seed",
+     3700000
+    ]
+   ]
+  },
+  "northstar-ventures": {
+   "cbi": {
+    "id": 458114,
+    "url": "https://app.cbinsights.com/profiles/e/y8gGV",
+    "site": "northstarventures.co.uk",
+    "city": "Newcastle upon Tyne",
+    "country": "United Kingdom",
+    "founded": 2004,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-23",
+     "OneClickComply",
+     "Seed",
+     1330000
+    ],
+    [
+     "2026-09-15",
+     "Magnitude Biosciences",
+     "Series B",
+     1730000
+    ],
+    [
+     "2026-06-02",
+     "Gnosis Health",
+     "Seed",
+     770000
+    ],
+    [
+     "2026-05-01",
+     "NunaBio",
+     "Seed",
+     8790000
+    ],
+    [
+     "2026-03-19",
+     "MySalesCoach",
+     "Seed",
+     1990000
+    ]
+   ]
+  },
+  "eka-ventures": {
+   "cbi": {
+    "id": 544577,
+    "url": "https://app.cbinsights.com/profiles/e/0LyK7",
+    "site": "ekavc.com",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2018,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-19",
+     "XRlabs",
+     "Seed",
+     8400000
+    ],
+    [
+     "2026-08-18",
+     "Medly",
+     "Seed",
+     8000000
+    ],
+    [
+     "2026-07-28",
+     "DITTO",
+     "Seed",
+     5910000
+    ],
+    [
+     "2026-06-10",
+     "32Co",
+     "Series A",
+     15000000
+    ],
+    [
+     "2026-06-03",
+     "Flok Health",
+     "Series A",
+     12500000
+    ],
+    [
+     "2025-10-20",
+     "Cyclana Bio",
+     "Pre-Seed",
+     6710000
+    ]
+   ],
+   "cb": {
+    "permalink": "eka-ventures",
+    "founded": 2018,
+    "stages": [
+     "seed",
+     "early",
+     "late"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "London",
+    "country": "United Kingdom",
+    "desc": "Companies building a more healthy, sustainable and inclusive economy."
+   }
+  },
+  "simplyhealth-ventures": {
+   "cbi": {
+    "id": 3299443,
+    "url": "https://app.cbinsights.com/profiles/e/3WNmw",
+    "site": "simplyhealth.co.uk/ventures",
+    "city": "Andover",
+    "country": "United Kingdom",
+    "type": "Corporate Venture"
+   },
+   "deals": [
+    [
+     "2026-10-09",
+     "Sava Technologies",
+     "Series B",
+     35980000
+    ],
+    [
+     "2026-05-01",
+     "KareHero",
+     "Venture",
+     null
+    ],
+    [
+     "2026-01-26",
+     "Evaro",
+     "Series A",
+     25000000
+    ],
+    [
+     "2024-11-26",
+     "PocDoc",
+     "Seed",
+     6270000
+    ]
+   ]
+  },
+  "venrex": {
+   "cbi": {
+    "id": 808749,
+    "url": "https://app.cbinsights.com/profiles/e/oQO9V",
+    "site": "venrex.partners",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2002,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-29",
+     "Something & Nothing",
+     "Series A",
+     6400000
+    ],
+    [
+     "2026-07-01",
+     "Integral",
+     "Series A",
+     18000000
+    ],
+    [
+     "2026-05-29",
+     "Zeki",
+     "Seed",
+     null
+    ],
+    [
+     "2026-05-20",
+     "unbound",
+     "Seed",
+     null
+    ],
+    [
+     "2026-05-05",
+     "Marin Skincare",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "beco-capital": {
+   "cbi": {
+    "id": 340459,
+    "url": "https://app.cbinsights.com/profiles/e/42ZkR",
+    "site": "becocapital.com",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "founded": 2012,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-28",
+     "Amaani",
+     "Series A",
+     5000000
+    ],
+    [
+     "2026-09-14",
+     "BRKZ",
+     "Series B",
+     13000000
+    ],
+    [
+     "2026-09-03",
+     "Sirdab",
+     "Series A",
+     10000000
+    ],
+    [
+     "2026-06-09",
+     "Algebra AI",
+     "Series A",
+     7000000
+    ],
+    [
+     "2026-05-12",
+     "Stream",
+     "Seed",
+     5200000
+    ],
+    [
+     "2026-01-27",
+     "Property Finder",
+     "Venture",
+     170000000
+    ]
+   ],
+   "cb": {
+    "permalink": "beco-capital",
+    "founded": 2012,
+    "stages": [
+     "seed",
+     "early"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "desc": "Financial backing and strategic support to technology startups."
+   }
+  },
+  "global-ventures": {
+   "cbi": {
+    "id": 423350,
+    "url": "https://app.cbinsights.com/profiles/e/Vj8Mz",
+    "site": "global.vc",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "founded": 2018,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-21",
+     "Paymob",
+     "Series C",
+     35000000
+    ],
+    [
+     "2026-09-01",
+     "Enhance Fitness",
+     "Series B",
+     null
+    ],
+    [
+     "2026-06-26",
+     "Maalexi",
+     "Seed",
+     2800000
+    ],
+    [
+     "2026-02-11",
+     "Immensa",
+     "Series B",
+     null
+    ],
+    [
+     "2025-12-31",
+     "Max",
+     "Series B",
+     14500000
+    ]
+   ]
+  },
+  "ndude-labs": {
+   "cbi": {
+    "id": 13049881,
+    "url": "https://app.cbinsights.com/profiles/e/gMbPW9",
+    "site": "ndude.com",
+    "city": "Los Angeles",
+    "country": "United States",
+    "founded": 2025,
+    "type": "Private Equity"
+   },
+   "deals": [
+    [
+     "2026-10-06",
+     "Multiverse",
+     "Series A",
+     3000000
+    ],
+    [
+     "2026-09-17",
+     "Nutriventia",
+     "Private Equity",
+     null
+    ]
+   ]
+  },
+  "bdc-capital": {
+   "cbi": {
+    "id": 488545,
+    "url": "https://app.cbinsights.com/profiles/e/7ZVj3",
+    "site": "bdc.ca/capital",
+    "city": "Montreal",
+    "country": "Canada",
+    "founded": 2006,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-22",
+     "Bird&Be",
+     "Series A",
+     13000000
+    ],
+    [
+     "2026-08-01",
+     "The Wellness Company",
+     "Convertible Note",
+     null
+    ],
+    [
+     "2026-05-01",
+     "SketchDeck",
+     "Seed",
+     null
+    ],
+    [
+     "2025-06-10",
+     "Eli Health",
+     "Series A",
+     8760000
+    ]
+   ]
+  },
+  "portfolia": {
+   "cbi": {
+    "id": 421638,
+    "url": "https://app.cbinsights.com/profiles/e/jYXZ5",
+    "site": "portfolia.co",
+    "city": "San Mateo",
+    "country": "United States",
+    "founded": 2014,
+    "type": "Venture Capital"
+   },
+   "deals": []
+  },
+  "steelsky-ventures": {
+   "cbi": {
+    "id": 669556,
+    "url": "https://app.cbinsights.com/profiles/e/kYwwK",
+    "site": "steelskyventures.com",
+    "city": "Atlanta",
+    "country": "United States",
+    "founded": 2017,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2025-11-05",
+     "MyLaurel",
+     "Series C",
+     5000000
+    ],
+    [
+     "2025-06-12",
+     "Posterity Health",
+     "Series A",
+     4040000
+    ],
+    [
+     "2025-02-10",
+     "Commons Clinic",
+     "Series B",
+     26000000
+    ],
+    [
+     "2025-01-24",
+     "Posterity Health",
+     "Series A",
+     13000000
+    ],
+    [
+     "2023-03-24",
+     "Bend Health",
+     "Series A",
+     null
+    ],
+    [
+     "2022-10-27",
+     "Midi",
+     "Seed",
+     14000000
+    ]
+   ]
+  },
+  "coyote-ventures": {
+   "cbi": {
+    "id": 933889,
+    "url": "https://app.cbinsights.com/profiles/e/7gD5a",
+    "site": "coyote.ventures",
+    "city": "San Francisco",
+    "country": "United States",
+    "founded": 2021,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-08-17",
+     "Kiara Health",
+     "Pre-Seed",
+     null
+    ],
+    [
+     "2026-02-26",
+     "Malama",
+     "Seed",
+     5900000
+    ],
+    [
+     "2025-10-14",
+     "The Beans",
+     "Seed",
+     5400000
+    ],
+    [
+     "2025-09-09",
+     "Parento",
+     "Seed",
+     5900000
+    ],
+    [
+     "2025-02-20",
+     "Millie",
+     "Series A",
+     12000000
+    ],
+    [
+     "2025-01-23",
+     "Sunfish",
+     "Series A",
+     10000000
+    ]
+   ]
+  },
+  "amboy-street-ventures": {
+   "cbi": {
+    "id": 810385,
+    "url": "https://app.cbinsights.com/profiles/e/pDjpw",
+    "site": "amboystreet.vc",
+    "city": "Jackson, Wyoming",
+    "country": "United States",
+    "founded": 2020,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-13",
+     "Allswell",
+     "Seed",
+     7000000
+    ],
+    [
+     "2026-09-15",
+     "Evvy",
+     "Series B",
+     40000000
+    ],
+    [
+     "2025-10-29",
+     "Allswell",
+     "Pre-Seed",
+     1300000
+    ],
+    [
+     "2025-08-25",
+     "Nest Health",
+     "Series A",
+     22500000
+    ],
+    [
+     "2025-07-11",
+     "Defiant Health",
+     "Seed",
+     3820000
+    ],
+    [
+     "2025-02-20",
+     "Millie",
+     "Series A",
+     12000000
+    ]
+   ],
+   "cb": {
+    "permalink": "amboy-street-ventures",
+    "founded": 2021,
+    "stages": [
+     "seed",
+     "early"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "Los Angeles",
+    "country": "United States",
+    "desc": "Sexual health and women's health technology startups."
+   }
+  },
+  "asics-ventures": {
+   "cbi": {
+    "id": 352754,
+    "url": "https://app.cbinsights.com/profiles/e/MyKoK",
+    "country": "Japan",
+    "type": "Corporate Venture"
+   },
+   "deals": [
+    [
+     "2026-04-06",
+     "Pickleball One",
+     "Seed",
+     null
+    ],
+    [
+     "2025-11-13",
+     "RebuilderAI",
+     "Seed",
+     3070000
+    ],
+    [
+     "2025-06-25",
+     "Digital Entertainment Asset",
+     "Series A",
+     14850000
+    ],
+    [
+     "2025-05-30",
+     "Godot",
+     "Series A",
+     null
+    ],
+    [
+     "2023-06-15",
+     "Valkyrie Industries",
+     "Venture",
+     null
+    ],
+    [
+     "2022-02-03",
+     "RUN.EDGE",
+     "Bridge",
+     6700000
+    ],
+    [
+     "2021-10-07",
+     "Bisu",
+     "Seed",
+     3200000
+    ]
+   ]
+  },
+  "nike-ventures": {
+   "cbi": {
+    "id": 458174,
+    "url": "https://app.cbinsights.com/profiles/e/9350w",
+    "site": "nike.com",
+    "city": "Beaverton",
+    "country": "United States",
+    "type": "Corporation",
+    "note": "CB Insights has no separate Nike Ventures profile"
+   },
+   "deals": []
+  },
+  "hype-sports-innovation": {
+   "cbi": {
+    "id": 383618,
+    "url": "https://app.cbinsights.com/profiles/e/Z2A0W",
+    "site": "hypesportsinnovation.com",
+    "city": "Hasharon",
+    "country": "Israel",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2025-07-23",
+     "Breaking The Lines",
+     "Venture",
+     null
+    ],
+    [
+     "2025-07-01",
+     "Sizzle",
+     "Venture",
+     null
+    ],
+    [
+     "2024-12-08",
+     "FanPlay IoT",
+     "Venture",
+     null
+    ],
+    [
+     "2024-01-01",
+     "Mobius Labs",
+     "Venture",
+     null
+    ],
+    [
+     "2023-08-14",
+     "Pajo",
+     "Accelerator",
+     null
+    ]
+   ]
+  },
+  "techstars-sports-accelerator": {
+   "cbi": {
+    "id": 97847,
+    "url": "https://app.cbinsights.com/profiles/e/OgBo3",
+    "site": "techstars.com",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2006,
+    "type": "Incubator/Accelerator",
+    "note": "Techstars group profile, not the Indianapolis programme"
+   },
+   "deals": [
+    [
+     "2026-10-23",
+     "Intuitivo",
+     "Seed",
+     1510000
+    ],
+    [
+     "2026-10-13",
+     "Allswell",
+     "Seed",
+     7000000
+    ],
+    [
+     "2026-10-06",
+     "Hexafarms",
+     "Seed",
+     5400000
+    ],
+    [
+     "2026-09-24",
+     "O-ID",
+     "Pre-Seed",
+     1200000
+    ],
+    [
+     "2026-08-25",
+     "Concordare",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "stadia-ventures": {
+   "cbi": {
+    "id": 532647,
+    "url": "https://app.cbinsights.com/profiles/e/OBWeM",
+    "site": "stadiaventures.com",
+    "city": "Saint Louis",
+    "country": "United States",
+    "founded": 2015,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2024-06-20",
+     "Helios",
+     "Venture",
+     null
+    ],
+    [
+     "2023-03-20",
+     "ROOK",
+     "Pre-Seed",
+     1700000
+    ],
+    [
+     "2023-02-20",
+     "Healium",
+     "Seed",
+     3600000
+    ],
+    [
+     "2022-05-02",
+     "Uplift Labs",
+     "Seed",
+     4270000
+    ],
+    [
+     "2021-07-26",
+     "MaxOne",
+     "Series A",
+     3500000
+    ]
+   ]
+  },
+  "comcast-nbcuniversal-sportstech": {
+   "cbi": {
+    "id": 716643,
+    "url": "https://app.cbinsights.com/profiles/e/39yjw",
+    "site": "comcastsportstech.com",
+    "city": "Atlanta",
+    "country": "United States",
+    "founded": 2020,
+    "type": "Incubator/Accelerator"
+   },
+   "deals": [
+    [
+     "2025-02-25",
+     "Orreco",
+     "Seed",
+     null
+    ],
+    [
+     "2025-02-25",
+     "Camb.ai",
+     "Seed",
+     null
+    ],
+    [
+     "2025-02-25",
+     "OZ Sports",
+     "Seed",
+     null
+    ],
+    [
+     "2025-02-25",
+     "LiveLike",
+     "Seed",
+     null
+    ],
+    [
+     "2025-02-25",
+     "Satisfi",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "black-forest-accelerator": {
+   "cbi": {
+    "id": 639505,
+    "url": "https://app.cbinsights.com/profiles/e/orjkQ",
+    "site": "team-e-accelerator.com",
+    "city": "Lahr",
+    "country": "Germany",
+    "founded": 2013,
+    "type": "Incubator/Accelerator",
+    "check": "€12,500 for 5 to 7 percent"
+   },
+   "deals": []
+  },
+  "inits": {
+   "cbi": {
+    "id": 315055,
+    "url": "https://app.cbinsights.com/profiles/e/8q7Lj",
+    "site": "inits.at",
+    "city": "Vienna",
+    "country": "Austria",
+    "founded": 2002,
+    "type": "Incubator/Accelerator"
+   },
+   "deals": [
+    [
+     "2026-01-23",
+     "ClickWise",
+     "Seed",
+     50000
+    ],
+    [
+     "2024-01-01",
+     "sequestra",
+     "Accelerator",
+     null
+    ],
+    [
+     "2023-01-01",
+     "Silana",
+     "Accelerator",
+     null
+    ],
+    [
+     "2022-01-01",
+     "MEDI-CAM",
+     "Accelerator",
+     null
+    ],
+    [
+     "2021-09-07",
+     "zone14",
+     "Accelerator",
+     null
+    ]
+   ]
+  },
+  "tenity-digital-health-accelerator": {
+   "cbi": {
+    "id": 470624,
+    "url": "https://app.cbinsights.com/profiles/e/m9k3n",
+    "site": "tenity.com",
+    "city": "Zurich",
+    "country": "Switzerland",
+    "founded": 2015,
+    "type": "Incubator/Accelerator",
+    "note": "Tenity group profile (formerly F10), fintech-led; the health track is one programme"
+   },
+   "deals": [
+    [
+     "2026-06-30",
+     "Infinity",
+     "Series A",
+     3000000
+    ],
+    [
+     "2026-06-25",
+     "Talentir",
+     "Seed",
+     4540000
+    ],
+    [
+     "2026-06-17",
+     "Soource",
+     "Seed",
+     3480000
+    ],
+    [
+     "2026-06-16",
+     "Reltix",
+     "Pre-Seed",
+     3490000
+    ],
+    [
+     "2026-01-28",
+     "HeyMax",
+     "Series A",
+     11000000
+    ]
+   ]
+  },
+  "eit-health": {
+   "cbi": {
+    "id": 383644,
+    "url": "https://app.cbinsights.com/profiles/e/YMAeo",
+    "site": "eithealth.eu",
+    "city": "Munich",
+    "country": "Germany",
+    "type": "Incubator/Accelerator"
+   },
+   "deals": [
+    [
+     "2024-12-16",
+     "Britenet",
+     "Grant",
+     1050000
+    ],
+    [
+     "2024-05-17",
+     "Portabiles Healthcare Technologies",
+     "Seed",
+     2060000
+    ],
+    [
+     "2023-12-04",
+     "NeoPill",
+     "Competition",
+     10000
+    ],
+    [
+     "2023-07-31",
+     "Idoven",
+     "Grant",
+     null
+    ],
+    [
+     "2022-11-14",
+     "Actif",
+     "Accelerator",
+     null
+    ]
+   ]
+  },
+  "general-catalyst": {
+   "cbi": {
+    "id": 425654,
+    "url": "https://app.cbinsights.com/profiles/e/MyGnN",
+    "site": "generalcatalyst.com",
+    "city": "San Francisco",
+    "country": "United States",
+    "founded": 2000,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-29",
+     "Collective",
+     "Series B",
+     40000000
+    ],
+    [
+     "2026-10-20",
+     "Baba",
+     "Series A",
+     40000000
+    ],
+    [
+     "2026-09-19",
+     "Disha",
+     "Series A",
+     4570000
+    ],
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2025-09-16",
+     "Birches Health",
+     "Series A",
+     10000000
+    ]
+   ]
+  },
+  "lightspeed-venture-partners": {
+   "cbi": {
+    "id": 295484,
+    "url": "https://app.cbinsights.com/profiles/e/negyn",
+    "site": "lsvp.com",
+    "city": "Menlo Park",
+    "country": "United States",
+    "founded": 2000,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-22",
+     "Nirva",
+     "Seed",
+     25000000
+    ],
+    [
+     "2026-10-20",
+     "Different",
+     "Seed",
+     48000000
+    ],
+    [
+     "2026-10-14",
+     "Zaria",
+     "Seed",
+     5200000
+    ],
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2025-01-15",
+     "Eternal",
+     "Seed",
+     13250000
+    ]
+   ]
+  },
+  "peak-xv-partners": {
+   "cbi": {
+    "id": 379428,
+    "url": "https://app.cbinsights.com/profiles/e/ee79O",
+    "site": "peakxv.com",
+    "city": "Bangalore",
+    "country": "India",
+    "founded": 2006,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-15",
+     "Twin Health",
+     "Series F",
+     59000000
+    ],
+    [
+     "2026-09-07",
+     "Nua",
+     "Series C",
+     14000000
+    ],
+    [
+     "2026-09-02",
+     "Mokobara",
+     "Series C",
+     17990000
+    ],
+    [
+     "2026-02-04",
+     "The Whole Truth",
+     "Series D",
+     null
+    ]
+   ]
+  },
+  "semcap-beauty-wellness": {
+   "cbi": {
+    "id": 444496,
+    "url": "https://app.cbinsights.com/profiles/e/aeLzo",
+    "site": "semcap.com",
+    "city": "Wayne, Pennsylvania",
+    "country": "United States",
+    "founded": 2020,
+    "type": "Private Equity"
+   },
+   "deals": [
+    [
+     "2026-08-31",
+     "Healf",
+     "Series A",
+     null
+    ],
+    [
+     "2026-07-23",
+     "MERIT",
+     "Private Equity",
+     null
+    ],
+    [
+     "2026-04-09",
+     "Ilant Health",
+     "Series A",
+     15000000
+    ],
+    [
+     "2026-02-03",
+     "good culture",
+     "Private Equity",
+     55000000
+    ],
+    [
+     "2025-07-08",
+     "Fresh Prep",
+     "Private Equity",
+     null
+    ],
+    [
+     "2024-03-22",
+     "ALOHA",
+     "Private Equity",
+     68500000
+    ]
+   ]
+  },
+  "beringea": {
+   "cbi": {
+    "id": 327405,
+    "url": "https://app.cbinsights.com/profiles/e/oPwmn",
+    "site": "beringea.com",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 1988,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-23",
+     "Magic",
+     "Series B",
+     11000000
+    ],
+    [
+     "2026-07-30",
+     "Genomenon",
+     "Series B",
+     6030000
+    ],
+    [
+     "2026-07-21",
+     "MOTH",
+     "Series B",
+     14780000
+    ],
+    [
+     "2026-07-08",
+     "Kord",
+     "Series A",
+     8540000
+    ],
+    [
+     "2026-02-17",
+     "Dentologie",
+     "Series B",
+     5570000
+    ],
+    [
+     "2025-11-04",
+     "Sovato",
+     "Series B",
+     41000000
+    ],
+    [
+     "2025-10-07",
+     "Farmer J",
+     "Venture",
+     23000000
+    ]
+   ]
+  },
+  "figr-ventures": {
+   "cbi": {
+    "id": 5428974,
+    "url": "https://app.cbinsights.com/profiles/e/92yaGO",
+    "site": "figr-ventures.co.uk",
+    "country": "United Kingdom",
+    "type": "Family Office"
+   },
+   "deals": [
+    [
+     "2026-08-12",
+     "Toss",
+     "Seed",
+     890000
+    ],
+    [
+     "2026-07-29",
+     "MASAJ",
+     "Private Equity",
+     1990000
+    ],
+    [
+     "2026-03-26",
+     "Allday Goods",
+     "Seed",
+     1020000
+    ],
+    [
+     "2025-06-25",
+     "Pimentae",
+     "Seed",
+     2040000
+    ],
+    [
+     "2025-03-06",
+     "Citizens of Soil",
+     "Seed",
+     2320000
+    ]
+   ]
+  },
+  "eli-lilly": {
+   "cbi": {
+    "id": 205272,
+    "url": "https://app.cbinsights.com/profiles/e/ezDlK",
+    "site": "lilly.com",
+    "city": "Indianapolis",
+    "country": "United States",
+    "founded": 1876,
+    "type": "Corporation"
+   },
+   "deals": [
+    [
+     "2026-10-06",
+     "General Medicine",
+     "Series B",
+     120000000
+    ],
+    [
+     "2026-09-24",
+     "BigHat Biosciences",
+     "Series C",
+     75000000
+    ],
+    [
+     "2026-09-15",
+     "Thatch",
+     "Series C",
+     108000000
+    ],
+    [
+     "2026-09-09",
+     "Caspian Therapeutics",
+     "Series A",
+     50000000
+    ]
+   ]
+  },
+  "koshidaka-holdings": {
+   "cbi": {
+    "id": 472229,
+    "url": "https://app.cbinsights.com/profiles/e/dMODR",
+    "site": "koshidakaholdings.co.jp",
+    "city": "Tokyo",
+    "country": "Japan",
+    "founded": 1967,
+    "type": "Holding Company"
+   },
+   "deals": [
+    [
+     "2026-09-10",
+     "MIRROR FIT.",
+     "Series A",
+     1610000
+    ],
+    [
+     "2020-09-08",
+     "Fundinno",
+     "Series B",
+     8010000
+    ],
+    [
+     "2019-07-05",
+     "CureApp",
+     "Series C",
+     20280000
+    ]
+   ]
+  },
+  "Modi Ventures": {
+   "cbi": {
+    "id": 1001153,
+    "url": "https://app.cbinsights.com/profiles/e/l4emY",
+    "site": "modivc.com",
+    "city": "Houston",
+    "country": "United States",
+    "founded": 2014,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-29",
+     "Ozlo Sleep",
+     "Series B",
+     22000000
+    ],
+    [
+     "2026-09-29",
+     "Breye Therapeutics",
+     "Series A",
+     76620000
+    ],
+    [
+     "2026-05-11",
+     "Imagenomix",
+     "Seed",
+     3200000
+    ],
+    [
+     "2026-05-05",
+     "Cytospire Therapeutics",
+     "Series A",
+     83000000
+    ],
+    [
+     "2026-03-10",
+     "Eridu",
+     "Series A",
+     200000000
+    ],
+    [
+     "2026-02-24",
+     "Brainomix",
+     "Series C",
+     6500000
+    ]
+   ],
+   "cb": {
+    "permalink": "modi-ventures",
+    "founded": 2022,
+    "stages": [
+     "seed",
+     "early",
+     "late"
+    ],
+    "types": [
+     "fund_of_funds",
+     "venture_capital"
+    ],
+    "city": "Houston",
+    "country": "United States",
+    "desc": "AI, health care and medical devices."
+   }
+  },
+  "WISE Ventures": {
+   "cbi": {
+    "id": 418290,
+    "url": "https://app.cbinsights.com/profiles/e/NnYgp",
+    "site": "wiseventuresllc.com",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2018,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-29",
+     "Ozlo Sleep",
+     "Series B",
+     22000000
+    ],
+    [
+     "2026-08-06",
+     "Rec",
+     "Venture",
+     null
+    ],
+    [
+     "2026-05-19",
+     "Trajektory",
+     "Venture",
+     8000000
+    ],
+    [
+     "2026-03-18",
+     "GlobalComix",
+     "Series B",
+     13000000
+    ],
+    [
+     "2025-11-12",
+     "The Snow League",
+     "Series A",
+     15000000
+    ],
+    [
+     "2024-10-19",
+     "Ozlo Sleep",
+     "Venture",
+     8000000
+    ]
+   ]
+  },
+  "Providence Equity Partners": {
+   "cbi": {
+    "id": 390589,
+    "url": "https://app.cbinsights.com/profiles/e/7GlaQ",
+    "country": "United States",
+    "type": "Private Equity"
+   },
+   "deals": [
+    [
+     "2026-07-24",
+     "Southern Communications Group",
+     "Private Equity",
+     null
+    ],
+    [
+     "2026-05-01",
+     "CloserStill Media",
+     "Recap",
+     null
+    ],
+    [
+     "2023-10-17",
+     "Populous",
+     "Private Equity",
+     null
+    ]
+   ]
+  },
+  "Camino Partners": {
+   "cbi": {
+    "id": 525024,
+    "url": "https://app.cbinsights.com/profiles/e/moNP8",
+    "city": "Austin",
+    "country": "United States",
+    "founded": 2018,
+    "type": "Private Equity",
+    "desc": "Investment firm focused on wellness and social impact; formerly Equilibra Partners"
+   },
+   "deals": [
+    [
+     "2026-10-28",
+     "Intake Breathing",
+     "Private Equity",
+     62000000
+    ],
+    [
+     "2026-10-13",
+     "Allara",
+     "Series C",
+     30000000
+    ],
+    [
+     "2025-03-25",
+     "Barry's",
+     "Venture",
+     null
+    ],
+    [
+     "2025-03-25",
+     "LiveWell",
+     "Seed",
+     null
+    ],
+    [
+     "2025-03-25",
+     "Well Labs+",
+     "Seed",
+     null
+    ],
+    [
+     "2022-06-21",
+     "FitFighter",
+     "Seed",
+     2500000
+    ],
+    [
+     "2021-04-27",
+     "Cava Group",
+     "Series F",
+     190000000
+    ]
+   ],
+   "cb": {
+    "permalink": "equilibra-partners-management",
+    "city": "New York",
+    "country": "United States",
+    "desc": "Business building and investment platform.",
+    "note": "Crunchbase lists New York; CB Insights lists Austin"
+   }
+  },
+  "South Park Commons": {
+   "cbi": {
+    "id": 372073,
+    "url": "https://app.cbinsights.com/profiles/e/dVNdK",
+    "city": "San Francisco",
+    "country": "United States",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-27",
+     "Cent Health",
+     "Series A",
+     null
+    ],
+    [
+     "2026-10-22",
+     "Nirva",
+     "Seed",
+     25000000
+    ],
+    [
+     "2026-10-22",
+     "MaxInsights",
+     "Seed",
+     30000000
+    ],
+    [
+     "2026-10-20",
+     "Asymptote",
+     "Seed",
+     5500000
+    ],
+    [
+     "2026-10-07",
+     "Preference Model",
+     "Seed",
+     16000000
+    ]
+   ]
+  },
+  "S2G Investments": {
+   "cbi": {
+    "id": 344300,
+    "url": "https://app.cbinsights.com/profiles/e/YMnw0",
+    "city": "Chicago",
+    "country": "United States",
+    "founded": 2014,
+    "type": "Venture Capital",
+    "desc": "Food and agriculture, oceans and energy; formerly S2G Ventures"
+   },
+   "deals": [
+    [
+     "2026-10-22",
+     "WILDE",
+     "Venture",
+     40000000
+    ],
+    [
+     "2026-09-16",
+     "Kanin Energy",
+     "Growth Equity",
+     100000000
+    ],
+    [
+     "2026-08-25",
+     "Corvus Robotics",
+     "Series A",
+     20000000
+    ],
+    [
+     "2026-06-04",
+     "InCharge Energy",
+     "Series A",
+     46000000
+    ]
+   ]
+  },
+  "Wrightwood": {
+   "cbi": {
+    "id": 1107504,
+    "url": "https://app.cbinsights.com/profiles/e/rNjM9",
+    "city": "Cardiff",
+    "country": "United Kingdom",
+    "type": "Family Office",
+    "desc": "Family office of Diane and Henry Engelhardt"
+   },
+   "deals": [
+    [
+     "2026-10-16",
+     "Unravel Health",
+     "Seed",
+     3330000
+    ],
+    [
+     "2023-10-31",
+     "AlMouneer",
+     "Seed",
+     3600000
+    ]
+   ]
+  },
+  "PureGym": {
+   "cbi": {
+    "id": 75118,
+    "url": "https://app.cbinsights.com/profiles/e/Zgox",
+    "city": "Leeds",
+    "country": "United Kingdom",
+    "founded": 2008,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Sauce": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "The Stack's backer is Sauce.vc (India); CB Insights resolved the name to an unrelated US restaurant platform, so no data is attached"
+   },
+   "deals": []
+  },
+  "OTP Ventures": {
+   "cbi": {
+    "id": 1143310,
+    "url": "https://app.cbinsights.com/profiles/e/MWrX3",
+    "city": "Delhi",
+    "country": "India",
+    "founded": 2024,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-14",
+     "The Stack",
+     "Seed",
+     2260000
+    ],
+    [
+     "2026-08-24",
+     "Asaya",
+     "Series A",
+     9190000
+    ],
+    [
+     "2026-08-17",
+     "DeHaat Honest Farms",
+     "Seed",
+     3660000
+    ],
+    [
+     "2026-08-04",
+     "Vaaree",
+     "Series A",
+     6820000
+    ],
+    [
+     "2026-06-03",
+     "phab",
+     "Seed",
+     4000000
+    ],
+    [
+     "2026-02-11",
+     "Nester",
+     "Seed",
+     2090000
+    ],
+    [
+     "2026-01-28",
+     "The Stack",
+     "Pre-Seed",
+     590000
+    ]
+   ]
+  },
+  "Huddle Ventures": {
+   "cbi": {
+    "id": 35729,
+    "url": "https://app.cbinsights.com/profiles/e/dnxg",
+    "city": "Gurugram",
+    "country": "India",
+    "founded": 2018,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-14",
+     "The Stack",
+     "Seed",
+     2260000
+    ],
+    [
+     "2026-08-24",
+     "Asaya",
+     "Series A",
+     9190000
+    ],
+    [
+     "2026-03-24",
+     "OZi",
+     "Series A",
+     6200000
+    ],
+    [
+     "2026-02-24",
+     "Oncare",
+     "Series A",
+     3000000
+    ],
+    [
+     "2026-01-28",
+     "The Stack",
+     "Pre-Seed",
+     590000
+    ],
+    [
+     "2026-01-21",
+     "Cumin Co.",
+     "Seed",
+     5000000
+    ]
+   ]
+  },
+  "AYRA Ventures": {
+   "cbi": {
+    "id": 11524813,
+    "url": "https://app.cbinsights.com/profiles/e/Rnnxo8",
+    "country": "India",
+    "type": "Venture Capital",
+    "desc": "Consumer fund of Samina Hamied"
+   },
+   "deals": [
+    [
+     "2026-10-14",
+     "The Stack",
+     "Seed",
+     2260000
+    ],
+    [
+     "2026-09-02",
+     "Mokobara",
+     "Series C",
+     17990000
+    ],
+    [
+     "2026-08-25",
+     "Epigamia",
+     "Secondary",
+     20000000
+    ],
+    [
+     "2026-02-04",
+     "The Whole Truth",
+     "Series D",
+     null
+    ],
+    [
+     "2026-02-01",
+     "Knya Med",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "Arāya Ventures": {
+   "cbi": {
+    "id": 1229520,
+    "url": "https://app.cbinsights.com/profiles/e/XGmKQ",
+    "city": "London",
+    "country": "United Kingdom",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-14",
+     "Stride",
+     "Seed",
+     6100000
+    ],
+    [
+     "2026-10-06",
+     "Comparables AI",
+     "Seed",
+     6000000
+    ],
+    [
+     "2026-09-14",
+     "Aeon",
+     "Seed",
+     4380000
+    ],
+    [
+     "2026-08-03",
+     "Bodycare",
+     "Venture",
+     null
+    ],
+    [
+     "2026-07-08",
+     "Chiron",
+     "Seed",
+     1200000
+    ],
+    [
+     "2026-06-08",
+     "BeatpulseLabs",
+     "Pre-Seed",
+     1800000
+    ]
+   ]
+  },
+  "Morgan Stanley Inclusive & Sustainable Ventures": {
+   "cbi": {
+    "id": 10243292,
+    "url": "https://app.cbinsights.com/profiles/e/rM0pwL",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2017,
+    "type": "Corporate Venture"
+   },
+   "deals": [
+    [
+     "2026-10-14",
+     "Stride",
+     "Seed",
+     6100000
+    ],
+    [
+     "2026-07-08",
+     "Uvera",
+     "Seed",
+     null
+    ],
+    [
+     "2025-11-17",
+     "Ridelink",
+     "Pre-Seed",
+     1100000
+    ],
+    [
+     "2025-09-15",
+     "Rivet",
+     "Seed",
+     250000
+    ],
+    [
+     "2025-09-15",
+     "Moodbit",
+     "Seed",
+     250000
+    ]
+   ]
+  },
+  "Better Ventures": {
+   "cbi": {
+    "id": 359934,
+    "url": "https://app.cbinsights.com/profiles/e/KjOgw",
+    "city": "Oakland",
+    "country": "United States",
+    "founded": 2010,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-14",
+     "Stride",
+     "Seed",
+     6100000
+    ],
+    [
+     "2026-07-23",
+     "Prosper Medical",
+     "Seed",
+     16000000
+    ],
+    [
+     "2026-01-06",
+     "Oasys Health",
+     "Seed",
+     4600000
+    ],
+    [
+     "2025-05-01",
+     "Metabolic Psychiatry",
+     "Seed",
+     null
+    ],
+    [
+     "2025-05-01",
+     "Clay Health & Care",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "Vine Ventures": {
+   "cbi": {
+    "id": 711312,
+    "url": "https://app.cbinsights.com/profiles/e/kKZgK",
+    "country": "United States",
+    "type": "Venture Capital",
+    "desc": "Life sciences, mental health and consumer health"
+   },
+   "deals": [
+    [
+     "2026-10-08",
+     "Persona",
+     "Seed",
+     10000000
+    ],
+    [
+     "2024-07-18",
+     "Yulim Tech",
+     "Venture",
+     11920000
+    ],
+    [
+     "2023-09-29",
+     "Lykos Therapeutics",
+     "Series A",
+     100000000
+    ],
+    [
+     "2022-10-25",
+     "Alto Neuroscience",
+     "Series B",
+     35000000
+    ],
+    [
+     "2021-06-24",
+     "Tripp",
+     "Series A",
+     11000000
+    ]
+   ]
+  },
+  "Collective Global": {
+   "cbi": {
+    "id": 10397920,
+    "url": "https://app.cbinsights.com/profiles/e/XgYgdV",
+    "city": "New York",
+    "country": "United States",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-08",
+     "Persona",
+     "Seed",
+     10000000
+    ],
+    [
+     "2026-07-13",
+     "Emerald AI",
+     "Series A",
+     150000000
+    ],
+    [
+     "2026-06-30",
+     "Brekfuz",
+     "Seed",
+     570000
+    ],
+    [
+     "2025-09-15",
+     "LILA",
+     "Series A",
+     235000000
+    ]
+   ]
+  },
+  "Gabriel Investment Syndicate": {
+   "cbi": {
+    "id": 392117,
+    "url": "https://app.cbinsights.com/profiles/e/vnj3o",
+    "country": "United Kingdom",
+    "type": "Angel Investor (Group)",
+    "desc": "Scottish angel syndicate, co-invests with Scottish Enterprise"
+   },
+   "deals": [
+    [
+     "2026-10-05",
+     "GLORIAH",
+     "Seed",
+     800000
+    ],
+    [
+     "2026-03-23",
+     "Regeno",
+     "Seed",
+     560000
+    ],
+    [
+     "2025-12-10",
+     "MI:RNA Diagnostics",
+     "Series A",
+     3610000
+    ],
+    [
+     "2025-08-11",
+     "Seluna",
+     "Seed",
+     null
+    ],
+    [
+     "2025-03-05",
+     "Lentitek",
+     "Series A",
+     900000
+    ]
+   ]
+  },
+  "Mozaik Investments": {
+   "cbi": {
+    "id": 514002,
+    "url": "https://app.cbinsights.com/profiles/e/N9ykG",
+    "city": "Vienna",
+    "country": "Austria",
+    "founded": 2018,
+    "type": "Private Equity",
+    "desc": "Offices in Vienna, Bucharest and Bratislava"
+   },
+   "deals": [
+    [
+     "2025-06-06",
+     "SET Sustainable Energy Technologies",
+     "Venture",
+     null
+    ],
+    [
+     "2024-10-15",
+     "Pago",
+     "Series A",
+     2510000
+    ],
+    [
+     "2023-02-06",
+     "Untold",
+     "Venture",
+     null
+    ]
+   ]
+  },
+  "Garmin": {
+   "cbi": {
+    "id": 322372,
+    "url": "https://app.cbinsights.com/profiles/e/egRjW",
+    "city": "Olathe, Kansas",
+    "country": "United States",
+    "founded": 1989,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Tresalis": {
+   "cbi": {
+    "id": 13108794,
+    "url": "https://app.cbinsights.com/profiles/e/VgXlgL",
+    "country": "United States",
+    "founded": 2026,
+    "type": "Corporation",
+    "desc": "European house of brands across beauty, wellbeing and health, incorporated in Delaware"
+   },
+   "deals": []
+  },
+  "Isogon Ventures": {
+   "cbi": {
+    "id": 12675467,
+    "url": "https://app.cbinsights.com/profiles/e/BNpbKb",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2026,
+    "type": "Venture Capital",
+    "desc": "Industrial AI (manufacturing, logistics, energy)"
+   },
+   "deals": [
+    [
+     "2026-09-28",
+     "IPercept",
+     "Series A",
+     16500000
+    ],
+    [
+     "2026-07-20",
+     "Tristar AI",
+     "Series A",
+     13000000
+    ]
+   ]
+  },
+  "Homegrown Ventures": {
+   "cbi": {
+    "id": 10243590,
+    "url": "https://app.cbinsights.com/profiles/e/NgdXnG",
+    "city": "Newark",
+    "country": "United States",
+    "founded": 2023,
+    "type": "Venture Capital",
+    "desc": "Early-stage consumer brands from MENA and South Asia"
+   },
+   "deals": [
+    [
+     "2026-10-09",
+     "Gramiyaa",
+     "Series A",
+     1930000
+    ],
+    [
+     "2026-09-28",
+     "Amaani",
+     "Series A",
+     5000000
+    ],
+    [
+     "2025-04-01",
+     "Tarwi",
+     "Seed",
+     1000000
+    ],
+    [
+     "2025-03-25",
+     "Gramiyaa",
+     "Seed",
+     830000
+    ]
+   ]
+  },
+  "Elixinol Wellness": {
+   "cbi": {
+    "id": 1142078,
+    "url": "https://app.cbinsights.com/profiles/e/KmLgw",
+    "city": "Melbourne",
+    "country": "Australia",
+    "founded": 2017,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "BFG Partners": {
+   "cbi": {
+    "id": 373351,
+    "url": "https://app.cbinsights.com/profiles/e/L59WX",
+    "city": "Boulder",
+    "country": "United States",
+    "founded": 2014,
+    "type": "Venture Capital",
+    "desc": "Early consumer products: food and beverage, personal care, pet, home; formerly Boulder Food Group"
+   },
+   "deals": [
+    [
+     "2026-09-22",
+     "Bird&Be",
+     "Series A",
+     13000000
+    ],
+    [
+     "2026-08-04",
+     "NOON",
+     "Pre-Seed",
+     2500000
+    ],
+    [
+     "2026-05-19",
+     "Stone & Skillet",
+     "Series A",
+     5000000
+    ],
+    [
+     "2025-09-02",
+     "Magic Mind",
+     "Series A",
+     12450000
+    ],
+    [
+     "2024-07-29",
+     "Oats Overnight",
+     "Series B",
+     35000000
+    ]
+   ]
+  },
+  "BAM Ventures": {
+   "cbi": {
+    "id": 344295,
+    "url": "https://app.cbinsights.com/profiles/e/L5bvn",
+    "city": "Los Angeles",
+    "country": "United States",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-30",
+     "OuterSignal",
+     "Series A",
+     22000000
+    ],
+    [
+     "2026-09-22",
+     "Bird&Be",
+     "Series A",
+     13000000
+    ],
+    [
+     "2026-07-30",
+     "Vaca Chips",
+     "Seed",
+     1500000
+    ],
+    [
+     "2026-03-03",
+     "Rodeo",
+     "Seed",
+     8500000
+    ],
+    [
+     "2026-01-29",
+     "Good Bacteria",
+     "Seed",
+     3200000
+    ],
+    [
+     "2026-01-28",
+     "The Realest",
+     "Series A",
+     12000000
+    ]
+   ]
+  },
+  "Founder Collective": {
+   "cbi": {
+    "id": 235098,
+    "url": "https://app.cbinsights.com/profiles/e/Mg94K",
+    "city": "Cambridge, Massachusetts",
+    "country": "United States",
+    "founded": 2009,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-06",
+     "Altro Health",
+     "Seed",
+     7000000
+    ],
+    [
+     "2026-09-22",
+     "Bird&Be",
+     "Series A",
+     13000000
+    ],
+    [
+     "2026-07-23",
+     "Reservoir",
+     "Seed",
+     8000000
+    ],
+    [
+     "2026-05-29",
+     "Verve Motion",
+     "Series B",
+     12750000
+    ],
+    [
+     "2026-04-28",
+     "Windmill",
+     "Series A",
+     12000000
+    ]
+   ]
+  },
+  "Rejuvenation Ventures": {
+   "cbi": {
+    "id": 13106434,
+    "url": "https://app.cbinsights.com/profiles/e/K8l55A",
+    "type": "Investment firm"
+   },
+   "deals": [
+    [
+     "2026-09-22",
+     "Bird&Be",
+     "Series A",
+     13000000
+    ]
+   ]
+  },
+  "HSR Ventures": {
+   "cbi": {
+    "id": 10518497,
+    "url": "https://app.cbinsights.com/profiles/e/lgBYNe",
+    "city": "Los Angeles",
+    "country": "United States",
+    "founded": 2021,
+    "type": "Venture Capital",
+    "check": "$50K to $500K",
+    "desc": "Early-stage products and services for women"
+   },
+   "deals": [
+    [
+     "2026-09-22",
+     "Bird&Be",
+     "Series A",
+     13000000
+    ],
+    [
+     "2025-10-02",
+     "Bird&Be",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "IW Capital": {
+   "cbi": {
+    "id": 331168,
+    "url": "https://app.cbinsights.com/profiles/e/m4qp0",
+    "city": "London",
+    "country": "United Kingdom",
+    "type": "Private Equity",
+    "desc": "Growth capital and EIS for UK SMEs"
+   },
+   "deals": [
+    [
+     "2026-10-22",
+     "QuantrolOx",
+     "Series A",
+     13430000
+    ],
+    [
+     "2026-09-23",
+     "Magic",
+     "Series B",
+     11000000
+    ],
+    [
+     "2026-09-03",
+     "Strolll",
+     "Series A",
+     1350000
+    ],
+    [
+     "2026-06-22",
+     "Omni",
+     "Series A",
+     14600000
+    ],
+    [
+     "2026-04-21",
+     "Alesi Surgical",
+     "Series E",
+     9460000
+    ],
+    [
+     "2026-03-30",
+     "Lucida Medical",
+     "Series A",
+     11470000
+    ]
+   ]
+  },
+  "PXN Group": {
+   "cbi": {
+    "id": 10355341,
+    "url": "https://app.cbinsights.com/profiles/e/pPqdvL",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "founded": 2025,
+    "type": "Venture Capital",
+    "desc": "Par Equity's new platform"
+   },
+   "deals": [
+    [
+     "2026-09-23",
+     "Magic",
+     "Series B",
+     11000000
+    ],
+    [
+     "2026-09-16",
+     "iGii",
+     "Series B",
+     15760000
+    ],
+    [
+     "2026-06-25",
+     "Covatic",
+     "Bridge",
+     1980000
+    ],
+    [
+     "2025-12-16",
+     "Future Greens",
+     "Seed",
+     460000
+    ]
+   ]
+  },
+  "Accelerate Ventures": {
+   "cbi": {
+    "id": 10377173,
+    "url": "https://app.cbinsights.com/profiles/e/dZXoVw",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2023,
+    "type": "Venture Capital",
+    "desc": "Early-stage sports and sports-tech fund"
+   },
+   "deals": [
+    [
+     "2026-09-23",
+     "Magic",
+     "Series B",
+     11000000
+    ],
+    [
+     "2025-01-01",
+     "Different Health",
+     "Pre-Seed",
+     null
+    ]
+   ]
+  },
+  "Doorway": {
+   "cbi": {
+    "id": 476782,
+    "url": "https://app.cbinsights.com/profiles/e/jmAKz",
+    "city": "Bologna",
+    "country": "Italy",
+    "founded": 2016,
+    "type": "Investment platform",
+    "desc": "Regulated direct-investment platform for private and corporate investors"
+   },
+   "deals": [
+    [
+     "2026-09-23",
+     "Magic",
+     "Series B",
+     11000000
+    ],
+    [
+     "2026-09-22",
+     "Gamindo",
+     "Seed",
+     1610000
+    ],
+    [
+     "2026-09-01",
+     "Holifya",
+     "Seed",
+     1850000
+    ],
+    [
+     "2025-09-29",
+     "Serenis",
+     "Series A",
+     14060000
+    ]
+   ]
+  },
+  "Ventures Together": {
+   "cbi": {
+    "id": 835848,
+    "url": "https://app.cbinsights.com/profiles/e/rQd09",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2019,
+    "type": "Angel Investor (Group)"
+   },
+   "deals": [
+    [
+     "2026-10-21",
+     "Opply",
+     "Venture",
+     7500000
+    ],
+    [
+     "2026-10-09",
+     "Mogul",
+     "Series A",
+     15500000
+    ],
+    [
+     "2026-09-23",
+     "Magic",
+     "Series B",
+     11000000
+    ],
+    [
+     "2026-06-01",
+     "Throne",
+     "Series A",
+     10000000
+    ],
+    [
+     "2026-05-11",
+     "Happl",
+     "Series A",
+     11010000
+    ]
+   ]
+  },
+  "Vanquish Equity": {
+   "cbi": {
+    "id": 10515539,
+    "url": "https://app.cbinsights.com/profiles/e/wvKY2D",
+    "city": "San Jose",
+    "country": "Costa Rica",
+    "type": "Growth Equity",
+    "desc": "Scales consumer brands in the wellness industry"
+   },
+   "deals": [
+    [
+     "2026-09-14",
+     "Wizard Wellness",
+     "Seed",
+     1000000
+    ],
+    [
+     "2025-12-03",
+     "evolvetogether",
+     "Seed",
+     null
+    ],
+    [
+     "2025-10-27",
+     "Recess",
+     "Series B",
+     30000000
+    ],
+    [
+     "2025-09-01",
+     "DryWater",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "True Beauty Ventures": {
+   "cbi": {
+    "id": 653138,
+    "url": "https://app.cbinsights.com/profiles/e/j37ax",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2020,
+    "type": "Venture Capital",
+    "desc": "Emerging beauty, personal care and wellness brands"
+   },
+   "deals": [
+    [
+     "2026-09-14",
+     "Wizard Wellness",
+     "Seed",
+     1000000
+    ],
+    [
+     "2026-05-22",
+     "Sleep or Die",
+     "Seed",
+     730000
+    ],
+    [
+     "2026-05-07",
+     "Crown Affair",
+     "Series C",
+     5000000
+    ],
+    [
+     "2025-12-09",
+     "Biologica",
+     "Seed",
+     7000000
+    ],
+    [
+     "2025-05-27",
+     "Jupiter",
+     "Series A",
+     null
+    ]
+   ]
+  },
+  "Barrier Island Capital": {
+   "cbi": {
+    "id": 381682,
+    "url": "https://app.cbinsights.com/profiles/e/jYPNA",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-14",
+     "Wizard Wellness",
+     "Seed",
+     1000000
+    ],
+    [
+     "2014-10-07",
+     "MiniLuxe",
+     "Series C",
+     23000000
+    ]
+   ]
+  },
+  "Aeon": {
+   "cbi": {
+    "id": 10191303,
+    "url": "https://app.cbinsights.com/profiles/e/Oylkno",
+    "city": "Winterthur",
+    "country": "Switzerland",
+    "founded": 2023,
+    "type": "Corporation",
+    "desc": "Whole-body MRI and blood health checks"
+   },
+   "deals": []
+  },
+  "One Capital": {
+   "cbi": {
+    "id": 574983,
+    "url": "https://app.cbinsights.com/profiles/e/wkpBK",
+    "city": "Tokyo",
+    "country": "Japan",
+    "founded": 2020,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-15",
+     "Isometric",
+     "Series A",
+     10000000
+    ],
+    [
+     "2026-09-10",
+     "MIRROR FIT.",
+     "Series A",
+     1610000
+    ],
+    [
+     "2026-09-02",
+     "PeopleX",
+     "Series A",
+     null
+    ],
+    [
+     "2026-03-26",
+     "booost",
+     "Series C",
+     4380000
+    ]
+   ]
+  },
+  "Fredun Pharmaceuticals": {
+   "cbi": {
+    "id": 10195979,
+    "url": "https://app.cbinsights.com/profiles/e/5AyedO",
+    "city": "Mumbai",
+    "country": "India",
+    "founded": 1987,
+    "type": "Corporation"
+   },
+   "deals": [
+    [
+     "2026-09-22",
+     "Goodman VetCare",
+     "Corporate Minority",
+     8140000
+    ]
+   ]
+  },
+  "Filter Capital": {
+   "cbi": {
+    "id": 794280,
+    "url": "https://app.cbinsights.com/profiles/e/WP2xe",
+    "city": "Mumbai",
+    "country": "India",
+    "founded": 2018,
+    "type": "Growth Equity"
+   },
+   "deals": [
+    [
+     "2026-09-07",
+     "Nua",
+     "Series C",
+     14000000
+    ],
+    [
+     "2025-07-17",
+     "R for Rabbit",
+     "Series B",
+     13000000
+    ],
+    [
+     "2025-05-12",
+     "M1xchange",
+     "Secondary",
+     10000000
+    ],
+    [
+     "2023-05-05",
+     "THB",
+     "Series A",
+     20000000
+    ]
+   ]
+  },
+  "Mirabilis Investment Trust": {
+   "cbi": {
+    "id": 965888,
+    "url": "https://app.cbinsights.com/profiles/e/Ygv80",
+    "city": "Bengaluru",
+    "country": "India",
+    "founded": 2015,
+    "type": "Family Office"
+   },
+   "deals": [
+    [
+     "2026-10-10",
+     "Nat Habit",
+     "Series C",
+     14740000
+    ],
+    [
+     "2026-09-07",
+     "Nua",
+     "Series C",
+     14000000
+    ],
+    [
+     "2026-07-16",
+     "Naturis Cosmetics",
+     "Series A",
+     10370000
+    ],
+    [
+     "2025-10-10",
+     "FableStreet",
+     "Series A",
+     5600000
+    ],
+    [
+     "2025-02-06",
+     "Nua",
+     "Series B",
+     4000000
+    ]
+   ]
+  },
+  "Footpath Ventures": {
+   "cbi": {
+    "id": 482584,
+    "url": "https://app.cbinsights.com/profiles/e/nV3Z4",
+    "country": "India",
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-07",
+     "Nua",
+     "Series C",
+     14000000
+    ],
+    [
+     "2023-10-18",
+     "Zetwerk",
+     "Series F",
+     118000000
+    ],
+    [
+     "2021-11-24",
+     "Dream11",
+     "Series F",
+     840000000
+    ]
+   ]
+  },
+  "BKR Capital": {
+   "cbi": {
+    "id": 748752,
+    "url": "https://app.cbinsights.com/profiles/e/aolvO",
+    "city": "Toronto",
+    "country": "Canada",
+    "founded": 2021,
+    "type": "Venture Capital",
+    "desc": "Black-led technology companies; formerly Black Innovation Capital"
+   },
+   "deals": [
+    [
+     "2026-08-01",
+     "The Wellness Company",
+     "Convertible Note",
+     null
+    ],
+    [
+     "2026-05-01",
+     "SketchDeck",
+     "Seed",
+     null
+    ],
+    [
+     "2025-09-23",
+     "Moneta Health",
+     "Seed",
+     4500000
+    ],
+    [
+     "2025-01-29",
+     "Cauridor",
+     "Seed",
+     3500000
+    ]
+   ]
+  },
+  "cbdMD": {
+   "cbi": {
+    "id": 154461,
+    "url": "https://app.cbinsights.com/profiles/e/ve09M",
+    "city": "Charlotte",
+    "country": "United States",
+    "founded": 2015,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Informa": {
+   "cbi": {
+    "id": 58520,
+    "url": "https://app.cbinsights.com/profiles/e/Xj20",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 1998,
+    "type": "Corporation"
+   },
+   "deals": [
+    [
+     "2021-12-08",
+     "WeAreTotem",
+     "Corporate Minority",
+     null
+    ],
+    [
+     "2019-11-11",
+     "Founders Forum",
+     "Corporate Minority",
+     null
+    ]
+   ]
+  },
+  "Yellow Wood Partners": {
+   "cbi": {
+    "id": 378685,
+    "url": "https://app.cbinsights.com/profiles/e/pnk9r",
+    "city": "Boston",
+    "country": "United States",
+    "founded": 2009,
+    "type": "Private Equity",
+    "desc": "Consumer brands private equity"
+   },
+   "deals": [
+    [
+     "2014-02-10",
+     "PDC Wellness & Personal Care",
+     "Private Equity",
+     7520000
+    ]
+   ]
+  },
+  "DSG Consumer Partners": {
+   "cbi": {
+    "id": 381304,
+    "url": "https://app.cbinsights.com/profiles/e/rLGwj",
+    "city": "Singapore",
+    "country": "Singapore",
+    "founded": 2012,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-08-05",
+     "Triangle Group",
+     "Seed",
+     10000000
+    ],
+    [
+     "2026-07-15",
+     "Every Half",
+     "Series A",
+     8000000
+    ],
+    [
+     "2026-06-30",
+     "The Indus Valley",
+     "Series B",
+     null
+    ],
+    [
+     "2026-02-10",
+     "Go Desi",
+     "Series B",
+     2800000
+    ],
+    [
+     "2026-01-13",
+     "Secret Alchemist",
+     "Seed",
+     2500000
+    ],
+    [
+     "2025-10-10",
+     "Hunger",
+     "Series A",
+     24250000
+    ]
+   ]
+  },
+  "Pentland Ventures": {
+   "cbi": {
+    "id": 501490,
+    "url": "https://app.cbinsights.com/profiles/e/NW7y3",
+    "country": "United Kingdom",
+    "type": "Corporate Venture",
+    "desc": "Direct-investment arm of Pentland Group (Speedo, Berghaus, JD Sports stake)"
+   },
+   "deals": [
+    [
+     "2026-10-09",
+     "Sava Technologies",
+     "Series B",
+     35980000
+    ],
+    [
+     "2026-08-31",
+     "Healf",
+     "Series A",
+     null
+    ],
+    [
+     "2026-08-26",
+     "Sarelly",
+     "Seed",
+     3000000
+    ],
+    [
+     "2026-06-22",
+     "Seat Unique",
+     "Series B",
+     26420000
+    ],
+    [
+     "2026-06-08",
+     "Algae Cooking Club",
+     "Series A",
+     11700000
+    ],
+    [
+     "2026-05-27",
+     "PlayerData",
+     "Series A",
+     12000000
+    ],
+    [
+     "2026-05-18",
+     "BRAMI",
+     "Series B",
+     33000000
+    ]
+   ],
+   "cb": {
+    "permalink": "pentland-ventures",
+    "founded": 1988,
+    "stages": [
+     "seed",
+     "early",
+     "late"
+    ],
+    "types": [
+     "venture_capital"
+    ],
+    "city": "London",
+    "country": "United Kingdom",
+    "desc": "Consumer brands and technology that powers the consumer economy."
+   }
+  },
+  "Ami Capital": {
+   "cbi": {
+    "id": 12649134,
+    "url": "https://app.cbinsights.com/profiles/e/K8Klaw",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2025,
+    "type": "Venture Capital",
+    "desc": "Growth capital and Asia-Pacific market entry for Western brands"
+   },
+   "deals": [
+    [
+     "2026-08-31",
+     "Healf",
+     "Series A",
+     null
+    ],
+    [
+     "2026-06-22",
+     "Omni",
+     "Series A",
+     14600000
+    ]
+   ]
+  },
+  "IRIS": {
+   "cbi": {
+    "id": 811982,
+    "url": "https://app.cbinsights.com/profiles/e/jklDN",
+    "city": "Barcelona",
+    "country": "Spain",
+    "founded": 2021,
+    "type": "Growth Equity",
+    "desc": "Iris Ventures: brands and tech-enabled consumer health and wellbeing (Healf, Maurten, Reformed)"
+   },
+   "deals": [
+    [
+     "2026-08-31",
+     "Healf",
+     "Series A",
+     null
+    ],
+    [
+     "2026-07-31",
+     "Kreme",
+     "Growth Equity",
+     null
+    ],
+    [
+     "2026-07-09",
+     "Reformed",
+     "Series A",
+     22790000
+    ],
+    [
+     "2026-04-15",
+     "Lucille",
+     "Seed",
+     null
+    ],
+    [
+     "2025-12-03",
+     "Innerskin",
+     "Series B",
+     15130000
+    ],
+    [
+     "2025-06-10",
+     "Healf",
+     "Seed",
+     null
+    ],
+    [
+     "2024-07-22",
+     "Maurten",
+     "Growth Equity",
+     21770000
+    ]
+   ],
+   "cb": {
+    "permalink": "iris-ventures-a70f",
+    "founded": 2021,
+    "stages": [
+     "venture",
+     "pe"
+    ],
+    "types": [
+     "private_equity_firm",
+     "venture_capital"
+    ],
+    "city": "Barcelona",
+    "country": "Spain",
+    "desc": "Growth equity for brands and tech-enabled solutions that make lives healthier, happier and more convenient."
+   }
+  },
+  "Dara5": {
+   "cbi": {
+    "id": 1040557,
+    "url": "https://app.cbinsights.com/profiles/e/RxPb2",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2019,
+    "type": "Angel Investor (Group)",
+    "desc": "Private investment community"
+   },
+   "deals": [
+    [
+     "2026-08-31",
+     "Healf",
+     "Series A",
+     null
+    ],
+    [
+     "2025-06-03",
+     "dataPlor",
+     "Series B",
+     20500000
+    ]
+   ]
+  },
+  "HITAI": {
+   "cbi": {
+    "id": 10341487,
+    "url": "https://app.cbinsights.com/profiles/e/3MrB07",
+    "city": "London",
+    "country": "United Kingdom",
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Ferrero": {
+   "cbi": {
+    "id": 489063,
+    "url": "https://app.cbinsights.com/profiles/e/Pm38K",
+    "city": "Senningerberg",
+    "country": "Luxembourg",
+    "founded": 1946,
+    "type": "Corporation"
+   },
+   "deals": [
+    [
+     "2023-05-24",
+     "Incredo",
+     "Series C",
+     30000000
+    ]
+   ]
+  },
+  "Kodeon": {
+   "cbi": {
+    "id": 11711882,
+    "url": "https://app.cbinsights.com/profiles/e/jvmPlN",
+    "city": "Toronto",
+    "country": "Canada",
+    "type": "Corporation",
+    "desc": "Acquires and optimises mobile apps in health, fitness and habit building"
+   },
+   "deals": []
+  },
+  "LAC (V3 Group)": {
+   "cbi": {
+    "id": 1053558,
+    "url": "https://app.cbinsights.com/profiles/e/yMgzq",
+    "city": "Singapore",
+    "country": "Singapore",
+    "founded": 1997,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Innovius": {
+   "cbi": {
+    "id": 961488,
+    "url": "https://app.cbinsights.com/profiles/e/YgQD0",
+    "city": "San Francisco",
+    "country": "United States",
+    "founded": 2021,
+    "type": "Venture Capital",
+    "desc": "Innovius Capital: SaaS and AI"
+   },
+   "deals": [
+    [
+     "2026-08-04",
+     "Delightree",
+     "Series A",
+     25000000
+    ],
+    [
+     "2026-06-24",
+     "xCures",
+     "Series B",
+     46000000
+    ],
+    [
+     "2025-05-05",
+     "RightRev",
+     "Series A",
+     13000000
+    ]
+   ]
+  },
+  "Accel": {
+   "cbi": {
+    "id": 439719,
+    "url": "https://app.cbinsights.com/profiles/e/Pm7m8",
+    "city": "Palo Alto",
+    "country": "United States",
+    "founded": 1983,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-22",
+     "Legora",
+     "Series E",
+     550000000
+    ],
+    [
+     "2026-10-20",
+     "Arda Industries",
+     "Series A",
+     160000000
+    ],
+    [
+     "2026-10-08",
+     "Sabi",
+     "Seed",
+     50000000
+    ],
+    [
+     "2026-08-04",
+     "Delightree",
+     "Series A",
+     25000000
+    ]
+   ]
+  },
+  "Timber Grove Ventures": {
+   "cbi": {
+    "id": 992302,
+    "url": "https://app.cbinsights.com/profiles/e/NX8Qj",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2024,
+    "type": "Venture Capital",
+    "desc": "Vertical AI, including healthcare and consumer"
+   },
+   "deals": [
+    [
+     "2026-10-15",
+     "Carbon",
+     "Series A",
+     12000000
+    ],
+    [
+     "2026-08-04",
+     "Delightree",
+     "Series A",
+     25000000
+    ],
+    [
+     "2026-02-24",
+     "Jampack",
+     "Seed",
+     3200000
+    ],
+    [
+     "2026-01-09",
+     "Rain",
+     "Series C",
+     250000000
+    ]
+   ]
+  },
+  "Emergent": {
+   "cbi": {
+    "id": 224223,
+    "url": "https://app.cbinsights.com/profiles/e/BombO",
+    "country": "United States",
+    "type": "Venture Capital",
+    "desc": "Emergent Ventures: early-stage, India and US"
+   },
+   "deals": [
+    [
+     "2026-09-28",
+     "Autoheal",
+     "Seed",
+     7900000
+    ],
+    [
+     "2026-08-04",
+     "Delightree",
+     "Series A",
+     25000000
+    ],
+    [
+     "2026-03-17",
+     "BambooBox",
+     "Series A",
+     6600000
+    ],
+    [
+     "2025-11-01",
+     "CombineHealth",
+     "Venture",
+     null
+    ]
+   ]
+  },
+  "Procter & Gamble": {
+   "cbi": {
+    "id": 218481,
+    "url": "https://app.cbinsights.com/profiles/e/g0qwb",
+    "city": "Cincinnati",
+    "country": "United States",
+    "founded": 1837,
+    "type": "Corporation"
+   },
+   "deals": [
+    [
+     "2022-03-25",
+     "Group Black",
+     "Corporate Minority",
+     null
+    ],
+    [
+     "2021-10-04",
+     "Moodify",
+     "Seed",
+     8000000
+    ]
+   ]
+  },
+  "Kirin": {
+   "cbi": {
+    "id": 272668,
+    "url": "https://app.cbinsights.com/profiles/e/m4Pwn",
+    "city": "Tokyo",
+    "country": "Japan",
+    "founded": 1907,
+    "type": "Corporation"
+   },
+   "deals": [
+    [
+     "2024-08-07",
+     "Sagri",
+     "Series A",
+     6840000
+    ],
+    [
+     "2023-04-20",
+     "fufu",
+     "Series A",
+     8430000
+    ],
+    [
+     "2019-12-02",
+     "Nightingale Health",
+     "Corporate Minority",
+     null
+    ],
+    [
+     "2019-08-06",
+     "FANCL",
+     "Corporate Minority",
+     1210000000
+    ]
+   ]
+  },
+  "Sorven Capital": {
+   "cbi": {
+    "id": 11519841,
+    "url": "https://app.cbinsights.com/profiles/e/pBB3Rp",
+    "country": "United Kingdom",
+    "type": "Private Equity"
+   },
+   "deals": [
+    [
+     "2026-07-29",
+     "MASAJ",
+     "Private Equity",
+     1990000
+    ],
+    [
+     "2026-01-06",
+     "Dalston's",
+     "Private Equity",
+     1140000
+    ]
+   ]
+  },
+  "3VC": {
+   "cbi": {
+    "id": 478099,
+    "url": "https://app.cbinsights.com/profiles/e/8wk8n",
+    "city": "Vienna",
+    "country": "Austria",
+    "founded": 2018,
+    "type": "Venture Capital",
+    "desc": "Series A in DACH, CEE and the Baltics"
+   },
+   "deals": [
+    [
+     "2026-09-09",
+     "fundcraft",
+     "Series B",
+     13950000
+    ],
+    [
+     "2026-08-11",
+     "Aderis",
+     "Seed",
+     null
+    ],
+    [
+     "2026-07-29",
+     "Ahead Health",
+     "Seed",
+     10000000
+    ],
+    [
+     "2025-07-15",
+     "Ordio",
+     "Series A",
+     14020000
+    ],
+    [
+     "2025-04-25",
+     "Emmi AI",
+     "Seed",
+     17020000
+    ]
+   ]
+  },
+  "RTP Global": {
+   "cbi": {
+    "id": 322781,
+    "url": "https://app.cbinsights.com/profiles/e/gM4Nv",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2000,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-14",
+     "Flam",
+     "Series B",
+     40000000
+    ],
+    [
+     "2026-07-29",
+     "Ahead Health",
+     "Seed",
+     10000000
+    ],
+    [
+     "2026-07-27",
+     "Hiveware",
+     "Series A",
+     24000000
+    ],
+    [
+     "2026-06-04",
+     "FirstClub",
+     "Series B",
+     55000000
+    ],
+    [
+     "2026-04-09",
+     "Nava",
+     "Series A",
+     21700000
+    ]
+   ]
+  },
+  "Shangbay Capital": {
+   "cbi": {
+    "id": 366464,
+    "url": "https://app.cbinsights.com/profiles/e/XbpeL",
+    "city": "Palo Alto",
+    "country": "United States",
+    "founded": 2015,
+    "type": "Venture Capital",
+    "desc": "Medtech, biotech and digital health; 65 portfolio companies"
+   },
+   "deals": [
+    [
+     "2026-08-13",
+     "Abcuro",
+     "Series D",
+     66000000
+    ],
+    [
+     "2026-07-29",
+     "SoundHealth",
+     "Series A",
+     null
+    ],
+    [
+     "2026-06-02",
+     "Contraline",
+     "Series B",
+     92500000
+    ],
+    [
+     "2026-04-27",
+     "Nervonik",
+     "Series B",
+     52500000
+    ],
+    [
+     "2026-02-13",
+     "KOKO Medical",
+     "Series C",
+     7900000
+    ]
+   ]
+  },
+  "Bain Capital": {
+   "cbi": {
+    "id": 341080,
+    "url": "https://app.cbinsights.com/profiles/e/WngBe",
+    "city": "Boston",
+    "country": "United States",
+    "founded": 1984,
+    "type": "Private Equity"
+   },
+   "deals": [
+    [
+     "2026-08-27",
+     "RQD",
+     "Series B",
+     74000000
+    ],
+    [
+     "2026-07-09",
+     "Infinia",
+     "Series A",
+     13500000
+    ],
+    [
+     "2026-06-30",
+     "Beeline Medicines",
+     "Series A",
+     126300000
+    ],
+    [
+     "2026-06-05",
+     "HST Pathways",
+     "Private Equity",
+     null
+    ]
+   ]
+  },
+  "Franchise Equity Partners": {
+   "cbi": {
+    "id": 814009,
+    "url": "https://app.cbinsights.com/profiles/e/lQdGQ",
+    "country": "United States",
+    "type": "Private Equity",
+    "desc": "Capital for franchise businesses and their owners"
+   },
+   "deals": [
+    [
+     "2025-12-17",
+     "SoCal Penske Dealer Group",
+     "Private Equity",
+     null
+    ],
+    [
+     "2023-06-01",
+     "Parks Automotive Group",
+     "Private Equity",
+     55000000
+    ],
+    [
+     "2022-06-10",
+     "Fresh Dining Concepts",
+     "Private Equity",
+     44000000
+    ]
+   ]
+  },
+  "Interactive Strength": {
+   "cbi": {
+    "id": 650398,
+    "url": "https://app.cbinsights.com/profiles/e/MPaqB",
+    "city": "Austin",
+    "country": "United States",
+    "founded": 2017,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "O.G. Venture Partners": {
+   "cbi": {
+    "id": 372352,
+    "url": "https://app.cbinsights.com/profiles/e/aO40q",
+    "city": "Monaco",
+    "country": "Monaco",
+    "founded": 2017,
+    "type": "Venture Capital",
+    "desc": "Series B and C growth rounds"
+   },
+   "deals": [
+    [
+     "2026-09-14",
+     "Buildots",
+     "Series E",
+     130000000
+    ],
+    [
+     "2026-08-12",
+     "Remepy",
+     "Series A",
+     36000000
+    ],
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2026-06-22",
+     "Peregrine",
+     "Series D",
+     250000000
+    ]
+   ]
+  },
+  "Atomico": {
+   "cbi": {
+    "id": 325160,
+    "url": "https://app.cbinsights.com/profiles/e/bxRBn",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2006,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-10-12",
+     "Scarlet",
+     "Series B",
+     50000000
+    ],
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2026-06-18",
+     "Frontier Health",
+     "Seed",
+     12830000
+    ],
+    [
+     "2026-05-19",
+     "Nourish",
+     "Series C",
+     100000000
+    ]
+   ]
+  },
+  "Lakestar": {
+   "cbi": {
+    "id": 327602,
+    "url": "https://app.cbinsights.com/profiles/e/N2wV3",
+    "city": "Zurich",
+    "country": "Switzerland",
+    "founded": 2012,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-28",
+     "Modulate",
+     "Series B",
+     25000000
+    ],
+    [
+     "2026-08-12",
+     "Mindgard",
+     "Series A",
+     30000000
+    ],
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2026-06-23",
+     "Timefold",
+     "Series A",
+     13000000
+    ]
+   ]
+  },
+  "Liberty City Ventures": {
+   "cbi": {
+    "id": 263094,
+    "url": "https://app.cbinsights.com/profiles/e/VgglR",
+    "city": "New York",
+    "country": "United States",
+    "type": "Venture Capital",
+    "desc": "Blockchain-focused fund and incubator"
+   },
+   "deals": [
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2026-03-19",
+     "Cloaked",
+     "Series B",
+     375000000
+    ],
+    [
+     "2026-01-27",
+     "Mesh",
+     "Series C",
+     75000000
+    ]
+   ]
+  },
+  "Positive Sum": {
+   "cbi": {
+    "id": 732753,
+    "url": "https://app.cbinsights.com/profiles/e/lKqYY",
+    "city": "Stamford, Connecticut",
+    "country": "United States",
+    "founded": 2020,
+    "type": "Venture Capital"
+   },
+   "deals": [
+    [
+     "2026-09-08",
+     "Cognition",
+     "Series E",
+     2000000000
+    ],
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2026-07-15",
+     "Speakeasy",
+     "Seed",
+     null
+    ],
+    [
+     "2025-12-01",
+     "Lone Palm Labs",
+     "Series A",
+     21000000
+    ]
+   ]
+  },
+  "BDT & MSD": {
+   "cbi": {
+    "id": 1074628,
+    "url": "https://app.cbinsights.com/profiles/e/eKogO",
+    "city": "Chicago",
+    "country": "United States",
+    "founded": 2023,
+    "type": "Merchant Bank"
+   },
+   "deals": [
+    [
+     "2026-07-15",
+     "Neko Health",
+     "Series C",
+     700000000
+    ],
+    [
+     "2026-06-09",
+     "Beacon",
+     "Series C",
+     225000000
+    ],
+    [
+     "2025-11-12",
+     "Skims",
+     "Series D",
+     225000000
+    ]
+   ]
+  },
+  "Basic-Fit": {
+   "cbi": {
+    "id": 91018,
+    "url": "https://app.cbinsights.com/profiles/e/ZeK8W",
+    "city": "Hoofddorp",
+    "country": "Netherlands",
+    "founded": 1984,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Inflection Point Ventures": {
+   "cbi": {
+    "id": 478822,
+    "url": "https://app.cbinsights.com/profiles/e/D32AA",
+    "city": "Gurgaon",
+    "country": "India",
+    "founded": 2017,
+    "type": "Angel Investor (Group)"
+   },
+   "deals": [
+    [
+     "2026-10-15",
+     "Vitonnix",
+     "Seed",
+     null
+    ],
+    [
+     "2026-10-14",
+     "RocketPay",
+     "Seed",
+     1050000
+    ],
+    [
+     "2026-09-09",
+     "Theater",
+     "Series A",
+     5940000
+    ],
+    [
+     "2026-08-27",
+     "OORJAA",
+     "Series A",
+     1020000
+    ],
+    [
+     "2026-07-30",
+     "Truth & Hair",
+     "Angel",
+     560000
+    ]
+   ]
+  },
+  "Peloton": {
+   "cbi": {
+    "id": 42397,
+    "url": "https://app.cbinsights.com/profiles/e/lYz2",
+    "city": "New York",
+    "country": "United States",
+    "founded": 2012,
+    "type": "Corporation"
+   },
+   "deals": [
+    [
+     "2019-12-23",
+     "Weav Music",
+     "Series A",
+     5000000
+    ]
+   ]
+  },
+  "Macobs Technologies": {
+   "cbi": {
+    "id": 1566208,
+    "url": "https://app.cbinsights.com/profiles/e/ax4DW",
+    "city": "Jaipur",
+    "country": "India",
+    "founded": 2019,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Flamel Performing Creatives": {
+   "cbi": {
+    "id": 13050269,
+    "url": "https://app.cbinsights.com/profiles/e/GeoBzq",
+    "type": "Investor"
+   },
+   "deals": [
+    [
+     "2026-09-19",
+     "Disha",
+     "Series A",
+     4570000
+    ]
+   ]
+  },
+  "NL SportTech Ventures": {
+   "cbi": {
+    "id": 13326977,
+    "url": "https://app.cbinsights.com/profiles/e/0Axo7a",
+    "country": "Netherlands",
+    "type": "Venture Capital",
+    "desc": "Early-stage Dutch sports-tech: AI coaching, fan engagement, sports infrastructure"
+   },
+   "deals": [
+    [
+     "2026-10-12",
+     "Huppa",
+     "Pre-Seed",
+     1120000
+    ]
+   ]
+  },
+  "a16z Scout Fund": {
+   "cbi": {
+    "id": 488504,
+    "url": "https://app.cbinsights.com/profiles/e/ra04x",
+    "city": "Menlo Park",
+    "country": "United States",
+    "founded": 2009,
+    "type": "Venture Capital",
+    "note": "Andreessen Horowitz group profile"
+   },
+   "deals": []
+  },
+  "Surge (Peak XV Partners)": {
+   "cbi": {
+    "id": 454938,
+    "url": "https://app.cbinsights.com/profiles/e/jmLnj",
+    "city": "Singapore",
+    "country": "Singapore",
+    "type": "Venture Capital",
+    "check": "$500K to $5M"
+   },
+   "deals": [
+    [
+     "2026-09-28",
+     "Amaani",
+     "Series A",
+     5000000
+    ],
+    [
+     "2026-09-28",
+     "Kello",
+     "Seed",
+     null
+    ],
+    [
+     "2026-09-28",
+     "Ditto",
+     "Seed",
+     null
+    ]
+   ]
+  },
+  "Elevation Capital": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "Disha's backer is the Indian fund (formerly SAIF Partners); CB Insights resolved the name to a Vancouver impact fund, so no data is attached"
+   },
+   "deals": []
+  },
+  "Stride": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "Enhance's lender is a venture-debt provider; CB Insights resolved the name to Stride.VC (London seed fund), so no data is attached"
+   },
+   "deals": []
+  },
+  "Launch": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "The Wellness Company's incubator; CB Insights lists LAUNCH (Jason Calacanis) on the convertible note, unconfirmed"
+   },
+   "deals": []
+  },
+  "Sequel": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "Healf's co-investor is Sequel Venture Partners per CB Insights; the name was ambiguous, no data attached"
+   },
+   "deals": []
+  },
+  "Temple": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "CB Insights resolved to an unrelated traffic-systems company; no data attached"
+   },
+   "deals": []
+  },
+  "Fifty 1 Labs": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "not resolved by CB Insights"
+   },
+   "deals": []
+  },
+  "Excalibur Group": {
+   "cbi": {
+    "id": 13045210,
+    "url": "https://app.cbinsights.com/profiles/e/M08KRg",
+    "city": "London",
+    "country": "United Kingdom",
+    "founded": 2015,
+    "type": "Corporation"
+   },
+   "deals": []
+  },
+  "Conduit EIS Impact Fund": {
+   "cbi": {
+    "id": 0,
+    "url": "",
+    "note": "CB Insights lists Conduit Connect on Unravel Health's seed; the EIS fund has no separate profile"
+   },
+   "deals": []
+  }
+ }
+}

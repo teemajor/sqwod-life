@@ -19,10 +19,16 @@
     "@astrojs/sitemap": "3.2.1",
     "@fontsource-variable/geist": "^5.3.0",
     "@fontsource-variable/geist-mono": "^5.3.0",
-    "astro": "^4.15.0"
+    "astro": "^4.15.0",
+    "flag-icons": "^7.6.0",
+    "globe.gl": "^2.46.2",
+    "three": "^0.187.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
+    "@types/three": "^0.187.0",
     "typescript": "^5.6.3"
   }
 }
