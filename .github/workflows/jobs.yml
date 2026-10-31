@@ -53,13 +53,17 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
         run: node automation/jobs.mjs
+      - name: Fetch employer logos
+        if: steps.guard.outputs.go == 'true'
+        continue-on-error: true
+        run: node automation/jobs-logos.mjs
       - name: Commit the data
         if: steps.guard.outputs.go == 'true'
         run: |
           git config user.name "Sqwod Bot"
           git config user.email "bot@sqwod.life"
           # one path at a time: a missing file (e.g. no pay lines yet) must not stop the others
-          for p in site/src/data/jobs.json automation/jobs-pay.jsonl automation/jobs/last-run.json automation/jobs-brands.json; do
+          for p in site/src/data/jobs.json automation/jobs-pay.jsonl automation/jobs/last-run.json automation/jobs-brands.json automation/jobs-logos.json site/public/brands/jobs; do
             [ -e "$p" ] && git add "$p"
           done
           if git diff --staged --quiet; then echo "No job changes."; else
