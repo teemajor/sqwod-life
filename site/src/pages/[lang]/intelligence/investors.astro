@@ -1,15 +1,17 @@
 ---
 // Sqwod Investor Map: who funds, buys and supports fitness and wellness companies.
 // Directory: automation/investors.json (researched, Tee-reviewed). Deals: src/lib/investors.ts merges
-// every backer and buyer named on a live Deal Tracker entry. Design follows the Deal Tracker.
+// every backer and buyer named on a live Deal Tracker entry and the CB Insights / Crunchbase enrichment.
+// Three parts: a faceted filter (sidebar on desktop, sheet on phones, state in the URL), the cards,
+// and the Investor Matcher (a scored shortlist from a short form; top 5 free, the rest after sign-up).
 import Base from '../../../layouts/Base.astro';
 import { ogPath } from '../../../lib/og';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import DealGlyphs from '../../../components/DealGlyphs.astro';
 import DealIcon from '../../../components/DealIcon.astro';
 import Flag from '../../../components/Flag.astro';
-import { flagCode, countryName } from '../../../lib/flags';
-import { investors, TYPE_LABEL, type InvestorType } from '../../../lib/investors';
+import { flagCode, countryName, COUNTRY_CODE } from '../../../lib/flags';
+import { investors, regionOf, TYPE_LABEL, STAGE_LABEL, FOCUS_LABEL, BAND_LABEL, STAGES, FOCUS, BANDS, type InvestorType } from '../../../lib/investors';
 import { generatedAt } from '../../../lib/deals';
 import { languages, type Lang } from '../../../i18n/ui';
 
@@ -26,27 +28,57 @@ const isOpen = (i: (typeof all)[number]) => !!i.apply && (i.apply.status === 'ro
 const withDeals = all.filter((i) => i.deals.length);
 const countries = [...new Set(all.map((i) => i.country).filter(Boolean))];
 const openCalls = all.filter(isOpen);
-const regions = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East'].filter((r) => all.some((i) => i.region === r));
+const REGIONS = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East', 'Latin America', 'Other'];
+const regions = REGIONS.filter((r) => all.some((i) => i.region === r));
 const types: InvestorType[] = ['vc', 'corporate', 'accelerator', 'competition', 'grant', 'buyer'];
 const REGION_FLAGS: Record<string, string[]> = { 'europe-all': ['eu'], DACH: ['de', 'at', 'ch'], UK: ['gb'], Europe: ['eu'], 'North America': ['us', 'ca'] };
 const flagCodes = [...new Set([...all.map((i) => flagCode(i.country)), ...Object.values(REGION_FLAGS).flat()])].filter(Boolean);
 const fmtDate = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { day: '2-digit', month: 'short', year: 'numeric' });
-const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten' };
+const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten', 'Latin America': 'Lateinamerika', Other: 'Andere' };
 const rName = (r: string) => (de ? REGION_DE[r] || r : r);
+const count = (f: (i: (typeof all)[number]) => boolean) => all.filter(f).length;
+// countries by number of entries, for the facet list
+const countryRows = countries.map((c) => ({ c, code: flagCode(c), n: count((i) => i.country === c), region: regionOf(c) })).sort((a, b) => b.n - a.n || a.c.localeCompare(b.c));
+// every country a founder can pick in the matcher, grouped by region
+const pickCountries = Object.keys(COUNTRY_CODE).filter((c) => c !== 'European Union').map((c) => ({ c, region: regionOf(c) })).sort((a, b) => countryName(a.c, lang).localeCompare(countryName(b.c, lang), loc));
+const pickGroups = REGIONS.map((r) => ({ r, list: pickCountries.filter((x) => x.region === r) })).filter((g) => g.list.length);
+// short money: 22000000 -> $22M. No regex literal here on purpose: the Astro compiler mis-hoists getStaticPaths when the frontmatter holds /\.0$/.
+const trim0 = (s: string) => (s.endsWith(".0") ? s.slice(0, -2) : s);
+function fmtUsd(n: number): string {
+  if (n >= 1e9) return "$" + trim0((n / 1e9).toFixed(1)) + "B";
+  if (n >= 1e6) return "$" + trim0((n / 1e6).toFixed(1)) + "M";
+  if (n >= 1e3) return "$" + Math.round(n / 1e3) + "K";
+  return "$" + n;
+}
 
 const T = de ? {
   title: 'Sqwod Investor Map: Wer Fitness und Wellness finanziert',
   heroH1: 'Wer Fitness und Wellness finanziert.',
-  sub: 'Fonds, Corporates, Accelerators, Wettbewerbe und Förderprogramme für Gründer:innen in Fitness, Wellness und Health-Tech, plus jeder Geldgeber und Käufer aus dem Deal Tracker. Europa und DACH zuerst, mit Quelle und Prüfdatum.',
+  sub: 'Fonds, Corporates, Accelerators, Wettbewerbe und Förderprogramme für Gründer:innen in Fitness, Wellness und Health-Tech, plus jeder Geldgeber und Käufer aus dem Deal Tracker. Mit Portfolio-Daten von CB Insights und Crunchbase, Quelle und Prüfdatum.',
   crumb: 'Investor Map', checked: 'Geprüft', entries: 'Einträge', withDeals: 'mit Deals im Tracker', countries: 'Länder', open: 'offene Aufrufe',
-  cta: 'Neue Deals jeden Werktag →', tracker: 'Zum Deal Tracker',
-  all: 'Alle', region: 'Region', eu: 'Europa & DACH', search: 'Investor oder Programm suchen …', status: 'Status', openNow: 'Jetzt offen', count: 'Einträge angezeigt', clear: 'Filter zurücksetzen', none: 'Kein Eintrag passt zu diesen Filtern.',
+  cta: 'Passende Investoren finden →', tracker: 'Zum Deal Tracker',
+  all: 'Alle', region: 'Region', country: 'Land', eu: 'Europa & DACH', search: 'Investor, Programm oder Portfolio-Firma suchen …', count: 'Einträge', clear: 'Alle Filter löschen', none: 'Kein Eintrag passt zu diesen Filtern.',
+  filters: 'Filter', showResults: 'Einträge anzeigen', close: 'Schließen', more: 'Alle anzeigen', less: 'Weniger anzeigen',
+  fType: 'Art', fStage: 'Phase', fCheck: 'Ticketgröße', fFocus: 'Fokus', fActivity: 'Aktivität & Zugang',
+  openNow: 'Jetzt offen', hasDeals: 'Deals im Tracker', active12: 'Aktiv in den letzten 12 Monaten', abroad: 'Investiert außerhalb der Heimatregion', leads: 'Führt Runden an', hasData: 'Mit Portfolio-Daten',
+  sort: 'Sortieren', sorts: { active: 'Aktivste zuerst', deals: 'Meiste Deals im Tracker', recent: 'Zuletzt aktiv', open: 'Offene Aufrufe zuerst', az: 'A bis Z' } as Record<string, string>,
   types: { vc: 'Fonds', corporate: 'Corporate & strategisch', accelerator: 'Accelerators', competition: 'Wettbewerbe', grant: 'Förderung', buyer: 'Käufer' } as Record<string, string>,
-  stage: 'Phase', check: 'Ticket', deals: 'Deals im Tracker', lead: 'Lead', buyerOf: 'Käufer von', deadline: 'Bewerbung bis', rolling: 'Laufende Bewerbung', closed: 'Bewerbung geschlossen', tba: 'Termine werden angekündigt', site: 'Website ↗', source: 'Quelle', fromDeals: 'aus dem Deal Tracker',
+  stage: 'Phase', check: 'Ticket', typical: 'Typische Runde', deals: 'Deals im Tracker', recent: 'Zuletzt investiert', lead: 'Lead', deadline: 'Bewerbung bis', rolling: 'Laufende Bewerbung', closed: 'Bewerbung geschlossen', tba: 'Termine werden angekündigt', site: 'Website ↗', source: 'Quelle', fromDeals: 'aus dem Deal Tracker', founded: 'gegr.', inLast12: 'in 12 Monaten', investments: 'Investments',
+  // matcher
+  mKick: 'Investor Matcher', mH: 'Welche Investoren passen zu deiner Firma?', mSub: 'Beschreib dein Unternehmen in fünf Feldern. Du bekommst eine Rangliste mit Match-Score und den Daten dahinter: Phase, Portfolio, Ticketgröße, Standort, Aktivität.',
+  mCat: 'Was baust du?', mStage: 'Phase', mCountry: 'Land', mAmount: 'Gesuchte Summe', mWant: 'Was suchst du?', mKeys: 'Stichworte (optional)', mKeysPh: 'z. B. Boutique-Studio, Recovery, Protein, Coaching-App',
+  wants: { money: 'Investment', programme: 'Accelerator oder Programm', grant: 'Förderung oder Wettbewerb', buyer: 'Käufer / Exit' } as Record<string, string>,
+  mBtn: 'Investoren finden', mReset: 'Zurücksetzen', mResults: 'Treffer', mTop: 'Deine Top 5', mScore: 'Match', mWhy: 'Warum',
+  mLockH: 'Die komplette Liste nach Anmeldung', mLockP: 'Sqwod Daily ist kostenlos. Nach der Bestätigung siehst du alle Treffer mit Score und Daten, auf diesem Gerät dauerhaft.', mLocked: 'weitere Treffer nach der Anmeldung',
+  mNone: 'Kein Investor passt zu dieser Kombination. Lockere Phase, Summe oder „Was suchst du?“.',
+  mAi: 'Bald: Pitch-Text einfügen und eine KI-Einschätzung bekommen, welche Investoren warum passen.',
+  ev: { stage: 'Phase', focus: 'Fokus', geo: 'Standort', check: 'Ticket', activity: 'Aktivität', portfolio: 'Portfolio', sameCountry: 'gleiches Land', sameRegion: 'gleiche Region', abroad: 'investiert auch außerhalb der Heimatregion', otherRegion: 'andere Region', unknown: 'keine Angabe', open: 'Aufruf offen', none: 'keine passende Phase', adjacent: 'angrenzende Phase', noFocus: 'kein Fokus-Treffer', fits: 'passt', near: 'nahe dran', off: 'außerhalb', last: 'zuletzt', inv12: 'Investments in 12 Monaten', tracker: 'im Deal Tracker' },
   method: 'So entsteht die Investor Map',
   methodBody: [
     'Verzeichnis: am 31. Oktober 2026 per Websuche recherchiert, jeder Eintrag mit Quelle und Vertrauensstufe (Certain = Aussage der Organisation oder Primärbericht, Likely = über mehrere Profile hinweg konsistent).',
     'Deals: jeder Investor und Käufer, der auf einem freigegebenen Deal im Deal Tracker genannt wird, erscheint hier automatisch, auch ohne Verzeichniseintrag.',
+    'Portfolio und Sitz: CB Insights (Investments, Profil) für alle Einträge, Crunchbase (Phasen, Gründung) für die aktivsten 20. Abgerufen am 31. Oktober 2026; die Zahl der Investments ist eine Untergrenze (maximal zehn Zeilen je Investor abgefragt).',
+    'Match-Score: Phase 25, Fokus 30, Standort 15, Ticket 15, Aktivität 15 Punkte; ein Investor mit klarem, aber anderem Fokus verliert 10. Angezeigt wird, was 45 oder mehr erreicht. Jede Zeile zeigt die Daten dahinter. Keine KI, nur Regeln, damit du das Ergebnis nachvollziehen kannst.',
     'Bewerbungsfristen ändern sich. Vor einer Bewerbung immer die Seite des Programms prüfen.',
     'Fehlt ein Fonds oder Programm? Schreib an hello@sqwod.life.',
   ],
@@ -54,16 +86,30 @@ const T = de ? {
 } : {
   title: 'Sqwod Investor Map: who funds fitness and wellness',
   heroH1: 'Who funds fitness and wellness.',
-  sub: 'Funds, corporates, accelerators, competitions and grants for founders in fitness, wellness and health tech, plus every backer and buyer from the Deal Tracker. Europe and DACH first, each with a source and a check date.',
+  sub: 'Funds, corporates, accelerators, competitions and grants for founders in fitness, wellness and health tech, plus every backer and buyer from the Deal Tracker. With portfolio data from CB Insights and Crunchbase, a source and a check date.',
   crumb: 'Investor Map', checked: 'Checked', entries: 'entries', withDeals: 'with deals in the tracker', countries: 'countries', open: 'open calls',
-  cta: 'Get new deals every weekday →', tracker: 'Open the Deal Tracker',
-  all: 'All', region: 'Region', eu: 'Europe & DACH', search: 'Search an investor or programme…', status: 'Status', openNow: 'Open now', count: 'entries shown', clear: 'Clear filters', none: 'No entries match these filters.',
+  cta: 'Find my investors →', tracker: 'Open the Deal Tracker',
+  all: 'All', region: 'Region', country: 'Country', eu: 'Europe & DACH', search: 'Search an investor, programme or portfolio company…', count: 'entries', clear: 'Clear all filters', none: 'No entries match these filters.',
+  filters: 'Filters', showResults: 'Show results', close: 'Close', more: 'Show all', less: 'Show fewer',
+  fType: 'Type', fStage: 'Stage', fCheck: 'Cheque size', fFocus: 'Focus', fActivity: 'Activity & access',
+  openNow: 'Open now', hasDeals: 'Deals in the tracker', active12: 'Active in the last 12 months', abroad: 'Invests outside home region', leads: 'Leads rounds', hasData: 'With portfolio data',
+  sort: 'Sort', sorts: { active: 'Most active first', deals: 'Most deals in the tracker', recent: 'Recently active', open: 'Open calls first', az: 'A to Z' } as Record<string, string>,
   types: { vc: 'Funds', corporate: 'Corporate & strategic', accelerator: 'Accelerators', competition: 'Competitions', grant: 'Grants', buyer: 'Buyers' } as Record<string, string>,
-  stage: 'Stage', check: 'Cheque', deals: 'Deals in the tracker', lead: 'lead', buyerOf: 'Bought', deadline: 'Apply by', rolling: 'Rolling applications', closed: 'Applications closed', tba: 'Dates to be announced', site: 'Website ↗', source: 'Source', fromDeals: 'from the Deal Tracker',
+  stage: 'Stage', check: 'Cheque', typical: 'Typical round', deals: 'Deals in the tracker', recent: 'Recent investments', lead: 'lead', deadline: 'Apply by', rolling: 'Rolling applications', closed: 'Applications closed', tba: 'Dates to be announced', site: 'Website ↗', source: 'Source', fromDeals: 'from the Deal Tracker', founded: 'est.', inLast12: 'in 12 months', investments: 'investments',
+  mKick: 'Investor Matcher', mH: 'Which investors fit your company?', mSub: 'Describe your company in five fields. You get a ranked shortlist with a match score and the data behind it: stage, portfolio, cheque size, location, activity.',
+  mCat: 'What are you building?', mStage: 'Stage', mCountry: 'Country', mAmount: 'Amount you are raising', mWant: 'What do you want?', mKeys: 'Keywords (optional)', mKeysPh: 'e.g. boutique studio, recovery, protein, coaching app',
+  wants: { money: 'Investment', programme: 'Accelerator or programme', grant: 'Grant or competition', buyer: 'Buyer / exit' } as Record<string, string>,
+  mBtn: 'Find investors', mReset: 'Reset', mResults: 'matches', mTop: 'Your top 5', mScore: 'Match', mWhy: 'Why',
+  mLockH: 'The full list after sign-up', mLockP: 'Sqwod Daily is free. Once you confirm, every match with its score and data is unlocked on this device for good.', mLocked: 'more matches after sign-up',
+  mNone: 'No investor fits this combination. Loosen the stage, the amount or “What do you want?”.',
+  mAi: 'Coming next: paste your pitch and get an AI read on which investors fit and why.',
+  ev: { stage: 'Stage', focus: 'Focus', geo: 'Location', check: 'Cheque', activity: 'Activity', portfolio: 'Portfolio', sameCountry: 'same country', sameRegion: 'same region', abroad: 'also invests outside its home region', otherRegion: 'other region', unknown: 'not stated', open: 'call open', none: 'no matching stage', adjacent: 'adjacent stage', noFocus: 'no focus match', fits: 'fits', near: 'close', off: 'outside', last: 'last', inv12: 'investments in 12 months', tracker: 'in the Deal Tracker' },
   method: 'How the Investor Map is built',
   methodBody: [
     'Directory: researched by web search on 31 October 2026, every entry with a source and a confidence level (Certain = stated by the organisation or a primary report, Likely = consistent across several profiles).',
     'Deals: every investor and buyer named on an approved Deal Tracker entry appears here automatically, with or without a directory entry.',
+    'Portfolio and HQ: CB Insights (investments, profile) for every entry, Crunchbase (stages, founding year) for the 20 most active. Pulled on 31 October 2026; investment counts are a floor (at most ten rows requested per investor).',
+    'Match score: stage 25, focus 30, location 15, cheque 15, activity 15 points; an investor with a clear but different focus loses 10. Anything scoring 45 or more is shown. Every line shows the data behind it. Rules, not AI, so you can check the result.',
     'Application deadlines move. Always check the programme’s own page before applying.',
     'Missing a fund or programme? Write to hello@sqwod.life.',
   ],
@@ -79,6 +125,10 @@ const applyLine = (i: (typeof all)[number]) => {
   const note = de ? i.apply.noteDe || i.apply.note : i.apply.note;
   return note ? `${base} · ${note}` : base;
 };
+const stageLine = (i: (typeof all)[number]) => i.stage || (i.stages.length ? (i.stages.length === STAGES.length ? T.all : `${STAGE_LABEL[lang][i.stages[0]]}${i.stages.length > 1 ? ` – ${STAGE_LABEL[lang][i.stages[i.stages.length - 1]]}` : ''}`) : '');
+// compact client data for the matcher (one row per investor)
+const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc: flagCode(i.country), r: i.region, city: i.city || '', st: i.stages, sf: i.stagesFrom, min: i.checkMin, max: i.checkMax, chk: i.check || '', typ: i.typicalRound, f: i.focusTags,
+  p: i.portfolio.map((r) => r[1]), d: i.deals.slice(0, 3).map((d) => d.entity), tot: i.dealsTotal, a12: i.active12m, last: i.lastDeal, open: isOpen(i) ? 1 : 0, lead: i.leadsRounds ? 1 : 0, ab: i.abroad ? 1 : 0, kw: `${i.name} ${i.focus} ${i.portfolio.map((r) => r[1]).join(' ')} ${i.deals.map((d) => d.entity).join(' ')}`.toLowerCase(), cbi: i.enrich?.cbi?.url || '', cb: i.enrich?.cb?.permalink ? `https://www.crunchbase.com/organization/${i.enrich.cb.permalink}` : '' }));
 ---
 <Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('investors', lang)}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
@@ -95,53 +145,128 @@ const applyLine = (i: (typeof all)[number]) => {
       <div><b class="dnum">{openCalls.length}</b><span>{T.open}</span></div>
     </div>
     <div class="ih-btns">
-      <a class="ih-cta" href="#investors-signup" data-umami-event="investors-hero-cta">{T.cta}</a>
+      <a class="ih-cta" href="#matcher" data-umami-event="investors-hero-cta">{T.cta}</a>
       <a class="ih-alt" href={`/${lang}/intelligence/deals/`}>{T.tracker}</a>
     </div>
   </section>
 
-  <section class="dt-filters" id="all-investors" aria-label={T.status}>
-    <div class="dt-chips" role="group" aria-label="Type">
-      <button type="button" class="on" data-type="" aria-pressed="true">{T.all}</button>
-      {types.map((t) => <button type="button" data-type={t} aria-pressed="false">{T.types[t]}</button>)}
+  <!-- Investor Matcher -->
+  <section class="mt" id="matcher" aria-labelledby="mt-h">
+    <p class="kick">{T.mKick}</p>
+    <h2 id="mt-h" class="mt-h">{T.mH}</h2>
+    <p class="mt-sub">{T.mSub}</p>
+    <form class="mt-form" data-mt-form novalidate>
+      <label><span>{T.mCat}</span><span class="dt-sel"><select name="cat" required><option value="">…</option>{FOCUS.map((k) => <option value={k}>{FOCUS_LABEL[lang][k]}</option>)}</select></span></label>
+      <label><span>{T.mStage}</span><span class="dt-sel"><select name="stage" required><option value="">…</option>{STAGES.map((k) => <option value={k}>{STAGE_LABEL[lang][k]}</option>)}</select></span></label>
+      <label><span>{T.mCountry}</span><span class="dt-sel"><select name="country"><option value="">…</option>{pickGroups.map((g) => <optgroup label={rName(g.r)}>{g.list.map((x) => <option value={x.c}>{countryName(x.c, lang)}</option>)}</optgroup>)}</select></span></label>
+      <label><span>{T.mAmount}</span><span class="dt-sel"><select name="band"><option value="">…</option>{BAND_LABEL.map((b, k) => <option value={k}>{b}</option>)}</select></span></label>
+      <fieldset class="mt-want"><legend>{T.mWant}</legend>
+        {Object.entries(T.wants).map(([v, l]) => <label class="mt-pill"><input type="checkbox" name="want" value={v} checked={v === 'money'} /><span>{l}</span></label>)}
+      </fieldset>
+      <label class="mt-keys"><span>{T.mKeys}</span><input type="text" name="kw" placeholder={T.mKeysPh} autocomplete="off" /></label>
+      <div class="mt-btns"><button type="submit" class="ih-cta" data-umami-event="investor-match">{T.mBtn}</button><button type="reset" class="dt-clear" data-mt-reset hidden>{T.mReset}</button></div>
+    </form>
+    <div class="mt-out" data-mt-out hidden>
+      <p class="mt-count"><b data-mt-n>0</b> {T.mResults} · {T.mTop}</p>
+      <ol class="mt-list" data-mt-list></ol>
+      <div class="mt-lock" data-mt-lock hidden>
+        <p class="mt-lock-n"><b data-mt-more>0</b> {T.mLocked}</p>
+        <InlineSignup lang={lang} source="investor-match" id="matcher-signup" head={T.mLockH} body={T.mLockP} role="brand" event="investor-match-signup" />
+      </div>
+      <p class="mt-none" data-mt-none hidden>{T.mNone}</p>
     </div>
-    <div class="dt-row">
+    <p class="mt-ai">{T.mAi}</p>
+  </section>
+
+  <!-- Filter + list -->
+  <div class="fx" id="all-investors">
+    <div class="fx-bar">
       <label class="dt-q">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
         <input type="search" placeholder={T.search} aria-label={T.search} autocomplete="off" enterkeyhint="search" data-q />
       </label>
-      <span class="dt-sel"><select aria-label={T.region} data-region><option value="">{T.region}: {T.all}</option><option value="europe-all">{T.eu}</option>{regions.map((r) => <option value={r}>{rName(r)}</option>)}</select></span>
-      <span class="dt-sel"><select aria-label={T.status} data-open><option value="">{T.status}: {T.all}</option><option value="open">{T.openNow}</option></select></span>
+      <button type="button" class="fx-open" data-fx-open aria-controls="fx-side" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" /></svg>{T.filters}<b data-fx-n hidden></b>
+      </button>
+      <span class="dt-sel fx-sort"><select aria-label={T.sort} data-sort>{Object.entries(T.sorts).map(([v, l]) => <option value={v}>{T.sort}: {l}</option>)}</select></span>
     </div>
-    <p class="dt-count"><span><b data-shown>{all.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
-  </section>
+    <p class="dt-count fx-count"><span><b data-shown>{all.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
+    <ul class="fx-chips" data-fx-chips aria-label={T.filters}></ul>
 
-  <ul class="iv-list">
-    {all.map((i) => (
-      <li class="iv" id={i.id} data-type={i.type} data-region={i.region} data-open={isOpen(i) ? '1' : ''} data-name={`${i.name} ${i.country} ${i.city || ''} ${i.focus} ${i.deals.map((d) => d.entity).join(' ')}`.toLowerCase()}>
-        <div class="iv-top">
-          <h3 class="iv-name">{i.url ? <a href={i.url} rel="noopener" target="_blank">{i.name}</a> : i.name}</h3>
-          <span class={`iv-type iv-type-${i.type}`}>{TYPE_LABEL[lang][i.type]}</span>
-        </div>
-        {(i.country || i.stage || i.check) && (
-          <p class="iv-meta">
-            {i.country && <><Flag country={i.country} />{countryName(i.country, lang)}{i.city ? `, ${i.city}` : ''}</>}
-            {i.stage && <span>{i.stage}</span>}
-            {i.check && <span>{i.check}</span>}
-          </p>
-        )}
-        {i.focus && <p class="iv-focus">{de ? i.focusDe || i.focus : i.focus}</p>}
-        {i.deals.length > 0 && (
-          <p class="iv-deals"><b>{T.deals}:</b> {i.deals.map((d, k) => <>{k > 0 && ' · '}<a href={`/${lang}/intelligence/deals/#deal-${d.id}`}><DealIcon kind={d.kind} />{d.entity}</a>{d.amount && <span class="iv-amt"> {d.amount}</span>}{d.lead && d.role === 'investor' && <i> ({T.lead})</i>}</>)}</p>
-        )}
-        {i.apply && <p class={`iv-apply${isOpen(i) ? ' is-open' : ''}`}>{applyLine(i)}</p>}
-        <p class="iv-src">{i.inDirectory
-          ? <>{`${T.checked} ${fmtDate(i.checked)} · `}<a href={i.source} rel="nofollow noopener" target="_blank">{T.source} ↗</a> · {i.confidence}</>
-          : <>{T.fromDeals}</>}</p>
-      </li>
-    ))}
-    <li class="dt-none" data-none hidden>{T.none}<button type="button" class="dt-clear" data-clear>{T.clear}</button></li>
-  </ul>
+    <aside class="fx-side" id="fx-side" data-fx-side aria-label={T.filters}>
+      <div class="fx-side-head"><b>{T.filters}</b><button type="button" class="fx-x" data-fx-close aria-label={T.close}>×</button></div>
+      <div class="fx-side-body">
+        <details class="fx-g" open><summary>{T.fType}</summary><div>
+          {types.map((t) => <label class="fx-opt"><input type="checkbox" name="type" value={t} /><span>{T.types[t]}</span><i data-n>{count((i) => i.type === t)}</i></label>)}
+        </div></details>
+        <details class="fx-g" open><summary>{T.region}</summary><div>
+          <label class="fx-opt"><input type="checkbox" name="region" value="europe-all" /><span>{T.eu}</span><i data-n>{count((i) => ['DACH', 'UK', 'Europe'].includes(i.region))}</i></label>
+          {regions.map((r) => <label class="fx-opt"><input type="checkbox" name="region" value={r} /><span>{rName(r)}</span><i data-n>{count((i) => i.region === r)}</i></label>)}
+        </div></details>
+        <details class="fx-g"><summary>{T.country}</summary><div data-fx-more>
+          {countryRows.map((x, k) => <label class="fx-opt" hidden={k >= 8}><input type="checkbox" name="country" value={x.c} data-region={x.region} /><span><Flag code={x.code} />{countryName(x.c, lang)}</span><i data-n>{x.n}</i></label>)}
+          {countryRows.length > 8 && <button type="button" class="fx-more" data-fx-toggle data-more={T.more} data-less={T.less}>{T.more} ({countryRows.length})</button>}
+        </div></details>
+        <details class="fx-g" open><summary>{T.fStage}</summary><div>
+          {STAGES.map((s) => <label class="fx-opt"><input type="checkbox" name="stage" value={s} /><span>{STAGE_LABEL[lang][s]}</span><i data-n>{count((i) => i.stages.includes(s))}</i></label>)}
+        </div></details>
+        <details class="fx-g"><summary>{T.fCheck}</summary><div>
+          {BAND_LABEL.map((b, k) => <label class="fx-opt"><input type="checkbox" name="band" value={k} /><span>{b}</span><i data-n>{count((i) => i.bands.includes(k))}</i></label>)}
+        </div></details>
+        <details class="fx-g" open><summary>{T.fFocus}</summary><div>
+          {FOCUS.map((f) => <label class="fx-opt"><input type="checkbox" name="focus" value={f} /><span>{FOCUS_LABEL[lang][f]}</span><i data-n>{count((i) => i.focusTags.includes(f))}</i></label>)}
+        </div></details>
+        <details class="fx-g" open><summary>{T.fActivity}</summary><div>
+          <label class="fx-opt"><input type="checkbox" name="open" value="1" /><span>{T.openNow}</span><i data-n>{openCalls.length}</i></label>
+          <label class="fx-opt"><input type="checkbox" name="deals" value="1" /><span>{T.hasDeals}</span><i data-n>{withDeals.length}</i></label>
+          <label class="fx-opt"><input type="checkbox" name="active" value="1" /><span>{T.active12}</span><i data-n>{count((i) => i.active12m > 0)}</i></label>
+          <label class="fx-opt"><input type="checkbox" name="abroad" value="1" /><span>{T.abroad}</span><i data-n>{count((i) => i.abroad)}</i></label>
+          <label class="fx-opt"><input type="checkbox" name="leads" value="1" /><span>{T.leads}</span><i data-n>{count((i) => i.leadsRounds)}</i></label>
+          <label class="fx-opt"><input type="checkbox" name="data" value="1" /><span>{T.hasData}</span><i data-n>{count((i) => !!i.enrich?.cbi?.url)}</i></label>
+        </div></details>
+      </div>
+      <div class="fx-side-foot"><button type="button" class="dt-clear" data-clear>{T.clear}</button><button type="button" class="ih-cta fx-show" data-fx-close><span data-shown-2>{all.length}</span>&nbsp;{T.showResults}</button></div>
+    </aside>
+    <div class="fx-veil" data-fx-close hidden></div>
+
+    <ul class="iv-list">
+      {all.map((i) => (
+        <li class="iv" id={i.id} data-type={i.type} data-region={i.region} data-country={i.country} data-stage={i.stages.join(' ')} data-band={i.bands.join(' ')} data-focus={i.focusTags.join(' ')}
+          data-open={isOpen(i) ? '1' : ''} data-deals={i.deals.length ? '1' : ''} data-active={i.active12m > 0 ? '1' : ''} data-abroad={i.abroad ? '1' : ''} data-leads={i.leadsRounds ? '1' : ''} data-data={i.enrich?.cbi?.url ? '1' : ''}
+          data-a12={i.active12m} data-tot={i.dealsTotal} data-nd={i.deals.length} data-last={i.lastDeal} data-az={i.name.toLowerCase()}
+          data-name={`${i.name} ${i.country} ${i.city || ''} ${i.focus} ${i.portfolio.map((r) => r[1]).join(' ')} ${i.deals.map((d) => d.entity).join(' ')}`.toLowerCase()}>
+          <div class="iv-top">
+            <h3 class="iv-name">{i.url ? <a href={i.url} rel="noopener" target="_blank">{i.name}</a> : i.name}</h3>
+            <span class={`iv-type iv-type-${i.type}`}>{TYPE_LABEL[lang][i.type]}</span>
+          </div>
+          {(i.country || i.stages.length || i.check || i.founded) && (
+            <p class="iv-meta">
+              {i.country && <><Flag country={i.country} />{countryName(i.country, lang)}{i.city ? `, ${i.city}` : ''}</>}
+              {i.founded && <span>{T.founded} {i.founded}</span>}
+              {stageLine(i) && <span>{stageLine(i)}</span>}
+              {i.check ? <span>{i.check}</span> : i.typicalRound ? <span>{T.typical} {fmtUsd(i.typicalRound)}</span> : null}
+            </p>
+          )}
+          {i.focusTags.length > 0 && <p class="iv-tags">{i.focusTags.map((f) => <button type="button" class="iv-tag" data-tag={f}>{FOCUS_LABEL[lang][f]}</button>)}</p>}
+          {i.focus && <p class="iv-focus">{de ? i.focusDe || i.focus : i.focus}</p>}
+          {i.deals.length > 0 && (
+            <p class="iv-deals"><b>{T.deals}:</b> {i.deals.map((d, k) => <>{k > 0 && ' · '}<a href={`/${lang}/intelligence/deals/#deal-${d.id}`}><DealIcon kind={d.kind} />{d.entity}</a>{d.amount && <span class="iv-amt"> {d.amount}</span>}{d.lead && d.role === 'investor' && <i> ({T.lead})</i>}</>)}</p>
+          )}
+          {i.portfolio.length > 0 && (
+            <p class="iv-port"><b>{T.recent}:</b> {i.portfolio.map((r, k) => <>{k > 0 && ' · '}<span>{r[1]}<i> {r[2]}{r[3] ? `, ${fmtUsd(r[3])}` : ''}</i></span></>)}
+              {i.active12m > 0 && <span class="iv-act"> · <b>{i.active12m}</b> {T.inLast12}</span>}</p>
+          )}
+          {i.apply && <p class={`iv-apply${isOpen(i) ? ' is-open' : ''}`}>{applyLine(i)}</p>}
+          <p class="iv-src">{i.inDirectory
+            ? <>{`${T.checked} ${fmtDate(i.checked)} · `}<a href={i.source} rel="nofollow noopener" target="_blank">{T.source} ↗</a> · {i.confidence}</>
+            : <>{T.fromDeals}</>}
+            {i.enrich?.cbi?.url && <> · <a href={i.enrich.cbi.url} rel="nofollow noopener" target="_blank">CB Insights ↗</a></>}
+            {i.enrich?.cb?.permalink && <> · <a href={`https://www.crunchbase.com/organization/${i.enrich.cb.permalink}`} rel="nofollow noopener" target="_blank">Crunchbase ↗</a></>}</p>
+        </li>
+      ))}
+      <li class="dt-none" data-none hidden>{T.none}<button type="button" class="dt-clear" data-clear>{T.clear}</button></li>
+    </ul>
+  </div>
 
   <InlineSignup lang={lang} source="investor-map" id="investors-signup" head={T.signupHead} body={T.signupBody} />
 
@@ -149,6 +274,8 @@ const applyLine = (i: (typeof all)[number]) => {
     <b>{T.method}</b>
     <ul>{T.methodBody.map((l) => <li>{l}</li>)}</ul>
   </section>
+  <script type="application/json" id="iv-data" set:html={JSON.stringify(data)} />
+  <script type="application/json" id="iv-i18n" set:html={JSON.stringify({ lang, ev: T.ev, stage: STAGE_LABEL[lang], focus: FOCUS_LABEL[lang], type: TYPE_LABEL[lang], band: BAND_LABEL, region: REGIONS.map((r) => [r, rName(r)]), countries: Object.fromEntries(countries.map((c) => [c, countryName(c, lang)])), bands: BANDS.map((b) => [b[0], b[1] === Infinity ? null : b[1]]) })} />
 </Base>
 
 <style>
@@ -166,7 +293,7 @@ const applyLine = (i: (typeof all)[number]) => {
   .ih-kpis span{display:block;font-size:13px;color:var(--g2);margin-top:6px;line-height:1.3;overflow-wrap:anywhere}
   .ih-acc{color:var(--accent)}
   .ih-btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
-  .ih-cta,.ih-alt{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap}
+  .ih-cta,.ih-alt{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;border:0;font-family:inherit;cursor:pointer}
   .ih-cta{background:var(--accent);color:var(--accent-ink)}
   .ih-cta:hover{background:var(--chalk);color:var(--ink)}
   @media (prefers-color-scheme: light){:global(:root:not([data-theme="dark"])) .ih-cta:not(:hover){color:#fff}}
@@ -184,39 +311,142 @@ const applyLine = (i: (typeof all)[number]) => {
     .ih-alt{width:100%;border:0;text-decoration:underline;text-underline-offset:4px;min-height:44px}
   }
 
-  /* filters: same pattern as the Deal Tracker */
-  .dt-filters{margin:30px 0 12px}
-  .dt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
-  .dt-chips button{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
-  .dt-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
-  .dt-row{display:grid;grid-template-columns:1fr;gap:8px}
-  @media(min-width:640px){.dt-row{grid-template-columns:2fr 1fr 1fr}}
+  /* matcher */
+  .mt{margin:36px 0 0;border:1px solid var(--accent-line);border-radius:18px;background:var(--panel);padding:24px;scroll-margin-top:16px}
+  .mt-h{margin:6px 0 0;font-size:30px;line-height:1.1}
+  .mt-sub{margin:10px 0 18px;color:var(--g2);line-height:1.5;max-width:64ch}
+  .mt-form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 14px}
+  .mt-form>label{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:12.5px;font-weight:600;color:var(--g1)}
+  .mt-form select,.mt-form input[type=text]{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--ink);color:var(--chalk);border-radius:10px;padding:10px 11px;font:inherit;font-size:14px;min-height:44px}
+  .mt-form select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mt-form select:focus-visible,.mt-form input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .mt-want{grid-column:1/-1;margin:0;padding:0;border:0;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .mt-want legend{float:left;margin-right:6px;padding:0;font-size:12.5px;font-weight:600;color:var(--g1)}
+  .mt-pill{position:relative;display:inline-flex;min-height:36px;align-items:center;padding:0 13px;border:1px solid var(--line);border-radius:999px;font-size:13px;color:var(--g1);cursor:pointer;background:var(--ink)}
+  .mt-pill input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+  .mt-pill:has(input:checked){background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .mt-pill:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+  .mt-keys{grid-column:1/-1}
+  .mt-btns{grid-column:1/-1;display:flex;align-items:center;gap:16px;margin-top:4px}
+  .mt-out{margin:22px 0 0;border-top:1px solid var(--line);padding-top:18px}
+  .mt-out[hidden]{display:none}
+  .mt-count{margin:0 0 12px;font-size:13px;color:var(--g2)}
+  .mt-count b{color:var(--chalk);font-weight:700}
+  .mt-list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .mt-list :global(.mr){display:grid;grid-template-columns:64px 1fr;gap:14px;border:1px solid var(--line);border-radius:14px;background:var(--ink);padding:14px 16px;align-items:start}
+  .mt-list :global(.mr-score){display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:12px;background:var(--accent-soft);border:1px solid var(--accent-line);padding:8px 4px;color:var(--accent)}
+  .mt-list :global(.mr-score b){font-family:var(--display);font-size:28px;line-height:1}
+  .mt-list :global(.mr-score small){font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+  .mt-list :global(.mr-body){min-width:0}
+  .mt-list :global(.mr-top){display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px}
+  .mt-list :global(.mr-name){margin:0;font-size:16px;font-weight:700}
+  .mt-list :global(.mr-name a){color:var(--chalk);text-decoration:none}
+  .mt-list :global(.mr-name a:hover){color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+  .mt-list :global(.mr-meta){font-size:12.5px;color:var(--g2)}
+  .mt-list :global(.mr-meta .fl){display:inline-block;width:16px;height:12px;vertical-align:-1px;margin-right:4px;border-radius:2px;border:1px solid var(--line);box-sizing:content-box}
+  .mt-list :global(.mr-why){margin:8px 0 0;padding:0;list-style:none;display:grid;gap:3px;font-size:12.5px;line-height:1.5;color:var(--g1)}
+  .mt-list :global(.mr-why li){display:grid;grid-template-columns:72px 1fr;gap:8px}
+  .mt-list :global(.mr-why li b){font-weight:600;color:var(--g2)}
+  .mt-list :global(.mr-why li i){font-style:normal;color:var(--g3)}
+  .mt-list :global(.mr-why li em){font-style:normal;color:var(--accent);font-weight:600}
+  .mt-list :global(.mr-src){margin:8px 0 0;font-size:11.5px;color:var(--g3)}
+  .mt-list :global(.mr-src a){color:var(--g2)}
+  .mt-list :global(.mr.is-locked){filter:blur(5px);pointer-events:none;user-select:none;opacity:.7}
+  .mt-lock{margin:14px 0 0}
+  .mt-lock[hidden]{display:none}
+  .mt-lock-n{margin:0 0 -16px;font-size:13px;color:var(--g2);text-align:center}
+  .mt-lock-n b{color:var(--chalk)}
+  .mt-lock :global(.isu){margin:0;border-color:var(--accent-line)}
+  .mt-none{margin:0;color:var(--g2);font-size:14px}
+  .mt-none[hidden]{display:none}
+  .mt-ai{margin:16px 0 0;font-size:12.5px;color:var(--g3)}
+  @media(max-width:899px){
+    .mt{padding:18px 16px;border-radius:14px;margin-top:28px}
+    .mt-h{font-size:24px}
+    .mt-sub{font-size:14px}
+    .mt-form{grid-template-columns:1fr 1fr;gap:10px}
+    .mt-form select,.mt-form input[type=text]{min-height:48px;font-size:16px}
+    .mt-btns{flex-direction:column;align-items:stretch}
+    .mt-btns .ih-cta{width:100%}
+    .mt-list :global(.mr){grid-template-columns:52px 1fr;gap:10px;padding:12px}
+    .mt-list :global(.mr-score b){font-size:24px}
+    .mt-list :global(.mr-why li){display:block}
+    .mt-list :global(.mr-why li b::after){content:": "}
+  }
+
+  /* filter layout: sidebar on desktop, sheet on phones */
+  .fx{position:relative;display:grid;grid-template-columns:250px minmax(0,1fr);grid-template-areas:"bar bar" "count count" "chips chips" "side list";column-gap:24px;margin:34px 0 0;scroll-margin-top:16px}
+  .fx-bar{grid-area:bar;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+  .fx-open{display:none}
   .dt-q,.dt-sel{position:relative;display:block;min-width:0}
   .dt-q svg{position:absolute;left:13px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--g2);pointer-events:none}
   .dt-sel::after{content:"";position:absolute;right:14px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--g2);border-bottom:1.5px solid var(--g2);transform:translateY(-70%) rotate(45deg);pointer-events:none}
-  .dt-row input,.dt-row select{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px}
-  .dt-row input{padding-left:38px}
-  .dt-row select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .dt-row input:focus-visible,.dt-row select:focus-visible,.dt-chips button:focus-visible,.dt-clear:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-  .dt-count{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--g2);margin:8px 0 0}
+  .fx-bar input,.fx-bar select{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px;min-height:42px}
+  .fx-bar input{padding-left:38px}
+  .fx-bar select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fx-bar input:focus-visible,.fx-bar select:focus-visible,.fx-open:focus-visible,.dt-clear:focus-visible,.fx-more:focus-visible,.iv-tag:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .dt-count{grid-area:count;display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--g2);margin:8px 0 0}
   .dt-count b{font-weight:600;color:var(--chalk)}
   .dt-clear{border:0;background:none;padding:8px 0;margin:-8px 0;font:inherit;font-size:12px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
   .dt-clear:hover{color:var(--accent)}
   .dt-clear[hidden]{display:none}
+  .fx-chips{grid-area:chips;list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+  .fx-chips:empty{display:none}
+  .fx-chips :global(button){display:inline-flex;align-items:center;gap:6px;min-height:30px;padding:0 10px;border:1px solid var(--accent-line);background:var(--accent-soft);color:var(--chalk);border-radius:999px;font:inherit;font-size:12.5px;cursor:pointer}
+  .fx-chips :global(button::after){content:"×";font-size:15px;color:var(--g2)}
+  .fx-chips :global(button:hover){border-color:var(--accent)}
+  .fx-side{grid-area:side;align-self:start;position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;margin-top:12px;padding-right:4px;scrollbar-width:thin}
+  .fx-side-head,.fx-veil{display:none}
+  .fx-side-foot{display:none}
+  .fx-g{border-top:1px solid var(--line);padding:4px 0 8px}
+  .fx-g:first-child{border-top:0}
+  .fx-g summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;min-height:40px;font-size:13px;font-weight:700;color:var(--chalk);user-select:none}
+  .fx-g summary::-webkit-details-marker{display:none}
+  .fx-g summary::after{content:"";width:7px;height:7px;border-right:1.5px solid var(--g2);border-bottom:1.5px solid var(--g2);transform:rotate(45deg);margin-right:6px;transition:transform .15s}
+  .fx-g[open] summary::after{transform:rotate(-135deg);margin-top:4px}
+  .fx-g>div{display:grid;gap:2px;padding-bottom:4px}
+  .fx-opt{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:9px;min-height:32px;padding:2px 4px;border-radius:8px;font-size:13px;color:var(--g1);cursor:pointer}
+  .fx-opt:hover{background:var(--panel)}
+  .fx-opt[hidden]{display:none}
+  .fx-opt input{width:16px;height:16px;margin:0;accent-color:var(--accent);cursor:pointer}
+  .fx-opt span{display:flex;align-items:center;gap:7px;min-width:0;line-height:1.3}
+  .fx-opt i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--g3);min-width:2ch;text-align:right}
+  .fx-opt.is-zero{color:var(--g3)}
+  .fx-opt.is-zero i{color:var(--g4)}
+  .fx-more{border:0;background:none;padding:6px 4px;margin:2px 0 0;font:inherit;font-size:12.5px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer;justify-self:start}
+  .fx-more:hover{color:var(--accent)}
+  .iv-list{grid-area:list;list-style:none;margin:12px 0 24px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-content:start}
+  @media(max-width:1199px){.iv-list{grid-template-columns:1fr}}
   @media(max-width:899px){
-    .dt-chips{flex-wrap:nowrap;gap:8px;margin:0 -24px 12px;padding:2px 24px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding:24px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
-      -webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
-    .dt-chips::-webkit-scrollbar{display:none}
-    .dt-chips button{flex:0 0 auto;min-height:44px;padding:0 15px;font-size:13.5px;scroll-snap-align:start}
-    .dt-row{grid-template-columns:1fr 1fr}
+    .fx{grid-template-columns:1fr;grid-template-areas:"bar" "count" "chips" "list";margin-top:28px}
+    .fx-bar{grid-template-columns:1fr auto}
     .dt-q{grid-column:1/-1}
-    .dt-row input,.dt-row select{min-height:48px;padding-top:0;padding-bottom:0;font-size:16px}
+    .fx-sort{grid-column:1}
+    .fx-bar input,.fx-bar select{min-height:48px;padding-top:0;padding-bottom:0;font-size:16px}
+    .fx-open{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 16px;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;font:inherit;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+    .fx-open svg{width:18px;height:18px}
+    .fx-open b{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 6px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:12px}
+    .fx-open b[hidden]{display:none}
     .dt-count{margin-top:10px;font-size:13px}
+    .fx-chips :global(button){min-height:36px}
+    .fx-side{position:fixed;inset:auto 0 0 0;z-index:60;max-height:88vh;margin:0;padding:0;border-radius:18px 18px 0 0;background:var(--ink);border-top:1px solid var(--line);box-shadow:0 -12px 40px rgba(0,0,0,.45);display:flex;flex-direction:column;transform:translateY(102%);transition:transform .22s ease;visibility:hidden}
+    .fx-side.is-open{transform:none;visibility:visible}
+    .fx-side-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px 10px;border-bottom:1px solid var(--line);font-size:16px}
+    .fx-x{border:0;background:var(--panel);color:var(--chalk);width:36px;height:36px;border-radius:999px;font-size:22px;line-height:1;cursor:pointer}
+    .fx-side-body{flex:1;overflow:auto;padding:4px 18px 8px;-webkit-overflow-scrolling:touch}
+    .fx-opt{min-height:44px;font-size:15px}
+    .fx-opt input{width:20px;height:20px}
+    .fx-g summary{min-height:46px;font-size:15px}
+    .fx-side-foot{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 18px calc(12px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--ink)}
+    .fx-show{flex:1;min-height:48px}
+    .fx-veil{display:block;position:fixed;inset:0;z-index:59;background:rgba(0,0,0,.55)}
+    .fx-veil[hidden]{display:none}
+    .iv-list{margin-top:10px;gap:10px}
   }
+  @media(prefers-reduced-motion:reduce){.fx-side{transition:none}}
+  :global(body.fx-lock){overflow:hidden}
 
   /* the cards */
-  .iv-list{list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-  @media(max-width:899px){.iv-list{grid-template-columns:1fr;gap:10px}}
   .iv{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:16px 18px 14px;min-width:0;scroll-margin-top:24px}
   .iv[hidden]{display:none}
   .iv:target{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent-line)}
@@ -228,14 +458,21 @@ const applyLine = (i: (typeof all)[number]) => {
   .iv-type-competition,.iv-type-grant{color:var(--accent);border-color:var(--accent-line)}
   .iv-meta{display:flex;flex-wrap:wrap;gap:4px 0;margin:8px 0 0;font-size:12.5px;color:var(--g2);line-height:1.5}
   .iv-meta span::before{content:"·";margin:0 7px;color:var(--g3)}
+  .iv-tags{display:flex;flex-wrap:wrap;gap:5px;margin:9px 0 0}
+  .iv-tag{border:1px solid var(--line);background:none;color:var(--g1);border-radius:999px;padding:3px 9px;font:inherit;font-size:11.5px;cursor:pointer;line-height:1.3}
+  .iv-tag:hover,.iv-tag.on{border-color:var(--accent);color:var(--accent)}
   .iv-focus{margin:8px 0 0;font-size:13.5px;line-height:1.5;color:var(--g1)}
-  .iv-deals{margin:8px 0 0;font-size:12.5px;line-height:1.7;color:var(--g2)}
-  .iv-deals b{font-weight:600;color:var(--g1)}
+  .iv-deals,.iv-port{margin:8px 0 0;font-size:12.5px;line-height:1.7;color:var(--g2)}
+  .iv-deals b,.iv-port b{font-weight:600;color:var(--g1)}
   .iv-deals a{color:var(--chalk);text-decoration:underline;text-decoration-color:var(--edge);text-underline-offset:3px;white-space:nowrap}
   .iv-deals a:hover{color:var(--accent)}
   .iv-deals a :global(.di){width:12px;height:12px;margin-right:3px;vertical-align:-1px}
   .iv-amt{color:var(--g2)}
   .iv-deals i{font-style:normal;color:var(--g3)}
+  .iv-port span{white-space:nowrap;color:var(--chalk)}
+  .iv-port span i{font-style:normal;color:var(--g3)}
+  .iv-port .iv-act{white-space:normal;color:var(--g2)}
+  .iv-port .iv-act b{color:var(--accent)}
   .iv-apply{margin:8px 0 0;font-size:12.5px;line-height:1.5;color:var(--g2)}
   .iv-apply.is-open{color:var(--accent);font-weight:600}
   .iv-src{margin:10px 0 0;font-size:11.5px;color:var(--g3)}
@@ -247,34 +484,231 @@ const applyLine = (i: (typeof all)[number]) => {
 </style>
 
 <script>
+  // ---------- faceted filter: checkboxes with live counts, state in the URL, sheet on phones ----------
   const rows = Array.from(document.querySelectorAll<HTMLLIElement>('.iv'));
-  const q = document.querySelector<HTMLInputElement>('[data-q]');
-  const region = document.querySelector<HTMLSelectElement>('[data-region]');
-  const open = document.querySelector<HTMLSelectElement>('[data-open]');
-  const count = document.querySelector('[data-shown]');
-  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.dt-chips button'));
+  const list = document.querySelector<HTMLUListElement>('.iv-list')!;
+  const q = document.querySelector<HTMLInputElement>('[data-q]')!;
+  const sort = document.querySelector<HTMLSelectElement>('[data-sort]')!;
+  const side = document.querySelector<HTMLElement>('[data-fx-side]')!;
+  const boxes = Array.from(side.querySelectorAll<HTMLInputElement>('input[type=checkbox]'));
+  const shown = Array.from(document.querySelectorAll('[data-shown],[data-shown-2]'));
+  const chipsUl = document.querySelector<HTMLUListElement>('[data-fx-chips]')!;
   const clears = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-clear]'));
-  const none = document.querySelector<HTMLElement>('[data-none]');
-  let type = '';
+  const none = document.querySelector<HTMLElement>('[data-none]')!;
+  const badge = document.querySelector<HTMLElement>('[data-fx-n]')!;
   const EUROPE = new Set(['DACH', 'UK', 'Europe']);
-  function apply() {
-    const s = (q?.value || '').trim().toLowerCase();
-    const r = region?.value || '';
+  const FACETS = ['type', 'region', 'country', 'stage', 'band', 'focus', 'open', 'deals', 'active', 'abroad', 'leads', 'data'] as const;
+  type Facet = (typeof FACETS)[number];
+  const SETS: Record<Facet, 'one' | 'many' | 'flag'> = { type: 'one', region: 'one', country: 'one', stage: 'many', band: 'many', focus: 'many', open: 'flag', deals: 'flag', active: 'flag', abroad: 'flag', leads: 'flag', data: 'flag' };
+
+  const state = (): Record<Facet, Set<string>> => {
+    const s = Object.fromEntries(FACETS.map((f) => [f, new Set<string>()])) as Record<Facet, Set<string>>;
+    for (const b of boxes) if (b.checked) s[b.name as Facet].add(b.value);
+    return s;
+  };
+  /** Does one card pass one facet? OR inside a facet, AND across facets (how Amazon does it). */
+  function passes(el: HTMLLIElement, f: Facet, sel: Set<string>): boolean {
+    if (!sel.size) return true;
+    const v = el.dataset[f] || '';
+    if (SETS[f] === 'flag') return v === '1';
+    if (f === 'region') return [...sel].some((r) => (r === 'europe-all' ? EUROPE.has(v) : v === r));
+    if (SETS[f] === 'one') return sel.has(v);
+    const have = v.split(' ');
+    return [...sel].some((x) => have.includes(x));
+  }
+  function apply(push = true) {
+    const s = state();
+    const text = q.value.trim().toLowerCase();
     let n = 0;
+    const okBy = new Map<HTMLLIElement, Record<string, boolean>>();
     for (const el of rows) {
-      const okR = !r || (r === 'europe-all' ? EUROPE.has(el.dataset.region || '') : el.dataset.region === r);
-      const ok = okR && (!type || el.dataset.type === type) && (!open?.value || el.dataset.open === '1') && (!s || (el.dataset.name || '').includes(s));
+      const by: Record<string, boolean> = { text: !text || (el.dataset.name || '').includes(text) };
+      for (const f of FACETS) by[f] = passes(el, f, s[f]);
+      okBy.set(el, by);
+      const ok = Object.values(by).every(Boolean);
       el.hidden = !ok; if (ok) n++;
     }
-    if (count) count.textContent = String(n);
-    const active = !!(type || r || open?.value || s);
-    clears.forEach((c) => { if (c.closest('.dt-count')) c.hidden = !active; });
-    if (none) none.hidden = n > 0;
+    // live counts: for each option, how many cards would show if it were (also) ticked, given every other facet
+    for (const b of boxes) {
+      const f = b.name as Facet; const one = new Set([b.value]);
+      let c = 0;
+      for (const el of rows) { const by = okBy.get(el)!; if (by.text && FACETS.every((g) => (g === f ? passes(el, f, one) : by[g]))) c++; }
+      const i = b.closest('label')?.querySelector('[data-n]'); if (i) i.textContent = String(c);
+      b.closest('label')?.classList.toggle('is-zero', c === 0 && !b.checked);
+    }
+    sortRows();
+    shown.forEach((el) => (el.textContent = String(n)));
+    const active = boxes.filter((b) => b.checked).length;
+    badge.textContent = String(active); badge.hidden = !active;
+    const any = active > 0 || !!text;
+    clears.forEach((c) => { if (!c.closest('.dt-none')) c.hidden = !any; });
+    none.hidden = n > 0;
+    renderChips();
+    document.querySelectorAll<HTMLButtonElement>('.iv-tag').forEach((t) => t.classList.toggle('on', s.focus.has(t.dataset.tag || '')));
+    if (push) writeUrl();
   }
-  function setType(b: HTMLButtonElement) { type = b.dataset.type || ''; chips.forEach((c) => { c.classList.toggle('on', c === b); c.setAttribute('aria-pressed', String(c === b)); }); apply(); }
-  chips.forEach((b) => b.addEventListener('click', () => setType(b)));
-  q?.addEventListener('input', apply); region?.addEventListener('change', apply); open?.addEventListener('change', apply);
-  clears.forEach((c) => c.addEventListener('click', () => { if (q) q.value = ''; if (region) region.value = ''; if (open) open.value = ''; if (chips[0]) setType(chips[0]); else apply(); }));
-  // a deep link (#general-catalyst) from the Deal Tracker: make sure the card is not filtered away
-  if (location.hash && document.querySelector(location.hash)?.classList.contains('iv')) apply();
+  function sortRows() {
+    const k = sort.value;
+    const key = (el: HTMLLIElement) => ({ active: -Number(el.dataset.a12 || 0) * 1e6 - Number(el.dataset.tot || 0), deals: -Number(el.dataset.nd || 0) * 1e6 - Number(el.dataset.tot || 0), recent: el.dataset.last ? -Number(el.dataset.last.replace(/-/g, '')) : 0, open: -Number(el.dataset.open || 0) * 1e9 - Number(el.dataset.a12 || 0), az: 0 } as Record<string, number>)[k] ?? 0;
+    const sorted = [...rows].sort((a, b) => key(a) - key(b) || (a.dataset.az || '').localeCompare(b.dataset.az || ''));
+    sorted.forEach((el) => list.insertBefore(el, none));
+  }
+  function renderChips() {
+    chipsUl.replaceChildren(...boxes.filter((b) => b.checked).map((b) => {
+      const li = document.createElement('li'); const btn = document.createElement('button'); btn.type = 'button';
+      const label = b.closest('label')?.querySelector('span')?.textContent?.trim() || b.value;
+      btn.textContent = label; btn.setAttribute('aria-label', `${label} ×`);
+      btn.addEventListener('click', () => { b.checked = false; apply(); }); li.append(btn); return li;
+    }));
+  }
+  function writeUrl() {
+    const p = new URLSearchParams();
+    const s = state();
+    for (const f of FACETS) if (s[f].size) p.set(f, [...s[f]].join(','));
+    if (q.value.trim()) p.set('q', q.value.trim());
+    if (sort.value !== 'active') p.set('sort', sort.value);
+    const qs = p.toString();
+    history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+  }
+  function readUrl() {
+    const p = new URLSearchParams(location.search);
+    for (const b of boxes) b.checked = (p.get(b.name) || '').split(',').includes(b.value);
+    q.value = p.get('q') || '';
+    const so = p.get('sort'); if (so && [...sort.options].some((o) => o.value === so)) sort.value = so;
+    // open the groups that carry a selection; show hidden countries if one is ticked
+    for (const b of boxes) if (b.checked) { b.closest('details')?.setAttribute('open', ''); const l = b.closest('label'); if (l?.hidden) expand(l.parentElement!, true); }
+  }
+  function expand(wrap: HTMLElement, open: boolean) {
+    wrap.querySelectorAll<HTMLElement>('label').forEach((l, k) => { if (k >= 8) l.hidden = !open; });
+    const t = wrap.querySelector<HTMLButtonElement>('[data-fx-toggle]'); if (t) { t.dataset.open = open ? '1' : ''; t.textContent = open ? t.dataset.less! : `${t.dataset.more} (${wrap.querySelectorAll('label').length})`; }
+  }
+  document.querySelectorAll<HTMLButtonElement>('[data-fx-toggle]').forEach((t) => t.addEventListener('click', () => expand(t.parentElement!, !t.dataset.open)));
+  boxes.forEach((b) => b.addEventListener('change', () => apply()));
+  q.addEventListener('input', () => apply()); sort.addEventListener('change', () => apply());
+  clears.forEach((c) => c.addEventListener('click', () => { boxes.forEach((b) => (b.checked = false)); q.value = ''; apply(); }));
+  document.querySelectorAll<HTMLButtonElement>('.iv-tag').forEach((t) => t.addEventListener('click', () => {
+    const b = boxes.find((x) => x.name === 'focus' && x.value === t.dataset.tag); if (!b) return;
+    b.checked = !b.checked; apply(); document.getElementById('all-investors')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+  // phone sheet
+  const veil = document.querySelector<HTMLElement>('.fx-veil')!;
+  const opener = document.querySelector<HTMLButtonElement>('[data-fx-open]')!;
+  function sheet(open: boolean) {
+    side.classList.toggle('is-open', open); veil.hidden = !open; document.body.classList.toggle('fx-lock', open);
+    opener.setAttribute('aria-expanded', String(open));
+    if (open) { side.querySelector<HTMLElement>('.fx-side-body')!.scrollTop = 0; side.querySelector<HTMLElement>('input,button')?.focus(); } else opener.focus();
+  }
+  opener.addEventListener('click', () => sheet(true));
+  document.querySelectorAll<HTMLElement>('[data-fx-close]').forEach((x) => x.addEventListener('click', () => sheet(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && side.classList.contains('is-open')) sheet(false); });
+  readUrl();
+  apply(false);
+  // a deep link (#general-catalyst) from the Deal Tracker: scroll once layout is settled
+  if (location.hash) { const t = document.querySelector<HTMLElement>(location.hash); if (t?.classList.contains('iv')) requestAnimationFrame(() => t.scrollIntoView({ block: 'start' })); }
+
+  // ---------- Investor Matcher: rule-based score with the evidence shown ----------
+  type Row = { id: string; n: string; t: string; c: string; cc: string; r: string; city: string; st: string[]; sf: string; min: number | null; max: number | null; chk: string; typ: number | null; f: string[]; p: string[]; d: string[]; tot: number; a12: number; last: string; open: number; lead: number; ab: number; kw: string; cbi: string; cb: string };
+  const DATA: Row[] = JSON.parse(document.getElementById('iv-data')!.textContent || '[]');
+  const I = JSON.parse(document.getElementById('iv-i18n')!.textContent || '{}');
+  const STAGE_ORDER = ['idea', 'preseed', 'seed', 'a', 'b', 'growth'];
+  const REG: Record<string, RegExp> = { DACH: /^(germany|austria|switzerland|liechtenstein)$/i, UK: /^(united kingdom|uk)$/i, Europe: /^(france|spain|italy|portugal|netherlands|belgium|luxembourg|ireland|denmark|sweden|norway|finland|iceland|poland|czechia|romania|greece|estonia|latvia|lithuania|monaco)$/i, 'North America': /^(united states|canada)$/i, 'Asia-Pacific': /^(japan|china|hong kong|taiwan|south korea|india|singapore|australia|new zealand|indonesia|malaysia|thailand|vietnam|philippines)$/i, 'Middle East': /^(united arab emirates|saudi arabia|qatar|israel|kuwait|bahrain|oman)$/i, 'Latin America': /^(brazil|mexico|argentina|chile|colombia|costa rica|peru)$/i };
+  const regionOf = (c: string) => Object.keys(REG).find((k) => REG[k].test(c)) || 'Other';
+  const WANT_TYPES: Record<string, string[]> = { money: ['vc', 'corporate'], programme: ['accelerator'], grant: ['grant', 'competition'], buyer: ['buyer'] };
+  const fmt = (n: number) => n >= 1e9 ? `$${(n / 1e9).toFixed(1).replace(/\.0$/, '')}B` : n >= 1e6 ? `$${(n / 1e6).toFixed(1).replace(/\.0$/, '')}M` : n >= 1e3 ? `$${Math.round(n / 1e3)}K` : `$${n}`;
+  const fmtD = (iso: string) => iso ? new Date(iso + 'T12:00:00Z').toLocaleDateString(I.lang === 'de' ? 'de-DE' : 'en-GB', { day: '2-digit', month: 'short', year: 'numeric' }) : '';
+  const stageRange = (st: string[]) => st.length === STAGE_ORDER.length ? (I.lang === 'de' ? 'alle Phasen' : 'any stage') : st.length === 1 ? I.stage[st[0]] : `${I.stage[st[0]]} – ${I.stage[st[st.length - 1]]}`;
+
+  interface Line { k: string; text: string; hit: boolean }
+  function score(x: Row, inp: { cat: string; stage: string; country: string; band: number | null; kw: string[] }) {
+    const why: Line[] = []; let s = 0;
+    // 1. stage (25)
+    const si = STAGE_ORDER.indexOf(inp.stage);
+    if (x.st.includes(inp.stage)) { s += 25; why.push({ k: 'stage', text: `${stageRange(x.st)} (${x.sf === 'crunchbase' ? 'Crunchbase' : x.sf === 'portfolio' ? 'CB Insights' : I.lang === 'de' ? 'Verzeichnis' : 'directory'})`, hit: true }); }
+    else if (x.st.some((k) => Math.abs(STAGE_ORDER.indexOf(k) - si) === 1)) { s += 12; why.push({ k: 'stage', text: `${stageRange(x.st)} · ${I.ev.adjacent}`, hit: false }); }
+    else if (!x.st.length) { s += 8; why.push({ k: 'stage', text: I.ev.unknown, hit: false }); }
+    else why.push({ k: 'stage', text: `${stageRange(x.st)} · ${I.ev.none}`, hit: false });
+    // 2. focus (25): tag match, plus keyword hits in the focus text and portfolio names
+    const kwHits = inp.kw.filter((w) => x.kw.includes(w));
+    const port = [...x.p, ...x.d].slice(0, 3);
+    if (x.f.includes(inp.cat)) { s += 25 + Math.min(5, kwHits.length * 3); why.push({ k: 'focus', text: `${x.f.map((k) => I.focus[k]).join(', ')}${kwHits.length ? ` · „${kwHits.join('“, „')}“` : ''}`, hit: true }); }
+    else if (kwHits.length) { s += Math.min(18, 8 + kwHits.length * 5); why.push({ k: 'focus', text: `„${kwHits.join('“, „')}“${x.f.length ? ` · ${x.f.map((k) => I.focus[k]).join(', ')}` : ''}`, hit: true }); }
+    else if (!x.f.length) { s += 5; why.push({ k: 'focus', text: I.ev.unknown, hit: false }); }
+    else { s -= 10; why.push({ k: 'focus', text: `${x.f.map((k) => I.focus[k]).join(', ')} · ${I.ev.noFocus}`, hit: false }); }
+    if (port.length) why.push({ k: 'portfolio', text: port.join(', '), hit: false });
+    // 3. geography (20)
+    const r = inp.country ? regionOf(inp.country) : '';
+    const where = x.c ? `${x.city ? x.city + ', ' : ''}${I.countries[x.c] || x.c}` : I.ev.unknown;
+    if (!inp.country) { s += 8; why.push({ k: 'geo', text: where, hit: false }); }
+    else if (x.c === inp.country) { s += 15; why.push({ k: 'geo', text: `${where} · ${I.ev.sameCountry}`, hit: true }); }
+    else if (x.c && x.r === r) { s += 11; why.push({ k: 'geo', text: `${where} · ${I.ev.sameRegion}`, hit: true }); }
+    else if (x.ab) { s += 6; why.push({ k: 'geo', text: `${where} · ${I.ev.abroad}`, hit: false }); }
+    else if (!x.c) { s += 4; why.push({ k: 'geo', text: where, hit: false }); }
+    else { s += 2; why.push({ k: 'geo', text: `${where} · ${I.ev.otherRegion}`, hit: false }); }
+    // 4. cheque (15)
+    const b = inp.band;
+    if (b == null) { s += 8; if (x.chk || x.typ) why.push({ k: 'check', text: x.chk || `${I.lang === 'de' ? 'typische Runde' : 'typical round'} ${fmt(x.typ!)}`, hit: false }); }
+    else if (x.min != null && x.max != null) {
+      const [lo, hi] = I.bands[b] as [number, number | null]; const ok = x.min < (hi ?? Infinity) && x.max >= lo;
+      const near = !ok && (x.max >= lo / 5 && x.min <= (hi ?? Infinity) * 5);
+      s += ok ? 15 : near ? 7 : 0; why.push({ k: 'check', text: `${x.chk} · ${ok ? I.ev.fits : near ? I.ev.near : I.ev.off}`, hit: ok });
+    } else if (x.typ) {
+      const [lo, hi] = I.bands[b] as [number, number | null]; const mid = hi ? (lo + hi) / 2 : lo * 2;
+      const ratio = x.typ / Math.max(mid, 1); const ok = ratio >= 0.5 && ratio <= 4; const near = !ok && ratio >= 0.15 && ratio <= 12;
+      s += ok ? 11 : near ? 6 : 1; why.push({ k: 'check', text: `${I.lang === 'de' ? 'typische Runde' : 'typical round'} ${fmt(x.typ)} · ${ok ? I.ev.fits : near ? I.ev.near : I.ev.off}`, hit: ok });
+    } else { s += 5; why.push({ k: 'check', text: I.ev.unknown, hit: false }); }
+    // 5. activity (15)
+    const parts: string[] = [];
+    if (x.a12 >= 5) s += 15; else if (x.a12 >= 2) s += 11; else if (x.a12 >= 1) s += 8; else if (x.d.length) s += 6; else if (x.open) s += 10; else s += 2;
+    if (x.a12) parts.push(`${x.a12} ${I.ev.inv12}`);
+    if (x.last) parts.push(`${I.ev.last} ${fmtD(x.last)}`);
+    if (x.d.length) parts.push(`${x.d.length} ${I.ev.tracker}`);
+    if (x.open) parts.push(I.ev.open);
+    why.push({ k: 'activity', text: parts.join(' · ') || I.ev.unknown, hit: x.a12 > 0 || !!x.open });
+    if (x.lead) s += 2;
+    return { s: Math.max(0, Math.min(100, Math.round(s))), why };
+  }
+
+  const form = document.querySelector<HTMLFormElement>('[data-mt-form]')!;
+  const out = document.querySelector<HTMLElement>('[data-mt-out]')!;
+  const ol = document.querySelector<HTMLOListElement>('[data-mt-list]')!;
+  const lock = document.querySelector<HTMLElement>('[data-mt-lock]')!;
+  const mnone = document.querySelector<HTMLElement>('[data-mt-none]')!;
+  const reset = document.querySelector<HTMLButtonElement>('[data-mt-reset]')!;
+  const UNLOCK = 'sqwod_investor_unlock';
+  const unlocked = () => { try { return localStorage.getItem(UNLOCK) === '1'; } catch { return false; } };
+  // the sign-up form posts and redirects; remember the unlock on this device before it leaves
+  document.querySelector<HTMLFormElement>('#matcher-signup form')?.addEventListener('submit', () => { try { localStorage.setItem(UNLOCK, '1'); } catch {} });
+  function run() {
+    const fd = new FormData(form);
+    const cat = String(fd.get('cat') || ''), stage = String(fd.get('stage') || '');
+    if (!cat || !stage) { form.reportValidity(); return; }
+    const country = String(fd.get('country') || ''); const bandS = String(fd.get('band') || ''); const band = bandS === '' ? null : Number(bandS);
+    const wants = fd.getAll('want').map(String); const types = new Set(wants.flatMap((w) => WANT_TYPES[w] || []));
+    const kw = String(fd.get('kw') || '').toLowerCase().split(/[,;\s]+/).map((w) => w.trim()).filter((w) => w.length >= 3);
+    const ranked = DATA.filter((x) => !types.size || types.has(x.t)).map((x) => ({ x, ...score(x, { cat, stage, country, band, kw }) })).filter((m) => m.s >= 45).sort((a, b) => b.s - a.s || b.x.a12 - a.x.a12 || a.x.n.localeCompare(b.x.n));
+    const free = unlocked() ? ranked.length : 5;
+    ol.replaceChildren(...ranked.slice(0, unlocked() ? ranked.length : 8).map((m, k) => {
+      const li = document.createElement('li'); li.className = 'mr' + (k >= free ? ' is-locked' : ''); if (k >= free) li.setAttribute('aria-hidden', 'true');
+      const x = m.x;
+      const name = x.id ? `<a href="#${x.id}">${esc(x.n)}</a>` : esc(x.n);
+      const flag = x.cc ? `<svg class="fl" width="16" height="12" aria-hidden="true"><use href="#fl-${x.cc}"/></svg> ` : '';
+      li.innerHTML = `<div class="mr-score"><b>${m.s}</b><small>${esc(I.lang === 'de' ? 'Match' : 'match')}</small></div><div class="mr-body"><div class="mr-top"><h3 class="mr-name">${name}</h3><span class="mr-meta">${esc(I.type[x.t] || x.t)}${x.c ? ` · ${flag}${esc(I.countries[x.c] || x.c)}` : ''}</span></div>`
+        + `<ul class="mr-why">${m.why.map((w) => `<li><b>${esc(I.ev[w.k])}</b><span>${w.hit ? '<em>✓</em> ' : ''}${esc(w.text)}</span></li>`).join('')}</ul>`
+        + `<p class="mr-src">${[x.cbi ? `<a href="${x.cbi}" rel="nofollow noopener" target="_blank">CB Insights ↗</a>` : '', x.cb ? `<a href="${x.cb}" rel="nofollow noopener" target="_blank">Crunchbase ↗</a>` : '', x.id ? `<a href="#${x.id}">${I.lang === 'de' ? 'Eintrag in der Map' : 'Entry in the map'}</a>` : ''].filter(Boolean).join(' · ')}</p></div>`;
+      return li;
+    }));
+    document.querySelector('[data-mt-n]')!.textContent = String(ranked.length);
+    const more = Math.max(0, ranked.length - 5);
+    lock.hidden = unlocked() || more === 0; document.querySelector('[data-mt-more]')!.textContent = String(more);
+    mnone.hidden = ranked.length > 0; out.hidden = false; reset.hidden = false;
+    out.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+  form.addEventListener('submit', (e) => { e.preventDefault(); run(); });
+  form.addEventListener('reset', () => { setTimeout(() => { out.hidden = true; reset.hidden = true; ol.replaceChildren(); }, 0); });
+  // results link to cards; make sure the card is visible (clear the filter if it hides it)
+  ol.addEventListener('click', (e) => {
+    const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[href^="#"]'); if (!a) return;
+    const t = document.querySelector<HTMLElement>(a.getAttribute('href')!); if (t?.classList.contains('iv') && t.hidden) { boxes.forEach((b) => (b.checked = false)); q.value = ''; apply(); }
+  });
 </script>
