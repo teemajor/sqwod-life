@@ -47,7 +47,7 @@ async function pitch(req, env) {
   if (text.length > maxChars) return json({ error: 'long' }, 400, env);
   // 2. time-on-form: a pitch "typed" in under MIN_FILL_MS is a script
   const ts = parseInt(body.ts, 10);
-  if (ts && Date.now() - ts < parseInt(env.MIN_FILL_MS || '4000', 10)) return json({ error: 'fast' }, 429, env);
+  if (ts && Date.now() - ts < parseInt(env.MIN_FILL_MS || '4000', 10)) return json({ error: 'fast', detail: 'form filled too quickly' }, 429, env);
   // 3. daily per-IP cap
   const ip = req.headers.get('cf-connecting-ip') || '';
   if (env.PITCH_KV && ip) {
@@ -60,22 +60,23 @@ async function pitch(req, env) {
 
   // 4. the investor rows the site publishes
   const data = await rows(env);
-  if (!data) return json({ error: 'data' }, 503, env);
+  if (!data) return json({ error: 'data', detail: `could not load ${env.SITE_BASE || 'https://sqwod.life'}/investor-data.json` }, 503, env);
 
   // 5. ask Claude for a strict JSON ranking
   const prompt = buildPrompt(text, lang, data);
-  let out;
+  let out, raw = '';
   try {
     const r = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01' },
       body: JSON.stringify({ model: env.MODEL || 'claude-sonnet-5-5', max_tokens: 1800, system: SYSTEM, messages: [{ role: 'user', content: prompt }, { role: 'assistant', content: '{' }] }),
     });
-    if (!r.ok) return json({ error: 'model', status: r.status }, 502, env);
+    if (!r.ok) { const t = (await r.text().catch(() => '')).slice(0, 240); return json({ error: 'model', status: r.status, detail: t }, 502, env); }
     const j = await r.json();
-    out = parse('{' + (j.content || []).map((c) => c.text || '').join(''));
-  } catch { return json({ error: 'model' }, 502, env); }
-  if (!out) return json({ error: 'parse' }, 502, env);
+    raw = '{' + (j.content || []).map((c) => c.text || '').join('');
+    out = parse(raw);
+  } catch (e) { return json({ error: 'model', detail: String(e && e.message || e).slice(0, 200) }, 502, env); }
+  if (!out) return json({ error: 'parse', detail: raw.slice(0, 200) }, 502, env);
   const ids = new Set(data.investors.map((i) => i.id));
   const matches = (out.matches || []).filter((m) => m && ids.has(m.id)).slice(0, 10)
     .map((m) => ({ id: m.id, score: Math.max(0, Math.min(100, Math.round(Number(m.score) || 0))), why: String(m.why || '').slice(0, 400) }));

@@ -124,6 +124,11 @@ What shipped on `/[lang]/intelligence/investors/`:
 - **Globe page**: the control bar (type chips, search, selects, Arcs/Spin/Tour) sits above the stage instead of over it, so the globe is never covered; the stage is page-wide with rounded corners (full-bleed only on phones), so the hero text and the globe line up.
 - **Map readability**: country outlines (`polygonsData` with a faint stroke) on top of the dotted land; pills re-nudge on every few degrees of spin and nudge down when they would overlap; label reach in the ring view narrowed so a dense city does not pull in every neighbour's name tags; big rings a little wider. Apollo Health Ventures' city was stored as "Berlin and Boston" (now Berlin, both named in the focus text).
 
+## Investor Matcher: pitch and sign-up flow (31 Oct 2026, after Tee's test)
+- **AI pitch read no longer needs the sign-up first.** The Worker already caps reads at five per IP and day; the gate only sent people away to a confirmation page and lost their pitch. The pitch text is kept in sessionStorage so a reload or a return keeps it.
+- **Errors show their cause**: the Worker now returns `detail` (first 240 characters of the model or data error), and the box prints it after "That did not work", so a wrong model id or a missing data file is visible without `wrangler tail`.
+- **Sign-up inside the results dialog posts in the background** (JSON to the subscribe Worker, which already supports it): the person stays on the page, sees "Almost there: confirm the email", and the full list unlocks at once. The confirmation mail still goes out; the big signup block at the bottom of the page still posts the classic way.
+
 ## Investor sources verified (31 Oct 2026)
 
 - All 43 directory entries that were marked `Likely` now point `source` at the organisation's own page (fund site, programme page or official funding page) instead of listicles, Substack posts or data-hub profiles, and every entry has a `url`.
