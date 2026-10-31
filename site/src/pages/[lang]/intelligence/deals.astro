@@ -100,6 +100,7 @@ const kinds = ['raise', 'acquisition', 'valuation', 'ipo', 'shutdown'].filter((k
 const url = `https://sqwod.life/${lang}/intelligence/deals/`;
 const citation = `Sqwod Intelligence. "Sqwod Deal Tracker." sqwod.life, ${new Date(generatedAt + 'T12:00:00Z').toLocaleDateString('en-GB', { month: 'short', year: 'numeric' })}. ${url}`;
 const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sqwod Deal Tracker', description: T.sub, url, inLanguage: lang,
+  license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true,
   creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' }, dateModified: generatedAt, temporalCoverage: `${first}/..`,
   distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://sqwod.life/data/deals.csv' }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://sqwod.life/data/deals.json' }] };
 ---
