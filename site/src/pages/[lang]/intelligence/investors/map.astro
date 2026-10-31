@@ -7,8 +7,8 @@ import Base from '../../../../layouts/Base.astro';
 import { ogPath } from '../../../../lib/og';
 import DealGlyphs from '../../../../components/DealGlyphs.astro';
 import { flagCode, countryName } from '../../../../lib/flags';
-import { investors, FOCUS_LABEL, FOCUS, type InvestorType } from '../../../../lib/investors';
-import { globeData, GLOBE_COLORS } from '../../../../lib/globe-data';
+import { investors, FOCUS_LABEL, FOCUS, TYPE_LABEL, TYPE_PLURAL, TYPE_HELP, type InvestorType } from '../../../../lib/investors';
+import { globeData, tourStats, GLOBE_COLORS } from '../../../../lib/globe-data';
 import { languages, type Lang } from '../../../../i18n/ui';
 
 export function getStaticPaths() {
@@ -18,6 +18,7 @@ const lang = Astro.params.lang as Lang;
 const de = lang === 'de';
 const all = investors();
 const { points, arcs, unplaced } = globeData(lang, all);
+const stats = tourStats(points, arcs, lang);
 const types: InvestorType[] = ['vc', 'corporate', 'accelerator', 'competition', 'grant', 'buyer'];
 const REGIONS = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East', 'Latin America'];
 const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten', 'Latin America': 'Lateinamerika' };
@@ -31,25 +32,27 @@ const T = de ? {
   h1: 'Der Investor Globe.', sub: `${points.length} Investoren, Programme und Käufer aus der Investor Map auf einem drehbaren Globus. Punkt = Sitz, Größe = Investments der letzten 12 Monate, Bogen = ein Deal aus dem Deal Tracker in einem anderen Land, Ring = Bewerbung offen.`,
   back: 'Zur Liste', list: 'Investor Map (Liste)', kpi: { shown: 'angezeigt', countries: 'Länder', arcs: 'Deal-Bögen', open: 'offene Aufrufe' },
   all: 'Alle', region: 'Region', focus: 'Fokus', search: 'Investor suchen und hinfliegen …', arcsT: { traffic: 'Bögen: Verkehr', all: 'Bögen: alle', off: 'Bögen: aus' } as Record<string, string>, rotate: 'Drehen', tour: 'Tour', stop: 'Stopp', legend: 'Legende',
-  types: { vc: 'Fonds', corporate: 'Corporate', accelerator: 'Accelerator', competition: 'Wettbewerb', grant: 'Förderung', buyer: 'Käufer' } as Record<string, string>,
+  types: TYPE_PLURAL.de as Record<string, string>, typesOne: TYPE_LABEL.de as Record<string, string>, help: TYPE_HELP.de as Record<string, string>, typeLegend: 'Was bedeuten die Typen?',
   hint: 'Ziehen zum Drehen, Scrollen zum Zoomen, Punkt antippen für Details.', nowebgl: 'Dein Browser kann kein WebGL darstellen. Die Investor Map als Liste:',
   close: 'Schließen', stage: 'Phase', cheque: 'Ticket', activity: 'Aktivität', inv12: 'Investments in 12 Monaten', last: 'zuletzt', deals: 'Deals im Deal Tracker', lead: 'Lead', buyerOf: 'Kauf', port: 'Portfolio (CB Insights)', open: 'Bewerbung offen', entry: 'Eintrag in der Investor Map →', site: 'Website ↗', approx: 'Position: Landesmitte (Stadt unbekannt)', unplaced: `${unplaced} Einträge ohne bekannten Sitz fehlen auf dem Globus.`,
-  tourStops: [['Europa & DACH', 50, 8, 1.3], ['UK', 54, -2, 1.1], ['Nordamerika', 39, -98, 1.6], ['Indien & Asien', 22, 95, 1.7], ['Naher Osten', 26, 50, 1.4]] as [string, number, number, number][],
+  tourStops: [['eu', 'Europa & DACH', 50, 8, 1.3], ['uk', 'UK', 54, -2, 1.1], ['na', 'Nordamerika', 39, -98, 1.6], ['apac', 'Indien & Asien', 22, 95, 1.7], ['me', 'Naher Osten', 26, 50, 1.4]] as [string, string, number, number, number][],
+  ts: { inv: 'Investoren', open: 'offene Aufrufe', arcs: 'Deal-Bögen', top: 'Aktivste', focus: 'Fokus', in12: 'in 12 Mon.' },
 } : {
   title: 'Sqwod Investor Globe: fitness and wellness investors on a globe', crumb: 'Investor Globe',
   h1: 'The Investor Globe.', sub: `${points.length} investors, programmes and buyers from the Investor Map on a globe you can spin. Dot = HQ, size = investments in the last 12 months, arc = a Deal Tracker deal in another country, ring = applications open.`,
   back: 'Back to the list', list: 'Investor Map (list)', kpi: { shown: 'shown', countries: 'countries', arcs: 'deal arcs', open: 'open calls' },
   all: 'All', region: 'Region', focus: 'Focus', search: 'Search an investor and fly there…', arcsT: { traffic: 'Arcs: traffic', all: 'Arcs: all', off: 'Arcs: off' } as Record<string, string>, rotate: 'Spin', tour: 'Tour', stop: 'Stop', legend: 'Legend',
-  types: { vc: 'Fund', corporate: 'Corporate', accelerator: 'Accelerator', competition: 'Competition', grant: 'Grant', buyer: 'Buyer' } as Record<string, string>,
+  types: TYPE_PLURAL.en as Record<string, string>, typesOne: TYPE_LABEL.en as Record<string, string>, help: TYPE_HELP.en as Record<string, string>, typeLegend: 'What do the types mean?',
   hint: 'Drag to spin, scroll to zoom, tap a dot for details.', nowebgl: 'Your browser cannot render WebGL. The Investor Map as a list:',
   close: 'Close', stage: 'Stage', cheque: 'Cheque', activity: 'Activity', inv12: 'investments in 12 months', last: 'last', deals: 'Deals in the Deal Tracker', lead: 'lead', buyerOf: 'bought', port: 'Portfolio (CB Insights)', open: 'Applications open', entry: 'Entry in the Investor Map →', site: 'Website ↗', approx: 'Position: country centre (city unknown)', unplaced: `${unplaced} entries without a known HQ are not on the globe.`,
-  tourStops: [['Europe & DACH', 50, 8, 1.3], ['UK', 54, -2, 1.1], ['North America', 39, -98, 1.6], ['India & Asia', 22, 95, 1.7], ['Middle East', 26, 50, 1.4]] as [string, number, number, number][],
+  tourStops: [['eu', 'Europe & DACH', 50, 8, 1.3], ['uk', 'UK', 54, -2, 1.1], ['na', 'North America', 39, -98, 1.6], ['apac', 'India & Asia', 22, 95, 1.7], ['me', 'Middle East', 26, 50, 1.4]] as [string, string, number, number, number][],
+  ts: { inv: 'investors', open: 'open calls', arcs: 'deal arcs', top: 'Most active', focus: 'Focus', in12: 'in 12 mo' },
 };
 const url = `https://sqwod.life/${lang}/intelligence/investors/map/`;
 const schema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Sqwod Investor Globe', description: T.sub, url, inLanguage: lang, applicationCategory: 'BusinessApplication', operatingSystem: 'Web', creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' } };
 const COLORS = GLOBE_COLORS;
 ---
-<Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('investors', lang)}>
+<Base lang={lang} title={T.title} description={T.sub} active="tools" image={ogPath('investors', lang)}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   <DealGlyphs flags={flagCodes} />
   <section class="gh">
@@ -74,7 +77,8 @@ const COLORS = GLOBE_COLORS;
     <div class="gl-ctl" data-ctl>
       <div class="gl-chips" role="group" aria-label="Type">
         <button type="button" class="on" data-type="" aria-pressed="true">{T.all}</button>
-        {types.map((t) => <button type="button" data-type={t} aria-pressed="false"><i style={`background:${COLORS[t]}`}></i>{T.types[t]}</button>)}
+        {types.map((t) => <button type="button" data-type={t} aria-pressed="false" title={T.help[t]}><i style={`background:${COLORS[t]}`}></i>{T.types[t]}</button>)}
+        <details class="gl-legend"><summary>{T.typeLegend}</summary><ul>{types.map((t) => <li><i style={`background:${COLORS[t]}`}></i><b>{T.types[t]}:</b> {T.help[t]}</li>)}</ul></details>
       </div>
       <div class="gl-row">
         <label class="gl-q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg><input type="search" list="gl-names" placeholder={T.search} aria-label={T.search} autocomplete="off" data-q /></label>
@@ -89,7 +93,7 @@ const COLORS = GLOBE_COLORS;
       </div>
     </div>
     <p class="gl-hint" data-hint>{T.hint}</p>
-    <p class="gl-tourname" data-tourname hidden></p>
+    <div class="gl-tour" data-tourname hidden><p class="gl-tourname" data-tour-title></p><p class="gl-tour-kpis" data-tour-kpis></p><p class="gl-tour-line" data-tour-top></p><p class="gl-tour-line" data-tour-focus></p></div>
     <aside class="gl-panel" data-panel hidden aria-live="polite">
       <button type="button" class="gl-x" data-close aria-label={T.close}>×</button>
       <div data-panel-body></div>
@@ -98,7 +102,7 @@ const COLORS = GLOBE_COLORS;
   </div>
   <p class="gl-foot"><a href={`/${lang}/intelligence/investors/`}>← {T.back}</a> · {T.unplaced}</p>
 
-  <script type="application/json" id="gl-data" set:html={JSON.stringify({ points, arcs, cNames, colors: COLORS, T: { types: T.types, stage: T.stage, cheque: T.cheque, activity: T.activity, inv12: T.inv12, last: T.last, deals: T.deals, lead: T.lead, buyerOf: T.buyerOf, port: T.port, open: T.open, entry: T.entry, site: T.site, approx: T.approx, tourStops: T.tourStops, focus: FOCUS_LABEL[lang] }, lang, listHref: `/${lang}/intelligence/investors/`, dealsHref: `/${lang}/intelligence/deals/` })} />
+  <script type="application/json" id="gl-data" set:html={JSON.stringify({ points, arcs, cNames, colors: COLORS, T: { types: T.typesOne, stage: T.stage, cheque: T.cheque, activity: T.activity, inv12: T.inv12, last: T.last, deals: T.deals, lead: T.lead, buyerOf: T.buyerOf, port: T.port, open: T.open, entry: T.entry, site: T.site, approx: T.approx, tourStops: T.tourStops, ts: T.ts, stats, focus: FOCUS_LABEL[lang] }, lang, listHref: `/${lang}/intelligence/investors/`, dealsHref: `/${lang}/intelligence/deals/` })} />
 </Base>
 
 <style>
@@ -140,6 +144,14 @@ const COLORS = GLOBE_COLORS;
   .gl-chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
   .gl-chips button,.gl-tog button{display:inline-flex;align-items:center;gap:7px;min-height:34px;padding:0 12px;border:1px solid rgba(255,255,255,.14);background:rgba(8,11,9,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--g1);border-radius:999px;font:inherit;font-size:12.5px;cursor:pointer}
   .gl-chips button i{width:8px;height:8px;border-radius:50%;box-shadow:0 0 8px currentColor}
+  .gl-legend{position:relative;align-self:center}
+  .gl-legend summary{list-style:none;cursor:pointer;font-size:12px;color:var(--g2);text-decoration:underline;text-underline-offset:3px;padding:6px 4px;white-space:nowrap}
+  .gl-legend summary::-webkit-details-marker{display:none}
+  .gl-legend summary:hover{color:var(--chalk)}
+  .gl-legend ul{position:absolute;left:0;top:100%;z-index:5;margin:4px 0 0;padding:12px 14px;list-style:none;width:min(420px,calc(100vw - 48px));border-radius:12px;background:rgba(8,11,9,.94);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(12px);box-shadow:0 16px 50px rgba(0,0,0,.5);display:grid;gap:8px;font-size:12.5px;line-height:1.45;color:var(--g1)}
+  .gl-legend li{display:grid;grid-template-columns:8px 1fr;gap:9px;align-items:start}
+  .gl-legend li i{width:8px;height:8px;border-radius:50%;margin-top:5px;box-shadow:0 0 8px currentColor}
+  .gl-legend li b{color:var(--chalk);font-weight:600}
   .gl-chips button.on,.gl-tog button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
   .gl-chips button:focus-visible,.gl-tog button:focus-visible,.gl-row input:focus-visible,.gl-row select:focus-visible,.gl-x:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .gl-row{display:grid;grid-template-columns:minmax(220px,320px) 170px 190px auto;gap:8px;align-items:center}
@@ -152,8 +164,13 @@ const COLORS = GLOBE_COLORS;
   .gl-row select{appearance:none;-webkit-appearance:none;padding-right:30px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .gl-tog{display:flex;gap:6px}
   .gl-hint{position:absolute;left:24px;bottom:14px;z-index:3;margin:0;font-size:12px;color:var(--g2);text-shadow:0 1px 8px #000;pointer-events:none}
-  .gl-tourname{position:absolute;left:50%;bottom:34px;z-index:3;transform:translateX(-50%);margin:0;font-family:var(--display);font-size:34px;letter-spacing:.02em;color:var(--chalk);text-shadow:0 0 30px rgba(127,181,140,.6);pointer-events:none;animation:gl-pop .6s ease}
-  .gl-tourname[hidden]{display:none}
+  .gl-tour{position:absolute;left:50%;bottom:34px;z-index:3;transform:translateX(-50%);width:min(560px,calc(100% - 48px));padding:14px 18px 12px;border-radius:14px;background:rgba(8,11,9,.78);border:1px solid rgba(127,181,140,.35);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 16px 50px rgba(0,0,0,.5);pointer-events:none;animation:gl-pop .6s ease;text-align:center}
+  .gl-tour[hidden]{display:none}
+  .gl-tourname{margin:0;font-family:var(--display);font-size:30px;line-height:1;letter-spacing:.02em;color:var(--chalk);text-shadow:0 0 30px rgba(127,181,140,.6)}
+  .gl-tour-kpis{margin:6px 0 0;font-size:13px;color:var(--g1)}
+  .gl-tour-kpis b{color:var(--accent);font-weight:700}
+  .gl-tour-line{margin:4px 0 0;font-size:12.5px;color:var(--g2);line-height:1.45}
+  .gl-tour-line b{font-weight:600;color:var(--g1)}
   @keyframes gl-pop{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
   .gl-panel{position:absolute;right:24px;top:110px;bottom:24px;z-index:4;width:min(380px,calc(100% - 48px));overflow:auto;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(8,11,9,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:18px 18px 16px;box-shadow:0 20px 60px rgba(0,0,0,.55);animation:gl-in .25s ease}
   .gl-panel[hidden]{display:none}
@@ -193,12 +210,17 @@ const COLORS = GLOBE_COLORS;
     .gl-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -12px 8px;padding:0 12px}
     .gl-chips::-webkit-scrollbar{display:none}
     .gl-chips button{flex:0 0 auto;min-height:38px}
+    .gl-legend{flex:0 0 auto}
+    .gl-legend ul{position:fixed;left:12px;right:12px;top:auto;width:auto}
     .gl-row{grid-template-columns:1fr 1fr}
     .gl-q{grid-column:1/-1}
     .gl-row input,.gl-row select{min-height:42px;font-size:16px}
     .gl-tog{grid-column:1/-1;justify-content:flex-start}
     .gl-hint{left:12px;bottom:10px;font-size:11px;right:12px}
-    .gl-tourname{font-size:26px;bottom:28px}
+    .gl-tour{bottom:28px;padding:10px 12px 9px;width:calc(100% - 24px)}
+    .gl-tourname{font-size:22px}
+    .gl-tour-kpis{font-size:12px}
+    .gl-tour-line{font-size:11.5px}
     .gl-panel{left:8px;right:8px;top:auto;bottom:8px;width:auto;max-height:58%;padding:16px 14px 14px;animation:gl-up .25s ease}
     @keyframes gl-up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
   }
@@ -206,7 +228,7 @@ const COLORS = GLOBE_COLORS;
 </style>
 
 <script>
-  import { mountGlobe, hasWebGL, type ArcMode } from '../../../../lib/globe-client';
+  import { mountGlobe, hasWebGL, SELECT_ALT, type ArcMode } from '../../../../lib/globe-client';
   import type { GlobePoint as Pt, GlobeArc as Arc } from '../../../../lib/globe-data';
   const D = JSON.parse(document.getElementById('gl-data')!.textContent || '{}') as { points: Pt[]; arcs: Arc[]; cNames: Record<string, string>; colors: Record<string, string>; T: any; lang: string; listHref: string; dealsHref: string };
   const el = document.querySelector<HTMLElement>('[data-canvas]')!;
@@ -222,7 +244,8 @@ const COLORS = GLOBE_COLORS;
     const g = mountGlobe(el, { colors: D.colors, reduce,
       label: (p) => `<b>${esc(p.n)}</b>${esc(D.T.types[p.t])}${p.c ? ` · ${esc(D.cNames[p.c] || p.c)}${p.city ? ', ' + esc(p.city) : ''}` : ''}<br><small>${p.a12 ? `${p.a12} ${esc(D.T.inv12)}` : ''}${p.a12 && p.deals.length ? ' · ' : ''}${p.deals.length ? `${p.deals.length} ${esc(D.T.deals)}` : ''}${p.open ? ` · ${esc(D.T.open)}` : ''}</small>`,
       arcLabel: (a) => `<b>${esc(a.e)}</b><small>${esc(D.cNames[a.c] || a.c)}</small>`,
-      onSelect: (p) => select(p), onUserInput: () => { if (tourOn) tour(false); } });
+      onSelect: (p) => select(p), onUserInput: () => { if (tourOn) tour(false); },
+      onSpinStop: () => { const b = document.querySelector<HTMLButtonElement>('[data-rotate]'); b?.classList.remove('on'); b?.setAttribute('aria-pressed', 'false'); } });
 
 
     // ---- filters (share the list page's URL parameters) ----
@@ -270,10 +293,10 @@ const COLORS = GLOBE_COLORS;
     // ---- detail panel ----
     const panel = document.querySelector<HTMLElement>('[data-panel]')!;
     const body = document.querySelector<HTMLElement>('[data-panel-body]')!;
-    document.querySelector('[data-close]')!.addEventListener('click', () => { panel.hidden = true; });
+    document.querySelector('[data-close]')!.addEventListener('click', () => { panel.hidden = true; g.select(null); });
     function select(p: Pt) {
       g.spin(false); rotBtn.classList.remove('on'); rotBtn.setAttribute('aria-pressed', 'false');
-      g.flyTo(p.lat - (innerWidth < 900 ? 12 : 0), p.lng + (innerWidth < 900 ? 0 : 14), 1.1);
+      g.select(p.id); g.flyTo(p.lat - (innerWidth < 900 ? SELECT_ALT * 30 : 0), p.lng + (innerWidth < 900 ? 0 : SELECT_ALT * 36), SELECT_ALT);
       const flag = p.cc ? `<svg class="fl" width="16" height="12" aria-hidden="true"><use href="#fl-${p.cc}"/></svg>` : '';
       const kv: string[] = [];
       if (p.st) kv.push(`<li><b>${esc(D.T.stage)}</b><span>${esc(p.st)}</span></li>`);
@@ -302,8 +325,14 @@ const COLORS = GLOBE_COLORS;
       if (!on) { g.spin(rotBtn.classList.contains('on')); return; }
       g.spin(false); panel.hidden = true;
       const step = () => {
-        const [name, lat, lng, alt] = D.T.tourStops[stop % D.T.tourStops.length] as [string, number, number, number]; stop++;
-        tourName.hidden = true; void tourName.offsetWidth; tourName.textContent = name; tourName.hidden = false;
+        const [key, name, lat, lng, alt] = D.T.tourStops[stop % D.T.tourStops.length] as [string, string, number, number, number]; stop++;
+        const st = D.T.stats[key]; const ts = D.T.ts;
+        tourName.hidden = true; void tourName.offsetWidth;
+        tourName.querySelector('[data-tour-title]')!.textContent = name;
+        tourName.querySelector('[data-tour-kpis]')!.innerHTML = `<b>${st.n}</b> ${esc(ts.inv)} · <b>${st.open}</b> ${esc(ts.open)} · <b>${st.arcs}</b> ${esc(ts.arcs)}`;
+        tourName.querySelector('[data-tour-top]')!.innerHTML = st.top.length ? `<b>${esc(ts.top)}:</b> ${st.top.map((t: any) => `${esc(t.n)} (${t.a12} ${esc(ts.in12)})`).join(' · ')}` : '';
+        tourName.querySelector('[data-tour-focus]')!.innerHTML = st.focus.length ? `<b>${esc(ts.focus)}:</b> ${st.focus.map(esc).join(', ')}` : '';
+        tourName.hidden = false;
         g.flyTo(lat, lng, alt, 1800);
         tourTimer = window.setTimeout(step, 4200);
       };

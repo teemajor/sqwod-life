@@ -208,9 +208,32 @@ export function investors(): Investor[] {
 /** Countries founders can pick in the matcher: every country with a flag, grouped by region. */
 export const countryCode = flagCode;
 
+// Plain-words type names. Singular for a card's pill, plural for filters and chips, help for tooltips.
 export const TYPE_LABEL: Record<Lang, Record<InvestorType, string>> = {
-  en: { vc: 'Fund', corporate: 'Corporate', accelerator: 'Accelerator', competition: 'Competition', grant: 'Grant', buyer: 'Buyer' },
-  de: { vc: 'Fonds', corporate: 'Corporate', accelerator: 'Accelerator', competition: 'Wettbewerb', grant: 'Förderung', buyer: 'Käufer' },
+  en: { vc: 'Venture fund', corporate: 'Corporate investor', accelerator: 'Accelerator', competition: 'Pitch competition', grant: 'Grant', buyer: 'Buyer' },
+  de: { vc: 'Venture-Fonds', corporate: 'Corporate-Investor', accelerator: 'Accelerator', competition: 'Pitch-Wettbewerb', grant: 'Förderung', buyer: 'Käufer' },
+};
+export const TYPE_PLURAL: Record<Lang, Record<InvestorType, string>> = {
+  en: { vc: 'Venture funds', corporate: 'Corporate investors', accelerator: 'Accelerators', competition: 'Pitch competitions', grant: 'Grants', buyer: 'Buyers' },
+  de: { vc: 'Venture-Fonds', corporate: 'Corporate-Investoren', accelerator: 'Accelerators', competition: 'Pitch-Wettbewerbe', grant: 'Förderungen', buyer: 'Käufer' },
+};
+export const TYPE_HELP: Record<Lang, Record<InvestorType, string>> = {
+  en: {
+    vc: 'Professional investors who put money into your company in return for a share of it.',
+    corporate: 'Companies like Nike or Garmin that invest in start-ups for strategic reasons, often as a partner later.',
+    accelerator: 'Programmes that give a small cheque, coaching and a network over a few months, usually for a small share.',
+    competition: 'Pitch contests: you present your start-up to a jury and can win prize money, a programme spot or visibility.',
+    grant: 'Public or foundation money you neither pay back nor give shares for.',
+    buyer: 'Companies that bought another fitness or wellness business. Relevant if you are thinking about an exit.',
+  },
+  de: {
+    vc: 'Professionelle Investoren, die Geld in deine Firma stecken und dafür Anteile bekommen.',
+    corporate: 'Unternehmen wie Nike oder Garmin, die aus strategischen Gründen in Start-ups investieren, oft als späterer Partner.',
+    accelerator: 'Programme mit kleinem Ticket, Coaching und Netzwerk über einige Monate, meist gegen einen kleinen Anteil.',
+    competition: 'Pitch-Wettbewerbe: du stellst dein Start-up einer Jury vor und kannst Preisgeld, einen Programmplatz oder Sichtbarkeit gewinnen.',
+    grant: 'Öffentliches oder Stiftungsgeld, das du weder zurückzahlst noch mit Anteilen bezahlst.',
+    buyer: 'Unternehmen, die ein anderes Fitness- oder Wellness-Unternehmen gekauft haben. Relevant, wenn du an einen Exit denkst.',
+  },
 };
 export const STAGE_LABEL: Record<Lang, Record<StageKey, string>> = {
   en: { idea: 'Idea', preseed: 'Pre-seed', seed: 'Seed', a: 'Series A', b: 'Series B', growth: 'Growth' },
