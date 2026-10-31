@@ -110,4 +110,4 @@ export async function renderCard(card: OgCard): Promise<Buffer> {
 }
 
 /** Where a page's card lives; pages pass this to <Base image=…>. */
-export const ogPath = (kind: 'analysis' | 'intelligence' | 'daily' | 'deals' | 'join', lang: string, slug = 'index') => `/og/${lang}/${kind}/${slug}.png`;
+export const ogPath = (kind: 'analysis' | 'intelligence' | 'daily' | 'deals' | 'investors' | 'join', lang: string, slug = 'index') => `/og/${lang}/${kind}/${slug}.png`;

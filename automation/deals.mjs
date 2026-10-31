@@ -249,7 +249,7 @@ async function enrich(deals, { all = false } = {}) {
   for (let i = 0; i < todo.length; i += 6) {
     const batch = todo.slice(i, i + 6);
     const prompt = `You verify deals for the Sqwod Deal Tracker (fitness, wellness and consumer health industry). For each deal below, search the web and answer ONLY with minified JSON:
-{"deals":[{"id":"...","company":"clean company name","dealCountry":"country where the company (for an acquisition: the company being bought) is headquartered, in English (e.g. United States, United Kingdom, Germany); look on the company site or LinkedIn if the report does not say; empty only if it really cannot be found","category":"one of ${CATEGORIES.join(' | ')}","relevant":true|false,"oneLineEn":"what happened, max 18 words, plain English, no hype, no em dashes","oneLineDe":"same in natural German, du-neutral, no em dashes","amount":"the size of THIS round or deal exactly as the company's own announcement (or the most reliable report) states it, or empty","amountIs":"what the amount we have stored actually is: round | total-raised | valuation | facility | estimate | undisclosed | wrong","announcedOn":"YYYY-MM-DD when this deal was FIRST publicly announced (earliest release or report), or empty","dealStatus":"done | agreed | planned | rumour (planned = only considering, e.g. an IPO plan with no filing; a crowdfunding campaign that has not closed)","url":"https://... a page you opened that reports this deal, ideally the company's own release","primarySource":true|false,"confidence":"high|medium|low"}]}
+{"deals":[{"id":"...","company":"clean company name","dealCountry":"country where the company (for an acquisition: the company being bought) is headquartered, in English (e.g. United States, United Kingdom, Germany); look on the company site or LinkedIn if the report does not say; empty only if it really cannot be found","category":"one of ${CATEGORIES.join(' | ')}","relevant":true|false,"oneLineEn":"what happened, max 18 words, plain English, no hype, no em dashes","oneLineDe":"same in natural German, du-neutral, no em dashes","amount":"the size of THIS round or deal exactly as the company's own announcement (or the most reliable report) states it, or empty","amountIs":"what the amount we have stored actually is: round | total-raised | valuation | facility | estimate | undisclosed | wrong","investors":["for a raise: the investors in THIS round as named by the source, lead investor first, funds and companies by their proper names, no unnamed angels; empty if none are named"],"leadInvestors":["the investor(s) the source calls lead or co-lead; empty if not stated"],"acquirer":"for an acquisition: the buying company; empty otherwise","announcedOn":"YYYY-MM-DD when this deal was FIRST publicly announced (earliest release or report), or empty","dealStatus":"done | agreed | planned | rumour (planned = only considering, e.g. an IPO plan with no filing; a crowdfunding campaign that has not closed)","url":"https://... a page you opened that reports this deal, ideally the company's own release","primarySource":true|false,"confidence":"high|medium|low"}]}
 "relevant" = false when the deal is outside fitness, wellness, nutrition, consumer health or sports business (e.g. fast food, cricket teams, astrology apps, energy, stock exchanges).
 Never guess a country, amount or date: leave it empty and set confidence low.
 Watch for these common mistakes in the stored data: a headline's "total raised to date" given as the round size; £ shown as €; a valuation shown as the amount raised; an old deal re-reported in a retrospective article (announcedOn then lies months before "first reported").
@@ -269,6 +269,8 @@ function applyEnrichment(deals) {
     if (e.company) d.entity = e.company;
     const r = regionOf(e.dealCountry); if (r) { d.region = r; d.country = e.dealCountry; }
     if (CATEGORIES.includes(e.category)) d.category = e.category;
+    if (Array.isArray(e.investors) && e.investors.length) { d.investors = e.investors.map(String); d.leads = Array.isArray(e.leadInvestors) ? e.leadInvestors.map(String) : []; }
+    if (e.acquirer) d.acquirer = String(e.acquirer);
     if (e.oneLineEn) d.note = e.oneLineEn;
     if (e.oneLineDe) d.noteDe = e.oneLineDe;
     if (/^https?:\/\//.test(e.url || '') && (!d.url || weakUrl(d.url))) d.url = e.url;
@@ -305,6 +307,8 @@ export function dealFlags(d, e) {
     if (['planned', 'rumour'].includes(e.dealStatus)) f.push(`not a completed deal (${e.dealStatus})`);
   }
   if (!d.country) f.push('no country found (every deal on the tracker shows a flag)');
+  if (d.kind === 'raise' && !(d.investors || []).length) f.push('no investor named (the tracker links each deal to its backers)');
+  if (d.kind === 'acquisition' && !d.acquirer) f.push('buyer not named');
   if (!d.url) f.push('no source link');
   else if (weakUrl(d.url)) f.push('source link is a homepage or Google News redirect');
   if (d.onBrand === false) f.push('may be off-topic');
@@ -359,7 +363,7 @@ async function emailDigest(fresh) {
   const cards = fresh.map((d) => `<div style="border-top:1px solid #ddd;padding:14px 0">
 <b>${esc(d.entity)}</b> · ${esc(d.kind)} · ${esc(d.amount || 'amount undisclosed')}${d.amountUsd ? ` (≈ ${usdFmt(d.amountUsd)})` : ''}<br>
 <span style="color:#555">${esc(d.note)}</span><br>
-<span style="font-size:12px;color:#777">${esc(d.country || d.region)} · ${esc(d.category)}${d.checked ? ` · web-checked (${esc(d.checked)})` : ' · not web-checked'} · first reported ${esc(d.date)}${d.url ? ` · <a href="${esc(d.url)}">source</a>` : ' · no source link'}</span><br>
+<span style="font-size:12px;color:#777">${esc(d.country || d.region)} · ${esc(d.category)}${d.investors?.length ? ' · ' + esc(d.investors.join(', ')) : d.acquirer ? ' · buyer: ' + esc(d.acquirer) : ''}${d.checked ? ` · web-checked (${esc(d.checked)})` : ' · not web-checked'} · first reported ${esc(d.date)}${d.url ? ` · <a href="${esc(d.url)}">source</a>` : ' · no source link'}</span><br>
 ${flagBox(d)}${btn(signedLink(`deal-${d.id}`, 'approve'), 'Publish')}${btn(signedLink(`deal-${d.id}`, 'reject'), 'Skip', true)}</div>`).join('');
   const html = `<div style="font-family:-apple-system,Segoe UI,Helvetica,Arial,sans-serif;max-width:640px;color:#111">
 <p style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#777">Sqwod Deal Tracker · ${fresh.length} new</p>
@@ -400,7 +404,7 @@ function selftest() {
   const mok = m.length === 2 && m.find((d) => d.entity.startsWith('PureGym')).url === 'c';
   console.log(`${mok ? '✓' : '✗'} merge: ${m.length} deals from 4 reports`);
   // review flags (audit 30 Oct 2026: stale valuations, total-raised as round size, IPO plans, homepage links)
-  const ft = (name, d, e, want) => { const f = dealFlags({ onBrand: true, url: 'https://example.com/news/a', ...d }, e); const pass = want.every((w) => f.some((x) => x.includes(w))) && (want.length || f.length === 0); console.log(`${pass ? '✓' : '✗'} flags: ${name} -> ${JSON.stringify(f)}`); return pass; };
+  const ft = (name, d, e, want) => { const f = dealFlags({ onBrand: true, url: 'https://example.com/news/a', country: 'United States', ...d }, e); const pass = want.every((w) => f.some((x) => x.includes(w))) && (want.length || f.length === 0); console.log(`${pass ? '✓' : '✗'} flags: ${name} -> ${JSON.stringify(f)}`); return pass; };
   const fok = [
     ft('clean deal', { date: '2026-10-29', amount: '$62M', amountUsd: 62e6, currency: 'USD' }, { confidence: 'high', amount: '$62M', amountIs: 'round', announcedOn: '2026-10-28', dealStatus: 'done' }, []),
     ft('stale valuation', { date: '2026-08-06', amount: '$10.1B', amountUsd: 10.1e9, currency: 'USD' }, { confidence: 'high', amount: '$10.1B', amountIs: 'valuation', announcedOn: '2026-03-31', dealStatus: 'done' }, ['old news', 'valuation']),

@@ -1,0 +1,280 @@
+---
+// Sqwod Investor Map: who funds, buys and supports fitness and wellness companies.
+// Directory: automation/investors.json (researched, Tee-reviewed). Deals: src/lib/investors.ts merges
+// every backer and buyer named on a live Deal Tracker entry. Design follows the Deal Tracker.
+import Base from '../../../layouts/Base.astro';
+import { ogPath } from '../../../lib/og';
+import InlineSignup from '../../../components/InlineSignup.astro';
+import DealGlyphs from '../../../components/DealGlyphs.astro';
+import DealIcon from '../../../components/DealIcon.astro';
+import Flag from '../../../components/Flag.astro';
+import { flagCode, countryName } from '../../../lib/flags';
+import { investors, TYPE_LABEL, type InvestorType } from '../../../lib/investors';
+import { generatedAt } from '../../../lib/deals';
+import { languages, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+const loc = de ? 'de-DE' : 'en-GB';
+const all = investors();
+const CHECKED = '2026-10-31';
+const today = generatedAt;   // the day the data was built (the site rebuilds every weekday)
+const isOpen = (i: (typeof all)[number]) => !!i.apply && (i.apply.status === 'rolling' || (i.apply.status === 'open' && (!i.apply.deadline || i.apply.deadline >= today)));
+const withDeals = all.filter((i) => i.deals.length);
+const countries = [...new Set(all.map((i) => i.country).filter(Boolean))];
+const openCalls = all.filter(isOpen);
+const regions = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East'].filter((r) => all.some((i) => i.region === r));
+const types: InvestorType[] = ['vc', 'corporate', 'accelerator', 'competition', 'grant', 'buyer'];
+const REGION_FLAGS: Record<string, string[]> = { 'europe-all': ['eu'], DACH: ['de', 'at', 'ch'], UK: ['gb'], Europe: ['eu'], 'North America': ['us', 'ca'] };
+const flagCodes = [...new Set([...all.map((i) => flagCode(i.country)), ...Object.values(REGION_FLAGS).flat()])].filter(Boolean);
+const fmtDate = (d: string) => new Date(d + 'T12:00:00Z').toLocaleDateString(loc, { day: '2-digit', month: 'short', year: 'numeric' });
+const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten' };
+const rName = (r: string) => (de ? REGION_DE[r] || r : r);
+
+const T = de ? {
+  title: 'Sqwod Investor Map: Wer Fitness und Wellness finanziert',
+  heroH1: 'Wer Fitness und Wellness finanziert.',
+  sub: 'Fonds, Corporates, Accelerators, Wettbewerbe und Förderprogramme für Gründer:innen in Fitness, Wellness und Health-Tech, plus jeder Geldgeber und Käufer aus dem Deal Tracker. Europa und DACH zuerst, mit Quelle und Prüfdatum.',
+  crumb: 'Investor Map', checked: 'Geprüft', entries: 'Einträge', withDeals: 'mit Deals im Tracker', countries: 'Länder', open: 'offene Aufrufe',
+  cta: 'Neue Deals jeden Werktag →', tracker: 'Zum Deal Tracker',
+  all: 'Alle', region: 'Region', eu: 'Europa & DACH', search: 'Investor oder Programm suchen …', status: 'Status', openNow: 'Jetzt offen', count: 'Einträge angezeigt', clear: 'Filter zurücksetzen', none: 'Kein Eintrag passt zu diesen Filtern.',
+  types: { vc: 'Fonds', corporate: 'Corporate & strategisch', accelerator: 'Accelerators', competition: 'Wettbewerbe', grant: 'Förderung', buyer: 'Käufer' } as Record<string, string>,
+  stage: 'Phase', check: 'Ticket', deals: 'Deals im Tracker', lead: 'Lead', buyerOf: 'Käufer von', deadline: 'Bewerbung bis', rolling: 'Laufende Bewerbung', closed: 'Bewerbung geschlossen', tba: 'Termine werden angekündigt', site: 'Website ↗', source: 'Quelle', fromDeals: 'aus dem Deal Tracker',
+  method: 'So entsteht die Investor Map',
+  methodBody: [
+    'Verzeichnis: am 31. Oktober 2026 per Websuche recherchiert, jeder Eintrag mit Quelle und Vertrauensstufe (Certain = Aussage der Organisation oder Primärbericht, Likely = über mehrere Profile hinweg konsistent).',
+    'Deals: jeder Investor und Käufer, der auf einem freigegebenen Deal im Deal Tracker genannt wird, erscheint hier automatisch, auch ohne Verzeichniseintrag.',
+    'Bewerbungsfristen ändern sich. Vor einer Bewerbung immer die Seite des Programms prüfen.',
+    'Fehlt ein Fonds oder Programm? Schreib an hello@sqwod.life.',
+  ],
+  signupHead: 'Jeden Deal am Morgen, bevor er Thema ist', signupBody: 'Sqwod Daily: Geld, Deals und was sie für dein Business heißen. Werktäglich, kostenlos.',
+} : {
+  title: 'Sqwod Investor Map: who funds fitness and wellness',
+  heroH1: 'Who funds fitness and wellness.',
+  sub: 'Funds, corporates, accelerators, competitions and grants for founders in fitness, wellness and health tech, plus every backer and buyer from the Deal Tracker. Europe and DACH first, each with a source and a check date.',
+  crumb: 'Investor Map', checked: 'Checked', entries: 'entries', withDeals: 'with deals in the tracker', countries: 'countries', open: 'open calls',
+  cta: 'Get new deals every weekday →', tracker: 'Open the Deal Tracker',
+  all: 'All', region: 'Region', eu: 'Europe & DACH', search: 'Search an investor or programme…', status: 'Status', openNow: 'Open now', count: 'entries shown', clear: 'Clear filters', none: 'No entries match these filters.',
+  types: { vc: 'Funds', corporate: 'Corporate & strategic', accelerator: 'Accelerators', competition: 'Competitions', grant: 'Grants', buyer: 'Buyers' } as Record<string, string>,
+  stage: 'Stage', check: 'Cheque', deals: 'Deals in the tracker', lead: 'lead', buyerOf: 'Bought', deadline: 'Apply by', rolling: 'Rolling applications', closed: 'Applications closed', tba: 'Dates to be announced', site: 'Website ↗', source: 'Source', fromDeals: 'from the Deal Tracker',
+  method: 'How the Investor Map is built',
+  methodBody: [
+    'Directory: researched by web search on 31 October 2026, every entry with a source and a confidence level (Certain = stated by the organisation or a primary report, Likely = consistent across several profiles).',
+    'Deals: every investor and buyer named on an approved Deal Tracker entry appears here automatically, with or without a directory entry.',
+    'Application deadlines move. Always check the programme’s own page before applying.',
+    'Missing a fund or programme? Write to hello@sqwod.life.',
+  ],
+  signupHead: 'Every deal, in your inbox before it is old news', signupBody: 'Sqwod Daily: money, deals and what they mean for your business. Every weekday, free.',
+};
+const url = `https://sqwod.life/${lang}/intelligence/investors/`;
+const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sqwod Investor Map', description: T.sub, url, inLanguage: lang,
+  creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' }, dateModified: CHECKED };
+const applyLine = (i: (typeof all)[number]) => {
+  if (!i.apply) return '';
+  const s = i.apply.status;
+  const base = s === 'open' ? (i.apply.deadline ? `${T.deadline} ${fmtDate(i.apply.deadline)}` : T.openNow) : s === 'rolling' ? T.rolling : s === 'closed' ? T.closed : T.tba;
+  const note = de ? i.apply.noteDe || i.apply.note : i.apply.note;
+  return note ? `${base} · ${note}` : base;
+};
+---
+<Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('investors', lang)}>
+  <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  <DealGlyphs flags={flagCodes} />
+  <section class="ih">
+    <p class="kick ih-crumb"><a href={`/${lang}/intelligence`}>Sqwod Intelligence</a> / <a href={`/${lang}/intelligence/deals/`}>Deal Tracker</a> / {T.crumb}</p>
+    <p class="ih-live"><span class="pulse" aria-hidden="true"></span>{T.checked} {fmtDate(CHECKED)}</p>
+    <h1 class="ih-h1">{T.heroH1}</h1>
+    <p class="ih-sub">{T.sub}</p>
+    <div class="ih-kpis">
+      <div><b class="dnum ih-acc">{all.length}</b><span>{T.entries}</span></div>
+      <div><b class="dnum">{withDeals.length}</b><span>{T.withDeals}</span></div>
+      <div><b class="dnum">{countries.length}</b><span>{T.countries}</span></div>
+      <div><b class="dnum">{openCalls.length}</b><span>{T.open}</span></div>
+    </div>
+    <div class="ih-btns">
+      <a class="ih-cta" href="#investors-signup" data-umami-event="investors-hero-cta">{T.cta}</a>
+      <a class="ih-alt" href={`/${lang}/intelligence/deals/`}>{T.tracker}</a>
+    </div>
+  </section>
+
+  <section class="dt-filters" id="all-investors" aria-label={T.status}>
+    <div class="dt-chips" role="group" aria-label="Type">
+      <button type="button" class="on" data-type="" aria-pressed="true">{T.all}</button>
+      {types.map((t) => <button type="button" data-type={t} aria-pressed="false">{T.types[t]}</button>)}
+    </div>
+    <div class="dt-row">
+      <label class="dt-q">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+        <input type="search" placeholder={T.search} aria-label={T.search} autocomplete="off" enterkeyhint="search" data-q />
+      </label>
+      <span class="dt-sel"><select aria-label={T.region} data-region><option value="">{T.region}: {T.all}</option><option value="europe-all">{T.eu}</option>{regions.map((r) => <option value={r}>{rName(r)}</option>)}</select></span>
+      <span class="dt-sel"><select aria-label={T.status} data-open><option value="">{T.status}: {T.all}</option><option value="open">{T.openNow}</option></select></span>
+    </div>
+    <p class="dt-count"><span><b data-shown>{all.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
+  </section>
+
+  <ul class="iv-list">
+    {all.map((i) => (
+      <li class="iv" id={i.id} data-type={i.type} data-region={i.region} data-open={isOpen(i) ? '1' : ''} data-name={`${i.name} ${i.country} ${i.city || ''} ${i.focus} ${i.deals.map((d) => d.entity).join(' ')}`.toLowerCase()}>
+        <div class="iv-top">
+          <h3 class="iv-name">{i.url ? <a href={i.url} rel="noopener" target="_blank">{i.name}</a> : i.name}</h3>
+          <span class={`iv-type iv-type-${i.type}`}>{TYPE_LABEL[lang][i.type]}</span>
+        </div>
+        {(i.country || i.stage || i.check) && (
+          <p class="iv-meta">
+            {i.country && <><Flag country={i.country} />{countryName(i.country, lang)}{i.city ? `, ${i.city}` : ''}</>}
+            {i.stage && <span>{i.stage}</span>}
+            {i.check && <span>{i.check}</span>}
+          </p>
+        )}
+        {i.focus && <p class="iv-focus">{de ? i.focusDe || i.focus : i.focus}</p>}
+        {i.deals.length > 0 && (
+          <p class="iv-deals"><b>{T.deals}:</b> {i.deals.map((d, k) => <>{k > 0 && ' · '}<a href={`/${lang}/intelligence/deals/#deal-${d.id}`}><DealIcon kind={d.kind} />{d.entity}</a>{d.amount && <span class="iv-amt"> {d.amount}</span>}{d.lead && d.role === 'investor' && <i> ({T.lead})</i>}</>)}</p>
+        )}
+        {i.apply && <p class={`iv-apply${isOpen(i) ? ' is-open' : ''}`}>{applyLine(i)}</p>}
+        <p class="iv-src">{i.inDirectory
+          ? <>{`${T.checked} ${fmtDate(i.checked)} · `}<a href={i.source} rel="nofollow noopener" target="_blank">{T.source} ↗</a> · {i.confidence}</>
+          : <>{T.fromDeals}</>}</p>
+      </li>
+    ))}
+    <li class="dt-none" data-none hidden>{T.none}<button type="button" class="dt-clear" data-clear>{T.clear}</button></li>
+  </ul>
+
+  <InlineSignup lang={lang} source="investor-map" id="investors-signup" head={T.signupHead} body={T.signupBody} />
+
+  <section class="note dt-method">
+    <b>{T.method}</b>
+    <ul>{T.methodBody.map((l) => <li>{l}</li>)}</ul>
+  </section>
+</Base>
+
+<style>
+  .ih{margin:0 0 8px;max-width:760px}
+  .ih-crumb{margin:0 0 14px}
+  .ih-crumb a{color:inherit;text-decoration:none}
+  .ih-crumb a:hover{color:var(--chalk)}
+  .ih-live{display:inline-flex;align-items:center;gap:9px;margin:0 0 18px;padding:6px 13px;border:1px solid var(--accent-line);border-radius:999px;background:var(--accent-soft);font-size:13px;font-weight:600;color:var(--chalk)}
+  .ih-live .pulse{box-shadow:0 0 8px 2px var(--accent-line)}
+  .ih-h1{font-size:64px;line-height:.95;margin:0;hyphens:manual}
+  .ih-sub{margin:18px 0 0;font-size:17px;line-height:1.5;color:var(--g2);max-width:60ch}
+  .ih-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:24px 0 0}
+  .ih-kpis div{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px 14px 12px;min-width:0}
+  .ih-kpis b{display:block;font-size:46px;color:var(--chalk);white-space:nowrap}
+  .ih-kpis span{display:block;font-size:13px;color:var(--g2);margin-top:6px;line-height:1.3;overflow-wrap:anywhere}
+  .ih-acc{color:var(--accent)}
+  .ih-btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+  .ih-cta,.ih-alt{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap}
+  .ih-cta{background:var(--accent);color:var(--accent-ink)}
+  .ih-cta:hover{background:var(--chalk);color:var(--ink)}
+  @media (prefers-color-scheme: light){:global(:root:not([data-theme="dark"])) .ih-cta:not(:hover){color:#fff}}
+  :global(:root[data-theme="light"]) .ih-cta:not(:hover){color:#fff}
+  .ih-alt{border:1px solid var(--edge);color:var(--chalk)}
+  .ih-alt:hover{border-color:var(--accent);color:var(--accent)}
+  @media(max-width:899px){
+    .ih-h1{font-size:44px}
+    .ih-sub{font-size:15px;margin-top:12px}
+    .ih-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}
+    .ih-kpis div{padding:10px 12px}
+    .ih-kpis b{font-size:34px}
+    .ih-kpis span{margin-top:4px;font-size:12.5px}
+    .ih-cta{width:100%}
+    .ih-alt{width:100%;border:0;text-decoration:underline;text-underline-offset:4px;min-height:44px}
+  }
+
+  /* filters: same pattern as the Deal Tracker */
+  .dt-filters{margin:30px 0 12px}
+  .dt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+  .dt-chips button{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
+  .dt-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .dt-row{display:grid;grid-template-columns:1fr;gap:8px}
+  @media(min-width:640px){.dt-row{grid-template-columns:2fr 1fr 1fr}}
+  .dt-q,.dt-sel{position:relative;display:block;min-width:0}
+  .dt-q svg{position:absolute;left:13px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:var(--g2);pointer-events:none}
+  .dt-sel::after{content:"";position:absolute;right:14px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--g2);border-bottom:1.5px solid var(--g2);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+  .dt-row input,.dt-row select{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--panel);color:var(--chalk);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px}
+  .dt-row input{padding-left:38px}
+  .dt-row select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dt-row input:focus-visible,.dt-row select:focus-visible,.dt-chips button:focus-visible,.dt-clear:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .dt-count{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:12px;color:var(--g2);margin:8px 0 0}
+  .dt-count b{font-weight:600;color:var(--chalk)}
+  .dt-clear{border:0;background:none;padding:8px 0;margin:-8px 0;font:inherit;font-size:12px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+  .dt-clear:hover{color:var(--accent)}
+  .dt-clear[hidden]{display:none}
+  @media(max-width:899px){
+    .dt-chips{flex-wrap:nowrap;gap:8px;margin:0 -24px 12px;padding:2px 24px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding:24px;scrollbar-width:none;-webkit-overflow-scrolling:touch;
+      -webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
+    .dt-chips::-webkit-scrollbar{display:none}
+    .dt-chips button{flex:0 0 auto;min-height:44px;padding:0 15px;font-size:13.5px;scroll-snap-align:start}
+    .dt-row{grid-template-columns:1fr 1fr}
+    .dt-q{grid-column:1/-1}
+    .dt-row input,.dt-row select{min-height:48px;padding-top:0;padding-bottom:0;font-size:16px}
+    .dt-count{margin-top:10px;font-size:13px}
+  }
+
+  /* the cards */
+  .iv-list{list-style:none;margin:0 0 24px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  @media(max-width:899px){.iv-list{grid-template-columns:1fr;gap:10px}}
+  .iv{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:16px 18px 14px;min-width:0;scroll-margin-top:24px}
+  .iv[hidden]{display:none}
+  .iv:target{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent-line)}
+  .iv-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+  .iv-name{margin:0;font-size:17px;font-weight:700;line-height:1.3;color:var(--chalk)}
+  .iv-name a{color:inherit;text-decoration:none}
+  .iv-name a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+  .iv-type{flex:none;display:inline-flex;align-items:center;min-height:20px;padding:0 8px;border:1px solid var(--line);border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g1);white-space:nowrap}
+  .iv-type-competition,.iv-type-grant{color:var(--accent);border-color:var(--accent-line)}
+  .iv-meta{display:flex;flex-wrap:wrap;gap:4px 0;margin:8px 0 0;font-size:12.5px;color:var(--g2);line-height:1.5}
+  .iv-meta span::before{content:"·";margin:0 7px;color:var(--g3)}
+  .iv-focus{margin:8px 0 0;font-size:13.5px;line-height:1.5;color:var(--g1)}
+  .iv-deals{margin:8px 0 0;font-size:12.5px;line-height:1.7;color:var(--g2)}
+  .iv-deals b{font-weight:600;color:var(--g1)}
+  .iv-deals a{color:var(--chalk);text-decoration:underline;text-decoration-color:var(--edge);text-underline-offset:3px;white-space:nowrap}
+  .iv-deals a:hover{color:var(--accent)}
+  .iv-deals a :global(.di){width:12px;height:12px;margin-right:3px;vertical-align:-1px}
+  .iv-amt{color:var(--g2)}
+  .iv-deals i{font-style:normal;color:var(--g3)}
+  .iv-apply{margin:8px 0 0;font-size:12.5px;line-height:1.5;color:var(--g2)}
+  .iv-apply.is-open{color:var(--accent);font-weight:600}
+  .iv-src{margin:10px 0 0;font-size:11.5px;color:var(--g3)}
+  .iv-src a{color:var(--g2)}
+  .dt-none{grid-column:1/-1;margin:0;padding:28px 16px;text-align:center;font-size:14px;color:var(--g2);border:1px solid var(--line);border-radius:14px;background:var(--panel);list-style:none}
+  .dt-none[hidden]{display:none}
+  .dt-none .dt-clear{font-size:14px;margin-left:6px}
+  .dt-method ul{margin:8px 0 10px;padding-left:18px}
+</style>
+
+<script>
+  const rows = Array.from(document.querySelectorAll<HTMLLIElement>('.iv'));
+  const q = document.querySelector<HTMLInputElement>('[data-q]');
+  const region = document.querySelector<HTMLSelectElement>('[data-region]');
+  const open = document.querySelector<HTMLSelectElement>('[data-open]');
+  const count = document.querySelector('[data-shown]');
+  const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.dt-chips button'));
+  const clears = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-clear]'));
+  const none = document.querySelector<HTMLElement>('[data-none]');
+  let type = '';
+  const EUROPE = new Set(['DACH', 'UK', 'Europe']);
+  function apply() {
+    const s = (q?.value || '').trim().toLowerCase();
+    const r = region?.value || '';
+    let n = 0;
+    for (const el of rows) {
+      const okR = !r || (r === 'europe-all' ? EUROPE.has(el.dataset.region || '') : el.dataset.region === r);
+      const ok = okR && (!type || el.dataset.type === type) && (!open?.value || el.dataset.open === '1') && (!s || (el.dataset.name || '').includes(s));
+      el.hidden = !ok; if (ok) n++;
+    }
+    if (count) count.textContent = String(n);
+    const active = !!(type || r || open?.value || s);
+    clears.forEach((c) => { if (c.closest('.dt-count')) c.hidden = !active; });
+    if (none) none.hidden = n > 0;
+  }
+  function setType(b: HTMLButtonElement) { type = b.dataset.type || ''; chips.forEach((c) => { c.classList.toggle('on', c === b); c.setAttribute('aria-pressed', String(c === b)); }); apply(); }
+  chips.forEach((b) => b.addEventListener('click', () => setType(b)));
+  q?.addEventListener('input', apply); region?.addEventListener('change', apply); open?.addEventListener('change', apply);
+  clears.forEach((c) => c.addEventListener('click', () => { if (q) q.value = ''; if (region) region.value = ''; if (open) open.value = ''; if (chips[0]) setType(chips[0]); else apply(); }));
+  // a deep link (#general-catalyst) from the Deal Tracker: make sure the card is not filtered away
+  if (location.hash && document.querySelector(location.hash)?.classList.contains('iv')) apply();
+</script>

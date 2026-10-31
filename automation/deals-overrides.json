@@ -12,13 +12,27 @@
       "note": "$25M pre-Series A (total raised $33M) to bring an AI pendant wearable to market",
       "noteDe": "25 Mio. $ Pre-Series-A (insgesamt 33 Mio. $) für einen KI-Anhänger als Wearable",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "South Park Commons",
+        "Lightspeed Venture Partners"
+      ],
+      "leads": [
+        "South Park Commons",
+        "Lightspeed Venture Partners"
+      ]
     },
     "wilde-raise-2026-10": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "S2G Investments"
+      ],
+      "leads": [
+        "S2G Investments"
+      ]
     },
     "unravel-raise-2026-10": {
       "status": "approved",
@@ -31,19 +45,31 @@
       "note": "£2.5M led by Conduit EIS Impact Fund and Wrightwood for Micro Lab, an at-home saliva hormone test",
       "noteDe": "2,5 Mio. £ unter Führung von Conduit EIS Impact Fund und Wrightwood für Micro Lab, einen Hormontest per Speichelprobe für zu Hause",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "investors": [
+        "Conduit EIS Impact Fund",
+        "Wrightwood"
+      ],
+      "leads": [
+        "Conduit EIS Impact Fund"
+      ]
     },
     "puregym-acquisition-2026-10": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "Switzerland",
-      "region": "DACH"
+      "region": "DACH",
+      "acquirer": "PureGym"
     },
     "huppa-raise-2026-10": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "Netherlands",
-      "region": "Europe"
+      "region": "Europe",
+      "investors": [
+        "NL SportTech Ventures"
+      ],
+      "leads": []
     },
     "othello-raise-2026-10": {
       "status": "hidden",
@@ -53,13 +79,34 @@
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "India",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "investors": [
+        "Sauce",
+        "OTP Ventures",
+        "Huddle Ventures",
+        "AYRA Ventures"
+      ],
+      "leads": [
+        "Sauce",
+        "OTP Ventures",
+        "Huddle Ventures"
+      ]
     },
     "stride-raise-2026-10": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "investors": [
+        "Arāya Ventures",
+        "Morgan Stanley Inclusive & Sustainable Ventures",
+        "Innovate UK",
+        "a16z Scout Fund",
+        "Better Ventures"
+      ],
+      "leads": [
+        "Arāya Ventures"
+      ]
     },
     "persona-raise-2026-10": {
       "status": "approved",
@@ -70,7 +117,15 @@
       "note": "$10M led by Vine Ventures for an AI assistant paired with a wearable band",
       "noteDe": "10 Mio. $ unter Führung von Vine Ventures für einen KI-Assistenten mit Wearable-Armband",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "Vine Ventures",
+        "Collective Global",
+        "Cory Levy"
+      ],
+      "leads": [
+        "Vine Ventures"
+      ]
     },
     "gloriah-raise-2026-10": {
       "status": "approved",
@@ -79,13 +134,25 @@
       "note": "oversubscribed £600K seed led by Gabriel Investment Syndicate for intimate wellness products",
       "noteDe": "überzeichnete Seed-Runde über 600.000 £ unter Führung des Gabriel Investment Syndicate für Intim-Wellness-Produkte",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "investors": [
+        "Gabriel Investment Syndicate"
+      ],
+      "leads": [
+        "Gabriel Investment Syndicate"
+      ]
     },
     "supermush-raise-2026-10": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "NDude Labs"
+      ],
+      "leads": [
+        "NDude Labs"
+      ]
     },
     "osu-raise-2026-10": {
       "status": "hidden",
@@ -101,7 +168,8 @@
       "source": "the5krunner",
       "url": "https://the5krunner.com/2026/09/22/garmin-acquires-moxy-monitor/",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Garmin"
     },
     "mcdonald-acquisition-2026-10": {
       "status": "hidden",
@@ -115,13 +183,38 @@
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "Canada",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "BDC Capital Thrive Fund",
+        "BFG Partners",
+        "BAM Ventures",
+        "Founder Collective",
+        "Rejuvenation Ventures",
+        "HSR Ventures"
+      ],
+      "leads": [
+        "BDC Capital Thrive Fund",
+        "BFG Partners"
+      ]
     },
     "magic-raise-2026-09": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "investors": [
+        "Beringea",
+        "IW Capital",
+        "Active Partners",
+        "PXN Group",
+        "Accelerate Ventures",
+        "Doorway",
+        "Ventures Together"
+      ],
+      "leads": [
+        "Beringea",
+        "IW Capital"
+      ]
     },
     "disha-raise-2026-09": {
       "status": "approved",
@@ -134,7 +227,15 @@
       "note": "Series A led by General Catalyst for an AI health coaching platform (formerly Curelink); USD figures in reports vary",
       "noteDe": "Series A unter Führung von General Catalyst für eine KI-Gesundheitscoaching-Plattform (früher Curelink); Dollarangaben in Berichten schwanken",
       "country": "India",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "investors": [
+        "General Catalyst",
+        "Elevation Capital",
+        "Flamel Performing Creatives"
+      ],
+      "leads": [
+        "General Catalyst"
+      ]
     },
     "rajasthan-acquisition-2026-09": {
       "status": "hidden",
@@ -155,7 +256,8 @@
       "note": "Zurich's Aeon acquires the core assets of Berlin blood-diagnostics platform Aware Health; price undisclosed",
       "noteDe": "Das Zürcher Unternehmen Aeon übernimmt die Kernbereiche der Berliner Blutdiagnostik-Plattform Aware Health; Preis nicht genannt",
       "country": "Germany",
-      "region": "DACH"
+      "region": "DACH",
+      "acquirer": "Aeon"
     },
     "mahomes-valuation-2026-09": {
       "status": "hidden",
@@ -172,7 +274,12 @@
       "note": "equity plus bank loans to expand women-only beauty gym HITORI WELLNESS toward 300 stores in Japan within 4 years",
       "noteDe": "Eigenkapital plus Bankkredite, um das Frauen-Beauty-Gym HITORI WELLNESS in vier Jahren auf 300 Standorte in Japan auszubauen",
       "country": "Japan",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "investors": [
+        "Koshidaka Holdings",
+        "One Capital"
+      ],
+      "leads": []
     },
     "guardians-raise-2026-09": {
       "status": "hidden",
@@ -190,7 +297,8 @@
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "cbdMD"
     },
     "informa-acquisition-2026-09": {
       "status": "approved",
@@ -201,7 +309,8 @@
       "note": "Informa acquires the Global Wellness Summit and Global Wellness Institute; terms undisclosed",
       "noteDe": "Informa übernimmt Global Wellness Summit und Global Wellness Institute; Konditionen nicht genannt",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Informa"
     },
     "nestl-acquisition-2026-09": {
       "status": "approved",
@@ -212,7 +321,8 @@
       "note": "Nestlé sells its mainstream supplements unit (Nature's Bounty, Nuun, Puritan's Pride) to Yellow Wood Partners",
       "noteDe": "Nestlé verkauft sein Mainstream-Supplement-Geschäft (Nature's Bounty, Nuun, Puritan's Pride) an Yellow Wood Partners",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Yellow Wood Partners"
     },
     "enhance-raise-2026-09": {
       "status": "approved",
@@ -221,7 +331,14 @@
       "url": "https://dealroom.co/news/148290-enhance-raises-18-2m-to-take-gym-training-software-into-the-us/",
       "note": "Dubai-based gym and PT software; equity (Global Ventures) plus venture debt (Stride) to expand into the US",
       "noteDe": "Gym- und PT-Software aus Dubai; Eigenkapital (Global Ventures) plus Venture Debt (Stride) für den Eintritt in die USA",
-      "region": "Middle East"
+      "region": "Middle East",
+      "investors": [
+        "Global Ventures",
+        "Stride"
+      ],
+      "leads": [
+        "Global Ventures"
+      ]
     },
     "quell-acquisition-2026-09": {
       "status": "approved",
@@ -232,7 +349,8 @@
       "note": "London's HITAI acquires YC-backed Quell's motion-tracking tech and IP (asset deal)",
       "noteDe": "Das Londoner Unternehmen HITAI übernimmt Technik und IP des YC-finanzierten Studios Quell (Asset Deal)",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "acquirer": "HITAI"
     },
     "world-valuation-2026-08": {
       "status": "hidden",
@@ -246,7 +364,8 @@
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "acquirer": "Temple"
     },
     "oura-ipo-2026-08": {
       "status": "hidden",
@@ -261,7 +380,8 @@
       "note": "Ferrero to acquire better-for-you granola brand Purely Elizabeth; terms undisclosed (Forbes estimate: over $850M)",
       "noteDe": "Ferrero übernimmt die Müslimarke Purely Elizabeth; Konditionen nicht genannt (Forbes schätzt über 850 Mio. $)",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Ferrero"
     },
     "celebrate-raise-2026-08": {
       "status": "hidden",
@@ -275,7 +395,14 @@
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "Innovius",
+        "Accel",
+        "Timber Grove Ventures",
+        "Emergent"
+      ],
+      "leads": []
     },
     "ozop-acquisition-2026-08": {
       "status": "hidden",
@@ -289,7 +416,8 @@
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Procter & Gamble"
     },
     "jamieson-acquisition-2026-08": {
       "status": "approved",
@@ -303,7 +431,8 @@
       "note": "Kirin to acquire Canadian vitamin maker Jamieson Wellness (C$2.5B enterprise value)",
       "noteDe": "Kirin übernimmt den kanadischen Vitaminhersteller Jamieson Wellness (Unternehmenswert 2,5 Mrd. C$)",
       "country": "Canada",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Kirin"
     },
     "othello-raise-2026-08": {
       "status": "hidden",
@@ -321,13 +450,30 @@
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "investors": [
+        "FIGR Ventures",
+        "Sorven Capital",
+        "Giles Brook"
+      ],
+      "leads": [
+        "FIGR Ventures",
+        "Sorven Capital"
+      ]
     },
     "ahead-raise-2026-07": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "Switzerland",
-      "region": "DACH"
+      "region": "DACH",
+      "investors": [
+        "3VC",
+        "RTP Global"
+      ],
+      "leads": [
+        "3VC",
+        "RTP Global"
+      ]
     },
     "soundhealth-raise-2026-07": {
       "status": "approved",
@@ -340,7 +486,13 @@
       "note": "Series A led by Shangbay Capital for AI devices for breathing and sleep disorders; $12.25M raised in total",
       "noteDe": "Series A unter Führung von Shangbay Capital für KI-Geräte gegen Atem- und Schlafstörungen; insgesamt 12,25 Mio. $",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "Shangbay Capital"
+      ],
+      "leads": [
+        "Shangbay Capital"
+      ]
     },
     "fitbit-acquisition-2026-07": {
       "status": "hidden",
@@ -354,7 +506,13 @@
       "note": "Series A led by Will Ventures for a gut-health toilet sensor; co-founded by Whoop's former CTO",
       "noteDe": "Series A unter Führung von Will Ventures für einen Toilettensensor zur Darmgesundheit; Mitgründer ist Whoops früherer CTO",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "Will Ventures"
+      ],
+      "leads": [
+        "Will Ventures"
+      ]
     },
     "veyr-raise-2026-07": {
       "status": "hidden",
@@ -369,7 +527,8 @@
       "note": "Bain Capital agrees to buy UK vitamins maker Vitabiotics; $1.2B as reported by Bloomberg",
       "noteDe": "Bain Capital kauft den britischen Vitaminhersteller Vitabiotics; 1,2 Mrd. $ laut Bloomberg",
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "acquirer": "Bain Capital"
     },
     "planet-valuation-2026-07": {
       "status": "approved",
@@ -384,7 +543,8 @@
       "note": "Franchise Equity Partners acquires Bravo Fit, the Planet Fitness franchisee in Australia; Planet Fitness exits its minority stake; terms undisclosed",
       "noteDe": "Franchise Equity Partners übernimmt Bravo Fit, den Planet-Fitness-Franchisenehmer in Australien; Planet Fitness steigt aus; Konditionen nicht genannt",
       "country": "Australia",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "acquirer": "Franchise Equity Partners"
     },
     "garmin-acquisition-2026-07": {
       "status": "approved",
@@ -395,7 +555,8 @@
       "note": "Garmin acquires training platforms TrainingPeaks and TrainHeroic; terms undisclosed",
       "noteDe": "Garmin übernimmt die Trainingsplattformen TrainingPeaks und TrainHeroic; Konditionen nicht genannt",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Garmin"
     },
     "egym-acquisition-2026-07": {
       "status": "hidden",
@@ -417,7 +578,8 @@
       "note": "Interactive Strength (TRNR) agrees to acquire connected stair-climber brand STEPR; close expected Q4 2026",
       "noteDe": "Interactive Strength (TRNR) übernimmt die vernetzte Stepper-Marke STEPR; Abschluss im 4. Quartal 2026 erwartet",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Interactive Strength"
     },
     "oura-raise-2026-07": {
       "status": "approved",
@@ -427,13 +589,33 @@
       "note": "Eli Lilly makes a strategic equity investment in Oura; amount undisclosed",
       "noteDe": "Eli Lilly beteiligt sich strategisch an Oura; Betrag nicht genannt",
       "country": "Finland",
-      "region": "Europe"
+      "region": "Europe",
+      "investors": [
+        "Eli Lilly"
+      ],
+      "leads": [
+        "Eli Lilly"
+      ]
     },
     "neko-raise-2026-07": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "Sweden",
-      "region": "Europe"
+      "region": "Europe",
+      "investors": [
+        "Lightspeed Venture Partners",
+        "O.G. Venture Partners",
+        "Atomico",
+        "General Catalyst",
+        "Lakestar",
+        "Liberty City Ventures",
+        "Positive Sum",
+        "BDT & MSD"
+      ],
+      "leads": [
+        "Lightspeed Venture Partners",
+        "O.G. Venture Partners"
+      ]
     },
     "im8-raise-2026-07": {
       "status": "approved",
@@ -446,7 +628,13 @@
       "note": "non-dilutive revenue-based marketing financing of up to $1B from General Catalyst's Customer Value Fund (not equity)",
       "noteDe": "nicht verwässernde, umsatzbasierte Marketingfinanzierung von bis zu 1 Mrd. $ aus dem Customer Value Fund von General Catalyst (kein Eigenkapital)",
       "country": "Hong Kong",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "investors": [
+        "General Catalyst"
+      ],
+      "leads": [
+        "General Catalyst"
+      ]
     },
     "basic-acquisition-2026-07": {
       "status": "approved",
@@ -459,13 +647,15 @@
       "note": "Basic-Fit buys 41 wellyou clubs in Germany, all cash",
       "noteDe": "Basic-Fit kauft 41 wellyou-Clubs in Deutschland, in bar",
       "country": "Germany",
-      "region": "DACH"
+      "region": "DACH",
+      "acquirer": "Basic-Fit"
     },
     "peloton-acquisition-2026-06": {
       "status": "approved",
       "why": "backfill review 2026-10-27",
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Peloton"
     },
     "fitlab-shutdown-2026-10": {
       "status": "approved",
@@ -501,27 +691,47 @@
     },
     "macobs-acquisition-2026-10": {
       "country": "India",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "acquirer": "Macobs Technologies"
     },
     "mozaik-acquisition-2026-10": {
       "country": "Romania",
-      "region": "Europe"
+      "region": "Europe",
+      "acquirer": "Mozaik Investments"
     },
     "tresalis-acquisition-2026-10": {
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "acquirer": "Tresalis"
     },
     "ipercept-raise-2026-09": {
       "country": "Sweden",
-      "region": "Europe"
+      "region": "Europe",
+      "investors": [
+        "Isogon Ventures",
+        "2150"
+      ],
+      "leads": [
+        "Isogon Ventures",
+        "2150"
+      ]
     },
     "amaani-raise-2026-09": {
       "country": "United Arab Emirates",
-      "region": "Middle East"
+      "region": "Middle East",
+      "investors": [
+        "BECO Capital",
+        "Homegrown Ventures",
+        "Surge (Peak XV Partners)"
+      ],
+      "leads": [
+        "BECO Capital"
+      ]
     },
     "elixinol-acquisition-2026-09": {
       "country": "Australia",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "acquirer": "Elixinol Wellness"
     },
     "tusol-acquisition-2026-09": {
       "country": "United States",
@@ -529,47 +739,96 @@
     },
     "australian-raise-2026-09": {
       "country": "Australia",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "investors": [
+        "Australian Research Council"
+      ],
+      "leads": [
+        "Australian Research Council"
+      ]
     },
     "wizard-raise-2026-09": {
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "Pave Health Ventures",
+        "Vanquish Equity",
+        "True Beauty Ventures",
+        "Barrier Island Capital"
+      ],
+      "leads": []
     },
     "fredun-acquisition-2026-09": {
       "country": "India",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "acquirer": "Fredun Pharmaceuticals"
     },
     "nua-raise-2026-09": {
       "country": "India",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "investors": [
+        "Peak XV Partners",
+        "Filter Capital",
+        "Mirabilis Investment Trust",
+        "Footpath Ventures"
+      ],
+      "leads": [
+        "Peak XV Partners",
+        "Filter Capital"
+      ]
     },
     "company-raise-2026-09": {
       "country": "Canada",
-      "region": "North America"
+      "region": "North America",
+      "investors": [
+        "BDC Capital Seed Venture Fund",
+        "BKR Capital",
+        "Launch"
+      ],
+      "leads": [
+        "BDC Capital Seed Venture Fund"
+      ]
     },
     "bback-acquisition-2026-09": {
       "country": "Singapore",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "acquirer": "DSG Consumer Partners"
     },
     "healf-raise-2026-09": {
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "investors": [
+        "SEMCAP Beauty & Wellness",
+        "Pentland Ventures",
+        "Ami Capital",
+        "IRIS",
+        "Active Partners",
+        "Sequel",
+        "Dara5"
+      ],
+      "leads": [
+        "SEMCAP Beauty & Wellness"
+      ]
     },
     "excalibur-acquisition-2026-08": {
       "country": "United Kingdom",
-      "region": "UK"
+      "region": "UK",
+      "acquirer": "Excalibur Group"
     },
     "fifty-acquisition-2026-08": {
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Fifty 1 Labs"
     },
     "kodeon-acquisition-2026-08": {
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "acquirer": "Kodeon"
     },
     "lac-acquisition-2026-08": {
       "country": "Netherlands",
-      "region": "Europe"
+      "region": "Europe",
+      "acquirer": "LAC (V3 Group)"
     },
     "fanatics-ipo-2026-08": {
       "country": "Hong Kong",
@@ -585,7 +844,33 @@
     },
     "heatronics-raise-2026-07": {
       "country": "India",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "investors": [
+        "Inflection Point Ventures"
+      ],
+      "leads": [
+        "Inflection Point Ventures"
+      ]
+    },
+    "providence-acquisition-2026-10": {
+      "acquirer": "Providence Equity Partners"
+    },
+    "intake-raise-2026-10": {
+      "investors": [
+        "Camino Partners"
+      ],
+      "leads": [
+        "Camino Partners"
+      ]
+    },
+    "ozlo-raise-2026-10": {
+      "investors": [
+        "Modi Ventures",
+        "WISE Ventures"
+      ],
+      "leads": [
+        "Modi Ventures"
+      ]
     }
   },
   "block": []

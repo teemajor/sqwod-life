@@ -7,6 +7,7 @@ import Base from '../../../layouts/Base.astro';
 import { languages, type Lang } from '../../../i18n/ui';
 import { TOOLS, type Tool } from '../../../config/tools';
 import { liveDeals } from '../../../lib/deals';
+import { investors } from '../../../lib/investors';
 import { liveJobs, hasPay } from '../../../lib/jobs';
 import bls from '../../../data/pricing-index/bls.json';
 
@@ -27,6 +28,7 @@ const sinceMonth = firstDeal ? new Date(firstDeal + 'T12:00:00Z').toLocaleDateSt
 // One live number per live tool, each from a data file.
 const NUMBERS: Record<string, { n: string; unit: string }> = {
   'deal-tracker': { n: deals.length.toLocaleString(loc), unit: de ? `Deals seit ${sinceMonth}` : `deals since ${sinceMonth}` },
+  'investor-map': { n: investors().length.toLocaleString(loc), unit: de ? 'Investoren, Programme und Käufer' : 'investors, programmes and buyers' },
   'pricing-index': {
     n: `$${bls.national.medianHourly.toFixed(2)}`,
     unit: de ? 'Median-Stundenlohn von US-Trainer:innen' : 'median trainer pay / hour',

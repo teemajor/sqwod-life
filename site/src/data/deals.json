@@ -43,6 +43,13 @@
       "country": "United States",
       "noteDe": "Ozlo schloss eine 22-Mio.-USD-Series-B-Runde ab, um Schlaftechnologie auszubauen und Tinnitus sowie Epilepsie anzugehen.",
       "checked": "high",
+      "investors": [
+        "Modi Ventures",
+        "WISE Ventures"
+      ],
+      "leads": [
+        "Modi Ventures"
+      ],
       "status": "approved",
       "reason": "queue: approved"
     },
@@ -71,6 +78,7 @@
       "country": "France",
       "noteDe": "Providence Equity Partners vereinbarte die Übernahme der Fitness Park Group und stärkt sein europäisches Fitnessstudio-Portfolio.",
       "checked": "high",
+      "acquirer": "Providence Equity Partners",
       "status": "approved",
       "reason": "queue: approved"
     },
@@ -99,6 +107,12 @@
       "country": "United States",
       "noteDe": "Intake Breathing sammelt 62 Mio. USD bei Camino Partners, um magnetische Nasenstreifen in den Einzelhandel zu bringen.",
       "checked": "high",
+      "investors": [
+        "Camino Partners"
+      ],
+      "leads": [
+        "Camino Partners"
+      ],
       "status": "approved",
       "reason": "queue: approved"
     },
@@ -154,6 +168,14 @@
       ],
       "noteDe": "25 Mio. $ Pre-Series-A (insgesamt 33 Mio. $) für einen KI-Anhänger als Wearable",
       "country": "United States",
+      "investors": [
+        "South Park Commons",
+        "Lightspeed Venture Partners"
+      ],
+      "leads": [
+        "South Park Commons",
+        "Lightspeed Venture Partners"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -180,6 +202,12 @@
         }
       ],
       "country": "United States",
+      "investors": [
+        "S2G Investments"
+      ],
+      "leads": [
+        "S2G Investments"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -207,6 +235,13 @@
       ],
       "noteDe": "2,5 Mio. £ unter Führung von Conduit EIS Impact Fund und Wrightwood für Micro Lab, einen Hormontest per Speichelprobe für zu Hause",
       "country": "United Kingdom",
+      "investors": [
+        "Conduit EIS Impact Fund",
+        "Wrightwood"
+      ],
+      "leads": [
+        "Conduit EIS Impact Fund"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -238,6 +273,7 @@
         }
       ],
       "country": "Switzerland",
+      "acquirer": "PureGym",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -264,6 +300,10 @@
         }
       ],
       "country": "Netherlands",
+      "investors": [
+        "NL SportTech Ventures"
+      ],
+      "leads": [],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -315,6 +355,17 @@
         }
       ],
       "country": "India",
+      "investors": [
+        "Sauce",
+        "OTP Ventures",
+        "Huddle Ventures",
+        "AYRA Ventures"
+      ],
+      "leads": [
+        "Sauce",
+        "OTP Ventures",
+        "Huddle Ventures"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -341,6 +392,16 @@
         }
       ],
       "country": "United Kingdom",
+      "investors": [
+        "Arāya Ventures",
+        "Morgan Stanley Inclusive & Sustainable Ventures",
+        "Innovate UK",
+        "a16z Scout Fund",
+        "Better Ventures"
+      ],
+      "leads": [
+        "Arāya Ventures"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -367,6 +428,7 @@
         }
       ],
       "country": "India",
+      "acquirer": "Macobs Technologies",
       "status": "pending",
       "reason": "new"
     },
@@ -394,6 +456,14 @@
       ],
       "noteDe": "10 Mio. $ unter Führung von Vine Ventures für einen KI-Assistenten mit Wearable-Armband",
       "country": "United States",
+      "investors": [
+        "Vine Ventures",
+        "Collective Global",
+        "Cory Levy"
+      ],
+      "leads": [
+        "Vine Ventures"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -421,6 +491,12 @@
       ],
       "noteDe": "überzeichnete Seed-Runde über 600.000 £ unter Führung des Gabriel Investment Syndicate für Intim-Wellness-Produkte",
       "country": "United Kingdom",
+      "investors": [
+        "Gabriel Investment Syndicate"
+      ],
+      "leads": [
+        "Gabriel Investment Syndicate"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -457,6 +533,12 @@
         }
       ],
       "country": "United States",
+      "investors": [
+        "NDude Labs"
+      ],
+      "leads": [
+        "NDude Labs"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -533,6 +615,7 @@
         }
       ],
       "country": "Romania",
+      "acquirer": "Mozaik Investments",
       "status": "pending",
       "reason": "new"
     },
@@ -559,6 +642,7 @@
         }
       ],
       "country": "United States",
+      "acquirer": "Garmin",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -585,6 +669,7 @@
         }
       ],
       "country": "United Kingdom",
+      "acquirer": "Tresalis",
       "status": "pending",
       "reason": "new"
     },
@@ -661,6 +746,14 @@
         }
       ],
       "country": "Sweden",
+      "investors": [
+        "Isogon Ventures",
+        "2150"
+      ],
+      "leads": [
+        "Isogon Ventures",
+        "2150"
+      ],
       "status": "pending",
       "reason": "new"
     },
@@ -712,6 +805,14 @@
         }
       ],
       "country": "United Arab Emirates",
+      "investors": [
+        "BECO Capital",
+        "Homegrown Ventures",
+        "Surge (Peak XV Partners)"
+      ],
+      "leads": [
+        "BECO Capital"
+      ],
       "status": "pending",
       "reason": "new"
     },
@@ -738,6 +839,7 @@
         }
       ],
       "country": "Australia",
+      "acquirer": "Elixinol Wellness",
       "status": "pending",
       "reason": "new"
     },
@@ -790,6 +892,18 @@
         }
       ],
       "country": "Canada",
+      "investors": [
+        "BDC Capital Thrive Fund",
+        "BFG Partners",
+        "BAM Ventures",
+        "Founder Collective",
+        "Rejuvenation Ventures",
+        "HSR Ventures"
+      ],
+      "leads": [
+        "BDC Capital Thrive Fund",
+        "BFG Partners"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -821,6 +935,19 @@
         }
       ],
       "country": "United Kingdom",
+      "investors": [
+        "Beringea",
+        "IW Capital",
+        "Active Partners",
+        "PXN Group",
+        "Accelerate Ventures",
+        "Doorway",
+        "Ventures Together"
+      ],
+      "leads": [
+        "Beringea",
+        "IW Capital"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -848,6 +975,14 @@
       ],
       "noteDe": "Series A unter Führung von General Catalyst für eine KI-Gesundheitscoaching-Plattform (früher Curelink); Dollarangaben in Berichten schwanken",
       "country": "India",
+      "investors": [
+        "General Catalyst",
+        "Elevation Capital",
+        "Flamel Performing Creatives"
+      ],
+      "leads": [
+        "General Catalyst"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -949,6 +1084,12 @@
         }
       ],
       "country": "Australia",
+      "investors": [
+        "Australian Research Council"
+      ],
+      "leads": [
+        "Australian Research Council"
+      ],
       "status": "pending",
       "reason": "new"
     },
@@ -980,6 +1121,13 @@
         }
       ],
       "country": "United States",
+      "investors": [
+        "Pave Health Ventures",
+        "Vanquish Equity",
+        "True Beauty Ventures",
+        "Barrier Island Capital"
+      ],
+      "leads": [],
       "status": "pending",
       "reason": "new"
     },
@@ -1012,6 +1160,7 @@
       ],
       "noteDe": "Das Zürcher Unternehmen Aeon übernimmt die Kernbereiche der Berliner Blutdiagnostik-Plattform Aware Health; Preis nicht genannt",
       "country": "Germany",
+      "acquirer": "Aeon",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1064,6 +1213,11 @@
       ],
       "noteDe": "Eigenkapital plus Bankkredite, um das Frauen-Beauty-Gym HITORI WELLNESS in vier Jahren auf 300 Standorte in Japan auszubauen",
       "country": "Japan",
+      "investors": [
+        "Koshidaka Holdings",
+        "One Capital"
+      ],
+      "leads": [],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1145,6 +1299,7 @@
         }
       ],
       "country": "India",
+      "acquirer": "Fredun Pharmaceuticals",
       "status": "pending",
       "reason": "new"
     },
@@ -1181,6 +1336,16 @@
         }
       ],
       "country": "India",
+      "investors": [
+        "Peak XV Partners",
+        "Filter Capital",
+        "Mirabilis Investment Trust",
+        "Footpath Ventures"
+      ],
+      "leads": [
+        "Peak XV Partners",
+        "Filter Capital"
+      ],
       "status": "pending",
       "reason": "new"
     },
@@ -1207,6 +1372,14 @@
         }
       ],
       "country": "Canada",
+      "investors": [
+        "BDC Capital Seed Venture Fund",
+        "BKR Capital",
+        "Launch"
+      ],
+      "leads": [
+        "BDC Capital Seed Venture Fund"
+      ],
       "status": "pending",
       "reason": "new"
     },
@@ -1286,6 +1459,7 @@
         }
       ],
       "country": "United States",
+      "acquirer": "cbdMD",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1313,6 +1487,7 @@
       ],
       "noteDe": "Informa übernimmt Global Wellness Summit und Global Wellness Institute; Konditionen nicht genannt",
       "country": "United States",
+      "acquirer": "Informa",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1340,6 +1515,7 @@
       ],
       "noteDe": "Nestlé verkauft sein Mainstream-Supplement-Geschäft (Nature's Bounty, Nuun, Puritan's Pride) an Yellow Wood Partners",
       "country": "United States",
+      "acquirer": "Yellow Wood Partners",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1367,6 +1543,13 @@
       ],
       "country": "United Arab Emirates",
       "noteDe": "Gym- und PT-Software aus Dubai; Eigenkapital (Global Ventures) plus Venture Debt (Stride) für den Eintritt in die USA",
+      "investors": [
+        "Global Ventures",
+        "Stride"
+      ],
+      "leads": [
+        "Global Ventures"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1393,6 +1576,7 @@
         }
       ],
       "country": "Singapore",
+      "acquirer": "DSG Consumer Partners",
       "status": "pending",
       "reason": "new"
     },
@@ -1419,6 +1603,18 @@
         }
       ],
       "country": "United Kingdom",
+      "investors": [
+        "SEMCAP Beauty & Wellness",
+        "Pentland Ventures",
+        "Ami Capital",
+        "IRIS",
+        "Active Partners",
+        "Sequel",
+        "Dara5"
+      ],
+      "leads": [
+        "SEMCAP Beauty & Wellness"
+      ],
       "status": "pending",
       "reason": "new"
     },
@@ -1446,6 +1642,7 @@
       ],
       "noteDe": "Das Londoner Unternehmen HITAI übernimmt Technik und IP des YC-finanzierten Studios Quell (Asset Deal)",
       "country": "United Kingdom",
+      "acquirer": "HITAI",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1497,6 +1694,7 @@
         }
       ],
       "country": "United Kingdom",
+      "acquirer": "Excalibur Group",
       "status": "pending",
       "reason": "new"
     },
@@ -1548,6 +1746,7 @@
         }
       ],
       "country": "United Kingdom",
+      "acquirer": "Temple",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1574,6 +1773,7 @@
         }
       ],
       "country": "United States",
+      "acquirer": "Fifty 1 Labs",
       "status": "pending",
       "reason": "new"
     },
@@ -1646,6 +1846,7 @@
       ],
       "noteDe": "Ferrero übernimmt die Müslimarke Purely Elizabeth; Konditionen nicht genannt (Forbes schätzt über 850 Mio. $)",
       "country": "United States",
+      "acquirer": "Ferrero",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -1697,6 +1898,7 @@
         }
       ],
       "country": "United States",
+      "acquirer": "Kodeon",
       "status": "pending",
       "reason": "new"
     },
@@ -1723,6 +1925,7 @@
         }
       ],
       "country": "Netherlands",
+      "acquirer": "LAC (V3 Group)",
       "status": "pending",
       "reason": "new · may be off-topic"
     },
@@ -1774,6 +1977,13 @@
         }
       ],
       "country": "United States",
+      "investors": [
+        "Innovius",
+        "Accel",
+        "Timber Grove Ventures",
+        "Emergent"
+      ],
+      "leads": [],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1883,6 +2093,7 @@
         }
       ],
       "country": "United States",
+      "acquirer": "Procter & Gamble",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -1915,6 +2126,7 @@
       ],
       "noteDe": "Kirin übernimmt den kanadischen Vitaminhersteller Jamieson Wellness (Unternehmenswert 2,5 Mrd. C$)",
       "country": "Canada",
+      "acquirer": "Kirin",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2052,6 +2264,15 @@
         }
       ],
       "country": "United Kingdom",
+      "investors": [
+        "FIGR Ventures",
+        "Sorven Capital",
+        "Giles Brook"
+      ],
+      "leads": [
+        "FIGR Ventures",
+        "Sorven Capital"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -2078,6 +2299,14 @@
         }
       ],
       "country": "Switzerland",
+      "investors": [
+        "3VC",
+        "RTP Global"
+      ],
+      "leads": [
+        "3VC",
+        "RTP Global"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -2105,6 +2334,12 @@
       ],
       "noteDe": "Series A unter Führung von Shangbay Capital für KI-Geräte gegen Atem- und Schlafstörungen; insgesamt 12,25 Mio. $",
       "country": "United States",
+      "investors": [
+        "Shangbay Capital"
+      ],
+      "leads": [
+        "Shangbay Capital"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2157,6 +2392,12 @@
       ],
       "noteDe": "Series A unter Führung von Will Ventures für einen Toilettensensor zur Darmgesundheit; Mitgründer ist Whoops früherer CTO",
       "country": "United States",
+      "investors": [
+        "Will Ventures"
+      ],
+      "leads": [
+        "Will Ventures"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2209,6 +2450,7 @@
       ],
       "noteDe": "Bain Capital kauft den britischen Vitaminhersteller Vitabiotics; 1,2 Mrd. $ laut Bloomberg",
       "country": "United Kingdom",
+      "acquirer": "Bain Capital",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2262,6 +2504,7 @@
       ],
       "noteDe": "Franchise Equity Partners übernimmt Bravo Fit, den Planet-Fitness-Franchisenehmer in Australien; Planet Fitness steigt aus; Konditionen nicht genannt",
       "country": "Australia",
+      "acquirer": "Franchise Equity Partners",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2299,6 +2542,7 @@
       ],
       "noteDe": "Garmin übernimmt die Trainingsplattformen TrainingPeaks und TrainHeroic; Konditionen nicht genannt",
       "country": "United States",
+      "acquirer": "Garmin",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2430,6 +2674,7 @@
       ],
       "noteDe": "Interactive Strength (TRNR) übernimmt die vernetzte Stepper-Marke STEPR; Abschluss im 4. Quartal 2026 erwartet",
       "country": "United States",
+      "acquirer": "Interactive Strength",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2457,6 +2702,12 @@
       ],
       "noteDe": "Eli Lilly beteiligt sich strategisch an Oura; Betrag nicht genannt",
       "country": "Finland",
+      "investors": [
+        "Eli Lilly"
+      ],
+      "leads": [
+        "Eli Lilly"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2483,6 +2734,20 @@
         }
       ],
       "country": "Sweden",
+      "investors": [
+        "Lightspeed Venture Partners",
+        "O.G. Venture Partners",
+        "Atomico",
+        "General Catalyst",
+        "Lakestar",
+        "Liberty City Ventures",
+        "Positive Sum",
+        "BDT & MSD"
+      ],
+      "leads": [
+        "Lightspeed Venture Partners",
+        "O.G. Venture Partners"
+      ],
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },
@@ -2510,6 +2775,12 @@
       ],
       "noteDe": "nicht verwässernde, umsatzbasierte Marketingfinanzierung von bis zu 1 Mrd. $ aus dem Customer Value Fund von General Catalyst (kein Eigenkapital)",
       "country": "Hong Kong",
+      "investors": [
+        "General Catalyst"
+      ],
+      "leads": [
+        "General Catalyst"
+      ],
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2537,6 +2808,7 @@
       ],
       "noteDe": "Basic-Fit kauft 41 wellyou-Clubs in Deutschland, in bar",
       "country": "Germany",
+      "acquirer": "Basic-Fit",
       "status": "approved",
       "reason": "audit 2026-10-30: facts corrected"
     },
@@ -2563,6 +2835,12 @@
         }
       ],
       "country": "India",
+      "investors": [
+        "Inflection Point Ventures"
+      ],
+      "leads": [
+        "Inflection Point Ventures"
+      ],
       "status": "pending",
       "reason": "new"
     },
@@ -2589,6 +2867,7 @@
         }
       ],
       "country": "United States",
+      "acquirer": "Peloton",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
     },

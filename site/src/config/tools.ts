@@ -34,6 +34,14 @@ export const TOOLS: Tool[] = [
     cta: { en: 'See the deals →', de: 'Deals ansehen →' },
   },
   {
+    slug: 'investor-map', status: 'live',
+    name: { en: 'Investor Map', de: 'Investor Map' },
+    type: { en: 'Directory · researched', de: 'Verzeichnis · recherchiert' },
+    answers: { en: 'Who funds, buys and supports fitness and wellness companies: funds, corporates, accelerators, competitions and grants, with their deals.', de: 'Wer Fitness- und Wellness-Firmen finanziert, kauft und fördert: Fonds, Corporates, Accelerators, Wettbewerbe und Förderprogramme, mit ihren Deals.' },
+    href: (lang) => `/${lang}/intelligence/investors/`,
+    cta: { en: 'Find investors →', de: 'Investoren finden →' },
+  },
+  {
     slug: 'pricing-index', status: 'live', enOnly: true,
     name: { en: 'Coach Pricing Index', de: 'Coach Pricing Index' },
     type: { en: 'Calculator · US', de: 'Rechner · nur auf Englisch · US' },

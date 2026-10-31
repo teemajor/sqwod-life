@@ -10,6 +10,7 @@ import DealGlyphs from '../../../components/DealGlyphs.astro';
 import DealIcon from '../../../components/DealIcon.astro';
 import Flag from '../../../components/Flag.astro';
 import { flagCode, countryName } from '../../../lib/flags';
+import { investorSlug } from '../../../lib/investors';
 import { languages, type Lang } from '../../../i18n/ui';
 import { liveAll, generatedAt } from '../../../lib/deals';
 
@@ -44,7 +45,7 @@ const T = de ? {
     'USD-Werte sind Näherungen mit festen Wechselkursen. Maßgeblich ist der Betrag in Originalwährung.',
   ],
   empty: 'Die ersten Deals werden gerade geprüft. Trag dich ein und bekomm jeden neuen Deal in Sqwod Daily.',
-  download: 'Daten herunterladen', cite: 'Zitieren', updated: 'Stand',
+  download: 'Daten herunterladen', cite: 'Zitieren', updated: 'Stand', ledBy: 'Investoren', buyer: 'Käufer', lead: 'Lead', map: 'Investor Map →', mapSub: 'Wer finanziert, kauft und fördert: das Verzeichnis zu diesen Deals.',
   signupHead: 'Jeden Deal am Morgen, bevor er Thema ist', signupBody: 'Sqwod Daily: Geld, Deals und was sie für dein Business heißen. Werktäglich, kostenlos.',
 } : {
   title: 'Sqwod Deal Tracker: Fitness & Wellness Funding and M&A',
@@ -68,12 +69,13 @@ const T = de ? {
     'USD values are approximations at fixed exchange rates. The amount in the original currency is the reference.',
   ],
   empty: 'The first deals are being checked right now. Sign up and get every new deal in Sqwod Daily.',
-  download: 'Download the data', cite: 'Cite', updated: 'As of',
+  download: 'Download the data', cite: 'Cite', updated: 'As of', ledBy: 'Investors', buyer: 'Buyer', lead: 'lead', map: 'Investor Map →', mapSub: 'Who funds, buys and supports: the directory behind these deals.',
   signupHead: 'Every deal, in your inbox before it is old news', signupBody: 'Sqwod Daily: money, deals and what they mean for your business. Every weekday, free.',
 };
 const REGION_DE: Record<string, string> = { DACH: 'DACH', UK: 'UK', Europe: 'Europa', 'North America': 'Nordamerika', 'Asia-Pacific': 'Asien-Pazifik', 'Middle East': 'Naher Osten', 'Latin America': 'Lateinamerika', Other: 'Sonstige' };
 const CAT_DE: Record<string, string> = { 'Gyms & studios': 'Studios & Clubs', 'Wearables & devices': 'Wearables & Geräte', 'Health & longevity': 'Health & Longevity', 'Nutrition & supplements': 'Ernährung & Supplements', 'Software & AI': 'Software & KI', 'Apparel & footwear': 'Bekleidung & Schuhe', Other: 'Sonstige' };
 const rName = (r: string) => (de ? REGION_DE[r] || r : r);
+const invHref = (name: string) => `/${lang}/intelligence/investors/#${investorSlug(name)}`;
 const where = (d: { country?: string; region: string }) => (d.country ? countryName(d.country, lang) : rName(d.region));
 // flags on the region chips; Asia-Pacific and Middle East have no single flag and get none
 const REGION_FLAGS: Record<string, string[]> = { 'europe-all': ['eu'], DACH: ['de', 'at', 'ch'], UK: ['gb'], Europe: ['eu'], 'North America': ['us', 'ca'] };
@@ -148,7 +150,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
             {latest6.map((d) => (
               <li>
                 <span class="dh-date">{dayMonth(d.date)}</span>
-                <span class="dh-who"><b>{d.entity}</b><small><DealIcon kind={d.kind} />{T.kinds[d.kind] || d.kind} · <Flag country={d.country} />{where(d)} · {cName(d.category)}</small></span>
+                <span class="dh-who"><b>{d.entity}{d.country && <Flag country={d.country} label={countryName(d.country, lang)} />}</b><small><DealIcon kind={d.kind} />{T.kinds[d.kind] || d.kind} · {cName(d.category)}</small></span>
                 {d.amount
                   ? <span class={`dnum dh-amt${d.kind === 'raise' ? ' dh-acc' : ''}`}>{d.amount}</span>
                   : <span class="dh-und">{T.undisclosed}</span>}
@@ -178,6 +180,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
           <span class="dt-sel"><select aria-label={T.cat} data-cat><option value="">{T.cat}: {T.all}</option>{cats.map((c) => <option value={c}>{cName(c)}</option>)}</select></span>
         </div>
         <p class="dt-count"><span><b data-shown>{all.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
+        <a class="dt-map" href={`/${lang}/intelligence/investors/`}><b>{T.map}</b><span>{T.mapSub}</span></a>
       </section>
 
       <div class="dt-wrap">
@@ -187,9 +190,11 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
           <thead><tr role="row">{T.th.map((h) => <th scope="col" role="columnheader">{h}</th>)}</tr></thead>
           <tbody>
             {all.map((d) => (
-              <tr role="row" data-region={d.region} data-kind={d.kind} data-cat={d.category} data-name={`${d.entity} ${d.note}`.toLowerCase()}>
+              <tr role="row" id={`deal-${d.id}`} data-region={d.region} data-kind={d.kind} data-cat={d.category} data-name={`${d.entity} ${d.note} ${(d.investors || []).join(' ')} ${d.acquirer || ''}`.toLowerCase()}>
                 <td class="dt-date" role="cell">{fmtDate(d.date)}</td>
-                <td class="dt-who" role="cell"><b>{d.entity}</b><span class="dt-note">{de && d.noteDe ? d.noteDe : d.note}</span></td>
+                <td class="dt-who" role="cell"><b>{d.entity}</b><span class="dt-note">{de && d.noteDe ? d.noteDe : d.note}</span>{(d.investors?.length || d.acquirer) && (
+                  <span class="dt-inv">{d.acquirer ? <>{T.buyer}: <a href={invHref(d.acquirer)}>{d.acquirer}</a></> : <>{T.ledBy}: {d.investors!.map((n, i) => <>{i > 0 && ', '}<a href={invHref(n)}>{n}</a>{(d.leads || []).includes(n) && <i> ({T.lead})</i>}</>)}</>}</span>
+                )}</td>
                 <td class="dt-kind" role="cell"><DealIcon kind={d.kind} />{T.kinds[d.kind] || d.kind}</td>
                 <td class="dt-amt" role="cell">{d.amount ? <>{d.amount}{d.amountUsd && d.currency !== 'USD' ? <span class="dt-note">≈ {usd(d.amountUsd)}</span> : null}</> : <span class="dt-muted">{T.undisclosed}</span>}</td>
                 <td class="dt-where" role="cell"><Flag country={d.country} />{where(d)}</td>
@@ -280,7 +285,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   .dt-chips button :global(.fl){margin-right:3px}
   .dt-chips button :global(.fl:last-of-type){margin-right:7px}
   .dt-chips button.on :global(.fl){border-color:rgba(0,0,0,.25)}
-  .dh-who small :global(.fl){width:14px;height:10px;margin-right:4px}
+  .dh-who b :global(.fl){width:14px;height:10px;margin:0 0 0 7px;vertical-align:0}
   .dh-who small :global(.di){width:12px;height:12px;margin-right:3px}
   .dt-chips button.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
   .dt-row{display:grid;grid-template-columns:1fr;gap:8px}
@@ -305,6 +310,16 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   .dt td b{color:var(--chalk)}
   .dt tr[hidden]{display:none}
   .dt-note{display:block;font-size:12px;color:var(--g2);margin-top:3px;line-height:1.45}
+  .dt-inv{display:block;font-size:12px;color:var(--g2);margin-top:4px;line-height:1.45}
+  .dt-inv a{color:var(--g1);text-decoration:underline;text-decoration-color:var(--edge);text-underline-offset:3px}
+  .dt-inv a:hover{color:var(--accent)}
+  .dt-inv i{font-style:normal;color:var(--g3)}
+  .dt tr{scroll-margin-top:24px}
+  .dt tr:target td{background:var(--accent-soft)}
+  .dt-map{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin:14px 0 0;padding:12px 14px;border:1px solid var(--accent-line);border-radius:12px;background:var(--accent-soft);text-decoration:none;color:var(--chalk)}
+  .dt-map b{font-size:14px}
+  .dt-map span{font-size:12.5px;color:var(--g2)}
+  .dt-map:hover{border-color:var(--accent)}
   .dt-muted{color:var(--g3)}
   .dt-date{white-space:nowrap;font-family:var(--mono);font-size:12px;color:var(--g2)}
   .dt-amt{white-space:nowrap}
@@ -344,13 +359,15 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
     .dt tr::before{content:"";order:3;flex:0 0 100%;height:0}   /* forced line break: name and amount alone on line one */
     .dt-kind{order:4;display:inline-flex;align-items:center;min-height:20px;padding:0 8px;border:1px solid var(--line);border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--g1);align-self:center}
     .dt tr[data-kind="shutdown"] .dt-kind{color:var(--down);border-color:color-mix(in srgb,var(--down) 45%,transparent)}
-    .dt-cat,.dt-where{font-size:12.5px;line-height:20px;color:var(--g2);align-self:center}
-    .dt-cat{order:5}
-    .dt-where{order:6}
+    .dt-cat{order:5;font-size:12.5px;line-height:20px;color:var(--g2);align-self:center}
     .dt-where::before{content:"·";margin-right:8px;color:var(--g3)}
     .dt-who .dt-note{order:7;flex:0 0 100%;margin-top:3px;font-size:13.5px;line-height:1.5;color:var(--g2)}
-    .dt-date{order:8;flex:1 1 auto;margin-top:5px}
-    .dt-src{order:9;flex:0 0 auto;margin-top:5px;margin-left:auto;display:flex;gap:18px;font-size:13px}
+    .dt-who .dt-inv{order:8;flex:0 0 100%;margin-top:0;font-size:12.5px}
+    .dt-date{order:9;flex:0 0 auto;margin-top:5px}
+    .dt-where{order:10;flex:1 1 auto;margin-top:5px;font-size:12.5px;line-height:1.4;color:var(--g2)}   /* flag and country sit with the date, not on the tag line */
+    .dt tr:target{background:var(--accent-soft)}
+    .dt tr:target td{background:none}
+    .dt-src{order:11;flex:0 0 auto;margin-top:5px;margin-left:auto;display:flex;gap:18px;font-size:13px}
     .dt-src a{padding:12px 0;margin:-12px 0;font-weight:600;color:var(--chalk);text-decoration-thickness:1px;text-underline-offset:3px}   /* 44px tap height without extra row height */
     .dt-src a:hover{color:var(--accent)}
   }

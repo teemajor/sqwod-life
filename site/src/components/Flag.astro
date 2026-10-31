@@ -2,9 +2,11 @@
 // Small country flag, by country name (as stored in deals.json) or ISO code. Renders nothing
 // for unknown countries. Decorative: the country name follows it in the text. Needs <DealGlyphs />.
 import { flagCode } from '../lib/flags';
-interface Props { country?: string | null; code?: string }
-const { country, code } = Astro.props;
+interface Props { country?: string | null; code?: string; label?: string }   // label: the flag stands alone, so it gets a name
+const { country, code, label } = Astro.props;
 const c = code || flagCode(country);
 ---
-{c && <svg class="fl" aria-hidden="true" focusable="false"><use href={`#fl-${c}`} /></svg>}
+{c && (label
+  ? <svg class="fl" role="img" aria-label={label} focusable="false"><title>{label}</title><use href={`#fl-${c}`} /></svg>
+  : <svg class="fl" aria-hidden="true" focusable="false"><use href={`#fl-${c}`} /></svg>)}
 <style>.fl{display:inline-block;width:16px;height:12px;vertical-align:-1px;margin-right:6px;border-radius:2px;border:1px solid var(--line);box-sizing:content-box;flex:none}</style>
