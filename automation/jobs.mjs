@@ -43,7 +43,7 @@ const BRANDS = join(__dirname, 'jobs-brands.json');
 const apiKey = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.SQWOD_MODEL || 'claude-sonnet-4-6';
 const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] = a.replace(/^--/, '').split('='); return [k, v ?? true]; }));
-const SINCE = Math.max(1, Math.min(100, Number(args.since) || 14));
+export const SINCE = Math.max(1, Math.min(100, Number(args.since) || 14));
 const DAY = 86400000;
 const iso = (t = Date.now()) => new Date(t).toISOString().slice(0, 10);
 
@@ -271,22 +271,25 @@ const empOf = (s) => (EMP_MAP.find(([rx]) => rx.test(String(s || ''))) || [null,
 
 /* ------------------------------------------------------------------- sources -- */
 
-async function fromBA(src) {
+export async function fromBA(src) {
   const out = []; const since = SINCE;
   const headers = { 'X-API-Key': src.apiKey, accept: 'application/json' };
   // What the API sent back, for the run log: v6 answered 200 with no postings on 31 Oct 2026.
   const diag = (runLog.sources.ba.diag = { tried: [] });
-  const shape = (j) => (j && typeof j === 'object' ? { keys: Object.keys(j).slice(0, 12), maxErgebnisse: j.maxErgebnisse ?? null, items: (j.stellenangebote || []).length } : { body: String(j).slice(0, 80) });
+  // v6 returns the postings as `ergebnisliste` (seen 31 Oct 2026); the docs and v4 say `stellenangebote`.
+  const listOf = (j) => (Array.isArray(j?.ergebnisliste) ? j.ergebnisliste : Array.isArray(j?.stellenangebote) ? j.stellenangebote : []);
+  const shape = (j) => (j && typeof j === 'object' ? { keys: Object.keys(j).slice(0, 12), maxErgebnisse: j.maxErgebnisse ?? null, items: listOf(j).length } : { body: String(j).slice(0, 80) });
   // Pick the first endpoint whose probe ("Fitnesstrainer", nationwide) returns postings.
   let base = null;
   for (const url of src.endpoints || [src.url]) {
     const probe = new URLSearchParams({ was: QUERIES[0], veroeffentlichtseit: String(since), size: '50', page: '1' });
     const j = await getJson(`${url}?${probe}`, { api: true, headers });
-    diag.tried.push({ url: url.replace(/^.*jobsuche-service/, ''), ...shape(j), sample: (j?.stellenangebote || [])[0] || null });
-    if ((j?.stellenangebote || []).length) { base = url; break; }
+    diag.tried.push({ url: url.replace(/^.*jobsuche-service/, ''), ...shape(j), sample: listOf(j)[0] || null });
+    if (listOf(j).length) { base = url; break; }
   }
   if (!base) { runLog.notes.push(`Bundesagentur: no endpoint returned postings (${diag.tried.map((t) => `${t.url}: ${t.items ?? '?'} items, keys ${(t.keys || []).join('/')}`).join('; ')})`); return []; }
   diag.used = base.replace(/^.*jobsuche-service/, '');
+  diag.itemKeys = Object.keys(diag.tried[diag.tried.length - 1].sample || {});
   // One pass per working-time filter tags employment from the source itself; a last
   // unfiltered pass catches postings with none of them.
   const passes = [['vz', 'full-time'], ['tz', 'part-time'], ['mj', 'mini-job'], [null, 'unknown']];
@@ -296,13 +299,18 @@ async function fromBA(src) {
         const p = new URLSearchParams({ was: q, veroeffentlichtseit: String(since), size: '50', page: String(page), angebotsart: '1' });
         if (az) p.set('arbeitszeit', az);
         const j = await getJson(`${base}?${p}`, { api: true, headers });
-        const list = j?.stellenangebote || [];
+        const list = listOf(j);
         for (const s of list) {
-          const ort = s.arbeitsort || {};
+          // field names differ between API versions: take the first one present
+          const ort = s.arbeitsort || (Array.isArray(s.arbeitsorte) ? s.arbeitsorte[0] : s.arbeitsorte) || {};
           if (ort.land && !/^(deutschland|germany|de|deu)$/i.test(String(ort.land).trim())) continue;
+          const refnr = s.refnr || s.referenznummer || s.hashId;
+          const title = s.titel || s.stellenangebotsTitel || s.stellentitel || s.beruf || s.berufsbezeichnung;
+          if (!refnr || !title) { diag.skippedNoId = (diag.skippedNoId || 0) + 1; continue; }
           out.push(job('ba', {
-            rawId: s.refnr || s.hashId, title: s.titel || s.stellenangebotsTitel || s.beruf, employer: s.arbeitgeber, city: ort.ort, country: 'DE',
-            employment: emp, url: s.externeUrl || src.detail(s.refnr), postedAt: s.aktuelleVeroeffentlichungsdatum || s.modifikationsTimestamp || null, payText: null,
+            rawId: refnr, title, employer: s.arbeitgeber || s.arbeitgeberName || s.firma, city: ort.ort || ort.stadt, country: 'DE',
+            employment: emp, url: s.externeUrl || src.detail(refnr),
+            postedAt: s.aktuelleVeroeffentlichungsdatum || s.veroeffentlichungsdatum || s.modifikationsTimestamp || null, payText: null,
           }));
         }
         if (list.length < 50) break;
