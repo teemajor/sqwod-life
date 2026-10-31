@@ -1,5 +1,5 @@
 {
- "startedAt": "2026-10-31T10:44:06.594Z",
+ "startedAt": "2026-10-31T11:04:18.491Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
@@ -153,7 +153,12 @@
      "arbeitgeberKundennummerHash",
      "referenznummer",
      "alleBerufe"
-    ]
+    ],
+    "pay": {
+     "KEINE_ANGABEN": 209,
+     "JAHRESGEHALT": 10,
+     "STUNDENLOHN": 14
+    }
    }
   },
   "adzuna": {
@@ -290,10 +295,8 @@
   },
   "myequilibria.com": {
    "requests": 1,
-   "failures": 1,
-   "errors": [
-    "HTTP 404 /careers"
-   ]
+   "failures": 0,
+   "errors": []
   },
   "boards-api.greenhouse.io": {
    "requests": 29,
@@ -747,17 +750,17 @@
  },
  "found": {
   "fetchedAfterGate": 505,
-  "unique": 270,
+  "unique": 283,
   "withPay": 22
  },
  "summary": {
-  "live": 273,
-  "newThisWeek": 273,
+  "live": 286,
+  "newThisWeek": 286,
   "withPay": 22,
   "newWithPay": 22,
-  "hostsFailed": 3,
+  "hostsFailed": 2,
   "sourcesFailed": []
  },
- "finishedAt": "2026-10-31T10:48:50.677Z",
+ "finishedAt": "2026-10-31T11:08:06.365Z",
  "payLinesAppended": 0
 }
