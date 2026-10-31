@@ -15,9 +15,9 @@ DAILY_PER_IP = "5"                           # AI reads per IP per day (needs PI
 #   wrangler kv namespace create PITCH_KV
 # then paste the returned id below and uncomment. Without it the Worker still
 # runs — it just skips the cap, so do not ship without it.
-# [[kv_namespaces]]
-# binding = "PITCH_KV"
-# id = ""
+[[kv_namespaces]]
+binding = "PITCH_KV"
+id = "79f39383a33c468988e94d5f17de7da4"
 
 # Secrets are NOT stored here. Set with:
 #   wrangler secret put ANTHROPIC_API_KEY

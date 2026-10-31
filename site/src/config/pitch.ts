@@ -3,6 +3,6 @@
 //   https://sqwod-investor-pitch.sqwodlife.workers.dev/pitch
 // Until it's set, the pitch box renders with a "coming soon" note and no dead posts.
 export const PITCH = {
-  endpoint: '',
+  endpoint: 'https://sqwod-investor-pitch.sqwodlife.workers.dev/pitch',
   maxChars: 2000,
 };
