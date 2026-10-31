@@ -114,7 +114,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   creator: { '@type': 'Organization', name: 'Sqwod', url: 'https://sqwod.life' }, dateModified: generatedAt, temporalCoverage: `${first}/..`,
   distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: 'https://sqwod.life/data/deals.csv' }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: 'https://sqwod.life/data/deals.json' }] };
 ---
-<Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('deals', lang)} noindex={deals.length < 10}>
+<Base lang={lang} title={T.title} description={T.sub} active="tools" image={ogPath('deals', lang)} noindex={deals.length < 10}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   {deals.length === 0 ? (
     <>

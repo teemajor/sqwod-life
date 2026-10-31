@@ -11,9 +11,8 @@ import DealGlyphs from '../../../components/DealGlyphs.astro';
 import DealIcon from '../../../components/DealIcon.astro';
 import Flag from '../../../components/Flag.astro';
 import { flagCode, countryName, COUNTRY_CODE } from '../../../lib/flags';
-import { investors, regionOf, TYPE_LABEL, STAGE_LABEL, FOCUS_LABEL, BAND_LABEL, STAGES, FOCUS, BANDS, type InvestorType } from '../../../lib/investors';
+import { investors, regionOf, TYPE_LABEL, TYPE_PLURAL, TYPE_HELP, STAGE_LABEL, FOCUS_LABEL, BAND_LABEL, STAGES, FOCUS, BANDS, type InvestorType } from '../../../lib/investors';
 import { generatedAt } from '../../../lib/deals';
-import { globeData, GLOBE_COLORS } from '../../../lib/globe-data';
 import { PITCH } from '../../../config/pitch';
 import { languages, type Lang } from '../../../i18n/ui';
 
@@ -25,7 +24,6 @@ const de = lang === 'de';
 const loc = de ? 'de-DE' : 'en-GB';
 const all = investors();
 const CHECKED = '2026-10-31';
-const globe = globeData(lang, all);   // live hero globe on desktop (lazy), poster elsewhere
 const today = generatedAt;   // the day the data was built (the site rebuilds every weekday)
 const isOpen = (i: (typeof all)[number]) => !!i.apply && (i.apply.status === 'rolling' || (i.apply.status === 'open' && (!i.apply.deadline || i.apply.deadline >= today)));
 const withDeals = all.filter((i) => i.deals.length);
@@ -65,7 +63,7 @@ const T = de ? {
   fType: 'Art', fStage: 'Phase', fCheck: 'Ticketgröße', fFocus: 'Fokus', fActivity: 'Aktivität & Zugang',
   openNow: 'Jetzt offen', hasDeals: 'Deals im Tracker', active12: 'Aktiv in den letzten 12 Monaten', abroad: 'Investiert außerhalb der Heimatregion', leads: 'Führt Runden an', hasData: 'Mit Portfolio-Daten',
   sort: 'Sortieren', sorts: { active: 'Aktivste zuerst', deals: 'Meiste Deals im Tracker', recent: 'Zuletzt aktiv', open: 'Offene Aufrufe zuerst', az: 'A bis Z' } as Record<string, string>,
-  types: { vc: 'Fonds', corporate: 'Corporate & strategisch', accelerator: 'Accelerators', competition: 'Wettbewerbe', grant: 'Förderung', buyer: 'Käufer' } as Record<string, string>,
+  types: TYPE_PLURAL.de as Record<string, string>, typeHelp: TYPE_HELP.de as Record<string, string>, typeLegend: 'Was bedeuten die Typen?',
   stage: 'Phase', check: 'Ticket', typical: 'Typische Runde', deals: 'Deals im Tracker', recent: 'Zuletzt investiert', lead: 'Lead', deadline: 'Bewerbung bis', rolling: 'Laufende Bewerbung', closed: 'Bewerbung geschlossen', tba: 'Termine werden angekündigt', site: 'Website ↗', source: 'Quelle', fromDeals: 'aus dem Deal Tracker', founded: 'gegr.', inLast12: 'in 12 Monaten', investments: 'Investments',
   // matcher
   mKick: 'Investor Matcher', mH: 'Welche Investoren passen zu deiner Firma?', mSub: 'Beschreib dein Unternehmen in fünf Feldern. Du bekommst eine Rangliste mit Match-Score und den Daten dahinter: Phase, Portfolio, Ticketgröße, Standort, Aktivität.',
@@ -97,7 +95,7 @@ const T = de ? {
   fType: 'Type', fStage: 'Stage', fCheck: 'Cheque size', fFocus: 'Focus', fActivity: 'Activity & access',
   openNow: 'Open now', hasDeals: 'Deals in the tracker', active12: 'Active in the last 12 months', abroad: 'Invests outside home region', leads: 'Leads rounds', hasData: 'With portfolio data',
   sort: 'Sort', sorts: { active: 'Most active first', deals: 'Most deals in the tracker', recent: 'Recently active', open: 'Open calls first', az: 'A to Z' } as Record<string, string>,
-  types: { vc: 'Funds', corporate: 'Corporate & strategic', accelerator: 'Accelerators', competition: 'Competitions', grant: 'Grants', buyer: 'Buyers' } as Record<string, string>,
+  types: TYPE_PLURAL.en as Record<string, string>, typeHelp: TYPE_HELP.en as Record<string, string>, typeLegend: 'What do the types mean?',
   stage: 'Stage', check: 'Cheque', typical: 'Typical round', deals: 'Deals in the tracker', recent: 'Recent investments', lead: 'lead', deadline: 'Apply by', rolling: 'Rolling applications', closed: 'Applications closed', tba: 'Dates to be announced', site: 'Website ↗', source: 'Source', fromDeals: 'from the Deal Tracker', founded: 'est.', inLast12: 'in 12 months', investments: 'investments',
   mKick: 'Investor Matcher', mH: 'Which investors fit your company?', mSub: 'Describe your company in five fields. You get a ranked shortlist with a match score and the data behind it: stage, portfolio, cheque size, location, activity.',
   mCat: 'What are you building?', mStage: 'Stage', mCountry: 'Country', mAmount: 'Amount you are raising', mWant: 'What do you want?', mKeys: 'Keywords (optional)', mKeysPh: 'e.g. boutique studio, recovery, protein, coaching app',
@@ -133,7 +131,7 @@ const stageLine = (i: (typeof all)[number]) => i.stage || (i.stages.length ? (i.
 const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc: flagCode(i.country), r: i.region, city: i.city || '', st: i.stages, sf: i.stagesFrom, min: i.checkMin, max: i.checkMax, chk: i.check || '', typ: i.typicalRound, f: i.focusTags,
   p: i.portfolio.map((r) => r[1]), d: i.deals.slice(0, 3).map((d) => d.entity), tot: i.dealsTotal, a12: i.active12m, last: i.lastDeal, open: isOpen(i) ? 1 : 0, lead: i.leadsRounds ? 1 : 0, ab: i.abroad ? 1 : 0, kw: `${i.name} ${i.focus} ${i.portfolio.map((r) => r[1]).join(' ')} ${i.deals.map((d) => d.entity).join(' ')}`.toLowerCase(), cbi: i.enrich?.cbi?.url || '', cb: i.enrich?.cb?.permalink ? `https://www.crunchbase.com/organization/${i.enrich.cb.permalink}` : '' }));
 ---
-<Base lang={lang} title={T.title} description={T.sub} active="intelligence" image={ogPath('investors', lang)}>
+<Base lang={lang} title={T.title} description={T.sub} active="tools" image={ogPath('investors', lang)}>
   <script type="application/ld+json" set:html={JSON.stringify(schema)} />
   <DealGlyphs flags={flagCodes} />
   <section class="ih">
@@ -141,65 +139,10 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     <p class="ih-live"><span class="pulse" aria-hidden="true"></span>{T.checked} {fmtDate(CHECKED)}</p>
     <h1 class="ih-h1">{T.heroH1}</h1>
     <p class="ih-sub">{T.sub}</p>
-    <div class="ih-kpis">
-      <div><b class="dnum ih-acc">{all.length}</b><span>{T.entries}</span></div>
-      <div><b class="dnum">{withDeals.length}</b><span>{T.withDeals}</span></div>
-      <div><b class="dnum">{countries.length}</b><span>{T.countries}</span></div>
-      <div><b class="dnum">{openCalls.length}</b><span>{T.open}</span></div>
-    </div>
-    <div class="ih-btns">
-      <a class="ih-cta" href="#matcher" data-umami-event="investors-hero-cta">{T.cta}</a>
-      <a class="ih-alt" href={`/${lang}/intelligence/investors/map/`}>{T.globe}</a>
-      <a class="ih-alt" href={`/${lang}/intelligence/deals/`}>{T.tracker}</a>
-    </div>
+    <p class="ih-links"><a href="#matcher" data-umami-event="investors-hero-cta">{T.cta}</a><a href={`/${lang}/intelligence/investors/map/`}>{T.globe} →</a><a href={`/${lang}/intelligence/deals/`}>{T.tracker} →</a></p>
   </section>
 
-  <div class="gb" data-gb>
-    <img class="gb-poster" src="/img/investor-globe.jpg" srcset="/img/investor-globe-800.jpg 800w, /img/investor-globe.jpg 1600w" sizes="(max-width: 899px) 100vw, 1120px" width="1600" height="900" alt="" loading="lazy" decoding="async" />
-    <div class="gb-live" data-gb-live aria-hidden="true"></div>
-    <a class="gb-txt" href={`/${lang}/intelligence/investors/map/`} data-umami-event="investors-globe"><span class="kick">{T.globeKick}</span><b>{T.globeH}</b><span class="gb-p">{T.globeP}</span><span class="gb-cta">{T.globe} →</span></a>
-    <p class="gb-hint" data-gb-hint hidden>{de ? 'Punkt antippen: springt zum Eintrag' : 'Tap a dot: jumps to the entry'}</p>
-  </div>
-
-  <!-- Investor Matcher -->
-  <section class="mt" id="matcher" aria-labelledby="mt-h">
-    <p class="kick">{T.mKick}</p>
-    <h2 id="mt-h" class="mt-h">{T.mH}</h2>
-    <p class="mt-sub">{T.mSub}</p>
-    <form class="mt-form" data-mt-form novalidate>
-      <label><span>{T.mCat}</span><span class="dt-sel"><select name="cat" required><option value="">…</option>{FOCUS.map((k) => <option value={k}>{FOCUS_LABEL[lang][k]}</option>)}</select></span></label>
-      <label><span>{T.mStage}</span><span class="dt-sel"><select name="stage" required><option value="">…</option>{STAGES.map((k) => <option value={k}>{STAGE_LABEL[lang][k]}</option>)}</select></span></label>
-      <label><span>{T.mCountry}</span><span class="dt-sel"><select name="country"><option value="">…</option>{pickGroups.map((g) => <optgroup label={rName(g.r)}>{g.list.map((x) => <option value={x.c}>{countryName(x.c, lang)}</option>)}</optgroup>)}</select></span></label>
-      <label><span>{T.mAmount}</span><span class="dt-sel"><select name="band"><option value="">…</option>{BAND_LABEL.map((b, k) => <option value={k}>{b}</option>)}</select></span></label>
-      <fieldset class="mt-want"><legend>{T.mWant}</legend>
-        {Object.entries(T.wants).map(([v, l]) => <label class="mt-pill"><input type="checkbox" name="want" value={v} checked={v === 'money'} /><span>{l}</span></label>)}
-      </fieldset>
-      <label class="mt-keys"><span>{T.mKeys}</span><input type="text" name="kw" placeholder={T.mKeysPh} autocomplete="off" /></label>
-      <div class="mt-btns"><button type="submit" class="ih-cta" data-umami-event="investor-match">{T.mBtn}</button><button type="reset" class="dt-clear" data-mt-reset hidden>{T.mReset}</button></div>
-    </form>
-    <div class="mt-out" data-mt-out hidden>
-      <p class="mt-count"><b data-mt-n>0</b> {T.mResults} · <span data-mt-top>{T.mTop}</span></p>
-      <p class="mt-summary" data-mt-summary hidden></p>
-      <ol class="mt-list" data-mt-list></ol>
-      <div class="mt-lock" data-mt-lock hidden>
-        <p class="mt-lock-n"><b data-mt-more>0</b> {T.mLocked}</p>
-        <InlineSignup lang={lang} source="investor-match" id="matcher-signup" head={T.mLockH} body={T.mLockP} role="brand" event="investor-match-signup" />
-      </div>
-      <p class="mt-none" data-mt-none hidden>{T.mNone}</p>
-      <p class="mt-ainote" data-mt-ainote hidden></p>
-    </div>
-    <div class="mt-pitch" data-pitch data-endpoint={PITCH.endpoint} data-max={PITCH.maxChars}>
-      <h3 class="mt-pitch-h">{T.pitchH}</h3>
-      <p class="mt-sub">{T.pitchP}</p>
-      {PITCH.endpoint ? (
-        <>
-          <textarea name="pitch" rows="4" maxlength={PITCH.maxChars} placeholder={T.pitchPh} aria-label={T.pitchH} data-pitch-text></textarea>
-          <div class="mt-btns"><button type="button" class="ih-cta" data-pitch-btn data-umami-event="investor-pitch">{T.pitchBtn}</button><span class="mt-pitch-n"><b data-pitch-count>0</b> / {PITCH.maxChars}</span><span class="mt-pitch-msg" data-pitch-msg aria-live="polite"></span></div>
-        </>
-      ) : <p class="mt-ai">{T.pitchSoon}</p>}
-    </div>
-  </section>
-
+  <div class="pg">
   <!-- Filter + list -->
   <div class="fx" id="all-investors">
     <div class="fx-bar">
@@ -219,7 +162,8 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
       <div class="fx-side-head"><b>{T.filters}</b><button type="button" class="fx-x" data-fx-close aria-label={T.close}>×</button></div>
       <div class="fx-side-body">
         <details class="fx-g" open><summary>{T.fType}</summary><div>
-          {types.map((t) => <label class="fx-opt"><input type="checkbox" name="type" value={t} /><span>{T.types[t]}</span><i data-n>{count((i) => i.type === t)}</i></label>)}
+          {types.map((t) => <label class="fx-opt" title={T.typeHelp[t]}><input type="checkbox" name="type" value={t} /><span>{T.types[t]}</span><i data-n>{count((i) => i.type === t)}</i></label>)}
+          <details class="fx-help"><summary>{T.typeLegend}</summary><ul>{types.map((t) => <li><b>{T.types[t]}:</b> {T.typeHelp[t]}</li>)}</ul></details>
         </div></details>
         <details class="fx-g" open><summary>{T.region}</summary><div>
           <label class="fx-opt"><input type="checkbox" name="region" value="europe-all" /><span>{T.eu}</span><i data-n>{count((i) => ['DACH', 'UK', 'Europe'].includes(i.region))}</i></label>
@@ -259,7 +203,7 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
           data-name={`${i.name} ${i.country} ${i.city || ''} ${i.focus} ${i.portfolio.map((r) => r[1]).join(' ')} ${i.deals.map((d) => d.entity).join(' ')}`.toLowerCase()}>
           <div class="iv-top">
             <h3 class="iv-name">{i.url ? <a href={i.url} rel="noopener" target="_blank">{i.name}</a> : i.name}</h3>
-            <span class={`iv-type iv-type-${i.type}`}>{TYPE_LABEL[lang][i.type]}</span>
+            <span class={`iv-type iv-type-${i.type}`} title={T.typeHelp[i.type]}>{TYPE_LABEL[lang][i.type]}</span>
           </div>
           {(i.country || i.stages.length || i.check || i.founded) && (
             <p class="iv-meta">
@@ -290,6 +234,56 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     </ul>
   </div>
 
+  <aside class="sb" aria-label={T.mKick}>
+  <a class="gb" href={`/${lang}/intelligence/investors/map/`} data-umami-event="investors-globe">
+    <img class="gb-poster" src="/img/investor-globe-800.jpg" srcset="/img/investor-globe-800.jpg 800w, /img/investor-globe.jpg 1600w" sizes="(max-width: 899px) 100vw, 300px" width="800" height="450" alt="" loading="lazy" decoding="async" />
+    <span class="gb-txt"><span class="kick">{T.globeKick}</span><b>{T.globeH}</b><span class="gb-p">{T.globeP}</span><span class="gb-cta">{T.globe} →</span></span>
+  </a>
+  <!-- Investor Matcher -->
+  <section class="mt" id="matcher" aria-labelledby="mt-h">
+    <p class="kick">{T.mKick}</p>
+    <h2 id="mt-h" class="mt-h">{T.mH}</h2>
+    <p class="mt-sub">{T.mSub}</p>
+    <form class="mt-form" data-mt-form novalidate>
+      <label><span>{T.mCat}</span><span class="dt-sel"><select name="cat" required><option value="">…</option>{FOCUS.map((k) => <option value={k}>{FOCUS_LABEL[lang][k]}</option>)}</select></span></label>
+      <label><span>{T.mStage}</span><span class="dt-sel"><select name="stage" required><option value="">…</option>{STAGES.map((k) => <option value={k}>{STAGE_LABEL[lang][k]}</option>)}</select></span></label>
+      <label><span>{T.mCountry}</span><span class="dt-sel"><select name="country"><option value="">…</option>{pickGroups.map((g) => <optgroup label={rName(g.r)}>{g.list.map((x) => <option value={x.c}>{countryName(x.c, lang)}</option>)}</optgroup>)}</select></span></label>
+      <label><span>{T.mAmount}</span><span class="dt-sel"><select name="band"><option value="">…</option>{BAND_LABEL.map((b, k) => <option value={k}>{b}</option>)}</select></span></label>
+      <fieldset class="mt-want"><legend>{T.mWant}</legend>
+        {Object.entries(T.wants).map(([v, l]) => <label class="mt-pill"><input type="checkbox" name="want" value={v} checked={v === 'money'} /><span>{l}</span></label>)}
+      </fieldset>
+      <label class="mt-keys"><span>{T.mKeys}</span><input type="text" name="kw" placeholder={T.mKeysPh} autocomplete="off" /></label>
+      <div class="mt-btns"><button type="submit" class="ih-cta" data-umami-event="investor-match">{T.mBtn}</button><button type="reset" class="dt-clear" data-mt-reset hidden>{T.mReset}</button></div>
+    </form>
+    <dialog class="mt-dlg" data-mt-dlg aria-labelledby="mt-dlg-h">
+      <div class="mt-dlg-head"><p class="kick" id="mt-dlg-h">{T.mKick}</p><button type="button" class="gl-x" data-mt-close aria-label={T.close}>×</button></div>
+    <div class="mt-out" data-mt-out hidden>
+      <p class="mt-count"><b data-mt-n>0</b> {T.mResults} · <span data-mt-top>{T.mTop}</span></p>
+      <p class="mt-summary" data-mt-summary hidden></p>
+      <ol class="mt-list" data-mt-list></ol>
+      <div class="mt-lock" data-mt-lock hidden>
+        <p class="mt-lock-n"><b data-mt-more>0</b> {T.mLocked}</p>
+        <InlineSignup lang={lang} source="investor-match" id="matcher-signup" head={T.mLockH} body={T.mLockP} role="brand" event="investor-match-signup" />
+      </div>
+      <p class="mt-none" data-mt-none hidden>{T.mNone}</p>
+      <p class="mt-ainote" data-mt-ainote hidden></p>
+    </div>
+    </dialog>
+    <div class="mt-pitch" data-pitch data-endpoint={PITCH.endpoint} data-max={PITCH.maxChars}>
+      <h3 class="mt-pitch-h">{T.pitchH}</h3>
+      <p class="mt-sub">{T.pitchP}</p>
+      {PITCH.endpoint ? (
+        <>
+          <textarea name="pitch" rows="4" maxlength={PITCH.maxChars} placeholder={T.pitchPh} aria-label={T.pitchH} data-pitch-text></textarea>
+          <div class="mt-btns"><button type="button" class="ih-cta" data-pitch-btn data-umami-event="investor-pitch">{T.pitchBtn}</button><span class="mt-pitch-n"><b data-pitch-count>0</b> / {PITCH.maxChars}</span><span class="mt-pitch-msg" data-pitch-msg aria-live="polite"></span></div>
+        </>
+      ) : <p class="mt-ai">{T.pitchSoon}</p>}
+    </div>
+  </section>
+
+  </aside>
+  </div>
+
   <InlineSignup lang={lang} source="investor-map" id="investors-signup" head={T.signupHead} body={T.signupBody} />
 
   <section class="note dt-method">
@@ -297,7 +291,6 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     <ul>{T.methodBody.map((l) => <li>{l}</li>)}</ul>
   </section>
   <script type="application/json" id="iv-data" set:html={JSON.stringify(data)} />
-  <script type="application/json" id="gb-data" set:html={JSON.stringify({ points: globe.points, arcs: globe.arcs, colors: GLOBE_COLORS })} />
   <script type="application/json" id="iv-i18n" set:html={JSON.stringify({ lang, pitch: { wait: T.pitchWait, err: T.pitchErr, quota: T.pitchQuota, short: T.pitchShort, locked: T.pitchLocked, btn: T.pitchBtn, aiRead: T.aiRead, aiTop: T.aiTop, aiNote: T.aiNote, top: T.mTop }, ev: T.ev, stage: STAGE_LABEL[lang], focus: FOCUS_LABEL[lang], type: TYPE_LABEL[lang], band: BAND_LABEL, region: REGIONS.map((r) => [r, rName(r)]), countries: Object.fromEntries(countries.map((c) => [c, countryName(c, lang)])), bands: BANDS.map((b) => [b[0], b[1] === Infinity ? null : b[1]]) })} />
 </Base>
 
@@ -310,13 +303,11 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   .ih-live .pulse{box-shadow:0 0 8px 2px var(--accent-line)}
   .ih-h1{font-size:64px;line-height:.95;margin:0;hyphens:manual}
   .ih-sub{margin:18px 0 0;font-size:17px;line-height:1.5;color:var(--g2);max-width:60ch}
-  .ih-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:24px 0 0}
-  .ih-kpis div{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:14px 14px 12px;min-width:0}
-  .ih-kpis b{display:block;font-size:46px;color:var(--chalk);white-space:nowrap}
-  .ih-kpis span{display:block;font-size:13px;color:var(--g2);margin-top:6px;line-height:1.3;overflow-wrap:anywhere}
-  .ih-acc{color:var(--accent)}
-  .ih-btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
-  .ih-cta,.ih-alt{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;border:0;font-family:inherit;cursor:pointer}
+  .ih-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0;font-size:14px}
+  .ih-links a{color:var(--chalk);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--edge)}
+  .ih-links a:hover{color:var(--accent)}
+  .ih-links a:first-child{color:var(--accent);font-weight:600;text-decoration:none}
+    .ih-cta,.ih-alt{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;border:0;font-family:inherit;cursor:pointer}
   .ih-cta{background:var(--accent);color:var(--accent-ink)}
   .ih-cta:hover{background:var(--chalk);color:var(--ink)}
   @media (prefers-color-scheme: light){:global(:root:not([data-theme="dark"])) .ih-cta:not(:hover){color:#fff}}
@@ -326,36 +317,30 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   @media(max-width:899px){
     .ih-h1{font-size:44px}
     .ih-sub{font-size:15px;margin-top:12px}
-    .ih-kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}
-    .ih-kpis div{padding:10px 12px}
-    .ih-kpis b{font-size:34px}
-    .ih-kpis span{margin-top:4px;font-size:12.5px}
     .ih-cta{width:100%}
     .ih-alt{width:100%;border:0;text-decoration:underline;text-underline-offset:4px;min-height:44px}
   }
 
-  /* globe teaser */
-  .gb{position:relative;display:block;margin:28px 0 0;border:1px solid var(--accent-line);border-radius:18px;overflow:hidden;background:#05070a;color:var(--chalk);aspect-ratio:16/7;min-height:240px;isolation:isolate}
-  .gb-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 40%;transition:opacity .8s ease;opacity:.95}
-  .gb.is-live .gb-poster{opacity:0}
-  .gb-live{position:absolute;inset:0;left:30%;z-index:0;cursor:grab}
-  .gb-live:active{cursor:grabbing}
-  .gb-live :global(.scene-tooltip){font-family:inherit!important;font-size:12.5px!important;color:var(--chalk)!important;background:rgba(8,11,9,.92)!important;border:1px solid var(--accent-line);border-radius:10px;padding:7px 10px!important}
-  .gb::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(5,7,10,.94) 0%,rgba(5,7,10,.7) 38%,rgba(5,7,10,0) 62%)}
-  .gb-txt{position:absolute;left:28px;bottom:26px;top:26px;z-index:2;display:flex;flex-direction:column;justify-content:center;gap:8px;width:min(440px,52%);text-decoration:none;color:inherit}
-  .gb-hint{position:absolute;right:16px;bottom:10px;z-index:2;margin:0;font-size:11.5px;color:var(--g2);text-shadow:0 1px 6px #000;pointer-events:none}
-  .gb-hint[hidden]{display:none}
-  .gb-txt b{font-family:var(--display);font-size:38px;line-height:.98;font-weight:400;letter-spacing:.01em}
-  .gb-p{font-size:14px;line-height:1.5;color:var(--g1)}
-  .gb-cta{display:inline-flex;align-items:center;align-self:flex-start;min-height:40px;padding:0 16px;margin-top:6px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:14px;font-weight:600}
-  .gb-txt:hover .gb-cta{background:var(--chalk);color:var(--ink)}
-  @media(max-width:899px){.gb{aspect-ratio:auto;min-height:0}.gb-poster{position:relative;aspect-ratio:16/9;height:auto}.gb-live{display:none}.gb::after{background:linear-gradient(180deg,rgba(5,7,10,0) 30%,rgba(5,7,10,.95) 60%)}.gb-txt{position:relative;inset:auto;padding:0 16px 18px;margin-top:-70px;width:auto}.gb-txt b{font-size:28px}}
+  /* page grid: filter + list, sidebar with the globe card and the matcher */
+  .pg{display:grid;grid-template-columns:minmax(0,1fr) 300px;column-gap:24px;align-items:start;margin:26px 0 0}
+  .sb{display:grid;gap:14px;margin-top:12px}
+  @media(max-width:899px){.pg{grid-template-columns:1fr}.sb{margin-top:24px}}
+
+  /* globe card */
+  .gb{display:block;border:1px solid var(--accent-line);border-radius:16px;overflow:hidden;background:#05070a;color:var(--chalk);text-decoration:none}
+  .gb-poster{display:block;width:100%;aspect-ratio:16/9;height:auto;object-fit:cover;transition:transform .6s ease}
+  .gb:hover .gb-poster{transform:scale(1.04)}
+  .gb-txt{display:flex;flex-direction:column;gap:6px;padding:14px 16px 16px}
+  .gb-txt b{font-family:var(--display);font-size:24px;line-height:1;font-weight:400;letter-spacing:.01em}
+  .gb-p{font-size:12.5px;line-height:1.5;color:var(--g2)}
+  .gb-cta{display:inline-flex;align-items:center;align-self:flex-start;min-height:36px;padding:0 14px;margin-top:4px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-size:13px;font-weight:600}
+  .gb:hover .gb-cta{background:var(--chalk);color:var(--ink)}
 
   /* matcher */
-  .mt{margin:36px 0 0;border:1px solid var(--accent-line);border-radius:18px;background:var(--panel);padding:24px;scroll-margin-top:16px}
-  .mt-h{margin:6px 0 0;font-size:30px;line-height:1.1}
-  .mt-sub{margin:10px 0 18px;color:var(--g2);line-height:1.5;max-width:64ch}
-  .mt-form{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 14px}
+  .mt{margin:0;border:1px solid var(--accent-line);border-radius:16px;background:var(--panel);padding:18px 16px;scroll-margin-top:16px}
+  .mt-h{margin:6px 0 0;font-size:22px;line-height:1.1}
+  .mt-sub{margin:8px 0 14px;color:var(--g2);line-height:1.5;font-size:13px}
+  .mt-form{display:grid;grid-template-columns:1fr;gap:10px}
   .mt-form>label{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:12.5px;font-weight:600;color:var(--g1)}
   .mt-form select,.mt-form input[type=text]{width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--ink);color:var(--chalk);border-radius:10px;padding:10px 11px;font:inherit;font-size:14px;min-height:44px}
   .mt-form select{appearance:none;-webkit-appearance:none;padding-right:34px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -368,7 +353,13 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   .mt-pill:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
   .mt-keys{grid-column:1/-1}
   .mt-btns{grid-column:1/-1;display:flex;align-items:center;gap:16px;margin-top:4px}
-  .mt-out{margin:22px 0 0;border-top:1px solid var(--line);padding-top:18px}
+  .mt-dlg{width:min(800px,calc(100vw - 32px));max-height:min(90vh,calc(100% - 32px));padding:0;border:1px solid var(--accent-line);border-radius:18px;background:var(--panel);color:inherit;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+  .mt-dlg::backdrop{background:rgba(0,0,0,.62);backdrop-filter:blur(4px)}
+  .mt-dlg-head{position:sticky;top:0;z-index:1;display:flex;align-items:center;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--line);background:var(--panel)}
+  .mt-dlg-head .kick{margin:0}
+  .gl-x{width:32px;height:32px;border:0;border-radius:999px;background:rgba(255,255,255,.08);color:var(--chalk);font-size:20px;line-height:1;cursor:pointer}
+  .gl-x:hover{background:rgba(255,255,255,.16)}
+  .mt-out{margin:0;padding:16px 18px 20px}
   .mt-out[hidden]{display:none}
   .mt-count{margin:0 0 12px;font-size:13px;color:var(--g2)}
   .mt-count b{color:var(--chalk);font-weight:700}
@@ -417,10 +408,8 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   .mt-ainote{margin:12px 0 0;font-size:12px;color:var(--g3)}
   .mt-ainote[hidden]{display:none}
   @media(max-width:899px){
-    .mt{padding:18px 16px;border-radius:14px;margin-top:28px}
-    .mt-h{font-size:24px}
-    .mt-sub{font-size:14px}
     .mt-form{grid-template-columns:1fr 1fr;gap:10px}
+    .mt-dlg{width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0;border:0}
     .mt-form select,.mt-form input[type=text]{min-height:48px;font-size:16px}
     .mt-btns{flex-direction:column;align-items:stretch}
     .mt-btns .ih-cta{width:100%}
@@ -431,7 +420,7 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   }
 
   /* filter layout: sidebar on desktop, sheet on phones */
-  .fx{position:relative;display:grid;grid-template-columns:250px minmax(0,1fr);grid-template-areas:"bar bar" "count count" "chips chips" "side list";column-gap:24px;margin:34px 0 0;scroll-margin-top:16px}
+  .fx{position:relative;display:grid;grid-template-columns:220px minmax(0,1fr);grid-template-areas:"bar bar" "count count" "chips chips" "side list";column-gap:20px;margin:0;scroll-margin-top:16px}
   .fx-bar{grid-area:bar;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
   .fx-open{display:none}
   .dt-q,.dt-sel{position:relative;display:block;min-width:0}
@@ -469,12 +458,17 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
   .fx-opt i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--g3);min-width:2ch;text-align:right}
   .fx-opt.is-zero{color:var(--g3)}
   .fx-opt.is-zero i{color:var(--g4)}
+  .fx-help{margin:4px 0 0}
+  .fx-help summary{cursor:pointer;list-style:none;font-size:12px;color:var(--g2);text-decoration:underline;text-underline-offset:3px;padding:4px}
+  .fx-help summary::-webkit-details-marker{display:none}
+  .fx-help summary:hover{color:var(--chalk)}
+  .fx-help ul{margin:6px 0 4px;padding:0 4px;list-style:none;display:grid;gap:7px;font-size:12px;line-height:1.45;color:var(--g2)}
+  .fx-help li b{color:var(--g1);font-weight:600}
   .fx-more{border:0;background:none;padding:6px 4px;margin:2px 0 0;font:inherit;font-size:12.5px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer;justify-self:start}
   .fx-more:hover{color:var(--accent)}
-  .iv-list{grid-area:list;list-style:none;margin:12px 0 24px;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-content:start}
-  @media(max-width:1199px){.iv-list{grid-template-columns:1fr}}
+  .iv-list{grid-area:list;list-style:none;margin:12px 0 24px;padding:0;display:grid;grid-template-columns:1fr;gap:12px;align-content:start}
   @media(max-width:899px){
-    .fx{grid-template-columns:1fr;grid-template-areas:"bar" "count" "chips" "list";margin-top:28px}
+    .fx{grid-template-columns:1fr;grid-template-areas:"bar" "count" "chips" "list";margin-top:0}
     .fx-bar{grid-template-columns:1fr auto}
     .dt-q{grid-column:1/-1}
     .fx-sort{grid-column:1}
@@ -726,6 +720,9 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
 
   const form = document.querySelector<HTMLFormElement>('[data-mt-form]')!;
   const out = document.querySelector<HTMLElement>('[data-mt-out]')!;
+  const dlg = document.querySelector<HTMLDialogElement>('[data-mt-dlg]')!;
+  dlg.querySelector('[data-mt-close]')!.addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
   const ol = document.querySelector<HTMLOListElement>('[data-mt-list]')!;
   const lock = document.querySelector<HTMLElement>('[data-mt-lock]')!;
   const mnone = document.querySelector<HTMLElement>('[data-mt-none]')!;
@@ -766,15 +763,16 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     const more = Math.max(0, ranked.length - 5);
     lock.hidden = unlocked() || !!ai || more === 0; document.querySelector('[data-mt-more]')!.textContent = String(more);
     mnone.hidden = ranked.length > 0; out.hidden = false; reset.hidden = false;
-    out.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (!dlg.open) dlg.showModal(); dlg.scrollTop = 0;
   }
   const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
   form.addEventListener('submit', (e) => { e.preventDefault(); run(); });
-  form.addEventListener('reset', () => { setTimeout(() => { out.hidden = true; reset.hidden = true; ol.replaceChildren(); }, 0); });
+  form.addEventListener('reset', () => { setTimeout(() => { out.hidden = true; reset.hidden = true; ol.replaceChildren(); if (dlg.open) dlg.close(); }, 0); });
   // results link to cards; make sure the card is visible (clear the filter if it hides it)
   ol.addEventListener('click', (e) => {
     const a = (e.target as HTMLElement).closest<HTMLAnchorElement>('a[href^="#"]'); if (!a) return;
     const t = document.querySelector<HTMLElement>(a.getAttribute('href')!); if (t?.classList.contains('iv') && t.hidden) { boxes.forEach((b) => (b.checked = false)); q.value = ''; apply(); }
+    if (dlg.open) dlg.close();
   });
 
   // ---------- AI pitch read: POST the pitch to the Worker, merge its reasons with the rule-based evidence ----------
@@ -808,27 +806,5 @@ const data = all.map((i) => ({ id: i.id, n: i.name, t: i.type, c: i.country, cc:
     });
   })();
 
-  // ---------- live hero globe (desktop only, loads globe.gl when the banner scrolls into view) ----------
-  (() => {
-    const gb = document.querySelector<HTMLElement>('[data-gb]'); const host = document.querySelector<HTMLElement>('[data-gb-live]');
-    if (!gb || !host || innerWidth < 900) return;
-    const conn = (navigator as any).connection; if (conn?.saveData || /2g/.test(conn?.effectiveType || '')) return;
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const io = new IntersectionObserver(async (entries) => {
-      if (!entries.some((e) => e.isIntersecting)) return;
-      io.disconnect();
-      const mod = await import('../../../lib/globe-client');
-      if (!mod.hasWebGL()) return;
-      const G = JSON.parse(document.getElementById('gb-data')!.textContent || '{}');
-      const g = mod.mountGlobe(host, { colors: G.colors, reduce, compact: true, home: { lat: 40, lng: 10, altitude: 1.55 },
-        label: (p) => `<b>${esc(p.n)}</b>`,
-        onSelect: (p) => { const card = document.getElementById(p.id); if (!card) return; if (card.hidden) { boxes.forEach((b) => (b.checked = false)); q.value = ''; apply(); } history.replaceState(null, '', '#' + p.id); card.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); card.classList.add('is-hit'); setTimeout(() => card.classList.remove('is-hit'), 2200); } });
-      g.setData(G.points, G.arcs);
-      gb.classList.add('is-live'); host.removeAttribute('aria-hidden');
-      const hint = document.querySelector<HTMLElement>('[data-gb-hint]'); if (hint) hint.hidden = false;
-      // stop spinning while the banner is off screen
-      new IntersectionObserver((es) => g.spin(es.some((e) => e.isIntersecting) && !reduce), { threshold: 0.05 }).observe(gb);
-    }, { rootMargin: '200px' });
-    io.observe(gb);
-  })();
+
 </script>
