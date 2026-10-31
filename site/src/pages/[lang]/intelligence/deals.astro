@@ -125,7 +125,8 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
     </>
   ) : (
     <>
-      <!-- Hero (design "D", Oct 2026). Never add a chart of deal value by month up here:
+      <!-- Hero (design "D", Oct 2026, slimmed 31 Oct: the list comes first, KPIs and the latest-deals
+           panel sit in the sidebar). The value-by-month chart stays below the filters, never in the hero:
            one big month next to a quiet one reads as "the money is drying up". -->
       <DealGlyphs flags={flagCodes} />
       <section class="dh">
@@ -134,37 +135,12 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
           <p class="dh-live"><span class="pulse" aria-hidden="true"></span>{T.updatedOn} {dayMonth(generatedAt)} · {T.sinceShort} {dayMonth(first)}</p>
           <h1 class="dh-h1">{T.heroH1}</h1>
           <p class="dh-sub">{T.sub}</p>
-          <div class="dh-kpis">
-            <div title={T.valueNote}><b class="dnum dh-acc">{usd(disclosed)}</b><span>{T.value} <span class="dh-approx">≈ USD</span><span class="dh-sr"> ({T.valueNote})</span></span></div>
-            <div><b class="dnum">{deals.length.toLocaleString(loc)}</b><span>{T.dealsShort}</span></div>
-            <div><b class="dnum">{euShare}<small class="dh-pct">%</small></b><span>{T.eu}</span></div>
-            <div><b class="dnum">{closures.length}</b><span>{T.closuresShort}</span></div>
-          </div>
-          <div class="dh-btns">
-            <a class="dh-cta" href="#deals-signup" data-umami-event="deals-hero-cta" data-hero-cta>{T.cta}</a>
-            <a class="dh-csv" href="/data/deals.csv" download data-umami-event="deals-csv" data-umami-event-where="hero">{T.csv}</a>
-          </div>
+          <p class="dh-links"><a href="#deals-signup" data-umami-event="deals-hero-cta" data-hero-cta>{T.cta}</a><a href={`/${lang}/intelligence/investors/`}>{T.map}</a><a href="/data/deals.csv" download data-umami-event="deals-csv" data-umami-event-where="hero">{T.csv}</a></p>
         </div>
-        <aside class="dh-panel" aria-labelledby="dh-latest">
-          <h2 class="plain dh-ph" id="dh-latest">{T.latest}</h2>
-          <ul class="dh-rows">
-            {latest6.map((d) => (
-              <li>
-                <span class="dh-date">{dayMonth(d.date)}</span>
-                <span class="dh-who"><b>{d.entity}{d.country && <Flag country={d.country} label={countryName(d.country, lang)} />}</b><small><DealIcon kind={d.kind} />{T.kinds[d.kind] || d.kind} · {cName(d.category)}</small></span>
-                {d.amount
-                  ? <span class={`dnum dh-amt${d.kind === 'raise' ? ' dh-acc' : ''}`}>{d.amount}</span>
-                  : <span class="dh-und">{T.undisclosed}</span>}
-              </li>
-            ))}
-          </ul>
-          <a class="dh-all" href="#all-deals">{T.seeAll(all.length)}</a>
-          <p class="dh-pfoot">{T.panelFoot}</p>
-        </aside>
-        <a class="dh-csv-m" href="/data/deals.csv" download data-umami-event="deals-csv" data-umami-event-where="hero-phone">{T.csv}</a>
       </section>
 
-      {charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} total={charts.length} />)}
+      <div class="pg">
+      <div class="pg-main">
 
       <section class="dt-filters" id="all-deals" aria-label={T.region}>
         <div class="dt-chips" role="group" aria-label={T.region}>
@@ -181,8 +157,9 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
           <span class="dt-sel"><select aria-label={T.cat} data-cat><option value="">{T.cat}: {T.all}</option>{cats.map((c) => <option value={c}>{cName(c)}</option>)}</select></span>
         </div>
         <p class="dt-count"><span><b data-shown>{all.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
-        <a class="dt-map" href={`/${lang}/intelligence/investors/`}><b>{T.map}</b><span>{T.mapSub}</span></a>
       </section>
+
+      <div class="dt-charts">{charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} total={charts.length} />)}</div>
 
       <div class="dt-wrap">
         <!-- The ARIA roles keep this a table for screen readers on phones, where the CSS
@@ -207,6 +184,35 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
         </table>
         <p class="dt-none" data-none hidden>{T.none}<button type="button" class="dt-clear" data-clear>{T.clear}</button></p>
       </div>
+      </div>
+
+      <aside class="sb" aria-label={T.latest}>
+        <div class="dh-kpis">
+          <div title={T.valueNote}><b class="dnum dh-acc">{usd(disclosed)}</b><span>{T.value} <span class="dh-approx">≈ USD</span><span class="dh-sr"> ({T.valueNote})</span></span></div>
+          <div><b class="dnum">{deals.length.toLocaleString(loc)}</b><span>{T.dealsShort}</span></div>
+          <div><b class="dnum">{euShare}<small class="dh-pct">%</small></b><span>{T.eu}</span></div>
+          <div><b class="dnum">{closures.length}</b><span>{T.closuresShort}</span></div>
+        </div>
+        <aside class="dh-panel" aria-labelledby="dh-latest">
+          <h2 class="plain dh-ph" id="dh-latest">{T.latest}</h2>
+          <ul class="dh-rows">
+            {latest6.map((d) => (
+              <li>
+                <span class="dh-date">{dayMonth(d.date)}</span>
+                <span class="dh-who"><b>{d.entity}{d.country && <Flag country={d.country} label={countryName(d.country, lang)} />}</b><small><DealIcon kind={d.kind} />{T.kinds[d.kind] || d.kind} · {cName(d.category)}</small></span>
+                {d.amount
+                  ? <span class={`dnum dh-amt${d.kind === 'raise' ? ' dh-acc' : ''}`}>{d.amount}</span>
+                  : <span class="dh-und">{T.undisclosed}</span>}
+              </li>
+            ))}
+          </ul>
+          <a class="dh-all" href="#all-deals">{T.seeAll(all.length)}</a>
+          <p class="dh-pfoot">{T.panelFoot}</p>
+        </aside>
+        <a class="dt-map" href={`/${lang}/intelligence/investors/`}><b>{T.map}</b><span>{T.mapSub}</span></a>
+        <a class="dh-csv" href="/data/deals.csv" download data-umami-event="deals-csv" data-umami-event-where="sidebar">{T.csv}</a>
+      </aside>
+      </div>
     </>
   )}
 
@@ -222,7 +228,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
 
 <style>
   /* hero, design "D" (Oct 2026) */
-  .dh{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:40px;align-items:start;margin:0 0 8px}
+  .dh{margin:0 0 8px;max-width:760px}
   .dh-crumb{margin:0 0 14px}
   .dh-crumb a{color:inherit;text-decoration:none}
   .dh-crumb a:hover{color:var(--chalk)}
@@ -238,6 +244,33 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   .dh-pct{font-size:.62em;margin-left:1px}
   .dh-kpis .dh-approx{display:inline;font-size:inherit;margin:0;color:var(--g2)}
   .dh-kpis .dh-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .dh-links{display:flex;flex-wrap:wrap;gap:6px 18px;margin:14px 0 0;font-size:14px}
+  .dh-links a{color:var(--chalk);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--edge)}
+  .dh-links a:hover{color:var(--accent)}
+  .dh-links a:first-child{color:var(--accent);font-weight:600;text-decoration:none}
+  /* page grid: filters, charts and the table first; KPIs, latest deals and links in a sidebar */
+  .pg{display:grid;grid-template-columns:minmax(0,1fr) 260px;column-gap:20px;align-items:start;margin:22px 0 0}
+  .pg-main{min-width:0}
+  .sb{display:grid;gap:12px}
+  .sb .dh-kpis{grid-template-columns:1fr 1fr;gap:8px;margin:0}
+  .sb .dh-kpis div{padding:10px 12px 9px}
+  .sb .dh-kpis b{font-size:30px}
+  .sb .dh-kpis span{font-size:12px;margin-top:3px}
+  .sb .dh-panel{padding:14px 14px 10px;border-radius:14px}
+  .sb .dh-rows li{grid-template-columns:40px minmax(0,1fr) auto;gap:8px;padding:9px 0}
+  .sb .dh-date{font-size:12px}
+  .sb .dh-who b{font-size:13.5px}
+  .sb .dh-who small{font-size:11.5px}
+  .sb .dh-amt{font-size:18px}
+  .sb .dh-all{min-height:40px;font-size:13px}
+  .sb .dh-pfoot{font-size:11.5px}
+  .sb .dt-map{margin:0}
+  .sb .dh-csv{width:100%;box-sizing:border-box}
+  .dt-charts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0 0}
+  .dt-charts :global(.dc){margin:0;padding:16px 16px 12px;border-radius:14px}
+  .dt-charts :global(.dc-d){display:none}
+  .dt-charts :global(.dc-m){display:block}
+  @media(max-width:899px){.pg{grid-template-columns:1fr}.sb{margin-top:24px}.dt-charts{grid-template-columns:1fr}}
   .dh-btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
   .dh-cta,.dh-csv{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap}
   .dh-cta{background:var(--accent);color:var(--accent-ink)}
@@ -280,7 +313,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
     .dh-panel{margin-top:28px}
     .dh-csv-m{display:flex;align-items:center;justify-content:center;min-height:44px;margin:8px auto 0;font-size:14px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:4px}
   }
-  .dt-filters{margin:26px 0 10px}
+  .dt-filters{margin:0 0 10px}
   .dt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
   .dt-chips button{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--panel);color:var(--g1);border-radius:999px;padding:7px 13px;font:inherit;font-size:13px;cursor:pointer}
   .dt-chips button :global(.fl){margin-right:3px}
@@ -303,7 +336,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   .dt-clear{border:0;background:none;padding:8px 0;margin:-8px 0;font:inherit;font-size:12px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
   .dt-clear:hover{color:var(--accent)}
   .dt-clear[hidden]{display:none}
-  .dt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin-bottom:24px}
+  .dt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin:14px 0 24px}
   .dt{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
   .dt th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
   .dt td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--g1)}

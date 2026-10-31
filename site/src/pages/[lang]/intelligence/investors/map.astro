@@ -71,27 +71,27 @@ const COLORS = GLOBE_COLORS;
     </div>
   </section>
 
+  <div class="gl-ctl" data-ctl>
+    <div class="gl-chips" role="group" aria-label="Type">
+      <button type="button" class="on" data-type="" aria-pressed="true">{T.all}</button>
+      {types.map((t) => <button type="button" data-type={t} aria-pressed="false" title={T.help[t]}><i style={`background:${COLORS[t]}`}></i>{T.types[t]}</button>)}
+      <details class="gl-legend"><summary>{T.typeLegend}</summary><ul>{types.map((t) => <li><i style={`background:${COLORS[t]}`}></i><b>{T.types[t]}:</b> {T.help[t]}</li>)}</ul></details>
+    </div>
+    <div class="gl-row">
+      <label class="gl-q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg><input type="search" list="gl-names" placeholder={T.search} aria-label={T.search} autocomplete="off" data-q /></label>
+      <datalist id="gl-names">{points.map((p) => <option value={p.n} />)}</datalist>
+      <span class="dt-sel"><select aria-label={T.region} data-region><option value="">{T.region}: {T.all}</option><option value="europe-all">{de ? 'Europa & DACH' : 'Europe & DACH'}</option>{REGIONS.map((r) => <option value={r}>{rName(r)}</option>)}</select></span>
+      <span class="dt-sel"><select aria-label={T.focus} data-focus><option value="">{T.focus}: {T.all}</option>{FOCUS.map((f) => <option value={f}>{FOCUS_LABEL[lang][f]}</option>)}</select></span>
+      <div class="gl-tog">
+        <button type="button" class="on" data-arcs data-mode="traffic" data-labels={JSON.stringify(T.arcsT)}>{T.arcsT.traffic}</button>
+        <button type="button" class="on" data-rotate aria-pressed="true">{T.rotate}</button>
+        <button type="button" data-tour aria-pressed="false" data-on={T.stop} data-off={T.tour}>{T.tour}</button>
+      </div>
+    </div>
+  </div>
   <div class="gl" data-gl>
     <div class="gl-stars" aria-hidden="true"></div>
     <div class="gl-canvas" data-canvas aria-label={T.title} role="img"></div>
-    <div class="gl-ctl" data-ctl>
-      <div class="gl-chips" role="group" aria-label="Type">
-        <button type="button" class="on" data-type="" aria-pressed="true">{T.all}</button>
-        {types.map((t) => <button type="button" data-type={t} aria-pressed="false" title={T.help[t]}><i style={`background:${COLORS[t]}`}></i>{T.types[t]}</button>)}
-        <details class="gl-legend"><summary>{T.typeLegend}</summary><ul>{types.map((t) => <li><i style={`background:${COLORS[t]}`}></i><b>{T.types[t]}:</b> {T.help[t]}</li>)}</ul></details>
-      </div>
-      <div class="gl-row">
-        <label class="gl-q"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg><input type="search" list="gl-names" placeholder={T.search} aria-label={T.search} autocomplete="off" data-q /></label>
-        <datalist id="gl-names">{points.map((p) => <option value={p.n} />)}</datalist>
-        <span class="dt-sel"><select aria-label={T.region} data-region><option value="">{T.region}: {T.all}</option><option value="europe-all">{de ? 'Europa & DACH' : 'Europe & DACH'}</option>{REGIONS.map((r) => <option value={r}>{rName(r)}</option>)}</select></span>
-        <span class="dt-sel"><select aria-label={T.focus} data-focus><option value="">{T.focus}: {T.all}</option>{FOCUS.map((f) => <option value={f}>{FOCUS_LABEL[lang][f]}</option>)}</select></span>
-        <div class="gl-tog">
-          <button type="button" class="on" data-arcs data-mode="traffic" data-labels={JSON.stringify(T.arcsT)}>{T.arcsT.traffic}</button>
-          <button type="button" class="on" data-rotate aria-pressed="true">{T.rotate}</button>
-          <button type="button" data-tour aria-pressed="false" data-on={T.stop} data-off={T.tour}>{T.tour}</button>
-        </div>
-      </div>
-    </div>
     <p class="gl-hint" data-hint>{T.hint}</p>
     <div class="gl-tour" data-tourname hidden><p class="gl-tourname" data-tour-title></p><p class="gl-tour-kpis" data-tour-kpis></p><p class="gl-tour-line" data-tour-top></p><p class="gl-tour-line" data-tour-focus></p></div>
     <aside class="gl-panel" data-panel hidden aria-live="polite">
@@ -112,7 +112,7 @@ const COLORS = GLOBE_COLORS;
   .gh-crumb a:hover{color:var(--chalk)}
   .gh-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px 32px;align-items:end}
   .gh-h1{font-size:56px;line-height:.95;margin:0}
-  .gh-sub{margin:12px 0 0;font-size:15px;line-height:1.5;color:var(--g2);max-width:64ch}
+  .gh-sub{margin:12px 0 0;font-size:15px;line-height:1.5;color:var(--g2);max-width:72ch}
   .gh-kpis{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,auto);gap:18px}
   .gh-kpis li{display:flex;flex-direction:column;min-width:0}
   .gh-kpis b{font-size:34px;color:var(--chalk);line-height:1}
@@ -128,7 +128,7 @@ const COLORS = GLOBE_COLORS;
   }
 
   /* full-bleed stage */
-  .gl{position:relative;width:100vw;margin-left:calc(50% - 50vw);height:min(82vh,900px);min-height:520px;overflow:hidden;background:#05070a;border-top:1px solid var(--line);border-bottom:1px solid var(--line);isolation:isolate}
+  .gl{position:relative;width:100%;height:min(78vh,820px);min-height:520px;overflow:hidden;background:#05070a;border:1px solid var(--line);border-radius:18px;isolation:isolate}
   .gl-stars{position:absolute;inset:0;z-index:0;background:
     radial-gradient(1px 1px at 12% 22%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 33% 71%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 57% 14%,#dfe8ff 50%,transparent 51%),radial-gradient(1px 1px at 78% 48%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 91% 83%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 5% 88%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 66% 92%,#dfe8ff 50%,transparent 51%),radial-gradient(1px 1px at 44% 36%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 22% 55%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 84% 18%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 70% 66%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 15% 40%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 50% 80%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 96% 35%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 38% 6%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 61% 44%,#fff 50%,transparent 51%),radial-gradient(1px 1px at 27% 93%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 8% 62%,#dfe8ff 50%,transparent 51%),
     radial-gradient(ellipse at 50% 120%,rgba(127,181,140,.18),transparent 55%),#05070a;opacity:.9}
@@ -139,8 +139,7 @@ const COLORS = GLOBE_COLORS;
   .gl-canvas :global(.scene-tooltip){font-family:inherit!important;font-size:12.5px!important;color:var(--chalk)!important;background:rgba(8,11,9,.92)!important;border:1px solid var(--accent-line);border-radius:10px;padding:8px 11px!important;box-shadow:0 8px 30px rgba(0,0,0,.5);max-width:260px;line-height:1.4}
   .gl-canvas :global(.scene-tooltip b){display:block;font-size:13.5px;margin-bottom:2px}
   .gl-canvas :global(.scene-tooltip small){color:var(--g2)}
-  .gl-ctl{position:absolute;left:0;right:0;top:0;z-index:3;padding:14px 24px 0;pointer-events:none}
-  .gl-ctl>*{pointer-events:auto}
+  .gl-ctl{position:relative;z-index:3;padding:0 0 12px}
   .gl-chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
   .gl-chips button,.gl-tog button{display:inline-flex;align-items:center;gap:7px;min-height:34px;padding:0 12px;border:1px solid rgba(255,255,255,.14);background:rgba(8,11,9,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--g1);border-radius:999px;font:inherit;font-size:12.5px;cursor:pointer}
   .gl-chips button i{width:8px;height:8px;border-radius:50%;box-shadow:0 0 8px currentColor}
@@ -172,7 +171,7 @@ const COLORS = GLOBE_COLORS;
   .gl-tour-line{margin:4px 0 0;font-size:12.5px;color:var(--g2);line-height:1.45}
   .gl-tour-line b{font-weight:600;color:var(--g1)}
   @keyframes gl-pop{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
-  .gl-panel{position:absolute;right:24px;top:110px;bottom:24px;z-index:4;width:min(380px,calc(100% - 48px));overflow:auto;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(8,11,9,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:18px 18px 16px;box-shadow:0 20px 60px rgba(0,0,0,.55);animation:gl-in .25s ease}
+  .gl-panel{position:absolute;right:16px;top:16px;bottom:16px;z-index:4;width:min(380px,calc(100% - 48px));overflow:auto;border:1px solid rgba(255,255,255,.14);border-radius:16px;background:rgba(8,11,9,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);padding:18px 18px 16px;box-shadow:0 20px 60px rgba(0,0,0,.55);animation:gl-in .25s ease}
   .gl-panel[hidden]{display:none}
   @keyframes gl-in{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
   .gl-x{position:absolute;right:10px;top:10px;width:32px;height:32px;border:0;border-radius:999px;background:rgba(255,255,255,.08);color:var(--chalk);font-size:20px;line-height:1;cursor:pointer}
@@ -205,13 +204,13 @@ const COLORS = GLOBE_COLORS;
   .gl-foot{margin:12px 0 0;font-size:12.5px;color:var(--g3)}
   .gl-foot a{color:var(--g1)}
   @media(max-width:899px){
-    .gl{height:calc(100svh - 56px);min-height:560px;margin-left:-24px;width:calc(100% + 48px)}
-    .gl-ctl{padding:10px 12px 0}
-    .gl-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -12px 8px;padding:0 12px}
+    .gl{height:calc(100svh - 56px);min-height:520px;margin-left:-24px;width:calc(100% + 48px);border-radius:0;border-left:0;border-right:0}
+    .gl-ctl{padding:0 0 10px}
+    .gl-chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -24px 8px;padding:0 24px}
     .gl-chips::-webkit-scrollbar{display:none}
     .gl-chips button{flex:0 0 auto;min-height:38px}
     .gl-legend{flex:0 0 auto}
-    .gl-legend ul{position:fixed;left:12px;right:12px;top:auto;width:auto}
+    .gl-legend ul{position:fixed;left:12px;right:12px;top:auto;width:auto;z-index:70}
     .gl-row{grid-template-columns:1fr 1fr}
     .gl-q{grid-column:1/-1}
     .gl-row input,.gl-row select{min-height:42px;font-size:16px}
