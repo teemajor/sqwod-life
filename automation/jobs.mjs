@@ -48,7 +48,7 @@ const DAY = 86400000;
 const iso = (t = Date.now()) => new Date(t).toISOString().slice(0, 10);
 
 export const REGIONS = ['Berlin', 'Hamburg', 'München', 'Köln', 'Frankfurt', 'Other DE', 'Remote DE'];
-export const TYPES = ['trainer', 'coach', 'studio-manager', 'sales', 'marketing', 'product-tech', 'ops', 'other'];
+export const TYPES = ['trainer', 'coach', 'studio-manager', 'sales', 'marketing', 'product-tech', 'ops', 'apprenticeship', 'other'];
 export const EMPLOYMENT = ['full-time', 'part-time', 'freelance', 'mini-job', 'unknown'];
 
 /* ------------------------------------------------------------------ pay parsing -- */
@@ -298,6 +298,30 @@ async function fromBA(src) {
   return out;
 }
 
+/** Adzuna's salary_min/max carry no unit: they are usually yearly, but some ads come through as
+ *  the hourly or monthly figure. The period is read from the size: up to 150 € hourly, up to
+ *  6,000 € monthly (fitness pay above that per month is rare, while a part-time or mini-job
+ *  year, 6,456 € and up, sits above it), else yearly. Checked on the first 17 rows (31 Oct 2026). */
+export function adzunaPay(min, max) {
+  const lo = min || null, hi = max || null, ref = hi ?? lo;
+  const payPeriod = ref <= 150 ? 'hour' : ref <= 6000 ? 'month' : 'year';
+  const unit = { hour: 'Std.', month: 'Monat', year: 'Jahr' }[payPeriod];
+  const fmt = (n) => `${Number(n).toLocaleString('de-DE', { maximumFractionDigits: 2 })} €`;
+  const payText = `${lo && hi && lo !== hi ? `${fmt(lo)} – ${fmt(hi)}` : fmt(hi ?? lo)} / ${unit} (Adzuna)`;
+  return { payText, payMin: lo, payMax: hi, payPeriod, payCurrency: 'EUR' };
+}
+/** Adzuna's area runs [country, state, (district or city), (city or neighbourhood)…]: Berlin
+ *  and Hamburg roles come as ["Deutschland", "Berlin", "Schöneberg"]. The region is read from
+ *  the whole list; the city shown is the big city when there is one, else the most specific
+ *  place, without "(Kreis)". */
+export function adzunaPlace(loc = {}) {
+  const area = (loc.area || []).filter(Boolean);
+  const region = regionFor(`${area.join(' ')} ${loc.display_name || ''}`, { country: 'DE' });
+  const big = { Berlin: 'Berlin', Hamburg: 'Hamburg', München: 'München', Köln: 'Köln', Frankfurt: 'Frankfurt am Main' }[region];
+  const last = area.length > 1 ? area[area.length - 1] : (loc.display_name || '').split(',')[0];
+  return { region, city: big || String(last || '').replace(/\s*\(Kreis\)$/, '').trim() || null };
+}
+
 async function fromAdzuna(src) {
   const id = process.env.ADZUNA_APP_ID, key = process.env.ADZUNA_APP_KEY;
   if (!id || !key) { runLog.notes.push('Adzuna skipped: ADZUNA_APP_ID / ADZUNA_APP_KEY not set.'); return null; }
@@ -310,13 +334,10 @@ async function fromAdzuna(src) {
       for (const r of list) {
         // Adzuna estimates pay when the ad has none (salary_is_predicted "1"): that is not listed pay.
         const listed = String(r.salary_is_predicted) === '0' && (r.salary_min || r.salary_max);
-        const pay = listed
-          ? { payText: [r.salary_min, r.salary_max].filter(Boolean).map((n) => `${Math.round(n).toLocaleString('de-DE')} €`).join(' – ') + ' / Jahr', payMin: r.salary_min || null, payMax: r.salary_max || null, payPeriod: 'year', payCurrency: 'EUR' }
-          : parsePay(null);
-        const area = r.location?.area || [];
+        const pay = listed ? adzunaPay(r.salary_min, r.salary_max) : parsePay(null);
+        const where = adzunaPlace(r.location);
         out.push(job('adzuna', {
-          // area is [country, state, city, district…]: the city is the third entry
-          rawId: r.id, title: r.title, employer: r.company?.display_name, city: area[2] || r.location?.display_name, country: 'DE',
+          rawId: r.id, title: r.title, employer: r.company?.display_name, city: where.city, region: where.region, country: 'DE',
           employment: r.contract_time === 'part_time' ? 'part-time' : r.contract_time === 'full_time' ? 'full-time' : 'unknown',
           url: r.redirect_url, postedAt: r.created, pay, description: r.description,
         }));
@@ -484,6 +505,8 @@ export function keepJob(j) {
 }
 
 const TYPE_RULES = [
+  // Ausbildung and dual study first: "Auszubildende zum Sport- und Fitnesskaufmann" is training, not a trainer job
+  [/ausbildung|auszubildende|\bazubi|duales studium|dualer student|duale[rs]? student|trainee/i, 'apprenticeship'],
   [/studioleit|clubmanag|club manager|studio manager|filialleit|standortleit|general manager/i, 'studio-manager'],
   [/personal ?trainer|fitnesstrainer|fitness ?trainer|trainer\b|trainer:?in|instructor|kursleit|yoga|pilates|physio/i, 'trainer'],
   [/coach/i, 'coach'],
@@ -517,7 +540,7 @@ async function classify(jobs) {
     const prompt = `You classify German fitness and wellness job postings for a job list. Use ONLY what is in each posting. When the posting does not say, answer "unknown" (for type use "other") rather than guess.
 
 For each job return:
-- type: one of ${TYPES.join(', ')}
+- type: one of ${TYPES.join(', ')} (apprenticeship = Ausbildung, duales Studium or trainee programme)
 - region: one of ${REGIONS.join(', ')}, or "unknown". From the job's city: Berlin, Hamburg, München, Köln, Frankfurt (am Main) by name; any other German place is "Other DE"; remote work allowed from Germany is "Remote DE".
 - employment: one of ${EMPLOYMENT.join(', ')}
 - summaryEn: one plain English sentence (max 25 words) saying what the role is and where. No claims that are not in the posting. No pay figures.
@@ -552,7 +575,13 @@ export function mergeRun(stored, fresh, { now = Date.now(), failedSources = new 
     const cur = byId.get(f.id) || byKey.get(dedupeKey(f));
     if (cur) {
       Object.assign(cur, { lastSeenAt: today, expired: false });
-      if (f.source === cur.source && f.url) cur.url = f.url;
+      if (f.source === cur.source) {
+        // the same source again: take its current place and pay, so a parser fix reaches stored rows
+        if (f.url) cur.url = f.url;
+        Object.assign(cur, { city: f.city, region: f.region ?? cur.region });
+        if (hasPay(f)) Object.assign(cur, { payText: f.payText, payMin: f.payMin, payMax: f.payMax, payPeriod: f.payPeriod, payCurrency: f.payCurrency });
+        if (typeByRule(cur.title) === 'apprenticeship') cur.type = 'apprenticeship';
+      }
       // a later posting with pay replaces one without: link, pay and source credit move together
       if (!hasPay(cur) && hasPay(f)) Object.assign(cur, { url: f.url, source: f.source, payText: f.payText, payMin: f.payMin, payMax: f.payMax, payPeriod: f.payPeriod, payCurrency: f.payCurrency });
       continue;
@@ -576,10 +605,14 @@ export const editionFor = (now = Date.now()) => { const d = new Date(now); const
 function readStore() {
   try { return JSON.parse(readFileSync(OUT, 'utf8')); } catch { return { generatedAt: null, edition: null, jobs: [] }; }
 }
+/** Append-only: a job's first pay line, and a new line whenever its pay changes (e.g. a parser
+ *  fix). Readers take the LAST line per id; older lines are never deleted. */
 function appendPay(jobs) {
-  const seen = new Set();
-  if (existsSync(PAY_LOG)) for (const l of readFileSync(PAY_LOG, 'utf8').split('\n')) { try { seen.add(JSON.parse(l).id); } catch { /* blank */ } }
-  const lines = jobs.filter((j) => hasPay(j) && !seen.has(j.id)).map((j) => JSON.stringify({
+  const last = new Map();
+  if (existsSync(PAY_LOG)) for (const l of readFileSync(PAY_LOG, 'utf8').split('\n')) { try { const x = JSON.parse(l); last.set(x.id, x); } catch { /* blank */ } }
+  const same = (a, j) => a && a.payMin === j.payMin && a.payMax === j.payMax && a.payPeriod === j.payPeriod;
+  const lines = jobs.filter((j) => hasPay(j) && !same(last.get(j.id), j)).map((j) => JSON.stringify({
+    ...(last.has(j.id) ? { correction: true, loggedAt: iso() } : {}),
     id: j.id, seenAt: j.seenAt, title: j.title, employer: j.employer, city: j.city, region: j.region, type: j.type, employment: j.employment,
     payText: j.payText, payMin: j.payMin, payMax: j.payMax, payPeriod: j.payPeriod, payCurrency: j.payCurrency, source: j.source, url: j.url,
   }));
@@ -744,6 +777,15 @@ function selftest() {
   t('url: javascript: dropped', job('dssv', { rawId: 1, title: 'x', url: 'javascript:alert(1)' }).url === null);
   t('url: relative resolved', job('dssv', { rawId: 1, title: 'x', url: '/job/1', base: 'https://www.dssv.de/jobboerse/' }).url === 'https://www.dssv.de/job/1');
   t('date: epoch ms and junk', job('career-page', { rawId: 1, title: 'x', url: 'https://a.b', postedAt: 1761800000000 }).postedAt === '2025-10-30' && job('dssv', { rawId: 2, title: 'x', url: 'https://a.b', postedAt: 'soon' }).postedAt === null);
+  const ap = adzunaPay(15, 20), am = adzunaPay(5000, 5000), ay = adzunaPay(33600, 42000);
+  t('adzuna pay: 15-20 is hourly, 5000 monthly, 33600-42000 yearly', ap.payPeriod === 'hour' && am.payPeriod === 'month' && ay.payPeriod === 'year', [ap, am, ay]);
+  t('adzuna pay: 10800-13200 and 8184-11460 are yearly, 1007-2015 monthly', adzunaPay(10800, 13200).payPeriod === 'year' && adzunaPay(8184, 11460).payPeriod === 'year' && adzunaPay(1007, 2015).payPeriod === 'month');
+  const pl = (area, dn) => adzunaPlace({ area, display_name: dn });
+  t('adzuna place: Berlin district', pl(['Deutschland', 'Berlin', 'Schöneberg'], 'Schöneberg, Berlin').region === 'Berlin' && pl(['Deutschland', 'Berlin', 'Schöneberg']).city === 'Berlin');
+  t('adzuna place: Hamburg district', pl(['Deutschland', 'Hamburg', 'Barmbek-Nord'], 'Barmbek-Nord, Hamburg').region === 'Hamburg');
+  t('adzuna place: Kreis', pl(['Deutschland', 'Nordrhein-Westfalen', 'Düren (Kreis)']).city === 'Düren' && pl(['Deutschland', 'Nordrhein-Westfalen', 'Düren (Kreis)']).region === 'Other DE');
+  t('adzuna place: Bavaria to München', pl(['Deutschland', 'Bayern', 'Oberbayern', 'München'], 'München, Oberbayern').region === 'München');
+  t('type: Ausbildung', typeByRule('Auszubildende zum Sport- und Fitnesskaufmann (w/m/x)') === 'apprenticeship' && typeByRule('Duales Studium - Fitnessökonomie') === 'apprenticeship' && typeByRule('Fitnesstrainer (m/w/d)') === 'trainer');
   t('json-ld: finds JobPosting in @graph', jsonLdJobs('<script type="application/ld+json">{"@graph":[{"@type":"JobPosting","title":"x"}]}</script>').length === 1);
   console.log(ok ? 'selftest passed' : 'selftest FAILED');
   process.exit(ok ? 0 : 1);

@@ -26,7 +26,7 @@ export const SOURCES = [
   {
     id: 'ba', enabled: true, label: 'Bundesagentur für Arbeit',
     // Jobsuche API, documented at https://jobsuche.api.bund.dev/. The key is the published one.
-    url: 'https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v4/jobs',
+    url: 'https://rest.arbeitsagentur.de/jobboerse/jobsuche-service/pc/v6/jobs',   // v4 answered 403 (31 Oct 2026)
     apiKey: 'jobboerse-jobsuche',
     detail: (refnr) => `https://www.arbeitsagentur.de/jobsuche/jobdetail/${encodeURIComponent(refnr)}`,
   },
@@ -47,7 +47,9 @@ export const SOURCES = [
     url: 'https://www.dssv.de/jobboerse/',
   },
   {
-    id: 'fitt', enabled: true, label: 'Fitt Insider',
+    // Off (31 Oct 2026): /jobs/ is a 404 and the board's current address is not known. Set the
+    // right URL and flip `enabled` once it is; it only adds remote roles open to Germany.
+    id: 'fitt', enabled: false, label: 'Fitt Insider',
     // US board. Only roles that explicitly allow Germany count (region "Remote DE"); the
     // source is credited on the row.
     url: 'https://insider.fitt.co/jobs/',
