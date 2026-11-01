@@ -159,3 +159,7 @@ What shipped on `/[lang]/intelligence/investors/`:
 - Unpublished: "Your Members Are Scared…" (1013) and its DE twin, moved to `site/src/content/articles/_unpublished/` (Astro ignores underscore folders; files kept). The URL now 404s; the piece was past its news-take index window, so no ranking is lost.
 - URLs are unchanged on purpose: slugs carry the old titles, but a slug change would cost the rankings the pages have.
 - Remaining: 109 articles for the same treatment, in rounds of four picks.
+
+## Article head on phones (1 Nov 2026)
+
+- Between the hero and the body, four blocks stacked on a phone: the answer card, the decorative hero card, a byline that wrapped its date onto a second line, and a six-pill share row. `ArticleView.astro`: the decorative hero is skipped on screens up to 640px when an answer card already sits above it (`.hero-after-answer`); the byline is a wrapping row with CSS dot separators (`.meta-row`), the date follows the name and the role is hidden on phones. `ShareBar.astro`: when the native share sheet exists, phones show only Copy link and Share… (`has-native`); desktops keep all pills. Screenshots: `automation/build-shots/article-head-*.png`.
