@@ -2,7 +2,8 @@
 urlSlug: your-members-are-leaving-here-s-what-the-smart-money-already-0825
 lang: "en"
 counterpart: your-members-are-leaving-here-s-what-the-smart-money-already-0825
-title: "Your Members Are Leaving. Here's What the Smart Money Already Knows"
+title: "You Have a Retention Problem, Not an Acquisition Problem: What Churn Is Telling You"
+seoTitle: "Retention Problem, Not Acquisition: What Churn Tells You"
 topic: retention
 newsTake: true
 description: "From churn data to boutique basketball courts, this week's news spells out exactly where fitness operators need to move next."

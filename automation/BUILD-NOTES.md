@@ -168,3 +168,10 @@ What shipped on `/[lang]/intelligence/investors/`:
 
 - The equipment report's "Where do you stand?" block read "Strength share of your equipment budget or floor" with a prompt that assumed the reader knew "where US home buyers moved". Now a question ("How much of your equipment is strength kit?"), a one-line count instruction, and the comparison stated as a fact (36% in 2023, up from 23% in 2019). Bands say what they mean ("Below the 2019 mix"), EN and DE.
 - `BenchmarkWidget.astro`: the verdict sentence moved directly under the input so it stays visible with the phone keyboard open; the input label and placeholder no longer repeat each other ("Enter yours", "e.g. 29"); the sentence names the comparison (`medianLabel`) instead of always saying "industry avg", which was wrong on the equipment report. The other three benchmark articles (retention ×2, wearables) already read clearly and only gain the layout fix.
+
+## Titles batch 3: 25 more H1s and seoTitles (1 Nov 2026)
+
+- Picked click-by-click in rounds of four. 21 titles changed, EN plus DE twin each; three kept as already clear (Top Tier, BCAAs, Vitamin D); one unpublished: "AI Is Booking Your Clients' Pilates Spots. Now What?" (0814) told the same BBC story as the 18 Aug booking-security article, now "An AI Agent Hacked a Pilates Studio's Booking System. Yours Is Next."
+- Found while picking: six published articles carried the near-identical "Fitness Is Splitting in Two, Which Side Are You On?" title. Four are retitled around their own news hook (0904 Nestlé/MasterClass and 0828 Basic-Fit/Planet Fitness here, 0908 and 0929 in batch 2); 0731 is still to do in batch 4. Picks 20 and 25 both open with P&G's $3.8B Thorne deal; 25's seoTitle leads with "Community or Convenience" so the two browser titles do not collide.
+- The DE twin of the 0828 recovery article had an English title on main; fixed with its DE title.
+- Remaining: 58 articles for the same treatment.

@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splitting-into-winners-and-losers-which-side-are--0828
 lang: "de"
 counterpart: fitness-is-splitting-into-winners-and-losers-which-side-are--0828
-title: "Zwischen Steuer, Klage und Comeback: Wer überlebt 2026?"
+title: "Basic-Fit schreibt wieder Gewinn, Planet Fitness steht vor Gericht: Der Unterschied heißt Community und Hybrid"
+seoTitle: "Basic-Fit vs Planet Fitness: Community und Hybrid gewinnen"
 topic: strategy
 newsTake: true
 description: "Die Fitnessbranche steht unter Druck – aber wer jetzt die richtigen Hebel umlegt, wächst während andere straucheln."

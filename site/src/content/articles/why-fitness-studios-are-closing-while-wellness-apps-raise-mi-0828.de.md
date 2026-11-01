@@ -2,7 +2,8 @@
 urlSlug: why-fitness-studios-are-closing-while-wellness-apps-raise-mi-0828
 lang: "de"
 counterpart: why-fitness-studios-are-closing-while-wellness-apps-raise-mi-0828
-title: "Wachstum oder Pleite: Was die Fitness-Branche gerade entscheidet"
+title: "Drei Studios in Kansas City schließen, eine Astrologie-App sammelt 12 Mio. $ ein: Folge dem Geld"
+seoTitle: "Studios schließen, Astro-App holt 12 Mio. $: Folge dem Geld"
 topic: market-moves
 newsTake: true
 description: "Fünf aktuelle Nachrichten zeigen ein Muster – und eine klare Handlungsoption für Studiobesitzer."

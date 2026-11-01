@@ -2,7 +2,7 @@
 urlSlug: omega-3-evidence-coach-playbook
 lang: "de"
 counterpart: omega-3-evidence-coach-playbook
-title: "Fischöl ist kein Muskel-Supplement. Was die Evidenz wirklich hergibt, und was du sagen darfst."
+title: "Fischöl für Sportler: Was Omega-3 für Gelenke und Regeneration tut, und nicht für Muskeln"
 seoTitle: "Omega-3 (Fischöl) für Sportler: Was es bewirkt und was nicht"
 topic: supplements
 description: "Wir haben die Meta-Analysen zu Omega-3 für Gelenke, Regeneration und Muskel gelesen, bewertet und das Studienregister geprüft. Was EPA und DHA leisten, welche Dosis zählt, das eine reale Sicherheitssignal, und das Skript für den Kunden, der fragt."

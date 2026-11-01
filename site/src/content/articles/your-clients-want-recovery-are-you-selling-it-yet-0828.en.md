@@ -2,7 +2,7 @@
 urlSlug: your-clients-want-recovery-are-you-selling-it-yet-0828
 lang: "en"
 counterpart: your-clients-want-recovery-are-you-selling-it-yet-0828
-title: "Your Clients Want Recovery. Are You Selling It Yet?"
+title: "13.8M Americans Do Pilates and Recovery Clinics Are Opening: How to Add Recovery Revenue"
 seoTitle: "How to Add Recovery Services to Your Gym or Studio"
 topic: offer-programming
 description: "Pilates is booming, recovery clinics are opening everywhere, and smart coaches are building second revenue streams before the window closes."

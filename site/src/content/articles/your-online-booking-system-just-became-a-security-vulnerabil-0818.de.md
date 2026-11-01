@@ -2,7 +2,8 @@
 urlSlug: your-online-booking-system-just-became-a-security-vulnerabil-0818
 lang: "de"
 counterpart: your-online-booking-system-just-became-a-security-vulnerabil-0818
-title: "KI bucht deinen Pilates-Kurs – ob du willst oder nicht"
+title: "Ein KI-Agent hat das Buchungssystem eines Pilates-Studios gehackt. Deins ist das nächste."
+seoTitle: "KI-Agent hackt Pilates-Buchungssystem: Schütze deins"
 topic: ai-tools
 newsTake: true
 description: "Was passiert, wenn autonome KI-Agenten auf volle Kurse treffen – und was du als Coach jetzt tun solltest."

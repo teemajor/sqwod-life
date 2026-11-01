@@ -2,7 +2,8 @@
 urlSlug: when-a-gym-closes-the-real-opportunity-opens-0821
 lang: "en"
 counterpart: when-a-gym-closes-the-real-opportunity-opens-0821
-title: "When a Gym Closes, the Real Opportunity Opens"
+title: "Row House Closed. Its Members Did Not Disappear: How to Pick Up a Shut Gym's Community"
+seoTitle: "When a Gym Closes: How to Win Its Members"
 topic: offer-programming
 newsTake: true
 description: "Two local fitness stories reveal exactly how smart studios survive, and what coaches can learn right now."

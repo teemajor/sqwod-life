@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splitting-in-two-which-side-are-you-on-0904
 lang: "de"
 counterpart: fitness-is-splitting-in-two-which-side-are-you-on-0904
-title: "Die Fitness-Industrie sortiert sich neu – wer zögert, verliert"
+title: "Nestlé verkauft Supplements, MasterClass lehrt GLP-1: Wellness zerfällt in Teile"
+seoTitle: "Nestlé, MasterClass, Informa: Die Wellness-Ökonomie zerfällt"
 topic: strategy
 newsTake: true
 description: "Sechs aktuelle Signale zeigen, wohin das Geld fließt – und was Studiobetreiber jetzt konkret tun müssen."

@@ -2,7 +2,8 @@
 urlSlug: the-boutique-bubble-is-popping-here-s-where-smart-money-goes-0901
 lang: "en"
 counterpart: the-boutique-bubble-is-popping-here-s-where-smart-money-goes-0901
-title: "The Boutique Bubble Is Popping. Here's Where Smart Money Goes Next"
+title: "Women's Health Says the Boutique Boom Is Over. Six Signals on What Replaces It"
+seoTitle: "Boutique Fitness Boom Over: Six Signals on What's Next"
 topic: market-moves
 newsTake: true
 description: "Six stories from this week reveal a single uncomfortable truth about where fitness is heading, and what operators should do about it before the next quarter."
