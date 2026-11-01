@@ -1,0 +1,32 @@
+{
+  "kind": "flagship",
+  "id": "flagship-60-of-uk-adults-try-to-eat-healthy-what-it-means-for-fitness-ope",
+  "slug": "60-of-uk-adults-try-to-eat-healthy-what-it-means-for-fitness-ope",
+  "title": "60% of UK Adults Try to Eat Healthy: What It Means for Fitness Operators",
+  "titleDe": "60 % der Briten wollen gesund essen – dein Studio kann das einlösen",
+  "description": "Six in ten UK adults aged 18-64 actively try to eat healthy, yet 57% follow no structured nutrition rules and 28% are eating less healthily to save money — a gap that hands fitness operators a direct commercial mandate to fill. Studios and gyms that embed nutrition guidance into their offer will capture members that generic wellness brands cannot reach. A living Sqwod Intelligence report.",
+  "studyId": "39785",
+  "study": "health and wellness food trends in the united kingdom statista dossier",
+  "status": "pending",
+  "createdAt": "2026-11-01",
+  "wordsEn": 5040,
+  "wordsDe": 2859,
+  "chartCount": 10,
+  "hasBenchmark": true,
+  "freshCount": 8,
+  "takeaways": [
+    "60% of UK adults actively try to eat healthy, but 57% follow no structured nutrition rules — intent without a system is your acquisition hook.",
+    "28% of UK consumers are eating less healthily to save money, meaning cost is now a direct competitor to your nutrition programming.",
+    "Baby boomers are the most health-motivated generation at 65%, yet the fitness industry consistently under-serves them.",
+    "The UK vitamins and minerals market hit £492 million in retail sales in 2023 — a partnership and retail revenue line most studios ignore.",
+    "UK plant-based food market is projected to reach USD 1,084.4 million by 2034 at a 10.41% CAGR — menu and retail decisions made now will compound.",
+    "Meat substitute per-capita consumption has plateaued at 0.91 kg from 2024 through 2029, signalling that the easy flexitarian growth wave is over."
+  ],
+  "warnings": [
+    "2 number(s) in the text are not in the dataset or linked sources (could be derived in a way I could not match): 1,084.4, 1,084"
+  ],
+  "approve": "https://sqwod-pr-intake.sqwodlife.workers.dev/intel?id=flagship-60-of-uk-adults-try-to-eat-healthy-what-it-means-for-fitness-ope&action=approve&exp=1796083200&sig=c96d8e562cfca00ad5dbdb23696a0656d5df2597702defdb3c2667b799a8c80c",
+  "reject": "https://sqwod-pr-intake.sqwodlife.workers.dev/intel?id=flagship-60-of-uk-adults-try-to-eat-healthy-what-it-means-for-fitness-ope&action=reject&exp=1796083200&sig=95cb71dd5cac26ca3d5cd518a6d6ca1358df4c2e394506927935df649087cbda",
+  "label": "60% of UK Adults Try to Eat Healthy: What It Means for Fitness Operators",
+  "report": "60% of UK Adults Try to Eat Healthy: What It Means for Fitness Operators"
+}
