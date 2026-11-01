@@ -308,10 +308,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
   .player.playing .pl-i-pause{display:block}
   audio{width:100%}
   :global(:root:not([data-theme="light"])) audio{color-scheme:dark}
-  .listen{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
-  .ll{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
-  .lp{display:inline-flex;align-items:center;min-height:36px;font-size:13px;font-weight:600;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:0 13px;transition:border-color .15s ease,color .15s}
-  .lp:hover{border-color:var(--accent);color:var(--accent)}
+  /* .listen, .ll and .lp come from global.css so this row matches the Daily index. */
 
   .dgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start;padding-top:8px}
   .dmain{min-width:0;max-width:720px}

@@ -26,10 +26,10 @@ const label = platform === 'apple'
   </a>
 )}
 <style>
-  .lb-apple{display:inline-flex;line-height:0;padding:3px;border-radius:12px;transition:opacity .15s ease}
+  .lb-apple{display:inline-flex;line-height:0;border-radius:10px;transition:opacity .15s ease}
   .lb-apple:hover{opacity:.85}
-  .lb-apple img{height:46px;width:auto;display:block}
-  .lb{display:inline-flex;align-items:center;justify-content:center;padding:11px 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;line-height:0;transition:border-color .15s ease}
+  .lb-apple img{height:var(--listen-h,44px);width:auto;display:block}
+  .lb{display:inline-flex;align-items:center;justify-content:center;height:var(--listen-h,44px);padding:0 16px;border:1px solid var(--line);border-radius:999px;text-decoration:none;line-height:0;transition:border-color .15s ease}
   .lb:hover{border-color:var(--accent)}
   .lb img{height:22px;width:auto;display:block}
   .lb-light{display:none !important}
