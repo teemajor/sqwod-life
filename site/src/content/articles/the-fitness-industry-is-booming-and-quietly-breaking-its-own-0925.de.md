@@ -2,7 +2,8 @@
 urlSlug: the-fitness-industry-is-booming-and-quietly-breaking-its-own-0925
 lang: "de"
 counterpart: the-fitness-industry-is-booming-and-quietly-breaking-its-own-0925
-title: "Das Fitness-Business bricht auf – bist du dabei oder dagegen?"
+title: "1,1 Mrd. £ UK-Pilates, Training im Reichstag: Wachstum steigt, Vertrauen nicht"
+seoTitle: "UK-Pilates 1,1 Mrd. £, Reichstag-Workouts: Vertrauen fehlt"
 topic: market-moves
 newsTake: true
 description: "Warum der Markt gerade alles neu verhandelt und was du als Coach jetzt konkret tun solltest."

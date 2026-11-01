@@ -2,7 +2,8 @@
 urlSlug: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
 lang: "de"
 counterpart: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
-title: "Wellness frisst die Fitnesswelt – wer jetzt schläft, verliert"
+title: "Tierfutter-Marken kaufen Wellness, Medien lehren GLP-1: Warum Studios einen Wellness-Stack brauchen"
+seoTitle: "Warum Studios einen Wellness-Stack brauchen"
 topic: market-moves
 newsTake: true
 description: "Sechs aktuelle Signale zeigen, dass Wellness zur dominanten Wachstumslogik wird – und was Fitnessoperatoren jetzt konkret tun müssen."

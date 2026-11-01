@@ -2,7 +2,8 @@
 urlSlug: your-cardio-menu-is-outdated-here-s-what-actually-works-now-0915
 lang: "de"
 counterpart: your-cardio-menu-is-outdated-here-s-what-actually-works-now-0915
-title: "Warum dein Cardio-Angebot Mitglieder verliert – und was jetzt hilft"
+title: "Spaziergänge nach dem Essen und Pilates-Kraft-Hybride: Cardio-Programme haben sich weiterbewegt"
+seoTitle: "Cardio-Programme 2026: Verdauungsspaziergang, Pilates-Kraft"
 topic: offer-programming
 newsTake: true
 description: "Drei aktuelle Trends zeigen, wie Studios ihr Kursportfolio neu denken müssen – und welchen einen Schritt du sofort gehen kannst."

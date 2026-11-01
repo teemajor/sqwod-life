@@ -56,6 +56,11 @@ const QUERIES = [
   { q: '("personal trainer" OR "fitness coach" OR "online coaching") (business OR clients OR pricing OR platform OR income) when:7d', pillar: 'business-strategy', conversion: 'pods' },
   { q: '(longevity OR recovery OR supplements OR "cold plunge" OR sauna OR "creatine") (market OR brand OR launch OR study OR trend) when:6d', pillar: 'industry-trends', conversion: 'list-growth' },
   { q: '(fitness OR wellness) (influencer OR creator OR "social media") (brand OR marketing OR campaign OR deal) when:6d', pillar: 'marketing-visibility', conversion: 'sqwod-os' },
+  // Industry bodies and their research (Tee, 1 Nov 2026): EuropeActive (press corner, EHFF,
+  // the European Health & Fitness Market Report with Deloitte each April) and Deloitte's
+  // sports and fitness research. EuropeActive publishes no RSS, so Google News is the
+  // reliable route; the 14-day window suits the slower cadence of association news.
+  { q: '(EuropeActive OR "European Health & Fitness Market Report" OR "European Health and Fitness Forum" OR (Deloitte (fitness OR "health club" OR gym OR wellness))) when:14d', pillar: 'industry-trends', conversion: 'sqwod-os' },
   // Closures (29 Oct 2026): the Deal Tracker logs who shut down, not only who raised.
   { q: '(fitness OR gym OR "health club" OR "fitness studio" OR "fitness app" OR "fitness franchise" OR wearable OR supplement OR Fitnessstudio OR Fitnesskette) (bankruptcy OR "Chapter 11" OR "shuts down" OR "shutting down" OR insolvency OR "enters administration" OR "ceases operations" OR Insolvenz OR "stellt Betrieb ein") when:7d', pillar: 'industry-trends', conversion: 'sqwod-os' },
   { q: '("wellness economy" OR "fitness industry" OR "health club industry") (global OR Europe OR Asia OR "market size" OR report OR forecast OR growth) when:7d', pillar: 'industry-trends', conversion: 'sqwod-os' },
