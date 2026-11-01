@@ -19,13 +19,15 @@ const nets = [
 ---
 <div class="sharebar" data-url={url} data-title={title}>
   <span class="sh-label">{T.label}</span>
-  {nets.map((n) => <a class="sh-btn" href={n.href} target="_blank" rel="noopener" aria-label={`${T.label}: ${n.name}`} data-umami-event="share" data-umami-event-network={n.name} data-umami-event-page={path}>{n.name}</a>)}
+  {nets.map((n) => <a class="sh-btn sh-net" href={n.href} target="_blank" rel="noopener" aria-label={`${T.label}: ${n.name}`} data-umami-event="share" data-umami-event-network={n.name} data-umami-event-page={path}>{n.name}</a>)}
   <button class="sh-btn sh-copy" type="button" data-copy={T.copy} data-copied={T.copied} data-umami-event="share" data-umami-event-network="copy" data-umami-event-page={path}>{T.copy}</button>
   <button class="sh-btn sh-native" type="button" hidden data-umami-event="share" data-umami-event-network="native" data-umami-event-page={path}>{T.label}…</button>
 </div>
 
 <style>
-  .sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0}
+  .sharebar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}
+  /* phones with the native share sheet: one row (Share…, Copy link); the network pills live inside the sheet */
+  @media(max-width:640px){.sharebar.has-native .sh-net{display:none}}
   .sh-label{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--g4);font-weight:700;margin-right:2px}
   /* All pills — anchors and buttons — share one explicit type ramp.
      Buttons carry a UA-stylesheet font, so `inherit` alone left them in a
@@ -50,7 +52,7 @@ const nets = [
     });
     const nativeBtn = bar.querySelector<HTMLElement>('.sh-native');
     if (nativeBtn && navigator.share) {
-      nativeBtn.hidden = false;
+      nativeBtn.hidden = false; bar.classList.add('has-native');
       nativeBtn.addEventListener('click', () => navigator.share({ title, url }).catch(() => {}));
     }
   });

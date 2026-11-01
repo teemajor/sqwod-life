@@ -217,10 +217,13 @@ const shareCfg = {
         {d.topic === 'supplements' && <a class="ans-hub" href={`/${lang}/evidence/supplements`}>{AB.hub} →</a>}
       </section>
     )}
-    {d.hero && <ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} />}
-    <div class="meta" style="margin:8px 0 0;color:var(--g3);font-size:12px">
-      <span class="by">{byEditor && <img class="by-img" src={EDITOR.img} alt="" width="22" height="22" loading="lazy" />}{lang === 'de' ? 'Von ' : 'By '}<a href={EDITOR.about(lang)} rel="author">{byName}</a>{byEditor && <span class="by-role"> · {EDITOR.role[lang]}</span>}</span> · {fmt}
-      {locked && <span class="conf" style="margin-left:8px">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
+    {/* On phones the decorative hero is skipped when an answer card already sits above it: two cards before the byline is one too many. */}
+    {d.hero && <div class={answer ? 'hero-wrap hero-after-answer' : 'hero-wrap'}><ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} /></div>}
+    <div class="meta meta-row">
+      <span class="by">{byEditor && <img class="by-img" src={EDITOR.img} alt="" width="22" height="22" loading="lazy" />}{lang === 'de' ? 'Von ' : 'By '}<a href={EDITOR.about(lang)} rel="author">{byName}</a></span>
+      <span class="by-date">{fmt}</span>
+      {byEditor && <span class="by-role">{EDITOR.role[lang]}</span>}
+      {locked && <span class="conf">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
     </div>
   </Fragment>
 )}
@@ -459,6 +462,14 @@ const shareCfg = {
   .by a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--g4)}
   .by-img{width:22px;height:22px;border-radius:50%;object-fit:cover;filter:grayscale(1)}
   .by-role{color:var(--g3)}
+  /* byline as a wrapping row: each item is a unit, the dot separator comes from CSS so the date never orphans */
+  .meta-row{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:10px 0 0;color:var(--g3);font-size:12px}
+  .meta-row > span + span::before{content:"·";margin-right:8px;color:var(--g4)}
+  @media(max-width:640px){
+    .hero-after-answer{display:none}
+    .answer{margin:12px 0 12px}
+    .meta-row .by-role{display:none}
+  }
   .how-made{font-size:12px;color:var(--g3);line-height:1.55;margin:18px 0 0;padding-top:12px;border-top:1px solid var(--line)}
   .how-made a{color:var(--g2)}
   .figs-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
