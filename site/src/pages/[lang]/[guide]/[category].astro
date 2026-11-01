@@ -12,14 +12,15 @@
 // config/best.ts, so a score change in a review flows straight through to the
 // roundup, the table and the structured data with no second edit.
 import Base from '../../../layouts/Base.astro';
-import ScoreBadge from '../../../components/ScoreBadge.astro';
 import CategoryIcon from '../../../components/CategoryIcon.astro';
 import ProductThumb from '../../../components/ProductThumb.astro';
 import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../../i18n/ui';
 import { categories, byCategory } from '../../../config/verified-categories';
 import { guides, GUIDE_PREFIX } from '../../../config/best';
-import { priceOf, lowOf, hasSubscription } from '../../../lib/price';
+import ScorePill from '../../../components/ScorePill.astro';
+import { hasSubscription, formatPrice, type PriceValue } from '../../../lib/price';
+import type { BestRole } from '../../../config/best';
 
 export async function getStaticPaths() {
   return languages.flatMap((lang) =>
@@ -60,9 +61,93 @@ const lastUpdated = scored.length
   ? new Date(Math.max(...scored.map((s) => s.r!.updatedAt.getTime())))
   : new Date();
 
+// --- families (1 Nov 2026) ------------------------------------------------
+// Generation pairs (Oura Gen3 / Ring 5, Apple Watch 9 / 11 / 12 ...) collapse to one row. The
+// highest score leads the row (ranking is by score only); a tie goes to the generation on sale.
+// The other generations sit in a one-line note under it, linked to their reviews.
+type Scored = { pick: (typeof cat.picks)[number]; r: NonNullable<ReturnType<typeof dataFor>> };
+type Row = { head: Scored; others: Array<Scored & { rel: 'newer' | 'older' }> };
+const fam = new Map<string, Scored[]>();
+for (const x of scored as Scored[]) {
+  const k = x.pick.family ?? x.pick.reviewSlug!;
+  fam.set(k, [...(fam.get(k) ?? []), x]);
+}
+const rows: Row[] = [...fam.values()]
+  .map((members) => {
+    const sorted = [...members].sort((a, b) => b.r.sqwodScore - a.r.sqwodScore || (b.pick.current ? 1 : 0) - (a.pick.current ? 1 : 0));
+    const head = sorted[0];
+    const others = sorted.slice(1).map((o) => ({ ...o, rel: (o.pick.current && !head.pick.current ? 'newer' : 'older') as 'newer' | 'older' }));
+    return { head, others };
+  })
+  .sort((a, b) => b.head.r.sqwodScore - a.head.r.sqwodScore);
+const families = rows.length;
+
+// --- money ------------------------------------------------------------------
+// Whole euros on the guide (the review page keeps the cents) and a first-year figure
+// that folds a required subscription in: "€394 + €70/yr" becomes "€464 first year".
+const requiredSub = (v?: PriceValue) => hasSubscription(v) && !/optional/i.test(v!.subscription!);
+const sticker = (v?: PriceValue) => (typeof v?.bestPrice !== 'number' ? null
+  : formatPrice((v.priceType ?? 'oneoff') === 'oneoff' ? Math.round(v.bestPrice) : v.bestPrice, v.currency ?? 'EUR', lang, v.priceType ?? 'oneoff'));
+const firstYear = (v?: PriceValue): number | null => {
+  if (typeof v?.bestPrice !== 'number') return null;
+  const t = v.priceType ?? 'oneoff';
+  let total = t === 'monthly' ? v.bestPrice * 12 : v.bestPrice;
+  if (t === 'oneoff' && requiredSub(v)) {
+    const m = v.subscription!.match(/(\d+(?:[.,]\d+)?)\s*\/\s*(mo|month|monat|yr|year|jahr)/i);
+    if (m) { const n = parseFloat(m[1].replace(',', '.')); total += /^(mo|month|monat)/i.test(m[2]) ? n * 12 : n; }
+  }
+  return Math.round(total);
+};
+const firstYearOf = (v?: PriceValue) => { const n = firstYear(v); return n === null ? null : formatPrice(n, v?.currency ?? 'EUR', lang, 'oneoff'); };
+// filter value: the sticker price for a one-off buy, the yearly total for a subscription product
+const priceForFilter = (v?: PriceValue) => (typeof v?.bestPrice !== 'number' ? 0 : (v.priceType ?? 'oneoff') === 'oneoff' ? Math.round(v.bestPrice) : firstYear(v) ?? 0);
+
+// --- roles ("Our picks") ----------------------------------------------------
+// Best overall is the top score. Each configured role takes the highest-scoring row that fits
+// its rule and is not already used, so six roles give six different products.
+const used = new Set<string>();
+const fits = (row: Row, role: BestRole) =>
+  (role.reviewSlug ? [row.head, ...row.others].some((x) => x.r.urlSlug === role.reviewSlug) : true) &&
+  (role.kind ? row.head.pick.kind === role.kind : true) &&
+  (role.maxPrice ? priceForFilter(row.head.r.value) > 0 && priceForFilter(row.head.r.value) <= role.maxPrice : true) &&
+  (role.noSub ? !requiredSub(row.head.r.value) : true);
+const pickFor = (row: Row, role: BestRole): Scored =>
+  role.reviewSlug ? [row.head, ...row.others].find((x) => x.r.urlSlug === role.reviewSlug)! : row.head;
+const roleCards: Array<{ role: BestRole; x: Scored }> = [];
+if (rows[0]) {
+  roleCards.push({ role: { key: 'overall', label: { en: 'Best overall', de: 'Beste insgesamt' } }, x: rows[0].head });
+  used.add(rows[0].head.r.urlSlug);
+}
+for (const role of guide.roles ?? []) {
+  const row = rows.find((rw) => fits(rw, role) && !used.has(pickFor(rw, role).r.urlSlug));
+  if (!row) continue;
+  const x = pickFor(row, role); used.add(x.r.urlSlug); roleCards.push({ role, x });
+}
+if (!guide.roles?.length && rows.length > 1) {
+  // guides without configured roles: add the best score among the cheaper half
+  const priced = rows.filter((rw) => priceForFilter(rw.head.r.value) > 0).sort((a, b) => priceForFilter(a.head.r.value) - priceForFilter(b.head.r.value));
+  const cheap = priced.slice(0, Math.ceil(priced.length / 2)).sort((a, b) => b.head.r.sqwodScore - a.head.r.sqwodScore).find((rw) => !used.has(rw.head.r.urlSlug));
+  if (cheap) roleCards.push({ role: { key: 'value', label: { en: 'Best value', de: 'Bestes Preis-Leistungs-Verhältnis' } }, x: cheap.head });
+}
+
+// --- lede ---------------------------------------------------------------------
+// Taken from the top pick's own verdict, so it can never describe a product that no
+// longer leads (the static guide ledes did exactly that and are gone).
+const verdictLede = (() => {
+  const v = top?.r?.verdict ?? '';
+  // split only where a sentence really ends: punctuation, space, capital (so "1.43-inch" survives)
+  const sentences = v.split(/(?<=[.!?])\s+(?=[A-ZÄÖÜ0-9"“])/);
+  let out = ''; for (const sn of sentences) { if ((out + ' ' + sn).trim().length > 230 && out) break; out = (out + ' ' + sn).trim(); }
+  return out;
+})();
+
+const kindFilters = guide.filters?.kinds?.filter((k) => rows.some((rw) => rw.head.pick.kind === k.key)) ?? [];
+const maxPrice = guide.filters?.maxPrice;
+const anySub = rows.some((rw) => requiredSub(rw.head.r.value));
+
 const title = de
-  ? `Beste ${guide.title.de} ${year}: ${scored.length} Modelle bewertet`
-  : `Best ${guide.title.en} ${year}: ${scored.length} Picks, Scored 0–100`;
+  ? `Beste ${guide.title.de} ${year}: ${families} Modelle bewertet`
+  : `Best ${guide.title.en} ${year}: ${families} Picks, Scored 0–100`;
 
 // --- structured data -------------------------------------------------------
 // ItemList carries the full ranked list — rank, product, brand, URL, price and
@@ -77,10 +162,10 @@ const jsonLd = [
     name: title,
     description: guide.description[lang],
     url: `${base}/${lang}/${GUIDE_PREFIX[lang]}/${guide.slug[lang]}/`,
-    numberOfItems: scored.length,
+    numberOfItems: rows.length,
     itemListOrder: 'https://schema.org/ItemListOrderDescending',
     inLanguage: lang,
-    itemListElement: scored.map(({ pick, r }, i) => ({
+    itemListElement: rows.map(({ head: { pick, r } }, i) => ({
       '@type': 'ListItem',
       position: i + 1,
       name: pick.bestFor[lang],
@@ -112,17 +197,18 @@ const jsonLd = [
 ];
 
 const tx = {
-  topPick: de ? 'Unsere Empfehlung' : 'Our top pick',
-  glance: de ? 'Auf einen Blick' : 'At a glance',
+  picksKick: de ? 'Unsere Empfehlungen' : 'Our picks',
+  glance: de ? 'Alle bewerteten Modelle' : 'Every scored model',
   howScore: de ? 'Wie wir bewerten' : 'How we score',
   before: de ? 'Was du vor dem Kauf wissen solltest' : 'What to know before buying',
-  picks: de ? 'Die Empfehlungen' : 'The picks',
+  details: de ? 'Die Modelle im Detail' : 'The picks in detail',
   operator: de ? 'Für Trainer:innen und Studiobetreiber' : 'For coaches and studio owners',
   faq: de ? 'Häufige Fragen' : 'Frequently asked questions',
   related: de ? 'Weiterlesen' : 'Related',
   bestFor: de ? 'Am besten für' : 'Best for',
   score: 'Sqwod Score',
-  price: de ? 'Bester Preis' : 'Best price',
+  price: de ? 'Preis' : 'Price',
+  firstYear: de ? 'Erstes Jahr' : 'First year',
   low: de ? '90-Tage-Tief' : '90-day low',
   readReview: de ? 'Bewertung lesen' : 'Read review',
   bestDeal: de ? 'Bester Deal' : 'Best deal',
@@ -134,7 +220,27 @@ const tx = {
   cons: de ? 'Dagegen' : 'Cons',
   buyIf: de ? 'Kaufen, wenn' : 'Buy it if',
   skipIf: de ? 'Überspringen, wenn' : 'Skip it if',
+  newer: de ? 'Neuer' : 'Newer',
+  older: de ? 'Älter' : 'Older',
+  all: de ? 'Alle' : 'All',
+  noSub: de ? 'Ohne Abo' : 'Subscription-free',
+  noSubShort: de ? 'kein Abo' : 'no subscription',
+  under: de ? 'Unter' : 'Under',
+  shown: de ? 'angezeigt' : 'shown',
+  noMatch: de ? 'Kein Modell passt zu dieser Auswahl.' : 'No model matches this selection.',
+  jump: de ? 'Springe zu' : 'Jump to',
+  scoreOnly: de
+    ? 'Rangfolge nur nach Score. Provisionen ändern die Reihenfolge nie.'
+    : 'Ranked by score only. Commission never changes the order.',
+  firstYearNote: de
+    ? 'Erstes Jahr = Preis plus zwölf Monate Pflicht-Abo. Optionale Abos zählen nicht.'
+    : 'First year = price plus twelve months of any required subscription. Optional subscriptions are not counted.',
 };
+const jump = [
+  ['picks', tx.picksKick], ['table', tx.glance], ['before', tx.before], ['details', tx.details], ['score', tx.howScore], ['faq', 'FAQ'],
+];
+const otherLine = (o: Row['others'][number]) =>
+  `${o.rel === 'newer' ? tx.newer : tx.older}: ${o.r.productName}, ${o.r.sqwodScore}/100${sticker(o.r.value) ? `, ${sticker(o.r.value)}` : ''}`;
 ---
 <Base
   lang={lang}
@@ -157,13 +263,14 @@ const tx = {
   <p class="byline">
     {de ? 'Bewertet von' : 'Scored by'} <a href={`/${lang}/about/`}>Tee Major</a>
     · {tx.updated} <b>{dateFmt(lastUpdated)}</b>
+    · <span class="score-only">{tx.scoreOnly}</span>
   </p>
 
   {top && (
     <p class="lede">
       {de
-        ? <>Für die meisten ist <b>{top.r!.productName}</b> die richtige Wahl: <b>{top.r!.sqwodScore}/100</b>, der höchste Wert der Kategorie{top.r!.value?.bestPrice ? <>, bei <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.de}</>
-        : <>For most people the <b>{top.r!.productName}</b> is the right buy: <b>{top.r!.sqwodScore}/100</b>, the highest score in this category{top.r!.value?.bestPrice ? <>, at <b>{priceOf(top.r!.value, lang)}</b></> : null}. {guide.lede.en}</>}
+        ? <>Für die meisten ist <b>{top.r!.productName}</b> die richtige Wahl: <b>{top.r!.sqwodScore}/100</b>, der höchste Wert der Kategorie{sticker(top.r!.value) ? <>, bei <b>{sticker(top.r!.value)}</b></> : null}. {verdictLede}</>
+        : <>For most people the <b>{top.r!.productName}</b> is the right buy: <b>{top.r!.sqwodScore}/100</b>, the highest score in this category{sticker(top.r!.value) ? <>, at <b>{sticker(top.r!.value)}</b></> : null}. {verdictLede}</>}
     </p>
   )}
 
@@ -171,69 +278,168 @@ const tx = {
     ? 'Wir erhalten unter Umständen eine Provision über Links auf dieser Seite. Der Sqwod Score und das Ranking bleiben davon unberührt.'
     : 'We may earn a commission from links on this page. It never affects the Sqwod Score or the ranking.'}</div>
 
-  <!-- ---------------------------------------------------------- top pick -->
-  {top && (
-    <section class="block toppick">
-      <p class="kick">{tx.topPick}</p>
-      <div class="tp">
-        <ProductThumb src={top.r!.asset.images[0]} alt={top.r!.productName} cat={cat.slug} size={168} eager />
-        <ScoreBadge score={top.r!.sqwodScore} size={104} />
-        <div class="tp-body">
-          <h2 style="margin:0 0 4px">{top.r!.productName}</h2>
-          <div class="tp-meta">
-            <span class="tag">{top.pick.bestFor[lang]}</span>
-            {top.r!.value?.bestPrice ? <span>{tx.price} <b>{priceOf(top.r!.value, lang)}</b></span> : null}
-            {top.r!.value?.low ? <span>{tx.low} <b>{lowOf(top.r!.value, lang)}</b></span> : null}
-            {top.r!.value?.subscription ? <span>{tx.sub} <b>{top.r!.value.subscription}</b></span> : null}
-          </div>
-          <p class="verdict">{top.r!.verdict}</p>
-          <div class="tp-cta">
-            <a class="deal" href={`/go/${top.r!.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={top.r!.urlSlug} data-umami-event-placement="guide-top" data-umami-event-earns="yes">{tx.bestDeal} →</a>
-            <a class="ghost" href={`/${lang}/verified/${top.r!.urlSlug}/`}>{tx.readReview}</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  )}
+  <nav class="jump" aria-label={tx.jump}>
+    {jump.map(([id, label]) => <a href={`#${id}`}>{label}</a>)}
+  </nav>
 
-  <!-- --------------------------------------------------------- at a glance -->
-  <section class="block">
+  <!-- ----------------------------------------------------------- our picks -->
+  <section class="block" id="picks">
+    <p class="kick">{tx.picksKick}</p>
+    <div class="roles">
+      {roleCards.map(({ role, x }, i) => (
+        <article class:list={['role', { 'role-top': i === 0 }]}>
+          <p class="role-label">{role.label[lang]}</p>
+          <div class="role-head">
+            <ProductThumb src={x.r.asset.images[0]} alt={x.r.productName} cat={cat.slug} size={i === 0 ? 120 : 64} eager={i === 0} />
+            <div class="role-body">
+              <h2><a href={`/${lang}/verified/${x.r.urlSlug}/`}>{x.r.productName}</a></h2>
+              <div class="role-meta">
+                <ScorePill score={x.r.sqwodScore} lang={lang} size={i === 0 ? 'lg' : 'sm'} />
+                {sticker(x.r.value) ? <span class="rm-price"><b>{sticker(x.r.value)}</b>{requiredSub(x.r.value) && firstYearOf(x.r.value) ? <small> · {tx.firstYear} {firstYearOf(x.r.value)}</small> : null}</span> : null}
+              </div>
+              <p class="role-why">{role.why?.[lang] ?? x.pick.why[lang]}</p>
+            </div>
+          </div>
+          <div class="tp-cta">
+            <a class="deal" href={`/go/${x.r.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={x.r.urlSlug} data-umami-event-placement={i === 0 ? 'guide-top' : 'guide-role'} data-umami-event-earns="yes">{tx.bestDeal} →</a>
+            <a class="ghost" href={`/${lang}/verified/${x.r.urlSlug}/`}>{tx.readReview}</a>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <!-- --------------------------------------------------------- every model -->
+  <section class="block" id="table">
     <p class="kick">{tx.glance}</p>
+    {(kindFilters.length > 0 || anySub || maxPrice) && (
+      <div class="filters" data-filters role="group" aria-label="Filter">
+        <button type="button" class="fchip on" data-f="all">{tx.all} <span class="fn">{rows.length}</span></button>
+        {kindFilters.map((k) => <button type="button" class="fchip" data-f="kind" data-v={k.key}>{k.label[lang]} <span class="fn">{rows.filter((rw) => rw.head.pick.kind === k.key).length}</span></button>)}
+        {anySub && <button type="button" class="fchip" data-f="nosub">{tx.noSub} <span class="fn">{rows.filter((rw) => !requiredSub(rw.head.r.value)).length}</span></button>}
+        {maxPrice && <button type="button" class="fchip" data-f="price" data-v={maxPrice}>{tx.under} {formatPrice(maxPrice, 'EUR', lang)} <span class="fn">{rows.filter((rw) => priceForFilter(rw.head.r.value) > 0 && priceForFilter(rw.head.r.value) <= maxPrice).length}</span></button>}
+      </div>
+    )}
+    <p class="fstatus" data-fstatus hidden></p>
+
+    <!-- desktop: a real table. phone: cards (same rows, same data attributes). -->
     <div class="tablewrap">
       <table class="glance">
         <thead>
           <tr>
-            <th>#</th><th>{de ? 'Produkt' : 'Product'}</th><th>{tx.bestFor}</th>
-            <th>{tx.score}</th><th>{tx.price}</th><th>{tx.low}</th>
+            <th>#</th><th>{de ? 'Modell' : 'Model'}</th><th>{tx.bestFor}</th>
+            <th>{tx.score}</th><th>{tx.price}</th><th>{tx.firstYear}</th>
           </tr>
         </thead>
         <tbody>
-          {scored.map(({ pick, r }, i) => (
-            <tr>
+          {rows.map(({ head: { pick, r }, others }, i) => (
+            <tr data-row data-kind={pick.kind ?? ''} data-sub={requiredSub(r.value) ? '1' : '0'} data-price={priceForFilter(r.value)}>
               <td class="rank">{i + 1}</td>
-              <td><a class="gl-prod" href={`/${lang}/verified/${r!.urlSlug}/`}><ProductThumb src={r!.asset.images[0]} alt="" cat={cat.slug} size={44} />{r!.productName}</a></td>
-              <td>{pick.bestFor[lang]}</td>
-              <td class="sc"><b>{r!.sqwodScore}</b></td>
               <td>
-                {r!.value?.bestPrice
-                  ? <><b>{priceOf(r!.value, lang)}</b>
-                      {hasSubscription(r!.value) ? <span class="subline">{r!.value.subscription}</span> : null}</>
+                <a class="gl-prod" href={`/${lang}/verified/${r.urlSlug}/`}><ProductThumb src={r.asset.images[0]} alt="" cat={cat.slug} size={44} />{r.productName}</a>
+                {others.map((o) => <a class="gen" href={`/${lang}/verified/${o.r.urlSlug}/`}>{otherLine(o)}</a>)}
+              </td>
+              <td>{pick.bestFor[lang]}</td>
+              <td class="sc"><ScorePill score={r.sqwodScore} lang={lang} size="sm" /></td>
+              <td>
+                {sticker(r.value)
+                  ? <><b>{sticker(r.value)}</b>
+                      {hasSubscription(r.value) ? <span class="subline">{r.value.subscription}</span> : null}</>
                   : '—'}
               </td>
-              <td>{lowOf(r!.value, lang) ?? '—'}</td>
+              <td>{firstYear(r.value) !== null && firstYear(r.value) !== priceForFilter(r.value) ? firstYearOf(r.value) : <span class="muted">{tx.noSubShort}</span>}</td>
             </tr>
           ))}
         </tbody>
       </table>
     </div>
+    <ol class="rank-cards">
+      {rows.map(({ head: { pick, r }, others }, i) => (
+        <li class="rc" data-row data-kind={pick.kind ?? ''} data-sub={requiredSub(r.value) ? '1' : '0'} data-price={priceForFilter(r.value)}>
+          <span class="rc-n">{i + 1}</span>
+          <ProductThumb src={r.asset.images[0]} alt="" cat={cat.slug} size={48} />
+          <div class="rc-body">
+            <a class="rc-name" href={`/${lang}/verified/${r.urlSlug}/`}>{r.productName}</a>
+            <span class="rc-for">{pick.bestFor[lang]}</span>
+            <div class="rc-row">
+              <ScorePill score={r.sqwodScore} lang={lang} size="sm" />
+              {sticker(r.value) ? <span class="rc-price"><b>{sticker(r.value)}</b>{requiredSub(r.value) && firstYearOf(r.value) ? <small>{tx.firstYear} {firstYearOf(r.value)}</small> : null}</span> : null}
+            </div>
+            {others.map((o) => <a class="gen" href={`/${lang}/verified/${o.r.urlSlug}/`}>{otherLine(o)}</a>)}
+          </div>
+          <a class="rc-deal" href={`/go/${r.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r.urlSlug} data-umami-event-placement="guide-card" data-umami-event-earns="yes" aria-label={`${tx.bestDeal}: ${r.productName}`}>→</a>
+        </li>
+      ))}
+    </ol>
     <p class="note">
-      {de ? 'Preise recherchiert, Stand ' : 'Prices researched, as of '}{dateFmt(lastUpdated)}.
+      {de ? 'Preise recherchiert, Stand ' : 'Prices researched, as of '}{dateFmt(lastUpdated)}. {tx.firstYearNote}
       {' '}<a href={`/${lang}/verified/c/${cat.slug}/`}>{tx.allIn} →</a>
     </p>
   </section>
 
+  <!-- --------------------------------------------------- before you buy -->
+  <section class="block" id="before">
+    <p class="kick">{tx.before}</p>
+    <ul class="guidance">
+      {guide.before.map((b) => <li>{b[lang]}</li>)}
+    </ul>
+  </section>
+
+  <!-- ------------------------------------------------------------ details -->
+  <section class="block" id="details">
+    <p class="kick">{tx.details}</p>
+    {rows.map(({ head: { pick, r }, others }, i) => (
+      <article class="pick" id={`pick-${r.urlSlug}`}>
+        <div class="pick-head">
+          <span class="num">#{i + 1}</span>
+          <span class="tag">{pick.bestFor[lang]}</span>
+        </div>
+        <div class="pick-title">
+          <ProductThumb src={r.asset.images[0]} alt={r.productName} cat={cat.slug} size={96} />
+          <div>
+            <h3>{r.productName}</h3>
+            {others.map((o) => <a class="gen" href={`/${lang}/verified/${o.r.urlSlug}/`}>{otherLine(o)}</a>)}
+          </div>
+        </div>
+        <div class="pick-meta">
+          <ScorePill score={r.sqwodScore} lang={lang} size="sm" />
+          <span>Crowd {r.crowd.score}</span>
+          <span>Assessment {r.assessment.score}</span>
+          <span>Value {r.value.score}</span>
+          {sticker(r.value) ? <span><b>{sticker(r.value)}</b></span> : null}
+          {hasSubscription(r.value) ? <span>{tx.sub}: {r.value.subscription}</span> : null}
+          {requiredSub(r.value) && firstYearOf(r.value) ? <span>{tx.firstYear}: <b>{firstYearOf(r.value)}</b></span> : null}
+        </div>
+        <p class="why">{pick.why[lang]}</p>
+        {r.assessment.criteria?.length ? (
+          <ul class="crit">
+            {r.assessment.criteria.map((c) => <li><span>{c.name}</span><b>{c.score}</b></li>)}
+          </ul>
+        ) : null}
+        <div class="pc">
+          <div class="pros"><h4>{tx.pros}</h4><ul>{r.pros.slice(0, 3).map((p) => <li>{p}</li>)}</ul></div>
+          <div class="cons"><h4>{tx.cons}</h4><ul>{r.cons.slice(0, 2).map((c) => <li>{c}</li>)}</ul></div>
+        </div>
+        {r.proRead
+          ? <p class="who pro"><b>{de ? 'Für Kund:innen' : 'For clients'}</b> {r.proRead.clients} <b>{de ? 'Fürs Studio' : 'For the studio'}</b> {r.proRead.studio}</p>
+          : <p class="who"><b>{tx.buyIf}</b> {r.whoFor.buy} <b>{tx.skipIf}</b> {r.whoFor.skip}</p>}
+        <div class="tp-cta">
+          <a class="deal" href={`/go/${r.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r.urlSlug} data-umami-event-placement="guide-list" data-umami-event-earns="yes">{tx.bestDeal} →</a>
+          <a class="ghost" href={`/${lang}/verified/${r.urlSlug}/`}>{tx.readReview}</a>
+        </div>
+      </article>
+    ))}
+  </section>
+
+  {guide.pro && (
+    <section class="block pro-note">
+      <p class="kick">{de ? '◆ Für Profis' : '◆ For professionals'}</p>
+      <p class="pro-p">{guide.pro[lang]}</p>
+    </section>
+  )}
+
   <!-- ------------------------------------------------------- how we score -->
-  <section class="block">
+  <section class="block" id="score">
     <p class="kick">{tx.howScore}</p>
     <p>{de
       ? 'Jeder Sqwod Score ist ein Gesamtwert von 0–100 aus drei veröffentlichten Komponenten:'
@@ -255,63 +461,6 @@ const tx = {
       {' '}<a href={`/${lang}/verified/methodology/`}>{tx.methodology} →</a></p>
   </section>
 
-  {guide.pro && (
-    <section class="block pro-note">
-      <p class="kick">{lang==='de'?'◆ Für Profis':'◆ For professionals'}</p>
-      <p class="pro-p">{guide.pro[lang]}</p>
-    </section>
-  )}
-
-  <!-- --------------------------------------------------- before you buy -->
-  <section class="block">
-    <p class="kick">{tx.before}</p>
-    <ul class="guidance">
-      {guide.before.map((b) => <li>{b[lang]}</li>)}
-    </ul>
-  </section>
-
-  <!-- --------------------------------------------------------- the picks -->
-  <section class="block">
-    <p class="kick">{tx.picks}</p>
-    {scored.map(({ pick, r }, i) => (
-      <article class="pick">
-        <div class="pick-head">
-          <span class="num">#{i + 1}</span>
-          <span class="tag">{pick.bestFor[lang]}</span>
-        </div>
-        <div class="pick-title">
-          <ProductThumb src={r!.asset.images[0]} alt={r!.productName} cat={cat.slug} size={96} />
-          <h3>{r!.productName}</h3>
-        </div>
-        <div class="pick-meta">
-          <b>{r!.sqwodScore}/100</b>
-          <span>Crowd {r!.crowd.score}</span>
-          <span>{de ? 'Assessment' : 'Assessment'} {r!.assessment.score}</span>
-          <span>Value {r!.value.score}</span>
-          {r!.value?.bestPrice ? <span>{priceOf(r!.value, lang)}</span> : null}
-          {r!.value?.subscription ? <span>{tx.sub}: {r!.value.subscription}</span> : null}
-        </div>
-        <p class="why">{pick.why[lang]}</p>
-        {r!.assessment.criteria?.length ? (
-          <ul class="crit">
-            {r!.assessment.criteria.map((c) => <li><span>{c.name}</span><b>{c.score}</b></li>)}
-          </ul>
-        ) : null}
-        <div class="pc">
-          <div class="pros"><h4>{tx.pros}</h4><ul>{r!.pros.slice(0, 3).map((p) => <li>{p}</li>)}</ul></div>
-          <div class="cons"><h4>{tx.cons}</h4><ul>{r!.cons.slice(0, 2).map((c) => <li>{c}</li>)}</ul></div>
-        </div>
-        {r!.proRead
-          ? <p class="who pro"><b>{lang==='de'?'Für Kund:innen':'For clients'}</b> {r!.proRead.clients} <b>{lang==='de'?'Fürs Studio':'For the studio'}</b> {r!.proRead.studio}</p>
-          : <p class="who"><b>{tx.buyIf}</b> {r!.whoFor.buy} <b>{tx.skipIf}</b> {r!.whoFor.skip}</p>}
-        <div class="tp-cta">
-          <a class="deal" href={`/go/${r!.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r!.urlSlug} data-umami-event-placement="guide-list" data-umami-event-earns="yes">{tx.bestDeal} →</a>
-          <a class="ghost" href={`/${lang}/verified/${r!.urlSlug}/`}>{tx.readReview}</a>
-        </div>
-      </article>
-    ))}
-  </section>
-
   <!-- ------------------------------------------------------ operator view -->
   <section class="block operator">
     <p class="kick">{tx.operator}</p>
@@ -319,7 +468,7 @@ const tx = {
   </section>
 
   <!-- ---------------------------------------------------------------- faq -->
-  <section class="block">
+  <section class="block" id="faq">
     <p class="kick">{tx.faq}</p>
     {guide.faq.map((f) => (
       <details class="faq">
@@ -345,58 +494,122 @@ const tx = {
   </section>
 </Base>
 
+<script>
+  // Filter chips: client-side on the rows already on the page (table rows on desktop, cards
+  // on phones share the same data attributes). One filter at a time; "All" resets.
+  const box = document.querySelector<HTMLElement>('[data-filters]');
+  if (box) {
+    const rows = [...document.querySelectorAll<HTMLElement>('[data-row]')];
+    const status = document.querySelector<HTMLElement>('[data-fstatus]');
+    const total = document.querySelectorAll('table.glance [data-row]').length;
+    const lang = document.documentElement.lang;
+    const apply = (f: string, v: string) => {
+      let shown = 0;
+      for (const r of rows) {
+        const ok = f === 'all' || (f === 'kind' && r.dataset.kind === v) || (f === 'nosub' && r.dataset.sub === '0') || (f === 'price' && Number(r.dataset.price) > 0 && Number(r.dataset.price) <= Number(v));
+        r.hidden = !ok; if (ok) shown++;
+      }
+      shown = shown / 2; // table row + card per model
+      if (status) {
+        status.hidden = f === 'all';
+        status.textContent = shown === 0 ? (lang === 'de' ? 'Kein Modell passt zu dieser Auswahl.' : 'No model matches this selection.') : `${shown} / ${total} ${lang === 'de' ? 'angezeigt' : 'shown'}`;
+      }
+      try { (window as any).umami?.track('guide-filter', { f, v }); } catch {}
+    };
+    box.addEventListener('click', (e) => {
+      const b = (e.target as HTMLElement).closest<HTMLButtonElement>('.fchip'); if (!b) return;
+      box.querySelectorAll('.fchip').forEach((x) => x.classList.toggle('on', x === b));
+      apply(b.dataset.f || 'all', b.dataset.v || '');
+    });
+  }
+</script>
+
 <style>
-  .byline{font-size:13px;color:var(--g4);margin:12px 0 0}
+  .byline{font-size:13px;color:var(--g3);margin:12px 0 0}
   .byline a{color:var(--g3)}
+  .score-only{color:var(--accent);font-weight:600}
   .lede{font-size:17px;line-height:1.6;margin:14px 0 0}
   .pro-note{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:14px 18px;background:var(--panel);margin-top:18px}
   .pro-p{margin:6px 0 0;font-size:15px;line-height:1.6;color:var(--g1)}
   .who.pro b{color:var(--accent)}
-  .disc{font-size:12px;color:var(--g4);border-left:2px solid var(--line);padding-left:10px;margin-top:14px}
-  .toppick .tp{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
-  /* global.css sets .seedwrap{margin:0 auto}; inside a flex row those auto
-     margins eat the free space and force the text block onto the next line. */
-  .toppick .tp :global(.seedwrap){margin:0;flex:0 0 auto}
-  .toppick .tp .tp-body{flex:1 1 320px;min-width:0}
-  .tp-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--g3);margin-bottom:8px}
-  .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
-    border:1px solid var(--line);border-radius:999px;padding:3px 9px}
-  .verdict{margin:6px 0 12px}
-  .tp-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-  .tp-cta{align-items:center}
+  .disc{font-size:12.5px;color:var(--g3);border-left:2px solid var(--line);padding-left:10px;margin-top:14px}
+  /* jump chips: one row, scrolls sideways on a phone */
+  .jump{display:flex;gap:6px;margin:16px 0 0;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+  .jump::-webkit-scrollbar{display:none}
+  .jump a{flex:none;font-size:12.5px;font-weight:600;color:var(--g2);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 11px;white-space:nowrap}
+  .jump a:hover{border-color:var(--edge);color:var(--chalk)}
+  /* our picks: the winner full width, the roles in a grid */
+  .roles{display:grid;grid-template-columns:1fr;gap:12px}
+  @media(min-width:760px){ .roles{grid-template-columns:1fr 1fr} .role-top{grid-column:1 / -1} }
+  .role{border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:var(--panel);display:flex;flex-direction:column;gap:10px}
+  .role-top{border-color:var(--accent-line);background:var(--accent-soft)}
+  .role-label{margin:0;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+  .role-head{display:flex;gap:14px;align-items:flex-start}
+  .role :global(.seedwrap){margin:0;flex:0 0 auto}
+  .role-body{flex:1;min-width:0}
+  .role h2{margin:0 0 6px;font-size:18px;line-height:1.2}
+  .role-top h2{font-size:24px}
+  .role h2 a{text-decoration:none;color:inherit}
+  .role-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  .rm-price{font-size:14px;color:var(--g2)}
+  .rm-price b{color:var(--chalk);font-size:15px}
+  .rm-price small{font-size:12px;color:var(--g3)}
+  .role-why{margin:0;font-size:14px;line-height:1.5;color:var(--g1)}
+  .role-top .role-why{font-size:15px}
+  .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:3px 9px}
+  .tp-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;align-items:center}
   .tp-cta a{display:inline-flex;align-items:center;min-height:44px;box-sizing:border-box;padding-top:0;padding-bottom:0;margin-top:0}
   .ghost{display:inline-block;padding:9px 16px;border:1px solid var(--line);border-radius:10px;font-size:13px;font-weight:600}
+  /* filters */
+  .filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+  .fchip{font:600 12.5px var(--sans);color:var(--g2);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 11px;cursor:pointer}
+  .fchip.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .fn{opacity:.6;margin-left:3px}
+  .fstatus{font:12px var(--mono);color:var(--g3);margin:0 0 8px}
+  /* table (desktop) */
   .tablewrap{overflow-x:auto}
-  table.glance{width:100%;min-width:560px;border-collapse:collapse;font-size:14px}
-  table.glance th{text-align:left;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
-    color:var(--g4);border-bottom:1px solid var(--line);padding:8px 10px}
-  table.glance td{padding:10px;border-bottom:1px solid var(--line)}
-  table.glance td.rank{color:var(--g4);font-weight:800;width:34px}
-  table.glance td.sc b{font-size:15px}
-  .subline{display:block;font-size:10.5px;color:var(--g4);margin-top:2px;line-height:1.35;max-width:22ch}
-  .note{font-size:12.5px;color:var(--g4);margin-top:10px}
+  table.glance{width:100%;border-collapse:collapse;font-size:14px}
+  table.glance th{text-align:left;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);border-bottom:1px solid var(--line);padding:8px 10px}
+  table.glance td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+  table.glance td.rank{color:var(--g3);font-weight:800;width:34px}
+  .gl-prod{display:inline-flex;align-items:center;gap:10px;font-weight:600}
+  .gen{display:block;font-size:12px;color:var(--g3);margin-top:4px;text-decoration:none;padding-left:0}
+  .gen:hover{color:var(--g1);text-decoration:underline}
+  .muted{color:var(--g3);font-size:12.5px}
+  .subline{display:block;font-size:10.5px;color:var(--g3);margin-top:2px;line-height:1.35;max-width:22ch}
+  /* cards (phone) */
+  .rank-cards{list-style:none;margin:0;padding:0;display:none}
+  .rc{display:grid;grid-template-columns:22px 48px 1fr 40px;gap:10px;align-items:start;padding:12px 0;border-bottom:1px solid var(--line)}
+  .rc-n{font-size:13px;font-weight:800;color:var(--g3);padding-top:14px}
+  .rc :global(.seedwrap){margin:0}
+  .rc-body{min-width:0;display:flex;flex-direction:column;gap:4px}
+  .rc-name{font-weight:700;font-size:15px;line-height:1.25;color:var(--chalk);text-decoration:none}
+  .rc-for{font-size:12px;color:var(--g3)}
+  .rc-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:2px}
+  .rc-price{font-size:13.5px;color:var(--g2);display:flex;flex-direction:column;line-height:1.2}
+  .rc-price b{color:var(--chalk)}
+  .rc-price small{font-size:11px;color:var(--g3)}
+  .rc-deal{display:grid;place-items:center;width:40px;height:40px;border-radius:999px;background:var(--chalk);color:var(--ink);font-weight:800;text-decoration:none;margin-top:6px}
+  .rc[hidden],table.glance tr[hidden]{display:none}
+  @media(max-width:640px){ .tablewrap{display:none} .rank-cards{display:block} }
+  .note{font-size:12.5px;color:var(--g3);margin-top:10px}
   ul.weights{margin:10px 0 0;padding-left:18px}
   ul.weights li{margin-bottom:8px;line-height:1.55}
   ul.guidance{margin:0;padding-left:18px}
   ul.guidance li{margin-bottom:12px;line-height:1.6}
   .pick{border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
   .pick-head{display:flex;gap:10px;align-items:center;margin-bottom:6px}
-  .num{font-size:11px;font-weight:800;color:var(--g4);letter-spacing:.08em}
+  .num{font-size:11px;font-weight:800;color:var(--g3);letter-spacing:.08em}
   .pick h3{margin:0 0 6px}
   .pick-title{display:flex;gap:14px;align-items:center;margin-bottom:6px}
   .pick-title h3{margin:0}
-  .gl-prod{display:inline-flex;align-items:center;gap:10px}
-  .pick-meta{display:flex;gap:12px;flex-wrap:wrap;font-size:12.5px;color:var(--g3);margin-bottom:10px}
+  .pick-meta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;font-size:12.5px;color:var(--g3);margin-bottom:10px}
   .why{margin:0 0 10px}
-  ul.crit{list-style:none;padding:0;margin:0 0 12px;display:grid;gap:6px;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
-  ul.crit li{display:flex;justify-content:space-between;font-size:12.5px;
-    border:1px solid var(--line);border-radius:8px;padding:6px 10px}
-  /* pros/cons: same round +/– markers as the review page (verified/[slug].astro), so a pro
-     and a con read apart before the words do. Stacked on phones, side by side from 760px. */
+  ul.crit{list-style:none;padding:0;margin:0 0 12px;display:grid;gap:6px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+  ul.crit li{display:flex;justify-content:space-between;font-size:12.5px;border:1px solid var(--line);border-radius:8px;padding:6px 10px}
   .pc{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:14px}
   @media(min-width:760px){ .pc{grid-template-columns:1fr 1fr;gap:20px} }
-  .pc h4{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--g4)}
+  .pc h4{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--g3)}
   .pc ul{margin:0;padding:0;list-style:none;font-size:14px;line-height:1.5;color:var(--g1)}
   .pc li{position:relative;margin:0;padding:6px 0 6px 30px}
   .pc li::before{position:absolute;left:0;top:6px;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font:700 12px/1 var(--sans)}

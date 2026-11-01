@@ -24,6 +24,17 @@ export interface BestFaq {
   a: Record<Lang, string>;
 }
 
+export interface BestRole {
+  key: string;
+  label: Record<Lang, string>;
+  reviewSlug?: string;
+  kind?: string;
+  maxPrice?: number;
+  noSub?: boolean;
+  /** one line under the product; falls back to the pick's `why` */
+  why?: Record<Lang, string>;
+}
+
 export interface BestGuide {
   /** matches a slug in config/verified-categories.ts */
   category: string;
@@ -33,9 +44,12 @@ export interface BestGuide {
   title: Record<Lang, string>;
   /** meta description */
   description: Record<Lang, string>;
-  /** the editorial half of the direct-answer lede — the factual half (winner,
-   *  score, price) is generated from live data in the page template. */
-  lede: Record<Lang, string>;
+  /** "Our picks": one role per winner. `overall` (highest score) is always first and
+   *  needs no entry. A role names a review, or a rule (kind / maxPrice / noSub) and takes the
+   *  highest-scoring product that fits and is not already used by an earlier role. */
+  roles?: BestRole[];
+  /** filter chips over the table: device kinds (from Pick.kind) and a price cap */
+  filters?: { kinds?: Array<{ key: string; label: Record<Lang, string> }>; maxPrice?: number };
   /** the professional read: one paragraph for operators, coaches, brands and investors (Oct 2026 audience reframe) */
   pro?: Record<Lang, string>;
   /** "what to know before buying" — 3-5 items, the real decision criteria */
@@ -59,9 +73,25 @@ export const guides: BestGuide[] = [
       en: 'Every wearable we score, ranked 0–100 on the public Sqwod Score. Rings, watches and bands: what each one is actually for, what it costs, and what the subscription really adds.',
       de: 'Alle Wearables mit Sqwod Score von 0–100. Ringe, Uhren und Bänder: wofür jedes wirklich taugt, was es kostet und was das Abo wirklich bringt.',
     },
-    lede: {
-      en: 'It wins on the least glamorous thing that matters most: you will actually wear it overnight, and overnight is where the data that changes training gets made.',
-      de: 'Er gewinnt an der unspektakulärsten Stelle, die am meisten zählt: Du trägst ihn nachts wirklich, und nachts entstehen die Daten, die Training verändern.',
+    roles: [
+      { key: 'ring', label: { en: 'Best ring', de: 'Bester Ring' }, kind: 'ring',
+        why: { en: 'Sleep and recovery without a screen on the wrist, and nothing to take off at night.', de: 'Schlaf und Erholung ohne Display am Handgelenk, und nachts nichts, was man abnehmen müsste.' } },
+      { key: 'runners', label: { en: 'Best for runners', de: 'Beste für Läufer:innen' }, reviewSlug: 'garmin-forerunner-165',
+        why: { en: 'Garmin\'s full training metrics at the entry price: the value pick for endurance.', de: 'Garmins volle Trainings-Metriken zum Einstiegspreis: der Preis-Leistungs-Tipp für Ausdauer.' } },
+      { key: 'budget', label: { en: 'Best budget', de: 'Beste günstige Wahl' }, maxPrice: 200, noSub: true,
+        why: { en: 'The highest score you can buy for under €200.', de: 'Der höchste Score, den es unter 200 € gibt.' } },
+      { key: 'nosub', label: { en: 'Best subscription-free', de: 'Beste ohne Abo' }, noSub: true,
+        why: { en: 'Every metric included in the price. Nothing to cancel later.', de: 'Alle Werte im Preis enthalten. Nichts, was man später kündigen muss.' } },
+      { key: 'coaches', label: { en: 'Best for coaches', de: 'Beste für Coaches' }, reviewSlug: 'whoop-5',
+        why: { en: 'Strain and recovery that export cleanly across clients, built to programme by readiness.', de: 'Belastung und Erholung, die sich sauber über alle Kund:innen exportieren lassen, gebaut fürs Programmieren nach Readiness.' } },
+    ],
+    filters: {
+      kinds: [
+        { key: 'ring', label: { en: 'Ring', de: 'Ring' } },
+        { key: 'watch', label: { en: 'Watch', de: 'Uhr' } },
+        { key: 'band', label: { en: 'Band', de: 'Band' } },
+      ],
+      maxPrice: 200,
     },
     pro: {
       en: 'For operators: wearables are the data layer your coaching sits on. Pick one platform you can read across all clients (Whoop, Oura and Garmin export; Apple Health needs an aggregator), price the subscription per client over 12 months, and treat recovery scores as a conversation starter, not a prescription. Brands: the moat is the subscription and the app, not the sensor.',
@@ -141,10 +171,6 @@ export const guides: BestGuide[] = [
       en: 'Massage guns, compression and heat/cold tools scored 0–100 on the public Sqwod Score: what each is genuinely for, and where the evidence actually sits.',
       de: 'Massagepistolen, Kompression und Wärme/Kälte mit Sqwod Score von 0–100: wofür sie wirklich taugen und wie die Evidenz tatsächlich aussieht.',
     },
-    lede: {
-      en: 'Most recovery tools are bought for what they promise and kept for how they feel; this one earns its place on both, which is rarer than the category suggests.',
-      de: 'Die meisten Recovery-Tools werden für ihr Versprechen gekauft und für ihr Gefühl behalten. Dieses hier überzeugt bei beidem: seltener, als die Kategorie vermuten lässt.',
-    },
     pro: {
       en: 'For operators: recovery tools are the cheapest premium tier you can add. Percussion guns and foam rollers survive shared use; compression boots and cold units need a cleaning protocol and a booking slot. Price a recovery add-on against the hardware cost per session, not per unit. Brands: the category is crowded on features and thin on evidence; the ones with studies win the B2B deals.',
       de: 'Für Betreiber: Recovery-Tools sind die günstigste Premium-Stufe, die du anbieten kannst. Massagepistolen und Faszienrollen halten geteilte Nutzung aus; Kompressionsstiefel und Kälteanwendungen brauchen ein Reinigungsprotokoll und einen Buchungsslot. Kalkuliere ein Recovery-Add-on über die Hardwarekosten pro Einheit, nicht pro Gerät. Für Marken: Die Kategorie ist voll an Features und dünn an Evidenz; wer Studien hat, gewinnt die B2B-Deals.',
@@ -219,10 +245,6 @@ export const guides: BestGuide[] = [
       en: 'Sleep tech scored 0–100 on the public Sqwod Score: what genuinely moves sleep quality, and what is an expensive way to measure a problem you already know you have.',
       de: 'Schlaf-Technik mit Sqwod Score von 0–100: was Schlafqualität wirklich verbessert und was nur eine teure Art ist, ein längst bekanntes Problem zu messen.',
     },
-    lede: {
-      en: 'It earns the top spot because it changes something about the night rather than only reporting on it: the distinction that separates most of this category.',
-      de: 'Es steht oben, weil es die Nacht verändert und nicht nur darüber berichtet: genau die Unterscheidung, an der sich diese Kategorie trennt.',
-    },
     pro: {
       en: 'For operators: sleep is the recovery lever most clients ignore and most coaches cannot see. Sleep tech earns its place when the data flows into the same dashboard as training load. For studios the play is education and partnerships, not inventory: a sleep workshop sells, a smart mattress in the lobby does not. Brands: hardware plus subscription is the model; distribution runs through wellness programmes, not gyms.',
       de: 'Für Betreiber: Schlaf ist der Erholungshebel, den die meisten Kund:innen ignorieren und die meisten Coaches nicht sehen. Schlaftechnik lohnt sich, wenn die Daten im selben Dashboard landen wie die Trainingsbelastung. Für Studios heißt das Bildung und Partnerschaften, nicht Lagerbestand: Ein Schlaf-Workshop verkauft sich, eine smarte Matratze im Eingang nicht. Für Marken: Hardware plus Abo ist das Modell; der Vertrieb läuft über Wellness-Programme, nicht über Studios.',
@@ -289,10 +311,6 @@ export const guides: BestGuide[] = [
     description: {
       en: 'Supplements scored 0–100 on the public Sqwod Score, with the evidence graded separately: what is actually proven, what is promising, and what is marketing.',
       de: 'Supplements mit Sqwod Score von 0–100 und separat bewerteter Evidenz: was wirklich belegt ist, was vielversprechend und was Marketing.',
-    },
-    lede: {
-      en: 'It tops the list on the two things that survive scrutiny in this category: third-party testing you can verify, and a dose that matches what the studies actually used.',
-      de: 'Es steht oben wegen der zwei Dinge, die in dieser Kategorie einer Prüfung standhalten: nachweisbare Fremdtestung und eine Dosis, die dem entspricht, was in den Studien wirklich verwendet wurde.',
     },
     pro: {
       en: 'For operators: supplements are margin, liability and trust in one shelf. Stock only third-party-tested products (Informed Sport, NSF, Cologne List), keep the range to protein, creatine and electrolytes, and never let a coach dose on the floor. Brands: the winners here sell on testing and transparency, not formulas; undisclosed blends lose the professional channel.',
@@ -372,10 +390,6 @@ export const guides: BestGuide[] = [
       en: 'Connected machines and home equipment scored 0–100 on the public Sqwod Score, including what the subscription costs over three years and what happens when it ends.',
       de: 'Vernetzte Geräte und Heim-Equipment mit Sqwod Score von 0–100, inklusive Abokosten über drei Jahre und was passiert, wenn das Abo endet.',
     },
-    lede: {
-      en: 'It wins because it is still a good machine with the subscription switched off: the test most of this category quietly fails.',
-      de: 'Es gewinnt, weil es auch ohne Abo eine gute Maschine bleibt: der Test, an dem diese Kategorie meist stillschweigend scheitert.',
-    },
     pro: {
       en: 'For operators: connected equipment is a lease decision, not a purchase. Price it per booked hour, check the commercial licence (most consumer subscriptions forbid studio use), and favour machines that work without the subscription. Investors: the home market reset higher after 2020 but is cooling, and the growth has moved to institutional buyers (SFIA 2026). Hardware alone is not a moat.',
       de: 'Für Betreiber: Vernetzte Geräte sind eine Leasing-, keine Kaufentscheidung. Rechne pro gebuchter Stunde, prüfe die gewerbliche Lizenz (die meisten Consumer-Abos verbieten Studionutzung) und bevorzuge Geräte, die ohne Abo funktionieren. Für Investoren: Der Heimmarkt hat sich nach 2020 höher eingependelt, kühlt aber ab, und das Wachstum liegt bei institutionellen Käufern (SFIA 2026). Hardware allein ist kein Burggraben.',
@@ -442,10 +456,6 @@ export const guides: BestGuide[] = [
     description: {
       en: 'Training apparel and shoes scored 0–100 on the public Sqwod Score: what holds up to real training volume rather than a first wash.',
       de: 'Sportbekleidung und Schuhe mit Sqwod Score von 0–100: was echtem Trainingsvolumen standhält und nicht nur der ersten Wäsche.',
-    },
-    lede: {
-      en: 'It comes out on top for the boring reason that decides this category: it still performs after fifty washes, which is where most of the competition quietly falls apart.',
-      de: 'Es steht oben aus dem langweiligen Grund, der diese Kategorie entscheidet: Es funktioniert nach fünfzig Wäschen noch, genau dort, wo die Konkurrenz still auseinanderfällt.',
     },
     pro: {
       en: 'For operators: apparel is brand surface, not revenue. Team kit and member merch earn their keep when they are the pieces coaches wear on camera; a rack of third-party leggings does not. Partner on co-branded drops with a brand that already sells online. Brands: the professional channel is coach endorsement and studio kit deals, both cheaper than paid social and stickier.',
@@ -514,10 +524,6 @@ export const guides: BestGuide[] = [
       en: 'Training apps and coaching software scored 0–100 on the public Sqwod Score, including what it costs to leave and whether your data comes with you.',
       de: 'Trainings-Apps und Coaching-Software mit Sqwod Score von 0–100, inklusive Wechselkosten und ob deine Daten mitkommen.',
     },
-    lede: {
-      en: 'It leads because it is the one you will still be using in a year, which in software is a completely different question from which one demos best.',
-      de: 'Sie führt, weil du sie in einem Jahr noch nutzt: bei Software eine völlig andere Frage als die, welche sich am besten vorführen lässt.',
-    },
     pro: {
       en: 'For operators: the app your clients log in is the retention tool you do not pay for. Choose on export and coach dashboard, not on workout library. If you coach remotely, the client-facing app is your product; price it into the package. Brands and investors: this category commoditises fast; the defensible layer is the coach-side tooling and the data, not the exercise videos.',
       de: 'Für Betreiber: Die App, in der deine Kund:innen loggen, ist das Retention-Tool, für das du nichts zahlst. Wähle nach Export und Coach-Dashboard, nicht nach Übungsbibliothek. Wenn du remote coachst, ist die Kund:innen-App dein Produkt; preise sie ins Paket ein. Für Marken und Investoren: Diese Kategorie wird schnell zur Massenware; verteidigbar sind Coach-Tools und Daten, nicht die Übungsvideos.',
@@ -584,10 +590,6 @@ export const guides: BestGuide[] = [
     description: {
       en: 'Booking, payments and studio operations software scored 0–100 on the public Sqwod Score, judged on what it costs to run a real business, not what it looks like in a demo.',
       de: 'Buchung, Zahlung und Studio-Betrieb mit Sqwod Score von 0–100, bewertet nach den Kosten im echten Betrieb, nicht nach dem Eindruck in der Demo.',
-    },
-    lede: {
-      en: 'It comes first because it disappears into the day rather than adding to it: the only meaningful test for software you have to touch every morning.',
-      de: 'Es steht vorn, weil es im Alltag verschwindet statt ihn zu belasten: der einzige sinnvolle Test für Software, die du jeden Morgen anfassen musst.',
     },
     pro: {
       en: 'For operators: booking and payment software is the one tool you cannot switch cheaply, so pick for the next three years. Weigh payout speed, no-show handling, aggregator integrations (Wellhub, Urban Sports Club) and whether members can self-serve. Investors: this is where the industry\'s recurring revenue is captured; switching costs are the moat and the reason incumbents get bought.',

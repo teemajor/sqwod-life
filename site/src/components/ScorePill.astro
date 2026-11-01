@@ -1,0 +1,26 @@
+---
+// Score with a word next to it (1 Nov 2026). A bare "84" in a table reads slower than
+// "84 Good": the word carries the band, the number carries the rank. Same thresholds as
+// the methodology page bands.
+import type { Lang } from '../i18n/ui';
+interface Props { score: number; lang: Lang; size?: 'sm' | 'md' | 'lg' }
+const { score, lang, size = 'md' } = Astro.props;
+const band = score >= 85 ? 'ex' : score >= 75 ? 'good' : score >= 65 ? 'fair' : 'weak';
+const WORD = {
+  en: { ex: 'Excellent', good: 'Good', fair: 'Fair', weak: 'Weak' },
+  de: { ex: 'Sehr gut', good: 'Gut', fair: 'Okay', weak: 'Schwach' },
+}[lang][band];
+---
+<span class={`pill pill-${size}`} data-band={band} role="img" aria-label={`Sqwod Score ${score} / 100, ${WORD}`}>
+  <b>{score}</b><span class="pw">{WORD}</span>
+</span>
+<style>
+  .pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);border-radius:999px;padding:3px 10px 3px 4px;background:var(--panel);white-space:nowrap;line-height:1}
+  .pill b{display:inline-grid;place-items:center;min-width:30px;height:30px;border-radius:999px;background:var(--chalk);color:var(--ink);font-size:14px;font-weight:800;padding:0 6px}
+  .pw{font-size:12px;font-weight:700;color:var(--g2);letter-spacing:.02em}
+  .pill[data-band="ex"] b{background:var(--accent);color:var(--accent-ink)}
+  .pill-sm b{min-width:26px;height:26px;font-size:12.5px}
+  .pill-sm .pw{font-size:11px}
+  .pill-lg b{min-width:40px;height:40px;font-size:19px}
+  .pill-lg .pw{font-size:13.5px}
+</style>
