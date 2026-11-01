@@ -2,7 +2,8 @@
 urlSlug: fitness-is-fracturing-here-s-how-to-pick-your-lane-1009
 lang: "de"
 counterpart: fitness-is-fracturing-here-s-how-to-pick-your-lane-1009
-title: "Fitness Is Fracturing: Here's How to Pick Your Lane"
+title: "SuperMush, GLORIAH, eine 100-Mio.-Dollar-Franchise: Wohin das Fitness-Kapital diese Woche floss"
+seoTitle: "Wohin Fitness-Kapital floss: SuperMush, GLORIAH, 100 Mio."
 topic: strategy
 newsTake: true
 description: "Six funding stories reveal one clear signal: the middle of the market is dying, and knowing which edge to own could define your next year."

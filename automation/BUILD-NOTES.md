@@ -151,3 +151,11 @@ What shipped on `/[lang]/intelligence/investors/`:
 
 - The body text started with no marker under two rules (the previous block's bottom border plus an inline top border on the prose), and the gated fade let the next paragraph peek out under the unlock card's rounded corner.
 - `ArticleView.astro`: the prose section now opens with a kicker ("The full report · N min read" / "The article …", DE "Der vollständige Report …") and an `id="report"` anchor that also appears in the contents rail; the extra top border is gone. The gated fade starts earlier and ends fully transparent (`38%` to `88%`, max-height 360px) and the unlock card overlaps by 36px instead of 60px, so nothing readable sits behind its corner. Screenshots: `automation/build-shots/report-start-phone*.png`, `article-start-phone.png`.
+
+## Titles, batch 1: clear not clever (1 Nov 2026)
+
+- Tee picked new H1s click-by-click for the 26 newest articles (three options each). 22 pairs changed, three already-clear ones kept, one unpublished. Rule applied: the title says what the piece is about and what the reader gets, in words a searcher would type; no rhetorical questions, no "here's", no second-person drama. Every changed article now has a `seoTitle` under 60 characters (the `<title>` tag), EN and DE.
+- DE twins get a matching DE title and seoTitle. Side effect: six DE twins still carried the English title, and several DE titles described a different article than their EN twin; both fixed for this batch. Expect the same in the remaining 109.
+- Unpublished: "Your Members Are Scared…" (1013) and its DE twin, moved to `site/src/content/articles/_unpublished/` (Astro ignores underscore folders; files kept). The URL now 404s; the piece was past its news-take index window, so no ranking is lost.
+- URLs are unchanged on purpose: slugs carry the old titles, but a slug change would cost the rankings the pages have.
+- Remaining: 109 articles for the same treatment, in rounds of four picks.

@@ -2,7 +2,8 @@
 urlSlug: fitness-is-booming-and-hemorrhaging-customers-at-the-same-ti-1013
 lang: "en"
 counterpart: fitness-is-booming-and-hemorrhaging-customers-at-the-same-ti-1013
-title: "Fitness Is Booming and Hemorrhaging Customers at the Same Time"
+title: "A $587 Cancellation Fee and a New Zealand Launch: Fitness's Retention Problem"
+seoTitle: "Gym Cancellation Fees and Churn: The Retention Problem"
 topic: retention
 newsTake: true
 description: "The industry is expanding into new markets while quietly failing the members it already has: here's how to stop doing both."

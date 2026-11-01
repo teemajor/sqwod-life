@@ -2,7 +2,8 @@
 urlSlug: orangetheory-fitness-turns-wearable-data-into-a-retention-to-1030
 lang: "de"
 counterpart: orangetheory-fitness-turns-wearable-data-into-a-retention-to-1030
-title: "Orangetheory Fitness Turns Wearable Data Into a Retention Tool"
+title: "Wie Orangetheory und Crunch Wearable-Daten zur Mitgliederbindung nutzen"
+seoTitle: "Orangetheory Wearable-Daten: So binden Studios Mitglieder"
 topic: retention
 description: "Wie Orangetheory Fitness und Crunch Fitness Wearable-Daten nutzen, um Mitglieder besser zu binden – und was Studio-Betreiber daraus lernen können."
 pillar: build
