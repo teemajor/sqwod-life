@@ -1,10 +1,11 @@
 {
   "id": "deal-stryv-raise-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "approved",
   "title": "Stryv: raise US$11.5M",
   "dealId": "stryv-raise-2026-11",
   "createdAt": "2026-11-01",
   "flags": [],
-  "checked": "high"
+  "checked": "high",
+  "decidedAt": "2026-11-01T15:39:00.723Z"
 }
