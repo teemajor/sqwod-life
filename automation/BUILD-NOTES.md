@@ -140,3 +140,4 @@ What shipped on `/[lang]/intelligence/investors/`:
 
 - On phones the row wrapped at random with four different item heights (Apple badge 52px, Spotify 44px, text pills 32px) and the label inline. Now every item shares one height (`--listen-h`, 44px, set in `global.css` and used by `ListenBadge.astro`), the text pills match the Spotify pill, and on screens up to 600px the label takes its own line above the badges.
 - The episode page dropped its own `.listen/.ll/.lp` overrides so both Daily pages use the same global rule. Screenshots: `automation/build-shots/daily-listen-*.png`.
+- Follow-up (Tee): every item takes the Apple badge's shape (rounded rectangle, `--listen-r` 8px) since that badge may not be altered; the Spotify pill, RSS and By email follow it. RSS and By email carry inline icons (`ICON_RSS`, `ICON_MAIL` in `config/podcast.ts`).

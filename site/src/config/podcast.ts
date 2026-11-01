@@ -15,3 +15,7 @@ export const rssFor = (lang: string) => (lang === 'de' ? '/podcast.de.xml' : '/p
 
 // Per-episode audio file path, written by automation/audio.mjs.
 export const episodeAudio = (date: string, lang: string) => `/audio/${date}-${lang}.mp3`;
+
+/** Inline icons for the "Listen on" row's own pills (RSS, By email); 16px, currentColor. */
+export const ICON_RSS = '<svg class="lp-i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="19" r="2" fill="currentColor"/><path d="M3 10a11 11 0 0 1 11 11M3 4a17 17 0 0 1 17 17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
+export const ICON_MAIL = '<svg class="lp-i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
