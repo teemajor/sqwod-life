@@ -714,8 +714,9 @@ export function mergeRun(stored, fresh, { now = Date.now(), failedSources = new 
   return stored;
 }
 
-/** The Friday this run belongs to (runs on Thursday evening publish for Friday). */
-export const editionFor = (now = Date.now()) => { const d = new Date(now); const add = (5 - d.getUTCDay() + 7) % 7; return iso(now + add * DAY); };
+/** The Friday this run belongs to: the scheduled Thursday-evening run publishes for Friday; a manual
+ *  run on Friday to Tuesday belongs to the Friday just passed, not the one up to six days ahead. */
+export const editionFor = (now = Date.now()) => { const d = new Date(now); let add = (5 - d.getUTCDay() + 7) % 7; if (add >= 3) add -= 7; return iso(now + add * DAY); };
 
 /* -------------------------------------------------------------------- run -- */
 
@@ -901,6 +902,8 @@ function selftest() {
   t('expiry: source failed this run -> not expired', m.find((x) => x.id === 'b').expired === false);
   t('merge: new job stamped', m.find((x) => x.id === 'c').seenAt === '2026-11-30');
   t('edition: Thursday run -> Friday', editionFor(Date.parse('2026-11-05T17:00:00Z')) === '2026-11-06');
+  t('edition: Saturday run -> Friday just passed', editionFor(Date.parse('2026-10-31T13:00:00Z')) === '2026-10-30');
+  t('edition: Wednesday run -> coming Friday', editionFor(Date.parse('2026-11-04T10:00:00Z')) === '2026-11-06');
   t('url: javascript: dropped', job('dssv', { rawId: 1, title: 'x', url: 'javascript:alert(1)' }).url === null);
   t('url: relative resolved', job('dssv', { rawId: 1, title: 'x', url: '/job/1', base: 'https://www.dssv.de/jobboerse/' }).url === 'https://www.dssv.de/job/1');
   t('date: epoch ms and junk', job('career-page', { rawId: 1, title: 'x', url: 'https://a.b', postedAt: 1761800000000 }).postedAt === '2025-10-30' && job('dssv', { rawId: 2, title: 'x', url: 'https://a.b', postedAt: 'soon' }).postedAt === null);
