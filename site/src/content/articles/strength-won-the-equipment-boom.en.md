@@ -104,18 +104,18 @@ charts:
     source: "Statista via Statista"
     url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
 benchmark:
-  label: "Strength share of your equipment budget or floor"
+  label: "How much of your equipment is strength kit?"
   unit: "%"
-  prompt: "Racks, benches, free weights and rigs as a share of everything you own or plan to buy. Compare it with where US home buyers moved."
+  prompt: "Count racks, benches, free weights and rigs as a share of all the equipment you own or plan to buy. For comparison: US home buyers put 36% of their equipment money into free weights and home gyms in 2023, up from 23% in 2019."
   betterIsHigh: true
   min: 0
   max: 100
   median: 36
-  medianLabel: "2023 home market"
+  medianLabel: "US home buyers 2023"
   bands:
-    - { to: 23, label: "Built for 2019" }
-    - { to: 36, label: "Catching up" }
-    - { to: 100, label: "Built for 2023" }
+    - { to: 23, label: "Below the 2019 mix" }
+    - { to: 36, label: "Between 2019 and 2023" }
+    - { to: 100, label: "At or above the 2023 mix" }
   source: "Free weights + home gyms as a share of four US home categories (free weights, bikes, home gyms, ellipticals): 23% in 2019, 36% in 2023. SFIA wholesale via Statista. A directional benchmark, not a rule."
 playbook:
   - { move: "Program for the kit your clients already own.", why: "Home free weights nearly tripled and exercise bikes more than doubled since 2019. Many of your clients have a home setup. Hybrid programming that uses it keeps them paying you between sessions." }

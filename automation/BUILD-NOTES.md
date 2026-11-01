@@ -163,3 +163,8 @@ What shipped on `/[lang]/intelligence/investors/`:
 ## Article head on phones (1 Nov 2026)
 
 - Between the hero and the body, four blocks stacked on a phone: the answer card, the decorative hero card, a byline that wrapped its date onto a second line, and a six-pill share row. `ArticleView.astro`: the decorative hero is skipped on screens up to 640px when an answer card already sits above it (`.hero-after-answer`); the byline is a wrapping row with CSS dot separators (`.meta-row`), the date follows the name and the role is hidden on phones. `ShareBar.astro`: when the native share sheet exists, phones show only Copy link and Share… (`has-native`); desktops keep all pills. Screenshots: `automation/build-shots/article-head-*.png`.
+
+## Benchmark widget: clear copy, result under the input (1 Nov 2026)
+
+- The equipment report's "Where do you stand?" block read "Strength share of your equipment budget or floor" with a prompt that assumed the reader knew "where US home buyers moved". Now a question ("How much of your equipment is strength kit?"), a one-line count instruction, and the comparison stated as a fact (36% in 2023, up from 23% in 2019). Bands say what they mean ("Below the 2019 mix"), EN and DE.
+- `BenchmarkWidget.astro`: the verdict sentence moved directly under the input so it stays visible with the phone keyboard open; the input label and placeholder no longer repeat each other ("Enter yours", "e.g. 29"); the sentence names the comparison (`medianLabel`) instead of always saying "industry avg", which was wrong on the equipment report. The other three benchmark articles (retention ×2, wearables) already read clearly and only gain the layout fix.
