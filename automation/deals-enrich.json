@@ -37,5 +37,31 @@
     "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/-Providence-agrees-Fitness-Park-acquisition-strengthening-European-fitness-interests/363874",
     "confidence": "high",
     "checkedAt": "2026-10-30"
+  },
+  "stryv-raise-2026-11": {
+    "id": "stryv-raise-2026-11",
+    "company": "Stryv",
+    "dealCountry": "Singapore",
+    "category": "Health & longevity",
+    "relevant": true,
+    "oneLineEn": "Stryv raised a US$11.5M Series B to expand personal care and wellness across Asia.",
+    "oneLineDe": "Stryv hat eine Series-B-Runde von 11,5 Mio. USD aufgenommen, um seine Wellness-Produkte in Asien auszubauen.",
+    "amount": "US$11.5 million",
+    "amountIs": "round",
+    "investors": [
+      "ACV Capital",
+      "Openspace Capital",
+      "OCTAVE Capital"
+    ],
+    "leadInvestors": [
+      "ACV Capital"
+    ],
+    "acquirer": "",
+    "announcedOn": "2026-10-27",
+    "dealStatus": "done",
+    "url": "https://technode.global/2026/10/27/singapores-stryv-raises-11-5m-series-b-led-by-acv-capital-to-expand-into-taiwan/",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-01"
   }
 }

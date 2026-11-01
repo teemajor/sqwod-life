@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31",
+  "generatedAt": "2026-11-01",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -19,6 +19,42 @@
   "mergeDays": 60,
   "deals": [
     {
+      "date": "2026-11-01",
+      "entity": "Stryv",
+      "kind": "raise",
+      "amount": "US$11.5M",
+      "amountUsd": 11500000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Stryv raised a US$11.5M Series B to expand personal care and wellness across Asia.",
+      "url": "https://alvinology.com/2026/10/31/stryv-raises-us11-5-million-to-expand-personal-care-and-home-wellness-business-across-asia/",
+      "source": "Alvinology",
+      "issue": "/en/daily/2026-11-01",
+      "region": "Asia-Pacific",
+      "category": "Health & longevity",
+      "id": "stryv-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-01",
+          "url": "https://alvinology.com/2026/10/31/stryv-raises-us11-5-million-to-expand-personal-care-and-home-wellness-business-across-asia/",
+          "issue": "/en/daily/2026-11-01"
+        }
+      ],
+      "country": "Singapore",
+      "investors": [
+        "ACV Capital",
+        "Openspace Capital",
+        "OCTAVE Capital"
+      ],
+      "leads": [
+        "ACV Capital"
+      ],
+      "noteDe": "Stryv hat eine Series-B-Runde von 11,5 Mio. USD aufgenommen, um seine Wellness-Produkte in Asien auszubauen.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
       "date": "2026-10-30",
       "entity": "Ozlo",
       "kind": "raise",
@@ -26,7 +62,7 @@
       "amountUsd": 22000000,
       "currency": "USD",
       "approx": false,
-      "note": "Ozlo raised a $22M Series B to expand sleep tech and target tinnitus and epilepsy.",
+      "note": "Crunchbase dates an Ozlo Series B of $37.7M to 4 June 2026; the tracker entry is the $22M round reported 30 Oct 2026 by Fitt Insider. Check whether this is a second close or a mis-dated entry before quoting totals.",
       "url": "https://insider.fitt.co/ozlo-raises-22m-to-advance-sleep-tech/",
       "source": "Fitt Insider",
       "issue": "/en/daily/2026-10-30",
@@ -731,7 +767,7 @@
       "amountUsd": 16500000,
       "currency": "USD",
       "approx": false,
-      "note": "fitness machine tracking infrastructure for operators",
+      "note": "hidden 31 Oct 2026: IPercept is CNC-machine monitoring (industrial AI), not wellness",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPQi1XLWxFOC16bGlNQ0pmMjBLdXFKQmdEeEphOHp0RFRTcFJNYzVaeDRFekhHQXA4cnZyZ1BwMFpxR2JObmpseGZzTDJsSEVGTGNlY1NMVFluVm5XNEI0UUhSM05xZUQ2RWVfamVVcUlnaEg3X19lQjBuU3ltQmlFSWtYU3RWOFU?oc=5",
       "source": "Tech.eu",
       "issue": "/en/daily/2026-09-29",
@@ -754,8 +790,8 @@
         "Isogon Ventures",
         "2150"
       ],
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "set by Tee"
     },
     {
       "date": "2026-09-29",
