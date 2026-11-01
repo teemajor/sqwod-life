@@ -14,7 +14,7 @@
   "kind": "review-due",
   "reliability": "Could not read the source automatically — verify by hand.",
   "recommendation": "Still supported by HFA 2025 Fitness Industry Benchmarking Report. Tap Keep as is.",
-  "status": "pending",
+  "status": "rejected",
   "createdAt": "2026-06-28",
   "notes": [
     {
@@ -35,5 +35,6 @@
   "foundDomain": "healthandfitness.org",
   "revisedAt": "2026-10-30T15:12:08.015Z",
   "lastChange": "Confirmed: HFA's own press release (Sep 30 2025) states member retention averaged 66.4%, matching Tee's published figure exactly.",
-  "unresolved": "The HFA 2026 Benchmarking Report exists (244 operators) but no updated annual retention figure from it has been publicly disclosed yet; 66.4% from the 2025 report remains the latest confirmed public number."
+  "unresolved": "The HFA 2026 Benchmarking Report exists (244 operators) but no updated annual retention figure from it has been publicly disclosed yet; 66.4% from the 2025 report remains the latest confirmed public number.",
+  "decidedAt": "2026-11-01T15:37:39.200Z"
 }
