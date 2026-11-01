@@ -22,8 +22,9 @@
   "kind": "changed",
   "reliability": "Web-search read of a single named source — sanity-check the snippet before publishing.",
   "recommendation": "Omdia updated its number. Confirm the snippet, then Update.",
-  "status": "pending",
+  "status": "approved",
   "autoApplied": false,
   "isCorrection": false,
-  "createdAt": "2026-09-28"
+  "createdAt": "2026-09-28",
+  "decidedAt": "2026-11-01T15:38:45.273Z"
 }
