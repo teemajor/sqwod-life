@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-growing-is-it-growing-for-everyone-1013
 lang: "de"
 counterpart: your-studio-is-growing-is-it-growing-for-everyone-1013
-title: "Wer nicht mitdenkt, verliert – die stille Revolution im Studio"
+title: "Wen der Fitness-Boom zurücklässt: Frauen, Krebspatienten, Kranke"
+seoTitle: "Wen der Fitness-Boom zurücklässt (Frauen, Krebspatienten)"
 topic: strategy
 newsTake: true
 description: "Warum KI, Longevity und Inklusion gerade alles verändern – und was du diese Woche konkret tun kannst."

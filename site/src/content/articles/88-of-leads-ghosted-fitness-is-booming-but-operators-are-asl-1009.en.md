@@ -2,7 +2,8 @@
 urlSlug: 88-of-leads-ghosted-fitness-is-booming-but-operators-are-asl-1009
 lang: "en"
 counterpart: 88-of-leads-ghosted-fitness-is-booming-but-operators-are-asl-1009
-title: "88% of leads ghosted: fitness is booming but operators are asleep"
+title: "88% of Gym Leads Get No Follow-Up Within 72 Hours"
+seoTitle: "88% of Gym Leads Get No Follow-Up in 72 Hours (Data)"
 topic: retention
 newsTake: true
 description: "The wellness industry is attracting real money and real customers, but most gym operators are fumbling the basics while the market moves on without them."

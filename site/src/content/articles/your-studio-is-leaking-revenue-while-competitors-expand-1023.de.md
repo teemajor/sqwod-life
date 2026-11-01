@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-leaking-revenue-while-competitors-expand-1023
 lang: "de"
 counterpart: your-studio-is-leaking-revenue-while-competitors-expand-1023
-title: "Wachstum ohne Boden: Warum Studios skalieren und trotzdem bluten"
+title: "Umsatzlecks im Studio: Wo Geld verloren geht und wie du es prüfst"
+seoTitle: "Umsatzlecks im Fitnessstudio: So machst du den Check"
 topic: pricing-revenue
 newsTake: true
 description: "Expansion ist sexy, aber versteckte Umsatzverluste fressen deinen Gewinn – hier ist, was du jetzt tun musst."

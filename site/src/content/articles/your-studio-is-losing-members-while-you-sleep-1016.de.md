@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-losing-members-while-you-sleep-1016
 lang: "de"
 counterpart: your-studio-is-losing-members-while-you-sleep-1016
-title: "Your Studio Is Losing Members While You Sleep"
+title: "World Class Romanias 3-Mio.-Euro-Longevity-Club und das Argument für reibungslosen Zugang"
+seoTitle: "World Class Romania: 3-Mio.-Euro-Club, Recovery als Produkt"
 topic: retention
 newsTake: true
 description: "Three industry moves this week reveal the same truth: the gap between premium experience and frictionless access is where members walk out the door."

@@ -2,7 +2,8 @@
 urlSlug: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
 lang: "en"
 counterpart: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
-title: "Your gym is leaving money on the table: here's the proof"
+title: "Where Gym Revenue Is Hiding: Dormant Members, Community, Longevity"
+seoTitle: "Hidden Gym Revenue: Dormant Members, Community, Longevity"
 topic: pricing-revenue
 newsTake: true
 description: "From dormant members to longevity medicine, five signals show exactly where fitness revenue is hiding right now."

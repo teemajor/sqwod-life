@@ -2,7 +2,8 @@
 urlSlug: your-gym-isn-t-too-small-to-steal-strategy-from-a-5-5b-brand-1006
 lang: "en"
 counterpart: your-gym-isn-t-too-small-to-steal-strategy-from-a-5-5b-brand-1006
-title: "Your gym isn't too small to steal strategy from a $5.5B brand"
+title: "Gym Positioning: Own One Thing Before You Stretch"
+seoTitle: "Gym Positioning Strategy: Own One Thing First"
 topic: marketing-community
 newsTake: true
 description: "What Vuori's expansion play and Vasa's rebrand reveal about the one positioning move every fitness operator needs to make right now."
