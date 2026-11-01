@@ -1,86 +1,5 @@
 [
   {
-    "date": "2026-10-09",
-    "key": "atn insights 88 of leads receive no followup within 72 hours",
-    "tokens": [
-      "insights",
-      "leads",
-      "receive",
-      "follow",
-      "within",
-      "hours"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "key": "new yoga pilates and fitness studio opens in toms river as t",
-    "tokens": [
-      "yoga",
-      "pilates",
-      "studio",
-      "opens",
-      "toms",
-      "river",
-      "township",
-      "welcomes",
-      "shine",
-      "studios"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "key": "building the handmade world of ouras latest brand campaign",
-    "tokens": [
-      "building",
-      "handmade",
-      "world",
-      "oura",
-      "latest",
-      "brand",
-      "campaign"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "key": "mahopac fitness coach is running for a reason",
-    "tokens": [
-      "mahopac",
-      "coach",
-      "running",
-      "reason"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "key": "cal ai cofounder zach yadegari secures 10m for persona an ai",
-    "tokens": [
-      "founder",
-      "zach",
-      "yadegari",
-      "secures",
-      "persona",
-      "assistant",
-      "wearable",
-      "band"
-    ]
-  },
-  {
-    "date": "2026-10-09",
-    "key": "bellevue wellness company viome expands health offerings wit",
-    "tokens": [
-      "bellevue",
-      "company",
-      "viome",
-      "expands",
-      "health",
-      "offerings",
-      "acquisition"
-    ]
-  },
-  {
     "date": "2026-10-12",
     "key": "5 things to know before printing gym membership cards inhous",
     "tokens": [
@@ -1312,6 +1231,87 @@
       "opening",
       "weekend",
       "spielbetrieb"
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "key": "unconventional thinker kyle scheele to challenge whats possi",
+    "tokens": [
+      "unconventional",
+      "thinker",
+      "kyle",
+      "scheele",
+      "challenge",
+      "what",
+      "possible",
+      "keynote",
+      "show",
+      "2027"
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "key": "mark mastrov unveils founders club brand combining fitness r",
+    "tokens": [
+      "mark",
+      "mastrov",
+      "unveils",
+      "founders",
+      "club",
+      "brand",
+      "combining",
+      "recovery",
+      "medical"
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "key": "stryv raises us115 million to expand personal care and home ",
+    "tokens": [
+      "stryv",
+      "raises",
+      "million",
+      "expand",
+      "personal",
+      "care",
+      "home",
+      "business",
+      "across",
+      "asia"
+    ],
+    "deal": "$11.5m"
+  },
+  {
+    "date": "2026-11-01",
+    "key": "the runningboomis turning marathonsintomultimilliondollarbra",
+    "tokens": [
+      "running",
+      "boom",
+      "turning",
+      "marathons",
+      "multimillion",
+      "dollar",
+      "brands"
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "key": "running faces a growth paradox",
+    "tokens": [
+      "running",
+      "faces",
+      "growth",
+      "paradox"
+    ]
+  },
+  {
+    "date": "2026-11-01",
+    "key": "neu im vorteilsclub 0  provision mit easy fitpass",
+    "tokens": [
+      "vorteilsclub",
+      "provision",
+      "easy",
+      "fitpass"
     ]
   }
 ]
