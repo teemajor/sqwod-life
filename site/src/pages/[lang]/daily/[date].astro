@@ -4,7 +4,7 @@ import { ogPath } from '../../../lib/og';
 import { getCollection } from 'astro:content';
 import { type Lang } from '../../../i18n/ui';
 import { pillarMeta } from '../../../i18n/pillars';
-import { appleFor, spotifyFor, rssFor, episodeAudio } from '../../../config/podcast';
+import { appleFor, spotifyFor, rssFor, episodeAudio, ICON_RSS } from '../../../config/podcast';
 import ListenBadge from '../../../components/ListenBadge.astro';
 import ShareBar from '../../../components/ShareBar.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
@@ -107,7 +107,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
         <span class="ll">{tx.listen}:</span>
         <ListenBadge platform="apple" href={appleFor(lang)} lang={lang} />
         <ListenBadge platform="spotify" href={spotifyFor(lang)} lang={lang} />
-        <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener">RSS</a>
+        <a class="lp" href={rssFor(lang)} target="_blank" rel="noopener"><Fragment set:html={ICON_RSS} />RSS</a>
       </div>
     </section>
     <ShareBar path={`/${lang}/daily/${d.urlSlug}`} title={d.connectDots?.title || d.summary || `Sqwod Daily · ${fmt}`} lang={lang} />
@@ -308,10 +308,7 @@ if (hasAudio) jsonLd.audio = { '@type': 'AudioObject', name: epTitle, contentUrl
   .player.playing .pl-i-pause{display:block}
   audio{width:100%}
   :global(:root:not([data-theme="light"])) audio{color-scheme:dark}
-  .listen{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
-  .ll{font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--g3)}
-  .lp{display:inline-flex;align-items:center;min-height:36px;font-size:13px;font-weight:600;text-decoration:none;color:var(--chalk);border:1px solid var(--line);border-radius:999px;padding:0 13px;transition:border-color .15s ease,color .15s}
-  .lp:hover{border-color:var(--accent);color:var(--accent)}
+  /* .listen, .ll and .lp come from global.css so this row matches the Daily index. */
 
   .dgrid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start;padding-top:8px}
   .dmain{min-width:0;max-width:720px}

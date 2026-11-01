@@ -2,7 +2,8 @@
 urlSlug: fitness-is-selling-belonging-now-are-you-keeping-up-1023
 lang: "de"
 counterpart: fitness-is-selling-belonging-now-are-you-keeping-up-1023
-title: "Fitness Is Selling Belonging Now: Are You Keeping Up?"
+title: "Zugehörigkeit ist der neue Hebel für Mitgliederbindung"
+seoTitle: "Zugehörigkeit senkt Kündigungen: Community als Bindungshebel"
 topic: marketing-community
 newsTake: true
 description: "From pharmacy referrals to protein snacks to Mark Wahlberg's gym, every smart bet in fitness right now is chasing the same thing: connection with a purpose."

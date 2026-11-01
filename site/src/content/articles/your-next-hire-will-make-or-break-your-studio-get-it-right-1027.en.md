@@ -2,7 +2,8 @@
 urlSlug: your-next-hire-will-make-or-break-your-studio-get-it-right-1027
 lang: "en"
 counterpart: your-next-hire-will-make-or-break-your-studio-get-it-right-1027
-title: "Your Next Hire Will Make or Break Your Studio: Get It Right"
+title: "How to Hire for a Fitness Studio: Stop Hiring on Gut Feel"
+seoTitle: "How to Hire for a Fitness Studio (Not on Gut Feel)"
 topic: strategy
 newsTake: true
 description: "A wave of leadership moves across the fitness industry reveals one uncomfortable truth: who you put in charge matters more than any piece of equipment you'll ever buy."

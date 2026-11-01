@@ -16,7 +16,7 @@ import { TOOLS, type Tool } from '../../../config/tools';
 import { PRICING_INDEX } from '../../../config/pricing-index';
 import { liveDeals } from '../../../lib/deals';
 import { investors, TYPE_LABEL, type InvestorType } from '../../../lib/investors';
-import { liveJobs, hasPay, jobsEdition, type Job } from '../../../lib/jobs';
+import { liveJobs, hasPay, jobsGeneratedAt, type Job } from '../../../lib/jobs';
 import { flagCode, countryName } from '../../../lib/flags';
 import bls from '../../../data/pricing-index/bls.json';
 
@@ -134,7 +134,7 @@ const schema = {
   {spotlight && (
     <section class="sp" aria-labelledby="sp-h">
       <div class="sp-l">
-        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{T.isNew} · {spotlight.name[lang]}{jobsEdition && ` · ${T.updated} ${fmtDay(jobsEdition)}`}</span>
+        <span class="tl-tag"><span class="pulse" aria-hidden="true"></span>{T.isNew} · {spotlight.name[lang]}{jobsGeneratedAt && ` · ${T.updated} ${fmtDay(jobsGeneratedAt)}`}</span>
         <h2 class="sp-h" id="sp-h">{T.jobsQ}</h2>
         <div class="sp-stats">
           <div><span class="dnum">{fmtN(jobs.length)}</span><span>{T.roles}</span></div>

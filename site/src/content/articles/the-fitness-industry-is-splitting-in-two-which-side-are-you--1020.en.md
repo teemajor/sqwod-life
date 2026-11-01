@@ -2,7 +2,8 @@
 urlSlug: the-fitness-industry-is-splitting-in-two-which-side-are-you--1020
 lang: "en"
 counterpart: the-fitness-industry-is-splitting-in-two-which-side-are-you--1020
-title: "The Fitness Industry Is Splitting in Two, Which Side Are You On?"
+title: "The Fitness Market Is Splitting: Boutique Expansion vs Corporate Wellness Decline"
+seoTitle: "Boutique Fitness vs Corporate Wellness: Market Split"
 topic: strategy
 newsTake: true
 description: "Boutique studios are betting big on physical expansion while corporate wellness quietly implodes: here's how to position your business before the market makes the choice for you."

@@ -2,7 +2,8 @@
 urlSlug: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
 lang: "de"
 counterpart: your-gym-is-leaving-money-on-the-table-here-s-the-proof-1006
-title: "Fitness-Studios: Warum Wachstum jetzt anders aussieht"
+title: "Wo Studio-Umsatz versteckt liegt: inaktive Mitglieder, Community, Longevity"
+seoTitle: "Versteckter Studio-Umsatz: Inaktive, Community, Longevity"
 topic: pricing-revenue
 newsTake: true
 description: "Fünf Signale aus dieser Woche zeigen, dass die klügsten Betreiber nicht mehr nur auf Mitglieder setzen – sondern auf Bedeutung."

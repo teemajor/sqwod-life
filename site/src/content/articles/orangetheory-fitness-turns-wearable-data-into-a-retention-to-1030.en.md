@@ -2,7 +2,8 @@
 urlSlug: orangetheory-fitness-turns-wearable-data-into-a-retention-to-1030
 lang: "en"
 counterpart: orangetheory-fitness-turns-wearable-data-into-a-retention-to-1030
-title: "Orangetheory Fitness Turns Wearable Data Into a Retention Tool"
+title: "How Orangetheory and Crunch Use Wearable Data to Keep Members"
+seoTitle: "Orangetheory Wearable Data: How Gyms Use It to Retain"
 topic: retention
 description: "How Orangetheory Fitness and Crunch Fitness are using wearables and fitness tracking to personalize coaching and keep members coming back."
 pillar: build

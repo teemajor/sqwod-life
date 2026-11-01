@@ -390,11 +390,15 @@ body{background:var(--page-wash) fixed}
 .audio-play .tri{position:absolute;top:50%;left:53%;transform:translate(-50%,-50%);width:0;height:0;border-style:solid;border-width:12px 0 12px 19px;border-color:transparent transparent transparent #fafafa}
 .audio-play:hover .ring{filter:brightness(1.15)}
 .audio-meta{flex:1;min-width:0}
-.listen{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.listen .ll{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);font-weight:700}
-.listen .lp{font-size:12px;font-weight:700;color:var(--g1);border:1px solid var(--line);border-radius:999px;padding:7px 12px;text-decoration:none;background:var(--panel)}
+/* "Listen on" row: every item is the same height (--listen-h) so the row stays level
+   when it wraps; on phones the label takes its own line above the badges. */
+.listen{--listen-h:44px;--listen-r:8px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.listen .ll{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--g3);font-weight:700;margin-right:2px}
+.listen .lp{display:inline-flex;align-items:center;gap:8px;height:var(--listen-h);padding:0 16px 0 13px;font-size:13px;font-weight:700;color:var(--g1);border:1px solid var(--line);border-radius:var(--listen-r);text-decoration:none;background:var(--panel);transition:border-color .15s ease}
 .listen .lp:hover{border-color:var(--edge)}
+.listen .lp-i{width:17px;height:17px;flex:none}
 .listen .sub-cta{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+@media(max-width:600px){.listen .ll{flex:0 0 100%;margin:0 0 -2px}}
 .ep-now{margin-top:12px;font-size:12px;color:var(--g3)}
 @media(max-width:560px){.audio-hero{gap:16px}.audio-play{width:76px;height:76px}}
 

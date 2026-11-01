@@ -2,7 +2,8 @@
 urlSlug: the-fitness-industry-is-splitting-in-two-which-side-are-you--1020
 lang: "de"
 counterpart: the-fitness-industry-is-splitting-in-two-which-side-are-you--1020
-title: "Wachsen oder stagnieren: Was die Studio-Expansion dir verrät"
+title: "Der Fitnessmarkt teilt sich: Boutique-Expansion gegen schrumpfendes Corporate Wellness"
+seoTitle: "Boutique-Fitness vs. Corporate Wellness: Markt teilt sich"
 topic: strategy
 newsTake: true
 description: "Während Top-Studios aggressiv skalieren und Corporate-Budgets schrumpfen, entscheidet deine nächste Entscheidung darüber, ob du Marktführer oder Lückenbüßer wirst."

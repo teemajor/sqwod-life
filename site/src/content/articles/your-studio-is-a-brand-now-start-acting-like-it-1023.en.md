@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-a-brand-now-start-acting-like-it-1023
 lang: "en"
 counterpart: your-studio-is-a-brand-now-start-acting-like-it-1023
-title: "Your Studio Is a Brand Now. Start Acting Like It."
+title: "How to Brand a Fitness Studio: Scarcity, Identity and the Art-Market Lesson"
+seoTitle: "How to Brand a Fitness Studio: Scarcity and Identity"
 topic: marketing-community
 newsTake: true
 description: "Three fitness franchises are scaling fast by selling an experience, not just a workout: here's what that means for your programming today."

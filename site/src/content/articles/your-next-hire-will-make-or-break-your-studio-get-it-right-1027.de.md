@@ -2,7 +2,8 @@
 urlSlug: your-next-hire-will-make-or-break-your-studio-get-it-right-1027
 lang: "de"
 counterpart: your-next-hire-will-make-or-break-your-studio-get-it-right-1027
-title: "Warum dein nächster Wachstumshebel ein Mensch ist – kein Tool"
+title: "Richtig einstellen im Fitnessstudio: Schluss mit Bauchgefühl"
+seoTitle: "Personal fürs Fitnessstudio einstellen: ohne Bauchgefühl"
 topic: strategy
 newsTake: true
 description: "Während KI-Coaching-Dienste boomen, zeigen aktuelle Branchenbewegungen: Wer jetzt die richtigen Menschen einstellt und entwickelt, gewinnt den nächsten Zyklus."

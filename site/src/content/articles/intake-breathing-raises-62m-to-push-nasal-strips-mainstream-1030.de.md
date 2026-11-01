@@ -2,7 +2,8 @@
 urlSlug: intake-breathing-raises-62m-to-push-nasal-strips-mainstream-1030
 lang: "de"
 counterpart: intake-breathing-raises-62m-to-push-nasal-strips-mainstream-1030
-title: "Intake Breathing Raises $62M to Push Nasal Strips Mainstream"
+title: "Intake Breathing sammelt 62 Mio. USD ein: Nasenstrips werden Mainstream"
+seoTitle: "Intake Breathing: 62 Mio. USD für Nasenstrips"
 topic: market-moves
 description: "Warum die 62-Millionen-Dollar-Finanzierung von Intake Breathing zeigt, dass Nasenatmung, Schlaf und Recovery zu ernsthaften Investment-Kategorien geworden sind, und was das für Fitnessbetreiber bedeutet."
 pillar: signal

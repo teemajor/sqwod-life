@@ -6,7 +6,7 @@
 import Base from '../../../layouts/Base.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { languages, type Lang } from '../../../i18n/ui';
-import { liveJobs, hasPay, jobsEdition, jobsGeneratedAt, brandOf, payMonthly, type Job } from '../../../lib/jobs';
+import { liveJobs, hasPay, jobsGeneratedAt, brandOf, payMonthly, type Job } from '../../../lib/jobs';
 import { JOBS_JSONLD_ON_LIST } from '../../../config/seo.mjs';
 
 export function getStaticPaths() {
@@ -70,7 +70,7 @@ const types = Object.keys(T.types).filter((k) => jobs.some((j) => j.type === k))
 const count = (f: (j: Job) => boolean) => jobs.filter(f).length;
 const employments = ['full-time', 'part-time', 'freelance', 'mini-job'].filter((e) => jobs.some((j) => j.employment === e));
 const sources = Object.keys(SOURCE).filter((k) => jobs.some((j) => j.source === k));
-const today = jobsEdition || jobsGeneratedAt || new Date().toISOString().slice(0, 10);
+const today = jobsGeneratedAt || new Date().toISOString().slice(0, 10);   // the run date, not the Friday edition label
 const daysOld = (j: Job) => Math.round((Date.parse(today + 'T12:00:00Z') - Date.parse((j.postedAt || j.seenAt) + 'T12:00:00Z')) / 86400000);
 const postedBucket = (j: Job) => { const d = daysOld(j); return d <= 7 ? '7 30' : d <= 30 ? '30' : ''; };
 const brands = new Map<string, { b: ReturnType<typeof brandOf>; n: number }>();
@@ -94,7 +94,7 @@ const withPay = jobs.filter(hasPay).length;
 const payPct = jobs.length ? Math.round((withPay / jobs.length) * 100) : 0;
 const cities = new Set(jobs.filter((j) => j.region !== 'Remote DE').map((j) => (j.city || '').toLowerCase()).filter(Boolean)).size;
 const employers = new Set(jobs.map((j) => (j.employer || '').toLowerCase()).filter(Boolean)).size;
-const edition = jobsEdition || jobsGeneratedAt;
+const edition = jobsGeneratedAt;
 
 // JobPosting JSON-LD per row: switched off by default (see JOBS_JSONLD_ON_LIST in config/seo.mjs).
 const EMP_SCHEMA: Record<string, string> = { 'full-time': 'FULL_TIME', 'part-time': 'PART_TIME', freelance: 'CONTRACTOR', 'mini-job': 'PART_TIME' };

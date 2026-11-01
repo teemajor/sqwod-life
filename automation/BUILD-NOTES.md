@@ -135,3 +135,36 @@ What shipped on `/[lang]/intelligence/investors/`:
 - 39 moved to `Certain`. Four stay `Likely` because the official site does not confirm the claim: Nike Ventures (Nike has no venture page), Techstars Sports (2026 cohort and cheque terms unconfirmed), Black Forest Accelerator (site documents only 2014) and ukactive ActiveLab (no cohort after 2019; the entry had wrongly said "launched July 2026").
 - Facts corrected from the official pages: Elysian Park founded 2015 (was 2014); KB Partners makes no new fund investments (SPVs only); Finn Capital is pre-seed/seed since 2013; Prelude Fund III $600M, $15M to $75M cheques; VMG $10M to $200M; age1 $500K to $4M; leAD $100K to $10M; Speedinvest €250K to €5M; Passion Capital £400K to £500K with an AI/fintech focus; Connect Ventures' thesis is now AI/hardware; Northstar up to £750K; Eka Fund 2 about £80M, £1M to £3M; Simplyhealth £60M fund, £1M to £5M Series A; EIC equity €1M to €10M; NIHR i4i streams and amounts; INiTS STARTKapital up to €100K; Stadia 14 weeks, $100K cash plus services; Comcast applies via F6S; HYPE 13 accelerators; Deutscher Gründerpreis categories and 15 Nov 2026 deadline; milon bootcamp September 2025.
 - New cheque strings parse into the Investor Map cheque bands (`parseCheck`), so the matcher sees them.
+
+## Jobs "Updated" date (1 Nov 2026)
+
+- The jobs page and the Tools card showed "Updated 6 Nov" on 1 Nov. `jobs.json` carries two dates: `generatedAt` (the run) and `edition` (the Friday the run publishes for). Both pages preferred `edition`, and a manual Saturday run was stamped with the Friday six days ahead. The pages now show `generatedAt`, and the age buckets ("last 7 days") count from the run date too.
+- `editionFor` now maps a run on Friday to Tuesday to the Friday just passed (Wednesday and Thursday still map to the coming Friday); selftest covers Thursday, Saturday and Wednesday.
+
+## Daily "Listen on" row (1 Nov 2026)
+
+- On phones the row wrapped at random with four different item heights (Apple badge 52px, Spotify 44px, text pills 32px) and the label inline. Now every item shares one height (`--listen-h`, 44px, set in `global.css` and used by `ListenBadge.astro`), the text pills match the Spotify pill, and on screens up to 600px the label takes its own line above the badges.
+- The episode page dropped its own `.listen/.ll/.lp` overrides so both Daily pages use the same global rule. Screenshots: `automation/build-shots/daily-listen-*.png`.
+- Follow-up (Tee): every item takes the Apple badge's shape (rounded rectangle, `--listen-r` 8px) since that badge may not be altered; the Spotify pill, RSS and By email follow it. RSS and By email carry inline icons (`ICON_RSS`, `ICON_MAIL` in `config/podcast.ts`).
+
+## Report body start (1 Nov 2026)
+
+- The body text started with no marker under two rules (the previous block's bottom border plus an inline top border on the prose), and the gated fade let the next paragraph peek out under the unlock card's rounded corner.
+- `ArticleView.astro`: the prose section now opens with a kicker ("The full report · N min read" / "The article …", DE "Der vollständige Report …") and an `id="report"` anchor that also appears in the contents rail; the extra top border is gone. The gated fade starts earlier and ends fully transparent (`38%` to `88%`, max-height 360px) and the unlock card overlaps by 36px instead of 60px, so nothing readable sits behind its corner. Screenshots: `automation/build-shots/report-start-phone*.png`, `article-start-phone.png`.
+
+## Titles, batch 1: clear not clever (1 Nov 2026)
+
+- Tee picked new H1s click-by-click for the 26 newest articles (three options each). 22 pairs changed, three already-clear ones kept, one unpublished. Rule applied: the title says what the piece is about and what the reader gets, in words a searcher would type; no rhetorical questions, no "here's", no second-person drama. Every changed article now has a `seoTitle` under 60 characters (the `<title>` tag), EN and DE.
+- DE twins get a matching DE title and seoTitle. Side effect: six DE twins still carried the English title, and several DE titles described a different article than their EN twin; both fixed for this batch. Expect the same in the remaining 109.
+- Unpublished: "Your Members Are Scared…" (1013) and its DE twin, moved to `site/src/content/articles/_unpublished/` (Astro ignores underscore folders; files kept). The URL now 404s; the piece was past its news-take index window, so no ranking is lost.
+- URLs are unchanged on purpose: slugs carry the old titles, but a slug change would cost the rankings the pages have.
+- Remaining: 109 articles for the same treatment, in rounds of four picks.
+
+## Article head on phones (1 Nov 2026)
+
+- Between the hero and the body, four blocks stacked on a phone: the answer card, the decorative hero card, a byline that wrapped its date onto a second line, and a six-pill share row. `ArticleView.astro`: the decorative hero is skipped on screens up to 640px when an answer card already sits above it (`.hero-after-answer`); the byline is a wrapping row with CSS dot separators (`.meta-row`), the date follows the name and the role is hidden on phones. `ShareBar.astro`: when the native share sheet exists, phones show only Copy link and Share… (`has-native`); desktops keep all pills. Screenshots: `automation/build-shots/article-head-*.png`.
+
+## Benchmark widget: clear copy, result under the input (1 Nov 2026)
+
+- The equipment report's "Where do you stand?" block read "Strength share of your equipment budget or floor" with a prompt that assumed the reader knew "where US home buyers moved". Now a question ("How much of your equipment is strength kit?"), a one-line count instruction, and the comparison stated as a fact (36% in 2023, up from 23% in 2019). Bands say what they mean ("Below the 2019 mix"), EN and DE.
+- `BenchmarkWidget.astro`: the verdict sentence moved directly under the input so it stays visible with the phone keyboard open; the input label and placeholder no longer repeat each other ("Enter yours", "e.g. 29"); the sentence names the comparison (`medianLabel`) instead of always saying "industry avg", which was wrong on the equipment report. The other three benchmark articles (retention ×2, wearables) already read clearly and only gain the layout fix.

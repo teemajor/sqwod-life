@@ -2,7 +2,7 @@
 urlSlug: strength-won-the-equipment-boom
 lang: de
 counterpart: strength-won-the-equipment-boom
-title: "Krafttraining hat den Geräte-Boom gewonnen. Jetzt kaufen die Studios wieder."
+title: "Fitnessgeräte-Markt 2026: Kraft hat gewonnen, und die Studios kaufen wieder"
 seoTitle: "Fitnessgeräte-Markt 2026: Daten zum Kraft-Boom"
 description: "Der US-Absatz von Freihanteln hat sich von 2019 bis 2023 fast verdreifacht (+179 %), Crosstrainer sind geschrumpft. Heimgeräte erreichten ein Rekordhoch von 6,56 Mrd. $, Studiogeräte 1,69 Mrd. $, und 2025 floss das Geld zurück zu den Anlagen. Wohin die Ausgaben für Fitnessgeräte wirklich gehen. Ein lebender Sqwod-Intelligence-Report."
 pillar: build
@@ -104,18 +104,18 @@ charts:
     source: "Statista via Statista"
     url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
 benchmark:
-  label: "Kraft-Anteil an deinem Equipment-Budget oder deiner Fläche"
+  label: "Wie viel deiner Geräte sind Kraftgeräte?"
   unit: "%"
-  prompt: "Racks, Bänke, Freihanteln und Rigs als Anteil an allem, was du hast oder kaufen willst. Vergleich ihn damit, wohin US-Heimkäufer:innen gewandert sind."
+  prompt: "Zähle Racks, Bänke, Freihanteln und Rigs als Anteil an allen Geräten, die du hast oder kaufen willst. Zum Vergleich: US-Heimkäufer steckten 2023 36 % ihres Gerätebudgets in Freihanteln und Home-Gyms, 2019 waren es 23 %."
   betterIsHigh: true
   min: 0
   max: 100
   median: 36
-  medianLabel: "Heimmarkt 2023"
+  medianLabel: "US-Heimkäufer 2023"
   bands:
-    - { to: 23, label: "Gebaut für 2019" }
-    - { to: 36, label: "Holt auf" }
-    - { to: 100, label: "Gebaut für 2023" }
+    - { to: 23, label: "Unter dem Mix von 2019" }
+    - { to: 36, label: "Zwischen 2019 und 2023" }
+    - { to: 100, label: "Auf oder über dem Mix von 2023" }
   source: "Freihanteln + Home-Gyms als Anteil an vier US-Heimkategorien (Freihanteln, Bikes, Home-Gyms, Crosstrainer): 23 % in 2019, 36 % in 2023. SFIA-Großhandel via Statista. Eine Richtung, keine Regel."
 playbook:
   - { move: "Plane mit dem Equipment, das deine Kund:innen schon besitzen.", why: "Freihanteln für zu Hause haben sich seit 2019 fast verdreifacht, Heimtrainer-Bikes mehr als verdoppelt. Viele deiner Kund:innen haben ein Setup zu Hause. Hybride Programme, die es nutzen, halten sie auch zwischen den Einheiten bei dir." }

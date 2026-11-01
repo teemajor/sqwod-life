@@ -2,7 +2,8 @@
 urlSlug: your-members-don-t-want-a-gym-they-want-a-feeling-1006
 lang: "en"
 counterpart: your-members-don-t-want-a-gym-they-want-a-feeling-1006
-title: "Your Members Don't Want a Gym. They Want a Feeling."
+title: "Wellness Moved From Sweat to Sensation: Rest Studios, Scents and a Gym Dog"
+seoTitle: "Wellness From Sweat to Sensation: What Members Buy Now"
 topic: marketing-community
 newsTake: true
 description: "Six stories from this week prove wellness has quietly moved from sweat to sensation, and your studio needs to catch up."

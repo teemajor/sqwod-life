@@ -2,7 +2,8 @@
 urlSlug: why-every-studio-is-chasing-the-same-woman-right-now-1027
 lang: "de"
 counterpart: why-every-studio-is-chasing-the-same-woman-right-now-1027
-title: "Warum dein Kursplan gerade veraltet und was du jetzt tust"
+title: "Krafttraining für Frauen: Die Nachfrage, der jedes Studio hinterherläuft"
+seoTitle: "Krafttraining für Frauen: Warum Studios darum kämpfen"
 topic: strategy
 newsTake: true
 description: "Drei Branchentrends zeigen: Wer sein Programm nicht anpasst, verliert genau die Zielgruppe, um die alle kämpfen."

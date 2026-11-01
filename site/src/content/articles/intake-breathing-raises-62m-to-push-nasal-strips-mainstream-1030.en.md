@@ -2,7 +2,8 @@
 urlSlug: intake-breathing-raises-62m-to-push-nasal-strips-mainstream-1030
 lang: "en"
 counterpart: intake-breathing-raises-62m-to-push-nasal-strips-mainstream-1030
-title: "Intake Breathing Raises $62M to Push Nasal Strips Mainstream"
+title: "Intake Breathing Raises $62M: Nasal Strips Are Going Mainstream"
+seoTitle: "Intake Breathing $62M Raise: Nasal Strips Go Mainstream"
 topic: market-moves
 description: "A $62 million investment from Kind Snacks founder Daniel Lubetzky's firm signals that nasal breathing is moving from niche biohacker product to mainstream consumer wellness category, with implications for how fitness operators think about recovery offerings."
 pillar: signal
