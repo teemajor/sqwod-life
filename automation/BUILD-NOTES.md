@@ -146,3 +146,8 @@ What shipped on `/[lang]/intelligence/investors/`:
 - On phones the row wrapped at random with four different item heights (Apple badge 52px, Spotify 44px, text pills 32px) and the label inline. Now every item shares one height (`--listen-h`, 44px, set in `global.css` and used by `ListenBadge.astro`), the text pills match the Spotify pill, and on screens up to 600px the label takes its own line above the badges.
 - The episode page dropped its own `.listen/.ll/.lp` overrides so both Daily pages use the same global rule. Screenshots: `automation/build-shots/daily-listen-*.png`.
 - Follow-up (Tee): every item takes the Apple badge's shape (rounded rectangle, `--listen-r` 8px) since that badge may not be altered; the Spotify pill, RSS and By email follow it. RSS and By email carry inline icons (`ICON_RSS`, `ICON_MAIL` in `config/podcast.ts`).
+
+## Report body start (1 Nov 2026)
+
+- The body text started with no marker under two rules (the previous block's bottom border plus an inline top border on the prose), and the gated fade let the next paragraph peek out under the unlock card's rounded corner.
+- `ArticleView.astro`: the prose section now opens with a kicker ("The full report · N min read" / "The article …", DE "Der vollständige Report …") and an `id="report"` anchor that also appears in the contents rail; the extra top border is gone. The gated fade starts earlier and ends fully transparent (`38%` to `88%`, max-height 360px) and the unlock card overlaps by 36px instead of 60px, so nothing readable sits behind its corner. Screenshots: `automation/build-shots/report-start-phone*.png`, `article-start-phone.png`.
