@@ -140,3 +140,9 @@ What shipped on `/[lang]/intelligence/investors/`:
 
 - The jobs page and the Tools card showed "Updated 6 Nov" on 1 Nov. `jobs.json` carries two dates: `generatedAt` (the run) and `edition` (the Friday the run publishes for). Both pages preferred `edition`, and a manual Saturday run was stamped with the Friday six days ahead. The pages now show `generatedAt`, and the age buckets ("last 7 days") count from the run date too.
 - `editionFor` now maps a run on Friday to Tuesday to the Friday just passed (Wednesday and Thursday still map to the coming Friday); selftest covers Thursday, Saturday and Wednesday.
+
+## Daily "Listen on" row (1 Nov 2026)
+
+- On phones the row wrapped at random with four different item heights (Apple badge 52px, Spotify 44px, text pills 32px) and the label inline. Now every item shares one height (`--listen-h`, 44px, set in `global.css` and used by `ListenBadge.astro`), the text pills match the Spotify pill, and on screens up to 600px the label takes its own line above the badges.
+- The episode page dropped its own `.listen/.ll/.lp` overrides so both Daily pages use the same global rule. Screenshots: `automation/build-shots/daily-listen-*.png`.
+- Follow-up (Tee): every item takes the Apple badge's shape (rounded rectangle, `--listen-r` 8px) since that badge may not be altered; the Spotify pill, RSS and By email follow it. RSS and By email carry inline icons (`ICON_RSS`, `ICON_MAIL` in `config/podcast.ts`).
