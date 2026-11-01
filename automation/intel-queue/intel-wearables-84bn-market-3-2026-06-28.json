@@ -9,21 +9,31 @@
   "checkedUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
   "checkedDomain": "grandviewresearch.com",
   "sourceUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
-  "snippet": "(couldn't fetch source: HTTP 403)",
-  "confidence": "n/a",
+  "snippet": "Smart rings and smart glasses may experience as much as 88% and 73% growth, respectively.",
+  "confidence": "medium",
   "kind": "review-due",
   "reliability": "Could not read the source automatically — verify by hand.",
-  "recommendation": "Reminder to check grandviewresearch.com yourself; your current figure stays either way.",
-  "status": "revise",
+  "recommendation": "Still supported by IDC Worldwide Quarterly Wearable Device Tracker (Sep 2024). Tap Keep as is.",
+  "status": "pending",
   "createdAt": "2026-06-28",
   "notes": [
     {
       "at": "2026-11-01T15:38:19.672Z",
-      "text": "if you cant find a figure, then we cant make the claim"
+      "text": "if you cant find a figure, then we cant make the claim",
+      "appliedAt": "2026-11-01T15:43:25.106Z"
     },
     {
       "at": "2026-11-01T15:38:20.992Z",
-      "text": "if you cant find a figure, then we cant make the claim"
+      "text": "if you cant find a figure, then we cant make the claim",
+      "appliedAt": "2026-11-01T15:43:25.106Z"
     }
-  ]
+  ],
+  "foundUrl": "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories",
+  "foundSource": "IDC Worldwide Quarterly Wearable Device Tracker (Sep 2024)",
+  "foundYear": "2024",
+  "foundDomain": "businesswire.com",
+  "revisions": 1,
+  "revisedAt": "2026-11-01T15:43:25.106Z",
+  "lastChange": "The +88% smart-ring shipment growth figure for 2024 is confirmed, but the source is IDC (Worldwide Quarterly Wearable Device Tracker, Sep 2024 press release), not Grand View Research — the cited GVR URL publishes only revenue/CAGR data with no mention of 88% shipments.",
+  "unresolved": "The Grand View Research URL cited in the report (grandviewresearch.com/industry-analysis/smart-rings-market-report) does not contain or support the 88% shipment growth figure; the correct primary source is IDC — the report's source attribution should be corrected."
 }
