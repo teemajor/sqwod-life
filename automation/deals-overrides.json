@@ -692,7 +692,9 @@
     "macobs-acquisition-2026-10": {
       "country": "India",
       "region": "Asia-Pacific",
-      "acquirer": "Macobs Technologies"
+      "acquirer": "Macobs Technologies",
+      "status": "hidden",
+      "why": "review 2026-11-02: stale: Macobs (Menhood) agreed to buy 50.01% of Dhanta Wellness (Getmymettle) for Rs 10.5 crore earlier in 2026 (deal databases date it 28 Jan 2026); Oct item was a follow-up"
     },
     "mozaik-acquisition-2026-10": {
       "country": "Romania",
@@ -702,7 +704,9 @@
     "tresalis-acquisition-2026-10": {
       "country": "United Kingdom",
       "region": "UK",
-      "acquirer": "Tresalis"
+      "acquirer": "Tresalis",
+      "status": "hidden",
+      "why": "review 2026-11-02: off-topic: Tresalis buying majority of Vyrao is a fragrance (beauty) deal, reported ~29 Sep 2026"
     },
     "ipercept-raise-2026-09": {
       "country": "Sweden",
@@ -728,7 +732,9 @@
       ],
       "leads": [
         "BECO Capital"
-      ]
+      ],
+      "status": "hidden",
+      "why": "review 2026-11-02: off-topic: Amaani's $5M Series A (BECO Capital) is for beauty brand AÏZA (Ulta Beauty rollout), not fitness or wellness"
     },
     "elixinol-acquisition-2026-09": {
       "country": "Australia",
@@ -737,7 +743,9 @@
     },
     "tusol-acquisition-2026-09": {
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "status": "hidden",
+      "why": "review 2026-11-02: cannot be verified: no credible report of a TUSOL Wellness sale via Website Closers; only a Dealroom link"
     },
     "australian-raise-2026-09": {
       "country": "Australia",
@@ -747,7 +755,9 @@
       ],
       "leads": [
         "Australian Research Council"
-      ]
+      ],
+      "status": "hidden",
+      "why": "review 2026-11-02: not a deal: A$1.3M ARC Future Fellowship research grant to a UniSQ academic for worker-safety sensors (mining, construction), no company named"
     },
     "wizard-raise-2026-09": {
       "country": "United States",
@@ -763,7 +773,9 @@
     "fredun-acquisition-2026-09": {
       "country": "India",
       "region": "Asia-Pacific",
-      "acquirer": "Fredun Pharmaceuticals"
+      "acquirer": "Fredun Pharmaceuticals",
+      "status": "hidden",
+      "why": "review 2026-11-02: off-topic: Fredun Pharmaceuticals buying Furlicks is pet wellness, not human fitness or wellness"
     },
     "nua-raise-2026-09": {
       "country": "India",
@@ -794,7 +806,9 @@
     "bback-acquisition-2026-09": {
       "country": "Singapore",
       "region": "Asia-Pacific",
-      "acquirer": "DSG Consumer Partners"
+      "acquirer": "DSG Consumer Partners",
+      "status": "hidden",
+      "why": "review 2026-11-02: off-topic and thinly sourced: bback is a hangover-recovery brand (not fitness recovery); deal only via secondary write-ups and DSG's brand page, no date or terms confirmed"
     },
     "healf-raise-2026-09": {
       "country": "United Kingdom",
@@ -834,15 +848,21 @@
     },
     "fanatics-ipo-2026-08": {
       "country": "Hong Kong",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "status": "hidden",
+      "why": "review 2026-11-02: stale / not priced: F-1 filed Aug 2025; Aug 2026 was only an amended range ($4 to $6, 7M shares) with no pricing or listing date"
     },
     "sydney-valuation-2026-07": {
       "country": "Australia",
-      "region": "Asia-Pacific"
+      "region": "Asia-Pacific",
+      "status": "hidden",
+      "why": "review 2026-11-02: not a deal: '$60M' is the race's list-price value of free AI mindset coaching given to runners, not a valuation or transaction"
     },
     "ultimate-raise-2026-07": {
       "country": "United States",
-      "region": "North America"
+      "region": "North America",
+      "status": "hidden",
+      "why": "review 2026-11-02: not a deal: franchise territory sales (200 territories, July 2026), not a funding round"
     },
     "heatronics-raise-2026-07": {
       "country": "India",
@@ -874,6 +894,10 @@
         "Modi Ventures"
       ],
       "note": "Crunchbase dates an Ozlo Series B of $37.7M to 4 June 2026; the tracker entry is the $22M round reported 30 Oct 2026 by Fitt Insider. Check whether this is a second close or a mis-dated entry before quoting totals."
+    },
+    "fund-acquisition-2026-11": {
+      "status": "hidden",
+      "why": "review 2026-11-02: not a deal yet: Bloomberg (30 Oct 2026) reports Fund 1 looking to bid; its 13D letter gives only a non-binding $5.61 to $7.00/share range, no formal offer or board agreement"
     }
   },
   "block": []
