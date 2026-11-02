@@ -26,6 +26,12 @@
 import type { Lang } from '../i18n/ui';
 
 export interface Pick {
+  /** device type for guide filters (wearables: ring | watch | band) */
+  kind?: string;
+  /** generation family: picks sharing a family collapse to one row on the guide (highest score leads, tie → current) */
+  family?: string;
+  /** the generation on sale now; the guide notes the others as "newer" / "older" */
+  current?: boolean;
   product: string;
   brand: string;
   url: string;                 // brand/product page (until /go offers exist)
@@ -68,51 +74,51 @@ export const categories: Category[] = [
       de: 'Ringe, Uhren und Bänder, die Training und Erholung in Daten verwandeln, mit denen du coachen kannst.',
     },
     picks: [
-      { product: 'Oura Ring Gen3', brand: 'Oura', url: 'https://ouraring.com/', affiliate: true, reviewSlug: 'oura-ring-gen3',
+      { product: 'Oura Ring Gen3', brand: 'Oura', kind: 'ring', family: 'oura-ring', url: 'https://ouraring.com/', affiliate: true, reviewSlug: 'oura-ring-gen3',
         bestFor: { en: 'Sleep & recovery', de: 'Schlaf & Erholung' }, why: { en: 'The most wearable recovery tracker: sleep and readiness without a screen on your wrist.', de: 'Der alltagstauglichste Recovery-Tracker: Schlaf und Readiness ohne Display am Handgelenk.' } },
-      { product: 'Whoop 4.0', brand: 'Whoop', url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-4',
+      { product: 'Whoop 4.0', brand: 'Whoop', kind: 'band', family: 'whoop', url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-4',
         bestFor: { en: 'Strain & performance', de: 'Belastung & Leistung' }, why: { en: 'The coach\'s strain-and-recovery band: screenless, built to program by readiness.', de: 'Das Belastungs- und Recovery-Band für Coaches, ohne Display, fürs Programmieren nach Readiness.' } },
       // NOTE (2026-07-23): Series 9 is discontinued — its only amazon.de buy-box was a REFURBISHED unit from a 3rd-party
       // reseller (CarbonPhone / Amazon Renewed), which violates our "link the brand, not a reseller / new only" rule.
       // Deal now points to the current, NEW, Apple-sold model (Series 11, ASIN B0FQFLMHSX, verified sold-by Apple 2026-07-23).
-      { product: 'Apple Watch Series 9', brand: 'Apple', url: 'https://www.amazon.de/dp/B0FQFLMHSX?tag=sqwod-21', affiliate: true, reviewSlug: 'apple-watch-9',
+      { product: 'Apple Watch Series 9', brand: 'Apple', kind: 'watch', family: 'apple-watch', url: 'https://www.amazon.de/dp/B0FQFLMHSX?tag=sqwod-21', affiliate: true, reviewSlug: 'apple-watch-9',
         bestFor: { en: 'Everyday smartwatch', de: 'Alltags-Smartwatch' }, why: { en: 'The best all-round smartwatch if your clients live in the Apple ecosystem.', de: 'Die beste Allround-Smartwatch, wenn deine Kund:innen im Apple-Ökosystem leben.' } },
       // 2026-07-24: switched from reseller-buy-box B0CT3SGHXL (LT-Ecom) to the Amazon-sold listing B0CT3VBDTV (€189, verified sold-by-Amazon).
-      { product: 'Garmin Forerunner 165', brand: 'Garmin', url: 'https://www.amazon.de/dp/B0CT3VBDTV?tag=sqwod-21', affiliate: true, reviewSlug: 'garmin-forerunner-165',
+      { product: 'Garmin Forerunner 165', brand: 'Garmin', kind: 'watch', family: 'forerunner-1xx', url: 'https://www.amazon.de/dp/B0CT3VBDTV?tag=sqwod-21', affiliate: true, reviewSlug: 'garmin-forerunner-165',
         bestFor: { en: 'Runners, best value', de: 'Läufer:innen, Preis-Leistung' }, why: { en: 'Garmin\'s full training metrics at an entry price: the value pick for endurance.', de: 'Garmins volle Trainings-Metriken zum Einstiegspreis: der Preis-Leistungs-Tipp für Ausdauer.' } },
-      { product: 'Garmin Forerunner 170', brand: 'Garmin', url: 'https://www.garmin.com/de-DE/', affiliate: true, reviewSlug: 'garmin-forerunner-170',
+      { product: 'Garmin Forerunner 170', brand: 'Garmin', kind: 'watch', family: 'forerunner-1xx', current: true, url: 'https://www.garmin.com/de-DE/', affiliate: true, reviewSlug: 'garmin-forerunner-170',
         bestFor: { en: 'Runners, best value', de: 'Läufer:innen, Preis-Leistung' }, why: { en: 'Training Readiness, running power and Garmin Pay now at the entry price.', de: 'Training Readiness, Laufleistung und Garmin Pay jetzt zum Einstiegspreis.' } },
-      { product: 'Fitbit Charge 6', brand: 'Fitbit', url: 'https://www.amazon.de/dp/B0CHN3W617?tag=sqwod-21', affiliate: true, reviewSlug: 'fitbit-charge-6',
+      { product: 'Fitbit Charge 6', brand: 'Fitbit', kind: 'band', current: true, url: 'https://www.amazon.de/dp/B0CHN3W617?tag=sqwod-21', affiliate: true, reviewSlug: 'fitbit-charge-6',
         bestFor: { en: 'Affordable all-rounder', de: 'Günstiger Allrounder' }, why: { en: 'The best-value everyday tracker: accurate sensors and ECG for ~€130.', de: 'Der beste Alltags-Tracker fürs Geld: genaue Sensoren und EKG für ~130 €.' } },
-      { product: 'Oura Ring 5', brand: 'Oura', url: 'https://ouraring.com/', affiliate: true, reviewSlug: 'oura-ring-5',
+      { product: 'Oura Ring 5', brand: 'Oura', kind: 'ring', family: 'oura-ring', current: true, url: 'https://ouraring.com/', affiliate: true, reviewSlug: 'oura-ring-5',
         bestFor: { en: 'Current-gen recovery ring', de: 'Recovery-Ring, aktuelle Gen' }, why: { en: 'The newest, smallest Oura: the recovery benchmark, now current-gen.', de: 'Der neueste, kleinste Oura: der Recovery-Maßstab, jetzt aktuelle Generation.' } },
-      { product: 'Apple Watch Series 11', brand: 'Apple', url: 'https://www.amazon.de/dp/B0FQFLMHSX?tag=sqwod-21', affiliate: true, reviewSlug: 'apple-watch-11',
+      { product: 'Apple Watch Series 11', brand: 'Apple', kind: 'watch', family: 'apple-watch', url: 'https://www.amazon.de/dp/B0FQFLMHSX?tag=sqwod-21', affiliate: true, reviewSlug: 'apple-watch-11',
         bestFor: { en: 'Previous Series, often discounted', de: 'Vorgänger, oft reduziert' }, why: { en: '24h battery, hypertension alerts, 5G. Series 12 is now out; we have not scored it yet.', de: '24 h Akku, Bluthochdruck-Hinweise, 5G. Die Series 12 ist inzwischen da; sie ist noch nicht bewertet.' } },
-      { product: 'Apple Watch Series 12', brand: 'Apple', url: 'https://www.apple.com/de/watch/', affiliate: true, reviewSlug: 'apple-watch-12',
+      { product: 'Apple Watch Series 12', brand: 'Apple', kind: 'watch', family: 'apple-watch', current: true, url: 'https://www.apple.com/de/watch/', affiliate: true, reviewSlug: 'apple-watch-12',
         bestFor: { en: 'Latest Apple Watch we scored', de: 'Neueste von uns bewertete Apple Watch' }, why: { en: 'Current Series: heart rate every five seconds, daily Readiness and near-chest-strap accuracy.', de: 'Die aktuelle Series: Puls alle fünf Sekunden, täglicher Readiness-Wert und fast Brustgurt-Genauigkeit.' } },
-      { product: 'WHOOP 5.0', brand: 'Whoop', url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-5',
+      { product: 'WHOOP 5.0', brand: 'Whoop', kind: 'band', family: 'whoop', current: true, url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-5',
         bestFor: { en: 'Current-gen strain band', de: 'Strain-Band, aktuelle Gen' }, why: { en: '14-day battery, ECG + BP on the MG tier: the current screenless recovery band.', de: '14 Tage Akku, EKG + Blutdruck (MG-Tier): das aktuelle Recovery-Band ohne Display.' } },
-      { product: 'Ultrahuman Ring AIR', brand: 'Ultrahuman', url: 'https://ultrahumanhealthcare.pxf.io/c/2210087/3981492/38784', affiliate: true, reviewSlug: 'ultrahuman-ring-air',
+      { product: 'Ultrahuman Ring AIR', brand: 'Ultrahuman', kind: 'ring', current: true, url: 'https://ultrahumanhealthcare.pxf.io/c/2210087/3981492/38784', affiliate: true, reviewSlug: 'ultrahuman-ring-air',
         bestFor: { en: 'Subscription-free ring', de: 'Abofreier Ring' }, why: { en: 'Oura-class recovery accuracy with no subscription, plus an optional metabolic angle.', de: 'Recovery-Genauigkeit auf Oura-Niveau ohne Abo, plus optionaler Stoffwechsel-Fokus.' } },
-      { product: 'Withings ScanWatch 2', brand: 'Withings', url: 'https://www.amazon.de/dp/B0CG6PJLY3?tag=sqwod-21', affiliate: true, reviewSlug: 'withings-scanwatch-2',
+      { product: 'Withings ScanWatch 2', brand: 'Withings', kind: 'watch', current: true, url: 'https://www.amazon.de/dp/B0CG6PJLY3?tag=sqwod-21', affiliate: true, reviewSlug: 'withings-scanwatch-2',
         bestFor: { en: 'Hybrid health watch', de: 'Hybrid-Health-Uhr' }, why: { en: 'ECG, SpO2 and ~30-day battery in a classic-looking hybrid: health-first, no GPS.', de: 'EKG, SpO2 und ~30 Tage Akku in einer klassischen Hybrid-Uhr: Gesundheit zuerst, kein GPS.' } },
-      { product: 'Garmin Forerunner 965', brand: 'Garmin', url: 'https://www.garmin.com/de-DE/', affiliate: true, reviewSlug: 'garmin-forerunner-965',
+      { product: 'Garmin Forerunner 965', brand: 'Garmin', kind: 'watch', family: 'forerunner-9xx', url: 'https://www.garmin.com/de-DE/', affiliate: true, reviewSlug: 'garmin-forerunner-965',
         bestFor: { en: 'Premium running/tri', de: 'Premium Laufen/Tri' }, why: { en: 'Garmin\'s near-flagship AMOLED runner: full maps and the complete training suite.', de: 'Garmins Beinahe-Flaggschiff mit AMOLED: volle Karten und die komplette Trainingsanalyse.' } },
-      { product: 'Garmin Forerunner 970', brand: 'Garmin', url: 'https://www.garmin.com/de-DE/', affiliate: true, reviewSlug: 'garmin-forerunner-970',
+      { product: 'Garmin Forerunner 970', brand: 'Garmin', kind: 'watch', family: 'forerunner-9xx', current: true, url: 'https://www.garmin.com/de-DE/', affiliate: true, reviewSlug: 'garmin-forerunner-970',
         bestFor: { en: 'Premium running/tri', de: 'Premium Laufen/Tri' }, why: { en: 'The most complete Forerunner: ECG, flashlight, Gen 5 heart-rate sensor and new load tools.', de: 'Die kompletteste Forerunner: EKG, Taschenlampe, Gen-5-Pulssensor und neue Belastungs-Tools.' } },
-      { product: 'COROS PACE 3', brand: 'COROS', url: 'https://www.amazon.de/dp/B0CFQQ9FDL?tag=sqwod-21', affiliate: true, reviewSlug: 'coros-pace-3',
+      { product: 'COROS PACE 3', brand: 'COROS', kind: 'watch', family: 'coros-pace', url: 'https://www.amazon.de/dp/B0CFQQ9FDL?tag=sqwod-21', affiliate: true, reviewSlug: 'coros-pace-3',
         bestFor: { en: 'Best value GPS', de: 'Beste Preis-Leistung' }, why: { en: 'Featherweight, accurate dual-frequency GPS and huge battery for the money.', de: 'Federleicht, genaues Dual-Frequency-GPS und riesiger Akku fürs Geld.' } },
-      { product: 'COROS PACE 4', brand: 'COROS', url: 'https://www.coros.com/', affiliate: true, reviewSlug: 'coros-pace-4',
+      { product: 'COROS PACE 4', brand: 'COROS', kind: 'watch', family: 'coros-pace', current: true, url: 'https://www.coros.com/', affiliate: true, reviewSlug: 'coros-pace-4',
         bestFor: { en: 'Best value GPS', de: 'Beste Preis-Leistung' }, why: { en: 'The PACE formula with an AMOLED screen: ultralight, accurate GPS, up to 19 days of battery.', de: 'Das PACE-Rezept mit AMOLED: ultraleicht, genaues GPS, bis zu 19 Tage Akku.' } },
-      { product: 'Polar Vantage V3', brand: 'Polar', url: 'https://www.polar.com/de', affiliate: true, reviewSlug: 'polar-vantage-v3',
+      { product: 'Polar Vantage V3', brand: 'Polar', kind: 'watch', current: true, url: 'https://www.polar.com/de', affiliate: true, reviewSlug: 'polar-vantage-v3',
         bestFor: { en: 'Multisport sensors', de: 'Multisport-Sensoren' }, why: { en: 'Deep sensor suite (ECG, SpO2) and week-long battery for data-hungry endurance athletes.', de: 'Umfangreiche Sensoren (EKG, SpO2) und Wochen-Akku für datenhungrige Ausdauersportler.' } },
-      { product: 'RingConn Gen 2', brand: 'RingConn', url: 'https://de.ringconn.com/', affiliate: true, reviewSlug: 'ringconn-gen-2',
+      { product: 'RingConn Gen 2', brand: 'RingConn', kind: 'ring', family: 'ringconn', url: 'https://de.ringconn.com/', affiliate: true, reviewSlug: 'ringconn-gen-2',
         bestFor: { en: 'Subscription-free smart ring', de: 'Smart Ring ohne Abo' }, why: { en: 'Every metric free forever, 10–12 day battery and a ~150-day charging case: the no-subscription pick.', de: 'Alle Werte für immer gratis, 10–12 Tage Akku und ~150-Tage-Case: die Wahl ohne Abo.' } },
-      { product: 'RingConn Gen 3', brand: 'RingConn', url: 'https://de.ringconn.com/', affiliate: true, reviewSlug: 'ringconn-gen-3',
+      { product: 'RingConn Gen 3', brand: 'RingConn', kind: 'ring', family: 'ringconn', current: true, url: 'https://de.ringconn.com/', affiliate: true, reviewSlug: 'ringconn-gen-3',
         bestFor: { en: 'Subscription-free smart ring', de: 'Smart Ring ohne Abo' }, why: { en: 'Still no subscription, now up to 14 days per charge and a universal charging case.', de: 'Weiterhin ohne Abo, jetzt bis zu 14 Tage pro Ladung und ein universelles Ladecase.' } },
-      { product: 'Suunto Race', brand: 'Suunto', url: 'https://suunto.pxf.io/c/2210087/3998915/35454', affiliate: true, reviewSlug: 'suunto-race',
+      { product: 'Suunto Race', brand: 'Suunto', kind: 'watch', family: 'suunto-race', url: 'https://suunto.pxf.io/c/2210087/3998915/35454', affiliate: true, reviewSlug: 'suunto-race',
         bestFor: { en: 'Value dual-band GPS watch', de: 'Preis-Leistungs-GPS-Uhr' }, why: { en: 'Dual-band GPS, AMOLED and offline maps with ~26-day battery: Garmin features for far less.', de: 'Dual-Band-GPS, AMOLED und Offline-Karten mit ~26 Tagen Akku: Garmin-Features für deutlich weniger.' } },
-      { product: 'Suunto Race 2', brand: 'Suunto', url: 'https://suunto.pxf.io/c/2210087/3998915/35454', affiliate: true, reviewSlug: 'suunto-race-2',
+      { product: 'Suunto Race 2', brand: 'Suunto', kind: 'watch', family: 'suunto-race', current: true, url: 'https://suunto.pxf.io/c/2210087/3998915/35454', affiliate: true, reviewSlug: 'suunto-race-2',
         bestFor: { en: 'Multisport, dual-band GPS', de: 'Multisport, Dualband-GPS' }, why: { en: 'Dual-band GPS, free offline maps and a huge battery, now with much better wrist heart rate.', de: 'Dualband-GPS, kostenlose Offline-Karten und riesiger Akku, jetzt mit deutlich besserem Handgelenkpuls.' } },
     ],
   },
