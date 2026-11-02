@@ -12,6 +12,7 @@ import { SUBSCRIBE } from '../config/subscribe';
 import { EDITOR, authorName, isHouseAuthor, howMade } from '../config/authors';
 import type { CollectionEntry } from 'astro:content';
 import type { RelatedItem } from '../lib/related';
+import { describeSource, kindLabel } from '../lib/sources';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 // Real brand wordmark, embedded as a data URI so it rasterizes into the share PNG
@@ -385,7 +386,12 @@ const shareCfg = {
     <section class="block sources-block" id="sources">
       <p class="kick">{lang==='de'?'Quellen':'Sources'}</p>
       <ol class="src-list">
-        {d.sources.map((s, i) => <li id={`source-${i + 1}`}><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
+        {d.sources.map((s, i) => { const c = describeSource(s); const k = kindLabel(c.kind, lang); return (
+          <li id={`source-${i + 1}`} data-n={i + 1} data-title={c.title} data-pub={c.publisher} data-year={c.year} data-kind={c.kind ?? ''} data-kind-label={k} data-host={c.host} data-url={s.url}>
+            {k && <span class={`src-kind src-kind-${c.kind}`}>{k}</span>}
+            <a href={s.url} target="_blank" rel="nofollow noopener" data-src-where="list">{s.label} ↗</a>
+            <span class="src-back" hidden></span>
+          </li>); })}
       </ol>
       <p class="src-note">{lang==='de'
         ? `Zahlen aus öffentlichen Quellen${d.asOf ? `, Stand ${d.asOf}` : ''}. Schätzungen verschiedener Häuser variieren; wir verlinken, damit du selbst prüfen kannst.`
@@ -859,6 +865,118 @@ const shareCfg = {
         setTimeout(() => btn.classList.remove('busy'), 1400);
       });
     });
+  })();
+</script>
+
+<script define:vars={{ fnT: lang === 'de' ? { open: 'Quelle öffnen', all: 'Alle Quellen', back: 'Zurück zum Text', close: 'Schließen', card: 'Quelle' } : { open: 'Open source', all: 'All sources', back: 'Back to text', close: 'Close', card: 'Source' }, fnSlug: d.urlSlug ?? entry.slug }}>
+  // Citations (Nov 2026): footnote numbers open a small preview card (tap/click
+  // everywhere, hover as a bonus on mouse devices), the Sources list gets
+  // back-to-text links, and source clicks are counted in Umami.
+  (function () {
+    var track = function (name, data) { try { window.umami && window.umami.track(name, Object.assign({ article: fnSlug }, data)); } catch (e) {} };
+    var list = document.getElementById('sources');
+
+    // Count clicks on any source link: list, card, figure captions, and links in the text.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a || /^#/.test(a.getAttribute('href'))) return;
+      var where = a.dataset.srcWhere || (a.classList.contains('fig-src-link') ? 'figure' : (a.closest('.prose') && a.host && a.host !== location.host ? 'inline' : ''));
+      if (!where) return;
+      var li = a.closest('li[data-n]') || (a.dataset.n && list && list.querySelector('li[data-n="' + a.dataset.n + '"]'));
+      var name = li ? (li.dataset.pub || li.dataset.title || '') : (a.textContent || '').replace(/\s*↗\s*$/, '');
+      track('source-click', { where: where, source: name.slice(0, 60), kind: li ? li.dataset.kind || 'none' : 'none' });
+    });
+
+    if (!list) return;
+    var marks = document.querySelectorAll('sup.fn a[href^="#source-"]');
+    if (!marks.length) return;
+
+    // Back-to-text links: give every marker an id, then list them under its source.
+    var refs = {};
+    marks.forEach(function (a) {
+      var n = a.getAttribute('href').slice(8);
+      (refs[n] = refs[n] || []).push(a);
+      a.id = 'cite-' + n + '-' + refs[n].length;
+      a.setAttribute('aria-haspopup', 'dialog');
+    });
+    var flash = function (el) { el.classList.add('fn-hit'); setTimeout(function () { el.classList.remove('fn-hit'); }, 1600); };
+    Object.keys(refs).forEach(function (n) {
+      var box = list.querySelector('li[data-n="' + n + '"] .src-back');
+      if (!box) return;
+      refs[n].forEach(function (a, i) {
+        var b = document.createElement('a');
+        b.href = '#' + a.id;
+        b.textContent = refs[n].length === 1 ? '↩' : (i === 0 ? '↩ ' : '') + String.fromCharCode(97 + (i % 26));
+        b.setAttribute('aria-label', fnT.back + (refs[n].length > 1 ? ' (' + (i + 1) + ')' : ''));
+        b.addEventListener('click', function (e) { e.preventDefault(); a.scrollIntoView({ block: 'center', behavior: 'smooth' }); a.focus({ preventScroll: true }); flash(a); });
+        box.appendChild(b);
+      });
+      box.hidden = false;
+    });
+
+    // Preview card: one shared element, filled from the Sources list.
+    var card = document.createElement('div');
+    card.className = 'fn-card'; card.hidden = true;
+    card.setAttribute('role', 'dialog'); card.setAttribute('aria-label', fnT.card);
+    document.body.appendChild(card);
+    var cur = null, pinned = false, hoverT = 0, seen = {};
+    var esc = function (t) { var d = document.createElement('span'); d.textContent = t || ''; return d.innerHTML; };
+
+    function show(a, pin) {
+      var n = a.getAttribute('href').slice(8);
+      var li = list.querySelector('li[data-n="' + n + '"]');
+      if (!li) return false;
+      var ds = li.dataset, meta = [ds.pub, ds.year].filter(Boolean).join(' · ') || ds.host || '';
+      card.innerHTML = '<button class="fn-x" type="button" aria-label="' + esc(fnT.close) + '">×</button>'
+        + (ds.kindLabel ? '<span class="src-kind src-kind-' + esc(ds.kind) + '">' + esc(ds.kindLabel) + '</span>' : '')
+        + '<span class="fn-title">' + esc(n + '. ' + ds.title) + '</span>'
+        + (meta ? '<span class="fn-meta">' + esc(meta) + '</span>' : '')
+        + '<span class="fn-acts"><a href="' + esc(ds.url) + '" target="_blank" rel="nofollow noopener" data-src-where="card" data-n="' + esc(n) + '">' + esc(fnT.open) + ' ↗</a>'
+        + '<a href="#source-' + esc(n) + '" class="fn-all">' + esc(fnT.all) + ' ↓</a></span>';
+      card.hidden = false; cur = a; pinned = pin;
+      a.setAttribute('aria-expanded', 'true');
+      // Place under the number, or above it when there is no room below.
+      var r = a.getBoundingClientRect(), w = card.offsetWidth, h = card.offsetHeight;
+      var left = Math.max(16, Math.min(r.left - 24, document.documentElement.clientWidth - w - 16));
+      var top = (r.bottom + h + 12 > innerHeight && r.top > h + 12) ? r.top - h - 8 : r.bottom + 8;
+      card.style.left = (left + scrollX) + 'px'; card.style.top = (top + scrollY) + 'px';
+      if (!seen[n]) { seen[n] = 1; track('source-preview', { n: n, kind: ds.kind || 'none' }); }
+      return true;
+    }
+    function hide(refocus) {
+      if (!cur) return;
+      cur.removeAttribute('aria-expanded');
+      if (refocus) cur.focus();
+      card.hidden = true; cur = null; pinned = false;
+    }
+
+    marks.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        if (e.metaKey || e.ctrlKey || e.shiftKey) return; // let power users jump to the list
+        e.preventDefault();
+        if (cur === a && pinned) { hide(); return; }
+        if (show(a, true) && e.detail === 0) { var f = card.querySelector('.fn-acts a'); f && f.focus(); } // keyboard: move focus in
+      });
+    });
+
+    // Hover is a bonus on mouse devices only; touch screens use tap.
+    if (window.matchMedia && matchMedia('(hover:hover) and (pointer:fine)').matches) {
+      marks.forEach(function (a) {
+        a.addEventListener('mouseenter', function () { clearTimeout(hoverT); if (pinned) return; hoverT = setTimeout(function () { show(a, false); }, 250); });
+        a.addEventListener('mouseleave', function () { clearTimeout(hoverT); if (!pinned) hoverT = setTimeout(function () { hide(); }, 300); });
+      });
+      card.addEventListener('mouseenter', function () { clearTimeout(hoverT); });
+      card.addEventListener('mouseleave', function () { if (!pinned) hoverT = setTimeout(function () { hide(); }, 300); });
+    }
+
+    card.addEventListener('click', function (e) {
+      if (e.target.closest('.fn-x')) { hide(true); return; }
+      var all = e.target.closest('.fn-all');
+      if (all) hide(); // the plain #source-N link jumps and highlights the row (:target)
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && cur) hide(true); });
+    document.addEventListener('click', function (e) { if (cur && !card.contains(e.target) && e.target !== cur) hide(); });
+    addEventListener('resize', function () { hide(); });
   })();
 </script>
 
