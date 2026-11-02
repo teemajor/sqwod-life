@@ -185,7 +185,7 @@ const postings = !JOBS_JSONLD_ON_LIST ? [] : jobs.map((j) => ({
 
         <ul class="jb-list">
           {jobs.map((j) => { const b = brandOf(j); return (
-            <li class="jb" data-city={citySlug(j.region)} data-type={j.type || 'other'} data-pay={hasPay(j) ? '1' : '0'} data-emp={j.employment} data-posted={postedBucket(j)} data-employer={b.key} data-src={j.source}
+            <li class="jb" id={`job-${j.id}`} data-city={citySlug(j.region)} data-type={j.type || 'other'} data-pay={hasPay(j) ? '1' : '0'} data-emp={j.employment} data-posted={postedBucket(j)} data-employer={b.key} data-src={j.source}
               data-date={(j.postedAt || j.seenAt).replace(/-/g, '')} data-paym={payMonthly(j) ?? ''} data-az={b.short.toLowerCase()} data-name={`${j.title} ${j.employer || ''} ${b.short} ${j.city || ''}`.toLowerCase()}>
               <div class="jb-logo" aria-hidden="true">{b.logo ? <img src={b.logo} width="44" height="44" alt="" loading="lazy" decoding="async" /> : <span class="jb-mono" style={`--h:${b.hue}`}>{b.initials}</span>}</div>
               <div class="jb-main">

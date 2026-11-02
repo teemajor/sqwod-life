@@ -169,6 +169,12 @@ What shipped on `/[lang]/intelligence/investors/`:
 - The equipment report's "Where do you stand?" block read "Strength share of your equipment budget or floor" with a prompt that assumed the reader knew "where US home buyers moved". Now a question ("How much of your equipment is strength kit?"), a one-line count instruction, and the comparison stated as a fact (36% in 2023, up from 23% in 2019). Bands say what they mean ("Below the 2019 mix"), EN and DE.
 - `BenchmarkWidget.astro`: the verdict sentence moved directly under the input so it stays visible with the phone keyboard open; the input label and placeholder no longer repeat each other ("Enter yours", "e.g. 29"); the sentence names the comparison (`medianLabel`) instead of always saying "industry avg", which was wrong on the equipment report. The other three benchmark articles (retention ×2, wearables) already read clearly and only gain the layout fix.
 
+## Investor Map: 13 more grants (1 Nov 2026)
+
+- Tee: "search for more grant sources". Added, each from the organisation's own page and marked Certain: EXIST Gründungsstipendium, Berliner Startup Stipendium, ZIM (Germany); aws Preseed/Seedfinancing, FFG Basisprogramm, Wirtschaftsagentur Wien Förderung Innovation (Austria); Venture Kick, Innosuisse Start-up Innovation Projects (Switzerland); Eurostars (EU, Call 12 opens 17 Dec 2026); NSF SBIR/STTR (US, Phase I $305K); SBRI Healthcare, Scottish EDGE, Sport England Movement Fund (UK). EIT Health refreshed with the 2026 Transformative Healthcare Instrument (€300K to €500K) and the Madrid Catapult finals.
+- Checked and left out: G-BA Innovationsfonds (excludes projects with a company's direct commercial interest) and BISp sports-science funding (research institutions only).
+- Bern and Glasgow are not in the city table, so those two pins sit at the country centre until added to `geo.ts`.
+
 ## Titles batch 3: 25 more H1s and seoTitles (1 Nov 2026)
 
 - Picked click-by-click in rounds of four. 21 titles changed, EN plus DE twin each; three kept as already clear (Top Tier, BCAAs, Vitamin D); one unpublished: "AI Is Booking Your Clients' Pilates Spots. Now What?" (0814) told the same BBC story as the 18 Aug booking-security article, now "An AI Agent Hacked a Pilates Studio's Booking System. Yours Is Next."
@@ -187,3 +193,13 @@ What shipped on `/[lang]/intelligence/investors/`:
 - Bug found and fixed: the batch-1 script set `seoTitle` through a JavaScript replace with a `$1` group, so a Google title containing "$100M" swallowed the title line (the SuperMush funding piece on main). Repaired, and batch 2 uses a function replacer. Three batch-1 DE Google titles over 60 characters trimmed.
 - Sources: `automation/ingest.mjs` gets a Google News query for EuropeActive (press corner, EHFF, the European Health & Fitness Market Report with Deloitte) and Deloitte's fitness research, 14-day window. EuropeActive publishes no RSS feed, so Google News is the dependable route.
 - Remaining: 84 articles for the same title treatment.
+
+## Site search (1 Nov 2026)
+
+- Static search with Pagefind 1.6: `npm run build` now runs `site/scripts/search-index.mjs` after `astro build`, which indexes `dist/` and writes `dist/pagefind/` (13 MB of chunks; a query downloads only the few it needs, nothing loads until the first search). No server, no third-party service, works on the existing static hosting.
+- What is indexed: only pages whose `<main>` carries `data-pagefind-body`, set in `Base.astro` from the path. Kinds: Article (`/analysis/<slug>`), Report (`/intelligence/<slug>`), Daily (`/daily/<date>`), Review (`/verified/<slug>`), Guide (`/best/`, supplements A to Z, tools), Press. Listings, legal, landing and compare pages are left out (400+ product-vs-product pages buried the one review of a product under twenty comparisons that mention it). Sign-up boxes, share bars, the unlock gate and "related" are marked `data-pagefind-ignore`.
+- Jobs, deals and investors are not pages, so `site/src/pages/data/search-records.json.ts` writes them as records (both languages) and the index script adds them with `addCustomRecord`. Results deep-link to the row (`/jobs/#job-<id>`, `/deals/#deal-<id>`, `/investors/#<id>`); the row is outlined and scrolled into view on arrival. Job rows got ids for this.
+- Per-language index from `<html lang>`: a German query searches German pages. "Nothing found" offers the same query in the other language.
+- `SearchDialog.astro`: one component, two modes. The `<dialog>` lives in `Base.astro` on every page (opened by the header button, `⌘K`/`Ctrl+K`, or `/`), and the same markup renders inline on `/[lang]/search/?q=` (noindex) so a search can be shared. Kind chips with live counts, keyboard navigation, recent searches in localStorage, six curated suggestions, excerpt with the matching section heading ("in …"), and `?highlight=` on the opened article (Pagefind's highlight script marks the words in the body). Umami event `search` with query, count, kind and language.
+- Gotcha found in testing: Pagefind only fills per-result filter counts after `filters()` has been called once, so the loader calls it on init.
+- Screenshots in `automation/build-shots/search-*.png`.

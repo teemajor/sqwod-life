@@ -1,0 +1,28 @@
+---
+// Full-page search (1 Nov 2026). Same engine as the ⌘K dialog; takes ?q= so a result can be shared
+// or reached from the other language's "nothing found" link. noindex: a search page in Google is noise.
+import Base from '../../../layouts/Base.astro';
+import SearchDialog from '../../../components/SearchDialog.astro';
+import { languages, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return languages.map((lang) => ({ params: { lang } }));
+}
+const lang = Astro.params.lang as Lang;
+const de = lang === 'de';
+const T = de
+  ? { title: 'Suche', h1: 'Suche auf Sqwod', sub: 'Artikel, Reports, Daily-Folgen, Tests, Jobs, Deals und Investoren. Tipp: ⌘K öffnet die Suche auf jeder Seite.' }
+  : { title: 'Search', h1: 'Search Sqwod', sub: 'Articles, reports, Daily episodes, reviews, jobs, deals and investors. Tip: ⌘K opens search on any page.' };
+---
+<Base lang={lang} title={T.title} description={T.sub} altPath={`/${de ? 'en' : 'de'}/search/`} noindex>
+  <section class="srch">
+    <h1>{T.h1}</h1>
+    <p class="sub">{T.sub}</p>
+    <SearchDialog lang={lang} mode="page" />
+  </section>
+</Base>
+<style>
+  .srch{max-width:760px;margin:0 auto;padding:12px 0 60px}
+  h1{font-size:clamp(28px,4vw,38px);letter-spacing:-.02em;margin:0 0 8px}
+  .sub{color:var(--g2);margin:0 0 20px;font-size:15px}
+</style>

@@ -1,0 +1,215 @@
+---
+// Site search (1 Nov 2026). Pagefind index built after `astro build` (scripts/search-index.mjs);
+// nothing loads until the first search. One component serves the ⌘K dialog on every page and
+// the inline box on /[lang]/search/ (mode="page"). The <html lang> picks the EN or DE index.
+import { type Lang } from '../i18n/ui';
+interface Props { lang: Lang; mode?: 'dialog' | 'page' }
+const { lang, mode = 'dialog' } = Astro.props;
+const de = lang === 'de';
+const T = de
+  ? { label: 'Suche', ph: 'Artikel, Reports, Jobs, Deals, Investoren …', all: 'Alles', recent: 'Zuletzt gesucht', clear: 'Löschen', try: 'Probier mal', none: 'Nichts gefunden für', noneHint: 'Andere Schreibweise versuchen, oder auf Englisch suchen:', switchTo: 'Auf Englisch suchen', results: 'Treffer', esc: 'schließen', nav: 'wechseln', open: 'öffnen', loading: 'Index wird geladen …', dev: 'Der Suchindex entsteht beim Build (npm run build). Im Dev-Server gibt es keinen.', inSection: 'in', close: 'Suche schließen', more: 'Mehr laden' }
+  : { label: 'Search', ph: 'Articles, reports, jobs, deals, investors …', all: 'All', recent: 'Recent searches', clear: 'Clear', try: 'Try', none: 'Nothing found for', noneHint: 'Check the spelling, or search in German:', switchTo: 'Search in German', results: 'results', esc: 'close', nav: 'navigate', open: 'open', loading: 'Loading the index …', dev: 'The search index is built with the site (npm run build). The dev server has none.', inSection: 'in', close: 'Close search', more: 'Load more' };
+// Filter chips: the Pagefind "kind" filter values set in Base.astro and search-records.json.ts.
+const KINDS = de
+  ? [['Article', 'Artikel'], ['Report', 'Reports'], ['Daily', 'Daily'], ['Review', 'Tests'], ['Job', 'Jobs'], ['Deal', 'Deals'], ['Investor', 'Investoren'], ['Guide', 'Guides'], ['Press', 'Presse']]
+  : [['Article', 'Articles'], ['Report', 'Reports'], ['Daily', 'Daily'], ['Review', 'Reviews'], ['Job', 'Jobs'], ['Deal', 'Deals'], ['Investor', 'Investors'], ['Guide', 'Guides'], ['Press', 'Press']];
+const SUGGEST = de ? ['Kreatin', 'Mitgliederbindung', 'Basic-Fit', 'GLP-1', 'Pilates Berlin', 'EXIST'] : ['creatine', 'retention benchmark', 'Basic-Fit', 'GLP-1', 'Pilates Berlin', 'EIC Accelerator'];
+const otherLang = de ? 'en' : 'de';
+const isPage = mode === 'page';
+---
+{isPage ? (
+  <div class="sd sd-page" data-search data-lang={lang} data-other={otherLang} data-kinds={JSON.stringify(Object.fromEntries(KINDS))}>
+    <Fragment set:html={''} />
+  </div>
+) : (
+  <dialog class="sd" data-search data-lang={lang} data-other={otherLang} data-kinds={JSON.stringify(Object.fromEntries(KINDS))} aria-label={T.label}>
+  </dialog>
+)}
+<template data-search-tpl>
+  <form class="sd-form" role="search" autocomplete="off">
+    <svg class="sd-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input class="sd-in" type="search" name="q" placeholder={T.ph} aria-label={T.label} enterkeyhint="search" spellcheck="false" />
+    <button class="sd-x" type="button" aria-label={T.close}>Esc</button>
+  </form>
+  <div class="sd-chips" role="group" aria-label="Filter">
+    <button class="sd-chip on" type="button" data-kind="">{T.all}</button>
+    {KINDS.map(([v, l]) => <button class="sd-chip" type="button" data-kind={v} hidden>{l} <span class="sd-n"></span></button>)}
+  </div>
+  <div class="sd-body">
+    <div class="sd-empty">
+      <div class="sd-recent" hidden><p class="sd-kick">{T.recent} <button class="sd-clear" type="button">{T.clear}</button></p><div class="sd-tags" data-recent></div></div>
+      <div class="sd-try"><p class="sd-kick">{T.try}</p><div class="sd-tags">{SUGGEST.map((s) => <button class="sd-tag" type="button" data-q={s}>{s}</button>)}</div></div>
+    </div>
+    <p class="sd-status" aria-live="polite"></p>
+    <ol class="sd-list" role="listbox"></ol>
+    <button class="sd-more" type="button" hidden>{T.more}</button>
+  </div>
+  <div class="sd-foot"><span><kbd>↑</kbd><kbd>↓</kbd> {T.nav}</span><span><kbd>↵</kbd> {T.open}</span><span><kbd>esc</kbd> {T.esc}</span></div>
+</template>
+
+<style is:global>
+  .sd{--sd-w:720px;color:var(--chalk);font-family:var(--sans)}
+  dialog.sd{width:min(var(--sd-w),calc(100vw - 24px));max-height:min(78vh,760px);margin:8vh auto 0;padding:0;border:1px solid var(--edge);border-radius:18px;background:var(--panel);box-shadow:0 30px 80px rgba(0,0,0,.6);overflow:hidden;display:none;flex-direction:column}
+  dialog.sd[open]{display:flex}
+  dialog.sd::backdrop{background:rgba(0,0,0,.55);backdrop-filter:blur(3px)}
+  .sd-page{border:1px solid var(--line);border-radius:18px;background:var(--panel);overflow:hidden;display:flex;flex-direction:column;min-height:420px}
+  .sd-form{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line)}
+  .sd-ico{width:20px;height:20px;color:var(--g3);flex:none}
+  .sd-in{flex:1;min-width:0;background:transparent;border:0;color:var(--chalk);font:inherit;font-size:18px;padding:8px 0;outline:none}
+  .sd-in::-webkit-search-cancel-button{display:none}
+  .sd-x{font:700 11px/1 var(--mono);letter-spacing:.06em;color:var(--g3);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:6px 8px;cursor:pointer}
+  .sd-chips{display:flex;gap:6px;padding:10px 14px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+  .sd-chips::-webkit-scrollbar{display:none}
+  .sd-chip{flex:none;font:600 12.5px/1 var(--sans);color:var(--g2);background:transparent;border:1px solid var(--line);border-radius:999px;padding:7px 11px;cursor:pointer;white-space:nowrap}
+  .sd-chip.on{background:var(--chalk);color:var(--ink);border-color:var(--chalk)}
+  .sd-n{opacity:.65;font-weight:600;margin-left:4px}
+  .sd-body{flex:1;overflow:auto;padding:6px 8px 10px;min-height:120px}
+  .sd-empty{padding:10px 8px}
+  .sd-kick{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--g3);font-weight:700;margin:8px 0 8px;display:flex;justify-content:space-between;align-items:center}
+  .sd-clear{font:600 11px var(--sans);color:var(--g3);background:none;border:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px;letter-spacing:0;text-transform:none}
+  .sd-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+  .sd-tag{font:600 13px var(--sans);color:var(--g1);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 10px;cursor:pointer}
+  .sd-tag:hover{border-color:var(--edge)}
+  .sd-status{font-size:12px;color:var(--g3);margin:4px 8px 6px;font-family:var(--mono)}
+  .sd-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+  .sd-r{display:grid;grid-template-columns:1fr;gap:3px;padding:10px 10px;border-radius:12px;text-decoration:none;color:inherit;cursor:pointer}
+  .sd-r:hover,.sd-r[aria-selected="true"]{background:var(--bg)}
+  .sd-r[aria-selected="true"]{outline:1px solid var(--edge)}
+  .sd-t{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+  .sd-title{font-weight:700;font-size:15px;line-height:1.3;color:var(--chalk)}
+  .sd-kind{font:700 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:5px;padding:3px 6px;flex:none}
+  .sd-sub{font-size:12px;color:var(--g3);font-family:var(--mono)}
+  .sd-ex{font-size:13.5px;line-height:1.45;color:var(--g2);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .sd-ex mark{background:color-mix(in srgb,var(--accent) 28%,transparent);color:var(--chalk);border-radius:3px;padding:0 2px}
+  .sd-sec{font-size:12px;color:var(--g3)}
+  .sd-sec b{color:var(--g2);font-weight:600}
+  .sd-more{display:block;margin:10px auto 6px;font:600 13px var(--sans);color:var(--g1);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:9px 16px;cursor:pointer}
+  .sd-foot{display:flex;gap:16px;padding:8px 14px;border-top:1px solid var(--line);font-size:11.5px;color:var(--g4)}
+  .sd-foot kbd{font:600 10.5px var(--mono);color:var(--g2);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-right:2px;background:var(--bg)}
+  mark.pagefind-highlight{background:color-mix(in srgb,var(--accent) 22%,transparent);color:inherit;border-radius:3px;padding:0 1px}
+  .search-hit{outline:2px solid var(--accent);outline-offset:4px;border-radius:12px;animation:sd-pulse 1.6s ease 2}
+  @keyframes sd-pulse{0%,100%{outline-color:var(--accent)}50%{outline-color:transparent}}
+  @media(max-width:640px){
+    dialog.sd{width:100vw;max-width:none;max-height:100dvh;height:100dvh;margin:0;border-radius:0;border:0}
+    .sd-foot{display:none}
+    .sd-in{font-size:17px}
+  }
+</style>
+
+<script>
+  // One instance per page: the dialog (every page) or the inline box (/search/).
+  type PF = { options: (o: object) => Promise<void>; init: () => void; debouncedSearch: (q: string, o?: object, ms?: number) => Promise<any>; };
+  const PF_URL = ['', 'pagefind', 'pagefind.js'].join('/');   // built after astro build; joined so Vite leaves it alone
+  const root = document.querySelector<HTMLElement>('[data-search]');
+  const tpl = document.querySelector<HTMLTemplateElement>('[data-search-tpl]');
+  if (root && tpl) {
+    root.appendChild(tpl.content.cloneNode(true));
+    const lang = root.dataset.lang || 'en', other = root.dataset.other || 'de';
+    const isDialog = root.tagName === 'DIALOG';
+    let KL: Record<string, string> = {}; try { KL = JSON.parse(root.dataset.kinds || '{}'); } catch {}
+    const form = root.querySelector('.sd-form') as HTMLFormElement, input = root.querySelector('.sd-in') as HTMLInputElement;
+    const list = root.querySelector('.sd-list') as HTMLOListElement, status = root.querySelector('.sd-status') as HTMLElement;
+    const empty = root.querySelector('.sd-empty') as HTMLElement, more = root.querySelector('.sd-more') as HTMLButtonElement;
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('.sd-chip')];
+    const recentBox = root.querySelector('.sd-recent') as HTMLElement, recentTags = root.querySelector('[data-recent]') as HTMLElement;
+    const KEY = 'sqwod_recent_searches', PAGE = 10;
+    let pf: PF | null = null, loading: Promise<PF | null> | null = null, kind = '', results: any[] = [], shown = 0, sel = -1, lastQ = '';
+    const T = {
+      none: lang === 'de' ? 'Nichts gefunden für' : 'Nothing found for',
+      hint: lang === 'de' ? 'Andere Schreibweise versuchen, oder auf Englisch suchen:' : 'Check the spelling, or search in German:',
+      sw: lang === 'de' ? 'Auf Englisch suchen' : 'Search in German',
+      res: lang === 'de' ? 'Treffer' : 'results', one: lang === 'de' ? 'Treffer' : 'result',
+      loading: lang === 'de' ? 'Index wird geladen …' : 'Loading the index …',
+      dev: lang === 'de' ? 'Der Suchindex entsteht beim Build. Im Dev-Server gibt es keinen.' : 'The search index is built with the site. The dev server has none.',
+      inS: lang === 'de' ? 'in' : 'in',
+    };
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] as string));
+    const track = (ev: string, d?: object) => { try { (window as any).umami && (window as any).umami.track(ev, d); } catch {} };
+
+    const load = () => loading || (loading = (async () => {
+      try {
+        const m: any = await import(/* @vite-ignore */ PF_URL);
+        await m.options({ baseUrl: '/', excerptLength: 28, highlightParam: 'highlight' });
+        m.init(); await m.filters();   // loads the filter chunks; without this, result.filters stays empty
+        pf = m; return m;
+      } catch { status.textContent = T.dev; return null; }
+    })());
+
+    const readRecent = (): string[] => { try { return JSON.parse(localStorage.getItem(KEY) || '[]'); } catch { return []; } };
+    const writeRecent = (q: string) => { const r = [q, ...readRecent().filter((x) => x !== q)].slice(0, 6); try { localStorage.setItem(KEY, JSON.stringify(r)); } catch {} renderRecent(); };
+    const renderRecent = () => {
+      const r = readRecent(); recentBox.hidden = r.length === 0;
+      recentTags.innerHTML = r.map((q) => `<button class="sd-tag" type="button" data-q="${esc(q)}">${esc(q)}</button>`).join('');
+    };
+    root.querySelector('.sd-clear')?.addEventListener('click', () => { try { localStorage.removeItem(KEY); } catch {} renderRecent(); });
+    root.addEventListener('click', (e) => { const b = (e.target as HTMLElement).closest<HTMLElement>('.sd-tag'); if (b?.dataset.q) { input.value = b.dataset.q; run(); input.focus(); } });
+
+    const setStatus = (s: string) => { status.textContent = s; };
+    const render = () => {
+      const slice = results.slice(0, shown);
+      list.innerHTML = slice.map((d, i) => {
+        const m = d.meta || {}; const sub = (d.sub_results || []).find((s: any) => s.title && s.title !== m.title);
+        const ex = sub && sub.excerpt ? sub.excerpt : d.excerpt;
+        return `<li><a class="sd-r" role="option" id="sd-opt-${i}" href="${esc(d.url)}" aria-selected="${i === sel}">`
+          + `<span class="sd-t"><span class="sd-title">${esc(m.title || d.url)}</span>${m.kind ? `<span class="sd-kind">${esc(KL[m.kind] || m.kind)}</span>` : ''}${m.sub ? `<span class="sd-sub">${esc(m.sub)}</span>` : m.date ? `<span class="sd-sub">${esc(String(m.date).slice(0, 10))}</span>` : ''}</span>`
+          + (sub ? `<span class="sd-sec">${T.inS} <b>${esc(sub.title)}</b></span>` : '')
+          + `<span class="sd-ex">${ex || ''}</span></a></li>`;
+      }).join('');
+      more.hidden = shown >= results.length;
+    };
+    const applyKindCounts = (f: any) => {
+      const counts = (f && f.kind) || {};
+      for (const c of chips) { const k = c.dataset.kind || ''; if (!k) continue; const n = counts[k] || 0; c.hidden = n === 0 && kind !== k; (c.querySelector('.sd-n') as HTMLElement).textContent = n ? String(n) : ''; }
+    };
+    let seq = 0;
+    const run = async () => {
+      const q = input.value.trim(); lastQ = q;
+      if (!q) { results = []; shown = 0; sel = -1; list.innerHTML = ''; more.hidden = true; empty.hidden = false; setStatus(''); applyKindCounts(null); chips.forEach((c) => { if (c.dataset.kind) c.hidden = true; }); return; }
+      empty.hidden = true; const my = ++seq;
+      const m = await load(); if (!m || my !== seq) return;
+      setStatus(T.loading);
+      const res = await m.debouncedSearch(q, kind ? { filters: { kind: [kind] } } : {}, 220);
+      if (res === null || my !== seq) return;   // superseded by a newer keystroke
+      // counts per kind for the chips come from an unfiltered pass (cheap: same index)
+      const all = kind ? await m.debouncedSearch(q, {}, 0) : res; if (my !== seq) return;
+      applyKindCounts((all && all.filters) || res.filters);
+      results = await Promise.all(res.results.slice(0, 50).map((r: any) => r.data()));
+      if (my !== seq) return;
+      shown = Math.min(PAGE, results.length); sel = results.length ? 0 : -1; render();
+      if (!results.length) {
+        list.innerHTML = `<li class="sd-empty"><p class="sd-kick" style="display:block">${T.none} “${esc(q)}”</p><p style="font-size:13.5px;color:var(--g2);margin:0">${T.hint} <a href="/${other}/search/?q=${encodeURIComponent(q)}">${T.sw} →</a></p></li>`;
+        setStatus('');
+      } else setStatus(`${res.results.length} ${res.results.length === 1 ? T.one : T.res}`);
+      track('search', { q, n: res.results.length, kind: kind || 'all', lang });
+      writeRecent(q);
+      if (!isDialog) { const u = new URL(location.href); u.searchParams.set('q', q); history.replaceState(null, '', u); }
+    };
+    input.addEventListener('input', run);
+    form.addEventListener('submit', (e) => { e.preventDefault(); const a = list.querySelector<HTMLAnchorElement>(`#sd-opt-${Math.max(sel, 0)}`); if (a) location.href = a.href; });
+    more.addEventListener('click', () => { shown = Math.min(shown + PAGE, results.length); render(); });
+    chips.forEach((c) => c.addEventListener('click', () => { kind = c.dataset.kind || ''; chips.forEach((x) => x.classList.toggle('on', x === c)); run(); input.focus(); }));
+    const move = (d: number) => { if (!results.length) return; sel = (sel + d + shown) % shown; render(); list.querySelector(`#sd-opt-${sel}`)?.scrollIntoView({ block: 'nearest' }); };
+    input.addEventListener('keydown', (e) => { if (e.key === 'ArrowDown') { e.preventDefault(); move(1); } else if (e.key === 'ArrowUp') { e.preventDefault(); move(-1); } });
+    list.addEventListener('mousemove', (e) => { const a = (e.target as HTMLElement).closest<HTMLElement>('.sd-r'); if (a) { const i = Number(a.id.replace('sd-opt-', '')); if (i !== sel) { sel = i; list.querySelectorAll('.sd-r').forEach((x, j) => x.setAttribute('aria-selected', String(j === sel))); } } });
+
+    // dialog plumbing: header button, ⌘K / Ctrl+K / "/", Esc
+    const open = () => { if (!isDialog) return; (root as HTMLDialogElement).showModal(); input.focus(); input.select(); renderRecent(); load(); };
+    const close = () => { if (isDialog) (root as HTMLDialogElement).close(); };
+    document.querySelectorAll<HTMLElement>('[data-search-open]').forEach((b) => { b.addEventListener('click', open); b.addEventListener('mouseenter', () => { load(); }, { once: true }); });
+    root.querySelector('.sd-x')?.addEventListener('click', () => (isDialog ? close() : (input.value = '', run())));
+    document.addEventListener('keydown', (e) => {
+      const t = e.target as HTMLElement; const typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
+      if ((e.key === 'k' && (e.metaKey || e.ctrlKey)) || (e.key === '/' && !typing)) { e.preventDefault(); if (isDialog) ((root as HTMLDialogElement).open ? close() : open()); else input.focus(); }
+    });
+    if (isDialog) root.addEventListener('click', (e) => { if (e.target === root) close(); });
+    // page mode: run the query from ?q=
+    if (!isDialog) { const q = new URLSearchParams(location.search).get('q'); renderRecent(); if (q) { input.value = q; run(); } input.focus(); }
+  }
+  // A result that points at a row on a list page (jobs, deals, investors): light it up.
+  const h = location.hash.slice(1);
+  if (h) { const el = document.getElementById(h); if (el && (el.classList.contains('jb') || el.classList.contains('iv') || el.tagName === 'TR')) { el.classList.add('search-hit'); setTimeout(() => el.scrollIntoView({ block: 'center' }), 50); } }
+  // Highlight the searched words on an article reached from a result (?highlight=term).
+  if (new URLSearchParams(location.search).has('highlight')) {
+    import(/* @vite-ignore */ PF_URL.replace('pagefind.js', 'pagefind-highlight.js')).then((m: any) => { new m.default({ markContext: '[data-pagefind-body]', highlightParam: 'highlight' }); }).catch(() => {});
+  }
+</script>

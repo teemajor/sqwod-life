@@ -17,7 +17,7 @@ const nets = [
   { name: 'WhatsApp', href: `https://wa.me/?text=${t}%20${u}` },
 ];
 ---
-<div class="sharebar" data-url={url} data-title={title}>
+<div class="sharebar" data-url={url} data-title={title} data-pagefind-ignore>
   <span class="sh-label">{T.label}</span>
   {nets.map((n) => <a class="sh-btn sh-net" href={n.href} target="_blank" rel="noopener" aria-label={`${T.label}: ${n.name}`} data-umami-event="share" data-umami-event-network={n.name} data-umami-event-page={path}>{n.name}</a>)}
   <button class="sh-btn sh-copy" type="button" data-copy={T.copy} data-copied={T.copied} data-umami-event="share" data-umami-event-network="copy" data-umami-event-page={path}>{T.copy}</button>

@@ -6,7 +6,7 @@
   "description": "sqwod.life — bilingual wellness-industry intelligence & media brand",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/search-index.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@types/three": "^0.187.0",
+    "pagefind": "^1.6.0",
     "typescript": "^5.6.3"
   }
 }
