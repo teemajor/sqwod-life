@@ -2,7 +2,8 @@
 urlSlug: the-metric-you-re-missing-while-everyone-else-scales-0911
 lang: "de"
 counterpart: the-metric-you-re-missing-while-everyone-else-scales-0911
-title: "Die eine Zahl, die dein Studio ruiniert – ohne dass du es merkst"
+title: "Mehr Mitglieder sind nicht mehr Geld: Umsatz pro Mitglied ist die Kennzahl, die zählt"
+seoTitle: "Umsatz pro Mitglied: Die Kennzahl, die mehr zählt"
 topic: marketing-community
 newsTake: true
 description: "Während große Ketten wachsen und Softwarefirmen eigene Studios eröffnen, übersehen die meisten Gymbesitzer die eine Kennzahl, die über Überleben oder Wachstum entscheidet."

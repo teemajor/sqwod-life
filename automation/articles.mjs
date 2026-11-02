@@ -21,7 +21,7 @@ import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync } from 
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { titleProblems, headingProblems, recentArticles, pickLead } from './titles.mjs';
-import { noEmDash, phraseProblems } from './quality.mjs';
+import { noEmDash, phraseProblems, linkFirstMentions } from './quality.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SOURCES = join(__dirname, 'sources');
@@ -120,7 +120,7 @@ ${enTitle ? `- Use the same name or number as the English title: "${enTitle}".\n
 
 HARD RULES:
 - Never invent numbers, dollar figures, percentages, dates, or company facts. If a number isn't in the stories above, don't state one.
-- Attribute claims to the outlets. Plain words, no slang. No em dashes.
+- Attribute claims to the outlets by name inside the sentence the first time you use their facts, spelled exactly as above ("according to Athletech News", "Athletech News reported"). Do not add links or URLs; they are added for you. Plain words, no slang. No em dashes.
 - ${lang === 'de' ? 'Schreibe natürliches, idiomatisches Deutsch, keine Übersetzung. Keine Anrede mit du im Titel.' : 'Plain, direct English.'}
 
 TOPIC: pick the one topic this story belongs to: ${ARTICLE_TOPICS.join(', ')}.
@@ -149,7 +149,10 @@ Respond ONLY as minified JSON: {"topic":"one of the topics above","title":"...",
       ...phraseProblems(o.title).map((x) => `title: ${x}`),
       ...headingProblems(o.body),
     ];
-    if (!problems.length) return o;
+    if (!problems.length) {
+      o.body = linkFirstMentions(o.body, [lead, ...context].filter((c) => c.url).slice(0, 3).map((c) => ({ name: c.outlet, url: c.url })));
+      return o;
+    }
     console.error(`· ${lang} draft rejected (${attempt}/3): ${problems.join(' | ')}`);
     feedback = `\n\nYOUR PREVIOUS DRAFT WAS REJECTED. Title was: "${o.title}". Fix every problem:\n- ${problems.join('\n- ')}`;
   }

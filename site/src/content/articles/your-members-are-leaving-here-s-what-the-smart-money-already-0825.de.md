@@ -2,7 +2,8 @@
 urlSlug: your-members-are-leaving-here-s-what-the-smart-money-already-0825
 lang: "de"
 counterpart: your-members-are-leaving-here-s-what-the-smart-money-already-0825
-title: "Warum dein Studio Mitglieder verliert – und was jetzt zählt"
+title: "Du hast ein Bindungsproblem, kein Akquise-Problem: Was dir die Kündigungen sagen"
+seoTitle: "Bindungsproblem statt Akquise-Problem: Was Kündigungen sagen"
 topic: retention
 newsTake: true
 description: "Churn, Expansion und mentale Fitness: Was die aktuellen Branchentrends dir konkret sagen – und was du diese Woche tun solltest."

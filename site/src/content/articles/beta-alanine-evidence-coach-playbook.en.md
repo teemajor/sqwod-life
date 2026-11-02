@@ -2,7 +2,7 @@
 urlSlug: beta-alanine-evidence-coach-playbook
 lang: "en"
 counterpart: beta-alanine-evidence-coach-playbook
-title: "Beta-Alanine: The Tingle Isn't the Point. Here's the Window Where It Actually Works."
+title: "Beta-Alanine Works Only in 0.5 to 10-Minute Efforts: The Evidence"
 seoTitle: "Beta-Alanine: Does It Work, and for Which Efforts?"
 topic: supplements
 description: "We read the meta-analyses, graded them, and checked the live trial registry. What beta-alanine does, the narrow window it does it in, who's wasting their money, and the exact script for the client who asks."

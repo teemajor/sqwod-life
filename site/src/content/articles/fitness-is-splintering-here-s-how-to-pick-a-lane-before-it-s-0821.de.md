@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splintering-here-s-how-to-pick-a-lane-before-it-s-0821
 lang: "de"
 counterpart: fitness-is-splintering-here-s-how-to-pick-a-lane-before-it-s-0821
-title: "Fitness-Markt 2025: Wer jetzt nicht handelt, verliert den Anschluss"
+title: "Basketball-Boutiques, Krebs-Reha, Discounter-Übernahmen: Fitness wächst in alle Richtungen zugleich"
+seoTitle: "Fitness wächst in alle Richtungen: Nischen und Übernahmen"
 topic: strategy
 newsTake: true
 description: "Von Basketball-Boutiques bis Konsolidierungswelle – was die aktuellen Bewegungen im Markt für Betreiber und Investoren konkret bedeuten."

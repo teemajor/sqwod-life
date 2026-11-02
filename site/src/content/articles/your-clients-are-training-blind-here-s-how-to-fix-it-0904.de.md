@@ -2,7 +2,8 @@
 urlSlug: your-clients-are-training-blind-here-s-how-to-fix-it-0904
 lang: "de"
 counterpart: your-clients-are-training-blind-here-s-how-to-fix-it-0904
-title: "Dein Spiegel lügt dich an – und deine Athleten zahlen den Preis"
+title: "Warum Kunden nach drei Monaten noch schlechte Technik haben: Das Umfeld coacht mit"
+seoTitle: "Schlechte Technik nach 3 Monaten: Das Umfeld coacht mit"
 topic: offer-programming
 newsTake: true
 description: "Wie ein Dunkeltraining-Trend aus Dubai und eine simple Handtuchübung zusammen verraten, warum propriozeptives Training der unterschätzte Gamechanger im Verletzungsschutz ist."

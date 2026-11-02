@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splitting-into-two-businesses-pick-your-side-0814
 lang: "en"
 counterpart: fitness-is-splitting-into-two-businesses-pick-your-side-0814
-title: "Fitness Is Splitting Into Two Businesses. Pick Your Side."
+title: "Community or Convenience: P&G's $3.8B Thorne Deal Shows Where Fitness Loyalty Is Going"
+seoTitle: "Community or Convenience: Where Fitness Loyalty Is Going"
 topic: strategy
 newsTake: true
 description: "From Peloton's drive-by high fives to P&G's $3.8B bet on wellness, the industry is dividing fast: here's how to position before the gap widens."

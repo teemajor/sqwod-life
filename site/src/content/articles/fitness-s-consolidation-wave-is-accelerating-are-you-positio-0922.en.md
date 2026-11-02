@@ -2,7 +2,8 @@
 urlSlug: fitness-s-consolidation-wave-is-accelerating-are-you-positio-0922
 lang: "en"
 counterpart: fitness-s-consolidation-wave-is-accelerating-are-you-positio-0922
-title: "Fitness's Consolidation Wave Is Accelerating: Are You Positioned?"
+title: "Gym Consolidation Is Speeding Up: The 50+ Member and the Collab Class Are the Answer"
+seoTitle: "Gym Consolidation: 50+ Members and Collab Classes as Defence"
 topic: market-moves
 newsTake: true
 description: "Big money is reshaping who owns gyms, who joins them, and how classes are sold: here's what operators and investors need to do right now."

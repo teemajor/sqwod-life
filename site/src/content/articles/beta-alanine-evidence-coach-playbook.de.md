@@ -2,7 +2,7 @@
 urlSlug: beta-alanine-evidence-coach-playbook
 lang: "de"
 counterpart: beta-alanine-evidence-coach-playbook
-title: "Beta-Alanin: Das Kribbeln ist nicht der Effekt. Hier ist das Zeitfenster, in dem es wirklich zählt."
+title: "Beta-Alanin wirkt nur bei Belastungen von 0,5 bis 10 Minuten: die Evidenz"
 seoTitle: "Beta-Alanin: Wirkung, Dosierung und für wen es sich lohnt"
 topic: supplements
 description: "Wir haben die Meta-Analysen gelesen, bewertet und das laufende Studienregister geprüft. Was Beta-Alanin in den Studien gezeigt hat, wie eng das Zeitfenster ist, wer sein Geld verschwendet, und das Skript für den Kunden, der fragt."

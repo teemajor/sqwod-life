@@ -3,7 +3,7 @@ urlSlug: your-members-don-t-want-a-gym-they-want-a-feeling-1006
 lang: "de"
 counterpart: your-members-don-t-want-a-gym-they-want-a-feeling-1006
 title: "Wellness geht von Schweiß zu Gefühl: Ruhe-Studios, Düfte und ein Studio-Hund"
-seoTitle: "Wellness von Schweiß zu Gefühl: Was Mitglieder jetzt kaufen"
+seoTitle: "Wellness von Schweiß zu Gefühl: Was Mitglieder kaufen"
 topic: marketing-community
 newsTake: true
 description: "Sechs aktuelle Deals zeigen, wohin der Markt driftet – und was du jetzt konkret tun kannst."

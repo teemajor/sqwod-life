@@ -2,7 +2,7 @@
 urlSlug: menopause-training-evidence-coach-playbook
 lang: "en"
 counterpart: menopause-training-evidence-coach-playbook
-title: "Your Client Is 51 and Everything Changed. Here's What the Evidence Actually Says."
+title: "Training Through Menopause: What the Evidence Says, and the Myth That Costs You the Client"
 seoTitle: "Training Through Menopause: What the Evidence Says"
 topic: training
 description: "Perimenopause and menopause coaching is full of confident claims and thin data. We read the meta-analyses, graded them, and checked the trial registry. What training actually does, what it doesn't, and the script for the client in front of you."

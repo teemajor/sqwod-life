@@ -2,7 +2,8 @@
 urlSlug: why-fitness-studios-are-closing-while-wellness-apps-raise-mi-0828
 lang: "en"
 counterpart: why-fitness-studios-are-closing-while-wellness-apps-raise-mi-0828
-title: "Why Fitness Studios Are Closing While Wellness Apps Raise Millions"
+title: "Three Kansas City Studios Close While an Astrology App Raises $12M: Follow the Money"
+seoTitle: "KC Studios Close, Astrology App Raises $12M: Follow Money"
 topic: market-moves
 newsTake: true
 description: "The capital is flowing, just not where most gym owners are looking: here's how to follow the money before your lease does."

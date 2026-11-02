@@ -2,7 +2,8 @@
 urlSlug: your-members-want-options-are-you-actually-giving-them-0911
 lang: "de"
 counterpart: your-members-want-options-are-you-actually-giving-them-0911
-title: "Your members want options: are you actually giving them?"
+title: "Peloton-Filter, Padel plus Pilates: Mitglieder erwarten jetzt Auswahl"
+seoTitle: "Peloton-Filter, Padel plus Pilates: Mitglieder wollen Wahl"
 topic: offer-programming
 newsTake: true
 description: "From Peloton's new preference filters to padel studios adding Pilates, the fitness industry is betting big on personalisation: here's what that means for your programming this week."

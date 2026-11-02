@@ -2,7 +2,8 @@
 urlSlug: the-metric-you-re-missing-while-everyone-else-scales-0911
 lang: "en"
 counterpart: the-metric-you-re-missing-while-everyone-else-scales-0911
-title: "The Metric You're Missing While Everyone Else Scales"
+title: "More Members Is Not More Money: Yield per Member Is the Metric to Watch"
+seoTitle: "Yield per Member: The Gym Metric That Beats Headcount"
 topic: marketing-community
 newsTake: true
 description: "Today's fitness industry moves tell a clear story about where growth actually comes from, and it's not where most gym owners are looking."

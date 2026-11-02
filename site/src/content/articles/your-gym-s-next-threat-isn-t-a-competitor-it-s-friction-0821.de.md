@@ -2,7 +2,8 @@
 urlSlug: your-gym-s-next-threat-isn-t-a-competitor-it-s-friction-0821
 lang: "de"
 counterpart: your-gym-s-next-threat-isn-t-a-competitor-it-s-friction-0821
-title: "Wachstum oder Stillstand: Was Fitnessstudios jetzt entscheidet"
+title: "Ein Todesfall bei HYROX, eine blockierte 1-Mio.-£-Erweiterung, ein Gym in einer Schule: Reibung ist die Gefahr, nicht die Konkurrenz"
+seoTitle: "Reibung bremst Gyms: HYROX-Todesfall, blockierter Ausbau"
 topic: strategy
 newsTake: true
 description: "Warum manche Studios gerade expandieren, andere scheitern – und was du heute konkret tun kannst."

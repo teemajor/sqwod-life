@@ -12,6 +12,7 @@ import { SUBSCRIBE } from '../config/subscribe';
 import { EDITOR, authorName, isHouseAuthor, howMade } from '../config/authors';
 import type { CollectionEntry } from 'astro:content';
 import type { RelatedItem } from '../lib/related';
+import { describeSource, kindLabel } from '../lib/sources';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 // Real brand wordmark, embedded as a data URI so it rasterizes into the share PNG
@@ -72,6 +73,14 @@ const TOC = lang === 'de'
   ? { toc: 'In diesem Report', data: 'Die Daten', pb: 'Was du tun kannst', src: 'Quellen und Methode', take: 'Daten mitnehmen', takeP: 'Jede Grafik mit Tabelle und Quelle. Frei zitierbar mit Link.', min: 'Min. Lesezeit', charts: 'Grafiken', sources: 'Quellen', read30: 'In 30 Sekunden' }
   : { toc: 'In this report', data: 'The data', pb: 'What to do', src: 'Sources and method', take: 'Take the data', takeP: 'Every chart ships with its table and source. Free to quote with a link.', min: 'min read', charts: 'charts', sources: 'sources', read30: 'The 30-second read' };
 const BODY_KICK = lang === 'de' ? (isReport ? 'Der vollständige Report' : 'Der Artikel') : (isReport ? 'The full report' : 'The article');
+// Front block (1 Nov 2026): on the plain layout the takeaways live inside the answer card (three shown,
+// the rest behind "N more"), followed by a "Read the full report" jump to #report. Articles without an
+// answer card keep their own takeaways block with the same cap and jump link. Wide reports are unchanged.
+const SKIP = lang === 'de' ? (isReport ? 'Den vollständigen Report lesen' : 'Den Artikel lesen') : (isReport ? 'Read the full report' : 'Read the article');
+const moreLabel = (n: number) => lang === 'de' ? `${n} weitere Erkenntnisse` : `${n} more takeaway${n === 1 ? '' : 's'}`;
+const TK_SHOW = 3;
+const takeaways = d.takeaways ?? [];
+const mergedTk = !!answer && !wide && takeaways.length > 0;
 const tocItems = [
   ...((d.charts?.length ?? 0) > 0 ? [{ id: 'data', t: TOC.data }] : []),
   ...((d.playbook?.length ?? 0) > 0 ? [{ id: 'playbook', t: TOC.pb }] : []),
@@ -216,14 +225,28 @@ const shareCfg = {
           <div><dt>{AB.doThis}</dt><dd>{answer.doThis[lang]}</dd></div>
           <div><dt>{AB.watch}</dt><dd>{answer.watch[lang]}</dd></div>
         </dl>
-        {d.topic === 'supplements' && <a class="ans-hub" href={`/${lang}/evidence/supplements`}>{AB.hub} →</a>}
+        {mergedTk && (
+          <div class="ans-tk">
+            <p class="kick" style="margin:0">{TX.tldr}</p>
+            <ol class="tk-list">{takeaways.slice(0, TK_SHOW).map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}</ol>
+            {takeaways.length > TK_SHOW && (
+              <details class="tk-more"><summary>{moreLabel(takeaways.length - TK_SHOW)}</summary>
+                <ol class="tk-list" start={TK_SHOW + 1}>{takeaways.slice(TK_SHOW).map((t, i) => <li><span class="dnum tl-n">{String(i + TK_SHOW + 1).padStart(2, '0')}</span><span>{t}</span></li>)}</ol>
+              </details>
+            )}
+          </div>
+        )}
+        <div class="ans-foot">
+          <a class="ans-skip" href="#report">{SKIP} ↓ <small>{`${readMin} ${TOC.min}`}</small></a>
+          {d.topic === 'supplements' && <a class="ans-hub" href={`/${lang}/evidence/supplements`}>{AB.hub} →</a>}
+        </div>
       </section>
     )}
     {/* On phones the decorative hero is skipped when an answer card already sits above it: two cards before the byline is one too many. */}
     {d.hero && <div class={answer ? 'hero-wrap hero-after-answer' : 'hero-wrap'}><ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} /></div>}
     <div class="meta meta-row">
       <span class="by">{byEditor && <img class="by-img" src={EDITOR.img} alt="" width="22" height="22" loading="lazy" />}{lang === 'de' ? 'Von ' : 'By '}<a href={EDITOR.about(lang)} rel="author">{byName}</a></span>
-      <span class="by-date">{fmt}</span>
+      <time class="by-date" datetime={d.publishedAt.toISOString().slice(0, 10)} data-pagefind-meta="date[datetime]" data-pagefind-sort="date[datetime]">{fmt}</time>
       {byEditor && <span class="by-role">{EDITOR.role[lang]}</span>}
       {locked && <span class="conf">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
     </div>
@@ -232,17 +255,51 @@ const shareCfg = {
 
 <ShareBar path={sharePath} title={d.title} lang={lang} />
 
-{d.takeaways && d.takeaways.length > 0 && (
+{!mergedTk && takeaways.length > 0 && (
   <section class="block tldr">
     <p class="kick">{reportHero ? TOC.read30 : TX.tldr}</p>
     <ol class={wide ? 'tldr-list tl-wide swipe' : 'tldr-list'}>
-      {d.takeaways.map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}
+      {(wide ? takeaways : takeaways.slice(0, TK_SHOW)).map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}
     </ol>
+    {!wide && takeaways.length > TK_SHOW && (
+      <details class="tk-more"><summary>{moreLabel(takeaways.length - TK_SHOW)}</summary>
+        <ol class="tldr-list">{takeaways.slice(TK_SHOW).map((t, i) => <li><span class="dnum tl-n">{String(i + TK_SHOW + 1).padStart(2, '0')}</span><span>{t}</span></li>)}</ol>
+      </details>
+    )}
+    {!wide && <p class="tldr-foot"><a class="ans-skip" href="#report">{SKIP} ↓ <small>{`${readMin} ${TOC.min}`}</small></a></p>}
   </section>
 )}
 
 {!locked && !wide && <div id="signup-mid"><InlineSignup lang={lang} source="article-mid" /></div>}
 
+<div class={wide ? 'rp-grid' : 'rp-plain'}>
+{wide && (
+  <aside class="rp-rail">
+    <div class="rp-stick">
+      {tocItems.length > 1 && (
+        <Fragment>
+          <p class="kick">{TOC.toc}</p>
+          <nav class="rp-toc" aria-label={TOC.toc}>{tocItems.map((x) => <a href={`#${x.id}`} data-toc={x.id}>{x.t}</a>)}</nav>
+        </Fragment>
+      )}
+      {hasData && (
+        <Fragment>
+          <p class="kick" style="margin-top:26px">{TOC.take}</p>
+          <div class="rp-dl">
+            {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>CSV ↓</a>}
+            <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>JSON ↓</a>
+            <a class="dc-btn" href="#cite">{lang === 'de' ? 'Zitieren' : 'Cite'}</a>
+          </div>
+          <p class="rp-note">{TOC.takeP}</p>
+        </Fragment>
+      )}
+    </div>
+  </aside>
+)}
+<div class="rp-main">
+{!locked && wide && <InlineSignup lang={lang} source="article-top" />}
+{/* Data blocks (figures, benchmark, charts, playbook). Wide reports show them before the text (markup order); the plain layout puts the text first via CSS order, so a phone reaches the article in about one screen. */}
+<div class="rp-data">
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
     <div class="figs-head">
@@ -272,33 +329,6 @@ const shareCfg = {
     </div>
   </section>
 )}
-
-<div class={wide ? 'rp-grid' : 'rp-plain'}>
-{wide && (
-  <aside class="rp-rail">
-    <div class="rp-stick">
-      {tocItems.length > 1 && (
-        <Fragment>
-          <p class="kick">{TOC.toc}</p>
-          <nav class="rp-toc" aria-label={TOC.toc}>{tocItems.map((x) => <a href={`#${x.id}`} data-toc={x.id}>{x.t}</a>)}</nav>
-        </Fragment>
-      )}
-      {hasData && (
-        <Fragment>
-          <p class="kick" style="margin-top:26px">{TOC.take}</p>
-          <div class="rp-dl">
-            {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>CSV ↓</a>}
-            <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>JSON ↓</a>
-            <a class="dc-btn" href="#cite">{lang === 'de' ? 'Zitieren' : 'Cite'}</a>
-          </div>
-          <p class="rp-note">{TOC.takeP}</p>
-        </Fragment>
-      )}
-    </div>
-  </aside>
-)}
-<div class="rp-main">
-{!locked && wide && <InlineSignup lang={lang} source="article-top" />}
 {d.benchmark && <BenchmarkWidget lang={lang} benchmark={d.benchmark} />}
 
 {d.series && d.series.points.length > 1 && !(d.charts?.length) && (() => {
@@ -369,6 +399,8 @@ const shareCfg = {
   </section>
 )}
 
+</div>
+
 <div class="report-body" data-gated={locked ? '' : undefined}>
   <section class="block prose" id="report">
     {/* A visible start line for the body: the blocks above are the summary, this is the text. */}
@@ -385,7 +417,12 @@ const shareCfg = {
     <section class="block sources-block" id="sources">
       <p class="kick">{lang==='de'?'Quellen':'Sources'}</p>
       <ol class="src-list">
-        {d.sources.map((s, i) => <li id={`source-${i + 1}`}><a href={s.url} target="_blank" rel="nofollow noopener">{s.label} ↗</a></li>)}
+        {d.sources.map((s, i) => { const c = describeSource(s); const k = kindLabel(c.kind, lang); return (
+          <li id={`source-${i + 1}`} data-n={i + 1} data-title={c.title} data-pub={c.publisher} data-year={c.year} data-kind={c.kind ?? ''} data-kind-label={k} data-host={c.host} data-url={s.url}>
+            {k && <span class={`src-kind src-kind-${c.kind}`}>{k}</span>}
+            <a href={s.url} target="_blank" rel="nofollow noopener" data-src-where="list">{s.label} ↗</a>
+            <span class="src-back" hidden></span>
+          </li>); })}
       </ol>
       <p class="src-note">{lang==='de'
         ? `Zahlen aus öffentlichen Quellen${d.asOf ? `, Stand ${d.asOf}` : ''}. Schätzungen verschiedener Häuser variieren; wir verlinken, damit du selbst prüfen kannst.`
@@ -407,7 +444,7 @@ const shareCfg = {
 {!locked && <InlineSignup lang={lang} source="article-end" />}
 
 {locked && (
-  <div class="unlock" id="unlock">
+  <div class="unlock" id="unlock" data-pagefind-ignore>
     <div class="unlock-card">
       <p class="kick m" style="margin:0 0 8px">{U.kick}</p>
       <h2 class="unlock-head">{U.head}</h2>
@@ -440,7 +477,7 @@ const shareCfg = {
 </div>
 
 {related && related.length > 0 && (
-  <section class="block related">
+  <section class="block related" data-pagefind-ignore>
     <p class="kick">{lang==='de'?'Weiterlesen':'Related'}</p>
     <div class="grid cols2">
       {related.map((r) => (
@@ -548,6 +585,8 @@ const shareCfg = {
   .rh-axis{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--g4)}
   /* report grid: sticky contents rail + body */
   .rp-grid{display:grid;grid-template-columns:220px minmax(0,1fr);gap:56px;align-items:start}
+  .rp-plain .rp-main{display:flex;flex-direction:column}
+  .rp-plain .report-body{order:-1}
   .rp-main{min-width:0}
   .rp-grid .rp-main{max-width:780px}
   .rp-stick{position:sticky;top:24px;padding-top:26px}
@@ -602,6 +641,19 @@ const shareCfg = {
   .ans-pill.t-myth{color:var(--g1);border:1px dotted var(--g2);background:transparent}
   .ans-pill.t-myth::before{content:"≠";font-size:12px;line-height:1}
   .ans-verdict{margin:0 0 12px;font-size:17px;font-weight:700;line-height:1.45;color:var(--chalk);max-width:62ch}
+  .ans-tk{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+  .tk-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:9px}
+  .tk-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--g1)}
+  .tk-list .tl-n{font-size:18px;line-height:1.1;min-width:22px}
+  .tk-more{margin-top:10px}
+  .tk-more summary{cursor:pointer;list-style:none;font-size:13px;color:var(--g2);text-decoration:underline;text-underline-offset:3px;width:max-content}
+  .tk-more summary::-webkit-details-marker{display:none}
+  .tk-more[open] summary{margin-bottom:8px}
+  .ans-foot{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+  .ans-skip{display:inline-flex;align-items:center;gap:8px;background:var(--chalk);color:var(--ink);border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700;text-decoration:none;transition:opacity .15s ease}
+  .ans-skip:hover{opacity:.88}
+  .ans-skip small{font-size:12px;font-weight:600;opacity:.7}
+  .tldr-foot{margin:14px 0 0}
   .ans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px;margin:0}
   .ans-grid div{min-width:0}
   .ans-grid dt{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);margin:0 0 4px}
@@ -859,6 +911,118 @@ const shareCfg = {
         setTimeout(() => btn.classList.remove('busy'), 1400);
       });
     });
+  })();
+</script>
+
+<script define:vars={{ fnT: lang === 'de' ? { open: 'Quelle öffnen', all: 'Alle Quellen', back: 'Zurück zum Text', close: 'Schließen', card: 'Quelle' } : { open: 'Open source', all: 'All sources', back: 'Back to text', close: 'Close', card: 'Source' }, fnSlug: d.urlSlug ?? entry.slug }}>
+  // Citations (Nov 2026): footnote numbers open a small preview card (tap/click
+  // everywhere, hover as a bonus on mouse devices), the Sources list gets
+  // back-to-text links, and source clicks are counted in Umami.
+  (function () {
+    var track = function (name, data) { try { window.umami && window.umami.track(name, Object.assign({ article: fnSlug }, data)); } catch (e) {} };
+    var list = document.getElementById('sources');
+
+    // Count clicks on any source link: list, card, figure captions, and links in the text.
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a || /^#/.test(a.getAttribute('href'))) return;
+      var where = a.dataset.srcWhere || (a.classList.contains('fig-src-link') ? 'figure' : (a.closest('.prose') && a.host && a.host !== location.host ? 'inline' : ''));
+      if (!where) return;
+      var li = a.closest('li[data-n]') || (a.dataset.n && list && list.querySelector('li[data-n="' + a.dataset.n + '"]'));
+      var name = li ? (li.dataset.pub || li.dataset.title || '') : (a.textContent || '').replace(/\s*↗\s*$/, '');
+      track('source-click', { where: where, source: name.slice(0, 60), kind: li ? li.dataset.kind || 'none' : 'none' });
+    });
+
+    if (!list) return;
+    var marks = document.querySelectorAll('sup.fn a[href^="#source-"]');
+    if (!marks.length) return;
+
+    // Back-to-text links: give every marker an id, then list them under its source.
+    var refs = {};
+    marks.forEach(function (a) {
+      var n = a.getAttribute('href').slice(8);
+      (refs[n] = refs[n] || []).push(a);
+      a.id = 'cite-' + n + '-' + refs[n].length;
+      a.setAttribute('aria-haspopup', 'dialog');
+    });
+    var flash = function (el) { el.classList.add('fn-hit'); setTimeout(function () { el.classList.remove('fn-hit'); }, 1600); };
+    Object.keys(refs).forEach(function (n) {
+      var box = list.querySelector('li[data-n="' + n + '"] .src-back');
+      if (!box) return;
+      refs[n].forEach(function (a, i) {
+        var b = document.createElement('a');
+        b.href = '#' + a.id;
+        b.textContent = refs[n].length === 1 ? '↩' : (i === 0 ? '↩ ' : '') + String.fromCharCode(97 + (i % 26));
+        b.setAttribute('aria-label', fnT.back + (refs[n].length > 1 ? ' (' + (i + 1) + ')' : ''));
+        b.addEventListener('click', function (e) { e.preventDefault(); a.scrollIntoView({ block: 'center', behavior: 'smooth' }); a.focus({ preventScroll: true }); flash(a); });
+        box.appendChild(b);
+      });
+      box.hidden = false;
+    });
+
+    // Preview card: one shared element, filled from the Sources list.
+    var card = document.createElement('div');
+    card.className = 'fn-card'; card.hidden = true;
+    card.setAttribute('role', 'dialog'); card.setAttribute('aria-label', fnT.card);
+    document.body.appendChild(card);
+    var cur = null, pinned = false, hoverT = 0, seen = {};
+    var esc = function (t) { var d = document.createElement('span'); d.textContent = t || ''; return d.innerHTML; };
+
+    function show(a, pin) {
+      var n = a.getAttribute('href').slice(8);
+      var li = list.querySelector('li[data-n="' + n + '"]');
+      if (!li) return false;
+      var ds = li.dataset, meta = [ds.pub, ds.year].filter(Boolean).join(' · ') || ds.host || '';
+      card.innerHTML = '<button class="fn-x" type="button" aria-label="' + esc(fnT.close) + '">×</button>'
+        + (ds.kindLabel ? '<span class="src-kind src-kind-' + esc(ds.kind) + '">' + esc(ds.kindLabel) + '</span>' : '')
+        + '<span class="fn-title">' + esc(n + '. ' + ds.title) + '</span>'
+        + (meta ? '<span class="fn-meta">' + esc(meta) + '</span>' : '')
+        + '<span class="fn-acts"><a href="' + esc(ds.url) + '" target="_blank" rel="nofollow noopener" data-src-where="card" data-n="' + esc(n) + '">' + esc(fnT.open) + ' ↗</a>'
+        + '<a href="#source-' + esc(n) + '" class="fn-all">' + esc(fnT.all) + ' ↓</a></span>';
+      card.hidden = false; cur = a; pinned = pin;
+      a.setAttribute('aria-expanded', 'true');
+      // Place under the number, or above it when there is no room below.
+      var r = a.getBoundingClientRect(), w = card.offsetWidth, h = card.offsetHeight;
+      var left = Math.max(16, Math.min(r.left - 24, document.documentElement.clientWidth - w - 16));
+      var top = (r.bottom + h + 12 > innerHeight && r.top > h + 12) ? r.top - h - 8 : r.bottom + 8;
+      card.style.left = (left + scrollX) + 'px'; card.style.top = (top + scrollY) + 'px';
+      if (!seen[n]) { seen[n] = 1; track('source-preview', { n: n, kind: ds.kind || 'none' }); }
+      return true;
+    }
+    function hide(refocus) {
+      if (!cur) return;
+      cur.removeAttribute('aria-expanded');
+      if (refocus) cur.focus();
+      card.hidden = true; cur = null; pinned = false;
+    }
+
+    marks.forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        if (e.metaKey || e.ctrlKey || e.shiftKey) return; // let power users jump to the list
+        e.preventDefault();
+        if (cur === a && pinned) { hide(); return; }
+        if (show(a, true) && e.detail === 0) { var f = card.querySelector('.fn-acts a'); f && f.focus(); } // keyboard: move focus in
+      });
+    });
+
+    // Hover is a bonus on mouse devices only; touch screens use tap.
+    if (window.matchMedia && matchMedia('(hover:hover) and (pointer:fine)').matches) {
+      marks.forEach(function (a) {
+        a.addEventListener('mouseenter', function () { clearTimeout(hoverT); if (pinned) return; hoverT = setTimeout(function () { show(a, false); }, 250); });
+        a.addEventListener('mouseleave', function () { clearTimeout(hoverT); if (!pinned) hoverT = setTimeout(function () { hide(); }, 300); });
+      });
+      card.addEventListener('mouseenter', function () { clearTimeout(hoverT); });
+      card.addEventListener('mouseleave', function () { if (!pinned) hoverT = setTimeout(function () { hide(); }, 300); });
+    }
+
+    card.addEventListener('click', function (e) {
+      if (e.target.closest('.fn-x')) { hide(true); return; }
+      var all = e.target.closest('.fn-all');
+      if (all) hide(); // the plain #source-N link jumps and highlights the row (:target)
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && cur) hide(true); });
+    document.addEventListener('click', function (e) { if (cur && !card.contains(e.target) && e.target !== cur) hide(); });
+    addEventListener('resize', function () { hide(); });
   })();
 </script>
 

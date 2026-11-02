@@ -2,7 +2,7 @@
 urlSlug: omega-3-evidence-coach-playbook
 lang: "en"
 counterpart: omega-3-evidence-coach-playbook
-title: "Fish Oil Is Not a Muscle Supplement. Here's What the Evidence Says It Actually Does."
+title: "Fish Oil for Athletes: What Omega-3 Does for Joints and Recovery, and Not for Muscle"
 seoTitle: "Fish Oil (Omega-3) for Athletes: What It Does and Doesn't Do"
 topic: supplements
 description: "We read the meta-analyses on omega-3 for joints, recovery and muscle, graded them, and checked the live trial registry. What EPA and DHA actually deliver, the dose that matters, the one real safety signal, and the script for the client who asks."

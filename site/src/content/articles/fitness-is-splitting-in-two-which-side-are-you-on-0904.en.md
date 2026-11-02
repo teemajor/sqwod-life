@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splitting-in-two-which-side-are-you-on-0904
 lang: "en"
 counterpart: fitness-is-splitting-in-two-which-side-are-you-on-0904
-title: "Fitness Is Splitting in Two, Which Side Are You On?"
+title: "Nestlé Sells Supplements, MasterClass Teaches GLP-1: Wellness Is Fracturing"
+seoTitle: "Nestlé, MasterClass, Informa: The Wellness Economy Fractures"
 topic: strategy
 newsTake: true
 description: "From dark rooms to GLP-1 masterclasses, the wellness economy is fracturing fast, and operators who don't pick a lane will get left behind."
