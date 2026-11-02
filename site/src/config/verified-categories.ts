@@ -64,6 +64,11 @@ export const reviewEarns = (slug: string) => earns(pickForReview(slug));
 
 const en = (s: string) => s; // readability helper
 
+// Awin deep link: Sqwod publisher ID 245789. Pass the advertiser MID and the destination page.
+const AWIN_AFF = 245789;
+const HYPERICE_DE = 25773; // Hyperice DE (Germany), joined 2026-11-02
+const awin = (mid: number, dest: string) => `https://www.awin1.com/cread.php?awinmid=${mid}&awinaffid=${AWIN_AFF}&ued=${encodeURIComponent(dest)}`;
+
 export const categories: Category[] = [
   {
     slug: 'wearables',
@@ -135,11 +140,16 @@ export const categories: Category[] = [
       // Amazon.de as "TheraGun Europe" but not this SKU — so pointed to brand-direct until a clean first-party Prime Plus listing exists.
       { product: 'Theragun Prime Plus', brand: 'Therabody', url: 'https://www.therabody.com/de/de-de/', affiliate: true, reviewSlug: 'theragun-prime-plus',
         bestFor: { en: 'Percussion + heat', de: 'Percussion + Wärme' }, why: { en: 'Deep 16mm percussion plus fast heat in a grip you can hold all session.', de: 'Tiefe 16-mm-Percussion plus schnelle Wärme in einem Griff für die ganze Session.' } },
-      { product: 'Hyperice Hypervolt 2', brand: 'Hyperice', url: 'https://www.amazon.de/dp/B0CVSD725F?tag=sqwod-21', affiliate: true, reviewSlug: 'hyperice-hypervolt-2',
+      // 2026-11-02: Hyperice DE Awin programme live (MID 25773, joined 2 Nov 2026, 30-day cookie). Hypervolt 3 + Normatec 3
+      // deep-link to the hyperice.com/en-de store via Awin. Hypervolt 2 stays on its verified first-party Amazon link (not
+      // confirmed on the DE brand store any more); it collapses under the Hypervolt 3 row on the guide via `family`.
+      { product: 'Hyperice Hypervolt 3', brand: 'Hyperice', family: 'hypervolt', current: true, url: awin(HYPERICE_DE, 'https://hyperice.com/en-de/products/hypervolt-3'), affiliate: true, reviewSlug: 'hyperice-hypervolt-3',
+        bestFor: { en: 'Percussion with heat', de: 'Percussion mit Wärme' }, why: { en: 'Five speeds, up to four hours of battery, a pressure sensor and a heated head, at €249.', de: 'Fünf Stufen, bis zu vier Stunden Akku, Drucksensor und Wärmekopf, für 249 €.' } },
+      { product: 'Hyperice Hypervolt 2', brand: 'Hyperice', family: 'hypervolt', url: 'https://www.amazon.de/dp/B0CVSD725F?tag=sqwod-21', affiliate: true, reviewSlug: 'hyperice-hypervolt-2',
         bestFor: { en: 'Everyday percussion', de: 'Percussion für den Alltag' }, why: { en: 'Quiet, light, app-guided percussion for warm-ups and client recovery.', de: 'Leise, leichte, app-geführte Percussion für Warm-up und Kund:innen-Recovery.' } },
       { product: 'BLACKROLL Standard', brand: 'BLACKROLL', url: 'https://www.amazon.de/dp/B003BP5AGA?tag=sqwod-21', affiliate: true, reviewSlug: 'blackroll-standard',
         bestFor: { en: 'Foam rolling', de: 'Faszienrolle' }, why: { en: 'The German original: durable, medium-firm, physio-trusted foam roller.', de: 'Das deutsche Original: langlebige, mittelfeste, physio-erprobte Faszienrolle.' } },
-      { product: 'Hyperice Normatec 3', brand: 'Hyperice', url: 'https://hyperice.com/', affiliate: true, reviewSlug: 'hyperice-normatec-3',
+      { product: 'Hyperice Normatec 3', brand: 'Hyperice', url: awin(HYPERICE_DE, 'https://hyperice.com/en-de/products/normatec-3-legs'), affiliate: true, reviewSlug: 'hyperice-normatec-3',
         bestFor: { en: 'Compression recovery', de: 'Kompressions-Recovery' }, why: { en: 'Premium, user-loved pneumatic compression boots: cordless with app control.', de: 'Hochwertige, beliebte Kompressionsstiefel: kabellos mit App-Steuerung.' } },
       { product: 'Compex SP 8.0 Wireless', brand: 'Compex', url: 'https://www.compex.com/de/', affiliate: false, reviewSlug: 'compex-sp-80',
         bestFor: { en: 'Wireless EMS', de: 'Kabelloses EMS' }, why: { en: 'Compex\'s most capable wireless EMS unit: a premium training adjunct.', de: 'Compex\' leistungsstärkstes kabelloses EMS-Gerät: ein Premium-Trainings-Add-on.' } },
