@@ -169,6 +169,18 @@ What shipped on `/[lang]/intelligence/investors/`:
 - The equipment report's "Where do you stand?" block read "Strength share of your equipment budget or floor" with a prompt that assumed the reader knew "where US home buyers moved". Now a question ("How much of your equipment is strength kit?"), a one-line count instruction, and the comparison stated as a fact (36% in 2023, up from 23% in 2019). Bands say what they mean ("Below the 2019 mix"), EN and DE.
 - `BenchmarkWidget.astro`: the verdict sentence moved directly under the input so it stays visible with the phone keyboard open; the input label and placeholder no longer repeat each other ("Enter yours", "e.g. 29"); the sentence names the comparison (`medianLabel`) instead of always saying "industry avg", which was wrong on the equipment report. The other three benchmark articles (retention ×2, wearables) already read clearly and only gain the layout fix.
 
+## Investor Map: 13 more grants (1 Nov 2026)
+
+- Tee: "search for more grant sources". Added, each from the organisation's own page and marked Certain: EXIST Gründungsstipendium, Berliner Startup Stipendium, ZIM (Germany); aws Preseed/Seedfinancing, FFG Basisprogramm, Wirtschaftsagentur Wien Förderung Innovation (Austria); Venture Kick, Innosuisse Start-up Innovation Projects (Switzerland); Eurostars (EU, Call 12 opens 17 Dec 2026); NSF SBIR/STTR (US, Phase I $305K); SBRI Healthcare, Scottish EDGE, Sport England Movement Fund (UK). EIT Health refreshed with the 2026 Transformative Healthcare Instrument (€300K to €500K) and the Madrid Catapult finals.
+- Checked and left out: G-BA Innovationsfonds (excludes projects with a company's direct commercial interest) and BISp sports-science funding (research institutions only).
+- Bern and Glasgow are not in the city table, so those two pins sit at the country centre until added to `geo.ts`.
+
+## Titles batch 3: 25 more H1s and seoTitles (1 Nov 2026)
+
+- Picked click-by-click in rounds of four. 21 titles changed, EN plus DE twin each; three kept as already clear (Top Tier, BCAAs, Vitamin D); one unpublished: "AI Is Booking Your Clients' Pilates Spots. Now What?" (0814) told the same BBC story as the 18 Aug booking-security article, now "An AI Agent Hacked a Pilates Studio's Booking System. Yours Is Next."
+- Found while picking: six published articles carried the near-identical "Fitness Is Splitting in Two, Which Side Are You On?" title. Four are retitled around their own news hook (0904 Nestlé/MasterClass and 0828 Basic-Fit/Planet Fitness here, 0908 and 0929 in batch 2); 0731 is still to do in batch 4. Picks 20 and 25 both open with P&G's $3.8B Thorne deal; 25's seoTitle leads with "Community or Convenience" so the two browser titles do not collide.
+- The DE twin of the 0828 recovery article had an English title on main; fixed with its DE title.
+- Remaining: 58 articles for the same treatment.
 ## Front block and data order, equipment benchmark swap (1 Nov 2026)
 
 - **One front block.** On the plain article layout the takeaways now live inside the answer card: three shown, the rest behind a "N more takeaways" disclosure, then a "Read the full report / Read the article · N min read" button that jumps to `#report`. Articles without an answer card keep their takeaways block with the same cap and button. Wide reports (rail layout) are unchanged.
@@ -182,12 +194,6 @@ What shipped on `/[lang]/intelligence/investors/`:
 - Sources: `automation/ingest.mjs` gets a Google News query for EuropeActive (press corner, EHFF, the European Health & Fitness Market Report with Deloitte) and Deloitte's fitness research, 14-day window. EuropeActive publishes no RSS feed, so Google News is the dependable route.
 - Remaining: 84 articles for the same title treatment.
 
-## Investor Map: 13 more grants (1 Nov 2026)
-
-- Tee: "search for more grant sources". Added, each from the organisation's own page and marked Certain: EXIST Gründungsstipendium, Berliner Startup Stipendium, ZIM (Germany); aws Preseed/Seedfinancing, FFG Basisprogramm, Wirtschaftsagentur Wien Förderung Innovation (Austria); Venture Kick, Innosuisse Start-up Innovation Projects (Switzerland); Eurostars (EU, Call 12 opens 17 Dec 2026); NSF SBIR/STTR (US, Phase I $305K); SBRI Healthcare, Scottish EDGE, Sport England Movement Fund (UK). EIT Health refreshed with the 2026 Transformative Healthcare Instrument (€300K to €500K) and the Madrid Catapult finals.
-- Checked and left out: G-BA Innovationsfonds (excludes projects with a company's direct commercial interest) and BISp sports-science funding (research institutions only).
-- Bern and Glasgow are not in the city table, so those two pins sit at the country centre until added to `geo.ts`.
-
 ## Site search (1 Nov 2026)
 
 - Static search with Pagefind 1.6: `npm run build` now runs `site/scripts/search-index.mjs` after `astro build`, which indexes `dist/` and writes `dist/pagefind/` (13 MB of chunks; a query downloads only the few it needs, nothing loads until the first search). No server, no third-party service, works on the existing static hosting.
@@ -197,13 +203,6 @@ What shipped on `/[lang]/intelligence/investors/`:
 - `SearchDialog.astro`: one component, two modes. The `<dialog>` lives in `Base.astro` on every page (opened by the header button, `⌘K`/`Ctrl+K`, or `/`), and the same markup renders inline on `/[lang]/search/?q=` (noindex) so a search can be shared. Kind chips with live counts, keyboard navigation, recent searches in localStorage, six curated suggestions, excerpt with the matching section heading ("in …"), and `?highlight=` on the opened article (Pagefind's highlight script marks the words in the body). Umami event `search` with query, count, kind and language.
 - Gotcha found in testing: Pagefind only fills per-result filter counts after `filters()` has been called once, so the loader calls it on init.
 - Screenshots in `automation/build-shots/search-*.png`.
-
-## Titles batch 3: 25 more H1s and seoTitles (1 Nov 2026)
-
-- Picked click-by-click in rounds of four. 21 titles changed, EN plus DE twin each; three kept as already clear (Top Tier, BCAAs, Vitamin D); one unpublished: "AI Is Booking Your Clients' Pilates Spots. Now What?" (0814) told the same BBC story as the 18 Aug booking-security article, now "An AI Agent Hacked a Pilates Studio's Booking System. Yours Is Next."
-- Found while picking: six published articles carried the near-identical "Fitness Is Splitting in Two, Which Side Are You On?" title. Four are retitled around their own news hook (0904 Nestlé/MasterClass and 0828 Basic-Fit/Planet Fitness here, 0908 and 0929 in batch 2); 0731 is still to do in batch 4. Picks 20 and 25 both open with P&G's $3.8B Thorne deal; 25's seoTitle leads with "Community or Convenience" so the two browser titles do not collide.
-- The DE twin of the 0828 recovery article had an English title on main; fixed with its DE title.
-- Remaining: 58 articles for the same treatment.
 
 ## Ranking pages rebuilt (1 Nov 2026)
 
