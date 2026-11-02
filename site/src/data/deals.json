@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01",
+  "generatedAt": "2026-11-02",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,35 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-02",
+      "entity": "Xponential Fitness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Fund 1 Investments explores bid to take boutique fitness franchisor Xponential Fitness private.",
+      "url": "https://athletechnews.com/investor-said-to-look-to-bid-on-club-pilates-owner-xponential/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-11-02",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "fund-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-02",
+          "url": "https://athletechnews.com/investor-said-to-look-to-bid-on-club-pilates-owner-xponential/",
+          "issue": "/en/daily/2026-11-02"
+        }
+      ],
+      "country": "United States",
+      "acquirer": "Fund 1 Investments LLC",
+      "noteDe": "Fund 1 Investments prüft ein Angebot, den Boutique-Fitness-Franchisegeber Xponential Fitness von der Börse zu nehmen.",
+      "checked": "medium",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-01",
       "entity": "Stryv",
@@ -51,8 +80,8 @@
       ],
       "noteDe": "Stryv hat eine Series-B-Runde von 11,5 Mio. USD aufgenommen, um seine Wellness-Produkte in Asien auszubauen.",
       "checked": "high",
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-10-30",

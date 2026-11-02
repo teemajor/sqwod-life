@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-changing-is-your-coaching-keeping-up-0922
 lang: "en"
 counterpart: your-studio-is-changing-is-your-coaching-keeping-up-0922
-title: "Your Studio Is Changing. Is Your Coaching Keeping Up?"
+title: "Crunch Goes Boutique Yoga, Chuze Adds Reformer Pilates: Coaching Has to Follow the Floor"
+seoTitle: "Crunch, Chuze, STRONG Pilates: The Gym Floor Is Changing"
 topic: offer-programming
 newsTake: true
 description: "The fitness floor looks nothing like it did five years ago: here's how to coach confidently through the chaos."

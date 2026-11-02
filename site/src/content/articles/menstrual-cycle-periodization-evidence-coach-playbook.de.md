@@ -2,8 +2,8 @@
 urlSlug: menstrual-cycle-periodization-evidence-coach-playbook
 lang: "de"
 counterpart: menstrual-cycle-periodization-evidence-coach-playbook
-title: "Training nach dem Zyklus planen? Hier ist die Evidenz, und das Skript."
-seoTitle: "Training nach Zyklus: Bringt zyklusbasierte Periodisierung etwas?"
+title: "Zyklusbasiertes Training: Was die Evidenz stützt und was nicht"
+seoTitle: "Zyklusbasiertes Training: Bringt Periodisierung etwas?"
 topic: training
 description: "Cycle-Syncing ist überall im Coaching-Content. Wir haben die Meta-Analysen gelesen, bewertet und das Studienregister geprüft. Was die Evidenz wirklich stützt, was offen ist, und was du dem Kunden sagst, der fragt."
 pillar: move

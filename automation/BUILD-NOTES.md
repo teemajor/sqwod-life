@@ -169,6 +169,25 @@ What shipped on `/[lang]/intelligence/investors/`:
 - The equipment report's "Where do you stand?" block read "Strength share of your equipment budget or floor" with a prompt that assumed the reader knew "where US home buyers moved". Now a question ("How much of your equipment is strength kit?"), a one-line count instruction, and the comparison stated as a fact (36% in 2023, up from 23% in 2019). Bands say what they mean ("Below the 2019 mix"), EN and DE.
 - `BenchmarkWidget.astro`: the verdict sentence moved directly under the input so it stays visible with the phone keyboard open; the input label and placeholder no longer repeat each other ("Enter yours", "e.g. 29"); the sentence names the comparison (`medianLabel`) instead of always saying "industry avg", which was wrong on the equipment report. The other three benchmark articles (retention ×2, wearables) already read clearly and only gain the layout fix.
 
+## Front block and data order, equipment benchmark swap (1 Nov 2026)
+
+- **One front block.** On the plain article layout the takeaways now live inside the answer card: three shown, the rest behind a "N more takeaways" disclosure, then a "Read the full report / Read the article · N min read" button that jumps to `#report`. Articles without an answer card keep their takeaways block with the same cap and button. Wide reports (rail layout) are unchanged.
+- **Text before data on the plain layout.** Figures, benchmark, charts and playbook are wrapped in `.rp-data` inside `.rp-main`; wide reports keep them before the text (markup order), the plain layout puts `.report-body` first via CSS order. On a phone the body now starts about one screen below the front block (was about four).
+- **Equipment report benchmark swapped.** The home-market comparison (US consumers' free-weight share) is replaced by equipment reinvestment as a share of revenue: IHRSA Profiles of Success median 1.3% (2018 data), 5.6% total reinvestment. Bands: below the median club, around the median, refit year, major build-out. EN and DE. Screenshots: `automation/build-shots/front-phone*.png`, `benchmark-reinvest-phone.png`.
+
+## Titles, batch 2, and two new sources (1 Nov 2026)
+
+- Batch 2: 24 pairs retitled (EN + DE, Google titles under 60 characters), one kept (the BFR evidence piece). Picks lean on named brands and figures, as Tee chose in batch 1.
+- Bug found and fixed: the batch-1 script set `seoTitle` through a JavaScript replace with a `$1` group, so a Google title containing "$100M" swallowed the title line (the SuperMush funding piece on main). Repaired, and batch 2 uses a function replacer. Three batch-1 DE Google titles over 60 characters trimmed.
+- Sources: `automation/ingest.mjs` gets a Google News query for EuropeActive (press corner, EHFF, the European Health & Fitness Market Report with Deloitte) and Deloitte's fitness research, 14-day window. EuropeActive publishes no RSS feed, so Google News is the dependable route.
+- Remaining: 84 articles for the same title treatment.
+
+## Investor Map: 13 more grants (1 Nov 2026)
+
+- Tee: "search for more grant sources". Added, each from the organisation's own page and marked Certain: EXIST Gründungsstipendium, Berliner Startup Stipendium, ZIM (Germany); aws Preseed/Seedfinancing, FFG Basisprogramm, Wirtschaftsagentur Wien Förderung Innovation (Austria); Venture Kick, Innosuisse Start-up Innovation Projects (Switzerland); Eurostars (EU, Call 12 opens 17 Dec 2026); NSF SBIR/STTR (US, Phase I $305K); SBRI Healthcare, Scottish EDGE, Sport England Movement Fund (UK). EIT Health refreshed with the 2026 Transformative Healthcare Instrument (€300K to €500K) and the Madrid Catapult finals.
+- Checked and left out: G-BA Innovationsfonds (excludes projects with a company's direct commercial interest) and BISp sports-science funding (research institutions only).
+- Bern and Glasgow are not in the city table, so those two pins sit at the country centre until added to `geo.ts`.
+
 ## Site search (1 Nov 2026)
 
 - Static search with Pagefind 1.6: `npm run build` now runs `site/scripts/search-index.mjs` after `astro build`, which indexes `dist/` and writes `dist/pagefind/` (13 MB of chunks; a query downloads only the few it needs, nothing loads until the first search). No server, no third-party service, works on the existing static hosting.
