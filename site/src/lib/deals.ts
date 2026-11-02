@@ -37,3 +37,8 @@ export const liveDeals = (): Deal[] => liveAll().filter((d) => d.kind !== 'shutd
 export const liveClosures = (): Deal[] => liveAll().filter((d) => d.kind === 'shutdown');
 export const FX: Record<string, number> = data.fx;
 export const generatedAt: string = data.generatedAt;
+
+// CSV: one shape for the /data/deals.csv download and the filtered download on the tracker page.
+const cell = (v: unknown) => { const s = String(v ?? ''); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+export const CSV_HEADER = ['date', 'company', 'type', 'amount', 'currency', 'amount_usd_approx', 'country', 'region', 'category', 'summary', 'source_url', 'sqwod_daily'].join(',');
+export const csvRow = (d: Deal) => [d.date, d.entity, d.kind, d.amount, d.currency, d.amountUsd, d.country, d.region, d.category, d.note, d.url, d.issue ? `https://sqwod.life${d.issue}` : ''].map(cell).join(',');
