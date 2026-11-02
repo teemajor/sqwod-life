@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splintering-here-s-how-to-pick-a-lane-before-it-s-0821
 lang: "en"
 counterpart: fitness-is-splintering-here-s-how-to-pick-a-lane-before-it-s-0821
-title: "Fitness Is Splintering. Here's How to Pick a Lane Before It's Too Late"
+title: "Basketball Boutiques, Cancer Recovery, Budget Roll-Ups: Fitness Is Growing in Every Direction at Once"
+seoTitle: "Fitness Grows in Every Direction: Niches and Roll-Ups"
 topic: strategy
 newsTake: true
 description: "From basketball courts to mental wellness apps, the fitness industry is fracturing into niches, and operators who don't choose a position will get squeezed out."

@@ -2,7 +2,8 @@
 urlSlug: when-a-gym-closes-the-real-opportunity-opens-0821
 lang: "de"
 counterpart: when-a-gym-closes-the-real-opportunity-opens-0821
-title: "Warum dein Studio stirbt – und was Jetset Pilates richtig macht"
+title: "Row House hat geschlossen. Die Mitglieder sind noch da: So übernimmst du die Community eines geschlossenen Gyms"
+seoTitle: "Wenn ein Gym schließt: So gewinnst du seine Mitglieder"
 topic: offer-programming
 newsTake: true
 description: "Zwei aktuelle Storys zeigen, warum Community das einzige echte Alleinstellungsmerkmal im Fitnessmarkt ist – und wie du es sofort nutzt."

@@ -2,7 +2,8 @@
 urlSlug: big-money-is-moving-into-fitness-here-s-how-small-studios-wi-0825
 lang: "en"
 counterpart: big-money-is-moving-into-fitness-here-s-how-small-studios-wi-0825
-title: "Big Money Is Moving Into Fitness. Here's How Small Studios Win"
+title: "Ferrero Buys a Wellness Brand, Strava Hits $2.2B: How Small Studios Win Anyway"
+seoTitle: "Ferrero, Strava $2.2B: How Small Studios Win Anyway"
 topic: strategy
 newsTake: true
 description: "Corporate giants are buying into wellness while independent studios keep opening: here's what that tension means for your business right now."

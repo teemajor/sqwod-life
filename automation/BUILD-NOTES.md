@@ -174,6 +174,13 @@ What shipped on `/[lang]/intelligence/investors/`:
 - Tee: "search for more grant sources". Added, each from the organisation's own page and marked Certain: EXIST Gründungsstipendium, Berliner Startup Stipendium, ZIM (Germany); aws Preseed/Seedfinancing, FFG Basisprogramm, Wirtschaftsagentur Wien Förderung Innovation (Austria); Venture Kick, Innosuisse Start-up Innovation Projects (Switzerland); Eurostars (EU, Call 12 opens 17 Dec 2026); NSF SBIR/STTR (US, Phase I $305K); SBRI Healthcare, Scottish EDGE, Sport England Movement Fund (UK). EIT Health refreshed with the 2026 Transformative Healthcare Instrument (€300K to €500K) and the Madrid Catapult finals.
 - Checked and left out: G-BA Innovationsfonds (excludes projects with a company's direct commercial interest) and BISp sports-science funding (research institutions only).
 - Bern and Glasgow are not in the city table, so those two pins sit at the country centre until added to `geo.ts`.
+
+## Titles batch 3: 25 more H1s and seoTitles (1 Nov 2026)
+
+- Picked click-by-click in rounds of four. 21 titles changed, EN plus DE twin each; three kept as already clear (Top Tier, BCAAs, Vitamin D); one unpublished: "AI Is Booking Your Clients' Pilates Spots. Now What?" (0814) told the same BBC story as the 18 Aug booking-security article, now "An AI Agent Hacked a Pilates Studio's Booking System. Yours Is Next."
+- Found while picking: six published articles carried the near-identical "Fitness Is Splitting in Two, Which Side Are You On?" title. Four are retitled around their own news hook (0904 Nestlé/MasterClass and 0828 Basic-Fit/Planet Fitness here, 0908 and 0929 in batch 2); 0731 is still to do in batch 4. Picks 20 and 25 both open with P&G's $3.8B Thorne deal; 25's seoTitle leads with "Community or Convenience" so the two browser titles do not collide.
+- The DE twin of the 0828 recovery article had an English title on main; fixed with its DE title.
+- Remaining: 58 articles for the same treatment.
 ## Front block and data order, equipment benchmark swap (1 Nov 2026)
 
 - **One front block.** On the plain article layout the takeaways now live inside the answer card: three shown, the rest behind a "N more takeaways" disclosure, then a "Read the full report / Read the article · N min read" button that jumps to `#report`. Articles without an answer card keep their takeaways block with the same cap and button. Wide reports (rail layout) are unchanged.

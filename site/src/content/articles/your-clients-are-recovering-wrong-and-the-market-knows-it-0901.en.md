@@ -2,7 +2,8 @@
 urlSlug: your-clients-are-recovering-wrong-and-the-market-knows-it-0901
 lang: "en"
 counterpart: your-clients-are-recovering-wrong-and-the-market-knows-it-0901
-title: "Your clients are recovering wrong, and the market knows it"
+title: "Five Recovery Brands Just Merged: Structured Recovery Is a Product Now"
+seoTitle: "Five Recovery Brands Merge: Recovery Is a Product Now"
 topic: offer-programming
 newsTake: true
 description: "From towel drills to Pilates surges, here's what the recovery boom means for your programming right now."

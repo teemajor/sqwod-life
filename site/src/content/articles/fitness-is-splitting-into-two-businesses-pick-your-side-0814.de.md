@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splitting-into-two-businesses-pick-your-side-0814
 lang: "de"
 counterpart: fitness-is-splitting-into-two-businesses-pick-your-side-0814
-title: "Fitness-Markt 2025: Wer jetzt nicht handelt, verliert den Anschluss"
+title: "Community oder Bequemlichkeit: P&Gs 3,8-Mrd.-$-Thorne-Deal zeigt, wohin die Fitness-Loyalität geht"
+seoTitle: "Community oder Bequemlichkeit: Wohin Fitness-Loyalität geht"
 topic: strategy
 newsTake: true
 description: "Von P&G bis Peloton zeigt der Markt ein klares Muster – und wer es versteht, kann jetzt die richtigen Züge machen."

@@ -2,7 +2,8 @@
 urlSlug: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
 lang: "de"
 counterpart: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
-title: "Fitness 2026: Wer jetzt nicht neu denkt, zahlt bald die Zeche"
+title: "P&G zahlt 3,8 Mrd. $ für Thorne, ein Wellness-REIT ist 1,34 Mrd. $ wert: Kapital kommt von allen Seiten"
+seoTitle: "P&G, Thorne, 3,8 Mrd. $: Wellness-Kapital von allen Seiten"
 topic: market-moves
 newsTake: true
 description: "Von EMS-Trends bis REIT-Bewertungen: warum die Branche gerade neu sortiert wird und was du diese Woche tun solltest."

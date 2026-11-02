@@ -2,7 +2,8 @@
 urlSlug: your-clients-sleep-badly-breathe-wrong-and-need-more-than-yo-0825
 lang: "de"
 counterpart: your-clients-sleep-badly-breathe-wrong-and-need-more-than-yo-0825
-title: "Your Clients Sleep Badly, Breathe Wrong, and Need More Than You"
+title: "Schlaf, Atmung, Stress: Das Coaching-Geschäft wird zum Ökosystem"
+seoTitle: "Schlaf, Atmung, Stress: Coaching wird zum Ökosystem"
 topic: offer-programming
 newsTake: true
 description: "Three industry signals this week reveal why the best coaches are building ecosystems, not just class schedules."

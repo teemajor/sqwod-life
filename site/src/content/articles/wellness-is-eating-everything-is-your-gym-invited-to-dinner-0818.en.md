@@ -2,7 +2,8 @@
 urlSlug: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
 lang: "en"
 counterpart: wellness-is-eating-everything-is-your-gym-invited-to-dinner-0818
-title: "Wellness is eating everything: is your gym invited to dinner?"
+title: "P&G Pays $3.8B for Thorne, a Wellness REIT Hits $1.34B: Capital Is Coming From Every Direction"
+seoTitle: "P&G $3.8B Thorne Deal: Wellness Capital From Every Side"
 topic: market-moves
 newsTake: true
 description: "From REITs to retail to supplements, capital is flooding into wellness from every direction: here's what fitness operators need to do before they're the last ones at the table."

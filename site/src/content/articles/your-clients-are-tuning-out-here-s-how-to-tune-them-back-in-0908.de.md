@@ -2,7 +2,8 @@
 urlSlug: your-clients-are-tuning-out-here-s-how-to-tune-them-back-in-0908
 lang: "de"
 counterpart: your-clients-are-tuning-out-here-s-how-to-tune-them-back-in-0908
-title: "Your clients are tuning out. Here's how to tune them back in."
+title: "Peloton lässt Moves überspringen, ein Gym in Dubai trainiert im Dunkeln: Das Erlebnis entscheidet"
+seoTitle: "Peloton, Dunkel-Gym in Dubai: Das Erlebnis entscheidet"
 topic: retention
 newsTake: true
 description: "Three fitness industry signals this week point to the same uncomfortable truth: member experience is the new moat, and most coaches are ignoring it."
