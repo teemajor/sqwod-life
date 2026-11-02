@@ -2,7 +2,8 @@
 urlSlug: the-fitness-business-split-is-here-which-side-are-you-on-0908
 lang: "en"
 counterpart: the-fitness-business-split-is-here-which-side-are-you-on-0908
-title: "The Fitness Business Split Is Here. Which Side Are You On?"
+title: "A Garage Boxing Gym and a $1,000-a-Week Super-Gym: Fitness Is Forking"
+seoTitle: "Garage Gym vs $1,000-a-Week Super-Gym: Fitness Forks"
 topic: strategy
 newsTake: true
 description: "Six real stories from this week reveal a brutal fork in the road for every gym, coach, and studio owner: here's how to read the map."

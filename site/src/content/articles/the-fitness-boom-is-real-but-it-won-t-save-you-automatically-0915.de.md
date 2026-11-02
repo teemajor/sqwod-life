@@ -2,7 +2,8 @@
 urlSlug: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
 lang: "de"
 counterpart: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
-title: "Rekordumsätze, aber Studios schließen: Was das bedeutet"
+title: "Zweistelliges Umsatzplus, eine 23-Mio.-$-Kette schließt: Was überlebende Studios unterscheidet"
+seoTitle: "HFA 2026: Umsatz rauf, 23-Mio.-$-Kette zu, wer überlebt"
 topic: strategy
 newsTake: true
 description: "Warum Wachstum allein kein Studio rettet – und was du jetzt konkret tun kannst."

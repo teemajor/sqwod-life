@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-changing-is-your-coaching-keeping-up-0922
 lang: "de"
 counterpart: your-studio-is-changing-is-your-coaching-keeping-up-0922
-title: "Geräte überall, Qualität nirgends – was Coaches jetzt tun müssen"
+title: "Crunch macht Boutique-Yoga, Chuze holt Reformer-Pilates: Coaching muss der Fläche folgen"
+seoTitle: "Crunch, Chuze, STRONG Pilates: Die Fläche wandelt sich"
 topic: offer-programming
 newsTake: true
 description: "Der Fitness-Markt explodiert mit neuen Studios und Gadgets – aber dein Wert als Coach liegt woanders."

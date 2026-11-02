@@ -2,7 +2,8 @@
 urlSlug: fitness-is-flush-with-cash-so-why-are-members-still-leaving-0929
 lang: "de"
 counterpart: fitness-is-flush-with-cash-so-why-are-members-still-leaving-0929
-title: "Fitness Is Flush With Cash, So Why Are Members Still Leaving?"
+title: "PureGym refinanziert 1,4 Mrd. £, während Mitglieder über geplatzte Zahlungen verloren gehen"
+seoTitle: "PureGym 1,4 Mrd. £ vs. Churn durch geplatzte Zahlungen"
 topic: retention
 newsTake: true
 description: "Capital is pouring into fitness, but operators ignoring payment failures and retention basics will watch that money drain straight out the back door."

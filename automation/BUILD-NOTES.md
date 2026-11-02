@@ -175,3 +175,15 @@ What shipped on `/[lang]/intelligence/investors/`:
 - Found while picking: six published articles carried the near-identical "Fitness Is Splitting in Two, Which Side Are You On?" title. Four are retitled around their own news hook (0904 Nestlé/MasterClass and 0828 Basic-Fit/Planet Fitness here, 0908 and 0929 in batch 2); 0731 is still to do in batch 4. Picks 20 and 25 both open with P&G's $3.8B Thorne deal; 25's seoTitle leads with "Community or Convenience" so the two browser titles do not collide.
 - The DE twin of the 0828 recovery article had an English title on main; fixed with its DE title.
 - Remaining: 58 articles for the same treatment.
+## Front block and data order, equipment benchmark swap (1 Nov 2026)
+
+- **One front block.** On the plain article layout the takeaways now live inside the answer card: three shown, the rest behind a "N more takeaways" disclosure, then a "Read the full report / Read the article · N min read" button that jumps to `#report`. Articles without an answer card keep their takeaways block with the same cap and button. Wide reports (rail layout) are unchanged.
+- **Text before data on the plain layout.** Figures, benchmark, charts and playbook are wrapped in `.rp-data` inside `.rp-main`; wide reports keep them before the text (markup order), the plain layout puts `.report-body` first via CSS order. On a phone the body now starts about one screen below the front block (was about four).
+- **Equipment report benchmark swapped.** The home-market comparison (US consumers' free-weight share) is replaced by equipment reinvestment as a share of revenue: IHRSA Profiles of Success median 1.3% (2018 data), 5.6% total reinvestment. Bands: below the median club, around the median, refit year, major build-out. EN and DE. Screenshots: `automation/build-shots/front-phone*.png`, `benchmark-reinvest-phone.png`.
+
+## Titles, batch 2, and two new sources (1 Nov 2026)
+
+- Batch 2: 24 pairs retitled (EN + DE, Google titles under 60 characters), one kept (the BFR evidence piece). Picks lean on named brands and figures, as Tee chose in batch 1.
+- Bug found and fixed: the batch-1 script set `seoTitle` through a JavaScript replace with a `$1` group, so a Google title containing "$100M" swallowed the title line (the SuperMush funding piece on main). Repaired, and batch 2 uses a function replacer. Three batch-1 DE Google titles over 60 characters trimmed.
+- Sources: `automation/ingest.mjs` gets a Google News query for EuropeActive (press corner, EHFF, the European Health & Fitness Market Report with Deloitte) and Deloitte's fitness research, 14-day window. EuropeActive publishes no RSS feed, so Google News is the dependable route.
+- Remaining: 84 articles for the same title treatment.

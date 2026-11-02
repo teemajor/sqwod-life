@@ -2,7 +2,8 @@
 urlSlug: the-fitness-industry-is-booming-and-quietly-breaking-its-own-0925
 lang: "en"
 counterpart: the-fitness-industry-is-booming-and-quietly-breaking-its-own-0925
-title: "The Fitness Industry Is Booming, and Quietly Breaking Its Own Rules"
+title: "£1.1B UK Pilates, Reichstag Workouts: Growth Is Up, Trust Is Not"
+seoTitle: "UK Pilates £1.1B, Reichstag Workouts: Growth Up, Trust Not"
 topic: market-moves
 newsTake: true
 description: "Six stories from this week reveal exactly what's working, what's failing, and what coaches should do differently right now."
