@@ -1313,5 +1313,89 @@
       "easy",
       "fitpass"
     ]
+  },
+  {
+    "date": "2026-11-02",
+    "key": "sekonda launches 7999 subscriptionfree smart ring",
+    "tokens": [
+      "sekonda",
+      "launches",
+      "subscription",
+      "free",
+      "smart",
+      "ring"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "key": "pilates is booming chuze fitness is taking a different appro",
+    "tokens": [
+      "pilates",
+      "booming",
+      "chuze",
+      "taking",
+      "different",
+      "approach"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "key": "what james did next hird drops coaching dream to join ai fir",
+    "tokens": [
+      "what",
+      "james",
+      "next",
+      "hird",
+      "drops",
+      "coaching",
+      "dream",
+      "join",
+      "firm"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "key": "lebron and whoop partner as health tracker keeps ipo in sigh",
+    "tokens": [
+      "lebron",
+      "whoop",
+      "partner",
+      "health",
+      "tracker",
+      "keeps",
+      "sight"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "key": "investor said to look to bid on club pilatesowner xponential",
+    "tokens": [
+      "investor",
+      "look",
+      "club",
+      "pilates",
+      "owner",
+      "xponential"
+    ],
+    "entities": [
+      "Xponential"
+    ]
+  },
+  {
+    "date": "2026-11-02",
+    "key": "uk active welcomes budget recognition for gyms as rates reli",
+    "tokens": [
+      "active",
+      "welcomes",
+      "budget",
+      "recognition",
+      "gyms",
+      "rates",
+      "relief",
+      "confirmed"
+    ]
   }
 ]

@@ -2,7 +2,8 @@
 urlSlug: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
 lang: "de"
 counterpart: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
-title: "The Fitness Boom Is Real, But Who Gets to Keep the Money?"
+title: "86 % der Studiobetreiber haben mehr Mitglieder. Warum es sich trotzdem schwer anfühlt"
+seoTitle: "86 % der Studios wachsen 2026: Warum es sich schwer anfühlt"
 topic: strategy
 newsTake: true
 description: "Membership is up across the board, but the winners are splitting into two very different camps: here's which one you want to be in."

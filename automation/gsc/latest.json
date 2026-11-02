@@ -1,25 +1,32 @@
 {
   "site": "sc-domain:sqwod.life",
   "window": {
-    "start": "2026-09-25",
-    "end": "2026-10-23",
+    "start": "2026-10-02",
+    "end": "2026-10-30",
     "days": 28
   },
-  "generatedAt": "2026-10-26T13:15:46.003Z",
+  "generatedAt": "2026-11-02T06:31:08.080Z",
   "totals": {
     "clicks": 0,
-    "impressions": 9,
+    "impressions": 13,
     "ctr": 0,
-    "queries": 2,
-    "pages": 2
+    "queries": 3,
+    "pages": 3
   },
   "topQueries": [
     {
       "query": "nexowod",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 9,
       "ctr": 0,
-      "position": 81
+      "position": 76.9
+    },
+    {
+      "query": "\"jazzercise\"",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 86
     },
     {
       "query": "sqwod",
@@ -34,17 +41,25 @@
       "page": "https://sqwod.life/de/",
       "lang": "de",
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 9,
       "ctr": 0,
-      "position": 81
+      "position": 76.9
     },
     {
       "page": "https://sqwod.life/en/",
       "lang": "en",
       "clicks": 0,
-      "impressions": 5,
+      "impressions": 7,
       "ctr": 0,
-      "position": 3.6
+      "position": 4.1
+    },
+    {
+      "page": "https://sqwod.life/en/daily/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 58
     }
   ],
   "striking": [],
@@ -53,17 +68,17 @@
     {
       "query": "nexowod",
       "landedOn": "https://sqwod.life/de/",
-      "impressions": 7,
-      "position": 81
+      "impressions": 9,
+      "position": 76.9
     }
   ],
   "countries": [
     {
       "country": "usa",
       "clicks": 0,
-      "impressions": 4,
+      "impressions": 9,
       "ctr": 0,
-      "position": 18.5
+      "position": 35.7
     },
     {
       "country": "che",
@@ -75,9 +90,9 @@
     {
       "country": "deu",
       "clicks": 0,
-      "impressions": 2,
+      "impressions": 3,
       "ctr": 0,
-      "position": 2.5
+      "position": 22.3
     },
     {
       "country": "ecu",
@@ -85,6 +100,13 @@
       "impressions": 1,
       "ctr": 0,
       "position": 90
+    },
+    {
+      "country": "gbr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
     },
     {
       "country": "ukr",

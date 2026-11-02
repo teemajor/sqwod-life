@@ -2,7 +2,8 @@
 urlSlug: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
 lang: "en"
 counterpart: the-fitness-boom-is-real-but-who-gets-to-keep-the-money-1002
-title: "The Fitness Boom Is Real, But Who Gets to Keep the Money?"
+title: "86% of Gym Owners Grew Membership. Why It Still Feels Hard"
+seoTitle: "86% of Gyms Grew Membership in 2026: Why It Feels Hard"
 topic: strategy
 newsTake: true
 description: "Membership is up across the board, but the winners are splitting into two very different camps: here's which one you want to be in."

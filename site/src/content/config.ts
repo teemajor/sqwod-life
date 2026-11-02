@@ -149,7 +149,8 @@ const articles = defineCollection({
     author: z.string().default('sqwod.life'),
     gated: z.boolean().default(false),
     sourceIds: z.array(z.string()).default([]), // provenance → living wiki
-    sources: z.array(z.object({ label: z.string(), url: z.string() })).default([]), // rendered citations
+    // rendered citations; publisher/year/kind are optional overrides for the preview card + quality tag (lib/sources.ts derives them otherwise)
+    sources: z.array(z.object({ label: z.string(), url: z.string(), publisher: z.string().optional(), year: z.union([z.string(), z.number()]).optional(), kind: z.enum(['study', 'data', 'trade', 'news', 'company']).optional() })).default([]),
     // Accept a string OR a YAML-parsed date (an unquoted 2026-07-03 becomes a Date) and
     // normalise a Date to a clean ISO day — so a stray unquoted date never fails the build.
     asOf: z.union([z.string(), z.date()]).transform((v) => (v instanceof Date ? v.toISOString().slice(0, 10) : v)).optional(),

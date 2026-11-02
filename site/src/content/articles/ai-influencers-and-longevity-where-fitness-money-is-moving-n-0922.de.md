@@ -2,7 +2,8 @@
 urlSlug: ai-influencers-and-longevity-where-fitness-money-is-moving-n-0922
 lang: "de"
 counterpart: ai-influencers-and-longevity-where-fitness-money-is-moving-n-0922
-title: "KI, Influencer, Longevity: Wer jetzt nicht handelt, verliert"
+title: "Wohin das Fitness-Geld diese Woche floss: KI-Coaching, Longevity-Mitgliedschaften, Influencer"
+seoTitle: "Fitness-Funding der Woche: KI-Coaching, Longevity, Creator"
 topic: market-moves
 newsTake: true
 description: "Fünf Branchen-News zeigen, wohin das Geld fließt – und was du diese Woche konkret tun kannst."

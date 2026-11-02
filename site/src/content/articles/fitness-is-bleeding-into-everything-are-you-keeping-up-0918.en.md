@@ -2,7 +2,8 @@
 urlSlug: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
 lang: "en"
 counterpart: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
-title: "Fitness Is Bleeding Into Everything. Are You Keeping Up?"
+title: "Wellness Is Spreading Into Sport, Nutrition IPOs and Clinics: Where Operators Fit"
+seoTitle: "Wellness Spreads Into Sport, IPOs, Clinics: Operators' Move"
 topic: market-moves
 newsTake: true
 description: "From hybrid race classes to allergy care, the wellness industry is expanding its borders fast: here's what operators need to do before they get lapped."
