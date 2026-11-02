@@ -40,7 +40,7 @@ const askDaily = source === 'jobs-alert';
 const groupId = `role-${source}`;
 const emailId = `${groupId}-email`;
 ---
-<section class={variant === 'hero' ? 'isu isu-hero' : 'isu'} id={id} aria-labelledby={`${groupId}-h`}>
+<section class={variant === 'hero' ? 'isu isu-hero' : 'isu'} id={id} aria-labelledby={`${groupId}-h`} data-pagefind-ignore>
   <h2 class={variant === 'hero' ? 'isu-h isu-sr' : 'isu-h'} id={`${groupId}-h`}>{copy.head}</h2>
   {copy.body && variant !== 'hero' && <p class="isu-p">{copy.body}</p>}
   {SUBSCRIBE.endpoint ? (

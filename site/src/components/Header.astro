@@ -31,6 +31,10 @@ const toolsNew = toolsIsNew();
     </nav>
     <div class="utils">
       <a class="adv-link" href={`/${lang}/advertise`}>{L.adv}</a>
+      <button class="search-btn" type="button" data-search-open aria-label={de?'Suche öffnen':'Open search'} title={de?'Suche (⌘K)':'Search (⌘K)'}>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span class="sb-l">{de?'Suche':'Search'}</span><kbd class="sb-k" aria-hidden="true">⌘K</kbd>
+      </button>
       <button class="theme-toggle" type="button" data-label-light={de?'Helles Design':'Light mode'} data-label-dark={de?'Dunkles Design':'Dark mode'} aria-label={de?'Design wechseln':'Switch theme'} title={de?'Design wechseln':'Switch theme'}>
         <svg class="tt-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
         <svg class="tt-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
@@ -46,6 +50,11 @@ const toolsNew = toolsIsNew();
 
 <style>
   /* Advertise sits beside EN/DE on desktop and inside the menu on phones */
+  .search-btn{display:inline-flex;align-items:center;gap:7px;height:34px;padding:0 10px 0 9px;border:1px solid var(--line);border-radius:999px;background:transparent;color:var(--g2);font:600 13px var(--sans);cursor:pointer;transition:border-color .15s ease,color .15s ease}
+  .search-btn:hover{border-color:var(--edge);color:var(--chalk)}
+  .search-btn svg{width:16px;height:16px}
+  .sb-k{font:600 10.5px var(--mono);color:var(--g4);border:1px solid var(--line);border-radius:4px;padding:1px 4px}
+  @media(max-width:900px){.sb-l,.sb-k{display:none}.search-btn{width:34px;padding:0;justify-content:center}}
   .adv-link{font-size:13px;font-weight:600;color:var(--g2);text-decoration:none}
   .adv-link:hover{color:var(--chalk)}
   .nav-adv{display:none}

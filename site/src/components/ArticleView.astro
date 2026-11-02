@@ -246,7 +246,7 @@ const shareCfg = {
     {d.hero && <div class={answer ? 'hero-wrap hero-after-answer' : 'hero-wrap'}><ArticleHero kind={d.hero.kind} art={d.hero.art} tag={pillar.label[lang]} stat={d.hero.stat} statLabel={d.hero.statLabel} /></div>}
     <div class="meta meta-row">
       <span class="by">{byEditor && <img class="by-img" src={EDITOR.img} alt="" width="22" height="22" loading="lazy" />}{lang === 'de' ? 'Von ' : 'By '}<a href={EDITOR.about(lang)} rel="author">{byName}</a></span>
-      <span class="by-date">{fmt}</span>
+      <time class="by-date" datetime={d.publishedAt.toISOString().slice(0, 10)} data-pagefind-meta="date[datetime]" data-pagefind-sort="date[datetime]">{fmt}</time>
       {byEditor && <span class="by-role">{EDITOR.role[lang]}</span>}
       {locked && <span class="conf">{lang==='de'?'Free + gegated':'Free · gated'}</span>}
     </div>
@@ -444,7 +444,7 @@ const shareCfg = {
 {!locked && <InlineSignup lang={lang} source="article-end" />}
 
 {locked && (
-  <div class="unlock" id="unlock">
+  <div class="unlock" id="unlock" data-pagefind-ignore>
     <div class="unlock-card">
       <p class="kick m" style="margin:0 0 8px">{U.kick}</p>
       <h2 class="unlock-head">{U.head}</h2>
@@ -477,7 +477,7 @@ const shareCfg = {
 </div>
 
 {related && related.length > 0 && (
-  <section class="block related">
+  <section class="block related" data-pagefind-ignore>
     <p class="kick">{lang==='de'?'Weiterlesen':'Related'}</p>
     <div class="grid cols2">
       {related.map((r) => (
