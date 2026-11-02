@@ -2,7 +2,8 @@
 urlSlug: fitness-s-consolidation-wave-is-accelerating-are-you-positio-0922
 lang: "de"
 counterpart: fitness-s-consolidation-wave-is-accelerating-are-you-positio-0922
-title: "Fitness-Markt 2025: Wer jetzt nicht skaliert, verliert"
+title: "Die Konsolidierung der Studios beschleunigt sich: Mitglieder 50+ und Kooperationskurse sind die Antwort"
+seoTitle: "Studio-Konsolidierung: Mitglieder 50+ und Kooperationskurse"
 topic: market-moves
 newsTake: true
 description: "Warum Konsolidierung, neue Zielgruppen und hybride Formate gerade alles auf den Kopf stellen – und was du diese Woche konkret tun solltest."

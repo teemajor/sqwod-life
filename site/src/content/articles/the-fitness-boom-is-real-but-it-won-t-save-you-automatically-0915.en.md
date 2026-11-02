@@ -2,7 +2,8 @@
 urlSlug: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
 lang: "en"
 counterpart: the-fitness-boom-is-real-but-it-won-t-save-you-automatically-0915
-title: "The Fitness Boom Is Real, But It Won't Save You Automatically"
+title: "Revenue Up Double Digits, a $23M Chain Closes: What Separates Gyms That Survive"
+seoTitle: "HFA 2026: Revenue Up, $23M Chain Closes, Who Survives"
 topic: strategy
 newsTake: true
 description: "Industry revenue is up, but a $23M chain just shut its doors: here's what separates the operators winning right now from the ones disappearing."

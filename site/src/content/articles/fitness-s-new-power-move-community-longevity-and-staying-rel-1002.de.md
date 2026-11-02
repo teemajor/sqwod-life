@@ -2,7 +2,8 @@
 urlSlug: fitness-s-new-power-move-community-longevity-and-staying-rel-1002
 lang: "de"
 counterpart: fitness-s-new-power-move-community-longevity-and-staying-rel-1002
-title: "Fitness's New Power Move: Community, Longevity, and Staying Relevant"
+title: "McDonald's gibt 8,5 Mrd. $ für die Ozempic-Ära aus: Was Studios daraus lernen"
+seoTitle: "McDonald's 8,5-Mrd.-$-Ozempic-Wende: Lehren für Studios"
 topic: marketing-community
 newsTake: true
 description: "From road trips to Ozempic, here's what every gym operator needs to understand about where loyalty is being built right now."

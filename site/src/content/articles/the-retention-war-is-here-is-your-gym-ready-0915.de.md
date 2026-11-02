@@ -2,7 +2,8 @@
 urlSlug: the-retention-war-is-here-is-your-gym-ready-0915
 lang: "de"
 counterpart: the-retention-war-is-here-is-your-gym-ready-0915
-title: "The Retention War Is Here. Is Your Gym Ready?"
+title: "Planet Fitness erneuert die Marke, Virgin Active stellt Eisbäder auf: Der Kampf um Mitglieder"
+seoTitle: "Planet Fitness, Virgin Active: Der Kampf um Mitglieder"
 topic: retention
 newsTake: true
 description: "From Planet Fitness rebrands to cold plunges at Virgin Active, the fitness industry is in a full-blown fight to keep members: here's what the smart money is betting on."

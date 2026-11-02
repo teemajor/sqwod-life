@@ -2,7 +2,8 @@
 urlSlug: the-fitness-business-split-is-here-which-side-are-you-on-0908
 lang: "de"
 counterpart: the-fitness-business-split-is-here-which-side-are-you-on-0908
-title: "Wer nur Training verkauft, verliert – das zeigt die Fitness-Woche"
+title: "Ein Box-Gym in der Garage und ein 1.000-$-pro-Woche-Super-Gym: Fitness gabelt sich"
+seoTitle: "Garagen-Gym vs. 1.000-$-Super-Gym: Fitness gabelt sich"
 topic: strategy
 newsTake: true
 description: "Sechs aktuelle Deals zeigen, wohin das Geld fließt – und was du als Coach oder Studio-Betreiber jetzt anders machen solltest."

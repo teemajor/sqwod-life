@@ -2,7 +2,8 @@
 urlSlug: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
 lang: "en"
 counterpart: wellness-is-eating-fitness-here-s-how-to-not-get-swallowed-0908
-title: "Wellness Is Eating Fitness. Here's How to Not Get Swallowed."
+title: "Pet Food Brands Buy Wellness, Media Teaches GLP-1: Why Gyms Need a Wellness Stack"
+seoTitle: "Why Gyms Need a Wellness Stack: Pet Food to GLP-1 Classes"
 topic: market-moves
 newsTake: true
 description: "From pet supplements to GLP-1 masterclasses, capital is flooding wellness from every angle, and fitness operators who ignore it will wake up irrelevant."
