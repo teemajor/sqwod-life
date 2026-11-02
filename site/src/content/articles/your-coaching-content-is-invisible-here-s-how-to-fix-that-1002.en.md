@@ -2,7 +2,8 @@
 urlSlug: your-coaching-content-is-invisible-here-s-how-to-fix-that-1002
 lang: "en"
 counterpart: your-coaching-content-is-invisible-here-s-how-to-fix-that-1002
-title: "Your coaching content is invisible. Here's how to fix that."
+title: "Why Good Workout Content Gets Ignored: The Creator-Economy Playbook for Coaches"
+seoTitle: "Why Workout Content Gets Ignored: Creator Playbook"
 topic: marketing-community
 newsTake: true
 description: "Learn how the creator economy's new media playbook can make your workout programming impossible to ignore."

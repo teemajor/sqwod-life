@@ -2,7 +2,8 @@
 urlSlug: your-gym-is-leaking-money-and-it-s-not-just-churn-0925
 lang: "de"
 counterpart: your-gym-is-leaking-money-and-it-s-not-just-churn-0925
-title: "Mitglieder, Märkte, Männer: Was die Fitnessbranche gerade übersieht"
+title: "Geplatzte Zahlungen sind stille Abwanderung: Das Leck, das kein Studio beobachtet"
+seoTitle: "Geplatzte Zahlungen als stille Abwanderung im Studio"
 topic: retention
 newsTake: true
 description: "Von geplatzten Zahlungen bis zu viralen Skandalen – wer heute nicht hinschaut, zahlt morgen drauf."

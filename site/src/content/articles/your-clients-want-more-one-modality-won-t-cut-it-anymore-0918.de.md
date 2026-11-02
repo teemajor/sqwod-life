@@ -2,7 +2,7 @@
 urlSlug: your-clients-want-more-one-modality-won-t-cut-it-anymore-0918
 lang: "de"
 counterpart: your-clients-want-more-one-modality-won-t-cut-it-anymore-0918
-title: "Pilates, Yoga, Krafttraining – was dein Kurs-Mix dir gerade sagt"
+title: "Hybride Trainingsprogramme: Warum Studios Yoga, Pilates und Kraft kombinieren"
 seoTitle: "Hybrides Training: Wie Studios Trainingsformen kombinieren"
 topic: offer-programming
 description: "Die Branche sortiert sich neu – und wer das als Coach jetzt versteht, gewinnt Mitglieder, die bleiben."
