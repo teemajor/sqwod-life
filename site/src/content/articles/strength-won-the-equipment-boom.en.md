@@ -104,19 +104,20 @@ charts:
     source: "Statista via Statista"
     url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
 benchmark:
-  label: "How much of your equipment is strength kit?"
+  label: "How much of last year's revenue went back into equipment?"
   unit: "%"
-  prompt: "Count racks, benches, free weights and rigs as a share of all the equipment you own or plan to buy. For comparison: US home buyers put 36% of their equipment money into free weights and home gyms in 2023, up from 23% in 2019."
+  prompt: "Equipment bought or leased in the last 12 months as a share of total revenue. The median club in IHRSA's Profiles of Success put 1.3% of revenue into fitness equipment (2018 data, about $67k for the median club); total reinvestment in the business was 5.6%."
   betterIsHigh: true
   min: 0
-  max: 100
-  median: 36
-  medianLabel: "US home buyers 2023"
+  max: 10
+  median: 1.3
+  medianLabel: "the median club (IHRSA)"
   bands:
-    - { to: 23, label: "Below the 2019 mix" }
-    - { to: 36, label: "Between 2019 and 2023" }
-    - { to: 100, label: "At or above the 2023 mix" }
-  source: "Free weights + home gyms as a share of four US home categories (free weights, bikes, home gyms, ellipticals): 23% in 2019, 36% in 2023. SFIA wholesale via Statista. A directional benchmark, not a rule."
+    - { to: 1, label: "Below the median club" }
+    - { to: 2, label: "Around the median (1 to 2%)" }
+    - { to: 5, label: "Refit year" }
+    - { to: 10, label: "Major build-out" }
+  source: "IHRSA Profiles of Success 2019 (2018 data): median 1.3% of total revenue spent on fitness equipment, 5.6% total reinvestment, https://www.healthandfitness.org/?p=4543. Successor: HFA Fitness Industry Benchmarking Report 2025 (paid). A cross-club median, not a target."
 playbook:
   - { move: "Program for the kit your clients already own.", why: "Home free weights nearly tripled and exercise bikes more than doubled since 2019. Many of your clients have a home setup. Hybrid programming that uses it keeps them paying you between sessions." }
   - { move: "Equip for strength, not rows of cardio machines.", why: "Free weights grew 179% while ellipticals shrank 11%. Floor space for racks, benches and dumbbells matches where demand went." }

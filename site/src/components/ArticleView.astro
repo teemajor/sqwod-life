@@ -73,6 +73,14 @@ const TOC = lang === 'de'
   ? { toc: 'In diesem Report', data: 'Die Daten', pb: 'Was du tun kannst', src: 'Quellen und Methode', take: 'Daten mitnehmen', takeP: 'Jede Grafik mit Tabelle und Quelle. Frei zitierbar mit Link.', min: 'Min. Lesezeit', charts: 'Grafiken', sources: 'Quellen', read30: 'In 30 Sekunden' }
   : { toc: 'In this report', data: 'The data', pb: 'What to do', src: 'Sources and method', take: 'Take the data', takeP: 'Every chart ships with its table and source. Free to quote with a link.', min: 'min read', charts: 'charts', sources: 'sources', read30: 'The 30-second read' };
 const BODY_KICK = lang === 'de' ? (isReport ? 'Der vollständige Report' : 'Der Artikel') : (isReport ? 'The full report' : 'The article');
+// Front block (1 Nov 2026): on the plain layout the takeaways live inside the answer card (three shown,
+// the rest behind "N more"), followed by a "Read the full report" jump to #report. Articles without an
+// answer card keep their own takeaways block with the same cap and jump link. Wide reports are unchanged.
+const SKIP = lang === 'de' ? (isReport ? 'Den vollständigen Report lesen' : 'Den Artikel lesen') : (isReport ? 'Read the full report' : 'Read the article');
+const moreLabel = (n: number) => lang === 'de' ? `${n} weitere Erkenntnisse` : `${n} more takeaway${n === 1 ? '' : 's'}`;
+const TK_SHOW = 3;
+const takeaways = d.takeaways ?? [];
+const mergedTk = !!answer && !wide && takeaways.length > 0;
 const tocItems = [
   ...((d.charts?.length ?? 0) > 0 ? [{ id: 'data', t: TOC.data }] : []),
   ...((d.playbook?.length ?? 0) > 0 ? [{ id: 'playbook', t: TOC.pb }] : []),
@@ -217,7 +225,21 @@ const shareCfg = {
           <div><dt>{AB.doThis}</dt><dd>{answer.doThis[lang]}</dd></div>
           <div><dt>{AB.watch}</dt><dd>{answer.watch[lang]}</dd></div>
         </dl>
-        {d.topic === 'supplements' && <a class="ans-hub" href={`/${lang}/evidence/supplements`}>{AB.hub} →</a>}
+        {mergedTk && (
+          <div class="ans-tk">
+            <p class="kick" style="margin:0">{TX.tldr}</p>
+            <ol class="tk-list">{takeaways.slice(0, TK_SHOW).map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}</ol>
+            {takeaways.length > TK_SHOW && (
+              <details class="tk-more"><summary>{moreLabel(takeaways.length - TK_SHOW)}</summary>
+                <ol class="tk-list" start={TK_SHOW + 1}>{takeaways.slice(TK_SHOW).map((t, i) => <li><span class="dnum tl-n">{String(i + TK_SHOW + 1).padStart(2, '0')}</span><span>{t}</span></li>)}</ol>
+              </details>
+            )}
+          </div>
+        )}
+        <div class="ans-foot">
+          <a class="ans-skip" href="#report">{SKIP} ↓ <small>{`${readMin} ${TOC.min}`}</small></a>
+          {d.topic === 'supplements' && <a class="ans-hub" href={`/${lang}/evidence/supplements`}>{AB.hub} →</a>}
+        </div>
       </section>
     )}
     {/* On phones the decorative hero is skipped when an answer card already sits above it: two cards before the byline is one too many. */}
@@ -233,17 +255,51 @@ const shareCfg = {
 
 <ShareBar path={sharePath} title={d.title} lang={lang} />
 
-{d.takeaways && d.takeaways.length > 0 && (
+{!mergedTk && takeaways.length > 0 && (
   <section class="block tldr">
     <p class="kick">{reportHero ? TOC.read30 : TX.tldr}</p>
     <ol class={wide ? 'tldr-list tl-wide swipe' : 'tldr-list'}>
-      {d.takeaways.map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}
+      {(wide ? takeaways : takeaways.slice(0, TK_SHOW)).map((t, i) => <li class={`rv d${Math.min(i, 3)}`}><span class="dnum tl-n">{String(i + 1).padStart(2, '0')}</span><span>{t}</span></li>)}
     </ol>
+    {!wide && takeaways.length > TK_SHOW && (
+      <details class="tk-more"><summary>{moreLabel(takeaways.length - TK_SHOW)}</summary>
+        <ol class="tldr-list">{takeaways.slice(TK_SHOW).map((t, i) => <li><span class="dnum tl-n">{String(i + TK_SHOW + 1).padStart(2, '0')}</span><span>{t}</span></li>)}</ol>
+      </details>
+    )}
+    {!wide && <p class="tldr-foot"><a class="ans-skip" href="#report">{SKIP} ↓ <small>{`${readMin} ${TOC.min}`}</small></a></p>}
   </section>
 )}
 
 {!locked && !wide && <div id="signup-mid"><InlineSignup lang={lang} source="article-mid" /></div>}
 
+<div class={wide ? 'rp-grid' : 'rp-plain'}>
+{wide && (
+  <aside class="rp-rail">
+    <div class="rp-stick">
+      {tocItems.length > 1 && (
+        <Fragment>
+          <p class="kick">{TOC.toc}</p>
+          <nav class="rp-toc" aria-label={TOC.toc}>{tocItems.map((x) => <a href={`#${x.id}`} data-toc={x.id}>{x.t}</a>)}</nav>
+        </Fragment>
+      )}
+      {hasData && (
+        <Fragment>
+          <p class="kick" style="margin-top:26px">{TOC.take}</p>
+          <div class="rp-dl">
+            {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>CSV ↓</a>}
+            <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>JSON ↓</a>
+            <a class="dc-btn" href="#cite">{lang === 'de' ? 'Zitieren' : 'Cite'}</a>
+          </div>
+          <p class="rp-note">{TOC.takeP}</p>
+        </Fragment>
+      )}
+    </div>
+  </aside>
+)}
+<div class="rp-main">
+{!locked && wide && <InlineSignup lang={lang} source="article-top" />}
+{/* Data blocks (figures, benchmark, charts, playbook). Wide reports show them before the text (markup order); the plain layout puts the text first via CSS order, so a phone reaches the article in about one screen. */}
+<div class="rp-data">
 {d.figures && d.figures.length > 0 && (
   <section class="block figs">
     <div class="figs-head">
@@ -273,33 +329,6 @@ const shareCfg = {
     </div>
   </section>
 )}
-
-<div class={wide ? 'rp-grid' : 'rp-plain'}>
-{wide && (
-  <aside class="rp-rail">
-    <div class="rp-stick">
-      {tocItems.length > 1 && (
-        <Fragment>
-          <p class="kick">{TOC.toc}</p>
-          <nav class="rp-toc" aria-label={TOC.toc}>{tocItems.map((x) => <a href={`#${x.id}`} data-toc={x.id}>{x.t}</a>)}</nav>
-        </Fragment>
-      )}
-      {hasData && (
-        <Fragment>
-          <p class="kick" style="margin-top:26px">{TOC.take}</p>
-          <div class="rp-dl">
-            {csvHref && <a class="dc-btn" href={csvHref} download={`${d.urlSlug}.csv`}>CSV ↓</a>}
-            <a class="dc-btn" href={jsonHref} download={`${d.urlSlug}.json`}>JSON ↓</a>
-            <a class="dc-btn" href="#cite">{lang === 'de' ? 'Zitieren' : 'Cite'}</a>
-          </div>
-          <p class="rp-note">{TOC.takeP}</p>
-        </Fragment>
-      )}
-    </div>
-  </aside>
-)}
-<div class="rp-main">
-{!locked && wide && <InlineSignup lang={lang} source="article-top" />}
 {d.benchmark && <BenchmarkWidget lang={lang} benchmark={d.benchmark} />}
 
 {d.series && d.series.points.length > 1 && !(d.charts?.length) && (() => {
@@ -369,6 +398,8 @@ const shareCfg = {
     </div>
   </section>
 )}
+
+</div>
 
 <div class="report-body" data-gated={locked ? '' : undefined}>
   <section class="block prose" id="report">
@@ -554,6 +585,8 @@ const shareCfg = {
   .rh-axis{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--g4)}
   /* report grid: sticky contents rail + body */
   .rp-grid{display:grid;grid-template-columns:220px minmax(0,1fr);gap:56px;align-items:start}
+  .rp-plain .rp-main{display:flex;flex-direction:column}
+  .rp-plain .report-body{order:-1}
   .rp-main{min-width:0}
   .rp-grid .rp-main{max-width:780px}
   .rp-stick{position:sticky;top:24px;padding-top:26px}
@@ -608,6 +641,19 @@ const shareCfg = {
   .ans-pill.t-myth{color:var(--g1);border:1px dotted var(--g2);background:transparent}
   .ans-pill.t-myth::before{content:"≠";font-size:12px;line-height:1}
   .ans-verdict{margin:0 0 12px;font-size:17px;font-weight:700;line-height:1.45;color:var(--chalk);max-width:62ch}
+  .ans-tk{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+  .tk-list{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:9px}
+  .tk-list li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:var(--g1)}
+  .tk-list .tl-n{font-size:18px;line-height:1.1;min-width:22px}
+  .tk-more{margin-top:10px}
+  .tk-more summary{cursor:pointer;list-style:none;font-size:13px;color:var(--g2);text-decoration:underline;text-underline-offset:3px;width:max-content}
+  .tk-more summary::-webkit-details-marker{display:none}
+  .tk-more[open] summary{margin-bottom:8px}
+  .ans-foot{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+  .ans-skip{display:inline-flex;align-items:center;gap:8px;background:var(--chalk);color:var(--ink);border-radius:10px;padding:10px 14px;font-size:14px;font-weight:700;text-decoration:none;transition:opacity .15s ease}
+  .ans-skip:hover{opacity:.88}
+  .ans-skip small{font-size:12px;font-weight:600;opacity:.7}
+  .tldr-foot{margin:14px 0 0}
   .ans-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 18px;margin:0}
   .ans-grid div{min-width:0}
   .ans-grid dt{font-size:10.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g3);margin:0 0 4px}

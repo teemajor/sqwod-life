@@ -104,19 +104,20 @@ charts:
     source: "Statista via Statista"
     url: "https://www.statista.com/study/63282/fitness-equipment-market-in-the-united-states/"
 benchmark:
-  label: "Wie viel deiner Geräte sind Kraftgeräte?"
+  label: "Wie viel vom Umsatz des letzten Jahres floss zurück in Geräte?"
   unit: "%"
-  prompt: "Zähle Racks, Bänke, Freihanteln und Rigs als Anteil an allen Geräten, die du hast oder kaufen willst. Zum Vergleich: US-Heimkäufer steckten 2023 36 % ihres Gerätebudgets in Freihanteln und Home-Gyms, 2019 waren es 23 %."
+  prompt: "Gekaufte oder geleaste Geräte der letzten 12 Monate als Anteil am Gesamtumsatz. Der mittlere Club in IHRSAs Profiles of Success steckte 1,3 % des Umsatzes in Fitnessgeräte (Daten 2018, rund 67.000 $ beim mittleren Club); die Gesamt-Reinvestition ins Geschäft lag bei 5,6 %."
   betterIsHigh: true
   min: 0
-  max: 100
-  median: 36
-  medianLabel: "US-Heimkäufer 2023"
+  max: 10
+  median: 1.3
+  medianLabel: "der mittlere Club (IHRSA)"
   bands:
-    - { to: 23, label: "Unter dem Mix von 2019" }
-    - { to: 36, label: "Zwischen 2019 und 2023" }
-    - { to: 100, label: "Auf oder über dem Mix von 2023" }
-  source: "Freihanteln + Home-Gyms als Anteil an vier US-Heimkategorien (Freihanteln, Bikes, Home-Gyms, Crosstrainer): 23 % in 2019, 36 % in 2023. SFIA-Großhandel via Statista. Eine Richtung, keine Regel."
+    - { to: 1, label: "Unter dem mittleren Club" }
+    - { to: 2, label: "Um den Median (1 bis 2 %)" }
+    - { to: 5, label: "Umbau-Jahr" }
+    - { to: 10, label: "Großer Ausbau" }
+  source: "IHRSA Profiles of Success 2019 (Daten 2018): Median 1,3 % des Gesamtumsatzes für Fitnessgeräte, 5,6 % Gesamt-Reinvestition, https://www.healthandfitness.org/?p=4543. Nachfolger: HFA Fitness Industry Benchmarking Report 2025 (kostenpflichtig). Ein Median über Clubs, kein Zielwert."
 playbook:
   - { move: "Plane mit dem Equipment, das deine Kund:innen schon besitzen.", why: "Freihanteln für zu Hause haben sich seit 2019 fast verdreifacht, Heimtrainer-Bikes mehr als verdoppelt. Viele deiner Kund:innen haben ein Setup zu Hause. Hybride Programme, die es nutzen, halten sie auch zwischen den Einheiten bei dir." }
   - { move: "Richte deine Fläche auf Kraft aus, nicht auf Reihen von Cardio-Geräten.", why: "Freihanteln wuchsen um 179 %, Crosstrainer schrumpften um 11 %. Platz für Racks, Bänke und Kurzhanteln passt dazu, wohin die Nachfrage gegangen ist." }
