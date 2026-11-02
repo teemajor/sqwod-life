@@ -2,7 +2,8 @@
 urlSlug: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
 lang: "de"
 counterpart: fitness-is-bleeding-into-everything-are-you-keeping-up-0918
-title: "Fitness ist kein Produkt mehr – es ist ein Ökosystem"
+title: "Wellness breitet sich in Sport, Ernährungs-IPOs und Kliniken aus: Wo Betreiber hingehören"
+seoTitle: "Wellness in Sport, IPOs, Kliniken: Der Zug für Betreiber"
 topic: market-moves
 newsTake: true
 description: "Warum Betreiber, die nur Geräte verkaufen, bald das Nachsehen haben – und was jetzt zu tun ist."

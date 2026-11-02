@@ -63,5 +63,25 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-01"
+  },
+  "fund-acquisition-2026-11": {
+    "id": "fund-acquisition-2026-11",
+    "company": "Xponential Fitness",
+    "dealCountry": "United States",
+    "category": "Gyms & studios",
+    "relevant": true,
+    "oneLineEn": "Fund 1 Investments explores bid to take boutique fitness franchisor Xponential Fitness private.",
+    "oneLineDe": "Fund 1 Investments prüft ein Angebot, den Boutique-Fitness-Franchisegeber Xponential Fitness von der Börse zu nehmen.",
+    "amount": "",
+    "amountIs": "undisclosed",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "Fund 1 Investments LLC",
+    "announcedOn": "2026-10-30",
+    "dealStatus": "rumour",
+    "url": "https://athletechnews.com/investor-said-to-look-to-bid-on-club-pilates-owner-xponential/",
+    "primarySource": false,
+    "confidence": "medium",
+    "checkedAt": "2026-11-02"
   }
 }

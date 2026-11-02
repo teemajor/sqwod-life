@@ -177,7 +177,7 @@ export async function gather(env, win) {
 
   const prevQs = `startAt=${startAt - (endAt - startAt)}&endAt=${startAt}`;
   const [stats, pages, sources, events, prevEvents, series,
-    dealProducts, dealPlacements, dealEarns, reads, plays, sponsors] = await Promise.all([
+    dealProducts, dealPlacements, dealEarns, reads, plays, sponsors, srcWhere] = await Promise.all([
     jget(`${uBase}/stats?${qs}`, uHead),
     topPages(),
     jget(`${uBase}/metrics?${qs}&type=referrer`, uHead),
@@ -186,6 +186,7 @@ export async function gather(env, win) {
     jget(`${uBase}/pageviews?${qs}&unit=${unit}&timezone=Europe/Berlin`, uHead),
     prop('deal-click', 'product'), prop('deal-click', 'placement'), prop('deal-click', 'earns'),
     prop('article-read', 'article'), prop('daily-play', 'episode'), prop('sponsor-click', 'sponsor'),
+    prop('source-click', 'where'),
   ]);
 
   const ymd = (ms) => new Date(ms).toISOString().slice(0, 10);
@@ -257,9 +258,10 @@ export async function gather(env, win) {
       listenClick: E('daily-listen-click'), spotify: E('listen-spotify'),
       deals: E('deal-click'), sponsor: E('sponsor-click'), recs: E('daily-rec-click'),
       pricingUnlock: E('pricing-index-unlock') + E('pricing-index-unlocked'),
+      srcPreview: E('source-preview'), srcClick: E('source-click'),
     },
     evPrev: { subscribe: P('subscribe'), reads: P('article-read'), plays: P('daily-play'), deals: P('deal-click') },
-    props: { dealProducts, dealPlacements, dealEarns, reads, plays, sponsors },
+    props: { dealProducts, dealPlacements, dealEarns, reads, plays, sponsors, srcWhere },
     rawEvents: events,
     umamiAuthFailed: !token,
     siteErr: stats?.__err || (!token ? 'login failed' : undefined),
@@ -478,6 +480,8 @@ ${flash(msg)}
     ${list('Read to the end', d.props.reads, prettyProduct, 'No full reads yet.')}
     ${list('Top pages', d.pages, prettyPath)}
     ${list('Top sources', d.sources, esc, 'No referrers yet.')}
+    <div class="stats2">${stat('Source previews', num(e.srcPreview), 'footnote cards opened')}${stat('Source clicks', num(e.srcClick), 'went to the source')}</div>
+    ${list('Where they checked sources', d.props.srcWhere, esc, 'No source clicks yet.')}
   </div>
 </section>
 

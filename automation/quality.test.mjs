@@ -1,7 +1,7 @@
 // Guard tests for the Sqwod Daily pipeline. Run: node automation/quality.test.mjs
 // Each case is a real defect from the 3 to 16 Oct 2026 issues.
 import assert from 'node:assert/strict';
-import { noEmDash, phraseProblems, isObituary, stripPhrases, isGoogleNews } from './quality.mjs';
+import { noEmDash, phraseProblems, isObituary, stripPhrases, isGoogleNews, linkFirstMentions } from './quality.mjs';
 import { isOnBrand } from './onbrand.mjs';
 
 const t = (name, fn) => { try { fn(); console.log('ok  ', name); } catch (e) { console.error('FAIL', name, '\n     ', e.message); process.exitCode = 1; } };
@@ -82,3 +82,16 @@ t('a complaint is not an ad', () => assert.ok(!isLabelledAd('Der Verband hat Anz
 const { FINANCE_OUTLETS_RX } = await import('./onbrand.mjs');
 t('stock-tip apps are not news outlets', () => assert.ok(FINANCE_OUTLETS_RX.test('Pluang')));
 t('facts found for a headline are checked for age too', () => assert.ok(staleReason('Xponential reported fourth-quarter 2024 revenue of $83.2 million. After results on March 13, 2025 the stock fell 31%.', T)));
+
+t('first outlet mention is linked, later ones are not', () => {
+  const out = linkFirstMentions('## Athletech News angle\nIntake raised $62M, according to Athletech News.\nAthletech News also said more.', [{ name: 'Athletech News', url: 'https://a.example/x' }]);
+  assert.equal(out, '## Athletech News angle\nIntake raised $62M, according to [Athletech News](https://a.example/x).\nAthletech News also said more.');
+});
+t('existing links are never nested', () => {
+  const out = linkFirstMentions('See [Athletech News](https://b.example). Then Athletech News again.', [{ name: 'Athletech News', url: 'https://a.example/x' }]);
+  assert.equal(out, 'See [Athletech News](https://b.example). Then [Athletech News](https://a.example/x) again.');
+});
+t('outlet names with dots are matched literally', () => {
+  assert.equal(linkFirstMentions('Per News.com.au today.', [{ name: 'News.com.au', url: 'https://n.example' }]), 'Per [News.com.au](https://n.example) today.');
+  assert.equal(linkFirstMentions('Per NewsXcomXau today.', [{ name: 'News.com.au', url: 'https://n.example' }]), 'Per NewsXcomXau today.');
+});

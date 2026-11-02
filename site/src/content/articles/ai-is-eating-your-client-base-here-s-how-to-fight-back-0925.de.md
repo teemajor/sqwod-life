@@ -2,7 +2,8 @@
 urlSlug: ai-is-eating-your-client-base-here-s-how-to-fight-back-0925
 lang: "de"
 counterpart: ai-is-eating-your-client-base-here-s-how-to-fight-back-0925
-title: "AI is eating your client base. Here's how to fight back."
+title: "KI-Coaching holt 17 Mio. $ in einer Woche: Magic AI, Disha, Zensai und die Antwort der Coaches"
+seoTitle: "KI-Coaching-Funding: Magic AI, Disha, Zensai und dein Zug"
 topic: market-moves
 newsTake: true
 description: "A funding frenzy, a $3.8B market, and a simple playbook for coaches who want to win the next round."

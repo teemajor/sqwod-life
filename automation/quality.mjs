@@ -190,3 +190,26 @@ export function pickGearRec({ reviewsDir, dailyDir, lang, items, date }) {
     text: lang === 'de' ? `${pick.product}: unser Urteil und der beste Preis.` : `${pick.product}: our verdict and the best price.`,
   };
 }
+
+// Inline attribution (Nov 2026): link the first mention of each outlet in the body
+// to its story, the way news sites do ("according to [Athletech News](url)").
+// Code adds the links so the model never writes a URL. Skips headings and text
+// that is already a link. `links` = [{ name, url }].
+export function linkFirstMentions(body, links) {
+  const lines = body.split('\n');
+  for (const { name, url } of links) {
+    if (!name || !url || name.length < 3) continue;
+    const re = new RegExp(`(^|[^\\w\\[])(${name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})(?![\\w\\]])`);
+    for (let i = 0; i < lines.length; i++) {
+      if (/^\s*#/.test(lines[i])) continue;
+      // blank out existing [text](url) links so we never nest one inside another
+      const masked = lines[i].replace(/\[[^\]]*\]\([^)]*\)/g, (m) => ' '.repeat(m.length));
+      const m = re.exec(masked);
+      if (!m) continue;
+      const at = m.index + m[1].length;
+      lines[i] = `${lines[i].slice(0, at)}[${m[2]}](${url})${lines[i].slice(at + m[2].length)}`;
+      break;
+    }
+  }
+  return lines.join('\n');
+}

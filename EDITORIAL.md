@@ -12,6 +12,13 @@ to a credible source, we don't state it as fact.
   or operator in the space.
 - Fill the `sources:` array (rendered as clickable citations) and link figures to
   their source. Set `tags:` thoughtfully — they power the automatic Related links.
+- **How citations show on the page (Nov 2026):** footnote numbers
+  (`<sup class="fn"><a href="#source-N">N</a></sup>`) open a preview card on tap or
+  hover, and the Sources list links back to the text. Each source gets a type tag
+  (Study, Primary data, Trade press, News) worked out from its link and label in
+  `site/src/lib/sources.ts`. If the tag or card is wrong, set `publisher`, `year` or
+  `kind` on that source. News articles name the outlet in the sentence instead; the
+  writer links its first mention automatically.
 - **Every figure cites ONE named source with that source's actual number.** No
   "blended", composite, or rounded-to-feel-right figures — if no single source
   states the number, it does not ship. (This rule exists because a flagship report
