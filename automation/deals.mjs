@@ -186,7 +186,9 @@ export function merge(raw) {
   const out = [];
   for (const d of raw.sort((a, b) => a.date.localeCompare(b.date))) {
     const k = keyToken(d.entity), ks = keyTokens(d.entity);
-    const twin = out.find((o) => [...ks].some((t) => o._ks.has(t)) && days(o.reports.at(-1).date, d.date) <= MERGE_DAYS && (
+    // Two researched (manual) entries are never repeats of each other: each was checked as its own deal,
+    // e.g. one buyer's two acquisitions six weeks apart.
+    const twin = out.find((o) => !(o.manual && d.manual) && [...ks].some((t) => o._ks.has(t)) && days(o.reports.at(-1).date, d.date) <= MERGE_DAYS && (
       o.kind === d.kind || (o.amountUsd && d.amountUsd && Math.abs(o.amountUsd - d.amountUsd) / Math.max(o.amountUsd, d.amountUsd) <= 0.12)));
     if (twin) {
       twin.reports.push({ date: d.date, url: d.url, issue: d.issue });
@@ -401,7 +403,9 @@ function selftest() {
     { date: '2026-10-27', entity: 'Whoop', kind: 'valuation', amountUsd: 10.1e9, amount: '$10.1 billion', url: 'b', issue: 'y' },
     { date: '2026-10-20', entity: 'PureGym', kind: 'acquisition', amountUsd: 3e8, amount: '£235m', url: '', issue: 'z' },
     { date: '2026-10-26', entity: 'PureGym / NonStop Gym', kind: 'acquisition', amountUsd: 3e8, amount: '£235 million', url: 'c', issue: 'w' }]);
-  const mok = m.length === 2 && m.find((d) => d.entity.startsWith('PureGym')).url === 'c';
+  const mok = m.length === 2 && m.find((d) => d.entity.startsWith('PureGym')).url === 'c'
+    && merge([{ date: '2026-04-28', entity: 'Aligned Fitness / CAM Pilates', kind: 'acquisition', url: 'a', issue: '', manual: true },
+      { date: '2026-06-03', entity: 'Aligned Fitness / NJ studios', kind: 'acquisition', url: 'b', issue: '', manual: true }]).length === 2;
   console.log(`${mok ? '✓' : '✗'} merge: ${m.length} deals from 4 reports`);
   // review flags (audit 30 Oct 2026: stale valuations, total-raised as round size, IPO plans, homepage links)
   const ft = (name, d, e, want) => { const f = dealFlags({ onBrand: true, url: 'https://example.com/news/a', country: 'United States', ...d }, e); const pass = want.every((w) => f.some((x) => x.includes(w))) && (want.length || f.length === 0); console.log(`${pass ? '✓' : '✗'} flags: ${name} -> ${JSON.stringify(f)}`); return pass; };
