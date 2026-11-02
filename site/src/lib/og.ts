@@ -38,12 +38,14 @@ const C = { bg: '#0E0E0F', panel: '#19191B', line: '#2E2E31', chalk: '#F4F0EA', 
 const esc = (s: string) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c] as string));
 // Rough width of a line in Geist SemiBold, in em: narrow letters count less, capitals more.
 const emWidth = (s: string) => [...s].reduce((w, ch) => w + (/[iljtf.,:;'!|\s]/.test(ch) ? 0.3 : /[mwMW@]/.test(ch) ? 0.86 : /[A-Z0-9$€£%]/.test(ch) ? 0.66 : 0.55), 0);
-export function wrap(text: string, px: number, maxW: number, maxLines: number) {
+// Geist Mono: every glyph is 0.6em wide.
+const monoWidth = (s: string) => [...s].length * 0.6;
+export function wrap(text: string, px: number, maxW: number, maxLines: number, em: (s: string) => number = emWidth) {
   const words = String(text).replace(/\s+/g, ' ').trim().split(' ');
   const lines: string[] = []; let cur = '';
   for (const w of words) {
     const next = cur ? `${cur} ${w}` : w;
-    if (emWidth(next) * px <= maxW || !cur) cur = next; else { lines.push(cur); cur = w; }
+    if (em(next) * px <= maxW || !cur) cur = next; else { lines.push(cur); cur = w; }
   }
   if (cur) lines.push(cur);
   if (lines.length > maxLines) { const keep = lines.slice(0, maxLines); keep[maxLines - 1] = keep[maxLines - 1].replace(/[\s,.;:]*\S*$/, '') + '…'; return keep; }
@@ -78,7 +80,8 @@ export async function renderCard(card: OgCard): Promise<Buffer> {
   let y = 150;
   if (hasStat) {
     parts.push(`<text x="${M}" y="${y + 120}" font-family="Anton" font-size="150" fill="${C.accent}">${esc(card.stat!)}</text>`);
-    if (card.statLabel) parts.push(`<text x="${M}" y="${y + 162}" font-family="Geist" font-weight="500" font-size="24" fill="${C.g2}">${esc(wrap(card.statLabel, 24, W - 2 * M, 1)[0])}</text>`);
+    // The label under the stat reads like a source note, so it is set in Geist Mono (design system: data in mono).
+    if (card.statLabel) parts.push(`<text x="${M}" y="${y + 162}" font-family="Geist Mono" font-weight="500" font-size="22" fill="${C.g2}">${esc(wrap(card.statLabel, 22, W - 2 * M, 1, monoWidth)[0])}</text>`);
     y += 205;
     const t = fitTitle(card.title, W - 2 * M, [44, 40, 36], 2);
     t.lines.forEach((l, i) => parts.push(`<text x="${M}" y="${y + 40 + i * t.px * 1.18}" font-family="Geist" font-weight="700" font-size="${t.px}" fill="${C.chalk}">${esc(l)}</text>`));

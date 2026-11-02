@@ -72,6 +72,9 @@ const data = { min, max, median: b.median ?? null, medianLabel: b.medianLabel ??
   .bm-input{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:2px 10px}
   .bm-input input{width:110px;background:transparent;border:0;color:var(--chalk);font:inherit;font-size:16px;padding:8px 0}
   .bm-input input:focus{outline:none}
+  /* the input drops its own ring; the box carries it instead (design system focus ring) */
+  .bm-input:focus-within{border-color:var(--chalk)}
+  .bm-input:has(input:focus-visible){outline:2px solid var(--chalk);outline-offset:2px}
   .bm-unit{color:var(--g4);font-size:13px}
   .bm-track{position:relative;display:flex;height:46px;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin-top:30px}
   .bm-seg{position:relative;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--bg);background:var(--panel)}

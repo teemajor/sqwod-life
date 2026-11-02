@@ -74,7 +74,9 @@ const id = `dc${index}`;
   .dcw{position:relative}
   .dc-m{display:none}
   @media(max-width:640px){ .dc-d{display:none} .dc-m{display:block} }
-  .dc-pt,.dc-col{cursor:default}.dc-pt:focus,.dc-col:focus{outline:none}
+  .dc-pt,.dc-col{cursor:default}.dc-pt:focus:not(:focus-visible),.dc-col:focus:not(:focus-visible){outline:none}
+  /* keyboard focus: the design system focus ring around the point or column */
+  .dc-pt:focus-visible,.dc-col:focus-visible{outline:2px solid var(--chalk);outline-offset:2px}
   .dc-pt:hover .dc-r,.dc-pt:focus .dc-r{opacity:1}
   .dc-pt:hover .dc-dot,.dc-pt:focus .dc-dot{r:5}
   .dc-col .dc-guide,.dc-col .dc-dot{opacity:0;transition:opacity .12s}
