@@ -544,6 +544,7 @@ const shareCfg = {
   .unlock-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
   .unlock-form input{flex:1;min-width:200px;background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--chalk);font:inherit}
   .unlock-form input:focus{outline:none;border-color:var(--chalk)}
+  .unlock-form input:focus-visible{outline:2px solid var(--chalk);outline-offset:2px}
   .unlock-fine{font-size:11.5px;color:var(--g4);margin:12px 0 0}
 
   /* TL;DR */
@@ -556,7 +557,8 @@ const shareCfg = {
   .chart-wrap{position:relative}
   .bar-g{cursor:default;transition:opacity .12s ease}
   .bar-g:hover .bar-r,.bar-g:focus .bar-r{opacity:1}
-  .bar-g:focus{outline:none}
+  .bar-g:focus:not(:focus-visible){outline:none}
+  .bar-g:focus-visible{outline:2px solid var(--chalk);outline-offset:2px}
   .bar-g:focus .bar-r{stroke:var(--chalk);stroke-width:2}
   .chart-tip{position:absolute;pointer-events:none;z-index:5;background:var(--bg);border:1px solid var(--chalk);border-radius:8px;padding:7px 10px;font-size:12px;line-height:1.4;color:var(--chalk);transform:translate(-50%,-110%);white-space:nowrap;box-shadow:0 4px 18px rgba(0,0,0,.3)}
   .chart-tip b{font-family:var(--mono)}
