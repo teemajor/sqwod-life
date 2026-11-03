@@ -215,3 +215,10 @@ What shipped on `/[lang]/intelligence/investors/`:
 - **ScorePill.astro**: number plus band word (85+ Excellent, 75+ Good, 65+ Fair, else Weak; DE Sehr gut / Gut / Okay / Schwach), used in the picks, table, cards and detail list.
 - Order on the page: picks, every model, before you buy, picks in detail, professionals, how we score, operator, FAQ. Jump chips under the disclosure. Byline carries "Ranked by score only. Commission never changes the order."
 - Phone page length: 23.9k px before, 17.9k after; the score is visible on every row.
+
+## Guide roles for the other five categories (2 Nov 2026)
+
+- Wearables had six "Our picks" roles; the other guides showed only Best overall and Best value. Each pick in recovery, sleep, supplements, connected fitness and apparel now carries a `kind`, generation pairs carry `family` / `current` (Eight Sleep Pod 4/5, Nimbus 27/28, Clifton 10/11, Cloudmonster 2/3, Endorphin Speed 4/5, 1080 v14/v15, Primus Lite III/IV), and `config/best.ts` holds roles and filter chips per guide.
+- Roles and their winners at today's scores: Recovery: value massage gun (Hypervolt 2), budget (BLACKROLL), studio recovery corner (Normatec 3). Sleep: blackout mask (Manta), temperature control (Pod 5), sunrise alarm (Philips). Supplements: protein powder (Myprotein), third-party tested (Momentous), race-day fuel (Maurten), protein bar (Barebells). Connected fitness: adjustable dumbbells (NÜOBELL), smart trainer (KICKR CORE 2), live classes (Peloton Bike), all-in-one smart gym (Speediance). Apparel: cushioned running shoe (Nimbus 27), training short (Vuori Kore), running shoe under €100 (Pegasus 42), tempo runs (Endorphin Speed 4), barefoot shoe (Vivobarefoot).
+- Rows: apparel 18 picks become 12 rows, sleep 6 become 5. Training apps and studio tools have one scored product each and keep Best overall only.
+- Roles that were considered and dropped for lack of a product with a Good score: meditation EEG (Muse, 72), leggings (Alo, 70), vagus-nerve device (Pulsetto, 72).
