@@ -19,6 +19,41 @@
   "mergeDays": 60,
   "deals": [
     {
+      "date": "2026-11-03",
+      "entity": "Equinox",
+      "kind": "raise",
+      "amount": "$1B",
+      "amountUsd": 1000000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Equinox completes refinancing freeing over $1 billion for club expansion and growth.",
+      "url": "https://clubsolutionsmagazine.com/2026/11/equinox-names-brendan-whitworth-as-ceo-and-announces-more-than-1-billion-in-planned-growth-investments/",
+      "source": "Club Solutions",
+      "issue": "/en/daily/2026-11-03",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "equinox-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-03",
+          "url": "https://clubsolutionsmagazine.com/2026/11/equinox-names-brendan-whitworth-as-ceo-and-announces-more-than-1-billion-in-planned-growth-investments/",
+          "issue": "/en/daily/2026-11-03"
+        }
+      ],
+      "country": "United States",
+      "investors": [
+        "Silver Lake",
+        "principals of Related Companies",
+        "Ares",
+        "Sixth Street"
+      ],
+      "leads": [],
+      "noteDe": "Equinox schließt Refinanzierung ab und sichert sich über 1 Milliarde Dollar für Expansion.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
       "date": "2026-11-02",
       "entity": "Xponential Fitness",
       "kind": "acquisition",

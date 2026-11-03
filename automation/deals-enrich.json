@@ -83,5 +83,30 @@
     "primarySource": false,
     "confidence": "medium",
     "checkedAt": "2026-11-02"
+  },
+  "equinox-raise-2026-11": {
+    "id": "equinox-raise-2026-11",
+    "company": "Equinox",
+    "dealCountry": "United States",
+    "category": "Gyms & studios",
+    "relevant": true,
+    "oneLineEn": "Equinox completes refinancing freeing over $1 billion for club expansion and growth.",
+    "oneLineDe": "Equinox schließt Refinanzierung ab und sichert sich über 1 Milliarde Dollar für Expansion.",
+    "amount": "more than $1 billion",
+    "amountIs": "facility",
+    "investors": [
+      "Silver Lake",
+      "principals of Related Companies",
+      "Ares",
+      "Sixth Street"
+    ],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-02",
+    "dealStatus": "done",
+    "url": "https://www.prnewswire.com/news-releases/equinox-appoints-brendan-whitworth-as-ceo-and-raises-capital-from-existing-investors-to-fund-more-than-1-billion-in-planned-growth-investments-302926873.html",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-03"
   }
 }
