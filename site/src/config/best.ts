@@ -171,6 +171,15 @@ export const guides: BestGuide[] = [
       en: 'Massage guns, compression and heat/cold tools scored 0–100 on the public Sqwod Score: what each is genuinely for, and where the evidence actually sits.',
       de: 'Massagepistolen, Kompression und Wärme/Kälte mit Sqwod Score von 0–100: wofür sie wirklich taugen und wie die Evidenz tatsächlich aussieht.',
     },
+    roles: [
+      { key: 'gun', label: { en: 'Best value massage gun', de: 'Beste günstige Massagepistole' }, kind: 'gun', maxPrice: 250,
+        why: { en: 'Everyday percussion for less than the Theragun, and most people never miss the heat.', de: 'Alltags-Percussion für weniger als die Theragun, und die Wärme vermissen die wenigsten.' } },
+      { key: 'budget', label: { en: 'Best budget', de: 'Beste günstige Wahl' }, maxPrice: 50, noSub: true,
+        why: { en: 'The highest score under €50. A roller does most of what a gun does, slower.', de: 'Der höchste Score unter 50 €. Eine Rolle schafft fast alles, was eine Pistole kann, nur langsamer.' } },
+      { key: 'studio', label: { en: 'Best for a studio recovery corner', de: 'Beste für die Recovery-Ecke im Studio' }, reviewSlug: 'hyperice-normatec-3',
+        why: { en: 'Compression boots are the recovery product members pay extra for; one pair serves a whole studio.', de: 'Kompressionsstiefel sind das Recovery-Produkt, für das Mitglieder extra zahlen; ein Paar reicht fürs ganze Studio.' } },
+    ],
+    filters: { maxPrice: 100 },
     pro: {
       en: 'For operators: recovery tools are the cheapest premium tier you can add. Percussion guns and foam rollers survive shared use; compression boots and cold units need a cleaning protocol and a booking slot. Price a recovery add-on against the hardware cost per session, not per unit. Brands: the category is crowded on features and thin on evidence; the ones with studies win the B2B deals.',
       de: 'Für Betreiber: Recovery-Tools sind die günstigste Premium-Stufe, die du anbieten kannst. Massagepistolen und Faszienrollen halten geteilte Nutzung aus; Kompressionsstiefel und Kälteanwendungen brauchen ein Reinigungsprotokoll und einen Buchungsslot. Kalkuliere ein Recovery-Add-on über die Hardwarekosten pro Einheit, nicht pro Gerät. Für Marken: Die Kategorie ist voll an Features und dünn an Evidenz; wer Studien hat, gewinnt die B2B-Deals.',
@@ -245,6 +254,15 @@ export const guides: BestGuide[] = [
       en: 'Sleep tech scored 0–100 on the public Sqwod Score: what genuinely moves sleep quality, and what is an expensive way to measure a problem you already know you have.',
       de: 'Schlaf-Technik mit Sqwod Score von 0–100: was Schlafqualität wirklich verbessert und was nur eine teure Art ist, ein längst bekanntes Problem zu messen.',
     },
+    roles: [
+      { key: 'mask', label: { en: 'Best blackout mask', de: 'Beste Schlafmaske' }, kind: 'mask',
+        why: { en: 'Total blackout without pressure on the eyes; the cheapest fix for a bright bedroom.', de: 'Komplette Dunkelheit ohne Druck auf die Augen; die günstigste Lösung für ein helles Schlafzimmer.' } },
+      { key: 'temp', label: { en: 'Best for temperature control', de: 'Beste für die Temperatur' }, kind: 'bed',
+        why: { en: 'The only product here that changes the bed itself. Count the subscription in the price.', de: 'Das einzige Produkt hier, das das Bett selbst verändert. Das Abo gehört in den Preis.' } },
+      { key: 'light', label: { en: 'Best sunrise alarm', de: 'Bester Lichtwecker' }, kind: 'light',
+        why: { en: 'A gentler wake-up for early sessions than any phone alarm.', de: 'Sanfter wach für frühe Einheiten als jeder Handy-Wecker.' } },
+    ],
+    filters: { maxPrice: 50 },
     pro: {
       en: 'For operators: sleep is the recovery lever most clients ignore and most coaches cannot see. Sleep tech earns its place when the data flows into the same dashboard as training load. For studios the play is education and partnerships, not inventory: a sleep workshop sells, a smart mattress in the lobby does not. Brands: hardware plus subscription is the model; distribution runs through wellness programmes, not gyms.',
       de: 'Für Betreiber: Schlaf ist der Erholungshebel, den die meisten Kund:innen ignorieren und die meisten Coaches nicht sehen. Schlaftechnik lohnt sich, wenn die Daten im selben Dashboard landen wie die Trainingsbelastung. Für Studios heißt das Bildung und Partnerschaften, nicht Lagerbestand: Ein Schlaf-Workshop verkauft sich, eine smarte Matratze im Eingang nicht. Für Marken: Hardware plus Abo ist das Modell; der Vertrieb läuft über Wellness-Programme, nicht über Studios.',
@@ -311,6 +329,25 @@ export const guides: BestGuide[] = [
     description: {
       en: 'Supplements scored 0–100 on the public Sqwod Score, with the evidence graded separately: what is actually proven, what is promising, and what is marketing.',
       de: 'Supplements mit Sqwod Score von 0–100 und separat bewerteter Evidenz: was wirklich belegt ist, was vielversprechend und was Marketing.',
+    },
+    roles: [
+      { key: 'protein', label: { en: 'Best protein powder', de: 'Bestes Proteinpulver' }, kind: 'protein',
+        why: { en: 'The protein most people should buy: tested, cheap per serving, no premium for the label.', de: 'Das Protein, das die meisten kaufen sollten: getestet, günstig pro Portion, kein Aufpreis fürs Etikett.' } },
+      { key: 'tested', label: { en: 'Best third-party tested', de: 'Beste mit unabhängiger Prüfung' }, reviewSlug: 'momentous',
+        why: { en: 'NSF Certified for Sport: the line you can recommend to tested athletes without hedging.', de: 'NSF Certified for Sport: die Linie, die du getesteten Athlet:innen ohne Vorbehalt empfehlen kannst.' } },
+      { key: 'fuel', label: { en: 'Best race-day fuel', de: 'Beste Wettkampf-Verpflegung' }, kind: 'fuel',
+        why: { en: 'Hydrogel carbs that stay down at race intensity.', de: 'Hydrogel-Kohlenhydrate, die bei Wettkampf-Intensität drinbleiben.' } },
+      { key: 'bar', label: { en: 'Best protein bar', de: 'Bester Proteinriegel' }, kind: 'bar',
+        why: { en: 'The bar clients actually finish: 20 g protein, no sugar, tastes like a bar.', de: 'Der Riegel, den Kund:innen wirklich aufessen: 20 g Protein, kein Zucker, schmeckt wie ein Riegel.' } },
+    ],
+    filters: {
+      kinds: [
+        { key: 'protein', label: { en: 'Protein', de: 'Protein' } },
+        { key: 'creatine', label: { en: 'Creatine', de: 'Kreatin' } },
+        { key: 'bar', label: { en: 'Bars', de: 'Riegel' } },
+        { key: 'drink', label: { en: 'Drinks', de: 'Drinks' } },
+      ],
+      maxPrice: 30,
     },
     pro: {
       en: 'For operators: supplements are margin, liability and trust in one shelf. Stock only third-party-tested products (Informed Sport, NSF, Cologne List), keep the range to protein, creatine and electrolytes, and never let a coach dose on the floor. Brands: the winners here sell on testing and transparency, not formulas; undisclosed blends lose the professional channel.',
@@ -390,6 +427,25 @@ export const guides: BestGuide[] = [
       en: 'Connected machines and home equipment scored 0–100 on the public Sqwod Score, including what the subscription costs over three years and what happens when it ends.',
       de: 'Vernetzte Geräte und Heim-Equipment mit Sqwod Score von 0–100, inklusive Abokosten über drei Jahre und was passiert, wenn das Abo endet.',
     },
+    roles: [
+      { key: 'dumbbell', label: { en: 'Best adjustable dumbbells', de: 'Beste verstellbare Kurzhanteln' }, reviewSlug: 'nuobell-adjustable-dumbbell',
+        why: { en: 'A rack of dumbbells in one pair, with no app and no subscription.', de: 'Ein ganzes Hantel-Rack in einem Paar, ohne App und ohne Abo.' } },
+      { key: 'trainer', label: { en: 'Best smart trainer', de: 'Bester Smart-Trainer' }, kind: 'trainer',
+        why: { en: 'Turns the bike you already own into the indoor setup; pays for itself against a studio bike.', de: 'Macht aus dem eigenen Rad das Indoor-Setup; rechnet sich gegen ein Studio-Bike.' } },
+      { key: 'classes', label: { en: 'Best for live classes', de: 'Beste für Live-Kurse' }, kind: 'bike',
+        why: { en: 'Still the class experience to beat. The membership is the real price.', de: 'Immer noch das Kurs-Erlebnis, an dem sich alle messen. Die Mitgliedschaft ist der echte Preis.' } },
+      { key: 'gym', label: { en: 'Best all-in-one smart gym', de: 'Bestes All-in-one-Smart-Gym' }, kind: 'strength',
+        why: { en: 'Cable strength in one footprint; the pick when floor space is the constraint.', de: 'Kabel-Krafttraining auf einer Stellfläche; die Wahl, wenn der Platz die Grenze ist.' } },
+    ],
+    filters: {
+      kinds: [
+        { key: 'bike', label: { en: 'Bikes', de: 'Bikes' } },
+        { key: 'rower', label: { en: 'Rowers', de: 'Ruderer' } },
+        { key: 'trainer', label: { en: 'Trainers', de: 'Trainer' } },
+        { key: 'strength', label: { en: 'Strength', de: 'Kraft' } },
+      ],
+      maxPrice: 1000,
+    },
     pro: {
       en: 'For operators: connected equipment is a lease decision, not a purchase. Price it per booked hour, check the commercial licence (most consumer subscriptions forbid studio use), and favour machines that work without the subscription. Investors: the home market reset higher after 2020 but is cooling, and the growth has moved to institutional buyers (SFIA 2026). Hardware alone is not a moat.',
       de: 'Für Betreiber: Vernetzte Geräte sind eine Leasing-, keine Kaufentscheidung. Rechne pro gebuchter Stunde, prüfe die gewerbliche Lizenz (die meisten Consumer-Abos verbieten Studionutzung) und bevorzuge Geräte, die ohne Abo funktionieren. Für Investoren: Der Heimmarkt hat sich nach 2020 höher eingependelt, kühlt aber ab, und das Wachstum liegt bei institutionellen Käufern (SFIA 2026). Hardware allein ist kein Burggraben.',
@@ -456,6 +512,27 @@ export const guides: BestGuide[] = [
     description: {
       en: 'Training apparel and shoes scored 0–100 on the public Sqwod Score: what holds up to real training volume rather than a first wash.',
       de: 'Sportbekleidung und Schuhe mit Sqwod Score von 0–100: was echtem Trainingsvolumen standhält und nicht nur der ersten Wäsche.',
+    },
+    roles: [
+      { key: 'cushion', label: { en: 'Best cushioned running shoe', de: 'Bester gedämpfter Laufschuh' }, kind: 'road',
+        why: { en: 'Max cushion for easy miles: the shoe most clients should be doing most of their running in.', de: 'Maximale Dämpfung für lockere Kilometer: der Schuh, in dem die meisten Kund:innen den Großteil laufen sollten.' } },
+      { key: 'short', label: { en: 'Best training short', de: 'Beste Trainingsshorts' }, kind: 'short',
+        why: { en: 'The short that survives lifting, running and the commute without looking like gym kit.', de: 'Die Shorts, die Kraft, Laufen und den Weg ins Studio überstehen, ohne nach Gym auszusehen.' } },
+      { key: 'budget', label: { en: 'Best running shoe under €100', de: 'Bester Laufschuh unter 100 €' }, kind: 'road', maxPrice: 100,
+        why: { en: 'The everyday workhorse at the lowest price in the table.', de: 'Das Alltags-Arbeitstier zum niedrigsten Preis der Tabelle.' } },
+      { key: 'tempo', label: { en: 'Best for tempo runs', de: 'Beste für Tempoläufe' }, reviewSlug: 'saucony-endorphin-speed-4',
+        why: { en: 'Plated but forgiving: one shoe for intervals, long runs and race day.', de: 'Mit Platte, aber gutmütig: ein Schuh für Intervalle, lange Läufe und den Wettkampf.' } },
+      { key: 'barefoot', label: { en: 'Best barefoot shoe', de: 'Bester Barfußschuh' }, kind: 'barefoot',
+        why: { en: 'For lifting and drills where you want the floor under your feet.', de: 'Fürs Krafttraining und Drills, bei denen du den Boden spüren willst.' } },
+    ],
+    filters: {
+      kinds: [
+        { key: 'road', label: { en: 'Running shoes', de: 'Laufschuhe' } },
+        { key: 'barefoot', label: { en: 'Barefoot', de: 'Barfuß' } },
+        { key: 'short', label: { en: 'Shorts', de: 'Shorts' } },
+        { key: 'legging', label: { en: 'Leggings', de: 'Leggings' } },
+      ],
+      maxPrice: 100,
     },
     pro: {
       en: 'For operators: apparel is brand surface, not revenue. Team kit and member merch earn their keep when they are the pieces coaches wear on camera; a rack of third-party leggings does not. Partner on co-branded drops with a brand that already sells online. Brands: the professional channel is coach endorsement and studio kit deals, both cheaper than paid social and stickier.',

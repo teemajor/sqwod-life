@@ -1,89 +1,5 @@
 [
   {
-    "date": "2026-10-12",
-    "key": "5 things to know before printing gym membership cards inhous",
-    "tokens": [
-      "things",
-      "know",
-      "before",
-      "printing",
-      "membership",
-      "cards",
-      "house"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "key": "fitness first member says classes not suited for her schedul",
-    "tokens": [
-      "first",
-      "member",
-      "classes",
-      "suited",
-      "schedule",
-      "arthritis",
-      "shocked",
-      "cancellation"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "key": "garmin leaks upcoming launch of brandnew flagship smartwatch",
-    "tokens": [
-      "garmin",
-      "leaks",
-      "upcoming",
-      "launch",
-      "brand",
-      "flagship",
-      "smartwatch"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "key": "5 things franchise chain rocksalt pilates opens in granite b",
-    "tokens": [
-      "things",
-      "franchise",
-      "chain",
-      "rocksalt",
-      "pilates",
-      "opens",
-      "granite"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "key": "paul bowman and ash williams lead regymen fitness expansion ",
-    "tokens": [
-      "paul",
-      "bowman",
-      "williams",
-      "lead",
-      "regymen",
-      "expansion",
-      "zealand"
-    ]
-  },
-  {
-    "date": "2026-10-12",
-    "key": "dance studio raises finds for winchester hospice through com",
-    "tokens": [
-      "dance",
-      "studio",
-      "raises",
-      "finds",
-      "winchester",
-      "hospice",
-      "through",
-      "community",
-      "showcase"
-    ]
-  },
-  {
     "date": "2026-10-13",
     "key": "google launches 180 fitness tracker bringing ai coaching and",
     "tokens": [
@@ -1396,6 +1312,83 @@
       "rates",
       "relief",
       "confirmed"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "key": "everyone active collaborates with chatty caf to strengthen c",
+    "tokens": [
+      "everyone",
+      "active",
+      "collaborates",
+      "chatty",
+      "strengthen",
+      "community",
+      "connections"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "key": "equinox names brendan whitworth as ceo and announces more th",
+    "tokens": [
+      "equinox",
+      "names",
+      "brendan",
+      "whitworth",
+      "announces",
+      "billion",
+      "planned",
+      "growth",
+      "investments"
+    ],
+    "entities": [
+      "Equinox"
+    ],
+    "deal": "$1b"
+  },
+  {
+    "date": "2026-11-03",
+    "key": "onespaworld posts record q3 revenue as cruise wellness busin",
+    "tokens": [
+      "onespaworld",
+      "posts",
+      "record",
+      "revenue",
+      "cruise",
+      "business",
+      "surges"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "key": "onlineseminar physiotherapie",
+    "tokens": [
+      "online",
+      "seminar",
+      "physiotherapie"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "key": "david lloyd clubs markenintegration und 20 millionen euro in",
+    "tokens": [
+      "david",
+      "lloyd",
+      "clubs",
+      "markenintegration",
+      "millionen",
+      "euro",
+      "investitionen"
+    ]
+  },
+  {
+    "date": "2026-11-03",
+    "key": "24 hour fitness introduces founders club",
+    "tokens": [
+      "hour",
+      "introduces",
+      "founders",
+      "club"
     ]
   }
 ]
