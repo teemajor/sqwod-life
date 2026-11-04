@@ -1,12 +1,18 @@
 {
   "id": "deal-equinox-raise-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "revise",
   "title": "Equinox: raise $1B",
   "dealId": "equinox-raise-2026-11",
   "createdAt": "2026-11-03",
   "flags": [
     "stored amount looks like a facility figure, not the deal size"
   ],
-  "checked": "high"
+  "checked": "high",
+  "notes": [
+    {
+      "at": "2026-11-04T08:19:26.530Z",
+      "text": "Reframe as what it is and not a “raise”"
+    }
+  ]
 }
