@@ -4,17 +4,17 @@
   "index": 3,
   "label": "Smart-ring shipment growth, 2024",
   "oldValue": "+88%",
-  "newValue": null,
+  "newValue": "~+112% (850,000 units in 2023 → 1.8 million in 2024; described as 'more than doubling')",
   "currentSource": "Grand View Research",
   "checkedUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
   "checkedDomain": "grandviewresearch.com",
   "sourceUrl": "https://www.grandviewresearch.com/industry-analysis/smart-rings-market-report",
-  "snippet": "Smart rings and smart glasses may experience as much as 88% and 73% growth, respectively.",
+  "snippet": "Omdia estimates that shipments exceeded 850,000 units in 2023, more than doubling to 1.8 million in 2024",
   "confidence": "medium",
-  "kind": "review-due",
+  "kind": "changed",
   "reliability": "Could not read the source automatically — verify by hand.",
-  "recommendation": "Still supported by IDC Worldwide Quarterly Wearable Device Tracker (Sep 2024). Tap Keep as is.",
-  "status": "revise",
+  "recommendation": "Claude checked this after your note. Publish updates the report in EN and DE.",
+  "status": "pending",
   "createdAt": "2026-06-28",
   "notes": [
     {
@@ -29,15 +29,16 @@
     },
     {
       "at": "2026-11-04T08:18:01.195Z",
-      "text": "Fix it"
+      "text": "Fix it",
+      "appliedAt": "2026-11-04T08:24:58.042Z"
     }
   ],
-  "foundUrl": "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories",
-  "foundSource": "IDC Worldwide Quarterly Wearable Device Tracker (Sep 2024)",
+  "foundUrl": "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings",
+  "foundSource": "Omdia 2025",
   "foundYear": "2024",
-  "foundDomain": "businesswire.com",
-  "revisions": 1,
-  "revisedAt": "2026-11-01T15:43:25.106Z",
-  "lastChange": "The +88% smart-ring shipment growth figure for 2024 is confirmed, but the source is IDC (Worldwide Quarterly Wearable Device Tracker, Sep 2024 press release), not Grand View Research — the cited GVR URL publishes only revenue/CAGR data with no mention of 88% shipments.",
-  "unresolved": "The Grand View Research URL cited in the report (grandviewresearch.com/industry-analysis/smart-rings-market-report) does not contain or support the 88% shipment growth figure; the correct primary source is IDC — the report's source attribution should be corrected."
+  "foundDomain": "omdia.tech.informa.com",
+  "revisions": 2,
+  "revisedAt": "2026-11-04T08:24:58.042Z",
+  "lastChange": "The +88% figure could not be confirmed on the cited Grand View Research page (which now covers revenue CAGR, not a shipment-growth percentage); the best available named-source figure is Omdia's 'more than doubling' (≈+112%) for 2024 smart-ring shipments.",
+  "unresolved": "Grand View Research's cited page (grandviewresearch.com/industry-analysis/smart-rings-market-report) no longer surfaces a shipment-growth percentage in its publicly visible content, so the original +88% source cannot be verified or traced; no other reputable source reproduces the +88% figure."
 }
