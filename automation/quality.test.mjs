@@ -1,7 +1,7 @@
 // Guard tests for the Sqwod Daily pipeline. Run: node automation/quality.test.mjs
 // Each case is a real defect from the 3 to 16 Oct 2026 issues.
 import assert from 'node:assert/strict';
-import { noEmDash, phraseProblems, isObituary, stripPhrases, isGoogleNews, linkFirstMentions } from './quality.mjs';
+import { noEmDash, noEmDashDoc, phraseProblems, isObituary, stripPhrases, isGoogleNews, linkFirstMentions } from './quality.mjs';
 import { isOnBrand } from './onbrand.mjs';
 
 const t = (name, fn) => { try { fn(); console.log('ok  ', name); } catch (e) { console.error('FAIL', name, '\n     ', e.message); process.exitCode = 1; } };
@@ -11,6 +11,12 @@ t('em dash between clauses becomes a colon', () =>
 t('em dash pair becomes commas', () =>
   assert.equal(noEmDash("DSSV — the country's employer association — is presenting."), "DSSV, the country's employer association, is presenting."));
 t('URLs are never touched', () => assert.equal(noEmDash('https://x.com/a—b'), 'https://x.com/a—b'));
+t('a whole report file loses its em dashes, frontmatter included', () => {
+  const doc = 'description: "Most save money — a gap operators can fill."\n  stat: "60% want it — 57% have no plan"\n\n## Body\n\nA line — with a dash.';
+  assert.ok(!noEmDashDoc(doc).includes('—'));
+});
+t('a lone em dash in a table cell (no data) is kept', () =>
+  assert.equal(noEmDashDoc('| 2026 | — | 4 |\n| a — b | — |'), '| 2026 | — | 4 |\n| a: b | — |'));
 
 t('clickbait is caught', () => assert.ok(phraseProblems("Suunto's Titanium Watch Has Garmin Sweating").length));
 t('cheat sheet is caught', () => assert.ok(phraseProblems('the closest thing to a cheat sheet you will get').length));
