@@ -12,7 +12,7 @@ import Flag from '../../../components/Flag.astro';
 import { flagCode, countryName } from '../../../lib/flags';
 import { investorSlug } from '../../../lib/investors';
 import { languages, type Lang } from '../../../i18n/ui';
-import { liveAll, generatedAt } from '../../../lib/deals';
+import { CSV_HEADER, csvRow, liveAll, generatedAt } from '../../../lib/deals';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -32,7 +32,7 @@ const T = de ? {
   cta: 'Neue Deals jeden Werktag →', csv: 'CSV herunterladen',
   latest: 'Neueste Deals', seeAll: (n: number) => `Alle ${n} ansehen ↓`, panelFoot: 'Gegen die Quelle geprüft · Beträge wie gemeldet',
   deals: 'Deals erfasst', value: 'Offengelegtes Volumen', valueNote: 'ca. USD, Finanzierungen + M&A + IPOs', eu: 'Europa & DACH',
-  all: 'Alle', region: 'Region', kind: 'Art', cat: 'Kategorie', date: 'Zeitraum', allTime: 'Gesamter Zeitraum', last30: 'Letzte 30 Tage', last90: 'Letzte 90 Tage', search: 'Firma suchen …', count: 'Deals angezeigt',
+  chartsFiltered: 'Grafiken und CSV zeigen die gefilterten Deals.', all: 'Alle', region: 'Region', kind: 'Art', cat: 'Kategorie', date: 'Zeitraum', allTime: 'Gesamter Zeitraum', last30: 'Letzte 30 Tage', last90: 'Letzte 90 Tage', search: 'Firma suchen …', count: 'Deals angezeigt',
   th: ['Datum', 'Firma', 'Deal', 'Betrag', 'Region', 'Kategorie', 'Quelle'],
   kinds: { raise: 'Finanzierung', acquisition: 'Übernahme', valuation: 'Bewertung', ipo: 'Börsengang', shutdown: 'Insolvenz / Schließung' } as Record<string, string>,
   undisclosed: 'nicht genannt', source: 'Quelle', daily: 'Daily', clear: 'Filter zurücksetzen', none: 'Kein Deal passt zu diesen Filtern.',
@@ -56,7 +56,7 @@ const T = de ? {
   cta: 'Get new deals every weekday →', csv: 'Download CSV',
   latest: 'Latest deals', seeAll: (n: number) => `See all ${n} ↓`, panelFoot: 'Checked against the source · amounts as disclosed',
   deals: 'Deals tracked', value: 'Disclosed value', valueNote: 'approx. USD, raises + M&A + IPOs', eu: 'Europe & DACH',
-  all: 'All', region: 'Region', kind: 'Type', cat: 'Category', date: 'Date', allTime: 'All time', last30: 'Last 30 days', last90: 'Last 90 days', search: 'Search a company…', count: 'deals shown',
+  chartsFiltered: 'Charts and CSV show the filtered deals.', all: 'All', region: 'Region', kind: 'Type', cat: 'Category', date: 'Date', allTime: 'All time', last30: 'Last 30 days', last90: 'Last 90 days', search: 'Search a company…', count: 'deals shown',
   th: ['Date', 'Company', 'Deal', 'Amount', 'Region', 'Category', 'Source'],
   kinds: { raise: 'Raise', acquisition: 'Acquisition', valuation: 'Valuation', ipo: 'IPO', shutdown: 'Bankruptcy / closure' } as Record<string, string>,
   undisclosed: 'undisclosed', source: 'Source', daily: 'Daily', clear: 'Clear filters', none: 'No deals match these filters.',
@@ -105,6 +105,8 @@ const chartCats = { label: T.chart2, unit: T.unit2, kind: 'categorical' as const
   series: [{ name: T.deals, points: cats.map((c) => deals.filter((d) => d.category === c).length) }], source: 'Sqwod Deal Tracker' };
 
 const charts = [...(months.length >= 3 ? [chartMonths] : []), ...(cats.length >= 2 ? [chartCats] : [])];
+// what the browser needs to redraw the charts from the filtered rows: each chart's kind and its category keys, in chart order
+const chartKeys = [...(months.length >= 3 ? [{ kind: 'months', keys: months }] : []), ...(cats.length >= 2 ? [{ kind: 'cats', keys: cats }] : [])];
 const regions = ['DACH', 'UK', 'Europe', 'North America', 'Asia-Pacific', 'Middle East'].filter((r) => deals.some((d) => d.region === r));
 // date filter: two rolling windows (worked out in the browser, so they stay right between builds) and every quarter that has a deal
 const quarters = [...new Set(all.map((d) => `${d.date.slice(0, 4)}-Q${Math.ceil(+d.date.slice(5, 7) / 3)}`))].sort().reverse();
@@ -162,7 +164,9 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
         <p class="dt-count"><span><b data-shown>{all.length}</b> {T.count}</span><button type="button" class="dt-clear" data-clear hidden>{T.clear}</button></p>
       </section>
 
+      <p class="dt-chartnote" data-chartnote hidden>{T.chartsFiltered}</p>
       <div class="dt-charts">{charts.map((c, i) => <DataChart lang={lang} chart={c} index={i} total={charts.length} />)}</div>
+      <script is:inline type="application/json" id="dt-data" set:html={JSON.stringify({ charts: chartKeys, header: CSV_HEADER }).replace(/</g, '\\u003c')} />
 
       <div class="dt-wrap">
         <!-- The ARIA roles keep this a table for screen readers on phones, where the CSS
@@ -171,7 +175,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
           <thead><tr role="row">{T.th.map((h) => <th scope="col" role="columnheader">{h}</th>)}</tr></thead>
           <tbody>
             {all.map((d) => (
-              <tr role="row" id={`deal-${d.id}`} data-region={d.region} data-kind={d.kind} data-cat={d.category} data-date={d.date} data-name={`${d.entity} ${d.note} ${(d.investors || []).join(' ')} ${d.acquirer || ''}`.toLowerCase()}>
+              <tr role="row" id={`deal-${d.id}`} data-region={d.region} data-kind={d.kind} data-cat={d.category} data-date={d.date} data-usd={moved(d) ? d.amountUsd || 0 : 0} data-csv={csvRow(d)} data-name={`${d.entity} ${d.note} ${(d.investors || []).join(' ')} ${d.acquirer || ''}`.toLowerCase()}>
                 <td class="dt-date" role="cell">{fmtDate(d.date)}</td>
                 <td class="dt-who" role="cell"><b>{d.entity}</b><span class="dt-note">{de && d.noteDe ? d.noteDe : d.note}</span>{(d.investors?.length || d.acquirer) && (
                   <span class="dt-inv">{d.acquirer ? <>{T.buyer}: <a href={invHref(d.acquirer)}>{d.acquirer}</a></> : <>{T.ledBy}: {d.investors!.map((n, i) => <>{i > 0 && ', '}<a href={invHref(n)}>{n}</a>{(d.leads || []).includes(n) && <i> ({T.lead})</i>}</>)}</>}</span>
@@ -340,6 +344,8 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   .dt-clear{border:0;background:none;padding:8px 0;margin:-8px 0;font:inherit;font-size:12px;font-weight:600;color:var(--chalk);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
   .dt-clear:hover{color:var(--accent)}
   .dt-clear[hidden]{display:none}
+  .dt-chartnote{font-size:12px;color:var(--g2);margin:10px 0 0}
+  .dt-chartnote[hidden]{display:none}
   .dt-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel);margin:14px 0 24px}
   .dt{width:100%;border-collapse:collapse;font-size:13.5px;min-width:720px}
   .dt th{text-align:left;font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--g2);padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -431,6 +437,7 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
   const chips = Array.from(document.querySelectorAll<HTMLButtonElement>('.dt-chips button'));
   const clears = Array.from(document.querySelectorAll<HTMLButtonElement>('[data-clear]'));
   const none = document.querySelector<HTMLElement>('[data-none]');
+  const note = document.querySelector<HTMLElement>('[data-chartnote]');
   let region = '';
   const EUROPE = new Set(['DACH', 'UK', 'Europe']);
   // Date filter: '30d' / '90d' count back from today; '2026-Q3' is a calendar quarter. Deal dates are YYYY-MM-DD, so plain string compares work.
@@ -454,9 +461,92 @@ const schema = { '@context': 'https://schema.org', '@type': 'Dataset', name: 'Sq
     const active = !!(region || kind?.value || cat?.value || date?.value || s);
     clears.forEach((c) => { if (c.closest('.dt-count')) c.hidden = !active; });   // "Clear filters" next to the count only while a filter is set
     if (none) none.hidden = n > 0;
+    if (note) note.hidden = !active;
+    redraw(active);
   }
   function setRegion(b: HTMLButtonElement) { region = b.dataset.region || ''; chips.forEach((c) => { c.classList.toggle('on', c === b); c.setAttribute('aria-pressed', String(c === b)); }); apply(); }
   chips.forEach((b) => b.addEventListener('click', () => setRegion(b)));
   q?.addEventListener('input', apply); kind?.addEventListener('change', apply); cat?.addEventListener('change', apply); date?.addEventListener('change', apply);
+  // ---- Charts follow the filters ----
+  // The charts are drawn at build time (DataChart). Here the same bars are re-scaled from the rows the
+  // filters leave visible: geometry mirrors DataChartSvg (vertical bars, a line past 16/12 points, and
+  // horizontal category bars). Money excludes closures and valuations (data-usd is 0 for those).
+  const meta = JSON.parse(document.getElementById('dt-data')?.textContent || '{"charts":[],"header":""}') as { charts: { kind: 'months' | 'cats'; keys: string[] }[]; header: string };
+  const deLang = (document.documentElement.lang || '').startsWith('de');
+  const fmtN = (v: number) => (Math.abs(v) >= 1000 ? v.toLocaleString(deLang ? 'de-DE' : 'en-US', { maximumFractionDigits: 1 }) : String(Math.round(v * 100) / 100).replace('.', deLang ? ',' : '.'));
+  function values(kind: 'months' | 'cats', keys: string[], all: boolean) {
+    const out = keys.map(() => 0);
+    for (const r of rows) {
+      if ((!all && r.hidden) || r.dataset.kind === 'shutdown') continue;
+      const i = kind === 'months' ? keys.indexOf((r.dataset.date || '').slice(0, 7)) : keys.indexOf(r.dataset.cat || '');
+      if (i < 0) continue;
+      out[i] += kind === 'months' ? Number(r.dataset.usd || 0) : 1;
+    }
+    return kind === 'months' ? out.map((v) => Math.round(v / 1e5) / 10) : out;
+  }
+  function drawSvg(svg: SVGSVGElement, kind: 'months' | 'cats', pts: number[]) {
+    const compact = svg.classList.contains('dc-svg-m');
+    const [, , W, H] = (svg.getAttribute('viewBox') || '0 0 720 264').split(' ').map(Number);
+    const mx = Math.max(...pts, 1e-9);
+    const groups = Array.from(svg.querySelectorAll<SVGGElement>('.dc-pt'));
+    if (kind === 'cats') {
+      groups.forEach((g, i) => {
+        const v = pts[i] ?? 0, rect = g.querySelector('rect'), texts = g.querySelectorAll('text');
+        if (!rect) return;
+        const left = Number(rect.getAttribute('x')), w = Math.max(3, (v / mx) * (W - left - 70));
+        rect.setAttribute('width', String(w));
+        const lbl = texts[texts.length - 1]; if (lbl) { lbl.setAttribute('x', String(left + w + 8)); lbl.textContent = fmtN(v); }
+        g.setAttribute('data-val', fmtN(v));
+      });
+      return;
+    }
+    const top = compact ? 30 : 40, base = H - 30, chartH = base - top;
+    const yOf = (v: number) => base - Math.max(2, (v / mx) * chartH);
+    const line = svg.querySelector<SVGPathElement>('path.dc-ln');
+    if (line) {   // line mode: move the dots, redraw the path and the grid labels
+      const xy: string[] = [];
+      groups.forEach((g, i) => {
+        const v = pts[i] ?? 0;
+        g.querySelectorAll('circle').forEach((c) => c.setAttribute('cy', yOf(v).toFixed(1)));
+        const cx = g.querySelector('circle')?.getAttribute('cx') || '0';
+        xy.push(`${i ? 'L' : 'M'}${cx},${yOf(v).toFixed(1)}`);
+        g.setAttribute('data-val', fmtN(v)); g.setAttribute('data-yoy', i && pts[i - 1] ? String(Math.round(((v - pts[i - 1]) / pts[i - 1]) * 1000) / 10) : '');
+      });
+      line.setAttribute('d', xy.join(' '));
+      const ks = compact ? [0.5, 1] : [0.25, 0.5, 0.75, 1];
+      Array.from(svg.children).filter((el) => el.tagName === 'text').forEach((t, i) => { if (ks[i] != null) t.textContent = fmtN(Math.round(mx * ks[i] * 10) / 10); });
+      return;
+    }
+    groups.forEach((g, i) => {   // bar mode
+      const v = pts[i] ?? 0, rect = g.querySelector('rect.dc-r'), vl = g.querySelector('text.dc-vl');
+      if (!rect) return;
+      const h = base - yOf(v);
+      rect.setAttribute('y', String(base - h)); rect.setAttribute('height', String(h));
+      if (vl) { vl.setAttribute('y', String(base - h - 8)); vl.textContent = fmtN(v); }
+      g.setAttribute('data-val', fmtN(v)); g.setAttribute('data-yoy', i && pts[i - 1] ? String(Math.round(((v - pts[i - 1]) / pts[i - 1]) * 1000) / 10) : '');
+    });
+  }
+  function redraw(active: boolean) {
+    meta.charts.forEach((c, ci) => {
+      const fig = document.getElementById(`dc${ci}`); if (!fig) return;
+      const pts = values(c.kind, c.keys, !active);
+      fig.querySelectorAll<SVGSVGElement>('svg.dc-svg').forEach((svg) => drawSvg(svg, c.kind, pts));
+      fig.querySelectorAll('.dc-table tbody tr').forEach((tr, i) => { const td = tr.querySelector('td'); if (td) td.textContent = fmtN(pts[i] ?? 0); });
+    });
+  }
+
+  // ---- CSV follows the filters ----
+  // With no filter set, the links download the static /data/deals.csv. With a filter set, the same
+  // columns are built here from the visible rows (data-csv holds each row, written by csvRow()).
+  document.querySelectorAll<HTMLAnchorElement>('a[href="/data/deals.csv"]').forEach((a) => a.addEventListener('click', (e) => {
+    const vis = rows.filter((r) => !r.hidden);
+    if (vis.length === rows.length) return;
+    e.preventDefault();
+    const blob = new Blob([[meta.header, ...vis.map((r) => r.dataset.csv || '')].join('\n') + '\n'], { type: 'text/csv;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob); link.download = 'sqwod-deals-filtered.csv';
+    document.body.appendChild(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+  }));
   clears.forEach((c) => c.addEventListener('click', () => { if (q) q.value = ''; if (kind) kind.value = ''; if (cat) cat.value = ''; if (date) date.value = ''; if (chips[0]) setRegion(chips[0]); else apply(); }));
 </script>

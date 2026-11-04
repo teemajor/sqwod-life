@@ -108,8 +108,8 @@
       "acquirer": "Fund 1 Investments LLC",
       "noteDe": "Fund 1 Investments prüft ein Angebot, den Boutique-Fitness-Franchisegeber Xponential Fitness von der Börse zu nehmen.",
       "checked": "medium",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "hidden",
+      "reason": "review 2026-11-02: not a deal yet: Bloomberg (30 Oct 2026) reports Fund 1 looking to bid; its 13D letter gives only a non-binding $5.61 to $7.00/share range, no formal offer or board agreement"
     },
     {
       "date": "2026-11-01",
@@ -558,8 +558,8 @@
       ],
       "country": "India",
       "acquirer": "Macobs Technologies",
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: stale: Macobs (Menhood) agreed to buy 50.01% of Dhanta Wellness (Getmymettle) for Rs 10.5 crore earlier in 2026 (deal databases date it 28 Jan 2026); Oct item was a follow-up"
     },
     {
       "date": "2026-10-09",
@@ -722,33 +722,6 @@
       "reason": "audit 2026-10-30: stale: $5.5B valuation is from the Nov 2024 round"
     },
     {
-      "date": "2026-10-05",
-      "entity": "Mozaik Investments",
-      "kind": "acquisition",
-      "amount": "",
-      "amountUsd": null,
-      "currency": null,
-      "approx": false,
-      "note": "Acquired several fitness centres in Romania, advised by Filip & Company",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY3VUWnlhMVVheUxYNVZiMVc3Sm1OaW1oVWctaXNNeVQ2a3VxUDl6c2lVdDZXUVJobE5CY2J3MTFkeTh3cDItR0tvUERCMFFUM0F3V040TDQ0Z2x4TEx0NDBJUHVwaDBLOE43NWh0RmY4VEQ2cGh4eUtGdjdKckwwLXZBcWE2b29QcjJuTjFVTGNkWVNaVlJNMHJNWmZxWWEwV2RjWno4cjdFRzNUeV91SWdxMm52MW9sVHVzRlpOcUh5cFBEWGc?oc=5",
-      "source": "The Diplomat Bucharest",
-      "issue": "/en/daily/2026-10-05",
-      "region": "Europe",
-      "category": "Other",
-      "id": "mozaik-acquisition-2026-10",
-      "reports": [
-        {
-          "date": "2026-10-05",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY3VUWnlhMVVheUxYNVZiMVc3Sm1OaW1oVWctaXNNeVQ2a3VxUDl6c2lVdDZXUVJobE5CY2J3MTFkeTh3cDItR0tvUERCMFFUM0F3V040TDQ0Z2x4TEx0NDBJUHVwaDBLOE43NWh0RmY4VEQ2cGh4eUtGdjdKckwwLXZBcWE2b29QcjJuTjFVTGNkWVNaVlJNMHJNWmZxWWEwV2RjWno4cjdFRzNUeV91SWdxMm52MW9sVHVzRlpOcUh5cFBEWGc?oc=5",
-          "issue": "/en/daily/2026-10-05"
-        }
-      ],
-      "country": "Romania",
-      "acquirer": "Mozaik Investments",
-      "status": "pending",
-      "reason": "new"
-    },
-    {
       "date": "2026-10-02",
       "entity": "Garmin / Moxy",
       "kind": "acquisition",
@@ -799,8 +772,8 @@
       ],
       "country": "United Kingdom",
       "acquirer": "Tresalis",
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: off-topic: Tresalis buying majority of Vyrao is a fragrance (beauty) deal, reported ~29 Sep 2026"
     },
     {
       "date": "2026-10-01",
@@ -942,23 +915,23 @@
       "leads": [
         "BECO Capital"
       ],
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: off-topic: Amaani's $5M Series A (BECO Capital) is for beauty brand AÏZA (Ulta Beauty rollout), not fitness or wellness"
     },
     {
       "date": "2026-09-24",
-      "entity": "Elixinol Wellness",
+      "entity": "Elixinol Wellness / Vitable",
       "kind": "acquisition",
-      "amount": "",
-      "amountUsd": null,
-      "currency": null,
+      "amount": "$2.5M AUD",
+      "amountUsd": 1625000,
+      "currency": "AUD",
       "approx": false,
-      "note": "Acquired Vitable to expand wellness product portfolio",
-      "url": "",
-      "source": "",
+      "note": "ASX-listed Elixinol Wellness agrees to buy Australian personalised supplement subscription platform Vitable (over $5 million revenue, about 7,850 subscribers) for a headline $2.5 million in shares, largely performance based; completion needs shareholder approval.",
+      "url": "https://announcements.asx.com.au/asxpdf/20260924/pdf/074g89rhbdpr8v.pdf",
+      "source": "ASX announcement (Elixinol Wellness)",
       "issue": "/en/daily/2026-09-24",
       "region": "Asia-Pacific",
-      "category": "Other",
+      "category": "Nutrition & supplements",
       "id": "elixinol-acquisition-2026-09",
       "reports": [
         {
@@ -968,9 +941,10 @@
         }
       ],
       "country": "Australia",
+      "noteDe": "Das an der ASX gelistete Unternehmen Elixinol Wellness kauft die australische Abo-Plattform für personalisierte Nahrungsergänzung Vitable (über 5 Mio. $ Umsatz, rund 7.850 Abonnenten) für nominal 2,5 Mio. $ in Aktien, großteils erfolgsabhängig; der Abschluss braucht die Zustimmung der Aktionäre.",
       "acquirer": "Elixinol Wellness",
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-09-24",
@@ -995,8 +969,8 @@
         }
       ],
       "country": "United States",
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: cannot be verified: no credible report of a TUSOL Wellness sale via Website Closers; only a Dealroom link"
     },
     {
       "date": "2026-09-23",
@@ -1219,46 +1193,8 @@
       "leads": [
         "Australian Research Council"
       ],
-      "status": "pending",
-      "reason": "new"
-    },
-    {
-      "date": "2026-09-15",
-      "entity": "Wizard Wellness",
-      "kind": "raise",
-      "amount": "$1M",
-      "amountUsd": 1000000,
-      "currency": "USD",
-      "approx": false,
-      "note": "closed alongside a national retail rollout into 4,000+ stores completed in four weeks",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYUJsUUVoZVE4UHp5OW5YSHRvRjJUZTUzUksyeTB2VlZwQkF4NG85N0QwS1pPNDJkRnF2M19UMFkwMTFKcjdDcHlad1pMSDhMaGp0U0sydUxtU1NCUFZJaEZEVEtYaC1ydW52eFlRbUtTemw5RVJfVmFYZzhsUExoVmxaOFZIWDljSTNwMklDaldqZ1dSampkZXBUV0dnTTJUYk1EWERmWmtHTkJEcU1WZw?oc=5",
-      "source": "citybiz",
-      "issue": "/en/daily/2026-09-15",
-      "region": "North America",
-      "category": "Other",
-      "id": "wizard-raise-2026-09",
-      "reports": [
-        {
-          "date": "2026-09-15",
-          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYUJsUUVoZVE4UHp5OW5YSHRvRjJUZTUzUksyeTB2VlZwQkF4NG85N0QwS1pPNDJkRnF2M19UMFkwMTFKcjdDcHlad1pMSDhMaGp0U0sydUxtU1NCUFZJaEZEVEtYaC1ydW52eFlRbUtTemw5RVJfVmFYZzhsUExoVmxaOFZIWDljSTNwMklDaldqZ1dSampkZXBUV0dnTTJUYk1EWERmWmtHTkJEcU1WZw?oc=5",
-          "issue": "/en/daily/2026-09-15"
-        },
-        {
-          "date": "2026-09-16",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUWV0MzRiTUQ0cHZGS0UybHk0N2xJSFRZUmdZSnBCNTZ3MTVON0wyeWNCamRBN0w0NmVSVkpiaXdVWjRuRjl4eVlhOWVyRWdScVliV1JyLWxfdWxKa2FrVFpJbExBV1Z5LVBubUtxZjhpSFlFVkZ0U2xGdUZRRlRaN3lVRExSMUpj?oc=5",
-          "issue": "/en/daily/2026-09-16"
-        }
-      ],
-      "country": "United States",
-      "investors": [
-        "Pave Health Ventures",
-        "Vanquish Equity",
-        "True Beauty Ventures",
-        "Barrier Island Capital"
-      ],
-      "leads": [],
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: not a deal: A$1.3M ARC Future Fellowship research grant to a UniSQ academic for worker-safety sensors (mining, construction), no company named"
     },
     {
       "date": "2026-09-14",
@@ -1317,6 +1253,44 @@
       ],
       "status": "hidden",
       "reason": "off-topic or bad data (backfill review 2026-10-27)"
+    },
+    {
+      "date": "2026-09-14",
+      "entity": "Wizard Wellness",
+      "kind": "raise",
+      "amount": "$1M",
+      "amountUsd": 1000000,
+      "currency": "USD",
+      "approx": true,
+      "note": "Allergy care brand Wizard Wellness raises over $1 million from new investors Pave Health Ventures and Vanquish Equity, joined by True Beauty Ventures and Barrier Island Capital, as it reaches more than 4,000 Target, Walmart and CVS stores.",
+      "url": "https://massmarketretailers.com/wizard-wellness-completes-national-mass-retail-rollout-in-four-weeks-closing-1-million-funding-round/",
+      "source": "Mass Market Retailers",
+      "issue": "/en/daily/2026-09-15",
+      "region": "North America",
+      "category": "Health & longevity",
+      "id": "wizard-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-15",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNYUJsUUVoZVE4UHp5OW5YSHRvRjJUZTUzUksyeTB2VlZwQkF4NG85N0QwS1pPNDJkRnF2M19UMFkwMTFKcjdDcHlad1pMSDhMaGp0U0sydUxtU1NCUFZJaEZEVEtYaC1ydW52eFlRbUtTemw5RVJfVmFYZzhsUExoVmxaOFZIWDljSTNwMklDaldqZ1dSampkZXBUV0dnTTJUYk1EWERmWmtHTkJEcU1WZw?oc=5",
+          "issue": "/en/daily/2026-09-15"
+        },
+        {
+          "date": "2026-09-16",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPUWV0MzRiTUQ0cHZGS0UybHk0N2xJSFRZUmdZSnBCNTZ3MTVON0wyeWNCamRBN0w0NmVSVkpiaXdVWjRuRjl4eVlhOWVyRWdScVliV1JyLWxfdWxKa2FrVFpJbExBV1Z5LVBubUtxZjhpSFlFVkZ0U2xGdUZRRlRaN3lVRExSMUpj?oc=5",
+          "issue": "/en/daily/2026-09-16"
+        }
+      ],
+      "country": "United States",
+      "noteDe": "Die Allergiepflegemarke Wizard Wellness sammelt über 1 Mio. $ von den neuen Investoren Pave Health Ventures und Vanquish Equity sowie von True Beauty Ventures und Barrier Island Capital ein und ist nun in mehr als 4.000 Filialen von Target, Walmart und CVS gelistet.",
+      "investors": [
+        "Pave Health Ventures",
+        "Vanquish Equity",
+        "True Beauty Ventures",
+        "Barrier Island Capital"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-09-11",
@@ -1429,8 +1403,8 @@
       ],
       "country": "India",
       "acquirer": "Fredun Pharmaceuticals",
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: off-topic: Fredun Pharmaceuticals buying Furlicks is pet wellness, not human fitness or wellness"
     },
     {
       "date": "2026-09-07",
@@ -1440,12 +1414,12 @@
       "amountUsd": 50000000,
       "currency": "USD",
       "approx": false,
-      "note": "India-based women's health brand scaling product portfolio and distribution",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNX3RFbzRER2JfS3l0bWx5bUNuVkc2SUtoOXp2dEpqRU9mRmJhTkJLLVRSU1NxbHVUTllpQS1aWnhQNUwtRnR4QTJvWVEwMWRUSzltWC1PX3RoTjJTR2s1dWdnUWhMUnRRa0R3MXpGQVVrRF9oX29nd0NQdzh5Sy11RmMyQTJaR0N6UHd1TWFmaE5RSW9GLU5RM2FfRVEzSW9rTGo5TEtB0gGmAUFVX3lxTE1fdEVvNERHYl9LeXRtbHltQ25WRzZJS2g5enZ0SmpFT2ZGYmFOQkstVFJTU3FsdVROWWlBLVpaeFA1TC1GdHhBMm9ZUTAxZFRLOW1YLU9fdGhOMlNHazV1Z2dRaExSdFFrRHcxekZBVWtEX2hfb2d3Q1B3OHlLLXVGYzJBMlpHQ3pQd3VNYWZoTlFJb0YtTlEzYV9FUTNJb2tMajlMS0E?oc=5",
-      "source": "Entrackr",
+      "note": "Mumbai women's wellness brand Nua raises a $50M Series C, mixing primary capital and secondary sales, led by Peak XV Partners and Filter Capital.",
+      "url": "https://inc42.com/buzz/nua-raises-50-mn-to-expand-womens-wellness-portfolio-distribution/",
+      "source": "Inc42",
       "issue": "/en/daily/2026-09-07",
       "region": "Asia-Pacific",
-      "category": "Other",
+      "category": "Health & longevity",
       "id": "nua-raise-2026-09",
       "reports": [
         {
@@ -1465,6 +1439,7 @@
         }
       ],
       "country": "India",
+      "noteDe": "Die Frauengesundheitsmarke Nua aus Mumbai sammelt 50 Mio. $ in einer Series C aus Primärkapital und Sekundäranteilen ein, angeführt von Peak XV Partners und Filter Capital.",
       "investors": [
         "Peak XV Partners",
         "Filter Capital",
@@ -1475,42 +1450,8 @@
         "Peak XV Partners",
         "Filter Capital"
       ],
-      "status": "pending",
-      "reason": "new"
-    },
-    {
-      "date": "2026-09-04",
-      "entity": "The Wellness Company",
-      "kind": "raise",
-      "amount": "$1.6M CAD",
-      "amountUsd": 1152000,
-      "currency": "CAD",
-      "approx": false,
-      "note": "seed round to build Tempo, an AI-powered health companion",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNDgydDk2X2FPWjdOWFUyNmNHVlRCampPVDhMZm1KMDdHdHdkRVFHakt0b2xiMTNaQzBrc3lwd3REZ3Q3NzNjV2pPUjByM3JIVFExaTlFUjdqYTNzWmxGOUFMX3R6RW5uNlMzYXMxQ3ZodW9fN0J3S3VfcmxDS0ZPR3F6NXR3Z3NYYTYwS0syenc0LXRJRGNMQWJZYmlJb3gyOUM2ODhkWk8zektHa3VN?oc=5",
-      "source": "Dealroom",
-      "issue": "/en/daily/2026-09-04",
-      "region": "North America",
-      "category": "Software & AI",
-      "id": "company-raise-2026-09",
-      "reports": [
-        {
-          "date": "2026-09-04",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNDgydDk2X2FPWjdOWFUyNmNHVlRCampPVDhMZm1KMDdHdHdkRVFHakt0b2xiMTNaQzBrc3lwd3REZ3Q3NzNjV2pPUjByM3JIVFExaTlFUjdqYTNzWmxGOUFMX3R6RW5uNlMzYXMxQ3ZodW9fN0J3S3VfcmxDS0ZPR3F6NXR3Z3NYYTYwS0syenc0LXRJRGNMQWJZYmlJb3gyOUM2ODhkWk8zektHa3VN?oc=5",
-          "issue": "/en/daily/2026-09-04"
-        }
-      ],
-      "country": "Canada",
-      "investors": [
-        "BDC Capital Seed Venture Fund",
-        "BKR Capital",
-        "Launch"
-      ],
-      "leads": [
-        "BDC Capital Seed Venture Fund"
-      ],
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-09-04",
@@ -1621,6 +1562,69 @@
       "reason": "audit 2026-10-30: facts corrected"
     },
     {
+      "date": "2026-09-03",
+      "entity": "The Wellness Company",
+      "kind": "raise",
+      "amount": "$1.6M CAD",
+      "amountUsd": 1152000,
+      "currency": "CAD",
+      "approx": true,
+      "note": "Toronto startup The Wellness Company closes nearly $1.6M CAD in seed funding led by BDC Capital's Seed Venture Fund to build Tempo, an AI health companion that draws on wearable and lab data.",
+      "url": "https://betakit.com/launch-alum-closes-1-6-million-to-support-healthier-living-with-the-wellness-company/",
+      "source": "BetaKit",
+      "issue": "/en/daily/2026-09-04",
+      "region": "North America",
+      "category": "Software & AI",
+      "id": "company-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-04",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNDgydDk2X2FPWjdOWFUyNmNHVlRCampPVDhMZm1KMDdHdHdkRVFHakt0b2xiMTNaQzBrc3lwd3REZ3Q3NzNjV2pPUjByM3JIVFExaTlFUjdqYTNzWmxGOUFMX3R6RW5uNlMzYXMxQ3ZodW9fN0J3S3VfcmxDS0ZPR3F6NXR3Z3NYYTYwS0syenc0LXRJRGNMQWJZYmlJb3gyOUM2ODhkWk8zektHa3VN?oc=5",
+          "issue": "/en/daily/2026-09-04"
+        }
+      ],
+      "country": "Canada",
+      "noteDe": "Das Torontoer Start-up The Wellness Company schließt eine Seed-Runde über knapp 1,6 Mio. CAD unter Führung des Seed Venture Fund von BDC Capital ab, um Tempo aufzubauen, einen KI-Gesundheitsbegleiter, der Wearable- und Labordaten nutzt.",
+      "investors": [
+        "BDC Capital Seed Venture Fund",
+        "BKR Capital",
+        "Launch"
+      ],
+      "leads": [
+        "BDC Capital Seed Venture Fund"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-09-03",
+      "entity": "Mozaik Investments / Fit4U",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Mozaik Investments, via its project company M-Ventures, signs to buy Fit4U, the largest gym operator in Oradea with five clubs, after earlier buying City Gym, Urban Fitness & Gym and No1 Fitness for its Urban Fitness chain; terms undisclosed, completion subject to conditions.",
+      "url": "https://financialintelligence.ro/mozaik-investments-achizitioneaza-fit4u-cea-mai-mare-retea-de-fitness-din-oradea/",
+      "source": "Financial Intelligence (Mozaik Investments press release)",
+      "issue": "/en/daily/2026-10-05",
+      "region": "Europe",
+      "category": "Gyms & studios",
+      "id": "mozaik-acquisition-2026-10",
+      "reports": [
+        {
+          "date": "2026-10-05",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNY3VUWnlhMVVheUxYNVZiMVc3Sm1OaW1oVWctaXNNeVQ2a3VxUDl6c2lVdDZXUVJobE5CY2J3MTFkeTh3cDItR0tvUERCMFFUM0F3V040TDQ0Z2x4TEx0NDBJUHVwaDBLOE43NWh0RmY4VEQ2cGh4eUtGdjdKckwwLXZBcWE2b29QcjJuTjFVTGNkWVNaVlJNMHJNWmZxWWEwV2RjWno4cjdFRzNUeV91SWdxMm52MW9sVHVzRlpOcUh5cFBEWGc?oc=5",
+          "issue": "/en/daily/2026-10-05"
+        }
+      ],
+      "country": "Romania",
+      "noteDe": "Mozaik Investments unterzeichnet über die Projektgesellschaft M-Ventures den Kauf von Fit4U, dem größten Fitnessbetreiber in Oradea mit fünf Clubs, nach den Zukäufen von City Gym, Urban Fitness & Gym und No1 Fitness für die Kette Urban Fitness; Konditionen nicht genannt, der Abschluss hängt noch von Bedingungen ab.",
+      "acquirer": "Mozaik Investments (via M-Ventures)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
       "date": "2026-09-02",
       "entity": "Nestlé / Yellow Wood Partners",
       "kind": "acquisition",
@@ -1706,46 +1710,8 @@
       ],
       "country": "Singapore",
       "acquirer": "DSG Consumer Partners",
-      "status": "pending",
-      "reason": "new"
-    },
-    {
-      "date": "2026-09-01",
-      "entity": "Healf",
-      "kind": "raise",
-      "amount": "",
-      "amountUsd": null,
-      "currency": null,
-      "approx": false,
-      "note": "SEMCAP Beauty & Wellness led the round, signalling continued investor appetite for wellness platforms",
-      "url": "",
-      "source": "",
-      "issue": "/en/daily/2026-09-01",
-      "region": "UK",
-      "category": "Other",
-      "id": "healf-raise-2026-09",
-      "reports": [
-        {
-          "date": "2026-09-01",
-          "url": "",
-          "issue": "/en/daily/2026-09-01"
-        }
-      ],
-      "country": "United Kingdom",
-      "investors": [
-        "SEMCAP Beauty & Wellness",
-        "Pentland Ventures",
-        "Ami Capital",
-        "IRIS",
-        "Active Partners",
-        "Sequel",
-        "Dara5"
-      ],
-      "leads": [
-        "SEMCAP Beauty & Wellness"
-      ],
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: off-topic and thinly sourced: bback is a hangover-recovery brand (not fitness recovery); deal only via secondary write-ups and DSG's brand page, no date or terms confirmed"
     },
     {
       "date": "2026-09-01",
@@ -1801,16 +1767,55 @@
       "reason": "audit 2026-10-30: not a deal: quarterly profit report"
     },
     {
+      "date": "2026-08-31",
+      "entity": "Healf",
+      "kind": "raise",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "SEMCAP Beauty & Wellness leads an undisclosed minority investment in UK wellbeing platform Healf, which has passed £100 million in annualised revenue, to fund platform development and international expansion after its launch in Germany.",
+      "url": "https://www.semcap.com/post/semcap-beauty-wellness-leads-funding-round-for-healf",
+      "source": "SEMCAP",
+      "issue": "/en/daily/2026-09-01",
+      "region": "UK",
+      "category": "Health & longevity",
+      "id": "healf-raise-2026-09",
+      "reports": [
+        {
+          "date": "2026-09-01",
+          "url": "",
+          "issue": "/en/daily/2026-09-01"
+        }
+      ],
+      "country": "United Kingdom",
+      "noteDe": "SEMCAP Beauty & Wellness führt eine Minderheitsbeteiligung in nicht genannter Höhe an der britischen Wellbeing-Plattform Healf an, die über 100 Mio. £ annualisierten Umsatz erzielt; das Geld fließt in die Plattform und die internationale Expansion nach dem Start in Deutschland.",
+      "investors": [
+        "SEMCAP Beauty & Wellness",
+        "Pentland Ventures",
+        "Ami Capital",
+        "IRIS",
+        "Active Partners",
+        "Sequel",
+        "Dara5"
+      ],
+      "leads": [
+        "SEMCAP Beauty & Wellness"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
       "date": "2026-08-28",
-      "entity": "Excalibur Group",
+      "entity": "Excalibur Group / SpaSeekers",
       "kind": "acquisition",
       "amount": "",
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "Acquired SpaSeekers to expand wellness booking platform portfolio",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPQTNyY0pKRVFGYkl2RG9hVXdLME1VLTB6Z1RQeWg5SkJqS3lqbGVLVVBuNWNzWHVmUTBfQ2tvcGtRUDg0ZS1Yb0dFb2ZWanBBc3NVQTRySzM2dURhenZwVHNaejBNanBPRXE1SXBBZjN5QnhLMHBKVFlqYWJGUEVKbVJjZlN4UkVUd1NCcERCQVpZR0NRUkRJbjREUk9hLTlhTmhwcGpxQmxBTTdoVXUzNVRWUGhiZkZvUDlicFlfbVJESVp2WXc?oc=5",
-      "source": "spabusiness.com",
+      "note": "Excalibur Group, owner of Wowcher, buys UK spa booking platform SpaSeekers (around 500 partner venues) after acquiring Spabreaks.com in October 2025; terms undisclosed.",
+      "url": "https://www.spabusiness.com/wellness-news/Excalibur-Group-expands-spa-booking-platform-portfolio-by-acquiring-SpaSeekers/363484",
+      "source": "Spa Business",
       "issue": "/en/daily/2026-08-28",
       "region": "UK",
       "category": "Software & AI",
@@ -1823,9 +1828,10 @@
         }
       ],
       "country": "United Kingdom",
+      "noteDe": "Die Excalibur Group, Eigentümerin von Wowcher, kauft die britische Spa-Buchungsplattform SpaSeekers (rund 500 Partnerhäuser), nachdem sie im Oktober 2025 Spabreaks.com übernommen hatte; Konditionen nicht genannt.",
       "acquirer": "Excalibur Group",
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-08-27",
@@ -1880,19 +1886,19 @@
       "reason": "backfill review 2026-10-27"
     },
     {
-      "date": "2026-08-27",
-      "entity": "Fifty 1 Labs",
+      "date": "2026-08-26",
+      "entity": "Fifty 1 Labs / MSK Signal recovery line",
       "kind": "acquisition",
       "amount": "",
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "Acquired five recovery brands in an all-stock deal with no cash exchanged",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPQW50dGhvTW1RSUo5c2lad3EwZjBvSjd0ZmpybGdocVdsS1lxMnJmemJrMzNFdzhYZTRjUzJ0M1BLWUdncU5RZHJJRl82VTZnaTFod2RxYndvQ2RlbUZKSkR3dEFyUFQ4RC1jQmFOVnBDVGxCNGZUVkJnZTRydXg0WEwtZV9Lc0FtbkhtdHhyZm01d01IUHNTb2FzX09CQWx3RXZFS3FFMTVWMWJEWUFNZDV5bENqZDA?oc=5",
-      "source": "Stock Titan",
+      "note": "OTC-listed Fifty 1 Labs buys a five-product musculoskeletal recovery line (product concepts plus an investigational BPC-157 research platform) from Canadian biotech MSK Signal in an all-stock deal paid in Series B Preferred Stock; no value disclosed.",
+      "url": "https://www.nasdaq.com/press-release/fifty-1-labs-inc-acquires-msk-signal-recovery-product-line-accelerate-growth-peptide",
+      "source": "Fifty 1 Labs press release (via Nasdaq)",
       "issue": "/en/daily/2026-08-27",
       "region": "North America",
-      "category": "Other",
+      "category": "Health & longevity",
       "id": "fifty-acquisition-2026-08",
       "reports": [
         {
@@ -1901,10 +1907,11 @@
           "issue": "/en/daily/2026-08-27"
         }
       ],
-      "country": "United States",
+      "country": "Canada",
+      "noteDe": "Das im OTC-Handel gelistete Unternehmen Fifty 1 Labs übernimmt vom kanadischen Biotech MSK Signal eine Recovery-Produktlinie für Muskeln und Gelenke mit fünf Produkten (Konzepte plus eine BPC-157-Forschungsplattform) gegen Series-B-Vorzugsaktien; ein Wert wurde nicht genannt.",
       "acquirer": "Fifty 1 Labs",
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-08-25",
@@ -2005,15 +2012,15 @@
       "reason": "off-topic or bad data (backfill review 2026-10-27)"
     },
     {
-      "date": "2026-08-20",
-      "entity": "Kodeon",
+      "date": "2026-08-19",
+      "entity": "Kodeon / Breethe",
       "kind": "acquisition",
       "amount": "",
       "amountUsd": null,
       "currency": null,
       "approx": false,
-      "note": "acquired meditation app Breethe in its largest deal to date",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOdngxaHFXVFppOTJJMnJ6UWRsTkxBN2ZxdHNYRkszNnRsVmFJdEJqd181bnQyRUlucWprS0hiUHFma050YzdHQkRyaHVWSWN6X1hiWVd4T0tydWpDUjEtY1l2U1o3UHZvTzRmMU1pS1BJS1lWeFZXcDRNM2J6bUNYeGVGMjNWOGRFRmR0VTFwcFpIS1RDUDAyc2NrSQ?oc=5",
+      "note": "Toronto app publisher Kodeon buys Montreal sleep and meditation app Breethe in its largest acquisition to date; the price was not disclosed, though Breethe's co-founder put it in the eight-figure range.",
+      "url": "https://betakit.com/kodeon-acquires-mental-wellness-app-breethe-in-largest-acquisition-to-date/",
       "source": "BetaKit",
       "issue": "/en/daily/2026-08-20",
       "region": "North America",
@@ -2026,37 +2033,11 @@
           "issue": "/en/daily/2026-08-20"
         }
       ],
-      "country": "United States",
+      "country": "Canada",
+      "noteDe": "Der Torontoer App-Publisher Kodeon kauft die Schlaf- und Meditations-App Breethe aus Montreal, seine bislang größte Übernahme; der Preis wurde nicht genannt, laut Breethe-Mitgründer liegt er im achtstelligen Bereich.",
       "acquirer": "Kodeon",
-      "status": "pending",
-      "reason": "new"
-    },
-    {
-      "date": "2026-08-19",
-      "entity": "LAC (V3 Group)",
-      "kind": "acquisition",
-      "amount": "",
-      "amountUsd": null,
-      "currency": null,
-      "approx": false,
-      "note": "acquired MASQUELIER'S® French Pine Bark Extract brand, expanding footprint into East Asia, the Middle East, and Africa",
-      "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNNXk3WHk2bVBUcmhGRVBENXRmcmREY0owdlFlWThXWWxyYUdxYy1fQV9LdkdkUW1La1JqTlp0REpkOTdTV2tRZ0lIRENxZjhOVS0xRWM0US0tUDZUdjdEdW9tU0tjRWItRmZCUFJKMUdIYVlFOW9NYVphVllsZFNKVGkxRVRia2pHZmlEU2JNanhPNnJNME9GSGtWem81SU9MY000aklRQm5fOHNrbTM5REUwTVNhWEdhTS1zM3B0WHY5c0syQmJaNS1Tb0R6dVpNblZjWDQ5Skk3cDVodlRZOElvQVgtc1h4OWNseExtdEY4ZlNMRnZXeVpnUWNvVnlpSDFwdWhUcElhNnV1b1l0YWlTUzE4cU5fNHNNbHFmaHFnaC05aHczSUprZ2ROQ0k3Rm1aRU54VElidkgtd1pwdEwxcTVnY0hEQk11RUVGX1Jydk1tZGc?oc=5",
-      "source": "media-outreach.com",
-      "issue": "/en/daily/2026-08-19",
-      "region": "Europe",
-      "category": "Other",
-      "id": "lac-acquisition-2026-08",
-      "reports": [
-        {
-          "date": "2026-08-19",
-          "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNNXk3WHk2bVBUcmhGRVBENXRmcmREY0owdlFlWThXWWxyYUdxYy1fQV9LdkdkUW1La1JqTlp0REpkOTdTV2tRZ0lIRENxZjhOVS0xRWM0US0tUDZUdjdEdW9tU0tjRWItRmZCUFJKMUdIYVlFOW9NYVphVllsZFNKVGkxRVRia2pHZmlEU2JNanhPNnJNME9GSGtWem81SU9MY000aklRQm5fOHNrbTM5REUwTVNhWEdhTS1zM3B0WHY5c0syQmJaNS1Tb0R6dVpNblZjWDQ5Skk3cDVodlRZOElvQVgtc1h4OWNseExtdEY4ZlNMRnZXeVpnUWNvVnlpSDFwdWhUcElhNnV1b1l0YWlTUzE4cU5fNHNNbHFmaHFnaC05aHczSUprZ2ROQ0k3Rm1aRU54VElidkgtd1pwdEwxcTVnY0hEQk11RUVGX1Jydk1tZGc?oc=5",
-          "issue": "/en/daily/2026-08-19"
-        }
-      ],
-      "country": "Netherlands",
-      "acquirer": "LAC (V3 Group)",
-      "status": "pending",
-      "reason": "new · may be off-topic"
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-08-18",
@@ -2082,6 +2063,34 @@
       ],
       "status": "hidden",
       "reason": "audit 2026-10-30: not a deal: IPO plan, no filing"
+    },
+    {
+      "date": "2026-08-18",
+      "entity": "LAC (V3 Group) / MASQUELIER'S",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Singapore supplement retailer LAC, part of V3 Group with more than 250 stores in Asia, completes its purchase of the MASQUELIER'S French Pine Bark Extract brand and its patented technology; terms undisclosed.",
+      "url": "https://www.malaymail.com/news/money/mediaoutreach/2026/08/18/v3-groups-health-and-wellness-supplements-brand-lac-acquires-masqueliers-french-pine-bark-extract-continues-business-expansion-across-east-asia-the-middle-east-and-africa/481560",
+      "source": "Media OutReach (V3 Group press release)",
+      "issue": "/en/daily/2026-08-19",
+      "region": "Europe",
+      "category": "Nutrition & supplements",
+      "id": "lac-acquisition-2026-08",
+      "reports": [
+        {
+          "date": "2026-08-19",
+          "url": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNNXk3WHk2bVBUcmhGRVBENXRmcmREY0owdlFlWThXWWxyYUdxYy1fQV9LdkdkUW1La1JqTlp0REpkOTdTV2tRZ0lIRENxZjhOVS0xRWM0US0tUDZUdjdEdW9tU0tjRWItRmZCUFJKMUdIYVlFOW9NYVphVllsZFNKVGkxRVRia2pHZmlEU2JNanhPNnJNME9GSGtWem81SU9MY000aklRQm5fOHNrbTM5REUwTVNhWEdhTS1zM3B0WHY5c0syQmJaNS1Tb0R6dVpNblZjWDQ5Skk3cDVodlRZOElvQVgtc1h4OWNseExtdEY4ZlNMRnZXeVpnUWNvVnlpSDFwdWhUcElhNnV1b1l0YWlTUzE4cU5fNHNNbHFmaHFnaC05aHczSUprZ2ROQ0k3Rm1aRU54VElidkgtd1pwdEwxcTVnY0hEQk11RUVGX1Jydk1tZGc?oc=5",
+          "issue": "/en/daily/2026-08-19"
+        }
+      ],
+      "country": "France",
+      "noteDe": "Der Singapurer Supplement-Händler LAC aus der V3 Group mit über 250 Filialen in Asien schließt den Kauf der Marke MASQUELIER'S French Pine Bark Extract samt patentierter Technologie ab; Konditionen nicht genannt.",
+      "acquirer": "LAC (V3 Group)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-08-17",
@@ -2342,8 +2351,8 @@
         }
       ],
       "country": "Hong Kong",
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: stale / not priced: F-1 filed Aug 2025; Aug 2026 was only an amended range ($4 to $6, 7M shares) with no pricing or listing date"
     },
     {
       "date": "2026-08-03",
@@ -2606,8 +2615,8 @@
         }
       ],
       "country": "Australia",
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: not a deal: '$60M' is the race's list-price value of free AI mindset coaching given to runners, not a valuation or transaction"
     },
     {
       "date": "2026-07-24",
@@ -2748,8 +2757,8 @@
         }
       ],
       "country": "United States",
-      "status": "pending",
-      "reason": "new"
+      "status": "hidden",
+      "reason": "review 2026-11-02: not a deal: franchise territory sales (200 territories, July 2026), not a funding round"
     },
     {
       "date": "2026-07-20",
@@ -2942,19 +2951,19 @@
       "reason": "audit 2026-10-30: facts corrected"
     },
     {
-      "date": "2026-07-03",
+      "date": "2026-07-02",
       "entity": "Heatronics",
       "kind": "raise",
       "amount": "Rs 1.8 crore",
       "amountUsd": 216000,
       "currency": "INR",
       "approx": false,
-      "note": "seed round led by Inflection Point Ventures to scale heat-based wellness devices",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNNTZsRkhxRzJBNTRXdk41d21LSG4xbi1GeU9jd3NjVnRQUnY0VjRXeGY3bEFaSTRJVmxXSGpzaUhISDNGM2ZOSHpfLVNkU1dlcVQ3MHVEM0ota0loTTExNTQycDBPYUFHdFdvemx5SlhiY3Vudzk0Y2lEOWpPSFA3TC1BVFk3NUM2YlpuQkthWHN2SnlMSUFIM1lEekZXQmd6VHdITmFkdGhTZ1VLVHQyNDc3RDNEdjNXQWpDQlBNdmprdnpHQ29GZmZGMVM0QQ?oc=5",
-      "source": "Siliconindia",
+      "note": "Pain management startup Heatronics, which makes hCore heat therapy devices at a Noida facility, raises Rs 1.8 crore in seed funding led by Inflection Point Ventures.",
+      "url": "https://indianretailer.com/news/funding-alert-heatronics-raises-rs-18-cr-seed-funding-led-inflection-point-ventures",
+      "source": "Indian Retailer",
       "issue": "/en/daily/2026-07-03",
       "region": "Asia-Pacific",
-      "category": "Other",
+      "category": "Health & longevity",
       "id": "heatronics-raise-2026-07",
       "reports": [
         {
@@ -2964,14 +2973,46 @@
         }
       ],
       "country": "India",
+      "noteDe": "Das Start-up Heatronics, das in Noida hCore-Wärmetherapiegeräte zur Schmerzlinderung herstellt, sammelt 1,8 Crore Rupien in einer Seed-Runde unter Führung von Inflection Point Ventures ein.",
       "investors": [
-        "Inflection Point Ventures"
+        "Inflection Point Ventures",
+        "Nitin Agarwal",
+        "Shivam Mishra"
       ],
       "leads": [
         "Inflection Point Ventures"
       ],
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-06-23",
+      "entity": "Daxko / FitnessForce",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Fitness software provider Daxko bought FitnessForce, a membership platform built for multi-location, franchise and international operators",
+      "noteDe": "Der Fitness-Softwareanbieter Daxko übernimmt FitnessForce, eine Mitgliederplattform für Ketten, Franchise- und internationale Betreiber",
+      "url": "https://insider.fitt.co/press-release/daxko-acquires-fitnessforce-broadening-its-global-fitness-software-portfolio/",
+      "source": "Daxko press release via Fitt Insider",
+      "issue": "",
+      "region": "Asia-Pacific",
+      "country": "India",
+      "category": "Software & AI",
+      "manual": true,
+      "id": "daxko-acquisition-2026-06",
+      "reports": [
+        {
+          "date": "2026-06-23",
+          "url": "https://insider.fitt.co/press-release/daxko-acquires-fitnessforce-broadening-its-global-fitness-software-portfolio/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Daxko",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-06-21",
@@ -2999,6 +3040,134 @@
       "acquirer": "Peloton",
       "status": "approved",
       "reason": "backfill review 2026-10-27"
+    },
+    {
+      "date": "2026-06-17",
+      "entity": "Clair Health",
+      "kind": "raise",
+      "amount": "$11.6M",
+      "amountUsd": 11600000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Startup building a noninvasive wearable that tracks women's hormones raised $11.6M led by Khosla Ventures and plans to ship units in November",
+      "noteDe": "Das Startup hinter einem nichtinvasiven Wearable, das Hormone von Frauen misst, sammelt 11,6 Mio. Dollar unter Führung von Khosla Ventures ein und will im November ausliefern",
+      "url": "https://techcrunch.com/2026/06/17/two-stanford-grads-raise-11m-to-build-a-noninvasive-wearable-for-hormone-tracking/",
+      "source": "TechCrunch",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Wearables & devices",
+      "manual": true,
+      "id": "clair-raise-2026-06",
+      "reports": [
+        {
+          "date": "2026-06-17",
+          "url": "https://techcrunch.com/2026/06/17/two-stanford-grads-raise-11m-to-build-a-noninvasive-wearable-for-hormone-tracking/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Khosla Ventures",
+        "a16z speedrun",
+        "Brydge Club",
+        "Treehub",
+        "Cartan Capital",
+        "AGI House",
+        "Insiders VC",
+        "Anne Wojcicki"
+      ],
+      "leads": [
+        "Khosla Ventures"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-06-03",
+      "entity": "Aligned Fitness / New Jersey Club Pilates studios",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Aligned Fitness bought six Club Pilates studios in central New Jersey from two sets of owners, entering the state and reaching 61 studios",
+      "noteDe": "Aligned Fitness kauft sechs Club-Pilates-Studios im Zentrum von New Jersey von zwei Betreibergruppen, steigt damit in den Bundesstaat ein und kommt auf 61 Studios",
+      "url": "https://clubsolutionsmagazine.com/2026/06/aligned-fitness-acquires-six-club-pilates-studios-expands-presence-into-new-jersey/",
+      "source": "Club Solutions",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "aligned-acquisition-2026-06",
+      "reports": [
+        {
+          "date": "2026-06-03",
+          "url": "https://clubsolutionsmagazine.com/2026/06/aligned-fitness-acquires-six-club-pilates-studios-expands-presence-into-new-jersey/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Aligned Fitness Holdings (Eagle Merchant Partners)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-06-01",
+      "entity": "Lactalis / Protein Works",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Lactalis bought Liverpool sports nutrition brand Protein Works for an undisclosed sum as YFM Equity Partners exited, keeping the brand identity",
+      "noteDe": "Lactalis kauft die Sportnahrungsmarke Protein Works aus Liverpool zu einem nicht genannten Preis, YFM Equity Partners steigt aus, die Marke bleibt erhalten",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/06/01/protein-works-acquired-by-lactalis/",
+      "source": "Food Manufacture",
+      "issue": "",
+      "region": "UK",
+      "country": "United Kingdom",
+      "category": "Nutrition & supplements",
+      "manual": true,
+      "id": "lactalis-acquisition-2026-06",
+      "reports": [
+        {
+          "date": "2026-06-01",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/06/01/protein-works-acquired-by-lactalis/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Lactalis",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-06-01",
+      "entity": "Applied Nutrition / Nutrablend",
+      "kind": "acquisition",
+      "amount": "$16M",
+      "amountUsd": 16000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Merseyside sports nutrition brand Applied Nutrition agreed a $16M deal for US manufacturer Nutrablend, including its New York state facility, to move US production to Buffalo",
+      "noteDe": "Die Sportnahrungsmarke Applied Nutrition aus Merseyside kauft den US-Hersteller Nutrablend für 16 Mio. Dollar samt Werk im Bundesstaat New York und verlagert die US-Produktion nach Buffalo",
+      "url": "https://www.foodmanufacture.co.uk/Article/2026/06/01/applied-nutrition-has-bought-a-us-sport-nutrition-firm/",
+      "source": "Food Manufacture",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Nutrition & supplements",
+      "manual": true,
+      "id": "applied-acquisition-2026-06",
+      "reports": [
+        {
+          "date": "2026-06-01",
+          "url": "https://www.foodmanufacture.co.uk/Article/2026/06/01/applied-nutrition-has-bought-a-us-sport-nutrition-firm/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Applied Nutrition",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-05-26",
@@ -3029,6 +3198,192 @@
       "reason": "closure research approved by Tee 2026-10-29"
     },
     {
+      "date": "2026-05-26",
+      "entity": "Lucis",
+      "kind": "raise",
+      "amount": "$20M",
+      "amountUsd": 20000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Preventive health platform that analyses 110+ blood biomarkers raised a $20M Series A and plans to enter Spain, Germany and Italy by the end of 2026",
+      "noteDe": "Die Präventionsplattform, die über 110 Blut-Biomarker auswertet, sammelt 20 Mio. Dollar in einer Series A ein und will bis Ende 2026 nach Spanien, Deutschland und Italien expandieren",
+      "url": "https://tech.eu/2026/05/26/lucis-raises-20m-series-a-to-expand-ai-driven-preventive-healthcare-platform/",
+      "source": "Tech.eu",
+      "issue": "",
+      "region": "Europe",
+      "country": "France",
+      "category": "Health & longevity",
+      "manual": true,
+      "id": "lucis-raise-2026-05",
+      "reports": [
+        {
+          "date": "2026-05-26",
+          "url": "https://tech.eu/2026/05/26/lucis-raises-20m-series-a-to-expand-ai-driven-preventive-healthcare-platform/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Singular",
+        "General Catalyst",
+        "Y Combinator"
+      ],
+      "leads": [
+        "Singular"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-05-20",
+      "entity": "Fitness Ventures / Harman Fitness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Fitness Ventures bought 22 Crunch Fitness locations in California and Texas from Harman Fitness, becoming the largest Crunch franchise operator with 115 locations",
+      "noteDe": "Fitness Ventures kauft 22 Crunch-Fitness-Standorte in Kalifornien und Texas von Harman Fitness und wird mit 115 Standorten größter Crunch-Franchisebetreiber",
+      "url": "https://clubsolutionsmagazine.com/2026/05/fitness-ventures-becomes-largest-operator-in-crunch-fitness-system-following-landmark-cquisition/",
+      "source": "Club Solutions",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "ventures-acquisition-2026-05",
+      "reports": [
+        {
+          "date": "2026-05-20",
+          "url": "https://clubsolutionsmagazine.com/2026/05/fitness-ventures-becomes-largest-operator-in-crunch-fitness-system-following-landmark-cquisition/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Fitness Ventures (Meaningful Partners)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-05-19",
+      "entity": "GymNation",
+      "kind": "raise",
+      "amount": "$100M",
+      "amountUsd": 100000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "UAE-founded gym chain GymNation secured a $100M private credit facility from HPS Investment Partners, part of BlackRock, to grow to 100+ sites and expand into Asia",
+      "noteDe": "Die in den VAE gegründete Fitnesskette GymNation sichert sich 100 Mio. Dollar Private Credit von HPS Investment Partners (BlackRock), um auf über 100 Standorte zu wachsen und nach Asien zu expandieren",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Gymnation-to-ramp-up-expansion-and-head-to-Asia-after-securing-US100-million/362964",
+      "source": "Health Club Management",
+      "issue": "",
+      "region": "Middle East",
+      "country": "United Arab Emirates",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "gymnation-raise-2026-05",
+      "reports": [
+        {
+          "date": "2026-05-19",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Gymnation-to-ramp-up-expansion-and-head-to-Asia-after-securing-US100-million/362964",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "HPS Investment Partners (BlackRock)"
+      ],
+      "leads": [
+        "HPS Investment Partners (BlackRock)"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-05-11",
+      "entity": "all inclusive Fitness / EASYFITNESS Bremen studios",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "all inclusive Fitness agreed to take over 18 studios around Bremen with more than 48,000 members, subject to regulatory approval",
+      "noteDe": "all inclusive Fitness übernimmt 18 Studios im Großraum Bremen mit mehr als 48.000 Mitgliedern, vorbehaltlich behördlicher Genehmigung",
+      "url": "https://www.fitnessmanagement.de/all-inclusive-fitness-uebernahme-18-studios-bremen/",
+      "source": "fitness MANAGEMENT",
+      "issue": "",
+      "region": "DACH",
+      "country": "Germany",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "all-acquisition-2026-05",
+      "reports": [
+        {
+          "date": "2026-05-11",
+          "url": "https://www.fitnessmanagement.de/all-inclusive-fitness-uebernahme-18-studios-bremen/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "all inclusive Fitness (Nord Holding)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-04-29",
+      "entity": "Zwift / Rouvy",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Indoor cycling platform Zwift bought Czech rival Rouvy, its biggest competitor, and both apps keep operating independently",
+      "noteDe": "Die Indoor-Cycling-Plattform Zwift übernimmt den tschechischen Rivalen Rouvy, ihren größten Konkurrenten; beide Apps laufen unabhängig weiter",
+      "url": "https://escapecollective.com/zwift-acquires-its-biggest-competitor-platform-rouvy/",
+      "source": "Escape Collective",
+      "issue": "",
+      "region": "Europe",
+      "country": "Czech Republic",
+      "category": "Software & AI",
+      "manual": true,
+      "id": "zwift-acquisition-2026-04",
+      "reports": [
+        {
+          "date": "2026-04-29",
+          "url": "https://escapecollective.com/zwift-acquires-its-biggest-competitor-platform-rouvy/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Zwift",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-04-28",
+      "entity": "Aligned Fitness / CAM Pilates",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Club Pilates franchisee Aligned Fitness bought Columbus, Ohio operator CAM Pilates and its six studios, reaching 55 studios",
+      "noteDe": "Der Club-Pilates-Franchisenehmer Aligned Fitness kauft CAM Pilates aus Columbus, Ohio, mit sechs Studios und kommt auf 55 Studios",
+      "url": "https://athletechnews.com/aligned-fitness-expands-club-pilates-footprint-to-55-locations-adding-6-ohio-studios/",
+      "source": "Athletech News",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "aligned-acquisition-2026-04",
+      "reports": [
+        {
+          "date": "2026-04-28",
+          "url": "https://athletechnews.com/aligned-fitness-expands-club-pilates-footprint-to-55-locations-adding-6-ohio-studios/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Aligned Fitness Holdings (Eagle Merchant Partners)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
       "date": "2026-04-27",
       "entity": "Escape Fitness (UK)",
       "kind": "shutdown",
@@ -3055,6 +3410,131 @@
       ],
       "status": "approved",
       "reason": "closure research approved by Tee 2026-10-29"
+    },
+    {
+      "date": "2026-04-16",
+      "entity": "Genesis Health Clubs / Wellbridge",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Genesis Health Clubs added nine clubs, Colorado Athletic Clubs and New Mexico Sports & Wellness, formerly Wellbridge, taking it to 86 clubs in 14 states",
+      "noteDe": "Genesis Health Clubs übernimmt neun Clubs, Colorado Athletic Clubs und New Mexico Sports & Wellness, früher Wellbridge, und betreibt damit 86 Clubs in 14 Bundesstaaten",
+      "url": "https://clubsolutionsmagazine.com/2026/04/genesis-health-clubs-acquires-wellbridge-expanding-its-western-footprint/",
+      "source": "Club Solutions",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "genesis-acquisition-2026-04",
+      "reports": [
+        {
+          "date": "2026-04-16",
+          "url": "https://clubsolutionsmagazine.com/2026/04/genesis-health-clubs-acquires-wellbridge-expanding-its-western-footprint/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Genesis Health Clubs",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-04-13",
+      "entity": "Ultralight",
+      "kind": "raise",
+      "amount": "$9.3M",
+      "amountUsd": 9300000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Ultralight, formerly Vibrant Practice, raised a $9.3M seed round for its AI-native software for functional, integrative and longevity practices",
+      "noteDe": "Ultralight, früher Vibrant Practice, sammelt 9,3 Mio. Dollar in einer Seed-Runde für seine KI-native Software für funktionelle, integrative und Longevity-Praxen ein",
+      "url": "https://insider.fitt.co/press-release/as-clinicians-leave-traditional-medicine-to-build-a-better-model-ultralight-raises-9-3m-to-power-what-comes-next/",
+      "source": "Ultralight press release via Fitt Insider",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Software & AI",
+      "manual": true,
+      "id": "ultralight-raise-2026-04",
+      "reports": [
+        {
+          "date": "2026-04-13",
+          "url": "https://insider.fitt.co/press-release/as-clinicians-leave-traditional-medicine-to-build-a-better-model-ultralight-raises-9-3m-to-power-what-comes-next/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "The General Partnership",
+        "Wisdom Ventures",
+        "Anthemis",
+        "Emerson Collective",
+        "GSBackers"
+      ],
+      "leads": [
+        "The General Partnership"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-04-10",
+      "entity": "Unilever / Grüns",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Unilever agreed to buy US greens supplement brand Grüns for undisclosed terms, with closing expected later in 2026",
+      "noteDe": "Unilever übernimmt die US-Greens-Supplementmarke Grüns zu nicht genannten Konditionen; der Abschluss wird im Laufe des Jahres 2026 erwartet",
+      "url": "https://www.foodnavigator.com/Article/2026/04/10/unilever-acquires-supplement-brand-gruns-expanding-health-and-wellbeing-portfolio/",
+      "source": "FoodNavigator",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Nutrition & supplements",
+      "manual": true,
+      "id": "unilever-acquisition-2026-04",
+      "reports": [
+        {
+          "date": "2026-04-10",
+          "url": "https://www.foodnavigator.com/Article/2026/04/10/unilever-acquires-supplement-brand-gruns-expanding-health-and-wellbeing-portfolio/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Unilever",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-04-02",
+      "entity": "Extraordinary Brands / Basecamp Fitness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "CycleBar and Rumble Boxing owner Extraordinary Brands bought HIIT franchise Basecamp Fitness from Purpose Brands and plans to invest in its technology and franchise development",
+      "noteDe": "Extraordinary Brands, Eigentümer von CycleBar und Rumble Boxing, kauft das HIIT-Franchise Basecamp Fitness von Purpose Brands und will in Technik und Franchise-Entwicklung investieren",
+      "url": "https://clubsolutionsmagazine.com/2026/04/extraordinary-brands-acquires-basecamp-fitness-from-purpose-brands/",
+      "source": "Club Solutions",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "extraordinary-acquisition-2026-04",
+      "reports": [
+        {
+          "date": "2026-04-02",
+          "url": "https://clubsolutionsmagazine.com/2026/04/extraordinary-brands-acquires-basecamp-fitness-from-purpose-brands/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Extraordinary Brands",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     },
     {
       "date": "2026-04-01",
@@ -3085,6 +3565,433 @@
       "reason": "closure research approved by Tee 2026-10-29"
     },
     {
+      "date": "2026-03-31",
+      "entity": "Whoop",
+      "kind": "raise",
+      "amount": "$575M",
+      "amountUsd": 575000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Boston wearable maker Whoop raises a $575M Series G at a $10.1B valuation led by Collaborative Fund, with QIA, Mubadala, Abbott and Mayo Clinic, after 2025 bookings grew 103 percent to a $1.1 billion run rate.",
+      "noteDe": "Der Bostoner Wearable-Hersteller Whoop sammelt 575 Mio. $ in einer Series G bei einer Bewertung von 10,1 Mrd. $ ein, angeführt von Collaborative Fund und mit QIA, Mubadala, Abbott und Mayo Clinic, nachdem die Buchungen 2025 um 103 Prozent auf eine Jahresrate von 1,1 Mrd. $ gestiegen waren.",
+      "url": "https://sgbonline.com/whoop-raises-575m-in-series-g-funding-round/",
+      "source": "SGB Media",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Wearables & devices",
+      "manual": true,
+      "id": "whoop-raise-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-31",
+          "url": "https://sgbonline.com/whoop-raises-575m-in-series-g-funding-round/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Collaborative Fund",
+        "2PointZero Group",
+        "Qatar Investment Authority",
+        "Mubadala Investment Company",
+        "Abbott",
+        "Mayo Clinic",
+        "Macquarie Capital",
+        "Glade Brook",
+        "B-Flexion",
+        "IVP",
+        "Foundry",
+        "Accomplice",
+        "Affinity Partners",
+        "Promus Ventures",
+        "Bullhound Capital"
+      ],
+      "leads": [
+        "Collaborative Fund"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-31",
+      "entity": "Flynn Group / Grand Fitness Partners",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Flynn Group bought Planet Fitness franchisee Grand Fitness Partners and its 98 clubs in five states, taking its Planet Fitness portfolio to 141 clubs in seven states",
+      "noteDe": "Flynn Group kauft den Planet-Fitness-Franchisenehmer Grand Fitness Partners mit 98 Clubs in fünf Bundesstaaten und kommt damit auf 141 Planet-Fitness-Clubs in sieben Bundesstaaten",
+      "url": "https://clubsolutionsmagazine.com/2026/03/flynn-group-acquires-grand-fitness-partners-adding-98-planet-fitness-clubs-to-its-portfolio/",
+      "source": "Club Solutions",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "flynn-acquisition-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-31",
+          "url": "https://clubsolutionsmagazine.com/2026/03/flynn-group-acquires-grand-fitness-partners-adding-98-planet-fitness-clubs-to-its-portfolio/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Flynn Group",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-26",
+      "entity": "Eversports / MATCHi Group",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Vienna studio software firm Eversports merged with Swedish racket-sports platform MATCHi Group, backed by Verdane, which has invested in both, linking 5,500+ studios and 3,500+ ball and racket sports venues.",
+      "noteDe": "Der Wiener Studio-Software-Anbieter Eversports fusioniert mit der schwedischen Racketsport-Plattform MATCHi Group, unterstützt von Verdane, das in beide investiert ist; zusammen sind über 5.500 Studios und mehr als 3.500 Ball- und Racketsport-Anlagen vernetzt.",
+      "url": "https://www.trendingtopics.eu/eversports-und-matchi-fusionieren-und-wollen-fuehrende-sport-plattform-europas-werden/",
+      "source": "Trending Topics",
+      "issue": "",
+      "region": "Europe",
+      "country": "Sweden",
+      "category": "Software & AI",
+      "manual": true,
+      "id": "eversports-acquisition-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-26",
+          "url": "https://www.trendingtopics.eu/eversports-und-matchi-fusionieren-und-wollen-fuehrende-sport-plattform-europas-werden/",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Eversports (merger, backed by Verdane)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-23",
+      "entity": "Danone / Huel",
+      "kind": "acquisition",
+      "amount": "close to €1 billion",
+      "amountUsd": 1080000000,
+      "currency": "EUR",
+      "approx": true,
+      "note": "Danone signed a definitive agreement to buy UK complete-nutrition and protein brand Huel, at close to €1 billion according to two sources cited by Reuters; Danone did not comment on the price.",
+      "noteDe": "Danone hat einen verbindlichen Vertrag zur Übernahme der britischen Komplettnahrungs- und Proteinmarke Huel unterzeichnet; laut zwei von Reuters zitierten Quellen liegt der Preis bei knapp 1 Mrd. Euro, Danone äußerte sich nicht dazu.",
+      "url": "https://www.checkout.ie/a-brands/danone-to-acquire-protein-products-maker-huel-for-almost-e1bn-224940",
+      "source": "Checkout (Reuters)",
+      "issue": "",
+      "region": "UK",
+      "country": "United Kingdom",
+      "category": "Nutrition & supplements",
+      "manual": true,
+      "id": "danone-acquisition-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-23",
+          "url": "https://www.checkout.ie/a-brands/danone-to-acquire-protein-products-maker-huel-for-almost-e1bn-224940",
+          "issue": ""
+        }
+      ],
+      "acquirer": "Danone",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-20",
+      "entity": "Ultrahuman",
+      "kind": "raise",
+      "amount": "₹400 crore",
+      "amountUsd": 48000000,
+      "currency": "INR",
+      "approx": false,
+      "note": "Bengaluru smart ring maker raised about ₹400 crore in a Series C to re-enter the US with a redesigned ring and build new wearables; investors were not disclosed.",
+      "noteDe": "Der Smart-Ring-Hersteller aus Bengaluru sammelt in einer Series C rund 400 Crore Rupien ein, um mit einem neu gestalteten Ring in die USA zurückzukehren und neue Wearables zu entwickeln; Investoren wurden nicht genannt.",
+      "url": "https://www.digitalhealthnews.com/ultrahuman-bags-inr-400-cr-in-series-c-funding-to-expand-global-wearables-biz",
+      "source": "Digital Health News",
+      "issue": "",
+      "region": "Asia-Pacific",
+      "country": "India",
+      "category": "Wearables & devices",
+      "manual": true,
+      "id": "ultrahuman-raise-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-20",
+          "url": "https://www.digitalhealthnews.com/ultrahuman-bags-inr-400-cr-in-series-c-funding-to-expand-global-wearables-biz",
+          "issue": ""
+        }
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-11",
+      "entity": "Fitura Brands",
+      "kind": "raise",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Salt Lake City franchisor for padel, athletic reformer Pilates and contrast therapy recovery launched after an initial financing round at a $20M pre-money valuation; the round size and investors were not disclosed.",
+      "noteDe": "Der Franchisegeber aus Salt Lake City für Padel, Athletic-Reformer-Pilates und Kontrasttherapie startet nach einer ersten Finanzierungsrunde mit 20 Mio. Dollar Pre-Money-Bewertung; Rundengröße und Investoren wurden nicht genannt.",
+      "url": "https://insider.fitt.co/press-release/fitura-brands-launches-20m-franchise-platform-across-padel-pilates-and-recovery/",
+      "source": "Fitura Brands press release via Fitt Insider",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "fitura-raise-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-11",
+          "url": "https://insider.fitt.co/press-release/fitura-brands-launches-20m-franchise-platform-across-padel-pilates-and-recovery/",
+          "issue": ""
+        }
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-09",
+      "entity": "Racquet 360",
+      "kind": "raise",
+      "amount": "$9M",
+      "amountUsd": 9000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Key Biscayne, Florida padel company behind the National Padel League, RacquetX, Racket Central and Racket Social Club raised $9M to grow padel in the US.",
+      "noteDe": "Das Padel-Unternehmen aus Key Biscayne, Florida, hinter National Padel League, RacquetX, Racket Central und Racket Social Club sammelt 9 Mio. Dollar für das Padel-Wachstum in den USA ein.",
+      "url": "https://refreshmiami.com/news/game-set-match-miami-startup-serves-9m-bet-on-padels-u-s-rise/",
+      "source": "Refresh Miami",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Other",
+      "manual": true,
+      "id": "racquet-raise-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-09",
+          "url": "https://refreshmiami.com/news/game-set-match-miami-startup-serves-9m-bet-on-padels-u-s-rise/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Sunrise Padel Capital",
+        "Profluence Capital",
+        "Taktika Equity"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-09",
+      "entity": "TMRW",
+      "kind": "raise",
+      "amount": "$7M",
+      "amountUsd": 7000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Sydney longevity platform founded by former iflix CEO Mark Britt raised about $7M in seed funding to expand its clinical footprint.",
+      "noteDe": "Die Longevity-Plattform aus Sydney von Ex-iflix-Chef Mark Britt sammelt rund 7 Mio. Dollar Seed-Kapital ein, um ihr Kliniknetz auszubauen.",
+      "url": "https://www.capitalbrief.com/article/longevity-play-tmrw-raises-7m-seed-round-from-tidal-and-inks-trudiagnostic-deal-8960189c-f6d4-4798-b0f8-9693292486a8/",
+      "source": "Capital Brief",
+      "issue": "",
+      "region": "Asia-Pacific",
+      "country": "Australia",
+      "category": "Health & longevity",
+      "manual": true,
+      "id": "tmrw-raise-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-09",
+          "url": "https://www.capitalbrief.com/article/longevity-play-tmrw-raises-7m-seed-round-from-tidal-and-inks-trudiagnostic-deal-8960189c-f6d4-4798-b0f8-9693292486a8/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Tidal Ventures",
+        "Capital Zed"
+      ],
+      "leads": [
+        "Tidal Ventures"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-03-04",
+      "entity": "Eight Sleep",
+      "kind": "raise",
+      "amount": "$50M",
+      "amountUsd": 50000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Sleep-tech maker raised $50M at a $1.5B valuation in a strategic round for new products, global expansion and clinical validation.",
+      "noteDe": "Der Sleep-Tech-Hersteller sammelt in einer strategischen Runde 50 Mio. Dollar bei 1,5 Mrd. Dollar Bewertung für neue Produkte, internationale Expansion und klinische Validierung ein.",
+      "url": "https://techcrunch.com/2026/03/04/eight-sleep-raises-50m-at-1-5b-valuation",
+      "source": "TechCrunch",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Wearables & devices",
+      "manual": true,
+      "id": "eight-raise-2026-03",
+      "reports": [
+        {
+          "date": "2026-03-04",
+          "url": "https://techcrunch.com/2026/03/04/eight-sleep-raises-50m-at-1-5b-valuation",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Tether Investments"
+      ],
+      "leads": [
+        "Tether Investments"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-02-27",
+      "entity": "David Lloyd Leisure / Aspria",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "TDR-owned David Lloyd Leisure, which already runs 40 clubs in continental Europe, is buying premium operator Aspria and its 10 sites in Germany, Belgium, Italy and Spain, pending German antitrust review.",
+      "noteDe": "Die zu TDR gehörende David Lloyd Leisure, die bereits 40 Clubs in Kontinentaleuropa betreibt, übernimmt den Premium-Betreiber Aspria mit 10 Standorten in Deutschland, Belgien, Italien und Spanien; die deutsche Kartellprüfung läuft noch.",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/David-Lloyd-Leisure-confirms-its-buying-Aspria/362504",
+      "source": "Health Club Management",
+      "issue": "",
+      "region": "Europe",
+      "country": "Belgium",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "david-acquisition-2026-02",
+      "reports": [
+        {
+          "date": "2026-02-27",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/David-Lloyd-Leisure-confirms-its-buying-Aspria/362504",
+          "issue": ""
+        }
+      ],
+      "acquirer": "David Lloyd Leisure (TDR Capital)",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-02-26",
+      "entity": "YOU(th)",
+      "kind": "raise",
+      "amount": "$4.5M",
+      "amountUsd": 4500000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Berlin startup whose smartphone check reads more than 50 digital biomarkers from inputs such as face videos, voice, eye and skin images raised $4.5M.",
+      "noteDe": "Das Berliner Startup, dessen Smartphone-Check aus Gesichtsvideos, Stimme, Augen- und Hautbildern über 50 digitale Biomarker auswertet, sammelt 4,5 Mio. Dollar ein.",
+      "url": "https://tech.eu/2026/02/26/youth-closes-45m-round-to-expand-digital-preventive-health/",
+      "source": "Tech.eu",
+      "issue": "",
+      "region": "DACH",
+      "country": "Germany",
+      "category": "Health & longevity",
+      "manual": true,
+      "id": "you-raise-2026-02",
+      "reports": [
+        {
+          "date": "2026-02-26",
+          "url": "https://tech.eu/2026/02/26/youth-closes-45m-round-to-expand-digital-preventive-health/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Callisto Health",
+        "caesar.",
+        "adesso Ventures",
+        "Antler",
+        "Moonstone",
+        "1024 Ventures"
+      ],
+      "leads": [
+        "Callisto Health"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-02-19",
+      "entity": "LifeFit Group / Just Fit",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Fitness First owner LifeFit Group agreed to buy Cologne-area chain Just Fit and its 21 studios, taking the group past 230 clubs, subject to antitrust approval.",
+      "noteDe": "Die Fitness-First-Mutter LifeFit Group übernimmt die Kette Just Fit aus dem Raum Köln mit 21 Studios und kommt damit auf über 230 Clubs; das Kartellamt muss noch zustimmen.",
+      "url": "https://www.lifefit-group.com/lifefit-group-expands-portfolio-with-acquisition-of-fitness-studio-chain-just-fit",
+      "source": "LifeFit Group",
+      "issue": "",
+      "region": "DACH",
+      "country": "Germany",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "lifefit-acquisition-2026-02",
+      "reports": [
+        {
+          "date": "2026-02-19",
+          "url": "https://www.lifefit-group.com/lifefit-group-expands-portfolio-with-acquisition-of-fitness-studio-chain-just-fit",
+          "issue": ""
+        }
+      ],
+      "acquirer": "LifeFit Group",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-02-11",
+      "entity": "Circle Health",
+      "kind": "raise",
+      "amount": "€9M",
+      "amountUsd": 9720000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "Berlin preventive health company closed a €9M seed round of equity and debt to build its AI platform and open hybrid clinics in cities including Munich, Hamburg and Düsseldorf.",
+      "noteDe": "Das Berliner Präventionsmedizin-Unternehmen schließt eine Seed-Runde über 9 Mio. Euro aus Eigen- und Fremdkapital ab, um seine KI-Plattform auszubauen und Hybrid-Kliniken unter anderem in München, Hamburg und Düsseldorf zu eröffnen.",
+      "url": "https://tech.eu/2026/02/11/circle-health-completes-eur9m-to-build-preventive-health-platform-using-ai/",
+      "source": "Tech.eu",
+      "issue": "",
+      "region": "DACH",
+      "country": "Germany",
+      "category": "Health & longevity",
+      "manual": true,
+      "id": "circle-raise-2026-02",
+      "reports": [
+        {
+          "date": "2026-02-11",
+          "url": "https://tech.eu/2026/02/11/circle-health-completes-eur9m-to-build-preventive-health-platform-using-ai/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Atlantic.vc",
+        "CRB Health Tech",
+        "Calm/Storm Ventures",
+        "Kfund"
+      ],
+      "leads": [
+        "Atlantic.vc"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
       "date": "2026-02-06",
       "entity": "Get Fit / orthofit",
       "kind": "shutdown",
@@ -3111,6 +4018,145 @@
       ],
       "status": "approved",
       "reason": "closure research approved by Tee 2026-10-29"
+    },
+    {
+      "date": "2026-02-04",
+      "entity": "Runeasi",
+      "kind": "raise",
+      "amount": "€1M",
+      "amountUsd": 1080000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "KU Leuven spin-off whose running and movement analysis tool serves physios, coaches and running stores raised €1M to expand internationally, with a focus on the US.",
+      "noteDe": "Die KU-Leuven-Ausgründung mit einem Tool zur Lauf- und Bewegungsanalyse für Physios, Coaches und Laufshops sammelt 1 Mio. Euro für die internationale Expansion ein, vor allem in den USA.",
+      "url": "https://tech.eu/2026/02/04/leuven-based-ai-running-analysis-platform-runeasi-raises-eur1m-for-global-growth/",
+      "source": "Tech.eu",
+      "issue": "",
+      "region": "Europe",
+      "country": "Belgium",
+      "category": "Software & AI",
+      "manual": true,
+      "id": "runeasi-raise-2026-02",
+      "reports": [
+        {
+          "date": "2026-02-04",
+          "url": "https://tech.eu/2026/02/04/leuven-based-ai-running-analysis-platform-runeasi-raises-eur1m-for-global-growth/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Smarter Ventures",
+        "Freshmen Fund",
+        "Gemma Frisius Fund",
+        "Sean Gourley"
+      ],
+      "leads": [
+        "Smarter Ventures"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-01-15",
+      "entity": "Playlist / EGYM",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Playlist, parent of Mindbody, ClassPass and Booker, agrees to merge with Munich smart gym and corporate wellness company EGYM in a deal valuing the combined enterprise at $7.5 billion, with $785 million of new equity led by Affinity Partners.",
+      "noteDe": "Playlist, die Muttergesellschaft von Mindbody, ClassPass und Booker, vereinbart die Fusion mit dem Münchner Smart-Gym- und Firmenfitness-Anbieter EGYM; das gemeinsame Unternehmen wird mit 7,5 Mrd. $ bewertet, dazu kommen 785 Mio. $ neues Eigenkapital unter Führung von Affinity Partners.",
+      "url": "https://www.healthandfitness.org/es/playlist-and-egym-announce-agreement-to-merge-and-785-million-in-new-equity-investments-bringing-together-global-leaders-in-fitness-and-wellness-technology/",
+      "source": "Health & Fitness Association (Playlist and EGYM joint press release)",
+      "issue": "",
+      "region": "DACH",
+      "country": "Germany",
+      "category": "Software & AI",
+      "manual": true,
+      "id": "playlist-acquisition-2026-01",
+      "reports": [
+        {
+          "date": "2026-01-15",
+          "url": "https://www.healthandfitness.org/es/playlist-and-egym-announce-agreement-to-merge-and-785-million-in-new-equity-investments-bringing-together-global-leaders-in-fitness-and-wellness-technology/",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Affinity Partners",
+        "Vista Equity Partners",
+        "Temasek",
+        "L Catterton"
+      ],
+      "leads": [
+        "Affinity Partners"
+      ],
+      "acquirer": "Playlist",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-01-08",
+      "entity": "Hapana",
+      "kind": "raise",
+      "amount": "$7.25M",
+      "amountUsd": 7250000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Sydney fitness management software maker for gyms, boutique studios and franchises raised $7.25M to launch its next-generation platform and grow globally.",
+      "noteDe": "Der Software-Anbieter aus Sydney für Gyms, Boutique-Studios und Franchises sammelt 7,25 Mio. Dollar für seine neue Plattformgeneration und internationales Wachstum ein.",
+      "url": "https://www.hapana.com/blog/hapana-raises-7-25m-platform-growth",
+      "source": "Hapana",
+      "issue": "",
+      "region": "Asia-Pacific",
+      "country": "Australia",
+      "category": "Software & AI",
+      "manual": true,
+      "id": "hapana-raise-2026-01",
+      "reports": [
+        {
+          "date": "2026-01-08",
+          "url": "https://www.hapana.com/blog/hapana-raises-7-25m-platform-growth",
+          "issue": ""
+        }
+      ],
+      "investors": [
+        "Microequities",
+        "OIF Ventures"
+      ],
+      "leads": [
+        "Microequities"
+      ],
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
+    },
+    {
+      "date": "2026-01-07",
+      "entity": "LongRange Capital / 24 Hour Fitness",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "LongRange Capital and founder Mark Mastrov acquired 24 Hour Fitness, with Mastrov returning as owner and executive chair and Karl Sanft staying on as president and CEO.",
+      "noteDe": "LongRange Capital und Gründer Mark Mastrov übernehmen 24 Hour Fitness; Mastrov kehrt als Eigentümer und Executive Chair zurück, Karl Sanft bleibt President und CEO.",
+      "url": "https://www.24hourfitness.com/content/dam/24-hour-fitness/company/newsroom/2026/24hf_transaction.pdf",
+      "source": "24 Hour Fitness",
+      "issue": "",
+      "region": "North America",
+      "country": "United States",
+      "category": "Gyms & studios",
+      "manual": true,
+      "id": "longrange-acquisition-2026-01",
+      "reports": [
+        {
+          "date": "2026-01-07",
+          "url": "https://www.24hourfitness.com/content/dam/24-hour-fitness/company/newsroom/2026/24hf_transaction.pdf",
+          "issue": ""
+        }
+      ],
+      "acquirer": "LongRange Capital and Mark Mastrov",
+      "status": "approved",
+      "reason": "review 2026-11-02: checked on the opened source page"
     }
   ]
 }
