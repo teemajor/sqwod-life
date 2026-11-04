@@ -1,7 +1,7 @@
 {
   "id": "deal-fund-acquisition-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "rejected",
   "title": "Xponential Fitness: acquisition",
   "dealId": "fund-acquisition-2026-11",
   "createdAt": "2026-11-02",
@@ -9,5 +9,6 @@
     "web check is only medium confidence",
     "not a completed deal (rumour)"
   ],
-  "checked": "medium"
+  "checked": "medium",
+  "decidedAt": "2026-11-04T08:18:24.975Z"
 }
