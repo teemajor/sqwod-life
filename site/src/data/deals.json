@@ -44,19 +44,19 @@
       "acquirer": "Kimberly-Clark",
       "noteDe": "Kimberly-Clark schloss die Übernahme von Kenvue für 48,7 Milliarden Dollar in bar und Aktien ab.",
       "checked": "high",
-      "status": "pending",
-      "reason": "new"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-03",
       "entity": "Equinox",
       "kind": "raise",
-      "amount": "$1B",
+      "amount": "more than $1 billion",
       "amountUsd": 1000000000,
       "currency": "USD",
       "approx": false,
-      "note": "Equinox completes refinancing freeing over $1 billion for club expansion and growth.",
-      "url": "https://clubsolutionsmagazine.com/2026/11/equinox-names-brendan-whitworth-as-ceo-and-announces-more-than-1-billion-in-planned-growth-investments/",
+      "note": "Equinox raises capital from existing investors to fund over $1 billion in planned growth investments.",
+      "url": "https://www.prnewswire.com/news-releases/equinox-appoints-brendan-whitworth-as-ceo-and-raises-capital-from-existing-investors-to-fund-more-than-1-billion-in-planned-growth-investments-302926873.html",
       "source": "Club Solutions",
       "issue": "/en/daily/2026-11-03",
       "region": "North America",
@@ -77,7 +77,7 @@
         "Sixth Street"
       ],
       "leads": [],
-      "noteDe": "Equinox schließt Refinanzierung ab und sichert sich über 1 Milliarde Dollar für Expansion.",
+      "noteDe": "Equinox beschafft Kapital von bestehenden Investoren für über 1 Milliarde Dollar geplante Wachstumsinvestitionen.",
       "checked": "high",
       "status": "pending",
       "reason": "queue: pending"
