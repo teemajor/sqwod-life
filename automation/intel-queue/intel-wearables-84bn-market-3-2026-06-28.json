@@ -14,7 +14,7 @@
   "kind": "review-due",
   "reliability": "Could not read the source automatically — verify by hand.",
   "recommendation": "Still supported by IDC Worldwide Quarterly Wearable Device Tracker (Sep 2024). Tap Keep as is.",
-  "status": "pending",
+  "status": "revise",
   "createdAt": "2026-06-28",
   "notes": [
     {
@@ -26,6 +26,10 @@
       "at": "2026-11-01T15:38:20.992Z",
       "text": "if you cant find a figure, then we cant make the claim",
       "appliedAt": "2026-11-01T15:43:25.106Z"
+    },
+    {
+      "at": "2026-11-04T08:18:01.195Z",
+      "text": "Fix it"
     }
   ],
   "foundUrl": "https://www.businesswire.com/news/home/20240926999979/en/IDC-Forecasts-Continued-Growth-for-Wearables-But-Growth-Will-Be-Uneven-Across-Product-Categories",
