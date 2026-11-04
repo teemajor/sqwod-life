@@ -1,0 +1,13 @@
+{
+  "id": "deal-kimberly-acquisition-2026-11",
+  "kind": "deal",
+  "status": "pending",
+  "title": "Kenvue: acquisition $48.7 billion",
+  "dealId": "kimberly-acquisition-2026-11",
+  "createdAt": "2026-11-04",
+  "flags": [
+    "stored amount looks like a valuation figure, not the deal size",
+    "old news: first announced 2025-11-02"
+  ],
+  "checked": "high"
+}

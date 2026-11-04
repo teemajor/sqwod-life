@@ -108,5 +108,25 @@
     "primarySource": true,
     "confidence": "high",
     "checkedAt": "2026-11-03"
+  },
+  "kimberly-acquisition-2026-11": {
+    "id": "kimberly-acquisition-2026-11",
+    "company": "Kenvue",
+    "dealCountry": "United States",
+    "category": "Health & longevity",
+    "relevant": true,
+    "oneLineEn": "Kimberly-Clark completed its $48.7 billion cash-and-stock acquisition of consumer health company Kenvue.",
+    "oneLineDe": "Kimberly-Clark schloss die Übernahme von Kenvue für 48,7 Milliarden Dollar in bar und Aktien ab.",
+    "amount": "$48.7 billion",
+    "amountIs": "valuation",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "Kimberly-Clark",
+    "announcedOn": "2025-11-02",
+    "dealStatus": "done",
+    "url": "https://www.investor.kimberly-clark.com/news-releases/news-release-details/kimberly-clark-completes-acquisition-kenvue-creating-preeminent",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-04"
   }
 }

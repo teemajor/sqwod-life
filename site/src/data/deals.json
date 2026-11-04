@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03",
+  "generatedAt": "2026-11-04",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,35 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-04",
+      "entity": "Kenvue",
+      "kind": "acquisition",
+      "amount": "$48.7 billion",
+      "amountUsd": 48700000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Kimberly-Clark completed its $48.7 billion cash-and-stock acquisition of consumer health company Kenvue.",
+      "url": "https://www.personalcareinsights.com/news/kimberly-clark-kenvue-acquisition-complete.html",
+      "source": "Personal Care Insights",
+      "issue": "/en/daily/2026-11-04",
+      "region": "North America",
+      "category": "Health & longevity",
+      "id": "kimberly-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-04",
+          "url": "https://www.personalcareinsights.com/news/kimberly-clark-kenvue-acquisition-complete.html",
+          "issue": "/en/daily/2026-11-04"
+        }
+      ],
+      "country": "United States",
+      "acquirer": "Kimberly-Clark",
+      "noteDe": "Kimberly-Clark schloss die Übernahme von Kenvue für 48,7 Milliarden Dollar in bar und Aktien ab.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-03",
       "entity": "Equinox",
@@ -51,7 +80,7 @@
       "noteDe": "Equinox schließt Refinanzierung ab und sichert sich über 1 Milliarde Dollar für Expansion.",
       "checked": "high",
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-02",
