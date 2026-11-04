@@ -1,7 +1,7 @@
 {
   "id": "deal-equinox-raise-2026-11",
   "kind": "deal",
-  "status": "revise",
+  "status": "pending",
   "title": "Equinox: raise $1B",
   "dealId": "equinox-raise-2026-11",
   "createdAt": "2026-11-03",
@@ -12,7 +12,12 @@
   "notes": [
     {
       "at": "2026-11-04T08:19:26.530Z",
-      "text": "Reframe as what it is and not a “raise”"
+      "text": "Reframe as what it is and not a “raise”",
+      "appliedAt": "2026-11-04T08:26:31.935Z"
     }
-  ]
+  ],
+  "revisions": 1,
+  "revisedAt": "2026-11-04T08:26:31.935Z",
+  "lastChange": "Corrected amount to company's stated 'more than $1 billion'; reframed note around the raise (not the refinancing); swapped URL to the primary PR Newswire press release; corrected date to November 2 per the official announcement.",
+  "unresolved": ""
 }
