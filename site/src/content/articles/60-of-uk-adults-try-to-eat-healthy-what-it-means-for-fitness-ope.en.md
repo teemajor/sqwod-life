@@ -3,7 +3,7 @@ urlSlug: 60-of-uk-adults-try-to-eat-healthy-what-it-means-for-fitness-ope
 lang: en
 counterpart: 60-of-uk-adults-try-to-eat-healthy-what-it-means-for-fitness-ope
 title: "60% of UK Adults Try to Eat Healthy: What It Means for Fitness Operators"
-description: "Six in ten UK adults aged 18-64 actively try to eat healthy, yet 57% follow no structured nutrition rules and 28% are eating less healthily to save money — a gap that hands fitness operators a direct commercial mandate to fill. Studios and gyms that embed nutrition guidance into their offer will capture members that generic wellness brands cannot reach. A living Sqwod Intelligence report."
+description: "Six in ten UK adults aged 18-64 actively try to eat healthy, yet 57% follow no structured nutrition rules and 28% are eating less healthily to save money. That gap hands fitness operators a direct commercial mandate to fill. Studios and gyms that embed nutrition guidance into their offer will capture members that generic wellness brands cannot reach. A living Sqwod Intelligence report."
 pillar: signal
 type: market-data
 format: report
@@ -14,11 +14,11 @@ asOf: "2026-11-04"
 author: "Sqwod Intelligence"
 gated: true
 takeaways:
-  - "60% of UK adults actively try to eat healthy, but 57% follow no structured nutrition rules — intent without a system is your acquisition hook."
+  - "60% of UK adults actively try to eat healthy, but 57% follow no structured nutrition rules. Intent without a system is your acquisition hook."
   - "28% of UK consumers are eating less healthily to save money, meaning cost is now a direct competitor to your nutrition programming."
   - "Baby boomers are the most health-motivated generation at 65%, yet the fitness industry consistently under-serves them."
-  - "The UK vitamins and minerals market hit £492 million in retail sales in 2023 — a partnership and retail revenue line most studios ignore."
-  - "UK plant-based food market is projected to reach USD 1,084.4 million by 2034 at a 10.41% CAGR — menu and retail decisions made now will compound."
+  - "The UK vitamins and minerals market hit £492 million in retail sales in 2023: a partnership and retail revenue line most studios ignore."
+  - "UK plant-based food market is projected to reach USD 1,084.4 million by 2034 at a 10.41% CAGR, so menu and retail decisions made now will compound."
   - "Meat substitute per-capita consumption has plateaued at 0.91 kg from 2024 through 2029, signalling that the easy flexitarian growth wave is over."
 figures:
   - { label: "Adults actively trying to eat healthy (UK, 18-64)", value: "60%", note: "April 2023 to March 2024, 4,030 respondents", source: "Statista Consumer Insights", url: "https://www.statista.com/study/39785/" }
@@ -41,7 +41,7 @@ charts:
     categories: ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029"]
     series:
       - { name: "", points: [0.17,0.25,0.43,0.54,0.6,0.67,0.75,0.83,0.91,1.02,1.12] }
-    note: "Revenue more than triples from $0.17bn in 2019 to a projected $1.12bn in 2029 — the steepest sustained curve in UK alternative food."
+    note: "Revenue more than triples from $0.17bn in 2019 to a projected $1.12bn in 2029: the steepest sustained curve in UK alternative food."
     source: "Statista; Statista Consumer Market Insights via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "UK Meat Substitutes Market Revenue 2019-2029"
@@ -50,7 +50,7 @@ charts:
     categories: ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029"]
     series:
       - { name: "", points: [409.1,568.8,715.03,691.2,697.09,727.19,742.92,759.49,776.07,796.06,824.45] }
-    note: "Revenue peaked at $715m in 2021, fell back, and is forecast to recover slowly to $824m by 2029 — the hype cycle is visible in the data."
+    note: "Revenue peaked at $715m in 2021, fell back, and is forecast to recover slowly to $824m by 2029. The hype cycle is visible in the data."
     source: "Statista; Statista Consumer Market Insights via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "UK Vitamins & Minerals Retail Sales 2009-2023"
@@ -68,7 +68,7 @@ charts:
     categories: ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029"]
     series:
       - { name: "", points: [0.7,0.85,1.05,0.94,0.9,0.91,0.91,0.91,0.91,0.91,0.91] }
-    note: "Consumption peaked at 1.05 kg in 2021, fell to 0.90 kg by 2023, and is forecast flat at 0.91 kg through 2029 — flexitarian excitement has plateaued."
+    note: "Consumption peaked at 1.05 kg in 2021, fell to 0.90 kg by 2023, and is forecast flat at 0.91 kg through 2029. Flexitarian excitement has plateaued."
     source: "Statista; Statista Consumer Market Insights via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Share Following Flexitarian Diet in GB 2019-2024"
@@ -77,7 +77,7 @@ charts:
     categories: ["Jul 2019","Jan 2020","Jul 2020","Jan 2021","Jul 2021","Jan 2022","Jul 2022","Jan 2023","Jul 2023","Jan 2024"]
     series:
       - { name: "", points: [0.13,0.15,0.13,0.14,0.14,0.16,0.16,0.14,0.14,0.13] }
-    note: "Flexitarian share has been range-bound between 13% and 16% since 2019 — meaningful but not growing, which challenges bullish plant-based forecasts."
+    note: "Flexitarian share has been range-bound between 13% and 16% since 2019: meaningful but not growing, which challenges bullish plant-based forecasts."
     source: "YouGov via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Adults Actively Trying to Eat Healthy, by Generation"
@@ -86,7 +86,7 @@ charts:
     categories: ["Gen Z","Millennials","Generation X","Baby boomer"]
     series:
       - { name: "", points: [0.57,0.62,0.62,0.65] }
-    note: "Baby boomers lead at 65%; Gen Z trail at 57% — the most health-motivated cohort is also the most financially stable and most underserved by fitness."
+    note: "Baby boomers lead at 65%; Gen Z trail at 57%. Boomers, the most health-motivated cohort, are also the most financially stable and most underserved by fitness."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Cost-of-Living Impact on Healthy Eating 2023"
@@ -95,7 +95,7 @@ charts:
     categories: ["No impact on healthy eating habits","Eating less healthily to save money","Eating more ready meals and processed foods","More aware of health as cannot afford to get sick","Cooking less because of the cost of ingredients","Eating less healthily due to stress","Taking more packed lunches to work","Working more hours so less time to cook healthily"]
     series:
       - { name: "", points: [0.31,0.28,0.19,0.18,0.17,0.15,0.15,0.13] }
-    note: "31% report no impact; 28% are eating less healthily to save money — a near-even split that defines the two buyer personas operators must address."
+    note: "31% report no impact; 28% are eating less healthily to save money: a near-even split that defines the two buyer personas operators must address."
     source: "BBC; Censuswide; The Guardian Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Diets and Nutrition Rules Followed in UK 2024"
@@ -104,7 +104,7 @@ charts:
     categories: ["Flexitarian (mostly plant-based foods while occasionally allowing meat and fish)","Low-carb / no carb","Lactose-free (i.e., dairy products that do not contain lactose)","Gluten-free (i.e., no wheat products)","Vegetarian (not eating animal products, e.g., meat, poultry, fish, but eating animal-derived products, e.g., eggs, dairy products)","Pescetarian (eating fish, but not eating meat or poultry)","Vegan (not eating animal products or animal-derived products, e.g., meat, poultry, fish, eggs, or dairy products)","I don't follow any nutrition rules","Other"]
     series:
       - { name: "", points: [0.13,0.12,0.08,0.07,0.07,0.04,0.03,0.57,0.04] }
-    note: "57% follow no nutrition rules at all — the largest single segment, and the most commercially accessible one for a coach or studio."
+    note: "57% follow no nutrition rules at all: the largest single segment, and the most commercially accessible one for a coach or studio."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Attitudes Towards Food in UK 2024"
@@ -113,7 +113,7 @@ charts:
     categories: ["I actively try to eat healthy","I try to avoid plastic packaging when buying food","I avoid artificial flavors and preservatives","I try to eat less meat","Food must be convenient and fast","I do not enjoy cooking","I am open to eating meat that was grown in a lab (cultured meat)","I can't afford to eat healthily","I have one or more food intolerances","None of the above"]
     series:
       - { name: "", points: [0.6,0.3,0.27,0.27,0.25,0.17,0.16,0.14,0.13,0.08] }
-    note: "Healthy eating intent (60%) dwarfs every other attitude — including affordability concern (14%) and cooking aversion (17%)."
+    note: "Healthy eating intent (60%) dwarfs every other attitude, including affordability concern (14%) and cooking aversion (17%)."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Food Attitudes by Gender, UK 2023"
@@ -136,15 +136,15 @@ benchmark:
   median: 43
   medianLabel: "Share following no nutrition rules in the UK adult population (100% minus 57%)"
   bands:
-    - { to: 15, label: "Most members unguided — large revenue and retention gap to close" }
-    - { to: 30, label: "Below average structured engagement — nutrition programming has clear room to grow" }
-    - { to: 43, label: "Around national average — competitive but not differentiated" }
+    - { to: 15, label: "Most members unguided: large revenue and retention gap to close" }
+    - { to: 30, label: "Below average structured engagement: nutrition programming has clear room to grow" }
+    - { to: 43, label: "Around national average: competitive but not differentiated" }
   source: "Statista Consumer Insights"
 playbook:
-  - { move: "Launch a low-cost nutrition audit offer targeting the 57% with no structured diet plan", why: "Statista data (chart 5) shows 57% of UK adults follow no nutrition rules — your membership almost certainly reflects this. A simple intake assessment converts a passive member into a coached one and opens upsell to programming." }
+  - { move: "Launch a low-cost nutrition audit offer targeting the 57% with no structured diet plan", why: "Statista data (chart 5) shows 57% of UK adults follow no nutrition rules, and your membership almost certainly reflects this. A simple intake assessment converts a passive member into a coached one and opens upsell to programming." }
   - { move: "Build a boomer-specific nutrition and performance track priced at a premium", why: "Baby boomers are the most health-motivated generation at 65% (chart 9), are more financially insulated from the cost-of-living squeeze than younger cohorts, and are systematically ignored by most fitness marketing." }
   - { move: "Add a vitamins and minerals retail line or affiliate partnership to your front-of-house", why: "The UK vitamins and minerals retail market reached £492 million in 2023 (chart 24) and has grown every year since 2020. Members who trust their coach are your highest-conversion retail channel." }
-  - { move: "Position any plant-based menu or retail offer around milk substitutes rather than meat substitutes", why: "Milk substitute market revenue is forecast to grow from $0.60bn in 2023 to $1.12bn in 2029 (chart 15). Meat substitute per-capita consumption is flat at 0.91 kg through 2029 (chart 22) — the growth curve has shifted." }
+  - { move: "Position any plant-based menu or retail offer around milk substitutes rather than meat substitutes", why: "Milk substitute market revenue is forecast to grow from $0.60bn in 2023 to $1.12bn in 2029 (chart 15). Meat substitute per-capita consumption is flat at 0.91 kg through 2029 (chart 22). The growth curve has shifted." }
   - { move: "Create an explicit 'eat healthy on a budget' content and programming pillar", why: "28% of UK consumers are eating less healthily to save money (chart 3). Operators who address affordability directly retain the members most at risk of churn and differentiate from premium-only competitors." }
   - { move: "Align coaching language with the free-from and clean-label signals members already use at retail", why: "31% of UK shoppers check free-range labels and 27% check low-sugar labels when buying groceries (chart 2). Coaches who speak this language reduce friction between what members already believe and what they do inside your studio." }
 sources:
@@ -161,7 +161,7 @@ changelog:
   - { date: "2026-11-04", note: "First publish. Figures from the chart data of Statista study 39785 plus 8 newer public sources. Reviewed before publishing." }
 hero:
   kind: bars
-  stat: "60% want healthy eating — 57% have no plan"
+  stat: "60% want healthy eating, 57% have no plan"
   statLabel: "The intent-action gap operators can own"
 tags: ["nutrition","uk-market","consumer-behaviour","plant-based","supplements"]
 ---

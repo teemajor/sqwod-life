@@ -120,6 +120,18 @@ export function noEmDash(t) {
   return s.replace(/,\s*,/g, ',').replace(/:\s*:/g, ':');
 }
 
+/** A whole markdown file, line by line (Nov 2026: a flagship report published 18 em dashes in its
+ *  frontmatter, which the body-only clean-up missed, and check:dashes failed every build).
+ *  A lone "—" in a table cell is a "no data" mark and is kept. */
+export function noEmDashDoc(t) {
+  return String(t ?? '').split('\n').map((line) => {
+    if (!line.includes('—')) return line;
+    const cells = [];
+    const kept = line.replace(/\|\s*—\s*(?=\|)/g, (m) => { cells.push(m); return `|\u0000${cells.length - 1}\u0000`; });
+    return noEmDash(kept).replace(/\|\u0000(\d+)\u0000/g, (m, i) => cells[+i]);
+  }).join('\n');
+}
+
 // ------------------------------------------------------------- 6. gear rec
 const STOP = new Set(['this', 'that', 'with', 'from', 'your', 'their', 'into', 'have', 'will', 'more', 'than', 'what', 'when', 'which', 'about', 'review', 'best', 'price', 'test', 'fitness', 'coach', 'coaches', 'studio', 'daily', 'sqwod', 'über', 'eine', 'einen', 'nicht', 'oder', 'auch', 'sind', 'wird', 'mehr']);
 const toks = (s) => new Set(String(s || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9äöüß\s]/g, ' ').split(/\s+/).filter((w) => w.length >= 4 && !STOP.has(w)));

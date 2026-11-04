@@ -18,7 +18,7 @@ import { execSync } from 'node:child_process';
 import { createHmac } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
-import { phraseProblems } from './quality.mjs';
+import { phraseProblems, noEmDashDoc } from './quality.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -110,7 +110,7 @@ function apply() {
     const files = ['en', 'de'].map((l) => join(DRAFTS, `${p.slug}.${l}.md`)).filter(existsSync);
     if (p.status === 'approved' && files.length) {
       for (const src of files) {
-        const t = readFileSync(src, 'utf8').replace(/^publishedAt: .*$/m, `publishedAt: ${today}`).replace(/^updatedAt: .*$/m, `updatedAt: ${today}`)
+        const t = noEmDashDoc(readFileSync(src, 'utf8')).replace(/^publishedAt: .*$/m, `publishedAt: ${today}`).replace(/^updatedAt: .*$/m, `updatedAt: ${today}`)
           .replace(/^asOf: .*$/m, `asOf: ${JSON.stringify(today)}`).replace(/^author: .*$/m, `author: ${JSON.stringify(EDITOR)}`);
         writeFileSync(join(ARTICLES, src.split('/').pop()), t);
         mkdirSync(join(DRAFTS, '_published'), { recursive: true }); renameSync(src, join(DRAFTS, '_published', src.split('/').pop()));

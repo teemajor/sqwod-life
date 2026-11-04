@@ -22,6 +22,7 @@
  *      INTEL_SIGNING_SECRET, INTEL_WORKER_URL, SQWOD_MODEL (default claude-sonnet-4-6)
  */
 import { readFileSync, readdirSync, writeFileSync, existsSync, mkdirSync, renameSync } from 'node:fs';
+import { noEmDashDoc } from './quality.mjs';
 import { createHmac } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, join, basename } from 'node:path';
@@ -299,6 +300,9 @@ ${warn}
 }
 
 // ---------- 6. apply approved / archive rejected ----------
+// House style: no em dashes in published copy (site/scripts/check-dashes.mjs fails the build on them).
+// The body is cleaned when it is written, but the frontmatter (description, takeaways, chart notes,
+// stat, moves) comes from separate model calls, so the whole file is cleaned again on publish.
 function apply() {
   if (!existsSync(QUEUE)) { console.log('No queue.'); return; }
   const log = readLog(); let n = 0;
@@ -308,7 +312,7 @@ function apply() {
     if (p.status === 'approved') {
       if (!existsSync(en) || !existsSync(de)) { console.log(`! ${p.slug}: draft files missing, cannot publish`); continue; }
       for (const [src, lang] of [[en, 'en'], [de, 'de']]) {
-        let t = readFileSync(src, 'utf8');
+        let t = noEmDashDoc(readFileSync(src, 'utf8'));
         t = t.replace(/^draft: true.*\n/m, '').replace(/^publishedAt: .*$/m, `publishedAt: ${today}`).replace(/^updatedAt: .*$/m, `updatedAt: ${today}`).replace(/^asOf: .*$/m, `asOf: ${q(today)}`)
           .replace(/^(changelog:\n  - \{ date: )"[^"]*"/m, `$1${q(today)}`);
         writeFileSync(join(ARTICLES, `${p.slug}.${lang}.md`), t);
