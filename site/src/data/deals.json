@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04",
+  "generatedAt": "2026-11-05",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,40 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-05",
+      "entity": "OBSESS",
+      "kind": "raise",
+      "amount": "$316K",
+      "amountUsd": 316000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Noida fitness platform OBSESS raised an angel round of approximately Rs 3 crore.",
+      "url": "https://app.dealroom.co/news/note/india-s-obsess-raises-316k-to-unify-a-fragmented-fitness-market",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-11-05",
+      "region": "Asia-Pacific",
+      "category": "Software & AI",
+      "id": "obsess-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-05",
+          "url": "https://app.dealroom.co/news/note/india-s-obsess-raises-316k-to-unify-a-fragmented-fitness-market",
+          "issue": "/en/daily/2026-11-05"
+        }
+      ],
+      "country": "India",
+      "investors": [
+        "Pushpendra Singh",
+        "Amit Goel",
+        "Harshit Vij"
+      ],
+      "leads": [],
+      "noteDe": "Noidaer Fitness-Plattform OBSESS sammelte eine Angel-Runde von rund 3 Crore Rupien ein.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-04",
       "entity": "Kenvue",

@@ -128,5 +128,29 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-04"
+  },
+  "obsess-raise-2026-11": {
+    "id": "obsess-raise-2026-11",
+    "company": "OBSESS",
+    "dealCountry": "India",
+    "category": "Software & AI",
+    "relevant": true,
+    "oneLineEn": "Noida fitness platform OBSESS raised an angel round of approximately Rs 3 crore.",
+    "oneLineDe": "Noidaer Fitness-Plattform OBSESS sammelte eine Angel-Runde von rund 3 Crore Rupien ein.",
+    "amount": "approximately Rs 3 crore",
+    "amountIs": "estimate",
+    "investors": [
+      "Pushpendra Singh",
+      "Amit Goel",
+      "Harshit Vij"
+    ],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-02",
+    "dealStatus": "done",
+    "url": "https://entrackr.com/snippets/fitness-platform-obsess-raises-rs-3-cr-in-angel-round-12775998",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-05"
   }
 }
