@@ -1,88 +1,5 @@
 [
   {
-    "date": "2026-10-14",
-    "key": "pulse fitness eyes 134m in revenue targets us market with in",
-    "tokens": [
-      "pulse",
-      "eyes",
-      "134m",
-      "revenue",
-      "targets",
-      "market",
-      "inclusive",
-      "equipment"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "key": "indias the stack raises 227m to expand supplements line",
-    "tokens": [
-      "india",
-      "stack",
-      "raises",
-      "expand",
-      "supplements",
-      "line"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "key": "fitness coach identifies home gym equipment waste risks",
-    "tokens": [
-      "coach",
-      "identifies",
-      "home",
-      "equipment",
-      "waste",
-      "risks"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "key": "olympian andrew steeles stride raises 46m for preventive hea",
-    "tokens": [
-      "olympian",
-      "andrew",
-      "steele",
-      "stride",
-      "raises",
-      "preventive",
-      "health"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "key": "is planet fitness plnt a bargain on its revenue beat and mem",
-    "tokens": [
-      "planet",
-      "plnt",
-      "bargain",
-      "revenue",
-      "beat",
-      "member",
-      "growth",
-      "update"
-    ],
-    "entities": [
-      "Planet Fitness"
-    ]
-  },
-  {
-    "date": "2026-10-14",
-    "key": "nihr funds 19 projects to embed preventive health technology",
-    "tokens": [
-      "nihr",
-      "funds",
-      "projects",
-      "embed",
-      "preventive",
-      "health",
-      "technology",
-      "community",
-      "care"
-    ]
-  },
-  {
     "date": "2026-10-15",
     "key": "puregym acquires nonstop and becomes largest lowcost gym ope",
     "tokens": [
@@ -1370,6 +1287,80 @@
       "together",
       "london",
       "thames"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "key": "athx games unveils usa vs europe competition",
+    "tokens": [
+      "athx",
+      "games",
+      "unveils",
+      "europe",
+      "competition"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "key": "longtime versaclimber executives become majority owners of i",
+    "tokens": [
+      "longtime",
+      "versaclimber",
+      "executives",
+      "become",
+      "majority",
+      "owners",
+      "iconic",
+      "brand"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "key": "aufruf zur teilnahme an der eckdatenstudie",
+    "tokens": [
+      "aufruf",
+      "teilnahme",
+      "eckdatenstudie"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "key": "apple fitness adds progressive strength coaching",
+    "tokens": [
+      "apple",
+      "adds",
+      "progressive",
+      "strength",
+      "coaching"
+    ]
+  },
+  {
+    "date": "2026-11-05",
+    "key": "indias obsess raises 316k to unify a fragmented fitness mark",
+    "tokens": [
+      "india",
+      "obsess",
+      "raises",
+      "316k",
+      "unify",
+      "fragmented",
+      "market"
+    ],
+    "deal": "$316k"
+  },
+  {
+    "date": "2026-11-05",
+    "key": "pilates boom fuels 72 surge in boutique studio openings data",
+    "tokens": [
+      "pilates",
+      "boom",
+      "fuels",
+      "surge",
+      "boutique",
+      "studio",
+      "openings",
+      "data",
+      "shows"
     ]
   }
 ]
