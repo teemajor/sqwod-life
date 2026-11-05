@@ -1,11 +1,11 @@
 {
- "startedAt": "2026-10-31T13:30:28.122Z",
+ "startedAt": "2026-11-05T21:38:17.336Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
    "enabled": true,
-   "fetched": 233,
-   "kept": 180,
+   "fetched": 286,
+   "kept": 232,
    "diag": {
     "tried": [
      {
@@ -17,116 +17,48 @@
        "size",
        "facetten"
       ],
-      "maxErgebnisse": 62,
+      "maxErgebnisse": 64,
       "items": 50,
       "sample": {
        "stellenangebotsart": "ARBEIT",
-       "stellenangebotsTitel": "Fitnesstrainer (m/w/d)",
-       "arbeitszeitTeilzeitAbend": true,
-       "arbeitszeitTeilzeitNachmittag": true,
-       "arbeitszeitTeilzeitVormittag": true,
+       "stellenangebotsTitel": "Fitnesstrainer/in",
+       "arbeitszeitSchichtNachtWochenende": false,
+       "arbeitszeitTeilzeitAbend": false,
+       "arbeitszeitTeilzeitNachmittag": false,
+       "arbeitszeitTeilzeitVormittag": false,
+       "arbeitszeitTeilzeitFlexibel": false,
        "arbeitszeitVollzeit": true,
        "eintrittszeitraum": {
-        "von": "2026-10-31"
+        "von": "2027-01-04"
        },
-       "verguetungsangabe": "KEINE_ANGABEN",
+       "verguetungsangabe": "JAHRESGEHALT",
+       "artDerVerguetung": "GEHALTSSPANNE",
+       "gehaltsspanneVon": 20000,
+       "gehaltsspanneBis": 30000,
        "vertragsdauer": "UNBEFRISTET",
        "stellenlokationen": [
         {
          "adresse": {
-          "strasse": "Rodinger Straße 22",
-          "adresszusatz": "Fitnesspoint Cham",
-          "plz": "93413",
-          "ort": "Cham, Oberpfalz",
-          "region": "BAYERN",
+          "strasse": "Berliner Str.",
+          "hausnummer": "8a",
+          "plz": "15537",
+          "ort": "Erkner",
+          "region": "BRANDENBURG",
           "land": "DEUTSCHLAND"
          },
-         "breite": 49.20344044500007,
-         "laenge": 12.656930714000055
-        },
-        {
-         "adresse": {
-          "strasse": "Allersbergerstraße",
-          "hausnummer": "26",
-          "adresszusatz": "Fitnesspoint Hilpoltstein",
-          "plz": "91161",
-          "ort": "Hilpoltstein, Mittelfranken",
-          "region": "BAYERN",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 49.197240882000074,
-         "laenge": 11.187779594000062
-        },
-        {
-         "adresse": {
-          "strasse": "Eschenweg 2",
-          "adresszusatz": "Fitnesspoint Pfarrkirchen",
-          "plz": "84347",
-          "ort": "Pfarrkirchen, Niederbayern",
-          "region": "BAYERN",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 48.42892451700004,
-         "laenge": 12.944821192000063
-        },
-        {
-         "adresse": {
-          "strasse": "Im Gewerbepark D 09",
-          "adresszusatz": "Fitnesspoint Regensburg",
-          "plz": "93059",
-          "ort": "Regensburg",
-          "region": "BAYERN",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 49.03049628100007,
-         "laenge": 12.129351241000052
-        },
-        {
-         "adresse": {
-          "strasse": "Hansastraße 5",
-          "adresszusatz": "Fitnesspoint Schwabach",
-          "plz": "91126",
-          "ort": "Schwabach",
-          "region": "BAYERN",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 49.32170599600005,
-         "laenge": 11.057846796000092
-        },
-        {
-         "adresse": {
-          "strasse": "Innere Frühlingstraße 43",
-          "adresszusatz": "Body-Gym Straubing",
-          "plz": "94315",
-          "ort": "Straubing",
-          "region": "BAYERN",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 48.87790856300006,
-         "laenge": 12.578383694000081
-        },
-        {
-         "adresse": {
-          "strasse": "Am Ziegelfeld 1",
-          "adresszusatz": "Fitnesspoint Vilshofen",
-          "plz": "94474",
-          "ort": "Vilshofen an der Donau",
-          "region": "BAYERN",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 48.616393567000046,
-         "laenge": 13.17795252500008
+         "breite": 52.427961,
+         "laenge": 13.744998
         }
        ],
        "veroeffentlichungszeitraum": {
-        "von": "2026-10-31"
+        "von": "2026-11-05"
        },
-       "datumErsteVeroeffentlichung": "2026-10-31",
-       "aenderungsdatum": "2026-10-31T10:31:43.141",
+       "datumErsteVeroeffentlichung": "2026-11-05",
+       "aenderungsdatum": "2026-11-05T16:50:41.829",
        "hauptberuf": "Fitnesstrainer/in",
-       "firma": "INJOY International Sports- an d Wellnessclubs",
-       "arbeitgeberKundennummerHash": "gZ0EdVQcflqLi_DIlSDcmifYYIWajHrSuReroArxbwI=",
-       "referenznummer": "10001-1003943373-S",
+       "firma": "av Fitness UG (haftungsbeschränkt)",
+       "arbeitgeberKundennummerHash": "mpAzuGjRk_BdwTDGXxkbcTLyMt6CBB2gVC0spUbJt8s=",
+       "referenznummer": "10001-1003972103-S",
        "alleBerufe": [
         "Fitnesstrainer/in"
        ]
@@ -137,12 +69,17 @@
     "itemKeys": [
      "stellenangebotsart",
      "stellenangebotsTitel",
+     "arbeitszeitSchichtNachtWochenende",
      "arbeitszeitTeilzeitAbend",
      "arbeitszeitTeilzeitNachmittag",
      "arbeitszeitTeilzeitVormittag",
+     "arbeitszeitTeilzeitFlexibel",
      "arbeitszeitVollzeit",
      "eintrittszeitraum",
      "verguetungsangabe",
+     "artDerVerguetung",
+     "gehaltsspanneVon",
+     "gehaltsspanneBis",
      "vertragsdauer",
      "stellenlokationen",
      "veroeffentlichungszeitraum",
@@ -155,21 +92,20 @@
      "alleBerufe"
     ],
     "pay": {
-     "KEINE_ANGABEN": 209,
-     "JAHRESGEHALT": 10,
-     "STUNDENLOHN": 14
+     "JAHRESGEHALT": 26,
+     "KEINE_ANGABEN": 239,
+     "STUNDENLOHN": 21
     },
     "detail": {
-     "wanted": 12,
-     "fetched": 12,
-     "withFigure": 12,
+     "wanted": 20,
+     "fetched": 20,
+     "withFigure": 20,
      "textOnly": 0,
      "failed": 0,
      "path": "/pc/v4/jobdetails/",
      "sampleKeys": [
       "stellenangebotsart",
       "stellenangebotsTitel",
-      "quereinstiegGeeignet",
       "stellenangebotsBeschreibung",
       "arbeitszeitSchichtNachtWochenende",
       "arbeitszeitTeilzeitAbend",
@@ -183,45 +119,38 @@
       "gehaltsspanneVon",
       "gehaltsspanneBis",
       "vertragsdauer",
-      "istGeringfuegigeBeschaeftigung",
-      "istBehinderungGefordert",
       "stellenlokationen",
-      "homeofficemoeglich",
-      "istPrivateArbeitsvermittlung",
-      "istArbeitnehmerUeberlassung",
       "veroeffentlichungszeitraum",
       "datumErsteVeroeffentlichung",
       "aenderungsdatum",
-      "externeURL",
       "istBetreut",
       "hauptberuf",
-      "alternativBeruf1",
-      "alternativBeruf2",
       "firma",
+      "arbeitgeberKundennummerHash",
       "allianzpartnerUrl",
       "allianzpartnerName",
       "referenznummer"
      ],
      "samples": [
-      "26.000 € – 34.000 € / Jahr (Arbeitsagentur)",
+      "20.000 € – 30.000 € / Jahr (Arbeitsagentur)",
+      "26.400 € – 41.000 € / Jahr (Arbeitsagentur)",
       "36.000 € – 45.000 € / Jahr (Arbeitsagentur)",
-      "17 € – 18 € / Std. (Arbeitsagentur)",
-      "65.000 € – 80.000 € / Jahr (Arbeitsagentur)",
-      "18,5 € – 20,5 € / Std. (Arbeitsagentur)",
-      "15,33 € / Std. (Arbeitsagentur)"
+      "42.250 € / Jahr (Arbeitsagentur)",
+      "85.000 € – 95.000 € / Jahr (Arbeitsagentur)",
+      "21,24 € / Std. (Arbeitsagentur)"
      ]
     }
    }
   },
   "adzuna": {
    "enabled": true,
-   "fetched": 435,
-   "kept": 308
+   "fetched": 337,
+   "kept": 204
   },
   "career-page": {
    "enabled": true,
-   "fetched": 1,
-   "kept": 1
+   "fetched": 0,
+   "kept": 0
   },
   "dssv": {
    "enabled": true,
@@ -249,12 +178,12 @@
  },
  "hosts": {
   "rest.arbeitsagentur.de": {
-   "requests": 50,
+   "requests": 58,
    "failures": 0,
    "errors": []
   },
   "api.adzuna.com": {
-   "requests": 14,
+   "requests": 13,
    "failures": 0,
    "errors": []
   },
@@ -347,12 +276,14 @@
   },
   "myequilibria.com": {
    "requests": 1,
-   "failures": 0,
-   "errors": []
+   "failures": 1,
+   "errors": [
+    "HTTP 404 /careers"
+   ]
   },
   "boards-api.greenhouse.io": {
    "requests": 29,
-   "failures": 12,
+   "failures": 13,
    "errors": [
     "HTTP 404 /v1/boards/calibratecareers/jobs",
     "HTTP 404 /v1/boards/embed/jobs",
@@ -363,7 +294,8 @@
     "HTTP 404 /v1/boards/embed/jobs",
     "HTTP 404 /v1/boards/embed/jobs",
     "HTTP 404 /v1/boards/embed/jobs",
-    "HTTP 404 /v1/boards/embed/jobs"
+    "HTTP 404 /v1/boards/embed/jobs",
+    "HTTP 404 /v1/boards/urbansportsclub/jobs"
    ]
   },
   "www.pvolve.com": {
@@ -468,9 +400,8 @@
   },
   "api.lever.co": {
    "requests": 8,
-   "failures": 2,
+   "failures": 1,
    "errors": [
-    "timeout",
     "HTTP 404 /v0/postings/interaxon"
    ]
   },
@@ -802,18 +733,18 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 489,
-  "unique": 276,
-  "withPay": 25
+  "fetchedAfterGate": 436,
+  "unique": 236,
+  "withPay": 34
  },
  "summary": {
-  "live": 279,
-  "newThisWeek": 279,
-  "withPay": 25,
-  "newWithPay": 25,
-  "hostsFailed": 2,
+  "live": 367,
+  "newThisWeek": 367,
+  "withPay": 47,
+  "newWithPay": 47,
+  "hostsFailed": 3,
   "sourcesFailed": []
  },
- "finishedAt": "2026-10-31T13:34:13.709Z",
- "payLinesAppended": 0
+ "finishedAt": "2026-11-05T21:44:23.253Z",
+ "payLinesAppended": 22
 }
