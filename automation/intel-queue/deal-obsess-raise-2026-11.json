@@ -1,12 +1,13 @@
 {
   "id": "deal-obsess-raise-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "approved",
   "title": "OBSESS: raise $316K",
   "dealId": "obsess-raise-2026-11",
   "createdAt": "2026-11-05",
   "flags": [
     "stored amount looks like a estimate figure, not the deal size"
   ],
-  "checked": "high"
+  "checked": "high",
+  "decidedAt": "2026-11-06T16:55:50.265Z"
 }
