@@ -10,7 +10,7 @@ type: market-data
 format: report
 conversion: sqwod-os
 publishedAt: 2026-06-12
-updatedAt: 2026-11-01
+updatedAt: 2026-11-06
 asOf: Okt 2026
 author: "Sqwod Intelligence"
 gated: false
@@ -25,7 +25,7 @@ figures:
   - { label: "Digitale Fitness- & Wellbeing-Geräte, weltweit", value: "89,0 Mrd. $", note: "2026: Smartwatches 55,2 Mrd. $ + Fitnessbänder 29,4 Mrd. $ + smarte Waagen 4,5 Mrd. $; 103 Mrd. $ bis 2028", source: "Statista Digital Market Insights", url: "https://www.statista.com/study/166600/wearables-in-the-united-states/" }
   - { label: "Weltweit ausgelieferte Wearables", value: "614 Mio.", note: "Prognose 2026, von 560 Mio. in 2024; ~3,6% pro Jahr auf 646 Mio. in 2028", source: "IDC via Statista", url: "https://www.statista.com/study/166600/wearables-in-the-united-states/" }
   - { label: "Ehemalige Besitzer, die ihr Wearable nicht mehr nutzen", value: "44%", note: "US-Erwachsene: 34% besitzen und nutzen, 15% besitzen ohne Nutzung, 12% besaßen früher eines; 27 von 61 Ehemals-Besitzern sind abgesprungen", source: "YouGov via Statista, Juni 2023", url: "https://www.statista.com/study/166600/wearables-in-the-united-states/" }
-  - { label: "US-Smartwatch-Umsatz pro Nutzer", value: "1,8 million units (more than doubling from ~850,000 in 2023, i.e. ≈2×)", note: "Prognose 2028, von 264 $ in 2020; Nutzer flach bei ~43 Mio., der Preis ist die ganze Wachstumsstory", source: "Statista Digital Market Insights", url: "https://www.statista.com/study/166600/wearables-in-the-united-states/" }
+  - { label: "US-Smartwatch-Umsatz pro Nutzer", value: "~+112% (850,000 units in 2023 → 1,8 million in 2024; described as 'more than doubling')", note: "Prognose 2028, von 264 $ in 2020; Nutzer flach bei ~43 Mio., der Preis ist die ganze Wachstumsstory", source: "Omdia 2025", url: "https://omdia.tech.informa.com/blogs/2025/nov/empowering-the-health-and-fitness-ecosystem-with-smart-rings" }
   - { label: "Ausgelieferte Smart Rings, 2025", value: "4,3 Mio.", note: "+49% zum Vorjahr; Smartwatches 163 Mio., +6%", source: "IDC via Bloomberg, Jan 2026", url: "https://www.pymnts.com/news/wearables/2026/smart-ring-shipments-projected-to-jump-49percent/" }
   - { label: "Deutschland: verkaufte Wearables, 2023", value: "5,88 Mio.", note: "20% unter dem Höchststand von 7,36 Mio. in 2021, während der Umsatz bei 1,45 Mrd. € blieb: weniger, teurere Geräte", source: "GfK / gfu via Statista", url: "https://www.statista.com/study/67457/fitness-industry-in-germany/" }
 series:
@@ -195,6 +195,7 @@ hero:
   statLabel: "derer, die je ein Wearable gekauft haben, nutzen es nicht mehr"
   chart: 0
 changelog:
+  - { date: "2026-11-06", note: "\"Smart-ring shipment growth, 2024\" ersetzt: +88% (Grand View Research) → ~+112% (850,000 units in 2023 → 1,8 million in 2024; described as 'more than doubling') (Omdia 2025); Quelle aktualisiert (freigegeben)." }
   - { date: "2026-11-01", note: "\"Smart-ring shipments, 2024\" aktualisiert: ≈2× → 1,8 million units (more than doubling from ~850,000 in 2023, i.e. ≈2×) laut Omdia (freigegeben)." }
   - { date: "21. Juni 2026", note: "IDC-Auslieferungsprognose und Smart-Ring-Wachstumszahl ergänzt." }
   - { date: "28. Juni 2026", note: "Integritätsprüfung: Markt-Topline auf GMInsights' 91,1 Mrd. $ (2026) korrigiert: Die früheren ~96 Mrd. $ waren durch keine benannte Quelle gestützt. Auslieferungen auf IDCs Prognose vom Sept. 2024 (612,5 Mio. bis 2028) aktualisiert und die Smartwatch-Umsatzzahl durch Statistas aktuelle Reihe ersetzt. Jede Zahl nennt jetzt eine Quelle mit eigener Zahl." }

@@ -14,7 +14,7 @@
   "kind": "changed",
   "reliability": "Could not read the source automatically — verify by hand.",
   "recommendation": "Claude checked this after your note. Publish updates the report in EN and DE.",
-  "status": "replace-approved",
+  "status": "applied",
   "createdAt": "2026-06-28",
   "notes": [
     {
@@ -41,5 +41,6 @@
   "revisedAt": "2026-11-04T08:24:58.042Z",
   "lastChange": "The +88% figure could not be confirmed on the cited Grand View Research page (which now covers revenue CAGR, not a shipment-growth percentage); the best available named-source figure is Omdia's 'more than doubling' (≈+112%) for 2024 smart-ring shipments.",
   "unresolved": "Grand View Research's cited page (grandviewresearch.com/industry-analysis/smart-rings-market-report) no longer surfaces a shipment-growth percentage in its publicly visible content, so the original +88% source cannot be verified or traced; no other reputable source reproduces the +88% figure.",
-  "decidedAt": "2026-11-06T16:54:40.528Z"
+  "decidedAt": "2026-11-06T16:54:40.528Z",
+  "appliedAt": "2026-11-06"
 }
