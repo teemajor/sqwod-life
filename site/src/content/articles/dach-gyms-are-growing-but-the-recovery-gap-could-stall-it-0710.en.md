@@ -11,11 +11,14 @@ type: trends
 format: analysis
 conversion: pods
 publishedAt: 2026-07-10
-updatedAt: 2026-07-10
-asOf: "2026-07-10"
+updatedAt: 2026-11-06
+asOf: "2026-11-06"
 author: "Sqwod"
 gated: false
+changelog:
+  - { date: "6 Nov 2026", note: "Added the published DACH and Germany figures (DSSV Eckdaten 2026) and a link to the Germany Fitness Market 2026 report." }
 sources:
+  - { label: "DSSV: Eckdaten der deutschen Fitnesswirtschaft 2026 (press release, 18 Mar 2026)", url: "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf" }
   - { label: "DSSV", url: "https://www.dssv.de/eckdaten-dach-webinar-2026/" }
   - { label: "DSSV", url: "https://www.dssv.de/dach-studie-2026-fintesswirtchaft-waechst-weiter/" }
   - { label: "Global Wellness Institute", url: "https://globalwellnessinstitute.org/wellnessevidence/contrast-hydrotherapy/" }
@@ -26,7 +29,7 @@ tags: []
 
 ## The Good News Has a Hidden Problem
 
-The DACH fitness market is growing. The DSSV just dropped its 2026 industry figures, and the headline is hard to argue with: membership numbers are up, studios are expanding, and the business of getting people moving is genuinely healthy.
+The DACH fitness market is growing. The DSSV just dropped its 2026 industry figures, and the headline is hard to argue with: 15.16 million members across 12,495 facilities in the three countries, Germany alone at 12.36 million members (+5.6%) and 6.25 billion euros in net revenue (+7.4%) at the end of 2025. Studios are expanding, and the business of getting people moving is genuinely healthy. The full German picture, including prices by segment, is in our [Germany Fitness Market 2026](/en/intelligence/germany-fitness-market-2026/) report.
 
 But here's the trap inside every growth story, when the market expands fast, the operators who survive the next contraction are the ones who built something stickier than a treadmill and a locker room. Right now, most DACH gyms are competing on floor space and price. That's a race to the bottom with a very predictable finish line.
 

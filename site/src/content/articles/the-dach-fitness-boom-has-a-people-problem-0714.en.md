@@ -11,11 +11,14 @@ type: trends
 format: analysis
 conversion: pods
 publishedAt: 2026-07-14
-updatedAt: 2026-07-14
-asOf: "2026-07-14"
+updatedAt: 2026-11-06
+asOf: "2026-11-06"
 author: "Sqwod"
 gated: false
+changelog:
+  - { date: "6 Nov 2026", note: "Added the published DACH and Germany figures (DSSV Eckdaten 2026) and a link to the Germany Fitness Market 2026 report." }
 sources:
+  - { label: "DSSV: Eckdaten der deutschen Fitnesswirtschaft 2026 (press release, 18 Mar 2026)", url: "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf" }
   - { label: "DSSV", url: "https://www.dssv.de/eckdaten-dach-webinar-2026/" }
   - { label: "Trainingsworld", url: "https://www.trainingsworld.com/european-champion-lars-springer/" }
   - { label: "DSSV", url: "https://www.dssv.de/dach-studie-2026-fintesswirtchaft-waechst-weiter/" }
@@ -26,7 +29,7 @@ tags: []
 
 ## Everyone's Opening. Almost Nobody's Standing Out.
 
-The DACH fitness market is growing. The DSSV made that official with their freshly released *Eckdaten der Fitnesswirtschaft DACH 2026*: the sector is expanding, studios are multiplying, and consumer demand for structured training isn't cooling off. Great news, right?
+The DACH fitness market is growing. The DSSV made that official with their freshly released *Eckdaten der Fitnesswirtschaft DACH 2026*: 15.16 million members across 12,495 facilities in Germany, Austria and Switzerland, with Germany alone at 12.36 million members (+5.6%) and 6.25 billion euros in net revenue (+7.4%) at the end of 2025. The sector is expanding, studios are multiplying, and consumer demand for structured training isn't cooling off. The full numbers, prices and chain shares are in our [Germany Fitness Market 2026](/en/intelligence/germany-fitness-market-2026/) report. Great news, right?
 
 Sure. Until you realize that a rising tide also lifts every competitor on your street. When the market grows and every operator benefits equally, growth stops being your moat. It becomes the floor. And if every studio in your city is posting the same reformer Pilates reels and the same protein-shake partnerships, you have a volume problem disguised as a marketing problem.
 

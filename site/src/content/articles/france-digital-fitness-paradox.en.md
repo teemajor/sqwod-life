@@ -10,8 +10,8 @@ type: market-data
 format: report
 conversion: sqwod-os
 publishedAt: 2026-10-24
-updatedAt: 2026-10-24
-asOf: Oct 2026
+updatedAt: 2026-11-06
+asOf: Nov 2026
 author: "Sqwod Intelligence"
 gated: true
 sources:
@@ -42,6 +42,7 @@ playbook:
   - { move: "Sell flexibility as a feature.", why: "31% of home exercisers choose home because they can train whenever they want. Hybrid packages (in-person plus remote programming) meet that need without discounting." }
   - { move: "Never compete on price with the budget chains.", why: "Basic-Fit runs 780 clubs in France, its biggest market. Compete on outcomes, accountability and community, the things a low-cost box does not offer." }
 changelog:
+  - { date: "6 Nov 2026", note: "Added the 2025 Germany comparison (DSSV Eckdaten 2026) and a link to the Germany Fitness Market 2026 report. The 2022 Deloitte / EuropeActive figures stay as the like-for-like comparison." }
   - { date: "24 Oct 2026", note: "First publish. Every figure rebuilt by hand from the chart data in Statista study 86331 (replaces an earlier auto-draft whose figures were misread)." }
 hero:
   kind: bars
@@ -68,7 +69,7 @@ A July 2023 CRÉDOC survey adds context: **35% of French people already use conn
 
 France is a thinner market for traditional fitness than its neighbours. In 2022 it had **4.7M gym members, less than half of Germany (10.3M) or the UK (10.4M)**, and **gym penetration of 10%**, against 12% in Germany, 16% in the UK and 21% in Sweden (Deloitte / EuropeActive).
 
-Revenue follows: **the French fitness industry turned over about €1.6bn in 2022, versus €4.9bn in Germany and €5bn in the UK.** And the price anchor is low. **Basic-Fit runs 780 clubs in France**, its largest market, compared with 12 in Germany.
+Revenue follows: **the French fitness industry turned over about €1.6bn in 2022, versus €4.9bn in Germany and €5bn in the UK.** Germany has since pulled further ahead: 12.36 million members and €6.25bn net revenue at the end of 2025 (DSSV), see our [Germany Fitness Market 2026](/en/intelligence/germany-fitness-market-2026/) report. And the price anchor is low. **Basic-Fit runs 780 clubs in France**, its largest market, compared with 12 in Germany.
 
 So the French customer is surrounded by free apps and cheap gyms. Any paid offer has to justify itself against both.
 

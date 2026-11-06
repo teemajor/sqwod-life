@@ -11,11 +11,14 @@ type: trends
 format: analysis
 conversion: pods
 publishedAt: 2026-07-10
-updatedAt: 2026-07-10
-asOf: "2026-07-10"
+updatedAt: 2026-11-06
+asOf: "2026-11-06"
 author: "Sqwod"
 gated: false
+changelog:
+  - { date: "6. Nov. 2026", note: "Veröffentlichte DACH- und Deutschland-Zahlen (DSSV Eckdaten 2026) ergänzt und auf den Report Fitnessmarkt Deutschland 2026 verlinkt." }
 sources:
+  - { label: "DSSV: Eckdaten der deutschen Fitnesswirtschaft 2026 (Pressemitteilung, 18.03.2026)", url: "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf" }
   - { label: "DSSV", url: "https://www.dssv.de/eckdaten-dach-webinar-2026/" }
   - { label: "DSSV", url: "https://www.dssv.de/dach-studie-2026-fintesswirtchaft-waechst-weiter/" }
   - { label: "Global Wellness Institute", url: "https://globalwellnessinstitute.org/wellnessevidence/contrast-hydrotherapy/" }
@@ -26,7 +29,7 @@ tags: []
 
 ## Das Problem: Alle wachsen, keiner fällt auf
 
-Der DSSV hat es schwarz auf weiß: Die Fitnesswirtschaft im DACH-Raum wächst weiter. Mitglieder kommen zurück, Umsätze steigen, die Branche atmet durch. Soweit, so gut. Aber hier liegt die Falle: Wenn alle gleichzeitig wachsen, verschwindet der Unterschied zwischen den Anbietern. Wachstum ist kein Alleinstellungsmerkmal – es ist das Mindeste. Wer heute nicht aktiv in Differenzierung investiert, reitet eine Welle, die irgendwann bricht. Und dann steht man da ohne Story, ohne Loyalität, ohne Schutzwall gegen den nächsten Discount-Anbieter um die Ecke.
+Der DSSV hat es schwarz auf weiß: Die Fitnesswirtschaft im DACH-Raum wächst weiter, auf 15,16 Millionen Mitglieder in 12.495 Anlagen, davon allein in Deutschland 12,36 Millionen Mitglieder (+5,6 %) und 6,25 Milliarden Euro Nettoumsatz (+7,4 %) zum Jahresende 2025. Mitglieder kommen zurück, Umsätze steigen, die Branche atmet durch. Das komplette Deutschland-Bild mit Preisen nach Segment steht in unserem Report [Fitnessmarkt Deutschland 2026](/de/intelligence/germany-fitness-market-2026/). Soweit, so gut. Aber hier liegt die Falle: Wenn alle gleichzeitig wachsen, verschwindet der Unterschied zwischen den Anbietern. Wachstum ist kein Alleinstellungsmerkmal – es ist das Mindeste. Wer heute nicht aktiv in Differenzierung investiert, reitet eine Welle, die irgendwann bricht. Und dann steht man da ohne Story, ohne Loyalität, ohne Schutzwall gegen den nächsten Discount-Anbieter um die Ecke.
 
 ## Was wirklich passiert: Die Lücke zwischen Zahlen und Erlebnis
 

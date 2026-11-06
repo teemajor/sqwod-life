@@ -11,11 +11,14 @@ type: trends
 format: analysis
 conversion: pods
 publishedAt: 2026-07-14
-updatedAt: 2026-07-14
-asOf: "2026-07-14"
+updatedAt: 2026-11-06
+asOf: "2026-11-06"
 author: "Sqwod"
 gated: false
+changelog:
+  - { date: "6. Nov. 2026", note: "Veröffentlichte DACH- und Deutschland-Zahlen (DSSV Eckdaten 2026) ergänzt und auf den Report Fitnessmarkt Deutschland 2026 verlinkt." }
 sources:
+  - { label: "DSSV: Eckdaten der deutschen Fitnesswirtschaft 2026 (Pressemitteilung, 18.03.2026)", url: "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf" }
   - { label: "DSSV", url: "https://www.dssv.de/eckdaten-dach-webinar-2026/" }
   - { label: "Trainingsworld", url: "https://www.trainingsworld.com/european-champion-lars-springer/" }
   - { label: "DSSV", url: "https://www.dssv.de/dach-studie-2026-fintesswirtchaft-waechst-weiter/" }
@@ -32,7 +35,7 @@ Die Branche wächst. Und gleichzeitig steigen die Erwartungen der Mitglieder, de
 
 ## Was hinter den Eckdaten steckt
 
-Der DSSV hat auf der Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026 ein klares Bild gezeichnet: Die Branche ist robust. Mitgliederzahlen steigen, Studios expandieren, die gesellschaftliche Relevanz von organisiertem Sport ist ungebrochen. Das ist keine Selbstverständlichkeit – andere Konsumbereiche kämpfen mit Kaufzurückhaltung.
+Der DSSV hat auf der Vorstellung der Eckdaten der Fitnesswirtschaft DACH 2026 ein klares Bild gezeichnet: 15,16 Millionen Mitglieder in 12.495 Anlagen in Deutschland, Österreich und der Schweiz, davon allein in Deutschland 12,36 Millionen Mitglieder (+5,6 %) und 6,25 Milliarden Euro Nettoumsatz (+7,4 %) zum Jahresende 2025. Die Branche ist robust. Mitgliederzahlen steigen, Studios expandieren, die gesellschaftliche Relevanz von organisiertem Sport ist ungebrochen. Alle Zahlen, Preise und Kettenanteile stehen in unserem Report [Fitnessmarkt Deutschland 2026](/de/intelligence/germany-fitness-market-2026/). Das ist keine Selbstverständlichkeit – andere Konsumbereiche kämpfen mit Kaufzurückhaltung.
 
 Aber Wachstum ist kein Schutzschild. Es verdeckt strukturelle Schwächen. Welche Studios profitieren überproportional? Die mit klarer Positionierung, loyaler Community und Trainer, die mehr können als Übungen erklären.
 

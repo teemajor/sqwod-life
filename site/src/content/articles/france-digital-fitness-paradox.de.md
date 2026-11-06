@@ -10,8 +10,8 @@ type: market-data
 format: report
 conversion: sqwod-os
 publishedAt: 2026-10-24
-updatedAt: 2026-10-24
-asOf: Okt 2026
+updatedAt: 2026-11-06
+asOf: Nov 2026
 author: "Sqwod Intelligence"
 gated: true
 sources:
@@ -42,6 +42,7 @@ playbook:
   - { move: "Verkaufe Flexibilität als Leistung.", why: "31 % der Menschen, die zu Hause trainieren, tun das, weil sie dann trainieren können, wann sie wollen. Hybride Pakete (vor Ort plus Remote-Programmierung) treffen dieses Bedürfnis, ohne Rabatt." }
   - { move: "Konkurriere nie über den Preis mit Discount-Ketten.", why: "Basic-Fit betreibt 780 Clubs in Frankreich, seinem größten Markt. Punkte mit Ergebnissen, Verbindlichkeit und Community, also mit dem, was ein Discounter nicht bietet." }
 changelog:
+  - { date: "6. Nov. 2026", note: "Deutschland-Vergleich 2025 (DSSV Eckdaten 2026) und Link auf den Report Fitnessmarkt Deutschland 2026 ergänzt. Die Deloitte-/EuropeActive-Zahlen von 2022 bleiben als gleichartiger Vergleich stehen." }
   - { date: "24. Okt. 2026", note: "Erstveröffentlichung. Alle Zahlen wurden von Hand aus den Chartdaten der Statista-Studie 86331 neu aufgebaut (ersetzt einen früheren automatischen Entwurf mit falsch ausgelesenen Werten)." }
 hero:
   kind: bars
@@ -66,7 +67,7 @@ Eine CRÉDOC-Umfrage vom Juli 2023 ergänzt das Bild: **35 % der Französinnen u
 
 ## Ein kleinerer, günstigerer Studiomarkt
 
-Für klassische Fitness ist Frankreich ein dünnerer Markt als seine Nachbarn. 2022 gab es **4,7 Mio. Studiomitglieder, weniger als halb so viele wie in Deutschland (10,3 Mio.) oder im Vereinigten Königreich (10,4 Mio.)**. Die **Marktdurchdringung lag bei 10 %**, gegenüber 12 % in Deutschland, 16 % im Vereinigten Königreich und 21 % in Schweden (Deloitte / EuropeActive).
+Für klassische Fitness ist Frankreich ein dünnerer Markt als seine Nachbarn. 2022 gab es **4,7 Mio. Studiomitglieder, weniger als halb so viele wie in Deutschland (10,3 Mio.) oder im Vereinigten Königreich (10,4 Mio.)**. Die **Marktdurchdringung lag bei 10 %**, gegenüber 12 % in Deutschland, 16 % im Vereinigten Königreich und 21 % in Schweden (Deloitte / EuropeActive). Deutschland ist seitdem weiter enteilt: 12,36 Mio. Mitglieder und 6,25 Mrd. Euro Nettoumsatz Ende 2025 (DSSV), siehe unseren Report [Fitnessmarkt Deutschland 2026](/de/intelligence/germany-fitness-market-2026/).
 
 Der Umsatz folgt diesem Muster: **Die französische Fitnessbranche setzte 2022 rund 1,6 Mrd. € um, Deutschland 4,9 Mrd. € und das Vereinigte Königreich 5 Mrd. €.** Und der Preisanker ist niedrig. **Basic-Fit betreibt 780 Clubs in Frankreich**, seinem größten Markt, in Deutschland sind es 12.
 

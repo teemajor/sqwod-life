@@ -157,6 +157,71 @@
           "lastChecked": "2026-09-28"
         }
       ]
+    },
+    "germany-fitness-market-2026": {
+      "_note": "Germany flagship. DSSV publishes the Eckdaten each March (data as of 31 Dec of the prior year); Deloitte's Der deutsche Fitnessmarkt follows in April; EuropeActive/Deloitte European report in April. Gender/age figures (index 9, 10) are the AWA 2023 edition from Statista study 6326: the 2025 edition is paywalled at de.statista.com (ids 272075, 272096), swap in by hand when available.",
+      "figures": [
+        {
+          "index": 0,
+          "label": "Gym members, Germany",
+          "value": "12.36M",
+          "sourceLabel": "DSSV Eckdaten 2026",
+          "sourceUrl": "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf",
+          "period": "2025",
+          "cadenceDays": 120,
+          "lastChecked": "2026-11-06"
+        },
+        {
+          "index": 1,
+          "label": "Net revenue, German fitness facilities",
+          "value": "6.25bn €",
+          "sourceLabel": "DSSV Eckdaten 2026",
+          "sourceUrl": "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf",
+          "period": "2025",
+          "cadenceDays": 120,
+          "lastChecked": "2026-11-06"
+        },
+        {
+          "index": 3,
+          "label": "Market penetration",
+          "value": "14.8%",
+          "sourceLabel": "DSSV Eckdaten 2026",
+          "sourceUrl": "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf",
+          "period": "2025",
+          "cadenceDays": 120,
+          "lastChecked": "2026-11-06"
+        },
+        {
+          "index": 4,
+          "label": "Average monthly fee, 12-month membership",
+          "value": "48.55 €",
+          "sourceLabel": "DSSV Eckdaten 2026",
+          "sourceUrl": "https://www.dssv.de/wp-content/uploads/2026/03/03_18_pm_eckdaten.pdf",
+          "period": "2025",
+          "cadenceDays": 120,
+          "lastChecked": "2026-11-06"
+        },
+        {
+          "index": 6,
+          "label": "Chains' share of revenue",
+          "value": "50.7%",
+          "sourceLabel": "Deloitte, Der deutsche Fitnessmarkt 2026",
+          "sourceUrl": "https://www.deloitte.com/de/de/Industries/consumer/research/deutscher-fitnessmarkt-studie.html",
+          "period": "2025",
+          "cadenceDays": 120,
+          "lastChecked": "2026-11-06"
+        },
+        {
+          "index": 8,
+          "label": "Europe's largest gym market",
+          "value": "12.4M vs 12.2M",
+          "sourceLabel": "EuropeActive / Deloitte via Athletech News",
+          "sourceUrl": "https://athletechnews.com/european-fitness-market-2025-more-members-more-revenue-room-to-grow-report-finds/",
+          "period": "2025",
+          "cadenceDays": 120,
+          "lastChecked": "2026-11-06"
+        }
+      ]
     }
   }
 }
