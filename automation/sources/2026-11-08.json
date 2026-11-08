@@ -1,0 +1,204 @@
+[
+  {
+    "id": "news-2026-11-08-1",
+    "entity": "TradingView",
+    "topic": "Keybanc maintains Planet Fitness at Overweight, raises price target to $68 from $65",
+    "pillar": "signal",
+    "conversion": "sqwod-os",
+    "provenance": "TradingView (Fri, 06 Nov 2026 14:34:07 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Keybanc maintains Planet Fitness at Overweight, raises price target to $68 from $65"
+      },
+      {
+        "label": "Outlet",
+        "value": "TradingView"
+      },
+      {
+        "label": "Deal",
+        "value": "raise $68"
+      },
+      {
+        "label": "Article",
+        "value": "PLNT Keybanc maintained Planet Fitness at Overweight and raised its price target to $68 from $65, a 4.6% increase. The price target implies an upside of 13.2% from the Nov 5 close of $60.07. Explore more price target data and ratings for Planet Fitness on the Forecasts tab , and track all previous and future analyst recommendations in the dedicated News Flow ."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Keybanc maintains Planet Fitness at Overweight, raises price target to $68 from $65",
+      "dek": "Via TradingView.",
+      "readMore": "https://www.tradingview.com/news/tradingview:5b43065047bb7:0-keybanc-maintains-planet-fitness-at-overweight-raises-price-target-to-68-from-65/"
+    },
+    "de": {
+      "headline": "Keybanc maintains Planet Fitness at Overweight, raises price target to $68 from $65",
+      "dek": "Via TradingView.",
+      "readMore": "https://www.tradingview.com/news/tradingview:5b43065047bb7:0-keybanc-maintains-planet-fitness-at-overweight-raises-price-target-to-68-from-65/"
+    }
+  },
+  {
+    "id": "news-2026-11-08-2",
+    "entity": "Athletech News",
+    "topic": "Boutique Fitness Is Growing. We Have a Responsibility to Build Companies That Last.",
+    "pillar": "signal",
+    "conversion": "verified",
+    "provenance": "Athletech News (Fri, 06 Nov 2026 12:45:00 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Boutique Fitness Is Growing. We Have a Responsibility to Build Companies That Last."
+      },
+      {
+        "label": "Outlet",
+        "value": "Athletech News"
+      },
+      {
+        "label": "Article",
+        "value": "Boutique fitness is seeing a whole new generation of customers coming through its doors. Boutique fitness is seeing a whole new generation of customers coming through its doors. In the first half of 2026, boutique studios led the fitness industry in year-over-year visits per location. As gym and at-home fitness options are more available than ever, more clients are seeking a boutique, in-person, communal experience. In my own Physique 57 studios, women just out of college are taking classes in numbers I haven’t seen in 20 years of running the business. Some even arrive on Saturday mornings in workout sets that match the colors of their alma mater. That is wonderful news for our industry. It also brings a responsibility: to build well-run, profitable companies that will still be here for these clients in ten, fifteen, or twenty years. I learned this firsthand as Physique 57 grew. Each new market, product, and revenue stream brought opportunities, but also placed new demands on our team, systems, and leadership. My responsibility was to make sure the company could support what the brand was promising. That meant looking beyond whether an opportunity could generate revenue and asking whether we could deliver it consistently, profitably, and with the care our clients expected. Building a powerful brand and building a company capable of supporting it are two different jobs."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Boutique Fitness Is Growing. We Have a Responsibility to Build Companies That Last.",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/boutique-fitness-is-growing-we-have-a-responsibility-to-build-companies-that-last/"
+    },
+    "de": {
+      "headline": "Boutique Fitness Is Growing. We Have a Responsibility to Build Companies That Last.",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/boutique-fitness-is-growing-we-have-a-responsibility-to-build-companies-that-last/"
+    }
+  },
+  {
+    "id": "news-2026-11-08-3",
+    "entity": "Health Club Management",
+    "topic": "South Downs Leisure reveals �2m makeover at Worthing Leisure Centre",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "Health Club Management (Thu, 12 Nov 2026 10:00:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "South Downs Leisure reveals �2m makeover at Worthing Leisure Centre"
+      },
+      {
+        "label": "Outlet",
+        "value": "Health Club Management"
+      },
+      {
+        "label": "Article",
+        "value": "Worthing Leisure Centre reopened on 19 October following a �2m redevelopment delivered by charitable trust, South Downs Leisure."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "South Downs Leisure reveals �2m makeover at Worthing Leisure Centre",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/South-Downs-Leisure-reveals-2m-makeover-at-Worthing-Leisure-Centre-in-partnership-with-Inspace-Leisure/363912"
+    },
+    "de": {
+      "headline": "South Downs Leisure reveals �2m makeover at Worthing Leisure Centre",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/South-Downs-Leisure-reveals-2m-makeover-at-Worthing-Leisure-Centre-in-partnership-with-Inspace-Leisure/363912"
+    }
+  },
+  {
+    "id": "news-2026-11-08-4",
+    "entity": "Health Club Management",
+    "topic": "Planet Fitness buys Portugal's Be-Fit for Euro102.5m",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "Health Club Management (Sat, 07 Nov 2026 10:00:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Planet Fitness buys Portugal's Be-Fit for Euro102.5m"
+      },
+      {
+        "label": "Outlet",
+        "value": "Health Club Management"
+      },
+      {
+        "label": "Deal",
+        "value": "acquisition"
+      },
+      {
+        "label": "Article",
+        "value": "Planet Fitness has completed its acquisition of Portuguese gym operator Be-Fit, adding 25 clubs and approximately 80,000 members to its business."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Planet Fitness buys Portugal's Be-Fit for Euro102.5m",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/Planet-Fitness-buys-Portugals-Be-Fit-for-1025m/363939"
+    },
+    "de": {
+      "headline": "Planet Fitness buys Portugal's Be-Fit for Euro102.5m",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/Planet-Fitness-buys-Portugals-Be-Fit-for-1025m/363939"
+    }
+  },
+  {
+    "id": "news-2026-11-08-5",
+    "entity": "Health Club Management",
+    "topic": "Global wellness economy reaches US$7.5trn - forecast to hit US$10.9trn by 2030",
+    "pillar": "signal",
+    "conversion": "sqwod-os",
+    "provenance": "Health Club Management (Wed, 11 Nov 2026 10:00:00 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Global wellness economy reaches US$7.5trn - forecast to hit US$10.9trn by 2030"
+      },
+      {
+        "label": "Outlet",
+        "value": "Health Club Management"
+      },
+      {
+        "label": "Article",
+        "value": "The global wellness economy reached a record US$7.5 trillion (Euro6.7 trillion, �5.6 trillion) in 2025 and is projected to expand to US$10.9 trillion (Euro9.7 trillion, �8.2 trillion) in 2030, according to new research released by the Global Wellness Institute (GWI) today (11 November)."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Global wellness economy reaches US$7.5trn - forecast to hit US$10.9trn by 2030",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/Global-wellness-economy-reaches-US75trn-forecast-to-hit-US109trn-by-2030/363861"
+    },
+    "de": {
+      "headline": "Global wellness economy reaches US$7.5trn - forecast to hit US$10.9trn by 2030",
+      "dek": "Via Health Club Management.",
+      "readMore": "https://www.healthclubmanagement.co.uk/health-club-management-news/Global-wellness-economy-reaches-US75trn-forecast-to-hit-US109trn-by-2030/363861"
+    }
+  },
+  {
+    "id": "news-2026-11-08-6",
+    "entity": "The Indian Express",
+    "topic": "Mumbai Cricket Association, under Ajinkya Naik, turns to AI for coaching",
+    "pillar": "build",
+    "conversion": "sqwod-ai",
+    "provenance": "The Indian Express (Sat, 07 Nov 2026 08:03:36 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Mumbai Cricket Association, under Ajinkya Naik, turns to AI for coaching"
+      },
+      {
+        "label": "Outlet",
+        "value": "The Indian Express"
+      }
+    ],
+    "thin": true,
+    "en": {
+      "headline": "Mumbai Cricket Association, under Ajinkya Naik, turns to AI for coaching",
+      "dek": "Via The Indian Express.",
+      "readMore": "https://indianexpress.com/article/sports/cricket/mumbai-cricket-association-ajinkya-naik-turns-ai-coaching-10954540/"
+    },
+    "de": {
+      "headline": "Mumbai Cricket Association, under Ajinkya Naik, turns to AI for coaching",
+      "dek": "Via The Indian Express.",
+      "readMore": "https://indianexpress.com/article/sports/cricket/mumbai-cricket-association-ajinkya-naik-turns-ai-coaching-10954540/"
+    }
+  }
+]

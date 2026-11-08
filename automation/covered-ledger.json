@@ -1,96 +1,5 @@
 [
   {
-    "date": "2026-10-16",
-    "key": "dssv beim deutschen arbeitgebertag 2026",
-    "tokens": [
-      "dssv",
-      "beim",
-      "deutschen",
-      "arbeitgebertag",
-      "2026"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "key": "garmin should pay attention to suuntos new titanium sports w",
-    "tokens": [
-      "garmin",
-      "should",
-      "attention",
-      "suunto",
-      "titanium",
-      "sports",
-      "watch",
-      "delivers",
-      "longer",
-      "battery",
-      "life",
-      "clever",
-      "coaching",
-      "upgrade"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "key": "eric von frohlich remembered as fitness innovator beloved co",
-    "tokens": [
-      "eric",
-      "frohlich",
-      "remembered",
-      "innovator",
-      "beloved",
-      "coach",
-      "friend"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "key": "gym membership trends 10 numbers shaping fitness",
-    "tokens": [
-      "membership",
-      "trends",
-      "numbers",
-      "shaping"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "key": "world class romania opens at one high district its first clu",
-    "tokens": [
-      "world",
-      "class",
-      "romania",
-      "opens",
-      "high",
-      "district",
-      "first",
-      "club",
-      "developed",
-      "longevity",
-      "recovery",
-      "concept",
-      "following",
-      "million",
-      "investment"
-    ]
-  },
-  {
-    "date": "2026-10-16",
-    "key": "martin  co huddersfield franchisee completes fourth agency a",
-    "tokens": [
-      "martin",
-      "huddersfield",
-      "franchisee",
-      "completes",
-      "fourth",
-      "agency",
-      "acquisition"
-    ]
-  },
-  {
     "date": "2026-10-19",
     "key": "amsterdams huppa raises 1 million to build an operating syst",
     "tokens": [
@@ -1345,6 +1254,88 @@
       "neue",
       "ausgabe",
       "mfhc"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "key": "keybanc maintains planet fitness at overweight raises price ",
+    "tokens": [
+      "keybanc",
+      "maintains",
+      "planet",
+      "overweight",
+      "raises",
+      "price",
+      "target"
+    ],
+    "entities": [
+      "Planet Fitness"
+    ],
+    "deal": "$68"
+  },
+  {
+    "date": "2026-11-08",
+    "key": "boutique fitness is growing we have a responsibility to buil",
+    "tokens": [
+      "boutique",
+      "growing",
+      "have",
+      "responsibility",
+      "build",
+      "companies",
+      "last"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "key": "south downs leisure reveals 2m makeover at worthing leisure ",
+    "tokens": [
+      "south",
+      "downs",
+      "leisure",
+      "reveals",
+      "makeover",
+      "worthing",
+      "centre"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "key": "planet fitness buys portugals befit for euro1025m",
+    "tokens": [
+      "planet",
+      "buys",
+      "portugal",
+      "euro102"
+    ],
+    "entities": [
+      "Planet Fitness"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "key": "global wellness economy reaches us75trn  forecast to hit us1",
+    "tokens": [
+      "global",
+      "economy",
+      "reaches",
+      "5trn",
+      "forecast",
+      "9trn",
+      "2030"
+    ]
+  },
+  {
+    "date": "2026-11-08",
+    "key": "mumbai cricket association under ajinkya naik turns to ai fo",
+    "tokens": [
+      "mumbai",
+      "cricket",
+      "association",
+      "ajinkya",
+      "naik",
+      "turns",
+      "coaching"
     ]
   }
 ]
