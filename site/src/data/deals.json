@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06",
+  "generatedAt": "2026-11-08",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,63 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-08",
+      "entity": "Be-Fit",
+      "kind": "acquisition",
+      "amount": "€102.5m",
+      "amountUsd": 110700000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "Planet Fitness acquired Portuguese gym chain Be-Fit, gaining 25 clubs and 80,000 members.",
+      "url": "https://www.tradingview.com/news/tradingview:5b43065047bb7:0-keybanc-maintains-planet-fitness-at-overweight-raises-price-target-to-68-from-65/",
+      "source": "TradingView",
+      "issue": "/en/daily/2026-11-08",
+      "region": "Europe",
+      "category": "Gyms & studios",
+      "id": "planet-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-08",
+          "url": "https://www.tradingview.com/news/tradingview:5b43065047bb7:0-keybanc-maintains-planet-fitness-at-overweight-raises-price-target-to-68-from-65/",
+          "issue": "/en/daily/2026-11-08"
+        }
+      ],
+      "country": "Portugal",
+      "acquirer": "Planet Fitness",
+      "noteDe": "Planet Fitness übernahm die portugiesische Fitnesskette Be-Fit mit 25 Clubs und 80.000 Mitgliedern.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-11-08",
+      "entity": "Planet Fitness",
+      "kind": "valuation",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Keybanc raised its Planet Fitness price target to $68, maintaining Overweight rating.",
+      "url": "https://www.tradingview.com/news/tradingview:5b43065047bb7:0-keybanc-maintains-planet-fitness-at-overweight-raises-price-target-to-68-from-65/",
+      "source": "TradingView",
+      "issue": "/en/daily/2026-11-08",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "planet-valuation-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-08",
+          "url": "https://www.tradingview.com/news/tradingview:5b43065047bb7:0-keybanc-maintains-planet-fitness-at-overweight-raises-price-target-to-68-from-65/",
+          "issue": "/en/daily/2026-11-08"
+        }
+      ],
+      "country": "United States",
+      "noteDe": "Keybanc erhöhte das Kursziel für Planet Fitness auf 68 Dollar und bestätigte die Overweight-Einstufung.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
     {
       "date": "2026-11-05",
       "entity": "OBSESS",
@@ -49,8 +106,8 @@
       "leads": [],
       "noteDe": "Noidaer Fitness-Plattform OBSESS sammelte eine Angel-Runde von rund 3 Crore Rupien ein.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-04",
@@ -113,8 +170,8 @@
       "leads": [],
       "noteDe": "Equinox beschafft Kapital von bestehenden Investoren für über 1 Milliarde Dollar geplante Wachstumsinvestitionen.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-02",
