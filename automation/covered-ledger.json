@@ -1337,5 +1337,83 @@
       "turns",
       "coaching"
     ]
+  },
+  {
+    "date": "2026-11-09",
+    "key": "reborne longevity enters administration",
+    "tokens": [
+      "reborne",
+      "longevity",
+      "enters",
+      "administration"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "key": "the 2026 nyc marathon broke all records whats next for runni",
+    "tokens": [
+      "2026",
+      "marathon",
+      "broke",
+      "records",
+      "what",
+      "next",
+      "running"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "key": "fitness industry traffic fit tracker",
+    "tokens": [
+      "traffic",
+      "tracker"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "key": "waze might soon start warning drivers about cyclists on the ",
+    "tokens": [
+      "waze",
+      "might",
+      "soon",
+      "start",
+      "warning",
+      "drivers",
+      "about",
+      "cyclists",
+      "road",
+      "thanks",
+      "garmin",
+      "watches"
+    ],
+    "entities": [
+      "Garmin"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "key": "why did a gym cancel a mans membership over sciencebased lif",
+    "tokens": [
+      "cancel",
+      "membership",
+      "science",
+      "based",
+      "lifting"
+    ]
+  },
+  {
+    "date": "2026-11-09",
+    "key": "whoop to sell its fitness wearable at ulta beauty",
+    "tokens": [
+      "whoop",
+      "sell",
+      "wearable",
+      "ulta",
+      "beauty"
+    ],
+    "entities": [
+      "Ulta Beauty",
+      "Whoop"
+    ]
   }
 ]
