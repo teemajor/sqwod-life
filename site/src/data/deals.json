@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08",
+  "generatedAt": "2026-11-09",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,34 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-09",
+      "entity": "Reborne Longevity",
+      "kind": "shutdown",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Reborne Longevity entered administration after building fitness, wellness and healthcare partnerships.",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Reborne-Longevity-enters-administration/363937",
+      "source": "Health Club Management",
+      "issue": "/en/daily/2026-11-09",
+      "region": "UK",
+      "category": "Health & longevity",
+      "id": "reborne-shutdown-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-09",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Reborne-Longevity-enters-administration/363937",
+          "issue": "/en/daily/2026-11-09"
+        }
+      ],
+      "country": "United Kingdom",
+      "noteDe": "Reborne Longevity ging in die Insolvenz, kurz nachdem das Unternehmen Partnerschaften in Fitness, Wellness und Gesundheit aufgebaut hatte.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-08",
       "entity": "Be-Fit",
@@ -45,7 +73,7 @@
       "noteDe": "Planet Fitness übernahm die portugiesische Fitnesskette Be-Fit mit 25 Clubs und 80.000 Mitgliedern.",
       "checked": "high",
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-08",
@@ -73,7 +101,7 @@
       "noteDe": "Keybanc erhöhte das Kursziel für Planet Fitness auf 68 Dollar und bestätigte die Overweight-Einstufung.",
       "checked": "high",
       "status": "pending",
-      "reason": "new · may be off-topic"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-05",

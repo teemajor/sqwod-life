@@ -192,5 +192,25 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-08"
+  },
+  "reborne-shutdown-2026-11": {
+    "id": "reborne-shutdown-2026-11",
+    "company": "Reborne Longevity",
+    "dealCountry": "United Kingdom",
+    "category": "Health & longevity",
+    "relevant": true,
+    "oneLineEn": "Reborne Longevity entered administration after building fitness, wellness and healthcare partnerships.",
+    "oneLineDe": "Reborne Longevity ging in die Insolvenz, kurz nachdem das Unternehmen Partnerschaften in Fitness, Wellness und Gesundheit aufgebaut hatte.",
+    "amount": "",
+    "amountIs": "undisclosed",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-03",
+    "dealStatus": "done",
+    "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Reborne-Longevity-enters-administration/363937",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-09"
   }
 }
