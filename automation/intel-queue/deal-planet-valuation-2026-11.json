@@ -1,12 +1,13 @@
 {
   "id": "deal-planet-valuation-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "rejected",
   "title": "Planet Fitness: valuation",
   "dealId": "planet-valuation-2026-11",
   "createdAt": "2026-11-08",
   "flags": [
     "may be off-topic"
   ],
-  "checked": "high"
+  "checked": "high",
+  "decidedAt": "2026-11-10T09:11:28.639Z"
 }
