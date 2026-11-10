@@ -4,8 +4,8 @@
   "date": "2026-11-10",
   "title": "Virgin Active acquires Holmes Place Germany for €135m, DJs in gyms & Generation Ü fitness study",
   "titleDe": "Virgin Active kauft Holmes Place Germany für 135 Mio. Euro, Generation-Ü-Studie zeigt Präventionspotenzial & DJs im Studio",
-  "status": "pending",
-  "held": true,
+  "status": "released",
+  "held": false,
   "flags": [
     "EN story 2 may be old news (event already took place (last date 2026-11-05)): \"25.6% of 60-75 year-olds able and willing to keep working, s\"."
   ],
@@ -15,5 +15,7 @@
     "2 story(ies) were dropped because a claim could not be backed.",
     "Unsupported framing was removed from the intro or connect-the-dots text."
   ],
-  "createdAt": "2026-11-10"
+  "createdAt": "2026-11-10",
+  "releasedAt": "2026-11-10T09:01:11.218Z",
+  "releasedBy": "auto 10:00"
 }
