@@ -212,5 +212,25 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-09"
+  },
+  "virgin-acquisition-2026-11": {
+    "id": "virgin-acquisition-2026-11",
+    "company": "Holmes Place Germany",
+    "dealCountry": "Germany",
+    "category": "Gyms & studios",
+    "relevant": true,
+    "oneLineEn": "Virgin Active agreed to acquire 13 Holmes Place Germany clubs for €135 million.",
+    "oneLineDe": "Virgin Active übernimmt 13 Holmes-Place-Clubs in Deutschland für 135 Millionen Euro.",
+    "amount": "€135 million",
+    "amountIs": "round",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "Virgin Active",
+    "announcedOn": "2026-11-09",
+    "dealStatus": "agreed",
+    "url": "https://finance.yahoo.com/small-business/articles/virgin-active-signs-unconditional-agreement-070000390.html",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-10"
   }
 }

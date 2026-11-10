@@ -19,6 +19,35 @@
   "mergeDays": 60,
   "deals": [
     {
+      "date": "2026-11-10",
+      "entity": "Holmes Place Germany",
+      "kind": "acquisition",
+      "amount": "€135m",
+      "amountUsd": 145800000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "Virgin Active agreed to acquire 13 Holmes Place Germany clubs for €135 million.",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Virgin-Active-buys-Holmes-Place-Germany-in-135-million-deal/363943",
+      "source": "Health Club Management",
+      "issue": "/en/daily/2026-11-10",
+      "region": "DACH",
+      "category": "Gyms & studios",
+      "id": "virgin-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-10",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Virgin-Active-buys-Holmes-Place-Germany-in-135-million-deal/363943",
+          "issue": "/en/daily/2026-11-10"
+        }
+      ],
+      "country": "Germany",
+      "acquirer": "Virgin Active",
+      "noteDe": "Virgin Active übernimmt 13 Holmes-Place-Clubs in Deutschland für 135 Millionen Euro.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
       "date": "2026-11-09",
       "entity": "Reborne Longevity",
       "kind": "shutdown",
@@ -43,8 +72,8 @@
       "country": "United Kingdom",
       "noteDe": "Reborne Longevity ging in die Insolvenz, kurz nachdem das Unternehmen Partnerschaften in Fitness, Wellness und Gesundheit aufgebaut hatte.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-08",
@@ -72,8 +101,8 @@
       "acquirer": "Planet Fitness",
       "noteDe": "Planet Fitness übernahm die portugiesische Fitnesskette Be-Fit mit 25 Clubs und 80.000 Mitgliedern.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-08",
@@ -101,7 +130,7 @@
       "noteDe": "Keybanc erhöhte das Kursziel für Planet Fitness auf 68 Dollar und bestätigte die Overweight-Einstufung.",
       "checked": "high",
       "status": "pending",
-      "reason": "queue: pending"
+      "reason": "queue: discarded"
     },
     {
       "date": "2026-11-05",
