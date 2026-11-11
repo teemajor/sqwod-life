@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10",
+  "generatedAt": "2026-11-11",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,71 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-11",
+      "entity": "Vesalius Longevity Labs",
+      "kind": "raise",
+      "amount": "$6.5M",
+      "amountUsd": 6500000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Vesalius Longevity Labs raised $6.5M in a private placement organized by Equinox chairman Harvey Spevak.",
+      "url": "https://athletechnews.com/equinox-chair-harvey-spevak-leads-6-5-million-financing-round-vesalius-longevity-labs/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-11-11",
+      "region": "North America",
+      "category": "Health & longevity",
+      "id": "vesalius-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-11",
+          "url": "https://athletechnews.com/equinox-chair-harvey-spevak-leads-6-5-million-financing-round-vesalius-longevity-labs/",
+          "issue": "/en/daily/2026-11-11"
+        }
+      ],
+      "country": "Canada",
+      "noteDe": "Vesalius Longevity Labs sammelte 6,5 Mio. USD in einer Privatplatzierung, organisiert von Equinox-Chairman Harvey Spevak.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-11-11",
+      "entity": "Elevate",
+      "kind": "raise",
+      "amount": "£2 million",
+      "amountUsd": 2540000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "London functional smoothie bar Elevate raised £2M from JamJar Investments, Cassius, Active Partners and Nick Jones.",
+      "url": "https://insider.fitt.co/elevate-scales-uk-smoothie-bar/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-11",
+      "region": "UK",
+      "category": "Nutrition & supplements",
+      "id": "elevate-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-11",
+          "url": "https://insider.fitt.co/elevate-scales-uk-smoothie-bar/",
+          "issue": "/en/daily/2026-11-11"
+        }
+      ],
+      "country": "United Kingdom",
+      "investors": [
+        "JamJar Investments",
+        "Cassius",
+        "Active Partners",
+        "Nick Jones"
+      ],
+      "leads": [
+        "JamJar Investments"
+      ],
+      "noteDe": "Die Londoner Smoothie-Bar Elevate sammelte 2 Mio. GBP von JamJar Investments, Cassius, Active Partners und Nick Jones.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new · may be off-topic"
+    },
     {
       "date": "2026-11-10",
       "entity": "Holmes Place Germany",
@@ -45,7 +110,7 @@
       "noteDe": "Virgin Active übernimmt 13 Holmes-Place-Clubs in Deutschland für 135 Millionen Euro.",
       "checked": "high",
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-09",

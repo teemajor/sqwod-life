@@ -232,5 +232,52 @@
     "primarySource": true,
     "confidence": "high",
     "checkedAt": "2026-11-10"
+  },
+  "vesalius-raise-2026-11": {
+    "id": "vesalius-raise-2026-11",
+    "company": "Vesalius Longevity Labs",
+    "dealCountry": "Canada",
+    "category": "Health & longevity",
+    "relevant": true,
+    "oneLineEn": "Vesalius Longevity Labs raised $6.5M in a private placement organized by Equinox chairman Harvey Spevak.",
+    "oneLineDe": "Vesalius Longevity Labs sammelte 6,5 Mio. USD in einer Privatplatzierung, organisiert von Equinox-Chairman Harvey Spevak.",
+    "amount": "US$6.5 million",
+    "amountIs": "round",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-09",
+    "dealStatus": "done",
+    "url": "https://www.newswire.ca/news-releases/vesalius-longevity-labs-closes-strategic-financing-of-us-6-5-million-led-by-investor-group-organized-by-harvey-spevak-849171266.html",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-11"
+  },
+  "elevate-raise-2026-11": {
+    "id": "elevate-raise-2026-11",
+    "company": "Elevate",
+    "dealCountry": "United Kingdom",
+    "category": "Nutrition & supplements",
+    "relevant": true,
+    "oneLineEn": "London functional smoothie bar Elevate raised £2M from JamJar Investments, Cassius, Active Partners and Nick Jones.",
+    "oneLineDe": "Die Londoner Smoothie-Bar Elevate sammelte 2 Mio. GBP von JamJar Investments, Cassius, Active Partners und Nick Jones.",
+    "amount": "£2 million",
+    "amountIs": "wrong",
+    "investors": [
+      "JamJar Investments",
+      "Cassius",
+      "Active Partners",
+      "Nick Jones"
+    ],
+    "leadInvestors": [
+      "JamJar Investments"
+    ],
+    "acquirer": "",
+    "announcedOn": "2026-11-01",
+    "dealStatus": "done",
+    "url": "https://retailtimes.co.uk/elevate-raises-2m-to-take-functional-nutrition-mainstream-in-london/",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-11"
   }
 }
