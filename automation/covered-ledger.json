@@ -1,84 +1,5 @@
 [
   {
-    "date": "2026-10-20",
-    "key": "browne jacobson advises puregym on 235m swiss fitness busine",
-    "tokens": [
-      "browne",
-      "jacobson",
-      "advises",
-      "puregym",
-      "235m",
-      "swiss",
-      "business",
-      "acquisition"
-    ],
-    "entities": [
-      "PureGym"
-    ],
-    "deal": "£235m"
-  },
-  {
-    "date": "2026-10-20",
-    "key": "thelivmethodto expandnyc footprint open largest studio yet",
-    "tokens": [
-      "method",
-      "expand",
-      "footprint",
-      "open",
-      "largest",
-      "studio"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "sports club poppenbttel 20 standort erffnet",
-    "tokens": [
-      "sports",
-      "club",
-      "poppenb",
-      "ttel",
-      "standort",
-      "ffnet"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "jazzercise founder judi sheppard missett to be inducted into",
-    "tokens": [
-      "jazzercise",
-      "founder",
-      "judi",
-      "sheppard",
-      "missett",
-      "inducted",
-      "2027",
-      "hall",
-      "fame"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "neu im vorteilsclub 100  bonus bei wattline",
-    "tokens": [
-      "vorteilsclub",
-      "bonus",
-      "wattline"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "with new coo musicdriven rocksalt pilates gears up for franc",
-    "tokens": [
-      "music",
-      "driven",
-      "rocksalt",
-      "pilates",
-      "gears",
-      "franchise",
-      "expansion"
-    ]
-  },
-  {
     "date": "2026-10-21",
     "key": "the hidden revenue leaks costing fitness clubs",
     "tokens": [
@@ -1403,6 +1324,87 @@
       "development",
       "partner",
       "framework"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "equinox chair leads 65m financing round for vesalius longevi",
+    "tokens": [
+      "equinox",
+      "chair",
+      "leads",
+      "financing",
+      "round",
+      "vesalius",
+      "longevity",
+      "labs"
+    ],
+    "entities": [
+      "Equinox"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "oura to acquire counsel health for 625m in major push into a",
+    "tokens": [
+      "oura",
+      "acquire",
+      "counsel",
+      "health",
+      "625m",
+      "major",
+      "push",
+      "powered",
+      "healthcare"
+    ],
+    "entities": [
+      "Oura"
+    ],
+    "deal": "$625m"
+  },
+  {
+    "date": "2026-11-11",
+    "key": "nord gyms to launch training and contrast therapy concept in",
+    "tokens": [
+      "nord",
+      "gyms",
+      "launch",
+      "training",
+      "contrast",
+      "therapy",
+      "concept",
+      "london"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "urban arc go 2 ai fitness band and q9i ai anc tws earbuds la",
+    "tokens": [
+      "urban",
+      "band",
+      "earbuds",
+      "launched"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "gantner  face recognition der checkin der nchsten generation",
+    "tokens": [
+      "gantner",
+      "face",
+      "recognition",
+      "check",
+      "nachsten",
+      "generation"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "elevate scales uk smoothie bar",
+    "tokens": [
+      "elevate",
+      "scales",
+      "smoothie"
     ]
   }
 ]
