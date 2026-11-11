@@ -44,7 +44,7 @@
       "noteDe": "Vesalius Longevity Labs sammelte 6,5 Mio. USD in einer Privatplatzierung, organisiert von Equinox-Chairman Harvey Spevak.",
       "checked": "high",
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-11",
@@ -81,7 +81,7 @@
       "noteDe": "Die Londoner Smoothie-Bar Elevate sammelte 2 Mio. GBP von JamJar Investments, Cassius, Active Partners und Nick Jones.",
       "checked": "high",
       "status": "pending",
-      "reason": "new · may be off-topic"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-10",
