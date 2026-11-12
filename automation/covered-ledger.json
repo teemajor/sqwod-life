@@ -1,84 +1,5 @@
 [
   {
-    "date": "2026-10-21",
-    "key": "the hidden revenue leaks costing fitness clubs",
-    "tokens": [
-      "hidden",
-      "revenue",
-      "leaks",
-      "costing",
-      "clubs"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "acsm fitnesstrends 2027 wearabletechnologie auf platz 1 im g",
-    "tokens": [
-      "acsm",
-      "fitnesstrends",
-      "2027",
-      "wearable",
-      "technologie",
-      "platz",
-      "globalen",
-      "trendranking"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "fitness on demand adds 99 mvmnt workouts to expand digital p",
-    "tokens": [
-      "demand",
-      "adds",
-      "mvmnt",
-      "workouts",
-      "expand",
-      "digital",
-      "programming"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "the boutique cycling industry is evolving and local ownershi",
-    "tokens": [
-      "boutique",
-      "cycling",
-      "evolving",
-      "local",
-      "ownership",
-      "lead",
-      "next",
-      "chapter"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "athlone fitness studio raises over 1000 in support of breast",
-    "tokens": [
-      "athlone",
-      "studio",
-      "raises",
-      "support",
-      "breast",
-      "cancer",
-      "awareness"
-    ],
-    "deal": "€1,000"
-  },
-  {
-    "date": "2026-10-21",
-    "key": "unravel health raises 25m for athome hormone testing",
-    "tokens": [
-      "unravel",
-      "health",
-      "raises",
-      "home",
-      "hormone",
-      "testing"
-    ],
-    "deal": "€2.5m"
-  },
-  {
     "date": "2026-10-22",
     "key": "mark wahlbergs municipal gym eyes affordable longevity ahead",
     "tokens": [
@@ -1405,6 +1326,94 @@
       "elevate",
       "scales",
       "smoothie"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "boutique studios look to capitalize on hyrox boom with compe",
+    "tokens": [
+      "boutique",
+      "studios",
+      "look",
+      "capitalize",
+      "hyrox",
+      "boom",
+      "competitions",
+      "their"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "get a drip founder launches 15m preventative health clinic o",
+    "tokens": [
+      "drip",
+      "founder",
+      "launches",
+      "preventative",
+      "health",
+      "clinic",
+      "ohas"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "groe solutions appoints julio marshallas chief commercial of",
+    "tokens": [
+      "groe",
+      "solutions",
+      "appoints",
+      "julio",
+      "marshall",
+      "chief",
+      "commercial",
+      "officer"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "swiss res john schoonbee urges insurers to invest in prevent",
+    "tokens": [
+      "swiss",
+      "john",
+      "schoonbee",
+      "urges",
+      "insurers",
+      "invest",
+      "prevention",
+      "mortality",
+      "trends",
+      "worsen"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "andrew huberman joins hims  hers board",
+    "tokens": [
+      "andrew",
+      "huberman",
+      "joins",
+      "hims",
+      "hers",
+      "board"
+    ],
+    "entities": [
+      "Hims"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "how axle took the the guesswork out of jetset pilates franch",
+    "tokens": [
+      "axle",
+      "took",
+      "guesswork",
+      "jetset",
+      "pilates",
+      "franchisee",
+      "marketing"
     ]
   }
 ]
