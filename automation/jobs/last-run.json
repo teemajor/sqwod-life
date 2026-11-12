@@ -1,11 +1,11 @@
 {
- "startedAt": "2026-11-05T21:38:17.336Z",
+ "startedAt": "2026-11-12T21:57:14.591Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
    "enabled": true,
-   "fetched": 286,
-   "kept": 232,
+   "fetched": 326,
+   "kept": 269,
    "diag": {
     "tried": [
      {
@@ -17,11 +17,12 @@
        "size",
        "facetten"
       ],
-      "maxErgebnisse": 64,
+      "maxErgebnisse": 71,
       "items": 50,
       "sample": {
        "stellenangebotsart": "ARBEIT",
-       "stellenangebotsTitel": "Fitnesstrainer/in",
+       "stellenangebotsTitel": "Fitnesstrainer (m/w/d)",
+       "quereinstiegGeeignet": false,
        "arbeitszeitSchichtNachtWochenende": false,
        "arbeitszeitTeilzeitAbend": false,
        "arbeitszeitTeilzeitNachmittag": false,
@@ -29,36 +30,33 @@
        "arbeitszeitTeilzeitFlexibel": false,
        "arbeitszeitVollzeit": true,
        "eintrittszeitraum": {
-        "von": "2027-01-04"
+        "von": "2026-11-07"
        },
-       "verguetungsangabe": "JAHRESGEHALT",
-       "artDerVerguetung": "GEHALTSSPANNE",
-       "gehaltsspanneVon": 20000,
-       "gehaltsspanneBis": 30000,
-       "vertragsdauer": "UNBEFRISTET",
+       "verguetungsangabe": "KEINE_ANGABEN",
+       "vertragsdauer": "KEINE_ANGABE",
+       "istGeringfuegigeBeschaeftigung": false,
        "stellenlokationen": [
         {
          "adresse": {
-          "strasse": "Berliner Str.",
-          "hausnummer": "8a",
-          "plz": "15537",
-          "ort": "Erkner",
-          "region": "BRANDENBURG",
+          "plz": "13585",
+          "ort": "Berlin",
+          "region": "BERLIN",
           "land": "DEUTSCHLAND"
          },
-         "breite": 52.427961,
-         "laenge": 13.744998
+         "breite": 52.5479823,
+         "laenge": 13.2034676
         }
        ],
+       "homeofficemoeglich": false,
        "veroeffentlichungszeitraum": {
-        "von": "2026-11-05"
+        "von": "2026-11-07"
        },
-       "datumErsteVeroeffentlichung": "2026-11-05",
-       "aenderungsdatum": "2026-11-05T16:50:41.829",
+       "datumErsteVeroeffentlichung": "2026-11-06",
+       "aenderungsdatum": "2026-11-07T07:12:56.283",
+       "externeURL": "https://www.hogapage.de/jobs/fitnesstrainer-in-berlin/OTHZMY-BZ3/?hp_source=api-arbeitsamt&utm_medium=API&utm_source=arbeitsamt",
        "hauptberuf": "Fitnesstrainer/in",
-       "firma": "av Fitness UG (haftungsbeschränkt)",
-       "arbeitgeberKundennummerHash": "mpAzuGjRk_BdwTDGXxkbcTLyMt6CBB2gVC0spUbJt8s=",
-       "referenznummer": "10001-1003972103-S",
+       "firma": "centrovital",
+       "referenznummer": "12518-OTHZMY-BZ3-S",
        "alleBerufe": [
         "Fitnesstrainer/in"
        ]
@@ -69,6 +67,7 @@
     "itemKeys": [
      "stellenangebotsart",
      "stellenangebotsTitel",
+     "quereinstiegGeeignet",
      "arbeitszeitSchichtNachtWochenende",
      "arbeitszeitTeilzeitAbend",
      "arbeitszeitTeilzeitNachmittag",
@@ -77,35 +76,35 @@
      "arbeitszeitVollzeit",
      "eintrittszeitraum",
      "verguetungsangabe",
-     "artDerVerguetung",
-     "gehaltsspanneVon",
-     "gehaltsspanneBis",
      "vertragsdauer",
+     "istGeringfuegigeBeschaeftigung",
      "stellenlokationen",
+     "homeofficemoeglich",
      "veroeffentlichungszeitraum",
      "datumErsteVeroeffentlichung",
      "aenderungsdatum",
+     "externeURL",
      "hauptberuf",
      "firma",
-     "arbeitgeberKundennummerHash",
      "referenznummer",
      "alleBerufe"
     ],
     "pay": {
-     "JAHRESGEHALT": 26,
-     "KEINE_ANGABEN": 239,
-     "STUNDENLOHN": 21
+     "KEINE_ANGABEN": 246,
+     "JAHRESGEHALT": 53,
+     "STUNDENLOHN": 27
     },
     "detail": {
-     "wanted": 20,
-     "fetched": 20,
-     "withFigure": 20,
+     "wanted": 31,
+     "fetched": 31,
+     "withFigure": 31,
      "textOnly": 0,
      "failed": 0,
      "path": "/pc/v4/jobdetails/",
      "sampleKeys": [
       "stellenangebotsart",
       "stellenangebotsTitel",
+      "quereinstiegGeeignet",
       "stellenangebotsBeschreibung",
       "arbeitszeitSchichtNachtWochenende",
       "arbeitszeitTeilzeitAbend",
@@ -125,6 +124,8 @@
       "aenderungsdatum",
       "istBetreut",
       "hauptberuf",
+      "alternativBeruf1",
+      "alternativBeruf2",
       "firma",
       "arbeitgeberKundennummerHash",
       "allianzpartnerUrl",
@@ -134,18 +135,18 @@
      "samples": [
       "20.000 € – 30.000 € / Jahr (Arbeitsagentur)",
       "26.400 € – 41.000 € / Jahr (Arbeitsagentur)",
-      "36.000 € – 45.000 € / Jahr (Arbeitsagentur)",
-      "42.250 € / Jahr (Arbeitsagentur)",
-      "85.000 € – 95.000 € / Jahr (Arbeitsagentur)",
-      "21,24 € / Std. (Arbeitsagentur)"
+      "30.000 € – 36.000 € / Jahr (Arbeitsagentur)",
+      "28.800 € – 38.400 € / Jahr (Arbeitsagentur)",
+      "36.000 € / Jahr (Arbeitsagentur)",
+      "15 € – 20 € / Std. (Arbeitsagentur)"
      ]
     }
    }
   },
   "adzuna": {
    "enabled": true,
-   "fetched": 337,
-   "kept": 204
+   "fetched": 286,
+   "kept": 149
   },
   "career-page": {
    "enabled": true,
@@ -178,12 +179,12 @@
  },
  "hosts": {
   "rest.arbeitsagentur.de": {
-   "requests": 58,
+   "requests": 69,
    "failures": 0,
    "errors": []
   },
   "api.adzuna.com": {
-   "requests": 13,
+   "requests": 12,
    "failures": 0,
    "errors": []
   },
@@ -733,18 +734,18 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 436,
-  "unique": 236,
-  "withPay": 34
+  "fetchedAfterGate": 418,
+  "unique": 211,
+  "withPay": 38
  },
  "summary": {
-  "live": 367,
-  "newThisWeek": 367,
-  "withPay": 47,
-  "newWithPay": 47,
+  "live": 441,
+  "newThisWeek": 74,
+  "withPay": 58,
+  "newWithPay": 11,
   "hostsFailed": 3,
   "sourcesFailed": []
  },
- "finishedAt": "2026-11-05T21:44:23.253Z",
- "payLinesAppended": 22
+ "finishedAt": "2026-11-12T22:03:12.713Z",
+ "payLinesAppended": 13
 }
