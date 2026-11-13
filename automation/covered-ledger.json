@@ -1,85 +1,5 @@
 [
   {
-    "date": "2026-10-22",
-    "key": "mark wahlbergs municipal gym eyes affordable longevity ahead",
-    "tokens": [
-      "mark",
-      "wahlberg",
-      "municipal",
-      "eyes",
-      "affordable",
-      "longevity",
-      "ahead",
-      "launch"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "aciso consulting vier neue mitarbeitende fr beratung und mar",
-    "tokens": [
-      "aciso",
-      "consulting",
-      "vier",
-      "neue",
-      "mitarbeitende",
-      "beratung",
-      "marketing"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "the road to 1500 locations with tianna strateman of club pil",
-    "tokens": [
-      "road",
-      "1500",
-      "locations",
-      "tianna",
-      "strateman",
-      "club",
-      "pilates"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "hcm invest brings investors and fitness businesses together ",
-    "tokens": [
-      "invest",
-      "brings",
-      "investors",
-      "businesses",
-      "together",
-      "london"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "careerz group launches careerz coach ai connecting workforce",
-    "tokens": [
-      "careerz",
-      "group",
-      "launches",
-      "coach",
-      "connecting",
-      "workforce",
-      "assessment",
-      "data",
-      "demand",
-      "people",
-      "guidance"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "what belonging has to do with mental wellbeing at work",
-    "tokens": [
-      "what",
-      "belonging",
-      "mental",
-      "wellbeing",
-      "work"
-    ]
-  },
-  {
     "date": "2026-10-23",
     "key": "everyone actives duncan jefford reveals chemists 4u referral",
     "tokens": [
@@ -1414,6 +1334,90 @@
       "pilates",
       "franchisee",
       "marketing"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "aman launches performance wellness brand",
+    "tokens": [
+      "aman",
+      "launches",
+      "performance",
+      "brand"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "men join the pilates boom ons premium play pays off seed oil",
+    "tokens": [
+      "join",
+      "pilates",
+      "boom",
+      "premium",
+      "play",
+      "pays",
+      "seed",
+      "free",
+      "snacks"
+    ],
+    "deal": "$1b"
+  },
+  {
+    "date": "2026-11-13",
+    "key": "whoop launches inapp social network",
+    "tokens": [
+      "whoop",
+      "launches",
+      "social",
+      "network"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "hfa outlines threeyear strategic direction names greta wagne",
+    "tokens": [
+      "outlines",
+      "three",
+      "year",
+      "strategic",
+      "direction",
+      "names",
+      "greta",
+      "wagner",
+      "president"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "former barrys grns execs launch platform to help fitness stu",
+    "tokens": [
+      "former",
+      "barry",
+      "gruns",
+      "execs",
+      "launch",
+      "platform",
+      "help",
+      "studios",
+      "land",
+      "brand",
+      "deals"
+    ],
+    "entities": [
+      "Grüns"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "face recognition ein blick gengt",
+    "tokens": [
+      "face",
+      "recognition",
+      "blick",
+      "genugt"
     ]
   }
 ]
