@@ -1,82 +1,5 @@
 [
   {
-    "date": "2026-10-23",
-    "key": "everyone actives duncan jefford reveals chemists 4u referral",
-    "tokens": [
-      "everyone",
-      "active",
-      "duncan",
-      "jefford",
-      "reveals",
-      "chemists",
-      "referral",
-      "partnership",
-      "summit"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "orangetheory fitness launches otconnect for apple watch",
-    "tokens": [
-      "orangetheory",
-      "launches",
-      "otconnect",
-      "apple",
-      "watch"
-    ],
-    "entities": [
-      "Orangetheory"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "fitness internationals club studio expands in la",
-    "tokens": [
-      "international",
-      "club",
-      "studio",
-      "expands"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "nirva raises 33 million to launch ai pendant in wearable mar",
-    "tokens": [
-      "nirva",
-      "raises",
-      "million",
-      "launch",
-      "pendant",
-      "wearable",
-      "market"
-    ],
-    "deal": "$33m"
-  },
-  {
-    "date": "2026-10-23",
-    "key": "john reed stuttgart neuer fitness music club erffnet",
-    "tokens": [
-      "john",
-      "reed",
-      "stuttgart",
-      "neuer",
-      "music",
-      "club",
-      "ffnet"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "wilde lands 40m to scale protein snacks",
-    "tokens": [
-      "wilde",
-      "lands",
-      "scale",
-      "protein",
-      "snacks"
-    ]
-  },
-  {
     "date": "2026-10-26",
     "key": "churn starts before cancellation the member signals studios ",
     "tokens": [
@@ -1418,6 +1341,87 @@
       "recognition",
       "blick",
       "genugt"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "bodi takes insanity into the hyrox era",
+    "tokens": [
+      "bodi",
+      "takes",
+      "insanity",
+      "hyrox"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "fitness operators report ongoing growth as competition and a",
+    "tokens": [
+      "operators",
+      "ongoing",
+      "growth",
+      "competition",
+      "acquisition",
+      "costs",
+      "rise"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "youfit gyms launches 10 millionplus club reinvestment backed",
+    "tokens": [
+      "youfit",
+      "gyms",
+      "launches",
+      "million",
+      "plus",
+      "club",
+      "reinvestment",
+      "backed",
+      "skyline",
+      "investors"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "wellness strips reformat supplement routines",
+    "tokens": [
+      "strips",
+      "reformat",
+      "supplement",
+      "routines"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "levl strength introduces isokinetic home training",
+    "tokens": [
+      "levl",
+      "strength",
+      "introduces",
+      "isokinetic",
+      "home",
+      "training"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "peloton draws 68 billion demand for debut junkbond sale",
+    "tokens": [
+      "peloton",
+      "draws",
+      "billion",
+      "demand",
+      "debut",
+      "junk",
+      "bond",
+      "sale"
+    ],
+    "entities": [
+      "Peloton"
     ]
   }
 ]
