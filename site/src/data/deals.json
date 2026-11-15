@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13",
+  "generatedAt": "2026-11-15",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,74 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-15",
+      "entity": "YouFit Gyms",
+      "kind": "raise",
+      "amount": "$10M+",
+      "amountUsd": 10000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "YouFit Gyms received $10M+ from Skyline Investors to refresh existing gym clubs.",
+      "url": "https://clubsolutionsmagazine.com/2026/11/youfit-gyms-launches-10-million-plus-club-reinvestment-backed-by-skyline-investors/",
+      "source": "Club Solutions",
+      "issue": "/en/daily/2026-11-15",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "youfit-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-15",
+          "url": "https://clubsolutionsmagazine.com/2026/11/youfit-gyms-launches-10-million-plus-club-reinvestment-backed-by-skyline-investors/",
+          "issue": "/en/daily/2026-11-15"
+        }
+      ],
+      "country": "United States",
+      "investors": [
+        "Skyline Investors"
+      ],
+      "leads": [
+        "Skyline Investors"
+      ],
+      "noteDe": "YouFit Gyms erhält mehr als 10 Mio. USD von Skyline Investors zur Modernisierung bestehender Clubs.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-11-15",
+      "entity": "Sleep or Die",
+      "kind": "raise",
+      "amount": "$1M",
+      "amountUsd": 1000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Sleep or Die raised $1M from True Beauty Ventures for its dissolvable sleep supplement strips.",
+      "url": "https://insider.fitt.co/wellness-strips-reformat-supplement-routines/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-15",
+      "region": "North America",
+      "category": "Nutrition & supplements",
+      "id": "sleep-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-15",
+          "url": "https://insider.fitt.co/wellness-strips-reformat-supplement-routines/",
+          "issue": "/en/daily/2026-11-15"
+        }
+      ],
+      "country": "Canada",
+      "investors": [
+        "True Beauty Ventures"
+      ],
+      "leads": [
+        "True Beauty Ventures"
+      ],
+      "noteDe": "Sleep or Die sammelte 1 Mio. USD von True Beauty Ventures fur seine aufloslichen Schlaf-Supplement-Strips ein.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-11",
       "entity": "Vesalius Longevity Labs",

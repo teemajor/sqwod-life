@@ -279,5 +279,53 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-11"
+  },
+  "youfit-raise-2026-11": {
+    "id": "youfit-raise-2026-11",
+    "company": "YouFit Gyms",
+    "dealCountry": "United States",
+    "category": "Gyms & studios",
+    "relevant": true,
+    "oneLineEn": "YouFit Gyms received $10M+ from Skyline Investors to refresh existing gym clubs.",
+    "oneLineDe": "YouFit Gyms erhält mehr als 10 Mio. USD von Skyline Investors zur Modernisierung bestehender Clubs.",
+    "amount": "$10 million-plus",
+    "amountIs": "round",
+    "investors": [
+      "Skyline Investors"
+    ],
+    "leadInvestors": [
+      "Skyline Investors"
+    ],
+    "acquirer": "",
+    "announcedOn": "2026-11-10",
+    "dealStatus": "done",
+    "url": "https://www.prnewswire.com/news-releases/youfit-gyms-launches-10-million-plus-club-reinvestment-backed-by-skyline-investors-302934004.html",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-15"
+  },
+  "sleep-raise-2026-11": {
+    "id": "sleep-raise-2026-11",
+    "company": "Sleep or Die",
+    "dealCountry": "Canada",
+    "category": "Nutrition & supplements",
+    "relevant": true,
+    "oneLineEn": "Sleep or Die raised $1M from True Beauty Ventures for its dissolvable sleep supplement strips.",
+    "oneLineDe": "Sleep or Die sammelte 1 Mio. USD von True Beauty Ventures fur seine aufloslichen Schlaf-Supplement-Strips ein.",
+    "amount": "$1M",
+    "amountIs": "round",
+    "investors": [
+      "True Beauty Ventures"
+    ],
+    "leadInvestors": [
+      "True Beauty Ventures"
+    ],
+    "acquirer": "",
+    "announcedOn": "2026-05-22",
+    "dealStatus": "done",
+    "url": "https://wwd.com/beauty-industry-news/wellness/true-beauty-ventures-invests-sleep-or-die-1238978100/",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-15"
   }
 }
