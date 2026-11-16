@@ -327,5 +327,25 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-15"
+  },
+  "crunch-raise-2026-11": {
+    "id": "crunch-raise-2026-11",
+    "company": "Crunch Fitness",
+    "dealCountry": "United States",
+    "category": "Gyms & studios",
+    "relevant": true,
+    "oneLineEn": "Crunch Fitness seeks $800 million via franchise-revenue-backed ABS bond sale.",
+    "oneLineDe": "Crunch Fitness plant eine durch Franchise-Einnahmen besicherte ABS-Anleihe über 800 Millionen Dollar.",
+    "amount": "$800 million",
+    "amountIs": "facility",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-12",
+    "dealStatus": "planned",
+    "url": "https://athletechnews.com/crunch-fitness-seeks-to-borrow-800-million-in-abs-bond-sale/",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-16"
   }
 }

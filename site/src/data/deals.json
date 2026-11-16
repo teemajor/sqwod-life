@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15",
+  "generatedAt": "2026-11-16",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,34 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-16",
+      "entity": "Crunch Fitness",
+      "kind": "raise",
+      "amount": "$800 million",
+      "amountUsd": 800000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Crunch Fitness seeks $800 million via franchise-revenue-backed ABS bond sale.",
+      "url": "https://athletechnews.com/crunch-fitness-seeks-to-borrow-800-million-in-abs-bond-sale/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-11-16",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "crunch-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-16",
+          "url": "https://athletechnews.com/crunch-fitness-seeks-to-borrow-800-million-in-abs-bond-sale/",
+          "issue": "/en/daily/2026-11-16"
+        }
+      ],
+      "country": "United States",
+      "noteDe": "Crunch Fitness plant eine durch Franchise-Einnahmen besicherte ABS-Anleihe über 800 Millionen Dollar.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-15",
       "entity": "YouFit Gyms",
@@ -50,7 +78,7 @@
       "noteDe": "YouFit Gyms erhält mehr als 10 Mio. USD von Skyline Investors zur Modernisierung bestehender Clubs.",
       "checked": "high",
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-15",
@@ -84,7 +112,7 @@
       "noteDe": "Sleep or Die sammelte 1 Mio. USD von True Beauty Ventures fur seine aufloslichen Schlaf-Supplement-Strips ein.",
       "checked": "high",
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-11",
