@@ -1,78 +1,5 @@
 [
   {
-    "date": "2026-10-26",
-    "key": "churn starts before cancellation the member signals studios ",
-    "tokens": [
-      "churn",
-      "starts",
-      "before",
-      "cancellation",
-      "member",
-      "signals",
-      "studios",
-      "missing"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "puregym bernimmt nonstop gym in der schweiz",
-    "tokens": [
-      "puregym",
-      "bernimmt",
-      "nonstop",
-      "schweiz"
-    ],
-    "entities": [
-      "PureGym"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "the invisible layer electromagnetic exposure and human healt",
-    "tokens": [
-      "invisible",
-      "layer",
-      "electromagnetic",
-      "exposure",
-      "human",
-      "health",
-      "built",
-      "environment"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "fitness community raises 3330 in pink challenge",
-    "tokens": [
-      "community",
-      "raises",
-      "pink",
-      "challenge"
-    ],
-    "deal": "£3,330"
-  },
-  {
-    "date": "2026-10-26",
-    "key": "wir begren unser neues frdermitglied",
-    "tokens": [
-      "begr",
-      "unser",
-      "neues",
-      "rdermitglied"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "why hiring the right gm can be a growth lever for boutique f",
-    "tokens": [
-      "hiring",
-      "right",
-      "growth",
-      "lever",
-      "boutique"
-    ]
-  },
-  {
     "date": "2026-10-27",
     "key": "mark mastrov named to 2027 hfa hall of fame",
     "tokens": [
@@ -1500,6 +1427,88 @@
       "werbung",
       "mehr",
       "fitnessstudios"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "shark tank star daymond john invests in ultimate longevity c",
+    "tokens": [
+      "shark",
+      "tank",
+      "star",
+      "daymond",
+      "john",
+      "invests",
+      "ultimate",
+      "longevity",
+      "center"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "why member retention gets harder as fitness businesses grow",
+    "tokens": [
+      "member",
+      "retention",
+      "gets",
+      "harder",
+      "businesses",
+      "grow"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "club operators can build community by designing for social d",
+    "tokens": [
+      "club",
+      "operators",
+      "build",
+      "community",
+      "designing",
+      "social",
+      "dose",
+      "just",
+      "exercise"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "noom launches metabolic health wearable",
+    "tokens": [
+      "noom",
+      "launches",
+      "metabolic",
+      "health",
+      "wearable"
+    ],
+    "entities": [
+      "Noom"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "fitx ohne mindestvertragslaufzeit neue vertrge monatlich knd",
+    "tokens": [
+      "fitx",
+      "ohne",
+      "mindestvertragslaufzeit",
+      "neue",
+      "vertrage",
+      "monatlich",
+      "kundbar"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "integrated wellness acquisition corp weluf seasonal returns ",
+    "tokens": [
+      "integrated",
+      "acquisition",
+      "corp",
+      "weluf",
+      "seasonal",
+      "returns",
+      "chart"
     ]
   }
 ]
