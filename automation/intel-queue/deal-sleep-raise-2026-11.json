@@ -1,12 +1,13 @@
 {
   "id": "deal-sleep-raise-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "approved",
   "title": "Sleep or Die: raise $1M",
   "dealId": "sleep-raise-2026-11",
   "createdAt": "2026-11-15",
   "flags": [
     "old news: first announced 2026-05-22"
   ],
-  "checked": "high"
+  "checked": "high",
+  "decidedAt": "2026-11-17T14:06:28.124Z"
 }
