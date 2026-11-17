@@ -1,7 +1,7 @@
 {
   "id": "deal-crunch-raise-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "rejected",
   "title": "Crunch Fitness: raise $800 million",
   "dealId": "crunch-raise-2026-11",
   "createdAt": "2026-11-16",
@@ -10,5 +10,6 @@
     "not a completed deal (planned)",
     "no investor named (the tracker links each deal to its backers)"
   ],
-  "checked": "high"
+  "checked": "high",
+  "decidedAt": "2026-11-17T14:06:36.620Z"
 }
