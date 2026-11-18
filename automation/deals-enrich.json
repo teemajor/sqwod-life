@@ -347,5 +347,29 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-16"
+  },
+  "monster-raise-2026-11": {
+    "id": "monster-raise-2026-11",
+    "company": "Wellness Monster",
+    "dealCountry": "Canada",
+    "category": "Nutrition & supplements",
+    "relevant": true,
+    "oneLineEn": "Canadian kids' superfood snack brand Wellness Monster closed its first seed round led by Grip Ventures.",
+    "oneLineDe": "Das kanadische Kinder-Snack-Label Wellness Monster schloss seine erste Seed-Runde unter der Führung von Grip Ventures ab.",
+    "amount": "",
+    "amountIs": "undisclosed",
+    "investors": [
+      "Grip Ventures"
+    ],
+    "leadInvestors": [
+      "Grip Ventures"
+    ],
+    "acquirer": "",
+    "announcedOn": "2026-11-17",
+    "dealStatus": "done",
+    "url": "https://retail-insider.com/retail-insider/2026/11/canadian-kids-snack-brand-wellness-monster-secures-first-seed-funding-round/",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-18"
   }
 }

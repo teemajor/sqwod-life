@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17",
+  "generatedAt": "2026-11-18",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,40 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-18",
+      "entity": "Wellness Monster",
+      "kind": "raise",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Canadian kids' superfood snack brand Wellness Monster closed its first seed round led by Grip Ventures.",
+      "url": "https://app.dealroom.co/news/note/wellness-monster-lands-first-seed-round-for-canadian-kids-snacks",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-11-18",
+      "region": "North America",
+      "category": "Nutrition & supplements",
+      "id": "monster-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-18",
+          "url": "https://app.dealroom.co/news/note/wellness-monster-lands-first-seed-round-for-canadian-kids-snacks",
+          "issue": "/en/daily/2026-11-18"
+        }
+      ],
+      "country": "Canada",
+      "investors": [
+        "Grip Ventures"
+      ],
+      "leads": [
+        "Grip Ventures"
+      ],
+      "noteDe": "Das kanadische Kinder-Snack-Label Wellness Monster schloss seine erste Seed-Runde unter der Führung von Grip Ventures ab.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-16",
       "entity": "Crunch Fitness",
@@ -44,7 +78,7 @@
       "noteDe": "Crunch Fitness plant eine durch Franchise-Einnahmen besicherte ABS-Anleihe über 800 Millionen Dollar.",
       "checked": "high",
       "status": "pending",
-      "reason": "queue: pending"
+      "reason": "queue: discarded"
     },
     {
       "date": "2026-11-15",
@@ -111,8 +145,8 @@
       ],
       "noteDe": "Sleep or Die sammelte 1 Mio. USD von True Beauty Ventures fur seine aufloslichen Schlaf-Supplement-Strips ein.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-11",
@@ -176,8 +210,8 @@
       ],
       "noteDe": "Die Londoner Smoothie-Bar Elevate sammelte 2 Mio. GBP von JamJar Investments, Cassius, Active Partners und Nick Jones.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-10",
