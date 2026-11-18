@@ -1,81 +1,5 @@
 [
   {
-    "date": "2026-10-27",
-    "key": "mark mastrov named to 2027 hfa hall of fame",
-    "tokens": [
-      "mark",
-      "mastrov",
-      "named",
-      "2027",
-      "hall",
-      "fame"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "the secret strategy behind whoops 101 billion valuation",
-    "tokens": [
-      "secret",
-      "strategy",
-      "behind",
-      "whoop",
-      "billion",
-      "valuation"
-    ],
-    "entities": [
-      "Whoop"
-    ],
-    "deal": "$10.1b"
-  },
-  {
-    "date": "2026-10-27",
-    "key": "philip donnay named gll ceo as peter bundey retires",
-    "tokens": [
-      "philip",
-      "donnay",
-      "named",
-      "peter",
-      "bundey",
-      "retires"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "why body20 is betting on strength training for women",
-    "tokens": [
-      "body20",
-      "betting",
-      "strength",
-      "training",
-      "women"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "think smart software von medocheck",
-    "tokens": [
-      "think",
-      "smart",
-      "software",
-      "medo",
-      "check"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "the adecco group ag launches ezra loop an aihuman coaching s",
-    "tokens": [
-      "adecco",
-      "group",
-      "launches",
-      "ezra",
-      "loop",
-      "human",
-      "coaching",
-      "service"
-    ]
-  },
-  {
     "date": "2026-10-28",
     "key": "dssvevent 2026 in mlaga bildergalerie",
     "tokens": [
@@ -1509,6 +1433,90 @@
       "seasonal",
       "returns",
       "chart"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "australian pilates franchise pilates 247 sets sights on us e",
+    "tokens": [
+      "australian",
+      "pilates",
+      "franchise",
+      "sets",
+      "sights",
+      "expansion"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "orangetheory fitness becomes first fitness brand to train al",
+    "tokens": [
+      "orangetheory",
+      "becomes",
+      "first",
+      "brand",
+      "train",
+      "coaches",
+      "nasm"
+    ],
+    "entities": [
+      "Orangetheory"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "yttp erffnet fnftes reformerstudio in berlin",
+    "tokens": [
+      "yttp",
+      "eroffnet",
+      "funftes",
+      "reformer",
+      "studio",
+      "berlin"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "with the launch of its ai fitness coach ifit makes a bold be",
+    "tokens": [
+      "launch",
+      "coach",
+      "ifit",
+      "makes",
+      "bold",
+      "future"
+    ],
+    "entities": [
+      "iFit"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "wellness monster lands first seed round for canadian kids sn",
+    "tokens": [
+      "monster",
+      "lands",
+      "first",
+      "seed",
+      "round",
+      "canadian",
+      "kids",
+      "snacks"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "only one in six uk teenagers meets daily physical activity t",
+    "tokens": [
+      "only",
+      "teenagers",
+      "meets",
+      "daily",
+      "physical",
+      "activity",
+      "target",
+      "research",
+      "finds"
     ]
   }
 ]
