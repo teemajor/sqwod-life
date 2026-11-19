@@ -1,95 +1,5 @@
 [
   {
-    "date": "2026-10-28",
-    "key": "dssvevent 2026 in mlaga bildergalerie",
-    "tokens": [
-      "dssv",
-      "event",
-      "2026",
-      "laga",
-      "bildergalerie"
-    ],
-    "entities": [
-      "DSSV"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "sats grows earnings as group exercise strategy pays off and ",
-    "tokens": [
-      "sats",
-      "grows",
-      "earnings",
-      "group",
-      "exercise",
-      "strategy",
-      "pays",
-      "expansion",
-      "gathers",
-      "pace"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "burnham and highbridge fitness group raises 500 for breast c",
-    "tokens": [
-      "burnham",
-      "highbridge",
-      "group",
-      "raises",
-      "breast",
-      "cancer",
-      "pink",
-      "classes"
-    ],
-    "deal": "£500"
-  },
-  {
-    "date": "2026-10-28",
-    "key": "oura ring 5 with blood pressure tracking ai health feature l",
-    "tokens": [
-      "oura",
-      "ring",
-      "blood",
-      "pressure",
-      "tracking",
-      "health",
-      "feature",
-      "launched",
-      "india",
-      "price",
-      "features"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "precor stellt neue glutebuilder selectorized line vor",
-    "tokens": [
-      "precor",
-      "stellt",
-      "neue",
-      "glutebuilder",
-      "selectorized",
-      "line"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "xponential fitness shares fall as revenue and p",
-    "tokens": [
-      "xponential",
-      "shares",
-      "fall",
-      "revenue"
-    ],
-    "entities": [
-      "Xponential"
-    ]
-  },
-  {
     "date": "2026-10-29",
     "key": "intake breathing gets 62m for magnetic nasal strips",
     "tokens": [
@@ -1517,6 +1427,87 @@
       "target",
       "research",
       "finds"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "triathlon training app stamina raises 2m backed by olympic c",
+    "tokens": [
+      "triathlon",
+      "training",
+      "stamina",
+      "raises",
+      "backed",
+      "olympic",
+      "champion"
+    ],
+    "deal": "$2m"
+  },
+  {
+    "date": "2026-11-19",
+    "key": "therabody acquires embr labs thermal tech",
+    "tokens": [
+      "therabody",
+      "acquires",
+      "embr",
+      "labs",
+      "thermal",
+      "tech"
+    ],
+    "entities": [
+      "Therabody"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "ditching the fat scanner label to boost retention and revenu",
+    "tokens": [
+      "ditching",
+      "scanner",
+      "label",
+      "boost",
+      "retention",
+      "revenue",
+      "ashley",
+      "ziegler",
+      "henzler",
+      "seca"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "mckinsey values wellness at 27t but says key markets are und",
+    "tokens": [
+      "mckinsey",
+      "values",
+      "markets",
+      "underserved"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "aciso gewinnspiel ein jahr beratung und onlinemarketing",
+    "tokens": [
+      "aciso",
+      "gewinnspiel",
+      "jahr",
+      "beratung",
+      "online",
+      "marketing"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "hone health secures 228m enters peptides and pmos care",
+    "tokens": [
+      "hone",
+      "health",
+      "secures",
+      "228m",
+      "enters",
+      "peptides",
+      "pmos",
+      "care"
     ]
   }
 ]
