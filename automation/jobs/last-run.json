@@ -1,11 +1,11 @@
 {
- "startedAt": "2026-11-12T21:57:14.591Z",
+ "startedAt": "2026-11-19T22:48:56.498Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
    "enabled": true,
-   "fetched": 326,
-   "kept": 269,
+   "fetched": 317,
+   "kept": 263,
    "diag": {
     "tried": [
      {
@@ -17,11 +17,11 @@
        "size",
        "facetten"
       ],
-      "maxErgebnisse": 71,
+      "maxErgebnisse": 81,
       "items": 50,
       "sample": {
        "stellenangebotsart": "ARBEIT",
-       "stellenangebotsTitel": "Fitnesstrainer (m/w/d)",
+       "stellenangebotsTitel": "Fitnesstrainer/in",
        "quereinstiegGeeignet": false,
        "arbeitszeitSchichtNachtWochenende": false,
        "arbeitszeitTeilzeitAbend": false,
@@ -30,33 +30,31 @@
        "arbeitszeitTeilzeitFlexibel": false,
        "arbeitszeitVollzeit": true,
        "eintrittszeitraum": {
-        "von": "2026-11-07"
+        "von": "2026-11-20"
        },
        "verguetungsangabe": "KEINE_ANGABEN",
-       "vertragsdauer": "KEINE_ANGABE",
+       "vertragsdauer": "UNBEFRISTET",
        "istGeringfuegigeBeschaeftigung": false,
        "stellenlokationen": [
         {
          "adresse": {
-          "plz": "13585",
-          "ort": "Berlin",
-          "region": "BERLIN",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 52.5479823,
-         "laenge": 13.2034676
+          "plz": "1200",
+          "ort": "Wien,Brigittenau",
+          "region": "WIEN",
+          "land": "OESTERREICH"
+         }
         }
        ],
        "homeofficemoeglich": false,
        "veroeffentlichungszeitraum": {
-        "von": "2026-11-07"
+        "von": "2026-11-19"
        },
-       "datumErsteVeroeffentlichung": "2026-11-06",
-       "aenderungsdatum": "2026-11-07T07:12:56.283",
-       "externeURL": "https://www.hogapage.de/jobs/fitnesstrainer-in-berlin/OTHZMY-BZ3/?hp_source=api-arbeitsamt&utm_medium=API&utm_source=arbeitsamt",
+       "datumErsteVeroeffentlichung": "2026-11-19",
+       "aenderungsdatum": "2026-11-19T17:51:25.977",
+       "externeURL": "https://jobs.ams.at/public/emps/jobs/4b378c4c-1ced-3e60-ba69-36e4367ad95e",
        "hauptberuf": "Fitnesstrainer/in",
-       "firma": "centrovital",
-       "referenznummer": "12518-OTHZMY-BZ3-S",
+       "firma": "Mrs.Sporty Club Wien Brigit tenau",
+       "referenznummer": "11949-17411521-S",
        "alleBerufe": [
         "Fitnesstrainer/in"
        ]
@@ -90,14 +88,14 @@
      "alleBerufe"
     ],
     "pay": {
-     "KEINE_ANGABEN": 246,
-     "JAHRESGEHALT": 53,
-     "STUNDENLOHN": 27
+     "KEINE_ANGABEN": 244,
+     "JAHRESGEHALT": 35,
+     "STUNDENLOHN": 38
     },
     "detail": {
-     "wanted": 31,
-     "fetched": 31,
-     "withFigure": 31,
+     "wanted": 27,
+     "fetched": 27,
+     "withFigure": 27,
      "textOnly": 0,
      "failed": 0,
      "path": "/pc/v4/jobdetails/",
@@ -134,19 +132,19 @@
      ],
      "samples": [
       "20.000 € – 30.000 € / Jahr (Arbeitsagentur)",
-      "26.400 € – 41.000 € / Jahr (Arbeitsagentur)",
+      "14 € – 15 € / Std. (Arbeitsagentur)",
       "30.000 € – 36.000 € / Jahr (Arbeitsagentur)",
+      "14 € – 15 € / Std. (Arbeitsagentur)",
       "28.800 € – 38.400 € / Jahr (Arbeitsagentur)",
-      "36.000 € / Jahr (Arbeitsagentur)",
-      "15 € – 20 € / Std. (Arbeitsagentur)"
+      "36.000 € / Jahr (Arbeitsagentur)"
      ]
     }
    }
   },
   "adzuna": {
    "enabled": true,
-   "fetched": 286,
-   "kept": 149
+   "fetched": 357,
+   "kept": 222
   },
   "career-page": {
    "enabled": true,
@@ -179,7 +177,7 @@
  },
  "hosts": {
   "rest.arbeitsagentur.de": {
-   "requests": 69,
+   "requests": 66,
    "failures": 0,
    "errors": []
   },
@@ -277,10 +275,8 @@
   },
   "myequilibria.com": {
    "requests": 1,
-   "failures": 1,
-   "errors": [
-    "HTTP 404 /careers"
-   ]
+   "failures": 0,
+   "errors": []
   },
   "boards-api.greenhouse.io": {
    "requests": 29,
@@ -734,18 +730,18 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 418,
-  "unique": 211,
-  "withPay": 38
+  "fetchedAfterGate": 485,
+  "unique": 252,
+  "withPay": 34
  },
  "summary": {
-  "live": 441,
-  "newThisWeek": 74,
-  "withPay": 58,
-  "newWithPay": 11,
-  "hostsFailed": 3,
+  "live": 562,
+  "newThisWeek": 121,
+  "withPay": 67,
+  "newWithPay": 9,
+  "hostsFailed": 2,
   "sourcesFailed": []
  },
- "finishedAt": "2026-11-12T22:03:12.713Z",
- "payLinesAppended": 13
+ "finishedAt": "2026-11-19T22:55:32.352Z",
+ "payLinesAppended": 9
 }
