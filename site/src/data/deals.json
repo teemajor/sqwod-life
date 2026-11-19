@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18",
+  "generatedAt": "2026-11-19",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,112 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-19",
+      "entity": "Hone Health",
+      "kind": "raise",
+      "amount": "$228M",
+      "amountUsd": 228000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Hone Health raised $228M in equity and growth financing to expand longevity care.",
+      "url": "https://insider.fitt.co/hone-health-secures-228m-enters-peptides-and-pmos-care/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-19",
+      "region": "North America",
+      "category": "Health & longevity",
+      "id": "hone-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-19",
+          "url": "https://insider.fitt.co/hone-health-secures-228m-enters-peptides-and-pmos-care/",
+          "issue": "/en/daily/2026-11-19"
+        }
+      ],
+      "country": "United States",
+      "investors": [
+        "MarcyPen Capital Partners",
+        "General Catalyst (Customer Value Fund)",
+        "Pentland Ventures",
+        "Kinship Ventures",
+        "Hanwha",
+        "Gannet Capital",
+        "humbition",
+        "Comma Capital"
+      ],
+      "leads": [
+        "MarcyPen Capital Partners"
+      ],
+      "noteDe": "Hone Health hat 228 Mio. Dollar in Eigenkapital- und Wachstumsfinanzierung für den Ausbau der Longevity-Plattform eingesammelt.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-11-19",
+      "entity": "Stamina",
+      "kind": "raise",
+      "amount": "$2M",
+      "amountUsd": 2000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "London triathlon app Stamina raised $2M seed funding backed by Olympic champion Greg Van Avermaet.",
+      "url": "https://athletechnews.com/triathlon-training-app-stamina-raises-2-million-backed-by-olympic-champion/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-11-19",
+      "region": "UK",
+      "category": "Software & AI",
+      "id": "stamina-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-19",
+          "url": "https://athletechnews.com/triathlon-training-app-stamina-raises-2-million-backed-by-olympic-champion/",
+          "issue": "/en/daily/2026-11-19"
+        }
+      ],
+      "country": "United Kingdom",
+      "investors": [
+        "Greg Van Avermaet",
+        "Syndicate One",
+        "100IN",
+        "Average Rob",
+        "Tomas Van Den Spiegel"
+      ],
+      "leads": [],
+      "noteDe": "Die Londoner Triathlon-App Stamina hat 2 Mio. Dollar Seed-Kapital eingesammelt, unter anderem vom Olympiasieger Greg Van Avermaet.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-11-19",
+      "entity": "Embr Labs",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Therabody acquired Embr Labs' thermal wristband IP to expand into menopause and women's health.",
+      "url": "https://insider.fitt.co/therabody-acquires-embr-labs-thermal-tech/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-19",
+      "region": "North America",
+      "category": "Wearables & devices",
+      "id": "therabody-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-19",
+          "url": "https://insider.fitt.co/therabody-acquires-embr-labs-thermal-tech/",
+          "issue": "/en/daily/2026-11-19"
+        }
+      ],
+      "country": "United States",
+      "acquirer": "Therabody",
+      "noteDe": "Therabody hat das Thermaltechnologie-IP von Embr Labs übernommen, um das Angebot im Bereich Frauen- und Menopausengesundheit auszubauen.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-18",
       "entity": "Wellness Monster",

@@ -371,5 +371,82 @@
     "primarySource": false,
     "confidence": "high",
     "checkedAt": "2026-11-18"
+  },
+  "hone-raise-2026-11": {
+    "id": "hone-raise-2026-11",
+    "company": "Hone Health",
+    "dealCountry": "United States",
+    "category": "Health & longevity",
+    "relevant": true,
+    "oneLineEn": "Hone Health raised $228M in equity and growth financing to expand longevity care.",
+    "oneLineDe": "Hone Health hat 228 Mio. Dollar in Eigenkapital- und Wachstumsfinanzierung für den Ausbau der Longevity-Plattform eingesammelt.",
+    "amount": "$228M ($28M equity + $200M growth financing)",
+    "amountIs": "round",
+    "investors": [
+      "MarcyPen Capital Partners",
+      "General Catalyst (Customer Value Fund)",
+      "Pentland Ventures",
+      "Kinship Ventures",
+      "Hanwha",
+      "Gannet Capital",
+      "humbition",
+      "Comma Capital"
+    ],
+    "leadInvestors": [
+      "MarcyPen Capital Partners"
+    ],
+    "acquirer": "",
+    "announcedOn": "2026-11-18",
+    "dealStatus": "done",
+    "url": "https://www.fiercehealthcare.com/digital-health/longevity-platform-hone-health-nabs-228m-build-out-offerings",
+    "primarySource": false,
+    "confidence": "high",
+    "checkedAt": "2026-11-19"
+  },
+  "stamina-raise-2026-11": {
+    "id": "stamina-raise-2026-11",
+    "company": "Stamina",
+    "dealCountry": "United Kingdom",
+    "category": "Software & AI",
+    "relevant": true,
+    "oneLineEn": "London triathlon app Stamina raised $2M seed funding backed by Olympic champion Greg Van Avermaet.",
+    "oneLineDe": "Die Londoner Triathlon-App Stamina hat 2 Mio. Dollar Seed-Kapital eingesammelt, unter anderem vom Olympiasieger Greg Van Avermaet.",
+    "amount": "$2M",
+    "amountIs": "round",
+    "investors": [
+      "Greg Van Avermaet",
+      "Syndicate One",
+      "100IN",
+      "Average Rob",
+      "Tomas Van Den Spiegel"
+    ],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-18",
+    "dealStatus": "done",
+    "url": "https://insider.fitt.co/press-release/olympic-champion-greg-van-avermaet-backs-triathlon-app-stamina-in-2m-round/",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-19"
+  },
+  "therabody-acquisition-2026-11": {
+    "id": "therabody-acquisition-2026-11",
+    "company": "Embr Labs",
+    "dealCountry": "United States",
+    "category": "Wearables & devices",
+    "relevant": true,
+    "oneLineEn": "Therabody acquired Embr Labs' thermal wristband IP to expand into menopause and women's health.",
+    "oneLineDe": "Therabody hat das Thermaltechnologie-IP von Embr Labs übernommen, um das Angebot im Bereich Frauen- und Menopausengesundheit auszubauen.",
+    "amount": "",
+    "amountIs": "undisclosed",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "Therabody",
+    "announcedOn": "2026-11-18",
+    "dealStatus": "done",
+    "url": "https://www.prnewswire.com/news-releases/therabody-acquires-embr-labs-thermal-technology-marking-the-next-chapter-in-its-commitment-to-womens-health-302943397.html",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-19"
   }
 }
