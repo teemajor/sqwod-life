@@ -1,87 +1,5 @@
 [
   {
-    "date": "2026-10-29",
-    "key": "intake breathing gets 62m for magnetic nasal strips",
-    "tokens": [
-      "intake",
-      "breathing",
-      "gets",
-      "magnetic",
-      "nasal",
-      "strips"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "garmin fitness revenue climbs 16 after screenless wearable l",
-    "tokens": [
-      "garmin",
-      "revenue",
-      "climbs",
-      "screenless",
-      "wearable",
-      "launch"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "how one fitness operator tripled recovery engagement metrics",
-    "tokens": [
-      "operator",
-      "tripled",
-      "recovery",
-      "engagement",
-      "metrics"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "total fitness ceo sophie lawler and fitness first ceo marc d",
-    "tokens": [
-      "total",
-      "sophie",
-      "lawler",
-      "first",
-      "marc",
-      "diaper",
-      "script",
-      "summit"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "remembering dr tyler c cooper",
-    "tokens": [
-      "remembering",
-      "tyler",
-      "cooper"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "garmin q3 2026 earnings call garmin raises fullyear outlook ",
-    "tokens": [
-      "garmin",
-      "2026",
-      "earnings",
-      "call",
-      "raises",
-      "full",
-      "year",
-      "outlook",
-      "revenue",
-      "tops",
-      "jumps"
-    ],
-    "entities": [
-      "Garmin"
-    ],
-    "deal": "$1.98b"
-  },
-  {
     "date": "2026-10-30",
     "key": "providence agrees fitness park acquisition strengthening eur",
     "tokens": [
@@ -1508,6 +1426,82 @@
       "peptides",
       "pmos",
       "care"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "fitnation mnchen am 25 november",
+    "tokens": [
+      "fitnation",
+      "munchen",
+      "november"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "fitx neues studio in dsseldorffriedrichstadt erffnet",
+    "tokens": [
+      "fitx",
+      "neues",
+      "studio",
+      "dusseldorf",
+      "friedrichstadt",
+      "eroffnet"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "stripes beauty raises 5m to push into sexual wellness",
+    "tokens": [
+      "stripes",
+      "beauty",
+      "raises",
+      "push",
+      "sexual"
+    ],
+    "deal": "$5m"
+  },
+  {
+    "date": "2026-11-20",
+    "key": "interactive strength grows revenue following acquisitions ey",
+    "tokens": [
+      "interactive",
+      "strength",
+      "grows",
+      "revenue",
+      "following",
+      "acquisitions",
+      "eyes",
+      "deals"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "munich ravens tryout day leistungsdiagnostik mit egym",
+    "tokens": [
+      "munich",
+      "ravens",
+      "tryout",
+      "leistungsdiagnostik",
+      "egym"
+    ],
+    "entities": [
+      "EGYM"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "workout anytime signs 15club deal to expand across southeast",
+    "tokens": [
+      "workout",
+      "anytime",
+      "signs",
+      "club",
+      "deal",
+      "expand",
+      "across",
+      "southeast",
+      "states"
     ]
   }
 ]
