@@ -448,5 +448,25 @@
     "primarySource": true,
     "confidence": "high",
     "checkedAt": "2026-11-19"
+  },
+  "fitx-acquisition-2026-11": {
+    "id": "fitx-acquisition-2026-11",
+    "company": "FitX",
+    "dealCountry": "Germany",
+    "category": "Gyms & studios",
+    "relevant": true,
+    "oneLineEn": "FitX opened its 115th gym in Düsseldorf-Friedrichstadt, investing around 2.5 million euros.",
+    "oneLineDe": "FitX eröffnete seinen 115. Standort in Düsseldorf-Friedrichstadt mit einer Investition von rund 2,5 Millionen Euro.",
+    "amount": "rund 2,5 Millionen Euro",
+    "amountIs": "facility",
+    "investors": [],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-18",
+    "dealStatus": "done",
+    "url": "https://www.presseportal.de/pm/117451/6393091",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-20"
   }
 }

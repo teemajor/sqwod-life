@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19",
+  "generatedAt": "2026-11-20",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,34 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-20",
+      "entity": "FitX",
+      "kind": "acquisition",
+      "amount": "€2,500,000",
+      "amountUsd": 2700000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "FitX opened its 115th gym in Düsseldorf-Friedrichstadt, investing around 2.5 million euros.",
+      "url": "https://www.fitnessmanagement.de/fitx-duesseldorf-friedrichstadt-studioeroeffnung-2026/",
+      "source": "fitness MANAGEMENT",
+      "issue": "/en/daily/2026-11-20",
+      "region": "DACH",
+      "category": "Gyms & studios",
+      "id": "fitx-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-20",
+          "url": "https://www.fitnessmanagement.de/fitx-duesseldorf-friedrichstadt-studioeroeffnung-2026/",
+          "issue": "/en/daily/2026-11-20"
+        }
+      ],
+      "country": "Germany",
+      "noteDe": "FitX eröffnete seinen 115. Standort in Düsseldorf-Friedrichstadt mit einer Investition von rund 2,5 Millionen Euro.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "new"
+    },
     {
       "date": "2026-11-19",
       "entity": "Hone Health",

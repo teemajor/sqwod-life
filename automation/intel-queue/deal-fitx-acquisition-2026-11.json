@@ -1,0 +1,13 @@
+{
+  "id": "deal-fitx-acquisition-2026-11",
+  "kind": "deal",
+  "status": "pending",
+  "title": "FitX: acquisition €2,500,000",
+  "dealId": "fitx-acquisition-2026-11",
+  "createdAt": "2026-11-20",
+  "flags": [
+    "stored amount looks like a facility figure, not the deal size",
+    "buyer not named"
+  ],
+  "checked": "high"
+}
