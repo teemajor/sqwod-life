@@ -1,76 +1,5 @@
 [
   {
-    "date": "2026-10-30",
-    "key": "providence agrees fitness park acquisition strengthening eur",
-    "tokens": [
-      "providence",
-      "agrees",
-      "park",
-      "acquisition",
-      "strengthening",
-      "european",
-      "interests"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "turning fitness tracking into a retention tool",
-    "tokens": [
-      "turning",
-      "tracking",
-      "retention",
-      "tool"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "ozlo raises 22m to advance sleep tech",
-    "tokens": [
-      "ozlo",
-      "raises",
-      "advance",
-      "sleep",
-      "tech"
-    ],
-    "deal": "$22m"
-  },
-  {
-    "date": "2026-10-30",
-    "key": "fitness first hyrox training club in hamburg erffnet",
-    "tokens": [
-      "first",
-      "hyrox",
-      "training",
-      "club",
-      "hamburg",
-      "eroffnet"
-    ],
-    "entities": [
-      "Hyrox"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "fitlab files for bankruptcy",
-    "tokens": [
-      "fitlab",
-      "files",
-      "bankruptcy"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "aktivpark padel club opening weekend und spielbetrieb",
-    "tokens": [
-      "aktivpark",
-      "padel",
-      "club",
-      "opening",
-      "weekend",
-      "spielbetrieb"
-    ]
-  },
-  {
     "date": "2026-11-01",
     "key": "unconventional thinker kyle scheele to challenge whats possi",
     "tokens": [
@@ -1502,6 +1431,85 @@
       "across",
       "southeast",
       "states"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "chris hemsworth launches kinsyn a personalized longevity pla",
+    "tokens": [
+      "chris",
+      "hemsworth",
+      "launches",
+      "kinsyn",
+      "personalized",
+      "longevity",
+      "platform"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "mckinsey recovery and biohacking fuel wellness markets us27 ",
+    "tokens": [
+      "mckinsey",
+      "recovery",
+      "biohacking",
+      "fuel",
+      "market",
+      "trillion",
+      "boom"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "crunch fitness introduces a new training zone with specialty",
+    "tokens": [
+      "crunch",
+      "introduces",
+      "training",
+      "zone",
+      "specialty",
+      "equipment",
+      "space",
+      "create",
+      "share",
+      "connect"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "nike to sell 2199 smart strength trainer as performance push",
+    "tokens": [
+      "nike",
+      "sell",
+      "smart",
+      "strength",
+      "trainer",
+      "performance",
+      "push",
+      "continues"
+    ],
+    "entities": [
+      "Nike"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "seed oilfree is a selling point",
+    "tokens": [
+      "seed",
+      "free",
+      "selling",
+      "point"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "how seca is making longevity measurable",
+    "tokens": [
+      "seca",
+      "making",
+      "longevity",
+      "measurable"
     ]
   }
 ]
