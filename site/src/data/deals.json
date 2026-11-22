@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20",
+  "generatedAt": "2026-11-22",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -44,7 +44,7 @@
       "noteDe": "FitX eröffnete seinen 115. Standort in Düsseldorf-Friedrichstadt mit einer Investition von rund 2,5 Millionen Euro.",
       "checked": "high",
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-19",
