@@ -4,8 +4,8 @@
   "date": "2026-11-22",
   "title": "KINSYN longevity platform launches with Hemsworth & Nike Strength adds $2,199 Voltra I smart trainer",
   "titleDe": "Chris Hemsworth gründet KINSYN für personalisierte Gesundheit & Nike Strength listet Beyond Power Voltra I",
-  "status": "pending",
-  "held": true,
+  "status": "released",
+  "held": false,
   "flags": [
     "Only 2 stories made it through the checks."
   ],
@@ -14,5 +14,7 @@
     "9 story text(s) were rewritten from their source after a claim check.",
     "4 story(ies) were dropped because a claim could not be backed."
   ],
-  "createdAt": "2026-11-22"
+  "createdAt": "2026-11-22",
+  "releasedAt": "2026-11-22T09:01:14.121Z",
+  "releasedBy": "auto 10:00"
 }
