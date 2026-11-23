@@ -1,26 +1,19 @@
 {
   "site": "sc-domain:sqwod.life",
   "window": {
-    "start": "2026-10-16",
-    "end": "2026-11-13",
+    "start": "2026-10-23",
+    "end": "2026-11-20",
     "days": 28
   },
-  "generatedAt": "2026-11-16T16:00:44.100Z",
+  "generatedAt": "2026-11-23T06:31:15.326Z",
   "totals": {
     "clicks": 0,
-    "impressions": 16,
+    "impressions": 8,
     "ctr": 0,
-    "queries": 5,
+    "queries": 4,
     "pages": 10
   },
   "topQueries": [
-    {
-      "query": "nexowod",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0,
-      "position": 76.9
-    },
     {
       "query": "\"jazzercise\"",
       "clicks": 0,
@@ -29,16 +22,16 @@
       "position": 83.3
     },
     {
-      "query": "sqwod",
+      "query": "nexowod",
       "clicks": 0,
       "impressions": 2,
       "ctr": 0,
-      "position": 3
+      "position": 62.5
     },
     {
       "query": "sqwod pod",
       "clicks": 0,
-      "impressions": 1,
+      "impressions": 2,
       "ctr": 0,
       "position": 1
     },
@@ -52,20 +45,20 @@
   ],
   "topPages": [
     {
-      "page": "https://sqwod.life/de/",
-      "lang": "de",
-      "clicks": 0,
-      "impressions": 14,
-      "ctr": 0,
-      "position": 50
-    },
-    {
       "page": "https://sqwod.life/en/",
       "lang": "en",
       "clicks": 0,
-      "impressions": 14,
+      "impressions": 11,
       "ctr": 0,
       "position": 2.6
+    },
+    {
+      "page": "https://sqwod.life/de/",
+      "lang": "de",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 15.1
     },
     {
       "page": "https://sqwod.life/en/daily/",
@@ -134,35 +127,21 @@
   ],
   "striking": [],
   "questions": [],
-  "gaps": [
-    {
-      "query": "nexowod",
-      "landedOn": "https://sqwod.life/de/",
-      "impressions": 9,
-      "position": 76.9
-    }
-  ],
+  "gaps": [],
   "countries": [
     {
       "country": "usa",
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 13,
       "ctr": 0,
-      "position": 27.1
+      "position": 26.5
     },
     {
       "country": "deu",
       "clicks": 0,
       "impressions": 7,
       "ctr": 0,
-      "position": 11.3
-    },
-    {
-      "country": "che",
-      "clicks": 0,
-      "impressions": 3,
-      "ctr": 0,
-      "position": 79.7
+      "position": 11
     },
     {
       "country": "dnk",
@@ -170,13 +149,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 1
-    },
-    {
-      "country": "ecu",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 90
     },
     {
       "country": "gbr",
@@ -198,20 +170,6 @@
       "impressions": 1,
       "ctr": 0,
       "position": 1
-    },
-    {
-      "country": "ukr",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 90
-    },
-    {
-      "country": "zaf",
-      "clicks": 0,
-      "impressions": 1,
-      "ctr": 0,
-      "position": 87
     }
   ]
 }
