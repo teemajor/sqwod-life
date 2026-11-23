@@ -44,7 +44,7 @@
       "noteDe": "FitX eröffnete seinen 115. Standort in Düsseldorf-Friedrichstadt mit einer Investition von rund 2,5 Millionen Euro.",
       "checked": "high",
       "status": "pending",
-      "reason": "queue: pending"
+      "reason": "queue: discarded"
     },
     {
       "date": "2026-11-19",
@@ -89,8 +89,8 @@
       ],
       "noteDe": "Hone Health hat 228 Mio. Dollar in Eigenkapital- und Wachstumsfinanzierung für den Ausbau der Longevity-Plattform eingesammelt.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-19",
@@ -125,8 +125,8 @@
       "leads": [],
       "noteDe": "Die Londoner Triathlon-App Stamina hat 2 Mio. Dollar Seed-Kapital eingesammelt, unter anderem vom Olympiasieger Greg Van Avermaet.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-19",
@@ -154,8 +154,8 @@
       "acquirer": "Therabody",
       "noteDe": "Therabody hat das Thermaltechnologie-IP von Embr Labs übernommen, um das Angebot im Bereich Frauen- und Menopausengesundheit auszubauen.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-18",
@@ -188,8 +188,8 @@
       ],
       "noteDe": "Das kanadische Kinder-Snack-Label Wellness Monster schloss seine erste Seed-Runde unter der Führung von Grip Ventures ab.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-16",
@@ -250,8 +250,8 @@
       ],
       "noteDe": "YouFit Gyms erhält mehr als 10 Mio. USD von Skyline Investors zur Modernisierung bestehender Clubs.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-15",
@@ -312,8 +312,8 @@
       "country": "Canada",
       "noteDe": "Vesalius Longevity Labs sammelte 6,5 Mio. USD in einer Privatplatzierung, organisiert von Equinox-Chairman Harvey Spevak.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-11",
@@ -378,8 +378,8 @@
       "acquirer": "Virgin Active",
       "noteDe": "Virgin Active übernimmt 13 Holmes-Place-Clubs in Deutschland für 135 Millionen Euro.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-09",
