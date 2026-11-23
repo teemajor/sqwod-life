@@ -1,86 +1,5 @@
 [
   {
-    "date": "2026-11-01",
-    "key": "unconventional thinker kyle scheele to challenge whats possi",
-    "tokens": [
-      "unconventional",
-      "thinker",
-      "kyle",
-      "scheele",
-      "challenge",
-      "what",
-      "possible",
-      "keynote",
-      "show",
-      "2027"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "mark mastrov unveils founders club brand combining fitness r",
-    "tokens": [
-      "mark",
-      "mastrov",
-      "unveils",
-      "founders",
-      "club",
-      "brand",
-      "combining",
-      "recovery",
-      "medical"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "stryv raises us115 million to expand personal care and home ",
-    "tokens": [
-      "stryv",
-      "raises",
-      "million",
-      "expand",
-      "personal",
-      "care",
-      "home",
-      "business",
-      "across",
-      "asia"
-    ],
-    "deal": "$11.5m"
-  },
-  {
-    "date": "2026-11-01",
-    "key": "the runningboomis turning marathonsintomultimilliondollarbra",
-    "tokens": [
-      "running",
-      "boom",
-      "turning",
-      "marathons",
-      "multimillion",
-      "dollar",
-      "brands"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "running faces a growth paradox",
-    "tokens": [
-      "running",
-      "faces",
-      "growth",
-      "paradox"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "neu im vorteilsclub 0  provision mit easy fitpass",
-    "tokens": [
-      "vorteilsclub",
-      "provision",
-      "easy",
-      "fitpass"
-    ]
-  },
-  {
     "date": "2026-11-02",
     "key": "sekonda launches 7999 subscriptionfree smart ring",
     "tokens": [
@@ -1510,6 +1429,89 @@
       "making",
       "longevity",
       "measurable"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "world gym passes 300 locations as q3 profit jumps",
+    "tokens": [
+      "world",
+      "passes",
+      "locations",
+      "profit",
+      "jumps"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "hone health raises 228m for longevity play",
+    "tokens": [
+      "hone",
+      "health",
+      "raises",
+      "228m",
+      "longevity",
+      "play"
+    ],
+    "deal": "$228m"
+  },
+  {
+    "date": "2026-11-23",
+    "key": "the oura black friday deals have dropped  and the oura ring ",
+    "tokens": [
+      "oura",
+      "black",
+      "friday",
+      "deals",
+      "have",
+      "dropped",
+      "ring",
+      "lowest",
+      "ever",
+      "price"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "zing coach  ai fitness coaching platform adaptive workouts  ",
+    "tokens": [
+      "zing",
+      "coach",
+      "coaching",
+      "platform",
+      "adaptive",
+      "workouts",
+      "integration"
+    ],
+    "entities": [
+      "Zing Coach"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "touchbay kostenfreie werbeflchen fr gesundheitsinitiativen",
+    "tokens": [
+      "touch",
+      "kostenfreie",
+      "werbeflachen",
+      "gesundheitsinitiativen"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "zygos underwater headphones are a gamechanger for swimmers  ",
+    "tokens": [
+      "zygo",
+      "underwater",
+      "headphones",
+      "game",
+      "changer",
+      "swimmers",
+      "black",
+      "friday"
     ]
   }
 ]
