@@ -1,10 +1,11 @@
 {
   "id": "deal-stamina-raise-2026-11",
   "kind": "deal",
-  "status": "pending",
+  "status": "approved",
   "title": "Stamina: raise $2M",
   "dealId": "stamina-raise-2026-11",
   "createdAt": "2026-11-19",
   "flags": [],
-  "checked": "high"
+  "checked": "high",
+  "decidedAt": "2026-11-23T08:21:01.251Z"
 }
