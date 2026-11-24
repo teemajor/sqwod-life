@@ -19,6 +19,56 @@
   "mergeDays": 60,
   "deals": [
     {
+      "date": "2026-11-24",
+      "entity": "Therme Manchester",
+      "kind": "valuation",
+      "amount": "£500m",
+      "amountUsd": 635000000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "revealed updated designs for its £500m wellness resort at a 28-acre TraffordCity site as construction progresses",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Therme-Manchester-refines-resort-plans-as-group-calls-for-wellbeing-to-become-social-infrastructure/364003",
+      "source": "Health Club Management",
+      "issue": "/en/daily/2026-11-24",
+      "region": "UK",
+      "category": "Other",
+      "id": "therme-valuation-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-24",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Therme-Manchester-refines-resort-plans-as-group-calls-for-wellbeing-to-become-social-infrastructure/364003",
+          "issue": "/en/daily/2026-11-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
+      "date": "2026-11-24",
+      "entity": "Ohana Growth Partners",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "sold seven Florida Planet Fitness clubs totalling nearly 134,000 square feet to Gulf Coast Fitness Management",
+      "url": "https://clubsolutionsmagazine.com/2026/11/ohana-growth-partners-sells-its-florida-portfolio/",
+      "source": "Club Solutions",
+      "issue": "/en/daily/2026-11-24",
+      "region": "Other",
+      "category": "Other",
+      "id": "ohana-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-24",
+          "url": "https://clubsolutionsmagazine.com/2026/11/ohana-growth-partners-sells-its-florida-portfolio/",
+          "issue": "/en/daily/2026-11-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "new"
+    },
+    {
       "date": "2026-11-20",
       "entity": "FitX",
       "kind": "acquisition",
