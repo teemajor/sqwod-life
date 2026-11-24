@@ -1,7 +1,7 @@
 {
   "id": "evidence-collagen-evidence-coach-playbook",
   "kind": "evidence",
-  "status": "approved",
+  "status": "applied",
   "slug": "collagen-evidence-coach-playbook",
   "title": "Collagen for Lifters: What the Evidence Supports and What It Does Not",
   "titleDe": "Kollagen für Kraftsportler: Was die Evidenz stützt und was nicht",
@@ -16,5 +16,6 @@
     "The trial count (9) comes from a broad ClinicalTrials.gov search and includes one observational study and one undenatured type II collagen (NT-II) trial; worth a glance.",
     "DE compliance: the EU has no authorised health claim for collagen itself (only vitamin C 'contributes to normal collagen formation'); the article makes no product claims, but keep this in mind for any linked deals copy."
   ],
-  "decidedAt": "2026-11-24T08:35:33.145Z"
+  "decidedAt": "2026-11-24T08:35:33.145Z",
+  "appliedAt": "2026-11-24"
 }
