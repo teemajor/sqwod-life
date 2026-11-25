@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24",
+  "generatedAt": "2026-11-25",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -41,7 +41,7 @@
         }
       ],
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-24",
@@ -66,7 +66,7 @@
         }
       ],
       "status": "pending",
-      "reason": "new"
+      "reason": "queue: pending"
     },
     {
       "date": "2026-11-20",
