@@ -16,6 +16,7 @@ import { isLiveIssue } from '../../config/daily.mjs';
 import { priceOf } from '../../lib/price';
 import { join } from 'node:path';
 import { appleFor, spotifyFor, episodeAudio } from '../../config/podcast';
+import { statLen } from '../../lib/stat';
 
 export function getStaticPaths() {
   return languages.map((lang) => ({ params: { lang } }));
@@ -228,7 +229,7 @@ const T = de
       <div class="g3 swipe">
         {reports.map((r, i) => (
           <a class={`rc lift rv d${i + 1}${i === 1 ? ' tilt' : ''}`} href={hrefFor(r)}>
-            <span class="dnum rc-n" data-count>{statOf(r)}</span>
+            <span class="dnum rc-n" data-count data-len={statLen(statOf(r))}>{statOf(r)}</span>
             <span class="rc-l">{statLabelOf(r)}</span>
             <span class="rc-h">{r.data.title}</span>
             <span class="rc-go">{de ? 'Report lesen' : 'Read the report'} →</span>
@@ -403,6 +404,8 @@ const T = de
   /* report cards */
   .rc{display:flex;flex-direction:column;gap:10px;border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:26px;text-decoration:none}
   .rc-n{font-size:80px;color:var(--chalk)}
+  .rc-n[data-len="m"]{font-size:54px}
+  .rc-n[data-len="l"]{font-size:34px;line-height:1}
   .rc-l{font-family:var(--mono);font-size:12px;color:var(--g3);line-height:1.5}
   .rc-h{font-size:18px;font-weight:600;line-height:1.3;letter-spacing:-.01em;margin-top:6px}
   .rc-go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:600;color:var(--accent)}

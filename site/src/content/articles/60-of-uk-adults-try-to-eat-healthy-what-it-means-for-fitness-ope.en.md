@@ -161,8 +161,8 @@ changelog:
   - { date: "2026-11-04", note: "First publish. Figures from the chart data of Statista study 39785 plus 8 newer public sources. Reviewed before publishing." }
 hero:
   kind: bars
-  stat: "60% want healthy eating, 57% have no plan"
-  statLabel: "The intent-action gap operators can own"
+  stat: "60%"
+  statLabel: "want to eat healthy, 57% have no plan"
 tags: ["nutrition","uk-market","consumer-behaviour","plant-based","supplements"]
 ---
 

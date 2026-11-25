@@ -2,6 +2,7 @@
 // Per-article animated hero. Same monochrome discipline, unique per article.
 // When `art` is set, show that custom hand-drawn illustration full-bleed
 // (pure illustration, no overlay); otherwise fall back to the generated viz.
+import { statLen } from '../lib/stat';
 interface Props { kind?: string; art?: string; tag?: string; stat?: string; statLabel?: string }
 const { kind = 'line', art, tag, stat, statLabel } = Astro.props;
 ---
@@ -47,6 +48,6 @@ const { kind = 'line', art, tag, stat, statLabel } = Astro.props;
 
   <div class="scrim"></div>
   {tag && <span class="ah-tag">{tag}</span>}
-  {stat && <div class="ah-stat">{stat}{statLabel && <small>{statLabel}</small>}</div>}
+  {stat && <div class="ah-stat" data-len={statLen(stat)}>{stat}{statLabel && <small>{statLabel}</small>}</div>}
 </div>
 )}

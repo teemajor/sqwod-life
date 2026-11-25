@@ -358,6 +358,8 @@ body{background:var(--page-wash) fixed}
   background:radial-gradient(130% 120% at 30% 10%,#1e1e24,#0c0c0e);display:flex;align-items:center;justify-content:center}
 .arthero .ah-tag{position:absolute;top:14px;left:16px;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g3)}
 .arthero .ah-stat{position:absolute;left:16px;bottom:14px;font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--chalk)}
+.arthero .ah-stat[data-len="m"]{font-size:26px}
+.arthero .ah-stat[data-len="l"]{font-size:20px;right:16px;line-height:1.1}
 .arthero .ah-stat small{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;color:var(--g3);margin-top:2px}
 /* custom hand-drawn hero illustration (pure, full-bleed on black, draws in once) */
 .arthero.has-art{background:#050506}

@@ -13,6 +13,7 @@ import { EDITOR, authorName, isHouseAuthor, howMade } from '../config/authors';
 import type { CollectionEntry } from 'astro:content';
 import type { RelatedItem } from '../lib/related';
 import { describeSource, kindLabel } from '../lib/sources';
+import { statLen } from '../lib/stat';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 // Real brand wordmark, embedded as a data URI so it rasterizes into the share PNG
@@ -198,7 +199,7 @@ const shareCfg = {
       </div>
       <div class="rh-card">
         {heroStatLabel && <p class="kick" style="margin:0 0 6px">{heroStatLabel}</p>}
-        <div class="dnum rh-stat" data-count>{heroStat}</div>
+        <div class="dnum rh-stat" data-count data-len={statLen(heroStat)}>{heroStat}</div>
         {heroBars.length > 2 && (
           <Fragment>
             <div class="growbars rh-bars" aria-hidden="true">{heroBars.map((b) => <i class={b.hi ? 'hi' : ''} style={`height:${b.h}%;animation-delay:${b.d}s`}></i>)}</div>
@@ -316,7 +317,7 @@ const shareCfg = {
     <div class="fig-grid">
       {d.figures.map((f) => (
         <div class="fig">
-          <div class="fig-val dnum" data-count>{f.value}</div>
+          <div class="fig-val dnum" data-count data-len={statLen(f.value)}>{f.value}</div>
           <Fragment set:html={figVizSvg(vizOf(f.value))} />
           <div class="fig-lbl">{f.label}</div>
           {f.note && <div class="fig-note">{f.note}</div>}
@@ -519,6 +520,8 @@ const shareCfg = {
   .fig{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;padding:18px 18px 14px;background:var(--panel);transition:border-color .15s ease,box-shadow .15s ease}
   .fig:hover{border-color:var(--accent-line);box-shadow:var(--shadow-lg)}
   .fig-val{font-size:40px;color:var(--chalk)}
+  .fig-val[data-len="m"]{font-size:30px}
+  .fig-val[data-len="l"]{font-size:22px;line-height:1.05}
   .fviz{width:100%;height:14px;display:block;margin:13px 0 2px}
   .fviz.fviz-rule{height:6px;margin:11px 0 2px}
   .fig-lbl{font-size:13.5px;font-weight:600;color:var(--chalk);margin-top:9px;line-height:1.3}
@@ -583,6 +586,8 @@ const shareCfg = {
   .rh-meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin:20px 0 0;font-family:var(--mono);font-size:12.5px;color:var(--g3)}
   .rh-card{border:1px solid var(--line);border-radius:20px;background:var(--panel);padding:24px 24px 16px}
   .rh-stat{font-size:clamp(80px,9vw,128px);color:var(--accent)}
+  .rh-stat[data-len="m"]{font-size:clamp(52px,5.6vw,80px)}
+  .rh-stat[data-len="l"]{font-size:clamp(34px,3.4vw,48px);line-height:1}
   .rh-bars{height:150px;margin-top:16px}
   .rh-axis{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--g4)}
   /* report grid: sticky contents rail + body */
@@ -602,6 +607,8 @@ const shareCfg = {
     .fig-grid{grid-template-columns:1fr 1fr;gap:10px}
     .fig{padding:14px 14px 12px}
     .fig-val{font-size:30px}
+    .fig-val[data-len="m"]{font-size:24px}
+    .fig-val[data-len="l"]{font-size:19px}
     .fig .fviz{margin:10px 0 0}
     .fig-share{display:none}
     .fig-note{font-size:11.5px}

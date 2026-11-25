@@ -23,8 +23,51 @@ const COL = ['var(--s1)', 'var(--s2)', 'var(--s3)', 'var(--s4)'];
 const yoy = (pts: (number | null)[], i: number) => (i > 0 && pts[i - 1] && pts[i] != null ? Math.round((((pts[i] as number) - (pts[i - 1] as number)) / Math.abs(pts[i - 1] as number)) * 1000) / 10 : '');
 // layout
 const W = compact ? 360 : 720;
-const H = categorical ? Math.max(120, 22 + cats.length * (compact ? 30 : 28)) : compact ? (asLine ? 250 : 240) : asLine ? 280 : 264;
-const top = compact ? 30 : 40, bot = categorical ? 8 : 30, left = categorical ? (compact ? 108 : 150) : 0;
+// categorical (horizontal bars) labels, Nov 2026 fix: labels used to be cut to 22/14 characters and
+// still overflowed a fixed 150/108 gutter. Now the gutter is sized to the longest label, and when a
+// chart's labels are too long for a side gutter they sit above each bar on up to two lines. The full
+// text always stays in the tooltip and in the table under the chart.
+const lfs = compact ? 11 : 12, cw = lfs * 0.62; // Geist Mono advance is 0.6em; a little slack
+const gutterChars = compact ? 15 : 26;
+const longest = categorical ? Math.max(1, ...cats.map((k) => k.length)) : 0;
+const stacked = categorical && longest > gutterChars;
+const perLine = Math.floor((W - 8) / cw);
+const wrapLabel = (s: string, n: number, maxLines: number): string[] => {
+  // too long even for two lines: drop the bracketed explanation first ("Vegan (not eating ...)" -> "Vegan")
+  const txt = s.length > n * maxLines ? (s.replace(/\s*\([^)]*\)/g, '').trim() || s) : s;
+  const lines: string[] = []; let cur = '';
+  for (const w of txt.split(/\s+/)) {
+    const nx = cur ? `${cur} ${w}` : w;
+    if (nx.length <= n) { cur = nx; continue; }
+    if (cur) lines.push(cur);
+    cur = w.length > n ? `${w.slice(0, n - 1)}…` : w;
+  }
+  if (cur) lines.push(cur);
+  if (lines.length > maxLines) { const keep = lines.slice(0, maxLines); keep[maxLines - 1] = `${keep[maxLines - 1].slice(0, n - 1).replace(/[\s,;:]+$/, '')}…`; return keep; }
+  return lines;
+};
+type Row = { lines: string[]; ty: number; by: number; bh: number };
+const rows: Row[] = [];
+let catH = 0;
+if (categorical) {
+  if (stacked) {
+    const lh = lfs + 4, bh = compact ? 12 : 14;
+    let yc = 2;
+    for (const k of cats) {
+      const lines = wrapLabel(k, perLine, 2);
+      rows.push({ lines, ty: yc + lfs, by: yc + lines.length * lh + 4, bh });
+      yc += lines.length * lh + 4 + bh + 14;
+    }
+    catH = yc;
+  } else {
+    const rh = compact ? 30 : 28, bh = rh - 10;
+    cats.forEach((k, i) => rows.push({ lines: [k], ty: 4 + i * rh + bh / 2 + 4, by: 4 + i * rh, bh }));
+    catH = 8 + cats.length * rh;
+  }
+}
+const H = categorical ? Math.max(120, catH) : compact ? (asLine ? 250 : 240) : asLine ? 280 : 264;
+const top = compact ? 30 : 40, bot = categorical ? 8 : 30;
+const left = categorical && !stacked ? Math.ceil(longest * cw) + 14 : 0;
 // phones: no end-label gutter, the coloured chips above the chart are the legend
 const right = multiLine && !compact ? 150 : 0;
 const base = H - bot, chartH = base - top, plotW = W - left - right;
@@ -74,14 +117,16 @@ const gridVals = asLine ? (compact ? [0.5, 1] : [0.25, 0.5, 0.75, 1]).map((k) =>
         <g class="dc-s" data-s={si} style={switcher && si !== 0 ? 'display:none' : undefined}>
           {categorical ? cats.map((cat, i) => {
             const v = s.points[i]; if (v == null) return null;
-            const y = i * (H / cats.length) + 4, h = Math.max(12, H / cats.length - 10);
+            const r = rows[i], y = r.by, h = r.bh;
             const w = Math.max(3, ((v - mn) / (mx - mn || 1)) * (plotW - 70));
             const emph = i === 0;
             return (
               <g class="dc-pt" tabindex="0" data-cat={cat} data-val={fmt(v)} data-unit={c.unit ?? ''}>
-                <text x={left - 10} y={y + h / 2 + 4} text-anchor="end" fill="var(--g2)" font-size="12" font-family="var(--mono)">{cat.length > (compact ? 14 : 22) ? `${cat.slice(0, compact ? 13 : 21)}…` : cat}</text>
+                {stacked
+                  ? <text x={left} y={r.ty} fill="var(--g2)" font-size={lfs} font-family="var(--mono)">{r.lines.map((ln, li) => <tspan x={left} dy={li === 0 ? 0 : lfs + 4}>{ln}</tspan>)}</text>
+                  : <text x={left - 10} y={r.ty} text-anchor="end" fill="var(--g2)" font-size={lfs} font-family="var(--mono)">{cat}</text>}
                 <rect class="dc-r dc-hbar" x={left} y={y} width={w} height={h} rx="3" fill={emph ? 'var(--accent)' : 'var(--chalk)'} opacity={emph ? '1' : '0.72'} style={`transition-delay:${(i * 0.04).toFixed(2)}s`} />
-                <text x={left + w + 8} y={y + h / 2 + 4} fill="var(--g2)" font-size="12" font-family="var(--mono)">{fmt(v)}</text>
+                <text x={left + w + 8} y={y + h / 2 + 4} fill="var(--g2)" font-size={lfs} font-family="var(--mono)">{fmt(v)}</text>
               </g>
             );
           }) : asLine ? (() => {
