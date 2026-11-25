@@ -2,7 +2,8 @@
 urlSlug: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
 lang: "de"
 counterpart: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
-title: "KI, Kapital und Konkurrenz: Wer jetzt schläft, verliert Mitglieder"
+title: "Der Sydney-Marathon steckt 60 Mio. $ in einen KI-Coach: Was Unabhängige tun, wenn Kapital Größe kauft"
+seoTitle: "60-Mio.-$-KI-Coach beim Sydney-Marathon: Plan für Studios"
 topic: market-moves
 newsTake: true
 description: "Drei globale Trends zeigen, wohin die Fitnessbranche kippt – und was du diese Woche konkret tun kannst, um nicht abgehängt zu werden."

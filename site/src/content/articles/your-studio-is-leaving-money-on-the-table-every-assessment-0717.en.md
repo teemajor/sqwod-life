@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-leaving-money-on-the-table-every-assessment-0717
 lang: "en"
 counterpart: your-studio-is-leaving-money-on-the-table-every-assessment-0717
-title: "Your Studio Is Leaving Money on the Table Every Assessment"
+title: "Bob MacIntyre's Coach Planned for Birkdale's Fairways. Your Assessments Should Be That Specific."
+seoTitle: "Sell Assessments Like a Golf Coach: Outcomes, Not Sessions"
 topic: pricing-revenue
 newsTake: true
 description: "How movement assessments, therapeutic training, and a golfer's fitness coach reveal the revenue model most studios are still ignoring."

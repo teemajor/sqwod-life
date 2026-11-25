@@ -2,7 +2,8 @@
 urlSlug: your-gym-is-growing-your-members-aren-t-fix-that-0717
 lang: "en"
 counterpart: your-gym-is-growing-your-members-aren-t-fix-that-0717
-title: "Your gym is growing. Your members aren't. Fix that."
+title: "DSSV 2026: More Members, Same Results. The Industry Sells Access, Members Want Transformation"
+seoTitle: "DSSV 2026: Gyms Sell Access, Members Want Transformation"
 topic: dach
 newsTake: true
 description: "New DACH industry data and a European champion's story reveal the gap most fitness operators are ignoring, and exactly how to close it."

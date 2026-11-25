@@ -2,7 +2,8 @@
 urlSlug: ai-money-trust-what-s-actually-at-stake-for-fitness-business-0807
 lang: "en"
 counterpart: ai-money-trust-what-s-actually-at-stake-for-fitness-business-0807
-title: "AI, Money & Trust: What's Actually at Stake for Fitness Businesses"
+title: "Fitness Apps Head for $38bn by 2035: Growth Attracts Money, Money Attracts Risk"
+seoTitle: "Fitness Apps $38bn by 2035: Growth Brings Money and Risk"
 topic: market-moves
 newsTake: true
 description: "Three converging stories explain why the next wave of fitness growth will be won or lost on trust, and what you can do about it today."

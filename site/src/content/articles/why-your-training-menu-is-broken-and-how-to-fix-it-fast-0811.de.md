@@ -2,7 +2,8 @@
 urlSlug: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
 lang: "de"
 counterpart: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
-title: "Weniger ist mehr: Warum dein Trainingsplan zu voll ist"
+title: "Über 55 schwer trainieren, 3er-Split statt 5 Tage: Das Trainingsangebot, das Kunden wollen"
+seoTitle: "Über 55 schwer trainieren, 3er-Split: Das neue Angebot"
 topic: offer-programming
 newsTake: true
 description: "Wie Coaches mit schlanken Programmen, klaren Tests und der richtigen Zielgruppe mehr rausholen – und was du heute noch ändern kannst."

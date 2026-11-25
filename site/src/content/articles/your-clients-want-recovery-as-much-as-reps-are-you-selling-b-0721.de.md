@@ -2,7 +2,8 @@
 urlSlug: your-clients-want-recovery-as-much-as-reps-are-you-selling-b-0721
 lang: "de"
 counterpart: your-clients-want-recovery-as-much-as-reps-are-you-selling-b-0721
-title: "Your Clients Want Recovery as Much as Reps: Are You Selling Both?"
+title: "UFC GYM baut seinen neuen Standort um Regeneration: Dein Kunde googelt „Sportmassage in der Nähe“"
+seoTitle: "UFC GYM baut für Recovery: Die Lücke im Coaching schließen"
 topic: offer-programming
 newsTake: true
 description: "From golf to MMA to yoga studios, the fitness industry is quietly pivoting toward integrated recovery, and coaches who ignore it are leaving both results and revenue on the table."

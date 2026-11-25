@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-a-subscription-business-act-like-one-0731
 lang: "en"
 counterpart: your-studio-is-a-subscription-business-act-like-one-0731
-title: "Your Studio Is a Subscription Business. Act Like One."
+title: "Memberships Are the Product: The Recurring-Revenue Playbook From Car Washes to AI Coaches"
+seoTitle: "Memberships Are the Product: Recurring Revenue for Studios"
 topic: pricing-revenue
 newsTake: true
 description: "From car washes to AI coaches, every smart operator is selling recurring revenue: here's how to steal the playbook."

@@ -2,7 +2,8 @@
 urlSlug: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
 lang: "en"
 counterpart: ai-and-big-money-are-reshaping-fitness-are-you-ready-0728
-title: "AI and Big Money Are Reshaping Fitness: Are You Ready?"
+title: "The Sydney Marathon Put $60M Into an AI Coach: What Independents Do When Capital Buys Scale"
+seoTitle: "Sydney Marathon's $60M AI Coach: Independents' Playbook"
 topic: market-moves
 newsTake: true
 description: "The funding rounds and franchise expansions making headlines right now signal one thing: the fitness industry is consolidating fast, and indie operators need a clear playbook to stay relevant."

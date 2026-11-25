@@ -2,7 +2,8 @@
 urlSlug: profit-punches-ai-what-fitness-coaches-must-do-right-now-0804
 lang: "en"
 counterpart: profit-punches-ai-what-fitness-coaches-must-do-right-now-0804
-title: "Profit, Punches & AI: What Fitness Coaches Must Do Right Now"
+title: "Basic-Fit Is Back Above €800M While a Gym Dispute Turns Violent: Boring Fundamentals Win"
+seoTitle: "Basic-Fit €800M Profit vs Gym Chaos: Fundamentals Win"
 topic: market-moves
 newsTake: true
 description: "Six wild industry headlines reveal one uncomfortable truth about where the money, and the danger, is heading in fitness."

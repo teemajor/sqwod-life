@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splitting-in-two-which-side-are-you-on-0731
 lang: "en"
 counterpart: fitness-is-splitting-in-two-which-side-are-you-on-0731
-title: "Fitness Is Splitting in Two, Which Side Are You On?"
+title: "FitActive Plans 100 Gyms, a Village Gym Crowdfunds Its Heating: Scale or Belonging, Not Both"
+seoTitle: "FitActive 100 Gyms vs a Village Gym: Scale or Belonging"
 topic: strategy
 newsTake: true
 description: "From Italian mega-rollouts to village crowdfunders, the fitness industry is fracturing along a fault line that will determine who survives the next five years."

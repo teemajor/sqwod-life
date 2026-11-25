@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-leaving-money-on-the-floor-here-s-the-fix-0807
 lang: "en"
 counterpart: your-studio-is-leaving-money-on-the-floor-here-s-the-fix-0807
-title: "Your Studio Is Leaving Money on the Floor: Here's the Fix"
+title: "Five Places the Money Is Moving: Pilates, Nordstrom Wellness, a €15,000 Day in Kildare"
+seoTitle: "Five Signals: Where Fitness Revenue Is Moving This Week"
 topic: pricing-revenue
 newsTake: true
 description: "Five signals from this week's fitness news tell you exactly where to find your next wave of members and revenue."

@@ -2,7 +2,8 @@
 urlSlug: fitness-money-is-moving-is-your-business-in-the-flow-0804
 lang: "de"
 counterpart: fitness-money-is-moving-is-your-business-in-the-flow-0804
-title: "Fitness-Branche sucht Kapital – wer die Logik kennt, gewinnt"
+title: "67 Mio. £ für drei David-Lloyd-Clubs, 10 Mio. $ für Ahead Health: Kapital kauft Gesundheitsinfrastruktur, nicht Schweiß"
+seoTitle: "David-Lloyd-Deal 67 Mio. £: Kapital kauft Gesundheit"
 topic: market-moves
 newsTake: true
 description: "Warum gerade jetzt Geld in Clubs, Health-Tech und sogar Psychedelika fließt – und was Betreiber daraus machen sollten."

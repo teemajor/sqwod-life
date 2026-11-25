@@ -2,7 +2,8 @@
 urlSlug: the-studio-survival-playbook-franchises-platforms-smarter-op-0717
 lang: "de"
 counterpart: the-studio-survival-playbook-franchises-platforms-smarter-op-0717
-title: "Wachstum oder Ausbluten? Was dein Studio jetzt entscheiden muss"
+title: "Pvolve hat 40 Studios mit einer Methode erreicht: Positionierung schlägt Quadratmeter"
+seoTitle: "Pvolve mit 40 Studios: Positionierung schlägt Quadratmeter"
 topic: strategy
 newsTake: true
 description: "Drei aktuelle Branchensignale zeigen, dass der Fitness-Markt gerade neu sortiert wird – wer jetzt handelt, sichert sich den Vorteil."

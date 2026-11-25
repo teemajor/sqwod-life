@@ -2,7 +2,8 @@
 urlSlug: big-brands-are-scaling-fast-here-s-how-to-keep-up-0724
 lang: "en"
 counterpart: big-brands-are-scaling-fast-here-s-how-to-keep-up-0724
-title: "Big Brands Are Scaling Fast. Here's How to Keep Up."
+title: "Crunch, Pvolve, Raw Nutrition: A Replicable System Beats a Brilliant One-Off"
+seoTitle: "Crunch, Pvolve, Raw Nutrition: Systems Beat One-Offs"
 topic: market-moves
 newsTake: true
 description: "Four headlines prove the fitness industry is consolidating around strong brands: here's what independent coaches and studio owners must do right now."

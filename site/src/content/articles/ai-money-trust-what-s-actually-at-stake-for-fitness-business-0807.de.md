@@ -2,7 +2,8 @@
 urlSlug: ai-money-trust-what-s-actually-at-stake-for-fitness-business-0807
 lang: "de"
 counterpart: ai-money-trust-what-s-actually-at-stake-for-fitness-business-0807
-title: "KI im Studio: Goldgrube oder Glatteis für Coaches?"
+title: "Fitness-Apps steuern auf 38 Mrd. $ bis 2035 zu: Wachstum zieht Geld an, Geld zieht Risiko an"
+seoTitle: "Fitness-Apps 38 Mrd. $ bis 2035: Geld bringt auch Risiko"
 topic: market-moves
 newsTake: true
 description: "Warum der KI-Boom im Fitness-Business riesige Chancen birgt – und wo du als Coach gerade unbedingt aufpassen musst."

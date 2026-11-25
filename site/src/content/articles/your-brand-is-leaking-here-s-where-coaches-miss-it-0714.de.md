@@ -2,7 +2,8 @@
 urlSlug: your-brand-is-leaking-here-s-where-coaches-miss-it-0714
 lang: "de"
 counterpart: your-brand-is-leaking-here-s-where-coaches-miss-it-0714
-title: "Warum dein Studio gerade auf dem Prüfstand steht"
+title: "Lagree klagt wegen Alibaba-Megaformern: Konsistenz ist die ganze Marke"
+seoTitle: "Lagree-Klage wegen Kopien: Konsistenz ist die Marke"
 topic: marketing-community
 newsTake: true
 description: "Drei aktuelle Branchen-News zeigen, dass Vertrauen, Community und Qualität gerade über Erfolg oder Scheitern entscheiden – und was du jetzt konkret tun kannst."

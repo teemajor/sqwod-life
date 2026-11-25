@@ -2,7 +2,8 @@
 urlSlug: fitness-is-splitting-in-two-which-side-are-you-on-0731
 lang: "de"
 counterpart: fitness-is-splitting-in-two-which-side-are-you-on-0731
-title: "Wachstum oder Tiefe? Die Gretchenfrage für Fitnessbetreiber"
+title: "FitActive plant 100 Studios, ein Dorf-Gym sammelt für die Heizung: Größe oder Zugehörigkeit, nicht beides"
+seoTitle: "FitActive 100 Studios vs. Dorf-Crowdfunding: Größe oder Nähe"
 topic: strategy
 newsTake: true
 description: "Während Ketten auf Expansion setzen, gewinnen Betreiber, die zuerst in Menschen investieren – hier ist, warum das kein Widerspruch sein muss."

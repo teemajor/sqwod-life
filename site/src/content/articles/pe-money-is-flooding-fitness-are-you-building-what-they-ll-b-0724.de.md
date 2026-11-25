@@ -2,7 +2,8 @@
 urlSlug: pe-money-is-flooding-fitness-are-you-building-what-they-ll-b-0724
 lang: "de"
 counterpart: pe-money-is-flooding-fitness-are-you-building-what-they-ll-b-0724
-title: "Kapital sucht Muskeln – bist du bereit, wenn PE anklopft?"
+title: "Ein Planet-Fitness-Betreiber ist 170 Mio. $ wert: Worauf PE-Käufer bei Studios achten"
+seoTitle: "Planet-Fitness-Betreiber 170 Mio. $ wert: Was PE kauft"
 topic: market-moves
 newsTake: true
 description: "Warum Private-Equity-Interesse, Community-Programme und neue DACH-Branchenzahlen zusammen eine klare Botschaft senden – und was Betreiber jetzt tun sollten."

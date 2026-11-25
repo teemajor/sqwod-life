@@ -2,7 +2,8 @@
 urlSlug: the-studio-survival-playbook-franchises-platforms-smarter-op-0717
 lang: "en"
 counterpart: the-studio-survival-playbook-franchises-platforms-smarter-op-0717
-title: "The Studio Survival Playbook: Franchises, Platforms & Smarter Ops"
+title: "Pvolve Hit 40 Studios on One Method: Positioning Beats Square Metres"
+seoTitle: "Pvolve at 40 Studios: Positioning Beats Square Metres"
 topic: strategy
 newsTake: true
 description: "Three industry moves this week reveal exactly where the smart studio money is going, and what you should do before your competitors do."
