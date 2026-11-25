@@ -11,27 +11,32 @@ type: evidence
 format: analysis
 conversion: products
 publishedAt: 2026-08-31
-updatedAt: 2026-08-31
-asOf: 2026-08-31
+updatedAt: 2026-11-25
+asOf: 2026-11-25
 author: "Tee Major"
 gated: false
 sources:
-  - { label: "Wolfe 2017: BCAAs and muscle protein synthesis: myth or reality? (JISSN)", url: "https://consensus.app/papers/details/dc53f99d6e41510586bb80ebacd03b93/" }
+  - { label: "Wolfe 2017: BCAAs and muscle protein synthesis: myth or reality? (JISSN) · PMID 28852372", url: "https://consensus.app/papers/details/dc53f99d6e41510586bb80ebacd03b93/" }
   - { label: "Kaspy et al. 2023: BCAA, MPS & protein breakdown review (Nutrition Research Reviews) · DOI 10.1017/S0954422423000197", url: "https://doi.org/10.1017/S0954422423000197" }
-  - { label: "Jackman et al. 2017: BCAA-only MPS trial (Frontiers in Physiology)", url: "https://consensus.app/papers/details/1fa96a1958645a78b61afe462c70c3b8/" }
-  - { label: "Salem et al. 2024, DOMS & muscle damage meta-analysis, 18 RCTs (Sports Medicine, Open)", url: "https://consensus.app/papers/details/fb0bd5b894375d0ea9174adac780c872/" }
+  - { label: "Jackman et al. 2017: BCAA-only MPS trial (Frontiers in Physiology) · PMID 28638350", url: "https://consensus.app/papers/details/1fa96a1958645a78b61afe462c70c3b8/" }
+  - { label: "Salem et al. 2024, DOMS & muscle damage meta-analysis, 18 RCTs (Sports Medicine, Open) · PMID 38625669", url: "https://consensus.app/papers/details/fb0bd5b894375d0ea9174adac780c872/" }
   - { label: "Martinho et al. 2022: Oral BCAA in athletes, systematic review of 24 studies (Nutrients) · DOI 10.3390/nu14194002", url: "https://doi.org/10.3390/nu14194002" }
-  - { label: "Jäger et al. 2017: ISSN Position Stand: Protein and Exercise (JISSN)", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
-  - { label: "Ooi et al. 2021: BCAA & lean mass during weight loss RCT, n=132 (The Journal of Nutrition)", url: "https://consensus.app/papers/details/1fa5f9aa57ce5feebf9476248df8d903/" }
-  - { label: "Cannavaro et al. 2025: Amino acids & body composition during weight loss (Nutrients)", url: "https://consensus.app/papers/details/31988592669a507d875596a91af01447/" }
-  - { label: "Muscella et al. 2024: Sex-based effects of BCAA, n=100 over 6 months (Sports)", url: "https://consensus.app/papers/details/bff8c0543daa5eda8a0b9d22c5667769/" }
-  - { label: "de Bandt et al. 2022: BCAAs and insulin resistance (Nutrients)", url: "https://consensus.app/papers/details/6e2012f31c455930ad43171ad9e170bc/" }
+  - { label: "Jäger et al. 2017: ISSN Position Stand: Protein and Exercise (JISSN) · PMID 28642676", url: "https://consensus.app/papers/details/d37a061294705590aca659c3d19807c3/" }
+  - { label: "Ooi et al. 2021: BCAA & lean mass during weight loss RCT, n=132 (The Journal of Nutrition) · PMID 33537760", url: "https://consensus.app/papers/details/1fa5f9aa57ce5feebf9476248df8d903/" }
+  - { label: "Cannavaro et al. 2025: Amino acids & body composition during weight loss (Nutrients) · PMID 40573110", url: "https://consensus.app/papers/details/31988592669a507d875596a91af01447/" }
+  - { label: "Muscella et al. 2024: Sex-based effects of BCAA, n=100 over 6 months (Sports) · PMID 39453241", url: "https://consensus.app/papers/details/bff8c0543daa5eda8a0b9d22c5667769/" }
+  - { label: "de Bandt et al. 2022: BCAAs and insulin resistance (Nutrients) · PMID 36615726", url: "https://consensus.app/papers/details/6e2012f31c455930ad43171ad9e170bc/" }
   - { label: "Holeček 2018: BCAAs in health and disease (Nutrition & Metabolism) · DOI 10.1186/s12986-018-0271-1", url: "https://doi.org/10.1186/s12986-018-0271-1" }
+  - { label: "Talebi et al. 2024: Umbrella review of nutrition for exercise-induced muscle damage, 53 RCT meta-analyses (Nutr Rev) · PMID 37460208", url: "https://pubmed.ncbi.nlm.nih.gov/37460208/" }
+  - { label: "Rahimi et al. 2017: BCAA & exercise-induced muscle damage meta-analysis, 8 trials (Nutrition) · PMID 28870476", url: "https://pubmed.ncbi.nlm.nih.gov/28870476/" }
+  - { label: "Weber et al. 2021: BCAA & DOMS after a single bout, systematic review + meta-analysis of 10 RCTs (Amino Acids) · PMID 34669012", url: "https://pubmed.ncbi.nlm.nih.gov/34669012/" }
+  - { label: "Lotta et al. 2016: BCAA metabolism & type 2 diabetes, Mendelian randomisation, 47,877 cases + 267,694 controls (PLoS Med) · PMID 27898682", url: "https://pubmed.ncbi.nlm.nih.gov/27898682/" }
+  - { label: "Li et al. 2026: BCAA-rich supplements + resistance training in sarcopenia, meta-analysis of 12 RCTs, n=459 (Arch Gerontol Geriatr) · PMID 41202431", url: "https://pubmed.ncbi.nlm.nih.gov/41202431/" }
   - { label: "ClinicalTrials.gov: BCAA interventions, recruiting + not-yet-recruiting (accessed 31 Aug 2026)", url: "https://clinicaltrials.gov/search?intr=%22branched%20chain%20amino%20acids%22&aggFilters=status:not%20rec" }
 takeaways:
   - "The core problem is arithmetic: BCAAs are 3 of the 9 essential amino acids. You cannot build muscle protein from 3 bricks: the other 6 have to come from somewhere, and at rest that somewhere is your own muscle (Wolfe 2017)."
   - "BCAAs alone DO raise muscle protein synthesis after lifting, by 22% versus placebo, but the same reviews are clear the response is smaller than from a complete protein source (Jackman 2017; Kaspy 2023)."
-  - "The one repeatable win is soreness. A 2024 meta-analysis of 18 RCTs found a large reduction in DOMS at 48 hours (Hedges' g = −1.75) (Salem 2024)."
+  - "The one repeatable win is soreness. A 2024 meta-analysis of 18 RCTs found a large reduction in DOMS at 48 hours (Hedges' g = −1.75) (Salem 2024), and an umbrella review of 53 meta-analyses rates that soreness evidence moderate certainty (Talebi 2024)."
   - "The catch that voids most of it: a 24-study systematic review found effects on performance and body composition negligible, and most trials never reported participants' total daily protein (Martinho 2022)."
   - "For a client in a deficit, BCAAs are the wrong tool. A 132-person RCT found no significant lean-mass preservation versus control; a higher-protein diet did better (Ooi 2021)."
   - "The frontier: 61 BCAA trials are recruiting or about to. Notably, the muscle-preservation work, the GLP-1-era question, is being run with full essential amino acids and whole protein, not BCAAs."
@@ -45,7 +50,7 @@ figures:
   - { label: "BCAA trials recruiting or about to start", value: "61", note: "Live registry pipeline as of 31 August 2026, and most of the muscle work has moved to full EAA", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=%22branched%20chain%20amino%20acids%22&aggFilters=status:not%20rec" }
 playbook:
   - { move: "Ask one question before you answer the BCAA question: how much protein are they actually eating?", why: "Under 1.4 g/kg/day, the honest fix is food, not a tub. The ISSN position stand puts 1.4–2.0 g/kg/day as sufficient for most exercising people (Jäger 2017), and the athlete systematic review found BCAA effects negligible, while noting most studies never reported total protein intake (Martinho 2022). You cannot supplement your way around the base." }
-  - { move: "Reframe BCAAs as a soreness tool, not a growth tool, and say the reframe out loud.", why: "This is the claim that survives the meta-analyses: a large reduction in DOMS at 24–72 h across 18 RCTs (Salem 2024). It is a real, useful effect for a beginner walking into week two. It is not hypertrophy, and pretending otherwise is where coaches lose credibility." }
+  - { move: "Reframe BCAAs as a soreness tool, not a growth tool, and say the reframe out loud.", why: "This is the claim that survives the meta-analyses: a large reduction in DOMS at 24–72 h across 18 RCTs (Salem 2024). It is a real, useful effect for a beginner walking into week two, and it shows up best in trained people with mild-to-moderate damage and when it is not taken only after the session (Weber 2021). It is not hypertrophy, and pretending otherwise is where coaches lose credibility." }
   - { move: "Swap the recommendation to whole protein or full EAA whenever muscle is the goal.", why: "BCAAs supply 3 of 9 essential amino acids; the other 6 must be present to build new protein (Wolfe 2017). Complete protein produces the larger MPS response (Kaspy 2023). Same money, strictly better tool." }
   - { move: "For clients in a deficit, including those losing weight on medication, protein first, and keep the lane clean.", why: "A 132-person RCT found BCAAs did not significantly preserve lean mass during 16 weeks of energy restriction; higher protein did better (Ooi 2021). Anyone losing weight on prescribed medication is a doctor-plus-dietitian conversation. Your job is the resistance training and the protein target." }
 hero:
@@ -55,9 +60,10 @@ hero:
 tags: ["bcaa", "supplements", "protein", "method", "evidence", "coaching"]
 changelog:
   - { date: "2026-08-31", note: "First edition. Evidence current to August 2026; graded by strength of study design. We update when the pipeline delivers." }
+  - { date: "2026-11-25", note: "Added five peer-reviewed sources (Talebi 2024 umbrella review, Rahimi 2017 and Weber 2021 meta-analyses on soreness and muscle damage, Lotta 2016 Mendelian randomisation on BCAA metabolism and diabetes, Li 2026 sarcopenia meta-analysis), added PMIDs to eight existing sources, and refined the soreness and diabetes evidence grades." }
 ---
 
-> **How we sourced this.** Every claim below is tied to a named study, a meta-analysis, a randomised trial, or the live trial registry, and linked. We also graded the evidence: where it's strong, we say so; where it's early or thin, we say that too. This piece was reviewed for accuracy before publishing and carries a real byline, because on health topics a citation you can't stand behind is worse than no citation at all. Last updated 31 August 2026.
+> **How we sourced this.** Every claim below is tied to a named study, a meta-analysis, a randomised trial, or the live trial registry, and linked. We also graded the evidence: where it's strong, we say so; where it's early or thin, we say that too. This piece was reviewed for accuracy before publishing and carries a real byline, because on health topics a citation you can't stand behind is worse than no citation at all. Last updated 25 November 2026.
 
 ## The tub on the shelf, and the question underneath it
 
@@ -93,9 +99,11 @@ Here's where a coach can actually use this supplement.
 
 A 2024 systematic review and meta-analysis of 18 randomised trials found BCAA supplementation significantly reduced delayed-onset muscle soreness: with a large effect at 24 h (g = −1.34), **48 h (g = −1.75)**, and 72 h (g = −1.82), plus reductions in creatine kinase.<sup class="fn"><a href="#source-4">4</a></sup> The meta-regression added a practical detail: taking it *before* the damaging session, over a longer period, worked better than only mopping up afterwards.
 
+Zoom out and the picture holds, with honest edges. An umbrella review that graded 53 meta-analyses of randomised trials on nutrition for exercise-induced muscle damage, covering 24 interventions, found BCAAs reduced delayed-onset soreness with moderate certainty of evidence.<sup class="fn"><a href="#source-12">12</a></sup> Not every pooling agrees, though: an earlier meta-analysis of 8 trials found BCAAs lowered creatine kinase at under 24 h and at 24 h, but the pooled soreness scores were not significantly different from placebo at any time point.<sup class="fn"><a href="#source-13">13</a></sup> A 2021 review of 10 RCTs narrows down where it works: trained people, mild-to-moderate muscle damage, doses up to 255 mg/kg/day, and not taken only after the damaging session.<sup class="fn"><a href="#source-14">14</a></sup>
+
 Interesting wrinkle for your female clients: a six-month trial of 100 recreational lifters found the soreness benefit was markedly larger in women, a **18.1 mm** drop on a 100 mm soreness scale versus 0.8 mm on placebo, while the men in the same trial showed the bigger strength change.<sup class="fn"><a href="#source-9">9</a></sup> One trial, so hold it loosely; but it's a rare study that actually recruited 50 men and 50 women instead of extrapolating.
 
-**Evidence grade: moderate.** Consistent across meta-analyses, but see the next section for the caveat that undercuts it.
+**Evidence grade: moderate.** Mostly consistent across meta-analyses and graded moderate certainty by an umbrella review, though one older pooling found no soreness effect; and see the next section for the caveat that undercuts it.
 
 ## The caveat that voids most of the marketing
 
@@ -117,17 +125,17 @@ This is the most common intra-workout pitch, and it descends from the central fa
 
 ### “Aren't BCAAs linked to diabetes?”
 
-Your more online clients will find this one. High blood BCAA levels do track with insulin resistance and type 2 diabetes risk: that association is real. But a 2022 review lays out why the arrow probably points the other way: insulin itself governs BCAA clearance, so small drops in insulin sensitivity reduce BCAA breakdown and raise blood levels *long before* glucose tolerance changes.<sup class="fn"><a href="#source-10">10</a></sup> The elevated level looks more like a smoke alarm than a fire. Confounders are heavy too, starting with overall animal-protein intake, and a broader 2018 review of BCAA metabolism states outright that whether raised BCAA levels are *only* markers or also contribute to insulin resistance is still an open question.<sup class="fn"><a href="#source-11">11</a></sup>
+Your more online clients will find this one. High blood BCAA levels do track with insulin resistance and type 2 diabetes risk: that association is real. But a 2022 review lays out why the arrow probably points the other way: insulin itself governs BCAA clearance, so small drops in insulin sensitivity reduce BCAA breakdown and raise blood levels *long before* glucose tolerance changes.<sup class="fn"><a href="#source-10">10</a></sup> The elevated level looks more like a smoke alarm than a fire. Confounders are heavy too, starting with overall animal-protein intake, and a broader 2018 review of BCAA metabolism states outright that whether raised BCAA levels are *only* markers or also contribute to insulin resistance is still an open question.<sup class="fn"><a href="#source-11">11</a></sup> Genetics adds a twist worth knowing: a Mendelian randomisation study in up to 47,877 people with type 2 diabetes and 267,694 controls found that a genetically predicted 1 SD higher leucine level came with 1.85 times the odds of type 2 diabetes, with the strongest signal near a gene that drives BCAA breakdown, and the authors call this consistent with a causal role of BCAA *metabolism*.<sup class="fn"><a href="#source-15">15</a></sup> Note what that tests: how well the body clears BCAAs, not what a scoop of powder does.
 
 What you say: the association is real, the causation isn't established, and this is not a reason to fear the protein in food. What you don't say: anything about a client's diabetes risk. That's a doctor's sentence.
 
-**Evidence grade: association strong; causation unresolved, frame as "researchers are still untangling this," never as a warning.**
+**Evidence grade: association strong; genetic evidence implicates impaired BCAA breakdown, and in the 132-person weight-loss RCT, BCAA supplements did not change insulin sensitivity. Frame as "researchers are still untangling this," never as a warning.**
 
 ### “I'm cutting: should I add BCAAs to protect muscle?”
 
 The intuitive yes is wrong here, and this is the most useful no you can give.
 
-A randomised controlled trial put 132 adults with overweight or obesity through a 16-week energy deficit. The BCAA group lost **4.39%** of lean mass, the control group 5.39%, and the high-protein group 3.67%: a difference that did not reach significance (p = 0.06). The authors' conclusion is blunt: BCAA supplementation does not preserve lean mass, and a higher-protein diet may be more advantageous.<sup class="fn"><a href="#source-7">7</a></sup> A 2025 review of the wider literature lands in the same place: benefits from amino acid supplementation during weight loss appear most consistently with full essential amino acids, combined with resistance exercise, and particularly when whole-food protein intake is low, while BCAA alone shows variable effects.<sup class="fn"><a href="#source-8">8</a></sup>
+A randomised controlled trial put 132 adults with overweight or obesity through a 16-week energy deficit. The BCAA group lost **4.39%** of lean mass, the control group 5.39%, and the high-protein group 3.67%: a difference that did not reach significance (p = 0.06). The authors' conclusion is blunt: BCAA supplementation does not preserve lean mass, and a higher-protein diet may be more advantageous.<sup class="fn"><a href="#source-7">7</a></sup> A 2025 review of the wider literature lands in the same place: benefits from amino acid supplementation during weight loss appear most consistently with full essential amino acids, combined with resistance exercise, and particularly when whole-food protein intake is low, while BCAA alone shows variable effects.<sup class="fn"><a href="#source-8">8</a></sup> Older adults show the same pattern: a 2026 meta-analysis of 12 randomised trials (n = 459) in older people with sarcopenia found BCAA-rich supplements on top of resistance training improved skeletal muscle index only, with no significant difference in total lean mass, grip strength, chair stands or walking speed.<sup class="fn"><a href="#source-16">16</a></sup>
 
 Translation for the gym floor: in a deficit, protein and lifting are the intervention. BCAAs are a rounding error you paid for.
 
@@ -135,7 +143,7 @@ Translation for the gym floor: in a deficit, protein and lifting are the interve
 
 ## What's about to be proven (the part nobody else shows you)
 
-The registry currently lists **61 BCAA trials recruiting or about to start**<sup class="fn"><a href="#source-12">12</a></sup>, and reading what they're testing tells you more than any of them individually will.
+The registry currently lists **61 BCAA trials recruiting or about to start**<sup class="fn"><a href="#source-17">17</a></sup>, and reading what they're testing tells you more than any of them individually will.
 
 **The first signal is what's missing.** The big question of this era is muscle preservation during rapid weight loss, and the trials chasing it are mostly running *full essential amino acids and whole protein*, not BCAAs. When the field's own money moves from three amino acids to nine, that's the field answering the question for you before the papers land.
 

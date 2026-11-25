@@ -11,22 +11,27 @@ type: evidence
 format: analysis
 conversion: verified
 publishedAt: 2026-09-14
-updatedAt: 2026-09-14
-asOf: 2026-09-14
+updatedAt: 2026-11-25
+asOf: 2026-11-25
 author: "Tee Major"
 gated: false
 sources:
   - { label: "Morton et al. 2018: Meta-Analyse zu Proteinsupplementen (Br J Sports Med) · PMID 28698222 · DOI 10.1136/bjsports-2017-097608", url: "https://consensus.app/papers/details/a316b8ccba1a5f87a5dcb6db0c6e3676/" }
   - { label: "Wang et al. 2024: Meta-Analyse Kreatin & Kraft (Nutrients) · PMID 39519498", url: "https://consensus.app/papers/details/6ff33354c09057cbafded17affbd503b/" }
-  - { label: "Bai et al. 2026: Netzwerk-Meta-Analyse Kreatin vs. Beta-Alanin, 52 RCTs (JISSN)", url: "https://consensus.app/papers/details/4923e4fd1a025a05b1fadea36ff76751/" }
-  - { label: "Grgic et al. 2019: Umbrella Review Koffein, 21 Meta-Analysen (Br J Sports Med)", url: "https://consensus.app/papers/details/cc9038ff4851501baf8d0c4bf5d85d31/" }
-  - { label: "Guest et al. 2021: ISSN Position Stand: Koffein und Leistung (JISSN)", url: "https://consensus.app/papers/details/eb622bb48b4457c9a1a89ee10b22fc28/" }
-  - { label: "Saunders et al. 2016: Meta-Analyse Beta-Alanin, 40 Studien (Br J Sports Med)", url: "https://consensus.app/papers/details/b05a51ef733b53d3be691d3c492856c2/" }
-  - { label: "Wolfe 2017: BCAA und Muskelproteinsynthese: Mythos oder Realität? (JISSN)", url: "https://consensus.app/papers/details/dc53f99d6e41510586bb80ebacd03b93/" }
-  - { label: "Clemesha et al. 2019: Analyse von 50 'Testosteron-Booster'-Produkten (World J Mens Health)", url: "https://consensus.app/papers/details/5710174fcd9b52d6a2dd35d099fd0cbb/" }
-  - { label: "Barker et al. 2025: 200 Online-Sportsupplements auf WADA-verbotene Substanzen geprüft (Drug Testing and Analysis)", url: "https://consensus.app/papers/details/901e1f28b2305d0c8a973da622f10128/" }
-  - { label: "Jagim et al. 2023: Verunreinigungen und sichere Supplement-Praxis (Front Sports Act Living)", url: "https://consensus.app/papers/details/a1f327017b9559d8ab1135b446dcde4c/" }
-  - { label: "Smith et al. 2022: Audit zur Repräsentation von Frauen in der Supplement-Forschung (Nutrients)", url: "https://consensus.app/papers/details/c35aafb2aff651068013a1b137d95d5a/" }
+  - { label: "Bai et al. 2026: Netzwerk-Meta-Analyse Kreatin vs. Beta-Alanin, 52 RCTs (JISSN) · PMID 42384726", url: "https://consensus.app/papers/details/4923e4fd1a025a05b1fadea36ff76751/" }
+  - { label: "Grgic et al. 2019: Umbrella Review Koffein, 21 Meta-Analysen (Br J Sports Med) · PMID 30926628", url: "https://consensus.app/papers/details/cc9038ff4851501baf8d0c4bf5d85d31/" }
+  - { label: "Guest et al. 2021: ISSN Position Stand: Koffein und Leistung (JISSN) · PMID 33388079", url: "https://consensus.app/papers/details/eb622bb48b4457c9a1a89ee10b22fc28/" }
+  - { label: "Saunders et al. 2016: Meta-Analyse Beta-Alanin, 40 Studien (Br J Sports Med) · PMID 27797728", url: "https://consensus.app/papers/details/b05a51ef733b53d3be691d3c492856c2/" }
+  - { label: "Wolfe 2017: BCAA und Muskelproteinsynthese: Mythos oder Realität? (JISSN) · PMID 28852372", url: "https://consensus.app/papers/details/dc53f99d6e41510586bb80ebacd03b93/" }
+  - { label: "Clemesha et al. 2019: Analyse von 50 'Testosteron-Booster'-Produkten (World J Mens Health) · PMID 31385468", url: "https://consensus.app/papers/details/5710174fcd9b52d6a2dd35d099fd0cbb/" }
+  - { label: "Barker et al. 2025: 200 Online-Sportsupplements auf WADA-verbotene Substanzen geprüft (Drug Testing and Analysis) · PMID 40180440", url: "https://consensus.app/papers/details/901e1f28b2305d0c8a973da622f10128/" }
+  - { label: "Jagim et al. 2023: Verunreinigungen und sichere Supplement-Praxis (Front Sports Act Living) · PMID 37841887", url: "https://consensus.app/papers/details/a1f327017b9559d8ab1135b446dcde4c/" }
+  - { label: "Smith et al. 2022: Audit zur Repräsentation von Frauen in der Supplement-Forschung (Nutrients) · PMID 35267928", url: "https://consensus.app/papers/details/c35aafb2aff651068013a1b137d95d5a/" }
+  - { label: "Maughan et al. 2018: IOC-Konsenserklärung zu Nahrungsergänzungsmitteln im Leistungssport (Br J Sports Med) · PMID 29540367", url: "https://pubmed.ncbi.nlm.nih.gov/29540367/" }
+  - { label: "Kreider et al. 2017: ISSN Position Stand: Sicherheit und Wirksamkeit von Kreatin (JISSN) · PMID 28615996", url: "https://pubmed.ncbi.nlm.nih.gov/28615996/" }
+  - { label: "Geyer et al. 2004: 634 nicht-hormonelle Supplements aus 13 Ländern auf anabole Steroide geprüft (Int J Sports Med) · PMID 14986195", url: "https://pubmed.ncbi.nlm.nih.gov/14986195/" }
+  - { label: "Kazeminasab et al. 2025: Meta-Analyse Kreatin & Kraft/Power in Ober- und Unterkörper, 69 Studien, n=1.937 (Nutrients) · PMID 40944139", url: "https://pubmed.ncbi.nlm.nih.gov/40944139/" }
+  - { label: "Naddafha et al. 2026: Kreatin bei postmenopausalen Frauen, systematisches Review + Meta-Analyse aus 7 RCTs, n=608 (JISSN) · PMID 42141930", url: "https://pubmed.ncbi.nlm.nih.gov/42141930/" }
   - { label: "ClinicalTrials.gov: laufende Studien zu Kreatin / Whey / Proteinsupplement bei Gewichtsverlust, Adipositas oder Sarkopenie", url: "https://clinicaltrials.gov/search?intr=creatine%20OR%20%22whey%20protein%22%20OR%20%22protein%20supplement%22&cond=%22weight%20loss%22%20OR%20obesity%20OR%20sarcopenia&aggFilters=status:not%20rec" }
   - { label: "EU-Register der nährwert- und gesundheitsbezogenen Angaben (Europäische Kommission)", url: "https://ec.europa.eu/food/food-feed-portal/screen/health-claims/eu-register" }
 takeaways:
@@ -35,7 +40,7 @@ takeaways:
   - "Beta-Alanin hat über 40 Studien hinweg eine Gesamteffektstärke von 0,18 und wirkt praktisch nur bei Belastungen von 0,5–10 Minuten. Eine Netzwerk-Meta-Analyse von 2026 fand keinen Zusatznutzen in Kombination mit Kreatin (Saunders 2016; Bai 2026)."
   - "Das einfachste Nein des Jahres: 90% von 50 geprüften 'Testosteron-Boostern' warben damit, Testosteron zu erhöhen, nur 24,8% hatten überhaupt Daten dazu, und 10,1% enthielten Bestandteile mit Daten, die auf eine Senkung hindeuten (Clemesha 2019)."
   - "Wichtiger als jede Wirkung: 35% von 200 Supplements aus dem australischen Online-Markt enthielten WADA-verbotene Substanzen, 57% davon standen nicht auf dem Etikett (Barker 2025). Chargengeprüfte Produkte sind die ganze Antwort."
-  - "Die Evidenzbasis, aus der du sortierst, ist zu 77% männlich: über Kreatin-, Koffein-, Beta-Alanin-, Nitrat- und Bikarbonat-Forschung hinweg waren nur 23% der Teilnehmenden Frauen (Smith 2022)."
+  - "Die Evidenzbasis, aus der du sortierst, ist zu 77% männlich: über Kreatin-, Koffein-, Beta-Alanin-, Nitrat- und Bikarbonat-Forschung hinweg waren nur 23% der Teilnehmenden Frauen (Smith 2022). Wo Frauen direkt untersucht wurden, wirkte Kreatin bei postmenopausalen Frauen weiterhin, wenn es mit 5 g/Tag oder mehr zusammen mit Krafttraining eingenommen wurde (Naddafha 2026)."
 figures:
   - { label: "Protein: zusätzliche 1RM-Kraft vs. Placebo", value: "+2,49 kg", note: "Gewichtete mittlere Differenz über 49 RCTs, 1.863 Teilnehmende, ≥6 Wochen Krafttraining", source: "Morton et al. 2018, Br J Sports Med", url: "https://consensus.app/papers/details/a316b8ccba1a5f87a5dcb6db0c6e3676/" }
   - { label: "Proteinzufuhr, ab der Supplementieren nichts mehr bringt", value: "1,62 g/kg/Tag", note: "Break-Point für weitere Zuwächse an fettfreier Masse: darüber half mehr Protein nicht mehr", source: "Morton et al. 2018, Br J Sports Med", url: "https://consensus.app/papers/details/a316b8ccba1a5f87a5dcb6db0c6e3676/" }
@@ -47,10 +52,10 @@ figures:
   - { label: "Anteil Frauen unter den Teilnehmenden der Supplement-Forschung", value: "23%", note: "1.826 Studien, 34.889 Teilnehmende zu Beta-Alanin, Koffein, Kreatin, Glycerol, Nitrat, Bikarbonat", source: "Smith et al. 2022, Nutrients", url: "https://consensus.app/papers/details/c35aafb2aff651068013a1b137d95d5a/" }
   - { label: "Laufende Studien zu Kreatin / Whey / Protein gegen Muskelverlust", value: "41", note: "Rekrutierend oder kurz vor Start, bei Gewichtsverlust, Adipositas oder Sarkopenie, Stand September 2026", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=creatine%20OR%20%22whey%20protein%22%20OR%20%22protein%20supplement%22&cond=%22weight%20loss%22%20OR%20obesity%20OR%20sarcopenia&aggFilters=status:not%20rec" }
 playbook:
-  - { move: "Sortiere in dieser Reihenfolge: erst die Ernährungslücke, dann Kreatin, dann das eine einheitenspezifische Werkzeug. Alles andere wartet.", why: "Proteinsupplementieren wirkt oberhalb von ~1,62 g/kg/Tag Gesamtzufuhr nicht mehr (Morton 2018): die erste Frage ist also nie 'welches Pulver', sondern 'fehlt dir überhaupt etwas?'. Kreatin ist der einzige Posten mit großem, repliziertem und billigem Effekt, unabhängig von der Ernährung." }
+  - { move: "Sortiere in dieser Reihenfolge: erst die Ernährungslücke, dann Kreatin, dann das eine einheitenspezifische Werkzeug. Alles andere wartet.", why: "Proteinsupplementieren wirkt oberhalb von ~1,62 g/kg/Tag Gesamtzufuhr nicht mehr (Morton 2018): die erste Frage ist also nie 'welches Pulver', sondern 'fehlt dir überhaupt etwas?'. Kreatin ist der einzige Posten mit großem, repliziertem und billigem Effekt, unabhängig von der Ernährung. Die IOC-Konsenserklärung sagt dasselbe: Vor jeder Supplement-Entscheidung steht eine vollständige Ernährungsanalyse (Maughan 2018)." }
   - { move: "Mach die Frage nach dem sauberen Produkt zur ersten, nicht zur letzten.", why: "35% von 200 Supplements aus dem australischen Online-Markt enthielten WADA-verbotene Substanzen, 57% davon undeklariert (Barker 2025). Für getestete Sportlerinnen und Sportler, und für alle, die keine undeklarierten Stimulanzien wollen, ist eine unabhängige Chargenprüfung der einzige echte Filter (Jagim 2023). Im deutschsprachigen Raum ist die Kölner Liste der geläufige Weg dorthin." }
   - { move: "Sag klar Nein zu 'Testosteron-Boostern' und Multi-Ingredient-Fatburnern, und sag auch, warum.", why: "Nur 24,8% der geprüften Booster-Produkte hatten überhaupt publizierte Daten hinter ihrer Aussage, und einige enthielten Bestandteile, die mit niedrigerem Testosteron in Verbindung gebracht werden (Clemesha 2019). Pre-Workouts und Fatburner sind zugleich die am häufigsten verunreinigten Kategorien (Barker 2025). Ein Nein schützt Geldbeutel und Dopingtest gleichzeitig." }
-  - { move: "Sag bei weiblichen Kundinnen jede Einschränkung laut dazu.", why: "Nur 23% der Teilnehmenden hinter der gängigen Supplement-Evidenz sind Frauen (Smith 2022). Die Richtung der Evidenz hält, die Präzision nicht. Das offen zu sagen schafft mehr Vertrauen, als so zu tun, als wäre die Datenlage vollständig." }
+  - { move: "Sag bei weiblichen Kundinnen jede Einschränkung laut dazu.", why: "Nur 23% der Teilnehmenden hinter der gängigen Supplement-Evidenz sind Frauen (Smith 2022). Die Richtung der Evidenz hält, die Präzision nicht. Das offen zu sagen schafft mehr Vertrauen, als so zu tun, als wäre die Datenlage vollständig. Konkret bei Kreatin: Die Studien mit postmenopausalen Frauen, die einen Effekt zeigten, nutzten mindestens 5 g/Tag zusammen mit Krafttraining (Naddafha 2026)." }
   - { move: "Versteh die GLP-1-Muskelfrage, bevor die Antwort da ist.", why: "41 Studien laufen aktuell in diesem Feld, darunter benannte Studien, die Kreatin, Whey und HMB getrennt gegen medikamentenbedingten Muskelverlust untersuchen. Nichts davon ist belegt, aber deine Kundinnen und Kunden nehmen diese Mittel bereits und fragen bereits. Alles rund um die Medikation selbst gehört zur Ärztin oder zum Arzt." }
 hero:
   kind: bars
@@ -59,9 +64,10 @@ hero:
 tags: ["supplements", "creatine", "protein", "caffeine", "evidence", "coaching", "method"]
 changelog:
   - { date: "2026-09-14", note: "Erste Ausgabe. Evidenz aktuell bis September 2026; jeder Posten nach Studienqualität bewertet. Wir aktualisieren, sobald die Studienpipeline liefert." }
+  - { date: "2026-11-25", note: "Fünf begutachtete Quellen ergänzt (Maughan 2018 IOC-Konsenserklärung, Kreider 2017 ISSN Position Stand zu Kreatin, Geyer 2004 internationale Verunreinigungsanalyse, Kazeminasab 2025 und Naddafha 2026 Kreatin-Meta-Analysen zu Geschlechtsunterschieden und postmenopausalen Frauen), neun bestehende Quellen mit PMID versehen und die englische Ausgabe um das EU-Register und die EU-Hinweise ergänzt, damit beide Sprachfassungen übereinstimmen; keine Änderung der Stufen." }
 ---
 
-> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Quelle geknüpft, eine Meta-Analyse, einen Umbrella Review, eine Produktanalyse oder das Studienregister, und verlinkt. Wir bewerten jeden Posten: Wo die Evidenz stark ist, sagen wir das; wo sie dünn ist, sagen wir es lauter. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Zuletzt aktualisiert am 14. September 2026.
+> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Quelle geknüpft, eine Meta-Analyse, einen Umbrella Review, eine Produktanalyse oder das Studienregister, und verlinkt. Wir bewerten jeden Posten: Wo die Evidenz stark ist, sagen wir das; wo sie dünn ist, sagen wir es lauter. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Zuletzt aktualisiert am 25. November 2026.
 
 ## Das Problem ist das Regal, nicht die einzelne Dose
 
@@ -69,13 +75,13 @@ Du kennst den Moment. Eine Kundin hält dir das Handy hin: Kreatin, ein Pre-Work
 
 Das Schwierige daran: Posten für Posten zu antworten dauert zwanzig Minuten, und ab Minute vier hörst du niemand mehr zu. Was du brauchst, ist eine Triage: ein schneller Weg, das Regal in Stapel zu sortieren, und zwar richtig.
 
-Also haben wir das Unspektakuläre, aber Wertvolle getan: die Meta-Analysen und Umbrella Reviews hinter jeder großen Kategorie geholt, dazu die Produktanalysen, die sonst niemand liest, und sortiert. Das Ergebnis ist kleiner als das Regal und deutlich günstiger.
+Also haben wir das Unspektakuläre, aber Wertvolle getan: die Meta-Analysen und Umbrella Reviews hinter jeder großen Kategorie geholt, dazu die Produktanalysen, die sonst niemand liest, und sortiert. Das Ergebnis ist kleiner als das Regal und deutlich günstiger. Es deckt sich auch mit der IOC-Konsenserklärung von 2018 zu Nahrungsergänzungsmitteln: Von den Produkten, die mit Leistungssteigerung werben, haben nur wenige gute Belege für einen Nutzen, darunter Koffein, Kreatin, bestimmte Puffersubstanzen und Nitrat, und vor jeder Supplement-Entscheidung sollte eine vollständige Ernährungsanalyse stehen.<sup class="fn"><a href="#source-12">12</a></sup>
 
 **Drei Dinge bekommen für normale Trainierende ein klares Ja. Eines ein bedingtes. Der Rest des Warenkorbs ist situativ oder Rauschen.**
 
 ### Ein deutscher Hinweis vorweg: was du überhaupt sagen darfst
 
-Anders als in den USA ist Werbung mit Gesundheits- und Leistungsaussagen in der EU streng geregelt. Zulässig sind im Wesentlichen nur Angaben, die im EU-Register der nährwert- und gesundheitsbezogenen Angaben zugelassen sind.<sup class="fn"><a href="#source-13">13</a></sup> Für Kreatin und für Eiweiß gibt es dort zugelassene Angaben zu körperlicher Leistung bei kurzzeitiger intensiver Belastung bzw. zu Muskelmasse: für viele andere Bestandteile im Warenkorb deiner Kundin gibt es keine.
+Anders als in den USA ist Werbung mit Gesundheits- und Leistungsaussagen in der EU streng geregelt. Zulässig sind im Wesentlichen nur Angaben, die im EU-Register der nährwert- und gesundheitsbezogenen Angaben zugelassen sind.<sup class="fn"><a href="#source-18">18</a></sup> Für Kreatin und für Eiweiß gibt es dort zugelassene Angaben zu körperlicher Leistung bei kurzzeitiger intensiver Belastung bzw. zu Muskelmasse: für viele andere Bestandteile im Warenkorb deiner Kundin gibt es keine.
 
 Praktisch heißt das zweierlei. Erstens: Was die Studienlage hergibt und was du bewerben darfst, sind zwei verschiedene Fragen, prüfe die zweite im Register, bevor du etwas auf eine Website oder in ein Angebot schreibst. Zweitens, und wichtiger für die Trainingsfläche: Du bist Coach, nicht Ärztin oder Arzt. Alles, was nach Behandlung klingt, gehört zu einer Fachperson, und das gilt ausdrücklich auch für Medikamente zum Abnehmen.
 
@@ -85,7 +91,7 @@ Praktisch heißt das zweierlei. Erstens: Was die Studienlage hergibt und was du 
 
 Die langweiligste Empfehlung im Fitnessbereich, und trotzdem die richtige. Eine Meta-Analyse aus 2024 mit 23 Studien fand für Kreatin plus Krafttraining **+11,35 kg** Unterkörperkraft gegenüber Placebo.<sup class="fn"><a href="#source-2">2</a></sup> Eine Netzwerk-Meta-Analyse aus 2026 mit 52 Studien sagt es noch deutlicher: Kreatin allein lieferte die konsistentesten Verbesserungen bei Sprint, Sprung, wiederholtem Sprint und Kraftausdauer im Oberkörper, vor den Alternativen, gegen die es verglichen wurde.<sup class="fn"><a href="#source-3">3</a></sup>
 
-Fünf Gramm am Tag, schlichtes Monohydrat, Zeitpunkt egal. Ein paar Cent. Das beste Verhältnis von Kosten zu Evidenz im ganzen Regal.
+Fünf Gramm am Tag, schlichtes Monohydrat, Zeitpunkt egal. Ein paar Cent. Das beste Verhältnis von Kosten zu Evidenz im ganzen Regal. Der zweite Grund, warum es das klare Ja ist, heißt Sicherheit: Der ISSN Position Stand kommt zu dem Schluss, dass kurz- und langfristige Kreatin-Supplementierung, bis zu 30 g/Tag über 5 Jahre, bei gesunden Menschen sicher ist und gut vertragen wird.<sup class="fn"><a href="#source-13">13</a></sup>
 
 **Evidenzgrad: stark.** Jahrzehntelange Replikation, konsistente Richtung, mehrere Meta-Analysen.
 
@@ -109,7 +115,7 @@ Zwei Coaching-Hinweise, die das Marketing weglässt. Erstens: Der Effekt ist im 
 
 Und die ehrliche Einschränkung, die dich aus Schwierigkeiten hält: Wenn es den Schlaf zerstört, ist es für das Training unterm Strich ein Minus. Punkt. Koffein ist ein Werkzeug für eine bestimmte Einheit, keine Tagesgewohnheit, in die du jemanden hineincoachst.
 
-Zur Kommunikation: Für Koffein und sportliche Leistung ist im EU-Register keine zugelassene gesundheitsbezogene Angabe hinterlegt.<sup class="fn"><a href="#source-13">13</a></sup> Du kannst die Studienlage im Gespräch erklären, auf deiner Website bewerben solltest du sie nicht.
+Zur Kommunikation: Für Koffein und sportliche Leistung ist im EU-Register keine zugelassene gesundheitsbezogene Angabe hinterlegt.<sup class="fn"><a href="#source-18">18</a></sup> Du kannst die Studienlage im Gespräch erklären, auf deiner Website bewerben solltest du sie nicht.
 
 **Evidenzgrad: stark für den Effekt, moderate Sicherheit über die Endpunkte hinweg; die Effektstärke schwankt individuell erheblich.**
 
@@ -145,13 +151,15 @@ Coaches streiten über Effektstärken und überspringen diesen Punkt komplett. D
 
 Das ist rund jedes dritte Produkt aus dem freien Markt, mehrheitlich undeklariert.
 
+Und das Problem ist nicht neu. Eine internationale Analyse von 634 nicht-hormonellen Supplements, gekauft zwischen 2000 und 2001 in 13 Ländern, fand in **14,8%** anabole Steroide, die nicht auf dem Etikett standen, und alle belasteten Produkte stammten laut Etikett von Firmen aus nur fünf Ländern: USA, Niederlande, Großbritannien, Italien und Deutschland.<sup class="fn"><a href="#source-14">14</a></sup>
+
 Wichtig für die Einordnung: Diese Zahl beschreibt den australischen Online-Markt. Eine gleichwertige Zahl für Deutschland behaupten wir hier nicht, aber die Lieferketten sind international, und die Konsequenz ist ohnehin dieselbe.
 
 Für getestete Sportlerinnen und Sportler ist das ein Karriererisiko: Es gilt Strict Liability, "ich wusste es nicht" ist keine Verteidigung. Für alle anderen sind es schlicht undeklarierte Stimulanzien im eigenen Körper. So oder so lautet die Lösung gleich und ist unspektakulär: **nur Produkte mit unabhängiger Chargenprüfung kaufen.** Im deutschsprachigen Raum führt der geläufige Weg über die Kölner Liste, international über vergleichbare Prüfprogramme. Die Übersichtsliteratur landet exakt dort: Etikett gegen die Verbotsliste prüfen, keine Produkte mit überlappenden Inhaltsstoffen stapeln, zertifizierte Produkte wählen.<sup class="fn"><a href="#source-10">10</a></sup>
 
 Wer getestete Athletinnen betreut, für den ist das keine Empfehlung mehr, sondern Sorgfaltspflicht. Schick sie vor der Einnahme zur Sporternährungsfachkraft oder zur Ärztin.
 
-**Evidenzgrad: stark.** Mehrere unabhängige Marktanalysen, konsistente Befunde.
+**Evidenzgrad: stark.** Mehrere unabhängige Marktanalysen, zwei Jahrzehnte auseinander, konsistente Befunde.
 
 ## Das Loch im ganzen Regal
 
@@ -161,6 +169,8 @@ Ein Audit von 2022 ging die Forschung hinter den sechs am besten belegten Leistu
 
 Das heißt nicht, dass die Empfehlungen für Kundinnen falsch sind. Die Richtung der Evidenz hält höchstwahrscheinlich. Aber die Präzision, Dosis, Effektgröße, ob sich etwas über den Zyklus verschiebt, ist nicht auf demselben Niveau belegt. So zu tun, als wäre sie es, ist genau die Sorte Selbstsicherheit, die Vertrauen kostet, sobald jemand die Studie selbst liest.
 
+Neuere Daten zeigen, warum diese Einschränkung zählt. Eine Meta-Analyse von 2025 über 69 Kreatin-Studien (1.937 Teilnehmende) fand bei Männern signifikante Zuwächse bei Beinpresse, Kniebeuge, Sprunghöhe und Wingate-Spitzenleistung, bei Frauen dagegen nicht; dort fielen mehrere Endpunkte kleiner oder nicht signifikant aus.<sup class="fn"><a href="#source-15">15</a></sup> Das ist kein Beleg dafür, dass Kreatin bei Frauen nicht wirkt. Eine Meta-Analyse von 2026 über 7 RCTs mit postmenopausalen Frauen (n = 608) fand mit Kreatin **+0,37 kg** fettfreie Masse und **+7,5 kg** an der Beinpresse; der Nutzen zeigte sich, wenn mindestens 5 g/Tag mit Krafttraining kombiniert wurden, während Studien mit 3 g/Tag oder weniger ohne Training keinen messbaren Effekt zeigten.<sup class="fn"><a href="#source-16">16</a></sup>
+
 Sag es laut: *"Das ist gut belegt, und der Großteil der Forschung wurde an Männern gemacht. Darauf achten wir bei dir."* Dieser Satz macht dich glaubwürdiger, nicht unsicherer.
 
 **Evidenzgrad: Das ist eine Lücke in der Evidenz, kein Befund.** Behandle es als Abschlag auf die Sicherheit, nicht als Gegenanzeige.
@@ -169,13 +179,13 @@ Sag es laut: *"Das ist gut belegt, und der Großteil der Forschung wurde an Män
 
 Das kann keine statische Supplement-Tabelle liefern: die lebendige Front.
 
-Aktuell listet das Studienregister **41 Studien**, die rekrutieren oder kurz vor dem Start stehen und Kreatin, Whey oder ein Proteinsupplement gegen Muskelverlust bei Gewichtsverlust, Adipositas oder Sarkopenie untersuchen.<sup class="fn"><a href="#source-12">12</a></sup> Das Muster darin ist die eigentliche Geschichte: Drei verschiedene Posten aus dem Regal deiner Kundin werden auf dasselbe Problem gerichtet, Muskelverlust während medikamentengestützter Gewichtsabnahme.
+Aktuell listet das Studienregister **41 Studien**, die rekrutieren oder kurz vor dem Start stehen und Kreatin, Whey oder ein Proteinsupplement gegen Muskelverlust bei Gewichtsverlust, Adipositas oder Sarkopenie untersuchen.<sup class="fn"><a href="#source-17">17</a></sup> Das Muster darin ist die eigentliche Geschichte: Drei verschiedene Posten aus dem Regal deiner Kundin werden auf dasselbe Problem gerichtet, Muskelverlust während medikamentengestützter Gewichtsabnahme.
 
 Drei benannte Beispiele, alle laufend:
 
 - Eine Pilotstudie zu **Kreatin plus Krafttraining** zum Erhalt fettfreier Masse während einer Therapie mit GLP-1-Rezeptoragonisten (NCT07625202, rekrutierend).
 - Eine multizentrische RCT zu **Whey-Protein plus Krafttraining** bei Erwachsenen ab 45 unter inkretinbasierter Abnehm-Medikation, 180 Teilnehmende über sechs Monate (NCT06950684).
-- Eine Phase-2-Studie zu **HMB plus Vitamin D** während einer Gewichtsabnahme unter Semaglutid bei älteren Erwachsenen (NCT07760948).<sup class="fn"><a href="#source-12">12</a></sup>
+- Eine Phase-2-Studie zu **HMB plus Vitamin D** während einer Gewichtsabnahme unter Semaglutid bei älteren Erwachsenen (NCT07760948).<sup class="fn"><a href="#source-17">17</a></sup>
 
 Lies das als Coach, nicht als Wissenschaftlerin: Das Supplement-Gespräch mit deinen Kundinnen und Kunden ordnet sich gerade um eine Frage neu, die es vor fünf Jahren nicht gab. Niemand kann behaupten, dass eines dieser Mittel dafür belegt ist: diese Studien liefern Ergebnisse ab 2027. Es wird untersucht, mehr nicht. Aber wer die Frage versteht, bevor die Antwort da ist, ist der Coach, dem man dann vertraut.
 
@@ -187,7 +197,7 @@ Deshalb trägt diese Seite auch ein Datum. Wir aktualisieren sie, sobald die Pip
 
 Wenn dir die nächste Kundin den 180-Euro-Warenkorb hinhält, hier die ganze Triage in Klartext:
 
-*"Lass uns das zusammenstreichen. Das Kreatin bleibt: fünf Gramm am Tag, das günstigste schlichte Monohydrat, es ist das am besten belegte Mittel hier drin. Das Protein bleibt nur, wenn dir über das Essen tatsächlich Protein fehlt; das schauen wir uns zuerst an, denn ab einer bestimmten Zufuhr bringt das Pulver nichts mehr. Koffein vor deinen harten Einheiten ist in Ordnung und wirkt, aber es wird nach Körpergewicht dosiert, ist keine Tagesgewohnheit, und fällt weg, wenn es deinen Schlaf kostet. BCAAs, Testo-Booster und Fatburner streichen wir; hinter der Testo-Booster-Kategorie steckt so gut wie keine Datenlage. Und was du behältst, kaufst du chargengeprüft, zum Beispiel über die Kölner Liste: in einer Marktanalyse enthielt rund ein Drittel der frei gekauften Produkte undeklarierte Substanzen. Der letzte Punkt ist wichtiger als alles andere auf dieser Liste."*
+*"Lass uns das zusammenstreichen. Das Kreatin bleibt: fünf Gramm am Tag, das günstigste schlichte Monohydrat, es ist das am besten belegte Mittel hier drin. Das gilt auch für Frauen, auch nach der Menopause: Die Studien mit Effekt nutzten fünf Gramm zusammen mit Krafttraining, keine Alibi-Dosis. Das Protein bleibt nur, wenn dir über das Essen tatsächlich Protein fehlt; das schauen wir uns zuerst an, denn ab einer bestimmten Zufuhr bringt das Pulver nichts mehr. Koffein vor deinen harten Einheiten ist in Ordnung und wirkt, aber es wird nach Körpergewicht dosiert, ist keine Tagesgewohnheit, und fällt weg, wenn es deinen Schlaf kostet. BCAAs, Testo-Booster und Fatburner streichen wir; hinter der Testo-Booster-Kategorie steckt so gut wie keine Datenlage. Und was du behältst, kaufst du chargengeprüft, zum Beispiel über die Kölner Liste: in einer Analyse von 200 online gekauften Produkten von 2025 enthielt rund ein Drittel im Sport verbotene Substanzen, und bei mehr als der Hälfte davon stand das nicht auf dem Etikett. Der letzte Punkt ist wichtiger als alles andere auf dieser Liste."*
 
 Das war's. Kein Rumgeeiere, keine Bro-Science, keine Überversprechen. Du hast ihr gerade den größten Teil des Geldes und das ganze Risiko gespart, und genau das ist der Job.
 
