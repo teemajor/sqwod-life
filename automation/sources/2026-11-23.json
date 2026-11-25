@@ -1,0 +1,200 @@
+[
+  {
+    "id": "news-2026-11-23-1",
+    "entity": "Athletech News",
+    "topic": "World Gym Passes 300 Locations as Q3 Profit Jumps",
+    "pillar": "signal",
+    "conversion": "verified",
+    "provenance": "Athletech News (Fri, 20 Nov 2026 15:48:21 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "World Gym Passes 300 Locations as Q3 Profit Jumps"
+      },
+      {
+        "label": "Outlet",
+        "value": "Athletech News"
+      },
+      {
+        "label": "Article",
+        "value": "Athletech News – a curated series of articles creating the intersection of fitness, technology and finance. Athletech News is a first-of-its-kind digital platform featuring premium and authentic content making it the premier b2b publication. Through our partnerships with leading brands in the fitness and related industries, our platform enables all levels of expertise in the fitness industry to make better informed decisions. The Taiwan-based fitness operator is expanding across Asia and the U.S. while adding Pilates and Hyrox programming to drive membership growth World Gym Corporation reported a 56% jump in third-quarter profit as the fitness chain surpassed 300 locations worldwide, driven by membership growth, personal training revenue and improving margins. The Taiwan-based company, which acquired the global World Gym brand in 2024, posted net profit of NT$177 million ($5.61 million) for the quarter, up from NT$113 million a year earlier. Revenue increased 5.5% year over year to NT$2.98 billion (approximately $93.9 million), while gross margin rose 3.27 percentage points to 19.98%. Operating margin improved to 8.95%, up 2.81 percentage points. World Gym also reported earnings per share of NT$1.62, compared with NT$1.04 in the year-ago period. Its board approved a quarterly cash dividend of NT$1.455 per share."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "World Gym Passes 300 Locations as Q3 Profit Jumps",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/world-gym-passes-300-locations-as-q3-profit-jumps/"
+    },
+    "de": {
+      "headline": "World Gym Passes 300 Locations as Q3 Profit Jumps",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/world-gym-passes-300-locations-as-q3-profit-jumps/"
+    }
+  },
+  {
+    "id": "news-2026-11-23-2",
+    "entity": "Axios",
+    "topic": "Hone Health raises $228M for longevity play",
+    "pillar": "signal",
+    "conversion": "sqwod-os",
+    "provenance": "Axios (Wed, 18 Nov 2026 14:01:48 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Hone Health raises $228M for longevity play"
+      },
+      {
+        "label": "Outlet",
+        "value": "Axios"
+      },
+      {
+        "label": "Deal",
+        "value": "raise $228M"
+      }
+    ],
+    "thin": true,
+    "en": {
+      "headline": "Hone Health raises $228M for longevity play",
+      "dek": "Via Axios.",
+      "readMore": "https://www.axios.com/pro/health-tech-deals/2026/11/18/hone-health-228m-general-catalyst-cvf"
+    },
+    "de": {
+      "headline": "Hone Health raises $228M for longevity play",
+      "dek": "Via Axios.",
+      "readMore": "https://www.axios.com/pro/health-tech-deals/2026/11/18/hone-health-228m-general-catalyst-cvf"
+    }
+  },
+  {
+    "id": "news-2026-11-23-3",
+    "entity": "Runner's World",
+    "topic": "The Oura Black Friday deals have dropped – and the Oura Ring 5 is at its lowest-ever price",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "Runner's World (Fri, 20 Nov 2026 01:34:34 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "The Oura Black Friday deals have dropped – and the Oura Ring 5 is at its lowest-ever price"
+      },
+      {
+        "label": "Outlet",
+        "value": "Runner's World"
+      },
+      {
+        "label": "Article",
+        "value": "Save up to 25% on this top-of-the-range fitness tracker We earn a commission for products purchased through some links in this article. The Oura Black Friday sale includes the biggest-ever saving on the Oura Ring 5 , which launched in May. You can also get 30% off the Oura Ring 4 – the biggest discount that we’ve seen on this model. If you care about your health and fitness metrics, you should care about the fact that Oura has just dropped one of the best Black Friday sales that we ’ ve spotted so far this season, which includes hefty savings across the Oura Ring 5 and Oura Ring 4 – two of our highest-rated wearables. Having only launched in the UK six months ago, the Oura Ring 5 is now on sale at its lowest-ever price – £100 cheaper than the RRP, to be precise. That puts it at £299 for the Silver and Black styles and £399 for Gold, Deep Rose, Stealth and Brushed Silver. Meanwhile, you can save up to 30% on the Oura Ring 4, which is another chunky price reduction. The cherry on top? Oura is offering free shipping on all orders until Monday 30 November. We’ve tested all the best smart rings out there and believe that – despite strong competition from the likes of Ultrahuman, Samsung and Amazfit – the Oura Ring continues to set the benchmark in this arena. With that in mind, you’d do well to jump on these Oura Black Friday savings, which run from now until Tuesday 1 December."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "The Oura Black Friday deals have dropped – and the Oura Ring 5 is at its lowest-ever price",
+      "dek": "Via Runner's World.",
+      "readMore": "https://www.runnersworld.com/uk/gear/tech/a74477223/oura-ring-black-friday-2026/"
+    },
+    "de": {
+      "headline": "The Oura Black Friday deals have dropped – and the Oura Ring 5 is at its lowest-ever price",
+      "dek": "Via Runner's World.",
+      "readMore": "https://www.runnersworld.com/uk/gear/tech/a74477223/oura-ring-black-friday-2026/"
+    }
+  },
+  {
+    "id": "news-2026-11-23-4",
+    "entity": "Quasa.io",
+    "topic": "Zing Coach – AI Fitness Coaching Platform, Adaptive Workouts & App Integration",
+    "pillar": "build",
+    "conversion": "sqwod-ai",
+    "provenance": "Quasa.io (Sun, 22 Nov 2026 18:58:13 GMT)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Zing Coach – AI Fitness Coaching Platform, Adaptive Workouts & App Integration"
+      },
+      {
+        "label": "Outlet",
+        "value": "Quasa.io"
+      },
+      {
+        "label": "Article",
+        "value": "Zing Coach is an AI fitness coaching platform from Zing Coach Inc., offering personalized training through its own app and integrations for fitness businesses. It builds workouts around goals, training history, available equipment and schedules, then adjusts plans using activity data and member feedback. Features include conversational coaching, progress tracking, fitness assessments and body composition estimates. Partners can choose a branded experience within the Zing app, embed coaching through a mobile SDK, or discuss a white-label app. Independent reporting confirms deployments with gym operators. Current pricing is listed on the official website; confirm the applicable partner package and commercial terms directly. Gym operators and fitness businesses seeking personalized digital training within a branded member experience. 4.0/5 stars. Consider Zing Coach when your fitness business needs adaptive workout guidance through a branded app experience. Confirm pricing, integration scope and data handling before choosing a deployment. Earn a QUA reward by reviewing on Quasa.io too!"
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Zing Coach – AI Fitness Coaching Platform, Adaptive Workouts & App Integration",
+      "dek": "Via Quasa.io.",
+      "readMore": "https://quasa.io/video/zing-coach-ai-fitness-coaching-platform-adaptive-workouts-app-integration"
+    },
+    "de": {
+      "headline": "Zing Coach – AI Fitness Coaching Platform, Adaptive Workouts & App Integration",
+      "dek": "Via Quasa.io.",
+      "readMore": "https://quasa.io/video/zing-coach-ai-fitness-coaching-platform-adaptive-workouts-app-integration"
+    }
+  },
+  {
+    "id": "news-2026-11-23-5",
+    "entity": "fitness MANAGEMENT",
+    "topic": "TOUCH:BAY: Kostenfreie Werbeflächen für Gesundheitsinitiativen",
+    "pillar": "signal",
+    "conversion": "pods",
+    "provenance": "fitness MANAGEMENT (2026-11-20T09:15:19+00:00)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "TOUCH:BAY: Kostenfreie Werbeflächen für Gesundheitsinitiativen"
+      },
+      {
+        "label": "Outlet",
+        "value": "fitness MANAGEMENT"
+      },
+      {
+        "label": "Article",
+        "value": "Gemeinnützige Organisationen können ihre Gesundheitskampagnen über das digitale Display-Netzwerk von TOUCH:BAY in Fitnessstudios ausspielen. Bewerbungen sind ab sofort möglich; die Auswahl erfolgt nach thematischer Eignung. Menü Linkedin Facebook Instagram Spotify Youtube Whatsapp Map-marker-alt Ergebnisse alle Ergebnisse anzeigen Ergebnisse alle Ergebnisse anzeigen Results See all results Ergebnisse alle Ergebnisse anzeigen Menü Home > Kostenfreie Werbeflächen Das Angebot richtet sich an Non-Profit-Organisationen, Vereine und Initiativen, die sich für Gesundheit und Lebensqualität einsetzen. Dazu zählen insbesondere Projekte aus den Bereichen Prävention, psychische Gesundheit, Bewegung, Inklusion, Selbsthilfe und Unterstützung von Menschen mit Erkrankungen. Gesucht werden Kampagnen, die über Gesundheitsthemen aufklären, auf Hilfs- und Beratungsangebote aufmerksam machen oder gesellschaftliches Engagement fördern. Mögliche Inhalte sind etwa Informationen zur Früherkennung, Hinweise auf Unterstützung bei psychischen Belastungen oder Aufrufe zur Blutspende und Stammzellregistrierung. Auch die Suche nach ehrenamtlichen Unterstützern, Benefizaktionen und Spendenaufrufe für konkrete gemeinnützige Projekte können Teil der Initiative sein."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "TOUCH:BAY: Kostenfreie Werbeflächen für Gesundheitsinitiativen",
+      "dek": "Via fitness MANAGEMENT.",
+      "readMore": "https://www.fitnessmanagement.de/touchbay-kostenfreie-werbeflaechen-gemeinnuetzige-gesundheitsinitiativen/"
+    },
+    "de": {
+      "headline": "TOUCH:BAY: Kostenfreie Werbeflächen für Gesundheitsinitiativen",
+      "dek": "Via fitness MANAGEMENT.",
+      "readMore": "https://www.fitnessmanagement.de/touchbay-kostenfreie-werbeflaechen-gemeinnuetzige-gesundheitsinitiativen/"
+    }
+  },
+  {
+    "id": "news-2026-11-23-6",
+    "entity": "Athletech News",
+    "topic": "Zygo’s Underwater Headphones Are a Game-Changer for Swimmers & 20% off for Black Friday",
+    "pillar": "gear",
+    "conversion": "verified",
+    "provenance": "Athletech News (Mon, 23 Nov 2026 01:05:00 +0000)",
+    "facts": [
+      {
+        "label": "Story",
+        "value": "Zygo’s Underwater Headphones Are a Game-Changer for Swimmers & 20% off for Black Friday"
+      },
+      {
+        "label": "Outlet",
+        "value": "Athletech News"
+      },
+      {
+        "label": "Article",
+        "value": "Zygo claims to solve one of swimming’s biggest limitations: listening to audio underwater. We put the headphones to the test, which are now 20% off for Black Friday All products featured on Athletech News are independently selected by our editors. However, when you buy something through our retail links, we may earn an affiliate commission. As someone who grew up as a competitive swimmer, the idea of streaming music while training would have felt completely out of the realm of possibility (because years ago, it was). Music pre-loaded on underwater devices first came on the scene to all bored swimmers’ delight, but now, Zygo has taken entertainment to the next level with its patented underwater Bluetooth speakers. We recently tested Zygo’s latest Z2 Waterproof Headphones , which allow you to stream music, audiobooks, podcasts or audio from other apps straight from your phone via a charging case that doubles as a transmitter. The headphones loop around the back of your head, over or under a swim cap, and use bone conduction technology to deliver sound. They come with the case/transmitter, a pair of earplugs and a charging cable, and they’re also HSA/FSA-eligible. Keep reading below for our honest review of the Zygo Z2 headphones (which landed on Time magazine’s Best Inventions of 2022 list) and how they compare to Shokz and H2O Audio’s waterproof offerings."
+      }
+    ],
+    "thin": false,
+    "en": {
+      "headline": "Zygo’s Underwater Headphones Are a Game-Changer for Swimmers & 20% off for Black Friday",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/zygo-z2-underwater-swimming-bluetooth-headphones-review/"
+    },
+    "de": {
+      "headline": "Zygo’s Underwater Headphones Are a Game-Changer for Swimmers & 20% off for Black Friday",
+      "dek": "Via Athletech News.",
+      "readMore": "https://athletechnews.com/zygo-z2-underwater-swimming-bluetooth-headphones-review/"
+    }
+  }
+]

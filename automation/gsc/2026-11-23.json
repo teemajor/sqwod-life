@@ -1,0 +1,175 @@
+{
+  "site": "sc-domain:sqwod.life",
+  "window": {
+    "start": "2026-10-23",
+    "end": "2026-11-20",
+    "days": 28
+  },
+  "generatedAt": "2026-11-23T18:25:38.508Z",
+  "totals": {
+    "clicks": 0,
+    "impressions": 8,
+    "ctr": 0,
+    "queries": 4,
+    "pages": 10
+  },
+  "topQueries": [
+    {
+      "query": "\"jazzercise\"",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 83.3
+    },
+    {
+      "query": "nexowod",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 62.5
+    },
+    {
+      "query": "sqwod pod",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "workout price history",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    }
+  ],
+  "topPages": [
+    {
+      "page": "https://sqwod.life/en/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0,
+      "position": 2.6
+    },
+    {
+      "page": "https://sqwod.life/de/",
+      "lang": "de",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 15.1
+    },
+    {
+      "page": "https://sqwod.life/en/daily/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "page": "https://sqwod.life/en/intelligence/deals/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 13.1
+    },
+    {
+      "page": "https://sqwod.life/de/intelligence/deals/",
+      "lang": "de",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://sqwod.life/en/articles/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://sqwod.life/en/evidence/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://sqwod.life/en/intelligence/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://sqwod.life/en/intelligence/pricing-index/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://sqwod.life/en/verified/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    }
+  ],
+  "striking": [],
+  "questions": [],
+  "gaps": [],
+  "countries": [
+    {
+      "country": "usa",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0,
+      "position": 26.5
+    },
+    {
+      "country": "deu",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 11
+    },
+    {
+      "country": "dnk",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "gbr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "hnd",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "country": "pol",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    }
+  ]
+}

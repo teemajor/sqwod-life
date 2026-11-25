@@ -145,16 +145,18 @@
       "status": "drafted",
       "slug": "blood-flow-restriction-evidence-coach-playbook",
       "date": "2026-10-05"
-    }
-  ],
-  "queue": [
+    },
     {
       "topic": "Collagen & joint pain — does the supplement do anything for lifters",
       "pillar": "signal",
       "conversion": "verified",
       "angle": "supplement; tendon/ligament claims, dose and vitamin C timing, what's marketing vs. measured",
-      "status": "pending"
-    },
+      "status": "drafted (awaiting review)",
+      "slug": "collagen-evidence-coach-playbook",
+      "date": "2026-11-23"
+    }
+  ],
+  "queue": [
     {
       "topic": "Iron & ferritin in female athletes — the deficiency coaches actually miss",
       "pillar": "move",

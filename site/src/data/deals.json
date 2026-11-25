@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10",
+  "generatedAt": "2026-11-25",
   "fx": {
     "USD": 1,
     "EUR": 1.08,
@@ -18,6 +18,419 @@
   },
   "mergeDays": 60,
   "deals": [
+    {
+      "date": "2026-11-24",
+      "entity": "Therme Manchester",
+      "kind": "valuation",
+      "amount": "£500m",
+      "amountUsd": 635000000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "revealed updated designs for its £500m wellness resort at a 28-acre TraffordCity site as construction progresses",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Therme-Manchester-refines-resort-plans-as-group-calls-for-wellbeing-to-become-social-infrastructure/364003",
+      "source": "Health Club Management",
+      "issue": "/en/daily/2026-11-24",
+      "region": "UK",
+      "category": "Other",
+      "id": "therme-valuation-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-24",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Therme-Manchester-refines-resort-plans-as-group-calls-for-wellbeing-to-become-social-infrastructure/364003",
+          "issue": "/en/daily/2026-11-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "queue: pending"
+    },
+    {
+      "date": "2026-11-24",
+      "entity": "Ohana Growth Partners",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "sold seven Florida Planet Fitness clubs totalling nearly 134,000 square feet to Gulf Coast Fitness Management",
+      "url": "https://clubsolutionsmagazine.com/2026/11/ohana-growth-partners-sells-its-florida-portfolio/",
+      "source": "Club Solutions",
+      "issue": "/en/daily/2026-11-24",
+      "region": "Other",
+      "category": "Other",
+      "id": "ohana-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-24",
+          "url": "https://clubsolutionsmagazine.com/2026/11/ohana-growth-partners-sells-its-florida-portfolio/",
+          "issue": "/en/daily/2026-11-24"
+        }
+      ],
+      "status": "pending",
+      "reason": "queue: pending"
+    },
+    {
+      "date": "2026-11-20",
+      "entity": "FitX",
+      "kind": "acquisition",
+      "amount": "€2,500,000",
+      "amountUsd": 2700000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "FitX opened its 115th gym in Düsseldorf-Friedrichstadt, investing around 2.5 million euros.",
+      "url": "https://www.fitnessmanagement.de/fitx-duesseldorf-friedrichstadt-studioeroeffnung-2026/",
+      "source": "fitness MANAGEMENT",
+      "issue": "/en/daily/2026-11-20",
+      "region": "DACH",
+      "category": "Gyms & studios",
+      "id": "fitx-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-20",
+          "url": "https://www.fitnessmanagement.de/fitx-duesseldorf-friedrichstadt-studioeroeffnung-2026/",
+          "issue": "/en/daily/2026-11-20"
+        }
+      ],
+      "country": "Germany",
+      "noteDe": "FitX eröffnete seinen 115. Standort in Düsseldorf-Friedrichstadt mit einer Investition von rund 2,5 Millionen Euro.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "queue: discarded"
+    },
+    {
+      "date": "2026-11-19",
+      "entity": "Hone Health",
+      "kind": "raise",
+      "amount": "$228M",
+      "amountUsd": 228000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Hone Health raised $228M in equity and growth financing to expand longevity care.",
+      "url": "https://insider.fitt.co/hone-health-secures-228m-enters-peptides-and-pmos-care/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-19",
+      "region": "North America",
+      "category": "Health & longevity",
+      "id": "hone-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-19",
+          "url": "https://insider.fitt.co/hone-health-secures-228m-enters-peptides-and-pmos-care/",
+          "issue": "/en/daily/2026-11-19"
+        },
+        {
+          "date": "2026-11-23",
+          "url": "https://www.axios.com/pro/health-tech-deals/2026/11/18/hone-health-228m-general-catalyst-cvf",
+          "issue": "/en/daily/2026-11-23"
+        }
+      ],
+      "country": "United States",
+      "investors": [
+        "MarcyPen Capital Partners",
+        "General Catalyst (Customer Value Fund)",
+        "Pentland Ventures",
+        "Kinship Ventures",
+        "Hanwha",
+        "Gannet Capital",
+        "humbition",
+        "Comma Capital"
+      ],
+      "leads": [
+        "MarcyPen Capital Partners"
+      ],
+      "noteDe": "Hone Health hat 228 Mio. Dollar in Eigenkapital- und Wachstumsfinanzierung für den Ausbau der Longevity-Plattform eingesammelt.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-19",
+      "entity": "Stamina",
+      "kind": "raise",
+      "amount": "$2M",
+      "amountUsd": 2000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "London triathlon app Stamina raised $2M seed funding backed by Olympic champion Greg Van Avermaet.",
+      "url": "https://athletechnews.com/triathlon-training-app-stamina-raises-2-million-backed-by-olympic-champion/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-11-19",
+      "region": "UK",
+      "category": "Software & AI",
+      "id": "stamina-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-19",
+          "url": "https://athletechnews.com/triathlon-training-app-stamina-raises-2-million-backed-by-olympic-champion/",
+          "issue": "/en/daily/2026-11-19"
+        }
+      ],
+      "country": "United Kingdom",
+      "investors": [
+        "Greg Van Avermaet",
+        "Syndicate One",
+        "100IN",
+        "Average Rob",
+        "Tomas Van Den Spiegel"
+      ],
+      "leads": [],
+      "noteDe": "Die Londoner Triathlon-App Stamina hat 2 Mio. Dollar Seed-Kapital eingesammelt, unter anderem vom Olympiasieger Greg Van Avermaet.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-19",
+      "entity": "Embr Labs",
+      "kind": "acquisition",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Therabody acquired Embr Labs' thermal wristband IP to expand into menopause and women's health.",
+      "url": "https://insider.fitt.co/therabody-acquires-embr-labs-thermal-tech/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-19",
+      "region": "North America",
+      "category": "Wearables & devices",
+      "id": "therabody-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-19",
+          "url": "https://insider.fitt.co/therabody-acquires-embr-labs-thermal-tech/",
+          "issue": "/en/daily/2026-11-19"
+        }
+      ],
+      "country": "United States",
+      "acquirer": "Therabody",
+      "noteDe": "Therabody hat das Thermaltechnologie-IP von Embr Labs übernommen, um das Angebot im Bereich Frauen- und Menopausengesundheit auszubauen.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-18",
+      "entity": "Wellness Monster",
+      "kind": "raise",
+      "amount": "",
+      "amountUsd": null,
+      "currency": null,
+      "approx": false,
+      "note": "Canadian kids' superfood snack brand Wellness Monster closed its first seed round led by Grip Ventures.",
+      "url": "https://app.dealroom.co/news/note/wellness-monster-lands-first-seed-round-for-canadian-kids-snacks",
+      "source": "Dealroom",
+      "issue": "/en/daily/2026-11-18",
+      "region": "North America",
+      "category": "Nutrition & supplements",
+      "id": "monster-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-18",
+          "url": "https://app.dealroom.co/news/note/wellness-monster-lands-first-seed-round-for-canadian-kids-snacks",
+          "issue": "/en/daily/2026-11-18"
+        }
+      ],
+      "country": "Canada",
+      "investors": [
+        "Grip Ventures"
+      ],
+      "leads": [
+        "Grip Ventures"
+      ],
+      "noteDe": "Das kanadische Kinder-Snack-Label Wellness Monster schloss seine erste Seed-Runde unter der Führung von Grip Ventures ab.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-16",
+      "entity": "Crunch Fitness",
+      "kind": "raise",
+      "amount": "$800 million",
+      "amountUsd": 800000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Crunch Fitness seeks $800 million via franchise-revenue-backed ABS bond sale.",
+      "url": "https://athletechnews.com/crunch-fitness-seeks-to-borrow-800-million-in-abs-bond-sale/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-11-16",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "crunch-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-16",
+          "url": "https://athletechnews.com/crunch-fitness-seeks-to-borrow-800-million-in-abs-bond-sale/",
+          "issue": "/en/daily/2026-11-16"
+        }
+      ],
+      "country": "United States",
+      "noteDe": "Crunch Fitness plant eine durch Franchise-Einnahmen besicherte ABS-Anleihe über 800 Millionen Dollar.",
+      "checked": "high",
+      "status": "pending",
+      "reason": "queue: discarded"
+    },
+    {
+      "date": "2026-11-15",
+      "entity": "YouFit Gyms",
+      "kind": "raise",
+      "amount": "$10M+",
+      "amountUsd": 10000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "YouFit Gyms received $10M+ from Skyline Investors to refresh existing gym clubs.",
+      "url": "https://clubsolutionsmagazine.com/2026/11/youfit-gyms-launches-10-million-plus-club-reinvestment-backed-by-skyline-investors/",
+      "source": "Club Solutions",
+      "issue": "/en/daily/2026-11-15",
+      "region": "North America",
+      "category": "Gyms & studios",
+      "id": "youfit-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-15",
+          "url": "https://clubsolutionsmagazine.com/2026/11/youfit-gyms-launches-10-million-plus-club-reinvestment-backed-by-skyline-investors/",
+          "issue": "/en/daily/2026-11-15"
+        }
+      ],
+      "country": "United States",
+      "investors": [
+        "Skyline Investors"
+      ],
+      "leads": [
+        "Skyline Investors"
+      ],
+      "noteDe": "YouFit Gyms erhält mehr als 10 Mio. USD von Skyline Investors zur Modernisierung bestehender Clubs.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-15",
+      "entity": "Sleep or Die",
+      "kind": "raise",
+      "amount": "$1M",
+      "amountUsd": 1000000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Sleep or Die raised $1M from True Beauty Ventures for its dissolvable sleep supplement strips.",
+      "url": "https://insider.fitt.co/wellness-strips-reformat-supplement-routines/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-15",
+      "region": "North America",
+      "category": "Nutrition & supplements",
+      "id": "sleep-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-15",
+          "url": "https://insider.fitt.co/wellness-strips-reformat-supplement-routines/",
+          "issue": "/en/daily/2026-11-15"
+        }
+      ],
+      "country": "Canada",
+      "investors": [
+        "True Beauty Ventures"
+      ],
+      "leads": [
+        "True Beauty Ventures"
+      ],
+      "noteDe": "Sleep or Die sammelte 1 Mio. USD von True Beauty Ventures fur seine aufloslichen Schlaf-Supplement-Strips ein.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-11",
+      "entity": "Vesalius Longevity Labs",
+      "kind": "raise",
+      "amount": "$6.5M",
+      "amountUsd": 6500000,
+      "currency": "USD",
+      "approx": false,
+      "note": "Vesalius Longevity Labs raised $6.5M in a private placement organized by Equinox chairman Harvey Spevak.",
+      "url": "https://athletechnews.com/equinox-chair-harvey-spevak-leads-6-5-million-financing-round-vesalius-longevity-labs/",
+      "source": "Athletech News",
+      "issue": "/en/daily/2026-11-11",
+      "region": "North America",
+      "category": "Health & longevity",
+      "id": "vesalius-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-11",
+          "url": "https://athletechnews.com/equinox-chair-harvey-spevak-leads-6-5-million-financing-round-vesalius-longevity-labs/",
+          "issue": "/en/daily/2026-11-11"
+        }
+      ],
+      "country": "Canada",
+      "noteDe": "Vesalius Longevity Labs sammelte 6,5 Mio. USD in einer Privatplatzierung, organisiert von Equinox-Chairman Harvey Spevak.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-11",
+      "entity": "Elevate",
+      "kind": "raise",
+      "amount": "£2 million",
+      "amountUsd": 2540000,
+      "currency": "GBP",
+      "approx": false,
+      "note": "London functional smoothie bar Elevate raised £2M from JamJar Investments, Cassius, Active Partners and Nick Jones.",
+      "url": "https://insider.fitt.co/elevate-scales-uk-smoothie-bar/",
+      "source": "Fitt Insider",
+      "issue": "/en/daily/2026-11-11",
+      "region": "UK",
+      "category": "Nutrition & supplements",
+      "id": "elevate-raise-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-11",
+          "url": "https://insider.fitt.co/elevate-scales-uk-smoothie-bar/",
+          "issue": "/en/daily/2026-11-11"
+        }
+      ],
+      "country": "United Kingdom",
+      "investors": [
+        "JamJar Investments",
+        "Cassius",
+        "Active Partners",
+        "Nick Jones"
+      ],
+      "leads": [
+        "JamJar Investments"
+      ],
+      "noteDe": "Die Londoner Smoothie-Bar Elevate sammelte 2 Mio. GBP von JamJar Investments, Cassius, Active Partners und Nick Jones.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
+    {
+      "date": "2026-11-10",
+      "entity": "Holmes Place Germany",
+      "kind": "acquisition",
+      "amount": "€135m",
+      "amountUsd": 145800000,
+      "currency": "EUR",
+      "approx": false,
+      "note": "Virgin Active agreed to acquire 13 Holmes Place Germany clubs for €135 million.",
+      "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Virgin-Active-buys-Holmes-Place-Germany-in-135-million-deal/363943",
+      "source": "Health Club Management",
+      "issue": "/en/daily/2026-11-10",
+      "region": "DACH",
+      "category": "Gyms & studios",
+      "id": "virgin-acquisition-2026-11",
+      "reports": [
+        {
+          "date": "2026-11-10",
+          "url": "https://www.healthclubmanagement.co.uk/health-club-management-news/Virgin-Active-buys-Holmes-Place-Germany-in-135-million-deal/363943",
+          "issue": "/en/daily/2026-11-10"
+        }
+      ],
+      "country": "Germany",
+      "acquirer": "Virgin Active",
+      "noteDe": "Virgin Active übernimmt 13 Holmes-Place-Clubs in Deutschland für 135 Millionen Euro.",
+      "checked": "high",
+      "status": "approved",
+      "reason": "queue: approved"
+    },
     {
       "date": "2026-11-09",
       "entity": "Reborne Longevity",
@@ -43,8 +456,8 @@
       "country": "United Kingdom",
       "noteDe": "Reborne Longevity ging in die Insolvenz, kurz nachdem das Unternehmen Partnerschaften in Fitness, Wellness und Gesundheit aufgebaut hatte.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-08",
@@ -72,8 +485,8 @@
       "acquirer": "Planet Fitness",
       "noteDe": "Planet Fitness übernahm die portugiesische Fitnesskette Be-Fit mit 25 Clubs und 80.000 Mitgliedern.",
       "checked": "high",
-      "status": "pending",
-      "reason": "queue: pending"
+      "status": "approved",
+      "reason": "queue: approved"
     },
     {
       "date": "2026-11-08",
@@ -101,7 +514,7 @@
       "noteDe": "Keybanc erhöhte das Kursziel für Planet Fitness auf 68 Dollar und bestätigte die Overweight-Einstufung.",
       "checked": "high",
       "status": "pending",
-      "reason": "queue: pending"
+      "reason": "queue: discarded"
     },
     {
       "date": "2026-11-05",

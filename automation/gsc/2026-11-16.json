@@ -1,0 +1,217 @@
+{
+  "site": "sc-domain:sqwod.life",
+  "window": {
+    "start": "2026-10-16",
+    "end": "2026-11-13",
+    "days": 28
+  },
+  "generatedAt": "2026-11-16T16:00:44.100Z",
+  "totals": {
+    "clicks": 0,
+    "impressions": 16,
+    "ctr": 0,
+    "queries": 5,
+    "pages": 10
+  },
+  "topQueries": [
+    {
+      "query": "nexowod",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0,
+      "position": 76.9
+    },
+    {
+      "query": "\"jazzercise\"",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 83.3
+    },
+    {
+      "query": "sqwod",
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "query": "sqwod pod",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "query": "workout price history",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    }
+  ],
+  "topPages": [
+    {
+      "page": "https://sqwod.life/de/",
+      "lang": "de",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 50
+    },
+    {
+      "page": "https://sqwod.life/en/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0,
+      "position": 2.6
+    },
+    {
+      "page": "https://sqwod.life/en/daily/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 35
+    },
+    {
+      "page": "https://sqwod.life/en/intelligence/deals/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 8,
+      "ctr": 0,
+      "position": 13.1
+    },
+    {
+      "page": "https://sqwod.life/de/intelligence/deals/",
+      "lang": "de",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 8
+    },
+    {
+      "page": "https://sqwod.life/en/articles/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 4
+    },
+    {
+      "page": "https://sqwod.life/en/evidence/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 3
+    },
+    {
+      "page": "https://sqwod.life/en/intelligence/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 5
+    },
+    {
+      "page": "https://sqwod.life/en/intelligence/pricing-index/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 10
+    },
+    {
+      "page": "https://sqwod.life/en/verified/",
+      "lang": "en",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0,
+      "position": 6
+    }
+  ],
+  "striking": [],
+  "questions": [],
+  "gaps": [
+    {
+      "query": "nexowod",
+      "landedOn": "https://sqwod.life/de/",
+      "impressions": 9,
+      "position": 76.9
+    }
+  ],
+  "countries": [
+    {
+      "country": "usa",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 27.1
+    },
+    {
+      "country": "deu",
+      "clicks": 0,
+      "impressions": 7,
+      "ctr": 0,
+      "position": 11.3
+    },
+    {
+      "country": "che",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0,
+      "position": 79.7
+    },
+    {
+      "country": "dnk",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "ecu",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "country": "gbr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "hnd",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 54
+    },
+    {
+      "country": "pol",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 1
+    },
+    {
+      "country": "ukr",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 90
+    },
+    {
+      "country": "zaf",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0,
+      "position": 87
+    }
+  ]
+}

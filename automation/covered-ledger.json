@@ -1,954 +1,5 @@
 [
   {
-    "date": "2026-10-20",
-    "key": "browne jacobson advises puregym on 235m swiss fitness busine",
-    "tokens": [
-      "browne",
-      "jacobson",
-      "advises",
-      "puregym",
-      "235m",
-      "swiss",
-      "business",
-      "acquisition"
-    ],
-    "entities": [
-      "PureGym"
-    ],
-    "deal": "£235m"
-  },
-  {
-    "date": "2026-10-20",
-    "key": "thelivmethodto expandnyc footprint open largest studio yet",
-    "tokens": [
-      "method",
-      "expand",
-      "footprint",
-      "open",
-      "largest",
-      "studio"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "sports club poppenbttel 20 standort erffnet",
-    "tokens": [
-      "sports",
-      "club",
-      "poppenb",
-      "ttel",
-      "standort",
-      "ffnet"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "jazzercise founder judi sheppard missett to be inducted into",
-    "tokens": [
-      "jazzercise",
-      "founder",
-      "judi",
-      "sheppard",
-      "missett",
-      "inducted",
-      "2027",
-      "hall",
-      "fame"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "neu im vorteilsclub 100  bonus bei wattline",
-    "tokens": [
-      "vorteilsclub",
-      "bonus",
-      "wattline"
-    ]
-  },
-  {
-    "date": "2026-10-20",
-    "key": "with new coo musicdriven rocksalt pilates gears up for franc",
-    "tokens": [
-      "music",
-      "driven",
-      "rocksalt",
-      "pilates",
-      "gears",
-      "franchise",
-      "expansion"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "the hidden revenue leaks costing fitness clubs",
-    "tokens": [
-      "hidden",
-      "revenue",
-      "leaks",
-      "costing",
-      "clubs"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "acsm fitnesstrends 2027 wearabletechnologie auf platz 1 im g",
-    "tokens": [
-      "acsm",
-      "fitnesstrends",
-      "2027",
-      "wearable",
-      "technologie",
-      "platz",
-      "globalen",
-      "trendranking"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "fitness on demand adds 99 mvmnt workouts to expand digital p",
-    "tokens": [
-      "demand",
-      "adds",
-      "mvmnt",
-      "workouts",
-      "expand",
-      "digital",
-      "programming"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "the boutique cycling industry is evolving and local ownershi",
-    "tokens": [
-      "boutique",
-      "cycling",
-      "evolving",
-      "local",
-      "ownership",
-      "lead",
-      "next",
-      "chapter"
-    ]
-  },
-  {
-    "date": "2026-10-21",
-    "key": "athlone fitness studio raises over 1000 in support of breast",
-    "tokens": [
-      "athlone",
-      "studio",
-      "raises",
-      "support",
-      "breast",
-      "cancer",
-      "awareness"
-    ],
-    "deal": "€1,000"
-  },
-  {
-    "date": "2026-10-21",
-    "key": "unravel health raises 25m for athome hormone testing",
-    "tokens": [
-      "unravel",
-      "health",
-      "raises",
-      "home",
-      "hormone",
-      "testing"
-    ],
-    "deal": "€2.5m"
-  },
-  {
-    "date": "2026-10-22",
-    "key": "mark wahlbergs municipal gym eyes affordable longevity ahead",
-    "tokens": [
-      "mark",
-      "wahlberg",
-      "municipal",
-      "eyes",
-      "affordable",
-      "longevity",
-      "ahead",
-      "launch"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "aciso consulting vier neue mitarbeitende fr beratung und mar",
-    "tokens": [
-      "aciso",
-      "consulting",
-      "vier",
-      "neue",
-      "mitarbeitende",
-      "beratung",
-      "marketing"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "the road to 1500 locations with tianna strateman of club pil",
-    "tokens": [
-      "road",
-      "1500",
-      "locations",
-      "tianna",
-      "strateman",
-      "club",
-      "pilates"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "hcm invest brings investors and fitness businesses together ",
-    "tokens": [
-      "invest",
-      "brings",
-      "investors",
-      "businesses",
-      "together",
-      "london"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "careerz group launches careerz coach ai connecting workforce",
-    "tokens": [
-      "careerz",
-      "group",
-      "launches",
-      "coach",
-      "connecting",
-      "workforce",
-      "assessment",
-      "data",
-      "demand",
-      "people",
-      "guidance"
-    ]
-  },
-  {
-    "date": "2026-10-22",
-    "key": "what belonging has to do with mental wellbeing at work",
-    "tokens": [
-      "what",
-      "belonging",
-      "mental",
-      "wellbeing",
-      "work"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "everyone actives duncan jefford reveals chemists 4u referral",
-    "tokens": [
-      "everyone",
-      "active",
-      "duncan",
-      "jefford",
-      "reveals",
-      "chemists",
-      "referral",
-      "partnership",
-      "summit"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "orangetheory fitness launches otconnect for apple watch",
-    "tokens": [
-      "orangetheory",
-      "launches",
-      "otconnect",
-      "apple",
-      "watch"
-    ],
-    "entities": [
-      "Orangetheory"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "fitness internationals club studio expands in la",
-    "tokens": [
-      "international",
-      "club",
-      "studio",
-      "expands"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "nirva raises 33 million to launch ai pendant in wearable mar",
-    "tokens": [
-      "nirva",
-      "raises",
-      "million",
-      "launch",
-      "pendant",
-      "wearable",
-      "market"
-    ],
-    "deal": "$33m"
-  },
-  {
-    "date": "2026-10-23",
-    "key": "john reed stuttgart neuer fitness music club erffnet",
-    "tokens": [
-      "john",
-      "reed",
-      "stuttgart",
-      "neuer",
-      "music",
-      "club",
-      "ffnet"
-    ]
-  },
-  {
-    "date": "2026-10-23",
-    "key": "wilde lands 40m to scale protein snacks",
-    "tokens": [
-      "wilde",
-      "lands",
-      "scale",
-      "protein",
-      "snacks"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "churn starts before cancellation the member signals studios ",
-    "tokens": [
-      "churn",
-      "starts",
-      "before",
-      "cancellation",
-      "member",
-      "signals",
-      "studios",
-      "missing"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "puregym bernimmt nonstop gym in der schweiz",
-    "tokens": [
-      "puregym",
-      "bernimmt",
-      "nonstop",
-      "schweiz"
-    ],
-    "entities": [
-      "PureGym"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "the invisible layer electromagnetic exposure and human healt",
-    "tokens": [
-      "invisible",
-      "layer",
-      "electromagnetic",
-      "exposure",
-      "human",
-      "health",
-      "built",
-      "environment"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "fitness community raises 3330 in pink challenge",
-    "tokens": [
-      "community",
-      "raises",
-      "pink",
-      "challenge"
-    ],
-    "deal": "£3,330"
-  },
-  {
-    "date": "2026-10-26",
-    "key": "wir begren unser neues frdermitglied",
-    "tokens": [
-      "begr",
-      "unser",
-      "neues",
-      "rdermitglied"
-    ]
-  },
-  {
-    "date": "2026-10-26",
-    "key": "why hiring the right gm can be a growth lever for boutique f",
-    "tokens": [
-      "hiring",
-      "right",
-      "growth",
-      "lever",
-      "boutique"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "mark mastrov named to 2027 hfa hall of fame",
-    "tokens": [
-      "mark",
-      "mastrov",
-      "named",
-      "2027",
-      "hall",
-      "fame"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "the secret strategy behind whoops 101 billion valuation",
-    "tokens": [
-      "secret",
-      "strategy",
-      "behind",
-      "whoop",
-      "billion",
-      "valuation"
-    ],
-    "entities": [
-      "Whoop"
-    ],
-    "deal": "$10.1b"
-  },
-  {
-    "date": "2026-10-27",
-    "key": "philip donnay named gll ceo as peter bundey retires",
-    "tokens": [
-      "philip",
-      "donnay",
-      "named",
-      "peter",
-      "bundey",
-      "retires"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "why body20 is betting on strength training for women",
-    "tokens": [
-      "body20",
-      "betting",
-      "strength",
-      "training",
-      "women"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "think smart software von medocheck",
-    "tokens": [
-      "think",
-      "smart",
-      "software",
-      "medo",
-      "check"
-    ]
-  },
-  {
-    "date": "2026-10-27",
-    "key": "the adecco group ag launches ezra loop an aihuman coaching s",
-    "tokens": [
-      "adecco",
-      "group",
-      "launches",
-      "ezra",
-      "loop",
-      "human",
-      "coaching",
-      "service"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "dssvevent 2026 in mlaga bildergalerie",
-    "tokens": [
-      "dssv",
-      "event",
-      "2026",
-      "laga",
-      "bildergalerie"
-    ],
-    "entities": [
-      "DSSV"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "sats grows earnings as group exercise strategy pays off and ",
-    "tokens": [
-      "sats",
-      "grows",
-      "earnings",
-      "group",
-      "exercise",
-      "strategy",
-      "pays",
-      "expansion",
-      "gathers",
-      "pace"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "burnham and highbridge fitness group raises 500 for breast c",
-    "tokens": [
-      "burnham",
-      "highbridge",
-      "group",
-      "raises",
-      "breast",
-      "cancer",
-      "pink",
-      "classes"
-    ],
-    "deal": "£500"
-  },
-  {
-    "date": "2026-10-28",
-    "key": "oura ring 5 with blood pressure tracking ai health feature l",
-    "tokens": [
-      "oura",
-      "ring",
-      "blood",
-      "pressure",
-      "tracking",
-      "health",
-      "feature",
-      "launched",
-      "india",
-      "price",
-      "features"
-    ],
-    "entities": [
-      "Oura"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "precor stellt neue glutebuilder selectorized line vor",
-    "tokens": [
-      "precor",
-      "stellt",
-      "neue",
-      "glutebuilder",
-      "selectorized",
-      "line"
-    ]
-  },
-  {
-    "date": "2026-10-28",
-    "key": "xponential fitness shares fall as revenue and p",
-    "tokens": [
-      "xponential",
-      "shares",
-      "fall",
-      "revenue"
-    ],
-    "entities": [
-      "Xponential"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "intake breathing gets 62m for magnetic nasal strips",
-    "tokens": [
-      "intake",
-      "breathing",
-      "gets",
-      "magnetic",
-      "nasal",
-      "strips"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "garmin fitness revenue climbs 16 after screenless wearable l",
-    "tokens": [
-      "garmin",
-      "revenue",
-      "climbs",
-      "screenless",
-      "wearable",
-      "launch"
-    ],
-    "entities": [
-      "Garmin"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "how one fitness operator tripled recovery engagement metrics",
-    "tokens": [
-      "operator",
-      "tripled",
-      "recovery",
-      "engagement",
-      "metrics"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "total fitness ceo sophie lawler and fitness first ceo marc d",
-    "tokens": [
-      "total",
-      "sophie",
-      "lawler",
-      "first",
-      "marc",
-      "diaper",
-      "script",
-      "summit"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "remembering dr tyler c cooper",
-    "tokens": [
-      "remembering",
-      "tyler",
-      "cooper"
-    ]
-  },
-  {
-    "date": "2026-10-29",
-    "key": "garmin q3 2026 earnings call garmin raises fullyear outlook ",
-    "tokens": [
-      "garmin",
-      "2026",
-      "earnings",
-      "call",
-      "raises",
-      "full",
-      "year",
-      "outlook",
-      "revenue",
-      "tops",
-      "jumps"
-    ],
-    "entities": [
-      "Garmin"
-    ],
-    "deal": "$1.98b"
-  },
-  {
-    "date": "2026-10-30",
-    "key": "providence agrees fitness park acquisition strengthening eur",
-    "tokens": [
-      "providence",
-      "agrees",
-      "park",
-      "acquisition",
-      "strengthening",
-      "european",
-      "interests"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "turning fitness tracking into a retention tool",
-    "tokens": [
-      "turning",
-      "tracking",
-      "retention",
-      "tool"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "ozlo raises 22m to advance sleep tech",
-    "tokens": [
-      "ozlo",
-      "raises",
-      "advance",
-      "sleep",
-      "tech"
-    ],
-    "deal": "$22m"
-  },
-  {
-    "date": "2026-10-30",
-    "key": "fitness first hyrox training club in hamburg erffnet",
-    "tokens": [
-      "first",
-      "hyrox",
-      "training",
-      "club",
-      "hamburg",
-      "eroffnet"
-    ],
-    "entities": [
-      "Hyrox"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "fitlab files for bankruptcy",
-    "tokens": [
-      "fitlab",
-      "files",
-      "bankruptcy"
-    ]
-  },
-  {
-    "date": "2026-10-30",
-    "key": "aktivpark padel club opening weekend und spielbetrieb",
-    "tokens": [
-      "aktivpark",
-      "padel",
-      "club",
-      "opening",
-      "weekend",
-      "spielbetrieb"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "unconventional thinker kyle scheele to challenge whats possi",
-    "tokens": [
-      "unconventional",
-      "thinker",
-      "kyle",
-      "scheele",
-      "challenge",
-      "what",
-      "possible",
-      "keynote",
-      "show",
-      "2027"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "mark mastrov unveils founders club brand combining fitness r",
-    "tokens": [
-      "mark",
-      "mastrov",
-      "unveils",
-      "founders",
-      "club",
-      "brand",
-      "combining",
-      "recovery",
-      "medical"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "stryv raises us115 million to expand personal care and home ",
-    "tokens": [
-      "stryv",
-      "raises",
-      "million",
-      "expand",
-      "personal",
-      "care",
-      "home",
-      "business",
-      "across",
-      "asia"
-    ],
-    "deal": "$11.5m"
-  },
-  {
-    "date": "2026-11-01",
-    "key": "the runningboomis turning marathonsintomultimilliondollarbra",
-    "tokens": [
-      "running",
-      "boom",
-      "turning",
-      "marathons",
-      "multimillion",
-      "dollar",
-      "brands"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "running faces a growth paradox",
-    "tokens": [
-      "running",
-      "faces",
-      "growth",
-      "paradox"
-    ]
-  },
-  {
-    "date": "2026-11-01",
-    "key": "neu im vorteilsclub 0  provision mit easy fitpass",
-    "tokens": [
-      "vorteilsclub",
-      "provision",
-      "easy",
-      "fitpass"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "key": "sekonda launches 7999 subscriptionfree smart ring",
-    "tokens": [
-      "sekonda",
-      "launches",
-      "subscription",
-      "free",
-      "smart",
-      "ring"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "key": "pilates is booming chuze fitness is taking a different appro",
-    "tokens": [
-      "pilates",
-      "booming",
-      "chuze",
-      "taking",
-      "different",
-      "approach"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "key": "what james did next hird drops coaching dream to join ai fir",
-    "tokens": [
-      "what",
-      "james",
-      "next",
-      "hird",
-      "drops",
-      "coaching",
-      "dream",
-      "join",
-      "firm"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "key": "lebron and whoop partner as health tracker keeps ipo in sigh",
-    "tokens": [
-      "lebron",
-      "whoop",
-      "partner",
-      "health",
-      "tracker",
-      "keeps",
-      "sight"
-    ],
-    "entities": [
-      "Whoop"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "key": "investor said to look to bid on club pilatesowner xponential",
-    "tokens": [
-      "investor",
-      "look",
-      "club",
-      "pilates",
-      "owner",
-      "xponential"
-    ],
-    "entities": [
-      "Xponential"
-    ]
-  },
-  {
-    "date": "2026-11-02",
-    "key": "uk active welcomes budget recognition for gyms as rates reli",
-    "tokens": [
-      "active",
-      "welcomes",
-      "budget",
-      "recognition",
-      "gyms",
-      "rates",
-      "relief",
-      "confirmed"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "everyone active collaborates with chatty caf to strengthen c",
-    "tokens": [
-      "everyone",
-      "active",
-      "collaborates",
-      "chatty",
-      "strengthen",
-      "community",
-      "connections"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "equinox names brendan whitworth as ceo and announces more th",
-    "tokens": [
-      "equinox",
-      "names",
-      "brendan",
-      "whitworth",
-      "announces",
-      "billion",
-      "planned",
-      "growth",
-      "investments"
-    ],
-    "entities": [
-      "Equinox"
-    ],
-    "deal": "$1b"
-  },
-  {
-    "date": "2026-11-03",
-    "key": "onespaworld posts record q3 revenue as cruise wellness busin",
-    "tokens": [
-      "onespaworld",
-      "posts",
-      "record",
-      "revenue",
-      "cruise",
-      "business",
-      "surges"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "onlineseminar physiotherapie",
-    "tokens": [
-      "online",
-      "seminar",
-      "physiotherapie"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "david lloyd clubs markenintegration und 20 millionen euro in",
-    "tokens": [
-      "david",
-      "lloyd",
-      "clubs",
-      "markenintegration",
-      "millionen",
-      "euro",
-      "investitionen"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "24 hour fitness introduces founders club",
-    "tokens": [
-      "hour",
-      "introduces",
-      "founders",
-      "club"
-    ]
-  },
-  {
     "date": "2026-11-04",
     "key": "dssvnews digitale ausgabe 062026 online",
     "tokens": [
@@ -1403,6 +454,1070 @@
       "development",
       "partner",
       "framework"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "equinox chair leads 65m financing round for vesalius longevi",
+    "tokens": [
+      "equinox",
+      "chair",
+      "leads",
+      "financing",
+      "round",
+      "vesalius",
+      "longevity",
+      "labs"
+    ],
+    "entities": [
+      "Equinox"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "oura to acquire counsel health for 625m in major push into a",
+    "tokens": [
+      "oura",
+      "acquire",
+      "counsel",
+      "health",
+      "625m",
+      "major",
+      "push",
+      "powered",
+      "healthcare"
+    ],
+    "entities": [
+      "Oura"
+    ],
+    "deal": "$625m"
+  },
+  {
+    "date": "2026-11-11",
+    "key": "nord gyms to launch training and contrast therapy concept in",
+    "tokens": [
+      "nord",
+      "gyms",
+      "launch",
+      "training",
+      "contrast",
+      "therapy",
+      "concept",
+      "london"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "urban arc go 2 ai fitness band and q9i ai anc tws earbuds la",
+    "tokens": [
+      "urban",
+      "band",
+      "earbuds",
+      "launched"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "gantner  face recognition der checkin der nchsten generation",
+    "tokens": [
+      "gantner",
+      "face",
+      "recognition",
+      "check",
+      "nachsten",
+      "generation"
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "key": "elevate scales uk smoothie bar",
+    "tokens": [
+      "elevate",
+      "scales",
+      "smoothie"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "boutique studios look to capitalize on hyrox boom with compe",
+    "tokens": [
+      "boutique",
+      "studios",
+      "look",
+      "capitalize",
+      "hyrox",
+      "boom",
+      "competitions",
+      "their"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "get a drip founder launches 15m preventative health clinic o",
+    "tokens": [
+      "drip",
+      "founder",
+      "launches",
+      "preventative",
+      "health",
+      "clinic",
+      "ohas"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "groe solutions appoints julio marshallas chief commercial of",
+    "tokens": [
+      "groe",
+      "solutions",
+      "appoints",
+      "julio",
+      "marshall",
+      "chief",
+      "commercial",
+      "officer"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "swiss res john schoonbee urges insurers to invest in prevent",
+    "tokens": [
+      "swiss",
+      "john",
+      "schoonbee",
+      "urges",
+      "insurers",
+      "invest",
+      "prevention",
+      "mortality",
+      "trends",
+      "worsen"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "andrew huberman joins hims  hers board",
+    "tokens": [
+      "andrew",
+      "huberman",
+      "joins",
+      "hims",
+      "hers",
+      "board"
+    ],
+    "entities": [
+      "Hims"
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "key": "how axle took the the guesswork out of jetset pilates franch",
+    "tokens": [
+      "axle",
+      "took",
+      "guesswork",
+      "jetset",
+      "pilates",
+      "franchisee",
+      "marketing"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "aman launches performance wellness brand",
+    "tokens": [
+      "aman",
+      "launches",
+      "performance",
+      "brand"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "men join the pilates boom ons premium play pays off seed oil",
+    "tokens": [
+      "join",
+      "pilates",
+      "boom",
+      "premium",
+      "play",
+      "pays",
+      "seed",
+      "free",
+      "snacks"
+    ],
+    "deal": "$1b"
+  },
+  {
+    "date": "2026-11-13",
+    "key": "whoop launches inapp social network",
+    "tokens": [
+      "whoop",
+      "launches",
+      "social",
+      "network"
+    ],
+    "entities": [
+      "Whoop"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "hfa outlines threeyear strategic direction names greta wagne",
+    "tokens": [
+      "outlines",
+      "three",
+      "year",
+      "strategic",
+      "direction",
+      "names",
+      "greta",
+      "wagner",
+      "president"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "former barrys grns execs launch platform to help fitness stu",
+    "tokens": [
+      "former",
+      "barry",
+      "gruns",
+      "execs",
+      "launch",
+      "platform",
+      "help",
+      "studios",
+      "land",
+      "brand",
+      "deals"
+    ],
+    "entities": [
+      "Grüns"
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "key": "face recognition ein blick gengt",
+    "tokens": [
+      "face",
+      "recognition",
+      "blick",
+      "genugt"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "bodi takes insanity into the hyrox era",
+    "tokens": [
+      "bodi",
+      "takes",
+      "insanity",
+      "hyrox"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "fitness operators report ongoing growth as competition and a",
+    "tokens": [
+      "operators",
+      "ongoing",
+      "growth",
+      "competition",
+      "acquisition",
+      "costs",
+      "rise"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "youfit gyms launches 10 millionplus club reinvestment backed",
+    "tokens": [
+      "youfit",
+      "gyms",
+      "launches",
+      "million",
+      "plus",
+      "club",
+      "reinvestment",
+      "backed",
+      "skyline",
+      "investors"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "wellness strips reformat supplement routines",
+    "tokens": [
+      "strips",
+      "reformat",
+      "supplement",
+      "routines"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "levl strength introduces isokinetic home training",
+    "tokens": [
+      "levl",
+      "strength",
+      "introduces",
+      "isokinetic",
+      "home",
+      "training"
+    ]
+  },
+  {
+    "date": "2026-11-15",
+    "key": "peloton draws 68 billion demand for debut junkbond sale",
+    "tokens": [
+      "peloton",
+      "draws",
+      "billion",
+      "demand",
+      "debut",
+      "junk",
+      "bond",
+      "sale"
+    ],
+    "entities": [
+      "Peloton"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "key": "the path from violence to selfacceptance",
+    "tokens": [
+      "path",
+      "violence",
+      "self",
+      "acceptance"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "key": "crunch fitness seeks to borrow 800 million in abs bond sale",
+    "tokens": [
+      "crunch",
+      "seeks",
+      "borrow",
+      "million",
+      "bond",
+      "sale"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "key": "budhagirls jessica jesse encourages wellness leaders to make",
+    "tokens": [
+      "budhagirl",
+      "jessica",
+      "jesse",
+      "encourages",
+      "leaders",
+      "make",
+      "everyday",
+      "rituals",
+      "intentional",
+      "during"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "key": "hfa unveils threeyear strategic vision to strengthen member ",
+    "tokens": [
+      "unveils",
+      "three",
+      "year",
+      "strategic",
+      "vision",
+      "strengthen",
+      "member",
+      "value",
+      "advance",
+      "health"
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "key": "with 35m in funding betterness wants to turn miami neighborh",
+    "tokens": [
+      "funding",
+      "betterness",
+      "wants",
+      "turn",
+      "miami",
+      "neighborhoods",
+      "networks"
+    ],
+    "deal": "$3.5m"
+  },
+  {
+    "date": "2026-11-16",
+    "key": "fitvertise werbung in mehr als 2200 fitnessstudios",
+    "tokens": [
+      "fitvertise",
+      "werbung",
+      "mehr",
+      "fitnessstudios"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "shark tank star daymond john invests in ultimate longevity c",
+    "tokens": [
+      "shark",
+      "tank",
+      "star",
+      "daymond",
+      "john",
+      "invests",
+      "ultimate",
+      "longevity",
+      "center"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "why member retention gets harder as fitness businesses grow",
+    "tokens": [
+      "member",
+      "retention",
+      "gets",
+      "harder",
+      "businesses",
+      "grow"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "club operators can build community by designing for social d",
+    "tokens": [
+      "club",
+      "operators",
+      "build",
+      "community",
+      "designing",
+      "social",
+      "dose",
+      "just",
+      "exercise"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "noom launches metabolic health wearable",
+    "tokens": [
+      "noom",
+      "launches",
+      "metabolic",
+      "health",
+      "wearable"
+    ],
+    "entities": [
+      "Noom"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "fitx ohne mindestvertragslaufzeit neue vertrge monatlich knd",
+    "tokens": [
+      "fitx",
+      "ohne",
+      "mindestvertragslaufzeit",
+      "neue",
+      "vertrage",
+      "monatlich",
+      "kundbar"
+    ]
+  },
+  {
+    "date": "2026-11-17",
+    "key": "integrated wellness acquisition corp weluf seasonal returns ",
+    "tokens": [
+      "integrated",
+      "acquisition",
+      "corp",
+      "weluf",
+      "seasonal",
+      "returns",
+      "chart"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "australian pilates franchise pilates 247 sets sights on us e",
+    "tokens": [
+      "australian",
+      "pilates",
+      "franchise",
+      "sets",
+      "sights",
+      "expansion"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "orangetheory fitness becomes first fitness brand to train al",
+    "tokens": [
+      "orangetheory",
+      "becomes",
+      "first",
+      "brand",
+      "train",
+      "coaches",
+      "nasm"
+    ],
+    "entities": [
+      "Orangetheory"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "yttp erffnet fnftes reformerstudio in berlin",
+    "tokens": [
+      "yttp",
+      "eroffnet",
+      "funftes",
+      "reformer",
+      "studio",
+      "berlin"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "with the launch of its ai fitness coach ifit makes a bold be",
+    "tokens": [
+      "launch",
+      "coach",
+      "ifit",
+      "makes",
+      "bold",
+      "future"
+    ],
+    "entities": [
+      "iFit"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "wellness monster lands first seed round for canadian kids sn",
+    "tokens": [
+      "monster",
+      "lands",
+      "first",
+      "seed",
+      "round",
+      "canadian",
+      "kids",
+      "snacks"
+    ]
+  },
+  {
+    "date": "2026-11-18",
+    "key": "only one in six uk teenagers meets daily physical activity t",
+    "tokens": [
+      "only",
+      "teenagers",
+      "meets",
+      "daily",
+      "physical",
+      "activity",
+      "target",
+      "research",
+      "finds"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "triathlon training app stamina raises 2m backed by olympic c",
+    "tokens": [
+      "triathlon",
+      "training",
+      "stamina",
+      "raises",
+      "backed",
+      "olympic",
+      "champion"
+    ],
+    "deal": "$2m"
+  },
+  {
+    "date": "2026-11-19",
+    "key": "therabody acquires embr labs thermal tech",
+    "tokens": [
+      "therabody",
+      "acquires",
+      "embr",
+      "labs",
+      "thermal",
+      "tech"
+    ],
+    "entities": [
+      "Therabody"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "ditching the fat scanner label to boost retention and revenu",
+    "tokens": [
+      "ditching",
+      "scanner",
+      "label",
+      "boost",
+      "retention",
+      "revenue",
+      "ashley",
+      "ziegler",
+      "henzler",
+      "seca"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "mckinsey values wellness at 27t but says key markets are und",
+    "tokens": [
+      "mckinsey",
+      "values",
+      "markets",
+      "underserved"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "aciso gewinnspiel ein jahr beratung und onlinemarketing",
+    "tokens": [
+      "aciso",
+      "gewinnspiel",
+      "jahr",
+      "beratung",
+      "online",
+      "marketing"
+    ]
+  },
+  {
+    "date": "2026-11-19",
+    "key": "hone health secures 228m enters peptides and pmos care",
+    "tokens": [
+      "hone",
+      "health",
+      "secures",
+      "228m",
+      "enters",
+      "peptides",
+      "pmos",
+      "care"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "fitnation mnchen am 25 november",
+    "tokens": [
+      "fitnation",
+      "munchen",
+      "november"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "fitx neues studio in dsseldorffriedrichstadt erffnet",
+    "tokens": [
+      "fitx",
+      "neues",
+      "studio",
+      "dusseldorf",
+      "friedrichstadt",
+      "eroffnet"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "stripes beauty raises 5m to push into sexual wellness",
+    "tokens": [
+      "stripes",
+      "beauty",
+      "raises",
+      "push",
+      "sexual"
+    ],
+    "deal": "$5m"
+  },
+  {
+    "date": "2026-11-20",
+    "key": "interactive strength grows revenue following acquisitions ey",
+    "tokens": [
+      "interactive",
+      "strength",
+      "grows",
+      "revenue",
+      "following",
+      "acquisitions",
+      "eyes",
+      "deals"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "munich ravens tryout day leistungsdiagnostik mit egym",
+    "tokens": [
+      "munich",
+      "ravens",
+      "tryout",
+      "leistungsdiagnostik",
+      "egym"
+    ],
+    "entities": [
+      "EGYM"
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "key": "workout anytime signs 15club deal to expand across southeast",
+    "tokens": [
+      "workout",
+      "anytime",
+      "signs",
+      "club",
+      "deal",
+      "expand",
+      "across",
+      "southeast",
+      "states"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "chris hemsworth launches kinsyn a personalized longevity pla",
+    "tokens": [
+      "chris",
+      "hemsworth",
+      "launches",
+      "kinsyn",
+      "personalized",
+      "longevity",
+      "platform"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "mckinsey recovery and biohacking fuel wellness markets us27 ",
+    "tokens": [
+      "mckinsey",
+      "recovery",
+      "biohacking",
+      "fuel",
+      "market",
+      "trillion",
+      "boom"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "crunch fitness introduces a new training zone with specialty",
+    "tokens": [
+      "crunch",
+      "introduces",
+      "training",
+      "zone",
+      "specialty",
+      "equipment",
+      "space",
+      "create",
+      "share",
+      "connect"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "nike to sell 2199 smart strength trainer as performance push",
+    "tokens": [
+      "nike",
+      "sell",
+      "smart",
+      "strength",
+      "trainer",
+      "performance",
+      "push",
+      "continues"
+    ],
+    "entities": [
+      "Nike"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "seed oilfree is a selling point",
+    "tokens": [
+      "seed",
+      "free",
+      "selling",
+      "point"
+    ]
+  },
+  {
+    "date": "2026-11-22",
+    "key": "how seca is making longevity measurable",
+    "tokens": [
+      "seca",
+      "making",
+      "longevity",
+      "measurable"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "world gym passes 300 locations as q3 profit jumps",
+    "tokens": [
+      "world",
+      "passes",
+      "locations",
+      "profit",
+      "jumps"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "hone health raises 228m for longevity play",
+    "tokens": [
+      "hone",
+      "health",
+      "raises",
+      "228m",
+      "longevity",
+      "play"
+    ],
+    "deal": "$228m"
+  },
+  {
+    "date": "2026-11-23",
+    "key": "the oura black friday deals have dropped  and the oura ring ",
+    "tokens": [
+      "oura",
+      "black",
+      "friday",
+      "deals",
+      "have",
+      "dropped",
+      "ring",
+      "lowest",
+      "ever",
+      "price"
+    ],
+    "entities": [
+      "Oura"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "zing coach  ai fitness coaching platform adaptive workouts  ",
+    "tokens": [
+      "zing",
+      "coach",
+      "coaching",
+      "platform",
+      "adaptive",
+      "workouts",
+      "integration"
+    ],
+    "entities": [
+      "Zing Coach"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "touchbay kostenfreie werbeflchen fr gesundheitsinitiativen",
+    "tokens": [
+      "touch",
+      "kostenfreie",
+      "werbeflachen",
+      "gesundheitsinitiativen"
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "key": "zygos underwater headphones are a gamechanger for swimmers  ",
+    "tokens": [
+      "zygo",
+      "underwater",
+      "headphones",
+      "game",
+      "changer",
+      "swimmers",
+      "black",
+      "friday"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "key": "mounjaro funding squeeze threatens access to obesity treatme",
+    "tokens": [
+      "mounjaro",
+      "funding",
+      "squeeze",
+      "threatens",
+      "access",
+      "obesity",
+      "treatment",
+      "referral",
+      "programmes"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "key": "superpower is on sale for black friday is the biomarker test",
+    "tokens": [
+      "superpower",
+      "sale",
+      "black",
+      "friday",
+      "biomarker",
+      "test",
+      "health",
+      "coach",
+      "worth",
+      "buying"
+    ],
+    "entities": [
+      "Superpower"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "key": "ohana growth partners sells its florida portfolio",
+    "tokens": [
+      "ohana",
+      "growth",
+      "partners",
+      "sells",
+      "florida",
+      "portfolio"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "key": "die fitnesskampagne united lets move bricht alle rekorde",
+    "tokens": [
+      "fitnesskampagne",
+      "united",
+      "move",
+      "bricht",
+      "alle",
+      "rekorde"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "key": "the best gifts for men who love fitness  wellness",
+    "tokens": [
+      "best",
+      "gifts",
+      "love"
+    ]
+  },
+  {
+    "date": "2026-11-24",
+    "key": "therme refines resort plans for manchester uk and calls for ",
+    "tokens": [
+      "therme",
+      "refines",
+      "resort",
+      "manchester",
+      "calls",
+      "wellbeing",
+      "become",
+      "social",
+      "infrastructure"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "club pilates unveils refreshed studio design ahead of 20th a",
+    "tokens": [
+      "club",
+      "pilates",
+      "unveils",
+      "refreshed",
+      "studio",
+      "design",
+      "ahead",
+      "20th",
+      "anniversary"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "midtown athletic club launches forge an innovative new stren",
+    "tokens": [
+      "midtown",
+      "athletic",
+      "club",
+      "launches",
+      "forge",
+      "innovative",
+      "strength",
+      "training",
+      "experience"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "im8 taps diplo body hot pilates scales wellness goes undergr",
+    "tokens": [
+      "taps",
+      "diplo",
+      "body",
+      "pilates",
+      "scales",
+      "goes",
+      "underground"
+    ],
+    "entities": [
+      "IM8"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "pd savage raises 10000 in community fitness event",
+    "tokens": [
+      "savage",
+      "raises",
+      "community",
+      "event"
+    ],
+    "deal": "£10,000"
+  },
+  {
+    "date": "2026-11-25",
+    "key": "the best black 2026 friday activewear deals alo vuori nike  ",
+    "tokens": [
+      "best",
+      "black",
+      "2026",
+      "friday",
+      "activewear",
+      "deals",
+      "vuori",
+      "nike"
+    ],
+    "entities": [
+      "Vuori",
+      "Nike"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "new wellness third places are taking shape",
+    "tokens": [
+      "third",
+      "places",
+      "taking",
+      "shape"
     ]
   }
 ]

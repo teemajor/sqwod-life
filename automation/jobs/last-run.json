@@ -1,11 +1,11 @@
 {
- "startedAt": "2026-11-05T21:38:17.336Z",
+ "startedAt": "2026-11-19T22:48:56.498Z",
  "sinceDays": 14,
  "sources": {
   "ba": {
    "enabled": true,
-   "fetched": 286,
-   "kept": 232,
+   "fetched": 317,
+   "kept": 263,
    "diag": {
     "tried": [
      {
@@ -17,11 +17,12 @@
        "size",
        "facetten"
       ],
-      "maxErgebnisse": 64,
+      "maxErgebnisse": 81,
       "items": 50,
       "sample": {
        "stellenangebotsart": "ARBEIT",
        "stellenangebotsTitel": "Fitnesstrainer/in",
+       "quereinstiegGeeignet": false,
        "arbeitszeitSchichtNachtWochenende": false,
        "arbeitszeitTeilzeitAbend": false,
        "arbeitszeitTeilzeitNachmittag": false,
@@ -29,36 +30,31 @@
        "arbeitszeitTeilzeitFlexibel": false,
        "arbeitszeitVollzeit": true,
        "eintrittszeitraum": {
-        "von": "2027-01-04"
+        "von": "2026-11-20"
        },
-       "verguetungsangabe": "JAHRESGEHALT",
-       "artDerVerguetung": "GEHALTSSPANNE",
-       "gehaltsspanneVon": 20000,
-       "gehaltsspanneBis": 30000,
+       "verguetungsangabe": "KEINE_ANGABEN",
        "vertragsdauer": "UNBEFRISTET",
+       "istGeringfuegigeBeschaeftigung": false,
        "stellenlokationen": [
         {
          "adresse": {
-          "strasse": "Berliner Str.",
-          "hausnummer": "8a",
-          "plz": "15537",
-          "ort": "Erkner",
-          "region": "BRANDENBURG",
-          "land": "DEUTSCHLAND"
-         },
-         "breite": 52.427961,
-         "laenge": 13.744998
+          "plz": "1200",
+          "ort": "Wien,Brigittenau",
+          "region": "WIEN",
+          "land": "OESTERREICH"
+         }
         }
        ],
+       "homeofficemoeglich": false,
        "veroeffentlichungszeitraum": {
-        "von": "2026-11-05"
+        "von": "2026-11-19"
        },
-       "datumErsteVeroeffentlichung": "2026-11-05",
-       "aenderungsdatum": "2026-11-05T16:50:41.829",
+       "datumErsteVeroeffentlichung": "2026-11-19",
+       "aenderungsdatum": "2026-11-19T17:51:25.977",
+       "externeURL": "https://jobs.ams.at/public/emps/jobs/4b378c4c-1ced-3e60-ba69-36e4367ad95e",
        "hauptberuf": "Fitnesstrainer/in",
-       "firma": "av Fitness UG (haftungsbeschränkt)",
-       "arbeitgeberKundennummerHash": "mpAzuGjRk_BdwTDGXxkbcTLyMt6CBB2gVC0spUbJt8s=",
-       "referenznummer": "10001-1003972103-S",
+       "firma": "Mrs.Sporty Club Wien Brigit tenau",
+       "referenznummer": "11949-17411521-S",
        "alleBerufe": [
         "Fitnesstrainer/in"
        ]
@@ -69,6 +65,7 @@
     "itemKeys": [
      "stellenangebotsart",
      "stellenangebotsTitel",
+     "quereinstiegGeeignet",
      "arbeitszeitSchichtNachtWochenende",
      "arbeitszeitTeilzeitAbend",
      "arbeitszeitTeilzeitNachmittag",
@@ -77,35 +74,35 @@
      "arbeitszeitVollzeit",
      "eintrittszeitraum",
      "verguetungsangabe",
-     "artDerVerguetung",
-     "gehaltsspanneVon",
-     "gehaltsspanneBis",
      "vertragsdauer",
+     "istGeringfuegigeBeschaeftigung",
      "stellenlokationen",
+     "homeofficemoeglich",
      "veroeffentlichungszeitraum",
      "datumErsteVeroeffentlichung",
      "aenderungsdatum",
+     "externeURL",
      "hauptberuf",
      "firma",
-     "arbeitgeberKundennummerHash",
      "referenznummer",
      "alleBerufe"
     ],
     "pay": {
-     "JAHRESGEHALT": 26,
-     "KEINE_ANGABEN": 239,
-     "STUNDENLOHN": 21
+     "KEINE_ANGABEN": 244,
+     "JAHRESGEHALT": 35,
+     "STUNDENLOHN": 38
     },
     "detail": {
-     "wanted": 20,
-     "fetched": 20,
-     "withFigure": 20,
+     "wanted": 27,
+     "fetched": 27,
+     "withFigure": 27,
      "textOnly": 0,
      "failed": 0,
      "path": "/pc/v4/jobdetails/",
      "sampleKeys": [
       "stellenangebotsart",
       "stellenangebotsTitel",
+      "quereinstiegGeeignet",
       "stellenangebotsBeschreibung",
       "arbeitszeitSchichtNachtWochenende",
       "arbeitszeitTeilzeitAbend",
@@ -125,6 +122,8 @@
       "aenderungsdatum",
       "istBetreut",
       "hauptberuf",
+      "alternativBeruf1",
+      "alternativBeruf2",
       "firma",
       "arbeitgeberKundennummerHash",
       "allianzpartnerUrl",
@@ -133,19 +132,19 @@
      ],
      "samples": [
       "20.000 € – 30.000 € / Jahr (Arbeitsagentur)",
-      "26.400 € – 41.000 € / Jahr (Arbeitsagentur)",
-      "36.000 € – 45.000 € / Jahr (Arbeitsagentur)",
-      "42.250 € / Jahr (Arbeitsagentur)",
-      "85.000 € – 95.000 € / Jahr (Arbeitsagentur)",
-      "21,24 € / Std. (Arbeitsagentur)"
+      "14 € – 15 € / Std. (Arbeitsagentur)",
+      "30.000 € – 36.000 € / Jahr (Arbeitsagentur)",
+      "14 € – 15 € / Std. (Arbeitsagentur)",
+      "28.800 € – 38.400 € / Jahr (Arbeitsagentur)",
+      "36.000 € / Jahr (Arbeitsagentur)"
      ]
     }
    }
   },
   "adzuna": {
    "enabled": true,
-   "fetched": 337,
-   "kept": 204
+   "fetched": 357,
+   "kept": 222
   },
   "career-page": {
    "enabled": true,
@@ -178,12 +177,12 @@
  },
  "hosts": {
   "rest.arbeitsagentur.de": {
-   "requests": 58,
+   "requests": 66,
    "failures": 0,
    "errors": []
   },
   "api.adzuna.com": {
-   "requests": 13,
+   "requests": 12,
    "failures": 0,
    "errors": []
   },
@@ -276,10 +275,8 @@
   },
   "myequilibria.com": {
    "requests": 1,
-   "failures": 1,
-   "errors": [
-    "HTTP 404 /careers"
-   ]
+   "failures": 0,
+   "errors": []
   },
   "boards-api.greenhouse.io": {
    "requests": 29,
@@ -733,18 +730,18 @@
   ]
  },
  "found": {
-  "fetchedAfterGate": 436,
-  "unique": 236,
+  "fetchedAfterGate": 485,
+  "unique": 252,
   "withPay": 34
  },
  "summary": {
-  "live": 367,
-  "newThisWeek": 367,
-  "withPay": 47,
-  "newWithPay": 47,
-  "hostsFailed": 3,
+  "live": 562,
+  "newThisWeek": 121,
+  "withPay": 67,
+  "newWithPay": 9,
+  "hostsFailed": 2,
   "sourcesFailed": []
  },
- "finishedAt": "2026-11-05T21:44:23.253Z",
- "payLinesAppended": 22
+ "finishedAt": "2026-11-19T22:55:32.352Z",
+ "payLinesAppended": 9
 }
