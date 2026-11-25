@@ -50,6 +50,14 @@ export const TOOLS: Tool[] = [
     cta: { en: 'Find your floor rate →', de: 'Mindestpreis berechnen →' },
   },
   {
+    slug: 'fitness-map', status: 'live',
+    name: { en: 'Berlin Fitness Map', de: 'Fitness-Karte Berlin' },
+    type: { en: 'Map · Berlin · beta', de: 'Karte · Berlin · Beta' },
+    answers: { en: 'How many fitness businesses are there in each Berlin neighbourhood, and where are new ones registering?', de: 'Wie viele Fitnessbetriebe gibt es in jedem Berliner Kiez, und wo melden sich neue an?' },
+    href: (lang) => (lang === 'de' ? '/de/fitness-karte/' : '/en/fitness-map/'),
+    cta: { en: 'Open the map →', de: 'Karte öffnen →' },
+  },
+  {
     slug: 'studio-break-even', status: 'coming',
     name: { en: 'Studio Break-Even', de: 'Studio Break-Even' },
     type: { en: 'calculator', de: 'Rechner' },

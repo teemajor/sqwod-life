@@ -1,0 +1,51 @@
+---
+// Berlin fitness map (25 Nov 2026): /de/fitness-karte/ and /en/fitness-map/.
+// The map itself is one generated script, public/fitness-map/fitness-map.js. It carries its own
+// data (IHK Berlin counts per area, OpenStreetMap studio dots) and mounts into a shadow root on
+// #fmap, so this stylesheet and the map's stylesheet cannot affect each other. The headline and
+// intro are rendered here so they are in the HTML for search engines and readers without scripts.
+// Counts of 1 to 4 are shown as a range only, so single businesses cannot be identified.
+import Base from '../layouts/Base.astro';
+import type { Lang } from '../i18n/ui';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const de = lang === 'de';
+const DATA_MONTH = '2026-11'; // bump with every new fitness-map.js: it is the cache key of the script
+const T = de ? {
+  title: 'Fitness-Karte Berlin: Fitnessbetriebe, Kiez für Kiez',
+  desc: 'Wie viele Fitnessbetriebe gibt es in deinem Berliner Kiez? Interaktive Karte aus den Gewerbedaten der IHK Berlin, Stand November 2026, mit Filter nach Studio-Art.',
+  eyebrow: 'Beta · Sqwod Tools',
+  h1: 'Fitness in Berlin, Kiez für Kiez',
+  sub: 'Wie viele Fitnessbetriebe gibt es in jedem Berliner Kiez? Stand November 2026.',
+  noscript: 'Die Karte braucht JavaScript. Bitte aktiviere es in deinem Browser.',
+} : {
+  title: 'Berlin fitness map: fitness businesses, neighbourhood by neighbourhood',
+  desc: 'How many fitness businesses are there in your Berlin neighbourhood? Interactive map built from IHK Berlin business data, as of November 2026, with filters by studio type.',
+  eyebrow: 'Beta · Sqwod Tools',
+  h1: 'Fitness in Berlin, neighbourhood by neighbourhood',
+  sub: 'How many fitness businesses are there in each Berlin neighbourhood? As of November 2026.',
+  noscript: 'The map needs JavaScript. Please turn it on in your browser.',
+};
+const altPath = de ? '/en/fitness-map/' : '/de/fitness-karte/';
+---
+<Base lang={lang} title={T.title} description={T.desc} active="tools" altPath={altPath}>
+  <header class="fm-head">
+    <a class="fm-eyebrow" href={`/${lang}/tools/`}>{T.eyebrow}</a>
+    <h1>{T.h1}</h1>
+    <p class="sub">{T.sub}</p>
+  </header>
+  <div id="fmap" data-lang={lang} style="min-height:70vh">
+    <noscript><p class="sub">{T.noscript}</p></noscript>
+  </div>
+  <script is:inline defer src={`/fitness-map/fitness-map.js?v=${DATA_MONTH}`}></script>
+</Base>
+
+<style>
+  .fm-head{margin:6px 0 18px}
+  .fm-eyebrow{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--warn);border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin-bottom:10px}
+  .fm-head h1{font-size:46px;margin:0 0 8px}
+  .fm-head .sub{max-width:62ch}
+  #fmap{margin-bottom:28px}
+  @media (max-width:820px){.fm-head h1{font-size:34px}}
+</style>
