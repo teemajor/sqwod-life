@@ -38,3 +38,6 @@ jobs:
       - name: No new em dashes (house style)
         run: npm run check:dashes
         working-directory: site
+      - name: Report chart data sanity
+        run: npm run check:charts
+        working-directory: site

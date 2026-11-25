@@ -35,31 +35,31 @@ series:
   points: [0.17,0.25,0.43,0.54,0.6,0.67,0.75,0.83,0.91,1.02,1.12]
   years: ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029"]
 charts:
-  - label: "Einzelhandelsumsatz Vitamine & Mineralstoffe in Großbritannien 2009–2023"
-    unit: "Mio. GBP"
-    kind: timeseries
-    categories: ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029"]
-    series:
-      - { name: "", points: [0.17,0.25,0.43,0.54,0.6,0.67,0.75,0.83,0.91,1.02,1.12] }
-    note: "Von 324 Mio. GBP (2009) auf 492 Mio. GBP (2023) – mit Covid-Spike 2020 und dauerhaft erhöhtem Nachpandemie-Niveau."
-    source: "Statista; Statista Consumer Market Insights via Statista"
-    url: "https://www.statista.com/study/39785/"
   - label: "Markterlös Milchalternativen UK 2019–2029"
     unit: "Mrd. USD"
     kind: timeseries
     categories: ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029"]
     series:
-      - { name: "", points: [409.1,568.8,715.03,691.2,697.09,727.19,742.92,759.49,776.07,796.06,824.45] }
+      - { name: "", points: [0.17,0.25,0.43,0.54,0.6,0.67,0.75,0.83,0.91,1.02,1.12] }
     note: "Umsatz mehr als versechsfacht: von 0,17 Mrd. USD (2019) auf prognostizierte 1,12 Mrd. USD (2029)."
     source: "Statista; Statista Consumer Market Insights via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Markterlös Fleischersatz UK 2019–2029"
     unit: "Mio. USD"
     kind: timeseries
+    categories: ["2019","2020","2021","2022","2023","2024","2025","2026","2027","2028","2029"]
+    series:
+      - { name: "", points: [409.1,568.8,715.03,691.2,697.09,727.19,742.92,759.49,776.07,796.06,824.45] }
+    note: "Peak bei 715 Mio. USD (2021), Rückgang, langsame Erholung auf 824 Mio. USD bis 2029 – der Hype-Zyklus ist im Chart sichtbar."
+    source: "Statista; Statista Consumer Market Insights via Statista"
+    url: "https://www.statista.com/study/39785/"
+  - label: "Einzelhandelsumsatz Vitamine & Mineralstoffe in Großbritannien 2009–2023"
+    unit: "Mio. GBP"
+    kind: timeseries
     categories: ["2009","2010","2011","2012","2013","2014","2015","2016","2017","2018","2019","2020","2021","2022","2023"]
     series:
       - { name: "", points: [324.4,320.5,329.5,345.9,353.9,350.1,364,372.9,378,427.1,431.5,495.2,453.7,461.5,492] }
-    note: "Peak bei 715 Mio. USD (2021), Rückgang, langsame Erholung auf 824 Mio. USD bis 2029 – der Hype-Zyklus ist im Chart sichtbar."
+    note: "Von 324 Mio. GBP (2009) auf 492 Mio. GBP (2023) – mit Covid-Spike 2020 und dauerhaft erhöhtem Nachpandemie-Niveau."
     source: "NielsenIQ; Proprietary Association of Great Britain via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Pro-Kopf-Konsum Fleischersatz UK 2019–2029"
@@ -71,58 +71,58 @@ charts:
     note: "Peak 1,05 kg (2021), Rückgang auf 0,90 kg (2023), Prognose konstant 0,91 kg bis 2029 – Flexitarier-Euphorie ist abgeebbt."
     source: "Statista; Statista Consumer Market Insights via Statista"
     url: "https://www.statista.com/study/39785/"
-  - label: "Aktiv gesund essende Erwachsene nach Generation"
+  - label: "Anteil Flexitarier in Großbritannien 2019–2024"
     unit: "%"
     kind: timeseries
     categories: ["Jul 2019","Jan 2020","Jul 2020","Jan 2021","Jul 2021","Jan 2022","Jul 2022","Jan 2023","Jul 2023","Jan 2024"]
     series:
-      - { name: "", points: [0.13,0.15,0.13,0.14,0.14,0.16,0.16,0.14,0.14,0.13] }
-    note: "Baby-Boomer führen mit 65 %; Gen Z liegt bei 57 % – die motivierteste Kohorte ist auch die finanziell stabilste."
+      - { name: "", points: [13,15,13,14,14,16,16,14,14,13] }
+    note: "Zwischen 13 % und 16 % einpendelt seit 2019 – bedeutsam, aber ohne Wachstum, was bullische Pflanzenkost-Prognosen herausfordert."
     source: "YouGov via Statista"
     url: "https://www.statista.com/study/39785/"
-  - label: "Einstellungen gegenüber Lebensmitteln UK 2024"
+  - label: "Aktiv gesund essende Erwachsene nach Generation"
     unit: "%"
     kind: categorical
-    categories: ["Gen Z","Millennials","Generation X","Baby boomer"]
+    categories: ["Gen Z", "Millennials", "Generation X", "Babyboomer"]
     series:
-      - { name: "", points: [0.57,0.62,0.62,0.65] }
-    note: "Gesundheitsabsicht (60 %) überragt jeden anderen Wert – auch Erschwinglichkeitssorgen (14 %) und Kochunlust (17 %)."
+      - { name: "", points: [57,62,62,65] }
+    note: "Baby-Boomer führen mit 65 %; Gen Z liegt bei 57 % – die motivierteste Kohorte ist auch die finanziell stabilste."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Einfluss der Lebenshaltungskosten auf gesundes Essen 2023"
     unit: "%"
     kind: categorical
-    categories: ["No impact on healthy eating habits","Eating less healthily to save money","Eating more ready meals and processed foods","More aware of health as cannot afford to get sick","Cooking less because of the cost of ingredients","Eating less healthily due to stress","Taking more packed lunches to work","Working more hours so less time to cook healthily"]
+    categories: ["Kein Einfluss auf gesunde Essgewohnheiten", "Esse ungesünder, um Geld zu sparen", "Mehr Fertiggerichte und verarbeitete Lebensmittel", "Gesundheitsbewusster, weil Kranksein unbezahlbar ist", "Koche weniger wegen der Zutatenkosten", "Esse ungesünder wegen Stress", "Nehme öfter Essen mit zur Arbeit", "Arbeite mehr, daher weniger Zeit für gesundes Kochen"]
     series:
-      - { name: "", points: [0.31,0.28,0.19,0.18,0.17,0.15,0.15,0.13] }
+      - { name: "", points: [31,28,19,18,17,15,15,13] }
     note: "31 % berichten keinen Einfluss; 28 % essen ungesünder – fast eine Gleichverteilung, die zwei klar unterschiedliche Käufer-Personas definiert."
     source: "BBC; Censuswide; The Guardian Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Verbreitete Diäten und Ernährungsregeln UK 2024"
     unit: "%"
     kind: categorical
-    categories: ["Flexitarian (mostly plant-based foods while occasionally allowing meat and fish)","Low-carb / no carb","Lactose-free (i.e., dairy products that do not contain lactose)","Gluten-free (i.e., no wheat products)","Vegetarian (not eating animal products, e.g., meat, poultry, fish, but eating animal-derived products, e.g., eggs, dairy products)","Pescetarian (eating fish, but not eating meat or poultry)","Vegan (not eating animal products or animal-derived products, e.g., meat, poultry, fish, eggs, or dairy products)","I don't follow any nutrition rules","Other"]
+    categories: ["Flexitarisch (überwiegend pflanzlich, gelegentlich Fleisch und Fisch)", "Low Carb / No Carb", "Laktosefrei (Milchprodukte ohne Laktose)", "Glutenfrei (keine Weizenprodukte)", "Vegetarisch (kein Fleisch, Geflügel oder Fisch, aber Eier und Milchprodukte)", "Pescetarisch (Fisch, aber kein Fleisch oder Geflügel)", "Vegan (keine tierischen Produkte, auch keine Eier oder Milchprodukte)", "Ich folge keinen Ernährungsregeln", "Sonstiges"]
     series:
-      - { name: "", points: [0.13,0.12,0.08,0.07,0.07,0.04,0.03,0.57,0.04] }
+      - { name: "", points: [13,12,8,7,7,4,3,57,4] }
     note: "57 % folgen keinerlei Ernährungsregel – das größte Einzelsegment und das kommerziell zugänglichste für Studios und Coaches."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
-  - label: "Anteil Flexitarier in Großbritannien 2019–2024"
+  - label: "Einstellungen gegenüber Lebensmitteln UK 2024"
     unit: "%"
     kind: categorical
-    categories: ["I actively try to eat healthy","I try to avoid plastic packaging when buying food","I avoid artificial flavors and preservatives","I try to eat less meat","Food must be convenient and fast","I do not enjoy cooking","I am open to eating meat that was grown in a lab (cultured meat)","I can't afford to eat healthily","I have one or more food intolerances","None of the above"]
+    categories: ["Ich versuche aktiv, mich gesund zu ernähren", "Ich vermeide Plastikverpackungen beim Lebensmitteleinkauf", "Ich meide künstliche Aromen und Konservierungsstoffe", "Ich versuche, weniger Fleisch zu essen", "Essen muss bequem und schnell sein", "Ich koche nicht gern", "Ich bin offen für Fleisch aus dem Labor (kultiviertes Fleisch)", "Ich kann mir gesundes Essen nicht leisten", "Ich habe eine oder mehrere Lebensmittelunverträglichkeiten", "Nichts davon"]
     series:
-      - { name: "", points: [0.6,0.3,0.27,0.27,0.25,0.17,0.16,0.14,0.13,0.08] }
-    note: "Zwischen 13 % und 16 % einpendelt seit 2019 – bedeutsam, aber ohne Wachstum, was bullische Pflanzenkost-Prognosen herausfordert."
+      - { name: "", points: [60,30,27,27,25,17,16,14,13,8] }
+    note: "Gesundheitsabsicht (60 %) überragt jeden anderen Wert – auch Erschwinglichkeitssorgen (14 %) und Kochunlust (17 %)."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
   - label: "Einstellungen gegenüber Lebensmitteln nach Geschlecht UK 2023"
     unit: "%"
     kind: categorical
-    categories: ["I actively try to eat healthy","I try to avoid plastic packaging when buying food","I try to eat less meat","I avoid artificial flavors and preservatives","Food must be convenient and fast","I do not enjoy cooking","I can't afford to eat healthily","I have one or more food intolerances","I am open to eating meat that was grown in a lab (cultured meat)","None of the above"]
+    categories: ["Ich versuche aktiv, mich gesund zu ernähren", "Ich vermeide Plastikverpackungen beim Lebensmitteleinkauf", "Ich versuche, weniger Fleisch zu essen", "Ich meide künstliche Aromen und Konservierungsstoffe", "Essen muss bequem und schnell sein", "Ich koche nicht gern", "Ich kann mir gesundes Essen nicht leisten", "Ich habe eine oder mehrere Lebensmittelunverträglichkeiten", "Ich bin offen für Fleisch aus dem Labor (kultiviertes Fleisch)", "Nichts davon"]
     series:
-      - { name: "Male", points: [0.6,0.3,0.26,0.29,0.25,0.15,0.14,0.12,0.22,0.08] }
-      - { name: "Female", points: [0.62,0.36,0.33,0.29,0.23,0.17,0.15,0.14,0.13,0.07] }
+      - { name: "Männer", points: [60,30,26,29,25,15,14,12,22,8] }
+      - { name: "Frauen", points: [62,36,33,29,23,17,15,14,13,7] }
     note: "Frauen meiden häufiger Fleisch (33 % vs. 26 %); Männer sind deutlich offener gegenüber kultiviertem Fleisch (22 % vs. 13 %)."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"

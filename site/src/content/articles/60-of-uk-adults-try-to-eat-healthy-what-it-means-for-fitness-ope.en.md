@@ -76,7 +76,7 @@ charts:
     kind: timeseries
     categories: ["Jul 2019","Jan 2020","Jul 2020","Jan 2021","Jul 2021","Jan 2022","Jul 2022","Jan 2023","Jul 2023","Jan 2024"]
     series:
-      - { name: "", points: [0.13,0.15,0.13,0.14,0.14,0.16,0.16,0.14,0.14,0.13] }
+      - { name: "", points: [13,15,13,14,14,16,16,14,14,13] }
     note: "Flexitarian share has been range-bound between 13% and 16% since 2019: meaningful but not growing, which challenges bullish plant-based forecasts."
     source: "YouGov via Statista"
     url: "https://www.statista.com/study/39785/"
@@ -85,7 +85,7 @@ charts:
     kind: categorical
     categories: ["Gen Z","Millennials","Generation X","Baby boomer"]
     series:
-      - { name: "", points: [0.57,0.62,0.62,0.65] }
+      - { name: "", points: [57,62,62,65] }
     note: "Baby boomers lead at 65%; Gen Z trail at 57%. Boomers, the most health-motivated cohort, are also the most financially stable and most underserved by fitness."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
@@ -94,7 +94,7 @@ charts:
     kind: categorical
     categories: ["No impact on healthy eating habits","Eating less healthily to save money","Eating more ready meals and processed foods","More aware of health as cannot afford to get sick","Cooking less because of the cost of ingredients","Eating less healthily due to stress","Taking more packed lunches to work","Working more hours so less time to cook healthily"]
     series:
-      - { name: "", points: [0.31,0.28,0.19,0.18,0.17,0.15,0.15,0.13] }
+      - { name: "", points: [31,28,19,18,17,15,15,13] }
     note: "31% report no impact; 28% are eating less healthily to save money: a near-even split that defines the two buyer personas operators must address."
     source: "BBC; Censuswide; The Guardian Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
@@ -103,7 +103,7 @@ charts:
     kind: categorical
     categories: ["Flexitarian (mostly plant-based foods while occasionally allowing meat and fish)","Low-carb / no carb","Lactose-free (i.e., dairy products that do not contain lactose)","Gluten-free (i.e., no wheat products)","Vegetarian (not eating animal products, e.g., meat, poultry, fish, but eating animal-derived products, e.g., eggs, dairy products)","Pescetarian (eating fish, but not eating meat or poultry)","Vegan (not eating animal products or animal-derived products, e.g., meat, poultry, fish, eggs, or dairy products)","I don't follow any nutrition rules","Other"]
     series:
-      - { name: "", points: [0.13,0.12,0.08,0.07,0.07,0.04,0.03,0.57,0.04] }
+      - { name: "", points: [13,12,8,7,7,4,3,57,4] }
     note: "57% follow no nutrition rules at all: the largest single segment, and the most commercially accessible one for a coach or studio."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
@@ -112,7 +112,7 @@ charts:
     kind: categorical
     categories: ["I actively try to eat healthy","I try to avoid plastic packaging when buying food","I avoid artificial flavors and preservatives","I try to eat less meat","Food must be convenient and fast","I do not enjoy cooking","I am open to eating meat that was grown in a lab (cultured meat)","I can't afford to eat healthily","I have one or more food intolerances","None of the above"]
     series:
-      - { name: "", points: [0.6,0.3,0.27,0.27,0.25,0.17,0.16,0.14,0.13,0.08] }
+      - { name: "", points: [60,30,27,27,25,17,16,14,13,8] }
     note: "Healthy eating intent (60%) dwarfs every other attitude, including affordability concern (14%) and cooking aversion (17%)."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
@@ -121,8 +121,8 @@ charts:
     kind: categorical
     categories: ["I actively try to eat healthy","I try to avoid plastic packaging when buying food","I try to eat less meat","I avoid artificial flavors and preservatives","Food must be convenient and fast","I do not enjoy cooking","I can't afford to eat healthily","I have one or more food intolerances","I am open to eating meat that was grown in a lab (cultured meat)","None of the above"]
     series:
-      - { name: "Male", points: [0.6,0.3,0.26,0.29,0.25,0.15,0.14,0.12,0.22,0.08] }
-      - { name: "Female", points: [0.62,0.36,0.33,0.29,0.23,0.17,0.15,0.14,0.13,0.07] }
+      - { name: "Male", points: [60,30,26,29,25,15,14,12,22,8] }
+      - { name: "Female", points: [62,36,33,29,23,17,15,14,13,7] }
     note: "Women are more likely to avoid meat (33% vs 26%) and plastic packaging (36% vs 30%); men are far more open to cultured meat (22% vs 13%)."
     source: "Statista Consumer Insights Share of respondents via Statista"
     url: "https://www.statista.com/study/39785/"
