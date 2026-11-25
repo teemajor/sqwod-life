@@ -9,12 +9,12 @@ glyph: bed
 type: sleep-tech
 conversion: verified
 testStatus: desk-researched
-publishedAt: 2026-10-17
-updatedAt: 2026-10-17
+publishedAt: 2026-11-25
+updatedAt: 2026-11-25
 author: "Sqwod Verified"
-affiliate: true
-draft: true
-# DRAFT 2026-10-17. Launch 2026-09-23 (Eight Sleep press release via Fitt Insider; Tom's Guide; T3). DE prices per ifun.de / nerdsheaven.de quoting eightsleep.com (brand DE store not loaded directly). Crowd data thin: product is weeks old.
+affiliate: false
+draft: false
+# Published 2026-11-25 (eightsleep.com/de checked: Pod 6 from EUR 2,199 regular, EUR 1,999 in the Black Friday sale; Eight Sleep declined our Impact application, so the link is plain). Launch Launch 2026-09-23 (Eight Sleep press release via Fitt Insider; Tom's Guide; T3). DE prices per ifun.de / nerdsheaven.de quoting eightsleep.com (brand DE store not loaded directly). Crowd data thin: product is weeks old.
 verdict: "Pod 6 keeps the strongest bed cooling we have reviewed, adds 18 biometric sensors and a hub half the size, and finally comes in a Solo size from €2,199. Autopilot is still required (from €199/yr), and independent reviews of this generation are only starting to appear."
 sqwodScore: 74
 confidence: Low

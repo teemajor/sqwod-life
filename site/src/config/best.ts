@@ -268,12 +268,22 @@ export const guides: BestGuide[] = [
     roles: [
       { key: 'mask', label: { en: 'Best blackout mask', de: 'Beste Schlafmaske' }, kind: 'mask',
         why: { en: 'Total blackout without pressure on the eyes; the cheapest fix for a bright bedroom.', de: 'Komplette Dunkelheit ohne Druck auf die Augen; die günstigste Lösung für ein helles Schlafzimmer.' } },
+      { key: 'earplugs', label: { en: 'Best earplugs', de: 'Beste Ohrstöpsel' }, kind: 'earplugs',
+        why: { en: 'Noise is the second-cheapest sleep fix after light. Comfort on your side matters more than the dB number.', de: 'Lärm ist nach Licht der zweitgünstigste Schlafhebel. Komfort in Seitenlage zählt mehr als die dB-Zahl.' } },
       { key: 'temp', label: { en: 'Best for temperature control', de: 'Beste für die Temperatur' }, kind: 'bed',
         why: { en: 'The only product here that changes the bed itself. Count the subscription in the price.', de: 'Das einzige Produkt hier, das das Bett selbst verändert. Das Abo gehört in den Preis.' } },
       { key: 'light', label: { en: 'Best sunrise alarm', de: 'Bester Lichtwecker' }, kind: 'light',
         why: { en: 'A gentler wake-up for early sessions than any phone alarm.', de: 'Sanfter wach für frühe Einheiten als jeder Handy-Wecker.' } },
     ],
-    filters: { maxPrice: 50 },
+    filters: {
+      kinds: [
+        { key: 'mask', label: { en: 'Masks', de: 'Masken' } },
+        { key: 'earplugs', label: { en: 'Earplugs', de: 'Ohrstöpsel' } },
+        { key: 'light', label: { en: 'Sunrise alarms', de: 'Lichtwecker' } },
+        { key: 'bed', label: { en: 'Bed cooling', de: 'Bettkühlung' } },
+      ],
+      maxPrice: 50,
+    },
     pro: {
       en: 'For operators: sleep is the recovery lever most clients ignore and most coaches cannot see. Sleep tech earns its place when the data flows into the same dashboard as training load. For studios the play is education and partnerships, not inventory: a sleep workshop sells, a smart mattress in the lobby does not. Brands: hardware plus subscription is the model; distribution runs through wellness programmes, not gyms.',
       de: 'Für Betreiber: Schlaf ist der Erholungshebel, den die meisten Kund:innen ignorieren und die meisten Coaches nicht sehen. Schlaftechnik lohnt sich, wenn die Daten im selben Dashboard landen wie die Trainingsbelastung. Für Studios heißt das Bildung und Partnerschaften, nicht Lagerbestand: Ein Schlaf-Workshop verkauft sich, eine smarte Matratze im Eingang nicht. Für Marken: Hardware plus Abo ist das Modell; der Vertrieb läuft über Wellness-Programme, nicht über Studios.',
