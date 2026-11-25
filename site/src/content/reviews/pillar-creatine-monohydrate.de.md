@@ -14,6 +14,7 @@ publishedAt: 2026-11-25
 updatedAt: 2026-11-25
 author: "Sqwod Verified"
 affiliate: false
+relationship: "PILLAR Performance war 2026 Partner eines Mitglieder-Events von Sqwod Pod. Das hat diesen Score nicht beeinflusst; er folgt der veröffentlichten Methodik."
 testStatus: desk-researched
 draft: false
 # EU store (PILLAR Performance MN GmbH, Munich). 300 g Creapure, Informed Sport, EUR 28.99, checked 2026-11-25. Not on Amazon.de. No affiliate programme known yet.

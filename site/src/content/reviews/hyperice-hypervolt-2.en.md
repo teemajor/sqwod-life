@@ -14,6 +14,7 @@ publishedAt: 2026-07-23
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
+relationship: "Hyperice partnered with Sqwod Pod on a member event in 2026, and we are in partnership talks with them. That did not affect this score, which follows the published method."
 draft: false
 # Real & sourced: price, specs, crowd.sources, pros/cons, verdict. Affiliate /go target on publish: https://www.amazon.de/dp/B0CVSD725F?tag=sqwod-21 (sold by Hyperice, verified 2026-07-23).
 verdict: "A quiet, light, app-guided percussion gun that nails everyday warm-ups and client recovery, but you pay a premium for a 3-speed, lower-force device, and German testers rated it far harder than US buyers."

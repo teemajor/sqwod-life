@@ -14,6 +14,7 @@ publishedAt: 2026-11-25
 updatedAt: 2026-11-25
 author: "Sqwod Verified"
 affiliate: false
+relationship: "PILLAR Performance partnered with Sqwod Pod on a member event in 2026. That did not affect this score, which follows the published method."
 testStatus: desk-researched
 draft: false
 # Global store (AUD), Germany is a listed delivery country; not yet in the EU store or on Amazon.de as of 2026-11-25. 400 mg sodium, 190 mg potassium, 80 mg magnesium per 7 g serve in 500-750 ml. Informed Sport.

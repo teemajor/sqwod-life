@@ -14,6 +14,7 @@ publishedAt: 2026-11-25
 updatedAt: 2026-11-25
 author: "Sqwod Verified"
 affiliate: true
+relationship: "DRYLL hat Sqwod Pod ein kostenloses Test-Kit geschickt (Nov. 2026), und wir sprechen über eine Handels- und Affiliate-Partnerschaft für unsere Berliner Pods. Beides hat diesen Score nicht beeinflusst; er folgt der veröffentlichten Methodik."
 testStatus: desk-researched
 draft: false
 # Amazon.de B0HJHH2TFX (mixbox, 30 sticks) sold by Dryll, shipped by Amazon, EUR 27.93, checked 2026-11-25. Direct: dryll.co EUR 39.90 one-off, subscriptions down to EUR 0.89/stick. Per stick: 1,000 mg sodium, 300 mg potassium (brand FAQ; one meta text says 200), 60 mg magnesium. Kölner Liste per brand.

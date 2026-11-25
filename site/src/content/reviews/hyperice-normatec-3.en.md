@@ -14,6 +14,7 @@ publishedAt: 2026-07-24
 updatedAt: 2026-10-17
 author: "Sqwod Verified"
 affiliate: true
+relationship: "Hyperice partnered with Sqwod Pod on a member event in 2026, and we are in partnership talks with them. That did not affect this score, which follows the published method."
 draft: false
 # Amazon.de ASIN B0BH19XW76 (Standard Size Legs). Buy-box seller/condition NOT auto-verified (robots-blocked) — verify NEW + first-party via SiteStripe before wiring Amazon; else brand-direct hyperice.com. Compression-boot recovery evidence is mixed/limited.
 verdict: "A premium, well-built pneumatic compression system that feels great and is loved by users, but it is expensive and the hard science on recovery gains is still mixed."

@@ -152,6 +152,7 @@ const faqLd = {
         <h1 class="vh-h1">{d.productName.split(' ').map((w, i) => <Fragment><span class="hw" style={`animation-delay:${i * 0.07}s`}>{w}</span>{' '}</Fragment>)}</h1>
         <p class="vh-verdict">{d.verdict}</p>
         <div style="margin-top:14px"><TestStatus status={d.testStatus} lang={lang} tone="full" /></div>
+        {d.relationship && <p class="rel-note"><b>{lang === 'de' ? 'Geschäftsbeziehung' : 'Relationship'}:</b> {d.relationship}</p>}
 
         <div class="vs">
           <div class="vs-num"><span class="dnum" data-count>{d.sqwodScore}</span><small>Sqwod Score / 100</small></div>
@@ -356,6 +357,8 @@ const faqLd = {
   .g-empty{background:var(--panel);padding:0;flex-direction:column;gap:14px;border:1px dashed var(--line)}
   .g-mark{width:44%;max-width:130px;opacity:.5}
   .g-empty-name{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--g3)}
+  .rel-note{margin:10px 0 0;padding:10px 12px;border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;font-size:13px;line-height:1.5;color:var(--g2)}
+  .rel-note b{color:var(--chalk)}
 </style>
 
 <script is:inline>

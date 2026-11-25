@@ -10,6 +10,7 @@ gallery: 4
 pillar: gear
 type: recovery
 conversion: verified
+relationship: "Hyperice war 2026 Partner eines Mitglieder-Events von Sqwod Pod, und wir sind mit Hyperice im Gespräch über eine Partnerschaft. Das hat diesen Score nicht beeinflusst; er folgt der veröffentlichten Methodik."
 testStatus: desk-researched
 publishedAt: 2026-10-17
 updatedAt: 2026-10-17

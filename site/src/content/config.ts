@@ -35,6 +35,10 @@ const reviews = defineCollection({
     //   hands-on        — handled and used, but not a full Pod protocol
     //   desk-researched — scored from public data; no unit handled  (DEFAULT)
     //   editorial-pick  — named on merit, deliberately unscored
+    // Any commercial relationship with the brand beyond a plain affiliate link (samples, events,
+    // partnership talks, Pod deals). Shown on the page next to the test status. Written per language.
+    // Required by UWG §5a / FTC endorsement rules whenever it exists, whatever it does or does not change.
+    relationship: z.string().optional(),
     testStatus: z.enum(['pod-tested', 'hands-on', 'desk-researched', 'editorial-pick'])
       .default('desk-researched'),
     draft: z.boolean().default(false), // unpublished — excluded from pages, /go, and related links until a real Sqwod Score is set
