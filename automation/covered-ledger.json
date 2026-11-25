@@ -1,82 +1,5 @@
 [
   {
-    "date": "2026-11-03",
-    "key": "everyone active collaborates with chatty caf to strengthen c",
-    "tokens": [
-      "everyone",
-      "active",
-      "collaborates",
-      "chatty",
-      "strengthen",
-      "community",
-      "connections"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "equinox names brendan whitworth as ceo and announces more th",
-    "tokens": [
-      "equinox",
-      "names",
-      "brendan",
-      "whitworth",
-      "announces",
-      "billion",
-      "planned",
-      "growth",
-      "investments"
-    ],
-    "entities": [
-      "Equinox"
-    ],
-    "deal": "$1b"
-  },
-  {
-    "date": "2026-11-03",
-    "key": "onespaworld posts record q3 revenue as cruise wellness busin",
-    "tokens": [
-      "onespaworld",
-      "posts",
-      "record",
-      "revenue",
-      "cruise",
-      "business",
-      "surges"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "onlineseminar physiotherapie",
-    "tokens": [
-      "online",
-      "seminar",
-      "physiotherapie"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "david lloyd clubs markenintegration und 20 millionen euro in",
-    "tokens": [
-      "david",
-      "lloyd",
-      "clubs",
-      "markenintegration",
-      "millionen",
-      "euro",
-      "investitionen"
-    ]
-  },
-  {
-    "date": "2026-11-03",
-    "key": "24 hour fitness introduces founders club",
-    "tokens": [
-      "hour",
-      "introduces",
-      "founders",
-      "club"
-    ]
-  },
-  {
     "date": "2026-11-04",
     "key": "dssvnews digitale ausgabe 062026 online",
     "tokens": [
@@ -1510,6 +1433,91 @@
       "become",
       "social",
       "infrastructure"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "club pilates unveils refreshed studio design ahead of 20th a",
+    "tokens": [
+      "club",
+      "pilates",
+      "unveils",
+      "refreshed",
+      "studio",
+      "design",
+      "ahead",
+      "20th",
+      "anniversary"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "midtown athletic club launches forge an innovative new stren",
+    "tokens": [
+      "midtown",
+      "athletic",
+      "club",
+      "launches",
+      "forge",
+      "innovative",
+      "strength",
+      "training",
+      "experience"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "im8 taps diplo body hot pilates scales wellness goes undergr",
+    "tokens": [
+      "taps",
+      "diplo",
+      "body",
+      "pilates",
+      "scales",
+      "goes",
+      "underground"
+    ],
+    "entities": [
+      "IM8"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "pd savage raises 10000 in community fitness event",
+    "tokens": [
+      "savage",
+      "raises",
+      "community",
+      "event"
+    ],
+    "deal": "£10,000"
+  },
+  {
+    "date": "2026-11-25",
+    "key": "the best black 2026 friday activewear deals alo vuori nike  ",
+    "tokens": [
+      "best",
+      "black",
+      "2026",
+      "friday",
+      "activewear",
+      "deals",
+      "vuori",
+      "nike"
+    ],
+    "entities": [
+      "Vuori",
+      "Nike"
+    ]
+  },
+  {
+    "date": "2026-11-25",
+    "key": "new wellness third places are taking shape",
+    "tokens": [
+      "third",
+      "places",
+      "taking",
+      "shape"
     ]
   }
 ]
