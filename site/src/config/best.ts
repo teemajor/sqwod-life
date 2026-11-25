@@ -335,6 +335,10 @@ export const guides: BestGuide[] = [
         why: { en: 'The protein most people should buy: tested, cheap per serving, no premium for the label.', de: 'Das Protein, das die meisten kaufen sollten: getestet, günstig pro Portion, kein Aufpreis fürs Etikett.' } },
       { key: 'tested', label: { en: 'Best third-party tested', de: 'Beste mit unabhängiger Prüfung' }, reviewSlug: 'momentous',
         why: { en: 'NSF Certified for Sport: the line you can recommend to tested athletes without hedging.', de: 'NSF Certified for Sport: die Linie, die du getesteten Athlet:innen ohne Vorbehalt empfehlen kannst.' } },
+      { key: 'creatine', label: { en: 'Best creatine', de: 'Bestes Kreatin' }, kind: 'creatine',
+        why: { en: 'Monohydrate at the studied dose, priced per serving, with banned-substance testing as the tie-breaker.', de: 'Monohydrat in der untersuchten Dosis, nach Preis pro Portion bewertet, Doping-Prüfung als Entscheider.' } },
+      { key: 'electrolyte', label: { en: 'Best electrolyte', de: 'Bestes Elektrolyt' }, kind: 'electrolyte',
+        why: { en: 'Sodium inside the 400 to 1,150 mg per litre range German testers use for sport drinks, tested, no filler.', de: 'Natrium im Bereich von 400 bis 1.150 mg pro Liter, den deutsche Tester für Sportgetränke ansetzen, geprüft, ohne Füllstoffe.' } },
       { key: 'fuel', label: { en: 'Best race-day fuel', de: 'Beste Wettkampf-Verpflegung' }, kind: 'fuel',
         why: { en: 'Hydrogel carbs that stay down at race intensity.', de: 'Hydrogel-Kohlenhydrate, die bei Wettkampf-Intensität drinbleiben.' } },
       { key: 'bar', label: { en: 'Best protein bar', de: 'Bester Proteinriegel' }, kind: 'bar',
@@ -344,6 +348,7 @@ export const guides: BestGuide[] = [
       kinds: [
         { key: 'protein', label: { en: 'Protein', de: 'Protein' } },
         { key: 'creatine', label: { en: 'Creatine', de: 'Kreatin' } },
+        { key: 'electrolyte', label: { en: 'Electrolytes', de: 'Elektrolyte' } },
         { key: 'bar', label: { en: 'Bars', de: 'Riegel' } },
         { key: 'drink', label: { en: 'Drinks', de: 'Drinks' } },
       ],
