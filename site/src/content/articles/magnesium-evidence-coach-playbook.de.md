@@ -11,8 +11,8 @@ type: evidence
 format: analysis
 conversion: list-growth
 publishedAt: 2026-07-07
-updatedAt: 2026-07-24
-asOf: 2026-07-24
+updatedAt: 2026-11-25
+asOf: 2026-11-25
 author: "Tee Major"
 gated: false
 sources:
@@ -26,12 +26,19 @@ sources:
   - { label: "Veronese et al. 2014: Magnesium & körperliche Leistung bei älteren Frauen, RCT (Am J Clin Nutr) · PMID 25008857", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
   - { label: "Zhang et al. 2017: Magnesium & Leistungsfähigkeit, Review (Nutrients) · PMID 28846654", url: "https://consensus.app/papers/details/2bdd50197d2d5c1f8611cd3b219ce4d4/" }
   - { label: "Boyle et al. 2017: Magnesium, Angst & Stress, systematischer Review (Nutrients) · PMID 28445426", url: "https://consensus.app/papers/details/9e0febbbba955a81a827619e2c0cf81e/" }
+  - { label: "Lopresti et al. 2026: Magnesium-Supplementierung für den Schlaf bei Erwachsenen, systematischer Review aus 12 RCTs (Journal of Dietary Supplements) · PMID 42661485", url: "https://pubmed.ncbi.nlm.nih.gov/42661485/" }
+  - { label: "Schuster et al. 2025: Magnesiumbisglycinat bei Erwachsenen mit schlechtem Schlaf, doppelblinde placebokontrollierte RCT, n=155 (Nature and Science of Sleep) · PMID 40918053", url: "https://pubmed.ncbi.nlm.nih.gov/40918053/" }
+  - { label: "Zhang et al. 2016: Magnesium-Supplementierung und Blutdruck, Meta-Analyse aus 34 doppelblinden RCTs, n=2.028 (Hypertension) · PMID 27402922", url: "https://pubmed.ncbi.nlm.nih.gov/27402922/" }
+  - { label: "Fang et al. 2016: Magnesium aus der Nahrung und Herz-Kreislauf-Erkrankungen, Typ-2-Diabetes und Sterblichkeit, Dosis-Wirkungs-Meta-Analyse aus 40 prospektiven Kohorten, >1 Million Teilnehmende (BMC Medicine) · PMID 27927203", url: "https://pubmed.ncbi.nlm.nih.gov/27927203/" }
+  - { label: "Bagheri et al. 2021: Magnesium aus Nahrung vs. Supplementen und Sterblichkeit, Dosis-Wirkungs-Meta-Analyse prospektiver Kohorten, n=1.168.756 (Advances in Nutrition) · PMID 33684200", url: "https://pubmed.ncbi.nlm.nih.gov/33684200/" }
+  - { label: "Moabedi et al. 2023: Magnesium bei Erwachsenen mit depressiver Störung, systematischer Review und Meta-Analyse aus 7 RCTs, n=325 (Frontiers in Psychiatry) · PMID 38213402", url: "https://pubmed.ncbi.nlm.nih.gov/38213402/" }
   - { label: "ClinicalTrials.gov: Magnesium, rekrutierend + kurz vor Start", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
 takeaways:
   - "Die eigentliche Geschichte ist die Versorgung: Geschätzt 31% der Weltbevölkerung, rund 2,4 Milliarden Menschen, erreichen die empfohlene Magnesiumzufuhr nicht (Zhang 2025). Die meisten Kunden sind eher unterversorgt als optimal versorgt."
-  - "Beim Schlaf lautet das ehrliche Urteil 'gering und unsicher'. Eine Meta-Analyse bei Älteren fand ~17 Minuten kürzere Einschlafzeit mit Magnesium, aber die Evidenz war von niedriger Qualität (Mah 2021). Einen Versuch wert, kein Versprechen."
+  - "Beim Schlaf lautet das ehrliche Urteil 'gering und unsicher'. Eine Meta-Analyse bei Älteren fand ~17 Minuten kürzere Einschlafzeit mit Magnesium, aber die Evidenz war von niedriger Qualität (Mah 2021). Ein Review von 2026 über 12 RCTs kam zu dem Schluss, dass die Evidenz Magnesium als Routinebehandlung bei Schlaflosigkeit nicht stützt (Lopresti 2026). Einen Versuch wert, kein Versprechen."
   - "Der Krampf-Mythos gehört für die meisten Kunden weggeräumt: Der Cochrane-Review fand keinen relevanten Nutzen bei den häufigen nächtlichen/idiopathischen Wadenkrämpfen Erwachsener (Garrison 2020)."
   - "Die Form zählt mehr als die Dosis-Fixierung: Organische Formen (Citrat, Glycinat) werden besser aufgenommen als billiges Magnesiumoxid (Kappeler 2017). Oxid überspringen."
+  - "Ein harter Endpunkt hält in randomisierten Studien stand: Im Median 368 mg/Tag über etwa drei Monate senkten den Blutdruck über 34 doppelblinde Studien um 2,00 mmHg systolisch und 1,78 mmHg diastolisch (Zhang 2016). Klein, aber real."
   - "Der Blick nach vorn: 295 Magnesium-Studien rekrutieren oder starten bald, u. a. zu Perimenopause-Symptomen, Kraft bei Sarkopenie und Nährstoffverlust unter GLP-1-Abnehmspritzen (ClinicalTrials.gov)."
 figures:
   - { label: "Erwachsene weltweit unter der empfohlenen Magnesiumzufuhr", value: "~31%", note: "≈2,4 Milliarden Menschen erreichen die empfohlene Zufuhr nicht", source: "Zhang et al. 2025, Int J Vitam Nutr Res", url: "https://consensus.app/papers/details/06621026bcc75b378ba87cbf367a737e/" }
@@ -39,10 +46,11 @@ figures:
   - { label: "Effekt auf häufige nächtliche Wadenkrämpfe nach 4 Wochen", value: "−0.18 Krämpfe/Wo", note: "Nicht statistisch signifikant; moderate Evidenzsicherheit: Magnesium ≈ Placebo bei idiopathischen Krämpfen", source: "Garrison et al. 2020, Cochrane-Review", url: "https://consensus.app/papers/details/9c0623b3126d53c380e8d993c6393d24/" }
   - { label: "Citrat vs. Oxid: in 24 h aufgenommenes Magnesium", value: "+0.565 mmol", note: "Höhere Magnesiumausscheidung im Urin nach Citrat als nach Oxid; organische Formen werden besser aufgenommen", source: "Kappeler et al. 2017, BMC Nutrition · DOI 10.1186/s40795-016-0121-3", url: "https://consensus.app/papers/details/bd1a83bd8d3f5169806497f75061880f/" }
   - { label: "Aufsteh-Zeit vom Stuhl bei älteren Frauen (12 Wo, 300 mg/Tag)", value: "−1.31 s", note: "Bessere körperliche Leistung; Effekt am stärksten unterhalb der empfohlenen Zufuhr. Kraft (Griff/Drehmoment) blieb unverändert", source: "Veronese et al. 2014, Am J Clin Nutr", url: "https://consensus.app/papers/details/8f11c50eda4d55c0a1108718cf8a19dc/" }
+  - { label: "Blutdruck vs. Placebo (Median 368 mg/Tag, ~3 Monate)", value: "−2,00 / −1,78 mmHg", note: "Systolisch / diastolisch; 34 doppelblinde placebokontrollierte RCTs, 2.028 Erwachsene", source: "Zhang et al. 2016, Hypertension", url: "https://pubmed.ncbi.nlm.nih.gov/27402922/" }
   - { label: "Magnesium-Studien, die rekrutieren oder kurz davorstehen", value: "295", note: "Laufende Pipeline (Stand Juli 2026): die Fragen, die die Forschung als Nächstes beantwortet", source: "ClinicalTrials.gov", url: "https://clinicaltrials.gov/search?intr=magnesium&aggFilters=status:not%20rec" }
 playbook:
-  - { move: "Verlagere das Gespräch von 'Supplement' zu 'bekommst du überhaupt genug?'", why: "Rund ein Drittel der Menschen weltweit erreicht die empfohlene Magnesiumzufuhr nicht (Zhang 2025), Frauen und Ältere häufiger. Erst Ernährung, Blattgemüse, Hülsenfrüchte, Nüsse, Vollkorn, dann die Lücke ergänzen. Das ist ehrlicher und nützlicher als Kapseln zu pushen." }
-  - { move: "Wenn ein Kunde es fürs Schlafen probieren will, setz die Erwartung auf 'gering, vielleicht'.", why: "Die beste gepoolte Evidenz zeigt einen kleinen, unsicheren Nutzen beim schnelleren Einschlafen bei Älteren (Mah 2021); Beobachtungsdaten sind stärker als die Studien (Arab 2022). Günstig und risikoarm, also als Experiment framen, nicht als Lösung." }
+  - { move: "Verlagere das Gespräch von 'Supplement' zu 'bekommst du überhaupt genug?'", why: "Rund ein Drittel der Menschen weltweit erreicht die empfohlene Magnesiumzufuhr nicht (Zhang 2025), Frauen und Ältere häufiger. Erst Ernährung, Blattgemüse, Hülsenfrüchte, Nüsse, Vollkorn, dann die Lücke ergänzen. Das ist ehrlicher und nützlicher als Kapseln zu pushen. Kohortendaten zeigen in dieselbe Richtung: Magnesium aus der Nahrung war mit niedrigerer Gesamtsterblichkeit verbunden, Magnesium aus Supplementen nicht (Bagheri 2021)." }
+  - { move: "Wenn ein Kunde es fürs Schlafen probieren will, setz die Erwartung auf 'gering, vielleicht'.", why: "Die beste gepoolte Evidenz zeigt einen kleinen, unsicheren Nutzen beim schnelleren Einschlafen bei Älteren (Mah 2021); Beobachtungsdaten sind stärker als die Studien (Arab 2022), und ein Review von 2026 über 12 RCTs bewertet die Sicherheit als niedrig bis sehr niedrig (Lopresti 2026). Günstig und risikoarm, also als Experiment framen, nicht als Lösung." }
   - { move: "Empfiehl es nicht mehr gegen gewöhnliche nächtliche Krämpfe.", why: "Der Cochrane-Review ist eindeutig: Bei den häufigen idiopathischen/nächtlichen Wadenkrämpfen Erwachsener wirkt Magnesium nicht besser als Placebo (Garrison 2020). Hier zu empfehlen kostet dich still Glaubwürdigkeit. Schwangerschaftskrämpfe sind ein anderer, ungeklärter Fall, und gehören ohnehin zum Arzt." }
   - { move: "Wenn supplementiert wird, lenke zu Citrat oder Glycinat statt Oxid.", why: "Organische Formen werden besser aufgenommen als billiges Magnesiumoxid (Kappeler 2017; Pardo 2021), und Glycinat ist meist magenschonender. Gleiche elementare Dosis, mehr kommt an. Ein einfacher Formwechsel ist der wertvollste Tipp." }
 hero:
@@ -54,6 +62,7 @@ verdict:
   real:
     - { value: "−1,31s", text: "schneller vom Stuhl aufstehen: ältere Frauen, 12 Wochen" }
     - { value: "−17min", text: "schneller einschlafen vs. Placebo (früh, geringe Sicherheit)" }
+    - { value: "−2 mmHg", text: "niedrigerer systolischer Blutdruck vs. Placebo: 34 Studien" }
   hype:
     - { value: "≈0", text: "Wirkung auf normale nächtliche Wadenkrämpfe: wie Placebo" }
     - { value: "Oxid", text: "billig, aber schlecht resorbiert: nimm Citrat oder Glycinat" }
@@ -62,9 +71,10 @@ tags: ["magnesium", "supplements", "sleep", "recovery", "evidence", "coaching"]
 changelog:
   - { date: "2026-07-07", note: "Erste Ausgabe. Evidenz aktuell bis Juli 2026; nach Studienqualität bewertet. Wir aktualisieren, sobald die Pipeline liefert." }
   - { date: "2026-07-24", note: "Quellen gegen PubMed & ClinicalTrials geprüft; PMIDs ergänzt und die laufende Studienzahl auf 295 aktualisiert." }
+  - { date: "2026-11-25", note: "Sechs Quellen ergänzt (Lopresti 2026 Review aus 12 RCTs, Schuster 2025 RCT, Zhang 2016 Blutdruck-Meta-Analyse, Fang 2016 und Bagheri 2021 Kohorten-Meta-Analysen, Moabedi 2023 Depressions-Meta-Analyse); Evidenzgrad Schlaf von 'bestenfalls moderat' auf 'geringe Sicherheit' gesenkt und ein kleiner, durch Studien gestützter Blutdruckeffekt ergänzt." }
 ---
 
-> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Studie geknüpft, eine Meta-Analyse, einen Cochrane-Review, eine randomisierte Studie oder das Studienregister, und verlinkt. Wir bewerten die Evidenz zusätzlich: Wo sie stark ist, sagen wir das; wo sie noch früh oder widersprüchlich ist, ebenfalls. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Bei Gesundheitsthemen ist eine Quelle, hinter der man nicht stehen kann, schlechter als gar keine. Zuletzt aktualisiert am 7. Juli 2026.
+> **Wie wir recherchiert haben.** Jede Aussage unten ist an eine benannte Studie geknüpft, eine Meta-Analyse, einen Cochrane-Review, eine randomisierte Studie oder das Studienregister, und verlinkt. Wir bewerten die Evidenz zusätzlich: Wo sie stark ist, sagen wir das; wo sie noch früh oder widersprüchlich ist, ebenfalls. Dieser Beitrag wurde vor Veröffentlichung auf Richtigkeit geprüft und trägt einen echten Namen. Bei Gesundheitsthemen ist eine Quelle, hinter der man nicht stehen kann, schlechter als gar keine. Zuletzt aktualisiert am 25. November 2026.
 
 ## Das Supplement, an das deine Kunden längst glauben
 
@@ -80,19 +90,27 @@ Das ist der Teil mit dem festesten Boden. Geschätzt **31% der Weltbevölkerung,
 
 Das ist relevant fürs Coaching. Magnesium trägt zu einem normalen Energiestoffwechsel, zur normalen Muskelfunktion und zur normalen Funktion des Nervensystems bei: das ist keine Exotik, das ist Grundinstallation. Ist ein Kunde tatsächlich knapp versorgt, kann Auffüllen helfen, sich besser zu fühlen und zu funktionieren. Ist er bereits gut versorgt, bringt mehr keine Extra-Leistung. Die ganze Frage lautet: Bekommt er genug, und woher?
 
+Einen Effekt auf einen harten Endpunkt solltest du kennen. Eine Meta-Analyse aus 34 doppelblinden, placebokontrollierten Studien (2.028 Erwachsene) fand, dass im Median 368 mg/Tag über etwa drei Monate den systolischen Blutdruck um **2,00 mmHg** und den diastolischen um **1,78 mmHg** senkten, und dass 300 mg/Tag oder ein Monat ausreichten, um den Effekt zu sehen.<sup class="fn"><a href="#source-13">13</a></sup> Pro Person klein, aber aus randomisierten Studien, und das ist mehr, als die meisten Magnesium-Versprechen vorweisen können. Wer Blutdruckmedikamente nimmt, spricht trotzdem zuerst mit der Ärztin oder dem Arzt, bevor etwas dazukommt.
+
 Erst die Ernährung ist die ehrliche Antwort: Blattgemüse, Hülsenfrüchte, Nüsse, Samen, Vollkorn. Die Lücke ergänzen, nicht den Teller ersetzen.
 
-**Evidenzgrad: stark** für die Verbreitung niedriger Zufuhr; der Sprung zu "alle sollten supplementieren" ist die weichere Stelle.
+Die großen Kohortendaten stützen diese Reihenfolge. Eine Dosis-Wirkungs-Meta-Analyse aus 40 prospektiven Kohorten (mehr als 1 Million Menschen) verband jede zusätzlichen 100 mg/Tag Magnesium aus der Nahrung mit einem um 22 % niedrigeren Risiko für Herzinsuffizienz, einem um 7 % niedrigeren Schlaganfallrisiko, einem niedrigeren Risiko für Typ-2-Diabetes (RR 0,81) und niedrigerer Gesamtsterblichkeit (RR 0,90), nicht aber mit Herz-Kreislauf-Erkrankungen insgesamt.<sup class="fn"><a href="#source-14">14</a></sup> Eine zweite Meta-Analyse mit 1.168.756 Teilnehmenden fand Magnesium aus der Nahrung mit niedrigerer Gesamtsterblichkeit verbunden, Magnesium aus Supplementen dagegen ohne signifikanten Zusammenhang.<sup class="fn"><a href="#source-15">15</a></sup> Das sind Beobachtungsdaten, kein Beweis, aber sie zeigen auf den Teller, nicht auf die Kapsel.
+
+**Evidenzgrad: stark** für die Verbreitung niedriger Zufuhr; moderat für einen kleinen Blutdruckeffekt durch Supplemente; nur beobachtend für die Zusammenhänge zwischen Ernährung und Erkrankungen. Der Sprung zu "alle sollten supplementieren" ist die weichere Stelle.
 
 ## Schlaf: gering, halbwegs real, überverkauft
 
 Das ist die Behauptung hinter den meisten Gummi-Verkäufen, also sei präzise. Eine Meta-Analyse von 2021 bei älteren Erwachsenen mit Insomnie fand, dass Menschen mit Magnesium etwa **17 Minuten schneller** einschliefen als mit Placebo: eine echte Richtung, aber die Autoren stuften die zugrunde liegende Evidenz als *niedrig bis sehr niedrig* ein.<sup class="fn"><a href="#source-2">2</a></sup> Ein breiterer systematischer Review von 2022 fand genau die Spaltung, die du Kunden nennen solltest: **Beobachtungsstudien** verknüpfen bessere Magnesiumversorgung mit besserem Schlaf, während die **randomisierten Studien** widersprüchlich sind.<sup class="fn"><a href="#source-3">3</a></sup>
 
-Neuere Pilotarbeit ist mild ermutigend, eine Crossover-Studie von 2024 bei Erwachsenen mit schlechtem Schlaf berichtete Verbesserungen bei Schlafqualität und Stimmung<sup class="fn"><a href="#source-4">4</a></sup>, aber sie ist klein und vorläufig. Unterm Strich lautet das ehrliche Urteil: möglicherweise hilfreich, besonders wenn der Kunde ohnehin knapp versorgt ist, aber weit von einer sicheren Lösung entfernt. Ein Effekt auf den Schlaf ist kein zugelassener gesundheitsbezogener Vorteil: es **wird untersucht**, mehr nicht.
+Neuere Pilotarbeit ist mild ermutigend, eine Crossover-Studie von 2024 bei Erwachsenen mit schlechtem Schlaf berichtete Verbesserungen bei Schlafqualität und Stimmung<sup class="fn"><a href="#source-4">4</a></sup>, aber sie ist klein und vorläufig. Unterm Strich lautet das ehrliche Urteil: möglicherweise hilfreich, besonders wenn der Kunde ohnehin knapp versorgt ist, aber weit von einer sicheren Lösung entfernt.
+
+Die beste neue Studie ist zugleich die nützlichste für Coaches. Eine doppelblinde RCT von 2025 gab 155 Erwachsenen mit schlechtem Schlaf täglich 250 mg elementares Magnesium als Bisglycinat: Der Insomnie-Score sank nach vier Wochen um 3,9 Punkte gegenüber 2,3 Punkten unter Placebo, ein kleiner Effekt (d = 0,2). Eine explorative Auswertung deutete an, dass Menschen mit niedrigerer Magnesiumzufuhr über die Nahrung stärker profitierten.<sup class="fn"><a href="#source-12">12</a></sup> Und der bislang breiteste Überblick, ein systematischer Review von 2026 über 12 randomisierte Studien, fand uneinheitliche Ergebnisse über Fragebögen, EEG und Wearables hinweg, bewertete die Sicherheit als niedrig bis sehr niedrig und kam zu dem Schluss, dass die Evidenz Magnesium als Routinebehandlung bei Schlaflosigkeit nicht stützt.<sup class="fn"><a href="#source-11">11</a></sup>
+
+Ein Effekt auf den Schlaf ist kein zugelassener gesundheitsbezogener Vorteil: es **wird untersucht**, mehr nicht.
 
 Verkauf es also als Experiment. Günstig, risikoarm, und wenn es hilft, umso besser. Lass einen Kunden nur nicht glauben, ein Löffel Magnesium schlage das echte Aufräumen von Schlafhygiene, Koffein-Timing und Trainingslast.
 
-**Evidenzgrad: früh / bestenfalls moderat. Beobachtung ist andeutend, die Studien gemischt und meist von niedriger Qualität. Als "einen Versuch wert" rahmen, nie als "bewiesen".**
+**Evidenzgrad: früh / geringe Sicherheit (im November 2026 von "bestenfalls moderat" herabgestuft). Beobachtung ist andeutend, die Studien sind gemischt, und der neueste Review über 12 RCTs bewertet die Sicherheit als niedrig bis sehr niedrig. Als "einen Versuch wert" rahmen, nie als "bewiesen".**
 
 ## Krämpfe: der Mythos, den du für die meisten Kunden wegräumen solltest
 
@@ -118,13 +136,13 @@ Für den Coach heißt das: Magnesium ist kein Kraft-Supplement, sondern ein "sor
 
 Hier verdient sich ein ehrlicher Coach Vertrauen: indem er die Grenze zwischen *gestützt* und *wird untersucht* kennt.
 
-Es gibt andeutende Hinweise, dass Magnesium bei **subjektiver Angst und Stress** hilft: ein systematischer Review fand Signale eines Nutzens, aber speziell in bereits belasteten Gruppen (leichte Angst, PMS), und bewertete die Gesamtqualität als schwach.<sup class="fn"><a href="#source-10">10</a></sup> Das ist ein "das wird untersucht", keine Aussage, die du einem Kunden zuschreibst. Alles, was Stimmung, Angst oder eine Erkrankung berührt, ist ein Satz für eine Fachperson, nicht für die Trainingsfläche. Wenn du dich je sagen hörst, Magnesium "behandle" etwas, halt inne.
+Es gibt andeutende Hinweise, dass Magnesium bei **subjektiver Angst und Stress** hilft: ein systematischer Review fand Signale eines Nutzens, aber speziell in bereits belasteten Gruppen (leichte Angst, PMS), und bewertete die Gesamtqualität als schwach.<sup class="fn"><a href="#source-10">10</a></sup> Bei Depression ist das Signal etwas stärker: Eine Meta-Analyse von 2023 aus 7 RCTs mit 325 Erwachsenen mit depressiver Störung fand niedrigere Depressionswerte unter Magnesium (SMD −0,919), und die Autoren fordern dennoch größere, hochwertigere Studien.<sup class="fn"><a href="#source-16">16</a></sup> Das waren Menschen mit einer Diagnose, und genau deshalb ist das ein Fall für eine Überweisung, nicht für eine Empfehlung. Das ist ein "das wird untersucht", keine Aussage, die du einem Kunden zuschreibst. Alles, was Stimmung, Angst oder eine Erkrankung berührt, ist ein Satz für eine Fachperson, nicht für die Trainingsfläche. Wenn du dich je sagen hörst, Magnesium "behandle" etwas, halt inne.
 
 **Evidenzgrad: früh. Stress/Stimmung als "wird erforscht" rahmen, nie als Versprechen, und alles Klinische weiterleiten.**
 
 ## Was gerade bewiesen wird (der Teil, den dir sonst niemand zeigt)
 
-Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **295 Magnesium-Studien**<sup class="fn"><a href="#source-11">11</a></sup>, die rekrutieren oder bald starten, und das Muster zeigt, wohin die Reise geht.
+Das kann kein statisches Supplement-Lexikon liefern: die lebendige Front des Feldes. Aktuell listet das klinische Register **295 Magnesium-Studien**<sup class="fn"><a href="#source-17">17</a></sup>, die rekrutieren oder bald starten, und das Muster zeigt, wohin die Reise geht.
 
 Drei Stränge lohnen den Blick, denn deine Kunden werden nach allen dreien fragen:
 
@@ -140,7 +158,7 @@ Wir aktualisieren diesen Beitrag, sobald diese Studien Ergebnisse liefern: das i
 
 Wenn der nächste Kunde fragt, hier das Ganze in Klartext:
 
-*"Magnesium ist ein echtes Thema: viele bekommen tatsächlich zu wenig, es lohnt sich also. Hol es zuerst aus dem Essen: Grünzeug, Hülsenfrüchte, Nüsse, Vollkorn. Wenn du supplementieren willst, nimm Citrat oder Glycinat statt billigem Oxid,<sup class="fn"><a href="#source-6">6</a>,&#8202;<a href="#source-7">7</a></sup> eine Alltagsdosis reicht. Fürs Schlafen hilft es vielleicht ein bisschen, vor allem wenn du knapp versorgt bist: behandle es als Experiment, nicht als Kur. Bei deinen nächtlichen Krämpfen bin ich ehrlich: Die guten Studien zeigen keinen echten Effekt, verlass dich nicht drauf. Und wenn irgendetwas mit einer Erkrankung, einer Schwangerschaft oder Medikamenten zu tun hat, ist das ein Gespräch für deinen Arzt, nicht für mich."*
+*"Magnesium ist ein echtes Thema: viele bekommen tatsächlich zu wenig, es lohnt sich also. Hol es zuerst aus dem Essen: Grünzeug, Hülsenfrüchte, Nüsse, Vollkorn. Wenn du supplementieren willst, nimm Citrat oder Glycinat statt billigem Oxid,<sup class="fn"><a href="#source-6">6</a>,&#8202;<a href="#source-7">7</a></sup> eine Alltagsdosis reicht. Fürs Schlafen hilft es vielleicht ein bisschen, vor allem wenn du knapp versorgt bist: behandle es als Experiment, nicht als Kur, und gib ihm etwa vier Wochen, bevor du urteilst. Bei deinen nächtlichen Krämpfen bin ich ehrlich: Die guten Studien zeigen keinen echten Effekt, verlass dich nicht drauf. Und wenn irgendetwas mit einer Erkrankung, einer Schwangerschaft oder Medikamenten zu tun hat, ist das ein Gespräch für deinen Arzt, nicht für mich."*
 
 Das war's. Kein Abgleiten in Hype, keine Bro-Science, keine Überversprechen. Nur die Evidenz, übersetzt in etwas, mit dem ein Mensch handeln kann, und genau das ist der ganze Job.
 

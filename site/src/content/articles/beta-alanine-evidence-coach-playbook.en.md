@@ -11,8 +11,8 @@ type: evidence
 format: analysis
 conversion: products
 publishedAt: 2026-09-07
-updatedAt: 2026-09-07
-asOf: 2026-09-07
+updatedAt: 2026-11-25
+asOf: 2026-11-25
 author: "Tee Major"
 gated: false
 sources:
@@ -21,16 +21,21 @@ sources:
   - { label: "Curran-Bowen et al. 2024: Beta-alanine + sodium bicarbonate meta-analysis (Biology of Sport) · PMID 38952910", url: "https://doi.org/10.5114/biolsport.2024.132997" }
   - { label: "Ashtary-Larky et al. 2022: Body composition meta-analysis (JISSN) · PMID 35813845", url: "https://consensus.app/papers/details/13030a9a3d9459539e6f267f615252bf/" }
   - { label: "Gu et al. 2026: Beta-alanine in women, meta-analysis (Frontiers in Nutrition) · PMID 42370349", url: "https://consensus.app/papers/details/4f7f5910b23250cdb3602ac93f7c8374/" }
-  - { label: "Trexler et al. 2015: ISSN position stand: Beta-Alanine (JISSN)", url: "https://consensus.app/papers/details/69804873543058c7bf67834df88f7a57/" }
-  - { label: "Dolan et al. 2019: Systematic risk assessment (Advances in Nutrition)", url: "https://consensus.app/papers/details/b28295dd6e8e555ab7f29a3650d8c04e/" }
-  - { label: "Stellingwerff et al. 2012: Dosing & washout study (Amino Acids)", url: "https://consensus.app/papers/details/9cac37ad19b7586dbc59bf5878748093/" }
-  - { label: "de Camargo et al. 2022: Resistance training RCT (Biology of Sport)", url: "https://consensus.app/papers/details/12d37bf6180f5acd81db15b6071f4d8a/" }
-  - { label: "de Camargo et al. 2024: Older adults systematic review (J Aging Phys Act)", url: "https://consensus.app/papers/details/e2481787c9ba5b0eaf02759e43b45353/" }
+  - { label: "Trexler et al. 2015: ISSN position stand: Beta-Alanine (JISSN) · PMID 26175657", url: "https://consensus.app/papers/details/69804873543058c7bf67834df88f7a57/" }
+  - { label: "Dolan et al. 2019: Systematic risk assessment (Advances in Nutrition) · PMID 30980076", url: "https://consensus.app/papers/details/b28295dd6e8e555ab7f29a3650d8c04e/" }
+  - { label: "Stellingwerff et al. 2012: Dosing & washout study (Amino Acids) · PMID 21847611", url: "https://consensus.app/papers/details/9cac37ad19b7586dbc59bf5878748093/" }
+  - { label: "de Camargo et al. 2022: Resistance training RCT (Biology of Sport) · PMID 36636181", url: "https://consensus.app/papers/details/12d37bf6180f5acd81db15b6071f4d8a/" }
+  - { label: "de Camargo et al. 2024: Older adults systematic review (J Aging Phys Act) · PMID 39724872", url: "https://consensus.app/papers/details/e2481787c9ba5b0eaf02759e43b45353/" }
+  - { label: "Hobson et al. 2012: Performance meta-analysis by exercise duration, 15 studies, n=360 (Amino Acids) · PMID 22270875", url: "https://pubmed.ncbi.nlm.nih.gov/22270875/" }
+  - { label: "Liang et al. 2026: Repeated-sprint ability, systematic review and multilevel meta-analysis of 17 RCTs (Frontiers in Nutrition) · PMID 41971372", url: "https://pubmed.ncbi.nlm.nih.gov/41971372/" }
+  - { label: "Rezende et al. 2020: Muscle carnosine response, systematic review with Bayesian meta-analysis plus individual data, n=99 (Frontiers in Physiology) · PMID 32922303", url: "https://pubmed.ncbi.nlm.nih.gov/32922303/" }
+  - { label: "Esteves et al. 2021: Individual participant data meta-analysis of response variation, 4 studies (Int J Sport Nutr Exerc Metab) · PMID 34098531", url: "https://pubmed.ncbi.nlm.nih.gov/34098531/" }
+  - { label: "Bai et al. 2026: Creatine vs. beta-alanine vs. both, network meta-analysis of 52 RCTs (JISSN) · PMID 42384726", url: "https://pubmed.ncbi.nlm.nih.gov/42384726/" }
   - { label: "ClinicalTrials.gov: beta-alanine / carnosine, recruiting + not-yet-recruiting", url: "https://clinicaltrials.gov/search?intr=beta-alanine&aggFilters=status:not%20rec" }
-  - { label: "Stegen et al. 2013: Meal co-ingestion & carnosine loading (Med Sci Sports Exerc)", url: "https://consensus.app/papers/details/e27310d4ee5056d79e964aadd99fddea/" }
+  - { label: "Stegen et al. 2013: Meal co-ingestion & carnosine loading (Med Sci Sports Exerc) · PMID 23439427", url: "https://consensus.app/papers/details/e27310d4ee5056d79e964aadd99fddea/" }
 takeaways:
   - "It works, but small and only in a narrow window: efforts of roughly 30 seconds to 10 minutes. Overall effect across 40 studies and 1,461 people was SMD 0.18 (Saunders 2016)."
-  - "In trained young men the sweet spot is sharper still: the 4-to-10-minute maximal effort, effect size 0.55 (Georgiou 2024). Outside that window, stop selling it."
+  - "In trained young men the sweet spot is sharper still: the 4-to-10-minute maximal effort, effect size 0.55 (Georgiou 2024). Outside that window, stop selling it. Repeated short sprints get nothing: 17 RCTs, no effect (Liang 2026)."
   - "It does nothing for body composition. Twenty studies, 492 people: no change in fat mass, body fat percentage or fat-free mass (Ashtary-Larky 2022). Evidence grade: strong, for no effect."
   - "The tingle is not the effect. Paraesthesia is the only reported side effect (odds ratio 8.9 vs placebo) and it's a nerve reaction to a big single dose: split the dose and it mostly disappears (Dolan 2019)."
   - "The pipeline has left the gym: of the trials recruiting or about to start, only one is a sports-performance study, beta-alanine plus sodium bicarbonate in trained female basketball players. The rest are clinical, and firmly outside a coach's lane."
@@ -55,9 +60,10 @@ hero:
 tags: ["beta-alanine", "supplements", "method", "evidence", "coaching"]
 changelog:
   - { date: "2026-09-07", note: "First edition. Evidence current to September 2026; graded by strength of study design. We update when the pipeline delivers." }
+  - { date: "2026-11-25", note: "Added Hobson 2012, Liang 2026, Rezende 2020, Esteves 2021 and Bai 2026 (window edges, repeated sprints, responders, creatine stack); added PMIDs for Trexler 2015, Dolan 2019, Stellingwerff 2012, de Camargo 2022 and 2024, and Stegen 2013; translated the German source labels. No verdict change." }
 ---
 
-> **How we sourced this.** Every claim below is tied to a named study, a meta-analysis, a randomised trial, or the live trial registry, and linked. We also graded the evidence: where it's strong, we say so; where it's early or thin, we say that too. This piece was reviewed for accuracy before publishing and carries a real byline, because on health topics a citation you can't stand behind is worse than no citation at all. Last updated 7 September 2026.
+> **How we sourced this.** Every claim below is tied to a named study, a meta-analysis, a randomised trial, or the live trial registry, and linked. We also graded the evidence: where it's strong, we say so; where it's early or thin, we say that too. This piece was reviewed for accuracy before publishing and carries a real byline, because on health topics a citation you can't stand behind is worse than no citation at all. Last updated 25 November 2026.
 
 ## The supplement your clients can feel, which is exactly the problem
 
@@ -88,9 +94,11 @@ In trained young men, a 2024 meta-analysis of 18 studies found the overall effec
 Translate that to your client list:
 
 - **Buys something:** the 2 km rower, the 400–1500 m runner, the CrossFit athlete grinding a 9-minute AMRAP, the grappler in a hard round, the client doing high-rep circuits to failure, the 90-second sprint interval repeated eight times.
-- **Buys nothing:** the powerlifter doing triples, the client walking 10k steps, the marathoner at conversational pace, the general-population client three months into learning to squat.
+- **Buys nothing:** the footballer or basketball player whose game is repeated short sprints, the powerlifter doing triples, the client walking 10k steps, the marathoner at conversational pace, the general-population client three months into learning to squat.
 
 The same meta-analysis found greater effects for *exercise capacity*, how long you can hold on, than for *performance* in a fixed time trial.<sup class="fn"><a href="#source-1">1</a></sup> That's a subtle distinction worth carrying: beta-alanine is better at extending the last hard minute than at making the whole effort faster.
+
+An earlier meta-analysis of 15 studies and 360 participants marked the bottom edge: efforts of 60 to 240 seconds improved, efforts over 240 seconds improved too, and efforts under 60 seconds showed no benefit. The median gain was 2.85%, after a median total of 179 g of beta-alanine.<sup class="fn"><a href="#source-11">11</a></sup> Repeated sprinting sits outside the window as well. A 2026 meta-analysis of 17 RCTs found no effect on mean repeated-sprint performance (SMD −0.02), peak performance or fatigue decrement, and dose, duration and training status didn't change that.<sup class="fn"><a href="#source-12">12</a></sup>
 
 **Evidence grade: strong for the window; moderate for the size of the benefit inside it.**
 
@@ -102,9 +110,11 @@ Every piece of that has a reason:
 
 **Why total intake, not daily dose.** A dosing study that tracked muscle carnosine by MRS for 16 weeks found the increase depended only on the *total* beta-alanine consumed: **2.01 mmol/kg of carnosine per 100 g ingested**, and not on baseline levels, muscle type, or whether the client took 1.6 g or 3.2 g a day.<sup class="fn"><a href="#source-8">8</a></sup> You're filling a tank. The tap size doesn't change the tank.
 
+**Why "non-responder" is the wrong word.** An analysis of individual data from 99 people found that 99.3% responded to beta-alanine with a rise in muscle carnosine, and the pooled published data showed neither baseline levels nor sex changed the response. The same review found common protocols may not come close to filling muscle carnosine completely.<sup class="fn"><a href="#source-13">13</a></sup> An individual-participant meta-analysis of a high-intensity cycling test found an average gain of 7.7 seconds in time to exhaustion, and the spread of results was the same in the placebo group as in the beta-alanine group: the authors concluded the variation was unrelated to the supplement itself and likely came from outside factors such as nutrition, sleep or training status.<sup class="fn"><a href="#source-14">14</a></sup> If a client's numbers bounce around, look at the rest of their week before you blame the tub.
+
 **Why four weeks minimum.** The ISSN position stand puts meaningful carnosine loading at four weeks of 4–6 g daily.<sup class="fn"><a href="#source-6">6</a></sup> A client who takes it for nine days and reports "nothing happened" hasn't tested anything. Tell them the timeline up front or you'll lose them in week two.
 
-**Why with food.** In a study of 34 people, taking beta-alanine at the start of a meal improved soleus carnosine loading efficiency by 64%, versus 41% when it was taken between meals: the authors attribute it to meal-induced insulin release.<sup class="fn"><a href="#source-12">12</a></sup> Free efficiency for a habit change that costs nothing.
+**Why with food.** In a study of 34 people, taking beta-alanine at the start of a meal improved soleus carnosine loading efficiency by 64%, versus 41% when it was taken between meals: the authors attribute it to meal-induced insulin release.<sup class="fn"><a href="#source-17">17</a></sup> Free efficiency for a habit change that costs nothing.
 
 **Why split.** Which brings us to the tingle.
 
@@ -142,7 +152,7 @@ Most beta-alanine research was done on young men. That's not a small caveat: it'
 
 **Women.** A 2026 systematic review pooled 11 randomised trials and 312 women. Time to exhaustion favoured beta-alanine (**SMD 0.49**, 95% CI 0.20–0.79, across 8 studies and 187 women). But every other outcome, peak power, anaerobic performance, VO₂max, body fat percentage, came back imprecise, and the authors rated GRADE certainty **very low for all outcomes** after downgrading for risk of bias, imprecision and publication bias.<sup class="fn"><a href="#source-5">5</a></sup>
 
-Read that carefully, because it's a genuinely useful piece of coaching honesty: there's a signal for endurance-type capacity in women, and there is not yet enough good evidence to promise anything more specific. Say exactly that.
+Read that carefully, because it's a genuinely useful piece of coaching honesty: there's a signal for endurance-type capacity in women, and there is not yet enough good evidence to promise anything more specific. Say exactly that. One small reassurance: in a pooled analysis of carnosine loading, sex did not appear to influence how much carnosine rose.<sup class="fn"><a href="#source-13">13</a></sup>
 
 **Older adults.** A 2024 systematic review found only five studies and 163 participants (mean age 69). Its conclusion is neatly logical: exercise *capacity* may improve at 2.4–3.2 g/day, but muscle strength and functional performance don't, because those tasks aren't limited by acid build-up in the first place.<sup class="fn"><a href="#source-10">10</a></sup> If your goal with an older client is strength, chair-rise speed or balance, beta-alanine is not the lever.
 
@@ -152,13 +162,15 @@ Read that carefully, because it's a genuinely useful piece of coaching honesty: 
 
 Here's the part a static supplement encyclopedia can't tell you, and it's the most interesting thing about beta-alanine in 2026.
 
-The registry currently lists **nine interventional trials recruiting or about to start** across beta-alanine and carnosine.<sup class="fn"><a href="#source-11">11</a></sup> For comparison, creatine has more than sixty. And of those nine, exactly **one** is a sports-performance study: a Phase 3 trial at Poznań University of Physical Education testing **beta-alanine plus sodium bicarbonate in 100 trained female basketball players**, measuring physical capacity and blood biochemical markers.
+The registry currently lists **nine interventional trials recruiting or about to start** across beta-alanine and carnosine.<sup class="fn"><a href="#source-16">16</a></sup> For comparison, creatine has more than sixty. And of those nine, exactly **one** is a sports-performance study: a Phase 3 trial at Poznań University of Physical Education testing **beta-alanine plus sodium bicarbonate in 100 trained female basketball players**, measuring physical capacity and blood biochemical markers.
 
 That single trial sits precisely on the two open questions in this article, does the stack beat either supplement alone, and does any of it hold up in women, which makes it the one to watch.
 
 The stacking question already has a partial answer. A 2024 meta-analysis of 10 studies and 243 people found that beta-alanine plus sodium bicarbonate beat placebo (**SMD 0.32**, 95% CI 0.07–0.57), while in that particular dataset *neither supplement reached significance on its own*.<sup class="fn"><a href="#source-3">3</a></sup> Two buffering systems, one working in the muscle and one in the blood, appear to add up. But bicarbonate loading is a genuinely uncomfortable, GI-disruptive protocol: that's a sports-dietitian conversation with a competitive athlete, not something to improvise with a general client.
 
-The rest of the pipeline has left the gym floor entirely: beta-alanine as an adjunct in advanced liver cancer, carnosine in peripheral arterial disease, beta-alanine and histidine in chronic kidney disease.<sup class="fn"><a href="#source-11">11</a></sup> Researchers are studying those questions; none of it is coaching information, and none of it belongs in a conversation with a client. If you find yourself telling someone beta-alanine does anything for a medical condition, stop. That's a sentence for a doctor and a finished trial.
+The other popular stack, creatine plus beta-alanine, has a clearer answer. A 2026 network meta-analysis of 52 RCTs in athletes found creatine alone improved sprint, jump and repeated-sprint performance, beta-alanine alone produced non-significant or context-specific effects, and the combination showed no synergistic benefit.<sup class="fn"><a href="#source-15">15</a></sup> If a client is buying one supplement for general high-intensity training, creatine has the stronger case.
+
+The rest of the pipeline has left the gym floor entirely: beta-alanine as an adjunct in advanced liver cancer, carnosine in peripheral arterial disease, beta-alanine and histidine in chronic kidney disease.<sup class="fn"><a href="#source-16">16</a></sup> Researchers are studying those questions; none of it is coaching information, and none of it belongs in a conversation with a client. If you find yourself telling someone beta-alanine does anything for a medical condition, stop. That's a sentence for a doctor and a finished trial.
 
 What the thin pipeline really tells you is that the sports question is largely considered settled. That's not a reason to ignore beta-alanine: it's a reason to be precise about it.
 
@@ -171,6 +183,10 @@ For the client in the right window:
 For everyone else, and this is most people:
 
 *"Honestly? Not for what you're training for. It won't change your body composition and it won't add to your lifts: the studies are pretty clear on both. Save the money and put it into your protein intake."*
+
+For the team-sport athlete whose game is sprint, stop, sprint again:
+
+*"For short repeated sprints the studies show nothing. If you want one supplement for that, creatine has the better evidence."*
 
 That second script is the one that builds the trust. Any coach can recommend a supplement.
 
