@@ -174,12 +174,23 @@ export const guides: BestGuide[] = [
     roles: [
       { key: 'gun', label: { en: 'Best value massage gun', de: 'Beste günstige Massagepistole' }, kind: 'gun', maxPrice: 250,
         why: { en: 'Everyday percussion for less than the Theragun, and most people never miss the heat.', de: 'Alltags-Percussion für weniger als die Theragun, und die Wärme vermissen die wenigsten.' } },
+      { key: 'tested', label: { en: 'Best-tested massage gun', de: 'Am besten getestete Massagepistole' }, reviewSlug: 'blackroll-fascia-gun',
+        why: { en: 'Stiftung Warentest\'s 2024 winner. No gun in that test scored "good", so this is the least compromised pick, not a perfect one.', de: 'Testsieger der Stiftung Warentest 2024. Keine Pistole im Test bekam ein "gut", das ist also die Wahl mit den wenigsten Kompromissen, keine perfekte.' } },
+      { key: 'roller', label: { en: 'Best foam roller', de: 'Beste Faszienrolle' }, kind: 'roller',
+        why: { en: 'Rolling does most of what a gun does for a fraction of the price; the best rollers last for years.', de: 'Eine Rolle schafft fast alles, was eine Pistole kann, für einen Bruchteil des Preises; gute Rollen halten jahrelang.' } },
       { key: 'budget', label: { en: 'Best budget', de: 'Beste günstige Wahl' }, maxPrice: 50, noSub: true,
         why: { en: 'The highest score under €50. A roller does most of what a gun does, slower.', de: 'Der höchste Score unter 50 €. Eine Rolle schafft fast alles, was eine Pistole kann, nur langsamer.' } },
       { key: 'studio', label: { en: 'Best for a studio recovery corner', de: 'Beste für die Recovery-Ecke im Studio' }, reviewSlug: 'hyperice-normatec-3',
         why: { en: 'Compression boots are the recovery product members pay extra for; one pair serves a whole studio.', de: 'Kompressionsstiefel sind das Recovery-Produkt, für das Mitglieder extra zahlen; ein Paar reicht fürs ganze Studio.' } },
     ],
-    filters: { maxPrice: 100 },
+    filters: {
+      kinds: [
+        { key: 'gun', label: { en: 'Massage guns', de: 'Massagepistolen' } },
+        { key: 'roller', label: { en: 'Rollers & balls', de: 'Rollen & Bälle' } },
+        { key: 'compression', label: { en: 'Compression', de: 'Kompression' } },
+      ],
+      maxPrice: 100,
+    },
     pro: {
       en: 'For operators: recovery tools are the cheapest premium tier you can add. Percussion guns and foam rollers survive shared use; compression boots and cold units need a cleaning protocol and a booking slot. Price a recovery add-on against the hardware cost per session, not per unit. Brands: the category is crowded on features and thin on evidence; the ones with studies win the B2B deals.',
       de: 'Für Betreiber: Recovery-Tools sind die günstigste Premium-Stufe, die du anbieten kannst. Massagepistolen und Faszienrollen halten geteilte Nutzung aus; Kompressionsstiefel und Kälteanwendungen brauchen ein Reinigungsprotokoll und einen Buchungsslot. Kalkuliere ein Recovery-Add-on über die Hardwarekosten pro Einheit, nicht pro Gerät. Für Marken: Die Kategorie ist voll an Features und dünn an Evidenz; wer Studien hat, gewinnt die B2B-Deals.',
