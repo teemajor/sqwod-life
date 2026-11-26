@@ -15,7 +15,7 @@
   "preferredDate": "2026-11-27",
   "pillar": "gear",
   "lang": "en",
-  "status": "submitted",
+  "status": "screened",
   "paid": false,
   "submittedAt": "2026-11-25",
   "source": "email to pr@sqwod.life (entered by hand, 26 Nov 2026)",
@@ -25,5 +25,10 @@
       "by": "claude",
       "text": "Logo and images requested from sender. Company claims (1 min sun/day, 10+ yr lifespan, made in America) kept attributed to the company. Their ?promo=ARTICLE tracking link removed from body; link field is clean and renders nofollow. Ships US only: stated in dek so the DE version carries it."
     }
-  ]
+  ],
+  "recommendation": {
+    "decision": "approve",
+    "score": 82,
+    "reasons": "Clearly relevant to fitness/wellness as a health-tracking wearable with verifiable product specs, pricing, and availability details. Claims about solar charging, battery life, and sensor capabilities are specific and hedged appropriately, with no unsubstantiated medical claims."
+  }
 }
