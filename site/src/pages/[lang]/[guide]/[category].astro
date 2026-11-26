@@ -16,7 +16,7 @@ import CategoryIcon from '../../../components/CategoryIcon.astro';
 import ProductThumb from '../../../components/ProductThumb.astro';
 import { getCollection } from 'astro:content';
 import { languages, type Lang } from '../../../i18n/ui';
-import { categories, byCategory } from '../../../config/verified-categories';
+import { categories, byCategory, dealHref } from '../../../config/verified-categories';
 import { guides, GUIDE_PREFIX } from '../../../config/best';
 import ScorePill from '../../../components/ScorePill.astro';
 import { hasSubscription, formatPrice, type PriceValue } from '../../../lib/price';
@@ -301,7 +301,7 @@ const otherLine = (o: Row['others'][number]) =>
             </div>
           </div>
           <div class="tp-cta">
-            <a class="deal" href={`/go/${x.r.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={x.r.urlSlug} data-umami-event-placement={i === 0 ? 'guide-top' : 'guide-role'} data-umami-event-earns="yes">{tx.bestDeal} →</a>
+            <a class="deal" href={dealHref(x.r.urlSlug)} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={x.r.urlSlug} data-umami-event-placement={i === 0 ? 'guide-top' : 'guide-role'} data-umami-event-earns="yes">{tx.bestDeal} →</a>
             <a class="ghost" href={`/${lang}/verified/${x.r.urlSlug}/`}>{tx.readReview}</a>
           </div>
         </article>
@@ -367,7 +367,7 @@ const otherLine = (o: Row['others'][number]) =>
             </div>
             {others.map((o) => <a class="gen" href={`/${lang}/verified/${o.r.urlSlug}/`}>{otherLine(o)}</a>)}
           </div>
-          <a class="rc-deal" href={`/go/${r.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r.urlSlug} data-umami-event-placement="guide-card" data-umami-event-earns="yes" aria-label={`${tx.bestDeal}: ${r.productName}`}>→</a>
+          <a class="rc-deal" href={dealHref(r.urlSlug)} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r.urlSlug} data-umami-event-placement="guide-card" data-umami-event-earns="yes" aria-label={`${tx.bestDeal}: ${r.productName}`}>→</a>
         </li>
       ))}
     </ol>
@@ -424,7 +424,7 @@ const otherLine = (o: Row['others'][number]) =>
           ? <p class="who pro"><b>{de ? 'Für Kund:innen' : 'For clients'}</b> {r.proRead.clients} <b>{de ? 'Fürs Studio' : 'For the studio'}</b> {r.proRead.studio}</p>
           : <p class="who"><b>{tx.buyIf}</b> {r.whoFor.buy} <b>{tx.skipIf}</b> {r.whoFor.skip}</p>}
         <div class="tp-cta">
-          <a class="deal" href={`/go/${r.urlSlug}`} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r.urlSlug} data-umami-event-placement="guide-list" data-umami-event-earns="yes">{tx.bestDeal} →</a>
+          <a class="deal" href={dealHref(r.urlSlug)} rel="sponsored nofollow" data-umami-event="deal-click" data-umami-event-product={r.urlSlug} data-umami-event-placement="guide-list" data-umami-event-earns="yes">{tx.bestDeal} →</a>
           <a class="ghost" href={`/${lang}/verified/${r.urlSlug}/`}>{tx.readReview}</a>
         </div>
       </article>

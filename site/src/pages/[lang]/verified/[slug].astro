@@ -5,7 +5,7 @@ import ScoreBadge from '../../../components/ScoreBadge.astro';
 import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
-import { categories, reviewEarns } from '../../../config/verified-categories';
+import { categories, reviewEarns, dealHref, pickForReview } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
 import { priceOf, lowOf } from '../../../lib/price';
 
@@ -169,11 +169,12 @@ const faqLd = {
 
         <div class="vbuy">
           {priceText && <div><span class="dnum vbuy-p">{priceText}</span>{lowText && <p class="vbuy-n">{lowText}</p>}</div>}
-          <a class="vbuy-btn" href={`/go/${d.urlSlug}`} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'} data-umami-event="deal-click" data-umami-event-product={d.urlSlug} data-umami-event-placement="review" data-umami-event-earns={reviewEarns(d.urlSlug) ? 'yes' : 'no'}>{t(lang,'verified.bestDeal')} →</a>
+          <a class="vbuy-btn" href={dealHref(d.urlSlug)} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'} data-umami-event="deal-click" data-umami-event-product={d.urlSlug} data-umami-event-placement="review" data-umami-event-earns={reviewEarns(d.urlSlug) ? 'yes' : 'no'}>{t(lang,'verified.bestDeal')} →</a>
         </div>
         <p class="dealnote vbuy-note">{reviewEarns(d.urlSlug)
           ? <Fragment>Anzeige / Affiliate · {lang==='de'?'Live-Preis beim Händler':'live price shown at the retailer'}</Fragment>
           : <Fragment>{lang==='de'?'Kein Affiliate-Link · Live-Preis beim Händler':'Not an affiliate link · live price shown at the retailer'}</Fragment>}</p>
+        {pickForReview(d.urlSlug)?.code && <p class="dealnote vbuy-code">Code <b>{pickForReview(d.urlSlug)!.code!.code}</b>: {pickForReview(d.urlSlug)!.code!.note[lang]}</p>}
       </div>
     </div>
   </section>
@@ -227,7 +228,7 @@ const faqLd = {
   <div class="vstick" aria-hidden="true">
     <span class="dnum vstick-s">{d.sqwodScore}</span>
     <span class="vstick-t"><b>{d.productName}</b>{priceText && <span>{priceText}</span>}</span>
-    <a class="vstick-btn" href={`/go/${d.urlSlug}`} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'} tabindex="-1" data-umami-event="review-sticky-deal">{t(lang,'verified.bestDeal')} →</a>
+    <a class="vstick-btn" href={dealHref(d.urlSlug)} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'} tabindex="-1" data-umami-event="review-sticky-deal">{t(lang,'verified.bestDeal')} →</a>
   </div>
 
   <section class="block" style="border-bottom:none">

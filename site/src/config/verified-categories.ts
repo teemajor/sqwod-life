@@ -37,6 +37,10 @@ export interface Pick {
   url: string;                 // brand/product page (until /go offers exist)
   affiliate: boolean;
   reviewSlug?: string;         // if we have a full review (→ Sqwod Score)
+  /** link straight to the partner (no /go/ redirect). Required by BLACKROLL's affiliate rules (no redirects). */
+  direct?: boolean;
+  /** partner discount code shown next to the deal button */
+  code?: { code: string; note: Record<Lang, string> };
   bestFor: Record<Lang, string>;
   why: Record<Lang, string>;
 }
@@ -56,11 +60,13 @@ export interface Category {
 // Gymshark, Compex, Ten Thousand, Tonal, Hatch, Ritual, David, Maurten or NÜOBELL, and
 // TrainingPeaks, Runna and MyFitnessPal are software (no SaaS partnerships, Tee's rule
 // 2026-07-24). Those picks are `affiliate: false` until a DE programme exists.
-export const TRACKED_RX = /pxf\.io|sjv\.io|r7kg\.net|awin1\.com|[?&]tag=sqwod|prf\.hn|tradedoubler|partnerize|impact\.com|clk\./i;
+export const TRACKED_RX = /blackroll\.com\/[^?]*\?aff=1625|pxf\.io|sjv\.io|r7kg\.net|awin1\.com|[?&]tag=sqwod|prf\.hn|tradedoubler|partnerize|impact\.com|clk\./i;
 export const earns = (p?: Pick | null) => !!p && p.affiliate && TRACKED_RX.test(p.url);
 // The pick behind a review (its /go/ target), and whether that link earns.
 export const pickForReview = (slug: string) => { for (const c of categories) { const p = c.picks.find((x) => x.reviewSlug === slug); if (p) return p; } return null; };
 export const reviewEarns = (slug: string) => earns(pickForReview(slug));
+// Where a "Best deal" button points: the partner URL itself for direct picks, otherwise the /go/ redirect.
+export const dealHref = (slug: string) => { const p = pickForReview(slug); return p?.direct ? p.url : `/go/${slug}`; };
 
 const en = (s: string) => s; // readability helper
 
@@ -141,7 +147,7 @@ export const categories: Category[] = [
       // are no longer sold on hyperice.com/de-de (404), so those two stay on the Amazon listing sold by Hyperice.
       { product: 'Hyperice Hypervolt 3', brand: 'Hyperice', kind: 'gun', url: 'https://www.awin1.com/cread.php?awinmid=25773&awinaffid=245789&ued=https%3A%2F%2Fhyperice.com%2Fde-de%2Fproducts%2Fhypervolt-3', affiliate: true, reviewSlug: 'hyperice-hypervolt-3',
         bestFor: { en: 'Quiet, app-guided gun', de: 'Leise, app-geführte Pistole' }, why: { en: 'Five speeds, pressure sensor and a heated head; now €199.', de: 'Fünf Stufen, Drucksensor und Wärmeaufsatz; jetzt 199 €.' } },
-      { product: 'BLACKROLL Fascia Gun', brand: 'BLACKROLL', kind: 'gun', url: 'https://www.amazon.de/dp/B09HV3329D?tag=sqwod-21', affiliate: true, reviewSlug: 'blackroll-fascia-gun',
+      { product: 'BLACKROLL Fascia Gun', brand: 'BLACKROLL', kind: 'gun', url: 'https://blackroll.com/de/de/products/blackroll-fascia-gun?aff=1625', affiliate: true, direct: true, code: { code: 'SQWOD-10', note: { en: '10% off at BLACKROLL. Not valid on items already on sale.', de: '10 % Rabatt bei BLACKROLL. Nicht auf bereits reduzierte Artikel.' } }, reviewSlug: 'blackroll-fascia-gun',
         bestFor: { en: 'Best-tested in Germany', de: 'In Deutschland am besten getestet' }, why: { en: 'Stiftung Warentest 07/2024 winner of 11 guns: small, gentle, easy to hold.', de: 'Testsieger Stiftung Warentest 07/2024 von 11 Pistolen: klein, sanft, gut zu halten.' } },
       { product: 'Bob and Brad Q2 Pro', brand: 'Bob and Brad', kind: 'gun', url: 'https://www.amazon.de/dp/B0D16W8531?tag=sqwod-21', affiliate: true, reviewSlug: 'bob-and-brad-q2-pro',
         bestFor: { en: 'Travel gun with heat & cold', de: 'Reise-Pistole mit Wärme & Kälte' }, why: { en: 'Pocket-size, 4.7★ across 14,000+ Amazon.de ratings, about €80.', de: 'Taschenformat, 4,7★ bei über 14.000 Amazon.de-Bewertungen, rund 80 €.' } },
@@ -149,14 +155,16 @@ export const categories: Category[] = [
         bestFor: { en: 'Best value gun', de: 'Beste Preis-Leistung' }, why: { en: '35,000+ ratings, 0.68 kg, about €65. Not lab-tested.', de: 'Über 35.000 Bewertungen, 0,68 kg, rund 65 €. Nicht laborgeprüft.' } },
       { product: 'Hyperice Hypervolt Go 2', brand: 'Hyperice', kind: 'gun', url: 'https://www.amazon.de/dp/B0CDMX8QBZ?tag=sqwod-21', affiliate: true, reviewSlug: 'hyperice-hypervolt-go-2',
         bestFor: { en: 'Quiet mini gun', de: 'Leise Mini-Pistole' }, why: { en: 'Whisper-quiet and pocketable at €99 now the Go 3 is out.', de: 'Flüsterleise und taschentauglich für 99 €, seit die Go 3 da ist.' } },
-      { product: 'BLACKROLL Standard', brand: 'BLACKROLL', kind: 'roller', url: 'https://www.amazon.de/dp/B003BP5AGA?tag=sqwod-21', affiliate: true, reviewSlug: 'blackroll-standard',
+      // 2026-11-25: BLACKROLL affiliate (Affiliatly ID 1625, code SQWOD-10, 15% commission). Their rules forbid redirects,
+      // shortlinks and coupon/price-comparison use, so these picks link direct (no /go/) and show the code with the sale caveat.
+      { product: 'BLACKROLL Standard', brand: 'BLACKROLL', kind: 'roller', url: 'https://blackroll.com/de/de/products/blackroll-standard?aff=1625', affiliate: true, direct: true, code: { code: 'SQWOD-10', note: { en: '10% off at BLACKROLL. Not valid on items already on sale.', de: '10 % Rabatt bei BLACKROLL. Nicht auf bereits reduzierte Artikel.' } }, reviewSlug: 'blackroll-standard',
         bestFor: { en: 'Foam rolling', de: 'Faszienrolle' }, why: { en: 'The German original: durable, medium-firm, physio-trusted foam roller.', de: 'Das deutsche Original: langlebige, mittelfeste, physio-erprobte Faszienrolle.' } },
-      { product: 'BLACKROLL Blackbox Set', brand: 'BLACKROLL', kind: 'roller', url: 'https://www.amazon.de/dp/B016D5QDAQ?tag=sqwod-21', affiliate: true, reviewSlug: 'blackroll-blackbox-set',
+      { product: 'BLACKROLL Blackbox Set', brand: 'BLACKROLL', kind: 'roller', url: 'https://blackroll.com/de/de/products/blackroll-blackbox-set?aff=1625', affiliate: true, direct: true, code: { code: 'SQWOD-10', note: { en: '10% off at BLACKROLL. Not valid on items already on sale.', de: '10 % Rabatt bei BLACKROLL. Nicht auf bereits reduzierte Artikel.' } }, reviewSlug: 'blackroll-blackbox-set',
         bestFor: { en: 'Complete roller kit', de: 'Komplettes Rollen-Set' }, why: { en: 'Standard roller, mini roller, DUOBALL and ball for about €43.', de: 'Standardrolle, Mini-Rolle, DUOBALL und Ball für rund 43 €.' } },
       { product: 'Liebscher & Bracht Fascia Roller + Ball Set', brand: 'Liebscher & Bracht', kind: 'roller', url: 'https://www.amazon.de/dp/B01BVTWXFI?tag=sqwod-21', affiliate: true, reviewSlug: 'liebscher-bracht-fascia-set',
         bestFor: { en: 'Softer start', de: 'Sanfter Einstieg' }, why: { en: 'Soft surface over a firm core; 10,700+ ratings at 4.6★.', de: 'Weiche Oberfläche über festem Kern; über 10.700 Bewertungen mit 4,6★.' } },
-      { product: 'BLACKROLL DUOBALL', brand: 'BLACKROLL', kind: 'roller', url: 'https://www.amazon.de/dp/B08P1SCSJW?tag=sqwod-21', affiliate: true, reviewSlug: 'blackroll-duoball',
-        bestFor: { en: 'Upper back & spine', de: 'Oberer Rücken & Wirbelsäule' }, why: { en: 'Peanut shape works either side of the spine; pricey alone.', de: 'Erdnussform für beide Seiten der Wirbelsäule; einzeln teuer.' } },
+      { product: 'BLACKROLL DUOBALL', brand: 'BLACKROLL', kind: 'roller', url: 'https://blackroll.com/de/de/products/blackroll-duoball-12?aff=1625', affiliate: true, direct: true, code: { code: 'SQWOD-10', note: { en: '10% off at BLACKROLL. Not valid on items already on sale.', de: '10 % Rabatt bei BLACKROLL. Nicht auf bereits reduzierte Artikel.' } }, reviewSlug: 'blackroll-duoball',
+        bestFor: { en: 'Upper back & spine', de: 'Oberer Rücken & Wirbelsäule' }, why: { en: 'Peanut shape works either side of the spine; €24.90 at BLACKROLL.', de: 'Erdnussform für beide Seiten der Wirbelsäule; 24,90 € bei BLACKROLL.' } },
       { product: 'Hyperice Vyper 3', brand: 'Hyperice', kind: 'roller', url: 'https://www.awin1.com/cread.php?awinmid=25773&awinaffid=245789&ued=https%3A%2F%2Fhyperice.com%2Fde-de%2Fproducts%2Fvyper-3', affiliate: true, reviewSlug: 'hyperice-vyper-3',
         bestFor: { en: 'Vibrating roller', de: 'Vibrierende Rolle' }, why: { en: 'Makes firm rolling easier to tolerate; €159.', de: 'Macht festes Rollen erträglicher; 159 €.' } },
       { product: 'Hyperice Normatec 3', brand: 'Hyperice', kind: 'compression', url: 'https://www.awin1.com/cread.php?awinmid=25773&awinaffid=245789&ued=https%3A%2F%2Fhyperice.com%2Fde-de%2Fproducts%2Fnormatec-3-legs', affiliate: true, reviewSlug: 'hyperice-normatec-3',
@@ -326,7 +334,17 @@ export const categories: Category[] = [
         bestFor: { en: 'Indoor rowing', de: 'Indoor-Rudern' }, why: { en: 'The gold-standard erg: near-indestructible with accurate PM5 data.', de: 'Der Goldstandard unter den Ergos: nahezu unkaputtbar mit präzisen PM5-Daten.' } },
       { product: 'Speediance Gym Monster 2', brand: 'Speediance', kind: 'strength', url: 'https://eu.speediance.com/', affiliate: true, reviewSlug: 'speediance-gym-monster-2',
         bestFor: { en: 'All-in-one smart gym', de: 'All-in-one Smart-Gym' }, why: { en: 'A compact digital cable machine with a strong app: a whole gym in one footprint.', de: 'Kompakte digitale Kabelmaschine mit starker App: ein ganzes Gym auf einer Stellfläche.' } },
-      { product: 'NÜOBELL Adjustable Dumbbell', brand: 'NÜOBELL', kind: 'strength', url: 'https://eu.nuoathletics.com/', affiliate: false, reviewSlug: 'nuobell-adjustable-dumbbell',
+      { product: 'Bowflex SelectTech 52', brand: 'Bowflex', kind: 'dumbbell', url: 'https://www.amazon.de/dp/B0GK9NBDKX?tag=sqwod-21', affiliate: true, reviewSlug: 'bowflex-selecttech-52',
+        bestFor: { en: 'Dial dumbbell, 2-24 kg', de: 'Drehrad-Hantel, 2-24 kg' }, why: { en: 'The classic selector design; about €416 a pair.', de: 'Das klassische Selektor-Design; rund 416 € pro Paar.' } },
+      { product: 'DH FitLife Adjustable Dumbbell (18 kg)', brand: 'DH FitLife', kind: 'dumbbell', url: 'https://www.amazon.de/dp/B0CFH47ZJY?tag=sqwod-21', affiliate: true, reviewSlug: 'dh-fitlife-adjustable-dumbbell',
+        bestFor: { en: 'Budget adjustable', de: 'Günstig verstellbar' }, why: { en: '1.5 to 18 kg in 12 steps for about €100 each.', de: '1,5 bis 18 kg in 12 Stufen für rund 100 € pro Stück.' } },
+      { product: 'Amazon Basics Cast Iron Kettlebell', brand: 'Amazon Basics', kind: 'kettlebell', url: 'https://www.amazon.de/dp/B076QBT8L9?tag=sqwod-21', affiliate: true, reviewSlug: 'amazon-basics-kettlebell',
+        bestFor: { en: 'Best first purchase', de: 'Bester erster Kauf' }, why: { en: 'Plain cast iron, 13,000+ ratings, from about €24.', de: 'Schlichtes Gusseisen, über 13.000 Bewertungen, ab rund 24 €.' } },
+      { product: 'BLACKROLL Loop Band (set of 3)', brand: 'BLACKROLL', kind: 'bands', url: 'https://blackroll.com/de/de/products/blackroll-loop-band-set-3?aff=1625', affiliate: true, direct: true, code: { code: 'SQWOD-10', note: { en: '10% off at BLACKROLL. Not valid on items already on sale.', de: '10 % Rabatt bei BLACKROLL. Nicht auf bereits reduzierte Artikel.' } }, reviewSlug: 'blackroll-loop-band-set',
+        bestFor: { en: 'Warm-up & glute bands', de: 'Bänder für Aufwärmen & Gesäß' }, why: { en: 'Fabric loops that don\'t roll up; three resistances.', de: 'Stoffbänder, die nicht hochrollen; drei Widerstände.' } },
+      { product: 'PULLUP & DIP Door Frame Pull-Up Bar', brand: 'PULLUP & DIP', kind: 'pullup', url: 'https://www.amazon.de/dp/B07V3863WC?tag=sqwod-21', affiliate: true, reviewSlug: 'pullup-dip-door-bar',
+        bestFor: { en: 'No-drill pull-up bar', de: 'Klimmzugstange ohne Bohren' }, why: { en: 'Hooks over the door frame; solid enough for full bodyweight.', de: 'Wird in den Türrahmen gehängt; stabil genug fürs ganze Körpergewicht.' } },
+      { product: 'NÜOBELL Adjustable Dumbbell', brand: 'NÜOBELL', kind: 'dumbbell', url: 'https://eu.nuoathletics.com/', affiliate: false, reviewSlug: 'nuobell-adjustable-dumbbell',
         bestFor: { en: 'Adjustable dumbbells', de: 'Verstellbare Kurzhanteln' }, why: { en: 'Gym-grade 5–24 kg dial dumbbells that replace a whole rack in seconds.', de: 'Gym-taugliche 5–24-kg-Dreh-Kurzhanteln, die ein ganzes Rack in Sekunden ersetzen.' } },
     ],
   },

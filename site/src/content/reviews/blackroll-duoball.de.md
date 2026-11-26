@@ -16,10 +16,10 @@ author: "Sqwod Verified"
 affiliate: true
 testStatus: desk-researched
 draft: false
-# Amazon.de B08P1SCSJW EUR 35.90 sold by BLACKROLL, checked 2026-11-25. Peanut-shaped double ball, made in Germany. Price varies by size; eBay listings from EUR 18.99.
+# DUOBALL 12: EUR 24.90 at blackroll.com/de (checked 2026-11-25); Amazon.de B08P1SCSJW EUR 35.90 sold by BLACKROLL. Peanut-shaped double ball, made in Germany. Price varies by size; eBay listings from EUR 18.99.
 # Crowd method (batch 7): stars x20 (retail/brand-site -4), log-volume weighted, brand-level at half weight, shrunk toward 80 with a 50-review prior.
-verdict: "Das Tool für die Stelle, die eine Rolle verfehlt: ein erdnussförmiger Ball für beide Seiten der Wirbelsäule, zu einem stolzen Preis für einen Ball."
-sqwodScore: 77
+verdict: "Das Tool für die Stelle, die eine Rolle verfehlt: ein erdnussförmiger Ball für beide Seiten der Wirbelsäule, für rund 25 € bei BLACKROLL."
+sqwodScore: 81
 confidence: Low
 crowd:
   score: 84
@@ -28,23 +28,23 @@ crowd:
   sources:
     - { name: "Amazon.de", value: "4,5★ (135)", url: "https://www.amazon.de/dp/B08P1SCSJW" }
 assessment:
-  score: 78
+  score: 81
   criteria:
     - { name: "Wirksamkeit", score: 8 }
     - { name: "Haltbarkeit", score: 9 }
     - { name: "Verarbeitung", score: 8.8 }
-    - { name: "Preis-Leistung", score: 6 }
+    - { name: "Preis-Leistung", score: 7.5 }
     - { name: "Vielseitigkeit", score: 7 }
 value:
-  score: 55
-  bestPrice: 35.90
+  score: 70
+  bestPrice: 24.90
   currency: EUR
 pros:
   - "Die Lücke in der Mitte schont die Wirbelsäule und bearbeitet die Muskeln daneben"
   - "Made in Germany, langlebiges EPP"
   - "Gut für den oberen Rücken nach Schreibtischtagen"
 cons:
-  - "Rund 36 € bei Amazon.de: teuer für das, was es ist"
+  - "24,90 € bei BLACKROLL, aber 35,90 € bei Amazon.de: Achte darauf, wo du kaufst"
   - "Nur 135 Amazon.de-Bewertungen"
   - "Das Blackbox-Set enthält einen DUOBALL für ein paar Euro mehr"
 whoFor:
@@ -60,4 +60,4 @@ tags: ["recovery", "foam-roller", "fascia"]
 
 Eine normale Rolle erreicht die Muskeln direkt neben der Wirbelsäule nicht, ohne auf sie zu drücken. Die Erdnussform des DUOBALL löst das: Die Wirbelsäule liegt in der Lücke, die beiden Kugeln arbeiten links und rechts.
 
-Das macht er gut. Das Problem ist der Preis: rund 36 € bei Amazon.de für einen Ball, während das Blackbox-Set einen kleineren DUOBALL plus eine ganze Rolle für ein paar Euro mehr enthält.
+Das macht er gut. Achte auf den Preis: Der DUOBALL 12 kostet im BLACKROLL-Shop 24,90 €, bei Amazon.de rund 36 €, und das Blackbox-Set enthält einen kleineren DUOBALL plus eine ganze Rolle.

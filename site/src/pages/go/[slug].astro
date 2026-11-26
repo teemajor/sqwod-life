@@ -13,7 +13,7 @@ export async function getStaticPaths() {
   const target = (slug: string) => {
     for (const cat of categories) {
       const p = cat.picks.find((p) => p.reviewSlug === slug);
-      if (p) return p.url;
+      if (p) return p.direct ? null : p.url; // direct picks (e.g. BLACKROLL) must not be redirected
     }
     return null;
   };

@@ -1,0 +1,29 @@
+{
+  "id": "2026-11-25-chargerless-ray",
+  "company": "Chargerless",
+  "contactName": "Laurenz Bauer",
+  "contactEmail": "laurenz@getchargerless.com",
+  "companyUrl": "https://getchargerless.com",
+  "headline": "Chargerless to ship Ray, a solar-powered health band with no charging port and no subscription",
+  "dek": "The 7-gram wristband runs on outdoor sunlight and tracks sleep, HRV and light exposure; preorders ship Dec 2026 to Jan 2027, US only for now (international planned for 2027).",
+  "body": "Chargerless Inc. is preparing to ship Batch 3 of Ray, a 7-gram solar-powered health band that has no charging port and requires no subscription. Preorders are open now, with deliveries expected in December 2026 and January 2027.\n\nRay is designed for people who want daily health data without a charging routine or a membership fee. A solar cell under the glass harvests energy from outdoor sunlight only. According to the company, about one minute of direct outdoor sunlight per day can sustain operation, and a full charge can power the band for about 60 days in total darkness, depending on settings and use. Ordinary indoor lighting does little to charge the device, though Ray can gather energy outdoors in shade or cloud cover, and through a car window.\n\nThe band records sleep stages, heart rate, heart rate variability (HRV), body temperature, steps, activity, and light exposure. It also presents a readiness score drawn from sleep, HRV, and temperature. A companion app for iPhone and Android displays the data. Light and sun exposure is treated as a core metric, alongside sleep and heart measures.\n\nThe hardware is a mirror-polished, machined steel case measuring 33 mm by 11 mm by 6 mm and weighing 7 grams. It is water and dust resistant to IP68, and it has no charging port. Ray is offered in two finishes, Moonlit Silver and Sunlit Gold, with a choice of Cognac Leather, Onyx Leather, or Carbon Silicone band. Chargerless says Ray is made in America and designed for a lifespan of more than 10 years. A one-year limited hardware warranty is included.\n\n\"A few years ago I overheard someone on the train say they skipped their morning run because their Apple Watch was dead. That's when it clicked: these devices have gone too far. Ray is what a tracker should be: small, beautiful, self-powering, and yours forever,\" said Andy Kong, founder of Chargerless, who previously worked at Google. Kong started the company in 2025 after growing frustrated that existing trackers were often uncharged, bulky on the wrist, and inconvenient to wear all day.\n\n**Availability and pricing**\n\nRay Batch 3 preorders are available at getchargerless.com. Moonlit Silver is priced at $219 and Sunlit Gold at $249. Both are one-time purchases. There is no subscription. The price includes a choice of band and lifetime app updates. Chargerless currently ships within the United States only, with free U.S. shipping on orders that include a Ray. International shipping is planned for 2027. Orders can be canceled for a full refund at any time before shipment. After delivery, the company offers a 60-day return window for a refund of the product price.\n\n**Media contact:** Laurenz Bauer, laurenz@getchargerless.com",
+  "boilerplate": "Chargerless Inc. is a San Francisco company that builds self-powered health hardware. Its first product, Ray, is a solar-powered health band with no charging port and no subscription.",
+  "logo": "",
+  "link": "https://getchargerless.com",
+  "tier": "standard",
+  "publishLang": "both",
+  "preferredDate": "2026-11-27",
+  "pillar": "gear",
+  "lang": "en",
+  "status": "submitted",
+  "paid": false,
+  "submittedAt": "2026-11-25",
+  "source": "email to pr@sqwod.life (entered by hand, 26 Nov 2026)",
+  "notes": [
+    {
+      "at": "2026-11-26",
+      "by": "claude",
+      "text": "Logo and images requested from sender. Company claims (1 min sun/day, 10+ yr lifespan, made in America) kept attributed to the company. Their ?promo=ARTICLE tracking link removed from body; link field is clean and renders nofollow. Ships US only: stated in dek so the DE version carries it."
+    }
+  ]
+}
