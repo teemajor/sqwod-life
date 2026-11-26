@@ -5,7 +5,7 @@ import ScoreBadge from '../../../components/ScoreBadge.astro';
 import ScoreBreakdown from '../../../components/ScoreBreakdown.astro';
 import InlineSignup from '../../../components/InlineSignup.astro';
 import { getCollection } from 'astro:content';
-import { categories, reviewEarns, dealHref, pickForReview } from '../../../config/verified-categories';
+import { categories, reviewEarns, dealHref, pickForReview, activeSale, saleEnds } from '../../../config/verified-categories';
 import { t, type Lang } from '../../../i18n/ui';
 import { priceOf, lowOf } from '../../../lib/price';
 
@@ -167,6 +167,7 @@ const faqLd = {
           </div>
         </div>
 
+        {activeSale(d.urlSlug) && <p class="dealnote vbuy-sale" data-sale-ends={saleEnds(activeSale(d.urlSlug)!.until)}>{activeSale(d.urlSlug)!.text[lang]}</p>}
         <div class="vbuy">
           {priceText && <div><span class="dnum vbuy-p">{priceText}</span>{lowText && <p class="vbuy-n">{lowText}</p>}</div>}
           <a class="vbuy-btn" href={dealHref(d.urlSlug)} rel={reviewEarns(d.urlSlug) ? 'sponsored nofollow' : 'nofollow'} data-umami-event="deal-click" data-umami-event-product={d.urlSlug} data-umami-event-placement="review" data-umami-event-earns={reviewEarns(d.urlSlug) ? 'yes' : 'no'}>{t(lang,'verified.bestDeal')} →</a>
@@ -270,6 +271,7 @@ const faqLd = {
   .vbuy-btn{margin-left:auto;display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:14px;background:var(--chalk);color:var(--ink);font-weight:700;font-size:15px;text-decoration:none;transition:background .15s,color .15s}
   .vbuy-btn:hover{background:var(--accent);color:var(--accent-ink)}
   .vbuy-note{text-align:right}
+  .vbuy-sale{margin:0 0 10px;padding:8px 12px;border-radius:8px;border:1px solid currentColor;font-weight:600;color:var(--accent, inherit)}
   /* the read */
   .vread{padding:44px 0 8px}
   .vread-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:16px}
@@ -363,6 +365,8 @@ const faqLd = {
 </style>
 
 <script is:inline>
+  // time-limited sale line: drop it once its end has passed, even if no rebuild ran
+  document.querySelectorAll('[data-sale-ends]').forEach((el) => { if (Date.now() > +el.dataset.saleEnds) el.remove(); });
   // sticky deal bar: show once the hero's buy row has scrolled off, hide again near the page end
   (function () {
     var bar = document.querySelector('.vstick'), buy = document.querySelector('.vbuy'), end = document.querySelector('footer.site');
