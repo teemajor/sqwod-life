@@ -1,0 +1,6 @@
+---
+// English address of the Berlin fitness map. German lives at /de/fitness-karte/.
+import FitnessMapPage from '../../components/FitnessMapPage.astro';
+export function getStaticPaths() { return [{ params: { lang: 'en' } }]; }
+---
+<FitnessMapPage lang="en" />
