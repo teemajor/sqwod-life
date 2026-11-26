@@ -41,6 +41,8 @@ export interface Pick {
   direct?: boolean;
   /** partner discount code shown next to the deal button */
   code?: { code: string; note: Record<Lang, string> };
+  /** time-limited sale line shown above the deal button. Hidden after `until` (YYYY-MM-DD, Berlin) at build time and in the browser. Never touches the score. */
+  sale?: { until: string; text: Record<Lang, string> };
   bestFor: Record<Lang, string>;
   why: Record<Lang, string>;
 }
@@ -64,6 +66,9 @@ export const TRACKED_RX = /blackroll\.com\/[^?]*\?aff=1625|pxf\.io|sjv\.io|r7kg\
 export const earns = (p?: Pick | null) => !!p && p.affiliate && TRACKED_RX.test(p.url);
 // The pick behind a review (its /go/ target), and whether that link earns.
 export const pickForReview = (slug: string) => { for (const c of categories) { const p = c.picks.find((x) => x.reviewSlug === slug); if (p) return p; } return null; };
+// A sale line is live through the end of its `until` day, Berlin time.
+export const saleEnds = (until: string) => new Date(`${until}T23:59:59+01:00`).getTime();
+export const activeSale = (slug: string) => { const s = pickForReview(slug)?.sale; return s && Date.now() <= saleEnds(s.until) ? s : null; };
 export const reviewEarns = (slug: string) => earns(pickForReview(slug));
 // Where a "Best deal" button points: the partner URL itself for direct picks, otherwise the /go/ redirect.
 export const dealHref = (slug: string) => { const p = pickForReview(slug); return p?.direct ? p.url : `/go/${slug}`; };
@@ -82,7 +87,7 @@ export const categories: Category[] = [
     picks: [
       { product: 'Oura Ring Gen3', brand: 'Oura', kind: 'ring', family: 'oura-ring', url: 'https://ouraring.com/', affiliate: true, reviewSlug: 'oura-ring-gen3',
         bestFor: { en: 'Sleep & recovery', de: 'Schlaf & Erholung' }, why: { en: 'The most wearable recovery tracker: sleep and readiness without a screen on your wrist.', de: 'Der alltagstauglichste Recovery-Tracker: Schlaf und Readiness ohne Display am Handgelenk.' } },
-      { product: 'Whoop 4.0', brand: 'Whoop', kind: 'band', family: 'whoop', url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-4',
+      { product: 'Whoop 4.0', brand: 'Whoop', kind: 'band', family: 'whoop', url: 'https://whoop.sjv.io/c/2210087/1665627/19328?adnetwork=Affiliates&u=https%3A%2F%2Fwww.whoop.com%2Fde%2Fde%2Fmembership%2F&subId1=sqwodlife_whoop4', affiliate: true, reviewSlug: 'whoop-4',
         bestFor: { en: 'Strain & performance', de: 'Belastung & Leistung' }, why: { en: 'The coach\'s strain-and-recovery band: screenless, built to program by readiness.', de: 'Das Belastungs- und Recovery-Band für Coaches, ohne Display, fürs Programmieren nach Readiness.' } },
       // NOTE (2026-07-23): Series 9 is discontinued — its only amazon.de buy-box was a REFURBISHED unit from a 3rd-party
       // reseller (CarbonPhone / Amazon Renewed), which violates our "link the brand, not a reseller / new only" rule.
@@ -102,7 +107,8 @@ export const categories: Category[] = [
         bestFor: { en: 'Previous Series, often discounted', de: 'Vorgänger, oft reduziert' }, why: { en: '24h battery, hypertension alerts, 5G. Series 12 is now out; we have not scored it yet.', de: '24 h Akku, Bluthochdruck-Hinweise, 5G. Die Series 12 ist inzwischen da; sie ist noch nicht bewertet.' } },
       { product: 'Apple Watch Series 12', brand: 'Apple', kind: 'watch', family: 'apple-watch', current: true, url: 'https://www.apple.com/de/watch/', affiliate: true, reviewSlug: 'apple-watch-12',
         bestFor: { en: 'Latest Apple Watch we scored', de: 'Neueste von uns bewertete Apple Watch' }, why: { en: 'Current Series: heart rate every five seconds, daily Readiness and near-chest-strap accuracy.', de: 'Die aktuelle Series: Puls alle fünf Sekunden, täglicher Readiness-Wert und fast Brustgurt-Genauigkeit.' } },
-      { product: 'WHOOP 5.0', brand: 'Whoop', kind: 'band', family: 'whoop', current: true, url: 'https://www.whoop.com/', affiliate: true, reviewSlug: 'whoop-5',
+      { product: 'WHOOP 5.0', brand: 'Whoop', kind: 'band', family: 'whoop', current: true, url: 'https://whoop.sjv.io/c/2210087/1665627/19328?adnetwork=Affiliates&u=https%3A%2F%2Fwww.whoop.com%2Fde%2Fde%2Fmembership%2F&subId1=sqwodlife_whoop5', affiliate: true, reviewSlug: 'whoop-5',
+        sale: { until: '2026-12-01', text: { en: 'Black Friday: WHOOP Peak €219/yr (was €264), WHOOP Life €329/yr (was €399). 12-month membership, device included. Until 1 Dec.', de: 'Black Friday: WHOOP Peak 219 €/Jahr (statt 264 €), WHOOP Life 329 €/Jahr (statt 399 €). 12 Monate Mitgliedschaft, Gerät inklusive. Bis 01.12.' } },
         bestFor: { en: 'Current-gen strain band', de: 'Strain-Band, aktuelle Gen' }, why: { en: '14-day battery, ECG + BP on the MG tier: the current screenless recovery band.', de: '14 Tage Akku, EKG + Blutdruck (MG-Tier): das aktuelle Recovery-Band ohne Display.' } },
       { product: 'Ultrahuman Ring AIR', brand: 'Ultrahuman', kind: 'ring', current: true, url: 'https://ultrahumanhealthcare.pxf.io/c/2210087/3981492/38784', affiliate: true, reviewSlug: 'ultrahuman-ring-air',
         bestFor: { en: 'Subscription-free ring', de: 'Abofreier Ring' }, why: { en: 'Oura-class recovery accuracy with no subscription, plus an optional metabolic angle.', de: 'Recovery-Genauigkeit auf Oura-Niveau ohne Abo, plus optionaler Stoffwechsel-Fokus.' } },
