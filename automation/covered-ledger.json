@@ -1,79 +1,5 @@
 [
   {
-    "date": "2026-11-04",
-    "key": "dssvnews digitale ausgabe 062026 online",
-    "tokens": [
-      "dssv",
-      "news",
-      "digitale",
-      "ausgabe",
-      "2026",
-      "online"
-    ],
-    "entities": [
-      "DSSV"
-    ]
-  },
-  {
-    "date": "2026-11-04",
-    "key": "top nyc studios join arcana a new premium fitness membership",
-    "tokens": [
-      "studios",
-      "join",
-      "arcana",
-      "premium",
-      "membership"
-    ]
-  },
-  {
-    "date": "2026-11-04",
-    "key": "lifefit group bernimmt my sportlady in mnchen",
-    "tokens": [
-      "lifefit",
-      "group",
-      "ubernimmt",
-      "sportlady",
-      "munchen"
-    ]
-  },
-  {
-    "date": "2026-11-04",
-    "key": "target becomes bfy brand platform",
-    "tokens": [
-      "target",
-      "becomes",
-      "brand",
-      "platform"
-    ]
-  },
-  {
-    "date": "2026-11-04",
-    "key": "kimberlyclark completes us487b kenvue acquisition in wellnes",
-    "tokens": [
-      "kimberly",
-      "clark",
-      "completes",
-      "kenvue",
-      "acquisition",
-      "push"
-    ],
-    "deal": "$48.7b"
-  },
-  {
-    "date": "2026-11-04",
-    "key": "the health club at st clement brings medicine fitness and we",
-    "tokens": [
-      "health",
-      "club",
-      "clement",
-      "brings",
-      "medicine",
-      "together",
-      "london",
-      "thames"
-    ]
-  },
-  {
     "date": "2026-11-05",
     "key": "athx games unveils usa vs europe competition",
     "tokens": [
@@ -1518,6 +1444,88 @@
       "places",
       "taking",
       "shape"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "key": "sona raises 1m to advance ai in its vagus nerve stimulation ",
+    "tokens": [
+      "sona",
+      "raises",
+      "advance",
+      "vagus",
+      "nerve",
+      "stimulation",
+      "wearable"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "key": "hyrox expands uk gym presence with nuffield deal",
+    "tokens": [
+      "hyrox",
+      "expands",
+      "presence",
+      "nuffield",
+      "deal"
+    ],
+    "entities": [
+      "Hyrox"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "key": "milon velocity based training  wenn training nicht mehr gesc",
+    "tokens": [
+      "milon",
+      "velocity",
+      "based",
+      "training",
+      "wenn",
+      "nicht",
+      "mehr",
+      "geschatzt",
+      "sondern",
+      "gemessen",
+      "wird"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "key": "dssv schliet sich der kampagne an",
+    "tokens": [
+      "dssv",
+      "schliesst",
+      "sich",
+      "kampagne"
+    ],
+    "entities": [
+      "DSSV"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "key": "shohei ohtani signs landmark deal",
+    "tokens": [
+      "shohei",
+      "ohtani",
+      "signs",
+      "landmark",
+      "deal"
+    ]
+  },
+  {
+    "date": "2026-11-26",
+    "key": "lifefit group acquires womensonly munich club my sportlady",
+    "tokens": [
+      "lifefit",
+      "group",
+      "acquires",
+      "women",
+      "only",
+      "munich",
+      "club",
+      "sportlady"
     ]
   }
 ]
