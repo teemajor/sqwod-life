@@ -2,7 +2,8 @@
 urlSlug: your-clients-don-t-need-more-reps-they-need-a-reason-to-show-0707
 lang: "de"
 counterpart: your-clients-don-t-need-more-reps-they-need-a-reason-to-show-0707
-title: "Your Clients Don't Need More Reps. They Need a Reason to Show Up."
+title: "90 bis 119 Minuten pro Woche: Die Krafttrainings-Dosis für ein längeres Leben"
+seoTitle: "Krafttraining für ein langes Leben: 90 bis 119 Minuten"
 topic: offer-programming
 newsTake: true
 description: "New research gives coaches a precise, sellable case for strength training as both a longevity tool and a mental health intervention: here's how to use it."

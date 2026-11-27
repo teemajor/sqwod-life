@@ -2,7 +2,8 @@
 urlSlug: your-clients-sit-all-day-here-s-the-one-move-that-fixes-it-0724
 lang: "de"
 counterpart: your-clients-sit-all-day-here-s-the-one-move-that-fixes-it-0724
-title: "Dein Rücken streikt? Die Fitness-Branche hat endlich verstanden warum"
+title: "Dan Go sagt, eine Übung hat seinen unteren Rücken gerettet: Baue sie in jede Einheit für Bürokunden ein"
+seoTitle: "Unterer Rücken bei Bürojobs: Eine Übung für jede Einheit"
 topic: offer-programming
 newsTake: true
 description: "Warum immer mehr Gyms auf Bewegung als Therapie setzen – und welche eine Übung dein Leben verändern kann."

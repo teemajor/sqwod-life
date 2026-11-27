@@ -2,7 +2,8 @@
 urlSlug: the-90-minute-fix-your-clients-are-ignoring-and-it-s-costing-0703
 lang: "en"
 counterpart: the-90-minute-fix-your-clients-are-ignoring-and-it-s-costing-0703
-title: "The 90-Minute Fix Your Clients Are Ignoring (And It's Costing Them)"
+title: "Exercise Makes GLP-1 Results Last: What a New Multinational Study Means for Your Clients"
+seoTitle: "Exercise Makes GLP-1 Results Last: What Coaches Should Know"
 topic: offer-programming
 newsTake: true
 description: "Three new findings reveal why movement volume, mental health, and medication all point to the same prescription, and what coaches should do about it right now."

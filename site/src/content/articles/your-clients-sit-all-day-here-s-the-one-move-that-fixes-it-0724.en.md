@@ -2,7 +2,8 @@
 urlSlug: your-clients-sit-all-day-here-s-the-one-move-that-fixes-it-0724
 lang: "en"
 counterpart: your-clients-sit-all-day-here-s-the-one-move-that-fixes-it-0724
-title: "Your clients sit all day. Here's the one move that fixes it."
+title: "Dan Go Says One Move Saved His Lower Back: Build It Into Every Session for Desk Workers"
+seoTitle: "Desk Workers' Lower Back: One Move for Every Session"
 topic: offer-programming
 newsTake: true
 description: "The fitness industry is finally catching up to what desk workers actually need: here's how to build it into every session."
