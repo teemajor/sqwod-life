@@ -2,7 +2,7 @@
 urlSlug: studio-retention-math
 lang: de
 counterpart: studio-retention-math
-title: "Die Retention-Rechnung, die über dein Studio entscheidet"
+title: "Studios halten zwei von drei Mitgliedern. Der Großteil geht in den ersten 90 Tagen."
 seoTitle: "Mitgliederbindung: Die ersten 90 Tage entscheiden"
 topic: retention
 description: "Die Branche hält etwa zwei von drei Mitgliedern pro Jahr, und der größte Verlust passiert in den ersten drei Monaten. Die Lösung ist nicht mehr Werbung. Es ist Onboarding."

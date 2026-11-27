@@ -2,7 +2,7 @@
 urlSlug: studio-retention-math
 lang: en
 counterpart: studio-retention-math
-title: "The retention math that decides if your studio survives"
+title: "Gyms Keep Two in Three Members. Most of the Loss Happens in the First 90 Days."
 seoTitle: "Gym Member Retention: Why the First 90 Days Decide Churn"
 topic: retention
 description: "The industry keeps about two in three members a year, and most of the loss happens in the first three months. The fix isn't more ads. It's onboarding."
