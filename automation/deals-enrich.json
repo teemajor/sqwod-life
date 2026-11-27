@@ -468,5 +468,52 @@
     "primarySource": true,
     "confidence": "high",
     "checkedAt": "2026-11-20"
+  },
+  "muto-raise-2026-11": {
+    "id": "muto-raise-2026-11",
+    "company": "MUTO Longevity",
+    "dealCountry": "United Kingdom",
+    "category": "Nutrition & supplements",
+    "relevant": true,
+    "oneLineEn": "MUTO Longevity received angel investment from footballer Ben Davies and media executive Shaun Gregory.",
+    "oneLineDe": "MUTO Longevity erhielt Angel-Investment von Fußballer Ben Davies und Medienmanager Shaun Gregory.",
+    "amount": "",
+    "amountIs": "undisclosed",
+    "investors": [
+      "Ben Davies",
+      "Shaun Gregory"
+    ],
+    "leadInvestors": [],
+    "acquirer": "",
+    "announcedOn": "2026-11-26",
+    "dealStatus": "done",
+    "url": "https://www.cityam.com/tottenham-star-acquires-stake-in-british-midlife-supplements-brand-muto/",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-27"
+  },
+  "carry-raise-2026-11": {
+    "id": "carry-raise-2026-11",
+    "company": "The Carry",
+    "dealCountry": "United States",
+    "category": "Apparel & footwear",
+    "relevant": true,
+    "oneLineEn": "The Carry secured strategic investment from Deep Blue Ventures to scale its women's weighted vest.",
+    "oneLineDe": "The Carry erhielt strategisches Investment von Deep Blue Ventures zur Skalierung seiner Gewichtsweste für Frauen.",
+    "amount": "",
+    "amountIs": "undisclosed",
+    "investors": [
+      "Deep Blue Ventures"
+    ],
+    "leadInvestors": [
+      "Deep Blue Ventures"
+    ],
+    "acquirer": "",
+    "announcedOn": "2026-11-24",
+    "dealStatus": "done",
+    "url": "https://www.einpresswire.com/article/958551251/deep-blue-sports-entertainment-invests-in-the-carry-the-weighted-vest-brand-built-for-women",
+    "primarySource": true,
+    "confidence": "high",
+    "checkedAt": "2026-11-27"
   }
 }
