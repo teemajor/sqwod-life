@@ -2,7 +2,8 @@
 urlSlug: your-clients-are-moving-more-and-feeling-less-here-s-why-0710
 lang: "de"
 counterpart: your-clients-are-moving-more-and-feeling-less-here-s-why-0710
-title: "Dein Studio wächst – aber hast du den richtigen Hebel?"
+title: "Dein Kunde misst alles und spürt nichts: Die Lücke zwischen Daten und Bedeutung"
+seoTitle: "Kunden messen alles, spüren nichts: Die Bedeutungslücke"
 topic: offer-programming
 newsTake: true
 description: "Warum Bewegung als Therapie, Tracker-Daten und globale Studioexpansion zusammen das Playbook für moderne Coaches neu schreiben."

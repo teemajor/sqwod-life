@@ -2,7 +2,8 @@
 urlSlug: your-clients-are-paying-for-movement-are-you-selling-it-righ-0714
 lang: "de"
 counterpart: your-clients-are-paying-for-movement-are-you-selling-it-righ-0714
-title: "Warum Bewegung gerade mehr wert ist als Gold"
+title: "Vaura Pilates eröffnet Studio Nummer zehn in Jakarta: Die Großen verkaufen wiederholbare Bewegung, keine Workouts"
+seoTitle: "Vaura Pilates in Jakarta: Bewegung als Produkt, kein Workout"
 topic: pricing-revenue
 newsTake: true
 description: "Wie smarte Coaches den globalen Pilates- und Yoga-Boom nutzen, um mit Bewegungsanalyse echten Mehrwert zu verkaufen."

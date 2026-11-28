@@ -157,6 +157,21 @@
           "lastChecked": "2026-09-28"
         }
       ]
+    },
+    "france-digital-fitness-paradox": {
+      "_note": "Deloitte / EuropeActive European Health & Fitness Market Report: published once a year (spring). Only the member-count comparison is tracked; the 2026 edition reports 75.5M European members and EUR 39.1bn revenue for 2025, so a proposal should move this figure to the newest edition's France and Germany counts.",
+      "figures": [
+        {
+          "index": 4,
+          "label": "Gym members, France vs Germany",
+          "value": "4.7M vs 10.3M",
+          "sourceLabel": "Deloitte · EuropeActive",
+          "sourceUrl": "https://www.europeactive.eu/",
+          "cadenceDays": 365,
+          "lastChecked": null,
+          "period": null
+        }
+      ]
     }
   }
 }

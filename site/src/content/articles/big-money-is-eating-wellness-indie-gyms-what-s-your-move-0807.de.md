@@ -2,7 +2,8 @@
 urlSlug: big-money-is-eating-wellness-indie-gyms-what-s-your-move-0807
 lang: "de"
 counterpart: big-money-is-eating-wellness-indie-gyms-what-s-your-move-0807
-title: "Wer das Produkt nicht besitzt, verliert den Kunden"
+title: "Anytime Fitness bündelt Apple Fitness+ in Großbritannien: Eigenes Ökosystem bauen oder einem beitreten"
+seoTitle: "Anytime Fitness und Apple Fitness+: Bauen oder beitreten"
 topic: market-moves
 newsTake: true
 description: "Warum Fitness-Operatoren jetzt entscheiden müssen, ob sie Plattform oder Zulieferer sein wollen – und was das konkret bedeutet."

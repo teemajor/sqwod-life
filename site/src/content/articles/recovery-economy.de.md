@@ -2,7 +2,8 @@
 urlSlug: recovery-economy
 lang: de
 counterpart: recovery-economy
-title: "Recovery frisst das Supplement-Regal"
+title: "Die Recovery-Ökonomie 2026: Wohin das Wellness-Geld fließt"
+seoTitle: "Recovery-Markt 2026: Größe, Ausgaben und Trends"
 topic: market-moves
 newsTake: true
 description: "Wellness ist die einzige Kategorie, für die Konsument:innen 2026 MEHR ausgeben wollen, und Recovery ist ihre breiteste Tür."

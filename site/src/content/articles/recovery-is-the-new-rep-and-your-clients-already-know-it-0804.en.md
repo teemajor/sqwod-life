@@ -2,7 +2,8 @@
 urlSlug: recovery-is-the-new-rep-and-your-clients-already-know-it-0804
 lang: "en"
 counterpart: recovery-is-the-new-rep-and-your-clients-already-know-it-0804
-title: "Recovery Is the New Rep, And Your Clients Already Know It"
+title: "Spotify Puts an AI Coach in Your Ear: Everyone Is Selling What Happens Between Sessions"
+seoTitle: "Spotify AI Running Coach: Recovery Is the Product Now"
 topic: offer-programming
 newsTake: true
 description: "From Spotify's AI running coach to Pharrell's skincare line, recovery is eating the fitness industry: here's how coaches can lead the shift before clients leave to find it elsewhere."

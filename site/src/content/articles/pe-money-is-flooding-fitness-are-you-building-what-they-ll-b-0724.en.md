@@ -2,7 +2,8 @@
 urlSlug: pe-money-is-flooding-fitness-are-you-building-what-they-ll-b-0724
 lang: "en"
 counterpart: pe-money-is-flooding-fitness-are-you-building-what-they-ll-b-0724
-title: "PE money is flooding fitness: are you building what they'll buy?"
+title: "A Planet Fitness Operator Is Worth $170M: What PE Buyers Look For in a Gym"
+seoTitle: "Planet Fitness Operator Valued at $170M: What PE Buys"
 topic: market-moves
 newsTake: true
 description: "Three signals from this week show exactly what private equity, community programs, and European market data have in common, and what smart operators should do about it."

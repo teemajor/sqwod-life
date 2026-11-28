@@ -2,7 +2,8 @@
 urlSlug: your-clients-are-paying-for-movement-are-you-selling-it-righ-0714
 lang: "en"
 counterpart: your-clients-are-paying-for-movement-are-you-selling-it-righ-0714
-title: "Your Clients Are Paying for Movement. Are You Selling It Right?"
+title: "Vaura Pilates Opens Studio Ten in Jakarta: The Big Players Sell Repeatable Movement, Not Workouts"
+seoTitle: "Vaura Pilates in Jakarta: Sell Movement, Not Workouts"
 topic: pricing-revenue
 newsTake: true
 description: "From studio expansions to assessment revenue, here's what the fitness industry's biggest moves tell coaches about where the money is going, and how to get ahead of it."

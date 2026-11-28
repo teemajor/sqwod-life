@@ -2,7 +2,8 @@
 urlSlug: your-gym-is-full-but-members-are-leaving-here-s-the-fix-0707
 lang: "de"
 counterpart: your-gym-is-full-but-members-are-leaving-here-s-the-fix-0707
-title: "Dein Studio hat zu viele Hanteln und zu wenig Erlebnis"
+title: "Ein Cold Plunge bindet Mitglieder: Warum Regeneration in einem reifen Markt Akquise schlägt"
+seoTitle: "Cold Plunge bindet: Regeneration schlägt Akquise"
 topic: retention
 newsTake: true
 description: "Warum Contrast Hydrotherapy der Wachstumshebel ist, den die DACH-Fitnesswirtschaft gerade übersieht – und was du diese Woche tun kannst."

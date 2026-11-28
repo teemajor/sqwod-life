@@ -2,7 +2,8 @@
 urlSlug: big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811
 lang: "de"
 counterpart: big-money-is-reshaping-fitness-here-s-how-to-not-get-left-be-0811
-title: "Fitness-Branche im Übernahme-Fieber: Was Coaches jetzt wissen müssen"
+title: "Kirin kauft Jamieson, SlimFast investiert 5 Mio. £: Wellness wächst zu Ökosystemen zusammen"
+seoTitle: "Kirin, SlimFast: Wellness wächst zu Ökosystemen zusammen"
 topic: market-moves
 newsTake: true
 description: "Große Konzerne kaufen sich in Wellness ein – wer kein klares Profil hat, wird unsichtbar oder übernommen."

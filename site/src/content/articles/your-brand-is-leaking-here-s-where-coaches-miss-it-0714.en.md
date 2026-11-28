@@ -2,7 +2,8 @@
 urlSlug: your-brand-is-leaking-here-s-where-coaches-miss-it-0714
 lang: "en"
 counterpart: your-brand-is-leaking-here-s-where-coaches-miss-it-0714
-title: "Your Brand Is Leaking: Here's Where Coaches Miss It"
+title: "Lagree Sues Over Alibaba Megaformers: Consistency Is the Whole Brand"
+seoTitle: "Lagree Knockoff Lawsuit: Consistency Is the Brand"
 topic: marketing-community
 newsTake: true
 description: "Three industry signals this week reveal the same hidden threat to your fitness business, and one clear fix."

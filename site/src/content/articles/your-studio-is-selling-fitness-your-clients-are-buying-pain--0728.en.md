@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-selling-fitness-your-clients-are-buying-pain--0728
 lang: "en"
 counterpart: your-studio-is-selling-fitness-your-clients-are-buying-pain--0728
-title: "Your Studio Is Selling Fitness. Your Clients Are Buying Pain Relief."
+title: "Movement as Therapy: Why Clients Pay for Pain Relief and Studios Keep Selling Performance"
+seoTitle: "Clients Buy Pain Relief, Studios Sell Performance"
 topic: offer-programming
 newsTake: true
 description: "The real reason your retention is suffering, and one movement cue that fixes your positioning overnight."

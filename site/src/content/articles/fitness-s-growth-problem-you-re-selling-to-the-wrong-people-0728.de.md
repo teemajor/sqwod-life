@@ -2,7 +2,8 @@
 urlSlug: fitness-s-growth-problem-you-re-selling-to-the-wrong-people-0728
 lang: "de"
 counterpart: fitness-s-growth-problem-you-re-selling-to-the-wrong-people-0728
-title: "Fitness's Growth Problem: You're Selling to the Wrong People"
+title: "Bain zahlt 1,2 Mrd. $ für Vitabiotics: Alle zählen Mitglieder, keiner betreut sie"
+seoTitle: "Bain kauft Vitabiotics: Mitglieder betreuen statt zählen"
 topic: strategy
 newsTake: true
 description: "Six stories this week reveal the same truth: the operators and investors winning right now are obsessing over who they serve, not just how many."

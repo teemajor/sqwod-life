@@ -2,7 +2,8 @@
 urlSlug: your-studio-is-a-subscription-business-act-like-one-0731
 lang: "de"
 counterpart: your-studio-is-a-subscription-business-act-like-one-0731
-title: "Dein Studio kämpft ums Überleben – während KI & VCs den Markt umbauen"
+title: "Mitgliedschaften sind das Produkt: Das Playbook für wiederkehrende Umsätze, von Waschanlagen bis KI-Coaches"
+seoTitle: "Mitgliedschaften sind das Produkt: Umsatz, der wiederkommt"
 topic: pricing-revenue
 newsTake: true
 description: "Was Massagestudios, KI-Coaching und Car-Wash-Abos gemeinsam haben – und was du diese Woche konkret anders machen solltest."

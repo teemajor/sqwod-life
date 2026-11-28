@@ -2,7 +2,8 @@
 urlSlug: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
 lang: "en"
 counterpart: why-your-training-menu-is-broken-and-how-to-fix-it-fast-0811
-title: "Why Your Training Menu Is Broken (And How to Fix It Fast)"
+title: "Over-55s Lifting Heavy and 3-Day Splits: The Training Menu Clients Actually Want"
+seoTitle: "Over-55s Lifting Heavy, 3-Day Splits: The New Training Menu"
 topic: offer-programming
 newsTake: true
 description: "From 3-day splits to over-55s lifting heavy, this week's fitness news reveals one uncomfortable truth: most people are training the wrong things, the wrong way, for the wrong crowd."

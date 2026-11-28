@@ -2,7 +2,8 @@
 urlSlug: big-money-is-eating-wellness-indie-gyms-what-s-your-move-0807
 lang: "en"
 counterpart: big-money-is-eating-wellness-indie-gyms-what-s-your-move-0807
-title: "Big Money Is Eating Wellness. Indie Gyms, What's Your Move?"
+title: "Anytime Fitness Bundles Apple Fitness+ in the UK: Build Your Own Ecosystem or Join One"
+seoTitle: "Anytime Fitness Adds Apple Fitness+: Build or Join"
 topic: market-moves
 newsTake: true
 description: "P&G just spent $3.8bn to own your customer's medicine cabinet: here's how independent fitness operators stay relevant before the giants lock up the whole stack."

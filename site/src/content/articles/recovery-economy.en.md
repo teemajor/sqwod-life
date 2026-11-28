@@ -2,7 +2,8 @@
 urlSlug: recovery-economy
 lang: en
 counterpart: recovery-economy
-title: "Recovery is eating the supplement aisle"
+title: "The Recovery Economy 2026: Where Wellness Money Is Going"
+seoTitle: "Recovery Economy 2026: Size, Spending and Trends"
 topic: market-moves
 newsTake: true
 description: "Wellness is the one category consumers plan to spend MORE on in 2026, and recovery is its broadest door."

@@ -2,7 +2,8 @@
 urlSlug: your-gym-is-full-but-members-are-leaving-here-s-the-fix-0707
 lang: "en"
 counterpart: your-gym-is-full-but-members-are-leaving-here-s-the-fix-0707
-title: "Your gym is full but members are leaving. Here's the fix."
+title: "A Cold Plunge Is a Stickiness Engine: Why Recovery Beats Acquisition in a Maturing Market"
+seoTitle: "Cold Plunge as Stickiness Engine: Recovery Beats Acquisition"
 topic: retention
 newsTake: true
 description: "How contrast hydrotherapy and fresh DACH market data point to the same uncomfortable truth: recovery is now the retention lever fitness operators can't ignore."

@@ -2,7 +2,8 @@
 urlSlug: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
 lang: "de"
 counterpart: recovery-is-eating-your-revenue-here-s-how-to-catch-up-0731
-title: "Recovery verkauft sich – aber nur wenn du es richtig packst"
+title: "Pharrell verkauft Regeneration, ein Studio in Preston packt sie in die Mitgliedschaft: Nur die Coaches fehlen"
+seoTitle: "Pharrell und ein Studio in Preston: Recovery ist das Thema"
 topic: offer-programming
 newsTake: true
 description: "Warum Recovery gerade zum stärksten Umsatzhebel im Fitness-Business wird – und wie du als Coach davon profitierst."

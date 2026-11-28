@@ -2,8 +2,8 @@
 urlSlug: your-studio-is-a-community-engine-are-you-using-it-0707
 lang: "en"
 counterpart: your-studio-is-a-community-engine-are-you-using-it-0707
-title: "Your Studio Is a Community Engine: Are You Using It?"
-seoTitle: "Gym Community Marketing: Turn Members Into Your Best Channel"
+title: "Pure Barre Ran One Livestream Across Every Studio: Community Is the Funnel, Not the Byproduct"
+seoTitle: "Pure Barre's Studio-Wide Livestream: Community as the Funnel"
 topic: marketing-community
 description: "Six real moves from top fitness brands show exactly how to turn your physical space and audience into your most powerful marketing asset."
 pillar: build

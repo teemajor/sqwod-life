@@ -2,7 +2,8 @@
 urlSlug: big-brands-are-scaling-fast-here-s-how-to-keep-up-0724
 lang: "de"
 counterpart: big-brands-are-scaling-fast-here-s-how-to-keep-up-0724
-title: "Franchise-Riesen fressen dich auf – wenn du jetzt nichts tust"
+title: "Crunch, Pvolve, Raw Nutrition: Ein wiederholbares System schlägt den brillanten Einzelfall"
+seoTitle: "Crunch, Pvolve, Raw Nutrition: Systeme schlagen Einzelfälle"
 topic: market-moves
 newsTake: true
 description: "Während Raw Nutrition, Crunch und Pvolve auf Expansionskurs gehen, zeigen wir dir, wie du als unabhängiges Studio nicht nur überlebst, sondern gewinnst."

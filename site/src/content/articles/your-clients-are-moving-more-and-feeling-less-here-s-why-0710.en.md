@@ -2,7 +2,8 @@
 urlSlug: your-clients-are-moving-more-and-feeling-less-here-s-why-0710
 lang: "en"
 counterpart: your-clients-are-moving-more-and-feeling-less-here-s-why-0710
-title: "Your Clients Are Moving More and Feeling Less: Here's Why"
+title: "Your Client Tracks Everything and Still Feels Nothing: The Data-to-Meaning Gap"
+seoTitle: "Clients Track Everything, Feel Nothing: The Meaning Gap"
 topic: offer-programming
 newsTake: true
 description: "How to close the gap between tracking everything and actually getting better, before your competition does."
